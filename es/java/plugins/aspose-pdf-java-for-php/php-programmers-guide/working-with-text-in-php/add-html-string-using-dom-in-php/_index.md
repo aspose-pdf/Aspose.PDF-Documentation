@@ -1,48 +1,47 @@
 ---
 title: Agregar cadena HTML usando DOM en PHP
-linktitle: Agregar cadena HTML usando DOM en PHP
 type: docs
 weight: 10
 url: /es/java/add-html-string-using-dom-in-php/
-description: Explore cómo agregar contenido HTML a un documento PDF usando el DOM en PHP con Aspose.PDF para la creación de documentos enriquecidos.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
+
 ## Aspose.PDF - Agregar HTML
 
-Para agregar una cadena HTML en un documento Pdf usando **Aspose.PDF Java for PHP**, simplemente invoque el módulo **AddHtml**.
+Para agregar una cadena HTML en un documento PDF usando **Aspose.PDF Java para PHP**, simplemente invoca el módulo **AddHtml**.
 
 Código PHP
 
 ```php
-# Instantiate Document object
+# Instanciar objeto Document
 $doc = new Document();
 
-# Add a page to pages collection of PDF file
+# Agregar una página a la colección de páginas del archivo PDF
 $page = $doc->getPages()->add();
 
-# Instantiate HtmlFragment with HTML contents
-$title = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
+# Instanciar HtmlFragment con contenidos HTML
+$title = new HtmlFragment("<fontsize=10><b><i>Tabla</i></b></fontsize>");
 
-# set MarginInfo for margin details
+# Establecer MarginInfo para detalles de margen
 $margin = new MarginInfo();
 $margin->setBottom(10);
 $margin->setTop(200);
 
-# Set margin information
+# Establecer información de margen
 $title->setMargin($margin);
 
-# Add HTML Fragment to paragraphs collection of page
+# Agregar Fragmento HTML a la colección de párrafos de la página
 $page->getParagraphs()->add($title);
 
-# Save PDF file
+# Guardar archivo PDF
 $doc->save($dataDir . "html.output.pdf");
 
-print "HTML added successfully" . PHP_EOL;
+print "HTML agregado exitosamente" . PHP_EOL;
 
 ```
 
-**Descargar código en ejecución**
+**Descargar Código en Ejecución**
 
-DescargarВ **Add HTML (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
+Descargar **Agregar HTML (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddHtml.php)

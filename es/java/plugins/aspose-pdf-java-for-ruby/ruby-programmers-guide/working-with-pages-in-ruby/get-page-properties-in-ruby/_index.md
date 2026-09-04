@@ -1,36 +1,35 @@
 ---
-title: Obtener propiedades de página en Ruby
-linktitle: Obtener propiedades de página en Ruby
+title: Obtener Propiedades de la Página en Ruby
 type: docs
 weight: 50
 url: /es/java/get-page-properties-in-ruby/
-description: Aprenda cómo recuperar las propiedades de la página en un archivo PDF usando Ruby con Aspose.PDF para administrar y manipular sus documentos de manera eficiente.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Obtener propiedades de página
 
-Para obtener las propiedades de la página de un documento PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **GetPageProperties**.
+## Aspose.PDF - Obtener Propiedades de la Página
+
+Para obtener las propiedades de la página de un documento Pdf usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **GetPageProperties**.
 
 Código Ruby
 
 ```java
-# The path to the documents directory.
+# La ruta al directorio de documentos.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Create PDF document
+# Crear documento PDF
 
 pdf_document = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# get page collection
+# obtener colección de páginas
 
 page_collection = pdf_document.getPages()
 
-# get particular page
+# obtener página particular
 
 pdf_page = page_collection.get_Item(1)
 
-#get page properties
+#obtener propiedades de la página
 
 puts "ArtBox : Height = " + pdf_page.getArtBox().getHeight().to_s + ", Width = " + pdf_page.getArtBox().getWidth().to_s + ", LLX = " + pdf_page.getArtBox().getLLX().to_s + ", LLY = " + pdf_page.getArtBox().getLLY().to_s + ", URX = " + pdf_page.getArtBox().getURX().to_s + ", URY = " + pdf_page.getArtBox().getURY().to_s
 
@@ -49,8 +48,9 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
-## Descargar código en ejecución
 
-DescargarВ **Obtener propiedades de página (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
+## Descargar Código en Ejecución
+
+Descargar **Obtener Propiedades de Página (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

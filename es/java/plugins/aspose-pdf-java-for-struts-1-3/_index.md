@@ -1,56 +1,56 @@
 ---
-title: Aspose.PDF Java para Struts 1.3
-linktitle: Aspose.PDF Java para Struts 1.3
+title: Aspose.PDF Java for Struts 1.3
 type: docs
 weight: 10
 url: /es/java/aspose-pdf-java-for-struts-1-3/
-description: Integre Aspose.PDF for Java con Struts 1.3. Simplifique la creación y gestión de PDF dentro de sus aplicaciones Struts.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Marco Web Apache Struts
 
-El marco web Apache Struts es una solución gratuita de código abierto para crear aplicaciones web Java.
+## Apache Struts Web Framework
 
-Las aplicaciones web difieren de los sitios web convencionales en que las aplicaciones web pueden crear una respuesta dinámica. Muchos sitios web solo entregan páginas estáticas. Una aplicación web puede interactuar con bases de datos y motores de lógica empresarial para personalizar una respuesta.
+El marco de trabajo web Apache Struts es una solución gratuita y de código abierto para crear aplicaciones web en Java.
 
-Una forma de separar preocupaciones en una aplicación de software es usar una arquitectura Modelo-Vista-Controlador (MVC). El Modelo representa el código de negocio o de base de datos, la Vista representa el código de diseño de la página, y el Controlador representa el código de navegación. El marco Struts está diseñado para ayudar a los desarrolladores a crear aplicaciones web que utilicen una arquitectura MVC.
+Las aplicaciones web se diferencian de los sitios web convencionales en que las aplicaciones web pueden crear una respuesta dinámica. Muchos sitios web solo entregan páginas estáticas. Una aplicación web puede interactuar con bases de datos y motores de lógica de negocio para personalizar una respuesta.
 
-[Learn more](http://struts.apache.org/birdseye.html)
+Una forma de separar las preocupaciones en una aplicación de software es utilizar una arquitectura Modelo-Vista-Controlador (MVC). El Modelo representa el código de negocio o de base de datos, la Vista representa el código de diseño de la página y el Controlador representa el código de navegación. El marco de trabajo Struts está diseñado para ayudar a los desarrolladores a crear aplicaciones web que utilicen una arquitectura MVC.
 
-### Aspose.PDF for Java
+[Aprende más](http://struts.apache.org/birdseye.html)
 
-Aspose.PDF for Java es un componente de creación de documentos PDF que permite a sus aplicaciones Java leer, escribir y manipular documentos PDF sin usar Adobe Acrobat.
+### Aspose.PDF para Java
 
-Aspose.PDF for Java es un componente de precio asequible que ofrece una increíble cantidad de funcionalidades, que incluyen: opciones de compresión de PDF, creación y manipulación de tablas, soporte de gráficos, funciones de imágenes, funcionalidad extensa de hipervínculos, controles de seguridad ampliados y manejo de fuentes personalizadas.
+Aspose.PDF para Java es un componente de creación de documentos PDF que permite a tus aplicaciones Java leer, escribir y manipular documentos PDF sin usar Adobe Acrobat.
 
-Aspose.PDF for Java le permite crear archivos PDF directamente a través de la API proporcionada y plantillas XML. Usar Aspose.PDF for Java también le permitirá añadir capacidades PDF a sus aplicaciones en poco tiempo.
+Aspose.PDF para Java es un componente con un precio accesible que ofrece una increíble cantidad de características, que incluyen: opciones de compresión de PDF, creación y manipulación de tablas, soporte de gráficos, funciones de imagen, amplia funcionalidad de hipervínculos, controles de seguridad extendidos y manejo de fuentes personalizadas.
 
-## Aspose.Words Java for Struts 1.3
+Aspose.PDF para Java te permite crear archivos PDF directamente a través de la API proporcionada y plantillas XML. Usar Aspose.PDF para Java también te permitirá agregar capacidades de PDF a tus aplicaciones en muy poco tiempo.
 
-Aspose.Words Java para Struts 1.3 es una aplicación web sencilla de librería escrita usando Struts 1.3 y Maven.
+## Aspose.Words Java para Struts 1.3
 
-- La aplicación web pretende mostrar la integración y el uso de [Aspose.Words for Java](https://products.aspose.com/words/java/) dentro de Struts 1.3 y el framework Maven.
-- Se ejecuta en un contenedor web como Apache Tomcat y requiere Maven para compilar el archivo .war de la aplicación web para su despliegue.
-- El caso de uso actual en la aplicación exporta registros de la cuadrícula de libros al formato de documento MS-WORD creando un documento MS-WORD, creando una tabla dentro de él y escribiendo textos / datos en él.
+Aspose.Words Java para Struts 1.3 es una aplicación web simple de librería escrita usando Struts 1.3 y Maven.
+
+- La aplicación web tiene la intención de mostrar la integración y uso de [Aspose.Words para Java](https://products.aspose.com/words/java/) dentro del marco de Struts 1.3 y Maven.
+- Se ejecuta en un contenedor web como Apache Tomcat y requiere maven para construir la aplicación web .war para el despliegue.
+
+- El caso de uso actual en la aplicación exporta registros de la cuadrícula de libros al formato de documento MS-WORD creando un documento MS-WORD, creando una tabla en él y escribiendo textos / datos en él.
 
 {{% alert color="primary" %}}
 
-Aspose.Words for Java API es muy rico en funciones, sin embargo esta aplicación web de demostración muestra solo una fracción de ella!Para la lista completa de funciones de Aspose.Words for Java API, se recomienda encarecidamente que consulte la documentación de la API en: <https://products.aspose.com/words/java/>
+Aspose.Words para Java API es muy rico en funciones, ¡sin embargo, esta aplicación web de demostración muestra solo una fracción de ellas! Para la lista completa de características de Aspose.Words para Java API, se recomienda encarecidamente consultar la documentación de la API en: <https://products.aspose.com/words/java/>
 
 {{% /alert %}}
 
-## Requisitos del sistema
+## Requisitos del Sistema
 
-A continuación se presentan los requisitos del sistema para Aspose.PDF Java para la aplicación web Struts 1.3:
+Los siguientes son los requisitos del sistema para Aspose.PDF Java para la aplicación web Struts 1.3:
 
 - Java 1.6 o superior instalado.
-- Apache Tomcat Server 7 o superior
+- Servidor Apache Tomcat 7 o superior
 - Maven 3
-- Aspose.PDF componente.
+- Componente Aspose.PDF.
 
-## Plataformas compatibles
+## Plataformas Soportadas
 
-A continuación se muestran las plataformas compatibles:
+Las siguientes son las plataformas soportadas:
 
 - Aspose.PDF 10.4.0 o superior.
 - IDE de Java (Eclipse, NetBeans, IntelliJ, ...).

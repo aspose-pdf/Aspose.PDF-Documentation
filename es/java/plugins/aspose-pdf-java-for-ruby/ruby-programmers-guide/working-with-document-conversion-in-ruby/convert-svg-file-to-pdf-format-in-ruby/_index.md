@@ -1,40 +1,40 @@
 ---
 title: Convertir archivo SVG a formato PDF en Ruby
-linktitle: Convertir archivo SVG a formato PDF en Ruby
 type: docs
 weight: 60
 url: /es/java/convert-svg-file-to-pdf-format-in-ruby/
-description: Aprenda cómo convertir archivos SVG a formato PDF en Ruby usando Aspose.PDF para una transformación de documentos precisa y escalable.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
+
 ## Aspose.PDF - Convertir SVG a PDF
 
-Para convertir un archivo SVG a formato PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **SvgToPdf**.
+Para convertir un archivo SVG a formato PDF usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **SvgToPdf**.
 
 Código Ruby
 
 ```java
-# The path to the documents directory.
+
+# La ruta al directorio de documentos.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Instantiate LoadOption object using SVG load option
+# Instanciar objeto LoadOption usando la opción de carga SVG
 
 options = Rjb::import('com.aspose.pdf.SvgLoadOptions').new
 
-# Create document object
+# Crear objeto de documento
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'Example.svg', options)
 
-# Save the output to XLS format
+# Guardar la salida en formato XLS
 
 pdf.save(data_dir + "SVG.pdf")
 
-puts "Document has been converted successfully"
+puts "El documento se ha convertido con éxito"
 ```
 
-## Descargar código en ejecución
+## Descargar Código en Ejecución
 
-Descargar **Convertir SVG a PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
+Descarga **Convertir SVG a PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/svgtopdf.rb)

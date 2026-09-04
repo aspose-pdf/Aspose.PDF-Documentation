@@ -1,218 +1,216 @@
 ---
-title: Agregar encabezados y pies de página PDF en Java
-linktitle: Agregar encabezado y pie de página al PDF
+title: Añadir Encabezado y Pie de Página en PDF
+linktitle: Añadir Encabezado y Pie de Página
 type: docs
-weight: 50
+weight: 70
 url: /es/java/add-headers-and-footers-of-pdf-file/
-description: Aprenda cómo agregar encabezados y pies de página a archivos PDF en Java usando texto, imágenes y contenido estructurado.
-lastmod: "2026-09-03"
+description: Aspose.PDF para Java te permite añadir encabezados y pies de página a tu archivo PDF usando la clase TextStamp.
+lastmod: "2021-06-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
-TechArticle: true
-AlternativeHeadline: Agregar encabezados y pies de página a archivos PDF con Java
-Abstract: Este artículo muestra cómo agregar encabezados y pies de página a documentos PDF usando Aspose.PDF for Java. Cubre texto, numeración de páginas, HTML, imagen, tabla y contenido de encabezado y pie de página basado en LaTeX.
 ---
-Aspose.PDF for Java le permite asignar `HeaderFooter` objetos a cada página y poblarlos con diferentes tipos de contenido.
 
-## Agregar encabezados y pies de página de texto
+Los sellos PDF se utilizan a menudo en contratos, informes y materiales restringidos, para demostrar que los documentos han sido revisados y marcados como "leído", "calificado" o "confidencial", etc. Este artículo te mostrará cómo podemos añadir sellos de imagen y sellos de texto a documentos PDF usando **Aspose.PDF para Java**.
 
-Utilice este ejemplo cuando necesite contenido de texto sencillo en la parte superior e inferior de cada página.
+Si lees los fragmentos de código anteriores línea por línea, encontrarás que la sintaxis y la lógica del código son bastante fáciles de entender.
 
-1. Crear [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos y agregar fragmentos de texto.
-1. Configure los márgenes para el encabezado y el pie de página.
-1. Aplíquelos a cada página del PDF de origen y guarde el resultado.
+## Añadiendo Texto en el Encabezado de un Archivo PDF
+
+Puedes usar la clase [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) para añadir texto en el encabezado de un archivo PDF.
+ TextStamp class proporciona las propiedades necesarias para crear un sello basado en texto, como el tamaño de fuente, el estilo de fuente y el color de fuente, etc. Para agregar texto en el encabezado, necesitas crear un objeto Document y un objeto TextStamp usando las propiedades requeridas. Después de eso, puedes llamar al método AddStamp de la Page para agregar el texto en el encabezado del PDF.
+
+Necesitas establecer la propiedad TopMargin de tal manera que ajuste el texto en el área del encabezado de tu PDF. También necesitas establecer HorizontalAlignment en Center y VerticalAlignment en Top.
+
+El siguiente fragmento de código te muestra cómo agregar texto en el encabezado de un archivo PDF con Java.
 
 ```java
-public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
-    HeaderFooter header = new HeaderFooter();
-    header.getParagraphs().add(new TextFragment("Demo header"));
+package com.aspose.pdf.examples;
 
-    HeaderFooter footer = new HeaderFooter();
-    footer.getParagraphs().add(new TextFragment("Demo footer"));
+import com.aspose.pdf.*;
 
-    MarginInfo margin = new MarginInfo();
-    margin.setLeft(50);
-    margin.setTop(20);
-    header.setMargin(margin);
-    footer.setMargin(margin);
+public class ExampleAddPDFHeaderandFooter {
+    // La ruta al directorio de documentos.
+    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
 
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = 1; i <= document.getPages().size(); i++) {
-            document.getPages().get_Item(i).setHeader(header);
-            document.getPages().get_Item(i).setFooter(footer);
+    public static void AddingTextInHeaderOfPDFFile() {
+
+        // Abrir documento
+        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
+
+        // Crear encabezado
+        TextStamp textStamp = new TextStamp("Texto del Encabezado");
+
+        // Establecer propiedades del sello
+        textStamp.setTopMargin(10);
+        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
+        textStamp.setVerticalAlignment(VerticalAlignment.Top);
+
+        // Agregar encabezado en todas las páginas
+        for (Page page : pdfDocument.getPages()) {
+            page.addStamp(textStamp);
         }
-        document.save(outputFile.toString());
+
+        // Guardar documento actualizado
+        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
     }
+```
+
+## Añadiendo Texto en el Pie de Página de un Archivo PDF
+
+Puede usar la clase TextStamp para agregar texto en el pie de página de un archivo PDF. La clase TextStamp proporciona las propiedades necesarias para crear un sello basado en texto como el tamaño de fuente, estilo de fuente, color de fuente, etc. Para agregar texto en el pie de página, necesita crear un objeto Document y un objeto TextStamp usando las propiedades requeridas. Después de eso, puede llamar al método AddStamp de la Página para agregar el texto en el pie de página del PDF.
+
+El siguiente fragmento de código le muestra cómo agregar texto en el pie de página de un archivo PDF con Java.
+
+```java
+    public static void AddingTextInFooterOfPDFFile() {
+        // Abrir documento
+        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
+        // Crear pie de página
+        TextStamp textStamp = new TextStamp("Texto del Pie de Página");
+        // Establecer propiedades del sello
+        textStamp.setBottomMargin(10);
+        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
+        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
+        // Añadir pie de página en todas las páginas
+        for (Page page : pdfDocument.getPages()) {
+            page.addStamp(textStamp);
+        }
+        _dataDir = _dataDir + "TextinFooter_out.pdf";
+        // Guardar archivo PDF actualizado
+        pdfDocument.save(_dataDir);
+    }
+```
+
+
+## Añadiendo Imagen en el Encabezado del Archivo PDF
+
+Puede usar la clase [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) para agregar una imagen en el encabezado de un archivo PDF. La clase Image Stamp proporciona las propiedades necesarias para crear un sello basado en imagen como el tamaño de fuente, estilo de fuente y color de fuente, etc. Para agregar una imagen en el encabezado, necesita crear un objeto Document y un objeto Image Stamp usando las propiedades requeridas. Después de eso, puede llamar al método [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) de la página para agregar la imagen en el encabezado del PDF.
+
+```java
+public static void AddingImageInHeaderOfPDFFile() {
+
+// Abrir documento
+Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
+
+// Crear encabezado
+ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+
+// Establecer propiedades del sello
+imageStamp.setTopMargin(10);
+imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
+imageStamp.setVerticalAlignment(VerticalAlignment.Top);
+// Añadir encabezado en todas las páginas
+for (Page page : pdfDocument.getPages()) {
+page.addStamp(imageStamp);
+}
+
+_dataDir = _dataDir + "ImageInHeader_out.pdf";
+
+// Guardar archivo PDF actualizado
+pdfDocument.save(_dataDir);
 }
 ```
 
-## Agregar encabezados y pies de página con numeración de páginas
 
-Utilice este ejemplo cuando el encabezado o pie de página deba mostrar el número de página actual y el recuento total de páginas.
+El siguiente fragmento de código te muestra cómo agregar una imagen en el encabezado de un archivo PDF con Java.
 
-1. Crear [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos con marcadores de posición de numeración de página.
-1. Configurar márgenes para ambos objetos.
-1. Aplícalos en cada página y guarda el PDF actualizado.
+## Agregar Imagen en el Pie de Página de un Archivo PDF
+
+Puedes usar la clase Image Stamp para agregar una imagen en el pie de página de un archivo PDF. La clase Image Stamp proporciona las propiedades necesarias para crear un sello basado en imagen, como el tamaño de fuente, el estilo de fuente y el color de fuente, etc. Para agregar una imagen en el pie de página, necesitas crear un objeto Document y un objeto Image Stamp usando las propiedades requeridas. Después de eso, puedes llamar al método AddStamp de la Página para agregar la imagen en el pie de página del PDF.
+
+{{% alert color="primary" %}}
+
+Necesitas configurar la propiedad BottomMargin de tal manera que ajuste la imagen en el área del pie de página de tu PDF. También necesitas configurar [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) a `Center` y [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) a `Bottom`.
+
+{{% /alert %}}
+
+El siguiente fragmento de código te muestra cómo agregar una imagen en el pie de página de un archivo PDF con Java.
 
 ```java
-public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
-    HeaderFooter header = new HeaderFooter();
-    header.getParagraphs().add(new TextFragment("Page $p from $P"));
+    public static void AddingImageInFooterOfPDFFile() {
 
-    HeaderFooter footer = new HeaderFooter();
-    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
+        // Abrir documento
+        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
 
-    MarginInfo margin = new MarginInfo();
-    margin.setLeft(50);
-    margin.setTop(20);
-    header.setMargin(margin);
-    footer.setMargin(margin);
+        // Crear pie de página
+        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
 
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = 1; i <= document.getPages().size(); i++) {
-            document.getPages().get_Item(i).setHeader(header);
-            document.getPages().get_Item(i).setFooter(footer);
+        // Establecer propiedades del sello
+        imageStamp.setBottomMargin(10);
+        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
+        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
+        // Agregar pie de página en todas las páginas
+        for (Page page : pdfDocument.getPages()) {
+            page.addStamp(imageStamp);
         }
-        document.save(outputFile.toString());
+
+        _dataDir = _dataDir + "ImageInFooter_out.pdf";
+
+        // Guardar archivo PDF actualizado
+        pdfDocument.save(_dataDir);
     }
-}
 ```
 
-## Agregar encabezados y pies de página HTML
+## Agregar diferentes encabezados en un archivo PDF
 
-Utilice este ejemplo cuando el contenido del encabezado y pie de página deba incluir formato HTML en línea.
+Sabemos que podemos agregar TextStamp en la sección de Encabezado/Pie de página del documento usando las propiedades TopMargin o Bottom Margin, pero a veces podemos tener el requisito de agregar múltiples encabezados/pies de página en un solo documento PDF.
+ **Aspose.PDF for Java** explica cómo hacer esto.
 
-1. Crear [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos y agregar [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) contenido.
-1. Configurar márgenes para la colocación.
-1. Asigne el encabezado y el pie de página a cada página y guarde el documento.
-
-```java
-public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
-    HeaderFooter header = new HeaderFooter();
-    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
-
-    HeaderFooter footer = new HeaderFooter();
-    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
-
-    MarginInfo margin = new MarginInfo();
-    margin.setLeft(50);
-    margin.setTop(20);
-    header.setMargin(margin);
-    footer.setMargin(margin);
-
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = 1; i <= document.getPages().size(); i++) {
-            document.getPages().get_Item(i).setHeader(header);
-            document.getPages().get_Item(i).setFooter(footer);
-        }
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## Agregar encabezados y pies de página de imagen
-
-Utilice este ejemplo cuando el encabezado y el pie de página deben mostrar una imagen en cada página.
-
-1. Crear [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) objetos y agréguelos a los contenedores de encabezado y pie de página.
-1. Configure los márgenes y asigne los contenedores a cada página.
-1. Guarda el PDF actualizado.
+Para cumplir con este requisito, crearemos objetos [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) individuales (el número de objetos depende de la cantidad de encabezados/pies de página requeridos) y los añadiremos al documento PDF. También podemos especificar diferente información de formato para cada objeto de sello. En el siguiente ejemplo, hemos creado un objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) y tres objetos [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) y luego hemos utilizado el método [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) de la Página para agregar el texto en la sección del encabezado del PDF. El siguiente fragmento de código muestra cómo agregar una imagen en el pie de página de un archivo PDF con Aspose.PDF para Java.
 
 ```java
-public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
-    Image headerImage = new Image();
-    headerImage.setFile(imageFile.toString());
-    HeaderFooter header = new HeaderFooter();
-    header.getParagraphs().add(headerImage);
+public static void AddingDifferentHeadersInOnePDFFile() {
 
-    Image footerImage = new Image();
-    footerImage.setFile(imageFile.toString());
-    HeaderFooter footer = new HeaderFooter();
-    footer.getParagraphs().add(footerImage);
+        // Abrir el documento fuente
+        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
 
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = 1; i <= document.getPages().size(); i++) {
-            MarginInfo margin = new MarginInfo();
-            margin.setLeft(50);
-            header.setMargin(margin);
-            footer.setMargin(margin);
-            document.getPages().get_Item(i).setHeader(header);
-            document.getPages().get_Item(i).setFooter(footer);
-        }
-        document.save(outputFile.toString());
+        // Crear tres sellos
+        TextStamp stamp1 = new TextStamp("Encabezado 1");
+        TextStamp stamp2 = new TextStamp("Encabezado 2");
+        TextStamp stamp3 = new TextStamp("Encabezado 3");
+
+        // Establecer la alineación del sello (colocar el sello en la parte superior de la página, centrado horizontalmente)
+        stamp1.setVerticalAlignment(VerticalAlignment.Top);
+        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
+        // Especificar el estilo de fuente como Negrita
+        stamp1.getTextState().setFontStyle(FontStyles.Bold);
+        // Establecer la información del color de primer plano del texto como rojo
+        stamp1.getTextState().setForegroundColor(Color.getRed());
+        // Especificar el tamaño de fuente como 14
+        stamp1.getTextState().setFontSize(14);
+
+        // Ahora necesitamos establecer la alineación vertical del segundo objeto de sello como Superior
+        stamp2.setVerticalAlignment(VerticalAlignment.Top);
+        // Establecer la información de alineación horizontal para el sello como Centrada
+        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
+        // Establecer el factor de zoom para el objeto de sello
+        stamp2.setZoom(10);
+
+        // Establecer el formato del tercer objeto de sello
+        // Especificar la información de alineación vertical para el objeto de sello como SUPERIOR
+        stamp3.setVerticalAlignment(VerticalAlignment.Top);
+        // Establecer la información de alineación horizontal para el objeto de sello como Centrada
+        stamp3.setHorizontalAlignment(HorizontalAlignment.Center);
+        // Establecer el ángulo de rotación para el objeto de sello
+        stamp3.setRotateAngle(35);
+        // Establecer el color de fondo rosa para el sello
+        stamp3.getTextState().setBackgroundColor(Color.getPink());
+        
+        // Cambiar la información de la fuente para el sello a Verdana
+        stamp3.getTextState().setFont(FontRepository.findFont("Verdana"));
+        // El primer sello se agrega en la primera página;
+        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
+        // El segundo sello se agrega en la segunda página;
+        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
+        // El tercer sello se agrega en la tercera página.
+        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
+
+        _dataDir = _dataDir + "multiheader_out.pdf";
+
+        // Guardar el archivo PDF actualizado
+        pdfDocument.save(_dataDir);
     }
-}
-```
 
-## Agregar encabezados y pies de página basados en tablas
-
-Utilice este ejemplo cuando el contenido del encabezado y pie de página deba usar diseño de tabla y estilo de texto.
-
-1. Cree los estilos de texto y los objetos de tabla requeridos.
-1. Agregar las tablas a [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) contenedores.
-1. Aplique el encabezado y pie de página a cada página y guarde el documento.
-
-```java
-public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
-    TextState textStateHeader = new TextState();
-    textStateHeader.setFont(FontRepository.findFont("Arial"));
-    textStateHeader.setFontSize(12);
-    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
-
-    TextState textStateFooter = new TextState();
-    textStateFooter.setFont(FontRepository.findFont("Arial"));
-    textStateFooter.setFontSize(12);
-    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
-
-    HeaderFooter header = new HeaderFooter();
-    HeaderFooter footer = new HeaderFooter();
-
-    Table tableHeader = new Table();
-    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
-    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
-
-    Table table = new Table();
-    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
-    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
-
-    header.getParagraphs().add(tableHeader);
-    footer.getParagraphs().add(table);
-    footer.getMargin().setLeft(150);
-
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = 1; i <= document.getPages().size(); i++) {
-            document.getPages().get_Item(i).setHeader(header);
-            document.getPages().get_Item(i).setFooter(footer);
-        }
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## Añadir encabezados y pies de página de LaTeX
-
-Utilice este ejemplo cuando el encabezado y el pie de página deben renderizar contenido TeX o LaTeX.
-
-1. Abra el PDF de origen y determine el recuento total de páginas.
-1. Crear [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) contenido para el encabezado y pie de página de cada página.
-1. Asignar el contenido y guardar el documento.
-
-```java
-public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        int pageCount = document.getPages().size();
-        for (int i = 1; i <= pageCount; i++) {
-            HeaderFooter header = new HeaderFooter();
-            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
-
-            HeaderFooter footer = new HeaderFooter();
-            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
-
-            document.getPages().get_Item(i).setHeader(header);
-            document.getPages().get_Item(i).setFooter(footer);
-        }
-        document.save(outputFile.toString());
-    }
 }
 ```

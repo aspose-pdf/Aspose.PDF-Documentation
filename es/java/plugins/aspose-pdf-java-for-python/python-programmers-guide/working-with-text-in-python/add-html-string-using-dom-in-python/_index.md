@@ -1,42 +1,41 @@
 ---
 title: Agregar cadena HTML usando DOM en Python
-linktitle: Agregar cadena HTML usando DOM en Python
 type: docs
 weight: 10
 url: /es/java/add-html-string-using-dom-in-python/
-lastmod: "2026-09-03"
-description: Explica cómo agregar una cadena HTML en el DOM usando Python con la biblioteca de formato de archivos PDF
+lastmod: "2021-06-05"
+description: Explica cómo agregar una cadena HTML en DOM usando Python con biblioteca de formato de archivo PDF
 ---
-## Agregar cadena HTML en el DOM de PDF usando Python
 
+## Agregar cadena HTML en PDF DOM usando Python
 Para agregar una cadena HTML en un documento Pdf usando **Aspose.PDF Java for Python**, simplemente invoque el módulo **AddHtml**.
 
 ```python
 
-# Instantiate Document object
+# Instanciar objeto Document
 doc=self.Document()
 page=doc.getPages().add()
 
-title=self.HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>")
+title=self.HtmlFragment("<fontsize=10><b><i>Tabla</i></b></fontsize>")
 
 margin=self.MarginInfo()
 #margin.setBottom(10)
 #margin.setTop(200)
 
-# Set margin information
+# Establecer información de margen
 title.setMargin(margin)
 
-# Add HTML Fragment to paragraphs collection of page
+# Agregar fragmento HTML a la colección de párrafos de la página
 page.getParagraphs().add(title)
 
-# Save PDF file
+# Guardar archivo PDF
 doc.save(self.dataDir + 'html.output.pdf')
 
-print "HTML added successfully"
+print "HTML agregado exitosamente"
 ```
 
-**Descargar código en ejecución**
+**Descargar Código en Ejecución**
 
-DescargarВ **Agregar HTML (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
+Descargar **Add HTML (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)

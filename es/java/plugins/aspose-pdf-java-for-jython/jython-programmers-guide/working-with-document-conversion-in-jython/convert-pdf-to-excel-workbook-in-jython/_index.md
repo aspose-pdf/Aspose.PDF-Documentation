@@ -1,19 +1,18 @@
 ---
-title: Convertir PDF a libro de Excel en Jython
-linktitle: Convertir PDF a libro de Excel en Jython
+title: Convertir PDF a Libro de Excel en Jython
 type: docs
 weight: 20
 url: /es/java/convert-pdf-to-excel-workbook-in-jython/
-description: Explore cómo convertir documentos PDF a libros de Excel en Jython usando Aspose.PDF, permitiendo la extracción de datos para el análisis.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Pdf a Excel
 
-Para comprobar el formato de archivo usando **Aspose.PDF Java for Jython**. Aquí puedes ver el código de ejemplo.
-Error al renderizar la macro 'code' : Valor inválido especificado para el parámetro lang
+## Aspose.PDF - PDF a Excel
 
-**Descargar código en ejecución**
+Para comprobar el formato de archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver un código de ejemplo.
+Error al renderizar macro 'code' : Valor inválido especificado para el parámetro lang
 
-Descargue el código en ejecución de cualquiera de los sitios de codificación social mencionados a continuación:
+**Descargar Código en Ejecución**
+
+Descarga el código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

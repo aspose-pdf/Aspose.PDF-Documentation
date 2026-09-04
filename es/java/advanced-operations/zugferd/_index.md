@@ -4,15 +4,32 @@ linktitle: Trabajando con ZUGFeRD
 type: docs
 weight: 90
 url: /es/java/working-with-zugferd/
-description: Aprenda cómo crear facturas PDF/A-3A con datos XML ZUGFeRD incrustados en Java usando Aspose.PDF.
-lastmod: "2026-09-03"
+description: Aprende a crear facturas PDF compatibles con ZUGFeRD usando Aspose.PDF para Java
+lastmod: "2024-01-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true
-AlternativeHeadline: Cree facturas PDF compatibles con ZUGFeRD con Java
-Abstract: Esta sección explica cómo trabajar con los archivos adjuntos de facturas ZUGFeRD usando Aspose.PDF for Java. Aprenda a incrustar el XML de la factura como un archivo asociado, marcar la relación del adjunto correctamente y convertir el documento a PDF/A-3A para flujos de trabajo de facturación electrónica compatibles.
 ---
-ZUGFeRD combina una factura PDF legible por humanos con datos XML estructurados incrustados dentro del documento. En el conjunto actual de ejemplos de Java, el flujo de trabajo cubierto consiste en adjuntar el XML de la factura a un PDF y convertir el resultado a `PDF_A_3A`.
 
-- [Attach ZUGFeRD invoice data to a PDF](/pdf/es/java/attach-zugferd/)
+## ¿Qué es ZUGFeRD?
+
+La facturación electrónica, o e-facturación, es una forma digital de crear, enviar, recibir y procesar un documento de factura. Elimina el papel y mejora la eficiencia y los ahorros para las empresas en un contexto B2B. La e-facturación beneficia tanto a compradores como a vendedores.
+
+A medida que más y más empresas adoptan la e-facturación para obtener ventajas, necesitan estándares para asegurar que las e-facturas puedan ser fácilmente entendidas por cualquier software, sin importar cómo se hayan creado.
+
+Entre los diversos formatos de datos para e-facturas, el estándar ZUGFeRD se está volviendo más popular en los países de habla alemana y de la UE.
+
+ZUGFeRD es un estándar alemán para la facturación electrónica. Es la "Guía de Usuario Central del Foro para la Facturación Electrónica en Alemania".
+
+El formato es un híbrido que mezcla un documento PDF que puede ser leído por humanos y un archivo de datos XML que puede ser leído por máquinas.
+ Habilita el intercambio de información de facturas entre empresas y autoridades públicas de manera consistente y compatible.
+
+También cumple con los requisitos legales para el archivo a largo plazo y el cumplimiento tributario. ZUGFeRD tiene diferentes versiones y perfiles que se adaptan a diferentes necesidades y escenarios. La última versión es ZUGFeRD 2.0, que se alinea con el estándar europeo EN 16931 para la facturación electrónica.
+ZUGFeRD ofrece a los usuarios muchos beneficios y ahorros de costos, como un procesamiento más rápido, menos errores, mejor flujo de caja y menor impacto ambiental.
+
+* [Crear PDF compatible con PDF/3-A y adjuntar factura ZUGFeRD en Java](/pdf/es/java/attach-zugferd/)
+
+Véase también:
+
+* [Crear PDF compatible con PDF/3-A y adjuntar factura ZUGFeRD en .NET](/pdf/es/net/attach-zugferd/)
+* [Crear PDF compatible con PDF/3-A y adjuntar factura ZUGFeRD en Python](/pdf/es/python-net/attach-zugferd/)

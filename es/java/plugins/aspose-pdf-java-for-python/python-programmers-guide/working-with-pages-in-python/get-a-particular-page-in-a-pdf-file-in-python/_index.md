@@ -1,37 +1,36 @@
 ---
-title: Obtener una página concreta en un archivo PDF en Python
-linktitle: Obtener una página concreta en un archivo PDF en Python
+title: Obtener una Página Particular en un Archivo PDF en Python
 type: docs
 weight: 30
 url: /es/java/get-a-particular-page-in-a-pdf-file-in-python/
-description: Explore cómo extraer una página concreta de un archivo PDF en Python usando Aspose.PDF para un manejo detallado de documentos.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-Para obtener una página concreta en un documento PDF usando **Aspose.PDF Java for Python**, simplemente invoque la clase **GetPage**.
+
+Para obtener una página particular en un documento PDF usando **Aspose.PDF Java para Python**, simplemente invoca la clase **GetPage**.
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# get the page at particular index of Page Collection
+# obtener la página en un índice particular de la Colección de Páginas
 pdf_page = pdf.getPages().get_Item(1)
 
-# create a new Document object
+# crear un nuevo objeto Document
 new_document = self.Document()
 
-# add page to pages collection of new document object
+# añadir página a la colección de páginas del nuevo objeto documento
 new_document.getPages().add(pdf_page)
 
-# save the newly generated PDF file
+# guardar el archivo PDF recién generado
 new_document.save(self.dataDir + "output.pdf")
 
-print "Process completed successfully!
+print "¡Proceso completado con éxito!
 
 ```
 
- **Descargar código en ejecución**
+ **Descargar Código en Ejecución**
 
-Descargar **Get Page (Aspose.PDF)**В desdeВ cualquiera de los sitios de codificación social mencionados a continuación:
+Descargar **Obtener Página (Aspose.PDF)** de cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose.PDF-for-Java_for_Python/test/WorkingWithPages/GetPage/GetPage.py)

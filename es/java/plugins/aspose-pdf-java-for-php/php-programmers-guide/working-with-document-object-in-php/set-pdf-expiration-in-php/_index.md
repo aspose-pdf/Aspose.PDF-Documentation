@@ -1,21 +1,20 @@
 ---
-title: Establecer expiración de PDF en PHP
-linktitle: Establecer expiración de PDF en PHP
+title: Establecer Expiración de PDF en PHP
 type: docs
 weight: 80
 url: /es/java/set-pdf-expiration-in-php/
-description: Descubra cómo establecer una fecha de expiración para un archivo PDF en PHP, controlando el acceso con Aspose.PDF.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Establecer expiración de PDF
 
-Para establecer la expiración deВ  Pdf documento usando **Aspose.PDF Java for PHP**, simplemente invoque la clase **SetExpiration**.
+## Aspose.PDF - Establecer Expiración de PDF
+
+Para establecer la expiración de un documento Pdf usando **Aspose.PDF Java para PHP**, simplemente invoque la clase **SetExpiration**.
 
 Código PHP
 
 ```php
 
-# Open a pdf document.
+# Abrir un documento pdf.
 $doc = new Document($dataDir . "input1.pdf");
 
 $javascript = new JavascriptAction(
@@ -25,18 +24,18 @@ $javascript = new JavascriptAction(
     today = new Date(today.getFullYear(), today.getMonth());
     expiry = new Date(year, month);
     if (today.getTime() > expiry.getTime())
-    app.alert('The file is expired. You need a new one.');");
+    app.alert('El archivo ha expirado. Necesitas uno nuevo.');");
 $doc->setOpenAction($javascript);
 
-# save update document with new information
+# guardar el documento actualizado con la nueva información
 $doc->save($dataDir . "set_expiration.pdf");
 
-print "Update document information, please check output file." . PHP_EOL;
+print "Actualiza la información del documento, por favor verifica el archivo de salida." . PHP_EOL;
 
 ```
 
 **Descargar Código en Ejecución**
 
-DescargueВ **Set PDF Expiration (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
+Descargar **Establecer Expiración de PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)

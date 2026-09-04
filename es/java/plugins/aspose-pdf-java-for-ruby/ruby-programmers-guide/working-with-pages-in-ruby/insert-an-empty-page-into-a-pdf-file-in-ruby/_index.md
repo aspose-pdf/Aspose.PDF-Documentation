@@ -1,40 +1,40 @@
 ---
-title: Insertar una página en blanco en un archivo PDF en Ruby
-linktitle: Insertar una página en blanco en un archivo PDF en Ruby
+title: Insertar una Página Vacía en un Archivo PDF en Ruby
 type: docs
 weight: 70
 url: /es/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
-description: Aprenda cómo insertar una página en blanco en una ubicación específica dentro de un documento PDF usando Ruby y Aspose.PDF para una gestión de documentos precisa.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Insertar una página en blanco
 
-Para insertar una página en blanco en un documento Pdf usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **InsertEmptyPage**.
+## Aspose.PDF - Insertar una Página Vacía
+
+Para insertar una página vacía en un documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoca el módulo **InsertEmptyPage**.
 
 Código Ruby
 
 ```java
-# The path to the documents directory.
+
+# La ruta al directorio de documentos.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Open the target document
+# Abrir el documento de destino
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# insert a empty page in a PDF
+# insertar una página vacía en un PDF
 
 pdf.getPages().insert(1)
 
-# Save the concatenated output file (the target document)
+# Guardar el archivo de salida concatenado (el documento de destino)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "Empty page added successfully!"
+puts "¡Página vacía añadida exitosamente!"
 ```
 
-## Descargar código en ejecución
+## Descargar Código en Ejecución
 
-Descargar\u0412\u00A0**Insert an Empty Page (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0cualquier de los sitios de codificación social mencionados a continuación:
+Descargar **Insertar una Página Vacía (Aspose.PDF)** de cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)

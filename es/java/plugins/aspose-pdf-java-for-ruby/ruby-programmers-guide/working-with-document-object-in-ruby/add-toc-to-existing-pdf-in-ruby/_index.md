@@ -1,94 +1,94 @@
 ---
-title: Agregar TOC a PDF existente en Ruby
-linktitle: Agregar TOC a PDF existente en Ruby
+title: Agregar TOC a PDF Existente en Ruby
 type: docs
 weight: 30
 url: /es/java/add-toc-to-existing-pdf-in-ruby/
-description: Aprenda cómo agregar una tabla de contenidos a un PDF existente en Ruby usando Aspose.PDF para mejorar la navegación del documento.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
+
 ## Aspose.PDF - Agregar TOC
 
-<ins>Para agregar TOC en un documento Pdf usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **AddToc**.
+<ins>Para agregar TOC en un documento PDF usando **Aspose.PDF Java for Ruby**, simplemente invoca el módulo **AddToc**.
 
 Código Ruby
 
 ```java
-# The path to the documents directory.
+# La ruta al directorio de documentos.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Open a pdf document.
+# Abrir un documento pdf.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Get access to first page of PDF file
+# Obtener acceso a la primera página del archivo PDF
 
 toc_page = doc.getPages().insert(1)
 
-# Create object to represent TOC information
+# Crear objeto para representar la información del TOC
 
 toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
 
-title = Rjb::import('com.aspose.pdf.TextFragment').new("Table Of Contents")
+title = Rjb::import('com.aspose.pdf.TextFragment').new("Tabla de Contenidos")
 
 title.getTextState().setFontSize(20)
 
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# Set the title for TOC
+# Establecer el título para el TOC
 
 toc_info.setTitle(title)
 
 toc_page.setTocInfo(toc_info)
 
-# Create string objects which will be used as TOC elements
+# Crear objetos de cadena que se usarán como elementos del TOC
 
-titles = Array["First page", "Second page"]
+titles = Array["Primera página", "Segunda página"]
 
 i = 0
 
 while i < 2
 
-В В В  # Create Heading object
+    # Crear objeto Heading
 
-В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-В В В  heading2.setTocPage(toc_page)
+    heading2.setTocPage(toc_page)
 
-В В В  heading2.getSegments().add(segment2)
+    heading2.getSegments().add(segment2)
 
-В В В  # Specify the destination page for heading object
+    # Especificar la página de destino para el objeto heading
 
-В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-В В В  # Destination page
+    # Página de destino
 
-В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-В В В  # Destination coordinate
+    # Coordenada de destino
 
-В В В  segment2.setText(titles[i])
+    segment2.setText(titles[i])
 
-В В В  # Add heading to page containing TOC
+    # Agregar heading a la página que contiene el TOC
 
-В В В  toc_page.getParagraphs().add(heading2)
+    toc_page.getParagraphs().add(heading2)
 
-В В В  i +=1
+    i +=1
 
 end
 
-# Save PDF Document
+# Guardar documento PDF
 
 doc.save(data_dir + "TOC.pdf")
 
-puts "Added TOC Successfully, please check the output file."
+puts "TOC agregado exitosamente, por favor revisa el archivo de salida."
 ```
 
-## <ins> **Descargar código en ejecución**
 
-DescargarВ **Agregar TOC (Aspose.PDF)**В deВ cualquiera de los sitios de codificación social mencionados a continuación:
+## <ins> **Descargar Código en Ejecución
+
+Descargar **Agregar TOC (Aspose.PDF)** desde cualquiera de los siguientes sitios de codificación social:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

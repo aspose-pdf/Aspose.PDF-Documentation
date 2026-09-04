@@ -1,48 +1,47 @@
 ---
-title: Obtener información del archivo PDF en Ruby
-linktitle: Obtener información del archivo PDF en Ruby
+title: Obtener Información del Archivo PDF en Ruby
 type: docs
 weight: 50
 url: /es/java/get-pdf-file-information-in-ruby/
-description: Extraiga metadatos y detalles de archivos PDF programáticamente usando Aspose.PDF en Ruby.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Obtener información del archivo PDF
 
-Para obtener la información del archivo PDF del documento usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **GetPdfFileInfo**.
+## Aspose.PDF - Obtener Información del Archivo PDF
+
+Para obtener información del archivo del documento PDF usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **GetPdfFileInfo**.
 
 Código Ruby
 
 ```java
-# The path to the documents directory.
+# La ruta al directorio de documentos.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Open a pdf document.
+# Abrir un documento pdf.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Get document information
+# Obtener información del documento
 
 doc_info = doc.getInfo()
 
-# Show document information
+# Mostrar información del documento
 
-puts "Author:-" + doc_info.getAuthor().to_s
+puts "Autor:-" + doc_info.getAuthor().to_s
 
-puts "Creation Date:-" + doc_info.getCreationDate().to_string
+puts "Fecha de Creación:-" + doc_info.getCreationDate().to_string
 
-puts "Keywords:-" + doc_info.getKeywords().to_s
+puts "Palabras Clave:-" + doc_info.getKeywords().to_s
 
-puts "Modify Date:-" + doc_info.getModDate().to_string
+puts "Fecha de Modificación:-" + doc_info.getModDate().to_string
 
-puts "Subject:-" + doc_info.getSubject().to_s
+puts "Asunto:-" + doc_info.getSubject().to_s
 
-puts "Title:-" + doc_info.getTitle().to_s
+puts "Título:-" + doc_info.getTitle().to_s
 ```
 
-## Descargar código en ejecución
+## Descargar Código en Ejecución
 
-Descargar **Obtener información del archivo PDF (Aspose.PDF)** de cualquiera de los sitios de codificación social mencionados a continuación:
+Descargar **Obtener Información del Archivo PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)

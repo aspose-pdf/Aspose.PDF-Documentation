@@ -1,116 +1,97 @@
 ---
-title: Crear enlaces PDF en Java
-linktitle: Crear enlaces
+title: Crear Enlaces en un Archivo PDF
+linktitle: Crear Enlaces
 type: docs
 weight: 10
 url: /es/java/create-links/
-description: Aprenda cómo crear enlaces PDF internos, externos y remotos en Java.
-lastmod: "2026-09-03"
+description: Esta sección explica cómo crear enlaces en su documento PDF con Java.
+lastmod: "2021-06-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
-TechArticle: true
-AlternativeHeadline: Crear anotaciones de enlaces en archivos PDF con Java
-Abstract: Este artículo muestra cómo crear anotaciones de enlace usando Aspose.PDF for Java. Cubre acciones de lanzamiento, navegación de documento remoto, navegación de página dentro del documento y enlaces web basados en URI al adjuntar acciones a objetos LinkAnnotation.
 ---
-Aspose.PDF for Java usa `LinkAnnotation` junto con un objeto de acción para definir el comportamiento del enlace.
 
-## Crear un enlace de acción de lanzamiento
+## Crear Enlaces
 
-Utilice este ejemplo cuando una anotación de enlace debe lanzar un archivo externo o un objetivo.
+Aspose.PDF para Java le permite agregar un enlace a un archivo PDF externo para que pueda vincular varios documentos juntos.
+Al agregar un enlace a una aplicación en un documento, es posible vincular aplicaciones desde un documento. Esto es útil cuando desea que los lectores realicen una cierta acción en un punto específico de un tutorial, por ejemplo, o para crear un documento rico en funciones. Para crear un enlace de aplicación:
 
-1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y seleccione la página de destino.
-1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) y configure su borde y color.
-1. Asignar un [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) y guardar el documento.
+1. [Cree un objeto Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+1. Obtenga la [Página](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) a la que desea agregar el enlace.
+
+1. Cree un objeto [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) usando los objetos [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) y [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
+1. Establezca los atributos del enlace usando el objeto [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
+1. Además, configure el objeto [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) y llame al método setAction(..).
+1. Al crear el objeto [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction), especifique la aplicación que desea lanzar.
+1. Agregue el enlace a la colección [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) del objeto Page.
+1. Finalmente, guarde el PDF actualizado usando el método Save del objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+
+El siguiente fragmento de código muestra cómo crear un enlace a una aplicación en un archivo PDF.
 
 ```java
-public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        Page page = document.getPages().get_Item(1);
+package com.aspose.pdf.examples;
 
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
-        Border border = new Border(link);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        link.setBorder(border);
-        link.setColor(Color.getGreen());
-        link.setAction(new LaunchAction(document, inputFile.toString()));
-        page.getAnnotations().add(link);
-        document.save(outputFile.toString());
+import com.aspose.pdf.*;
+
+
+public class ExampleLinks {
+
+    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
+
+    private static String GetDataDir() {
+        String os = System.getProperty("os.name");
+        if (os.startsWith("Windows"))
+            _dataDir = "C:\\Samples\\Links-Actions";
+        return _dataDir;
     }
-}
+
+    public static void CreateLink() {
+
+        // Abrir documento
+        Document document = new Document(GetDataDir() + "CreateApplicationLink.pdf");
+
+        // Crear enlace
+        Page page = document.getPages().get_Item(1);
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
+        link.setColor(Color.getGreen());
+        link.setAction(new LaunchAction(document, _dataDir + "sample.pdf"));
+        page.getAnnotations().add(link);
+
+        // Guardar documento actualizado
+        document.save(_dataDir + "CreateApplicationLink_out.pdf");
+    }
 ```
 
-## Crear un enlace remoto de navegación
+### Crear enlace de documento PDF en un archivo PDF
 
-Utilice este ejemplo cuando el enlace debe abrir una página en otro documento PDF.
+Aspose.PDF para Java te permite agregar un enlace a un archivo PDF externo para que puedas vincular varios documentos juntos.
+ Para crear un enlace de documento PDF:
 
-1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) en la página de destino.
-1. Asignar un [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) y guarde el archivo de salida.
+1. Primero, crea un objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
+1. Luego, obtén la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) particular a la que deseas agregar el enlace.
+1. Crea un objeto [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) usando los objetos [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) y [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
+1. Establece los atributos del enlace usando el objeto [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
+1. Llama al método setAction(..) y pasa un objeto [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction).
+1. Al crear el objeto [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction), especifica el archivo PDF que debe lanzarse, así como el número de página en la que debe abrirse.
+1. Agrega el enlace a la colección [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) del objeto Page.
+1. Finalmente, guarda el PDF actualizado usando el método Save del objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
 
-```java
-public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        Page page = document.getPages().get_Item(1);
-
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
-        link.setColor(Color.getGreen());
-        link.setAction(new GoToRemoteAction(inputFile.toString(), 1));
-        page.getAnnotations().add(link);
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## Crear un enlace interno de salto
-
-Utilice este ejemplo cuando el enlace deba navegar a otra página dentro del mismo documento PDF.
-
-1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) y configure su apariencia.
-1. Asignar un [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) a la página de destino y guardar el documento.
+El siguiente fragmento de código muestra cómo crear un enlace de documento PDF en un archivo PDF.
 
 ```java
-public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
+    public static void CreatePDFDocumentLink() {
+
+        // Abrir documento
+        Document document = new Document(_dataDir + "CreateDocumentLink.pdf");
+
+        // Crear enlace
         Page page = document.getPages().get_Item(1);
-
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
-        Border border = new Border(link);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        link.setBorder(border);
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
         link.setColor(Color.getGreen());
-        if (document.getPages().size() >= 4) {
-            link.setAction(new GoToAction(document.getPages().get_Item(4)));
-        } else {
-            link.setAction(new GoToAction(document.getPages().get_Item(document.getPages().size())));
-        }
+        link.setAction(new GoToRemoteAction(_dataDir + "sample.pdf", 1));
         page.getAnnotations().add(link);
-        document.save(outputFile.toString());
+
+        // Guardar documento actualizado
+        document.save(_dataDir + "CreateDocumentLink_out.pdf");
     }
-}
-```
-
-## Crear un enlace URI
-
-Utilice este ejemplo cuando el enlace debe abrir un recurso web a través de una acción URI.
-
-1. Abra el PDF de origen [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crear un [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) en la página.
-1. Asignar un [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) y guarde el archivo de salida.
-
-```java
-public static void createLinkAnnotationGoToUriAction(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        Page page = document.getPages().get_Item(1);
-
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
-        link.setColor(Color.getGreen());
-        link.setAction(new GoToURIAction("https://docs.aspose.com/pdf/python"));
-        page.getAnnotations().add(link);
-        document.save(outputFile.toString());
-    }
-}
 ```

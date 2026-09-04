@@ -1,38 +1,37 @@
 ---
-title: Concatenar archivos PDF en PHP
-linktitle: Concatenar archivos PDF en PHP
+title: Concatenate PDF Files in PHP
 type: docs
 weight: 10
 url: /es/java/concatenate-pdf-files-in-php/
-description: Aprenda cómo concatenar varios archivos PDF en un solo documento en PHP usando Aspose.PDF para una gestión de documentos más sencilla.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Concatenar archivos PDF
 
-Para concatenar archivos PDF usando **Aspose.PDF Java for PHP**, simplemente invoque la clase **ConcatenatePdfFiles**.
+## Aspose.PDF - Concatenar Archivos PDF
+
+Para concatenar archivos PDF usando **Aspose.PDF Java para PHP**, simplemente invoca la clase **ConcatenatePdfFiles**.
 
 Código PHP
 
 ```php
 
-# Open the target document
+# Abre el documento de destino
 $pdf1 = new Document($dataDir . 'input1.pdf');
 
-# Open the source document
+# Abre el documento de origen
 $pdf2 = new Document($dataDir . 'input2.pdf');
 
-# Add the pages of the source document to the target document
+# Agrega las páginas del documento de origen al documento de destino
 $pdf1->getPages()->add($pdf2->getPages());
 
-# Save the concatenated output file (the target document)
+# Guarda el archivo de salida concatenado (el documento de destino)
 $pdf1->save($dataDir . "Concatenate_output.pdf");
 
-print "New document has been saved, please check the output file" . PHP_EOL;
+print "El nuevo documento ha sido guardado, por favor revisa el archivo de salida" . PHP_EOL;
 
 ```
 
-**Descargar código en ejecución**
+**Descargar Código en Ejecución**
 
-Descargar\u0412\u00A0**Concatenate PDF Files (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0cualquiera de los sitios de desarrollo social mencionados a continuación:
+Descarga **Concatenar Archivos PDF (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/ConcatenatePdfFiles.php)

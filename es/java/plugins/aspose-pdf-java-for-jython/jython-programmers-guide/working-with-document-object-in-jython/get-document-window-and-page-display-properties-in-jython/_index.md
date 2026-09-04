@@ -1,20 +1,19 @@
 ---
-title: Obtener propiedades de la ventana del documento y de la visualización de la página en Jython
-linktitle: Obtener propiedades de la ventana del documento y de la visualización de la página en Jython
+title: Obtener Propiedades de la Ventana del Documento y la Visualización de Página en Jython
 type: docs
 weight: 20
 url: /es/java/get-document-window-and-page-display-properties-in-jython/
-description: Descubra cómo acceder a las propiedades de la ventana del documento y de la visualización de la página en un archivo PDF usando Jython y Aspose.PDF.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Obtener ventana del documento
 
-Para verificar el formato de archivo usando **Aspose.PDF Java for Jython**. Aquí puede ver el código de ejemplo.
+## Aspose.PDF - Obtener Ventana del Documento
 
-Error al renderizar la macro 'code' : Valor inválido especificado para el parámetro lang
+Para verificar el formato del archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver un código de ejemplo.
 
-## Descargar código en ejecución
+Error rendering macro 'code' : Valor inválido especificado para el parámetro lang
 
-Descargue el código en ejecución de cualquiera de los sitios de codificación social mencionados a continuación:
+## Descargar Código en Ejecución
+
+Descarga el código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

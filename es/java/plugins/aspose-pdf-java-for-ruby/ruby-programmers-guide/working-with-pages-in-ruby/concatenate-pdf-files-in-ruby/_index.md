@@ -1,44 +1,43 @@
 ---
-title: Concatenar archivos PDF en Ruby
-linktitle: Concatenar archivos PDF en Ruby
+title: Concatenate archivos PDF en Ruby
 type: docs
 weight: 10
 url: /es/java/concatenate-pdf-files-in-ruby/
-description: Combina varios PDFs en un solo documento usando Ruby y Aspose.PDF de forma eficiente.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Concatenar archivos PDF
 
-Para concatenar archivos PDF usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **ConcatenatePdfFiles**.
+## Aspose.PDF - Concatenar Archivos PDF
+
+Para concatenar archivos PDF usando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **ConcatenatePdfFiles**.
 
 Código Ruby
 
 ```java
-# The path to the documents directory.
+# La ruta al directorio de documentos.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Open the target document
+# Abrir el documento de destino
 
 pdf1 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# Open the source document
+# Abrir el documento de origen
 
 pdf2 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input2.pdf')
 
-# Add the pages of the source document to the target document
+# Agregar las páginas del documento de origen al documento de destino
 
 pdf1.getPages().add(pdf2.getPages())
 
-# Save the concatenated output file (the target document)
+# Guardar el archivo de salida concatenado (el documento de destino)
 
 pdf1.save(data_dir+ "Concatenate_output.pdf")
 
-puts "New document has been saved, please check the output file"
+puts "El nuevo documento ha sido guardado, por favor revise el archivo de salida"
 ```
 
-## Descargar código en ejecución
+## Descargar Código en Ejecución
 
-DescargarВ **Concatenate PDF Files (Aspose.PDF)**В desdeВ cualquiera de los sitios de codificación social mencionados a continuación:
+Descargue **Concatenate PDF Files (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

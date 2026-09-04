@@ -1,141 +1,144 @@
 ---
-title: Convertir PDF a Word en Java
+title: Convertir PDF a Documentos de Microsoft Word en Java
 linktitle: Convertir PDF a Word
 type: docs
 weight: 10
 url: /es/java/convert-pdf-to-word/
-lastmod: "2026-09-03"
-description: Aprenda cómo convertir archivos PDF a DOC y DOCX en Java con Aspose.PDF para una edición y reutilización más fácil de documentos.
+lastmod: "2021-11-19"
+description: Convierta archivos PDF a formato DOC y DOCX con facilidad y control total con Aspose.PDF para Java. Aprenda más sobre cómo ajustar la conversión de PDF a documentos de Microsoft Word.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
-TechArticle: true
-AlternativeHeadline: Cómo convertir PDF a Word en Java
-Abstract: Este artículo explica cómo convertir archivos PDF a formatos de Microsoft Word usando Aspose.PDF for Java. Cubre la salida DOC, la salida DOCX, la conversión DOCX de flujo mejorado, la preservación de saltos de línea, el reconocimiento de viñetas y el control de la resolución de imágenes a través de `DocSaveOptions`.
 ---
-Aspose.PDF for Java puede exportar documentos PDF a formatos de Microsoft Word con diferentes opciones de reconocimiento y diseño. Utilice [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para controlar cómo el texto, las listas y las imágenes de PDF se asignan a la salida de Word.
+
+## Resumen
+
+Este artículo explica cómo convertir PDF a Word usando Java. El código es muy simple, solo cargue el PDF en la clase Document y guárdelo como resultado en formato Microsoft Word DOC o DOCX. Cubre los siguientes temas
+
+- [Java PDF a Word](#convert-pdf-to-doc)
+- [Java PDF a DOC](#convert-pdf-to-doc)
+- [Java PDF a DOCX](#convert-pdf-to-docx)
+- [Java Convertir PDF a Word](#convert-pdf-to-docx)
+- [Java Convertir PDF a DOC](#convert-pdf-to-doc)
+- [Java Convertir PDF a DOCX](#convert-pdf-to-docx)
+- [Java Cómo convertir un archivo PDF a Word DOC](#convert-pdf-to-doc) o [Word DOCX](#convert-pdf-to-docx)
+
+- [Java Biblioteca PDF a Word, API o Código para Guardar, Generar o Crear Documentos Word Programáticamente desde PDF](#convert-pdf-to-docx)
 
 ## Convertir PDF a DOC
 
-Utilice este ejemplo cuando un documento PDF debe exportarse al formato DOC legado. El código crea `DocSaveOptions`, establece el formato a `Doc`, y pasa las opciones a un método de guardado compartido.
+Una de las características más populares es la conversión de PDF a Microsoft Word DOC, lo que facilita la manipulación del contenido. Aspose.PDF para Java te permite convertir archivos PDF a DOC.
 
-1. Abra el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Crear [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) y establecer el formato a `Doc`.
-1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo tanto, el PDF se exporta al formato de documento binario de Microsoft Word.
-1. Guarda el archivo DOC convertido.
+**Aspose.PDF para Java** puede crear documentos PDF desde cero y es una gran herramienta para actualizar, editar y manipular documentos PDF existentes. Una característica importante es la capacidad de convertir páginas y documentos PDF completos a imágenes. Otra característica popular es la conversión de PDF a Microsoft Word DOC, lo que hace que el contenido sea fácil de manipular. (La mayoría de los usuarios no pueden editar documentos PDF, pero pueden trabajar fácilmente con tablas, texto e imágenes en Microsoft Word).
+
+Para simplificar y hacer comprensible, Aspose.PDF para Java proporciona un código de dos líneas para transformar un archivo PDF de origen en un archivo DOC.
+
+El siguiente fragmento de código Java muestra el proceso de convertir un archivo PDF en formato DOC.
+
+1. Cree una instancia del objeto [Document](https://reference.aspose.com/page/java/com.aspose.page/document) con el documento PDF de origen.
+2. Guárdelo en formato **SaveFormat.Doc** llamando al método **Document.save()**.
 
 ```java
-public static void convertPdfToDoc(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        saveOptions.setFormat(DocSaveOptions.DocFormat.Doc);
-        document.save(outputFile.toString(), saveOptions);
-    }
-    System.out.println(inputFile + " converted into " + outputFile);
+public static void convertPDFtoWord() {
+    // Abrir el documento PDF de origen
+    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
+    // Guardar el archivo en formato de documento de MS
+    document.save(DATA_DIR + "PDFToDOC_out.doc", SaveFormat.Doc);
+    document.close();
 }
 ```
+
+## Usando la Clase DocSaveOptions
+
+La [clase DocSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocSaveOptions) proporciona numerosas propiedades que mejoran el proceso de conversión de archivos PDF a formato DOC. Entre estas propiedades, Mode le permite especificar el modo de reconocimiento para el contenido del PDF. Puede especificar cualquier valor de la enumeración RecognitionMode para esta propiedad. Cada uno de estos valores tiene beneficios y limitaciones específicas:
+
+- El modo [Textbox](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) es rápido y bueno para preservar la apariencia original de un archivo PDF, pero la editabilidad del documento resultante podría ser limitada.
+ Cada bloque de texto visualmente agrupado en el PDF original se convierte en un cuadro de texto en el documento de salida. Esto logra una máxima semejanza con el original, de modo que el documento de salida se ve bien, pero consiste enteramente en cuadros de texto y podría dificultar la edición en Microsoft Word.
+
+- Flow es el modo de reconocimiento completo, donde el motor realiza agrupamiento y análisis multinivel para restaurar el documento original según la intención del autor mientras produce un documento fácilmente editable. La limitación es que el documento de salida podría verse diferente del original.
+
+- La propiedad RelativeHorizontalProximity se puede usar para controlar la proximidad relativa entre elementos textuales y significa que la distancia está normalizada por el tamaño de la fuente. Las fuentes más grandes pueden tener distancias mayores entre sílabas y aún considerarse un solo conjunto. Se especifica como un porcentaje del tamaño de la fuente, por ejemplo, 1 = 100%. Esto significa que dos caracteres de 12pt que se colocan a 12 pt de distancia son próximos.
+
+- RecognitionBullets se utiliza para activar el reconocimiento de viñetas durante la conversión.
+```java
+public static void convertPDFtoWordDocAdvanced() {
+    Path pdfFile = Paths.get(DATA_DIR.toString(), "PDF-to-DOC.pdf");
+    Path docFile = Paths.get(DATA_DIR.toString(), "PDF-to-DOC.doc");
+    Document document = new Document(pdfFile.toString());
+    DocSaveOptions saveOptions = new DocSaveOptions();
+
+    // Especificar el formato de salida como DOC
+    saveOptions.setFormat(DocSaveOptions.DocFormat.Doc);
+    // Establecer el modo de reconocimiento como Flujo
+    saveOptions.setMode(DocSaveOptions.RecognitionMode.Flow);
+
+    // Establecer la proximidad horizontal como 2.5
+    saveOptions.setRelativeHorizontalProximity(2.5f);
+
+    // Habilitar el valor para reconocer viñetas durante el proceso de conversión
+    saveOptions.setRecognizeBullets(true);
+
+    document.save(docFile.toString(), saveOptions);
+    document.close();
+}
+```
+
+{{% alert color="success" %}}
+**Intenta convertir PDF a DOC en línea**
+
+Aspose.PDF para Java te presenta la aplicación en línea gratuita ["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-doc), donde puedes intentar investigar la funcionalidad y calidad con la que trabaja.
+
+[![Convert PDF to DOC](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
+{{% /alert %}}
 
 ## Convertir PDF a DOCX
 
-Utilice este ejemplo cuando un documento PDF deba exportarse como un archivo DOCX. DOCX es el formato preferido para la mayoría de los flujos de trabajo de procesamiento de texto nuevos porque está ampliamente soportado y es más fácil de editar.
+La enumeración DocFormat también proporciona la opción de elegir DOCX como el formato de salida para documentos de Word. Para renderizar el archivo PDF de origen en formato DOCX, utilice el fragmento de código especificado a continuación.
 
-1. Abra el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Crear [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) y establecer el formato a `DocX`.
-1. Llamar `document.save(outputFile.toString(), saveOptions)` por lo que el contenido del PDF se exporta como un documento de Word de Office Open XML.
-1. Guarda el archivo DOCX resultante.
+## Cómo convertir PDF a DOCX
+
+El siguiente fragmento de código Java muestra el proceso de conversión de un archivo PDF en formato DOCX.
+
+1. Cree una instancia del objeto [Document](https://reference.aspose.com/page/java/com.aspose.page/document) con el documento PDF de origen.
+2. Guárdelo en formato **SaveFormat.DocX** llamando al método **Document.save()**.
 
 ```java
-public static void convertPdfToDocx(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
-        document.save(outputFile.toString(), saveOptions);
-    }
-    System.out.println(inputFile + " converted into " + outputFile);
+public static void convertPDFtoWord_DOCX_Format() {
+    // Abrir el documento PDF de origen
+    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
+    // Guardar el archivo DOC resultante
+    document.save(DATA_DIR + "saveOptionsOutput_out.doc", SaveFormat.DocX);
+    document.close();
 }
 ```
 
-## Convertir PDF a DOCX con reconocimiento de flujo mejorado
+La clase [DocSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions) tiene una propiedad llamada Format que proporciona la capacidad de especificar el formato del documento resultante, es decir, DOC o DOCX.
+ Para convertir un archivo PDF al formato DOCX, pase el valor Docx de la enumeración DocSaveOptions.DocFormat.
 
-Utilice este ejemplo cuando la exportación a Word deba favorecer contenido editable fluido en lugar de un diseño visual fijo.
-
-1. Abra el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Crear [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para `DocX` salida.
-1. Habilitar `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` por lo tanto, el conversor utiliza reconocimiento de flujo mejorado durante la generación de DOCX.
-1. Llamar `document.save(outputFile.toString(), saveOptions)` y guarda la salida DOCX convertida.
+Por favor, observe el siguiente fragmento de código que proporciona la capacidad de convertir un archivo PDF al formato DOCX con Java.
 
 ```java
-public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
-        saveOptions.setMode(DocSaveOptions.RecognitionMode.EnhancedFlow);
-        document.save(outputFile.toString(), saveOptions);
-    }
-    System.out.println(inputFile + " converted into " + outputFile);
+public static void convertPDFtoWord_Advanced_DOCX_Format() {
+    // Abrir el documento PDF de origen
+    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
+
+    // Instanciar objeto DocSaveOptions
+    DocSaveOptions saveOptions = new DocSaveOptions();
+    // Especificar el formato de salida como DOCX
+    saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
+    // Establecer otros parámetros de DocSaveOptions
+    // ....
+
+    // Guardar el documento en formato docx
+    document.save("ConvertToDOCX_out.docx", saveOptions);
+    document.close();
 }
 ```
 
-## Convertir PDF a DOCX con saltos de línea preservados
+{{% alert color="warning" %}}
+**Intenta convertir PDF a DOCX en línea**
 
-Utilice este ejemplo cuando se deban conservar los saltos de línea del PDF de origen en la salida de Word.
+Aspose.PDF para Java te presenta la aplicación en línea gratuita ["PDF a DOCX"](https://products.aspose.app/pdf/conversion/pdf-to-docx), donde puedes intentar investigar la funcionalidad y la calidad con la que trabaja.
+[![Aspose.PDF Conversión PDF a DOCX App Gratuita](pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
-1. Abra el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Crear [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para `DocX` exportar.
-1. Habilitar `setAddReturnToLineEnd(true)` de modo que los saltos de línea explícitos se conserven durante la conversión.
-1. Llamar `document.save(outputFile.toString(), saveOptions)` y guarde el archivo DOCX.
-
-```java
-public static void convertPdfToDocxWithLineBreaks(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
-        saveOptions.setAddReturnToLineEnd(true);
-        document.save(outputFile.toString(), saveOptions);
-    }
-    System.out.println(inputFile + " converted into " + outputFile);
-}
-```
-
-## Convertir PDF a DOCX con reconocimiento de viñetas
-
-Utilice este ejemplo cuando los viñetas de la lista del PDF de origen deben ser reconocidas y conservadas como estructuras de lista en Word.
-
-1. Abra el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Crear [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para `DocX` exportar.
-1. Habilitar `setRecognizeBullets(true)` por lo que el contenido tipo lista del PDF se reconoce como listas con viñetas durante la conversión.
-1. Llamar `document.save(outputFile.toString(), saveOptions)` y guarde el archivo DOCX.
-
-```java
-public static void convertPdfToDocxWithBulletRecognition(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
-        saveOptions.setRecognizeBullets(true);
-        document.save(outputFile.toString(), saveOptions);
-    }
-    System.out.println(inputFile + " converted into " + outputFile);
-}
-```
-
-## Convertir PDF a DOCX con resolución de imagen personalizada
-
-Utilice este ejemplo cuando la fidelidad de la imagen dentro del DOCX generado debe controlarse durante la conversión.
-
-1. Abra el PDF de origen en un [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instancia.
-1. Crear [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) para `DocX` exportar.
-1. Establecer `setImageResolutionX(300)` y `setImageResolutionY(300)` Así que el contenido raster se genera a la resolución solicitada.
-1. Llamar `document.save(outputFile.toString(), saveOptions)` y guarde la salida DOCX.
-
-```java
-public static void convertPdfToDocxWithImageResolution(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        DocSaveOptions saveOptions = new DocSaveOptions();
-        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
-        saveOptions.setImageResolutionX(300);
-        saveOptions.setImageResolutionY(300);
-        document.save(outputFile.toString(), saveOptions);
-    }
-    System.out.println(inputFile + " converted into " + outputFile);
-}
-```
+{{% /alert %}}

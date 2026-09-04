@@ -1,21 +1,20 @@
 ---
-title: Apoyar, Extender y Contribuir a Aspose.PDF en Struts
-linktitle: Apoyar, Extender y Contribuir a Aspose.PDF en Struts
+title: Soporte, Extender y Contribuir a Aspose.Pdf en Struts
 type: docs
 weight: 20
 url: /es/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
-description: Descubre cómo apoyar, extender y contribuir a Aspose.PDF para Java en proyectos basados en Struts.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
+
 ## Soporte
 
 {{% alert color="primary" %}}
 
-- Si te gusta ver los problemas conocidos / reportados (por los usuarios o el equipo de Q.A) en la aplicación.
-- O deseas reportar cualquier problema que hayas encontrado en la aplicación
-- ¿Tiene alguna sugerencia de mejora o le gustaría hacer alguna solicitud de característica?
+- Si desea ver problemas conocidos / reportados (por los usuarios o el equipo de Q.A) en la aplicación.
+- O si desea reportar cualquier problema que encuentre en la aplicación
+- Tiene alguna sugerencia de mejora o le gustaría hacer una solicitud de función
 
-Por favor, use cualquiera de los siguientes rastreadores de incidencias del proyecto:
+Por favor use cualquiera de los siguientes rastreadores de problemas del proyecto:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
@@ -23,11 +22,11 @@ Por favor, use cualquiera de los siguientes rastreadores de incidencias del proy
 
 ## Extender y Contribuir
 
-Aspose.PDF Java for Struts 1.3 es de código abierto y su código fuente está disponible en los principales sitios web de desarrollo colaborativo enumerados a continuación. Se anima a los desarrolladores a descargar el código fuente y contribuir sugiriendo o añadiendo nuevas funcionalidades o mejorando las existentes, de modo que otros también puedan beneficiarse de ello.
+Aspose.PDF Java para Struts 1.3 es de código abierto y su código fuente está disponible en los principales sitios web de codificación social que se enumeran a continuación. Se anima a los desarrolladores a descargar el código fuente y contribuir sugiriendo o agregando nuevas funciones o mejorando las existentes, para que otros también puedan beneficiarse de ello.
 
-## Código fuente
+## Código Fuente
 
-Puede obtener el código fuente más reciente de una de las siguientes ubicaciones
+Puede obtener el código fuente más reciente de uno de los siguientes lugares
 
 - [CodePlex](https://asposepdfforstruts.codeplex.com)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)

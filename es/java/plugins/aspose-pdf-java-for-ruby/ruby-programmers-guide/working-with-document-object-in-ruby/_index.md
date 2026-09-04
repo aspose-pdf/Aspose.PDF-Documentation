@@ -1,23 +1,23 @@
 ---
-title: Trabajando con el objeto Document en Ruby
-linktitle: Trabajando con el objeto Document en Ruby
+title: Trabajando con el Objeto Documento en Ruby
 type: docs
 weight: 10
 url: /es/java/working-with-document-object-in-ruby/
-description: Aprenda cómo trabajar con objetos de documentos PDF en Ruby usando Aspose.PDF para crear, actualizar y gestionar la configuración del documento.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
+
 Esta sección incluye los siguientes temas:
 
-- [Adding JavaScript in Ruby](/pdf/es/java/adding-javascript-in-ruby/)
-- [Add Layers to PDF File in Ruby](/pdf/es/java/add-layers-to-pdf-file-in-ruby/)
-- [Add TOC to Existing PDF in Ruby](/pdf/es/java/add-toc-to-existing-pdf-in-ruby/)
-- [Get Document Window and Page Display Properties in Ruby](/pdf/es/java/get-document-window-and-page-display-properties-in-ruby/)
-- [Get PDF File Information in Ruby](/pdf/es/java/get-pdf-file-information-in-ruby/)
-- [Get XMP Metadata from PDF File in Ruby](/pdf/es/java/get-xmp-metadata-from-pdf-file-in-ruby/)
-- [Optimize PDF Document for the Web in Ruby](/pdf/es/java/optimize-pdf-document-for-the-web-in-ruby/)
-- [Optimize PDF File Size in Ruby](/pdf/es/java/optimize-pdf-file-size-in-ruby/)
-- [Remove Metadata from PDF in Ruby](/pdf/es/java/remove-metadata-from-pdf-in-ruby/)
-- [Set Document Window and Page Display Properties in Ruby](/pdf/es/java/set-document-window-and-page-display-properties-in-ruby/)
-- [Set PDF Expiration in Ruby](/pdf/es/java/set-pdf-expiration-in-ruby/)
-- [Set PDF File Information in Ruby](/pdf/es/java/set-pdf-file-information-in-ruby/)
+- [Agregar JavaScript en Ruby](/pdf/es/java/adding-javascript-in-ruby/)
+- [Agregar Capas al Archivo PDF en Ruby](/pdf/es/java/add-layers-to-pdf-file-in-ruby/)
+- [Agregar TOC a un PDF Existente en Ruby](/pdf/es/java/add-toc-to-existing-pdf-in-ruby/)
+- [Obtener Propiedades de la Ventana del Documento y la Visualización de Página en Ruby](/pdf/es/java/get-document-window-and-page-display-properties-in-ruby/)
+- [Obtener Información del Archivo PDF en Ruby](/pdf/es/java/get-pdf-file-information-in-ruby/)
+- [Obtener Metadatos XMP del Archivo PDF en Ruby](/pdf/es/java/get-xmp-metadata-from-pdf-file-in-ruby/)
+- [Optimizar Documento PDF para la Web en Ruby](/pdf/es/java/optimize-pdf-document-for-the-web-in-ruby/)
+- [Optimizar el Tamaño del Archivo PDF en Ruby](/pdf/es/java/optimize-pdf-file-size-in-ruby/)
+- [Eliminar Metadatos del PDF en Ruby](/pdf/es/java/remove-metadata-from-pdf-in-ruby/)
+
+- [Establecer Propiedades de la Ventana del Documento y la Visualización de Página en Ruby](/pdf/es/java/set-document-window-and-page-display-properties-in-ruby/)
+- [Establecer la Expiración de PDF en Ruby](/pdf/es/java/set-pdf-expiration-in-ruby/)
+- [Establecer la Información del Archivo PDF en Ruby](/pdf/es/java/set-pdf-file-information-in-ruby/)

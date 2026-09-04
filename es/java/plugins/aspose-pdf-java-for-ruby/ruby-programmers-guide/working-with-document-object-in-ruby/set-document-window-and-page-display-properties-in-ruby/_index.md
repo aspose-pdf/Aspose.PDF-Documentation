@@ -1,84 +1,84 @@
 ---
-title: Establecer propiedades de la ventana del documento y de visualización de página en Ruby
-linktitle: Establecer propiedades de la ventana del documento y de visualización de página en Ruby
+title: Establecer propiedades de ventana de documento y visualización de página en Ruby
 type: docs
 weight: 100
 url: /es/java/set-document-window-and-page-display-properties-in-ruby/
-description: Personalizar la configuración de visualización del documento y de la página en PDFs usando Ruby y Aspose.PDF.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Establecer propiedades de la ventana del documento y de visualización de página
 
-Para establecer las propiedades de la ventana del documento y de visualización de página del documento Pdf usando **Aspose.PDF Java for Ruby**, simplemente invoque el módulo **SetDocumentWindow**.
+## Aspose.PDF - Establecer propiedades de ventana de documento y visualización de página
+
+Para establecer las propiedades de ventana de documento y visualización de página de un documento Pdf utilizando **Aspose.PDF Java para Ruby**, simplemente invoque el módulo **SetDocumentWindow**.
 
 Código Ruby
 
 ```java
-# The path to the documents directory.
+# La ruta al directorio de documentos.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Open a pdf document.
+# Abrir un documento pdf.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Set different document properties
+# Establecer diferentes propiedades del documento
 
-# Position of document's window - Default: false
+# Posición de la ventana del documento - Predeterminado: false
 
 doc.setCenterWindow(true)
 
-# Predominant reading order; determine the position of page
+# Orden de lectura predominante; determinar la posición de la página
 
-# when displayed side by side - Default: L2R
+# cuando se muestra lado a lado - Predeterminado: L2R
 
 #doc.setDirection(Rjb::import('com.aspose.pdf.Direction.L2R'))
 
-# Whether window's title bar should display document title.
+# Si la barra de título de la ventana debe mostrar el título del documento.
 
-# If false, title bar displays PDF file name - Default: false
+# Si es false, la barra de título muestra el nombre del archivo PDF - Predeterminado: false
 
 doc.setDisplayDocTitle(true)
 
-# Whether to resize the document's window to fit the size of
+# Si redimensionar la ventana del documento para ajustar el tamaño de
 
-# first displayed page - Default: false
+# la primera página mostrada - Predeterminado: false
 
 doc.setFitWindow(true)
 
-# Whether to hide menu bar of the viewer application - Default: false
+# Si ocultar la barra de menú de la aplicación del visor - Predeterminado: false
 
 doc.setHideMenubar(true)
 
-# Whether to hide tool bar of the viewer application - Default: false
+# Si ocultar la barra de herramientas de la aplicación del visor - Predeterminado: false
 
 doc.setHideToolBar(true)
 
-# Whether to hide UI elements like scroll bars
+# Si ocultar elementos de la UI como barras de desplazamiento
 
-# and leaving only the page contents displayed - Default: false
+# y dejar solo el contenido de la página mostrado - Predeterminado: false
 
 doc.setHideWindowUI(true)
 
-# The document's page mode. How to display document on exiting full-screen mode.
+# El modo de página del documento. Cómo mostrar el documento al salir del modo de pantalla completa.
 
 doc.setNonFullScreenPageMode(Rjb::import('com.aspose.pdf.PageMode.UseOC'))
 
-# The page layout i.e. single page, one column
+# El diseño de página, es decir, una sola página, una columna
 
 doc.setPageLayout(Rjb::import('com.aspose.pdf.PageLayout.TwoColumnLeft'))
 
-# How the document should display when opened.
+# Cómo debe mostrarse el documento al abrirse.
 
 doc.setPageMode()
 
-# Save updated PDF file
+# Guardar archivo PDF actualizado
 
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
+
 ## Descargar Código en Ejecución
 
-DescargarВ **Establecer ventana del documento y propiedades de visualización de página (Aspose.PDF)**В deВ cualquiera de los sitios de código social mencionados a continuación:
+Descargar **Establecer Propiedades de Ventana de Documento y Visualización de Página (Aspose.PDF)** desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

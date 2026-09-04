@@ -1,20 +1,19 @@
 ---
-title: Establecer la información del archivo PDF en Jython
-linktitle: Establecer la información del archivo PDF en Jython
+title: Establecer Información del Archivo PDF en Jython
 type: docs
 weight: 70
 url: /es/java/set-pdf-file-information-in-jython/
-description: Aprenda cómo establecer los metadatos y otras propiedades del archivo de un documento PDF en Jython con Aspose.PDF.
-lastmod: "2026-09-03"
+lastmod: "2021-06-05"
 ---
-## Aspose.PDF - Establecer información del archivo PDF
 
-Para comprobar el formato de archivo usando **Aspose.PDF Java for Jython**. Aquí puede ver el código de ejemplo.
+## Aspose.PDF - Establecer Información del Archivo Pdf
 
-Error al renderizar la macro 'code' : Valor inválido especificado para el parámetro lang
+Para verificar el formato del archivo usando **Aspose.PDF Java para Jython**. Aquí puedes ver el código de ejemplo.
 
-## Descargar código en ejecución
+Error al renderizar macro 'code' : Valor inválido especificado para el parámetro lang
 
-Descargue el código en ejecución de cualquiera de los sitios de codificación social mencionados a continuación:
+## Descargar Código en Ejecución
+
+Descargar el código en ejecución desde cualquiera de los sitios de codificación social mencionados a continuación:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
