@@ -23,7 +23,7 @@ print "xmp:CustomProperty: " + str(doc.getMetadata().get_Item("xmp:CustomPropert
 
 **Загрузить исполняемый код**
 
-СкачатьВ **Get XMP Metadata (Aspose.PDF)**В изВ любого из перечисленных ниже сайтов для совместного кодирования:
+Скачайте **Get XMP Metadata (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместного кодирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetXMPMetadata/GetXMPMetadata.py)
 
