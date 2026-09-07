@@ -18,7 +18,7 @@ Tabel berikut menunjukkan format file yang dapat dimuat oleh Aspose.PDF untuk Ja
 
 ## Format Penyimpanan yang Didukung
 
-The following table indicates the file formats in which the document can be saved by using Aspose.PDF for JasperReports. 
+Tabel berikut menunjukkan format file yang dapat digunakan untuk menyimpan dokumen dengan menggunakan Aspose.PDF untuk JasperReports.
 
 |**Format**|**Deskripsi**|
 | :- | :- |
