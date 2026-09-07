@@ -7,7 +7,7 @@ description: Aspose.PDF を使用して JasperServer を効率的に操作する
 lastmod: "2026-08-31"
 ---
 
-## <ins>licenseFile Exporter パラメータを applicationContext.xml に設定します
+## licenseFile Exporter パラメータを applicationContext.xml に設定します
 
 {{% alert color="primary" %}}
 
