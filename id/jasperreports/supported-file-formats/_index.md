@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 ## Format Beban yang Didukung
 
-The following table indicates the file formats that Aspose.PDF for JasperReports can load.
+Tabel berikut menunjukkan format file yang dapat dimuat oleh Aspose.PDF untuk JasperReports.
 
 |**Format**|**Description**|
 | :- | :- |
