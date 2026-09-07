@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF. These demos are based on standard JasperReports demos that have been modified to demonstrate how to use new exporters. This tutorial, goes through the steps required to update the existing JasperReports demos to use Aspose.PDF for JasperReports.
+Aspose.PDF for JasperReports 包含多个示范项目，可协助您快速上手将报表汇出为 PDF。这些演示基于标准的 JasperReports 演示，并经过修改以演示如何使用新的汇出器。本教学将逐步介绍如何将现有的 JasperReports 示范更新为使用 Aspose.PDF for JasperReports。
 
 {{% /alert %}}
 
@@ -20,19 +20,19 @@ Aspose.PDF for JasperReports includes a number of demo projects to help you get 
 
 以下步骤说明如何更新现有演示以使用 Aspose.PDF 进行 JasperReports 导出扩展，而不是使用 JasperReport 的标准 PDF 导出功能。
 
-1. 从 <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>. 下载 JasperReports
-   Make sure to download the entire archived project with the source code and demos, not just a single JAR. This tutorial was prepared using JasperReports-3.5.2.
+1. 从 <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579> 下载 JasperReports
+请务必下载包含源代码和示例的完整项目包，而不仅仅是单个 JAR 文件。本教程使用 JasperReports 3.5.2 版本编写。
 2. Unpack the archived project to some location on your hard disk, for example C:\.
 3. 将 **aspose.pdf.jasperreports.jar** 从 **Aspose.PDF.JasperReports.zip** 中的 \lib 文件夹复制到“`<InstallDir>`”\jasperreports\lib。
-4. 打开```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>``` 是您解压 JasperReports 的位置）以更新现有演示。例如，如果您选择了字体演示，以便与 JasperReports 的 Aspose.PDF 一起使用，请创建它的副本，以便原始演示保持不变。出于本示例的目的，我们将新文件夹命名为 **fonts.ap**。
-Note: demos will run from ```<InstallDir>``` \jasperreports\demo\samples because the demo build scripts rely on the JasperReports' folder structure. If you change the sample folder, you have to modify build scripts.
-5. Open the **FontsApp.java** file from the src folder and add a reference to Aspose.PDF for JasperReports:
-   import com.aspose.pdf.jr3_7_0.jasperreports.*;
-   (We are using jr3_7_0 because this tutorial was prepared with JasperReports 3.5.2.)
+4. 打开```<InstallDir>```\jasperreports\demo\samples, where ```<InstallDir>``` 是您解压 JasperReports 的位置）以更新现有演示。例如，如果您选择了字体演示，以便与 JasperReports 的 Aspose.PDF 一起使用，请创建它的副本，以便原始演示保持不变。出于本示例的目的，我们将新文件夹命名为 **fonts.ap**。
+注意：演示程序将从 `<安装目录>` \jasperreports\demo\samples` 运行，因为演示程序的构建脚本依赖于 JasperReports 的文件夹结构。如果您更改了示例文件夹，则必须修改构建脚本。
+5. 打开 src 文件夹中的 **FontsApp.java** 文件，并添加对 Aspose.PDF for JasperReports 的引用：
+import com.aspose.pdf.jr3_7_0.jasperreports.*;
+（我们使用 jr3_7_0 是因为本教程是基于 JasperReports 3.5.2 编写的。）
 6. 添加新字符串：
-   `private static final String TASK_ASPOSE_PDF = "aspose_pdf";` 作为新的导出选项，与现有变量一起使用。
+`private static final String TASK_ASPOSE_PDF = "aspose_pdf";` 作为新的导出选项，与现有变量一起使用。
 7. 找到 for else if (TASK_PDF.equals(taskName)) 代码段并复制整个段。
-8. Paste the code snippet under same segment.
+8. 将代码片段粘贴到同一段落下。
 
 ```java
  else if (TASK_PDF.equals(taskName))
