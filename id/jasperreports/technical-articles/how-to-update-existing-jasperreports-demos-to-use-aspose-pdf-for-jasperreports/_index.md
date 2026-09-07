@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF. These demos are based on standard JasperReports demos that have been modified to demonstrate how to use new exporters. This tutorial, goes through the steps required to update the existing JasperReports demos to use Aspose.PDF for JasperReports.
+Aspose.PDF for JasperReports menyertakan sejumlah proyek demo untuk membantu Anda memulai mengekspor laporan ke PDF. Demo ini didasarkan pada demo JasperReports standar yang telah dimodifikasi untuk menunjukkan cara menggunakan eksportir baru. Tutorial ini akan membahas langkah-langkah yang diperlukan untuk memperbarui demo JasperReports yang ada agar menggunakan Aspose.PDF for JasperReports.
 
 {{% /alert %}}
 
@@ -18,21 +18,21 @@ Aspose.PDF for JasperReports includes a number of demo projects to help you get 
 
 {{% alert color="primary" %}}
 
-The following steps explains how to update existing demos to use Aspose.PDF for JasperReports export extension rather than using JasperReport's standard PDF export feature.
+Langkah-langkah berikut menjelaskan cara memperbarui demo yang ada agar menggunakan ekstensi ekspor Aspose.PDF untuk JasperReports, bukan menggunakan fitur ekspor PDF standar JasperReports.
 
-1. Download JasperReports from <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>.
-   Make sure to download the entire archived project with the source code and demos, not just a single JAR. This tutorial was prepared using JasperReports-3.5.2.
-2. Unpack the archived project to some location on your hard disk, for example C:\.
+1. Unduh JasperReports dari <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>.
+Pastikan untuk mengunduh seluruh proyek yang diarsipkan beserta kode sumber dan demo, bukan hanya satu file JAR. Tutorial ini disiapkan menggunakan JasperReports-3.5.2.
+2. Ekstrak proyek yang diarsipkan ke lokasi tertentu di hard disk Anda, misalnya C:\.
 3. Salin **aspose.pdf.jasperreports.jar** dari folder \lib di **Aspose.PDF.JasperReports.zip** ke ```<InstallDir>```\jasperreports\lib.
-4. Open ```<InstallDir>```\jasperreports\demo\samples, (where ```<InstallDir>``` is the location you have unpacked JasperReports) to update an existing demo. If you have selected the fonts demo, for example, to use with Aspose.PDF for JasperReports, create a copy of it so that the original demo remains the same. For the purpose of this example, we have named the new folder **fonts.ap**.
-Catatan: demo akan dijalankan dari ```<InstallDir>``` \jasperreports\demo\samples karena skrip pembuatan demo bergantung pada struktur folder JasperReports. Jika Anda mengubah folder sampel, Anda harus mengubah skrip build.
-5. Buka file **FontsApp.java** dari folder src dan tambahkan referensi ke Aspose.PDF for JasperReports:
-   impor com.aspose.pdf.jr3_7_0.jasperreports.*;
-   (Kami menggunakan jr3_7_0 karena tutorial ini disiapkan dengan JasperReports 3.5.2.)
-6. Tambahkan string baru:
-   private static final String TASK_ASPOSE_PDF = "aspose_pdf"; along with existing variables as an export option via Aspose.PDF for JasperReports.
-7. Temukan segmen kode for else if (TASK_PDF.equals(taskName)) dan salin seluruh segmen.
-8. Paste the code snippet under same segment.
+4. Buka ```<InstallDir>```\jasperreports\demo\samples, (dengan ```<InstallDir>``` adalah lokasi Anda membongkar JasperReports) untuk memperbarui demo yang ada. Jika Anda telah memilih demo font, misalnya, untuk digunakan dengan Aspose.PDF untuk JasperReports, buat salinannya sehingga demo aslinya tetap sama. Untuk tujuan contoh ini, kami memberi nama folder baru **fonts.ap**.
+Catatan: demo akan dijalankan dari ```<InstallDir>``` \jasperreports\demo\samples karena skrip pembuatan demo bergantung pada struktur folder JasperReports. Jika Anda sampel mengubah folder, Anda harus mengubah skrip build.
+5. Buka file **FontsApp.java** dari folder src dan tambahkan referensi ke Aspose.PDF untuk JasperReports: 
+impor com.aspose.pdf.jr3_7_0.jasperreports.*; 
+(Kami menggunakan jr3_7_0 karena tutorial ini disiapkan dengan JasperReports 3.5.2.)
+6. Tambahkan string baru: 
+String akhir statis pribadi TASK_ASPOSE_PDF = "aspose_pdf"; beserta variabel yang ada sebagai opsi ekspor melalui Aspose.PDF untuk JasperReports.
+7. Temukan kode segmen untuk else if (TASK_PDF.equals(taskName)) dan salin seluruh segmen.
+8. Tempelkan cuplikan kode di bawah segmen yang sama.
 
 ```java
  else if (TASK_PDF.equals(taskName))
@@ -83,12 +83,12 @@ update  name="pdf"  as   name="aspose_pdf"
 update  <arg value="pdf"/>  as   <arg value="aspose_pdf"/>
 ```
 
-11. To run the demo:
-   -  Download the ANT tool from <http://ant.apache.org/bindownload.cgi>.
-   - Unpack the ANT tool and set up environment variables as described in the tool's manual.
-   -  Ubah direktori saat ini menjadi <InstallDir>\demo\hsqldb dan jalankan baris perintah berikut:
-      ant runServer
-12. Open a new command prompt instance and change the current directory to <InstallDir>\demo\samples\fonts.ap and run the following commands in the command line:
+11. Untuk menjalankan demo:
+- Unduh alat ANT dari <http://ant.apache.org/bindownload.cgi>.
+- Ekstrak alat ANT dan atur variabel lingkungan seperti yang dijelaskan dalam manual alat tersebut.
+- Ubah direktori saat ini menjadi <InstallDir>\demo\hsqldb dan jalankan baris perintah berikut:
+ant runServer
+12. Buka instance command prompt baru dan ubah direktori saat ini ke <InstallDir>\demo\samples\fonts.ap dan jalankan perintah berikut di baris perintah:
 13. `ant javac` – untuk mengkompilasi file sumber Java dari aplikasi pengujian.
 14. `ant compile` – untuk mengkompilasi desain laporan XML dan menghasilkan file `.jasper`.
 15. `ant fill` – untuk mengisi desain laporan yang dikompilasi dengan data dan menghasilkan file `.jrprint`.
