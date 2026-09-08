@@ -14,9 +14,9 @@ Chaque licence Aspose est accompagnée d'un an de mises à jour logicielles grat
 
 {{% /alert %}}
 
-Aspose.PDF pour l'évaluation de JasperReports et les versions payantes sont le même téléchargement. La version d'essai offre les mêmes fonctionnalités que la version sous licence, à l'exception du fait qu'elle insère un filigrane d'évaluation dans le document PDF de sortie. Vous pouvez [télécharger Aspose.PDF for JasperReports] (http://www.aspose.com/community/files/67/jasperreports-exporters/aspose.pdf-for-jasperreports/default.aspx) et l'installer. Il fonctionne automatiquement en mode évaluation.
+Aspose.PDF pour l'évaluation de JasperReports et les versions payantes sont le même téléchargement. La version d'essai offre les mêmes fonctionnalités que la version sous licence, à l'exception du fait qu'elle insère un filigrane d'évaluation dans le document PDF de sortie. Vous pouvez [télécharger Aspose.PDF for JasperReports](http://www.aspose.com/community/files/67/jasperreports-exporters/aspose.pdf-for-jasperreports/default.aspx) et l'installer. Il fonctionne automatiquement en mode évaluation.
 
 Profitez de la version d'évaluation d'Aspose.PDF for JasperReports : elle n'a pas de limite de temps et est accompagnée d'un support technique gratuit.
 
-Le mode d'évaluation injecte des filigranes dans les rapports exportés. Lorsque vous [achetez une licence] (http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [appliquez simplement la licence] (/pdf/jasperreports/licensing/) et le filigrane n'apparaîtra plus dans les documents de sortie.
+Le mode d'évaluation injecte des filigranes dans les rapports exportés. Lorsque vous [achetez une licence](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [appliquez simplement la licence] (/pdf/jasperreports/licensing/) et le filigrane n'apparaîtra plus dans les documents de sortie.
 
