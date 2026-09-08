@@ -14,12 +14,12 @@ lastmod: "2026-08-31"
 
 ## 欢迎使用 Aspose.PDF for JasperReports 文档
 
-Aspose.PDF for JasperReports is a flexible component designed to export reports from JasperReports and JasperServer to Portable Document Format (PDF). Important report features such as tables, charts and images are converted to PDF with the highest degree of precision.
+Aspose.PDF for JasperReports 是一款灵活的组件，旨在将 JasperReports 和 JasperServer 中的报表导出为 PDF 格式。报表中的重要元素，例如表格、图表和图像，都能以极高的精度转换为 PDF。
 
 {{% /alert %}}
 
-### Product Description
+### 产品描述
 
-To create PDF documents, Aspose.PDF for JasperReports relies on a built-in version of [Aspose.PDF for Java](https://products.aspose.com/pdf/java/), the market-leading library from Aspose. Adobe Acrobat Professional does not have to be installed on the system to generate PDF documents with Aspose.PDF for JasperReports.
+Aspose.PDF for JasperReports 使用内置的 [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) 来创建 PDF 文档，该库是 Aspose 公司的市场领先产品。使用 Aspose.PDF for JasperReports 生成 PDF 文档无需在系统上安装 Adob​​e Acrobat Professional.
 
 
