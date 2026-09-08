@@ -22,7 +22,7 @@ Aspose est réputé pour son support technique gratuit et illimité fourni direc
 
 ### Blogues
 
-[Aspose.Blogs](https://forum.aspose.com/) est l'endroit idéal pour rechercher des informations sur les dernières versions et sur ce que les développeurs Aspose ont à dire.
+[Aspose.Blogs](https://blog.aspose.com/) est l'endroit idéal pour rechercher des informations sur les dernières versions et sur ce que les développeurs Aspose ont à dire.
 
 ### Besoin de plus de soutien ?
 
