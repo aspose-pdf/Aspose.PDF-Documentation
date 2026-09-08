@@ -22,7 +22,7 @@ Aspose é conhecida por seu suporte técnico gratuito e ilimitado fornecido dire
 
 ### Blogues
 
-[Aspose.Blogs](http://www.aspose.com/Community/Blogs/) é o lugar para procurar informações sobre os últimos lançamentos e sobre o que os desenvolvedores do Aspose têm a dizer.
+[Aspose.Blogs](https://blog.aspose.com/) é o lugar para procurar informações sobre os últimos lançamentos e sobre o que os desenvolvedores do Aspose têm a dizer.
 
 ### Precisa de mais suporte?
 
