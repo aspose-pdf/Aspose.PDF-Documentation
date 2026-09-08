@@ -14,9 +14,9 @@ lastmod: "2026-08-31"
 
 {{% /alert %}}
 
-Aspose.PDF for JasperReports evaluation and paid versions are the same download. The trial version provides the same features as the licensed version, with the exception that it inserts an evaluation watermark in the output PDF document. You can [download Aspose.PDF for JasperReports](http://www.aspose.com/community/files/67/jasperreports-exporters/aspose.pdf-for-jasperreports/default.aspx) and install it. It works in evaluation mode automatically.
+Aspose.PDF for JasperReports 的评估版和付费版下载内容相同。试用版提供的功能与付费版相同，唯一的区别在于它会在输出的 PDF 文档中插入评估水印。您可以[下载 [Aspose.PDF for JasperReports](https://releases.aspose.com/pdf/jasperreports/)并进行安装。它会自动以评估模式运行。
 
-Please take an advantage of the evaluation version of Aspose.PDF for JasperReports: it does not have time limitations and comes with free technical support.
+请充分利用 Aspose.PDF for JasperReports 的评估版：它没有时间限制，并提供免费技术支持。
 
-Evaluation mode injects watermarks into exported reports. When you [buy a license](http://www.aspose.com/community/forums/aspose.purchase/220/showforum.aspx), [simply apply the license](/pdf/zh/jasperreports/licensing/) and watermark will no more appear in the output documents.
+评估模式会在导出的报表中插入水印。当您[购买许可证](https://purchase.aspose.com/pricing/pdf/jasperreports)时，[只需应用许可证](/pdf/zh/jasperreports/licensing/)，输出文档中将不再出现水印。
 
