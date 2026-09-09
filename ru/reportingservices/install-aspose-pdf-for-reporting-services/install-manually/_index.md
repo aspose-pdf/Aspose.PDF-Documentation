@@ -4,11 +4,13 @@ linktitle: Установить вручную
 type: docs
 weight: 20
 url: /ru/reportingservices/install-manually/
-lastmod: "2026-06-19"
+description: Узнайте, как установить Aspose.PDF for Reporting Services вручную.
+lastmod: "2026-08-20"
 ---
 
-**Этот раздел включает следующие темы:**
+**В этот раздел включены следующие темы:**
 
-- [Установить на сервер отчетов](/pdf/ru/reportingservices/install-to-report-server/)
+- [Установить на сервер отчетов](/pdf/reportingservices/install-to-report-server/)
+
 
 

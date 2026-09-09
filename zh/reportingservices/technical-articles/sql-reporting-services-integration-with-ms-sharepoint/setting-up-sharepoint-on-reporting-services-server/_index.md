@@ -4,6 +4,7 @@ linktitle: 在 Reporting Services 服务器上设置 SharePoint
 type: docs
 weight: 30
 url: /zh/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+description: "了解 Aspose.PDF for Reporting Services 中的在 Reporting Services 服务器上设置 SharePoint。"
 lastmod: "2026-06-19"
 ---
 

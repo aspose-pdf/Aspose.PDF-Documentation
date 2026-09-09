@@ -4,6 +4,7 @@ linktitle: مقدمة
 type: docs
 weight: 10
 url: /ar/reportingservices/introduction/
+description: "تعرّف على مقدمة في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 
