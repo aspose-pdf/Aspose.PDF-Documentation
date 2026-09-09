@@ -4,6 +4,7 @@ linktitle: 安装到报告服务器
 type: docs
 weight: 10
 url: /zh/reportingservices/install-to-report-server/
+description: "了解 Aspose.PDF for Reporting Services 中的安装到报告服务器。"
 lastmod: "2026-06-19"
 ---
 

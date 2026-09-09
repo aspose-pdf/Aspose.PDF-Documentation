@@ -4,6 +4,7 @@ linktitle: Instal Secara Manual
 type: docs
 weight: 20
 url: /id/reportingservices/install-manually/
+description: "Temukan Instal Secara Manual di Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

@@ -1,19 +1,20 @@
 ---
-title: Активация и деактивация после установки
+title: Activation and Deactivation after installation
 linktitle: Активация и деактивация после установки
 type: docs
 weight: 40
 url: /ru/sharepoint/activation-and-deactivation-after-installation/
-lastmod: "2026-06-18"
-description: После установки PDF SharePoint API вы можете использовать меню Site Actions на корневом веб‑сайте коллекции сайтов для её активации и деактивации.
+lastmod: "2026-08-13"
+description: После установки PDF SharePoint API вы можете использовать меню «Действия сайта» на корневом веб-сайте семейства веб-сайтов, чтобы активировать и деактивировать его.
 ---
 
 {{% alert color="primary" %}}
 
-Во время установки Aspose.PDF for SharePoint активируется для всех выбранных коллекций сайтов. После установки вы можете использовать меню Site Actions на корневом веб‑сайте коллекции сайтов для активации и деактивации Aspose.PDF for SharePoint.
+Во время установки Aspose.PDF for SharePoint активируется для всех выбранных семейств сайтов. После установки вы можете использовать меню «Действия сайта» на корневом веб-сайте семейства сайтов, чтобы активировать и деактивировать Aspose.PDF для SharePoint.
 
 {{% /alert %}}
 
-## Активация Aspose.PDF for SharePoint в коллекции сайтов 
+## Активация Aspose.PDF для SharePoint в семействе веб-сайтов
 
-![todo:image_alt_text](activation-and-deactivation-after-installation_1.png)**
+![Activate Aspose.PDF for SharePoint](activation-and-deactivation-after-installation_1.png)
+

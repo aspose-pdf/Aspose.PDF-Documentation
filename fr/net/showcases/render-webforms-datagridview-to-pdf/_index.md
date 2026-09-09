@@ -103,7 +103,7 @@ void Render(HtmlTextWriter writer)
 }
 ```
 
-Il existe deux outils Aspose qui peuvent être utilisés pour rendre HTML en PDF :
+Il existe deux Aspose Tools qui peuvent être utilisés pour rendre HTML en PDF :
 
 - Aspose.PDF for .NET.
 - Contrôle d'exportation Aspose GridView (basé sur Aspose.PDF).

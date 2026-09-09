@@ -1,53 +1,51 @@
 ---
 title: Лицензия
 linktitle: Лицензия
-
 type: docs
 weight: 70
 url: /ru/reportingservices/license-aspose-pdf-for-reporting-services/
-description: Поймите варианты лицензирования для Aspose.PDF for Reporting Services. Узнайте, как активировать вашу лицензию и разблокировать полную функциональность.
-lastmod: "2026-06-19"
+description: Ознакомьтесь с вариантами лицензирования Aspose.PDF для служб Reporting Services. Узнайте, как активировать лицензию и разблокировать полную функциональность.
+lastmod: "2021-06-05"
 ---
 
-**Aspose.Pdf for Reporting Services** оценочная версия предоставляет тот же набор функций, что и в лицензионной версии, за исключением водяного знака оценки в результирующем PDF при использовании оценочной версии. Пожалуйста, посетите наш веб-сайт, скачайте версию продукта и начните изучать наш продукт с полным набором функций в режиме оценки.
+Оценочная версия **Aspose.PDF for Reporting Services** предоставляет тот же набор функций, что и лицензионная версия, за исключением оценочного водяного знака в результирующем PDF-файле при использовании оценочной версии. Посетите наш веб-сайт, загрузите версию продукта и начните изучать наш продукт с полным набором функций в ознакомительном режиме.
 
-Когда вы будете удовлетворены своей оценкой, [купить лицензию](https://purchase.aspose.com/buy). Перед покупкой убедитесь, что вы понимаете и согласны с условиями подписки на лицензию.
+Если вы удовлетворены своей оценкой, [купите лицензию](https://purchase.aspose.com/buy). Перед покупкой убедитесь, что вы понимаете и согласны с условиями лицензионной подписки.
 
-Лицензия будет доступна для загрузки со страницы заказа после оплаты заказа. Лицензия представляет собой текстовый файл XML, подписанный цифровой подписью. Лицензия содержит информацию, такую как имя клиента, приобретённый продукт и тип лицензии. Не изменяйте содержимое файла лицензии, так как это аннулирует лицензию.
+Лицензия будет доступна для скачивания на странице заказа после оплаты заказа. Лицензия представляет собой XML-файл в виде открытого текста с цифровой подписью. Лицензия содержит такую ​​информацию, как имя клиента, приобретенный продукт и тип лицензии. Не изменяйте содержимое файла лицензии, поскольку это приведет к аннулированию лицензии.
 
 ## Лицензирование сервера
 
-Скачайте файл лицензии и скопируйте его в C:\Program Files\Microsoft SQL Server\```<Instance>``\Reporting Services\ReportServer\bin, or C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin, or C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin folder on the server (the same folder where the Aspose.Pdf.ReportingServices.dll is placed).
+Загрузите файл лицензии и скопируйте его в папку C:\Program Files\Microsoft SQL Server\<Instance>\Reporting Services\ReportServer\bin или C:\Program Files\Microsoft SQL Server\SSRS\ReportServer\bin или C:\Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\bin на сервере (тот же папка, в которой находится Aspose.Pdf.ReportingServices.dll).
 
-```<Instance>``` is the subdirectory name that corresponds to the Microsoft SQL Server 2016 instance you want to license.
+`<Instance>` — это имя подкаталога, соответствующего экземпляру Microsoft SQL Server 2016, который вы хотите лицензировать.
 
-The default instance directory for Microsoft SQL Server 2016 is MSRS13.MSSQLSERVER.
-For the Microsoft SQL Server 2017 and later the default instance path is C:\Program Files\Microsoft SQL Server\SSRS.
-For the Power BI Report Server the default instance path is C:\Program Files\Microsoft Power BI Report Server\PBIRS.
+Каталог экземпляра по умолчанию для Microsoft SQL Server 2016 — MSRS13.MSSQLSERVER.
+Для Microsoft SQL Server 2017 и более поздних версий путь к экземпляру по умолчанию — C:\Program Files\Microsoft SQL Server\SSRS.
+Для сервера отчетов Power BI путь к экземпляру по умолчанию — C:\Program Files\Microsoft Power BI Report Server\PBIRS.
 
-**PDF generated using “Territory sales drilldown” report**
+**PDF создан на основе отчета «Детализация продаж на территории»**
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_1.png)
+![License-Territory sales drilldown](license-aspose-pdf-for-reporting-services_1.png)
 
+**PDF создан на основе отчета «Детали заказа на продажу»**
 
-**PDF generated using “Sales Order details” report**
+![License-Sales Order details](license-aspose-pdf-for-reporting-services_2.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_2.png)
+Если при инициализации лицензии возникает проблема, в результирующем PDF-документе отображается оценочный водяной знак, как указано ниже.
 
-If there is a problem while initializing the license, an evaluation watermark is displayed in the resultant PDF document as specified below.
+**Документ PDF, созданный с помощью «Детализации продаж на территории» с водяным знаком**
 
-**PDF document generated using “Territory Sales Drilldown” with watermark**
+![License-Territory Sales Drilldown](license-aspose-pdf-for-reporting-services_3.png)
 
-![todo:image_alt_text](license-aspose-pdf-for-reporting-services_3.png)
+Обратите внимание, что поддерживаемые имена файлов лицензий: Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic и Aspose.Total.Product.Family.lic. Если файл имеет другое имя, переименуйте его.
 
-Please note that that supported license file names are Aspose.PDF.ReportingServices.lic, Aspose.Total.ReportingServices.lic and Aspose.Total.Product.Family.lic. If the file has any other name, please rename it.
-
-
-## Temporary License
+## Временная лицензия
 
 {{% alert color="primary" %}}
 
-You may also request a 30 days temporary license to test the product. Please visit the following link for more information on how to get Temporary license. [Get a Temporary License](https://purchase.aspose.com/temporary-license).
+Вы также можете запросить временную лицензию на 30 дней для тестирования продукта. Пожалуйста, посетите следующую ссылку для получения дополнительной информации о том, как получить временную лицензию. [Получить временную лицензию](https://purchase.aspose.com/temporary-license).
 
 {{% /alert %}}
+
 

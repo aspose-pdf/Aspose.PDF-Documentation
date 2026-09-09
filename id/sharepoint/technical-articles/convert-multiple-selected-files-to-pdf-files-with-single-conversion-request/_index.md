@@ -4,13 +4,13 @@ linktitle: Konversi beberapa file terpilih menjadi file PDF dengan satu Perminta
 type: docs
 weight: 50
 url: /id/sharepoint/convert-multiple-selected-files-to-pdf-files-with-single-conversion-request/
-lastmod: "2026-06-18"
-description: PDF SharePoint Library memungkinkan Anda mengonversi beberapa file yang dipilih menjadi file PDF dengan satu operasi konversi.
+lastmod: "2026-08-07"
+description: PDF SharePoint Library memungkinkan Anda mengonversi beberapa file terpilih menjadi file PDF dengan satu operasi konversi.
 ---
 
 {{% alert color="primary" %}}
 
-Artikel ini menunjukkan cara mengonversi beberapa file yang dipilih menjadi file PDF dengan satu operasi konversi menggunakan Aspose.PDF for SharePoint.
+Artikel ini menunjukkan cara mengonversi beberapa file terpilih menjadi file PDF dengan satu operasi konversi menggunakan Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
@@ -18,24 +18,24 @@ Artikel ini menunjukkan cara mengonversi beberapa file yang dipilih menjadi file
 
 {{% alert color="primary" %}}
 
-Untuk mengonversi beberapa file terpilih, lakukan langkah-langkah berikut:
+Untuk mengonversi beberapa file yang dipilih, lakukan langkah-langkah berikut:
 
 1. Pilih file yang akan dikonversi
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
+![Pilih File](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_1.jpg)
 
 2. Klik tab Aspose Tools di Library Tools
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
+![Klik Aspose Tools](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_2.jpg)
 
-3. Klik Convert to PDF untuk mengonversi semua file yang dipilih menjadi file PDF yang dihasilkan.
+3. Klik Convert to PDF untuk mengonversi semua file yang dipilih menjadi file PDF hasil.
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)
+![Konversi ke PDF](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_3.jpg)
 
-4. Prompt akan ditampilkan untuk mengunduh file yang telah dikonversi.
+4. Prompt akan ditampilkan untuk mengunduh file yang dikonversi.
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_4.jpg)
+![Unduh File yang Dikonversi](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_4.jpg)
 
-![todo:image_alt_text](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_5.jpg)
+![Unduh File yang Dikonversi](convert-multiple-selected-files-to-pdf-files-with-single-conversion-request_5.jpg)
 
 {{% /alert %}}

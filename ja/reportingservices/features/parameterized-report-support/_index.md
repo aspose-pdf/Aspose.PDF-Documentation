@@ -4,6 +4,7 @@ linktitle: パラメータ化レポートサポート
 type: docs
 weight: 20
 url: /ja/reportingservices/parameterized-report-support/
+description: "Aspose.PDF for Reporting Services の パラメータ化レポートサポート について説明します。"
 lastmod: "2026-06-19"
 ---
 

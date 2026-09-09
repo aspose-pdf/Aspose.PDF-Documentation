@@ -4,6 +4,7 @@ linktitle: إعداد الأمان
 type: docs
 weight: 30
 url: /ar/reportingservices/security-setting/
+description: "تعرّف على إعداد الأمان في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

@@ -4,6 +4,7 @@ linktitle: تكوين خدمات التقارير وSharePoint
 type: docs
 weight: 40
 url: /ar/reportingservices/reporting-services-and-sharepoint-configuration/
+description: "تعرّف على تكوين خدمات التقارير وSharePoint في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 
