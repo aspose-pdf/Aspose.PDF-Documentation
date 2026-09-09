@@ -1,76 +1,75 @@
 ---
-title: Instalación de Aspose.PDF for SharePoint
-linktitle: Instalación de Aspose.PDF for SharePoint
+title: Instalando Aspose.PDF for SharePoint
+linktitle: Instalando Aspose.PDF for SharePoint
 type: docs
 weight: 20
 url: /es/sharepoint/installing-aspose-pdf-for-sharepoint/
-lastmod: "2020-12-16"
-description: PDF SharePoint API está empaquetado como una solución de SharePoint para simplificar la implementación, retirada, activación y desactivación de la granja de servidores.
+lastmod: "2026-09-09"
+description: La API de PDF SharePoint se empaqueta como una solución de SharePoint para simplificar la implementación, retirada, activación y desactivación de la granja de servidores.
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for SharePoint se puede descargar como archivo Aspose.PDF.SharePoint.zip.
+Aspose.PDF for SharePoint está disponible para descargar como el archivo Aspose.PDF.SharePoint.zip.
 
 {{% /alert %}}
 
 Este archivo contiene:
 
 - Aspose.PDF.SharePoint.wsp
-  Archivo de solución de SharePoint. Aspose.PDF for SharePoint está empaquetado como una solución de SharePoint para facilitar la implementación/retirada y la activación/desactivación de funciones en toda la granja de servidores.
+  Archivo de solución de SharePoint. Aspose.PDF for SharePoint se empaqueta como una solución de SharePoint para facilitar el despliegue/retractación y la activación/desactivación de funciones en toda la granja de servidores.
 - Aspose_LicenseAgreement.rtf
 
-**Acuerdo de licencia de usuario final:**
+**End user license agreement:**
 
 - Aspose.PDF for SharePoint.pdf
 
-**Documentación de usuario:**
+**User documentation:**
 
-- Aspose.PDF for SharePoint Documentación.chm
+- Aspose.PDF for SharePoint Documentation.chm
 
-**Documentación de usuario con referencia de API pública:**
+**User documentation with Public API reference:**
 
-- configuración.exe
+- setup.exe
 
-**Programa de configuración:**
+**Setup program:**
 
-- configuración.exe.config
+- setup.exe.config
 
-**Archivo de configuración de instalación:**
+**Setup configuration file:**
 
-El programa de instalación comprueba las siguientes condiciones antes de continuar:
+El programa de instalación verifica las siguientes condiciones antes de continuar:
 
 - SharePoint 2010 está instalado.
 - El usuario tiene permiso para instalar soluciones de SharePoint.
 - La base de datos de SharePoint está en línea.
-- Se inicia el servicio de administración de SharePoint.
-- Se inicia el servicio del temporizador de SharePoint. El servicio de administración de SharePoint y el servicio de temporizador son necesarios porque algunas acciones de configuración dependen de un trabajo del temporizador para propagarse a todos los servidores de la granja de servidores.
+- El servicio de administración de SharePoint está iniciado.
+- El servicio Timer de SharePoint está iniciado. El servicio de administración de SharePoint y el servicio Timer son necesarios porque algunas acciones de instalación dependen de un trabajo de temporizador para propagarse a todos los servidores en la granja de servidores.
 
-**Para instalar Aspose.PDF for SharePoint:**
+**To install Aspose.PDF for SharePoint:**
 
-- Descomprima el zip Aspose.PDF.SharePoint en la unidad local.
+- Descomprima el zip de Aspose.PDF.SharePoint en la unidad local.
 - Ejecute setup.exe y siga las instrucciones en pantalla.
 
-**El programa de instalación realiza las siguientes acciones:**
+**The setup program performs the following actions:**
 
-- Verifique los requisitos previos de instalación. La configuración no continuará si falla alguna verificación.
+- Verifique los requisitos previos de instalación. La configuración no continuará si alguna verificación falla.
 
-![Verifique los requisitos previos de instalación](installing-aspose-pdf-for-sharepoint_1.png)
+![Verificar los requisitos previos de instalación](installing-aspose-pdf-for-sharepoint_1.png)
 
-- Mostrar el acuerdo de licencia de usuario final. El usuario debe aceptar el acuerdo para poder continuar.
+- Mostrar el Acuerdo de Licencia de Usuario Final. El usuario debe aceptar el acuerdo para poder continuar.
 
-![Acuerdo de licencia de visualización](installing-aspose-pdf-for-sharepoint_2.png)
+![Mostrar Acuerdo de Licencia](installing-aspose-pdf-for-sharepoint_2.png)
 
-- Mostrar el cuadro de diálogo de selección de destino de implementación. El usuario selecciona las aplicaciones web y las colecciones de sitios donde se activará la función. Vea la figura a continuación.
+- Mostrar el cuadro de diálogo de selección del objetivo de implementación. El usuario selecciona aplicaciones web y colecciones de sitios donde se activará la característica. Ver la figura a continuación.
 
-![Mostrar selección de destino de implementación](installing-aspose-pdf-for-sharepoint_3.png)
+![Mostrar Selección del Objetivo de Implementación](installing-aspose-pdf-for-sharepoint_3.png)
 
-- Implemente la función en la granja de servidores.
+- Implementar la característica en la granja de servidores.
 
-![Implementar característica](installing-aspose-pdf-for-sharepoint_4.png)
+![Implementar Característica](installing-aspose-pdf-for-sharepoint_4.png)
 
-- Active la característica para las colecciones de sitios seleccionadas y configure sus aplicaciones web principales.
-- Muestre una lista de aplicaciones web y colecciones de sitios donde se implementó y activó la característica.
+- Active la funcionalidad para las colecciones de sitios seleccionadas y configure sus aplicaciones web principales.
+- Muestre una lista de aplicaciones web y colecciones de sitios donde la funcionalidad ha sido implementada y activada.
 
-![Mostrar funciones implementadas](installing-aspose-pdf-for-sharepoint_5.png)
-
+![Mostrar Funcionalidades Implementadas](installing-aspose-pdf-for-sharepoint_5.png)
