@@ -4,14 +4,14 @@ linktitle: Поддерживаемые пользовательские сво�
 type: docs
 weight: 20
 url: /ru/reportingservices/custom-properties-supported/
-description: Проверьте поддерживаемые пользовательские свойства в Aspose.PDF for Reporting Services. Максимизируйте гибкость ваших PDF‑выводов.
-lastmod: "2026-06-19"
+description: Проверьте поддерживаемые пользовательские свойства в Aspose.PDF for Reporting Services. Максимизируйте гибкость ваших PDF-выводов.
+lastmod: "2026-08-20"
 ---
 
 **В этом разделе рассматриваются следующие темы:**
 
-- [Содержание Список таблиц или рисунков](/pdf/ru/reportingservices/table-of-contents-list-of-tables-or-figures/)
-- [Линейные стрелки](/pdf/ru/reportingservices/line-arrows/)
-- [Сноска Концевая сноска](/pdf/ru/reportingservices/footnote-endnote/)
-- [Выровнять Полное выравнивание текста](/pdf/ru/reportingservices/justify-fulljustify-text-alignment/)
+- [Оглавление Список таблиц или фигур](/pdf/ru/reportingservices/table-of-contents-list-of-tables-or-figures/)
+- [Стрелки линии](/pdf/ru/reportingservices/line-arrows/)
+- [Конечная сноска](/pdf/ru/reportingservices/footnote-endnote/)
+- [Выравнивание текста Justify FullJustify](/pdf/ru/reportingservices/justify-fulljustify-text-alignment/)
 

@@ -4,6 +4,7 @@ linktitle: Reporting Services Server に SharePoint を設定する
 type: docs
 weight: 30
 url: /ja/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+description: "Aspose.PDF for Reporting Services の Reporting Services Server に SharePoint を設定する について説明します。"
 lastmod: "2026-06-19"
 ---
 

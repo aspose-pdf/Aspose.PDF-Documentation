@@ -1,39 +1,46 @@
 ---
-title: Метаданные XMP
-linktitle: Метаданные XMP
+title: XMP-метаданные
+linktitle: XMP-метаданные
 type: docs
 weight: 80
 url: /ru/reportingservices/xmp-metadata/
-description: Узнайте, как управлять метаданными XMP в PDF‑отчетах с помощью Aspose.PDF for Reporting Services. Улучшите обработку метаданных документа.
-lastmod: "2026-06-19"
+description: Научитесь управлять метаданными XMP в отчетах PDF с помощью Aspose.PDF для Reporting Services. Улучшите обработку метаданных документа.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Конструктор отчетов Reporting Services не поддерживает встраивание метаданных XMP в документ. Aspose.Pdf for Reporting Services предоставляет четыре параметра для установки соответствующих метаданных XMP, они следующие:
+Конструктор отчетов служб Reporting Services не поддерживает встраивание метаданных XMP в документ. Aspose.PDF для служб Reporting Services предоставляет четыре параметра для установки соответствующих метаданных XMP:
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Имя параметра**: CreationDate  
-**Тип даты**: Строка  
-**Поддерживаемые значения**: Дата в одном из форматов даты
+```text
+**Parameter Name: CreationDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats
+```
 
-**Имя параметра**: ModifyDate  
-**Тип даты**: Строка  
-**Поддерживаемые значения**: Дата в одном из форматов даты 
+```text
+**Parameter Name: ModifyDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Имя параметра**: MetaDataDate  
-**Тип даты**: Строка  
-**Поддерживаемые значения**: Дата в одном из форматов даты 
+```text
+**Parameter Name: MetaDataDate  
+**Date Type: String  
+**Values supported: Date in one of the date formats 
+```
 
-**Имя параметра**: CreatorTool  
-**Тип даты**: Строка  
-**Поддерживаемые значения**: Любой простой текст  
+```text
+**Parameter Name: CreatorTool  
+**Date Type: String  
+**Values supported: Any plain text  
+```
 
-**Пример**
-{{< highlight csharp >}}
+## Пример
 
+```xml
 <Render>
 …
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer, Aspose.Pdf.ReportingServices">
@@ -41,13 +48,12 @@ lastmod: "2026-06-19"
     <CreationDate>2017-12-10</CreationDate>
     <ModifyDate>2018-1-12</ModifyDate>
     <MetaDataDate>2018-3-7</MetaDataDate>
-    <CreatorTool>Aspose.Pdf for Reporting Services</CreatorTool>
+    <CreatorTool>Aspose.PDF for Reporting Services</CreatorTool>
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
 
-{{% /alert %}}
 
 

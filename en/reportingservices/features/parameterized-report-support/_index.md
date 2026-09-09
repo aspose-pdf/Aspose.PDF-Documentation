@@ -4,6 +4,7 @@ linktitle: Parameterized Report Support
 type: docs
 weight: 20
 url: /reportingservices/parameterized-report-support/
+description: "Learn about Parameterized Report Support in Aspose.PDF for Reporting Services."
 lastmod: "2021-06-05"
 ---
 

@@ -4,6 +4,7 @@ linktitle: Reporting Services 和 SharePoint 配置
 type: docs
 weight: 40
 url: /zh/reportingservices/reporting-services-and-sharepoint-configuration/
+description: "了解 Aspose.PDF for Reporting Services 中的Reporting Services 和 SharePoint 配置。"
 lastmod: "2026-06-19"
 ---
 

@@ -4,25 +4,24 @@ linktitle: Поддерживаемые параметры
 type: docs
 weight: 20
 url: /ru/reportingservices/supported-parameters/
-description: Изучите поддерживаемые параметры в Aspose.PDF for Reporting Services, чтобы легко контролировать и настраивать отображение PDF.
-lastmod: "2026-06-19"
+description: Изучите поддерживаемые параметры в Aspose.PDF для служб Reporting Services, чтобы с легкостью контролировать и настраивать рендеринг PDF-файлов.
+lastmod: "2026-08-20"
 ---
 
-Параметризованный отчет — это отчет, который принимает входные значения, используемые при обработке отчета. С помощью параметризованного отчета вы можете изменять вывод отчета в зависимости от значений, заданных при его запуске. Aspose.Pdf for Reporting Services поддерживает два типа параметров: параметры сервера отчетов и параметры отчета. Параметры сервера отчетов используются для всех отчетов на сервере отчетов. Если вы хотите сделать некоторые параметры подходящими для конкретных отчетов, следует использовать параметры отчета.
+Параметризованный отчет — это отчет, который принимает входные значения, используемые при обработке отчета. С помощью параметризованного отчета вы можете изменять выходные данные отчета на основе значений, которые задаются при запуске отчета. Aspose.PDF для служб Reporting Services поддерживает два типа параметров: параметры сервера отчетов и параметры отчета. Параметры сервера отчетов используются для всех отчетов на сервере отчетов. Если вы хотите сделать некоторые параметры подходящими для конкретных отчетов, вам следует использовать параметры отчета.
 
-В настоящее время рендерер Aspose.Pdf поддерживает широкий спектр параметров, таких как:
+В настоящее время средство рендеринга Aspose.Pdf поддерживает широкий спектр параметров, таких как:
 
-**Этот раздел включает следующие темы:**
+**В этот раздел включены следующие темы:**
 
-- [Ориентация страницы](/pdf/ru/reportingservices/page-orientation/)
-- [HTML Форматирование](/pdf/ru/reportingservices/html-formatting/)
-- [Настройка безопасности](/pdf/ru/reportingservices/security-setting/)
-- [IsFontEmbedded](/pdf/ru/reportingservices/isfontembedded/)
-- [Размер страницы](/pdf/ru/reportingservices/pagesize/)
-- [Размер полей страницы](/pdf/ru/reportingservices/page-margin-size/)
-- [Метаданные XMP](/pdf/ru/reportingservices/xmp-metadata/)
-- [Отладочная информация](/pdf/ru/reportingservices/debug-information/)
-- [Соответствие PDF_A](/pdf/ru/reportingservices/pdf_a-conformance/)
-
+- [Ориентация страницы](/pdf/reportingservices/page-orientation/)
+- [Форматирование HTML](/pdf/reportingservices/html-formatting/)
+- [Настройка безопасности](/pdf/reportingservices/security-setting/)
+- [IsFontEmbedded](/pdf/reportingservices/isfontembedded/)
+- [Размер страницы](/pdf/reportingservices/pagesize/)
+- [Размер полей страницы](/pdf/reportingservices/page-margin-size/)
+- [Метаданные XMP](/pdf/reportingservices/xmp-metadata/)
+- [Отладочная информация](/pdf/reportingservices/debug-information/)
+- [Соответствие PDF_A](/pdf/reportingservices/pdf_a-conformance/)
 
 
