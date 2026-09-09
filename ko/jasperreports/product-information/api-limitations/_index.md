@@ -1,13 +1,11 @@
-title: API Limitations 
-
+---
+title: API 제한 사항
+linktitle: API 제한 사항
 type: docs
-
 weight: 80
-
 url: /ko/jasperreports/api-limitations/
-
-lastmod: "2021-06-05"
-
+description: Aspose.PDF for JasperReports의 API 제한 사항을 이해하십시오. 보고서와의 통합을 최적화하기 위한 세부 정보를 찾으세요.
+lastmod: "2026-09-09"
 ---
 
 {{% alert color="primary" %}}
@@ -18,9 +16,8 @@ lastmod: "2021-06-05"
 
 {{% alert color="primary" %}}
 
-## **PDF Creator 정보**
+## PDF 생성기 정보
 
-**Application** 및 **Producer** 필드에 대한 값을 설정할 수 없음을 유의하십시오. 이러한 필드에는 Aspose Ltd. 및 Aspose.PDF for JasperReports x.x.x가 표시됩니다.
+**Application** 및 **Producer** 필드에 값을 설정할 수 없다는 점에 유의하십시오. 이는 Aspose Ltd.와 Aspose.PDF for JasperReports x.x.x가 해당 필드에 표시되기 때문입니다. 
 
 {{% /alert %}}
-```

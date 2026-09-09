@@ -1,43 +1,28 @@
 ---
-
 title: 지원되는 파일 형식
-
+linktitle: 지원되는 파일 형식
 type: docs
-
 weight: 20
-
 url: /ko/jasperreports/supported-file-formats/
-
-lastmod: "2021-06-05"
-
+description: Aspose.PDF for JasperReports에서 지원되는 파일 형식에 대해 알아보세요. 보고서를 PDF, XPS, DOC 등으로 내보낼 수 있습니다.
+lastmod: "2026-09-09"
 ---
 
-
-
-## <ins>**지원되는 로드 형식**
+## 지원되는 로드 형식
 
 다음 표는 Aspose.PDF for JasperReports가 로드할 수 있는 파일 형식을 나타냅니다.
 
-
-
-|**형식**|**설명**|
-
+|**포맷**|**설명**|
 | :- | :- |
-
 |JRXML|JasperReports 레이아웃 파일|
 
-## <ins>**지원되는 저장 형식**
+## 지원되는 저장 형식
 
-다음 표는 Aspose.PDF for JasperReports를 사용하여 문서를 저장할 수 있는 파일 형식을 나타냅니다.
+다음 표는 Aspose.PDF for JasperReports를 사용하여 문서를 저장할 수 있는 파일 형식을 나타냅니다. 
 
-
-
-|**형식**|**설명**|
-
+|**포맷**|**설명**|
 | :- | :- |
-
-|[PDF](https://docs.fileformat.com/view/pdf/)|문서를 PDF 형식으로 저장합니다|
-
+|[PDF](https://docs.fileformat.com/view/pdf/)|문서를 PDF 형식으로 저장합니다.|
 |PDF/A|문서를 PDF/A 형식으로 저장합니다|
-
 |[PPTX](https://docs.fileformat.com/presentation/pptx/)|문서를 Microsoft PowerPoint 프레젠테이션 형식으로 저장합니다|
+

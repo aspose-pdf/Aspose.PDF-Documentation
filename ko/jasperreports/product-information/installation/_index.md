@@ -1,25 +1,15 @@
 ---
-
-title: Install Aspose.PDF for JasperReports
-
+title: Aspose.PDF for JasperReports 설치
+linktitle: Aspose.PDF for JasperReports 설치
 type: docs
-
 weight: 50
-
 url: /ko/jasperreports/installation/
-
-lastmod: "2021-06-05"
-
+description: Aspose.PDF for JasperReports 단계별 설치 가이드. 오늘부터 JasperReports에서 전문 PDF를 만들기 시작하세요.
+lastmod: "2026-09-09"
 ---
 
+이 섹션에는 다음 주제가 포함됩니다:
 
-
-**이 섹션은 다음 주제를 포함합니다:**
-
-
-
-- [시스템 요구 사항](/pdf/ko/jasperreports/system-requirements/)
-
-- [JasperReports와의 통합](/pdf/ko/jasperreports/integration-with-jasperreports/)
-
-- [JasperServer와의 통합](/pdf/ko/jasperreports/integration-with-jasperserver/)
+- [System Requirements](/pdf/ko/jasperreports/system-requirements/)
+- [Integration with ](/pdf/ko/jasperreports/integration-with-jasperreports/)
+- [Integration with JasperServer](/pdf/ko/jasperreports/integration-with-jasperserver/)
