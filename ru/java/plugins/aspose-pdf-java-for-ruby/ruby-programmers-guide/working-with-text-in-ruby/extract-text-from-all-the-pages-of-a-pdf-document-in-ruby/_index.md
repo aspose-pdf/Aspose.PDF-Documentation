@@ -1,64 +1,66 @@
 ---
-title: Извлечение текста со всех страниц PDF-документа на Ruby
+title: Извлечение текста со всех страниц PDF‑документа на Ruby
+linktitle: Извлечение текста со всех страниц PDF‑документа на Ruby
 type: docs
 weight: 30
 url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
-lastmod: "2021-06-05"
+description: Поймите, как извлекать текст со всех страниц PDF‑документа с помощью Ruby и Aspose.PDF, идеально для анализа содержимого.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF — Извлечение текста со всех страниц
 
-## Aspose.PDF - Извлечение текста со всех страниц
+Чтобы извлечь TextrFrom All the Pages Pdf document с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **ExtractTextFromAllPages**.
 
-Чтобы извлечь текст со всех страниц PDF-документа с использованием **Aspose.PDF Java для Ruby**, просто вызовите модуль **ExtractTextFromAllPages**.
-
-Код на Ruby
+Ruby‑код
 
 ```java
-# Путь к каталогу документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть целевой документ
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# создать объект TextAbsorber для извлечения текста
+# create TextAbsorber object to extract text
 
 text_absorber = Rjb::import('com.aspose.pdf.TextAbsorber').new
 
-# применить абсорбер ко всем страницам
+# accept the absorber for all the pages
 
 pdf.getPages().accept(text_absorber)
 
-# Чтобы извлечь текст с конкретной страницы документа, необходимо указать конкретную страницу, используя ее индекс в методе accept(..).
+# In order to extract text from specific page of document, we need to specify the particular page using its index against accept(..) method.
 
-# применить абсорбер к конкретной странице PDF
+# accept the absorber for particular PDF page
 
 # pdfDocument.getPages().get_Item(1).accept(textAbsorber);
 
-# получить извлеченный текст
+#get the extracted text
 
 extracted_text = text_absorber.getText()
 
-# создать писателя и открыть файл
+# create a writer and open the file
 
 writer = Rjb::import('java.io.FileWriter').new(Rjb::import('java.io.File').new(data_dir + "extracted_text.out.txt"))
 
 writer.write(extracted_text)
 
-# записать строку текста в файл
+# write a line of text to the file
 
 # tw.WriteLine(extractedText);
 
-# закрыть поток
+# close the stream
 
 writer.close()
 
-puts "Текст успешно извлечен. Проверьте выходной файл."
+puts "Text extracted successfully. Check output file."
 ```
 
+## Скачайте выполняемый код
 
-## Скачать Исполняемый Код
-
-Скачайте **Извлечение Текста Со Всех Страниц (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+Скачать **Extract Text From All the Pages (Aspose.PDF)** из любых из перечисленных ниже социальных сайтов для программирования:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/extracttextfromallpages.rb)
+
+

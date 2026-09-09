@@ -1,39 +1,41 @@
 ---
-title: Создать PDF документ
-linktitle: Создать
+title: Создайте PDF документ программно
+linktitle: Создайте PDF
 type: docs
 weight: 10
 url: /ru/java/create-document/
-description: Узнайте, как создать PDF файл в Aspose.PDF для Java.
-lastmod: "2021-06-05"
+description: Узнайте, как создать PDF документ с нуля на Java с помощью Aspose.PDF.
+lastmod: "2026-08-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Создание PDF файлов с помощью Aspose.PDF for Java
+Abstract: В этой статье показано, как создать PDF файл на Java с помощью Aspose.PDF. В примере создаётся новый объект Document, добавляется страница, вставляется TextFragment с образцом текста, и результат сохраняется как PDF файл.
 ---
+Создание PDF файлов в коде является обычной потребностью для отчетов, счетов‑фактур и генерируемых бизнес‑документов. Aspose.PDF for Java предоставляет прямой способ построить документ с нуля.
 
-**Aspose.PDF для Java** API позволяет разработчикам приложений на Java внедрять функциональность обработки PDF документов в свои приложения. Он может использоваться для создания и чтения PDF файлов без необходимости установки какого-либо другого программного обеспечения на исходной машине. Aspose.PDF для Java может использоваться в различных типах приложений Java, таких как настольные, JSP и JSF приложения.
+## Как создать PDF файл в Java
 
-## Как создать PDF файл с использованием Java
+Чтобы создать PDF документ программно:
 
-Чтобы создать PDF файл с использованием Java, можно следовать следующим шагам.
+1. Создайте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объект.
+1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
+1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) в параграфы страницы.
+1. Сохраните [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в выходной файл.
 
-1. Создайте объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
-1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) к объекту документа
-1. Создайте объект [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment)
+## Создайте простой PDF-документ
 
-1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) в коллекцию [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) страницы
-2. Сохраните полученный PDF-документ
+Следующий пример на Java основан на `CreatePdfDocumentExamples.java`.
 
 ```java
-// Инициализировать объект документа
-Document document = new Document();
- 
-//Добавить страницу
-Page page = document.getPages().add();
- 
-// Добавить текст на новую страницу
-page.getParagraphs().add(new TextFragment("Привет, мир!"));
- 
-// Сохранить обновленный PDF
-document.save("HelloWorld_out.pdf");
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment("Hello World!"));
+        document.save(outputFile.toString());
+    }
+}
 ```
+
+

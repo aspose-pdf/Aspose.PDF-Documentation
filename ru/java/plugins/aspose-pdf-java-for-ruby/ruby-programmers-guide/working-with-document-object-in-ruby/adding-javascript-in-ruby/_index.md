@@ -1,52 +1,54 @@
 ---
 title: Добавление JavaScript в Ruby
+linktitle: Добавление JavaScript в Ruby
 type: docs
 weight: 10
 url: /ru/java/adding-javascript-in-ruby/
-lastmod: "2021-06-05"
+description: Включите функциональность JavaScript в PDF с использованием Aspose.PDF в Ruby для интерактивности и автоматизации.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF – Добавление JavaScript
 
-## Aspose.PDF - Добавление JavaScript
+Чтобы добавить JavaScript в PDF‑документ с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddJavaScript**.
 
-Чтобы добавить JavaScript в документ PDF с использованием **Aspose.PDF Java для Ruby**, просто вызовите модуль **AddJavaScript**.
-
-Ruby Код
+Код Ruby
 
 ```java
-# Путь к директории документов.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть PDF документ.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Добавление JavaScript на уровне документа
+# Adding JavaScript at Document Level
 
-# Создание экземпляра JavascriptAction с желаемым JavaScript выражением
+# Instantiate JavascriptAction with desried JavaScript statement
 
 javaScript = Rjb::import('com.aspose.pdf.JavascriptAction').new("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# Назначение объекта JavascriptAction желаемому действию документа
+# Assign JavascriptAction object to desired action of Document
 
 doc.setOpenAction(javaScript)
 
-# Добавление JavaScript на уровне страницы
+# Adding JavaScript at Page Level
 
-doc.getPages().get_Item(2).getActions().setOnOpen(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('страница 2 открыта')"))
+doc.getPages().get_Item(2).getActions().setOnOpen(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is opened')"))
 
-doc.getPages().get_Item(2).getActions().setOnClose(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('страница 2 закрыта')"))
+doc.getPages().get_Item(2).getActions().setOnClose(Rjb::import('com.aspose.pdf.JavascriptAction').new("app.alert('page 2 is closed')"))
 
-# Сохранение PDF документа
+# Save PDF Document
 
 doc.save(data_dir + "JavaScript-Added.pdf")
 
-puts "JavaScript успешно добавлен, пожалуйста, проверьте выходной файл."
+puts "Added JavaScript Successfully, please check the output file."
 ```
 
+## Скачайте работающий код
 
-## Загрузка выполняемого кода
-
-Скачайте **Adding JavaScript (Aspose.PDF)** с любого из нижеупомянутых сайтов для совместной разработки:
+Скачать **Adding JavaScript (Aspose.PDF)** из любого из перечисленных ниже социальных кодовых сайтов:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)
+
+

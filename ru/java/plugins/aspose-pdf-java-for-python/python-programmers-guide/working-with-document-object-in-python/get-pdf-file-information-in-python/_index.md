@@ -1,12 +1,13 @@
 ---
-title: Получение информации о PDF файле на Python
+title: Получить информацию о PDF‑файле в Python
+linktitle: Получить информацию о PDF‑файле в Python
 type: docs
 weight: 40
 url: /ru/java/get-pdf-file-information-in-python/
-lastmod: "2021-06-05"
+description: Узнайте, как получить подробную информацию о PDF‑файле, такую как метаданные и свойства, в Python с помощью Aspose.PDF для управления документами.
+lastmod: "2026-08-19"
 ---
-
-Чтобы получить информацию о файле PDF документа, используя **Aspose.PDF Java для Python**, просто вызовите класс **GetPdfFileInfo**.
+Чтобы получить информацию о файле PDF‑документа, используя **Aspose.PDF Java for Python**, просто вызовите класс **GetPdfFileInfo**.
 
 ```python
 
@@ -14,21 +15,22 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Получить информацию о документе
+# Get document information
 doc_info = doc.getInfo();
 
-# Показать информацию о документе
-print "Автор:-" + str(doc_info.getAuthor())
-print "Дата создания:-" + str(doc_info.getCreationDate())
-print "Ключевые слова:-" + str(doc_info.getKeywords())
-print "Дата изменения:-" + str(doc_info.getModDate())
-print "Тема:-" + str(doc_info.getSubject())
-print "Название:-" + str(doc_info.getTitle())
+# Show document information
+print "Author:-" + str(doc_info.getAuthor())
+print "Creation Date:-" + str(doc_info.getCreationDate())
+print "Keywords:-" + str(doc_info.getKeywords())
+print "Modify Date:-" + str(doc_info.getModDate())
+print "Subject:-" + str(doc_info.getSubject())
+print "Title:-" + str(doc_info.getTitle())
 ```
 
 **Скачать исполняемый код**
 
-Скачайте **Получение информации о PDF файле (Aspose.PDF)** с одного из нижеуказанных сайтов социального программирования:
-
+СкачатьВ **Получить информацию о PDF-файле (Aspose.PDF)**В изВ любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)
+
+

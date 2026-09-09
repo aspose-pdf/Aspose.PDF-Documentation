@@ -1,59 +1,37 @@
 ---
-title: Поворот страниц PDF программным способом
+title: Поворот страниц PDF в Java
 linktitle: Поворот страниц PDF
 type: docs
-weight: 60
+weight: 110
 url: /ru/java/rotate-pages/
-description: Изменение ориентации страницы и подгонка содержимого страницы под новую ориентацию страницы с использованием Java.
-lastmod: "2021-06-05"
+description: Узнайте, как повернуть страницы PDF и изменить ориентацию страницы в Java.
+lastmod: "2026-08-19"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Повернуть страницы PDF с помощью Java
+Abstract: В этой статье объясняется, как повернуть страницы PDF с использованием Aspose.PDF for Java. Пример проходит по всем страницам документа, применяет вращение на 90 градусов и сохраняет обновленный PDF.
 ---
+Используйте API поворота страниц, когда необходимо изменить ориентацию на одной или нескольких страницах.
 
-## Изменение ориентации страницы
+## Поверните все страницы на 90 градусов
 
-Эта статья описывает, как обновить или изменить ориентацию страниц в существующем PDF-файле.
+Используйте этот пример, когда каждая страница документа должна быть повернута по часовой стрелке.
 
-Aspose.PDF для Java имеет функцию изменения ориентации страницы с альбомной на портретную и наоборот. Чтобы изменить ориентацию страницы, установите [MediaBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#setMediaBox-com.aspose.pdf.Rectangle-) страницы, используя следующий фрагмент кода.
-
-Вы также можете изменить ориентацию страницы, установив угол поворота с помощью метода Rotate().
+1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите все [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) объекты и установить значение вращения.
+1. Сохраните обновленный PDF.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRotatePDFPages  {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RotatePages() {
-        // Открыть документ
-        Document pdfDocument = new Document(_dataDir + "sample2.pdf");
-
-        for (Page page : pdfDocument.getPages())
-        {            
-            // Rectangle r = page.getMediaBox();
-            // double newHeight = r.getWidth();
-            // double newWidth = r.getHeight();
-            // double newLLX = r.getLLX();
-            // // Мы должны переместить страницу вверх, чтобы компенсировать изменение размера страницы
-            // // (нижний край страницы - это 0,0, и информация обычно размещается от
-            // // Верхней части страницы. Вот почему мы перемещаем нижний край вверх на разницу между
-            // // старой и новой высотой.
-            // double newLLY = r.getLLY() + (r.getHeight() - newHeight);
-            // page.setMediaBox (new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-            // // Иногда нам также нужно установить CropBox (если он был установлен в оригинальном файле)
-            // page.setCropBox(new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-
-            // Установка угла поворота страницы
+public static void rotatePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             page.setRotate(Rotation.on90);
         }
-
-        _dataDir = _dataDir + "ChangeOrientation_out.pdf";
-        // Сохранить выходной файл
-        pdfDocument.save(_dataDir);
-    }    
+        document.save(outputFile.toString());
+    }
 }
 ```
+
+

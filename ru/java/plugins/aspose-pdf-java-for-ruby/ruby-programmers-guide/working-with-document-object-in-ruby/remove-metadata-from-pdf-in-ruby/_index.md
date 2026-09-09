@@ -1,48 +1,50 @@
 ---
-title: Удаление метаданных из PDF на Ruby
+title: Удалить метаданные из PDF на Ruby
+linktitle: Удалить метаданные из PDF на Ruby
 type: docs
 weight: 90
 url: /ru/java/remove-metadata-from-pdf-in-ruby/
-lastmod: "2021-06-05"
+description: Программно удаляйте чувствительные или нежелательные метаданные из PDF‑файлов с помощью Aspose.PDF for Ruby.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF — удаление метаданных
 
-## Aspose.PDF - Удаление метаданных
+Чтобы удалить метаданные из PDF‑документа, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **RemoveMetadata**.
 
-Чтобы удалить метаданные из PDF документа с помощью **Aspose.PDF Java для Ruby**, просто вызовите модуль **RemoveMetadata**.
-
-Код на Ruby
+Код Ruby
 
 ```java
-# Путь к директории с документами.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Открыть PDF документ.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
 if doc.getMetadata().contains("pdfaid:part")
 
-    doc.getMetadata().removeItem("pdfaid:part")
+В В В  doc.getMetadata().removeItem("pdfaid:part")
 
-end    
+endВ В  В
 
 if doc.getMetadata().contains("dc:format")
 
-    doc.getMetadata().removeItem("dc:format")
+В В В  doc.getMetadata().removeItem("dc:format")
 
 end
 
-# сохранить обновленный документ с новой информацией
+# save update document with new information
 
 doc.save(data_dir + "Remove_Metadata.pdf")
 
-puts "Метаданные успешно удалены, пожалуйста, проверьте выходной файл."
+puts "Removed metadata successfully, please check output file."
 ```
 
-## Скачать работающий код
+## Скачайте работающий код
 
-Скачать **Remove Metadata (Aspose.PDF)** можно с любого из нижеупомянутых сайтов для совместной разработки:
-
+СкачатьВ **Remove Metadata (Aspose.PDF)**В изВ любого из указанных ниже социальных сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/removemetadata.rb)
+
+

@@ -1,37 +1,40 @@
 ---
-title: Объединение PDF файлов в PHP
+title: Объединить PDF-файлы в PHP
+linktitle: Объединить PDF-файлы в PHP
 type: docs
 weight: 10
 url: /ru/java/concatenate-pdf-files-in-php/
-lastmod: "2021-06-05"
+description: Узнайте, как объединять несколько PDF‑файлов в один документ в PHP с помощью Aspose.PDF для более удобного управления документами.
+lastmod: "2026-08-19"
 ---
+## Aspose.PDF - Объединить PDF-файлы
 
-## Aspose.PDF - Объединение PDF файлов
+Чтобы объединить PDF‑файлы с использованием **Aspose.PDF Java for PHP**, просто вызовите класс **ConcatenatePdfFiles**.
 
-Для объединения PDF файлов с использованием **Aspose.PDF Java for PHP**, просто вызовите класс **ConcatenatePdfFiles**.
-
-Код PHP
+PHP‑код
 
 ```php
 
-# Открыть целевой документ
+# Open the target document
 $pdf1 = new Document($dataDir . 'input1.pdf');
 
-# Открыть исходный документ
+# Open the source document
 $pdf2 = new Document($dataDir . 'input2.pdf');
 
-# Добавить страницы исходного документа в целевой документ
+# Add the pages of the source document to the target document
 $pdf1->getPages()->add($pdf2->getPages());
 
-# Сохранить объединенный выходной файл (целевой документ)
+# Save the concatenated output file (the target document)
 $pdf1->save($dataDir . "Concatenate_output.pdf");
 
-print "Новый документ сохранен, пожалуйста, проверьте выходной файл" . PHP_EOL;
+print "New document has been saved, please check the output file" . PHP_EOL;
 
 ```
 
 **Скачать исполняемый код**
 
-Скачать **Объединение PDF файлов (Aspose.PDF)** с любого из нижеупомянутых сайтов социального кодирования:
+Скачать **Concatenate PDF Files (Aspose.PDF)** с любого из приведённых ниже сайтов с открытым кодом:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/ConcatenatePdfFiles.php)
+
+
