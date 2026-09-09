@@ -22,15 +22,15 @@ Aspose.PDF for JasperReports는 JasperReports와 JasperServer에서 보고서를
 
 다음은 작업을 수행하는 데 필요할 수 있는 유용한 리소스에 대한 링크입니다.
 
-- [Aspose.PDF for JasperReports Product Overview](/pdf/ko/jasperreports/product-overview/)
-- [Aspose.PDF for JasperReports Supported File Formats](/pdf/ko/jasperreports/supported-file-formats/)
-- [Feature Tour Aspose.PDF for JasperReports](/pdf/ko/jasperreports/feature-tour/)
-- [Aspose.PDF for JasperReports Release Notes](https://releases.aspose.com/pdf/jassperreport/release-notes/)
-- [Download Aspose.PDF for JasperReports](https://releases.aspose.com/pdf/jassperreport/)
-- [Aspose.PDF for JasperReports Sample Reports Gallery](/pdf/ko/jasperreports/sample-reports-gallery/)
-- [Installation Aspose.PDF for JasperReports](/pdf/ko/jasperreports/installation/)
-- [Licensing Aspose.PDF for JasperReports](/pdf/ko/jasperreports/licensing/)
-- [Evaluate Aspose.Pdf](/pdf/ko/jasperreports/evaluate-aspose-pdf/)
-- [Aspose.PDF for JasperReports API Limitations](/pdf/ko/jasperreports/api-limitations/)
+- [Aspose.PDF for JasperReports 제품 개요](/pdf/ko/jasperreports/product-overview/)
+- [Aspose.PDF for JasperReports 지원 파일 형식](/pdf/ko/jasperreports/supported-file-formats/)
+- [Aspose.PDF for JasperReports 기능 둘러보기](/pdf/ko/jasperreports/feature-tour/)
+- [Aspose.PDF for JasperReports 릴리스 정보](https://releases.aspose.com/pdf/jassperreport/release-notes/)
+- [Aspose.PDF for JasperReports 다운로드](https://releases.aspose.com/pdf/jassperreport/)
+- [Aspose.PDF for JasperReports 샘플 보고서 갤러리](/pdf/ko/jasperreports/sample-reports-gallery/)
+- [Aspose.PDF for JasperReports 설치](/pdf/ko/jasperreports/installation/)
+- [Aspose.PDF for JasperReports 라이선스](/pdf/ko/jasperreports/licensing/)
+- [Aspose.PDF 평가하기](/pdf/ko/jasperreports/evaluate-aspose-pdf/)
+- [Aspose.PDF for JasperReports API 제한 사항](/pdf/ko/jasperreports/api-limitations/)
 
 {{% /alert %}}

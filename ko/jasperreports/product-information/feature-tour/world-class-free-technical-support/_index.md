@@ -22,8 +22,8 @@ Aspose는 제품 개발자가 직접 제공하는 무료이면서 무제한인 �
 
 ### 블로그
 
-[Aspose.Blogs](http://www.aspose.com/Community/Blogs/) 최신 릴리스에 대한 정보와 Aspose 개발자들의 의견을 확인할 수 있는 곳입니다.
+[Aspose.Blogs](https://blog.aspose.com/) 최신 릴리스에 대한 정보와 Aspose 개발자들의 의견을 확인할 수 있는 곳입니다.
 
 ### 추가 지원이 필요하신가요?
 
-Aspose는 모든 사용자에게 무료 지원을 제공합니다. 문제의 우선 순위를 원하거나 우리 제품 개발 로드맵에 영향을 주고자 하는 기업을 위해, 다음과 같은 옵션이 있습니다 [advanced support options](http://www.aspose.com/corporate/services/support-options.aspx) Priority Support 및 Enterprise Support와 같은.
+Aspose는 모든 사용자에게 무료 지원을 제공합니다. 문제의 우선 순위를 원하거나 우리 제품 개발 로드맵에 영향을 주고자 하는 기업을 위해, 다음과 같은 옵션이 있습니다 [advanced support options](https://helpdesk.aspose.com/kb/faq/2-Developer-Business-Support-Key-Benefits-Conditions) Priority Support 및 Enterprise Support와 같은.

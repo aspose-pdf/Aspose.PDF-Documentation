@@ -11,5 +11,5 @@ lastmod: "2026-09-09"
 이 섹션에는 다음 주제가 포함됩니다:
 
 - [System Requirements](/pdf/ko/jasperreports/system-requirements/)
-- [Integration with ](/pdf/ko/jasperreports/integration-with-jasperreports/)
+- [Integration with](/pdf/ko/jasperreports/integration-with-jasperreports/)
 - [Integration with JasperServer](/pdf/ko/jasperreports/integration-with-jasperserver/)

@@ -1,16 +1,16 @@
 ---
-title: How to - Update existing JasperReports demos to use Aspose.Pdf for JasperReports
-linktitle: How to - Update existing JasperReports demos to use Aspose.Pdf for JasperReports
+title: 방법 - 기존 JasperReports 데모를 Aspose.Pdf for JasperReports를 사용하도록 업데이트하기
+linktitle: 방법 - 기존 JasperReports 데모를 Aspose.Pdf for JasperReports를 사용하도록 업데이트하기
 type: docs
 weight: 20
 url: /jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/
-description: Learn how to update existing JasperReports demos to leverage the capabilities of Aspose.PDF for JasperReports.
+description: Aspose.PDF for JasperReports의 기능을 활용할 수 있도록 기존 JasperReports 데모를 업데이트하는 방법을 알아보세요.
 lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.PDF for JasperReports includes a number of demo projects to help you get started exporting reports to PDF. These demos are based on standard JasperReports demos that have been modified to demonstrate how to use new exporters. This tutorial, goes through the steps required to update the existing JasperReports demos to use Aspose.PDF for JasperReports.
+Aspose.PDF for JasperReports는 보고서를 PDF로 내보내는 작업을 시작하는 데 도움이 되는 다양한 데모 프로젝트를 포함하고 있습니다. 이 데모들은 새로운 내보내기(exporter) 기능을 사용하는 방법을 보여주기 위해 기존의 표준 JasperReports 데모를 수정한 것입니다. 이 튜토리얼에서는 기존 JasperReports 데모를 Aspose.PDF for JasperReports를 사용하도록 업데이트하는 데 필요한 단계를 설명합니다.
 
 {{% /alert %}}
 
@@ -18,7 +18,7 @@ Aspose.PDF for JasperReports includes a number of demo projects to help you get 
 
 {{% alert color="primary" %}}
 
-The following steps explains how to update existing demos to use Aspose.PDF for JasperReports export extension rather than using JasperReport's standard PDF export feature.
+다음 단계에서는 JasperReports의 표준 PDF 내보내기 기능 대신 Aspose.PDF for JasperReports 내보내기 확장 기능을 사용하도록 기존 데모를 업데이트하는 방법을 설명합니다.
 
 1. <http://sourceforge.net/project/showfiles.php?group_id=36382&package_id=28579>.에서 JasperReports 다운로드
    단일 JAR뿐만 아니라 소스 코드와 데모가 포함된 전체 보관된 프로젝트를 다운로드하세요. 이 튜토리얼은 JasperReports-3.5.2를 사용하여 준비되었습니다.

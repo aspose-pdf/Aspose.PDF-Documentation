@@ -10,5 +10,5 @@ lastmod: "2026-09-09"
 
 이 섹션에는 다음 주제가 포함됩니다:
 
-- [How to - use Aspose.Pdf for JasperReports offline demos](/pdf/ko/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
-- [ How to - Update existing JasperReports demos to use Aspose.Pdf for JasperReports](/pdf/ko/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)
+- [방법 - Aspose.Pdf for JasperReports 오프라인 데모 사용하기](/pdf/ko/jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/)
+- [방법 - 기존 JasperReports 데모를 Aspose.Pdf for JasperReports를 사용하도록 업데이트하기](/pdf/ko/jasperreports/how-to-update-existing-jasperreports-demos-to-use-aspose-pdf-for-jasperreports/)

@@ -20,7 +20,7 @@ lastmod: "2026-08-31"
 
 ```xml
  <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-    INF/Aspose.Total.JasperReports.lic"/>
+    INF/Aspose.Total.JasperReports.lic"/
 </bean>
 ```
 

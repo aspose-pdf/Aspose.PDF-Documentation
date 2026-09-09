@@ -64,6 +64,7 @@ lastmod: "2026-09-09"
 </util:map>
 
 ```
+
 {{% alert color="primary" %}}
 
 3. **Aspose-pdf-jasperreports.zip**의 \lib 폴더에서 모든 GIF 이미지를 복사하여 <InstallDir>\apache-tomcat\webapps\jasperserver\images\.
