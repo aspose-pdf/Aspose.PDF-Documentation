@@ -12,7 +12,7 @@ description: Más información sobre la instalación de PDF SharePoint API expli
 
 {{% alert color="primary" %}}
 
-**Aspose.PDF for SharePoint performs the following actions during deployment:**
+**Aspose.PDF for SharePoint realiza las siguientes acciones durante el despliegue:**
 - Instale Aspose.PDF.SharePoint.dll en la caché de ensamblados global y agregue la entrada SafeControl al archivo web.config.
 - Instale el manifiesto de la característica y otros archivos necesarios en los directorios apropiados.
 - Registre la característica en la base de datos de SharePoint y póngala a disposición para la activación en el ámbito de la característica.
