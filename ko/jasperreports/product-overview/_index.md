@@ -20,6 +20,6 @@ Aspose.PDF for JasperReports는 JasperReports 및 JasperServer에서 PDF(Portabl
 
 ### 제품 설명
 
-PDF 문서를 생성하기 위해 Aspose.PDF for JasperReports는 Aspose의 시장 선도적인 라이브러리인 [Java용 Aspose.PDF](https://products.aspose.com/pdf/java/)의 내장 버전을 사용합니다. Aspose.PDF for JasperReports를 사용하여 PDF 문서를 생성하기 위해 Adobe Acrobat Professional을 시스템에 설치할 필요는 없습니다.
+PDF 문서를 생성하기 위해 Aspose.PDF for JasperReports는 Aspose의 시장 선도적인 라이브러리인 [Aspose.PDF for Java](https://products.aspose.com/pdf/java/)의 내장 버전을 사용합니다. Aspose.PDF for JasperReports를 사용하여 PDF 문서를 생성하기 위해 Adobe Acrobat Professional을 시스템에 설치할 필요는 없습니다.
 
 
