@@ -1,80 +1,42 @@
 ---
-
-title: Trabalhando com JasperServer
-
+title: Trabalhar com JasperServer
+linktitle: Trabalhar com JasperServer
 type: docs
-
 weight: 20
-
-url: /pt/jasperreports/working-with-jasperserver/
-
+description: Descubra como trabalhar eficientemente com o JasperServer utilizando o Aspose.PDF. Exporte relatórios para PDFs profissionais com facilidade.
 lastmod: "2021-06-05"
-
 ---
 
-
-
-#### <ins>**Defina o parâmetro licenseFile no applicationContext.xml**
+## <ins>Set the licenseFile Exporter Parameter in applicationContext.xml
 
 {{% alert color="primary" %}}
 
-
-
-Este método é usado com o JasperServer.
-
-
+Este método é utilizado com o JasperServer.
 
 {{% /alert %}}
 
+1. Descarregue a licença para o seu computador e copie-a para a pasta ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF```, onde ```<InstallDir>``` representa o directório de instalação do JasperServer.
+2. Localize o ficheiro ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` e adicione as seguintes linhas:
 
-
-1. Baixe a licença para o seu computador e copie-a para a pasta ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF```, onde ```<InstallDir>``` representa o diretório de instalação do JasperServer.
-
-2. Localize o arquivo ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` e adicione as seguintes linhas:
-
-
-
-```
-
+```xml
  <bean id="AsposeExportParameters" class="comcom.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">
-
     <property name="licenseFile" value="C:/jasperserver-pro-3.7.1/apache-tomcat/webapps/jasperserver-pro/WEB-  
-
     INF/Aspose.Total.JasperReports.lic"/>
-
 </bean>
-
 ```
 
 {{% alert color="primary" %}}
-
-
-Nota: Por favor, note que o caminho de instalação não deve conter espaços, por exemplo C:/Program Files/JasperServer… pois isso causa problemas ao acessar o arquivo de licença.
-
+Nota: O caminho de instalação não deve conter espaços (por exemplo, C:/Program Files/JasperServer…), uma vez que isso causa problemas no acesso ao ficheiro de licença.
 {{% /alert %}}
 
+## Verifique se a licença funciona
 
+Exporte qualquer relatório para formato PDF e verifique se o relatório contém mensagem de avaliação. Se não houver mensagem de avaliação, a licença está funcionando corretamente.
 
-#### **Verifique se a Licença Funciona**
+O Aspose.PDF for JasperReports insere uma marca de água ao operar no modo de avaliação.
 
-Exporte qualquer relatório para o formato PDF e verifique se o relatório contém uma mensagem de avaliação. Se não houver mensagem de avaliação, então a licença está funcionando corretamente.
+![Integration with JasperServer_1](working-with-jasperserver_1.png)
 
+Aspose.PDF for JasperReports injeta uma marca d'água ao trabalhar no modo de avaliação
 
-
-**Aspose.PDF para JasperReports injeta uma marca d'água quando trabalha no modo de avaliação**
-
-
-
-![todo:image_alt_text](working-with-jasperserver_1.png)
-
-
-
-
-
-
-
-**Aspose.PDF para JasperReports injeta uma marca d'água quando trabalha no modo de avaliação**
-
-
-
-![todo:image_alt_text](working-with-jasperserver_2.png)
+![Integration with JasperServer_2](working-with-jasperserver_2.png)

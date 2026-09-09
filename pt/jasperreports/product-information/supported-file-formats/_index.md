@@ -1,42 +1,28 @@
 ---
-
-title: Supported File Formats
-
+title: Formatos de Arquivo Compatíveis
+linktitle: Formatos de Arquivo Compatíveis
 type: docs
-
 weight: 20
-
 url: /pt/jasperreports/supported-file-formats/
-
-lastmod: "2021-06-05"
+description: Saiba mais sobre os formatos de arquivo compatíveis no Aspose.PDF for JasperReports. Exporte relatórios para PDF, XPS, DOC e mais.
+lastmod: "2026-09-09"
 ---
 
+## Formatos de Carregamento Compatíveis
 
+A tabela a seguir indica os formatos de arquivo que o Aspose.PDF for JasperReports pode carregar.
 
-## <ins>**Formatos de Carregamento Suportados**
-
-A tabela a seguir indica os formatos de arquivo que o Aspose.PDF para JasperReports pode carregar.
-
-
-
-|**Format**|**Descrição**|
-
+|**Formato**|**Descrição**|
 | :- | :- |
+|JRXML|Arquivo de Layout JasperReports|
 
-|JRXML|Arquivo de Layout do JasperReports|
+## Formatos de Salvamento Suportados
 
-## <ins>**Formatos de Salvamento Suportados**
+A tabela a seguir indica os formatos de arquivo nos quais o documento pode ser salvo usando o Aspose.PDF for JasperReports. 
 
-A tabela a seguir indica os formatos de arquivo nos quais o documento pode ser salvo usando o Aspose.PDF para JasperReports. 
-
-
-
-|**Format**|**Descrição**|
-
+|**Formato**|**Descrição**|
 | :- | :- |
+|[PDF](https://docs.fileformat.com/view/pdf/)|Salva o documento no formato PDF|
+|PDF/A|Salva o documento no formato PDF/A|
+|[PPTX](https://docs.fileformat.com/presentation/pptx/)|Salva o documento no formato de apresentações do Microsoft PowerPoint|
 
-|[PDF](https://docs.fileformat.com/view/pdf/)|Salva o documento em formato PDF|
-
-|PDF/A|Salva o documento em formato PDF/A|
-
-|[PPTX](https://docs.fileformat.com/presentation/pptx/)|Salva o documento em formato de Apresentações do Microsoft PowerPoint|

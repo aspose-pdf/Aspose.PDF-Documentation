@@ -1,117 +1,71 @@
 ---
-
-title: Working with JasperReports
-
+title: Trabalhando com JasperReports
+linktitle: Trabalhando com JasperReports
 type: docs
-
 weight: 10
-
 url: /pt/jasperreports/working-with-jasperreports/
-
-lastmod: "2021-06-05"
-
+description: Domine o trabalho com JasperReports usando Aspose.PDF. Crie e exporte relatórios detalhados em formato PDF com recursos avançados.
+lastmod: "2026-09-09"
 ---
 
 {{% alert color="primary" %}}
 
-Aspose.Words para JasperReports está disponível gratuitamente, por tempo ilimitado, para avaliação na página de download. As versões de avaliação e licenciada do produto são o mesmo download.
+Aspose.Words for JasperReports está disponível gratuitamente, com avaliação ilimitada de tempo a partir da página de download. A versão de avaliação e a versão licenciada do produto são o mesmo download.
 
-Quando você estiver satisfeito com a versão de avaliação, [compre uma licença](http://www.aspose.com/purchase/default.aspx). Certifique-se de entender e concordar com os termos da licença.
+Quando você estiver satisfeito com a versão de avaliação, [purchase a license](http://www.aspose.com/purchase/default.aspx). Certifique‑se de que entende e concorda com os termos da licença.
 
 {{% /alert %}}
 
-A licença está disponível para download na página de pedido após o pagamento do pedido. A licença é um arquivo XML assinado digitalmente em texto claro. A licença contém informações como o nome do cliente, o produto adquirido e o tipo de licença. Não modifique o conteúdo do arquivo de licença: isso invalida a licença.
+A licença está disponível para download na página de pedido após o pagamento do pedido. A licença é um arquivo XML de texto puro, assinado digitalmente. A licença contém informações como o nome do cliente, o produto adquirido e o tipo da licença. Não modifique o conteúdo do arquivo de licença: isso invalida a licença.
 
 Existem várias maneiras de ativar uma licença:
 
-- [Chamar setLicense](/pdf/pt/jasperreports/working-with-jasperreports/#call-setlicense).
-
+- [Chame o método setLicense](/pdf/pt/jasperreports/working-with-jasperreports/#call-setlicense).
 - [Definir um parâmetro de exportador no código](/pdf/pt/jasperreports/working-with-jasperreports/#set-the-licensefile-exporter-parameter-in-the-code).
-
-- [Defina um parâmetro de exportador em **applicationContext.xml**](/pdf/pt/jasperreports/working-with-jasperserver/).
-
-
+- [Definir um parâmetro de exportador no **applicationContext.xml**](/pdf/pt/jasperreports/working-with-jasperserver/).
 
 Os dois primeiros são usados com JasperReports, o último com JasperServer.
 
-#### **Chamar setLicense**
+## Chame setLicense
 
-<ins> **Este método é usado com JasperReports.**
+Este método é usado com JasperReports.
 
-
-
-1. Baixe a licença para o seu computador e copie-a para a pasta apropriada (por exemplo, a pasta do seu aplicativo ou JasperReports\lib).
-
+1. Faça o download da licença para o seu computador e copie-a para a pasta apropriada (por exemplo, a pasta da sua aplicação ou JasperReports\lib).
 2. Adicione o seguinte código ao seu projeto:
 
-
-
-```
-
+```java
 import com.aspose.pdf.jr3_7_0.jasperreports.*;
-
 try
-
 { 
-
-    // criar um objeto de stream contendo o arquivo de licença
-
+    // create a stream object containing the license file
    FileInputStream fstream = new FileInputStream("C:\\Aspose.PDF.JasperReports.lic");  
 
-
-
-    // Defina a licença através do objeto de stream
-
+    // Set the license through the stream object
  
-
    License license = new License();
-
    license.setLicense(fstream);
-
 }
-
 catch(Exception ex)
-
 {
-
    System.out.println(ex.toString());
-
 }
-
-
 
 ```
 
+## Defina o parâmetro licenseFile Exporter no código
 
+Este método é usado com JasperReports.
 
-#### **Defina o Parâmetro Exportador licenseFile no Código**
-
-
-
-<ins> **Este método é usado com JasperReports.**
-
-
-
-1. Baixe a licença para o seu computador e copie-a para a pasta apropriada (por exemplo, a pasta do seu aplicativo ou JasperReports\lib).
-
+1. Faça o download da licença para o seu computador e copie-a para a pasta apropriada (por exemplo, a pasta da sua aplicação ou JasperReports\lib).
 2. Adicione o seguinte código ao seu projeto:
 
-
-
-```
-
-
+```java
 
 import com.aspose.pdf.jr3_7_0.jasperreports.*;
 
-
-
 com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter exporter = new com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExporter();
-
 exporter.setParameter(PdfExporterParameter.LICENSE, "Aspose.PDF.JasperReports.lic");
-
 exporter.exportReport();
 
-
-
 ```
+
