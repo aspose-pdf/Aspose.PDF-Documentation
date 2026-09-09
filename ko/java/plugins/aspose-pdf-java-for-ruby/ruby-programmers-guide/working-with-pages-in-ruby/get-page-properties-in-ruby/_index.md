@@ -1,35 +1,40 @@
 ---
 title: Ruby에서 페이지 속성 가져오기
+linktitle: Ruby에서 페이지 속성 가져오기
 type: docs
 weight: 50
-url: /ko/java/get-page-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-page-properties-in-ruby/
+description: 문서를 효율적으로 관리하고 조작하기 위해 Aspose.PDF와 함께 Ruby를 사용하여 PDF 파일의 페이지 속성을 검색하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - 페이지 속성 가져오기
 
-## Aspose.PDF - 페이지 속성 가져오기
 
-**Aspose.PDF Java for Ruby**를 사용하여 PDF 문서의 페이지 속성을 가져오려면, **GetPageProperties** 모듈을 호출하십시오.
 
-Ruby 코드
+**Aspose.PDF Java for Ruby**를 사용하여 PDF 문서의 페이지 속성을 얻으려면 **GetPageProperties** 모듈을 호출하기만 하면 됩니다.
+
+루비 코드
+
 
 ```java
-# 문서 디렉터리의 경로입니다.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# PDF 문서 생성
+# Create PDF document
 
 pdf_document = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 페이지 컬렉션 가져오기
+# get page collection
 
 page_collection = pdf_document.getPages()
 
-# 특정 페이지 가져오기
+# get particular page
 
 pdf_page = page_collection.get_Item(1)
 
-# 페이지 속성 가져오기
+#get page properties
 
 puts "ArtBox : Height = " + pdf_page.getArtBox().getHeight().to_s + ", Width = " + pdf_page.getArtBox().getWidth().to_s + ", LLX = " + pdf_page.getArtBox().getLLX().to_s + ", LLY = " + pdf_page.getArtBox().getLLY().to_s + ", URX = " + pdf_page.getArtBox().getURX().to_s + ", URY = " + pdf_page.getArtBox().getURY().to_s
 
@@ -48,9 +53,13 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
+## 
+실행 코드 다운로드
 
-## 실행 코드 다운로드
 
-**Get Page Properties (Aspose.PDF)**를 아래 언급된 소셜 코딩 사이트 중 하나에서 다운로드하세요:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)
+아래에 언급된 소셜 코딩 사이트 중 하나에서 다운로드****페이지 속성(Aspose.PDF)**В을 다운로드하세요.
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

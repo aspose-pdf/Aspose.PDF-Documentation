@@ -1,16 +1,21 @@
 ---
-title: PHP에서 웹을 위한 PDF 문서 최적화
+title: PHP에서 웹용 PDF 문서 최적화
+linktitle: PHP에서 웹용 PDF 문서 최적화
 type: docs
 weight: 60
-url: /ko/java/optimize-pdf-document-for-the-web-in-php/
-lastmod: "2021-06-05"
+url: /java/optimize-pdf-document-for-the-web-in-php/
+description: Aspose.PDF를 사용하여 PHP에서 더 빠른 웹 성능과 파일 크기 감소를 위해 PDF 문서를 최적화하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - 웹용 PDF 최적화
 
-## Aspose.PDF - 웹을 위한 PDF 최적화
 
-**Aspose.PDF Java for PHP**를 사용하여 웹을 위한 PDF 문서를 최적화하려면, **Optimize** 클래스의 **optimize_web** 메서드를 호출하세요.
+
+**Aspose.PDF Java for PHP**를 사용하여 웹용 PDF 문서를 최적화하려면 **Optimize** 클래스의 **optimize_web** 메소드를 호출하기만 하면 됩니다.
 
 PHP 코드
+
 
 ```php
 
@@ -18,25 +23,30 @@ PHP 코드
 
 {
 
-    # PDF 문서를 엽니다.
+    # Open a pdf document.
 
     $doc = new Document($dataDir . "input1.pdf");
 
-    # 웹을 위해 최적화합니다.
+    # Optimize for web
 
     $doc->optimize();
 
-    # 출력 문서를 저장합니다.
+    #Save output document
 
     $doc->save($dataDir . "Optimized_Web.pdf");
 
-    print "웹을 위한 PDF 최적화가 완료되었습니다. 출력 파일을 확인하세요." . PHP_EOL;
+    print "Optimized PDF for the Web, please check output file." . PHP_EOL;
 
-}   
+}В В В
 ```
+
 
 **실행 코드 다운로드**
 
-아래 언급된 소셜 코딩 사이트 중 하나에서 **Optimize PDF for Web (Aspose.PDF)**를 다운로드하세요:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/Optimize.php)
+
+아래에 언급된 소셜 코딩 사이트 중 하나에서**웹용 PDF 최적화(Aspose.PDF)**В를 다운로드하세요.
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/Optimize.php)

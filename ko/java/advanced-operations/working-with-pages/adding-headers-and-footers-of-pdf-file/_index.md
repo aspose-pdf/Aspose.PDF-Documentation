@@ -1,216 +1,250 @@
 ---
-title: PDF 헤더 및 푸터 추가
-linktitle: 헤더 및 푸터 추가
+title: Java에서 PDF 머리글 및 바닥글 추가
+linktitle: PDF에 머리글 및 바닥글 추가
 type: docs
-weight: 70
-url: /ko/java/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for Java를 사용하여 PDF 파일에 TextStamp 클래스를 사용하여 헤더와 푸터를 추가할 수 있습니다.
-lastmod: "2021-06-05"
+weight: 50
+url: /java/add-headers-and-footers-of-pdf-file/
+description: 텍스트, 이미지 및 구조화된 콘텐츠를 사용하여 Java에서 PDF 파일에 머리글과 바닥글을 추가하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 사용하여 PDF 파일에 머리글 및 바닥글 추가
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 머리글과 바닥글을 추가하는 방법을 보여줍니다. 텍스트, 페이지 번호 매기기, HTML, 이미지, 표, LaTeX 기반 머리글 및 바닥글 콘텐츠를 다룹니다.
 ---
+Aspose.PDF for Java를 사용하면 `HeaderFooter` 개체를 각 페이지에 할당하고 다양한 콘텐츠 유형으로 채울 수 있습니다.
 
-PDF 스탬프는 종종 계약서, 보고서 및 제한된 자료에서 사용되며, 문서가 검토되고 "읽음", "자격 있음" 또는 "기밀" 등으로 표시되었음을 증명하기 위해 사용됩니다. 이 문서에서는 **Aspose.PDF for Java**를 사용하여 PDF 문서에 이미지 스탬프와 텍스트 스탬프를 추가하는 방법을 보여줍니다.
 
-위의 코드 스니펫을 한 줄씩 읽어보면 문법과 코드 논리가 이해하기 쉽다는 것을 알 수 있습니다.
+## 
+텍스트 머리글 및 바닥글 추가
 
-## PDF 파일의 헤더에 텍스트 추가하기
 
-PDF 파일의 헤더에 텍스트를 추가하려면 [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) 클래스를 사용할 수 있습니다.
- TextStamp 클래스는 글꼴 크기, 글꼴 스타일, 글꼴 색상 등과 같은 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 머리글에 텍스트를 추가하려면 필요한 속성을 사용하여 Document 객체와 TextStamp 객체를 생성해야 합니다. 그 후, 페이지의 AddStamp 메서드를 호출하여 PDF의 머리글에 텍스트를 추가할 수 있습니다.
 
-PDF의 머리글 영역에 텍스트가 조정되도록 TopMargin 속성을 설정해야 합니다. 또한 HorizontalAlignment를 Center로, VerticalAlignment를 Top으로 설정해야 합니다.
+각 페이지의 상단과 하단에 간단한 텍스트 콘텐츠가 필요한 경우 이 예를 사용하세요.
 
-다음 코드 스니펫은 Java로 PDF 파일의 머리글에 텍스트를 추가하는 방법을 보여줍니다.
+
+1. 
+[HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 만들고 텍스트 조각을 추가합니다.
+
+1. 
+머리글과 바닥글의 여백을 구성합니다.
+1. 소스 PDF의 각 페이지에 적용하고 결과를 저장합니다.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // 문서 디렉토리의 경로입니다.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // 문서 열기
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // 머리글 생성
-        TextStamp textStamp = new TextStamp("Header Text");
-
-        // 스탬프의 속성 설정
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // 모든 페이지에 머리글 추가
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // 업데이트된 문서 저장
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## PDF 파일의 바닥글에 텍스트 추가
-
-PDF 파일의 바닥글에 텍스트를 추가하려면 TextStamp 클래스를 사용할 수 있습니다. TextStamp 클래스는 글꼴 크기, 글꼴 스타일, 글꼴 색상 등 텍스트 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 바닥글에 텍스트를 추가하려면 Document 객체와 필요한 속성을 사용하여 TextStamp 객체를 생성해야 합니다. 그런 다음, AddStamp 메서드를 호출하여 PDF의 바닥글에 텍스트를 추가할 수 있습니다.
-
-다음 코드 스니펫은 Java를 사용하여 PDF 파일의 바닥글에 텍스트를 추가하는 방법을 보여줍니다.
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // 문서 열기
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // 바닥글 생성
-        TextStamp textStamp = new TextStamp("바닥글 텍스트");
-        // 스탬프의 속성 설정
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // 모든 페이지에 바닥글 추가
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // 업데이트된 PDF 파일 저장
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## PDF 파일의 헤더에 이미지 추가
-
-PDF 파일의 헤더에 이미지를 추가하려면 [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) 클래스를 사용할 수 있습니다. Image Stamp 클래스는 글꼴 크기, 글꼴 스타일, 글꼴 색상 등 이미지 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 헤더에 이미지를 추가하려면 Document 객체와 필요한 속성을 사용하여 Image Stamp 객체를 생성해야 합니다. 그런 다음, PDF의 헤더에 이미지를 추가하기 위해 페이지의 [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) 메서드를 호출할 수 있습니다.
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// 문서 열기
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// 헤더 생성
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// 스탬프의 속성 설정
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// 모든 페이지에 헤더 추가
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// 업데이트된 PDF 파일 저장
-pdfDocument.save(_dataDir);
 }
 ```
 
+## 페이지 번호 매기기를 사용하여 머리글 및 바닥글 추가
 
-다음 코드 스니펫은 Java로 PDF 파일의 헤더에 이미지를 추가하는 방법을 보여줍니다.
+머리글이나 바닥글에 현재 페이지 번호와 총 페이지 수가 표시되어야 하는 경우 이 예를 사용하세요.
 
-## PDF 파일의 바닥글에 이미지 추가
+1. 페이지 번호 매기기 자리 표시자를 사용하여 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 만듭니다.
+1. 두 개체 모두에 대한 여백을 구성합니다.
+1. 이를 각 페이지에 적용하고 업데이트된 PDF를 저장하세요.
 
-Image Stamp 클래스를 사용하여 PDF 파일의 바닥글에 이미지를 추가할 수 있습니다. Image Stamp 클래스는 폰트 크기, 폰트 스타일, 폰트 색상 등 이미지 기반 스탬프를 생성하는 데 필요한 속성을 제공합니다. 바닥글에 이미지를 추가하려면 Document 객체와 필요한 속성을 사용하여 Image Stamp 객체를 생성해야 합니다. 그 후, AddStamp 메서드를 호출하여 PDF의 바닥글에 이미지를 추가할 수 있습니다.
-
-{{% alert color="primary" %}}
-
-PDF의 바닥글 영역에 이미지를 조정할 수 있도록 BottomMargin 속성을 설정해야 합니다. 또한 [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment)를 `Center`로 설정하고 [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment)를 `Bottom`으로 설정해야 합니다.
-
-{{% /alert %}}
-
-다음 코드 스니펫은 Java로 PDF 파일의 바닥글에 이미지를 추가하는 방법을 보여줍니다.
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // 문서 열기
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // 바닥글 만들기
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // 스탬프 속성 설정
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // 모든 페이지에 바닥글 추가
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // 업데이트된 PDF 파일 저장
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## 하나의 PDF 파일에 다른 헤더 추가하기
+## 
+HTML 머리글 및 바닥글 추가
 
-우리는 TopMargin 또는 Bottom Margin 속성을 사용하여 문서의 Header/Footer 섹션에 TextStamp를 추가할 수 있다는 것을 알고 있지만, 때때로 하나의 PDF 문서에 여러 헤더/바닥글을 추가해야 할 필요가 있을 수 있습니다.
- **Aspose.PDF for Java**는 이를 수행하는 방법을 설명합니다.
 
-이 요구 사항을 충족하기 위해, 우리는 개별 [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) 객체를 생성하고(필요한 헤더/푸터의 수에 따라 객체 수가 결정됨) PDF 문서에 추가할 것입니다. 우리는 또한 각 스탬프 객체에 대해 다른 서식 정보를 지정할 수 있습니다. 다음 예제에서는 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체와 세 개의 [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) 객체를 생성한 후, PDF의 헤더 섹션에 텍스트를 추가하기 위해 페이지의 [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) 메서드를 사용했습니다. 다음 코드 스니펫은 Aspose.PDF for Java를 사용하여 PDF 파일의 푸터에 이미지를 추가하는 방법을 보여줍니다.
+
+머리글 및 바닥글 내용에 인라인 HTML 형식이 포함되어야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+[HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 생성하고 [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) 콘텐츠를 추가합니다.
+
+1. 
+배치를 위한 여백을 구성합니다.
+1. 각 페이지에 머리글과 바닥글을 지정하고 문서를 저장하세요.
 
 ```java
-public static void AddingDifferentHeadersInOnePDFFile() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // 소스 문서 열기
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // 세 개의 스탬프 생성
-        TextStamp stamp1 = new TextStamp("Header 1");
-        TextStamp stamp2 = new TextStamp("Header 2");
-        TextStamp stamp3 = new TextStamp("Header 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // 스탬프 정렬 설정 (페이지 상단에 수평 중앙으로 스탬프 배치)
-        stamp1.setVerticalAlignment(VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // 글꼴 스타일을 굵게 지정
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // 텍스트 전경색 정보를 빨강으로 설정
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // 글꼴 크기를 14로 지정
-        stamp1.getTextState().setFontSize(14);
-
-        // 이제 두 번째 스탬프 객체의 수직 정렬을 상단으로 설정해야 합니다
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // 스탬프의 수평 정렬 정보를 중앙 정렬로 설정
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // 스탬프 객체의 확대 비율 설정
-        stamp2.setZoom(10);
-
-        // 세 번째 스탬프 객체의 서식 설정
-        // 스탬프 객체의 수직 정렬 정보를 상단으로 지정
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // 스탬프 객체의 수평 정렬 정보를 중앙 정렬로 설정
-        stamp3.setHorizontalAlignment(HorizontalAlignment.Center);
-        // 스탬프 객체의 회전 각도 설정
-        stamp3.setRotateAngle(35);
-        // 스탬프의 배경색을 분홍색으로 설정
-        stamp3.getTextState().setBackgroundColor(Color.getPink());
-
-        // 스탬프의 글꼴 얼굴 정보를 Verdana로 변경
-        stamp3.getTextState().setFont(FontRepository.findFont("Verdana"));
-        // 첫 번째 스탬프는 첫 페이지에 추가됩니다;
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // 두 번째 스탬프는 두 번째 페이지에 추가됩니다;
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // 세 번째 스탬프는 세 번째 페이지에 추가됩니다.
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // 업데이트된 PDF 파일 저장
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## 이미지 머리글 및 바닥글 추가
+
+머리글과 바닥글이 모든 페이지에 이미지를 표시해야 하는 경우 이 예를 사용하세요.
+
+1. [이미지](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) 개체를 생성하고 머리글 및 바닥글 컨테이너에 추가합니다.
+1. 여백을 구성하고 각 페이지에 컨테이너를 할당합니다.
+1. 업데이트된 PDF를 저장합니다.
+
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+표 기반 머리글 및 바닥글 추가
+
+
+
+머리글과 바닥글 내용이 표 레이아웃과 텍스트 스타일을 사용해야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+필요한 텍스트 스타일과 테이블 개체를 만듭니다.
+
+1. 
+[HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 컨테이너에 테이블을 추가합니다.
+1. 각 페이지에 머리글과 바닥글을 적용하고 문서를 저장합니다.
+
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+LaTeX 머리글 및 바닥글 추가
+
+
+
+머리글과 바닥글이 TeX 또는 LaTeX 콘텐츠를 렌더링해야 하는 경우 이 예제를 사용하세요.
+
+
+1. 
+원본 PDF를 열고 총 페이지 수를 확인합니다.
+
+1. 
+각 페이지의 머리글과 바닥글에 대한 [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 콘텐츠를 만듭니다.
+1. 콘텐츠를 할당하고 문서를 저장합니다.
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```

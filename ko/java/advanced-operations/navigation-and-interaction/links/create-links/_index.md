@@ -1,96 +1,148 @@
 ---
-title: PDF 파일에 링크 생성
+title: Java에서 PDF 링크 만들기
 linktitle: 링크 생성
 type: docs
 weight: 10
-url: /ko/java/create-links/
-description: 이 섹션에서는 Java로 PDF 문서에 링크를 생성하는 방법을 설명합니다.
-lastmod: "2021-06-05"
+url: /java/create-links/
+description: Java로 내부, 외부 및 원격 PDF 링크를 만드는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 사용하여 PDF 파일에 링크 주석 만들기
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 링크 주석을 만드는 방법을 보여줍니다. LinkAnnotation 개체에 작업을 연결하여 실행 작업, 원격 문서 탐색, 문서 내 페이지 탐색 및 URI 기반 웹 링크를 다룹니다.
 ---
+Aspose.PDF for Java는 `LinkAnnotation`을 작업 개체와 함께 사용하여 링크 동작을 정의합니다.
 
-## 링크 생성
 
-Aspose.PDF for Java를 사용하면 외부 PDF 파일에 링크를 추가하여 여러 문서를 함께 연결할 수 있습니다. 문서에 애플리케이션 링크를 추가하면 문서에서 애플리케이션으로 연결할 수 있습니다. 이는 예를 들어 튜토리얼의 특정 지점에서 독자가 특정 작업을 수행하도록 하고 싶거나, 기능이 풍부한 문서를 만들고 싶을 때 유용합니다. 애플리케이션 링크를 만들려면:
+## 
+실행-작업 링크 생성
 
-1. [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체를 생성합니다.
-2. 링크를 추가할 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)를 가져옵니다.
 
-1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) 및 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) 객체를 생성합니다.
-1. [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) 객체를 사용하여 링크 속성을 설정합니다.
-1. 또한 [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) 객체로 설정하고 setAction(..) 메서드를 호출합니다.
-1. [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) 객체를 생성할 때 실행하고자 하는 애플리케이션을 지정합니다.
-1. 링크를 Page 객체의 [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) 컬렉션에 추가합니다.
-1. 마지막으로 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체의 Save 메서드를 사용하여 업데이트된 PDF를 저장합니다.
 
-다음 코드 스니펫은 PDF 파일에서 애플리케이션에 대한 링크를 만드는 방법을 보여줍니다.
+링크 주석이 외부 파일이나 대상을 시작해야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지를 선택합니다.
+
+1. 
+[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)을 생성하고 테두리와 색상을 구성합니다.
+1. [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/)을 할당하고 문서를 저장합니다.
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-
-public class ExampleLinks {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Links-Actions";
-        return _dataDir;
-    }
-
-    public static void CreateLink() {
-
-        // 문서 열기
-        Document document = new Document(GetDataDir() + "CreateApplicationLink.pdf");
-
-        // 링크 생성
+public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
-        link.setColor(Color.getGreen());
-        link.setAction(new LaunchAction(document, _dataDir + "sample.pdf"));
-        page.getAnnotations().add(link);
 
-        // 업데이트된 문서 저장
-        document.save(_dataDir + "CreateApplicationLink_out.pdf");
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        Border border = new Border(link);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        link.setBorder(border);
+        link.setColor(Color.getGreen());
+        link.setAction(new LaunchAction(document, inputFile.toString()));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-### PDF 파일에 PDF 문서 링크 생성
+## 
+원격 이동 링크 만들기
 
-Aspose.PDF for Java를 사용하면 외부 PDF 파일에 링크를 추가하여 여러 문서를 함께 연결할 수 있습니다.
- PDF 문서 링크를 생성하려면:
 
-1. 먼저, [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체를 생성합니다.
-1. 그런 다음, 링크를 추가하고자 하는 특정 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)를 가져옵니다.
-1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) 및 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle) 객체를 사용하여 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) 객체를 생성합니다.
-1. [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) 객체를 사용하여 링크 속성을 설정합니다.
-1. setAction(..) 메서드를 호출하고 [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction) 객체를 전달합니다.
-1. [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction) 객체를 생성할 때, 실행할 PDF 파일과 열어야 할 페이지 번호를 지정합니다.
-1. 링크를 Page 객체의 [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) 컬렉션에 추가합니다.
-1. 마지막으로, [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체의 Save 메서드를 사용하여 업데이트된 PDF를 저장합니다.
 
-다음 코드 스니펫은 PDF 파일에서 PDF 문서 링크를 생성하는 방법을 보여줍니다.
+링크가 다른 PDF 문서의 페이지를 열어야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+대상 페이지에 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)을 생성합니다.
+1. [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/)을 할당하고 출력 파일을 저장합니다.
+
 
 ```java
-    public static void CreatePDFDocumentLink() {
-
-        // 문서 열기
-        Document document = new Document(_dataDir + "CreateDocumentLink.pdf");
-
-        // 링크 생성
+public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
-        link.setColor(Color.getGreen());
-        link.setAction(new GoToRemoteAction(_dataDir + "sample.pdf", 1));
-        page.getAnnotations().add(link);
 
-        // 업데이트된 문서 저장
-        document.save(_dataDir + "CreateDocumentLink_out.pdf");
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        link.setColor(Color.getGreen());
+        link.setAction(new GoToRemoteAction(inputFile.toString(), 1));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
     }
+}
+```
+
+## 
+내부 이동 링크 만들기
+
+
+
+링크가 동일한 PDF 문서 내의 다른 페이지로 이동해야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)을 생성하고 모양을 구성합니다.
+1. 대상 페이지에 [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/)을 할당하고 문서를 저장합니다.
+
+
+```java
+public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        Border border = new Border(link);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        link.setBorder(border);
+        link.setColor(Color.getGreen());
+        if (document.getPages().size() >= 4) {
+            link.setAction(new GoToAction(document.getPages().get_Item(4)));
+        } else {
+            link.setAction(new GoToAction(document.getPages().get_Item(document.getPages().size())));
+        }
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+URI 링크 만들기
+
+
+
+링크가 URI 작업을 통해 웹 리소스를 열어야 하는 경우 이 예를 사용합니다.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+페이지에 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)을 생성하세요.
+1. [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/)을 할당하고 출력 파일을 저장합니다.
+
+```java
+public static void createLinkAnnotationGoToUriAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        link.setColor(Color.getGreen());
+        link.setAction(new GoToURIAction("https://docs.aspose.com/pdf/python"));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
+    }
+}
 ```

@@ -1,159 +1,133 @@
 ---
-title: 책갈피 추가 및 삭제
-linktitle: 책갈피 추가 및 삭제
+title: Java에서 PDF 책갈피 추가 및 삭제
+linktitle: 북마크 추가 및 삭제
 type: docs
 weight: 10
-url: /ko/java/add-and-delete-bookmark/
-description: Java로 PDF 문서에 책갈피를 추가할 수 있습니다. PDF 문서에서 모든 또는 특정 책갈피를 삭제할 수 있습니다.
-lastmod: "2021-06-05"
+url: /java/add-and-delete-bookmark/
+description: Java를 사용하여 PDF 문서에 책갈피를 추가하고 삭제하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 사용하여 PDF 문서에 책갈피 추가 또는 제거
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 북마크를 만들고 삭제하는 방법을 보여줍니다. 예제에서는 최상위 책갈피 추가, 하위 책갈피 계층 생성, 모든 책갈피 삭제 및 제목별로 특정 책갈피 제거를 보여줍니다.
 ---
+프로그래밍 방식으로 책갈피를 관리하려면 문서 개요 컬렉션을 사용하세요.
 
-## PDF 문서에 책갈피 추가
 
-책갈피는 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 컬렉션 내의 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) 컬렉션에 포함되어 있습니다.
+## 
+최상위 북마크 추가
 
-PDF에 책갈피를 추가하려면:
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체를 사용하여 PDF 문서를 엽니다.
-2. 책갈피를 생성하고 그 속성을 정의합니다.
-3. [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) 컬렉션을 Outlines 컬렉션에 추가합니다.
 
-다음 코드 스니펫은 PDF 문서에 책갈피를 추가하는 방법을 보여줍니다.
+문서에 단일 최상위 개요 항목이 포함되어야 하는 경우 이 예를 사용하십시오.
+
+
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+[OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/)을 만들고 제목, 스타일, 작업을 구성합니다.
+1. 문서 개요에 책갈피를 추가하고 파일을 저장합니다.
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.facades.Bookmark;
-import com.aspose.pdf.facades.Bookmarks;
-import com.aspose.pdf.facades.PdfBookmarkEditor;
-
-public class ExampleBookmarks {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Bookmarks/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Bookmarks\\";
-        return _dataDir;
-    }
-
-    public static void AddBookmarks() throws IOException {
-
-        Document pdfDocument = new Document(GetDataDir() + "AddBookmark.pdf");
-
-        // 북마크 객체 생성
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+public static void addBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
         pdfOutline.setTitle("Test Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
+        pdfOutline.setAction(new GoToAction(document.getPages().get_Item(1)));
 
-        // 목적지 페이지 번호 설정
-        pdfOutline.setAction(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // 문서의 개요 컬렉션에 북마크 추가
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // 업데이트된 문서 저장
-        pdfDocument.save(_dataDir + "AddBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+하위 북마크 추가
 
-## PDF 문서에 하위 북마크 추가하기
 
-북마크는 중첩될 수 있으며, 이는 부모와 자식 북마크 간의 계층적 관계를 나타냅니다. 이 문서는 PDF에 2단계 북마크인 하위 북마크를 추가하는 방법을 설명합니다.
 
-PDF 파일에 하위 북마크를 추가하려면, 먼저 부모 북마크를 추가합니다:
+이 예에서는 상위 책갈피를 만들고 그 아래에 하위 책갈피를 중첩합니다.
 
-1. 문서를 엽니다.
-1. [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection)에 북마크를 추가하고 그 속성을 정의합니다.
-1. OutlineItemCollection을 Document 객체의 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 컬렉션에 추가합니다.
 
-하위 북마크는 위에서 설명한 부모 북마크와 같이 생성되지만, 부모 북마크의 Outlines 컬렉션에 추가됩니다.
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
 
-다음 코드 스니펫은 PDF 문서에 하위 북마크를 추가하는 방법을 보여줍니다.
+1. 
+상위 및 하위 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) 개체를 만듭니다.
+1. 상위 항목에 하위 항목을 추가하고 개요 컬렉션에 상위 항목을 추가한 후 문서를 저장합니다.
+
 
 ```java
-    public static void AddChildBookmark() {
-        // 문서 열기
-        Document pdfDocument = new Document(GetDataDir() + "AddChildBookmark.pdf");
-
-        // 부모 북마크 객체 생성
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+public static void addChildBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
         pdfOutline.setTitle("Parent Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
 
-        // 자식 북마크 객체 생성
-        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(document.getOutlines());
         pdfChildOutline.setTitle("Child Outline");
         pdfChildOutline.setItalic(true);
         pdfChildOutline.setBold(true);
 
-        // 부모 북마크의 컬렉션에 자식 북마크 추가
         pdfOutline.add(pdfChildOutline);
-        // 문서의 아웃라인 컬렉션에 부모 북마크 추가.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // 출력 저장
-        pdfDocument.save(_dataDir + "AddChildBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+모든 북마크 삭제
 
-## PDF 문서에서 모든 북마크 삭제하기
 
-PDF의 모든 북마크는 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 컬렉션에 저장됩니다. 이 문서에서는 PDF 파일에서 모든 북마크를 삭제하는 방법을 설명합니다.
 
-PDF 파일에서 모든 북마크를 삭제하려면:
+문서에서 전체 개요 컬렉션을 제거해야 하는 경우 이 방법을 사용합니다.
 
-1. [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 컬렉션의 Delete 메서드를 호출합니다.
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체의 Save 메서드를 사용하여 수정된 파일을 저장합니다.
 
-다음 코드 스니펫은 PDF 문서에서 모든 북마크를 삭제하는 방법을 보여줍니다.
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+전체 개요 컬렉션을 삭제합니다.
+1. 정리된 출력 파일을 저장합니다.
+
 
 ```java
-    public static void DeleteAllBookmarksFromPDFDocument() {
-        // 문서 열기
-        Document pdfDocument = new Document(GetDataDir() + "DeleteAllBookmarks.pdf");
-
-        // 모든 북마크 삭제
-        pdfDocument.getOutlines().delete();
-
-        // 업데이트된 파일 저장
-        pdfDocument.save(_dataDir + "DeleteAllBookmarks_out.pdf");
+public static void deleteBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete();
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## PDF 문서에서 특정 북마크 삭제하기
+## 
+특정 북마크 삭제
 
-[PDF 문서에서 모든 첨부 파일 삭제하기](https://docs.aspose.com/pdf/java/working-with-attachments/)는 PDF 파일에서 모든 첨부 파일을 삭제하는 방법을 보여줍니다. 특정 첨부 파일만 삭제하는 것도 가능합니다.
 
-PDF 파일에서 특정 북마크를 삭제하려면:
 
-1. 북마크의 제목을 매개변수로 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 컬렉션의 [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) 메서드에 전달합니다.
-1. 그런 다음 Document 객체의 Save 메서드를 사용하여 업데이트된 파일을 저장합니다.
+전체 개요 트리를 지우지 않고 이름이 지정된 하나의 책갈피를 제거해야 하는 경우 이 예를 사용하십시오.
 
-[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 클래스는 [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) 컬렉션을 제공합니다. [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) 메서드는 메서드에 전달된 제목을 가진 모든 북마크를 제거합니다.
 
-다음 코드 스니펫은 PDF 문서에서 특정 북마크를 삭제하는 방법을 보여줍니다.
+1. 
+원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
+
+1. 
+개요 컬렉션에서 제목별로 책갈피를 삭제합니다.
+1. 업데이트된 문서를 저장합니다.
 
 ```java
-    public static void DeleteParticularBookmarkPDFDocument() {
-        // 문서 열기
-        Document pdfDocument = new Document(GetDataDir() + "DeleteParticularBookmark.pdf");
-
-        // 제목에 따라 특정 북마크 삭제
-        pdfDocument.getOutlines().delete("Child Outline");
-
-        // 업데이트된 파일 저장
-        pdfDocument.save(_dataDir + "DeleteParticularBookmark_out.pdf");
+public static void deleteBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete("Child Outline");
+        document.save(outputFile.toString());
     }
+}
 ```

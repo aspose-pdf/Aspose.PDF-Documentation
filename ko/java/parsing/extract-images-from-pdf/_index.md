@@ -1,48 +1,39 @@
 ---
-title: PDF에서 이미지 추출
-linktitle: 이미지 추출
+title: Java를 사용하여 PDF에서 이미지 추출
+linktitle: PDF에서 이미지 추출
 type: docs
 weight: 20
-url: /ko/java/extract-images-from-the-pdf-file/
-description: Aspose.PDF for Java를 사용하여 PDF에서 이미지의 일부를 추출하는 방법
-lastmod: "2021-06-05"
+url: /java/extract-images-from-the-pdf-file/
+description: Aspose.PDF for Java를 사용하여 PDF 파일에서 포함된 이미지를 추출하는 방법을 알아보세요.
+lastmod: "2026-06-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 통해 PDF에서 이미지를 추출하는 방법
+Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에서 포함된 이미지를 추출하는 방법을 설명합니다. 소스 PDF를 열고, 페이지 리소스 컬렉션의 이미지에 액세스하고, 추출된 XImage를 외부 파일에 저장하는 방법을 보여줍니다.
 ---
+포함된 그래픽을 재사용하거나, 문서 자산을 검사하거나, 다운스트림 처리를 위해 이미지를 내보내야 하는 경우 PDF 페이지에서 이미지를 추출하세요.
 
-PDF 문서의 각 페이지에는 리소스(이미지, 양식 및 글꼴)가 포함되어 있습니다. 우리는 [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) 메서드를 호출하여 이러한 리소스에 접근할 수 있습니다. [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) 클래스에는 [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection)이 포함되어 있으며, [getImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--) 메서드를 호출하여 이미지 목록을 얻을 수 있습니다.
 
-따라서 페이지에서 이미지를 추출하려면 페이지에 대한 참조, 페이지 리소스에 대한 참조, 마지막으로 이미지 컬렉션에 대한 참조를 얻어야 합니다. 특정 이미지는 예를 들어 인덱스를 통해 추출할 수 있습니다.
+1. 
+[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 열고 추출된 이미지 파일의 출력 스트림을 엽니다.
 
-이미지의 인덱스는 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) 객체를 반환합니다.
-이 객체는 추출된 이미지를 저장하는 데 사용할 수 있는 [Save](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-) 메서드를 제공합니다. 다음 코드 스니펫은 PDF 파일에서 이미지를 추출하는 방법을 보여줍니다.
+1. 
+문서에서 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져오고 해당 `Resources.Images` 컬렉션에 액세스합니다.
+
+1. 
+해당 이미지 컬렉션에서 필요한 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) 개체를 인덱스별로 검색합니다.
+
+1. 
+`image.save(outputImage)`을 호출하여 추출된 이미지 바이트를 대상 스트림에 씁니다.
 
 ```java
-public static void Extract_Images(){
-    // 문서 디렉토리의 경로
-    String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    String filePath = _dataDir + "ExtractImages.pdf";
-
-    // PDF 문서 로드
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-    com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
-    com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
-    // 특정 이미지 추출
-    com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
-
-    try {
-        java.io.FileOutputStream outputImage = new java.io.FileOutputStream(_dataDir + "output.jpg");
-        // 출력 이미지 저장
-        xImage.save(outputImage);
-        outputImage.close();
-    } catch (java.io.FileNotFoundException e) {
-        // TODO: 예외 처리
-        e.printStackTrace();
-    } catch (java.io.IOException e) {
-        // TODO: 예외 처리
-        e.printStackTrace();
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
     }
 }
 ```
