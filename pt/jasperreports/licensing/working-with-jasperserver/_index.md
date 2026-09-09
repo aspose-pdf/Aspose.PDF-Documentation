@@ -17,7 +17,7 @@ Este método é usado com JasperServer.
 {{% /alert %}}
 
 1. Baixe a licença para o seu computador e copie-a para ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF``` folder, where  ```<InstallDir>``` que significa o diretório de instalação do JasperServer.
-2. Locate the ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` file and add the following lines:
+2. Localize o ficheiro ```<InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\applicationContext.xml``` e adicione as seguintes linhas:
 
 ```xml
  <bean id="AsposeExportParameters" class="com.aspose.pdf.jr3_7_0.jasperreports.JrPdfExportParametersBean">

@@ -10,7 +10,7 @@ lastmod: "2026-08-31"
 
 {{% alert color="primary" %}}
 
-Aspose.PDF para JasperReports está disponible para una evaluación gratuita y por tiempo ilimitado desde la página de descarga. Las versiones de evaluación y licencia del producto son la misma descarga.
+Aspose.PDF for JasperReports está disponible para una evaluación gratuita y por tiempo ilimitado desde la página de descarga. Las versiones de evaluación y licencia del producto son la misma descarga.
 
 Cuando esté satisfecho con la versión de evaluación, [comprar una licencia](https://purchase.aspose.com/buy?ppId=98899). Asegúrese de comprender y aceptar los términos de la licencia.
 

@@ -4,7 +4,7 @@ linktitle: How to - use Aspose.Pdf for JasperReports offline demos
 type: docs
 weight: 10
 url: /jasperreports/how-to-use-aspose-pdf-for-jasperreports-offline-demos/
-description: Explore demonstrações off-line do Aspose.PDF para JasperReports. Aprenda implementações e recursos práticos de maneira prática.
+description: Explore demonstrações off-line do Aspose.PDF for JasperReports. Aprenda implementações e recursos práticos de maneira prática.
 lastmod: "2021-06-05"
 ---
 
@@ -28,7 +28,7 @@ Para executar demonstrações do Aspose.PDF para o JasperReports:
 6. Descompacte a ferramenta ANT e configure as variáveis ​​de ambiente conforme descrito no manual da ferramenta.
 7. Mude o diretório atual para ```<InstallDir>```\demo\hsqldb e execute a seguinte linha de comando:
    formiga runServer
-8. Abra a nova instância do prompt de comando e altere o diretório atual para uma das demonstrações do Aspose.PDF para JasperReports, por exemplo ```<InstallDir>```\demo\samples\charts.ap.
+8. Abra a nova instância do prompt de comando e altere o diretório atual para uma das demonstrações do Aspose.PDF for JasperReports, por exemplo ```<InstallDir>```\demo\samples\charts.ap.
 9. Execute os seguintes comandos na linha de comando:
 10. ant javac – para compilar os arquivos fonte Java do aplicativo de teste.
 11. ant compile – para compilar o design do relatório XML e produzir o arquivo .jasper

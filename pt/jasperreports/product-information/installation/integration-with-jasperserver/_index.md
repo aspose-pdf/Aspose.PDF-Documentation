@@ -70,7 +70,7 @@ Nas etapas seguintes <InstallDir> significa o diretório de instalação do Jasp
 4. Copie **Aspose-pdf-jasperreports.jar** da pasta \lib no **Aspose.PDF.JasperReports.zip** para <InstallDir>\apache-tomcat\webapps\jasperserver\WEB-INF\lib\.
 5. Adicione as linhas a seguir ao **<InstallDir>\\apache-tomcat\\webapps\\jasperserver\\WEB-INF\\applicationContext.xml** arquivo.
 
-   Este bean pode conter várias configurações destinadas a configurar a exportação. Por exemplo, você pode usar o recurso de mapeamento de fontes do JasperReports ou especificar a localização do arquivo de licença do Aspose.Cells for JasperReports.
+Este bean pode conter várias configurações destinadas a configurar a exportação. Por exemplo, você pode usar o recurso de mapeamento de fontes do JasperReports ou especificar a localização do arquivo de licença do Aspose.Cells for JasperReports.
   
 {{% /alert %}}
 
