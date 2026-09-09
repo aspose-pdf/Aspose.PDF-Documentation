@@ -1,0 +1,20 @@
+﻿---
+title: 系统要求
+linktitle: 系统要求
+type: docs
+weight: 10
+url: /zh/jasperreports/system-requirements/
+description: 了解 Aspose.PDF for JasperReports 的系统要求。确保与您的环境的兼容性和最佳性能。
+lastmod: "2026-08-31"
+---
+
+{{% alert color="primary" %}}
+
+Aspose.PDF for JasperReports 需要以下软件才能运行：
+
+- Java 2 平台标准版 5.0 或更高版本。
+- JasperReports 6.7.0 或更高版本。
+- JasperServer 6.7.0 或更高版本（如果您想将 Aspose.PDF for JasperReports 与 JasperServer 一起使用）。
+
+{{% /alert %}}
+

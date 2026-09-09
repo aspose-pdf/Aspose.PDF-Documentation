@@ -1,20 +1,20 @@
 ---
-title: Ekspor Daftar Tugas ke PDF dengan Kode Bar menggunakan PDF Template Engine
-linktitle: Ekspor Daftar Tugas ke PDF dengan Kode Bar menggunakan PDF Template Engine
+title: Ekspor Daftar Tugas ke PDF dengan Kode Batang menggunakan Mesin Template PDF
+linktitle: Ekspor Daftar Tugas ke PDF dengan Kode Batang menggunakan Mesin Template PDF
 type: docs
 weight: 40
 url: /id/sharepoint/export-task-list-to-pdf-with-barcode-using-pdf-template-engine/
-lastmod: "2026-06-18"
-description: API PDF SharePoint dapat mengekspor Daftar Tugas ke PDF dengan Kode Bar menggunakan PDF Template Engine.
+lastmod: "2026-08-07"
+description: API PDF SharePoint dapat mengekspor Daftar Tugas ke PDF dengan Kode Batang menggunakan Mesin Template PDF.
 ---
 
 {{% alert color="primary" %}}
 
-Artikel ini menunjukkan cara menyiapkan dan mengekspor daftar tugas ke PDF dengan kode bar menggunakan Aspose.PDF for SharePoint.
+Artikel ini menunjukkan cara mengatur dan mengekspor daftar tugas ke PDF dengan kode batang menggunakan Aspose.PDF for SharePoint.
 
 {{% /alert %}}
 
-Untuk mengekspor daftar tugas ke PDF dengan kode bar menggunakan mesin template, ikuti langkah-langkah berikut:
+Untuk mengekspor daftar tugas ke PDF dengan kode batang menggunakan mesin template, ikuti langkah-langkah berikut:
 
 1. Buat dan unggah template.
 1. Lengkapi bidang template dan simpan template.
@@ -23,42 +23,41 @@ Untuk mengekspor daftar tugas ke PDF dengan kode bar menggunakan mesin template,
 
 Proses diberikan secara detail di bawah ini.
 
-## **Mengekspor Daftar Tugas ke PDF**
+## Mengekspor Daftar Tugas ke PDF
 
 {{% alert color="primary" %}}
 
 1. Buat daftar templat PDF.
 
-![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
-
+![Buat Daftar Templat PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_1.png)
 
 2. Setelah membuat templat, klik **Add New Item** dalam daftar dan unggah file XML.
 
-![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
+![Unggah File XML](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_2.png)
 
 3. Setelah unggahan selesai, klik **OK**.
 4. Isi bidang formulir.
 5. Simpan templat.
 
-![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_3.png)
+![Konfigurasikan Templat](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_3.png)
 
 Templat telah dikonfigurasi.
 
-6. Buka daftar **Tugas** dan buat tugas baru.
+6. Buka daftar **Tasks** dan buat tugas baru.
 7. Simpan tugas.
 
-![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
+![Buat Tugas](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_4.png)
 
 8. Pada tab **Aspose Tools**, klik **Export To PDF**.
 
-![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
+![Export To PDF](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_5.png)
 
-9. Pilih templat yang telah dikonfigurasi dan klik **Export**.
+9. Pilih template yang dikonfigurasi dan klik **Export**.
 
-![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
+![Pilih Template](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_6.png)
 
 PDF yang diekspor:
 
-![todo:image_alt_text](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_7.png)
+![PDF yang Diekspor](export-task-list-to-pdf-with-barcode-using-pdf-template-engine_7.png)
 
 {{% /alert %}}

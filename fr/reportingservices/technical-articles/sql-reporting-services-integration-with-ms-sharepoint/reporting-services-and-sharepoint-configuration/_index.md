@@ -4,6 +4,7 @@ linktitle: Configuration de Reporting Services et SharePoint
 type: docs
 weight: 40
 url: /fr/reportingservices/reporting-services-and-sharepoint-configuration/
+description: "Découvrez Configuration de Reporting Services et SharePoint dans Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

@@ -50,51 +50,6 @@ def extract_text_from_region(infile, page_number, rect_coords, outfile):
         document.close()
 ```
 
-## 段落を繰り返し処理して抽出する
-
-使用 [パラグラフアブソーバー](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) プレーンページテキストの代わりに段落対応抽出が必要な場合。とは違います [テキストアブソーバー](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textabsorber/) または [テキストフラグメントアブソーバー](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/textfragmentabsorber/)、この API は、出力をページ、セクション、および段落ごとに整理します。これは、テキスト分析、構造化されたエクスポート、およびレイアウトに依存する処理に役立ちます。
-
-1. ソース PDF をとして開きます [文書](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/).
-1. を作成 `ParagraphAbsorber` インスタンス。
-1. コール `absorber.visit(document)` すべてのページを分析します。
-1. イテレートスルー `page_markups`次に、各セクションと段落を確認します。
-1. 各段落のテキストフラグメントを読み取り、結果をファイルに書き込みます。
-
-```python
-import aspose.pdf as ap
-
-
-def extract_paragraphs_from_pdf(infile, outfile):
-    """
-    Extract all paragraphs from a PDF document, and write each paragraph’s text into an output file.
-    Args:
-        infile (str): Path to input PDF file.
-        outfile (str): Path to output text file.
-    """
-    document = ap.Document(infile)
-    try:
-        absorber = ap.text.ParagraphAbsorber()
-        absorber.visit(document)
-
-        with open(outfile, "w", encoding="utf-8") as tw:
-            for page_markup in absorber.page_markups:
-                for sec_idx, section in enumerate(page_markup.sections, start=1):
-                    for para_idx, paragraph in enumerate(section.paragraphs, start=1):
-                        # Concatenate all fragments/lines in the paragraph
-                        parts = []
-                        for line in paragraph.lines:
-                            for fragment in line:
-                                parts.append(fragment.text)
-                            parts.append("\r\n")
-                        paragraph_text = "".join(parts)
-                        tw.write(
-                            f"Page {page_markup.number}, Section {sec_idx}, Paragraph {para_idx}:\n"
-                        )
-                        tw.write(paragraph_text + "\n")
-    finally:
-        document.close()
-```
-
 ## バウンディングポリゴンレンダリングによる段落の抽出
 
 使用することもできます [パラグラフアブソーバー](https://reference.aspose.com/pdf/python-net/aspose.pdf.text/paragraphabsorber/) 段落のジオメトリを検査します。この方法では、テキストを抽出するだけでなく、各セクションの四角形と段落の多角形も記録されるため、レイアウトマッピング、文書分析、アクセシビリティツール、または領域を意識した後処理に役立ちます。

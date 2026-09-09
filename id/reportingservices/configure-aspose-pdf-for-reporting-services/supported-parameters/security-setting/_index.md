@@ -4,6 +4,7 @@ linktitle: Pengaturan Keamanan
 type: docs
 weight: 30
 url: /id/reportingservices/security-setting/
+description: "Temukan Pengaturan Keamanan di Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

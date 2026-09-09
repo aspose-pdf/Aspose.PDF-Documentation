@@ -4,6 +4,7 @@ linktitle: Support des rapports paramétrés
 type: docs
 weight: 20
 url: /fr/reportingservices/parameterized-report-support/
+description: "Découvrez Support des rapports paramétrés dans Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 
