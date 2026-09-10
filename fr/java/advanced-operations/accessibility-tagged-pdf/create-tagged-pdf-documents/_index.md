@@ -13,22 +13,13 @@ sitemap:
 
 Créer un PDF balisé signifie ajouter des éléments de structure qui rendent le document plus facile à valider par rapport aux exigences d'accessibilité PDF/UA et plus facile à interpréter pour les technologies d'assistance.
 
-
-## 
-Créer un simple document PDF balisé
+## Créer un simple document PDF balisé
 
 Utilisez cet exemple lorsque vous avez besoin d'un PDF balisé minimal avec un titre et un paragraphe dans l'arborescence de la structure logique.
 
-
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et obtenez son [ITaggedContent] (https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
-
-1. 
-Définissez le titre et la langue du document, puis créez les éléments d'en-tête et de paragraphe requis.
-
-1. 
-Ajoutez les éléments de structure à l’élément racine et enregistrez le document.
-
+1. Créez un nouveau  PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et obtenez son [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. Définissez le titre et la langue du document, puis créez les éléments d'en-tête et de paragraphe requis.
+1. Ajoutez les éléments de structure à l’élément racine et enregistrez le document.
 
 ```java
 public static void createTaggedPdfDocumentSimple(Path outputFile) {
@@ -54,21 +45,13 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 }
 ```
 
-## 
-Créer un document PDF balisé avancé
+## Créer un document PDF balisé avancé
 
 Cet exemple crée une structure plus riche en mélangeant des titres, des paragraphes, des étendues, des guillemets et des paramètres de mise en page explicites.
 
-
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et initialisez les métadonnées du contenu balisé.
-
-1. 
-Créez la structure du titre et du paragraphe, puis ajoutez des étendues et un élément de citation à l'intérieur du paragraphe.
-
-1. 
-Ajustez la position du paragraphe, ajoutez les éléments à la structure racine et enregistrez le document.
-
+1. Créez un nouveau  PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et initialisez les métadonnées du contenu balisé.
+1. Créez la structure du titre et du paragraphe, puis ajoutez des étendues et un élément de citation à l'intérieur du paragraphe.
+1. Ajustez la position du paragraphe, ajoutez les éléments à la structure racine et enregistrez le document.
 
 ```java
 public static void createTaggedPdfDocumentAdv(Path outputFile) {
@@ -111,21 +94,13 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 }
 ```
 
-## 
-Ajouter un style de texte au contenu balisé
+## Ajouter un style de texte au contenu balisé
 
 Utilisez cet exemple lorsque le contenu d’un paragraphe balisé doit contenir des informations explicites sur la police, la couleur et le style.
 
-
-1. 
-Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
-1. 
-Créez un élément de paragraphe et configurez son état de texte de structure.
-
-1. 
-Définissez le texte du paragraphe et enregistrez le document.
-
+1. Créez un nouveau  PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Créez un élément de paragraphe et configurez son état de texte de structure.
+1. Définissez le texte du paragraphe et enregistrez le document.
 
 ```java
 public static void addStyle(Path outputFile) {
@@ -148,17 +123,14 @@ public static void addStyle(Path outputFile) {
 }
 ```
 
-## 
-Ajouter des éléments de structure de figure
+## Ajouter des éléments de structure de figure
 
 Cet exemple montre comment créer une figure balisée avec un texte alternatif, un titre, une balise personnalisée, un contenu d'image et un positionnement.
 
+1. Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 1. 
-Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
-1. 
-Créez un [FigureElement] (https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), définissez ses métadonnées accessibles et attribuez l'image.
+Créez un [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), définissez ses métadonnées accessibles et attribuez l'image.
 
 1. 
 Ajustez la position de la figure et enregistrez le document.
@@ -198,10 +170,10 @@ Utilisez cet exemple lorsque vous devez vérifier si un PDF balisé satisfait au
 
 
 1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 1. 
-Exécutez la validation sur [PdfFormat] (https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+Exécutez la validation sur [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 
 1. 
 Rédigez le journal de validation et imprimez le résultat de la validation.
@@ -226,7 +198,7 @@ Cet exemple applique des paramètres de marge et d’alignement explicites à un
 Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 1. 
-Ajoutez un élément de structure de paragraphe et préparez [PositionSettings] (https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+Ajoutez un élément de structure de paragraphe et préparez [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
 
 1. 
 Appliquez les paramètres de position au paragraphe et enregistrez le document.
@@ -271,10 +243,10 @@ Utilisez cette approche lorsqu'un PDF existant doit être converti en PDF/UA et 
 
 
 1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 1. 
-Créez [PdfFormatConversionOptions] (https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) et activez le balisage automatique.
+Créez [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) et activez le balisage automatique.
 
 1. 
 Exécutez la conversion et enregistrez le document de sortie.
@@ -347,7 +319,7 @@ Utilisez cet exemple lorsqu'un PDF balisé doit inclure une page de table des ma
 Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page de table des matières.
 
 1. 
-Créez le [TOCElement] (https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) et un en-tête qui doit apparaître dans la table des matières.
+Créez le [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) et un en-tête qui doit apparaître dans la table des matières.
 
 1. 
 Liez l’entrée de la table des matières au titre et enregistrez le document.
