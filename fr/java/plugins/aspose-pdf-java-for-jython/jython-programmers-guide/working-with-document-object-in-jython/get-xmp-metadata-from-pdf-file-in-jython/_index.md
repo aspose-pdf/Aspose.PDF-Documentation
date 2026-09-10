@@ -1,19 +1,29 @@
 ---
-title: Obtenir les métadonnées XMP d'un fichier PDF en Jython
+title: Obtenez des métadonnées XMP à partir d'un fichier PDF dans Jython
+linktitle: Obtenez des métadonnées XMP à partir d'un fichier PDF dans Jython
 type: docs
 weight: 40
-url: /fr/java/get-xmp-metadata-from-pdf-file-in-jython/
-lastmod: "2021-06-05"
+url: /java/get-xmp-metadata-from-pdf-file-in-jython/
+description: Découvrez comment extraire les métadonnées XMP d'un document PDF à l'aide de Jython avec Aspose.PDF pour une analyse détaillée du contenu.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Obtenir les métadonnées XMP
 
-## Aspose.PDF - Obtenir les métadonnées XMP
 
-Pour vérifier le format de fichier en utilisant **Aspose.PDF Java pour Jython**. Vous pouvez voir ici un exemple de code.
 
-Erreur lors du rendu de la macro 'code' : Valeur invalide spécifiée pour le paramètre lang
+Pour vérifier le format du fichier à l'aide de **Aspose.PDF Java pour Jython**. Ici vous pouvez voir un exemple de code.
 
-## Télécharger le code en cours d'exécution
+Erreur de rendu de la macro 'code' : valeur non valide spécifiée pour le paramètre lang
 
-Téléchargez le code en cours d'exécution depuis l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+## 
+Télécharger le code d'exécution
+
+
+
+Téléchargez le code en cours d'exécution à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

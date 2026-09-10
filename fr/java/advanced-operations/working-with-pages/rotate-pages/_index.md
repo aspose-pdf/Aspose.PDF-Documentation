@@ -1,59 +1,43 @@
 ---
-title: Rotation des pages PDF par programmation
+title: Faire pivoter les pages PDF en Java
 linktitle: Rotation des pages PDF
 type: docs
-weight: 60
-url: /fr/java/rotate-pages/
-description: Changer l'orientation de la page et adapter le contenu de la page à la nouvelle orientation de la page en utilisant Java.
-lastmod: "2021-06-05"
+weight: 110
+url: /java/rotate-pages/
+description: Découvrez comment faire pivoter des pages PDF et modifier l'orientation des pages en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Faire pivoter les pages PDF avec Java
+Abstract: Cet article explique comment faire pivoter des pages PDF à l'aide d'Aspose.PDF pour Java. L'exemple parcourt toutes les pages d'un document, applique une rotation de 90 degrés et enregistre le PDF mis à jour.
 ---
+Utilisez l'API de rotation de page lorsque vous devez modifier l'orientation sur une ou plusieurs pages.
 
-## Changer l'orientation de la page
 
-Cet article décrit comment mettre à jour ou changer l'orientation des pages dans un fichier PDF existant.
+## 
+Faire pivoter toutes les pages de 90 degrés
 
-Aspose.PDF pour Java a la fonctionnalité de changer l'orientation de la page de paysage à portrait et vice versa. Pour changer l'orientation de la page, définissez le [MediaBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#setMediaBox-com.aspose.pdf.Rectangle-) de la page en utilisant l'extrait de code suivant.
 
-Vous pouvez également changer l'orientation de la page en définissant un angle de rotation en utilisant la méthode Rotate().
+
+Utilisez cet exemple lorsque chaque page du document doit être tournée dans le sens des aiguilles d’une montre.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Parcourez tous les objets [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et définissez la valeur de rotation.
+1. Enregistrez le PDF mis à jour.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRotatePDFPages  {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RotatePages() {
-        // Ouvrir le document
-        Document pdfDocument = new Document(_dataDir + "sample2.pdf");
-
-        for (Page page : pdfDocument.getPages())
-        {            
-            // Rectangle r = page.getMediaBox();
-            // double newHeight = r.getWidth();
-            // double newWidth = r.getHeight();
-            // double newLLX = r.getLLX();
-            // // Nous devons déplacer la page vers le haut pour compenser le changement de taille de la page
-            // // (le bord inférieur de la page est 0,0 et l'information est généralement placée depuis le
-            // // haut de la page. C'est pourquoi nous déplaçons le bord inférieur vers le haut de la différence entre
-            // // l'ancienne et la nouvelle hauteur.
-            // double newLLY = r.getLLY() + (r.getHeight() - newHeight);
-            // page.setMediaBox (new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-            // // Parfois, nous devons également définir CropBox (s'il a été défini dans le fichier original)
-            // page.setCropBox(new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-
-            // Définir l'angle de rotation de la page
+public static void rotatePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             page.setRotate(Rotation.on90);
         }
-
-        _dataDir = _dataDir + "ChangeOrientation_out.pdf";
-        // Enregistrer le fichier de sortie
-        pdfDocument.save(_dataDir);
-    }    
+        document.save(outputFile.toString());
+    }
 }
 ```

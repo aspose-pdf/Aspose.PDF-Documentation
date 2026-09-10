@@ -1,39 +1,49 @@
 ---
-title: Supprimer une Page Particulière du Fichier PDF en Ruby
+title: Supprimer une page particulière du fichier PDF dans Ruby
+linktitle: Supprimer une page particulière du fichier PDF dans Ruby
 type: docs
 weight: 20
-url: /fr/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+description: Supprimez des pages spécifiques des fichiers PDF par programme à l'aide d'Aspose.PDF pour Ruby.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Supprimer la page
 
-## Aspose.PDF - Supprimer une Page
 
-Pour supprimer une Page Particulière du document PDF en utilisant **Aspose.PDF Java pour Ruby**, invoquez simplement le module **DeletePage**.
 
-Code Ruby
+Pour supprimer une page particulière du document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **DeletePage**.
+
+Code Rubis
+
 
 ```java
-# Le chemin vers le répertoire des documents.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Ouvrir le document cible
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# supprimer une page particulière
+# delete a particular page
 
 pdf.getPages().delete(2)
 
-# enregistrer le fichier PDF nouvellement généré
+# save the newly generated PDF file
 
 pdf.save(data_dir + "output.pdf")
 
-puts "Page supprimée avec succès!"
+puts "Page deleted successfully!"
 ```
 
-## Télécharger le Code Exécutant
+## 
+Télécharger le code d'exécution
 
-Téléchargez **Supprimer la Page (Aspose.PDF)** depuis n'importe lequel des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/deletepage.rb)
+
+Téléchargez ** Supprimer la page (Aspose.PDF) ** à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/deletepage.rb)

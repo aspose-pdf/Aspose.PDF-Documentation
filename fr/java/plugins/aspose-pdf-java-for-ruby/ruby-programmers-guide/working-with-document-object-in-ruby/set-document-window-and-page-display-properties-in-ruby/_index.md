@@ -1,84 +1,93 @@
 ---
-title: Définir les propriétés de la fenêtre du document et de l'affichage des pages en Ruby
+title: Définir les propriétés d'affichage de la fenêtre du document et de la page dans Ruby
+linktitle: Définir les propriétés d'affichage de la fenêtre du document et de la page dans Ruby
 type: docs
 weight: 100
-url: /fr/java/set-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+url: /java/set-document-window-and-page-display-properties-in-ruby/
+description: Personnalisez les paramètres d'affichage des documents et des pages dans les PDF à l'aide de Ruby et Aspose.PDF.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Définir les propriétés d'affichage de la fenêtre du document et de la page
 
-## Aspose.PDF - Définir les propriétés de la fenêtre du document et de l'affichage des pages
 
-Pour définir les propriétés de la fenêtre du document et de l'affichage des pages du document Pdf en utilisant **Aspose.PDF Java for Ruby**, il suffit d'invoquer le module **SetDocumentWindow**.
 
-Code Ruby
+Pour définir les propriétés d'affichage de la fenêtre du document et de la page d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **SetDocumentWindow**.
+
+Code Rubis
+
 
 ```java
-# Le chemin vers le répertoire des documents.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Ouvrir un document pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Définir différentes propriétés du document
+# Set different document properties
 
-# Position de la fenêtre du document - Par défaut : false
+# Position of document's window - Default: false
 
 doc.setCenterWindow(true)
 
-# Ordre de lecture prédominant ; détermine la position de la page
+# Predominant reading order; determine the position of page
 
-# lorsqu'elle est affichée côte à côte - Par défaut : L2R
+# when displayed side by side - Default: L2R
 
 #doc.setDirection(Rjb::import('com.aspose.pdf.Direction.L2R'))
 
-# Si la barre de titre de la fenêtre doit afficher le titre du document.
+# Whether window's title bar should display document title.
 
-# Si false, la barre de titre affiche le nom du fichier PDF - Par défaut : false
+# If false, title bar displays PDF file name - Default: false
 
 doc.setDisplayDocTitle(true)
 
-# Si redimensionner la fenêtre du document pour s'adapter à la taille de
+# Whether to resize the document's window to fit the size of
 
-# la première page affichée - Par défaut : false
+# first displayed page - Default: false
 
 doc.setFitWindow(true)
 
-# Si masquer la barre de menu de l'application visionneuse - Par défaut : false
+# Whether to hide menu bar of the viewer application - Default: false
 
 doc.setHideMenubar(true)
 
-# Si masquer la barre d'outils de l'application visionneuse - Par défaut : false
+# Whether to hide tool bar of the viewer application - Default: false
 
 doc.setHideToolBar(true)
 
-# Si masquer les éléments de l'interface utilisateur comme les barres de défilement
+# Whether to hide UI elements like scroll bars
 
-# et ne laisser afficher que le contenu des pages - Par défaut : false
+# and leaving only the page contents displayed - Default: false
 
 doc.setHideWindowUI(true)
 
-# Le mode de page du document. Comment afficher le document à la sortie du mode plein écran.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 doc.setNonFullScreenPageMode(Rjb::import('com.aspose.pdf.PageMode.UseOC'))
 
-# La mise en page, c'est-à-dire page unique, une colonne
+# The page layout i.e. single page, one column
 
 doc.setPageLayout(Rjb::import('com.aspose.pdf.PageLayout.TwoColumnLeft'))
 
-# Comment le document doit s'afficher à l'ouverture.
+# How the document should display when opened.
 
 doc.setPageMode()
 
-# Enregistrer le fichier PDF mis à jour
+# Save updated PDF file
 
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
+## 
+Télécharger le code d'exécution
 
-## Télécharger le Code Exécutable
 
-Téléchargez **Définir les Propriétés de la Fenêtre du Document et de l'Affichage de la Page (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)
+Téléchargez** Définir les propriétés d'affichage de la fenêtre du document et de la page (Aspose.PDF)**В à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

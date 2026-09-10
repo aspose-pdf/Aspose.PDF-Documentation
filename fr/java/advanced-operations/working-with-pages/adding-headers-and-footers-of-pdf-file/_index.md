@@ -1,216 +1,266 @@
 ---
-title: Ajouter un en-tête et un pied de page PDF
-linktitle: Ajouter un en-tête et un pied de page
+title: Ajouter des en-têtes et des pieds de page PDF en Java
+linktitle: Ajout d'un en-tête et d'un pied de page au PDF
 type: docs
-weight: 70
-url: /fr/java/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF pour Java vous permet d'ajouter des en-têtes et des pieds de page à votre fichier PDF en utilisant la classe TextStamp.
-lastmod: "2021-06-05"
+weight: 50
+url: /java/add-headers-and-footers-of-pdf-file/
+description: Découvrez comment ajouter des en-têtes et des pieds de page aux fichiers PDF en Java à l'aide de texte, d'images et de contenu structuré.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Ajouter des en-têtes et des pieds de page aux fichiers PDF avec Java
+Abstract: Cet article montre comment ajouter des en-têtes et des pieds de page aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le texte, la numérotation des pages, le HTML, les images, les tableaux et le contenu des en-têtes et pieds de page basés sur LaTeX.
 ---
+Aspose.PDF pour Java vous permet d'attribuer des objets `HeaderFooter` à chaque page et de les remplir avec différents types de contenu.
 
-Les tampons PDF sont souvent utilisés dans les contrats, rapports et documents restreints, pour prouver que les documents ont été examinés et marqués comme "lus", "qualifiés" ou "confidentiels", etc. Cet article vous montrera comment nous pouvons ajouter des tampons d'image et des tampons de texte aux documents PDF en utilisant **Aspose.PDF pour Java**.
 
-Si vous lisez les extraits de code ci-dessus ligne par ligne, vous devez constater que la syntaxe et la logique du code sont assez faciles à comprendre.
+## 
+Ajouter des en-têtes et des pieds de page de texte
 
-## Ajouter du texte dans l'en-tête du fichier PDF
 
-Vous pouvez utiliser la classe [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) pour ajouter du texte dans l'en-tête d'un fichier PDF.
- TextStamp class fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de la police, le style de la police et la couleur de la police, etc. Afin d'ajouter du texte dans l'en-tête, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le texte dans l'en-tête du PDF.
 
-Vous devez définir la propriété TopMargin de manière à ajuster le texte dans la zone d'en-tête de votre PDF. Vous devez également définir HorizontalAlignment sur Center et VerticalAlignment sur Top.
+Utilisez cet exemple lorsque vous avez besoin d'un contenu textuel simple en haut et en bas de chaque page.
 
-Le code suivant vous montre comment ajouter du texte dans l'en-tête d'un fichier PDF avec Java.
+
+1. 
+Créez des objets [HeaderFooter] (https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) et ajoutez des fragments de texte.
+
+1. 
+Configurez les marges pour l'en-tête et le pied de page.
+1. Appliquez-les à chaque page du PDF source et enregistrez le résultat.
+
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // Le chemin vers le répertoire des documents.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // Ouvrir le document
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // Créer en-tête
-        TextStamp textStamp = new TextStamp("Texte de l'en-tête");
-
-        // Définir les propriétés du tampon
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // Ajouter l'en-tête sur toutes les pages
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // Enregistrer le document mis à jour
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## Ajout de texte dans le pied de page d'un fichier PDF
-
-Vous pouvez utiliser la classe TextStamp pour ajouter du texte dans le pied de page d'un fichier PDF. La classe TextStamp fournit les propriétés nécessaires pour créer un tampon basé sur du texte comme la taille de la police, le style de la police et la couleur de la police, etc. Pour ajouter du texte dans le pied de page, vous devez créer un objet Document et un objet TextStamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la Page pour ajouter le texte dans le pied de page du PDF.
-
-Le fragment de code suivant vous montre comment ajouter du texte dans le pied de page d'un fichier PDF avec Java.
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // Ouvrir le document
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // Créer le pied de page
-        TextStamp textStamp = new TextStamp("Texte du pied de page");
-        // Définir les propriétés du tampon
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Ajouter le pied de page sur toutes les pages
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // Enregistrer le fichier PDF mis à jour
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## Ajout d'une Image dans l'En-tête d'un Fichier PDF
-
-Vous pouvez utiliser la classe [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) pour ajouter une image dans l'en-tête d'un fichier PDF. La classe Image Stamp fournit les propriétés nécessaires pour créer un tampon basé sur une image comme la taille de la police, le style de la police, et la couleur de la police, etc. Pour ajouter une image dans l'en-tête, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) de la Page pour ajouter l'image dans l'en-tête du PDF.
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// Ouvrir le document
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// Créer l'en-tête
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// Définir les propriétés du tampon
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// Ajouter l'en-tête sur toutes les pages
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// Enregistrer le fichier PDF mis à jour
-pdfDocument.save(_dataDir);
 }
 ```
 
+## 
+Ajouter des en-têtes et des pieds de page avec numérotation des pages
 
-Le code suivant vous montre comment ajouter une image dans l'en-tête d'un fichier PDF avec Java.
 
-## Ajout d'une image dans le pied de page d'un fichier PDF
 
-Vous pouvez utiliser la classe Image Stamp pour ajouter une image dans le pied de page d'un fichier PDF. La classe Image Stamp fournit les propriétés nécessaires pour créer un tampon basé sur une image comme la taille de police, le style de police et la couleur de police, etc. Pour ajouter une image dans le pied de page, vous devez créer un objet Document et un objet Image Stamp en utilisant les propriétés requises. Après cela, vous pouvez appeler la méthode AddStamp de la page pour ajouter l'image dans le pied de page du PDF.
+Utilisez cet exemple lorsque l'en-tête ou le pied de page doit afficher le numéro de page actuel et le nombre total de pages.
 
-{{% alert color="primary" %}}
 
-Vous devez définir la propriété BottomMargin de manière à ce qu'elle ajuste l'image dans la zone du pied de page de votre PDF. Vous devez également définir [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) sur `Center` et [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) sur `Bottom`.
+1. 
+Créez des objets [HeaderFooter] (https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) avec des espaces réservés pour la numérotation des pages.
 
-{{% /alert %}}
+1. 
+Configurez les marges pour les deux objets.
+1. Apply them to each page and save the updated PDF.
 
-Le code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec Java.
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // Ouvrir le document
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // Créer un pied de page
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Définir les propriétés du tampon
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Ajouter un pied de page sur toutes les pages
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // Enregistrer le fichier PDF mis à jour
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Ajout de différents en-têtes dans un fichier PDF
+## 
+Add HTML headers and footers
 
-Nous savons que nous pouvons ajouter un TextStamp dans la section En-tête/Pied de page du document en utilisant les propriétés TopMargin ou Bottom Margin, mais parfois nous pouvons avoir besoin d'ajouter plusieurs en-têtes/pieds de page dans un seul document PDF.
- **Aspose.PDF pour Java** explique comment faire cela.
 
-Afin de réaliser cette exigence, nous allons créer des objets [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) individuels (le nombre d'objets dépend du nombre d'en-têtes/pieds de page requis) et les ajouterons au document PDF. Nous pouvons également spécifier différentes informations de mise en forme pour chaque objet tampon individuel. Dans l'exemple suivant, nous avons créé un objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) et trois objets [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp), puis nous avons utilisé la méthode [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) de la page pour ajouter le texte dans la section d'en-tête du PDF. L'extrait de code suivant vous montre comment ajouter une image dans le pied de page d'un fichier PDF avec Aspose.PDF pour Java.
+
+Use this example when header and footer content should include inline HTML formatting.
+
+
+1. 
+Create [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objects and add [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) content.
+
+1. 
+Configure margins for placement.
+1. Attribuez l'en-tête et le pied de page à chaque page et enregistrez le document.
+
 
 ```java
-public static void AjouterDifferentsEntetesDansUnSeulFichierPDF() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // Ouvrir le document source
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // Créer trois tampons
-        TextStamp stamp1 = new TextStamp("En-tête 1");
-        TextStamp stamp2 = new TextStamp("En-tête 2");
-        TextStamp stamp3 = new TextStamp("En-tête 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Définir l'alignement du tampon (placer le tampon en haut de la page, centré horizontalement)
-        stamp1.setVerticalAlignment (VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Spécifier le style de police comme Gras
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // Définir la couleur de premier plan du texte comme rouge
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // Spécifier la taille de la police comme 14
-        stamp1.getTextState().setFontSize(14);
-
-        // Nous devons maintenant définir l'alignement vertical du 2ème objet tampon comme Haut
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // Définir l'alignement horizontal du tampon comme centré
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Définir le facteur de zoom pour l'objet tampon
-        stamp2.setZoom (10);
-
-        // Définir la mise en forme du 3ème objet tampon
-        // Spécifier l'information d'alignement vertical de l'objet tampon comme HAUT
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // Définir l'information d'alignement horizontal de l'objet tampon comme centré
-        stamp3.setHorizontalAlignment (HorizontalAlignment.Center);
-        // Définir l'angle de rotation pour l'objet tampon
-        stamp3.setRotateAngle(35);
-        // Définir le rose comme couleur de fond pour le tampon
-        stamp3.getTextState().setBackgroundColor (Color.getPink());
-        
-        // Changer l'information de la police pour le tampon en Verdana
-        stamp3.getTextState().setFont (FontRepository.findFont("Verdana"));
-        // Premier tampon ajouté sur la première page;
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // Deuxième tampon ajouté sur la deuxième page;
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // Troisième tampon ajouté sur la troisième page.
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // Enregistrer le fichier PDF mis à jour
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## 
+Ajouter des en-têtes et des pieds de page d'image
+
+
+
+Utilisez cet exemple lorsque l'en-tête et le pied de page doivent afficher une image sur chaque page.
+
+
+1. 
+Créez des objets [Image] (https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) et ajoutez-les aux conteneurs d'en-tête et de pied de page.
+
+1. 
+Configurez les marges et attribuez les conteneurs à chaque page.
+1. Enregistrez le PDF mis à jour.
+
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Ajouter des en-têtes et des pieds de page basés sur des tableaux
+
+
+
+Utilisez cet exemple lorsque le contenu de l’en-tête et du pied de page doit utiliser la disposition du tableau et le style du texte.
+
+
+1. 
+Créez les styles de texte et les objets de tableau requis.
+
+1. 
+Ajoutez les tables aux conteneurs [HeaderFooter] (https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
+1. Appliquez l'en-tête et le pied de page à chaque page et enregistrez le document.
+
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 
+Ajouter des en-têtes et pieds de page LaTeX
+
+
+
+Utilisez cet exemple lorsque l'en-tête et le pied de page doivent restituer le contenu TeX ou LaTeX.
+
+
+1. 
+Ouvrez le PDF source et déterminez le nombre total de pages.
+
+1. 
+Créez du contenu [TeXFragment] (https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) pour l'en-tête et le pied de page de chaque page.
+1. Attribuez le contenu et enregistrez le document.
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```

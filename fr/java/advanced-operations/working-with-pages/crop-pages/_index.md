@@ -1,69 +1,76 @@
 ---
-title: Rogner les pages PDF par programmation
-linktitle: Rogner les pages
+title: Recadrer des pages PDF en Java
+linktitle: Recadrer des pages PDF
 type: docs
-weight: 80
-url: /fr/java/crop-pages/
-description: Vous pouvez obtenir les propriétés de la page, telles que la largeur, la hauteur, la boîte de fond perdu, de rognage et de découpe à l'aide de Aspose.PDF pour Java.
-lastmod: "2021-06-05"
+weight: 70
+url: /java/crop-pages/
+description: Découvrez comment recadrer des pages PDF et ajuster les zones de recadrage, de découpage, de fond perdu et de support en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Recadrez les pages et ajustez les zones de page dans les fichiers PDF avec Java
+Abstract: Cet article explique comment recadrer des pages PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'attribution d'un nouveau rectangle de recadrage aux zones de recadrage, de rognage, d'illustration et de fond perdu, ainsi que le recadrage automatique d'une page en fonction du contenu de l'image détecté.
 ---
+Aspose.PDF pour Java vous permet de recadrer des pages soit par des coordonnées de boîte explicites, soit en fonction du contenu détecté.
 
-## Obtenir les propriétés de la page
 
-Chaque page dans un fichier PDF possède un certain nombre de propriétés, telles que la largeur, la hauteur, la boîte de fond perdu, de rognage et de découpe. Aspose.PDF pour Java vous permet d'accéder à ces propriétés.
+## 
+Recadrer une page en définissant des zones de page
 
-- **Boîte des médias** : La boîte des médias est la plus grande boîte de page. Elle correspond à la taille de la page (par exemple A4, A5, Lettre US, etc.) sélectionnée lorsque le document a été imprimé en PostScript ou PDF. En d'autres termes, la boîte des médias détermine la taille physique du support sur lequel le document PDF est affiché ou imprimé.
-- **Boîte de fond perdu** : Si le document a une fond perdu, le PDF aura également une boîte de fond perdu.
- Bleed est la quantité de couleur (ou d'œuvre) qui s'étend au-delà du bord d'une page. Il est utilisé pour s'assurer que lorsque le document est imprimé et coupé à la taille ("rogné"), l'encre ira jusqu'au bord de la page. Même si la page est mal rognée - coupée légèrement à côté des marques de rognage - aucun bord blanc n'apparaîtra sur la page.
-- **Trim box**: La boîte de rognage indique la taille finale d'un document après impression et rognage.
-- **Art box**: La boîte d'art est la boîte dessinée autour du contenu réel des pages de vos documents. Cette boîte de page est utilisée lors de l'importation de documents PDF dans d'autres applications.
-- **Crop box**: La boîte de recadrage est la taille de "page" à laquelle votre document PDF est affiché dans Adobe Acrobat. En vue normale, seuls les contenus de la boîte de recadrage sont affichés dans Adobe Acrobat. Pour des descriptions détaillées de ces propriétés, lisez la spécification Adobe.Pdf, en particulier 10.10.1 Page Boundaries.
-- **Page.Rect**: l'intersection (rectangle communément visible) du MediaBox et du DropBox. La figure ci-dessous illustre ces propriétés.  
-Pour plus de détails, veuillez visiter [cette page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
 
-L'extrait ci-dessous montre comment recadrer la page :
+
+Utilisez cet exemple lorsque vous devez appliquer la même zone de recadrage aux zones de la page principale.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Créez le nouveau recadrage [Rectangle] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Appliquez le rectangle aux zones de page liées au recadrage et enregistrez le document.
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleCropPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    // Ouvrir le document
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    public static void CropPagesPDF() {
-        Document pdfDocument = new Document("crop_page.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-
-        System.out.println(page.getCropBox());
-        System.out.println(page.getTrimBox());
-        System.out.println(page.getArtBox());
-        System.out.println(page.getBleedBox());
-        System.out.println(page.getMediaBox());
-
-        // Créer un nouveau rectangle Box
-        Rectangle newBox = new Rectangle(200, 220, 2170, 1520);
-
-        page.setCropBox(newBox);
-        page.setTrimBox(newBox);
-        page.setArtBox(newBox);
-        page.setBleedBox(newBox);
-
-        // Enregistrer le document de sortie
-        pdfDocument.save(_dataDir + "crop_page_modified.pdf");
+public static void cropPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle newBox = new Rectangle(200, 220, 2170, 1520, true);
+        document.getPages().get_Item(1).setCropBox(newBox);
+        document.getPages().get_Item(1).setTrimBox(newBox);
+        document.getPages().get_Item(1).setArtBox(newBox);
+        document.getPages().get_Item(1).setBleedBox(newBox);
+        document.save(outputFile.toString());
     }
 }
 ```
 
-In this example we used a sample file [here](crop_page.pdf). Initialement, notre page ressemble à celle montrée sur la Figure 1.
-![Figure 1. Page rognée](crop_page.png)
+## 
+Recadrer une page en fonction du contenu détecté
 
-Après la modification, la page ressemblera à la Figure 2.
-![Figure 2. Page rognée](crop_page2.png)
+
+
+Utilisez cet exemple lorsque la zone de recadrage doit être dérivée de la première image détectée sur la page.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Utilisez [ImagePlacementAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) pour détecter les emplacements d'images.
+1. Set the crop box to the image rectangle if one is found, then save the document.
+
+```java
+public static void cropPageByContent(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        if (absorber.getImagePlacements().size() > 0) {
+            document.getPages().get_Item(1).setCropBox(absorber.getImagePlacements().get_Item(1).getRectangle());
+        } else {
+            System.out.println("No images found on the first page");
+        }
+        document.save(outputFile.toString());
+    }
+}
+```

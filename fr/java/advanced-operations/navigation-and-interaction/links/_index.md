@@ -1,18 +1,26 @@
 ---
-title: Travailler avec des liens dans un PDF par programmation
+title: Travailler avec des liens PDF en Java
 linktitle: Liens
 type: docs
 weight: 10
-url: /fr/java/links/
-description: Ce guide explique comment ajouter un lien de page interne dans un PDF ou insérer un hyperlien externe vers un site Web dans un PDF en langage Java.
-lastmod: "2021-06-05"
+url: /java/links/
+description: Découvrez comment créer, extraire et mettre à jour des liens internes et externes dans des documents PDF à l'aide de Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Créer, extraire et mettre à jour des liens PDF en Java
+Abstract: Cet article explique comment gérer les annotations de liens dans les documents PDF à l'aide d'Aspose.PDF pour Java. Découvrez comment créer des liens internes, distants, de lancement et URI, extraire des annotations de lien et des hyperliens et mettre à jour l'apparence des liens ou les destinations Web.
 ---
+Les annotations de lien peuvent connecter les utilisateurs aux pages du même document, aux fichiers externes, aux ressources Web ou aux cibles de lancement d'applications.
 
-Les liens vous permettent de sauter vers d'autres emplacements dans le même document, vers d'autres documents électroniques y compris les pièces jointes, ou vers des sites Web. Vous pouvez utiliser des liens pour initier des actions ou pour vous assurer que votre lecteur a un accès immédiat aux informations connexes.
 
-- [Créer des liens](/pdf/fr/java/create-links/) - apprenez simplement à créer des liens dans votre fichier PDF en utilisant Java.
-- [Mettre à jour les liens](/pdf/fr/java/update-links) - essayez de définir la cible vers un PDF, essayez de définir la destination du lien vers une adresse Web, essayez de définir la cible du lien vers un autre fichier PDF, mettez à jour la couleur du texte du lien.
-- [Extraire des liens](/pdf/fr/java/extract-links) - extrayez les liens du fichier PDF en utilisant la classe AnnotationSelector.
+- 
+[Créer des liens PDF] (/pdf/java/create-links/)
+
+- 
+[Extraire les liens PDF] (/pdf/java/extract-links/)
+
+- 
+[Mettre à jour les liens PDF] (/pdf/java/update-links/)

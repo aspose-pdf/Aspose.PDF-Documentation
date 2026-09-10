@@ -1,20 +1,29 @@
 ---
-title: Stamping
-linktitle: Stamping
+title: Tamponner les pages PDF en Java
+linktitle: Estampage
 type: docs
 weight: 120
-url: /fr/java/stamping/
-description: Cette section décrit comment ajouter des tampons d'image et des tampons de texte à une page PDF.
-lastmod: "2021-06-05"
+url: /java/stamping/
+description: Découvrez comment ajouter des numéros de page, des tampons de page, des tampons d'image et des tampons de texte aux pages PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Ajoutez des tampons d'image, de numéro de page, de page et de texte aux fichiers PDF avec Java
+Abstract: Cet article explique comment ajouter des tampons aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre les tampons d'image, les images d'arrière-plan dans des boîtes flottantes, les tampons de page d'un autre PDF, les tampons de numéro de page, la numérotation en chiffres romains et les tampons de texte.
 ---
+Aspose.PDF pour Java prend en charge plusieurs modèles d'estampage selon que le contenu est une image, un texte, une page PDF ou une superposition de numéros de page.
 
-Un tampon dans un document PDF est analogue à l'application d'un tampon en caoutchouc sur un document papier. Le tampon dans le fichier PDF donne des informations supplémentaires pour le fichier PDF, telles que la protection du fichier PDF pour être utilisé par d'autres et pour confirmer la sécurité du contenu du fichier PDF. **Aspose.PDF for Java** permet d'ajouter un tampon d'image ou de texte dans votre document PDF.
 
-Consultez les sections suivantes pour apprendre comment ajouter un tampon avec Java :
+- 
+[Ajouter des numéros de page] (/java/add-page-number/)
 
-- [Ajouter des tampons d'image dans une page PDF](/pdf/fr/java/image-stamps-in-pdf-page/) - ajouter un tampon d'image, contrôler la qualité de l'image, tampon d'image en tant qu'arrière-plan de votre fichier PDF.
-- [Ajouter des tampons de texte dans le fichier PDF](/pdf/fr/java/text-stamps-in-the-pdf-file/) - ajouter un tampon de texte, définir l'alignement pour l'objet TextStamp, remplir le texte de contours comme tampon dans le PDF.
-- [Ajouter des tampons de page dans les PDF](/pdf/fr/java/page-stamps-in-the-pdf-file/) - ajouter un tampon complexe basé sur une page d'un autre PDF.
+- 
+[Ajouter des tampons de page] (/java/page-stamps-in-the-pdf-file/)
+
+- 
+[Ajouter des tampons d'image] (/java/image-stamps-in-pdf-page/)
+
+- 
+[Ajouter des tampons de texte] (/java/text-stamps-in-the-pdf-file/)

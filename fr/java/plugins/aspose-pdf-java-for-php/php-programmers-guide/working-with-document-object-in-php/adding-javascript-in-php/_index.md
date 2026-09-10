@@ -1,41 +1,50 @@
 ---
-title: Ajouter JavaScript dans PHP
+title: Ajout de JavaScript en PHP
+linktitle: Ajout de JavaScript en PHP
 type: docs
 weight: 10
-url: /fr/java/adding-javascript-in-php/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-php/
+description: Découvrez comment ajouter du JavaScript aux fichiers PDF à l'aide de PHP et Aspose.PDF pour améliorer l'interactivité des documents.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Ajout de JavaScript
 
-## Aspose.PDF - Ajouter JavaScript
 
-Pour ajouter JavaScript dans un document Pdf en utilisant **Aspose.PDF Java pour PHP**, il suffit d'invoquer la classe **AddJavaScript**.
+
+Pour ajouter du JavaScript dans un document PDF à l'aide de **Aspose.PDF Java pour PHP**, invoquez simplement la classe **AddJavaScript**.
 
 Code PHP
 
+
 ```php
-# Ouvrir un document pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Ajouter JavaScript au niveau du document
-# Instancier JavascriptAction avec l'instruction JavaScript souhaitée
+# Adding JavaScript at Document Level
+# Instantiate JavascriptAction with desried JavaScript statement
 $javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# Assigner l'objet JavascriptAction à l'action souhaitée du Document
+# Assign JavascriptAction object to desired action of Document
 $doc->setOpenAction($javaScript);
 
-# Ajouter JavaScript au niveau de la page
-$doc->getPages()->get_Item(2)->getActions()->setOnOpen(new JavascriptAction("app.alert('la page 2 est ouverte')"));
-$doc->getPages()->get_Item(2)->getActions()->setOnClose(new JavascriptAction("app.alert('la page 2 est fermée')"));
+# Adding JavaScript at Page Level
+$doc->getPages()->get_Item(2)->getActions()->setOnOpen(new JavascriptAction("app.alert('page 2 is opened')"));
+$doc->getPages()->get_Item(2)->getActions()->setOnClose(new JavascriptAction("app.alert('page 2 is closed')"));
 
-# Enregistrer le document PDF
+# Save PDF Document
 $doc->save($dataDir . "JavaScript-Added.pdf");
 
-print "JavaScript ajouté avec succès, veuillez vérifier le fichier de sortie.";
+print "Added JavaScript Successfully, please check the output file.";
 ```
 
 
-**Télécharger le code en cours d'exécution**
+**Télécharger le code d'exécution**
 
-Téléchargez **Ajouter JavaScript (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddJavascript.php)
+
+Téléchargez**Ajout de JavaScript (Aspose.PDF)**À partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddJavascript.php)

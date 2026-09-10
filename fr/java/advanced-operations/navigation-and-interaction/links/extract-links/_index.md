@@ -1,44 +1,78 @@
 ---
-title: Extraire les Liens du Fichier PDF
-linktitle: Extraire les Liens
+title: Extraire des liens PDF en Java
+linktitle: Extraire les liens
 type: docs
 weight: 30
-url: /fr/java/extract-links/
-description: Extraire les liens d'un PDF avec Java. Ce sujet vous explique comment extraire des liens en utilisant la classe AnnotationSelector.
-lastmod: "2021-06-05"
+url: /java/extract-links/
+description: Découvrez comment extraire des annotations de liens et des hyperliens à partir de documents PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extraire les annotations de lien et les cibles URI des fichiers PDF avec Java
+Abstract: Cet article explique comment extraire des annotations de lien à partir de documents PDF à l'aide d'Aspose.PDF pour Java. Il montre comment énumérer les annotations de lien sur une page, lire leur index et leur rectangle de page et extraire les cibles URI des instances GoToURIAction.
 ---
+Vous pouvez inspecter les liens PDF en parcourant les annotations de page et en filtrant `AnnotationType.Link`.
 
-## Extraire les Liens du Fichier PDF
 
-Les liens sont représentés sous forme d'annotations dans un fichier PDF, donc pour extraire les liens, extrayez tous les objets [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
+## 
+Extraire les annotations du lien
 
-1. Créez un objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Obtenez la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) à partir de laquelle vous souhaitez extraire les liens.
-1. Utilisez la classe [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) pour extraire tous les objets [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) de la page spécifiée.
 
-1. Passez l'objet [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) à la méthode Accept de l'objet Page.
-1. Obtenez toutes les annotations de lien sélectionnées dans un objet IList en utilisant la méthode [getSelected](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector#getSelected--) de l'objet [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector).
 
-Le code suivant vous montre comment extraire des liens d'un fichier PDF.
+Utilisez cet exemple lorsque vous avez besoin des informations d'emplacement et de page pour les annotations de lien sur une page.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Parcourez les annotations de page et filtrez les annotations de lien.
+1. Lisez l'index de la page et le rectangle pour chaque lien correspondant.
+
 
 ```java
-    public static void ExtractLinksFromThePDFFile() {        
-        // Charger le fichier PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-        page.accept(selector);
-        java.util.List<Annotation> list = selector.getSelected();
-        for(Annotation annot : list)
-        {
-            System.out.println("Annotation localisée : " + annot.getRect());
+public static void extractLinkAnnotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                System.out.println("Page: " + linkAnnotation.getPageIndex()
+                        + ", location: " + linkAnnotation.getRect());
+            }
         }
-                
-        // Enregistrer le document avec le lien mis à jour
-        //document.save(_dataDir + "ExtractLinks_out.pdf");
     }
+}
+```
+
+## 
+Extraire les destinations des hyperliens
+
+
+
+Utilisez cet exemple lorsque vous devez lire les URI cibles à partir des annotations de liens Web.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Recherchez les objets [LinkAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dont l'action est une [GoToURIAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Imprimez l'index de la page et la cible URI pour chaque lien hypertexte.
+
+```java
+public static void extractHyperlinks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    System.out.println("Page " + linkAnnotation.getPageIndex() + ", URI:" + action.getURI());
+                }
+            }
+        }
+    }
+}
 ```

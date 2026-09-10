@@ -1,104 +1,93 @@
 ---
-title: Ajouter des Pages dans un PDF
-linktitle: Ajouter des Pages
+title: Ajouter des pages PDF en Java
+linktitle: Ajout de pages
 type: docs
 weight: 10
-url: /fr/java/add-pages/
-description: Cet article explique comment insérer (ajouter) une page à l'emplacement souhaité dans un fichier PDF. Apprenez comment déplacer, supprimer (effacer) des pages d'un fichier PDF en utilisant la bibliothèque Java.
-lastmod: "2021-06-05"
+url: /java/add-pages/
+description: Découvrez comment ajouter ou insérer des pages dans des documents PDF en Java.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Ajouter ou insérer des pages PDF avec Java
+Abstract: Cet article explique comment ajouter des pages aux fichiers PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'insertion d'une page vierge à un emplacement spécifique, l'ajout d'une page à la fin d'un document et l'importation d'une page à partir d'un autre PDF.
 ---
+Aspose.PDF pour Java vous permet d'insérer des pages vierges ou d'importer des pages à partir d'un autre document.
 
-## Ajouter ou Insérer une Page dans un Fichier PDF
 
-Aspose.PDF pour Java vous permet d'insérer une page dans un document PDF à n'importe quel emplacement dans le fichier ainsi que d'ajouter des pages à la fin d'un fichier PDF. Vous devez passer l'emplacement où vous souhaitez insérer la page vierge à la méthode d'insertion. Cette section montre comment ajouter des pages à un PDF avec Aspose.PDF pour Java.
+## 
+Insérer une page vide à un emplacement spécifique
 
-### Insérer une Page Vide dans un Fichier PDF à l'Emplacement Souhaité
 
-Le code suivant montre comment insérer une page vide dans un fichier PDF :
 
-1. Créez un objet de classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) avec le fichier PDF d'entrée.
+Utilisez cet exemple lorsque vous devez ajouter une page vierge au milieu d'un PDF existant.
 
-1. Appelez la méthode Insert de la collection [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) avec l'index spécifié.
-1. Enregistrez le PDF de sortie en utilisant la méthode Save.
 
-Le snippet de code suivant vous montre comment insérer une page dans un fichier PDF.
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Insérez une nouvelle page dans la position cible dans la collection de pages.
+1. Enregistrez le document mis à jour.
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleAddPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation() {
-        Document document = new Document();
-
-        // Ajouter une page
-        document.getPages().add();
-
-        // Insérer une page vide dans un PDF
+public static void insertEmptyPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         document.getPages().insert(2);
-
-        // Enregistrer le PDF mis à jour
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
-Dans l'exemple ci-dessus, nous avons ajouté une page vide avec des paramètres par défaut. Si vous devez faire en sorte que la taille de la page soit la même qu'une autre page du document, vous devez ajouter quelques lignes de code :
+## 
+Ajouter une page vide à la fin
+
+
+
+Utilisez cet exemple lorsque vous devez étendre le document avec une nouvelle dernière page vierge.
+
+
+1. 
+Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Ajoutez une nouvelle page à la fin de la collection de pages.
+1. Enregistrez le PDF modifié.
+
 
 ```java
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation01() {
-        Document document = new Document();
-
-        // Ajouter une page
-        Page page1 = document.getPages().add();
-
-        // Insérer une page vide dans un PDF
-        Page page2 = document.getPages().insert(2);
-        ;
-        // copier les paramètres de la page depuis la page 1
-        page2.setArtBox(page1.getArtBox());
-        page2.setBleedBox(page1.getBleedBox());
-        page2.setCropBox(page1.getCropBox());
-        page2.setMediaBox(page1.getMediaBox());
-        page2.setTrimBox(page1.getTrimBox());
-
-        // Enregistrer le PDF mis à jour
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().add();
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 
+Ajouter une page d'un autre document
 
-### Ajouter une Page Vide à la Fin d'un Fichier PDF
 
-Parfois, vous souhaitez vous assurer qu'un document se termine par une page vide. Ce sujet explique comment insérer une page vide à la fin du document PDF.
 
-Pour insérer une page vide à la fin d'un fichier PDF :
+Utilisez cet exemple lorsque vous souhaitez importer une page d'un PDF dans un autre PDF.
 
-1. Créez un objet de classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) avec le fichier PDF d'entrée.
-1. Appelez la méthode Add de la collection [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection), sans aucun paramètre.
-1. Enregistrez le PDF de sortie en utilisant la méthode Save.
 
-Le fragment de code suivant vous montre comment insérer une page vide à la fin d'un fichier PDF.
+1. 
+Créez la destination [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez le document source.
+
+1. 
+Ajoutez tout contenu de destination requis et importez la page cible à partir du PDF source.
+1. Enregistrez le document résultant.
 
 ```java
-public static void AddAnEmptyPageAtTheEndOfAPDFFile() {
-
-        Document document = new Document();
-        // Ajouter une page
-        document.getPages().add();
-
-        // Insérer une page vide à la fin d'un fichier PDF
-        document.getPages().add();
-
-        // Enregistrer le PDF mis à jour
-        document.save(_dataDir + "InsertEmptyPageAtEnd_out.pdf");
+public static void addPageFromAnotherDocument(Path inputFile, Path outputFile) {
+    try (Document document = new Document();
+         Document anotherDocument = new Document(inputFile.toString())) {
+        document.getPages().add().getParagraphs().add(new TextFragment("This is first page!"));
+        document.getPages().add(anotherDocument.getPages().get_Item(1));
+        document.save(outputFile.toString());
     }
-
 }
 ```
