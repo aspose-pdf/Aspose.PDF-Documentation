@@ -1,6 +1,6 @@
 ---
-title: Создайте N-Up PDF документ
-linktitle: Создайте N-Up PDF документ
+title: Создание N-Up PDF документа
+linktitle: Создание N-Up PDF документа
 type: docs
 weight: 10
 url: /ru/java/create-n-up-pdf-document/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Создать N-Up PDF макет из существующего документа на Java
 Abstract: Узнайте, как создать N-Up PDF документ с помощью Aspose.PDF for Java. В примере на Java используется PdfFileEditor для размещения четырёх исходных страниц на каждом листе вывода, а также показан вариант с возвращаемым булевым значением для проверки ошибок.
 ---
-## Создайте N-Up PDF документ
+## Создание N-Up PDF документа
 
 В примере на Java используется `PdfFileEditor.makeNUp` создать макет 2x2 из существующего PDF.
 

@@ -1,6 +1,6 @@
 ---
-title: Конвертируйте PDF в рабочую книгу Excel в Python
-linktitle: Конвертируйте PDF в рабочую книгу Excel в Python
+title: Конвертация PDF в рабочую книгу Excel в Python
+linktitle: Конвертация PDF в рабочую книгу Excel в Python
 type: docs
 weight: 20
 url: /ru/java/convert-pdf-to-excel-workbook-in-python/

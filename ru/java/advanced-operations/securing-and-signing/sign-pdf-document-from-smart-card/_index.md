@@ -1,5 +1,5 @@
 ---
-title: Подписывайте PDF-документы с помощью смарт-карты в Java
+title: Подписание PDF-документов с помощью смарт-карты в Java
 linktitle: Подписание PDF с помощью смарт-карты
 type: docs
 weight: 30
@@ -15,7 +15,7 @@ Abstract: Эта страница описывает текущий масшта
 ---
 Текущий репозиторий Java не включает отдельный пример подписания смарт-картой, основанный на исходных данных, под `facades/pdffilesignature`, но следующий рабочий процесс показывает типичный шаблон API для подписи PDF с сертификатом, выбранным из локального хранилища сертификатов.
 
-## Подпишите PDF‑документ со смарт‑карты
+## Подписание PDF‑документа со смарт‑карты
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade и привязать исходный PDF‑документ.

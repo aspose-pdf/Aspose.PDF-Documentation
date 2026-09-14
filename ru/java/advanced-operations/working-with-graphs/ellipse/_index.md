@@ -1,6 +1,6 @@
 ---
-title: Добавьте эллиптические фигуры в PDF на Java
-linktitle: Добавьте эллипс
+title: Добавление эллиптических фигур в PDF на Java
+linktitle: Добавление эллипса
 type: docs
 weight: 60
 url: /ru/java/add-ellipse/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Рисуйте эллиптические фигуры в PDF файлах с помощью Java
 Abstract: В этой статье показано, как добавить эллиптические фигуры в PDF‑документы с использованием Aspose.PDF for Java. Рассматриваются контурные эллипсы, заполненные эллипсы и размещение текстовых фрагментов внутри эллиптических фигур.
 ---
-## Добавьте контуры эллипсов
+## Добавление контуров эллипсов
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
@@ -43,11 +43,11 @@ public static void addEllipse(Path outputFile) {
 
 Полный пример добавляет два разных контурных эллипса к одному и тому же графу.
 
-## Добавьте заполненные эллипсы
+## Добавление заполненных эллипсов
 
 `createEllipseFilled` заполняет два эллипса `Color.getGreenYellow()` и `Color.getDarkRed()`.
 
-## Добавьте текст внутри эллипсов
+## Добавление текста внутри эллипсов
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

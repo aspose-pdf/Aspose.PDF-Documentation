@@ -1,13 +1,13 @@
 ---
-title: Вставьте пустую страницу в PDF‑файл на Ruby
-linktitle: Вставьте пустую страницу в PDF‑файл на Ruby
+title: Вставка пустой страницы в PDF‑файл на Ruby
+linktitle: Вставка пустой страницы в PDF‑файл на Ruby
 type: docs
 weight: 70
 url: /ru/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
 description: Узнайте, как вставить пустую страницу в определённое место PDF‑документа с помощью Ruby и Aspose.PDF для точного управления документами.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Вставьте пустую страницу
+## Aspose.PDF - Вставка пустой страницы
 
 Чтобы вставить пустую страницу в PDF‑документ, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **InsertEmptyPage**.
 
@@ -33,7 +33,7 @@ pdf.save(data_dir+ "output.pdf")
 puts "Empty page added successfully!"
 ```
 
-## Скачайте работающий код
+## Загрузка работающего кода
 
 Скачать **Insert an Empty Page (Aspose.PDF)** из любого из перечисленных ниже сайтов для совместной разработки:
 

@@ -1,6 +1,6 @@
 ---
-title: Заполните текстовые поля
-linktitle: Заполните текстовые поля
+title: Заполнение текстовых полей
+linktitle: Заполнение текстовых полей
 type: docs
 weight: 10
 url: /ru/java/fill-text-fields/

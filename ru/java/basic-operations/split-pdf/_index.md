@@ -1,6 +1,6 @@
 ---
-title: Разделите PDF-файлы на Java
-linktitle: Разделите PDF-файлы
+title: Разделение PDF-файлов на Java
+linktitle: Разделение PDF-файлов
 type: docs
 weight: 60
 url: /ru/java/split-pdf/
@@ -32,7 +32,7 @@ Abstract: В этой статье показано, как разделить P
 1. Сохраните новый [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с уникальным именем файла.
 1. Закройте оба [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты после завершения обработки.
 
-## Разделите PDF на файлы с одной страницей
+## Разделение PDF на файлы с одной страницей
 
 Следующий пример Java основан на `SplitDocumentExamples.java` и сохраняет страницы как `Page_1.pdf`, `Page_2.pdf`, и так далее.
 

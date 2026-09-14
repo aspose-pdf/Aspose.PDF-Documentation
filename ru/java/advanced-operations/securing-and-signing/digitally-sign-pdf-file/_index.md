@@ -1,6 +1,6 @@
 ---
-title: Добавьте цифровую подпись или подпишите PDF в Java
-linktitle: Подпишите PDF цифровой подписью
+title: Добавление цифровой подписи или подписание PDF в Java
+linktitle: Подписание PDF цифрового подписью
 type: docs
 weight: 10
 url: /ru/java/digitally-sign-pdf-file/
@@ -15,7 +15,7 @@ Abstract: Это руководство объясняет, как цифров�
 ---
 Aspose.PDF for Java поддерживает несколько потоков подписи через `PdfFileSignature`.
 
-## Подпишите PDF с объектом сертификата
+## Подписание PDF с объектом сертификата
 
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) фасад и привязать исходный PDF документ.
 1. Создайте [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) объект подписи и настроить параметры подписи.
@@ -37,7 +37,7 @@ public static void signPdfWithCertificateObject(Path inputFile, Path certificate
 
 Этот подход создает `PKCS7` сначала объект подписи, а затем применяет его к странице 1.
 
-## Подпишите PDF с базовыми параметрами сертификата
+## Подписание PDF с базовыми параметрами сертификата
 
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) фасад и привязать исходный PDF документ.
 1. Настройте параметры сертификата, требуемые примером подписи.
@@ -58,7 +58,7 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 }
 ```
 
-## Сертифицируйте PDF с помощью DocMDP
+## Сертификация PDF с помощью DocMDP
 
 Используйте подпись обнаружения и предотвращения изменения документа, когда требуются ограничения уровня сертификации:
 

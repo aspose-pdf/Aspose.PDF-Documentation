@@ -1,6 +1,6 @@
 ---
-title: Удалите страницы из PDF
-linktitle: Удалите страницы из PDF
+title: Удаление страниц из PDF
+linktitle: Удаление страниц из PDF
 type: docs
 weight: 20
 url: /ru/java/delete-pages-from-pdf/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Удалить определённые страницы из PDF‑документа с помощью Java
 Abstract: Узнайте, как удалить страницы из PDF с помощью Aspose.PDF for Java. Пример на Java использует PdfFileEditor для удаления заданного набора номеров страниц и сохранения оставшихся страниц в новый документ.
 ---
-## Удалите страницы из PDF
+## Удаление страниц из PDF
 
 Пример на Java удаляет страницы 2 и 4 из исходного документа.
 

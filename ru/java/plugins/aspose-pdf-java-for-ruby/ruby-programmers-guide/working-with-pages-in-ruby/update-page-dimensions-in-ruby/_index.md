@@ -1,6 +1,6 @@
 ---
-title: Обновите размеры страницы в Ruby
-linktitle: Обновите размеры страницы в Ruby
+title: Обновление размеров страницы в Ruby
+linktitle: Обновление размеров страницы в Ruby
 type: docs
 weight: 90
 url: /ru/java/update-page-dimensions-in-ruby/
@@ -43,7 +43,7 @@ pdf.save(data_dir + "output.pdf")
 puts "Dimensions updated successfully!"
 ```
 
-## Скачайте работающий код
+## Загрузка работающего кода
 
 Скачать\u0412\u00A0**Update Page Dimensions (Aspose.PDF)**\u0412\u00A0из\u0412\u00A0любого из нижеупомянутых социальных кодирующих сайтов:
 

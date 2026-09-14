@@ -1,6 +1,6 @@
 ---
-title: Преобразуйте PDF/A и PDF/UA в PDF на Java
-linktitle: Преобразуйте PDF/A и PDF/UA в PDF
+title: Преобразование PDF/A и PDF/UA в PDF на Java
+linktitle: Преобразование PDF/A и PDF/UA в PDF
 type: docs
 weight: 120
 url: /ru/java/convert-pdf_x-to-pdf/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как удалить
 ---
 Aspose.PDF for Java может преобразовать варианты PDF, соответствующие стандартам, обратно в обычный PDF‑документ.
 
-## Преобразуйте PDF/A в стандартный PDF
+## Преобразование PDF/A в стандартный PDF
 
 Используйте этот пример, когда архивный документ PDF/A необходимо понизить до стандартного PDF.
 
@@ -32,7 +32,7 @@ public static void convertPdfAToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF/UA в стандартный PDF
+## Преобразование PDF/UA в стандартный PDF
 
 Используйте этот пример, когда доступный документ PDF/UA должен быть преобразован обратно в стандартный PDF.
 

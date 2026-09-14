@@ -1,6 +1,6 @@
 ---
-title: Создайте поле CheckBox
-linktitle: Создайте поле CheckBox
+title: Создание поля CheckBox
+linktitle: Создание поля CheckBox
 type: docs
 weight: 20
 url: /ru/java/create-checkbox-field/
@@ -12,7 +12,7 @@ Abstract: В этой статье показано, как привязать �
 ---
 Использовать `FormEditorExamples.createCheckBoxField(...)` добавить поле чекбокса в PDF форму.
 
-## Создайте поле с флажком
+## Создание поля с флажком
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
 2. Добавьте поле с флажком `FieldType.CheckBox`, название поля, заголовок, страница и прямоугольник.

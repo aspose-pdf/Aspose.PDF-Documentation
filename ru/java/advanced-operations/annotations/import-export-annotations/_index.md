@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Переносите аннотации PDF между документами в Java.
 Abstract: В этой статье объясняется, как копировать аннотации из исходного PDF и экспортировать их в новый PDF‑документ с помощью Aspose.PDF for Java. Рабочий процесс загружает исходный файл, создаёт документ назначения, добавляет страницу, копирует аннотации с первой исходной страницы и сохраняет результат.
 ---
-## Копируйте аннотации из одного PDF в другой
+## Копирование аннотаций из одного PDF в другой
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в пункт назначения [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).

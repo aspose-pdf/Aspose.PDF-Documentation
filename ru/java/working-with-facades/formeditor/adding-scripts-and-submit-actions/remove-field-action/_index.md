@@ -1,6 +1,6 @@
 ---
-title: Удалите действие поля
-linktitle: Удалите действие поля
+title: Удаление действия поля
+linktitle: Удаление действия поля
 type: docs
 weight: 50
 url: /ru/java/remove-field-action/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Удалить действие поля PDF-формы в Java
 Abstract: В этой статье показано, как привязать существующий PDF, удалить действие, связанное с конкретным полем, и сохранить обновлённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
-## Удалите действие поля
+## Удаление действия поля
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
 2. Вызовите `removeFieldAction(...)` для целевого поля.

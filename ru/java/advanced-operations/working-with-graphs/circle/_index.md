@@ -1,6 +1,6 @@
 ---
-title: Добавьте круговые фигуры в PDF на Java
-linktitle: Добавьте круг
+title: Добавление круговых фигур в PDF на Java
+linktitle: Добавление круга
 type: docs
 weight: 20
 url: /ru/java/add-circle/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Рисовать круговые формы в PDF‑файлах с помощью Java
 Abstract: В этой статье показано, как добавить круговые формы в PDF‑документы с использованием Aspose.PDF for Java. Описывается рисование контуров кругов, заполнение кругов цветом и размещение текста внутри круговой формы.
 ---
-## Добавьте контур круга
+## Добавление контура круга
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
@@ -40,7 +40,7 @@ public static void addCircle(Path outputFile) {
 }
 ```
 
-## Добавьте заполненный круг с текстом
+## Добавление заполненного круга с текстом
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

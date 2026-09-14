@@ -1,6 +1,6 @@
 ---
-title: Создайте PDF-брошюру
-linktitle: Создайте PDF-брошюру
+title: Создание PDF-брошюры
+linktitle: Создание PDF-брошюры
 type: docs
 weight: 20
 url: /ru/java/create-pdf-booklet/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Создать вывод в виде брошюры из PDF-документа на Java.
 Abstract: Узнайте, как создать PDF-брошюру с помощью Aspose.PDF for Java. Пример на Java использует PdfFileEditor для переупорядочивания страниц для печати брошюры и также включает вариант, возвращающий булево значение, для простой проверки успеха.
 ---
-## Создайте PDF-брошюру
+## Создание PDF-брошюры
 
 Использовать `PdfFileEditor.makeBooklet` переставить страницы существующего PDF в порядок буклета.
 

@@ -1,6 +1,6 @@
 ---
-title: Добавьте линейные фигуры в PDF на Java
-linktitle: Добавьте линию
+title: Добавление линейных фигур в PDF на Java
+linktitle: Добавление линии
 type: docs
 weight: 40
 url: /ru/java/add-line/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Рисовать линейные фигуры в PDF‑файлах с помощью Java
 Abstract: В этой статье показано, как добавить линейные фигуры в PDF‑документы с использованием Aspose.PDF for Java. Описывается создание линий из массивов координат, применение пунктирного стиля и цвета, а также рисование линий по всей площади страницы.
 ---
-## Добавьте пунктирную линию
+## Добавление пунктирной линии
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
@@ -39,11 +39,11 @@ public static void addLine(Path outputFile) {
 }
 ```
 
-## Добавьте цветную пунктирную или штриховую линию
+## Добавление цветной пунктирной или штриховой линии
 
 `addDottedDashedLine` использует те же координаты и настройки пунктиров, но также применяет `Color.getRed()`.
 
-## Рисуйте линии по всей странице
+## Рисование линий по всей странице
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

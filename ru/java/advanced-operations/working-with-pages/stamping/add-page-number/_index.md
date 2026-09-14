@@ -1,6 +1,6 @@
 ---
-title: Добавьте номера страниц в PDF на Java
-linktitle: Добавьте номер страницы
+title: Добавление номеров страниц в PDF на Java
+linktitle: Добавление номера страницы
 type: docs
 weight: 30
 url: /ru/java/add-page-number/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Добавьте штампы с номерами страниц в PDF‑файлы с помощью Java
 Abstract: В этой статье объясняется, как добавить штампы с номерами страниц, используя Aspose.PDF for Java. Описывается стандартная нумерация страниц с пользовательским оформлением шрифта и нумерация римскими цифрами с настраиваемым начальным номером.
 ---
-## Добавьте штамп с номером страницы
+## Добавление штампа с номером страницы
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) объект.

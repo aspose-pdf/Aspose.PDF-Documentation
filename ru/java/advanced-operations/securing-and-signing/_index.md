@@ -1,5 +1,5 @@
 ---
-title: Защитите и подпишите PDF‑файлы в Java
+title: Защита и подписание PDF‑файлов в Java
 linktitle: Защита и подпись в PDF
 type: docs
 weight: 210

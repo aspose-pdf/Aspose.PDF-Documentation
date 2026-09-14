@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как работат
 ---
 XFA-формы могут быть преобразованы в стандартные AcroForm, чтобы их можно было обрабатывать с помощью обычных API форм PDF.
 
-## Преобразуйте динамическую форму XFA в AcroForm
+## Преобразование динамической формы XFA в AcroForm
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к документу [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) и установите необходимые [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) свойства.
@@ -30,7 +30,7 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 }
 ```
 
-## Преобразуйте форму XFA с `ignoreNeedsRendering`
+## Преобразование формы XFA с `ignoreNeedsRendering`
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к документу [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) и установите необходимые `ignoreNeedsRendering` и [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) свойства.

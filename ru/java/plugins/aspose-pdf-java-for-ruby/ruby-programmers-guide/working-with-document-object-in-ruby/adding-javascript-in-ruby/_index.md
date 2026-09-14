@@ -1,6 +1,6 @@
 ---
-title: Добавьте JavaScript в Ruby
-linktitle: Добавьте JavaScript в Ruby
+title: Добавление JavaScript в Ruby
+linktitle: Добавление JavaScript в Ruby
 type: docs
 weight: 10
 url: /ru/java/adding-javascript-in-ruby/
@@ -45,7 +45,7 @@ doc.save(data_dir + "JavaScript-Added.pdf")
 puts "Added JavaScript Successfully, please check the output file."
 ```
 
-## Скачайте работающий код
+## Загрузка работающего кода
 
 Скачать **Adding JavaScript (Aspose.PDF)** из любого из перечисленных ниже социальных кодовых сайтов:
 

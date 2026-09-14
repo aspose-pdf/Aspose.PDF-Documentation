@@ -1,13 +1,13 @@
 ---
-title: Получите определённую страницу в PDF‑файле на Ruby
-linktitle: Получите определённую страницу в PDF‑файле на Ruby
+title: Получение определённой страницы в PDF‑файле на Ruby
+linktitle: Получение определённой страницы в PDF‑файле на Ruby
 type: docs
 weight: 30
 url: /ru/java/get-a-particular-page-in-a-pdf-file-in-ruby/
 description: Получайте доступ и управляйте отдельными страницами PDF‑документов с помощью Ruby и Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Получите страницу
+## Aspose.PDF - Получение страницы
 
 Чтобы получить определённую страницу в PDF‑документе с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **GetPage**.
 
@@ -41,7 +41,7 @@ new_document.save(data_dir + "output.pdf")
 puts "Process completed successfully!"
 ```
 
-## Скачайте исполняемый код
+## Загрузка исполняемого кода
 
 Скачать **Get Page (Aspose.PDF)** из любого из перечисленных ниже сайтов для совместного кодинга:
 

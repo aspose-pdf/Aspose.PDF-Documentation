@@ -1,6 +1,6 @@
 ---
-title: Добавьте, удалите и получите аннотации PDF в Java
-linktitle: Добавьте, удалите и получите аннотацию
+title: Добавление, удаление и получение аннотаций PDF в Java
+linktitle: Добавление, удаление и получение аннотации
 type: docs
 weight: 10
 url: /ru/java/pdfannotationeditor-class/add-delete-and-get-annotation/

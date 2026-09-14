@@ -1,6 +1,6 @@
 ---
-title: Получите свойства страницы в Python
-linktitle: Получите свойства страницы в Python
+title: Получение свойств страницы в Python
+linktitle: Получение свойств страницы в Python
 type: docs
 weight: 50
 url: /ru/java/get-page-properties-in-python/

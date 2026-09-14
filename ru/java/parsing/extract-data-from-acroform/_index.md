@@ -1,6 +1,6 @@
 ---
-title: Извлеките данные из AcroForm с помощью Java
-linktitle: Извлеките данные из AcroForm
+title: Извлечение данных из AcroForm с помощью Java
+linktitle: Извлечение данных из AcroForm
 type: docs
 weight: 50
 url: /ru/java/extract-data-from-acroform/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Как извлечь данные из AcroForm с помощью Java
 Abstract: В этой статье объясняется, как извлекать и экспортировать данные AcroForm из PDF‑файлов с помощью Aspose.PDF for Java. Рассматривается чтение всех полей формы, получение значения поля по имени, экспорт данных полей в JSON и запись данных формы в форматы XML, FDF и XFDF.
 ---
-## Извлеките все поля формы
+## Извлечение всех полей формы
 
 Использовать `com.aspose.pdf.facades.Form` чтобы читать имена полей и их значения без обхода полной объектной модели документа.
 
@@ -43,7 +43,7 @@ public static void extractFormFields(Path inputFile) {
 }
 ```
 
-## Получите значение поля по имени
+## Получение значения поля по имени
 
 1. Откройте исходную PDF-форму с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
 1. Вызовите `getField(fieldName)` с указанным именем поля, чтобы прочитать его текущее значение из данных AcroForm.
@@ -62,7 +62,7 @@ public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
 }
 ```
 
-## Экспортируйте поля формы в JSON
+## Экспорт полей формы в JSON
 
 1. Откройте исходную PDF-форму с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
 1. Вызовите `getFieldNames()` собрать все доступные идентификаторы полей из AcroForm.
@@ -94,7 +94,7 @@ public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Экспортируйте данные формы в XML, FDF и XFDF
+## Экспорт данных форм в XML, FDF и XFDF
 
 1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад без привязки документа пока.
 1. Откройте поток вывода для XML‑файла и привяжите исходный PDF к фасаду с `bindPdf(...)`.

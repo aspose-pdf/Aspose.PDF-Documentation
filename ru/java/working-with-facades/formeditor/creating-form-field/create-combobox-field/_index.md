@@ -1,6 +1,6 @@
 ---
-title: Создайте поле ComboBox
-linktitle: Создайте поле ComboBox
+title: Создание поля ComboBox
+linktitle: Создание поля ComboBox
 type: docs
 weight: 30
 url: /ru/java/create-combobox-field/
@@ -12,7 +12,7 @@ Abstract: Эта статья демонстрирует, как привяза�
 ---
 Использовать `FormEditorExamples.createComboBoxField(...)` создать комбобокс и добавить выбираемые элементы.
 
-## Создайте поле combo box
+## Создание поля combo box
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
 2. Добавьте поле combo box с его значением по умолчанию и целевым прямоугольником.

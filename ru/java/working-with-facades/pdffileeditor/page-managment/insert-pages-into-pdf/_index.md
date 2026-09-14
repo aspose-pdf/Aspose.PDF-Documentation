@@ -1,6 +1,6 @@
 ---
-title: Вставьте страницы в PDF
-linktitle: Вставьте страницы в PDF
+title: Вставка страниц в PDF
+linktitle: Вставка страниц в PDF
 type: docs
 weight: 40
 url: /ru/java/insert-pages-into-pdf/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Вставить страницы из другого PDF в выбранную позицию с помощью Java
 Abstract: Узнайте, как вставлять страницы в PDF с помощью Aspose.PDF for Java. Пример на Java использует PdfFileEditor для вставки выбранных страниц из второго документа после указанного номера страницы в целевом PDF.
 ---
-## Вставьте страницы в PDF
+## Вставка страниц в PDF
 
 Пример на Java вставляет страницы 1 и 2 из вторичного документа после страницы 2 целевого PDF.
 

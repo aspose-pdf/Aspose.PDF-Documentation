@@ -38,7 +38,7 @@ lastmod: "2026-08-19"
 end
 ```В 
 
-## Скачайте исполняемый код
+## Загрузка исполняемого кода
 
 СкачатьВ **Оптимизировать PDF для Web (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
 

@@ -1,6 +1,6 @@
 ---
-title: Извлеките информацию о подписи из PDF в Java
-linktitle: Извлеките сведения о подписи
+title: Извлечение информации о подписи из PDF в Java
+linktitle: Извлечение сведений о подписи
 type: docs
 weight: 20
 url: /ru/java/extract-image-and-signature-information/
@@ -15,7 +15,7 @@ Abstract: Эта статья объясняет, как проверять ци
 ---
 Использовать `PdfFileSignature` для проверки и управления подписями, уже существующими в PDF‑документе.
 
-## Читайте информацию о подписи
+## Чтение информации о подписи
 
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) фасад и привязать исходный PDF-документ.
 1. Получите имя подписи документа и настройте поток проверки подписи, требуемый в примере.
@@ -39,7 +39,7 @@ public static void getSignatureInformation(Path inputFile) {
 }
 ```
 
-## Проверьте подпись
+## Проверка подписи
 
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) фасад и привязать исходный PDF-документ.
 1. Получите имя подписи документа и настройте поток проверки, требуемый в примере.
@@ -61,7 +61,7 @@ public static void verifyPdfSignature(Path inputFile) {
 }
 ```
 
-## Извлеките сертификат подписи
+## Извлечение сертификата подписи
 
 1. Создайте [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) фасад и привязать исходный PDF-документ.
 1. Получите имя подписи документа, необходимое для извлечения сертификата.

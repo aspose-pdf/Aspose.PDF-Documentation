@@ -1,13 +1,13 @@
 ---
-title: Добавьте HTML‑строку с использованием DOM в Python
-linktitle: Добавьте HTML‑строку с использованием DOM в Python
+title: Добавление HTML‑строки с использованием DOM в Python
+linktitle: Добавление HTML‑строки с использованием DOM в Python
 type: docs
 weight: 10
 url: /ru/java/add-html-string-using-dom-in-python/
 lastmod: "2026-08-19"
 description: Объясняет, как добавить HTML‑строку в DOM с помощью Python и библиотеки формата файлов PDF
 ---
-## Добавьте HTML‑строку в PDF‑DOM с помощью Python
+## Добавление HTML‑строки в PDF‑DOM с помощью Python
 
 Чтобы добавить HTML‑строку в документ Pdf с использованием **Aspose.PDF Java for Python**, просто вызовите модуль **AddHtml**.
 

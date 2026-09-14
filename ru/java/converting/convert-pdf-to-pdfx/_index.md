@@ -1,6 +1,6 @@
 ---
-title: Конвертируйте PDF в PDF/A, PDF/E и PDF/X на Java
-linktitle: Конвертируйте PDF в PDF/A, PDF/E и PDF/X
+title: Конвертация PDF в PDF/A, PDF/E и PDF/X на Java
+linktitle: Конвертация PDF в PDF/A, PDF/E и PDF/X
 type: docs
 weight: 120
 url: /ru/java/convert-pdf-to-pdf_x/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как проверя
 ---
 Aspose.PDF for Java может проверять и конвертировать стандартные PDF‑файлы в архивные и ориентированные на обмен стандарты PDF.
 
-## Конвертируйте PDF в PDF/A
+## Конвертация PDF в PDF/A
 
 Используйте этот пример, когда стандартный PDF необходимо конвертировать в архивный документ, соответствующий требованиям PDF/A.
 
@@ -33,7 +33,7 @@ public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF в PDF/E
+## Преобразование PDF в PDF/E
 
 Используйте этот пример, когда PDF должен быть преобразован в ориентированный на инженерию стандарт PDF/E.
 
@@ -54,7 +54,7 @@ public static void convertPdfToPdfE(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PDF в PDF/X
+## Конвертация PDF в PDF/X
 
 Используйте этот пример, когда PDF должен быть преобразован в ориентированный на печать стандарт PDF/X.
 

@@ -1,6 +1,6 @@
 ---
 title: Как установить Aspose.PDF for Java
-linktitle: Установите Aspose.PDF for Java
+linktitle: Установка Aspose.PDF for Java
 type: docs
 weight: 40
 url: /ru/java/installation/
@@ -28,7 +28,7 @@ Abstract: Aspose.PDF for Python via .NET — это комплексная би�
 **Aspose.PDF for Java** быстрый и легковесный. Он эффективно создает PDF‑документы и помогает вашему приложению работать лучше. Aspose.PDF for Java — первый выбор наших клиентов при создании PDF‑документов благодаря его цене, отличной производительности и отличной поддержке.
 С помощью этой библиотеки вы можете реализовать расширенные возможности для создания PDF‑файлов с нуля или полностью обрабатывать существующие PDF‑документы без установки Adobe Acrobat.
 
-## Установите
+## Установка
 
 ## Оцените Aspose.PDF for Java
 
@@ -50,7 +50,7 @@ Abstract: Aspose.PDF for Python via .NET — это комплексная би�
 
 {{% /alert %}}
 
-## Установите Aspose.PDF for Java из репозитория Aspose
+## Установка Aspose.PDF for Java из репозитория Aspose
 
 Aspose размещает все Java API наВ. [Репозиторий Aspose](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). Вы можетеВ легко использовать Aspose.PDF for Java API напрямую в ваших проектах Maven с простой конфигурацией.
 

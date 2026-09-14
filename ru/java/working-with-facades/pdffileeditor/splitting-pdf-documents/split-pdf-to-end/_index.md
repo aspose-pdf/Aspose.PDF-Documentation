@@ -1,6 +1,6 @@
 ---
-title: Разделите PDF до конца
-linktitle: Разделите PDF до конца
+title: Разделение PDF до конца
+linktitle: Разделение PDF до конца
 type: docs
 weight: 40
 url: /ru/java/split-pdf-to-end/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Извлечь страницы начиная с определённой позиции до конца PDF с помощью Java
 Abstract: Узнайте, как разделить PDF до конца с помощью Aspose.PDF for Java. Пример на Java использует PdfFileEditor для извлечения всех страниц, начиная со страницы 2 и до конца исходного документа.
 ---
-## Разделите PDF до конца
+## Разделение PDF до конца
 
 Пример на Java извлекает все страницы, начиная со страницы 2.
 

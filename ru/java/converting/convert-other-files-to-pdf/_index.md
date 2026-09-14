@@ -1,6 +1,6 @@
 ---
-title: Конвертируйте другие форматы файлов в PDF на Java
-linktitle: Конвертируйте другие форматы файлов в PDF
+title: Конвертация других форматов файлов в PDF на Java
+linktitle: Конвертация других форматов файлов в PDF
 type: docs
 weight: 80
 url: /ru/java/convert-other-files-to-pdf/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как конверт
 ---
 Aspose.PDF for Java поддерживает преобразование из форматов документов, разметки и описания страниц в PDF.
 
-## Конвертируйте OFD в PDF
+## Конвертация OFD в PDF
 
 Используйте этот пример, когда документ OFD должен быть преобразован в PDF.
 
@@ -32,7 +32,7 @@ public static void convertOfdToPdf(Path inputFile, Path outputFile) {
    }
 ```
 
-## Преобразуйте TeX в PDF
+## Преобразование TeX в PDF
 
 Используйте этот пример, когда содержимое TeX должно быть напрямую преобразовано в PDF.
 
@@ -49,7 +49,7 @@ public static void convertTexToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PostScript в PDF
+## Конвертация PostScript в PDF
 
 Используйте этот пример, когда файл PostScript должен быть преобразован в документ PDF.
 
@@ -66,7 +66,7 @@ public static void convertPostScripToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте EPS в PDF
+## Преобразование EPS в PDF
 
 Используйте этот пример, когда файл Encapsulated PostScript нужно преобразовать в PDF.
 
@@ -83,7 +83,7 @@ public static void convertEpsToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте EPUB в PDF
+## Конвертация EPUB в PDF
 
 Используйте этот пример, когда EPUB‑книга должна быть преобразована в PDF.
 
@@ -100,7 +100,7 @@ public static void convertEpubToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте Markdown в PDF
+## Преобразование Markdown в PDF
 
 Используйте этот пример, когда контент в формате Markdown должен быть отрендерен и сохранён как PDF.
 
@@ -117,7 +117,7 @@ public static void convertMdToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте текст в PDF с простым рабочим процессом
+## Преобразование текста в PDF с простым рабочим процессом
 
 Используйте этот пример, когда обычный текстовый файл нужно быстро преобразовать в PDF.
 
@@ -139,7 +139,7 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Конвертируйте текст в PDF с расширенными параметрами
+## Конвертация текста в PDF с расширенными параметрами
 
 Используйте этот пример, когда обычный текст должен быть преобразован с дополнительными параметрами макета или кодировки.
 
@@ -180,7 +180,7 @@ public static void convertTxtToPdf(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Конвертируйте PCL в PDF
+## Конвертация PCL в PDF
 
 Используйте этот пример, когда поток печати PCL должен быть преобразован в PDF.
 
@@ -199,7 +199,7 @@ public static void convertPclToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте XML в PDF с помощью XSLT и HTML
+## Преобразование XML в PDF с помощью XSLT и HTML
 
 Используйте этот пример, когда данные XML должны быть преобразованы перед окончательной генерацией PDF.
 
@@ -221,7 +221,7 @@ public static void convertXmlToPdf(Path xsltFile, Path xmlFile, Path outputFile)
 }
 ```
 
-## Преобразуйте XPS в PDF
+## Преобразование XPS в PDF
 
 Используйте этот пример, когда документ XPS должен быть преобразован в PDF.
 
@@ -238,7 +238,7 @@ public static void convertXpsToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте XSL-FO в PDF
+## Преобразование XSL-FO в PDF
 
 Используйте этот пример, когда содержимое XSL-FO должно быть отрендерено в PDF.
 
@@ -258,7 +258,7 @@ public static void convertXslFoToPdf(Path xsltFile, Path xmlFile, Path outputFil
 }
 ```
 
-## Преобразуйте XML в промежуточный HTML
+## Преобразование XML в промежуточный HTML
 
 Используйте этот метод, когда данные XML должны быть преобразованы в HTML перед окончательным шагом конвертации в PDF.
 

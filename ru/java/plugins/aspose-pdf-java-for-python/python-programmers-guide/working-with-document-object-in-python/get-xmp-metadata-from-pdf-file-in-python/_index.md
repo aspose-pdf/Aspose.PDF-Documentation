@@ -1,6 +1,6 @@
 ---
-title: Получите XMP‑метаданные из PDF‑файла в Python
-linktitle: Получите XMP‑метаданные из PDF‑файла в Python
+title: Получение XMP‑метаданных из PDF‑файла в Python
+linktitle: Получение XMP‑метаданных из PDF‑файла в Python
 type: docs
 weight: 50
 url: /ru/java/get-xmp-metadata-from-pdf-file-in-python/

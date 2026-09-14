@@ -1,6 +1,6 @@
 ---
-title: Извлеките векторные данные из PDF‑файла с использованием Java
-linktitle: Извлеките векторные данные из PDF
+title: Извлечение векторных данных из PDF‑файла с использованием Java
+linktitle: Извлечение векторных данных из PDF
 type: docs
 weight: 80
 url: /ru/java/extract-vector-data-from-pdf/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-## Получите доступ к векторным данным из PDF‑документа
+## Получение доступа к векторным данным из PDF‑документа
 
 Использовать `GraphicsAbsorber` для проверки векторных графических элементов на странице и записи их базовой геометрии в текстовый файл.
 
@@ -41,7 +41,7 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 }
 ```
 
-## Сохраните векторную графику страницы в SVG
+## Сохранение векторной графики страницы в SVG
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Получите цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) из документа.
@@ -56,7 +56,7 @@ public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
 }
 ```
 
-## Сохраните каждый извлечённый элемент в отдельный SVG
+## Сохранение каждого извлечённого элемента в отдельный SVG
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) и посетить цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
@@ -81,7 +81,7 @@ public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws 
 }
 ```
 
-## Объедините извлечённые элементы в один SVG
+## Объединение извлечённых элементов в один SVG
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) и посетить цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
@@ -106,7 +106,7 @@ public static void extractListOfElementsToSingleImage(Path inputFile, Path outpu
 }
 ```
 
-## Извлеките отдельный векторный элемент
+## Извлечение отдельного векторного элемента
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) и посетить цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).

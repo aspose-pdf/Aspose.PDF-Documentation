@@ -1,6 +1,6 @@
 ---
-title: Добавьте оглавление (TOC) в существующий PDF на Python
-linktitle: Добавьте оглавление (TOC) в существующий PDF на Python
+title: Добавление оглавления (TOC) в существующий PDF на Python
+linktitle: Добавление оглавления (TOC) в существующий PDF на Python
 type: docs
 weight: 20
 url: /ru/java/add-toc-to-existing-pdf-in-python/

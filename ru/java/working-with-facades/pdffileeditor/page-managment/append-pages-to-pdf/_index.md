@@ -1,6 +1,6 @@
 ---
-title: Добавьте страницы в PDF
-linktitle: Добавьте страницы в PDF
+title: Добавление страниц в PDF
+linktitle: Добавление страниц в PDF
 type: docs
 weight: 10
 url: /ru/java/append-pages-to-pdf/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Добавить диапазон страниц из одного PDF‑документа в другой с помощью Java.
 Abstract: Узнайте, как добавлять страницы в PDF с помощью Aspose.PDF for Java. В примере на Java используется PdfFileEditor для добавления выбранного диапазона страниц из другого документа в конец текущего PDF.
 ---
-## Добавьте страницы в PDF
+## Добавление страниц в PDF
 
 В примере на Java страница 1 из второго PDF добавляется в конец первого документа.
 

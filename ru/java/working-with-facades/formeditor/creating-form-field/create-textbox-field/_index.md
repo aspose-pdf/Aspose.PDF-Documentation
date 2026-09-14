@@ -1,6 +1,6 @@
 ---
-title: Создайте поле TextBox
-linktitle: Создайте поле TextBox
+title: Создание поля TextBox
+linktitle: Создание поля TextBox
 type: docs
 weight: 10
 url: /ru/java/create-textbox-field/
@@ -12,7 +12,7 @@ Abstract: В этой статье показано, как привязать �
 ---
 Использовать `FormEditorExamples.createTextBoxField(...)` добавить текстовые поля в форму PDF.
 
-## Создайте поля TextBox
+## Создание полей TextBox
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
 2. Добавьте каждое текстовое поле с `FieldType.Text`, имя поля, значение по умолчанию, номер страницы и прямоугольник.

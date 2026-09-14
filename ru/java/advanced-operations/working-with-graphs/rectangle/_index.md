@@ -1,6 +1,6 @@
 ---
-title: Добавьте прямоугольные формы в PDF на Java
-linktitle: Добавьте прямоугольник
+title: Добавление прямоугольных форм в PDF на Java
+linktitle: Добавление прямоугольника
 type: docs
 weight: 50
 url: /ru/java/add-rectangle/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Рисовать прямоугольные формы в PDF‑файлах с использованием Java
 Abstract: В этой статье показано, как добавить прямоугольные формы в PDF‑документы с помощью Aspose.PDF for Java. Рассматриваются обведённые прямоугольники, сплошные заливки, градиентные заливки, альфа‑прозрачность и управление порядком наложения (z‑order) для перекрывающихся фигур.
 ---
-## Добавьте контур прямоугольника
+## Добавление контура прямоугольника
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
@@ -38,18 +38,18 @@ public static void addRectangle(Path outputFile) {
 }
 ```
 
-## Заполните прямоугольник сплошным или градиентным цветом
+## Заполнение прямоугольника сплошным или градиентным цветом
 
 Примеры прямоугольников включают:
 
 - `createRectangleFilled` для сплошной заливки с `Color.getRed()`
 - `addDrawingWithGradientFill` для `GradientAxialShading` заполнить
 
-## Используйте альфа-прозрачность
+## Использование альфа-прозрачности
 
 `createRectangleWithAlphaColorChannel` применяет полупрозрачные цвета с `Color.fromArgb(...)` чтобы перекрывающиеся прямоугольники оставались видимыми.
 
-## Контролируйте z-order прямоугольников
+## Контроль z-order прямоугольников
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

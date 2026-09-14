@@ -1,6 +1,6 @@
 ---
-title: Защитите PDF-файлы в Java
-linktitle: Шифруйте и расшифруйте PDF-файл
+title: Защита PDF-файлов в Java
+linktitle: Шифрование и расшифровка PDF-файла
 type: docs
 weight: 70
 url: /ru/java/protect-pdf-file/
@@ -26,7 +26,7 @@ Aspose.PDF for Java предоставляет несколько API для з�
 1. Измените существующие пароли в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Тестируйте варианты паролей с [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) и [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-## Зашифруйте PDF с ограниченными привилегиями
+## Шифрование PDF с ограниченными привилегиями
 
 ```java
 public static void encryptPassword(Path inputFile, Path outputFile) {
@@ -48,7 +48,7 @@ public static void encryptPassword(Path inputFile, Path outputFile) {
 }
 ```
 
-## Зашифруйте PDF-файл
+## Шифрование PDF-файла
 
 ```java
 public static void encryptPdfFile(Path inputFile, Path outputFile) {
@@ -67,7 +67,7 @@ public static void encryptPdfFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## Расшифруйте защищённый PDF
+## Расшифровка защищённого PDF
 
 ```java
 public static void decryptPdfFile(Path inputFile, Path outputFile) {
@@ -81,7 +81,7 @@ public static void decryptPdfFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## Измените пароли
+## Изменение паролей
 
 ```java
 public static void changePassword(Path inputFile, Path outputFile) {

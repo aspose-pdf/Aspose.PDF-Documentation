@@ -1,6 +1,6 @@
 ---
-title: Конвертируйте PDF в форматы изображений на Java
-linktitle: Конвертируйте PDF в изображения
+title: Конвертация PDF в форматы изображений на Java
+linktitle: Конвертация PDF в изображения
 type: docs
 weight: 70
 url: /ru/java/convert-pdf-to-images-format/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java может визуализировать страницы PDF в растровые и векторные форматы изображений с параметрами устройства, специфичными для формата.
 
-## Конвертируйте PDF в BMP
+## Конвертация PDF в BMP
 
 Используйте этот пример, когда страницы PDF должны быть отрисованы как BMP‑изображения.
 
@@ -36,7 +36,7 @@ public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
    }
 ```
 
-## Конвертируйте PDF в EMF
+## Конвертация PDF в EMF
 
 Используйте этот пример, когда страницы PDF должны экспортироваться в виде векторных изображений EMF.
 
@@ -57,7 +57,7 @@ public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Преобразуйте PDF в GIF
+## Преобразование PDF в GIF
 
 Используйте этот пример, когда страницы PDF необходимо преобразовать в изображения GIF.
 
@@ -78,7 +78,7 @@ public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Конвертируйте PDF в JPEG
+## Конвертация PDF в JPEG
 
 Используйте этот пример, когда страницы PDF должны экспортироваться в виде изображений JPEG.
 
@@ -99,7 +99,7 @@ public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Преобразуйте PDF в PNG
+## Преобразование PDF в PNG
 
 Используйте этот пример, когда страницы PDF необходимо преобразовать в PNG‑изображения.
 
@@ -120,7 +120,7 @@ public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Конвертируйте PDF в PNG с резервным шрифтом по умолчанию
+## Конвертация PDF в PNG с резервным шрифтом по умолчанию
 
 Используйте этот пример, когда рендеринг должен использовать резервный шрифт для отсутствующих глифов.
 
@@ -142,7 +142,7 @@ public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPre
 }
 ```
 
-## Конвертируйте PDF в SVG
+## Конвертация PDF в SVG
 
 Используйте этот пример, когда страницы PDF должны экспортироваться в виде графики SVG.
 
@@ -163,7 +163,7 @@ public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Конвертируйте PDF в TIFF
+## Конвертация PDF в TIFF
 
 Используйте этот пример, когда нужно экспортировать одну или несколько страниц PDF в формат TIFF.
 

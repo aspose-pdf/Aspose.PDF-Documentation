@@ -1,6 +1,6 @@
 ---
-title: Получите конкретную страницу в PDF-файле на Python
-linktitle: Получите конкретную страницу в PDF-файле на Python
+title: Получение конкретной страницы в PDF-файле на Python
+linktitle: Получение конкретной страницы в PDF-файле на Python
 type: docs
 weight: 30
 url: /ru/java/get-a-particular-page-in-a-pdf-file-in-python/

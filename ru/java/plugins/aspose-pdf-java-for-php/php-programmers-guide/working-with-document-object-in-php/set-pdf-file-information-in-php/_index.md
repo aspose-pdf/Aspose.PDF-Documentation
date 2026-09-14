@@ -1,13 +1,13 @@
 ---
-title: Установите информацию о файле PDF в PHP
-linktitle: Установите информацию о файле PDF в PHP
+title: Установка информации о файле PDF в PHP
+linktitle: Установка информации о файле PDF в PHP
 type: docs
 weight: 90
 url: /ru/java/set-pdf-file-information-in-php/
 description: Узнайте, как установить различные свойства файла, такие как метаданные, для PDF‑документа в PHP с использованием Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Установите информацию о файле PDF
+## Aspose.PDF - Установка информации о файле PDF
 
 Для обновления информации о документе PDF с помощью **Aspose.PDF Java for PHP** просто вызовите класс **SetPdfFileInfo**.
 

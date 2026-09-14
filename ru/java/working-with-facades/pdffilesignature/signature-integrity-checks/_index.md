@@ -1,6 +1,6 @@
 ---
-title: Проверьте целостность подписи
-linktitle: Проверьте целостность подписи
+title: Проверка целостности подписи
+linktitle: Проверка целостности подписи
 type: docs
 weight: 70
 url: /ru/java/signature-integrity-checks/
@@ -14,7 +14,7 @@ TechArticle: true
 AlternativeHeadline: Проверьте покрытие подписи PDF и её целостность в Java
 Abstract: Узнайте, как проверять целостность подписи с помощью Aspose.PDF for Java. Текущий набор примеров Java использует `verifySignature` для проверки выбранной подписи и `coversWholeDocument` для определения, защищает ли подпись весь PDF.
 ---
-## Проверьте целостность подписи
+## Проверка целостности подписи
 
 Эта статья сопоставляется с тем же процессом проверки, предоставляемым `PdfFileSignatureExamples.java`.
 

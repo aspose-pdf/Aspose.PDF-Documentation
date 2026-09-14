@@ -1,6 +1,6 @@
 ---
-title: Замените изображение в существующем PDF‑файле с помощью Java
-linktitle: Замените изображение
+title: Замена изображения в существующем PDF‑файле с помощью Java
+linktitle: Замена изображения
 type: docs
 weight: 70
 url: /ru/java/replace-image-in-existing-pdf-file/
@@ -12,7 +12,7 @@ Abstract: В этой статье показано, как заменять и�
 ---
 Используйте либо коллекцию изображений страницы, либо поиск на основе размещения, в зависимости от того, насколько точно вам нужно найти изображение.
 
-## Замените изображение по индексу ресурса
+## Замена изображения по индексу ресурса
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к ресурсам изображений в целевом файле [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
@@ -29,7 +29,7 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 }
 ```
 
-## Замените изображение с помощью `ImagePlacementAbsorber`
+## Замена изображения с помощью `ImagePlacementAbsorber`
 
 1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) и посетить цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).

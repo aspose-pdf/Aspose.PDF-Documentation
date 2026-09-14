@@ -1,6 +1,6 @@
 ---
-title: Проверьте границы фигур в графах PDF с помощью Java
-linktitle: Проверьте границы фигур
+title: Проверка границ фигур в графах PDF с помощью Java
+linktitle: Проверка границ фигур
 type: docs
 weight: 70
 url: /ru/java/aspose-pdf-drawing-graph-shapes-bounds-check/
@@ -15,7 +15,7 @@ Abstract: В этой статье показано, как проверять �
 ---
 Использовать `BoundsCheckMode` когда вам нужно убедиться, что фигуры помещаются внутри контейнера графика.
 
-## Проверьте границы формы графа
+## Проверка границ формы графа
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

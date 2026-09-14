@@ -12,7 +12,7 @@ Abstract: В этой статье объясняется, как обменив
 ---
 Aspose.PDF for Java поддерживает несколько распространённых форматов обмена данными для интерактивных форм.
 
-## Импортируйте данные формы из XML
+## Импорт данных форм из XML
 
 Используйте этот пример, когда значения формы хранятся в XML‑файле и их нужно применить к PDF‑форме.
 
@@ -53,7 +53,7 @@ public static void exportDataToXml(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Импортируйте данные формы из FDF
+## Импорт данных форм из FDF
 
 Используйте этот пример, когда значения формы приходят в формате обмена FDF.
 
@@ -74,7 +74,7 @@ public static void importDataFromFdf(Path inputFile, Path dataFile, Path outputF
 }
 ```
 
-## Экспортируйте данные формы в FDF
+## Экспорт данных форм в FDF
 
 Используйте этот пример, когда значения формы PDF должны быть переданы в виде файла FDF.
 
@@ -94,7 +94,7 @@ public static void exportDataToFdf(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Импортируйте данные формы из XFDF
+## Импорт данных форм из XFDF
 
 Используйте этот пример, когда данные формы предоставлены в формате XFDF и их необходимо объединить с PDF.
 
@@ -115,7 +115,7 @@ public static void importDataFromXfdf(Path inputFile, Path dataFile, Path output
 }
 ```
 
-## Экспортируйте данные формы в XFDF
+## Экспорт данных форм в XFDF
 
 Используйте этот пример, когда вам нужен XML‑основной файл обмена для значений AcroForm.
 
@@ -135,7 +135,7 @@ public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exce
 }
 ```
 
-## Извлеките поля формы в JSON
+## Извлечение полей формы в JSON
 
 Используйте этот пример, когда значения формы должны быть экспортированы в легковесное представление JSON.
 
@@ -167,7 +167,7 @@ public static void extractFormFieldsToJson(Path inputFile, Path outputFile) thro
 }
 ```
 
-## Повторно используйте помощник извлечения JSON
+## Повторно использование помощника извлечения JSON
 
 Используйте этот пример, когда вам нужен выделенный метод‑обёртка, который делегирует основной процесс экспорта JSON.
 

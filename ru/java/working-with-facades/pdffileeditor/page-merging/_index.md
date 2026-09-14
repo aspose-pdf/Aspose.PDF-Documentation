@@ -1,6 +1,6 @@
 ---
-title: Объедините PDF-файлы
-linktitle: Объедините PDF-файлы
+title: Объединение PDF-файлов
+linktitle: Объединение PDF-файлов
 type: docs
 weight: 40
 url: /ru/java/page-merging/

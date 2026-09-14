@@ -1,6 +1,6 @@
 ---
-title: Заполните поля флажков
-linktitle: Заполните поля флажков
+title: Заполнение полей флажков
+linktitle: Заполнение полей флажков
 type: docs
 weight: 20
 url: /ru/java/fill-check-box-fields/

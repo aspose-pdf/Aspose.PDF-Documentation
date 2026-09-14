@@ -1,6 +1,6 @@
 ---
-title: Разделите PDF-файл на отдельные страницы в Python
-linktitle: Разделите PDF-файл на отдельные страницы в Python
+title: Разделение PDF-файла на отдельные страницы в Python
+linktitle: Разделение PDF-файла на отдельные страницы в Python
 type: docs
 weight: 80
 url: /ru/java/split-pdf-file-into-individual-pages-in-python/

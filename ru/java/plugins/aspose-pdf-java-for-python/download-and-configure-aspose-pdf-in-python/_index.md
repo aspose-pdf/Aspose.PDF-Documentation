@@ -1,6 +1,6 @@
 ---
-title: Скачайте и настройте Aspose.Pdf в Python
-linktitle: Скачайте и настройте Aspose.Pdf в Python
+title: Загрузка и настройка Aspose.Pdf в Python
+linktitle: Загрузка и настройка Aspose.Pdf в Python
 type: docs
 weight: 10
 url: /ru/java/download-and-configure-aspose-pdf-in-python/
@@ -10,14 +10,14 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-### Скачайте необходимые библиотеки
+### Загрузка необходимых библиотек
 
 Скачайте указанные ниже необходимые библиотеки. Они требуются для выполнения примеров Aspose.PDF Java for Python.
 
 - Aspose: [Компонент Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
-## Скачайте примеры с сайтов социального кодинга
+## Загрузка примеров с сайтов социального кодинга
 
 Следующие версии работающих примеров доступны для скачивания на указанных ниже сайтах социального кодинга:
 

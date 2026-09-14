@@ -1,13 +1,13 @@
 ---
-title: Получите свойства окна документа и отображения страниц в Ruby
-linktitle: Получите свойства окна документа и отображения страниц в Ruby
+title: Получение свойств окна документа и отображений страниц в Ruby
+linktitle: Получение свойств окна документа и отображений страниц в Ruby
 type: docs
 weight: 40
 url: /ru/java/get-document-window-and-page-display-properties-in-ruby/
 description: Извлекать и настраивать свойства окна документа и отображения страниц в PDF‑файлах с использованием Ruby и Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — Получите свойства окна документа и отображения страниц
+## Aspose.PDF — Получение свойств окна документа и отображений страниц
 
 Чтобы получить свойства окна документа и отображения страниц PDF‑документа с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **GetDocumentWindow**.
 
@@ -73,7 +73,7 @@ puts "PageLayout :-" + doc.getPageLayout().to_s
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-## Скачайте работающий код
+## Загрузка работающего кода
 
 СкачатьВ **Get Document Window and Page Display Properties (Aspose.PDF)**В изВ любого из перечисленных ниже сайтов совместной разработки:
 

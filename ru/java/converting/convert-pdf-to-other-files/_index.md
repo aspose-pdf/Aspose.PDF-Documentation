@@ -1,6 +1,6 @@
 ---
-title: Конвертируйте PDF в EPUB, Text, XPS и другие форматы на Java
-linktitle: Конвертируйте PDF в другие форматы
+title: Конвертация PDF в EPUB, Text, XPS и другие форматы на Java
+linktitle: Конвертация PDF в другие форматы
 type: docs
 weight: 90
 url: /ru/java/convert-pdf-to-other-files/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java может экспортировать PDF‑документы в форматы вывода, ориентированные на текст, электронные книги, печать и разметку.
 
-## Конвертируйте PDF в EPUB
+## Конвертация PDF в EPUB
 
 Используйте этот пример, когда PDF‑документ должен быть экспортирован в формат электронной книги EPUB.
 
@@ -35,7 +35,7 @@ public static void convertPdfToEpub(Path inputFile, Path outputFile) {
     }
 ```
 
-## Конвертируйте PDF в TeX
+## Конвертация PDF в TeX
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в разметку TeX.
 
@@ -53,7 +53,7 @@ public static void convertPdfToTex(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PDF в обычный текст
+## Конвертация PDF в обычный текст
 
 Используйте этот пример, когда PDF‑документ должен быть экспортирован в текстовый файл.
 
@@ -72,7 +72,7 @@ public static void convertPdfToTxt(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PDF в XPS
+## Конвертация PDF в XPS
 
 Используйте этот пример, когда PDF‑документ должен быть преобразован в формат XPS.
 
@@ -92,7 +92,7 @@ public static void convertPdfToXps(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF в Markdown
+## Преобразование PDF в Markdown
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в Markdown.
 
@@ -113,7 +113,7 @@ public static void convertPdfToMd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF в Mobi XML
+## Преобразование PDF в Mobi XML
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в совместимый с Mobi XML.
 

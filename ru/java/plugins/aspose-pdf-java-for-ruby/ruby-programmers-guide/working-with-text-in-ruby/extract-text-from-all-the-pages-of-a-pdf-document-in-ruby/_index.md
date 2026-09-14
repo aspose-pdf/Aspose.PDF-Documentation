@@ -1,6 +1,6 @@
 ---
-title: Извлеките текст со всех страниц PDF‑документа на Ruby
-linktitle: Извлеките текст со всех страниц PDF‑документа на Ruby
+title: Извлечение текста со всех страниц PDF‑документа на Ruby
+linktitle: Извлечение текста со всех страниц PDF‑документа на Ruby
 type: docs
 weight: 30
 url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
@@ -57,7 +57,7 @@ writer.close()
 puts "Text extracted successfully. Check output file."
 ```
 
-## Скачайте выполняемый код
+## Загрузка выполняемого кода
 
 Скачать **Extract Text From All the Pages (Aspose.PDF)** из любых из перечисленных ниже социальных сайтов для программирования:
 

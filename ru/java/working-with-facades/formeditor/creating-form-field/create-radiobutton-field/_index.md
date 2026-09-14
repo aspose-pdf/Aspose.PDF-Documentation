@@ -1,6 +1,6 @@
 ---
-title: Создайте поле RadioButton
-linktitle: Создайте поле RadioButton
+title: Создание поля RadioButton
+linktitle: Создание поля RadioButton
 type: docs
 weight: 50
 url: /ru/java/create-radiobutton-field/
@@ -12,7 +12,7 @@ Abstract: В этой статье показано, как привязать �
 ---
 Использовать `FormEditorExamples.createRadioButtonField(...)` создать поле переключателя с предопределёнными вариантами.
 
-## Создайте поле радиокнопки
+## Создание поля радиокнопки
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
 2. Настройте зазор радиокнопки, ориентацию и размер элемента.

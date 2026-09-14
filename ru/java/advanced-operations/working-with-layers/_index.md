@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как работат
 ---
 Aspose.PDF for Java раскрывает слои PDF через `Layer` API на каждой странице. Вы можете создавать группы альтернативного контента, изменять их поведение и экспортировать или уплощать их содержимое при необходимости.
 
-## Добавьте слои на страницу PDF
+## Добавление слоёв на страницу PDF
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
@@ -41,7 +41,7 @@ public static void addLayers(Path outputFile) {
 
 Полный пример создает три отдельных слоя с красным, зелёным и синим содержимым линий.
 
-## Заблокируйте слой
+## Блокировка слоя
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к цели [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и получить его [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) коллекцию.

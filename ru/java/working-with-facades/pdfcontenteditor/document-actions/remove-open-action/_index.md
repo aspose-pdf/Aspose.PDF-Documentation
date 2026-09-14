@@ -1,6 +1,6 @@
 ---
-title: Удалите действие открытия
-linktitle: Удалите действие открытия
+title: Удаление действия открытия
+linktitle: Удаление действия открытия
 type: docs
 weight: 20
 url: /ru/java/remove-open-action/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Удалить действие открытия PDF-документа в Java
 Abstract: В этой статье показано, как привязать PDF, удалить действие открытия документа и сохранить обновлённый документ, используя фасад PdfContentEditor в Aspose.PDF for Java.
 ---
-## Удалите действие открытия документа
+## Удаление действия открытия документа
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
 2. Вызовите `removeDocumentOpenAction()`.

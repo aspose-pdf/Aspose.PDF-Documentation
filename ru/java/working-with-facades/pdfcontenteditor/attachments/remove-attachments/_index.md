@@ -1,6 +1,6 @@
 ---
-title: Удалите вложения
-linktitle: Удалите вложения
+title: Удаление вложений
+linktitle: Удаление вложений
 type: docs
 weight: 50
 url: /ru/java/remove-attachments/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Удалить все вложения PDF на Java
 Abstract: В этой статье показано, как привязать PDF, удалить все вложения документов и сохранить обновлённый файл, используя фасад PdfContentEditor в Aspose.PDF for Java.
 ---
-## Удалите все вложения
+## Удаление всех вложений
 
 1. Привяжите исходный PDF к `PdfContentEditor` фасад.
 2. Вызовите `deleteAttachments()` удалить каждое встроенное вложение.

@@ -1,13 +1,13 @@
 ---
-title: Получите XMP-метаданные из PDF-файла в PHP
-linktitle: Получите XMP-метаданные из PDF-файла в PHP
+title: Получение XMP-метаданных из PDF-файла в PHP
+linktitle: Получение XMP-метаданных из PDF-файла в PHP
 type: docs
 weight: 50
 url: /ru/java/get-xmp-metadata-from-pdf-file-in-php/
 description: Узнайте, как извлекать XMP-метаданные из PDF-документов в PHP с использованием Aspose.PDF для расширенного анализа содержимого.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Получите XMP-метаданные
+## Aspose.PDF - Получение XMP-метаданных
 
 Чтобы получить XMP-метаданные из Pdf-документа с помощью **Aspose.PDF Java for PHP**, просто вызовите класс **GetXMPMetadata**.
 

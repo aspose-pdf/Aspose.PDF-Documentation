@@ -1,6 +1,6 @@
 ---
-title: Объедините PDF-файлы в Java
-linktitle: Объедините PDF-файлы
+title: Объединение PDF-файлов в Java
+linktitle: Объединение PDF-файлов
 type: docs
 weight: 50
 url: /ru/java/merge-pdf/
@@ -25,7 +25,7 @@ Abstract: В этой статье объясняется, как объедин
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) коллекцию со второй [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) к первому с `document1.getPages().add(document2.getPages())`.
 1. Сохраните объединённый [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в путь вывода.
 
-## Объедините два PDF-документа
+## Объединение двух PDF-документа
 
 Следующий пример на Java основан на `MergeDocumentExamples.java`.
 

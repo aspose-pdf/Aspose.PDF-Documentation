@@ -1,6 +1,6 @@
 ---
-title: Настройте внешний вид полей
-linktitle: Настройте внешний вид полей
+title: Настройка внешнего вида полей
+linktitle: Настройка внешнего вида полей
 type: docs
 weight: 30
 url: /ru/java/customizing-field-appearance/

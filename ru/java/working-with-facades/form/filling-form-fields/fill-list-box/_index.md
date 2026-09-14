@@ -1,6 +1,6 @@
 ---
-title: Заполните List Box
-linktitle: Заполните List Box
+title: Заполнение List Box
+linktitle: Заполнение List Box
 type: docs
 weight: 40
 url: /ru/java/fill-list-box/

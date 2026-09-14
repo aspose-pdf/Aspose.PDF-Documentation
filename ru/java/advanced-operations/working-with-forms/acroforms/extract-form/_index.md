@@ -1,6 +1,6 @@
 ---
-title: Извлеките AcroForm и данные формы из PDF на Java
-linktitle: Извлеките AcroForm
+title: Извлечение AcroForm и данных форм из PDF на Java
+linktitle: Извлечение AcroForm
 type: docs
 weight: 30
 url: /ru/java/extract-form/
@@ -15,7 +15,7 @@ Abstract: В этой статье показано, как извлекать �
 ---
 Используйте `Form` фасад, когда вам нужен простой поток извлечения имени поля и его значения.
 
-## Извлеките значения из всех полей AcroForm
+## Извлечение значений из всех полей AcroForm
 
 1. Откройте документ PDF-формы с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
 1. Переберите имена полей из [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад и прочитайте каждое текущее значение поля в карту.

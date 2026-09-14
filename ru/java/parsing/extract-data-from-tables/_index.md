@@ -1,6 +1,6 @@
 ---
-title: Извлеките данные из таблицы в PDF с помощью Java
-linktitle: Извлеките данные из таблицы
+title: Извлечение данных из таблицы в PDF с помощью Java
+linktitle: Извлечение данных из таблицы
 type: docs
 weight: 40
 url: /ru/java/extract-data-from-table-in-pdf/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Как извлечь данные из таблицы в PDF с помощью Java
 Abstract: В этой статье объясняется, как извлекать и обрабатывать табличные данные из PDF‑документов с помощью Aspose.PDF for Java. Показано, как сканировать страницы с `TableAbsorber`, считывать строки и ячейки из обнаруженных таблиц, ограничивать извлечение конкретным аннотированным регионом и экспортировать результат в Excel.
 ---
-## Извлеките таблицы из PDF
+## Извлечение таблиц из PDF
 
 Использовать `TableAbsorber` найти таблицы на каждой странице и итеративно проходить строки, ячейки, текстовые фрагменты и текстовые сегменты.
 
@@ -59,7 +59,7 @@ public static void extractTablesFromPdf(Path inputFile) {
 }
 ```
 
-## Извлеките таблицу из конкретной отмеченной области
+## Извлечение таблицы из конкретной отмеченной области
 
 В этом примере находят квадратную аннотацию, сравнивают её прямоугольник с каждой обнаруженной таблицей и выводят только таблицы, находящиеся внутри отмеченной области.
 
@@ -128,7 +128,7 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 }
 ```
 
-## Экспортируйте таблицы в Excel
+## Экспорт таблиц в Excel
 
 1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
 1. Создайте [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) для экспорта.

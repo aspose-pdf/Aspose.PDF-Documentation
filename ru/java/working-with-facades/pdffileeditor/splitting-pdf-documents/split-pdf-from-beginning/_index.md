@@ -1,6 +1,6 @@
 ---
-title: Разделите PDF с начала
-linktitle: Разделите PDF с начала
+title: Разделение PDF с начала
+linktitle: Разделение PDF с начала
 type: docs
 weight: 10
 url: /ru/java/split-pdf-from-beginning/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Извлечь первые страницы PDF в новый документ с помощью Java
 Abstract: Узнайте, как разделить PDF с начала с помощью Aspose.PDF for Java. Пример на Java использует PdfFileEditor, чтобы взять первые три страницы документа и сохранить их как отдельный PDF.
 ---
-## Разделите PDF с начала
+## Разделение PDF с начала
 
 Пример на Java извлекает первые три страницы из исходного документа.
 

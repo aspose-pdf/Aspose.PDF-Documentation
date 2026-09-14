@@ -1,6 +1,6 @@
 ---
-title: Добавьте криволинейные формы в PDF на Java
-linktitle: Добавьте кривую
+title: Добавление криволинейных форм в PDF на Java
+linktitle: Добавление кривой
 type: docs
 weight: 30
 url: /ru/java/add-curve/
@@ -15,7 +15,7 @@ Abstract: В этой статье показано, как добавить к�
 ---
 Кривые в Aspose.PDF for Java определяются массивом координат типа float, передаваемым в `Curve`.
 
-## Добавьте контур кривой
+## Добавление контура кривой
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

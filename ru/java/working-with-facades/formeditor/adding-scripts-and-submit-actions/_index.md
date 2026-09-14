@@ -1,6 +1,6 @@
 ---
-title: Добавьте скрипты и действия отправки
-linktitle: Добавьте скрипты и действия отправки
+title: Добавление скриптов и действий отправки
+linktitle: Добавление скриптов и действий отправки
 type: docs
 weight: 40
 url: /ru/java/adding-scripts-and-submit-actions/

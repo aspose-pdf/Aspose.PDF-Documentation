@@ -1,6 +1,6 @@
 ---
-title: Конвертируйте PDF в HTML на Java
-linktitle: Конвертируйте PDF в формат HTML
+title: Конвертация PDF в HTML на Java
+linktitle: Конвертация PDF в формат HTML
 type: docs
 weight: 50
 url: /ru/java/convert-pdf-to-html/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java поддерживает экспорт в HTML с вариантами для изображений, SVG, разбиения страниц, прозрачности и рендеринга слоёв. Используйте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) для контроля того, как страницы PDF, ресурсы и разметка записываются в HTML‑вывод.
 
-## Конвертируйте PDF в HTML
+## Конвертация PDF в HTML
 
 Используйте этот пример, когда PDF должен быть экспортирован в стандартный HTML‑документ.
 
@@ -34,7 +34,7 @@ public static void convertPdfToHtml(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF в HTML и сохраните изображения отдельно
+## Преобразование PDF в HTML и сохранение изображений отдельно
 
 Используйте этот пример, когда извлечённые изображения должны быть записаны в отдельные файлы при экспорте в HTML.
 
@@ -54,7 +54,7 @@ public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile
 }
 ```
 
-## Преобразуйте PDF в многостраничный HTML
+## Преобразование PDF в многостраничный HTML
 
 Используйте этот пример, когда каждая страница PDF должна быть представлена отдельно в HTML‑выводе.
 
@@ -74,7 +74,7 @@ public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF в HTML и сохраните SVG отдельно
+## Преобразование PDF в HTML и сохранение SVG отдельно
 
 Используйте этот пример, когда векторный контент должен быть выведен как отдельные ресурсы SVG.
 
@@ -94,7 +94,7 @@ public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PDF в HTML с сжатым SVG
+## Конвертация PDF в HTML с сжатым SVG
 
 Используйте этот пример, когда вывод SVG должен быть оптимизирован при экспорте в HTML.
 
@@ -115,7 +115,7 @@ public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) 
 }
 ```
 
-## Конвертируйте PDF в HTML с PNG‑фоновыми изображениями страниц
+## Конвертация PDF в HTML с PNG‑фоновыми изображениями страниц
 
 Используйте этот пример, когда фон страниц должен отображаться в виде PNG‑изображений в выводе HTML.
 
@@ -136,7 +136,7 @@ public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile
 }
 ```
 
-## Преобразуйте PDF в HTML, только содержимое тела
+## Преобразование PDF в HTML, только содержимое тела
 
 Используйте этот пример, когда нужна только разметка тела, а не полная оболочка HTML‑документа.
 
@@ -158,7 +158,7 @@ public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) 
 }
 ```
 
-## Конвертируйте PDF в HTML с прозрачным отображением текста
+## Конвертация PDF в HTML с прозрачным отображением текста
 
 Используйте этот пример, когда прозрачный текст должен быть сохранён при экспорте в HTML.
 
@@ -179,7 +179,7 @@ public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path
 }
 ```
 
-## Преобразуйте PDF в HTML с рендерингом уровня документа
+## Преобразование PDF в HTML с рендерингом уровня документа
 
 Используйте этот пример, когда видимость слоев PDF должна отображаться в HTML‑результате.
 

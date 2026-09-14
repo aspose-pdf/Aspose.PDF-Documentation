@@ -15,7 +15,7 @@ Abstract: В этой статье показано, как добавить в�
 ---
 Aspose.PDF for Java поддерживает как создание кнопок отправки на основе фасада, так и на основе DOM.
 
-## Добавьте кнопку отправки с FormEditor
+## Добавление кнопки отправки с FormEditor
 
 1. Создайте [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) фасад для исходного PDF‑документа.
 1. Добавьте сконфигурированный объект кнопки отправки через [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) фасад.
@@ -35,7 +35,7 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 }
 ```
 
-## Добавьте действие отправки вручную
+## Добавление действия отправки вручную
 
 1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) и URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).

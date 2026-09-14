@@ -1,6 +1,6 @@
 ---
-title: Преобразуйте HTML в PDF на Java
-linktitle: Преобразуйте HTML в PDF файл
+title: Преобразование HTML в PDF на Java
+linktitle: Преобразование HTML в PDF файл
 type: docs
 weight: 40
 url: /ru/java/convert-html-to-pdf/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java может конвертировать локальные HTML‑файлы, архивированный контент MHTML и живые веб‑страницы в PDF‑документы. Вы можете управлять процессом конвертации с помощью `HtmlLoadOptions` и `MhtLoadOptions` для влияния на масштабирование макета, обработку медиa‑запросов CSS, приоритет правил страницы, встраивание шрифтов, разрешение ресурсов и поведение рендеринга одной страницы.
 
-## Преобразуйте HTML в PDF
+## Преобразование HTML в PDF
 
 Используйте этот пример, когда локальный HTML‑файл должен быть напрямую преобразован в PDF‑документ.
 
@@ -35,7 +35,7 @@ public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте HTML в PDF с вариантами типа медиа
+## Преобразование HTML в PDF с вариантами типа медиа
 
 Используйте этот пример, когда обработка типа медиа CSS должна контролироваться при преобразовании HTML.
 
@@ -55,7 +55,7 @@ public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте HTML в PDF с приоритетом правила CSS page
+## Преобразование HTML в PDF с приоритетом правила CSS page
 
 Используйте этот пример при работе с CSS `@page` правила должны влиять на окончательный макет страниц PDF.
 
@@ -75,7 +75,7 @@ public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outp
 }
 ```
 
-## Преобразуйте HTML в PDF с внедрёнными шрифтами
+## Преобразование HTML в PDF с внедрёнными шрифтами
 
 Используйте этот пример, когда результирующий PDF должен сохранять шрифты HTML путем их встраивания.
 
@@ -115,7 +115,7 @@ public static void convertHtmlToPdfRenderContentToSamePage(Path inputFile, Path 
 }
 ```
 
-## Преобразуйте HTML, содержащий встроенный SVG
+## Преобразование HTML, содержащий встроенный SVG
 
 Используйте этот пример, когда исходный HTML содержит встроенные данные SVG, которые необходимо отобразить в PDF.
 
@@ -134,7 +134,7 @@ public static void convertHtmlToPdfWithSvgData(Path inputFile, Path outputFile) 
 }
 ```
 
-## Преобразуйте веб-страницу в PDF
+## Преобразование веба-страницы в PDF
 
 Используйте этот пример, когда живой веб‑URL должен быть отрендерен и сохранён как PDF‑документ.
 
@@ -161,7 +161,7 @@ public static void convertWebPageToPdf(String urlString, Path outputFile) {
 }
 ```
 
-## Преобразуйте MHTML в PDF
+## Преобразование MHTML в PDF
 
 Используйте этот пример, когда необходимо преобразовать архивный файл MHTML в документ PDF.
 

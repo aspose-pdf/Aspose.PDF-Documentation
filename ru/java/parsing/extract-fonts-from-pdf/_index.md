@@ -1,6 +1,6 @@
 ---
-title: Извлеките шрифты из PDF с помощью Java
-linktitle: Извлеките шрифты из PDF
+title: Извлечение шрифтов из PDF с помощью Java
+linktitle: Извлечение шрифтов из PDF
 type: docs
 weight: 30
 url: /ru/java/extract-fonts-from-pdf/

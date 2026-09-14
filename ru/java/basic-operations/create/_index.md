@@ -1,6 +1,6 @@
 ---
-title: Создайте PDF документ программно
-linktitle: Создайте PDF
+title: Создание PDF документа программно
+linktitle: Создание PDF
 type: docs
 weight: 10
 url: /ru/java/create-document/
@@ -24,7 +24,7 @@ Abstract: В этой статье показано, как создать PDF �
 1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) в параграфы страницы.
 1. Сохраните [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в выходной файл.
 
-## Создайте простой PDF-документ
+## Создание простого PDF-документа
 
 Следующий пример на Java основан на `CreatePdfDocumentExamples.java`.
 

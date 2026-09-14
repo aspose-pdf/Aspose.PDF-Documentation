@@ -1,6 +1,6 @@
 ---
-title: Создайте поле ListBox
-linktitle: Создайте поле ListBox
+title: Создание поля ListBox
+linktitle: Создание поля ListBox
 type: docs
 weight: 40
 url: /ru/java/create-listbox-field/
@@ -12,7 +12,7 @@ Abstract: В этой статье показано, как привязать �
 ---
 Использовать `FormEditorExamples.createListBoxField(...)` создать поле списка с предопределёнными элементами.
 
-## Создайте поле списка
+## Создание поля списка
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
 2. Определите доступные элементы списка с помощью `setItems(...)`.

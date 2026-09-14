@@ -1,6 +1,6 @@
 ---
-title: Обновите размеры страницы в PHP
-linktitle: Обновите размеры страницы в PHP
+title: Обновление размеров страницы в PHP
+linktitle: Обновление размеров страницы в PHP
 type: docs
 weight: 90
 url: /ru/java/update-page-dimensions-in-php/

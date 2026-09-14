@@ -1,6 +1,6 @@
 ---
-title: Добавьте формы дуги в PDF на Java
-linktitle: Добавьте дугу
+title: Добавление форм дуги в PDF на Java
+linktitle: Добавление дуги
 type: docs
 weight: 10
 url: /ru/java/add-arc/
@@ -15,7 +15,7 @@ Abstract: В этой статье показано, как добавить ф�
 ---
 Aspose.PDF for Java использует `Graph` вместе с объектами формы, такими как `Arc` и `Line` для рендеринга векторной графики.
 
-## Добавьте контуры дуги
+## Добавление контуров дуги
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
@@ -44,7 +44,7 @@ public static void addArc(Path outputFile) {
 
 Полный пример добавляет три дуги с разными радиусами, углами и цветами в один и тот же график.
 
-## Добавьте заполненный сегмент дуги
+## Добавление заполненного сегмента дуги
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.

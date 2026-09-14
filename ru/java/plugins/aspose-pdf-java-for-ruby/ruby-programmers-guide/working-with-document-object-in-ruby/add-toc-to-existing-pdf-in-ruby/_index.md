@@ -1,13 +1,13 @@
 ---
-title: Добавьте TOC в существующий PDF в Ruby
-linktitle: Добавьте TOC в существующий PDF в Ruby
+title: Добавление TOC в существующий PDF в Ruby
+linktitle: Добавление TOC в существующий PDF в Ruby
 type: docs
 weight: 30
 url: /ru/java/add-toc-to-existing-pdf-in-ruby/
 description: Узнайте, как добавить оглавление в существующий PDF в Ruby с использованием Aspose.PDF для улучшенной навигации по документу.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Добавьте TOC
+## Aspose.PDF - Добавление TOC
 
 <ins>Чтобы добавить TOC в PDF‑документ, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddToc**.
 
@@ -87,7 +87,7 @@ doc.save(data_dir + "TOC.pdf")
 puts "Added TOC Successfully, please check the output file."
 ```
 
-## <ins> **Скачайте запущенный код
+## <ins> **Загрузка запущенного кода
 
 СкачатьВ **Добавить Оглавление (Aspose.PDF)**В изВ любого из нижеуказанных социальных сайтов для совместного кодинга:
 

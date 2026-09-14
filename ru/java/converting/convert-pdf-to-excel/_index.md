@@ -1,6 +1,6 @@
 ---
-title: Преобразуйте PDF в Excel в Java
-linktitle: Преобразуйте PDF в Excel
+title: Преобразование PDF в Excel в Java
+linktitle: Преобразование PDF в Excel
 type: docs
 weight: 20
 url: /ru/java/convert-pdf-to-excel/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как преобра
 ---
 Aspose.PDF for Java может экспортировать содержимое PDF в несколько форматов электронных таблиц с различными параметрами макета. Используйте [`ExcelSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) выбрать формат целевой книги и контролировать, как содержимое страницы распределяется по листам и столбцам.
 
-## Конвертируйте PDF в Excel 2003 XML
+## Конвертация PDF в Excel 2003 XML
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в формат электронных таблиц Excel 2003 XML.
 
@@ -35,7 +35,7 @@ public static void convertPdfToExcelSpreadSheet2003(Path inputFile, Path outputF
 }
 ```
 
-## Конвертируйте PDF в XLSX
+## Конвертация PDF в XLSX
 
 Используйте этот пример, когда содержимое PDF должно быть конвертировано в формат Excel 2007+ XLSX.
 
@@ -55,7 +55,7 @@ public static void convertPdfToExcel2007(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PDF в XLSX с управлением столбцами
+## Конвертация PDF в XLSX с управлением столбцами
 
 Используйте этот пример, когда нужно скорректировать обработку столбцов при преобразовании PDF в Excel.
 
@@ -76,7 +76,7 @@ public static void convertPdfToExcel2007ControlColumn(Path inputFile, Path outpu
 }
 ```
 
-## Конвертируйте PDF в один лист Excel
+## Конвертация PDF в один лист Excel
 
 Используйте этот пример, когда все страницы PDF должны быть экспортированы в один лист.
 
@@ -97,7 +97,7 @@ public static void convertPdfToExcel2007SingleExcelWorksheet(Path inputFile, Pat
 }
 ```
 
-## Конвертируйте PDF в XLSM
+## Конвертация PDF в XLSM
 
 Используйте этот пример, когда вывод PDF должен быть сохранён как книга Excel с поддержкой макросов.
 
@@ -117,7 +117,7 @@ public static void convertPdfToExcel2007Macro(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PDF в CSV
+## Конвертация PDF в CSV
 
 Используйте этот пример, когда табличный контент PDF должен быть экспортирован в CSV.
 
@@ -137,7 +137,7 @@ public static void convertPdfToExcel2007Csv(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PDF в ODS
+## Конвертация PDF в ODS
 
 Используйте этот пример, когда содержимое PDF должно быть экспортировано в формат электронных таблиц OpenDocument.
 

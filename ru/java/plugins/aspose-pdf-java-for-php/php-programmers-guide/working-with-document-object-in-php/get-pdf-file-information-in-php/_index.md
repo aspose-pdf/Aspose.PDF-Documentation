@@ -1,13 +1,13 @@
 ---
-title: Получите информацию о PDF-файле в PHP
-linktitle: Получите информацию о PDF-файле в PHP
+title: Получение информации о PDF-файле в PHP
+linktitle: Получение информации о PDF-файле в PHP
 type: docs
 weight: 40
 url: /ru/java/get-pdf-file-information-in-php/
 description: Узнайте, как получить подробную информацию о PDF-файле, включая метаданные и свойства, в PHP с помощью Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — Получите информацию о PDF-файле
+## Aspose.PDF — Получение информации о PDF-файле
 
 Чтобы получить информацию о файле PDF-документа, используя **Aspose.PDF Java for PHP**, просто вызовите класс **GetPdfFileInfo**.
 

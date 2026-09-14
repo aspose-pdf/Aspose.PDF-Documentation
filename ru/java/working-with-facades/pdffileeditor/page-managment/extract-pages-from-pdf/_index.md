@@ -1,6 +1,6 @@
 ---
-title: Извлеките страницы из PDF
-linktitle: Извлеките страницы из PDF
+title: Извлечение страниц из PDF
+linktitle: Извлечение страниц из PDF
 type: docs
 weight: 30
 url: /ru/java/extract-pages-from-pdf/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Извлечь выбранные страницы PDF в новый документ с помощью Java
 Abstract: Узнайте, как извлечь страницы из PDF с помощью Aspose.PDF for Java. Пример на Java использует PdfFileEditor для сбора определённых номеров страниц и записи их в отдельный выходной PDF.
 ---
-## Извлеките страницы из PDF
+## Извлечение страниц из PDF
 
 Пример на Java извлекает страницы 1, 4 и 3 в новый PDF‑документ.
 

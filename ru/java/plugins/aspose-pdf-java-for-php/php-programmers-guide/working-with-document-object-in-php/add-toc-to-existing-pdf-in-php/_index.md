@@ -1,13 +1,13 @@
 ---
-title: Добавьте TOC в существующий PDF в PHP
-linktitle: Добавьте TOC в существующий PDF в PHP
+title: Добавление TOC в существующий PDF в PHP
+linktitle: Добавление TOC в существующий PDF в PHP
 type: docs
 weight: 20
 url: /ru/java/add-toc-to-existing-pdf-in-php/
 description: Изучите, как добавить оглавление (TOC) в существующий PDF‑документ в PHP с помощью Aspose.PDF для улучшения навигации.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — Добавьте TOC
+## Aspose.PDF — Добавление TOC
 
 Чтобы добавить TOC в Pdf документ, используя **Aspose.PDF Java for PHP**, просто вызовите класс **AddToc**.
 

@@ -1,6 +1,6 @@
 ---
-title: Извлеките текст из PDF с помощью Java
-linktitle: Извлеките текст из PDF
+title: Извлечение текста из PDF с помощью Java
+linktitle: Извлечение текста из PDF
 type: docs
 weight: 10
 url: /ru/java/extract-text-from-pdf/

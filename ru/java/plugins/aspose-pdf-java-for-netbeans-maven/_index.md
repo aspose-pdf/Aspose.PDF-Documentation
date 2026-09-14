@@ -62,9 +62,9 @@ Aspose.PDF for Java предлагает огромный набор возмо�
 - NetBeans 8.1 (рекомендовано)
 - NetBeans 8.0
 
-## Загрузите
+## Загрузка
 
-### Загрузите NetBeans
+### Загрузка NetBeans
 
 Перед загрузкой плагина **Aspose.PDF Java для NetBeans (Maven)** убедитесь, что NetBeans IDE уже установлен.
 
@@ -77,7 +77,7 @@ Aspose.PDF for Java предлагает огромный набор возмо�
 
 Скачайте только набор, поддерживающий Java EE/SE, текущей последней версии, т.е. **NetBeans IDE 8.1**.
 
-### Загрузите Aspose.PDF Java для NetBeans (Maven)
+### Загрузка Aspose.PDF Java для NetBeans (Maven)
 
 - Плагин можно загрузить напрямую по URL хостинга плагинов NetBeans: <http://plugins.netbeans.org/plugin/63218>, а затем установить через IDE:
   - **Tools > Plugins > Downloaded**  
@@ -89,11 +89,11 @@ Aspose.PDF for Java предлагает огромный набор возмо�
   - Выберите плагин **Aspose.PDF Java NetBeans (Maven)**  
   - Нажмите **"Install"**.
 
-## Установите
+## Установка
 
 Установка Aspose.PDF для NetBeans — Maven
 
-## Используйте плагина
+## Использование плагина
 
 Использование Aspose.PDF для NetBeans — Maven
 

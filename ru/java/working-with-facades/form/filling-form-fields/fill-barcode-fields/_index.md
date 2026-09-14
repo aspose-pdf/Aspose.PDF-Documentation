@@ -1,6 +1,6 @@
 ---
-title: Заполните поля штрих‑кода
-linktitle: Заполните поля штрих‑кода
+title: Заполнение полей штрих‑кода
+linktitle: Заполнение полей штрих‑кода
 type: docs
 weight: 50
 url: /ru/java/fill-barcode-fields/

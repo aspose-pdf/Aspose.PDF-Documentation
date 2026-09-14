@@ -1,6 +1,6 @@
 ---
-title: Объедините PDF файлы в Python
-linktitle: Объедините PDF файлы в Python
+title: Объединение PDF файлов в Python
+linktitle: Объединение PDF файлов в Python
 type: docs
 weight: 10
 url: /ru/java/concatenate-pdf-files-in-python/

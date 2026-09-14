@@ -1,6 +1,6 @@
 ---
-title: Объедините два PDF‑файла
-linktitle: Объедините два PDF‑файла
+title: Объединение двух PDF‑файла
+linktitle: Объединение двух PDF‑файла
 type: docs
 weight: 60
 url: /ru/java/concatenate-two-files/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Объединить два PDF‑файла в один выходной документ с помощью Java
 Abstract: Узнайте, как объединять два PDF‑файла с помощью Aspose.PDF for Java. Пример на Java использует PdfFileEditor и перегрузку `concatenate`, основанную на массиве, для объединения двух исходных документов в один выходной PDF.
 ---
-## Объедините два PDF‑файла
+## Объединение двух PDF‑файла
 
 Эта статья напрямую соответствует `mergePdfDocuments` пример в `PdfFileEditorExamples.java`.
 

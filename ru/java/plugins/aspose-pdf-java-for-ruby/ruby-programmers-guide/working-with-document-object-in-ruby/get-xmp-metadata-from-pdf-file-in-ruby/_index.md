@@ -1,13 +1,13 @@
 ---
-title: Получите XMP Metadata из PDF‑файла в Ruby
-linktitle: Получите XMP Metadata из PDF‑файла в Ruby
+title: Получение XMP Metadata из PDF‑файла в Ruby
+linktitle: Получение XMP Metadata из PDF‑файла в Ruby
 type: docs
 weight: 60
 url: /ru/java/get-xmp-metadata-from-pdf-file-in-ruby/
 description: Доступ и манипулирование XMP metadata в PDF‑документах с использованием Ruby и Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF – Получите XMP Metadata
+## Aspose.PDF – Получение XMP Metadata
 
 Чтобы получить XMP Metadata из PDF‑документа с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **GetXMPMetadata**.
 
@@ -31,7 +31,7 @@ puts "xmp:Nickname: " + doc.getMetadata().get_Item("xmp:Nickname").to_s
 puts "xmp:CustomProperty: " + doc.getMetadata().get_Item("xmp:CustomProperty").to_s
 ```
 
-## Скачайте запущенный код
+## Загрузка запущенного кода
 
 Скачать **Получить XMP Metadata (Aspose.PDF)** из любого из перечисленных ниже социальных площадок для разработки:
 

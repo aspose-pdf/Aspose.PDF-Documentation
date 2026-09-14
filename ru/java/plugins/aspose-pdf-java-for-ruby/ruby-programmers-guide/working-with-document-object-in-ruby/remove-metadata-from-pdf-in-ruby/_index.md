@@ -1,6 +1,6 @@
 ---
-title: Удалите метаданные из PDF на Ruby
-linktitle: Удалите метаданные из PDF на Ruby
+title: Удаление метаданных из PDF на Ruby
+linktitle: Удаление метаданных из PDF на Ruby
 type: docs
 weight: 90
 url: /ru/java/remove-metadata-from-pdf-in-ruby/
@@ -41,7 +41,7 @@ doc.save(data_dir + "Remove_Metadata.pdf")
 puts "Removed metadata successfully, please check output file."
 ```
 
-## Скачайте работающий код
+## Загрузка работающего кода
 
 СкачатьВ **Remove Metadata (Aspose.PDF)**В изВ любого из указанных ниже социальных сайтов для совместной разработки:
 

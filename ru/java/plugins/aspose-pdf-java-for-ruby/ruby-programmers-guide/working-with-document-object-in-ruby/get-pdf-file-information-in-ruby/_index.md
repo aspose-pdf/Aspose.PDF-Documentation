@@ -1,13 +1,13 @@
 ---
-title: Получите информацию о PDF-файле в Ruby
-linktitle: Получите информацию о PDF-файле в Ruby
+title: Получение информации о PDF-файле в Ruby
+linktitle: Получение информации о PDF-файле в Ruby
 type: docs
 weight: 50
 url: /ru/java/get-pdf-file-information-in-ruby/
 description: Извлекать метаданные и детали из PDF‑файлов программно с использованием Aspose.PDF в Ruby.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — Получите информацию о PDF-файле
+## Aspose.PDF — Получение информации о PDF-файле
 
 Чтобы получить информацию о файле PDF‑документа, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **GetPdfFileInfo**.
 
@@ -41,7 +41,7 @@ puts "Subject:-" + doc_info.getSubject().to_s
 puts "Title:-" + doc_info.getTitle().to_s
 ```
 
-## Скачайте работающий код
+## Загрузка работающего кода
 
 Скачать **Получить информацию о PDF-файле (Aspose.PDF)** from any of the below mentioned social coding sites:
 

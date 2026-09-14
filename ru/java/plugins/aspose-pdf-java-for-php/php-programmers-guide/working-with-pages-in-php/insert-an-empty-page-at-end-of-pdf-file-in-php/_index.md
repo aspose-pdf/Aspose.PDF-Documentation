@@ -1,13 +1,13 @@
 ---
-title: Вставьте пустую страницу в конец PDF‑файла на PHP
-linktitle: Вставьте пустую страницу в конец PDF‑файла на PHP
+title: Вставка пустой страницы в конец PDF‑файла на PHP
+linktitle: Вставка пустой страницы в конец PDF‑файла на PHP
 type: docs
 weight: 60
 url: /ru/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
 description: Узнайте, как вставить пустую страницу в конец PDF‑документа на PHP с помощью Aspose.PDF для расширения документа.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — Вставьте пустую страницу в конец PDF‑файла
+## Aspose.PDF — Вставка пустой страницы в конец PDF‑файла
 
 Чтобы вставить пустую страницу в конец PDF‑документа, используя **Aspose.PDF Java for PHP**, просто вызовите класс **InsertEmptyPageAtEndOfFile**.
 
@@ -28,7 +28,7 @@ print "Empty page added successfully!" . PHP_EOL;
 
 ```
 
-## Скачайте работающий код
+## Загрузка работающего кода
 
 Скачать **Insert an Empty Page at End of PDF File (Aspose.PDF)** из любого из перечисленных ниже социальных сайтов для разработки:
 

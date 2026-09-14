@@ -1,6 +1,6 @@
 ---
-title: Извлеките изображения из PDF с помощью Java
-linktitle: Извлеките изображения из PDF
+title: Извлечение изображений из PDF с помощью Java
+linktitle: Извлечение изображений из PDF
 type: docs
 weight: 20
 url: /ru/java/extract-images-from-the-pdf-file/

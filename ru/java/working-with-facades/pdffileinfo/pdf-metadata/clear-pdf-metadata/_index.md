@@ -1,6 +1,6 @@
 ---
-title: Очистите метаданные PDF
-linktitle: Очистите метаданные PDF
+title: Очистка метаданных PDF
+linktitle: Очистка метаданных PDF
 type: docs
 weight: 10
 url: /ru/java/clear-pdf-metadata/
@@ -14,7 +14,7 @@ TechArticle: true
 AlternativeHeadline: Очистка метаданных PDF с помощью Aspose.PDF for Java
 Abstract: Узнайте, как очистить метаданные PDF с помощью Aspose.PDF for Java. Пример на Java использует PdfFileInfo для удаления сохранённой информации о документе с помощью `clearInfo()`, а затем сохраняет очищенный PDF в новый файл.
 ---
-## Очистите метаданные PDF
+## Очистка метаданных PDF
 
 Используйте этот рабочий процесс, когда необходимо удалить сохранённую информацию о документе перед передачей или архивированием PDF.
 

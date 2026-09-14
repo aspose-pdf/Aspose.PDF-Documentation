@@ -1,6 +1,6 @@
 ---
-title: Откройте PDF документ программно
-linktitle: Откройте PDF
+title: Открытие PDF документа программно
+linktitle: Открытие PDF
 type: docs
 weight: 20
 url: /ru/java/open-pdf-document/
@@ -15,7 +15,7 @@ Abstract: В этой статье показано, как открыть су�
 ---
 Aspose.PDF for Java поддерживает несколько способов загрузки существующего PDF‑документа в зависимости от того, откуда поступают исходные данные.
 
-## Откройте PDF‑документ в Java
+## Открытие PDF‑документа в Java
 
 Вы можете открыть PDF‑документ:
 
@@ -23,7 +23,7 @@ Aspose.PDF for Java поддерживает несколько способов
 1. Откройте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) от an `InputStream`.
 1. Откройте зашифрованный [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) указав пароль.
 
-## Откройте документ из файла
+## Открытие документа из файла
 
 ```java
 public static void openDocumentFromFile(Path inputFile) {
@@ -33,7 +33,7 @@ public static void openDocumentFromFile(Path inputFile) {
 }
 ```
 
-## Откройте документ из потока
+## Открытие документа из потока
 
 ```java
 public static void openDocumentFromStream(Path inputFile) throws Exception {
@@ -45,7 +45,7 @@ public static void openDocumentFromStream(Path inputFile) throws Exception {
 }
 ```
 
-## Откройте зашифрованный документ
+## Открытие зашифрованного документа
 
 ```java
 public static void openDocumentEncrypted(Path inputFile) {

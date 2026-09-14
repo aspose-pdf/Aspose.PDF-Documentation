@@ -1,6 +1,6 @@
 ---
-title: Удалите метаданные из PDF в PHP
-linktitle: Удалите метаданные из PDF в PHP
+title: Удаление метаданных из PDF в PHP
+linktitle: Удаление метаданных из PDF в PHP
 type: docs
 weight: 70
 url: /ru/java/remove-metadata-from-pdf-in-php/

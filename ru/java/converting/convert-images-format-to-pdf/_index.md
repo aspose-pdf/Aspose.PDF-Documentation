@@ -1,6 +1,6 @@
 ---
-title: Конвертируйте форматы изображений в PDF на Java
-linktitle: Конвертируйте изображения в PDF
+title: Конвертация форматов изображений в PDF на Java
+linktitle: Конвертация изображений в PDF
 type: docs
 weight: 60
 url: /ru/java/convert-images-format-to-pdf/
@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как конверт
 ---
 Aspose.PDF for Java может конвертировать множество растровых и векторных форматов изображений в PDF‑документы.
 
-## Преобразуйте BMP в PDF
+## Преобразование BMP в PDF
 
 Используйте этот пример, когда BMP‑изображение должно быть вставлено в PDF‑документ.
 
@@ -36,7 +36,7 @@ public static void convertBmpToPdf(Path inputFile, Path outputFile) {
     }
 ```
 
-## Преобразуйте CGM в PDF
+## Преобразование CGM в PDF
 
 Используйте этот пример, когда файл графики CGM должен быть преобразован в PDF.
 
@@ -53,7 +53,7 @@ public static void convertCgmToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте DICOM в PDF
+## Конвертация DICOM в PDF
 
 Используйте этот пример, когда медицинское изображение DICOM следует обернуть в документ PDF.
 
@@ -79,7 +79,7 @@ public static void convertDicomToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте EMF в PDF с прямой загрузкой документа
+## Конвертация EMF в PDF с прямой загрузкой документа
 
 Используйте этот пример, когда файл EMF должен быть преобразован в PDF через основной путь загрузки EMF.
 
@@ -109,7 +109,7 @@ public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOE
 }
 ```
 
-## Конвертируйте EMF в PDF с альтернативным рабочим процессом
+## Конвертация EMF в PDF с альтернативным рабочим процессом
 
 Используйте этот пример, когда содержимое EMF должно быть преобразовано с использованием альтернативной настройки или потока композиции страниц.
 
@@ -137,7 +137,7 @@ public static void convertEmfToPdf02(Path inputFile, Path outputFile) throws IOE
 }
 ```
 
-## Преобразуйте GIF в PDF
+## Преобразование GIF в PDF
 
 Используйте этот пример, когда нужно добавить GIF‑изображение на страницу PDF.
 
@@ -158,7 +158,7 @@ public static void convertGifToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте JPEG в PDF
+## Преобразование JPEG в PDF
 
 Используйте этот пример, когда JPEG‑изображение должно быть преобразовано в одностраничный PDF.
 
@@ -179,7 +179,7 @@ public static void convertJpegToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте PNG в PDF
+## Конвертация PNG в PDF
 
 Используйте этот пример, когда PNG‑изображение должно быть упаковано в документ PDF.
 
@@ -200,7 +200,7 @@ public static void convertPngToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте SVG в PDF
+## Преобразование SVG в PDF
 
 Используйте этот пример, когда графику SVG необходимо отобразить внутри PDF‑документа.
 
@@ -217,7 +217,7 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте TIFF в PDF
+## Конвертация TIFF в PDF
 
 Используйте этот пример, когда TIFF‑изображение должно быть преобразовано в PDF.
 
@@ -238,7 +238,7 @@ public static void convertTiffToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертируйте CDR в PDF
+## Конвертация CDR в PDF
 
 Используйте этот пример, когда файл CorelDRAW CDR должен быть преобразован в PDF.
 

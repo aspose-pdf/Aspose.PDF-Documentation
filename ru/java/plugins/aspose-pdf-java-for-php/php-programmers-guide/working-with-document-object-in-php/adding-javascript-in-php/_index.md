@@ -1,6 +1,6 @@
 ---
-title: Добавьте JavaScript в PHP
-linktitle: Добавьте JavaScript в PHP
+title: Добавление JavaScript в PHP
+linktitle: Добавление JavaScript в PHP
 type: docs
 weight: 10
 url: /ru/java/adding-javascript-in-php/

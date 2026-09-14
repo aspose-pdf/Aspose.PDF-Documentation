@@ -1,6 +1,6 @@
 ---
-title: Оформите поле
-linktitle: Оформите поле
+title: Оформление поля
+linktitle: Оформление поля
 type: docs
 weight: 10
 url: /ru/java/decorate-field/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Оформить поле формы PDF в Java
 Abstract: В этой статье показано, как привязать существующий PDF, настроить FormFieldFacade с использованием цветов и выравнивания, оформить поле и сохранить обновлённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
-## Оформите поле
+## Оформление поля
 
 1. Привяжите исходный PDF к `FormEditor` фасад.
 2. Настройте `FormFieldFacade` с требуемыми цветами и выравниванием.

@@ -1,19 +1,19 @@
 ---
-title: Добавьте JavaScript с помощью DOM в Jython
-linktitle: Добавьте JavaScript с помощью DOM в Jython
+title: Добавление JavaScript с помощью DOM в Jython
+linktitle: Добавление JavaScript с помощью DOM в Jython
 type: docs
 weight: 10
 url: /ru/java/adding-javascript-using-dom-in-jython/
 description: Узнайте, как добавить JavaScript в PDF‑документ с помощью DOM в Jython, улучшая интерактивность внутри документа.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Добавьте Javascript
+## Aspose.PDF - Добавление Javascript
 
 Для проверки формата файла с использованием **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 
 Ошибка при выполнении макроса 'code': указано недопустимое значение для параметра lang
 
-## Скачайте исполняемый код
+## Загрузка исполняемого кода
 
 Скачайте работающий код с любого из указанных ниже сайтов социального кодинга:
 

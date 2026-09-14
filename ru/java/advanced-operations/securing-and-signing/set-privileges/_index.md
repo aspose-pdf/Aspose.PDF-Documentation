@@ -15,7 +15,7 @@ Abstract: В этой статье объясняется, как защищат
 ---
 Aspose.PDF for Java предоставляет операции безопасности PDF через `PdfFileSecurity` фасад.
 
-## Зашифруйте PDF с паролями пользователя и владельца
+## Шифрование PDF с паролями пользователя и владельца
 
 1. Создайте и привязать [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) обертка исходного PDF-документа.
 1. Настройте [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) и [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) свойства, необходимые для примера.
@@ -33,11 +33,11 @@ public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFi
 }
 ```
 
-## Зашифруйте PDF с использованием конкретного алгоритма
+## Шифрование PDF с использованием конкретного алгоритма
 
 `encryptPdfWithEncryptionAlgorithm` использует `KeySize.x256` вместе с `Algorithm.AES` применить более сильные параметры шифрования.
 
-## Расшифруйте защищённый PDF
+## Расшифровка защищённого PDF
 
 1. Создайте и привязать [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) обертка исходного PDF-документа.
 1. Расшифруйте защищённый документ с паролем владельца.
@@ -55,7 +55,7 @@ public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) 
 
 Набор примеров также включает `tryDecryptPdfWithoutException`, который возвращает `false` вместо выбрасывания исключения при неудачной расшифровке.
 
-## Измените пароли и сбросьте безопасность
+## Изменение паролей и сброс безопасности
 
 The `PdfFileSecurityExamples` класс демонстрирует:
 
@@ -63,7 +63,7 @@ The `PdfFileSecurityExamples` класс демонстрирует:
 - `changePasswordAndResetSecurity` изменить пароли и повторно применить привилегии за один шаг.
 - `tryChangePasswordWithoutException` для потока смены пароля без выбрасывания исключений.
 
-## Установите привилегии документа
+## Установка привилегий документа
 
 Чтобы ограничить действия, такие как печать и копирование:
 

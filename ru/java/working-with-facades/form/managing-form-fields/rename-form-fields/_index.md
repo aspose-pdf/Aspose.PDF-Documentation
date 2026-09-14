@@ -1,6 +1,6 @@
 ---
-title: Переименуйте поля формы
-linktitle: Переименуйте поля формы
+title: Переименование полей формы
+linktitle: Переименование полей формы
 type: docs
 weight: 30
 url: /ru/java/rename-form-fields/

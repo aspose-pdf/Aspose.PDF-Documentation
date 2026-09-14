@@ -1,6 +1,6 @@
 ---
-title: Оптимизируйте PDF-документ в Jython
-linktitle: Оптимизируйте PDF-документ в Jython
+title: Оптимизация PDF-документа в Jython
+linktitle: Оптимизация PDF-документа в Jython
 type: docs
 weight: 50
 url: /ru/java/optimize-pdf-document-in-jython/
@@ -10,7 +10,7 @@ lastmod: "2026-08-19"
 ## Aspose.PDF - Оптимизация
 
 Пример кода доступен по ссылке GitHub ниже.
-## Скачайте работающий код
+## Загрузка работающего кода
 
 Загрузить исполняемый код с любого из перечисленных ниже социальных сайтов:
 
