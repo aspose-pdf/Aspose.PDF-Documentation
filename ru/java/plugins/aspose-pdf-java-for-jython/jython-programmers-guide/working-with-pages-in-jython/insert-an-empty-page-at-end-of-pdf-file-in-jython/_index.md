@@ -1,13 +1,13 @@
 ---
-title: Вставить пустую страницу в конец PDF-файла в Jython
-linktitle: Вставить пустую страницу в конец PDF-файла в Jython
+title: Вставьте пустую страницу в конец PDF-файла в Jython
+linktitle: Вставьте пустую страницу в конец PDF-файла в Jython
 type: docs
 weight: 60
 url: /ru/java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
 description: Узнайте, как вставить пустую страницу в конец PDF-файла с помощью Jython и Aspose.PDF для настройки документов.
 lastmod: "2026-08-19"
 ---
-## **Aspose.PDF - Вставить пустую страницу в конец файла
+## **Aspose.PDF - Вставьте пустую страницу в конец файла
 
 Проверить формат файла с использованием **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 

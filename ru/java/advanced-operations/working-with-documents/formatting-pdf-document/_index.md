@@ -1,6 +1,6 @@
 ---
-title: Форматировать PDF-документы на Java
-linktitle: Форматирование PDF-документа
+title: Форматируйте PDF-документы на Java
+linktitle: Форматируйте PDF-документ
 type: docs
 weight: 11
 url: /ru/java/formatting-pdf-document/

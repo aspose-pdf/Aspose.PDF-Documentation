@@ -1,6 +1,6 @@
 ---
-title: Установить информацию о PDF-файле в Python
-linktitle: Установить информацию о PDF-файле в Python
+title: Установите информацию о PDF-файле в Python
+linktitle: Установите информацию о PDF-файле в Python
 type: docs
 weight: 90
 url: /ru/java/set-pdf-file-information-in-python/

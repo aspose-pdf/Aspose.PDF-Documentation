@@ -1,6 +1,6 @@
 ---
-title: Создать поле TextBox
-linktitle: Создать поле TextBox
+title: Создайте поле TextBox
+linktitle: Создайте поле TextBox
 type: docs
 weight: 10
 url: /ru/java/create-textbox-field/

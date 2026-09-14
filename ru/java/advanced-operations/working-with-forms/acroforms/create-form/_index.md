@@ -1,6 +1,6 @@
 ---
-title: Создать AcroForm - Создать заполняемый PDF на Java
-linktitle: Создать AcroForm
+title: Создайте AcroForm - Создайте заполняемый PDF на Java
+linktitle: Создайте AcroForm
 type: docs
 weight: 10
 url: /ru/java/create-form/

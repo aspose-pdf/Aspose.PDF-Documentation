@@ -1,6 +1,6 @@
 ---
-title: Добавление фонов PDF в Java
-linktitle: Добавление фонов
+title: Добавьте фон в PDF на Java
+linktitle: Добавьте фон
 type: docs
 weight: 20
 url: /ru/java/add-backgrounds/

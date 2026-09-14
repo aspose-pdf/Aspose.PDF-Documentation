@@ -1,6 +1,6 @@
 ---
-title: Добавить штампы страниц в PDF на Java
-linktitle: Добавление штампов страниц
+title: Добавьте штампы страниц в PDF на Java
+linktitle: Добавьте штампы страниц
 type: docs
 weight: 30
 url: /ru/java/page-stamps-in-the-pdf-file/

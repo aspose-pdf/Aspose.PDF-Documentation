@@ -1,6 +1,6 @@
 ---
-title: Извлечение страниц PDF в Java
-linktitle: Извлечение страниц PDF
+title: Извлеките страницы PDF в Java
+linktitle: Извлеките страницы PDF
 type: docs
 weight: 80
 url: /ru/java/extract-pages/

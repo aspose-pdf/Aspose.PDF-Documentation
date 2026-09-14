@@ -1,6 +1,6 @@
 ---
-title: Сменить пароль PDF‑файла
-linktitle: Сменить пароль PDF‑файла
+title: Смените пароль PDF‑файла
+linktitle: Смените пароль PDF‑файла
 type: docs
 weight: 10
 url: /ru/java/change-password/

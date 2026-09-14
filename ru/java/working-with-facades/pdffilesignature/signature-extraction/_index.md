@@ -1,6 +1,6 @@
 ---
-title: Извлечение подписи
-linktitle: Извлечение подписи
+title: Извлеките подпись
+linktitle: Извлеките подпись
 type: docs
 weight: 50
 url: /ru/java/signature-extraction/

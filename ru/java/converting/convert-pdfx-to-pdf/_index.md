@@ -1,6 +1,6 @@
 ---
-title: Преобразовать PDF/A и PDF/UA в PDF на Java
-linktitle: Преобразовать PDF/A и PDF/UA в PDF
+title: Преобразуйте PDF/A и PDF/UA в PDF на Java
+linktitle: Преобразуйте PDF/A и PDF/UA в PDF
 type: docs
 weight: 120
 url: /ru/java/convert-pdf_x-to-pdf/

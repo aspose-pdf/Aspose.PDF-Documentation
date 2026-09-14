@@ -1,6 +1,6 @@
 ---
-title: Получить смещение страницы
-linktitle: Получить смещение страницы
+title: Получите смещение страницы
+linktitle: Получите смещение страницы
 type: docs
 weight: 20
 url: /ru/java/get-page-offset/

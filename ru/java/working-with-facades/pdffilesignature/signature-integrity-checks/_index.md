@@ -1,6 +1,6 @@
 ---
-title: Проверка целостности подписи
-linktitle: Проверка целостности подписи
+title: Проверьте целостность подписи
+linktitle: Проверьте целостность подписи
 type: docs
 weight: 70
 url: /ru/java/signature-integrity-checks/

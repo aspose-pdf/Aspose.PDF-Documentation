@@ -1,6 +1,6 @@
 ---
-title: Получить информацию о PDF‑файле в Python
-linktitle: Получить информацию о PDF‑файле в Python
+title: Получите информацию о PDF‑файле в Python
+linktitle: Получите информацию о PDF‑файле в Python
 type: docs
 weight: 40
 url: /ru/java/get-pdf-file-information-in-python/

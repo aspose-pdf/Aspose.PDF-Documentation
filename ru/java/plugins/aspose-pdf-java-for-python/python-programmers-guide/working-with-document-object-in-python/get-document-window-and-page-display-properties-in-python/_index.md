@@ -1,6 +1,6 @@
 ---
-title: Получить свойства окна документа и отображения страниц в Python
-linktitle: Получить свойства окна документа и отображения страниц в Python
+title: Получите свойства окна документа и отображения страниц в Python
+linktitle: Получите свойства окна документа и отображения страниц в Python
 type: docs
 weight: 30
 url: /ru/java/get-document-window-and-page-display-properties-in-python/

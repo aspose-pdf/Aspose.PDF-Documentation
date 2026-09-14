@@ -1,6 +1,6 @@
 ---
-title: Получить информацию о странице
-linktitle: Получить информацию о странице
+title: Получите информацию о странице
+linktitle: Получите информацию о странице
 type: docs
 weight: 10
 url: /ru/java/get-page-info/

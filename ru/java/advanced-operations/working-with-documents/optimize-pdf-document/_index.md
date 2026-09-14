@@ -1,6 +1,6 @@
 ---
-title: Оптимизировать PDF-файлы в Java
-linktitle: Оптимизировать PDF
+title: Оптимизируйте PDF-файлы в Java
+linktitle: Оптимизируйте PDF
 type: docs
 weight: 30
 url: /ru/java/optimize-pdf/

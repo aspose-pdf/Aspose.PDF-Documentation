@@ -1,6 +1,6 @@
 ---
-title: Создать N-Up PDF документ
-linktitle: Создать N-Up PDF документ
+title: Создайте N-Up PDF документ
+linktitle: Создайте N-Up PDF документ
 type: docs
 weight: 10
 url: /ru/java/create-n-up-pdf-document/

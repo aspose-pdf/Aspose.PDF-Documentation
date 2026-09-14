@@ -1,6 +1,6 @@
 ---
-title: Защитить PDF-файлы в Java
-linktitle: Шифровать и расшифровать PDF-файл
+title: Защитите PDF-файлы в Java
+linktitle: Шифруйте и расшифруйте PDF-файл
 type: docs
 weight: 70
 url: /ru/java/protect-pdf-file/

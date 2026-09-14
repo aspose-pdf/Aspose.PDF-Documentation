@@ -1,6 +1,6 @@
 ---
-title: Добавить HTML‑строку с использованием DOM в Python
-linktitle: Добавить HTML‑строку с использованием DOM в Python
+title: Добавьте HTML‑строку с использованием DOM в Python
+linktitle: Добавьте HTML‑строку с использованием DOM в Python
 type: docs
 weight: 10
 url: /ru/java/add-html-string-using-dom-in-python/

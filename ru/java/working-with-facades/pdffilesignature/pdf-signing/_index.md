@@ -1,6 +1,6 @@
 ---
-title: Подписать PDF-документы
-linktitle: Подписать PDF-документы
+title: Подпишите PDF-документы
+linktitle: Подпишите PDF-документы
 type: docs
 weight: 10
 url: /ru/java/pdf-signing/

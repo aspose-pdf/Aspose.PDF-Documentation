@@ -1,6 +1,6 @@
 ---
-title: Добавить нумерацию Bates в PDF на Java
-linktitle: Добавление нумерации Bates
+title: Добавьте нумерацию Bates в PDF на Java
+linktitle: Добавьте нумерацию Bates
 type: docs
 weight: 10
 url: /ru/java/add-bates-numbering/

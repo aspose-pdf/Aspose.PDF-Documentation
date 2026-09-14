@@ -1,6 +1,6 @@
 ---
-title: Удалить формы из PDF в Java
-linktitle: Удалить формы
+title: Удалите формы из PDF в Java
+linktitle: Удалите формы
 type: docs
 weight: 70
 url: /ru/java/remove-form/

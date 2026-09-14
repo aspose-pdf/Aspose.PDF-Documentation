@@ -1,6 +1,6 @@
 ---
-title: Получить метаданные PDF
-linktitle: Получить метаданные PDF
+title: Получите метаданные PDF
+linktitle: Получите метаданные PDF
 type: docs
 weight: 20
 url: /ru/java/get-pdf-metadata/

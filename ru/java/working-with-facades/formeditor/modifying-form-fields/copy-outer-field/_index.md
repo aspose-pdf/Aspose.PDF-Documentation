@@ -1,6 +1,6 @@
 ---
-title: Копировать внешнее поле
-linktitle: Копировать внешнее поле
+title: Скопируйте внешнее поле
+linktitle: Скопируйте внешнее поле
 type: docs
 weight: 80
 url: /ru/java/copy-outer-field/

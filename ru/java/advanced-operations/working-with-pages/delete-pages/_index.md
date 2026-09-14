@@ -1,6 +1,6 @@
 ---
-title: Удалить страницы PDF в Java
-linktitle: Удаление страниц PDF
+title: Удалите страницы PDF в Java
+linktitle: Удалите страницы PDF
 type: docs
 weight: 80
 url: /ru/java/delete-pages/

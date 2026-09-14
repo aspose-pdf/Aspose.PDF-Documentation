@@ -1,6 +1,6 @@
 ---
-title: Создать PDF-файлы на Java
-linktitle: Создать PDF документ
+title: Создайте PDF-файлы на Java
+linktitle: Создайте PDF документ
 type: docs
 weight: 10
 url: /ru/java/create-pdf-document/

@@ -1,6 +1,6 @@
 ---
-title: Извлечь данные из AcroForm с помощью Java
-linktitle: Извлечь данные из AcroForm
+title: Извлеките данные из AcroForm с помощью Java
+linktitle: Извлеките данные из AcroForm
 type: docs
 weight: 50
 url: /ru/java/extract-data-from-acroform/

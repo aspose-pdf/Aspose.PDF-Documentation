@@ -1,6 +1,6 @@
 ---
-title: Добавить страницы PDF в Java
-linktitle: Добавление страниц
+title: Добавьте страницы PDF в Java
+linktitle: Добавьте страницы
 type: docs
 weight: 10
 url: /ru/java/add-pages/

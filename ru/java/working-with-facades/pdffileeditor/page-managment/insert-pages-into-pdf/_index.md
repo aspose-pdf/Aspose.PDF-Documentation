@@ -1,6 +1,6 @@
 ---
-title: Вставить страницы в PDF
-linktitle: Вставить страницы в PDF
+title: Вставьте страницы в PDF
+linktitle: Вставьте страницы в PDF
 type: docs
 weight: 40
 url: /ru/java/insert-pages-into-pdf/

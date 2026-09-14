@@ -1,6 +1,6 @@
 ---
-title: Копировать внутреннее поле
-linktitle: Копировать внутреннее поле
+title: Скопируйте внутреннее поле
+linktitle: Скопируйте внутреннее поле
 type: docs
 weight: 70
 url: /ru/java/copy-inner-field/

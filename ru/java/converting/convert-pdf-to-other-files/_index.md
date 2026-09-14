@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF в EPUB, Text, XPS и другие форматы на Java
-linktitle: Конвертировать PDF в другие форматы
+title: Конвертируйте PDF в EPUB, Text, XPS и другие форматы на Java
+linktitle: Конвертируйте PDF в другие форматы
 type: docs
 weight: 90
 url: /ru/java/convert-pdf-to-other-files/

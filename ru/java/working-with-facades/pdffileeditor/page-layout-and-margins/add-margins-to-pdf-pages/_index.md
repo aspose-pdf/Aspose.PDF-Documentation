@@ -1,6 +1,6 @@
 ---
-title: Добавить поля к страницам PDF
-linktitle: Добавить поля к страницам PDF
+title: Добавьте поля к страницам PDF
+linktitle: Добавьте поля к страницам PDF
 type: docs
 weight: 10
 url: /ru/java/add-margins-to-pdf-pages/

@@ -1,6 +1,6 @@
 ---
-title: Получить привилегии документа
-linktitle: Получить привилегии документа
+title: Получите привилегии документа
+linktitle: Получите привилегии документа
 type: docs
 weight: 10
 url: /ru/java/get-document-privileges/

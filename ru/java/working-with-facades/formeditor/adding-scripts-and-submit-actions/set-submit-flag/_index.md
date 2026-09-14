@@ -1,6 +1,6 @@
 ---
-title: Установить флаг отправки
-linktitle: Установить флаг отправки
+title: Установите флаг отправки
+linktitle: Установите флаг отправки
 type: docs
 weight: 40
 url: /ru/java/set-submit-flag/

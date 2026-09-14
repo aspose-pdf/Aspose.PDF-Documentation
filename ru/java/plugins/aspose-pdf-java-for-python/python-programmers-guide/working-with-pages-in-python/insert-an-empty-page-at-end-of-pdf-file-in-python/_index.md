@@ -1,6 +1,6 @@
 ---
-title: Вставить пустую страницу в конец PDF-файла на Python
-linktitle: Вставить пустую страницу в конец PDF-файла на Python
+title: Вставьте пустую страницу в конец PDF-файла на Python
+linktitle: Вставьте пустую страницу в конец PDF-файла на Python
 type: docs
 weight: 60
 url: /ru/java/insert-an-empty-page-at-end-of-pdf-file-in-python/

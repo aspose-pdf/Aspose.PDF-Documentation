@@ -1,6 +1,6 @@
 ---
-title: Создать поле RadioButton
-linktitle: Создать поле RadioButton
+title: Создайте поле RadioButton
+linktitle: Создайте поле RadioButton
 type: docs
 weight: 50
 url: /ru/java/create-radiobutton-field/

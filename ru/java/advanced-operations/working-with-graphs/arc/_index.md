@@ -1,6 +1,6 @@
 ---
-title: Добавить формы дуги в PDF на Java
-linktitle: Добавить дугу
+title: Добавьте формы дуги в PDF на Java
+linktitle: Добавьте дугу
 type: docs
 weight: 10
 url: /ru/java/add-arc/

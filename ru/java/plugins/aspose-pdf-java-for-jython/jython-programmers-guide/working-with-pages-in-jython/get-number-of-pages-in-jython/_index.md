@@ -1,13 +1,13 @@
 ---
-title: Получить количество страниц в Jython
-linktitle: Получить количество страниц в Jython
+title: Получите количество страниц в Jython
+linktitle: Получите количество страниц в Jython
 type: docs
 weight: 30
 url: /ru/java/get-number-of-pages-in-jython/
 description: Узнайте, как получить количество страниц в PDF‑документе, используя Jython и Aspose.PDF для управления документами.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Получить количество страниц
+## Aspose.PDF - Получите количество страниц
 
 Пример кода доступен по ссылке GitHub ниже.
 ## Скачайте исполняемый код

@@ -1,6 +1,6 @@
 ---
-title: Создание полей формы
-linktitle: Создание полей формы
+title: Создайте поля формы
+linktitle: Создайте поля формы
 type: docs
 weight: 10
 url: /ru/java/creating-form-field/

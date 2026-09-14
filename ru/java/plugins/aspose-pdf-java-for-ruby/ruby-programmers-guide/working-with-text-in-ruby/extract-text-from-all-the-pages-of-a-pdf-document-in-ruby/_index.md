@@ -1,6 +1,6 @@
 ---
-title: Извлечение текста со всех страниц PDF‑документа на Ruby
-linktitle: Извлечение текста со всех страниц PDF‑документа на Ruby
+title: Извлеките текст со всех страниц PDF‑документа на Ruby
+linktitle: Извлеките текст со всех страниц PDF‑документа на Ruby
 type: docs
 weight: 30
 url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/

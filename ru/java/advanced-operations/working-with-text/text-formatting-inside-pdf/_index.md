@@ -1,6 +1,6 @@
 ---
-title: Форматировать текст PDF в Java
-linktitle: Форматирование текста внутри PDF
+title: Форматируйте текст PDF в Java
+linktitle: Форматируйте текст внутри PDF
 type: docs
 weight: 70
 url: /ru/java/text-formatting-inside-pdf/
@@ -538,7 +538,7 @@ public static void addEndnoteCustomText(Path outputFile) throws Exception {
 }
 ```
 
-## Принудительно разместить содержимое таблицы на новой странице
+## Принудительно разместите содержимое таблицы на новой странице
 
 Используйте этот пример, когда форматированный контент должен явно начинаться с новой страницы.
 

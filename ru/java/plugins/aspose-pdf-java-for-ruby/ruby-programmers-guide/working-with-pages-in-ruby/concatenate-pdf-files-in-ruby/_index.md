@@ -1,13 +1,13 @@
 ---
-title: Объединить PDF-файлы в Ruby
-linktitle: Объединить PDF-файлы в Ruby
+title: Объедините PDF-файлы в Ruby
+linktitle: Объедините PDF-файлы в Ruby
 type: docs
 weight: 10
 url: /ru/java/concatenate-pdf-files-in-ruby/
 description: Эффективно объединяйте несколько PDF в один документ с помощью Ruby и Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Объединить PDF-файлы
+## Aspose.PDF - Объедините PDF-файлы
 
 Чтобы объединить PDF-файлы, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **ConcatenatePdfFiles**.
 

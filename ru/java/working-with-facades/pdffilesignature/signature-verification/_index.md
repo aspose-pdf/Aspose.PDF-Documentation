@@ -1,6 +1,6 @@
 ---
-title: Проверка подписи
-linktitle: Проверка подписи
+title: Проверьте подпись
+linktitle: Проверьте подпись
 type: docs
 weight: 90
 url: /ru/java/signature-verification/

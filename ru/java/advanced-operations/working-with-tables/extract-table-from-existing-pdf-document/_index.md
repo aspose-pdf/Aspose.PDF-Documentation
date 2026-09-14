@@ -1,6 +1,6 @@
 ---
-title: Извлечение таблиц из PDF на Java
-linktitle: Извлечь таблицу
+title: Извлеките таблицы из PDF на Java
+linktitle: Извлеките таблицу
 type: docs
 weight: 20
 url: /ru/java/extracting-table/

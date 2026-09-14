@@ -1,6 +1,6 @@
 ---
-title: Создать поле CheckBox
-linktitle: Создать поле CheckBox
+title: Создайте поле CheckBox
+linktitle: Создайте поле CheckBox
 type: docs
 weight: 20
 url: /ru/java/create-checkbox-field/

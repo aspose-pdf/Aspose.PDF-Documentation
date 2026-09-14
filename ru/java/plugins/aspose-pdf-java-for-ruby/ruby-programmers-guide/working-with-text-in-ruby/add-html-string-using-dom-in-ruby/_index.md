@@ -1,13 +1,13 @@
 ---
-title: Добавить HTML‑строку с использованием DOM в Ruby
-linktitle: Добавить HTML‑строку с использованием DOM в Ruby
+title: Добавьте HTML‑строку с использованием DOM в Ruby
+linktitle: Добавьте HTML‑строку с использованием DOM в Ruby
 type: docs
 weight: 10
 url: /ru/java/add-html-string-using-dom-in-ruby/
 description: Узнайте, как добавить HTML‑строку в PDF‑документ с помощью API DOM в Ruby, используя Aspose.PDF для динамического создания контента.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Добавить HTML
+## Aspose.PDF - Добавьте HTML
 
 Чтобы добавить HTML‑строку в PDF‑документ, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **AddHtml**.
 

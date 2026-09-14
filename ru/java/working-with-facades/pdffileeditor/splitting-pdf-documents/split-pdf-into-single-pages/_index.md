@@ -1,6 +1,6 @@
 ---
-title: Разделить PDF на отдельные страницы
-linktitle: Разделить PDF на отдельные страницы
+title: Разделите PDF на отдельные страницы
+linktitle: Разделите PDF на отдельные страницы
 type: docs
 weight: 30
 url: /ru/java/split-pdf-into-single-pages/

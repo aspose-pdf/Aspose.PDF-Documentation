@@ -1,6 +1,6 @@
 ---
-title: Удалить поле
-linktitle: Удалить поле
+title: Удалите поле
+linktitle: Удалите поле
 type: docs
 weight: 40
 url: /ru/java/remove-field/

@@ -1,6 +1,6 @@
 ---
-title: Установить метаданные PDF
-linktitle: Установить метаданные PDF
+title: Установите метаданные PDF
+linktitle: Установите метаданные PDF
 type: docs
 weight: 50
 url: /ru/java/set-pdf-metadata/

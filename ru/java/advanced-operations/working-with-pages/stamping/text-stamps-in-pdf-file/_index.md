@@ -1,5 +1,5 @@
 ---
-title: Добавить текстовые штампы в PDF на Java
+title: Добавьте текстовые штампы в PDF на Java
 linktitle: Текстовые штампы в PDF-файле
 type: docs
 weight: 20

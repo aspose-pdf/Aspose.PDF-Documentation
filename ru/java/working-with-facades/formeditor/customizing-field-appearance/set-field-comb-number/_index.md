@@ -1,6 +1,6 @@
 ---
-title: Установить число ячеек поля
-linktitle: Установить число ячеек поля
+title: Установите число ячеек поля
+linktitle: Установите число ячеек поля
 type: docs
 weight: 60
 url: /ru/java/set-field-comb-number/

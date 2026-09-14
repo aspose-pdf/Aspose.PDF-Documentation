@@ -1,6 +1,6 @@
 ---
-title: Создать поле ListBox
-linktitle: Создать поле ListBox
+title: Создайте поле ListBox
+linktitle: Создайте поле ListBox
 type: docs
 weight: 40
 url: /ru/java/create-listbox-field/

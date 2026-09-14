@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF в форматы изображений на Java
-linktitle: Конвертировать PDF в изображения
+title: Конвертируйте PDF в форматы изображений на Java
+linktitle: Конвертируйте PDF в изображения
 type: docs
 weight: 70
 url: /ru/java/convert-pdf-to-images-format/

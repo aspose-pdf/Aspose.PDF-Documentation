@@ -1,6 +1,6 @@
 ---
-title: Добавить резиновую печать
-linktitle: Добавить резиновую печать
+title: Добавьте резиновую печать
+linktitle: Добавьте резиновую печать
 type: docs
 weight: 10
 url: /ru/java/add-rubber-stamp/

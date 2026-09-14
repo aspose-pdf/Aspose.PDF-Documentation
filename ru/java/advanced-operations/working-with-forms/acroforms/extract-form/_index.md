@@ -1,6 +1,6 @@
 ---
-title: Извлечение AcroForm — извлечение данных формы из PDF на Java
-linktitle: Извлечение AcroForm
+title: Извлеките AcroForm и данные формы из PDF на Java
+linktitle: Извлеките AcroForm
 type: docs
 weight: 30
 url: /ru/java/extract-form/

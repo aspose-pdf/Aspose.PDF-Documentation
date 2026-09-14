@@ -1,6 +1,6 @@
 ---
-title: Загрузка и настройка Aspose.Pdf в Struts 1.3
-linktitle: Загрузка и настройка Aspose.Pdf в Struts 1.3
+title: Загрузите и настройте Aspose.PDF в Struts 1.3
+linktitle: Загрузите и настройте Aspose.PDF в Struts 1.3
 type: docs
 weight: 10
 url: /ru/java/downloads-and-configure-aspose-pdf-in-struts-1-3/

@@ -1,6 +1,6 @@
 ---
 title: Как установить Aspose.PDF for Java
-linktitle: Установка
+linktitle: Установите Aspose.PDF for Java
 type: docs
 weight: 40
 url: /ru/java/installation/

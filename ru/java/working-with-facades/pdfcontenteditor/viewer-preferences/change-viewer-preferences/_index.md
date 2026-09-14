@@ -1,6 +1,6 @@
 ---
-title: Изменить параметры просмотра
-linktitle: Изменить параметры просмотра
+title: Измените параметры просмотра
+linktitle: Измените параметры просмотра
 type: docs
 weight: 20
 url: /ru/java/change-viewer-preferences/

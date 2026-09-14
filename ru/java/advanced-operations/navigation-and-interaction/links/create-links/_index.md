@@ -1,6 +1,6 @@
 ---
-title: Создать ссылки PDF в Java
-linktitle: Создать ссылки
+title: Создайте ссылки PDF в Java
+linktitle: Создайте ссылки
 type: docs
 weight: 10
 url: /ru/java/create-links/

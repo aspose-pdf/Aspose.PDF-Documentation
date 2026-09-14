@@ -1,6 +1,6 @@
 ---
-title: Извлечь страницы из PDF
-linktitle: Извлечь страницы из PDF
+title: Извлеките страницы из PDF
+linktitle: Извлеките страницы из PDF
 type: docs
 weight: 30
 url: /ru/java/extract-pages-from-pdf/

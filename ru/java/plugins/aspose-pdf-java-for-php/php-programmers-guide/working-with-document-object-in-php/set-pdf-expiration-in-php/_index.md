@@ -1,13 +1,13 @@
 ---
-title: Установить истечение срока действия PDF в PHP
-linktitle: Установить истечение срока действия PDF в PHP
+title: Установите истечение срока действия PDF в PHP
+linktitle: Установите истечение срока действия PDF в PHP
 type: docs
 weight: 80
 url: /ru/java/set-pdf-expiration-in-php/
 description: Узнайте, как установить срок действия PDF‑файла в PHP, контролируя доступ с помощью Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — Установить истечение срока действия PDF
+## Aspose.PDF — Установите истечение срока действия PDF
 
 Чтобы установить срок действия PDF‑документа, используя **Aspose.PDF Java for PHP**, просто вызовите класс **SetExpiration**.
 

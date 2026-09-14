@@ -1,6 +1,6 @@
 ---
-title: Переименовать поле
-linktitle: Переименовать поле
+title: Переименуйте поле
+linktitle: Переименуйте поле
 type: docs
 weight: 50
 url: /ru/java/rename-field/

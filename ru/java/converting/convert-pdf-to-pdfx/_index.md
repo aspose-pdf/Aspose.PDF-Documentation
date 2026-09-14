@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF в PDF/A, PDF/E и PDF/X на Java
-linktitle: Конвертировать PDF в PDF/A, PDF/E и PDF/X
+title: Конвертируйте PDF в PDF/A, PDF/E и PDF/X на Java
+linktitle: Конвертируйте PDF в PDF/A, PDF/E и PDF/X
 type: docs
 weight: 120
 url: /ru/java/convert-pdf-to-pdf_x/

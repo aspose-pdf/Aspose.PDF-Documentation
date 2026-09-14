@@ -1,6 +1,6 @@
 ---
-title: Добавить вложение
-linktitle: Добавить вложение
+title: Добавьте вложение
+linktitle: Добавьте вложение
 type: docs
 weight: 10
 url: /ru/java/add-attachment/

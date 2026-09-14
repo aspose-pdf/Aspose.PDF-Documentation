@@ -1,6 +1,6 @@
 ---
-title: Удалить метаданные из PDF на Ruby
-linktitle: Удалить метаданные из PDF на Ruby
+title: Удалите метаданные из PDF на Ruby
+linktitle: Удалите метаданные из PDF на Ruby
 type: docs
 weight: 90
 url: /ru/java/remove-metadata-from-pdf-in-ruby/

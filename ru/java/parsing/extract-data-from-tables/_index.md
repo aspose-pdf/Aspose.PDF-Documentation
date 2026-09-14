@@ -1,6 +1,6 @@
 ---
-title: Извлечь данные из таблицы в PDF с помощью Java
-linktitle: Извлечь данные из таблицы
+title: Извлеките данные из таблицы в PDF с помощью Java
+linktitle: Извлеките данные из таблицы
 type: docs
 weight: 40
 url: /ru/java/extract-data-from-table-in-pdf/

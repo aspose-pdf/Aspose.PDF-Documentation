@@ -1,6 +1,6 @@
 ---
-title: Создать кнопку отправки
-linktitle: Создать кнопку отправки
+title: Создайте кнопку отправки
+linktitle: Создайте кнопку отправки
 type: docs
 weight: 60
 url: /ru/java/create-submit-button/

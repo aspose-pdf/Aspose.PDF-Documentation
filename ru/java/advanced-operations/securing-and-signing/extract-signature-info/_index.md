@@ -1,6 +1,6 @@
 ---
-title: Извлечение информации о подписи из PDF в Java
-linktitle: Извлечение деталей из подписи
+title: Извлеките информацию о подписи из PDF в Java
+linktitle: Извлеките сведения о подписи
 type: docs
 weight: 20
 url: /ru/java/extract-image-and-signature-information/

@@ -1,6 +1,6 @@
 ---
-title: Удалить действие поля
-linktitle: Удалить действие поля
+title: Удалите действие поля
+linktitle: Удалите действие поля
 type: docs
 weight: 50
 url: /ru/java/remove-field-action/

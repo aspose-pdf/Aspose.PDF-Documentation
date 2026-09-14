@@ -1,6 +1,6 @@
 ---
-title: Добавить таблицы в PDF на Java
-linktitle: Добавление таблиц
+title: Добавьте таблицы в PDF на Java
+linktitle: Добавьте таблицы
 type: docs
 weight: 10
 url: /ru/java/adding-tables/

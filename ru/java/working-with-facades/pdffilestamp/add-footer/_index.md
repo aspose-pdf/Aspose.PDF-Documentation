@@ -1,6 +1,6 @@
 ---
-title: Добавить нижний колонтитул в PDF
-linktitle: Добавить нижний колонтитул в PDF
+title: Добавьте нижний колонтитул в PDF
+linktitle: Добавьте нижний колонтитул в PDF
 type: docs
 weight: 10
 url: /ru/java/add-footer/

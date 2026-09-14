@@ -1,13 +1,13 @@
 ---
-title: Разделить PDF-файл на отдельные страницы в Ruby
-linktitle: Разделить PDF-файл на отдельные страницы в Ruby
+title: Разделите PDF-файл на отдельные страницы в Ruby
+linktitle: Разделите PDF-файл на отдельные страницы в Ruby
 type: docs
 weight: 80
 url: /ru/java/split-pdf-file-into-individual-pages-in-ruby/
 description: Узнайте, как разделить PDF-файл на отдельные страницы с помощью Ruby и Aspose.PDF, что упрощает управление и извлечение содержимого.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Разделить страницы
+## Aspose.PDF - Разделите страницы
 
 Чтобы разделить PDF‑документ на отдельные страницы, используя **Aspose.PDF Java for Ruby**, достаточно вызвать модуль **SplitAllPages**.
 

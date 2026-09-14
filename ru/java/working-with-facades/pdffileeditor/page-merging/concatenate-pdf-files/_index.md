@@ -1,6 +1,6 @@
 ---
-title: Объединить несколько PDF‑файлов
-linktitle: Объединить несколько PDF‑файлов
+title: Объедините несколько PDF‑файлов
+linktitle: Объедините несколько PDF‑файлов
 type: docs
 weight: 20
 url: /ru/java/concatenate-pdf-files/

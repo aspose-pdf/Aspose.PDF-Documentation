@@ -1,6 +1,6 @@
 ---
-title: Добавить текст в PDF на Java
-linktitle: Добавить текст в PDF
+title: Добавьте текст в PDF на Java
+linktitle: Добавьте текст в PDF
 type: docs
 weight: 10
 url: /ru/java/add-text-to-pdf-file/

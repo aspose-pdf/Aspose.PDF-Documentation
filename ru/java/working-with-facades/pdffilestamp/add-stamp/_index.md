@@ -1,6 +1,6 @@
 ---
-title: Добавить штамп в PDF
-linktitle: Добавить штамп в PDF
+title: Добавьте штамп в PDF
+linktitle: Добавьте штамп в PDF
 type: docs
 weight: 40
 url: /ru/java/add-stamp/

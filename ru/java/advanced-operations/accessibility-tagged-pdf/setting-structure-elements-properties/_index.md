@@ -1,6 +1,6 @@
 ---
-title: Установить свойства элементов структуры Tagged PDF в Java
-linktitle: Настройка свойств Structure Elements
+title: Установите свойства элементов структуры Tagged PDF в Java
+linktitle: Настройте свойства Structure Elements
 type: docs
 weight: 30
 url: /ru/java/setting-structure-elements-properties/

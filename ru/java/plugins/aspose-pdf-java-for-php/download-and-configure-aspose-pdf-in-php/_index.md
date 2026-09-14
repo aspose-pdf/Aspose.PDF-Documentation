@@ -1,6 +1,6 @@
 ---
-title: Скачать и настроить Aspose.PDF в PHP
-linktitle: Скачать и настроить Aspose.PDF в PHP
+title: Скачайте и настройте Aspose.PDF в PHP
+linktitle: Скачайте и настройте Aspose.PDF в PHP
 type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-php/

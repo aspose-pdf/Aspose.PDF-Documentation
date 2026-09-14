@@ -1,6 +1,6 @@
 ---
-title: Добавление JavaScript в Ruby
-linktitle: Добавление JavaScript в Ruby
+title: Добавьте JavaScript в Ruby
+linktitle: Добавьте JavaScript в Ruby
 type: docs
 weight: 10
 url: /ru/java/adding-javascript-in-ruby/

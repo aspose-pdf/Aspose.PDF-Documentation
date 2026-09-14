@@ -1,6 +1,6 @@
 ---
-title: Установить скрипт поля
-linktitle: Установить скрипт поля
+title: Установите скрипт поля
+linktitle: Установите скрипт поля
 type: docs
 weight: 20
 url: /ru/java/set-field-script/

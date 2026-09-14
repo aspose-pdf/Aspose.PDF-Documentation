@@ -1,13 +1,13 @@
 ---
-title: Установить срок действия PDF в Ruby
-linktitle: Установить срок действия PDF в Ruby
+title: Установите срок действия PDF в Ruby
+linktitle: Установите срок действия PDF в Ruby
 type: docs
 weight: 110
 url: /ru/java/set-pdf-expiration-in-ruby/
 description: Реализуйте даты истечения срока действия в PDF, используя Aspose.PDF for Ruby, для документов с ограниченным сроком действия.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Установить срок действия PDF
+## Aspose.PDF - Установите срок действия PDF
 
 Чтобы установить срок действия PDF‑документа, используя **Aspose.PDF Java for Ruby**, просто вызовите модуль **SetExpiration**.
 

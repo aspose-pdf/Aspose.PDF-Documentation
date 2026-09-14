@@ -1,6 +1,6 @@
 ---
-title: Извлечь текст со всех страниц PDF‑документа в Jython
-linktitle: Извлечь текст со всех страниц PDF‑документа в Jython
+title: Извлеките текст со всех страниц PDF‑документа в Jython
+linktitle: Извлеките текст со всех страниц PDF‑документа в Jython
 type: docs
 weight: 30
 url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/

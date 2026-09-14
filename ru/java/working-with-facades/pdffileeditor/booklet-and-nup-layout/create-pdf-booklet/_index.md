@@ -1,6 +1,6 @@
 ---
-title: Создать PDF-брошюру
-linktitle: Создать PDF-брошюру
+title: Создайте PDF-брошюру
+linktitle: Создайте PDF-брошюру
 type: docs
 weight: 20
 url: /ru/java/create-pdf-booklet/

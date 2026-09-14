@@ -1,5 +1,5 @@
 ---
-title: Переместить страницы PDF в Java
+title: Переместите страницы PDF в Java
 linktitle: Перемещение страниц PDF
 type: docs
 weight: 100

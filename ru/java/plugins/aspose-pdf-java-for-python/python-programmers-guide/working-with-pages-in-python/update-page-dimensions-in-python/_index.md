@@ -1,6 +1,6 @@
 ---
-title: Обновление размеров страницы в Python
-linktitle: Обновление размеров страницы в Python
+title: Обновите размеры страницы в Python
+linktitle: Обновите размеры страницы в Python
 type: docs
 weight: 90
 url: /ru/java/update-page-dimensions-in-python/

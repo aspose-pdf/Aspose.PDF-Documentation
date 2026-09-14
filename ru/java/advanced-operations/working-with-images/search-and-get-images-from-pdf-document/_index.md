@@ -1,6 +1,6 @@
 ---
-title: Получать и искать изображения в PDF
-linktitle: Получать и искать изображения
+title: Получайте и ищите изображения в PDF
+linktitle: Получайте и ищите изображения
 type: docs
 weight: 40
 url: /ru/java/search-and-get-images-from-pdf-document/

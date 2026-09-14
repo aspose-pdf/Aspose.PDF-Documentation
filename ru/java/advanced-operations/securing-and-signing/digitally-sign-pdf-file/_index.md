@@ -1,6 +1,6 @@
 ---
-title: Добавить цифровую подпись или подписать PDF в Java
-linktitle: Подписать PDF цифровой подписью
+title: Добавьте цифровую подпись или подпишите PDF в Java
+linktitle: Подпишите PDF цифровой подписью
 type: docs
 weight: 10
 url: /ru/java/digitally-sign-pdf-file/

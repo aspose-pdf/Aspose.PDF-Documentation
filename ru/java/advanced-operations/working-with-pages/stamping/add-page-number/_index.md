@@ -1,6 +1,6 @@
 ---
-title: Добавить номера страниц в PDF на Java
-linktitle: Добавление номера страницы
+title: Добавьте номера страниц в PDF на Java
+linktitle: Добавьте номер страницы
 type: docs
 weight: 30
 url: /ru/java/add-page-number/

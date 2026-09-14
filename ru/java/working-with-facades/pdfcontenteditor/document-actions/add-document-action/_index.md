@@ -1,6 +1,6 @@
 ---
-title: Добавить действие к документу
-linktitle: Добавить действие к документу
+title: Добавьте действие к документу
+linktitle: Добавьте действие к документу
 type: docs
 weight: 10
 url: /ru/java/add-document-action/

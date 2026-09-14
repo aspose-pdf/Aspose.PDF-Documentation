@@ -1,6 +1,6 @@
 ---
-title: Установить срок действия PDF в Python
-linktitle: Установить срок действия PDF в Python
+title: Установите срок действия PDF в Python
+linktitle: Установите срок действия PDF в Python
 type: docs
 weight: 80
 url: /ru/java/set-pdf-expiration-in-python/

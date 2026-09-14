@@ -1,6 +1,6 @@
 ---
-title: Заменить изображение в существующем PDF‑файле с помощью Java
-linktitle: Заменить изображение
+title: Замените изображение в существующем PDF‑файле с помощью Java
+linktitle: Замените изображение
 type: docs
 weight: 70
 url: /ru/java/replace-image-in-existing-pdf-file/

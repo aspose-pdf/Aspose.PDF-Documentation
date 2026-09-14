@@ -1,5 +1,5 @@
 ---
-title: Добавить всплывающие подсказки к тексту PDF в Java
+title: Добавьте всплывающие подсказки к тексту PDF в Java
 linktitle: PDF подсказка
 type: docs
 weight: 20

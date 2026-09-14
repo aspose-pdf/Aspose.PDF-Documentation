@@ -1,6 +1,6 @@
 ---
-title: Добавить элемент списка
-linktitle: Добавить элемент списка
+title: Добавьте элемент списка
+linktitle: Добавьте элемент списка
 type: docs
 weight: 10
 url: /ru/java/add-list-item/

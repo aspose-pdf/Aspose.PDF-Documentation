@@ -1,6 +1,6 @@
 ---
-title: Добавить криволинейные формы в PDF на Java
-linktitle: Добавить кривую
+title: Добавьте криволинейные формы в PDF на Java
+linktitle: Добавьте кривую
 type: docs
 weight: 30
 url: /ru/java/add-curve/

@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF в Word на Java
-linktitle: Конвертировать PDF в Word
+title: Конвертируйте PDF в Word на Java
+linktitle: Конвертируйте PDF в Word
 type: docs
 weight: 10
 url: /ru/java/convert-pdf-to-word/

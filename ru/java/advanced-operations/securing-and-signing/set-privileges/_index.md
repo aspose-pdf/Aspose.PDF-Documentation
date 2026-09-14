@@ -55,7 +55,7 @@ public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) 
 
 Набор примеров также включает `tryDecryptPdfWithoutException`, который возвращает `false` вместо выбрасывания исключения при неудачной расшифровке.
 
-## Измените пароли и сбросить безопасность
+## Измените пароли и сбросьте безопасность
 
 The `PdfFileSecurityExamples` класс демонстрирует:
 

@@ -1,13 +1,13 @@
 ---
-title: Вставить пустую страницу в конец PDF‑файла на Ruby
-linktitle: Вставить пустую страницу в конец PDF‑файла на Ruby
+title: Вставьте пустую страницу в конец PDF‑файла на Ruby
+linktitle: Вставьте пустую страницу в конец PDF‑файла на Ruby
 type: docs
 weight: 60
 url: /ru/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
 description: Узнайте, как вставить пустую страницу в конец PDF‑документа с помощью Ruby и Aspose.PDF, добавляя гибкость вашим задачам обработки PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — вставить пустую страницу в конец PDF‑файла
+## Aspose.PDF — вставьте пустую страницу в конец PDF‑файла
 
 Чтобы вставить пустую страницу в конец PDF‑документа с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **InsertEmptyPageAtEndOfFile**.
 

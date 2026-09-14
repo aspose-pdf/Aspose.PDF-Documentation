@@ -1,6 +1,6 @@
 ---
-title: Извлечь вложения из PDF
-linktitle: Извлечь вложения
+title: Извлеките вложения из PDF
+linktitle: Извлеките вложения
 type: docs
 weight: 50
 url: /ru/java/extract-attachment/

@@ -1,6 +1,6 @@
 ---
 title: Улучшение извлечения текста из многоколоночных PDF
-linktitle: Извлечение текста из многоколоночных PDF
+linktitle: Извлеките текст из многоколоночных PDF
 type: docs
 weight: 30
 url: /ru/java/text-extraction-from-multi-column-pdf/

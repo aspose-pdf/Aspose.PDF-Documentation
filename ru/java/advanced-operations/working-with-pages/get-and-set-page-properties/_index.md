@@ -1,6 +1,6 @@
 ---
-title: Получить и установить свойства страниц PDF в Java
-linktitle: Получение и установка свойств страниц
+title: Получите и установите свойства страниц PDF в Java
+linktitle: Получите и установите свойства страниц
 type: docs
 weight: 90
 url: /ru/java/get-and-set-page-properties/

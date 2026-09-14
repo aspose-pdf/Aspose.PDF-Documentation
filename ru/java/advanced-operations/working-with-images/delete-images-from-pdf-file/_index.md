@@ -1,6 +1,6 @@
 ---
-title: Удалить изображения из PDF-файла с помощью Java
-linktitle: Удалить изображения
+title: Удалите изображения из PDF-файла с помощью Java
+linktitle: Удалите изображения
 type: docs
 weight: 20
 url: /ru/java/delete-images-from-pdf-file/

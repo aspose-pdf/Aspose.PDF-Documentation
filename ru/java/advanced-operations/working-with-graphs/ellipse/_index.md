@@ -1,6 +1,6 @@
 ---
-title: Добавить эллиптические фигуры в PDF на Java
-linktitle: Добавить эллипс
+title: Добавьте эллиптические фигуры в PDF на Java
+linktitle: Добавьте эллипс
 type: docs
 weight: 60
 url: /ru/java/add-ellipse/

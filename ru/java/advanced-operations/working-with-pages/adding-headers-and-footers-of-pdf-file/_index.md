@@ -1,6 +1,6 @@
 ---
-title: Добавить заголовки и колонтитулы PDF в Java
-linktitle: Добавление заголовка и колонтитула в PDF
+title: Добавьте заголовки и колонтитулы PDF в Java
+linktitle: Добавьте верхний и нижний колонтитулы в PDF
 type: docs
 weight: 50
 url: /ru/java/add-headers-and-footers-of-pdf-file/

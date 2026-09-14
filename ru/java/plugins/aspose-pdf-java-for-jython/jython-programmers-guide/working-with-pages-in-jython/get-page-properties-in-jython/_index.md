@@ -1,13 +1,13 @@
 ---
-title: Получить свойства страниц в Jython
-linktitle: Получить свойства страниц в Jython
+title: Получите свойства страниц в Jython
+linktitle: Получите свойства страниц в Jython
 type: docs
 weight: 50
 url: /ru/java/get-page-properties-in-jython/
 description: Изучите, как получить свойства отдельных страниц PDF‑документа с помощью Jython и Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Получить свойства страниц
+## Aspose.PDF - Получите свойства страниц
 
 Для проверки формата файла с использованием **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 

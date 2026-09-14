@@ -105,7 +105,7 @@ License lic = new License();
 System.out.println("License is set = " + lic.isLicensed());
 ```
 
-## Используйте нескольких продуктов Aspose
+## Используйте несколько продуктов Aspose
 
 Если вы используете несколько продуктов Aspose в вашем приложении, например Aspose.PDF и Aspose.Words, вот несколько полезных советов.
 

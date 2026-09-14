@@ -1,6 +1,6 @@
 ---
-title: Удалить конкретную страницу из PDF‑файла в Python
-linktitle: Удалить конкретную страницу из PDF‑файла в Python
+title: Удалите конкретную страницу из PDF‑файла в Python
+linktitle: Удалите конкретную страницу из PDF‑файла в Python
 type: docs
 weight: 20
 url: /ru/java/delete-a-particular-page-from-the-pdf-file-in-python/

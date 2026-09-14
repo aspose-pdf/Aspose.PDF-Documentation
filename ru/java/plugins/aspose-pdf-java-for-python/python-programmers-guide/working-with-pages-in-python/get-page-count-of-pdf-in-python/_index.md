@@ -1,6 +1,6 @@
 ---
-title: Получить количество страниц PDF в Python
-linktitle: Получить количество страниц PDF в Python
+title: Получите количество страниц PDF в Python
+linktitle: Получите количество страниц PDF в Python
 type: docs
 weight: 40
 url: /ru/java/get-page-count-of-pdf-in-python/

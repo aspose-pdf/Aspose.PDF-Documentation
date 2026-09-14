@@ -1,6 +1,6 @@
 ---
-title: Преобразовать PDF в формат DOC или DOCX в Python
-linktitle: Преобразовать PDF в формат DOC или DOCX в Python
+title: Преобразуйте PDF в формат DOC или DOCX в Python
+linktitle: Преобразуйте PDF в формат DOC или DOCX в Python
 type: docs
 weight: 10
 url: /ru/java/convert-pdf-to-doc-or-docx-format-in-python/

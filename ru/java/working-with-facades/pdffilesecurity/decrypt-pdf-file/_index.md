@@ -1,6 +1,6 @@
 ---
-title: Расшифровать PDF-файл
-linktitle: Расшифровать PDF-файл
+title: Расшифруйте PDF-файл
+linktitle: Расшифруйте PDF-файл
 type: docs
 weight: 20
 url: /ru/java/decrypt-pdf-file/

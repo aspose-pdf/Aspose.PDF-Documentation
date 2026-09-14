@@ -1,6 +1,6 @@
 ---
-title: Разделить PDF до конца
-linktitle: Разделить PDF до конца
+title: Разделите PDF до конца
+linktitle: Разделите PDF до конца
 type: docs
 weight: 40
 url: /ru/java/split-pdf-to-end/

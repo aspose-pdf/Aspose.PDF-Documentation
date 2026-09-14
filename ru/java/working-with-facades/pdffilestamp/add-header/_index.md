@@ -1,6 +1,6 @@
 ---
-title: Добавить заголовок в PDF
-linktitle: Добавить заголовок в PDF
+title: Добавьте заголовок в PDF
+linktitle: Добавьте заголовок в PDF
 type: docs
 weight: 20
 url: /ru/java/add-header/

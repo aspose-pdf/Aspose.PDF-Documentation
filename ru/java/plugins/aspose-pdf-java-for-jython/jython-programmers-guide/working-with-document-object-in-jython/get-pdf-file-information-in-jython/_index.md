@@ -1,13 +1,13 @@
 ---
-title: Получить информацию о PDF-файле в Jython
-linktitle: Получить информацию о PDF-файле в Jython
+title: Получите информацию о PDF-файле в Jython
+linktitle: Получите информацию о PDF-файле в Jython
 type: docs
 weight: 30
 url: /ru/java/get-pdf-file-information-in-jython/
 description: Узнайте, как получить подробную информацию о PDF-файле, такую как метаданные, свойства и детали файла, с помощью Jython и Aspose.PDF.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Получить информацию о PDF-файле
+## Aspose.PDF - Получите информацию о PDF-файле
 
 Проверить формат файла с использованием **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 

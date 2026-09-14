@@ -1,6 +1,6 @@
 ---
-title: Объединить PDF-файлы в Java
-linktitle: Объединить PDF-файлы
+title: Объедините PDF-файлы в Java
+linktitle: Объедините PDF-файлы
 type: docs
 weight: 50
 url: /ru/java/merge-pdf/

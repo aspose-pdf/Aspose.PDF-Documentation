@@ -1,6 +1,6 @@
 ---
-title: Оптимизировать PDF-документ в Jython
-linktitle: Оптимизировать PDF-документ в Jython
+title: Оптимизируйте PDF-документ в Jython
+linktitle: Оптимизируйте PDF-документ в Jython
 type: docs
 weight: 50
 url: /ru/java/optimize-pdf-document-in-jython/

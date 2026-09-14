@@ -1,6 +1,6 @@
 ---
-title: Добавление и удаление закладок PDF в Java
-linktitle: Добавить и удалить закладку
+title: Добавьте и удалите закладки PDF в Java
+linktitle: Добавьте и удалите закладку
 type: docs
 weight: 10
 url: /ru/java/add-and-delete-bookmark/

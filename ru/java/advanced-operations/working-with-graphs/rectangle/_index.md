@@ -1,6 +1,6 @@
 ---
-title: Добавить прямоугольные формы в PDF на Java
-linktitle: Добавить прямоугольник
+title: Добавьте прямоугольные формы в PDF на Java
+linktitle: Добавьте прямоугольник
 type: docs
 weight: 50
 url: /ru/java/add-rectangle/

@@ -1,6 +1,6 @@
 ---
-title: Извлечь векторные данные из PDF‑файла с использованием Java
-linktitle: Извлечь векторные данные из PDF
+title: Извлеките векторные данные из PDF‑файла с использованием Java
+linktitle: Извлеките векторные данные из PDF
 type: docs
 weight: 80
 url: /ru/java/extract-vector-data-from-pdf/

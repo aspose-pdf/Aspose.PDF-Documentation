@@ -1,6 +1,6 @@
 ---
-title: Преобразовать PDF в Excel в Java
-linktitle: Преобразовать PDF в Excel
+title: Преобразуйте PDF в Excel в Java
+linktitle: Преобразуйте PDF в Excel
 type: docs
 weight: 20
 url: /ru/java/convert-pdf-to-excel/

@@ -1,6 +1,6 @@
 ---
-title: Извлечь текст со всех страниц PDF‑документа в Python
-linktitle: Извлечь текст со всех страниц PDF‑документа в Python
+title: Извлеките текст со всех страниц PDF‑документа в Python
+linktitle: Извлеките текст со всех страниц PDF‑документа в Python
 type: docs
 weight: 30
 url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/

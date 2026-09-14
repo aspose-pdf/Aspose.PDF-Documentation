@@ -1,6 +1,6 @@
 ---
-title: Установить ограничение поля
-linktitle: Установить ограничение поля
+title: Установите ограничение поля
+linktitle: Установите ограничение поля
 type: docs
 weight: 50
 url: /ru/java/set-field-limit/

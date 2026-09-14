@@ -1,6 +1,6 @@
 ---
-title: Получить параметры просмотра
-linktitle: Получить параметры просмотра
+title: Получите параметры просмотра
+linktitle: Получите параметры просмотра
 type: docs
 weight: 10
 url: /ru/java/get-viewer-preferences/

@@ -1,6 +1,6 @@
 ---
-title: Переместить поле
-linktitle: Переместить поле
+title: Переместите поле
+linktitle: Переместите поле
 type: docs
 weight: 30
 url: /ru/java/move-field/

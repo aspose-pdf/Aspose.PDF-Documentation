@@ -1,6 +1,6 @@
 ---
-title: Сохранить метаданные с помощью XMP
-linktitle: Сохранить метаданные с помощью XMP
+title: Сохраните метаданные с помощью XMP
+linktitle: Сохраните метаданные с помощью XMP
 type: docs
 weight: 30
 url: /ru/java/save-metadata-with-xmp/

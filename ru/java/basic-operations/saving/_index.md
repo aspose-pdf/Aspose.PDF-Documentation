@@ -1,6 +1,6 @@
 ---
-title: Сохранить PDF‑документ программно
-linktitle: Сохранить PDF
+title: Сохраните PDF‑документ программно
+linktitle: Сохраните PDF
 type: docs
 weight: 30
 url: /ru/java/save-pdf-document/

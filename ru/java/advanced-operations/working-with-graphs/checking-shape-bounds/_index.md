@@ -1,6 +1,6 @@
 ---
-title: Проверка границ фигур в графах PDF с помощью Java
-linktitle: Проверка границ фигур
+title: Проверьте границы фигур в графах PDF с помощью Java
+linktitle: Проверьте границы фигур
 type: docs
 weight: 70
 url: /ru/java/aspose-pdf-drawing-graph-shapes-bounds-check/

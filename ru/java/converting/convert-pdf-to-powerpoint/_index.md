@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF в PowerPoint на Java
-linktitle: Конвертировать PDF в PowerPoint
+title: Конвертируйте PDF в PowerPoint на Java
+linktitle: Конвертируйте PDF в PowerPoint
 type: docs
 weight: 30
 url: /ru/java/convert-pdf-to-powerpoint/

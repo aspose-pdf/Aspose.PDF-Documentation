@@ -1,6 +1,6 @@
 ---
-title: Добавить изображение в PDF с помощью Java
-linktitle: Добавить изображение
+title: Добавьте изображение в PDF с помощью Java
+linktitle: Добавьте изображение
 type: docs
 weight: 10
 url: /ru/java/add-image-to-existing-pdf-file/

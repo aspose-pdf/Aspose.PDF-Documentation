@@ -1,13 +1,13 @@
 ---
-title: Получить свойства страниц в PHP
-linktitle: Получить свойства страниц в PHP
+title: Получите свойства страниц в PHP
+linktitle: Получите свойства страниц в PHP
 type: docs
 weight: 50
 url: /ru/java/get-page-properties-in-php/
 description: Узнайте, как получить свойства конкретных страниц PDF‑документа в PHP с помощью Aspose.PDF для детального управления.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Получить свойства страниц
+## Aspose.PDF - Получите свойства страниц
 
 Чтобы получить свойства страниц PDF‑документа с использованием **Aspose.PDF Java for PHP**, просто вызовите класс **GetPageProperties**.
 

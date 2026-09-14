@@ -1,13 +1,13 @@
 ---
-title: Конвертировать PDF в книгу Excel на Ruby
-linktitle: Конвертировать PDF в книгу Excel на Ruby
+title: Конвертируйте PDF в книгу Excel на Ruby
+linktitle: Конвертируйте PDF в книгу Excel на Ruby
 type: docs
 weight: 40
 url: /ru/java/convert-pdf-to-excel-workbook-in-ruby/
 description: Поймите, как преобразовать данные PDF в книги Excel с использованием Ruby и Aspose.PDF, упрощая извлечение и анализ данных.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Преобразовать PDF в книгу Excel
+## Aspose.PDF - Преобразуйте PDF в книгу Excel
 
 Чтобы преобразовать документ PDF в книгу Excel с помощью **Aspose.PDF Java for Ruby**, просто вызовите модуль **PdfToExcel**.
 

@@ -1,6 +1,6 @@
 ---
-title: Создание сложного PDF
-linktitle: Создание сложного PDF
+title: Создайте сложный PDF
+linktitle: Создайте сложный PDF
 type: docs
 weight: 30
 url: /ru/java/complex-pdf-example/

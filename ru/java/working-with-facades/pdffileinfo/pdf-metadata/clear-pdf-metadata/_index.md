@@ -1,6 +1,6 @@
 ---
-title: Очистить метаданные PDF
-linktitle: Очистить метаданные PDF
+title: Очистите метаданные PDF
+linktitle: Очистите метаданные PDF
 type: docs
 weight: 10
 url: /ru/java/clear-pdf-metadata/

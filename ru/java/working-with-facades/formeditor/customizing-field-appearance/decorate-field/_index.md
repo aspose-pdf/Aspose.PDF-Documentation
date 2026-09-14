@@ -1,6 +1,6 @@
 ---
-title: Оформить поле
-linktitle: Оформить поле
+title: Оформите поле
+linktitle: Оформите поле
 type: docs
 weight: 10
 url: /ru/java/decorate-field/

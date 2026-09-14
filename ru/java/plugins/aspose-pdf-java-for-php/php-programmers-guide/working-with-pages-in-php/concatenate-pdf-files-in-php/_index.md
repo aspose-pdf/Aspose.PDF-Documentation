@@ -1,13 +1,13 @@
 ---
-title: Объединить PDF-файлы в PHP
-linktitle: Объединить PDF-файлы в PHP
+title: Объедините PDF-файлы в PHP
+linktitle: Объедините PDF-файлы в PHP
 type: docs
 weight: 10
 url: /ru/java/concatenate-pdf-files-in-php/
 description: Узнайте, как объединять несколько PDF‑файлов в один документ в PHP с помощью Aspose.PDF для более удобного управления документами.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF - Объединить PDF-файлы
+## Aspose.PDF - Объедините PDF-файлы
 
 Чтобы объединить PDF‑файлы с использованием **Aspose.PDF Java for PHP**, просто вызовите класс **ConcatenatePdfFiles**.
 

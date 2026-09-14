@@ -1,5 +1,5 @@
 ---
-title: Изменить размер страницы PDF в Java
+title: Измените размер страницы PDF в Java
 linktitle: Изменение размера страницы
 type: docs
 weight: 40

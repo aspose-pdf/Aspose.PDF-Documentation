@@ -1,6 +1,6 @@
 ---
-title: Разделить PDF-файлы на Java
-linktitle: Разделить PDF-файлы
+title: Разделите PDF-файлы на Java
+linktitle: Разделите PDF-файлы
 type: docs
 weight: 60
 url: /ru/java/split-pdf-document/

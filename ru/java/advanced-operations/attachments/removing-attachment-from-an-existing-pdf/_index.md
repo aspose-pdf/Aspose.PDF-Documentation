@@ -1,6 +1,6 @@
 ---
-title: Удалить вложения из PDF на Java
-linktitle: Удаление вложения из существующего PDF
+title: Удалите вложения из PDF на Java
+linktitle: Удалите вложение из существующего PDF
 type: docs
 weight: 30
 url: /ru/java/removing-attachment-from-an-existing-pdf/

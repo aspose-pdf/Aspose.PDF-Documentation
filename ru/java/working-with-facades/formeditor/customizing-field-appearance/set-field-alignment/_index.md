@@ -1,6 +1,6 @@
 ---
-title: Установить выравнивание поля
-linktitle: Установить выравнивание поля
+title: Установите выравнивание поля
+linktitle: Установите выравнивание поля
 type: docs
 weight: 20
 url: /ru/java/set-field-alignment/

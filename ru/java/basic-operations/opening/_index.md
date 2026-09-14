@@ -1,6 +1,6 @@
 ---
-title: Открыть PDF документ программно
-linktitle: Открыть PDF
+title: Откройте PDF документ программно
+linktitle: Откройте PDF
 type: docs
 weight: 20
 url: /ru/java/open-pdf-document/

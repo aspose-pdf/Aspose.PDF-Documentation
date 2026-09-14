@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF‑документы в Java
-linktitle: Конвертировать PDF‑документ
+title: Конвертируйте PDF‑документы в Java
+linktitle: Конвертируйте PDF‑документ
 type: docs
 weight: 70
 url: /ru/java/converting/

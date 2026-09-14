@@ -1,5 +1,5 @@
 ---
-title: Добавить штампы изображений в PDF на Java
+title: Добавьте штампы изображений в PDF на Java
 linktitle: Штампы изображений в PDF‑файле
 type: docs
 weight: 10

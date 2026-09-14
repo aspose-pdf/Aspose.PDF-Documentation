@@ -1,6 +1,6 @@
 ---
-title: Вставить пустую страницу в PDF‑файл с помощью Jython
-linktitle: Вставить пустую страницу в PDF‑файл с помощью Jython
+title: Вставьте пустую страницу в PDF‑файл с помощью Jython
+linktitle: Вставьте пустую страницу в PDF‑файл с помощью Jython
 type: docs
 weight: 70
 url: /ru/java/insert-an-empty-page-into-a-pdf-file-in-jython/

@@ -1,6 +1,6 @@
 ---
-title: Получить, обновить и развернуть PDF‑закладки в Java
-linktitle: Получить, обновить и развернуть закладку
+title: Получите, обновите и разверните PDF‑закладки в Java
+linktitle: Получите, обновите и разверните закладку
 type: docs
 weight: 20
 url: /ru/java/get-update-and-expand-bookmark/

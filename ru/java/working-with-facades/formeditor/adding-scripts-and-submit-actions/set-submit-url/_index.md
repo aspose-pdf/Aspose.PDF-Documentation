@@ -1,6 +1,6 @@
 ---
-title: Установить URL-адрес отправки
-linktitle: Установить URL-адрес отправки
+title: Установите URL-адрес отправки
+linktitle: Установите URL-адрес отправки
 type: docs
 weight: 30
 url: /ru/java/set-submit-url/

@@ -1,6 +1,6 @@
 ---
-title: Удалить вложения
-linktitle: Удалить вложения
+title: Удалите вложения
+linktitle: Удалите вложения
 type: docs
 weight: 50
 url: /ru/java/remove-attachments/

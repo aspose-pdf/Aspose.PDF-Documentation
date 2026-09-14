@@ -1,6 +1,6 @@
 ---
-title: Добавить водяные знаки в PDF на Java
-linktitle: Добавление водяного знака
+title: Добавьте водяные знаки в PDF на Java
+linktitle: Добавьте водяной знак
 type: docs
 weight: 30
 url: /ru/java/add-watermarks/

@@ -1,6 +1,6 @@
 ---
-title: Конвертировать другие форматы файлов в PDF на Java
-linktitle: Конвертировать другие форматы файлов в PDF
+title: Конвертируйте другие форматы файлов в PDF на Java
+linktitle: Конвертируйте другие форматы файлов в PDF
 type: docs
 weight: 80
 url: /ru/java/convert-other-files-to-pdf/

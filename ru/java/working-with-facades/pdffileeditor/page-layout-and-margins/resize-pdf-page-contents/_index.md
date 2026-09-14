@@ -1,6 +1,6 @@
 ---
-title: Изменить размер содержимого страниц PDF
-linktitle: Изменить размер содержимого страниц PDF
+title: Измените размер содержимого страниц PDF
+linktitle: Измените размер содержимого страниц PDF
 type: docs
 weight: 30
 url: /ru/java/resize-pdf-page-contents/

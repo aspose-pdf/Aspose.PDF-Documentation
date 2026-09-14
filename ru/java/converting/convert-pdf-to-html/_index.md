@@ -1,6 +1,6 @@
 ---
-title: Конвертировать PDF в HTML на Java
-linktitle: Конвертировать PDF в формат HTML
+title: Конвертируйте PDF в HTML на Java
+linktitle: Конвертируйте PDF в формат HTML
 type: docs
 weight: 50
 url: /ru/java/convert-pdf-to-html/
@@ -34,7 +34,7 @@ public static void convertPdfToHtml(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF в HTML и сохранить изображения отдельно
+## Преобразуйте PDF в HTML и сохраните изображения отдельно
 
 Используйте этот пример, когда извлечённые изображения должны быть записаны в отдельные файлы при экспорте в HTML.
 
@@ -74,7 +74,7 @@ public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразуйте PDF в HTML и сохранить SVG отдельно
+## Преобразуйте PDF в HTML и сохраните SVG отдельно
 
 Используйте этот пример, когда векторный контент должен быть выведен как отдельные ресурсы SVG.
 

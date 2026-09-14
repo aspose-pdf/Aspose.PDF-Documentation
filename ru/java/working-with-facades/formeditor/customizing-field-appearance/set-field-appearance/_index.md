@@ -1,6 +1,6 @@
 ---
-title: Установить внешний вид поля
-linktitle: Установить внешний вид поля
+title: Установите внешний вид поля
+linktitle: Установите внешний вид поля
 type: docs
 weight: 40
 url: /ru/java/set-field-appearance/

@@ -1,6 +1,6 @@
 ---
-title: Удалить элемент списка
-linktitle: Удалить элемент списка
+title: Удалите элемент списка
+linktitle: Удалите элемент списка
 type: docs
 weight: 20
 url: /ru/java/del-list-item/

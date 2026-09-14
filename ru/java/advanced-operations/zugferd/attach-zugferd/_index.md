@@ -1,6 +1,6 @@
 ---
-title: Создание совместимого с PDF/3-A PDF и прикрепление счета ZUGFeRD в Java
-linktitle: Прикрепить ZUGFeRD к PDF
+title: Создайте PDF, совместимый с PDF/3-A, и прикрепите счет ZUGFeRD в Java
+linktitle: Прикрепите ZUGFeRD к PDF
 type: docs
 weight: 10
 url: /ru/java/attach-zugferd/

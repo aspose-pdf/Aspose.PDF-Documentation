@@ -1,6 +1,6 @@
 ---
-title: Добавление JavaScript в Python
-linktitle: Добавление JavaScript в Python
+title: Добавьте JavaScript в Python
+linktitle: Добавьте JavaScript в Python
 type: docs
 weight: 10
 url: /ru/java/adding-javascript-in-python/

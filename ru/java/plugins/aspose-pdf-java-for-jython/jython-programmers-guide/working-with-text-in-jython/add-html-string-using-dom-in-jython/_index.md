@@ -1,13 +1,13 @@
 ---
-title: Добавить HTML‑строку с использованием DOM в Jython
-linktitle: Добавить HTML‑строку с использованием DOM в Jython
+title: Добавьте HTML‑строку с использованием DOM в Jython
+linktitle: Добавьте HTML‑строку с использованием DOM в Jython
 type: docs
 weight: 10
 url: /ru/java/add-html-string-using-dom-in-jython/
 description: Изучите, как добавить HTML‑контент в PDF‑документ с помощью DOM в Jython, используя Aspose.PDF для создания насыщенных документов.
 lastmod: "2026-08-19"
 ---
-## Aspose.PDF — Добавить HTML
+## Aspose.PDF — Добавьте HTML
 
 Для проверки формата файла с использованием **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 

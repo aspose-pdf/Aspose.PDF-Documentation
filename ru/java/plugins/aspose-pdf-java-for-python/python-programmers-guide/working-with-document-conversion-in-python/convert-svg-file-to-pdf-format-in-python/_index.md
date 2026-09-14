@@ -1,6 +1,6 @@
 ---
-title: Конвертировать файл SVG в формат PDF на Python
-linktitle: Конвертировать файл SVG в формат PDF на Python
+title: Конвертируйте файл SVG в формат PDF на Python
+linktitle: Конвертируйте файл SVG в формат PDF на Python
 type: docs
 weight: 40
 url: /ru/java/convert-svg-file-to-pdf-format-in-python/

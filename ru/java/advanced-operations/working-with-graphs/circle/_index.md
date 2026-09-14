@@ -1,6 +1,6 @@
 ---
-title: Добавить круговые фигуры в PDF на Java
-linktitle: Добавить круг
+title: Добавьте круговые фигуры в PDF на Java
+linktitle: Добавьте круг
 type: docs
 weight: 20
 url: /ru/java/add-circle/

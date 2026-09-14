@@ -1,6 +1,6 @@
 ---
-title: Извлечение PDF‑ссылок в Java
-linktitle: Извлечь ссылки
+title: Извлеките PDF‑ссылки в Java
+linktitle: Извлеките ссылки
 type: docs
 weight: 30
 url: /ru/java/extract-links/

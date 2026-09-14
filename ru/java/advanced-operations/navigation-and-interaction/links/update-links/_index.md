@@ -1,6 +1,6 @@
 ---
-title: Обновить ссылки PDF в Java
-linktitle: Обновить ссылки
+title: Обновите ссылки PDF в Java
+linktitle: Обновите ссылки
 type: docs
 weight: 20
 url: /ru/java/update-links/

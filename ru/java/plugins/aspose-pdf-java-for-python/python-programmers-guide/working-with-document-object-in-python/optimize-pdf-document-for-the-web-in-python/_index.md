@@ -1,6 +1,6 @@
 ---
-title: Оптимизировать PDF-документ для веба на Python
-linktitle: Оптимизировать PDF-документ для веба на Python
+title: Оптимизируйте PDF-документ для веба на Python
+linktitle: Оптимизируйте PDF-документ для веба на Python
 type: docs
 weight: 60
 url: /ru/java/optimize-pdf-document-for-the-web-in-python/

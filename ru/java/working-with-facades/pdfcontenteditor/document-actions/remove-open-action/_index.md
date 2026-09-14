@@ -1,6 +1,6 @@
 ---
-title: Удалить действие открытия
-linktitle: Удалить действие открытия
+title: Удалите действие открытия
+linktitle: Удалите действие открытия
 type: docs
 weight: 20
 url: /ru/java/remove-open-action/

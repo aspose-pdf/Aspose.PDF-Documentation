@@ -1,6 +1,6 @@
 ---
-title: Разделить PDF с начала
-linktitle: Разделить PDF с начала
+title: Разделите PDF с начала
+linktitle: Разделите PDF с начала
 type: docs
 weight: 10
 url: /ru/java/split-pdf-from-beginning/

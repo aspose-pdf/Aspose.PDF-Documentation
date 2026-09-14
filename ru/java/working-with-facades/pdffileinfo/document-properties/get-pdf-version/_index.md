@@ -1,6 +1,6 @@
 ---
-title: Получить версию PDF
-linktitle: Получить версию PDF
+title: Получите версию PDF
+linktitle: Получите версию PDF
 type: docs
 weight: 20
 url: /ru/java/get-pdf-version/

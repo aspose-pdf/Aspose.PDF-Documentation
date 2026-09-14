@@ -1,6 +1,6 @@
 ---
-title: Создать Tagged PDF на Java
-linktitle: Создать Tagged PDF
+title: Создайте Tagged PDF на Java
+linktitle: Создайте Tagged PDF
 type: docs
 weight: 10
 url: /ru/java/create-tagged-pdf/

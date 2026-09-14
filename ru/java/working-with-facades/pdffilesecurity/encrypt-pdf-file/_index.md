@@ -1,6 +1,6 @@
 ---
-title: Зашифровать PDF-файл
-linktitle: Зашифровать PDF-файл
+title: Зашифруйте PDF-файл
+linktitle: Зашифруйте PDF-файл
 type: docs
 weight: 30
 url: /ru/java/encrypt-pdf-file/

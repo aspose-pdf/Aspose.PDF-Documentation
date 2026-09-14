@@ -1,6 +1,6 @@
 ---
-title: Преобразовать HTML в PDF на Java
-linktitle: Преобразовать HTML в PDF файл
+title: Преобразуйте HTML в PDF на Java
+linktitle: Преобразуйте HTML в PDF файл
 type: docs
 weight: 40
 url: /ru/java/convert-html-to-pdf/

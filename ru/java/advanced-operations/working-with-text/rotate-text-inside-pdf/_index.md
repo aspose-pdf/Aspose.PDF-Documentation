@@ -1,6 +1,6 @@
 ---
-title: Повернуть текст PDF в Java
-linktitle: Повернуть текст внутри PDF
+title: Поверните текст PDF в Java
+linktitle: Поверните текст внутри PDF
 type: docs
 weight: 50
 url: /ru/java/rotate-text-inside-pdf/

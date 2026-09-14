@@ -1,6 +1,6 @@
 ---
-title: Заменить текст с помощью состояния
-linktitle: Заменить текст с помощью состояния
+title: Замените текст с помощью состояния
+linktitle: Замените текст с помощью состояния
 type: docs
 weight: 20
 url: /ru/java/replace-text-with-state/

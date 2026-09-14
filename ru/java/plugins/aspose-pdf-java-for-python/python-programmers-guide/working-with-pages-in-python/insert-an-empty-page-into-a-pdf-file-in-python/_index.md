@@ -1,6 +1,6 @@
 ---
-title: Вставить пустую страницу в PDF‑файл с помощью Python
-linktitle: Вставить пустую страницу в PDF‑файл с помощью Python
+title: Вставьте пустую страницу в PDF‑файл с помощью Python
+linktitle: Вставьте пустую страницу в PDF‑файл с помощью Python
 type: docs
 weight: 70
 url: /ru/java/insert-an-empty-page-into-a-pdf-file-in-python/

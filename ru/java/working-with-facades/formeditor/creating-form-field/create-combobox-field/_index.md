@@ -1,6 +1,6 @@
 ---
-title: Создать поле ComboBox
-linktitle: Создать поле ComboBox
+title: Создайте поле ComboBox
+linktitle: Создайте поле ComboBox
 type: docs
 weight: 30
 url: /ru/java/create-combobox-field/

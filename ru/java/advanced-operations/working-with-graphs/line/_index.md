@@ -1,6 +1,6 @@
 ---
-title: Добавить линейные фигуры в PDF на Java
-linktitle: Добавить линию
+title: Добавьте линейные фигуры в PDF на Java
+linktitle: Добавьте линию
 type: docs
 weight: 40
 url: /ru/java/add-line/
