@@ -379,5 +379,3 @@ public static void createPdfWithTocPageAdvanced(Path outputFile) {
     }
 }
 ```
-
-
