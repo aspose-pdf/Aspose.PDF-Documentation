@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ru/java/working-with-operators/
 description: Узнайте, как использовать низкоуровневые PDF-операторы в Java для манипулирования потоками содержимого, размещения изображений, повторного использования XForm и очистки графики.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,8 +27,8 @@ Abstract: В этой статье объясняется, как работат
 
 1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите целевой [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Добавьте поток входного изображения к ресурсам страницы и сохраните возвращённое имя ресурса.
-1. Создайте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) который определяет целевую область и построить [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) из его границ.
-1. Используйте [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) для сохранения текущего графического состояния, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) для позиционирования изображения, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) закрасить его, и [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) восстановить предыдущее состояние.
+1. Создайте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/), который определяет целевую область, и постройте [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) по его границам.
+1. Используйте [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) для сохранения текущего графического состояния, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) для позиционирования изображения, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) для его отрисовки и [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) для восстановления предыдущего состояния.
 1. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -62,10 +62,10 @@ public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Pat
 
 Используйте этот подход, когда одно и то же изображение или графика должны отображаться более одного раза без дублирования ресурса в файле PDF.
 
-1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), получить цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), и получить доступ к его [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
-1. Оберните существующее содержимое страницы с [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) и [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) чтобы последующие преобразования не просочились в оригинальный поток содержимого.
-1. Создайте [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) ресурс, добавьте изображение в ресурсы формы и используйте [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) плюс [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) чтобы нарисовать изображение внутри формы.
-1. Разместите одну и ту же форму в нескольких координатах страницы, добавив матрицу трансляции и выполнив имя формы с `Do` оператор.
+1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), выберите нужную страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и получите доступ к её [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
+1. Заключите существующее содержимое страницы между [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) и [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/), чтобы последующие преобразования не повлияли на исходный поток содержимого.
+1. Создайте ресурс [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/), добавьте изображение в ресурсы формы и используйте [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) и [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/), чтобы нарисовать изображение внутри формы.
+1. Разместите одну и ту же форму в нескольких точках страницы, добавив матрицу переноса и вызвав оператор `Do` с именем формы.
 1. Восстановите состояние графики и сохраните PDF‑вывод.
 
 ```java
@@ -110,7 +110,7 @@ private static void addFormAt(OperatorCollection pageContents, String formName, 
 Используйте этот пример, когда страница содержит операторы векторного рисования, которые следует удалить непосредственно из потока содержимого.
 
 1. Откройте исходный PDF с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите целевой [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Итерируйте операторы содержимого страницы и собрать экземпляры [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/), и [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. Переберите операторы содержимого страницы и соберите экземпляры [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/) и [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
 1. Удалите собранные операторы из содержимого страниц и сохраните обновлённый PDF.
 
 Эта техника удаляет только целевые инструкции рисования. Если на странице также содержатся связанные текстовые подписи или другие не графические операторы, эти элементы остаются в потоке содержимого и могут потребовать отдельного прохода очистки.

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/add-and-delete-bookmark/
 description: Узнайте, как добавлять и удалять закладки в PDF‑документах с помощью Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: В этой статье показано, как создавать �
 
 Используйте этот пример, когда документ должен содержать единственную запись оглавления верхнего уровня.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) и настройте его заголовок, стиль и действие.
 1. Добавьте закладку в оглавление документа и сохраните файл.
 
@@ -42,8 +42,8 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 
 В этом примере создаётся родительская закладка, а дочерняя закладка помещается под ней.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте родительскую и дочернюю [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) объекты.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте родительский и дочерний объекты [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/).
 1. Добавьте дочерний элемент к родительскому, добавьте родительский элемент в коллекцию оглавления и сохраните документ.
 
 ```java
@@ -70,7 +70,7 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда всю коллекцию оглавления следует удалить из документа.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите полную коллекцию оглавления.
 1. Сохраните очищенный выходной файл.
 
@@ -87,7 +87,7 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда необходимо удалить одну именованную закладку, не очищая всё дерево оглавления.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите закладку по названию из коллекции оглавлений.
 1. Сохраните обновлённый документ.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ru/java/aspose-pdf-drawing-graph-shapes-bounds-check/
 description: Узнайте, как проверять границы фигур в коллекциях графов PDF на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,15 +13,15 @@ TechArticle: true
 AlternativeHeadline: Проверяйте границы фигур графов в PDF‑файлах с помощью Java
 Abstract: В этой статье показано, как проверять границы фигур в коллекциях Graph с использованием Aspose.PDF for Java. Описывается включение строгой проверки границ, попытка добавить форму за пределами диапазона и обработка возникающего исключения при сохранении документа.
 ---
-Использовать `BoundsCheckMode` когда вам нужно убедиться, что фигуры помещаются внутри контейнера графика.
+Используйте `BoundsCheckMode`, когда вам нужно убедиться, что фигуры помещаются внутри контейнера графика.
 
-## Проверка границ формы графа
+## Проверка границ фигуры в графическом контейнере
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) фигуру и настроить её геометрию.
-1. Включите строгую проверку границ и попытаться добавить форму в коллекцию графов с `BoundsCheckMode`.
+1. Создайте контейнер [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) и добавьте его на страницу.
+1. Создайте фигуру [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) и настройте её геометрию.
+1. Включите строгую проверку границ и попытайтесь добавить форму в коллекцию графов с `BoundsCheckMode`.
 1. Обработайте исключение, если форма не помещается.
 1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

@@ -120,7 +120,7 @@ public static void textHighlightAnnotationDelete(Path inputFile, Path outputFile
 
 ## Добавление, получение и удаление аннотаций зачёркивания
 
-Используйте эти примеры, когда вам нужен зачёркивание фрагментов текста при рецензировании.
+Используйте эти примеры, когда вам нужно зачёркивание фрагментов текста при рецензировании.
 
 1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте, проверьте или соберите объекты [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).

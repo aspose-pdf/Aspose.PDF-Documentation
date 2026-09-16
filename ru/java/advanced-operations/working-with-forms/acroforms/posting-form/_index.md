@@ -5,7 +5,7 @@ type: docs
 weight: 75
 url: /ru/java/posting-form/
 description: Добавьте кнопки отправки и действия отправки в PDF AcroForms с использованием Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,8 +17,8 @@ Aspose.PDF for Java поддерживает как создание кнопо�
 
 ## Добавление кнопки отправки с FormEditor
 
-1. Создайте [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) фасад для исходного PDF‑документа.
-1. Добавьте сконфигурированный объект кнопки отправки через [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) фасад.
+1. Создайте фасад [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) для исходного PDF‑документа.
+1. Добавьте настроенную кнопку отправки через фасад [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/).
 1. Сохраните обновлённый PDF‑документ.
 
 ```java
@@ -37,9 +37,9 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 
 ## Добавление действия отправки вручную
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) и URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
-1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) на целевом [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и назначьте действие отправки.
+1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) на нужной странице [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и назначьте действие отправки.
 1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

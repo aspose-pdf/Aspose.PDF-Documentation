@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ru/java/import-export-form-data/
 description: Импорт и экспорт данных полей AcroForm в форматах XML, FDF, XFDF и JSON с использованием Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 TechArticle: true
 AlternativeHeadline: Импорт и экспорт данных PDF‑форм с Java
 Abstract: В этой статье объясняется, как обмениваться данными AcroForm с внешними форматами с использованием Aspose.PDF for Java. Описывается импорт и экспорт данных XML, FDF и XFDF через фасад Form и извлечение значений полей формы в JSON.
@@ -16,7 +16,7 @@ Aspose.PDF for Java поддерживает несколько распрост
 
 Используйте этот пример, когда значения формы хранятся в XML‑файле и их нужно применить к PDF‑форме.
 
-1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
+1. Создайте фасад [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) и привяжите к нему исходный PDF.
 1. Откройте поток входного XML и импортируйте данные в форму.
 1. Сохраните обновлённый PDF‑документ.
 
@@ -37,7 +37,7 @@ public static void importDataFromXml(Path inputFile, Path dataFile, Path outputF
 
 Используйте этот пример, когда вам нужно сохранить текущие значения AcroForm в формате XML.
 
-1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
+1. Создайте фасад [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) и привяжите к нему исходный PDF.
 1. Откройте поток вывода для XML‑файла.
 1. Экспортируйте данные формы в XML.
 
@@ -57,7 +57,7 @@ public static void exportDataToXml(Path inputFile, Path outputFile) throws Excep
 
 Используйте этот пример, когда значения формы приходят в формате обмена FDF.
 
-1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
+1. Создайте фасад [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) и привяжите к нему исходный PDF.
 1. Откройте входной поток FDF и импортируйте данные.
 1. Сохраните заполненный документ PDF.
 
@@ -78,7 +78,7 @@ public static void importDataFromFdf(Path inputFile, Path dataFile, Path outputF
 
 Используйте этот пример, когда значения формы PDF должны быть переданы в виде файла FDF.
 
-1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
+1. Создайте фасад [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) и привяжите к нему исходный PDF.
 1. Откройте выходной поток для файла FDF.
 1. Экспортируйте данные формы в формате FDF.
 
@@ -98,7 +98,7 @@ public static void exportDataToFdf(Path inputFile, Path outputFile) throws Excep
 
 Используйте этот пример, когда данные формы предоставлены в формате XFDF и их необходимо объединить с PDF.
 
-1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
+1. Создайте фасад [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) и привяжите к нему исходный PDF.
 1. Откройте входной поток XFDF и импортируйте значения.
 1. Сохраните обновлённый PDF‑документ.
 
@@ -117,9 +117,9 @@ public static void importDataFromXfdf(Path inputFile, Path dataFile, Path output
 
 ## Экспорт данных форм в XFDF
 
-Используйте этот пример, когда вам нужен XML‑основной файл обмена для значений AcroForm.
+Используйте этот пример, когда вам нужен файл обмена на основе XML для значений AcroForm.
 
-1. Создайте [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) обертка и привязка исходного PDF.
+1. Создайте фасад [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) и привяжите к нему исходный PDF.
 1. Откройте выходной поток для файла XFDF.
 1. Экспортируйте текущие значения формы в XFDF.
 
@@ -139,8 +139,8 @@ public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exce
 
 Используйте этот пример, когда значения формы должны быть экспортированы в легковесное представление JSON.
 
-1. Откройте PDF с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
-1. Итерируйте имена полей и сериализовать их значения в JSON‑текст.
+1. Откройте PDF с помощью фасада [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. Переберите имена полей и сериализуйте их значения в JSON‑текст.
 1. Запишите содержимое JSON в целевой файл.
 
 ```java
@@ -171,8 +171,8 @@ public static void extractFormFieldsToJson(Path inputFile, Path outputFile) thro
 
 Используйте этот пример, когда вам нужен выделенный метод‑обёртка, который делегирует основной процесс экспорта JSON.
 
-1. Вызовите существующий помощник извлечения JSON, указав исходный PDF и путь вывода.
-1. Повторно используйте ту же логику извлечения, не дублируя код сериализации.
+1. Вызовите существующий вспомогательный метод извлечения JSON, указав исходный PDF и путь вывода.
+1. Используйте повторно ту же логику извлечения, не дублируя код сериализации.
 
 ```java
 public static void extractFormFieldsToJsonDoc(Path inputFile, Path outputFile) throws Exception {

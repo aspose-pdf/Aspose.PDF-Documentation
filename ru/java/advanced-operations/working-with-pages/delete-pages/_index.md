@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ru/java/delete-pages/
 description: Узнайте, как удалять страницы из PDF‑файлов в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как удалить
 
 Используйте этот пример, когда нужно удалить одну страницу по её индексу.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите целевую страницу из коллекции страниц.
 1. Сохраните обновлённый документ.
 
@@ -36,7 +36,7 @@ public static void deletePage(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда несколько страниц должны быть удалены за одну операцию.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Передайте индексы страниц, которые нужно удалить из коллекции страниц.
 1. Сохраните изменённый PDF.
 

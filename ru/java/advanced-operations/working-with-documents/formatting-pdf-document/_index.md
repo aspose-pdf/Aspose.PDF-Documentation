@@ -5,7 +5,7 @@ type: docs
 weight: 11
 url: /ru/java/formatting-pdf-document/
 description: Узнайте, как форматировать PDF‑документы, внедрять шрифты, управлять настройками просмотра и настраивать параметры отображения в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как формати
 
 Используйте этот пример, чтобы просмотреть текущие настройки просмотра, сохранённые в существующем PDF‑документе.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Прочитайте необходимые свойства окна и отображения из документа.
 1. Выведите текущие настройки для проверки или отладки.
 
@@ -44,7 +44,7 @@ public static void getDocumentWindow(Path inputFile) {
 
 Этот пример обновляет способ отображения PDF при открытии в совместимом просмотрщике.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Установите требуемые параметры окна, макета и режима страницы.
 1. Сохраните обновленный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
@@ -70,9 +70,9 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда документ должен включать необходимые шрифты для более надёжного отображения на других системах.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Включите стандартное встраивание шрифтов и перебрать шрифты, используемые каждым [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Отметьте любой не встроенный [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) объекты для встраивания.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Включите стандартное встраивание шрифтов и переберите шрифты, используемые на каждой странице [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Отметьте все невстроенные объекты [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) для встраивания.
 1. Сохраните обновленный документ.
 
 ```java
@@ -95,9 +95,9 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 
 Этот пример создает новый PDF и сразу назначает встроенный шрифт для текстового содержимого.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Создайте необходимое [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), и [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Разрешите цель [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометить его как встроенный.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Создайте необходимые объекты [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/) и [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Получите нужный шрифт [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) из репозитория и пометьте его как встроенный.
 1. Добавьте текстовое содержимое на страницу и сохраните выходной документ.
 
 ```java
@@ -123,8 +123,8 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 
 Используйте этот шаблон, когда сохранённый документ должен переключаться на определённый шрифт при генерации вывода.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) и установить имя шрифта по умолчанию.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) и установите имя шрифта по умолчанию.
 1. Сохраните документ с настроенными параметрами сохранения.
 
 ```java
@@ -137,11 +137,11 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 }
 ```
 
-## Получение всех шрифтов, использованные в PDF
+## Получение всех шрифтов, используемых в PDF
 
 В этом примере перечисляются все шрифты, обнаруженные в документе, чтобы вы могли проверить их использование перед экспортом или обновлением файла.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Перечислите шрифты, возвращаемые утилитами шрифтов документа.
 1. Выведите имя каждого обнаруженного [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
@@ -155,12 +155,12 @@ public static void getAllFonts(Path inputFile) {
 }
 ```
 
-## Улучшите встраивание шрифтов с помощью подмножества шрифтов
+## Улучшение встраивания шрифтов с помощью подмножеств
 
 Используйте этот подход, когда хотите снизить нагрузку шрифта, сохраняя встроенные данные шрифта согласованными с использованием документа.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Запустите субсеттинг шрифтов через утилиты шрифтов документа с требуемыми [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) значения.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте подмножества шрифтов с помощью утилит шрифтов документа, указав требуемые значения [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/).
 1. Сохраните оптимизированный документ.
 
 ```java
@@ -177,7 +177,7 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 
 В этом примере настраивается начальный уровень масштабирования, который должен применяться при открытии PDF.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) с [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Назначьте действие как действие открытия документа и сохраните результат.
 
@@ -195,7 +195,7 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 
 Используйте этот пример, чтобы проверить, задаёт ли PDF уже явный уровень масштабирования для своего действия открытия.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Проверьте, является ли действие открытия [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) с [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Выведите настроенное значение масштабирования или сообщите, что масштаб не установлен.
 

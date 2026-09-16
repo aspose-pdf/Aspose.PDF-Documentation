@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/add-image-to-existing-pdf-file/
 description: Узнайте, как добавить изображения в существующие PDF‑файлы на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 TechArticle: true
 AlternativeHeadline: Добавить изображения в существующие PDF‑файлы с помощью Java
 Abstract: В этой статье показано, как добавлять изображения в PDF‑документы с использованием Aspose.PDF for Java. Описывается размещение изображения по фиксированным координатам, добавление изображений через низкоуровневые операторы страницы, установка альтернативного текста для доступности и встраивание данных изображения с помощью сжатия Flate.
@@ -79,7 +79,7 @@ public static void addImageUsingOperators(Path imageFile, Path outputFile) throw
 Используйте этот пример, когда изображение должно включать метаданные доступности для программ чтения с экрана.
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте изображение на страницу.
-1. Получите вставленное [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) из ресурсов страницы.
+1. Получите вставленное изображение [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) из ресурсов страницы.
 1. Установите альтернативный текст и сохраните PDF.
 
 ```java
@@ -100,11 +100,11 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 }
 ```
 
-## Добавление изображения с сжатием Flate
+## Добавление изображения со сжатием Flate
 
 Используйте этот пример, когда хотите встроить данные изображения, используя сжатие Flate.
 
-1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и открыть поток изображения.
+1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и откройте поток изображения.
 1. Добавьте изображение в ресурсы страницы с `ImageFilterType.Flate`.
 1. Отрисуйте изображение с помощью операторов страницы и сохраните результат.
 

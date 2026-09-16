@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/add-pages/
 description: Узнайте, как добавлять или вставлять страницы в PDF‑документы на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Aspose.PDF for Java позволяет вставлять пустые стра�
 
 Используйте этот пример, когда нужно добавить пустую страницу в середину существующего PDF.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Вставьте новую страницу в целевую позицию в коллекции страниц.
 1. Сохраните обновлённый документ.
 
@@ -36,7 +36,7 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда вам нужно расширить документ новой пустой последней страницей.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте новую страницу в конец коллекции страниц.
 1. Сохраните изменённый PDF.
 
@@ -53,8 +53,8 @@ public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда хотите импортировать страницу из одного PDF в другой PDF.
 
-1. Создайте место назначения [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и откройте исходный документ.
-1. Добавьте любой необходимый контент назначения и импортируйте целевую страницу из исходного PDF.
+1. Создайте целевой документ [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и откройте исходный документ.
+1. Добавьте необходимое содержимое в целевой документ и импортируйте целевую страницу из исходного PDF.
 1. Сохраните полученный документ.
 
 ```java

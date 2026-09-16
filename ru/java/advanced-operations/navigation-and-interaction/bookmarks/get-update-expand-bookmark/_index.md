@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/get-update-and-expand-bookmark/
 description: Узнайте, как получать, обновлять и развертывать закладки в PDF‑документах с помощью Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: Проверьте свойства закладок и разверните оглавление в PDF‑файлах с помощью Java
 Abstract: В этой статье объясняется, как читать, обновлять и расширять закладки с помощью Aspose.PDF for Java. Рассматриваются перебор элементов оглавления, извлечение номеров страниц закладок с помощью PdfBookmarkEditor, чтение дочерних закладок, обновление заголовков и стиля закладок, а также принудительное открытие оглавления при отображении документа.
 ---
-Aspose.PDF for Java предоставляет закладки как через модель оглавления документа, так и через `PdfBookmarkEditor` фасад.
+Aspose.PDF for Java предоставляет закладки как через модель оглавления документа, так и через фасад `PdfBookmarkEditor`.
 
 ## Получение свойств закладки
 
 Используйте этот пример, когда необходимо просмотреть записи закладок верхнего уровня в оглавлении документа.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Переберите коллекцию оглавлений.
 1. Прочитайте и выведите названия закладок, стили и значения цвета.
 
@@ -39,7 +39,7 @@ public static void getBookmarks(Path inputFile) {
 
 ## Получение номеров страниц закладок
 
-В этом примере используется `PdfBookmarkEditor` извлекать заголовки закладок, уровни, номера страниц и действия.
+В этом примере используется `PdfBookmarkEditor` для извлечения заголовки закладок, уровни, номера страниц и действия.
 
 1. Привяжите исходный PDF к [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
 1. Извлеките коллекцию закладок и пройдитесь по ней.
@@ -70,7 +70,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 
 Используйте этот пример, когда нужно проанализировать как элементы верхнего уровня, так и вложенные элементы оглавления.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Пройдите по элементам верхнего уровня и выведите их свойства.
 1. Обнаружьте дочерние закладки, затем пройдите по ним и выведите их свойства.
 
@@ -103,7 +103,7 @@ public static void getChildBookmarks(Path inputFile) {
 
 Используйте этот пример, когда необходимо изменить существующее название закладки и её стиль.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к целевому элементу оглавления и его дочерней закладке.
 1. Обновите свойства закладки и сохраните документ.
 
@@ -125,7 +125,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда панель закладок должна открываться и показывать развернутые элементы оглавления при отображении документа.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Установите режим страницы на использование оглавления и пометьте каждый элемент оглавления как открытый.
 1. Сохраните обновлённый документ.
 

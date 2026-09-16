@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/attach-zugferd/
 description: Узнайте, как прикрепить XML‑счет ZUGFeRD к PDF и преобразовать его в PDF/A-3A с помощью Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,11 +13,11 @@ TechArticle: true
 AlternativeHeadline: Прикрепить XML‑счет ZUGFeRD к PDF‑документу с помощью Java
 Abstract: В этой статье объясняется, как создать совместимый с PDF/A-3A документ‑счёт с использованием Aspose.PDF for Java. Рассматривается прикрепление XML‑счета в виде вложенного файла, настройка MIME‑типа и отношения associated‑file, преобразование PDF в PDF/A-3A и сохранение готового ZUGFeRD‑готового документа.
 ---
-Используйте `Document` и `FileSpecification` API, когда вам нужно упаковать XML счета‑фактуры внутрь PDF для рабочих процессов в стиле ZUGFeRD.
+Используйте API `Document` и `FileSpecification`, когда вам нужно упаковать XML счёта-фактуры внутрь PDF для рабочих процессов в стиле ZUGFeRD.
 
 ## Прикрепление XML-счёта ZUGFeRD к PDF
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) для XML-файла счета.
 1. Установите метаданные встроенного файла, включая тип MIME и [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
 1. Добавьте [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) в коллекцию встроенных файлов документа.

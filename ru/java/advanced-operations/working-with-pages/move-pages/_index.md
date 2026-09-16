@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /ru/java/move-pages/
 description: Узнайте, как перемещать страницы PDF внутри документа или между документами в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,14 +13,14 @@ TechArticle: true
 AlternativeHeadline: Переместить страницы PDF между документами в Java
 Abstract: В этой статье объясняется, как перемещать страницы в PDF с помощью Aspose.PDF for Java. Описывается перемещение одной страницы или нескольких страниц в другой документ, а также переустановка страницы внутри того же PDF.
 ---
-Aspose.PDF for Java позволяет перемещать страницы между документами или переустанавливать страницы внутри того же PDF.
+Aspose.PDF for Java позволяет перемещать страницы между документами или менять порядок страниц внутри того же PDF.
 
 ## Перемещение страницы в другой документ
 
 Используйте этот пример, когда одну страницу следует удалить из исходного PDF и сохранить в отдельный документ.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
-1. Добавьте целевую страницу в назначение и удалите её из источника.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Добавьте нужную страницу в целевой документ и удалите её из исходного.
 1. Сохраните оба документа.
 
 ```java
@@ -39,7 +39,7 @@ public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceO
 
 Используйте этот пример, когда несколько страниц должны быть перенесены из исходного PDF в новый документ.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и создайте целевой документ.
 1. Скопируйте выбранные страницы в целевой документ.
 1. Удалите перемещённые страницы из исходного документа и сохраните оба файла.
 
@@ -62,7 +62,7 @@ public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path s
 
 Используйте этот пример, когда страницу нужно переместить в новое место в том же PDF.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Дублируйте целевую страницу в новое положение и удалите исходный элемент страницы.
 1. Сохраните переупорядоченный документ.
 

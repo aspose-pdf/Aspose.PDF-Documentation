@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/change-page-size/
 description: Узнайте, как читать и изменять размеры страниц PDF в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,10 +17,10 @@ Aspose.PDF for Java может как сообщать размеры стран
 
 ## Изменение размера страницы
 
-Используйте этот пример, когда необходимо изменить размер существующей страницы и проверить параметры коробок страницы до и после изменения.
+Используйте этот пример, когда необходимо изменить размер существующей страницы и проверить параметры границ страницы до и после изменения.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и вывести текущие значения его бокса.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите нужную страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и выведите текущие значения её границ.
 1. Установите новый размер страницы и сохраните документ.
 
 ```java
@@ -39,7 +39,7 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда вам нужно прочитать видимые размеры страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите прямоугольник страницы с включенной обработкой вращения.
 1. Выведите ширину и высоту страницы.
 
@@ -56,8 +56,8 @@ public static void getPageSize(Path inputFile) {
 
 Используйте этот пример, когда необходимо сравнить размеры страниц до и после учёта поворота.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Поверните цель [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Поверните нужную страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Прочитайте прямоугольник страницы с учётом вращения и без учёта вращения и выведите оба значения.
 
 ```java

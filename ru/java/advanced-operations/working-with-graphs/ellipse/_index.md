@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ru/java/add-ellipse/
 description: Узнайте, как рисовать, заполнять и подписывать эллиптические фигуры в PDF файлах на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Abstract: В этой статье показано, как добавить э�
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) фигуру и настроить её геометрию.
-1. Добавьте [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Создайте контейнер [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) и добавьте его на страницу.
+1. Создайте фигуру [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) и настройте её геометрию.
+1. Добавьте [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) в контейнер [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Установите свойства фигуры, необходимые для примера, включая [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) и [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
@@ -51,10 +51,10 @@ public static void addEllipse(Path outputFile) {
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и установить необходимые параметры форматирования текста.
-1. Создайте [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Эллипс](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) фигуру и настроить её геометрию.
-1. Добавьте [Эллипс](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) к [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Создайте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и установите необходимые параметры форматирования текста.
+1. Создайте контейнер [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) и добавьте его на страницу.
+1. Создайте фигуру [Эллипс](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) и настройте её геометрию.
+1. Добавьте [Эллипс](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) в контейнер [Граф](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

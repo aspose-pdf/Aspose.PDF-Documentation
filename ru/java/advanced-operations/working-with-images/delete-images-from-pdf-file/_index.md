@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/delete-images-from-pdf-file/
 description: Узнайте, как удалить встроенные изображения из PDF‑файлов на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 TechArticle: true
 AlternativeHeadline: Удалить встроенные изображения из PDF‑файлов с Java
 Abstract: В этой статье показано, как удалять изображения из PDF‑документов с использованием Aspose.PDF for Java. Пример удаляет ресурс изображения с первой страницы по его индексу в коллекции изображений страницы, а затем сохраняет изменённый документ.
@@ -14,8 +14,8 @@ Abstract: В этой статье показано, как удалять из�
 
 ## Удаление встроенного изображения по индексу
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к ресурсам изображений в целевом файле [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к ресурсам изображений нужной страницы [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Удалите целевое изображение из коллекции ресурсов страницы по его индексу.
 1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

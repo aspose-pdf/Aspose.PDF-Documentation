@@ -2,7 +2,7 @@
 title: Удаление таблиц из существующих PDF‑документов
 linktitle: Удаление таблиц
 description: Узнайте, как удалить одну или несколько таблиц из существующих PDF‑документов на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 type: docs
 weight: 50
 url: /ru/java/removing-tables/
@@ -13,14 +13,14 @@ TechArticle: true
 AlternativeHeadline: Удалить одну или несколько таблиц из PDF‑файлов с помощью Java
 Abstract: Эта статья объясняет, как удалять таблицы из существующих PDF‑документов с использованием Aspose.PDF for Java. В ней представляется TableAbsorber для обнаружения таблиц и демонстрируется, как удалить одну таблицу или удалить все найденные таблицы со страницы.
 ---
-Использовать `TableAbsorber` когда нужно удалить одну или несколько обнаруженных таблиц из существующего PDF.
+Используйте `TableAbsorber`, когда нужно удалить одну или несколько обнаруженных таблиц из существующего PDF.
 
 ## Удаление одной обнаруженной таблицы
 
 Используйте этот пример, когда должна быть удалена только первая найденная таблица на странице.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перейдите на целевую страницу с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Обработайте нужную страницу с помощью [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Удалите первую обнаруженную таблицу и сохраните документ.
 
 ```java
@@ -38,9 +38,9 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда каждую найденную таблицу на странице следует удалить.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Перейдите на целевую страницу с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) и скопировать обнаруженные таблицы в список.
-1. Удалите каждую обнаруженную таблицу и сохранить обновлённый PDF.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Обработайте нужную страницу с помощью [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) и скопируйте обнаруженные таблицы в список.
+1. Удалите каждую обнаруженную таблицу и сохраните обновлённый PDF.
 
 ```java
 public static void removeAllTables(Path inputFile, Path outputFile) {

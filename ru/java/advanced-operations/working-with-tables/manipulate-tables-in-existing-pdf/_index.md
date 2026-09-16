@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/manipulating-tables/
 description: Узнайте, как проверять и изменять таблицы в существующих PDF-документах с помощью Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: Проверка и изменение существующих PDF-таблиц с Java
 Abstract: В этой статье объясняется, как манипулировать таблицами, уже присутствующими в PDF-документах, используя Aspose.PDF for Java. Описывается поиск таблиц с помощью TableAbsorber, обновление текста внутри ячейки и замена обнаруженной таблицы новым объектом Table.
 ---
-Использовать `TableAbsorber` когда вам нужно найти существующие таблицы и обновить их содержание.
+Используйте `TableAbsorber`, когда вам нужно найти существующие таблицы и обновить их содержание.
 
 ## Замена текста внутри ячейки таблицы
 
 Используйте этот пример, когда текст в обнаруженной ячейке должен быть обновлён без перестройки всей таблицы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и перейдите к странице с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и перейдите к странице с [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Проверьте, что целевая таблица и фрагменты текста ячеек существуют.
 1. Замените текст в ячейке и сохраните обновлённый документ.
 
@@ -47,7 +47,7 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда оригинальную таблицу следует полностью заменить вновь созданной.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и обнаруживать таблицы на странице.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и обнаружьте таблицы на странице.
 1. Создайте новый [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с желаемой структурой.
 1. Замените поглощённую таблицу и сохраните полученный PDF.
 

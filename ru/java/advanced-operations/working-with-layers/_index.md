@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ru/java/working-with-pdf-layers/
 description: Узнайте, как добавлять, блокировать, извлекать, уплощать и объединять PDF-слои в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Aspose.PDF for Java раскрывает слои PDF через `Layer` API н�
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте и настроить необходимые [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) объекты на странице.
+1. Создайте и настройте необходимые объекты [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) на странице.
 1. Сохраните результирующий PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -43,9 +43,9 @@ public static void addLayers(Path outputFile) {
 
 ## Блокировка слоя
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к цели [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и получить его [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) коллекцию.
-1. Блокируйте цель [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к нужной странице [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и её коллекции слоёв [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Заблокируйте нужный слой [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/add-curve/
 description: Узнайте, как рисовать и заполнять криволинейные формы в PDF‑файлах на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,9 @@ Abstract: В этой статье показано, как добавить к�
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) форму и настроить её контрольные точки.
-1. Добавьте [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Создайте контейнер [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) и добавьте его на страницу.
+1. Создайте фигуру [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) и настройте её контрольные точки.
+1. Добавьте [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) в контейнер [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Установите свойства фигуры, необходимые для примера, включая [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. Сохраните результирующий PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
