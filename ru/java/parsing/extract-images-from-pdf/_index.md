@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/extract-images-from-the-pdf-file/
 description: Узнайте, как извлекать встроенные изображения из PDF‑файлов с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,10 +15,10 @@ Abstract: В этой статье объясняется, как извлека
 ---
 Извлекайте изображения со страниц PDF, когда необходимо повторно использовать встроенную графику, проверять ресурсы документа или экспортировать изображения для последующей обработки.
 
-1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр и откройте поток вывода для извлечённого файла изображения.
-1. Получите целевой [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) из документа и получить к нему доступ `Resources.Images` коллекция.
-1. Получите требуемый [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) объект из этой коллекции изображений по индексу.
-1. Вызовите `image.save(outputImage)` записать извлечённые байты изображения в целевой поток.
+1. Откройте исходный PDF в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и откройте поток вывода для извлечённого файла изображения.
+1. Получите нужную страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) из документа и доступ к её коллекции `Resources.Images`.
+1. Получите требуемый объект [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) из коллекции изображений по индексу.
+1. Вызовите `image.save(outputImage)`, чтобы записать извлечённые байты изображения в целевой поток.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {

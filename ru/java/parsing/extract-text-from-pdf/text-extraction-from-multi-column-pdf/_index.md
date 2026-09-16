@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/text-extraction-from-multi-column-pdf/
 description: Изучите методы улучшения извлечения текста из многоколоночных макетов PDF с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,11 +16,11 @@ sitemap:
 
 Эта методика обновляет размеры шрифтов фрагментов текста, сохраняет скорректированный документ в память, а затем извлекает текст из преобразованного результата.
 
-1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) и посетите все страницы документа, чтобы собрать [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) объекты.
-1. Итерируйте фрагменты и уменьшайте размер шрифта каждого на требуемое соотношение, чтобы плотный столбцовый макет мог быть нормализован перед извлечением.
-1. Сохраните отрегулированный [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в поток байтов в памяти.
-1. Откройте второй [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) из того буфера памяти.
+1. Откройте исходный PDF в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) и посетите все страницы документа, чтобы собрать объекты [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Переберите фрагменты и уменьшите размер шрифта каждого с заданным коэффициентом, чтобы нормализовать плотный многоколоночный макет перед извлечением.
+1. Сохраните скорректированный [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в поток байтов в памяти.
+1. Откройте второй [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) из этого буфера памяти.
 1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/), пройдите по всем страницам преобразованного документа и запишите извлеченный текст в выходной файл.
 
 ```java
@@ -45,11 +45,11 @@ public static void extractTextReduceFont(Path inputFile, Path outputFile, double
 
 ## Извлечение текста с коэффициентом масштабирования
 
-Использовать `TextExtractionOptions` в режиме чистого форматирования и настройте коэффициент масштабирования для макетов с большим количеством столбцов.
+Используйте `TextExtractionOptions` в режиме чистого форматирования и настройте коэффициент масштабирования для макетов с большим количеством столбцов.
 
-1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) для извлечения всего документа.
-1. Создайте [TextExtractionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) в режиме чистого форматирования, чтобы использовалось извлечение с учётом чувствительности к макету.
+1. Откройте исходный PDF в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) для извлечения текста из всего документа.
+1. Создайте [TextExtractionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) в режиме чистого форматирования, чтобы использовалось извлечение с учётом макета.
 1. Установите коэффициент масштабирования и примените параметры извлечения к абсорберу перед обходом страниц.
 1. Обойдите все страницы документа и запишите извлечённый текст в выходной файл.
 

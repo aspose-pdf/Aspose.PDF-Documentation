@@ -5,18 +5,18 @@ type: docs
 weight: 40
 url: /ru/java/annotation-and-special-text/
 description: Узнайте, как извлекать текст из аннотаций штампа, выделенного текста, а также содержимого верхнего и нижнего индекса в PDF‑документах с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 ## Извлечение выделенного текста
 
-Перебрать аннотации страниц и прочитать помечённый текст `HighlightAnnotation`.
+Переберите аннотации страниц и прочитайте выделенный текст из `HighlightAnnotation`.
 
-1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
-1. Итерируйте через [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Проверьте, является ли каждая аннотация [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) перед приведением её к типу класса аннотации.
+1. Откройте исходный PDF в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите объекты [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) на нужной странице [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Проверьте, является ли каждая аннотация [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/), перед приведением её к типу класса аннотации.
 1. Прочитайте помеченный текст из каждой аннотации выделения и выведите его в консоль.
 
 ```java
@@ -34,13 +34,13 @@ public static void extractHighlightedText(Path inputFile) {
 
 ## Извлечение текста из аннотаций штампа
 
-Прочтите поток обычного отображения из аннотации штампа и передайте его дальше `TextAbsorber`.
+Прочтите поток обычного отображения из аннотации штампа и передайте его объекту `TextAbsorber`.
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
-1. Итерируйте через [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) объекты на целевом [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF в экземпляре [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите объекты [Аннотация](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) на нужной странице [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Отфильтруйте аннотации, тип которых `Stamp`.
-1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) и запросить запись normal appearance entry из словаря appearance аннотации штампа.
-1. Посетите appearance [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) и вывести извлечённый текст.
+1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) и получите запись обычного отображения из словаря отображений аннотации штампа.
+1. Обработайте объект отображения [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) поглотителем и выведите извлечённый текст.
 
 ```java
 public static void extractStampText(Path inputFile) {
@@ -61,12 +61,12 @@ public static void extractStampText(Path inputFile) {
 
 ## Извлечение сведений о надстрочном и подстрочном тексте
 
-Использовать `TextFragmentAbsorber` когда вам нужны как извлечённый текст, так и флаги верхнего или нижнего индекса для каждого фрагмента.
+Используйте `TextFragmentAbsorber`, когда вам нужны как извлечённый текст, так и флаги верхнего или нижнего индекса для каждого фрагмента.
 
-1. Откройте исходный PDF в [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляре.
+1. Откройте исходный PDF в экземпляре [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) для анализа текста на уровне фрагментов.
-1. Посетите цель [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и собрать его [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) объекты.
-1. Итерируйте эти фрагменты и считывать текст вместе с флагами надстрочного и нижстрочного `fragment.getTextState()`.
+1. Обработайте нужную страницу [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и соберите её объекты [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Переберите эти фрагменты и прочитайте текст вместе с флагами надстрочного и подстрочного текста из `fragment.getTextState()`.
 1. Запишите извлечённые детали в выходной файл.
 
 ```java
