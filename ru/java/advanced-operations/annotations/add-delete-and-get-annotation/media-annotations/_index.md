@@ -1,27 +1,27 @@
 ---
-title: Медийные аннотации в PDF
-linktitle: Медийные аннотации
+title: Медиа-аннотации в PDF
+linktitle: Медиа-аннотации
 type: docs
 weight: 40
 url: /ru/java/media-annotations/
-description: Узнайте, как работать со звуком, экраном, rich media и 3D PDF annotation APIs в Java, получая пошаговое руководство для типичных мультимедийных рабочих процессов.
-lastmod: "2026-08-19"
+description: Узнайте, как работать с API аннотаций PDF для звука, экрана, интерактивных медиа и 3D в Java, с пошаговым руководством для типовых мультимедийных рабочих процессов.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Рабочие процессы аннотации PDF, связанные с мультимедиа, в Java.
-Abstract: Эта страница объясняет общие рабочие процессы аннотаций мультимедиа в Aspose.PDF for Java, включая звук, экран, rich media, 3D, сценарии удаления и проверки. Текущий репозиторий не содержит отдельного класса примера медиа `workingwithannotations`, поэтому эта статья документирует шаблоны Java API напрямую с пошаговым руководством.
+AlternativeHeadline: Рабочие процессы аннотаций PDF, связанные с медиа, в Java.
+Abstract: Эта страница объясняет типичные рабочие процессы аннотаций медиа в Aspose.PDF for Java, включая звуковые, экранные аннотации, аннотации Rich Media и 3D, а также их удаление и просмотр. Текущий репозиторий не содержит отдельного класса примера медиа `workingwithannotations`, поэтому эта статья документирует шаблоны Java API напрямую с пошаговым руководством.
 ---
-Медиа-аннотации в PDF обычно охватывают встроенный или связанный мультимедийный контент, такой как звуковые клипы, области воспроизведения экрана, контейнеры rich media и 3D‑модели.
+Медийные аннотации в PDF обычно охватывают встроенный или связанный мультимедийный контент, такой как звуковые клипы, области воспроизведения экрана, контейнеры Rich Media и 3D‑модели.
 
-## Добавление мультимедийной аннотации
+## Добавление аннотации Rich Media
 
-Используйте этот пример, когда страница PDF должна содержать встроенное видео с пользовательским плеером, изображением постера и скином.
+Используйте этот пример, когда страница PDF должна содержать встроенный видеоконтент с пользовательским плеером, постером и скином.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), настройте активы плеера, постер и поток контента.
-1. Добавьте аннотацию на страницу и сохраните результирующий документ.
+1. Создайте новый PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), настройте ресурсы плеера, постер и поток контента.
+1. Добавьте аннотацию на страницу и сохраните выходной документ.
 
 ```java
 public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throws Exception {
@@ -63,11 +63,11 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 }
 ```
 
-## Удаление аннотаций rich media
+## Удаление аннотаций Rich Media
 
-Этот пример удаляет существующие аннотации rich media со страницы.
+Этот пример удаляет существующие аннотации Rich Media со страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
 1. Удалите собранные аннотации и сохраните обновлённый документ.
 
@@ -92,11 +92,11 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## Получение мультимедийных аннотаций
 
-Используйте этот пример, чтобы просмотреть аннотации экрана, звука и мультимедиа, уже присутствующие на странице.
+Используйте этот пример, чтобы проверить аннотации экрана, звука и мультимедиа, уже присутствующие на странице.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Определите набор типов мультимедийных аннотаций, которые вы хотите обнаружить.
-1. Пройдите по аннотациям страницы и выведите тип и прямоугольник для каждого совпадения.
+1. Переберите аннотации страницы и выведите тип и прямоугольник для каждого совпадения.
 
 ```java
 public static void multimediaAnnotationsGet(Path inputFile) {
@@ -115,13 +115,13 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 }
 ```
 
-## Добавление 3D‑аннотацию
+## Добавление 3D-аннотации
 
-В этом примере добавляется интерактивный просмотр 3D‑модели с предустановленными перспективами и параметрами рендеринга.
+Этот пример добавляет интерактивный просмотр 3D‑модели с предопределёнными перспективами и параметрами рендеринга.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Загрузите модель в [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) и настроить [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
-1. Создайте [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), добавьте его на страницу, и сохраните документ.
+1. Создайте новый PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Загрузите модель в [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) и настройте [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
+1. Создайте [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), добавьте её на страницу и сохраните документ.
 
 ```java
 public static void annotation3dAdd(Path modelFile, Path outputFile) {
@@ -164,11 +164,11 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 }
 ```
 
-## Добавление аннотации экрана
+## Добавление экранной аннотации
 
-Используйте этот пример, когда страница должна ссылаться на медиофайл через регион воспроизведения на экране.
+Используйте этот пример, когда страница должна ссылаться на медиафайл через экранную область воспроизведения.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) для медиафайла и целевого прямоугольника.
 1. Добавьте аннотацию на страницу и сохраните документ.
 
@@ -190,11 +190,11 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 
 ## Добавление звуковой аннотации
 
-В этом примере звуковая аннотация размещается на странице и ассоциируется с файлом WAV.
+В этом примере размещается звуковая аннотация на странице и связывается с файлом WAV.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) для целевого аудиофайла и настройте его метаданные.
-1. Добавьте аннотацию на страницу и сохраните результирующий документ.
+1. Добавьте аннотацию на страницу и сохраните выходной документ.
 
 ```java
 public static void soundAnnotationAdd(Path inputFile, Path outputFile) {
@@ -222,14 +222,12 @@ public static void soundAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Связанные темы аннотаций
+## Связанные темы об аннотациях
 
 - [Интерактивные аннотации](/pdf/ru/java/interactive-annotations/)
-- [Разметка аннотаций](/pdf/ru/java/markup-annotations/)
+- [Аннотации разметки](/pdf/ru/java/markup-annotations/)
 - [Аннотации безопасности](/pdf/ru/java/security-annotations/)
-- [Фигурные аннотации](/pdf/ru/java/shape-annotations/)
+- [Аннотации фигур](/pdf/ru/java/shape-annotations/)
 - [Текстовые аннотации](/pdf/ru/java/text-based-annotations/)
-- [Аннотации водяного знака](/pdf/ru/java/watermark-annotations/)
+- [Аннотации водяных знаков](/pdf/ru/java/watermark-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
-
-

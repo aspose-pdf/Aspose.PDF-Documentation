@@ -1,27 +1,27 @@
 ---
-title: Аннотации водяного знака с использованием Java
-linktitle: Аннотации водяного знака
+title: Аннотации водяных знаков с использованием Java
+linktitle: Аннотации водяных знаков
 type: docs
 weight: 70
 url: /ru/java/watermark-annotations/
-description: Узнайте, как добавлять, просматривать и удалять аннотации водяного знака в PDF‑документах с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+description: Узнайте, как добавлять, просматривать и удалять аннотации водяных знаков в PDF‑документах с помощью Aspose.PDF for Java.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Работайте с аннотациями водяного знака в PDF‑файлах, используя Java.
-Abstract: В этой статье объясняется, как создавать, просматривать и удалять аннотации водяных знаков в PDF‑документах с использованием Aspose.PDF for Java. Рассматривается добавление текстовой аннотации водяного знака с пользовательским состоянием текста и непрозрачностью, чтение существующих областей аннотаций водяных знаков и удаление аннотаций водяных знаков.
+AlternativeHeadline: Работайте с аннотациями водяных знаков в PDF‑файлах с использованием Java.
+Abstract: В этой статье объясняется, как создавать, проверять и удалять аннотации водяных знаков в PDF‑документах с использованием Aspose.PDF for Java. Рассматривается добавление текстовой аннотации водяного знака с пользовательским состоянием текста и непрозрачностью, чтение существующих областей аннотаций водяных знаков и удаление аннотаций водяных знаков.
 ---
-Аннотации водяных знаков позволяют размещать переиспользуемый наложенный контент на странице, одновременно управляя им через коллекцию аннотаций.
+Аннотации водяного знака позволяют размещать повторно используемое наложенное содержимое на странице, управляя им через коллекцию аннотаций.
 
 ## Добавление аннотации водяного знака
 
-Используйте этот пример, когда вам нужна текстовая аннотация водяного знака с пользовательскими настройками Font и непрозрачностью.
+Используйте этот пример, когда вам нужна текстовая аннотация водяного знака с пользовательскими настройками шрифта и непрозрачностью.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) и добавить его на страницу.
-1. Настройте [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), текст водяного знака, и непрозрачность, затем сохраните документ.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) и добавьте её на страницу.
+1. Настройте [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), текст водяного знака и непрозрачность, затем сохраните документ.
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {
@@ -47,13 +47,13 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Получение аннотаций водяного знака
+## Получение аннотаций водяных знаков
 
 Этот пример сканирует коллекцию аннотаций и выводит прямоугольник каждой аннотации водяного знака.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Итерируйтесь по аннотациям на целевой странице.
-1. Фильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` и вывести их прямоугольники.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите аннотации на целевой странице.
+1. Отфильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` и выведите их прямоугольники.
 
 ```java
 public static void watermarkGet(Path inputFile) {
@@ -71,7 +71,7 @@ public static void watermarkGet(Path inputFile) {
 
 Используйте этот подход, когда существующие аннотации водяных знаков должны быть удалены из документа.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. Удалите собранные аннотации и сохраните выходной файл.
 
@@ -92,7 +92,7 @@ public static void watermarkDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Связанные темы аннотаций
+## Связанные темы об аннотациях
 
 - [Интерактивные аннотации](/pdf/ru/java/interactive-annotations/)
 - [Аннотации разметки](/pdf/ru/java/markup-annotations/)
@@ -100,5 +100,3 @@ public static void watermarkDelete(Path inputFile, Path outputFile) {
 - [Аннотации фигур](/pdf/ru/java/shape-annotations/)
 - [Текстовые аннотации](/pdf/ru/java/text-based-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
-
-
