@@ -1,20 +1,25 @@
 ---
-title: Supprimer les Métadonnées d'un PDF en PHP
+title: Supprimer les métadonnées du PDF en PHP
+linktitle: Supprimer les métadonnées du PDF en PHP
 type: docs
 weight: 70
-url: /fr/java/remove-metadata-from-pdf-in-php/
-lastmod: "2021-06-05"
+url: /java/remove-metadata-from-pdf-in-php/
+description: Découvrez comment supprimer les métadonnées d'un document PDF en PHP à l'aide d'Aspose.PDF pour améliorer la confidentialité et la sécurité des documents.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Supprimer les métadonnées
 
-## Aspose.PDF - Supprimer les Métadonnées
 
-Pour supprimer les métadonnées d'un document PDF en utilisant **Aspose.PDF Java pour PHP**, il suffit d'appeler la classe **RemoveMetadata**.
+
+Pour supprimer les métadonnées d'un document PDF à l'aide de **Aspose.PDF Java pour PHP**, invoquez simplement la classe **RemoveMetadata**.
 
 Code PHP
 
+
 ```php
 
-# Ouvrir un document pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 if (preg_match('/pdfaid:part/',$doc->getMetadata())) {
@@ -27,15 +32,20 @@ if (preg_match('/dc:format/',$doc->getMetadata())) {
 
 }
 
-# enregistrer le document mis à jour avec de nouvelles informations
+# save update document with new information
 $doc->save($dataDir . "Remove_Metadata.pdf");
 
-print "Métadonnées supprimées avec succès, veuillez vérifier le fichier de sortie." . PHP_EOL;
+print "Removed metadata successfully, please check output file." . PHP_EOL;
 
 ```
 
-**Télécharger le Code Fonctionnel**
 
-Téléchargez **Remove Metadata (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+**Télécharger le code d'exécution**
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)
+
+
+Téléchargez** Supprimer les métadonnées (Aspose.PDF)** de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)

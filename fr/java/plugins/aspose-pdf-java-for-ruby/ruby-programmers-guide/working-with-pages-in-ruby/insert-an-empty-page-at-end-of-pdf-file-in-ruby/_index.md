@@ -1,39 +1,49 @@
 ---
-title: Insérer une Page Vide à la Fin d'un Fichier PDF en Ruby
+title: Insérer une page vide à la fin du fichier PDF dans Ruby
+linktitle: Insérer une page vide à la fin du fichier PDF dans Ruby
 type: docs
 weight: 60
-url: /fr/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
+description: Découvrez comment insérer une page vide à la fin d'un document PDF à l'aide de Ruby avec Aspose.PDF, ajoutant ainsi de la flexibilité à vos tâches de traitement PDF.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Insérer une page vide à la fin du fichier PDF
 
-## Aspose.PDF - Insérer une Page Vide à la Fin d'un Fichier PDF
 
-Pour insérer une page vide à la fin d'un document PDF en utilisant **Aspose.PDF Java pour Ruby**, il suffit d'invoquer le module **InsertEmptyPageAtEndOfFile**.
 
-Code Ruby
+Pour insérer une page vide à la fin d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **InsertEmptyPageAtEndOfFile**.
+
+Code Rubis
+
 
 ```java
-# Le chemin vers le répertoire des documents.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Ouvrir le document cible
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# insérer une page vide dans un PDF
+# insert a empty page in a PDF
 
 pdf.getPages().add()
 
-# Enregistrer le fichier de sortie concaténé (le document cible)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "Page vide ajoutée avec succès!"
+puts "Empty page added successfully!"
 ```
 
-## Télécharger le Code Exécuté
+## 
+Télécharger le code d'exécution
 
-Télécharger **Insérer une Page Vide à la Fin d'un Fichier PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)
+
+Téléchargez ** Insérer une page vide à la fin du fichier PDF (Aspose.PDF) ** à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)

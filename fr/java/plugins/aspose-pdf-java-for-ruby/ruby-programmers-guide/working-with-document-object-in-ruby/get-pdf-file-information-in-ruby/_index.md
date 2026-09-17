@@ -1,72 +1,57 @@
 ---
-title: Obtenez des informations sur le fichier PDF en Ruby
+title: Obtenir des informations sur un fichier PDF dans Ruby
+linktitle: Obtenir des informations sur un fichier PDF dans Ruby
 type: docs
 weight: 50
-url: /fr/java/get-pdf-file-information-in-ruby/
-lastmod: "2021-06-05"
+url: /java/get-pdf-file-information-in-ruby/
+description: Extrayez les métadonnées et les détails des fichiers PDF par programme à l'aide d'Aspose.PDF dans Ruby.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Obtenir des informations sur le fichier PDF
 
-## Aspose.PDF - Obtenez des informations sur le fichier PDF
 
-Pour obtenir des informations sur le fichier du document Pdf en utilisant **Aspose.PDF Java for Ruby**, il suffit d'invoquer le module **GetPdfFileInfo**.
 
-Code Ruby
+Pour obtenir les informations sur le fichier d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **GetPdfFileInfo**.
+
+Code Rubis
+
 
 ```java
-# Le chemin vers le répertoire des documents.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Ouvrir un document pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Obtenir des informations sur le document
+# Get document information
 
 doc_info = doc.getInfo()
 
-# Afficher les informations sur le document
+# Show document information
 
-puts "Auteur:-" + doc_info.getAuthor().to_s
+puts "Author:-" + doc_info.getAuthor().to_s
 
-puts "Date de création:-" + doc_info.getCreationDate().to_string
+puts "Creation Date:-" + doc_info.getCreationDate().to_string
 
-puts "Mots-clés:-" + doc_info.getKeywords().to_s
+puts "Keywords:-" + doc_info.getKeywords().to_s
 
-puts "Date de modification:-" + doc_info.getModDate().to_string
+puts "Modify Date:-" + doc_info.getModDate().to_string
 
-puts "Sujet:-" + doc_info.getSubject().to_s
+puts "Subject:-" + doc_info.getSubject().to_s
 
-puts "Titre:-" + doc_info.getTitle().to_s
+puts "Title:-" + doc_info.getTitle().to_s
 ```
 
-## Télécharger le code en cours d'exécution
+## 
+Télécharger le code d'exécution
 
-Téléchargez **Obtenez des informations sur le fichier PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)
 
-```ruby
-# Ce script démontrera comment obtenir des informations de base sur un fichier PDF.
-require 'rjb'
+Téléchargez** Obtenez des informations sur le fichier PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
 
-module Asposepdfjava
-  module Document
-    def self.get_pdf_file_info
-      # Spécifiez le chemin d'accès au fichier PDF
-      pdf_file_path = '/path/to/your/document.pdf'
 
-      # Charger le document PDF
-      pdf_document = Rjb::import('com.aspose.pdf.Document').new(pdf_file_path)
-
-      # Afficher le nombre de pages du document
-      puts "Nombre de pages : #{pdf_document.getPages().size()}"
-
-      # Afficher le titre du document
-      puts "Titre : #{pdf_document.getInfo().getTitle()}"
-
-      # Afficher l'auteur du document
-      puts "Auteur : #{pdf_document.getInfo().getAuthor()}"
-    end
-  end
-end
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)

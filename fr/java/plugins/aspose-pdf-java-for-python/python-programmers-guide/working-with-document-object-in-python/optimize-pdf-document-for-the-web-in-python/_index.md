@@ -1,12 +1,15 @@
 ---
 title: Optimiser un document PDF pour le Web en Python
+linktitle: Optimiser un document PDF pour le Web en Python
 type: docs
 weight: 60
-url: /fr/java/optimize-pdf-document-for-the-web-in-python/
-lastmod: "2021-06-05"
+url: /java/optimize-pdf-document-for-the-web-in-python/
+description: Découvrez comment optimiser les fichiers PDF pour un chargement Web plus rapide en Python avec Aspose.PDF, améliorant ainsi l'expérience utilisateur et les performances.
+lastmod: "2026-06-09"
 ---
 
-Pour optimiser un document PDF pour le web en utilisant **Aspose.PDF Java pour Python**, il suffit d'invoquer la méthode **optimize_web** de la classe **Optimize**.
+Pour optimiser un document PDF pour le Web à l'aide de **Aspose.PDF Java pour Python**, invoquez simplement la méthode **optimize_web** de la classe **Optimize**.
+
 
 ```python
 
@@ -14,17 +17,20 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# Optimiser pour le web
+# Optimize for web
 doc.optimize();
 
-# Enregistrer le document de sortie
+#Save output document
 doc.save(self.dataDir + "Optimized_Web.pdf")
 
-print "PDF optimisé pour le Web, veuillez vérifier le fichier de sortie."
+print "Optimized PDF for the Web, please check output file."
 ```
 
-**Télécharger le code en cours d'exécution**
 
-Téléchargez **Optimize PDF for Web (Aspose.PDF)** depuis l'un des sites de codage social mentionnés ci-dessous :
+**Télécharger le code d'exécution**
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/Optimize/Optimize.py)
+Téléchargez** Optimiser le PDF pour le Web (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/Optimize/Optimize.py)

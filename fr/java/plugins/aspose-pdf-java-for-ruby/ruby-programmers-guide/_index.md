@@ -1,14 +1,22 @@
 ---
 title: Guide des programmeurs Ruby
+linktitle: Guide des programmeurs Ruby
 type: docs
 weight: 20
-url: /fr/java/ruby-programmers-guide/
-lastmod: "2021-06-05"
+url: /java/ruby-programmers-guide/
+description: Guide complet permettant aux développeurs Ruby d'utiliser Aspose.PDF pour créer, modifier et gérer des documents PDF.
+lastmod: "2026-06-09"
 ---
 
-Cette section comprend les sujets suivants :
+Cette section comprend les sujets suivants :
 
-- [Travailler avec l'objet Document en Ruby](/pdf/fr/java/working-with-document-object-in-ruby/)
-- [Travailler avec les pages en Ruby](/pdf/fr/java/working-with-pages-in-ruby/)
-- [Travailler avec le texte en Ruby](/pdf/fr/java/working-with-text-in-ruby/)
-- [Travailler avec la conversion de documents en Ruby](/pdf/fr/java/working-with-document-conversion-in-ruby/)
+
+- 
+[Travailler avec un objet document dans Ruby] (/pdf/java/working-with-document-object-in-ruby/)
+- [Travailler avec des pages dans Ruby] (/pdf/java/working-with-pages-in-ruby/)
+
+- 
+[Travailler avec du texte dans Ruby] (/pdf/java/working-with-text-in-ruby/)
+
+- 
+[Travailler avec la conversion de documents dans Ruby] (/pdf/java/working-with-document-conversion-in-ruby/)

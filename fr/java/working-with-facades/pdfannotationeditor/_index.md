@@ -1,17 +1,31 @@
 ---
 title: Classe PdfAnnotationEditor
+linktitle: Classe PdfAnnotationEditor
 type: docs
 weight: 40
-url: /fr/java/pdfannotationeditor-class/
-description: Cette section explique comment travailler avec Aspose.PDF Facades en utilisant la classe PdfAnnotationEditor.
-lastmod: "2021-06-05"
+url: /java/pdfannotationeditor-class/
+description: Apprenez à utiliser les flux de travail d'annotation PDF en Java via la section PdfAnnotationEditor, y compris le texte, le balisage, les liens, les formes, les filigranes, les rédactions et les scénarios de transfert d'annotations.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Workflows d'annotation en Java pour la section PdfAnnotationEditor
+Abstract: Cette section organise les flux de travail Java liés aux annotations pour la zone de documentation de PdfAnnotationEditor. L'ensemble d'articles provient des exemples d'annotations du référentiel sous `workingwithannotations` et couvre le texte, le balisage, l'interactivité, la forme, le filigrane, la sécurité, les notes de couverture médiatique et les scénarios d'import-export d'annotations.
 ---
+Cette section regroupe les flux de travail d'annotation Java utilisés pour créer, inspecter, supprimer et transférer des annotations dans des fichiers PDF.
 
-- [Supprimer toutes les annotations par type spécifié (facades)](/pdf/fr/java/delete-annotations/)
-- [Importer et exporter des annotations au format XFDF en utilisant com.aspose.pdf.facades](/pdf/fr/java/import-export-annotations/)
-- [Extraire une annotation](/pdf/fr/java/extract-annotation/)
-- [Aplatir une annotation](/pdf/fr/java/flatten-annotation/)
-- [Modifier des annotations](/pdf/fr/java/modify-annotations/)
+
+
+Le référentiel actuel n'inclut pas de classe `PdfAnnotationEditorExamples.java` dédiée. Pour cette section, le contenu de l'article provient des exemples Java sous `en/java/src/main/java/com/aspose/pdf/examples/workingwithannotations`.
+
+
+
+Utilisez cette section pour :
+
+
+- 
+[Ajouter, supprimer et obtenir une annotation] (/pdf/java/pdfannotationeditor-class/add-delete-and-get-annotation/) pour les familles d'annotations groupées.
+
+- 
+[Importer et exporter des annotations] (/pdf/java/pdfannotationeditor-class/import-export-annotations/) pour copier des annotations entre des fichiers PDF.

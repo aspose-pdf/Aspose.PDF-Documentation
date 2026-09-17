@@ -1,39 +1,47 @@
 ---
-title: Convertir HTML en format PDF en Ruby
+title: Convertir HTML au format PDF dans Ruby
+linktitle: Convertir HTML au format PDF dans Ruby
 type: docs
 weight: 10
-url: /fr/java/convert-html-to-pdf-format-in-ruby/
-lastmod: "2021-06-05"
+url: /java/convert-html-to-pdf-format-in-ruby/
+description: Découvrez comment convertir du contenu HTML au format PDF dans Ruby à l'aide d'Aspose.PDF pour une génération de documents fiable et précise.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Convertir le HTML au format PDF
 
-## Aspose.PDF - Convertir HTML en format PDF
 
-Pour convertir HTML en format PDF en utilisant **Aspose.PDF Java pour Ruby**, il suffit d'invoquer le module **HtmlToPdf**.
 
-Code Ruby
+Pour convertir du HTML au format PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **HtmlToPdf**.
+
+Code Rubis
+
 
 ```java
-
-# Le chemin vers le répertoire des documents.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
 htmloptions = Rjb::import('com.aspose.pdf.HtmlLoadOptions').new(data_dir)
 
-# Charger le fichier HTML
+# Load HTML file
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + "index.html", htmloptions)
 
-# Enregistrer le fichier de sortie concaténé (le document cible)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir + "html.pdf")
 
-puts "Le document a été converti avec succès"
+puts "Document has been converted successfully"
 ```
 
-## Télécharger le code en cours d'exécution
+## 
+Télécharger le code d'exécution
 
-Téléchargez **Convertir HTML en format PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
 
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/htmltopdf.rb)
+Téléchargez** Convertir le HTML au format PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/htmltopdf.rb)

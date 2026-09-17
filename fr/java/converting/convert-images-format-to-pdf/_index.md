@@ -1,565 +1,358 @@
 ---
-title: Convertir divers formats d'images en PDF
+title: Convertir les formats d'image en PDF en Java
 linktitle: Convertir des images en PDF
 type: docs
 weight: 60
-url: /fr/java/convert-images-format-to-pdf/
-lastmod: "2021-11-19"
-description: Ce sujet montre comment la bibliothèque Aspose.PDF pour Java permet de convertir divers formats d'images en PDF.
+url: /java/convert-images-format-to-pdf/
+lastmod: "2026-06-16"
+description: Apprenez à convertir BMP, CGM, DICOM, PNG, TIFF, EMF, SVG, CDR et d'autres formats d'image en PDF en Java avec Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
+TechArticle: true
+AlternativeHeadline: Comment convertir des images en PDF en Java
+Abstract: Cet article explique comment convertir plusieurs formats d'image en PDF à l'aide d'Aspose.PDF pour Java. Il couvre le placement direct de l'image dans une nouvelle page PDF ainsi que les options de chargement spécifiques au type de fichier pour les entrées CGM, SVG et CDR.
 ---
+Aspose.PDF pour Java peut convertir de nombreux formats d'images raster et vectorielles en documents PDF.
 
-**Aspose.PDF pour Java** vous permet de convertir différents formats d'images en fichiers PDF. Notre bibliothèque démontre des extraits de code pour convertir les formats d'image les plus populaires, tels que - BMP, CGM, DICOM, EMF, JPG, PNG, SVG et TIFF.
 
-## Convertir BMP en PDF
+## 
+Convertir BMP en PDF
 
-Convertir des fichiers BMP en document PDF en utilisant la bibliothèque **Aspose.PDF pour Java**.
 
-Les images <abbr title="Bitmap Image File">BMP</abbr> sont des fichiers ayant l'extension .BMP qui représentent des fichiers d'image bitmap utilisés pour stocker des images numériques bitmap. Ces images sont indépendantes de l'adaptateur graphique et sont également appelées format de fichier bitmap indépendant de l'appareil (DIB).
-Vous pouvez convertir BMP en PDF avec l'API Aspose.PDF pour Java.
- Par conséquent, vous pouvez suivre les étapes suivantes pour convertir des images BMP :
 
-1. Initialisez un nouveau Document
-1. Chargez le fichier image BMP d'exemple
-1. Enfin, enregistrez le fichier PDF de sortie
+Utilisez cet exemple lorsqu'une image BMP doit être placée dans un document PDF.
 
-Ainsi, l'extrait de code suivant suit ces étapes et montre comment convertir BMP en PDF en utilisant Java :
+
+1. 
+Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide pour contenir le PDF de sortie.
+
+1. 
+Ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et placez le BMP avec `page.addImage(...)`.
+1. Définissez le rectangle de l'image cible avec [`Rectangle`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) afin que le contenu raster remplisse la zone de la page PDF.
+
+1. 
+Enregistrez le fichier PDF de sortie.
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertBMPtoPDF {
-
-    private ConvertBMPtoPDF() {
+public static void convertBmpToPdf(Path inputFile, Path outputFile) {
+        try (Document document = new Document()) {
+            try (Page page = document.getPages().add()) {
+                page.addImage(inputFile.toString(), new Rectangle(0, 0, 595, 842, true));
+            }
+            document.save(outputFile.toString());
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
     }
+```
 
-    private static Path _dataDir = Paths.get("<set path to samples>");
+## 
+Convertir CGM en PDF
 
-    public static void main(String[] args) throws FileNotFoundException {
-        // Initialisez l'objet document
-        Document document = new Document();
 
-        Page page = document.getPages().add();        
-        Image image = new Image();
-        
-        // Chargez le fichier image BMP d'exemple
-        image.setFile(Paths.get(_dataDir.toString(), "Sample.bmp").toString());
-        page.getParagraphs().add(image);
-        
-        // Enregistrez le document PDF de sortie
-        document.save(Paths.get(_dataDir.toString(),"BMPtoPDF.pdf").toString());
+
+Utilisez cet exemple lorsqu'un fichier graphique CGM doit être converti en PDF.
+
+
+1. 
+Ouvrez la source CGM en passant le chemin du fichier et [`CgmLoadOptions`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/cgmloadoptions/) dans le constructeur [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Laissez Aspose.PDF interpréter le flux graphique CGM pendant le chargement du document.
+
+1. 
+Enregistrez le PDF converti dans le chemin de sortie cible.
+
+
+```java
+public static void convertCgmToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new CgmLoadOptions())) {
+        document.save(outputFile.toString());
     }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-{{% alert color="success" %}}
-**Essayez de convertir BMP en PDF en ligne**
+## 
+Convertir DICOM en PDF
 
-Aspose vous présente une application gratuite en ligne ["BMP to PDF"](https://products.aspose.app/pdf/conversion/bmp-to-pdf/), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
-[![Aspose.PDF Conversion BMP en PDF en utilisant l'application gratuite](bmp_to_pdf.png)](https://products.aspose.app/pdf/conversion/bmp-to-pdf/)
-{{% /alert %}}
 
-## Convertir CGM en PDF
+Utilisez cet exemple lorsqu’une image médicale DICOM doit être enveloppée dans un document PDF.
 
-<abbr title="Computer Graphics Metafile">CGM</abbr> est une norme ISO qui fournit un format de fichier d'image 2D basé sur des vecteurs pour le stockage et la récupération d'informations graphiques. CGM est un format indépendant des dispositifs. CGM est un format de graphiques vectoriels qui prend en charge trois méthodes d'encodage différentes : binaire (meilleur pour la vitesse de lecture par le programme), basé sur les caractères (produit la plus petite taille de fichier et permet des transferts de données plus rapides) ou l'encodage en texte clair (permet aux utilisateurs de lire et de modifier le fichier avec un éditeur de texte).
 
-Le code suivant vous montre comment convertir des fichiers CGM au format PDF en utilisant Aspose.PDF pour Java.
+1. 
+Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide pour la sortie PDF.
+1. Créez un objet [`Image`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), définissez son [`ImageFileType`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) sur `Dicom` et attribuez le chemin du fichier source.
 
-1. Créez une classe [CgmLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/cgmloadoptions/).
-1. Créez une instance de la classe [Document](https://reference.aspose.com/page/java/com.aspose.page/Document) avec le nom de fichier source mentionné et les options.
-1. Enregistrez le document avec le nom de fichier souhaité.
+1. 
+Ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et ajoutez l'image DICOM à la collection de paragraphes de page.
+
+1. 
+Enregistrez le résultat au format PDF.
+
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertCGMtoPDF {
-
-    private ConvertCGMtoPDF() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        
-        // Créer une CGM LoadOptions
-        CgmLoadOptions options = new CgmLoadOptions();
-
-        // Initialiser l'objet document
-        String cgmFileName = Paths.get(_dataDir.toString(), "corvette.cgm").toString();
-        Document document = new Document(cgmFileName, options);
-
-        // Enregistrer le document PDF de sortie
-        document.save(Paths.get(_dataDir.toString(),"CGMtoPDF.pdf").toString());
-    }
-}
-```
-
-
-## Convertir DICOM en PDF
-
-<abbr title="Digital Imaging and Communications in Medicine">DICOM</abbr> est une norme pour gérer, stocker, imprimer et transmettre des informations en imagerie médicale. Elle inclut une définition de format de fichier et un protocole de communication réseau.
-
-Aspsoe.PDF pour Java vous permet de convertir des fichiers DICOM en format PDF, consultez l'extrait de code suivant :
-
-1. Charger l'image dans le flux
-1. Initialiser [l'objet Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)
-1. Charger le fichier d'image DICOM d'exemple
-1. Enregistrer le document PDF de sortie
-
-```java
-package com.aspose.pdf.examples;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertDICOMtoPDF {
-
-    private ConvertDICOMtoPDF() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        
-        // Charger l'image dans le flux
-        FileInputStream imageStream = new FileInputStream(
-            new java.io.File(Paths.get(_dataDir.toString(),"0002.dcm").toString()));
-
-        // Initialiser l'objet document
-        Document document = new Document();
-        document.getPages().add();
-        
-        // Charger le fichier d'image DICOM d'exemple
+public static void convertDicomToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document()) {
         Image image = new Image();
         image.setFileType(ImageFileType.Dicom);
-        image.setImageStream(imageStream);
+        image.setFile(inputFile.toString());
 
-        document.getPages().get_Item(1).getParagraphs().add(image);
+        try (Page page = document.getPages().add()) {
+            page.getParagraphs().add(image);
+        }
 
-        // Enregistrer le document PDF de sortie
-        document.save(Paths.get(_dataDir.toString(),"CGMtoPDF.pdf").toString());
+        document.save(outputFile.toString());
     }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
+## 
+Convertissez EMF en PDF avec chargement direct de documents
 
-{{% alert color="success" %}}
-**Essayez de convertir DICOM en PDF en ligne**
 
-Aspose vous présente une application gratuite en ligne ["DICOM to PDF"](https://products.aspose.app/pdf/conversion/dicom-to-pdf/), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
 
-[![Aspose.PDF Conversion DICOM en PDF avec une application gratuite](dicom_to_pdf.png)](https://products.aspose.app/pdf/conversion/dicom-to-pdf/)
-{{% /alert %}}
+Utilisez cet exemple lorsqu'un fichier EMF doit être converti en PDF via le chemin de chargement EMF principal.
 
-## Convertir EMF en PDF
+1. Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide et ouvrez la source EMF sous forme de flux binaire.
 
-Le format de métafichier amélioré (<abbr title="Enhanced metafile format">EMF</abbr>) stocke des images graphiques indépendamment de l'appareil. Les métafichiers EMF se composent de records de longueur variable dans un ordre chronologique qui peuvent rendre l'image stockée après analyse sur n'importe quel appareil de sortie.
+1. 
+Ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et effacez ses marges afin que l'illustration EMF puisse occuper toute la zone de la page.
 
-Nous avons plusieurs approches pour convertir EMF en PDF.
+1. 
+Créez un [`Image`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), liez-y le flux EMF et ajoutez-le à la collection de paragraphes de page.
 
-## Utilisation de la classe Image
+1. 
+Enregistrez le fichier PDF de sortie.
 
-Un document PDF comprend des pages et chaque page contient un ou plusieurs objets paragraphe. Un paragraphe peut être un texte, une image, un tableau, une boîte flottante, un graphique, un titre, un champ de formulaire ou une pièce jointe.
-
-Pour convertir un fichier image au format PDF, incluez-le dans un paragraphe.
-
-Il est possible de convertir des images à un emplacement physique sur le disque dur local, trouvées à une URL Web ou dans une instance Stream.
-
-Pour ajouter une image :
-
-1. Créez un objet de la classe com.aspose.pdf.Image.
-1. Ajoutez l'image à une collection [Paragraphs](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/paragraphs) de l'instance de page.
-1. Spécifiez le chemin ou la source de l'image.
-    - Si une image se trouve à un emplacement sur le disque dur, spécifiez l'emplacement du chemin à l'aide de la méthode [Image.setFile(…)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Image).
-    - Si une image est placée dans un FileInputStream, passez l'objet contenant l'image à la méthode [Image.setImageStream(…)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Image).
-
-Le code ci-dessous montre comment charger un objet image, définir la marge de la page, placer l'image sur la page et enregistrer le résultat au format PDF.
 
 ```java
-package com.aspose.pdf.examples;
+public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOException {
+    try (Document document = new Document();
+         FileInputStream imageStream = new FileInputStream(inputFile.toFile())) {
+        try (Page page = document.getPages().add()) {
+            page.getPageInfo().getMargin().setBottom(0);
+            page.getPageInfo().getMargin().setTop(0);
+            page.getPageInfo().getMargin().setLeft(0);
+            page.getPageInfo().getMargin().setRight(0);
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-
-/**
- * Convertir EMF en PDF
- */
-
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import javax.imageio.ImageIO;
-
-import com.aspose.pdf.*;
-
-public final class ConvertEMFtoPDF {
-
-    private ConvertEMFtoPDF() {
+            Image image = new Image();
+            image.setFileType(ImageFileType.Unknown);
+            image.setImageStream(imageStream);
+            page.getParagraphs().add(image);
+        }
+        document.save(outputFile.toString());
     }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws IOException {
-
-        convertEMFtoPDF_01();
-        convertEMFtoPDF_02();
-    }
-
-    
-
-    public static void convertEMFtoPDF_01() throws FileNotFoundException {                
-        // Instancier l'objet Document
-        Document doc = new Document();
-        // Ajouter une page à la collection de pages du document
-        Page page = doc.getPages().add();
-        // Charger le fichier image source dans un objet Stream
-        java.io.FileInputStream fs = new java.io.FileInputStream(
-            Paths.get(_dataDir.toString(),"source.emf").toString());
-
-        // Définir les marges pour que l'image s'adapte, etc.
-        page.getPageInfo().getMargin().setBottom(0);
-        page.getPageInfo().getMargin().setTop(0);
-        page.getPageInfo().getMargin().setLeft(0);
-        page.getPageInfo().getMargin().setRight(0);
-
-        page.setCropBox(new Rectangle(0, 0, 400, 400));
-        // Créer un objet image
-        Image image1 = new Image();
-        // Ajouter l'image dans la collection de paragraphes de la section
-        page.getParagraphs().add(image1);
-        // Définir le flux de fichier image
-        image1.setImageStream(fs);
-        // Enregistrer le fichier PDF résultant
-        doc.save("EMFtoPDF_01.pdf");
-    }   
-    public static void convertEMFtoPDF_02() throws IOException {
-        // voir code ci-dessous
-    } 
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
+## 
+Convertissez EMF en PDF avec un flux de travail alternatif
 
-### Ajouter une image à partir de BufferedImage
+Utilisez cet exemple lorsque le contenu EMF doit être converti à l’aide d’une configuration alternative ou d’un flux de composition de page.
 
-Aspose.PDF pour Java offre également la fonctionnalité de charger une image à partir d'une instance Stream où une image peut être chargée dans un objet BufferedImage et peut être placée à l'intérieur de la collection de paragraphes d'un fichier Pdf.
+
+1. 
+Chargez la source EMF avec Aspose.Imaging et restituez-la dans un flux PNG en mémoire avant le placement du PDF.
+
+1. 
+Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide et ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+
+1. 
+Créez un [`Image`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) à partir du flux d'octets intermédiaire et ajoutez-le à la page.
+
+1. 
+Enregistrez le PDF converti.
 
 ```java
-public static void convertEMFtoPDF_02() throws IOException {    
-    Document doc = new Document();
-    // ajouter une page à la collection de pages du fichier Pdf
-    Page page = doc.getPages().add();
-    // créer une instance d'image
-    Image image1 = new Image();
-    // créer une instance BufferedImage
-    java.awt.image.BufferedImage bufferedImage = ImageIO.read(new File("source.emf"));
-    ByteArrayOutputStream baos = new ByteArrayOutputStream();
-    // écrire l'image tamponnée dans une instance OutputStream
-    ImageIO.write(bufferedImage, "emf", baos);
-    baos.flush();
-    ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
-    // ajouter l'image à la collection de paragraphes de la première page
-    page.getParagraphs().add(image1);
-    // définir le flux d'image comme OutputStream contenant l'image tamponnée
-    image1.setImageStream(bais);
-    // enregistrer le fichier PDF résultant
-    doc.save("BufferedImage.pdf");
+public static void convertEmfToPdf02(Path inputFile, Path outputFile) throws IOException {
+    try (Document document = new Document();
+         com.aspose.imaging.Image emfImage = com.aspose.imaging.Image.load(inputFile.toString());
+         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream()) {
+        emfImage.save(byteArrayOutputStream, new PngOptions());
+
+        try (Page page = document.getPages().add()) {
+            Image image = new Image();
+            image.setImageStream(new ByteArrayInputStream(byteArrayOutputStream.toByteArray()));
+            page.getParagraphs().add(image);
+        }
+
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
+## Convertir GIF en PDF
 
-## Ajouter une image en utilisant les opérateurs PDF
 
-Chaque objet de page PDF contient les méthodes [getResources()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) et [getContents()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getContents--). Les ressources peuvent être des images et des formulaires, par exemple, tandis que le contenu est représenté par un ensemble d'opérateurs PDF. Chaque opérateur a son propre nom et argument.
 
-Cet exemple utilise des opérateurs pour ajouter une image à un fichier PDF.
+Utilisez cet exemple lorsqu'une image GIF doit être ajoutée à une page PDF.
 
-Pour ajouter une image à un fichier PDF existant :
 
-1. Créez un objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) et ouvrez le document PDF d'entrée.
-1. Obtenez la page à laquelle vous souhaitez ajouter une image.
-1. Ajoutez l'image dans la collection [getResources()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) de la page.
-1. Utilisez les opérateurs pour placer l'image sur la page :
-   1. Utilisez l'opérateur GSave pour enregistrer l'état graphique actuel.
-   1. Utilisez l'opérateur ConcatenateMatrix pour spécifier où l'image doit être placée.
+1. 
+Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide pour la sortie PDF.
 
-1. Utilisez l'opérateur Do pour dessiner l'image sur la page.
-   1. Enfin, utilisez l'opérateur GRestore pour enregistrer l'état graphique mis à jour.
-1. Enregistrez le fichier.
+1. 
+Ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et placez le GIF avec `page.addImage(...)`.
 
-Le code suivant montre comment ajouter une image à un document PDF.
+1. 
+Définissez les limites de placement avec [`Rectangle`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) afin que l'image remplisse la zone de la page.
+1. Enregistrez le PDF de sortie.
+
 
 ```java
-// Pour des exemples complets et des fichiers de données, veuillez visiter https://github.com/aspose-pdf/Aspose.Pdf-for-Java
-// Ouvrir un document
-Document pdfDocument1 = new Document("input.pdf");
-
-// Définir les coordonnées
-int lowerLeftX = 100;
-int lowerLeftY = 100;
-int upperRightX = 200;
-int upperRightY = 200;
-
-// Obtenez la page à laquelle vous souhaitez ajouter l'image
-Page page = pdfDocument1.getPages().get_Item(1);
-
-// Charger l'image dans le flux
-java.io.FileInputStream imageStream = new java.io.FileInputStream(new java.io.File("input_image1.jpg"));
-
-// Ajouter une image à la collection d'images des ressources de la page
-page.getResources().getImages().add(imageStream);
-
-// Utilisation de l'opérateur GSave : cet opérateur enregistre l'état graphique actuel
-page.getContents().add(new Operator.GSave());
-
-// Créer des objets Rectangle et Matrix
-Rectangle rectangle = new Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-Matrix matrix = new Matrix(new double[] { rectangle.getURX() - rectangle.getLLX(), 0, 0, rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY() });
-
-// Utilisation de l'opérateur ConcatenateMatrix (concatenation de matrice) : définit comment l'image doit être placée
-page.getContents().add(new Operator.ConcatenateMatrix(matrix));
-XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-
-// Utilisation de l'opérateur Do : cet opérateur dessine l'image
-page.getContents().add(new Operator.Do(ximage.getName()));
-
-// Utilisation de l'opérateur GRestore : cet opérateur restaure l'état graphique
-page.getContents().add(new Operator.GRestore());
-
-// Enregistrez le nouveau PDF
-pdfDocument1.save("Updated_document.pdf");
-
-// Fermer le flux d'image
-imageStream.close();
-```
-
-
-{{% alert color="success" %}}
-**Essayez de convertir EMF en PDF en ligne**
-
-Aspose vous propose une application en ligne gratuite ["EMF to PDF"](https://products.aspose.app/pdf/conversion/emf-to-pdf/), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
-
-[![Aspose.PDF Conversion EMF en PDF en utilisant l'application gratuite](emf_to_pdf.png)](https://products.aspose.app/pdf/conversion/emf-to-pdf/)
-{{% /alert %}}
-
-## Convertir JPG en PDF
-
-Pas besoin de se demander comment convertir JPG en PDF, car la bibliothèque Apose.PDF pour Java a la meilleure solution.
-
-Vous pouvez très facilement convertir des images JPG en PDF avec Aspose.PDF pour Java en suivant les étapes :
-
-1. Initialisez l'objet de la classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
-1. Chargez l'image JPG et ajoutez-la au paragraphe
-1. Enregistrez le PDF de sortie
-
-Le code ci-dessous montre comment convertir une image JPG en PDF en utilisant Java :
-
-```java
-package com.aspose.pdf.examples;
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertJPEGtoPDF {
-
-    private static Path _dataDir = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        // Initialiser l'objet document
-        Document document = new Document();
-
-        Page page = document.getPages().add();
-        Image image = new Image();
-
-        // Charger le fichier image JPEG exemple
-        image.setFile(Paths.get(_dataDir.toString(), "Sample.jpg").toString());
-        page.getParagraphs().add(image);
-
-        // Enregistrer le document PDF de sortie
-        document.save(Paths.get(_dataDir.toString(),"JPEGtoPDF.pdf").toString());
+public static void convertGifToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            page.addImage(inputFile.toString(), new Rectangle(0, 0, 595, 842, true));
+        }
+        document.save(outputFile.toString());
     }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
+## 
+Convertir JPEG en PDF
 
-{{% alert color="success" %}}
-**Essayez de convertir JPG en PDF en ligne**
 
-Aspose vous présente une application gratuite en ligne ["JPG to PDF"](https://products.aspose.app/pdf/conversion/jpg-to-pdf/), où vous pouvez essayer d'examiner la fonctionnalité et la qualité de son fonctionnement.
 
-[![Aspose.PDF Conversion JPG en PDF en utilisant l'application gratuite](jpg_to_pdf.png)](https://products.aspose.app/pdf/conversion/jpg-to-pdf/)
-{{% /alert %}}
+Utilisez cet exemple lorsqu'une image JPEG doit être convertie en PDF d'une page.
 
-## Convertir PNG en PDF
 
-**Aspose.PDF pour Java** prend en charge la fonctionnalité de conversion des images PNG au format PDF. Consultez le prochain extrait de code pour réaliser votre tâche.
+1. 
+Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide pour le PDF de sortie.
 
-<abbr title="Portable Network Graphics">PNG</abbr> fait référence à un type de format de fichier d'image raster qui utilise une compression sans perte, ce qui le rend populaire parmi ses utilisateurs.
+1. 
+Ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et insérez l'image JPEG avec `page.addImage(...)`.
+1. Utilisez [`Rectangle`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) pour contrôler la manière dont l'image raster est mappée aux coordonnées de la page.
 
-Vous pouvez convertir PNG en image PDF en suivant les étapes ci-dessous :
+1. 
+Enregistrez le fichier PDF généré.
 
-1. Charger l'image PNG d'entrée
-1. Lire les valeurs de hauteur et de largeur
-1. Créer un nouveau document et ajouter une page
-1. Définir les dimensions de la page
-1. Enregistrer le fichier de sortie
-
-De plus, l'extrait de code ci-dessous montre comment convertir PNG en PDF dans vos applications Java :
 
 ```java
-package com.aspose.pdf.examples;
-
-/**
- * Convertir PNG en PDF
- */
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import com.aspose.pdf.*;
-
-public final class ConvertPNGtoPDF {
-
-    private ConvertPNGtoPDF() {
+public static void convertJpegToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            page.addImage(inputFile.toString(), new Rectangle(0, 0, 595, 842, true));
+        }
+        document.save(outputFile.toString());
     }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        // Initialiser l'objet document
-        Document document = new Document();
-
-        Page page = document.getPages().add();
-        Image image = new Image();
-
-        // Charger le fichier image BMP d'exemple
-        image.setFile(Paths.get(_dataDir.toString(), "Sample.png").toString());
-
-
-        page.getPageInfo().getMargin().setBottom(0);
-        page.getPageInfo().getMargin().setTop(0);
-        page.getPageInfo().getMargin().setRight (0);
-        page.getPageInfo().getMargin().setLeft (0);
-        page.getParagraphs().add(image);
-
-        // Enregistrer le document PDF de sortie
-        document.save(Paths.get(_dataDir.toString(), "PNGtoPDF.pdf").toString());
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
-
 ```
 
+## 
+Convertir PNG en PDF
 
-{{% alert color="success" %}}
-**Essayez de convertir PNG en PDF en ligne**
 
-Aspose vous présente une application en ligne gratuite ["PNG to PDF"](https://products.aspose.app/pdf/conversion/png-to-pdf/), où vous pouvez essayer d'explorer la fonctionnalité et la qualité avec lesquelles elle fonctionne.
 
-[![Aspose.PDF Conversion PNG en PDF en utilisant l'application gratuite](png_to_pdf.png)](https://products.aspose.app/pdf/conversion/png-to-pdf/)
-{{% /alert %}}
+Utilisez cet exemple lorsqu'une image PNG doit être enveloppée dans un document PDF.
 
-## Convertir SVG en PDF
 
-Scalable Vector Graphics (SVG) est une famille de spécifications d'un format de fichier basé sur XML pour les graphiques vectoriels bidimensionnels, à la fois statiques et dynamiques (interactifs ou animés). La spécification SVG est une norme ouverte qui est en développement par le World Wide Web Consortium (W3C) depuis 1999.
+1. 
+Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide pour la sortie de conversion.
+1. Ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et placez l'image PNG dessus avec `page.addImage(...)`.
 
-Les images SVG et leurs comportements sont définis dans des fichiers texte XML.
- Cela signifie qu'ils peuvent être recherchés, indexés, scriptés et, si nécessaire, compressés. En tant que fichiers XML, les images SVG peuvent être créées et éditées avec n'importe quel éditeur de texte, mais il est souvent plus pratique de les créer avec des programmes de dessin tels qu'Inkscape.
+1. 
+Utilisez [`Rectangle`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) pour redimensionner l'image par rapport au canevas de la page.
 
-## Comment convertir un fichier SVG en format PDF
+1. 
+Enregistrez le fichier de sortie.
 
-Pour convertir des fichiers SVG en PDF, utilisez la classe nommée [SvgLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgloadoptions) qui est utilisée pour initialiser l'objet [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/LoadOptions). Plus tard, cet objet est passé en argument lors de l'initialisation de l'objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document) et aide le moteur de rendu PDF à déterminer le format d'entrée du document source.
-
-L'extrait de code suivant montre le processus de conversion d'un fichier SVG au format PDF.
 
 ```java
-// Initialiser l'objet document
-
-String pdfDocumentFileName = Paths.get(_dataDir.toString(), "svg_test.pdf").toString();
-String svgDocumentFileName = Paths.get(_dataDir.toString(), "car.svg").toString();
-
-SvgLoadOptions option = new SvgLoadOptions();
-Document pdfDocument = new Document(svgDocumentFileName, option);
-pdfDocument.save(pdfDocumentFileName);
-```
-
-{{% alert color="success" %}}
-**Essayez de convertir le format SVG en PDF en ligne**
-
-Aspose.PDF pour Java vous présente une application gratuite en ligne ["SVG to PDF"](https://products.aspose.app/pdf/conversion/svg-to-pdf), où vous pouvez essayer d'explorer la fonctionnalité et la qualité de son fonctionnement.
-
-[![Conversion Aspose.PDF de SVG en PDF avec l'application gratuite](svg_to_pdf.png)](https://products.aspose.app/pdf/conversion/svg-to-pdf)
-{{% /alert %}}
-
-## Convertir TIFF en PDF
-
-**Aspose.PDF pour Java** prend en charge le format de fichier, qu'il s'agisse d'une image <abbr title="Tag Image File Format">TIFF</abbr> à un seul cadre ou multi-cadres. Cela signifie que vous pouvez convertir l'image TIFF en PDF dans vos applications Java.
-
-TIFF ou TIF, Tagged Image File Format, représente des images raster destinées à être utilisées sur une variété d'appareils conformes à cette norme de format de fichier.
- TIFF image peut contenir plusieurs cadres avec différentes images. Le format de fichier Aspose.PDF est également pris en charge, qu'il s'agisse d'une image TIFF à un seul cadre ou à plusieurs cadres. Vous pouvez donc convertir l'image TIFF en PDF dans vos applications Java. Par conséquent, nous allons examiner un exemple de conversion d'une image TIFF multipage en document PDF multipage avec les étapes ci-dessous :
-
-1. Instancier une instance de la classe Document
-1. Charger l'image TIFF en entrée
-1. Enfin, enregistrer l'image comme page PDF
-
-De plus, l'extrait de code suivant montre comment convertir une image TIFF multipage ou à plusieurs cadres en PDF :
-
-```java
-import com.aspose.pdf.Document;
-import com.aspose.pdf.Image;
-import com.aspose.pdf.Page;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-/**
- * Convertir TIFF en PDF.
- */
-public final class ConvertTIFFtoPDF {
-
-    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    private ConvertTIFFtoPDF() {
+public static void convertPngToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            page.addImage(inputFile.toString(), new Rectangle(0, 0, 595, 842, true));
+        }
+        document.save(outputFile.toString());
     }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-    public static void run() throws IOException {
-        // Initialiser l'objet document
-        Document document = new Document();
+## 
+Convertir SVG en PDF
 
-        Page page = document.getPages().add();
-        Image image = new Image();
 
-        image.setFile(Paths.get(DATA_DIR.toString(), "Sample.tiff").toString());
-        page.getParagraphs().add(image);
 
-        // Enregistrer le document PDF de sortie
-        document.save(Paths.get(DATA_DIR.toString(), "TIFFtoPDF.pdf").toString());
-        document.close();
-    }    
+Utilisez cet exemple lorsqu'une illustration SVG doit être rendue dans un document PDF.
+
+1. Ouvrez la source SVG en passant le chemin du fichier et [`SvgLoadOptions`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/svgloadoptions/) dans le constructeur [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Laissez Aspose.PDF analyser le balisage SVG et créer le modèle graphique PDF correspondant pendant le chargement.
+
+1. 
+Enregistrez la sortie PDF dans le chemin du fichier cible.
+
+
+```java
+public static void convertSvgToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new SvgLoadOptions())) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 
+Convertir TIFF en PDF
+
+
+
+Utilisez cet exemple lorsqu'une image TIFF doit être convertie en PDF.
+
+1. Créez un [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide pour la sortie PDF.
+
+1. 
+Ajoutez un [`Page`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et placez l'image TIFF avec `page.addImage(...)`.
+
+1. 
+Définissez la zone de placement avec [`Rectangle`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) afin que le contenu TIFF soit mappé aux coordonnées de la page.
+
+1. 
+Enregistrez le résultat au format PDF.
+
+
+```java
+public static void convertTiffToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            page.addImage(inputFile.toString(), new Rectangle(0, 0, 595, 842, true));
+        }
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 
+Convertir CDR en PDF
+
+Utilisez cet exemple lorsqu'un fichier CorelDRAW CDR doit être converti en PDF.
+
+
+1. 
+Ouvrez la source CDR en passant le chemin du fichier et [`CdrLoadOptions`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/cdrloadoptions/) dans le constructeur [`Document`] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+1. 
+Laissez Aspose.PDF charger le contenu CorelDRAW dans le modèle de document PDF.
+
+1. 
+Enregistrez le fichier PDF converti dans le chemin de sortie demandé.
+
+```java
+public static void convertCdrToPdf(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString(), new CdrLoadOptions())) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```

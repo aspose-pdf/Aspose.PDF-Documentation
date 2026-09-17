@@ -1,19 +1,29 @@
 ---
-title: Concatener des fichiers PDF dans Jython
+title: Concaténer des fichiers PDF en Jython
+linktitle: Concaténer des fichiers PDF en Jython
 type: docs
 weight: 10
-url: /fr/java/concatenate-pdf-files-in-jython/
-lastmod: "2021-06-05"
+url: /java/concatenate-pdf-files-in-jython/
+description: Découvrez comment concaténer plusieurs fichiers PDF en un seul document à l'aide de Jython et Aspose.PDF pour une gestion simplifiée des fichiers.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - Concaténer des fichiers PDF
 
-## Aspose.PDF - Concatenation de fichiers Pdf
 
-Pour vérifier le format de fichier en utilisant **Aspose.PDF Java pour Jython**. Voici un exemple de code.
 
-Erreur lors du rendu de la macro 'code' : Valeur invalide spécifiée pour le paramètre lang
+Pour vérifier le format du fichier à l'aide de **Aspose.PDF Java pour Jython**. Ici vous pouvez voir un exemple de code.
 
-## Télécharger le code en cours d'exécution
+Erreur de rendu de la macro 'code' : valeur non valide spécifiée pour le paramètre lang
 
-Téléchargez le code en cours d'exécution à partir de l'un des sites de codage social mentionnés ci-dessous :
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
+## 
+Télécharger le code d'exécution
+
+
+
+Téléchargez le code en cours d'exécution à partir de l'un des sites de codage social mentionnés ci-dessous :
+
+
+- 
+[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
