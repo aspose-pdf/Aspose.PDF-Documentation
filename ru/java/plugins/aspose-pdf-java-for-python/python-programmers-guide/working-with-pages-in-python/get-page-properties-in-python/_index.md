@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ru/java/get-page-properties-in-python/
 description: Узнайте, как получить доступ к свойствам конкретных страниц в PDF‑документе на Python с помощью Aspose.PDF для детального управления.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 Чтобы получить свойства страниц PDF‑документа, используя **Aspose.PDF Java for Python**, просто вызовите класс **GetPageProperties**.
 
@@ -34,7 +34,7 @@ print "Rotate :-" + pdf_page.getRotate()
 
 **Загрузить исполняемый код**
 
-Download **Получить свойства страницы (Aspose.PDF)** из любого из перечисленных ниже сайтов с открытым кодом:
+Скачайте **Получить свойства страницы (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)
 

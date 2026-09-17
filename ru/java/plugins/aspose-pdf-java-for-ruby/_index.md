@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/aspose-pdf-java-for-ruby/
 description: Изучите, как использовать Aspose.PDF for Java в Ruby. Сочетайте возможности скриптов Ruby с расширенными функциями работы с PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Введение
 
@@ -58,7 +58,7 @@ GitHub
 
 - [Aspose.PDF Java для Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
 
-## Установка и использования
+## Установка и использование
 
 ### Установка
 

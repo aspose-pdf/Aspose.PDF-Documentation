@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ru/java/aspose-pdf-java-for-jython/
 description: Объедините мощь Aspose.PDF for Java с Jython. Легко манипулируйте PDF‑файлами в среде Java на основе Python.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Введение
 
@@ -46,7 +46,7 @@ Aspose.PDF Java for Jython — это проект, который демонс�
 - Aspose.PDF 15.4 и выше.
 - Java IDE (Eclipse, NetBeans ...)
 
-## Загрузка установки и использования
+## Загрузка, установка и использование
 
 ### Загрузка
 
@@ -54,7 +54,7 @@ Aspose.PDF Java for Jython — это проект, который демонс�
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose-Pdf-Java-for-Jython)
 
-Скачать компонент Aspose.PDF for Java:
+Скачайте компонент Aspose.PDF for Java:
 
 - [Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
 

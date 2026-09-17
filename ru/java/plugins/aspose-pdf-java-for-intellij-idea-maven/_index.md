@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/aspose-pdf-java-for-intellij-idea-maven/
 description: Интегрируйте Aspose.PDF for Java в IntelliJ IDEA с помощью Maven. Оптимизируйте процесс разработки для продвинутых решений PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Введение
 
@@ -21,7 +21,7 @@ Aspose.PDF for Java — это компонент создания PDF‑док�
 
 ### Aspose.PDF Java для IntelliJ IDEA - Maven
 
-- Aspose.PDF Java for IntelliJ IDEA (Maven) — это плагин IntelliJ IDEA, который позволяет создавать maven‑проекты (т. е. созданный проект содержит зависимость maven Aspose.PDF for Java API) и загружать примеры исходного кода API\u0412\u00A0 для использования Aspose.PDF for Java API.
+- Aspose.PDF Java for IntelliJ IDEA (Maven) — это плагин IntelliJ IDEA, который позволяет создавать maven‑проекты (т. е. созданный проект содержит зависимость maven Aspose.PDF for Java API) и загружать примеры исходного кода API для использования Aspose.PDF for Java API.
 - Этот плагин помогает вам работать с Aspose.PDF for Java API внутри вашей любимой IntelliJ IDEA.
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -34,18 +34,18 @@ Aspose.PDF for Java — это компонент создания PDF‑док�
 - Мастер проекта Aspose Maven плагина позволяет разработчикам создавать Maven‑проект API Aspose.PDF for Java.
 - Ссылка на зависимость Maven API Aspose.PDF for Java автоматически извлекается из [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) и добавляется в файл pom.xml.
 - Созданный проект всегда будет содержать последнюю доступную версию зависимости Maven для Aspose.PDF for Java API.
-- Шаги мастера также представляютВ с опцией загрузки [Примеры исходного кода для использования Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- Мастер также позволяет загрузить [примеры исходного кода для использования Aspose.PDF for Java API](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 
 Мастер 2: Примеры Aspose.PDF
 
-- Мастер примеров Aspose.PDF позволяет вам создавать/копировать загруженныеВ Примеры исходного кода Aspose.PDF for Java API в ваш проект. Все примеры выбранной категории будут скопированы в папку пакета проекта'sВ  "com.aspose.pdf.examples" вместе с необходимыми ресурсами внутри папки "src/main/resources", требуемой для выполнения примеров.
+- Мастер примеров Aspose.PDF позволяет вам создавать/копировать загруженные Примеры исходного кода Aspose.PDF for Java API в ваш проект. Все примеры выбранной категории будут скопированы в папку пакета проекта "com.aspose.pdf.examples" вместе с необходимыми ресурсами внутри папки "src/main/resources", требуемой для выполнения примеров.
 - Примеры исходного кода Aspose.PDF for Java API предназначены для демонстрации различных способов использования API.
 
 ## Системные требования и поддерживаемые платформы
 
 ### Системные требования
 
-- Microsoft Windows 8/7/Vista/2003/XP (incl.64-bit)В  / Linux GNOME или KDE desktop / Mac OS X 10.5 или выше
+- Microsoft Windows 8/7/Vista/2003/XP (incl.64-bit)  / Linux GNOME или KDE desktop / Mac OS X 10.5 или выше
 - Минимум 1 ГБ ОЗУ, рекомендуется 2 ГБ ОЗУ
 - 300 МБ места на жёстком диске + не менее 1 ГБ для кэша
 - Минимальное разрешение экрана 1024x768
@@ -57,7 +57,7 @@ Aspose.PDF for Java — это компонент создания PDF‑док�
 Плагин поддерживает следующие версии IntelliJ IDEA:
 
 - 13.0.1 (Community / Ultimate Edition)
-- 13.1.2В  (CE / UE)
+- 13.1.2  (CE / UE)
 - 14.0.2 (CE/ UE)
 - 14.1.5 (CE/ UE)
 
@@ -67,21 +67,21 @@ Aspose.PDF for Java — это компонент создания PDF‑док�
 
 Сначала вам потребуется установить IntelliJ IDEA CE / UE, прежде чем загружать плагин Aspose.PDF Java for IntelliJ IDEA (Maven).
 
-Для загрузки IntellliJ IDEA
+Для загрузки IntelliJ IDEA:
 
-1. Перейти <https://www.jetbrains.com/idea/download/>
-1. Выберите вашу текущую ОС
+1. Перейдите по адресу <https://www.jetbrains.com/idea/download/>
+1. Выберите вашу текущую ОС.
 1. Нажмите на загрузку UE или CE.
 
 ### Загрузка плагина Aspose.PDF Java for IntelliJ IDEA (Maven)
 
 - Плагин можно скачать напрямую с [URL размещения плагина JetBrains](https://goo.gl/z06gC0) - в репозитории плагинов IntelliJ IDEA
   и позже может быть установлен с помощью опции IDE:
-  - Перейдите в File \u003E Settings...\u003EPlugins
-  - Выберите \u0022Install plugin from Disk\u0022
+  - Перейдите в File > Settings...>Plugins.
+  - Выберите "Install plugin from Disk".
 - Или его можно установить напрямую (без ручной загрузки с URL хостинга плагинов JetBrains), используя параметры IDE:
-  - Перейдите в File \u003E Settings...\u003EPlugins
-  - Выберите \u0022Browse Repositories\u0022
+  - Перейдите в File > Settings...>Plugins.
+  - Выберите "Browse Repositories".
   - В поле поиска введите: "Aspose"
   - Выберите плагин "Aspose.PDF Java for IntelliJ IDEA Maven" для установки.
 

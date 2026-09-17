@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/get-document-window-and-page-display-properties-in-php/
 description: Узнайте, как получить доступ к свойствам окна документа и отображения страниц PDF‑файла в PHP с помощью Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF - Получение свойств окна документа и отображений страниц
 
@@ -56,7 +56,7 @@ print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 
 **Скачать исполняемый код**
 
-Скачать **Получить свойства окна документа и отображения страниц (Aspose.PDF)** из любого из указанных ниже сайтов с открытым кодом:
+Скачайте **Получить свойства окна документа и отображения страниц (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)
 

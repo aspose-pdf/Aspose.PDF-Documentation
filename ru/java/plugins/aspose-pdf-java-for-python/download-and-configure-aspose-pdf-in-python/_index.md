@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/download-and-configure-aspose-pdf-in-python/
 description: Узнайте, как скачать и установить Aspose.PDF for Python, чтобы начать обработку и манипулирование PDF‑файлами в вашей среде Python.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -26,9 +26,9 @@ sitemap:
 - Примеры Aspose.PDF Java for Python
   - [Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
 
-## Как настроить исходный код
+## Настройка исходного кода
 
-Please follow these simple stepsВ чтобы открыть и расширить исходный код, используя:
+Выполните следующие шаги, чтобы открыть и расширить исходный код, используя:
 
 1. Установите только Python 2.7.x.x из: <https://www.python.org/downloads/>
 2. Установите JPype из: <http://sourceforge.net/projects/jpype/files/JPype/>

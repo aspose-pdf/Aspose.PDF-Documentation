@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/get-document-window-and-page-display-properties-in-ruby/
 description: Извлекать и настраивать свойства окна документа и отображения страниц в PDF‑файлах с использованием Ruby и Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF — Получение свойств окна документа и отображений страниц
 
@@ -75,7 +75,7 @@ puts "pageMode :-" + doc.getPageMode().to_s
 
 ## Загрузка работающего кода
 
-СкачатьВ **Get Document Window and Page Display Properties (Aspose.PDF)**В изВ любого из перечисленных ниже сайтов совместной разработки:
+Скачайте **Get Document Window and Page Display Properties (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)
 

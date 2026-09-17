@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ru/java/insert-an-empty-page-into-a-pdf-file-in-php/
 description: Узнайте, как вставить пустую страницу в любое место PDF‑файла с помощью PHP, используя Aspose.PDF для гибкой структуры документа.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF – Вставка пустой страницы
 
@@ -30,7 +30,7 @@ print "Empty page added successfully!";
 
 **Скачать работающий код**
 
-СкачатьВ **Вставить пустую страницу (Aspose.PDF)**В изВ любого из нижеперечисленных социальных сайтов для кода:
+Скачайте **Вставить пустую страницу (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPage.php)
 

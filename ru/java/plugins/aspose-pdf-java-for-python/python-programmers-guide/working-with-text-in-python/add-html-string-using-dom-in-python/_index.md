@@ -4,7 +4,7 @@ linktitle: Добавление HTML‑строки с использовани�
 type: docs
 weight: 10
 url: /ru/java/add-html-string-using-dom-in-python/
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 description: Объясняет, как добавить HTML‑строку в DOM с помощью Python и библиотеки формата файлов PDF
 ---
 ## Добавление HTML‑строки в PDF‑DOM с помощью Python
@@ -37,7 +37,7 @@ print "HTML added successfully"
 
 **Скачать исполняемый код**
 
-ЗагрузитьВ **Add HTML (Aspose.PDF)**В изВ любого из перечисленных ниже социальных сайтов для кодинга:
+Скачайте **Add HTML (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)
 

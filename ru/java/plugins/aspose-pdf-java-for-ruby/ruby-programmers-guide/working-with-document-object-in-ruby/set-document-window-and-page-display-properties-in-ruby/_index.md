@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /ru/java/set-document-window-and-page-display-properties-in-ruby/
 description: Настройте параметры отображения документа и страниц в PDF с использованием Ruby и Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF — Установка свойств окна документа и отображений страниц
 
@@ -79,7 +79,7 @@ doc.save(data_dir + "Set Document Window.pdf")
 
 ## Загрузка работающего кода
 
-DownloadВ **Настройка окна документа и свойств отображения страниц (Aspose.PDF)**В изВ любого из ниже упомянутых сайтов для совместного кодирования:
+Скачайте **Настройка окна документа и свойств отображения страниц (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)
 

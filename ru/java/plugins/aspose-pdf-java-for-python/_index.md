@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/aspose-pdf-java-for-python/
 description: Узнайте, как использовать Aspose.PDF for Java в Python‑проектах. Используйте расширенные возможности PDF в ваших Python‑приложениях.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ sitemap:
 
 JPype — это попытка предоставить программам на python полный доступ к библиотекам классов java. Это достигается не через переимплементацию Python, как сделали Jython/JPython, а через интерфейс на нативном уровне в обеих виртуальных машинах.
 
-Читать далее на [readthedocs.org](http://jpype.readthedocs.org/en/latest/userguide.html)
+Читайте далее на [readthedocs.org](http://jpype.readthedocs.org/en/latest/userguide.html)
 
 ## Aspose.PDF for Java
 
@@ -24,7 +24,7 @@ Aspose.PDF for Java — это продвинутая библиотека кл�
 
 Aspose.PDF for Java поддерживает обработку Word (DOC, DOCX, OOXML, RTF), HTML, OpenDocument, PDF, EPUB, XPS, SWF и всех форматов изображений. С помощью Aspose.PDF вы можете создавать, изменять и конвертировать документы без использования Microsoft Word.
 
-Читать далее на [aspose.com](https://products.aspose.com/words/java)
+Читайте далее на [aspose.com](https://products.aspose.com/words/java)
 
 ## Aspose.PDF Java для Python
 

@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ru/java/update-page-dimensions-in-ruby/
 description: Узнайте, как обновить размеры страниц PDF‑документа с помощью Ruby и Aspose.PDF для точного форматирования страниц.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF - Обновление размеров страницы
 
@@ -45,7 +45,7 @@ puts "Dimensions updated successfully!"
 
 ## Загрузка работающего кода
 
-Скачать\u0412\u00A0**Update Page Dimensions (Aspose.PDF)**\u0412\u00A0из\u0412\u00A0любого из нижеупомянутых социальных кодирующих сайтов:
+Скачайте **Update Page Dimensions (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/updatepagedimensions.rb)
 

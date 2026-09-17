@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/download-and-configure-aspose-pdf-in-php/
 description: Узнайте, как скачать и настроить Aspose.PDF в PHP для простой интеграции и работы с PDF‑файлами в ваших PHP‑проектах.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 ---
 ## Загрузка необходимых библиотек
 
@@ -23,7 +23,7 @@ lastmod: "2026-06-09"
 - **Aspose.PDF Java for PHP Examples**
   - [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
 
-## Как настроить исходный код на платформе Linux
+## Настройка исходного кода на платформе Linux
 
 Пожалуйста, выполните следующие простые шаги, чтобы открыть и расширить исходный код, используя:
 
@@ -76,7 +76,7 @@ $ git init 
 $ git clone https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose.PDF-for-Java_for_PHP
 {{< /highlight >}}
 
-## Как настроить исходный код на Windows
+## Настройка исходного кода на Windows
 
 Пожалуйста, выполните ниже перечисленные простые шаги для настройки PHP/Java Bridge на платформе Windows.
 

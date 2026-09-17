@@ -5,11 +5,11 @@ type: docs
 weight: 30
 url: /ru/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
 description: Поймите, как извлекать текст со всех страниц PDF‑документа с помощью Ruby и Aspose.PDF, идеально для анализа содержимого.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF — Извлечение текста со всех страниц
 
-Чтобы извлечь TextrFrom All the Pages Pdf document с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **ExtractTextFromAllPages**.
+Чтобы извлечь текст со всех страниц PDF-документа с использованием **Aspose.PDF Java for Ruby**, просто вызовите модуль **ExtractTextFromAllPages**.
 
 Ruby‑код
 
@@ -57,9 +57,9 @@ writer.close()
 puts "Text extracted successfully. Check output file."
 ```
 
-## Загрузка выполняемого кода
+## Загрузка исполняемого кода
 
-Скачать **Extract Text From All the Pages (Aspose.PDF)** из любых из перечисленных ниже социальных сайтов для программирования:
+Скачайте **Extract Text From All the Pages (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/extracttextfromallpages.rb)
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/add-layers-to-pdf-file-in-ruby/
 description: Узнайте, как добавить слои в PDF‑файл на Ruby с помощью Aspose.PDF для лучшей структуры документа и управления видимостью.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF - Добавление слоёв
 
@@ -69,9 +69,9 @@ doc.save(data_dir + "Layers-Added.pdf")
 puts "Added Layers Successfully, please check the output file."
 ```
 
-## Загрузка запущенного кода
+## Загрузка исполняемого кода
 
-СкачатьВ **Add Layers (Aspose.PDF)**В изВ любой из перечисленных ниже сайтов для совместного кодирования:
+Скачайте **Add Layers (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)
 

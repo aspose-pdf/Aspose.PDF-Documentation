@@ -8,7 +8,7 @@ description: На этой странице представлены самые 
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Популярные новые функции Aspose.PDF for Java
 Abstract: Раздел «Что нового» в документации Aspose.PDF for Java предоставляет обзор последних обновлений, улучшений и исправлений ошибок, введённых в недавних выпусках. Он выделяет новые функции, улучшения производительности и обновления совместимости, помогая разработчикам быть в курсе последних достижений в обработке PDF. Документация также содержит сведения об устаревших функциях и рекомендуемых альтернативах. Регулярный просмотр этого раздела позволяет разработчикам использовать самые эффективные и актуальные возможности в своих Java‑приложениях для беспроблемного управления PDF.
@@ -18,7 +18,7 @@ SoftwareApplication: java
 
 ### Свободные текстовые аннотации с произвольным вращением в XFDF
 
-Поддержка произвольных углов вращения была добавлена для свободных текстовых аннотаций в XFDF, делая импортированные и экспортированные макеты аннотаций более гибкими.
+Добавлена поддержка произвольных углов вращения свободных текстовых аннотаций в XFDF. Это обеспечивает более гибкую настройку расположения аннотаций при импорте и экспорте.
 
 ```java
 Document pdfDocument = new Document(inputPdf);
@@ -54,9 +54,9 @@ Document document = new Document(pdfFile);
     }
 ```
 
-### Улучшенное уменьшение размера файла при оптимизации PDF
+### Улучшенное сжатие файла при оптимизации PDF
 
-Оптимизация PDF теперь улучшает уменьшение размера файла за счёт уточнённого управления субсеттингом шрифтов.
+Оптимизация PDF теперь эффективнее уменьшает размер файла благодаря улучшенному управлению подмножествами шрифтов.
 
 ```java
 Document document = new Document(inputPath);
@@ -117,7 +117,7 @@ Document pdf = new Document();
 
 ## Что нового в Aspose.PDF 25.9
 
-### Плагины HTML в PDF
+### Плагины преобразования HTML в PDF
 
 Aspose.PDF for Java теперь включает плагины Html to Pdf, упрощающие рабочие процессы преобразования HTML в PDF.
 
@@ -244,7 +244,7 @@ Document doc = new Document("input.pdf");
 
 Aspose.PDF for Java теперь включает плагин PDF ChatGPT для сценариев взаимодействия с ИИ, ориентированных на PDF.
 
-Пример демонстрирует, как использовать плагин PdfChatGpt, добавляя файл(ы) в качестве источника сообщения:
+Пример демонстрирует, как использовать плагин PdfChatGpt, добавляя один или несколько файлов в качестве источника сообщения:
 
 ```java
 PdfChatGpt plugin = new PdfChatGpt();
@@ -529,7 +529,7 @@ document.getPages().add();
 
 ## Что нового в Aspose.PDF 24.12
 
-Начиная с версии 24.12, поддержка символов суррогатных пар стала возможна.
+Начиная с версии 24.12 поддерживаются символы, представленные суррогатными парами.
 
 Термин «суррогатная пара» относится к кодированию Unicode‑символов с высокими кодовыми точками в схеме кодирования UTF‑16.
 
@@ -630,7 +630,7 @@ GraphicalPdfComparer comparer = new GraphicalPdfComparer();
 
 ## Что нового в Aspose.PDF 24.8
 
-Начиная с версии 24.8, поддержка формата PDF/A-4:
+Начиная с версии 24.8 поддерживается формат PDF/A-4:
 
 ```java
 Document document = new Document(inputPdf);
@@ -980,14 +980,14 @@ pdfSign.close();
 
 Начиная с версии 24.5 реализованы плагины Form Editor.
 
-**Как редактировать формы в PDF с помощью Form Editor**
+**Редактирование форм в PDF с помощью Form Editor**
 
-- Установите свои лицензионные ключи
-- Создайте экземпляр класса FormEditor, который предоставляет методы для работы с PDF‑формами
-- Создайте экземпляр класса FormEditorAddOptions, который задает параметры добавления полей формы в PDF‑документ
-- Добавьте источник входного файла и источник выходного файла в объект FormEditorAddOptions, используя класс FileDataSource, представляющий путь к файлу или поток
-- Вызовите метод Process объекта FormEditor, передавая в него объект FormEditorAddOptions
-- Получите результат, используя ResultContainer.resultCollection
+- Установите свои лицензионные ключи.
+- Создайте экземпляр класса FormEditor, который предоставляет методы для работы с PDF‑формами.
+- Создайте экземпляр класса FormEditorAddOptions, который задает параметры добавления полей формы в PDF‑документ.
+- Добавьте источник входного файла и источник выходного файла в объект FormEditorAddOptions, используя класс FileDataSource, представляющий путь к файлу или поток.
+- Вызовите метод Process объекта FormEditor, передавая в него объект FormEditorAddOptions.
+- Получите результат, используя ResultContainer.resultCollection.
 
 ```java
 // Specify the input and output paths for the PDF files.
@@ -1281,7 +1281,7 @@ document.getPages().accept(newAbsorber);
 HashMap < Pattern, TextFragmentCollection > map = newAbsorber.getRegexResults();
 ```
 
-Следующая функция — добавление возможности конвертировать таблицы при преобразовании PDF в Markdown
+Также добавлена возможность конвертировать таблицы при преобразовании PDF в Markdown.
 
 ```java
 Document doc = new Document(dataDir + "56201.pdf");
@@ -1519,7 +1519,7 @@ for (int i = 1; i <= forms.size(); i++) {
 document.save(output);
 ```
 
-- Все формы можно удалить, используя следующий фрагмент кода:
+- Удалите все формы с помощью следующего фрагмента кода:
 
 ```java
 Document document = new Document(input);
@@ -1579,7 +1579,7 @@ documentElement.getChildren().remove(structElement);
 document.save(outputPath);
 ```
 
-- Удалите все теги отмеченных элементов из документа, но сохранить структурные элементы:
+- Удалите все теги отмеченных элементов из документа, но сохраните структурные элементы:
 
 ```java
 Document document = new Document(inputPath);
@@ -1601,7 +1601,7 @@ for (Element element:queue ) {
 document.save(outputPath);
 ```
 
-- Полностью удалить все теги:
+- Удалите все теги:
 
 ```java
 Document document = new Document(inputPath);
@@ -1627,7 +1627,7 @@ double height = absorber.getTextFragments().get_Item(1).getTextState().measureHe
 
 Начиная с версии 23.9 поддерживается удаление дочерней аннотации из заполняемого поля.
 
-пример 1:
+Пример 1:
 
 ```java
 String input = "55343_1.pdf";
@@ -1648,7 +1648,7 @@ field = (Field) doc.getForm().get_Item(fieldName);
 System.out.println(0 == field.size());
 ```
 
-пример 2:
+Пример 2:
 
 ```java
 {
@@ -1869,7 +1869,7 @@ System.out.println("PrintScaling: " + printScaling);
 
 Начиная с версии 23.6 поддерживается возможность задавать заголовок HTML‑ и Epub‑страницы.
 
-код для HTML:
+Код для HTML:
 
 ```java
 HtmlSaveOptions options = new HtmlSaveOptions();
@@ -1882,7 +1882,7 @@ Document document = new Document(inputPath);
 document.save(outPath, options);
 ```
 
-код для EPUB:
+Код для EPUB:
 
 ```java
 EpubSaveOptions epubSaveOptions = new EpubSaveOptions();
@@ -2029,7 +2029,7 @@ pdfDocument.save("finalOutput.pdf");
 
 - PDF в ODS: распознавание текста в нижнем и верхнем индексе;
 
-**пример**
+**Пример**
 
 ```java
 Document pdfDocument = new Document("Superscript-Subscript.pdf");
@@ -2066,9 +2066,9 @@ Aspose.PDF for Java позволяет загружать документы Por
 
 ## Что нового в Aspose.PDF 21.10
 
-### Как обнаружить скрытый текст?
+### Обнаружение скрытого текста
 
-Пожалуйста, используйте следующий код:
+Используйте следующий код:
 
 ```java
 Document pdf = new Document(inFile);
@@ -2094,7 +2094,7 @@ Document pdf = new Document(inFile);
 
 ## Что нового в Aspose.PDF 21.8
 
-### Как изменить цвет текста в цифровой подписи?
+### Изменение цвета текста в цифровой подписи
 
 В версии 21.8 метод setForegroundColor позволяет изменять цвет текста в цифровой подписи:
 
@@ -2120,7 +2120,7 @@ Please, use the following code:
 
 ## Что нового в Aspose.PDF 21.6
 
-### Скрытие изображения с помощью ImagePlacementAbsorber из документа
+### Скрытие изображения в документе с помощью ImagePlacementAbsorber
 
 С помощью Aspose.PDF for Java вы можете скрывать изображения, используя ImagePlacementAbsorber из документа:
 
@@ -2143,9 +2143,9 @@ Document doc = new Document("input.pdf");
 
 ### Добавление API для объединения изображений
 
-Aspose.PDF 21.4 позволяет объединять изображения. Объединяет список потоков изображений в один поток. Поддерживаются форматы вывода Png/jpg/tiff; в случае использования неподдерживаемого формата поток вывода кодируется как Jpeg по умолчанию.
+Aspose.PDF 21.4 позволяет объединять список потоков изображений в один поток. Поддерживаются форматы вывода Png/jpg/tiff; в случае использования неподдерживаемого формата поток вывода кодируется как Jpeg по умолчанию.
 
-Следующий фрагмент кода:
+Следующий фрагмент кода демонстрирует объединение изображений:
 
 ```java
 InputStream inputStream;
@@ -2212,7 +2212,7 @@ InputStream inputStream;
 
 ## Что нового в Aspose.PDF 21.02
 
-Aspose.PDF v21.02: подпись PDF с помощью подписей PAdES LTV
+Aspose.PDF v21.02 поддерживает подписание PDF с помощью подписей PAdES LTV.
 
 ```java
 final Document document = new Document(inputPdf);
@@ -2458,7 +2458,7 @@ for (int i = 1; i <= forms.size(); i++) {
 document.save(output);
 ```
 
-- Все формы можно удалить, используя следующий фрагмент кода:
+- Удалите все формы с помощью следующего фрагмента кода:
 
 ```java
 Document document = new Document(input);
@@ -2516,7 +2516,7 @@ documentElement.getChildren().remove(structElement);
 document.save(outputPath);
 ```
 
-- Удалите все помеченные элементы‑теги из документа, но сохранить структурные элементы:
+- Удалите все помеченные элементы‑теги из документа, но сохраните структурные элементы:
 
 ```java
 Document document = new Document(inputPath);
@@ -2538,7 +2538,7 @@ for (Element element:queue ) {
 document.save(outputPath);
 ```
 
-- Полностью удалить теги:
+- Удалите все теги:
 
 ```java
 Document document = new Document(inputPath);
@@ -2563,7 +2563,7 @@ double height = absorber.getTextFragments().get_Item(1).getTextState().measureHe
 
 С версии 23.9 поддерживается удаление дочерней аннотации из заполняемого поля.
 
-пример 1:
+Пример 1:
 
 ```java
 String input = "55343_1.pdf";
@@ -2584,7 +2584,7 @@ field = (Field) doc.getForm().get_Item(fieldName);
 System.out.println(0 == field.size());
 ```
 
-пример 2:
+Пример 2:
 
 ```java
 {
@@ -2957,7 +2957,7 @@ pdfDocument.save("finalOutput.pdf");
 
 - PDF → ODS: распознавание текста в нижнем и верхнем индексе;
 
-**пример**
+**Пример**
 
 ```java
 Document pdfDocument = new Document("Superscript-Subscript.pdf");
@@ -2990,9 +2990,9 @@ Aspose.PDF for Java позволяет загружать документы ф�
 
 ## Что нового в Aspose.PDF 21.10
 
-### Как обнаружить скрытый текст?
+### Обнаружение скрытого текста
 
-Пожалуйста, используйте следующий код:
+Используйте следующий код:
 
 ```java
 Document pdf = new Document(inFile);
@@ -3017,11 +3017,11 @@ Document pdf = new Document(inFile);
 
 ## Что нового в Aspose.PDF 21.8
 
-### Как изменить цвет текста в цифровой подписи?
+### Изменение цвета текста в цифровой подписи
 
 В версии 21.8 метод `setForegroundColor` позволяет менять цвет текста в цифровой подписи:
 
-Пожалуйста, используйте следующий код:
+Используйте следующий код:
 
 ```java
 PdfFileSignature pdfSign = new PdfFileSignature();
@@ -3042,7 +3042,7 @@ pdfSign.save(outFile);
 
 ## Что нового в Aspose.PDF 21.6
 
-### Скрытие изображения с помощью ImagePlacementAbsorber из документа
+### Скрытие изображения в документе с помощью ImagePlacementAbsorber
 
 С помощью Aspose.PDF for Java вы можете скрывать изображения, используя ImagePlacementAbsorber из документа:
 
@@ -3062,9 +3062,9 @@ Document doc = new Document("input.pdf");
 
 ## Что нового в Aspose.PDF 21.5
 
-### Добавлен API для объединения изображений
+### Добавление API для объединения изображений
 
-Aspose.PDF 21.4 позволяет комбинировать изображения. Объединяет список потоков изображений в один поток изображения. Поддерживаются форматы вывода PNG/JPG/TIFF; в случае использования неподдерживаемого формата поток вывода по умолчанию кодируется как JPEG. Следующий фрагмент кода демонстрирует использование:
+Aspose.PDF 21.4 позволяет объединять список потоков изображений в один поток изображения. Поддерживаются форматы вывода PNG/JPG/TIFF; в случае использования неподдерживаемого формата поток вывода по умолчанию кодируется как JPEG. Следующий фрагмент кода демонстрирует использование:
 
 ```java
 InputStream inputStream;
@@ -3130,7 +3130,7 @@ InputStream inputStream;
 
 ## Что нового в Aspose.PDF 21.02
 
-Aspose.PDF v21.02 Sign PDF with PAdES LTV Signatures
+Aspose.PDF v21.02 поддерживает подписание PDF с помощью подписей PAdES LTV.
 
 ```java
 final Document document = new Document(inputPdf);

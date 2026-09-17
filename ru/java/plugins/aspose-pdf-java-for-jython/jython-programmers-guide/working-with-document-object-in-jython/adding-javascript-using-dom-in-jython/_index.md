@@ -5,9 +5,9 @@ type: docs
 weight: 10
 url: /ru/java/adding-javascript-using-dom-in-jython/
 description: Узнайте, как добавить JavaScript в PDF‑документ с помощью DOM в Jython, улучшая интерактивность внутри документа.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
-## Aspose.PDF - Добавление Javascript
+## Aspose.PDF - Добавление JavaScript
 
 Для проверки формата файла с использованием **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
 description: Узнайте, как установить и настроить Aspose.PDF for Java с помощью Maven в Eclipse, обеспечивая беспроблемную работу с PDF в Java‑проектах.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Установка
 
@@ -29,7 +29,7 @@ lastmod: "2026-08-19"
 
 ![todo:image_alt_text](https://i.imgur.com/6iywqND.png)
 
-1. Укажите **Project Name, Location, GroupId, ArtifactId** и **Version** для вашего Maven проекта и нажмите **Finish.**
+1. Укажите **Project Name, Location, GroupId, ArtifactId** и **Version** для вашего Maven-проекта и нажмите **Finish**.
 
 ![todo:image_alt_text](https://i.imgur.com/zURjIn1.png)
 
@@ -39,7 +39,7 @@ lastmod: "2026-08-19"
 ![todo:image_alt_text](https://i.imgur.com/xRfHrku.png)
 
 1. Созданный **Maven Project** настроен на использование **Aspose.PDF for Java API** и готов к расширению в соответствии с требованиями вашего проекта.
-   Если вы решили загрузить [Примеры кода](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), вы можете использовать **Aspose.PDF Code Example (wizard)** для импорта необходимых **Code Examples** of [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API в ваш проект.
+   Если вы решили загрузить [Примеры кода](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples), вы можете использовать **Aspose.PDF Code Example (wizard)** для импорта необходимых **Code Examples** из [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API в ваш проект.
 
 ### Aspose.PDF Code Example (wizard)
 
@@ -47,7 +47,7 @@ lastmod: "2026-08-19"
 
 {{% alert color="primary" %}}
 
-Чтобы иметь возможность удобно использовать **Aspose.PDF Code Example wizard**, рекомендуется всегда выбирать **Also Download Code Examples** при создании **Maven Project** на **Aspose.PDF Maven Project** **wizard**,
+Чтобы иметь возможность удобно использовать **Aspose.PDF Code Example wizard**, рекомендуется всегда выбирать **Also Download Code Examples** при создании **Maven Project** в мастере **Aspose.PDF Maven Project** **wizard**.
 
 {{% /alert %}}
 

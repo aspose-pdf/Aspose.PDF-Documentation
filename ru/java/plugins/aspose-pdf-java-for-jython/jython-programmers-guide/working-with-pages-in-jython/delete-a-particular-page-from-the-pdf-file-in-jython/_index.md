@@ -5,11 +5,11 @@ type: docs
 weight: 20
 url: /ru/java/delete-a-particular-page-from-the-pdf-file-in-jython/
 description: Исследуйте, как удалить конкретную страницу из PDF‑документа с помощью Jython и Aspose.PDF, что обеспечивает эффективное редактирование.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF — Удаление страницы
 
-Проверить формат файла с помощью **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
+Проверьте формат файла с помощью **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 
 Ошибка при рендеринге макроса ‘code’: указано недопустимое значение параметра lang
 

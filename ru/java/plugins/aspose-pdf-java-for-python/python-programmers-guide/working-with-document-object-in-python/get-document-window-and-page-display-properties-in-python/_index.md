@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/get-document-window-and-page-display-properties-in-python/
 description: Поймите, как извлекать свойства окна документа и отображения страниц из PDF в Python с Aspose.PDF для точного отображения.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 Чтобы получить свойства окна документа и отображения страниц PDF-документа, используя **Aspose.PDF Java for Python**, просто вызовите класс **GetDocumentWindow**.
 
@@ -53,7 +53,7 @@ print "pageMode :-" + str(doc.getPageMode())
 
 **Скачать исполняемый код**
 
-СкачатьВ **Получить свойства окна документа и отображения страниц (Aspose.PDF)**В изВ любого из ниже перечисленных сайтов для совместного кодирования:
+Скачайте **Получить свойства окна документа и отображения страниц (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)
 

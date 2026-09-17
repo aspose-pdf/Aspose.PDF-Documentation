@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/adding-javascript-in-python/
 description: Узнайте, как встроить код JavaScript в документ PDF с помощью Python и Aspose.PDF, чтобы повысить интерактивность.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 Чтобы добавить JavaScript с помощью Aspose.PDF Java в Python, просто вызовите метод AddJavascript() класса Document.
 
@@ -34,7 +34,7 @@ print "Added JavaScript Successfully, please check the output file."
 
 **Скачать работающий код**
 
-Скачайте **Add Javascript (Aspose.PDF)** с любого из указанных ниже социальных сайтов для совместной разработки:
+Скачайте **Add Javascript (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)
 

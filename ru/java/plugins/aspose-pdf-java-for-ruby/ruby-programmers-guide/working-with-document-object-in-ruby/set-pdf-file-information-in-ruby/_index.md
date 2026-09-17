@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /ru/java/set-pdf-file-information-in-ruby/
 description: Программно определять и обновлять метаданные PDF, такие как заголовок, автор и ключевые слова, с помощью Ruby.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF - Установка информации о PDF-файле
 
@@ -45,9 +45,9 @@ doc.save(data_dir + "Updated_Information.pdf")
 puts "Update document information, please check output file."
 ```
 
-## Загрузка исполняющего кода
+## Загрузка исполняемого кода
 
-СкачатьВ **Set PDF File Information (Aspose.PDF)**В fromВ любой из перечисленных ниже сайтов для совместного кодирования:
+Скачайте **Set PDF File Information (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)
 

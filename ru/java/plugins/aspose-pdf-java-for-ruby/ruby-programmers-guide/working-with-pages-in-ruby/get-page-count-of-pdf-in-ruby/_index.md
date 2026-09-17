@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/get-page-count-of-pdf-in-ruby/
 description: Программно получить общее число страниц в PDF‑документе с помощью Ruby и Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF — Получение количества страниц
 
@@ -27,7 +27,7 @@ puts "Page Count:" + page_count.to_s
 
 ## Загрузка работающего кода
 
-СкачатьВ **Получить количество страниц (Aspose.PDF)**В изВ любых нижеупомянутых сайтов совместной разработки:
+Скачайте **Получить количество страниц (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getnumberofpages.rb)
 

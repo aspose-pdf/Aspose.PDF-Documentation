@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ru/java/optimize-pdf-document-for-the-web-in-ruby/
 description: Оптимизируйте PDF‑файлы для более быстрой доставки в веб и уменьшения размера файла с помощью Aspose.PDF на Ruby.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF — Оптимизация PDF для веба
 
@@ -40,7 +40,7 @@ end
 
 ## Загрузка исполняемого кода
 
-СкачатьВ **Оптимизировать PDF для Web (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
+Скачайте **Оптимизировать PDF для Web (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)
 

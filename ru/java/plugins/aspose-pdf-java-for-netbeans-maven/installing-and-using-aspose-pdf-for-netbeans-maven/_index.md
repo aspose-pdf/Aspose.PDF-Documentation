@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/installing-and-using-aspose-pdf-for-netbeans-maven/
 description: Узнайте, как установить и использовать плагин Aspose.PDF for NetBeans Maven для создания и управления Java‑проектами с поддержкой PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Установка
 
@@ -27,7 +27,7 @@ lastmod: "2026-08-19"
 2. Выберите **Aspose.PDF Maven Project** в категории **Maven**.
 3. Нажмите **Next**.
 
-Укажите **Project Name, Location, GroupId, ArtifactId** и **Version** для вашего Maven проекта и нажмите **Finish.**
+Укажите **Project Name, Location, GroupId, ArtifactId** и **Version** для вашего Maven-проекта и нажмите **Finish**.
 
 Это получит [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) последнюю [Зависимость Maven](http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-pdf/) ссылка из [Репозиторий Maven Aspose Cloud](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) и настроить его в **pom.xml**. Если вы выбрали **Also Download Code Examples,** загрузка **Code Examples** также начнётся с [Репозиторий примеров API Aspose.PDF for Java. ](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 Следующий проект **Maven** будет создан в вашей **NetBeans IDE** после завершения мастера:
@@ -41,7 +41,7 @@ lastmod: "2026-08-19"
 
 {{% alert color="primary" %}}
 
-Чтобы иметь возможность комфортно использовать **Aspose.PDF Code Example wizard**, рекомендуется всегда выбирать **Also Download Code Examples** при создании **Maven Project** в **Aspose.PDF Maven Project** **wizard**,
+Чтобы иметь возможность комфортно использовать **Aspose.PDF Code Example wizard**, рекомендуется всегда выбирать **Also Download Code Examples** при создании **Maven Project** в мастере **Aspose.PDF Maven Project** **wizard**.
 
 {{% /alert %}}
 

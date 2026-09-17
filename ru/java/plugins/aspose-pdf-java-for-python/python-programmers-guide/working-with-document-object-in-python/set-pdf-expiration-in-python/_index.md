@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ru/java/set-pdf-expiration-in-python/
 description: Узнайте, как установить дату истечения срока действия PDF‑файла в Python с помощью Aspose.PDF для доступа к документам с ограниченным сроком действия.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 Чтобы установить срок действия PDF‑документа с помощью **Aspose.PDF Java for Python**, просто вызовите класс **SetExpiration**.
 
@@ -29,7 +29,7 @@ print "Update document information, please check output file."
 
 **Скачать исполняемый код**
 
-Загрузить **Set PDF Expiration (Aspose.PDF)** из любого из указанных ниже социальных сайтов для совместной разработки:
+Скачайте **Set PDF Expiration (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)
 

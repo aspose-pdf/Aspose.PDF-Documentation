@@ -5,11 +5,11 @@ type: docs
 weight: 40
 url: /ru/java/get-xmp-metadata-from-pdf-file-in-jython/
 description: Узнайте, как извлечь XMP-метаданные из PDF-документа с помощью Jython и Aspose.PDF для детального анализа содержимого.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF — Получение XMP-метаданных
 
-Проверить формат файла с помощью **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
+Проверьте формат файла с помощью **Aspose.PDF Java for Jython**. Здесь вы можете увидеть пример кода.
 
 Ошибка рендеринга макроса 'code': указано недопустимое значение параметра lang
 

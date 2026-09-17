@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/get-a-particular-page-in-a-pdf-file-in-ruby/
 description: Получайте доступ и управляйте отдельными страницами PDF‑документов с помощью Ruby и Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 ---
 ## Aspose.PDF - Получение страницы
 
@@ -43,7 +43,7 @@ puts "Process completed successfully!"
 
 ## Загрузка исполняемого кода
 
-Скачать **Get Page (Aspose.PDF)** из любого из перечисленных ниже сайтов для совместного кодинга:
+Скачайте **Get Page (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)
 
