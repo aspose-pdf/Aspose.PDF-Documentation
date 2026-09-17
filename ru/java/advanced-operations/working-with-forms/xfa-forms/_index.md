@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/xfa-forms/
 description: Узнайте, как преобразовать XFA-формы в стандартные AcroForm в PDF‑документах с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,8 +17,8 @@ XFA-формы могут быть преобразованы в стандар�
 
 ## Преобразование динамической формы XFA в AcroForm
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к документу [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) и установите необходимые [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) свойства.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к форме [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) документа и установите необходимые свойства [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/).
 1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -32,8 +32,8 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 ## Преобразование формы XFA с `ignoreNeedsRendering`
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к документу [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) и установите необходимые `ignoreNeedsRendering` и [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) свойства.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к форме [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) документа и установите необходимые свойства `ignoreNeedsRendering` и [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/).
 1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

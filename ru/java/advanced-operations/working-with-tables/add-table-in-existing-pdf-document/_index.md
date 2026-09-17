@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/adding-tables/
 description: Узнайте, как добавлять и настраивать таблицы в существующих PDF-документах на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: Добавляйте и форматируйте таблицы в PDF-документах с помощью Java.
 Abstract: В этой статье объясняется, как добавлять и настраивать таблицы в PDF‑документах с помощью Aspose.PDF for Java. Описываются создание таблиц, границы, отступы, заполнение, объединение строк и столбцов, поведение AutoFit, вставка изображений в ячейки, повторяющиеся строки и столбцы, фрагменты HTML и LaTeX, а также управление многостраничной отрисовкой.
 ---
-Aspose.PDF for Java предоставляет богатый `Table` API для создания таблиц с настройкой макета и содержимого.
+Aspose.PDF for Java предоставляет API `Table` для создания таблиц с настройкой макета и содержимого.
 
 ## Создание простой таблицы
 
 Используйте этот пример, когда вам нужно добавить простую таблицу с одинаковыми границами и текстовыми ячейками.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте его границы.
 1. Добавьте строки и ячейки, прикрепите таблицу к странице и сохраните документ.
 
@@ -46,8 +46,8 @@ public static void createTable(Path outputFile) {
 
 Используйте этот пример, когда таблице нужны объединённые ячейки по строкам или столбцам.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить строки.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавьте строки.
 1. Настройте `ColSpan` и `RowSpan` на целевых ячейках, затем сохраните PDF.
 
 ```java
@@ -97,7 +97,7 @@ public static void addRowspanOrColspan(Path outputFile) {
 
 Используйте этот пример, когда вам нужно настроить границы, отступы и поведение обтекания ячеек.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте ширины, границы и отступы.
 1. Добавьте строки и сохраните полученный документ.
 
@@ -128,12 +128,12 @@ public static void addBorders(Path outputFile) {
 }
 ```
 
-## Включите автоматическую подгонку макета таблицы
+## Включение автоматической подгонки макета таблицы
 
 Используйте этот пример, когда таблица должна автоматически подстраиваться под доступную ширину страницы.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и установить `ColumnAdjustment.AutoFitToWindow`.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и установите `ColumnAdjustment.AutoFitToWindow`.
 1. Добавьте образцы строк и сохраните PDF.
 
 ```java
@@ -165,9 +165,9 @@ public static void autoFit(Path outputFile) {
 
 Используйте этот пример, когда таблице необходимо отображать растровое изображение внутри одной из её ячеек.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить строку с ячейками текста и изображения.
-1. Настройте [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) размер и сохранить документ.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавьте строку с ячейками текста и изображения.
+1. Настройте размер изображения [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) и сохраните документ.
 
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
@@ -194,9 +194,9 @@ public static void addImage(Path imageFile, Path outputFile) {
 
 Используйте этот пример, когда таблица должна отображать SVG‑файлы построчно.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и перебрать SVG‑файлы.
-1. Добавьте одну строку для каждого изображения, настройте SVG [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), и сохраните PDF.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и переберите SVG‑файлы.
+1. Добавьте одну строку для каждого изображения, настройте SVG [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) и сохраните PDF.
 
 ```java
 public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
@@ -224,9 +224,9 @@ public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
 
 Используйте этот пример, когда содержимое таблицы должно включать встроенное HTML-форматирование.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте границы.
-1. Добавьте [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) объекты в ячейки и сохранить документ.
+1. Добавьте объекты [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) в ячейки и сохраните документ.
 
 ```java
 public static void addHtmlFragments(Path outputFile) {
@@ -251,9 +251,9 @@ public static void addHtmlFragments(Path outputFile) {
 
 Используйте этот пример, когда содержимое таблицы должно отображать выражения TeX или LaTeX.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с границами.
-1. Добавьте [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) объекты в ячейки и сохранить выходной файл.
+1. Добавьте объекты [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) в ячейки и сохраните выходной файл.
 
 ```java
 public static void addLatexFragments(Path outputFile) {
@@ -274,13 +274,13 @@ public static void addLatexFragments(Path outputFile) {
 }
 ```
 
-## Поместите таблицу на новую страницу
+## Размещение таблицы на новой странице
 
 Используйте этот пример, когда вторая таблица должна начинаться на отдельной странице после большой таблицы.
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и настройте параметры страницы.
-1. Создайте первый большой [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить его на страницу.
-1. Создайте вторую таблицу, установите `InNewPage`, и сохранить документ.
+1. Создайте первую большую таблицу [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавьте её на страницу.
+1. Создайте вторую таблицу, установите `InNewPage` и сохраните документ.
 
 ```java
 public static void addTableOnNewPage(Path outputFile) {
@@ -316,12 +316,12 @@ public static void addTableOnNewPage(Path outputFile) {
 }
 ```
 
-## Создание вертикально разорванной таблицы с повторяющимися столбцами
+## Создание таблицы с вертикальным разбиением и повторяющимися столбцами
 
 Используйте этот пример, когда широкая таблица должна продолжаться вертикально и повторять ключевые столбцы.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настроить вертикальное разбиение с повторяющимися столбцами.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте вертикальное разбиение с повторяющимися столбцами.
 1. Добавьте заголовок и строки данных, затем сохраните документ.
 
 ```java
@@ -364,12 +364,12 @@ public static void addTableHideBorders(Path outputFile) {
 }
 ```
 
-## Повторно использование примера границ и отступов
+## Повторное использование примера границ и отступов
 
-Используйте этот помощник, когда сценарий с полями и отступами должен делегировать общему примеру границы.
+Используйте этот вспомогательный метод для вызова общего примера настройки границ и отступов.
 
-1. Вызовите существующий метод границы и отступов таблицы.
-1. Повторно использовать одну и ту же логику размещения таблицы без дублирования кода.
+1. Вызовите существующий метод настройки границ и отступов таблицы.
+1. Используйте повторно одну и ту же логику размещения таблицы без дублирования кода.
 
 ```java
 public static void addMarginsOrPadding(Path outputFile) {
@@ -381,7 +381,7 @@ public static void addMarginsOrPadding(Path outputFile) {
 
 Используйте этот пример, когда таблице нужно использовать стили закруглённых углов вместо стандартных прямоугольных границ.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте параметры скруглённой границы.
 1. Добавьте строки в таблицу и сохраните PDF.
 
@@ -410,8 +410,8 @@ public static void createTableWithRoundCorner(Path outputFile) {
 
 Используйте этот пример, когда многостраничные таблицы должны повторять строки заголовка на каждой последующей странице.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте вертикально сломанный [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и настройте количество повторяющихся строк и стиль.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте таблицу [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с вертикальным разбиением и настройте количество повторяющихся строк и их стиль.
 1. Добавьте строки заголовков и строки данных, затем сохраните документ.
 
 ```java
@@ -461,7 +461,7 @@ public static void addRepeatingRows(Path outputFile) {
 Используйте этот пример, когда первые столбцы должны повторяться, а таблица разбивается вертикально на той же странице.
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и настройте размер страницы.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и установить повторяющиеся столбцы плюс поведение автоподгонки.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и установите повторяющиеся столбцы плюс поведение автоподгонки.
 1. Добавьте заголовок и строки данных, затем сохраните PDF.
 
 ```java
@@ -506,8 +506,8 @@ public static void addRepeatingColumns(Path outputFile) {
 
 Используйте этот пример, когда определённые строки таблицы должны начинаться с новой страницы.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и заполнить множество строк.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и заполните множество строк.
 1. Отметьте выбранные строки `InNewPage` и сохраните документ.
 
 ```java
@@ -537,9 +537,9 @@ public static void insertPageBreak(Path outputFile) {
 
 Используйте этот пример, когда текст ячейки должен отображаться под разными углами поворота.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавить строку с несколькими ячейками.
-1. Создайте повернутый [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) объекты, добавьте их в ячейки и сохраните PDF.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) и добавьте строку с несколькими ячейками.
+1. Создайте повёрнутые объекты [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), добавьте их в ячейки и сохраните PDF.
 
 ```java
 public static void rotatedTextTable(Path outputFile) {

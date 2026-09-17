@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/create-links/
 description: Узнайте, как создавать внутренние, внешние и удалённые ссылки PDF в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,9 @@ Aspose.PDF for Java использует `LinkAnnotation` вместе с объ
 
 Используйте этот пример, когда аннотация ссылки должна запускать внешний файл или цель.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и выберите целевую страницу.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и выберите целевую страницу.
 1. Создайте [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) и настройте его границу и цвет.
-1. Назначьте [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) и сохранить документ.
+1. Назначьте [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) и сохраните документ.
 
 ```java
 public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
@@ -45,9 +45,9 @@ public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputF
 
 Используйте этот пример, когда ссылка должна открывать страницу в другом PDF‑документе.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) на целевой странице.
-1. Назначьте [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) и сохранить файл вывода.
+1. Назначьте [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) и сохраните файл вывода.
 
 ```java
 public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
@@ -67,9 +67,9 @@ public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path out
 
 Используйте этот пример, когда ссылка должна переходить на другую страницу внутри того же PDF‑документа.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) и настройте его внешний вид.
-1. Назначьте [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) на страницу назначения и сохранить документ.
+1. Назначьте [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) на страницу назначения и сохраните документ.
 
 ```java
 public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
@@ -97,9 +97,9 @@ public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFil
 
 Используйте этот пример, когда ссылка должна открывать веб-ресурс через действие URI.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) на странице.
-1. Назначьте [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) и сохранить файл вывода.
+1. Назначьте [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) и сохраните файл вывода.
 
 ```java
 public static void createLinkAnnotationGoToUriAction(Path inputFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/text-stamps-in-the-pdf-file/
 description: Узнайте, как добавить текстовые штампы в PDF‑документы на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как добавит
 
 Используйте этот пример, когда страница должна отображать повернутый текстовый штамп с пользовательским оформлением.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) и настройте его размещение и внешний вид текста.
 1. Добавьте штамп на целевую страницу и сохраните документ.
 

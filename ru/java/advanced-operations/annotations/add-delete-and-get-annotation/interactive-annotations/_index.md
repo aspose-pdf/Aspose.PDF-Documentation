@@ -4,22 +4,22 @@ linktitle: Интерактивные аннотации
 type: docs
 weight: 60
 url: /ru/java/interactive-annotations/
-description: Узнайте, как добавлять, просматривать и удалять аннотации ссылок в PDF‑документах с использованием Aspose.PDF for Java.
-lastmod: "2026-08-19"
+description: Узнайте, как добавлять, просматривать и удалять ссылочные аннотации в PDF‑документах с помощью Aspose.PDF for Java.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Работайте с интерактивными PDF‑аннотациями в Java.
-Abstract: В этой статье объясняется, как работать с интерактивными аннотациями ссылок в PDF‑файлах с использованием Aspose.PDF for Java. Описывается поиск текста, создание аннотации ссылки над найденной областью текста, чтение существующих аннотаций ссылок и их удаление.
+Abstract: В этой статье объясняется, как работать с интерактивными ссылочными аннотациями в PDF‑файлах с использованием Aspose.PDF for Java. Описывается поиск текста, создание ссылочной аннотации над найденной областью текста, чтение существующих ссылочных аннотаций и их удаление.
 ---
-Интерактивные аннотации в этом разделе сосредоточены на рабочих процессах, основанных на ссылках и кнопках, которые реагируют на действия пользователя внутри просмотрщика PDF.
+Интерактивные аннотации в этом разделе сосредоточены на рабочих процессах, основанных на ссылках и кнопках, которые реагируют на действия пользователя в просмотрщике PDF.
 
 ## Добавление аннотации ссылки
 
-Используйте этот пример, когда вам нужно разместить кликабельную ссылку поверх текста, найденного на странице.
+Используйте этот пример, когда нужно разместить кликабельную ссылку поверх текста, найденного на странице.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найдите целевой фрагмент текста и создайте [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) над его прямоугольником.
 1. Назначьте [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) и сохраните обновлённый документ.
 
@@ -43,11 +43,11 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 
 ## Получение аннотаций ссылок
 
-Этот пример сканирует коллекцию аннотаций страницы и сообщает местоположение каждой аннотации ссылки.
+Этот пример сканирует коллекцию аннотаций страницы и сообщает о местоположении каждой аннотации ссылки.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Переберите аннотации на целевой странице.
-1. Фильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` и выведите их прямоугольники.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Пройдите по аннотациям на целевой странице.
+1. Отфильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` и выведите их прямоугольники.
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -63,9 +63,9 @@ public static void linkGet(Path inputFile) {
 
 ## Удаление аннотаций ссылок
 
-Используйте этот подход, когда необходимо удалить существующие аннотации ссылок со страницы.
+Используйте этот подход, когда нужно удалить существующие аннотации‑ссылки со страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации, тип которых [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. Удалите собранные аннотации и сохраните выходной файл.
 
@@ -86,13 +86,13 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Добавление линейной аннотации
+## Добавление аннотации линии
 
 Этот пример создает интерактивную линейную аннотацию со стилями стрелок, настройками границы и всплывающей заметкой.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) с начальной и конечной точками.
-1. Настройте его внешний вид и всплывающую аннотацию, затем сохраните документ.
+1. Настройте её внешний вид и всплывающую аннотацию, затем сохраните документ.
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -125,11 +125,11 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## Добавление кнопок навигации
 
-Используйте этот пример, когда PDF должен включать кнопки «previous-page» и «next-page» для интерактивной навигации.
+Используйте этот пример, когда PDF должен включать кнопки «предыдущая страница» и «следующая страница» для интерактивной навигации.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и убедитесь, что документ содержит требуемые страницы.
-1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) элементы управления с предопределёнными действиями навигации.
-1. Добавьте кнопки в коллекцию Form и сохраните обновлённый документ.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и убедитесь, что документ содержит необходимые страницы.
+1. Создайте элементы управления [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) с предопределенными навигационными действиями.
+1. Добавьте кнопки в коллекцию формы и сохраните обновлённый документ.
 
 ```java
 public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
@@ -160,10 +160,10 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 
 ## Добавление кнопки печати
 
-В этом примере создаётся кнопка, которая запускает команду печати, когда пользователь нажимает её.
+Этот пример создает кнопку, которая запускает команду печати, когда пользователь нажимает её.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) и назначьте предварительно определённое действие печати.
+1. Создайте новый PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) и назначьте предопределённое действие печати.
 1. Настройте границу и фон кнопки, добавьте её в форму и сохраните документ.
 
 ```java
@@ -193,5 +193,3 @@ public static void printButtonAdd(Path outputFile) {
     }
 }
 ```
-
-

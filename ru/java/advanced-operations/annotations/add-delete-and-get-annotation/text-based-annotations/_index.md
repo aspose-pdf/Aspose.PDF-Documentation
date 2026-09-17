@@ -4,23 +4,23 @@ linktitle: Текстовые аннотации
 type: docs
 weight: 10
 url: /ru/java/text-based-annotations/
-description: Узнайте, как добавлять, просматривать и удалять аннотации текста, свободного текста и зачеркивания в PDF‑документах с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+description: Узнайте, как добавлять, просматривать и удалять аннотации типа Text, Free Text и Strikeout в PDF‑документах с помощью Aspose.PDF for Java.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Работайте с текстовыми PDF‑аннотациями в Java.
-Abstract: В этой статье объясняется, как создавать, читать и удалять текстовые аннотации в PDF‑документах с использованием Aspose.PDF for Java. Рассматриваются текстовые аннотации, аннотации свободного текста и аннотации зачёркивания на основе примеров реализации на Java.
+Abstract: В этой статье объясняется, как создавать, читать и удалять текстовые аннотации в PDF‑документах с использованием Aspose.PDF for Java. Рассматриваются текстовые аннотации, аннотации свободного текста и аннотации зачеркивания на основе примеров реализации на Java.
 ---
-Рабочие процессы аннотаций, основанные на тексте, в этом разделе охватывают сценарии со свободным текстом, выделением, зачеркиванием, волнистой линией и подчёркиванием.
+Текстовые сценарии аннотирования в этом разделе охватывают свободный текст, выделение, зачеркивание, волнистое подчеркивание и подчеркивание.
 
 ## Добавление, получение и удаление аннотаций свободного текста
 
 Используйте эти примеры, когда вам нужно разместить редактируемые текстовые заметки, просмотреть их или удалить их со страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте, найти или собрать [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) объекты на странице.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте, найдите или соберите объекты [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) на странице.
 1. Сохраните обновлённый документ при добавлении или удалении аннотаций.
 
 ```java
@@ -70,10 +70,10 @@ public static void freeTextAnnotationDelete(Path inputFile, Path outputFile) {
 
 ## Добавление, получение и удаление аннотаций выделения
 
-Эти примеры показывают, как создать разметку выделения, просмотреть существующие аннотации выделения и удалить их.
+Эти примеры показывают, как создавать разметку выделения, просматривать существующие аннотации выделения и удалять их.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Работайте с [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) объекты на странице.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Работайте с объектами [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) на странице.
 1. Сохраните документ после добавления или удаления аннотации.
 
 ```java
@@ -118,12 +118,12 @@ public static void textHighlightAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Добавление, получение и удаление аннотаций зачеркивания
+## Добавление, получение и удаление аннотаций зачёркивания
 
-Используйте эти примеры, когда вам нужна разметка перечёркнутого текста в стиле рецензии для диапазонов текста.
+Используйте эти примеры, когда вам нужно зачёркивание фрагментов текста при рецензировании.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создавайте, проверять или собирать [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) объекты.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте, проверьте или соберите объекты [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
 1. Сохраните документ после применения изменений.
 
 ```java
@@ -172,12 +172,12 @@ public static void textStrikeoutAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Добавление, получение и удаление волнистых аннотаций
+## Добавление, получение и удаление аннотаций волнистого подчёркивания
 
-Эти примеры работают с волнистой разметкой, используемой для выделения текста во время рецензии.
+Эти примеры используют волнистую разметку, применяемую для выделения текста при проверке.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создавайте, проверять или собирать [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) объекты.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте, проверьте или соберите объекты [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/).
 1. Сохраните документ после добавления или удаления аннотаций.
 
 ```java
@@ -225,12 +225,12 @@ public static void textSquigglyAnnotationDelete(Path inputFile, Path outputFile)
 }
 ```
 
-## Добавление, получение и удаление аннотаций подчеркивания
+## Добавление, получение и удаление аннотаций подчёркивания
 
-Используйте эти примеры, когда текст должен быть подчёркнут, проверен или удалён через API аннотаций.
+Используйте эти примеры, когда текст должен быть подчеркнут, проверен или удалён с помощью API аннотаций.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Работайте с [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) объекты на странице.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Работайте с объектами [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) на странице.
 1. Сохраните документ после добавления или удаления аннотаций.
 
 ```java
@@ -279,12 +279,12 @@ public static void textUnderlineAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Добавление аннотации подчёркивания с четырёхугольными точками
+## Добавление аннотации подчёркивания с заданными вершинами четырёхугольника
 
-В этом примере область подчеркивания определяется явно с помощью четырёхугольных точек, полученных из прямоугольника.
+В этом примере область подчеркивания определяется явно с помощью координат вершин четырёхугольника, полученных из прямоугольника.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) и вычислить его quad points.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) и вычислите координаты вершин её четырёхугольника.
 1. Добавьте аннотацию на страницу и сохраните документ.
 
 ```java
@@ -310,13 +310,13 @@ public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFil
 }
 ```
 
-## Получение выделенного текста из аннотаций подчёркивания
+## Получение помеченного текста из аннотаций подчёркивания
 
-Эти примеры считывают текстовое содержание, связанное с аннотациями подчёркивания, либо как полную строку, либо как отдельные фрагменты.
+Эти примеры читают текстовое содержимое, связанное с аннотациями подчеркивания, либо как полную строку, либо как отдельные фрагменты.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Переберите аннотации подчёркивания на странице.
-1. Прочитайте любой `getMarkedText()` или `getMarkedTextFragments()` и вывести результаты.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите аннотации с подчеркиванием на странице.
+1. Получите текст с помощью `getMarkedText()` или `getMarkedTextFragments()` и выведите результаты.
 
 ```java
 public static void textUnderlineMarkedTextGet(Path inputFile) {
@@ -346,13 +346,13 @@ public static void textUnderlineMarkedFragmentsGet(Path inputFile) {
 }
 ```
 
-## Удаление аннотаций подчеркивания по заголовку
+## Удаление аннотаций подчёркивания по заголовку
 
-Используйте этот подход, когда подчеркивающие аннотации следует удалять выборочно в зависимости от их метаданных.
+Используйте этот подход, когда подчеркивающие аннотации необходимо удалять выборочно в зависимости от их метаданных.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Фильтруйте аннотации подчеркивания по заголовку.
-1. Удалите соответствующие аннотации и сохраните обновлённый документ.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Отфильтруйте аннотации подчёркивания по заголовку.
+1. Удалите совпадающие аннотации и сохраните обновлённый документ.
 
 ```java
 public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
@@ -374,13 +374,13 @@ public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Добавление и сведение аннотации подчёркивания
+## Добавление аннотации подчёркивания и её преобразование в содержимое страницы
 
 В этом примере добавляется аннотация подчеркивания, которая сразу же преобразуется в статическое содержимое страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) на страницу.
-1. Вызовите `flatten()` на аннотации и сохраните выходной файл.
+1. Вызовите `flatten()` для аннотации и сохраните выходной файл.
 
 ```java
 public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {
@@ -401,13 +401,11 @@ public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Связанные темы аннотаций
+## Связанные темы об аннотациях
 
 - [Интерактивные аннотации](/pdf/ru/java/interactive-annotations/)
-- [Разметка аннотаций](/pdf/ru/java/markup-annotations/)
+- [Аннотации разметки](/pdf/ru/java/markup-annotations/)
 - [Аннотации безопасности](/pdf/ru/java/security-annotations/)
 - [Аннотации фигур](/pdf/ru/java/shape-annotations/)
-- [Аннотации водяного знака](/pdf/ru/java/watermark-annotations/)
+- [Аннотации водяных знаков](/pdf/ru/java/watermark-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
-
-

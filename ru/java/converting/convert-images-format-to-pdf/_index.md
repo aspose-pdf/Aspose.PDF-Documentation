@@ -1,28 +1,28 @@
 ---
-title: Конвертация форматов изображений в PDF на Java
-linktitle: Конвертация изображений в PDF
+title: Преобразование форматов изображений в PDF на Java
+linktitle: Преобразование изображений в PDF
 type: docs
 weight: 60
 url: /ru/java/convert-images-format-to-pdf/
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 description: Узнайте, как конвертировать BMP, CGM, DICOM, PNG, TIFF, EMF, SVG, CDR и другие форматы изображений в PDF на Java с помощью Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: Как конвертировать изображения в PDF на Java
-Abstract: В этой статье объясняется, как конвертировать несколько форматов изображений в PDF с помощью Aspose.PDF for Java. Описывается непосредственное размещение изображения на новой странице PDF, а также параметры загрузки, специфичные для типов файлов CGM, SVG и CDR.
+Abstract: В этой статье объясняется, как конвертировать несколько форматов изображений в PDF с использованием Aspose.PDF for Java. Охватывается прямая вставка изображения в новую страницу PDF, а также параметры загрузки, специфичные для типов файлов CGM, SVG и CDR.
 ---
 Aspose.PDF for Java может конвертировать множество растровых и векторных форматов изображений в PDF‑документы.
 
 ## Преобразование BMP в PDF
 
-Используйте этот пример, когда BMP‑изображение должно быть вставлено в PDF‑документ.
+Используйте этот пример, когда BMP‑изображение должно быть помещено в PDF‑документ.
 
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для хранения выходного PDF.
-1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместить BMP с `page.addImage(...)`.
-1. Определите целевой прямоугольник изображения с [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) поэтому растровый контент заполняет область страницы PDF.
-1. Сохраните выходной PDF‑файл.
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместите BMP с помощью `page.addImage(...)`.
+1. Определите прямоугольник целевого изображения с помощью [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/), при этом растровое содержимое заполняет область страницы PDF.
+1. Сохраните выходной PDF-файл.
 
 ```java
 public static void convertBmpToPdf(Path inputFile, Path outputFile) {
@@ -40,9 +40,9 @@ public static void convertBmpToPdf(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда файл графики CGM должен быть преобразован в PDF.
 
-1. Откройте источник CGM, передав путь к файлу и [`CgmLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cgmloadoptions/) в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) конструктор.
-1. Позвольте Aspose.PDF интерпретировать поток графики CGM при загрузке документа.
-1. Сохраните преобразованный PDF в целевой путь вывода.
+1. Откройте источник CGM, передав путь к файлу и [`CgmLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cgmloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Позвольте Aspose.PDF интерпретировать поток графики CGM во время загрузки документа.
+1. Сохраните преобразованный PDF по целевому пути.
 
 ```java
 public static void convertCgmToPdf(Path inputFile, Path outputFile) {
@@ -53,14 +53,14 @@ public static void convertCgmToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация DICOM в PDF
+## Преобразование DICOM в PDF
 
 Используйте этот пример, когда медицинское изображение DICOM следует обернуть в документ PDF.
 
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для вывода PDF.
-1. Создайте [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) объект, установить его [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) к `Dicom`, и назначьте путь к исходному файлу.
-1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и добавить изображение DICOM в коллекцию абзацев страницы.
-1. Сохраните результат как PDF.
+1. Создайте объект [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), установите его [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) в значение `Dicom` и назначьте путь к исходному файлу.
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и добавьте DICOM‑изображение в коллекцию абзацев страницы.
+1. Сохраните результат в формате PDF.
 
 ```java
 public static void convertDicomToPdf(Path inputFile, Path outputFile) {
@@ -79,14 +79,14 @@ public static void convertDicomToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация EMF в PDF с прямой загрузкой документа
+## Преобразование EMF в PDF с прямой загрузкой документа
 
 Используйте этот пример, когда файл EMF должен быть преобразован в PDF через основной путь загрузки EMF.
 
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и откройте источник EMF как бинарный поток.
-1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и очистить его поля, чтобы графика EMF могла занимать всю площадь страницы.
-1. Создайте [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), привяжите к нему поток EMF и добавьте его в коллекцию абзацев страницы.
-1. Сохраните выходной PDF‑файл.
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и обнулите её поля, чтобы рисунок EMF мог занять всю площадь страницы.
+1. Создайте [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), привяжите поток EMF к нему и добавьте его в коллекцию абзацев страницы.
+1. Сохраните выходной PDF-файл.
 
 ```java
 public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOException {
@@ -109,13 +109,13 @@ public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOE
 }
 ```
 
-## Конвертация EMF в PDF с альтернативным рабочим процессом
+## Альтернативный способ преобразования EMF в PDF
 
-Используйте этот пример, когда содержимое EMF должно быть преобразовано с использованием альтернативной настройки или потока композиции страниц.
+Используйте этот пример, когда содержимое EMF должно быть преобразовано с использованием альтернативной настройки или процесса композиции страниц.
 
-1. Загрузите источник EMF с помощью Aspose.Imaging и отрендерите его в поток PNG в памяти перед размещением в PDF.
-1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Создайте [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) из промежуточного потока байтов и добавить его на страницу.
+1. Загрузите EMF‑источник с помощью Aspose.Imaging и отрендерите его в поток PNG в памяти перед размещением в PDF.
+1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Создайте [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) из промежуточного потока байтов и добавьте его на страницу.
 1. Сохраните преобразованный PDF.
 
 ```java
@@ -142,8 +142,8 @@ public static void convertEmfToPdf02(Path inputFile, Path outputFile) throws IOE
 Используйте этот пример, когда нужно добавить GIF‑изображение на страницу PDF.
 
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для вывода PDF.
-1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместите GIF с `page.addImage(...)`.
-1. Определите границы размещения с помощью [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) поэтому изображение заполняет область страницы.
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместите GIF с помощью `page.addImage(...)`.
+1. Определите границы размещения с помощью [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/), при этом изображение заполняет область страницы.
 1. Сохраните выходной PDF.
 
 ```java
@@ -160,11 +160,11 @@ public static void convertGifToPdf(Path inputFile, Path outputFile) {
 
 ## Преобразование JPEG в PDF
 
-Используйте этот пример, когда JPEG‑изображение должно быть преобразовано в одностраничный PDF.
+Используйте этот пример, когда изображение JPEG нужно преобразовать в одностраничный PDF.
 
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для выходного PDF.
-1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и вставьте JPEG‑изображение с `page.addImage(...)`.
-1. Используйте [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) чтобы контролировать, как растровое изображение сопоставляется с координатами страницы.
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и вставьте JPEG‑изображение с помощью `page.addImage(...)`.
+1. Используйте [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) для контроля того, как растровое изображение отображается в координатах страницы.
 1. Сохраните сгенерированный файл PDF.
 
 ```java
@@ -179,13 +179,13 @@ public static void convertJpegToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация PNG в PDF
+## Преобразование PNG в PDF
 
-Используйте этот пример, когда PNG‑изображение должно быть упаковано в документ PDF.
+Используйте этот пример, когда необходимо обернуть PNG‑изображение в документ PDF.
 
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для вывода преобразования.
-1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместите PNG‑изображение на нём с `page.addImage(...)`.
-1. Используйте [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) изменить размер изображения относительно холста страницы.
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместите PNG‑изображение на нём с помощью `page.addImage(...)`.
+1. Используйте [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/), чтобы изменить размер изображения относительно холста страницы.
 1. Сохраните выходной файл.
 
 ```java
@@ -202,11 +202,11 @@ public static void convertPngToPdf(Path inputFile, Path outputFile) {
 
 ## Преобразование SVG в PDF
 
-Используйте этот пример, когда графику SVG необходимо отобразить внутри PDF‑документа.
+Используйте этот пример, когда изображение SVG должен быть отрисован внутри PDF‑документа.
 
-1. Откройте исходный SVG, передав путь к файлу и [`SvgLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgloadoptions/) в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) конструктор.
-1. Позвольте Aspose.PDF разбирать разметку SVG и создавать соответствующую графическую модель PDF при загрузке.
-1. Сохраните вывод PDF в целевой путь файла.
+1. Откройте исходный SVG, передав путь к файлу и [`SvgLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Позвольте Aspose.PDF разобрать разметку SVG и создать соответствующую графическую модель PDF во время загрузки.
+1. Сохраните вывод PDF по целевому пути.
 
 ```java
 public static void convertSvgToPdf(Path inputFile, Path outputFile) {
@@ -217,14 +217,14 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация TIFF в PDF
+## Преобразование TIFF в PDF
 
 Используйте этот пример, когда TIFF‑изображение должно быть преобразовано в PDF.
 
 1. Создайте пустой [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) для вывода PDF.
-1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместите изображение TIFF с `page.addImage(...)`.
-1. Определите область размещения с помощью [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) поэтому содержимое TIFF отображается в координатах страницы.
-1. Сохраните результат как PDF.
+1. Добавьте [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) и разместите TIFF‑изображение с помощью `page.addImage(...)`.
+1. Определите область размещения с помощью [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/), при этом содержимое TIFF отображается в координатах страницы.
+1. Сохраните результат в формате PDF.
 
 ```java
 public static void convertTiffToPdf(Path inputFile, Path outputFile) {
@@ -238,13 +238,13 @@ public static void convertTiffToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация CDR в PDF
+## Преобразование CDR в PDF
 
-Используйте этот пример, когда файл CorelDRAW CDR должен быть преобразован в PDF.
+Используйте этот пример, когда нужно преобразовать файл CorelDRAW CDR в PDF.
 
-1. Откройте источник CDR, передав путь к файлу и [`CdrLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cdrloadoptions/) в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) конструктор.
+1. Откройте источник CDR, передав путь к файлу и [`CdrLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cdrloadoptions/) в конструктор [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Позвольте Aspose.PDF загрузить содержимое CorelDRAW в модель PDF‑документа.
-1. Сохраните преобразованный PDF-файл в указанный путь вывода.
+1. Сохраните преобразованный PDF‑файл по указанному пути.
 
 ```java
 public static void convertCdrToPdf(Path inputFile, Path outputFile) {
@@ -254,5 +254,3 @@ public static void convertCdrToPdf(Path inputFile, Path outputFile) {
     System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
-
-

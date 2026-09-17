@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/create-form/
 description: Создайте поля AcroForm с нуля в PDF‑документах с использованием Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Aspose.PDF for Java позволяет создавать широкий спе�
 
 Используйте этот пример, когда вам нужно добавить однострочное текстовое поле ввода в новую форму PDF.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) с целевым прямоугольником и настройте его внешний вид.
 1. Добавьте поле в форму и сохраните документ.
 
@@ -53,7 +53,7 @@ public static void addTextBoxField(Path outputFile) {
 
 Используйте этот пример, когда значение одного и того же текстового поля должно отображаться в нескольких местах на странице.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Определите несколько прямоугольников и внешних видов для виджетов полей.
 1. Создайте [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), настройте каждый виджет и сохраните документ.
 
@@ -103,7 +103,7 @@ public static void addTextBoxFieldNt(Path outputFile) {
 
 Используйте этот пример, когда форма должна позволять пользователю выбрать одну опцию из предопределённого набора.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) и добавьте необходимые опции.
 1. Добавьте поле в Form и сохраните PDF.
 
@@ -126,8 +126,8 @@ public static void addRadioButton(Path outputFile) {
 
 Используйте этот пример, когда пользователю нужно выбрать одно значение из выпадающего списка.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) и добавить его варианты выбора.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) и добавьте его варианты выбора.
 1. Установите выбор по умолчанию и сохраните документ.
 
 ```java
@@ -152,7 +152,7 @@ public static void addComboBox(Path outputFile) {
 
 Используйте этот пример, когда в форме требуется параметр «да/нет», например, согласие или выбор функции.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) и настройте его внешний вид.
 1. Добавьте флажок в форму и сохраните выходной файл.
 
@@ -175,8 +175,8 @@ public static void addCheckboxFieldToPdf(Path outputFile) {
 
 Используйте этот пример, когда форма должна отображать несколько доступных вариантов в видимом списке.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) и добавить доступные варианты.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) и добавьте доступные варианты.
 1. Добавьте поле в форму и сохраните документ.
 
 ```java
@@ -200,7 +200,7 @@ public static void addListBoxFieldToPdf(Path outputFile) {
 
 Используйте этот пример, когда документ должен зарезервировать видимую область для цифровой подписи.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
 1. Создайте [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) в требуемом прямоугольнике.
 1. Добавьте поле в форму и сохраните выходной PDF.
 
@@ -221,8 +221,8 @@ public static void addSignatureField(Path outputFile) {
 
 Используйте этот пример, когда форма должна отображать машиночитаемые данные в поле штрихкода.
 
-1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить страницу.
-1. Создайте [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) и добавить значение штрихкода.
+1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу.
+1. Создайте [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) и добавьте значение штрихкода.
 1. Добавьте поле в форму и сохраните документ.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 200
 url: /ru/java/pdf-file-metadata/
 description: Узнайте, как извлекать, обновлять и управлять метаданными PDF-файла, информацией о документе и свойствами XMP в Java с помощью Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,15 +15,15 @@ Abstract: В этой статье объясняется, как работат
 ---
 Aspose.PDF for Java предоставляет два основных способа работы с метаданными:
 
-- Через API DOM `Document`, `DocumentInfo`, и `document.getMetadata()`.
+- Через API DOM `Document`, `DocumentInfo` и `document.getMetadata()`.
 - Фасадный API через `PdfFileInfo`.
 
 ## Получение информации о PDF-файле
 
 Используйте этот пример, когда нужно прочитать стандартные поля информации о документе, такие как автор, заголовок, тема или ключевые слова.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) объект.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к объекту [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/).
 1. Прочитайте требуемые поля метаданных и выведите их значения.
 
 ```java
@@ -45,7 +45,7 @@ public static void getPdfFileInformation(Path inputFile) {
 
 Используйте этот пример, когда вам необходимо добавить или обновить свойство XMP, используя зарегистрированный префикс пространства имён.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Зарегистрируйте требуемое пространство имен XMP и добавьте элемент метаданных.
 1. Сохраните обновлённый документ.
 
@@ -64,8 +64,8 @@ public static void setPrefixMetadata(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда хотите записать стандартные свойства PDF‑файла, такие как автор, название, производитель или дата создания.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Доступ [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) и назначьте новые значения метаданных.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) и назначьте новые значения метаданных.
 1. Сохраните документ с обновлённой информацией о файле.
 
 ```java
@@ -89,11 +89,11 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 }
 ```
 
-## Установка свойств XMP метаданных
+## Установка свойств XMP-метаданных
 
 Используйте этот пример, когда необходимо сохранить дополнительные записи XMP, включая пользовательские значения метаданных.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте требуемые элементы метаданных XMP через `document.getMetadata()`.
 1. Сохраните выходной файл.
 

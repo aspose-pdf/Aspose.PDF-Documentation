@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ru/java/get-and-set-page-properties/
 description: Узнайте, как проверять свойства страниц PDF, такие как количество, рамки, вращение и информация о цвете, в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: Проверьте количество страниц, рамки и тип цвета в PDF‑файлах с помощью Java
 Abstract: В этой статье объясняется, как проверять свойства страниц с помощью Aspose.PDF for Java. Она охватывает чтение количества страниц, генерацию абзацев и проверку полученного количества перед сохранением, вывод всех основных значений боксов страниц и определение типа цвета каждой страницы.
 ---
-Aspose.PDF for Java может проверять количество страниц, боксы страниц, вращение и тип цвета страницы.
+Aspose.PDF for Java может проверять количество страниц, границы страниц, вращение и тип цвета страницы.
 
 ## Получение количества страниц
 
 Используйте этот пример, когда нужно узнать общее количество страниц в PDF.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Прочитайте размер коллекции страниц.
 1. Выведите общее количество страниц.
 
@@ -52,11 +52,11 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 }
 ```
 
-## Получение свойств коробки страницы
+## Получение свойств границ страницы
 
-Используйте этот пример, когда необходимо проверить все основные размеры коробок и значения поворота страницы.
+Используйте этот пример, когда необходимо проверить все основные размеры областей страницы и значения поворота страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получить доступ к целевой странице.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите доступ к целевой странице.
 1. Соберите значения рамок страницы в карту.
 1. Выведите размеры и информацию о повороте страницы.
 
@@ -92,8 +92,8 @@ public static void getPageProperties(Path inputFile) {
 
 Используйте этот пример, когда необходимо определить, являются ли страницы черно‑белыми, градациями серого или RGB.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Переберите все страницы и прочитайте каждую страницу [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите все страницы и прочитайте значение [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) каждой страницы.
 1. Преобразуйте значение перечисления в читаемый текст и выведите результат.
 
 ```java

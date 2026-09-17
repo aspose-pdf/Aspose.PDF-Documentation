@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/add-backgrounds/
 description: Узнайте, как добавить фоновое изображение или фоновый цвет на страницы PDF в Java, используя `BackgroundArtifact` с Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: В этой статье объясняется, как добавля
 
 Используйте этот пример, когда страница должна отображать изображение в качестве фонового артефакта.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и поток ввода изображения.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и поток ввода изображения.
 1. Создайте [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) и назначьте поток изображения.
 1. Добавьте артефакт на целевую страницу и сохраните результирующий PDF.
 
@@ -39,7 +39,7 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 
 Этот пример размещает полупрозрачное фоновое изображение за содержимым страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и поток изображения.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и поток изображения.
 1. Создайте [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/), назначьте изображение и задайте непрозрачность.
 1. Добавьте артефакт на страницу и сохраните документ.
 
@@ -61,7 +61,7 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 
 Используйте этот пример, когда страница должна использовать сплошной цвет фона вместо изображения.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) и задайте цвет фона.
 1. Добавьте артефакт на страницу и сохраните выходной файл.
 
@@ -80,9 +80,9 @@ public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
 
 Используйте этот подход, когда существующие артефакты фона должны быть удалены со страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Итерируйте коллекцию артефактов страницы в обратном порядке.
-1. Удалите артефакты, тип которых – пагинация, а подтип – фон, затем сохранить документ.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите коллекцию артефактов страницы в обратном порядке.
+1. Удалите артефакты, тип которых – пагинация, а подтип – фон, затем сохраните документ.
 
 ```java
 public static void removeBackground(Path inputFile, Path outputFile) {

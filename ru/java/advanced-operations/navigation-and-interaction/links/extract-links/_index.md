@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/extract-links/
 description: Узнайте, как извлекать аннотации ссылок и гиперссылки из PDF‑документов на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: В этой статье объясняется, как извлека
 
 Используйте этот пример, когда вам нужна информация о местоположении и странице для аннотаций ссылок на странице.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Итерируйте аннотации страницы и отфильтруйте аннотации ссылок.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите аннотации страницы и отфильтруйте аннотации ссылок.
 1. Прочитайте индекс страницы и прямоугольник для каждой подходящей ссылки.
 
 ```java
@@ -41,8 +41,8 @@ public static void extractLinkAnnotation(Path inputFile) {
 
 Используйте этот пример, когда нужно прочитать целевые URI из аннотаций веб-ссылок.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Найти [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) объекты, действие которых является [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Найдите объекты [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/), действие которых является [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Выведите индекс страницы и целевой URI для каждой гиперссылки.
 
 ```java

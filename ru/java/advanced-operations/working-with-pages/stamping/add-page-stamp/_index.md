@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/page-stamps-in-the-pdf-file/
 description: Узнайте, как добавлять штампы страниц PDF в виде наложений или фонов на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Aspose.PDF for Java может применять страницу из друг
 
 Используйте этот пример, когда страница из отдельного PDF должна использоваться в качестве фонового штампа.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) из внешней страницы PDF.
 1. Настройте штамп и добавьте его на целевую страницу, затем сохраните результат.
 
@@ -38,7 +38,7 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 
 Используйте этот пример, когда целевая страница должна отображать текущий номер с пользовательским форматированием текста.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте и настройте [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Добавьте штамп на страницу и сохраните документ.
 
@@ -66,7 +66,7 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда нумерация страниц должна начинаться с пользовательского значения и использовать заглавные римские цифры.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) и настройте нумерацию римскими цифрами.
 1. Добавьте штамп на все страницы и сохраните PDF.
 

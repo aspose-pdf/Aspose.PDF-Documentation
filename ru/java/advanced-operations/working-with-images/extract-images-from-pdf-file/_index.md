@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/extract-images-from-pdf-file/
 description: Узнайте, как извлекать встроенные изображения из PDF‑файлов на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 TechArticle: true
 AlternativeHeadline: Извлечение изображений из PDF‑файлов с помощью Java
 Abstract: В этой статье показано, как извлекать изображения из PDF‑документов с использованием Aspose.PDF for Java. В ней рассматривается сохранение конкретного ресурса изображения со страницы и экспорт изображений, находящихся внутри выбранного прямоугольного региона.
@@ -16,7 +16,7 @@ Aspose.PDF for Java поддерживает прямое извлечение �
 
 Используйте этот пример, когда необходимо сохранить конкретный ресурс изображения со страницы PDF.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите доступ к целевому [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) из ресурсов страницы.
 1. Сохраните поток изображения в выходной файл.
 
@@ -30,13 +30,13 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 }
 ```
 
-## Извлечение изображений из определённого региона страницы
+## Извлечение изображений из определённой области страницы
 
 Используйте этот пример, когда нужно экспортировать только изображения, размещённые внутри выбранного прямоугольника.
 
-1. Определите цель [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) и откройте исходный PDF.
+1. Определите нужную область [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) и откройте исходный PDF.
 1. Используйте [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) для проверки размещения изображений на странице.
-1. Сохраняйте только изображения, размещение которых попадает в выбранный регион.
+1. Сохраняйте только изображения, размещение которых попадает в выбранную область.
 
 ```java
 public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {

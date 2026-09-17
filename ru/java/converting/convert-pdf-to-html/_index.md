@@ -1,27 +1,27 @@
 ---
-title: Конвертация PDF в HTML на Java
-linktitle: Конвертация PDF в формат HTML
+title: Преобразование PDF в HTML на Java
+linktitle: Преобразование PDF в формат HTML
 type: docs
 weight: 50
 url: /ru/java/convert-pdf-to-html/
-lastmod: "2026-08-19"
-description: Узнайте, как преобразовать PDF в HTML на Java с помощью Aspose.PDF, включая вывод многостраничных файлов, внешние папки с изображениями, обработку SVG и многоуровневую отрисовку HTML.
+lastmod: "2026-09-16"
+description: Узнайте, как преобразовать PDF в HTML на Java с помощью Aspose.PDF, включая вывод многостраничных документов, внешние папки изображений, обработку SVG и многослойную генерацию HTML.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true
 AlternativeHeadline: Как преобразовать PDF в HTML на Java
-Abstract: В этой статье объясняется, как преобразовать файлы PDF в HTML с помощью Aspose.PDF for Java. Описывается базовый экспорт в HTML вместе с вариантами для папок изображений, разбивки страниц, вывода SVG, сжатой графики SVG, фоновых изображений PNG, разметки только тела, прозрачного рендеринга текста и преобразования слоев документа.
+Abstract: В этой статье объясняется, как преобразовать файлы PDF в HTML с помощью Aspose.PDF for Java. Описывается базовый экспорт HTML вместе с параметрами для папок изображений, разбиения страниц, вывода SVG, сжатой графики SVG, фоновых изображений PNG, разметки только тела, прозрачного рендеринга текста и преобразования слоёв документа.
 ---
-Aspose.PDF for Java поддерживает экспорт в HTML с вариантами для изображений, SVG, разбиения страниц, прозрачности и рендеринга слоёв. Используйте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) для контроля того, как страницы PDF, ресурсы и разметка записываются в HTML‑вывод.
+Aspose.PDF for Java поддерживает экспорт в HTML с параметрами для изображений, SVG, разбиения страниц, прозрачности и рендеринга слоёв. Используйте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) для контроля того, как страницы PDF, ресурсы и разметка записываются в HTML‑вывод.
 
-## Конвертация PDF в HTML
+## Преобразование PDF в HTML
 
 Используйте этот пример, когда PDF должен быть экспортирован в стандартный HTML‑документ.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте по умолчанию [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) для стандартной сериализации HTML.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое страницы PDF экспортируется как HTML‑разметка.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) с параметрами по умолчанию для стандартной сериализации HTML.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом содержимое страницы PDF экспортируется как HTML‑разметка.
 1. Сохраните сгенерированный HTML‑вывод.
 
 ```java
@@ -34,14 +34,14 @@ public static void convertPdfToHtml(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразование PDF в HTML и сохранение изображений отдельно
+## Преобразование PDF в HTML с отдельным сохранением изображений
 
-Используйте этот пример, когда извлечённые изображения должны быть записаны в отдельные файлы при экспорте в HTML.
+Используйте этот пример, когда извлечённые изображения должны записываться в отдельные файлы при экспорте в HTML.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить `setSpecialFolderForAllImages(...)` в отдельный каталог вывода изображений.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому растровые изображения выводятся как отдельные файлы ресурсов, а не только в виде встроенного вывода.
-1. Сохраните HTML‑output вместе с сгенерированными графическими ресурсами.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и задайте отдельный каталог для изображений с помощью `setSpecialFolderForAllImages(...)`.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом растровые изображения генерируются как отдельные файлы ресурсов вместо встраивания в HTML.
+1. Сохраните HTML-вывод вместе со сгенерированными изображениями.
 
 ```java
 public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile) {
@@ -56,11 +56,11 @@ public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile
 
 ## Преобразование PDF в многостраничный HTML
 
-Используйте этот пример, когда каждая страница PDF должна быть представлена отдельно в HTML‑выводе.
+Используйте этот пример, когда каждая страница PDF должна быть представлена отдельно в выводе HTML.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включить `setSplitIntoPages(true)`.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому каждая страница PDF записывается как отдельный HTML‑вывод.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включите `setSplitIntoPages(true)`.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом каждая страница PDF записывается как отдельный HTML‑вывод.
 1. Сохраните сгенерированные HTML‑файлы.
 
 ```java
@@ -74,14 +74,14 @@ public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## Преобразование PDF в HTML и сохранение SVG отдельно
+## Преобразование PDF в HTML с отдельным сохранением SVG
 
-Используйте этот пример, когда векторный контент должен быть выведен как отдельные ресурсы SVG.
+Используйте этот пример, когда векторный контент должен быть вынесен в отдельные SVG‑ресурсы.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить `setSpecialFolderForSvgImages(...)` во внешнюю директорию ресурсов SVG.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому векторная графика хранится вне основного HTML‑файла.
-1. Сохраните вывод HTML и ресурсы SVG.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и задайте внешний каталог для ресурсов SVG с помощью `setSpecialFolderForSvgImages(...)`.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом векторная графика хранится вне основного HTML‑файла.
+1. Сохраните HTML‑вывод и SVG‑ресурсы.
 
 ```java
 public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
@@ -94,14 +94,14 @@ public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация PDF в HTML с сжатым SVG
+## Преобразование PDF в HTML со сжатием SVG
 
 Используйте этот пример, когда вывод SVG должен быть оптимизирован при экспорте в HTML.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и настройте отдельную папку для ресурсов SVG.
-1. Включите `setCompressSvgGraphicsIfAny(true)` поэтому SVG‑ресурсы сжимаются при экспорте.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить преобразованные HTML‑файлы.
+1. Включите `setCompressSvgGraphicsIfAny(true)`, при этом ресурсы SVG сжимаются при экспорте.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохраните преобразованные HTML‑файлы.
 
 ```java
 public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) {
@@ -115,14 +115,14 @@ public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) 
 }
 ```
 
-## Конвертация PDF в HTML с PNG‑фоновыми изображениями страниц
+## Преобразование PDF в HTML с фоном страниц в формате PNG
 
-Используйте этот пример, когда фон страниц должен отображаться в виде PNG‑изображений в выводе HTML.
+Используйте этот пример, когда фон страниц должен отображаться в виде PNG‑изображений в HTML‑выводе.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить режим сохранения растрового изображения в PNG фон страниц.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержание фона страницы выводится в виде HTML‑слоёв на основе PNG.
-1. Сохраните преобразованный HTML‑вывод.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установите режим сохранения растровых изображений в PNG для фонов страниц.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом фон страницы выводится в виде HTML‑слоёв на основе PNG.
+1. Сохраните преобразованный HTML-вывод.
 
 ```java
 public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile) {
@@ -136,14 +136,14 @@ public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile
 }
 ```
 
-## Преобразование PDF в HTML, только содержимое тела
+## Преобразование PDF только в содержимое body HTML
 
-Используйте этот пример, когда нужна только разметка тела, а не полная оболочка HTML‑документа.
+Используйте этот пример, когда нужна только разметка тела вместо полной оболочки HTML‑документа.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установить режим генерации разметки на `WriteOnlyBodyContent`.
-1. Сохраняйте `setSplitIntoPages(true)` включено, когда вывод только тела должен оставаться разделённым по страницам.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить вывод HTML.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и установите режим генерации разметки `WriteOnlyBodyContent`.
+1. Оставьте `setSplitIntoPages(true)` включённым, если содержимое body должно быть разделено на страницы.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохраните HTML‑вывод.
 
 ```java
 public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
@@ -158,14 +158,14 @@ public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) 
 }
 ```
 
-## Конвертация PDF в HTML с прозрачным отображением текста
+## Преобразование PDF в HTML с сохранением прозрачности текста
 
-Используйте этот пример, когда прозрачный текст должен быть сохранён при экспорте в HTML.
+Используйте этот пример, когда прозрачный текст должен сохраняться при экспорте в HTML.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включить сохранение прозрачного и затенённого текста.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому внешний вид текста, связанный с прозрачностью, сохраняется в HTML‑результате.
-1. Сохраните преобразованный HTML‑вывод.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включите сохранение прозрачного и затенённого текста.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом отображение текста, связанное с прозрачностью, сохраняется в HTML‑результате.
+1. Сохраните преобразованный HTML-вывод.
 
 ```java
 public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path outputFile) {
@@ -179,13 +179,13 @@ public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path
 }
 ```
 
-## Преобразование PDF в HTML с рендерингом уровня документа
+## Преобразование PDF в HTML с отображением слоёв документа
 
-Используйте этот пример, когда видимость слоев PDF должна отображаться в HTML‑результате.
+Используйте этот пример, когда видимость слоёв PDF должна отображаться в результате HTML.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включить `setConvertMarkedContentToLayers(true)`.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` Итак, отмеченное PDF‑содержимое отображается в виде HTML‑слоев.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) и включите `setConvertMarkedContentToLayers(true)`.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом отмеченный контент PDF отображается в слоях HTML.
 1. Сохраните экспортированные HTML‑файлы.
 
 ```java
@@ -198,5 +198,3 @@ public static void convertPdfToHtmlDocumentLayersRendering(Path inputFile, Path 
     System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
-
-

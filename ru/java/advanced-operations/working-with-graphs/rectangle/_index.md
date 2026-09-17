@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ru/java/add-rectangle/
 description: Узнайте, как рисовать и заполнять прямоугольные формы в PDF‑файлах на Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Abstract: В этой статье показано, как добавить п�
 
 1. Создайте новый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Создайте [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер и добавить его на страницу.
-1. Создайте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) фигуру и настроить её геометрию.
-1. Добавьте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) к [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) контейнер.
+1. Создайте контейнер [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) и добавьте его на страницу.
+1. Создайте фигуру [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) и настройте её геометрию.
+1. Добавьте [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) в контейнер [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Сохраните выходной PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -43,18 +43,18 @@ public static void addRectangle(Path outputFile) {
 Примеры прямоугольников включают:
 
 - `createRectangleFilled` для сплошной заливки с `Color.getRed()`
-- `addDrawingWithGradientFill` для `GradientAxialShading` заполнить
+- `addDrawingWithGradientFill` для заливки с помощью `GradientAxialShading`
 
 ## Использование альфа-прозрачности
 
-`createRectangleWithAlphaColorChannel` применяет полупрозрачные цвета с `Color.fromArgb(...)` чтобы перекрывающиеся прямоугольники оставались видимыми.
+`createRectangleWithAlphaColorChannel` применяет полупрозрачные цвета с `Color.fromArgb(...)`, чтобы перекрывающиеся прямоугольники оставались видимыми.
 
-## Контроль z-order прямоугольников
+## Управление порядком наложения прямоугольников
 
 1. Создайте новый PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Добавьте [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
-1. Установите требуемое [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) размер.
-1. Добавьте сконфигурированные [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) фигуры на целевую страницу с требуемым z-order.
+1. Установите требуемый размер страницы [Страница](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Добавьте настроенные фигуры [Прямоугольник](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) на целевую страницу в требуемом порядке наложения.
 1. Сохраните выходной PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

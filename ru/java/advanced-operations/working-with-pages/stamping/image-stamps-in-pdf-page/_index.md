@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/image-stamps-in-pdf-page/
 description: Узнайте, как добавить штампы изображений на страницы PDF с помощью Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Aspose.PDF for Java поддерживает штампы‑изображени
 
 Используйте этот пример, когда странице нужно отобразить штамп‑изображение с пользовательским расположением и непрозрачностью.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) и настройте его внешний вид.
 1. Добавьте штамп на страницу и сохраните документ.
 
@@ -45,8 +45,8 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 
 Используйте этот пример, когда вам нужно отрегулировать качество отображения штампа изображения.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) и установить значение качества.
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) и установите значение качества.
 1. Добавьте штамп на страницу и сохраните результат.
 
 ```java
@@ -64,9 +64,9 @@ public static void addImageStampWithQualityControl(Path inputFile, Path imageFil
 
 Используйте этот пример, когда изображение должно служить фоном стилизованного контейнера макета.
 
-1. Откройте исходный PDF [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите доступ к целевой странице.
+1. Откройте исходный PDF в объекте [Документ](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и получите доступ к целевой странице.
 1. Создайте [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) с настройками текста и границ.
-1. Установите фоновое изображение, добавьте коробку на страницу и сохраните документ.
+1. Установите фоновое изображение, добавьте блок на страницу и сохраните документ.
 
 ```java
 public static void addImageAsBackgroundInFloatingBox(Path inputFile, Path imageFile, Path outputFile) {

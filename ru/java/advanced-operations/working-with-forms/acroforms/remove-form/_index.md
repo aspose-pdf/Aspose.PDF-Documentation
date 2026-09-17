@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ru/java/remove-form/
 description: Удалить объекты форм со страниц PDF, используя Aspose.PDF for Java, включая полную очистку и целенаправленное удаление.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: В этой статье объясняется, как удалить
 
 Используйте этот пример, когда каждый ресурс формы на выбранной странице должен быть удалён в одной операции.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Доступ к [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) для целевой страницы.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) для целевой страницы.
 1. Очистите коллекцию и сохраните обновлённый документ.
 
 ```java
@@ -37,9 +37,9 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 
 Используйте этот пример, когда должны быть удалены только выбранные ресурсы Form, такие как формы Typewriter.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Доступ к [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) для целевой страницы.
-1. Фильтруйте [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) ресурсы, которые вы хотите удалить, и удалить их из коллекции.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) для целевой страницы.
+1. Фильтруйте [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) ресурсы, которые вы хотите удалить, и удалите их из коллекции.
 1. Сохраните обновлённый PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

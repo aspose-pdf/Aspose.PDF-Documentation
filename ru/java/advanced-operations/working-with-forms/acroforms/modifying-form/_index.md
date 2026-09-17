@@ -5,7 +5,7 @@ type: docs
 weight: 45
 url: /ru/java/modifying-form/
 description: Изменяйте поля AcroForm в PDF-документах с помощью Aspose.PDF for Java, включая очистку текста, установку ограничений, стилизацию полей и удаление полей.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: В этой статье объясняется, как изменит
 
 Используйте этот пример, когда содержимое формы Typewriter должно быть опустошено без удаления самих объектов формы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Итеративно проходите ресурсы форм страниц и находите формы Typewriter.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите ресурсы форм страниц и найдите формы Typewriter.
 1. Очистите поглощённые фрагменты текста и сохраните документ.
 
 ```java
@@ -45,7 +45,7 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда текстовое поле должно принимать только ограниченное количество символов.
 
-1. Создайте [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) оболочка и привязка исходного PDF.
+1. Создайте фасад [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) и привяжите к нему исходный PDF.
 1. Установите максимальную длину для целевого поля.
 1. Сохраните обновлённый документ.
 
@@ -66,9 +66,9 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда нужно проверить текущую максимальную длину текстового поля.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Получите целевое поле из коллекции формы.
-1. Прочитайте ограничение из [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) и вывести его.
+1. Прочитайте ограничение из [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) и выведите его.
 
 ```java
 public static void getFieldLimit(Path inputFile) {
@@ -85,8 +85,8 @@ public static void getFieldLimit(Path inputFile) {
 
 Используйте этот пример, когда существующее текстовое поле должно использовать другой шрифт или внешний вид.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите доступ к цели [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) и установить новое значение по умолчанию внешнего вида.
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Получите доступ к нужному полю [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) и задайте новый внешний вид по умолчанию.
 1. Сохраните обновлённый PDF.
 
 ```java
@@ -107,7 +107,7 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 
 Используйте этот пример, когда конкретное поле должно быть удалено из AcroForm.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите целевое поле из формы по его имени.
 1. Сохраните обновлённый документ.
 

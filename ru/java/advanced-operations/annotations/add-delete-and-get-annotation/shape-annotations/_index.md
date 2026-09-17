@@ -4,23 +4,23 @@ linktitle: Аннотации фигур
 type: docs
 weight: 20
 url: /ru/java/shape-annotations/
-description: Узнайте, как добавлять, проверять и удалять аннотации квадратов, кругов, полигонов и полилиний в PDF‑документах с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+description: Узнайте, как добавлять, просматривать и удалять квадратные, круглые, полигональные и полилинейные аннотации в PDF‑документах с помощью Aspose.PDF for Java.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: Работайте с геометрическими PDF‑аннотациями в Java.
-Abstract: В этой статье объясняется, как создавать, проверять и удалять геометрические аннотации в PDF‑документах с использованием Aspose.PDF for Java. Описываются аннотации квадратной, круглой, многоугольной и полилинейной формы с настройками цвета, непрозрачности, всплывающего окна и точек.
+Abstract: В этой статье объясняется, как создавать, просматривать и удалять геометрические аннотации в PDF‑документах с использованием Aspose.PDF for Java. Описываются аннотации квадратов, кругов, полигонов и полилиний с настройками цвета, непрозрачности, всплывающих окон и точек.
 ---
-Аннотации формы в этом разделе охватывают геометрические типы аннотаций, такие как квадраты, окружности, многоугольники, полилинии и линии.
+В этом разделе аннотации фигур охватывают типы геометрических аннотаций, такие как квадраты, круги, полигоны, полилинии и линии.
 
-## Добавление аннотаций квадрат, круг, полигон и полилиния
+## Добавление аннотаций квадратов, кругов, многоугольников и ломаных линий
 
-Используйте эти примеры, когда вам нужно разместить геометрические аннотации с пользовательскими цветами, прозрачностью, данными всплывающих окон или массивами точек.
+Используйте эти примеры, когда вам нужно размещать геометрические аннотации с пользовательскими цветами, прозрачностью, данными всплывающих окон или массивами точек.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте требуемую аннотацию формы и настройте её прямоугольник, точки и визуальные свойства.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте необходимую аннотацию фигуры и настройте её прямоугольник, точки и визуальные свойства.
 1. Добавьте аннотацию на страницу и сохраните обновлённый документ.
 
 ```java
@@ -109,13 +109,13 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Получение аннотаций квадрат, круг, полигон и полилиния
+## Получение аннотаций квадратов, кругов, многоугольников и ломаных линий
 
-Эти примеры проверяют коллекцию аннотаций страницы и выводят прямоугольники геометрических аннотаций по типу.
+Эти примеры просматривают коллекцию аннотаций страницы и печатают прямоугольники геометрических аннотаций по типу.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Переберите аннотации страницы.
-1. Фильтруйте по требуемому [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) значение и вывести прямоугольник.
+1. Отфильтруйте аннотации по требуемому значению [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) и выведите прямоугольник.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -165,13 +165,13 @@ public static void polylineAnnotationGet(Path inputFile) {
 }
 ```
 
-## Удаление аннотаций квадрат, круг, многоугольник и полилиния
+## Удаление аннотаций квадратов, кругов, многоугольников и ломаных линий
 
-Используйте эти примеры, когда необходимо удалить аннотации фигур определённого типа со страницы.
+Используйте эти примеры, когда необходимо удалить из страницы аннотации фигур определённого типа.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации требуемого геометрического типа.
-1. Удалите собранные аннотации и сохранить выходной файл.
+1. Удалите собранные аннотации и сохраните выходной файл.
 
 ```java
 public static void squareAnnotationDelete(Path inputFile, Path outputFile) {
@@ -241,11 +241,11 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Добавление линейной аннотации
+## Добавление аннотации линии
 
-Этот пример создает аннотацию линии со стрелочными окончаниями, форматированием границы и всплывающей заметкой.
+Этот пример создаёт аннотацию линии со стрелочными концами, оформлением границы и всплывающей заметкой.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Создайте [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) с начальной и конечной точками.
 1. Настройте внешний вид, добавьте всплывающее окно и сохраните документ.
 
@@ -277,13 +277,13 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Получение линейных аннотаций
+## Получение аннотаций линий
 
 Этот пример считывает линейные аннотации и выводит их начальные и конечные координаты.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Переберите аннотации страницы и выбрать [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
-1. Привести каждое совпадение к [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) и вывести её координаты.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Пройдитесь по аннотациям страницы и выберите [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Приведите каждую найденную аннотацию к типу [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) и выведите её координаты.
 
 ```java
 public static void lineAnnotationsGet(Path inputFile) {
@@ -302,9 +302,9 @@ public static void lineAnnotationsGet(Path inputFile) {
 
 ## Удаление аннотаций линий
 
-Используйте этот подход, когда необходимо удалить линейные аннотации со страницы.
+Используйте этот подход, когда нужно удалить линейные аннотации со страницы.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. Удалите собранные аннотации и сохраните документ.
 
@@ -326,13 +326,11 @@ public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Связанные темы аннотаций
+## Связанные темы об аннотациях
 
 - [Интерактивные аннотации](/pdf/ru/java/interactive-annotations/)
 - [Аннотации разметки](/pdf/ru/java/markup-annotations/)
 - [Аннотации безопасности](/pdf/ru/java/security-annotations/)
 - [Текстовые аннотации](/pdf/ru/java/text-based-annotations/)
-- [Аннотации водяного знака](/pdf/ru/java/watermark-annotations/)
+- [Аннотации водяных знаков](/pdf/ru/java/watermark-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
-
-

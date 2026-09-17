@@ -1,27 +1,27 @@
 ---
-title: Аннотации безопасности с использованием Java
+title: Аннотации безопасности на Java
 linktitle: Аннотации безопасности
 type: docs
 weight: 75
 url: /ru/java/security-annotations/
-description: Узнайте, как пометить текст для редактирования, применить аннотации редактирования и удалить выбранные области страниц в PDF‑файлах, используя Aspose.PDF for Java.
-lastmod: "2026-08-19"
+description: Узнайте, как пометить текст для удаления, применить аннотации удаления и удалить содержимое выбранных областей страниц PDF с помощью Aspose.PDF for Java.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Замаскируйте конфиденциальное содержимое PDF в Java с помощью аннотаций безопасности.
-Abstract: В этой статье объясняется, как работать с redaction annotations в PDF‑документах с использованием Aspose.PDF for Java. Описывается пометка найденного текста с помощью redaction annotations, постоянное применение редактирований и редактирование выбранных областей на основе обнаруженных прямоугольников размещения изображений.
+AlternativeHeadline: Удаление конфиденциального содержимого PDF в Java с помощью аннотаций безопасности
+Abstract: В этой статье объясняется, как работать с аннотациями удаления в PDF-документах с помощью Aspose.PDF for Java. Рассматриваются пометка найденного текста аннотациями удаления, их применение для безвозвратного удаления содержимого и удаление содержимого выбранных областей на основе обнаруженных прямоугольников размещения изображений.
 ---
-Рабочие процессы аннотаций безопасности в этом разделе сосредоточены на подготовке и применении редактирований к конфиденциальному контенту PDF.
+В этом разделе рассматриваются подготовка и применение аннотаций для удаления конфиденциального содержимого PDF.
 
-## Отметка текста redaction annotations
+## Пометка текста аннотациями удаления
 
-Используйте этот пример, когда найденный текст должен быть покрыт redaction annotations до того, как редактирование будет применено навсегда.
+Используйте этот пример, чтобы пометить найденный текст аннотациями удаления перед его безвозвратным удалением.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Найдите целевой текст и создайте [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) для каждого совпадения.
-1. Настройте внешний вид редактирования и сохраните документ.
+1. Настройте внешний вид аннотаций удаления и сохраните документ.
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
@@ -47,13 +47,13 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 }
 ```
 
-## Применение существующих редактирований
+## Применение существующих аннотаций удаления
 
-Этот пример навсегда применяет аннотации редактирования, которые уже существуют на странице.
+В этом примере существующие на странице аннотации удаления применяются для безвозвратного удаления содержимого.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
-1. Вызовите `redact()` для каждой собранной аннотации сохранить обновлённый файл.
+1. Вызовите `redact()` для каждой собранной аннотации и сохраните обновлённый файл.
 
 ```java
 public static void applyRedaction(Path inputFile, Path outputFile) {
@@ -72,13 +72,13 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 }
 ```
 
-## Редактирование выбранной области страницы
+## Пометка выбранной области страницы для удаления
 
 Используйте этот подход, когда целевой контент определяется по позиции, а не по совпадению текста.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Определите целевой прямоугольник на странице, например из размещения изображения.
-1. Создайте [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) для этой области и сохранить документ.
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Определите целевой прямоугольник на странице, например по расположению изображения.
+1. Создайте [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) для этой области и сохраните документ.
 
 ```java
 public static void redactArea(Path inputFile, Path outputFile) {
@@ -102,13 +102,11 @@ public static void redactArea(Path inputFile, Path outputFile) {
 }
 ```
 
-## Связанные темы аннотаций
+## Связанные темы об аннотациях
 
 - [Интерактивные аннотации](/pdf/ru/java/interactive-annotations/)
 - [Аннотации разметки](/pdf/ru/java/markup-annotations/)
-- [Фигурные аннотации](/pdf/ru/java/shape-annotations/)
+- [Аннотации фигур](/pdf/ru/java/shape-annotations/)
 - [Текстовые аннотации](/pdf/ru/java/text-based-annotations/)
 - [Аннотации водяных знаков](/pdf/ru/java/watermark-annotations/)
 - [Импорт и экспорт аннотаций](/pdf/ru/java/import-export-annotations/)
-
-

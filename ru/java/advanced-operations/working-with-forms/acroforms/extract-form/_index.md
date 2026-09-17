@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/extract-form/
 description: Извлечение значений из полей AcroForm в PDF‑документах с использованием Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,12 +13,12 @@ TechArticle: true
 AlternativeHeadline: Извлечение значений полей формы из PDF‑файлов с помощью Java
 Abstract: В этой статье показано, как извлекать данные из полей AcroForm с помощью Aspose.PDF for Java. Пример проходит по именам полей с использованием фасада `Form`, читает каждое текущее значение и сохраняет результат в карте для последующей обработки.
 ---
-Используйте `Form` фасад, когда вам нужен простой поток извлечения имени поля и его значения.
+Используйте фасад `Form`, когда вам нужен простой поток извлечения имени поля и его значения.
 
 ## Извлечение значений из всех полей AcroForm
 
-1. Откройте документ PDF-формы с помощью [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад.
-1. Переберите имена полей из [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) фасад и прочитайте каждое текущее значение поля в карту.
+1. Откройте документ PDF-формы с помощью фасада [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. Переберите имена полей из фасада [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) и прочитайте каждое текущее значение поля в карту.
 
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {

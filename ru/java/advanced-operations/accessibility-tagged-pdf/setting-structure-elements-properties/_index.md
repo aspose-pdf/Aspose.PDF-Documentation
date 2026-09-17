@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/setting-structure-elements-properties/
 description: Узнайте, как установить свойства элементов структуры Tagged PDF в Java с Aspose.PDF, включая заголовок, язык, фактический текст, альтернативный текст, расширяющийся текст, ссылки, примечания и имена тегов.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ sitemap:
 
 Используйте этот пример, когда элемент теговой структуры должен раскрывать метаданные доступности, такие как заголовок, язык, основной текст и альтернативный текст.
 
-1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и инициализировать метаданные помеченного содержимого.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и инициализируйте метаданные помеченного содержимого.
 1. Создайте раздел и элемент заголовка в дереве структуры.
 1. Установите свойства заголовка и сохраните документ.
 
@@ -51,7 +51,7 @@ public static void setProperties(Path outputFile) {
 Используйте этот пример, когда вам нужно добавить простой элемент абзаца в дерево теговой структуры.
 
 1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Создайте [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) и установить его текст.
+1. Создайте [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) и установите его текст.
 1. Добавьте абзац к корневому элементу и сохраните документ.
 
 ```java
@@ -148,7 +148,7 @@ public static void setInlineElements(Path outputFile) {
 
 В этом примере пользовательские имена тегов присваиваются элементам paragraph и span в помеченной структуре.
 
-1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить элемент раздела.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте элемент раздела.
 1. Создайте абзацы и спаны, затем установите пользовательские имена тегов для каждого элемента.
 1. Добавьте элементы в раздел и сохраните документ.
 
@@ -187,8 +187,8 @@ public static void setTagName(Path outputFile) {
 
 Используйте этот пример, когда помеченные элементы ссылки должны включать альтернативные описания, гиперссылки и содержимое фигур с атрибутами макета.
 
-1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить элементы ссылок внутри абзацев.
-1. Настройте цели гиперссылок, альтернативные описания и связанным элементом рисунка.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте элементы ссылок внутри абзацев.
+1. Настройте цели гиперссылок, альтернативные описания и связанный элемент рисунка.
 1. Установите требуемый атрибут компоновки и сохраните документ.
 
 ```java
@@ -271,7 +271,7 @@ public static void addLinkElement(Path outputFile) {
 
 Используйте этот пример, когда элементы структуры заметок должны создаваться с автоматическими или явными идентификаторами.
 
-1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить элемент абзаца.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте элемент абзаца.
 1. Создайте элементы заметок и установите их текст и идентификаторы по мере необходимости.
 1. Добавьте примечания к абзацу и сохраните документ.
 
@@ -308,7 +308,7 @@ public static void setNoteElement(Path outputFile) {
 
 В этом примере задаются метаданные уровня документа, а затем создаются абзацы с разными значениями языка.
 
-1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и установить название документа и язык.
+1. Создайте новый Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и установите название документа и язык.
 1. Добавьте элемент заголовка и создайте абзацы для каждой локализованной фразы.
 1. Сохраните многоязычный тегированный документ.
 
@@ -333,7 +333,7 @@ public static void setLanguageAndTitle(Path outputFile) {
 }
 ```
 
-## Добавление помощника абзаца для помеченного контента
+## Добавление вспомогательного метода создания абзаца для помеченного контента
 
 Этот вспомогательный метод создает абзац, задает его язык и добавляет его к корневой структуре.
 

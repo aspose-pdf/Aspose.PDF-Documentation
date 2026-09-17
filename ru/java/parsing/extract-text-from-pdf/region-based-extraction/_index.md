@@ -1,23 +1,23 @@
 ---
-title: Региональное извлечение с Java
-linktitle: Региональное извлечение
+title: Извлечение текста по областям с помощью Java
+linktitle: Извлечение текста по областям
 type: docs
 weight: 20
 url: /ru/java/region-based-extraction/
-description: Узнайте, как извлекать текст из определённого региона страницы или проверять геометрию абзацев в PDF‑документах с помощью Aspose.PDF for Java.
-lastmod: "2026-08-19"
+description: Узнайте, как извлекать текст из определённой области страницы или проверять геометрию абзацев в PDF‑документах с помощью Aspose.PDF for Java.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-## Извлечение текста из прямоугольного региона страницы
+## Извлечение текста из прямоугольной области страницы
 
-использовать `TextSearchOptions` с `Rectangle` ограничить извлечение определённой областью на странице.
+Используйте `TextSearchOptions` с `Rectangle`, чтобы ограничить извлечение определённой областью на странице.
 
-1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) для сбора текста с выбранной области страницы.
-1. Создайте [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) для цели [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) и включить `setLimitToPageBounds(true)` чтобы извлечение оставалось внутри видимой области страницы.
-1. Примените настроенные параметры поиска к поглотителю и перейдите к целевому объекту. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Откройте исходный PDF в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) для сбора текста из выбранной области страницы.
+1. Создайте [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) для нужной области [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) и вызовите `setLimitToPageBounds(true)`, чтобы ограничить извлечение видимой областью страницы.
+1. Примените настроенные параметры поиска к поглотителю и обработайте нужную страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Запишите извлечённый буфер текста в выходной файл.
 
 ```java
@@ -36,12 +36,12 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 
 ## Извлечение абзацев с геометрической информацией
 
-использовать `ParagraphAbsorber` для проверки прямоугольников секций и многоугольников абзацев вместе с извлечённым текстом.
+Используйте `ParagraphAbsorber` для проверки прямоугольников секций и многоугольников абзацев вместе с извлечённым текстом.
 
-1. Откройте исходный PDF в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) и перейдите к цели [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) для создания информации о разметке страницы.
+1. Откройте исходный PDF в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) и обработайте нужную страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) для получения информации о её разметке.
 1. Прочитайте первый результат разметки страницы и пройдитесь по его секциям и абзацам.
-1. Соберите каждый прямоугольник секции, полигон абзаца и реконструированный из него текст абзаца [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) строки.
+1. Соберите прямоугольники секций, многоугольники абзацев и текст абзацев, восстановленный из строк с объектами [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. Создайте отчет вывода с геометрией и деталями извлечённого текста.
 1. Запишите извлечённые детали в выходной файл.
 

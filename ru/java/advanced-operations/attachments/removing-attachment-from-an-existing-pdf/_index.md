@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/removing-attachment-from-an-existing-pdf/
 description: Узнайте, как удалить одно или все встроенные вложения из PDF‑документов на Java с использованием Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: Программно удалять вложения PDF с помощью Java
 Abstract: В этой статье показано, как удалить вложения из PDF‑файлов с помощью Aspose.PDF for Java. Примеры демонстрируют удаление одного встроенного файла по ключу и очистку всей коллекции EmbeddedFiles перед сохранением обновлённого документа.
 ---
-Вложения, хранящиеся в документе PDF, можно удалить как по отдельности, так и сразу все через `EmbeddedFiles` коллекция.
+Вложения, хранящиеся в документе PDF, можно удалить как по отдельности, так и сразу все через коллекцию `EmbeddedFiles`.
 
 ## Удаление одного вложения
 
 Используйте этот пример, когда один именованный встроенный файл должен быть удалён из PDF.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите вложение по его ключу из коллекции встроенных файлов.
 1. Сохраните обновлённый результирующий документ.
 
@@ -36,7 +36,7 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 Используйте этот подход, когда необходимо очистить всю коллекцию вложенных файлов.
 
-1. Откройте исходный PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Удалите все элементы из коллекции вложенных файлов.
 1. Сохраните очищенный выходной документ.
 

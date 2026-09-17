@@ -1,27 +1,27 @@
 ---
-title: Конвертация PDF в Word на Java
-linktitle: Конвертация PDF в Word
+title: Преобразование PDF в Word на Java
+linktitle: Преобразование PDF в Word
 type: docs
 weight: 10
 url: /ru/java/convert-pdf-to-word/
-lastmod: "2026-08-19"
-description: Узнайте, как конвертировать PDF‑файлы в DOC и DOCX на Java с помощью Aspose.PDF для более простого редактирования и повторного использования документов.
+lastmod: "2026-09-16"
+description: Узнайте, как конвертировать файлы PDF в DOC и DOCX в Java с помощью Aspose.PDF для более лёгкого редактирования и повторного использования документов.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Как конвертировать PDF в Word на Java
-Abstract: В этой статье объясняется, как конвертировать PDF-файлы в форматы Microsoft Word с использованием Aspose.PDF for Java. Описываются вывод в DOC, вывод в DOCX, улучшенное преобразование DOCX с сохранением потоков, сохранение разрывов строк, распознавание маркеров и контроль разрешения изображений с помощью `DocSaveOptions`.
+AlternativeHeadline: Как конвертировать PDF в Word в Java
+Abstract: В этой статье объясняется, как преобразовать PDF‑файлы в форматы Microsoft Word с использованием Aspose.PDF for Java. Рассматриваются вывод в DOC, вывод в DOCX, преобразование в DOCX с улучшенным распознаванием потока текста, сохранение разрывов строк, распознавание маркеров и управление разрешением изображений с помощью `DocSaveOptions`.
 ---
-Aspose.PDF for Java может экспортировать PDF‑документы в форматы Microsoft Word с различными вариантами распознавания и макета. Используйте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) чтобы контролировать, как текст PDF, списки и изображения преобразуются в вывод Word.
+Aspose.PDF for Java может экспортировать PDF‑документы в форматы Microsoft Word с различными параметрами распознавания и макета. Используйте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для контроля того, как текст PDF, списки и изображения преобразуются в вывод Word.
 
-## Конвертация PDF в DOC
+## Преобразование PDF в DOC
 
-Используйте этот пример, когда PDF‑документ должен быть экспортирован в устаревший формат DOC. Код создает `DocSaveOptions`, устанавливает формат в `Doc`, и передает параметры общему методу сохранения.
+Используйте этот пример, когда PDF‑документ должен быть экспортирован в устаревший формат DOC. Код создает `DocSaveOptions`, устанавливает формат `Doc`, и передаёт параметры в общий метод сохранения.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) и установить формат `Doc`.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому PDF экспортируется в двоичный формат документа Microsoft Word.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) и установите формат `Doc`.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом PDF экспортируется в двоичный формат документа Microsoft Word.
 1. Сохраните преобразованный файл DOC.
 
 ```java
@@ -37,11 +37,11 @@ public static void convertPdfToDoc(Path inputFile, Path outputFile) {
 
 ## Преобразование PDF в DOCX
 
-Используйте этот пример, когда PDF‑документ должен быть экспортирован в файл DOCX. DOCX является предпочтительным форматом для большинства новых рабочих процессов обработки текста, потому что он широко поддерживается и проще в редактировании.
+Используйте этот пример, когда PDF‑документ необходимо экспортировать в файл DOCX. DOCX является предпочтительным форматом для большинства новых рабочих процессов обработки текстов, так как он широко поддерживается и его легче редактировать.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) и установить формат `DocX`.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` поэтому содержимое PDF экспортируется как документ Word в формате Office Open XML.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) и установите формат `DocX`.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)`, при этом содержимое PDF экспортируется как документ Word формата Office Open XML.
 1. Сохраните полученный файл DOCX.
 
 ```java
@@ -55,14 +55,14 @@ public static void convertPdfToDocx(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация PDF в DOCX с улучшенным распознаванием потока
+## Преобразование PDF в DOCX с улучшенным распознаванием потока текста
 
-Используйте этот пример, когда экспорт в Word должен отдавать предпочтение редактируемому текучему содержимому вместо фиксированного визуального макета.
+Используйте этот пример, когда экспорт в Word должен отдавать предпочтение редактируемому содержимому с изменяемой компоновкой вместо фиксированного визуального макета.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для `DocX` вывод.
-1. Включите `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` поэтому конвертер использует улучшенное распознавание потока при генерации DOCX.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить преобразованный вывод DOCX.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для вывода в `DocX`.
+1. Включите `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)`, при этом конвертер использует улучшенное распознавание потока при генерации DOCX.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохраните преобразованный файл DOCX.
 
 ```java
 public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
@@ -76,13 +76,13 @@ public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
 }
 ```
 
-## Конвертация PDF в DOCX с сохранёнными переносами строк
+## Преобразование PDF в DOCX с сохранением разрывов строк
 
-Используйте этот пример, когда окончания строк из исходного PDF должны сохраняться в выводе Word.
+Используйте этот пример, когда в выводе Word необходимо сохранить разрывы строк из исходного PDF.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для `DocX` экспорт.
-1. Включите `setAddReturnToLineEnd(true)` поэтому явные разрывы строк сохраняются при конвертации.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для экспорта в `DocX`.
+1. Включите `setAddReturnToLineEnd(true)`, при этом явно указанные разрывы строк сохраняются при конвертации.
 1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохраните файл DOCX.
 
 ```java
@@ -97,13 +97,13 @@ public static void convertPdfToDocxWithLineBreaks(Path inputFile, Path outputFil
 }
 ```
 
-## Конвертация PDF в DOCX с распознаванием маркеров
+## Преобразование PDF в DOCX с распознаванием маркеров списков
 
-Используйте этот пример, когда маркеры списков из исходного PDF должны быть распознаны и сохранены как структуры списков в Word.
+Используйте этот пример, когда маркеры списка из исходного PDF должны быть распознаны и сохранены в виде структур списков в Word.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для `DocX` экспорт.
-1. Включите `setRecognizeBullets(true)` поэтому содержимое PDF, похожее на списки, распознаётся как маркированные списки при конвертации.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для экспорта в `DocX`.
+1. Включите `setRecognizeBullets(true)`, при этом содержимое PDF, похожее на список, распознаётся как маркированные списки при конвертации.
 1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохраните файл DOCX.
 
 ```java
@@ -118,14 +118,14 @@ public static void convertPdfToDocxWithBulletRecognition(Path inputFile, Path ou
 }
 ```
 
-## Конвертация PDF в DOCX с пользовательским разрешением изображения
+## Преобразование PDF в DOCX с настройкой разрешения изображений
 
-Используйте этот пример, когда необходимо контролировать точность изображения внутри генерируемого DOCX во время конвертации.
+Используйте этот пример, когда необходимо контролировать точность изображений в сгенерированном DOCX во время конвертации.
 
-1. Откройте исходный PDF в [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) экземпляр.
-1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для `DocX` экспорт.
-1. Установите `setImageResolutionX(300)` и `setImageResolutionY(300)` поэтому растровый контент генерируется с запрошенным разрешением.
-1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохранить вывод DOCX.
+1. Откройте исходный PDF в экземпляре [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) для экспорта в `DocX`.
+1. Установите `setImageResolutionX(300)` и `setImageResolutionY(300)`, при этом растровый контент генерируется с запрошенным разрешением.
+1. Вызовите `document.save(outputFile.toString(), saveOptions)` и сохраните вывод DOCX.
 
 ```java
 public static void convertPdfToDocxWithImageResolution(Path inputFile, Path outputFile) {
@@ -139,5 +139,3 @@ public static void convertPdfToDocxWithImageResolution(Path inputFile, Path outp
     System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
-
-

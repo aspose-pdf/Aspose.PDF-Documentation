@@ -4,8 +4,8 @@ linktitle: Сравнение PDF
 type: docs
 weight: 130
 url: /ru/java/compare-pdf-documents/
-description: Узнайте, как сравнивать PDF документы в Java, используя вывод различий бок о бок и графический, с помощью Aspose.PDF.
-lastmod: "2026-08-19"
+description: Узнайте, как сравнивать PDF-документы в Java, используя вывод различий бок о бок и графический, с помощью Aspose.PDF.
+lastmod: "2026-09-16"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,14 +13,14 @@ TechArticle: true
 AlternativeHeadline: Сравните страницы PDF и полные документы с визуальным выводом различий в Java
 Abstract: В этой статье объясняется, как сравнивать PDF‑документы с помощью Aspose.PDF for Java. Узнайте, как сравнивать отдельные страницы или целые PDF‑файлы с выводом рядом, создавать графические отчёты о различиях PDF и экспортировать различия изображений на уровне страниц.
 ---
-Aspose.PDF for Java предоставляет API для сравнения рядом и графического сравнения, позволяющие обнаруживать различия между PDF‑файлами.
+Aspose.PDF for Java предоставляет API для сравнения с расположением страниц рядом и графического сравнения, позволяющие обнаруживать различия между PDF‑файлами.
 
 ## Сравнение страниц и экспорт изображений различий
 
 Используйте этот пример, когда вам нужен вывод различий в виде изображений для конкретной пары страниц PDF.
 
-1. Откройте оба исходных PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты.
-1. Используйте [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) чтобы получить уровень страницы [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/).
+1. Откройте оба исходных PDF в объектах [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Используйте [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/), чтобы получить результат сравнения страниц [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/).
 1. Используйте 'GraphicalPdfComparer' для получения на уровне страницы 'ImagesDifference'.
 1. Экспортируйте сгенерированные изображения различий и очистите результат сравнения.
 
@@ -44,9 +44,9 @@ public static void comparePdfWithGetDifferenceMethod(
 
 ## Сравнение конкретных страниц бок о бок
 
-Используйте этот пример, когда необходимо сравнить только выбранные страницы и сохранить результат в виде PDF, расположенного бок о бок.
+Используйте этот пример, когда необходимо сравнить только выбранные страницы и сохранить результат в виде PDF с расположением сравниваемых страниц рядом.
 
-1. Откройте оба исходных PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты.
+1. Откройте оба исходных PDF в объектах [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Настройте [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) для требуемого режима сравнения.
 1. Сравните выбранные страницы и сохраните полученный PDF.
 
@@ -65,12 +65,12 @@ public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path
 }
 ```
 
-## Сравнение полных PDF‑документов графически
+## Графическое сравнение полных PDF-документов
 
 Этот пример генерирует графический PDF‑отчёт, который выделяет визуальные различия по всем документам.
 
-1. Откройте оба исходных PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты.
-1. Настройте [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) порог, цвет и разрешение.
+1. Откройте оба исходных PDF в объектах [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Настройте порог, цвет и разрешение [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/).
 1. Сравните полные документы и сохраните графический PDF‑вывод.
 
 ```java
@@ -91,7 +91,7 @@ public static void comparePdfWithCompareDocumentsToPdfMethod(Path inputFile1, Pa
 
 Используйте этот пример, когда нужно сравнивать полные документы постранично в виде PDF‑вывода рядом друг с другом.
 
-1. Откройте оба исходных PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объекты.
+1. Откройте оба исходных PDF в объектах [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Настройте [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) для желаемого поведения сравнения.
 1. Сравните полные документы и сохраните результат в виде PDF.
 
