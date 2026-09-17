@@ -3,7 +3,7 @@ title: Extraire les pièces jointes d'un PDF
 linktitle: Extraire les pièces jointes
 type: docs
 weight: 50
-url: /java/extract-attachment/
+url: /fr/java/extract-attachment/
 description: Découvrez comment extraire des fichiers incorporés et des annotations de pièces jointes à partir de documents PDF en Java à l'aide d'Aspose.PDF.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment extraire les pièces jointes de documents
 ---
 Aspose.PDF pour Java prend en charge plusieurs flux d'extraction en fonction de la manière dont les pièces jointes sont stockées dans le document.
 
-
 ## Extraire une seule pièce jointe par son nom
-
-
 
 Utilisez cet exemple lorsque vous devez enregistrer un fichier intégré spécifique à partir d'un PDF.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez la collection de fichiers intégrés jusqu'à ce que le nom de la pièce jointe requis soit trouvé.
 1. Copiez le flux de pièces jointes dans le fichier de sortie et arrêtez-vous après l'extraction.
-
 
 ```java
 public static void extractSingleAttachment(Path inputFile, String attachmentName, Path outputFile) throws Exception {
@@ -56,16 +50,11 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 
 ## Imprimer les paramètres du fichier intégré
 
-
-
 Cette méthode d'assistance imprime les métadonnées stockées dans un objet [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/).
 
-
 1. Vérifiez si l'objet de paramètres de fichier existe.
-
 1. Lisez la somme de contrôle disponible, la date de création, la date de modification et les valeurs de taille.
 1. Imprimez les valeurs sur la console.
-
 
 ```java
 public static void printFileParams(FileParams params) {
@@ -84,16 +73,11 @@ public static void printFileParams(FileParams params) {
 
 ## Extraire toutes les pièces jointes intégrées
 
-
-
 Utilisez cet exemple lorsque chaque fichier incorporé dans le PDF doit être écrit dans un répertoire de sortie.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez la collection de fichiers intégrés et déterminez un nom de fichier de sortie sécurisé pour chaque élément.
 1. Imprimez les métadonnées, enregistrez chaque flux de pièces jointes et continuez jusqu'à ce que tous les fichiers soient exportés.
-
 
 ```java
 public static void extractAttachments(Path inputFile, Path outputDir) throws Exception {
@@ -128,13 +112,9 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 
 ## Extraire une annotation de pièce jointe
 
-
-
 Utilisez cet exemple lorsque le fichier est joint via une annotation de page plutôt que via la collection de fichiers incorporés.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Localisez le premier [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) sur la page.
 1. Lisez sa spécification de fichier, exportez le contenu et imprimez le chemin de destination.
 

@@ -3,7 +3,7 @@ title: Créer des portefeuilles PDF en Java
 linktitle: Portefeuille
 type: docs
 weight: 20
-url: /java/portfolio/
+url: /fr/java/portfolio/
 description: Découvrez comment créer et gérer des portefeuilles PDF en Java à l'aide d'Aspose.PDF.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment créer et gérer des portefeuilles PDF à
 ---
 Un portfolio PDF peut regrouper plusieurs fichiers dans un seul conteneur PDF tout en préservant chaque fichier dans son format d'origine.
 
-
 ## Créer un portfolio PDF
-
-
 
 Utilisez cet exemple lorsque vous devez regrouper plusieurs fichiers dans une collection de portfolio PDF.
 
-
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et activez sa [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
-
 1. Créez des objets [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) pour chaque fichier d'entrée et définissez leurs descriptions.
 1. Ajoutez les fichiers à la collection de portfolio et enregistrez le document de sortie.
-
 
 ```java
 public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
@@ -53,13 +47,9 @@ public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
 
 ## Supprimer des fichiers d'un portefeuille PDF
 
-
-
 Utilisez cet exemple lorsqu'une collection de portfolio PDF existante doit être effacée.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Supprimez les entrées de la collection de documents.
 1. Enregistrez le document de sortie nettoyé.
 

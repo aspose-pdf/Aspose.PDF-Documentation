@@ -15,7 +15,7 @@ Les documents PDF balisés fournissent une structure sémantique qui aide les le
 
 Utilisez cette section lorsque vous devez créer ou inspecter des documents PDF accessibles en Java :
 
-- [Créer un PDF balisé](/pdf/java/create-tagged-pdf/)
-- [Extraire le contenu balisé des PDF balisés](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [Définition des propriétés des éléments de structure](/pdf/java/setting-structure-elements-properties/)
-- [Travailler avec un tableau dans des PDF balisés](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [Créer un PDF balisé](/pdf/fr/java/create-tagged-pdf/)
+- [Extraire le contenu balisé des PDF balisés](/pdf/fr/java/extract-tagged-content-from-tagged-pdfs/)
+- [Définition des propriétés des éléments de structure](/pdf/fr/java/setting-structure-elements-properties/)
+- [Travailler avec un tableau dans des PDF balisés](/pdf/fr/java/working-with-table-in-tagged-pdfs/)

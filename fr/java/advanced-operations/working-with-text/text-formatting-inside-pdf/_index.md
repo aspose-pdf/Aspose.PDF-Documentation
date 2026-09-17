@@ -3,7 +3,7 @@ title: Formater le texte PDF en Java
 linktitle: Formatage du texte dans un PDF
 type: docs
 weight: 70
-url: /java/text-formatting-inside-pdf/
+url: /fr/java/text-formatting-inside-pdf/
 description: Découvrez comment formater le texte dans des documents PDF en Java à l'aide d'options d'espacement, de notes, de listes, de disposition sur plusieurs colonnes et de style.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment formater le texte dans des documents PDF 
 ---
 Aspose.PDF pour Java propose des contrôles de formatage du texte pour l'espacement, les listes, les notes, la mise en page en ligne et la composition multi-colonnes.
 
-
 ## Définir un espacement de ligne simple
-
-
 
 Utilisez cet exemple lorsque le texte d’un paragraphe doit utiliser une valeur d’interligne fixe.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Chargez ou préparez le texte source et créez un `TextFragment`.
 1. Définissez l'espacement des lignes, ajoutez le fragment à la page et enregistrez le document.
-
 
 ```java
 public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exception {
@@ -49,16 +43,11 @@ public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exceptio
 
 ## Comparez les modes d'espacement des lignes avec une police personnalisée
 
-
-
 Utilisez cet exemple lorsque l’espacement des lignes doit être testé avec différents modes de formatage pour la même police.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Chargez la police personnalisée et préparez deux fragments avec des modes d'espacement des lignes différents.
 1. Ajoutez les deux fragments à la page et enregistrez le PDF.
-
 
 ```java
 public static void specifyLineSpacingSpecificCase(Path outputFile) throws Exception {
@@ -92,16 +81,11 @@ public static void specifyLineSpacingSpecificCase(Path outputFile) throws Except
 
 ## Définir l'espacement des caractères avec des fragments de texte
 
-
-
 Utilisez cet exemple lorsque le même texte doit être affiché avec des valeurs d'espacement des caractères différentes.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez des fragments de texte avec la méthode d'assistance pour plusieurs valeurs d'espacement.
 1. Ajoutez les fragments à la page et enregistrez le document.
-
 
 ```java
 public static void characterSpacingUsingTextFragment(Path outputFile) {
@@ -127,16 +111,11 @@ private static TextFragment makeCharacterSpacingFragment(float spacing) {
 
 ## Définir l'espacement des caractères à l'intérieur d'un paragraphe de texte
 
-
-
 Utilisez cet exemple lorsque l’espacement des caractères doit être appliqué à l’intérieur d’un paragraphe de texte délimité.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez un `TextParagraph` avec un rectangle cible et des options d'habillage.
 1. Ajoutez le fragment de texte stylisé et enregistrez le PDF.
-
 
 ```java
 public static void characterSpacingUsingTextParagraph(Path outputFile) {
@@ -162,16 +141,11 @@ public static void characterSpacingUsingTextParagraph(Path outputFile) {
 
 ## Créer une liste à puces avec HTML
 
-
-
 Utilisez cet exemple lorsqu'un formatage de liste non ordonné doit être produit à partir d'un balisage HTML.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Construisez la chaîne de liste HTML.
 1. Ajoutez-le en tant que `HtmlFragment` et enregistrez le document.
-
 
 ```java
 public static void createBulletListHtmlVersion(Path outputFile) {
@@ -188,16 +162,11 @@ public static void createBulletListHtmlVersion(Path outputFile) {
 
 ## Créer une liste numérotée avec HTML
 
-
-
 Utilisez cet exemple lorsque le formatage de liste ordonnée doit être produit à partir du balisage HTML.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Construisez la chaîne de liste HTML ordonnée.
 1. Ajoutez-le en tant que `HtmlFragment` et enregistrez le document.
-
 
 ```java
 public static void createNumberedListHtmlVersion(Path outputFile) {
@@ -214,16 +183,11 @@ public static void createNumberedListHtmlVersion(Path outputFile) {
 
 ## Créer une liste à puces avec LaTeX
 
-
-
 Utilisez cet exemple lorsque le formatage de liste non ordonnée doit être rendu à partir du balisage TeX.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Préparez la chaîne de liste TeX avec l'environnement `itemize`.
 1. Ajoutez-le en tant que `TeXFragment` et enregistrez le PDF.
-
 
 ```java
 public static void createBulletListLatexVersion(Path outputFile) {
@@ -243,16 +207,11 @@ public static void createBulletListLatexVersion(Path outputFile) {
 
 ## Créer une liste numérotée avec LaTeX
 
-
-
 Utilisez cet exemple lorsque le formatage de liste ordonnée doit être rendu à partir du balisage TeX.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Préparez la chaîne de liste TeX avec l'environnement `enumerate`.
 1. Ajoutez-le en tant que `TeXFragment` et enregistrez le PDF.
-
 
 ```java
 public static void createNumberedListLatexVersion(Path outputFile) {
@@ -272,16 +231,11 @@ public static void createNumberedListLatexVersion(Path outputFile) {
 
 ## Créer une liste à puces avec des paragraphes de texte
 
-
-
 Utilisez cet exemple lorsqu'une liste à puces manuelle doit être créée à partir de fragments de texte brut.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez un `TextParagraph` et ajoutez des fragments préfixés par une puce.
 1. Ajoutez le paragraphe à la page et enregistrez le document.
-
 
 ```java
 public static void createBulletList(Path outputFile) {
@@ -314,16 +268,11 @@ public static void createBulletList(Path outputFile) {
 
 ## Créer une liste numérotée avec des paragraphes de texte
 
-
-
 Utilisez cet exemple lorsqu'une liste numérotée manuelle doit être construite à partir de fragments de texte brut.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez un `TextParagraph` et ajoutez des fragments numérotés.
 1. Ajoutez le paragraphe à la page et enregistrez le document.
-
 
 ```java
 public static void createNumberedList(Path outputFile) {
@@ -356,16 +305,11 @@ public static void createNumberedList(Path outputFile) {
 
 ## Ajouter une note de bas de page de base
 
-
-
 Utilisez cet exemple lorsqu'un fragment de texte doit faire référence à une simple note de bas de page.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez le fragment de texte principal et attribuez un `Note` comme note de bas de page.
 1. Ajoutez n'importe quel texte de continuation en ligne et enregistrez le document.
-
 
 ```java
 public static void addFootnote(Path outputFile) {
@@ -391,16 +335,11 @@ public static void addFootnote(Path outputFile) {
 
 ## Ajouter une note de bas de page avec un style de texte personnalisé
 
-
-
 Utilisez cet exemple lorsque le contenu d’une note de bas de page doit utiliser ses propres paramètres de police, de taille et de couleur.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez le fragment de texte principal et configurez une note de bas de page stylisée.
 1. Joignez la note et enregistrez le PDF.
-
 
 ```java
 public static void addFootnoteCustomTextStyle(Path outputFile) {
@@ -428,16 +367,11 @@ public static void addFootnoteCustomTextStyle(Path outputFile) {
 
 ## Ajouter une note de bas de page avec un texte de marqueur personnalisé
 
-
-
 Utilisez cet exemple lorsque le marqueur de note de bas de page visible doit être remplacé par du texte personnalisé.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Attribuez la note de bas de page au fragment de texte principal et remplacez son texte de marqueur.
 1. Ajoutez le contenu restant et enregistrez le document.
-
 
 ```java
 public static void addFootnoteCustomText(Path outputFile) {
@@ -463,16 +397,11 @@ public static void addFootnoteCustomText(Path outputFile) {
 
 ## Personnaliser la ligne de séparation des notes de bas de page
 
-
-
 Utilisez cet exemple lorsque la ligne qui sépare les notes de bas de page du contenu de la page doit être explicitement stylisée.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Configurez le style de ligne de note de page via `GraphInfo`.
 1. Ajoutez des fragments de texte avec des notes de bas de page et enregistrez le document.
-
 
 ```java
 public static void addFootnoteWithCustomLineStyle(Path outputFile) {
@@ -501,16 +430,11 @@ public static void addFootnoteWithCustomLineStyle(Path outputFile) {
 
 ## Ajouter une note de bas de page avec le contenu de l'image et du tableau
 
-
-
 Utilisez cet exemple lorsque la note de bas de page elle-même doit contenir un contenu riche tel que des images, du texte et des tableaux.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez un objet `Note` avec une image, du texte en ligne et un tableau.
 1. Attachez-le au fragment de texte principal et enregistrez le document.
-
 
 ```java
 public static void addFootnoteWithImageAndTable(Path outputFile) {
@@ -546,16 +470,11 @@ public static void addFootnoteWithImageAndTable(Path outputFile) {
 
 ## Ajouter une note de fin
 
-
-
 Utilisez cet exemple lorsqu'un fragment de texte doit faire référence au contenu d'une note de fin au lieu d'une note de bas de page.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Attribuez une note de fin au fragment de texte principal et ajoutez le corps du texte de support.
 1. Enregistrez le document avec le contenu de la note de fin générée.
-
 
 ```java
 public static void addEndnote(Path outputFile) throws Exception {
@@ -588,16 +507,11 @@ private static String loremText() throws Exception {
 
 ## Ajouter une note de fin avec un texte de marqueur personnalisé
 
-
-
 Utilisez cet exemple lorsque le marqueur de note de fin doit utiliser une étiquette visible personnalisée.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Attribuez une note de fin au fragment de texte principal et remplacez son texte de marqueur.
 1. Ajoutez le texte restant du document et enregistrez le PDF.
-
 
 ```java
 public static void addEndnoteCustomText(Path outputFile) throws Exception {
@@ -626,16 +540,11 @@ public static void addEndnoteCustomText(Path outputFile) throws Exception {
 
 ## Forcer le contenu du tableau sur une nouvelle page
 
-
-
 Utilisez cet exemple lorsque le contenu formaté doit explicitement commencer sur une nouvelle page.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Créez un tableau et remplissez ses lignes.
 1. Configurez le tableau pour qu'il commence sur une nouvelle page et enregistrez le document.
-
 
 ```java
 public static void forceNewPage(Path outputFile) {
@@ -662,16 +571,11 @@ public static void forceNewPage(Path outputFile) {
 
 ## Mélanger le contenu en ligne dans un flux de paragraphe
 
-
-
 Utilisez cet exemple lorsque le texte et les images doivent continuer dans le même flux de paragraphes.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Ajoutez le premier fragment de texte, puis une image en ligne, puis un autre fragment de texte en ligne.
 1. Ajoutez n’importe quel paragraphe autonome suivant et enregistrez le document.
-
 
 ```java
 public static void usingInlineParagraphProperty(Path outputFile) {
@@ -708,16 +612,11 @@ public static void usingInlineParagraphProperty(Path outputFile) {
 
 ## Créer une mise en page de texte multicolonne
 
-
-
 Utilisez cet exemple lorsque le texte de style article doit s’étendre sur plusieurs colonnes.
 
-
 1. Créez un nouveau document PDF et configurez les marges des pages.
-
 1. Ajoutez le contenu du titre et créez un `FloatingBox` multi-colonnes.
 1. Remplissez-le de texte et enregistrez le PDF final.
-
 
 ```java
 public static void createMultiColumnPdf(Path outputFile) throws Exception {
@@ -761,13 +660,9 @@ public static void createMultiColumnPdf(Path outputFile) throws Exception {
 
 ## Créez du texte aligné avec des taquets de tabulation personnalisés
 
-
-
 Utilisez cet exemple lorsque le texte doit s’aligner comme un simple tableau en utilisant des positions de taquet de tabulation.
 
-
 1. Créez un nouveau document PDF et ajoutez une page.
-
 1. Configurez les taquets de tabulation avec les paramètres d'alignement et de repère.
 1. Créez les fragments de texte qui utilisent ces taquets de tabulation et enregistrez le document.
 

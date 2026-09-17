@@ -3,7 +3,7 @@ title: Créer un PDF balisé en Java
 linktitle: Créer un PDF balisé
 type: docs
 weight: 10
-url: /java/create-tagged-pdf/
+url: /fr/java/create-tagged-pdf/
 description: Découvrez comment créer des documents PDF balisés en Java avec Aspose.PDF, y compris des éléments de structure PDF/UA, des champs de formulaire accessibles, des pages de table des matières et le balisage automatique.
 lastmod: "2026-09-17"
 sitemap:

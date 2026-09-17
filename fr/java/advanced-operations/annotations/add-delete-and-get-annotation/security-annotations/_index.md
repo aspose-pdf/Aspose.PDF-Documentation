@@ -3,7 +3,7 @@ title: Annotations de sécurité utilisant Java
 linktitle: Annotations de sécurité
 type: docs
 weight: 75
-url: /java/security-annotations/
+url: /fr/java/security-annotations/
 description: Découvrez comment marquer du texte à rédiger, appliquer des annotations de rédaction et rédiger des zones de page sélectionnées dans des fichiers PDF à l'aide d'Aspose.PDF pour Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment utiliser les annotations de rédaction da
 ---
 Les flux de travail d'annotation de sécurité de cette section se concentrent sur la préparation et l'application de suppressions au contenu PDF sensible.
 
-
 ## Marquer le texte avec des annotations de rédaction
-
-
 
 Utilisez cet exemple lorsque le texte correspondant doit être couvert par des annotations de rédaction avant que la rédaction soit appliquée de manière permanente.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Recherchez le texte cible et créez une [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) pour chaque correspondance.
 1. Configurez l'apparence de la rédaction et enregistrez le document.
-
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
@@ -55,16 +49,11 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 
 ## Appliquer les rédactions existantes
 
-
-
 Cet exemple applique de manière permanente les annotations de rédaction qui existent déjà sur la page.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Collectez les annotations de type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
 1. Appelez `redact()` sur chaque annotation collectée et enregistrez le fichier mis à jour.
-
 
 ```java
 public static void applyRedaction(Path inputFile, Path outputFile) {
@@ -85,16 +74,11 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 
 ## Rédiger une zone de page sélectionnée
 
-
-
 Utilisez cette approche lorsque le contenu cible est identifié par position plutôt que par correspondance de texte.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Détectez le rectangle cible sur la page, par exemple à partir d'un placement d'image.
 1. Créez une [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) pour cette zone et enregistrez le document.
-
 
 ```java
 public static void redactArea(Path inputFile, Path outputFile) {
@@ -120,14 +104,9 @@ public static void redactArea(Path inputFile, Path outputFile) {
 
 ## Sujets d'annotations associés
 
-
-- [Annotations interactives](/pdf/java/interactive-annotations/)
-
-- [Annotations de balisage](/pdf/java/markup-annotations/)
-
-- [Annotations de forme](/pdf/java/shape-annotations/)
-- [Annotations de texte](/pdf/java/text-based-annotations/)
-
-- [Annotations en filigrane](/pdf/java/watermark-annotations/)
-
-- [Importer et exporter des annotations](/pdf/java/import-export-annotations/)
+- [Annotations interactives](/pdf/fr/java/interactive-annotations/)
+- [Annotations de balisage](/pdf/fr/java/markup-annotations/)
+- [Annotations de forme](/pdf/fr/java/shape-annotations/)
+- [Annotations de texte](/pdf/fr/java/text-based-annotations/)
+- [Annotations en filigrane](/pdf/fr/java/watermark-annotations/)
+- [Importer et exporter des annotations](/pdf/fr/java/import-export-annotations/)

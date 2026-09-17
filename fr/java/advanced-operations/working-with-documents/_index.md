@@ -3,7 +3,7 @@ title: Travailler avec des documents PDF en Java
 linktitle: Travailler avec des documents
 type: docs
 weight: 10
-url: /java/working-with-documents/
+url: /fr/java/working-with-documents/
 description: Apprenez à créer, formater, manipuler, optimiser, fusionner, diviser et gérer des documents PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,14 +15,9 @@ Abstract: Cette section explique comment travailler avec des documents PDF à l'
 ---
 Aspose.PDF pour Java fournit des API au niveau du document pour créer, formater, valider, restructurer, fusionner, diviser et optimiser des fichiers PDF.
 
-
-- [Créer des documents PDF](/pdf/java/create-pdf-document/)
-
-- [Formater les documents PDF](/pdf/java/formatting-pdf-document/)
-
-- [Manipuler des documents PDF](/pdf/java/manipulate-pdf-document/)
-
-- [Fusionner les fichiers PDF](/pdf/java/merge-pdf-documents/)
-- [Optimiser les fichiers PDF](/pdf/java/optimize-pdf/)
-
-- [Diviser les fichiers PDF](/pdf/java/split-pdf-document/)
+- [Créer des documents PDF](/pdf/fr/java/create-pdf-document/)
+- [Formater les documents PDF](/pdf/fr/java/formatting-pdf-document/)
+- [Manipuler des documents PDF](/pdf/fr/java/manipulate-pdf-document/)
+- [Fusionner les fichiers PDF](/pdf/fr/java/merge-pdf-documents/)
+- [Optimiser les fichiers PDF](/pdf/fr/java/optimize-pdf/)
+- [Diviser les fichiers PDF](/pdf/fr/java/split-pdf-document/)

@@ -3,7 +3,7 @@ title: Ajouter des formes d'ellipse au PDF en Java
 linktitle: Ajouter une ellipse
 type: docs
 weight: 60
-url: /java/add-ellipse/
+url: /fr/java/add-ellipse/
 description: Apprenez à dessiner, remplir et étiqueter des formes d'ellipse dans des fichiers PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,20 +15,13 @@ Abstract: Cet article montre comment ajouter des formes d'ellipse aux documents 
 ---
 ## Ajouter des contours d'ellipse
 
-
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-
 1. Créez la forme [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) et configurez sa géométrie.
 1. Ajoutez l'[Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
-
 1. Définissez les propriétés de forme requises par l'exemple, notamment [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) et [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 
 ```java
 public static void addEllipse(Path outputFile) {
@@ -48,29 +41,20 @@ public static void addEllipse(Path outputFile) {
 }
 ```
 
-
 L’exemple complet ajoute deux ellipses de contour différentes au même graphique.
-
 
 ## Ajouter des ellipses remplies
 
 `createEllipseFilled` remplit deux ellipses avec `Color.getGreenYellow()` et `Color.getDarkRed()`.
 
-
 ## Ajouter du texte à l'intérieur des ellipses
 
-
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Créez un [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) et définissez les options de formatage de texte requises.
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-
 1. Créez la forme [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) et configurez sa géométrie.
-
 1. Ajoutez l'[Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
-
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

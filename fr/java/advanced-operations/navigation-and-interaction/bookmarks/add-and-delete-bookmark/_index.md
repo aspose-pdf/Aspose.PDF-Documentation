@@ -3,7 +3,7 @@ title: Ajouter et supprimer des signets PDF en Java
 linktitle: Ajouter et supprimer un signet
 type: docs
 weight: 10
-url: /java/add-and-delete-bookmark/
+url: /fr/java/add-and-delete-bookmark/
 description: Découvrez comment ajouter et supprimer des signets dans des documents PDF à l'aide de Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article montre comment créer et supprimer des signets à l'aide d
 ---
 Utilisez la collection de plans de documents pour gérer les signets par programmation.
 
-
 ## Ajouter un favori de niveau supérieur
-
-
 
 Utilisez cet exemple lorsque le document doit inclure une seule entrée de plan de niveau supérieur.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) et configurez son titre, son style et son action.
 1. Ajoutez le signet aux plans du document et enregistrez le fichier.
-
 
 ```java
 public static void addBookmark(Path inputFile, Path outputFile) {
@@ -46,16 +40,11 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 
 ## Ajouter un favori enfant
 
-
-
 Cet exemple crée un signet parent et imbrique un signet enfant en dessous.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez des objets parent et enfant [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/).
 1. Ajoutez l'enfant au parent, ajoutez le parent à la collection de plans et enregistrez le document.
-
 
 ```java
 public static void addChildBookmark(Path inputFile, Path outputFile) {
@@ -79,16 +68,11 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 
 ## Supprimer tous les favoris
 
-
-
 Utilisez cette approche lorsque la totalité de la collection de plans doit être supprimée du document.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Supprimez la collection de contours complète.
 1. Enregistrez le fichier de sortie nettoyé.
-
 
 ```java
 public static void deleteBookmarks(Path inputFile, Path outputFile) {
@@ -101,13 +85,9 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 
 ## Supprimer un favori spécifique
 
-
-
 Utilisez cet exemple lorsqu'un signet nommé doit être supprimé sans effacer toute l'arborescence.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Supprimez le signet par titre de la collection de plans.
 1. Enregistrez le document mis à jour.
 

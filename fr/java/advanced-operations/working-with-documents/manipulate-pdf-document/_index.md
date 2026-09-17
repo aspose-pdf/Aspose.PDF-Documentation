@@ -3,7 +3,7 @@ title: Manipuler des documents PDF en Java
 linktitle: Manipuler un document PDF
 type: docs
 weight: 20
-url: /java/manipulate-pdf-document/
+url: /fr/java/manipulate-pdf-document/
 description: Découvrez comment valider, structurer et modifier des documents PDF en Java, y compris la gestion de la table des matières et les vérifications PDF/A.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment manipuler des documents PDF à l'aide d'A
 ---
 Aspose.PDF pour Java inclut des opérations de structure de document qui vont au-delà de la simple édition de pages.
 
-
 ## Valider la conformité PDF/A-1a
-
-
 
 Utilisez cet exemple lorsque vous devez vérifier si un document répond à la norme d'archivage PDF/A-1a.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Exécutez la validation par rapport à la cible [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) requise.
 1. Enregistrez le rapport de validation dans le chemin de sortie spécifié.
-
 
 ```java
 public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
@@ -39,16 +33,11 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 
 ## Valider la conformité PDF/A-1b
 
-
-
 Cette variation valide le même document source par rapport au niveau de conformité PDF/A-1b.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Appelez la méthode de validation avec la valeur [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) pour PDF/A-1b.
 1. Écrivez le résultat de la validation dans le fichier de rapport de sortie.
-
 
 ```java
 public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
@@ -60,18 +49,12 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 
 ## Ajouter une table des matières
 
-
-
 Utilisez cette approche lorsque le document doit inclure une page de table des matières générée avec des liens vers des pages de contenu.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Insérez une nouvelle TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et configurez sa [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
 1. Créez des entrées [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) qui pointent vers les pages de destination.
-
 1. Enregistrez le document mis à jour.
-
 
 ```java
 public static void addTableOfContents(Path inputFile, Path outputFile) {
@@ -103,18 +86,12 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 
 ## Personnaliser les niveaux et le formatage de la table des matières
 
-
-
 Cet exemple montre comment attribuer différents paramètres visuels à plusieurs niveaux de table des matières.
-
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez une table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et configurez le tableau de format [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-
 1. Créez des exemples d'entrées [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) avec différents niveaux.
-
 1. Enregistrez le document avec la table des matières formatée.
-
 
 ```java
 public static void setTocLevels(Path inputFile, Path outputFile) {
@@ -163,18 +140,12 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 
 ## Masquer les numéros de page dans la table des matières
 
-
-
 Utilisez cet exemple lorsque la table des matières doit afficher les titres des entrées sans numéros de page.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et désactivez les numéros de page dans [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-
 1. Créez l'entrée [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) requise et ajoutez-la à la page de contenu.
-
 1. Enregistrez le document mis à jour.
-
 
 ```java
 public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
@@ -217,13 +188,9 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 
 Cet exemple ajoute un préfixe personnalisé aux numéros de page affichés dans la table des matières générée.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Insérez une table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et définissez le préfixe du numéro de page souhaité dans [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-
 1. Créez des entrées [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) qui pointent vers chaque page.
-
 1. Enregistrez le document mis à jour.
 
 ```java
@@ -255,15 +222,10 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 
 ## Ajouter un script d'expiration PDF
 
-
-
 Utilisez cette approche lorsque le document doit exécuter JavaScript à l'ouverture et afficher un avertissement d'expiration après une date spécifique.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez tout contenu requis.
-
 1. Créez une [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) avec la logique d'expiration.
-
 1. Attribuez le script comme action d'ouverture de document et enregistrez le fichier de sortie.
 
 ```java
@@ -287,15 +249,10 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 
 ## Aplatir un formulaire PDF à remplir
 
-
-
 Cet exemple convertit les champs de formulaire interactifs en contenu de page statique afin que le document résultant ne soit plus modifiable en tant que formulaire.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Vérifiez si le document contient des widgets de formulaire.
-
 1. Aplatissez chaque [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) représenté par une [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
 1. Enregistrez le document aplati.
 

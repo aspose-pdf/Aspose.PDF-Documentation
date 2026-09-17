@@ -3,7 +3,7 @@ title: Définir les propriétés des éléments de structure PDF balisés en Jav
 linktitle: Définition des propriétés des éléments de structure
 type: docs
 weight: 30
-url: /java/setting-structure-elements-properties/
+url: /fr/java/setting-structure-elements-properties/
 description: Découvrez comment définir les propriétés des éléments de structure PDF balisés en Java avec Aspose.PDF, notamment le titre, la langue, le texte réel, le texte alternatif, le texte d'expansion, les liens, les notes et les noms de balises.
 lastmod: "2026-09-17"
 sitemap:
@@ -13,16 +13,12 @@ sitemap:
 
 Cette page couvre les modèles courants de définition de propriétés pour les éléments de structure PDF balisés en Java.
 
-
 ## Définir les propriétés communes des éléments de structure
 
 Utilisez cet exemple lorsqu'un élément de structure balisé doit exposer des métadonnées d'accessibilité telles que le titre, la langue, le texte réel et le texte alternatif.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et initialisez les métadonnées du contenu balisé.
-
 1. Créez une section et un élément d'en-tête dans l'arborescence de la structure.
-
 1. Définissez les propriétés de l'en-tête et enregistrez le document.
 
 
@@ -56,11 +52,8 @@ public static void setProperties(Path outputFile) {
 
 Utilisez cet exemple lorsque vous devez ajouter un simple élément de paragraphe à l’arborescence de structure balisée.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) et définissez son texte.
-
 1. Ajoutez le paragraphe à l’élément racine et enregistrez le document.
 
 
@@ -84,13 +77,9 @@ public static void setTextElements(Path outputFile) {
 
 Cet exemple crée plusieurs éléments de structure au niveau du bloc, notamment des titres de plusieurs niveaux et un paragraphe.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez des éléments d'en-tête pour les niveaux requis, puis créez un élément de paragraphe.
-
 1. Ajoutez les éléments de bloc à la structure racine et enregistrez le document.
-
 
 ```java
 public static void setTextBlockElements(Path outputFile) {
@@ -119,13 +108,9 @@ public static void setTextBlockElements(Path outputFile) {
 
 Utilisez cet exemple lorsque les éléments de structure de bloc doivent contenir des étendues en ligne imbriquées.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez des éléments d’en-tête et ajoutez-y des enfants span.
-
 1. Créez un paragraphe avec plusieurs travées et enregistrez le document.
-
 
 ```java
 public static void setInlineElements(Path outputFile) {
@@ -166,13 +151,9 @@ public static void setInlineElements(Path outputFile) {
 
 Cet exemple attribue des noms de balises personnalisées aux éléments paragraphe et span dans la structure balisée.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un élément de section.
-
 1. Créez des paragraphes et des étendues, puis définissez des noms de balises personnalisés pour chaque élément.
-
 1. Ajoutez les éléments à la section et enregistrez le document.
-
 
 ```java
 public static void setTagName(Path outputFile) {
@@ -209,13 +190,9 @@ public static void setTagName(Path outputFile) {
 
 Utilisez cet exemple lorsque les éléments de lien balisés doivent inclure des descriptions alternatives, des hyperliens et du contenu de figure avec des attributs de mise en page.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez des éléments de lien à l'intérieur des paragraphes.
-
 1. Configurez les cibles des liens hypertexte, les descriptions alternatives et l'élément de figure lié.
-
 1. Définissez l'attribut de mise en page requis et enregistrez le document.
-
 
 ```java
 public static void setElements(Path imageFile, Path outputFile) {
@@ -263,13 +240,9 @@ public static void setElements(Path imageFile, Path outputFile) {
 
 Cet exemple crée des éléments de paragraphe qui combinent du texte brut et des éléments span imbriqués.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez des éléments de paragraphe et ajoutez des enfants span avec du texte personnalisé.
-
 1. Ajoutez les paragraphes à l’élément racine et enregistrez le document.
-
 
 ```java
 public static void addLinkElement(Path outputFile) {
@@ -301,13 +274,9 @@ public static void addLinkElement(Path outputFile) {
 
 Utilisez cet exemple lorsque des éléments de structure de note doivent être créés avec des ID automatiques ou explicites.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un élément de paragraphe.
-
 1. Créez des éléments de note et définissez leur texte et leurs identifiants selon vos besoins.
-
 1. Ajoutez les notes au paragraphe et enregistrez le document.
-
 
 ```java
 public static void setNoteElement(Path outputFile) {
@@ -342,13 +311,9 @@ public static void setNoteElement(Path outputFile) {
 
 Cet exemple attribue des métadonnées au niveau du document, puis crée des paragraphes avec différentes valeurs de langue.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et définissez le titre et la langue du document.
-
 1. Ajoutez un élément d'en-tête et créez des paragraphes pour chaque phrase localisée.
-
 1. Enregistrez le document balisé multilingue.
-
 
 ```java
 public static void setLanguageAndTitle(Path outputFile) {
@@ -375,11 +340,8 @@ public static void setLanguageAndTitle(Path outputFile) {
 
 Cette méthode d'assistance crée un paragraphe, attribue sa langue et l'ajoute à la structure racine.
 
-
 1. Créez un [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
-
 1. Définissez le texte et la langue de l'élément.
-
 1. Ajoutez le paragraphe à l’élément racine du contenu balisé.
 
 ```java

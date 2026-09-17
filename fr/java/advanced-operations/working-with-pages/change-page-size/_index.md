@@ -3,7 +3,7 @@ title: Modifier la taille de la page PDF en Java
 linktitle: Changer la taille de la page
 type: docs
 weight: 40
-url: /java/change-page-size/
+url: /fr/java/change-page-size/
 description: Découvrez comment lire et modifier les dimensions d'une page PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article montre comment lire et modifier les dimensions d'une page 
 ---
 Aspose.PDF pour Java peut à la fois signaler les dimensions des pages et les mettre à jour.
 
-
 ## Changer la taille de la page
-
-
 
 Utilisez cet exemple lorsque vous devez redimensionner une page existante et inspecter les zones de page avant et après la modification.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Obtenez la cible [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et imprimez ses valeurs de boîte actuelles.
 1. Définissez la nouvelle taille de page et enregistrez le document.
-
 
 ```java
 public static void setPageSize(Path inputFile, Path outputFile) {
@@ -43,16 +37,11 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 
 ## Obtenir la taille de la page
 
-
-
 Utilisez cet exemple lorsque vous devez lire les dimensions visibles d'une page.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Obtenez le rectangle de la page avec la gestion de la rotation activée.
 1. Output the page width and height.
-
 
 ```java
 public static void getPageSize(Path inputFile) {
@@ -65,13 +54,9 @@ public static void getPageSize(Path inputFile) {
 
 ## Get the page size with rotation applied
 
-
-
 Use this example when you need to compare page dimensions before and after accounting for rotation.
 
-
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Rotate the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Lisez le rectangle de la page avec et sans gestion de rotation et affichez les deux valeurs.
 

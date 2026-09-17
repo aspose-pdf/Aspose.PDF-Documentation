@@ -3,7 +3,7 @@ title: Ajouter des formes de lignes au PDF en Java
 linktitle: Ajouter une ligne
 type: docs
 weight: 40
-url: /java/add-line/
+url: /fr/java/add-line/
 description: Apprenez à dessiner des formes de lignes et des lignes stylisées dans des fichiers PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,18 +15,12 @@ Abstract: Cet article montre comment ajouter des formes de lignes aux documents 
 ---
 ## Ajouter une ligne pointillée
 
-
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-
 1. Créez la forme [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
 1. Ajoutez la [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
-
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 
 ```java
 public static void addLine(Path outputFile) {
@@ -47,21 +41,14 @@ public static void addLine(Path outputFile) {
 
 ## Ajouter une ligne pointillée ou pointillée colorée
 
-
-
 `addDottedDashedLine` utilise les mêmes coordonnées et paramètres de tiret, mais applique également `Color.getRed()`.
-
 
 ## Tracez des lignes sur la page
 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-
 1. Créez la forme [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
-
 1. Ajoutez la [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

@@ -3,7 +3,7 @@ title: Créer des liens PDF en Java
 linktitle: Créer des liens
 type: docs
 weight: 10
-url: /java/create-links/
+url: /fr/java/create-links/
 description: Découvrez comment créer des liens PDF internes, externes et distants en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article montre comment créer des annotations de lien à l'aide d'
 ---
 Aspose.PDF pour Java utilise `LinkAnnotation` avec un objet d'action pour définir le comportement des liens.
 
-
 ## Créer un lien de lancement-action
-
-
 
 Utilisez cet exemple lorsqu'une annotation de lien doit lancer un fichier ou une cible externe.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et sélectionnez la page cible.
-
 1. Créez une [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) et configurez sa bordure et sa couleur.
 1. Attribuez une [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) et enregistrez le document.
-
 
 ```java
 public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
@@ -49,16 +43,11 @@ public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputF
 
 ## Créer un lien d'accès à distance
 
-
-
 Utilisez cet exemple lorsque le lien doit ouvrir une page dans un autre document PDF.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez une [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) sur la page cible.
 1. Attribuez un [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) et enregistrez le fichier de sortie.
-
 
 ```java
 public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
@@ -76,16 +65,11 @@ public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path out
 
 ## Créer un lien de référence interne
 
-
-
 Utilisez cet exemple lorsque le lien doit diriger vers une autre page du même document PDF.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez une [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) et configurez son apparence.
 1. Attribuez un [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) à la page de destination et enregistrez le document.
-
 
 ```java
 public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
@@ -111,13 +95,9 @@ public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFil
 
 ## Créer un lien URI
 
-
-
 Utilisez cet exemple lorsque le lien doit ouvrir une ressource Web via une action URI.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez une [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) sur la page.
 1. Attribuez une [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) et enregistrez le fichier de sortie.
 

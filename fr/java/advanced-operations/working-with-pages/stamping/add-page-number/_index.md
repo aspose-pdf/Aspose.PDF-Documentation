@@ -3,7 +3,7 @@ title: Ajouter des numéros de page au PDF en Java
 linktitle: Ajout d'un numéro de page
 type: docs
 weight: 30
-url: /java/add-page-number/
+url: /fr/java/add-page-number/
 description: Découvrez comment ajouter des tampons de numéro de page aux documents PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,16 +15,11 @@ Abstract: Cet article explique comment ajouter des tampons de numéro de page à
 ---
 ## Ajouter un tampon de numéro de page
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez l'objet [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
-
 1. Configurez les options de placement et de numérotation du tampon requises.
-
 1. Définissez les options de formatage de texte requises, notamment [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) et [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. Ajoutez le [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) configuré à la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
-
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

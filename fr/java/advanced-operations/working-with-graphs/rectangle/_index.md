@@ -3,7 +3,7 @@ title: Ajouter des formes rectangulaires au PDF en Java
 linktitle: Ajouter un rectangle
 type: docs
 weight: 50
-url: /java/add-rectangle/
+url: /fr/java/add-rectangle/
 description: Apprenez à dessiner et à remplir des formes rectangulaires dans des fichiers PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,18 +15,12 @@ Abstract: Cet article montre comment ajouter des formes rectangulaires aux docum
 ---
 ## Ajouter un contour de rectangle
 
-
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-
 1. Créez la forme [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) et configurez sa géométrie.
 1. Ajoutez le [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
-
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 
 ```java
 public static void addRectangle(Path outputFile) {
@@ -46,32 +40,21 @@ public static void addRectangle(Path outputFile) {
 
 ## Remplissez un rectangle avec une couleur unie ou dégradée
 
-
-
 Les exemples de rectangles incluent :
-
 
 - `createRectangleFilled` pour un remplissage solide avec `Color.getRed()`
 - `addDrawingWithGradientFill` pour un remplissage `GradientAxialShading`
 
-
 ## Utiliser la transparence alpha
-
-
 
 `createRectangleWithAlphaColorChannel` applique des couleurs translucides avec `Color.fromArgb(...)` afin que les rectangles qui se chevauchent restent visibles.
 
-
 ## Contrôler l'ordre z des rectangles
-
 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Définissez la taille de [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) requise.
-
 1. Ajoutez les formes [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) configurées à la page cible avec l'ordre z requis.
-
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

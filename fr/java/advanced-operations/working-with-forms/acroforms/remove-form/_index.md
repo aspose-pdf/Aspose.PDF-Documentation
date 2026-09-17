@@ -3,7 +3,7 @@ title: Supprimer des formulaires d'un PDF en Java
 linktitle: Supprimer des formulaires
 type: docs
 weight: 70
-url: /java/remove-form/
+url: /fr/java/remove-form/
 description: Supprimez les objets de formulaire des pages PDF à l'aide d'Aspose.PDF pour Java, y compris un nettoyage complet et une suppression ciblée.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment supprimer les ressources de formulaire de
 ---
 Ces exemples suppriment les ressources de formulaire d'une page plutôt que de simplement modifier les valeurs des champs.
 
-
 ## Supprimer toutes les ressources de formulaire d'une page
-
-
 
 Utilisez cet exemple lorsque chaque ressource de formulaire sur une page sélectionnée doit être supprimée en une seule opération.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Accédez au [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) pour la page cible.
 1. Effacez la collection et enregistrez le document mis à jour.
-
 
 ```java
 public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) {
@@ -41,16 +35,11 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 
 ## Supprimer des ressources de formulaire spécifiques
 
-
-
 Utilisez cet exemple lorsque seules les ressources de formulaire sélectionnées, telles que les formulaires Typewriter, doivent être supprimées.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Accédez au [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) pour la page cible.
 1. Filtrez les ressources [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) que vous souhaitez supprimer et supprimez-les de la collection.
-
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

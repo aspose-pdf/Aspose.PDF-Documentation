@@ -3,7 +3,7 @@ title: Supprimer des pages PDF en Java
 linktitle: Suppression de pages PDF
 type: docs
 weight: 80
-url: /java/delete-pages/
+url: /fr/java/delete-pages/
 description: Découvrez comment supprimer des pages de fichiers PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment supprimer des pages de fichiers PDF à l'
 ---
 Use the document page collection when you need to remove one or more pages from a PDF.
 
-
 ## Delete a single page
-
-
 
 Use this example when you need to remove one page by its index.
 
-
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Delete the target page from the page collection.
 1. Enregistrez le document mis à jour.
-
 
 ```java
 public static void deletePage(Path inputFile, Path outputFile) {
@@ -40,13 +34,9 @@ public static void deletePage(Path inputFile, Path outputFile) {
 
 ## Supprimer plusieurs pages
 
-
-
 Utilisez cet exemple lorsque plusieurs pages doivent être supprimées en une seule opération.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Transmettez les index de pages à supprimer de la collection de pages.
 1. Enregistrez le PDF modifié.
 

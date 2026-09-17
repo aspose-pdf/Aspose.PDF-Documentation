@@ -3,7 +3,7 @@ title: Extraire les informations de signature d'un PDF en Java
 linktitle: Extraire les détails de la signature
 type: docs
 weight: 20
-url: /java/extract-image-and-signature-information/
+url: /fr/java/extract-image-and-signature-information/
 description: Découvrez comment extraire les détails d'un certificat et d'une signature numérique à partir de fichiers PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,17 +15,12 @@ Abstract: Cet article explique comment inspecter les signatures numériques dans
 ---
 Utilisez `PdfFileSignature` pour inspecter et gérer les signatures qui existent déjà dans un document PDF.
 
-
 ## Lire les informations de signature
 
-
 1. Créez la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
-
 1. Accédez au nom de la signature du document et configurez le flux d'inspection des signatures requis par l'exemple.
-
 1. Lisez et vérifiez les informations de signature de la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Lisez les valeurs renvoyées ou passez à l'étape de traitement suivante.
-
 
 ```java
 public static void getSignatureInformation(Path inputFile) {
@@ -46,11 +41,8 @@ public static void getSignatureInformation(Path inputFile) {
 
 ## Vérifier une signature
 
-
 1. Créez la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
-
 1. Accédez au nom de la signature du document et configurez le flux de vérification requis par l'exemple.
-
 1. Lisez et vérifiez les informations de signature de la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
@@ -71,11 +63,8 @@ public static void verifyPdfSignature(Path inputFile) {
 
 ## Extraire le certificat de signature
 
-
 1. Créez la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
-
 1. Accédez au nom de signature du document requis pour l’extraction du certificat.
-
 1. Écrivez la sortie extraite ou inspectez les valeurs renvoyées par la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java

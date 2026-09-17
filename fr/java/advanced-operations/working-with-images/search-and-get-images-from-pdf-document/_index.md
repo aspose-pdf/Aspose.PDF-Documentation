@@ -3,7 +3,7 @@ title: Obtenir et rechercher des images au format PDF
 linktitle: Obtenir et rechercher des images
 type: docs
 weight: 40
-url: /java/search-and-get-images-from-pdf-document/
+url: /fr/java/search-and-get-images-from-pdf-document/
 description: Découvrez comment rechercher et inspecter des images dans des documents PDF en Java.
 lastmod: "2026-09-17"
 TechArticle: true
@@ -12,19 +12,13 @@ Abstract: Cet article montre comment rechercher et inspecter des images dans des
 ---
 Aspose.PDF pour Java peut inspecter les informations de placement d'image ainsi que les données de dessin de niveau inférieur.
 
-
 ## Obtenir les paramètres de placement d'image
-
-
 
 Utilisez cet exemple lorsque vous devez inspecter la géométrie de l’image et la résolution effective sur une page.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Utilisez [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) pour collecter les emplacements d'images.
 1. Affichez la taille, les coordonnées et la résolution de chaque image placée.
-
 
 ```java
 public static void extractImageParams(Path inputFile) {
@@ -46,16 +40,11 @@ public static void extractImageParams(Path inputFile) {
 
 ## Détecter les types de couleurs d'image
 
-
-
 Utilisez cet exemple lorsque vous devez compter les images en niveaux de gris et RVB dans une page PDF.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Utilisez [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) pour parcourir les images de page.
 1. Lisez le [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) de chaque image et affichez les totaux.
-
 
 ```java
 public static void extractImageTypesFromPdf(Path inputFile) {
@@ -91,16 +80,11 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 
 ## Extraire le texte alternatif de l'image
 
-
-
 Utilisez cet exemple lorsque vous devez inspecter le texte d’accessibilité associé aux images de page.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Utilisez [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) pour collecter les emplacements d'images.
 1. Lisez le texte alternatif pour chaque image et affichez le résultat.
-
 
 ```java
 public static void extractImageAltText(Path inputFile) {
@@ -123,13 +107,9 @@ public static void extractImageAltText(Path inputFile) {
 
 ## Calculer les informations d'image à partir des opérateurs de page
 
-
-
 Utilisez cet exemple lorsque vous devez dériver la taille et la résolution efficaces de l’image à partir d’opérateurs de contenu de page de bas niveau.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et collectez les noms des ressources d'image.
-
 1. Suivez l’état des graphiques tout en parcourant les opérateurs de page.
 1. Résolvez chaque opération de dessin d’image et calculez ses dimensions et sa résolution effectives.
 

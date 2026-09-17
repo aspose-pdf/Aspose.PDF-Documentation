@@ -3,7 +3,7 @@ title: Remplacer le texte dans un PDF par Java
 linktitle: Remplacer le texte dans un PDF
 type: docs
 weight: 40
-url: /java/replace-text-in-pdf/
+url: /fr/java/replace-text-in-pdf/
 description: Découvrez comment remplacer, réorganiser et supprimer du texte dans des documents PDF à l'aide de Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -17,19 +17,13 @@ Abstract: Cet article explique les flux de travail de remplacement de texte dans
 ---
 Aspose.PDF pour Java fournit à la fois des fonctionnalités de remplacement simples et de remplacement tenant compte de la mise en page via `TextFragmentAbsorber` et des options de remplacement.
 
-
 ## Remplacer le texte sur toutes les pages
-
-
 
 Utilisez cet exemple lorsque la même phrase doit être remplacée dans tout le document.
 
-
 1. Ouvrez le document PDF source.
-
 1. Recherchez dans toutes les pages la phrase cible avec `TextFragmentAbsorber`.
 1. Remplacez le texte correspondant et enregistrez le PDF mis à jour.
-
 
 ```java
 public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
@@ -51,16 +45,11 @@ public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
 
 ## Remplacer le texte dans une zone de page spécifique
 
-
-
 Utilisez cet exemple lorsque le remplacement doit être limité à un rectangle sélectionné sur une page.
 
-
 1. Ouvrez le document PDF source.
-
 1. Configurez `TextSearchOptions` avec des limites de page et un rectangle cible.
 1. Remplacez le texte correspondant à l'intérieur de cette région et enregistrez le document.
-
 
 ```java
 public static void replaceTextInParticularPageRegion(Path inputFile, Path outputFile) {
@@ -84,16 +73,11 @@ public static void replaceTextInParticularPageRegion(Path inputFile, Path output
 
 ## Remplacez le texte et ajustez l'espacement à l'intérieur d'un rectangle décalé
 
-
-
 Utilisez cet exemple lorsque le texte de remplacement doit rester sur la page avec un espacement ajusté mais que la taille de la police doit rester inchangée.
 
-
 1. Ouvrez le PDF source et collectez des fragments de texte de la page cible.
-
 1. Modifiez le rectangle de remplacement et choisissez le comportement `AdjustSpaceWidth`.
 1. Définissez le nouveau texte et enregistrez le document.
-
 
 ```java
 public static void replaceTextAndResizeAndShiftWithoutChangingFontSize(Path inputFile, Path outputFile) {
@@ -117,16 +101,11 @@ public static void replaceTextAndResizeAndShiftWithoutChangingFontSize(Path inpu
 
 ## Remplacer le texte à l'intérieur d'un rectangle de paragraphe plus grand
 
-
-
 Utilisez cet exemple lorsque le texte de remplacement doit s’étendre sur une zone de page plus grande.
 
-
 1. Ouvrez le PDF source et récupérez le premier fragment de texte de la page cible.
-
 1. Créez un rectangle de remplacement plus grand à partir de la zone multimédia de la page.
 1. Appliquez les options de remplacement et enregistrez le PDF.
-
 
 ```java
 public static void replaceTextAndResizeAndShiftParagraph(Path inputFile, Path outputFile) {
@@ -151,16 +130,11 @@ public static void replaceTextAndResizeAndShiftParagraph(Path inputFile, Path ou
 
 ## Remplacez le texte et redimensionnez la police pour remplir le rectangle
 
-
-
 Utilisez cet exemple lorsque le texte de remplacement doit s'agrandir pour remplir une zone cible.
 
-
 1. Ouvrez le PDF source et accédez au fragment de texte cible.
-
 1. Définissez un rectangle de remplacement et activez l'ajustement de la police `ScaleToFill`.
 1. Définissez le nouveau texte et enregistrez le document mis à jour.
-
 
 ```java
 public static void replaceTextAndResizeAndExpandFont(Path inputFile, Path outputFile) {
@@ -182,16 +156,11 @@ public static void replaceTextAndResizeAndExpandFont(Path inputFile, Path output
 
 ## Remplacez le texte et réduisez-le pour l'adapter
 
-
-
 Utilisez cet exemple lorsque le texte de remplacement doit rester à l’intérieur du rectangle de texte d’origine.
 
-
 1. Ouvrez le PDF source et sélectionnez le fragment cible.
-
 1. Réutilisez le rectangle de fragment actuel et activez `ShrinkToFit`.
 1. Remplacez le texte et enregistrez le document.
-
 
 ```java
 public static void replaceTextAndFitTextIntoRectangle(Path inputFile, Path outputFile) {
@@ -213,16 +182,11 @@ public static void replaceTextAndFitTextIntoRectangle(Path inputFile, Path outpu
 
 ## Remplacer le texte par une expression régulière
 
-
-
 Utilisez cet exemple lorsque le texte correspondant doit être trouvé par un modèle regex et relooké lors du remplacement.
 
-
 1. Ouvrez le document PDF source.
-
 1. Recherchez la page avec un `TextFragmentAbsorber` compatible avec les expressions régulières.
 1. Remplacez chaque correspondance, mettez à jour son style de texte et enregistrez le résultat.
-
 
 ```java
 public static void replaceTextBasedOnRegex(Path inputFile, Path outputFile) {
@@ -246,16 +210,11 @@ public static void replaceTextBasedOnRegex(Path inputFile, Path outputFile) {
 
 ## Remplacez le texte de l'espace réservé et laissez la page se réorganiser
 
-
-
 Utilisez cet exemple lorsqu'un espace réservé doit être remplacé par une valeur réelle plus longue tout en préservant la mise en page.
 
-
 1. Ouvrez le PDF source et recherchez le texte d'espace réservé.
-
 1. Attribuez le texte de remplacement et mettez à jour ses paramètres de police.
 1. Enregistrez le document pour que la mise en page soit recalculée.
-
 
 ```java
 public static void automaticallyRearrangePageContents(Path inputFile, Path outputFile) {
@@ -277,16 +236,11 @@ public static void automaticallyRearrangePageContents(Path inputFile, Path outpu
 
 ## Remplacer une police par une autre
 
-
-
 Utilisez cet exemple lorsque le texte utilisant une police intégrée spécifique doit être remplacé par une autre police.
 
-
 1. Ouvrez le PDF source et collectez tous les fragments de texte.
-
 1. Vérifiez le nom de police de chaque fragment et remplacez la police cible.
 1. Enregistrez le PDF mis à jour.
-
 
 ```java
 public static void replaceFonts(Path inputFile, Path outputFile) {
@@ -307,16 +261,11 @@ public static void replaceFonts(Path inputFile, Path outputFile) {
 
 ## Remplacez les polices et supprimez les ressources de polices inutilisées
 
-
-
 Utilisez cet exemple lorsque le document doit être nettoyé après le remplacement de la police.
 
-
 1. Ouvrez le PDF source et configurez `TextEditOptions` pour supprimer les polices inutilisées.
-
 1. Absorbez les fragments de texte et attribuez la police de remplacement.
 1. Enregistrez le document optimisé.
-
 
 ```java
 public static void removeUnusedFonts(Path inputFile, Path outputFile) {
@@ -336,16 +285,11 @@ public static void removeUnusedFonts(Path inputFile, Path outputFile) {
 
 ## Supprimer tout le texte du document
 
-
-
 Utilisez cet exemple lorsque tout le contenu textuel doit être supprimé de chaque page.
 
-
 1. Ouvrez le document PDF source.
-
 1. Créez un `TextFragmentAbsorber` et appelez `removeAllText(document)`.
 1. Enregistrez le PDF nettoyé.
-
 
 ```java
 public static void removeAllTextUsingAbsorber1(Path inputFile, Path outputFile) {
@@ -359,13 +303,9 @@ public static void removeAllTextUsingAbsorber1(Path inputFile, Path outputFile) 
 
 ## Supprimer tout le texte d'une page
 
-
-
 Utilisez cet exemple lorsque tout le texte doit être supprimé uniquement d’une page spécifique.
 
-
 1. Ouvrez le document PDF source.
-
 1. Créez un `TextFragmentAbsorber` et supprimez le texte de la page cible.
 1. Enregistrez le document mis à jour.
 
@@ -382,16 +322,11 @@ public static void removeAllTextUsingAbsorber2(Path inputFile, Path outputFile) 
 
 ## Supprimer le texte d'un rectangle sélectionné
 
-
-
 Utilisez cet exemple lorsque le texte doit être supprimé uniquement à l’intérieur d’une zone de page choisie.
 
-
 1. Ouvrez le document PDF source.
-
 1. Créez un `TextFragmentAbsorber` et définissez le rectangle à nettoyer.
 1. Supprimez le texte de cette région et enregistrez le document.
-
 
 ```java
 public static void removeAllTextUsingAbsorber3(Path inputFile, Path outputFile) {
@@ -405,13 +340,9 @@ public static void removeAllTextUsingAbsorber3(Path inputFile, Path outputFile) 
 
 ## Supprimer le texte masqué
 
-
-
 Utilisez cet exemple lorsque des fragments de texte invisibles doivent être supprimés du PDF.
 
-
 1. Ouvrez le PDF source et absorbez tous les fragments de texte.
-
 1. Vérifiez chaque fragment pour l'état du texte invisible.
 1. Effacez le texte masqué et enregistrez le document.
 

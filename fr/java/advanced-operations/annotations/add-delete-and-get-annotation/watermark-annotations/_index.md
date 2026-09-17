@@ -3,7 +3,7 @@ title: Annotations en filigrane utilisant Java
 linktitle: Annotations en filigrane
 type: docs
 weight: 70
-url: /java/watermark-annotations/
+url: /fr/java/watermark-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide d'Aspose.PDF pour Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 ---
 Les annotations en filigrane vous permettent de placer du contenu de superposition réutilisable sur une page tout en le gérant via la collection d'annotations.
 
-
 ## Ajouter une annotation en filigrane
-
-
 
 Utilisez cet exemple lorsque vous avez besoin d’une annotation de filigrane de texte avec des paramètres de police et une opacité personnalisés.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez une [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) et ajoutez-la à la page.
 1. Configurez le [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), le texte du filigrane et l'opacité, puis enregistrez le document.
-
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {
@@ -55,16 +49,11 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 
 ## Obtenir des annotations en filigrane
 
-
-
 Cet exemple analyse la collection d'annotations et imprime le rectangle de chaque annotation en filigrane.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez les annotations sur la page cible.
 1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` et imprimez leurs rectangles.
-
 
 ```java
 public static void watermarkGet(Path inputFile) {
@@ -80,16 +69,11 @@ public static void watermarkGet(Path inputFile) {
 
 ## Supprimer les annotations en filigrane
 
-
-
 Utilisez cette approche lorsque les annotations de filigrane existantes doivent être supprimées du document.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Collectez les annotations de type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. Supprimez les annotations collectées et enregistrez le fichier de sortie.
-
 
 ```java
 public static void watermarkDelete(Path inputFile, Path outputFile) {
@@ -110,14 +94,9 @@ public static void watermarkDelete(Path inputFile, Path outputFile) {
 
 ## Sujets d'annotations associés
 
-
-- [Annotations interactives](/pdf/java/interactive-annotations/)
-
-- [Annotations de balisage](/pdf/java/markup-annotations/)
-
-- [Annotations de sécurité](/pdf/java/security-annotations/)
-- [Annotations de forme](/pdf/java/shape-annotations/)
-
-- [Annotations de texte](/pdf/java/text-based-annotations/)
-
-- [Importer et exporter des annotations](/pdf/java/import-export-annotations/)
+- [Annotations interactives](/pdf/fr/java/interactive-annotations/)
+- [Annotations de balisage](/pdf/fr/java/markup-annotations/)
+- [Annotations de sécurité](/pdf/fr/java/security-annotations/)
+- [Annotations de forme](/pdf/fr/java/shape-annotations/)
+- [Annotations de texte](/pdf/fr/java/text-based-annotations/)
+- [Importer et exporter des annotations](/pdf/fr/java/import-export-annotations/)

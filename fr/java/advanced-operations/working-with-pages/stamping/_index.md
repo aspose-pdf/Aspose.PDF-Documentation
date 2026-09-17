@@ -3,7 +3,7 @@ title: Tamponner les pages PDF en Java
 linktitle: Estampage
 type: docs
 weight: 120
-url: /java/stamping/
+url: /fr/java/stamping/
 description: Découvrez comment ajouter des numéros de page, des tampons de page, des tampons d'image et des tampons de texte aux pages PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,11 +15,7 @@ Abstract: Cet article explique comment ajouter des tampons aux documents PDF à 
 ---
 Aspose.PDF pour Java prend en charge plusieurs modèles d'estampage selon que le contenu est une image, un texte, une page PDF ou une superposition de numéros de page.
 
-
-- [Ajouter des numéros de page](/java/add-page-number/)
-
-- [Ajouter des tampons de page](/java/page-stamps-in-the-pdf-file/)
-
-- [Ajouter des tampons d'image](/java/image-stamps-in-pdf-page/)
-
-- [Ajouter des tampons de texte](/java/text-stamps-in-the-pdf-file/)
+- [Ajouter des numéros de page](/pdf/fr/java/add-page-number/)
+- [Ajouter des tampons de page](/pdf/fr/java/page-stamps-in-the-pdf-file/)
+- [Ajouter des tampons d'image](/pdf/fr/java/image-stamps-in-pdf-page/)
+- [Ajouter des tampons de texte](/pdf/fr/java/text-stamps-in-the-pdf-file/)

@@ -3,7 +3,7 @@ title: Annotations interactives utilisant Java
 linktitle: Annotations interactives
 type: docs
 weight: 60
-url: /java/interactive-annotations/
+url: /fr/java/interactive-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations de lien dans des documents PDF à l'aide d'Aspose.PDF pour Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment utiliser des annotations de liens interac
 ---
 Les annotations interactives de cette section se concentrent sur les flux de travail basés sur des liens et des boutons qui répondent aux actions de l'utilisateur dans une visionneuse PDF.
 
-
 ## Ajouter une annotation de lien
-
-
 
 Utilisez cet exemple lorsque vous devez placer un lien cliquable sur le texte trouvé sur la page.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Localisez le fragment de texte cible et créez une [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) sur son rectangle.
 1. Attribuez une [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) et enregistrez le document mis à jour.
-
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -49,16 +43,11 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 
 ## Obtenir des annotations de lien
 
-
-
 Cet exemple analyse la collection d'annotations de page et indique l'emplacement de chaque annotation de lien.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez les annotations sur la page cible.
 1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` et imprimez leurs rectangles.
-
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -74,16 +63,11 @@ public static void linkGet(Path inputFile) {
 
 ## Supprimer les annotations du lien
 
-
-
 Utilisez cette approche lorsque les annotations de liens existantes doivent être supprimées de la page.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Collectez les annotations dont le type est [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. Supprimez les annotations collectées et enregistrez le fichier de sortie.
-
 
 ```java
 public static void linkDelete(Path inputFile, Path outputFile) {
@@ -104,16 +88,11 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 
 ## Ajouter une annotation de ligne
 
-
-
 Cet exemple crée une annotation de ligne interactive avec des styles de flèches, des paramètres de bordure et une note contextuelle.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez une [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) avec des points de début et de fin.
 1. Configurez son apparence et son annotation contextuelle, puis enregistrez le document.
-
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -146,16 +125,11 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## Ajouter des boutons de navigation
 
-
-
 Utilisez cet exemple lorsque le PDF doit inclure des boutons de page précédente et de page suivante pour une navigation interactive.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et assurez-vous que le document contient les pages requises.
-
 1. Créez des contrôles [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) avec des actions de navigation prédéfinies.
 1. Ajoutez les boutons à la collection de formulaires et enregistrez le document mis à jour.
-
 
 ```java
 public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
@@ -186,13 +160,9 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 
 ## Ajouter un bouton d'impression
 
-
-
 Cet exemple crée un bouton qui déclenche la commande d'impression lorsque l'utilisateur clique dessus.
 
-
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
-
 1. Créez un [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) et attribuez l'action prédéfinie d'impression.
 1. Configurez la bordure et l'arrière-plan du bouton, ajoutez-les au formulaire et enregistrez le document.
 

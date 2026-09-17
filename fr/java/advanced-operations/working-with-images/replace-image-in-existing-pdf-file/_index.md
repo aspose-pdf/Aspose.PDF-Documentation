@@ -3,7 +3,7 @@ title: Remplacer l'image dans un fichier PDF existant à l'aide de Java
 linktitle: Remplacer l'image
 type: docs
 weight: 70
-url: /java/replace-image-in-existing-pdf-file/
+url: /fr/java/replace-image-in-existing-pdf-file/
 description: Découvrez comment remplacer les images intégrées dans des fichiers PDF existants en Java.
 lastmod: "2026-09-17"
 TechArticle: true
@@ -12,17 +12,12 @@ Abstract: Cet article montre comment remplacer des images dans des documents PDF
 ---
 Utilisez soit la collection d'images de page, soit la recherche basée sur l'emplacement en fonction de la précision avec laquelle vous devez cibler l'image.
 
-
 ## Remplacer une image par un index de ressources
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Accédez aux ressources d'images sur la [Page] cible (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-
 1. Remplacez la ressource image cible par le nouveau fichier image.
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 
 ```java
 public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -36,11 +31,8 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 
 ## Remplacez une image en utilisant `ImagePlacementAbsorber`
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) et visitez la [Page] cible (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-
 1. Obtenez la cible [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) et remplacez-la par le nouveau flux d'images.
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

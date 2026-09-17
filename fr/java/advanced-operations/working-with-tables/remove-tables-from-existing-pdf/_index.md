@@ -5,7 +5,7 @@ description: Découvrez comment supprimer un ou plusieurs tableaux de documents 
 lastmod: "2026-09-17"
 type: docs
 weight: 50
-url: /java/removing-tables/
+url: /fr/java/removing-tables/
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment supprimer des tableaux de documents PDF e
 ---
 Utilisez `TableAbsorber` lorsque vous devez supprimer un ou plusieurs tableaux détectés d'un PDF existant.
 
-
 ## Supprimer une table détectée
-
-
 
 Utilisez cet exemple lorsque seule la première table correspondante sur une page doit être supprimée.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Visitez la page cible avec [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Supprimez le premier tableau détecté et enregistrez le document.
-
 
 ```java
 public static void removeOneTable(Path inputFile, Path outputFile) {
@@ -42,13 +36,9 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 
 ## Supprimer toutes les tables détectées d'une page
 
-
-
 Utilisez cet exemple lorsque chaque table correspondante sur la page doit être supprimée.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Visitez la page cible avec [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) et copiez les tables détectées dans une liste.
 1. Supprimez chaque tableau détecté et enregistrez le PDF mis à jour.
 

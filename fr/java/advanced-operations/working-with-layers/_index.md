@@ -3,7 +3,7 @@ title: Travailler avec des calques PDF à l'aide de Java
 linktitle: Travailler avec des calques PDF
 type: docs
 weight: 50
-url: /java/working-with-pdf-layers/
+url: /fr/java/working-with-pdf-layers/
 description: Découvrez comment ajouter, verrouiller, extraire, aplatir et fusionner des calques PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,17 +15,12 @@ Abstract: Cet article explique comment utiliser les calques PDF, également appe
 ---
 Aspose.PDF pour Java expose les couches PDF via l'API `Layer` sur chaque page. Vous pouvez créer des groupes de contenu facultatifs, modifier leur comportement et exporter ou aplatir leur contenu si nécessaire.
 
-
 ## Ajouter des calques à une page PDF
 
-
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Créez et configurez les objets [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) requis sur la page.
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 
 ```java
 public static void addLayers(Path outputFile) {
@@ -44,18 +39,13 @@ public static void addLayers(Path outputFile) {
 }
 ```
 
-
 L'exemple complet crée trois calques distincts avec un contenu de lignes rouges, vertes et bleues.
-
 
 ## Verrouiller un calque
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Accédez à la [Page] cible (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et obtenez sa collection [Couche](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. Verrouillez la cible [Couche](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
-
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

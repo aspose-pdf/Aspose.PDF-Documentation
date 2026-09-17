@@ -3,7 +3,7 @@ title: Travailler avec des signets PDF en Java
 linktitle: Signets
 type: docs
 weight: 30
-url: /java/bookmarks/
+url: /fr/java/bookmarks/
 description: Découvrez comment ajouter, supprimer, récupérer, mettre à jour et développer des signets PDF en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,7 +15,5 @@ Abstract: Cet article explique comment utiliser les signets dans les documents P
 ---
 Les signets aident les utilisateurs à parcourir rapidement de longs fichiers PDF et fournissent un aperçu du document similaire à une table des matières.
 
-
-- [Ajouter et supprimer des favoris](/pdf/java/add-and-delete-bookmark/)
-
-- [Obtenir, mettre à jour et développer les favoris](/pdf/java/get-update-and-expand-bookmark/)
+- [Ajouter et supprimer des favoris](/pdf/fr/java/add-and-delete-bookmark/)
+- [Obtenir, mettre à jour et développer les favoris](/pdf/fr/java/get-update-and-expand-bookmark/)

@@ -3,7 +3,7 @@ title: Recadrer des pages PDF en Java
 linktitle: Recadrer des pages PDF
 type: docs
 weight: 70
-url: /java/crop-pages/
+url: /fr/java/crop-pages/
 description: Découvrez comment recadrer des pages PDF et ajuster les zones de recadrage, de découpage, de fond perdu et de support en Java.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment recadrer des pages PDF à l'aide d'Aspose
 ---
 Aspose.PDF pour Java vous permet de recadrer des pages soit par des coordonnées de boîte explicites, soit en fonction du contenu détecté.
 
-
 ## Recadrer une page en définissant des zones de page
-
-
 
 Utilisez cet exemple lorsque vous devez appliquer la même zone de recadrage aux zones de la page principale.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez le nouveau recadrage [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Appliquez le rectangle aux zones de page liées au recadrage et enregistrez le document.
-
 
 ```java
 public static void cropPage(Path inputFile, Path outputFile) {
@@ -44,13 +38,9 @@ public static void cropPage(Path inputFile, Path outputFile) {
 
 ## Recadrer une page en fonction du contenu détecté
 
-
-
 Utilisez cet exemple lorsque la zone de recadrage doit être dérivée de la première image détectée sur la page.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Utilisez [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) pour détecter les emplacements d'images.
 1. Set the crop box to the image rectangle if one is found, then save the document.
 

@@ -3,7 +3,7 @@ title: Modification d'AcroForm
 linktitle: Modification d'AcroForm
 type: docs
 weight: 45
-url: /java/modifying-form/
+url: /fr/java/modifying-form/
 description: Modifiez les champs AcroForm dans les documents PDF à l'aide d'Aspose.PDF pour Java, notamment en effaçant le texte, en définissant des limites, en stylisant les champs et en supprimant des champs.
 lastmod: "2026-09-17"
 sitemap:
@@ -15,19 +15,13 @@ Abstract: Cet article explique comment modifier le contenu AcroForm à l'aide d'
 ---
 La maintenance des formulaires implique souvent à la fois des modifications au niveau des champs et le nettoyage des ressources de page liées au formulaire.
 
-
 ## Texte clair dans les ressources de formulaire intégré
-
-
 
 Utilisez cet exemple lorsque le contenu du formulaire Typewriter doit être vidé sans supprimer les objets du formulaire eux-mêmes.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez les ressources de formulaires de page et localisez les formulaires Typewriter.
 1. Effacez les fragments de texte absorbés et enregistrez le document.
-
 
 ```java
 public static void clearTextInForm(Path inputFile, Path outputFile) {
@@ -49,16 +43,11 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 ## Définir une limite de longueur de champ de texte
 
-
-
 Utilisez cet exemple lorsqu'un champ de texte ne doit accepter qu'un nombre limité de caractères.
 
-
 1. Créez une façade [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) et liez le PDF source.
-
 1. Définissez la longueur maximale du champ cible.
 1. Enregistrez le document mis à jour.
-
 
 ```java
 public static void setFieldLimit(Path inputFile, Path outputFile) {
@@ -75,16 +64,11 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 
 ## Obtenir une limite de longueur de champ de texte
 
-
-
 Utilisez cet exemple lorsque vous devez inspecter la longueur maximale actuelle d’un champ de texte.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Accédez au champ cible à partir de la collection de formulaires.
 1. Lisez la limite de [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) et affichez-la.
-
 
 ```java
 public static void getFieldLimit(Path inputFile) {
@@ -99,16 +83,11 @@ public static void getFieldLimit(Path inputFile) {
 
 ## Changer la police d'un champ de formulaire
 
-
-
 Utilisez cet exemple lorsqu'un champ de texte existant doit utiliser une police ou une apparence différente.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Accédez à la cible [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) et définissez une nouvelle apparence par défaut.
 1. Enregistrez le PDF mis à jour.
-
 
 ```java
 public static void setFormFieldFont(Path inputFile, Path outputFile) {
@@ -126,13 +105,9 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 
 ## Supprimer un champ de formulaire par son nom
 
-
-
 Utilisez cet exemple lorsqu'un champ spécifique doit être supprimé de l'AcroForm.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Supprimez le champ cible du formulaire par son nom.
 1. Enregistrez le document mis à jour.
 
