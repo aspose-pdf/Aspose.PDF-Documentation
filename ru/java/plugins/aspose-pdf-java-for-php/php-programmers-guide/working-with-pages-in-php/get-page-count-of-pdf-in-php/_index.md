@@ -1,31 +1,34 @@
 ---
-title: Получить количество страниц PDF в PHP
+title: Получение количества страниц PDF в PHP
+linktitle: Получение количества страниц PDF в PHP
 type: docs
 weight: 40
 url: /ru/java/get-page-count-of-pdf-in-php/
-lastmod: "2021-06-05"
+description: Узнайте, как получить общее количество страниц PDF‑документа в PHP с помощью Aspose.PDF для анализа документов.
+lastmod: "2026-09-17"
 ---
+## Aspose.PDF - Получение количества страниц
 
-## Aspose.PDF - Получить количество страниц
+Чтобы получить количество страниц Pdf документа, используя **Aspose.PDF Java for PHP**, просто вызовите класс **GetNumberOfPages**.
 
-Чтобы получить количество страниц PDF документа с использованием **Aspose.PDF Java для PHP**, просто вызовите класс **GetNumberOfPages**.
-
-PHP Код
+PHP код
 
 ```php
 
-# Создать PDF документ
+# Create PDF document
 
 $pdf = new Document($dataDir . 'input1.pdf');
 
 $page_count = $pdf->getPages()->size();
 
-print "Количество страниц:" . $page_count . PHP_EOL;
+print "Page Count:" . $page_count . PHP_EOL;
 
 ```
 
-**Скачать выполняющийся код**
+**Скачать исполняемый код**
 
-Скачайте **Получить количество страниц (Aspose.PDF)** с любого из упомянутых ниже социальных кодовых сайтов:
+Скачайте **Получить количество страниц (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetNumberOfPages.php)
+
+
