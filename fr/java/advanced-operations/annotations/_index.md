@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/annotations/
 description: Découvrez comment ajouter, inspecter, supprimer, transférer et gérer des annotations PDF en Java avec Aspose.PDF, y compris du texte, des balises, des liens, des formes, des filigranes, des rédactions et des conseils d'annotation liés aux médias.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,6 @@ Les annotations sont des éléments PDF interactifs qui vous permettent d'ajoute
 Utilisez cette section pour :
 
 
-- 
-[Ajouter, supprimer et obtenir une annotation] (/pdf/java/add-delete-and-get-annotation/) pour les familles d'annotations groupées.
+- [Ajouter, supprimer et obtenir une annotation](/pdf/java/add-delete-and-get-annotation/) pour les familles d'annotations groupées.
 
-- 
-[Importer et exporter des annotations] (/pdf/java/import-export-annotations/) pour copier des annotations entre des fichiers PDF.
+- [Importer et exporter des annotations](/pdf/java/import-export-annotations/) pour copier des annotations entre des fichiers PDF.

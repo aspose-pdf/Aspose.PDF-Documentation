@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /java/attachments/
 description: Découvrez comment ajouter, extraire, organiser et supprimer des pièces jointes PDF en Java avec Aspose.PDF, y compris des fichiers intégrés, des annotations de pièces jointes et des portefeuilles PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,14 +16,10 @@ Abstract: Cet article explique comment travailler avec des pièces jointes PDF �
 Aspose.PDF pour Java vous permet de gérer les fichiers intégrés et les collections de portfolio directement dans les documents PDF. Dans cette section, vous pouvez apprendre à ajouter des pièces jointes, à extraire des fichiers intégrés, à supprimer des pièces jointes et à créer ou effacer des portefeuilles PDF.
 
 
-- 
-[Ajouter des pièces jointes à un PDF] (/pdf/java/add-attachment-to-pdf-document/)
+- [Ajouter des pièces jointes à un PDF](/pdf/java/add-attachment-to-pdf-document/)
 
-- 
-[Créer ou effacer un portfolio PDF] (/pdf/java/portfolio/)
+- [Créer ou effacer un portfolio PDF](/pdf/java/portfolio/)
 
-- 
-[Supprimer les pièces jointes d'un PDF existant] (/pdf/java/removing-attachment-from-an-existing-pdf/)
+- [Supprimer les pièces jointes d'un PDF existant](/pdf/java/removing-attachment-from-an-existing-pdf/)
 
-- 
-[Extraire les pièces jointes d'un PDF] (/pdf/java/extract-attachment/)
+- [Extraire les pièces jointes d'un PDF](/pdf/java/extract-attachment/)

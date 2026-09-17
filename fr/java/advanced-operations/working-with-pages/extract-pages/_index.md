@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/extract-pages/
 description: Découvrez comment extraire une ou plusieurs pages PDF dans de nouveaux fichiers en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment extraire des pages de fichiers PDF à l'a
 Aspose.PDF pour Java vous permet de copier les pages sélectionnées dans un nouveau document de destination.
 
 
-## 
-Extraire une seule page
+## Extraire une seule page
 
 
 
 Utilisez cet exemple lorsque vous devez enregistrer une page du PDF source dans un document distinct.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un document de destination.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un document de destination.
 
-1. 
-Copiez la page cible dans la collection de pages de destination.
+1. Copiez la page cible dans la collection de pages de destination.
 1. Enregistrez le nouveau PDF.
 
 
@@ -42,19 +39,16 @@ public static void extractPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Extraire plusieurs pages
+## Extraire plusieurs pages
 
 
 
 Utilisez cet exemple lorsque vous devez copier plusieurs pages dans un PDF séparé.
 
 
-1. 
-Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un document de destination.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un document de destination.
 
-1. 
-Itérez les index de page sélectionnés et ajoutez-les à la destination.
+1. Itérez les index de page sélectionnés et ajoutez-les à la destination.
 1. Enregistrez le document de pages extraites.
 
 ```java

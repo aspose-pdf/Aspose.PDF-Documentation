@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/add-curve/
 description: Apprenez à dessiner et à remplir des formes de courbes dans des fichiers PDF en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,28 +16,21 @@ Abstract: Cet article montre comment ajouter des formes de courbe aux documents 
 Les courbes dans Aspose.PDF pour Java sont définies par un tableau de coordonnées flottantes transmis à `Curve`.
 
 
-## 
-Ajouter un contour de courbe
+## Ajouter un contour de courbe
 
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ajoutez une [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
+1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
 
-1. 
-Créez un conteneur [Graph] (https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-1. Créez la forme [Courbe] (https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) et configurez ses points de contrôle.
+1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
+1. Créez la forme [Courbe](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) et configurez ses points de contrôle.
 
-1. 
-Ajoutez la [Courbe] (https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) au conteneur [Graph] (https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Ajoutez la [Courbe](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 
-1. 
-Définissez les propriétés de forme requises par l'exemple, notamment [Couleur] (https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Définissez les propriétés de forme requises par l'exemple, notamment [Couleur](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 
-1. 
-Enregistrez le PDF de sortie [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addCurve(Path outputFile) {

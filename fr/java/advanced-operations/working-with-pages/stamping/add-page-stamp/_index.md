@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/page-stamps-in-the-pdf-file/
 description: Découvrez comment ajouter des tampons de page PDF en tant que superpositions ou arrière-plans en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment ajouter un tampon de page à un document 
 Aspose.PDF pour Java peut appliquer une page d'un autre PDF comme tampon ou ajouter des superpositions de numérotation de pages.
 
 
-## 
-Ajouter un cachet de page à partir d'un autre PDF
+## Ajouter un cachet de page à partir d'un autre PDF
 
 
 
 Utilisez cet exemple lorsqu'une page d'un PDF distinct doit être utilisée comme tampon d'arrière-plan.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez un [PdfPageStamp] (https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) à partir de la page PDF externe.
+1. Créez un [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) à partir de la page PDF externe.
 1. Configurez le tampon et ajoutez-le à la page cible, puis enregistrez le résultat.
 
 
@@ -43,19 +40,16 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 }
 ```
 
-## 
-Ajouter un tampon de numéro de page standard
+## Ajouter un tampon de numéro de page standard
 
 
 
 Utilisez cet exemple lorsque la page cible doit afficher le numéro actuel avec un formatage de texte personnalisé.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez et configurez un [PageNumberStamp] (https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
+1. Créez et configurez un [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Ajoutez le tampon à la page et enregistrez le document.
 
 
@@ -79,19 +73,16 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter un tampon de numéro de page en chiffres romains
+## Ajouter un tampon de numéro de page en chiffres romains
 
 
 
 Utilisez cet exemple lorsque la numérotation des pages doit commencer à partir d’une valeur personnalisée et utiliser des chiffres romains majuscules.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez un [PageNumberStamp] (https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) et configurez la numérotation en chiffres romains.
+1. Créez un [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) et configurez la numérotation en chiffres romains.
 1. Ajoutez le tampon à toutes les pages et enregistrez le PDF.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/actions/
 description: Découvrez comment ajouter, mettre à jour et supprimer des actions de document, de page et de formulaire dans des fichiers PDF à l'aide de Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment utiliser des actions dans des documents P
 Aspose.PDF pour Java vous permet d'attribuer des actions aux boutons, documents et pages pour rendre les fichiers PDF interactifs.
 
 
-## 
-Ajouter une action d'impression nommée
+## Ajouter une action d'impression nommée
 
 
 
 Utilisez cet exemple lorsqu'un bouton sur la page doit déclencher la commande d'impression.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et sélectionnez la page cible.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et sélectionnez la page cible.
 
-1. 
-Créez un [ButtonField] (https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) et attribuez un [NamedAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) pour l'impression.
+1. Créez un [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) et attribuez un [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) pour l'impression.
 1. Ajoutez le bouton au formulaire et enregistrez le document.
 
 
@@ -54,19 +51,16 @@ public static void addNamedActionPrint(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter une action de masquage
+## Ajouter une action de masquage
 
 
 
 Utilisez cet exemple lorsqu'un bouton doit afficher ou masquer un ensemble de champs de formulaire, tels que des cases à cocher.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et récupérez les widgets du formulaire cible.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et récupérez les widgets du formulaire cible.
 
-1. 
-Créez un bouton et attribuez-lui une [HideAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/).
+1. Créez un bouton et attribuez-lui une [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/).
 1. Ajoutez le bouton au formulaire et enregistrez le document mis à jour.
 
 
@@ -93,19 +87,16 @@ public static void addNamedActionHide(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter des boutons de navigation dans les pages
+## Ajouter des boutons de navigation dans les pages
 
 
 
 Cet exemple crée des boutons de première page, précédente, suivante et dernière page dans le document.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez des boutons de navigation pour chaque page et attribuez l’action prédéfinie correspondante.
+1. Créez des boutons de navigation pour chaque page et attribuez l’action prédéfinie correspondante.
 1. Ajoutez les boutons au formulaire et enregistrez le document.
 
 
@@ -161,19 +152,16 @@ public static void addNavigationButtons(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter une action de soumission
+## Ajouter une action de soumission
 
 
 
 Utilisez cet exemple lorsqu'un bouton doit soumettre les données d'un formulaire à une URL.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez un [SubmitFormAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) avec l'URL cible et les indicateurs.
+1. Créez un [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) avec l'URL cible et les indicateurs.
 1. Attribuez l'action à un champ de bouton et enregistrez le document.
 
 
@@ -199,19 +187,16 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter des actions de lancement au niveau du document
+## Ajouter des actions de lancement au niveau du document
 
 
 
 Cet exemple attribue des actions JavaScript qui s'exécutent lorsque le document est ouvert, enregistré ou imprimé.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez les objets [JavascriptAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) requis pour les événements de document.
+1. Créez les objets [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) requis pour les événements de document.
 1. Attribuez les actions et enregistrez le document.
 
 
@@ -229,19 +214,16 @@ public static void addLaunchActions(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter des actions d'ouverture et de fermeture de page
+## Ajouter des actions d'ouverture et de fermeture de page
 
 
 
 Utilisez cet exemple lorsqu'une page spécifique doit déclencher des actions à l'ouverture et à la fermeture.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et assurez-vous que la page cible existe.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et assurez-vous que la page cible existe.
 
-1. 
-Créez la navigation dans la page et les actions JavaScript.
+1. Créez la navigation dans la page et les actions JavaScript.
 1. Attribuez les actions de page et enregistrez le document.
 
 
@@ -265,19 +247,16 @@ public static void addPageActions(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Supprimer les actions de la page
+## Supprimer les actions de la page
 
 
 
 Utilisez cette approche lorsque les actions d'ouverture et de fermeture précédemment attribuées doivent être supprimées d'une page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et assurez-vous que la page cible existe.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et assurez-vous que la page cible existe.
 
-1. 
-Supprimez toutes les actions de cette page.
+1. Supprimez toutes les actions de cette page.
 1. Enregistrez le document mis à jour.
 
 ```java

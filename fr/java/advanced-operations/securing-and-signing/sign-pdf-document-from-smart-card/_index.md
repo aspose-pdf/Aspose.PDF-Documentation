@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/sign-pdf-document-from-smart-card/
 description: Consultez l'exemple Java actuel de signature de PDF basée sur un certificat dans Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,44 +16,32 @@ Abstract: Cette page décrit la portée actuelle des exemples de signature dispo
 Le référentiel Java actuel n'inclut pas d'exemple de signature de carte à puce dédié basé sur la source sous `facades/pdffilesignature`, mais le flux de travail suivant montre le modèle d'API typique pour signer un PDF avec un certificat sélectionné dans un magasin de certificats local.
 
 
-## 
-Signer un document PDF à partir d'une carte à puce
+## Signer un document PDF à partir d'une carte à puce
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez une façade [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
+1. Créez une façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
 
-1. 
-Récupérez le certificat local et créez la [ExternalSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf/externalsignature/) requise.
-1. Configurez l'apparence de la signature visuelle et la cible [Rectangle] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Récupérez le certificat local et créez la [ExternalSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/externalsignature/) requise.
+1. Configurez l'apparence de la signature visuelle et la cible [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 
-1. 
-Appliquez la signature au document PDF via [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Appliquez la signature au document PDF via [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
-1. 
-Enregistrez le document PDF mis à jour.
+1. Enregistrez le document PDF mis à jour.
 
-1. 
-Liez le document chargé à la façade [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) avec `bindPdf(...)`.
+1. Liez le document chargé à la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) avec `bindPdf(...)`.
 
-1. 
-Récupérez le certificat local qui représente les informations d'identification de la carte à puce en appelant `getLocalCertificate()`.
+1. Récupérez le certificat local qui représente les informations d'identification de la carte à puce en appelant `getLocalCertificate()`.
 1. Vérifiez si un certificat a été trouvé. Sinon, enregistrez le fichier de sortie inchangé et arrêtez le flux de travail.
 
-1. 
-Créez une [ExternalSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf/externalsignature/) à partir du certificat sélectionné.
+1. Créez une [ExternalSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/externalsignature/) à partir du certificat sélectionné.
 
-1. 
-Définissez l'image d'apparence de la signature visuelle avec `setSignatureAppearance(...)`.
+1. Définissez l'image d'apparence de la signature visuelle avec `setSignatureAppearance(...)`.
 
-1. 
-Appelez `sign(...)` avec la page cible, le motif, le contact, l'emplacement, l'indicateur de visibilité, la signature [Rectangle] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) et l'objet de signature externe.
+1. Appelez `sign(...)` avec la page cible, le motif, le contact, l'emplacement, l'indicateur de visibilité, la signature [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) et l'objet de signature externe.
 
-1. 
-Enregistrez le PDF signé dans le chemin de sortie.
+1. Enregistrez le PDF signé dans le chemin de sortie.
 
 ```java
 public static void signWithSmartCard(Path inputFile, Path outputFile, Path pngFile) {

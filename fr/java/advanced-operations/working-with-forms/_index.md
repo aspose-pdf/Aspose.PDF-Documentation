@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/working-with-forms/
 description: Découvrez comment créer, remplir, extraire, modifier, soumettre, importer, exporter et convertir des formulaires PDF en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,8 +16,6 @@ Abstract: Cette section explique comment utiliser des formulaires PDF à l'aide 
 Aspose.PDF pour Java fournit à la fois des API DOM et de façade pour les flux de travail de formulaires PDF. Vous pouvez créer de nouveaux AcroForms, mettre à jour les champs existants, échanger des données de formulaire dans des formats courants et convertir des documents XFA en formulaires standard.
 
 
-- 
-[Travailler avec AcroForms] (/pdf/java/acroforms/)
+- [Travailler avec AcroForms](/pdf/java/acroforms/)
 
-- 
-[Travailler avec les formulaires XFA] (/pdf/java/xfa-forms/)
+- [Travailler avec les formulaires XFA](/pdf/java/xfa-forms/)

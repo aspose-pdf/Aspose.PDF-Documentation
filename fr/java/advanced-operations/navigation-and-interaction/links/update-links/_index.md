@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/update-links/
 description: Découvrez comment mettre à jour l’apparence et les destinations des liens PDF en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article montre comment mettre à jour les annotations de liens exi
 Les liens existants peuvent être modifiés en recherchant l'annotation du lien sur une page et en mettant à jour son apparence ou son action.
 
 
-## 
-Mettre à jour la couleur du texte lié
+## Mettre à jour la couleur du texte lié
 
 
 
 Utilisez cet exemple lorsque la zone de texte couverte par une annotation de lien doit être recolorée.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recherchez des annotations de lien et créez un rectangle de recherche de texte à partir de chaque zone d'annotation.
+1. Recherchez des annotations de lien et créez un rectangle de recherche de texte à partir de chaque zone d'annotation.
 1. Recolorez les fragments de texte correspondants et enregistrez le document.
 
 
@@ -56,19 +53,16 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 }
 ```
 
-## 
-Mettre à jour la couleur de la bordure du lien
+## Mettre à jour la couleur de la bordure du lien
 
 
 
 Utilisez cet exemple lorsque la couleur visible des annotations de liens existantes doit être modifiée.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez les annotations de la page et filtrez les objets [LinkAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
+1. Parcourez les annotations de la page et filtrez les objets [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
 1. Mettez à jour la couleur de l'annotation du lien et enregistrez le document.
 
 
@@ -87,19 +81,16 @@ public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Mettre à jour une destination de lien Web
+## Mettre à jour une destination de lien Web
 
 
 
 Utilisez cet exemple lorsqu'un lien Web existant doit pointer vers un nouvel URI.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recherchez les annotations de lien dont l'action est une [GoToURIAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Recherchez les annotations de lien dont l'action est une [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Remplacez l'URI et enregistrez le document mis à jour.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-links/
 description: Découvrez comment extraire des annotations de liens et des hyperliens à partir de documents PDF en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment extraire des annotations de lien à parti
 Vous pouvez inspecter les liens PDF en parcourant les annotations de page et en filtrant `AnnotationType.Link`.
 
 
-## 
-Extraire les annotations du lien
+## Extraire les annotations du lien
 
 
 
 Utilisez cet exemple lorsque vous avez besoin des informations d'emplacement et de page pour les annotations de lien sur une page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez les annotations de page et filtrez les annotations de lien.
+1. Parcourez les annotations de page et filtrez les annotations de lien.
 1. Lisez l'index de la page et le rectangle pour chaque lien correspondant.
 
 
@@ -46,19 +43,16 @@ public static void extractLinkAnnotation(Path inputFile) {
 }
 ```
 
-## 
-Extraire les destinations des hyperliens
+## Extraire les destinations des hyperliens
 
 
 
 Utilisez cet exemple lorsque vous devez lire les URI cibles à partir des annotations de liens Web.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Recherchez les objets [LinkAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dont l'action est une [GoToURIAction] (https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Recherchez les objets [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dont l'action est une [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Imprimez l'index de la page et la cible URI pour chaque lien hypertexte.
 
 ```java

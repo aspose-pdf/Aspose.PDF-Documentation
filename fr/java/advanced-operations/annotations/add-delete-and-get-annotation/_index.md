@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-delete-and-get-annotation/
 description: Utilisez Aspose.PDF pour Java pour ajouter, inspecter et supprimer des annotations PDF dans les flux de travail de texte, de balisage, interactifs, de forme, de filigrane, de sécurité et liés aux médias.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,21 +20,15 @@ Cette page regroupe les familles d'annotations couvertes par les exemples Java d
 Utilisez les sujets suivants :
 
 
-- 
-[Annotations de texte] (/pdf/java/text-based-annotations/)
+- [Annotations de texte](/pdf/java/text-based-annotations/)
 
-- 
-[Annotations de balisage] (/pdf/java/markup-annotations/)
+- [Annotations de balisage](/pdf/java/markup-annotations/)
 
-- 
-[Annotations interactives] (/pdf/java/interactive-annotations/)
-- [Annotations de forme] (/pdf/java/shape-annotations/)
+- [Annotations interactives](/pdf/java/interactive-annotations/)
+- [Annotations de forme](/pdf/java/shape-annotations/)
 
-- 
-[Annotations des médias] (/pdf/java/media-annotations/)
+- [Annotations des médias](/pdf/java/media-annotations/)
 
-- 
-[Annotations de sécurité] (/pdf/java/security-annotations/)
+- [Annotations de sécurité](/pdf/java/security-annotations/)
 
-- 
-[Annotations en filigrane] (/pdf/java/watermark-annotations/)
+- [Annotations en filigrane](/pdf/java/watermark-annotations/)

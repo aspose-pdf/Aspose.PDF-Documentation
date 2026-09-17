@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/manipulating-tables/
 description: Découvrez comment inspecter et modifier des tableaux dans des documents PDF existants à l'aide de Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment manipuler des tableaux déjà présents d
 Utilisez `TableAbsorber` lorsque vous devez localiser des tables existantes et mettre à jour leur contenu.
 
 
-## 
-Remplacer le texte à l'intérieur d'une cellule de tableau
+## Remplacer le texte à l'intérieur d'une cellule de tableau
 
 
 
 Utilisez cet exemple lorsque le texte d'une cellule détectée doit être mis à jour sans reconstruire l'intégralité du tableau.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et visitez la page avec [TableAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et visitez la page avec [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 
-1. 
-Vérifiez que la table cible et les fragments de texte de cellule existent.
+1. Vérifiez que la table cible et les fragments de texte de cellule existent.
 1. Remplacez le texte de la cellule et enregistrez le document mis à jour.
 
 
@@ -52,19 +49,16 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Remplacer une table détectée par une nouvelle table
+## Remplacer une table détectée par une nouvelle table
 
 
 
 Utilisez cet exemple lorsque la table d'origine doit être entièrement remplacée par une table nouvellement construite.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et détectez les tableaux sur la page.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et détectez les tableaux sur la page.
 
-1. 
-Créez une nouvelle [Table] (https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) avec la structure souhaitée.
+1. Créez une nouvelle [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) avec la structure souhaitée.
 1. Remplacez le tableau absorbé et enregistrez le PDF de sortie.
 
 ```java

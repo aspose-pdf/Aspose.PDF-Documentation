@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/integrate-table/
 description: Découvrez comment intégrer des tableaux PDF à des sources de données structurées telles que des fichiers CSV en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment intégrer des tableaux PDF avec des donn�
 L'exemple Java crée des tableaux PDF à partir de données CSV sans recourir à des bibliothèques de trames de données externes.
 
 
-## 
-Construire un tableau à partir de lignes CSV
+## Construire un tableau à partir de lignes CSV
 
 
 
 Utilisez cet exemple lorsque les colonnes CSV sélectionnées doivent être transformées en un tableau PDF stylisé.
 
 
-1. 
-Créez une [Table] (https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) et configurez ses bordures.
+1. Créez une [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) et configurez ses bordures.
 
-1. 
-Détectez les index de colonnes requis à partir de la ligne d’en-tête CSV.
+1. Détectez les index de colonnes requis à partir de la ligne d’en-tête CSV.
 1. Ajoutez la ligne d'en-tête et le nombre demandé de lignes de données, puis renvoyez le tableau.
 
 
@@ -61,20 +58,17 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 }
 ```
 
-## 
-Créer un PDF à partir de données CSV
+## Créer un PDF à partir de données CSV
 
 
 
 Utilisez cet exemple lorsque l’entrée CSV doit être restituée sous forme de document tableau PDF.
 
 
-1. 
-Lisez les lignes CSV du fichier d'entrée.
+1. Lisez les lignes CSV du fichier d'entrée.
 
-1. 
-Prévisualisez un sous-ensemble des lignes analysées dans la console.
-1. Créez un [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), ajoutez le tableau généré et enregistrez le fichier de sortie.
+1. Prévisualisez un sous-ensemble des lignes analysées dans la console.
+1. Créez un document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), ajoutez le tableau généré et enregistrez le fichier de sortie.
 
 
 ```java
@@ -92,19 +86,16 @@ public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows
 }
 ```
 
-## 
-Rechercher les index de colonnes CSV par nom
+## Rechercher les index de colonnes CSV par nom
 
 
 
 Utilisez cette assistante lorsque des colonnes nommées spécifiques doivent être situées dans la ligne d'en-tête CSV.
 
 
-1. 
-Parcourez les noms de colonnes demandés.
+1. Parcourez les noms de colonnes demandés.
 
-1. 
-Recherchez dans la ligne d'en-tête les index correspondants.
+1. Recherchez dans la ligne d'en-tête les index correspondants.
 1. Renvoie les positions des colonnes collectées.
 
 
@@ -124,19 +115,16 @@ private static int[] findColumns(String[] header, String... names) {
 }
 ```
 
-## 
-Lire les lignes CSV d'un fichier
+## Lire les lignes CSV d'un fichier
 
 
 
 Utilisez cet assistant lorsque la source CSV doit être chargée en mémoire avant la génération de la table.
 
 
-1. 
-Lisez toutes les lignes du fichier d'entrée.
+1. Lisez toutes les lignes du fichier d'entrée.
 
-1. 
-Divisez chaque ligne avec l'assistant de l'analyseur CSV.
+1. Divisez chaque ligne avec l'assistant de l'analyseur CSV.
 1. Renvoie les valeurs de ligne collectées.
 
 
@@ -150,19 +138,16 @@ private static List<String[]> readCsv(Path inputFile) throws Exception {
 }
 ```
 
-## 
-Diviser une ligne CSV en valeurs
+## Diviser une ligne CSV en valeurs
 
 
 
 Utilisez cet assistant lorsqu'une ligne CSV peut contenir des valeurs entre guillemets et des guillemets d'échappement.
 
 
-1. 
-Parcourez les caractères de la ligne.
+1. Parcourez les caractères de la ligne.
 
-1. 
-Vérifiez si l'analyseur se trouve actuellement dans le texte cité.
+1. Vérifiez si l'analyseur se trouve actuellement dans le texte cité.
 1. Créez la liste de valeurs finale et renvoyez-la sous forme de tableau.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/split-pdf-document/
 description: Découvrez comment diviser des pages PDF en fichiers PDF distincts en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,23 +16,19 @@ Abstract: Cet article explique comment diviser des documents PDF à l'aide d'Asp
 Aspose.PDF pour Java prend en charge plusieurs modèles de fractionnement au-delà d'une sortie d'une page par fichier.
 
 
-## 
-Diviser un PDF en fichiers d'une seule page
+## Diviser un PDF en fichiers d'une seule page
 
 
 
 Utilisez cette approche lorsque chaque page source doit devenir un document de sortie distinct.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) pour chaque [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) que vous souhaitez exporter.
-1. Ajoutez la [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) sélectionnée au nouveau document.
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) pour chaque [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) que vous souhaitez exporter.
+1. Ajoutez la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) sélectionnée au nouveau document.
 
-1. 
-Enregistrez chaque PDF de sortie [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez chaque PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
 ```java
@@ -48,23 +44,19 @@ public static void splitDocuments(Path inputFile, Path outputDir) {
 }
 ```
 
-## 
-Diviser un PDF en deux parties
+## Diviser un PDF en deux parties
 
 
 
 Cet exemple divise le document source en deux fichiers de sortie séquentiels en fonction du point médian.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Calculez le point médian de la collection [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) disponible.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Calculez le point médian de la collection [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) disponible.
 
-1. 
-Copiez la première moitié des pages dans un document de sortie et les pages restantes dans un autre.
+1. Copiez la première moitié des pages dans un document de sortie et les pages restantes dans un autre.
 
-1. 
-Enregistrez les deux documents de résultats.
+1. Enregistrez les deux documents de résultats.
 
 
 ```java
@@ -90,23 +82,19 @@ public static void splitDocumentsIntoTwoParts(Path inputFile, Path outputDir) {
 }
 ```
 
-## 
-Diviser un PDF en groupes de pages de taille fixe
+## Diviser un PDF en groupes de pages de taille fixe
 
 
 
 Utilisez ce modèle lorsque chaque fichier de sortie doit contenir le même nombre de pages, sauf éventuellement la dernière partie.
 
-1. Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez la collection [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) par groupes de `pagesPerPart`.
+1. Parcourez la collection [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) par groupes de `pagesPerPart`.
 
-1. 
-Créez un nouveau document de sortie pour chaque groupe et copiez-y la plage de pages calculée.
+1. Créez un nouveau document de sortie pour chaque groupe et copiez-y la plage de pages calculée.
 
-1. 
-Enregistrez chaque partie avec un nom de fichier généré.
+1. Enregistrez chaque partie avec un nom de fichier généré.
 
 
 ```java
@@ -129,23 +117,18 @@ public static void splitDocumentsEveryNPages(Path inputFile, Path outputDir, int
 }
 ```
 
-## 
-Diviser un PDF par plages de pages personnalisées
+## Diviser un PDF par plages de pages personnalisées
 
 Cet exemple vous permet de définir des pages de début et de fin explicites pour chaque document de sortie.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Définissez les plages [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) requises dans un tableau ou une autre collection.
+1. Définissez les plages [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) requises dans un tableau ou une autre collection.
 
-1. 
-Validez chaque plage par rapport au nombre de pages source et copiez les pages correspondantes dans un nouveau document.
+1. Validez chaque plage par rapport au nombre de pages source et copiez les pages correspondantes dans un nouveau document.
 
-1. 
-Enregistrez chaque fichier de sortie basé sur une plage.
+1. Enregistrez chaque fichier de sortie basé sur une plage.
 
 ```java
 public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
@@ -184,14 +167,11 @@ public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
 Utilisez cette approche lorsque la page de garde doit être exportée séparément du reste du document.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et confirmez qu'il contient des pages.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et confirmez qu'il contient des pages.
 
-1. 
-Créez un document de sortie pour la première [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Créez un document de sortie pour la première [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Créez un autre document pour la plage de pages restante lorsque plusieurs pages sont disponibles.
+1. Créez un autre document pour la plage de pages restante lorsque plusieurs pages sont disponibles.
 1. Enregistrez les deux résultats.
 
 
@@ -222,23 +202,19 @@ public static void splitDocumentsFirstPageAndRest(Path inputFile, Path outputDir
 }
 ```
 
-## 
-Diviser la dernière page et les pages précédentes
+## Diviser la dernière page et les pages précédentes
 
 
 
 Cet exemple sépare la page finale du reste du document, ce qui est utile pour extraire des pages de résumé ou de signature.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et vérifiez qu'il n'est pas vide.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et vérifiez qu'il n'est pas vide.
 
-1. 
-Copiez la dernière [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dans un nouveau document de sortie.
+1. Copiez la dernière [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dans un nouveau document de sortie.
 1. Supprimez cette page du document original lorsqu'il reste des pages antérieures.
 
-1. 
-Enregistrez la dernière page et les pages restantes dans des fichiers séparés.
+1. Enregistrez la dernière page et les pages restantes dans des fichiers séparés.
 
 
 ```java
@@ -264,23 +240,19 @@ public static void splitDocumentsLastPageAndRest(Path inputFile, Path outputDir)
 }
 ```
 
-## 
-Diviser un PDF en trois parties
+## Diviser un PDF en trois parties
 
 
 
 Utilisez ce modèle lorsque le document doit être divisé en trois sections consécutives de taille à peu près égale.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et déterminez le nombre total de pages.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et déterminez le nombre total de pages.
 1. Calculez la taille approximative de chaque partie de sortie.
 
-1. 
-Créez jusqu'à trois documents et copiez les plages [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) correspondantes.
+1. Créez jusqu'à trois documents et copiez les plages [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) correspondantes.
 
-1. 
-Enregistrez chaque pièce générée.
+1. Enregistrez chaque pièce générée.
 
 
 ```java
@@ -310,23 +282,19 @@ public static void splitDocumentsIntoThreeParts(Path inputFile, Path outputDir) 
 }
 ```
 
-## 
-Diviser un PDF en groupes de pages personnalisés
+## Diviser un PDF en groupes de pages personnalisés
 
 
 
 Cet exemple montre comment créer des fichiers de sortie à partir d'ensembles de pages non séquentiels au lieu de plages continues.
 
-1. Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Définissez des groupes personnalisés de numéros [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Définissez des groupes personnalisés de numéros [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Créez un nouveau document de sortie pour chaque groupe et ajoutez uniquement les pages valides de ce groupe.
+1. Créez un nouveau document de sortie pour chaque groupe et ajoutez uniquement les pages valides de ce groupe.
 
-1. 
-Enregistrez chaque document de groupe non vide.
+1. Enregistrez chaque document de groupe non vide.
 
 
 ```java
@@ -355,20 +323,16 @@ public static void splitDocumentsCustomPageGroups(Path inputFile, Path outputDir
 }
 ```
 
-## 
-Divisez un PDF en pages uniques avec des noms de fichiers stables
+## Divisez un PDF en pages uniques avec des noms de fichiers stables
 
 Utilisez cette version lorsque les noms de sortie doivent rester triables lexicalement, par exemple dans des pipelines automatisés.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez un document de sortie pour chaque [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Créez un document de sortie pour chaque [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Enregistrez chaque fichier avec un numéro de page complété par des zéros.
+1. Enregistrez chaque fichier avec un numéro de page complété par des zéros.
 
 
 ```java
@@ -384,23 +348,18 @@ public static void splitDocumentsWithStableFilenames(Path inputFile, Path output
 }
 ```
 
-## 
-Diviser un PDF en pages paires et impaires
+## Diviser un PDF en pages paires et impaires
 
 Cet exemple crée deux sorties en séparant les pages en fonction de leur parité de numéro de page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez un document de sortie pour les numéros de [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) impairs et un autre pour les numéros de page pairs.
+1. Créez un document de sortie pour les numéros de [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) impairs et un autre pour les numéros de page pairs.
 
-1. 
-Parcourez les pages sources avec l'incrément requis pour chaque document de sortie.
+1. Parcourez les pages sources avec l'incrément requis pour chaque document de sortie.
 
-1. 
-Enregistrez séparément les résultats des pages impaires et des pages paires.
+1. Enregistrez séparément les résultats des pages impaires et des pages paires.
 
 ```java
 public static void splitDocumentsOddEvenPages(Path inputFile, Path outputDir) {

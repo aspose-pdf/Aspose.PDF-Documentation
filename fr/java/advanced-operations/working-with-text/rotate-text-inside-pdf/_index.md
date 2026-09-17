@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/rotate-text-inside-pdf/
 description: Découvrez comment faire pivoter des fragments de texte et des paragraphes dans des documents PDF en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment faire pivoter le texte dans des documents
 Aspose.PDF pour Java vous permet de faire pivoter des fragments de texte individuels ainsi que des paragraphes de texte entiers.
 
 
-## 
-Faire pivoter des fragments de texte individuels
+## Faire pivoter des fragments de texte individuels
 
 
 
 Utilisez cet exemple lorsque plusieurs fragments de texte sur la même ligne doivent utiliser des angles de rotation différents.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez des fragments de texte avec les valeurs de rotation requises.
+1. Créez des fragments de texte avec les valeurs de rotation requises.
 1. Ajoutez-les avec `TextBuilder` et enregistrez le résultat.
 
 
@@ -64,19 +61,16 @@ public static void rotateTextInsidePdf1(Path outputFile) {
    }
 ```
 
-## 
-Faire pivoter les lignes à l'intérieur d'un paragraphe de texte
+## Faire pivoter les lignes à l'intérieur d'un paragraphe de texte
 
 
 
 Utilisez cet exemple lorsqu'un paragraphe doit contenir à la fois des lignes normales et pivotées.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un `TextParagraph` et ajoutez des fragments de texte avec différents paramètres de rotation.
+1. Créez un `TextParagraph` et ajoutez des fragments de texte avec différents paramètres de rotation.
 1. Ajoutez le paragraphe à la page et enregistrez le document.
 
 
@@ -113,19 +107,16 @@ public static void rotateTextInsidePdf2(Path outputFile) {
 }
 ```
 
-## 
-Faire pivoter des fragments de paragraphe sans positions explicites
+## Faire pivoter des fragments de paragraphe sans positions explicites
 
 
 
 Utilisez cet exemple lorsque le texte pivoté doit être ajouté via le flux normal des paragraphes de la page.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez plusieurs fragments de texte avec des valeurs de rotation différentes.
+1. Créez plusieurs fragments de texte avec des valeurs de rotation différentes.
 1. Ajoutez-les à la collection de paragraphes de page et enregistrez le PDF.
 
 
@@ -157,19 +148,16 @@ public static void rotateTextInsidePdf3(Path outputFile) {
 }
 ```
 
-## 
-Faire pivoter des paragraphes complets
+## Faire pivoter des paragraphes complets
 
 
 
 Utilisez cet exemple lorsque le bloc de paragraphe entier doit être pivoté tandis que chaque ligne conserve un style partagé.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez plusieurs objets `TextParagraph` avec rotation au niveau du paragraphe.
+1. Créez plusieurs objets `TextParagraph` avec rotation au niveau du paragraphe.
 1. Créez les lignes avec une méthode d'assistance partagée, ajoutez-les et enregistrez le document.
 
 ```java

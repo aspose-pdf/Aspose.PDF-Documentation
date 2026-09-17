@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/digitally-sign-pdf-file/
 description: Découvrez comment signer et certifier numériquement des documents PDF en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,18 +16,14 @@ Abstract: Ce guide explique comment signer numériquement des documents PDF à l
 Aspose.PDF pour Java prend en charge plusieurs flux de signature via `PdfFileSignature`.
 
 
-## 
-Signer un PDF avec un objet de certificat
+## Signer un PDF avec un objet de certificat
 
 
-1. 
-Créez la façade [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
+1. Créez la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
 
-1. 
-Créez l'objet de signature [PKCS7] (https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) et configurez les options de signature.
+1. Créez l'objet de signature [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) et configurez les options de signature.
 
-1. 
-Appliquez la signature au document PDF via [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Appliquez la signature au document PDF via [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Enregistrez le document PDF mis à jour.
 
 
@@ -48,19 +44,15 @@ public static void signPdfWithCertificateObject(Path inputFile, Path certificate
 Cette approche crée d'abord un objet de signature `PKCS7`, puis l'applique à la page 1.
 
 
-## 
-Signer un PDF avec les paramètres de certificat de base
+## Signer un PDF avec les paramètres de certificat de base
 
 
-1. 
-Créez la façade [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
+1. Créez la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
 
-1. 
-Configurez les paramètres de certificat requis par l'exemple de signature.
-1. Appliquez la signature au document PDF via [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. Configurez les paramètres de certificat requis par l'exemple de signature.
+1. Appliquez la signature au document PDF via [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
-1. 
-Enregistrez le document PDF mis à jour.
+1. Enregistrez le document PDF mis à jour.
 
 
 ```java
@@ -77,20 +69,17 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 }
 ```
 
-## 
-Certifier un PDF avec DocMDP
+## Certifier un PDF avec DocMDP
 
 
 
 Utilisez une signature de détection et de prévention des modifications de documents lorsque vous avez besoin de restrictions au niveau de la certification :
 
 
-1. 
-Créez la façade [PdfFileSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
-1. Créez l'objet [DocMDPSignature] (https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) et configurez les options de signature [DocMDPAccessPermissions] (https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/).
+1. Créez la façade [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) et liez le document PDF source.
+1. Créez l'objet [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) et configurez les options de signature [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/).
 
-1. 
-Appliquez la signature de certification et enregistrez le document PDF mis à jour.
+1. Appliquez la signature de certification et enregistrez le document PDF mis à jour.
 
 ```java
 public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {

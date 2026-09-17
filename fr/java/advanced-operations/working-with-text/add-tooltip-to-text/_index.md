@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/pdf-tooltip/
 description: Découvrez comment ajouter des info-bulles aux fragments de texte dans des documents PDF en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,23 +16,19 @@ Abstract: Cet article montre comment ajouter une aide interactive au texte PDF �
 Aspose.PDF pour Java vous permet d'ajouter une aide interactive en plaçant des champs de formulaire sur des fragments de texte.
 
 
-## 
-Ajouter des info-bulles au texte correspondant
+## Ajouter des info-bulles au texte correspondant
 
 
 
 Utilisez cet exemple lorsque le texte existant dans le PDF doit afficher une info-bulle au survol.
 
 
-1. 
-Créez l'exemple de PDF et rouvrez-le pour le modifier.
+1. Créez l'exemple de PDF et rouvrez-le pour le modifier.
 
-1. 
-Recherchez les fragments de texte cibles avec `TextFragmentAbsorber`.
+1. Recherchez les fragments de texte cibles avec `TextFragmentAbsorber`.
 1. Placez les superpositions `ButtonField` sur le texte correspondant et attribuez le texte de l'info-bulle.
 
-1. 
-Enregistrez le document mis à jour.
+1. Enregistrez le document mis à jour.
 
 
 ```java
@@ -77,23 +73,19 @@ public static void addToolTipToSearchedText(Path outputFile) {
     }
 ```
 
-## 
-Afficher un bloc de texte flottant au survol
+## Afficher un bloc de texte flottant au survol
 
 
 
 Utilisez cet exemple lorsque le survol d'une zone de texte doit révéler un champ de texte masqué.
 
 
-1. 
-Créez l'exemple de PDF et rouvrez-le pour le modifier.
+1. Créez l'exemple de PDF et rouvrez-le pour le modifier.
 1. Recherchez le fragment de texte déclencheur avec `TextFragmentAbsorber`.
 
-1. 
-Créez un `TextBoxField` masqué et un `ButtonField` avec des actions d'entrée et de sortie.
+1. Créez un `TextBoxField` masqué et un `ButtonField` avec des actions d'entrée et de sortie.
 
-1. 
-Enregistrez le PDF final.
+1. Enregistrez le PDF final.
 
 ```java
 public static void createHiddenTextBlock(Path outputFile) {

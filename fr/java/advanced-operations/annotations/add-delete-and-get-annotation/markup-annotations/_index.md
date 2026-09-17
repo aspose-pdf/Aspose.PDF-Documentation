@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/markup-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations surlignées, soulignées, ondulées et barrées dans des documents PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 Les workflows d'annotation de balisage de cette section se concentrent sur les commentaires de style note, les marqueurs caret et les scénarios de remplacement-révision groupés.
 
 
-## 
-Ajouter une annotation de texte
+## Ajouter une annotation de texte
 
 
 
 Utilisez cet exemple lorsque vous devez placer une annotation de texte de style pense-bête avec des métadonnées contextuelles sur une page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez une [TextAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) et configurez son titre, son contenu, son icône et sa fenêtre contextuelle.
+1. Créez une [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) et configurez son titre, son contenu, son icône et sa fenêtre contextuelle.
 1. Ajoutez l'annotation à la page et enregistrez le document.
 
 
@@ -57,20 +54,17 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Obtenir des annotations de texte
+## Obtenir des annotations de texte
 
 
 
 Cet exemple numérise la page et imprime le rectangle de chaque annotation de texte.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez les annotations sur la page.
-1. Filtrez les annotations par [AnnotationType] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` et imprimez leurs rectangles.
+1. Parcourez les annotations sur la page.
+1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` et imprimez leurs rectangles.
 
 
 ```java
@@ -85,19 +79,16 @@ public static void textAnnotationGet(Path inputFile) {
 }
 ```
 
-## 
-Supprimer les annotations de texte
+## Supprimer les annotations de texte
 
 
 
 Utilisez cette approche lorsque les annotations de texte existantes doivent être supprimées du document.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Collectez les annotations de type [AnnotationType] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. Collectez les annotations de type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
 1. Supprimez les annotations collectées et enregistrez le fichier de sortie.
 
 
@@ -118,19 +109,16 @@ public static void textAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter une annotation caret
+## Ajouter une annotation caret
 
 
 
 Utilisez cet exemple lorsque vous devez marquer le texte inséré avec une annotation de révision de type curseur.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez une [CaretAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) et configurez sa fenêtre contextuelle et son apparence.
+1. Créez une [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) et configurez sa fenêtre contextuelle et son apparence.
 1. Ajoutez l'annotation à la page et enregistrez le document.
 
 
@@ -156,20 +144,17 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Obtenir des annotations de signe d'insertion
+## Obtenir des annotations de signe d'insertion
 
 
 
 Cet exemple lit les annotations caret existantes et imprime leurs emplacements.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez les annotations de la page.
-1. Filtrez les annotations par [AnnotationType] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` et imprimez leurs rectangles.
+1. Parcourez les annotations de la page.
+1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` et imprimez leurs rectangles.
 
 
 ```java
@@ -185,19 +170,16 @@ public static void caretAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 
-Supprimer les annotations de signe d'insertion
+## Supprimer les annotations de signe d'insertion
 
 
 
 Utilisez cette approche lorsque les annotations caret doivent être supprimées de la page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Collectez les annotations dont le type est [AnnotationType] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. Collectez les annotations dont le type est [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
 1. Supprimez les annotations collectées et enregistrez le document de sortie.
 
 
@@ -220,19 +202,16 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter des annotations de remplacement groupées
+## Ajouter des annotations de remplacement groupées
 
 
 
 Cet exemple combine une annotation caret avec une annotation barrée pour représenter un commentaire de révision de style remplacement.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez l'annotation caret et la [StrikeOutAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) associée.
+1. Créez l'annotation caret et la [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) associée.
 1. Liez les annotations via `setInReplyTo` et `setReplyType`, puis enregistrez le document.
 
 
@@ -274,19 +253,16 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Obtenez des annotations de remplacement groupées
+## Obtenez des annotations de remplacement groupées
 
 
 
 Cet exemple détecte les annotations barrées qui participent à un workflow de remplacement groupé.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez les annotations de page et sélectionnez les annotations barrées.
+1. Parcourez les annotations de page et sélectionnez les annotations barrées.
 1. Vérifiez la relation de réponse et imprimez le rectangle des annotations correspondantes.
 
 
@@ -306,19 +282,16 @@ public static void replaceAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 
-Supprimer les annotations de remplacement groupées
+## Supprimer les annotations de remplacement groupées
 
 
 
 Utilisez cette approche lorsque les annotations barrées de remplacement et de révision doivent être supprimées de la page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Collectez les annotations barrées qui représentent le balisage de remplacement.
+1. Collectez les annotations barrées qui représentent le balisage de remplacement.
 1. Supprimez les annotations collectées et enregistrez le document mis à jour.
 
 
@@ -341,22 +314,16 @@ public static void replaceAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Sujets d'annotations associés
+## Sujets d'annotations associés
 
 
-- 
-[Annotations de texte] (/pdf/java/text-based-annotations/)
+- [Annotations de texte](/pdf/java/text-based-annotations/)
 
-- 
-[Annotations interactives] (/pdf/java/interactive-annotations/)
+- [Annotations interactives](/pdf/java/interactive-annotations/)
 
-- 
-[Annotations de forme] (/pdf/java/shape-annotations/)
-- [Annotations des médias] (/pdf/java/media-annotations/)
+- [Annotations de forme](/pdf/java/shape-annotations/)
+- [Annotations des médias](/pdf/java/media-annotations/)
 
-- 
-[Annotations de sécurité] (/pdf/java/security-annotations/)
+- [Annotations de sécurité](/pdf/java/security-annotations/)
 
-- 
-[Annotations en filigrane] (/pdf/java/watermark-annotations/)
+- [Annotations en filigrane](/pdf/java/watermark-annotations/)

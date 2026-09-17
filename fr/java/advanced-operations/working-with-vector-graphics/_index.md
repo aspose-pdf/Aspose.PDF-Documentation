@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/working-with-vector-graphics/
 description: Découvrez comment extraire, déplacer, supprimer, copier et exporter des graphiques vectoriels dans des documents PDF à l'aide de Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,20 +16,17 @@ Abstract: Cet article explique comment utiliser des graphiques vectoriels dans A
 Aspose.PDF pour Java expose le contenu vectoriel via les objets `GraphicsAbsorber` et `GraphicElement`. Cela vous permet d'inspecter les éléments vectoriels de bas niveau sur une page, puis de les mettre à jour, de les supprimer, de les copier ou de les exporter.
 
 
-## 
-Inspecter les graphiques vectoriels sur une page
+## Inspecter les graphiques vectoriels sur une page
 
 
 
 Utilisez cet exemple lorsque vous devez énumérer des éléments vectoriels et inspecter leur nombre de pages, leur position et leur nombre d'opérateurs.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez un [GraphicsAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et visitez la page cible.
-1. Parcourez les objets [GraphicElement] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) absorbés et affichez leurs propriétés.
+1. Créez un [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et visitez la page cible.
+1. Parcourez les objets [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) absorbés et affichez leurs propriétés.
 
 
 ```java
@@ -52,19 +49,16 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 }
 ```
 
-## 
-Déplacer les graphiques vectoriels sur la page
+## Déplacer les graphiques vectoriels sur la page
 
 
 
 Utilisez cet exemple lorsque tous les éléments vectoriels détectés doivent être déplacés vers une nouvelle position.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visitez la page cible avec [GraphicsAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et supprimez temporairement les mises à jour.
+1. Visitez la page cible avec [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et supprimez temporairement les mises à jour.
 1. Modifiez la position de chaque élément absorbé, reprenez les mises à jour et enregistrez le document.
 
 
@@ -90,19 +84,16 @@ public static void moveGraphics(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Supprimer les graphiques vectoriels par position avec suppression d'élément
+## Supprimer les graphiques vectoriels par position avec suppression d'élément
 
 
 
 Utilisez cet exemple lorsque les éléments vectoriels à l’intérieur d’un rectangle spécifique doivent être supprimés un par un.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visitez la page avec [GraphicsAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et définissez la cible [Rectangle] (https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Visitez la page avec [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et définissez la cible [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Supprimez les éléments correspondants, reprenez les mises à jour et enregistrez le document.
 
 
@@ -130,19 +121,16 @@ public static void removeGraphicsMethod1(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Supprimer les graphiques vectoriels en supprimant une collection
+## Supprimer les graphiques vectoriels en supprimant une collection
 
 
 
 Utilisez cet exemple lorsque les éléments vectoriels correspondants doivent d’abord être collectés, puis supprimés en une seule opération.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Visitez la page avec [GraphicsAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et collectez les éléments correspondants.
+1. Visitez la page avec [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) et collectez les éléments correspondants.
 1. Supprimez les graphiques collectés du contenu de la page et enregistrez le document mis à jour.
 
 
@@ -172,20 +160,17 @@ public static void removeGraphicsMethod2(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Copier les graphiques vectoriels sur une autre page élément par élément
+## Copier les graphiques vectoriels sur une autre page élément par élément
 
 
 
 Utilisez cet exemple lorsque chaque élément vectoriel absorbé doit être ajouté individuellement à une nouvelle page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page de destination.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page de destination.
 
-1. 
-Visitez la page source avec [GraphicsAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
-1. Ajoutez chaque [GraphicElement] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) à la page de destination et enregistrez le document.
+1. Visitez la page source avec [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Ajoutez chaque [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) à la page de destination et enregistrez le document.
 
 
 ```java
@@ -210,19 +195,16 @@ public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Copiez les graphiques vectoriels sur une autre page en tant que collection
+## Copiez les graphiques vectoriels sur une autre page en tant que collection
 
 
 
 Utilisez cet exemple lorsque la totalité de la collection de graphiques vectoriels absorbés doit être copiée sur une nouvelle page en un seul appel.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page de destination.
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page de destination.
 
-1. 
-Visitez la page source avec [GraphicsAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Visitez la page source avec [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
 1. Ajoutez la collection de graphiques absorbés à la page de destination et enregistrez le document.
 
 ```java

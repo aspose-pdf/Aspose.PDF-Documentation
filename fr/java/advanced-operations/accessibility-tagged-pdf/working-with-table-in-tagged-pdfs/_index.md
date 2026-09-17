@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/working-with-table-in-tagged-pdfs/
 description: Apprenez à utiliser des tableaux accessibles dans des PDF balisés en Java avec Aspose.PDF, y compris la structure des tableaux, les étendues de cellules, le style, les paramètres de ligne et le positionnement.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,20 +14,16 @@ sitemap:
 Les API de tableaux balisés vous permettent de créer des structures de tableaux accessibles avec des en-têtes, des lignes de corps, des pieds de page et une sémantique par cellule explicites.
 
 
-## 
-Créer une table balisée
+## Créer une table balisée
 
 Utilisez cet exemple lorsque vous avez besoin d’un tableau accessible de base avec des métadonnées d’en-tête, de corps, de pied de page et de résumé du tableau.
 
 
-1. 
-Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un [TableElement] (https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
 
-1. 
-Configurez la bordure du tableau et remplissez le contenu avec la méthode d'assistance partagée.
+1. Configurez la bordure du tableau et remplissez le contenu avec la méthode d'assistance partagée.
 
-1. 
-Définissez l'attribut de résumé du tableau et enregistrez le document.
+1. Définissez l'attribut de résumé du tableau et enregistrez le document.
 
 
 ```java
@@ -53,20 +49,16 @@ public static void createTable(Path outputFile) {
 }
 ```
 
-## 
-Styliser un tableau balisé
+## Styliser un tableau balisé
 
 Cet exemple applique le formatage au niveau du tableau, tel que les couleurs, les bordures, la taille des colonnes, les lignes répétitives et l'alignement.
 
 
-1. 
-Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un élément de tableau.
+1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un élément de tableau.
 
-1. 
-Configurez les paramètres visuels et de mise en page au niveau de la table.
+1. Configurez les paramètres visuels et de mise en page au niveau de la table.
 
-1. 
-Remplissez le tableau et enregistrez le document.
+1. Remplissez le tableau et enregistrez le document.
 
 
 ```java
@@ -106,20 +98,16 @@ public static void styleTable(Path outputFile) {
 }
 ```
 
-## 
-Lignes de tableau marquées par le style
+## Lignes de tableau marquées par le style
 
 Utilisez cet exemple lorsque chaque ligne doit avoir ses propres métadonnées, bordures, paramètres de hauteur et valeurs par défaut des cellules.
 
 
-1. 
-Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez des sections de tableau pour la tête, le corps et le pied.
+1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez des sections de tableau pour la tête, le corps et le pied.
 
-1. 
-Créez des lignes et configurez leurs paramètres au niveau des lignes, tels que la bordure, le remplissage, la hauteur et le comportement de la page.
+1. Créez des lignes et configurez leurs paramètres au niveau des lignes, tels que la bordure, le remplissage, la hauteur et le comportement de la page.
 
-1. 
-Remplissez les lignes avec des cellules et enregistrez le document.
+1. Remplissez les lignes avec des cellules et enregistrez le document.
 
 
 ```java
@@ -174,20 +162,16 @@ public static void styleTableRow(Path outputFile) {
 }
 ```
 
-## 
-Cellules de tableau marquées par le style
+## Cellules de tableau marquées par le style
 
 Cet exemple utilise la méthode d'assistance partagée pour créer un tableau avec une mise en forme au niveau des cellules et des cellules fusionnées.
 
 
-1. 
-Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ajoutez un élément de tableau et remplissez-le via la méthode d'assistance avec le style de cellule activé.
+1. Ajoutez un élément de tableau et remplissez-le via la méthode d'assistance avec le style de cellule activé.
 
-1. 
-Enregistrez le document.
+1. Enregistrez le document.
 
 
 ```java
@@ -206,20 +190,16 @@ public static void styleTableCell(Path outputFile) {
 }
 ```
 
-## 
-Ajuster la position du tableau balisé
+## Ajuster la position du tableau balisé
 
 Utilisez cet exemple lorsqu'un tableau balisé doit être positionné explicitement sur la page.
 
 
-1. 
-Créez un nouveau [Document] PDF balisé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un élément de tableau.
+1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez un élément de tableau.
 
-1. 
-Configurez [PositionSettings] (https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) pour la table.
+1. Configurez [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) pour la table.
 
-1. 
-Appliquez les paramètres de position, remplissez le tableau et enregistrez le document.
+1. Appliquez les paramètres de position, remplissez le tableau et enregistrez le document.
 
 
 ```java
@@ -248,20 +228,16 @@ public static void adjustTablePosition(Path outputFile) {
 }
 ```
 
-## 
-Remplir un tableau balisé avec du contenu structuré
+## Remplir un tableau balisé avec du contenu structuré
 
 Cette méthode d'assistance crée les lignes d'en-tête, de corps et de pied de page d'un tableau et applique éventuellement le style et les étendues des cellules.
 
 
-1. 
-Créez les sections de tête, de corps et de pied de table.
+1. Créez les sections de tête, de corps et de pied de table.
 
-1. 
-Remplissez les lignes d’en-tête, de corps et de pied de page avec des éléments de cellule accessibles.
+1. Remplissez les lignes d’en-tête, de corps et de pied de page avec des éléments de cellule accessibles.
 
-1. 
-Configurez éventuellement les cellules stylisées, les cellules fusionnées et les valeurs d'état du texte.
+1. Configurez éventuellement les cellules stylisées, les cellules fusionnées et les valeurs d'état du texte.
 
 ```java
 private static void fillTable(TableElement tableElement, int rowCount, int colCount, boolean styleCells) {

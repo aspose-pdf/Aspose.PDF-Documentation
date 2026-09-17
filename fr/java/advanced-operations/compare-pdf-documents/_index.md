@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /java/compare-pdf-documents/
 description: Apprenez à comparer des documents PDF en Java à l'aide d'une sortie côte à côte et de différences graphiques avec Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,23 +16,19 @@ Abstract: Cet article explique comment comparer des documents PDF à l'aide d'As
 Aspose.PDF pour Java fournit des API de comparaison côte à côte et graphiques pour détecter les différences entre les fichiers PDF.
 
 
-## 
-Comparez les pages et exportez les images de différence
+## Comparez les pages et exportez les images de différence
 
 
 
 Utilisez cet exemple lorsque vous avez besoin d’une sortie de différence basée sur une image pour une paire spécifique de pages PDF.
 
 
-1. 
-Ouvrez les deux objets PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Utilisez [GraphicalPdfComparer] (https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) pour obtenir la [ImagesDifference] (https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/) au niveau de la page.
+1. Utilisez [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) pour obtenir la [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/) au niveau de la page.
 1. Utilisez « GraphicalPdfComparer » pour obtenir la « ImagesDifference » au niveau de la page.
 
-1. 
-Exportez les images de différence générées et supprimez le résultat de la comparaison.
+1. Exportez les images de différence générées et supprimez le résultat de la comparaison.
 
 
 ```java
@@ -53,20 +49,17 @@ public static void comparePdfWithGetDifferenceMethod(
 }
 ```
 
-## 
-Comparez des pages spécifiques côte à côte
+## Comparez des pages spécifiques côte à côte
 
 
 
 Utilisez cet exemple lorsque seules les pages sélectionnées doivent être comparées et enregistrées sous forme de résultat PDF côte à côte.
 
 
-1. 
-Ouvrez les deux objets PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Configurez [SideBySideComparisonOptions] (https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) pour le mode de comparaison requis.
+1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Configurez [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) pour le mode de comparaison requis.
 
-1. 
-Comparez les pages sélectionnées et enregistrez le PDF de sortie.
+1. Comparez les pages sélectionnées et enregistrez le PDF de sortie.
 
 
 ```java
@@ -84,20 +77,17 @@ public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path
 }
 ```
 
-## 
-Comparez graphiquement les documents PDF complets
+## Comparez graphiquement les documents PDF complets
 
 
 
 Cet exemple génère un rapport PDF graphique qui met en évidence les différences visuelles dans l'ensemble des documents.
 
 
-1. 
-Ouvrez les deux objets PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Configurez le seuil, la couleur et la résolution de [GraphicalPdfComparer] (https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/).
+1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Configurez le seuil, la couleur et la résolution de [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/).
 
-1. 
-Comparez les documents complets et enregistrez le PDF de sortie graphique.
+1. Comparez les documents complets et enregistrez le PDF de sortie graphique.
 
 
 ```java
@@ -114,20 +104,17 @@ public static void comparePdfWithCompareDocumentsToPdfMethod(Path inputFile1, Pa
 }
 ```
 
-## 
-Comparez des documents entiers côte à côte
+## Comparez des documents entiers côte à côte
 
 
 
 Utilisez cet exemple lorsque les documents entiers doivent être comparés page par page dans une sortie PDF côte à côte.
 
 
-1. 
-Ouvrez les deux objets PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Configurez [SideBySideComparisonOptions] (https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) pour le comportement de comparaison souhaité.
+1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Configurez [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) pour le comportement de comparaison souhaité.
 
-1. 
-Comparez les documents complets et enregistrez le résultat au format PDF.
+1. Comparez les documents complets et enregistrez le résultat au format PDF.
 
 ```java
 public static void comparingEntireDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

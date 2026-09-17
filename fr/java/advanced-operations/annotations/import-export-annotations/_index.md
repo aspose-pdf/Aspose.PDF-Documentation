@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/import-export-annotations/
 description: Découvrez comment copier des annotations d'un document PDF vers un autre document PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,21 +16,16 @@ Abstract: Cet article explique comment copier des annotations à partir d'un PDF
 ## Copier des annotations d'un PDF à un autre
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ajoutez une [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au [Document] de destination (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au [Document] de destination (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ajoutez chaque [Annotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) à la [Page] cible (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Ajoutez chaque [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) à la [Page] cible (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 
-1. 
-Lisez ou parcourez les éléments [Annotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) sur la page cible.
+1. Lisez ou parcourez les éléments [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) sur la page cible.
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Énumérez les éléments [Annotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) sur la première page source et ajoutez chacun d'entre eux à la page de destination.
+1. Énumérez les éléments [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) sur la première page source et ajoutez chacun d'entre eux à la page de destination.
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

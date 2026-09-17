@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/merge-pdf-documents/
 description: Découvrez comment fusionner plusieurs fichiers PDF en un seul document en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment fusionner des documents PDF à l'aide d'A
 Aspose.PDF pour Java prend en charge plusieurs stratégies de fusion en fonction de la manière dont la sortie doit être assemblée.
 
 
-## 
-Fusionner deux documents PDF
+## Fusionner deux documents PDF
 
 
 
 Utilisez cette approche lorsque vous avez besoin du flux de fusion le plus simple et que vous souhaitez ajouter un document complet à un autre.
 
 
-1. 
-Ouvrez les deux objets PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ajoutez la collection [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) du deuxième document au premier document.
+1. Ajoutez la collection [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) du deuxième document au premier document.
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
@@ -42,19 +39,16 @@ public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outp
 }
 ```
 
-## 
-Copier une plage de pages sélectionnée entre des documents
+## Copier une plage de pages sélectionnée entre des documents
 
 
 
 Cette méthode d'assistance conserve la logique de fusion de plages de pages au même endroit afin que d'autres exemples puissent réutiliser la même routine de copie validée.
 
 
-1. 
-Ouvrez ou recevez les objets PDF [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) source et destination.
+1. Ouvrez ou recevez les objets PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) source et destination.
 
-1. 
-Normalisez la plage de pages demandée afin qu’elle reste dans la collection [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) disponible.
+1. Normalisez la plage de pages demandée afin qu’elle reste dans la collection [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) disponible.
 1. Ajoutez chaque page de la plage validée au document de destination.
 
 
@@ -77,19 +71,16 @@ private static void appendPageRange(Document sourceDocument, Document destinatio
 }
 ```
 
-## 
-Fusionner plusieurs documents PDF en un seul fichier
+## Fusionner plusieurs documents PDF en un seul fichier
 
 
 
 Utilisez ce modèle lorsque vous devez combiner une liste de fichiers d’entrée en un seul document de sortie en séquence.
 
 
-1. 
-Créez un PDF de sortie vide [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Créez un PDF de sortie vide [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ouvrez chaque fichier d'entrée un par un et copiez sa plage complète de [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dans le document de sortie.
+1. Ouvrez chaque fichier d'entrée un par un et copiez sa plage complète de [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dans le document de sortie.
 1. Enregistrez le résultat fusionné une fois que tous les fichiers sources ont été traités.
 
 
@@ -106,19 +97,16 @@ public static void mergeMultipleDocuments(List<Path> inputFiles, Path outputFile
 }
 ```
 
-## 
-Fusionner les plages de pages sélectionnées à partir de deux documents
+## Fusionner les plages de pages sélectionnées à partir de deux documents
 
 
 
 Cet exemple crée un fichier de sortie personnalisé en prenant uniquement des plages de pages spécifiques de chaque document source.
 
 
-1. 
-Ouvrez les deux objets PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un nouveau document de sortie.
+1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un nouveau document de sortie.
 
-1. 
-Ajoutez uniquement les plages [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) requises de chaque document source.
+1. Ajoutez uniquement les plages [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) requises de chaque document source.
 1. Enregistrez le document de sortie assemblé.
 
 
@@ -134,19 +122,16 @@ public static void mergeSelectedPageRanges(Path inputFile1, Path inputFile2, Pat
 }
 ```
 
-## 
-Insérer un document PDF dans un autre à une position spécifique
+## Insérer un document PDF dans un autre à une position spécifique
 
 
 
 Utilisez cette approche lorsqu'un document doit apparaître dans un autre plutôt que seulement avant ou après.
 
 
-1. 
-Ouvrez la base et les objets PDF [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) insérés et créez un nouveau document de sortie.
+1. Ouvrez la base et les objets PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) insérés et créez un nouveau document de sortie.
 
-1. 
-Copiez la première partie du document de base, puis ajoutez le document inséré dans son intégralité et enfin ajoutez la plage de base restante [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Copiez la première partie du document de base, puis ajoutez le document inséré dans son intégralité et enfin ajoutez la plage de base restante [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Enregistrez le résultat réorganisé dans un nouveau fichier.
 
 
@@ -167,19 +152,16 @@ public static void mergeInsertDocumentAtPosition(Path inputFile1, Path inputFile
 }
 ```
 
-## 
-Fusionner deux documents PDF en alternant les pages
+## Fusionner deux documents PDF en alternant les pages
 
 
 
 Cet exemple entrelace les pages de deux documents, ce qui est utile lorsque les deux entrées doivent contribuer page par page au résultat final.
 
 
-1. 
-Ouvrez les deux objets PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un nouveau document de sortie.
+1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et créez un nouveau document de sortie.
 
-1. 
-Parcourez le nombre maximum de pages disponibles et ajoutez tour à tour chaque [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) disponible du premier et du deuxième documents.
+1. Parcourez le nombre maximum de pages disponibles et ajoutez tour à tour chaque [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) disponible du premier et du deuxième documents.
 1. Enregistrez le document de sortie entrelacé.
 
 
@@ -206,19 +188,16 @@ public static void mergeAlternatingPages(Path inputFile1, Path inputFile2, Path 
 }
 ```
 
-## 
-Fusionner des documents avec des pages de séparation et des signets
+## Fusionner des documents avec des pages de séparation et des signets
 
 
 
 Utilisez ce modèle lorsque le fichier fusionné doit rester facile à naviguer et montrer clairement où commence chaque document source.
 
 
-1. 
-Créez un PDF de sortie vide [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez chaque fichier source tour à tour.
+1. Créez un PDF de sortie vide [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez chaque fichier source tour à tour.
 
-1. 
-Ajoutez un séparateur [Page] (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) avec un en-tête, puis créez un signet [OutlineItemCollection] (https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) pour cette section.
+1. Ajoutez un séparateur [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) avec un en-tête, puis créez un signet [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) pour cette section.
 1. Ajoutez les pages sources, ajoutez éventuellement un signet qui pointe vers la première page de contenu et enregistrez le document final fusionné.
 
 ```java

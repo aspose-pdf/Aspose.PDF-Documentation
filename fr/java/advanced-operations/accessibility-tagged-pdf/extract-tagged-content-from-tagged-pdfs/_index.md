@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/extract-tagged-content-from-tagged-pdfs/
 description: Découvrez comment inspecter le contenu PDF balisé en Java avec Aspose.PDF, y compris l'accès au contenu balisé, l'accès à la structure racine et les éléments de structure enfants.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,20 +14,16 @@ sitemap:
 Utilisez ces API lorsque vous devez inspecter l'arborescence de structure logique d'un PDF balisé et examiner ou mettre à jour les métadonnées des éléments de structure.
 
 
-## 
-Obtenez des métadonnées de contenu balisé
+## Obtenez des métadonnées de contenu balisé
 
 Utilisez cet exemple lorsque vous avez besoin d'accéder au conteneur de contenu balisé et que vous souhaitez définir des métadonnées de base du document telles que le titre et la langue.
 
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Récupérez l'objet [ITaggedContent] (https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) du document.
+1. Récupérez l'objet [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) du document.
 
-1. 
-Définissez les métadonnées du contenu balisé et enregistrez le fichier de sortie.
+1. Définissez les métadonnées du contenu balisé et enregistrez le fichier de sortie.
 
 
 ```java
@@ -41,20 +37,16 @@ public static void getTaggedContent(Path outputFile) {
 }
 ```
 
-## 
-Obtenez la structure racine d'un PDF balisé
+## Obtenez la structure racine d'un PDF balisé
 
 Cet exemple montre comment inspecter les objets racine qui représentent l'arborescence de la structure d'un PDF balisé.
 
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et obtenez son contenu balisé.
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et obtenez son contenu balisé.
 
-1. 
-Définissez les métadonnées du document requises.
+1. Définissez les métadonnées du document requises.
 
-1. 
-Lisez et imprimez la racine de l'arborescence structurelle et l'élément racine logique, puis enregistrez le fichier.
+1. Lisez et imprimez la racine de l'arborescence structurelle et l'élément racine logique, puis enregistrez le fichier.
 
 
 ```java
@@ -72,20 +64,16 @@ public static void getRootStructure(Path outputFile) {
 }
 ```
 
-## 
-Accéder et mettre à jour les éléments de structure enfants
+## Accéder et mettre à jour les éléments de structure enfants
 
 Utilisez cet exemple lorsque vous devez parcourir les éléments enfants dans l'arborescence de la structure, inspecter leurs propriétés et mettre à jour les métadonnées sélectionnées.
 
 
-1. 
-Ouvrez le PDF source balisé [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Lisez les éléments enfants à partir de la racine de l'arborescence de la structure et imprimez les propriétés disponibles.
+1. Lisez les éléments enfants à partir de la racine de l'arborescence de la structure et imprimez les propriétés disponibles.
 
-1. 
-Accédez aux éléments enfants du premier enfant racine, mettez à jour leurs métadonnées et enregistrez le document.
+1. Accédez aux éléments enfants du premier enfant racine, mettez à jour leurs métadonnées et enregistrez le document.
 
 ```java
 public static void accessChildElements(Path inputFile, Path outputFile) {

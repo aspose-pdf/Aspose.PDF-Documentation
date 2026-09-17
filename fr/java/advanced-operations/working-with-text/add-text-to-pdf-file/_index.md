@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-text-to-pdf-file/
 description: Découvrez comment ajouter du texte, des fragments HTML, des listes, des liens et des polices personnalisées aux documents PDF en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment ajouter et styliser du texte dans des doc
 Aspose.PDF pour Java prend en charge l'insertion de texte brut, la mise en page avancée, le style, les dégradés, HTML, LaTeX et les polices personnalisées.
 
 
-## 
-Ajouter un simple fragment de texte
+## Ajouter un simple fragment de texte
 
 
 
 Utilisez cet exemple lorsqu'une courte chaîne de texte doit être placée à des coordonnées de page fixes.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un `TextFragment` et définissez sa position.
+1. Créez un `TextFragment` et définissez sa position.
 1. Ajoutez-le à la page et enregistrez le document.
 
 
@@ -46,19 +43,16 @@ public static void addTextSimpleCase(Path outputFile) {
   }
 ```
 
-## 
-Ajouter un paragraphe à l'intérieur d'un rectangle
+## Ajouter un paragraphe à l'intérieur d'un rectangle
 
 
 
 Utilisez cet exemple lorsqu’un bloc de texte plus grand doit être placé à l’intérieur d’une zone délimitée.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Chargez le texte source et configurez un rectangle `TextParagraph` et un mode d'habillage.
+1. Chargez le texte source et configurez un rectangle `TextParagraph` et un mode d'habillage.
 1. Ajoutez le fragment via `TextBuilder` et enregistrez le PDF.
 
 
@@ -89,19 +83,16 @@ public static void addParagraph(Path outputFile) throws Exception {
 }
 ```
 
-## 
-Ajouter des paragraphes avec différents paramètres de retrait
+## Ajouter des paragraphes avec différents paramètres de retrait
 
 
 
 Utilisez cet exemple lorsque la première ligne et les lignes suivantes doivent utiliser des règles d'indentation différentes.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Préparez le fragment de texte partagé et créez plusieurs objets `TextParagraph`.
+1. Préparez le fragment de texte partagé et créez plusieurs objets `TextParagraph`.
 1. Configurez l'indentation pour chaque paragraphe, ajoutez-les et enregistrez le document.
 
 
@@ -138,19 +129,16 @@ public static void addParagraphsIndents(Path outputFile) throws Exception {
 }
 ```
 
-## 
-Insérer du texte avec un saut de ligne manuel
+## Insérer du texte avec un saut de ligne manuel
 
 
 
 Utilisez cet exemple lorsqu'un fragment de texte doit contenir une nouvelle ligne explicite.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un `TextFragment` contenant un saut de ligne et configurez son style.
+1. Créez un `TextFragment` contenant un saut de ligne et configurez son style.
 1. Ajoutez-le via un `TextParagraph` et enregistrez le PDF.
 
 
@@ -177,19 +165,16 @@ public static void addNewLine(Path outputFile) {
 }
 ```
 
-## 
-Inspecter les sauts de ligne détectés
+## Inspecter les sauts de ligne détectés
 
 
 
 Utilisez cet exemple lorsque vous devez examiner la sortie de notification liée à la mise en page du texte et au retour à la ligne.
 
 
-1. 
-Créez un nouveau document PDF et activez la journalisation des notifications.
+1. Créez un nouveau document PDF et activez la journalisation des notifications.
 
-1. 
-Ajoutez plusieurs longs fragments de texte à la page.
+1. Ajoutez plusieurs longs fragments de texte à la page.
 1. Inspectez les notifications et enregistrez le document.
 
 
@@ -218,19 +203,16 @@ public static void determineLineBreak(Path outputFile) {
 }
 ```
 
-## 
-Mesurer dynamiquement la largeur du texte
+## Mesurer dynamiquement la largeur du texte
 
 
 
 Utilisez cet exemple lorsque les largeurs de caractères et de chaînes doivent être mesurées avant que les décisions de mise en page ne soient prises.
 
 
-1. 
-Résolvez la police cible et créez un `TextState`.
+1. Résolvez la police cible et créez un `TextState`.
 
-1. 
-Mesurez les caractères et comparez les résultats des API d’état de police et de texte.
+1. Mesurez les caractères et comparez les résultats des API d’état de police et de texte.
 1. Affichez toutes les incohérences pour validation.
 
 
@@ -259,19 +241,16 @@ public static void getTextWidthDynamically(Path outputFile) {
 }
 ```
 
-## 
-Ajouter du texte avec un segment de lien hypertexte
+## Ajouter du texte avec un segment de lien hypertexte
 
 
 
 Utilisez cet exemple lorsqu'une partie d'un fragment de texte doit se comporter comme un lien Web.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un `TextFragment` avec plusieurs objets `TextSegment`.
+1. Créez un `TextFragment` avec plusieurs objets `TextSegment`.
 1. Attribuez un lien hypertexte et un style au segment cible, puis enregistrez le document.
 
 
@@ -297,19 +276,16 @@ public static void addTextWithHyperlink(Path outputFile) {
 }
 ```
 
-## 
-Ajouter du texte de droite à gauche
+## Ajouter du texte de droite à gauche
 
 
 
 Utilisez cet exemple lorsque le document doit afficher le contenu du script de droite à gauche avec un alignement approprié.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un `TextFragment` avec le texte RTL cible et configurez sa police et son alignement.
+1. Créez un `TextFragment` avec le texte RTL cible et configurez sa police et son alignement.
 1. Ajoutez-le à la page et enregistrez le PDF.
 
 
@@ -331,19 +307,16 @@ public static void addTextWithRtlText(Path outputFile) {
 }
 ```
 
-## 
-Ajoutez du texte stylisé et des segments de type formule
+## Ajoutez du texte stylisé et des segments de type formule
 
 
 
 Utilisez cet exemple lorsque du texte normal et des segments de type indice doivent utiliser différents états de texte dans une seule sortie.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Construisez le fragment stylisé principal et composez la formule avec des segments auxiliaires.
+1. Construisez le fragment stylisé principal et composez la formule avec des segments auxiliaires.
 1. Ajoutez les deux fragments à la page et enregistrez le document.
 
 
@@ -397,19 +370,16 @@ private static void addSegment(TextFragment formula, String text, TextState stat
 }
 ```
 
-## 
-Ajouter du texte souligné
+## Ajouter du texte souligné
 
 
 
 Utilisez cet exemple lorsqu'un fragment de texte doit visiblement utiliser le style souligné.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez le fragment de texte, configurez sa police et son état de soulignement, et définissez sa position.
+1. Créez le fragment de texte, configurez sa police et son état de soulignement, et définissez sa position.
 1. Ajoutez-le avec `TextBuilder` et enregistrez le résultat.
 
 
@@ -431,19 +401,16 @@ public static void addUnderlineText(Path outputFile) {
 }
 ```
 
-## 
-Ajouter du texte transparent sur une forme colorée
+## Ajouter du texte transparent sur une forme colorée
 
 
 
 Utilisez cet exemple lorsque le texte doit apparaître en transparence au-dessus d'un graphique d'arrière-plan.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Dessinez la forme d'arrière-plan et créez un fragment de texte semi-transparent.
+1. Dessinez la forme d'arrière-plan et créez un fragment de texte semi-transparent.
 1. Ajoutez les deux éléments à la page et enregistrez le document.
 
 
@@ -469,19 +436,16 @@ public static void addTextTransparent(Path outputFile) {
 }
 ```
 
-## 
-Ajouter du texte invisible
+## Ajouter du texte invisible
 
 
 
 Utilisez cet exemple lorsque du texte consultable ou masqué doit être présent sans rendu visible.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Ajoutez un fragment de texte visible et un deuxième fragment avec le drapeau invisible activé.
+1. Ajoutez un fragment de texte visible et un deuxième fragment avec le drapeau invisible activé.
 1. Enregistrez le document.
 
 
@@ -504,19 +468,16 @@ public static void addTextInvisible(Path outputFile) {
 }
 ```
 
-## 
-Ajouter du texte avec une bordure rectangulaire
+## Ajouter du texte avec une bordure rectangulaire
 
 
 
 Utilisez cet exemple lorsque le texte doit être dessiné avec son rectangle englobant.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un style `TextFragment` et activez le dessin de la bordure du rectangle de texte.
+1. Créez un style `TextFragment` et activez le dessin de la bordure du rectangle de texte.
 1. Ajoutez-le avec `TextBuilder` et enregistrez le PDF.
 
 
@@ -542,19 +503,16 @@ public static void addTextBorder(Path outputFile) {
 }
 ```
 
-## 
-Ajouter du texte barré
+## Ajouter du texte barré
 
 
 
 Utilisez cet exemple lorsque le texte doit utiliser un formatage barré.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un fragment de texte stylisé avec le barré activé.
+1. Créez un fragment de texte stylisé avec le barré activé.
 1. Ajoutez-le à la page et enregistrez le document.
 
 
@@ -580,19 +538,16 @@ public static void addStrikeoutText(Path outputFile) {
 }
 ```
 
-## 
-Appliquer un ombrage dégradé axial au texte
+## Appliquer un ombrage dégradé axial au texte
 
 
 
 Utilisez cet exemple lorsque le texte doit utiliser un remplissage en dégradé linéaire au lieu d'une couleur unie.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez le fragment de texte et attribuez un dégradé axial à sa couleur de premier plan.
+1. Créez le fragment de texte et attribuez un dégradé axial à sa couleur de premier plan.
 1. Ajoutez-le à la page et enregistrez le PDF.
 
 
@@ -616,19 +571,16 @@ public static void applyGradientAxialShadingToText(Path outputFile) {
 }
 ```
 
-## 
-Appliquer un ombrage dégradé radial au texte
+## Appliquer un ombrage dégradé radial au texte
 
 
 
 Utilisez cet exemple lorsque le texte doit utiliser un remplissage en dégradé radial.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez le fragment de texte et attribuez un dégradé radial à sa couleur de premier plan.
+1. Créez le fragment de texte et attribuez un dégradé radial à sa couleur de premier plan.
 1. Ajoutez-le à la page et enregistrez le document.
 
 
@@ -652,19 +604,16 @@ public static void applyGradientRadialShadingToText(Path outputFile) {
 }
 ```
 
-## 
-Ajouter du texte au format HTML en ligne
+## Ajouter du texte au format HTML en ligne
 
 
 
 Utilisez cet exemple lorsque le formatage en exposant et en indice doit être inséré via le balisage HTML.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un `HtmlFragment` avec le balisage en ligne requis.
+1. Créez un `HtmlFragment` avec le balisage en ligne requis.
 1. Ajoutez-le à la page et enregistrez le PDF.
 
 
@@ -680,19 +629,16 @@ public static void addTextHtmlFragment(Path outputFile) {
 }
 ```
 
-## 
-Ajouter un fragment de texte LaTeX
+## Ajouter un fragment de texte LaTeX
 
 
 
 Utilisez cet exemple lorsque le contenu mathématique ou au format TeX doit être rendu dans le PDF.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Créez un `TeXFragment` avec l'expression requise.
+1. Créez un `TeXFragment` avec l'expression requise.
 1. Ajoutez-le à la page et enregistrez le document.
 
 
@@ -709,19 +655,16 @@ public static void addTextLatexFragment(Path outputFile) {
 }
 ```
 
-## 
-Ajouter un fragment HTML riche
+## Ajouter un fragment HTML riche
 
 
 
 Utilisez cet exemple lorsque la page doit afficher du contenu HTML structuré tel que des titres, des paragraphes et des liens.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Préparez la chaîne de contenu HTML et créez un `HtmlFragment`.
+1. Préparez la chaîne de contenu HTML et créez un `HtmlFragment`.
 1. Ajoutez-le à la page et enregistrez le PDF.
 
 
@@ -742,19 +685,16 @@ public static void addHtmlFragment(Path outputFile) {
 }
 ```
 
-## 
-Ajouter un fragment HTML avec un état de texte remplacé
+## Ajouter un fragment HTML avec un état de texte remplacé
 
 
 
 Utilisez cet exemple lorsque le contenu HTML importé doit hériter d’une configuration de police et de couleur contrôlée.
 
 
-1. 
-Créez un nouveau document PDF et ajoutez une page.
+1. Créez un nouveau document PDF et ajoutez une page.
 
-1. 
-Préparez le contenu HTML et créez le `HtmlFragment`.
+1. Préparez le contenu HTML et créez le `HtmlFragment`.
 1. Attribuez un `TextState` personnalisé, ajoutez le fragment et enregistrez le document.
 
 
@@ -781,19 +721,16 @@ public static void addHtmlFragmentOverrideTextState(Path outputFile) {
 }
 ```
 
-## 
-Utiliser une police personnalisée chargée à partir d'un fichier
+## Utiliser une police personnalisée chargée à partir d'un fichier
 
 
 
 Utilisez cet exemple lorsque le texte doit utiliser une police chargée directement à partir d’un chemin de fichier de police.
 
 
-1. 
-Résolvez le chemin du fichier de police personnalisé.
+1. Résolvez le chemin du fichier de police personnalisé.
 
-1. 
-Créez un fragment de texte et chargez la police via `FontRepository.openFont`.
+1. Créez un fragment de texte et chargez la police via `FontRepository.openFont`.
 1. Appliquez les paramètres de police et enregistrez le document.
 
 
@@ -816,19 +753,16 @@ public static void useCustomFontFromFile(Path outputFile) {
 }
 ```
 
-## 
-Utiliser une police personnalisée chargée à partir d'un flux
+## Utiliser une police personnalisée chargée à partir d'un flux
 
 
 
 Utilisez cet exemple lorsqu'une police personnalisée doit être ouverte à partir d'un flux et intégrée dans le PDF.
 
 
-1. 
-Ouvrez le fichier de police sous forme de flux et chargez-le avec `FontRepository`.
+1. Ouvrez le fichier de police sous forme de flux et chargez-le avec `FontRepository`.
 
-1. 
-Créez le fragment de texte et attribuez la police intégrée.
+1. Créez le fragment de texte et attribuez la police intégrée.
 1. Ajoutez le fragment à la page et enregistrez le document.
 
 ```java

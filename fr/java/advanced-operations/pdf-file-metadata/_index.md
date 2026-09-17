@@ -5,7 +5,7 @@ type: docs
 weight: 200
 url: /java/pdf-file-metadata/
 description: Découvrez comment extraire, mettre à jour et gérer les métadonnées de fichiers PDF, les informations sur les documents et les propriétés XMP en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,27 +16,22 @@ Abstract: Cet article explique comment utiliser les métadonnées PDF à l'aide 
 Aspose.PDF pour Java propose deux manières principales de travailler avec les métadonnées :
 
 
-- 
-L'API DOM via `Document`, `DocumentInfo` et `document.getMetadata()`.
+- L'API DOM via `Document`, `DocumentInfo` et `document.getMetadata()`.
 
-- 
-L'API de façade via `PdfFileInfo`.
+- L'API de façade via `PdfFileInfo`.
 
 
-## 
-Obtenir des informations sur le fichier PDF
+## Obtenir des informations sur le fichier PDF
 
 
 
 Utilisez cet exemple lorsque vous devez lire des champs d'informations standard sur un document tels que l'auteur, le titre, le sujet ou les mots-clés.
 
-1. Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Accédez à l'objet [DocumentInfo] (https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/).
+1. Accédez à l'objet [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/).
 
-1. 
-Lisez les champs de métadonnées requis et affichez leurs valeurs.
+1. Lisez les champs de métadonnées requis et affichez leurs valeurs.
 
 
 ```java
@@ -54,20 +49,17 @@ public static void getPdfFileInformation(Path inputFile) {
 }
 ```
 
-## 
-Définir des métadonnées avec un préfixe d'espace de noms
+## Définir des métadonnées avec un préfixe d'espace de noms
 
 
 
 Utilisez cet exemple lorsque vous devez ajouter ou mettre à jour une propriété XMP à l'aide d'un préfixe d'espace de noms enregistré.
 
-1. Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Enregistrez l'espace de noms XMP requis et ajoutez l'élément de métadonnées.
+1. Enregistrez l'espace de noms XMP requis et ajoutez l'élément de métadonnées.
 
-1. 
-Enregistrez le document mis à jour.
+1. Enregistrez le document mis à jour.
 
 
 ```java
@@ -81,20 +73,17 @@ public static void setPrefixMetadata(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Mettre à jour les champs d'informations sur le document
+## Mettre à jour les champs d'informations sur le document
 
 
 
 Utilisez cet exemple lorsque vous souhaitez écrire des propriétés de fichier PDF standard telles que l'auteur, le titre, le producteur ou la date de création.
 
-1. Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Accédez à [DocumentInfo] (https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) et attribuez de nouvelles valeurs de métadonnées.
+1. Accédez à [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) et attribuez de nouvelles valeurs de métadonnées.
 
-1. 
-Enregistrez le document avec les informations de fichier mises à jour.
+1. Enregistrez le document avec les informations de fichier mises à jour.
 
 
 ```java
@@ -118,20 +107,17 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Définir les propriétés des métadonnées XMP
+## Définir les propriétés des métadonnées XMP
 
 
 
 Utilisez cet exemple lorsque vous devez stocker des entrées XMP supplémentaires, y compris des valeurs de métadonnées personnalisées.
 
-1. Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ajoutez les éléments de métadonnées XMP requis via `document.getMetadata()`.
+1. Ajoutez les éléments de métadonnées XMP requis via `document.getMetadata()`.
 
-1. 
-Enregistrez le fichier de sortie.
+1. Enregistrez le fichier de sortie.
 
 ```java
 public static void setXmpMetadata(Path inputFile, Path outputFile) {

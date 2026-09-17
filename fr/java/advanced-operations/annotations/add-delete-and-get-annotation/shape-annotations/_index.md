@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/shape-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations de carrés, de cercles, de polygones et de polylignes dans des documents PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -16,19 +16,16 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 Les annotations de forme dans cette section couvrent les types d'annotations géométriques tels que les carrés, les cercles, les polygones, les polylignes et les lignes.
 
 
-## 
-Ajouter des annotations de carrés, de cercles, de polygones et de polylignes
+## Ajouter des annotations de carrés, de cercles, de polygones et de polylignes
 
 
 
 Utilisez ces exemples lorsque vous devez placer des annotations géométriques avec des couleurs personnalisées, une opacité, des données contextuelles ou des tableaux de points.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez l'annotation de forme requise et configurez son rectangle, ses points et ses propriétés visuelles.
+1. Créez l'annotation de forme requise et configurez son rectangle, ses points et ses propriétés visuelles.
 1. Ajoutez l'annotation à la page et enregistrez le document mis à jour.
 
 
@@ -118,20 +115,17 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Obtenez des annotations de carrés, de cercles, de polygones et de polylignes
+## Obtenez des annotations de carrés, de cercles, de polygones et de polylignes
 
 
 
 Ces exemples inspectent la collection d'annotations de page et impriment les rectangles d'annotations géométriques par type.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez les annotations de la page.
-1. Filtrez par la valeur [AnnotationType] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) requise et imprimez le rectangle.
+1. Parcourez les annotations de la page.
+1. Filtrez par la valeur [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) requise et imprimez le rectangle.
 
 
 ```java
@@ -182,19 +176,16 @@ public static void polylineAnnotationGet(Path inputFile) {
 }
 ```
 
-## 
-Supprimer les annotations de carré, de cercle, de polygone et de polyligne
+## Supprimer les annotations de carré, de cercle, de polygone et de polyligne
 
 
 
 Utilisez ces exemples lorsque les annotations de forme d’un type spécifique doivent être supprimées de la page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Collectez les annotations du type géométrique requis.
+1. Collectez les annotations du type géométrique requis.
 1. Supprimez les annotations collectées et enregistrez le fichier de sortie.
 
 
@@ -266,19 +257,16 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter une annotation de ligne
+## Ajouter une annotation de ligne
 
 
 
 Cet exemple crée une annotation de ligne avec des fins de flèches, une mise en forme des bordures et une note contextuelle.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Créez une [LineAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) avec des points de début et de fin.
+1. Créez une [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) avec des points de début et de fin.
 1. Configurez l'apparence, ajoutez la fenêtre contextuelle et enregistrez le document.
 
 
@@ -310,20 +298,17 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Obtenir des annotations de ligne
+## Obtenir des annotations de ligne
 
 
 
 Cet exemple lit les annotations de ligne et imprime leurs coordonnées de début et de fin.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Parcourez les annotations de la page et sélectionnez [AnnotationType] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
-1. Diffusez chaque correspondance sur [LineAnnotation] (https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) et imprimez ses coordonnées.
+1. Parcourez les annotations de la page et sélectionnez [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Diffusez chaque correspondance sur [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) et imprimez ses coordonnées.
 
 
 ```java
@@ -341,19 +326,16 @@ public static void lineAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 
-Supprimer les annotations de ligne
+## Supprimer les annotations de ligne
 
 
 
 Utilisez cette approche lorsque les annotations de ligne doivent être supprimées de la page.
 
 
-1. 
-Ouvrez le PDF source [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Collectez les annotations de type [AnnotationType] (https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Collectez les annotations de type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. Supprimez les annotations collectées et enregistrez le document.
 
 
@@ -375,22 +357,16 @@ public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Sujets d'annotations associés
+## Sujets d'annotations associés
 
 
-- 
-[Annotations interactives] (/pdf/java/interactive-annotations/)
+- [Annotations interactives](/pdf/java/interactive-annotations/)
 
-- 
-[Annotations de balisage] (/pdf/java/markup-annotations/)
+- [Annotations de balisage](/pdf/java/markup-annotations/)
 
-- 
-[Annotations de sécurité] (/pdf/java/security-annotations/)
-- [Annotations de texte] (/pdf/java/text-based-annotations/)
+- [Annotations de sécurité](/pdf/java/security-annotations/)
+- [Annotations de texte](/pdf/java/text-based-annotations/)
 
-- 
-[Annotations en filigrane] (/pdf/java/watermark-annotations/)
+- [Annotations en filigrane](/pdf/java/watermark-annotations/)
 
-- 
-[Importer et exporter des annotations] (/pdf/java/import-export-annotations/)
+- [Importer et exporter des annotations](/pdf/java/import-export-annotations/)

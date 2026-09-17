@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-image-to-existing-pdf-file/
 description: Découvrez comment ajouter des images à des fichiers PDF existants en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Ajouter des images aux fichiers PDF existants avec Java
 Abstract: Cet article montre comment ajouter des images aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le placement d'une image à des coordonnées fixes, l'ajout d'images via des opérateurs de page de bas niveau, la définition d'un texte alternatif pour l'accessibilité et l'intégration de données d'image avec la compression Flate.
@@ -13,19 +13,16 @@ Abstract: Cet article montre comment ajouter des images aux documents PDF à l'a
 Aspose.PDF pour Java prend en charge à la fois le placement d'images de haut niveau et le dessin basé sur un opérateur de bas niveau.
 
 
-## 
-Ajouter une image avec les coordonnées de la page
+## Ajouter une image avec les coordonnées de la page
 
 
 
 Utilisez cet exemple lorsque vous devez placer une image à une position fixe sur une page PDF.
 
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
 
-1. 
-Appelez `page.addImage()` avec le chemin de l'image source et le rectangle cible.
+1. Appelez `page.addImage()` avec le chemin de l'image source et le rectangle cible.
 1. Enregistrez le fichier PDF généré.
 
 
@@ -39,19 +36,16 @@ public static void addImage(Path imageFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter une image avec les opérateurs de page
+## Ajouter une image avec les opérateurs de page
 
 
 
 Utilisez cet exemple lorsque vous avez besoin d'un contrôle de bas niveau sur le placement et la mise à l'échelle des images via les opérateurs de page.
 
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez le flux d'images source.
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez le flux d'images source.
 
-1. 
-Ajoutez l'image aux ressources de la page et calculez le rectangle cible.
+1. Ajoutez l'image aux ressources de la page et calculez le rectangle cible.
 1. Écrivez les opérateurs graphiques requis et enregistrez le document.
 
 
@@ -91,19 +85,16 @@ public static void addImageUsingOperators(Path imageFile, Path outputFile) throw
 }
 ```
 
-## 
-Ajouter une image et définir un texte alternatif
+## Ajouter une image et définir un texte alternatif
 
 
 
 Utilisez cet exemple lorsque l'image doit inclure des métadonnées d'accessibilité pour les lecteurs d'écran.
 
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez l'image à la page.
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez l'image à la page.
 
-1. 
-Obtenez le [XImage] (https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) inséré à partir des ressources de la page.
+1. Obtenez le [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) inséré à partir des ressources de la page.
 1. Définissez le texte alternatif et enregistrez le PDF.
 
 
@@ -125,19 +116,16 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 }
 ```
 
-## 
-Ajouter une image avec la compression Flate
+## Ajouter une image avec la compression Flate
 
 
 
 Utilisez cet exemple lorsque vous souhaitez intégrer des données d'image à l'aide de la compression Flate.
 
 
-1. 
-Créez un nouveau [Document] PDF (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez le flux d'images.
+1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez le flux d'images.
 
-1. 
-Ajoutez l'image aux ressources de la page avec `ImageFilterType.Flate`.
+1. Ajoutez l'image aux ressources de la page avec `ImageFilterType.Flate`.
 1. Dessinez l'image via les opérateurs de page et enregistrez le résultat.
 
 ```java
