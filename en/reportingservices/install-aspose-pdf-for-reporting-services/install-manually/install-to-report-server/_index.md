@@ -4,6 +4,7 @@ linktitle: Install to Report Server
 type: docs
 weight: 10
 url: /reportingservices/install-to-report-server/
+description: "Learn about Install to Report Server in Aspose.PDF for Reporting Services."
 lastmod: "2021-06-05"
 ---
 

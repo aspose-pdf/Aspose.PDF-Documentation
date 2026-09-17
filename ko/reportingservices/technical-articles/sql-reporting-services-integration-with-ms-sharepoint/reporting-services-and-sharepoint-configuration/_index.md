@@ -4,6 +4,7 @@ linktitle: Reporting Services 및 SharePoint 구성
 type: docs
 weight: 40
 url: /ko/reportingservices/reporting-services-and-sharepoint-configuration/
+description: "Aspose.PDF for Reporting Services의 Reporting Services 및 SharePoint 구성에 대해 알아보세요."
 lastmod: "2026-06-19"
 ---
 

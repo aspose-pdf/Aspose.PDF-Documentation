@@ -4,33 +4,33 @@ linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /ru/reportingservices/isfontembedded/
-lastmod: "2026-06-19"
+description: Узнайте, как использовать параметр IsFontEmbedded в Aspose.PDF for Reporting Services.
+lastmod: "2021-06-05"
 ---
 
 {{% alert color="primary" %}}
 
-RS Designer не поддерживает встроенный шрифт для текста; с Aspose.PDF for Reporting Services вы можете легко внедрять информацию о шрифте в ваш PDF‑документ.
+RS Designer не поддерживает встроенный шрифт для текста; с помощью Aspose.PDF for Reporting Services вы можете легко встраивать информацию о шрифтах в свой PDF-документ.
 
 {{% /alert %}}
 
-{{% alert color="primary" %}}
-**Имя параметра**: IsFontEmbedded  
-**Тип данных**: Boolean  
-**Поддерживаемые значения**: True, False (по умолчанию)  
+```txt
+Parameter Name: IsFontEmbedded  
+Date Type: Boolean  
+Values supported: True, False (default)  
+```
 
-**Пример**
-{{< highlight csharp >}}
+## Пример
 
+```xml
 <Render>
-…
+...
     <Extension Name="APPDF" Type="Aspose.Pdf.ReportingServices.Renderer,Aspose.Pdf.ReportingServices">
     <Configuration>
     <IsFontEmbedded>True</IsFontEmbedded>
     </Configuration>
     </Extension>
 </Render>
+```
 
-{{< /highlight >}}
-
-{{% /alert %}}
 

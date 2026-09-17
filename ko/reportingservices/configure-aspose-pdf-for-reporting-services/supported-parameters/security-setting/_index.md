@@ -4,6 +4,7 @@ linktitle: 보안 설정
 type: docs
 weight: 30
 url: /ko/reportingservices/security-setting/
+description: "Aspose.PDF for Reporting Services의 보안 설정에 대해 알아보세요."
 lastmod: "2026-06-19"
 ---
 

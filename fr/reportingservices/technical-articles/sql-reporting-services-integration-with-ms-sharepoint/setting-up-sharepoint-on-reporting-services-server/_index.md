@@ -4,6 +4,7 @@ linktitle: Configurer SharePoint sur le serveur Reporting Services
 type: docs
 weight: 30
 url: /fr/reportingservices/setting-up-sharepoint-on-reporting-services-server/
+description: "Découvrez Configurer SharePoint sur le serveur Reporting Services dans Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 
