@@ -5,12 +5,12 @@ type: docs
 weight: 30
 url: /ru/java/rename-form-fields/
 description: Узнайте, как переименовать поля формы PDF на Java с использованием фасада Form в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Переименовать поля формы в PDF‑документе с помощью Java
 Abstract: В этой статье показано, как привязать форму PDF, переименовать существующие поля и сохранить обновленный документ с помощью фасада Form в Aspose.PDF for Java.
 ---
-Использовать `FormExamples.renameFormFields(...)` переименовать поля в интерактивной PDF-форме.
+Используйте `FormExamples.renameFormFields(...)`, чтобы переименовать поля в интерактивной PDF-форме.
 
 ```java
 public static void renameFormFields(Path inputFile, Path outputFile) {

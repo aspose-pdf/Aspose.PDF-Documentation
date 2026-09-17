@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/add-margins-to-pdf-pages/
 description: Добавить поля к выбранным страницам PDF в Java с фасадом PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: Узнайте, как добавить поля к выбранным
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
+1. Создайте экземпляр `PdfFileEditor`.
 2. Выберите номера страниц, которым следует добавить новые отступы.
 3. Вызовите `addMargins` с входным файлом, выходным файлом, списком страниц и значениями полей.
 4. Сохраните обновлённый PDF.

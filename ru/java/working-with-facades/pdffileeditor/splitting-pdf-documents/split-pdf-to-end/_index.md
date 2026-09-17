@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/split-pdf-to-end/
 description: Разделить PDF с выбранной страницы до конца на Java с фасадом PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: Узнайте, как разделить PDF до конца с по�
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
+1. Создайте экземпляр `PdfFileEditor`.
 2. Вызовите `splitToEnd` с исходным файлом, номером начальной страницы и файлом вывода.
 3. Сохраните полученный PDF‑документ.
 

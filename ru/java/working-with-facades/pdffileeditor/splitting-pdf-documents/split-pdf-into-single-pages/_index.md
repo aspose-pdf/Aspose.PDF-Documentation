@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/split-pdf-into-single-pages/
 description: Разделите PDF на одностраничные файлы вывода в Java с помощью фасада PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: Узнайте, как разделить PDF на файлы по о�
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
+1. Создайте экземпляр `PdfFileEditor`.
 2. Подготовьте шаблон выходного файла, включающий заполнитель страницы, например `%NUM%`.
 3. Вызовите `splitToPages` с исходным файлом и шаблоном вывода.
 4. Сохраните сгенерированные одностраничные файлы.

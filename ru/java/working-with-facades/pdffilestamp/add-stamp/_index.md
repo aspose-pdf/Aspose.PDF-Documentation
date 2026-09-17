@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/add-stamp/
 description: Узнайте, как добавить штамп‑изображение на страницы PDF в Java с помощью фасада PdfFileStamp.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,13 +20,13 @@ Abstract: Узнайте, как добавить содержимое штам�
 
 ### Шаги
 
-1. Создайте `PdfFileStamp` экземпляр и привязать исходный PDF.
-2. Создайте `Stamp` объект.
+1. Создайте экземпляр `PdfFileStamp` и привяжите исходный PDF.
+2. Создайте объект `Stamp`.
 3. Привяжите штамп к файлу изображения с помощью `bindImage`.
 4. Добавьте штамп к документу с `addStamp`.
 5. Сохраните результат и закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void addStampToPdf(Path inputFile, Path imageFile, Path outputFile) {
@@ -43,6 +43,6 @@ public static void addStampToPdf(Path inputFile, Path imageFile, Path outputFile
 }
 ```
 
-Текущий `PdfFileStampExamples.java` класс не включает отдельный пример на Java для штампов только с текстом, вращения или настройки непрозрачности.
+Текущий класс `PdfFileStampExamples.java` не включает отдельный пример на Java для штампов только с текстом, вращения или настройки непрозрачности.
 
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/add-page-breaks-in-pdf/
 description: Вставить разрывы страниц в PDF на Java с фасадом PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,12 +19,12 @@ Abstract: Узнайте, как добавить разрывы страниц 
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
-2. Создайте один или несколько `PdfFileEditor.PageBreak` записи с номером страницы и позицией разрыва.
+1. Создайте экземпляр `PdfFileEditor`.
+2. Создайте одну или несколько записей `PdfFileEditor.PageBreak` с номером страницы и позицией разрыва.
 3. Передайте массив разрывов страниц в `addPageBreak`.
 4. Сохраните обновлённый PDF‑документ.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void addPageBreaksInPdf(Path inputFile, Path outputFile) {

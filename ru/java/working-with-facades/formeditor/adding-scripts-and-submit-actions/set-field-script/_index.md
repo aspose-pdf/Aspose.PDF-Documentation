@@ -5,14 +5,14 @@ type: docs
 weight: 20
 url: /ru/java/set-field-script/
 description: Узнайте, как назначать или обновлять действие JavaScript для поля формы PDF на Java, используя фасад FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Установить действие JavaScript для поля формы PDF на Java
 Abstract: В этой статье показано, как привязать существующий PDF, добавить начальный скрипт, заменить его обновлённым скриптом и сохранить изменённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
 ## Установка скрипта поля
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
 2. Добавьте начальное действие JavaScript к полю.
 3. Замените его обновлённым текстом скрипта.
 4. Сохраните обновлённый документ.

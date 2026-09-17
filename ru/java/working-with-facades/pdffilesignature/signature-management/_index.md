@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ru/java/signature-management/
 description: Узнайте, как удалить существующую подпись PDF в Java с помощью фасада PdfFileSignature.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,7 +20,7 @@ Abstract: Узнайте, как удалить подпись из подпис
 
 ### Шаги
 
-1. Создайте `PdfFileSignature` создать экземпляр и привязать подписанный PDF.
+1. Создайте экземпляр `PdfFileSignature` и привяжите подписанный PDF.
 2. Прочитайте коллекцию подписей и выберите имя подписи.
 3. Вызовите `removeSignature` с таким именем.
 4. Сохраните обновлённый файл и закройте объект фасада.

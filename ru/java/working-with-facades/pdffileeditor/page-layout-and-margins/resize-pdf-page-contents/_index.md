@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/resize-pdf-page-contents/
 description: Изменить размер содержимого на выбранных страницах PDF в Java с помощью фасада PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,13 +19,13 @@ Abstract: Узнайте, как изменить размер содержим�
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
+1. Создайте экземпляр `PdfFileEditor`.
 2. Выберите страницы, содержимое которых должно быть изменено в размере.
 3. Вызовите `resizeContents` с целевой шириной и высотой.
 4. Проверьте возвращаемое значение и обработайте сбой перед продолжением.
 5. Сохраните обновлённый документ.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void resizePdfPageContents(Path inputFile, Path outputFile) {

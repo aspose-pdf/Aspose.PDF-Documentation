@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ru/java/signature-extraction/
 description: Узнайте, как извлечь сертификат подписи из подписанного PDF на Java с помощью PdfFileSignature.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,7 +20,7 @@ Abstract: Узнайте, как извлечь сертификат, связа
 
 ### Шаги
 
-1. Создайте `PdfFileSignature` создайте экземпляр и привяжите подписанный PDF.
+1. Создайте экземпляр `PdfFileSignature` и привяжите подписанный PDF.
 2. Выберите имя подписи для проверки.
 3. Вызовите `extractCertificate` для открытия потока сертификата.
 4. Скопируйте байты сертификата в выходной файл.
@@ -44,6 +44,6 @@ public static void extractSignatureCertificate(Path inputFile, Path outputFile) 
 }
 ```
 
-Текущий `PdfFileSignatureExamples.java` класс не включает отдельный пример на Java для извлечения изображения отрисованной подписи.
+Текущий класс `PdfFileSignatureExamples.java` не включает отдельный пример на Java для извлечения изображения отрисованной подписи.
 
 

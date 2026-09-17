@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ru/java/signature-verification/
 description: Узнайте, как проверять подписи PDF в Java с помощью фасада PdfFileSignature.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,13 +20,13 @@ Abstract: Узнайте, как проверять подпись PDF с пом
 
 ### Шаги
 
-1. Создайте `PdfFileSignature` экземпляр и привязать подписанный PDF.
+1. Создайте экземпляр `PdfFileSignature` и привяжите подписанный PDF.
 2. Выберите имя подписи, которое вы хотите проверить.
 3. Вызовите `verifySignature` для проверки подписи.
-4. Вызовите `coversWholeDocument` проверить покрытие.
+4. Вызовите `coversWholeDocument`, чтобы проверить охват документа.
 5. Закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {

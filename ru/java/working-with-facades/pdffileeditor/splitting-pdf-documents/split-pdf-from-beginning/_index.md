@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/split-pdf-from-beginning/
 description: Разделить PDF с начала в Java с помощью фасада PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: Узнайте, как разделить PDF с начала с по�
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
+1. Создайте экземпляр `PdfFileEditor`.
 2. Вызовите `splitFromFirst` с исходным файлом, количеством страниц для сохранения и выходным файлом.
 3. Сохраните новый PDF-документ.
 

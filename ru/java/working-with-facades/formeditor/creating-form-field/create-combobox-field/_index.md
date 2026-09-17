@@ -5,16 +5,16 @@ type: docs
 weight: 30
 url: /ru/java/create-combobox-field/
 description: Узнайте, как добавить поле combo box в PDF‑документ на Java, используя фасад FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Создать поле combo box в PDF на Java
 Abstract: Эта статья демонстрирует, как привязать существующий PDF, добавить поле combo box, заполнить его элементами и сохранить изменённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
-Использовать `FormEditorExamples.createComboBoxField(...)` создать комбобокс и добавить выбираемые элементы.
+Используйте `FormEditorExamples.createComboBoxField(...)`, чтобы создать комбобокс и добавить выбираемые элементы.
 
 ## Создание поля combo box
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
 2. Добавьте поле combo box с его значением по умолчанию и целевым прямоугольником.
 3. Добавьте выбираемые элементы combo box.
 4. Сохраните обновлённый документ.

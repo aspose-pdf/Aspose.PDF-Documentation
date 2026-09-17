@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/encrypt-pdf-file/
 description: Узнайте, как зашифровать PDF и настроить разрешения в Java с помощью фасада PdfFileSecurity.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -16,17 +16,17 @@ Abstract: Узнайте, как зашифровать PDF с помощью As
 ---
 ## Шифрование PDF-файла
 
-Использовать `PdfFileSecurity` когда вам нужно защитить PDF паролями и правилами привилегий.
+Используйте `PdfFileSecurity`, когда вам нужно защитить PDF паролями и правилами привилегий.
 
 ### Шаги
 
-1. Создайте `PdfFileSecurity` экземпляр.
-2. Свяжите исходный PDF с `bindPdf`.
-3. Создайте `DocumentPrivilege` объект, соответствующий разрешённым действиям.
-4. Вызовите соответствующее `encryptFile` перегрузка для нужного вам размера ключа и алгоритма
+1. Создайте экземпляр `PdfFileSecurity`.
+2. Привяжите исходный PDF с помощью `bindPdf`.
+3. Создайте объект `DocumentPrivilege`, соответствующий разрешённым действиям.
+4. Вызовите соответствующую перегрузку `encryptFile` для нужного размера ключа и алгоритма.
 5. Сохраните защищённый файл и закройте объект.
 
-### Примеры Java
+### Примеры на Java
 
 ```java
 public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {

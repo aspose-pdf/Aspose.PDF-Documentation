@@ -5,14 +5,14 @@ type: docs
 weight: 40
 url: /ru/java/set-field-appearance/
 description: Узнайте, как изменить флаги визуального отображения поля формы PDF в Java с использованием фасада FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Изменить флаги отображения поля формы PDF в Java
 Abstract: В этой статье показано, как привязать существующий PDF, применить флаг отображения к полю и сохранить обновлённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
 ## Установка флагов отображения поля
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
 2. Вызовите `setFieldAppearance(...)` для целевого поля и выбранного флага аннотации.
 3. Сохраните обновлённый документ.
 

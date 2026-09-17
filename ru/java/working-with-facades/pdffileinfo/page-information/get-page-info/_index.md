@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/get-page-info/
 description: Узнайте, как проверять ширину, высоту и поворот страницы в Java с помощью фасада PdfFileInfo.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: Узнайте, как извлечь информацию о стра
 
 ### Шаги
 
-1. Создайте `PdfFileInfo` объект для исходного PDF.
-2. Вызовите `getPageWidth`, `getPageHeight`, и `getPageRotation` для страницы, которую вы хотите проверить.
+1. Создайте объект `PdfFileInfo` для исходного PDF.
+2. Вызовите `getPageWidth`, `getPageHeight` и `getPageRotation` для страницы, которую вы хотите проверить.
 3. Используйте или выведите полученные значения.
-4. Закройте `PdfFileInfo` экземпляр.
+4. Закройте экземпляр `PdfFileInfo`.
 
 ### Пример на Java
 

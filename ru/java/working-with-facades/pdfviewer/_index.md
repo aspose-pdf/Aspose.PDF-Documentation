@@ -5,7 +5,7 @@ type: docs
 weight: 135
 url: /ru/java/pdfviewer-class/
 description: Узнайте, как использовать фасад PdfViewer в Java для декодирования страниц PDF и проверки настроек, связанных с просмотрщиком.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Декодируйте страницы PDF и проверяйте данные просмотрщика в Java с помощью PdfViewer
 Abstract: В этом разделе объясняется, как использовать фасад PdfViewer в Aspose.PDF for Java для задач декодирования страниц и проверки связанных с просмотрщиком параметров. Текущие примеры на Java охватывают рендеринг всех страниц в изображения, декодирование конкретной страницы и проверку количества страниц, типа координат, разрешения и привязанных настроек просмотрщика.
 ---
-Джава `PdfViewerExamples` Класс демонстрирует основные рабочие процессы просмотра, доступные через Facades API.
+Класс `PdfViewerExamples` на Java демонстрирует основные рабочие процессы просмотра, доступные через Facades API.
 
 ## Декодирование всех страниц PDF
 
@@ -21,13 +21,13 @@ Abstract: В этом разделе объясняется, как исполь
 
 ### Шаги
 
-1. Создайте и настроить `PdfViewer` экземпляр.
-2. Привяжите исходный PDF к `bindPdf`.
-3. Вызовите `decodeAllPages()` отобразить документ в `BufferedImage` массив.
+1. Создайте и настройте экземпляр `PdfViewer`.
+2. Привяжите исходный PDF с помощью `bindPdf`.
+3. Вызовите `decodeAllPages()`, чтобы отобразить документ в виде массива `BufferedImage`.
 4. Сохраните каждую декодированную страницу в выходной файл изображения.
 5. Закройте связанный PDF‑файл.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void decodeAllPages(Path inputFile, Path outputDir) throws Exception {
@@ -50,13 +50,13 @@ public static void decodeAllPages(Path inputFile, Path outputDir) throws Excepti
 
 ### Шаги
 
-1. Создайте и настроить `PdfViewer` экземпляр.
+1. Создайте и настройте экземпляр `PdfViewer`.
 2. Привяжите исходный PDF.
 3. Вызовите `decodePage()` для страницы, которую вы хотите отобразить.
 4. Сохраните декодированную страницу в выходной файл изображения.
 5. Закройте просмотрщик.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void decodeSpecificPage(Path inputFile, Path outputFile) throws Exception {
@@ -70,19 +70,19 @@ public static void decodeSpecificPage(Path inputFile, Path outputFile) throws Ex
 }
 ```
 
-## Просмотрите метаданные PDF
+## Просмотр метаданных PDF
 
 Используйте этот рабочий процесс, когда вам нужна информация о документе, связанная с просмотрщиком, перед рендерингом или печатью.
 
 ### Шаги
 
-1. Создайте и настроить `PdfViewer` экземпляр.
+1. Создайте и настройте экземпляр `PdfViewer`.
 2. Привяжите исходный PDF.
 3. Прочитайте количество страниц, тип координат и разрешение рендеринга.
 4. Используйте или выведите полученные значения.
 5. Закройте связанный PDF‑файл.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void inspectPdfMetadata(Path inputFile) {
@@ -104,13 +104,13 @@ public static void inspectPdfMetadata(Path inputFile) {
 
 ### Шаги
 
-1. Создайте и настроить `PdfViewer` экземпляр.
+1. Создайте и настройте экземпляр `PdfViewer`.
 2. Привяжите исходный PDF.
 3. Установите параметры просмотрщика, такие как автоизменение размера, автоповорот и видимость диалогового окна печати.
 4. Прочитайте активные настройки просмотрщика и количество страниц.
 5. Закройте просмотрщик.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void inspectBoundViewerSettings(Path inputFile) {

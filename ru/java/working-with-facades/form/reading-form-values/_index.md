@@ -5,16 +5,16 @@ type: docs
 weight: 60
 url: /ru/java/reading-form-values/
 description: Узнайте, как просматривать имена полей формы PDF и их значения в Java с использованием фасада Form в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Чтение имен полей формы PDF и их значений в Java
 Abstract: В этом разделе рассматриваются потоки чтения форм Java, реализованные в текущем наборе примеров фасада Form для Aspose.PDF for Java. Репозиторий предоставляет общий пример инспекции полей и использует явные примечания к области для специализированных страниц, для которых пока нет соответствующих примеров на Java.
 ---
-Java `FormExamples` класс демонстрирует основные рабочие процессы обработки форм, предоставляемые Facades API.
+Класс `FormExamples` на Java демонстрирует основные рабочие процессы обработки форм, предоставляемые Facades API.
 
 ## Получение значений полей
 
-Использовать `FormExamples.inspectFormFields(...)` для проверки имен полей и их текущих значений.
+Используйте `FormExamples.inspectFormFields(...)` для проверки имен полей и их текущих значений.
 
 ```java
 public static void inspectFormFields(Path inputFile) {

@@ -5,14 +5,14 @@ type: docs
 weight: 40
 url: /ru/java/remove-field/
 description: Узнайте, как удалить существующее поле формы из PDF‑документа на Java, используя фасад FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Удалить поле формы PDF на Java
 Abstract: В этой статье показано, как привязать существующий PDF, удалить указанное поле и сохранить обновлённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
 ## Удаление поля
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
 2. Вызовите `removeField(...)` для имени целевого поля.
 3. Сохраните обновлённый документ.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/get-pdf-version/
 description: Узнайте, как получить версию PDF‑документа в Java с помощью фасада PdfFileInfo.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: Узнайте, как получить версию PDF с помощ
 
 ### Шаги
 
-1. Создайте `PdfFileInfo` объект для PDF‑файла.
+1. Создайте объект `PdfFileInfo` для PDF‑файла.
 2. Вызовите `getPdfVersion()` для получения сообщённой версии.
 3. Используйте или выведите значение версии.
-4. Закройте `PdfFileInfo` экземпляр.
+4. Закройте экземпляр `PdfFileInfo`.
 
 ### Пример на Java
 

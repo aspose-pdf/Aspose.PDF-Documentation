@@ -5,12 +5,12 @@ type: docs
 weight: 10
 url: /ru/java/fill-text-fields/
 description: Узнайте, как заполнять текстовые поля в PDF-форме с помощью Java, используя фасад Form в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Заполните текстовые поля формы в PDF с помощью Java
 Abstract: В этой статье показано, как привязать PDF-форму, установить значения текстовых полей по имени и сохранить обновленный документ, используя фасад Form в Aspose.PDF for Java.
 ---
-Использовать `FormExamples.fillTextFields(...)` для заполнения текстовых полей формы.
+Используйте `FormExamples.fillTextFields(...)` для заполнения текстовых полей формы.
 
 ```java
 public static void fillTextFields(Path inputFile, Path outputFile) {

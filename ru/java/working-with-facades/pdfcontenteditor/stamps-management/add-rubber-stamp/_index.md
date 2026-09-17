@@ -5,14 +5,14 @@ type: docs
 weight: 10
 url: /ru/java/add-rubber-stamp/
 description: Узнайте, как добавить аннотацию резиновой печати в PDF‑документ на Java, используя фасад PdfContentEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Добавить резиновую печать в PDF на Java
 Abstract: В этой статье показано, как привязать PDF, создать аннотацию резиновой печати с текстом метки и цветом, и сохранить обновлённый документ, используя фасад PdfContentEditor в Aspose.PDF for Java.
 ---
 ## Добавление резиновой печати
 
-1. Привяжите исходный PDF к `PdfContentEditor` фасад.
+1. Привяжите исходный PDF к фасаду `PdfContentEditor`.
 2. Вызовите `createRubberStamp(...)` с номером страницы, прямоугольником, заголовком, содержимым и цветом.
 3. Сохраните обновлённый PDF‑документ.
 

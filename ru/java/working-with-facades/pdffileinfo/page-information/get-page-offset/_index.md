@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/get-page-offset/
 description: Узнайте, как проверять смещения X и Y страницы в Java с помощью фасада PdfFileInfo.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,11 +20,11 @@ Abstract: Узнайте, как получить смещения страни�
 
 ### Шаги
 
-1. Создайте `PdfFileInfo` объект для входного PDF.
+1. Создайте объект `PdfFileInfo` для входного PDF.
 2. Вызовите `getPageXOffset` и `getPageYOffset` для целевой страницы.
 3. Преобразуйте значения в пунктах в дюймы, разделив на `72.0`.
 4. Используйте или выведите преобразованные значения.
-5. Закройте `PdfFileInfo` экземпляр.
+5. Закройте экземпляр `PdfFileInfo`.
 
 ### Пример на Java
 

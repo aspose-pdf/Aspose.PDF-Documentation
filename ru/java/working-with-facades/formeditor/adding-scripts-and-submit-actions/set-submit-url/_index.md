@@ -5,14 +5,14 @@ type: docs
 weight: 30
 url: /ru/java/set-submit-url/
 description: Узнайте, как задать URL отправки для кнопки формы PDF в Java, используя фасад FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Настройте URL отправки формы PDF в Java
 Abstract: В этой статье показано, как привязать существующий PDF, задать URL отправки и флаг отправки для поля кнопки, а также сохранить обновлённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
-## Задание URL отправок
+## Задание URL отправки
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
 2. Вызовите `setSubmitUrl(...)` для поля кнопки.
 3. Примените флаг отправки для формата отправки.
 4. Сохраните обновлённый документ.

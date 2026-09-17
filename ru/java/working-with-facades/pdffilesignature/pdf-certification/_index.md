@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/pdf-certification/
 description: Узнайте, как сертифицировать PDF‑документы на Java с помощью PdfFileSignature и DocMDPSignature.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,9 +20,9 @@ Abstract: Узнайте, как сертифицировать PDF‑докум
 
 ### Шаги
 
-1. Создайте `PdfFileSignature` экземпляр и привязать исходный PDF.
-2. Создайте `PKCS7` объект подписи с сертификатом и паролем сертификата.
-3. Обверните эту подпись в `DocMDPSignature` с требуемым `DocMDPAccessPermissions` значение.
+1. Создайте экземпляр `PdfFileSignature` и привяжите исходный PDF.
+2. Создайте объект подписи `PKCS7` с сертификатом и паролем сертификата.
+3. Обверните эту подпись в `DocMDPSignature` с требуемым значением `DocMDPAccessPermissions`.
 4. Вызовите `certify` с целевой страницей, метаданными подписи, видимым прямоугольником и подписью MDP.
 5. Сохраните подписанный PDF и закройте фасадный объект.
 

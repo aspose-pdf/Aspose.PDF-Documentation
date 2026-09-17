@@ -5,17 +5,17 @@ type: docs
 weight: 10
 url: /ru/java/create-textbox-field/
 description: Узнайте, как добавить поля TextBox в PDF‑документ на Java, используя фасад FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Создайте текстовые поля формы в PDF с Java.
 Abstract: В этой статье показано, как привязать существующий PDF, добавить текстовые поля с значениями по умолчанию и сохранить изменённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
-Использовать `FormEditorExamples.createTextBoxField(...)` добавить текстовые поля в форму PDF.
+Используйте `FormEditorExamples.createTextBoxField(...)`, чтобы добавить текстовые поля в форму PDF.
 
 ## Создание полей TextBox
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
-2. Добавьте каждое текстовое поле с `FieldType.Text`, имя поля, значение по умолчанию, номер страницы и прямоугольник.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
+2. Добавьте каждое текстовое поле типа `FieldType.Text`, указав имя поля, значение по умолчанию, номер страницы и прямоугольник.
 3. Сохраните обновлённый документ.
 
 ```java

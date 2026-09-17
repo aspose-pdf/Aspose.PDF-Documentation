@@ -5,16 +5,16 @@ type: docs
 weight: 40
 url: /ru/java/create-listbox-field/
 description: Узнайте, как добавить поле списка в PDF‑документ на Java, используя фасад FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Создать поле списка в PDF на Java
 Abstract: В этой статье показано, как привязать существующий PDF, определить элементы списка, добавить поле списка и сохранить изменённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
-Использовать `FormEditorExamples.createListBoxField(...)` создать поле списка с предопределёнными элементами.
+Используйте `FormEditorExamples.createListBoxField(...)`, чтобы создать поле списка с предопределёнными элементами.
 
 ## Создание поля списка
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
 2. Определите доступные элементы списка с помощью `setItems(...)`.
 3. Добавьте поле списка с его значением по умолчанию и прямоугольником.
 4. Сохраните обновлённый документ.

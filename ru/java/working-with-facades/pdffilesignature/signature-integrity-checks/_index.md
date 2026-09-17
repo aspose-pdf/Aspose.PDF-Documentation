@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ru/java/signature-integrity-checks/
 description: Узнайте, как проверять покрытие подписи и её целостность в Java с помощью фасада PdfFileSignature.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -26,7 +26,7 @@ Abstract: Узнайте, как проверять целостность по�
 4. Вызовите `coversWholeDocument` для подтверждения охвата всего документа.
 5. Закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /ru/java/usage-rights-management/
 description: Проверьте текущую поддержку управления правами использования PDF в Java с помощью PdfFileSignature.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -18,9 +18,9 @@ Abstract: Текущий класс `PdfFileSignatureExamples` в этом ре�
 
 Текущий пример класса Java для `PdfFileSignature` не предоставляет специализированных образцов проверки или удаления прав использования.
 
-В этом разделе доступны поддерживаемые источником рабочие процессы, включают:
+В этом разделе доступны следующие рабочие процессы, представленные в примерах:
 
-- [Подписать PDF-документы](/pdf/ru/java/pdf-signing/)
+- [Подписание PDF-документов](/pdf/ru/java/pdf-signing/)
 - [Сертификация PDF](/pdf/ru/java/pdf-certification/)
 - [Проверка подписи](/pdf/ru/java/signature-verification/)
 - [Управление подписями](/pdf/ru/java/signature-management/)

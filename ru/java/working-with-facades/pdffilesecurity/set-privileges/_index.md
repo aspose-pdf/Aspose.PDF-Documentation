@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/set-privileges/
 description: Узнайте, как установить привилегии PDF в Java с помощью фасада PdfFileSecurity.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,13 +20,13 @@ Abstract: Узнайте, как контролировать разрешени
 
 ### Шаги
 
-1. Создайте `PdfFileSecurity` экземпляр.
-2. Свяжите исходный PDF с `bindPdf`.
-3. Создайте `DocumentPrivilege` объект и настройте разрешённые действия.
-4. Вызовите соответствующий `setPrivilege` или `trySetPrivilege` перегрузка.
+1. Создайте экземпляр `PdfFileSecurity`.
+2. Привяжите исходный PDF с помощью `bindPdf`.
+3. Создайте объект `DocumentPrivilege` и настройте разрешённые действия.
+4. Вызовите соответствующую перегрузку `setPrivilege` или `trySetPrivilege`.
 5. Сохраните результат, если обновление удалось, затем закройте объект.
 
-### Примеры Java
+### Примеры на Java
 
 ```java
 public static void setPdfPrivilegesWithoutPasswords(Path inputFile, Path outputFile) {

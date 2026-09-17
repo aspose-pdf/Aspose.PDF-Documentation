@@ -5,7 +5,7 @@ type: docs
 weight: 150
 url: /ru/java/stamp-class/
 description: Узнайте, как работать с классом Stamp в Java, чтобы добавлять штампы изображений, PDF и текста в PDF‑документы.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Добавление штампов изображений, PDF и текста в PDF‑документы на Java
 Abstract: В этом разделе объясняется, как использовать класс Stamp вместе с PdfFileStamp в Aspose.PDF for Java для добавления переиспользуемого содержания штампов в PDF‑документы. Текущие примеры на Java охватывают штампы изображений, штампы страниц PDF, текстовые штампы с пользовательским TextState, штампы, применяемые к отдельным страницам, а также фоновые штампы изображений с настройками прозрачности, размера и вращения.
 ---
-Java `StampExamples` класс демонстрирует основные рабочие процессы создания штампов, доступные через API фасадов.
+Класс `StampExamples` на Java демонстрирует основные рабочие процессы создания штампов, доступные через API фасадов.
 
 ## Добавление штампа изображения
 
@@ -21,13 +21,13 @@ Java `StampExamples` класс демонстрирует основные ра
 
 ### Шаги
 
-1. Создайте `PdfFileStamp` создать экземпляр и привязать исходный PDF.
-2. Создайте `Stamp` объект и привяжите его к файлу изображения.
+1. Создайте экземпляр `PdfFileStamp` и привяжите исходный PDF.
+2. Создайте объект `Stamp` и привяжите его к файлу изображения.
 3. Установите идентификатор штампа и исходную точку размещения.
 4. Добавьте штамп в документ.
 5. Сохраните результат и закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
@@ -52,13 +52,13 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 
 ### Шаги
 
-1. Создайте `PdfFileStamp` экземпляр и привязать целевой PDF.
-2. Создайте `Stamp` объект.
+1. Создайте экземпляр `PdfFileStamp` и привяжите целевой PDF.
+2. Создайте объект `Stamp`.
 3. Привяжите штамп к определённой странице из другого PDF-файла.
 4. Установите номер целевой страницы и исходную точку для размещения.
 5. Добавьте штамп, сохраните результат и закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void addPdfPageAsStamp(Path inputFile, Path stampPdf, Path outputFile) {
@@ -83,13 +83,13 @@ public static void addPdfPageAsStamp(Path inputFile, Path stampPdf, Path outputF
 
 ### Шаги
 
-1. Создайте `PdfFileStamp` создать экземпляр и привязать исходный PDF.
-2. Создайте `Stamp` объект.
-3. Привяжите `FormattedText` логотип и пользовательский `TextState` к штампу.
+1. Создайте экземпляр `PdfFileStamp` и привяжите исходный PDF.
+2. Создайте объект `Stamp`.
+3. Привяжите текст `FormattedText` и пользовательский `TextState` к штампу.
 4. Установите исходную точку штампа и его вращение.
 5. Добавьте штамп, сохраните результат и закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void addTextStampWithTextState(Path inputFile, Path outputFile) {
@@ -115,13 +115,13 @@ public static void addTextStampWithTextState(Path inputFile, Path outputFile) {
 
 ### Шаги
 
-1. Создайте `PdfFileStamp` создать экземпляр и привязать исходный PDF.
-2. Создайте `Stamp` объект и привязать его к файлу изображения.
+1. Создайте экземпляр `PdfFileStamp` и привяжите исходный PDF.
+2. Создайте объект `Stamp` и привяжите его к файлу изображения.
 3. Установите список целевых страниц, исходную точку и размер изображения.
 4. Добавьте штамп в документ.
 5. Сохраните результат и закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void addStampToSpecificPages(Path inputFile, Path imageFile, Path outputFile) {
@@ -147,13 +147,13 @@ public static void addStampToSpecificPages(Path inputFile, Path imageFile, Path 
 
 ### Шаги
 
-1. Создайте `PdfFileStamp` создать экземпляр и привязать исходный PDF.
-2. Создайте `Stamp` объект и привяжите его к файлу изображения.
+1. Создайте экземпляр `PdfFileStamp` и привяжите исходный PDF.
+2. Создайте объект `Stamp` и привяжите его к файлу изображения.
 3. Отметьте штамп как фон.
 4. Настройте непрозрачность, качество, поворот, размер и исходную точку.
 5. Добавьте штамп, сохраните результат и закройте объект фасада.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void addBackgroundImageStamp(Path inputFile, Path imageFile, Path outputFile) {

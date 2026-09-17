@@ -5,16 +5,16 @@ type: docs
 weight: 70
 url: /ru/java/pdfcontenteditor-multimedia/
 description: Узнайте о текущем охвате мультимедиа, доступном в фасаде Java PdfContentEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Рабочие процессы аннотаций мультимедиа в Java с PdfContentEditor
 Abstract: Этот раздел охватывает рабочие процессы, связанные с мультимедиа, которые в настоящее время поддерживаются набором примеров Java PdfContentEditor. Репозиторий содержит пример аннотации фильма, а неподдерживаемые темы звука оставлены в виде явных примечаний о области.
 ---
-Текущий Java `PdfContentEditorExamples` класс напрямую поддерживает `addMovieAnnotation(...)`.
+Текущий класс `PdfContentEditorExamples` на Java напрямую поддерживает `addMovieAnnotation(...)`.
 
 ## Добавление аннотации фильма
 
-1. Привяжите исходный PDF к `PdfContentEditor` фасад.
+1. Привяжите исходный PDF к фасаду `PdfContentEditor`.
 2. Вызовите `createMovie(...)` с прямоугольником аннотации, путем к файлу фильма и номером страницы.
 3. Сохраните обновлённый PDF‑документ.
 

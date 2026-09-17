@@ -5,16 +5,16 @@ type: docs
 weight: 20
 url: /ru/java/list-stamps/
 description: Узнайте, как перечислить резиновые штампы на странице в Java, используя фасад `PdfContentEditor` в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Список резиновых штампов PDF в Java
 Abstract: В этой статье показывается, как привязать PDF, извлечь штампы на странице и проверить полученную коллекцию, используя фасад `PdfContentEditor` в Aspose.PDF for Java.
 ---
-## Перечислите штампы на странице
+## Перечисление штампов на странице
 
-1. Привяжите исходный PDF к `PdfContentEditor` фасад.
-2. Вызовите `getStamps(pageNumber)` получить штампы на целевой странице.
-3. Проверьте результат `StampInfo[]` коллекция.
+1. Привяжите исходный PDF к фасаду `PdfContentEditor`.
+2. Вызовите `getStamps(pageNumber)`, чтобы получить штампы на целевой странице.
+3. Проверьте возвращённый массив `StampInfo[]`.
 
 ```java
 public static void listStamps(Path inputFile) {

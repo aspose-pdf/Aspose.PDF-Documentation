@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /ru/java/add-document-action/
 description: Узнайте, как добавить действие открытия документа к PDF в Java с помощью фасада PdfContentEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Добавьте действие открытия документа к PDF в Java
 Abstract: В этой статье показано, как привязать PDF, прикрепить действие JavaScript к событию открытия документа и сохранить обновлённый документ, используя фасад PdfContentEditor в Aspose.PDF for Java.
 ---
 ## Добавление действия открытия документа
 
-1. Привяжите исходный PDF к `PdfContentEditor` фасад.
-2. Вызовите `addDocumentAdditionalAction(...)` с `DOCUMENT_OPEN` событие и текст действия JavaScript.
+1. Привяжите исходный PDF к фасаду `PdfContentEditor`.
+2. Вызовите `addDocumentAdditionalAction(...)` с событием `DOCUMENT_OPEN` и текстом действия JavaScript.
 3. Сохраните обновлённый PDF‑документ.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/extract-pages-from-pdf/
 description: Извлечь выбранные страницы из PDF в Java с фасадом PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: Узнайте, как извлечь страницы из PDF с п�
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
+1. Создайте экземпляр `PdfFileEditor`.
 2. Определите номера страниц для извлечения.
 3. Вызовите `extract` с исходным файлом, массивом страниц и выходным файлом.
 4. Сохраните извлечённые страницы как новый PDF.

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/button-fields-and-images/
 description: Узнайте, как добавить изображение в качестве внешнего вида к полю кнопки в PDF-форме с помощью фасада Form в Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Добавьте изображение в качестве внешнего вида к полю кнопки PDF в Java
 Abstract: В этой статье показано, как использовать фасад Form в Aspose.PDF for Java для привязки PDF-формы, загрузки изображения в виде потока, заполнения поля кнопки изображением и сохранения обновлённого документа.
@@ -14,10 +14,10 @@ Abstract: В этой статье показано, как использова
 
 Процесс работы прост:
 
-- привязать входной PDF к `form.bindPdf(...)`
-- открыть файл изображения с помощью `Files.newInputStream(...)`
-- звонок `form.fillImageField(...)` для поля кнопки
-- сохраните обновлённый PDF
+- Привяжите входной PDF с помощью `form.bindPdf(...)`.
+- Откройте файл изображения с помощью `Files.newInputStream(...)`.
+- Вызовите `form.fillImageField(...)` для поля кнопки.
+- Сохраните обновлённый PDF.
 
 ```java
 public static void addImageAppearanceToButtonField(Path inputFile, Path imageFile, Path outputFile) throws Exception {

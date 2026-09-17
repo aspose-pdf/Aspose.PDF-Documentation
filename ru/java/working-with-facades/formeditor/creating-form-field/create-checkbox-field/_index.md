@@ -5,17 +5,17 @@ type: docs
 weight: 20
 url: /ru/java/create-checkbox-field/
 description: Узнайте, как добавить поле формы с флажком в PDF‑документ на Java, используя фасад FormEditor в Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 TechArticle: true
 AlternativeHeadline: Создать поле флажка в PDF с помощью Java
 Abstract: В этой статье показано, как привязать существующий PDF, добавить поле с флажком в указанное положение и сохранить изменённый документ, используя фасад FormEditor в Aspose.PDF for Java.
 ---
-Использовать `FormEditorExamples.createCheckBoxField(...)` добавить поле чекбокса в PDF форму.
+Используйте `FormEditorExamples.createCheckBoxField(...)`, чтобы добавить поле чекбокса в PDF форму.
 
 ## Создание поля с флажком
 
-1. Привяжите исходный PDF к `FormEditor` фасад.
-2. Добавьте поле с флажком `FieldType.CheckBox`, название поля, заголовок, страница и прямоугольник.
+1. Привяжите исходный PDF к фасаду `FormEditor`.
+2. Добавьте поле с флажком типа `FieldType.CheckBox`, указав имя поля, заголовок, страницу и прямоугольник.
 3. Сохраните обновлённый документ.
 
 ```java

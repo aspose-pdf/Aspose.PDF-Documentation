@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/page-merging/
 description: Узнайте, как объединять PDF-файлы в Java с помощью фасада PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Объединяйте PDF-документы в Java с помощью PdfFileEditor
 Abstract: В этом разделе объясняются процессы слияния, связанные с PdfFileEditor в Aspose.PDF for Java. Текущий набор примеров Java включает прямой пример concatenate для объединения входных файлов, тогда как несколько дополнительных страниц слияния в этом разделе сохранены в виде примечаний, поскольку в классе примеров репозитория отсутствует выделенный метод Java.
 ---
-Java `PdfFileEditorExamples` класс включает прямой `concatenate` пример объединения PDF файлов.
+Класс `PdfFileEditorExamples` на Java включает пример объединения PDF-файлов с помощью `concatenate`.
 
 В этом разделе вы найдете:
 

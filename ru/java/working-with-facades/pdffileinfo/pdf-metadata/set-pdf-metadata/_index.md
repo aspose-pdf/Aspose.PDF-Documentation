@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ru/java/set-pdf-metadata/
 description: Узнайте, как обновлять метаданные PDF в Java с помощью фасада PdfFileInfo.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,13 +20,13 @@ Abstract: Узнайте, как обновлять метаданные PDF с 
 
 ### Шаги
 
-1. Создайте `PdfFileInfo` объект для исходного PDF.
+1. Создайте объект `PdfFileInfo` для исходного PDF.
 2. Установите стандартные поля метаданных, которые вы хотите обновить.
 3. Добавьте любые пользовательские метаданные с `setMetaInfo`.
 4. Сохраните обновлённый документ с `save()`.
-5. Закройте `PdfFileInfo` экземпляр.
+5. Закройте экземпляр `PdfFileInfo`.
 
-### Пример Java
+### Пример на Java
 
 ```java
 public static void setPdfMetadata(Path inputFile, Path outputFile) {

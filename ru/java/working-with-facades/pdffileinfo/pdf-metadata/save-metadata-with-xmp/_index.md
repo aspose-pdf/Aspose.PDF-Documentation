@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/save-metadata-with-xmp/
 description: Узнайте, как сохранить метаданные PDF с помощью XMP в Java, используя фасад PdfFileInfo.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: Узнайте, как сохранить метаданные PDF с 
 
 ### Шаги
 
-1. Создайте `PdfFileInfo` объект для исходного PDF.
+1. Создайте объект `PdfFileInfo` для исходного PDF.
 2. Установите поля метаданных, которые вы хотите обновить, такие как тема, заголовок, ключевые слова и создатель.
 3. Вызовите `saveNewInfoWithXmp()` с путем к выходному файлу.
-4. Закройте `PdfFileInfo` экземпляр.
+4. Закройте экземпляр `PdfFileInfo`.
 
 ### Пример на Java
 

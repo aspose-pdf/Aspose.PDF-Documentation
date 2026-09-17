@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/delete-pages-from-pdf/
 description: Удалить выбранные страницы из PDF в Java с помощью фасада PdfFileEditor.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: Узнайте, как удалить страницы из PDF с п�
 
 ### Шаги
 
-1. Создайте `PdfFileEditor` экземпляр.
+1. Создайте экземпляр `PdfFileEditor`.
 2. Создайте массив с номерами страниц для удаления.
 3. Вызовите `delete` с входным файлом, массивом страниц и выходным файлом.
 4. Сохраните полученный PDF.

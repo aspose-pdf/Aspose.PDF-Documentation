@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ru/java/pdfannotationeditor-class/
 description: Узнайте, как работать с потоками аннотаций PDF в Java через раздел PdfAnnotationEditor, включая текст, разметку, ссылки, фигуры, водяные знаки, редактирование и сценарии переноса аннотаций.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,7 +15,7 @@ Abstract: Данный раздел упорядочивает связанны�
 ---
 Этот раздел сгруппирует Java‑потоки аннотаций, используемые для создания, просмотра, удаления и переноса аннотаций в PDF‑файлах.
 
-Текущий репозиторий не включает специальный `PdfAnnotationEditorExamples.java` класс. Для этого раздела содержимое статьи берётся из примеров Java под `en/java/src/main/java/com/aspose/pdf/examples/workingwithannotations`.
+Текущий репозиторий не включает специальный класс `PdfAnnotationEditorExamples.java`. Для этого раздела содержимое статьи берётся из примеров Java под `en/java/src/main/java/com/aspose/pdf/examples/workingwithannotations`.
 
 Используйте этот раздел для:
 

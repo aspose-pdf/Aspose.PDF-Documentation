@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/decrypt-pdf-file/
 description: Узнайте, как расшифровать PDF в Java с помощью фасада PdfFileSecurity.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,13 +20,13 @@ Abstract: Узнайте, как расшифровать PDF с помощью 
 
 ### Шаги
 
-1. Создайте `PdfFileSecurity` экземпляр.
-2. Свяжите зашифрованный PDF с `bindPdf`.
+1. Создайте экземпляр `PdfFileSecurity`.
+2. Привяжите зашифрованный PDF с помощью `bindPdf`.
 3. Вызовите `decryptFile` или `tryDecryptFile` с паролем владельца.
 4. Сохраните результат, если расшифровка удалась.
 5. Закройте объект безопасности.
 
-### Примеры Java
+### Примеры на Java
 
 ```java
 public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) {
