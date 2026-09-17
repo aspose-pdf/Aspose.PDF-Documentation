@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/complex-pdf-example/
 description: Aspose.PDF for Java позволяет создавать более сложные PDF‑документы, содержащие изображения, фрагменты текста и таблицы в одном файле.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,18 +13,18 @@ TechArticle: true
 AlternativeHeadline: Создайте сложный PDF с использованием Java
 Abstract: В этой статье показано, как создать более сложный PDF в Java с использованием Aspose.PDF. В примере добавляются изображение, отформатированный заголовок, описательный текстовый блок и таблица со стилизованными ячейками заголовка и сгенерированными строками расписания, после чего результат сохраняется в виде PDF‑документа.
 ---
-The [Привет мир](/pdf/ru/java/hello-world-example/) пример охватывает самый простой путь создания PDF. Этот пример основывается на этом workflow и создает более богатый документ, комбинирующий графику, текст и табличное содержимое.
+Пример [Hello World](/pdf/ru/java/hello-world-example/) демонстрирует базовый процесс создания PDF. Этот пример развивает его: в документ добавляются графика, текст и таблица.
 
 Чтобы создать более сложный PDF-документ в Java:
 
-1. Создайте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавить [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Добавьте изображение к [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) с `page.addImage(...)` и цель [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-1. Создайте заголовок [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и установить его шрифт, размер, выравнивание и [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. Создайте объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) и добавьте страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Добавьте изображение на страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) с помощью `page.addImage(...)`, указав область размещения [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Создайте заголовок с помощью [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) и установите его шрифт, размер, выравнивание и [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
 1. Создайте второй [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) для абзаца описания.
 1. Создайте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) с границами, отступами и стилизацией заголовка.
 1. Добавьте сгенерированные строки расписания в [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
-1. Добавьте [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) к [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) параграфы.
-1. Сохраните результирующий PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте таблицу [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) в коллекцию абзацев страницы [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Сохраните объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в формате PDF.
 
 Следующий код Java основан на `GetStartedExamples.java`.
 
@@ -58,7 +58,7 @@ public static void complexExample(Path imageFile, Path outputFile) {
 }
 ```
 
-В этом же примере используется вспомогательный метод для подготовки таблицы расписания с форматированием заголовков и сгенерированными временами отправления:
+В этом же примере используется вспомогательный метод для подготовки таблицы расписания с форматированием заголовков и сгенерированным временем отправления:
 
 ```java
 private static Table createScheduleTable() {

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ru/java/protect-pdf-file/
 description: Узнайте, как шифровать PDF-файлы, дешифровать защищённые документы, менять пароли и проверять защиту паролем в Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,14 +17,14 @@ Aspose.PDF for Java предоставляет несколько API для з�
 
 ## Защита PDF‑документов в Java
 
-Примеры в `ProtectDocumentExamples.java` демонстрировать, как:
+Примеры в `ProtectDocumentExamples.java` демонстрируют следующие операции:
 
 1. Примените шифрование к [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с паролями пользователя и владельца.
 1. Ограничьте разрешения с помощью [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
-1. Выберите [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) для защищенных [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Выберите алгоритм [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) для защиты документа [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Расшифруйте защищённый [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Измените существующие пароли в [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Тестируйте варианты паролей с [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) и [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Проверьте варианты паролей с помощью [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) и [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ## Шифрование PDF с ограниченными привилегиями
 
@@ -95,7 +95,7 @@ public static void changePassword(Path inputFile, Path outputFile) {
 }
 ```
 
-## Определите правильный пароль из списка
+## Определение правильного пароля из списка
 
 ```java
 public static void determineCorrectPasswordFromList(Path inputFile) {

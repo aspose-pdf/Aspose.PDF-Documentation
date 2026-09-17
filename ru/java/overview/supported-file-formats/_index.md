@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ru/java/supported-file-formats/
 description: Эта страница показывает, какие форматы файлов может загружать и сохранять Aspose.PDF for Python via .NET.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,33 +15,33 @@ Abstract: Эта статья предоставляет подробную та
 ---
 Следующая таблица показывает форматы файлов, которые Aspose.PDF for Java может загружать и сохранять.
 
-|**Формат**|**Описание**|**Загрузка**|**Сохранить**|**Примечания**|
+|**Формат**|**Описание**|**Загрузка**|**Сохранение**|**Примечания**|
 | :- | :- | :- | :- | :- |
-|[PDF](https://docs.fileformat.com/pdf/)|Портативный формат документа|{{< emoticons/tick >}}|{{< emoticons/tick >}}В |В |
-|[CGM](https://docs.fileformat.com/page-description-language/cgm/)|Computer Graphics Metafile для 2D векторной графики|{{< emoticons/tick >}}|В |В |
-|[EPUB](https://docs.fileformat.com/ebook/epub/)|Формат файлов электронных книг|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
-|[HTML](https://docs.fileformat.com/web/html/)|HTML-формат|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
-|[TeX](https://docs.fileformat.com/page-description-language/tex/)|LaTex файл наборного текста формат|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
-|[MHT](https://docs.fileformat.com/web/mhtml/)|Документ MHTML|{{< emoticons/tick >}}|В |В |
-|[PCL](https://docs.fileformat.com/page-description-language/pcl/)|Файлы языка управления принтером|{{< emoticons/tick >}}|В |В |
-|[PS](https://docs.fileformat.com/page-description-language/ps/)|Файлы Postscript|{{< emoticons/tick >}}|В |В |
-|[SVG](https://docs.fileformat.com/page-description-language/svg/)|Scalable Vector Graphics (XML‑ориентированный векторный графический формат)|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
-|[XML](https://docs.fileformat.com/web/xml/)|Формат XML|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
-|[XPS](https://docs.fileformat.com/page-description-language/xps/)|Документы XPS|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
-|[XSLFO](https://docs.fileformat.com/page-description-language/xslfo/)|XSL-FO является частью файла XSL, который используетсяВ для преобразования и форматирования данных XML|{{< emoticons/tick >}}|В |В |
-|[MD](https://docs.fileformat.com/word-processing/md/)|Формат Markdown|{{< emoticons/tick >}}|В |В |
-|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Сохраняет документ в Microsoft Excel SpreadSheet|В |{{< emoticons/tick >}}|В |
-|[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Сохраняет документ в формате Microsoft Excel 2007|В |{{< emoticons/tick >}}|В |
-|[PPTX](https://docs.fileformat.com/presentation/pptx/)|Сохраняет документ в формате Microsoft PowerPoint Presentations|В |{{< emoticons/tick >}}|В |
-|[DOC](https://docs.fileformat.com/word-processing/doc/)|Сохраняет документ в формате Microsoft Word|В |{{< emoticons/tick >}}|В |
-|[DOCX](https://docs.fileformat.com/word-processing/docx/)|Сохраняет документ в формате Microsoft Word|В |{{< emoticons/tick >}}|В |
-|[MobiXML](https://docs.fileformat.com/ebook/mobi/)|Сохраняет документ в формате eBook MobiXML Standard|В |{{< emoticons/tick >}}|В |
-|[JPEG](https://docs.fileformat.com/image/jpeg/)|Сохраняет документ в формате JPEG|В |{{< emoticons/tick >}}|В |
-|[EMF](https://docs.fileformat.com/image/emf/)|Формат расширенного метафайла (EMF)|В |{{< emoticons/tick >}}|В |
-|[PNG](https://docs.fileformat.com/image/png/)|Сохраняет документ в формате PNG|В |{{< emoticons/tick >}}|В |
-|[BMP](https://docs.fileformat.com/image/bmp/)|Сохраняет документ в формате BMP|В |{{< emoticons/tick >}}|В |
-|[GIF](https://docs.fileformat.com/image/gif/)|Графический ОбменВ Формат|В |{{< emoticons/tick >}}|В |
-|[TIFF](https://docs.fileformat.com/image/tiff/)|Сохраняет документ как одностраничное или многостраничное изображение TIFF|В |{{< emoticons/tick >}}|В |
-|[Text](https://docs.fileformat.com/word-processing/txt/)|Сохранить документ в текстовом формате|В |{{< emoticons/tick >}}|В |
+|[PDF](https://docs.fileformat.com/pdf/)|Портативный формат документа|{{< emoticons/tick >}}|{{< emoticons/tick >}} | |
+|[CGM](https://docs.fileformat.com/page-description-language/cgm/)|Computer Graphics Metafile для 2D векторной графики|{{< emoticons/tick >}}| | |
+|[EPUB](https://docs.fileformat.com/ebook/epub/)|Формат файлов электронных книг|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[HTML](https://docs.fileformat.com/web/html/)|HTML-формат|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[TeX](https://docs.fileformat.com/page-description-language/tex/)|Формат файлов для набора текста LaTeX|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[MHT](https://docs.fileformat.com/web/mhtml/)|Документ MHTML|{{< emoticons/tick >}}| | |
+|[PCL](https://docs.fileformat.com/page-description-language/pcl/)|Файлы языка управления принтером|{{< emoticons/tick >}}| | |
+|[PS](https://docs.fileformat.com/page-description-language/ps/)|Файлы Postscript|{{< emoticons/tick >}}| | |
+|[SVG](https://docs.fileformat.com/page-description-language/svg/)|Scalable Vector Graphics (XML‑ориентированный векторный графический формат)|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[XML](https://docs.fileformat.com/web/xml/)|Формат XML|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[XPS](https://docs.fileformat.com/page-description-language/xps/)|Документы XPS|{{< emoticons/tick >}}|{{< emoticons/tick >}}| |
+|[XSLFO](https://docs.fileformat.com/page-description-language/xslfo/)|XSL-FO является частью файла XSL, который используется для преобразования и форматирования данных XML|{{< emoticons/tick >}}| | |
+|[MD](https://docs.fileformat.com/word-processing/md/)|Формат Markdown|{{< emoticons/tick >}}| | |
+|[XLS](https://docs.fileformat.com/spreadsheet/xls/)|Сохраняет документ в Microsoft Excel SpreadSheet| |{{< emoticons/tick >}}| |
+|[XLSX](https://docs.fileformat.com/spreadsheet/xlsx/)|Сохраняет документ в формате Microsoft Excel 2007| |{{< emoticons/tick >}}| |
+|[PPTX](https://docs.fileformat.com/presentation/pptx/)|Сохраняет документ в формате Microsoft PowerPoint Presentations| |{{< emoticons/tick >}}| |
+|[DOC](https://docs.fileformat.com/word-processing/doc/)|Сохраняет документ в формате Microsoft Word| |{{< emoticons/tick >}}| |
+|[DOCX](https://docs.fileformat.com/word-processing/docx/)|Сохраняет документ в формате Microsoft Word| |{{< emoticons/tick >}}| |
+|[MobiXML](https://docs.fileformat.com/ebook/mobi/)|Сохраняет документ в формате eBook MobiXML Standard| |{{< emoticons/tick >}}| |
+|[JPEG](https://docs.fileformat.com/image/jpeg/)|Сохраняет документ в формате JPEG| |{{< emoticons/tick >}}| |
+|[EMF](https://docs.fileformat.com/image/emf/)|Формат расширенного метафайла (EMF)| |{{< emoticons/tick >}}| |
+|[PNG](https://docs.fileformat.com/image/png/)|Сохраняет документ в формате PNG| |{{< emoticons/tick >}}| |
+|[BMP](https://docs.fileformat.com/image/bmp/)|Сохраняет документ в формате BMP| |{{< emoticons/tick >}}| |
+|[GIF](https://docs.fileformat.com/image/gif/)|Формат обмена графическими данными| |{{< emoticons/tick >}}| |
+|[TIFF](https://docs.fileformat.com/image/tiff/)|Сохраняет документ как одностраничное или многостраничное изображение TIFF| |{{< emoticons/tick >}}| |
+|[Text](https://docs.fileformat.com/word-processing/txt/)|Сохранение документа в текстовом формате| |{{< emoticons/tick >}}| |
 
 

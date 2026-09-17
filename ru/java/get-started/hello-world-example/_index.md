@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/hello-world-example/
 description: Этот пример демонстрирует, как создать простой PDF‑документ со стилизованным текстом Hello World с использованием Aspose.PDF for Java.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,13 +17,13 @@ Abstract: В этой статье предоставлен пример Hello W
 
 Пример на Java включает следующие шаги:
 
-1. Создайте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) объект.
-1. Добавьте [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) к документу.
+1. Создайте объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) в документ.
 1. Создайте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) с текстом `Hello, world!`.
-1. Установите [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), шрифт, размер шрифта, цвет фона и цвет переднего плана через фрагмент [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Задайте положение фрагмента с помощью [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), а шрифт, размер шрифта, цвет фона и цвет переднего плана — с помощью [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
 1. Создайте [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) для страницы.
-1. Добавьте [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) к [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Сохраните PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Добавьте фрагмент [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) на страницу [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Сохраните объект [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в формате PDF.
 
 Следующий код на Java основан на `GetStartedExamples.java`.
 

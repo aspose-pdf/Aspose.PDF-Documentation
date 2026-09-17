@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ru/java/open-pdf-document/
 description: Узнайте, как открыть файл PDF в Java, используя Aspose.PDF, из пути к файлу, из потока или с паролем.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Aspose.PDF for Java поддерживает несколько способов
 
 ## Открытие PDF‑документа в Java
 
-Вы можете открыть PDF‑документ:
+Выберите подходящий способ открытия PDF‑документа:
 
-1. Откройте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) непосредственно из пути к файлу.
-1. Откройте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) от an `InputStream`.
-1. Откройте зашифрованный [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) указав пароль.
+1. Откройте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) по пути к файлу.
+1. Откройте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) из потока `InputStream`.
+1. Откройте зашифрованный [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), указав пароль.
 
 ## Открытие документа из файла
 

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/save-pdf-document/
 description: Узнайте, как сохранять PDF‑документы в Java в файл, в поток или в соответствии со стандартом PDF, используя Aspose.PDF.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Aspose.PDF for Java предоставляет несколько способо
 
 ## Сохранение PDF‑документа в Java
 
-Вы можете сохранить документ:
+Выберите подходящий способ сохранения документа:
 
 1. Сохраните [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) непосредственно в файл на диске.
-1. Сохраните [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) к `OutputStream`.
-1. Преобразуйте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) и сохранить его в стандартном формате, например [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
+1. Сохраните [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) в поток `OutputStream`.
+1. Преобразуйте документ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) с помощью [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) и сохраните его в формате, указанном в [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
 
 ## Сохранение документа в файл
 

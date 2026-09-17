@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ru/java/system-requirements/
 description: В этом разделе приведён список поддерживаемых операционных систем, необходимых разработчику для успешной работы с Aspose.PDF for Python.
-lastmod: "2026-08-19"
+lastmod: "2026-09-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,11 +15,11 @@ Abstract: Aspose.PDF for Python via .NET — это API для обработк�
 ---
 ## Обзор
 
-Для создания PDF‑документов требуется машина для выполнения [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) не нужно иметь [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) установлен, так как Aspose.PDF for Java сам по себе является движком создания PDF документов. Однако для просмотра PDF документов, созданных Aspose.PDF for Java, машине требуется как минимум [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). Его можно скачать бесплатно.
+Для создания PDF‑документов с помощью [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) не требуется устанавливать [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html): Aspose.PDF for Java самостоятельно создаёт PDF‑документы. Однако для просмотра PDF документов, созданных Aspose.PDF for Java, машине требуется как минимум [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). Его можно скачать бесплатно.
 
 ## Поддерживаемые операционные системы
 
-Aspose.PDF for Java поддерживает любую 32‑битную или 64‑битную операционную систему\u0412\u00A0которая запускает Java runtime, включая, но не ограничиваясь:
+Aspose.PDF for Java поддерживает любую 32‑битную или 64‑битную операционную систему, в которой работает среда выполнения Java, в том числе:
 
 ### Windows
 
@@ -50,7 +50,7 @@ Aspose.PDF for Java поддерживает любую 32‑битную или
 
 Aspose.PDF for Java поддерживает следующие версии Java:
 
-- J2SE 8.0 (1.8) или выше (*например Java 10*)В
+- J2SE 8.0 (1.8) или выше (*например, Java 10*)
 - Поддержка Aspose.Pdf for Java на IBM i (Iseries или As/400)
 
 ## Среды разработки
