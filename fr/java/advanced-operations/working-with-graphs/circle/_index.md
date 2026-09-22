@@ -5,13 +5,13 @@ type: docs
 weight: 20
 url: /fr/java/add-circle/
 description: Apprenez à dessiner et remplir des formes de cercle dans des fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Dessinez des formes de cercle dans des fichiers PDF à l'aide de Java
-Abstract: Cet article montre comment ajouter des formes de cercle aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le dessin des contours des cercles, le remplissage des cercles avec de la couleur et le placement du texte à l'intérieur d'une forme de cercle.
+Abstract: Cet article montre comment ajouter des formes de cercle aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre le dessin des contours des cercles, le remplissage des cercles avec de la couleur et le placement du texte à l'intérieur d'une forme de cercle.
 ---
 ## Ajouter un contour de cercle
 

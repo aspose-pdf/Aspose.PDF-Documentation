@@ -4,14 +4,14 @@ linktitle: Annotations en filigrane
 type: docs
 weight: 70
 url: /fr/java/watermark-annotations/
-description: Découvrez comment ajouter, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Découvrez comment ajouter, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Travaillez avec des annotations en filigrane dans des fichiers PDF à l'aide de Java.
-Abstract: Cet article explique comment créer, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'ajout d'une annotation de filigrane de texte avec un état et une opacité de texte personnalisés, la lecture des zones d'annotation de filigrane existantes et la suppression des annotations de filigrane.
+Abstract: Cet article explique comment créer, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre l'ajout d'une annotation de filigrane de texte avec un état et une opacité de texte personnalisés, la lecture des zones d'annotation de filigrane existantes et la suppression des annotations de filigrane.
 ---
 Les annotations en filigrane vous permettent de placer du contenu de superposition réutilisable sur une page tout en le gérant via la collection d'annotations.
 
@@ -49,11 +49,11 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 
 ## Obtenir des annotations en filigrane
 
-Cet exemple analyse la collection d'annotations et imprime le rectangle de chaque annotation en filigrane.
+Cet exemple analyse la collection d'annotations et affiche le rectangle de chaque annotation en filigrane.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations sur la page cible.
-1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` et imprimez leurs rectangles.
+1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` et affichez leurs rectangles.
 
 ```java
 public static void watermarkGet(Path inputFile) {

@@ -4,24 +4,24 @@ linktitle: Annotations de sécurité
 type: docs
 weight: 75
 url: /fr/java/security-annotations/
-description: Découvrez comment marquer du texte à rédiger, appliquer des annotations de rédaction et rédiger des zones de page sélectionnées dans des fichiers PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Découvrez comment marquer du texte à caviarder, appliquer des annotations de caviardage et rédiger des zones de page sélectionnées dans des fichiers PDF à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Rédigez du contenu PDF sensible en Java avec des annotations de sécurité.
-Abstract: Cet article explique comment utiliser les annotations de rédaction dans les documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le marquage du texte correspondant avec des annotations de rédaction, l'application permanente de rédactions et la rédaction de zones sélectionnées en fonction des rectangles de placement d'image détectés.
+Abstract: Cet article explique comment utiliser les annotations de caviardage dans les documents PDF à l'aide d'Aspose.PDF for Java. Il couvre le marquage du texte correspondant avec des annotations de caviardage, l'application permanente du caviardage et le caviardage de zones sélectionnées en fonction des rectangles de placement d'image détectés.
 ---
 Les flux de travail d'annotation de sécurité de cette section se concentrent sur la préparation et l'application de suppressions au contenu PDF sensible.
 
-## Marquer le texte avec des annotations de rédaction
+## Marquer le texte avec des annotations de caviardage
 
-Utilisez cet exemple lorsque le texte correspondant doit être couvert par des annotations de rédaction avant que la rédaction soit appliquée de manière permanente.
+Utilisez cet exemple lorsque le texte correspondant doit être couvert par des annotations de caviardage avant que le caviardage soit appliqué de manière permanente.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Recherchez le texte cible et créez une [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) pour chaque correspondance.
-1. Configurez l'apparence de la rédaction et enregistrez le document.
+1. Configurez l'apparence du caviardage et enregistrez le document.
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
@@ -47,9 +47,9 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 }
 ```
 
-## Appliquer les rédactions existantes
+## Appliquer les caviardages existantes
 
-Cet exemple applique de manière permanente les annotations de rédaction qui existent déjà sur la page.
+Cet exemple applique de manière permanente les annotations de caviardage qui existent déjà sur la page.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Collectez les annotations de type [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
@@ -72,7 +72,7 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 }
 ```
 
-## Rédiger une zone de page sélectionnée
+## Caviarder une zone de page sélectionnée
 
 Utilisez cette approche lorsque le contenu cible est identifié par position plutôt que par correspondance de texte.
 

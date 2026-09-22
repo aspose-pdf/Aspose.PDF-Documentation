@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /fr/java/adding-tables/
 description: Découvrez comment ajouter et configurer des tableaux dans des documents PDF existants en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter et formater des tableaux dans des documents PDF avec Java
-Abstract: Cet article explique comment ajouter et configurer des tableaux dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la création de tableaux, les bordures, les marges, le remplissage, les étendues de lignes et de colonnes, le comportement d'ajustement automatique, l'insertion d'images dans les cellules, la répétition de lignes et de colonnes, les fragments HTML et LaTeX et le contrôle du rendu sur plusieurs pages.
+Abstract: Cet article explique comment ajouter et configurer des tableaux dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la création de tableaux, les bordures, les marges, le remplissage, les étendues de lignes et de colonnes, le comportement d'ajustement automatique, l'insertion d'images dans les cellules, la répétition de lignes et de colonnes, les fragments HTML et LaTeX et le contrôle du rendu sur plusieurs pages.
 ---
-Aspose.PDF pour Java fournit une riche API `Table` pour créer des tableaux avec une mise en page et une personnalisation du contenu.
+Aspose.PDF for Java fournit une riche API `Table` pour créer des tableaux avec une mise en page et une personnalisation du contenu.
 
 ## Créer un tableau de base
 
@@ -42,7 +42,7 @@ public static void createTable(Path outputFile) {
 }
 ```
 
-## Ajouter des cellules avec une étendue de lignes et une étendue de colonnes
+## Fusionner des cellules sur plusieurs lignes ou colonnes
 
 Utilisez cet exemple lorsque le tableau nécessite des cellules fusionnées sur des lignes ou des colonnes.
 
@@ -93,9 +93,9 @@ public static void addRowspanOrColspan(Path outputFile) {
 }
 ```
 
-## Ajouter des bordures de tableau et un remplissage de cellules
+## Ajouter des bordures de tableau et des marges internes de cellule
 
-Utilisez cet exemple lorsque vous devez configurer les bordures, le remplissage et le comportement de retour à la ligne des cellules.
+Utilisez cet exemple lorsque vous devez configurer les bordures, les marges internes et le retour à la ligne dans les cellules.
 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
 1. Créez un [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) et configurez les largeurs, les bordures et le remplissage.
@@ -192,7 +192,7 @@ public static void addImage(Path imageFile, Path outputFile) {
 
 ## Ajouter des images SVG dans les cellules du tableau
 
-Utilisez cet exemple lorsque la table doit restituer les fichiers SVG ligne par ligne.
+Utilisez cet exemple lorsque le tableau doit restituer les fichiers SVG ligne par ligne.
 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page.
 1. Créez une [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) et parcourez les fichiers SVG.
@@ -316,7 +316,7 @@ public static void addTableOnNewPage(Path outputFile) {
 }
 ```
 
-## Construisez un tableau divisé verticalement avec des colonnes répétitives
+## Construire un tableau divisé verticalement avec des colonnes répétitives
 
 Utilisez cet exemple lorsqu'un tableau large doit continuer verticalement et répéter les colonnes clés.
 
@@ -366,7 +366,7 @@ public static void addTableHideBorders(Path outputFile) {
 
 ## Réutiliser les bordures et l'exemple de remplissage
 
-Utilisez cette assistante lorsque le scénario de marges et de remplissage doit déléguer à l'exemple de bordure partagée.
+Utilisez cette méthode auxiliaire lorsque le scénario de marges et de remplissage doit déléguer à l'exemple de bordure partagée.
 
 1. Appelez la méthode de bordure et de remplissage de table existante.
 1. Réutilisez la même logique de disposition de table sans dupliquer le code.
@@ -377,7 +377,7 @@ public static void addMarginsOrPadding(Path outputFile) {
 }
 ```
 
-## Créer une table aux coins arrondis
+## Créer un tableau aux coins arrondis
 
 Utilisez cet exemple lorsque le tableau doit utiliser un style de coins arrondis au lieu de bordures rectangulaires standard.
 

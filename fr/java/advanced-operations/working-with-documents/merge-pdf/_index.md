@@ -5,15 +5,15 @@ type: docs
 weight: 50
 url: /fr/java/merge-pdf-documents/
 description: Découvrez comment fusionner plusieurs fichiers PDF en un seul document en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Combinez des documents complets, des plages sélectionnées et des pages alternées avec Java
-Abstract: Cet article explique comment fusionner des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la combinaison de deux fichiers, la fusion de plusieurs documents, la sélection de plages de pages, l'insertion d'un document dans un autre à une position spécifique, l'alternance de pages et la création d'une sortie fusionnée avec des signets de section.
+Abstract: Cet article explique comment fusionner des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la combinaison de deux fichiers, la fusion de plusieurs documents, la sélection de plages de pages, l'insertion d'un document dans un autre à une position spécifique, l'alternance de pages et la création d'une sortie fusionnée avec des signets de section.
 ---
-Aspose.PDF pour Java prend en charge plusieurs stratégies de fusion en fonction de la manière dont la sortie doit être assemblée.
+Aspose.PDF for Java prend en charge plusieurs stratégies de fusion en fonction de la manière dont la sortie doit être assemblée.
 
 ## Fusionner deux documents PDF
 
@@ -35,7 +35,7 @@ public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outp
 
 ## Copier une plage de pages sélectionnée entre des documents
 
-Cette méthode d'assistance conserve la logique de fusion de plages de pages au même endroit afin que d'autres exemples puissent réutiliser la même routine de copie validée.
+Cette méthode auxiliaire conserve la logique de fusion de plages de pages au même endroit afin que d'autres exemples puissent réutiliser la même routine de copie validée.
 
 1. Ouvrez ou recevez les objets PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) source et destination.
 1. Normalisez la plage de pages demandée afin qu’elle reste dans la collection [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) disponible.

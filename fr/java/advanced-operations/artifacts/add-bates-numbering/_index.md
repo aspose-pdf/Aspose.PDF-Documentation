@@ -5,17 +5,17 @@ type: docs
 weight: 10
 url: /fr/java/add-bates-numbering/
 description: Découvrez comment ajouter et supprimer la numérotation Bates dans les documents PDF à l'aide de Java avec Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter la numérotation Bates via Java
-Abstract: Cet article explique comment créer et supprimer des artefacts de numérotation Bates dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la configuration d'un `BatesNArtifact`, son application via les assistants de numérotation Bates ou les assistants de pagination génériques, et la suppression de la numérotation Bates d'un document.
+Abstract: Cet article explique comment créer et supprimer des artefacts de numérotation Bates dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la configuration d'un `BatesNArtifact`, son application via les assistants de numérotation Bates ou les assistants de pagination génériques, et la suppression de la numérotation Bates d'un document.
 ---
 Les artefacts de numérotation Bates sont utiles dans les flux de travail juridiques, d'archivage et de contrôle de documents où chaque page nécessite un identifiant persistant au niveau de la page.
 
-## Ajoutez la numérotation Bates avec l'assistant dédié
+## Ajouter la numérotation Bates avec l'assistant dédié
 
 Utilisez cet exemple lorsque vous souhaitez appliquer la numérotation Bates via l'assistant de collecte de pages dédié.
 

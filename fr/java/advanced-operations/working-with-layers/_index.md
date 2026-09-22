@@ -5,15 +5,15 @@ type: docs
 weight: 50
 url: /fr/java/working-with-pdf-layers/
 description: Découvrez comment ajouter, verrouiller, extraire, aplatir et fusionner des calques PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Gérer les calques PDF avec Java
-Abstract: Cet article explique comment utiliser les calques PDF, également appelés groupes de contenu facultatifs, à l'aide d'Aspose.PDF pour Java. Découvrez comment ajouter des calques à une page, verrouiller un calque existant, extraire le contenu des calques dans des fichiers ou des flux, aplatir le contenu en calques et fusionner des calques en un seul.
+Abstract: Cet article explique comment utiliser les calques PDF, également appelés groupes de contenu facultatifs, à l'aide d'Aspose.PDF for Java. Découvrez comment ajouter des calques à une page, verrouiller un calque existant, extraire le contenu des calques dans des fichiers ou des flux, aplatir le contenu en calques et fusionner des calques en un seul.
 ---
-Aspose.PDF pour Java expose les couches PDF via l'API `Layer` sur chaque page. Vous pouvez créer des groupes de contenu facultatifs, modifier leur comportement et exporter ou aplatir leur contenu si nécessaire.
+Aspose.PDF for Java expose les calques PDF via l'API `Layer` sur chaque page. Vous pouvez créer des groupes de contenu facultatifs, modifier leur comportement et exporter ou aplatir leur contenu si nécessaire.
 
 ## Ajouter des calques à une page PDF
 
@@ -44,7 +44,7 @@ L'exemple complet crée trois calques distincts avec un contenu de lignes rouges
 ## Verrouiller un calque
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Accédez à la [Page] cible (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et obtenez sa collection [Couche](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Accédez à la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible et obtenez sa collection [Couche](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. Verrouillez la cible [Couche](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

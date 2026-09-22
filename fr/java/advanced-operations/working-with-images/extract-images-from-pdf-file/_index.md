@@ -5,12 +5,12 @@ type: docs
 weight: 30
 url: /fr/java/extract-images-from-pdf-file/
 description: Découvrez comment extraire des images intégrées à partir de fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 TechArticle: true
 AlternativeHeadline: Extraire des images de fichiers PDF avec Java
-Abstract: Cet article montre comment extraire des images de documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'enregistrement d'une ressource d'image spécifique à partir d'une page et l'exportation d'images qui se trouvent dans une région rectangulaire sélectionnée.
+Abstract: Cet article montre comment extraire des images de documents PDF à l'aide d'Aspose.PDF for Java. Il couvre l'enregistrement d'une ressource d'image spécifique à partir d'une page et l'exportation d'images qui se trouvent dans une région rectangulaire sélectionnée.
 ---
-Aspose.PDF pour Java prend en charge l'extraction directe des ressources d'image et le filtrage basé sur le placement.
+Aspose.PDF for Java prend en charge l'extraction directe des ressources d'image et le filtrage basé sur le placement.
 
 ## Extraire une image intégrée par index
 

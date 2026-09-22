@@ -4,16 +4,16 @@ linktitle: Créer un AcroForm
 type: docs
 weight: 10
 url: /fr/java/create-form/
-description: Créez des champs AcroForm à partir de zéro dans des documents PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Créez des champs AcroForm à partir de zéro dans des documents PDF à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Créez des champs AcroForm interactifs dans des fichiers PDF avec Java
-Abstract: Cet article explique comment créer des champs AcroForm à l'aide d'Aspose.PDF pour Java. Il couvre les zones de texte, les champs de texte multi-widgets, les boutons radio, les zones de liste déroulante, les cases à cocher, les zones de liste, les champs de signature et les champs de codes-barres pour les formulaires PDF interactifs.
+AlternativeHeadline: Créer des champs AcroForm interactifs dans des fichiers PDF avec Java
+Abstract: Cet article explique comment créer des champs AcroForm à l'aide d'Aspose.PDF for Java. Il couvre les zones de texte, les champs de texte multi-widgets, les boutons radio, les zones de liste déroulante, les cases à cocher, les zones de liste, les champs de signature et les champs de codes-barres pour les formulaires PDF interactifs.
 ---
-Aspose.PDF pour Java vous permet de créer une large gamme de types de champs AcroForm à partir de zéro.
+Aspose.PDF for Java vous permet de créer une large gamme de types de champs AcroForm à partir de zéro.
 
 ## Créer un champ de zone de texte
 

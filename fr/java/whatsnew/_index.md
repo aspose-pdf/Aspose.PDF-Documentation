@@ -1,29 +1,24 @@
 ---
-title: Quoi de neuf
-linktitle: Quoi de neuf
+title: Nouveautés
+linktitle: Nouveautés
 type: docs
 weight: 10
 url: /java/whatsnew/
-description: Cette page présente les nouvelles fonctionnalités les plus populaires d'Aspose.PDF pour Java qui ont été introduites dans les versions récentes.
+description: Découvrez les fonctionnalités et améliorations d’Aspose.PDF for Java présentées par version.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 TechArticle: true
-AlternativeHeadline: Nouvelles fonctionnalités populaires dans Aspose.PDF pour Java
-Abstract: La section Quoi de neuf de la documentation Aspose.PDF pour Java fournit un aperçu des dernières mises à jour, améliorations et corrections de bogues introduites dans les versions récentes. Il met en évidence les nouvelles fonctionnalités, les améliorations de performances et les mises à jour de compatibilité pour aider les développeurs à rester informés des dernières avancées en matière de traitement PDF. La documentation comprend également des détails sur les fonctionnalités obsolètes et les alternatives recommandées. En consultant régulièrement cette section, les développeurs peuvent s'assurer qu'ils utilisent les fonctionnalités les plus efficaces et les plus récentes de leurs applications Java pour une gestion transparente des PDF.
+AlternativeHeadline: Nouvelles fonctionnalités d’Aspose.PDF for Java
+Abstract: Cette page présente les fonctionnalités et améliorations d’Aspose.PDF for Java par version. Elle propose des exemples de code pour la conversion de documents, les annotations, les signatures numériques, les formulaires, les calques, l’accessibilité et le traitement du texte et des images.
 SoftwareApplication: java
 ---
-## Quoi de neuf dans Aspose.PDF 25.12
+## Nouveautés dans Aspose.PDF 25.12
 
-
-### 
-Annotations de texte libre avec rotation arbitraire dans XFDF
-
-
+### Annotations de texte libre avec rotation arbitraire dans XFDF
 
 La prise en charge des angles de rotation arbitraires a été ajoutée pour les annotations en texte libre dans XFDF, ce qui rend les mises en page d'annotations importées et exportées plus flexibles.
-
 
 ```java
 Document pdfDocument = new Document(inputPdf);
@@ -33,15 +28,11 @@ editor.importAnnotationsFromXfdf(inputXfdf);
 editor.save(output);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.11
+## Nouveautés dans Aspose.PDF 25.11
 
+### Amélioration de la suppression des données masquées
 
-### 
-Améliorations de la désinfection des données cachées
-
-Une désinfection améliorée des PDF est désormais disponible via HiddenDataSanitizer pour améliorer la suppression du contenu caché des documents.
-
+La suppression des données masquées dans les documents PDF a été améliorée grâce à `HiddenDataSanitizer`.
 
 ```java
 Document document = new Document(pdfFile);
@@ -63,13 +54,9 @@ Document document = new Document(pdfFile);
     }
 ```
 
-### 
-Amélioration de la réduction de la taille des fichiers lors de l'optimisation PDF
-
-
+### Amélioration de la réduction de la taille des fichiers lors de l'optimisation PDF
 
 L'optimisation PDF améliore désormais la réduction de la taille des fichiers en affinant la façon dont les sous-ensembles de polices sont gérés.
-
 
 ```java
 Document document = new Document(inputPath);
@@ -91,15 +78,11 @@ Document document = new Document(inputPath);
     }
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.10
+## Nouveautés dans Aspose.PDF 25.10
 
+### Prise en charge de la conversion PDF en PDF/E
 
-### 
-Prise en charge de la conversion PDF en PDF/E
-
-Aspose.PDF pour Java prend désormais en charge la conversion des documents PDF au format PDF/E.
-
+Aspose.PDF for Java prend désormais en charge la conversion des documents PDF au format PDF/E.
 
 ```java
 Document document = new Document(inputPdf);
@@ -107,13 +90,9 @@ document.convert(conversionLog, PdfFormat.PDF_E_1, ConvertErrorAction.Delete);
 document.save(outputPdf);
 ```
 
-### 
-Texte HTML dans les annotations
+### Texte HTML dans les annotations
 
-
-
-La prise en charge a été ajoutée pour l'ajout de texte HTML dans les annotations.
-
+Vous pouvez désormais ajouter du texte HTML dans les annotations.
 
 ```java
 Document pdf = new Document();
@@ -136,15 +115,11 @@ Document pdf = new Document();
     pdf.save(getOutputPath("out1.pdf"));
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.9
+## Nouveautés dans Aspose.PDF 25.9
 
+### Plugins de conversion HTML en PDF
 
-### 
-Plugins HTML vers PDF
-
-Aspose.PDF pour Java inclut désormais des plugins HTML vers PDF pour simplifier les flux de travail de traitement HTML vers PDF.
-
+Aspose.PDF for Java inclut désormais des plugins HTML vers PDF pour simplifier la conversion de documents HTML en PDF.
 
 ```java
 // Specify the input and output file paths.
@@ -168,23 +143,15 @@ ResultContainer htmlResultContainer = converter.process(options);
 IOperationResult result = htmlResultContainer.getResultCollectionInternal().get_Item(0);
 ```
 
-### 
-Prise en charge de la conformité PDF 1.6
-
-
+### Prise en charge de la conformité PDF 1.6
 
 La prise en charge de la conformité PDF 1.6 a été ajoutée pour les scénarios qui nécessitent cette version du document.
 
+## Nouveautés dans Aspose.PDF 25.8
 
-## 
-Quoi de neuf dans Aspose.PDF 25.8
-
-
-### 
-Prise en charge des styles de bordure de tableau
+### Prise en charge des styles de bordure de tableau
 
 La prise en charge des styles de bordure de tableau a été ajoutée pour offrir davantage de contrôle sur l'apparence du tableau.
-
 
 ```java
 Document document = new Document();
@@ -244,13 +211,9 @@ Document document = new Document();
     }
 ```
 
-### 
-Extraction de texte ALT pour les images au format PDF
+### Extraction du texte alternatif des images PDF
 
-
-
-Vous pouvez désormais obtenir des descriptions de texte ALT pour les images dans les documents PDF, ce qui facilite le traitement orienté vers l'accessibilité.
-
+Vous pouvez désormais obtenir le texte alternatif des images dans les documents PDF, ce qui facilite le traitement orienté vers l'accessibilité.
 
 ```java
 Document doc = new Document("input.pdf");
@@ -275,19 +238,13 @@ Document doc = new Document("input.pdf");
     }
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.7
+## Nouveautés dans Aspose.PDF 25.7
 
+### Plugin PDF ChatGPT
 
-### 
-Plugin PDF ChatGPT
+Aspose.PDF for Java inclut désormais un plugin PDF ChatGPT pour interagir avec des documents PDF à l’aide de l’IA.
 
-Aspose.PDF pour Java inclut désormais un plugin PDF ChatGPT pour les scénarios d'interaction d'IA axés sur les PDF.
-
-
-
-L'exemple montre comment utiliser le plugin PdfChatGpt en ajoutant un ou plusieurs fichiers comme source du message :
-
+L'exemple montre comment utiliser le plugin `PdfChatGpt` en ajoutant un ou plusieurs fichiers comme source du message :
 
 ```java
 PdfChatGpt plugin = new PdfChatGpt();
@@ -309,9 +266,7 @@ String fileResultPath = result.getResultCollection().get(0).getData().toString()
 ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData();
 ```
 
-
-L'exemple montre comment utiliser le plugin PdfChatGpt en ajoutant des messages à la requête :
-
+L'exemple montre comment utiliser le plugin `PdfChatGpt` en ajoutant des messages à la requête :
 
 ```java
 PdfChatGpt plugin = new PdfChatGpt();
@@ -336,9 +291,7 @@ String fileResultPath = result.getResultCollection().get(0).getData().toString()
 ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
 ```
 
-
-L'exemple montre comment utiliser le plugin PdfChatGpt en ajoutant un message à la requête :
-
+L'exemple montre comment utiliser le plugin `PdfChatGpt` en ajoutant un message à la requête :
 
 ```java
 PdfChatGpt plugin = new PdfChatGpt();
@@ -356,15 +309,11 @@ String fileResultPath = result.getResultCollection().get(0).getData().toString()
 ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.6
+## Nouveautés dans Aspose.PDF 25.6
 
-### Formatage de sortie PDF vers DOCX amélioré
+### Amélioration de la mise en forme lors de la conversion PDF en DOCX
 
-
-
-La conversion PDF en DOCX a été améliorée pour les documents dont le format de sortie était auparavant incorrect.
-
+La conversion PDF en DOCX a été améliorée pour les documents dont la mise en forme du document de sortie était auparavant incorrecte.
 
 ```java
 Document doc = new Document(dataDir + "SD_Aspose.pdf");
@@ -375,14 +324,9 @@ saveOption.setRecognizeBullets(true);
 doc.save(dataDir + "SD_Aspose.docx", saveOption);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.5
+## Nouveautés dans Aspose.PDF 25.5
 
-
-### 
-Conserver les images dans la conversion PDF en ODS
-
-
+### Conservation des images lors de la conversion PDF en ODS
 
 Les images sont désormais préservées lors de la conversion de documents PDF en ODS.
 
@@ -395,10 +339,7 @@ doc.save("output.ods", options);
 
 ### Création automatique de balises lors de la conversion PDF en PDF/A
 
-
-
 La conversion PDF en PDF/A prend désormais en charge la création automatique de balises pour améliorer les résultats de balisage dans le document de sortie.
-
 
 ```java
 Document document = new Document(dataDir+"source.pdf");
@@ -412,14 +353,9 @@ document.save(dataDir+"out_"+BuildVersionInfo.ASSEMBLY_VERSION+"_"+format+"_"+do
 document.close();
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.4
+## Nouveautés dans Aspose.PDF 25.4
 
-
-### 
-Conserver les hyperliens dans la conversion PDF vers XLSX
-
-
+### Conservation des liens hypertextes lors de la conversion PDF en XLSX
 
 Les hyperliens sont désormais conservés lors de la conversion de documents PDF en XLSX, améliorant ainsi la navigation dans les feuilles de calcul exportées.
 
@@ -429,12 +365,9 @@ ExcelSaveOptions options = new ExcelSaveOptions();
 doc.save("output.xlsx", options);
 ```
 
-## Quoi de neuf dans Aspose.PDF 25.3
+## Nouveautés dans Aspose.PDF 25.3
 
-
-
-Depuis la version 25.2, la possibilité de détecter la compromission des signatures numériques PDF a été ajoutée. Vous pouvez utiliser la classe « SignaturesCompromiseDetector » pour vérifier les signatures numériques en cas de compromission. Appelez la méthode check() pour vérifier les signatures du document. Si aucune compromission de signature n'est détectée, la méthode retournera vrai. Pour vérifier si les signatures existantes couvrent l'intégralité du document, utilisez la 'Propriété SignaturesCoverage'.
-
+Depuis la version 25.2, la possibilité de détecter la compromission des signatures numériques PDF a été ajoutée. Vous pouvez utiliser la classe `SignaturesCompromiseDetector` pour vérifier les signatures numériques en cas de compromission. Appelez la méthode `check()` pour vérifier les signatures du document. Si aucune compromission de signature n'est détectée, la méthode renvoie `true`. Pour vérifier si les signatures existantes couvrent l'intégralité du document, utilisez la propriété `SignaturesCoverage`.
 
 ```java
 void check(String pdfFile) {
@@ -459,13 +392,9 @@ void check(String pdfFile) {
 }
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.2
-
-
+## Nouveautés dans Aspose.PDF 25.2
 
 Depuis la version 25.2, la possibilité de convertir des PDF au format de fichier PDF/X-4 a été ajoutée :
-
 
 ```java
 String iccProfile = "PSO_MFC_Paper_eci";
@@ -482,7 +411,6 @@ options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
 document.convert(options);
 document.save(outputPdf);
 ```
-
 
 Depuis la version 25.2, il est possible d'aligner la sortie HTML au centre :
 
@@ -510,26 +438,17 @@ newOptions.PageBorderIfAny = new com.aspose.pdf.SaveOptions.BorderInfo(style);
 doc.save(dataDir + "HTML_19.6.html", newOptions);
 ```
 
-De plus, depuis la version 25.2, il est possible d'obtenir la montée et la descente d'un texte en fonction de la police et de la taille avec Aspose.PDF. La nouvelle fonctionnalité a été implémentée dans la classe « com.aspose.pdf.Font ».
-
-
+De plus, depuis la version 25.2, vous pouvez obtenir les métriques d’ascendante et de descendante d’un texte en fonction de la police et de sa taille avec Aspose.PDF. La nouvelle fonctionnalité a été implémentée dans la classe `com.aspose.pdf.Font`.
 
 Méthodes ajoutées :
 
+**Mesure de l’ascendante maximale**
 
+- `public double getAscentPoint (String str, float fontSize)`
 
-**Mesure le point d'ascension maximum**
+**Mesure de la descendante maximale**
 
-
-
--public double getAscentPoint (String str, float fontSize)
-
-
-
-**Mesure le point de descente maximum**
-
-- public double getDescentPoint (String str, float fontSize)
-
+- `public double getDescentPoint (String str, float fontSize)`
 
 ```java
 String someText = "Testing text";
@@ -547,17 +466,11 @@ System.out.println(getAscentPoint);
 System.out.println(getDescentPoint);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 25.1
+## Nouveautés dans Aspose.PDF 25.1
 
-
-
-La possibilité de transmettre le chemin vers le profil ICC externe pour la conversion PDF/X et PDF/A existe déjà dans la bibliothèque depuis quelques années, activée par la propriété PdfFormatConversionOptions.IccProfileFileName. Il est désormais également possible de transmettre des données pour remplir les propriétés OutputIntent à l'aide d'un objet de la classe OutputIntent.
-
-
+La possibilité de transmettre le chemin vers le profil ICC externe pour la conversion PDF/X et PDF/A existe déjà dans la bibliothèque depuis quelques années, activée par la propriété `PdfFormatConversionOptions.IccProfileFileName`. Il est désormais également possible de transmettre des données pour remplir les propriétés `OutputIntent` à l'aide d'un objet de la classe `OutputIntent`.
 
 L'extrait suivant montre comment convertir un document d'annotation en PDF/X-1 à l'aide du profil ICC d'annotation FOGRA39 :
-
 
 ```java
 String iccProfile = "Coated_Fogra39L_VIGC_300.icc";
@@ -576,7 +489,6 @@ Document pdfDocument = new Document("58191_1.pdf");
         }
     }
 ```
-
 
 Depuis la version 25.1, la possibilité d'obtenir des informations sur les privilèges lors de l'utilisation de documents a été ajoutée :
 
@@ -614,16 +526,11 @@ document.getPages().add();
         }
 ```
 
-## Quoi de neuf dans Aspose.PDF 24.12
-
-
+## Nouveautés dans Aspose.PDF 24.12
 
 Depuis la version 24.12, il est possible de prendre en charge les caractères de substitution.
 
-
-
 Le terme « paire de substitution » fait référence au codage de caractères Unicode avec des points de code élevés dans le schéma de codage UTF-16.
-
 
 ```java
 String surrogate_pair  = "рџЊ‰";
@@ -644,10 +551,7 @@ String surrogate_pair  = "рџЊ‰";
     doc.save(dataDir + "out_24_11_.pdf");
 ```
 
-
 Depuis la version 24.12, il est possible de convertir des documents PDF en PDF/A-4. La partie 4 de la norme, basée sur PDF 2.0, a été publiée fin 2020.
-
-
 
 L'extrait de code suivant montre comment convertir un document au format PDF/A-4 lorsque le document d'entrée est une version PDF antérieure à 2.0.
 
@@ -662,16 +566,11 @@ document.convert("log2.xml", PdfFormat.PDF_A_4, ConvertErrorAction.Delete);
 document.save("output.pdf");
 ```
 
-## Quoi de neuf dans Aspose.PDF 24.9
-
-
+## Nouveautés dans Aspose.PDF 24.9
 
 Dans cette version, il est possible de créer un PDF accessible à l'aide de fonctions de bas niveau :
 
-
-
 L'extrait de code suivant fonctionne avec un document PDF et son contenu balisé, en utilisant une bibliothèque Aspose.PDF pour le traiter.
-
 
 ```java
 //Create template document with simple text
@@ -713,10 +612,7 @@ Document document = new Document(output);
         document.save(output);
 ```
 
-
-La classe `GraphicalPdfComparer` est ajoutée pour la comparaison graphique des documents et des pages PDF. La comparaison graphique concerne les images des pages du document. Il renvoie le résultat sous forme d'objet `ImagesDifference` ou sous forme de document PDF contenant des images fusionnées à partir de l'original et des différences. La comparaison graphique est particulièrement utile pour les documents présentant des différences mineures dans le contenu textuel ou graphique.
-
-
+La classe `GraphicalPdfComparer` a été ajoutée pour la comparaison graphique des documents et des pages PDF. La comparaison graphique concerne les images des pages du document. Elle renvoie le résultat sous forme d’objet `ImagesDifference` ou sous forme de document PDF contenant des images fusionnées à partir de l'original et des différences. La comparaison graphique est particulièrement utile pour les documents présentant des différences mineures dans le contenu textuel ou graphique.
 
 L'extrait de code suivant illustre la comparaison graphique de deux documents PDF et enregistre une image avec les différences dans le document PDF résultant :
 
@@ -733,12 +629,9 @@ GraphicalPdfComparer comparer = new GraphicalPdfComparer();
     doc2.close();
 ```
 
-## Quoi de neuf dans Aspose.PDF 24.8
+## Nouveautés dans Aspose.PDF 24.8
 
-
-
-Depuis 24.8, support du format PDF/A-4 :
-
+Depuis la version 24.8, le format PDF/A-4 est pris en charge :
 
 ```java
 Document document = new Document(inputPdf);
@@ -748,13 +641,9 @@ boolean converted = document.convert(logFile, PdfFormat.PDF_A_4, ConvertErrorAct
 document.save(outputFile);
 ```
 
+Vous pouvez également ajouter un texte alternatif à un tampon d’image :
 
-Est-il également possible d'ajouter un texte alternatif pour le tampon d'image :
-
-
-
-La propriété AlternativeText a été ajoutée à ImageStamp - si une valeur lui est attribuée, alors lors de l'ajout d'un ImageStamp à un document, il a un texte alternatif.
-
+La propriété `AlternativeText` a été ajoutée à `ImageStamp`. Si vous lui attribuez une valeur, le tampon d’image ajouté au document dispose d’un texte alternatif.
 
 ```java
 String p1_Alt1 = "*** page 1, Alt text 1 ***",
@@ -796,8 +685,7 @@ document.getPages().get_Item(2).addStamp(imageStamp);
 document.save(outFile);
 ```
 
-
-En outre, le code suivant montre comment ajouter AlternativeText dans les images existantes dans FigureElements.
+En outre, le code suivant montre comment ajouter un texte alternatif aux images existantes dans les éléments `FigureElement`.
 
 ```java
 String inFile = dataDir + "46040.pdf";
@@ -825,27 +713,18 @@ while (tmp0.hasNext())
 document.save(outFile);
 ```
 
-## Quoi de neuf dans Aspose.PDF 24.7
+## Nouveautés dans Aspose.PDF 24.7
 
+Depuis la version 24.7, dans le cadre de l'édition du PDF balisé, des méthodes ont été ajoutées sur `com.aspose.pdf.tagged.logicalstructure.elements.Element` :
 
+- `tag` : associe des balises à des opérateurs représentant des images, du texte ou des liens.
 
-Depuis la version 24.7, dans le cadre de l'édition du PDF balisé, des méthodes ont été ajoutées sur **Aspose.Pdf.LogicalStructure.Element** :
+- `insertChild` : insère un élément enfant.
 
-
-- 
-Balise (ajoutez des balises à des opérateurs spécifiques tels que des images, du texte et des liens)
-
-- 
-InsérerEnfant
-
-- 
-Supprimer l'enfant
-- EffacerEnfants
-
-
+- `removeChild` : supprime un élément enfant.
+- `clearChilds` : supprime tous les éléments enfants.
 
 Ces méthodes vous permettent de modifier les balises de fichiers PDF, par exemple :
-
 
 ```java
     Document document = new Document(dataDir + "test.pdf");
@@ -1082,14 +961,9 @@ Ces méthodes vous permettent de modifier les balises de fichiers PDF, par exemp
     document.save(dataDir + "_out.pdf");
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 24.6
+## Nouveautés dans Aspose.PDF 24.6
 
-
-
-Depuis 24.6, Aspose.PDF pour Java permet de signer des PDF avec java.security.cert.X509Certificate, java.security.PrivateKey :
-
-
+Depuis 24.6, Aspose.PDF for Java permet de signer des PDF avec `java.security.cert.X509Certificate` et `java.security.PrivateKey` :
 
 Ce code récupère un certificat et une clé privée du magasin de certificats, puis les utilise pour appliquer une signature numérique à la première page d'un document PDF.
 
@@ -1107,33 +981,22 @@ pdfSign.save("PDFJAVA.pdf");
 pdfSign.close();
 ```
 
-## Quoi de neuf dans Aspose.PDF 24.5
-
-
+## Nouveautés dans Aspose.PDF 24.5
 
 Depuis la version 24.5, les plugins Form Editor ont été implémentés.
 
+**Modifier des formulaires PDF avec l’éditeur de formulaires**
 
+- Définissez vos clés de licence.
 
-**Comment modifier des formulaires au format PDF à l'aide de l'éditeur de formulaires**
+- Créez une instance de la classe `FormEditor`, qui fournit des méthodes pour manipuler les formulaires PDF.
+- Créez une instance de la classe `FormEditorAddOptions`, qui spécifie les options d'ajout de champs de formulaire à un document PDF.
 
+- Ajoutez une source de fichier d'entrée et une source de fichier de sortie à l’objet `FormEditorAddOptions`, en utilisant la classe `FileDataSource` qui représente un chemin de fichier ou un flux.
 
-- 
-Définissez vos clés de licence
+- Appelez la méthode `process` de l’objet `FormEditor`, en passant l’objet `FormEditorAddOptions` en paramètre.
 
-- 
-Créez une instance de la classe FormEditor, qui fournit des méthodes pour manipuler les formulaires PDF
-- Créez une instance de la classe FormEditorAddOptions, qui spécifie les options d'ajout de champs de formulaire à un document PDF.
-
-- 
-Ajoutez une source de fichier d'entrée et une source de fichier de sortie à l'objet FormEditorAddOptions, en utilisant la classe FileDataSource qui représente un chemin de fichier ou un flux.
-
-- 
-Appelez la méthode Process de l'objet FormEditor, en passant l'objet FormEditorAddOptions en paramètre
-
-- 
-Accédez au résultat en utilisant ResultContainer.resultCollection
-
+- Accédez au résultat en utilisant `ResultContainer.resultCollection`.
 
 ```java
 // Specify the input and output paths for the PDF files.
@@ -1202,36 +1065,25 @@ opt.addOutput(new FileDataSource(outputPath));
 ResultContainer results = pdfFormPlugin.process(opt);
 ```
 
-
-Cette version nous permet de travailler avec des calques PDF. Par exemple:
+Cette version permet de travailler avec les calques PDF :
 
 - verrouiller un calque PDF
 
-- 
-extraire les éléments du calque PDF
+- extraire les éléments du calque PDF
 
-- 
-aplatir un PDF en couches
+- aplatir les calques d’un PDF
 
-- 
-fusionner tous les calques du PDF en un seul
-
-
+- fusionner tous les calques du PDF en un seul
 
 **Verrouiller un calque PDF**
 
 Depuis la version 24.5, vous pouvez ouvrir un PDF, verrouiller un calque spécifique sur la première page et enregistrer le document avec les modifications. Il existe deux nouvelles méthodes et une propriété a été ajoutée :
 
-
-
 Layer.Lock(); - Verrouille le calque.
-
 
 Layer.Unlock(); - Déverrouille le calque.
 
-
 Layer.Locked ; - Propriété indiquant l'état verrouillé du calque.
-
 
 ```java
 Document document = new Document(input);
@@ -1243,15 +1095,11 @@ layer.lock();
 document.save(output);
 ```
 
-
 **Extraire les éléments du calque PDF**
 
-La bibliothèque Aspose.PDF pour Java permet des extraits de chaque couche de la première page et enregistre chaque couche dans un fichier distinct.
-
-
+La bibliothèque Aspose.PDF for Java permet d’extraire chaque calque de la première page et de l’enregistrer dans un fichier distinct.
 
 Pour créer un nouveau PDF à partir d'un calque, l'extrait de code suivant peut être utilisé :
-
 
 ```java
 Document document = new Document(inputPath);
@@ -1263,13 +1111,9 @@ for (Layer layer : layers)
 }
 ```
 
+**Aplatir les calques d’un PDF**
 
-**Aplatir un PDF en couches**
-
-
-
-La bibliothèque Aspose.PDF pour Java ouvre un PDF, parcourt chaque calque de la première page et aplatit chaque calque, le rendant permanent sur la page.
-
+La bibliothèque Aspose.PDF for Java ouvre un PDF, parcourt chaque calque de la première page et aplatit chaque calque, le rendant permanent sur la page.
 
 ```java
 Document document = new Document(input);
@@ -1282,31 +1126,19 @@ for (Layer layer : page.getLayers())
 document.save(output);
 ```
 
-
-La méthode Layer.flatten(boolean cleanupContentStream) accepte le paramètre booléen qui spécifie s'il faut supprimer les marqueurs de groupe de contenu facultatifs du flux de contenu.
-La définition du paramètre cleanupContentStream sur false accélère le processus d'aplatissement.
-
-
+La méthode `Layer.flatten(boolean cleanupContentStream)` accepte un paramètre booléen qui spécifie s'il faut supprimer les marqueurs de groupe de contenu facultatifs du flux de contenu.
+La définition du paramètre `cleanupContentStream` sur `false` accélère le processus d'aplatissement.
 
 **Fusionner tous les calques du PDF en un seul**
 
-
-
-La bibliothèque Aspose.PDF pour Java permet de fusionner tous les calques PDF ou un calque spécifique de la première page dans un nouveau calque et d'enregistrer le document mis à jour.
-
-
+La bibliothèque Aspose.PDF for Java permet de fusionner tous les calques PDF ou un calque spécifique de la première page dans un nouveau calque et d'enregistrer le document mis à jour.
 
 Deux méthodes ont été ajoutées pour fusionner tous les calques de la page :
 
-
-- 
-void mergeLayers(String newLayerName);
-- void mergeLayers (String newLayerName, String newOptionalContentGroupId);
-
-
+- `void mergeLayers(String newLayerName);`
+- `void mergeLayers (String newLayerName, String newOptionalContentGroupId);`
 
 Le deuxième paramètre permet de renommer le marqueur de groupe de contenu facultatif. La valeur par défaut est « oc1 » (/OC /oc1 BDC).
-
 
 ```java
 Document document = new Document(input);
@@ -1318,16 +1150,11 @@ page.mergeLayers("NewLayerName");
 document.save(output);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 24.4
-
-
+## Nouveautés dans Aspose.PDF 24.4
 
 Cette version a introduit les plugins Java pour PDF :
 
-
-- 
-Plugin d'aplatissement de formulaire
+- Plugin d'aplatissement de formulaire
 
 ```java
 FormFlattener pdfFormPlugin = new FormFlattener();
@@ -1344,7 +1171,6 @@ java.util.List < IOperationResult > resultCollectionInternal = result.getResultC
 ```
 
 - Exportateur de formulaires
-
 
 ```java
 Rectangle rect = new com.aspose.pdf.Rectangle(0, 220, 600, 330);
@@ -1371,9 +1197,7 @@ System.out.println(result.getResultCollectionInternal().get_Item(0).isFile());
 System.out.println(result.getResultCollectionInternal().get_Item(0).getData().toString());
 ```
 
-- 
-Plugin de fusion
-
+- Plugin de fusion
 
 ```java
 String input1 = "sample.pdf";
@@ -1395,13 +1219,9 @@ System.out.println(results.getResultCollection().size());
 System.out.println(results.getResultCollection().get(0).isFile());
 ```
 
-- 
-Plugin Optimiseur
+- Plugin d’optimisation
 
-
-
-Comment réduire la taille des documents PDF ?
-
+**Réduire la taille des documents PDF**
 
 ```java
 String input = "Test.pdf";
@@ -1416,8 +1236,7 @@ opt.addOutput(new FileDataSource(output));
 optimizer.process(opt);
 ```
 
-
-Comment redimensionner des documents PDF ?
+**Redimensionner des documents PDF**
 
 ```java
 String input = "sample.pdf";
@@ -1434,8 +1253,7 @@ opt.setPageSize(PageSize.getA1());
 organizer.process(opt);
 ```
 
-Comment faire pivoter des documents PDF ?
-
+**Faire pivoter des documents PDF**
 
 ```java
 String input = "sample.pdf";
@@ -1451,13 +1269,9 @@ opt.setRotation(Rotation.on90);
 ResultContainer results = optimizer.process(opt);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 24.3
+## Nouveautés dans Aspose.PDF 24.3
 
-
-
-À partir de la version 24.3, implémentez une recherche via une liste de phrases dans un TextFragmentAbsorber.
-
+Depuis la version 24.3, vous pouvez rechercher une liste d’expressions avec `TextFragmentAbsorber`.
 
 ```java
 String[] expressions = new String[] {
@@ -1479,9 +1293,7 @@ document.getPages().accept(newAbsorber);
 HashMap < Pattern, TextFragmentCollection > map = newAbsorber.getRegexResults();
 ```
 
-
-La fonctionnalité suivante ajoute la possibilité de convertir des tableaux pour le convertisseur PDF en Markdown
-
+Le convertisseur PDF en Markdown prend désormais en charge les tableaux.
 
 ```java
 Document doc = new Document(dataDir + "56201.pdf");
@@ -1489,11 +1301,9 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 doc.save(dataDir + "56201.md", saveOptions);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 24.2
+## Nouveautés dans Aspose.PDF 24.2
 
-A partir de 24.2, il est possible d'ajouter le filigrane en PDF avec AcroForms. TextStamp peut être utilisé avec les fichiers AcroForm. Si vous utilisez TextStamp pour les fichiers XFA, le texte est dessiné sur la page comme dans un fichier PDF habituel (il est visible dans les visionneuses PDF qui ne peuvent pas lire les fichiers XFA, par exemple dans un navigateur Chrome). Pour ajouter du texte au fichier XFA, il doit être modifié dans le XML interne du fichier XFA.
-
+Depuis la version 24.2, vous pouvez ajouter un filigrane aux PDF contenant des formulaires AcroForm. TextStamp peut être utilisé avec les fichiers AcroForm. Si vous utilisez TextStamp pour les fichiers XFA, le texte est dessiné sur la page comme dans un fichier PDF habituel (il est visible dans les visionneuses PDF qui ne peuvent pas lire les fichiers XFA, par exemple dans un navigateur Chrome). Pour ajouter du texte au fichier XFA, il doit être modifié dans le XML interne du fichier XFA.
 
 ```java
 String sourceName = dataDir + "551.3xfa.pdf";
@@ -1522,15 +1332,11 @@ pdfDocument.save(targetName);
 pdfDocument.close();
 ```
 
-
 Définir StateModel pour l'annotation
 
-
-Nous pouvons utiliser setReviewState et setMarkedState de la classe MarkupAnnotation pour définir l'état nécessaire.
-
+Utilisez les méthodes `setReviewState` et `setMarkedState` de la classe `MarkupAnnotation` pour définir l'état nécessaire.
 
 Toutes les annotations de balisage disposent d'une option Définir l'état disponible.
-
 
 ```java
 // Open the source PDF document
@@ -1572,20 +1378,16 @@ textAnnotation2.setReviewState(AnnotationState.Accepted, userName2);
 pdfDocument.save(dataDir + "output_24_2_Rejected_and_Accepted.pdf");
 ```
 
-
-À partir de la version 24.2, implémentez la conversion OFD en PDF :
+Depuis la version 24.2, la conversion OFD en PDF est prise en charge :
 
 ```java
 Document document = new Document(inputPath, new OfdLoadOptions());
 document.save(outputPath);
 ```
 
-## Quoi de neuf dans Aspose.PDF 24.1
+## Nouveautés dans Aspose.PDF 24.1
 
-
-
-À partir de la version 24.1, implémentez la conversion PDF vers Markdown :
-
+Depuis la version 24.1, la conversion PDF en Markdown est prise en charge :
 
 ```java
 final Document doc = new Document(inputPdfPath);
@@ -1594,9 +1396,7 @@ saveOptions.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Outlines);
 doc.save(markdownOutputFilePath, saveOptions);
 ```
 
-
 De plus, dans la version 24.1, l'interruption des threads à l'aide d'InterruptMonitor a été implémentée.
-
 
 ```java
 final InterruptMonitor monitor = new InterruptMonitor();
@@ -1669,10 +1469,7 @@ monitor.interrupt();
 System.out.println("Interrupted the save thread at " + System.currentTimeMillis());
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 23.12
-
-
+## Nouveautés dans Aspose.PDF 23.12
 
 Le formulaire peut être trouvé et le texte peut être remplacé à l'aide de l'extrait de code suivant :
 
@@ -1702,7 +1499,6 @@ document.save(output);
 
 Ou bien, le formulaire peut être complètement supprimé :
 
-
 ```java
 Document document = new Document(input);
 XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
@@ -1720,9 +1516,7 @@ while (tmp0.hasNext()) {
 document.save(output);
 ```
 
-
 Autre variante de suppression du formulaire :
-
 
 ```java
 Document document = new Document(input);
@@ -1738,9 +1532,7 @@ for (int i = 1; i <= forms.size(); i++) {
 document.save(output);
 ```
 
-- 
-Tous les formulaires peuvent être supprimés à l'aide de l'extrait de code suivant :
-
+- Tous les formulaires peuvent être supprimés à l'aide de l'extrait de code suivant :
 
 ```java
 Document document = new Document(input);
@@ -1752,10 +1544,7 @@ forms.clear();
 document.save(output);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 23.11
-
-
+## Nouveautés dans Aspose.PDF 23.11
 
 À partir de cette version, il est possible de supprimer le texte masqué du fichier PDF :
 
@@ -1781,16 +1570,11 @@ Iterator tmp0 = (textAbsorber.getTextFragments()).iterator();
 document.save(outputFile);
 ```
 
-## Quoi de neuf dans Aspose.PDF 23.10
+## Nouveautés dans Aspose.PDF 23.10
 
+Cette version propose trois façons de supprimer les balises d’un PDF balisé.
 
-
-La mise à jour actuelle présente trois versions de Suppression des balises des PDF balisés.
-
-
-- 
-Supprimez un élément de nœud d'un documentElement (élément d'arborescence racine) :
-
+- Supprimez un élément de nœud d'un documentElement (élément d'arborescence racine) :
 
 ```java
 Document document = new Document(inputPath);
@@ -1806,9 +1590,7 @@ documentElement.getChildren().remove(structElement);
 document.save(outputPath);
 ```
 
-- 
-Supprimez toutes les balises des éléments marqués du document, mais conservez les éléments de structure :
-
+- Supprimez toutes les balises des éléments marqués du document, mais conservez les éléments de structure :
 
 ```java
 Document document = new Document(inputPath);
@@ -1830,8 +1612,7 @@ for (Element element:queue ) {
 document.save(outputPath);
 ```
 
-- 
-Supprimez complètement les balises :
+- Supprimez complètement les balises :
 
 ```java
 Document document = new Document(inputPath);
@@ -1843,7 +1624,6 @@ document.save(outputPath);
 
 Nous avons implémenté une nouvelle fonctionnalité pour mesurer la hauteur des caractères. Utilisez le code suivant pour mesurer la hauteur d'un caractère :
 
-
 ```java
 Document doc = new Document("input.pdf");
 TextFragmentAbsorber absorber = new TextFragmentAbsorber();
@@ -1851,20 +1631,13 @@ absorber.visit(doc.getPages().get_Item(1));
 double height = absorber.getTextFragments().get_Item(1).getTextState().measureHeight('h')
 ```
 
-
 Notez que la mesure est basée sur la police intégrée dans le document. Si des informations sur une dimension sont manquantes, cette méthode renvoie 0.
 
+## Nouveautés dans Aspose.PDF 23.9
 
-## 
-Quoi de neuf dans Aspose.PDF 23.9
+Depuis la version 23.9, vous pouvez supprimer une annotation enfant d’un champ de formulaire.
 
-
-
-À partir de la version 23.9, prise en charge de la suppression d'une annotation enfant d'un champ à remplir.
-
-
-
-exemple 1 :
+Exemple 1 :
 
 ```java
 String input = "55343_1.pdf";
@@ -1885,8 +1658,7 @@ field = (Field) doc.getForm().get_Item(fieldName);
 System.out.println(0 == field.size());
 ```
 
-exemple 2 :
-
+Exemple 2 :
 
 ```java
 {
@@ -1939,9 +1711,7 @@ return true;
 }
 ```
 
-
 L'ajout d'une image avec ImageFilterType.Flate ne préserve pas la transparence.
-
 
 ```java
 Document document = new Document();
@@ -1965,13 +1735,9 @@ document.save(getOutputPath("55157.pdf"));
 stream.close();
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 23.8
+## Nouveautés dans Aspose.PDF 23.8
 
-
-
-La fonction de détection des mises à jour incrémentielles dans un document PDF a été ajoutée en 23.8. Cette fonction renvoie « vrai » là où le document a été enregistré avec des mises à jour incrémentielles, sinon elle renvoie « faux ».
-
+La fonction de détection des mises à jour incrémentielles dans un document PDF a été ajoutée en 23.8. Cette fonction renvoie `true` si le document a été enregistré avec des mises à jour incrémentielles, et `false` dans le cas contraire.
 
 ```java
 Document doc = new Document(dataDir+"PDF_Support_Tech_Note.pdf");
@@ -1987,14 +1753,11 @@ System.out.println(updatedIncrementally);
 doc.close();
 ```
 
-
 Une autre fonctionnalité consiste à copier les OutputIntents du PDF d'entrée vers le PDF de destination.
 
-Nous ajoutons une nouvelle propriété publique Document.getOutputIntents() pour autoriser l'accès aux intentions de sortie dans un document.
-
+La méthode publique `Document.getOutputIntents()` donne accès aux intentions de sortie dans un document.
 
 Pour le moment, seule l'utilisation d'intentions de sortie déjà existantes dans certains documents est prise en charge, l'utilisateur ne peut pas créer OutputIntent à partir de zéro.
-
 
 ```java
 Document document1 = new Document(dataDir+"pdfa.pdf");
@@ -2009,9 +1772,7 @@ for (OutputIntent intent : document1.getOutputIntents())
 resultDocument.save(dataDir+"resultpath.pdf");
 ```
 
-
-Depuis la prise en charge d'Aspose.PDF 23.8 pour ajouter l'extraction de forme :
-
+Depuis la version 23.8, Aspose.PDF prend en charge l’extraction de formes :
 
 ```java
 {
@@ -2075,9 +1836,7 @@ Depuis la prise en charge d'Aspose.PDF 23.8 pour ajouter l'extraction de forme 
     }
 ```
 
-
-Prend également en charge la possibilité de détecter le débordement lors de l'ajout de texte :
-
+Vous pouvez également détecter les débordements lors de l’ajout de texte :
 
 ```java
 Document doc = new Document();
@@ -2100,11 +1859,9 @@ builder.appendParagraph(paragraph);
 doc.save(output);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 23.7
+## Nouveautés dans Aspose.PDF 23.7
 
 À partir de la version 23.7, la mise à l'échelle des pages des préréglages de la boîte de dialogue d'impression est prise en charge :
-
 
 ```java
 Document document = new Document();
@@ -2117,17 +1874,11 @@ int printScaling = documentOutput.getPrintScaling();
 System.out.println("PrintScaling: " + printScaling);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 23.6
+## Nouveautés dans Aspose.PDF 23.6
 
+Depuis la version 23.6, vous pouvez définir le titre des documents HTML et EPUB.
 
-
-À partir de la version 23.6, il est possible d'ajouter la possibilité de définir le titre de la page HTML, Epub.
-
-
-
-code pour HTML :
-
+Exemple pour HTML :
 
 ```java
 HtmlSaveOptions options = new HtmlSaveOptions();
@@ -2140,8 +1891,7 @@ Document document = new Document(inputPath);
 document.save(outPath, options);
 ```
 
-
-code pour l'EPUB :
+Exemple pour EPUB :
 
 ```java
 EpubSaveOptions epubSaveOptions = new EpubSaveOptions();
@@ -2152,8 +1902,7 @@ Document document = new Document(inputPath);
 document.save(outPath, epubSaveOptions);
 ```
 
-À partir de la version 23.6, prise en charge pour fournir une API pour le positionnement des graphiques vectoriels :
-
+Depuis la version 23.6, une API permet de positionner les graphiques vectoriels :
 
 ```java
 Document document = new Document(input);
@@ -2175,13 +1924,9 @@ subPath3.setPosition(point3);
 document.save(output);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 23.1
+## Nouveautés dans Aspose.PDF 23.1
 
-
-
-À partir de la version 23.1, prise en charge de la création d'annotations PrinterMark. Ajout d'une des variantes d'annotation : ColorBarAnnotation.
-
+Depuis la version 23.1, la création d’annotations `PrinterMark` est prise en charge. La variante `ColorBarAnnotation` a été ajoutée.
 
 ```java
 Document doc = new Document();
@@ -2204,12 +1949,9 @@ page.getAnnotations().add(colorBarYellow);
 doc.save("outFile.pdf");
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 22.12
+## Nouveautés dans Aspose.PDF 22.12
 
-
-
-À partir de cette version, prise en charge de la conversion de PDF en image DICOM :
+Cette version prend en charge la conversion de PDF en images DICOM :
 
 ```java
 DicomDevice device = new DicomDevice(PageSize.getA4());
@@ -2218,12 +1960,9 @@ ByteArrayOutputStream stream = new ByteArrayOutputStream();
 device.process(doc.getPages().get_Item(1), stream);
 ```
 
-## Quoi de neuf dans Aspose.PDF 22.9
+## Nouveautés dans Aspose.PDF 22.9
 
-
-
-À partir de la version 22.09, prise en charge de l'ajout d'une propriété permettant de modifier l'ordre des rubriques de sujet (E=, CN=, O=, OU=, ) dans la signature.
-
+Depuis la version 22.09, une propriété permet de modifier l’ordre des attributs du sujet (E=, CN=, O=, OU=, ) dans la signature.
 
 ```java
 String inputPdf = getInputPath("input.pdf");
@@ -2250,13 +1989,9 @@ finally {
 }
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 22.8
+## Nouveautés dans Aspose.PDF 22.8
 
-
-
-Depuis la prise en charge d'Aspose.PDF 23.8 pour ajouter une méthode de reconstruction de la table Xréf :
-
+Depuis la version 23.8, Aspose.PDF propose une méthode de reconstruction de la table de références croisées (xref) :
 
 ```java
 PdfFileSanitization sanitizer = new PdfFileSanitization();
@@ -2269,27 +2004,19 @@ try {
 }
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 22.6
+## Nouveautés dans Aspose.PDF 22.6
 
-PDF vers PDF_A_1A - implémentez l'option pour supprimer la couleur de transparence afin d'éviter une taille de fichier de sortie importante.
-
-
+La conversion PDF vers PDF_A_1A propose une option de traitement de la transparence pour limiter la taille du fichier de sortie.
 
 À partir de la version 22.5, le client est en mesure de contrôler la qualité de la transparence convertie et, par conséquent, la taille du fichier de sortie :
-
 
 ```java
 opts.setTransparencyResolution(300);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 22.5
-
-
+## Nouveautés dans Aspose.PDF 22.5
 
 Lors de la conversion PDF/A, le contenu transparent est supprimé et remplacé par une image.
-
 
 Nous avons implémenté une nouvelle fonctionnalité, et désormais le client peut contrôler la qualité de l'image avec le paramètre TransparencyResolution :
 
@@ -2301,20 +2028,13 @@ pdfDocument.convert(options);
 pdfDocument.save("finalOutput.pdf");
 ```
 
-## Quoi de neuf dans Aspose.PDF 22.4
+## Nouveautés dans Aspose.PDF 22.4
 
+Cette version apporte les améliorations suivantes à Aspose.PDF for Java :
 
+- PDF vers ODS : reconnaître le texte en indice et en exposant ;
 
-Cette version inclut des informations sur Aspose.PDF pour Java :
-
-
-- 
-PDF vers ODS : reconnaître le texte en indice et en exposant ;
-
-
-
-**exemple**
-
+**Exemple**
 
 ```java
 Document pdfDocument = new Document("Superscript-Subscript.pdf");
@@ -2323,19 +2043,13 @@ options.Format = ExcelSaveOptions.ExcelFormat.ODS;
 pdfDocument.Save("output.ods"), options);
 ```
 
-- 
-PDF vers XMLSpreadSheet2003 : Reconnaître le texte en indice et en exposant ;
+- PDF vers XMLSpreadSheet2003 : Reconnaître le texte en indice et en exposant ;
 
 - PDF vers Excel : Reconnaître le texte en indice et en exposant ;
 
+## Nouveautés dans Aspose.PDF 22.3
 
-## 
-Quoi de neuf dans Aspose.PDF 22.3
-
-
-
-PDF vers ODS : la prise en charge de RTL est disponible dans la version 22.3
-
+PDF vers ODS : la prise en charge du texte de droite à gauche (RTL) est disponible dans la version 22.3
 
 ```java
 ExcelSaveOptions options = new ExcelSaveOptions();
@@ -2343,28 +2057,17 @@ options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
 pdfDocument.save("output.ods", options);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 22.2
+## Nouveautés dans Aspose.PDF 22.2
 
+Cette version inclut le PDF vers XLSX : prise en charge du texte de droite à gauche (RTL) (hébreu, arabe).
 
+## Nouveautés dans Aspose.PDF 22.1
 
-Cette version inclut le PDF vers XSLX : prise en charge de RTL (hébreu, arabe).
+Aspose.PDF for Java permet de charger des documents au format PDF (Portable Document Format) version 2.0.
 
-## Quoi de neuf dans Aspose.PDF 22.1
+## Nouveautés dans Aspose.PDF 21.10
 
-
-
-Aspose.PDF pour Java permet de charger des documents au format PDF (Portable Document Format) version 2.0.
-
-
-## 
-Quoi de neuf dans Aspose.PDF 21.10
-
-
-### 
-Comment détecter le texte caché ?
-
-
+### Détecter le texte masqué
 
 Veuillez utiliser le code suivant :
 
@@ -2389,16 +2092,11 @@ Document pdf = new Document(inFile);
         }
 ```
 
-## Quoi de neuf dans Aspose.PDF 21.8
+## Nouveautés dans Aspose.PDF 21.8
 
+### Modifier la couleur du texte d’une signature numérique
 
-### 
-Comment changer la couleur du texte dans la signature numérique ?
-
-
-
-Dans la version 21.8 setForegroundColor, il permet de changer la couleur du texte dans la signature numérique :
-
+Depuis la version 21.8, `setForegroundColor` permet de modifier la couleur du texte d’une signature numérique :
 
 ```java
 Please, use the following code:
@@ -2419,15 +2117,11 @@ Please, use the following code:
     pdfSign.save(outFile);
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 21.6
+## Nouveautés dans Aspose.PDF 21.6
 
+### Masquer des images avec ImagePlacementAbsorber
 
-### 
-Masquage de l'image à l'aide de ImagePlacementAbsorber du document
-
-Avec Aspose.PDF pour Java, vous pouvez masquer les images à l'aide de ImagePlacementAbsorber du document :
-
+Avec Aspose.PDF for Java, vous pouvez masquer les images à l'aide de ImagePlacementAbsorber du document :
 
 ```java
 Document doc = new Document("input.pdf");
@@ -2443,19 +2137,13 @@ Document doc = new Document("input.pdf");
   doc.save("out.pdf");
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 21.5
+## Nouveautés dans Aspose.PDF 21.5
 
+### Fusionner des images
 
-### 
-Ajouter une API pour fusionner des images
+Aspose.PDF 21.4 permet de fusionner plusieurs flux d’images en un seul. Les formats de sortie PNG, JPG et TIFF sont pris en charge. Si le format demandé n’est pas pris en charge, la sortie est encodée en JPEG par défaut.
 
-
-
-Aspose.PDF 21.4 vous permet de combiner des images. Fusionne la liste des flux d’images en un seul flux d’images. Les formats de sortie Png/jpg/tiff sont pris en charge, en cas d'utilisation d'un flux de sortie au format non pris en charge, codé en Jpeg par défaut.
-
-
-Suivez l'extrait de code suivant :
+Utilisez l’extrait de code suivant :
 
 ```java
 InputStream inputStream;
@@ -2490,8 +2178,7 @@ InputStream inputStream;
     inputStream.close();
 ```
 
-Vous pouvez également fusionner vos images au format Tiff :
-
+Vous pouvez également fusionner vos images au format TIFF :
 
 ```java
 InputStream inputStream;
@@ -2520,12 +2207,9 @@ InputStream inputStream;
     inputStream.close();
 ```
 
-## 
-Quoi de neuf dans Aspose.PDF 21.02
+## Nouveautés dans Aspose.PDF 21.02
 
-
-
-Aspose.PDF v21.02 Signer un PDF avec les signatures PAdES LTV
+Aspose.PDF 21.02 permet de signer un PDF avec des signatures PAdES LTV.
 
 ```java
 final Document document = new Document(inputPdf);

@@ -5,12 +5,12 @@ type: docs
 weight: 10
 url: /fr/java/add-image-to-existing-pdf-file/
 description: Découvrez comment ajouter des images à des fichiers PDF existants en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 TechArticle: true
 AlternativeHeadline: Ajouter des images aux fichiers PDF existants avec Java
-Abstract: Cet article montre comment ajouter des images aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le placement d'une image à des coordonnées fixes, l'ajout d'images via des opérateurs de page de bas niveau, la définition d'un texte alternatif pour l'accessibilité et l'intégration de données d'image avec la compression Flate.
+Abstract: Cet article montre comment ajouter des images aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre le placement d'une image à des coordonnées fixes, l'ajout d'images via des opérateurs de page de bas niveau, la définition d'un texte alternatif pour l'accessibilité et l'intégration de données d'image avec la compression Flate.
 ---
-Aspose.PDF pour Java prend en charge à la fois le placement d'images de haut niveau et le dessin basé sur un opérateur de bas niveau.
+Aspose.PDF for Java prend en charge à la fois le placement d'images de haut niveau et le dessin basé sur un opérateur de bas niveau.
 
 ## Ajouter une image avec les coordonnées de la page
 

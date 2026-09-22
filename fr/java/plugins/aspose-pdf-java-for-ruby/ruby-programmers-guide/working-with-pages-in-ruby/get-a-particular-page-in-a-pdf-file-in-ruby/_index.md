@@ -1,21 +1,17 @@
 ---
-title: Obtenir une page particulière dans un fichier PDF dans Ruby
-linktitle: Obtenir une page particulière dans un fichier PDF dans Ruby
+title: Obtenir une page particulière dans un fichier PDF en Ruby
+linktitle: Obtenir une page particulière dans un fichier PDF en Ruby
 type: docs
 weight: 30
 url: /java/get-a-particular-page-in-a-pdf-file-in-ruby/
 description: Accédez et manipulez des pages individuelles dans des documents PDF à l'aide de Ruby et Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Obtenir la page
+## Aspose.PDF - Obtenir la page
 
+Pour obtenir une page particulière dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **GetPage**.
 
-
-Pour obtenir une page particulière dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **GetPage**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -45,13 +41,8 @@ new_document.save(data_dir + "output.pdf")
 puts "Process completed successfully!"
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Obtenir la page (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez **Obtenir la page (Aspose.PDF)**À partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)

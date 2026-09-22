@@ -4,18 +4,18 @@ linktitle: Sécurisation et signature en PDF
 type: docs
 weight: 210
 url: /fr/java/securing-and-signing/
-description: Découvrez comment signer, certifier, crypter, déchiffrer et sécuriser des fichiers PDF en Java, y compris les signatures numériques, la validation des signatures et les privilèges relatifs aux documents.
-lastmod: "2026-09-17"
+description: Découvrez comment signer, certifier, chiffrer, déchiffrer et sécuriser des fichiers PDF en Java, y compris les signatures numériques, la validation des signatures et les privilèges relatifs aux documents.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Signez, certifiez, cryptez, déchiffrez et protégez des documents PDF en Java
-Abstract: Cette section explique comment sécuriser et signer des documents PDF à l'aide d'Aspose.PDF pour Java. Découvrez comment appliquer des signatures numériques, certifier des documents, extraire et vérifier les informations de signature et gérer le cryptage PDF, les mots de passe et les privilèges d'accès.
+Abstract: Cette section explique comment sécuriser et signer des documents PDF à l'aide d'Aspose.PDF for Java. Découvrez comment appliquer des signatures numériques, certifier des documents, extraire et vérifier les informations de signature et gérer le chiffrement PDF, les mots de passe et les privilèges d'accès.
 ---
-Aspose.PDF pour Java comprend des API de façade pour les signatures numériques et la sécurité des documents. Vous pouvez signer ou certifier des fichiers PDF, inspecter les signatures existantes, crypter et déchiffrer des documents et appliquer des restrictions d'autorisation avec les mots de passe des utilisateurs et des propriétaires.
+Aspose.PDF for Java comprend des API de façade pour les signatures numériques et la sécurité des documents. Vous pouvez signer ou certifier des fichiers PDF, inspecter les signatures existantes, chiffrer et déchiffrer des documents et appliquer des restrictions d'autorisation avec les mots de passe des utilisateurs et des propriétaires.
 
 - [Signer numériquement un fichier PDF](/pdf/fr/java/digitally-sign-pdf-file/)
 - [Extraire les informations de signature](/pdf/fr/java/extract-image-and-signature-information/)
-- [Définir les privilèges, crypter et déchiffrer les fichiers PDF](/pdf/fr/java/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Définir les privilèges, chiffrer et déchiffrer les fichiers PDF](/pdf/fr/java/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Notes de signature de carte à puce](/pdf/fr/java/sign-pdf-document-from-smart-card/)

@@ -5,13 +5,13 @@ type: docs
 weight: 70
 url: /fr/java/aspose-pdf-drawing-graph-shapes-bounds-check/
 description: Découvrez comment valider les limites de forme dans les collections de graphiques PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Valider les limites de la forme du graphique dans les fichiers PDF à l'aide de Java
-Abstract: Cet article montre comment valider les limites de forme dans les collections Graph à l'aide d'Aspose.PDF pour Java. Il couvre l'activation de la vérification stricte des limites, la tentative d'ajout d'une forme hors plage et la gestion de l'exception résultante tout en enregistrant le document.
+Abstract: Cet article montre comment valider les limites de forme dans les collections Graph à l'aide d'Aspose.PDF for Java. Il couvre l'activation de la vérification stricte des limites, la tentative d'ajout d'une forme hors plage et la gestion de l'exception résultante tout en enregistrant le document.
 ---
 Utilisez `BoundsCheckMode` lorsque vous devez vous assurer que les formes tiennent dans un conteneur graphique.
 

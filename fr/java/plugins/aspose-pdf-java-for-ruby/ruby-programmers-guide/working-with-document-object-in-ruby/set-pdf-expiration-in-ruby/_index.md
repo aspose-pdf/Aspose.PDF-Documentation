@@ -1,21 +1,17 @@
 ---
-title: Définir l'expiration du PDF dans Ruby
-linktitle: Définir l'expiration du PDF dans Ruby
+title: Définir l'expiration du PDF en Ruby
+linktitle: Définir l'expiration du PDF en Ruby
 type: docs
 weight: 110
 url: /java/set-pdf-expiration-in-ruby/
 description: Implémentez les dates d'expiration dans les PDF à l'aide d'Aspose.PDF for Ruby pour les documents urgents.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Définir l'expiration du PDF
+## Aspose.PDF - Définir l'expiration du PDF
 
+Pour définir l'expiration d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **SetExpiration**.
 
-
-Pour définir l'expiration d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **SetExpiration**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -51,13 +47,8 @@ doc.save(data_dir + "set_expiration.pdf")
 puts "Update document information, please check output file."
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Définir l'expiration du PDF (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Définir l'expiration du PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)

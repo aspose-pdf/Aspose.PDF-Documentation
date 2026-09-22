@@ -5,13 +5,13 @@ type: docs
 weight: 30
 url: /fr/java/removing-attachment-from-an-existing-pdf/
 description: Découvrez comment supprimer une ou toutes les pièces jointes intégrées des documents PDF en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Supprimer les pièces jointes PDF par programme avec Java
-Abstract: Cet article montre comment supprimer les pièces jointes des fichiers PDF à l'aide d'Aspose.PDF pour Java. Les exemples montrent la suppression d'un fichier incorporé par clé et l'effacement de l'intégralité de la collection EmbeddedFiles avant d'enregistrer le document mis à jour.
+Abstract: Cet article montre comment supprimer les pièces jointes des fichiers PDF à l'aide d'Aspose.PDF for Java. Les exemples montrent la suppression d'un fichier incorporé par clé et l'effacement de l'intégralité de la collection EmbeddedFiles avant d'enregistrer le document mis à jour.
 ---
 Les pièces jointes stockées dans un document PDF peuvent être supprimées individuellement ou en une seule fois via la collection `EmbeddedFiles`.
 

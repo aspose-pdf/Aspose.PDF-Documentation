@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /fr/java/add-arc/
 description: Apprenez à dessiner et à remplir des formes d'arc dans des fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Dessinez des formes d'arc dans des fichiers PDF à l'aide de Java
-Abstract: Cet article montre comment ajouter des formes d'arc aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le dessin de plusieurs arcs décrits avec différentes couleurs et la création d'un segment d'arc rempli en combinant un arc avec une ligne de fermeture.
+Abstract: Cet article montre comment ajouter des formes d'arc aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre le dessin de plusieurs arcs décrits avec différentes couleurs et la création d'un segment d'arc rempli en combinant un arc avec une ligne de fermeture.
 ---
-Aspose.PDF pour Java utilise `Graph` avec des objets de forme tels que `Arc` et `Line` pour restituer des graphiques vectoriels.
+Aspose.PDF for Java utilise `Graph` avec des objets de forme tels que `Arc` et `Line` pour restituer des graphiques vectoriels.
 
 ## Ajouter des contours d'arc
 

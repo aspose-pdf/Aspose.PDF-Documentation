@@ -1,49 +1,36 @@
 ---
-title: Classe PDFViewer
-linktitle: Classe PDFViewer
+title: Classe PdfViewer
+linktitle: Classe PdfViewer
 type: docs
 weight: 135
 url: /java/pdfviewer-class/
 description: Découvrez comment utiliser la façade PdfViewer en Java pour décoder les pages PDF et inspecter les paramètres liés à la visionneuse.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Décodez les pages PDF et inspectez les données de la visionneuse en Java avec PdfViewer
-Abstract: Cette section explique comment utiliser la façade PdfViewer dans Aspose.PDF pour Java pour le décodage de pages et les tâches d'inspection liées à la visionneuse. Les exemples Java actuels couvrent le rendu de toutes les pages en images, le décodage d'une page spécifique et l'inspection du nombre de pages, du type de coordonnées, de la résolution et des paramètres de la visionneuse liée.
+AlternativeHeadline: Décoder les pages PDF et inspecter les données de la visionneuse en Java avec PdfViewer
+Abstract: Cette section explique comment utiliser la façade PdfViewer dans Aspose.PDF for Java pour le décodage de pages et les tâches d'inspection liées à la visionneuse. Les exemples Java actuels couvrent le rendu de toutes les pages en images, le décodage d'une page spécifique et l'inspection du nombre de pages, du type de coordonnées, de la résolution et des paramètres de la visionneuse liée.
 ---
 La classe Java `PdfViewerExamples` illustre les principaux flux de travail de visualisation disponibles via l'API Facades.
 
-
-## 
-Décoder toutes les pages PDF
-
-
+## Décoder toutes les pages PDF
 
 Utilisez ce flux de travail lorsque chaque page du PDF source doit être rendue sous forme d'image.
 
+### Étapes
 
-### 
-Étapes
-
-
-1. 
-Créez et configurez une instance `PdfViewer`.
+1. Créez et configurez une instance `PdfViewer`.
 2. Liez le PDF source avec `bindPdf`.
 
-3. 
-Appelez `decodeAllPages()` pour afficher le document dans un tableau `BufferedImage`.
+3. Appelez `decodeAllPages()` pour convertir les pages du document en un tableau d’objets `BufferedImage`.
 
-4. 
-Enregistrez chaque page décodée dans un fichier image de sortie.
+4. Enregistrez chaque page décodée dans un fichier image de sortie.
 
-5. 
-Fermez le fichier PDF lié.
+5. Fermez le fichier PDF lié.
 
-
-### 
-Exemple Java
+### Exemple Java
 
 ```java
 public static void decodeAllPages(Path inputFile, Path outputDir) throws Exception {
@@ -62,32 +49,20 @@ public static void decodeAllPages(Path inputFile, Path outputDir) throws Excepti
 
 ## Décoder une page PDF spécifique
 
+Utilisez ce flux de travail lorsqu'une seule page doit être rendue sous forme d’image.
 
+### Étapes
 
-Utilisez ce flux de travail lorsqu'une seule page doit être rendue sur une image.
+1. Créez et configurez une instance `PdfViewer`.
 
-
-### 
-Étapes
-
-
-1. 
-Créez et configurez une instance `PdfViewer`.
-
-2. 
-Liez le PDF source.
+2. Liez le PDF source.
 3. Appelez `decodePage()` pour la page que vous souhaitez afficher.
 
-4. 
-Enregistrez la page décodée dans un fichier image de sortie.
+4. Enregistrez la page décodée dans un fichier image de sortie.
 
-5. 
-Fermez la visionneuse.
+5. Fermez la visionneuse.
 
-
-### 
-Exemple Java
-
+### Exemple Java
 
 ```java
 public static void decodeSpecificPage(Path inputFile, Path outputFile) throws Exception {
@@ -101,33 +76,22 @@ public static void decodeSpecificPage(Path inputFile, Path outputFile) throws Ex
 }
 ```
 
-## 
-Inspecter les métadonnées PDF
+## Inspecter les métadonnées PDF
 
 Utilisez ce flux de travail lorsque vous avez besoin d'informations sur un document lié à la visionneuse avant le rendu ou l'impression.
 
+### Étapes
 
-### 
-Étapes
+1. Créez et configurez une instance `PdfViewer`.
 
+2. Liez le PDF source.
 
-1. 
-Créez et configurez une instance `PdfViewer`.
+3. Lisez le nombre de pages, le type de coordonnées et la résolution de rendu.
+4. Utilisez ou affichez les valeurs récupérées.
 
-2. 
-Liez le PDF source.
+5. Fermez le fichier PDF lié.
 
-3. 
-Lisez le nombre de pages, le type de coordonnées et la résolution de rendu.
-4. Utilisez ou imprimez les valeurs récupérées.
-
-5. 
-Fermez le fichier PDF lié.
-
-
-### 
-Exemple Java
-
+### Exemple Java
 
 ```java
 public static void inspectPdfMetadata(Path inputFile) {
@@ -143,32 +107,22 @@ public static void inspectPdfMetadata(Path inputFile) {
 }
 ```
 
-## 
-Inspecter les paramètres de la visionneuse liée
+## Inspecter les paramètres de la visionneuse liée
 
-
-
-Utilisez ce flux de travail lorsque vous devez confirmer ou ajuster le comportement du visualiseur après avoir lié le PDF.
+Utilisez ce flux de travail lorsque vous devez confirmer ou ajuster le comportement de la visionneuse après avoir lié le PDF.
 
 ### Étapes
 
+1. Créez et configurez une instance `PdfViewer`.
 
-1. 
-Créez et configurez une instance `PdfViewer`.
+2. Liez le PDF source.
 
-2. 
-Liez le PDF source.
+3. Définissez les options de la visionneuse telles que le redimensionnement automatique, la rotation automatique et la visibilité de la boîte de dialogue d'impression.
 
-3. 
-Définissez les options de la visionneuse telles que le redimensionnement automatique, la rotation automatique et la visibilité de la boîte de dialogue d'impression.
-
-4. 
-Lisez les paramètres de la visionneuse active et le nombre de pages.
+4. Lisez les paramètres de la visionneuse active et le nombre de pages.
 5. Fermez la visionneuse.
 
-
-### 
-Exemple Java
+### Exemple Java
 
 ```java
 public static void inspectBoundViewerSettings(Path inputFile) {

@@ -1,406 +1,268 @@
 ---
-title: Principales fonctionnalités d'Aspose.PDF pour Java
+title: Principales fonctionnalités
 linktitle: Principales fonctionnalités
 type: docs
 weight: 20
 url: /java/key-features/
-description: Aspose.PDF pour Python via .NET met en évidence ses principales fonctionnalités, y compris les versions PDF prises en charge et les options de manipulation PDF disponibles.
-lastmod: "2026-06-09"
+description: Découvrez les principales fonctionnalités d’Aspose.PDF for Java pour créer, modifier, convertir et imprimer des documents PDF.
+lastmod: "2026-09-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Caractéristiques générales d'Aspose.PDF pour Java
-Abstract: Aspose.PDF pour Python via .NET est une bibliothèque robuste offrant des fonctionnalités étendues pour gérer et manipuler des documents PDF. Il prend en charge les normes PDF établies et facilite la lecture et l'exportation de PDF dans divers formats d'image tels que BMP, GIF, JPEG et PNG. Les utilisateurs peuvent configurer les propriétés du document, les attributs de page et gérer le texte, les paragraphes, les hyperliens, les graphiques et les pièces jointes. La bibliothèque excelle dans les capacités de conversion, permettant une transformation transparente des PDF aux formats Word, Excel, PowerPoint et HTML, entre autres, tout en reconvertissant également divers formats en PDF.
+AlternativeHeadline: Caractéristiques générales d'Aspose.PDF for Java
+Abstract: Cet article présente les fonctionnalités d’Aspose.PDF for Java pour gérer le texte, les images, les pages, les tableaux, les pièces jointes, les signets, les annotations et les formulaires. Il décrit également les fonctions de conversion, de sécurité, de signature et d’impression.
 ---
 ## Caractéristiques générales
 
+- Bibliothèque entièrement écrite en Java, compatible avec JDK 1.8 et versions ultérieures.
 
-- 
-Écrit entièrement en Java, fonctionne avec JDK 1.8 et supérieur
+- Prend en charge toutes les applications Java.
 
-- 
-Prend en charge toutes les applications Java
+- Référence API au format JavaDoc.
 
-- 
-Référence API au format JavaDoc
-
-- 
-Prise en charge du système d'exploitation 32 bits.
+- Prise en charge du système d'exploitation 32 bits.
 - Prise en charge du système d'exploitation 64 bits.
 
+## Versions PDF prises en charge
 
-## 
-Versions PDF prises en charge
+Aspose.PDF for Java prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6 et 1.7.
 
+## Polices
 
-
-Aspose.PDF pour Java prend en charge les versions PDF 1.2, 1.3, 1.4, 1.5, 1.6 et 1.7.
-
-
-## 
-Polices
-
-
-- 
-14 polices principales.
+- 14 polices principales.
 - Polices PostScript Type1.
 
-- 
-Polices TrueType.
+- Polices TrueType.
 
-- 
-Tapez 3 polices.
+- Polices Type 3.
 
-- 
-Informations sur la police intégrées dans un PDF
+- Informations sur la police intégrées dans un PDF.
 
-- 
-Polices CJK.
+- Polices CJK.
 - Prise en charge Unicode.
 
+## Texte
 
-## 
-Texte
+- Remplacer le texte.
 
+- Extraire du texte (de l'intégralité du PDF, d'une page particulière ou d'une plage de pages).
 
-- 
-Remplacez le texte.
+- Ajouter du texte.
 
-- 
-Extrayez du texte (de l'intégralité du PDF, d'une page particulière ou d'une plage de pages).
+## Graphiques
 
-- 
-Ajoutez du texte.
+- Différentes formes de graphiques, telles que des lignes, des cercles, des arcs et des courbes, sont prises en charge.
 
-## Graphique
+- Les graphiques peuvent être dessinés à n’importe quel emplacement de page spécifié par des coordonnées.
 
+- Les graphiques peuvent être pivotés, mis à l'échelle ou remplis, et des styles de lignes en tirets et en poly-traits peuvent être définis.
 
-- 
-Différentes formes de graphiques, telles que des lignes, des cercles, des arcs et des courbes, sont prises en charge.
+- Les graphiques sont dessinés en fonction de coordonnées et ont une position absolue plutôt que relative.
+- Les espaces colorimétriques CMJN et niveaux de gris sont pris en charge.
 
-- 
-Les graphiques peuvent être dessinés à n’importe quel emplacement de page spécifié par des coordonnées.
+## Images
 
-- 
-Les graphiques peuvent être pivotés, mis à l'échelle ou remplis, et des styles de lignes en tirets et en poly-traits peuvent être définis.
+- Ajouter une image dans le fichier PDF.
 
-- 
-Les graphiques sont dessinés en fonction de coordonnées et ont une position obsolète plutôt que relative.
-- Les espaces colorimétriques CMJN et Gris sont pris en charge.
+- Supprimer des images.
 
+- Remplacer les images.
+- Extraire des images (de l'intégralité du PDF, d'une page particulière ou d'une plage de pages).
 
-## 
-Images
+- Convertir un PDF en JPEG (page particulière ou toutes les pages).
 
+- Convertir un PDF en TIFF (une seule page ou toutes les pages, ou en images TIFF pixélisées).
 
-- 
-Ajouter une image dans le fichier PDF.
+- Convertir un PDF en PNG (page particulière ou toutes les pages).
 
-- 
-Supprimer des images.
+- Convertir un PDF en BMP (page particulière ou toutes les pages).
+- Convertir un PDF en SVG.
 
-- 
-Remplacez les images.
-- Extrayez des images (de l'intégralité du PDF, d'une page particulière ou d'une plage de pages).
+- Convertir un PDF en EMF.
 
-- 
-Conversion PDF en JPEG (page particulière ou toutes les pages).
+- Convertir un PDF en GIF.
 
-- 
-Conversion PDF en TIFF (une seule page ou toutes les pages, ou en images TIFF pixélisées).
+## Pièces jointes
 
-- 
-Conversion PDF en PNG (page particulière ou toutes les pages).
+- Ajouter une pièce jointe.
+- Obtenir des pièces jointes.
 
-- 
-Conversion PDF en BMP (page particulière ou toutes les pages).
-- Conversion PDF en SVG.
+- Supprimer les pièces jointes.
 
-- 
-Conversion PDF en EMF.
+- Obtenir des informations sur les pièces jointes.
 
-- 
-Conversion PDF en GIF.
+## Pages
 
-
-## 
-Pièces jointes
-
-
-- 
-Ajouter une pièce jointe.
-- Obtenez des pièces jointes.
-
-- 
-Supprimez les pièces jointes.
-
-- 
-Obtenez des informations sur les pièces jointes.
-
-
-## 
-Pages
-
-
-- 
-Obtenez et définissez les propriétés de la page.
+- Obtenir et définir les propriétés de la page.
 - Concaténer des fichiers PDF.
 
-- 
-Insérez des pages PDF.
+- Insérer des pages PDF.
 
-- 
-Ajoutez des fichiers PDF.
+- Ajouter des fichiers PDF.
 
-- 
-Supprimer des pages PDF
+- Supprimer des pages PDF.
 
-- 
-Extraire ou insérer des pages PDF
-- Créez un NUp de PDF.
+- Extraire ou insérer des pages PDF.
+- Créer un PDF avec plusieurs pages par feuille (N-up).
 
-- 
-Créez un livret en PDF.
+- Créer un livret en PDF.
 
-- 
-Divisez les pages PDF (du début à la fin, en masse, en pages individuelles).
+- Diviser les pages PDF (du début à la fin, en masse, en pages individuelles).
 
+## Document
 
-## 
-Documenter
-
-
-- 
-Obtenez les propriétés de la visionneuse de documents.
+- Obtenir les propriétés de la visionneuse de documents.
 - Définir les propriétés de la visionneuse de documents.
 
-- 
-Obtenez les propriétés d’affichage de la page.
+- Obtenir les propriétés d’affichage de la page.
 
-- 
-Définir les propriétés d'affichage de la page.
+- Définir les propriétés d'affichage de la page.
 
-- 
-Obtenez des informations sur le fichier PDF.
+- Obtenir des informations sur le fichier PDF.
 
-- 
-Définir les informations du fichier PDF.
-- Linéarisation (optimisation pour le web).
+- Définir les informations du fichier PDF.
+- Linéariser un PDF (optimisation pour le Web).
 
-- 
-Définissez les métadonnées XMP.
+- Définir les métadonnées XMP.
 
-- 
-Obtenez les métadonnées XMP.
+- Obtenir les métadonnées XMP.
 
-- 
-Conversion PDF en DOC/DOCX.
+- Convertir un PDF en DOC/DOCX.
 
-- 
-PDF vers Excel XLS et XLSX
-- Conversion PDF en HTML.
+- Convertir un PDF en Excel XLS et XLSX.
+- Convertir un PDF en HTML.
 
-- 
-Conversion PDF en XPS.
+- Convertir un PDF en XPS.
 
-- 
-Conversion PDF en Tex.
+- Convertir un PDF en Tex.
 
-- 
-PDF en PDF-A.
+- Convertir un PDF en PDF-A.
 
-- 
-PDF en PDF/A_1b.
-- PDF en PDF/A_3b.
+- Convertir un PDF en PDF/A_1b.
+- Convertir un PDF en PDF/A_3b.
 
-- 
-PDF en PDF/A_3a.
+- Convertir un PDF en PDF/A_3a.
 
-- 
-PDF en PDF/A_2a.
+- Convertir un PDF en PDF/A_2a.
 
-- 
-PDF en PDF/A_3U.
+- Convertir un PDF en PDF/A_3U.
 
-- 
-Créez un PDF/A-3 et joignez un fichier XML.
+- Créer un PDF/A-3 et joindre un fichier XML.
 
 ## Signets
 
+- Ajouter des signets.
 
-- 
-Ajoutez des signets.
+- Ajouter des signets enfants.
 
-- 
-Ajoutez des signets enfants.
+- Supprimer les signets.
 
-- 
-Supprimez les favoris.
+- Obtenir des signets.
+- Mettre à jour les signets.
 
-- 
-Obtenez des signets.
-- Mettre à jour les favoris
+- Signets étendus.
 
-- 
-Signets étendus
+- Exporter et importer des signets.
 
-- 
-Exportez et importez des signets.
+## Annotations
 
+- Ajouter des annotations.
+- Obtenir des annotations.
 
-## 
-Annotations
+- Supprimer les annotations.
 
+- Modifier les annotations.
 
-- 
-Ajoutez des annotations.
-- Obtenez des annotations.
+- Importer et exporter des annotations.
 
-- 
-Supprimez les annotations.
+## Formulaires
 
-- 
-Modifier les annotations.
+- Ajouter des champs.
 
-- 
-Importez et exportez des annotations.
+- Remplir les champs.
 
+- Obtenir les valeurs des boutons d’option.
 
-## 
-Formulaires
+- Obtenir la valeur actuelle du bouton d'option.
 
-- Ajoutez des champs.
-
-- 
-Remplissez les champs.
-
-- 
-Obtenez les valeurs des boutons d’option.
-
-- 
-Obtenir la valeur actuelle du bouton d'option.
-
-- 
-Récupère la façade du champ de formulaire (les attributs visuels du champ).
+- Obtenir la façade du champ de formulaire (les attributs visuels du champ).
 - Supprimer le champ.
 
-- 
-Déplacer le champ vers un nouvel emplacement.
+- Déplacer le champ vers un nouvel emplacement.
 
-- 
-Aplatir les champs (un champ particulier ou tous).
+- Aplatir les champs (un champ particulier ou tous).
 
-- 
-Décorer les champs (un champ particulier ou tous les champs d'un type particulier).
+- Décorer les champs (un champ particulier ou tous les champs d'un type particulier).
 
-- 
-Copiez les champs intérieur et extérieur.
+- Copier des champs au sein d’un document ou entre plusieurs documents.
 - Ajouter et supprimer un élément de liste.
 
-- 
-Définir l'URL de soumission.
+- Définir l'URL de soumission.
 
-- 
-Définir le script du bouton.
+- Définir le script du bouton.
 
-- 
-Importez et exportez du XML.
+- Importer et exporter du XML.
 
-- 
-Importer et exporter FDF.
-- Importez et exportez XFDF.
+- Importer et exporter FDF.
+- Importer et exporter XFDF.
 
+## Tampons et filigranes
 
-## 
-Timbre et filigrane
+- Ajouter un tampon de texte (sur toutes les pages ou sur des pages particulières).
 
+- Ajouter un tampon d'image (sur toutes les pages ou sur des pages particulières).
 
-- 
-Ajoutez un tampon de texte (sur toutes les pages ou sur des pages particulières).
+- Ajouter un tampon de page PDF (sur toutes les pages ou sur des pages particulières).
+- Ajouter un numéro de page.
 
-- 
-Ajoutez un tampon d'image (sur toutes les pages ou sur des pages particulières).
+- Ajouter du texte à l'en-tête et au pied de page.
 
-- 
-Ajoutez un tampon de page PDF (sur toutes les pages ou sur des pages particulières).
-- Ajoutez un numéro de page.
+- Ajouter une image à l'en-tête et au pied de page.
 
-- 
-Ajoutez du texte à l'en-tête et au pied de page.
+## Liens et actions
 
-- 
-Ajoutez une image à l'en-tête et au pied de page.
+- Créer un lien vers une application.
+- Créer un lien local.
 
+- Créer un lien JavaScript.
 
-## 
-Liens et actions
+- Créer une action supplémentaire pour le document.
 
+- Supprimer l'action d'ouverture du document.
 
-- 
-Créez un lien de candidature.
-- Créez un lien local.
-
-- 
-Créez un lien JavaScript.
-
-- 
-Créer un document, action supplémentaire.
-
-- 
-Supprimer l'action d'ouverture du document.
-
-- 
-Créer un lien vers un document PDF.
+- Créer un lien vers un document PDF.
 
 ## Sécurité et signatures
 
+- Chiffrer et déchiffrer le PDF.
 
-- 
-Cryptez et déchiffrez le PDF.
+- Définir les privilèges des documents.
 
-- 
-Définir les privilèges des documents.
+- Modifier les mots de passe.
 
-- 
-Modifier les mots de passe.
+- Ajouter ou supprimer une signature numérique.
+- Vérifier que le PDF est signé.
 
-- 
-Ajoutez ou supprimez une signature numérique.
-- Vérifiez que le PDF est signé.
+- Vérifier que la signature est valide.
 
-- 
-Vérifiez que la signature est valide.
+## Impression
 
+- Imprimer le PDF sur l'imprimante par défaut.
 
-## 
-Impression
+- Imprimer le PDF sur une imprimante spécifiée.
+- Imprimer le PDF sur une imprimante physique ou virtuelle.
 
+- Imprimer le PDF sur une imprimante XPS.
 
-- 
-Imprimez le PDF sur l'imprimante par défaut.
+- Imprimer le PDF dans un fichier XPS.
 
-- 
-Imprimez le PDF sur une imprimante spécifiée.
-- Imprimez le PDF sur une imprimante physique ou virtuelle.
+- Masquer la boîte de dialogue d'impression lors de l'impression du PDF.
 
-- 
-Imprimez le PDF sur une imprimante XPS.
+## Divers
 
-- 
-Imprimez le PDF dans un fichier XPS.
+- Obtenir des informations sur la version de build.
 
-- 
-Masquer la boîte de dialogue d'impression lors de l'impression du PDF.
+- Modifier l’espace colorimétrique du document PDF.
 
-
-## 
-Divers
-
-- Obtenez des informations sur la version de build.
-
-- 
-Modification de l'espace colorimétrique du document PDF
-
-- 
-Ajouter un dessin avec une couleur transparente
+- Ajouter un dessin avec une couleur transparente.

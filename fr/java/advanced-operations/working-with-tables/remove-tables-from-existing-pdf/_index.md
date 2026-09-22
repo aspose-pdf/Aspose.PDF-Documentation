@@ -2,7 +2,7 @@
 title: Supprimer des tableaux des documents PDF existants
 linktitle: Supprimer des tableaux
 description: Découvrez comment supprimer un ou plusieurs tableaux de documents PDF existants en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 type: docs
 weight: 50
 url: /fr/java/removing-tables/
@@ -11,13 +11,13 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Supprimer un ou plusieurs tableaux des fichiers PDF avec Java
-Abstract: Cet article explique comment supprimer des tableaux de documents PDF existants à l'aide d'Aspose.PDF pour Java. Il présente TableAbsorber pour localiser les tables et montre comment supprimer une seule table ou supprimer toutes les tables détectées d'une page.
+Abstract: Cet article explique comment supprimer des tableaux de documents PDF existants à l'aide d'Aspose.PDF for Java. Il présente TableAbsorber pour localiser les tableaux et montre comment supprimer un seul tableau ou supprimer tous les tableaux détectés d'une page.
 ---
 Utilisez `TableAbsorber` lorsque vous devez supprimer un ou plusieurs tableaux détectés d'un PDF existant.
 
-## Supprimer une table détectée
+## Supprimer un tableau détecté
 
-Utilisez cet exemple lorsque seule la première table correspondante sur une page doit être supprimée.
+Utilisez cet exemple lorsque seule le premier tableau correspondant sur une page doit être supprimée.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Visitez la page cible avec [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
@@ -34,12 +34,12 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 }
 ```
 
-## Supprimer toutes les tables détectées d'une page
+## Supprimer tous les tableaux détectés d'une page
 
-Utilisez cet exemple lorsque chaque table correspondante sur la page doit être supprimée.
+Utilisez cet exemple lorsque chaque tableau correspondant sur la page doit être supprimée.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Visitez la page cible avec [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) et copiez les tables détectées dans une liste.
+1. Visitez la page cible avec [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) et copiez les tableaux détectés dans une liste.
 1. Supprimez chaque tableau détecté et enregistrez le PDF mis à jour.
 
 ```java

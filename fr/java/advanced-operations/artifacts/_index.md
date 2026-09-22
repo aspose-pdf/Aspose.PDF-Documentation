@@ -5,13 +5,13 @@ type: docs
 weight: 170
 url: /fr/java/artifacts/
 description: Découvrez comment utiliser des artefacts PDF en Java pour ajouter des arrière-plans, des filigranes, des en-têtes, des pieds de page et une numérotation Bates, et compter les types d'artefacts de pagination avec Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ajoutez des arrière-plans, des filigranes, des en-têtes, des pieds de page et des artefacts de numérotation Bates en Java
-Abstract: Cet article explique comment utiliser les artefacts PDF dans Aspose.PDF pour Java. Il couvre les artefacts d'arrière-plan, les artefacts de filigrane, les artefacts d'en-tête et de pied de page, la numérotation Bates et le comptage des sous-types d'artefacts tels que les arrière-plans, les filigranes, les en-têtes et les pieds de page.
+AlternativeHeadline: Ajouter des arrière-plans, des filigranes, des en-têtes, des pieds de page et des artefacts de numérotation Bates en Java
+Abstract: Cet article explique comment utiliser les artefacts PDF dans Aspose.PDF for Java. Il couvre les artefacts d'arrière-plan, les artefacts de filigrane, les artefacts d'en-tête et de pied de page, la numérotation Bates et le comptage des sous-types d'artefacts tels que les arrière-plans, les filigranes, les en-têtes et les pieds de page.
 ---
 Les artefacts dans les documents PDF sont des éléments de page ne contenant pas de contenu, tels que les en-têtes, les pieds de page, les filigranes, les arrière-plans et les marqueurs de pagination. Ils sont couramment utilisés pour les flux de travail de personnalisation, de mise en page, d'identification et de gestion de documents.
 

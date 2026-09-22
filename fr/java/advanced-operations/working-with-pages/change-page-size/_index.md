@@ -5,15 +5,15 @@ type: docs
 weight: 40
 url: /fr/java/change-page-size/
 description: Découvrez comment lire et modifier les dimensions d'une page PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Lire et mettre à jour les dimensions et les zones de page avec Java
-Abstract: Cet article montre comment lire et modifier les dimensions d'une page PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'obtention de la taille de la page, la mesure de la taille de la page avec la rotation appliquée et la mise à jour de la première page vers une nouvelle taille tout en imprimant les dimensions de la boîte avant et après la modification.
+Abstract: Cet article montre comment lire et modifier les dimensions d'une page PDF à l'aide d'Aspose.PDF for Java. Il couvre l'obtention de la taille de la page, la mesure de la taille de la page avec la rotation appliquée et la mise à jour de la première page vers une nouvelle taille tout en imprimant les dimensions de la boîte avant et après la modification.
 ---
-Aspose.PDF pour Java peut à la fois signaler les dimensions des pages et les mettre à jour.
+Aspose.PDF for Java peut à la fois signaler les dimensions des pages et les mettre à jour.
 
 ## Changer la taille de la page
 
@@ -52,11 +52,11 @@ public static void getPageSize(Path inputFile) {
 }
 ```
 
-## Get the page size with rotation applied
+## Obtenir les dimensions de la page après rotation
 
-Use this example when you need to compare page dimensions before and after accounting for rotation.
+Utilisez cet exemple pour comparer les dimensions de la page avant et après la prise en compte de sa rotation.
 
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ouvrez le PDF source dans un objet [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Rotate the target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Lisez le rectangle de la page avec et sans gestion de rotation et affichez les deux valeurs.
 

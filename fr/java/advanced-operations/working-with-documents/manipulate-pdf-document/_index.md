@@ -5,15 +5,15 @@ type: docs
 weight: 20
 url: /fr/java/manipulate-pdf-document/
 description: Découvrez comment valider, structurer et modifier des documents PDF en Java, y compris la gestion de la table des matières et les vérifications PDF/A.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Validez, restructurez et aplatissez des documents PDF avec Java
-Abstract: Cet article explique comment manipuler des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la validation de la conformité PDF/A, l'ajout et la personnalisation d'une table des matières, le masquage ou la personnalisation des numéros de page de la table des matières, l'attribution d'un script d'expiration et l'aplatissement des champs de formulaire interactifs.
+Abstract: Cet article explique comment manipuler des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la validation de la conformité PDF/A, l'ajout et la personnalisation d'une table des matières, le masquage ou la personnalisation des numéros de page de la table des matières, l'attribution d'un script d'expiration et l'aplatissement des champs de formulaire interactifs.
 ---
-Aspose.PDF pour Java inclut des opérations de structure de document qui vont au-delà de la simple édition de pages.
+Aspose.PDF for Java inclut des opérations de structure de document qui vont au-delà de la simple édition de pages.
 
 ## Valider la conformité PDF/A-1a
 
@@ -89,7 +89,7 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 Cet exemple montre comment attribuer différents paramètres visuels à plusieurs niveaux de table des matières.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Ajoutez une table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et configurez le tableau de format [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Ajoutez une page de table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et configurez le tableau de format [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
 1. Créez des exemples d'entrées [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) avec différents niveaux.
 1. Enregistrez le document avec la table des matières formatée.
 
@@ -143,7 +143,7 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 Utilisez cet exemple lorsque la table des matières doit afficher les titres des entrées sans numéros de page.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Ajoutez une table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et désactivez les numéros de page dans [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Ajoutez une page de table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et désactivez les numéros de page dans [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
 1. Créez l'entrée [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) requise et ajoutez-la à la page de contenu.
 1. Enregistrez le document mis à jour.
 
@@ -189,7 +189,7 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 Cet exemple ajoute un préfixe personnalisé aux numéros de page affichés dans la table des matières générée.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Insérez une table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et définissez le préfixe du numéro de page souhaité dans [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Insérez une page de table des matières [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) et définissez le préfixe du numéro de page souhaité dans [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
 1. Créez des entrées [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) qui pointent vers chaque page.
 1. Enregistrez le document mis à jour.
 

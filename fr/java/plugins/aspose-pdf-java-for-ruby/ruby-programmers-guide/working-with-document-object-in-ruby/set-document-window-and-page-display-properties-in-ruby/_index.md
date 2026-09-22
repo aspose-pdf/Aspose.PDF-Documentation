@@ -1,21 +1,17 @@
 ---
-title: Définir les propriétés d'affichage de la fenêtre du document et de la page dans Ruby
-linktitle: Définir les propriétés d'affichage de la fenêtre du document et de la page dans Ruby
+title: Définir les propriétés d'affichage de la fenêtre du document et de la page en Ruby
+linktitle: Définir les propriétés d'affichage de la fenêtre du document et de la page en Ruby
 type: docs
 weight: 100
 url: /java/set-document-window-and-page-display-properties-in-ruby/
 description: Personnalisez les paramètres d'affichage des documents et des pages dans les PDF à l'aide de Ruby et Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Définir les propriétés d'affichage de la fenêtre du document et de la page
+## Aspose.PDF - Définir les propriétés d'affichage de la fenêtre du document et de la page
 
+Pour définir les propriétés d'affichage de la fenêtre du document et de la page d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **SetDocumentWindow**.
 
-
-Pour définir les propriétés d'affichage de la fenêtre du document et de la page d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **SetDocumentWindow**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -81,13 +77,8 @@ doc.setPageMode()
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Définir les propriétés d'affichage de la fenêtre du document et de la page (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Définir les propriétés d'affichage de la fenêtre du document et de la page (Aspose.PDF)**В à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

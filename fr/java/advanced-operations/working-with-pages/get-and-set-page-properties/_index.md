@@ -1,19 +1,19 @@
 ---
-title: Get and Set PDF Page Properties in Java
+title: Obtenir et définir les propriétés des pages PDF en Java
 linktitle: Getting and Setting Page Properties
 type: docs
 weight: 90
 url: /fr/java/get-and-set-page-properties/
-description: Learn how to inspect PDF page properties such as count, boxes, rotation, and color information in Java.
-lastmod: "2026-09-17"
+description: Découvrez comment inspecter les propriétés des pages PDF en Java, notamment leur nombre, leurs zones, leur rotation et leur type de couleur.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Inspect page count, boxes, and color type in PDF files with Java
-Abstract: This article explains how to inspect page properties using Aspose.PDF for Java. It covers reading the page count, generating paragraphs and checking the resulting count before saving, printing all major page box values, and identifying the color type of each page.
+AlternativeHeadline: Inspecter le nombre de pages, les zones de page et le type de couleur des fichiers PDF avec Java
+Abstract: Cet article explique comment inspecter les propriétés des pages avec Aspose.PDF for Java. Il couvre la lecture du nombre de pages, la génération de paragraphes et le calcul du nombre de pages avant l’enregistrement, l’affichage des dimensions des principales zones de page et l’identification du type de couleur de chaque page.
 ---
-Aspose.PDF pour Java peut inspecter le nombre de pages, les boîtes de page, la rotation et le type de couleur de la page.
+Aspose.PDF for Java peut inspecter le nombre de pages, les zones de page, la rotation et le type de couleur de la page.
 
 ## Obtenir le nombre de pages
 
@@ -31,7 +31,7 @@ public static void getPageCount(Path inputFile) {
 }
 ```
 
-## Obtenez le nombre de pages avant d'enregistrer
+## Obtenir le nombre de pages avant d'enregistrer
 
 Utilisez cet exemple lorsque vous avez besoin de savoir combien de pages le contenu généré produira avant d'écrire le fichier.
 
@@ -54,7 +54,7 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 
 ## Obtenir les propriétés de la zone de page
 
-Utilisez cet exemple lorsque vous devez inspecter toutes les principales dimensions de boîte et valeurs de rotation de page.
+Utilisez cet exemple lorsque vous devez inspecter toutes les principales dimensions des zones de page et valeurs de rotation de page.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et accédez à la page cible.
 1. Collectez les valeurs de la zone de page dans une carte.
@@ -88,7 +88,7 @@ public static void getPageProperties(Path inputFile) {
 }
 ```
 
-## Obtenez le type de couleur de chaque page
+## Obtenir le type de couleur de chaque page
 
 Utilisez cet exemple lorsque vous devez déterminer si les pages sont en noir et blanc, en niveaux de gris ou RVB.
 

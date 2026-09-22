@@ -5,15 +5,15 @@ type: docs
 weight: 20
 url: /fr/java/actions/
 description: Découvrez comment ajouter, mettre à jour et supprimer des actions de document, de page et de formulaire dans des fichiers PDF à l'aide de Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: Ajouter des actions de document, de page et de formulaire aux fichiers PDF en Java
-Abstract: Cet article explique comment utiliser des actions dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre les actions nommées pour l'impression et la navigation dans les pages, le masquage des champs de formulaire, la soumission de formulaires, l'attribution d'actions de lancement JavaScript et l'ajout ou la suppression d'actions d'ouverture et de fermeture de page.
+Abstract: Cet article explique comment utiliser des actions dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre les actions nommées pour l'impression et la navigation dans les pages, le masquage des champs de formulaire, la soumission de formulaires, l'attribution d'actions de lancement JavaScript et l'ajout ou la suppression d'actions d'ouverture et de fermeture de page.
 ---
-Aspose.PDF pour Java vous permet d'attribuer des actions aux boutons, documents et pages pour rendre les fichiers PDF interactifs.
+Aspose.PDF for Java vous permet d'attribuer des actions aux boutons, documents et pages pour rendre les fichiers PDF interactifs.
 
 ## Ajouter une action d'impression nommée
 

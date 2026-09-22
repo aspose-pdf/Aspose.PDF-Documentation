@@ -1,21 +1,17 @@
 ---
-title: Ajouter du texte à un fichier PDF existant dans Ruby
-linktitle: Ajouter du texte à un fichier PDF existant dans Ruby
+title: Ajouter du texte à un fichier PDF existant en Ruby
+linktitle: Ajouter du texte à un fichier PDF existant en Ruby
 type: docs
 weight: 20
 url: /java/add-text-to-an-existing-pdf-file-in-ruby/
-description: Découvrez comment ajouter du texte à un document PDF existant dans Ruby avec Aspose.PDF pour améliorer ou mettre à jour votre contenu PDF.
-lastmod: "2026-06-09"
+description: Découvrez comment ajouter du texte à un document PDF existant en Ruby avec Aspose.PDF pour améliorer ou mettre à jour votre contenu PDF.
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Ajouter du texte
+## Aspose.PDF - Ajouter du texte
 
+Pour ajouter une chaîne de texte dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **AddText**.
 
-
-Pour ajouter une chaîne de texte dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **AddText**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -65,13 +61,8 @@ doc.save(data_dir + "Text_Added.pdf")
 puts "Text added successfully"
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Ajouter du texte (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Ajouter du texte (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addtext.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addtext.rb)

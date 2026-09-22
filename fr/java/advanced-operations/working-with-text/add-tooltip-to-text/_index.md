@@ -5,15 +5,15 @@ type: docs
 weight: 20
 url: /fr/java/pdf-tooltip/
 description: Découvrez comment ajouter des info-bulles aux fragments de texte dans des documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter des info-bulles interactives aux fragments de texte PDF à l'aide de Java
-Abstract: Cet article montre comment ajouter une aide interactive au texte PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'attachement d'un texte d'info-bulle à des champs de boutons invisibles placés sur des fragments de texte correspondants et la création d'un champ de texte masqué qui apparaît lorsque le pointeur entre dans une zone de déclenchement.
+Abstract: Cet article montre comment ajouter une aide interactive au texte PDF à l'aide d'Aspose.PDF for Java. Il couvre l'attachement d'un texte d'info-bulle à des champs de boutons invisibles placés sur des fragments de texte correspondants et la création d'un champ de texte masqué qui apparaît lorsque le pointeur entre dans une zone de déclenchement.
 ---
-Aspose.PDF pour Java vous permet d'ajouter une aide interactive en plaçant des champs de formulaire sur des fragments de texte.
+Aspose.PDF for Java vous permet d'ajouter une aide interactive en plaçant des champs de formulaire sur des fragments de texte.
 
 ## Ajouter des info-bulles au texte correspondant
 

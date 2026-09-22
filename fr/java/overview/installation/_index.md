@@ -1,91 +1,62 @@
 ---
-title: Comment installer Aspose.PDF pour Java
-linktitle: Mise en place
+title: Installer la bibliothèque
+linktitle: Installation
 type: docs
 weight: 40
 url: /java/installation/
-description: Recherchez des instructions étape par étape pour installer Aspose.PDF pour Python et .NET afin de commencer à travailler avec des documents PDF.
-lastmod: "2026-06-09"
+description: Découvrez comment installer Aspose.PDF for Java dans un projet Maven et configurer ses dépendances.
+lastmod: "2026-09-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Installation d'Aspose.PDF pour Java
-Abstract: Aspose.PDF pour Python via .NET est une bibliothèque complète conçue pour intégrer des capacités de traitement PDF dans les applications Python, compatible avec les systèmes 32 bits et 64 bits. Cette bibliothèque prend en charge un large éventail de tâches de traitement de documents, notamment la manipulation de texte et de pages, le traitement de formulaires, la gestion des métadonnées et la gestion des annotations, des signets, des filigranes et des polices personnalisées. Il peut être utilisé sur divers systèmes d'exploitation sur lesquels Python 3.5 ou version ultérieure est installé. La bibliothèque peut être évaluée en téléchargeant une version d'essai, qui passe à un état sous licence avec les ajouts de code appropriés. La version d'essai conserve toutes les fonctionnalités mais inclut un filigrane d'évaluation et limite les interactions entre les éléments de collection à quatre. Les utilisateurs peuvent demander une licence temporaire de 30 jours pour contourner ces limitations. Aspose.PDF pour Python via .NET peut être installé via pip, garantissant un accès facile aux dernières versions.
+AlternativeHeadline: Installation d'Aspose.PDF for Java
+Abstract: Cet article présente Aspose.PDF for Java, les limites de la version d’évaluation et la configuration du dépôt Aspose et de la dépendance Maven. Il fournit également des indications sur les dépendances nécessaires avec JDK 11.
 ---
-## Aspose.PDF pour le composant Java
-
+## Bibliothèque Aspose.PDF for Java
 
 {{% alert color="primary" %}}
 
-
-**Aspose.PDF est un composant Java** conçu pour permettre aux développeurs de créer des documents PDF, qu'ils soient simples ou complexes, à la volée par programme. Aspose.PDF pour Java permet aux développeurs d'insérer des tableaux, des graphiques, des images, des hyperliens, des polices personnalisées - et bien plus encore - dans des documents PDF. De plus, il est également possible de compresser des documents PDF. Aspose.PDF pour Java fournit d'excellentes fonctionnalités de sécurité pour développer des documents PDF sécurisés. Et la caractéristique la plus distinctive d'Aspose.PDF pour Java est qu'il prend en charge la création de documents PDF via une API et à partir de modèles XML.
-
+**Aspose.PDF est un composant Java** conçu pour permettre aux développeurs de créer des documents PDF, qu'ils soient simples ou complexes, à la volée par programme. Aspose.PDF for Java permet aux développeurs d'insérer des tableaux, des graphiques, des images, des hyperliens, des polices personnalisées - et bien plus encore - dans des documents PDF. De plus, il est également possible de compresser des documents PDF. Aspose.PDF for Java fournit d'excellentes fonctionnalités de sécurité pour développer des documents PDF sécurisés. Et la caractéristique la plus distinctive d'Aspose.PDF for Java est qu'il prend en charge la création de documents PDF via une API et à partir de modèles XML.
 
 {{% /alert %}}
 
-## 
-Description du produit
+## Description du produit
 
+**Aspose.PDF for Java** est implémenté à l'aide de Java et fonctionne avec JDK 1.8 et supérieur. Aspose.PDF for Java peut être intégré à n'importe quelle application, par exemple une application Web JSP/JSF ou une application Windows.
 
-
-**Aspose.PDF pour Java** est implémenté à l'aide de Java et fonctionne avec JDK 1.8 et supérieur. Aspose.PDF pour Java peut être intégré à n'importe quelle application, par exemple une application Web JSP/JSF ou une application Windows.
-
-
-
-**Aspose.PDF pour Java** est rapide et léger. Il crée des documents PDF efficacement et aide votre application à mieux fonctionner. Aspose.PDF pour Java est le premier choix de nos clients lors de la création de documents PDF en raison de son prix, de ses superbes performances et de son excellent support.
+**Aspose.PDF for Java** est rapide et léger. Il crée des documents PDF efficacement et aide votre application à mieux fonctionner. Aspose.PDF for Java est le premier choix de nos clients lors de la création de documents PDF en raison de son prix, de ses superbes performances et de son excellent support.
 Grâce à cette bibliothèque, vous pouvez mettre en œuvre de riches fonctionnalités pour créer des fichiers PDF à partir de zéro ou traiter complètement des documents PDF existants sans installer Adobe Acrobat.
 
-
-## 
-Mise en place
-
-
-## 
-Évaluer Aspose.PDF pour Java
-
+## Évaluer Aspose.PDF for Java
 
 {{% alert color="primary" %}}
 
-
-Vous pouvez télécharger [Aspose.PDF for Java] (https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) pour évaluation. Le téléchargement d'évaluation est le même que le téléchargement acheté. La version d'évaluation devient simplement sous licence lorsque vous ajoutez quelques lignes de code pour [appliquer la licence] (/pdf/java/licensing/).
-
+Vous pouvez télécharger [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) pour évaluation. Le téléchargement d'évaluation est le même que le téléchargement acheté. La version d'évaluation devient simplement sous licence lorsque vous ajoutez quelques lignes de code pour [appliquer la licence](/pdf/java/licensing/).
 
 {{% /alert %}}
-
 
 La version d'évaluation d'Aspose.PDF fournit toutes les fonctionnalités du produit, mais présente deux limitations :
 
-- Il insère un filigrane d'évaluation.
+- Elle insère un filigrane d’évaluation.
 
-- 
-Pas plus de quatre éléments d’une collection peuvent être visualisés/modifiés.
+- Seuls quatre éléments par collection peuvent être consultés ou modifiés.
 
-- 
-**Un document montrant le filigrane d'évaluation**
-
+- **Un document montrant le filigrane d'évaluation**
 
 {{% alert color="primary" %}}
 
-
-Si vous souhaitez tester Aspose.PDF pour Java sans les limitations de la version d'évaluation, vous pouvez également demander une licence temporaire de 30 jours. Veuillez vous référer à [Comment obtenir une licence temporaire ?] (https://purchase.aspose.com/temporary-license)
-
+Si vous souhaitez tester Aspose.PDF for Java sans les limitations de la version d'évaluation, vous pouvez également demander une licence temporaire de 30 jours. Veuillez vous référer à [Comment obtenir une licence temporaire ?](https://purchase.aspose.com/temporary-license)
 
 {{% /alert %}}
 
-## 
-Installation d'Aspose.PDF pour Java à partir du référentiel Aspose
+## Installer Aspose.PDF for Java depuis le dépôt Aspose
 
-Aspose héberge toutes les API Java sur[Aspose Repository] (https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). Vous pouvez facilement utiliser l'API Aspose.PDF pour Java directement dans vos projets Maven avec des configurations simples.
+Aspose héberge toutes les API Java sur [Aspose Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). Vous pouvez facilement utiliser l'API Aspose.PDF for Java directement dans vos projets Maven avec des configurations simples.
 
+### Spécifier la configuration du dépôt Aspose
 
-### 
-Spécifier la configuration du référentiel Aspose
-
-
-
-Vous devez d’abord spécifier la configuration/l’emplacement du référentiel Aspose dans votre pom.xml Maven comme suit :
-
+Vous devez d’abord spécifier la configuration/l’emplacement du dépôt Aspose dans votre fichier Maven `pom.xml` comme suit :
 
 ```xml
  <repositories>
@@ -97,12 +68,9 @@ Vous devez d’abord spécifier la configuration/l’emplacement du référentie
 </repositories>
 ```
 
-### 
-Définir Aspose.PDF pour la dépendance de l'API Java
+### Définir la dépendance Aspose.PDF for Java
 
-
-
-Définissez ensuite la dépendance de l'API Aspose.PDF pour Java dans votre pom.xml comme suit :
+Définissez ensuite la dépendance de l'API Aspose.PDF for Java dans votre fichier `pom.xml` comme suit :
 
 ```xml
  <dependencies>
@@ -114,17 +82,11 @@ Définissez ensuite la dépendance de l'API Aspose.PDF pour Java dans votre pom.
 </dependencies>
 ```
 
-Après avoir effectué les étapes ci-dessus, la dépendance Aspose.PDF pour Java sera enfin définie dans votre projet Maven.
+Après avoir effectué les étapes ci-dessus, la dépendance Aspose.PDF for Java sera enfin définie dans votre projet Maven.
 
-
-### 
-Directives de compatibilité et d'utilisation du JDK 11
-
-
+### Directives de compatibilité et d'utilisation du JDK 11
 
 L'API est optimisée pour l'environnement Java 11 et tous les tests et fonctionnalités fonctionnent correctement. Cependant, pour certaines classes, vous devez ajouter la dépendance externe pour ajouter le chemin de classe de la classe : javax.xml.bind.annotation.adapters.HexBinaryAdapter, qui a été supprimé de JRE.
-
-
 
 Par exemple :
 

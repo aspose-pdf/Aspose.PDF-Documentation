@@ -5,13 +5,13 @@ type: docs
 weight: 30
 url: /fr/java/working-with-text/
 description: Découvrez comment ajouter, rechercher, formater, remplacer, faire pivoter et inspecter du texte dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter, formater, rechercher, remplacer et faire pivoter du texte PDF en Java
-Abstract: Cette section explique comment travailler avec du texte dans des documents PDF à l'aide d'Aspose.PDF pour Java. Découvrez comment ajouter et formater du texte, créer des info-bulles et des mises en page de texte flottant, rechercher et extraire du texte, remplacer du texte existant et faire pivoter des éléments de texte.
+Abstract: Cette section explique comment travailler avec du texte dans des documents PDF à l'aide d'Aspose.PDF for Java. Découvrez comment ajouter et formater du texte, créer des info-bulles et des mises en page de texte flottant, rechercher et extraire du texte, remplacer du texte existant et faire pivoter des éléments de texte.
 ---
 Aspose.PDF for Java fournit des API de texte pour la génération, la recherche et l'extraction de documents, les superpositions de texte interactives, les conteneurs de mise en page, le style, le remplacement et la rotation.
 

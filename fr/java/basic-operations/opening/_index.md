@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/open-pdf-document/
 description: Découvrez comment ouvrir un fichier PDF en Java à l'aide d'Aspose.PDF à partir d'un chemin de fichier, d'un flux ou avec un mot de passe.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,27 +13,23 @@ TechArticle: true
 AlternativeHeadline: Ouverture de documents PDF à l'aide de la bibliothèque Aspose.PDF en Java
 Abstract: Cet article montre comment ouvrir des documents PDF existants en Java à l'aide d'Aspose.PDF. Il couvre l'ouverture d'un PDF par chemin de fichier, l'ouverture d'un PDF à partir d'un InputStream et l'ouverture d'un document protégé par mot de passe, chaque exemple lisant le nombre de pages du document chargé.
 ---
-Aspose.PDF pour Java prend en charge plusieurs façons de charger un document PDF existant en fonction de l'origine des données source.
+Aspose.PDF for Java prend en charge plusieurs façons de charger un document PDF existant en fonction de l'origine des données source.
 
 
-## 
-Ouvrir un document PDF en Java
+## Ouvrir un document PDF en Java
 
 
 
 Vous pouvez ouvrir un document PDF :
 
 
-1. 
-Ouvrez un [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directement à partir d'un chemin de fichier.
+1. Ouvrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directement à partir d'un chemin de fichier.
 
-1. 
-Ouvrez un [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) à partir d'un `InputStream`.
-1. Ouvrez un [Document] crypté (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) en fournissant le mot de passe.
+1. Ouvrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) à partir d'un `InputStream`.
+1. Ouvrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) chiffré en fournissant le mot de passe.
 
 
-## 
-Ouvrir un document à partir d'un fichier
+## Ouvrir un document à partir d'un fichier
 
 
 ```java
@@ -44,8 +40,7 @@ public static void openDocumentFromFile(Path inputFile) {
 }
 ```
 
-## 
-Ouvrir le document à partir du flux
+## Ouvrir un document à partir d’un flux
 
 
 ```java
@@ -58,8 +53,7 @@ public static void openDocumentFromStream(Path inputFile) throws Exception {
 }
 ```
 
-## 
-Ouvrir un document crypté
+## Ouvrir un document chiffré
 
 ```java
 public static void openDocumentEncrypted(Path inputFile) {

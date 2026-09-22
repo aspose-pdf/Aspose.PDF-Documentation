@@ -5,11 +5,10 @@ type: docs
 weight: 40
 url: /java/get-pdf-file-information-in-python/
 description: Découvrez comment récupérer des informations détaillées sur un fichier PDF telles que les métadonnées et les propriétés en Python à l'aide d'Aspose.PDF pour la gestion des documents.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
 
-Pour obtenir les informations sur le fichier d'un document PDF à l'aide de **Aspose.PDF Java pour Python**, invoquez simplement la classe **GetPdfFileInfo**.
-
+Pour obtenir les informations sur le fichier d'un document PDF à l'aide de **Aspose.PDF Java pour Python**, utilisez la classe **GetPdfFileInfo**.
 
 ```python
 
@@ -29,11 +28,8 @@ print "Subject:-" + str(doc_info.getSubject())
 print "Title:-" + str(doc_info.getTitle())
 ```
 
+**Télécharger l’exemple de code**
 
-**Télécharger le code d'exécution**
+Téléchargez **Obtenez des informations sur le fichier PDF (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-Téléchargez** Obtenez des informations sur le fichier PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)

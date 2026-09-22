@@ -5,13 +5,13 @@ type: docs
 weight: 20
 url: /fr/java/portfolio/
 description: Découvrez comment créer et gérer des portefeuilles PDF en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Créez et modifiez des portefeuilles PDF avec des fichiers intégrés en Java
-Abstract: Cet article explique comment créer et gérer des portefeuilles PDF à l'aide d'Aspose.PDF pour Java. Découvrez comment activer une collection sur un document, ajouter plusieurs types de fichiers au portefeuille et supprimer tous les éléments de collection d'un portefeuille PDF existant.
+AlternativeHeadline: Créer et modifiez des portefeuilles PDF avec des fichiers intégrés en Java
+Abstract: Cet article explique comment créer et gérer des portefeuilles PDF à l'aide d'Aspose.PDF for Java. Découvrez comment activer une collection sur un document, ajouter plusieurs types de fichiers au portefeuille et supprimer tous les éléments de collection d'un portefeuille PDF existant.
 ---
 Un portfolio PDF peut regrouper plusieurs fichiers dans un seul conteneur PDF tout en préservant chaque fichier dans son format d'origine.
 

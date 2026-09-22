@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /fr/java/replace-text-in-pdf/
 description: Découvrez comment remplacer, réorganiser et supprimer du texte dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,9 +13,9 @@ aliases:
     - /python-net/replace-text-in-a-pdf-document/
 TechArticle: true
 AlternativeHeadline: Remplacer, supprimer et ajuster le contenu du texte dans un PDF à l'aide de Java
-Abstract: Cet article explique les flux de travail de remplacement de texte dans les documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le remplacement du texte sur toutes les pages, la limitation du remplacement à une région sélectionnée, l'ajustement de la mise en page de remplacement, l'utilisation de la correspondance basée sur les expressions régulières, le remplacement des polices, la suppression de tout le texte et la suppression du texte masqué.
+Abstract: Cet article explique les flux de travail de remplacement de texte dans les documents PDF à l'aide d'Aspose.PDF for Java. Il couvre le remplacement du texte sur toutes les pages, la limitation du remplacement à une région sélectionnée, l'ajustement de la mise en page de remplacement, l'utilisation de la correspondance basée sur les expressions régulières, le remplacement des polices, la suppression de tout le texte et la suppression du texte masqué.
 ---
-Aspose.PDF pour Java fournit à la fois des fonctionnalités de remplacement simples et de remplacement tenant compte de la mise en page via `TextFragmentAbsorber` et des options de remplacement.
+Aspose.PDF for Java fournit à la fois des fonctionnalités de remplacement simples et de remplacement tenant compte de la mise en page via `TextFragmentAbsorber` et des options de remplacement.
 
 ## Remplacer le texte sur toutes les pages
 
@@ -71,7 +71,7 @@ public static void replaceTextInParticularPageRegion(Path inputFile, Path output
 }
 ```
 
-## Remplacez le texte et ajustez l'espacement à l'intérieur d'un rectangle décalé
+## Remplacer le texte et ajuster l'espacement à l'intérieur d'un rectangle décalé
 
 Utilisez cet exemple lorsque le texte de remplacement doit rester sur la page avec un espacement ajusté mais que la taille de la police doit rester inchangée.
 
@@ -128,7 +128,7 @@ public static void replaceTextAndResizeAndShiftParagraph(Path inputFile, Path ou
 }
 ```
 
-## Remplacez le texte et redimensionnez la police pour remplir le rectangle
+## Remplacer le texte et redimensionner la police pour remplir le rectangle
 
 Utilisez cet exemple lorsque le texte de remplacement doit s'agrandir pour remplir une zone cible.
 
@@ -154,7 +154,7 @@ public static void replaceTextAndResizeAndExpandFont(Path inputFile, Path output
 }
 ```
 
-## Remplacez le texte et réduisez-le pour l'adapter
+## Remplacer le texte et réduire-le pour l'adapter
 
 Utilisez cet exemple lorsque le texte de remplacement doit rester à l’intérieur du rectangle de texte d’origine.
 
@@ -182,7 +182,7 @@ public static void replaceTextAndFitTextIntoRectangle(Path inputFile, Path outpu
 
 ## Remplacer le texte par une expression régulière
 
-Utilisez cet exemple lorsque le texte correspondant doit être trouvé par un modèle regex et relooké lors du remplacement.
+Utilisez cet exemple lorsque le texte correspondant doit être trouvé par une expression régulière et remis en forme lors du remplacement.
 
 1. Ouvrez le document PDF source.
 1. Recherchez la page avec un `TextFragmentAbsorber` compatible avec les expressions régulières.
@@ -208,7 +208,7 @@ public static void replaceTextBasedOnRegex(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remplacez le texte de l'espace réservé et laissez la page se réorganiser
+## Remplacer le texte de l'espace réservé et laisser la page se réorganiser
 
 Utilisez cet exemple lorsqu'un espace réservé doit être remplacé par une valeur réelle plus longue tout en préservant la mise en page.
 
@@ -259,7 +259,7 @@ public static void replaceFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remplacez les polices et supprimez les ressources de polices inutilisées
+## Remplacer les polices et supprimer les ressources de polices inutilisées
 
 Utilisez cet exemple lorsque le document doit être nettoyé après le remplacement de la police.
 
@@ -308,7 +308,6 @@ Utilisez cet exemple lorsque tout le texte doit être supprimé uniquement d’u
 1. Ouvrez le document PDF source.
 1. Créez un `TextFragmentAbsorber` et supprimez le texte de la page cible.
 1. Enregistrez le document mis à jour.
-
 
 ```java
 public static void removeAllTextUsingAbsorber2(Path inputFile, Path outputFile) {

@@ -5,15 +5,15 @@ type: docs
 weight: 50
 url: /fr/java/rotate-text-inside-pdf/
 description: Découvrez comment faire pivoter des fragments de texte et des paragraphes dans des documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Faire pivoter des fragments de texte et des paragraphes dans des documents PDF avec Java
-Abstract: Cet article explique comment faire pivoter le texte dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il montre comment faire pivoter des fragments de texte individuels, créer des paragraphes contenant des lignes pivotées et faire pivoter des paragraphes de texte complets pour différents scénarios de mise en page.
+Abstract: Cet article explique comment faire pivoter le texte dans des documents PDF à l'aide d'Aspose.PDF for Java. Il montre comment faire pivoter des fragments de texte individuels, créer des paragraphes contenant des lignes pivotées et faire pivoter des paragraphes de texte complets pour différents scénarios de mise en page.
 ---
-Aspose.PDF pour Java vous permet de faire pivoter des fragments de texte individuels ainsi que des paragraphes de texte entiers.
+Aspose.PDF for Java vous permet de faire pivoter des fragments de texte individuels ainsi que des paragraphes de texte entiers.
 
 ## Faire pivoter des fragments de texte individuels
 
@@ -138,7 +138,7 @@ Utilisez cet exemple lorsque le bloc de paragraphe entier doit être pivoté tan
 
 1. Créez un nouveau document PDF et ajoutez une page.
 1. Créez plusieurs objets `TextParagraph` avec rotation au niveau du paragraphe.
-1. Créez les lignes avec une méthode d'assistance partagée, ajoutez-les et enregistrez le document.
+1. Créez les lignes avec une méthode auxiliaire partagée, ajoutez-les et enregistrez le document.
 
 ```java
 public static void rotateTextInsidePdf4(Path outputFile) {

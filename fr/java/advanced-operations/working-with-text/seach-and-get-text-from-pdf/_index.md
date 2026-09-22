@@ -5,15 +5,15 @@ type: docs
 weight: 60
 url: /fr/java/search-and-get-text-from-pdf/
 description: Découvrez comment rechercher, inspecter et extraire du texte à partir de documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Rechercher du texte PDF et inspecter les fragments extraits en Java
-Abstract: Cet article explique comment rechercher et extraire du texte à partir de documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre TextAbsorber et TextFragmentAbsorber, y compris l'extraction basée sur la région, les recherches spécifiques à une page, la correspondance d'expressions régulières et de phrases, l'insertion de liens hypertexte, l'inspection de texte stylisé et la mise en évidence de fragments.
+Abstract: Cet article explique comment rechercher et extraire du texte à partir de documents PDF à l'aide d'Aspose.PDF for Java. Il couvre TextAbsorber et TextFragmentAbsorber, y compris l'extraction basée sur la région, les recherches spécifiques à une page, la correspondance d'expressions régulières et de phrases, l'insertion de liens hypertexte, l'inspection de texte mis en forme et la mise en évidence de fragments.
 ---
-Aspose.PDF pour Java prend en charge l'extraction de texte brut et la recherche au niveau des fragments avec des coordonnées, des styles et une correspondance d'expressions régulières.
+Aspose.PDF for Java prend en charge l'extraction de texte brut et la recherche au niveau des fragments avec des coordonnées, des styles et une correspondance d'expressions régulières.
 
 ## Extraire le texte de toutes les pages avec TextAbsorber
 
@@ -169,7 +169,7 @@ public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
 
 ## Rechercher du texte par expression régulière
 
-Utilisez cet exemple lorsque les correspondances doivent être trouvées par un modèle regex au lieu d'une phrase fixe.
+Utilisez cet exemple lorsque les correspondances doivent être trouvées par une expression régulière au lieu d'une phrase fixe.
 
 1. Ouvrez le document PDF source.
 1. Créez un `TextFragmentAbsorber` compatible avec les expressions régulières.
@@ -219,7 +219,7 @@ public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
 }
 ```
 
-## Recherchez du texte et transformez-le en hyperliens
+## Rechercher du texte et transformer-le en hyperliens
 
 Utilisez cet exemple lorsque les mots correspondants doivent être mis en surbrillance et convertis en liens cliquables.
 

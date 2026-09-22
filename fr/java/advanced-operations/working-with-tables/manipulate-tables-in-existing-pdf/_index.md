@@ -5,22 +5,22 @@ type: docs
 weight: 40
 url: /fr/java/manipulating-tables/
 description: Découvrez comment inspecter et modifier des tableaux dans des documents PDF existants à l'aide de Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Inspecter et modifier les tableaux PDF existants avec Java
-Abstract: Cet article explique comment manipuler des tableaux déjà présents dans les documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la localisation des tables avec TableAbsorber, la mise à jour du texte à l'intérieur d'une cellule et le remplacement d'une table détectée par un nouvel objet Table.
+Abstract: Cet article explique comment manipuler des tableaux déjà présents dans les documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la localisation des tableaux avec TableAbsorber, la mise à jour du texte à l'intérieur d'une cellule et le remplacement d’un tableau détecté par un nouvel objet Table.
 ---
-Utilisez `TableAbsorber` lorsque vous devez localiser des tables existantes et mettre à jour leur contenu.
+Utilisez `TableAbsorber` lorsque vous devez localiser des tableaux existants et mettre à jour leur contenu.
 
 ## Remplacer le texte à l'intérieur d'une cellule de tableau
 
 Utilisez cet exemple lorsque le texte d'une cellule détectée doit être mis à jour sans reconstruire l'intégralité du tableau.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et visitez la page avec [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
-1. Vérifiez que la table cible et les fragments de texte de cellule existent.
+1. Vérifiez que le tableau cible et les fragments de texte de cellule existent.
 1. Remplacez le texte de la cellule et enregistrez le document mis à jour.
 
 ```java
@@ -43,9 +43,9 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remplacer une table détectée par une nouvelle table
+## Remplacer un tableau détecté par un nouveau tableau
 
-Utilisez cet exemple lorsque la table d'origine doit être entièrement remplacée par une table nouvellement construite.
+Utilisez cet exemple lorsque le tableau d’origine doit être entièrement remplacée par un nouveau tableau.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et détectez les tableaux sur la page.
 1. Créez une nouvelle [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) avec la structure souhaitée.

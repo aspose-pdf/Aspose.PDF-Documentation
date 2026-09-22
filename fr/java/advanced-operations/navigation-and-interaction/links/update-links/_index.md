@@ -5,13 +5,13 @@ type: docs
 weight: 20
 url: /fr/java/update-links/
 description: Découvrez comment mettre à jour l’apparence et les destinations des liens PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Mettre à jour l'apparence des annotations de lien et les destinations Web dans les fichiers PDF avec Java
-Abstract: Cet article montre comment mettre à jour les annotations de liens existantes à l'aide d'Aspose.PDF pour Java. Les exemples montrent la modification de la couleur du texte couvert par un lien, la mise à jour de la couleur de l'annotation du lien et le remplacement de l'URI cible pour les liens Web.
+Abstract: Cet article montre comment mettre à jour les annotations de liens existantes à l'aide d'Aspose.PDF for Java. Les exemples montrent la modification de la couleur du texte couvert par un lien, la mise à jour de la couleur de l'annotation du lien et le remplacement de l'URI cible pour les liens Web.
 ---
 Les liens existants peuvent être modifiés en recherchant l'annotation du lien sur une page et en mettant à jour son apparence ou son action.
 

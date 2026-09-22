@@ -5,17 +5,17 @@ type: docs
 weight: 50
 url: /fr/java/add-headers-and-footers-of-pdf-file/
 description: Découvrez comment ajouter des en-têtes et des pieds de page aux fichiers PDF en Java à l'aide de texte, d'images et de contenu structuré.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter des en-têtes et des pieds de page aux fichiers PDF avec Java
-Abstract: Cet article montre comment ajouter des en-têtes et des pieds de page aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre le texte, la numérotation des pages, le HTML, les images, les tableaux et le contenu des en-têtes et pieds de page basés sur LaTeX.
+Abstract: Cet article montre comment ajouter des en-têtes et des pieds de page aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre le texte, la numérotation des pages, le HTML, les images, les tableaux et le contenu des en-têtes et pieds de page basés sur LaTeX.
 ---
-Aspose.PDF pour Java vous permet d'attribuer des objets `HeaderFooter` à chaque page et de les remplir avec différents types de contenu.
+Aspose.PDF for Java vous permet d'attribuer des objets `HeaderFooter` à chaque page et de les remplir avec différents types de contenu.
 
-## Ajouter des en-têtes et des pieds de page de texte
+## Ajouter des en-têtes et des pieds de page textuels
 
 Utilisez cet exemple lorsque vous avez besoin d'un contenu textuel simple en haut et en bas de chaque page.
 
@@ -53,7 +53,7 @@ Utilisez cet exemple lorsque l'en-tête ou le pied de page doit afficher le num�
 
 1. Créez des objets [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) avec des espaces réservés pour la numérotation des pages.
 1. Configurez les marges pour les deux objets.
-1. Apply them to each page and save the updated PDF.
+1. Appliquez-les à chaque page et enregistrez le PDF mis à jour.
 
 ```java
 public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
@@ -79,12 +79,12 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 }
 ```
 
-## Add HTML headers and footers
+## Ajouter des en-têtes et des pieds de page HTML
 
-Use this example when header and footer content should include inline HTML formatting.
+Utilisez cet exemple lorsque les en-têtes et les pieds de page doivent inclure une mise en forme HTML en ligne.
 
-1. Create [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objects and add [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) content.
-1. Configure margins for placement.
+1. Créez des objets [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) et ajoutez du contenu [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/).
+1. Configurez les marges pour positionner le contenu.
 1. Attribuez l'en-tête et le pied de page à chaque page et enregistrez le document.
 
 ```java
@@ -150,7 +150,7 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 Utilisez cet exemple lorsque le contenu de l’en-tête et du pied de page doit utiliser la disposition du tableau et le style du texte.
 
 1. Créez les styles de texte et les objets de tableau requis.
-1. Ajoutez les tables aux conteneurs [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
+1. Ajoutez les tableaux aux conteneurs [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/).
 1. Appliquez l'en-tête et le pied de page à chaque page et enregistrez le document.
 
 ```java

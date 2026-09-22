@@ -5,15 +5,15 @@ type: docs
 weight: 50
 url: /fr/java/extract-attachment/
 description: Découvrez comment extraire des fichiers incorporés et des annotations de pièces jointes à partir de documents PDF en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Extraire un ou tous les fichiers intégrés d'un PDF avec Java
-Abstract: Cet article explique comment extraire les pièces jointes de documents PDF avec Aspose.PDF pour Java. Il couvre l'extraction d'une pièce jointe nommée unique, l'enregistrement de chaque fichier intégré dans un dossier de sortie, la lecture des métadonnées du fichier et l'exportation du contenu à partir d'une annotation FileAttachment sur une page.
+Abstract: Cet article explique comment extraire les pièces jointes de documents PDF avec Aspose.PDF for Java. Il couvre l'extraction d'une pièce jointe nommée unique, l'enregistrement de chaque fichier intégré dans un dossier de sortie, la lecture des métadonnées du fichier et l'exportation du contenu à partir d'une annotation FileAttachment sur une page.
 ---
-Aspose.PDF pour Java prend en charge plusieurs flux d'extraction en fonction de la manière dont les pièces jointes sont stockées dans le document.
+Aspose.PDF for Java prend en charge plusieurs flux d'extraction en fonction de la manière dont les pièces jointes sont stockées dans le document.
 
 ## Extraire une seule pièce jointe par son nom
 
@@ -48,9 +48,9 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 }
 ```
 
-## Imprimer les paramètres du fichier intégré
+## Afficher les paramètres du fichier intégré
 
-Cette méthode d'assistance imprime les métadonnées stockées dans un objet [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/).
+Cette méthode auxiliaire affiche les métadonnées stockées dans un objet [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/).
 
 1. Vérifiez si l'objet de paramètres de fichier existe.
 1. Lisez la somme de contrôle disponible, la date de création, la date de modification et les valeurs de taille.
@@ -116,7 +116,7 @@ Utilisez cet exemple lorsque le fichier est joint via une annotation de page plu
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Localisez le premier [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) sur la page.
-1. Lisez sa spécification de fichier, exportez le contenu et imprimez le chemin de destination.
+1. Lisez sa spécification de fichier, exportez le contenu et affichez le chemin de destination.
 
 ```java
 public static void extractFileAttachmentAnnotation(Path inputFile, Path outputDir) throws Exception {

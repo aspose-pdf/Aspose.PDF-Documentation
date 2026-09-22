@@ -5,13 +5,13 @@ type: docs
 weight: 30
 url: /fr/java/integrate-table/
 description: Découvrez comment intégrer des tableaux PDF à des sources de données structurées telles que des fichiers CSV en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Créez des tableaux PDF à partir de données structurées avec Java
-Abstract: Cet article explique comment intégrer des tableaux PDF avec des données externes à l'aide d'Aspose.PDF pour Java. Il couvre la lecture des données CSV, la sélection de colonnes spécifiques, la création d'un objet Table stylisé à partir des lignes analysées et le rendu du résultat dans un document PDF.
+AlternativeHeadline: Créer des tableaux PDF à partir de données structurées avec Java
+Abstract: Cet article explique comment intégrer des tableaux PDF avec des données externes à l'aide d'Aspose.PDF for Java. Il couvre la lecture des données CSV, la sélection de colonnes spécifiques, la création d'un objet Table stylisé à partir des lignes analysées et le rendu du résultat dans un document PDF.
 ---
 L'exemple Java crée des tableaux PDF à partir de données CSV sans recourir à des bibliothèques de trames de données externes.
 
@@ -77,7 +77,7 @@ public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows
 
 ## Rechercher les index de colonnes CSV par nom
 
-Utilisez cette assistante lorsque des colonnes nommées spécifiques doivent être situées dans la ligne d'en-tête CSV.
+Utilisez cette méthode auxiliaire lorsque des colonnes nommées spécifiques doivent être situées dans la ligne d'en-tête CSV.
 
 1. Parcourez les noms de colonnes demandés.
 1. Recherchez dans la ligne d'en-tête les index correspondants.
@@ -101,7 +101,7 @@ private static int[] findColumns(String[] header, String... names) {
 
 ## Lire les lignes CSV d'un fichier
 
-Utilisez cet assistant lorsque la source CSV doit être chargée en mémoire avant la génération de la table.
+Utilisez cette méthode auxiliaire lorsque la source CSV doit être chargée en mémoire avant la génération du tableau.
 
 1. Lisez toutes les lignes du fichier d'entrée.
 1. Divisez chaque ligne avec l'assistant de l'analyseur CSV.

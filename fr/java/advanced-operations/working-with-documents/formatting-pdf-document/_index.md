@@ -5,15 +5,15 @@ type: docs
 weight: 11
 url: /fr/java/formatting-pdf-document/
 description: Découvrez comment formater des documents PDF, intégrer des polices, contrôler les paramètres de la visionneuse et ajuster les options d'affichage en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Formater la fenêtre du document, les polices et le comportement du zoom dans les fichiers PDF avec Java
-Abstract: Cet article explique comment formater des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la lecture et la mise à jour des paramètres de la fenêtre du document, l'intégration de polices, la définition d'une police par défaut, la liste des polices, le sous-ensemble des polices intégrées et le contrôle du facteur de zoom initial.
+Abstract: Cet article explique comment formater des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la lecture et la mise à jour des paramètres de la fenêtre du document, l'intégration de polices, la définition d'une police par défaut, la liste des polices, le sous-ensemble des polices intégrées et le contrôle du facteur de zoom initial.
 ---
-Le formatage dans Aspose.PDF pour Java inclut le comportement de la visionneuse, l'intégration des polices et les paramètres d'affichage.
+Le formatage dans Aspose.PDF for Java inclut le comportement de la visionneuse, l'intégration des polices et les paramètres d'affichage.
 
 ## Obtenir les paramètres de la fenêtre du document
 
@@ -137,7 +137,7 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 }
 ```
 
-## Obtenez toutes les polices utilisées dans un PDF
+## Obtenir toutes les polices utilisées dans un PDF
 
 Cet exemple répertorie toutes les polices détectées dans le document afin que vous puissiez vérifier l'utilisation des polices avant d'exporter ou de mettre à jour le fichier.
 
@@ -155,9 +155,9 @@ public static void getAllFonts(Path inputFile) {
 }
 ```
 
-## Améliorer l'intégration des polices en sous-définissant les polices
+## Améliorer l'intégration des polices en incorporant des sous-ensembles de polices
 
-Utilisez cette approche lorsque vous souhaitez réduire la charge utile des polices tout en gardant les données de polices incorporées alignées sur l'utilisation du document.
+Utilisez cette approche lorsque vous souhaitez réduire la taille des données de police tout en gardant les données de polices incorporées alignées sur l'utilisation du document.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Exécutez le sous-ensemble de polices via les utilitaires de polices de document avec les valeurs [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) requises.
@@ -191,7 +191,7 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 }
 ```
 
-## Obtenez le facteur de zoom d'ouverture du document
+## Obtenir le facteur de zoom d'ouverture du document
 
 Utilisez cet exemple pour vérifier si un PDF définit déjà un niveau de zoom explicite pour son action d'ouverture.
 

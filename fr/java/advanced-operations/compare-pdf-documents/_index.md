@@ -5,17 +5,17 @@ type: docs
 weight: 130
 url: /fr/java/compare-pdf-documents/
 description: Apprenez à comparer des documents PDF en Java à l'aide d'une sortie côte à côte et de différences graphiques avec Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Comparez les pages PDF et les documents complets avec une sortie de différence visuelle en Java
-Abstract: Cet article explique comment comparer des documents PDF à l'aide d'Aspose.PDF pour Java. Découvrez comment comparer des pages spécifiques ou des fichiers PDF entiers avec une sortie côte à côte, générer des rapports de différences PDF graphiques et exporter les différences d'images au niveau de la page.
+AlternativeHeadline: Comparer les pages PDF et les documents complets avec une sortie de différence visuelle en Java
+Abstract: Cet article explique comment comparer des documents PDF à l'aide d'Aspose.PDF for Java. Découvrez comment comparer des pages spécifiques ou des fichiers PDF entiers avec une sortie côte à côte, générer des rapports de différences PDF graphiques et exporter les différences d'images au niveau de la page.
 ---
-Aspose.PDF pour Java fournit des API de comparaison côte à côte et graphiques pour détecter les différences entre les fichiers PDF.
+Aspose.PDF for Java fournit des API de comparaison côte à côte et graphiques pour détecter les différences entre les fichiers PDF.
 
-## Comparez les pages et exportez les images de différence
+## Comparer les pages et exporter les images de différence
 
 Utilisez cet exemple lorsque vous avez besoin d’une sortie de différence basée sur une image pour une paire spécifique de pages PDF.
 
@@ -42,7 +42,7 @@ public static void comparePdfWithGetDifferenceMethod(
 }
 ```
 
-## Comparez des pages spécifiques côte à côte
+## Comparer des pages spécifiques côte à côte
 
 Utilisez cet exemple lorsque seules les pages sélectionnées doivent être comparées et enregistrées sous forme de résultat PDF côte à côte.
 
@@ -65,7 +65,7 @@ public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path
 }
 ```
 
-## Comparez graphiquement les documents PDF complets
+## Comparer graphiquement les documents PDF complets
 
 Cet exemple génère un rapport PDF graphique qui met en évidence les différences visuelles dans l'ensemble des documents.
 
@@ -87,7 +87,7 @@ public static void comparePdfWithCompareDocumentsToPdfMethod(Path inputFile1, Pa
 }
 ```
 
-## Comparez des documents entiers côte à côte
+## Comparer des documents entiers côte à côte
 
 Utilisez cet exemple lorsque les documents entiers doivent être comparés page par page dans une sortie PDF côte à côte.
 

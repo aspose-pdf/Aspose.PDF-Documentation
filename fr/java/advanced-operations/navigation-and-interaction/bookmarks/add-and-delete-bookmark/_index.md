@@ -5,17 +5,17 @@ type: docs
 weight: 10
 url: /fr/java/add-and-delete-bookmark/
 description: Découvrez comment ajouter et supprimer des signets dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter ou supprimer des signets dans des documents PDF avec Java
-Abstract: Cet article montre comment créer et supprimer des signets à l'aide d'Aspose.PDF pour Java. Les exemples montrent l'ajout d'un signet de niveau supérieur, la création d'une hiérarchie de signets enfants, la suppression de tous les signets et la suppression d'un signet spécifique par titre.
+Abstract: Cet article montre comment créer et supprimer des signets à l'aide d'Aspose.PDF for Java. Les exemples montrent l'ajout d'un signet de niveau supérieur, la création d'une hiérarchie de signets enfants, la suppression de tous les signets et la suppression d'un signet spécifique par titre.
 ---
 Utilisez la collection de plans de documents pour gérer les signets par programmation.
 
-## Ajouter un favori de niveau supérieur
+## Ajouter un signet de niveau supérieur
 
 Utilisez cet exemple lorsque le document doit inclure une seule entrée de plan de niveau supérieur.
 
@@ -38,7 +38,7 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ajouter un favori enfant
+## Ajouter un signet enfant
 
 Cet exemple crée un signet parent et imbrique un signet enfant en dessous.
 
@@ -66,7 +66,7 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 }
 ```
 
-## Supprimer tous les favoris
+## Supprimer tous les signets
 
 Utilisez cette approche lorsque la totalité de la collection de plans doit être supprimée du document.
 
@@ -83,7 +83,7 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 }
 ```
 
-## Supprimer un favori spécifique
+## Supprimer un signet spécifique
 
 Utilisez cet exemple lorsqu'un signet nommé doit être supprimé sans effacer toute l'arborescence.
 

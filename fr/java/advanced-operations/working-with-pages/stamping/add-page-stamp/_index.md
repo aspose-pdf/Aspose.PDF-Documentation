@@ -5,17 +5,17 @@ type: docs
 weight: 30
 url: /fr/java/page-stamps-in-the-pdf-file/
 description: Découvrez comment ajouter des tampons de page PDF en tant que superpositions ou arrière-plans en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter des tampons basés sur des pages aux fichiers PDF avec Java
-Abstract: Cet article explique comment ajouter un tampon de page à un document PDF à l'aide d'Aspose.PDF pour Java. L'exemple charge une autre page PDF comme tampon, la configure comme arrière-plan et l'applique à une page cible.
+Abstract: Cet article explique comment ajouter un tampon de page à un document PDF à l'aide d'Aspose.PDF for Java. L'exemple charge une autre page PDF comme tampon, la configure comme arrière-plan et l'applique à une page cible.
 ---
-Aspose.PDF pour Java peut appliquer une page d'un autre PDF comme tampon ou ajouter des superpositions de numérotation de pages.
+Aspose.PDF for Java peut appliquer une page d'un autre PDF comme tampon ou ajouter des superpositions de numérotation de pages.
 
-## Ajouter un cachet de page à partir d'un autre PDF
+## Ajouter un tampon de page à partir d'un autre PDF
 
 Utilisez cet exemple lorsqu'une page d'un PDF distinct doit être utilisée comme tampon d'arrière-plan.
 

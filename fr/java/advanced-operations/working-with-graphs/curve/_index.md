@@ -5,15 +5,15 @@ type: docs
 weight: 30
 url: /fr/java/add-curve/
 description: Apprenez à dessiner et à remplir des formes de courbes dans des fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Dessinez des formes de courbes dans des fichiers PDF à l'aide de Java
-Abstract: Cet article montre comment ajouter des formes de courbe aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la création d'une courbe à partir de tableaux de coordonnées et l'application d'une couleur de trait ou d'une couleur de remplissage à l'intérieur d'un conteneur graphique.
+Abstract: Cet article montre comment ajouter des formes de courbe aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la création d'une courbe à partir de tableaux de coordonnées et l'application d'une couleur de trait ou d'une couleur de remplissage à l'intérieur d'un conteneur graphique.
 ---
-Les courbes dans Aspose.PDF pour Java sont définies par un tableau de coordonnées flottantes transmis à `Curve`.
+Les courbes dans Aspose.PDF for Java sont définies par un tableau de coordonnées flottantes transmis à `Curve`.
 
 ## Ajouter un contour de courbe
 

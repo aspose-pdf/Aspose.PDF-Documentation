@@ -5,12 +5,12 @@ type: docs
 weight: 40
 url: /fr/java/search-and-get-images-from-pdf-document/
 description: Découvrez comment rechercher et inspecter des images dans des documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 TechArticle: true
 AlternativeHeadline: Rechercher et inspecter des images dans des fichiers PDF avec Java
-Abstract: Cet article montre comment rechercher et inspecter des images dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la lecture de la géométrie de placement d'image, la détection du type de couleur, l'extraction de texte alternatif et le calcul de la résolution d'image efficace à partir des opérateurs de page.
+Abstract: Cet article montre comment rechercher et inspecter des images dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la lecture de la géométrie de placement d'image, la détection du type de couleur, l'extraction de texte alternatif et le calcul de la résolution d'image efficace à partir des opérateurs de page.
 ---
-Aspose.PDF pour Java peut inspecter les informations de placement d'image ainsi que les données de dessin de niveau inférieur.
+Aspose.PDF for Java peut inspecter les informations de placement d'image ainsi que les données de dessin de niveau inférieur.
 
 ## Obtenir les paramètres de placement d'image
 
@@ -107,7 +107,7 @@ public static void extractImageAltText(Path inputFile) {
 
 ## Calculer les informations d'image à partir des opérateurs de page
 
-Utilisez cet exemple lorsque vous devez dériver la taille et la résolution efficaces de l’image à partir d’opérateurs de contenu de page de bas niveau.
+Utilisez cet exemple lorsque vous devez dériver la taille et la résolution effectives de l’image à partir d’opérateurs de contenu de page de bas niveau.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et collectez les noms des ressources d'image.
 1. Suivez l’état des graphiques tout en parcourant les opérateurs de page.

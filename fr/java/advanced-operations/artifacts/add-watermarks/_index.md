@@ -4,14 +4,14 @@ linktitle: Ajout d'un filigrane
 type: docs
 weight: 30
 url: /fr/java/add-watermarks/
-description: Découvrez comment ajouter, extraire et supprimer des artefacts de filigrane dans des fichiers PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Découvrez comment ajouter, extraire et supprimer des artefacts de filigrane dans des fichiers PDF à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Comment ajouter un filigrane au PDF avec Java
-Abstract: Cet article explique comment ajouter, inspecter et supprimer des artefacts de filigrane dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la création d'un filigrane de texte avec les paramètres d'alignement, de rotation, d'opacité et d'arrière-plan, l'inspection des artefacts de filigrane sur une page et leur suppression.
+Abstract: Cet article explique comment ajouter, inspecter et supprimer des artefacts de filigrane dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la création d'un filigrane de texte avec les paramètres d'alignement, de rotation, d'opacité et d'arrière-plan, l'inspection des artefacts de filigrane sur une page et leur suppression.
 ---
 Les artefacts de filigrane vous permettent de placer des marquages ​​visuels persistants sur une page sans les mélanger au contenu principal du document.
 

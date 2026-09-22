@@ -5,13 +5,13 @@ type: docs
 weight: 110
 url: /fr/java/rotate-pages/
 description: Découvrez comment faire pivoter des pages PDF et modifier l'orientation des pages en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Faire pivoter les pages PDF avec Java
-Abstract: Cet article explique comment faire pivoter des pages PDF à l'aide d'Aspose.PDF pour Java. L'exemple parcourt toutes les pages d'un document, applique une rotation de 90 degrés et enregistre le PDF mis à jour.
+Abstract: Cet article explique comment faire pivoter des pages PDF à l'aide d'Aspose.PDF for Java. L'exemple parcourt toutes les pages d'un document, applique une rotation de 90 degrés et enregistre le PDF mis à jour.
 ---
 Utilisez l'API de rotation de page lorsque vous devez modifier l'orientation sur une ou plusieurs pages.
 

@@ -1,21 +1,17 @@
 ---
-title: Ajouter une chaîne HTML en utilisant DOM dans Ruby
-linktitle: Ajouter une chaîne HTML en utilisant DOM dans Ruby
+title: Ajouter une chaîne HTML en utilisant DOM en Ruby
+linktitle: Ajouter une chaîne HTML en utilisant DOM en Ruby
 type: docs
 weight: 10
 url: /java/add-html-string-using-dom-in-ruby/
-description: Découvrez comment ajouter une chaîne HTML à un document PDF à l'aide de l'API DOM dans Ruby avec Aspose.PDF pour la génération de contenu dynamique.
-lastmod: "2026-06-09"
+description: Découvrez comment ajouter une chaîne HTML à un document PDF à l'aide de l'API DOM en Ruby avec Aspose.PDF pour la génération de contenu dynamique.
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Ajouter du HTML
+## Aspose.PDF - Ajouter du HTML
 
+Pour ajouter une chaîne HTML dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **AddHtml**.
 
-
-Pour ajouter une chaîne HTML dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **AddHtml**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -57,13 +53,8 @@ doc.save(data_dir + "html.output.pdf")
 puts "HTML added successfully"
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Ajouter du HTML (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Ajouter du HTML (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)

@@ -5,17 +5,13 @@ type: docs
 weight: 30
 url: /java/get-document-window-and-page-display-properties-in-php/
 description: Découvrez comment accéder aux propriétés d'affichage de la fenêtre du document et de la page d'un fichier PDF en PHP à l'aide d'Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Obtenir les propriétés d'affichage de la fenêtre du document et de la page
+## Aspose.PDF - Obtenir les propriétés d'affichage de la fenêtre du document et de la page
 
-
-
-Pour obtenir les propriétés d'affichage de la fenêtre et de la page du document PDF à l'aide de **Aspose.PDF Java pour PHP**, invoquez simplement la classe **GetDocumentWindow**.
+Pour obtenir les propriétés d'affichage de la fenêtre et de la page du document PDF à l'aide de **Aspose.PDF Java pour PHP**, utilisez la classe **GetDocumentWindow**.
 
 Code PHP
-
 
 ```php
 
@@ -58,13 +54,8 @@ print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
+**Télécharger l’exemple de code**
 
-**Télécharger le code d'exécution**
+Téléchargez **Obtenez les propriétés d'affichage de la fenêtre et de la page du document (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-
-Téléchargez** Obtenez les propriétés d'affichage de la fenêtre et de la page du document (Aspose.PDF)**В à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

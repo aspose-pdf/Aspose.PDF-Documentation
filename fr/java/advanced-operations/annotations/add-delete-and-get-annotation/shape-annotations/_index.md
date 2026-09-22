@@ -4,14 +4,14 @@ linktitle: Annotations de forme
 type: docs
 weight: 20
 url: /fr/java/shape-annotations/
-description: Découvrez comment ajouter, inspecter et supprimer des annotations de carrés, de cercles, de polygones et de polylignes dans des documents PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Découvrez comment ajouter, inspecter et supprimer des annotations de carrés, de cercles, de polygones et de polylignes dans des documents PDF à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: Travaillez avec des annotations PDF géométriques en Java.
-Abstract: Cet article explique comment créer, inspecter et supprimer des annotations géométriques dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre les annotations de carrés, de cercles, de polygones et de polylignes avec la configuration de la couleur, de l'opacité, des fenêtres contextuelles et des points.
+Abstract: Cet article explique comment créer, inspecter et supprimer des annotations géométriques dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre les annotations de carrés, de cercles, de polygones et de polylignes avec la configuration de la couleur, de l'opacité, des fenêtres contextuelles et des points.
 ---
 Les annotations de forme dans cette section couvrent les types d'annotations géométriques tels que les carrés, les cercles, les polygones, les polylignes et les lignes.
 
@@ -109,13 +109,13 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Obtenez des annotations de carrés, de cercles, de polygones et de polylignes
+## Obtenir des annotations de carrés, de cercles, de polygones et de polylignes
 
-Ces exemples inspectent la collection d'annotations de page et impriment les rectangles d'annotations géométriques par type.
+Ces exemples inspectent la collection d'annotations de page et affichent les rectangles d'annotations géométriques par type.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations de la page.
-1. Filtrez par la valeur [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) requise et imprimez le rectangle.
+1. Filtrez par la valeur [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) requise et affichez le rectangle.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -279,11 +279,11 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## Obtenir des annotations de ligne
 
-Cet exemple lit les annotations de ligne et imprime leurs coordonnées de début et de fin.
+Cet exemple lit les annotations de ligne et affiche leurs coordonnées de début et de fin.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations de la page et sélectionnez [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
-1. Diffusez chaque correspondance sur [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) et imprimez ses coordonnées.
+1. Diffusez chaque correspondance sur [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) et affichez ses coordonnées.
 
 ```java
 public static void lineAnnotationsGet(Path inputFile) {

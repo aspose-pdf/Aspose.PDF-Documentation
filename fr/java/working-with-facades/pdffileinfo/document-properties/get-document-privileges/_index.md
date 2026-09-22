@@ -1,43 +1,33 @@
 ---
-title: Obtenez des privilèges sur les documents
-linktitle: Obtenez des privilèges sur les documents
+title: Consulter les autorisations des documents
+linktitle: Consulter les autorisations des documents
 type: docs
 weight: 10
 url: /java/get-document-privileges/
 description: Découvrez comment inspecter les privilèges des documents PDF en Java avec la façade PdfFileInfo.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Récupérer les privilèges des documents PDF à l'aide d'Aspose.PDF pour Java
-Abstract: Découvrez comment récupérer les privilèges de document avec Aspose.PDF pour Java. L'exemple Java crée un objet PdfFileInfo, lit ses paramètres DocumentPrivilege et imprime les indicateurs d'autorisation pour l'impression, la copie, la modification, les annotations, le remplissage de formulaires, les lecteurs d'écran et l'assemblage.
+AlternativeHeadline: Récupérer les privilèges des documents PDF à l'aide d'Aspose.PDF for Java
+Abstract: Découvrez comment récupérer les privilèges de document avec Aspose.PDF for Java. L'exemple Java crée un objet PdfFileInfo, lit ses paramètres DocumentPrivilege et imprime les indicateurs d'autorisation pour l'impression, la copie, la modification, les annotations, le remplissage de formulaires, les lecteurs d'écran et l'assemblage.
 ---
-## Obtenez des privilèges sur les documents
-
-
+## Consulter les autorisations des documents
 
 Utilisez `PdfFileInfo.getDocumentPrivilege()` pour inspecter les opérations autorisées par le PDF actuel.
 
+### Étapes
 
-### 
-Étapes
+1. Créez un objet `PdfFileInfo` pour le PDF d'entrée.
 
-
-1. 
-Créez un objet `PdfFileInfo` pour le PDF d'entrée.
-
-2. 
-Appelez `getDocumentPrivilege()` pour récupérer l'ensemble de privilèges.
+2. Appelez `getDocumentPrivilege()` pour récupérer l'ensemble de privilèges.
 3. Lisez les indicateurs booléens pertinents de l'objet `DocumentPrivilege` renvoyé.
 
-4. 
-Fermez l'instance `PdfFileInfo` lorsque vous avez terminé.
+4. Fermez l'instance `PdfFileInfo` lorsque vous avez terminé.
 
-
-### 
-Exemple Java
+### Exemple Java
 
 ```java
 public static void getDocumentPrivileges(Path inputFile) {

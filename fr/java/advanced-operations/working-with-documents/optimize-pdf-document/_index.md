@@ -5,15 +5,15 @@ type: docs
 weight: 30
 url: /fr/java/optimize-pdf/
 description: Découvrez comment optimiser, compresser et réduire la taille d'un fichier PDF en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Compressez les ressources PDF et réduisez la taille des fichiers avec Java
-Abstract: Cet article explique comment optimiser les fichiers PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'optimisation de l'ensemble du document, la compression des ressources, la réduction de la qualité de l'image, la suppression des objets et des flux inutilisés, la liaison des flux en double, la désintégration des polices, l'aplatissement des annotations et des formulaires, la conversion des niveaux de gris et la compression d'image Flate.
+Abstract: Cet article explique comment optimiser les fichiers PDF à l'aide d'Aspose.PDF for Java. Il couvre l'optimisation de l'ensemble du document, la compression des ressources, la réduction de la qualité de l'image, la suppression des objets et des flux inutilisés, la liaison des flux en double, la désintégration des polices, l'aplatissement des annotations et des formulaires, la conversion des niveaux de gris et la compression d'image Flate.
 ---
-Aspose.PDF pour Java expose les fonctionnalités d'optimisation via `Document.optimize`, `optimizeResources` et `OptimizationOptions`.
+Aspose.PDF for Java expose les fonctionnalités d'optimisation via `Document.optimize`, `optimizeResources` et `OptimizationOptions`.
 
 ## Optimiser un PDF avec l'optimisation générale des documents
 
@@ -33,7 +33,7 @@ public static void optimizePdf(Path inputFile, Path outputFile) throws Exception
 }
 ```
 
-## Réduisez la taille du PDF en optimisant les ressources
+## Réduire la taille du PDF en optimisant les ressources
 
 Cet exemple se concentre sur l'optimisation au niveau des ressources sans configurer manuellement les options individuelles.
 
@@ -240,7 +240,7 @@ public static void usingFlatedecodeCompression(Path inputFile, Path outputFile) 
 
 ## Imprimer des tailles de fichiers originales et optimisées
 
-Cette méthode d'assistance signale la différence de taille entre le fichier source et le fichier de sortie optimisé.
+Cette méthode auxiliaire signale la différence de taille entre le fichier source et le fichier de sortie optimisé.
 
 1. Lisez la taille du fichier d'entrée.
 1. Lisez la taille du fichier de sortie.

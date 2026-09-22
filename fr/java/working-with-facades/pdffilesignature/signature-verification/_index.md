@@ -5,42 +5,31 @@ type: docs
 weight: 90
 url: /java/signature-verification/
 description: Découvrez comment vérifier les signatures PDF en Java avec la façade PdfFileSignature.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Vérifier les signatures PDF en Java
-Abstract: Découvrez comment vérifier une signature PDF avec Aspose.PDF pour Java. L'exemple Java sélectionne la première signature disponible, valide la signature et vérifie si elle couvre l'intégralité du document.
+Abstract: Découvrez comment vérifier une signature PDF avec Aspose.PDF for Java. L'exemple Java sélectionne la première signature disponible, valide la signature et vérifie si elle couvre l'intégralité du document.
 ---
 ## Vérifier la signature PDF
 
-
-
 Utilisez ce flux de travail lorsque vous avez besoin d’une validation rapide sur un PDF signé existant.
 
+### Étapes
 
-### 
-Étapes
+1. Créez une instance `PdfFileSignature` et liez le PDF signé.
 
-
-1. 
-Créez une instance `PdfFileSignature` et liez le PDF signé.
-
-2. 
-Sélectionnez le nom de la signature que vous souhaitez inspecter.
+2. Sélectionnez le nom de la signature que vous souhaitez inspecter.
 3. Appelez `verifySignature` pour valider la signature.
 
-4. 
-Appelez `coversWholeDocument` pour vérifier la couverture.
+4. Appelez `coversWholeDocument` pour vérifier que la signature couvre tout le document.
 
-5. 
-Fermez l'objet façade.
+5. Fermez l’objet de façade.
 
-
-### 
-Exemple Java
+### Exemple Java
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {

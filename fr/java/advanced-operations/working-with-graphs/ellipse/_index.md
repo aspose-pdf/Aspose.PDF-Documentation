@@ -5,13 +5,13 @@ type: docs
 weight: 60
 url: /fr/java/add-ellipse/
 description: Apprenez à dessiner, remplir et étiqueter des formes d'ellipse dans des fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Dessinez des formes d'ellipse dans des fichiers PDF à l'aide de Java
-Abstract: Cet article montre comment ajouter des formes d'ellipse aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre les ellipses décrites, les ellipses remplies et le placement de fragments de texte à l'intérieur de formes d'ellipse.
+Abstract: Cet article montre comment ajouter des formes d'ellipse aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre les ellipses décrites, les ellipses remplies et le placement de fragments de texte à l'intérieur de formes d'ellipse.
 ---
 ## Ajouter des contours d'ellipse
 

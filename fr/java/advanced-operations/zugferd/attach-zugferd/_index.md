@@ -1,17 +1,17 @@
 ---
-title: Création d'un PDF conforme PDF/3-A et pièce jointe d'une facture ZUGFeRD en Java
+title: Création d'un PDF conforme PDF/A-3 et pièce jointe d'une facture ZUGFeRD en Java
 linktitle: Joindre ZUGFeRD au PDF
 type: docs
 weight: 10
 url: /fr/java/attach-zugferd/
 description: Découvrez comment joindre une facture XML ZUGFeRD à un PDF et la convertir en PDF/A-3A en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Joindre une facture XML ZUGFeRD à un document PDF avec Java
-Abstract: Cet article explique comment créer un document de facture conforme PDF/A-3A à l'aide d'Aspose.PDF pour Java. Il couvre la pièce jointe de la facture XML en tant que fichier intégré, la définition du type MIME et de la relation entre les fichiers associés, la conversion du PDF en PDF/A-3A et l'enregistrement du document final prêt pour ZUGFeRD.
+Abstract: Cet article explique comment créer un document de facture conforme PDF/A-3A à l'aide d'Aspose.PDF for Java. Il couvre la pièce jointe de la facture XML en tant que fichier intégré, la définition du type MIME et de la relation entre les fichiers associés, la conversion du PDF en PDF/A-3A et l'enregistrement du document final prêt pour ZUGFeRD.
 ---
 Utilisez les API `Document` et `FileSpecification` lorsque vous devez regrouper le XML d'une facture dans un PDF pour les flux de travail de style ZUGFeRD.
 

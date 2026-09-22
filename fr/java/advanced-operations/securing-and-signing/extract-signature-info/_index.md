@@ -5,13 +5,13 @@ type: docs
 weight: 20
 url: /fr/java/extract-image-and-signature-information/
 description: Découvrez comment extraire les détails d'un certificat et d'une signature numérique à partir de fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Extraire les détails de la signature et les données du certificat des PDF signés en Java
-Abstract: Cet article explique comment inspecter les signatures numériques dans les documents PDF à l'aide d'Aspose.PDF pour Java. Découvrez comment lire les détails du signataire, vérifier une signature, vérifier si une signature couvre l'intégralité du document, extraire le certificat de signature intégré et supprimer une signature existante.
+Abstract: Cet article explique comment inspecter les signatures numériques dans les documents PDF à l'aide d'Aspose.PDF for Java. Découvrez comment lire les détails du signataire, vérifier une signature, vérifier si une signature couvre l'intégralité du document, extraire le certificat de signature intégré et supprimer une signature existante.
 ---
 Utilisez `PdfFileSignature` pour inspecter et gérer les signatures qui existent déjà dans un document PDF.
 

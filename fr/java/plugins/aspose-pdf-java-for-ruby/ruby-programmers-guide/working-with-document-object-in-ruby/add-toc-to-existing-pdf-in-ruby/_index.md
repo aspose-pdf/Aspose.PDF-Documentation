@@ -1,21 +1,17 @@
 ---
-title: Ajouter une table des matières au PDF existant dans Ruby
-linktitle: Ajouter une table des matières au PDF existant dans Ruby
+title: Ajouter une table des matières au PDF existant en Ruby
+linktitle: Ajouter une table des matières au PDF existant en Ruby
 type: docs
 weight: 30
 url: /java/add-toc-to-existing-pdf-in-ruby/
-description: Découvrez comment ajouter une table des matières à un PDF existant dans Ruby à l'aide d'Aspose.PDF pour une navigation améliorée dans les documents.
-lastmod: "2026-06-09"
+description: Découvrez comment ajouter une table des matières à un PDF existant en Ruby à l'aide d'Aspose.PDF pour une navigation améliorée dans les documents.
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Ajouter une table des matières
+## Aspose.PDF - Ajouter une table des matières
 
+<ins>Pour ajouter une table des matières dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **AddToc**.
 
-
-<ins>Pour ajouter une table des matières dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **AddToc**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -91,13 +87,8 @@ doc.save(data_dir + "TOC.pdf")
 puts "Added TOC Successfully, please check the output file."
 ```
 
-## 
-<ins> **Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Ajouter une table des matières (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Ajouter une table des matières (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

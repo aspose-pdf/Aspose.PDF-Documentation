@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /fr/java/setting-structure-elements-properties/
 description: Découvrez comment définir les propriétés des éléments de structure PDF balisés en Java avec Aspose.PDF, notamment le titre, la langue, le texte réel, le texte alternatif, le texte d'expansion, les liens, les notes et les noms de balises.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,6 @@ Utilisez cet exemple lorsqu'un élément de structure balisé doit exposer des m
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et initialisez les métadonnées du contenu balisé.
 1. Créez une section et un élément d'en-tête dans l'arborescence de la structure.
 1. Définissez les propriétés de l'en-tête et enregistrez le document.
-
 
 ```java
 public static void setProperties(Path outputFile) {
@@ -55,7 +54,6 @@ Utilisez cet exemple lorsque vous devez ajouter un simple élément de paragraph
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez un [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) et définissez son texte.
 1. Ajoutez le paragraphe à l’élément racine et enregistrez le document.
-
 
 ```java
 public static void setTextElements(Path outputFile) {
@@ -338,7 +336,7 @@ public static void setLanguageAndTitle(Path outputFile) {
 
 ## Ajouter un assistant de paragraphe pour le contenu balisé
 
-Cette méthode d'assistance crée un paragraphe, attribue sa langue et l'ajoute à la structure racine.
+Cette méthode auxiliaire crée un paragraphe, attribue sa langue et l'ajoute à la structure racine.
 
 1. Créez un [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
 1. Définissez le texte et la langue de l'élément.

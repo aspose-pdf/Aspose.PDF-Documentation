@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /fr/java/add-text-to-pdf-file/
 description: Découvrez comment ajouter du texte, des fragments HTML, des listes, des liens et des polices personnalisées aux documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ajoutez du texte, des liens, du HTML et des polices aux fichiers PDF avec Java
-Abstract: Cet article explique comment ajouter et styliser du texte dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'insertion de texte simple, la disposition des paragraphes, les hyperliens, le texte de droite à gauche, le style des polices, la transparence, les bordures, les fragments HTML et LaTeX, le texte dégradé et les polices personnalisées chargées à partir de fichiers ou de flux.
+AlternativeHeadline: Ajouter du texte, des liens, du HTML et des polices aux fichiers PDF avec Java
+Abstract: Cet article explique comment ajouter et styliser du texte dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre l'insertion de texte simple, la disposition des paragraphes, les hyperliens, le texte de droite à gauche, le style des polices, la transparence, les bordures, les fragments HTML et LaTeX, le texte dégradé et les polices personnalisées chargées à partir de fichiers ou de flux.
 ---
-Aspose.PDF pour Java prend en charge l'insertion de texte brut, la mise en page avancée, le style, les dégradés, HTML, LaTeX et les polices personnalisées.
+Aspose.PDF for Java prend en charge l'insertion de texte brut, la mise en page avancée, le style, les dégradés, HTML, LaTeX et les polices personnalisées.
 
 ## Ajouter un simple fragment de texte
 
@@ -266,7 +266,7 @@ public static void addTextWithRtlText(Path outputFile) {
 }
 ```
 
-## Ajoutez du texte stylisé et des segments de type formule
+## Ajouter du texte mis en forme et des segments de type formule
 
 Utilisez cet exemple lorsque du texte normal et des segments de type indice doivent utiliser différents états de texte dans une seule sortie.
 
@@ -442,7 +442,7 @@ public static void addTextBorder(Path outputFile) {
 Utilisez cet exemple lorsque le texte doit utiliser un formatage barré.
 
 1. Créez un nouveau document PDF et ajoutez une page.
-1. Créez un fragment de texte stylisé avec le barré activé.
+1. Créez un fragment de texte mis en forme avec le barré activé.
 1. Ajoutez-le à la page et enregistrez le document.
 
 ```java

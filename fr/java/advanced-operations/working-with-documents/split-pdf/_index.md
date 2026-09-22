@@ -5,15 +5,15 @@ type: docs
 weight: 60
 url: /fr/java/split-pdf-document/
 description: Découvrez comment diviser des pages PDF en fichiers PDF distincts en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Divisez les documents PDF par pages, plages, groupes et modèles de noms de fichiers à l'aide de Java
-Abstract: Cet article explique comment diviser des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la division en pages simples, en deux ou trois parties, les pages paires et impaires, les morceaux de taille fixe, les plages personnalisées, la première ou la dernière page plus le reste, les groupes de pages personnalisés et la génération de noms de fichiers stables.
+Abstract: Cet article explique comment diviser des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la division en pages simples, en deux ou trois parties, les pages paires et impaires, les morceaux de taille fixe, les plages personnalisées, la première ou la dernière page plus le reste, les groupes de pages personnalisés et la génération de noms de fichiers stables.
 ---
-Aspose.PDF pour Java prend en charge plusieurs modèles de fractionnement au-delà d'une sortie d'une page par fichier.
+Aspose.PDF for Java prend en charge plusieurs modèles de fractionnement au-delà d'une sortie d'une page par fichier.
 
 ## Diviser un PDF en fichiers d'une seule page
 
@@ -137,7 +137,7 @@ public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
 }
 ```
 
-## Divisez la première page et les pages restantes
+## Diviser la première page et les pages restantes
 
 Utilisez cette approche lorsque la page de garde doit être exportée séparément du reste du document.
 
@@ -276,7 +276,7 @@ public static void splitDocumentsCustomPageGroups(Path inputFile, Path outputDir
 }
 ```
 
-## Divisez un PDF en pages uniques avec des noms de fichiers stables
+## Diviser un PDF en pages uniques avec des noms de fichiers stables
 
 Utilisez cette version lorsque les noms de sortie doivent rester triables lexicalement, par exemple dans des pipelines automatisés.
 

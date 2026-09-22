@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /fr/java/create-tagged-pdf/
 description: Découvrez comment créer des documents PDF balisés en Java avec Aspose.PDF, y compris des éléments de structure PDF/UA, des champs de formulaire accessibles, des pages de table des matières et le balisage automatique.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -133,7 +133,6 @@ Cet exemple montre comment créer une figure balisée avec un texte alternatif, 
 
 1. Ajustez la position de la figure et enregistrez le document.
 
-
 ```java
 public static void illustrateStructureElements(Path imageFile, Path outputFile) {
     try (Document document = new Document()) {
@@ -165,13 +164,11 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 
 Utilisez cet exemple lorsque vous devez vérifier si un PDF balisé satisfait aux règles de validation PDF/UA.
 
-
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 1. Exécutez la validation sur [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 
 1. Rédigez le journal de validation et imprimez le résultat de la validation.
-
 
 ```java
 public static void validateTaggedPdf(Path inputFile, Path logFile) {
@@ -186,13 +183,11 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 
 Cet exemple applique des paramètres de marge et d’alignement explicites à un paragraphe balisé.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 1. Ajoutez un élément de structure de paragraphe et préparez [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
 
 1. Appliquez les paramètres de position au paragraphe et enregistrez le document.
-
 
 ```java
 public static void adjustPosition(Path outputFile) {
@@ -226,17 +221,15 @@ public static void adjustPosition(Path outputFile) {
 }
 ```
 
-## Convertissez un PDF existant en PDF/UA avec le balisage automatique
+## Convertir un PDF existant en PDF/UA avec le balisage automatique
 
 Utilisez cette approche lorsqu'un PDF existant doit être converti en PDF/UA et balisé automatiquement lors de la conversion.
-
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 1. Créez [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) et activez le balisage automatique.
 
 1. Exécutez la conversion et enregistrez le document de sortie.
-
 
 ```java
 public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outputFile, Path logFile) {
@@ -255,17 +248,15 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 }
 ```
 
-## Créez un PDF balisé avec un champ de formulaire accessible
+## Créer un PDF balisé avec un champ de formulaire accessible
 
 Cet exemple balise un champ de formulaire de signature afin qu'il fasse partie de l'arborescence de la structure logique.
-
 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page avec un champ de formulaire.
 
 1. Ajoutez le champ de formulaire à la collection de formulaires de document.
 
 1. Créez un élément de structure de formulaire balisé, associez-le au champ et enregistrez le document.
-
 
 ```java
 public static void createPdfWithTaggedFormField(Path outputFile) {
@@ -295,13 +286,11 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 
 Utilisez cet exemple lorsqu'un PDF balisé doit inclure une page de table des matières de base liée aux en-têtes du document.
 
-
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une page de table des matières.
 
 1. Créez le [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) et un en-tête qui doit apparaître dans la table des matières.
 
 1. Liez l’entrée de la table des matières au titre et enregistrez le document.
-
 
 ```java
 public static void createPdfWithTocPage(Path outputFile) {
@@ -332,10 +321,9 @@ public static void createPdfWithTocPage(Path outputFile) {
 }
 ```
 
-## Créez un PDF balisé avancé avec une page de table des matières
+## Créer un PDF balisé avancé avec une page de table des matières
 
 Cet exemple crée une table des matières balisée plus complexe avec des titres de page liés, des éléments de liste imbriqués et plusieurs niveaux de titre.
-
 
 1. Créez un nouveau document PDF balisé [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et préparez une page de table des matières avec un titre visible.
 

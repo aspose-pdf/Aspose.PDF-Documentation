@@ -5,38 +5,28 @@ type: docs
 weight: 20
 url: /java/add-page-breaks-in-pdf/
 description: Insérez des sauts de page dans un PDF en Java avec la façade PdfFileEditor.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Insérer des sauts de page à des positions fixes dans un document PDF avec Java
-Abstract: Découvrez comment ajouter des sauts de page avec Aspose.PDF pour Java. L'exemple Java utilise PdfFileEditor.PageBreak pour diviser une page à une position verticale spécifique et enregistrer le résultat sous forme de nouveau PDF.
+Abstract: Découvrez comment ajouter des sauts de page avec Aspose.PDF for Java. L'exemple Java utilise PdfFileEditor.PageBreak pour diviser une page à une position verticale spécifique et enregistrer le résultat sous forme de nouveau PDF.
 ---
 ## Ajouter des sauts de page dans un PDF
 
-
-
 Utilisez ce flux de travail lorsqu'une page doit être divisée en plusieurs pages à une position Y connue.
 
+### Étapes
 
-### 
-Étapes
+1. Créez une instance `PdfFileEditor`.
 
+2. Créez une ou plusieurs entrées `PdfFileEditor.PageBreak` avec le numéro de page et la position du saut de page.
+3. Transmettez le tableau de sauts de page à `addPageBreak`.
 
-1. 
-Créez une instance `PdfFileEditor`.
+4. Enregistrez le document PDF mis à jour.
 
-2. 
-Créez une ou plusieurs entrées `PdfFileEditor.PageBreak` avec le numéro de page et la position de rupture.
-3. Transmettez le tableau de saut de page à `addPageBreak`.
-
-4. 
-Enregistrez le document PDF mis à jour.
-
-
-### 
-Exemple Java
+### Exemple Java
 
 ```java
 public static void addPageBreaksInPdf(Path inputFile, Path outputFile) {

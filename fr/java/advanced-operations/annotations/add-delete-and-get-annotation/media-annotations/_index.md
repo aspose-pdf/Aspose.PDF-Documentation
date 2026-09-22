@@ -5,13 +5,13 @@ type: docs
 weight: 40
 url: /fr/java/media-annotations/
 description: Apprenez à utiliser les API de son, d'écran, de médias riches et d'annotation PDF 3D en Java, avec des conseils étape par étape pour les flux de travail multimédia courants.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: Workflows d'annotation PDF liés aux médias en Java.
-Abstract: Cette page explique les flux de travail d'annotation multimédia courants dans Aspose.PDF pour Java, y compris les scénarios de son, d'écran, multimédia enrichi, 3D, de suppression et d'inspection. Le référentiel actuel n'inclut pas de classe d'exemple de média `workingwithannotations` dédiée. Cet article documente donc directement les modèles d'API Java avec des conseils étape par étape.
+Abstract: Cette page explique les flux de travail d'annotation multimédia courants dans Aspose.PDF for Java, y compris les scénarios de son, d'écran, multimédia enrichi, 3D, de suppression et d'inspection. Le référentiel actuel n'inclut pas de classe d'exemple de média `workingwithannotations` dédiée. Cet article documente donc directement les modèles d'API Java avec des conseils étape par étape.
 ---
 Les annotations multimédias dans PDF couvrent généralement le contenu multimédia intégré ou lié, tel que les clips audio, les zones de lecture d'écran, les conteneurs Rich Media et les modèles 3D.
 
@@ -90,13 +90,13 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Obtenez des annotations multimédia
+## Obtenir des annotations multimédia
 
 Utilisez cet exemple pour inspecter les annotations d’écran, de son et de médias enrichis déjà présentes sur la page.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Définissez l'ensemble des types d'annotations multimédia que vous souhaitez détecter.
-1. Parcourez les annotations de page et imprimez le type et le rectangle pour chaque correspondance.
+1. Parcourez les annotations de page et affichez le type et le rectangle pour chaque correspondance.
 
 ```java
 public static void multimediaAnnotationsGet(Path inputFile) {
@@ -195,7 +195,6 @@ Cet exemple place une annotation sonore sur la page et l'associe à un fichier W
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez une [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) pour le fichier audio cible et configurez ses métadonnées.
 1. Ajoutez l'annotation à la page et enregistrez le document de sortie.
-
 
 ```java
 public static void soundAnnotationAdd(Path inputFile, Path outputFile) {

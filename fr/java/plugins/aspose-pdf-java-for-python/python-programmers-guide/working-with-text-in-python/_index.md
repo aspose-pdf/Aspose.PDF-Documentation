@@ -5,15 +5,12 @@ type: docs
 weight: 40
 url: /java/working-with-text-in-python/
 description: Découvrez comment manipuler du texte dans un document PDF à l'aide de Python et Aspose.PDF pour une meilleure gestion et extraction du texte.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
 
 Cette section comprend les sujets suivants :
 
+- [Ajouter une chaîne HTML à l'aide de DOM en Python](/pdf/java/add-html-string-using-dom-in-python/)
+- [Ajouter du texte à un fichier PDF existant en Python](/pdf/java/add-text-to-an-existing-pdf-file-in-python/)
 
-- 
-[Ajouter une chaîne HTML à l'aide de DOM en Python] (/pdf/java/add-html-string-using-dom-in-python/)
-- [Ajouter du texte à un fichier PDF existant en Python] (/pdf/java/add-text-to-an-existing-pdf-file-in-python/)
-
-- 
-[Extraire le texte de toutes les pages d'un document PDF en Python] (/pdf/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/)
+- [Extraire le texte de toutes les pages d'un document PDF en Python](/pdf/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/)

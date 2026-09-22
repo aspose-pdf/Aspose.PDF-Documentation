@@ -4,11 +4,11 @@ linktitle: Remplir les champs de texte
 type: docs
 weight: 10
 url: /java/fill-text-fields/
-description: Découvrez comment remplir les champs de texte d'un formulaire PDF avec Java à l'aide de la façade de formulaire dans Aspose.PDF.
-lastmod: "2026-06-09"
+description: Découvrez comment remplir les champs de texte d'un formulaire PDF avec Java à l'aide de la façade Form dans Aspose.PDF.
+lastmod: "2026-09-22"
 TechArticle: true
 AlternativeHeadline: Remplir les champs de formulaire de texte dans un PDF avec Java
-Abstract: Cet article montre comment lier un formulaire PDF, définir les valeurs des champs de texte par nom et enregistrer le document mis à jour avec la façade de formulaire dans Aspose.PDF pour Java.
+Abstract: Cet article montre comment lier un formulaire PDF, définir les valeurs des champs de texte par nom et enregistrer le document mis à jour avec la façade Form dans Aspose.PDF for Java.
 ---
 Utilisez `FormExamples.fillTextFields(...)` pour remplir les champs de formulaire textuels.
 

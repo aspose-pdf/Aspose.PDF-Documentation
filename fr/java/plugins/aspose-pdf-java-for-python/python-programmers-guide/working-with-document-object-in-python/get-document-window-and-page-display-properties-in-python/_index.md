@@ -5,11 +5,10 @@ type: docs
 weight: 30
 url: /java/get-document-window-and-page-display-properties-in-python/
 description: Comprenez comment récupérer les propriétés d'affichage de la fenêtre et de la page d'un document à partir d'un PDF en Python avec Aspose.PDF pour une présentation précise.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
 
-Pour obtenir les propriétés d'affichage de la fenêtre et de la page du document PDF à l'aide de **Aspose.PDF Java pour Python**, invoquez simplement la classe **GetDocumentWindow**.
-
+Pour obtenir les propriétés d'affichage de la fenêtre et de la page du document PDF à l'aide de **Aspose.PDF Java pour Python**, utilisez la classe **GetDocumentWindow**.
 
 ```python
 
@@ -53,11 +52,8 @@ print "PageLayout :-" + str(doc.getPageLayout())
 print "pageMode :-" + str(doc.getPageMode())
 ```
 
+**Télécharger l’exemple de code**
 
-**Télécharger le code d'exécution**
+Téléchargez **Obtenez les propriétés d'affichage de la fenêtre et de la page du document (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-Téléchargez** Obtenez les propriétés d'affichage de la fenêtre et de la page du document (Aspose.PDF)**В à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)

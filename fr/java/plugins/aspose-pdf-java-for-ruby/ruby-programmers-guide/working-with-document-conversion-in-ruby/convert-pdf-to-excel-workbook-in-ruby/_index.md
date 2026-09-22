@@ -1,21 +1,17 @@
 ---
-title: Convertir un PDF en classeur Excel dans Ruby
-linktitle: Convertir un PDF en classeur Excel dans Ruby
+title: Convertir un PDF en classeur Excel en Ruby
+linktitle: Convertir un PDF en classeur Excel en Ruby
 type: docs
 weight: 40
 url: /java/convert-pdf-to-excel-workbook-in-ruby/
 description: Comprenez comment convertir des données PDF en classeurs Excel à l'aide de Ruby avec Aspose.PDF, simplifiant ainsi l'extraction et l'analyse des données.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Convertir un PDF en classeur Excel
+## Aspose.PDF - Convertir un PDF en classeur Excel
 
+Pour convertir un document PDF en classeur Excel à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **PdfToExcel**.
 
-
-Pour convertir un document PDF en classeur Excel à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **PdfToExcel**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -37,13 +33,8 @@ pdf.save(data_dir + "Converted_Excel.xls", excelsave)
 puts "Document has been converted successfully"
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Convertir un PDF en DOC ou DOCX (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Convertir un PDF en DOC ou DOCX (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftoexcel.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftoexcel.rb)

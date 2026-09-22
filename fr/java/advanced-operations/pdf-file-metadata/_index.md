@@ -5,15 +5,15 @@ type: docs
 weight: 200
 url: /fr/java/pdf-file-metadata/
 description: Découvrez comment extraire, mettre à jour et gérer les métadonnées de fichiers PDF, les informations sur les documents et les propriétés XMP en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Obtenez et définissez les informations du document PDF et les métadonnées XMP en Java
-Abstract: Cet article explique comment utiliser les métadonnées PDF à l'aide d'Aspose.PDF pour Java. Apprenez à lire les informations d'un document telles que l'auteur, le titre et les mots-clés, à mettre à jour les propriétés du fichier, à inspecter la version et les privilèges du PDF, à définir les champs de métadonnées XMP et à enregistrer les métadonnées via les API DOM et de façade.
+AlternativeHeadline: Obtenir et définissez les informations du document PDF et les métadonnées XMP en Java
+Abstract: Cet article explique comment utiliser les métadonnées PDF à l'aide d'Aspose.PDF for Java. Apprenez à lire les informations d'un document telles que l'auteur, le titre et les mots-clés, à mettre à jour les propriétés du fichier, à inspecter la version et les privilèges du PDF, à définir les champs de métadonnées XMP et à enregistrer les métadonnées via les API DOM et de façade.
 ---
-Aspose.PDF pour Java propose deux manières principales de travailler avec les métadonnées :
+Aspose.PDF for Java propose deux manières principales de travailler avec les métadonnées :
 
 - L'API DOM via `Document`, `DocumentInfo` et `document.getMetadata()`.
 - L'API de façade via `PdfFileInfo`.

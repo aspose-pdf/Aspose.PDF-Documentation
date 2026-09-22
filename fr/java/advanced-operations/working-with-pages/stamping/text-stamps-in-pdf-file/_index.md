@@ -5,13 +5,13 @@ type: docs
 weight: 20
 url: /fr/java/text-stamps-in-the-pdf-file/
 description: Découvrez comment ajouter des tampons de texte aux documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter des tampons de texte aux fichiers PDF avec Java
-Abstract: Cet article explique comment ajouter des tampons de texte aux fichiers PDF à l'aide d'Aspose.PDF pour Java. Il couvre la création d'un tampon de texte d'arrière-plan, son positionnement, sa rotation et la personnalisation de la police, de la taille, du style et de la couleur.
+Abstract: Cet article explique comment ajouter des tampons de texte aux fichiers PDF à l'aide d'Aspose.PDF for Java. Il couvre la création d'un tampon de texte d'arrière-plan, son positionnement, sa rotation et la personnalisation de la police, de la taille, du style et de la couleur.
 ---
 Utilisez des tampons de texte lorsque vous devez ajouter des étiquettes ou des filigranes visibles aux pages PDF.
 

@@ -1,21 +1,17 @@
 ---
-title: Mettre à jour les dimensions de la page dans Ruby
-linktitle: Mettre à jour les dimensions de la page dans Ruby
+title: Mettre à jour les dimensions de la page en Ruby
+linktitle: Mettre à jour les dimensions de la page en Ruby
 type: docs
 weight: 90
 url: /java/update-page-dimensions-in-ruby/
 description: Découvrez comment mettre à jour les dimensions de la page d'un document PDF à l'aide de Ruby avec Aspose.PDF pour un formatage de page précis.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Mettre à jour les dimensions de la page
+## Aspose.PDF - Mettre à jour les dimensions de la page
 
+Pour mettre à jour les dimensions de la page à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **UpdatePageDimensions**.
 
-
-Pour mettre à jour les dimensions de la page à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **UpdatePageDimensions**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -47,13 +43,8 @@ pdf.save(data_dir + "output.pdf")
 puts "Dimensions updated successfully!"
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Mettre à jour les dimensions de la page (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Mettre à jour les dimensions de la page (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/updatepagedimensions.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/updatepagedimensions.rb)

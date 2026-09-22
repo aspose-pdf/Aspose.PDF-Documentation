@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /fr/java/image-stamps-in-pdf-page/
 description: Découvrez comment ajouter des tampons d'image aux pages PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ajoutez des tampons d'image et des arrière-plans d'images aux pages PDF avec Java
-Abstract: Cet article explique comment ajouter des tampons d'image aux fichiers PDF à l'aide d'Aspose.PDF pour Java. Il couvre les tampons d'image avec le positionnement, la rotation, l'opacité et le contrôle de qualité, et utilise une image comme arrière-plan d'une boîte flottante.
+AlternativeHeadline: Ajouter des tampons d'image et des arrière-plans d'images aux pages PDF avec Java
+Abstract: Cet article explique comment ajouter des tampons d'image aux fichiers PDF à l'aide d'Aspose.PDF for Java. Il couvre les tampons d'image avec le positionnement, la rotation, l'opacité et le contrôle de qualité, et utilise une image comme arrière-plan d'une boîte flottante.
 ---
-Aspose.PDF pour Java prend en charge les tampons d'image en tant que superpositions et éléments de mise en page basés sur des images.
+Aspose.PDF for Java prend en charge les tampons d'image en tant que superpositions et éléments de mise en page basés sur des images.
 
 ## Ajouter un tampon d'image
 

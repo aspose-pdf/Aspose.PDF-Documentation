@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /fr/java/add-pages/
 description: Découvrez comment ajouter ou insérer des pages dans des documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter ou insérer des pages PDF avec Java
-Abstract: Cet article explique comment ajouter des pages aux fichiers PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'insertion d'une page vierge à un emplacement spécifique, l'ajout d'une page à la fin d'un document et l'importation d'une page à partir d'un autre PDF.
+Abstract: Cet article explique comment ajouter des pages aux fichiers PDF à l'aide d'Aspose.PDF for Java. Il couvre l'insertion d'une page vierge à un emplacement spécifique, l'ajout d'une page à la fin d'un document et l'importation d'une page à partir d'un autre PDF.
 ---
-Aspose.PDF pour Java vous permet d'insérer des pages vierges ou d'importer des pages à partir d'un autre document.
+Aspose.PDF for Java vous permet d'insérer des pages vierges ou d'importer des pages à partir d'un autre document.
 
 ## Insérer une page vide à un emplacement spécifique
 

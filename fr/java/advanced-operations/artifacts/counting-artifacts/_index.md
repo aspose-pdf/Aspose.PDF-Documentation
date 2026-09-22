@@ -5,13 +5,13 @@ type: docs
 weight: 40
 url: /fr/java/counting-artifacts/
 description: Découvrez comment inspecter et compter les artefacts de pagination dans les documents PDF à l'aide de Java avec Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Compter les artefacts au format PDF à l'aide de Java
-Abstract: Cet article explique comment inspecter et compter les artefacts de pagination dans les documents PDF à l'aide d'Aspose.PDF pour Java. Il montre comment parcourir les artefacts de page et compter les sous-types de filigrane, d’arrière-plan, d’en-tête et de pied de page.
+Abstract: Cet article explique comment inspecter et compter les artefacts de pagination dans les documents PDF à l'aide d'Aspose.PDF for Java. Il montre comment parcourir les artefacts de page et compter les sous-types de filigrane, d’arrière-plan, d’en-tête et de pied de page.
 ---
 
 ## Compter les artefacts de pagination sur une page
@@ -19,7 +19,7 @@ Abstract: Cet article explique comment inspecter et compter les artefacts de pag
 Utilisez cet exemple lorsque vous avez besoin d’un décompte rapide des principaux sous-types d’artefacts de pagination sur une page.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Lisez la collection [Artefact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) à partir de la [Page] cible (https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Lisez la collection [Artefact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) à partir de la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
 1. Parcourez la collection de pages [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) et comptez chaque sous-type de pagination que vous devez signaler.
 
 ```java

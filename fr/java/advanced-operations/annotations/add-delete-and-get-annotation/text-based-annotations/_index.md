@@ -4,14 +4,14 @@ linktitle: Annotations de texte
 type: docs
 weight: 10
 url: /fr/java/text-based-annotations/
-description: Découvrez comment créer, inspecter et supprimer des annotations PDF basées sur du texte à l'aide d'Aspose.PDF pour Java, y compris le texte libre, le balisage surligné, barré, ondulé et souligné.
-lastmod: "2026-09-17"
+description: Découvrez comment créer, inspecter et supprimer des annotations PDF basées sur du texte à l'aide d'Aspose.PDF for Java, y compris le texte libre, le balisage surligné, barré, ondulé et souligné.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Travaillez avec des annotations PDF texte en Java.
-Abstract: Cet article montre comment utiliser cinq types d'annotations basées sur du texte dans Aspose.PDF pour Java, notamment les annotations de texte libre, de surbrillance, de barré, de ondulé et de soulignement. Apprenez à ajouter, récupérer et supprimer des annotations, ainsi que des techniques avancées telles que le marquage du texte et l'aplatissement du balisage interactif.
+Abstract: Cet article montre comment utiliser cinq types d'annotations basées sur du texte dans Aspose.PDF for Java, notamment les annotations de texte libre, de surbrillance, de barré, de ondulé et de soulignement. Apprenez à ajouter, récupérer et supprimer des annotations, ainsi que des techniques avancées telles que le marquage du texte et l'aplatissement du balisage interactif.
 ---
 Les annotations textuelles permettent aux réviseurs et aux développeurs d'ajouter des notes interactives, des surlignages et des balises aux documents PDF sans altérer le contenu principal. Cette section couvre cinq types d'annotations pratiques utilisés dans les flux de travail de révision de documents, les scénarios de conformité et les cycles de commentaires collaboratifs.
 
@@ -25,11 +25,11 @@ Cet article couvre les types d'annotations textuelles suivants :
 - **Squiggly** : soulignement ondulé pour indiquer des erreurs ou des problèmes
 - **Souligné** : soulignement traditionnel avec précision en quatre points en option
 
-## Ajouter, obtenir et supprimer des annotations de texte gratuites
+## Ajouter, obtenir et supprimer des annotations de texte libre
 
 Les annotations de texte libre agissent comme des zones de texte flottantes qui peuvent être modifiées sans affecter la structure du document. Utilisez ces exemples pour ajouter des zones de commentaires, inspecter leurs propriétés ou les supprimer.
 
-### Ajouter des annotations de texte libres
+### Ajouter des annotations de texte libre
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez une [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) avec un rectangle et des paramètres d'apparence.
@@ -51,7 +51,7 @@ public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Obtenez des annotations de texte gratuites
+### Obtenir des annotations de texte libre
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations sur la page et filtrez par [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -72,7 +72,7 @@ public static void freeTextAnnotationGet(Path inputFile) {
 ### Supprimer les annotations de texte libre
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Recherchez des annotations de texte libres en parcourant les annotations de page et en filtrant par type.
+1. Recherchez des annotations de texte libre en parcourant les annotations de page et en filtrant par type.
 1. Ajoutez les annotations correspondantes à une liste de suppression et supprimez-les de la page.
 1. Enregistrez le document mis à jour.
 
@@ -93,11 +93,11 @@ public static void freeTextAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ajouter, obtenir et supprimer des annotations de surbrillance
+## Ajouter, obtenir et supprimer des annotations de surlignage
 
-Les annotations de surbrillance marquent les passages importants avec une superposition semi-transparente. Utilisez ces exemples pour créer des surlignages pour la révision de documents, localiser les surlignages existants et nettoyer le balisage.
+Les annotations de surlignage marquent les passages importants avec une superposition semi-transparente. Utilisez ces exemples pour créer des surlignages pour la révision de documents, localiser les surlignages existants et nettoyer le balisage.
 
-### Ajouter des annotations de surbrillance
+### Ajouter des annotations de surlignage
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez une [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) avec un rectangle définissant la zone de surbrillance.
@@ -116,7 +116,7 @@ public static void textHighlightAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Obtenez des annotations de surbrillance
+### Obtenir des annotations de surlignage
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations et filtrez par [AnnotationType.Highlight](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -134,10 +134,10 @@ public static void textHighlightAnnotationGet(Path inputFile) {
 }
 ```
 
-### Supprimer les annotations de surbrillance
+### Supprimer les annotations de surlignage
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Collectez les annotations de surbrillance en filtrant les annotations par type.
+1. Collectez les annotations de surlignage en filtrant les annotations par type.
 1. Supprimez chaque annotation de la page.
 1. Enregistrez le document mis à jour.
 
@@ -253,7 +253,7 @@ public static void textSquigglyAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Obtenez des annotations ondulées
+### Obtenir des annotations ondulées
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations et filtrez par [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -364,12 +364,12 @@ public static void textUnderlineAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Ajouter une annotation soulignée avec des points quadruples
+## Ajouter une annotation soulignée avec des groupes de quatre points
 
-Cet exemple définit explicitement la zone de soulignement via des points quadruples dérivés d'un rectangle.
+Cet exemple définit explicitement la zone de soulignement via des groupes de quatre points dérivés d'un rectangle.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Créez une [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) et calculez ses points quadruples.
+1. Créez une [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) et calculez ses groupes de quatre points.
 1. Ajoutez l'annotation à la page et enregistrez le document.
 
 ```java
@@ -395,13 +395,13 @@ public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFil
 }
 ```
 
-## Obtenez le texte marqué à partir des annotations soulignées
+## Obtenir le texte marqué à partir des annotations soulignées
 
 Récupérez le contenu du texte réel couvert par les annotations soulignées. Ces exemples montrent deux approches : lire le texte marqué complet comme une seule chaîne ou traiter des fragments de texte individuellement pour une analyse détaillée.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations soulignées sur la page.
-1. Lisez soit `getMarkedText()` ou `getMarkedTextFragments()` et imprimez les résultats.
+1. Lisez soit `getMarkedText()` ou `getMarkedTextFragments()` et affichez les résultats.
 
 ```java
 public static void textUnderlineMarkedTextGet(Path inputFile) {

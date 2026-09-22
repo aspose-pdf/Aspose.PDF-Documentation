@@ -5,15 +5,15 @@ type: docs
 weight: 100
 url: /fr/java/working-with-vector-graphics/
 description: Découvrez comment extraire, déplacer, supprimer, copier et exporter des graphiques vectoriels dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Utilisez GraphicsAbsorber pour inspecter et manipuler des graphiques vectoriels PDF en Java
-Abstract: Cet article explique comment utiliser des graphiques vectoriels dans Aspose.PDF pour Java à l'aide de la classe GraphicsAbsorber. Découvrez comment inspecter les éléments vectoriels sur une page, les déplacer ou les supprimer, copier des graphiques entre les pages et exporter du contenu vectoriel au format SVG.
+Abstract: Cet article explique comment utiliser des graphiques vectoriels dans Aspose.PDF for Java à l'aide de la classe GraphicsAbsorber. Découvrez comment inspecter les éléments vectoriels sur une page, les déplacer ou les supprimer, copier des graphiques entre les pages et exporter du contenu vectoriel au format SVG.
 ---
-Aspose.PDF pour Java expose le contenu vectoriel via les objets `GraphicsAbsorber` et `GraphicElement`. Cela vous permet d'inspecter les éléments vectoriels de bas niveau sur une page, puis de les mettre à jour, de les supprimer, de les copier ou de les exporter.
+Aspose.PDF for Java expose le contenu vectoriel via les objets `GraphicsAbsorber` et `GraphicElement`. Cela vous permet d'inspecter les éléments vectoriels de bas niveau sur une page, puis de les mettre à jour, de les supprimer, de les copier ou de les exporter.
 
 ## Inspecter les graphiques vectoriels sur une page
 
@@ -169,7 +169,7 @@ public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
 }
 ```
 
-## Copiez les graphiques vectoriels sur une autre page en tant que collection
+## Copier les graphiques vectoriels sur une autre page en tant que collection
 
 Utilisez cet exemple lorsque la totalité de la collection de graphiques vectoriels absorbés doit être copiée sur une nouvelle page en un seul appel.
 

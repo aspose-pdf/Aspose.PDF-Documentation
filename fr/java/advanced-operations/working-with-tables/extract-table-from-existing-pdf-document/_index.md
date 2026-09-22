@@ -5,17 +5,17 @@ type: docs
 weight: 20
 url: /fr/java/extracting-table/
 description: Découvrez comment extraire des données de tableau à partir de documents PDF existants en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Extraire les données d'un tableau à partir de fichiers PDF avec Java
-Abstract: Cet article explique comment extraire des tableaux de documents PDF à l'aide d'Aspose.PDF pour Java. Il montre comment utiliser TableAbsorber pour détecter les tableaux par page, itérer les lignes et les cellules et collecter le texte des cellules pour le traitement en aval.
+Abstract: Cet article explique comment extraire des tableaux de documents PDF à l'aide d'Aspose.PDF for Java. Il montre comment utiliser TableAbsorber pour détecter les tableaux par page, itérer les lignes et les cellules et collecter le texte des cellules pour le traitement en aval.
 ---
 Utilisez `TableAbsorber` lorsque vous devez détecter les structures de tableaux dans un PDF existant et lire leur contenu.
 
-## Extraire le texte des tables détectées
+## Extraire le texte des tableaux détectés
 
 Utilisez cet exemple lorsque vous devez localiser des tableaux sur chaque page et collecter le texte de leur cellule.
 

@@ -5,42 +5,31 @@ type: docs
 weight: 70
 url: /java/signature-integrity-checks/
 description: Découvrez comment valider la couverture et l'intégrité des signatures en Java avec la façade PdfFileSignature.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Valider la couverture et l'intégrité de la signature PDF en Java
-Abstract: Découvrez comment inspecter l'intégrité des signatures avec Aspose.PDF pour Java. L'ensemble d'exemples Java actuel utilise `verifySignature` pour valider la signature sélectionnée et `coversWholeDocument` pour déterminer si la signature protège l'intégralité du PDF.
+Abstract: Découvrez comment inspecter l'intégrité des signatures avec Aspose.PDF for Java. L'ensemble d'exemples Java actuel utilise `verifySignature` pour valider la signature sélectionnée et `coversWholeDocument` pour déterminer si la signature protège l'intégralité du PDF.
 ---
 ## Vérifier l'intégrité de la signature
 
-
-
 Cet article correspond au même flux de travail de vérification exposé par `PdfFileSignatureExamples.java`.
 
+### Étapes
 
-### 
-Étapes
+1. Liez le PDF signé avec `PdfFileSignature`.
 
-
-1. 
-Liez le PDF signé avec `PdfFileSignature`.
-
-2. 
-Sélectionnez un nom de signature dans le document.
+2. Sélectionnez un nom de signature dans le document.
 3. Appelez `verifySignature` pour valider le contenu de la signature.
 
-4. 
-Appelez `coversWholeDocument` pour confirmer la couverture à l'échelle du document.
+4. Appelez `coversWholeDocument` pour confirmer que la signature couvre l’ensemble du document.
 
-5. 
-Fermez l'objet façade.
+5. Fermez l’objet de façade.
 
-
-### 
-Exemple Java
+### Exemple Java
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {

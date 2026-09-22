@@ -5,17 +5,13 @@ type: docs
 weight: 20
 url: /java/add-toc-to-existing-pdf-in-php/
 description: Découvrez comment ajouter une table des matières (TOC) à un document PDF existant en PHP avec Aspose.PDF pour une navigation améliorée.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Ajouter une table des matières
+## Aspose.PDF - Ajouter une table des matières
 
-
-
-Pour ajouter une table des matières dans un document PDF à l'aide de **Aspose.PDF Java pour PHP**, invoquez simplement la classe **AddToc**.
+Pour ajouter une table des matières dans un document PDF à l'aide de **Aspose.PDF Java pour PHP**, utilisez la classe **AddToc**.
 
 Code PHP
-
 
 ```php
 
@@ -71,13 +67,8 @@ print "Added TOC Successfully, please check the output file.";
 
 ```
 
+**Télécharger l’exemple de code**
 
-**Télécharger le code d'exécution**
+Téléchargez **Ajouter une table des matières (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-
-Téléchargez** Ajouter une table des matières (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

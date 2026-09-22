@@ -4,13 +4,13 @@ linktitle: Importer et exporter des données de formulaire
 type: docs
 weight: 80
 url: /fr/java/import-export-form-data/
-description: Importez et exportez les données des champs AcroForm aux formats XML, FDF, XFDF et JSON à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Importez et exportez les données des champs AcroForm aux formats XML, FDF, XFDF et JSON à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 TechArticle: true
 AlternativeHeadline: Importer et exporter des données de formulaire PDF avec Java
-Abstract: Cet article explique comment échanger des données AcroForm avec des formats externes à l'aide d'Aspose.PDF pour Java. Il couvre l'importation et l'exportation de données XML, FDF et XFDF via la façade de formulaire et l'extraction des valeurs des champs de formulaire au format JSON.
+Abstract: Cet article explique comment échanger des données AcroForm avec des formats externes à l'aide d'Aspose.PDF for Java. Il couvre l'importation et l'exportation de données XML, FDF et XFDF via la façade de formulaire et l'extraction des valeurs des champs de formulaire au format JSON.
 ---
-Aspose.PDF pour Java prend en charge plusieurs formats d'échange de données courants pour les formulaires interactifs.
+Aspose.PDF for Java prend en charge plusieurs formats d'échange de données courants pour les formulaires interactifs.
 
 ## Importer des données de formulaire à partir de XML
 

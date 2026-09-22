@@ -5,11 +5,10 @@ type: docs
 weight: 90
 url: /java/set-pdf-file-information-in-python/
 description: Découvrez comment définir les informations d'un fichier PDF telles que l'auteur, le titre, etc. en Python à l'aide d'Aspose.PDF pour organiser les documents.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
 
-Pour mettre à jour les informations du document PDF à l'aide de **Aspose.PDF Java pour Python**, invoquez simplement la classe **SetPdfFileInfo**.
-
+Pour mettre à jour les informations du document PDF à l'aide de **Aspose.PDF Java pour Python**, utilisez la classe **SetPdfFileInfo**.
 
 ```python
 doc= self.Document()
@@ -32,11 +31,8 @@ doc.save(self.dataDir + "Updated_Information.pdf")
 print "Update document information, please check output file."
 ```
 
+**Télécharger l’exemple de code**
 
-**Télécharger le code d'exécution**
+Téléchargez **Définir les informations du fichier PDF (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-Téléchargez** Définir les informations du fichier PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)

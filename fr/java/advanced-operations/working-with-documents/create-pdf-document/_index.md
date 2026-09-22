@@ -4,16 +4,16 @@ linktitle: Créer un document PDF
 type: docs
 weight: 10
 url: /fr/java/create-pdf-document/
-description: Apprenez à créer des fichiers PDF et à créer des PDF consultables en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-09-17"
+description: Apprenez à créer des fichiers PDF et à créer des PDF permettant la recherche de textes en Java à l'aide d'Aspose.PDF.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Créez des fichiers PDF et des documents PDF consultables avec Java
-Abstract: Cet article montre comment créer des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la création d'un nouveau PDF à partir de zéro et la conversion d'un document basé sur une image en un PDF consultable en fournissant une sortie HOCR à partir d'un moteur OCR externe.
+AlternativeHeadline: Créer des fichiers PDF et des documents PDF permettant la recherche de textes avec Java
+Abstract: Cet article montre comment créer des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la création d'un nouveau PDF à partir de zéro et la conversion d'un document basé sur une image en un PDF permettant la recherche de texte en fournissant une sortie HOCR à partir d'un moteur OCR externe.
 ---
-Aspose.PDF pour Java prend en charge à la fois la création simple de documents et les flux de travail PDF consultables assistés par OCR.
+Aspose.PDF for Java prend en charge à la fois la création simple de documents et les flux de travail PDF permettant la recherche de textes assistés par OCR.
 
 ## Créer un nouveau document PDF
 
@@ -34,12 +34,12 @@ public static void createNewDocument(Path outputFile) {
 }
 ```
 
-## Créer un PDF consultable
+## Créer un PDF permettant la recherche de texte
 
 L'exemple `createSearchablePdf` utilise `Document.convert(...)` avec une implémentation `CallBackGetHocr`. Le rappel écrit l'image source dans un fichier temporaire, appelle Tesseract avec l'option `hocr`, lit le balisage HOCR généré et le renvoie à Aspose.PDF.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Créez le rappel `CallBackGetHocr` et convertissez le document source en contenu PDF consultable.
+1. Créez le rappel `CallBackGetHocr` et convertissez le document source en contenu PDF permettant la recherche de texte.
 1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -180,7 +180,7 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 }
 ```
 
-## Obtenez toutes les polices utilisées dans un PDF
+## Obtenir toutes les polices utilisées dans un PDF
 
 Cet exemple répertorie toutes les polices détectées dans le document afin que vous puissiez vérifier l'utilisation des polices avant d'exporter ou de mettre à jour le fichier.
 
@@ -198,9 +198,9 @@ public static void getAllFonts(Path inputFile) {
 }
 ```
 
-## Améliorer l'intégration des polices en sous-définissant les polices
+## Améliorer l'intégration des polices en incorporant des sous-ensembles de polices
 
-Utilisez cette approche lorsque vous souhaitez réduire la charge utile des polices tout en gardant les données de polices incorporées alignées sur l'utilisation du document.
+Utilisez cette approche lorsque vous souhaitez réduire la taille des données de police tout en gardant les données de polices incorporées alignées sur l'utilisation du document.
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Exécutez le sous-ensemble de polices via les utilitaires de polices de document avec les valeurs [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) requises.
@@ -234,7 +234,7 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 }
 ```
 
-## Obtenez le facteur de zoom d'ouverture du document
+## Obtenir le facteur de zoom d'ouverture du document
 
 Utilisez cet exemple pour vérifier si un PDF définit déjà un niveau de zoom explicite pour son action d'ouverture.
 

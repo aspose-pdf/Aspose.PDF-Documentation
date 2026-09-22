@@ -5,17 +5,17 @@ type: docs
 weight: 20
 url: /fr/java/get-update-and-expand-bookmark/
 description: Découvrez comment récupérer, mettre à jour et développer des signets dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Inspectez les propriétés des signets et développez les contours dans les fichiers PDF avec Java
-Abstract: Cet article explique comment lire, mettre à jour et développer des signets à l'aide d'Aspose.PDF pour Java. Il couvre l'itération des éléments du plan, l'extraction des numéros de page des signets avec PdfBookmarkEditor, la lecture des signets enfants, la mise à jour des titres et du style des signets et l'ouverture forcée des plans lorsque le document est affiché.
+Abstract: Cet article explique comment lire, mettre à jour et développer des signets à l'aide d'Aspose.PDF for Java. Il couvre l'itération des éléments du plan, l'extraction des numéros de page des signets avec PdfBookmarkEditor, la lecture des signets enfants, la mise à jour des titres et du style des signets et l'ouverture forcée des plans lorsque le document est affiché.
 ---
-Aspose.PDF pour Java expose les signets à la fois via le modèle de plan de document et la façade `PdfBookmarkEditor`.
+Aspose.PDF for Java expose les signets à la fois via le modèle de plan de document et la façade `PdfBookmarkEditor`.
 
-## Obtenir les propriétés des favoris
+## Obtenir les propriétés des signets
 
 Utilisez cet exemple lorsque vous devez inspecter les entrées de signets de niveau supérieur dans le plan du document.
 
@@ -37,7 +37,7 @@ public static void getBookmarks(Path inputFile) {
 }
 ```
 
-## Obtenir les numéros de page des favoris
+## Obtenir les numéros de page des signets
 
 Cet exemple utilise `PdfBookmarkEditor` pour extraire les titres, les niveaux, les numéros de page et les actions des signets.
 
@@ -66,7 +66,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 }
 ```
 
-## Obtenir des favoris pour enfants
+## Obtenir des signets enfants
 
 Utilisez cet exemple lorsque vous devez inspecter à la fois les éléments de plan de niveau supérieur et imbriqués.
 
@@ -99,7 +99,7 @@ public static void getChildBookmarks(Path inputFile) {
 }
 ```
 
-## Mettre à jour les favoris
+## Mettre à jour les signets
 
 Utilisez cet exemple lorsqu’un titre et un style de signet existant doivent être modifiés.
 
@@ -121,7 +121,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 }
 ```
 
-## Développer les favoris par défaut
+## Développer les signets par défaut
 
 Utilisez cet exemple lorsque le panneau de signets doit s'ouvrir et afficher les éléments de plan développés lorsque le document est affiché.
 

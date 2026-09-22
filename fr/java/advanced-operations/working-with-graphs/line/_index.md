@@ -5,13 +5,13 @@ type: docs
 weight: 40
 url: /fr/java/add-line/
 description: Apprenez à dessiner des formes de lignes et des lignes stylisées dans des fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Dessinez des formes de lignes dans des fichiers PDF à l'aide de Java
-Abstract: Cet article montre comment ajouter des formes de lignes aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la création de lignes à partir de tableaux de coordonnées, l'application d'un style et d'une couleur en pointillés et le dessin de lignes sur toute la page.
+Abstract: Cet article montre comment ajouter des formes de lignes aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la création de lignes à partir de tableaux de coordonnées, l'application d'un style et d'une couleur en pointillés et le dessin de lignes sur toute la page.
 ---
 ## Ajouter une ligne pointillée
 
@@ -39,11 +39,11 @@ public static void addLine(Path outputFile) {
 }
 ```
 
-## Ajouter une ligne pointillée ou pointillée colorée
+## Ajouter une ligne colorée en pointillés ou en tirets
 
 `addDottedDashedLine` utilise les mêmes coordonnées et paramètres de tiret, mais applique également `Color.getRed()`.
 
-## Tracez des lignes sur la page
+## Tracer des lignes sur la page
 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.

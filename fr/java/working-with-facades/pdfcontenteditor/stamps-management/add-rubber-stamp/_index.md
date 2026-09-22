@@ -1,26 +1,22 @@
 ---
-title: Ajouter un tampon en caoutchouc
-linktitle: Ajouter un tampon en caoutchouc
+title: Ajouter une annotation de tampon
+linktitle: Ajouter une annotation de tampon
 type: docs
 weight: 10
 url: /java/add-rubber-stamp/
 description: Découvrez comment ajouter une annotation de tampon à un document PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 TechArticle: true
-AlternativeHeadline: Ajouter un tampon en caoutchouc à un PDF en Java
-Abstract: Cet article montre comment lier un PDF, créer une annotation de tampon avec le texte et la couleur de l'étiquette, et enregistrer le document mis à jour à l'aide de la façade PdfContentEditor dans Aspose.PDF pour Java.
+AlternativeHeadline: Ajouter une annotation de tampon à un PDF en Java
+Abstract: Cet article montre comment lier un PDF, créer une annotation de tampon avec le texte et la couleur de l'étiquette, et enregistrer le document mis à jour à l'aide de la façade PdfContentEditor dans Aspose.PDF for Java.
 ---
-## Ajouter un tampon en caoutchouc
+## Ajouter une annotation de tampon
 
+1. Liez le PDF source à la façade `PdfContentEditor`.
 
-1. 
-Liez le PDF source à la façade `PdfContentEditor`.
+2. Appelez `createRubberStamp(...)` avec le numéro de page, le rectangle, le titre, le contenu et la couleur.
 
-2. 
-Appelez `createRubberStamp(...)` avec le numéro de page, le rectangle, le titre, le contenu et la couleur.
-
-3. 
-Enregistrez le document PDF mis à jour.
+3. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void addRubberStamp(Path inputFile, Path outputFile) {

@@ -5,15 +5,15 @@ type: docs
 weight: 30
 url: /fr/java/floating-box/
 description: Découvrez comment utiliser FloatingBox pour la mise en page du texte, le contenu multicolonne et le positionnement précis dans les documents PDF avec Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: Créer et positionner des conteneurs FloatingBox stylisés en PDF avec Java
-Abstract: Cet article explique comment utiliser FloatingBox dans Aspose.PDF pour Java. Il couvre le placement de texte dans des conteneurs flottants bordés, la création de dispositions répétitives sur plusieurs colonnes, l'utilisation de couleurs d'arrière-plan, de décalages absolus et d'options d'alignement horizontal ou vertical.
+Abstract: Cet article explique comment utiliser FloatingBox dans Aspose.PDF for Java. Il couvre le placement de texte dans des conteneurs flottants bordés, la création de dispositions répétitives sur plusieurs colonnes, l'utilisation de couleurs d'arrière-plan, de décalages absolus et d'options d'alignement horizontal ou vertical.
 ---
-Aspose.PDF pour Java utilise `FloatingBox` pour créer des conteneurs de texte réutilisables et des mises en page basées sur des colonnes.
+Aspose.PDF for Java utilise `FloatingBox` pour créer des conteneurs de texte réutilisables et des mises en page basées sur des colonnes.
 
 ## Créer et ajouter une boîte flottante
 
@@ -79,7 +79,7 @@ public static void multiColumnLayout(Path outputFile) {
 }
 ```
 
-## Commencez chaque fragment comme premier élément d'une colonne
+## Commencer chaque fragment comme premier élément d'une colonne
 
 Utilisez cet exemple lorsque chaque fragment inséré doit commencer un nouveau segment de flux de colonne.
 

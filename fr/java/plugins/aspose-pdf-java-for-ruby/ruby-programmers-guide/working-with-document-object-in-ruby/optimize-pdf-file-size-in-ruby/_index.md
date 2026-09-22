@@ -1,21 +1,17 @@
 ---
-title: Optimiser la taille du fichier PDF dans Ruby
-linktitle: Optimiser la taille du fichier PDF dans Ruby
+title: Optimiser la taille du fichier PDF en Ruby
+linktitle: Optimiser la taille du fichier PDF en Ruby
 type: docs
 weight: 80
 url: /java/optimize-pdf-file-size-in-ruby/
 description: Apprenez à réduire la taille des fichiers PDF sans compromettre la qualité à l'aide d'Aspose.PDF pour Ruby.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Optimiser la taille du fichier PDF
-
-
+## Aspose.PDF - Optimiser la taille du fichier PDF
 
 Pour optimiser la taille du fichier d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, appelez la méthode **optimize_filesize** du module **Optimize**.
 
-Code Rubis
-
+Code Ruby
 
 ```java
  def optimize_filesize()
@@ -49,13 +45,8 @@ Code Rubis
 endВ
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Optimiser la taille du fichier PDF (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Optimiser la taille du fichier PDF (Aspose.PDF)**В à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)

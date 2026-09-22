@@ -1,21 +1,17 @@
 ---
-title: Définir les informations du fichier PDF dans Ruby
-linktitle: Définir les informations du fichier PDF dans Ruby
+title: Définir les informations du fichier PDF en Ruby
+linktitle: Définir les informations du fichier PDF en Ruby
 type: docs
 weight: 120
 url: /java/set-pdf-file-information-in-ruby/
 description: Définissez et mettez à jour par programmation les métadonnées PDF telles que le titre, l'auteur et les mots-clés à l'aide de Ruby.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Définir les informations du fichier PDF
+## Aspose.PDF - Définir les informations du fichier PDF
 
+Pour mettre à jour les informations du document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **SetPdfFileInfo**.
 
-
-Pour mettre à jour les informations du document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **SetPdfFileInfo**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -49,13 +45,8 @@ doc.save(data_dir + "Updated_Information.pdf")
 puts "Update document information, please check output file."
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Définir les informations du fichier PDF (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Définir les informations du fichier PDF (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

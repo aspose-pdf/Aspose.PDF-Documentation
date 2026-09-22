@@ -4,14 +4,14 @@ linktitle: Modification d'AcroForm
 type: docs
 weight: 45
 url: /fr/java/modifying-form/
-description: Modifiez les champs AcroForm dans les documents PDF à l'aide d'Aspose.PDF pour Java, notamment en effaçant le texte, en définissant des limites, en stylisant les champs et en supprimant des champs.
-lastmod: "2026-09-17"
+description: Modifiez les champs AcroForm dans les documents PDF à l'aide d'Aspose.PDF for Java, notamment en effaçant le texte, en définissant des limites, en stylisant les champs et en supprimant des champs.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Modifier et personnaliser les champs du formulaire PDF avec Java
-Abstract: Cet article explique comment modifier le contenu AcroForm à l'aide d'Aspose.PDF pour Java. Il couvre la suppression du texte des ressources de formulaire Typewriter, la définition et la lecture des limites de longueur des champs de texte, la modification de l'apparence de la police des champs de formulaire et la suppression de champs spécifiques par nom.
+Abstract: Cet article explique comment modifier le contenu AcroForm à l'aide d'Aspose.PDF for Java. Il couvre la suppression du texte des ressources de formulaire Typewriter, la définition et la lecture des limites de longueur des champs de texte, la modification de l'apparence de la police des champs de formulaire et la suppression de champs spécifiques par nom.
 ---
 La maintenance des formulaires implique souvent à la fois des modifications au niveau des champs et le nettoyage des ressources de page liées au formulaire.
 

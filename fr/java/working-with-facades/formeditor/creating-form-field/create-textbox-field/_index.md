@@ -1,30 +1,24 @@
 ---
-title: Créer un champ TextBox
-linktitle: Créer un champ TextBox
+title: Créer un champ de texte
+linktitle: Créer un champ de texte
 type: docs
 weight: 10
 url: /java/create-textbox-field/
 description: Découvrez comment ajouter des champs de zone de texte à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 TechArticle: true
 AlternativeHeadline: Créer des champs de formulaire de texte dans un PDF avec Java
-Abstract: Cet article montre comment lier un PDF existant, ajouter des champs de texte avec des valeurs par défaut et enregistrer le document modifié à l'aide de la façade FormEditor dans Aspose.PDF pour Java.
+Abstract: Cet article montre comment lier un PDF existant, ajouter des champs de texte avec des valeurs par défaut et enregistrer le document modifié à l'aide de la façade FormEditor dans Aspose.PDF for Java.
 ---
 Utilisez `FormEditorExamples.createTextBoxField(...)` pour ajouter des champs de texte à un formulaire PDF.
 
+## Créer des champs de zone de texte
 
-## 
-Créer des champs de zone de texte
+1. Liez le PDF source à la façade `FormEditor`.
 
+2. Ajoutez chaque champ de texte avec `FieldType.Text`, le nom du champ, la valeur par défaut, le numéro de page et le rectangle.
 
-1. 
-Liez le PDF source à la façade `FormEditor`.
-
-2. 
-Ajoutez chaque champ de texte avec `FieldType.Text`, le nom du champ, la valeur par défaut, le numéro de page et le rectangle.
-
-3. 
-Enregistrez le document mis à jour.
+3. Enregistrez le document mis à jour.
 
 ```java
 public static void createTextBoxField(Path inputFile, Path outputFile) {

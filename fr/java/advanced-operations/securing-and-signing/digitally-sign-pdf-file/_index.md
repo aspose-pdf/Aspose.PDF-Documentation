@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /fr/java/digitally-sign-pdf-file/
 description: Découvrez comment signer et certifier numériquement des documents PDF en Java à l'aide d'Aspose.PDF.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Signer numériquement des fichiers PDF avec Java
-Abstract: Ce guide explique comment signer numériquement des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre la signature avec un objet de certificat, la signature avec les paramètres de certificat de base et la certification d'un document avec une signature DocMDP pour contrôler les modifications autorisées après la signature.
+Abstract: Ce guide explique comment signer numériquement des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre la signature avec un objet de certificat, la signature avec les paramètres de certificat de base et la certification d'un document avec une signature DocMDP pour contrôler les modifications autorisées après la signature.
 ---
-Aspose.PDF pour Java prend en charge plusieurs flux de signature via `PdfFileSignature`.
+Aspose.PDF for Java prend en charge plusieurs flux de signature via `PdfFileSignature`.
 
 ## Signer un PDF avec un objet de certificat
 

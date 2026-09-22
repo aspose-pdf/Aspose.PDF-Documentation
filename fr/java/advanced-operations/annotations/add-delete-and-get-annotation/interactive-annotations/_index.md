@@ -4,14 +4,14 @@ linktitle: Annotations interactives
 type: docs
 weight: 60
 url: /fr/java/interactive-annotations/
-description: Découvrez comment ajouter, inspecter et supprimer des annotations de lien dans des documents PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Découvrez comment ajouter, inspecter et supprimer des annotations de lien dans des documents PDF à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Travaillez avec des annotations PDF interactives en Java.
-Abstract: Cet article explique comment utiliser des annotations de liens interactifs dans des fichiers PDF à l'aide d'Aspose.PDF pour Java. Il couvre la localisation du texte, la création d'une annotation de lien sur la zone de texte correspondante, la lecture des annotations de lien existantes et leur suppression.
+Abstract: Cet article explique comment utiliser des annotations de liens interactifs dans des fichiers PDF à l'aide d'Aspose.PDF for Java. Il couvre la localisation du texte, la création d'une annotation de lien sur la zone de texte correspondante, la lecture des annotations de lien existantes et leur suppression.
 ---
 Les annotations interactives de cette section se concentrent sur les flux de travail basés sur des liens et des boutons qui répondent aux actions de l'utilisateur dans une visionneuse PDF.
 
@@ -47,7 +47,7 @@ Cet exemple analyse la collection d'annotations de page et indique l'emplacement
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Parcourez les annotations sur la page cible.
-1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` et imprimez leurs rectangles.
+1. Filtrez les annotations par [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` et affichez leurs rectangles.
 
 ```java
 public static void linkGet(Path inputFile) {

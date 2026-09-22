@@ -5,17 +5,17 @@ type: docs
 weight: 10
 url: /fr/java/create-links/
 description: Découvrez comment créer des liens PDF internes, externes et distants en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Créer des annotations de lien dans des fichiers PDF avec Java
-Abstract: Cet article montre comment créer des annotations de lien à l'aide d'Aspose.PDF pour Java. Il couvre les actions de lancement, la navigation dans les documents à distance, la navigation dans les pages du document et les liens Web basés sur des URI en attachant des actions aux objets LinkAnnotation.
+Abstract: Cet article montre comment créer des annotations de lien à l'aide d'Aspose.PDF for Java. Il couvre les actions de lancement, la navigation dans les documents à distance, la navigation dans les pages du document et les liens Web basés sur des URI en attachant des actions aux objets LinkAnnotation.
 ---
-Aspose.PDF pour Java utilise `LinkAnnotation` avec un objet d'action pour définir le comportement des liens.
+Aspose.PDF for Java utilise `LinkAnnotation` avec un objet d'action pour définir le comportement des liens.
 
-## Créer un lien de lancement-action
+## Créer un lien avec une action de lancement
 
 Utilisez cet exemple lorsqu'une annotation de lien doit lancer un fichier ou une cible externe.
 

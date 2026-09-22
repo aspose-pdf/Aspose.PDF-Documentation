@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/protect-pdf-file/
 description: Découvrez comment crypter des fichiers PDF, déchiffrer des documents protégés, modifier les mots de passe et inspecter la protection par mot de passe en Java.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,36 +13,29 @@ TechArticle: true
 AlternativeHeadline: Définir les autorisations PDF et gérer le cryptage en Java
 Abstract: Cet article explique comment protéger les fichiers PDF en Java à l'aide d'Aspose.PDF. Il couvre l'application des mots de passe utilisateur et propriétaire, la définition des privilèges des documents, le cryptage et le déchiffrement des fichiers PDF, la modification des mots de passe et la vérification des mots de passe des candidats pour les documents cryptés.
 ---
-Aspose.PDF pour Java fournit plusieurs API pour sécuriser les fichiers PDF avec des mots de passe et des autorisations.
+Aspose.PDF for Java fournit plusieurs API pour sécuriser les fichiers PDF avec des mots de passe et des autorisations.
 
 
-## 
-Protéger les documents PDF en Java
+## Protéger les documents PDF en Java
 
 
 
-Les exemples dans `ProtectDocumentExamples.java` montrent comment :
+Les exemples dans `ProtectDocumentExamples.java` illustrent les opérations suivantes :
 
 
-1. 
-Appliquez le cryptage à un [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) avec les mots de passe utilisateur et propriétaire.
+1. Appliquez le chiffrement à un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) avec les mots de passe utilisateur et propriétaire.
 
-1. 
-Restreindre les autorisations avec [DocumentPrivilege] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
-1. Choisissez un [CryptoAlgorithm] (https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) pour le [Document] protégé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Restreignez les autorisations avec [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
+1. Choisissez un [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) pour le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) protégé.
 
-1. 
-Décryptez un [Document] protégé (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Déchiffrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) protégé.
 
-1. 
-Modifiez les mots de passe existants sur le [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Modifiez les mots de passe existants sur le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Testez les mots de passe des candidats avec [PdfFileInfo] (https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) et [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Testez les mots de passe candidats avec [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) et [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 
-## 
-Chiffrer un PDF avec des privilèges restreints
+## Chiffrer un PDF avec des privilèges restreints
 
 ```java
 public static void encryptPassword(Path inputFile, Path outputFile) {
@@ -84,8 +77,7 @@ public static void encryptPdfFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Décrypter un PDF protégé
+## Déchiffrer un PDF protégé
 
 
 ```java
@@ -100,8 +92,7 @@ public static void decryptPdfFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Changer les mots de passe
+## Changer les mots de passe
 
 
 ```java
@@ -116,8 +107,7 @@ public static void changePassword(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Déterminez le mot de passe correct dans une liste
+## Déterminer le mot de passe correct dans une liste
 
 ```java
 public static void determineCorrectPasswordFromList(Path inputFile) {

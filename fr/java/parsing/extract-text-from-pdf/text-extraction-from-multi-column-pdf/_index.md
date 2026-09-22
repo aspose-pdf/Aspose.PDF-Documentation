@@ -1,11 +1,11 @@
 ---
-title: Amélioration de l'extraction de texte à partir de PDF multicolonnes
+title: Améliorer l’extraction de texte à partir de PDF multicolonnes
 linktitle: Extraction de texte à partir de PDF multicolonnes
 type: docs
 weight: 30
 url: /java/text-extraction-from-multi-column-pdf/
-description: Apprenez des techniques pour améliorer l'extraction de texte à partir de mises en page PDF multicolonnes avec Aspose.PDF pour Java.
-lastmod: "2026-06-16"
+description: Apprenez des techniques pour améliorer l'extraction de texte à partir de mises en page PDF multicolonnes avec Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,29 +13,20 @@ sitemap:
 
 Les mises en page multicolonnes nécessitent souvent un traitement supplémentaire pour améliorer l'ordre de lecture et la qualité de l'extraction.
 
-
-## 
-Extraire le texte après avoir réduit la taille de la police
+## Extraire le texte après avoir réduit la taille de la police
 
 Cette technique met à jour les tailles de police des fragments de texte, enregistre le document ajusté en mémoire, puis extrait le texte du résultat transformé.
 
+1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 
-Ouvrez le PDF source dans une instance [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Créez un [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) et visitez toutes les pages du document pour collecter des objets [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 
-1. 
-Créez un [TextFragmentAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) et visitez toutes les pages du document pour collecter des objets [TextFragment] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Parcourez les fragments et réduisez la taille de chaque police selon le rapport demandé afin que la disposition des colonnes denses puisse être normalisée avant l'extraction.
 
-1. 
-Parcourez les fragments et réduisez la taille de chaque police selon le rapport demandé afin que la disposition des colonnes denses puisse être normalisée avant l'extraction.
+1. Enregistrez le [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ajusté dans un flux d'octets en mémoire.
+1. Rouvrez un deuxième [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) à partir de cette mémoire tampon.
 
-1. 
-Enregistrez le [Document] ajusté (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dans un flux d'octets en mémoire.
-1. Rouvrez un deuxième [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) à partir de cette mémoire tampon.
-
-1. 
-Créez un [TextAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/), visitez toutes les pages du document transformé et écrivez le texte extrait dans le fichier de sortie.
-
+1. Créez un [`TextAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/), visitez toutes les pages du document transformé et écrivez le texte extrait dans le fichier de sortie.
 
 ```java
 public static void extractTextReduceFont(Path inputFile, Path outputFile, double reduceRatio) throws Exception {
@@ -57,26 +48,18 @@ public static void extractTextReduceFont(Path inputFile, Path outputFile, double
 }
 ```
 
-## 
-Extraire du texte avec un facteur d'échelle
+## Extraire du texte avec un facteur d'échelle
 
+Utilisez `TextExtractionOptions` avec le mode de mise en forme Pure et ajustez le facteur d'échelle pour les mises en page comportant beaucoup de colonnes.
 
+1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Créez un [`TextAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) pour l'extraction du document complet.
 
-Utilisez `TextExtractionOptions` en mode de formatage pur et ajustez le facteur d'échelle pour les mises en page comportant beaucoup de colonnes.
+1. Créez [`TextExtractionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) avec le mode de mise en forme Pure afin d'utiliser un comportement d'extraction qui tient compte de la mise en page.
 
+1. Définissez le facteur d'échelle et appliquez les options d'extraction à l'absorbeur avant de visiter les pages.
 
-1. 
-Ouvrez le PDF source dans une instance [Document] (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Créez un [TextAbsorber] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) pour l'extraction du document complet.
-
-1. 
-Créez [TextExtractionOptions] (https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) en mode de formatage pur afin d'utiliser un comportement d'extraction sensible à la mise en page.
-
-1. 
-Définissez le facteur d'échelle et appliquez les options d'extraction à l'absorbeur avant de visiter les pages.
-
-1. 
-Visitez toutes les pages du document et écrivez le texte extrait dans le fichier de sortie.
+1. Visitez toutes les pages du document et écrivez le texte extrait dans le fichier de sortie.
 
 ```java
 public static void extractTextScaleFactor(Path inputFile, Path outputFile, double scaleFactor) throws Exception {

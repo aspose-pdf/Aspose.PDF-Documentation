@@ -5,15 +5,12 @@ type: docs
 weight: 40
 url: /java/working-with-text-in-php/
 description: Apprenez à manipuler et extraire du texte à partir de documents PDF en PHP à l'aide d'Aspose.PDF pour une meilleure gestion du contenu.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
 
 Cette section comprend les sujets suivants :
 
+- [Ajouter une chaîne HTML en utilisant DOM en PHP](/pdf/java/add-html-string-using-dom-in-php/)
+- [Ajouter du texte à un fichier PDF existant en PHP](/pdf/java/add-text-to-an-existing-pdf-file-in-php/)
 
-- 
-[Ajouter une chaîne HTML en utilisant DOM en PHP] (/pdf/java/add-html-string-using-dom-in-php/)
-- [Ajouter du texte à un fichier PDF existant en PHP] (/pdf/java/add-text-to-an-existing-pdf-file-in-php/)
-
-- 
-[Extraire le texte de toutes les pages d'un document PDF en PHP] (/pdf/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/)
+- [Extraire le texte de toutes les pages d'un document PDF en PHP](/pdf/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/)

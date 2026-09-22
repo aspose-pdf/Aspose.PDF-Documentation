@@ -4,18 +4,18 @@ linktitle: Remplir AcroForm
 type: docs
 weight: 20
 url: /fr/java/fill-form/
-description: Remplissez les champs AcroForm dans un document PDF à l'aide d'Aspose.PDF pour Java.
-lastmod: "2026-09-17"
+description: Remplissez les champs AcroForm dans un document PDF à l'aide d'Aspose.PDF for Java.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Remplissez les champs AcroForm dans les fichiers PDF avec Java
-Abstract: Cet article explique comment remplir les champs AcroForm à l'aide d'Aspose.PDF pour Java. L'exemple charge un PDF via la façade du formulaire, fait correspondre les noms de champs avec une carte de valeurs, met à jour les champs correspondants et enregistre le document complété.
+AlternativeHeadline: Remplir les champs AcroForm dans les fichiers PDF avec Java
+Abstract: Cet article explique comment remplir les champs AcroForm à l'aide d'Aspose.PDF for Java. L'exemple charge un PDF via la façade du formulaire, fait correspondre les noms de champs avec une carte de valeurs, met à jour les champs correspondants et enregistre le document complété.
 ---
 La façade `Form` peut être utilisée pour automatiser le remplissage des champs dans un AcroForm existant.
 
-## Remplissez les champs AcroForm avec de nouvelles valeurs
+## Remplir les champs AcroForm avec de nouvelles valeurs
 
 1. Ouvrez le document de formulaire PDF avec la façade [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 1. Parcourez les champs du formulaire et mettez à jour les entrées correspondantes avec les valeurs fournies.

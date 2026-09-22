@@ -5,11 +5,10 @@ type: docs
 weight: 50
 url: /java/get-page-properties-in-python/
 description: Découvrez comment accéder aux propriétés de pages spécifiques dans un document PDF en Python à l'aide d'Aspose.PDF pour un contrôle détaillé.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
 
-Pour obtenir les propriétés de la page d'un document PDF à l'aide de **Aspose.PDF Java pour Python**, invoquez simplement la classe **GetPageProperties**.
-
+Pour obtenir les propriétés de la page d'un document PDF à l'aide de **Aspose.PDF Java pour Python**, utilisez la classe **GetPageProperties**.
 
 ```Python
 doc= self.Document()
@@ -34,11 +33,8 @@ print "Rotate :-" + pdf_page.getRotate()
 
 ```
 
+**Télécharger l’exemple de code**
 
-**Télécharger le code d'exécution**
+Téléchargez **Obtenir les propriétés de la page (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-Téléchargez** Obtenir les propriétés de la page (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)

@@ -5,15 +5,15 @@ type: docs
 weight: 70
 url: /fr/java/text-formatting-inside-pdf/
 description: Découvrez comment formater le texte dans des documents PDF en Java à l'aide d'options d'espacement, de notes, de listes, de disposition sur plusieurs colonnes et de style.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Formater et styliser le texte dans les fichiers PDF avec Java
-Abstract: Cet article explique comment formater le texte dans des documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'espacement des lignes, l'espacement des caractères, les listes à puces et numérotées, les notes de bas de page et de fin, le contenu des paragraphes en ligne, la disposition sur plusieurs colonnes, les sauts de page forcés et les taquets de tabulation personnalisés.
+Abstract: Cet article explique comment formater le texte dans des documents PDF à l'aide d'Aspose.PDF for Java. Il couvre l'espacement des lignes, l'espacement des caractères, les listes à puces et numérotées, les notes de bas de page et de fin, le contenu des paragraphes en ligne, la disposition sur plusieurs colonnes, les sauts de page forcés et les taquets de tabulation personnalisés.
 ---
-Aspose.PDF pour Java propose des contrôles de formatage du texte pour l'espacement, les listes, les notes, la mise en page en ligne et la composition multi-colonnes.
+Aspose.PDF for Java propose des contrôles de formatage du texte pour l'espacement, les listes, les notes, la mise en page en ligne et la composition multi-colonnes.
 
 ## Définir un espacement de ligne simple
 
@@ -41,7 +41,7 @@ public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exceptio
     }
 ```
 
-## Comparez les modes d'espacement des lignes avec une police personnalisée
+## Comparer les modes d'espacement des lignes avec une police personnalisée
 
 Utilisez cet exemple lorsque l’espacement des lignes doit être testé avec différents modes de formatage pour la même police.
 
@@ -84,7 +84,7 @@ public static void specifyLineSpacingSpecificCase(Path outputFile) throws Except
 Utilisez cet exemple lorsque le même texte doit être affiché avec des valeurs d'espacement des caractères différentes.
 
 1. Créez un nouveau document PDF et ajoutez une page.
-1. Créez des fragments de texte avec la méthode d'assistance pour plusieurs valeurs d'espacement.
+1. Créez des fragments de texte avec la méthode auxiliaire pour plusieurs valeurs d'espacement.
 1. Ajoutez les fragments à la page et enregistrez le document.
 
 ```java
@@ -115,7 +115,7 @@ Utilisez cet exemple lorsque l’espacement des caractères doit être appliqué
 
 1. Créez un nouveau document PDF et ajoutez une page.
 1. Créez un `TextParagraph` avec un rectangle cible et des options d'habillage.
-1. Ajoutez le fragment de texte stylisé et enregistrez le PDF.
+1. Ajoutez le fragment de texte mis en forme et enregistrez le PDF.
 
 ```java
 public static void characterSpacingUsingTextParagraph(Path outputFile) {
@@ -658,7 +658,7 @@ public static void createMultiColumnPdf(Path outputFile) throws Exception {
 }
 ```
 
-## Créez du texte aligné avec des taquets de tabulation personnalisés
+## Créer du texte aligné avec des taquets de tabulation personnalisés
 
 Utilisez cet exemple lorsque le texte doit s’aligner comme un simple tableau en utilisant des positions de taquet de tabulation.
 

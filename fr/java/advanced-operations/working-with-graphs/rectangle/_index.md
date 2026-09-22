@@ -5,13 +5,13 @@ type: docs
 weight: 50
 url: /fr/java/add-rectangle/
 description: Apprenez à dessiner et à remplir des formes rectangulaires dans des fichiers PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Dessinez des formes rectangulaires dans des fichiers PDF à l'aide de Java
-Abstract: Cet article montre comment ajouter des formes rectangulaires aux documents PDF à l'aide d'Aspose.PDF pour Java. Il couvre les rectangles décrits, les remplissages unis, les remplissages dégradés, la transparence alpha et le contrôle de l'ordre z pour les formes qui se chevauchent.
+Abstract: Cet article montre comment ajouter des formes rectangulaires aux documents PDF à l'aide d'Aspose.PDF for Java. Il couvre les rectangles décrits, les remplissages unis, les remplissages dégradés, la transparence alpha et le contrôle de l'ordre z pour les formes qui se chevauchent.
 ---
 ## Ajouter un contour de rectangle
 
@@ -38,7 +38,7 @@ public static void addRectangle(Path outputFile) {
 }
 ```
 
-## Remplissez un rectangle avec une couleur unie ou dégradée
+## Remplir un rectangle avec une couleur unie ou dégradée
 
 Les exemples de rectangles incluent :
 

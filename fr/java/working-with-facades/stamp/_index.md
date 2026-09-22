@@ -1,49 +1,36 @@
 ---
-title: Classe de timbre
-linktitle: Classe de timbre
+title: Classe Stamp
+linktitle: Classe Stamp
 type: docs
 weight: 150
 url: /java/stamp-class/
 description: Découvrez comment utiliser la classe Stamp en Java pour ajouter des tampons d'image, de PDF et de texte aux documents PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Ajouter des tampons d'image, de PDF et de texte aux documents PDF en Java
-Abstract: Cette section explique comment utiliser la classe Stamp avec PdfFileStamp dans Aspose.PDF pour Java pour ajouter du contenu de tampon réutilisable aux documents PDF. Les exemples Java actuels couvrent les tampons d'image, les tampons de page PDF, les tampons de texte avec un TextState personnalisé, les tampons spécifiques à la page et les tampons d'image d'arrière-plan avec des paramètres d'opacité, de taille et de rotation.
+Abstract: Cette section explique comment utiliser la classe Stamp avec PdfFileStamp dans Aspose.PDF for Java pour ajouter du contenu de tampon réutilisable aux documents PDF. Les exemples Java actuels couvrent les tampons d'image, les tampons de page PDF, les tampons de texte avec un TextState personnalisé, les tampons spécifiques à la page et les tampons d'image d'arrière-plan avec des paramètres d'opacité, de taille et de rotation.
 ---
 La classe Java `StampExamples` présente les principaux flux de travail de création de tampons disponibles via l'API Facades.
 
-
-## 
-Ajouter un tampon d'image
-
-
+## Ajouter un tampon d'image
 
 Utilisez ce flux de travail lorsqu'un fichier image doit être placé sur le PDF comme tampon.
 
+### Étapes
 
-### 
-Étapes
-
-
-1. 
-Créez une instance `PdfFileStamp` et liez le PDF source.
+1. Créez une instance `PdfFileStamp` et liez le PDF source.
 2. Créez un objet `Stamp` et liez-le au fichier image.
 
-3. 
-Définissez l’identifiant du tampon et l’origine du placement.
+3. Définissez l’identifiant du tampon et l’origine du placement.
 
-4. 
-Ajoutez le tampon au document.
+4. Ajoutez le tampon au document.
 
-5. 
-Enregistrez le résultat et fermez l'objet façade.
+5. Enregistrez le résultat et fermez l’objet de façade.
 
-
-### 
-Exemple Java
+### Exemple Java
 
 ```java
 public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
@@ -64,32 +51,20 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 
 ## Ajouter une page PDF comme tampon
 
-
-
 Utilisez ce flux de travail lorsque le contenu d'une autre page PDF doit être réutilisé comme contenu de tampon.
 
+### Étapes
 
-### 
-Étapes
+1. Créez une instance `PdfFileStamp` et liez le PDF cible.
 
-
-1. 
-Créez une instance `PdfFileStamp` et liez le PDF cible.
-
-2. 
-Créez un objet `Stamp`.
+2. Créez un objet `Stamp`.
 3. Liez le tampon à une page spécifique d'un autre fichier PDF.
 
-4. 
-Définissez le numéro de page cible et l’origine du placement.
+4. Définissez le numéro de page cible et l’origine du placement.
 
-5. 
-Ajoutez le tampon, enregistrez la sortie et fermez l'objet façade.
+5. Ajoutez le tampon, enregistrez la sortie et fermez l’objet de façade.
 
-
-### 
-Exemple Java
-
+### Exemple Java
 
 ```java
 public static void addPdfPageAsStamp(Path inputFile, Path stampPdf, Path outputFile) {
@@ -108,33 +83,22 @@ public static void addPdfPageAsStamp(Path inputFile, Path stampPdf, Path outputF
 }
 ```
 
-## 
-Ajouter un tampon de texte avec TextState
+## Ajouter un tampon de texte avec TextState
 
-Utilisez ce flux de travail lorsque le tampon doit contenir du texte stylisé plutôt qu'une image.
+Utilisez ce flux de travail lorsque le tampon doit contenir du texte mis en forme plutôt qu'une image.
 
+### Étapes
 
-### 
-Étapes
+1. Créez une instance `PdfFileStamp` et liez le PDF source.
 
+2. Créez un objet `Stamp`.
 
-1. 
-Créez une instance `PdfFileStamp` et liez le PDF source.
-
-2. 
-Créez un objet `Stamp`.
-
-3. 
-Liez un logo `FormattedText` et un `TextState` personnalisé au tampon.
+3. Liez un objet `FormattedText` et un `TextState` personnalisé au tampon.
 4. Définissez l’origine et la rotation du tampon.
 
-5. 
-Ajoutez le tampon, enregistrez la sortie et fermez l'objet façade.
+5. Ajoutez le tampon, enregistrez la sortie et fermez l’objet de façade.
 
-
-### 
-Exemple Java
-
+### Exemple Java
 
 ```java
 public static void addTextStampWithTextState(Path inputFile, Path outputFile) {
@@ -154,33 +118,22 @@ public static void addTextStampWithTextState(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-Ajouter un tampon à des pages spécifiques
-
-
+## Ajouter un tampon à des pages spécifiques
 
 Utilisez ce flux de travail lorsque le tampon doit apparaître uniquement sur les pages sélectionnées au lieu de l'ensemble du document.
 
 ### Étapes
 
+1. Créez une instance `PdfFileStamp` et liez le PDF source.
 
-1. 
-Créez une instance `PdfFileStamp` et liez le PDF source.
+2. Créez un objet `Stamp` et liez-le à un fichier image.
 
-2. 
-Créez un objet `Stamp` et liez-le à un fichier image.
+3. Définissez la liste des pages cibles, l'origine et la taille de l'image.
 
-3. 
-Définissez la liste des pages cibles, l'origine et la taille de l'image.
+4. Ajoutez le tampon au document.
+5. Enregistrez le résultat et fermez l’objet de façade.
 
-4. 
-Ajoutez le tampon au document.
-5. Enregistrez le résultat et fermez l'objet façade.
-
-
-### 
-Exemple Java
-
+### Exemple Java
 
 ```java
 public static void addStampToSpecificPages(Path inputFile, Path imageFile, Path outputFile) {
@@ -200,30 +153,21 @@ public static void addStampToSpecificPages(Path inputFile, Path imageFile, Path 
 }
 ```
 
-## 
-Ajouter un tampon d'image d'arrière-plan
-
-
+## Ajouter un tampon d'image d'arrière-plan
 
 Utilisez ce flux de travail lorsque le tampon doit apparaître derrière le contenu de la page avec une opacité et une rotation contrôlées.
 
-
-### 
-Étapes
+### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
 
-2. 
-Créez un objet `Stamp` et liez-le au fichier image.
+2. Créez un objet `Stamp` et liez-le au fichier image.
 
-3. 
-Marquez le tampon comme contenu d’arrière-plan.
+3. Marquez le tampon comme contenu d’arrière-plan.
 
-4. 
-Configurez l'opacité, la qualité, la rotation, la taille et l'origine.
+4. Configurez l'opacité, la qualité, la rotation, la taille et l'origine.
 
-5. 
-Ajoutez le tampon, enregistrez la sortie et fermez l'objet façade.
+5. Ajoutez le tampon, enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemple Java
 

@@ -1,26 +1,22 @@
 ---
-title: Liste des timbres
-linktitle: Liste des timbres
+title: Répertorier les tampons
+linktitle: Répertorier les tampons
 type: docs
 weight: 20
 url: /java/list-stamps/
-description: Découvrez comment répertorier les tampons en caoutchouc sur une page en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
-lastmod: "2026-06-09"
+description: Découvrez comment répertorier les annotations de tampon sur une page en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
+lastmod: "2026-09-22"
 TechArticle: true
-AlternativeHeadline: Liste des tampons en caoutchouc PDF en Java
-Abstract: Cet article montre comment lier un PDF, récupérer les tampons sur une page et inspecter la collection résultante à l'aide de la façade PdfContentEditor dans Aspose.PDF pour Java.
+AlternativeHeadline: Répertorier les annotations de tampon PDF en Java
+Abstract: Cet article montre comment lier un PDF, récupérer les tampons sur une page et inspecter la collection résultante à l'aide de la façade PdfContentEditor dans Aspose.PDF for Java.
 ---
-## Liste des tampons sur une page
+## Répertorier les tampons sur une page
 
+1. Liez le PDF source à la façade `PdfContentEditor`.
 
-1. 
-Liez le PDF source à la façade `PdfContentEditor`.
+2. Appelez `getStamps(pageNumber)` pour récupérer les tampons sur la page cible.
 
-2. 
-Appelez `getStamps(pageNumber)` pour récupérer les tampons sur la page cible.
-
-3. 
-Inspectez la collection `StampInfo[]` résultante.
+3. Inspectez la collection `StampInfo[]` résultante.
 
 ```java
 public static void listStamps(Path inputFile) {

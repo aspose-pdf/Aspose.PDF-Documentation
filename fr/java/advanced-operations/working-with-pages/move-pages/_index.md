@@ -5,15 +5,15 @@ type: docs
 weight: 100
 url: /fr/java/move-pages/
 description: Découvrez comment déplacer des pages PDF dans un document ou entre des documents en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Déplacer les pages PDF entre les documents en Java
-Abstract: Cet article explique comment déplacer des pages dans des PDF à l'aide d'Aspose.PDF pour Java. Il couvre le déplacement d'une seule page ou de plusieurs pages vers un autre document et le repositionnement d'une page à l'intérieur du même PDF.
+Abstract: Cet article explique comment déplacer des pages dans des PDF à l'aide d'Aspose.PDF for Java. Il couvre le déplacement d'une seule page ou de plusieurs pages vers un autre document et le repositionnement d'une page à l'intérieur du même PDF.
 ---
-Aspose.PDF pour Java vous permet de déplacer des pages entre des documents ou de repositionner des pages dans le même PDF.
+Aspose.PDF for Java vous permet de déplacer des pages entre des documents ou de repositionner des pages dans le même PDF.
 
 ## Déplacer une page vers un autre document
 

@@ -5,13 +5,13 @@ type: docs
 weight: 30
 url: /fr/java/extract-links/
 description: Découvrez comment extraire des annotations de liens et des hyperliens à partir de documents PDF en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Extraire les annotations de lien et les cibles URI des fichiers PDF avec Java
-Abstract: Cet article explique comment extraire des annotations de lien à partir de documents PDF à l'aide d'Aspose.PDF pour Java. Il montre comment énumérer les annotations de lien sur une page, lire leur index et leur rectangle de page et extraire les cibles URI des instances GoToURIAction.
+Abstract: Cet article explique comment extraire des annotations de lien à partir de documents PDF à l'aide d'Aspose.PDF for Java. Il montre comment énumérer les annotations de lien sur une page, lire leur index et leur rectangle de page et extraire les cibles URI des instances GoToURIAction.
 ---
 Vous pouvez inspecter les liens PDF en parcourant les annotations de page et en filtrant `AnnotationType.Link`.
 

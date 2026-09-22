@@ -5,15 +5,15 @@ type: docs
 weight: 70
 url: /fr/java/crop-pages/
 description: Découvrez comment recadrer des pages PDF et ajuster les zones de recadrage, de découpage, de fond perdu et de support en Java.
-lastmod: "2026-09-17"
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Recadrez les pages et ajustez les zones de page dans les fichiers PDF avec Java
-Abstract: Cet article explique comment recadrer des pages PDF à l'aide d'Aspose.PDF pour Java. Il couvre l'attribution d'un nouveau rectangle de recadrage aux zones de recadrage, de rognage, d'illustration et de fond perdu, ainsi que le recadrage automatique d'une page en fonction du contenu de l'image détecté.
+Abstract: Cet article explique comment recadrer des pages PDF à l'aide d'Aspose.PDF for Java. Il couvre l'attribution d'un nouveau rectangle de recadrage aux zones de recadrage, de rognage, d'illustration et de fond perdu, ainsi que le recadrage automatique d'une page en fonction du contenu de l'image détecté.
 ---
-Aspose.PDF pour Java vous permet de recadrer des pages soit par des coordonnées de boîte explicites, soit en fonction du contenu détecté.
+Aspose.PDF for Java vous permet de recadrer des pages soit en définissant explicitement les coordonnées des zones de page, soit en fonction du contenu détecté.
 
 ## Recadrer une page en définissant des zones de page
 
@@ -42,7 +42,7 @@ Utilisez cet exemple lorsque la zone de recadrage doit être dérivée de la pre
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Utilisez [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) pour détecter les emplacements d'images.
-1. Set the crop box to the image rectangle if one is found, then save the document.
+1. Si une image est trouvée, définissez la zone de recadrage sur son rectangle, puis enregistrez le document.
 
 ```java
 public static void cropPageByContent(Path inputFile, Path outputFile) {

@@ -4,14 +4,14 @@ linktitle: Ajouter, supprimer et obtenir une annotation
 type: docs
 weight: 20
 url: /fr/java/add-delete-and-get-annotation/
-description: Utilisez Aspose.PDF pour Java pour ajouter, inspecter et supprimer des annotations PDF dans les flux de travail de texte, de balisage, interactifs, de forme, de filigrane, de sécurité et liés aux médias.
-lastmod: "2026-09-17"
+description: Utilisez Aspose.PDF for Java pour ajouter, inspecter et supprimer des annotations PDF dans les flux de travail de texte, de balisage, interactifs, de forme, de filigrane, de sécurité et liés aux médias.
+lastmod: "2026-09-22"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Comment manipuler des annotations dans PDF avec Java
-Abstract: Cet article regroupe les principaux workflows d'annotation disponibles dans cette section Java. Il vous aide à parcourir les sujets d'annotation de texte, de balisage, d'interactivité, de forme, de média, de sécurité et de filigrane en fonction des exemples Java inclus dans le référentiel.
+Abstract: Cet article regroupe les principaux flux de travail d'annotation disponibles dans cette section Java. Il vous aide à parcourir les sujets d'annotation de texte, de balisage, d'interactivité, de forme, de média, de sécurité et de filigrane en fonction des exemples Java inclus dans le référentiel.
 ---
 Cette page regroupe les familles d'annotations couvertes par les exemples Java dans `examples/workingwithannotations`.
 

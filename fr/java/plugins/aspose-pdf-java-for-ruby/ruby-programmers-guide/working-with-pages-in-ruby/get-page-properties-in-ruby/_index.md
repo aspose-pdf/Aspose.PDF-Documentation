@@ -1,21 +1,17 @@
 ---
-title: Obtenir les propriétés de la page dans Ruby
-linktitle: Obtenir les propriétés de la page dans Ruby
+title: Obtenir les propriétés de la page en Ruby
+linktitle: Obtenir les propriétés de la page en Ruby
 type: docs
 weight: 50
 url: /java/get-page-properties-in-ruby/
 description: Découvrez comment récupérer les propriétés d'une page dans un fichier PDF à l'aide de Ruby avec Aspose.PDF pour gérer et manipuler efficacement vos documents.
-lastmod: "2026-06-09"
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Obtenir les propriétés de la page
+## Aspose.PDF - Obtenir les propriétés de la page
 
+Pour obtenir les propriétés de la page d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **GetPageProperties**.
 
-
-Pour obtenir les propriétés de la page d'un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **GetPageProperties**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -53,13 +49,8 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Obtenir les propriétés de la page (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Obtenir les propriétés de la page (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

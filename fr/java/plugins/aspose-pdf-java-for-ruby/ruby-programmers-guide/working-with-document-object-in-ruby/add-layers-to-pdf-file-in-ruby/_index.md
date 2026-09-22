@@ -1,21 +1,17 @@
 ---
-title: Ajouter des calques au fichier PDF dans Ruby
-linktitle: Ajouter des calques au fichier PDF dans Ruby
+title: Ajouter des calques au fichier PDF en Ruby
+linktitle: Ajouter des calques au fichier PDF en Ruby
 type: docs
 weight: 20
 url: /java/add-layers-to-pdf-file-in-ruby/
-description: Découvrez comment ajouter des calques à un fichier PDF dans Ruby à l'aide d'Aspose.PDF pour une meilleure structure du document et un meilleur contrôle de la visibilité.
-lastmod: "2026-06-09"
+description: Découvrez comment ajouter des calques à un fichier PDF en Ruby à l'aide d'Aspose.PDF pour une meilleure structure du document et un meilleur contrôle de la visibilité.
+lastmod: "2026-09-21"
 ---
-## 
-Aspose.PDF - Ajouter des calques
+## Aspose.PDF - Ajouter des calques
 
+<ins> Pour ajouter des calques dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, utilisez le module **AddLayers**.
 
-
-<ins> Pour ajouter des calques dans un document PDF à l'aide de **Aspose.PDF Java pour Ruby**, invoquez simplement le module **AddLayers**.
-
-Code Rubis
-
+Code Ruby
 
 ```java
 # The path to the documents directory.
@@ -73,13 +69,8 @@ doc.save(data_dir + "Layers-Added.pdf")
 puts "Added Layers Successfully, please check the output file."
 ```
 
-## 
-Télécharger le code d'exécution
+## Télécharger l’exemple de code
 
+Téléchargez **Ajouter des calques (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
-
-Téléchargez** Ajouter des couches (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
-
-
-- 
-[GitHub] (https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)
