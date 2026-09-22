@@ -4,6 +4,7 @@ linktitle: دعم التقارير المعلمة
 type: docs
 weight: 20
 url: /ar/reportingservices/parameterized-report-support/
+description: "تعرّف على دعم التقارير المعلمة في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

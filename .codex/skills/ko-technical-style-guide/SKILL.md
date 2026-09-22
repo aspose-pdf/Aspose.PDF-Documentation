@@ -25,6 +25,8 @@ When rules conflict, apply them in this order:
 4. This style guide.
 5. General Korean writing conventions.
 
+**Example:** If the approved glossary specifies 개체 for "object" but the API documentation consistently uses 객체, use 개체 (glossary takes precedence).
+
 Never change API identifiers, commands, paths, filenames, or actual UI labels merely to satisfy a linguistic rule.
 
 ---
@@ -53,6 +55,20 @@ Korean grammatical form depends on the structural role of the text.
 Use concise technical Korean.
 
 For explanatory prose, prefer consistent **-습니다/-ㅂ니다** endings.
+
+### Mixed-language source text
+
+When the source contains English prose words (not identifiers, UI labels, or code) mixed into Korean sentences, replace them with the standard Korean equivalent. If no standard Korean term exists, transliterate and add the English in parentheses on first use.
+
+Good:
+
+- 이 메서드는 PDF 문서를 렌더링합니다.
+- 이미지를 압축하고 최적화해야 합니다.
+
+Bad (English prose in Korean sentence):
+
+- 이 메서드는 the document를 반환합니다.
+- 이미지를 optimize하고 저장하세요.
 
 Good:
 
@@ -89,7 +105,7 @@ Good:
 - 변환 옵션 설정
 - 문서 저장
 
-For technical how-to documentation, action-oriented headings using **-기** or concise action nouns are appropriate.
+For technical how-to documentation, action-oriented headings using **-기** or concise action nouns are appropriate. These compact noun forms are **only** for headings and compact UI labels, not for full procedural steps.
 
 Choose one pattern for sibling headings and apply it consistently.
 
@@ -180,7 +196,7 @@ Bad:
 - 페이지를 추가하다.
 - 문서를 저장하다.
 
-Avoid noun fragments when a complete instruction is required.
+**Avoid noun fragments (compact forms) in procedural steps.** Use only the **-하세요** complete instruction form.
 
 Bad:
 
@@ -188,7 +204,7 @@ Bad:
 - PDF 파일 열기.
 - 페이지 추가.
 
-These forms may be acceptable as compact headings, but not as normal full procedural steps.
+**Exception:** Noun fragments ("생성", "열기", "추가") are acceptable **only** as section headings or compact UI labels, not as procedural step sentences. Always use **-하세요** forms in numbered step lists.
 
 ---
 
@@ -403,7 +419,13 @@ Bad:
 
 Code formatting must contain only the literal identifier.
 
-Choose the particle according to the pronunciation of the identifier where practical and according to the project's established convention.
+Choose the particle according to the Korean pronunciation of the final character of the identifier. When the pronunciation is ambiguous or the project glossary specifies a form, follow the glossary.
+
+Examples:
+
+- `Document`는 (final sound: 트 → ㄷ is pronounced, use 는)
+- `save()`를 (final sound: 브 → ㅂ is not pronounced, use 를)
+- `Page`를 (final sound: 지 → ㅈ is pronounced, but use glossary if conflict exists)
 
 ---
 

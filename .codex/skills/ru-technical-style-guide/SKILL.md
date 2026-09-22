@@ -3,6 +3,8 @@ name: ru-technical-style-guide
 description: Use this skill when writing, reviewing, or editing Russian technical documentation. It normalizes headings, procedural instructions, numbered steps, bullet steps, and technical prose to a consistent Russian documentation style.
 ---
 
+> **Inline technical identifiers**: If a technical identifier appears inline without backtick formatting (e.g., 'Настройте Document object'), preserve it exactly as written and do not translate it. Do not add or remove backtick formatting unless explicitly asked.
+
 # Russian Technical Documentation Style Guide
 
 ## Goal
@@ -220,7 +222,7 @@ because the sections represent different semantic categories.
 
 ## Main rule
 
-Each procedural step should start with a polite imperative verb whenever the sentence structure allows it naturally.
+Convert all infinitive or noun-phrase procedural steps to polite imperative form. Only leave a step unconverted if it contains no actionable verb (e.g., it is a pure description or note).
 
 Good:
 
@@ -274,7 +276,9 @@ Convert infinitives used as instructions to polite imperative forms.
 
 ## Convert noun-based instructions
 
-When a noun phrase is clearly being used as a procedural instruction, rewrite it as an imperative sentence.
+A noun phrase is a procedural instruction if it appears inside a numbered or bulleted list that is not a table of contents or summary list. If ambiguous, treat it as a heading and leave it unchanged, noting it in the Unchanged section.
+
+When a noun phrase is confirmed as a procedural instruction, rewrite it as an imperative sentence.
 
 Bad:
 
@@ -475,10 +479,10 @@ Headings normalized: 3
 Steps normalized: 7
 
 Examples:
-- "Создать PDF" → "Создание PDF"
-- "Настройте параметры" → "Настройка параметров" [heading]
+- "Создать PDF" → "Создание PDF" [heading]
 - "Добавить страницу" → "Добавьте страницу" [step]
 - "Сохранение документа" → "Сохраните документ" [step]
+- "Настройка параметров" [heading] — no transformation needed
 
 Unchanged:
 - "Параметры PDF" — valid entity heading.

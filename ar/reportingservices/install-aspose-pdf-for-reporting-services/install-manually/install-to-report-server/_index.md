@@ -4,6 +4,7 @@ linktitle: تثبيت إلى خادم التقارير
 type: docs
 weight: 10
 url: /ar/reportingservices/install-to-report-server/
+description: "تعرّف على تثبيت إلى خادم التقارير في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

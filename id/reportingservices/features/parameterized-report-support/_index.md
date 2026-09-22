@@ -4,6 +4,7 @@ linktitle: Dukungan Laporan Parameterisasi
 type: docs
 weight: 20
 url: /id/reportingservices/parameterized-report-support/
+description: "Temukan Dukungan Laporan Parameterisasi di Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

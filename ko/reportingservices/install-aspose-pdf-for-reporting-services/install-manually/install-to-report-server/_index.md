@@ -4,6 +4,7 @@ linktitle: Report Server에 설치
 type: docs
 weight: 10
 url: /ko/reportingservices/install-to-report-server/
+description: "Aspose.PDF for Reporting Services의 Report Server에 설치에 대해 알아보세요."
 lastmod: "2026-06-19"
 ---
 

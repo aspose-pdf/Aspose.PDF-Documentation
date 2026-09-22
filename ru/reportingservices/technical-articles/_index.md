@@ -4,11 +4,12 @@ linktitle: Технические статьи
 type: docs
 weight: 120
 url: /ru/reportingservices/technical-articles/
-description: Изучайте технические статьи для Aspose.PDF for Reporting Services. Получайте глубокие сведения и практические советы для эффективного рендеринга PDF.
-lastmod: "2026-06-19"
+description: Изучайте технические статьи по Aspose.PDF for Reporting Services. Получайте глубокие инсайты и практические советы для эффективного отображения PDF.
+lastmod: "2026-08-20"
 ---
 
-**Этот раздел включает следующие темы:**
-- [Миграция с SQL Reporting Services на Aspose.Pdf for Reporting Services](/pdf/ru/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/)
+**В этом разделе рассматриваются следующие темы:**
+
+- [Миграция с SQL Reporting Services на Aspose.PDF for Reporting Services](/pdf/ru/reportingservices/migration-from-sql-reporting-services-to-aspose-pdf-for-reporting-services/)
 - [Интеграция SQL Reporting Services с MS SharePoint](/pdf/ru/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/)
 

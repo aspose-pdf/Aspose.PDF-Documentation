@@ -4,6 +4,7 @@ linktitle: 参数化报告支持
 type: docs
 weight: 20
 url: /zh/reportingservices/parameterized-report-support/
+description: "了解 Aspose.PDF for Reporting Services 中的参数化报告支持。"
 lastmod: "2026-06-19"
 ---
 
