@@ -15,7 +15,7 @@ Les formulaires sont des fichiers avec des zones pour que les utilisateurs séle
 
 Les AcroForms sont des fichiers PDF qui contiennent des champs de formulaire. Les données peuvent être saisies dans ces champs (manuellement ou par un processus automatisé) par les utilisateurs finaux ou l'auteur du formulaire. En interne, les AcroForms sont des annotations ou des champs appliqués à un document PDF.
 
-Cette section décrit une approche rapide et simple pour remplir un document PDF de manière programmatique à l'aide d'Aspose.PDF. La section discute également de la façon dont on pourrait utiliser Aspose.PDF pour Java pour découvrir et mapper les champs disponibles au sein d'un PDF existant avec des AcroForms.
+Cette section décrit une approche rapide et simple pour remplir un document PDF de manière programmatique à l'aide d'Aspose.PDF. La section discute également de la façon dont on pourrait utiliser Aspose.PDF for Java pour découvrir et mapper les champs disponibles au sein d'un PDF existant avec des AcroForms.
 
 **Notre bibliothèque Aspose.PDF pour Python via Java** vous permet de travailler avec succès, rapidement et facilement avec des formulaires dans des documents PDF.
 
