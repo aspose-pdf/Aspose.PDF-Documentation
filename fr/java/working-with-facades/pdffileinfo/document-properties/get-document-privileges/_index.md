@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/get-document-privileges/
 description: Découvrez comment inspecter les privilèges des documents PDF en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez `PdfFileInfo.getDocumentPrivilege()` pour inspecter les opérations aut
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF d'entrée.
-
 2. Appelez `getDocumentPrivilege()` pour récupérer l'ensemble de privilèges.
 3. Lisez les indicateurs booléens pertinents de l'objet `DocumentPrivilege` renvoyé.
-
 4. Fermez l'instance `PdfFileInfo` lorsque vous avez terminé.
 
 ### Exemple Java

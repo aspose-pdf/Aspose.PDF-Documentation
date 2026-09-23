@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/convert-pdf-to-powerpoint/
 description: Découvrez comment convertir des fichiers PDF en PowerPoint en Java avec Aspose.PDF, y compris des diapositives PPTX modifiables, des diapositives basées sur des images et une résolution d'image personnalisée.
-lastmod: "2026-09-21"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,21 +15,14 @@ Abstract: Cet article explique comment convertir des fichiers PDF en présentati
 ---
 Aspose.PDF for Java prend en charge l'exportation de pages PDF dans des présentations PowerPoint modifiables avec des options de rendu de diapositives. Utilisez [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) pour contrôler la façon dont les pages PDF sont mappées dans les diapositives PowerPoint.
 
-
 ## Convertir un PDF en PPTX
-
-
 
 Utilisez cet exemple lorsqu'un document PDF doit être exporté sous forme de présentation PowerPoint standard.
 
-
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez une instance de [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) avec les paramètres par défaut pour générer une présentation PowerPoint modifiable.
 1. Appelez `document.save(outputFile.toString(), saveOptions)` pour que les pages PDF soient sérialisées sous forme de présentation `.pptx`.
-
 1. Enregistrez le fichier PPTX converti.
-
 
 ```java
 public static void convertPdfToPptx(Path inputFile, Path outputFile) {
@@ -43,18 +36,12 @@ public static void convertPdfToPptx(Path inputFile, Path outputFile) {
 
 ## Convertir un PDF en PPTX avec des diapositives sous forme d'images
 
-
-
 Utilisez cet exemple lorsque chaque page PDF doit devenir une diapositive PowerPoint basée sur une image.
-
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) et activez `setSlidesAsImages(true)`.
-
 1. Appelez `document.save(outputFile.toString(), saveOptions)` pour que chaque page PDF soit rendue sous forme de diapositive constituée d’une image dans la présentation.
-
 1. Enregistrez le fichier PPTX généré.
-
 
 ```java
 public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFile) {
@@ -69,16 +56,11 @@ public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFil
 
 ## Convertir un PDF en PPTX avec une résolution d'image personnalisée
 
-
-
 Utilisez cet exemple lorsque la qualité de l’image de la diapositive doit être contrôlée lors de l’exportation PDF vers PPTX.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) et définissez `setImageResolution(300)` pour augmenter la résolution des images des diapositives.
-
 1. Appelez `document.save(outputFile.toString(), saveOptions)` pour que le contenu des diapositives pixellisées soit généré à la résolution demandée.
-
 1. Enregistrez la présentation de sortie.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/
 description: Apprenez à utiliser les flux de travail d'annotation PDF en Java via la section PdfAnnotationEditor, y compris le texte, le balisage, les liens, les formes, les filigranes, le caviardage et les scénarios de transfert d'annotations.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,5 +20,4 @@ Le référentiel actuel n'inclut pas de classe `PdfAnnotationEditorExamples.java
 Utilisez cette section pour :
 
 - [Ajouter, supprimer et obtenir une annotation](/pdf/java/pdfannotationeditor-class/add-delete-and-get-annotation/) pour les familles d'annotations groupées.
-
 - [Importer et exporter des annotations](/pdf/java/pdfannotationeditor-class/import-export-annotations/) pour copier des annotations entre des fichiers PDF.

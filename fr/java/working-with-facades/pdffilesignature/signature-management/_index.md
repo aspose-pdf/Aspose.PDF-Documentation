@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /java/signature-management/
 description: Découvrez comment supprimer une signature PDF existante en Java avec la façade PdfFileSignature.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez ce flux de travail lorsqu'une signature numérique existante doit être
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
 2. Lisez la collection de signatures et sélectionnez un nom de signature.
 3. Appelez `removeSignature` avec ce nom.
-
 4. Enregistrez le fichier mis à jour et fermez l’objet de façade.
 
 ### Exemple Java

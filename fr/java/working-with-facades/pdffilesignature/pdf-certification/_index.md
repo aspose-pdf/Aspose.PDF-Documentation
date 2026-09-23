@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/pdf-certification/
 description: Découvrez comment certifier des documents PDF en Java avec PdfFileSignature et DocMDPSignature.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez la certification lorsque le document doit rester fiable tout en permett
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF source.
-
 2. Créez un objet de signature `PKCS7` avec le certificat et le mot de passe du certificat.
 3. Placez cette signature dans un objet `DocMDPSignature` avec la valeur `DocMDPAccessPermissions` requise.
-
 4. Appelez `certify` avec la page cible, les métadonnées de signature, le rectangle visible et la signature MDP.
-
 5. Enregistrez le PDF certifié et fermez l’objet de façade.
 
 ### Exemple Java

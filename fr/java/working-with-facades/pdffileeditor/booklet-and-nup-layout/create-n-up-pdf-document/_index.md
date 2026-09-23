@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/create-n-up-pdf-document/
 description: Créez une mise en page PDF 2x2 N-Up en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ L'exemple Java utilise `PdfFileEditor.makeNUp` pour créer une mise en page 2x2 
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Appelez `makeNUp` avec le fichier d'entrée, le fichier de sortie et le nombre de colonnes et de lignes.
 3. Enregistrez le document généré.
-
 4. Si vous souhaitez une vérification explicite du succès, appelez la variante qui renvoie une valeur booléenne et gérez un résultat `false`.
 
 ### Exemple Java

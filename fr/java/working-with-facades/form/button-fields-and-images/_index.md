@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/button-fields-and-images/
 description: Découvrez comment ajouter une apparence d'image à un champ de bouton dans un formulaire PDF à l'aide de la façade Form dans Aspose.PDF for Java.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Ajouter une apparence d'image à un champ de bouton PDF en Java
 Abstract: Cet article montre comment utiliser la façade Form dans Aspose.PDF for Java pour lier un formulaire PDF, charger une image sous forme de flux, remplir un champ de bouton d'image et enregistrer le document mis à jour.
@@ -15,9 +15,7 @@ L'exemple Java dans `FormExamples.addImageAppearanceToButtonField(...)` montre c
 Le flux de travail est simple :
 
 - Liez le PDF d'entrée avec `form.bindPdf(...)`.
-
 - Ouvrez le fichier image avec `Files.newInputStream(...)`.
-
 - Appelez `form.fillImageField(...)` pour le champ du bouton.
 - Enregistrez le PDF mis à jour.
 

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/page-number/
 description: Découvrez comment ajouter des numéros de page aux documents PDF en Java avec la façade PdfFileStamp.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez `PdfFileStamp` lorsque la numérotation des pages doit être appliquée
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
 2. Choisissez le positionnement des numéros de page dont vous avez besoin.
 3. Définissez éventuellement le style de numérotation et le numéro de départ avant l’ajout des numéros de page.
-
 4. Appelez `addPageNumber` avec la surcharge requise.
-
 5. Enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemples Java

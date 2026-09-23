@@ -17,7 +17,6 @@ Aspose.PDF for Java fournit les API de base dont vous avez besoin pour créer, c
 Cette section présente la bibliothèque avec deux exemples basés sur les sources du projet d'exemples Java :
 
 - [Exemple Hello World](/pdf/java/hello-world-example/) - créez un document PDF simple et placez un fragment de texte mis en forme sur la page.
-
 - [Créer un PDF complexe](/pdf/java/complex-pdf-example/) - créez un PDF plus riche avec une image, du texte positionné et un tableau mis en forme.
 
 Utilisez ces exemples comme point de départ, puis consultez les sections de la documentation Java consacrées au texte, aux images, aux pages, aux formulaires et à la conversion.

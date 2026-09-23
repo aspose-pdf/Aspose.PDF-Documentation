@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/clear-pdf-metadata/
 description: Découvrez comment effacer les métadonnées PDF en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez ce flux de travail lorsque vous devez supprimer les informations stock�
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF d'entrée.
-
 2. Appelez `clearInfo()` pour supprimer les métadonnées du document.
 3. Enregistrez le résultat dans un nouveau fichier avec `save()`.
-
 4. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/add-margins-to-pdf-pages/
 description: Ajoutez des marges aux pages PDF sélectionnées en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ L'exemple Java ajoute des marges de 36 points aux pages 1 et 3 du document sourc
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Sélectionnez les numéros de page qui doivent recevoir de nouvelles marges.
 3. Appelez `addMargins` avec le fichier d'entrée, le fichier de sortie, la liste de pages et les valeurs de marge.
-
 4. Enregistrez le PDF mis à jour.
 
 ### Exemple Java

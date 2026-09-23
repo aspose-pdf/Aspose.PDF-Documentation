@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/page-layout-and-margins/
 description: Découvrez comment ajuster la mise en page d'un PDF en Java en ajoutant des marges, en redimensionnant le contenu de la page et en insérant des sauts de page.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +18,5 @@ Utilisez ces flux de travail PdfFileEditor lorsqu'un PDF nécessite un ajustemen
 Cette section explique comment :
 
 - ajouter des marges aux pages sélectionnées
-
 - redimensionner les zones de contenu sur des pages spécifiques
-
 - diviser une page à une position verticale définie avec un saut de page

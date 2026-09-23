@@ -4,7 +4,7 @@ linktitle: Convertir un PDF en images
 type: docs
 weight: 70
 url: /java/convert-pdf-to-images-format/
-lastmod: "2026-09-21"
+lastmod: "2026-09-23"
 description: Apprenez à restituer des pages PDF sous forme de fichiers TIFF, BMP, EMF, JPEG, PNG, GIF et SVG en Java avec Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -15,21 +15,14 @@ Abstract: Cet article explique comment convertir des fichiers PDF en formats d'i
 ---
 Aspose.PDF for Java peut restituer les pages PDF sous forme d’images matricielles et vectorielles avec des options de périphérique spécifiques au format.
 
-
 ## Convertir un PDF en BMP
-
-
 
 Utilisez cet exemple lorsque les pages PDF doivent être rendues sous forme d'images BMP.
 
-
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) avec une résolution [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 1. Parcourez `document.getPages()` et appelez `device.process(...)` pour chaque page.
-
 1. Enregistrez les images BMP générées dans des chemins de sortie numérotés.
-
 
 ```java
 public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
@@ -45,18 +38,12 @@ public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
 
 ## Convertir un PDF en EMF
 
-
-
 Utilisez cet exemple lorsque les pages PDF doivent être exportées sous forme d’images vectorielles EMF.
-
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez un [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) avec une résolution [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
-
 1. Parcourez les pages et appelez `device.process(...)` pour chaque page.
-
 1. Enregistrez les sorties EMF dans des chemins de fichiers numérotés.
-
 
 ```java
 public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
@@ -72,18 +59,12 @@ public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
 
 ## Convertir un PDF en GIF
 
-
-
 Utilisez cet exemple lorsque les pages PDF doivent être converties en images GIF.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) avec une résolution [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
-
 1. Parcourez les pages et appelez `device.process(...)` pour effectuer le rendu de chaque page.
-
 1. Enregistrez les fichiers GIF dans des chemins de sortie numérotés.
-
 
 ```java
 public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
@@ -101,13 +82,9 @@ public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
 
 Utilisez cet exemple lorsque les pages PDF doivent être exportées sous forme d'images JPEG.
 
-
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) avec une résolution [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
-
 1. Parcourez les pages et appelez `device.process(...)` pour pixelliser chaque page au format JPEG.
-
 1. Enregistrez les fichiers de sortie JPEG dans des chemins numérotés.
 
 ```java
@@ -124,18 +101,12 @@ public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
 
 ## Convertir un PDF en PNG
 
-
-
 Utilisez cet exemple lorsque les pages PDF doivent être converties en images PNG.
 
-
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) avec une résolution [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
-
 1. Parcourez les pages et appelez `device.process(...)` pour chaque page PDF.
 1. Enregistrez les sorties PNG dans des chemins de fichiers numérotés.
-
 
 ```java
 public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
@@ -151,18 +122,12 @@ public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
 
 ## Convertir un PDF en PNG avec une police de substitution par défaut
 
-
-
 Utilisez cet exemple lorsque le rendu doit utiliser une police de substitution pour les glyphes manquants.
 
-
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) avec une résolution [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI.
 1. Activez `document.setAbsentFontTryToSubstitute(true)` pour utiliser des polices de substitution lors du rendu des glyphes manquants.
-
 1. Effectuez le rendu des pages et enregistrez les fichiers PNG.
-
 
 ```java
 public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPrefix) {
@@ -179,18 +144,12 @@ public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPre
 
 ## Convertir un PDF en SVG
 
-
-
 Utilisez cet exemple lorsque les pages PDF doivent être exportées sous forme de graphiques SVG.
-
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) et désactivez la compression ZIP lorsque la sortie brute `.svg` est requise.
-
 1. Activez `setTreatTargetFileNameAsDirectory(true)` pour que la sortie SVG par page puisse être organisée sous le chemin cible.
-
 1. Enregistrez la sortie SVG.
-
 
 ```java
 public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
@@ -206,16 +165,11 @@ public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
 
 ## Convertir un PDF en TIFF
 
-
-
 Utilisez cet exemple lorsqu'une ou plusieurs pages PDF doivent être exportées au format TIFF.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) et configurez la compression, la profondeur de couleur et le comportement des pages blanches.
-
 1. Créez un [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) avec une résolution [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 300 DPI et les paramètres TIFF préparés.
-
 1. Effectuez le rendu des pages et enregistrez la sortie TIFF.
 
 ```java

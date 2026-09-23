@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/extract-pages-from-pdf/
 description: Extrayez les pages sélectionnées d'un PDF en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ L'exemple Java extrait les pages 1, 4 et 3 dans un nouveau document PDF.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Définissez les numéros de page à extraire.
 3. Appelez `extract` avec le fichier source, le tableau de pages et le fichier de sortie.
-
 4. Enregistrez les pages extraites en tant que nouveau PDF.
 
 ### Exemple Java

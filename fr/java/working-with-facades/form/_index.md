@@ -5,7 +5,7 @@ type: docs
 weight: 140
 url: /java/form-class/
 description: Découvrez comment utiliser la façade Form en Java pour remplir des champs PDF, exporter et importer des données de formulaire, aplatir les champs, inspecter les valeurs des champs et ajouter des apparences d'image aux champs de boutons.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,12 +18,8 @@ La classe Java `FormExamples` illustre les principaux flux de travail de traitem
 Utilisez cette section pour apprendre à :
 
 - remplir les champs de texte, de case à cocher, de bouton radio, de zone de liste et de code-barres
-
 - Exporter les données du formulaire vers XML, FDF et XFDF
-
 - Importer des données de formulaire depuis XML, FDF et XFDF
 - aplatir tous les champs du formulaire et renommer les champs existants
-
 - Inspecter les noms de champs et les valeurs actuelles
-
 - Remplir un champ de bouton d'image à partir d'un flux d'entrée

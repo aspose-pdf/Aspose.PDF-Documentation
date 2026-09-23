@@ -16,11 +16,8 @@ Abstract: Cet article explique comment extraire des images incorporées à parti
 Extrayez des images de pages PDF lorsque vous devez réutiliser des graphiques intégrés, inspecter des ressources du document ou exporter des images pour un traitement en aval.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ouvrez un flux de sortie pour le fichier image extrait.
-
 1. Obtenez la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible du document et accédez à sa collection `Resources.Images`.
-
 1. Récupérez l'objet [`XImage`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) requis à partir de cette collection d'images par index.
-
 1. Appelez `image.save(outputImage)` pour écrire les octets de l'image extraite dans le flux cible.
 
 ```java

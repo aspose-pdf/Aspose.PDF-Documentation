@@ -3,7 +3,7 @@ title: Protéger les fichiers PDF en Java
 linktitle: Crypter et décrypter un fichier PDF
 type: docs
 weight: 70
-url: /java/protect-pdf-file/
+url: /fr/java/protect-pdf-file/
 description: Découvrez comment crypter des fichiers PDF, déchiffrer des documents protégés, modifier les mots de passe et inspecter la protection par mot de passe en Java.
 lastmod: "2026-09-21"
 sitemap:
@@ -15,25 +15,16 @@ Abstract: Cet article explique comment protéger les fichiers PDF en Java à l'a
 ---
 Aspose.PDF for Java fournit plusieurs API pour sécuriser les fichiers PDF avec des mots de passe et des autorisations.
 
-
 ## Protéger les documents PDF en Java
-
-
 
 Les exemples dans `ProtectDocumentExamples.java` illustrent les opérations suivantes :
 
-
 1. Appliquez le chiffrement à un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) avec les mots de passe utilisateur et propriétaire.
-
 1. Restreignez les autorisations avec [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
 1. Choisissez un [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) pour le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) protégé.
-
 1. Déchiffrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) protégé.
-
 1. Modifiez les mots de passe existants sur le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Testez les mots de passe candidats avec [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) et [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 
 ## Chiffrer un PDF avec des privilèges restreints
 
@@ -59,7 +50,6 @@ public static void encryptPassword(Path inputFile, Path outputFile) {
 
 ## Chiffrer un fichier PDF
 
-
 ```java
 public static void encryptPdfFile(Path inputFile, Path outputFile) {
     Document document = new Document(inputFile.toString());
@@ -79,7 +69,6 @@ public static void encryptPdfFile(Path inputFile, Path outputFile) {
 
 ## Déchiffrer un PDF protégé
 
-
 ```java
 public static void decryptPdfFile(Path inputFile, Path outputFile) {
     Document document = new Document(inputFile.toString(), USER_PASSWORD);
@@ -93,7 +82,6 @@ public static void decryptPdfFile(Path inputFile, Path outputFile) {
 ```
 
 ## Changer les mots de passe
-
 
 ```java
 public static void changePassword(Path inputFile, Path outputFile) {

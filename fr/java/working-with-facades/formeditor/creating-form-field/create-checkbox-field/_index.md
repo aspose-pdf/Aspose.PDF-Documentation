@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/create-checkbox-field/
 description: Découvrez comment ajouter un champ de formulaire de case à cocher à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Créer un champ de case à cocher dans un PDF avec Java
 Abstract: Cet article montre comment lier un PDF existant, ajouter un champ de case à cocher à une position spécifiée et enregistrer le document modifié à l'aide de la façade FormEditor dans Aspose.PDF for Java.
@@ -15,9 +15,7 @@ Utilisez `FormEditorExamples.createCheckBoxField(...)` pour ajouter un champ de 
 ## Créer un champ de case à cocher
 
 1. Liez le PDF source à la façade `FormEditor`.
-
 2. Ajoutez le champ de case à cocher avec `FieldType.CheckBox`, le nom du champ, la légende, la page et le rectangle.
-
 3. Enregistrez le document mis à jour.
 
 ```java

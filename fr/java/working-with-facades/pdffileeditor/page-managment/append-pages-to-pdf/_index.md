@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/append-pages-to-pdf/
 description: Ajoutez des pages d'un PDF à un autre en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ L'exemple Java ajoute la page 1 d'un deuxième PDF à la fin du premier document
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Liez le PDF d'entrée principal en transmettant son chemin à `append`.
 3. Fournissez la liste des fichiers sources secondaires et la plage de pages à ajouter.
-
 4. Enregistrez le résultat fusionné dans le fichier de sortie.
 
 ### Exemple Java

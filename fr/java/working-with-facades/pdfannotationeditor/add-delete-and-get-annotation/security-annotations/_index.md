@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/pdfannotationeditor-class/security-annotations/
 description: Découvrez comment marquer du texte à caviarder, appliquer des annotations de caviardage et caviarder des zones de page sélectionnées dans des fichiers PDF à l'aide de Java.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Rédigez du contenu PDF sensible en Java avec des annotations de sécurité
 Abstract: Cet article explique comment utiliser les annotations de caviardage dans les documents PDF à l'aide de Java. Il couvre le marquage du texte correspondant avec des annotations de caviardage, l'application permanente du caviardage et le caviardage de zones sélectionnées en fonction des rectangles de placement d'image détectés.
@@ -13,9 +13,7 @@ Abstract: Cet article explique comment utiliser les annotations de caviardage da
 ## Marquer le texte pour caviardage
 
 1. Chargez le PDF et recherchez dans toutes les pages le texte qui doit être caviardé.
-
 2. Créez un objet `RedactionAnnotation` pour chaque fragment de texte correspondant et configurez son apparence.
-
 3. Ajoutez les annotations de caviardage à leurs pages et enregistrez le document.
 
 ```java

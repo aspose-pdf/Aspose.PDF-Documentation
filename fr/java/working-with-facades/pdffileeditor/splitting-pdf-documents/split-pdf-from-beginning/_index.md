@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/split-pdf-from-beginning/
 description: Divisez un PDF depuis le début en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,7 +20,6 @@ L'exemple Java extrait les trois premières pages du document source.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Appelez `splitFromFirst` avec le fichier source, le nombre de pages à conserver et le fichier de sortie.
 3. Enregistrez le nouveau document PDF.
 

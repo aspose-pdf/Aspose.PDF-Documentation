@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/add-stamp/
 description: Découvrez comment ajouter un tampon d'image aux pages PDF en Java avec la façade PdfFileStamp.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez ce flux de travail lorsqu'un tampon basé sur une image doit être appl
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
 2. Créez un objet `Stamp`.
 3. Liez le tampon à un fichier image avec `bindImage`.
-
 4. Ajoutez le tampon au document avec `addStamp`.
-
 5. Enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemple Java

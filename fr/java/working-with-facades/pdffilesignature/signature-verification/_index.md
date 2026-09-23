@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /java/signature-verification/
 description: Découvrez comment vérifier les signatures PDF en Java avec la façade PdfFileSignature.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez ce flux de travail lorsque vous avez besoin d’une validation rapide s
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
 2. Sélectionnez le nom de la signature que vous souhaitez inspecter.
 3. Appelez `verifySignature` pour valider la signature.
-
 4. Appelez `coversWholeDocument` pour vérifier que la signature couvre tout le document.
-
 5. Fermez l’objet de façade.
 
 ### Exemple Java

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/change-password/
 description: Découvrez comment modifier les mots de passe PDF en Java avec la façade PdfFileSecurity.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez `PdfFileSecurity` lorsque vous devez modifier les mots de passe d’un 
 ### Étapes
 
 1. Créez une instance `PdfFileSecurity`.
-
 2. Liez le PDF sécurisé avec `bindPdf`.
 3. Appelez la surcharge `changePassword` appropriée, selon que vous souhaitez également réinitialiser les privilèges et la taille de la clé.
-
 4. Enregistrez le fichier mis à jour et fermez l'objet de sécurité.
 
 ### Exemples Java

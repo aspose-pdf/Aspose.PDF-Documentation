@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/pdfannotationeditor-class/text-based-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer du texte, du texte libre et des annotations barrées dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Travailler avec des annotations PDF texte en Java
 Abstract: Cet article explique comment créer, lire et supprimer des annotations textuelles dans des documents PDF à l'aide de Java. Il couvre les annotations de texte, les annotations de texte libre et les annotations barrées basées sur les exemples d'implémentation Java.
@@ -13,9 +13,7 @@ Abstract: Cet article explique comment créer, lire et supprimer des annotations
 ## Ajouter une annotation de texte
 
 1. Ouvrez le PDF d'entrée et ciblez la page où l'annotation de texte doit être placée.
-
 2. Créez l’objet `TextAnnotation`, définissez son rectangle et définissez son titre, son sujet, ses indicateurs et sa couleur.
-
 3. Ajoutez l'annotation à la page et enregistrez le document mis à jour.
 
 ```java
@@ -37,9 +35,7 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 ## Ajouter une annotation de texte libre
 
 1. Chargez le PDF source et sélectionnez la page et le rectangle cibles pour la note en texte libre.
-
 2. Créez l’objet `FreeTextAnnotation`, initialisez son apparence par défaut et définissez le titre et la couleur.
-
 3. Ajoutez l'annotation à la page et enregistrez le résultat.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/signature-integrity-checks/
 description: Découvrez comment valider la couverture et l'intégrité des signatures en Java avec la façade PdfFileSignature.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Cet article correspond au même flux de travail de vérification exposé par `Pd
 ### Étapes
 
 1. Liez le PDF signé avec `PdfFileSignature`.
-
 2. Sélectionnez un nom de signature dans le document.
 3. Appelez `verifySignature` pour valider le contenu de la signature.
-
 4. Appelez `coversWholeDocument` pour confirmer que la signature couvre l’ensemble du document.
-
 5. Fermez l’objet de façade.
 
 ### Exemple Java

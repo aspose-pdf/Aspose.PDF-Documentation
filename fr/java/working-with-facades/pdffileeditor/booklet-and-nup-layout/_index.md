@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/booklet-and-nup-layout/
 description: Apprenez à réorganiser les pages PDF en mises en page de livret et N-Up avec la façade PdfFileEditor en Java.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +18,5 @@ Utilisez la façade PdfFileEditor lorsque vous devez redistribuer un PDF existan
 Cette section explique comment :
 
 - créer un PDF prêt pour un livret à partir d'un document existant
-
 - placer plusieurs pages sources sur chaque feuille de sortie avec une mise en page N-Up
-
 - gérer la valeur de retour booléenne utilisée par les exemples de style `try` dans l'ensemble d'exemples Java

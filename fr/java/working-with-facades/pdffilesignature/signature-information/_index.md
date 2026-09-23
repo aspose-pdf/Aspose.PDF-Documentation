@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/signature-information/
 description: Découvrez comment lire les noms de signature et les détails des signataires à partir de PDF signés en Java avec PdfFileSignature.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez ce flux de travail lorsque vous devez vérifier qui a signé un PDF et 
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
 2. Lisez la collection de signatures et sélectionnez un nom de signature.
 3. Appelez les accesseurs aux informations de signature pour connaître le nom du signataire, la date, la raison et le lieu.
-
 4. Fermez l'objet de façade lorsque vous avez terminé.
 
 ### Exemple Java

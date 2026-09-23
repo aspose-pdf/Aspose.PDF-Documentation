@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/concatenate-pdf-files/
 description: Fusionnez des fichiers PDF en Java avec le flux de travail de concaténation PdfFileEditor basé sur un tableau.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ L'exemple Java fusionne deux fichiers en les transmettant à la surcharge `conca
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Créez un tableau de chaînes avec les chemins PDF d’entrée.
 3. Appelez `concatenate` avec le tableau d'entrée et le chemin du fichier de sortie.
-
 4. Enregistrez le document fusionné.
 
 ```java

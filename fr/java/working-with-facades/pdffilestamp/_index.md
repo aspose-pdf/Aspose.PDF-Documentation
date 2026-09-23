@@ -5,7 +5,7 @@ type: docs
 weight: 155
 url: /java/pdffilestamp-class/
 description: Découvrez comment utiliser la façade PdfFileStamp en Java pour ajouter des en-têtes, des pieds de page, des numéros de page et des tampons aux documents PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -19,8 +19,6 @@ La classe Java `PdfFileStampExamples` présente les principaux flux de travail d
 Utilisez cette section pour apprendre à :
 
 - ajouter un tampon d'image à un PDF
-
 - placer du texte et des images dans les en-têtes ou les pieds de page
-
 - contrôler les marges d’en-tête et de pied de page
 - ajouter des numéros de page avec des mises en page par défaut, basées sur des coordonnées, alignées ou avec numérotation romaine

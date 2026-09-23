@@ -18,7 +18,6 @@ Abstract: Cet article présente les limitations de la version d’évaluation et
 La version d’évaluation permet de tester les fonctionnalités de la bibliothèque avant l’achat, avec les limitations suivantes.
 
 - **PDF créé avec un filigrane d'évaluation.** La version d'évaluation d'Aspose.PDF for Java fournit toutes les fonctionnalités du produit, mais toutes les pages des documents PDF générés sont filigranées avec "Évaluation uniquement. Créé avec Aspose.PDF. Copyright 2002-2020 Aspose Pty Ltd" en haut.
-
 - **La limite du nombre d'éléments de collection pouvant être traités.**
 
 Dans la version d'évaluation de n'importe quelle collection, vous ne pouvez traiter que quatre éléments (par exemple, seulement 4 pages, 4 champs de formulaire, etc.).

@@ -3,7 +3,7 @@ title: Ouvrir un document PDF par programme
 linktitle: Ouvrir le PDF
 type: docs
 weight: 20
-url: /java/open-pdf-document/
+url: /fr/java/open-pdf-document/
 description: Découvrez comment ouvrir un fichier PDF en Java à l'aide d'Aspose.PDF à partir d'un chemin de fichier, d'un flux ou avec un mot de passe.
 lastmod: "2026-09-21"
 sitemap:
@@ -15,22 +15,15 @@ Abstract: Cet article montre comment ouvrir des documents PDF existants en Java 
 ---
 Aspose.PDF for Java prend en charge plusieurs façons de charger un document PDF existant en fonction de l'origine des données source.
 
-
 ## Ouvrir un document PDF en Java
-
-
 
 Vous pouvez ouvrir un document PDF :
 
-
 1. Ouvrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directement à partir d'un chemin de fichier.
-
 1. Ouvrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) à partir d'un `InputStream`.
 1. Ouvrez un [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) chiffré en fournissant le mot de passe.
 
-
 ## Ouvrir un document à partir d'un fichier
-
 
 ```java
 public static void openDocumentFromFile(Path inputFile) {
@@ -41,7 +34,6 @@ public static void openDocumentFromFile(Path inputFile) {
 ```
 
 ## Ouvrir un document à partir d’un flux
-
 
 ```java
 public static void openDocumentFromStream(Path inputFile) throws Exception {

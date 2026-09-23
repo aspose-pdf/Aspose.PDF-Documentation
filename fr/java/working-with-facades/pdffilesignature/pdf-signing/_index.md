@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/pdf-signing/
 description: Apprenez à signer des documents PDF en Java avec la façade PdfFileSignature.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez `PdfFileSignature` lorsque vous devez appliquer une signature numériqu
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF source.
-
 2. Chargez le certificat soit via `setCertificate`, soit en créant un objet `PKCS7`.
 3. Appelez `sign` avec la page cible, les paramètres de visibilité, le rectangle de signature et les données de signature.
-
 4. Enregistrez le PDF signé et fermez l’objet de façade.
 
 ### Exemples Java

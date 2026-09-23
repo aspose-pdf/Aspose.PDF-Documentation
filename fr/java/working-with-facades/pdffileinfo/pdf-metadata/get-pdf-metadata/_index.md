@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/get-pdf-metadata/
 description: Apprenez à lire les métadonnées PDF en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Cet exemple lit les informations de document standard, les indicateurs d'état d
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
 2. Lisez les champs de métadonnées standard tels que le sujet, le titre, les mots-clés et le créateur.
 3. Inspectez les indicateurs d’état du fichier, par exemple si le fichier est valide, chiffré, protégé par mot de passe ou s’il s’agit d’un portefeuille.
-
 4. Lisez une valeur de métadonnées personnalisée avec `getMetaInfo`.
-
 5. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java

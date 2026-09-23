@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/page-information/
 description: Découvrez comment inspecter les dimensions, la rotation et les décalages d'une page PDF en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -19,5 +19,4 @@ Utilisez ces exemples lorsque vous devez analyser la géométrie de la page avan
 Cette section explique comment :
 
 - lire la largeur, la hauteur et la rotation de la page pour une page spécifique
-
 - inspecter les décalages de page X et Y et les convertir en pouces

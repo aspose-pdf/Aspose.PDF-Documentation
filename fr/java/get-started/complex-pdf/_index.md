@@ -18,18 +18,12 @@ L'exemple [Hello World](/pdf/java/hello-world-example/) présente les étapes de
 Pour créer un document PDF plus complexe en Java :
 
 1. Créez un objet [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-
 1. Ajoutez une image à la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) avec `page.addImage(...)` et un rectangle de destination [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-
 1. Créez un objet [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) pour l’en-tête et définissez sa police, sa taille de police, son alignement et sa [`Position`](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
 1. Créez un deuxième objet [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) pour le paragraphe de description.
-
 1. Créez un tableau [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) avec des bordures, des marges internes de cellule et un style d’en-tête.
-
 1. Ajoutez les lignes d’horaires générées au tableau [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
-
 1. Ajoutez le tableau [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) à la collection de paragraphes de la page [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-
 1. Enregistrez l’objet [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) au format PDF.
 
 Le code Java suivant est basé sur `GetStartedExamples.java`.

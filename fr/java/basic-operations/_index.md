@@ -3,7 +3,7 @@ title: Opérations de base avec les documents PDF
 linktitle: Opérations de base
 type: docs
 weight: 60
-url: /java/basic-operations/
+url: /fr/java/basic-operations/
 lastmod: "2026-09-21"
 description: La section Opérations de base décrit comment créer, ouvrir, enregistrer, fusionner, diviser et protéger des documents PDF à l'aide d'Aspose.PDF pour Java.
 sitemap:
@@ -15,14 +15,9 @@ Abstract: Cet article donne un aperçu des opérations PDF de base en Java à l'
 ---
 La section **Opérations de base** décrit les opérations PDF les plus courantes que vous pouvez effectuer avec Aspose.PDF for Java :
 
-
 - [Créer un document PDF](/pdf/java/create-document/) - créez un nouveau document PDF par programme en Java.
-
 - [Ouvrir le document PDF](/pdf/java/open-pdf-document/) - ouvrez les fichiers PDF à partir d'un chemin, d'un flux ou avec un mot de passe.
-
 - [Enregistrer le document PDF](/pdf/java/save-pdf-document/) - enregistrez un document dans un fichier, dans un flux ou dans un format conforme à une norme PDF.
-
 - [Fusionner PDF](/pdf/java/merge-pdf/) - combinez plusieurs fichiers PDF en un seul document de sortie.
 - [Diviser le PDF](/pdf/java/split-pdf/) - divisez les pages PDF en fichiers PDF séparés d'une seule page.
-
 - [Chiffrer et déchiffrer le fichier PDF](/pdf/java/protect-pdf-file/) - définissez des mots de passe et des autorisations, ou déchiffrez les fichiers PDF.

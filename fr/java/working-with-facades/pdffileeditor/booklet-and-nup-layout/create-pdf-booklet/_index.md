@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/create-pdf-booklet/
 description: Créez un PDF prêt pour un livret à partir d'un document existant en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ Utilisez `PdfFileEditor.makeBooklet` pour réorganiser les pages d'un PDF exista
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Appelez `makeBooklet` avec le PDF source et le fichier de sortie.
 3. Enregistrez le document livret.
-
 4. Si vous souhaitez vérifier la valeur de retour, utilisez la variante qui renvoie une valeur booléenne et gérez un éventuel échec.
 
 ### Exemple Java

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/encrypt-pdf-file/
 description: Découvrez comment chiffrer un PDF et configurer les autorisations en Java avec la façade PdfFileSecurity.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez `PdfFileSecurity` lorsque vous devez protéger un PDF avec des mots de 
 ### Étapes
 
 1. Créez une instance `PdfFileSecurity`.
-
 2. Liez le PDF source avec `bindPdf`.
 3. Créez un objet `DocumentPrivilege` qui correspond aux actions autorisées.
-
 4. Appelez la surcharge `encryptFile` appropriée pour la taille de clé et l'algorithme dont vous avez besoin.
-
 5. Enregistrez le fichier sécurisé et fermez l'objet.
 
 ### Exemples Java

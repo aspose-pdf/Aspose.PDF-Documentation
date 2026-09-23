@@ -5,7 +5,7 @@ type: docs
 weight: 150
 url: /java/stamp-class/
 description: Découvrez comment utiliser la classe Stamp en Java pour ajouter des tampons d'image, de PDF et de texte aux documents PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -23,11 +23,8 @@ Utilisez ce flux de travail lorsqu'un fichier image doit être placé sur le PDF
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
 2. Créez un objet `Stamp` et liez-le au fichier image.
-
 3. Définissez l’identifiant du tampon et l’origine du placement.
-
 4. Ajoutez le tampon au document.
-
 5. Enregistrez le résultat et fermez l’objet de façade.
 
 ### Exemple Java
@@ -56,12 +53,9 @@ Utilisez ce flux de travail lorsque le contenu d'une autre page PDF doit être r
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF cible.
-
 2. Créez un objet `Stamp`.
 3. Liez le tampon à une page spécifique d'un autre fichier PDF.
-
 4. Définissez le numéro de page cible et l’origine du placement.
-
 5. Ajoutez le tampon, enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemple Java
@@ -90,12 +84,9 @@ Utilisez ce flux de travail lorsque le tampon doit contenir du texte mis en form
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
 2. Créez un objet `Stamp`.
-
 3. Liez un objet `FormattedText` et un `TextState` personnalisé au tampon.
 4. Définissez l’origine et la rotation du tampon.
-
 5. Ajoutez le tampon, enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemple Java
@@ -125,11 +116,8 @@ Utilisez ce flux de travail lorsque le tampon doit apparaître uniquement sur le
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
 2. Créez un objet `Stamp` et liez-le à un fichier image.
-
 3. Définissez la liste des pages cibles, l'origine et la taille de l'image.
-
 4. Ajoutez le tampon au document.
 5. Enregistrez le résultat et fermez l’objet de façade.
 
@@ -160,13 +148,9 @@ Utilisez ce flux de travail lorsque le tampon doit apparaître derrière le cont
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
 2. Créez un objet `Stamp` et liez-le au fichier image.
-
 3. Marquez le tampon comme contenu d’arrière-plan.
-
 4. Configurez l'opacité, la qualité, la rotation, la taille et l'origine.
-
 5. Ajoutez le tampon, enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemple Java

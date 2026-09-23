@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/pdfcontenteditor-class/
 description: Découvrez comment utiliser la classe PdfContentEditor en Java pour modifier du contenu PDF, gérer les annotations et les pièces jointes, travailler avec les actions de document, les images, le texte, le multimédia, les tampons et les préférences de la visionneuse.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,12 +18,8 @@ La classe Java `PdfContentEditorExamples` illustre les principaux flux de travai
 Utilisez cette section pour apprendre à :
 
 - ajouter des annotations de texte, de ligne, de polygone, de film et d’annotation de tampon
-
 - ajouter ou supprimer des pièces jointes à un document
-
 - lier un PDF à partir d'un flux et enregistrer le résultat
 - ajouter ou supprimer des actions d'ouverture de document
-
 - remplacer le texte et les images
-
 - obtenir et modifier les préférences de la visionneuse

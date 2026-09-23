@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/decorate-field/
 description: Apprenez à décorer un champ de formulaire PDF avec des couleurs et un alignement en Java à l'aide de la façade FormEditor dans Aspose.PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Décorer un champ de formulaire PDF en Java
 Abstract: Cet article montre comment lier un PDF existant, configurer un FormFieldFacade avec des couleurs et un alignement, décorer un champ et enregistrer le document mis à jour à l'aide de la façade FormEditor dans Aspose.PDF for Java.
@@ -13,11 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, configurer un FormFie
 ## Décorer un champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
 2. Configurez un `FormFieldFacade` avec les couleurs et l'alignement requis.
-
 3. Passez la façade à l'éditeur et appelez `decorateField(...)`.
-
 4. Enregistrez le document mis à jour.
 
 ```java

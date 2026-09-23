@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/page-merging/
 description: Découvrez comment fusionner des fichiers PDF en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,7 +18,5 @@ La classe Java `PdfFileEditorExamples` inclut un exemple direct `concatenate` po
 Cette section présente :
 
 - un exemple de fusion avec `concatenate` utilisant un tableau de fichiers
-
 - des conseils sur l'article équivalent à deux fichiers qui utilise le même exemple Java
-
 - notes explicites sur les limites des exemples pour les variantes de fusion par lots volumineux, optimisées, spécifiques au formulaire et `try` qui ne sont pas implémentées en tant que méthodes dédiées dans l'ensemble d'exemples de référentiel actuel

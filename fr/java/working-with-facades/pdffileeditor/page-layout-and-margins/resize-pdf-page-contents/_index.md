@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/resize-pdf-page-contents/
 description: Redimensionnez le contenu des pages PDF sélectionnées en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,12 +20,9 @@ L'exemple Java redimensionne la zone de contenu des pages 1 et 3 et vérifie la 
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Choisissez les pages dont le contenu doit être redimensionné.
 3. Appelez `resizeContents` avec la largeur et la hauteur cibles.
-
 4. Vérifiez la valeur de retour et gérez les échecs avant de continuer.
-
 5. Enregistrez le document mis à jour.
 
 ### Exemple Java

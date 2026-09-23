@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/signature-extraction/
 description: Découvrez comment extraire le certificat de signature d'un PDF signé en Java avec PdfFileSignature.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez ce flux de travail lorsque vous devez enregistrer le certificat associ�
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
 2. Sélectionnez le nom de la signature à inspecter.
 3. Appelez `extractCertificate` pour ouvrir le flux de certificat.
-
 4. Copiez les octets du certificat dans un fichier de sortie.
-
 5. Fermez les ressources de flux et l’objet de façade.
 
 ### Exemple Java

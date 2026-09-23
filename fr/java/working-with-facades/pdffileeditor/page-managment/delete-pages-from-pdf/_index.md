@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/delete-pages-from-pdf/
 description: Supprimez les pages sélectionnées d'un PDF en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ L'exemple Java supprime les pages 2 et 4 du document source.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Construisez un tableau avec les numéros de page à supprimer.
 3. Appelez `delete` avec le fichier d'entrée, le tableau de pages et le fichier de sortie.
-
 4. Enregistrez le PDF résultant.
 
 ### Exemple Java

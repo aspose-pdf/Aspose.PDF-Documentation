@@ -3,7 +3,7 @@ title: Diviser des fichiers PDF en Java
 linktitle: Diviser des fichiers PDF
 type: docs
 weight: 60
-url: /java/split-pdf/
+url: /fr/java/split-pdf/
 description: Découvrez comment diviser un PDF en fichiers PDF d'une seule page en Java à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 sitemap:
@@ -15,39 +15,24 @@ Abstract: Cet article montre comment diviser un document PDF en fichiers PDF dis
 ---
 Diviser un PDF en fichiers distincts est utile lorsque vous devez exporter chaque page à des fins de révision, de stockage ou de traitement en aval.
 
-
 ## Exemple en ligne
-
-
 
 [Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) est une application en ligne gratuite permettant de tester le fractionnement de PDF dans un navigateur.
 
-
-
 [![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
-
-
 
 Cet exemple utilise la classe [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) pour ouvrir un fichier PDF et parcourir ses pages. Pour chaque [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), il crée un nouveau document, y ajoute la page et enregistre le résultat dans un fichier PDF distinct.
 
 Pour diviser un PDF en fichiers de pages individuelles en Java :
 
-
 1. Ouvrez le PDF source avec le constructeur [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez les objets [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) renvoyés par `document.getPages()`.
-
 1. Créez un nouveau [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vide pour chaque page.
-
 1. Ajoutez la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) actuelle au nouveau [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Enregistrez le nouveau [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) avec un nom de fichier unique.
-
 1. Fermez les deux objets [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) une fois le traitement terminé.
 
-
 ## Diviser le PDF en fichiers d'une seule page
-
-
 
 L'exemple Java suivant est basé sur `SplitDocumentExamples.java` et enregistre les pages sous `Page_1.pdf`, `Page_2.pdf`, etc.
 

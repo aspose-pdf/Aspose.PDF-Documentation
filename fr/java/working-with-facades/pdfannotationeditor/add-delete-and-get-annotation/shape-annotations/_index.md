@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/pdfannotationeditor-class/shape-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations de carrés, de cercles, de polygones et de polylignes dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Travailler avec des annotations PDF géométriques en Java
 Abstract: Cet article explique comment créer, inspecter et supprimer des annotations géométriques dans des documents PDF à l'aide de Java. Il couvre les annotations de carrés, de cercles, de polygones et de polylignes avec la configuration de la couleur, de l'opacité, des fenêtres contextuelles et des points.
@@ -13,9 +13,7 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 ## Ajouter des annotations de forme
 
 1. Ouvrez le PDF d'entrée et choisissez la page et le rectangle qui contiendront l'annotation de forme.
-
 2. Créez l'annotation de forme requise, puis définissez son titre, ses couleurs, son opacité et ses points si nécessaire.
-
 3. Ajoutez l'annotation à la page et enregistrez le PDF modifié.
 
 ```java

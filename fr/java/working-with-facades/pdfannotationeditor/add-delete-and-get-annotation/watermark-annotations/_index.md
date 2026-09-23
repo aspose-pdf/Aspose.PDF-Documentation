@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /java/pdfannotationeditor-class/watermark-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Travailler avec des annotations en filigrane dans des fichiers PDF à l'aide de Java
 Abstract: Cet article explique comment créer, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide de Java. Il couvre l'ajout d'une annotation de filigrane de texte avec un état et une opacité de texte personnalisés, la lecture des zones d'annotation de filigrane existantes et la suppression des annotations de filigrane.
@@ -13,9 +13,7 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 ## Ajouter une annotation en filigrane
 
 1. Ouvrez le PDF d'entrée et définissez le rectangle où l'annotation en filigrane sera placée.
-
 2. Créez l’objet `WatermarkAnnotation`, ajoutez-le à la page et configurez l'état et l'opacité du texte du filigrane.
-
 3. Appliquez les lignes de texte en filigrane et enregistrez le PDF modifié.
 
 ```java

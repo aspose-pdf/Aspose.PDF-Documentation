@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/get-page-info/
 description: Découvrez comment inspecter la largeur, la hauteur et la rotation d'une page en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Cet exemple lit les principales propriétés géométriques de la page 1.
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
 2. Appelez `getPageWidth`, `getPageHeight` et `getPageRotation` pour la page que vous souhaitez inspecter.
 3. Utilisez ou affichez les valeurs renvoyées.
-
 4. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java

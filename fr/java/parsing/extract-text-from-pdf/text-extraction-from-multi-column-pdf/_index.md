@@ -18,14 +18,10 @@ Les mises en page multicolonnes nécessitent souvent un traitement supplémentai
 Cette technique met à jour les tailles de police des fragments de texte, enregistre le document ajusté en mémoire, puis extrait le texte du résultat transformé.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) et visitez toutes les pages du document pour collecter des objets [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-
 1. Parcourez les fragments et réduisez la taille de chaque police selon le rapport demandé afin que la disposition des colonnes denses puisse être normalisée avant l'extraction.
-
 1. Enregistrez le [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ajusté dans un flux d'octets en mémoire.
 1. Rouvrez un deuxième [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) à partir de cette mémoire tampon.
-
 1. Créez un [`TextAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/), visitez toutes les pages du document transformé et écrivez le texte extrait dans le fichier de sortie.
 
 ```java
@@ -54,11 +50,8 @@ Utilisez `TextExtractionOptions` avec le mode de mise en forme Pure et ajustez l
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez un [`TextAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) pour l'extraction du document complet.
-
 1. Créez [`TextExtractionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) avec le mode de mise en forme Pure afin d'utiliser un comportement d'extraction qui tient compte de la mise en page.
-
 1. Définissez le facteur d'échelle et appliquez les options d'extraction à l'absorbeur avant de visiter les pages.
-
 1. Visitez toutes les pages du document et écrivez le texte extrait dans le fichier de sortie.
 
 ```java

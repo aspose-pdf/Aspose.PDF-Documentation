@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/change-viewer-preferences/
 description: Découvrez comment modifier les préférences de visualisation d'un document PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Modifier les préférences de la visionneuse PDF en Java
 Abstract: Cet article montre comment lier un PDF, modifier la valeur de préférence actuelle de la visionneuse et enregistrer le document mis à jour à l'aide de la façade PdfContentEditor dans Aspose.PDF for Java.
@@ -13,11 +13,8 @@ Abstract: Cet article montre comment lier un PDF, modifier la valeur de préfér
 ## Modifier les préférences de la visionneuse
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
 2. Lisez la valeur actuelle des préférences de la visionneuse.
-
 3. Combinez-la avec l’indicateur supplémentaire souhaité et transmettez le résultat à `changeViewerPreference(...)`.
-
 4. Enregistrez le document PDF mis à jour.
 
 ```java

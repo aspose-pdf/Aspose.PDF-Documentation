@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/save-metadata-with-xmp/
 description: Découvrez comment enregistrer les métadonnées PDF avec XMP en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez ce flux de travail lorsque vous avez besoin que les informations mises 
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
 2. Définissez les champs de métadonnées que vous souhaitez mettre à jour, tels que le sujet, le titre, les mots-clés et le créateur.
 3. Appelez `saveNewInfoWithXmp()` avec le chemin du fichier de sortie.
-
 4. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java

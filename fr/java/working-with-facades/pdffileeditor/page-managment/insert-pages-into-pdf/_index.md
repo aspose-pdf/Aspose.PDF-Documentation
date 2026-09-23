@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/insert-pages-into-pdf/
 description: Insérez les pages sélectionnées d'un PDF dans un autre en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,12 +20,9 @@ L'exemple Java insère les pages 1 et 2 du document secondaire après la page 2 
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Choisissez le point d'insertion dans le document cible.
 3. Sélectionnez les numéros de page à copier à partir du document source.
-
 4. Appelez `insert` avec le fichier cible, le point d'insertion, le fichier source, le tableau de pages et le fichier de sortie.
-
 5. Enregistrez le PDF mis à jour.
 
 ### Exemple Java

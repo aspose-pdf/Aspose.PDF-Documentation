@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/pdfannotationeditor-class/interactive-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations de lien dans des documents PDF à l'aide de Java.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Travailler avec des annotations PDF interactives en Java
 Abstract: Cet article explique comment utiliser des annotations de liens interactifs dans des fichiers PDF à l'aide de Java. Il couvre la localisation du texte, la création d'une annotation de lien sur la zone de texte correspondante, la lecture des annotations de lien existantes et leur suppression.
@@ -13,9 +13,7 @@ Abstract: Cet article explique comment utiliser des annotations de liens interac
 ## Ajouter une annotation de lien
 
 1. Chargez le document PDF source et recherchez le texte cible dans la première page.
-
 2. Utilisez le rectangle de texte correspondant pour créer un objet `LinkAnnotation` et attribuer l'URI de destination.
-
 3. Ajoutez l'annotation à la page et enregistrez le PDF mis à jour.
 
 ```java

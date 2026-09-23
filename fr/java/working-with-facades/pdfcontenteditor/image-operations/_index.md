@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/pdfcontenteditor-image-operations/
 description: Découvrez la couverture actuelle des opérations d’image Java disponible dans la façade PdfContentEditor dans Aspose.PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Workflows d'édition d'images en Java avec PdfContentEditor
 Abstract: Cette section couvre les flux de travail liés aux images actuellement pris en charge par l'ensemble d'exemples Java PdfContentEditor. Le référentiel comprend un exemple direct de remplacement d'une image, tandis que les sujets de suppression d'image non pris en charge sont conservés sous forme de notes explicites sur les limites des exemples.
@@ -15,9 +15,7 @@ La classe Java actuelle `PdfContentEditorExamples` prend directement en charge `
 ## Remplacer une image
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
 2. Appelez `replaceImage(...)` avec le numéro de page, l'index de l'image et le chemin de l'image de remplacement.
-
 3. Enregistrez le document PDF mis à jour.
 
 ```java

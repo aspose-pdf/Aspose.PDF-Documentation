@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/pdffilesignature-class/
 description: Découvrez comment utiliser la façade PdfFileSignature en Java pour signer, certifier, inspecter, vérifier, extraire et supprimer des signatures PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -19,8 +19,6 @@ La classe Java `PdfFileSignatureExamples` présente les principaux flux de trava
 Utilisez cette section pour apprendre à :
 
 - signer et certifier des documents PDF
-
 - inspecter les noms de signature, les détails du signataire et les horodatages
-
 - vérifier la validité de la signature et la couverture de l'ensemble du document
 - extraire un certificat de signature et supprimer une signature existante

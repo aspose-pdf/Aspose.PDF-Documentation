@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/decrypt-pdf-file/
 description: Apprenez à déchiffrer un PDF en Java avec la façade PdfFileSecurity.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez ce flux de travail lorsque vous disposez du mot de passe du propriétai
 ### Étapes
 
 1. Créez une instance `PdfFileSecurity`.
-
 2. Liez le PDF chiffré avec `bindPdf`.
 3. Appelez `decryptFile` ou `tryDecryptFile` avec le mot de passe du propriétaire.
-
 4. Enregistrez la sortie si le déchiffrement réussit.
-
 5. Fermez l'objet de sécurité.
 
 ### Exemples Java

@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /java/set-pdf-metadata/
 description: Découvrez comment mettre à jour les métadonnées PDF en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez ce flux de travail lorsque vous devez normaliser ou enrichir les inform
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
 2. Définissez les champs de métadonnées standard que vous souhaitez mettre à jour.
 3. Ajoutez des métadonnées personnalisées avec `setMetaInfo`.
-
 4. Enregistrez le document mis à jour avec `save()`.
-
 5. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java

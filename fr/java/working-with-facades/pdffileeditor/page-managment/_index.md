@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/page-management/
 description: Apprenez à gérer les pages PDF en Java en extrayant, supprimant, insérant et ajoutant des pages avec PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,8 +18,6 @@ Utilisez ces flux de travail lorsque vous devez reconstruire la structure d'un d
 Cette section explique comment :
 
 - ajouter des pages d'un autre PDF
-
 - supprimer des pages spécifiques
-
 - extraire les pages sélectionnées dans un nouveau fichier
 - insérer les pages choisies d'un PDF dans un autre

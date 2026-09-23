@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/create-submit-button/
 description: Découvrez comment ajouter un bouton de soumission à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Créer un bouton de soumission PDF en Java
 Abstract: Cet article montre comment lier un PDF existant, ajouter un champ de bouton d'envoi avec une URL cible et enregistrer le document modifié à l'aide de la façade FormEditor dans Aspose.PDF for Java.
@@ -15,9 +15,7 @@ Utilisez `FormEditorExamples.createSubmitButton(...)` pour créer un bouton qui 
 ## Créer un bouton de soumission
 
 1. Liez le PDF source à la façade `FormEditor`.
-
 2. Appelez `addSubmitBtn(...)` avec le nom du bouton, la page, l'étiquette, l'URL cible et le rectangle.
-
 3. Enregistrez le document mis à jour.
 
 ```java

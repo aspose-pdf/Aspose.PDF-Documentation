@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /java/concatenate-two-files/
 description: Fusionnez deux fichiers PDF en un seul document en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ Cet article correspond directement à l'exemple `mergePdfDocuments` dans `PdfFil
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Transmettez les deux chemins de fichiers d’entrée sous forme de tableau de chaînes.
 3. Appelez `concatenate` avec le tableau et le chemin du fichier de sortie.
-
 4. Enregistrez le PDF fusionné.
 
 ```java

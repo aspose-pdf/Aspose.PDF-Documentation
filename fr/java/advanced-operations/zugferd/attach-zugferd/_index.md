@@ -22,7 +22,7 @@ Utilisez les API `Document` et `FileSpecification` lorsque vous devez regrouper 
 1. Définissez les métadonnées du fichier intégré, y compris le type MIME et [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
 1. Ajoutez le [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) à la collection de fichiers incorporés au document.
 1. Convertissez le document en [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {

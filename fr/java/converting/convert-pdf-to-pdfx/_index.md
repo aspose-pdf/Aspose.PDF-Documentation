@@ -4,7 +4,7 @@ linktitle: Convertir un PDF en PDF/A, PDF/E et PDF/X
 type: docs
 weight: 120
 url: /java/convert-pdf-to-pdf_x/
-lastmod: "2026-09-21"
+lastmod: "2026-09-23"
 description: Découvrez comment convertir des fichiers PDF en PDF/A, PDF/E et PDF/X en Java avec Aspose.PDF pour les flux de travail d'archivage, d'ingénierie, d'accessibilité et d'impression.
 sitemap:
     changefreq: "monthly"
@@ -15,21 +15,14 @@ Abstract: Cet article explique comment valider et convertir des documents PDF au
 ---
 Aspose.PDF for Java peut valider et convertir des fichiers PDF standard en formats PDF normalisés pour l’archivage et l’échange.
 
-
 ## Convertir un PDF en PDF/A
-
-
 
 Utilisez cet exemple lorsqu'un PDF standard doit être converti en un document d'archives compatible PDF/A.
 
-
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Appelez `document.convert(...)` avec [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` et [`ConvertErrorAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction/) `Delete`.
 1. Écrivez le journal de validation dans un fichier XML annexe afin que les problèmes de conformité soient enregistrés lors de la conversion.
-
 1. Enregistrez la sortie PDF/A validée.
-
 
 ```java
 public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
@@ -42,18 +35,12 @@ public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
 
 ## Convertir un PDF en PDF/E
 
-
-
 Utilisez cet exemple lorsqu'un PDF doit être converti au format PDF/E destiné à l’ingénierie.
-
 
 1. Créez [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) pour [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_E_1` et le chemin du fichier journal souhaité.
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Appelez `document.convert(options)` pour que la conversion de conformité soit exécutée avec l'objet d'options préparé.
-
 1. Enregistrez le fichier PDF conforme obtenu.
-
 
 ```java
 public static void convertPdfToPdfE(Path inputFile, Path outputFile) {
@@ -69,16 +56,11 @@ public static void convertPdfToPdfE(Path inputFile, Path outputFile) {
 
 ## Convertir un PDF en PDF/X
 
-
-
 Utilisez cet exemple lorsqu'un PDF doit être converti au format PDF/X orienté impression.
 
 1. Créez [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) pour [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_X_4` et le chemin du fichier journal souhaité.
-
 1. Configurez un [`OutputIntent`](https://reference.aspose.com/pdf/java/com.aspose.pdf/outputintent/) tel que `FOGRA39` afin que le profil de couleur cible d'impression soit intégré dans les paramètres de conversion.
-
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et appelez `document.convert(options)`.
-
 1. Enregistrez la sortie PDF/X convertie.
 
 ```java

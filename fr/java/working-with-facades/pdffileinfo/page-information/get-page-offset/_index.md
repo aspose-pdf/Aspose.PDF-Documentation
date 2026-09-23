@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/get-page-offset/
 description: Découvrez comment inspecter les décalages des pages X et Y en Java avec la façade PdfFileInfo.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,12 +21,9 @@ Utilisez ce flux de travail lorsque vous avez besoin de comprendre comment le co
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF d'entrée.
-
 2. Appelez `getPageXOffset` et `getPageYOffset` pour la page cible.
 3. Convertissez les valeurs de points en pouces en divisant par `72.0`.
-
 4. Utilisez ou affichez les valeurs converties.
-
 5. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java

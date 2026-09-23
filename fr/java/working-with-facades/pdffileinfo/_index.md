@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /java/pdffileinfo-class/
 description: Découvrez comment utiliser la façade PdfFileInfo en Java pour inspecter les métadonnées PDF, les propriétés du document, les privilèges, les détails de la version et les informations sur la page.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -19,7 +19,5 @@ La classe Java `PdfFileInfoExamples` présente les principaux flux de travail d'
 Utilisez cette section pour apprendre à :
 
 - lire la version PDF et les autorisations des documents
-
 - inspecter la largeur, la hauteur, la rotation et les décalages de la page
-
 - obtenir, définir, effacer et enregistrer les métadonnées du document avec XMP

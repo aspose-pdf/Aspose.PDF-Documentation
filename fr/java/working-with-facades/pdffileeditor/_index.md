@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /java/pdffileeditor-class/
 description: Découvrez comment utiliser la façade PdfFileEditor en Java pour fusionner des documents, diviser des PDF, réorganiser les pages et ajuster la mise en page.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -18,10 +18,7 @@ La classe Java `PdfFileEditorExamples` illustre les principaux flux de travail d
 Utilisez cette section pour apprendre à :
 
 - fusionner des fichiers PDF avec la méthode `concatenate`
-
 - diviser un document du début, à la fin ou en fichiers d'une seule page
-
 - extraire, supprimer, insérer et ajouter des pages
 - créer un livret et une sortie N-Up pour l'impression
-
 - ajouter des marges, redimensionner le contenu de la page et insérer des sauts de page

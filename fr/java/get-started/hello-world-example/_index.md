@@ -18,16 +18,11 @@ Un exemple « Hello World » permet de découvrir les étapes de base de la cr
 L'exemple Java suit ces étapes :
 
 1. Créez un objet [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Ajoutez une [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
-
 1. Créez un objet [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) avec le texte `Hello, world!`.
 1. Définissez la position du fragment avec [`Position`](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), puis sa police, sa taille de police et ses couleurs d’arrière-plan et de premier plan avec [`TextState`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-
 1. Créez un objet [`TextBuilder`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) pour la page.
-
 1. Ajoutez le [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) à la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-
 1. Enregistrez le [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) au format PDF.
 
 Le code Java suivant est basé sur `GetStartedExamples.java`.

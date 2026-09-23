@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/add-header/
 description: Découvrez comment ajouter des en-têtes de texte et d'image aux pages PDF en Java avec la façade PdfFileStamp.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,8 @@ Utilisez `PdfFileStamp` lorsque vous avez besoin d'un contenu d'en-tête répét
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
 2. Créez le contenu de l'en-tête sous la forme `FormattedText` ou chargez-le à partir d'un flux d’image.
 3. Appelez la surcharge `addHeader` appropriée.
-
 4. Enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemples Java

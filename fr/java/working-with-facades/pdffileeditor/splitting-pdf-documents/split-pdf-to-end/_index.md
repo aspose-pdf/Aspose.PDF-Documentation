@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/split-pdf-to-end/
 description: Divisez un PDF d'une page choisie jusqu'à la fin en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,7 +20,6 @@ L'exemple Java extrait toutes les pages à partir de la page 2.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Appelez `splitToEnd` avec le fichier source, le numéro de la page de départ et le fichier de sortie.
 3. Enregistrez le document PDF résultant.
 

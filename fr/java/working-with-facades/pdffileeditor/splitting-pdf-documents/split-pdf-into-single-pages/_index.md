@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /java/split-pdf-into-single-pages/
 description: Divisez un PDF en fichiers de sortie d'une seule page en Java avec la façade PdfFileEditor.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,10 +20,8 @@ Utilisez ce flux de travail lorsque chaque page source doit devenir son propre f
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
 2. Préparez un modèle de fichier de sortie qui inclut un espace réservé de page tel que `%NUM%`.
 3. Appelez `splitToPages` avec le fichier source et le modèle de sortie.
-
 4. Enregistrez les fichiers d'une seule page générés.
 
 ```java

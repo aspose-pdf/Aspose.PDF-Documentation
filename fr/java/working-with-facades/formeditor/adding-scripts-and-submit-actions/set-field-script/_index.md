@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /java/set-field-script/
 description: Découvrez comment attribuer ou mettre à jour une action JavaScript sur un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
-lastmod: "2026-09-22"
+lastmod: "2026-09-23"
 TechArticle: true
 AlternativeHeadline: Définir une action JavaScript sur un champ de formulaire PDF en Java
 Abstract: Cet article montre comment lier un PDF existant, ajouter un script initial, le remplacer par un script mis à jour et enregistrer le document modifié à l'aide de la façade FormEditor dans Aspose.PDF for Java.
@@ -13,11 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, ajouter un script ini
 ## Définir un script de champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
 2. Ajoutez une action JavaScript initiale au champ.
-
 3. Remplacez-la par le texte du script mis à jour.
-
 4. Enregistrez le document mis à jour.
 
 ```java
