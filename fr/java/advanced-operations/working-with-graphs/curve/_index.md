@@ -20,9 +20,9 @@ Les courbes dans Aspose.PDF for Java sont définies par un tableau de coordonné
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-1. Créez la forme [Courbe](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) et configurez ses points de contrôle.
-1. Ajoutez la [Courbe](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
-1. Définissez les propriétés de forme requises par l'exemple, notamment [Couleur](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Créez la forme [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) et configurez ses points de contrôle.
+1. Ajoutez la [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Définissez les propriétés de forme requises par l'exemple, notamment [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

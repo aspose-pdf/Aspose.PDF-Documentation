@@ -17,7 +17,7 @@ Utilisez soit la collection d'images de page, soit la recherche basée sur l'emp
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Accédez aux ressources d'images sur la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
 1. Remplacez la ressource image cible par le nouveau fichier image.
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -34,7 +34,7 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Créez un [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) et visitez la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
 1. Obtenez la cible [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) et remplacez-la par le nouveau flux d'images.
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {

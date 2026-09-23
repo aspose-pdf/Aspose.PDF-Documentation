@@ -22,6 +22,7 @@ Aspose.PDF for Java fournit à la fois des fonctionnalités de remplacement simp
 Utilisez cet exemple lorsque la même phrase doit être remplacée dans tout le document.
 
 1. Ouvrez le document PDF source.
+
 1. Recherchez dans toutes les pages la phrase cible avec `TextFragmentAbsorber`.
 1. Remplacez le texte correspondant et enregistrez le PDF mis à jour.
 

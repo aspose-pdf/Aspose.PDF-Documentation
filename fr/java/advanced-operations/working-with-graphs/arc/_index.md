@@ -22,7 +22,7 @@ Aspose.PDF for Java utilise `Graph` avec des objets de forme tels que `Arc` et `
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
 1. Créez la forme [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) et configurez sa géométrie.
 1. Ajoutez le [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
-1. Définissez les propriétés de forme requises par l'exemple, notamment [Couleur](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Définissez les propriétés de forme requises par l'exemple, notamment [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -49,9 +49,9 @@ L'exemple complet ajoute trois arcs avec des rayons, des angles et des couleurs 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-1. Créez la forme [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
+1. Créez la forme [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
 1. Créez la forme [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) et configurez sa géométrie.
-1. Ajoutez la [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et l'[Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Ajoutez la [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et l'[Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

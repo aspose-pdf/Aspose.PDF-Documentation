@@ -138,6 +138,7 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 ## Intégrer des polices lors de la création d'un nouveau PDF
 
 Cet exemple crée un nouveau PDF et attribue dès le début une police intégrée au contenu du texte.
+
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Créez les [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/) et [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) requis.
 1. Résolvez la cible [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) du référentiel et marquez-la comme intégrée.
@@ -186,7 +187,7 @@ Cet exemple répertorie toutes les polices détectées dans le document afin que
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Énumérez les polices renvoyées par les utilitaires de polices de document.
-1. Affichez le nom de chaque [Police] détectée (https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. Affichez le nom de chaque [Font] détectée (https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
 ```java
 public static void getAllFonts(Path inputFile) {

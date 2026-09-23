@@ -19,7 +19,7 @@ Les formulaires XFA peuvent être convertis en AcroForms standard afin de pouvoi
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Accédez au document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) et définissez les propriétés [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) requises.
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
@@ -34,7 +34,7 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Accédez au document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) et définissez les propriétés `ignoreNeedsRendering` et [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) requises.
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void convertXfaFormWithIgnoreNeedsRendering(Path inputFile, Path outputFile) {

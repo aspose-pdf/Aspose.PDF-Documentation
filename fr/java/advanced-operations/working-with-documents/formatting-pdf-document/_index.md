@@ -143,7 +143,7 @@ Cet exemple répertorie toutes les polices détectées dans le document afin que
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Énumérez les polices renvoyées par les utilitaires de polices de document.
-1. Affichez le nom de chaque [Police] détectée (https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. Affichez le nom de chaque [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) détectée .
 
 ```java
 public static void getAllFonts(Path inputFile) {

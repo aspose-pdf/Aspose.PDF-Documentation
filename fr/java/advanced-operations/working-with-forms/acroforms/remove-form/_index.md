@@ -40,7 +40,7 @@ Utilisez cet exemple lorsque seules les ressources de formulaire sélectionnées
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Accédez au [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) pour la page cible.
 1. Filtrez les ressources [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) que vous souhaitez supprimer et supprimez-les de la collection.
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void removeSpecifiedForm(Path inputFile, int pageNum, Path outputFile) {

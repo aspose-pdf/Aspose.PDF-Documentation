@@ -19,11 +19,11 @@ Les annotations textuelles permettent aux réviseurs et aux développeurs d'ajou
 
 Cet article couvre les types d'annotations textuelles suivants :
 
-- **Texte libre** : zones de texte modifiables pour ajouter des notes et des commentaires
-- **Point culminant** : accent visuel sur les passages de texte importants
-- **Biffé** : marquer le texte pour suppression ou révision lors de la révision
+- **Free Text** : zones de texte modifiables pour ajouter des notes et des commentaires
+- **Highlight** : accent visuel sur les passages de texte importants
+- **Strikeout** : marquer le texte pour suppression ou révision lors de la révision
 - **Squiggly** : soulignement ondulé pour indiquer des erreurs ou des problèmes
-- **Souligné** : soulignement traditionnel avec précision en quatre points en option
+- **Underline** : soulignement traditionnel avec précision en quatre points en option
 
 ## Ajouter, obtenir et supprimer des annotations de texte libre
 

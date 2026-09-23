@@ -18,8 +18,8 @@ Abstract: Cet article montre comment ajouter des formes de lignes aux documents 
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-1. Créez la forme [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
-1. Ajoutez la [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Créez la forme [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
+1. Ajoutez la [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -48,8 +48,8 @@ public static void addLine(Path outputFile) {
 1. Créez un nouveau document PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez une [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) au document.
 1. Créez un conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) et ajoutez-le à la page.
-1. Créez la forme [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
-1. Ajoutez la [Ligne](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
+1. Créez la forme [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) et configurez ses coordonnées.
+1. Ajoutez la [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) au conteneur [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/).
 1. Enregistrez le PDF de sortie [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

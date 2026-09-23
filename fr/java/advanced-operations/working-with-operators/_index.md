@@ -28,7 +28,7 @@ Utilisez des opérateurs de bas niveau lorsque le placement des images doit êtr
 
 1. Ouvrez le PDF source avec [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) et obtenez la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
 1. Ajoutez le flux d'images d'entrée aux ressources de la page et conservez le nom de la ressource renvoyé.
-1. Créez un [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) qui définit la zone cible et construisez une [Matrice](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) à partir de ses limites.
+1. Créez un [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) qui définit la zone cible et construisez une [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) à partir de ses limites.
 1. Utilisez [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) pour conserver l'état graphique actuel, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) pour positionner l'image, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) pour la peindre et [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) pour restaurer l'état antérieur.
 1. Enregistrez le document PDF mis à jour.
 

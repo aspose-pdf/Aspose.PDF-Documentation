@@ -21,7 +21,7 @@ Utilisez cette approche lorsque vous avez besoin du flux de fusion le plus simpl
 
 1. Ouvrez les deux objets PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Ajoutez la collection [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) du deuxième document au premier document.
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

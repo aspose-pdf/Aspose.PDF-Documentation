@@ -44,9 +44,9 @@ L'exemple complet crée trois calques distincts avec un contenu de lignes rouges
 ## Verrouiller un calque
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Accédez à la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible et obtenez sa collection [Couche](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
-1. Verrouillez la cible [Couche](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
-1. Enregistrez le [Document] PDF mis à jour (https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Accédez à la [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible et obtenez sa collection [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Verrouillez la cible [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
+1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) PDF mis à jour .
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {

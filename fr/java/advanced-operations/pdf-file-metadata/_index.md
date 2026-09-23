@@ -44,6 +44,7 @@ public static void getPdfFileInformation(Path inputFile) {
 ## Définir des métadonnées avec un préfixe d'espace de noms
 
 Utilisez cet exemple lorsque vous devez ajouter ou mettre à jour une propriété XMP à l'aide d'un préfixe d'espace de noms enregistré.
+
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Enregistrez l'espace de noms XMP requis et ajoutez l'élément de métadonnées.
 1. Enregistrez le document mis à jour.
