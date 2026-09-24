@@ -4,6 +4,7 @@ linktitle: セキュリティ設定
 type: docs
 weight: 30
 url: /ja/reportingservices/security-setting/
+description: "Aspose.PDF for Reporting Services の セキュリティ設定 について説明します。"
 lastmod: "2026-06-19"
 ---
 

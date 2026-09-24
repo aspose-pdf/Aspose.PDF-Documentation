@@ -4,6 +4,7 @@ linktitle: IsFontEmbedded
 type: docs
 weight: 50
 url: /pt/reportingservices/isfontembedded/
+description: "Descubra IsFontEmbedded no Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

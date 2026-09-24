@@ -4,6 +4,7 @@ linktitle: 소개
 type: docs
 weight: 10
 url: /ko/reportingservices/introduction/
+description: "Aspose.PDF for Reporting Services의 소개에 대해 알아보세요."
 lastmod: "2026-06-19"
 ---
 

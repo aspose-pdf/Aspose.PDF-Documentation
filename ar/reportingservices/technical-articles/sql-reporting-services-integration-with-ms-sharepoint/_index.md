@@ -4,6 +4,7 @@ linktitle: تكامل خدمات تقارير SQL مع MS SharePoint
 type: docs
 weight: 20
 url: /ar/reportingservices/sql-reporting-services-integration-with-ms-sharepoint/
+description: "تعرّف على تكامل خدمات تقارير SQL مع MS SharePoint في Aspose.PDF for Reporting Services."
 lastmod: "2026-06-19"
 ---
 

@@ -1,52 +1,54 @@
 ---
-title: Добавить текст в существующий PDF файл на PHP
+title: Добавление текста в существующий PDF‑файл в PHP
+linktitle: Добавление текста в существующий PDF‑файл в PHP
 type: docs
 weight: 20
 url: /ru/java/add-text-to-an-existing-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: Узнайте, как добавить новый текст в существующий PDF‑документ в PHP с помощью Aspose.PDF для улучшения содержимого.
+lastmod: "2026-09-17"
 ---
-
 ## Aspose.PDF - Добавление текста
 
-Чтобы добавить текстовую строку в PDF документ с использованием **Aspose.PDF Java for PHP**, просто вызовите модуль **AddText**.
+Чтобы добавить строку текста в документ PDF, используя **Aspose.PDF Java for PHP**, просто вызовите модуль **AddText**.
 
-PHP Код
+PHP‑код
 
 ```php
 
-# Создать объект Document
+# Instantiate Document object
 $doc = new Document($dataDir . 'input1.pdf');
 
-# получить конкретную страницу
+# get particular page
 $pdf_page = $doc->getPages()->get_Item(1);
 
-# создать текстовый фрагмент
-$text_fragment = new TextFragment("основной текст");
+# create text fragment
+$text_fragment = new TextFragment("main text");
 $text_fragment->setPosition(new Position(100, 600));
 
 $font_repository = new FontRepository();
 $color = new Color();
 
-# установить свойства текста
+# set text properties
 $text_fragment->getTextState()->setFont($font_repository->findFont("Verdana"));
 $text_fragment->getTextState()->setFontSize(14);
 
-# создать объект TextBuilder
+# create TextBuilder object
 $text_builder = new TextBuilder($pdf_page);
 
-# добавить текстовый фрагмент на страницу PDF
+# append the text fragment to the PDF page
 $text_builder->appendText($text_fragment);
 
-# Сохранить PDF файл
+# Save PDF file
 $doc->save($dataDir . "Text_Added.pdf");
 
-print "Текст успешно добавлен" . PHP_EOL;
+print "Text added successfully" . PHP_EOL;
 
 ```
 
+**Скачать выполняемый код**
 
-**Скачать Выполняемый Код**
-
-Скачайте **Добавить текст (Aspose.PDF)** с любого из нижеупомянутых социальных сайтов для разработчиков:
+Скачайте **Add Text (Aspose.PDF)** с любого из перечисленных ниже сайтов для совместной разработки:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddText.php)
+
+
