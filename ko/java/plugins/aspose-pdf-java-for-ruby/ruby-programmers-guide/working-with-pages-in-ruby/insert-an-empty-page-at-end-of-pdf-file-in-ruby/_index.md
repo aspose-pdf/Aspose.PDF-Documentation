@@ -1,39 +1,49 @@
 ---
-title: PDF 파일 끝에 빈 페이지 삽입하기 - Ruby
+title: Ruby에서 PDF 파일 끝에 빈 페이지 삽입
+linktitle: Ruby에서 PDF 파일 끝에 빈 페이지 삽입
 type: docs
 weight: 60
-url: /ko/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+url: /java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
+description: Aspose.PDF와 함께 Ruby를 사용하여 PDF 문서 끝에 빈 페이지를 삽입하여 PDF 처리 작업에 유연성을 추가하는 방법을 알아보세요.
+lastmod: "2026-06-09"
 ---
+## 
+Aspose.PDF - PDF 파일 끝에 빈 페이지 삽입
 
-## Aspose.PDF - PDF 파일 끝에 빈 페이지 삽입하기
 
-**Aspose.PDF Java for Ruby**를 사용하여 PDF 문서 끝에 빈 페이지를 삽입하려면, **InsertEmptyPageAtEndOfFile** 모듈을 호출하십시오.
 
-Ruby 코드
+**Aspose.PDF Java for Ruby**를 사용하여 PDF 문서 끝에 빈 페이지를 삽입하려면 **InsertEmptyPageAtEndOfFile** 모듈을 호출하기만 하면 됩니다.
+
+루비 코드
+
 
 ```java
-# 문서 디렉토리 경로.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 대상 문서 열기
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# PDF에 빈 페이지 삽입
+# insert a empty page in a PDF
 
 pdf.getPages().add()
 
-# 병합된 출력 파일 저장 (대상 문서)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "빈 페이지가 성공적으로 추가되었습니다!"
+puts "Empty page added successfully!"
 ```
 
-## 실행 코드 다운로드
+## 
+실행 코드 다운로드
 
-아래 언급된 소셜 코딩 사이트에서 **PDF 파일 끝에 빈 페이지 삽입하기 (Aspose.PDF)**를 다운로드하십시오:
 
-- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)
+
+**PDF 파일 끝에 빈 페이지 삽입(Aspose.PDF)**В을 아래에 언급된 소셜 코딩 사이트 중 하나에서 다운로드하세요.
+
+
+- 
+[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)

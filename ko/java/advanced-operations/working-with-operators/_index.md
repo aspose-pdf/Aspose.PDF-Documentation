@@ -1,259 +1,187 @@
 ---
-title: 연산자 다루기
-linktitle: 연산자 다루기
+title: Java에서 PDF 연산자로 작업
+linktitle: 운영자와 협력
 type: docs
-weight: 170
-url: /ko/java/operators/
-description: 이 주제는 Aspose.PDF와 함께 연산자를 사용하는 방법을 설명합니다. 연산자 클래스는 PDF 조작을 위한 훌륭한 기능을 제공합니다.
-lastmod: "2021-06-05"
+weight: 90
+url: /java/working-with-operators/
+description: 콘텐츠 스트림 조작, 이미지 배치, XForm 재사용 및 그래픽 정리를 위해 Java에서 하위 수준 PDF 연산자를 사용하는 방법을 알아보세요.
+lastmod: "2026-06-25"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java에서 콘텐츠 스트림 제어를 위해 하위 수준 PDF 연산자 사용
+Abstract: 이 문서에서는 Aspose.PDF for Java에서 하위 수준 PDF 연산자로 작업하는 방법을 설명합니다. 이미지를 정확하게 배치하고, 재사용 가능한 XForm 콘텐츠를 그리고, PDF 페이지에서 그래픽 연산자를 제거하는 방법을 알아보세요.
 ---
-
 ## PDF 연산자 및 사용법 소개
 
-연산자는 페이지에 그래픽 모양을 그리는 등 수행할 작업을 지정하는 PDF 키워드입니다. 연산자 키워드는 초기 솔리더스 문자(2Fh)가 없는 점에서 명명된 객체와 구별됩니다. 연산자는 콘텐츠 스트림 내에서만 의미가 있습니다.
 
-콘텐츠 스트림은 페이지에 그려질 그래픽 요소를 설명하는 지침으로 구성된 데이터의 PDF 스트림 객체입니다. PDF 연산자에 대한 자세한 내용은 [PDF 사양](https://www.adobe.com/devnet/pdf/pdf_reference.html)에서 찾을 수 있습니다.
 
-### 구현 세부사항
+연산자는 페이지에 그래픽 모양을 그리는 등 수행해야 할 일부 작업을 지정하는 PDF 키워드입니다. 연산자 키워드는 초기 사선 문자(2Fh)가 없다는 점에서 명명된 개체와 구별됩니다. 연산자는 콘텐츠 스트림 내에서만 의미가 있습니다.
 
-이 주제는 Aspose.PDF와 함께 연산자를 사용하는 방법을 설명합니다.
- 선택된 예제는 개념을 설명하기 위해 PDF 파일에 이미지를 추가합니다. PDF 파일에 이미지를 추가하려면 다른 연산자가 필요합니다. 이 예제에서는 [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), 그리고 [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore)를 사용합니다.
 
-- [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) 연산자는 PDF의 현재 그래픽 상태를 저장합니다.
-- 이 주제는 Aspose.PDF와 함께 연산자를 사용하는 방법을 설명합니다. 선택된 예제는 개념을 설명하기 위해 PDF 파일에 이미지를 추가합니다. PDF 파일에 이미지를 추가하려면 다양한 연산자가 필요합니다. 이 예제에서는 [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave), [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix), [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do), 그리고 [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore)를 사용합니다.
-(concatenate matrix) 연산자는 이미지가 PDF 페이지에 어떻게 배치되어야 하는지를 정의하는 데 사용됩니다.
-- [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) 연산자는 페이지에 이미지를 그립니다.
-- [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) 연산자는 그래픽 상태를 복원합니다.
 
-PDF 파일에 이미지를 추가하려면:
+콘텐츠 스트림은 페이지에 그려질 그래픽 요소를 설명하는 지침으로 데이터가 구성된 PDF 스트림 개체입니다. PDF 연산자에 대한 자세한 내용은 [PDF 사양](https://opensource.adobe.com/dc-acrobat-sdk-docs/)에서 확인할 수 있습니다.
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 객체를 생성하고 입력 PDF 문서를 엽니다.
-1. 이미지가 추가될 특정 페이지를 가져옵니다.
-1. 페이지의 리소스 컬렉션에 이미지를 추가합니다.
-1. 연산자를 사용하여 페이지에 이미지를 배치합니다:
-   - 먼저, [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GSave) 연산자를 사용하여 현재 그래픽 상태를 저장합니다.
-   - 그런 다음, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/ConcatenateMatrix) 연산자를 사용하여 이미지가 배치될 위치를 지정합니다.
-   - [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/Do) 연산자를 사용하여 페이지에 이미지를 그립니다.
-1. 마지막으로, [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/GRestore) 연산자를 사용하여 업데이트된 그래픽 상태를 저장합니다.
 
-다음 코드 스니펫은 PDF 연산자를 사용하는 방법을 보여줍니다.
+
+명시적 행렬 수학을 사용하여 이미지 배치, XForm을 통해 동일한 그래픽 여러 번 재사용, 페이지에서 하위 수준 그리기 지침 삭제 등 Java에서 PDF 콘텐츠 스트림을 직접 제어해야 하는 경우 이 페이지를 사용하십시오.
+
+
+## 
+PDF 연산자로 이미지 추가
+
+더 높은 수준의 레이아웃 API를 통하지 않고 콘텐츠 스트림 수준에서 이미지 배치를 정확하게 제어해야 하는 경우 낮은 수준 연산자를 사용하세요.
+
+
+1. 
+[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 열고 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)을 가져옵니다.
+
+1. 
+페이지 리소스에 입력 이미지 스트림을 추가하고 반환된 리소스 이름을 유지합니다.
+
+1. 
+대상 영역을 정의하는 [사각형](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)을 만들고 그 경계에서 [행렬](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/)을 만듭니다.
+
+1. 
+현재 그래픽 상태를 유지하려면 [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/)를 사용하고, 이미지를 배치하려면 [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/)를 사용하고, 이미지를 그리려면 [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/)를 사용하고, 이전 상태를 복원하려면 [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/)를 사용하세요.
+1. 업데이트된 PDF 문서를 저장합니다.
+
 
 ```java
-public class WorkingWithOperators {
+public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().get_Item(1);
+        String imageName = page.getResources().getImages().add(imageStream);
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Operators/";
+        Rectangle rectangle = new Rectangle(100, 100, 200, 200, true);
+        Matrix matrix = new Matrix(new double[]{
+                rectangle.getURX() - rectangle.getLLX(),
+                0,
+                0,
+                rectangle.getURY() - rectangle.getLLY(),
+                rectangle.getLLX(),
+                rectangle.getLLY()
+        });
 
-    public static void AddImageUsingOpeartors() {
-
-        // 새 PDF 문서를 만듭니다
-        Document pdfDocument = new Document(_dataDir + "PDFOperators.pdf");
-
-        // 이미지가 추가될 페이지를 가져옵니다
-        Page page = pdfDocument.getPages().get_Item(1);
-
-        // 좌표를 설정합니다
-        int lowerLeftX = 100;
-        int lowerLeftY = 100;
-        int upperRightX = 200;
-        int upperRightY = 200;
-
-        // 이미지를 스트림으로 로드합니다
-        FileInputStream imageStream = null;
-        try {
-            imageStream = new FileInputStream(_dataDir + "PDFOperators.jpg");
-        } catch (FileNotFoundException e) {
-            // TODO 자동 생성된 catch 블록
-            e.printStackTrace();
-        }
-
-        // 페이지 리소스의 이미지 컬렉션에 이미지를 추가합니다
-        page.getResources().getImages().add(imageStream);
-
-        // GSave 연산자를 사용합니다: 이 연산자는 현재 그래픽 상태를 저장합니다
         page.getContents().add(new GSave());
-        // Rectangle 및 Matrix 객체를 생성합니다
-        Rectangle rectangle = new Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-        Matrix matrix = new Matrix(new double[] { rectangle.getURX() - rectangle.getLLX(), 0, 0,
-                rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY() });
-
-        // ConcatenateMatrix (행렬 연결) 연산자를 사용합니다: 이미지가 어떻게 배치되어야 하는지를 정의합니다
         page.getContents().add(new ConcatenateMatrix(matrix));
-
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-        // Do 연산자를 사용합니다: 이 연산자는 이미지를 그립니다
-        page.getContents().add(new Do(ximage.getName()));
-        // GRestore 연산자를 사용합니다: 이 연산자는 그래픽 상태를 복원합니다
+        page.getContents().add(new Do(imageName));
         page.getContents().add(new GRestore());
-
-        // 업데이트된 문서를 저장합니다
-        pdfDocument.save(_dataDir + "PDFOperators_out.pdf");
+        document.save(outputFile.toString());
     }
+    System.out.println("Image added with PDF operators to " + outputFile);
+}
 ```
 
+## 
+페이지에 재사용 가능한 XForm 콘텐츠 그리기
 
-## 페이지에 XForm 그리기 - 연산자 사용
 
-이 주제는 GSave/GRestore 연산자와 ConcatenateMatrix 연산자를 사용하여 xForm의 위치를 설정하고 Do 연산자를 사용하여 페이지에 xForm을 그리는 방법을 설명합니다.
 
-아래 코드는 PDF 파일의 기존 내용을 GSave/GRestore 연산자 쌍으로 감쌉니다. 이 접근 방식은 기존 내용의 끝에서 초기 그래픽 상태를 얻는 데 도움이 됩니다. 이 접근 방식을 사용하지 않으면 기존 연산자 체인의 끝에 바람직하지 않은 변환이 남아 있을 수 있습니다.
+PDF 파일의 리소스를 복제하지 않고 동일한 이미지나 그래픽을 두 번 이상 렌더링해야 하는 경우 이 접근 방식을 사용합니다.
+
+
+1. 
+[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 소스 PDF를 열고 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져온 다음 해당 [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/)에 액세스하세요.
+
+1. 
+기존 페이지 콘텐츠를 [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) 및 [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/)로 래핑하여 나중에 변환 시 원본 콘텐츠 스트림으로 유출되지 않도록 하세요.
+1. Create an [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) resource, add the image to the form resources, and use [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) plus [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) to draw the image inside the form.
+
+1. 
+Place the same form at multiple page coordinates by adding a translation matrix and executing the form name with the `Do` operator.
+
+1. 
+Restore the graphics state and save the output PDF.
+
 
 ```java
-    public static void DrawXFormUsingOpeartors() {
-        String imageFile = _dataDir + "aspose-logo.jpg";
-        String inFile = _dataDir + "DrawXFormOnPage.pdf";
-        String outFile = _dataDir + "blank-sample2_out.pdf";
+public static void drawXFormOnPage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().get_Item(1);
+        OperatorCollection pageContents = page.getContents();
 
-        Document pdfDocument = new Document(inFile);
-        OperatorCollection pageContents = pdfDocument.getPages().get_Item(1).getContents();
-
-        // 예제는
-        // GSave/GRestore 연산자 사용법
-        // xForm 위치 설정을 위한 ConcatenateMatrix 연산자 사용법
-        // 페이지에 xForm을 그리기 위한 Do 연산자 사용법
-
-        // 기존 내용을 GSave/GRestore 연산자 쌍으로 감쌉니다
-        // 이는 기존 내용의 끝에서 초기 그래픽 상태를 얻기 위함입니다
-        // 그렇지 않으면 기존 연산자 체인의 끝에 바람직하지 않은 변환이 남아 있을 수 있습니다
         pageContents.insert(1, new GSave());
         pageContents.add(new GRestore());
-
-        // 새로운 명령 후 그래픽 상태를 적절히 지우기 위해 그래픽 상태 저장 연산자를 추가합니다
         pageContents.add(new GSave());
 
-        // xForm 생성
-        XForm form = XForm.createNewForm(pdfDocument.getPages().get_Item(1), pdfDocument);
-        pdfDocument.getPages().get_Item(1).getResources().getForms().add(form);
+        XForm form = XForm.createNewForm(page, document);
+        page.getResources().getForms().add(form);
+
         form.getContents().add(new GSave());
-
-        // 이미지 너비와 높이 정의
         form.getContents().add(new ConcatenateMatrix(200, 0, 0, 200, 0, 0));
-
-        // 스트림에 이미지 로드
-        FileInputStream imageStream = null;
-        try {
-            imageStream = new FileInputStream(imageFile);
-        } catch (FileNotFoundException e) {
-            // TODO 자동 생성된 catch 블록
-            e.printStackTrace();
-        }
-
-        // XForm 리소스의 이미지 컬렉션에 이미지 추가
-        form.getResources().getImages().add(imageStream);
-        XImage ximage = form.getResources().getImages().get_Item(form.getResources().getImages().size());
-        // Do 연산자 사용: 이 연산자는 이미지를 그립니다
-        form.getContents().add(new Do(ximage.getName()));
+        String imageName = form.getResources().getImages().add(imageStream);
+        form.getContents().add(new Do(imageName));
         form.getContents().add(new GRestore());
 
-        pageContents.add(new GSave());
-        // x=100 y=500 좌표에 폼 배치
-        pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, 100, 500));
-        // Do 연산자로 폼 그리기
-        pageContents.add(new Do(form.getName()));
+        addFormAt(pageContents, form.getName(), 100, 500);
+        addFormAt(pageContents, form.getName(), 100, 300);
+
         pageContents.add(new GRestore());
-
-        pageContents.add(new GSave());
-
-        // x=100 y=300 좌표에 폼 배치
-        pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, 100, 300));
-
-        // Do 연산자로 폼 그리기
-        pageContents.add(new Do(form.getName()));
-        pageContents.add(new GRestore());
-
-        // // GSave 이후 GRestore로 그래픽 상태 복원
-        pageContents.add(new GRestore());
-        pdfDocument.save(outFile);
+        document.save(outputFile.toString());
     }
+    System.out.println("XForm drawn on page in " + outputFile);
+}
+
+private static void addFormAt(OperatorCollection pageContents, String formName, double x, double y) {
+    pageContents.add(new GSave());
+    pageContents.add(new ConcatenateMatrix(1, 0, 0, 1, x, y));
+    pageContents.add(new Do(formName));
+    pageContents.add(new GRestore());
+}
 ```
 
+## 
+Remove graphics operators from a page
 
-## 연산자 클래스를 사용하여 그래픽 개체 제거하기
 
-연산자 클래스는 PDF 조작에 대한 훌륭한 기능을 제공합니다. PDF 파일에 [PdfContentEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor) 클래스의 [DeleteImage](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfContentEditor#deleteImage--) 메서드를 사용하여 제거할 수 없는 그래픽이 포함된 경우, 대신 연산자 클래스를 사용하여 이를 제거할 수 있습니다.
 
-다음 코드 스니펫은 그래픽을 제거하는 방법을 보여줍니다. PDF 파일에 그래픽에 대한 텍스트 레이블이 포함된 경우, 이 방법을 사용해도 PDF 파일에 남을 수 있음을 유의하십시오. 그러므로 이러한 이미지를 삭제하기 위한 대체 방법을 위해 그래픽 연산자를 검색하십시오.
+Use this example when a page contains vector drawing operators that should be removed directly from the content stream.
+
+1. [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 열고 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)을 가져옵니다.
+
+1. 
+페이지 콘텐츠 연산자를 반복하고 [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/) 및 [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/)의 인스턴스를 수집합니다.
+
+1. 
+페이지 콘텐츠에서 수집된 연산자를 삭제하고 업데이트된 PDF를 저장합니다.
+
+
+
+이 기술은 대상 그리기 지침만 제거합니다. 페이지에 관련 텍스트 레이블이나 기타 비그래픽 연산자도 포함되어 있는 경우 해당 항목은 콘텐츠 스트림에 남아 있으며 별도의 정리 단계가 필요할 수 있습니다.
+
 
 ```java
-    public static void RemoveGraphicsOpeartors() {
-        Document pdfDocument  = new Document(_dataDir+ "RemoveGraphicsObjects.pdf");
-        Page page = pdfDocument.getPages().get_Item(2);
-        OperatorCollection oc = page.getContents();
-
-        // 경로-채색 연산자 사용
-        Operator[] operators = new Operator[] {
-                new Stroke(),
-                new ClosePathStroke(),
-                new Fill()
-        };
-
-        oc.delete(operators);
-        pdfDocument.save(_dataDir+ "No_Graphics_out.pdf");
-    }
-```
-
-
-## PDF 문서의 색상 공간 변경
-
-{{% alert color="primary" %}}
-
-Aspose.PDF for Java 9.0.0은 PDF 문서의 색상 공간 변경을 지원합니다. RGB 색상을 CMYK로, 혹은 그 반대로 변경할 수 있습니다.
-
-{{% /alert %}}
-
-색상 공간을 변경할 수 있도록 [Operator](https://reference.aspose.com/java/pdf/com.aspose.pdf/Operator) 클래스에 다음 메서드가 구현되었습니다. 이를 사용하여 특정 RGB/CMYK 색상을 CMYK/RGB 색상 공간으로 변경하고 나머지 PDF 문서는 그대로 유지할 수 있습니다.
-
-{{% alert color="primary" %}}
-**공용 API 변경**
-다음 메서드가 구현되었습니다:
-
-- com.aspose.pdf.Operator.SetRGBColorStroke.getCMYKColor(new double[3], new double[4])
-- com.aspose.pdf.Operator.SetRGBColor.getCMYKColor(new double[3], new double[4])
-- com.aspose.pdf.Operator.SetCMYKColorStroke.getRGBColor(new double[4], new double[3])
-- com.aspose.pdf.Operator.SetCMYKColor.getRGBColor(new double[4], new double[3])
-
-{{% /alert %}}
-
-다음 코드 스니펫은 Aspose.PDF for Java를 사용하여 색상 공간을 변경하는 방법을 보여줍니다.
-
-```java
-Document doc = new Document("input_color.pdf");
-OperatorCollection contents = doc.getPages().get_Item(1).getContents();
-System.out.println("pdf 문서에서 RGB 색상 연산자의 값");
-for (int j = 1; j <= contents.size(); j++) {
-    Operator oper = contents.get_Item(j);
-    if (oper instanceof Operator.SetRGBColor || oper instanceof Operator.SetRGBColorStroke)
-        try {
-            // RGB를 CMYK 색상으로 변환
-            System.out.println(oper.toString());
-
-            double[] rgbFloatArray = new double[] { Double.valueOf(oper.getParameters().get(0).toString()), Double.valueOf(oper.getParameters().get(1).toString()), Double.valueOf(oper.getParameters().get(2).toString()), };
-            double[] cmyk = new double[4];
-            if (oper instanceof Operator.SetRGBColor) {
-                ((Operator.SetRGBColor) oper).getCMYKColor(rgbFloatArray, cmyk);
-                contents.set_Item(j, new Operator.SetCMYKColor(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-            } else if (oper instanceof Operator.SetRGBColorStroke) {
-                ((Operator.SetRGBColorStroke) oper).getCMYKColor(rgbFloatArray, cmyk);
-                contents.set_Item(j, new Operator.SetCMYKColorStroke(cmyk[0], cmyk[1], cmyk[2], cmyk[3]));
-            } else
-                throw new java.lang.Throwable("지원되지 않는 명령");
-
-        } catch (Throwable e) {
-            e.printStackTrace();
+public static void removeGraphicsObjects(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        List<Operator> operatorsToRemove = new ArrayList<>();
+        for (Object item : page.getContents()) {
+            Operator operator = (Operator) item;
+            if (operator instanceof Stroke || operator instanceof ClosePathStroke || operator instanceof Fill) {
+                operatorsToRemove.add(operator);
+            }
         }
-}
-doc.save("input_colorout.pdf");
-
-// 결과 테스트
-System.out.println("결과 pdf 문서에서 변환된 CMYK 색상 연산자의 값");
-doc = new Document("input_colorout.pdf");
-contents = doc.getPages().get_Item(1).getContents();
-for (int j = 1; j <= contents.size(); j++) {
-    Operator oper = contents.get_Item(j);
-    if (oper instanceof Operator.SetCMYKColor || oper instanceof Operator.SetCMYKColorStroke) {
-        System.out.println(oper.toString());
+        page.getContents().delete(operatorsToRemove);
+        document.save(outputFile.toString());
     }
+    System.out.println("Graphics operators removed in " + outputFile);
 }
 ```
+
+## 
+관련 주제
+
+- [Java의 고급 PDF 작업](/pdf/java/advanced-operations/)
+
+- 
+[Java를 사용하여 PDF의 이미지 작업](/pdf/java/working-with-images/)
+
+- 
+[Java에서 PDF 페이지 작업](/pdf/java/working-with-pages/)
+
+- 
+[Java에서 벡터 그래픽 작업](/pdf/java/working-with-vector-graphics/)

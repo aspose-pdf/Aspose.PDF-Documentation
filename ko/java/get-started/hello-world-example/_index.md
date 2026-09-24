@@ -1,42 +1,64 @@
 ---
-title: Hello World Java 예제
-linktitle: Hello World 예제
+title: Java를 사용한 Hello World의 예
+linktitle: Hello World 예시
 type: docs
-weight: 40
-url: /ko/java/hello-world-example/
-description: 이 페이지는 Aspose.PDF for Java를 사용하여 'Hello World'라는 텍스트를 포함하는 PDF 문서를 생성하는 간단한 프로그래밍 방법을 보여줍니다.
-lastmod: "2021-06-05"
+weight: 20
+url: /java/hello-world-example/
+description: 이 샘플은 Java용 Aspose.PDF를 사용하여 스타일이 지정된 Hello World 텍스트가 포함된 간단한 PDF 문서를 만드는 방법을 보여줍니다.
+lastmod: "2026-06-09"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java를 통한 Hello World 예제
+Abstract: 이 문서에서는 Java용 Aspose.PDF에 대한 Hello World 예제를 제공합니다. 이 예제에서는 새 PDF 문서를 만들고, 페이지를 추가하고, 사용자 정의 위치, 글꼴 및 색상이 포함된 TextFragment를 만들고, TextBuilder를 사용하여 페이지에 텍스트를 추가하고, 결과를 PDF 파일로 저장합니다.
 ---
+"Hello World" 예제는 기본 PDF 생성 작업 흐름을 이해하는 가장 짧은 경로입니다. 이 문서의 예제에서는 새 PDF를 만들고, 스타일이 지정된 텍스트 조각을 페이지에 배치하고, 출력 파일을 저장합니다.
 
-## Hello World 예제
 
-"Hello World" 예제는 전통적으로 프로그래밍 언어나 소프트웨어의 기능을 간단한 사용 사례로 소개하는 데 사용됩니다.
 
-Aspose.PDF for Java API는 Java 애플리케이션 개발자가 애플리케이션 내에서 PDF 파일을 생성, 읽기, 편집 및 조작할 수 있도록 합니다. 여러 다른 파일 형식을 PDF 파일 형식으로 변환하거나 그 반대로 변환할 수 있습니다. 이 Hello World 문서는 Aspose.PDF for Java API를 사용하여 Java에서 PDF 파일을 생성하는 방법을 보여줍니다. 환경에 [Aspose.PDF for Java를 설치](/pdf/ko/java/installation/)한 후 아래 코드 샘플을 실행하여 Aspose.PDF API가 어떻게 작동하는지 확인할 수 있습니다.
+Java 예제는 다음 단계를 따릅니다.
 
-아래 코드 스니펫은 다음 단계를 따릅니다:
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) 객체를 인스턴스화합니다.
-1. 문서 객체에 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page)를 추가합니다.
-1. [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) 객체를 생성합니다.
-1. 페이지의 [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) 컬렉션에 TextFragment를 추가합니다.
-1. 결과 PDF 문서를 저장합니다.
+1. 
+[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 개체를 만듭니다.
 
-다음 코드 스니펫은 Aspose.PDF for Java API의 작동을 보여주는 Hello World 프로그램입니다.
+1. 
+문서에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+
+1. 
+`Hello, world!` 텍스트를 사용하여 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 만듭니다.
+1. [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) 프래그먼트를 통해 [위치](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), 글꼴, 글꼴 크기, 배경색, 전경색을 설정합니다.
+
+1. 
+페이지에 대한 [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/)를 만듭니다.
+
+1. 
+[텍스트 조각](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)을 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에 추가합니다.
+
+1. 
+PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
+
+
+
+다음 Java 코드는 `GetStartedExamples.java`을 기반으로 합니다.
 
 ```java
-// 문서 객체 초기화
-Document document = new Document();
- 
-// 페이지 추가
-Page page = document.getPages().add();
- 
-// 새 페이지에 텍스트 추가
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// 업데이트된 PDF 저장
-document.save("HelloWorld_out.pdf");
+public static void simpleExample(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("Hello, world!");
+        textFragment.setPosition(new Position(100, 600));
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment.getTextState().setBackgroundColor(Color.getBlue());
+        textFragment.getTextState().setForegroundColor(Color.getYellow());
+
+        TextBuilder textBuilder = new TextBuilder(page);
+        textBuilder.appendText(textFragment);
+
+        document.save(outputFile.toString());
+    }
+}
 ```
