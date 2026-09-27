@@ -15,5 +15,5 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에�
 ---
 책갈피는 사용자가 긴 PDF 파일을 빠르게 이동하고 목차와 유사한 문서 개요를 제공하는 데 도움이 됩니다.
 
-- [책갈피 추가 및 삭제](/pdf/java/add-and-delete-bookmark/)
-- [책갈피 가져오기, 업데이트 및 확장](/pdf/java/get-update-and-expand-bookmark/)
+- [책갈피 추가 및 삭제](/pdf/ko/java/add-and-delete-bookmark/)
+- [책갈피 가져오기, 업데이트 및 확장](/pdf/ko/java/get-update-and-expand-bookmark/)

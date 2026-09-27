@@ -17,8 +17,8 @@ PDF 문서의 아티팩트는 머리글, 바닥글, 워터마크, 배경 및 페
 
 이 섹션을 사용하여 다음을 수행합니다.
 
-- [배경 추가](/pdf/java/add-backgrounds/)
-- [베이츠 번호 매기기 추가](/pdf/java/add-bates-numbering/)
-- [워터마크 추가](/pdf/java/add-watermarks/)
-- [PDF 머리글 및 바닥글 관리](/pdf/java/artifacts-header-footer/)
-- [아티팩트 개수](/pdf/java/counting-artifacts/)
+- [배경 추가](/pdf/ko/java/add-backgrounds/)
+- [베이츠 번호 매기기 추가](/pdf/ko/java/add-bates-numbering/)
+- [워터마크 추가](/pdf/ko/java/add-watermarks/)
+- [PDF 머리글 및 바닥글 관리](/pdf/ko/java/artifacts-header-footer/)
+- [아티팩트 개수](/pdf/ko/java/counting-artifacts/)

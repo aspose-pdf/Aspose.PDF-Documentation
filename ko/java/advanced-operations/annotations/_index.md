@@ -17,5 +17,5 @@ Abstract: 이 문서에서는 Aspose.PDF for Java의 PDF 주석 작업 흐름을
 
 이 섹션을 사용하여 다음을 수행합니다.
 
-- 그룹화된 주석 계열의 경우 [주석 추가, 삭제 및 가져오기](/pdf/java/add-delete-and-get-annotation/).
-- [주석 가져오기 및 내보내기](/pdf/java/import-export-annotations/) - PDF 파일 간에 주석을 복사합니다.
+- 그룹화된 주석 계열의 경우 [주석 추가, 삭제 및 가져오기](/pdf/ko/java/add-delete-and-get-annotation/).
+- [주석 가져오기 및 내보내기](/pdf/ko/java/import-export-annotations/) - PDF 파일 간에 주석을 복사합니다.

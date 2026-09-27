@@ -17,9 +17,9 @@ PDF 문서를 구문 분석한다는 것은 기존 PDF 파일에서 구조화된
 
 이 섹션에서는 다음 방법을 다룹니다.
 
-- `TextAbsorber`, `ParagraphAbsorber` 및 관련 API를 사용하여 [PDF에서 텍스트 추출](/pdf/java/extract-text-from-pdf/)
-- 페이지 리소스에서 [PDF 이미지 추출](/pdf/java/extract-images-from-the-pdf-file/)
-- [PDF에서 글꼴 추출](/pdf/java/extract-fonts-from-pdf/)을 통해 문서에 사용된 글꼴을 검사할 수 있습니다.
-- [AcroForm에서 데이터를 추출](/pdf/java/extract-data-from-acroform/)하고 필드 값을 JSON, XML, FDF 또는 XFDF로 내보냅니다.
-- `TableAbsorber`를 사용하여 [테이블에서 데이터 추출](/pdf/java/extract-data-from-table-in-pdf/) 또는 감지된 테이블을 Excel로 내보냅니다.
-- `GraphicsAbsorber` 및 SVG 내보내기 방법을 사용하여 [PDF에서 벡터 데이터 추출](/pdf/java/extract-vector-data-from-pdf/).
+- `TextAbsorber`, `ParagraphAbsorber` 및 관련 API를 사용하여 [PDF에서 텍스트 추출](/pdf/ko/java/extract-text-from-pdf/)
+- 페이지 리소스에서 [PDF 이미지 추출](/pdf/ko/java/extract-images-from-the-pdf-file/)
+- [PDF에서 글꼴 추출](/pdf/ko/java/extract-fonts-from-pdf/)을 통해 문서에 사용된 글꼴을 검사할 수 있습니다.
+- [AcroForm에서 데이터를 추출](/pdf/ko/java/extract-data-from-acroform/)하고 필드 값을 JSON, XML, FDF 또는 XFDF로 내보냅니다.
+- `TableAbsorber`를 사용하여 [테이블에서 데이터 추출](/pdf/ko/java/extract-data-from-table-in-pdf/) 또는 감지된 테이블을 Excel로 내보냅니다.
+- `GraphicsAbsorber` 및 SVG 내보내기 방법을 사용하여 [PDF에서 벡터 데이터 추출](/pdf/ko/java/extract-vector-data-from-pdf/).

@@ -15,7 +15,7 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 첨부 파
 ---
 Aspose.PDF for Java를 사용하면 PDF 문서에 포함된 파일과 포트폴리오 컬렉션을 직접 관리할 수 있습니다. 이 섹션에서는 첨부 파일을 추가하고, 포함된 파일을 추출하고, 첨부 파일을 제거하고, PDF 포트폴리오를 생성하거나 지우는 방법을 배울 수 있습니다.
 
-- [PDF에 첨부파일 추가](/pdf/java/add-attachment-to-pdf-document/)
-- [PDF 포트폴리오 생성 또는 삭제](/pdf/java/portfolio/)
-- [기존 PDF에서 첨부 파일 제거](/pdf/java/removing-attachment-from-an-existing-pdf/)
-- [PDF에서 첨부파일 추출](/pdf/java/extract-attachment/)
+- [PDF에 첨부파일 추가](/pdf/ko/java/add-attachment-to-pdf-document/)
+- [PDF 포트폴리오 생성 또는 삭제](/pdf/ko/java/portfolio/)
+- [기존 PDF에서 첨부 파일 제거](/pdf/ko/java/removing-attachment-from-an-existing-pdf/)
+- [PDF에서 첨부파일 추출](/pdf/ko/java/extract-attachment/)

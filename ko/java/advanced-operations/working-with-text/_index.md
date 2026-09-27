@@ -15,10 +15,10 @@ Abstract: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 
 ---
 Aspose.PDF for Java는 문서 생성, 검색 및 추출, 대화형 텍스트 오버레이, 레이아웃 컨테이너, 스타일 지정, 교체 및 회전을 위한 텍스트 API를 제공합니다.
 
-- [PDF 파일에 텍스트 추가](/pdf/java/add-text-to-pdf-file/)
-- [텍스트에 툴팁 추가](/pdf/java/pdf-tooltip/)
-- [레이아웃에 FloatingBox 사용](/pdf/java/floating-box/)
-- [PDF의 텍스트 교체](/pdf/java/replace-text-in-pdf/)
-- [PDF 내부 텍스트 회전](/pdf/java/rotate-text-inside-pdf/)
-- [텍스트 검색 및 추출](/pdf/java/search-and-get-text-from-pdf/)
-- [PDF 내부 텍스트 서식 지정](/pdf/java/text-formatting-inside-pdf/)
+- [PDF 파일에 텍스트 추가](/pdf/ko/java/add-text-to-pdf-file/)
+- [텍스트에 툴팁 추가](/pdf/ko/java/pdf-tooltip/)
+- [레이아웃에 FloatingBox 사용](/pdf/ko/java/floating-box/)
+- [PDF의 텍스트 교체](/pdf/ko/java/replace-text-in-pdf/)
+- [PDF 내부 텍스트 회전](/pdf/ko/java/rotate-text-inside-pdf/)
+- [텍스트 검색 및 추출](/pdf/ko/java/search-and-get-text-from-pdf/)
+- [PDF 내부 텍스트 서식 지정](/pdf/ko/java/text-formatting-inside-pdf/)

@@ -17,13 +17,13 @@ Aspose.PDF for Java는 PDF 파일을 편집 가능하거나 교환 가능한 형
 
 이 섹션을 사용하여 다음을 수행합니다.
 
-- [PDF를 Word로 변환](/pdf/java/convert-pdf-to-word/),
-- [PDF를 엑셀로 변환](/pdf/java/convert-pdf-to-excel/),
-- [PDF를 파워포인트로 변환](/pdf/java/convert-pdf-to-powerpoint/),
-- [PDF를 HTML로 변환](/pdf/java/convert-pdf-to-html/),
-- [PDF를 이미지로 변환](/pdf/java/convert-pdf-to-images-format/),
-- [PDF를 EPUB, Markdown, Text, XPS 및 기타 형식으로 변환](/pdf/java/convert-pdf-to-other-files/),
-- [PDF를 PDF/A, PDF/E, PDF/X로 변환](/pdf/java/convert-pdf-to-pdf_x/),
-- [HTML을 PDF로 변환](/pdf/java/convert-html-to-pdf/),
-- [이미지를 PDF로 변환](/pdf/java/convert-images-format-to-pdf/),
-- [다른 파일 형식을 PDF로](/pdf/java/convert-other-files-to-pdf/).
+- [PDF를 Word로 변환](/pdf/ko/java/convert-pdf-to-word/),
+- [PDF를 엑셀로 변환](/pdf/ko/java/convert-pdf-to-excel/),
+- [PDF를 파워포인트로 변환](/pdf/ko/java/convert-pdf-to-powerpoint/),
+- [PDF를 HTML로 변환](/pdf/ko/java/convert-pdf-to-html/),
+- [PDF를 이미지로 변환](/pdf/ko/java/convert-pdf-to-images-format/),
+- [PDF를 EPUB, Markdown, Text, XPS 및 기타 형식으로 변환](/pdf/ko/java/convert-pdf-to-other-files/),
+- [PDF를 PDF/A, PDF/E, PDF/X로 변환](/pdf/ko/java/convert-pdf-to-pdf_x/),
+- [HTML을 PDF로 변환](/pdf/ko/java/convert-html-to-pdf/),
+- [이미지를 PDF로 변환](/pdf/ko/java/convert-images-format-to-pdf/),
+- [다른 파일 형식을 PDF로](/pdf/ko/java/convert-other-files-to-pdf/).

@@ -17,10 +17,10 @@ Abstract: 이 문서에서는 이 Java 섹션에서 사용할 수 있는 주요 
 
 다음 주제를 사용하세요.
 
-- [텍스트 주석](/pdf/java/text-based-annotations/)
-- [마크업 주석](/pdf/java/markup-annotations/)
-- [대화형 주석](/pdf/java/interactive-annotations/)
-- [도형 주석](/pdf/java/shape-annotations/)
-- [미디어 주석](/pdf/java/media-annotations/)
-- [보안 주석](/pdf/java/security-annotations/)
-- [워터마크 주석](/pdf/java/watermark-annotations/)
+- [텍스트 주석](/pdf/ko/java/text-based-annotations/)
+- [마크업 주석](/pdf/ko/java/markup-annotations/)
+- [대화형 주석](/pdf/ko/java/interactive-annotations/)
+- [도형 주석](/pdf/ko/java/shape-annotations/)
+- [미디어 주석](/pdf/ko/java/media-annotations/)
+- [보안 주석](/pdf/ko/java/security-annotations/)
+- [워터마크 주석](/pdf/ko/java/watermark-annotations/)

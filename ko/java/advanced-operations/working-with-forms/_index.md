@@ -15,5 +15,5 @@ Abstract: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 양식으�
 ---
 Aspose.PDF for Java는 PDF 양식 워크플로를 위한 DOM 및 Facade API를 모두 제공합니다. 새로운 AcroForms를 구축하고, 기존 필드를 업데이트하고, 양식 데이터를 공통 형식으로 교환하고, XFA 기반 문서를 표준 양식으로 변환할 수 있습니다.
 
-- [AcroForms로 작업하기](/pdf/java/acroforms/)
-- [XFA 양식 작업](/pdf/java/xfa-forms/)
+- [AcroForms로 작업하기](/pdf/ko/java/acroforms/)
+- [XFA 양식 작업](/pdf/ko/java/xfa-forms/)

@@ -12,11 +12,11 @@ sitemap:
 ---
 ## 이 섹션의 기사
 
-- [Aspose.PDF Java for Struts 1.3](/pdf/java/aspose-pdf-java-for-struts-1-3/)
-- [Aspose.PDF Ruby용 Java](/pdf/java/aspose-pdf-java-for-ruby/)
-- [IntelliJ IDEA용 Aspose.PDF Java - Maven](/pdf/java/aspose-pdf-java-for-intellij-idea-maven/)
-- [Aspose.PDF Python용 Java](/pdf/java/aspose-pdf-java-for-python/)
-- [Aspose.PDF PHP용 Java](/pdf/java/aspose-pdf-java-for-php/)
-- [Aspose.PDF Jython용 Java](/pdf/java/aspose-pdf-java-for-jython/)
-- [NetBeans용 Aspose.PDF Java - Maven](/pdf/java/aspose-pdf-java-for-netbeans-maven/)
-- [Maven for Eclipse를 사용하는 Aspose.PDF Java](/pdf/java/aspose-pdf-java-using-maven-for-eclipse/)
+- [Aspose.PDF Java for Struts 1.3](/pdf/ko/java/aspose-pdf-java-for-struts-1-3/)
+- [Aspose.PDF Ruby용 Java](/pdf/ko/java/aspose-pdf-java-for-ruby/)
+- [IntelliJ IDEA용 Aspose.PDF Java - Maven](/pdf/ko/java/aspose-pdf-java-for-intellij-idea-maven/)
+- [Aspose.PDF Python용 Java](/pdf/ko/java/aspose-pdf-java-for-python/)
+- [Aspose.PDF PHP용 Java](/pdf/ko/java/aspose-pdf-java-for-php/)
+- [Aspose.PDF Jython용 Java](/pdf/ko/java/aspose-pdf-java-for-jython/)
+- [NetBeans용 Aspose.PDF Java - Maven](/pdf/ko/java/aspose-pdf-java-for-netbeans-maven/)
+- [Maven for Eclipse를 사용하는 Aspose.PDF Java](/pdf/ko/java/aspose-pdf-java-using-maven-for-eclipse/)

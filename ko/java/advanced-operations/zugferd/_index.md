@@ -15,4 +15,4 @@ Abstract: 이 섹션에서는 Aspose.PDF for Java를 사용하여 ZUGFeRD 송장
 ---
 ZUGFeRD는 사람이 읽을 수 있는 PDF 송장과 문서에 포함된 구조화된 XML 데이터를 결합합니다. 현재 Java 예제 세트에서 다루는 워크플로는 송장 XML을 PDF에 첨부하고 결과를 `PDF_A_3A`으로 변환하는 것입니다.
 
-- [ZUGFeRD 송장 데이터를 PDF에 첨부](/pdf/java/attach-zugferd/)
+- [ZUGFeRD 송장 데이터를 PDF에 첨부](/pdf/ko/java/attach-zugferd/)

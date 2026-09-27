@@ -23,9 +23,9 @@ Abstract: .NET을 통한 Python용 Aspose.PDF는 32비트 및 64비트 시스템
 
 ## 제품 설명
 
-**Java용 Aspose.PDF**는 Java를 사용하여 구현되며 JDK 1.8 이상에서 작동합니다. Aspose.PDF for Java는 JSP/JSF 웹 애플리케이션이나 Windows 애플리케이션과 같은 모든 애플리케이션과 통합될 수 있습니다.
+**Aspose.PDF for Java**는 Java를 사용하여 구현되며 JDK 1.8 이상에서 작동합니다. Aspose.PDF for Java는 JSP/JSF 웹 애플리케이션이나 Windows 애플리케이션과 같은 모든 애플리케이션과 통합될 수 있습니다.
 
-**Java용 Aspose.PDF**는 빠르고 가볍습니다. PDF 문서를 효율적으로 생성하고 애플리케이션의 성능을 향상시키는 데 도움이 됩니다. Aspose.PDF for Java는 가격, 뛰어난 성능 및 훌륭한 지원으로 인해 PDF 문서를 작성할 때 고객이 가장 먼저 선택하는 것입니다.
+**Aspose.PDF for Java**는 빠르고 가볍습니다. PDF 문서를 효율적으로 생성하고 애플리케이션의 성능을 향상시키는 데 도움이 됩니다. Aspose.PDF for Java는 가격, 뛰어난 성능 및 훌륭한 지원으로 인해 PDF 문서를 작성할 때 고객이 가장 먼저 선택하는 것입니다.
 이 라이브러리를 사용하면 처음부터 PDF 파일을 생성하는 풍부한 기능을 구현하거나 Adobe Acrobat을 설치하지 않고도 기존 PDF 문서를 완전히 처리할 수 있습니다.
 
 ## 설치

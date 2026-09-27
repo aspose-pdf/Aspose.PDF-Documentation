@@ -15,6 +15,6 @@ Abstract: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 
 ---
 Aspose.PDF for Java에는 책갈피, 링크 및 대화형 작업을 위한 API가 포함되어 있습니다. 이러한 기능을 사용하여 문서 내부 탐색을 개선하고, 외부 리소스에 연결하고, 사용자 상호 작용에서 동작을 트리거할 수 있습니다.
 
-- [PDF 링크 작업](/pdf/java/links/)
-- [PDF 작업 작업](/pdf/java/actions/)
-- [PDF 책갈피 작업](/pdf/java/bookmarks/)
+- [PDF 링크 작업](/pdf/ko/java/links/)
+- [PDF 작업 작업](/pdf/ko/java/actions/)
+- [PDF 책갈피 작업](/pdf/ko/java/bookmarks/)

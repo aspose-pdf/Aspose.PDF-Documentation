@@ -15,7 +15,7 @@ sitemap:
 
 Java에서 액세스 가능한 PDF 문서를 작성하거나 검사해야 하는 경우 이 섹션을 사용하세요.
 
-- [태그된 PDF 생성](/pdf/java/create-tagged-pdf/)
-- [태그가 있는 PDF에서 태그가 있는 콘텐츠 추출](/pdf/java/extract-tagged-content-from-tagged-pdfs/)
-- [구조 요소 속성 설정](/pdf/java/setting-structure-elements-properties/)
-- [태그가 있는 PDF의 표 작업](/pdf/java/working-with-table-in-tagged-pdfs/)
+- [태그된 PDF 생성](/pdf/ko/java/create-tagged-pdf/)
+- [태그가 있는 PDF에서 태그가 있는 콘텐츠 추출](/pdf/ko/java/extract-tagged-content-from-tagged-pdfs/)
+- [구조 요소 속성 설정](/pdf/ko/java/setting-structure-elements-properties/)
+- [태그가 있는 PDF의 표 작업](/pdf/ko/java/working-with-table-in-tagged-pdfs/)

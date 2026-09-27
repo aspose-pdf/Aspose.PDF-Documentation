@@ -36,7 +36,7 @@ PDF 문서를 압축하면 파일 크기가 줄어들어 네트워크를 통해 
 - XImageCollection에 이미지 저장(재사용 가능한 이미지)
 - PDF를 RGB 색상 공간에서 회색조로 변환
 
-자세한 내용은 문서 페이지를 확인하세요. [PDF 최적화](/pdf/java/optimize-pdf/)
+자세한 내용은 문서 페이지를 확인하세요. [PDF 최적화](/pdf/ko/java/optimize-pdf/)
 
 ### 테이블 생성 및 조작
 
@@ -44,23 +44,23 @@ PDF 문서를 압축하면 파일 크기가 줄어들어 네트워크를 통해 
 
 **Aspose.PDF for Java**를 사용하면 PDF 문서에서 테이블을 생성하고 조작하면 데이터 구성 개선, 가독성 향상, 분석 기능 향상, 정보를 효과적으로 표시하는 유연성 향상 등 다양한 이점을 얻을 수 있습니다.
 
-자세한 내용은 다음 섹션을 확인하세요. [테이블 작업](/pdf/java/working-with-tables/)
+자세한 내용은 다음 섹션을 확인하세요. [테이블 작업](/pdf/ko/java/working-with-tables/)
 
 ### 그래프 개체 지원
 
-**Java용 Aspose.PDF**는 PDF 문서에 그래프 추가를 지원합니다. 이 작업을 위해 Graph 클래스가 제공됩니다.
+**Aspose.PDF for Java**는 PDF 문서에 그래프 추가를 지원합니다. 이 작업을 위해 Graph 클래스가 제공됩니다.
 
 PDF 문서에 그래프를 추가하면 데이터 시각화가 향상되고 명확성과 이해력이 향상되며 의사 결정 지원이 향상되고 독자 참여도가 높아집니다.
 
-자세한 내용은 Docs 페이지를 확인하세요: [그래프 작업](/pdf/java/working-with-graphs/)
+자세한 내용은 Docs 페이지를 확인하세요: [그래프 작업](/pdf/ko/java/working-with-graphs/)
 
 ### 광범위한 하이퍼링크 기능
 
 하이퍼링크를 사용하면 사용자가 PDF 문서 내에서 빠르고 효율적으로 탐색할 수 있습니다. 하이퍼링크를 클릭하면 독자는 문서를 수동으로 스크롤하지 않고도 다른 섹션, 장 또는 페이지로 이동할 수 있습니다.
 
-**Java용 Aspose.PDF**는 향상된 탐색, 상호 참조, 외부 리소스에 대한 액세스, 상호 작용 및 향상된 커뮤니케이션을 포함한 많은 이점을 제공합니다. 이는 사용자에게 더욱 매력적이고 유익하며 접근 가능한 독서 경험을 제공하는 데 기여합니다.
+**Aspose.PDF for Java**는 향상된 탐색, 상호 참조, 외부 리소스에 대한 액세스, 상호 작용 및 향상된 커뮤니케이션을 포함한 많은 이점을 제공합니다. 이는 사용자에게 더욱 매력적이고 유익하며 접근 가능한 독서 경험을 제공하는 데 기여합니다.
 
-자세한 내용은 다음 섹션을 확인하세요. [작업](/pdf/java/actions/)
+자세한 내용은 다음 섹션을 확인하세요. [작업](/pdf/ko/java/actions/)
 
 ### 확장된 보안 제어
 
@@ -68,7 +68,7 @@ PDF 문서에 그래프를 추가하면 데이터 시각화가 향상되고 명�
 
 **Aspose.PDF for Java**를 사용하면 스마트 카드에서 PDF에 서명하고, 파일을 암호화 및 해독하고, 이미지와 서명 정보를 추출하는 등의 작업이 가능합니다.
 
-자세한 내용은 Docs 페이지를 확인하세요: [보안 및 서명](/pdf/java/securing-and-signing/)
+자세한 내용은 Docs 페이지를 확인하세요: [보안 및 서명](/pdf/ko/java/securing-and-signing/)
 
 ### 책갈피 추가 또는 제거
 
@@ -76,7 +76,7 @@ PDF 문서에 그래프를 추가하면 데이터 시각화가 향상되고 명�
 
 **Aspose.PDF for Java** 라이브러리를 사용하면 PDF 파일에 책갈피를 추가하거나, 하위 책갈피를 추가하거나, 문서에서 전체 또는 특정 책갈피를 삭제할 수 있습니다.
 
-자세한 내용은 다음 섹션을 확인하세요. [책갈피](/pdf/java/add-and-delete-bookmark/)
+자세한 내용은 다음 섹션을 확인하세요. [책갈피](/pdf/ko/java/add-and-delete-bookmark/)
 
 ### 목차 만들기
 
@@ -84,13 +84,13 @@ TOC는 사용자에게 PDF 문서의 내용을 탐색할 수 있는 빠르고 �
 
 **Aspose.PDF for Java** 라이브러리는 기존 PDF 파일에 목차를 추가하는 방법을 설명하고 Aspose.Pdf 네임스페이스의 Heading 클래스를 사용합니다.
 
-자세한 내용은 문서 페이지를 확인하세요. [TOC 작업](/pdf/java/manipulate-pdf-document/)
+자세한 내용은 문서 페이지를 확인하세요. [TOC 작업](/pdf/ko/java/manipulate-pdf-document/)
 
 ### 첨부 파일 및 주석 추가, 업데이트, 삭제
 
 첨부 파일과 주석을 추가하면 PDF 문서가 더욱 대화형이고 독자의 관심을 끌게 됩니다. 사용자는 문서에 포함된 멀티미디어 파일, 링크, 댓글 등의 추가 콘텐츠와 상호 작용하여 독서 경험을 향상시킬 수 있습니다.
 
-Aspose.PDF for Java 라이브러리는 [주석](/pdf/java/annotations/)을 사용하여 다르게 조작합니다. 다음과 같은 유형을 추가할 수 있습니다.
+Aspose.PDF for Java 라이브러리는 [주석](/pdf/ko/java/annotations/)을 사용하여 다르게 조작합니다. 다음과 같은 유형을 추가할 수 있습니다.
 
 - 텍스트 주석
 - 하이라이트 주석
@@ -101,7 +101,7 @@ Aspose.PDF for Java 라이브러리는 [주석](/pdf/java/annotations/)을 사�
 
 또한 당사 라이브러리를 사용하면 PDF에서 첨부 파일을 추가, 추출 및 제거할 수 있습니다.
 
-자세한 내용은 다음 [문서 페이지](/pdf/java/attachments/)를 확인하세요.
+자세한 내용은 다음 [문서 페이지](/pdf/ko/java/attachments/)를 확인하세요.
 
 ### PDF 파일 메타데이터
 
@@ -109,7 +109,7 @@ Aspose.PDF for Java 라이브러리는 [주석](/pdf/java/annotations/)을 사�
 
 PDF 파일 메타데이터는 문서 식별, 속성, 버전 추적, 설명, 검색 가능성, 접근성, 보안, 상호 운용성, 보존 및 규정 준수 등 다양한 목적으로 사용됩니다.
 
-**Aspose.PDF for Java** 라이브러리를 사용하여 PDF 문서의 [메타데이터](/pdf/java/pdf-file-metadata/)를 쉽고 빠르게 관리하세요.
+**Aspose.PDF for Java** 라이브러리를 사용하여 PDF 문서의 [메타데이터](/pdf/ko/java/pdf-file-metadata/)를 쉽고 빠르게 관리하세요.
 
 ### 텍스트 및 이미지 추가, 교체 또는 제거
 
@@ -117,11 +117,11 @@ PDF 파일 메타데이터는 문서 식별, 속성, 버전 추적, 설명, 검�
 
 Aspose.PDF를 사용하면 PDF 내의 텍스트를 편집하고, 바꾸거나 회전하고, PDF에서 텍스트를 검색하거나 가져올 수 있습니다.
 
-PDF의 이미지를 추가, 위치 변경, 삭제하고 더 많은 [복잡한 작업](/pdf/java/working-with-images/)을 수행할 수도 있습니다.
+PDF의 이미지를 추가, 위치 변경, 삭제하고 더 많은 [복잡한 작업](/pdf/ko/java/working-with-images/)을 수행할 수도 있습니다.
 
 ### 페이지 분할, 연결, 추출 또는 삽입
 
-Docs의 [PDF 페이지 작업](/pdf/java/working-with-pages/) 섹션에서는 PDF에서 페이지를 추가, 이동, 삭제, 회전 또는 분할하는 방법을 설명합니다.
+Docs의 [PDF 페이지 작업](/pdf/ko/java/working-with-pages/) 섹션에서는 PDF에서 페이지를 추가, 이동, 삭제, 회전 또는 분할하는 방법을 설명합니다.
 
 페이지 분할, 연결, 추출 또는 삽입은 사용자가 PDF 문서를 보다 효과적으로 관리하는 데 도움이 됩니다. 사용자는 페이지를 구성, 재배열 또는 결합하여 새 문서를 만들 수 있으므로 문서 구성 및 접근성이 향상됩니다.
 
@@ -139,7 +139,7 @@ Aspose.PDF를 사용하면 Java를 사용하여 PDF를 다른 이미지 형식�
 - GIF
 - SVG
 
-DocumentDevice를 사용하는 Aspose.PDF 라이브러리 또는 PDF를 이미지로 변환하기 위한 ImageDevice 클래스입니다.[PDF를 다른 이미지 형식으로 변환](/pdf/java/convert-pdf-to-images-format/).
+DocumentDevice를 사용하는 Aspose.PDF 라이브러리 또는 PDF를 이미지로 변환하기 위한 ImageDevice 클래스입니다.[PDF를 다른 이미지 형식으로 변환](/pdf/ko/java/convert-pdf-to-images-format/).
 
 ### PDF 문서 인쇄
 
@@ -157,17 +157,17 @@ Aspose.PDF for Java는 PDF 파일을 인쇄하는 다양한 방법을 제공합�
 
 ## 가격 및 정책
 
-라이선스에 대한 자세한 내용은 [라이선스](/pdf/java/licensing/) 페이지를 방문하고, 가격에 대한 자세한 내용은 [가격 정보](https://purchase.aspose.com/pricing/pdf/family/) 페이지를 검토하세요.
+라이선스에 대한 자세한 내용은 [라이선스](/pdf/ko/java/licensing/) 페이지를 방문하고, 가격에 대한 자세한 내용은 [가격 정보](https://purchase.aspose.com/pricing/pdf/family/) 페이지를 검토하세요.
 
 ## 기술 지원
 
-Aspose.PDF 기술 지원에 대한 자세한 내용은 [지원 페이지](/pdf/java/technical-support/)를 참조하세요.
+Aspose.PDF 기술 지원에 대한 자세한 내용은 [지원 페이지](/pdf/ko/java/technical-support/)를 참조하세요.
 
 다음에 대해 자세히 알아보세요.
 
-- [지원되는 파일 형식](/pdf/java/supported-file-formats/)
-- [Aspose.PDF의 주요 기능](/pdf/java/key-features/)
-- [시스템 요구 사항](/pdf/java/system-requirements/)
-- [설치](/pdf/java/installation/)
-- [라이선스](/pdf/java/licensing/)
-- [기술 지원](/pdf/java/technical-support/)
+- [지원되는 파일 형식](/pdf/ko/java/supported-file-formats/)
+- [Aspose.PDF의 주요 기능](/pdf/ko/java/key-features/)
+- [시스템 요구 사항](/pdf/ko/java/system-requirements/)
+- [설치](/pdf/ko/java/installation/)
+- [라이선스](/pdf/ko/java/licensing/)
+- [기술 지원](/pdf/ko/java/technical-support/)

@@ -15,7 +15,7 @@ Abstract: 이 섹션에서는 Aspose.PDF for Java를 사용하여 PDF 문서를 
 ---
 Aspose.PDF for Java에는 디지털 서명과 문서 보안을 위한 Facade API가 포함되어 있습니다. PDF 파일에 서명 또는 인증하고, 기존 서명을 검사하고, 문서를 암호화 및 해독하고, 사용자 및 소유자 비밀번호를 사용하여 권한 제한을 적용할 수 있습니다.
 
-- [PDF 파일에 디지털 서명](/pdf/java/digitally-sign-pdf-file/)
-- [서명정보 추출](/pdf/java/extract-image-and-signature-information/)
-- [권한 설정, PDF 파일 암호화, 복호화](/pdf/java/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [스마트 카드 서명 메모](/pdf/java/sign-pdf-document-from-smart-card/)
+- [PDF 파일에 디지털 서명](/pdf/ko/java/digitally-sign-pdf-file/)
+- [서명정보 추출](/pdf/ko/java/extract-image-and-signature-information/)
+- [권한 설정, PDF 파일 암호화, 복호화](/pdf/ko/java/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [스마트 카드 서명 메모](/pdf/ko/java/sign-pdf-document-from-smart-card/)
