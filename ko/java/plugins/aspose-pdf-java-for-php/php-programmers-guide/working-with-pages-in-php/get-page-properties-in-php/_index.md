@@ -3,19 +3,15 @@ title: PHP에서 페이지 속성 가져오기
 linktitle: PHP에서 페이지 속성 가져오기
 type: docs
 weight: 50
-url: /java/get-page-properties-in-php/
+url: /ko/java/get-page-properties-in-php/
 description: 자세한 제어를 위해 Aspose.PDF를 사용하여 PHP에서 PDF 문서의 특정 페이지 속성을 검색하는 방법을 살펴보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 페이지 속성 가져오기
-
-
+## Aspose.PDF - 페이지 속성 가져오기
 
 PHP용 **Aspose.PDF Java**를 사용하여 PDF 문서의 페이지 속성을 얻으려면 **GetPageProperties** 클래스를 호출하기만 하면 됩니다.
 
 PHP 코드
-
 
 ```php
 
@@ -45,13 +41,8 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
-
 **실행 코드 다운로드**
-
-
 
 아래에 언급된 소셜 코딩 사이트 중 하나에서 다운로드****페이지 속성(Aspose.PDF)**В을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

@@ -3,9 +3,9 @@ title: AcroForm 만들기 - Java로 채울 수 있는 PDF 만들기
 linktitle: AcroForm 생성
 type: docs
 weight: 10
-url: /java/create-form/
-description: Java용 Aspose.PDF를 사용하여 PDF 문서에서 처음부터 AcroForm 필드를 만듭니다.
-lastmod: "2026-06-09"
+url: /ko/java/create-form/
+description: Aspose.PDF for Java를 사용하여 PDF 문서에서 처음부터 AcroForm 필드를 만듭니다.
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 AcroForm 필�
 ---
 Aspose.PDF for Java를 사용하면 처음부터 광범위한 AcroForm 필드 유형을 만들 수 있습니다.
 
+## 텍스트 상자 필드 만들기
 
-## 
-텍스트 상자 필드 만들기
+새 PDF 양식에 한 줄 텍스트 입력 필드를 추가해야 할 때 이 예를 사용하세요.
 
-
-
-새 PDF 양식에 한 줄 텍스트 입력 필드를 추가해야 할 때 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-대상 직사각형이 있는 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)를 만들고 모양을 구성합니다.
-1. 양식에 필드를 추가하고 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. 대상 직사각형이 있는 [`TextBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)를 만들고 모양을 구성하세요.
+1. 양식에 필드를 추가하고 문서를 저장하세요.
 
 ```java
 public static void addTextBoxField(Path outputFile) {
@@ -58,21 +49,13 @@ public static void addTextBoxField(Path outputFile) {
 }
 ```
 
-## 
-여러 위젯이 포함된 텍스트 상자 필드 만들기
+## 여러 위젯이 포함된 텍스트 상자 필드 만들기
 
+동일한 텍스트 필드 값이 페이지의 여러 위치에 표시되어야 하는 경우 이 예를 사용하세요.
 
-
-동일한 텍스트 필드 값이 페이지의 여러 위치에 표시되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-필드 위젯에 대한 여러 직사각형과 모양을 정의합니다.
-1. [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)를 생성하고 각 위젯을 구성한 후 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. 필드 위젯에 대한 여러 직사각형과 모양을 정의하세요.
+1. [`TextBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)를 생성하고 각 위젯을 구성한 후 문서를 저장하세요.
 
 ```java
 public static void addTextBoxFieldNt(Path outputFile) {
@@ -116,21 +99,13 @@ public static void addTextBoxFieldNt(Path outputFile) {
 }
 ```
 
-## 
-라디오 버튼 필드 생성
+## 라디오 버튼 필드 생성
 
+양식에서 사용자가 사전 정의된 세트에서 하나의 옵션을 선택할 수 있도록 해야 하는 경우 이 예를 사용하세요.
 
-
-양식에서 사용자가 사전 정의된 세트에서 하나의 옵션을 선택할 수 있도록 해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/)를 만들고 필요한 옵션을 추가하세요.
-1. 양식에 필드를 추가하고 PDF를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`RadioButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/)를 만들고 필요한 옵션을 추가하세요.
+1. 양식에 필드를 추가하고 PDF를 저장하세요.
 
 ```java
 public static void addRadioButton(Path outputFile) {
@@ -147,21 +122,13 @@ public static void addRadioButton(Path outputFile) {
 }
 ```
 
-## 
-콤보 상자 필드 만들기
-
-
+## 콤보 상자 필드 만들기
 
 사용자가 드롭다운 목록에서 하나의 값을 선택해야 하는 경우 이 예를 사용합니다.
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/)를 만들고 선택 가능한 옵션을 추가합니다.
-1. 기본 선택을 설정하고 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`ComboBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/)를 만들고 선택 가능한 옵션을 추가하세요.
+1. 기본 선택을 설정하고 문서를 저장하세요.
 
 ```java
 public static void addComboBox(Path outputFile) {
@@ -181,21 +148,13 @@ public static void addComboBox(Path outputFile) {
 }
 ```
 
-## 
-체크박스 필드 생성
+## 체크박스 필드 생성
 
+양식에 동의 또는 기능 선택과 같은 참 또는 거짓 옵션이 필요한 경우 이 예를 사용하세요.
 
-
-양식에 동의 또는 기능 선택과 같은 참 또는 거짓 옵션이 필요한 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/)를 생성하고 모양을 구성합니다.
-1. 양식에 확인란을 추가하고 출력 파일을 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`CheckboxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/)를 생성하고 모양을 구성하세요.
+1. 양식에 확인란을 추가하고 출력 파일을 저장하세요.
 
 ```java
 public static void addCheckboxFieldToPdf(Path outputFile) {
@@ -212,21 +171,13 @@ public static void addCheckboxFieldToPdf(Path outputFile) {
 }
 ```
 
-## 
-목록 상자 필드 만들기
+## 목록 상자 필드 만들기
 
+양식이 표시 목록에 사용 가능한 여러 선택 항목을 표시해야 하는 경우 이 예를 사용하세요.
 
-
-양식이 표시 목록에 사용 가능한 여러 선택 항목을 표시해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/)를 만들고 사용 가능한 옵션을 추가합니다.
-1. 양식에 필드를 추가하고 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`ListBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/)를 만들고 사용 가능한 옵션을 추가하세요.
+1. 양식에 필드를 추가하고 문서를 저장하세요.
 
 ```java
 public static void addListBoxFieldToPdf(Path outputFile) {
@@ -245,21 +196,13 @@ public static void addListBoxFieldToPdf(Path outputFile) {
 }
 ```
 
-## 
-서명 필드 만들기
+## 서명 필드 만들기
 
+문서에서 디지털 서명을 위해 표시 영역을 예약해야 하는 경우 이 예를 사용하세요.
 
-
-문서에서 디지털 서명을 위해 표시 영역을 예약해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-필요한 직사각형에 [서명 필드](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/)를 만듭니다.
-1. 양식에 필드를 추가하고 출력 PDF를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. 필요한 직사각형에 [`SignatureField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/)를 만드세요.
+1. 양식에 필드를 추가하고 출력 PDF를 저장하세요.
 
 ```java
 public static void addSignatureField(Path outputFile) {
@@ -274,20 +217,13 @@ public static void addSignatureField(Path outputFile) {
 }
 ```
 
-## 
-바코드 필드 생성
+## 바코드 필드 생성
 
+양식이 바코드 필드 내부에 기계 판독 가능 데이터를 표시해야 하는 경우 이 예를 사용하세요.
 
-
-양식이 바코드 필드 내부에 기계 판독 가능 데이터를 표시해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[바코드필드](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/)를 생성하고 바코드 값을 추가하세요.
-1. 양식에 필드를 추가하고 문서를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`BarcodeField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/)를 생성하고 바코드 값을 추가하세요.
+1. 양식에 필드를 추가하고 문서를 저장하세요.
 
 ```java
 public static void addBarcodeField(Path outputFile) {

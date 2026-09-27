@@ -3,19 +3,15 @@ title: Ruby에 JavaScript 추가하기
 linktitle: Ruby에 JavaScript 추가하기
 type: docs
 weight: 10
-url: /java/adding-javascript-in-ruby/
+url: /ko/java/adding-javascript-in-ruby/
 description: 상호작용 및 자동화를 위해 Ruby에서 Aspose.PDF를 사용하여 PDF에서 JavaScript 기능을 활성화합니다.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - JavaScript 추가
-
-
+## Aspose.PDF - JavaScript 추가
 
 **Aspose.PDF Java for Ruby**를 사용하여 PDF 문서에 JavaScript를 추가하려면 **AddJavaScript** 모듈을 호출하기만 하면 됩니다.
 
 루비 코드
-
 
 ```java
 # The path to the documents directory.
@@ -49,13 +45,8 @@ doc.save(data_dir + "JavaScript-Added.pdf")
 puts "Added JavaScript Successfully, please check the output file."
 ```
 
-## 
-실행 코드 다운로드
-
-
+## 실행 코드 다운로드
 
 아래 언급된 소셜 코딩 사이트 중 하나에서 В **JavaScript 추가(Aspose.PDF)**В를 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)

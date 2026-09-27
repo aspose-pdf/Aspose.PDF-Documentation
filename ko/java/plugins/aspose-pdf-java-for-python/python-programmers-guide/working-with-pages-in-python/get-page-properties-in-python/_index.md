@@ -3,13 +3,12 @@ title: Python에서 페이지 속성 가져오기
 linktitle: Python에서 페이지 속성 가져오기
 type: docs
 weight: 50
-url: /java/get-page-properties-in-python/
+url: /ko/java/get-page-properties-in-python/
 description: 자세한 제어를 위해 Aspose.PDF를 사용하여 Python에서 PDF 문서 내의 특정 페이지 속성에 액세스하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 PDF 문서의 페이지 속성을 얻으려면 **GetPageProperties** 클래스를 호출하기만 하면 됩니다.
-
 
 ```Python
 doc= self.Document()
@@ -34,11 +33,8 @@ print "Rotate :-" + pdf_page.getRotate()
 
 ```
 
-
 **실행 코드 다운로드**
 
 아래에 언급된 소셜 코딩 사이트 중 하나에서 다운로드****페이지 속성(Aspose.PDF)**В을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)

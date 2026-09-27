@@ -3,19 +3,15 @@ title: Ruby에서 페이지 속성 가져오기
 linktitle: Ruby에서 페이지 속성 가져오기
 type: docs
 weight: 50
-url: /java/get-page-properties-in-ruby/
+url: /ko/java/get-page-properties-in-ruby/
 description: 문서를 효율적으로 관리하고 조작하기 위해 Aspose.PDF와 함께 Ruby를 사용하여 PDF 파일의 페이지 속성을 검색하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 페이지 속성 가져오기
-
-
+## Aspose.PDF - 페이지 속성 가져오기
 
 **Aspose.PDF Java for Ruby**를 사용하여 PDF 문서의 페이지 속성을 얻으려면 **GetPageProperties** 모듈을 호출하기만 하면 됩니다.
 
 루비 코드
-
 
 ```java
 # The path to the documents directory.
@@ -53,13 +49,8 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
-## 
-실행 코드 다운로드
-
-
+## 실행 코드 다운로드
 
 아래에 언급된 소셜 코딩 사이트 중 하나에서 다운로드****페이지 속성(Aspose.PDF)**В을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

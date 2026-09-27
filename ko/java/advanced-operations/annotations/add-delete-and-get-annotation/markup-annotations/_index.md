@@ -3,9 +3,9 @@ title: Java를 사용한 마크업 주석
 linktitle: 마크업 주석
 type: docs
 weight: 30
-url: /java/markup-annotations/
-description: Java용 Aspose.PDF를 사용하여 PDF 문서에서 강조 표시, 밑줄, 물결선 및 취소선 주석을 추가, 검사 및 삭제하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+url: /ko/java/markup-annotations/
+description: Aspose.PDF for Java를 사용하여 PDF 문서에서 강조 표시, 밑줄, 물결선 및 취소선 주석을 추가, 검사 및 삭제하는 방법을 알아보세요.
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에�
 ---
 이 섹션의 마크업 주석 작업 흐름은 노트 스타일 주석, 캐럿 마커 및 그룹화된 교체-검토 시나리오에 중점을 둡니다.
 
-
-## 
-텍스트 주석 추가
-
-
+## 텍스트 주석 추가
 
 페이지에 팝업 메타데이터가 포함된 스티커 메모 스타일 텍스트 주석을 배치해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-[TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/)을 생성하고 제목, 내용, 아이콘, 팝업을 구성합니다.
-1. 페이지에 주석을 추가하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. [`TextAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/)을 생성하고 제목, 내용, 아이콘, 팝업을 구성하세요.
+1. 페이지에 주석을 추가하고 문서를 저장하세요.
 
 ```java
 public static void textAnnotationAdd(Path inputFile, Path outputFile) {
@@ -57,21 +48,13 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-텍스트 주석 받기
-
-
+## 텍스트 주석 받기
 
 이 예에서는 페이지를 스캔하고 각 텍스트 주석의 직사각형을 인쇄합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-페이지의 주석을 반복합니다.
-1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`으로 주석을 필터링하고 해당 직사각형을 인쇄합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지의 주석을 반복하세요.
+1. [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`으로 주석을 필터링하고 해당 직사각형을 인쇄하세요.
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -85,21 +68,13 @@ public static void textAnnotationGet(Path inputFile) {
 }
 ```
 
-## 
-텍스트 주석 삭제
+## 텍스트 주석 삭제
 
+문서에서 기존 텍스트 주석을 제거해야 하는 경우 이 방법을 사용하세요.
 
-
-문서에서 기존 텍스트 주석을 제거해야 하는 경우 이 방법을 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-[AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` 유형의 주석을 수집합니다.
-1. 수집된 주석을 삭제하고 출력 파일을 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` 유형의 주석을 수집하세요.
+1. 수집된 주석을 삭제하고 출력 파일을 저장하세요.
 
 ```java
 public static void textAnnotationDelete(Path inputFile, Path outputFile) {
@@ -118,21 +93,13 @@ public static void textAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-캐럿 주석 추가
+## 캐럿 주석 추가
 
+삽입된 텍스트를 캐럿 스타일 검토 주석으로 표시해야 하는 경우 이 예를 사용하세요.
 
-
-삽입된 텍스트를 캐럿 스타일 검토 주석으로 표시해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-[CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/)을 생성하고 팝업 및 모양을 구성합니다.
-1. 페이지에 주석을 추가하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. [`CaretAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/)을 생성하고 팝업 및 모양을 구성하세요.
+1. 페이지에 주석을 추가하고 문서를 저장하세요.
 
 ```java
 public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
@@ -156,21 +123,13 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-캐럿 주석 가져오기
-
-
+## 캐럿 주석 가져오기
 
 이 예제는 기존 캐럿 주석을 읽고 해당 위치를 인쇄합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-페이지 주석을 반복합니다.
-1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`으로 주석을 필터링하고 해당 직사각형을 인쇄합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지 주석을 반복하세요.
+1. [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`으로 주석을 필터링하고 해당 직사각형을 인쇄하세요.
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -185,21 +144,13 @@ public static void caretAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 
-캐럿 주석 삭제
-
-
+## 캐럿 주석 삭제
 
 페이지에서 캐럿 주석을 제거해야 하는 경우 이 접근 방식을 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-유형이 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`인 주석을 수집합니다.
-1. 수집된 주석을 삭제하고 출력 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 유형이 [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`인 주석을 수집하세요.
+1. 수집된 주석을 삭제하고 출력 문서를 저장하세요.
 
 ```java
 public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
@@ -220,21 +171,13 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-그룹화된 대체 주석 추가
-
-
+## 그룹화된 대체 주석 추가
 
 이 예는 캐럿 주석과 취소선 주석을 결합하여 교체 스타일 검토 주석을 나타냅니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-캐럿 주석 및 관련 [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/)을 생성합니다.
-1. `setInReplyTo` 및 `setReplyType`을 통해 주석을 연결한 다음 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 캐럿 주석 및 관련 [`StrikeOutAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/)을 생성하세요.
+1. `setInReplyTo` 및 `setReplyType`를 통해 주석을 연결한 다음 문서를 저장하세요.
 
 ```java
 public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
@@ -274,21 +217,13 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-그룹화된 대체 주석 가져오기
-
-
+## 그룹화된 대체 주석 가져오기
 
 이 예에서는 그룹화된 교체 워크플로에 참여하는 취소선 주석을 감지합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-페이지 주석을 반복하고 취소선 주석을 선택합니다.
-1. 응답 관계를 확인하고 일치하는 주석의 사각형을 인쇄합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지 주석을 반복하고 취소선 주석을 선택하세요.
+1. 응답 관계를 확인하고 일치하는 주석의 사각형을 인쇄하세요.
 
 ```java
 public static void replaceAnnotationsGet(Path inputFile) {
@@ -306,21 +241,13 @@ public static void replaceAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 
-그룹화된 대체 주석 삭제
+## 그룹화된 대체 주석 삭제
 
+교체-검토 취소선 주석을 페이지에서 제거해야 하는 경우 이 접근 방식을 사용하세요.
 
-
-교체-검토 취소선 주석을 페이지에서 제거해야 하는 경우 이 접근 방식을 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-교체 마크업을 나타내는 취소선 주석을 수집합니다.
-1. 수집된 주석을 삭제하고 업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 교체 마크업을 나타내는 취소선 주석을 수집하세요.
+1. 수집된 주석을 삭제하고 업데이트된 문서를 저장하세요.
 
 ```java
 public static void replaceAnnotationsDelete(Path inputFile, Path outputFile) {
@@ -341,22 +268,11 @@ public static void replaceAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-관련 주석 주제
+## 관련 주석 주제
 
-
-- 
-[텍스트 주석](/pdf/java/text-based-annotations/)
-
-- 
-[대화형 주석](/pdf/java/interactive-annotations/)
-
-- 
-[도형 주석](/pdf/java/shape-annotations/)
+- [텍스트 주석](/pdf/java/text-based-annotations/)
+- [대화형 주석](/pdf/java/interactive-annotations/)
+- [도형 주석](/pdf/java/shape-annotations/)
 - [미디어 주석](/pdf/java/media-annotations/)
-
-- 
-[보안 주석](/pdf/java/security-annotations/)
-
-- 
-[워터마크 주석](/pdf/java/watermark-annotations/)
+- [보안 주석](/pdf/java/security-annotations/)
+- [워터마크 주석](/pdf/java/watermark-annotations/)

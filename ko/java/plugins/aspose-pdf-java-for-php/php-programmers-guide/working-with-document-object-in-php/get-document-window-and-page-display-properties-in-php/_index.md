@@ -3,19 +3,15 @@ title: PHP에서 문서 창 및 페이지 표시 속성 가져오기
 linktitle: PHP에서 문서 창 및 페이지 표시 속성 가져오기
 type: docs
 weight: 30
-url: /java/get-document-window-and-page-display-properties-in-php/
+url: /ko/java/get-document-window-and-page-display-properties-in-php/
 description: Aspose.PDF를 사용하여 PHP에서 PDF 파일의 문서 창 및 페이지 표시 속성에 액세스하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 문서 창 및 페이지 표시 속성 가져오기
-
-
+## Aspose.PDF - 문서 창 및 페이지 표시 속성 가져오기
 
 PHP용 **Aspose.PDF Java**를 사용하여 PDF 문서의 문서 창 및 페이지 표시 속성을 가져오려면 간단히 **GetDocumentWindow** 클래스를 호출하면 됩니다.
 
 PHP 코드
-
 
 ```php
 
@@ -58,13 +54,8 @@ print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
-
 **실행 코드 다운로드**
-
-
 
 아래에 언급된 소셜 코딩 사이트 중 하나에서 **문서 창 및 페이지 표시 속성(Aspose.PDF)**을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

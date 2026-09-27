@@ -3,9 +3,9 @@ title: Java에서 PDF에 텍스트 추가
 linktitle: PDF에 텍스트 추가
 type: docs
 weight: 10
-url: /java/add-text-to-pdf-file/
+url: /ko/java/add-text-to-pdf-file/
 description: Java로 PDF 문서에 텍스트, HTML 조각, 목록, 링크 및 사용자 정의 글꼴을 추가하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,24 +13,15 @@ TechArticle: true
 AlternativeHeadline: Java를 사용하여 PDF 파일에 텍스트, 링크, HTML 및 글꼴 추가
 Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 텍스트를 추가하고 스타일을 지정하는 방법을 설명합니다. 간단한 텍스트 삽입, 단락 레이아웃, 하이퍼링크, 오른쪽에서 왼쪽으로 쓰는 텍스트, 글꼴 스타일, 투명도, 테두리, HTML 및 LaTeX 조각, 그라데이션 텍스트, 파일이나 스트림에서 로드된 사용자 정의 글꼴 등을 다룹니다.
 ---
-Java용 Aspose.PDF는 일반 텍스트 삽입, 고급 레이아웃, 스타일, 그라디언트, HTML, LaTeX 및 사용자 정의 글꼴을 지원합니다.
+Aspose.PDF for Java는 일반 텍스트 삽입, 고급 레이아웃, 스타일, 그라디언트, HTML, LaTeX 및 사용자 정의 글꼴을 지원합니다.
 
+## 간단한 텍스트 조각 추가
 
-## 
-간단한 텍스트 조각 추가
+짧은 텍스트 문자열을 고정된 페이지 좌표에 배치해야 하는 경우 이 예를 사용하세요.
 
-
-
-짧은 텍스트 문자열을 고정된 페이지 좌표에 배치해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-`TextFragment`을 만들고 위치를 설정합니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. `TextFragment`를 만들고 위치를 설정하세요.
 1. 페이지에 추가하고 문서를 저장하세요.
-
 
 ```java
 public static void addTextSimpleCase(Path outputFile) {
@@ -46,21 +37,13 @@ public static void addTextSimpleCase(Path outputFile) {
   }
 ```
 
-## 
-직사각형 안에 단락 추가
+## 직사각형 안에 단락 추가
 
+더 큰 텍스트 블록이 경계 영역 내부에 배치되어야 하는 경우 이 예를 사용하세요.
 
-
-더 큰 텍스트 블록이 경계 영역 내부에 배치되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-소스 텍스트를 로드하고 `TextParagraph` 직사각형 및 줄 바꿈 모드를 구성합니다.
-1. `TextBuilder`을 통해 조각을 추가하고 PDF를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 소스 텍스트를 로드하고 `TextParagraph` 직사각형 및 줄 바꿈 모드를 구성하세요.
+1. `TextBuilder`를 통해 조각을 추가하고 PDF를 저장하세요.
 
 ```java
 public static void addParagraph(Path outputFile) throws Exception {
@@ -89,21 +72,13 @@ public static void addParagraph(Path outputFile) throws Exception {
 }
 ```
 
-## 
-다른 들여쓰기 설정으로 단락 추가
-
-
+## 다른 들여쓰기 설정으로 단락 추가
 
 첫 번째 줄과 후속 줄에서 다른 들여쓰기 규칙을 사용해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-공유 텍스트 조각을 준비하고 여러 `TextParagraph` 개체를 만듭니다.
-1. 각 단락의 들여쓰기를 구성하고 추가한 후 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 공유 텍스트 조각을 준비하고 여러 `TextParagraph` 개체를 만드세요.
+1. 각 단락의 들여쓰기를 구성하고 추가한 후 문서를 저장하세요.
 
 ```java
 public static void addParagraphsIndents(Path outputFile) throws Exception {
@@ -138,21 +113,13 @@ public static void addParagraphsIndents(Path outputFile) throws Exception {
 }
 ```
 
-## 
-수동 줄 바꿈을 사용하여 텍스트 삽입
-
-
+## 수동 줄 바꿈을 사용하여 텍스트 삽입
 
 하나의 텍스트 조각에 명시적인 새 줄이 포함되어야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-줄 바꿈을 포함하는 `TextFragment`을 만들고 해당 스타일을 구성합니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 줄 바꿈을 포함하는 `TextFragment`를 만들고 해당 스타일을 구성하세요.
 1. `TextParagraph`을 통해 추가하고 PDF를 저장하세요.
-
 
 ```java
 public static void addNewLine(Path outputFile) {
@@ -177,21 +144,13 @@ public static void addNewLine(Path outputFile) {
 }
 ```
 
-## 
-감지된 줄바꿈 검사
+## 감지된 줄바꿈 검사
 
+텍스트 레이아웃 및 줄 바꿈과 관련된 알림 출력을 검토해야 할 때 이 예를 사용하세요.
 
-
-텍스트 레이아웃 및 줄 바꿈과 관련된 알림 출력을 검토해야 할 때 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 알림 로깅을 활성화합니다.
-
-1. 
-여러 개의 긴 텍스트 조각을 페이지에 추가합니다.
-1. 알림을 검사하고 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 알림 로깅을 활성화하세요.
+1. 여러 개의 긴 텍스트 조각을 페이지에 추가하세요.
+1. 알림을 검사하고 문서를 저장하세요.
 
 ```java
 public static void determineLineBreak(Path outputFile) {
@@ -218,21 +177,13 @@ public static void determineLineBreak(Path outputFile) {
 }
 ```
 
-## 
-텍스트 너비를 동적으로 측정
+## 텍스트 너비를 동적으로 측정
 
+레이아웃 결정을 내리기 전에 문자 및 문자열 너비를 측정해야 하는 경우 이 예를 사용하세요.
 
-
-레이아웃 결정을 내리기 전에 문자 및 문자열 너비를 측정해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-대상 글꼴을 확인하고 `TextState`을 만듭니다.
-
-1. 
-문자를 측정하고 글꼴 및 텍스트 상태 API의 결과를 비교합니다.
-1. 검증을 위해 불일치를 출력합니다.
-
+1. 대상 글꼴을 확인하고 `TextState`를 만드세요.
+1. 문자를 측정하고 글꼴 및 텍스트 상태 API의 결과를 비교하세요.
+1. 검증을 위해 불일치를 출력하세요.
 
 ```java
 public static void getTextWidthDynamically(Path outputFile) {
@@ -259,21 +210,13 @@ public static void getTextWidthDynamically(Path outputFile) {
 }
 ```
 
-## 
-하이퍼링크 세그먼트로 텍스트 추가
+## 하이퍼링크 세그먼트로 텍스트 추가
 
+텍스트 조각의 한 부분이 웹 링크로 작동해야 하는 경우 이 예를 사용하세요.
 
-
-텍스트 조각의 한 부분이 웹 링크로 작동해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-여러 `TextSegment` 개체를 사용하여 `TextFragment`을 빌드합니다.
-1. 대상 세그먼트에 하이퍼링크와 스타일을 할당한 다음 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 여러 `TextSegment` 개체를 사용하여 `TextFragment`를 빌드하세요.
+1. 대상 세그먼트에 하이퍼링크와 스타일을 할당한 다음 문서를 저장하세요.
 
 ```java
 public static void addTextWithHyperlink(Path outputFile) {
@@ -297,21 +240,13 @@ public static void addTextWithHyperlink(Path outputFile) {
 }
 ```
 
-## 
-오른쪽에서 왼쪽으로 텍스트 추가
+## 오른쪽에서 왼쪽으로 텍스트 추가
 
+문서가 오른쪽에서 왼쪽으로 올바른 정렬로 스크립트 내용을 표시해야 하는 경우 이 예를 사용하세요.
 
-
-문서가 오른쪽에서 왼쪽으로 올바른 정렬로 스크립트 내용을 표시해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-대상 RTL 텍스트로 `TextFragment`을 만들고 해당 글꼴과 정렬을 구성합니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 대상 RTL 텍스트로 `TextFragment`를 만들고 해당 글꼴과 정렬을 구성하세요.
 1. 페이지에 추가하고 PDF를 저장하세요.
-
 
 ```java
 public static void addTextWithRtlText(Path outputFile) {
@@ -331,21 +266,13 @@ public static void addTextWithRtlText(Path outputFile) {
 }
 ```
 
-## 
-스타일이 지정된 텍스트 및 수식과 유사한 세그먼트 추가
-
-
+## 스타일이 지정된 텍스트 및 수식과 유사한 세그먼트 추가
 
 일반 텍스트와 아래 첨자 형태의 세그먼트가 하나의 출력에서 서로 다른 텍스트 상태를 사용해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-기본 스타일 조각을 만들고 도우미 세그먼트를 사용하여 수식을 구성합니다.
-1. 페이지에 두 조각을 모두 추가하고 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 기본 스타일 조각을 만들고 도우미 세그먼트를 사용하여 수식을 구성하세요.
+1. 페이지에 두 조각을 모두 추가하고 문서를 저장하세요.
 
 ```java
 public static void addTextWithFontStyling(Path outputFile) {
@@ -397,21 +324,13 @@ private static void addSegment(TextFragment formula, String text, TextState stat
 }
 ```
 
-## 
-밑줄 친 텍스트 추가
-
-
+## 밑줄 친 텍스트 추가
 
 텍스트 조각에서 눈에 띄게 밑줄 스타일을 사용해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-텍스트 조각을 만들고 글꼴과 밑줄 상태를 구성하고 위치를 설정합니다.
-1. `TextBuilder`을 추가하고 결과를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 텍스트 조각을 만들고 글꼴과 밑줄 상태를 구성하고 위치를 설정하세요.
+1. `TextBuilder`를 추가하고 결과를 저장하세요.
 
 ```java
 public static void addUnderlineText(Path outputFile) {
@@ -431,21 +350,13 @@ public static void addUnderlineText(Path outputFile) {
 }
 ```
 
-## 
-색상이 지정된 도형 위에 투명한 텍스트 추가
+## 색상이 지정된 도형 위에 투명한 텍스트 추가
 
+텍스트가 배경 그래픽 위에 투명하게 표시되어야 하는 경우 이 예를 사용하세요.
 
-
-텍스트가 배경 그래픽 위에 투명하게 표시되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-배경 모양을 그리고 반투명 텍스트 조각을 만듭니다.
-1. 페이지에 두 요소를 모두 추가하고 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 배경 모양을 그리고 반투명 텍스트 조각을 만드세요.
+1. 페이지에 두 요소를 모두 추가하고 문서를 저장하세요.
 
 ```java
 public static void addTextTransparent(Path outputFile) {
@@ -469,21 +380,13 @@ public static void addTextTransparent(Path outputFile) {
 }
 ```
 
-## 
-보이지 않는 텍스트 추가
+## 보이지 않는 텍스트 추가
 
+눈에 보이는 렌더링 없이 검색 가능하거나 숨겨진 텍스트가 있어야 하는 경우 이 예를 사용하세요.
 
-
-눈에 보이는 렌더링 없이 검색 가능하거나 숨겨진 텍스트가 있어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-보이는 텍스트 조각과 보이지 않는 플래그가 활성화된 두 번째 조각을 추가합니다.
-1. 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 보이는 텍스트 조각과 보이지 않는 플래그가 활성화된 두 번째 조각을 추가하세요.
+1. 문서를 저장하세요.
 
 ```java
 public static void addTextInvisible(Path outputFile) {
@@ -504,21 +407,13 @@ public static void addTextInvisible(Path outputFile) {
 }
 ```
 
-## 
-직사각형 테두리가 있는 텍스트 추가
+## 직사각형 테두리가 있는 텍스트 추가
 
+텍스트를 경계 사각형과 함께 그려야 하는 경우 이 예를 사용하세요.
 
-
-텍스트를 경계 사각형과 함께 그려야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-`TextFragment` 스타일을 만들고 텍스트 직사각형 테두리 그리기를 활성화합니다.
-1. `TextBuilder`을 추가하고 PDF를 저장하세요.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. `TextFragment` 스타일을 만들고 텍스트 직사각형 테두리 그리기를 활성화하세요.
+1. `TextBuilder`를 추가하고 PDF를 저장하세요.
 
 ```java
 public static void addTextBorder(Path outputFile) {
@@ -542,21 +437,13 @@ public static void addTextBorder(Path outputFile) {
 }
 ```
 
-## 
-취소선 텍스트 추가
-
-
+## 취소선 텍스트 추가
 
 텍스트에 취소선 서식을 사용해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-취소선이 활성화된 스타일이 지정된 텍스트 조각을 만듭니다.
-1. 페이지에 추가하고 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 취소선이 활성화된 스타일이 지정된 텍스트 조각을 만드세요.
+1. 페이지에 추가하고 문서를 저장하세요.
 
 ```java
 public static void addStrikeoutText(Path outputFile) {
@@ -580,21 +467,13 @@ public static void addStrikeoutText(Path outputFile) {
 }
 ```
 
-## 
-텍스트에 축 그라데이션 음영 적용
-
-
+## 텍스트에 축 그라데이션 음영 적용
 
 텍스트가 단색 대신 선형 그라데이션 채우기를 사용해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-텍스트 조각을 만들고 전경색에 축 그라데이션을 할당합니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 텍스트 조각을 만들고 전경색에 축 그라데이션을 할당하세요.
 1. 페이지에 추가하고 PDF를 저장하세요.
-
 
 ```java
 public static void applyGradientAxialShadingToText(Path outputFile) {
@@ -616,21 +495,13 @@ public static void applyGradientAxialShadingToText(Path outputFile) {
 }
 ```
 
-## 
-텍스트에 방사형 그라데이션 음영 적용
-
-
+## 텍스트에 방사형 그라데이션 음영 적용
 
 텍스트에 방사형 그래디언트 채우기를 사용해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-텍스트 조각을 만들고 전경색에 방사형 그래디언트를 할당합니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 텍스트 조각을 만들고 전경색에 방사형 그래디언트를 할당하세요.
 1. 페이지에 추가하고 문서를 저장하세요.
-
 
 ```java
 public static void applyGradientRadialShadingToText(Path outputFile) {
@@ -652,21 +523,13 @@ public static void applyGradientRadialShadingToText(Path outputFile) {
 }
 ```
 
-## 
-인라인 HTML 스타일 형식의 텍스트 추가
-
-
+## 인라인 HTML 스타일 형식의 텍스트 추가
 
 HTML 마크업을 통해 위 첨자와 아래 첨자 형식을 삽입해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-필요한 인라인 마크업을 사용하여 `HtmlFragment`을 만듭니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 필요한 인라인 마크업을 사용하여 `HtmlFragment`를 만드세요.
 1. 페이지에 추가하고 PDF를 저장하세요.
-
 
 ```java
 public static void addTextHtmlFragment(Path outputFile) {
@@ -680,21 +543,13 @@ public static void addTextHtmlFragment(Path outputFile) {
 }
 ```
 
-## 
-LaTeX 텍스트 조각 추가
-
-
+## LaTeX 텍스트 조각 추가
 
 수학 또는 TeX 형식의 콘텐츠를 PDF 내에서 렌더링해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-필수 표현식을 사용하여 `TeXFragment`을 생성합니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. 필수 표현식을 사용하여 `TeXFragment`를 생성하세요.
 1. 페이지에 추가하고 문서를 저장하세요.
-
 
 ```java
 public static void addTextLatexFragment(Path outputFile) {
@@ -709,21 +564,13 @@ public static void addTextLatexFragment(Path outputFile) {
 }
 ```
 
-## 
-풍부한 HTML 조각 추가
-
-
+## 풍부한 HTML 조각 추가
 
 페이지가 제목, 단락, 링크와 같은 구조화된 HTML 콘텐츠를 렌더링해야 하는 경우 이 예제를 사용하세요.
 
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-HTML 콘텐츠 문자열을 준비하고 `HtmlFragment`을 만듭니다.
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. HTML 콘텐츠 문자열을 준비하고 `HtmlFragment`를 만드세요.
 1. 페이지에 추가하고 PDF를 저장하세요.
-
 
 ```java
 public static void addHtmlFragment(Path outputFile) {
@@ -742,21 +589,13 @@ public static void addHtmlFragment(Path outputFile) {
 }
 ```
 
-## 
-재정의된 텍스트 상태로 HTML 조각 추가
+## 재정의된 텍스트 상태로 HTML 조각 추가
 
+가져온 HTML 콘텐츠가 제어된 글꼴 및 색상 설정을 상속해야 하는 경우 이 예를 사용하세요.
 
-
-가져온 HTML 컨텐츠가 제어된 글꼴 및 색상 설정을 상속해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF 문서를 만들고 페이지를 추가합니다.
-
-1. 
-HTML 콘텐츠를 준비하고 `HtmlFragment`을 만듭니다.
-1. 사용자 정의 `TextState`을 할당하고 조각을 추가한 다음 문서를 저장합니다.
-
+1. 새 PDF 문서를 만들고 페이지를 추가하세요.
+1. HTML 콘텐츠를 준비하고 `HtmlFragment`를 만드세요.
+1. 사용자 정의 `TextState`를 할당하고 조각을 추가한 다음 문서를 저장하세요.
 
 ```java
 public static void addHtmlFragmentOverrideTextState(Path outputFile) {
@@ -781,21 +620,13 @@ public static void addHtmlFragmentOverrideTextState(Path outputFile) {
 }
 ```
 
-## 
-파일에서 로드된 사용자 정의 글꼴 사용
+## 파일에서 로드된 사용자 정의 글꼴 사용
 
+텍스트가 글꼴 파일 경로에서 직접 로드된 글꼴을 사용해야 하는 경우 이 예를 사용하세요.
 
-
-텍스트가 글꼴 파일 경로에서 직접 로드된 글꼴을 사용해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-사용자 정의 글꼴 파일 경로를 확인합니다.
-
-1. 
-텍스트 조각을 만들고 `FontRepository.openFont`을 통해 글꼴을 로드합니다.
-1. 글꼴 설정을 적용하고 문서를 저장합니다.
-
+1. 사용자 정의 글꼴 파일 경로를 확인하세요.
+1. 텍스트 조각을 만들고 `FontRepository.openFont`를 통해 글꼴을 로드하세요.
+1. 글꼴 설정을 적용하고 문서를 저장하세요.
 
 ```java
 public static void useCustomFontFromFile(Path outputFile) {
@@ -816,20 +647,13 @@ public static void useCustomFontFromFile(Path outputFile) {
 }
 ```
 
-## 
-스트림에서 로드된 사용자 정의 글꼴 사용
+## 스트림에서 로드된 사용자 정의 글꼴 사용
 
+사용자 정의 글꼴을 스트림에서 열고 PDF에 포함해야 하는 경우 이 예를 사용하세요.
 
-
-사용자 정의 글꼴을 스트림에서 열고 PDF에 포함해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-글꼴 파일을 스트림으로 열고 `FontRepository`을 사용하여 로드합니다.
-
-1. 
-텍스트 조각을 만들고 포함된 글꼴을 할당합니다.
-1. 페이지에 조각을 추가하고 문서를 저장합니다.
+1. 글꼴 파일을 스트림으로 열고 `FontRepository`을 사용하여 로드하세요.
+1. 텍스트 조각을 만들고 포함된 글꼴을 할당하세요.
+1. 페이지에 조각을 추가하고 문서를 저장하세요.
 
 ```java
 public static void useCustomFontFromStream(Path outputFile) throws Exception {

@@ -3,9 +3,9 @@ title: Java에서 PDF에 테이블 추가
 linktitle: 테이블 추가
 type: docs
 weight: 10
-url: /java/adding-tables/
+url: /ko/java/adding-tables/
 description: Java로 기존 PDF 문서에 테이블을 추가하고 구성하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 
 ---
 Aspose.PDF for Java는 레이아웃 및 콘텐츠 사용자 정의가 포함된 테이블을 구축하기 위한 풍부한 `Table` API를 제공합니다.
 
+## 기본 테이블 만들기
 
-## 
-기본 테이블 만들기
+균일한 테두리와 텍스트 셀이 있는 간단한 테이블을 추가해야 할 때 이 예를 사용하세요.
 
-
-
-균일한 테두리와 텍스트 셀이 있는 간단한 테이블을 추가해야 할 때 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 생성하고 테두리를 구성합니다.
-1. 행과 셀을 추가하고 페이지에 표를 첨부한 후 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 테두리를 구성하세요.
+1. 행과 셀을 추가하고 페이지에 표를 첨부한 후 문서를 저장하세요.
 
 ```java
 public static void createTable(Path outputFile) {
@@ -51,21 +42,13 @@ public static void createTable(Path outputFile) {
 }
 ```
 
-## 
-행 범위와 열 범위가 있는 셀 추가
-
-
+## 행 범위와 열 범위가 있는 셀 추가
 
 테이블의 행이나 열에 걸쳐 셀을 병합해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 만들고 행을 추가하세요.
-1. 대상 셀에서 `ColSpan` 및 `RowSpan`을 구성한 다음 PDF를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 행을 추가하세요.
+1. 대상 셀에서 `ColSpan` 및 `RowSpan`을 구성한 다음 PDF를 저장하세요.
 
 ```java
 public static void addRowspanOrColspan(Path outputFile) {
@@ -110,21 +93,13 @@ public static void addRowspanOrColspan(Path outputFile) {
 }
 ```
 
-## 
-표 테두리 및 셀 패딩 추가
+## 표 테두리 및 셀 패딩 추가
 
+테두리, 안쪽 여백 및 셀 줄 바꿈 동작을 구성해야 하는 경우 이 예를 사용하세요.
 
-
-테두리, 안쪽 여백 및 셀 줄 바꿈 동작을 구성해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 생성하고 너비, 테두리, 안쪽 여백을 설정하세요.
-1. 행을 추가하고 결과 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 너비, 테두리, 안쪽 여백을 설정하세요.
+1. 행을 추가하고 결과 문서를 저장하세요.
 
 ```java
 public static void addBorders(Path outputFile) {
@@ -153,21 +128,13 @@ public static void addBorders(Path outputFile) {
 }
 ```
 
-## 
-자동 맞춤 테이블 레이아웃 활성화
+## 자동 맞춤 테이블 레이아웃 활성화
 
+테이블이 사용 가능한 페이지 너비에 맞게 자동으로 조정되어야 하는 경우 이 예를 사용하세요.
 
-
-테이블이 사용 가능한 페이지 너비에 맞게 자동으로 조정되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[테이블](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 `ColumnAdjustment.AutoFitToWindow`을 설정합니다.
-1. 샘플 행을 추가하고 PDF를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 `ColumnAdjustment.AutoFitToWindow`을 설정하세요.
+1. 샘플 행을 추가하고 PDF를 저장하세요.
 
 ```java
 public static void autoFit(Path outputFile) {
@@ -194,21 +161,13 @@ public static void autoFit(Path outputFile) {
 }
 ```
 
-## 
-표 셀 안에 이미지 추가
-
-
+## 표 셀 안에 이미지 추가
 
 테이블의 셀 중 하나 내부에 래스터 이미지 콘텐츠를 표시해야 하는 경우 이 예를 사용합니다.
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 만들고 텍스트 및 이미지 셀이 포함된 행을 추가하세요.
-1. [이미지](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) 크기를 설정하고 문서를 저장하세요.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 텍스트 및 이미지 셀이 포함된 행을 추가하세요.
+1. [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) 크기를 설정하고 문서를 저장하세요.
 
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
@@ -231,21 +190,13 @@ public static void addImage(Path imageFile, Path outputFile) {
 }
 ```
 
-## 
-표 셀 안에 SVG 이미지 추가
-
-
+## 표 셀 안에 SVG 이미지 추가
 
 테이블이 SVG 파일을 행 단위로 렌더링해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[테이블](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 SVG 파일을 반복합니다.
-1. 이미지당 행을 하나씩 추가하고 SVG [이미지](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/)를 구성한 후 PDF를 저장하세요.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 SVG 파일을 반복하세요.
+1. 이미지당 행을 하나씩 추가하고 SVG [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/)를 구성한 후 PDF를 저장하세요.
 
 ```java
 public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
@@ -269,21 +220,13 @@ public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
 }
 ```
 
-## 
-테이블 셀에 HTML 조각 추가
+## 테이블 셀에 HTML 조각 추가
 
+테이블 내용에 인라인 HTML 형식이 포함되어야 하는 경우 이 예를 사용하세요.
 
-
-테이블 내용에 인라인 HTML 형식이 포함되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 생성하고 테두리를 구성합니다.
-1. [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) 개체를 셀에 추가하고 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 테두리를 구성하세요.
+1. [`HtmlFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) 개체를 셀에 추가하고 문서를 저장하세요.
 
 ```java
 public static void addHtmlFragments(Path outputFile) {
@@ -304,21 +247,13 @@ public static void addHtmlFragments(Path outputFile) {
 }
 ```
 
-## 
-테이블 셀에 LaTeX 조각 추가
+## 테이블 셀에 LaTeX 조각 추가
 
+테이블 내용이 TeX 또는 LaTeX 표현식을 렌더링해야 하는 경우 이 예를 사용하세요.
 
-
-테이블 내용이 TeX 또는 LaTeX 표현식을 렌더링해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-테두리가 있는 [표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 만듭니다.
-1. [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 개체를 셀에 추가하고 출력 파일을 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. 테두리가 있는 [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만드세요.
+1. [`TeXFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 개체를 셀에 추가하고 출력 파일을 저장하세요.
 
 ```java
 public static void addLatexFragments(Path outputFile) {
@@ -339,21 +274,13 @@ public static void addLatexFragments(Path outputFile) {
 }
 ```
 
-## 
-새 페이지에 표를 강제 적용
+## 새 페이지에 표를 강제 적용
 
+큰 테이블 다음에 두 번째 테이블이 별도의 페이지에서 시작되어야 하는 경우 이 예를 사용하세요.
 
-
-큰 테이블 다음에 두 번째 테이블이 별도의 페이지에서 시작되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지 설정을 구성합니다.
-
-1. 
-첫 번째 큰 [테이블](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 페이지에 추가합니다.
-1. 두 번째 테이블을 만들고 `InNewPage`을 설정한 후 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지 설정을 구성하세요.
+1. 첫 번째 큰 [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 페이지에 추가하세요.
+1. 두 번째 테이블을 만들고 `InNewPage`를 설정한 후 문서를 저장하세요.
 
 ```java
 public static void addTableOnNewPage(Path outputFile) {
@@ -389,21 +316,13 @@ public static void addTableOnNewPage(Path outputFile) {
 }
 ```
 
-## 
-반복되는 열이 있는 수직으로 분리된 테이블 작성
+## 반복되는 열이 있는 수직으로 분리된 테이블 작성
 
+넓은 테이블이 수직으로 계속되고 키 열을 반복해야 하는 경우 이 예를 사용하세요.
 
-
-넓은 테이블이 수직으로 계속되고 키 열을 반복해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[테이블](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 반복 열로 세로 나누기를 구성합니다.
-1. 머리글과 데이터 행을 추가한 다음 문서를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 반복 열로 세로 나누기를 구성하세요.
+1. 머리글과 데이터 행을 추가한 다음 문서를 저장하세요.
 
 ```java
 public static void addTableHideBorders(Path outputFile) {
@@ -445,19 +364,12 @@ public static void addTableHideBorders(Path outputFile) {
 }
 ```
 
-## 
-테두리 및 패딩 예제 재사용
-
-
+## 테두리 및 패딩 예제 재사용
 
 여백 및 안쪽 여백 시나리오를 공유 테두리 예제에 위임해야 하는 경우 이 도우미를 사용하세요.
 
-
-1. 
-기존 테이블 테두리 및 패딩 방법을 호출합니다.
-
-1. 
-코드를 복제하지 않고 동일한 테이블 레이아웃 논리를 재사용합니다.
+1. 기존 테이블 테두리 및 패딩 방법을 호출하세요.
+1. 코드를 복제하지 않고 동일한 테이블 레이아웃 논리를 재사용하세요.
 
 ```java
 public static void addMarginsOrPadding(Path outputFile) {
@@ -467,19 +379,11 @@ public static void addMarginsOrPadding(Path outputFile) {
 
 ## 모서리가 둥근 테이블 만들기
 
-
-
 테이블에서 표준 직사각형 테두리 대신 둥근 모서리 스타일을 사용해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 생성하고 둥근 테두리 설정을 구성하세요.
-
-1. 
-테이블에 행을 추가하고 PDF를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 둥근 테두리 설정을 구성하세요.
+1. 테이블에 행을 추가하고 PDF를 저장하세요.
 
 ```java
 public static void createTableWithRoundCorner(Path outputFile) {
@@ -504,19 +408,11 @@ public static void createTableWithRoundCorner(Path outputFile) {
 
 ## 반복되는 머리글 행 추가
 
+다중 페이지 테이블이 모든 연속 페이지에서 헤더 행을 반복해야 하는 경우 이 예를 사용하세요.
 
-
-다중 페이지 테이블이 모든 연속 페이지에서 헤더 행을 반복해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-세로로 나누어진 [표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 생성하고 반복되는 행 수와 스타일을 구성합니다.
-
-1. 
-머리글 행과 데이터 행을 추가한 다음 문서를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. 세로로 나누어진 [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 생성하고 반복되는 행 수와 스타일을 구성하세요.
+1. 머리글 행과 데이터 행을 추가한 다음 문서를 저장하세요.
 
 ```java
 public static void addRepeatingRows(Path outputFile) {
@@ -562,19 +458,11 @@ public static void addRepeatingRows(Path outputFile) {
 
 ## 넓은 테이블에 반복 열 추가
 
-
-
 동일한 페이지에서 테이블이 세로로 나뉘는 동안 첫 번째 열이 반복되어야 하는 경우 이 예를 사용합니다.
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지 크기를 구성합니다.
-
-1. 
-[테이블](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 반복 열과 자동 맞춤 동작을 설정하세요.
-
-1. 
-머리글과 데이터 행을 추가한 다음 PDF를 저장하세요.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지 크기를 구성하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 반복 열과 자동 맞춤 동작을 설정하세요.
+1. 머리글과 데이터 행을 추가한 다음 PDF를 저장하세요.
 
 ```java
 public static void addRepeatingColumns(Path outputFile) {
@@ -616,19 +504,11 @@ public static void addRepeatingColumns(Path outputFile) {
 
 ## 표 행 사이에 페이지 나누기 삽입
 
+특정 테이블 행이 새 페이지에서 시작되어야 하는 경우 이 예를 사용하세요.
 
-
-특정 테이블 행이 새 페이지에서 시작되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[테이블](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 많은 행을 채웁니다.
-
-1. 
-선택한 행을 `InNewPage`으로 표시하고 문서를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 많은 행을 채우세요.
+1. 선택한 행을 `InNewPage`로 표시하고 문서를 저장하세요.
 
 ```java
 public static void insertPageBreak(Path outputFile) {
@@ -655,19 +535,11 @@ public static void insertPageBreak(Path outputFile) {
 
 ## 표 셀 내부의 텍스트 회전
 
+셀 텍스트를 다른 회전 각도로 표시해야 하는 경우 이 예를 사용하세요.
 
-
-셀 텍스트를 다른 회전 각도로 표시해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 만들고 여러 셀이 포함된 행을 추가하세요.
-
-1. 
-회전된 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 개체를 만들어 셀에 추가하고 PDF를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만들고 여러 셀이 포함된 행을 추가하세요.
+1. 회전된 [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 개체를 만들어 셀에 추가하고 PDF를 저장하세요.
 
 ```java
 public static void rotatedTextTable(Path outputFile) {

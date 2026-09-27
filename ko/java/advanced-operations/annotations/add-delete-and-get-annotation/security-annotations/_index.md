@@ -3,9 +3,9 @@ title: Java를 사용한 보안 주석
 linktitle: 보안 주석
 type: docs
 weight: 75
-url: /java/security-annotations/
-description: Java용 Aspose.PDF를 사용하여 텍스트 수정을 표시하고, 수정 주석을 적용하고, PDF 파일에서 선택한 페이지 영역을 수정하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+url: /ko/java/security-annotations/
+description: Aspose.PDF for Java를 사용하여 텍스트 수정을 표시하고, 수정 주석을 적용하고, PDF 파일에서 선택한 페이지 영역을 수정하는 방법을 알아보세요.
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 
 ---
 이 섹션의 보안 주석 작업 흐름은 중요한 PDF 콘텐츠에 대한 수정 준비 및 적용에 중점을 둡니다.
 
+## 교정 주석으로 텍스트 표시
 
-## 
-교정 주석으로 텍스트 표시
+교정이 영구적으로 적용되기 전에 교정 주석으로 일치하는 텍스트를 덮어야 하는 경우 이 예를 사용하세요.
 
-
-
-교정이 영구적으로 적용되기 전에 교정 주석으로 일치하는 텍스트를 덮어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 텍스트를 검색하고 각 일치 항목에 대해 [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/)을 만듭니다.
-1. 교정 모양을 구성하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 텍스트를 검색하고 각 일치 항목에 대해 [`RedactionAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/)을 만드세요.
+1. 교정 모양을 구성하고 문서를 저장하세요.
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
@@ -56,21 +47,13 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 }
 ```
 
-## 
-기존 수정 적용
-
-
+## 기존 수정 적용
 
 이 예에서는 페이지에 이미 존재하는 수정 주석을 영구적으로 적용합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-[AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction` 유형의 주석을 수집합니다.
-1. 수집된 각 주석에 대해 `redact()`을 호출하고 업데이트된 파일을 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction` 유형의 주석을 수집하세요.
+1. 수집된 각 주석에 대해 `redact()`를 호출하고 업데이트된 파일을 저장하세요.
 
 ```java
 public static void applyRedaction(Path inputFile, Path outputFile) {
@@ -89,21 +72,13 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-선택한 페이지 영역 수정
-
-
+## 선택한 페이지 영역 수정
 
 대상 콘텐츠가 일치하는 텍스트가 아닌 위치로 식별되는 경우 이 접근 방식을 사용합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-예를 들어 이미지 배치에서 페이지의 대상 직사각형을 감지합니다.
-1. 해당 영역에 대한 [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/)을 만들고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 예를 들어 이미지 배치에서 페이지의 대상 직사각형을 감지하세요.
+1. 해당 영역에 대한 [`RedactionAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/)을 만들고 문서를 저장하세요.
 
 ```java
 public static void redactArea(Path inputFile, Path outputFile) {
@@ -127,22 +102,11 @@ public static void redactArea(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-관련 주석 주제
+## 관련 주석 주제
 
-
-- 
-[대화형 주석](/pdf/java/interactive-annotations/)
-
-- 
-[마크업 주석](/pdf/java/markup-annotations/)
-
-- 
-[도형 주석](/pdf/java/shape-annotations/)
+- [대화형 주석](/pdf/java/interactive-annotations/)
+- [마크업 주석](/pdf/java/markup-annotations/)
+- [도형 주석](/pdf/java/shape-annotations/)
 - [텍스트 주석](/pdf/java/text-based-annotations/)
-
-- 
-[워터마크 주석](/pdf/java/watermark-annotations/)
-
-- 
-[주석 가져오기 및 내보내기](/pdf/java/import-export-annotations/)
+- [워터마크 주석](/pdf/java/watermark-annotations/)
+- [주석 가져오기 및 내보내기](/pdf/java/import-export-annotations/)

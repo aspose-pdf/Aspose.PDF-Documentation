@@ -3,9 +3,9 @@ title: Java를 통한 모양 주석
 linktitle: 모양 주석
 type: docs
 weight: 20
-url: /java/shape-annotations/
-description: Java용 Aspose.PDF를 사용하여 PDF 문서에서 정사각형, 원, 다각형 및 폴리라인 주석을 추가, 검사 및 삭제하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+url: /ko/java/shape-annotations/
+description: Aspose.PDF for Java를 사용하여 PDF 문서에서 정사각형, 원, 다각형 및 폴리라인 주석을 추가, 검사 및 삭제하는 방법을 알아보세요.
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에�
 ---
 이 섹션의 모양 주석은 정사각형, 원, 다각형, 폴리라인 및 선과 같은 기하학적 주석 유형을 다룹니다.
 
+## 정사각형, 원, 다각형 및 폴리라인 주석 추가
 
-## 
-정사각형, 원, 다각형 및 폴리라인 주석 추가
+사용자 정의 색상, 불투명도, 팝업 데이터 또는 포인트 배열을 사용하여 기하학적 주석을 배치해야 하는 경우 다음 예를 사용하세요.
 
-
-
-사용자 정의 색상, 불투명도, 팝업 데이터 또는 포인트 배열을 사용하여 기하학적 주석을 배치해야 하는 경우 다음 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-필요한 모양 주석을 생성하고 해당 직사각형, 점 및 시각적 속성을 구성합니다.
-1. 페이지에 주석을 추가하고 업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 필요한 모양 주석을 생성하고 해당 직사각형, 점 및 시각적 속성을 구성하세요.
+1. 페이지에 주석을 추가하고 업데이트된 문서를 저장하세요.
 
 ```java
 public static void squareAnnotationAdd(Path inputFile, Path outputFile) {
@@ -118,21 +109,13 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-정사각형, 원, 다각형 및 폴리라인 주석 가져오기
-
-
+## 정사각형, 원, 다각형 및 폴리라인 주석 가져오기
 
 이 예제에서는 페이지 주석 컬렉션을 검사하고 유형별로 기하학적 주석의 직사각형을 인쇄합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-페이지 주석을 반복합니다.
-1. 필수 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) 값으로 필터링하고 직사각형을 인쇄합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지 주석을 반복하세요.
+1. 필수 [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) 값으로 필터링하고 직사각형을 인쇄하세요.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -182,21 +165,13 @@ public static void polylineAnnotationGet(Path inputFile) {
 }
 ```
 
-## 
-정사각형, 원, 다각형 및 폴리라인 주석 삭제
+## 정사각형, 원, 다각형 및 폴리라인 주석 삭제
 
+특정 유형의 모양 주석을 페이지에서 제거해야 하는 경우 다음 예를 사용하세요.
 
-
-특정 유형의 모양 주석을 페이지에서 제거해야 하는 경우 다음 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-필요한 기하학적 유형의 주석을 수집합니다.
-1. 수집된 주석을 삭제하고 출력 파일을 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 필요한 기하학적 유형의 주석을 수집하세요.
+1. 수집된 주석을 삭제하고 출력 파일을 저장하세요.
 
 ```java
 public static void squareAnnotationDelete(Path inputFile, Path outputFile) {
@@ -266,21 +241,13 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-선 주석 추가
-
-
+## 선 주석 추가
 
 이 예에서는 화살표 끝, 테두리 서식 및 팝업 메모가 포함된 선 주석을 만듭니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-시작점과 끝점이 있는 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)을 만듭니다.
-1. 모양을 구성하고 팝업을 추가한 후 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 시작점과 끝점이 있는 [`LineAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)을 만드세요.
+1. 모양을 구성하고 팝업을 추가한 후 문서를 저장하세요.
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -310,21 +277,13 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-줄 주석 가져오기
-
-
+## 줄 주석 가져오기
 
 이 예에서는 선 주석을 읽고 시작 및 끝 좌표를 인쇄합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-페이지 주석을 반복하고 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`을 선택합니다.
-1. 각 일치 항목을 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)으로 전송하고 해당 좌표를 인쇄합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지 주석을 반복하고 [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`을 선택하세요.
+1. 각 일치 항목을 [`LineAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)으로 전송하고 해당 좌표를 인쇄하세요.
 
 ```java
 public static void lineAnnotationsGet(Path inputFile) {
@@ -341,21 +300,13 @@ public static void lineAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 
-줄 주석 삭제
-
-
+## 줄 주석 삭제
 
 페이지에서 줄 주석을 제거해야 하는 경우 이 방법을 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-[AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line` 유형의 주석을 수집합니다.
-1. 수집된 주석을 삭제하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line` 유형의 주석을 수집하세요.
+1. 수집된 주석을 삭제하고 문서를 저장하세요.
 
 ```java
 public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
@@ -375,22 +326,11 @@ public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-관련 주석 주제
+## 관련 주석 주제
 
-
-- 
-[대화형 주석](/pdf/java/interactive-annotations/)
-
-- 
-[마크업 주석](/pdf/java/markup-annotations/)
-
-- 
-[보안 주석](/pdf/java/security-annotations/)
+- [대화형 주석](/pdf/java/interactive-annotations/)
+- [마크업 주석](/pdf/java/markup-annotations/)
+- [보안 주석](/pdf/java/security-annotations/)
 - [텍스트 주석](/pdf/java/text-based-annotations/)
-
-- 
-[워터마크 주석](/pdf/java/watermark-annotations/)
-
-- 
-[주석 가져오기 및 내보내기](/pdf/java/import-export-annotations/)
+- [워터마크 주석](/pdf/java/watermark-annotations/)
+- [주석 가져오기 및 내보내기](/pdf/java/import-export-annotations/)

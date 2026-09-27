@@ -1,11 +1,11 @@
 ---
 title: Java에서 PDF 연산자로 작업
-linktitle: 운영자와 협력
+linktitle: 연산자 작업
 type: docs
 weight: 90
-url: /java/working-with-operators/
+url: /ko/java/working-with-operators/
 description: 콘텐츠 스트림 조작, 이미지 배치, XForm 재사용 및 그래픽 정리를 위해 Java에서 하위 수준 PDF 연산자를 사용하는 방법을 알아보세요.
-lastmod: "2026-06-25"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,38 +15,21 @@ Abstract: 이 문서에서는 Aspose.PDF for Java에서 하위 수준 PDF 연산
 ---
 ## PDF 연산자 및 사용법 소개
 
-
-
 연산자는 페이지에 그래픽 모양을 그리는 등 수행해야 할 일부 작업을 지정하는 PDF 키워드입니다. 연산자 키워드는 초기 사선 문자(2Fh)가 없다는 점에서 명명된 개체와 구별됩니다. 연산자는 콘텐츠 스트림 내에서만 의미가 있습니다.
-
-
 
 콘텐츠 스트림은 페이지에 그려질 그래픽 요소를 설명하는 지침으로 데이터가 구성된 PDF 스트림 개체입니다. PDF 연산자에 대한 자세한 내용은 [PDF 사양](https://opensource.adobe.com/dc-acrobat-sdk-docs/)에서 확인할 수 있습니다.
 
+명시적 행렬 수학을 사용하여 이미지 배치, XForm을 통해 동일한 그래픽 여러 번 재사용, 페이지에서 하위 수준 그리기 지침 삭제 등 Java에서 PDF 콘텐츠 스트림을 직접 제어해야 하는 경우 이 페이지를 사용하세요.
 
-
-명시적 행렬 수학을 사용하여 이미지 배치, XForm을 통해 동일한 그래픽 여러 번 재사용, 페이지에서 하위 수준 그리기 지침 삭제 등 Java에서 PDF 콘텐츠 스트림을 직접 제어해야 하는 경우 이 페이지를 사용하십시오.
-
-
-## 
-PDF 연산자로 이미지 추가
+## PDF 연산자로 이미지 추가
 
 더 높은 수준의 레이아웃 API를 통하지 않고 콘텐츠 스트림 수준에서 이미지 배치를 정확하게 제어해야 하는 경우 낮은 수준 연산자를 사용하세요.
 
-
-1. 
-[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 열고 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)을 가져옵니다.
-
-1. 
-페이지 리소스에 입력 이미지 스트림을 추가하고 반환된 리소스 이름을 유지합니다.
-
-1. 
-대상 영역을 정의하는 [사각형](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)을 만들고 그 경계에서 [행렬](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/)을 만듭니다.
-
-1. 
-현재 그래픽 상태를 유지하려면 [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/)를 사용하고, 이미지를 배치하려면 [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/)를 사용하고, 이미지를 그리려면 [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/)를 사용하고, 이전 상태를 복원하려면 [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/)를 사용하세요.
-1. 업데이트된 PDF 문서를 저장합니다.
-
+1. [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 열고 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져오세요.
+1. 페이지 리소스에 입력 이미지 스트림을 추가하고 반환된 리소스 이름을 유지하세요.
+1. 대상 영역을 정의하는 [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)을 만들고 그 경계에서 [`Matrix`](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/)를 만드세요.
+1. 현재 그래픽 상태를 유지하려면 [`GSave`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/)를 사용하고, 이미지를 배치하려면 [`ConcatenateMatrix`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/)를 사용하고, 이미지를 그리려면 [`Do`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/)를 사용하고, 이전 상태를 복원하려면 [`GRestore`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/)를 사용하세요.
+1. 업데이트된 PDF 문서를 저장하세요.
 
 ```java
 public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -75,27 +58,16 @@ public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Pat
 }
 ```
 
-## 
-페이지에 재사용 가능한 XForm 콘텐츠 그리기
-
-
+## 페이지에 재사용 가능한 XForm 콘텐츠 그리기
 
 PDF 파일의 리소스를 복제하지 않고 동일한 이미지나 그래픽을 두 번 이상 렌더링해야 하는 경우 이 접근 방식을 사용합니다.
 
-
-1. 
-[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 소스 PDF를 열고 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져온 다음 해당 [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/)에 액세스하세요.
-
-1. 
-기존 페이지 콘텐츠를 [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) 및 [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/)로 래핑하여 나중에 변환 시 원본 콘텐츠 스트림으로 유출되지 않도록 하세요.
-1. Create an [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) resource, add the image to the form resources, and use [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) plus [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) to draw the image inside the form.
-
-1. 
-Place the same form at multiple page coordinates by adding a translation matrix and executing the form name with the `Do` operator.
-
-1. 
-Restore the graphics state and save the output PDF.
-
+1. [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 소스 PDF를 열고 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져온 다음 해당 [`OperatorCollection`](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/)에 액세스하세요.
+1. 기존 페이지 콘텐츠를 [`GSave`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) 및 [`GRestore`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/)로 래핑하여 나중에 변환 시 원본 콘텐츠 스트림으로 유출되지 않도록 하세요.
+1. [`XForm`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) 리소스를 만들고 양식 리소스에 이미지를 추가하세요.
+1. [`ConcatenateMatrix`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/)와 [`Do`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/)를 사용하여 양식 안에 이미지를 그리세요.
+1. 이동 행렬을 추가하고 `Do` 연산자로 양식을 실행하여 같은 양식을 페이지의 여러 좌표에 배치하세요.
+1. 그래픽 상태를 복원하고 출력 PDF를 저장하세요.
 
 ```java
 public static void drawXFormOnPage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -134,25 +106,15 @@ private static void addFormAt(OperatorCollection pageContents, String formName, 
 }
 ```
 
-## 
-Remove graphics operators from a page
+## 페이지에서 그래픽 연산자 제거
 
+페이지의 콘텐츠 스트림에서 벡터 그리기 연산자를 직접 제거해야 하는 경우 이 예제를 사용하세요.
 
-
-Use this example when a page contains vector drawing operators that should be removed directly from the content stream.
-
-1. [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 열고 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)을 가져옵니다.
-
-1. 
-페이지 콘텐츠 연산자를 반복하고 [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/) 및 [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/)의 인스턴스를 수집합니다.
-
-1. 
-페이지 콘텐츠에서 수집된 연산자를 삭제하고 업데이트된 PDF를 저장합니다.
-
-
+1. [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 열고 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져오세요.
+1. 페이지 콘텐츠 연산자를 반복하고 [`Stroke`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [`ClosePathStroke`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/) 및 [`Fill`](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/)의 인스턴스를 수집하세요.
+1. 페이지 콘텐츠에서 수집된 연산자를 삭제하고 업데이트된 PDF를 저장하세요.
 
 이 기술은 대상 그리기 지침만 제거합니다. 페이지에 관련 텍스트 레이블이나 기타 비그래픽 연산자도 포함되어 있는 경우 해당 항목은 콘텐츠 스트림에 남아 있으며 별도의 정리 단계가 필요할 수 있습니다.
-
 
 ```java
 public static void removeGraphicsObjects(Path inputFile, Path outputFile) {
@@ -172,16 +134,9 @@ public static void removeGraphicsObjects(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-관련 주제
+## 관련 주제
 
 - [Java의 고급 PDF 작업](/pdf/java/advanced-operations/)
-
-- 
-[Java를 사용하여 PDF의 이미지 작업](/pdf/java/working-with-images/)
-
-- 
-[Java에서 PDF 페이지 작업](/pdf/java/working-with-pages/)
-
-- 
-[Java에서 벡터 그래픽 작업](/pdf/java/working-with-vector-graphics/)
+- [Java를 사용하여 PDF의 이미지 작업](/pdf/java/working-with-images/)
+- [Java에서 PDF 페이지 작업](/pdf/java/working-with-pages/)
+- [Java에서 벡터 그래픽 작업](/pdf/java/working-with-vector-graphics/)

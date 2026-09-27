@@ -3,9 +3,9 @@ title: Java를 사용하여 주석 가져오기 및 내보내기
 linktitle: 주석 가져오기 및 내보내기
 type: docs
 weight: 80
-url: /java/import-export-annotations/
-description: Java용 Aspose.PDF를 사용하여 한 PDF 문서의 주석을 다른 PDF 문서로 복사하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+url: /ko/java/import-export-annotations/
+description: Aspose.PDF for Java를 사용하여 한 PDF 문서의 주석을 다른 PDF 문서로 복사하는 방법을 알아보세요.
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,12 @@ Abstract: 이 문서에서는 소스 PDF에서 주석을 복사하고 Aspose.PDF
 ---
 ## 한 PDF에서 다른 PDF로 주석 복사
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가합니다.
-
-1. 
-대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에 각 [주석](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/)을 추가합니다.
-
-1. 
-대상 페이지의 [주석](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) 항목을 읽거나 반복합니다.
-1. 업데이트된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
-
-1. 
-첫 번째 원본 페이지에 [주석](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) 항목을 열거하고 각 항목을 대상 페이지에 추가합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에 각 [`Annotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/)을 추가하세요.
+1. 대상 페이지의 [`Annotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) 항목을 읽거나 반복하세요.
+1. 업데이트된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
+1. 첫 번째 원본 페이지에 [`Annotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) 항목을 열거하고 각 항목을 대상 페이지에 추가하세요.
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

@@ -3,9 +3,9 @@ title: Java에서 PDF 페이지 삭제
 linktitle: PDF 페이지 삭제
 type: docs
 weight: 80
-url: /java/delete-pages/
+url: /ko/java/delete-pages/
 description: Java에서 PDF 파일의 페이지를 삭제하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,12 +17,11 @@ PDF에서 하나 이상의 페이지를 제거해야 하는 경우 문서 페이
 
 ## 단일 페이지 삭제
 
-색인별로 한 페이지를 제거해야 할 때 이 예를 사용하십시오.
+색인별로 한 페이지를 제거해야 할 때 이 예를 사용하세요.
 
-1. 원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-1. 페이지 컬렉션에서 대상 페이지를 삭제합니다.
-1. 업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지 컬렉션에서 대상 페이지를 삭제하세요.
+1. 업데이트된 문서를 저장하세요.
 
 ```java
 public static void deletePage(Path inputFile, Path outputFile) {
@@ -33,20 +32,13 @@ public static void deletePage(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-여러 페이지 삭제
+## 여러 페이지 삭제
 
+한 번의 작업으로 여러 페이지를 제거해야 하는 경우 이 예를 사용하세요.
 
-
-한 번의 작업으로 여러 페이지를 제거해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-페이지 컬렉션에서 삭제할 페이지 인덱스를 전달합니다.
-1. 수정된 PDF를 저장합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지 컬렉션에서 삭제할 페이지 인덱스를 전달하세요.
+1. 수정된 PDF를 저장하세요.
 
 ```java
 public static void deleteBunchPages(Path inputFile, Path outputFile) {

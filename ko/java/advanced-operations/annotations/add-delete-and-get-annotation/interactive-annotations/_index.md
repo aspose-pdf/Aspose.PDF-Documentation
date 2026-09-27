@@ -3,9 +3,9 @@ title: Java를 사용한 대화형 주석
 linktitle: 대화형 주석
 type: docs
 weight: 60
-url: /java/interactive-annotations/
-description: Java용 Aspose.PDF를 사용하여 PDF 문서에서 링크 주석을 추가, 검사 및 삭제하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+url: /ko/java/interactive-annotations/
+description: Aspose.PDF for Java를 사용하여 PDF 문서에서 링크 주석을 추가, 검사 및 삭제하는 방법을 알아보세요.
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 파일의 
 ---
 이 섹션의 대화형 주석은 PDF 뷰어 내부의 사용자 작업에 응답하는 링크 및 버튼 기반 작업 흐름에 중점을 둡니다.
 
+## 링크 주석 추가
 
-## 
-링크 주석 추가
+페이지에 있는 텍스트 위에 클릭 가능한 링크를 배치해야 할 때 이 예를 사용하세요.
 
-
-
-페이지에 있는 텍스트 위에 클릭 가능한 링크를 배치해야 할 때 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 텍스트 조각을 찾아 해당 사각형 위에 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)을 만듭니다.
-1. [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/)을 할당하고 업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 텍스트 조각을 찾아 해당 사각형 위에 [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)을 만드세요.
+1. [`GoToURIAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/)을 할당하고 업데이트된 문서를 저장하세요.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -50,21 +41,13 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-링크 주석 받기
-
-
+## 링크 주석 받기
 
 이 예에서는 페이지 주석 컬렉션을 검색하고 각 링크 주석의 위치를 보고합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 페이지의 주석을 반복합니다.
-1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`으로 주석을 필터링하고 해당 직사각형을 인쇄합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 페이지의 주석을 반복하세요.
+1. [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`으로 주석을 필터링하고 해당 직사각형을 인쇄하세요.
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -78,21 +61,13 @@ public static void linkGet(Path inputFile) {
 }
 ```
 
-## 
-링크 주석 삭제
+## 링크 주석 삭제
 
+기존 링크 주석을 페이지에서 제거해야 하는 경우 이 접근 방식을 사용하세요.
 
-
-기존 링크 주석을 페이지에서 제거해야 하는 경우 이 접근 방식을 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-유형이 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`인 주석을 수집합니다.
-1. 수집된 주석을 삭제하고 출력 파일을 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 유형이 [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`인 주석을 수집하세요.
+1. 수집된 주석을 삭제하고 출력 파일을 저장하세요.
 
 ```java
 public static void linkDelete(Path inputFile, Path outputFile) {
@@ -111,21 +86,13 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-선 주석 추가
-
-
+## 선 주석 추가
 
 이 예에서는 화살표 스타일, 테두리 설정 및 팝업 메모를 사용하여 대화형 선 주석을 만듭니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-시작점과 끝점이 있는 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)을 만듭니다.
-1. 모양과 팝업 주석을 구성한 다음 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 시작점과 끝점이 있는 [`LineAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)을 만드세요.
+1. 모양과 팝업 주석을 구성한 다음 문서를 저장하세요.
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -156,21 +123,13 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-탐색 버튼 추가
+## 탐색 버튼 추가
 
+대화형 탐색을 위해 PDF에 이전 페이지 및 다음 페이지 버튼이 포함되어야 하는 경우 이 예를 사용하세요.
 
-
-대화형 탐색을 위해 PDF에 이전 페이지 및 다음 페이지 버튼이 포함되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 문서에 필요한 페이지가 있는지 확인하세요.
-
-1. 
-사전 정의된 탐색 작업을 사용하여 [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) 컨트롤을 만듭니다.
-1. 양식 컬렉션에 버튼을 추가하고 업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 문서에 필요한 페이지가 있는지 확인하세요.
+1. 사전 정의된 탐색 작업을 사용하여 [`ButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) 컨트롤을 만드세요.
+1. 양식 컬렉션에 버튼을 추가하고 업데이트된 문서를 저장하세요.
 
 ```java
 public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
@@ -199,20 +158,13 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-인쇄 버튼 추가
-
-
+## 인쇄 버튼 추가
 
 이 예제에서는 사용자가 클릭할 때 인쇄 명령을 트리거하는 버튼을 만듭니다.
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
-
-1. 
-[ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/)를 생성하고 사전 정의된 인쇄 작업을 할당합니다.
-1. 버튼 테두리와 배경을 구성하고 양식에 추가한 후 문서를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 페이지를 추가하세요.
+1. [`ButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/)를 생성하고 사전 정의된 인쇄 작업을 할당하세요.
+1. 버튼 테두리와 배경을 구성하고 양식에 추가한 후 문서를 저장하세요.
 
 ```java
 public static void printButtonAdd(Path outputFile) {

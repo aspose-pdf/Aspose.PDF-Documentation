@@ -3,9 +3,9 @@ title: Java에서 PDF 아티팩트 계산
 linktitle: 유물 계산
 type: docs
 weight: 40
-url: /java/counting-artifacts/
+url: /ko/java/counting-artifacts/
 description: Aspose.PDF와 함께 Java를 사용하여 PDF 문서의 페이지 매김 아티팩트를 검사하고 계산하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,19 +15,11 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 
 ---
 ## 페이지의 페이지 매기기 아티팩트 계산
 
-
-
 페이지의 기본 페이지 매기기 아티팩트 하위 유형을 빠르게 계산해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에서 [아티팩트](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) 컬렉션을 읽어옵니다.
-
-1. 
-페이지 [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) 컬렉션을 반복하고 보고해야 하는 각 페이지 매김 하위 유형의 수를 계산합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에서 [`Artifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) 컬렉션을 읽어오세요.
+1. 페이지 [`Artifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) 컬렉션을 반복하고 보고해야 하는 각 페이지 매김 하위 유형의 수를 계산하세요.
 
 ```java
 public static void countPdfArtifacts(Path inputFile) {

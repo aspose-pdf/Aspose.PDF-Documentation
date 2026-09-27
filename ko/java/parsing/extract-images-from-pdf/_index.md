@@ -3,9 +3,9 @@ title: Java를 사용하여 PDF에서 이미지 추출
 linktitle: PDF에서 이미지 추출
 type: docs
 weight: 20
-url: /java/extract-images-from-the-pdf-file/
+url: /ko/java/extract-images-from-the-pdf-file/
 description: Aspose.PDF for Java를 사용하여 PDF 파일에서 포함된 이미지를 추출하는 방법을 알아보세요.
-lastmod: "2026-06-16"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,18 +15,10 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에�
 ---
 포함된 그래픽을 재사용하거나, 문서 자산을 검사하거나, 다운스트림 처리를 위해 이미지를 내보내야 하는 경우 PDF 페이지에서 이미지를 추출하세요.
 
-
-1. 
-[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 열고 추출된 이미지 파일의 출력 스트림을 엽니다.
-
-1. 
-문서에서 대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져오고 해당 `Resources.Images` 컬렉션에 액세스합니다.
-
-1. 
-해당 이미지 컬렉션에서 필요한 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) 개체를 인덱스별로 검색합니다.
-
-1. 
-`image.save(outputImage)`을 호출하여 추출된 이미지 바이트를 대상 스트림에 씁니다.
+1. [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 인스턴스에서 소스 PDF를 열고 추출된 이미지 파일의 출력 스트림을 여세요.
+1. 문서에서 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져오고 해당 `Resources.Images` 컬렉션에 액세스하세요.
+1. 해당 이미지 컬렉션에서 필요한 [`XImage`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) 개체를 인덱스별로 검색하세요.
+1. `image.save(outputImage)`를 호출하여 추출된 이미지 바이트를 대상 스트림에 쓰세요.
 
 ```java
 public static void extractImage(Path inputFile, Path outputFile) throws Exception {

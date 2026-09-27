@@ -3,9 +3,9 @@ title: Java에서 PDF 페이지 추출
 linktitle: PDF 페이지 추출
 type: docs
 weight: 80
-url: /java/extract-pages/
+url: /ko/java/extract-pages/
 description: Java에서 단일 또는 여러 PDF 페이지를 새 파일로 추출하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 파일에�
 ---
 Aspose.PDF for Java를 사용하면 선택한 페이지를 새 대상 문서로 복사할 수 있습니다.
 
-
-## 
-단일 페이지 추출
-
-
+## 단일 페이지 추출
 
 소스 PDF의 한 페이지를 별도의 문서로 저장해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 문서를 만듭니다.
-
-1. 
-대상 페이지를 대상 페이지 컬렉션에 복사합니다.
-1. 새 PDF를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 문서를 만드세요.
+1. 대상 페이지를 대상 페이지 컬렉션에 복사하세요.
+1. 새 PDF를 저장하세요.
 
 ```java
 public static void extractPage(Path inputFile, Path outputFile) {
@@ -42,20 +33,13 @@ public static void extractPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-여러 페이지 추출
+## 여러 페이지 추출
 
+여러 페이지를 별도의 PDF로 복사해야 하는 경우 이 예를 사용하세요.
 
-
-여러 페이지를 별도의 PDF로 복사해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 문서를 만듭니다.
-
-1. 
-선택한 페이지 인덱스를 반복하여 대상에 추가합니다.
-1. 추출된 페이지 문서를 저장합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 문서를 만드세요.
+1. 선택한 페이지 인덱스를 반복하여 대상에 추가하세요.
+1. 추출된 페이지 문서를 저장하세요.
 
 ```java
 public static void extractBunchPages(Path inputFile, Path outputFile) {

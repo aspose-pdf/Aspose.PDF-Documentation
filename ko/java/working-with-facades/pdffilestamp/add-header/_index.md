@@ -3,41 +3,29 @@ title: PDF에 헤더 추가
 linktitle: PDF에 헤더 추가
 type: docs
 weight: 20
-url: /java/add-header/
+url: /ko/java/add-header/
 description: PdfFileStamp 파사드를 사용하여 Java에서 PDF 페이지에 텍스트 및 이미지 헤더를 추가하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Java에서 PDF에 텍스트 및 이미지 헤더 추가
-Abstract: PdfFileStamp 파사드를 사용하여 Java용 Aspose.PDF를 사용하여 PDF 문서에 헤더 내용을 추가하는 방법을 알아보세요. Java 예제는 일반 텍스트 헤더, 스트림에서 로드된 이미지 헤더, 명시적인 여백 값이 있는 스타일 헤더를 다룹니다.
+Abstract: PdfFileStamp 파사드를 사용하여 Aspose.PDF for Java를 사용하여 PDF 문서에 헤더 내용을 추가하는 방법을 알아보세요. Java 예제는 일반 텍스트 헤더, 스트림에서 로드된 이미지 헤더, 명시적인 여백 값이 있는 스타일 헤더를 다룹니다.
 ---
 ## PDF에 헤더 추가
 
+각 페이지에 반복되는 헤더 내용이 필요한 경우 `PdfFileStamp`를 사용하세요.
 
+### 단계
 
-각 페이지에 반복되는 헤더 내용이 필요한 경우 `PdfFileStamp`을 사용하세요.
-
-
-### 
-단계
-
-
-1. 
-`PdfFileStamp` 인스턴스를 생성하고 소스 PDF를 바인딩합니다.
-
-2. 
-헤더 콘텐츠를 `FormattedText`으로 빌드하거나 이미지 스트림에서 로드합니다.
+1. `PdfFileStamp` 인스턴스를 생성하고 소스 PDF를 바인딩하세요.
+2. 헤더 콘텐츠를 `FormattedText`으로 빌드하거나 이미지 스트림에서 로드하세요.
 3. 적절한 `addHeader` 오버로드를 호출하세요.
+4. 출력을 저장하고 Facade 개체를 닫으세요.
 
-4. 
-출력을 저장하고 Facade 객체를 닫습니다.
-
-
-### 
-자바 예제
+### 자바 예제
 
 ```java
 public static void addTextHeader(Path inputFile, Path outputFile) {

@@ -3,9 +3,9 @@ title: Java에서 태그가 있는 PDF의 테이블 작업
 linktitle: 태그가 있는 PDF의 표 작업
 type: docs
 weight: 40
-url: /java/working-with-table-in-tagged-pdfs/
+url: /ko/java/working-with-table-in-tagged-pdfs/
 description: 테이블 구조, 셀 범위, 스타일 지정, 행 설정 및 위치 지정을 포함하여 Aspose.PDF를 사용하여 Java에서 태그가 지정된 PDF의 액세스 가능한 테이블로 작업하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,22 +13,13 @@ sitemap:
 
 태그가 있는 테이블 API를 사용하면 명시적인 머리글, 본문 행, 바닥글 및 셀별 의미 체계를 사용하여 액세스 가능한 테이블 구조를 만들 수 있습니다.
 
+## 태그가 지정된 테이블 만들기
 
-## 
-태그가 지정된 테이블 만들기
+머리글, 본문, 바닥글 및 테이블 요약 메타데이터가 포함된 기본 액세스 가능 테이블이 필요한 경우 이 예를 사용하세요.
 
-머리글, 본문, 바닥글 및 테이블 요약 메타데이터가 포함된 기본 액세스 가능 테이블이 필요한 경우 이 예를 사용하십시오.
-
-
-1. 
-새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/)를 추가합니다.
-
-1. 
-테이블 테두리를 구성하고 공유 도우미 메서드로 콘텐츠를 채웁니다.
-
-1. 
-테이블 요약 속성을 설정하고 문서를 저장합니다.
-
+1. 새 태그가 있는 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 [`TableElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/)을 추가하세요.
+1. 테이블 테두리를 구성하고 공유 도우미 메서드로 콘텐츠를 채우세요.
+1. 테이블 요약 속성을 설정하고 문서를 저장하세요.
 
 ```java
 public static void createTable(Path outputFile) {
@@ -53,21 +44,13 @@ public static void createTable(Path outputFile) {
 }
 ```
 
-## 
-태그가 지정된 테이블 스타일 지정
+## 태그가 지정된 테이블 스타일 지정
 
 이 예에서는 색상, 테두리, 열 크기 조정, 반복 행 및 정렬과 같은 테이블 수준 서식을 적용합니다.
 
-
-1. 
-새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 테이블 요소를 추가합니다.
-
-1. 
-테이블 수준 시각적 개체 및 레이아웃 설정을 구성합니다.
-
-1. 
-테이블을 채우고 문서를 저장합니다.
-
+1. 새 태그가 있는 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 테이블 요소를 추가하세요.
+1. 테이블 수준 시각적 개체 및 레이아웃 설정을 구성하세요.
+1. 테이블을 채우고 문서를 저장하세요.
 
 ```java
 public static void styleTable(Path outputFile) {
@@ -106,21 +89,13 @@ public static void styleTable(Path outputFile) {
 }
 ```
 
-## 
-태그가 지정된 테이블 행 스타일 지정
+## 태그가 지정된 테이블 행 스타일 지정
 
 각 행에 고유한 메타데이터, 테두리, 높이 설정 및 셀 기본값이 있어야 하는 경우 이 예를 사용합니다.
 
-
-1. 
-새로운 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 머리, 몸, 발에 대한 테이블 섹션을 추가합니다.
-
-1. 
-행을 만들고 테두리, 안쪽 여백, 높이, 페이지 동작 등 행 수준 설정을 구성합니다.
-
-1. 
-행을 셀로 채우고 문서를 저장합니다.
-
+1. 새로운 태그가 있는 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 머리, 몸, 발에 대한 테이블 섹션을 추가하세요.
+1. 행을 만들고 테두리, 안쪽 여백, 높이, 페이지 동작 등 행 수준 설정을 구성하세요.
+1. 행을 셀로 채우고 문서를 저장하세요.
 
 ```java
 public static void styleTableRow(Path outputFile) {
@@ -174,21 +149,13 @@ public static void styleTableRow(Path outputFile) {
 }
 ```
 
-## 
-스타일 태그가 지정된 표 셀
+## 스타일 태그가 지정된 표 셀
 
 이 예에서는 공유 도우미 메서드를 사용하여 셀 수준 서식 및 병합된 셀이 포함된 테이블을 만듭니다.
 
-
-1. 
-새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
-
-1. 
-테이블 요소를 추가하고 셀 스타일 지정이 활성화된 도우미 메서드를 통해 요소를 채웁니다.
-
-1. 
-문서를 저장합니다.
-
+1. 새 태그가 있는 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 테이블 요소를 추가하고 셀 스타일 지정이 활성화된 도우미 메서드를 통해 요소를 채우세요.
+1. 문서를 저장하세요.
 
 ```java
 public static void styleTableCell(Path outputFile) {
@@ -206,21 +173,13 @@ public static void styleTableCell(Path outputFile) {
 }
 ```
 
-## 
-태그가 지정된 테이블 위치 조정
+## 태그가 지정된 테이블 위치 조정
 
 태그가 지정된 테이블을 페이지에 명시적으로 배치해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-새 태그가 있는 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 테이블 요소를 추가합니다.
-
-1. 
-테이블에 대한 [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/)를 구성합니다.
-
-1. 
-위치 설정을 적용하고 테이블을 채운 다음 문서를 저장합니다.
-
+1. 새 태그가 있는 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 테이블 요소를 추가하세요.
+1. 테이블에 대한 [`PositionSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/)을 구성하세요.
+1. 위치 설정을 적용하고 테이블을 채운 다음 문서를 저장하세요.
 
 ```java
 public static void adjustTablePosition(Path outputFile) {
@@ -248,20 +207,13 @@ public static void adjustTablePosition(Path outputFile) {
 }
 ```
 
-## 
-구조화된 콘텐츠로 태그가 지정된 테이블 채우기
+## 구조화된 콘텐츠로 태그가 지정된 테이블 채우기
 
 이 도우미 메서드는 테이블의 머리글, 본문, 바닥글 행을 만들고 선택적으로 셀 스타일과 범위를 적용합니다.
 
-
-1. 
-테이블 머리 부분, 몸체 부분, 바닥 부분을 만듭니다.
-
-1. 
-머리글, 본문, 바닥글 행을 액세스 가능한 셀 요소로 채웁니다.
-
-1. 
-필요에 따라 스타일이 지정된 셀, 병합된 셀 및 텍스트 상태 값을 구성합니다.
+1. 테이블 머리 부분, 몸체 부분, 바닥 부분을 만드세요.
+1. 머리글, 본문, 바닥글 행을 액세스 가능한 셀 요소로 채우세요.
+1. 필요에 따라 스타일이 지정된 셀, 병합된 셀 및 텍스트 상태 값을 구성하세요.
 
 ```java
 private static void fillTable(TableElement tableElement, int rowCount, int colCount, boolean styleCells) {

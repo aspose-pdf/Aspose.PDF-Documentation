@@ -3,44 +3,30 @@ title: PDF 파일 암호화
 linktitle: PDF 파일 암호화
 type: docs
 weight: 30
-url: /java/encrypt-pdf-file/
+url: /ko/java/encrypt-pdf-file/
 description: PdfFileSecurity 파사드를 사용하여 PDF를 암호화하고 Java에서 권한을 구성하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: PDF 파일을 암호화하고 Java에서 사용자 권한을 정의합니다.
-Abstract: Java용 Aspose.PDF를 사용하여 PDF를 암호화하는 방법을 알아보세요. Java 예제 세트는 제한된 권한을 사용한 비밀번호 기반 암호화, 권한 중심 암호화 및 256비트 키 크기를 사용한 AES 기반 암호화를 다룹니다.
+Abstract: Aspose.PDF for Java를 사용하여 PDF를 암호화하는 방법을 알아보세요. Java 예제 세트는 제한된 권한을 사용한 비밀번호 기반 암호화, 권한 중심 암호화 및 256비트 키 크기를 사용한 AES 기반 암호화를 다룹니다.
 ---
 ## PDF 파일 암호화
 
-
-
 비밀번호와 권한 규칙으로 PDF를 보호해야 하는 경우 `PdfFileSecurity`을 사용하세요.
 
+### 단계
 
-### 
-단계
+1. `PdfFileSecurity` 인스턴스를 생성하세요.
+2. `bindPdf`으로 소스 PDF를 바인딩하세요.
+3. 허용된 작업과 일치하는 `DocumentPrivilege` 개체를 빌드하세요.
+4. 필요한 키 크기와 알고리즘에 대해 적절한 `encryptFile` 오버로드를 호출하세요.
+5. 보안 파일을 저장하고 개체를 닫으세요.
 
-
-1. 
-`PdfFileSecurity` 인스턴스를 생성합니다.
-
-2. 
-`bindPdf`으로 소스 PDF를 바인딩합니다.
-3. 허용된 작업과 일치하는 `DocumentPrivilege` 개체를 빌드합니다.
-
-4. 
-필요한 키 크기와 알고리즘에 대해 적절한 `encryptFile` 오버로드를 호출하세요.
-
-5. 
-보안 파일을 저장하고 개체를 닫습니다.
-
-
-### 
-자바 예제
+### 자바 예제
 
 ```java
 public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {

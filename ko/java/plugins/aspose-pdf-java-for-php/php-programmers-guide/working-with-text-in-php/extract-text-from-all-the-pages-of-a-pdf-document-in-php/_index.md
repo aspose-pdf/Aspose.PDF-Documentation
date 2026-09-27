@@ -3,18 +3,14 @@ title: PHP에서 PDF 문서의 모든 페이지에서 텍스트 추출
 linktitle: PHP에서 PDF 문서의 모든 페이지에서 텍스트 추출
 type: docs
 weight: 30
-url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+url: /ko/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 description: 텍스트 분석을 위해 Aspose.PDF를 사용하여 PHP에서 PDF 문서의 모든 페이지에서 텍스트를 추출하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 모든 페이지에서 텍스트 추출
-
-
+## Aspose.PDF - 모든 페이지에서 텍스트 추출
 
 **Aspose.PDF Java for PHP**를 사용하여 TextrFrom 모든 페이지 PDF 문서를 추출하려면 **ExtractTextFromAllPages** 모듈을 호출하기만 하면 됩니다.
 PHP 코드
-
 
 ```php
 
@@ -46,13 +42,8 @@ print "Text extracted successfully. Check output file." . PHP_EOL;
 
 ```
 
-
 **실행 코드 다운로드**
-
-
 
 아래에 언급된 소셜 코딩 사이트 중 하나에서 **모든 페이지에서 텍스트 추출(Aspose.PDF)**을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)

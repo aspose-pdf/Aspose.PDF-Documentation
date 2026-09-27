@@ -3,9 +3,9 @@ title: Java에서 PDF 문서 조작
 linktitle: PDF 문서 조작
 type: docs
 weight: 20
-url: /java/manipulate-pdf-document/
+url: /ko/java/manipulate-pdf-document/
 description: TOC 관리 및 PDF/A 검사를 포함하여 Java에서 PDF 문서를 검증, 구성 및 수정하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서를 
 ---
 Aspose.PDF for Java에는 단순한 페이지 편집 이상의 문서 구조 작업이 포함되어 있습니다.
 
-
-## 
-PDF/A-1a 규정 준수 여부 확인
-
-
+## PDF/A-1a 규정 준수 여부 확인
 
 문서가 PDF/A-1a 보관 표준을 충족하는지 확인해야 할 때 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-필수 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) 대상에 대해 유효성 검사를 실행합니다.
-1. 검증 보고서를 지정된 출력 경로에 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 필수 [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) 대상에 대해 유효성 검사를 실행하세요.
+1. 검증 보고서를 지정된 출력 경로에 저장하세요.
 
 ```java
 public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
@@ -40,21 +31,13 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-PDF/A-1b 규정 준수 확인
-
-
+## PDF/A-1b 규정 준수 확인
 
 이 변형은 PDF/A-1b 적합성 수준에 대해 동일한 소스 문서의 유효성을 검사합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-PDF/A-1b에 대해 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) 값을 사용하여 유효성 검사 방법을 호출합니다.
-1. 검증 결과를 출력 보고서 파일에 기록합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. PDF/A-1b에 대해 [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) 값을 사용하여 유효성 검사 방법을 호출하세요.
+1. 검증 결과를 출력 보고서 파일에 기록하세요.
 
 ```java
 public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
@@ -64,24 +47,14 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-목차 추가
-
-
+## 목차 추가
 
 문서에 콘텐츠 페이지 링크가 포함된 생성된 목차 페이지가 포함되어야 하는 경우 이 접근 방식을 사용합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-새 TOC [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 삽입하고 해당 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)를 구성합니다.
-1. 대상 페이지를 가리키는 [제목](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 만듭니다.
-
-1. 
-업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 새 TOC [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 삽입하고 해당 [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)를 구성하세요.
+1. 대상 페이지를 가리키는 [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 만드세요.
+1. 업데이트된 문서를 저장하세요.
 
 ```java
 public static void addTableOfContents(Path inputFile, Path outputFile) {
@@ -111,24 +84,14 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-TOC 수준 및 형식 지정
-
-
+## TOC 수준 및 형식 지정
 
 이 예에서는 여러 목차 수준에 서로 다른 시각적 설정을 할당하는 방법을 보여줍니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-1. TOC [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하고 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) 형식 배열을 구성합니다.
-
-1. 
-다양한 수준의 샘플 [제목](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 만듭니다.
-
-1. 
-형식이 지정된 TOC로 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. TOC [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하고 [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) 형식 배열을 구성하세요.
+1. 다양한 수준의 샘플 [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 만드세요.
+1. 형식이 지정된 TOC로 문서를 저장하세요.
 
 ```java
 public static void setTocLevels(Path inputFile, Path outputFile) {
@@ -175,24 +138,14 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-목차에서 페이지 번호 숨기기
+## 목차에서 페이지 번호 숨기기
 
+목차에 페이지 번호 없이 항목 제목을 표시해야 하는 경우 이 예를 사용하세요.
 
-
-목차에 페이지 번호 없이 항목 제목을 표시해야 하는 경우 이 예를 사용하십시오.
-
-1. 원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-목차 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하고 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)에서 페이지 번호를 비활성화합니다.
-
-1. 
-필수 [제목](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 생성하고 콘텐츠 페이지에 추가합니다.
-
-1. 
-업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 목차 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하고 [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)에서 페이지 번호를 비활성화하세요.
+1. 필수 [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 생성하고 콘텐츠 페이지에 추가하세요.
+1. 업데이트된 문서를 저장하세요.
 
 ```java
 public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
@@ -231,23 +184,14 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-TOC 페이지 번호 접두사 사용자 정의
+## TOC 페이지 번호 접두사 사용자 정의
 
 이 예에서는 생성된 목차에 표시되는 페이지 번호에 사용자 정의 접두어를 추가합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-목차 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 삽입하고 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)에 원하는 페이지 번호 접두사를 설정합니다.
-
-1. 
-각 페이지를 가리키는 [제목](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 만듭니다.
-
-1. 
-업데이트된 문서를 저장합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 목차 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 삽입하고 [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)에 원하는 페이지 번호 접두사를 설정하세요.
+1. 각 페이지를 가리키는 [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 항목을 만드세요.
+1. 업데이트된 문서를 저장하세요.
 
 ```java
 public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
@@ -278,19 +222,11 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 
 ## PDF 만료 스크립트 추가
 
-
-
 문서가 열릴 때 JavaScript를 실행하고 특정 날짜 이후 만료 경고를 표시해야 하는 경우 이 접근 방식을 사용합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 필요한 내용을 추가합니다.
-
-1. 
-만료 논리를 사용하여 [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/)을 만듭니다.
-
-1. 
-스크립트를 문서 열기 작업으로 할당하고 출력 파일을 저장합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 필요한 내용을 추가하세요.
+1. 만료 논리를 사용하여 [`JavascriptAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/)을 만드세요.
+1. 스크립트를 문서 열기 작업으로 할당하고 출력 파일을 저장하세요.
 
 ```java
 public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
@@ -313,20 +249,12 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 
 ## 채울 수 있는 PDF 양식 병합
 
-
-
 이 예에서는 대화형 양식 필드를 정적 페이지 콘텐츠로 변환하므로 결과 문서는 더 이상 양식으로 편집할 수 없습니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-문서에 양식 위젯이 포함되어 있는지 확인하세요.
-
-1. 
-[WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/)으로 표시되는 각 [필드](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/)를 평면화합니다.
-1. 병합된 문서를 저장합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 문서에 양식 위젯이 포함되어 있는지 확인하세요.
+1. [`WidgetAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/)으로 표시되는 각 [`Field`](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/)를 평면화하세요.
+1. 병합된 문서를 저장하세요.
 
 ```java
 public static void flattenFillablePdf(Path inputFile, Path outputFile) {

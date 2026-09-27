@@ -3,9 +3,9 @@ title: Java에서 PDF 링크 추출
 linktitle: 링크 추출
 type: docs
 weight: 30
-url: /java/extract-links/
+url: /ko/java/extract-links/
 description: Java의 PDF 문서에서 링크 주석과 하이퍼링크를 추출하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에�
 ---
 페이지 주석을 반복하고 `AnnotationType.Link`을 필터링하여 PDF 링크를 검사할 수 있습니다.
 
+## 링크 주석 추출
 
-## 
-링크 주석 추출
+페이지의 링크 주석에 대한 위치 및 페이지 정보가 필요한 경우 이 예를 사용하세요.
 
-
-
-페이지의 링크 주석에 대한 위치 및 페이지 정보가 필요한 경우 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-페이지 주석을 반복하고 링크 주석을 필터링합니다.
-1. 일치하는 각 링크에 대한 페이지 색인과 직사각형을 읽습니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 페이지 주석을 반복하고 링크 주석을 필터링하세요.
+1. 일치하는 각 링크에 대한 페이지 색인과 직사각형을 읽으세요.
 
 ```java
 public static void extractLinkAnnotation(Path inputFile) {
@@ -46,20 +37,13 @@ public static void extractLinkAnnotation(Path inputFile) {
 }
 ```
 
-## 
-하이퍼링크 대상 추출
+## 하이퍼링크 대상 추출
 
+웹 링크 주석에서 대상 URI를 읽어야 할 때 이 예를 사용하세요.
 
-
-웹 링크 주석에서 대상 URI를 읽어야 할 때 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-작업이 [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/)인 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 개체를 찾습니다.
-1. 각 하이퍼링크에 대한 페이지 색인과 URI 대상을 인쇄합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 작업이 [`GoToURIAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/)인 [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 개체를 찾으세요.
+1. 각 하이퍼링크에 대한 페이지 색인과 URI 대상을 인쇄하세요.
 
 ```java
 public static void extractHyperlinks(Path inputFile) {

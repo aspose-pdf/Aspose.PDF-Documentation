@@ -3,9 +3,9 @@ title: Java에서 PDF 텍스트에 도구 설명 추가
 linktitle: PDF 툴팁
 type: docs
 weight: 20
-url: /java/pdf-tooltip/
+url: /ko/java/pdf-tooltip/
 description: Java에서 PDF 문서의 텍스트 조각에 도구 설명을 추가하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,25 +15,14 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 텍스트�
 ---
 Aspose.PDF for Java를 사용하면 텍스트 조각 위에 양식 필드를 배치하여 대화형 도움말을 추가할 수 있습니다.
 
-
-## 
-일치하는 텍스트에 도구 설명 추가
-
-
+## 일치하는 텍스트에 도구 설명 추가
 
 PDF의 기존 텍스트에 마우스를 올리면 도구 설명이 표시되어야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-샘플 PDF를 생성하고 편집을 위해 다시 엽니다.
-
-1. 
-`TextFragmentAbsorber`으로 대상 텍스트 조각을 검색합니다.
-1. 일치하는 텍스트에 `ButtonField` 오버레이를 배치하고 툴팁 텍스트를 할당합니다.
-
-1. 
-업데이트된 문서를 저장합니다.
-
+1. 샘플 PDF를 생성하고 편집을 위해 다시 여세요.
+1. `TextFragmentAbsorber`로 대상 텍스트 조각을 검색하세요.
+1. 일치하는 텍스트에 `ButtonField` 오버레이를 배치하고 툴팁 텍스트를 할당하세요.
+1. 업데이트된 문서를 저장하세요.
 
 ```java
 public static void addToolTipToSearchedText(Path outputFile) {
@@ -77,23 +66,14 @@ public static void addToolTipToSearchedText(Path outputFile) {
     }
 ```
 
-## 
-마우스를 올리면 부동 텍스트 블록 표시
+## 마우스를 올리면 부동 텍스트 블록 표시
 
+텍스트 영역 위로 마우스를 가져가면 숨겨진 텍스트 필드가 표시될 때 이 예를 사용하세요.
 
-
-텍스트 영역 위로 마우스를 가져가면 숨겨진 텍스트 필드가 표시될 때 이 예를 사용하십시오.
-
-
-1. 
-샘플 PDF를 생성하고 편집을 위해 다시 엽니다.
-1. `TextFragmentAbsorber`이 포함된 트리거 텍스트 조각을 찾습니다.
-
-1. 
-Enter 및 Exit 작업을 사용하여 숨겨진 `TextBoxField` 및 `ButtonField`을 만듭니다.
-
-1. 
-최종 PDF를 저장합니다.
+1. 샘플 PDF를 생성하고 편집을 위해 다시 여세요.
+1. `TextFragmentAbsorber`가 포함된 트리거 텍스트 조각을 찾으세요.
+1. Enter 및 Exit 작업을 사용하여 숨겨진 `TextBoxField` 및 `ButtonField`를 만드세요.
+1. 최종 PDF를 저장하세요.
 
 ```java
 public static void createHiddenTextBlock(Path outputFile) {

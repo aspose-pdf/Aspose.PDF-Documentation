@@ -3,9 +3,9 @@ title: Java에서 PDF에 선 모양 추가
 linktitle: 라인 추가
 type: docs
 weight: 40
-url: /java/add-line/
+url: /ko/java/add-line/
 description: Java에서 PDF 파일에 선 모양과 스타일 선을 그리는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,23 +15,12 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 
 ---
 ## 점선 추가
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
-
-1. 
-문서에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
-
-1. 
-[선](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 모양을 생성하고 좌표를 구성합니다.
-1. [그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [선](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/)을 추가합니다.
-
-1. 
-출력된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 문서에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
+1. [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 모양을 생성하고 좌표를 구성하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/)을 추가하세요.
+1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
 ```java
 public static void addLine(Path outputFile) {
@@ -50,31 +39,18 @@ public static void addLine(Path outputFile) {
 }
 ```
 
-## 
-색상이 있는 점선이나 점선을 추가하세요.
-
-
+## 색상이 있는 파선 또는 점선 추가
 
 `addDottedDashedLine`은 동일한 좌표와 대시 설정을 사용하지만 `Color.getRed()`도 적용됩니다.
 
+## 페이지 전체에 선 그리기
 
-## 
-페이지 전체에 선을 그립니다.
-
-1. 새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
-
-1. 
-문서에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
-
-1. 
-[선](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 모양을 생성하고 좌표를 구성합니다.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [선](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/)을 추가합니다.
-1. 출력된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 문서에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
+1. [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 모양을 생성하고 좌표를 구성하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/)을 추가하세요.
+1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
 ```java
 public static void drawLineAcrossPage(Path outputFile) {

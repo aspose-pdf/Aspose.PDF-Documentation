@@ -3,19 +3,15 @@ title: Ruby에서 문서 창 및 페이지 표시 속성 설정
 linktitle: Ruby에서 문서 창 및 페이지 표시 속성 설정
 type: docs
 weight: 100
-url: /java/set-document-window-and-page-display-properties-in-ruby/
+url: /ko/java/set-document-window-and-page-display-properties-in-ruby/
 description: Ruby 및 Aspose.PDF를 사용하여 PDF의 문서 및 페이지 표시 설정을 사용자 정의하세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 문서 창 및 페이지 표시 속성 설정
-
-
+## Aspose.PDF - 문서 창 및 페이지 표시 속성 설정
 
 **Aspose.PDF Java for Ruby**를 사용하여 PDF 문서의 문서 창 및 페이지 표시 속성을 설정하려면 **SetDocumentWindow** 모듈을 호출하기만 하면 됩니다.
 
 루비 코드
-
 
 ```java
 # The path to the documents directory.
@@ -81,13 +77,8 @@ doc.setPageMode()
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
-## 
-실행 코드 다운로드
-
-
+## 실행 코드 다운로드
 
 아래에 언급된 소셜 코딩 사이트에서 **문서 창 및 페이지 표시 속성 설정(Aspose.PDF)**을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

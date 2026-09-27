@@ -3,9 +3,9 @@ title: Java에서 PDF 머리글 및 바닥글 추가
 linktitle: PDF에 머리글 및 바닥글 추가
 type: docs
 weight: 50
-url: /java/add-headers-and-footers-of-pdf-file/
+url: /ko/java/add-headers-and-footers-of-pdf-file/
 description: 텍스트, 이미지 및 구조화된 콘텐츠를 사용하여 Java에서 PDF 파일에 머리글과 바닥글을 추가하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,21 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 
 ---
 Aspose.PDF for Java를 사용하면 `HeaderFooter` 개체를 각 페이지에 할당하고 다양한 콘텐츠 유형으로 채울 수 있습니다.
 
-
-## 
-텍스트 머리글 및 바닥글 추가
-
-
+## 텍스트 머리글 및 바닥글 추가
 
 각 페이지의 상단과 하단에 간단한 텍스트 콘텐츠가 필요한 경우 이 예를 사용하세요.
 
-
-1. 
-[HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 만들고 텍스트 조각을 추가합니다.
-
-1. 
-머리글과 바닥글의 여백을 구성합니다.
-1. 소스 PDF의 각 페이지에 적용하고 결과를 저장합니다.
+1. [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 만들고 텍스트 조각을 추가하세요.
+1. 머리글과 바닥글의 여백을 구성하세요.
+1. 소스 PDF의 각 페이지에 적용하고 결과를 저장하세요.
 
 ```java
 public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
@@ -59,10 +51,9 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 
 머리글이나 바닥글에 현재 페이지 번호와 총 페이지 수가 표시되어야 하는 경우 이 예를 사용하세요.
 
-1. 페이지 번호 매기기 자리 표시자를 사용하여 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 만듭니다.
-1. 두 개체 모두에 대한 여백을 구성합니다.
+1. 페이지 번호 매기기 자리 표시자를 사용하여 [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 만드세요.
+1. 두 개체 모두에 대한 여백을 구성하세요.
 1. 이를 각 페이지에 적용하고 업데이트된 PDF를 저장하세요.
-
 
 ```java
 public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
@@ -88,19 +79,12 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 }
 ```
 
-## 
-HTML 머리글 및 바닥글 추가
+## HTML 머리글 및 바닥글 추가
 
+머리글 및 바닥글 내용에 인라인 HTML 형식이 포함되어야 하는 경우 이 예를 사용하세요.
 
-
-머리글 및 바닥글 내용에 인라인 HTML 형식이 포함되어야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-[HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 생성하고 [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) 콘텐츠를 추가합니다.
-
-1. 
-배치를 위한 여백을 구성합니다.
+1. [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 개체를 생성하고 [`HtmlFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) 콘텐츠를 추가하세요.
+1. 배치를 위한 여백을 구성하세요.
 1. 각 페이지에 머리글과 바닥글을 지정하고 문서를 저장하세요.
 
 ```java
@@ -131,10 +115,9 @@ public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
 
 머리글과 바닥글이 모든 페이지에 이미지를 표시해야 하는 경우 이 예를 사용하세요.
 
-1. [이미지](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) 개체를 생성하고 머리글 및 바닥글 컨테이너에 추가합니다.
-1. 여백을 구성하고 각 페이지에 컨테이너를 할당합니다.
-1. 업데이트된 PDF를 저장합니다.
-
+1. [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) 개체를 생성하고 머리글 및 바닥글 컨테이너에 추가하세요.
+1. 여백을 구성하고 각 페이지에 컨테이너를 할당하세요.
+1. 업데이트된 PDF를 저장하세요.
 
 ```java
 public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
@@ -162,21 +145,13 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 }
 ```
 
-## 
-표 기반 머리글 및 바닥글 추가
+## 표 기반 머리글 및 바닥글 추가
 
+머리글과 바닥글 내용이 표 레이아웃과 텍스트 스타일을 사용해야 하는 경우 이 예를 사용하세요.
 
-
-머리글과 바닥글 내용이 표 레이아웃과 텍스트 스타일을 사용해야 하는 경우 이 예를 사용하십시오.
-
-
-1. 
-필요한 텍스트 스타일과 테이블 개체를 만듭니다.
-
-1. 
-[HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 컨테이너에 테이블을 추가합니다.
-1. 각 페이지에 머리글과 바닥글을 적용하고 문서를 저장합니다.
-
+1. 필요한 텍스트 스타일과 테이블 개체를 만드세요.
+1. [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 컨테이너에 테이블을 추가하세요.
+1. 각 페이지에 머리글과 바닥글을 적용하고 문서를 저장하세요.
 
 ```java
 public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
@@ -215,20 +190,13 @@ public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-LaTeX 머리글 및 바닥글 추가
-
-
+## LaTeX 머리글 및 바닥글 추가
 
 머리글과 바닥글이 TeX 또는 LaTeX 콘텐츠를 렌더링해야 하는 경우 이 예제를 사용하세요.
 
-
-1. 
-원본 PDF를 열고 총 페이지 수를 확인합니다.
-
-1. 
-각 페이지의 머리글과 바닥글에 대한 [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 콘텐츠를 만듭니다.
-1. 콘텐츠를 할당하고 문서를 저장합니다.
+1. 원본 PDF를 열고 총 페이지 수를 확인하세요.
+1. 각 페이지의 머리글과 바닥글에 대한 [`TeXFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 콘텐츠를 만드세요.
+1. 콘텐츠를 할당하고 문서를 저장하세요.
 
 ```java
 public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {

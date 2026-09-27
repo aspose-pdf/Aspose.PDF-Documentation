@@ -3,27 +3,22 @@ title: 새로운 소식
 linktitle: 새로운 소식
 type: docs
 weight: 10
-url: /java/whatsnew/
-description: 이 페이지에서는 최근 릴리스에 도입된 Java용 Aspose.PDF의 가장 인기 있는 새로운 기능을 소개합니다.
+url: /ko/java/whatsnew/
+description: 이 페이지에서는 최근 릴리스에 도입된 Aspose.PDF for Java의 가장 인기 있는 새로운 기능을 소개합니다.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 TechArticle: true
-AlternativeHeadline: Java용 Aspose.PDF의 인기 있는 새로운 기능
-Abstract: Java용 Aspose.PDF 문서의 새로운 기능 섹션은 최근 릴리스에 도입된 최신 업데이트, 개선 사항 및 버그 수정에 대한 개요를 제공합니다. 개발자가 PDF 처리의 최신 발전 사항에 대한 정보를 계속 얻을 수 있도록 새로운 기능, 성능 개선 및 호환성 업데이트를 강조합니다. 설명서에는 더 이상 사용되지 않는 기능과 권장되는 대안에 대한 세부 정보도 포함되어 있습니다. 이 섹션을 정기적으로 검토함으로써 개발자는 원활한 PDF 관리를 위해 Java 애플리케이션에서 가장 효율적이고 최신 기능을 활용하고 있는지 확인할 수 있습니다.
+AlternativeHeadline: Aspose.PDF for Java의 인기 있는 새로운 기능
+Abstract: Aspose.PDF for Java 문서의 새로운 기능 섹션은 최근 릴리스에 도입된 최신 업데이트, 개선 사항 및 버그 수정에 대한 개요를 제공합니다. 개발자가 PDF 처리의 최신 발전 사항에 대한 정보를 계속 얻을 수 있도록 새로운 기능, 성능 개선 및 호환성 업데이트를 강조합니다. 설명서에는 더 이상 사용되지 않는 기능과 권장되는 대안에 대한 세부 정보도 포함되어 있습니다. 이 섹션을 정기적으로 검토함으로써 개발자는 원활한 PDF 관리를 위해 Java 애플리케이션에서 가장 효율적이고 최신 기능을 활용하고 있는지 확인할 수 있습니다.
 SoftwareApplication: java
 ---
 ## Aspose.PDF 25.12의 새로운 기능
 
-
-### 
-XFDF에서 임의 회전이 가능한 자유 텍스트 주석
-
-
+### XFDF에서 임의 회전이 가능한 자유 텍스트 주석
 
 XFDF의 자유 텍스트 주석에 임의 회전 각도에 대한 지원이 추가되어 가져오고 내보낸 주석 레이아웃이 더욱 유연해졌습니다.
-
 
 ```java
 Document pdfDocument = new Document(inputPdf);
@@ -33,15 +28,11 @@ editor.importAnnotationsFromXfdf(inputXfdf);
 editor.save(output);
 ```
 
-## 
-Aspose.PDF 25.11의 새로운 기능
+## Aspose.PDF 25.11의 새로운 기능
 
-
-### 
-숨겨진 데이터 삭제 개선
+### 숨겨진 데이터 삭제 개선
 
 이제 HiddenDataSanitizer를 통해 향상된 PDF 삭제 기능을 사용하여 문서에서 숨겨진 콘텐츠를 효과적으로 제거할 수 있습니다.
-
 
 ```java
 Document document = new Document(pdfFile);
@@ -63,13 +54,9 @@ Document document = new Document(pdfFile);
     }
 ```
 
-### 
-PDF 최적화 중 파일 크기 감소 개선
-
-
+### PDF 최적화 중 파일 크기 감소 개선
 
 PDF 최적화는 이제 글꼴 하위 설정 처리 방법을 개선하여 파일 크기 감소를 개선합니다.
-
 
 ```java
 Document document = new Document(inputPath);
@@ -91,15 +78,11 @@ Document document = new Document(inputPath);
     }
 ```
 
-## 
-Aspose.PDF 25.10의 새로운 기능
+## Aspose.PDF 25.10의 새로운 기능
 
+### PDF를 PDF/E로 변환 지원
 
-### 
-PDF를 PDF/E로 변환 지원
-
-이제 Java용 Aspose.PDF는 PDF 문서를 PDF/E 형식으로 변환하는 것을 지원합니다.
-
+이제 Aspose.PDF for Java는 PDF 문서를 PDF/E 형식으로 변환하는 것을 지원합니다.
 
 ```java
 Document document = new Document(inputPdf);
@@ -107,13 +90,9 @@ document.convert(conversionLog, PdfFormat.PDF_E_1, ConvertErrorAction.Delete);
 document.save(outputPdf);
 ```
 
-### 
-주석의 HTML 텍스트
-
-
+### 주석의 HTML 텍스트
 
 주석 내부에 HTML 텍스트를 추가하기 위한 지원이 추가되었습니다.
-
 
 ```java
 Document pdf = new Document();
@@ -136,15 +115,11 @@ Document pdf = new Document();
     pdf.save(getOutputPath("out1.pdf"));
 ```
 
-## 
-Aspose.PDF 25.9의 새로운 기능
+## Aspose.PDF 25.9의 새로운 기능
 
+### HTML을 PDF로 변환하는 플러그인
 
-### 
-HTML을 PDF로 변환하는 플러그인
-
-이제 Java용 Aspose.PDF에는 HTML-PDF 처리 워크플로를 단순화하기 위한 Html to Pdf 플러그인이 포함되어 있습니다.
-
+이제 Aspose.PDF for Java에는 HTML-PDF 처리 워크플로를 단순화하기 위한 Html to Pdf 플러그인이 포함되어 있습니다.
 
 ```java
 // Specify the input and output file paths.
@@ -168,23 +143,15 @@ ResultContainer htmlResultContainer = converter.process(options);
 IOperationResult result = htmlResultContainer.getResultCollectionInternal().get_Item(0);
 ```
 
-### 
-PDF 1.6 적합성 지원
-
-
+### PDF 1.6 적합성 지원
 
 이 문서 버전이 필요한 시나리오를 위해 PDF 1.6 규격에 대한 지원이 추가되었습니다.
 
+## Aspose.PDF 25.8의 새로운 기능
 
-## 
-Aspose.PDF 25.8의 새로운 기능
-
-
-### 
-표 테두리 스타일 지원
+### 표 테두리 스타일 지원
 
 테이블 모양을 더 효과적으로 제어할 수 있도록 테이블 테두리 스타일에 대한 지원이 추가되었습니다.
-
 
 ```java
 Document document = new Document();
@@ -244,13 +211,9 @@ Document document = new Document();
     }
 ```
 
-### 
-PDF 이미지에 대한 ALT 텍스트 추출
-
-
+### PDF 이미지에 대한 ALT 텍스트 추출
 
 이제 PDF 문서의 이미지에 대한 대체 텍스트 설명을 얻을 수 있어 접근성 지향 처리에 도움이 됩니다.
-
 
 ```java
 Document doc = new Document("input.pdf");
@@ -275,19 +238,13 @@ Document doc = new Document("input.pdf");
     }
 ```
 
-## 
-Aspose.PDF 25.7의 새로운 기능
+## Aspose.PDF 25.7의 새로운 기능
 
+### PDF 채팅GPT 플러그인
 
-### 
-PDF 채팅GPT 플러그인
-
-이제 Java용 Aspose.PDF에는 PDF 중심 AI 상호 작용 시나리오를 위한 PDF ChatGPT 플러그인이 포함되어 있습니다.
-
-
+이제 Aspose.PDF for Java에는 PDF 중심 AI 상호 작용 시나리오를 위한 PDF ChatGPT 플러그인이 포함되어 있습니다.
 
 이 예에서는 파일을 메시지 소스로 추가하여 PdfChatGpt 플러그인을 사용하는 방법을 보여줍니다.
-
 
 ```java
 PdfChatGpt plugin = new PdfChatGpt();
@@ -309,9 +266,7 @@ String fileResultPath = result.getResultCollection().get(0).getData().toString()
 ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData();
 ```
 
-
 이 예에서는 요청에 메시지를 추가하여 PdfChatGpt 플러그인을 사용하는 방법을 보여줍니다.
-
 
 ```java
 PdfChatGpt plugin = new PdfChatGpt();
@@ -336,9 +291,7 @@ String fileResultPath = result.getResultCollection().get(0).getData().toString()
 ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
 ```
 
-
 이 예에서는 요청에 하나의 메시지를 추가하여 PdfChatGpt 플러그인을 사용하는 방법을 보여줍니다.
-
 
 ```java
 PdfChatGpt plugin = new PdfChatGpt();
@@ -356,15 +309,11 @@ String fileResultPath = result.getResultCollection().get(0).getData().toString()
 ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection().get(1).getData(); // The ChatGPT API chat completion object.
 ```
 
-## 
-Aspose.PDF 25.6의 새로운 기능
+## Aspose.PDF 25.6의 새로운 기능
 
 ### PDF에서 DOCX 출력 형식으로 개선됨
 
-
-
 이전에 출력 형식이 올바르지 않았던 문서에 대해 PDF에서 DOCX로의 변환이 개선되었습니다.
-
 
 ```java
 Document doc = new Document(dataDir + "SD_Aspose.pdf");
@@ -375,14 +324,9 @@ saveOption.setRecognizeBullets(true);
 doc.save(dataDir + "SD_Aspose.docx", saveOption);
 ```
 
-## 
-Aspose.PDF 25.5의 새로운 기능
+## Aspose.PDF 25.5의 새로운 기능
 
-
-### 
-PDF에서 ODS로의 변환 이미지 보존
-
-
+### PDF에서 ODS로의 변환 이미지 보존
 
 이제 PDF 문서를 ODS로 변환할 때 이미지가 보존됩니다.
 
@@ -395,10 +339,7 @@ doc.save("output.ods", options);
 
 ### PDF를 PDF/A로 변환하는 동안 자동 태그 생성
 
-
-
 PDF에서 PDF/A로의 변환은 이제 자동 태그 생성을 지원하여 출력 문서의 태그 결과를 향상시킵니다.
-
 
 ```java
 Document document = new Document(dataDir+"source.pdf");
@@ -412,14 +353,9 @@ document.save(dataDir+"out_"+BuildVersionInfo.ASSEMBLY_VERSION+"_"+format+"_"+do
 document.close();
 ```
 
-## 
-Aspose.PDF 25.4의 새로운 기능
+## Aspose.PDF 25.4의 새로운 기능
 
-
-### 
-PDF에서 XLSX로의 변환에서 하이퍼링크 유지
-
-
+### PDF에서 XLSX로의 변환에서 하이퍼링크 유지
 
 이제 PDF 문서를 XLSX로 변환할 때 하이퍼링크가 유지되므로 내보낸 스프레드시트의 탐색이 향상됩니다.
 
@@ -431,10 +367,7 @@ doc.save("output.xlsx", options);
 
 ## Aspose.PDF 25.3의 새로운 기능
 
-
-
-25.2부터 PDF 디지털 서명의 손상을 감지하는 기능이 추가되었습니다. 'SignaturesCompromiseDetector' 클래스를 사용하여 디지털 서명의 손상 여부를 확인할 수 있습니다. 문서의 서명을 확인하려면 check() 메소드를 호출하십시오. 서명 손상이 감지되지 않으면 메서드는 true를 반환합니다. 기존 서명이 문서 전체에 적용되는지 확인하려면 'SignaturesCoverage 속성'을 사용하세요.
-
+25.2부터 PDF 디지털 서명의 손상을 감지하는 기능이 추가되었습니다. 'SignaturesCompromiseDetector' 클래스를 사용하여 디지털 서명의 손상 여부를 확인할 수 있습니다. 문서의 서명을 확인하려면 check() 메서드를 호출하세요. 서명 손상이 감지되지 않으면 메서드는 true를 반환합니다. 기존 서명이 문서 전체에 적용되는지 확인하려면 'SignaturesCoverage 속성'을 사용하세요.
 
 ```java
 void check(String pdfFile) {
@@ -459,13 +392,9 @@ void check(String pdfFile) {
 }
 ```
 
-## 
-Aspose.PDF 25.2의 새로운 기능
-
-
+## Aspose.PDF 25.2의 새로운 기능
 
 25.2부터 PDF를 PDF/X-4 파일 형식으로 변환하는 기능이 추가되었습니다.
-
 
 ```java
 String iccProfile = "PSO_MFC_Paper_eci";
@@ -482,7 +411,6 @@ options.setOutputIntent(new OutputIntent(outputConditionIdentifier));
 document.convert(options);
 document.save(outputPdf);
 ```
-
 
 버전 25.2부터 출력 HTML을 중앙 정렬하는 것이 가능해졌습니다.
 
@@ -512,24 +440,15 @@ doc.save(dataDir + "HTML_19.6.html", newOptions);
 
 또한 버전 25.2부터 Aspose.PDF를 사용하여 글꼴과 크기가 지정된 텍스트의 상승 및 하강을 얻는 것이 가능해졌습니다. 새로운 기능은 'com.aspose.pdf.Font' 클래스에 구현되었습니다.
 
-
-
 추가된 방법:
-
-
 
 **최대 상승점 측정**
 
-
-
 -public double getAcentPoint(문자열 str, float 글꼴 크기)
-
-
 
 **최대 하강점 측정**
 
 - 공개 더블 getDescentPoint(문자열 str, float 글꼴 크기)
-
 
 ```java
 String someText = "Testing text";
@@ -547,17 +466,11 @@ System.out.println(getAscentPoint);
 System.out.println(getDescentPoint);
 ```
 
-## 
-Aspose.PDF 25.1의 새로운 기능
-
-
+## Aspose.PDF 25.1의 새로운 기능
 
 PDF/X 및 PDF/A 변환을 위해 외부 ICC 프로필에 대한 경로를 전달하는 기능은 PdfFormatConversionOptions.IccProfileFileName 속성에 의해 활성화되어 몇 년 동안 이미 라이브러리에 존재했습니다. 이제 OutputIntent 클래스의 개체를 사용하여 OutputIntent 속성을 채우기 위해 데이터를 전달할 수도 있습니다.
 
-
-
 다음 스니펫은 주석 FOGRA39 ICC 프로필을 사용하여 주석 문서를 PDF/X-1로 변환하는 방법을 보여줍니다.
-
 
 ```java
 String iccProfile = "Coated_Fogra39L_VIGC_300.icc";
@@ -576,7 +489,6 @@ Document pdfDocument = new Document("58191_1.pdf");
         }
     }
 ```
-
 
 25.1부터 문서 사용 시 권한에 대한 정보를 얻는 기능이 추가되었습니다.
 
@@ -616,14 +528,9 @@ document.getPages().add();
 
 ## Aspose.PDF 24.12의 새로운 기능
 
-
-
 버전 24.12부터 서로게이트 쌍 문자 지원이 가능해졌습니다.
 
-
-
 '서로게이트 쌍'이라는 용어는 UTF-16 인코딩 체계에서 높은 코드 포인트를 사용하여 유니코드 문자를 인코딩하는 것을 의미합니다.
-
 
 ```java
 String surrogate_pair  = "рџЊ‰";
@@ -644,10 +551,7 @@ String surrogate_pair  = "рџЊ‰";
     doc.save(dataDir + "out_24_11_.pdf");
 ```
 
-
 버전 24.12부터 PDF 문서를 PDF/A-4로 변환하는 것이 가능해졌습니다. PDF 2.0을 기반으로 하는 표준 파트 4가 2020년 말에 출판되었습니다.
-
-
 
 다음 코드 조각은 입력 문서가 2.0보다 이전 PDF 버전인 경우 문서를 PDF/A-4 형식으로 변환하는 방법을 보여줍니다.
 
@@ -664,14 +568,9 @@ document.save("output.pdf");
 
 ## Aspose.PDF 24.9의 새로운 기능
 
-
-
 이 릴리스에서는 하위 수준 기능을 사용하여 액세스 가능한 PDF를 생성할 수 있습니다.
 
-
-
 다음 코드 조각은 Aspose.PDF 라이브러리를 활용하여 PDF 문서 및 태그가 지정된 콘텐츠와 함께 작동합니다.
-
 
 ```java
 //Create template document with simple text
@@ -713,10 +612,7 @@ Document document = new Document(output);
         document.save(output);
 ```
 
-
 PDF 문서와 페이지의 그래픽 비교를 위해 `GraphicalPdfComparer` 클래스가 추가되었습니다. 그래픽 비교는 문서 페이지 이미지를 다룹니다. 결과는 `ImagesDifference` 개체로 반환되거나 원본과 차이점이 병합된 이미지가 포함된 PDF 문서로 반환됩니다. 그래픽 비교는 텍스트나 그래픽 내용에 약간의 차이가 있는 문서에 가장 유용합니다.
-
-
 
 다음 코드 조각은 두 PDF 문서의 그래픽 비교를 보여주고 차이점이 있는 이미지를 결과 PDF 문서에 저장합니다.
 
@@ -735,10 +631,7 @@ GraphicalPdfComparer comparer = new GraphicalPdfComparer();
 
 ## Aspose.PDF 24.8의 새로운 기능
 
-
-
 24.8부터 PDF/A-4 형식 지원:
-
 
 ```java
 Document document = new Document(inputPdf);
@@ -748,13 +641,9 @@ boolean converted = document.convert(logFile, PdfFormat.PDF_A_4, ConvertErrorAct
 document.save(outputFile);
 ```
 
-
 또한 이미지 스탬프에 대체 텍스트를 추가할 수 있습니까?
 
-
-
 AlternativeText 속성이 ImageStamp에 추가되었습니다. 값이 할당된 경우 ImageStamp를 문서에 추가하면 대체 텍스트가 포함됩니다.
-
 
 ```java
 String p1_Alt1 = "*** page 1, Alt text 1 ***",
@@ -796,7 +685,6 @@ document.getPages().get_Item(2).addStamp(imageStamp);
 document.save(outFile);
 ```
 
-
 또한 다음 코드는 FigureElements의 기존 이미지에 AlternativeText를 추가하는 방법을 보여줍니다.
 
 ```java
@@ -827,25 +715,14 @@ document.save(outFile);
 
 ## Aspose.PDF 24.7의 새로운 기능
 
-
-
 24.7 릴리스부터 태그가 지정된 PDF 편집의 일부로 **Aspose.Pdf.LogicalStructure.Element**에 메서드가 추가되었습니다.
 
-
-- 
-태그(이미지, 텍스트, 링크 등 특정 연산자에 태그 추가)
-
-- 
-삽입하위
-
-- 
-자식 제거
+- 태그(이미지, 텍스트, 링크 등 특정 연산자에 태그 추가)
+- 삽입하위
+- 자식 제거
 - 클리어차일즈
 
-
-
 이러한 방법을 사용하면 PDF 파일 태그를 편집할 수 있습니다. 예:
-
 
 ```java
     Document document = new Document(dataDir + "test.pdf");
@@ -1082,14 +959,9 @@ document.save(outFile);
     document.save(dataDir + "_out.pdf");
 ```
 
-## 
-Aspose.PDF 24.6의 새로운 기능
+## Aspose.PDF 24.6의 새로운 기능
 
-
-
-24.6부터 Java용 Aspose.PDF에서는 java.security.cert.X509Certificate, java.security.PrivateKey를 사용하여 PDF에 서명할 수 있습니다.
-
-
+24.6부터 Aspose.PDF for Java에서는 java.security.cert.X509Certificate, java.security.PrivateKey를 사용하여 PDF에 서명할 수 있습니다.
 
 이 코드는 인증서 저장소에서 인증서와 개인 키를 검색한 다음 이를 사용하여 PDF 문서의 첫 번째 페이지에 디지털 서명을 적용합니다.
 
@@ -1109,31 +981,16 @@ pdfSign.close();
 
 ## Aspose.PDF 24.5의 새로운 기능
 
-
-
 24.5 릴리스부터 양식 편집기 플러그인이 구현되었습니다.
-
-
 
 **양식 편집기를 사용하여 PDF의 양식을 편집하는 방법**
 
-
-- 
-라이센스 키 설정
-
-- 
-PDF 양식을 조작하기 위한 메서드를 제공하는 FormEditor 클래스의 인스턴스를 만듭니다.
+- 라이선스 키 설정
+- PDF 양식을 조작하기 위한 메서드를 제공하는 FormEditor 클래스의 인스턴스를 만듭니다.
 - PDF 문서에 양식 필드를 추가하기 위한 옵션을 지정하는 FormEditorAddOptions 클래스의 인스턴스를 만듭니다.
-
-- 
-파일 경로 또는 스트림을 나타내는 FileDataSource 클래스를 사용하여 FormEditorAddOptions 개체에 입력 파일 소스 및 출력 파일 소스를 추가합니다.
-
-- 
-FormEditorAddOptions 개체를 매개변수로 전달하여 FormEditor 개체의 Process 메서드를 호출합니다.
-
-- 
-ResultContainer.resultCollection을 사용하여 결과에 액세스합니다.
-
+- 파일 경로 또는 스트림을 나타내는 FileDataSource 클래스를 사용하여 FormEditorAddOptions 개체에 입력 파일 소스 및 출력 파일 소스를 추가합니다.
+- FormEditorAddOptions 개체를 매개변수로 전달하여 FormEditor 개체의 Process 메서드를 호출합니다.
+- ResultContainer.resultCollection을 사용하여 결과에 액세스합니다.
 
 ```java
 // Specify the input and output paths for the PDF files.
@@ -1202,36 +1059,22 @@ opt.addOutput(new FileDataSource(outputPath));
 ResultContainer results = pdfFormPlugin.process(opt);
 ```
 
-
 이 릴리스에서는 PDF 레이어로 작업할 수 있습니다. 예를 들어:
 
 - PDF 레이어 잠그기
-
-- 
-PDF 레이어 요소 추출
-
-- 
-레이어가 있는 PDF 병합
-
-- 
-PDF 내부의 모든 레이어를 하나로 병합
-
-
+- PDF 레이어 요소 추출
+- 레이어가 있는 PDF 병합
+- PDF 내부의 모든 레이어를 하나로 병합
 
 **PDF 레이어 잠그기**
 
 24.5 릴리스부터 PDF를 열고, 첫 번째 페이지에서 특정 레이어를 잠그고, 변경 사항이 포함된 문서를 저장할 수 있습니다. 두 가지 새로운 메서드가 있으며 하나의 속성이 추가되었습니다.
 
-
-
 레이어.잠금(); - 레이어를 잠급니다.
-
 
 레이어.잠금해제(); - 레이어의 잠금을 해제합니다.
 
-
 레이어.잠김; - 레이어 잠금 상태를 나타내는 속성입니다.
-
 
 ```java
 Document document = new Document(input);
@@ -1243,15 +1086,11 @@ layer.lock();
 document.save(output);
 ```
 
-
 **PDF 레이어 요소 추출**
 
 Aspose.PDF for Java 라이브러리를 사용하면 첫 번째 페이지에서 각 레이어를 추출하고 각 레이어를 별도의 파일에 저장할 수 있습니다.
 
-
-
 레이어에서 새 PDF를 만들려면 다음 코드 조각을 사용할 수 있습니다.
-
 
 ```java
 Document document = new Document(inputPath);
@@ -1263,13 +1102,9 @@ for (Layer layer : layers)
 }
 ```
 
-
 **레이어가 있는 PDF 병합**
 
-
-
-Java용 Aspose.PDF 라이브러리는 PDF를 열고, 첫 번째 페이지의 각 레이어를 반복하고, 각 레이어를 병합하여 페이지에 영구적으로 만듭니다.
-
+Aspose.PDF for Java 라이브러리는 PDF를 열고, 첫 번째 페이지의 각 레이어를 반복하고, 각 레이어를 병합하여 페이지에 영구적으로 만듭니다.
 
 ```java
 Document document = new Document(input);
@@ -1282,31 +1117,19 @@ for (Layer layer : page.getLayers())
 document.save(output);
 ```
 
-
-Layer.Flatten(boolean cleanupContentStream) 메소드는 콘텐츠 스트림에서 선택적 콘텐츠 그룹 마커를 제거할지 여부를 지정하는 부울 매개변수를 허용합니다.
+Layer.Flatten(boolean cleanupContentStream) 메서드는 콘텐츠 스트림에서 선택적 콘텐츠 그룹 마커를 제거할지 여부를 지정하는 부울 매개변수를 허용합니다.
 cleanupContentStream 매개변수를 false로 설정하면 평면화 프로세스 속도가 빨라집니다.
-
-
 
 **PDF 내부의 모든 레이어를 하나로 병합**
 
-
-
 Aspose.PDF for Java 라이브러리를 사용하면 모든 PDF 레이어 또는 첫 번째 페이지의 특정 레이어를 새 레이어로 병합하고 업데이트된 문서를 저장할 수 있습니다.
-
-
 
 페이지의 모든 레이어를 병합하기 위해 두 가지 방법이 추가되었습니다.
 
-
-- 
-void mergeLayers(String newLayerName);
+- void mergeLayers(String newLayerName);
 - void mergeLayers(String newLayerName, String newOptionalContentGroupId);
 
-
-
 두 번째 매개변수를 사용하면 선택적 콘텐츠 그룹 마커의 이름을 바꿀 수 있습니다. 기본값은 "oc1"(/OC/oc1 BDC)입니다.
-
 
 ```java
 Document document = new Document(input);
@@ -1318,16 +1141,11 @@ page.mergeLayers("NewLayerName");
 document.save(output);
 ```
 
-## 
-Aspose.PDF 24.4의 새로운 기능
-
-
+## Aspose.PDF 24.4의 새로운 기능
 
 이번 릴리스에는 PDF용 Java 플러그인이 도입되었습니다.
 
-
-- 
-양식 병합 플러그인
+- 양식 병합 플러그인
 
 ```java
 FormFlattener pdfFormPlugin = new FormFlattener();
@@ -1344,7 +1162,6 @@ java.util.List < IOperationResult > resultCollectionInternal = result.getResultC
 ```
 
 - 양식 내보내기
-
 
 ```java
 Rectangle rect = new com.aspose.pdf.Rectangle(0, 220, 600, 330);
@@ -1371,9 +1188,7 @@ System.out.println(result.getResultCollectionInternal().get_Item(0).isFile());
 System.out.println(result.getResultCollectionInternal().get_Item(0).getData().toString());
 ```
 
-- 
-병합 플러그인
-
+- 병합 플러그인
 
 ```java
 String input1 = "sample.pdf";
@@ -1395,13 +1210,9 @@ System.out.println(results.getResultCollection().size());
 System.out.println(results.getResultCollection().get(0).isFile());
 ```
 
-- 
-최적화 플러그인
-
-
+- 최적화 플러그인
 
 PDF 문서의 크기를 줄이는 방법은 무엇입니까?
-
 
 ```java
 String input = "Test.pdf";
@@ -1415,7 +1226,6 @@ opt.addOutput(new FileDataSource(output));
 
 optimizer.process(opt);
 ```
-
 
 PDF 문서의 크기를 조정하는 방법은 무엇입니까?
 
@@ -1436,7 +1246,6 @@ organizer.process(opt);
 
 PDF 문서를 회전하는 방법은 무엇입니까?
 
-
 ```java
 String input = "sample.pdf";
 String output = "OptimizerRotateMain.pdf";
@@ -1451,13 +1260,9 @@ opt.setRotation(Rotation.on90);
 ResultContainer results = optimizer.process(opt);
 ```
 
-## 
-Aspose.PDF 24.3의 새로운 기능
-
-
+## Aspose.PDF 24.3의 새로운 기능
 
 24.3부터 TextFragmentAbsorber의 구문 목록을 통한 검색을 구현합니다.
-
 
 ```java
 String[] expressions = new String[] {
@@ -1479,9 +1284,7 @@ document.getPages().accept(newAbsorber);
 HashMap < Pattern, TextFragmentCollection > map = newAbsorber.getRegexResults();
 ```
 
-
 다음 기능은 PDF용 테이블을 Markdown 변환기로 변환하는 기능을 추가하는 것입니다.
-
 
 ```java
 Document doc = new Document(dataDir + "56201.pdf");
@@ -1489,11 +1292,9 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 doc.save(dataDir + "56201.md", saveOptions);
 ```
 
-## 
-Aspose.PDF 24.2의 새로운 기능
+## Aspose.PDF 24.2의 새로운 기능
 
 24.2부터 AcroForms를 사용하여 PDF에 워터마크를 추가할 수 있습니다. TextStamp는 AcroForm 파일과 함께 사용하기에 적합합니다. XFA 파일용 TextStamp를 사용하면 일반 PDF 파일처럼 페이지에 텍스트가 그려집니다(예를 들어 Chrome 브라우저에서 XFA 파일을 읽을 수 없는 PDF 뷰어에서 볼 수 있음). XFA 파일에 텍스트를 추가하려면 XFA 파일의 내부 XML에서 텍스트를 변경해야 합니다.
-
 
 ```java
 String sourceName = dataDir + "551.3xfa.pdf";
@@ -1522,15 +1323,11 @@ pdfDocument.save(targetName);
 pdfDocument.close();
 ```
 
-
 주석에 대한 StateModel 설정
-
 
 MarkupAnnotation 클래스의 setReviewState 및 setMarkedState를 사용하여 필요한 상태를 설정할 수 있습니다.
 
-
 모든 마크업 주석에는 사용 가능한 상태 설정 옵션이 있습니다.
-
 
 ```java
 // Open the source PDF document
@@ -1572,7 +1369,6 @@ textAnnotation2.setReviewState(AnnotationState.Accepted, userName2);
 pdfDocument.save(dataDir + "output_24_2_Rejected_and_Accepted.pdf");
 ```
 
-
 24.2에서 OFD를 PDF로 변환 구현:
 
 ```java
@@ -1582,10 +1378,7 @@ document.save(outputPath);
 
 ## Aspose.PDF 24.1의 새로운 기능
 
-
-
 24.1 릴리스부터 PDF를 Markdown으로 변환 구현:
-
 
 ```java
 final Document doc = new Document(inputPdfPath);
@@ -1594,9 +1387,7 @@ saveOptions.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Outlines);
 doc.save(markdownOutputFilePath, saveOptions);
 ```
 
-
 또한 24.1에서는 InterruptMonitor를 사용한 스레드 중단이 구현되었습니다.
-
 
 ```java
 final InterruptMonitor monitor = new InterruptMonitor();
@@ -1669,10 +1460,7 @@ monitor.interrupt();
 System.out.println("Interrupted the save thread at " + System.currentTimeMillis());
 ```
 
-## 
-Aspose.PDF 23.12의 새로운 기능
-
-
+## Aspose.PDF 23.12의 새로운 기능
 
 양식을 찾을 수 있으며 다음 코드 조각을 사용하여 텍스트를 바꿀 수 있습니다.
 
@@ -1702,7 +1490,6 @@ document.save(output);
 
 또는 양식을 완전히 제거할 수 있습니다.
 
-
 ```java
 Document document = new Document(input);
 XFormCollection forms = document.getPages().get_Item(1).getResources().getForms();
@@ -1720,9 +1507,7 @@ while (tmp0.hasNext()) {
 document.save(output);
 ```
 
-
 양식을 제거하는 또 다른 변형:
-
 
 ```java
 Document document = new Document(input);
@@ -1738,9 +1523,7 @@ for (int i = 1; i <= forms.size(); i++) {
 document.save(output);
 ```
 
-- 
-다음 코드 조각을 사용하여 모든 양식을 삭제할 수 있습니다.
-
+- 다음 코드 조각을 사용하여 모든 양식을 삭제할 수 있습니다.
 
 ```java
 Document document = new Document(input);
@@ -1752,10 +1535,7 @@ forms.clear();
 document.save(output);
 ```
 
-## 
-Aspose.PDF 23.11의 새로운 기능
-
-
+## Aspose.PDF 23.11의 새로운 기능
 
 이번 릴리스에서는 PDF 파일에서 숨겨진 텍스트를 제거할 수 있습니다:
 
@@ -1783,14 +1563,9 @@ document.save(outputFile);
 
 ## Aspose.PDF 23.10의 새로운 기능
 
-
-
 현재 업데이트는 태그가 있는 PDF에서 태그 제거의 세 가지 버전을 제공합니다.
 
-
-- 
-documentElement(루트 트리 요소)에서 일부 노드 요소를 제거합니다.
-
+- documentElement(루트 트리 요소)에서 일부 노드 요소를 제거합니다.
 
 ```java
 Document document = new Document(inputPath);
@@ -1806,9 +1581,7 @@ documentElement.getChildren().remove(structElement);
 document.save(outputPath);
 ```
 
-- 
-문서에서 표시된 모든 요소 태그를 제거하고 구조 요소는 유지합니다.
-
+- 문서에서 표시된 모든 요소 태그를 제거하고 구조 요소는 유지합니다.
 
 ```java
 Document document = new Document(inputPath);
@@ -1830,8 +1603,7 @@ for (Element element:queue ) {
 document.save(outputPath);
 ```
 
-- 
-태그를 전혀 제거하십시오.
+- 태그를 전혀 제거하세요.
 
 ```java
 Document document = new Document(inputPath);
@@ -1843,7 +1615,6 @@ document.save(outputPath);
 
 문자 높이를 측정하는 새로운 기능을 구현했습니다. 다음 코드를 사용하여 문자의 높이를 측정합니다.
 
-
 ```java
 Document doc = new Document("input.pdf");
 TextFragmentAbsorber absorber = new TextFragmentAbsorber();
@@ -1851,18 +1622,11 @@ absorber.visit(doc.getPages().get_Item(1));
 double height = absorber.getTextFragments().get_Item(1).getTextState().measureHeight('h')
 ```
 
-
 측정은 문서에 포함된 글꼴을 기반으로 합니다. 차원에 대한 정보가 누락된 경우 이 메서드는 0을 반환합니다.
 
-
-## 
-Aspose.PDF 23.9의 새로운 기능
-
-
+## Aspose.PDF 23.9의 새로운 기능
 
 23.9에서는 채울 수 있는 필드에서 하위 주석을 제거하는 기능이 지원됩니다.
-
-
 
 예 1:
 
@@ -1886,7 +1650,6 @@ System.out.println(0 == field.size());
 ```
 
 예 2:
-
 
 ```java
 {
@@ -1939,9 +1702,7 @@ return true;
 }
 ```
 
-
 ImageFilterType.Flate를 사용하여 이미지를 추가하면 투명도가 유지되지 않습니다.
-
 
 ```java
 Document document = new Document();
@@ -1965,13 +1726,9 @@ document.save(getOutputPath("55157.pdf"));
 stream.close();
 ```
 
-## 
-Aspose.PDF 23.8의 새로운 기능
-
-
+## Aspose.PDF 23.8의 새로운 기능
 
 PDF 문서에서 증분 업데이트를 감지하는 기능이 23.8에 추가되었습니다. 이 함수는 문서가 증분 업데이트로 저장된 경우 'true'를 반환하고, 그렇지 않으면 'false'를 반환합니다.
-
 
 ```java
 Document doc = new Document(dataDir+"PDF_Support_Tech_Note.pdf");
@@ -1987,14 +1744,11 @@ System.out.println(updatedIncrementally);
 doc.close();
 ```
 
-
 또 하나의 기능은 입력 PDF에서 대상 PDF로 OutputIntents 복사입니다.
 
 문서의 출력 의도에 대한 액세스를 허용하기 위해 새로운 공용 속성 Document.getOutputIntents()를 추가합니다.
 
-
 당분간은 일부 문서 출력 의도에 이미 존재하는 사용만 지원되므로 사용자는 처음부터 OutputIntent를 생성할 수 없습니다.
-
 
 ```java
 Document document1 = new Document(dataDir+"pdfa.pdf");
@@ -2009,9 +1763,7 @@ for (OutputIntent intent : document1.getOutputIntents())
 resultDocument.save(dataDir+"resultpath.pdf");
 ```
 
-
 Aspose.PDF 23.8 지원에서 모양 추출을 추가합니다.
-
 
 ```java
 {
@@ -2075,9 +1827,7 @@ Aspose.PDF 23.8 지원에서 모양 추출을 추가합니다.
     }
 ```
 
-
 또한 텍스트를 추가할 때 오버플로를 감지하는 기능도 지원합니다.
-
 
 ```java
 Document doc = new Document();
@@ -2100,11 +1850,9 @@ builder.appendParagraph(paragraph);
 doc.save(output);
 ```
 
-## 
-Aspose.PDF 23.7의 새로운 기능
+## Aspose.PDF 23.7의 새로운 기능
 
 23.7 버전부터 인쇄 대화 상자 사전 설정 페이지 크기 조정이 지원됩니다.
-
 
 ```java
 Document document = new Document();
@@ -2117,17 +1865,11 @@ int printScaling = documentOutput.getPrintScaling();
 System.out.println("PrintScaling: " + printScaling);
 ```
 
-## 
-Aspose.PDF 23.6의 새로운 기능
-
-
+## Aspose.PDF 23.6의 새로운 기능
 
 23.6 버전부터 HTML, Epub 페이지의 제목을 설정하는 기능이 추가되었습니다.
 
-
-
 HTML 코드:
-
 
 ```java
 HtmlSaveOptions options = new HtmlSaveOptions();
@@ -2139,7 +1881,6 @@ options.setTitle("</title>NEW PAGE & TITILE</head>");
 Document document = new Document(inputPath);
 document.save(outPath, options);
 ```
-
 
 EPUB용 코드:
 
@@ -2153,7 +1894,6 @@ document.save(outPath, epubSaveOptions);
 ```
 
 23.6 지원부터 벡터 그래픽 위치 지정을 위한 API 제공:
-
 
 ```java
 Document document = new Document(input);
@@ -2175,13 +1915,9 @@ subPath3.setPosition(point3);
 document.save(output);
 ```
 
-## 
-Aspose.PDF 23.1의 새로운 기능
-
-
+## Aspose.PDF 23.1의 새로운 기능
 
 23.1 버전부터 PrinterMark 주석 생성이 지원됩니다. 주석 변형 중 하나인 ColorBarAnnotation을 추가했습니다.
-
 
 ```java
 Document doc = new Document();
@@ -2204,10 +1940,7 @@ page.getAnnotations().add(colorBarYellow);
 doc.save("outFile.pdf");
 ```
 
-## 
-Aspose.PDF 22.12의 새로운 기능
-
-
+## Aspose.PDF 22.12의 새로운 기능
 
 이번 릴리스에서는 PDF를 DICOM 이미지로 변환하는 기능이 지원됩니다.
 
@@ -2220,10 +1953,7 @@ device.process(doc.getPages().get_Item(1), stream);
 
 ## Aspose.PDF 22.9의 새로운 기능
 
-
-
 22.09부터 주제 루브릭(E=, CN=, O=, OU=, )의 순서를 서명에 수정하기 위한 속성 추가를 지원합니다.
-
 
 ```java
 String inputPdf = getInputPath("input.pdf");
@@ -2250,13 +1980,9 @@ finally {
 }
 ```
 
-## 
-Aspose.PDF 22.8의 새로운 기능
-
-
+## Aspose.PDF 22.8의 새로운 기능
 
 Aspose.PDF 23.8 지원에서 외부 참조 테이블 재구축을 위한 방법 추가:
-
 
 ```java
 PdfFileSanitization sanitizer = new PdfFileSanitization();
@@ -2269,27 +1995,19 @@ try {
 }
 ```
 
-## 
-Aspose.PDF 22.6의 새로운 기능
+## Aspose.PDF 22.6의 새로운 기능
 
 PDF를 PDF_A_1A로 - 큰 출력 파일 크기를 피하기 위해 투명도 색상을 제거하는 옵션을 구현합니다.
 
-
-
 버전 22.5부터 고객은 변환된 투명도의 품질과 결과적으로 출력 파일 크기를 제어할 수 있습니다.
-
 
 ```java
 opts.setTransparencyResolution(300);
 ```
 
-## 
-Aspose.PDF 22.5의 새로운 기능
-
-
+## Aspose.PDF 22.5의 새로운 기능
 
 PDF/A 변환 중에 투명한 내용이 제거되고 이미지로 대체됩니다.
-
 
 새로운 기능을 구현했으며 이제 고객은 TransparencyResolution 매개변수를 사용하여 이미지 품질을 제어할 수 있습니다.
 
@@ -2303,18 +2021,11 @@ pdfDocument.save("finalOutput.pdf");
 
 ## Aspose.PDF 22.4의 새로운 기능
 
+이 릴리스에는 Aspose.PDF for Java에 대한 정보가 포함되어 있습니다.
 
-
-이 릴리스에는 Java용 Aspose.PDF에 대한 정보가 포함되어 있습니다.
-
-
-- 
-PDF를 ODS로: 아래 첨자와 위 첨자로 된 텍스트를 인식합니다.
-
-
+- PDF를 ODS로: 아래 첨자와 위 첨자로 된 텍스트를 인식합니다.
 
 **예**
-
 
 ```java
 Document pdfDocument = new Document("Superscript-Subscript.pdf");
@@ -2323,19 +2034,12 @@ options.Format = ExcelSaveOptions.ExcelFormat.ODS;
 pdfDocument.Save("output.ods"), options);
 ```
 
-- 
-PDF에서 XMLSpreadSheet2003으로: 아래 첨자와 위 첨자의 텍스트를 인식합니다.
-
+- PDF에서 XMLSpreadSheet2003으로: 아래 첨자와 위 첨자의 텍스트를 인식합니다.
 - PDF를 Excel로: 아래 첨자와 위 첨자로 된 텍스트를 인식합니다.
 
-
-## 
-Aspose.PDF 22.3의 새로운 기능
-
-
+## Aspose.PDF 22.3의 새로운 기능
 
 PDF에서 ODS로: 버전 22.3에서 RTL 지원이 가능합니다.
-
 
 ```java
 ExcelSaveOptions options = new ExcelSaveOptions();
@@ -2343,28 +2047,17 @@ options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
 pdfDocument.save("output.ods", options);
 ```
 
-## 
-Aspose.PDF 22.2의 새로운 기능
-
-
+## Aspose.PDF 22.2의 새로운 기능
 
 이 릴리스에는 XSLX에 대한 PDF: RTL 지원(히브리어, 아랍어)이 포함되어 있습니다.
 
 ## Aspose.PDF 22.1의 새로운 기능
 
+Aspose.PDF for Java를 사용하면 PDF(Portable Document Format) 버전 2.0 문서를 로드할 수 있습니다.
 
+## Aspose.PDF 21.10의 새로운 기능
 
-Java용 Aspose.PDF를 사용하면 PDF(Portable Document Format) 버전 2.0 문서를 로드할 수 있습니다.
-
-
-## 
-Aspose.PDF 21.10의 새로운 기능
-
-
-### 
-숨겨진 텍스트를 감지하는 방법은 무엇입니까?
-
-
+### 숨겨진 텍스트를 감지하는 방법은 무엇입니까?
 
 다음 코드를 사용하세요:
 
@@ -2391,14 +2084,9 @@ Document pdf = new Document(inFile);
 
 ## Aspose.PDF 21.8의 새로운 기능
 
-
-### 
-디지털 서명에서 텍스트 색상을 변경하는 방법은 무엇입니까?
-
-
+### 디지털 서명에서 텍스트 색상을 변경하는 방법은 무엇입니까?
 
 21.8 버전 setForegroundColor에서는 디지털 서명의 텍스트 색상을 변경할 수 있습니다.
-
 
 ```java
 Please, use the following code:
@@ -2419,15 +2107,11 @@ Please, use the following code:
     pdfSign.save(outFile);
 ```
 
-## 
-Aspose.PDF 21.6의 새로운 기능
+## Aspose.PDF 21.6의 새로운 기능
 
+### 문서에서 ImagePlacementAbsorber를 사용하여 이미지 숨기기
 
-### 
-문서에서 ImagePlacementAbsorber를 사용하여 이미지 숨기기
-
-Java용 Aspose.PDF를 사용하면 ImagePlacementAbsorber를 사용하여 문서에서 이미지를 숨길 수 있습니다.
-
+Aspose.PDF for Java를 사용하면 ImagePlacementAbsorber를 사용하여 문서에서 이미지를 숨길 수 있습니다.
 
 ```java
 Document doc = new Document("input.pdf");
@@ -2443,17 +2127,11 @@ Document doc = new Document("input.pdf");
   doc.save("out.pdf");
 ```
 
-## 
-Aspose.PDF 21.5의 새로운 기능
+## Aspose.PDF 21.5의 새로운 기능
 
-
-### 
-이미지 병합을 위한 API 추가
-
-
+### 이미지 병합을 위한 API 추가
 
 Aspose.PDF 21.4를 사용하면 이미지를 결합할 수 있습니다. 이미지 스트림 목록을 하나의 이미지 스트림으로 병합합니다. 기본적으로 Jpeg로 인코딩된 지원되지 않는 형식의 출력 스트림을 사용하는 경우 Png/jpg/tiff 출력 형식이 지원됩니다.
-
 
 다음 코드 조각을 따르십시오.
 
@@ -2492,7 +2170,6 @@ InputStream inputStream;
 
 또한 이미지를 Tiff 형식으로 병합할 수도 있습니다.
 
-
 ```java
 InputStream inputStream;
 
@@ -2520,10 +2197,7 @@ InputStream inputStream;
     inputStream.close();
 ```
 
-## 
-Aspose.PDF 21.02의 새로운 기능
-
-
+## Aspose.PDF 21.02의 새로운 기능
 
 Aspose.PDF v21.02 PAdES LTV 서명으로 PDF에 서명
 

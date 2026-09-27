@@ -3,9 +3,9 @@ title: Java에서 PDF 페이지 크기 변경
 linktitle: 페이지 크기 변경
 type: docs
 weight: 40
-url: /java/change-page-size/
+url: /ko/java/change-page-size/
 description: Java에서 PDF 페이지 크기를 읽고 변경하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,21 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 페이지 
 ---
 Aspose.PDF for Java는 페이지 크기를 보고하고 업데이트할 수 있습니다.
 
+## 페이지 크기 변경
 
-## 
-페이지 크기 변경
+기존 페이지의 크기를 조정하고 변경 전후의 페이지 상자를 검사해야 할 때 이 예를 사용하세요.
 
-
-
-기존 페이지의 크기를 조정하고 변경 전후의 페이지 상자를 검사해야 할 때 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)을 가져오고 현재 상자 값을 인쇄합니다.
-1. 새 페이지 크기를 설정하고 문서를 저장합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 가져오고 현재 상자 값을 인쇄하세요.
+1. 새 페이지 크기를 설정하고 문서를 저장하세요.
 
 ```java
 public static void setPageSize(Path inputFile, Path outputFile) {
@@ -45,12 +37,11 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 
 ## 페이지 크기 가져오기
 
-페이지의 표시되는 크기를 읽어야 할 때 이 예를 사용하십시오.
+페이지의 표시되는 크기를 읽어야 할 때 이 예를 사용하세요.
 
-1. 원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-1. 회전 처리가 활성화된 페이지 직사각형을 가져옵니다.
-1. 페이지 너비와 높이를 출력합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 회전 처리가 활성화된 페이지 직사각형을 가져오세요.
+1. 페이지 너비와 높이를 출력하세요.
 
 ```java
 public static void getPageSize(Path inputFile) {
@@ -61,20 +52,13 @@ public static void getPageSize(Path inputFile) {
 }
 ```
 
-## 
-회전이 적용된 페이지 크기 가져오기
+## 회전이 적용된 페이지 크기 가져오기
 
+회전을 고려하기 전과 후에 페이지 크기를 비교해야 할 때 이 예를 사용하세요.
 
-
-회전을 고려하기 전과 후에 페이지 크기를 비교해야 할 때 이 예를 사용하십시오.
-
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)을 회전합니다.
-1. 회전 처리 유무와 관계없이 페이지 직사각형을 읽고 두 값을 모두 출력합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 회전하세요.
+1. 회전 처리 유무와 관계없이 페이지 직사각형을 읽고 두 값을 모두 출력하세요.
 
 ```java
 public static void getPageSizeRotation(Path inputFile) {

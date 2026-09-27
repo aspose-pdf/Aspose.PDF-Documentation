@@ -3,19 +3,15 @@ title: Ruby에서 문서 창 및 페이지 표시 속성 가져오기
 linktitle: Ruby에서 문서 창 및 페이지 표시 속성 가져오기
 type: docs
 weight: 40
-url: /java/get-document-window-and-page-display-properties-in-ruby/
+url: /ko/java/get-document-window-and-page-display-properties-in-ruby/
 description: Ruby 및 Aspose.PDF를 사용하여 PDF 파일의 문서 창 및 페이지 표시 속성을 검색하고 사용자 정의합니다.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 문서 창 및 페이지 표시 속성 가져오기
-
-
+## Aspose.PDF - 문서 창 및 페이지 표시 속성 가져오기
 
 **Aspose.PDF Java for Ruby**를 사용하여 PDF 문서의 문서 창 및 페이지 표시 속성을 가져오려면 **GetDocumentWindow** 모듈을 호출하기만 하면 됩니다.
 
 루비 코드
-
 
 ```java
 # The path to the documents directory.
@@ -77,13 +73,8 @@ puts "PageLayout :-" + doc.getPageLayout().to_s
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-## 
-실행 코드 다운로드
-
-
+## 실행 코드 다운로드
 
 아래에 언급된 소셜 코딩 사이트 중 하나에서 **문서 창 및 페이지 표시 속성(Aspose.PDF)**을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

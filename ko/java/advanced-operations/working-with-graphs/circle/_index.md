@@ -3,9 +3,9 @@ title: Java에서 PDF에 원 모양 추가
 linktitle: 서클 추가
 type: docs
 weight: 20
-url: /java/add-circle/
+url: /ko/java/add-circle/
 description: Java에서 PDF 파일에 원 모양을 그리고 채우는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,26 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 
 ---
 ## 원 윤곽선 추가
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
-
-1. 
-문서에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
-
-1. 
-[원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) 모양을 만들고 해당 형상을 구성합니다.
-1. [그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/)을 추가합니다.
-
-1. 
-[색상](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) 등 예제에서 요구하는 도형 속성을 설정합니다.
-
-1. 
-출력된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 문서에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
+1. [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) 모양을 만들고 해당 형상을 구성하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/)을 추가하세요.
+1. [`Color`](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) 등 예제에서 요구하는 도형 속성을 설정하세요.
+1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
 ```java
 public static void addCircle(Path outputFile) {
@@ -53,26 +40,15 @@ public static void addCircle(Path outputFile) {
 }
 ```
 
-## 
-텍스트로 채워진 원 추가
+## 텍스트로 채워진 원 추가
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
-1. 문서에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가합니다.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
-
-1. 
-[원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) 모양을 만들고 해당 형상을 구성합니다.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/)을 추가합니다.
-
-1. 
-[Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 등 예제에서 요구하는 도형 속성을 설정합니다.
-1. 출력된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 문서에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
+1. [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) 모양을 만들고 해당 형상을 구성하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/)을 추가하세요.
+1. [`Color`](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/), [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 등 예제에서 요구하는 도형 속성을 설정하세요.
+1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
 ```java
 public static void addCircleFilled(Path outputFile) {

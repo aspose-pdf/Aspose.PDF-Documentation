@@ -3,19 +3,15 @@ title: Ruby의 기존 PDF에 목차 추가
 linktitle: Ruby의 기존 PDF에 목차 추가
 type: docs
 weight: 30
-url: /java/add-toc-to-existing-pdf-in-ruby/
+url: /ko/java/add-toc-to-existing-pdf-in-ruby/
 description: 향상된 문서 탐색을 위해 Aspose.PDF를 사용하여 Ruby에서 기존 PDF에 목차를 추가하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 목차 추가
-
-
+## Aspose.PDF - 목차 추가
 
 <ins> **Aspose.PDF Java for Ruby**를 사용하여 PDF 문서에 목차를 추가하려면 **AddToc** 모듈을 호출하기만 하면 됩니다.
 
 루비 코드
-
 
 ```java
 # The path to the documents directory.
@@ -91,13 +87,8 @@ doc.save(data_dir + "TOC.pdf")
 puts "Added TOC Successfully, please check the output file."
 ```
 
-## 
-<ins> **실행 코드 다운로드
+## 실행 코드 다운로드
 
+아래 언급된 소셜 코딩 사이트 중 하나에서 **TOC(Aspose.PDF)**를 다운로드하세요.
 
-
-아래 언급된 소셜 코딩 사이트 중 하나에서 В **TOC(Aspose.PDF)**В를 다운로드하세요.
-
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

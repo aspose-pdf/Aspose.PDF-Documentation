@@ -3,9 +3,9 @@ title: AcroForm 채우기 - Java를 사용하여 PDF 양식 채우기
 linktitle: AcroForm 채우기
 type: docs
 weight: 20
-url: /java/fill-form/
+url: /ko/java/fill-form/
 description: Aspose.PDF for Java를 사용하여 PDF 문서의 AcroForm 필드를 채웁니다.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,19 +15,11 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 AcroForm 필�
 ---
 `Form` 외관은 기존 AcroForm에서 필드 채우기를 자동화하는 데 사용할 수 있습니다.
 
+## AcroForm 필드를 새 값으로 채우기
 
-## 
-AcroForm 필드를 새 값으로 채우기
-
-
-1. 
-[Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드가 있는 PDF 양식 문서를 엽니다.
-
-1. 
-양식 필드를 반복하고 제공된 값으로 일치하는 항목을 업데이트합니다.
-
-1. 
-업데이트된 PDF 문서를 저장합니다.
+1. [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 파사드가 있는 PDF 양식 문서를 여세요.
+1. 양식 필드를 반복하고 제공된 값으로 일치하는 항목을 업데이트하세요.
+1. 업데이트된 PDF 문서를 저장하세요.
 
 ```java
 public static void fillForm(Path inputFile, Path outputFile) {

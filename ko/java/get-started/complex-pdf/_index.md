@@ -3,9 +3,9 @@ title: 복잡한 PDF 만들기
 linktitle: 복잡한 PDF 만들기
 type: docs
 weight: 30
-url: /java/complex-pdf-example/
+url: /ko/java/complex-pdf-example/
 description: Aspose.PDF for Java를 사용하면 이미지, 텍스트 조각 및 테이블을 하나의 파일에 포함하는 보다 복잡한 PDF 문서를 만들 수 있습니다.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,35 +15,18 @@ Abstract: 이 문서에서는 Aspose.PDF를 사용하여 Java에서 보다 복�
 ---
 [Hello World](/pdf/java/hello-world-example/) 예제는 가장 간단한 PDF 생성 경로를 다룹니다. 이 예는 해당 워크플로를 기반으로 그래픽, 텍스트 및 표 형식의 콘텐츠를 결합하는 보다 풍부한 문서를 만듭니다.
 
-
-
 Java로 더 복잡한 PDF 문서를 생성하려면:
 
+1. [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 생성하고 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. `page.addImage(...)` 및 대상 [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)을 사용하여 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에 이미지를 추가하세요.
+1. 헤더 [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 만들고 글꼴, 크기, 정렬 및 [`Position`](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/)을 설정하세요.
+1. 설명 단락에 대한 두 번째 [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 만드세요.
+1. 테두리, 패딩, 머리글 스타일을 적용하여 [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 만드세요.
+1. 생성된 일정 행을 [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)에 추가하세요.
+1. [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 단락에 [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)을 추가하세요.
+1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
-1. 
-[문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 생성하고 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-
-1. 
-`page.addImage(...)` 및 대상 [사각형](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)을 사용하여 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에 이미지를 추가합니다.
-
-1. 
-헤더 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 만들고 글꼴, 크기, 정렬 및 [위치](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/)를 설정합니다.
-1. 설명 단락에 대한 두 번째 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 만듭니다.
-
-1. 
-테두리, 패딩, 머리글 스타일을 적용하여 [표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 만드세요.
-
-1. 
-생성된 일정 행을 [테이블](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)에 추가합니다.
-
-1. 
-[페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 단락에 [표](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)를 추가합니다.
-
-1. 
-출력된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
-
-다음 Java 코드는 `GetStartedExamples.java`을 기반으로 합니다.
-
+다음 Java 코드는 `GetStartedExamples.java`를 기반으로 합니다.
 
 ```java
 public static void complexExample(Path imageFile, Path outputFile) {
@@ -74,7 +57,6 @@ public static void complexExample(Path imageFile, Path outputFile) {
     }
 }
 ```
-
 
 동일한 예에서는 도우미 메서드를 사용하여 헤더 형식 및 생성된 출발 시간이 포함된 일정 테이블을 준비합니다.
 

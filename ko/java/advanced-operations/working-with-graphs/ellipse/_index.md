@@ -3,9 +3,9 @@ title: Java에서 PDF에 타원 모양 추가
 linktitle: 타원 추가
 type: docs
 weight: 60
-url: /java/add-ellipse/
+url: /ko/java/add-ellipse/
 description: Java에서 PDF 파일의 타원 모양을 그리고 채우고 레이블을 지정하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,26 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에 
 ---
 ## 타원 윤곽선 추가
 
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
-
-1. 
-문서에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
-
-1. 
-[타원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 모양을 만들고 해당 형상을 구성합니다.
-1. [그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [타원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/)을 추가합니다.
-
-1. 
-[Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 등 예제에서 요구하는 도형 속성을 설정합니다.
-
-1. 
-출력된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
-
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 문서에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
+1. [`Ellipse`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 모양을 만들고 해당 형상을 구성하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [`Ellipse`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/)을 추가하세요.
+1. [`Color`](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/), [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 등 예제에서 요구하는 도형 속성을 설정하세요.
+1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
 ```java
 public static void addEllipse(Path outputFile) {
@@ -54,38 +41,21 @@ public static void addEllipse(Path outputFile) {
 }
 ```
 
-
 전체 예제에서는 동일한 그래프에 두 개의 서로 다른 윤곽선 타원을 추가합니다.
 
-
-## 
-채워진 타원 추가
+## 채워진 타원 추가
 
 `createEllipseFilled`은 `Color.getGreenYellow()` 및 `Color.getDarkRed()`으로 두 개의 타원을 채웁니다.
 
+## 타원 안에 텍스트 추가
 
-## 
-타원 안에 텍스트 추가
-
-
-1. 
-새 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만듭니다.
-
-1. 
-문서에 [페이지](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-
-1. 
-[TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 만들고 필요한 텍스트 서식 옵션을 설정하세요.
-1. [그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가합니다.
-
-1. 
-[타원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 모양을 만들고 해당 형상을 구성합니다.
-
-1. 
-[그래프](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [타원](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/)을 추가합니다.
-
-1. 
-출력된 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장합니다.
+1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 문서에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 만들고 필요한 텍스트 서식 옵션을 설정하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너를 생성하여 페이지에 추가하세요.
+1. [`Ellipse`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 모양을 만들고 해당 형상을 구성하세요.
+1. [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 컨테이너에 [`Ellipse`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/)을 추가하세요.
+1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
 ```java
 public static void addTextInsideEllipse(Path outputFile) {

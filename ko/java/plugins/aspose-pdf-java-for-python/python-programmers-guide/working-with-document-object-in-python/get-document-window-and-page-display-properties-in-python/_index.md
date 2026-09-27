@@ -3,13 +3,12 @@ title: Python에서 문서 창 및 페이지 표시 속성 가져오기
 linktitle: Python에서 문서 창 및 페이지 표시 속성 가져오기
 type: docs
 weight: 30
-url: /java/get-document-window-and-page-display-properties-in-python/
+url: /ko/java/get-document-window-and-page-display-properties-in-python/
 description: 정확한 프레젠테이션을 위해 Aspose.PDF를 사용하여 Python의 PDF에서 문서 창 및 페이지 표시 속성을 검색하는 방법을 이해합니다.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
 
 **Aspose.PDF Java for Python**을 사용하여 PDF 문서의 문서 창 및 페이지 표시 속성을 가져오려면 간단히 **GetDocumentWindow** 클래스를 호출하면 됩니다.
-
 
 ```python
 
@@ -53,11 +52,8 @@ print "PageLayout :-" + str(doc.getPageLayout())
 print "pageMode :-" + str(doc.getPageMode())
 ```
 
-
 **실행 코드 다운로드**
 
 아래에 언급된 소셜 코딩 사이트 중 하나에서 **문서 창 및 페이지 표시 속성(Aspose.PDF)**을 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)

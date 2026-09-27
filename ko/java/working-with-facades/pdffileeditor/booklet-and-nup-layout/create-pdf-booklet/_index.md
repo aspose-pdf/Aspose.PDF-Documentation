@@ -3,9 +3,9 @@ title: PDF 소책자 만들기
 linktitle: PDF 소책자 만들기
 type: docs
 weight: 20
-url: /java/create-pdf-booklet/
+url: /ko/java/create-pdf-booklet/
 description: PdfFileEditor 외관을 사용하여 Java의 기존 문서에서 소책자용 PDF를 만듭니다.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -15,30 +15,16 @@ Abstract: Aspose.PDF for Java를 사용하여 PDF 소책자를 만드는 방법�
 ---
 ## PDF 소책자 만들기
 
-
-
 `PdfFileEditor.makeBooklet`을 사용하여 기존 PDF의 페이지를 소책자 순서로 재정렬합니다.
 
+### 단계
 
-### 
-단계
+1. `PdfFileEditor` 인스턴스를 생성하세요.
+2. 원본 PDF 및 출력 파일을 사용하여 `makeBooklet`를 호출하세요.
+3. 소책자 문서를 저장하세요.
+4. 반환 상태를 확인하려면 boolean-return 변형을 사용하고 실패한 결과를 처리하세요.
 
-
-1. 
-`PdfFileEditor` 인스턴스를 생성합니다.
-
-2. 
-원본 PDF 및 출력 파일을 사용하여 `makeBooklet`으로 전화하세요.
-3. 소책자 문서를 저장합니다.
-
-4. 
-반환 상태를 확인하려면 boolean-return 변형을 사용하고 실패한 결과를 처리하세요.
-
-
-### 
-자바 예
-
-```java
+### Java 예제```java
 public static void createPdfBooklet(Path inputFile, Path outputFile) {
     PdfFileEditor bookletMaker = new PdfFileEditor();
     bookletMaker.makeBooklet(inputFile.toString(), outputFile.toString());

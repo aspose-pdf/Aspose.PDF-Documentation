@@ -3,19 +3,15 @@ title: PHP의 기존 PDF에 TOC 추가
 linktitle: PHP의 기존 PDF에 TOC 추가
 type: docs
 weight: 20
-url: /java/add-toc-to-existing-pdf-in-php/
+url: /ko/java/add-toc-to-existing-pdf-in-php/
 description: 향상된 탐색을 위해 Aspose.PDF를 사용하여 PHP의 기존 PDF 문서에 목차(TOC)를 추가하는 방법을 살펴보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 ---
-## 
-Aspose.PDF - 목차 추가
-
-
+## Aspose.PDF - 목차 추가
 
 PHP용 **Aspose.PDF Java**를 사용하여 PDF 문서에 목차를 추가하려면 **AddToc** 클래스를 호출하기만 하면 됩니다.
 
 PHP 코드
-
 
 ```php
 
@@ -71,13 +67,8 @@ print "Added TOC Successfully, please check the output file.";
 
 ```
 
-
 **실행 코드 다운로드**
-
-
 
 아래 언급된 소셜 코딩 사이트 중 하나에서 В **TOC(Aspose.PDF)**В를 다운로드하세요.
 
-
-- 
-[GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

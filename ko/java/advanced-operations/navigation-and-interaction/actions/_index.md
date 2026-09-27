@@ -3,9 +3,9 @@ title: Java에서 PDF 작업 작업
 linktitle: 작업
 type: docs
 weight: 20
-url: /java/actions/
+url: /ko/java/actions/
 description: Java를 사용하여 PDF 파일에서 문서, 페이지 및 양식 작업을 추가, 업데이트 및 제거하는 방법을 알아보세요.
-lastmod: "2026-06-09"
+lastmod: "2026-09-24"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -15,22 +15,13 @@ Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서에�
 ---
 Aspose.PDF for Java를 사용하면 버튼, 문서 및 페이지에 작업을 할당하여 PDF 파일을 대화형으로 만들 수 있습니다.
 
-
-## 
-명명된 인쇄 작업 추가
-
-
+## 명명된 인쇄 작업 추가
 
 페이지의 버튼이 인쇄 명령을 실행해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지를 선택합니다.
-
-1. 
-[ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/)를 생성하고 인쇄용 [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/)을 할당합니다.
-1. 양식에 버튼을 추가하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지를 선택하세요.
+1. [`ButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/)를 생성하고 인쇄용 [`NamedAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/)을 할당하세요.
+1. 양식에 버튼을 추가하고 문서를 저장하세요.
 
 ```java
 public static void addNamedActionPrint(Path inputFile, Path outputFile) {
@@ -54,21 +45,13 @@ public static void addNamedActionPrint(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-숨기기 동작 추가
-
-
+## 숨기기 동작 추가
 
 버튼이 체크박스와 같은 양식 필드 집합을 표시하거나 숨겨야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 양식 위젯을 수집합니다.
-
-1. 
-버튼을 만들고 [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/)을 할당하세요.
-1. 양식에 버튼을 추가하고 업데이트된 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 양식 위젯을 수집하세요.
+1. 버튼을 만들고 [`HideAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/)을 할당하세요.
+1. 양식에 버튼을 추가하고 업데이트된 문서를 저장하세요.
 
 ```java
 public static void addNamedActionHide(Path inputFile, Path outputFile) {
@@ -93,21 +76,13 @@ public static void addNamedActionHide(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-페이지 탐색 버튼 추가
-
-
+## 페이지 탐색 버튼 추가
 
 이 예에서는 문서 전체에 첫 번째, 이전, 다음 및 마지막 페이지 단추를 만듭니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-각 페이지에 대한 탐색 버튼을 만들고 일치하는 사전 정의된 작업을 할당합니다.
-1. 양식에 버튼을 추가하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 각 페이지에 대한 탐색 버튼을 만들고 일치하는 사전 정의된 작업을 할당하세요.
+1. 양식에 버튼을 추가하고 문서를 저장하세요.
 
 ```java
 public static void addNavigationButtons(Path inputFile, Path outputFile) {
@@ -161,21 +136,13 @@ public static void addNavigationButtons(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-제출 작업 추가
-
-
+## 제출 작업 추가
 
 버튼이 양식 데이터를 URL에 제출해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-대상 URL과 플래그를 사용하여 [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/)을 만듭니다.
-1. 버튼 필드에 작업을 할당하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 대상 URL과 플래그를 사용하여 [`SubmitFormAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/)을 만드세요.
+1. 버튼 필드에 작업을 할당하고 문서를 저장하세요.
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {
@@ -199,21 +166,13 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-문서 수준 실행 작업 추가
-
-
+## 문서 수준 실행 작업 추가
 
 이 예에서는 문서를 열거나 저장하거나 인쇄할 때 실행되는 JavaScript 작업을 할당합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 엽니다.
-
-1. 
-문서 이벤트에 필요한 [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) 개체를 만듭니다.
-1. 작업을 할당하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
+1. 문서 이벤트에 필요한 [`JavascriptAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) 개체를 만드세요.
+1. 작업을 할당하고 문서를 저장하세요.
 
 ```java
 public static void addLaunchActions(Path inputFile, Path outputFile) {
@@ -229,21 +188,13 @@ public static void addLaunchActions(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-페이지 열기 및 닫기 작업 추가
-
-
+## 페이지 열기 및 닫기 작업 추가
 
 특정 페이지를 열고 닫을 때 작업을 트리거해야 하는 경우 이 예를 사용하세요.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지가 있는지 확인하세요.
-
-1. 
-페이지 탐색 및 JavaScript 작업을 만듭니다.
-1. 페이지 작업을 할당하고 문서를 저장합니다.
-
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지가 있는지 확인하세요.
+1. 페이지 탐색 및 JavaScript 작업을 만드세요.
+1. 페이지 작업을 할당하고 문서를 저장하세요.
 
 ```java
 public static void addPageActions(Path inputFile, Path outputFile) {
@@ -265,20 +216,13 @@ public static void addPageActions(Path inputFile, Path outputFile) {
 }
 ```
 
-## 
-페이지 작업 제거
-
-
+## 페이지 작업 제거
 
 이전에 할당된 열기 및 닫기 작업을 페이지에서 지워야 하는 경우 이 접근 방식을 사용합니다.
 
-
-1. 
-원본 PDF [문서](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지가 있는지 확인하세요.
-
-1. 
-해당 페이지에서 모든 작업을 제거합니다.
-1. 업데이트된 문서를 저장합니다.
+1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 대상 페이지가 있는지 확인하세요.
+1. 해당 페이지에서 모든 작업을 제거하세요.
+1. 업데이트된 문서를 저장하세요.
 
 ```java
 public static void removePageActions(Path inputFile, Path outputFile) {
