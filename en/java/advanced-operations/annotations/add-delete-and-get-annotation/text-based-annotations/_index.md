@@ -1,21 +1,21 @@
 ---
-title: Text Based Annotations using Java
+title: Text-Based PDF Annotations using Java
 linktitle: Text Annotations
 type: docs
 weight: 10
 url: /java/text-based-annotations/
-description: Learn how to create, inspect, and delete text-based PDF annotations using Aspose.PDF for Java, including free text, highlight, strikeout, squiggly, and underline markup.
-lastmod: "2026-08-19"
+description: Create, retrieve, remove, and flatten text-based PDF annotations in Java, including free text, highlight, strikeout, squiggly, and underline markup.
+lastmod: "2026-08-20"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Work with text PDF annotations in Java.
-Abstract: This article demonstrates how to work with five text-based annotation types in Aspose.PDF for Java, including free text, highlight, strikeout, squiggly, and underline annotations. Learn to add, retrieve, and delete annotations, plus advanced techniques like marking text and flattening interactive markup.
+AlternativeHeadline: Manage Text-Based PDF Annotations with Java
+Abstract: Learn how to manage free text and text markup annotations in PDF documents with Aspose.PDF for Java. The examples cover creating, retrieving, deleting, and flattening annotations, defining underline quad points, and extracting marked text.
 ---
 Text-based annotations enable reviewers and developers to add interactive notes, highlighting, and markup to PDF documents without altering core content. This section covers five practical annotation types used in document review workflows, compliance scenarios, and collaborative feedback cycles.
 
-## Quick Reference: Annotation Types
+## Choose a text-based annotation type
 
 This article covers the following text-based annotation types:
 
@@ -25,11 +25,11 @@ This article covers the following text-based annotation types:
 - **Squiggly**: Wavy underline for indicating errors or concerns
 - **Underline**: Traditional underline emphasis with optional quad-point precision
 
-## Add, get, and delete free text annotations
+## Add comments with free text annotations
 
 Free text annotations act as floating text boxes that can be edited without affecting the document structure. Use these examples to add comment boxes, inspect their properties, or remove them.
 
-### Add free text annotations
+### Create a free text comment
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create a [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) with a rectangle and appearance settings.
@@ -51,7 +51,7 @@ public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Get free text annotations
+### Inspect existing free text comments
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through annotations on the page and filter by [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -69,7 +69,7 @@ public static void freeTextAnnotationGet(Path inputFile) {
 }
 ```
 
-### Delete free text annotations
+### Remove free text comments
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Find free text annotations by iterating through the page annotations and filtering by type.
@@ -93,11 +93,11 @@ public static void freeTextAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Add, get, and delete highlight annotations
+## Emphasize passages with highlight annotations
 
 Highlight annotations mark important passages with a semi-transparent overlay. Use these examples to create highlights for document review, locate existing highlights, and clean up markup.
 
-### Add highlight annotations
+### Highlight a page area
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create a [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) with a rectangle defining the highlight area.
@@ -116,7 +116,7 @@ public static void textHighlightAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Get highlight annotations
+### Inspect highlighted areas
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through annotations and filter by [AnnotationType.Highlight](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -134,7 +134,7 @@ public static void textHighlightAnnotationGet(Path inputFile) {
 }
 ```
 
-### Delete highlight annotations
+### Remove highlights
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Collect highlight annotations by filtering annotations by type.
@@ -158,11 +158,11 @@ public static void textHighlightAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Add, get, and delete strikeout annotations
+## Mark proposed deletions with strikeout annotations
 
 Strikeout annotations cross out text to indicate deletion, rejection, or revision. Use these examples to apply strikethrough markup during document review, find marked text, and remove strikeout annotations.
 
-### Add strikeout annotations
+### Strike out a page area
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create a [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) with a rectangle, title, and color.
@@ -185,7 +185,7 @@ public static void textStrikeoutAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Get strikeout annotations
+### Inspect strikeout markup
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through annotations and filter by [AnnotationType.StrikeOut](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -203,7 +203,7 @@ public static void textStrikeoutAnnotationGet(Path inputFile) {
 }
 ```
 
-### Delete strikeout annotations
+### Remove strikeout markup
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Collect strikeout annotations by filtering by type.
@@ -227,11 +227,11 @@ public static void textStrikeoutAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Add, get, and delete squiggly annotations
+## Flag issues with squiggly annotations
 
 Squiggly annotations (wavy underlines) highlight potential errors, concerns, or items requiring attention. Use these examples to mark problematic text, inspect squiggly annotations, and remove them from documents.
 
-### Add squiggly annotations
+### Add a wavy underline
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create a [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) with a rectangle and title.
@@ -253,7 +253,7 @@ public static void textSquigglyAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Get squiggly annotations
+### Inspect wavy underlines
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through annotations and filter by [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -271,7 +271,7 @@ public static void textSquigglyAnnotationGet(Path inputFile) {
 }
 ```
 
-### Delete squiggly annotations
+### Remove wavy underlines
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Collect squiggly annotations by filtering by type.
@@ -295,11 +295,11 @@ public static void textSquigglyAnnotationDelete(Path inputFile, Path outputFile)
 }
 ```
 
-## Add, get, and delete underline annotations
+## Emphasize and inspect text with underline annotations
 
 Underline annotations emphasize important passages with a traditional underline. Use these examples to create underlines, read marked text content, and delete underline annotations from pages.
 
-### Add underline annotations
+### Underline a page area
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Create an [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) with a rectangle and color.
@@ -322,7 +322,7 @@ public static void textUnderlineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Get underline annotations
+### Inspect underline markup
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterate through annotations and filter by [AnnotationType.Underline](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
@@ -340,7 +340,7 @@ public static void textUnderlineAnnotationGet(Path inputFile) {
 }
 ```
 
-### Delete underline annotations
+### Remove underline markup
 
 1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Collect underline annotations by filtering by type.
@@ -364,7 +364,7 @@ public static void textUnderlineAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## Add an underline annotation with quad points
+### Define a precise underline with quad points
 
 This example defines the underline area explicitly through quad points derived from a rectangle.
 
@@ -395,7 +395,7 @@ public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFil
 }
 ```
 
-## Get marked text from underline annotations
+### Extract text covered by an underline
 
 Retrieve the actual text content covered by underline annotations. These examples show two approaches: reading the complete marked text as a single string, or processing text fragments individually for detailed analysis.
 
@@ -431,7 +431,7 @@ public static void textUnderlineMarkedFragmentsGet(Path inputFile) {
 }
 ```
 
-## Delete underline annotations by title
+### Remove underlines by title
 
 Remove annotations selectively by filtering on metadata properties like title. This approach enables targeted cleanup of annotations by author or purpose.
 
@@ -459,7 +459,7 @@ public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Add and flatten an underline annotation
+### Flatten an underline into page content
 
 Convert an interactive underline annotation into permanent page content by flattening it. This prevents further editing while preserving the underline appearance in any PDF viewer.
 
