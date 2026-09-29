@@ -1,51 +1,31 @@
 ---
-title: Ekstrak Gambar dari PDF
-linktitle: Ekstrak Gambar
+title: Ekstrak Gambar dari PDF menggunakan Java
+linktitle: Ekstrak Gambar dari PDF
 type: docs
 weight: 20
 url: /id/java/extract-images-from-the-pdf-file/
-description: Cara mengekstrak bagian gambar dari PDF menggunakan Aspose.PDF untuk Java
-lastmod: "2021-06-05"
+description: Pelajari cara mengekstrak gambar yang disematkan dari file PDF dengan Aspose.PDF for Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara Mengekstrak Gambar dari PDF via Java
+Abstract: Artikel ini menjelaskan cara mengekstrak gambar yang disematkan dari dokumen PDF dengan Aspose.PDF for Java. Artikel ini menunjukkan cara membuka PDF sumber, mengakses gambar dari koleksi sumber daya halaman, dan menyimpan XImage yang diekstrak ke file eksternal.
 ---
+Ekstrak gambar dari halaman PDF ketika Anda perlu menggunakan kembali grafik yang disematkan, memeriksa aset dokumen, atau mengekspor gambar untuk proses selanjutnya.
 
-Setiap halaman dalam dokumen PDF mengandung sumber daya (gambar, formulir, dan font). Kita dapat mengakses sumber daya ini dengan memanggil metode [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--). Kelas [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) mengandung [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) dan kita dapat mendapatkan daftar gambar dengan memanggil metode [getImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--).
-
-Jadi untuk mengekstrak gambar dari halaman, kita perlu mendapatkan referensi ke halaman, kemudian ke sumber daya halaman, dan terakhir ke koleksi gambar. 
-
-Gambar tertentu dapat kita ekstrak misalnya dengan indeks.
-
-
-Indeks gambar mengembalikan objek [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage).
-This object menyediakan metode [Save](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-) yang dapat digunakan untuk menyimpan gambar yang diekstraksi. Cuplikan kode berikut menunjukkan cara mengekstrak gambar dari file PDF.
+1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi dan buka aliran output untuk file gambar yang diekstrak.
+1. Dapatkan target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dari dokumen dan mengaksesnya `Resources.Images` koleksi.
+1. Ambil yang diperlukan [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) objek dari koleksi gambar tersebut berdasarkan indeks.
+1. Panggil `image.save(outputImage)` untuk menulis byte gambar yang diekstrak ke aliran target.
 
 ```java
-public static void Extract_Images(){
-        // Jalur ke direktori dokumen.
-        String _dataDir = "/home/admin1/pdf-examples/Samples/";
-        String filePath = _dataDir + "ExtractImages.pdf";
-
-        // Memuat dokumen PDF
-        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-        com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
-        com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
-        // Mengekstrak gambar tertentu
-        com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
-
-        try {
-            java.io.FileOutputStream outputImage = new java.io.FileOutputStream(_dataDir + "output.jpg");
-            // Menyimpan gambar keluaran
-            xImage.save(outputImage);
-            outputImage.close();
-        } catch (java.io.FileNotFoundException e) {
-            // TODO: menangani pengecualian
-            e.printStackTrace();
-        } catch (java.io.IOException e) {
-            // TODO: menangani pengecualian
-            e.printStackTrace();
-        }
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
     }
+}
 ```

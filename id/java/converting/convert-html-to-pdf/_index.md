@@ -1,168 +1,181 @@
 ---
-title: Mengonversi HTML ke file PDF di Java
-linktitle: Mengonversi HTML ke file PDF
+title: Konversi HTML ke PDF di Java
+linktitle: Konversi file HTML ke PDF
 type: docs
 weight: 40
 url: /id/java/convert-html-to-pdf/
-lastmod: "2021-11-19"
-description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi format HTML dan MHTML ke file PDF.
+lastmod: "2026-09-29"
+description: Pelajari cara mengonversi HTML, MHTML, dan halaman web ke PDF dalam Java dengan Aspose.PDF, termasuk pengaturan media, aturan halaman CSS, penyematan font, konten SVG, dan output satu halaman.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: Cara mengonversi HTML ke PDF dalam Java dengan Aspose.PDF
+Abstract: Artikel ini menjelaskan cara mengonversi file HTML dan MHTML ke PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup alur kerja dasar HTML ke PDF dan menunjukkan cara mengontrol rendering dengan tipe media, prioritas aturan halaman CSS, font yang disematkan, konten SVG, output satu halaman, serta konversi langsung dari halaman web yang hidup.
 ---
+Aspose.PDF for Java dapat mengonversi file HTML lokal, konten MHTML yang diarsipkan, dan halaman web langsung menjadi dokumen PDF. Anda dapat mengendalikan alur konversi dengan `HtmlLoadOptions` dan `MhtLoadOptions` untuk memengaruhi skala tata letak, penanganan media CSS, prioritas aturan halaman, penyematan font, resolusi sumber daya, dan perilaku rendering satu halaman.
 
-## Ikhtisar
+## Konversi HTML ke PDF
 
-Artikel ini menjelaskan bagaimana mengonversi HTML ke PDF menggunakan Java. Kodenya sangat sederhana, cukup muat HTML ke kelas Document dan simpan sebagai output PDF. Mengonversi MHTML ke PDF di Java juga serupa. Ini mencakup topik-topik berikut
+Gunakan contoh ini ketika file HTML lokal harus dikonversi langsung menjadi dokumen PDF.
 
-- [Java HTML ke PDF](#convert-html-to-pdf)
-- [Java MHTML ke PDF](#convert-mhtml-to-pdf)
-- [Java Mengonversi HTML ke PDF](#convert-html-to-pdf)
-- [Java Mengonversi MHTML ke PDF](#convert-mhtml-to-pdf)
-- [Java PDF dari HTML](#convert-html-to-pdf)
-- [Java PDF dari MHTML](#convert-mhtml-to-pdf)
-- [Java HTML ke PDF Konverter - Cara Mengonversi Halaman Web ke PDF](#convert-html-to-pdf)
-
-- [Java HTML ke PDF Perpustakaan, API atau Kode untuk Merender, Menyimpan, Menghasilkan atau Membuat PDF Secara Program dari HTML](#convert-html-to-pdf)
-
-## Java HTML to PDF Converter Library
-
-**Aspose.PDF for Java** adalah API manipulasi PDF yang memungkinkan Anda mengonversi dokumen HTML yang ada ke PDF dengan mulus. Proses konversi HTML ke PDF dapat disesuaikan dengan fleksibel.
-
-## Mengonversi HTML ke PDF
-
-Contoh kode Java berikut menunjukkan cara mengonversi dokumen HTML ke PDF.
-
-1. Buat instance dari kelas [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions).
-1. Inisialisasi objek [Document](https://reference.aspose.com/page/java/com.aspose.page/document).
-1. Simpan dokumen PDF keluaran dengan memanggil metode **Document.save(String)**.
+1. Buat sebuah [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance untuk mengonfigurasi bagaimana sumber HTML diinterpretasikan selama impor.
+1. Atur [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) ke `ScaleToPageWidth` konten HTML yang terlalu lebar diskalakan ke lebar halaman PDF target alih-alih dipotong.
+1. Buka file HTML sumber dengan melewatkan jalurnya dan opsi pemuatan yang dikonfigurasi ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Simpan yang dihasilkan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) sebagai file PDF pada jalur output target.
 
 ```java
-// Buka dokumen PDF sumber
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
-
-// Instansiasi objek HTML SaveOptions
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-
-// Simpan dokumen
-document.save(DATA_DIR + "MultiPageHTML_out.html", htmlsaveOptions);
+public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPageLayoutOption(HtmlPageLayoutOption.ScaleToPageWidth);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-{{% alert color="success" %}}
-**Cobalah mengonversi HTML ke PDF secara online**
+## Konversi HTML ke PDF dengan opsi tipe media
 
-Aspose menghadirkan aplikasi online gratis ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf), di mana Anda dapat mencoba meneliti fungsionalitas dan kualitasnya bekerja.
+Gunakan contoh ini ketika penanganan tipe media CSS harus dikontrol selama konversi HTML.
 
-[![Aspose.PDF Konversi HTML ke PDF menggunakan Aplikasi Gratis](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
-{{% /alert %}}
-
-## Konversi lanjutan dari HTML ke PDF
-
-Mesin Konversi HTML memiliki beberapa opsi yang memungkinkan kita mengontrol proses konversi.
-
-### Dukungan Media Queries
-
-1. Buat [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) HTML.
-1. Atur mode Cetak atau Layar.
-1. Inisialisasi [objek Dokumen](<https://reference.aspose.com/page/java/com.aspose.page/document>).
-1. Simpan dokumen PDF keluaran.
-
-Media queries adalah teknik populer untuk memberikan lembar gaya yang disesuaikan ke perangkat yang berbeda. Kita dapat mengatur jenis perangkat menggunakan properti [HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType).
+1. Buat sebuah [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance untuk pengaturan konversi.
+1. Atur [`HtmlMediaType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlmediatype/) ke `Screen` ketika HTML harus dirender dengan aturan CSS yang dimaksudkan untuk tampilan di layar alih-alih media cetak.
+1. Buka file HTML dengan opsi pemuatan yang telah dikonfigurasi sehingga gaya yang bergantung pada media query diterapkan selama konversi.
+1. Simpan hasilnya [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) sebagai file PDF.
 
 ```java
-// Buat HTML LoadOptions
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-// Atur mode Cetak atau Layar
-options.setHtmlMediaType(HtmlMediaType.Print);
-
-// Inisialisasi objek dokumen
-String htmlFileName = Paths.get(DATA_DIR.toString(), "test.html").toString();
-Document document = new Document(htmlFileName, options);
-
-// Simpan dokumen PDF keluaran
-document.save(Paths.get(DATA_DIR.toString(), "HTMLtoPDF.pdf").toString());
-document.close();
+public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setHtmlMediaType(HtmlMediaType.Screen);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
+## Konversi HTML ke PDF dengan prioritas aturan halaman CSS
 
-### Mengaktifkan (menonaktifkan) penyematan font
+Gunakan contoh ini ketika CSS `@page` aturan harus memengaruhi tata letak halaman PDF akhir.
 
-1. Tambahkan [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) Html baru.
-1. Aktifkan/Nonaktifkan penyematan font.
-1. Simpan Dokumen baru.
-
-Halaman HTML sering menggunakan font (misalnya, font dari folder lokal, Google Fonts, dll). Kita juga dapat mengontrol penyematan font dalam dokumen dengan menggunakan properti [IsEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--).
+1. Buat sebuah [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance sebelum membuka file HTML.
+1. Konfigurasikan `setPriorityCssPageRule(false)` ketika pengaturan tata letak lainnya harus memiliki prioritas atas CSS `@page` deklarasi dalam markup sumber.
+1. Muat konten HTML ke dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dengan opsi yang dikonfigurasi sehingga tata letak halaman diselesaikan selama impor.
+1. Simpan file PDF yang dihasilkan.
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-// Aktifkan/Nonaktifkan penyematan font
-options.setEmbedFonts(true);
-
-Document document = new Document(DATA_DIR + "test_fonts.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();
+public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPriorityCssPageRule(false);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-### Mengelola pemuatan sumber daya eksternal
+## Konversi HTML ke PDF dengan font yang disematkan
 
-Mesin Konversi menyediakan mekanisme yang memungkinkan Anda mengontrol pemuatan sumber daya tertentu yang terkait dengan dokumen HTML.
+Gunakan contoh ini ketika PDF output harus mempertahankan font HTML dengan menyematkannya.
 
-Kelas [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) memiliki properti [CustomLoaderOfExternalResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-) yang dapat kita gunakan untuk mendefinisikan perilaku pemuat sumber daya.
+1. Buat sebuah [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance untuk konfigurasi impor HTML.
+1. Aktifkan `setEmbedFonts(true)` Jadi font yang ditentukan selama render HTML disimpan dalam PDF output.
+1. Buka sumber HTML dengan opsi pemuatan ini untuk menjaga tipografi asli tetap tersedia dalam dokumen akhir.
+1. Simpan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) sebagai PDF dengan sumber daya font yang disematkan disertakan.
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-options.setCustomLoaderOfExternalResources(
-        new LoadOptions.ResourceLoadingStrategy() {
-            public LoadOptions.ResourceLoadingResult invoke(String resourceURI) {
-                // Membuat sumber daya template kosong untuk menggantikan:
-                LoadOptions.ResourceLoadingResult res = new LoadOptions.ResourceLoadingResult(new byte[] {});
-                // Mengembalikan array byte kosong jika server i.imgur.com
-                if (resourceURI.contains("i.imgur.com")) {
-                    return res;
-                } else {
-                    // Memproses sumber daya dengan pemuat sumber daya default
-                    res.setLoadingCancelled(true);
-                    return res;
-                }
-            }   
-});
-
-Document document = new Document(DATA_DIR + "test.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();    
+public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setEmbedFonts(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Mengonversi MHTML ke PDF
+## Render konten HTML pada satu halaman PDF
 
-{{% alert color="success" %}}
-**Coba konversi MHTML ke PDF secara online**
+Gunakan contoh ini ketika konten HTML yang panjang harus tetap berada di satu halaman PDF alih-alih mengalir ke beberapa halaman.
 
-
-Aspose.PDF untuk Java menghadirkan aplikasi online gratis ["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
-
-[![Aspose.PDF Konversi MHTML ke PDF menggunakan Aplikasi Gratis](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
-{{% /alert %}}
-
-<abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>, singkatan dari MIME HTML, adalah format arsip halaman web yang digunakan untuk menggabungkan sumber daya yang biasanya direpresentasikan oleh tautan eksternal (seperti gambar, animasi Flash, applet Java, dan file audio) dengan kode HTML menjadi satu file. Konten dari file MHTML dikodekan seolah-olah itu adalah pesan email HTML, menggunakan tipe MIME multipart/related.
-
-Cuplikan kode berikut menunjukkan cara mengubah file MHTML ke format PDF dengan Java:
+1. Buat sebuah [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance untuk pengaturan konversi.
+1. Aktifkan `setRenderToSinglePage(true)` sehingga HTML yang diimpor ditata pada satu halaman PDF alih-alih dibagi menjadi beberapa halaman.
+1. Buka HTML sumber dengan opsi pemuatan yang dikonfigurasi dan biarkan Aspose.PDF membangun tata letak halaman dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Simpan file PDF output.
 
 ```java
-// Buat instance dari MhtLoadOptions untuk menentukan opsi pemuatan untuk
-// file MHTML.
-MhtLoadOptions options = new MhtLoadOptions();
+public static void convertHtmlToPdfRenderContentToSamePage(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setRenderToSinglePage(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-// Tetapkan jalur dari file MHTML.
-String mhtmlFileName = Paths.get(DATA_DIR.toString(), "samplefile.mhtml").toString();
+## Konversi HTML yang berisi SVG inline
 
-// Muat file MHTML ke dalam objek Dokumen.
-Document document = new Document(mhtmlFileName, options);
+Gunakan contoh ini ketika sumber HTML menyertakan data SVG inline yang harus dirender dalam PDF.
 
-// Simpan dokumen sebagai file PDF.
-document.save(Paths.get(DATA_DIR.toString(), "MarkdowntoPDF.pdf").toString());
+1. Buat sebuah [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instance dengan direktori induk file HTML sebagai jalur dasar sehingga sumber daya terkait dapat diselesaikan secara konsisten selama konversi.
+1. Buka file HTML yang berisi markup SVG inline dengan melewatkan jalur sumber dan opsi pemuatan ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Biarkan Aspose.PDF merender DOM HTML bersama dengan elemen SVG yang disematkan ke dalam konten halaman PDF.
+1. Simpan dokumen PDF yang dihasilkan.
 
-// Tutup dokumen.
-document.close();
+```java
+public static void convertHtmlToPdfWithSvgData(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(inputFile.getParent().toString());
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## Konversi halaman web ke PDF
+
+Gunakan contoh ini ketika URL web langsung harus dirender dan disimpan sebagai dokumen PDF.
+
+1. Buat sebuah [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) instansi dengan URL target sehingga sumber daya relatif seperti stylesheet dan gambar dapat diselesaikan terhadap alamat tersebut.
+1. Ubah string URL menjadi a `URL` objek dan buka aliran masuknya untuk mengambil konten HTML secara langsung.
+1. Buat [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dari aliran respons dan opsi pemuatan yang dikonfigurasi sehingga halaman yang diunduh diproses dengan URL dasar yang benar.
+1. Simpan halaman web yang dirender sebagai file PDF dan tutup sumber daya stream secara otomatis dengan try-with-resources.
+
+```java
+public static void convertWebPageToPdf(String urlString, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(urlString);
+    try {
+        URL url = URI.create(urlString).toURL();
+
+        try (InputStream inputStream = url.openStream()) {
+            try (Document document = new Document(inputStream, loadOptions)) {
+                document.save(outputFile.toString());
+            }
+        }
+        System.out.println(url + " converted into " + outputFile);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
+
+## Konversi MHTML ke PDF
+
+Gunakan contoh ini ketika file MHTML yang diarsipkan harus dikonversi menjadi dokumen PDF.
+
+1. Buat sebuah [`MhtLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mhtloadoptions/) instance untuk memberi tahu Aspose.PDF agar memuat sumber sebagai konten MIME HTML.
+1. Buka `.mht` atau `.mhtml` file dengan melewatkan jalurnya dan opsi pemuatan MHTML ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Izinkan Aspose.PDF menguraikan konten HTML yang diarsipkan dan sumber daya tersematnya ke dalam model dokumen PDF.
+1. Simpan file PDF yang dihasilkan.
+
+```java
+public static void convertMhtmlToPdf(Path inputFile, Path outputFile) {
+    MhtLoadOptions loadOptions = new MhtLoadOptions();
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

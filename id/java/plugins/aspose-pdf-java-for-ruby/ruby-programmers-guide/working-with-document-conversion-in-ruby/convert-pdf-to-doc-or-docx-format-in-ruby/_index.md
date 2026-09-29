@@ -1,11 +1,12 @@
 ---
-title: Konversi PDF ke format DOC atau DOCX dalam Ruby
+title: Konversi PDF ke format DOC atau DOCX di Ruby
+linktitle: Konversi PDF ke format DOC atau DOCX di Ruby
 type: docs
 weight: 30
 url: /id/java/convert-pdf-to-doc-or-docx-format-in-ruby/
-lastmod: "2021-06-05"
+description: Pelajari cara mengonversi dokumen PDF ke format DOC atau DOCX dalam Ruby dengan Aspose.PDF, memungkinkan pengeditan dan pemrosesan yang lebih mudah.
+lastmod: "2026-09-29"
 ---
-
 ## Aspose.PDF - Konversi PDF ke DOC atau DOCX
 
 Untuk mengonversi dokumen PDF ke format DOC atau DOCX menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **PdfToDoc**.
@@ -13,24 +14,23 @@ Untuk mengonversi dokumen PDF ke format DOC atau DOCX menggunakan **Aspose.PDF J
 Kode Ruby
 
 ```java
-
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen target
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# Simpan file keluaran yang dikonkat (dokumen target)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir + "output.doc")
 
-puts "Dokumen telah berhasil dikonversi"
+puts "Document has been converted successfully"
 ```
 
-## Unduh Kode Berjalan
+## Unduh Kode yang Sedang Berjalan
 
-Unduh **Konversi PDF ke DOC atau DOCX (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+UnduhВ **Convert PDF to DOC atau DOCX (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftodoc.rb)

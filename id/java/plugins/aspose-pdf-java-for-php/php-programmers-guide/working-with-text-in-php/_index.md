@@ -1,11 +1,12 @@
 ---
 title: Bekerja dengan Teks di PHP
+linktitle: Bekerja dengan Teks di PHP
 type: docs
 weight: 40
 url: /id/java/working-with-text-in-php/
-lastmod: "2021-06-05"
+description: Pelajari cara memanipulasi dan mengekstrak teks dari dokumen PDF di PHP menggunakan Aspose.PDF untuk penanganan konten yang lebih baik.
+lastmod: "2026-09-29"
 ---
-
 Bagian ini mencakup topik-topik berikut:
 
 - [Tambahkan String HTML menggunakan DOM di PHP](/pdf/id/java/add-html-string-using-dom-in-php/)

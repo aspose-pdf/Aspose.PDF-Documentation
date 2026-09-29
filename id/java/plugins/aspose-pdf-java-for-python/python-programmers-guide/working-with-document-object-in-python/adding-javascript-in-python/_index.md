@@ -1,12 +1,13 @@
 ---
-title: Menambahkan JavaScript dalam Python
+title: Menambahkan JavaScript di Python
+linktitle: Menambahkan JavaScript di Python
 type: docs
 weight: 10
 url: /id/java/adding-javascript-in-python/
-lastmod: "2021-06-05"
+description: Cari tahu cara menyematkan kode JavaScript dalam dokumen PDF menggunakan Python dan Aspose.PDF untuk meningkatkan interaktivitas.
+lastmod: "2026-09-29"
 ---
-
-Untuk menambahkan JavaScript menggunakan Aspose.PDF Java dalam Python, cukup panggil metode AddJavascript() dari kelas Document.
+Untuk menambahkan Add Javascript menggunakan Aspose.PDF Java di Python, cukup panggil metode AddJavascript() dari kelas Document.
 
 ```python
 
@@ -17,22 +18,22 @@ pdf=self.dataDir + 'Template.pdf'
 javaScript = self.JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
 doc.setOpenAction(javaScript)
-js=self.JavascriptAction("app.alert('halaman 2 dibuka')")
+js=self.JavascriptAction("app.alert('page 2 is opened')")
 
-# Menambahkan JavaScript di Tingkat Halaman
+# Adding JavaScript at Page Level
 doc.getPages.get_Item(2)
 doc.getActions().setOnOpen(js())
-doc.getPages().get_Item(2).getActions().setOnClose(self.JavascriptAction("app.alert('halaman 2 ditutup')"))
+doc.getPages().get_Item(2).getActions().setOnClose(self.JavascriptAction("app.alert('page 2 is closed')"))
 
-# Simpan Dokumen PDF
+# Save PDF Document
 doc.save(self.dataDir + "JavaScript-Added.pdf")
 
-print "JavaScript berhasil ditambahkan, silakan periksa file keluaran."
+print "Added JavaScript Successfully, please check the output file."
 
 ```
 
-**Unduh Kode Berjalan**
+**Unduh Kode yang Berjalan**
 
-Unduh **Tambahkan Javascript (Aspose.PDF)** dari salah satu situs pemrograman sosial yang disebutkan di bawah ini:
+Unduh **Add Javascript (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)

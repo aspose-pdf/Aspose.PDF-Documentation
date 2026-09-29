@@ -1,184 +1,165 @@
 ---
-title: Ekstrak data dari AcroForm
-linktitle: Ekstrak data dari AcroForm
+title: Ekstrak Data dari AcroForm menggunakan Java
+linktitle: Ekstrak Data dari AcroForm
 type: docs
 weight: 50
 url: /id/java/extract-data-from-acroform/
-description: AcroForms ada di banyak dokumen PDF. Artikel ini bertujuan untuk membantu Anda memahami cara mengekstrak data dari AcroForms menggunakan Java dan Aspose.PDF.
-lastmod: "2021-06-05"
+description: Aspose.PDF memudahkan mengekstrak data bidang formulir dari file PDF. Pelajari cara mengekstrak data dari AcroForms dan menyimpannya ke dalam format JSON, XML, atau FDF.
+lastmod: "2026-09-29"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Cara Mengekstrak Data dari AcroForm melalui Java
+Abstract: Artikel ini menjelaskan cara mengekstrak dan mengekspor data AcroForm dari file PDF dengan Aspose.PDF for Java. Ini mencakup membaca semua bidang formulir, mengambil nilai bidang berdasarkan nama, mengekspor data bidang ke JSON, dan menulis data formulir ke format XML, FDF, dan XFDF.
 ---
 
-## Ekstrak bidang formulir dari dokumen PDF
+## Ekstrak field formulir dari dokumen PDF
 
-Aspose.PDF untuk Java tidak hanya memungkinkan Anda membuat dan mengisi bidang formulir, tetapi juga memudahkan untuk mengekstrak data bidang formulir atau informasi bidang formulir dari file PDF.
+Gunakan `com.aspose.pdf.facades.Form` untuk membaca nama field dan nilai tanpa melalui model objek dokumen secara lengkap.
 
-Misalkan kita tidak mengetahui nama-nama bidang formulir terlebih dahulu. Maka kita harus mengiterasi setiap halaman di PDF untuk mengekstrak informasi tentang semua AcroForm di PDF serta nilai dari bidang formulir. Untuk mendapatkan akses ke formulir kita perlu menggunakan metode [getForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--).
+1. Buka formulir PDF sumber dengan [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade sehingga field AcroForm dapat dibaca tanpa menelusuri seluruh model objek dokumen.
+1. Panggil `getFieldNames()` untuk mengumpulkan semua pengidentifikasi bidang yang ada di formulir.
+1. Iterasi melalui nama-nama field tersebut dan panggil `getField(fieldName)` untuk membaca setiap nilai field.
+1. Bangun string output dari pasangan kunci-nilai yang diekstrak dan cetak data formulir yang teragregasi.
+1. Tutup [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad di `finally` blok.
 
 ```java
-public static void ExtractFormFields() {
-    String path= "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(path);
-    // Dapatkan nilai dari semua bidang
-    for (com.aspose.pdf.Field formField : document.getForm().getFields()) {
-        System.out.println("Nama Bidang :" + formField.getPartialName());
-        System.out.println("Nilai : " + formField.getValue());
+public static void extractFormFields(Path inputFile) {
+    Form form = new Form(inputFile.toString());
+    try {
+        StringBuilder formValues = new StringBuilder("{");
+        String[] fieldNames = form.getFieldNames();
+        for (int i = 0; i < fieldNames.length; i++) {
+            if (i > 0) {
+                formValues.append(", ");
+            }
+            formValues.append(fieldNames[i]).append("=").append(form.getField(fieldNames[i]));
+        }
+        formValues.append("}");
+        System.out.println(formValues);
+    } finally {
+        form.close();
     }
 }
 ```
 
+## Ambil nilai field formulir berdasarkan Nama
 
-Jika Anda mengetahui nama dari field formulir yang ingin Anda ekstrak nilainya, maka Anda dapat menggunakan indexer dalam koleksi Documents.Form untuk dengan cepat mengambil data ini.
+Ketika Anda mengetahui nama bidang yang tepat yang didefinisikan dalam formulir PDF, Anda dapat mengambil nilainya secara langsung dengan `getField(fieldName)`
+tanpa mengiterasi seluruh koleksi bidang.
 
-## Mengambil nilai field formulir berdasarkan judul
-
-Properti Value dari field formulir memungkinkan Anda untuk mendapatkan nilai dari field tertentu. Untuk mendapatkan nilainya, dapatkan field formulir dari [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) objek [koleksi field formulir](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getForm--). Contoh ini memilih [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField) dan mengambil nilainya menggunakan metode [getValue](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField#getValue--).
+1. Buka formulir PDF sumber dengan [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad.
+1. Panggil `getField(fieldName)` dengan nama bidang yang diminta untuk membaca nilai saat ini dari data AcroForm.
+1. Cetak nilai bidang yang diekstrak.
+1. Tutup [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad di `finally` blok.
 
 ```java
-public static void ExtractFormDataByName() {
-    String fileName = _dataDir+"/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(fileName);        
-    com.aspose.pdf.TextBoxField textBoxField1 = (com.aspose.pdf.TextBoxField)document.getForm().get("Last Name");
-
-    System.out.println("Last Name :" + textBoxField1.getValue());
+public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
+    Form form = new Form(inputFile.toString());
+    try {
+        String formValue = form.getField(fieldName);
+        System.out.println(formValue);
+    } finally {
+        form.close();
+    }
 }
 ```
-
 
 ## Ekstrak bidang formulir dari dokumen PDF ke JSON
 
-Untuk mengekspor data formulir ke JSON, kami merekomendasikan menggunakan pustaka pihak ketiga seperti [Gson](https://github.com/google/gson).
-Cuplikan berikut menunjukkan cara mengekspor `Name` dan `Value` ke JSON:
+Nilai bidang formulir juga dapat diekstrak dan disimpan sebagai JSON. Ini berguna ketika data formulir PDF perlu dikonsumsi oleh
+aplikasi web, API, atau sistem lain yang bekerja dengan JSON.
+
+1. Buka formulir PDF sumber dengan [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad.
+1. Panggil `getFieldNames()` untuk mengumpulkan semua pengidentifikasi bidang yang tersedia dari AcroForm.
+1. Iterasikan melalui bidang-bidang tersebut, escape nama dan nilai, dan bangun string objek JSON.
+1. Tuliskan hasil JSON ke file output.
+1. Tutup [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad di `finally` blok.
 
 ```java
-public static void ExtractFormFieldsToJson() {
-    String path = "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document(path);
-
-    java.util.List<FormElement> formData = new java.util.ArrayList<FormElement>();
-    for (com.aspose.pdf.Field formField : document.getForm().getFields()) {
-        formData.add(new FormElement(formField.getPartialName(), formField.getValue()));
-    }
-
-    Gson gson = new Gson();
-    String jsonString = gson.toJson(formData);
-    System.out.println(jsonString);
-}
-```
-
-Dalam contoh ini kami menggunakan kelas tambahan
-
-```java
-public class FormElement {
-    public FormElement(String partialName, String Value) {
-        this.Name = partialName;
-        this.Value = Value;
-    }
-    public String Name;
-    public String Value;
-}
-```
-
-
-## Ekstrak Data ke XML dari File PDF
-
-Kelas Form memungkinkan Anda untuk mengekspor data ke file XML dari file PDF menggunakan metode ExportXml. Untuk mengekspor data ke XML, Anda perlu membuat objek dari kelas Form dan kemudian memanggil metode ExportXml menggunakan objek FileStream. Akhirnya, Anda dapat menutup objek FileStream dan membuang objek Form. Cuplikan kode berikut menunjukkan cara mengekspor data ke file XML.
-
-```java
-public static void ExtractFormFieldsToXML() {
-
-    String dataDir = "/home/admin/pdf-examples/Samples/StudentInfoFormElectronic.pdf";
-
-    // Buka dokumen
-    com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form();
-    form.bindPdf(dataDir + "input.pdf");
-
+public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form(inputFile.toString());
     try {
-        // Buat file XML.
-        FileOutputStream xmlOutputStream;
-
-        xmlOutputStream = new FileOutputStream(dataDir + "input.xml");
-        // Ekspor data
-        form.exportXml(xmlOutputStream);
-
-        // Tutup file stream
-        xmlOutputStream.close();
-
-    } catch (IOException e) {
-
-        e.printStackTrace();
+        StringBuilder json = new StringBuilder();
+        json.append("{\n");
+        String[] fieldNames = form.getFieldNames();
+        for (int i = 0; i < fieldNames.length; i++) {
+            String fieldName = fieldNames[i];
+            json.append("    \"").append(escapeJson(fieldName)).append("\": \"")
+                    .append(escapeJson(form.getField(fieldName))).append("\"");
+            if (i < fieldNames.length - 1) {
+                json.append(",");
+            }
+            json.append("\n");
+        }
+        json.append("}\n");
+        Files.writeString(outputFile, json.toString());
+    } finally {
+        form.close();
     }
-
-    // Tutup dokumen
-    form.dispose();
-    ;
 }
 ```
 
+## Ekspor data formulir ke XML dari file PDF
+
+Ekspor XML berguna ketika data formulir PDF perlu dikonsumsi oleh sistem yang bekerja dengan data XML terstruktur.
+
+1. Buat [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad tanpa mengikat dokumen terlebih dahulu.
+1. Buka aliran output untuk file XML dan hubungkan PDF sumber ke facade dengan `bindPdf(...)`.
+1. Panggil `exportXml(stream)` jadi data bidang formulir saat ini diserialkan sebagai XML.
+1. Tutup [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad setelah ekspor selesai.
+
+```java
+public static void extractDataToXml(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportXml(stream);
+    } finally {
+        form.close();
+    }
+}
+```
 
 ## Ekspor Data ke FDF dari File PDF
 
-Untuk mengekspor data formulir PDF ke file XFDF, kita dapat menggunakan metode [exportFdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportFdf-java.io.OutputStream-) dalam kelas [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form).
+FDF (Forms Data Format) biasanya digunakan untuk menukar data bidang AcroForm secara independen dari dokumen PDF.
 
-Harap dicatat, bahwa ini adalah kelas dari `com.aspose.pdf.facades`. Meskipun namanya mirip, kelas ini memiliki tujuan yang sedikit berbeda.
-
-Untuk mengekspor data ke FDF, Anda perlu membuat objek dari kelas `Form` dan kemudian memanggil metode `exportXfdf` menggunakan objek `OutputStream`. Cuplikan kode berikut menunjukkan kepada Anda bagaimana mengekspor data ke file XFDF.
+1. Buat [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad tanpa mengikat dokumen terlebih dahulu.
+1. Buka aliran output untuk file FDF dan ikat PDF sumber ke facade dengan `bindPdf(...)`.
+1. Panggil `exportFdf(stream)` jadi data bidang formulir diserialkan dalam format FDF.
+1. Tutup [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad setelah ekspor selesai.
 
 ```java
- public static void ExtractFormExportFDF() {
-        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-        String fdfFileName = Paths.get(_dataDir, "student.fdf").toString();
-        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
-
-        OutputStream fdfOutputStream;
-        try {
-
-            fdfOutputStream = new FileOutputStream(fdfFileName);
-
-            // Ekspor data
-            form.exportFdf(fdfOutputStream);
-
-            // Tutup file stream
-            fdfOutputStream.close();
-
-        } catch (IOException e) {
-            // TODO: tangani pengecualian
-            e.printStackTrace();
-        }
-
+public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportFdf(stream);
+    } finally {
+        form.close();
     }
+}
 ```
-
 
 ## Ekspor Data ke XFDF dari File PDF
 
-Untuk mengekspor data formulir PDF ke file XFDF, kita dapat menggunakan metode [exportXfdf](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form#exportXfdf-java.io.OutputStream-) dalam kelas [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/Form).
+XFDF adalah representasi berbasis XML dari Forms Data Format dan memudahkan pertukaran data formulir dengan sistem yang bekerja dengan XML.
 
-Untuk mengekspor data ke XFDF, Anda perlu membuat objek dari kelas `Form` dan kemudian memanggil metode `exportXfdf` menggunakan objek `OutputStream`.
-Cuplikan kode berikut menunjukkan cara mengekspor data ke file XFDF.
+1. Buat [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad tanpa mengikat dokumen terlebih dahulu.
+1. Buka aliran output untuk file XFDF dan kaitkan PDF sumber ke antarmuka dengan `bindPdf(...)`.
+1. Panggil `exportXfdf(stream)` jadi data field formulir diserialkan dalam format XFDF.
+1. Tutup [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad setelah ekspor selesai.
 
 ```java
-public static void ExtractFormExportXFDF() {
-        String pdfFileName = Paths.get(_dataDir, "StudentInfoFormElectronic.pdf").toString();
-        String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-        com.aspose.pdf.facades.Form form = new com.aspose.pdf.facades.Form(pdfFileName);
-
-        OutputStream fdfOutputStream;
-        try {
-
-            fdfOutputStream = new FileOutputStream(fdfFileName);
-
-            // Ekspor data
-            form.exportXfdf(fdfOutputStream);
-
-            // Tutup file stream
-            fdfOutputStream.close();
-
-        } catch (IOException e) {
-            // TODO: tangani pengecualian
-            e.printStackTrace();
-        }
+public static void extractDataToXfdf(Path inputFile, Path outputFile) throws Exception {
+    Form form = new Form();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        form.bindPdf(inputFile.toString());
+        form.exportXfdf(stream);
+    } finally {
+        form.close();
     }
+}
 ```

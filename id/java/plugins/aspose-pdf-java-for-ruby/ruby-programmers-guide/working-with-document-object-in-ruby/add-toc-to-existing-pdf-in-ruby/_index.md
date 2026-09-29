@@ -1,94 +1,94 @@
 ---
-title: Tambahkan Daftar Isi ke PDF yang Ada di Ruby
+title: Tambahkan TOC ke PDF yang Ada di Ruby
+linktitle: Tambahkan TOC ke PDF yang Ada di Ruby
 type: docs
 weight: 30
 url: /id/java/add-toc-to-existing-pdf-in-ruby/
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan daftar isi ke PDF yang ada di Ruby menggunakan Aspose.PDF untuk meningkatkan navigasi dokumen.
+lastmod: "2026-09-29"
 ---
+## Aspose.PDF - Tambahkan TOC
 
-## Aspose.PDF - Tambahkan Daftar Isi
-
-<ins>Untuk menambahkan Daftar Isi dalam dokumen Pdf menggunakan **Aspose.PDF Java untuk Ruby**, cukup panggil modul **AddToc**.
+<ins>Untuk menambahkan TOC dalam dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **AddToc**.
 
 Kode Ruby
 
 ```java
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Dapatkan akses ke halaman pertama file PDF
+# Get access to first page of PDF file
 
 toc_page = doc.getPages().insert(1)
 
-# Buat objek untuk merepresentasikan informasi Daftar Isi
+# Create object to represent TOC information
 
 toc_info = Rjb::import('com.aspose.pdf.TocInfo').new
 
-title = Rjb::import('com.aspose.pdf.TextFragment').new("Daftar Isi")
+title = Rjb::import('com.aspose.pdf.TextFragment').new("Table Of Contents")
 
 title.getTextState().setFontSize(20)
 
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# Tetapkan judul untuk Daftar Isi
+# Set the title for TOC
 
 toc_info.setTitle(title)
 
 toc_page.setTocInfo(toc_info)
 
-# Buat objek string yang akan digunakan sebagai elemen Daftar Isi
+# Create string objects which will be used as TOC elements
 
-titles = Array["Halaman pertama", "Halaman kedua"]
+titles = Array["First page", "Second page"]
 
 i = 0
 
 while i < 2
 
-    # Buat objek Heading
+В В В  # Create Heading object
 
-    heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
+В В В  heading2 = Rjb::import('com.aspose.pdf.Heading').new(1)
 
-    segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
+В В В  segment2 = Rjb::import('com.aspose.pdf.TextSegment').new
 
-    heading2.setTocPage(toc_page)
+В В В  heading2.setTocPage(toc_page)
 
-    heading2.getSegments().add(segment2)
+В В В  heading2.getSegments().add(segment2)
 
-    # Tentukan halaman tujuan untuk objek heading
+В В В  # Specify the destination page for heading object
 
-    heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
+В В В  heading2.setDestinationPage(doc.getPages().get_Item(i + 2))
 
-    # Halaman tujuan
+В В В  # Destination page
 
-    heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
+В В В  heading2.setTop(doc.getPages().get_Item(i + 2).getRect().getHeight())
 
-    # Koordinat tujuan
+В В В  # Destination coordinate
 
-    segment2.setText(titles[i])
+В В В  segment2.setText(titles[i])
 
-    # Tambahkan heading ke halaman yang berisi Daftar Isi
+В В В  # Add heading to page containing TOC
 
-    toc_page.getParagraphs().add(heading2)
+В В В  toc_page.getParagraphs().add(heading2)
 
-    i +=1
+В В В  i +=1
 
 end
 
-# Simpan Dokumen PDF
+# Save PDF Document
 
 doc.save(data_dir + "TOC.pdf")
 
-puts "Berhasil menambahkan Daftar Isi, silakan periksa file keluaran."
+puts "Added TOC Successfully, please check the output file."
 ```
 
+## <ins> **Unduh Kode yang Berjalan**
 
-## <ins> **Unduh Kode Berjalan
-
-Unduh **Tambah TOC (Aspose.PDF)** dari salah satu situs pemrograman sosial yang disebutkan di bawah ini:
+UnduhВ **Tambahkan TOC (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

@@ -1,21 +1,22 @@
 ---
-title: Unduh dan Konfigurasi Aspose.Pdf di Ruby
+title: Unduh dan Konfigurasikan Aspose.Pdf di Ruby
+linktitle: Unduh dan Konfigurasikan Aspose.Pdf di Ruby
 type: docs
 weight: 10
 url: /id/java/download-and-configure-aspose-pdf-in-ruby/
-lastmod: "2021-06-05"
+description: Mulai dengan Aspose.PDF di Ruby dengan mengunduh dan mengkonfigurasi pustaka untuk manajemen PDF yang mulus.
+lastmod: "2026-09-29"
 ---
+## Unduh Perpustakaan yang Diperlukan
 
-## Unduh Pustaka yang Diperlukan
-
-Unduh pustaka yang diperlukan yang disebutkan di bawah ini. Ini diperlukan untuk menjalankan contoh Aspose.PDF Java untuk Ruby.
+Unduh perpustakaan yang diperlukan seperti disebutkan di bawah. Ini diperlukan untuk menjalankan contoh Aspose.PDF Java untuk Ruby.
 
 - [Komponen Aspose.PDF untuk Java](https://downloads.aspose.com/pdf/java)
 
-## Unduh Contoh dari Situs Pengkodean Sosial
+## Unduh Contoh dari Situs Sosial Coding
 
-Rilis contoh berjalan berikut tersedia untuk diunduh di situs pengkodean sosial yang disebutkan di bawah ini:
+Rilis contoh yang dapat dijalankan berikut tersedia untuk diunduh di situs pengkodean sosial yang disebutkan di bawah:
 
 GitHub
 
-- [Aspose.PDF Java untuk Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
+- [Aspose.PDF Java for Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)

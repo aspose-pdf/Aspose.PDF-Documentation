@@ -1,12 +1,13 @@
 ---
-title: Mengatur Informasi File PDF di PHP
+title: Atur Informasi File PDF di PHP
+linktitle: Atur Informasi File PDF di PHP
 type: docs
 weight: 90
 url: /id/java/set-pdf-file-information-in-php/
-lastmod: "2021-06-05"
+description: Pelajari cara mengatur berbagai properti file, seperti metadata, untuk dokumen PDF di PHP menggunakan Aspose.PDF.
+lastmod: "2026-09-29"
 ---
-
-## Aspose.PDF - Mengatur Informasi File PDF
+## Aspose.PDF - Atur Informasi File PDF
 
 Untuk memperbarui informasi dokumen Pdf menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **SetPdfFileInfo**.
 
@@ -14,28 +15,28 @@ Kode PHP
 
 ```php
 
-# Buka dokumen pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Dapatkan informasi dokumen
+# Get document information
 $doc_info = $doc->getInfo();
 
-$doc_info->setAuthor("Aspose.PDF untuk java");
+$doc_info->setAuthor("Aspose.PDF for java");
 $doc_info->setCreationDate(new Date());
 $doc_info->setKeywords("Aspose.PDF, DOM, API");
 $doc_info->setModDate(new Date());
-$doc_info->setSubject("Informasi PDF");
-$doc_info->setTitle("Mengatur Informasi Dokumen PDF");
+$doc_info->setSubject("PDF Information");
+$doc_info->setTitle("Setting PDF Document Information");
 
-# simpan dokumen diperbarui dengan informasi baru
+# save update document with new information
 $doc->save($dataDir . "Updated_Information.pdf");
 
-print "Perbarui informasi dokumen, silakan periksa file keluaran.";
+print "Update document information, please check output file.";
 
 ```
 
-**Unduh Kode Berjalan**
+**Unduh Kode yang Berjalan**
 
-Unduh **Mengatur Informasi File PDF (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+UnduhВ **Set PDF File Information (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)
