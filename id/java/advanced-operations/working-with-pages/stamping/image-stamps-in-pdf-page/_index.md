@@ -1,111 +1,91 @@
 ---
-title: Tambahkan Stempel Gambar di PDF secara Programatis
-linktitle: Stempel gambar di File PDF
+title: Tambahkan Cap Gambar ke PDF dalam Java
+linktitle: Cap gambar dalam File PDF
 type: docs
 weight: 10
 url: /id/java/image-stamps-in-pdf-page/
-description: Tambahkan Stempel Gambar di dokumen PDF Anda menggunakan kelas ImageStamp dengan pustaka Aspose.PDF untuk Java.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan cap gambar ke halaman PDF dalam Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Tambahkan cap gambar dan latar belakang gambar ke halaman PDF dengan Java
+Abstract: Artikel ini menjelaskan cara menambahkan stempel gambar ke file PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup stempel gambar dengan penempatan, rotasi, opasitas, dan kontrol kualitas, serta menggunakan gambar sebagai latar belakang kotak mengambang.
 ---
+Aspose.PDF for Java mendukung stempel gambar sebagai overlay dan elemen tata letak berbasis gambar.
 
-## Tambahkan Stempel Gambar di File PDF
+## Tambahkan stempel gambar
 
-Anda dapat menggunakan kelas [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) untuk menambahkan gambar sebagai stempel di dokumen PDF. Kelas [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) menyediakan metode untuk menentukan tinggi, lebar, dan opasitas, dll.
+Gunakan contoh ini ketika sebuah halaman harus menampilkan stempel gambar dengan penempatan dan opasitas kustom.
 
-Untuk menambahkan stempel gambar:
-
-1. Buat objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dan objek ImageStamp menggunakan properti yang diperlukan.
-
-1. Panggil metode kelas [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) dari kelas [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) untuk menambahkan stempel ke PDF.
-
-Cuplikan kode berikut menunjukkan cara menambahkan stempel gambar ke file PDF.
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) dan konfigurasikan tampilannya.
+1. Tambahkan stempel ke halaman dan simpan dokumen.
 
 ```java
-public static void AddImageStampInPDFFile() {
-        // Buka dokumen
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Buat stempel gambar
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setBackground(true);
         imageStamp.setXIndent(100);
         imageStamp.setYIndent(100);
-        imageStamp.setHeight(48);
-        imageStamp.setWidth(225);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
         imageStamp.setRotate(Rotation.on270);
         imageStamp.setOpacity(0.5);
 
-        // Tambahkan stempel ke halaman tertentu
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        // Simpan dokumen keluaran
-        pdfDocument.save(_dataDir + "AddImageStamp_out.pdf");
-
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Tambahkan cap gambar dengan kontrol kualitas
 
-## Mengontrol Kualitas Gambar saat Menambahkan Cap
+Gunakan contoh ini ketika Anda perlu menyesuaikan kualitas rendering stempel gambar.
 
-Kelas [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) memungkinkan Anda menambahkan gambar sebagai cap dalam dokumen PDF. Ini juga memungkinkan Anda untuk mengontrol kualitas gambar saat menambahkan gambar sebagai watermark dalam file PDF. Untuk memungkinkan ini, sebuah metode bernama setQuality(...) telah ditambahkan ke dalam kelas [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp). Metode serupa juga dapat ditemukan dalam kelas [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/Stamp) dari paket com.aspose.pdf.facades.
-
-Cuplikan kode berikut menunjukkan kepada Anda bagaimana mengontrol kualitas gambar saat menambahkan sebagai cap dalam file PDF.
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) dan atur nilai kualitas.
+1. Tambahkan stempel ke halaman dan simpan hasilnya.
 
 ```java
- public static void ControlImageQualityWhenAddingStamp() {
-        // Buka dokumen
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Buat cap gambar
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStampWithQualityControl(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setQuality(10);
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        pdfDocument.save(_dataDir + "ControlImageQuality_out.pdf");
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Gunakan gambar sebagai latar belakang kotak mengambang
 
-## Stempel Gambar sebagai Latar Belakang di Kotak Mengambang
+Gunakan contoh ini ketika gambar harus menjadi latar belakang kontainer tata letak yang bergaya.
 
-Aspose.PDF API memungkinkan Anda menambahkan stempel gambar sebagai latar belakang di kotak mengambang. Properti BackgroundImage dari kelas FloatingBox dapat digunakan untuk mengatur stempel gambar latar belakang untuk kotak mengambang seperti yang ditunjukkan pada contoh kode berikut.
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan akses halaman target.
+1. Buat sebuah [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) dengan pengaturan teks dan batas.
+1. Atur gambar latar, tambahkan kotak ke halaman, dan simpan dokumen.
 
 ```java
-public static void ImageStampAsBackgroundInFloatingBox() {
-        // Membuat objek Dokumen
-        Document doc = new Document();
-        // Menambahkan halaman ke dokumen PDF
-        Page page = doc.getPages().add();
+public static void addImageAsBackgroundInFloatingBox(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        FloatingBox box = new FloatingBox(200.0f, 100.0f);
+        box.setLeft(40);
+        box.setTop(80);
+        box.setHorizontalAlignment(HorizontalAlignment.Center);
+        box.getParagraphs().add(new TextFragment("Text in Floating Box"));
+        box.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
 
-        // Membuat objek FloatingBox
-        FloatingBox aBox = new FloatingBox(200, 100);
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        box.setBackgroundImage(image);
+        box.setBackgroundColor(Color.getYellow());
+        page.getParagraphs().add(box);
 
-        // Mengatur posisi kiri untuk FloatingBox
-        aBox.setLeft(40);
-        // Mengatur posisi atas untuk FloatingBox
-        aBox.setTop(80);
-        // Mengatur perataan horizontal untuk FloatingBox
-        aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Menambahkan fragmen teks ke koleksi `paragraphs` dari FloatingBox
-        aBox.getParagraphs().add(new TextFragment("teks utama"));
-        // Mengatur batas untuk FloatingBox
-        aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
-
-        // Menambahkan gambar latar belakang
-        Image img = new Image();
-        img.setFile(_dataDir + "aspose-logo.png");
-        aBox.setBackgroundImage(img);
-
-        // Mengatur warna latar belakang untuk FloatingBox
-        aBox.setBackgroundColor(Color.getYellow());
-
-        // Menambahkan FloatingBox ke koleksi `paragraphs` dari objek halaman
-        page.getParagraphs().add(aBox);
-        // Menyimpan dokumen PDF
-        doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```

@@ -1,18 +1,20 @@
 ---
-title: Bekerja dengan Tautan dalam PDF secara Programatis
+title: Bekerja dengan Tautan PDF di Java
 linktitle: Tautan
 type: docs
 weight: 10
 url: /id/java/links/
-description: Panduan ini tentang cara menambahkan tautan halaman internal dalam PDF atau menyisipkan hyperlink situs eksternal ke PDF dalam bahasa Java.
-lastmod: "2021-06-05"
+description: Pelajari cara membuat, mengekstrak, dan memperbarui tautan internal serta eksternal dalam dokumen PDF menggunakan Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Buat, ekstrak, dan perbarui tautan PDF di Java
+Abstract: Artikel ini menjelaskan cara mengelola anotasi tautan dalam dokumen PDF menggunakan Aspose.PDF for Java. Pelajari cara membuat tautan internal, eksternal, peluncuran, dan URI, mengekstrak anotasi tautan serta hyperlink, dan memperbarui tampilan tautan atau tujuan web.
 ---
+Anotasi tautan dapat menghubungkan pengguna ke halaman dalam dokumen yang sama, berkas eksternal, sumber daya web, atau target peluncuran aplikasi.
 
-Tautan memungkinkan Anda melompat ke lokasi lain dalam dokumen yang sama, ke dokumen elektronik lain termasuk lampiran, atau ke situs web. Anda dapat menggunakan tautan untuk memulai tindakan atau untuk memastikan bahwa pembaca Anda memiliki akses langsung ke informasi terkait.
-
-- [Buat Tautan](/pdf/id/java/create-links/) - pelajari cara sederhana membuat tautan dalam file PDF Anda menggunakan Java.
-- [Perbarui Tautan](/pdf/id/java/update-links) - coba atur target ke PDF, coba atur tujuan tautan ke alamat web, coba atur target tautan ke file PDF lain, perbarui warna teks tautan.
-- [Ekstrak Tautan](/pdf/id/java/extract-links) - ekstrak tautan dari file PDF menggunakan kelas AnnotationSelector.
+- [Buat tautan PDF](/pdf/id/java/create-links/)
+- [Ekstrak tautan PDF](/pdf/id/java/extract-links/)
+- [Perbarui tautan PDF](/pdf/id/java/update-links/)

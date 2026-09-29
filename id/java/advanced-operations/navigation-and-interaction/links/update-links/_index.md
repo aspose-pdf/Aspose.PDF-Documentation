@@ -1,135 +1,96 @@
 ---
-title: Perbarui Tautan dalam PDF
+title: Perbarui Tautan PDF di Java
 linktitle: Perbarui Tautan
 type: docs
 weight: 20
 url: /id/java/update-links/
-description: Memperbarui tautan dalam PDF secara programatis. Panduan ini tentang cara memperbarui tautan dalam PDF dalam bahasa Java.
-lastmod: "2021-06-05"
+description: Pelajari cara memperbarui tampilan tautan PDF dan tujuan di Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Perbarui tampilan anotasi tautan dan tujuan web dalam file PDF dengan Java
+Abstract: Artikel ini menunjukkan cara memperbarui anotasi tautan yang ada menggunakan Aspose.PDF for Java. Contoh-contoh menunjukkan perubahan warna teks yang dicakup oleh tautan, memperbarui warna anotasi tautan, dan mengganti URI target untuk tautan web.
 ---
+Tautan yang ada dapat diedit dengan menemukan anotasi tautan pada halaman dan memperbarui baik penampilannya maupun aksinya.
 
-## Perbarui Tautan dalam File PDF
+## Perbarui warna teks yang ditautkan
 
-Seperti dibahas dalam Menambahkan Hyperlink dalam File PDF, kelas [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) memungkinkan penambahan tautan dalam file PDF. Ada juga kelas serupa yang digunakan untuk mendapatkan tautan yang ada dari dalam file PDF. Gunakan ini jika Anda perlu memperbarui tautan yang ada. Untuk memperbarui tautan yang ada:
+Gunakan contoh ini ketika area teks yang dicakup oleh anotasi tautan harus diwarnai ulang.
 
-1. Muat file PDF.
-1. Pergi ke halaman tertentu dalam file PDF.
-1. Tentukan tujuan tautan menggunakan properti Destination dari objek [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction).
-
-1. Halaman tujuan ditentukan menggunakan konstruktor [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination).
-
-### Setel Target Tautan ke Halaman dalam Dokumen yang Sama
-
-Cuplikan kode berikut menunjukkan cara memperbarui tautan dalam file PDF dan menetapkan targetnya ke halaman kedua dari dokumen.
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Temukan anotasi tautan dan buat persegi pencarian teks dari setiap area anotasi.
+1. Ubah warna fragmen teks yang cocok dan simpan dokumen.
 
 ```java
-    public static void SetLinkTargetToAPageInTheSameDocument() {
-        
-        // Memuat file PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-        // Mendapatkan anotasi tautan pertama dari halaman pertama dokumen
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        // Modifikasi tautan: ubah tujuan tautan
-        GoToAction goToAction = (GoToAction)linkAnnot.getAction();
-        // Menentukan tujuan untuk objek tautan
-        // Mewakili tujuan eksplisit yang menampilkan halaman dengan koordinat (kiri, atas) diposisikan di sudut kiri atas 
-        // jendela dan isi halaman diperbesar dengan faktor zoom.
-        // Parameter pertama adalah nomor halaman tujuan.
-        // Yang kedua adalah koordinat kiri
-        // Yang ketiga adalah koordinat atas
-        // Argumen keempat adalah faktor zoom saat menampilkan halaman yang bersangkutan. Menggunakan 2 berarti halaman akan ditampilkan dengan zoom 200%
-        goToAction.setDestination(new XYZExplicitDestination(1, 1, 2, 2 ));
-        
-        // Menyimpan dokumen dengan tautan yang diperbarui
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-
-### Mengatur Tujuan Tautan ke Alamat Web
-
-Untuk memperbarui hyperlink agar mengarah ke alamat web, buat objek [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction) dan masukkan ke properti Action dari LinkAnnotation. Cuplikan kode berikut menunjukkan cara memperbarui tautan dalam file PDF dan menetapkan targetnya ke alamat web.
-
-```java
-    public static void SetLinkDestinationToWebAddress() {        
-        // Memuat file PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-    
-        // Mendapatkan anotasi tautan pertama dari halaman pertama dokumen
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        // Modifikasi tautan: ubah aksi tautan dan tetapkan target sebagai alamat web
-        linkAnnot.setAction(new GoToURIAction("www.aspose.com"));
-        
-        // Simpan dokumen dengan tautan yang diperbarui
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-
-### Set Link Target to Another PDF File
-
-Cuplikan kode berikut menunjukkan cara memperbarui tautan dalam file PDF dan mengatur targetnya ke file PDF lain.
-
-```java
-    public static void SetLinkTargetToAnotherPDFFile() {        
-        // Memuat file PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-    
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        GoToRemoteAction goToR = (GoToRemoteAction)linkAnnot.getAction();
-        // Baris berikut memperbarui tujuan, tidak memperbarui file
-        goToR.setDestination(new XYZExplicitDestination(2, 0, 0, 1.5));
-        // Baris berikut memperbarui file
-        goToR.setFile (new FileSpecification(_dataDir +  "input.pdf"));
-
-        // Menyimpan dokumen dengan tautan yang diperbarui
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-### Update LinkAnnotation Text Color
-
-Anotasi tautan tidak mengandung teks.
- Sebaliknya, teks ditempatkan dalam konten halaman di bawah anotasi. Oleh karena itu, untuk mengubah warna teks, ganti warna teks halaman alih-alih mencoba mengubah warna anotasi. Potongan kode berikut menunjukkan cara memperbarui warna anotasi tautan dalam file PDF.
-
-```java
-    public static void UpdateLinkAnnotationTextColor () {        
-        // Muat file PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        for (Annotation annotation : page.getAnnotations())
-        {
-            if (annotation.getAnnotationType() == AnnotationType.Link)
-            {
-                // Cari teks di bawah anotasi
-                TextFragmentAbsorber ta = new TextFragmentAbsorber();
+public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link) {
+                TextFragmentAbsorber absorber = new TextFragmentAbsorber();
                 Rectangle rect = annotation.getRect();
-                rect.setLLX(rect.getLLX()-10);
-                rect.setLLY(rect.getLLY()-10);
-                rect.setURX(rect.getURX()+ 10);
-                rect.setURY(rect.getURY()+ 10);
-
-                ta.setTextSearchOptions(new TextSearchOptions(rect));
-                ta.visit(page);
-                // Ubah warna teks.
-                for (TextFragment tf : ta.getTextFragments())
-                {
-                    tf.getTextState().setForegroundColor(Color.getRed());
+                rect.setLLX(rect.getLLX() - 2);
+                rect.setLLY(rect.getLLY() - 2);
+                rect.setURX(rect.getURX() + 2);
+                rect.setURY(rect.getURY() + 2);
+                absorber.setTextSearchOptions(new TextSearchOptions(rect));
+                absorber.visit(document.getPages().get_Item(1));
+                for (TextFragment textFragment : absorber.getTextFragments()) {
+                    textFragment.getTextState().setForegroundColor(Color.getRed());
                 }
             }
-        
-        }                       
-        // Simpan dokumen dengan tautan yang diperbarui
-        document.save(_dataDir + "UpdateLinkTextColor_out.pdf");        
+        }
+
+        document.save(outputFile.toString());
     }
+}
+```
+
+## Perbarui warna batas tautan
+
+Gunakan contoh ini ketika warna yang terlihat dari anotasi tautan yang ada harus diubah.
+
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasi melalui anotasi halaman dan filter untuk [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) objek.
+1. Perbarui warna anotasi tautan dan simpan dokumen.
+
+```java
+public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                linkAnnotation.setColor(Color.getRed());
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Perbarui tujuan tautan web
+
+Gunakan contoh ini ketika tautan web yang ada harus mengarah ke URI baru.
+
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Temukan anotasi tautan yang tindakannya adalah [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Ganti URI dan simpan dokumen yang diperbarui.
+
+```java
+public static void linkAnnotationUpdateWebDestination(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    action.setURI("https://www.aspose.com");
+                }
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
 ```

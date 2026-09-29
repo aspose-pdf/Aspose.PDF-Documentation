@@ -1,20 +1,21 @@
 ---
-title: Stamping
-linktitle: Stamping
+title: Stempel Halaman PDF di Java
+linktitle: Stempel
 type: docs
 weight: 120
 url: /id/java/stamping/
-description: Bagian ini menjelaskan cara menambahkan cap gambar dan cap teks ke halaman PDF.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan nomor halaman, stempel halaman, stempel gambar, dan stempel teks ke halaman PDF di Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Tambahkan stempel gambar, nomor halaman, halaman, dan teks ke file PDF dengan Java
+Abstract: Artikel ini menjelaskan cara menambahkan stempel ke dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup stempel gambar, gambar latar belakang dalam kotak mengambang, stempel halaman dari PDF lain, stempel nomor halaman, penomoran angka Romawi, dan stempel teks.
 ---
+Aspose.PDF for Java mendukung berbagai model stamping tergantung apakah kontennya berupa gambar, teks, halaman PDF, atau overlay nomor halaman.
 
-Cap dalam dokumen PDF analog dengan menerapkan cap karet pada dokumen kertas. Cap dalam file PDF memberikan informasi tambahan untuk file PDF, seperti melindungi file PDF agar tidak digunakan oleh orang lain dan untuk mengonfirmasi keamanan isi file PDF. **Aspose.PDF for Java** memungkinkan penambahan cap gambar atau teks dalam dokumen PDF Anda.
-
-Periksa bagian berikut untuk mempelajari cara menambahkan cap dengan Java:
-
-- [Tambah cap gambar di halaman PDF](/pdf/id/java/image-stamps-in-pdf-page/) - tambahkan cap gambar, kontrol kualitas gambar, cap gambar sebagai latar belakang file PDF Anda.
-- [Tambah cap teks dalam file PDF](/pdf/id/java/text-stamps-in-the-pdf-file/) - tambahkan cap teks, tentukan perataan untuk objek TextStamp, isi teks stroke sebagai cap dalam PDF
-- [Tambah cap halaman dalam PDF](/pdf/id/java/page-stamps-in-the-pdf-file/) - tambahkan cap kompleks berdasarkan halaman dari PDF lain.
+- [Tambahkan nomor halaman](/java/add-page-number/)
+- [Tambahkan stempel halaman](/java/page-stamps-in-the-pdf-file/)
+- [Tambahkan stempel gambar](/java/image-stamps-in-pdf-page/)
+- [Tambahkan stempel teks](/java/text-stamps-in-the-pdf-file/)

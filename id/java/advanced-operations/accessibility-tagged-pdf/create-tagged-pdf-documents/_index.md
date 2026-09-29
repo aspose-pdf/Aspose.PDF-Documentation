@@ -1,266 +1,381 @@
 ---
-title: Membuat PDF Bertag
-linktitle: Membuat PDF Bertag
+title: Buat Tagged PDF di Java
+linktitle: Buat Tagged PDF
 type: docs
 weight: 10
-lastmod: "2021-06-05"
-url: /id/java/create-tagged-pdf-documents/
-description: Artikel ini menjelaskan cara membuat elemen struktur untuk dokumen PDF bertag secara programatis menggunakan Aspose.PDF untuk Java.
+url: /id/java/create-tagged-pdf/
+description: Pelajari cara membuat dokumen PDF yang ditandai dalam Java dengan Aspose.PDF, termasuk elemen struktur PDF/UA, form fields yang dapat diakses, halaman TOC, dan penandaan otomatis.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+Membuat PDF ber-tag berarti menambahkan elemen struktur yang membuat dokumen lebih mudah divalidasi terhadap persyaratan aksesibilitas PDF/UA dan lebih mudah diinterpretasikan oleh teknologi bantuan.
 
-## Membuat Elemen Struktur
+## Buat dokumen PDF ber‑tag sederhana
 
-Untuk membuat elemen struktur dalam Dokumen PDF Bertag, Aspose.PDF menawarkan metode untuk membuat elemen struktur menggunakan Antarmuka [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). Cuplikan kode berikut menunjukkan cara membuat elemen struktur dari PDF Bertag:
+Gunakan contoh ini ketika Anda membutuhkan PDF ber‑tag minimal dengan judul dan paragraf dalam pohon struktur logis.
+
+1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan dapatkan itu [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. Set judul dokumen dan bahasa, lalu buat elemen header dan paragraf yang diperlukan.
+1. Tambahkan Structure Elements ke elemen root dan simpan dokumen.
 
 ```java
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// Jalur ke direktori dokumen.
-String path = "pathTodir";
+public static void createTaggedPdfDocumentSimple(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// Buat Dokumen Pdf
-Document document = new Document();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Dapatkan Konten untuk bekerja dengan TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        HeaderElement mainHeader = taggedContent.createHeaderElement();
+        mainHeader.setText("Main Header");
 
-// Setel Judul dan Bahasa untuk Dokumen
-taggedContent.setTitle("Dokumen Pdf Bertag");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        paragraphElement.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. "
+                + "Cras pellentesque libero semper, gravida magna sed, luctus leo.");
 
-// Buat Elemen Pengelompokan
-PartElement partElement = taggedContent.createPartElement();
-ArtElement artElement = taggedContent.createArtElement();
-SectElement sectElement = taggedContent.createSectElement();
-DivElement divElement = taggedContent.createDivElement();
-BlockQuoteElement blockQuoteElement = taggedContent.createBlockQuoteElement();
-CaptionElement captionElement = taggedContent.createCaptionElement();
-TOCElement tocElement = taggedContent.createTOCElement();
-TOCIElement tociElement = taggedContent.createTOCIElement();
-IndexElement indexElement = taggedContent.createIndexElement();
-NonStructElement nonStructElement = taggedContent.createNonStructElement();
-PrivateElement privateElement = taggedContent.createPrivateElement();
-
-// Buat Elemen Struktur Tingkat Blok Teks
-ParagraphElement paragraphElement = taggedContent.createParagraphElement();
-HeaderElement headerElement = taggedContent.createHeaderElement();
-HeaderElement h1Element = taggedContent.createHeaderElement(1);
-
-// Buat Elemen Struktur Tingkat Garis Teks
-SpanElement spanElement = taggedContent.createSpanElement();
-QuoteElement quoteElement = taggedContent.createQuoteElement();
-NoteElement noteElement = taggedContent.createNoteElement();
-
-// Buat Elemen Struktur Ilustrasi
-FigureElement figureElement = taggedContent.createFigureElement();
-FormulaElement formulaElement = taggedContent.createFormulaElement();
-
-// Metode sedang dalam pengembangan
-ListElement listElement = taggedContent.createListElement();
-TableElement tableElement = taggedContent.createTableElement();
-ReferenceElement referenceElement = taggedContent.createReferenceElement();
-BibEntryElement bibEntryElement = taggedContent.createBibEntryElement();
-CodeElement codeElement = taggedContent.createCodeElement();
-LinkElement linkElement = taggedContent.createLinkElement();
-AnnotElement annotElement = taggedContent.createAnnotElement();
-RubyElement rubyElement = taggedContent.createRubyElement();
-WarichuElement warichuElement = taggedContent.createWarichuElement();
-FormElement formElement = taggedContent.createFormElement();
-
-// Simpan Dokumen Pdf Bertag
-document.save(path + "StructureElements.pdf");
+        rootElement.appendChild(mainHeader, true);
+        rootElement.appendChild(paragraphElement, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Buat dokumen PDF ber-tag lanjutan
 
-## Membuat Pohon Elemen Struktur
+Contoh ini membangun struktur yang lebih kaya dengan mencampur heading, paragraf, span, kutipan, dan pengaturan layout yang eksplisit.
 
-Untuk membuat pohon elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan metode untuk membuat pohon elemen struktur menggunakan Antarmuka [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). Cuplikan kode berikut menunjukkan cara membuat pohon elemen struktur dari Dokumen PDF Berlabel:
+1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan menginisialisasi metadata konten yang ditandai.
+1. Bangun struktur heading dan paragraf, lalu tambahkan span dan elemen kutipan di dalam paragraf.
+1. Sesuaikan posisi paragraf, tambahkan elemen ke struktur akar, dan simpan dokumen.
 
 ```java
-// Untuk contoh lengkap dan file data, silakan pergi ke https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// Jalur ke direktori dokumen.
-String path = "pathTodir";
-// Buat Dokumen Pdf
-Document document = new Document();
+public static void createTaggedPdfDocumentAdv(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// Dapatkan Konten untuk bekerja dengan TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Tetapkan Judul dan Bahasa untuk Dokumen
-taggedContent.setTitle("Dokumen Pdf Berlabel");
-taggedContent.setLanguage("en-US");
+        HeaderElement header1 = taggedContent.createHeaderElement(1);
+        header1.setText("Header Level 1");
 
-// Dapatkan elemen struktur akar (Dokumen)
-StructureElement rootElement = taggedContent.getRootElement();
+        ParagraphElement paragraphWithQuotes = taggedContent.createParagraphElement();
+        paragraphWithQuotes.getStructureTextState().setFont(FontRepository.findFont("Arial"));
 
-// Buat Struktur Logis
-SectElement sect1 = taggedContent.createSectElement();
-rootElement.appendChild(sect1);
+        PositionSettings positionSettings = new PositionSettings();
+        positionSettings.setMargin(new MarginInfo(10, 5, 10, 5));
+        paragraphWithQuotes.adjustPosition(positionSettings);
 
-SectElement sect2 = taggedContent.createSectElement();
-rootElement.appendChild(sect2);
+        SpanElement spanElement1 = taggedContent.createSpanElement();
+        spanElement1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. ");
 
-DivElement div11 = taggedContent.createDivElement();
-sect1.appendChild(div11);
+        QuoteElement quoteElement = taggedContent.createQuoteElement();
+        quoteElement.setText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus.");
+        quoteElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Bold | FontStyles.Italic));
 
-DivElement div12 = taggedContent.createDivElement();
-sect1.appendChild(div12);
+        SpanElement spanElement2 = taggedContent.createSpanElement();
+        spanElement2.setText(" Sed non consectetur elit.");
 
-ArtElement art21 = taggedContent.createArtElement();
-sect2.appendChild(art21);
+        paragraphWithQuotes.appendChild(spanElement1, true);
+        paragraphWithQuotes.appendChild(quoteElement, true);
+        paragraphWithQuotes.appendChild(spanElement2, true);
 
-ArtElement art22 = taggedContent.createArtElement();
-sect2.appendChild(art22);
-
-DivElement div211 = taggedContent.createDivElement();
-art21.appendChild(div211);
-
-DivElement div212 = taggedContent.createDivElement();
-art21.appendChild(div212);
-
-DivElement div221 = taggedContent.createDivElement();
-art22.appendChild(div221);
-
-DivElement div222 = taggedContent.createDivElement();
-art22.appendChild(div222);
-
-SectElement sect3 = taggedContent.createSectElement();
-rootElement.appendChild(sect3);
-
-DivElement div31 = taggedContent.createDivElement();
-sect3.appendChild(div31);
-
-// Simpan Dokumen Pdf Berlabel
-document.save(path + "StructureElementsTree.pdf");
+        rootElement.appendChild(header1, true);
+        rootElement.appendChild(paragraphWithQuotes, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Tambahkan gaya teks ke konten bertanda
 
-## Menata Struktur Teks
+Gunakan contoh ini ketika konten paragraf ber-tag harus membawa informasi font, warna, dan gaya secara eksplisit.
 
-Untuk menata struktur teks dalam Dokumen PDF Bertanda, Aspose.PDF menawarkan properti **setFont()**, **setFontSize()**, **setFontStyle()**, dan **setForegroundColor()** dari Kelas [StructureTextState](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/StructureTextState). Cuplikan kode berikut menunjukkan cara menata struktur teks dalam Dokumen PDF Bertanda:
+1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat elemen paragraf dan konfigurasikan status teks strukturnya.
+1. Atur teks paragraf dan simpan dokumen.
 
 ```java
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// Jalur ke direktori dokumen.
-String path = "pathTodir";
-// Buat Dokumen Pdf
-Document document = new Document();
+public static void addStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// Dapatkan Konten untuk bekerja dengan TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Atur Judul dan Bahasa untuk Dokumen
-taggedContent.setTitle("Dokumen Pdf Bertanda");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraphElement, true);
 
-ParagraphElement p = taggedContent.createParagraphElement();
-taggedContent.getRootElement().appendChild(p);
+        paragraphElement.getStructureTextState().setFontSize(Nullable.of(18.0f));
+        paragraphElement.getStructureTextState().setForegroundColor(Color.getRed());
+        paragraphElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Italic));
+        paragraphElement.setText("Red italic text.");
 
-// Dalam Pengembangan
-p.getStructureTextState().setFontSize(18F);
-p.getStructureTextState().setForegroundColor(Color.getRed());
-p.getStructureTextState().setFontStyle(FontStyles.Italic);
-
-p.setText("Teks merah miring.");
-
-// Simpan Dokumen Pdf Bertanda
-document.save(path + "StyleTextStructure.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Tambahkan elemen struktur gambar
 
-## Mengilustrasikan Elemen Struktur
+Contoh ini menunjukkan cara membuat gambar berlabel dengan teks alternatif, judul, tag khusus, konten gambar, dan penempatan.
 
-Untuk mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel, Aspose.PDF menawarkan Kelas [IllustrationElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/IllustrationElement). Cuplikan kode berikut menunjukkan cara mengilustrasikan elemen struktur dalam Dokumen PDF Berlabel:
+1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), atur metadata yang dapat diakses, dan tetapkan gambar.
+1. Sesuaikan posisi gambar dan simpan dokumen.
 
 ```java
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// Jalur ke direktori dokumen.
-String path = "pathTodir";
-// Buat Dokumen Pdf
-Document document = new Document();
+public static void illustrateStructureElements(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// Dapatkan Konten untuk bekerja dengan TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Atur Judul dan Bahasa untuk Dokumen
-taggedContent.setTitle("Dokumen Pdf Berlabel");
-taggedContent.setLanguage("en-US");
+        FigureElement figure1 = taggedContent.createFigureElement();
+        taggedContent.getRootElement().appendChild(figure1, true);
+        figure1.setAlternativeText("Figure One");
+        figure1.setTitle("Image 1");
+        figure1.setTag("Fig1");
+        figure1.setImage(imageFile.toString(), 300);
 
-// Sedang Dalam Pengembangan
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setActualText("Gambar Satu");
-figure1.setTitle("Gambar 1");
-figure1.setTag("Fig1");
-figure1.setImage("image.png");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(50);
+        marginInfo.setTop(20);
+        positionSettings.setMargin(marginInfo);
+        figure1.adjustPosition(positionSettings);
 
-// Simpan Dokumen Pdf Berlabel
-document.save(path + "IllustrationStructureElements.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## Validasi PDF ber-tag untuk PDF/UA
 
-## **Membuat PDF dengan Gambar Berlabel**
+Gunakan contoh ini ketika Anda perlu memeriksa apakah PDF ber‑tag memenuhi aturan validasi PDF/UA.
 
-Untuk membuat PDF dengan Gambar Berlabel, Aspose.PDF menawarkan metode [createFigureElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) dari Antarmuka [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). Cuplikan kode berikut menunjukkan fungsionalitasnya.
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Jalankan validasi terhadap [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. Tuliskan log validasi dan cetak hasil validasi.
 
 ```java
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-Java
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("CreatePDFwithTaggedImage");
-taggedContent.setLanguage("en-US");
-
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setAlternativeText("Logo Aspose");
-figure1.setTitle("Gambar 1");
-figure1.setTag("Fig");
-// Tambahkan gambar dengan resolusi 300 DPI (secara default)
-figure1.setImage("aspose-logo.jpg");
-// Simpan Dokumen PDF
-document.save("PDFwithTaggedImage.pdf");
+public static void validateTaggedPdf(Path inputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        boolean isValid = document.validate(logFile.toString(), PdfFormat.PDF_UA_1);
+        System.out.println("Is Valid: " + isValid);
+    }
+}
 ```
 
+## Sesuaikan posisi elemen struktur
 
-## Membuat PDF dengan Teks Bertanda
+Contoh ini menerapkan pengaturan margin dan perataan eksplisit pada paragraf yang ditandai.
 
-Untuk membuat PDF dengan Teks Bertanda, Aspose.PDF menawarkan Antarmuka [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent). Cuplikan kode berikut menunjukkan fungsionalitasnya.
+1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan elemen struktur paragraf dan siapkan [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. Terapkan pengaturan posisi ke paragraf dan simpan dokumen.
 
 ```java
-// Untuk contoh lengkap dan file data, silakan kunjungi https://github.com/aspose-pdf/Aspose.PDF-for-Java
-// Jalur ke direktori dokumen.
-String dataDir = Utils.getDataDir() + "TaggedPDFs\\";
-// Buat Dokumen Pdf
-Document document = new Document();
+public static void adjustPosition(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// Dapatkan Konten untuk bekerja dengan TaggedPdf
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// Tetapkan Judul dan Bahasa untuk Dokumen
-taggedContent.setTitle("Dokumen Pdf Bertanda");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraph = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraph, true);
+        paragraph.setText("Text.");
 
-// Buat Elemen Struktur Level-Blok Teks
-HeaderElement headerElement = taggedContent.createHeaderElement();
-headerElement.setActualText("Judul 1");
-ParagraphElement paragraphElement1 = taggedContent.createParagraphElement();
-paragraphElement1.setActualText("uji 1");
-ParagraphElement paragraphElement2 = taggedContent.createParagraphElement();
-paragraphElement2.setActualText("uji 2");
-ParagraphElement paragraphElement3 = taggedContent.createParagraphElement();
-paragraphElement3.setActualText("uji 3");
-ParagraphElement paragraphElement4 = taggedContent.createParagraphElement();
-paragraphElement4.setActualText("uji 4");
-ParagraphElement paragraphElement5 = taggedContent.createParagraphElement();
-paragraphElement5.setActualText("uji 5");
-ParagraphElement paragraphElement6 = taggedContent.createParagraphElement();
-paragraphElement6.setActualText("uji 6");
-ParagraphElement paragraphElement7 = taggedContent.createParagraphElement();
-paragraphElement7.setActualText("uji 7");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(300);
+        marginInfo.setTop(20);
+        marginInfo.setRight(0);
+        marginInfo.setBottom(0);
+        positionSettings.setMargin(marginInfo);
+        positionSettings.setHorizontalAlignment(HorizontalAlignment.None);
+        positionSettings.setVerticalAlignment(VerticalAlignment.None);
+        positionSettings.setFirstParagraphInColumn(false);
+        positionSettings.setKeptWithNext(false);
+        positionSettings.setInNewPage(false);
+        positionSettings.setInLineParagraph(false);
+        paragraph.adjustPosition(positionSettings);
 
-// Simpan Dokumen PDF
-document.save(dataDir + "PDFwithTaggedText.pdf");
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Konversi PDF yang ada ke PDF/UA dengan penandaan otomatis
+
+Gunakan pendekatan ini ketika PDF yang ada harus dikonversi ke PDF/UA dan ditandai secara otomatis selama konversi.
+
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) dan aktifkan penandaan otomatis.
+1. Jalankan konversi dan simpan dokumen output.
+
+```java
+public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfFormatConversionOptions options = new PdfFormatConversionOptions(
+                logFile.toString(), PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+        AutoTaggingSettings autoTaggingSettings = new AutoTaggingSettings();
+        autoTaggingSettings.setEnableAutoTagging(true);
+        autoTaggingSettings.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Auto);
+        options.setAutoTaggingSettings(autoTaggingSettings);
+
+        document.convert(options);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Buat Tagged PDF dengan form field yang dapat diakses
+
+Contoh ini menandai field formulir tanda tangan sehingga menjadi bagian dari pohon struktur logis.
+
+1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman dengan bidang Form.
+1. Tambahkan FormField ke koleksi formulir dokumen.
+1. Buat elemen struktur Form ber-tag, kaitkan dengan field, dan simpan dokumen.
+
+```java
+public static void createPdfWithTaggedFormField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
+
+        SignatureField signatureField = new SignatureField(page, new Rectangle(50, 50, 100, 100, true));
+        signatureField.setPartialName("Signature1");
+        signatureField.setAlternateName("signature 1");
+
+        Form formFields = document.getForm();
+        formFields.add(signatureField);
+
+        FormElement form = taggedContent.createFormElement();
+        form.setAlternativeText("form 1");
+        form.tag(signatureField);
+        rootElement.appendChild(form, true);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Buat PDF ber-tag dengan halaman TOC
+
+Gunakan contoh ini ketika PDF ber‑tag perlu menyertakan halaman daftar isi dasar yang ditautkan ke heading dokumen.
+
+1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman TOC.
+1. Buat [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) dan sebuah header yang seharusnya muncul di TOC.
+1. Tautkan entri TOC ke judul dan simpan dokumen.
+
+```java
+public static void createPdfWithTocPage(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+
+        TOCElement tocElement = content.createTOCElement();
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Buat PDF bertanda lanjutan dengan halaman TOC
+
+Contoh ini membangun TOC ber‑tag yang lebih kompleks dengan judul halaman yang ditautkan, item daftar bersarang, dan beberapa tingkat heading.
+
+1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan siapkan halaman TOC dengan judul yang terlihat.
+1. Buat struktur TOC, tautkan judul dan entri TOC ke heading dan item daftar, dan tambahkan elemen konten terkait.
+1. Simpan dokumen akhir dengan struktur TOC lanjutan.
+
+```java
+public static void createPdfWithTocPageAdvanced(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+        tocPage.getTocInfo().setTitle(new TextFragment("Table of Contents"));
+
+        TOCElement tocElement = content.createTOCElement();
+        HeaderElement headerForTocPageTitle = content.createHeaderElement(1);
+        tocElement.linkTocPageTitleToHeaderElement(tocPage, headerForTocPageTitle);
+
+        rootElement.appendChild(headerForTocPageTitle, true);
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        ListElement listElement = content.createListElement();
+        for (int i = 1; i < 4; i++) {
+            ListLIElement li = content.createListLIElement();
+            listElement.appendChild(li, true);
+
+            HeaderElement subHeader = content.createHeaderElement(2);
+            subHeader.getStructureTextState().setFontSize(Nullable.of(14.0f));
+            subHeader.setLanguage("en-US");
+            subHeader.setText("1." + i + " subheader ");
+            subHeader.addEntryToTocPage(tocPage, li);
+            li.addRef(subHeader);
+
+            ParagraphElement p = content.createParagraphElement();
+            p.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+            p.setLanguage("en-US");
+
+            rootElement.appendChild(subHeader, true);
+            rootElement.appendChild(p, true);
+        }
+        toci.appendChild(listElement, true);
+
+        HeaderElement header2 = content.createHeaderElement(1);
+        header2.setText("2. Header");
+        rootElement.appendChild(header2, true);
+
+        TOCIElement toci2 = content.createTOCIElement();
+        tocElement.appendChild(toci2, true);
+        header2.addEntryToTocPage(tocPage, toci2);
+        toci2.addRef(header2);
+
+        document.save(outputFile.toString());
+    }
+}
 ```

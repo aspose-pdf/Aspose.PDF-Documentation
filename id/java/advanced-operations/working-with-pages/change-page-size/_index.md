@@ -1,95 +1,74 @@
 ---
-title: Ubah Ukuran Halaman PDF Secara Programatis
-linktitle: Ubah Ukuran Halaman
+title: Ubah Ukuran Halaman PDF dalam Java
+linktitle: Mengubah Ukuran Halaman
 type: docs
-weight: 50
+weight: 40
 url: /id/java/change-page-size/
-description: Ubah Ukuran Halaman dari file PDF Anda menggunakan pustaka Java.
-lastmod: "2021-06-05"
+description: Pelajari cara membaca dan mengubah dimensi halaman PDF dalam Java.
+lastmod: "2026-09-29"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Baca dan perbarui dimensi halaman serta kotak dengan Java
+Abstract: Artikel ini menunjukkan cara membaca dan memodifikasi dimensi halaman PDF menggunakan Aspose.PDF for Java. Ini mencakup mendapatkan ukuran halaman, mengukur ukuran halaman dengan rotasi yang diterapkan, dan memperbarui halaman pertama ke ukuran baru sambil mencetak dimensi kotak sebelum dan sesudah perubahan.
 ---
+Aspose.PDF for Java dapat melaporkan dimensi halaman dan memperbaruinya.
 
-## Ubah Ukuran Halaman PDF
+## Ubah ukuran halaman
 
-Aspose.PDF untuk Java memungkinkan Anda mengubah ukuran halaman PDF dengan baris kode sederhana dalam aplikasi Java Anda. Topik ini menjelaskan cara memperbarui/mengubah dimensi halaman (ukuran) dari file PDF yang ada.
+Gunakan contoh ini ketika Anda perlu mengubah ukuran halaman yang ada dan memeriksa kotak halaman sebelum dan sesudah perubahan.
 
-Kelas [Page](https://reference.aspose.com/pdf//java/com.aspose.pdf/page) berisi metode SetPageSize(...) yang memungkinkan Anda mengatur ukuran halaman. Cuplikan kode di bawah ini memperbarui dimensi halaman dalam beberapa langkah mudah:
-
-1. Muat file PDF sumber.
-1. Dapatkan halaman ke dalam objek [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection).
-1. Dapatkan halaman tertentu.
-1. Panggil metode SetPageSize(..) untuk memperbarui dimensinya.
-
-1. Panggil metode Save(..) dari kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) untuk menghasilkan file PDF dengan dimensi halaman yang diperbarui.
-
-{{% alert color="primary" %}}
-
-Harap diperhatikan bahwa properti tinggi dan lebar menggunakan poin sebagai unit dasar, di mana 1 inci = 72 poin dan 1 cm = 1/2.54 inci = 0.3937 inci = 28.3 poin.
-
-{{% /alert %}}
-
-Cuplikan kode berikut menunjukkan cara mengubah dimensi halaman PDF ke ukuran A4.
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Dapatkan target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan cetak nilai kotak saat ini.
+1. Atur ukuran halaman baru dan simpan dokumen.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleChangePDFPageSize {
-    // Jalur ke direktori dokumen.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ChangePDFPageSize() {
-        
-        // Buka dokumen pertama
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // Dapatkan koleksi halaman
-        PageCollection pageCollection = pdfDocument.getPages();
-
-        // Dapatkan halaman tertentu
-        Page pdfPage = pageCollection.get_Item(1);
-
-        // Set ukuran halaman sebagai A4 (11.7 x 8.3 in) dan di Aspose.Pdf, 1 inci = 72 poin
-        // Jadi dimensi A4 dalam poin akan menjadi (842.4, 597.6)
-        pdfPage.setPageSize(597.6, 842.4);
-
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        
-        // Simpan dokumen yang diperbarui
-        pdfDocument.save(_dataDir);
+public static void setPageSize(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        printBoxes("Before set", page);
+        page.setPageSize(597.6, 842.4);
+        printBoxes("After set", page);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Dapatkan ukuran halaman
 
-## Dapatkan Ukuran Halaman PDF
+Gunakan contoh ini ketika Anda perlu membaca dimensi terlihat dari sebuah halaman.
 
-Anda dapat membaca ukuran halaman PDF dari file PDF yang ada menggunakan Aspose.PDF untuk Java. Contoh kode berikut menunjukkan cara membaca dimensi halaman PDF menggunakan Java.
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Dapatkan persegi panjang halaman dengan penanganan rotasi diaktifkan.
+1. Keluarkan lebar dan tinggi halaman.
 
 ```java
-    public static void GetPDFPageSize() {
-        
-        // Buka dokumen pertama
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // Menambahkan halaman kosong ke dokumen pdf
-        Page page = pdfDocument.getPages().size() > 0 ? pdfDocument.getPages().get_Item(1) : pdfDocument.getPages().add();
-        
-        // Dapatkan informasi tinggi dan lebar halaman
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // Putar halaman pada sudut 90 derajat
-        page.setRotate (Rotation.on90);
-
-        // Dapatkan informasi tinggi dan lebar halaman
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // Simpan dokumen yang diperbarui
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        pdfDocument.save(_dataDir);
+public static void getPageSize(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle rectangle = document.getPages().get_Item(1).getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
     }
+}
+```
 
+## Dapatkan ukuran halaman dengan rotasi yang diterapkan
+
+Gunakan contoh ini ketika Anda perlu membandingkan dimensi halaman sebelum dan sesudah memperhitungkan rotasi.
+
+1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Putar target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Baca persegi panjang halaman dengan dan tanpa penanganan rotasi serta keluarkan kedua nilai tersebut.
+
+```java
+public static void getPageSizeRotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        page.setRotate(Rotation.on90);
+        Rectangle rectangle = page.getPageRect(false);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+        rectangle = page.getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+    }
 }
 ```

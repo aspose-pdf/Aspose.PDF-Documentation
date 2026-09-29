@@ -1,52 +1,44 @@
 ---
-title: Isi AcroForms
-linktitle: Isi AcroForms
+title: Isi AcroForm - Isi Formulir PDF menggunakan Java
+linktitle: Isi AcroForm
 type: docs
 weight: 20
 url: /id/java/fill-form/
-description: Bagian ini menjelaskan bagaimana mengisi bidang formulir dalam dokumen PDF dengan Aspose.PDF untuk Java.
-lastmod: "2021-06-05"
+description: Isi bidang AcroForm dalam dokumen PDF menggunakan Aspose.PDF for Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Isi bidang AcroForm dalam file PDF dengan Java
+Abstract: Artikel ini menjelaskan cara mengisi bidang AcroForm menggunakan Aspose.PDF for Java. Contoh tersebut memuat PDF melalui facade Form, mencocokkan nama bidang dengan peta nilai, memperbarui bidang yang cocok, dan menyimpan dokumen yang selesai.
 ---
+itu `Form` facade dapat digunakan untuk mengotomatisasi pengisian bidang pada AcroForm yang ada.
 
-Dokumen PDF sangat bagus, dan benar-benar jenis file yang disukai, untuk membuat Formulir.
+## Isi bidang AcroForm dengan nilai baru
 
-Aspose.PDF untuk Java memungkinkan Anda mengisi bidang formulir, mendapatkan bidang dari koleksi Form objek Dokumen.
-
-Mari kita lihat contoh berikut bagaimana menyelesaikan tugas ini:
+1. Buka dokumen PDF Form dengan [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad.
+1. Iterasikan melalui bidang Form dan perbarui entri yang cocok dengan nilai yang diberikan.
+1. Simpan dokumen PDF yang diperbarui.
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // Buka dokumen
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // Buat sebuah bidang
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Text Box");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // Tambahkan bidang ke dokumen
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // Simpan PDF yang dimodifikasi
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```

@@ -1,18 +1,19 @@
 ---
-title: Bekerja dengan Bookmark di PDF
+title: Bekerja dengan Bookmark PDF di Java
 linktitle: Bookmark
 type: docs
 weight: 30
 url: /id/java/bookmarks/
-description: Bagian ini menjelaskan cara menambahkan, menghapus, dan mendapatkan bookmark dengan Aspose.PDF untuk Java.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan, menghapus, mengambil, memperbarui, dan memperluas bookmark PDF di Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Tambahkan, periksa, perbarui, dan perluas bookmark dalam file PDF dengan Java
+Abstract: Artikel ini menjelaskan cara bekerja dengan bookmark dalam dokumen PDF menggunakan Aspose.PDF for Java. Pelajari cara membuat bookmark induk dan anak, menghapus satu atau semua bookmark, memeriksa properti bookmark, mengambil nomor halaman, memperbarui judul bookmark, dan memperluas outline secara default.
 ---
+Bookmark membantu pengguna menavigasi file PDF yang panjang dengan cepat dan menyediakan outline dokumen yang mirip dengan daftar isi.
 
-Bookmark PDF adalah alat yang berguna dan penting ketika membaca file PDF. Mereka memungkinkan pengguna untuk dengan cepat melompat ke tempat lain dalam dokumen PDF, menavigasi melalui halaman, dan dengan cepat melihat konten PDF, seperti daftar isi.
-Dalam bagian ini Anda akan belajar bagaimana:
-
-- [Menambahkan dan Menghapus Bookmark](/pdf/id/java/add-and-delete-bookmark/)
-- [Mendapatkan, Memperbarui, dan Memperluas Bookmark](/pdf/id/java/get-update-and-expand-bookmark/)
+- [Tambahkan dan hapus bookmark](/pdf/id/java/add-and-delete-bookmark/)
+- [Dapatkan, perbarui, dan perluas bookmark](/pdf/id/java/get-update-and-expand-bookmark/)

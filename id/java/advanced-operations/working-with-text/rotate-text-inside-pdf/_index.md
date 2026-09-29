@@ -1,208 +1,178 @@
 ---
-title: Memutar Teks di Dalam PDF
-linktitle: Memutar Teks di Dalam PDF
+title: Putar Teks PDF di Java
+linktitle: Putar Teks dalam PDF
 type: docs
 weight: 50
 url: /id/java/rotate-text-inside-pdf/
-description: Pelajari berbagai cara untuk memutar teks ke PDF. Aspose.PDF memungkinkan Anda untuk memutar teks ke sudut mana pun, memutar fragmen teks atau seluruh paragraf.
-lastmod: "2021-06-05"
+description: Pelajari cara memutar fragmen teks dan paragraf di dalam dokumen PDF dengan Java.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Putar fragmen teks dan paragraf dalam dokumen PDF dengan Java
+Abstract: Artikel ini menjelaskan cara memutar teks dalam dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini menunjukkan cara memutar fragmen teks individu, membuat paragraf yang berisi baris yang diputar, dan memutar paragraf teks lengkap untuk berbagai skenario tata letak.
 ---
+Aspose.PDF for Java memungkinkan Anda memutar fragmen teks individu serta seluruh paragraf teks.
 
-## Memutar Teks di Dalam PDF menggunakan Properti Rotasi
+## Putar fragmen teks individu
 
-Dengan menggunakan metode [setRotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentState#setRotation-double-) dari Kelas [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment), Anda dapat memutar teks pada berbagai sudut. Rotasi teks dapat digunakan dalam berbagai skenario pembuatan dokumen. Anda dapat menentukan sudut rotasi dalam derajat untuk memutar teks sesuai kebutuhan Anda. Silakan periksa berbagai skenario berikut, di mana Anda dapat mengimplementasikan rotasi teks.
+Gunakan contoh ini ketika beberapa fragmen teks pada baris yang sama harus menggunakan sudut rotasi yang berbeda.
 
-## Menerapkan Rotasi menggunakan TextFragment dan TextBuilder
-
-```java
-public class ExampleRotateText {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ImplementRotationUsingTextFragmentAndTextBuilder() {
-
-        // Inisialisasi objek dokumen
-        Document pdfDocument = new Document();
-        // Dapatkan halaman tertentu
-        Page pdfPage = pdfDocument.getPages().add();
-        // Buat fragmen teks
-        TextFragment textFragment1 = new TextFragment("teks utama");
-        textFragment1.setPosition(new Position(100, 600));
-
-        // Atur properti teks
-        textFragment1.getTextState().setFontSize(12);
-        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-        // Buat fragmen teks yang diputar
-        TextFragment textFragment2 = new TextFragment("teks diputar");
-        textFragment2.setPosition(new Position(200, 600));
-        // Atur properti teks
-        textFragment2.getTextState().setFontSize(12);
-        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setRotation(45);
-
-        // Buat fragmen teks yang diputar
-        TextFragment textFragment3 = new TextFragment("teks diputar");
-        textFragment3.setPosition(new Position(300, 600));
-
-        // Atur properti teks
-        textFragment3.getTextState().setFontSize(12);
-        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setRotation(90);
-
-        // buat objek TextBuilder
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // Tambahkan fragmen teks ke halaman PDF
-        textBuilder.appendText(textFragment1);
-        textBuilder.appendText(textFragment2);
-        textBuilder.appendText(textFragment3);
-
-        // Simpan dokumen
-        pdfDocument.save(_dataDir + "TextFragmentTests_Rotated1_out.pdf");
-    }
-}
-```
-
-
-## Menerapkan Rotasi menggunakan TextParagraph dan TextBuilder (Fragmen yang Diputar)
+1. Buat dokumen PDF baru dan tambahkan halaman.
+1. Buat fragmen teks dengan nilai rotasi yang diperlukan.
+1. Tambahkan mereka dengan `TextBuilder` dan simpan hasilnya.
 
 ```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder_RotatedFragments() {
+public static void rotateTextInsidePdf1(Path outputFile) {
+       try (Document document = new Document()) {
+           Page page = document.getPages().add();
 
-    // Inisialisasi objek dokumen
-    Document pdfDocument = new Document();
-    // Dapatkan halaman tertentu
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.setPosition(new Position(200, 600));
-    // Buat fragmen teks
-    TextFragment textFragment1 = new TextFragment("rotated text");
-    // Atur properti teks
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // Atur rotasi
-    textFragment1.getTextState().setRotation(45);
+           TextFragment textFragment1 = new TextFragment("main text");
+           textFragment1.setPosition(new Position(100, 600));
+           textFragment1.getTextState().setFontSize(12);
+           textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
 
-    // Buat fragmen teks
-    TextFragment textFragment2 = new TextFragment("main text");
-    // Atur properti teks
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           TextFragment textFragment2 = new TextFragment("rotated text");
+           textFragment2.setPosition(new Position(200, 600));
+           textFragment2.getTextState().setFontSize(12);
+           textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment2.getTextState().setRotation(45);
 
-    // Buat fragmen teks
-    TextFragment textFragment3 = new TextFragment("another rotated text");
-    // Atur properti teks
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // Atur rotasi
-    textFragment3.getTextState().setRotation(-45);
+           TextFragment textFragment3 = new TextFragment("rotated text");
+           textFragment3.setPosition(new Position(300, 600));
+           textFragment3.getTextState().setFontSize(12);
+           textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment3.getTextState().setRotation(90);
 
-    // Tambahkan fragmen teks ke paragraf
-    paragraph.appendLine(textFragment1);
-    paragraph.appendLine(textFragment2);
-    paragraph.appendLine(textFragment3);
-    // Buat objek TextBuilder
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // Tambahkan paragraf teks ke halaman PDF
-    textBuilder.appendParagraph(paragraph);
-    // Simpan dokumen
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated2_out.pdf");
-}
+           TextBuilder builder = new TextBuilder(page);
+           builder.appendText(textFragment1);
+           builder.appendText(textFragment2);
+           builder.appendText(textFragment3);
+
+           document.save(outputFile.toString());
+       }
+   }
 ```
 
+## Putar baris di dalam paragraf teks
 
-## Menerapkan Rotasi Menggunakan TextFragment dan Page.Paragraphs
+Gunakan contoh ini ketika sebuah paragraf harus berisi baris normal dan baris yang diputar.
 
-```csharp
-public static void ImplementRotationUsingTextFragmentAndPageParagraphs() {
-    // Inisialisasi objek dokumen
-    Document pdfDocument = new Document();
-    // Dapatkan halaman tertentu
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    // Buat fragmen teks
-    TextFragment textFragment1 = new TextFragment("teks utama");
-    // Atur properti teks
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // Buat fragmen teks
-    TextFragment textFragment2 = new TextFragment("teks berotasi");
-
-    // Atur properti teks
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // Atur rotasi
-    textFragment2.getTextState().setRotation(315);
-
-    // Buat fragmen teks
-    TextFragment textFragment3 = new TextFragment("teks berotasi");
-    // Atur properti teks
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // Atur rotasi
-    textFragment3.getTextState().setRotation(270);
-    pdfPage.getParagraphs().add(textFragment1);
-    pdfPage.getParagraphs().add(textFragment2);
-    pdfPage.getParagraphs().add(textFragment3);
-
-    // Simpan dokumen
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated3_out.pdf");
-    }
-```
-
-
-## Implementasikan Rotasi menggunakan TextParagraph dan TextBuilder (Seluruh Paragraf Diputar)
+1. Buat dokumen PDF baru dan tambahkan halaman.
+1. Buat sebuah `TextParagraph` dan tambahkan fragmen teks dengan pengaturan rotasi yang berbeda.
+1. Tambahkan paragraf ke halaman dan simpan dokumen.
 
 ```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder() {
-
-    // Inisialisasi objek dokumen
-    Document pdfDocument = new Document();
-    // Dapatkan halaman tertentu
-    Page pdfPage = pdfDocument.getPages().add();
-    for (int i = 0; i < 4; i++) {
+public static void rotateTextInsidePdf2(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         TextParagraph paragraph = new TextParagraph();
         paragraph.setPosition(new Position(200, 600));
-        // Tentukan rotasi
-        paragraph.setRotation(i * 90 + 45);
-        // Buat fragmen teks
-        TextFragment textFragment1 = new TextFragment("Teks Paragraf");
-        // Buat fragmen teks
+
+        TextFragment textFragment1 = new TextFragment("rotated text");
         textFragment1.getTextState().setFontSize(12);
         textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment1.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment1.getTextState().setForegroundColor(Color.getBlue());
+        textFragment1.getTextState().setRotation(45);
 
-        // Buat fragmen teks
-        TextFragment textFragment2 = new TextFragment("Baris kedua teks");
-        // Setel properti teks
+        TextFragment textFragment2 = new TextFragment("main text");
         textFragment2.getTextState().setFontSize(12);
         textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment2.getTextState().setForegroundColor(Color.getBlue());
 
-        // Buat fragmen teks
-        TextFragment textFragment3 = new TextFragment("Dan beberapa teks lagi...");
-        // Setel properti teks
+        TextFragment textFragment3 = new TextFragment("another rotated text");
         textFragment3.getTextState().setFontSize(12);
         textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment3.getTextState().setForegroundColor(Color.getBlue());
-        textFragment3.getTextState().setUnderline(true);
+        textFragment3.getTextState().setRotation(-45);
 
         paragraph.appendLine(textFragment1);
         paragraph.appendLine(textFragment2);
         paragraph.appendLine(textFragment3);
-        // Buat objek TextBuilder
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // Tambahkan fragmen teks ke halaman PDF
+
+        TextBuilder textBuilder = new TextBuilder(page);
         textBuilder.appendParagraph(paragraph);
+
+        document.save(outputFile.toString());
     }
-    // Simpan dokumen
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated4_out.pdf");
+}
+```
+
+## Putar fragmen paragraf tanpa posisi eksplisit
+
+Gunakan contoh ini ketika teks berputar harus ditambahkan melalui aliran paragraf halaman normal.
+
+1. Buat dokumen PDF baru dan tambahkan halaman.
+1. Buat beberapa fragmen teks dengan nilai rotasi yang berbeda.
+1. Tambahkan mereka ke koleksi paragraf halaman dan simpan PDF.
+
+```java
+public static void rotateTextInsidePdf3(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment1 = new TextFragment("main text");
+        textFragment1.getTextState().setFontSize(12);
+        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+
+        TextFragment textFragment2 = new TextFragment("rotated text");
+        textFragment2.getTextState().setFontSize(12);
+        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment2.getTextState().setRotation(315);
+
+        TextFragment textFragment3 = new TextFragment("rotated text");
+        textFragment3.getTextState().setFontSize(12);
+        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment3.getTextState().setRotation(270);
+
+        page.getParagraphs().add(textFragment1);
+        page.getParagraphs().add(textFragment2);
+        page.getParagraphs().add(textFragment3);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Putar paragraf lengkap
+
+Gunakan contoh ini ketika seluruh blok paragraf harus diputar sementara setiap baris tetap mempertahankan gaya yang sama.
+
+1. Buat dokumen PDF baru dan tambahkan halaman.
+1. Bangun beberapa `TextParagraph` objek dengan rotasi pada tingkat paragraf.
+1. Buat baris dengan metode pembantu bersama, tambahkan mereka, dan simpan dokumen.
+
+```java
+public static void rotateTextInsidePdf4(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        for (int i = 0; i < 4; i++) {
+            TextParagraph paragraph = new TextParagraph();
+            paragraph.setPosition(new Position(200, 600));
+            paragraph.setRotation(i * 90 + 45);
+
+            TextFragment textFragment1 = rotatedLine("Paragraph Text", false);
+            TextFragment textFragment2 = rotatedLine("Second line of text", false);
+            TextFragment textFragment3 = rotatedLine("And some more text...", true);
+
+            paragraph.appendLine(textFragment1);
+            paragraph.appendLine(textFragment2);
+            paragraph.appendLine(textFragment3);
+
+            TextBuilder builder = new TextBuilder(page);
+            builder.appendParagraph(paragraph);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static TextFragment rotatedLine(String text, boolean underline) {
+    TextFragment fragment = new TextFragment(text);
+    fragment.getTextState().setFontSize(12);
+    fragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+    fragment.getTextState().setBackgroundColor(Color.getLightGray());
+    fragment.getTextState().setForegroundColor(Color.getBlue());
+    fragment.getTextState().setUnderline(underline);
+    return fragment;
 }
 ```
