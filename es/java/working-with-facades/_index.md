@@ -1,32 +1,40 @@
 ---
-title: Trabajando con com.aspose.pdf.facades
-linktitle: Trabajando con Facades
+title: Trabajar con PDF Facades
+linktitle: Trabajar con PDF Facades
 type: docs
-weight: 80
+weight: 100
 url: /es/java/working-with-facades/
-description: Esta sección explica cómo trabajar con com.aspose.pdf.facades - un conjunto de herramientas para operaciones populares con PDF.
-lastmod: "2021-06-05"
+description: Aprenda cómo usar Aspose.PDF Facades en Java para editar contenido PDF, gestionar formularios y anotaciones, aplicar seguridad, firmar archivos, estampar páginas, renderizar páginas y examinar los metadatos PDF.
+is_node: true
+lastmod: "2026-09-28"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Utilice PDF Facades en Java para formularios, firmas, seguridad, sellos y procesamiento de archivos
+Abstract: Esta sección explica cómo usar Aspose.PDF Facades para Java para manejar flujos de trabajo PDF comunes con API simplificadas. La cobertura actual de Java incluye formularios, edición de formularios, edición de anotaciones, edición de contenido, edición de archivos, información de archivos, seguridad, firmas, estampado de archivos, renderizado del visor y flujos de trabajo de construcción de sellos.
 ---
+La API Facades ofrece ayudantes de nivel superior para tareas PDF comunes sin trabajar directamente con el modelo de objeto de documento de bajo nivel.
 
-Aspose.PDF Facades es un conjunto de clases que te permite realizar varias operaciones en documentos PDF sin profundizar en su estructura.
+Utilice esta sección para aprender cómo:
 
-En esta sección aprenderás cómo:
+- llenar y editar formularios PDF
+- trabajar con anotaciones y contenido
+- combinar, dividir y reestructurar archivos PDF
+- inspeccionar metadatos e información de página
+- aplicar seguridad, firmas, sellos y numeración de páginas
+- renderizar páginas PDF a imágenes con la fachada del visor
 
-- [Usar PdfFileEditor](/pdf/es/java/pdffileeditor-class/) - herramienta que permite realizar operaciones con archivos PDF (dividir, fusionar, etc.)
-- [Usar PdfFileMend](/pdf/es/java/pdffilemend-class/) - herramienta para agregar textos e imágenes en las páginas de un documento PDF existente
-- [Usar PdfContentEditor](/pdf/es/java/pdfcontenteditor-class/) - herramienta para editar el contenido de un archivo PDF
-- [Usar PdfAnnotationEditor](/pdf/es/java/pdfannotationeditor-class/) - herramienta para trabajar con anotaciones de documentos PDF (comentarios)
+## Secciones de fachadas
 
-- [Usar PdfBookmarEditor](/pdf/es/java/working-with-bookmarks-facades/) - herramienta para crear, importar, exportar y eliminar marcadores
-- [Using PdfExtractor](/pdf/es/java/pdfextractor-class/) - herramienta para extraer imágenes y texto de un documento PDF
-- [Using PdfFileSignature](/pdf/es/java/pdffilesignature-class/) - herramienta para firmar un archivo PDF con un certificado
-- [Using PdfConverter](/pdf/es/java/pdfconverter-class/) - herramienta para convertir archivos PDF a imágenes (BMP, JPEG, PNG y TIFF) y viceversa
-- [Using PdfFileInfo](/pdf/es/java/pdffileinfo-class/) - herramienta para acceder a la información meta de un documento PDF
-- [Using PdfXmpMetadata](/pdf/es/java/pdfxmpmetadata-class/) - herramienta para manipular los metadatos XMP
-- [Using PdfFileSecurity](/pdf/es/java/pdffilesecurity-class/) - herramienta para manipular cifrado, descifrado y establecer privilegios en un archivo PDF
-- [Using PdfFileStamp](/pdf/es/java/pdffilestamp-class/) - herramienta para manipular estampados de página e imagen
-- [Using PdfViewer](/pdf/es/java/pdfviewer-class/) - herramienta para trabajar con la impresión de PDF
-- [Using Form](/pdf/es/java/form-class/) - herramienta para manipular formularios Acro
+- [Form](/pdf/es/java/form-class/)
+- [FormEditor](/pdf/es/java/formeditor-class/)
+- [PdfAnnotationEditor](/pdf/es/java/pdfannotationeditor-class/)
+- [PdfContentEditor](/pdf/es/java/pdfcontenteditor-class/)
+- [PdfFileEditor](/pdf/es/java/pdffileeditor-class/)
+- [PdfFileInfo](/pdf/es/java/pdffileinfo-class/)
+- [PdfFileSecurity](/pdf/es/java/pdffilesecurity-class/)
+- [PdfFileSignature](/pdf/es/java/pdffilesignature-class/)
+- [PdfFileStamp](/pdf/es/java/pdffilestamp-class/)
+- [PdfViewer](/pdf/es/java/pdfviewer-class/)
+- [Sello](/pdf/es/java/stamp-class/)

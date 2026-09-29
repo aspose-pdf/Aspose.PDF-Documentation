@@ -1,11 +1,12 @@
 ---
-title: PHP Programmers Guide
+title: Guía del programador PHP
+linktitle: Guía del programador PHP
 type: docs
 weight: 20
 url: /es/java/php-programmers-guide/
-lastmod: "2021-06-05"
+description: Descubra la Guía del Programador PHP para Aspose.PDF, que ofrece un enfoque paso a paso para gestionar documentos PDF en PHP.
+lastmod: "2026-09-28"
 ---
-
 Esta sección incluye los siguientes temas:
 
 - [Trabajando con la Conversión de Documentos en PHP](/pdf/es/java/working-with-document-conversion-in-php/)

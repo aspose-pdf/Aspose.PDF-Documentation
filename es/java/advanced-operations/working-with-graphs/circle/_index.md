@@ -1,0 +1,70 @@
+---
+title: Agregar formas de círculo a PDF en Java
+linktitle: Agregar círculo
+type: docs
+weight: 20
+url: /es/java/add-circle/
+description: Aprenda cómo dibujar y rellenar formas de círculo en archivos PDF en Java.
+lastmod: "2026-09-29"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Dibujar formas de círculo en archivos PDF usando Java
+Abstract: Este artículo muestra cómo agregar formas de círculo a documentos PDF usando Aspose.PDF for Java. Cubre el dibujo de contornos de círculo, el relleno de círculos con color y la colocación de texto dentro de una forma de círculo.
+---
+## Agregar un contorno de círculo
+
+1. Cree un nuevo PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregue un [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Cree un [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y añádalo a la página.
+1. Cree el [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) forma y configure su geometría.
+1. Añada el [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) al [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
+1. Establezca las propiedades de forma requeridas por el ejemplo, incluyendo [`Color`](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Guarde el PDF de salida [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+```java
+public static void addCircle(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 200.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        Circle circle = new Circle(100, 100, 40);
+        circle.getGraphInfo().setColor(Color.getGreenYellow());
+        graph.getShapes().addItem(circle);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Agregar un círculo relleno con texto
+
+1. Cree un nuevo PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Agregue un [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) al documento.
+1. Cree un [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor y añádalo a la página.
+1. Cree el [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) forma y configure su geometría.
+1. Añada el [`Circle`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) al [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contenedor.
+1. Establezca las propiedades de forma requeridas por el ejemplo, incluyendo [`Color`](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) y [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. Guarde el PDF de salida [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+
+```java
+public static void addCircleFilled(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        Graph graph = new Graph(400.0, 200.0);
+        graph.setBorder(new BorderInfo(BorderSide.All, Color.getGreen()));
+
+        Circle circle = new Circle(100, 100, 40);
+        circle.getGraphInfo().setColor(Color.getGreenYellow());
+        circle.getGraphInfo().setFillColor(Color.getGreen());
+        circle.setText(new TextFragment("Circle"));
+        graph.getShapes().addItem(circle);
+
+        page.getParagraphs().add(graph);
+        document.save(outputFile.toString());
+    }
+}
+```
