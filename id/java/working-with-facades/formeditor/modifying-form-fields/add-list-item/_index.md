@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengaitkan PDF yang ada, menambahkan item
 ## Tambahkan item ke bidang daftar
 
 1. Mengikat PDF sumber ke `FormEditor` fasad.
-2. Panggilan `addListItem(...)` untuk bidang target dan pasangan tampilan/nilai baru.
+2. Panggil `addListItem(...)` untuk bidang target dan pasangan tampilan/nilai baru.
 3. Simpan dokumen yang diperbarui.
 
 ```java

@@ -8,7 +8,7 @@ description: Pelajari cara mengimpor data formulir PDF di Java dengan fasad Form
 lastmod: "2026-09-29"
 TechArticle: true
 AlternativeHeadline: Impor data formulir PDF dari XML, FDF, dan XFDF di Java
-Abstract: Bagian ini mencakup contoh impor formulir Java yang diimplementasikan dengan fasad Form di Aspose.PDF untuk Java. Set contoh saat ini mencakup impor data AcroForm dari XML, FDF, dan XFDF, sementara topik penggantian JSON dan XFA yang tidak didukung dicatat secara eksplisit untuk menjaga dokumentasi tetap selaras dengan sumber repositori.
+Abstract: Bagian ini mencakup contoh impor formulir Java yang diimplementasikan dengan fasad Form di Aspose.PDF for Java. Set contoh saat ini mencakup impor data AcroForm dari XML, FDF, dan XFDF, sementara topik penggantian JSON dan XFA yang tidak didukung dicatat secara eksplisit untuk menjaga dokumentasi tetap selaras dengan sumber repositori.
 ---
 Java `FormExamples` kelas mencakup alur kerja impor langsung untuk format-format ini:
 

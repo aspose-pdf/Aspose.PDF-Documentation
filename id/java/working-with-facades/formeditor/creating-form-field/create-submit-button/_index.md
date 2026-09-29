@@ -15,7 +15,7 @@ Gunakan `FormEditorExamples.createSubmitButton(...)` untuk membuat tombol yang m
 ## Buat tombol kirim
 
 1. Ikat PDF sumber ke `FormEditor` fasad.
-2. Panggilan `addSubmitBtn(...)` dengan nama tombol, halaman, label, URL target, dan persegi panjang.
+2. Panggil `addSubmitBtn(...)` dengan nama tombol, halaman, label, URL target, dan persegi panjang.
 3. Simpan dokumen yang diperbarui.
 
 ```java

@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengikat PDF dan mencetak nilai preferens
 ## Dapatkan preferensi penampil saat ini
 
 1. Mengikat PDF sumber ke `PdfContentEditor` fasade.
-2. Panggilan `getViewerPreference()` untuk membaca nilai saat ini.
+2. Panggil `getViewerPreference()` untuk membaca nilai saat ini.
 3. Periksa atau cetak flag preferensi yang dikembalikan.
 
 ```java

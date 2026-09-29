@@ -21,7 +21,7 @@ Gunakan alur kerja ini ketika Anda perlu menghapus informasi dokumen yang disimp
 ### Langkah
 
 1. Buat sebuah `PdfFileInfo` objek untuk PDF input.
-2. Panggilan `clearInfo()` untuk menghapus metadata dokumen.
+2. Panggil `clearInfo()` untuk menghapus metadata dokumen.
 3. Simpan hasil ke file baru dengan `save()`.
 4. Tutup `PdfFileInfo` instans.
 

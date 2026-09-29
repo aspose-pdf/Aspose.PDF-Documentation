@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, mengatur batas kar
 ## Atur batas karakter field
 
 1. Mengikat PDF sumber ke `FormEditor` fasad.
-2. Panggilan `setFieldLimit(...)` untuk bidang target dan jumlah karakter maksimum.
+2. Panggil `setFieldLimit(...)` untuk bidang target dan jumlah karakter maksimum.
 3. Simpan dokumen yang telah diperbarui.
 
 ```java

@@ -8,7 +8,7 @@ description: Pelajari cara memilih nilai tombol radio dalam formulir PDF dengan 
 lastmod: "2026-09-29"
 TechArticle: true
 AlternativeHeadline: Pilih opsi bidang tombol radio di Java
-Abstract: Artikel ini menunjukkan cara mengikat formulir PDF, memilih opsi tombol radio berdasarkan indeks, dan menyimpan dokumen yang diperbarui dengan facade Form di Aspose.PDF untuk Java.
+Abstract: Artikel ini menunjukkan cara mengikat formulir PDF, memilih opsi tombol radio berdasarkan indeks, dan menyimpan dokumen yang diperbarui dengan facade Form di Aspose.PDF for Java.
 ---
 Gunakan `FormExamples.fillRadioButtonFields(...)` untuk memilih opsi tombol radio.
 

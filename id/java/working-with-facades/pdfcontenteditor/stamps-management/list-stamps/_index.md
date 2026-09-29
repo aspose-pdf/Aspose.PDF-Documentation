@@ -8,12 +8,12 @@ description: Pelajari cara membuat daftar stempel karet pada halaman dengan Java
 lastmod: "2026-09-29"
 TechArticle: true
 AlternativeHeadline: Daftar stempel karet PDF dalam Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF, mengambil stempel pada sebuah halaman, dan memeriksa koleksi yang dihasilkan menggunakan antarmuka PdfContentEditor di Aspose.PDF untuk Java.
+Abstract: Artikel ini menunjukkan cara mengikat PDF, mengambil stempel pada sebuah halaman, dan memeriksa koleksi yang dihasilkan menggunakan antarmuka PdfContentEditor di Aspose.PDF for Java.
 ---
 ## Daftar stempel pada halaman
 
 1. Mengikat PDF sumber ke `PdfContentEditor` fasad.
-2. Panggilan `getStamps(pageNumber)` untuk mengambil stempel pada halaman target.
+2. Panggil `getStamps(pageNumber)` untuk mengambil stempel pada halaman target.
 3. Periksa hasilnya `StampInfo[]` koleksi.
 
 ```java

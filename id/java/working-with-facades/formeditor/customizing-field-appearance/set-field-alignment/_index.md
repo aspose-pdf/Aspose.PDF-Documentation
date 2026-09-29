@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengaitkan PDF yang ada, mengatur penjaja
 ## Atur penjajaran field horizontal
 
 1. Hubungkan PDF sumber ke `FormEditor` fasad.
-2. Panggilan `setFieldAlignment(...)` untuk bidang target dan konstanta perataan yang diinginkan.
+2. Panggil `setFieldAlignment(...)` untuk bidang target dan konstanta perataan yang diinginkan.
 3. Simpan dokumen yang diperbarui.
 
 ```java

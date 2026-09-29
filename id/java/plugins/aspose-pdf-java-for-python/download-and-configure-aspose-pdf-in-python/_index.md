@@ -14,7 +14,7 @@ sitemap:
 
 Unduh perpustakaan yang diperlukan yang disebutkan di bawah ini. Ini diperlukan untuk menjalankan contoh Aspose.PDF Java untuk Python.
 
-- Aspose: [Komponen Aspose.PDF untuk Java](https://downloads.aspose.com/pdf/java)
+- Aspose: [Komponen Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
 ## Unduh Contoh dari Situs Koding Sosial

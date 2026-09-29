@@ -8,7 +8,7 @@ description: Pelajari cara mengonversi bidang teks satu baris menjadi bidang mul
 lastmod: "2026-09-29"
 TechArticle: true
 AlternativeHeadline: Konversi bidang PDF satu baris ke multi-baris dalam Java
-Abstract: Artikel ini menunjukkan cara mengaitkan PDF yang ada, mengonversi bidang satu baris menjadi bidang multi-baris, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF untuk Java.
+Abstract: Artikel ini menunjukkan cara mengaitkan PDF yang ada, mengonversi bidang satu baris menjadi bidang multi-baris, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF for Java.
 ---
 ## Konversi bidang satu baris menjadi beberapa baris
 

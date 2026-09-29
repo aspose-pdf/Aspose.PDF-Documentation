@@ -8,7 +8,7 @@ description: Pelajari cara mengekspor data formulir PDF di Java dengan facade Fo
 lastmod: "2026-09-29"
 TechArticle: true
 AlternativeHeadline: Ekspor data formulir PDF ke XML, FDF, dan XFDF di Java
-Abstract: Bagian ini mencakup contoh ekspor formulir Java yang diimplementasikan dengan facade Form di Aspose.PDF untuk Java. Set contoh saat ini mencakup mengekspor data AcroForm ke XML, FDF, dan XFDF, sementara topik JSON dan XFA yang tidak didukung dicatat secara eksplisit untuk menghindari pembuatan jalur kode yang tidak ada dalam repositori ini.
+Abstract: Bagian ini mencakup contoh ekspor formulir Java yang diimplementasikan dengan facade Form di Aspose.PDF for Java. Set contoh saat ini mencakup mengekspor data AcroForm ke XML, FDF, dan XFDF, sementara topik JSON dan XFA yang tidak didukung dicatat secara eksplisit untuk menghindari pembuatan jalur kode yang tidak ada dalam repositori ini.
 ---
 Java `FormExamples` kelas mencakup alur kerja ekspor langsung untuk format berikut:
 

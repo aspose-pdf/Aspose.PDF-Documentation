@@ -15,7 +15,7 @@ Java saat ini `PdfContentEditorExamples` kelas secara langsung mendukung `addMov
 ## Tambahkan anotasi film
 
 1. Ikat PDF sumber ke `PdfContentEditor` fasad.
-2. Panggilan `createMovie(...)` dengan persegi panjang anotasi, jalur file film, dan nomor halaman.
+2. Panggil `createMovie(...)` dengan persegi panjang anotasi, jalur file film, dan nomor halaman.
 3. Simpan dokumen PDF yang diperbarui.
 
 ```java

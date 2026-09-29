@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, menghapus aksi yan
 ## Hapus aksi field
 
 1. Ikat PDF sumber ke `FormEditor` fasad.
-2. Panggilan `removeFieldAction(...)` untuk bidang target.
+2. Panggil `removeFieldAction(...)` untuk bidang target.
 3. Simpan dokumen yang diperbarui.
 
 ```java

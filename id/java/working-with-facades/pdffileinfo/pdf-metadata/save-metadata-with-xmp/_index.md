@@ -11,8 +11,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Menyimpan Metadata PDF dengan XMP Menggunakan Aspose.PDF untuk Java
-Abstract: Pelajari cara menyimpan metadata PDF dengan XMP menggunakan Aspose.PDF untuk Java. Contoh Java memperbarui bidang metadata inti dengan PdfFileInfo dan menuliskannya kembali menggunakan `saveNewInfoWithXmp()` sehingga dokumen output menyimpan informasi dalam bentuk XMP.
+AlternativeHeadline: Menyimpan Metadata PDF dengan XMP Menggunakan Aspose.PDF for Java
+Abstract: Pelajari cara menyimpan metadata PDF dengan XMP menggunakan Aspose.PDF for Java. Contoh Java memperbarui bidang metadata inti dengan PdfFileInfo dan menuliskannya kembali menggunakan `saveNewInfoWithXmp()` sehingga dokumen output menyimpan informasi dalam bentuk XMP.
 ---
 ## Simpan metadata dengan XMP
 

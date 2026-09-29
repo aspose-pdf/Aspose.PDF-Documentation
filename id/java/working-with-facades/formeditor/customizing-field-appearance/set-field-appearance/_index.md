@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, menerapkan flag pe
 ## Atur flag penampilan bidang
 
 1. Ikat PDF sumber ke `FormEditor` fasad.
-2. Panggilan `setFieldAppearance(...)` untuk bidang target dan bendera anotasi yang dipilih.
+2. Panggil `setFieldAppearance(...)` untuk bidang target dan bendera anotasi yang dipilih.
 3. Simpan dokumen yang diperbarui.
 
 ```java

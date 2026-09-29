@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, mengatur URL kirim
 ## Atur URL kirim
 
 1. Mengikat PDF sumber ke `FormEditor` fasad.
-2. Panggilan `setSubmitUrl(...)` untuk bidang tombol.
+2. Panggil `setSubmitUrl(...)` untuk bidang tombol.
 3. Terapkan flag submit untuk format pengiriman.
 4. Simpan dokumen yang diperbarui.
 

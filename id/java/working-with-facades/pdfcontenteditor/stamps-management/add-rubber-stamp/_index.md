@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengaitkan PDF, membuat anotasi cap karet
 ## Tambahkan cap karet
 
 1. Ikat PDF sumber ke `PdfContentEditor` fasad.
-2. Panggilan `createRubberStamp(...)` dengan nomor halaman, persegi panjang, judul, isi, dan warna.
+2. Panggil `createRubberStamp(...)` dengan nomor halaman, persegi panjang, judul, isi, dan warna.
 3. Simpan dokumen PDF yang diperbarui.
 
 ```java

@@ -21,7 +21,7 @@ Contoh Java mengubah ukuran area konten pada halaman 1 dan 3 serta memeriksa nil
 
 1. Buat `PdfFileEditor` contoh.
 2. Pilih halaman yang kontennya harus diubah ukurannya.
-3. Panggilan `resizeContents` dengan lebar dan tinggi target.
+3. Panggil `resizeContents` dengan lebar dan tinggi target.
 4. Periksa nilai kembali dan tangani kegagalan sebelum melanjutkan.
 5. Simpan dokumen yang telah diperbarui.
 

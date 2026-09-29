@@ -14,7 +14,7 @@ Abstract: Artikel ini menunjukkan cara mengikat PDF, mengonfigurasi ruang lingku
 
 1. Ikat PDF sumber ke `PdfContentEditor` fasad.
 2. Atur ruang lingkup replace-text ke `ReplaceAll`.
-3. Panggilan `replaceText(...)` dengan teks pencarian dan teks pengganti.
+3. Panggil `replaceText(...)` dengan teks pencarian dan teks pengganti.
 4. Simpan dokumen PDF yang diperbarui.
 
 ```java

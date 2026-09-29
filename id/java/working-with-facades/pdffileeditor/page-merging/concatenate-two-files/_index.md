@@ -21,7 +21,7 @@ Artikel ini memetakan langsung ke `mergePdfDocuments` contoh dalam `PdfFileEdito
 
 1. Buat `PdfFileEditor` instansi.
 2. Berikan dua jalur file input sebagai array string.
-3. Panggilan `concatenate` dengan array dan jalur file output.
+3. Panggil `concatenate` dengan array dan jalur file output.
 4. Simpan PDF yang digabungkan.
 
 ```java

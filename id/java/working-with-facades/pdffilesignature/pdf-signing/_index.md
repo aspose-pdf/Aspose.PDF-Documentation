@@ -22,7 +22,7 @@ Gunakan `PdfFileSignature` ketika Anda perlu menerapkan tanda tangan digital yan
 
 1. Buat sebuah `PdfFileSignature` buat instance dan kaitkan PDF sumber.
 2. Muat sertifikat baik melalui `setCertificate` atau dengan membuat sebuah `PKCS7` objek.
-3. Panggilan `sign` dengan halaman target, pengaturan visibilitas, persegi tanda tangan, dan data tanda tangan.
+3. Panggil `sign` dengan halaman target, pengaturan visibilitas, persegi tanda tangan, dan data tanda tangan.
 4. Simpan PDF yang sudah ditandatangani dan tutup objek facade.
 
 ### Contoh Java

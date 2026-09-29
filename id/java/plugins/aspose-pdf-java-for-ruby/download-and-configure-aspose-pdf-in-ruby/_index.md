@@ -11,7 +11,7 @@ lastmod: "2026-09-29"
 
 Unduh perpustakaan yang diperlukan seperti disebutkan di bawah. Ini diperlukan untuk menjalankan contoh Aspose.PDF Java untuk Ruby.
 
-- [Komponen Aspose.PDF untuk Java](https://downloads.aspose.com/pdf/java)
+- [Komponen Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
 
 ## Unduh Contoh dari Situs Sosial Coding
 

@@ -22,7 +22,7 @@ Gunakan alur kerja ini ketika Anda memiliki password pemilik dan perlu menghapus
 
 1. Buat `PdfFileSecurity` instansi.
 2. Gabungkan PDF terenkripsi dengan `bindPdf`.
-3. Panggilan `decryptFile` atau `tryDecryptFile` dengan kata sandi pemilik.
+3. Panggil `decryptFile` atau `tryDecryptFile` dengan kata sandi pemilik.
 4. Simpan output jika dekripsi berhasil.
 5. Tutup objek keamanan.
 

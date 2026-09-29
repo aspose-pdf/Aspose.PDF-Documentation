@@ -21,7 +21,7 @@ Gunakan alur kerja ini ketika Anda perlu memahami bagaimana konten halaman dipos
 ### Langkah
 
 1. Buat sebuah `PdfFileInfo` objek untuk PDF input.
-2. Panggilan `getPageXOffset` dan `getPageYOffset` untuk halaman target.
+2. Panggil `getPageXOffset` dan `getPageYOffset` untuk halaman target.
 3. Konversi nilai poin ke inci dengan membagi dengan `72.0`.
 4. Gunakan atau cetak nilai yang telah dikonversi.
 5. Tutup `PdfFileInfo` instansi.

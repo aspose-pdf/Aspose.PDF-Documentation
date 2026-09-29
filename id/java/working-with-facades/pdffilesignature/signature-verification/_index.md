@@ -22,8 +22,8 @@ Gunakan alur kerja ini ketika Anda membutuhkan validasi cepat terhadap PDF yang 
 
 1. Buat `PdfFileSignature` instansiasi dan mengikat PDF yang telah ditandatangani.
 2. Pilih nama tanda tangan yang ingin Anda periksa.
-3. Panggilan `verifySignature` untuk memvalidasi tanda tangan.
-4. Panggilan `coversWholeDocument` untuk memeriksa cakupan.
+3. Panggil `verifySignature` untuk memvalidasi tanda tangan.
+4. Panggil `coversWholeDocument` untuk memeriksa cakupan.
 5. Tutup objek facade.
 
 ### Contoh Java

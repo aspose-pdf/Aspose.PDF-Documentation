@@ -11,8 +11,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Memperbarui Metadata PDF Menggunakan Aspose.PDF untuk Java
-Abstract: Pelajari cara memperbarui metadata PDF dengan Aspose.PDF untuk Java. Contoh Java ini menggunakan PdfFileInfo untuk mengatur bidang metadata standar seperti subjek, judul, kata kunci, dan pembuat, menambahkan entri metadata khusus, dan menyimpan hasilnya ke PDF baru.
+AlternativeHeadline: Memperbarui Metadata PDF Menggunakan Aspose.PDF for Java
+Abstract: Pelajari cara memperbarui metadata PDF dengan Aspose.PDF for Java. Contoh Java ini menggunakan PdfFileInfo untuk mengatur bidang metadata standar seperti subjek, judul, kata kunci, dan pembuat, menambahkan entri metadata khusus, dan menyimpan hasilnya ke PDF baru.
 ---
 ## Atur metadata PDF
 

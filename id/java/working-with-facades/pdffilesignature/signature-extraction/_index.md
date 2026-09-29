@@ -22,7 +22,7 @@ Gunakan alur kerja ini ketika Anda perlu menyimpan sertifikat yang terkait denga
 
 1. Buat sebuah `PdfFileSignature` instans dan mengikat PDF yang ditandatangani.
 2. Pilih nama tanda tangan untuk diperiksa.
-3. Panggilan `extractCertificate` untuk membuka aliran sertifikat.
+3. Panggil `extractCertificate` untuk membuka aliran sertifikat.
 4. Salin byte sertifikat ke file output.
 5. Tutup sumber daya aliran dan objek facade.
 

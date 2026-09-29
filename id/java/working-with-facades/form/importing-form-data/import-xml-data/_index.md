@@ -8,7 +8,7 @@ description: Pelajari cara mengimpor data formulir XML ke dalam formulir PDF den
 lastmod: "2026-09-29"
 TechArticle: true
 AlternativeHeadline: Impor data AcroForm dari XML di Java
-Abstract: Artikel ini menunjukkan cara mengaitkan formulir PDF, mengimpor nilai bidang dari aliran XML, dan menyimpan dokumen yang diperbarui dengan fasad Form di Aspose.PDF untuk Java.
+Abstract: Artikel ini menunjukkan cara mengaitkan formulir PDF, mengimpor nilai bidang dari aliran XML, dan menyimpan dokumen yang diperbarui dengan fasad Form di Aspose.PDF for Java.
 ---
 Gunakan `FormExamples.importXml(...)` untuk mengisi formulir dari data XML.
 

@@ -15,7 +15,7 @@ Abstract: Artikel ini menunjukkan cara mengaitkan PDF, mengkonfigurasi TextState
 1. Hubungkan PDF sumber ke `PdfContentEditor` fasad.
 2. Buat dan konfigurasikan sebuah `TextState` dengan warna dan ukuran font yang diperlukan.
 3. Atur ruang lingkup replace-text ke `ReplaceAll`.
-4. Panggilan `replaceText(...)` dengan teks pencarian, teks pengganti, dan dikonfigurasi `TextState`.
+4. Panggil `replaceText(...)` dengan teks pencarian, teks pengganti, dan dikonfigurasi `TextState`.
 5. Simpan dokumen PDF yang telah diperbarui.
 
 ```java

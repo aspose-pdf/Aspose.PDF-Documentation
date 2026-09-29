@@ -11,8 +11,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Mengambil Metadata PDF Menggunakan Aspose.PDF untuk Java.
-Abstract: Pelajari cara mengambil metadata PDF dengan Aspose.PDF untuk Java. Contoh Java ini membaca bidang standar seperti subjek, judul, kata kunci, pembuat, tanggal pembuatan, dan tanggal modifikasi, bersama dengan flag status file dan entri metadata khusus `Reviewer`.
+AlternativeHeadline: Mengambil Metadata PDF Menggunakan Aspose.PDF for Java.
+Abstract: Pelajari cara mengambil metadata PDF dengan Aspose.PDF for Java. Contoh Java ini membaca bidang standar seperti subjek, judul, kata kunci, pembuat, tanggal pembuatan, dan tanggal modifikasi, bersama dengan flag status file dan entri metadata khusus `Reviewer`.
 ---
 ## Dapatkan metadata PDF
 

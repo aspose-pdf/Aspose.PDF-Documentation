@@ -13,7 +13,7 @@ Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, memindahkan field 
 ## Pindahkan field
 
 1. Ikat PDF sumber ke `FormEditor` fasad.
-2. Panggilan `moveField(...)` dengan nama bidang target dan koordinat persegi panjang baru.
+2. Panggil `moveField(...)` dengan nama bidang target dan koordinat persegi panjang baru.
 3. Simpan dokumen yang diperbarui.
 
 ```java

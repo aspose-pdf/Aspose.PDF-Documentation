@@ -51,7 +51,7 @@ Berikut adalah platform yang didukung:
 
 Unduh pustaka yang dibutuhkan seperti yang disebutkan di bawah ini. Ini diperlukan untuk mengeksekusi contoh Aspose.PDF Java untuk PHP.
 
-- **Aspose:** [Aspose.PDF untuk Java Komponen](https://downloads.aspose.com/pdf/java)
+- **Aspose:** [Aspose.PDF for Java Komponen](https://downloads.aspose.com/pdf/java)
 - PHP/Java Bridge
 
 ### Unduh Contoh dari Situs Koding Sosial

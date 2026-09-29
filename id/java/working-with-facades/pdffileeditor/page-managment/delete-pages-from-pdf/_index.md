@@ -21,7 +21,7 @@ Contoh Java menghapus halaman 2 dan 4 dari dokumen sumber.
 
 1. Buat sebuah `PdfFileEditor` instansi.
 2. Buat array dengan nomor halaman yang akan dihapus.
-3. Panggilan `delete` dengan file input, array halaman, dan file output.
+3. Panggil `delete` dengan file input, array halaman, dan file output.
 4. Simpan PDF yang dihasilkan.
 
 ### Contoh Java

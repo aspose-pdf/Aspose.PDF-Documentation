@@ -36,10 +36,10 @@ Plugin ini berisi dua wizard
 - Wizard Proyek Baru ini memungkinkan pengembang membuat proyek **Maven** untuk menggunakan Aspose.PDF for Java dari New -> Project -> Maven -> Aspose.PDF Maven Project.
 - Referensi dependensi Maven API Aspose.PDF for Java secara otomatis diambil dari [Repositori Maven Aspose Cloud](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) dan ditambahkan ke pom.xml.
 - Proyek yang dibuat akan selalu berisi versi **Maven** Dependency terbaru yang tersedia untuk API Aspose.PDF for Java.
-- Langkah-langkah wizard juga menyajikan opsi untuk mengunduh [Contoh Kode](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) untuk menggunakan API Aspose.PDF untuk Java.
+- Langkah-langkah wizard juga menyajikan opsi untuk mengunduh [Contoh Kode](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) untuk menggunakan API Aspose.PDF for Java.
 Contoh Kode Aspose.PDF (wizard)
 
-- Wizard File Baru ini memungkinkan Anda menyalin yang diunduh [Contoh Kode](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) ke dalam proyek Anda untuk menggunakan Aspose.PDF untuk Java dari New -> Other -> Java -> Aspose.PDF Code Example.
+- Wizard File Baru ini memungkinkan Anda menyalin yang diunduh [Contoh Kode](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) ke dalam proyek Anda untuk menggunakan Aspose.PDF for Java dari New -> Other -> Java -> Aspose.PDF Code Example.
 - Contoh yang tersedia ditampilkan dalam format pohon dimana pengguna dapat memilihnya secara kategori.
 - Semua contoh dalam kategori yang dipilih akan disalin ke folder paket proyek "**com.aspose.pdf.examples**" bersama dengan sumber daya yang diperlukan dalam folder "**src/main/resources**" yang dibutuhkan untuk menjalankan contoh.
 - Contoh Kode API Aspose.PDF for Java dimaksudkan untuk mendemonstrasikan berbagai fungsi API.

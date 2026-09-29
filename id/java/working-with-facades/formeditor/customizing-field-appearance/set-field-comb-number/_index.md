@@ -8,12 +8,12 @@ description: Pelajari cara mengatur nomor comb untuk bidang formulir PDF di Java
 lastmod: "2026-09-29"
 TechArticle: true
 AlternativeHeadline: Atur nomor comb untuk bidang formulir PDF di Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, mengatur nomor comb untuk sebuah bidang, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF untuk Java.
+Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, mengatur nomor comb untuk sebuah bidang, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF for Java.
 ---
 ## Atur nomor comb bidang
 
 1. Sambungkan PDF sumber ke `FormEditor` fasad.
-2. Panggilan `setFieldCombNumber(...)` untuk bidang target dan nilai comb.
+2. Panggil `setFieldCombNumber(...)` untuk bidang target dan nilai comb.
 3. Simpan dokumen yang diperbarui.
 
 ```java

@@ -11,8 +11,8 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ambil Versi PDF Menggunakan Aspose.PDF untuk Java
-Abstract: Pelajari cara mengambil versi PDF dengan Aspose.PDF untuk Java. Contoh Java membuat objek PdfFileInfo, membaca string versi dengan `getPdfVersion()`, mencetak hasilnya, dan menutup objek informasi file.
+AlternativeHeadline: Ambil Versi PDF Menggunakan Aspose.PDF for Java
+Abstract: Pelajari cara mengambil versi PDF dengan Aspose.PDF for Java. Contoh Java membuat objek PdfFileInfo, membaca string versi dengan `getPdfVersion()`, mencetak hasilnya, dan menutup objek informasi file.
 ---
 ## Dapatkan versi PDF
 
@@ -21,7 +21,7 @@ Gunakan alur kerja ini ketika Anda perlu memeriksa kompatibilitas file atau meng
 ### Langkah
 
 1. Buat `PdfFileInfo` objek untuk file PDF.
-2. Panggilan `getPdfVersion()` untuk mengambil versi yang dilaporkan.
+2. Panggil `getPdfVersion()` untuk mengambil versi yang dilaporkan.
 3. Gunakan atau cetak nilai versi.
 4. Tutup `PdfFileInfo` instansi.
 

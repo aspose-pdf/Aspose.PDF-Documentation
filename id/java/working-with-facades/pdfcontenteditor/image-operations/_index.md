@@ -15,7 +15,7 @@ Java saat ini `PdfContentEditorExamples` kelas secara langsung mendukung `replac
 ## Ganti gambar
 
 1. Mengikat PDF sumber ke `PdfContentEditor` fasad.
-2. Panggilan `replaceImage(...)` dengan nomor halaman, indeks gambar, dan jalur gambar pengganti.
+2. Panggil `replaceImage(...)` dengan nomor halaman, indeks gambar, dan jalur gambar pengganti.
 3. Simpan dokumen PDF yang diperbarui.
 
 ```java
