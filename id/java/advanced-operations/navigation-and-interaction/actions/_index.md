@@ -1,26 +1,26 @@
 ---
-title: Bekerja dengan Tindakan PDF di Java
+title: "Bekerja dengan tindakan PDF di Java"
 linktitle: Tindakan
 type: docs
 weight: 20
 url: /id/java/actions/
 description: Pelajari cara menambahkan, memperbarui, dan menghapus tindakan dokumen, halaman, dan formulir dalam file PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Tambahkan tindakan dokumen, halaman, dan formulir ke file PDF menggunakan Java.
+AlternativeHeadline: "Menambahkan tindakan dokumen, halaman, dan formulir ke file PDF menggunakan Java"
 Abstract: Artikel ini menjelaskan cara bekerja dengan aksi dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup aksi bernama untuk mencetak dan navigasi halaman, menyembunyikan bidang formulir, mengirimkan formulir, menetapkan aksi peluncuran JavaScript, serta menambahkan atau menghapus aksi buka dan tutup halaman.
 ---
 Aspose.PDF for Java memungkinkan Anda menetapkan aksi pada tombol, dokumen, dan halaman untuk membuat file PDF menjadi interaktif.
 
-## Tambahkan tindakan cetak bernama
+## Menambahkan tindakan cetak bernama
 
 Gunakan contoh ini ketika tombol pada halaman harus memicu perintah cetak.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pilih halaman target.
-1. Buat [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) dan tetapkan sebuah [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) untuk mencetak.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pilih halaman target.
+1. Buat [`ButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) dan tetapkan sebuah [`NamedAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) untuk mencetak.
 1. Tambahkan tombol ke formulir dan simpan dokumen.
 
 ```java
@@ -45,12 +45,12 @@ public static void addNamedActionPrint(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan aksi sembunyikan
+## Menambahkan aksi sembunyikan
 
 Gunakan contoh ini ketika tombol harus menampilkan atau menyembunyikan sekumpulan bidang formulir, seperti kotak centang.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan kumpulkan widget formulir target.
-1. Buat sebuah tombol dan tetapkan sebuah [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) ke itu.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan kumpulkan widget formulir target.
+1. Buat sebuah tombol dan tetapkan sebuah [`HideAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) ke itu.
 1. Tambahkan tombol ke formulir dan simpan dokumen yang diperbarui.
 
 ```java
@@ -76,11 +76,11 @@ public static void addNamedActionHide(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan tombol navigasi halaman
+## Menambahkan tombol navigasi halaman
 
 Contoh ini membuat tombol halaman pertama, sebelumnya, berikutnya, dan terakhir di seluruh dokumen.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat tombol navigasi untuk setiap halaman dan tetapkan aksi bawaan yang cocok.
 1. Tambahkan tombol ke formulir dan simpan dokumen.
 
@@ -136,12 +136,12 @@ public static void addNavigationButtons(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan aksi submit
+## Menambahkan aksi submit
 
 Gunakan contoh ini ketika tombol harus mengirim data formulir ke URL.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) dengan URL target dan flag.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`SubmitFormAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) dengan URL target dan flag.
 1. Tetapkan aksi ke bidang tombol dan simpan dokumen.
 
 ```java
@@ -166,12 +166,12 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan tindakan peluncuran tingkat dokumen
+## Menambahkan tindakan peluncuran tingkat dokumen
 
 Contoh ini menetapkan aksi JavaScript yang dijalankan ketika dokumen dibuka, disimpan, atau dicetak.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat yang diperlukan [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) objek untuk peristiwa dokumen.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat yang diperlukan objek [`JavascriptAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) untuk peristiwa dokumen.
 1. Tetapkan tindakan dan simpan dokumen.
 
 ```java
@@ -188,11 +188,11 @@ public static void addLaunchActions(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan aksi buka dan tutup halaman
+## Menambahkan aksi buka dan tutup halaman
 
 Gunakan contoh ini ketika halaman tertentu harus memicu aksi saat dibuka dan ditutup.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pastikan halaman target ada.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pastikan halaman target ada.
 1. Buat navigasi halaman dan aksi JavaScript.
 1. Tetapkan aksi halaman dan simpan dokumen.
 
@@ -216,11 +216,11 @@ public static void addPageActions(Path inputFile, Path outputFile) {
 }
 ```
 
-## Hapus tindakan halaman
+## Menghapus tindakan halaman
 
 Gunakan pendekatan ini ketika aksi buka dan tutup yang sebelumnya ditetapkan harus dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pastikan halaman target ada.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pastikan halaman target ada.
 1. Hapus semua aksi dari halaman tersebut.
 1. Simpan dokumen yang diperbarui.
 

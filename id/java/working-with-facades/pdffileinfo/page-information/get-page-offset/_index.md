@@ -1,30 +1,30 @@
 ---
-title: Dapatkan Offset Halaman
-linktitle: Dapatkan Offset Halaman
+title: "Mendapatkan offset halaman"
+linktitle: "Mendapatkan offset halaman"
 type: docs
 weight: 20
 url: /id/java/get-page-offset/
-description: Pelajari cara memeriksa offset X dan Y halaman dalam Java dengan facade PdfFileInfo.
-lastmod: "2026-09-29"
+description: "Pelajari cara memeriksa offset X dan Y halaman dalam Java dengan fasad PdfFileInfo."
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Dapatkan Offset Halaman PDF menggunakan Java
+AlternativeHeadline: "Mendapatkan offset halaman PDF menggunakan Java"
 Abstract: Pelajari cara mengambil offset halaman dengan Aspose.PDF for Java. Contoh Java menggunakan PdfFileInfo untuk membaca offset X dan Y halaman 1 dan mengonversi nilai poin menjadi inci untuk analisis tata letak yang lebih mudah.
 ---
-## Dapatkan offset halaman
+## Mendapatkan offset halaman
 
 Gunakan alur kerja ini ketika Anda perlu memahami bagaimana konten halaman diposisikan relatif terhadap asal PDF.
 
 ### Langkah
 
-1. Buat sebuah `PdfFileInfo` objek untuk PDF input.
+1. Buat sebuah objek `PdfFileInfo` untuk PDF input.
 2. Panggil `getPageXOffset` dan `getPageYOffset` untuk halaman target.
 3. Konversi nilai poin ke inci dengan membagi dengan `72.0`.
 4. Gunakan atau cetak nilai yang telah dikonversi.
-5. Tutup `PdfFileInfo` instansi.
+5. Tutup instans `PdfFileInfo`.
 
 ### Contoh Java
 

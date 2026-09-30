@@ -1,23 +1,23 @@
 ---
-title: Ganti Teks dalam PDF dengan Java
-linktitle: Ganti Teks dalam PDF
+title: "Mengganti teks dalam PDF dengan Java"
+linktitle: "Mengganti teks dalam PDF"
 type: docs
 weight: 40
 url: /id/java/replace-text-in-pdf/
 description: Pelajari cara mengganti, menyusun ulang, dan menghapus teks dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 aliases:
     - /python-net/replace-text-in-a-pdf-document/
 TechArticle: true
-AlternativeHeadline: Ganti, hapus, dan sesuaikan konten teks dalam PDF menggunakan Java
+AlternativeHeadline: "Mengganti, menghapus, dan menyesuaikan konten teks dalam PDF menggunakan Java"
 Abstract: Artikel ini menjelaskan alur kerja penggantian teks dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup penggantian teks di seluruh halaman, membatasi penggantian ke daerah yang dipilih, menyesuaikan tata letak penggantian, menggunakan pencocokan berbasis regex, mengganti Font, menghapus semua teks, dan menghapus teks tersembunyi.
 ---
 Aspose.PDF for Java menyediakan fitur penggantian sederhana dan penggantian yang memperhatikan tata letak melalui `TextFragmentAbsorber` dan opsi penggantian.
 
-## Ganti teks pada semua halaman
+## Mengganti teks pada semua halaman
 
 Gunakan contoh ini ketika frasa yang sama harus diganti di seluruh dokumen.
 
@@ -43,12 +43,12 @@ public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
     }
 ```
 
-## Ganti teks pada wilayah halaman tertentu
+## Mengganti teks pada wilayah halaman tertentu
 
 Gunakan contoh ini ketika penggantian harus dibatasi pada persegi panjang yang dipilih pada satu halaman.
 
 1. Buka dokumen PDF sumber.
-1. Konfigurasi `TextSearchOptions` dengan batas halaman dan sebuah persegi panjang target.
+1. Konfigurasikan `TextSearchOptions` dengan batas halaman dan sebuah persegi panjang target.
 1. Ganti teks yang cocok di dalam wilayah tersebut dan simpan dokumen.
 
 ```java
@@ -71,7 +71,7 @@ public static void replaceTextInParticularPageRegion(Path inputFile, Path output
 }
 ```
 
-## Ganti teks dan sesuaikan spasi di dalam persegi panjang yang dipindahkan
+## Mengganti teks dan menyesuaikan spasi di dalam persegi panjang yang dipindahkan
 
 Gunakan contoh ini ketika teks pengganti harus tetap berada di halaman dengan spasi yang disesuaikan tetapi ukuran font harus tetap tidak berubah.
 
@@ -99,7 +99,7 @@ public static void replaceTextAndResizeAndShiftWithoutChangingFontSize(Path inpu
 }
 ```
 
-## Ganti teks di dalam persegi panjang paragraf yang lebih besar
+## Mengganti teks di dalam persegi panjang paragraf yang lebih besar
 
 Gunakan contoh ini ketika teks pengganti harus memperluas ke area halaman yang lebih besar.
 
@@ -128,7 +128,7 @@ public static void replaceTextAndResizeAndShiftParagraph(Path inputFile, Path ou
 }
 ```
 
-## Ganti teks dan skala font agar mengisi persegi panjang
+## Mengganti teks dan skala font agar mengisi persegi panjang
 
 Gunakan contoh ini ketika teks pengganti harus diperbesar untuk mengisi area target.
 
@@ -154,7 +154,7 @@ public static void replaceTextAndResizeAndExpandFont(Path inputFile, Path output
 }
 ```
 
-## Ganti teks dan perkecil agar pas
+## Mengganti teks dan perkecil agar pas
 
 Gunakan contoh ini ketika teks pengganti harus tetap berada di dalam persegi panjang teks asli.
 
@@ -180,7 +180,7 @@ public static void replaceTextAndFitTextIntoRectangle(Path inputFile, Path outpu
 }
 ```
 
-## Ganti teks dengan ekspresi reguler
+## Mengganti teks dengan ekspresi reguler
 
 Gunakan contoh ini ketika teks yang cocok harus ditemukan oleh pola regex dan diubah gaya selama penggantian.
 
@@ -208,7 +208,7 @@ public static void replaceTextBasedOnRegex(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ganti teks placeholder dan biarkan halaman mengatur ulang
+## Mengganti teks placeholder dan biarkan halaman mengatur ulang
 
 Gunakan contoh ini ketika placeholder harus diganti dengan nilai nyata yang lebih panjang sambil mempertahankan tata letak halaman.
 
@@ -234,7 +234,7 @@ public static void automaticallyRearrangePageContents(Path inputFile, Path outpu
 }
 ```
 
-## Ganti satu font dengan yang lain
+## Mengganti satu font dengan yang lain
 
 Gunakan contoh ini ketika teks yang menggunakan font tertanam tertentu harus diganti dengan font lain.
 
@@ -259,7 +259,7 @@ public static void replaceFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ganti font dan hapus sumber daya font yang tidak terpakai
+## Mengganti font dan menghapus sumber daya font yang tidak terpakai
 
 Gunakan contoh ini ketika dokumen harus dibersihkan setelah penggantian font.
 
@@ -283,7 +283,7 @@ public static void removeUnusedFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## Hapus semua teks dari dokumen
+## Menghapus semua teks dari dokumen
 
 Gunakan contoh ini ketika semua konten teks harus dihapus dari setiap halaman.
 
@@ -301,7 +301,7 @@ public static void removeAllTextUsingAbsorber1(Path inputFile, Path outputFile) 
 }
 ```
 
-## Hapus semua teks dari satu halaman
+## Menghapus semua teks dari satu halaman
 
 Gunakan contoh ini ketika semua teks harus dihapus hanya dari halaman tertentu.
 
@@ -319,7 +319,7 @@ public static void removeAllTextUsingAbsorber2(Path inputFile, Path outputFile) 
 }
 ```
 
-## Hapus teks dari persegi panjang yang dipilih
+## Menghapus teks dari persegi panjang yang dipilih
 
 Gunakan contoh ini ketika teks harus dihapus hanya di dalam area halaman yang dipilih.
 
@@ -337,7 +337,7 @@ public static void removeAllTextUsingAbsorber3(Path inputFile, Path outputFile) 
 }
 ```
 
-## Hapus teks tersembunyi
+## Menghapus teks tersembunyi
 
 Gunakan contoh ini ketika fragmen teks tak terlihat harus dihapus dari PDF.
 

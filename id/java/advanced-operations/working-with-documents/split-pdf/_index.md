@@ -1,28 +1,28 @@
 ---
-title: Pisah File PDF dalam Java
-linktitle: Pisah file PDF
+title: "Memisahkan file PDF dalam Java"
+linktitle: "Memisahkan file PDF"
 type: docs
 weight: 60
 url: /id/java/split-pdf-document/
 description: Pelajari cara membagi halaman PDF menjadi file PDF terpisah dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Bagi dokumen PDF berdasarkan halaman, rentang, grup, dan pola nama file menggunakan Java
+AlternativeHeadline: "Membagi dokumen PDF berdasarkan halaman, rentang, grup, dan pola nama file menggunakan Java"
 Abstract: Artikel ini menjelaskan cara memecah dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup pemecahan menjadi halaman tunggal, dua atau tiga bagian, halaman ganjil dan genap, potongan berukuran tetap, rentang khusus, halaman pertama atau terakhir ditambah sisanya, kelompok halaman khusus, dan pembuatan nama file yang stabil.
 ---
 Aspose.PDF for Java mendukung beberapa pola pemisahan selain output satu halaman per file.
 
-## Pisahkan PDF menjadi file satu halaman
+## Memisahkan PDF menjadi file satu halaman
 
 Gunakan pendekatan ini ketika setiap halaman sumber harus menjadi dokumen keluaran terpisah.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) untuk setiap [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) Anda ingin mengekspor.
-1. Tambahkan yang dipilih [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen baru.
-1. Simpan setiap output PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) untuk setiap [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) Anda ingin mengekspor.
+1. Tambahkan yang dipilih [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen baru.
+1. Simpan setiap output PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void splitDocuments(Path inputFile, Path outputDir) {
@@ -37,12 +37,12 @@ public static void splitDocuments(Path inputFile, Path outputDir) {
 }
 ```
 
-## Pisahkan PDF menjadi dua bagian
+## Memisahkan PDF menjadi dua bagian
 
 Contoh ini membagi dokumen sumber menjadi dua file output berurutan berdasarkan titik tengah.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Hitung titik tengah yang tersedia [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) koleksi.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Hitung titik tengah yang tersedia [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) koleksi.
 1. Salin setengah pertama halaman ke dalam satu dokumen keluaran dan halaman yang tersisa ke dokumen lain.
 1. Simpan kedua dokumen hasil.
 
@@ -73,8 +73,8 @@ public static void splitDocumentsIntoTwoParts(Path inputFile, Path outputDir) {
 
 Gunakan pola ini ketika setiap file output harus berisi jumlah halaman yang sama, kecuali mungkin bagian terakhir.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Loop melalui [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) koleksi dalam grup `pagesPerPart`.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Lakukan perulangan melalui [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) koleksi dalam grup `pagesPerPart`.
 1. Buat dokumen output baru untuk setiap grup dan salin rentang halaman yang dihitung ke dalamnya.
 1. Simpan setiap bagian dengan nama file yang dihasilkan.
 
@@ -98,12 +98,12 @@ public static void splitDocumentsEveryNPages(Path inputFile, Path outputDir, int
 }
 ```
 
-## Pisahkan PDF berdasarkan rentang halaman khusus
+## Memisahkan PDF berdasarkan rentang halaman khusus
 
 Contoh ini memungkinkan Anda menentukan halaman awal dan akhir secara eksplisit untuk setiap dokumen output.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Tentukan yang diperlukan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rentang dalam array atau koleksi lain.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tentukan yang diperlukan [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rentang dalam array atau koleksi lain.
 1. Validasi setiap rentang terhadap jumlah halaman sumber dan salin halaman yang cocok ke dalam dokumen baru.
 1. Simpan setiap file output berbasis rentang.
 
@@ -137,12 +137,12 @@ public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
 }
 ```
 
-## Pisahkan halaman pertama dan halaman-halaman yang tersisa
+## Memisahkan halaman pertama dan halaman-halaman yang tersisa
 
 Gunakan pendekatan ini ketika halaman sampul harus diekspor secara terpisah dari sisa dokumen.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan konfirmasikan bahwa itu berisi halaman.
-1. Buat satu dokumen output untuk yang pertama [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan konfirmasikan bahwa itu berisi halaman.
+1. Buat satu dokumen output untuk yang pertama [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Buat dokumen lain untuk rentang halaman yang tersisa ketika lebih dari satu halaman tersedia.
 1. Simpan kedua hasil.
 
@@ -173,12 +173,12 @@ public static void splitDocumentsFirstPageAndRest(Path inputFile, Path outputDir
 }
 ```
 
-## Pisahkan halaman terakhir dan halaman-halaman sebelumnya
+## Memisahkan halaman terakhir dan halaman-halaman sebelumnya
 
 Contoh ini memisahkan halaman terakhir dari sisa dokumen, yang berguna untuk mengekstrak halaman ringkasan atau tanda tangan.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan periksa bahwa tidak kosong.
-1. Salin yang terakhir [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dalam dokumen output baru.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan periksa bahwa tidak kosong.
+1. Salin yang terakhir [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dalam dokumen output baru.
 1. Hapus halaman itu dari dokumen asli ketika halaman sebelumnya masih ada.
 1. Simpan halaman terakhir dan halaman lainnya sebagai file terpisah.
 
@@ -205,13 +205,13 @@ public static void splitDocumentsLastPageAndRest(Path inputFile, Path outputDir)
 }
 ```
 
-## Pisahkan PDF menjadi tiga bagian
+## Memisahkan PDF menjadi tiga bagian
 
 Gunakan pola ini ketika dokumen harus dibagi menjadi tiga bagian berurutan dengan ukuran kira-kira sama.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tentukan total jumlah halaman.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tentukan total jumlah halaman.
 1. Hitung perkiraan ukuran masing-masing bagian output.
-1. Buat hingga tiga dokumen dan salin yang cocok [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rentang.
+1. Buat hingga tiga dokumen dan salin yang cocok [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) rentang.
 1. Simpan setiap bagian yang dihasilkan.
 
 ```java
@@ -245,8 +245,8 @@ public static void splitDocumentsIntoThreeParts(Path inputFile, Path outputDir) 
 
 Contoh ini menunjukkan cara membuat file output dari kumpulan halaman yang tidak berurutan alih-alih rentang berkelanjutan.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Definisikan grup khusus [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) angka.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Definisikan grup khusus [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) angka.
 1. Buat dokumen output baru untuk setiap grup dan tambahkan hanya halaman yang valid dari grup tersebut.
 1. Simpan setiap dokumen grup yang tidak kosong.
 
@@ -276,12 +276,12 @@ public static void splitDocumentsCustomPageGroups(Path inputFile, Path outputDir
 }
 ```
 
-## Pisahkan PDF menjadi halaman tunggal dengan nama file yang stabil
+## Memisahkan PDF menjadi halaman tunggal dengan nama file yang stabil
 
 Gunakan versi ini ketika nama output harus tetap dapat diurutkan secara leksikal, misalnya dalam pipeline otomatis.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat satu dokumen output untuk setiap [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat satu dokumen output untuk setiap [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Simpan setiap file dengan nomor halaman yang diisi nol di depan.
 
 ```java
@@ -297,12 +297,12 @@ public static void splitDocumentsWithStableFilenames(Path inputFile, Path output
 }
 ```
 
-## Pisahkan PDF menjadi halaman ganjil dan genap
+## Memisahkan PDF menjadi halaman ganjil dan genap
 
 Contoh ini membuat dua output dengan memisahkan halaman menurut paritas nomor halaman mereka.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat satu dokumen keluaran untuk ganjil [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) angka dan yang lain untuk nomor halaman genap.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat satu dokumen keluaran untuk ganjil [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) angka dan yang lain untuk nomor halaman genap.
 1. Iterasikan halaman sumber dengan kenaikan yang diperlukan untuk setiap dokumen output.
 1. Simpan hasil halaman ganjil dan halaman genap secara terpisah.
 

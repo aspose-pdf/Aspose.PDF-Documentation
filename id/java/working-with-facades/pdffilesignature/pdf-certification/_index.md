@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /id/java/pdf-certification/
 description: Pelajari cara menyertifikasi dokumen PDF dalam Java dengan PdfFileSignature dan DocMDPSignature.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,11 +20,11 @@ Gunakan sertifikasi ketika dokumen harus tetap tepercaya tetapi masih memperbole
 
 ### Langkah
 
-1. Buat sebuah `PdfFileSignature` instance dan mengikat PDF sumber.
-2. Bangun sebuah `PKCS7` objek tanda tangan dengan sertifikat dan kata sandi sertifikat.
+1. Buat sebuah instans `PdfFileSignature` dan mengikat PDF sumber.
+2. Bangun sebuah objek `PKCS7` tanda tangan dengan sertifikat dan kata sandi sertifikat.
 3. Bungkus tanda tangan itu dalam sebuah `DocMDPSignature` dengan yang diperlukan `DocMDPAccessPermissions` nilai.
-4. Telepon `certify` dengan halaman target, metadata tanda tangan, persegi panjang terlihat, dan tanda tangan MDP.
-5. Simpan PDF yang disertifikasi dan tutup objek facade.
+4. Panggil `certify` dengan halaman target, metadata tanda tangan, persegi panjang terlihat, dan tanda tangan MDP.
+5. Simpan PDF yang disertifikasi dan tutup objek fasad.
 
 ### Contoh Java
 

@@ -1,29 +1,29 @@
 ---
-title: Dapatkan Informasi Halaman
-linktitle: Dapatkan Informasi Halaman
+title: "Mendapatkan informasi halaman"
+linktitle: "Mendapatkan informasi halaman"
 type: docs
 weight: 10
 url: /id/java/get-page-info/
 description: Pelajari cara memeriksa lebar, tinggi, dan rotasi halaman dalam Java dengan fasad PdfFileInfo.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Dapatkan Informasi Halaman PDF Menggunakan Aspose.PDF for Java
+AlternativeHeadline: "Mendapatkan informasi halaman PDF menggunakan Aspose.PDF for Java"
 Abstract: Pelajari cara mengambil informasi halaman dengan Aspose.PDF for Java. Contoh Java menggunakan PdfFileInfo untuk membaca lebar, tinggi, dan rotasi halaman 1 sehingga Anda dapat memeriksa tata letaknya sebelum pemrosesan lebih lanjut.
 ---
-## Dapatkan informasi halaman
+## Mendapatkan informasi halaman
 
 Contoh ini membaca properti geometrik utama dari halaman 1.
 
 ### Langkah
 
-1. Buat sebuah `PdfFileInfo` objek untuk PDF sumber.
+1. Buat sebuah objek `PdfFileInfo` untuk PDF sumber.
 2. Panggil `getPageWidth`, `getPageHeight`, dan `getPageRotation` untuk halaman yang ingin Anda periksa.
 3. Gunakan atau cetak nilai yang dikembalikan.
-4. Tutup `PdfFileInfo` instansi.
+4. Tutup instans `PdfFileInfo`.
 
 ### Contoh Java
 

@@ -1,18 +1,18 @@
 ---
-title: Atur Penjajaran Field
-linktitle: Atur Penjajaran Field
+title: "Mengatur penjajaran Field"
+linktitle: "Mengatur penjajaran Field"
 type: docs
 weight: 20
 url: /id/java/set-field-alignment/
-description: Pelajari cara mengatur penjajaran teks horizontal untuk field formulir PDF di Java menggunakan facade FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara mengatur penjajaran teks horizontal untuk bidang formulir PDF di Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Atur penjajaran field formulir PDF di Java
-Abstract: Artikel ini menunjukkan cara mengaitkan PDF yang ada, mengatur penjajaran field horizontal, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Mengatur penjajaran bidang formulir PDF di Java"
+Abstract: "Artikel ini menunjukkan cara mengaitkan PDF yang ada, mengatur penjajaran bidang horizontal, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
-## Atur penjajaran field horizontal
+## Mengatur penjajaran bidang horizontal
 
-1. Hubungkan PDF sumber ke `FormEditor` fasad.
+1. Hubungkan PDF sumber ke fasad `FormEditor`.
 2. Panggil `setFieldAlignment(...)` untuk bidang target dan konstanta perataan yang diinginkan.
 3. Simpan dokumen yang diperbarui.
 

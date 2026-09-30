@@ -1,14 +1,14 @@
 ---
-title: Ratakan Semua Field
-linktitle: Ratakan Semua Field
+title: "Meratakan semua Field"
+linktitle: "Meratakan semua Field"
 type: docs
 weight: 10
 url: /id/java/flatten-all-fields/
-description: Pelajari cara meratakan semua field formulir PDF di Java menggunakan Form facade di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara meratakan semua bidang formulir PDF di Java menggunakan fasad Form di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Konversi semua field formulir interaktif menjadi konten statis di Java
-Abstract: Artikel ini menunjukkan cara mengikat formulir PDF, meratakan setiap field formulir, dan menyimpan dokumen yang diperbarui dengan Form facade di Aspose.PDF for Java.
+AlternativeHeadline: "Mengonversi semua bidang formulir interaktif menjadi konten statis di Java"
+Abstract: "Artikel ini menunjukkan cara mengikat formulir PDF, meratakan setiap bidang formulir, dan menyimpan dokumen yang diperbarui dengan fasad Form di Aspose.PDF for Java."
 ---
 Gunakan `FormExamples.flattenAllFields(...)` ketika Anda perlu mengonversi semua bidang interaktif menjadi konten halaman statis.
 

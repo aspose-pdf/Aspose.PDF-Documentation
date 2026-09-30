@@ -1,28 +1,28 @@
 ---
-title: Enkripsi File PDF
-linktitle: Enkripsi File PDF
+title: "Mengenkripsi file PDF"
+linktitle: "Mengenkripsi file PDF"
 type: docs
 weight: 30
 url: /id/java/encrypt-pdf-file/
-description: Pelajari cara mengenkripsi PDF dan mengonfigurasi izin di Java dengan facade PdfFileSecurity.
-lastmod: "2026-09-29"
+description: "Pelajari cara mengenkripsi PDF dan mengonfigurasi izin di Java dengan fasad PdfFileSecurity."
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Enkripsikan file PDF dan definisikan izin pengguna di Java
+AlternativeHeadline: "Mengenkripsi file PDF dan mendefinisikan izin pengguna di Java"
 Abstract: Pelajari cara mengenkripsi PDF dengan Aspose.PDF for Java. Set contoh Java mencakup enkripsi berbasis kata sandi dengan hak istimewa terbatas, enkripsi yang berfokus pada izin, dan enkripsi berbasis AES dengan ukuran kunci 256-bit.
 ---
-## Enkripsi file PDF
+## Mengenkripsi file PDF
 
 Gunakan `PdfFileSecurity` ketika Anda perlu melindungi PDF dengan kata sandi dan aturan hak istimewa.
 
 ### Langkah
 
 1. Buat sebuah `PdfFileSecurity` Instansi.
-2. Mengikat PDF sumber dengan `bindPdf`.
-3. Bangun sebuah `DocumentPrivilege` objek yang cocok dengan tindakan yang diizinkan.
+2. Ikat PDF sumber dengan `bindPdf`.
+3. Bangun sebuah objek `DocumentPrivilege` yang cocok dengan tindakan yang diizinkan.
 4. Panggil yang sesuai `encryptFile` overload untuk ukuran kunci dan algoritma yang Anda butuhkan.
 5. Simpan file yang diamankan dan tutup objek.
 

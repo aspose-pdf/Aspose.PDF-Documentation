@@ -1,23 +1,23 @@
 ---
-title: Dapatkan dan Cari Gambar dalam PDF
-linktitle: Dapatkan dan Cari Gambar
+title: "Mendapatkan dan mencari gambar dalam PDF"
+linktitle: "Mendapatkan dan mencari gambar"
 type: docs
 weight: 40
 url: /id/java/search-and-get-images-from-pdf-document/
 description: Pelajari cara mencari dan memeriksa gambar dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Cari dan periksa gambar dalam file PDF dengan Java
+AlternativeHeadline: "Mencari dan memeriksa gambar dalam file PDF dengan Java"
 Abstract: Artikel ini menunjukkan cara mencari dan memeriksa gambar dalam dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup pembacaan geometri penempatan gambar, mendeteksi tipe warna, mengekstrak teks alternatif, dan menghitung resolusi gambar yang efektif dari operator halaman.
 ---
 Aspose.PDF for Java dapat memeriksa informasi penempatan gambar serta data gambar tingkat rendah.
 
-## Dapatkan parameter penempatan gambar
+## Mendapatkan parameter penempatan gambar
 
 Gunakan contoh ini ketika Anda perlu memeriksa geometri gambar dan resolusi efektif pada sebuah halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Gunakan [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mengumpulkan penempatan gambar.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Gunakan [`ImagePlacementAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mengumpulkan penempatan gambar.
 1. Keluarkan ukuran, koordinat, dan resolusi untuk setiap gambar yang ditempatkan.
 
 ```java
@@ -38,13 +38,13 @@ public static void extractImageParams(Path inputFile) {
 }
 ```
 
-## Deteksi tipe warna gambar
+## Mendeteksi tipe warna gambar
 
 Gunakan contoh ini ketika Anda perlu menghitung gambar skala abu-abu dan RGB dalam halaman PDF.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Gunakan [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mengiterasi gambar halaman.
-1. Baca [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) dari setiap gambar dan keluarkan totalnya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Gunakan [`ImagePlacementAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mengiterasi gambar halaman.
+1. Baca [`ColorType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) dari setiap gambar dan keluarkan totalnya.
 
 ```java
 public static void extractImageTypesFromPdf(Path inputFile) {
@@ -78,12 +78,12 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 }
 ```
 
-## Ekstrak teks alternatif gambar
+## Mengekstrak teks alternatif gambar
 
 Gunakan contoh ini ketika Anda perlu memeriksa teks aksesibilitas yang terkait dengan gambar halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Gunakan [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mengumpulkan penempatan gambar.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Gunakan [`ImagePlacementAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mengumpulkan penempatan gambar.
 1. Baca teks alternatif untuk setiap gambar dan keluarkan hasilnya.
 
 ```java
@@ -105,11 +105,11 @@ public static void extractImageAltText(Path inputFile) {
 }
 ```
 
-## Hitung informasi gambar dari operator halaman
+## Menghitung informasi gambar dari operator halaman
 
 Gunakan contoh ini ketika Anda perlu mendapatkan ukuran gambar efektif dan resolusi dari operator konten halaman tingkat rendah.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan kumpulkan nama sumber gambar.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan kumpulkan nama sumber gambar.
 1. Lacak keadaan grafik saat mengiterasi operator halaman.
 1. Selesaikan setiap operasi gambar dan hitung dimensi serta resolusi efektifnya.
 

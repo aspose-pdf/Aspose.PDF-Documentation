@@ -1,23 +1,23 @@
 ---
-title: Isi AcroForm - Isi Formulir PDF menggunakan Java
-linktitle: Isi AcroForm
+title: "Mengisi AcroForm - isi Formulir PDF menggunakan Java"
+linktitle: "Mengisi AcroForm"
 type: docs
 weight: 20
 url: /id/java/fill-form/
 description: Isi bidang AcroForm dalam dokumen PDF menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Isi bidang AcroForm dalam file PDF dengan Java
-Abstract: Artikel ini menjelaskan cara mengisi bidang AcroForm menggunakan Aspose.PDF for Java. Contoh tersebut memuat PDF melalui facade Form, mencocokkan nama bidang dengan peta nilai, memperbarui bidang yang cocok, dan menyimpan dokumen yang selesai.
+AlternativeHeadline: "Mengisi bidang AcroForm dalam file PDF dengan Java"
+Abstract: "Artikel ini menjelaskan cara mengisi bidang AcroForm menggunakan Aspose.PDF for Java. Contoh tersebut memuat PDF melalui fasad Form, mencocokkan nama bidang dengan peta nilai, memperbarui bidang yang cocok, dan menyimpan dokumen yang selesai."
 ---
-itu `Form` facade dapat digunakan untuk mengotomatisasi pengisian bidang pada AcroForm yang ada.
+itu fasad `Form` dapat digunakan untuk mengotomatisasi pengisian bidang pada AcroForm yang ada.
 
-## Isi bidang AcroForm dengan nilai baru
+## Mengisi bidang AcroForm dengan nilai baru
 
-1. Buka dokumen PDF Form dengan [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad.
+1. Buka dokumen PDF Form dengan fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 1. Iterasikan melalui bidang Form dan perbarui entri yang cocok dengan nilai yang diberikan.
 1. Simpan dokumen PDF yang diperbarui.
 

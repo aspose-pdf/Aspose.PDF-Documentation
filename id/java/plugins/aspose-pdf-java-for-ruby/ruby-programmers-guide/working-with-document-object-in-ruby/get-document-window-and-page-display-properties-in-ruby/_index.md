@@ -1,13 +1,13 @@
 ---
-title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman dalam Ruby
-linktitle: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman dalam Ruby
+title: "Mendapatkan properti jendela dokumen dan tampilan halaman dalam Ruby"
+linktitle: "Mendapatkan properti jendela dokumen dan tampilan halaman dalam Ruby"
 type: docs
 weight: 40
 url: /id/java/get-document-window-and-page-display-properties-in-ruby/
 description: Ambil dan sesuaikan properti jendela dokumen serta tampilan halaman dalam file PDF menggunakan Ruby dan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Dapatkan Properti Jendela Dokumen dan Tampilan Halaman
+## Aspose.PDF - dapatkan properti jendela dokumen dan tampilan halaman
 
 Untuk mendapatkan Properti Jendela Dokumen dan Tampilan Halaman dari dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **GetDocumentWindow**.
 
@@ -73,8 +73,8 @@ puts "PageLayout :-" + doc.getPageLayout().to_s
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-DownloadВ **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah ini:
+Download **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

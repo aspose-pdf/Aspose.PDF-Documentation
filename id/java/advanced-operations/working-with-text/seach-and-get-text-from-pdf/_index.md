@@ -1,21 +1,21 @@
 ---
-title: Cari dan Ekstrak Teks PDF dalam Java
-linktitle: Cari dan Dapatkan Teks
+title: "Mencari dan mengekstrak teks PDF dalam Java"
+linktitle: "Mencari dan mendapatkan teks"
 type: docs
 weight: 60
 url: /id/java/search-and-get-text-from-pdf/
 description: Pelajari cara mencari, memeriksa, dan mengekstrak teks dari dokumen PDF di Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Cari teks PDF dan periksa fragmen yang diekstrak di Java
+AlternativeHeadline: "Mencari teks PDF dan memeriksa fragmen yang diekstrak di Java"
 Abstract: Artikel ini menjelaskan cara mencari dan mengekstrak teks dari dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup TextAbsorber dan TextFragmentAbsorber, termasuk ekstraksi berbasis wilayah, pencarian spesifik halaman, pencocokan regex dan frasa, penyisipan hyperlink, inspeksi teks bergaya, dan penyorotan fragmen.
 ---
 Aspose.PDF for Java mendukung ekstraksi teks mentah dan pencarian tingkat fragmen dengan koordinat, gaya, dan pencocokan regex.
 
-## Ekstrak teks dari semua halaman dengan TextAbsorber
+## Mengekstrak teks dari semua halaman dengan TextAbsorber
 
 Gunakan contoh ini ketika Anda memerlukan teks yang diekstrak secara polos dari wilayah dokumen yang dipilih di semua halaman.
 
@@ -36,7 +36,7 @@ public static void textAbsorberSearch(Path inputFile) {
     }
 ```
 
-## Ekstrak teks dari satu halaman dengan TextAbsorber
+## Mengekstrak teks dari satu halaman dengan TextAbsorber
 
 Gunakan contoh ini ketika ekstraksi teks biasa harus dibatasi hanya satu halaman.
 
@@ -57,13 +57,13 @@ public static void textAbsorberSearchPage(Path inputFile) {
 }
 ```
 
-## Periksa semua fragmen teks dalam dokumen
+## Memeriksa semua fragmen teks dalam dokumen
 
 Gunakan contoh ini ketika Anda membutuhkan konten teks bersamaan dengan metadata font, posisi, dan warna.
 
 1. Buka dokumen PDF sumber.
 1. Jalankan `TextFragmentAbsorber` di semua halaman.
-1. Iterasi melalui fragmen dan keluarkan metadata mereka.
+1. Iterasikan melalui fragmen dan keluarkan metadata mereka.
 
 ```java
 public static void textFragmentAbsorberSearch(Path inputFile) {
@@ -87,7 +87,7 @@ public static void textFragmentAbsorberSearch(Path inputFile) {
 }
 ```
 
-## Cari satu frasa pada halaman tertentu
+## Mencari satu frasa pada halaman tertentu
 
 Gunakan contoh ini ketika kata target harus ditemukan hanya pada halaman yang dipilih.
 
@@ -109,7 +109,7 @@ public static void textFragmentAbsorberSearchPage(Path inputFile) {
 }
 ```
 
-## Lanjutkan pencarian berurutan di seluruh halaman
+## Melanjutkan pencarian berurutan di seluruh halaman
 
 Gunakan contoh ini ketika Anda ingin menggunakan kembali satu absorber saat berpindah dari pencarian satu halaman ke halaman berikutnya.
 
@@ -143,7 +143,7 @@ public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
 }
 ```
 
-## Cari frasa di dalam persegi panjang terpilih
+## Mencari frasa di dalam persegi panjang terpilih
 
 Gunakan contoh ini ketika pencocokan frasa harus dibatasi pada suatu wilayah di satu halaman.
 
@@ -167,7 +167,7 @@ public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
 }
 ```
 
-## Cari teks dengan ekspresi reguler
+## Mencari teks dengan ekspresi reguler
 
 Gunakan contoh ini ketika pencocokan harus ditemukan dengan pola regex, bukan frasa tetap.
 
@@ -191,7 +191,7 @@ public static void textFragmentAbsorberSearchRegex(Path inputFile) {
 }
 ```
 
-## Cari daftar frasa berdasarkan pola regex
+## Mencari daftar frasa berdasarkan pola regex
 
 Gunakan contoh ini ketika beberapa frasa target harus ditemukan dalam satu kali proses.
 
@@ -219,7 +219,7 @@ public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
 }
 ```
 
-## Temukan teks dan ubah menjadi tautan
+## Menemukan teks dan mengubah menjadi tautan
 
 Gunakan contoh ini ketika kata yang cocok harus disorot dan diubah menjadi tautan yang dapat diklik.
 
@@ -245,7 +245,7 @@ public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
 }
 ```
 
-## Cari teks berdasarkan karakteristik gaya
+## Mencari teks berdasarkan karakteristik gaya
 
 Gunakan contoh ini ketika Anda perlu memeriksa fragmen berdasarkan pemformatan seperti tebal atau teks tak terlihat.
 
@@ -272,7 +272,7 @@ public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
 }
 ```
 
-## Sorot hasil pencarian di pratinjau halaman yang dirender
+## Menyorot hasil pencarian di pratinjau halaman yang dirender
 
 Gunakan contoh ini ketika kecocokan teks harus dikorelasikan dengan gambar halaman yang dirender untuk pemeriksaan visual.
 

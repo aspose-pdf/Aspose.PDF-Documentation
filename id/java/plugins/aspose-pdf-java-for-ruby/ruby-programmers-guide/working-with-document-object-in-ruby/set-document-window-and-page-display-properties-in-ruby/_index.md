@@ -1,15 +1,15 @@
 ---
-title: Atur Properti Jendela Dokumen dan Tampilan Halaman di Ruby
-linktitle: Atur Properti Jendela Dokumen dan Tampilan Halaman di Ruby
+title: "Mengatur properti jendela dokumen dan tampilan halaman di Ruby"
+linktitle: "Mengatur properti jendela dokumen dan tampilan halaman di Ruby"
 type: docs
 weight: 100
 url: /id/java/set-document-window-and-page-display-properties-in-ruby/
 description: Sesuaikan pengaturan tampilan dokumen dan halaman dalam PDF menggunakan Ruby dan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Atur Properti Jendela Dokumen dan Tampilan Halaman
+## Aspose.PDF - atur properti jendela dokumen dan tampilan halaman
 
-Untuk mengatur Properti Jendela Dokumen dan Tampilan Halaman dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup invoke\u0412\u00A0**SetDocumentWindow** modul.
+Untuk mengatur Properti Jendela Dokumen dan Tampilan Halaman dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup invoke **SetDocumentWindow** modul.
 
 Kode Ruby
 
@@ -77,8 +77,8 @@ doc.setPageMode()
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-DownloadВ **Set Document Window and Page Display Properties (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Download **Set Document Window and Page Display Properties (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

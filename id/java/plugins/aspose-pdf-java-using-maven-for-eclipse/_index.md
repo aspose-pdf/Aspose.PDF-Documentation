@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /id/java/aspose-pdf-java-using-maven-for-eclipse/
 description: Siapkan Aspose.PDF for Java di Eclipse menggunakan Maven. Permudah manajemen dependensi untuk pengembangan PDF yang efisien.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 ## Pendahuluan
 
@@ -45,31 +45,31 @@ Contoh Kode Aspose.PDF (wizard)
 - Contoh Kode API Aspose.PDF for Java dimaksudkan untuk mendemonstrasikan berbagai fungsi API.
 - Wizard juga akan mencari dan memperbarui Contoh Kode yang baru tersedia) dari repositori contoh Aspose.PDF for Java.
 
-## Persyaratan Sistem dan Platform yang Didukung
+## Persyaratan sistem dan platform yang didukung
 
-### Persyaratan Sistem
+### Persyaratan sistem
 
 - **Memori Sistem:** 2 GB atau lebih (Direkomendasikan)
 - **OS:** Sistem operasi apa pun yang mendukung Java VM (Virtual Machine)
 - **Koneksi Internet:** 2 MB atau lebih cepat (Direkomendasikan)
 
-### Platform yang Didukung
+### Platform yang didukung
 
 - Eclipse Mars.1 (4.5.1) - Direkomendasikan
 - Eclipse Juno atau yang lebih baru.
 
 ## Mengunduh
 
-### Unduh Eclipse IDE
+### Mengunduh Eclipse IDE
 
 Anda harus terlebih dahulu menginstal Eclipse IDE sebelum mengunduh plugin Aspose.PDF Java (Maven) untuk Eclipse.
 
 Untuk mengunduh Eclipse IDE
 
-1. Pergi ke [https://eclipse.org](https://eclipse.org/).
+1. Pergi ke [https://eclipse.org](https://eclipse.org/)..
 1. Unduh dan instal Eclipse IDE yang direkomendasikan untuk pengembang Java SE / EE.
 
-### Unduh Aspose.PDF Java (Maven) untuk Eclipse
+### Mengunduh Aspose.PDF Java (Maven) untuk Eclipse
 
 Berikut adalah tiga metode yang direkomendasikan untuk mengunduh dan menginstal plugin Aspose.PDF Java (Maven) untuk Eclipse secara sukses:
 
@@ -81,11 +81,11 @@ Kemudian pilih "Aspose.PDF Java (Maven) for Eclipse" dan **Finish**. Terima Pers
 
 Menginstal Aspose.PDF Java (Maven) untuk Eclipse
 
-## Menggunakan Plugin
+## Menggunakan plugin
 
 Menggunakan Aspose.PDF Java (Maven) untuk Eclipse
 
-### Cara menerapkan Lisensi Aspose?
+### Menerapkan lisensi Aspose
 
 Plugin ini menggunakan versi percobaan Aspose.PDF. Setelah Anda puas dengan evaluasinya, Anda dapat membeli lisensi di [Situs web Aspose](https://purchase.aspose.com/buy).
 Untuk menghapus pesan evaluasi dan batasan fitur, lisensi produk harus diterapkan. Anda akan menerima file lisensi setelah Anda membeli produk. Silakan ikuti langkah-langkah di bawah ini untuk menerapkan lisensi
@@ -102,7 +102,7 @@ license.setLicense("Aspose.PDF.Java.lic");
 
 {{< /highlight >}}
 
-## Dukungan, Perluas, dan Kontribusi
+## Dukungan, pengembangan, dan kontribusi
 
 ### Dukungan
 
@@ -112,19 +112,20 @@ license.setLicense("Aspose.PDF.Java.lic");
 
 Silakan ikuti [**GitHub Issues Tracker**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) untuk mencatat setiap masalah yang ditemukan di plugin.
 
-### Perluas dan Berkontribusi
+### Memperluas dan berkontribusi
 
 Aspose.PDF Java (Maven) untuk Eclipse bersifat sumber terbuka dan kode sumbernya tersedia di situs web pengkodean sosial utama yang tercantum di bawah ini. Pengembang dianjurkan untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang sudah ada sehingga orang lain juga dapat memanfaatkannya. Pengembang juga dapat belajar darinya untuk membuat plugin mereka sendiri.
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_Maven_for_Eclipse)
 
-### Cara mengonfigurasi kode sumber Aspose.PDF Java (Maven) untuk Eclipse
+### Mengonfigurasi kode sumber Aspose.PDF Java (Maven) untuk Eclipse
 
 Langkah‑langkah sederhana di bawah ini akan dengan mulus menghasilkan konfigurasi yang berhasil dari kode sumber plugin **"Aspose.PDF Java (Maven) for Eclipse"** di Eclipse IDE
 
 1. Unduh / Kloning kode sumber.
-1. Pilih **File** > Import > General > Existing Projects into Workspace
-1. Jelajahi sumber proyek terbaru yang telah Anda unduh
-1. Pilih Proyek Eclipse yang ingin Anda impor
-1. Klik Finish
-1. Kode plugin Aspose.PDF Java untuk Eclipse sekarang siap untuk ditingkatkan.
+1. Pilih **File** > Import > General > Existing Projects into Workspace.
+1. Jelajahi sumber proyek terbaru yang telah Anda unduh.
+1. Pilih Proyek Eclipse yang ingin Anda impor.
+1. Klik Finish.
+
+Kode plugin Aspose.PDF Java untuk Eclipse sekarang siap untuk ditingkatkan.

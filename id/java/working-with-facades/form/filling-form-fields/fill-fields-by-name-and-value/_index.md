@@ -1,16 +1,16 @@
 ---
-title: Isi Field Berdasarkan Nama dan Nilai
-linktitle: Isi Field Berdasarkan Nama dan Nilai
+title: "Mengisi Field berdasarkan nama dan nilai"
+linktitle: "Mengisi Field berdasarkan nama dan nilai"
 type: docs
 weight: 60
 url: /id/java/fill-fields-by-name-and-value/
-description: Pelajari cara menyesuaikan API pengisian field facade Form di Java untuk pembaruan formulir dinamis berbasis nama-nilai.
-lastmod: "2026-09-29"
+description: "Pelajari cara menyesuaikan API pengisian bidang fasad Form di Java untuk pembaruan formulir dinamis berbasis nama-nilai."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Isi beberapa field formulir PDF dari pasangan nama-nilai di Java
-Abstract: Set contoh Java saat ini mengisi field secara individual dengan pemanggilan `fillField(...)` berulang. Artikel ini menunjukkan cara menerapkan pola API yang sama pada koleksi nama-nilai Anda sendiri tanpa menciptakan fitur facade terpisah yang tidak ada dalam contoh repositori.
+AlternativeHeadline: "Mengisi beberapa bidang formulir PDF dari pasangan nama-nilai di Java"
+Abstract: "Set contoh Java saat ini mengisi bidang secara individual dengan pemanggilan `fillField(...)` berulang. Artikel ini menunjukkan cara menerapkan pola API yang sama pada koleksi nama-nilai Anda sendiri tanpa menciptakan fitur fasad terpisah yang tidak ada dalam contoh repositori."
 ---
-Java `FormExamples` kelas mengisi bidang individual secara langsung:
+Kelas `FormExamples` dalam Java mengisi bidang individual secara langsung:
 
 ```java
 form.fillField("name", "John Doe");

@@ -1,11 +1,11 @@
 ---
-title: Bekerja dengan Tabel dalam PDF menggunakan Java
-linktitle: Bekerja dengan Tabel
+title: "Bekerja dengan tabel dalam PDF menggunakan Java"
+linktitle: "Bekerja dengan tabel"
 type: docs
 weight: 50
 url: /id/java/working-with-tables/
 description: Pelajari cara menambah, mengekstrak, mengintegrasikan, memanipulasi, dan menghapus tabel dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,8 +15,8 @@ Abstract: Bagian ini menjelaskan cara bekerja dengan tabel dalam dokumen PDF men
 ---
 Aspose.PDF for Java mendukung alur kerja pembuatan tabel dan analisis tabel. Anda dapat membuat tata letak kaya dengan batas, baris berulang, gambar, dan konten yang diformat, atau mendeteksi dan memodifikasi tabel yang sudah ada dalam PDF yang sudah ada.
 
-- [Tambahkan tabel dalam dokumen PDF yang ada](/pdf/id/java/adding-tables/)
-- [Ekstrak tabel dari dokumen PDF yang ada](/pdf/id/java/extracting-table/)
-- [Integrasikan tabel dengan data eksternal](/pdf/id/java/integrate-table/)
-- [Manipulasi tabel dalam dokumen PDF yang ada](/pdf/id/java/manipulating-tables/)
-- [Hapus tabel dari dokumen PDF yang ada](/pdf/id/java/removing-tables/)
+- [Menambahkan tabel dalam dokumen PDF yang ada](/pdf/id/java/adding-tables/)
+- [Mengekstrak tabel dari dokumen PDF yang ada](/pdf/id/java/extracting-table/)
+- [Mengintegrasikan tabel dengan data eksternal](/pdf/id/java/integrate-table/)
+- [Memanipulasi tabel dalam dokumen PDF yang ada](/pdf/id/java/manipulating-tables/)
+- [Menghapus tabel dari dokumen PDF yang ada](/pdf/id/java/removing-tables/)

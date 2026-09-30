@@ -1,23 +1,23 @@
 ---
-title: Ekstrak Gambar dari File PDF menggunakan Java
-linktitle: Ekstrak Gambar
+title: "Mengekstrak gambar dari file PDF menggunakan Java"
+linktitle: "Mengekstrak gambar"
 type: docs
 weight: 30
 url: /id/java/extract-images-from-pdf-file/
 description: Pelajari cara mengekstrak gambar yang disematkan dari file PDF dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Ekstrak gambar dari file PDF dengan Java
+AlternativeHeadline: "Mengekstrak gambar dari file PDF dengan Java"
 Abstract: Artikel ini menunjukkan cara mengekstrak gambar dari dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup penyimpanan sumber gambar tertentu dari sebuah halaman dan mengekspor gambar yang berada di dalam wilayah persegi panjang yang dipilih.
 ---
 Aspose.PDF for Java mendukung ekstraksi sumber gambar langsung dan penyaringan berbasis penempatan.
 
-## Ekstrak gambar tersemat berdasarkan indeks
+## Mengekstrak gambar tersemat berdasarkan indeks
 
 Gunakan contoh ini ketika Anda perlu menyimpan sumber gambar tertentu dari halaman PDF
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Akses target [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) dari sumber daya halaman.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Akses [`XImage`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) target dari sumber daya halaman.
 1. Simpan aliran gambar ke file output.
 
 ```java
@@ -30,12 +30,12 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 }
 ```
 
-## Ekstrak gambar dari area halaman tertentu
+## Mengekstrak gambar dari area halaman tertentu
 
 Gunakan contoh ini ketika hanya gambar yang ditempatkan di dalam persegi panjang yang dipilih yang harus diekspor.
 
-1. Tentukan target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) dan buka PDF sumber.
-1. Gunakan [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk memeriksa penempatan gambar pada halaman.
+1. Tentukan [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) target dan buka PDF sumber.
+1. Gunakan [`ImagePlacementAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk memeriksa penempatan gambar pada halaman.
 1. Simpan hanya gambar yang penempatannya cocok di dalam wilayah yang dipilih.
 
 ```java

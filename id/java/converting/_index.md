@@ -1,16 +1,16 @@
 ---
-title: Konversi Dokumen PDF dalam Java
-linktitle: Konversi dokumen PDF
+title: "Mengonversi dokumen PDF dalam Java"
+linktitle: "Mengonversi dokumen PDF"
 type: docs
 weight: 70
 url: /id/java/converting/
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 description: Pelajari cara mengonversi dokumen PDF ke Word, Excel, PowerPoint, HTML, gambar, standar PDF, dan format lain dalam Java dengan Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true
-AlternativeHeadline: Cara Mengonversi dokumen PDF menggunakan Java
+AlternativeHeadline: "Mengonversi dokumen PDF menggunakan Java"
 Abstract: Artikel ini memperkenalkan fitur konversi dokumen di Aspose.PDF for Java. Artikel ini mencakup konversi dokumen PDF ke Word, Excel, PowerPoint, HTML, gambar, PDF/A, PDF/E, PDF/X, dan format file lainnya, serta konversi HTML, gambar, dan file sumber lainnya menjadi PDF.
 ---
 Aspose.PDF for Java mendukung kedua arah konversi dokumen: mengonversi file PDF ke format yang dapat diedit atau dipertukarkan, dan mengonversi format sumber seperti HTML, gambar, EPUB, XPS, dan teks menjadi PDF.

@@ -1,13 +1,13 @@
 ---
-title: Tambah Teks ke file PDF yang ada di PHP
-linktitle: Tambah Teks ke file PDF yang ada di PHP
+title: "Menambahkan teks ke file PDF yang ada di PHP"
+linktitle: "Menambahkan teks ke file PDF yang ada di PHP"
 type: docs
 weight: 20
 url: /id/java/add-text-to-an-existing-pdf-file-in-php/
 description: Pelajari cara menambahkan teks baru ke dokumen PDF yang ada di PHP menggunakan Aspose.PDF untuk peningkatan konten.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Tambah Teks
+## Aspose.PDF - tambah teks
 
 Untuk menambahkan string Teks dalam dokumen Pdf menggunakan **Aspose.PDF Java for PHP**, cukup panggil modul **AddText**.
 
@@ -45,8 +45,8 @@ print "Text added successfully" . PHP_EOL;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-Unduh\u0412\u00A0**Tambahkan Teks (Aspose.PDF)**\u0412\u00A0dari\u0412\u00A0salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+Unduh **Tambahkan Teks (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddText.php)

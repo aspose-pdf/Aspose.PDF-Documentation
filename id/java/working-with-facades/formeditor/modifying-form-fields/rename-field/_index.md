@@ -1,18 +1,18 @@
 ---
-title: Ubah Nama Field
-linktitle: Ubah Nama Field
+title: "Mengubah nama Field"
+linktitle: "Mengubah nama Field"
 type: docs
 weight: 50
 url: /id/java/rename-field/
-description: Pelajari cara mengganti nama field formulir yang ada dalam dokumen PDF di Java menggunakan fasad FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara mengganti nama bidang formulir yang ada dalam dokumen PDF di Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Ganti nama field formulir PDF di Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, mengganti nama field yang ditentukan, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Mengganti nama bidang formulir PDF di Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF yang ada, mengganti nama bidang yang ditentukan, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
-## Ganti nama field
+## Mengganti nama bidang
 
-1. Mengikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Panggil `renameField(...)` dengan nama bidang saat ini dan nama bidang baru.
 3. Simpan dokumen yang telah diperbarui.
 

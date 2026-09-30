@@ -1,27 +1,27 @@
 ---
-title: Tambahkan Tooltip ke Teks PDF di Java
+title: "Menambahkan tooltip ke teks PDF di Java"
 linktitle: Tooltip PDF
 type: docs
 weight: 20
 url: /id/java/pdf-tooltip/
 description: Pelajari cara menambahkan tooltip ke fragmen teks dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan tooltip interaktif ke fragmen teks PDF menggunakan Java
+AlternativeHeadline: "Menambahkan tooltip interaktif ke fragmen teks PDF menggunakan Java"
 Abstract: Artikel ini menunjukkan cara menambahkan bantuan interaktif ke teks PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup cara melampirkan teks tooltip ke button fields tak terlihat yang ditempatkan di atas fragmen teks yang cocok dan membuat bidang teks tersembunyi yang muncul ketika pointer masuk ke trigger area.
 ---
 Aspose.PDF for Java memungkinkan Anda menambahkan bantuan interaktif dengan menempatkan bidang Form di atas fragmen teks.
 
-## Tambahkan tooltip ke teks yang cocok
+## Menambahkan tooltip ke teks yang cocok
 
 Gunakan contoh ini ketika teks yang ada dalam PDF harus menampilkan tooltip saat dihover.
 
 1. Buat PDF contoh dan buka kembali untuk penyuntingan.
 1. Cari fragmen teks target dengan `TextFragmentAbsorber`.
-1. Tempat `ButtonField` menambahkan overlay pada teks yang cocok dan menetapkan teks tooltip.
+1. Tempatkan `ButtonField` menambahkan overlay pada teks yang cocok dan menetapkan teks tooltip.
 1. Simpan dokumen yang diperbarui.
 
 ```java
@@ -66,7 +66,7 @@ public static void addToolTipToSearchedText(Path outputFile) {
     }
 ```
 
-## Tampilkan blok teks mengambang saat mengarahkan kursor.
+## Menampilkan blok teks mengambang saat mengarahkan kursor
 
 Gunakan contoh ini ketika mengarahkan kursor ke area teks akan menampilkan bidang teks tersembunyi.
 

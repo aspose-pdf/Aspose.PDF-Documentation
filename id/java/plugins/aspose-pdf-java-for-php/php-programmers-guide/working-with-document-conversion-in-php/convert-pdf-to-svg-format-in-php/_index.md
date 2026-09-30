@@ -1,13 +1,13 @@
 ---
-title: Konversi PDF ke Format SVG dalam PHP
-linktitle: Konversi PDF ke Format SVG dalam PHP
+title: "Mengonversi PDF ke Format SVG dalam PHP"
+linktitle: "Mengonversi PDF ke Format SVG dalam PHP"
 type: docs
 weight: 30
 url: /id/java/convert-pdf-to-svg-format-in-php/
 description: Temukan cara mengonversi dokumen PDF ke format SVG dalam PHP dengan Aspose.PDF untuk transformasi grafik vektor berkualitas tinggi.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Konversi PDF ke SVG
+## Aspose.PDF - konversi PDF ke SVG
 
 Untuk mengonversi PDF ke format SVG menggunakan **Aspose.PDF Java for PHP**, cukup panggil modul **PdfToSvg**.
 
@@ -31,8 +31,8 @@ print "Document has been converted successfully" . PHP_EOL;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Convert PDF to SVG Format (Aspose.PDF)**В dariВ semua situs coding sosial yang disebutkan di bawah:
+Unduh **Convert PDF to SVG Format (Aspose.PDF)** dari semua situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToSvg.php)

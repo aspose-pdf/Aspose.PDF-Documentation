@@ -1,25 +1,25 @@
 ---
-title: Sisipkan Halaman ke PDF
-linktitle: Sisipkan Halaman ke PDF
+title: "Menyisipkan halaman ke PDF"
+linktitle: "Menyisipkan halaman ke PDF"
 type: docs
 weight: 40
 url: /id/java/insert-pages-into-pdf/
-description: Sisipkan halaman yang dipilih dari satu PDF ke PDF lain dalam Java dengan facade PdfFileEditor.
-lastmod: "2026-09-29"
+description: "Sisipkan halaman yang dipilih dari satu PDF ke PDF lain dalam Java dengan fasad PdfFileEditor."
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Sisipkan halaman dari PDF lain pada posisi yang dipilih dengan Java
+AlternativeHeadline: "Menyisipkan halaman dari PDF lain pada posisi yang dipilih dengan Java"
 Abstract: Pelajari cara menyisipkan halaman ke PDF dengan Aspose.PDF for Java. Contoh Java menggunakan PdfFileEditor untuk menyisipkan halaman yang dipilih dari dokumen kedua setelah nomor halaman tertentu di PDF target.
 ---
-## Sisipkan halaman ke PDF
+## Menyisipkan halaman ke PDF
 
 Contoh Java menyisipkan halaman 1 dan 2 dari dokumen sekunder setelah halaman 2 pada PDF target.
 
 ### Langkah
 
-1. Buat sebuah `PdfFileEditor` instansi.
+1. Buat sebuah instans `PdfFileEditor`.
 2. Pilih titik penyisipan di dokumen target.
 3. Pilih nomor halaman yang akan disalin dari dokumen sumber.
 4. Panggil `insert` dengan file target, titik sisipan, file sumber, array halaman, dan file output.

@@ -1,13 +1,13 @@
 ---
-title: Dapatkan Jumlah Halaman PDF dalam Ruby
-linktitle: Dapatkan Jumlah Halaman PDF dalam Ruby
+title: "Mendapatkan jumlah halaman PDF dalam Ruby"
+linktitle: "Mendapatkan jumlah halaman PDF dalam Ruby"
 type: docs
 weight: 40
 url: /id/java/get-page-count-of-pdf-in-ruby/
 description: Ambil total jumlah halaman dalam dokumen PDF secara programatis menggunakan Ruby dengan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Dapatkan Jumlah Halaman
+## Aspose.PDF - dapatkan jumlah halaman
 
 Untuk mendapatkan jumlah halaman dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **GetNumberOfPages**.
 
@@ -25,8 +25,8 @@ page_count = pdf.getPages().size()
 puts "Page Count:" + page_count.to_s
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-DownloadВ **Dapatkan Jumlah Halaman (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah ini:
+Download **Dapatkan Jumlah Halaman (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getnumberofpages.rb)

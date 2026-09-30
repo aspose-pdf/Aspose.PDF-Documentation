@@ -1,13 +1,13 @@
 ---
-title: Isi Bidang Barcode
-linktitle: Isi Bidang Barcode
+title: "Mengisi bidang barcode"
+linktitle: "Mengisi bidang barcode"
 type: docs
 weight: 50
 url: /id/java/fill-barcode-fields/
 description: Pelajari cara mengisi bidang formulir barcode di Java menggunakan fasad Form di Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Isi bidang barcode dalam formulir PDF dengan Java
+AlternativeHeadline: "Mengisi bidang barcode dalam formulir PDF dengan Java"
 Abstract: Artikel ini menunjukkan cara mengikat formulir PDF, mengatur nilai bidang barcode, dan menyimpan dokumen yang diperbarui dengan fasad Form di Aspose.PDF for Java.
 ---
 Gunakan `FormExamples.fillBarcodeFields(...)` untuk mengisi bidang kode batang dalam formulir PDF.

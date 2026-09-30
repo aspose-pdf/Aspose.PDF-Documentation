@@ -1,26 +1,26 @@
 ---
-title: Potong Halaman PDF dengan Java
-linktitle: Memotong Halaman PDF
+title: "Memotong halaman PDF dengan Java"
+linktitle: "Memotong halaman PDF"
 type: docs
 weight: 70
 url: /id/java/crop-pages/
 description: Pelajari cara memotong halaman PDF dan menyesuaikan kotak crop, trim, bleed, dan media dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Potong halaman dan sesuaikan kotak halaman dalam file PDF dengan Java
+AlternativeHeadline: "Memotong halaman dan menyesuaikan kotak halaman dalam file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara memotong halaman PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup penetapan persegi panjang crop baru ke kotak crop, trim, art, dan bleed, serta memotong halaman secara otomatis berdasarkan konten gambar yang terdeteksi.
 ---
 Aspose.PDF for Java memungkinkan Anda memotong halaman baik dengan koordinat kotak eksplisit atau berdasarkan konten yang terdeteksi.
 
-## Pangkas halaman dengan mengatur kotak halaman
+## Memangkas halaman dengan mengatur kotak halaman
 
 Gunakan contoh ini ketika Anda perlu menerapkan area panggasan yang sama ke kotak halaman utama.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat panggasan baru [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat panggasan baru [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Terapkan persegi panjang pada kotak halaman yang terkait dengan pemotongan dan simpan dokumen.
 
 ```java
@@ -36,12 +36,12 @@ public static void cropPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## Potong halaman berdasarkan konten yang terdeteksi
+## Memotong halaman berdasarkan konten yang terdeteksi
 
 Gunakan contoh ini ketika area pemotongan harus diambil dari gambar pertama yang terdeteksi pada halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Gunakan [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mendeteksi penempatan gambar.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Gunakan [`ImagePlacementAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) untuk mendeteksi penempatan gambar.
 1. Atur kotak pemotongan ke persegi panjang gambar jika ditemukan, kemudian simpan dokumen.
 
 ```java

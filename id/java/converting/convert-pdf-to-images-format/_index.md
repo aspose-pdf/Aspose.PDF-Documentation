@@ -1,27 +1,27 @@
 ---
-title: Konversi PDF ke Format Gambar di Java
-linktitle: Konversi PDF ke Gambar
+title: "Mengonversi PDF ke Format gambar di Java"
+linktitle: "Mengonversi PDF ke gambar"
 type: docs
 weight: 70
 url: /id/java/convert-pdf-to-images-format/
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 description: Pelajari cara merender halaman PDF menjadi file TIFF, BMP, EMF, JPEG, PNG, GIF, dan SVG di Java dengan Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Konversi Halaman PDF ke TIFF, PNG, JPEG, GIF, BMP, EMF, dan SVG di Java
+AlternativeHeadline: "Mengonversi halaman PDF ke TIFF, PNG, JPEG, GIF, BMP, EMF, dan SVG di Java"
 Abstract: Artikel ini menjelaskan cara mengonversi file PDF ke format gambar umum dengan Aspose.PDF for Java. Ini mencakup ekspor TIFF untuk seluruh dokumen, pembuatan raster per halaman dengan perangkat gambar, substitusi font opsional saat ekspor PNG, dan output SVG dengan `SvgSaveOptions`.
 ---
 Aspose.PDF for Java dapat merender halaman PDF ke format gambar raster dan vektor dengan opsi perangkat khusus format.
 
-## Konversi PDF ke BMP
+## Mengonversi PDF ke BMP
 
 Gunakan contoh ini ketika halaman PDF harus dirender sebagai gambar BMP.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat sebuah [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) dengan [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) dari 300 DPI.
-1. Iterasi melalui `document.getPages()` dan panggil `device.process(...)` untuk setiap halaman.
+1. Iterasikan melalui `document.getPages()` dan panggil `device.process(...)` untuk setiap halaman.
 1. Simpan gambar BMP yang dihasilkan ke jalur output yang bernomor.
 
 ```java
@@ -36,13 +36,13 @@ public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
    }
 ```
 
-## Konversi PDF ke EMF
+## Mengonversi PDF ke EMF
 
 Gunakan contoh ini ketika halaman PDF harus diekspor sebagai gambar vektor EMF.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat sebuah [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) dengan [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) dari 300 DPI.
-1. Iterasi melalui halaman dan panggil `device.process(...)` untuk setiap halaman.
+1. Iterasikan melalui halaman dan panggil `device.process(...)` untuk setiap halaman.
 1. Simpan output EMF ke jalur file bernomor.
 
 ```java
@@ -57,13 +57,13 @@ public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Konversi PDF ke GIF
+## Mengonversi PDF ke GIF
 
 Gunakan contoh ini ketika halaman PDF harus diubah menjadi gambar GIF.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat sebuah [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) dengan [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) dari 300 DPI.
-1. Iterasi melalui halaman dan panggil `device.process(...)` untuk merender setiap halaman.
+1. Iterasikan melalui halaman dan panggil `device.process(...)` untuk merender setiap halaman.
 1. Simpan file GIF ke jalur output yang diberi nomor.
 
 ```java
@@ -78,13 +78,13 @@ public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Konversi PDF ke JPEG
+## Mengonversi PDF ke JPEG
 
 Gunakan contoh ini ketika halaman PDF harus diekspor sebagai gambar JPEG.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat sebuah [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) dengan [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) dari 300 DPI.
-1. Iterasi melalui halaman dan panggil `device.process(...)` untuk meraster setiap halaman ke JPEG.
+1. Iterasikan melalui halaman dan panggil `device.process(...)` untuk meraster setiap halaman ke JPEG.
 1. Simpan file output JPEG ke jalur bernomor.
 
 ```java
@@ -99,13 +99,13 @@ public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Ubah PDF ke PNG
+## Mengubah PDF ke PNG
 
 Gunakan contoh ini ketika halaman PDF harus dikonversi menjadi gambar PNG.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat sebuah [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) dengan [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) dari 300 DPI.
-1. Iterasi melalui halaman dan panggil `device.process(...)` untuk setiap halaman PDF.
+1. Iterasikan melalui halaman dan panggil `device.process(...)` untuk setiap halaman PDF.
 1. Simpan keluaran PNG ke jalur file yang bernomor.
 
 ```java
@@ -120,11 +120,11 @@ public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Konversi PDF ke PNG dengan fallback font default
+## Mengonversi PDF ke PNG dengan fallback font default
 
 Gunakan contoh ini ketika rendering harus menggunakan font fallback untuk glyph yang hilang.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat sebuah [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) dengan [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) dari 300 DPI.
 1. Aktifkan `document.setAbsentFontTryToSubstitute(true)` sehingga glif yang hilang dapat kembali ke font pengganti selama proses rendering.
 1. Render halaman dan simpan file PNG.
@@ -142,11 +142,11 @@ public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPre
 }
 ```
 
-## Konversi PDF ke SVG
+## Mengonversi PDF ke SVG
 
 Gunakan contoh ini ketika halaman PDF harus diekspor sebagai grafik SVG.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) dan nonaktifkan kompresi ZIP saat mentah `.svg` output diperlukan.
 1. Aktifkan `setTreatTargetFileNameAsDirectory(true)` jadi output SVG per halaman dapat diatur di bawah jalur target.
 1. Simpan output SVG.
@@ -163,11 +163,11 @@ public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
 }
 ```
 
-## Konversi PDF ke TIFF
+## Mengonversi PDF ke TIFF
 
 Gunakan contoh ini ketika satu atau lebih halaman PDF harus diekspor ke TIFF.
 
-1. Buka PDF sumber dalam sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) dan mengkonfigurasi kompresi, kedalaman warna, dan perilaku halaman kosong.
 1. Buat sebuah [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) dengan [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) berukuran 300 DPI dan pengaturan TIFF yang disiapkan.
 1. Render halaman dan simpan output TIFF.

@@ -1,25 +1,25 @@
 ---
-title: Tambahkan Halaman ke PDF
-linktitle: Tambahkan Halaman ke PDF
+title: "Menambahkan halaman ke PDF"
+linktitle: "Menambahkan halaman ke PDF"
 type: docs
 weight: 10
 url: /id/java/append-pages-to-pdf/
-description: Tambahkan halaman dari satu PDF ke PDF lain dalam Java dengan facade PdfFileEditor.
-lastmod: "2026-09-29"
+description: "Tambahkan halaman dari satu PDF ke PDF lain dalam Java dengan fasad PdfFileEditor."
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan rentang halaman dari satu dokumen PDF ke dokumen lain dengan Java
+AlternativeHeadline: "Menambahkan rentang halaman dari satu dokumen PDF ke dokumen lain dengan Java"
 Abstract: Pelajari cara menambahkan halaman ke PDF dengan Aspose.PDF for Java. Contoh Java tersebut menggunakan PdfFileEditor untuk menambahkan rentang halaman yang dipilih dari dokumen lain ke akhir PDF saat ini.
 ---
-## Tambahkan halaman ke PDF
+## Menambahkan halaman ke PDF
 
 Contoh Java menambahkan halaman 1 dari PDF kedua ke akhir dokumen pertama.
 
 ### Langkah
 
-1. Buat sebuah `PdfFileEditor` instansi.
+1. Buat sebuah instans `PdfFileEditor`.
 2. Ikat PDF input utama dengan memberikan jalurnya ke `append`.
 3. Berikan daftar file sumber sekunder dan rentang halaman untuk ditambahkan.
 4. Simpan hasil penggabungan ke file output.

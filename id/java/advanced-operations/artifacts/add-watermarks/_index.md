@@ -1,26 +1,26 @@
 ---
-title: Tambahkan Watermarks ke PDF dalam Java
-linktitle: Menambahkan Watermark
+title: "Menambahkan watermarks ke PDF dalam Java"
+linktitle: "Menambahkan watermark"
 type: docs
 weight: 30
 url: /id/java/add-watermarks/
 description: Pelajari cara menambahkan, mengekstrak, dan menghapus artefak watermark dalam file PDF menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Cara menambahkan watermark ke PDF dengan Java
+AlternativeHeadline: "Menambahkan watermark ke PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menambahkan, memeriksa, dan menghapus watermark artifacts dalam dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup pembuatan watermark teks dengan pengaturan perataan, rotasi, opasitas, dan latar belakang, memeriksa watermark artifacts pada sebuah halaman, dan menghapusnya.
 ---
 Watermark artifacts memungkinkan Anda menempatkan penanda visual yang persisten pada sebuah halaman tanpa mencampurkannya ke dalam konten utama dokumen.
 
-## Ekstrak watermark artifacts dari PDF
+## Mengekstrak watermark artifacts dari PDF
 
 Gunakan contoh ini ketika Anda perlu memeriksa watermark artifacts yang ada dan membaca teks atau posisinya.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui koleksi artefak halaman target.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui koleksi artefak halaman target.
 1. Filter artefak paginasi watermark dan cetak teks serta persegi panjangnya.
 
 ```java
@@ -36,12 +36,12 @@ public static void extractWatermarkFromPdf(Path inputFile) {
 }
 ```
 
-## Tambahkan artefak watermark
+## Menambahkan artefak watermark
 
 Gunakan contoh ini ketika halaman harus menampilkan watermark teks terpusat dengan rotasi khusus, opasitas, dan penempatan latar belakang.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) dan konfigurasikan status teks serta pengaturan penempatannya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`WatermarkArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) dan konfigurasikan status teks serta pengaturan penempatannya.
 1. Tambahkan watermark ke halaman dan simpan file output.
 
 ```java
@@ -67,12 +67,12 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Hapus artefak watermark
+## Menghapus artefak watermark
 
 Gunakan pendekatan ini ketika artefak watermark yang ada harus dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui koleksi artefak halaman dalam urutan terbalik.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui koleksi artefak halaman dalam urutan terbalik.
 1. Hapus artefak paginasi yang subtipe-nya adalah watermark, kemudian simpan dokumen.
 
 ```java

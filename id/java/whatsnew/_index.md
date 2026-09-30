@@ -8,15 +8,15 @@ description: "Halaman ini memperkenalkan fitur baru paling populer di Aspose.PDF
 sitemap:
     changefreq: "monthly"
     priority: 0.8
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: "Fitur Baru Populer di Aspose.PDF for Java"
+AlternativeHeadline: "Fitur baru populer di Aspose.PDF for Java"
 Abstract: "Bagian Apa yang Baru dalam dokumentasi Aspose.PDF for Java menyediakan ikhtisar pembaruan terbaru, peningkatan, dan perbaikan bug yang diperkenalkan dalam rilis terbaru. Bagian ini menyoroti fitur baru, peningkatan kinerja, dan pembaruan kompatibilitas untuk membantu pengembang tetap terinformasi tentang kemajuan terbaru dalam pemrosesan PDF. Dokumentasi juga mencakup detail tentang fungsi yang sudah tidak dipakai lagi dan alternatif yang direkomendasikan. Dengan meninjau bagian ini secara rutin, pengembang dapat memastikan mereka menggunakan fitur yang paling efisien dan terbaru dalam aplikasi Java mereka untuk manajemen PDF yang mulus."
 SoftwareApplication: java
 ---
 ## Apa yang baru di Aspose.PDF 25.12
 
-### Anotasi Teks Bebas dengan Rotasi Arbitrer di XFDF
+### Anotasi teks bebas dengan rotasi arbitrer di XFDF
 
 Dukungan untuk sudut rotasi arbitrer telah ditambahkan pada anotasi Teks Bebas di XFDF, sehingga tata letak anotasi yang diimpor dan diekspor menjadi lebih fleksibel.
 
@@ -30,7 +30,7 @@ editor.save(output);
 
 ## Apa yang baru di Aspose.PDF 25.11
 
-### Peningkatan Sanitasi Data Tersembunyi
+### Peningkatan sanitasi data tersembunyi
 
 Sanitasi PDF yang ditingkatkan kini tersedia melalui HiddenDataSanitizer untuk meningkatkan penghapusan konten tersembunyi dari dokumen.
 
@@ -54,7 +54,7 @@ Document document = new Document(pdfFile);
     }
 ```
 
-### Pengurangan Ukuran File yang Ditingkatkan Selama Optimasi PDF
+### Pengurangan ukuran file yang ditingkatkan selama optimasi PDF
 
 Optimasi PDF kini meningkatkan pengurangan ukuran file dengan memperbaiki cara penanganan subset font.
 
@@ -80,7 +80,7 @@ Document document = new Document(inputPath);
 
 ## Apa yang baru di Aspose.PDF 25.10
 
-### Dukungan Konversi PDF ke PDF/E
+### Dukungan konversi PDF ke PDF/E
 
 Aspose.PDF for Java kini mendukung konversi dokumen PDF ke format PDF/E.
 
@@ -90,7 +90,7 @@ document.convert(conversionLog, PdfFormat.PDF_E_1, ConvertErrorAction.Delete);
 document.save(outputPdf);
 ```
 
-### Teks HTML dalam Anotasi
+### Teks HTML dalam anotasi
 
 Dukungan telah ditambahkan untuk menambahkan teks HTML di dalam anotasi.
 
@@ -143,13 +143,13 @@ ResultContainer htmlResultContainer = converter.process(options);
 IOperationResult result = htmlResultContainer.getResultCollectionInternal().get_Item(0);
 ```
 
-### Dukungan Kepatuhan PDF 1.6
+### Dukungan kepatuhan PDF 1.6
 
 Dukungan untuk kepatuhan PDF 1.6 telah ditambahkan untuk skenario yang memerlukan versi dokumen ini.
 
 ## Apa yang baru di Aspose.PDF 25.8
 
-### Dukungan Gaya Garis Tabel
+### Dukungan gaya garis tabel
 
 Dukungan untuk gaya border tabel telah ditambahkan untuk memberikan kontrol lebih besar atas tampilan tabel.
 
@@ -211,7 +211,7 @@ Document document = new Document();
     }
 ```
 
-### Ekstraksi Teks ALT untuk Gambar di PDF
+### Ekstraksi teks ALT untuk gambar di PDF
 
 Anda kini dapat memperoleh deskripsi teks ALT untuk gambar dalam dokumen PDF, yang membantu proses yang berorientasi pada aksesibilitas.
 
@@ -311,7 +311,7 @@ ChatCompletion chatCompletionObject = (ChatCompletion)result.getResultCollection
 
 ## Apa yang baru di Aspose.PDF 25.6
 
-### PDF ke Output DOCX telah ditingkatkan Formatting
+### PDF ke output DOCX telah ditingkatkan Formatting
 
 Konversi PDF ke DOCX telah ditingkatkan untuk dokumen yang sebelumnya format outputnya tidak tepat.
 
@@ -326,7 +326,7 @@ doc.save(dataDir + "SD_Aspose.docx", saveOption);
 
 ## Apa yang baru di Aspose.PDF 25.5
 
-### Pertahankan Gambar dalam Konversi PDF ke ODS
+### Mempertahankan gambar dalam konversi PDF ke ODS
 
 Gambar kini dipertahankan saat mengonversi dokumen PDF ke ODS.
 
@@ -337,7 +337,7 @@ options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
 doc.save("output.ods", options);
 ```
 
-### Pembuatan Tag Otomatis Selama Konversi PDF ke PDF/A
+### Pembuatan tag otomatis selama konversi PDF ke PDF/A
 
 Konversi PDF ke PDF/A kini mendukung pembuatan tag otomatis untuk meningkatkan hasil penandaan dalam dokumen keluaran.
 
@@ -355,7 +355,7 @@ document.close();
 
 ## Apa yang baru di Aspose.PDF 25.4
 
-### Pertahankan Tautan Hiper dalam Konversi PDF ke XLSX
+### Mempertahankan tautan hiper dalam konversi PDF ke XLSX
 
 Tautan sekarang dipertahankan saat mengonversi dokumen PDF ke XLSX, meningkatkan navigasi dalam spreadsheet yang diekspor.
 
@@ -468,7 +468,7 @@ System.out.println(getDescentPoint);
 
 ## Apa yang baru di Aspose.PDF 25.1
 
-Kemampuan untuk melewatkan jalur ke profil ICC eksternal untuk konversi PDF/X dan PDF/A sudah ada dalam pustaka selama beberapa tahun, diaktifkan oleh properti PdfFormatConversionOptions.IccProfileFileName. Sekarang juga memungkinkan untuk melewatkan data guna mengisi properti OutputIntent menggunakan objek kelas OutputIntent.
+Kemampuan untuk melewatkan jalur ke profil ICC eksternal untuk konversi PDF/X dan PDF/A sudah ada dalam pustaka selama beberapa tahun, diaktifkan oleh properti PdfFormatConversionOptions.IccProfileFileName. Sekarang juga memungkinkan untuk melewatkan data guna mengisi properti `OutputIntent` menggunakan objek kelas `OutputIntent`.
 
 Cuplikan berikut menunjukkan cara mengonversi dokumen anotasi ke PDF/X-1 menggunakan profil ICC anotasi FOGRA39:
 
@@ -986,10 +986,10 @@ Sejak rilis 24.5, Plugin Editor Form telah diimplementasikan.
 **Cara Mengedit Form di PDF menggunakan Editor Form**
 
 - Atur kunci lisensi Anda
-- Buat sebuah instance dari kelas FormEditor, yang menyediakan metode untuk memanipulasi formulir PDF
-- Buat sebuah instance dari kelas FormEditorAddOptions, yang menentukan opsi untuk menambahkan bidang formulir ke dokumen PDF
+- Buat sebuah instans dari kelas `FormEditor`, yang menyediakan metode untuk memanipulasi formulir PDF
+- Buat sebuah instans dari kelas FormEditorAddOptions, yang menentukan opsi untuk menambahkan bidang formulir ke dokumen PDF
 - Tambahkan sumber file input dan sumber file output ke objek FormEditorAddOptions, menggunakan kelas FileDataSource yang mewakili jalur file atau aliran
-- Panggil metode Process pada objek FormEditor, dengan melewatkan objek FormEditorAddOptions sebagai parameter
+- Panggil metode Process pada objek `FormEditor`, dengan melewatkan objek FormEditorAddOptions sebagai parameter
 - Akses hasil menggunakan ResultContainer.resultCollection
 
 ```java
@@ -2079,7 +2079,7 @@ Document pdf = new Document(inFile);
 
 ## Apa yang baru di Aspose.PDF 21.8
 
-### Bagaimana cara mengubah warna teks di Digital Signature?
+### Bagaimana cara mengubah warna teks di digital Signature?
 
 Pada versi 21.8 setForegroundColor, memungkinkan mengubah warna teks di Digital Signature:
 
@@ -2124,7 +2124,7 @@ Document doc = new Document("input.pdf");
 
 ## Apa yang baru di Aspose.PDF 21.5
 
-### Tambahkan API untuk menggabungkan gambar
+### Menambahkan API untuk menggabungkan gambar
 
 Aspose.PDF 21.4 memungkinkan Anda menggabungkan Gambar. Menggabungkan daftar aliran gambar menjadi satu aliran gambar. Format output png/jpg/tiff didukung, jika menggunakan format yang tidak didukung aliran output akan dienkode sebagai JPEG secara default.
 Ikuti cuplikan kode berikut:

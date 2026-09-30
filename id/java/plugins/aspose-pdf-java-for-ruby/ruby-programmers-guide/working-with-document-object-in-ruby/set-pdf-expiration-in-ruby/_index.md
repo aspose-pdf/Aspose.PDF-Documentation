@@ -1,15 +1,15 @@
 ---
-title: Atur Kedaluwarsa PDF di Ruby
-linktitle: Atur Kedaluwarsa PDF di Ruby
+title: "Mengatur kedaluwarsa PDF di Ruby"
+linktitle: "Mengatur kedaluwarsa PDF di Ruby"
 type: docs
 weight: 110
 url: /id/java/set-pdf-expiration-in-ruby/
 description: Terapkan tanggal kedaluwarsa pada PDF menggunakan Aspose.PDF untuk Ruby untuk dokumen yang sensitif waktu.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Atur Kedaluwarsa PDF
+## Aspose.PDF - atur kedaluwarsa PDF
 
-Untuk mengatur kedaluwarsa dari\u0412\u00A0 dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **SetExpiration**.
+Untuk mengatur kedaluwarsa dari  dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **SetExpiration**.
 
 Kode Ruby
 
@@ -47,8 +47,8 @@ doc.save(data_dir + "set_expiration.pdf")
 puts "Update document information, please check output file."
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-UnduhВ **Set PDF Expiration (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Set PDF Expiration (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)

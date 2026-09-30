@@ -1,11 +1,11 @@
 ---
-title: Navigasi dan Interaksi PDF dalam Java
+title: "Navigasi dan interaksi PDF dalam Java"
 linktitle: Navigasi dan interaksi
 type: docs
 weight: 90
 url: /id/java/navigation-and-interaction/
 description: Pelajari cara bekerja dengan tautan PDF, aksi, dan bookmark dalam Java untuk navigasi dan perilaku dokumen interaktif.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.5

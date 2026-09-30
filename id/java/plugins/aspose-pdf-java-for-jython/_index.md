@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /id/java/aspose-pdf-java-for-jython/
 description: Gabungkan kekuatan Aspose.PDF for Java dengan Jython. Manipulasi file PDF dengan mudah dalam lingkungan Java berbasis Python.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 ## Pendahuluan
 
@@ -29,9 +29,9 @@ Aspose.PDF for Java memungkinkan Anda membuat file PDF secara langsung melalui A
 
 Aspose.PDF Java for Jython adalah sebuah proyek yang menunjukkan / menyediakan contoh penggunaan API Aspose.PDF for Java dalam Jython.
 
-## Persyaratan Sistem dan Platform yang Didukung
+## Persyaratan sistem dan platform yang didukung
 
-### Persyaratan Sistem
+### Persyaratan sistem
 
 Berikut adalah persyaratan sistem untuk menggunakan Aspose.PDF Java for Jython:
 
@@ -39,14 +39,14 @@ Berikut adalah persyaratan sistem untuk menggunakan Aspose.PDF Java for Jython:
 - Komponen Aspose.PDF yang diunduh
 - Jython 2.7.0
 
-### Platform yang Didukung
+### Platform yang didukung
 
 Berikut adalah platform yang didukung:
 
 - Aspose.PDF 15.4 ke atas.
 - IDE Java (Eclipse, NetBeans ...)
 
-## Unduh Instalasi dan Penggunaan
+## Mengunduh instalasi dan penggunaan
 
 ### Mengunduh
 
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     PdfToDoc()
 ```
 
-## Dukung, Perluas, dan Berkontribusi
+## Dukungan, pengembangan, dan kontribusi
 
 ### Dukungan
 
@@ -97,15 +97,15 @@ Sejak hari-hari pertama Aspose, kami tahu bahwa hanya memberikan produk yang bai
 
 Itulah mengapa kami menawarkan dukungan gratis. Siapa pun yang menggunakan produk kami, baik mereka telah membelinya atau sedang menggunakan versi evaluasi, berhak mendapatkan perhatian dan rasa hormat penuh dari kami.
 
-Anda dapat melaporkan masalah atau saran apa pun yang terkait denganВ Aspose.PDF Java for Jython menggunakan salah satu platform berikut:
+Anda dapat melaporkan masalah atau saran apa pun yang terkait dengan Aspose.PDF Java for Jython menggunakan salah satu platform berikut:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### Perluas dan Berkontribusi
+### Memperluas dan berkontribusi
 
 Aspose.PDF Java for Jython bersifat open source dan kode sumbernya tersedia di situs coding sosial utama yang tercantum di bawah ini. Pengembang dianjurkan untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang sudah ada, sehingga orang lain juga dapat memanfaatkannya.
 
-### Kode Sumber
+### Kode sumber
 
 Anda dapat mendapatkan kode sumber terbaru dari salah satu lokasi berikut
 

@@ -1,16 +1,16 @@
 ---
-title: Anotasi Watermark menggunakan Java
-linktitle: Anotasi Watermark
+title: "Anotasi watermark menggunakan Java"
+linktitle: "Anotasi watermark"
 type: docs
 weight: 70
 url: /id/java/pdfannotationeditor-class/watermark-annotations/
 description: Pelajari cara menambahkan, memeriksa, dan menghapus anotasi watermark dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
 AlternativeHeadline: Bekerja dengan anotasi watermark dalam file PDF menggunakan Java
 Abstract: Artikel ini menjelaskan cara membuat, memeriksa, dan menghapus anotasi watermark dalam dokumen PDF menggunakan Java. Artikel ini mencakup penambahan anotasi watermark teks dengan keadaan teks khusus dan opasitas, membaca area anotasi watermark yang ada, serta menghapus anotasi watermark.
 ---
-## Tambahkan anotasi watermark
+## Menambahkan anotasi watermark
 
 1. Buka PDF input dan definisikan persegi panjang tempat anotasi watermark akan ditempatkan.
 2. Buat `WatermarkAnnotation`, tambahkan ke halaman, dan konfigurasikan status teks watermark serta opasitas.

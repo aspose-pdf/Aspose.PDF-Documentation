@@ -5,9 +5,9 @@ type: docs
 weight: 10
 url: /id/java/adding-javascript-in-ruby/
 description: Aktifkan fungsionalitas JavaScript dalam PDF menggunakan Aspose.PDF di Ruby untuk interaktivitas dan otomatisasi.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Menambahkan JavaScript
+## Aspose.PDF - menambahkan JavaScript
 
 Untuk menambahkan JavaScript dalam dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **AddJavaScript**.
 
@@ -45,8 +45,8 @@ doc.save(data_dir + "JavaScript-Added.pdf")
 puts "Added JavaScript Successfully, please check the output file."
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-DownloadВ **Menambahkan JavaScript (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah ini:
+Download **Menambahkan JavaScript (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)

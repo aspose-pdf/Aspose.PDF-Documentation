@@ -1,13 +1,13 @@
 ---
-title: Perbarui Dimensi Halaman di PHP
-linktitle: Perbarui Dimensi Halaman di PHP
+title: "Memperbarui dimensi halaman di PHP"
+linktitle: "Memperbarui dimensi halaman di PHP"
 type: docs
 weight: 90
 url: /id/java/update-page-dimensions-in-php/
 description: Pelajari cara mengubah dimensi halaman dalam dokumen PDF di PHP menggunakan Aspose.PDF untuk kontrol tata letak yang lebih baik.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Perbarui Dimensi Halaman
+## Aspose.PDF - perbarui dimensi halaman
 
 Untuk memperbarui dimensi halaman menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **UpdatePageDimensions**.
 
@@ -35,8 +35,8 @@ print "Dimensions updated successfully!" . PHP_EOL;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Perbarui Dimensi Halaman (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+Unduh **Perbarui Dimensi Halaman (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/UpdatePageDimensions.php)

@@ -1,26 +1,26 @@
 ---
-title: Bandingkan Dokumen PDF dalam Java
-linktitle: Bandingkan PDF
+title: "Membandingkan dokumen PDF dalam Java"
+linktitle: "Membandingkan PDF"
 type: docs
 weight: 130
 url: /id/java/compare-pdf-documents/
 description: Pelajari cara membandingkan dokumen PDF dalam Java menggunakan output perbedaan side-by-side dan grafis dengan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Bandingkan halaman PDF dan dokumen lengkap dengan output perbedaan visual dalam Java
+AlternativeHeadline: "Membandingkan halaman PDF dan dokumen lengkap dengan output perbedaan visual dalam Java"
 Abstract: Artikel ini menjelaskan cara membandingkan dokumen PDF menggunakan Aspose.PDF for Java. Pelajari cara membandingkan halaman tertentu atau seluruh file PDF dengan output berdampingan, menghasilkan laporan perbedaan PDF secara grafis, dan mengekspor perbedaan gambar tingkat halaman.
 ---
 Aspose.PDF for Java menyediakan API perbandingan berdampingan dan grafis untuk mendeteksi perbedaan antara file PDF.
 
-## Bandingkan halaman dan ekspor gambar perbedaan
+## Membandingkan halaman dan mengekspor gambar perbedaan
 
 Gunakan contoh ini ketika Anda memerlukan output perbedaan berbasis gambar untuk pasangan halaman PDF tertentu.
 
-1. Buka kedua PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objek.
-1. Gunakan [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) untuk mendapatkan tingkat halaman [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/).
+1. Buka kedua PDF sumber objek [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Gunakan [`GraphicalPdfComparer`](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) untuk mendapatkan tingkat halaman [`ImagesDifference`](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/).
 1. Gunakan 'GraphicalPdfComparer' untuk mendapatkan tingkat halaman 'ImagesDifference'.
 1. Ekspor gambar perbedaan yang dihasilkan dan buang hasil perbandingan.
 
@@ -42,12 +42,12 @@ public static void comparePdfWithGetDifferenceMethod(
 }
 ```
 
-## Bandingkan halaman tertentu berdampingan
+## Membandingkan halaman tertentu berdampingan
 
 Gunakan contoh ini ketika hanya halaman yang dipilih yang harus dibandingkan dan disimpan sebagai hasil PDF berdampingan.
 
-1. Buka kedua PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objek.
-1. Konfigurasikan [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) untuk mode perbandingan yang diperlukan.
+1. Buka kedua PDF sumber objek [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Konfigurasikan [`SideBySideComparisonOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) untuk mode perbandingan yang diperlukan.
 1. Bandingkan halaman yang dipilih dan simpan PDF output.
 
 ```java
@@ -65,12 +65,12 @@ public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path
 }
 ```
 
-## Bandingkan dokumen PDF lengkap secara grafis
+## Membandingkan dokumen PDF lengkap secara grafis
 
 Contoh ini menghasilkan laporan PDF grafis yang menyoroti perbedaan visual di seluruh dokumen.
 
-1. Buka kedua PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objek.
-1. Konfigurasikan [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) ambang batas, warna, dan resolusi.
+1. Buka kedua PDF sumber objek [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Konfigurasikan [`GraphicalPdfComparer`](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) ambang batas, warna, dan resolusi.
 1. Bandingkan seluruh dokumen dan simpan PDF output grafis.
 
 ```java
@@ -87,12 +87,12 @@ public static void comparePdfWithCompareDocumentsToPdfMethod(Path inputFile1, Pa
 }
 ```
 
-## Bandingkan seluruh dokumen berdampingan
+## Membandingkan seluruh dokumen berdampingan
 
 Gunakan contoh ini ketika seluruh dokumen harus dibandingkan halaman per halaman dalam output PDF berdampingan.
 
-1. Buka kedua PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objek.
-1. Konfigurasikan [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) untuk perilaku perbandingan yang diinginkan.
+1. Buka kedua PDF sumber objek [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Konfigurasikan [`SideBySideComparisonOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) untuk perilaku perbandingan yang diinginkan.
 1. Bandingkan seluruh dokumen dan simpan hasilnya sebagai PDF.
 
 ```java

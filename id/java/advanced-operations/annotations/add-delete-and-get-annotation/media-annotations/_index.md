@@ -1,26 +1,26 @@
 ---
-title: Anotasi Media dalam PDF
-linktitle: Anotasi Media
+title: "Anotasi media dalam PDF"
+linktitle: "Anotasi media"
 type: docs
 weight: 40
 url: /id/java/media-annotations/
 description: Pelajari cara bekerja dengan API anotasi PDF suara, layar, media kaya, dan 3D dalam Java, dengan panduan langkah demi langkah untuk alur kerja multimedia umum.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Alur kerja anotasi PDF terkait media dalam Java.
+AlternativeHeadline: "Alur kerja anotasi PDF terkait media dalam Java"
 Abstract: Halaman ini menjelaskan alur kerja anotasi media umum di Aspose.PDF for Java, termasuk skenario suara, layar, media kaya, 3D, penghapusan, dan inspeksi. Repositori saat ini tidak menyertakan kelas contoh media `workingwithannotations` yang berdedikasi, sehingga artikel ini langsung mendokumentasikan pola API Java dengan panduan langkah demi langkah.
 ---
 Anotasi media dalam PDF biasanya mencakup konten multimedia yang tersemat atau terhubung seperti klip suara, wilayah pemutaran layar, kontainer media kaya, dan model 3D.
 
-## Tambahkan anotasi media kaya
+## Menambahkan anotasi media kaya
 
 Gunakan contoh ini ketika halaman PDF harus menampung konten video tersemat dengan pemutar khusus, gambar poster, dan kulit.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah halaman.
-1. Buat sebuah [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), konfigurasikan aset pemutar, poster, dan aliran konten.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah halaman.
+1. Buat sebuah [`RichMediaAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), konfigurasikan aset pemutar, poster, dan aliran konten.
 1. Tambahkan anotasi ke halaman dan simpan dokumen output.
 
 ```java
@@ -63,12 +63,12 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 }
 ```
 
-## Hapus anotasi media kaya
+## Menghapus anotasi media kaya
 
 Contoh ini menghapus anotasi media kaya yang ada pada halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kumpulkan anotasi jenis [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kumpulkan anotasi jenis [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
 1. Hapus anotasi yang dikumpulkan dan simpan dokumen yang diperbarui.
 
 ```java
@@ -90,13 +90,13 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan anotasi multimedia
+## Mendapatkan anotasi multimedia
 
 Gunakan contoh ini untuk memeriksa anotasi layar, suara, dan media kaya yang sudah ada pada halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Tentukan set tipe anotasi multimedia yang ingin Anda deteksi.
-1. Iterasi anotasi halaman dan cetak tipe serta persegi panjang untuk setiap kecocokan.
+1. Iterasikan anotasi halaman dan cetak tipe serta persegi panjang untuk setiap kecocokan.
 
 ```java
 public static void multimediaAnnotationsGet(Path inputFile) {
@@ -115,13 +115,13 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 }
 ```
 
-## Tambahkan anotasi 3D
+## Menambahkan anotasi 3D
 
 Contoh ini menambahkan tampilan model 3D interaktif dengan perspektif yang telah ditentukan dan opsi rendering.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Muat model ke dalam [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) dan konfigurasikan sebuah [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
-1. Buat [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), tambahkan ke halaman, dan simpan dokumen.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Muat model ke dalam [`PDF3DContent`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) dan konfigurasikan sebuah [`PDF3DArtwork`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
+1. Buat [`PDF3DAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), tambahkan ke halaman, dan simpan dokumen.
 
 ```java
 public static void annotation3dAdd(Path modelFile, Path outputFile) {
@@ -164,12 +164,12 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 }
 ```
 
-## Tambahkan anotasi layar
+## Menambahkan anotasi layar
 
 Gunakan contoh ini ketika sebuah halaman harus merujuk ke file media melalui wilayah pemutaran layar.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah halaman.
-1. Buat sebuah [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) untuk file media dan persegi panjang target.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah halaman.
+1. Buat sebuah [`ScreenAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) untuk file media dan persegi panjang target.
 1. Tambahkan anotasi ke halaman dan simpan dokumen.
 
 ```java
@@ -188,12 +188,12 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 }
 ```
 
-## Tambahkan anotasi suara
+## Menambahkan anotasi suara
 
 Contoh ini menempatkan anotasi suara pada halaman dan mengaitkannya dengan file WAV.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) untuk file audio target dan konfigurasikan metadata-nya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`SoundAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) untuk file audio target dan konfigurasikan metadata-nya.
 1. Tambahkan anotasi ke halaman dan simpan dokumen output.
 
 ```java
@@ -224,10 +224,10 @@ public static void soundAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## Topik anotasi terkait
 
-- [Anotasi Interaktif](/pdf/id/java/interactive-annotations/)
-- [Anotasi Markup](/pdf/id/java/markup-annotations/)
-- [Anotasi Keamanan](/pdf/id/java/security-annotations/)
-- [Anotasi Bentuk](/pdf/id/java/shape-annotations/)
-- [Anotasi Teks](/pdf/id/java/text-based-annotations/)
-- [Watermark Anotasi](/pdf/id/java/watermark-annotations/)
-- [Impor dan Ekspor Anotasi](/pdf/id/java/import-export-annotations/)
+- [Anotasi interaktif](/pdf/id/java/interactive-annotations/)
+- [Anotasi markup](/pdf/id/java/markup-annotations/)
+- [Anotasi keamanan](/pdf/id/java/security-annotations/)
+- [Anotasi bentuk](/pdf/id/java/shape-annotations/)
+- [Anotasi teks](/pdf/id/java/text-based-annotations/)
+- [Watermark anotasi](/pdf/id/java/watermark-annotations/)
+- [Mengimpor dan mengekspor anotasi](/pdf/id/java/import-export-annotations/)

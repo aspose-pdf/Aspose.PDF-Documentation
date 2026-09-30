@@ -1,25 +1,25 @@
 ---
-title: Bagi PDF menjadi Halaman Tunggal
-linktitle: Bagi PDF menjadi Halaman Tunggal
+title: "Membagi PDF menjadi halaman tunggal"
+linktitle: "Membagi PDF menjadi halaman tunggal"
 type: docs
 weight: 30
 url: /id/java/split-pdf-into-single-pages/
-description: Pisahkan PDF menjadi file output satu halaman dalam Java dengan facade PdfFileEditor.
-lastmod: "2026-09-29"
+description: "Pisahkan PDF menjadi file output satu halaman dalam Java dengan fasad PdfFileEditor."
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ekspor setiap halaman PDF ke file terpisah dengan Java
+AlternativeHeadline: "Mengekspor setiap halaman PDF ke file terpisah dengan Java"
 Abstract: Pelajari cara membagi PDF menjadi file satu halaman dengan Aspose.PDF for Java. Contoh Java tersebut menggunakan PdfFileEditor untuk menulis setiap halaman ke PDF output terpisah berdasarkan pola nama file.
 ---
-## Bagi PDF menjadi halaman tunggal
+## Membagi PDF menjadi halaman tunggal
 
 Gunakan alur kerja ini ketika setiap halaman sumber harus menjadi file PDF terpisah.
 
 ### Langkah
 
-1. Buat `PdfFileEditor` instansi.
+1. Buat instans `PdfFileEditor`.
 2. Siapkan pola file output yang menyertakan placeholder halaman seperti `%NUM%`.
 3. Panggil `splitToPages` dengan file sumber dan pola output.
 4. Simpan file satu halaman yang dihasilkan.

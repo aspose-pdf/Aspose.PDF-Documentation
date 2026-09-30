@@ -1,16 +1,16 @@
 ---
-title: Anotasi Berbasis Teks menggunakan Java
-linktitle: Anotasi Teks
+title: "Anotasi berbasis teks menggunakan Java"
+linktitle: "Anotasi teks"
 type: docs
 weight: 10
 url: /id/java/pdfannotationeditor-class/text-based-annotations/
 description: Pelajari cara menambahkan, memeriksa, dan menghapus anotasi teks, teks bebas, dan anotasi coret pada dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
 AlternativeHeadline: Bekerja dengan anotasi PDF teks di Java
 Abstract: Artikel ini menjelaskan cara membuat, membaca, dan menghapus anotasi berbasis teks dalam dokumen PDF menggunakan Java. Ini mencakup anotasi teks, anotasi teks bebas, dan anotasi coret berdasarkan implementasi contoh Java.
 ---
-## Tambahkan anotasi teks
+## Menambahkan anotasi teks
 
 1. Buka PDF input dan targetkan halaman tempat anotasi teks harus ditempatkan.
 2. Buat `TextAnnotation`, tentukan segiannya, dan atur judulnya, subjeknya, bendera, dan warnanya.
@@ -32,7 +32,7 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan anotasi teks bebas
+## Menambahkan anotasi teks bebas
 
 1. Muat PDF sumber dan pilih halaman target serta persegi panjang untuk catatan teks bebas.
 2. Buat `FreeTextAnnotation`, inisialisasi penampilannya default, dan atur judul serta warna.

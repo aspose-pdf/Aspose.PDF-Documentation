@@ -1,21 +1,21 @@
 ---
-title: Konversi Format Gambar ke PDF dalam Java
-linktitle: Konversi Gambar ke PDF
+title: "Mengonversi Format gambar ke PDF dalam Java"
+linktitle: "Mengonversi gambar ke PDF"
 type: docs
 weight: 60
 url: /id/java/convert-images-format-to-pdf/
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 description: Pelajari cara mengonversi BMP, CGM, DICOM, PNG, TIFF, EMF, SVG, CDR, dan format gambar lainnya ke PDF dalam Java dengan Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Cara Mengonversi Gambar ke PDF dalam Java
+AlternativeHeadline: "Mengonversi gambar ke PDF dalam Java"
 Abstract: Artikel ini menjelaskan cara mengonversi berbagai format gambar ke PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup penempatan gambar langsung ke dalam halaman PDF baru serta opsi pemuatan khusus tipe file untuk input CGM, SVG, dan CDR.
 ---
 Aspose.PDF for Java dapat mengonversi banyak format gambar raster dan vektor menjadi dokumen PDF.
 
-## Konversi BMP ke PDF
+## Mengonversi BMP ke PDF
 
 Gunakan contoh ini ketika gambar BMP harus ditempatkan ke dalam dokumen PDF.
 
@@ -36,11 +36,11 @@ public static void convertBmpToPdf(Path inputFile, Path outputFile) {
     }
 ```
 
-## Konversi CGM ke PDF
+## Mengonversi CGM ke PDF
 
 Gunakan contoh ini ketika file grafis CGM harus dikonversi menjadi PDF.
 
-1. Buka sumber CGM dengan memberikan jalur file dan [`CgmLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cgmloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber CGM dengan memberikan jalur file dan [`CgmLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cgmloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF menginterpretasikan aliran grafik CGM selama pemuatan dokumen.
 1. Simpan PDF yang telah dikonversi ke jalur output target.
 
@@ -53,12 +53,12 @@ public static void convertCgmToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi DICOM ke PDF
+## Mengonversi DICOM ke PDF
 
 Gunakan contoh ini ketika gambar DICOM medis harus dibungkus ke dalam dokumen PDF.
 
 1. Buat yang kosong [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) untuk output PDF.
-1. Buat sebuah [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) objek, atur miliknya [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) ke `Dicom`, dan tetapkan jalur file sumber.
+1. Buat sebuah objek [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), atur miliknya [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) ke `Dicom`, dan tetapkan jalur file sumber.
 1. Tambahkan [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan tambahkan gambar DICOM ke koleksi paragraf halaman.
 1. Simpan hasil sebagai PDF.
 
@@ -79,7 +79,7 @@ public static void convertDicomToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi EMF ke PDF dengan pemuatan dokumen langsung
+## Mengonversi EMF ke PDF dengan pemuatan dokumen langsung
 
 Gunakan contoh ini ketika file EMF harus dikonversi ke PDF melalui jalur pemuatan EMF utama.
 
@@ -109,7 +109,7 @@ public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOE
 }
 ```
 
-## Konversi EMF ke PDF dengan alur kerja alternatif
+## Mengonversi EMF ke PDF dengan alur kerja alternatif
 
 Gunakan contoh ini ketika konten EMF harus dikonversi menggunakan penyiapan alternatif atau alur komposisi halaman.
 
@@ -158,7 +158,7 @@ public static void convertGifToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi JPEG ke PDF
+## Mengonversi JPEG ke PDF
 
 Gunakan contoh ini ketika gambar JPEG harus dikonversi menjadi PDF satu halaman.
 
@@ -179,7 +179,7 @@ public static void convertJpegToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi PNG ke PDF
+## Mengonversi PNG ke PDF
 
 Gunakan contoh ini ketika gambar PNG harus dibungkus ke dalam dokumen PDF.
 
@@ -200,11 +200,11 @@ public static void convertPngToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi SVG ke PDF
+## Mengonversi SVG ke PDF
 
 Gunakan contoh ini ketika karya seni SVG harus dirender di dalam dokumen PDF.
 
-1. Buka sumber SVG dengan melewatkan jalur file dan [`SvgLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber SVG dengan melewatkan jalur file dan [`SvgLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF mengurai markup SVG dan membuat model grafik PDF yang sesuai selama pemuatan.
 1. Simpan output PDF ke jalur file target.
 
@@ -217,7 +217,7 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ubah TIFF ke PDF
+## Mengubah TIFF ke PDF
 
 Gunakan contoh ini ketika gambar TIFF harus dikonversi menjadi PDF.
 
@@ -238,11 +238,11 @@ public static void convertTiffToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi CDR ke PDF
+## Mengonversi CDR ke PDF
 
 Gunakan contoh ini ketika file CorelDRAW CDR harus dikonversi menjadi PDF.
 
-1. Buka sumber CDR dengan melewatkan jalur file dan [`CdrLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cdrloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber CDR dengan melewatkan jalur file dan [`CdrLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cdrloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF memuat konten CorelDRAW ke dalam model dokumen PDF.
 1. Simpan file PDF yang telah dikonversi ke jalur output yang diminta.
 

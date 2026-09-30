@@ -1,25 +1,25 @@
 ---
-title: Integrasikan Tabel PDF dengan Sumber Data di Java
-linktitle: Integrasikan Tabel
+title: "Mengintegrasikan tabel PDF dengan sumber data di Java"
+linktitle: "Mengintegrasikan tabel"
 type: docs
 weight: 30
 url: /id/java/integrate-table/
 description: Pelajari cara mengintegrasikan tabel PDF dengan sumber data terstruktur seperti file CSV di Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Buat tabel PDF dari data terstruktur dengan Java
+AlternativeHeadline: "Membuat tabel PDF dari data terstruktur dengan Java"
 Abstract: Artikel ini menjelaskan cara mengintegrasikan tabel PDF dengan data eksternal menggunakan Aspose.PDF for Java. Ini mencakup pembacaan data CSV, pemilihan kolom tertentu, membangun objek Table yang bergaya dari baris yang diurai, dan merender hasilnya ke dalam dokumen PDF.
 ---
 Contoh Java ini membangun tabel PDF dari data CSV tanpa bergantung pada pustaka dataframe eksternal.
 
-## Buat tabel dari baris CSV
+## Membuat tabel dari baris CSV
 
 Gunakan contoh ini ketika kolom CSV yang dipilih harus diubah menjadi tabel PDF yang bergaya.
 
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan batasnya.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan batasnya.
 1. Deteksi indeks kolom yang diperlukan dari baris header CSV.
 1. Tambahkan baris header dan jumlah baris data yang diminta, kemudian kembalikan tabel.
 
@@ -52,13 +52,13 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 }
 ```
 
-## Buat PDF dari data CSV
+## Membuat PDF dari data CSV
 
 Gunakan contoh ini ketika input CSV harus diubah menjadi dokumen tabel PDF.
 
 1. Baca baris CSV dari file input.
 1. Pratinjau sebagian baris yang diurai di konsol.
-1. Buat PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), tambahkan tabel yang dihasilkan, dan simpan file output.
+1. Buat PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), tambahkan tabel yang dihasilkan, dan simpan file output.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {
@@ -75,11 +75,11 @@ public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows
 }
 ```
 
-## Temukan indeks kolom CSV berdasarkan nama
+## Menemukan indeks kolom CSV berdasarkan nama
 
 Gunakan pembantu ini ketika kolom bernama tertentu harus ditemukan dalam baris header CSV.
 
-1. Iterasi melalui nama kolom yang diminta.
+1. Iterasikan melalui nama kolom yang diminta.
 1. Cari baris header untuk indeks yang cocok.
 1. Kembalikan posisi kolom yang dikumpulkan.
 
@@ -99,7 +99,7 @@ private static int[] findColumns(String[] header, String... names) {
 }
 ```
 
-## Baca baris CSV dari file
+## Membaca baris CSV dari file
 
 Gunakan pembantu ini ketika sumber CSV harus dimuat ke memori sebelum pembuatan tabel.
 
@@ -117,7 +117,7 @@ private static List<String[]> readCsv(Path inputFile) throws Exception {
 }
 ```
 
-## Pisahkan satu baris CSV menjadi nilai
+## Memisahkan satu baris CSV menjadi nilai
 
 Gunakan pembantu ini ketika baris CSV mungkin berisi nilai yang diapit tanda kutip dan karakter kutip yang di-escape.
 

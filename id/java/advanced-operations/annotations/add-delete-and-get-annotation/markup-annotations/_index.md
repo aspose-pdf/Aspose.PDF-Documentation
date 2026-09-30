@@ -1,26 +1,26 @@
 ---
-title: Anotasi Markup menggunakan Java
-linktitle: Anotasi Markup
+title: "Anotasi markup menggunakan Java"
+linktitle: "Anotasi markup"
 type: docs
 weight: 30
 url: /id/java/markup-annotations/
 description: Pelajari cara menambahkan, memeriksa, dan menghapus anotasi sorotan, garis bawah, bergelombang, dan coret dalam dokumen PDF menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Bekerja dengan anotasi markup dalam file PDF menggunakan Java.
+AlternativeHeadline: "Bekerja dengan anotasi markup dalam file PDF menggunakan Java"
 Abstract: Artikel ini menjelaskan cara membuat, memeriksa, dan menghapus anotasi markup teks dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup anotasi sorot, garis bawah, bergelombang, dan coret berdasarkan contoh Java di repositori.
 ---
 Alur kerja anotasi markup dalam bagian ini berfokus pada komentar bergaya catatan, penanda caret, dan skenario penggantian‑ulasan yang dikelompokkan.
 
-## Tambahkan anotasi teks
+## Menambahkan anotasi teks
 
 Gunakan contoh ini ketika Anda perlu menempatkan anotasi teks gaya catatan tempel dengan metadata popup pada sebuah halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) dan mengatur judul, konten, ikon, dan popup-nya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`TextAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) dan mengatur judul, konten, ikon, dan popup-nya.
 1. Tambahkan anotasi ke halaman dan simpan dokumen.
 
 ```java
@@ -48,13 +48,13 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan anotasi teks
+## Mendapatkan anotasi teks
 
 Contoh ini memindai halaman dan mencetak persegi panjang setiap anotasi teks.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui anotasi pada halaman.
-1. Filter anotasi berdasarkan [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` dan cetak persegi panjang mereka.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui anotasi pada halaman.
+1. Filter anotasi berdasarkan [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` dan cetak persegi panjang mereka.
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -68,12 +68,12 @@ public static void textAnnotationGet(Path inputFile) {
 }
 ```
 
-## Hapus anotasi teks
+## Menghapus anotasi teks
 
 Gunakan pendekatan ini ketika anotasi teks yang ada harus dihapus dari dokumen.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kumpulkan anotasi tipe [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kumpulkan anotasi tipe [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
 1. Hapus anotasi yang dikumpulkan dan simpan file output.
 
 ```java
@@ -93,12 +93,12 @@ public static void textAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan anotasi caret
+## Menambahkan anotasi caret
 
 Gunakan contoh ini saat Anda perlu menandai teks yang disisipkan dengan anotasi tinjauan bergaya caret.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) dan atur popup serta tampilannya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`CaretAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) dan atur popup serta tampilannya.
 1. Tambahkan anotasi ke halaman dan simpan dokumen.
 
 ```java
@@ -123,13 +123,13 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan anotasi caret
+## Mendapatkan anotasi caret
 
 Contoh ini membaca anotasi caret yang ada dan mencetak lokasinya.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterasikan anotasi halaman.
-1. Filter anotasi berdasarkan [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` dan cetak persegi panjang mereka.
+1. Filter anotasi berdasarkan [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` dan cetak persegi panjang mereka.
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -144,12 +144,12 @@ public static void caretAnnotationsGet(Path inputFile) {
 }
 ```
 
-## Hapus anotasi caret
+## Menghapus anotasi caret
 
 Gunakan pendekatan ini ketika anotasi caret harus dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kumpulkan anotasi yang tipenya adalah [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kumpulkan anotasi yang tipenya adalah [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
 1. Hapus anotasi yang dikumpulkan dan simpan dokumen keluaran.
 
 ```java
@@ -171,12 +171,12 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan anotasi pengganti berkelompok
+## Menambahkan anotasi pengganti berkelompok
 
 Contoh ini menggabungkan anotasi caret dengan anotasi coret untuk mewakili komentar tinjauan bergaya penggantian.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat anotasi caret dan yang terkait [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat anotasi caret dan yang terkait [`StrikeOutAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
 1. Hubungkan anotasi melalui `setInReplyTo` dan `setReplyType`, lalu simpan dokumen.
 
 ```java
@@ -217,11 +217,11 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan anotasi pengganti yang dikelompokkan
+## Mendapatkan anotasi pengganti yang dikelompokkan
 
 Contoh ini mendeteksi anotasi coret yang berpartisipasi dalam alur kerja penggantian berkelompok.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterasikan anotasi halaman dan pilih anotasi coret.
 1. Periksa hubungan balasan dan cetak persegi panjang anotasi yang cocok.
 
@@ -241,11 +241,11 @@ public static void replaceAnnotationsGet(Path inputFile) {
 }
 ```
 
-## Hapus anotasi pengganti yang dikelompokkan
+## Menghapus anotasi pengganti yang dikelompokkan
 
 Gunakan pendekatan ini ketika anotasi coret replace-review harus dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Kumpulkan anotasi coret yang mewakili markup pengganti.
 1. Hapus anotasi yang dikumpulkan dan simpan dokumen yang diperbarui.
 
@@ -270,9 +270,9 @@ public static void replaceAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## Topik anotasi terkait
 
-- [Anotasi Teks](/pdf/id/java/text-based-annotations/)
-- [Anotasi Interaktif](/pdf/id/java/interactive-annotations/)
-- [Anotasi Bentuk](/pdf/id/java/shape-annotations/)
-- [Anotasi Media](/pdf/id/java/media-annotations/)
-- [Anotasi Keamanan](/pdf/id/java/security-annotations/)
-- [Anotasi Watermark](/pdf/id/java/watermark-annotations/)
+- [Anotasi teks](/pdf/id/java/text-based-annotations/)
+- [Anotasi interaktif](/pdf/id/java/interactive-annotations/)
+- [Anotasi bentuk](/pdf/id/java/shape-annotations/)
+- [Anotasi media](/pdf/id/java/media-annotations/)
+- [Anotasi keamanan](/pdf/id/java/security-annotations/)
+- [Anotasi watermark](/pdf/id/java/watermark-annotations/)

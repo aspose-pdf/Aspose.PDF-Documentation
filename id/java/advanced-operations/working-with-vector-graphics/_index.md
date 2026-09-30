@@ -1,27 +1,27 @@
 ---
-title: Bekerja dengan Vektor Grafik di Java
-linktitle: Bekerja dengan Vektor Grafik
+title: "Bekerja dengan vektor grafik di Java"
+linktitle: "Bekerja dengan vektor grafik"
 type: docs
 weight: 100
 url: /id/java/working-with-vector-graphics/
 description: Pelajari cara mengekstrak, memindahkan, menghapus, menyalin, dan mengekspor grafis vektor dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Gunakan GraphicsAbsorber untuk memeriksa dan memanipulasi grafis vektor PDF dalam Java.
+AlternativeHeadline: "Menggunakan GraphicsAbsorber untuk memeriksa dan memanipulasi grafis vektor PDF dalam Java"
 Abstract: Artikel ini menjelaskan cara bekerja dengan grafik vektor di Aspose.PDF for Java menggunakan kelas GraphicsAbsorber. Pelajari cara memeriksa elemen vektor pada halaman, memindahkan atau menghapusnya, menyalin grafik antar halaman, dan mengekspor konten vektor ke SVG.
 ---
-Aspose.PDF for Java mengekspos konten vektor melalui `GraphicsAbsorber` dan `GraphicElement` objek. Ini memungkinkan Anda memeriksa elemen vektor tingkat rendah pada sebuah halaman dan kemudian memperbarui, menghapus, menyalin, atau mengekspornya.
+Aspose.PDF for Java mengekspos konten vektor melalui objek `GraphicsAbsorber` dan `GraphicElement`. Ini memungkinkan Anda memeriksa elemen vektor tingkat rendah pada sebuah halaman dan kemudian memperbarui, menghapus, menyalin, atau mengekspornya.
 
-## Periksa grafik vektor pada halaman
+## Memeriksa grafik vektor pada halaman
 
 Gunakan contoh ini ketika Anda perlu mengenumerasi elemen vektor dan memeriksa halaman, posisi, serta jumlah operatornya.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan kunjungi halaman target.
-1. Iterasi melalui yang diserap [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) objek dan keluarkan properti mereka.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan kunjungi halaman target.
+1. Iterasikan melalui yang diserap objek [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) dan keluarkan properti mereka.
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
@@ -43,12 +43,12 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 }
 ```
 
-## Pindahkan grafik vektor pada halaman
+## Memindahkan grafik vektor pada halaman
 
 Gunakan contoh ini ketika semua elemen vektor yang terdeteksi harus dipindahkan ke posisi baru.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kunjungi halaman target dengan [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan sementara menonaktifkan pembaruan.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kunjungi halaman target dengan [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan sementara menonaktifkan pembaruan.
 1. Ubah posisi setiap elemen yang diserap, lanjutkan pembaruan, dan simpan dokumen.
 
 ```java
@@ -73,12 +73,12 @@ public static void moveGraphics(Path inputFile, Path outputFile) {
 }
 ```
 
-## Hapus grafik vektor berdasarkan posisi dengan penghapusan elemen
+## Menghapus grafik vektor berdasarkan posisi dengan penghapusan elemen
 
 Gunakan contoh ini ketika elemen vektor di dalam persegi panjang tertentu harus dihapus satu per satu.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kunjungi halaman dengan [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan definisikan target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kunjungi halaman dengan [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan definisikan [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) target.
 1. Hapus elemen yang cocok, lanjutkan pembaruan, dan simpan dokumen.
 
 ```java
@@ -105,12 +105,12 @@ public static void removeGraphicsMethod1(Path inputFile, Path outputFile) {
 }
 ```
 
-## Hapus grafik vektor dengan menghapus koleksi
+## Menghapus grafik vektor dengan menghapus koleksi
 
 Gunakan contoh ini ketika elemen vektor yang cocok harus dikumpulkan terlebih dahulu dan kemudian dihapus dalam satu operasi halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kunjungi halaman dengan [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan kumpulkan elemen yang cocok.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kunjungi halaman dengan [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) dan kumpulkan elemen yang cocok.
 1. Hapus grafik yang terkumpul dari konten halaman dan simpan dokumen yang telah diperbarui.
 
 ```java
@@ -139,13 +139,13 @@ public static void removeGraphicsMethod2(Path inputFile, Path outputFile) {
 }
 ```
 
-## Salin grafik vektor ke elemen halaman lain elemen demi elemen
+## Menyalin grafik vektor ke elemen halaman lain elemen demi elemen
 
 Gunakan contoh ini ketika setiap elemen vektor yang diserap harus ditambahkan secara individu ke halaman baru.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman tujuan.
-1. Kunjungi halaman sumber dengan [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
-1. Tambahkan masing-masing [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) ke halaman tujuan dan simpan dokumen.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman tujuan.
+1. Kunjungi halaman sumber dengan [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Tambahkan masing-masing [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) ke halaman tujuan dan simpan dokumen.
 
 ```java
 public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
@@ -169,12 +169,12 @@ public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
 }
 ```
 
-## Salin grafik vektor ke halaman lain sebagai koleksi
+## Menyalin grafik vektor ke halaman lain sebagai koleksi
 
 Gunakan contoh ini ketika seluruh koleksi grafis vektor yang diserap harus disalin ke halaman baru dalam satu panggilan.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman tujuan.
-1. Kunjungi halaman sumber dengan [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman tujuan.
+1. Kunjungi halaman sumber dengan [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
 1. Tambahkan koleksi grafik yang diserap ke halaman tujuan dan simpan dokumen.
 
 ```java

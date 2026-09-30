@@ -1,11 +1,11 @@
 ---
-title: Menandatangani Dokumen PDF
-linktitle: Menandatangani Dokumen PDF
+title: "Menandatangani dokumen PDF"
+linktitle: "Menandatangani dokumen PDF"
 type: docs
 weight: 10
 url: /id/java/pdf-signing/
 description: Pelajari cara menandatangani dokumen PDF dalam Java dengan antarmuka PdfFileSignature.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Gunakan `PdfFileSignature` ketika Anda perlu menerapkan tanda tangan digital yan
 
 ### Langkah
 
-1. Buat sebuah `PdfFileSignature` buat instance dan kaitkan PDF sumber.
-2. Muat sertifikat baik melalui `setCertificate` atau dengan membuat sebuah `PKCS7` objek.
+1. Buat sebuah `PdfFileSignature` buat instans dan kaitkan PDF sumber.
+2. Muat sertifikat baik melalui `setCertificate` atau dengan membuat sebuah objek `PKCS7`.
 3. Panggil `sign` dengan halaman target, pengaturan visibilitas, persegi tanda tangan, dan data tanda tangan.
-4. Simpan PDF yang sudah ditandatangani dan tutup objek facade.
+4. Simpan PDF yang sudah ditandatangani dan tutup objek fasad.
 
 ### Contoh Java
 

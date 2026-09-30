@@ -1,25 +1,25 @@
 ---
-title: Tambahkan Halaman PDF dalam Java
-linktitle: Menambahkan Halaman
+title: "Menambahkan halaman PDF dalam Java"
+linktitle: "Menambahkan halaman"
 type: docs
 weight: 10
 url: /id/java/add-pages/
 description: Pelajari cara menambahkan atau menyisipkan halaman ke dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan atau sisipkan halaman PDF dengan Java
+AlternativeHeadline: "Menambahkan atau menyisipkan halaman PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menambahkan halaman ke file PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup penyisipan halaman kosong pada posisi tertentu, menambahkan halaman di akhir dokumen, dan mengimpor halaman dari PDF lain.
 ---
 Aspose.PDF for Java memungkinkan Anda menyisipkan halaman kosong atau mengimpor halaman dari dokumen lain.
 
-## Sisipkan halaman kosong pada posisi tertentu
+## Menyisipkan halaman kosong pada posisi tertentu
 
 Gunakan contoh ini ketika Anda perlu menambahkan halaman kosong di tengah PDF yang sudah ada.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Masukkan halaman baru ke posisi target dalam koleksi halaman.
 1. Simpan dokumen yang diperbarui.
 
@@ -32,11 +32,11 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan halaman kosong di akhir
+## Menambahkan halaman kosong di akhir
 
 Gunakan contoh ini ketika Anda perlu memperluas dokumen dengan halaman terakhir yang kosong baru.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Tambahkan halaman baru ke akhir koleksi halaman.
 1. Simpan PDF yang dimodifikasi.
 
@@ -49,11 +49,11 @@ public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan halaman dari dokumen lain
+## Menambahkan halaman dari dokumen lain
 
 Gunakan contoh ini ketika Anda ingin mengimpor halaman dari satu PDF ke PDF lain.
 
-1. Buat tujuan [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka dokumen sumber.
+1. Buat tujuan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka dokumen sumber.
 1. Tambahkan konten tujuan yang diperlukan dan impor halaman target dari PDF sumber.
 1. Simpan dokumen yang dihasilkan.
 

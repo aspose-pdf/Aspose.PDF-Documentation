@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /id/java/aspose-pdf-java-for-python/
 description: Pelajari cara menggunakan Aspose.PDF for Java dalam proyek Python. Manfaatkan kemampuan PDF lanjutan dalam aplikasi Python Anda.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,7 +14,7 @@ sitemap:
 
 ## JPype
 
-JPype adalah upaya untuk memungkinkan program python mendapatkan akses penuh ke perpustakaan kelas java. Hal ini dicapai bukan dengan mengimplementasikan ulang Python, seperti yang dilakukan Jython/JPython, melainkan melalui antarmuka pada level native di kedua Mesin Virtual.
+JPype adalah upaya untuk memungkinkan program python mendapatkan akses penuh ke pustaka kelas java. Hal ini dicapai bukan dengan mengimplementasikan ulang Python, seperti yang dilakukan Jython/JPython, melainkan melalui antarmuka pada level native di kedua Mesin Virtual.
 
 Baca selengkapnya di [readthedocs.org](http://jpype.readthedocs.org/en/latest/userguide.html)
 
@@ -30,16 +30,16 @@ Baca selengkapnya di [aspose.com](https://products.aspose.com/words/java)
 
 Proyek Aspose.PDF for Python menunjukkan bagaimana berbagai tugas dapat dilakukan menggunakan API Aspose.PDF Java di Python. Proyek ini bertujuan menyediakan contoh yang berguna bagi Pengembang Python yang ingin memanfaatkan Aspose.PDF for Java dalam Proyek Python mereka menggunakan [JPype](http://jpype.readthedocs.org/en/latest/userguide.html).
 
-## Persyaratan Sistem dan Platform yang Didukung
+## Persyaratan sistem dan platform yang didukung
 
-### Persyaratan Sistem
+### Persyaratan sistem
 
 Berikut adalah persyaratan sistem untuk menggunakan Aspose.PDF Java for Python:
 
 - JPype
 - Komponen Aspose.PDF yang diunduh.
 
-### Platform yang Didukung
+### Platform yang didukung
 
 Berikut adalah platform yang didukung:
 

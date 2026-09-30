@@ -1,13 +1,13 @@
 ---
-title: Tambahkan String HTML menggunakan DOM di PHP
-linktitle: Tambahkan String HTML menggunakan DOM di PHP
+title: "Menambahkan string HTML menggunakan DOM di PHP"
+linktitle: "Menambahkan string HTML menggunakan DOM di PHP"
 type: docs
 weight: 10
 url: /id/java/add-html-string-using-dom-in-php/
 description: Jelajahi cara menambahkan konten HTML ke dokumen PDF menggunakan DOM di PHP dengan Aspose.PDF untuk pembuatan dokumen yang kaya.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Tambah HTML
+## Aspose.PDF - tambah HTML
 
 Untuk menambahkan string HTML ke dokumen PDF menggunakan **Aspose.PDF Java for PHP**, cukup panggil modul **AddHtml**.
 
@@ -41,8 +41,8 @@ print "HTML added successfully" . PHP_EOL;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Add HTML (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah ini:
+Unduh **Add HTML (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddHtml.php)

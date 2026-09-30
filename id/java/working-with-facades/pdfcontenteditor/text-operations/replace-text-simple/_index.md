@@ -1,18 +1,18 @@
 ---
-title: Ganti Teks Sederhana
-linktitle: Ganti Teks Sederhana
+title: "Mengganti teks sederhana"
+linktitle: "Mengganti teks sederhana"
 type: docs
 weight: 10
 url: /id/java/replace-text-simple/
 description: Pelajari cara mengganti teks di seluruh dokumen PDF dalam Java menggunakan antarmuka PdfContentEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Ganti teks dalam PDF di Java
+AlternativeHeadline: "Mengganti teks dalam PDF di Java"
 Abstract: Artikel ini menunjukkan cara mengikat PDF, mengonfigurasi ruang lingkup penggantian teks, mengganti semua kemunculan teks yang cocok, dan menyimpan dokumen yang diperbarui menggunakan antarmuka PdfContentEditor di Aspose.PDF for Java.
 ---
-## Ganti teks di seluruh dokumen
+## Mengganti teks di seluruh dokumen
 
-1. Ikat PDF sumber ke `PdfContentEditor` fasad.
+1. Ikat PDF sumber ke fasad `PdfContentEditor`.
 2. Atur ruang lingkup replace-text ke `ReplaceAll`.
 3. Panggil `replaceText(...)` dengan teks pencarian dan teks pengganti.
 4. Simpan dokumen PDF yang diperbarui.

@@ -1,16 +1,16 @@
 ---
-title: Lindungi File PDF di Java
-linktitle: Enkripsi dan Dekripsi File PDF
+title: "Melindungi file PDF di Java"
+linktitle: "Mengenkripsi dan mendekripsi file PDF"
 type: docs
 weight: 70
 url: /id/java/protect-pdf-file/
 description: Pelajari cara mengenkripsi file PDF, mendekripsi dokumen yang dilindungi, mengubah kata sandi, dan memeriksa perlindungan kata sandi di Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Atur izin PDF dan kelola enkripsi di Java
+AlternativeHeadline: "Mengatur izin PDF dan mengelola enkripsi di Java"
 Abstract: Artikel ini menjelaskan cara melindungi file PDF dalam Java menggunakan Aspose.PDF. Artikel ini mencakup penerapan kata sandi pengguna dan pemilik, pengaturan hak istimewa dokumen, enkripsi dan dekripsi file PDF, mengubah kata sandi, serta memeriksa kata sandi kandidat untuk dokumen yang terenkripsi.
 ---
 Aspose.PDF for Java menyediakan beberapa API untuk mengamankan file PDF dengan kata sandi dan izin.
@@ -19,14 +19,14 @@ Aspose.PDF for Java menyediakan beberapa API untuk mengamankan file PDF dengan k
 
 Contoh-contoh di `ProtectDocumentExamples.java` demonstrasikan cara:
 
-1. Terapkan enkripsi ke sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dengan kata sandi pengguna dan pemilik.
-1. Batasi izin dengan [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
-1. Pilih satu [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) untuk yang dilindungi [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Dekripsi yang dilindungi [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Ubah kata sandi yang ada pada [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Uji kata sandi kandidat dengan [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) dan [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Terapkan enkripsi ke sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dengan kata sandi pengguna dan pemilik.
+1. Batasi izin dengan [`DocumentPrivilege`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
+1. Pilih satu [`CryptoAlgorithm`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) untuk yang dilindungi [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Dekripsi yang dilindungi [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Ubah kata sandi yang ada pada [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Uji kata sandi kandidat dengan [`PdfFileInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) dan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-## Enkripsi PDF dengan hak istimewa terbatas
+## Mengenkripsi PDF dengan hak istimewa terbatas
 
 ```java
 public static void encryptPassword(Path inputFile, Path outputFile) {
@@ -48,7 +48,7 @@ public static void encryptPassword(Path inputFile, Path outputFile) {
 }
 ```
 
-## Enkripsi file PDF
+## Mengenkripsi file PDF
 
 ```java
 public static void encryptPdfFile(Path inputFile, Path outputFile) {
@@ -81,7 +81,7 @@ public static void decryptPdfFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ubah kata sandi
+## Mengubah kata sandi
 
 ```java
 public static void changePassword(Path inputFile, Path outputFile) {
@@ -95,7 +95,7 @@ public static void changePassword(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tentukan kata sandi yang benar dari daftar
+## Menentukan kata sandi yang benar dari daftar
 
 ```java
 public static void determineCorrectPasswordFromList(Path inputFile) {

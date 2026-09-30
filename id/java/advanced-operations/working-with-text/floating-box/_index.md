@@ -1,21 +1,21 @@
 ---
-title: Gunakan FloatingBox untuk Tata Letak PDF di Java
+title: "Menggunakan FloatingBox untuk tata letak PDF di Java"
 linktitle: Menggunakan FloatingBox
 type: docs
 weight: 30
 url: /id/java/floating-box/
 description: Pelajari cara menggunakan FloatingBox untuk tata letak teks, konten multi‑kolom, dan penempatan yang tepat dalam dokumen PDF dengan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Buat dan posisikan kontainer FloatingBox yang bergaya dalam PDF dengan Java
+AlternativeHeadline: "Membuat dan memposisikan kontainer FloatingBox yang bergaya dalam PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menggunakan FloatingBox di Aspose.PDF for Java. Ini mencakup penempatan teks dalam kontainer mengambang berbingkai, membuat tata letak multi‑kolom berulang, menggunakan warna latar belakang, offset absolut, serta opsi penyelarasan horizontal atau vertikal.
 ---
 Aspose.PDF for Java menggunakan `FloatingBox` untuk membuat kontainer teks yang dapat digunakan kembali dan tata letak berbasis kolom.
 
-## Buat dan tambahkan kotak mengambang
+## Membuat dan menambahkan kotak mengambang
 
 Gunakan contoh ini ketika teks harus ditempatkan di dalam wadah mengambang yang berbingkai.
 
@@ -40,7 +40,7 @@ public static void createAndAddFloatingBox(Path outputFile) {
    }
 ```
 
-## Buat tata letak multi‑kolom berulang
+## Membuat tata letak multi‑kolom berulang
 
 Gunakan contoh ini ketika teks panjang harus mengalir melintasi beberapa kolom di dalam satu kotak mengambang.
 
@@ -79,7 +79,7 @@ public static void multiColumnLayout(Path outputFile) {
 }
 ```
 
-## Mulai setiap fragmen sebagai item pertama di kolom
+## Memulai setiap fragmen sebagai item pertama di kolom
 
 Gunakan contoh ini ketika setiap fragmen yang disisipkan harus memulai segmen aliran kolom baru.
 
@@ -120,7 +120,7 @@ public static void multiColumnLayout2(Path outputFile) {
 }
 ```
 
-## Tambahkan kotak mengambang dengan warna latar belakang
+## Menambahkan kotak mengambang dengan warna latar belakang
 
 Gunakan contoh ini ketika kontainer mengambang harus memiliki latar belakang yang terlihat.
 
@@ -144,7 +144,7 @@ public static void backgroundSupport(Path outputFile) {
 }
 ```
 
-## Posisikan kotak mengambang dengan offset absolut
+## Memposisikan kotak mengambang dengan offset absolut
 
 Gunakan contoh ini ketika kotak mengambang harus muncul pada offset yang tepat di halaman.
 
@@ -173,12 +173,12 @@ public static void offsetSupport(Path outputFile) {
 }
 ```
 
-## Ratakan teks di dalam kotak mengambang
+## Meratakan teks di dalam kotak mengambang
 
 Gunakan contoh ini ketika kotak mengambang harus menunjukkan penyelarasan vertikal yang berbeda dengan penyelarasan horizontal yang sama.
 
 1. Buat dokumen PDF baru dan tambahkan halaman.
-1. Buat beberapa `FloatingBox` objek dengan pengaturan perataan yang berbeda.
+1. Buat beberapa objek `FloatingBox` dengan pengaturan perataan yang berbeda.
 1. Tambahkan mereka ke halaman dan simpan hasilnya.
 
 ```java

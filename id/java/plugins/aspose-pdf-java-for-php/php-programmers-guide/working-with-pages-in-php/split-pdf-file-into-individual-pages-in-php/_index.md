@@ -1,13 +1,13 @@
 ---
-title: Pisah File PDF menjadi Halaman Individual dalam PHP
-linktitle: Pisah File PDF menjadi Halaman Individual dalam PHP
+title: "Memisahkan file PDF menjadi halaman individual dalam PHP"
+linktitle: "Memisahkan file PDF menjadi halaman individual dalam PHP"
 type: docs
 weight: 80
 url: /id/java/split-pdf-file-into-individual-pages-in-php/
 description: Temukan cara memisahkan dokumen PDF menjadi halaman individual menggunakan PHP dan Aspose.PDF untuk ekstraksi halaman yang efisien.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Pisah Halaman
+## Aspose.PDF - Pisah halaman
 
 Untuk memisahkan dokumen PDF menjadi halaman individual menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **SplitAllPages**.
 
@@ -43,7 +43,7 @@ print "Split process completed successfully!";
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
 Unduh **Split Pages (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah:
 

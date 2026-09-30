@@ -1,26 +1,26 @@
 ---
-title: Dapatkan, Perbarui, dan Perluas Penanda Buku PDF di Java
-linktitle: Dapatkan, Perbarui, dan Perluas Bookmark
+title: "Mendapatkan, memperbarui, dan memperluas penanda buku PDF di Java"
+linktitle: "Mendapatkan, memperbarui, dan memperluas bookmark"
 type: docs
 weight: 20
 url: /id/java/get-update-and-expand-bookmark/
 description: Pelajari cara mengambil, memperbarui, dan memperluas bookmark dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Periksa properti bookmark dan perluas outline dalam file PDF dengan Java
+AlternativeHeadline: "Memeriksa properti bookmark dan memperluas outline dalam file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara membaca, memperbarui, dan memperluas bookmark menggunakan Aspose.PDF for Java. Artikel ini mencakup iterasi melalui item outline, mengekstrak nomor halaman bookmark dengan PdfBookmarkEditor, membaca bookmark anak, memperbarui judul dan gaya bookmark, serta memaksa outline terbuka saat dokumen ditampilkan.
 ---
-Aspose.PDF for Java mengekspose bookmark melalui model outline dokumen dan `PdfBookmarkEditor` fasad.
+Aspose.PDF for Java mengekspose bookmark melalui model outline dokumen dan fasad `PdfBookmarkEditor`.
 
-## Dapatkan properti bookmark
+## Mendapatkan properti bookmark
 
 Gunakan contoh ini ketika Anda perlu memeriksa entri bookmark tingkat atas dalam outline dokumen.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui koleksi outline.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui koleksi outline.
 1. Baca dan cetak nilai judul bookmark, gaya, dan warna.
 
 ```java
@@ -37,11 +37,11 @@ public static void getBookmarks(Path inputFile) {
 }
 ```
 
-## Dapatkan nomor halaman bookmark
+## Mendapatkan nomor halaman bookmark
 
 Contoh ini menggunakan `PdfBookmarkEditor` untuk mengekstrak judul bookmark, level, nomor halaman, dan aksi.
 
-1. Ikat PDF sumber ke [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. Ikat PDF sumber ke [`PdfBookmarkEditor`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
 1. Ekstrak koleksi bookmark dan iterasi melaluinya.
 1. Cetak tingkat, judul, nomor halaman, dan informasi aksi untuk setiap bookmark.
 
@@ -66,12 +66,12 @@ public static void getBookmarkPageNumber(Path inputFile) {
 }
 ```
 
-## Dapatkan bookmark anak
+## Mendapatkan bookmark anak
 
 Gunakan contoh ini ketika Anda perlu memeriksa item outline tingkat atas dan yang bersarang.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui outline tingkat atas dan cetak propertinya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui outline tingkat atas dan cetak propertinya.
 1. Deteksi bookmark anak, lalu iterasi melalui mereka dan cetak propertinya.
 
 ```java
@@ -99,11 +99,11 @@ public static void getChildBookmarks(Path inputFile) {
 }
 ```
 
-## Perbarui bookmark
+## Memperbarui bookmark
 
 Gunakan contoh ini ketika judul dan gaya bookmark yang ada harus dimodifikasi.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Akses item outline target dan bookmark anaknya.
 1. Perbarui properti bookmark dan simpan dokumen.
 
@@ -121,11 +121,11 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 }
 ```
 
-## Perluas bookmark secara default
+## Memperluas bookmark secara default
 
 Gunakan contoh ini ketika panel bookmark harus terbuka dan menampilkan item outline yang diperluas saat dokumen ditampilkan.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Atur mode halaman untuk menggunakan outline dan tandai setiap item outline sebagai terbuka.
 1. Simpan dokumen yang diperbarui.
 

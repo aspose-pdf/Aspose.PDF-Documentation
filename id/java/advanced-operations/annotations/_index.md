@@ -5,12 +5,12 @@ type: docs
 weight: 100
 url: /id/java/annotations/
 description: Pelajari cara menambahkan, memeriksa, menghapus, mentransfer, dan mengelola anotasi PDF dalam Java dengan Aspose.PDF, termasuk teks, penandaan, tautan, bentuk, watermark, redaksi, dan panduan anotasi terkait media.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Cara menambahkan Anotasi ke PDF menggunakan Java
+AlternativeHeadline: "Menambahkan anotasi ke PDF menggunakan Java"
 Abstract: Artikel ini memperkenalkan alur kerja anotasi PDF dalam Aspose.PDF for Java. Artikel ini mencakup penambahan, pengambilan, penghapusan, dan transfer anotasi, dengan topik yang dikelompokkan untuk teks, penandaan, interaktif, bentuk, watermark, keamanan, dan skenario anotasi terkait media.
 ---
 Anotasi adalah elemen PDF interaktif yang memungkinkan Anda menambahkan catatan, menyorot teks, menggambar bentuk, membuat tautan, menerapkan redaksi, dan memperkaya alur kerja peninjauan dokumen dalam file PDF yang ada.

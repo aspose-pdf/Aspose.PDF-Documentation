@@ -1,13 +1,13 @@
 ---
-title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di PHP
-linktitle: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di PHP
+title: "Mendapatkan properti jendela dokumen dan tampilan halaman di PHP"
+linktitle: "Mendapatkan properti jendela dokumen dan tampilan halaman di PHP"
 type: docs
 weight: 30
 url: /id/java/get-document-window-and-page-display-properties-in-php/
 description: Pelajari cara mengakses properti jendela dokumen dan tampilan halaman dari file PDF di PHP menggunakan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Dapatkan Properti Jendela Dokumen dan Tampilan Halaman
+## Aspose.PDF - dapatkan properti jendela dokumen dan tampilan halaman
 
 Untuk mendapatkan Properti Jendela Dokumen dan Tampilan Halaman dari dokumen Pdf menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **GetDocumentWindow**.
 
@@ -54,8 +54,8 @@ print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-Unduh\u0412\u00A0**Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)**\u0412\u00A0dari\u0412\u00A0salah satu situs pengkodean sosial yang disebutkan di bawah:
+Unduh **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

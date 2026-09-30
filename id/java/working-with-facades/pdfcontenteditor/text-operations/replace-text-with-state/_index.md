@@ -1,18 +1,18 @@
 ---
-title: Ganti Teks dengan Status
-linktitle: Ganti Teks dengan Status
+title: "Mengganti teks dengan status"
+linktitle: "Mengganti teks dengan status"
 type: docs
 weight: 20
 url: /id/java/replace-text-with-state/
-description: Pelajari cara mengganti teks dengan format khusus di Java menggunakan facade `PdfContentEditor` dalam Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara mengganti teks dengan format khusus di Java menggunakan fasad `PdfContentEditor` dalam Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Ganti teks PDF dengan format khusus di Java
-Abstract: Artikel ini menunjukkan cara mengaitkan PDF, mengkonfigurasi TextState khusus, mengganti semua kemunculan teks yang cocok, dan menyimpan dokumen yang diperbarui menggunakan facade `PdfContentEditor` dalam Aspose.PDF for Java.
+AlternativeHeadline: "Mengganti teks PDF dengan format khusus di Java"
+Abstract: "Artikel ini menunjukkan cara mengaitkan PDF, mengkonfigurasi TextState khusus, mengganti semua kemunculan teks yang cocok, dan menyimpan dokumen yang diperbarui menggunakan fasad `PdfContentEditor` dalam Aspose.PDF for Java."
 ---
-## Ganti teks dengan TextState khusus
+## Mengganti teks dengan TextState khusus
 
-1. Hubungkan PDF sumber ke `PdfContentEditor` fasad.
+1. Hubungkan PDF sumber ke fasad `PdfContentEditor`.
 2. Buat dan konfigurasikan sebuah `TextState` dengan warna dan ukuran font yang diperlukan.
 3. Atur ruang lingkup replace-text ke `ReplaceAll`.
 4. Panggil `replaceText(...)` dengan teks pencarian, teks pengganti, dan dikonfigurasi `TextState`.

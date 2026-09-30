@@ -1,26 +1,26 @@
 ---
-title: Manipulasi Dokumen PDF dengan Java
-linktitle: Manipulasi Dokumen PDF
+title: "Memanipulasi dokumen PDF dengan Java"
+linktitle: "Memanipulasi dokumen PDF"
 type: docs
 weight: 20
 url: /id/java/manipulate-pdf-document/
 description: Pelajari cara memvalidasi, menyusun, dan memodifikasi dokumen PDF dalam Java, termasuk manajemen TOC dan pemeriksaan PDF/A.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Validasi, restrukturisasi, dan meratakan dokumen PDF dengan Java
+AlternativeHeadline: "Memvalidasi, merestrukturisasi, dan meratakan dokumen PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara memanipulasi dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup validasi kepatuhan PDF/A, penambahan dan penyesuaian daftar isi, menyembunyikan atau menyesuaikan nomor halaman TOC, menetapkan skrip kedaluwarsa, dan memipihkan bidang formulir interaktif.
 ---
 Aspose.PDF for Java mencakup operasi struktur dokumen yang melampaui pengeditan halaman sederhana.
 
-## Validasi kepatuhan PDF/A-1a
+## Memvalidasi kepatuhan PDF/A-1a
 
 Gunakan contoh ini ketika Anda perlu memeriksa apakah sebuah dokumen memenuhi standar arsip PDF/A-1a.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Jalankan validasi terhadap yang diperlukan [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) sasaran.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Jalankan validasi terhadap yang diperlukan [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) sasaran.
 1. Simpan laporan validasi ke jalur output yang ditentukan.
 
 ```java
@@ -31,12 +31,12 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 }
 ```
 
-## Validasi kepatuhan PDF/A-1b
+## Memvalidasi kepatuhan PDF/A-1b
 
 Variasi ini memvalidasi dokumen sumber yang sama terhadap level kepatuhan PDF/A-1b.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Panggil metode validasi dengan [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) nilai untuk PDF/A-1b.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Panggil metode validasi dengan [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) nilai untuk PDF/A-1b.
 1. Tuliskan hasil validasi ke file laporan output.
 
 ```java
@@ -47,13 +47,13 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan daftar isi
+## Menambahkan daftar isi
 
 Gunakan pendekatan ini ketika dokumen harus menyertakan halaman TOC yang dihasilkan dengan tautan ke halaman konten.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Masukkan TOC baru [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan konfigurasikan [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. Buat [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri yang mengarah ke halaman tujuan.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Masukkan TOC baru [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan konfigurasikan [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Buat [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri yang mengarah ke halaman tujuan.
 1. Simpan dokumen yang telah diperbarui.
 
 ```java
@@ -84,13 +84,13 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 }
 ```
 
-## Sesuaikan tingkat TOC dan pemformatan
+## Menyesuaikan tingkat TOC dan pemformatan
 
 Contoh ini menunjukkan cara menetapkan pengaturan visual yang berbeda untuk beberapa level daftar isi.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Tambahkan TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan konfigurasikan itu [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) format array.
-1. Buat contoh [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri dengan level yang berbeda.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan TOC [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan konfigurasikan itu [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) format array.
+1. Buat contoh [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri dengan level yang berbeda.
 1. Simpan dokumen dengan TOC yang diformat.
 
 ```java
@@ -138,13 +138,13 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 }
 ```
 
-## Sembunyikan nomor halaman di TOC
+## Menyembunyikan nomor halaman di TOC
 
 Gunakan contoh ini ketika daftar isi harus menampilkan judul entri tanpa nomor halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Tambahkan TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan nonaktifkan nomor halaman di [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. Buat yang diperlukan [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri dan tambahkan ke halaman konten.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan TOC [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan nonaktifkan nomor halaman di [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Buat yang diperlukan [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri dan tambahkan ke halaman konten.
 1. Simpan dokumen yang telah diperbarui.
 
 ```java
@@ -184,13 +184,13 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 }
 ```
 
-## Sesuaikan awalan nomor halaman TOC
+## Menyesuaikan awalan nomor halaman TOC
 
 Contoh ini menambahkan prefiks khusus pada nomor halaman yang ditampilkan dalam daftar isi yang dihasilkan.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Masukkan TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan atur awalan nomor halaman yang diinginkan di [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. Buat [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri yang menunjuk ke setiap halaman.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Masukkan TOC [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dan atur awalan nomor halaman yang diinginkan di [`TocInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. Buat [`Heading`](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) entri yang menunjuk ke setiap halaman.
 1. Simpan dokumen yang telah diperbarui.
 
 ```java
@@ -220,12 +220,12 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan skrip kedaluwarsa PDF
+## Menambahkan skrip kedaluwarsa PDF
 
 Gunakan pendekatan ini ketika dokumen harus menjalankan JavaScript saat dibuka dan menampilkan peringatan kedaluwarsa setelah tanggal tertentu.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan konten yang diperlukan.
-1. Buat [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) dengan logika kedaluwarsa.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan konten yang diperlukan.
+1. Buat [`JavascriptAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) dengan logika kedaluwarsa.
 1. Tetapkan skrip sebagai tindakan buka dokumen dan simpan file keluaran.
 
 ```java
@@ -247,13 +247,13 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ratakan formulir PDF yang dapat diisi
+## Meratakan formulir PDF yang dapat diisi
 
 Contoh ini mengubah bidang formulir interaktif menjadi konten halaman statis sehingga dokumen yang dihasilkan tidak lagi dapat diedit sebagai formulir.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Periksa apakah dokumen berisi widget formulir.
-1. Ratakan masing-masing [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) diwakili oleh sebuah [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. Ratakan masing-masing [`Field`](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) diwakili oleh sebuah [`WidgetAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
 1. Simpan dokumen yang telah diflatkan.
 
 ```java

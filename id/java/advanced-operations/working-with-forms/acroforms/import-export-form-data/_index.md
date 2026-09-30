@@ -1,22 +1,22 @@
 ---
-title: Impor dan Ekspor Data Form
-linktitle: Impor dan Ekspor Data Form
+title: "Mengimpor dan mengekspor data Form"
+linktitle: "Mengimpor dan mengekspor data Form"
 type: docs
 weight: 80
 url: /id/java/import-export-form-data/
 description: Impor dan ekspor data bidang AcroForm dalam format XML, FDF, XFDF, dan JSON menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Impor dan ekspor data formulir PDF dengan Java
+AlternativeHeadline: "Mengimpor dan mengekspor data formulir PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menukar data AcroForm dengan format eksternal menggunakan Aspose.PDF for Java. Artikel ini mencakup mengimpor dan mengekspor data XML, FDF, dan XFDF melalui antarmuka Form dan mengekstrak nilai bidang formulir ke JSON.
 ---
 Aspose.PDF for Java mendukung beberapa format pertukaran data umum untuk formulir interaktif.
 
-## Impor data Form dari XML
+## Mengimpor data Form dari XML
 
 Gunakan contoh ini ketika nilai formulir disimpan dalam file XML dan harus diterapkan ke formulir PDF.
 
-1. Buat sebuah [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad dan mengikat PDF sumber.
+1. Buat sebuah fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) dan mengikat PDF sumber.
 1. Buka aliran masukan XML dan impor data ke dalam formulir.
 1. Simpan dokumen PDF yang diperbarui.
 
@@ -33,11 +33,11 @@ public static void importDataFromXml(Path inputFile, Path dataFile, Path outputF
 }
 ```
 
-## Ekspor data formulir ke XML
+## Mengekspor data formulir ke XML
 
 Gunakan contoh ini ketika Anda perlu menyimpan nilai AcroForm saat ini dalam format XML.
 
-1. Buat sebuah [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad dan mengikat PDF sumber.
+1. Buat sebuah fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) dan mengikat PDF sumber.
 1. Buka aliran keluaran untuk file XML.
 1. Ekspor data formulir ke XML.
 
@@ -53,11 +53,11 @@ public static void exportDataToXml(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Impor data formulir dari FDF
+## Mengimpor data formulir dari FDF
 
 Gunakan contoh ini ketika nilai formulir tiba dalam format pertukaran FDF.
 
-1. Buat sebuah [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad dan mengikat PDF sumber.
+1. Buat sebuah fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) dan mengikat PDF sumber.
 1. Buka aliran input FDF dan impor data.
 1. Simpan dokumen PDF yang telah diisi.
 
@@ -74,11 +74,11 @@ public static void importDataFromFdf(Path inputFile, Path dataFile, Path outputF
 }
 ```
 
-## Ekspor data formulir ke FDF
+## Mengekspor data formulir ke FDF
 
 Gunakan contoh ini ketika nilai formulir PDF harus dibagikan sebagai file FDF.
 
-1. Buat sebuah [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad dan mengikat PDF sumber.
+1. Buat sebuah fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) dan mengikat PDF sumber.
 1. Buka aliran output untuk file FDF.
 1. Ekspor data formulir dalam format FDF.
 
@@ -94,11 +94,11 @@ public static void exportDataToFdf(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Impor data formulir dari XFDF
+## Mengimpor data formulir dari XFDF
 
 Gunakan contoh ini ketika data formulir disediakan dalam format XFDF dan harus digabungkan ke dalam PDF.
 
-1. Buat sebuah [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad dan mengikat PDF sumber.
+1. Buat sebuah fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) dan mengikat PDF sumber.
 1. Buka aliran masukan XFDF dan impor nilai-nilai tersebut.
 1. Simpan dokumen PDF yang diperbarui.
 
@@ -115,11 +115,11 @@ public static void importDataFromXfdf(Path inputFile, Path dataFile, Path output
 }
 ```
 
-## Ekspor data formulir ke XFDF
+## Mengekspor data formulir ke XFDF
 
 Gunakan contoh ini ketika Anda membutuhkan file pertukaran berbasis XML untuk nilai AcroForm.
 
-1. Buat sebuah [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad dan mengikat PDF sumber.
+1. Buat sebuah fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) dan mengikat PDF sumber.
 1. Buka aliran keluaran untuk file XFDF.
 1. Ekspor nilai formulir saat ini ke XFDF.
 
@@ -135,12 +135,12 @@ public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exce
 }
 ```
 
-## Ekstrak bidang formulir ke JSON
+## Mengekstrak bidang formulir ke JSON
 
 Gunakan contoh ini ketika nilai formulir harus diekspor ke representasi JSON ringan.
 
-1. Buka PDF dengan [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fasad.
-1. Iterasi melalui nama-nama field dan serialisasikan nilai-nilainya ke dalam teks JSON.
+1. Buka PDF dengan fasad [`Form`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. Iterasikan melalui nama-nama bidang dan serialisasikan nilai-nilainya ke dalam teks JSON.
 1. Tuliskan konten JSON ke file target.
 
 ```java
@@ -167,7 +167,7 @@ public static void extractFormFieldsToJson(Path inputFile, Path outputFile) thro
 }
 ```
 
-## Gunakan kembali pembantu ekstraksi JSON
+## Menggunakan kembali pembantu ekstraksi JSON
 
 Gunakan contoh ini ketika Anda ingin metode pembungkus khusus yang mendelegasikan ke rutinitas ekspor JSON utama.
 

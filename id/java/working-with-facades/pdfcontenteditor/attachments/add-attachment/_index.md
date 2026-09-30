@@ -1,18 +1,18 @@
 ---
-title: Tambahkan Lampiran
-linktitle: Tambahkan Lampiran
+title: "Menambahkan lampiran"
+linktitle: "Menambahkan lampiran"
 type: docs
 weight: 10
 url: /id/java/add-attachment/
-description: Pelajari cara melampirkan file eksternal ke dokumen PDF dalam Java menggunakan facade PdfContentEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara melampirkan file eksternal ke dokumen PDF dalam Java menggunakan fasad PdfContentEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Tambahkan lampiran file ke PDF dalam Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF, membuka lampiran sebagai stream, menambahkan lampiran dokumen dengan deskripsi, dan menyimpan file yang diperbarui menggunakan facade PdfContentEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Menambahkan lampiran file ke PDF dalam Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF, membuka lampiran sebagai stream, menambahkan lampiran dokumen dengan deskripsi, dan menyimpan file yang diperbarui menggunakan fasad PdfContentEditor di Aspose.PDF for Java."
 ---
-## Tambahkan lampiran dokumen
+## Menambahkan lampiran dokumen
 
-1. Lampirkan PDF sumber ke `PdfContentEditor` fasad.
+1. Lampirkan PDF sumber ke fasad `PdfContentEditor`.
 2. Buka file lampiran sebagai aliran masukan.
 3. Panggil `addDocumentAttachment(...)` dengan stream, nama file, dan deskripsi.
 4. Simpan dokumen PDF yang diperbarui.

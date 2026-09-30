@@ -1,22 +1,22 @@
 ---
-title: Atur Properti Elemen Struktur Tagged PDF di Java
-linktitle: Mengatur Properti Elemen Struktur
+title: "Mengatur properti elemen struktur Tagged PDF di Java"
+linktitle: "Mengatur properti elemen struktur"
 type: docs
 weight: 30
 url: /id/java/setting-structure-elements-properties/
 description: Pelajari cara mengatur properti elemen struktur PDF ber-tag dalam Java dengan Aspose.PDF, termasuk judul, bahasa, teks aktual, teks alternatif, teks ekspansi, tautan, catatan, dan nama tag.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 Halaman ini mencakup pola pengaturan properti umum untuk elemen struktur PDF ber-tag dalam Java.
 
-## Atur properti elemen struktur umum
+## Mengatur properti elemen struktur umum
 
 Gunakan contoh ini ketika elemen struktur yang ditandai harus menampilkan metadata aksesibilitas seperti judul, bahasa, teks aktual, dan teks alternatif.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan inisialisasi metadata konten yang ditandai.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan inisialisasi metadata konten yang ditandai.
 1. Buat elemen seksi dan header dalam pohon struktur.
 1. Atur properti header dan simpan dokumen.
 
@@ -46,12 +46,12 @@ public static void setProperties(Path outputFile) {
 }
 ```
 
-## Setel elemen teks
+## Mengatur elemen teks
 
 Gunakan contoh ini ketika Anda perlu menambahkan elemen paragraf sederhana ke pohon struktur bertanda.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) dan atur teksnya.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`ParagraphElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) dan atur teksnya.
 1. Tambahkan paragraf ke elemen root dan simpan dokumen.
 
 ```java
@@ -70,11 +70,11 @@ public static void setTextElements(Path outputFile) {
 }
 ```
 
-## Atur elemen blok teks
+## Mengatur elemen blok teks
 
 Contoh ini membuat beberapa elemen struktur tingkat blok, termasuk judul dengan beberapa tingkat dan sebuah paragraf.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Tambahkan elemen header untuk level yang diperlukan dan kemudian buat elemen paragraf.
 1. Tambahkan elemen blok ke struktur root dan simpan dokumen.
 
@@ -101,11 +101,11 @@ public static void setTextBlockElements(Path outputFile) {
 }
 ```
 
-## Atur elemen inline
+## Mengatur elemen inline
 
 Gunakan contoh ini ketika elemen struktur blok harus berisi span inline bersarang.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Bangun elemen header dan tambahkan anak span ke dalamnya.
 1. Buat paragraf dengan beberapa span dan simpan dokumen.
 
@@ -144,11 +144,11 @@ public static void setInlineElements(Path outputFile) {
 }
 ```
 
-## Atur nama tag khusus
+## Mengatur nama tag khusus
 
 Contoh ini menetapkan nama tag khusus pada elemen paragraf dan span dalam struktur bertanda.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen section.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen section.
 1. Buat paragraf dan span, lalu tetapkan nama tag khusus untuk setiap elemen.
 1. Tambahkan elemen ke bagian dan simpan dokumen.
 
@@ -183,11 +183,11 @@ public static void setTagName(Path outputFile) {
 }
 ```
 
-## Atur elemen tautan dan gambar
+## Mengatur elemen tautan dan gambar
 
 Gunakan contoh ini ketika elemen tautan yang ditandai harus mencakup deskripsi alternatif, hyperlink, dan konten gambar dengan atribut tata letak.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen tautan di dalam paragraf.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen tautan di dalam paragraf.
 1. Konfigurasikan target hyperlink, deskripsi alternatif, dan elemen figure yang ditautkan.
 1. Atur atribut layout yang diperlukan dan simpan dokumen.
 
@@ -233,11 +233,11 @@ public static void setElements(Path imageFile, Path outputFile) {
 }
 ```
 
-## Tambahkan paragraf dengan konten tautan sebaris
+## Menambahkan paragraf dengan konten tautan sebaris
 
 Contoh ini membuat elemen paragraf yang menggabungkan teks biasa dan elemen span bersarang.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat elemen paragraf dan tambahkan anak span dengan teks khusus.
 1. Tambahkan paragraf ke elemen akar dan simpan dokumen.
 
@@ -267,11 +267,11 @@ public static void addLinkElement(Path outputFile) {
 }
 ```
 
-## Atur elemen catatan
+## Mengatur elemen catatan
 
 Gunakan contoh ini ketika elemen struktur catatan harus dibuat dengan ID otomatis atau eksplisit.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen paragraf.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen paragraf.
 1. Buat elemen catatan dan atur teks serta ID-nya sesuai kebutuhan.
 1. Tambahkan catatan ke paragraf dan simpan dokumen.
 
@@ -304,11 +304,11 @@ public static void setNoteElement(Path outputFile) {
 }
 ```
 
-## Atur bahasa dan judul untuk konten multibahasa
+## Mengatur bahasa dan judul untuk konten multibahasa
 
 Contoh ini menetapkan metadata tingkat dokumen dan kemudian membuat paragraf dengan nilai bahasa yang berbeda.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan atur judul dokumen dan bahasa.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan atur judul dokumen dan bahasa.
 1. Tambahkan elemen header dan buat paragraf untuk setiap frasa yang dilokalisasi.
 1. Simpan dokumen bertanda multibahasa.
 
@@ -333,11 +333,11 @@ public static void setLanguageAndTitle(Path outputFile) {
 }
 ```
 
-## Tambahkan pembantu paragraf untuk konten ber‑tag
+## Menambahkan pembantu paragraf untuk konten ber‑tag
 
 Metode pembantu ini membuat sebuah paragraf, menetapkan bahasanya, dan menambahkannya ke struktur root.
 
-1. Buat sebuah [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
+1. Buat sebuah [`ParagraphElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
 1. Atur teks dan bahasa untuk elemen tersebut.
 1. Tambahkan paragraf ke elemen akar konten yang ditandai.
 

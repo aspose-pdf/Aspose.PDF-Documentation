@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /id/java/aspose-pdf-java-for-ruby/
 description: Jelajahi cara menggunakan Aspose.PDF for Java dalam Ruby. Gabungkan kekuatan scripting Ruby dengan fitur manipulasi PDF lanjutan.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 ## Pendahuluan
 
@@ -25,16 +25,16 @@ Aspose.PDF for Java memungkinkan Anda membuat file PDF secara langsung melalui A
 
 Project Aspose.PDF Java for Ruby menunjukkan cara berbagai tugas dapat dilakukan menggunakan API Aspose.PDF Java di Ruby. Proyek ini bertujuan menyediakan contoh yang berguna bagi pengembang Ruby yang ingin memanfaatkan Aspose.PDF for Java dalam Proyek Ruby mereka menggunakan Rjb (Ruby Java Bridge).
 
-## Persyaratan Sistem dan Platform yang Didukung
+## Persyaratan sistem dan platform yang didukung
 
-### Persyaratan Sistem
+### Persyaratan sistem
 
 Berikut adalah persyaratan sistem untuk menggunakan Aspose.PDF Java for Ruby:
 
 - Rjb Gem sudah dikonfigurasi
 - Komponen Aspose.PDF yang diunduh
 
-### Platform yang Didukung
+### Platform yang didukung
 
 Berikut adalah platform yang didukung:
 
@@ -44,13 +44,13 @@ Berikut adalah platform yang didukung:
 
 ## Unduhan
 
-### Unduh Perpustakaan yang Diperlukan
+### Mengunduh pustaka yang diperlukan
 
 Unduh pustaka yang diperlukan seperti disebutkan di bawah. Ini diperlukan untuk menjalankan contoh Aspose.PDF Java untuk Ruby.
 
 - [Komponen Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
 
-### Unduh Contoh dari Situs Pengkodean Sosial
+### Mengunduh contoh dari situs pengkodean sosial
 
 Rilis contoh yang dapat dijalankan berikut tersedia untuk diunduh di situs pengkodean sosial yang disebutkan di bawah:
 
@@ -58,7 +58,7 @@ GitHub
 
 - [Aspose.PDF Java untuk Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
 
-## Instalasi Dan Penggunaan
+## Instalasi dan penggunaan
 
 ### Menginstal
 
@@ -96,9 +96,9 @@ Mari kita pahami kode di atas.
 
 1. Baris pertama memastikan bahwa aspose pdf dimuat dan tersedia.
 1. Sertakan file yang diperlukan untuk mengakses aspose pdf.
-1. Inisialisasi perpustakaan. Kelas aspose JAVA dimuat dari jalur yang diberikan di file aspose.yml/
+1. Inisialisasi pustaka. Kelas aspose JAVA dimuat dari jalur yang diberikan di file aspose.yml/.
 
-## Dukung, Perluas, dan Berkontribusi
+## Dukungan, pengembangan, dan kontribusi
 
 ### Dukungan
 
@@ -110,22 +110,22 @@ Anda dapat mencatat masalah atau saran apa pun yang terkait dengan Aspose.PDF Ja
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### Perluas dan Berkontribusi
+### Memperluas dan berkontribusi
 
 Aspose.PDF Java for Ruby bersifat open source dan kode sumbernya tersedia di situs web sosial coding utama yang tercantum di bawah ini. Pengembang dianjurkan untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang sudah ada, sehingga orang lain juga dapat memanfaatkannya.
 
-### Kode Sumber
+### Kode sumber
 
 Anda dapat mendapatkan kode sumber terbaru dari salah satu lokasi berikut:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
 
-## Contoh Kode Sampel
+## Contoh kode sampel
 
 Bagian ini mencakup topik berikut:
 
-- [Unduh dan Konfigurasi Aspose.Pdf di Ruby](/pdf/id/java/download-and-configure-aspose-pdf-in-ruby/)
-- [Panduan Programmer Ruby](/pdf/id/java/ruby-programmers-guide/)
+- [Mengunduh dan konfigurasi Aspose.PDF di Ruby](/pdf/id/java/download-and-configure-aspose-pdf-in-ruby/)
+- [Panduan programmer Ruby](/pdf/id/java/ruby-programmers-guide/)
   - [Bekerja dengan Document Object dalam Ruby](/pdf/id/java/working-with-document-object-in-ruby/)
     - [Menambahkan JavaScript di Ruby](/pdf/id/java/adding-javascript-in-ruby/)
     - [Menambahkan Lapisan ke File PDF dalam Ruby](/pdf/id/java/add-layers-to-pdf-file-in-ruby/)
@@ -139,7 +139,7 @@ Bagian ini mencakup topik berikut:
     - [Atur Properti Jendela Dokumen dan Tampilan Halaman dalam Ruby](/pdf/id/java/set-document-window-and-page-display-properties-in-ruby/)
     - [Atur Kedaluwarsa PDF di Ruby](/pdf/id/java/set-pdf-expiration-in-ruby/)
     - [Atur Informasi Berkas PDF di Ruby](/pdf/id/java/set-pdf-file-information-in-ruby/)
-  - [Bekerja dengan Halaman di Ruby](/pdf/id/java/working-with-pages-in-ruby/)
+  - [Bekerja dengan halaman di Ruby](/pdf/id/java/working-with-pages-in-ruby/)
     - [Menggabungkan Berkas PDF di Ruby](/pdf/id/java/concatenate-pdf-files-in-ruby/)
     - [Hapus Halaman Tertentu dari File PDF dalam Ruby](/pdf/id/java/delete-a-particular-page-from-the-pdf-file-in-ruby/)
     - [Dapatkan Halaman Tertentu dalam File PDF dengan Ruby](/pdf/id/java/get-a-particular-page-in-a-pdf-file-in-ruby/)
@@ -149,15 +149,15 @@ Bagian ini mencakup topik berikut:
     - [Sisipkan Halaman Kosong ke dalam File PDF dalam Ruby](/pdf/id/java/insert-an-empty-page-into-a-pdf-file-in-ruby/)
     - [Pisahkan File PDF menjadi Halaman Individu dalam Ruby](/pdf/id/java/split-pdf-file-into-individual-pages-in-ruby/)
     - [Perbarui Dimensi Halaman di Ruby](/pdf/id/java/update-page-dimensions-in-ruby/)
-  - [Bekerja dengan Teks di Ruby](/pdf/id/java/working-with-text-in-ruby/)
+  - [Bekerja dengan teks di Ruby](/pdf/id/java/working-with-text-in-ruby/)
     - [Tambahkan String HTML menggunakan DOM di Ruby](/pdf/id/java/add-html-string-using-dom-in-ruby/)
     - [Tambahkan Teks ke file PDF yang ada di Ruby](/pdf/id/java/add-text-to-an-existing-pdf-file-in-ruby/)
     - [Ekstrak Teks Dari Semua Halaman Dokumen PDF dalam Ruby](/pdf/id/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/)
-  - [Bekerja dengan Konversi Dokumen di Ruby](/pdf/id/java/working-with-document-conversion-in-ruby/)
+  - [Bekerja dengan konversi dokumen di Ruby](/pdf/id/java/working-with-document-conversion-in-ruby/)
     - [Konversi HTML ke Format PDF di Ruby](/pdf/id/java/convert-html-to-pdf-format-in-ruby/)
     - [Konversi halaman PDF menjadi Gambar di Ruby](/pdf/id/java/convert-pdf-pages-to-images-in-ruby/)
     - [Konversi PDF ke format DOC atau DOCX di Ruby](/pdf/id/java/convert-pdf-to-doc-or-docx-format-in-ruby/)
     - [Konversi PDF ke Buku Kerja Excel dalam Ruby](/pdf/id/java/convert-pdf-to-excel-workbook-in-ruby/)
     - [Mengonversi PDF ke Format SVG dalam Ruby](/pdf/id/java/convert-pdf-to-svg-format-in-ruby/)
     - [Konversi file SVG ke format PDF di Ruby](/pdf/id/java/convert-svg-file-to-pdf-format-in-ruby/)
-- [Dukung, Perluas, dan Berkontribusi pada Aspose.Pdf dalam Ruby](/pdf/id/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/)
+- [Dukung, perluas, dan berkontribusi pada Aspose.PDF dalam Ruby](/pdf/id/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/)

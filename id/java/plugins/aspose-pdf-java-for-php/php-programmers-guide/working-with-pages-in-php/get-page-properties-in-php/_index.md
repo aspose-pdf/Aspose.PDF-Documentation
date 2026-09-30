@@ -1,13 +1,13 @@
 ---
-title: Dapatkan Properti Halaman dalam PHP
-linktitle: Dapatkan Properti Halaman dalam PHP
+title: "Mendapatkan properti halaman dalam PHP"
+linktitle: "Mendapatkan properti halaman dalam PHP"
 type: docs
 weight: 50
 url: /id/java/get-page-properties-in-php/
 description: Jelajahi cara mengambil properti halaman tertentu dalam dokumen PDF menggunakan PHP dengan Aspose.PDF untuk kontrol detail.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Dapatkan Properti Halaman
+## Aspose.PDF - dapatkan properti halaman
 
 Untuk mendapatkan properti halaman dokumen PDF menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **GetPageProperties**.
 
@@ -41,8 +41,8 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Get Page Properties (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Get Page Properties (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

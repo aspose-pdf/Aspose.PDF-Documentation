@@ -1,26 +1,26 @@
 ---
-title: Buat AcroForm - Buat PDF yang dapat diisi di Java
-linktitle: Buat AcroForm
+title: "Membuat AcroForm - buat PDF yang dapat diisi di Java"
+linktitle: "Membuat AcroForm"
 type: docs
 weight: 10
 url: /id/java/create-form/
-description: Buat field AcroForm dari awal dalam dokumen PDF menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+description: "Buat bidang AcroForm dari awal dalam dokumen PDF menggunakan Aspose.PDF for Java."
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Buat field AcroForm interaktif dalam file PDF dengan Java
+AlternativeHeadline: "Membuat bidang AcroForm interaktif dalam file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara membuat bidang AcroForm menggunakan Aspose.PDF for Java. Ini mencakup kotak teks, bidang teks multi-widget, tombol radio, kotak kombo, kotak centang, kotak daftar, bidang tanda tangan, dan bidang kode batang untuk formulir PDF interaktif.
 ---
 Aspose.PDF for Java memungkinkan Anda membuat berbagai jenis bidang AcroForm dari awal.
 
-## Buat bidang kotak teks
+## Membuat bidang kotak teks
 
 Gunakan contoh ini saat Anda perlu menambahkan bidang input teks satu baris ke formulir PDF baru.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) dengan persegi panjang target dan mengonfigurasi tampilannya.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`TextBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) dengan persegi panjang target dan mengonfigurasi tampilannya.
 1. Tambahkan bidang ke formulir dan simpan dokumen.
 
 ```java
@@ -49,13 +49,13 @@ public static void addTextBoxField(Path outputFile) {
 }
 ```
 
-## Buat bidang kotak teks dengan beberapa widget
+## Membuat bidang kotak teks dengan beberapa widget
 
 Gunakan contoh ini ketika nilai bidang teks yang sama harus muncul di beberapa posisi pada halaman.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
 1. Definisikan beberapa persegi panjang dan tampilan untuk widget bidang.
-1. Buat [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), konfigurasikan setiap widget, dan simpan dokumen.
+1. Buat [`TextBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), konfigurasikan setiap widget, dan simpan dokumen.
 
 ```java
 public static void addTextBoxFieldNt(Path outputFile) {
@@ -99,12 +99,12 @@ public static void addTextBoxFieldNt(Path outputFile) {
 }
 ```
 
-## Buat bidang tombol radio
+## Membuat bidang tombol radio
 
 Gunakan contoh ini ketika formulir harus memungkinkan pengguna memilih satu opsi dari sekumpulan yang telah ditentukan.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) dan tambahkan opsi yang diperlukan.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`RadioButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) dan tambahkan opsi yang diperlukan.
 1. Tambahkan bidang ke Form dan simpan PDF.
 
 ```java
@@ -122,12 +122,12 @@ public static void addRadioButton(Path outputFile) {
 }
 ```
 
-## Buat bidang combo box
+## Membuat bidang combo box
 
 Gunakan contoh ini ketika pengguna harus memilih satu nilai dari daftar drop-down.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) dan tambahkan opsi yang dapat dipilih.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`ComboBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) dan tambahkan opsi yang dapat dipilih.
 1. Atur pilihan default dan simpan dokumen.
 
 ```java
@@ -148,12 +148,12 @@ public static void addComboBox(Path outputFile) {
 }
 ```
 
-## Buat bidang kotak centang
+## Membuat bidang kotak centang
 
 Gunakan contoh ini ketika formulir memerlukan opsi benar atau salah seperti persetujuan atau pemilihan fitur.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) dan konfigurasikan tampilannya.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`CheckboxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) dan konfigurasikan tampilannya.
 1. Tambahkan kotak centang ke formulir dan simpan file output.
 
 ```java
@@ -171,12 +171,12 @@ public static void addCheckboxFieldToPdf(Path outputFile) {
 }
 ```
 
-## Buat bidang kotak daftar
+## Membuat bidang kotak daftar
 
 Gunakan contoh ini ketika Form harus menampilkan beberapa pilihan yang tersedia dalam daftar yang terlihat.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) dan tambahkan opsi yang tersedia.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`ListBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) dan tambahkan opsi yang tersedia.
 1. Tambahkan bidang ke formulir dan simpan dokumen.
 
 ```java
@@ -196,12 +196,12 @@ public static void addListBoxFieldToPdf(Path outputFile) {
 }
 ```
 
-## Buat bidang tanda tangan
+## Membuat bidang tanda tangan
 
 Gunakan contoh ini ketika dokumen harus menyisakan area yang terlihat untuk tanda tangan digital.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) di dalam persegi panjang yang diperlukan.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`SignatureField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) di dalam persegi panjang yang diperlukan.
 1. Tambahkan bidang ke formulir dan simpan PDF keluaran.
 
 ```java
@@ -217,12 +217,12 @@ public static void addSignatureField(Path outputFile) {
 }
 ```
 
-## Buat bidang barcode
+## Membuat bidang barcode
 
 Gunakan contoh ini ketika formulir harus menampilkan data yang dapat dibaca mesin di dalam bidang kode batang.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) dan tambahkan nilai barcode.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`BarcodeField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) dan tambahkan nilai barcode.
 1. Tambahkan bidang ke formulir dan simpan dokumen.
 
 ```java

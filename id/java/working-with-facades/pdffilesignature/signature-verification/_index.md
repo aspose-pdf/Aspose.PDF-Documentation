@@ -1,20 +1,20 @@
 ---
-title: Verifikasi Tanda Tangan
-linktitle: Verifikasi Tanda Tangan
+title: "Memverifikasi tanda tangan"
+linktitle: "Memverifikasi tanda tangan"
 type: docs
 weight: 90
 url: /id/java/signature-verification/
-description: Pelajari cara memverifikasi tanda tangan PDF di Java dengan facade PdfFileSignature.
-lastmod: "2026-09-29"
+description: "Pelajari cara memverifikasi tanda tangan PDF di Java dengan fasad PdfFileSignature."
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Verifikasi tanda tangan PDF di Java
+AlternativeHeadline: "Memverifikasi tanda tangan PDF di Java"
 Abstract: Pelajari cara memverifikasi tanda tangan PDF dengan Aspose.PDF for Java. Contoh Java memilih tanda tangan pertama yang tersedia, memvalidasi tanda tangan, dan memeriksa apakah tanda tangan tersebut mencakup seluruh dokumen.
 ---
-## Verifikasi tanda tangan PDF
+## Memverifikasi tanda tangan PDF
 
 Gunakan alur kerja ini ketika Anda membutuhkan validasi cepat terhadap PDF yang sudah ditandatangani.
 
@@ -24,7 +24,7 @@ Gunakan alur kerja ini ketika Anda membutuhkan validasi cepat terhadap PDF yang 
 2. Pilih nama tanda tangan yang ingin Anda periksa.
 3. Panggil `verifySignature` untuk memvalidasi tanda tangan.
 4. Panggil `coversWholeDocument` untuk memeriksa cakupan.
-5. Tutup objek facade.
+5. Tutup objek fasad.
 
 ### Contoh Java
 

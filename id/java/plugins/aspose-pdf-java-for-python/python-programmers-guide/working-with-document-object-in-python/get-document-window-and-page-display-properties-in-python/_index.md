@@ -1,11 +1,11 @@
 ---
-title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di Python
-linktitle: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di Python
+title: "Mendapatkan properti jendela dokumen dan tampilan halaman di Python"
+linktitle: "Mendapatkan properti jendela dokumen dan tampilan halaman di Python"
 type: docs
 weight: 30
 url: /id/java/get-document-window-and-page-display-properties-in-python/
 description: Pahami cara mengambil properti jendela dokumen dan tampilan halaman dari PDF di Python dengan Aspose.PDF untuk presentasi yang akurat.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 Untuk Mendapatkan Properti Jendela Dokumen dan Tampilan Halaman dari dokumen Pdf menggunakan **Aspose.PDF Java for Python**, cukup panggil kelas **GetDocumentWindow**.
 
@@ -51,8 +51,8 @@ print "PageLayout :-" + str(doc.getPageLayout())
 print "pageMode :-" + str(doc.getPageMode())
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-DownloadВ **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)**В dariВ semua situs coding sosial yang disebutkan di bawah ini:
+Download **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)** dari semua situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)

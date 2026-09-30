@@ -1,25 +1,25 @@
 ---
-title: Dapatkan dan Atur Properti Halaman PDF di Java
-linktitle: Mendapatkan dan Mengatur Properti Halaman
+title: "Mendapatkan dan mengatur properti halaman PDF di Java"
+linktitle: "Mendapatkan dan mengatur properti halaman"
 type: docs
 weight: 90
 url: /id/java/get-and-set-page-properties/
 description: Pelajari cara memeriksa properti halaman PDF seperti jumlah, kotak, rotasi, dan informasi warna di Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Periksa jumlah halaman, kotak, dan tipe warna dalam file PDF dengan Java
+AlternativeHeadline: "Memeriksa jumlah halaman, kotak, dan tipe warna dalam file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara memeriksa properti halaman menggunakan Aspose.PDF for Java. Ini mencakup membaca jumlah halaman, menghasilkan paragraf dan memeriksa jumlah yang dihasilkan sebelum menyimpan, mencetak semua nilai kotak halaman utama, dan mengidentifikasi tipe warna setiap halaman.
 ---
 Aspose.PDF for Java dapat memeriksa jumlah halaman, kotak halaman, rotasi, dan tipe warna halaman.
 
-## Dapatkan jumlah halaman
+## Mendapatkan jumlah halaman
 
 Gunakan contoh ini ketika Anda perlu membaca total jumlah halaman dalam PDF.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Baca ukuran koleksi halaman.
 1. Keluarkan jumlah total halaman.
 
@@ -31,11 +31,11 @@ public static void getPageCount(Path inputFile) {
 }
 ```
 
-## Dapatkan jumlah halaman sebelum menyimpan
+## Mendapatkan jumlah halaman sebelum menyimpan
 
 Gunakan contoh ini ketika Anda perlu mengetahui berapa banyak halaman yang akan dihasilkan konten sebelum menulis file.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan konten ke halaman.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan konten ke halaman.
 1. Proses paragraf untuk memaksa perhitungan tata letak.
 1. Baca jumlah halaman yang dihasilkan dan keluarkan.
 
@@ -52,11 +52,11 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 }
 ```
 
-## Dapatkan properti kotak halaman
+## Mendapatkan properti kotak halaman
 
 Gunakan contoh ini ketika Anda perlu memeriksa semua dimensi kotak utama dan nilai rotasi halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan akses halaman target.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan akses halaman target.
 1. Kumpulkan nilai kotak halaman ke dalam peta.
 1. Keluarkan dimensi dan informasi rotasi halaman.
 
@@ -88,12 +88,12 @@ public static void getPageProperties(Path inputFile) {
 }
 ```
 
-## Dapatkan tipe warna setiap halaman
+## Mendapatkan tipe warna setiap halaman
 
 Gunakan contoh ini ketika Anda perlu mengidentifikasi apakah halaman berwarna hitam putih, skala abu-abu, atau RGB.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasikan semua halaman dan baca setiap halaman [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan semua halaman dan baca setiap halaman [`ColorType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
 1. Ubah nilai enum menjadi teks yang dapat dibaca dan keluarkan hasilnya.
 
 ```java

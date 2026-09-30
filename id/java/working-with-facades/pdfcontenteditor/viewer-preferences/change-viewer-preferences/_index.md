@@ -1,18 +1,18 @@
 ---
-title: Ubah Preferensi Penampil
-linktitle: Ubah Preferensi Penampil
+title: "Mengubah preferensi penampil"
+linktitle: "Mengubah preferensi penampil"
 type: docs
 weight: 20
 url: /id/java/change-viewer-preferences/
 description: Pelajari cara mengubah preferensi penampil dokumen PDF di Java menggunakan fasad PdfContentEditor dalam Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Ubah preferensi penampil PDF di Java
+AlternativeHeadline: "Mengubah preferensi penampil PDF di Java"
 Abstract: Artikel ini menunjukkan cara mengaitkan PDF, memodifikasi nilai preferensi penampil saat ini, dan menyimpan dokumen yang diperbarui menggunakan fasad PdfContentEditor dalam Aspose.PDF for Java.
 ---
-## Ubah preferensi penampil
+## Mengubah preferensi penampil
 
-1. Ikat PDF sumber ke `PdfContentEditor` fasad.
+1. Ikat PDF sumber ke fasad `PdfContentEditor`.
 2. Baca nilai preferensi penampil saat ini.
 3. Gabungkan dengan flag tambahan yang diinginkan dan kirimkan hasilnya ke `changeViewerPreference(...)`.
 4. Simpan dokumen PDF yang diperbarui.

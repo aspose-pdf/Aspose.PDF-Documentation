@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /id/java/hello-world-example/
 description: Contoh ini menunjukkan cara membuat dokumen PDF sederhana dengan teks Hello World bergaya menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,13 +17,13 @@ Contoh "Hello World" adalah jalur terpendek untuk memahami alur kerja dasar pemb
 
 Contoh Java mengikuti langkah-langkah berikut:
 
-1. Buat sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objek.
-1. Tambahkan sebuah [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
-1. Buat sebuah [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) dengan teks `Hello, world!`.
-1. Atur [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), font, ukuran font, warna latar belakang, dan warna latar depan melalui fragmen [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Buat sebuah [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) untuk halaman.
-1. Tambahkan [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) ke [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Simpan PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah objek [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan sebuah [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
+1. Buat sebuah [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) dengan teks `Hello, world!`.
+1. Atur [`Position`](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), font, ukuran font, warna latar belakang, dan warna latar depan melalui fragmen [`TextState`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Buat sebuah [`TextBuilder`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) untuk halaman.
+1. Tambahkan [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) ke [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Simpan PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 Kode Java berikut didasarkan pada `GetStartedExamples.java`.
 

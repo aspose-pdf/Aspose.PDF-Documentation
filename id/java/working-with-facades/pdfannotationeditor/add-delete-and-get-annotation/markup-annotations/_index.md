@@ -1,16 +1,16 @@
 ---
-title: Anotasi Markup menggunakan Java
-linktitle: Anotasi Markup
+title: "Anotasi markup menggunakan Java"
+linktitle: "Anotasi markup"
 type: docs
 weight: 20
 url: /id/java/pdfannotationeditor-class/markup-annotations/
 description: Pelajari cara menambahkan, memeriksa, dan menghapus anotasi sorot, garis bawah, bergelombang, dan coret pada dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
 AlternativeHeadline: Bekerja dengan anotasi markup dalam file PDF menggunakan Java
 Abstract: Artikel ini menjelaskan cara membuat, memeriksa, dan menghapus anotasi markup teks dalam dokumen PDF menggunakan Java. Ini mencakup anotasi sorot, garis bawah, bergelombang, dan coret berdasarkan contoh Java di repositori.
 ---
-## Tambahkan anotasi sorot, garis bawah, bergelombang, atau coret
+## Menambahkan anotasi sorot, garis bawah, bergelombang, atau coret
 
 1. Buka file PDF input dan pilih area halaman tempat anotasi markup harus muncul.
 2. Buat jenis anotasi yang diperlukan dan konfigurasikan metadata atau properti visualnya.

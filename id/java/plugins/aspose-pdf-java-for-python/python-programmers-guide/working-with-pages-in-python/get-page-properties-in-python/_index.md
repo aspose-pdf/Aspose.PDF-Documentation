@@ -1,11 +1,11 @@
 ---
-title: Dapatkan Properti Halaman dalam Python
-linktitle: Dapatkan Properti Halaman dalam Python
+title: "Mendapatkan properti halaman dalam Python"
+linktitle: "Mendapatkan properti halaman dalam Python"
 type: docs
 weight: 50
 url: /id/java/get-page-properties-in-python/
 description: Pelajari cara mengakses properti halaman tertentu dalam dokumen PDF di Python menggunakan Aspose.PDF untuk kontrol yang detail.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 Untuk mendapatkan properti halaman dokumen Pdf menggunakan **Aspose.PDF Java for Python**, cukup panggil kelas **GetPageProperties**.
 
@@ -32,7 +32,7 @@ print "Rotate :-" + pdf_page.getRotate()
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
 Unduh **Dapatkan Properti Halaman (Aspose.PDF)** dari salah satu situs sosial coding yang disebutkan di bawah:
 

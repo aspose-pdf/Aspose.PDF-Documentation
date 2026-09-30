@@ -1,11 +1,11 @@
 ---
-title: Membagi File PDF dalam Java
+title: "Membagi file PDF dalam Java"
 linktitle: Membagi file PDF
 type: docs
 weight: 60
 url: /id/java/split-pdf/
 description: Pelajari cara membagi PDF menjadi file PDF satu halaman dalam Java menggunakan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,24 +15,24 @@ Abstract: Artikel ini menunjukkan cara membagi dokumen PDF menjadi file PDF satu
 ---
 Membagi PDF menjadi file terpisah berguna ketika Anda perlu mengekspor setiap halaman untuk peninjauan, penyimpanan, atau pemrosesan lanjutan.
 
-## Contoh Langsung
+## Contoh langsung
 
 [Aspose.PDF Splitter](https://products.aspose.app/pdf/splitter) adalah aplikasi online gratis untuk menguji pemisahan PDF di peramban.
 
 [![Aspose Split PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-Contoh ini menggunakan [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) kelas untuk membuka file PDF dan mengiterasi halamannya. Untuk setiap [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), ia membuat dokumen baru, menambahkan halaman itu, dan menyimpan hasilnya sebagai file PDF terpisah.
+Contoh ini menggunakan kelas [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) untuk membuka file PDF dan mengiterasi halamannya. Untuk setiap [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), ia membuat dokumen baru, menambahkan halaman itu, dan menyimpan hasilnya sebagai file PDF terpisah.
 
 Untuk memisahkan PDF menjadi file halaman individual dalam Java:
 
-1. Buka PDF sumber dengan [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
-1. Iterasikan melalui [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) objek yang dikembalikan oleh `document.getPages()`.
-1. Buat yang kosong baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) untuk setiap halaman.
-1. Tambahkan yang saat ini [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke yang baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Simpan yang baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dengan nama file unik.
-1. Tutup keduanya [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objek ketika pemrosesan selesai.
+1. Buka PDF sumber dengan konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui objek [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) yang dikembalikan oleh `document.getPages()`.
+1. Buat objek [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) baru yang kosong untuk setiap halaman.
+1. Tambahkan [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) saat ini ke [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) baru.
+1. Simpan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) baru dengan nama file unik.
+1. Tutup kedua objek [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ketika pemrosesan selesai.
 
-## Pisahkan PDF menjadi file satu halaman
+## Memisahkan PDF menjadi file satu halaman
 
 Contoh Java berikut didasarkan pada `SplitDocumentExamples.java` dan menyimpan halaman sebagai `Page_1.pdf`, `Page_2.pdf`, dan seterusnya.
 

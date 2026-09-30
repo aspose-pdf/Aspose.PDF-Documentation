@@ -1,21 +1,21 @@
 ---
-title: Putar Teks PDF di Java
-linktitle: Putar Teks dalam PDF
+title: "Memutar teks PDF di Java"
+linktitle: "Memutar teks dalam PDF"
 type: docs
 weight: 50
 url: /id/java/rotate-text-inside-pdf/
 description: Pelajari cara memutar fragmen teks dan paragraf di dalam dokumen PDF dengan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Putar fragmen teks dan paragraf dalam dokumen PDF dengan Java
+AlternativeHeadline: "Memutar fragmen teks dan paragraf dalam dokumen PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara memutar teks dalam dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini menunjukkan cara memutar fragmen teks individu, membuat paragraf yang berisi baris yang diputar, dan memutar paragraf teks lengkap untuk berbagai skenario tata letak.
 ---
 Aspose.PDF for Java memungkinkan Anda memutar fragmen teks individu serta seluruh paragraf teks.
 
-## Putar fragmen teks individu
+## Memutar fragmen teks individu
 
 Gunakan contoh ini ketika beberapa fragmen teks pada baris yang sama harus menggunakan sudut rotasi yang berbeda.
 
@@ -55,7 +55,7 @@ public static void rotateTextInsidePdf1(Path outputFile) {
    }
 ```
 
-## Putar baris di dalam paragraf teks
+## Memutar baris di dalam paragraf teks
 
 Gunakan contoh ini ketika sebuah paragraf harus berisi baris normal dan baris yang diputar.
 
@@ -96,7 +96,7 @@ public static void rotateTextInsidePdf2(Path outputFile) {
 }
 ```
 
-## Putar fragmen paragraf tanpa posisi eksplisit
+## Memutar fragmen paragraf tanpa posisi eksplisit
 
 Gunakan contoh ini ketika teks berputar harus ditambahkan melalui aliran paragraf halaman normal.
 
@@ -132,12 +132,12 @@ public static void rotateTextInsidePdf3(Path outputFile) {
 }
 ```
 
-## Putar paragraf lengkap
+## Memutar paragraf lengkap
 
 Gunakan contoh ini ketika seluruh blok paragraf harus diputar sementara setiap baris tetap mempertahankan gaya yang sama.
 
 1. Buat dokumen PDF baru dan tambahkan halaman.
-1. Bangun beberapa `TextParagraph` objek dengan rotasi pada tingkat paragraf.
+1. Bangun beberapa objek `TextParagraph` dengan rotasi pada tingkat paragraf.
 1. Buat baris dengan metode pembantu bersama, tambahkan mereka, dan simpan dokumen.
 
 ```java

@@ -1,13 +1,13 @@
 ---
-title: Gabungkan File PDF di PHP
-linktitle: Gabungkan File PDF di PHP
+title: "Menggabungkan file PDF di PHP"
+linktitle: "Menggabungkan file PDF di PHP"
 type: docs
 weight: 10
 url: /id/java/concatenate-pdf-files-in-php/
 description: Pelajari cara menggabungkan beberapa file PDF menjadi satu dokumen di PHP menggunakan Aspose.PDF untuk manajemen dokumen yang lebih mudah.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Gabungkan File PDF
+## Aspose.PDF - gabungkan file PDF
 
 Untuk menggabungkan file PDF menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **ConcatenatePdfFiles**.
 
@@ -31,7 +31,7 @@ print "New document has been saved, please check the output file" . PHP_EOL;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
 Unduh **Gabungkan File PDF (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 

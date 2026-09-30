@@ -1,11 +1,11 @@
 ---
-title: Manajemen Hak Penggunaan
-linktitle: Manajemen Hak Penggunaan
+title: "Manajemen hak penggunaan"
+linktitle: "Manajemen hak penggunaan"
 type: docs
 weight: 100
 url: /id/java/usage-rights-management/
 description: Tinjau cakupan Java saat ini untuk manajemen hak penggunaan PDF dengan PdfFileSignature.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"

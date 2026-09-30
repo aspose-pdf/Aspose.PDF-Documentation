@@ -1,25 +1,25 @@
 ---
-title: Konversi Format File Lain ke PDF dengan Java
-linktitle: Konversi format file lain ke PDF
+title: "Mengonversi Format file lain ke PDF dengan Java"
+linktitle: "Mengonversi format file lain ke PDF"
 type: docs
 weight: 80
 url: /id/java/convert-other-files-to-pdf/
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 description: Pelajari cara mengonversi file EPUB, Markdown, PCL, XPS, PostScript, XML, XSL-FO, OFD, dan TeX ke PDF dalam Java dengan Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Cara Mengonversi format file lain ke PDF dalam Java
+AlternativeHeadline: "Mengonversi format file lain ke PDF dalam Java"
 Abstract: Artikel ini menjelaskan cara mengonversi banyak format file sumber ke PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup alur kerja konversi EPUB, Markdown, OFD, PCL, PostScript, EPS, TeX, teks, XML, XPS, dan XSL-FO menggunakan opsi pemuatan khusus format serta langkah pra‑pemrosesan bila diperlukan.
 ---
 Aspose.PDF for Java mendukung konversi dari format dokumen, markup, dan deskripsi halaman ke PDF.
 
-## Konversi OFD ke PDF
+## Mengonversi OFD ke PDF
 
 Gunakan contoh ini ketika dokumen OFD harus dikonversi menjadi PDF.
 
-1. Buka sumber OFD dengan memberikan jalur file dan [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber OFD dengan memberikan jalur file dan [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF mengurai paket OFD menjadi model dokumen PDF.
 1. Simpan PDF yang dihasilkan ke jalur output target.
 
@@ -32,11 +32,11 @@ public static void convertOfdToPdf(Path inputFile, Path outputFile) {
    }
 ```
 
-## Konversi TeX ke PDF
+## Mengonversi TeX ke PDF
 
 Gunakan contoh ini ketika konten TeX harus dirender langsung sebagai PDF.
 
-1. Buka sumber TeX dengan melewatkan path file dan [`TeXLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber TeX dengan melewatkan path file dan [`TeXLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF menafsirkan markup TeX dan membangun tata letak PDF saat pemuatan.
 1. Simpan PDF yang dihasilkan.
 
@@ -49,11 +49,11 @@ public static void convertTexToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi PostScript ke PDF
+## Mengonversi PostScript ke PDF
 
 Gunakan contoh ini ketika file PostScript harus dikonversi menjadi dokumen PDF.
 
-1. Buka sumber PostScript dengan [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) di [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber PostScript dengan [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) di konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF menerjemahkan aliran deskripsi halaman PostScript menjadi model dokumen PDF.
 1. Simpan file PDF yang telah dikonversi.
 
@@ -66,7 +66,7 @@ public static void convertPostScripToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi EPS ke PDF
+## Mengonversi EPS ke PDF
 
 Gunakan contoh ini ketika file Encapsulated PostScript harus dikonversi ke PDF.
 
@@ -83,11 +83,11 @@ public static void convertEpsToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi EPUB ke PDF
+## Mengonversi EPUB ke PDF
 
 Gunakan contoh ini ketika sebuah eBook EPUB harus dikonversi menjadi PDF.
 
-1. Buka sumber EPUB dengan melewatkan jalur file dan [`EpubLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber EPUB dengan melewatkan jalur file dan [`EpubLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF memuat struktur ebook dan mengubahnya menjadi halaman PDF.
 1. Simpan PDF yang dikonversi.
 
@@ -100,11 +100,11 @@ public static void convertEpubToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Ubah Markdown menjadi PDF
+## Mengubah Markdown menjadi PDF
 
 Gunakan contoh ini ketika konten Markdown harus dirender dan disimpan sebagai PDF.
 
-1. Buka sumber Markdown dengan melewatkan jalur file dan [`MdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mdloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber Markdown dengan melewatkan jalur file dan [`MdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mdloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF menginterpretasikan konten Markdown dan merendernya menjadi konten halaman PDF.
 1. Simpan file PDF output.
 
@@ -117,7 +117,7 @@ public static void convertMdToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi teks ke PDF dengan alur kerja sederhana
+## Mengonversi teks ke PDF dengan alur kerja sederhana
 
 Gunakan contoh ini ketika file teks biasa harus segera dikonversi ke PDF.
 
@@ -139,7 +139,7 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
 }
 ```
 
-## Konversi teks ke PDF dengan opsi lanjutan
+## Mengonversi teks ke PDF dengan opsi lanjutan
 
 Gunakan contoh ini ketika teks biasa harus dikonversi dengan opsi tata letak atau enkoding tambahan.
 
@@ -180,12 +180,12 @@ public static void convertTxtToPdf(Path inputFile, Path outputFile) throws Excep
 }
 ```
 
-## Konversi PCL ke PDF
+## Mengonversi PCL ke PDF
 
 Gunakan contoh ini ketika aliran cetak PCL harus dikonversi menjadi PDF.
 
 1. Buat [`PclLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pclloadoptions/) dan aktifkan penekanan kesalahan parsing ketika perilaku impor yang lunak diperlukan.
-1. Buka sumber PCL dengan melewatkan jalur file dan opsi pemuatan ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber PCL dengan melewatkan jalur file dan opsi pemuatan ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Simpan hasil sebagai PDF.
 
 ```java
@@ -199,13 +199,13 @@ public static void convertPclToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi XML ke PDF melalui XSLT dan HTML
+## Mengonversi XML ke PDF melalui XSLT dan HTML
 
 Gunakan contoh ini ketika data XML harus diubah sebelum pembuatan PDF akhir.
 
 1. Transformasikan sumber XML dengan file XSLT menjadi file HTML sementara dengan memanggil metode transformasi khusus.
 1. Masukkan file HTML yang dihasilkan ke dalam fungsi konversi HTML-ke-PDF yang ada sehingga PDF akhir menggunakan standar [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) alur kerja.
-1. Hapus file HTML sementara di `finally` blok setelah konversi selesai.
+1. Hapus file HTML sementara dalam blok `finally` setelah konversi selesai.
 1. Simpan file PDF yang dihasilkan.
 
 ```java
@@ -221,11 +221,11 @@ public static void convertXmlToPdf(Path xsltFile, Path xmlFile, Path outputFile)
 }
 ```
 
-## Ubah XPS ke PDF
+## Mengubah XPS ke PDF
 
 Gunakan contoh ini ketika dokumen XPS harus dikonversi menjadi PDF.
 
-1. Buka sumber XPS dengan melewatkan jalur file dan [`XpsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpsloadoptions/) ke dalam [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) konstruktor.
+1. Buka sumber XPS dengan melewatkan jalur file dan [`XpsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpsloadoptions/) ke dalam konstruktor [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Biarkan Aspose.PDF menginterpretasikan deskripsi halaman XPS selama pemuatan dokumen.
 1. Simpan PDF yang dikonversi.
 
@@ -238,7 +238,7 @@ public static void convertXpsToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Konversi XSL-FO ke PDF
+## Mengonversi XSL-FO ke PDF
 
 Gunakan contoh ini ketika konten XSL-FO harus dirender sebagai PDF.
 
@@ -258,7 +258,7 @@ public static void convertXslFoToPdf(Path xsltFile, Path xmlFile, Path outputFil
 }
 ```
 
-## Ubah XML menjadi HTML menengah
+## Mengubah XML menjadi HTML menengah
 
 Gunakan metode ini ketika data XML harus diubah menjadi HTML sebelum langkah konversi PDF akhir.
 

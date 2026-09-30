@@ -1,18 +1,18 @@
 ---
-title: Dapatkan Preferensi Penampil
-linktitle: Dapatkan Preferensi Penampil
+title: "Mendapatkan preferensi penampil"
+linktitle: "Mendapatkan preferensi penampil"
 type: docs
 weight: 10
 url: /id/java/get-viewer-preferences/
 description: Pelajari cara membaca preferensi penampil dokumen PDF dalam Java menggunakan fasad PdfContentEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Baca preferensi penampil PDF dalam Java
+AlternativeHeadline: "Membaca preferensi penampil PDF dalam Java"
 Abstract: Artikel ini menunjukkan cara mengikat PDF dan mencetak nilai preferensi penampil saat ini menggunakan fasad PdfContentEditor di Aspose.PDF for Java.
 ---
-## Dapatkan preferensi penampil saat ini
+## Mendapatkan preferensi penampil saat ini
 
-1. Mengikat PDF sumber ke `PdfContentEditor` fasade.
+1. Ikat PDF sumber ke `PdfContentEditor` fasade.
 2. Panggil `getViewerPreference()` untuk membaca nilai saat ini.
 3. Periksa atau cetak flag preferensi yang dikembalikan.
 

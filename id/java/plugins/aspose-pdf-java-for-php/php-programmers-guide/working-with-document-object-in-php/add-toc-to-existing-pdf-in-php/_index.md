@@ -1,13 +1,13 @@
 ---
-title: Tambahkan TOC ke PDF yang Ada di PHP
-linktitle: Tambahkan TOC ke PDF yang Ada di PHP
+title: "Menambahkan TOC ke PDF yang ada di PHP"
+linktitle: "Menambahkan TOC ke PDF yang ada di PHP"
 type: docs
 weight: 20
 url: /id/java/add-toc-to-existing-pdf-in-php/
 description: Jelajahi cara menambahkan daftar isi (TOC) ke dokumen PDF yang ada dalam PHP dengan Aspose.PDF untuk navigasi yang lebih baik.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Tambahkan TOC
+## Aspose.PDF - tambahkan TOC
 
 Untuk menambahkan TOC dalam dokumen Pdf menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **AddToc**.
 
@@ -67,7 +67,7 @@ print "Added TOC Successfully, please check the output file.";
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
 Unduh **Add TOC (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 

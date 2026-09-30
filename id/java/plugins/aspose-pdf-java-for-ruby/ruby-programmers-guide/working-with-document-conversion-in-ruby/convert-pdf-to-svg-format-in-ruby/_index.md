@@ -1,13 +1,13 @@
 ---
-title: Konversi PDF ke Format SVG dalam Ruby
-linktitle: Konversi PDF ke Format SVG dalam Ruby
+title: "Mengonversi PDF ke Format SVG dalam Ruby"
+linktitle: "Mengonversi PDF ke Format SVG dalam Ruby"
 type: docs
 weight: 50
 url: /id/java/convert-pdf-to-svg-format-in-ruby/
 description: Temukan cara mengonversi file PDF ke format SVG menggunakan Ruby dan Aspose.PDF, memungkinkan grafik vektor yang dapat diskalakan dan dapat diedit.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Konversi PDF ke SVG
+## Aspose.PDF - konversi PDF ke SVG
 
 Untuk mengonversi PDF ke format SVG menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **PdfToSvg**.
 
@@ -37,8 +37,8 @@ pdf.save(data_dir + "Output.svg", save_options)
 puts "Document has been converted successfully"
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh\u0412\u00A0**Convert PDF to SVG Format (Aspose.PDF)**\u0412\u00A0dari\u0412\u00A0salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Convert PDF to SVG Format (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftosvg.rb)

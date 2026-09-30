@@ -1,19 +1,19 @@
 ---
-title: Ubah Ukuran Konten Halaman PDF
-linktitle: Ubah Ukuran Konten Halaman PDF
+title: "Mengubah ukuran konten halaman PDF"
+linktitle: "Mengubah ukuran konten halaman PDF"
 type: docs
 weight: 30
 url: /id/java/resize-pdf-page-contents/
 description: Ubah ukuran konten pada halaman PDF yang dipilih dalam Java dengan antarmuka PdfFileEditor.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ubah ukuran konten halaman yang ada dalam dokumen PDF dengan Java
+AlternativeHeadline: "Mengubah ukuran konten halaman yang ada dalam dokumen PDF dengan Java"
 Abstract: Pelajari cara mengubah ukuran konten halaman dengan Aspose.PDF for Java. Contoh Java menggunakan PdfFileEditor untuk menargetkan halaman tertentu, menerapkan lebar dan tinggi konten baru, dan menghentikan alur kerja jika operasi pengubahan ukuran gagal.
 ---
-## Ubah ukuran konten halaman PDF
+## Mengubah ukuran konten halaman PDF
 
 Contoh Java mengubah ukuran area konten pada halaman 1 dan 3 serta memeriksa nilai boolean yang dikembalikan.
 

@@ -1,11 +1,11 @@
 ---
-title: Tambahkan TOC ke PDF yang Ada di Python
-linktitle: Tambahkan TOC ke PDF yang Ada di Python
+title: "Menambahkan TOC ke PDF yang ada di Python"
+linktitle: "Menambahkan TOC ke PDF yang ada di Python"
 type: docs
 weight: 20
 url: /id/java/add-toc-to-existing-pdf-in-python/
 description: Pelajari cara menambahkan Daftar Isi (TOC) ke dokumen PDF yang ada dalam Python dengan Aspose.PDF untuk navigasi yang mudah.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 Untuk menambahkan TOC dalam dokumen PDF menggunakan **Aspose.PDF Java for Python**, cukup panggil kelas **AddToc**.
 
@@ -61,8 +61,8 @@ doc.save(self.dataDir + "TOC.pdf")
 print "Added TOC Successfully, please check the output file."
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Add TOC (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Add TOC (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)

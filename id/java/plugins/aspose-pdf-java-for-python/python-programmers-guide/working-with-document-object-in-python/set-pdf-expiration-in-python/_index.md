@@ -1,11 +1,11 @@
 ---
-title: Atur Kedaluwarsa PDF di Python
-linktitle: Atur Kedaluwarsa PDF di Python
+title: "Mengatur kedaluwarsa PDF di Python"
+linktitle: "Mengatur kedaluwarsa PDF di Python"
 type: docs
 weight: 80
 url: /id/java/set-pdf-expiration-in-python/
 description: Pelajari cara mengatur tanggal kedaluwarsa untuk file PDF di Python menggunakan Aspose.PDF untuk akses dokumen yang sensitif waktu.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 Untuk mengatur kedaluwarsa dokumen PDF menggunakan **Aspose.PDF Java for Python**, cukup panggil kelas **SetExpiration**.
 
@@ -27,8 +27,8 @@ doc.save(self.dataDir + "set_expiration.pdf");
 print "Update document information, please check output file."
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-DownloadВ **Set PDF Expiration (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Download **Set PDF Expiration (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)

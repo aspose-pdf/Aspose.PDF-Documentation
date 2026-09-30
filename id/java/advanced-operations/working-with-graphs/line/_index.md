@@ -1,26 +1,26 @@
 ---
-title: Tambahkan Bentuk Garis ke PDF dalam Java
-linktitle: Tambahkan Garis
+title: "Menambahkan bentuk garis ke PDF dalam Java"
+linktitle: "Menambahkan garis"
 type: docs
 weight: 40
 url: /id/java/add-line/
 description: Pelajari cara menggambar bentuk garis dan garis bergaya dalam file PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Gambar bentuk garis dalam file PDF menggunakan Java
+AlternativeHeadline: "Menggambar bentuk garis dalam file PDF menggunakan Java"
 Abstract: Artikel ini menunjukkan cara menambahkan bentuk garis ke dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup pembuatan garis dari array koordinat, penerapan gaya garis putus-putus dan warna, serta menggambar garis melintasi seluruh area halaman.
 ---
-## Tambahkan garis putus-putus
+## Menambahkan garis putus-putus
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Tambahkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
-1. Buat [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container dan tambahkan ke halaman.
-1. Buat [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) bentuk dan konfigurasikan koordinatnya.
-1. Tambahkan [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) ke [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) wadah.
-1. Simpan PDF output [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
+1. Buat [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container dan tambahkan ke halaman.
+1. Buat [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) bentuk dan konfigurasikan koordinatnya.
+1. Tambahkan [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) ke [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) wadah.
+1. Simpan PDF output [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addLine(Path outputFile) {
@@ -39,18 +39,18 @@ public static void addLine(Path outputFile) {
 }
 ```
 
-## Tambahkan garis berwarna bertitik atau putus-putus
+## Menambahkan garis berwarna bertitik atau putus-putus
 
 `addDottedDashedLine` menggunakan koordinat dan pengaturan dash yang sama, tetapi juga menerapkan `Color.getRed()`.
 
-## Gambar garis melintasi halaman
+## Menggambar garis melintasi halaman
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Tambahkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
-1. Buat [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container dan tambahkan ke halaman.
-1. Buat [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) bentuk dan konfigurasikan koordinatnya.
-1. Tambahkan [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) ke [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) wadah.
-1. Simpan PDF output [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
+1. Buat [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container dan tambahkan ke halaman.
+1. Buat [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) bentuk dan konfigurasikan koordinatnya.
+1. Tambahkan [`Line`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) ke [`Graph`](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) wadah.
+1. Simpan PDF output [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void drawLineAcrossPage(Path outputFile) {

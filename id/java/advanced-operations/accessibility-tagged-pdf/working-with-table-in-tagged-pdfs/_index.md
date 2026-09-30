@@ -1,22 +1,22 @@
 ---
-title: Bekerja dengan Tabel dalam Tagged PDFs di Java
-linktitle: Bekerja dengan Tabel dalam Tagged PDFs
+title: "Bekerja dengan tabel dalam Tagged PDFs di Java"
+linktitle: "Bekerja dengan tabel dalam Tagged PDFs"
 type: docs
 weight: 40
 url: /id/java/working-with-table-in-tagged-pdfs/
 description: Pelajari cara bekerja dengan tabel yang dapat diakses dalam tagged PDFs di Java dengan Aspose.PDF, termasuk struktur tabel, rentang sel, penataan, pengaturan baris, dan penempatan.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 API tabel bertag memungkinkan Anda membuat struktur tabel yang dapat diakses dengan header eksplisit, baris isi, footer, dan semantik per-sel.
 
-## Buat tabel ber‑tag
+## Membuat tabel ber‑tag
 
 Gunakan contoh ini saat Anda membutuhkan tabel aksesibel dasar dengan header, body, footer, dan metadata ringkasan tabel.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah [`TableElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
 1. Konfigurasikan batas tabel dan isi kontennya dengan metode pembantu bersama.
 1. Atur atribut ringkasan tabel dan simpan dokumen.
 
@@ -47,7 +47,7 @@ public static void createTable(Path outputFile) {
 
 Contoh ini menerapkan format tingkat tabel seperti warna, batas, ukuran kolom, baris yang berulang, dan perataan.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen tabel.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen tabel.
 1. Konfigurasikan pengaturan visual dan tata letak tingkat tabel.
 1. Isi tabel dan simpan dokumen.
 
@@ -92,7 +92,7 @@ public static void styleTable(Path outputFile) {
 
 Gunakan contoh ini ketika setiap baris harus memiliki metadata, batas, pengaturan tinggi, dan nilai default sel masing‑masing.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan bagian tabel untuk header, body, dan footer.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan bagian tabel untuk header, body, dan footer.
 1. Buat baris dan konfigurasikan pengaturan tingkat baris seperti border, padding, tinggi, dan perilaku halaman.
 1. Isi baris dengan sel dan simpan dokumen.
 
@@ -152,7 +152,7 @@ public static void styleTableRow(Path outputFile) {
 
 Contoh ini menggunakan metode bantu bersama untuk membuat tabel dengan pemformatan pada tingkat sel dan sel yang digabungkan.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Tambahkan elemen tabel dan isi melalui metode pembantu dengan gaya sel diaktifkan.
 1. Simpan dokumen.
 
@@ -172,12 +172,12 @@ public static void styleTableCell(Path outputFile) {
 }
 ```
 
-## Sesuaikan posisi tabel bertanda
+## Menyesuaikan posisi tabel bertanda
 
 Gunakan contoh ini ketika tabel ber-tag harus diposisikan secara eksplisit di halaman.
 
-1. Buat PDF ber-tag baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen tabel.
-1. Konfigurasikan [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) untuk tabel.
+1. Buat PDF ber-tag baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan elemen tabel.
+1. Konfigurasikan [`PositionSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) untuk tabel.
 1. Terapkan pengaturan posisi, isi tabel, dan simpan dokumen.
 
 ```java
@@ -206,7 +206,7 @@ public static void adjustTablePosition(Path outputFile) {
 }
 ```
 
-## Isi tabel ber‑tag dengan konten terstruktur
+## Mengisi tabel ber‑tag dengan konten terstruktur
 
 Metode pembantu ini membuat baris header, badan, dan footer untuk sebuah tabel, dan secara opsional menerapkan gaya sel serta rentang.
 

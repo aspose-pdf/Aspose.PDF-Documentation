@@ -1,18 +1,18 @@
 ---
-title: Hapus Aksi Field
-linktitle: Hapus Aksi Field
+title: "Menghapus aksi Field"
+linktitle: "Menghapus aksi Field"
 type: docs
 weight: 50
 url: /id/java/remove-field-action/
-description: Pelajari cara menghapus aksi field dari field formulir PDF dalam Java menggunakan fasad FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara menghapus aksi bidang dari bidang formulir PDF dalam Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Hapus aksi field formulir PDF dalam Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, menghapus aksi yang terkait dengan field tertentu, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Menghapus aksi bidang formulir PDF dalam Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF yang ada, menghapus aksi yang terkait dengan bidang tertentu, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
-## Hapus aksi field
+## Menghapus aksi bidang
 
-1. Ikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Panggil `removeFieldAction(...)` untuk bidang target.
 3. Simpan dokumen yang diperbarui.
 

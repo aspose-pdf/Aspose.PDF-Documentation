@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /id/java/licensing/
 description: Aspose.PDF for Python mengundang pelanggannya untuk mendapatkan lisensi Classic. Juga dapat menggunakan lisensi terbatas untuk menjelajahi produk dengan lebih baik.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -36,14 +36,14 @@ Lisensi dapat dimuat dari file atau objek aliran. Cara termudah untuk mengatur l
 
 Lisensi adalah file XML teks biasa yang berisi detail seperti nama produk, jumlah pengembang yang diberi lisensi, tanggal kedaluwarsa langganan, dan sebagainya. File tersebut ditandatangani secara digital, jadi jangan memodifikasi file; bahkan penambahan baris baru secara tidak sengaja ke dalam file akan membuatnya tidak valid.
 
-Anda harus menetapkan lisensi sebelum melakukan operasi apa pun dengan dokumen. Anda hanya perlu menetapkan lisensi satu kali per aplikasi atau proses.
+Tetapkan lisensi sebelum melakukan operasi apa pun pada dokumen. Lisensi cukup ditetapkan satu kali per aplikasi atau proses.
 
 Lisensi dapat dimuat dari stream atau file di lokasi berikut:
 
 1. Jalur eksplisit.
-1. Folder yang berisi aspose-pdf-xx.x.jar.
+1. Folder yang berisi `aspose-pdf-xx.x.jar`.
 
-Gunakan metode License.setLicense untuk memberi lisensi pada komponen. Seringkali cara termudah untuk mengatur lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan Aspose.PDF.jar dan menentukan hanya nama file tanpa jalur seperti yang ditunjukkan pada contoh berikut:
+Gunakan metode `License.setLicense` untuk memberi lisensi pada komponen. Seringkali cara termudah untuk mengatur lisensi adalah dengan menempatkan file lisensi di folder yang sama dengan Aspose.PDF.jar dan menentukan hanya nama file tanpa jalur seperti yang ditunjukkan pada contoh berikut:
 
 {{% alert color="primary" %}}
 
@@ -73,7 +73,7 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 license.setLicense(new java.io.FileInputStream("Aspose.Pdf.Java.lic"));
 ```
 
-### Validasi Lisensi
+### Memvalidasi lisensi
 
 Dimungkinkan untuk memvalidasi apakah lisensi telah diatur dengan benar atau tidak. Kelas Document memiliki metode isLicensed yang akan mengembalikan true jika lisensi telah diatur dengan benar.
 
@@ -88,9 +88,9 @@ if (com.aspose.pdf.Document.isLicensed()) {
 
 ## Lisensi Metered
 
-Aspose.PDF memungkinkan pengembang menerapkan kunci meter. Ini merupakan mekanisme lisensi baru. Mekanisme lisensi baru akan digunakan bersama dengan metode lisensi yang ada. Pelanggan yang ingin ditagih berdasarkan penggunaan fitur API dapat menggunakan lisensi meter.В Untuk detail lebih lanjut, silakan merujuk keВ [FAQ Lisensi Metered](https://purchase.aspose.com/faqs/licensing/metered)В bagian.
+Aspose.PDF memungkinkan pengembang menerapkan kunci meter. Ini merupakan mekanisme lisensi baru. Mekanisme lisensi baru akan digunakan bersama dengan metode lisensi yang ada. Pelanggan yang ingin ditagih berdasarkan penggunaan fitur API dapat menggunakan lisensi meter.В Untuk detail lebih lanjut, silakan merujuk ke [FAQ Lisensi Metered](https://purchase.aspose.com/faqs/licensing/metered) bagian.
 
-Sebuah kelas baruВ [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered)В telah diperkenalkan untuk menerapkan kunci bermeter. Berikut adalah contoh kode yang menunjukkan cara mengatur kunci publik dan privat bermeter.
+Sebuah kelas baru [`Metered`](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered) telah diperkenalkan untuk menerapkan kunci bermeter. Berikut adalah contoh kode yang menunjukkan cara mengatur kunci publik dan privat bermeter.
 
 ```java
 String publicKey = "";
@@ -105,7 +105,7 @@ License lic = new License();
 System.out.println("License is set = " + lic.isLicensed());
 ```
 
-## Menggunakan Beberapa Produk dari Aspose
+## Menggunakan beberapa produk dari Aspose
 
 Jika Anda menggunakan beberapa produk Aspose dalam aplikasi Anda, misalnya Aspose.PDF dan Aspose.Words, berikut beberapa tips berguna.
 

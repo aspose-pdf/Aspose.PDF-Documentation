@@ -1,13 +1,13 @@
 ---
-title: Impor Data XFDF
-linktitle: Impor Data XFDF
+title: "Mengimpor data XFDF"
+linktitle: "Mengimpor data XFDF"
 type: docs
 weight: 20
 url: /id/java/import-xfdf-data/
 description: Pelajari cara mengimpor data formulir XFDF ke dalam formulir PDF dengan Java menggunakan fasad Form di Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Impor data AcroForm dari XFDF dengan Java
+AlternativeHeadline: "Mengimpor data AcroForm dari XFDF dengan Java"
 Abstract: Artikel ini menunjukkan cara mengaitkan formulir PDF, mengimpor nilai bidang dari aliran XFDF, dan menyimpan dokumen yang diperbarui dengan fasad Form di Aspose.PDF for Java.
 ---
 Gunakan `FormExamples.importXfdf(...)` untuk mengisi formulir dari data XFDF.

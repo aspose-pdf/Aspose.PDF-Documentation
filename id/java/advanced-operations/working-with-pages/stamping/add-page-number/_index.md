@@ -1,26 +1,26 @@
 ---
-title: Tambahkan Nomor Halaman ke PDF dalam Java
-linktitle: Menambahkan Nomor Halaman
+title: "Menambahkan nomor halaman ke PDF dalam Java"
+linktitle: "Menambahkan nomor halaman"
 type: docs
 weight: 30
 url: /id/java/add-page-number/
 description: Pelajari cara menambahkan stempel nomor halaman ke dokumen PDF dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan stempel nomor halaman ke file PDF dengan Java
+AlternativeHeadline: "Menambahkan stempel nomor halaman ke file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menambahkan stempel nomor halaman menggunakan Aspose.PDF for Java. Artikel ini mencakup penomoran halaman standar dengan gaya font khusus dan penomoran angka Romawi dengan nomor awal yang dapat dikonfigurasi.
 ---
-## Tambahkan stempel nomor halaman
+## Menambahkan stempel nomor halaman
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) objek.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat objek [`PageNumberStamp`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Konfigurasikan penempatan stempel dan opsi penomoran yang diperlukan.
-1. Atur opsi pemformatan teks yang diperlukan, termasuk [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) dan [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. Tambahkan yang dikonfigurasi [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) ke target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Simpan PDF yang diperbarui [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Atur opsi pemformatan teks yang diperlukan, termasuk [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) dan [`Color`](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. Tambahkan yang dikonfigurasi [`PageNumberStamp`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) ke [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target.
+1. Simpan PDF yang diperbarui [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addPageNumStamp(Path inputFile, Path outputFile) {

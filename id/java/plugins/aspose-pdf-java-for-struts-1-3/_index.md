@@ -5,9 +5,9 @@ type: docs
 weight: 10
 url: /id/java/aspose-pdf-java-for-struts-1-3/
 description: Integrasikan Aspose.PDF for Java dengan Struts 1.3. Permudah pembuatan dan manajemen PDF dalam aplikasi Struts Anda.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Kerangka Web Apache Struts
+## Kerangka web Apache Struts
 
 Kerangka web Apache Struts adalah solusi open-source gratis untuk membuat aplikasi web Java.
 
@@ -39,7 +39,7 @@ Aspose.Words for Java API sangat kaya fitur, namun aplikasi web demo ini hanya m
 
 {{% /alert %}}
 
-## Persyaratan Sistem
+## Persyaratan sistem
 
 Berikut adalah persyaratan sistem untuk aplikasi web Aspose.PDF Java untuk Struts 1.3:
 
@@ -48,7 +48,7 @@ Berikut adalah persyaratan sistem untuk aplikasi web Aspose.PDF Java untuk Strut
 - Maven 3
 - Komponen Aspose.PDF.
 
-## Platform yang Didukung
+## Platform yang didukung
 
 Berikut adalah platform yang didukung:
 

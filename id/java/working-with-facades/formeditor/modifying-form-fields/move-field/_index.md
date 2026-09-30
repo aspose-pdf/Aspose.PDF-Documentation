@@ -1,18 +1,18 @@
 ---
-title: Pindahkan Field
-linktitle: Pindahkan Field
+title: "Memindahkan Field"
+linktitle: "Memindahkan Field"
 type: docs
 weight: 30
 url: /id/java/move-field/
-description: Pelajari cara memindahkan field formulir yang ada dalam dokumen PDF di Java menggunakan facade FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara memindahkan bidang formulir yang ada dalam dokumen PDF di Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Pindahkan field formulir PDF ke posisi baru di Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, memindahkan field ke koordinat baru, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Memindahkan bidang formulir PDF ke posisi baru di Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF yang ada, memindahkan bidang ke koordinat baru, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
-## Pindahkan field
+## Memindahkan bidang
 
-1. Ikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Panggil `moveField(...)` dengan nama bidang target dan koordinat persegi panjang baru.
 3. Simpan dokumen yang diperbarui.
 

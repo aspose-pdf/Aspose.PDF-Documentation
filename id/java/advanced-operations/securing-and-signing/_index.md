@@ -1,11 +1,11 @@
 ---
-title: Amankan dan Tanda Tangani File PDF di Java
-linktitle: Mengamankan dan Menandatangani dalam PDF
+title: "Mengamankan dan tanda tangani file PDF di Java"
+linktitle: "Mengamankan dan menandatangani dalam PDF"
 type: docs
 weight: 210
 url: /id/java/securing-and-signing/
 description: Pelajari cara menandatangani, menyertifikasi, mengenkripsi, mendekripsi, dan mengamankan file PDF di Java, termasuk tanda tangan digital, validasi tanda tangan, dan hak istimewa dokumen.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,6 @@ Abstract: Bagian ini menjelaskan cara mengamankan dan menandatangani dokumen PDF
 Aspose.PDF for Java mencakup API antarmuka untuk tanda tangan digital dan keamanan dokumen. Anda dapat menandatangani atau menyertifikasi file PDF, memeriksa tanda tangan yang ada, mengenkripsi dan mendekripsi dokumen, serta menerapkan pembatasan izin dengan kata sandi pengguna dan pemilik.
 
 - [Menandatangani file PDF secara digital](/pdf/id/java/digitally-sign-pdf-file/)
-- [Ekstrak informasi tanda tangan](/pdf/id/java/extract-image-and-signature-information/)
-- [Atur hak istimewa, enkripsi, dan dekripsi file PDF](/pdf/id/java/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [Mengekstrak informasi tanda tangan](/pdf/id/java/extract-image-and-signature-information/)
+- [Mengatur hak istimewa, mengenkripsi, dan mendekripsi file PDF](/pdf/id/java/set-privileges-encrypt-and-decrypt-pdf-file/)
 - [Catatan penandatanganan kartu pintar](/pdf/id/java/sign-pdf-document-from-smart-card/)

@@ -1,19 +1,19 @@
 ---
-title: Buat Dokumen PDF N-Up
-linktitle: Buat Dokumen PDF N-Up
+title: "Membuat dokumen PDF N-Up"
+linktitle: "Membuat dokumen PDF N-Up"
 type: docs
 weight: 10
 url: /id/java/create-n-up-pdf-document/
 description: Buat tata letak PDF N-Up 2x2 di Java dengan fasad PdfFileEditor.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Hasilkan tata letak PDF N-Up dari dokumen yang ada di Java
+AlternativeHeadline: "Menghasilkan tata letak PDF N-Up dari dokumen yang ada di Java"
 Abstract: Pelajari cara membuat dokumen PDF N-Up dengan Aspose.PDF for Java. Contoh Java menggunakan PdfFileEditor untuk menempatkan empat halaman sumber pada setiap lembar keluaran dan juga menunjukkan varian pengembalian boolean untuk memeriksa kegagalan.
 ---
-## Buat dokumen PDF N-Up
+## Membuat dokumen PDF N-Up
 
 Contoh Java menggunakan `PdfFileEditor.makeNUp` untuk membuat tata letak 2x2 dari PDF yang ada.
 
@@ -22,7 +22,7 @@ Contoh Java menggunakan `PdfFileEditor.makeNUp` untuk membuat tata letak 2x2 dar
 1. Buat `PdfFileEditor` contoh.
 2. Panggil `makeNUp` dengan file input, file output, dan jumlah kolom serta baris.
 3. Simpan dokumen yang dihasilkan.
-4. Jika Anda menginginkan pemeriksaan keberhasilan yang eksplisit, panggil varian yang mengembalikan boolean dan tangani a `false` hasil.
+4. Jika perlu memeriksa keberhasilan operasi, panggil varian yang mengembalikan boolean dan tangani hasil `false`.
 
 ### Contoh Java
 

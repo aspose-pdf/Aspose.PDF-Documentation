@@ -1,30 +1,30 @@
 ---
-title: Ekstraksi Tanda Tangan
-linktitle: Ekstraksi Tanda Tangan
+title: "Ekstraksi tanda tangan"
+linktitle: "Ekstraksi tanda tangan"
 type: docs
 weight: 50
 url: /id/java/signature-extraction/
 description: Pelajari cara mengekstrak sertifikat penandatangan dari PDF yang ditandatangani dalam Java dengan PdfFileSignature.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ekstrak sertifikat tanda tangan dari PDF dalam Java
+AlternativeHeadline: "Mengekstrak sertifikat tanda tangan dari PDF dalam Java"
 Abstract: Pelajari cara mengekstrak sertifikat yang terkait dengan tanda tangan PDF menggunakan Aspose.PDF for Java. Set contoh Java saat ini mencakup ekstraksi sertifikat ke aliran output, tetapi tidak menyertakan contoh ekstraksi gambar tanda tangan terpisah.
 ---
-## Ekstrak sertifikat tanda tangan
+## Mengekstrak sertifikat tanda tangan
 
 Gunakan alur kerja ini ketika Anda perlu menyimpan sertifikat yang terkait dengan tanda tangan yang ada.
 
 ### Langkah
 
-1. Buat sebuah `PdfFileSignature` instans dan mengikat PDF yang ditandatangani.
+1. Buat sebuah instans `PdfFileSignature` dan mengikat PDF yang ditandatangani.
 2. Pilih nama tanda tangan untuk diperiksa.
 3. Panggil `extractCertificate` untuk membuka aliran sertifikat.
 4. Salin byte sertifikat ke file output.
-5. Tutup sumber daya aliran dan objek facade.
+5. Tutup sumber daya aliran dan objek fasad.
 
 ### Contoh Java
 
@@ -44,4 +44,4 @@ public static void extractSignatureCertificate(Path inputFile, Path outputFile) 
 }
 ```
 
-Saat ini `PdfFileSignatureExamples.java` kelas tidak menyertakan contoh Java khusus untuk mengekstrak gambar tanda tangan yang dirender.
+Saat ini kelas `PdfFileSignatureExamples.java` tidak menyertakan contoh Java khusus untuk mengekstrak gambar tanda tangan yang dirender.

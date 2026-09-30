@@ -1,20 +1,20 @@
 ---
-title: Buat field ComboBox
-linktitle: Buat field ComboBox
+title: "Membuat bidang ComboBox"
+linktitle: "Membuat bidang ComboBox"
 type: docs
 weight: 30
 url: /id/java/create-combobox-field/
-description: Pelajari cara menambahkan field combo box ke dokumen PDF dalam Java menggunakan facade FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara menambahkan bidang combo box ke dokumen PDF dalam Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Buat field combo box dalam PDF dengan Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, menambahkan field combo box, mengisinya dengan item, dan menyimpan dokumen yang dimodifikasi menggunakan facade FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Membuat bidang combo box dalam PDF dengan Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF yang ada, menambahkan bidang combo box, mengisinya dengan item, dan menyimpan dokumen yang dimodifikasi menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
 Gunakan `FormEditorExamples.createComboBoxField(...)` untuk membuat kotak kombo dan menambahkan item yang dapat dipilih.
 
-## Buat field combo box
+## Membuat bidang combo box
 
-1. Mengikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Tambahkan bidang combo box dengan nilai default dan persegi targetnya.
 3. Tambahkan item combo box yang dapat dipilih.
 4. Simpan dokumen yang telah diperbarui.

@@ -1,11 +1,11 @@
 ---
-title: Buka dokumen PDF secara programatik
-linktitle: Buka PDF
+title: "Membuka dokumen PDF secara programatik"
+linktitle: "Membuka PDF"
 type: docs
 weight: 20
 url: /id/java/open-pdf-document/
 description: Pelajari cara membuka file PDF di Java menggunakan Aspose.PDF dari jalur file, aliran, atau dengan kata sandi.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,15 +15,15 @@ Abstract: Artikel ini menunjukkan cara membuka dokumen PDF yang ada di Java meng
 ---
 Aspose.PDF for Java mendukung beberapa cara untuk memuat dokumen PDF yang ada tergantung dari sumber data asal.
 
-## Buka dokumen PDF di Java
+## Membuka dokumen PDF di Java
 
 Anda dapat membuka dokumen PDF:
 
-1. Buka sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) langsung dari jalur file.
-1. Buka sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dari sebuah `InputStream`.
-1. Buka yang terenkripsi [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dengan memberikan kata sandi.
+1. Buka sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) langsung dari jalur file.
+1. Buka sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dari sebuah `InputStream`.
+1. Buka yang terenkripsi [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dengan memberikan kata sandi.
 
-## Buka dokumen dari file
+## Membuka dokumen dari file
 
 ```java
 public static void openDocumentFromFile(Path inputFile) {
@@ -33,7 +33,7 @@ public static void openDocumentFromFile(Path inputFile) {
 }
 ```
 
-## Buka dokumen dari aliran
+## Membuka dokumen dari aliran
 
 ```java
 public static void openDocumentFromStream(Path inputFile) throws Exception {
@@ -45,7 +45,7 @@ public static void openDocumentFromStream(Path inputFile) throws Exception {
 }
 ```
 
-## Buka dokumen terenkripsi
+## Membuka dokumen terenkripsi
 
 ```java
 public static void openDocumentEncrypted(Path inputFile) {

@@ -1,11 +1,11 @@
 ---
-title: Atur Informasi File PDF di Python
-linktitle: Atur Informasi File PDF di Python
+title: "Mengatur informasi file PDF di Python"
+linktitle: "Mengatur informasi file PDF di Python"
 type: docs
 weight: 90
 url: /id/java/set-pdf-file-information-in-python/
 description: Pelajari cara mengatur informasi file PDF seperti penulis, judul, dan lainnya di Python menggunakan Aspose.PDF untuk mengatur dokumen.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 Untuk memperbarui informasi dokumen Pdf menggunakan **Aspose.PDF Java for Python**, cukup panggil kelas **SetPdfFileInfo**.
 
@@ -30,8 +30,8 @@ doc.save(self.dataDir + "Updated_Information.pdf")
 print "Update document information, please check output file."
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Atur Informasi File PDF (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah ini:
+Unduh **Atur Informasi File PDF (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)

@@ -1,27 +1,27 @@
 ---
-title: Ekstrak Tabel dari PDF dengan Java
-linktitle: Ekstrak Tabel
+title: "Mengekstrak tabel dari PDF dengan Java"
+linktitle: "Mengekstrak tabel"
 type: docs
 weight: 20
 url: /id/java/extracting-table/
 description: Pelajari cara mengekstrak data tabel dari dokumen PDF yang ada dengan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ekstrak data tabel dari file PDF dengan Java
+AlternativeHeadline: "Mengekstrak data tabel dari file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara mengekstrak tabel dari dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini menunjukkan cara menggunakan TableAbsorber untuk mendeteksi tabel per halaman, mengiterasi baris dan sel, serta mengumpulkan teks sel untuk pemrosesan selanjutnya.
 ---
 Gunakan `TableAbsorber` ketika Anda perlu mendeteksi struktur tabel dalam PDF yang ada dan membaca isinya.
 
-## Ekstrak teks dari tabel yang terdeteksi
+## Mengekstrak teks dari tabel yang terdeteksi
 
 Gunakan contoh ini ketika Anda perlu menemukan tabel pada setiap halaman dan mengumpulkan teks selnya.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kunjungi setiap halaman dengan [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
-1. Iterasi melalui tabel yang diserap, baris, dan sel, kemudian output teks yang diekstrak.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kunjungi setiap halaman dengan [`TableAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Iterasikan melalui tabel yang diserap, baris, dan sel, kemudian output teks yang diekstrak.
 
 ```java
 public static void extract(Path inputFile) {

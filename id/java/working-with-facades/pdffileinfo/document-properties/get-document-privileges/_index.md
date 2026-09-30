@@ -1,29 +1,29 @@
 ---
-title: Dapatkan Hak Istimewa Dokumen
-linktitle: Dapatkan Hak Istimewa Dokumen
+title: "Mendapatkan hak istimewa dokumen"
+linktitle: "Mendapatkan hak istimewa dokumen"
 type: docs
 weight: 10
 url: /id/java/get-document-privileges/
-description: Pelajari cara memeriksa hak istimewa dokumen PDF dalam Java dengan facade PdfFileInfo.
-lastmod: "2026-09-29"
+description: "Pelajari cara memeriksa hak istimewa dokumen PDF dalam Java dengan fasad PdfFileInfo."
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Mengambil Hak Istimewa Dokumen PDF Menggunakan Aspose.PDF for Java
+AlternativeHeadline: "Mengambil hak istimewa dokumen PDF menggunakan Aspose.PDF for Java"
 Abstract: Pelajari cara mengambil hak istimewa dokumen dengan Aspose.PDF for Java. Contoh Java membuat objek PdfFileInfo, membaca pengaturan DocumentPrivilege-nya, dan mencetak bendera izin untuk mencetak, menyalin, memodifikasi, anotasi, mengisi formulir, pembaca layar, dan perakitan.
 ---
-## Dapatkan hak istimewa dokumen
+## Mendapatkan hak istimewa dokumen
 
 Gunakan `PdfFileInfo.getDocumentPrivilege()` untuk memeriksa operasi apa yang diizinkan PDF saat ini.
 
 ### Langkah
 
-1. Buat `PdfFileInfo` objek untuk PDF input.
+1. Buat objek `PdfFileInfo` untuk PDF input.
 2. Panggil `getDocumentPrivilege()` untuk mengambil set hak istimewa.
-3. Baca flag boolean yang relevan dari hasil yang dikembalikan `DocumentPrivilege` objek.
-4. Tutup `PdfFileInfo` instansi saat selesai.
+3. Baca flag boolean yang relevan dari hasil yang dikembalikan objek `DocumentPrivilege`.
+4. Tutup instans `PdfFileInfo` saat selesai.
 
 ### Contoh Java
 

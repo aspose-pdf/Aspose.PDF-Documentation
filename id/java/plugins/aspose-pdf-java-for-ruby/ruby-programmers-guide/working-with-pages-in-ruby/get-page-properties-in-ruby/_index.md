@@ -1,13 +1,13 @@
 ---
-title: Dapatkan Properti Halaman di Ruby
-linktitle: Dapatkan Properti Halaman di Ruby
+title: "Mendapatkan properti halaman di Ruby"
+linktitle: "Mendapatkan properti halaman di Ruby"
 type: docs
 weight: 50
 url: /id/java/get-page-properties-in-ruby/
 description: Pelajari cara mengambil properti halaman dalam file PDF menggunakan Ruby dengan Aspose.PDF untuk mengelola dan memanipulasi dokumen Anda secara efisien.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Dapatkan Properti Halaman
+## Aspose.PDF - dapatkan properti halaman
 
 Untuk mendapatkan properti halaman dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **GetPageProperties**.
 
@@ -49,8 +49,8 @@ puts "Page Number :- " + pdf_page.getNumber().to_s
 puts "Rotate :-" + pdf_page.getRotate().to_s
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-UnduhВ **Get Page Properties (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Get Page Properties (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpageproperties.rb)

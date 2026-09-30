@@ -1,25 +1,25 @@
 ---
-title: Anotasi Bentuk via Java
-linktitle: Anotasi Bentuk
+title: "Anotasi bentuk via Java"
+linktitle: "Anotasi bentuk"
 type: docs
 weight: 20
 url: /id/java/shape-annotations/
 description: Pelajari cara menambahkan, memeriksa, dan menghapus anotasi persegi, lingkaran, poligon, dan polilin dalam dokumen PDF menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Bekerja dengan anotasi PDF geometris di Java.
+AlternativeHeadline: "Bekerja dengan anotasi PDF geometris di Java"
 Abstract: Artikel ini menjelaskan cara membuat, memeriksa, dan menghapus anotasi geometris dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup anotasi persegi, lingkaran, poligon, dan polyline dengan konfigurasi warna, opasitas, popup, dan titik.
 ---
 Anotasi bentuk dalam bagian ini mencakup jenis anotasi geometris seperti persegi, lingkaran, poligon, poliline, dan garis.
 
-## Tambahkan anotasi persegi, lingkaran, poligon, dan polilin
+## Menambahkan anotasi persegi, lingkaran, poligon, dan polilin
 
 Gunakan contoh-conto ini ketika Anda perlu menempatkan anotasi geometris dengan warna khusus, opacity, data popup, atau array titik.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat anotasi bentuk yang diperlukan dan konfigurasikan persegi panjangnya, titiknya, serta properti visualnya.
 1. Tambahkan anotasi ke halaman dan simpan dokumen yang diperbarui.
 
@@ -109,13 +109,13 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan anotasi persegi, lingkaran, poligon, dan polilin
+## Mendapatkan anotasi persegi, lingkaran, poligon, dan polilin
 
 Contoh-contoh ini memeriksa koleksi anotasi halaman dan mencetak persegi panjang anotasi geometris berdasarkan tipe.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui anotasi halaman.
-1. Filter berdasarkan yang diperlukan [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) nilai dan cetak persegi panjang.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui anotasi halaman.
+1. Filter berdasarkan yang diperlukan [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) nilai dan cetak persegi panjang.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -165,11 +165,11 @@ public static void polylineAnnotationGet(Path inputFile) {
 }
 ```
 
-## Hapus anotasi persegi, lingkaran, poligon, dan polyline
+## Menghapus anotasi persegi, lingkaran, poligon, dan polyline
 
 Gunakan contoh-contoh ini ketika anotasi bentuk dari jenis tertentu harus dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Kumpulkan anotasi dari tipe geometris yang diperlukan.
 1. Hapus anotasi yang dikumpulkan dan simpan file output.
 
@@ -241,12 +241,12 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan anotasi garis
+## Menambahkan anotasi garis
 
 Contoh ini membuat anotasi garis dengan ujung panah, format batas, dan catatan popup.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) dengan titik awal dan akhir.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`LineAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) dengan titik awal dan akhir.
 1. Konfigurasikan tampilan, tambahkan popup, dan simpan dokumen.
 
 ```java
@@ -277,13 +277,13 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan anotasi garis
+## Mendapatkan anotasi garis
 
 Contoh ini membaca anotasi garis dan mencetak koordinat mulai dan akhir mereka.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui anotasi halaman dan pilih [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
-1. Ubah tipe setiap kecocokan menjadi [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) dan cetak koordinatnya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui anotasi halaman dan pilih [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Ubah tipe setiap kecocokan menjadi [`LineAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) dan cetak koordinatnya.
 
 ```java
 public static void lineAnnotationsGet(Path inputFile) {
@@ -300,12 +300,12 @@ public static void lineAnnotationsGet(Path inputFile) {
 }
 ```
 
-## Hapus anotasi garis
+## Menghapus anotasi garis
 
 Gunakan pendekatan ini ketika anotasi garis harus dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kumpulkan anotasi jenis [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kumpulkan anotasi jenis [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. Hapus anotasi yang dikumpulkan dan simpan dokumen.
 
 ```java
@@ -328,9 +328,9 @@ public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## Topik anotasi terkait
 
-- [Anotasi Interaktif](/pdf/id/java/interactive-annotations/)
-- [Anotasi Markup](/pdf/id/java/markup-annotations/)
-- [Anotasi Keamanan](/pdf/id/java/security-annotations/)
-- [Anotasi Teks](/pdf/id/java/text-based-annotations/)
-- [Anotasi Watermark](/pdf/id/java/watermark-annotations/)
-- [Impor dan Ekspor Anotasi](/pdf/id/java/import-export-annotations/)
+- [Anotasi interaktif](/pdf/id/java/interactive-annotations/)
+- [Anotasi markup](/pdf/id/java/markup-annotations/)
+- [Anotasi keamanan](/pdf/id/java/security-annotations/)
+- [Anotasi teks](/pdf/id/java/text-based-annotations/)
+- [Anotasi watermark](/pdf/id/java/watermark-annotations/)
+- [Mengimpor dan mengekspor anotasi](/pdf/id/java/import-export-annotations/)

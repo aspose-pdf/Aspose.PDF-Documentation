@@ -1,13 +1,13 @@
 ---
-title: Konversi halaman PDF menjadi Gambar dalam Ruby
-linktitle: Konversi halaman PDF menjadi Gambar dalam Ruby
+title: "Mengonversi halaman PDF menjadi gambar dalam Ruby"
+linktitle: "Mengonversi halaman PDF menjadi gambar dalam Ruby"
 type: docs
 weight: 20
 url: /id/java/convert-pdf-pages-to-images-in-ruby/
 description: Ketahui cara mengkonversi halaman PDF menjadi gambar menggunakan Ruby dengan Aspose.PDF, memudahkan pengekstrakan konten visual dari PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Konversi halaman PDF menjadi Gambar
+## Aspose.PDF - konversi halaman PDF menjadi gambar
 
 Untuk mengkonversi semua Halaman menjadi Gambar dari dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **ConvertPagesToImages**.
 
@@ -41,7 +41,7 @@ end
 puts "PDF pages are converted to individual images successfully!"
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
 Unduh **Convert PDF pages to Images (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 

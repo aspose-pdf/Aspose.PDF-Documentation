@@ -1,11 +1,11 @@
 ---
-title: Ekstrak Teks dari PDF menggunakan Java
-linktitle: Ekstrak Teks dari PDF
+title: "Mengekstrak teks dari PDF menggunakan Java"
+linktitle: "Mengekstrak teks dari PDF"
 type: docs
 weight: 10
 url: /id/java/extract-text-from-pdf/
 description: Pelajari cara mengekstrak teks dari dokumen PDF dalam Java dengan Aspose.PDF, termasuk alur kerja seluruh dokumen, tingkat halaman, berbasis wilayah, anotasi, dan multi‑kolom.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7

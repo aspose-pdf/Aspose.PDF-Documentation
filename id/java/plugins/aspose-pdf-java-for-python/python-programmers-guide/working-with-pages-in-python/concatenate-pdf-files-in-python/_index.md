@@ -1,11 +1,11 @@
 ---
-title: Menggabungkan File PDF di Python
-linktitle: Menggabungkan File PDF di Python
+title: "Menggabungkan file PDF di Python"
+linktitle: "Menggabungkan file PDF di Python"
 type: docs
 weight: 10
 url: /id/java/concatenate-pdf-files-in-python/
 description: Pelajari cara menggabungkan beberapa file PDF menjadi satu dokumen PDF di Python menggunakan Aspose.PDF, menyederhanakan manajemen dokumen.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 Untuk menggabungkan file PDF menggunakan **Aspose.PDF Java for Python**, cukup panggil kelas **ConcatenatePdfFiles**.
 
@@ -27,7 +27,7 @@ doc.save(self.dataDir + "Concatenate_output.pdf")
 print "New document has been saved, please check the output file"
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
 Unduh **Concatenate PDF Files (Aspose.PDF)** dari salah satu situs sosial coding yang disebutkan di bawah ini:
 

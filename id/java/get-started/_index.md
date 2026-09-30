@@ -1,12 +1,12 @@
 ---
-title: Mulai
-linktitle: Mulai
+title: "Memulai"
+linktitle: "Memulai"
 type: docs
 weight: 30
 url: /id/java/get-started/
 description: Pelajari cara memulai dengan Aspose.PDF for Java untuk membuat dokumen PDF dan membangun contoh yang lebih maju dengan teks, gambar, dan tabel.
 is_node: true
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7

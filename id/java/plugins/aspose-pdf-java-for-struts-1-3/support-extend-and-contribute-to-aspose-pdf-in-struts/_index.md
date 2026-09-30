@@ -1,11 +1,11 @@
 ---
-title: Dukung, Perluas, dan Berkontribusi pada Aspose.Pdf di Struts
-linktitle: Dukung, Perluas, dan Berkontribusi pada Aspose.Pdf di Struts
+title: "Dukung, perluas, dan berkontribusi pada Aspose.PDF di Struts"
+linktitle: "Dukung, perluas, dan berkontribusi pada Aspose.PDF di Struts"
 type: docs
 weight: 20
 url: /id/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
 description: Temukan cara untuk mendukung, memperluas, dan berkontribusi pada Aspose.PDF for Java dalam proyek berbasis Struts.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 ## Dukungan
 
@@ -21,11 +21,11 @@ Silakan gunakan salah satu pelacak masalah proyek berikut:
 
 {{% /alert %}}
 
-## Perluas dan Berkontribusi
+## Memperluas dan berkontribusi
 
 Aspose.PDF Java untuk Struts 1.3 bersifat sumber terbuka dan kode sumbernya tersedia di situs web sosial coding utama yang tercantum di bawah ini. Pengembang dianjurkan untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau memperbaiki yang sudah ada, sehingga orang lain juga dapat memanfaatkannya.
 
-## Kode Sumber
+## Kode sumber
 
 Anda dapat memperoleh kode sumber terbaru dari salah satu lokasi berikut
 

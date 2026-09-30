@@ -1,29 +1,29 @@
 ---
-title: Bekerja dengan Metadata File PDF dalam Java
-linktitle: Metadata File PDF
+title: "Bekerja dengan metadata file PDF dalam Java"
+linktitle: "Metadata file PDF"
 type: docs
 weight: 200
 url: /id/java/pdf-file-metadata/
 description: Pelajari cara mengekstrak, memperbarui, dan mengelola metadata file PDF, informasi dokumen, dan properti XMP dalam Java menggunakan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Dapatkan dan atur informasi dokumen PDF serta metadata XMP dalam Java
-Abstract: Artikel ini menjelaskan cara bekerja dengan metadata PDF menggunakan Aspose.PDF for Java. Pelajari cara membaca informasi dokumen seperti penulis, judul, dan kata kunci, memperbarui properti file, memeriksa versi PDF dan hak istimewa, mengatur bidang metadata XMP, serta menyimpan metadata melalui API DOM dan facade.
+AlternativeHeadline: "Mendapatkan dan mengatur informasi dokumen PDF serta metadata XMP dalam Java"
+Abstract: "Artikel ini menjelaskan cara bekerja dengan metadata PDF menggunakan Aspose.PDF for Java. Pelajari cara membaca informasi dokumen seperti penulis, judul, dan kata kunci, memperbarui properti file, memeriksa versi PDF dan hak istimewa, mengatur bidang metadata XMP, serta menyimpan metadata melalui API DOM dan fasad."
 ---
 Aspose.PDF for Java menyediakan dua cara utama untuk bekerja dengan metadata:
 
 - API DOM melalui `Document`, `DocumentInfo`, dan `document.getMetadata()`.
 - API façade melalui `PdfFileInfo`.
 
-## Dapatkan informasi file PDF
+## Mendapatkan informasi file PDF
 
 Gunakan contoh ini ketika Anda perlu membaca bidang informasi dokumen standar seperti penulis, judul, subjek, atau kata kunci.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Akses [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) objek.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Akses objek [`DocumentInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/).
 1. Baca bidang metadata yang diperlukan dan keluarkan nilainya.
 
 ```java
@@ -41,11 +41,11 @@ public static void getPdfFileInformation(Path inputFile) {
 }
 ```
 
-## Atur metadata dengan awalan namespace
+## Mengatur metadata dengan awalan namespace
 
 Gunakan contoh ini ketika Anda perlu menambahkan atau memperbarui properti XMP dengan menggunakan awalan namespace yang terdaftar.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Daftarkan namespace XMP yang diperlukan dan tambahkan item metadata.
 1. Simpan dokumen yang diperbarui.
 
@@ -60,12 +60,12 @@ public static void setPrefixMetadata(Path inputFile, Path outputFile) {
 }
 ```
 
-## Perbarui bidang informasi dokumen
+## Memperbarui bidang informasi dokumen
 
 Gunakan contoh ini ketika Anda ingin menulis properti file PDF standar seperti penulis, judul, pembuat, atau tanggal pembuatan.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Akses [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) dan tetapkan nilai metadata baru.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Akses [`DocumentInfo`](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) dan tetapkan nilai metadata baru.
 1. Simpan dokumen dengan informasi file yang diperbarui.
 
 ```java
@@ -89,11 +89,11 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 }
 ```
 
-## Atur properti metadata XMP
+## Mengatur properti metadata XMP
 
 Gunakan contoh ini ketika Anda perlu menyimpan entri XMP tambahan, termasuk nilai metadata khusus.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Tambahkan item metadata XMP yang diperlukan melalui `document.getMetadata()`.
 1. Simpan file output.
 

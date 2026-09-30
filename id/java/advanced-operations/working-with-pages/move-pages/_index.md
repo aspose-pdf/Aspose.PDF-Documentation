@@ -1,11 +1,11 @@
 ---
-title: Memindahkan Halaman PDF dalam Java
-linktitle: Memindahkan Halaman PDF
+title: "Memindahkan halaman PDF dalam Java"
+linktitle: "Memindahkan halaman PDF"
 type: docs
 weight: 100
 url: /id/java/move-pages/
 description: Pelajari cara memindahkan halaman PDF dalam sebuah dokumen atau antar dokumen dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,11 +15,11 @@ Abstract: Artikel ini menjelaskan cara memindahkan halaman dalam PDF menggunakan
 ---
 Aspose.PDF for Java memungkinkan Anda memindahkan halaman antar dokumen atau memposisikan ulang halaman dalam PDF yang sama.
 
-## Pindahkan satu halaman ke dokumen lain
+## Memindahkan satu halaman ke dokumen lain
 
 Gunakan contoh ini ketika satu halaman harus dihapus dari PDF sumber dan disimpan ke dalam dokumen terpisah.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buat dokumen tujuan.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buat dokumen tujuan.
 1. Tambahkan halaman target ke tujuan dan hapus dari sumber.
 1. Simpan kedua dokumen.
 
@@ -35,11 +35,11 @@ public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceO
 }
 ```
 
-## Pindahkan beberapa halaman ke dokumen lain
+## Memindahkan beberapa halaman ke dokumen lain
 
 Gunakan contoh ini ketika beberapa halaman harus dipindahkan dari PDF sumber ke dokumen baru.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buat dokumen tujuan.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buat dokumen tujuan.
 1. Salin halaman yang dipilih ke dokumen tujuan.
 1. Hapus halaman yang dipindahkan dari sumber dan simpan kedua file.
 
@@ -58,11 +58,11 @@ public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path s
 }
 ```
 
-## Pindahkan halaman dalam dokumen yang sama
+## Memindahkan halaman dalam dokumen yang sama
 
 Gunakan contoh ini ketika sebuah halaman harus dipindahkan ke lokasi baru dalam PDF yang sama.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Duplikat halaman target ke posisi baru dan hapus entri halaman asli.
 1. Simpan dokumen yang telah diurutkan ulang.
 

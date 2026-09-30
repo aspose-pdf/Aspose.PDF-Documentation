@@ -1,28 +1,28 @@
 ---
-title: Buat File PDF dalam Java
-linktitle: Buat Dokumen PDF
+title: "Membuat file PDF dalam Java"
+linktitle: "Membuat dokumen PDF"
 type: docs
 weight: 10
 url: /id/java/create-pdf-document/
 description: Pelajari cara membuat file PDF dan membangun PDF yang dapat dicari dalam Java menggunakan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Buat file PDF dan dokumen PDF yang dapat dicari dengan Java
+AlternativeHeadline: "Membuat file PDF dan dokumen PDF yang dapat dicari dengan Java"
 Abstract: Artikel ini menunjukkan cara membuat dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup pembuatan PDF baru dari awal dan mengonversi dokumen berbasis gambar menjadi PDF yang dapat dicari dengan menyediakan output HOCR dari mesin OCR eksternal.
 ---
 Aspose.PDF for Java mendukung baik pembuatan dokumen sederhana maupun alur kerja PDF yang dapat dicari dengan bantuan OCR.
 
-## Buat dokumen PDF baru
+## Membuat dokumen PDF baru
 
 Gunakan pendekatan ini ketika Anda perlu membuat file PDF sederhana dari awal.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Tambahkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
-1. Buat sebuah [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) dan tambahkan ke halaman.
-1. Simpan PDF output [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ke dokumen.
+1. Buat sebuah [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) dan tambahkan ke halaman.
+1. Simpan PDF output [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void createNewDocument(Path outputFile) {
@@ -34,13 +34,13 @@ public static void createNewDocument(Path outputFile) {
 }
 ```
 
-## Buat PDF yang dapat dicari
+## Membuat PDF yang dapat dicari
 
 {"translatedText":""} `createSearchablePdf` contoh penggunaan `Document.convert(...)` dengan a `CallBackGetHocr` implementasi. Callback menulis gambar sumber ke file sementara, memanggil Tesseract dengan `hocr` opsi, membaca markup HOCR yang dihasilkan, dan mengembalikannya ke Aspose.PDF.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat `CallBackGetHocr` panggilan balik dan mengonversi dokumen sumber menjadi konten PDF yang dapat dicari.
-1. Simpan PDF yang diperbarui [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Simpan PDF yang diperbarui [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void createSearchablePdf(Path inputFile, Path outputFile) {
@@ -59,11 +59,11 @@ public static void createSearchablePdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan pengaturan jendela dokumen
+## Mendapatkan pengaturan jendela dokumen
 
 Gunakan contoh ini untuk memeriksa preferensi penampil saat ini yang disimpan dalam dokumen PDF yang ada.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Baca properti jendela dan tampilan yang diperlukan dari dokumen.
 1. Keluarkan pengaturan saat ini untuk inspeksi atau debugging.
 
@@ -84,13 +84,13 @@ public static void getDocumentWindow(Path inputFile) {
 }
 ```
 
-## Atur preferensi jendela dokumen
+## Mengatur preferensi jendela dokumen
 
 Contoh ini memperbarui cara PDF harus ditampilkan ketika dibuka di penampil yang kompatibel.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Atur preferensi jendela, tata letak, dan mode halaman yang diperlukan.
-1. Simpan PDF yang diperbarui [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Simpan PDF yang diperbarui [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void setDocumentWindow(Path inputFile, Path outputFile) {
@@ -110,13 +110,13 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 }
 ```
 
-## Sematkan font dalam PDF yang ada
+## Menyematkan font dalam PDF yang ada
 
 Gunakan pendekatan ini ketika sebuah dokumen harus membawa font yang diperlukan untuk rendering yang lebih andal pada sistem lain.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Aktifkan penyematan font standar dan iterasi melalui font yang digunakan oleh masing-masing [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Tandai semua yang tidak tertanam [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) objek untuk disematkan.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Aktifkan penyematan font standar dan iterasi melalui font yang digunakan oleh masing-masing [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Tandai semua yang tidak tertanam objek [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) untuk disematkan.
 1. Simpan dokumen yang diperbarui.
 
 ```java
@@ -135,13 +135,13 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## Sematkan font saat membuat PDF baru
+## Menyematkan font saat membuat PDF baru
 
 Contoh ini membuat PDF baru dan menetapkan font yang disematkan ke konten teks sejak awal.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan a [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Buat yang diperlukan [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), dan [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Menyelesaikan target [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) dari repositori dan tandai sebagai tersemat.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan a [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Buat yang diperlukan [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [`TextSegment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), dan [`TextState`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. Selesaikan [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) target dari repositori dan tandai sebagai tersemat.
 1. Tambahkan konten teks ke halaman dan simpan dokumen output.
 
 ```java
@@ -163,12 +163,12 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 }
 ```
 
-## Tetapkan font default untuk output PDF
+## Menetapkan font default untuk output PDF
 
 Gunakan pola ini ketika dokumen yang disimpan harus kembali ke font tertentu selama pembuatan output.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) dan tetapkan nama font default.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`PdfSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) dan tetapkan nama font default.
 1. Simpan dokumen dengan opsi penyimpanan yang dikonfigurasi.
 
 ```java
@@ -181,13 +181,13 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan semua font yang digunakan dalam PDF
+## Mendapatkan semua font yang digunakan dalam PDF
 
 Contoh ini menampilkan semua font yang terdeteksi dalam dokumen sehingga Anda dapat memeriksa penggunaan font sebelum mengekspor atau memperbarui file.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Enumerasikan font yang dikembalikan oleh utilitas font dokumen.
-1. Keluarkan nama masing-masing yang terdeteksi [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. Keluarkan nama masing-masing yang terdeteksi [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
 ```java
 public static void getAllFonts(Path inputFile) {
@@ -203,8 +203,8 @@ public static void getAllFonts(Path inputFile) {
 
 Gunakan pendekatan ini ketika Anda ingin mengurangi beban font sambil mempertahankan data font yang disematkan tetap selaras dengan penggunaan dokumen.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Jalankan subsetting font melalui utilitas font dokumen dengan yang diperlukan [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) nilai.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Jalankan subsetting font melalui utilitas font dokumen dengan yang diperlukan [`FontSubsetStrategy`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) nilai.
 1. Simpan dokumen yang dioptimalkan.
 
 ```java
@@ -217,12 +217,12 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 }
 ```
 
-## Atur faktor zoom saat membuka dokumen
+## Mengatur faktor zoom saat membuka dokumen
 
 Contoh ini mengonfigurasi tingkat zoom awal yang harus diterapkan saat PDF dibuka.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) dengan sebuah [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`GoToAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) dengan sebuah [`XYZExplicitDestination`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Tetapkan tindakan sebagai tindakan pembukaan dokumen dan simpan hasilnya.
 
 ```java
@@ -235,12 +235,12 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan faktor zoom saat dokumen dibuka
+## Mendapatkan faktor zoom saat dokumen dibuka
 
 Gunakan contoh ini untuk memeriksa apakah PDF sudah mendefinisikan tingkat zoom eksplisit untuk aksi buka-nya.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Periksa apakah aksi buka adalah [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) dengan sebuah [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Periksa apakah aksi buka adalah [`GoToAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) dengan sebuah [`XYZExplicitDestination`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. Keluarkan nilai zoom yang dikonfigurasi atau laporkan bahwa tidak ada zoom yang disetel.
 
 ```java

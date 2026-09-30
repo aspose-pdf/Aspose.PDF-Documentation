@@ -1,23 +1,23 @@
 ---
-title: Buat Tagged PDF di Java
-linktitle: Buat Tagged PDF
+title: "Membuat Tagged PDF di Java"
+linktitle: "Membuat Tagged PDF"
 type: docs
 weight: 10
 url: /id/java/create-tagged-pdf/
 description: Pelajari cara membuat dokumen PDF yang ditandai dalam Java dengan Aspose.PDF, termasuk elemen struktur PDF/UA, form fields yang dapat diakses, halaman TOC, dan penandaan otomatis.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 Membuat PDF ber-tag berarti menambahkan elemen struktur yang membuat dokumen lebih mudah divalidasi terhadap persyaratan aksesibilitas PDF/UA dan lebih mudah diinterpretasikan oleh teknologi bantuan.
 
-## Buat dokumen PDF ber‑tag sederhana
+## Membuat dokumen PDF ber‑tag sederhana
 
 Gunakan contoh ini ketika Anda membutuhkan PDF ber‑tag minimal dengan judul dan paragraf dalam pohon struktur logis.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan dapatkan itu [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
-1. Set judul dokumen dan bahasa, lalu buat elemen header dan paragraf yang diperlukan.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan dapatkan itu [`ITaggedContent`](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. Atur judul dokumen dan bahasa, lalu buat elemen header dan paragraf yang diperlukan.
 1. Tambahkan Structure Elements ke elemen root dan simpan dokumen.
 
 ```java
@@ -44,11 +44,11 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 }
 ```
 
-## Buat dokumen PDF ber-tag lanjutan
+## Membuat dokumen PDF ber-tag lanjutan
 
 Contoh ini membangun struktur yang lebih kaya dengan mencampur heading, paragraf, span, kutipan, dan pengaturan layout yang eksplisit.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan menginisialisasi metadata konten yang ditandai.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan menginisialisasi metadata konten yang ditandai.
 1. Bangun struktur heading dan paragraf, lalu tambahkan span dan elemen kutipan di dalam paragraf.
 1. Sesuaikan posisi paragraf, tambahkan elemen ke struktur akar, dan simpan dokumen.
 
@@ -93,11 +93,11 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 }
 ```
 
-## Tambahkan gaya teks ke konten bertanda
+## Menambahkan gaya teks ke konten bertanda
 
 Gunakan contoh ini ketika konten paragraf ber-tag harus membawa informasi font, warna, dan gaya secara eksplisit.
 
-1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat Tagged PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat elemen paragraf dan konfigurasikan status teks strukturnya.
 1. Atur teks paragraf dan simpan dokumen.
 
@@ -122,12 +122,12 @@ public static void addStyle(Path outputFile) {
 }
 ```
 
-## Tambahkan elemen struktur gambar
+## Menambahkan elemen struktur gambar
 
 Contoh ini menunjukkan cara membuat gambar berlabel dengan teks alternatif, judul, tag khusus, konten gambar, dan penempatan.
 
-1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), atur metadata yang dapat diakses, dan tetapkan gambar.
+1. Buat Tagged PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`FigureElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), atur metadata yang dapat diakses, dan tetapkan gambar.
 1. Sesuaikan posisi gambar dan simpan dokumen.
 
 ```java
@@ -157,12 +157,12 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 }
 ```
 
-## Validasi PDF ber-tag untuk PDF/UA
+## Memvalidasi PDF ber-tag untuk PDF/UA
 
 Gunakan contoh ini ketika Anda perlu memeriksa apakah PDF ber‑tag memenuhi aturan validasi PDF/UA.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Jalankan validasi terhadap [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Jalankan validasi terhadap [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 1. Tuliskan log validasi dan cetak hasil validasi.
 
 ```java
@@ -174,12 +174,12 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 }
 ```
 
-## Sesuaikan posisi elemen struktur
+## Menyesuaikan posisi elemen struktur
 
 Contoh ini menerapkan pengaturan margin dan perataan eksplisit pada paragraf yang ditandai.
 
-1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Tambahkan elemen struktur paragraf dan siapkan [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. Buat Tagged PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan elemen struktur paragraf dan siapkan [`PositionSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
 1. Terapkan pengaturan posisi ke paragraf dan simpan dokumen.
 
 ```java
@@ -214,12 +214,12 @@ public static void adjustPosition(Path outputFile) {
 }
 ```
 
-## Konversi PDF yang ada ke PDF/UA dengan penandaan otomatis
+## Mengonversi PDF yang ada ke PDF/UA dengan penandaan otomatis
 
 Gunakan pendekatan ini ketika PDF yang ada harus dikonversi ke PDF/UA dan ditandai secara otomatis selama konversi.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) dan aktifkan penandaan otomatis.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) dan aktifkan penandaan otomatis.
 1. Jalankan konversi dan simpan dokumen output.
 
 ```java
@@ -239,13 +239,13 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 }
 ```
 
-## Buat Tagged PDF dengan form field yang dapat diakses
+## Membuat Tagged PDF dengan form bidang yang dapat diakses
 
-Contoh ini menandai field formulir tanda tangan sehingga menjadi bagian dari pohon struktur logis.
+Contoh ini menandai bidang formulir tanda tangan sehingga menjadi bagian dari pohon struktur logis.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman dengan bidang Form.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman dengan bidang Form.
 1. Tambahkan FormField ke koleksi formulir dokumen.
-1. Buat elemen struktur Form ber-tag, kaitkan dengan field, dan simpan dokumen.
+1. Buat elemen struktur Form ber-tag, kaitkan dengan bidang, dan simpan dokumen.
 
 ```java
 public static void createPdfWithTaggedFormField(Path outputFile) {
@@ -271,12 +271,12 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 }
 ```
 
-## Buat PDF ber-tag dengan halaman TOC
+## Membuat PDF ber-tag dengan halaman TOC
 
 Gunakan contoh ini ketika PDF ber‑tag perlu menyertakan halaman daftar isi dasar yang ditautkan ke heading dokumen.
 
-1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman TOC.
-1. Buat [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) dan sebuah header yang seharusnya muncul di TOC.
+1. Buat Tagged PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman TOC.
+1. Buat [`TOCElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) dan sebuah header yang seharusnya muncul di TOC.
 1. Tautkan entri TOC ke judul dan simpan dokumen.
 
 ```java
@@ -308,11 +308,11 @@ public static void createPdfWithTocPage(Path outputFile) {
 }
 ```
 
-## Buat PDF bertanda lanjutan dengan halaman TOC
+## Membuat PDF bertanda lanjutan dengan halaman TOC
 
 Contoh ini membangun TOC ber‑tag yang lebih kompleks dengan judul halaman yang ditautkan, item daftar bersarang, dan beberapa tingkat heading.
 
-1. Buat Tagged PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan siapkan halaman TOC dengan judul yang terlihat.
+1. Buat Tagged PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan siapkan halaman TOC dengan judul yang terlihat.
 1. Buat struktur TOC, tautkan judul dan entri TOC ke heading dan item daftar, dan tambahkan elemen konten terkait.
 1. Simpan dokumen akhir dengan struktur TOC lanjutan.
 

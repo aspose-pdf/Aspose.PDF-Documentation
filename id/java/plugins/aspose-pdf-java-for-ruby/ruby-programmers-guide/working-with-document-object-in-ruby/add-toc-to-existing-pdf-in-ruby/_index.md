@@ -1,13 +1,13 @@
 ---
-title: Tambahkan TOC ke PDF yang Ada di Ruby
-linktitle: Tambahkan TOC ke PDF yang Ada di Ruby
+title: "Menambahkan TOC ke PDF yang ada di Ruby"
+linktitle: "Menambahkan TOC ke PDF yang ada di Ruby"
 type: docs
 weight: 30
 url: /id/java/add-toc-to-existing-pdf-in-ruby/
 description: Pelajari cara menambahkan daftar isi ke PDF yang ada di Ruby menggunakan Aspose.PDF untuk meningkatkan navigasi dokumen.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Tambahkan TOC
+## Aspose.PDF - tambahkan TOC
 
 <ins>Untuk menambahkan TOC dalam dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **AddToc**.
 
@@ -89,6 +89,6 @@ puts "Added TOC Successfully, please check the output file."
 
 ## <ins> **Unduh Kode yang Berjalan**
 
-UnduhВ **Tambahkan TOC (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah:
+Unduh **Tambahkan TOC (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

@@ -1,18 +1,18 @@
 ---
-title: Hapus Field
-linktitle: Hapus Field
+title: "Menghapus Field"
+linktitle: "Menghapus Field"
 type: docs
 weight: 40
 url: /id/java/remove-field/
-description: Pelajari cara menghapus field form yang ada dari dokumen PDF di Java menggunakan facade FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara menghapus bidang form yang ada dari dokumen PDF di Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Hapus field form PDF di Java
-Abstract: Artikel ini menunjukkan cara mengaitkan PDF yang ada, menghapus field yang ditentukan, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Menghapus bidang form PDF di Java"
+Abstract: "Artikel ini menunjukkan cara mengaitkan PDF yang ada, menghapus bidang yang ditentukan, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
-## Hapus field
+## Menghapus bidang
 
-1. Ikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Panggil `removeField(...)` untuk nama bidang target.
 3. Simpan dokumen yang diperbarui.
 

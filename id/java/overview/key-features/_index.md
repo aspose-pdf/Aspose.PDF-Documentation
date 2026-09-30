@@ -1,19 +1,19 @@
 ---
-title: Fitur Utama Aspose.PDF for Java
-linktitle: Fitur Utama
+title: "Fitur utama Aspose.PDF for Java"
+linktitle: "Fitur utama"
 type: docs
 weight: 20
 url: /id/java/key-features/
 description: Aspose.PDF for Python via .NET menyoroti fitur utamanya, termasuk versi PDF yang didukung dan opsi manipulasi PDF yang tersedia.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Fitur Umum Aspose.PDF for Java
-Abstract: Aspose.PDF for Python via .NET adalah perpustakaan yang kuat dengan menawarkan fitur yang luas untuk mengelola dan memanipulasi dokumen PDF. Ia mendukung standar PDF yang sudah ada dan memudahkan pembacaan serta ekspor PDF ke berbagai format gambar seperti BMP, GIF, JPEG, dan PNG. Pengguna dapat mengkonfigurasi properti dokumen, atribut halaman, serta mengelola teks, paragraf, tautan, grafik, dan lampiran. Perpustakaan ini unggul dalam kemampuan konversi, memungkinkan transformasi PDF yang mulus ke format Word, Excel, PowerPoint, dan HTML, antara lain, sekaligus mengonversi berbagai format kembali ke PDF.
+AlternativeHeadline: "Fitur umum Aspose.PDF for Java"
+Abstract: "Aspose.PDF for Python via .NET adalah pustaka yang kuat dengan menawarkan fitur yang luas untuk mengelola dan memanipulasi dokumen PDF. Ia mendukung standar PDF yang sudah ada dan memudahkan pembacaan serta ekspor PDF ke berbagai format gambar seperti BMP, GIF, JPEG, dan PNG. Pengguna dapat mengkonfigurasi properti dokumen, atribut halaman, serta mengelola teks, paragraf, tautan, grafik, dan lampiran. Pustaka ini unggul dalam kemampuan konversi, memungkinkan transformasi PDF yang mulus ke format Word, Excel, PowerPoint, dan HTML, antara lain, sekaligus mengonversi berbagai format kembali ke PDF."
 ---
-## Fitur Umum
+## Fitur umum
 
 - Ditulis sepenuhnya dalam Java, bekerja dengan JDK 1.8 ke atas
 - Mendukung semua aplikasi Java
@@ -143,7 +143,7 @@ Aspose.PDF for Java mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, dan 1.7.
 - Impor dan ekspor FDF.
 - Impor dan ekspor XFDF.
 
-## Stempel dan Watermark
+## Stempel dan watermark
 
 - Tambahkan stempel teks (pada semua halaman, atau pada halaman tertentu).
 - Tambahkan stempel gambar (pada semua halaman, atau pada halaman tertentu).
@@ -152,7 +152,7 @@ Aspose.PDF for Java mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, dan 1.7.
 - Tambahkan teks ke header dan footer.
 - Tambahkan gambar ke header dan footer.
 
-## Tautan dan Aksi
+## Tautan dan aksi
 
 - Buat tautan aplikasi.
 - Buat tautan lokal.
@@ -161,7 +161,7 @@ Aspose.PDF for Java mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, dan 1.7.
 - Hapus aksi buka dokumen.
 - Buat tautan dokumen PDF.
 
-## Keamanan dan Tanda Tangan
+## Keamanan dan tanda tangan
 
 - Enkripsi dan dekripsi PDF.
 - Atur hak istimewa dokumen.

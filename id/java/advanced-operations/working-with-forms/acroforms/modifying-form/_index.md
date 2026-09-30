@@ -5,22 +5,22 @@ type: docs
 weight: 45
 url: /id/java/modifying-form/
 description: Modifikasi bidang AcroForm dalam dokumen PDF menggunakan Aspose.PDF for Java, termasuk menghapus teks, mengatur batas, menata tampilan bidang, dan menghapus bidang.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Modifikasi dan sesuaikan bidang formulir PDF dengan Java
+AlternativeHeadline: "Memodifikasi dan menyesuaikan bidang formulir PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara memodifikasi konten AcroForm menggunakan Aspose.PDF for Java. Artikel ini mencakup penghapusan teks dari sumber formulir Typewriter, pengaturan dan pembacaan batas panjang bidang teks, mengubah tampilan font bidang formulir, serta menghapus bidang tertentu berdasarkan namanya.
 ---
 Pemeliharaan Form sering melibatkan pengeditan pada tingkat bidang serta pembersihan sumber daya halaman terkait formulir.
 
-## Hapus teks dalam sumber daya formulir yang disematkan
+## Menghapus teks dalam sumber daya formulir yang disematkan
 
 Gunakan contoh ini ketika konten formulir Typewriter harus dikosongkan tanpa menghapus objek formulir itu sendiri.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui sumber daya formulir halaman dan temukan formulir Typewriter.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui sumber daya formulir halaman dan temukan formulir Typewriter.
 1. Bersihkan fragmen teks yang diserap dan simpan dokumen.
 
 ```java
@@ -41,11 +41,11 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 }
 ```
 
-## Atur batas panjang field teks
+## Mengatur batas panjang bidang teks
 
 Gunakan contoh ini ketika bidang teks hanya boleh menerima sejumlah karakter terbatas.
 
-1. Buat sebuah [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) fasad dan mengikat PDF sumber.
+1. Buat sebuah fasad [`FormEditor`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) dan mengikat PDF sumber.
 1. Atur panjang maksimum untuk bidang target.
 1. Simpan dokumen yang diperbarui.
 
@@ -62,13 +62,13 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan batas panjang bidang teks
+## Mendapatkan batas panjang bidang teks
 
 Gunakan contoh ini ketika Anda perlu memeriksa panjang maksimum saat ini dari sebuah bidang teks.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Akses bidang target dari koleksi formulir.
-1. Baca batas dari [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) dan keluarkan.
+1. Baca batas dari [`TextBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) dan keluarkan.
 
 ```java
 public static void getFieldLimit(Path inputFile) {
@@ -81,12 +81,12 @@ public static void getFieldLimit(Path inputFile) {
 }
 ```
 
-## Ubah font field formulir
+## Mengubah font bidang formulir
 
-Gunakan contoh ini ketika field teks yang ada harus menggunakan font atau tampilan yang berbeda.
+Gunakan contoh ini ketika bidang teks yang ada harus menggunakan font atau tampilan yang berbeda.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Akses target [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) dan atur tampilan default baru.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Akses [`TextBoxField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) target dan atur tampilan default baru.
 1. Simpan PDF yang diperbarui.
 
 ```java
@@ -103,11 +103,11 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 }
 ```
 
-## Hapus field formulir berdasarkan nama
+## Menghapus bidang formulir berdasarkan nama
 
-Gunakan contoh ini ketika field tertentu harus dihapus dari AcroForm.
+Gunakan contoh ini ketika bidang tertentu harus dihapus dari AcroForm.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Hapus bidang target dari form berdasarkan namanya.
 1. Simpan dokumen yang diperbarui.
 

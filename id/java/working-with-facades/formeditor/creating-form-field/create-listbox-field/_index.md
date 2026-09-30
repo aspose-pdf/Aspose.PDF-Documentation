@@ -1,20 +1,20 @@
 ---
-title: Buat Bidang ListBox
-linktitle: Buat Bidang ListBox
+title: "Membuat bidang ListBox"
+linktitle: "Membuat bidang ListBox"
 type: docs
 weight: 40
 url: /id/java/create-listbox-field/
-description: Pelajari cara menambahkan bidang list box ke dokumen PDF dalam Java menggunakan facade FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara menambahkan bidang list box ke dokumen PDF dalam Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Buat bidang list box dalam PDF dengan Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, mendefinisikan item daftar, menambahkan bidang list box, dan menyimpan dokumen yang dimodifikasi menggunakan facade FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Membuat bidang list box dalam PDF dengan Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF yang ada, mendefinisikan item daftar, menambahkan bidang list box, dan menyimpan dokumen yang dimodifikasi menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
 Gunakan `FormEditorExamples.createListBoxField(...)` untuk membuat kotak daftar dengan item yang telah ditentukan.
 
-## Buat bidang list box
+## Membuat bidang list box
 
-1. Mengikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Tentukan item daftar yang tersedia dengan `setItems(...)`.
 3. Tambahkan bidang kotak daftar dengan nilai default dan persegi panjangnya.
 4. Simpan dokumen yang diperbarui.

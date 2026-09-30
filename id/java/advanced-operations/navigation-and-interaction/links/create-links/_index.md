@@ -1,27 +1,27 @@
 ---
-title: Buat Tautan PDF di Java
-linktitle: Buat Tautan
+title: "Membuat tautan PDF di Java"
+linktitle: "Membuat tautan"
 type: docs
 weight: 10
 url: /id/java/create-links/
 description: Pelajari cara membuat tautan PDF internal, eksternal, dan remote di Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Buat anotasi tautan di file PDF dengan Java
+AlternativeHeadline: "Membuat anotasi tautan di file PDF dengan Java"
 Abstract: Artikel ini menunjukkan cara membuat anotasi tautan menggunakan Aspose.PDF for Java. Ini mencakup tindakan peluncuran, navigasi dokumen jarak jauh, navigasi halaman dalam dokumen, dan tautan web berbasis URI dengan melampirkan tindakan ke objek LinkAnnotation.
 ---
 Aspose.PDF for Java menggunakan `LinkAnnotation` bersama dengan objek aksi untuk mendefinisikan perilaku tautan.
 
-## Buat tautan aksi peluncuran
+## Membuat tautan aksi peluncuran
 
 Gunakan contoh ini ketika anotasi tautan harus meluncurkan file eksternal atau target.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pilih halaman target.
-1. Buat sebuah [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dan mengonfigurasi batas serta warnanya.
-1. Tetapkan sebuah [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) dan simpan dokumen.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pilih halaman target.
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dan mengonfigurasi batas serta warnanya.
+1. Tetapkan sebuah [`LaunchAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) dan simpan dokumen.
 
 ```java
 public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
@@ -41,13 +41,13 @@ public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputF
 }
 ```
 
-## Buat tautan go-to remote
+## Membuat tautan go-to remote
 
 Gunakan contoh ini ketika tautan harus membuka halaman di dokumen PDF lain.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) pada halaman target.
-1. Tetapkan sebuah [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) dan simpan file output.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) pada halaman target.
+1. Tetapkan sebuah [`GoToRemoteAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) dan simpan file output.
 
 ```java
 public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
@@ -63,13 +63,13 @@ public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path out
 }
 ```
 
-## Buat tautan go-to internal
+## Membuat tautan go-to internal
 
 Gunakan contoh ini ketika tautan harus menavigasi ke halaman lain di dalam dokumen PDF yang sama.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dan konfigurasikan tampilannya.
-1. Tetapkan sebuah [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) ke halaman tujuan dan simpan dokumen.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dan konfigurasikan tampilannya.
+1. Tetapkan sebuah [`GoToAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) ke halaman tujuan dan simpan dokumen.
 
 ```java
 public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
@@ -93,13 +93,13 @@ public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFil
 }
 ```
 
-## Buat tautan URI
+## Membuat tautan URI
 
 Gunakan contoh ini ketika tautan harus membuka sumber daya web melalui aksi URI.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) pada halaman.
-1. Tetapkan sebuah [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) dan simpan file output.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) pada halaman.
+1. Tetapkan sebuah [`GoToURIAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) dan simpan file output.
 
 ```java
 public static void createLinkAnnotationGoToUriAction(Path inputFile, Path outputFile) {

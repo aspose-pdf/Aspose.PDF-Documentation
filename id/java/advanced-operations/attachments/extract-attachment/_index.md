@@ -1,26 +1,26 @@
 ---
-title: Ekstrak Lampiran dari PDF
-linktitle: Ekstrak Lampiran
+title: "Mengekstrak lampiran dari PDF"
+linktitle: "Mengekstrak lampiran"
 type: docs
 weight: 50
 url: /id/java/extract-attachment/
 description: Pelajari cara mengekstrak file tertanam dan anotasi lampiran file dari dokumen PDF dalam Java menggunakan Aspose.PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ekstrak satu atau semua file tertanam dari PDF dengan Java
+AlternativeHeadline: "Mengekstrak satu atau semua file tertanam dari PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara mengekstrak lampiran dari dokumen PDF dengan Aspose.PDF for Java. Artikel ini mencakup mengekstrak satu lampiran bernama, menyimpan setiap file tersemat ke folder output, membaca metadata file, dan mengekspor konten dari anotasi FileAttachment pada sebuah halaman.
 ---
 Aspose.PDF for Java mendukung beberapa alur ekstraksi tergantung pada cara lampiran disimpan dalam dokumen.
 
-## Ekstrak satu lampiran berdasarkan nama
+## Mengekstrak satu lampiran berdasarkan nama
 
 Gunakan contoh ini ketika Anda perlu menyimpan satu file tersemat tertentu dari sebuah PDF.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui koleksi file tersemat hingga nama lampiran yang diperlukan ditemukan.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui koleksi file tersemat hingga nama lampiran yang diperlukan ditemukan.
 1. Salin aliran lampiran ke file output dan berhenti setelah ekstraksi.
 
 ```java
@@ -48,9 +48,9 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 }
 ```
 
-## Cetak parameter file tersemat
+## Mencetak parameter file tersemat
 
-Metode pembantu ini mencetak metadata yang disimpan dalam sebuah [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/) objek.
+Metode pembantu ini mencetak metadata yang disimpan dalam sebuah objek [`FileParams`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/).
 
 1. Periksa apakah objek parameter file ada.
 1. Baca nilai checksum, tanggal pembuatan, tanggal modifikasi, dan ukuran yang tersedia.
@@ -71,11 +71,11 @@ public static void printFileParams(FileParams params) {
 }
 ```
 
-## Ekstrak semua lampiran tersemat
+## Mengekstrak semua lampiran tersemat
 
 Gunakan contoh ini ketika setiap file tersemat dalam PDF harus ditulis ke direktori output.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterasikan koleksi file tersemat dan tentukan nama file output yang aman untuk setiap item.
 1. Cetak metadata, simpan setiap aliran lampiran, dan lanjutkan hingga semua file diekspor.
 
@@ -110,12 +110,12 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 }
 ```
 
-## Ekstrak anotasi lampiran file
+## Mengekstrak anotasi lampiran file
 
 Gunakan contoh ini ketika file dilampirkan melalui anotasi halaman bukan hanya melalui koleksi file tersemat.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Temukan yang pertama [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) di halaman.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Temukan yang pertama [`FileAttachmentAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) di halaman.
 1. Baca spesifikasi file-nya, ekspor isinya, dan cetak jalur tujuan.
 
 ```java

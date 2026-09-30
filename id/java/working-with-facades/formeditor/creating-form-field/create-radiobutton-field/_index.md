@@ -1,20 +1,20 @@
 ---
-title: Buat Field RadioButton
-linktitle: Buat Field RadioButton
+title: "Membuat Field RadioButton"
+linktitle: "Membuat Field RadioButton"
 type: docs
 weight: 50
 url: /id/java/create-radiobutton-field/
-description: Pelajari cara menambahkan field radio button ke dokumen PDF dalam Java menggunakan fasad FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara menambahkan bidang radio button ke dokumen PDF dalam Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Buat field radio button dalam PDF dengan Java
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, mengonfigurasi pengaturan tata letak radio button, membuat field radio button, dan menyimpan dokumen yang dimodifikasi menggunakan fasad FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Membuat bidang radio button dalam PDF dengan Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF yang ada, mengonfigurasi pengaturan tata letak radio button, membuat bidang radio button, dan menyimpan dokumen yang dimodifikasi menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
-Gunakan `FormEditorExamples.createRadioButtonField(...)` untuk membuat field tombol radio dengan opsi yang telah ditentukan.
+Gunakan `FormEditorExamples.createRadioButtonField(...)` untuk membuat bidang tombol radio dengan opsi yang telah ditentukan.
 
-## Buat field radio button
+## Membuat bidang radio button
 
-1. Ikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Konfigurasikan celah tombol radio, orientasi, dan ukuran item.
 3. Definisikan item tombol radio.
 4. Tambahkan bidang tombol radio dengan pilihan default dan persegi panjangnya.

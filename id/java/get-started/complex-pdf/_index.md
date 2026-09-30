@@ -5,26 +5,26 @@ type: docs
 weight: 30
 url: /id/java/complex-pdf-example/
 description: Aspose.PDF for Java memungkinkan Anda membuat dokumen PDF yang lebih kompleks yang berisi gambar, fragmen teks, dan tabel dalam satu file.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Buat PDF yang kompleks menggunakan Java
+AlternativeHeadline: "Membuat PDF yang kompleks menggunakan Java"
 Abstract: Artikel ini menunjukkan cara membuat PDF yang lebih kompleks di Java menggunakan Aspose.PDF. Contohnya menambahkan sebuah gambar, judul yang diformat, blok teks deskriptif, dan sebuah tabel dengan sel header yang bergaya serta baris jadwal yang dihasilkan, kemudian menyimpan hasilnya sebagai dokumen PDF.
 ---
 The [Halo Dunia](/pdf/id/java/hello-world-example/) contoh mencakup jalur pembuatan PDF paling sederhana. contoh ini membangun di atas alur kerja itu dan membuat dokumen yang lebih kaya yang menggabungkan grafik, teks, dan konten tabel.
 
 Untuk membuat dokumen PDF yang lebih kompleks di Java:
 
-1. Buat sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Tambahkan gambar ke [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dengan `page.addImage(...)` dan sebuah target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-1. Buat header [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) dan atur font, ukuran, perataan, dan [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
-1. Buat yang kedua [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) untuk paragraf deskripsi.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dengan batas, padding, dan gaya header.
-1. Tambahkan baris jadwal yang dihasilkan ke [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
-1. Tambahkan [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) ke [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) paragraf.
-1. Simpan PDF keluaran [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan sebuah [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Tambahkan gambar ke [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dengan `page.addImage(...)` dan sebuah [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) target.
+1. Buat header [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) dan atur font, ukuran, perataan, dan [`Position`](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. Buat yang kedua [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) untuk paragraf deskripsi.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dengan batas, padding, dan gaya header.
+1. Tambahkan baris jadwal yang dihasilkan ke [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
+1. Tambahkan [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) ke [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) paragraf.
+1. Simpan PDF keluaran [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 Kode Java berikut didasarkan pada `GetStartedExamples.java`.
 

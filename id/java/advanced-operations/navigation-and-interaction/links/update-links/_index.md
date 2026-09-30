@@ -1,25 +1,25 @@
 ---
-title: Perbarui Tautan PDF di Java
-linktitle: Perbarui Tautan
+title: "Memperbarui tautan PDF di Java"
+linktitle: "Memperbarui tautan"
 type: docs
 weight: 20
 url: /id/java/update-links/
 description: Pelajari cara memperbarui tampilan tautan PDF dan tujuan di Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Perbarui tampilan anotasi tautan dan tujuan web dalam file PDF dengan Java
+AlternativeHeadline: "Memperbarui tampilan anotasi tautan dan tujuan web dalam file PDF dengan Java"
 Abstract: Artikel ini menunjukkan cara memperbarui anotasi tautan yang ada menggunakan Aspose.PDF for Java. Contoh-contoh menunjukkan perubahan warna teks yang dicakup oleh tautan, memperbarui warna anotasi tautan, dan mengganti URI target untuk tautan web.
 ---
 Tautan yang ada dapat diedit dengan menemukan anotasi tautan pada halaman dan memperbarui baik penampilannya maupun aksinya.
 
-## Perbarui warna teks yang ditautkan
+## Memperbarui warna teks yang ditautkan
 
 Gunakan contoh ini ketika area teks yang dicakup oleh anotasi tautan harus diwarnai ulang.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Temukan anotasi tautan dan buat persegi pencarian teks dari setiap area anotasi.
 1. Ubah warna fragmen teks yang cocok dan simpan dokumen.
 
@@ -47,12 +47,12 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 }
 ```
 
-## Perbarui warna batas tautan
+## Memperbarui warna batas tautan
 
 Gunakan contoh ini ketika warna yang terlihat dari anotasi tautan yang ada harus diubah.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui anotasi halaman dan filter untuk [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) objek.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui anotasi halaman dan filter untuk objek [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
 1. Perbarui warna anotasi tautan dan simpan dokumen.
 
 ```java
@@ -70,12 +70,12 @@ public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
 }
 ```
 
-## Perbarui tujuan tautan web
+## Memperbarui tujuan tautan web
 
 Gunakan contoh ini ketika tautan web yang ada harus mengarah ke URI baru.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Temukan anotasi tautan yang tindakannya adalah [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Temukan anotasi tautan yang tindakannya adalah [`GoToURIAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Ganti URI dan simpan dokumen yang diperbarui.
 
 ```java

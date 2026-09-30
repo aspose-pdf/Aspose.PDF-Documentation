@@ -1,13 +1,13 @@
 ---
-title: Tambahkan Lapisan ke File PDF dalam Ruby
-linktitle: Tambahkan Lapisan ke File PDF dalam Ruby
+title: "Menambahkan lapisan ke file PDF dalam Ruby"
+linktitle: "Menambahkan lapisan ke file PDF dalam Ruby"
 type: docs
 weight: 20
 url: /id/java/add-layers-to-pdf-file-in-ruby/
 description: Pelajari cara menambahkan lapisan ke file PDF dalam Ruby menggunakan Aspose.PDF untuk struktur dokumen yang lebih baik dan kontrol visibilitas.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Tambahkan Lapisan
+## Aspose.PDF - tambahkan lapisan
 
 <ins> Untuk menambahkan Layers dalam dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **AddLayers**.
 
@@ -69,8 +69,8 @@ doc.save(data_dir + "Layers-Added.pdf")
 puts "Added Layers Successfully, please check the output file."
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh\u0412\u00A0**Add Layers (Aspose.PDF)**\u0412\u00A0dari\u0412\u00A0salah satu situs pengkodean sosial yang disebutkan di bawah:
+Unduh **Add Layers (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

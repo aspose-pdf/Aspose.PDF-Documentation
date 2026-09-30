@@ -1,21 +1,21 @@
 ---
-title: Menambahkan Teks ke PDF di Java
-linktitle: Menambahkan Teks ke PDF
+title: "Menambahkan teks ke PDF di Java"
+linktitle: "Menambahkan teks ke PDF"
 type: docs
 weight: 10
 url: /id/java/add-text-to-pdf-file/
 description: Pelajari cara menambahkan teks, fragmen HTML, daftar, tautan, dan font khusus ke dokumen PDF dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan teks, tautan, HTML, dan font ke file PDF dengan Java
+AlternativeHeadline: "Menambahkan teks, tautan, HTML, dan font ke file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menambahkan dan menata teks dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup penyisipan teks sederhana, tata letak paragraf, hyperlink, teks kanan-ke-kiri, penataan font, transparansi, border, fragmen HTML dan LaTeX, teks gradien, serta font khusus yang dimuat dari file atau aliran.
 ---
 Aspose.PDF for Java mendukung penyisipan teks biasa, tata letak lanjutan, penataan, gradien, HTML, LaTeX, dan font khusus.
 
-## Tambahkan fragmen teks sederhana
+## Menambahkan fragmen teks sederhana
 
 Gunakan contoh ini ketika sebuah string teks pendek harus ditempatkan pada koordinat halaman yang tetap.
 
@@ -37,7 +37,7 @@ public static void addTextSimpleCase(Path outputFile) {
   }
 ```
 
-## Tambahkan paragraf di dalam persegi panjang
+## Menambahkan paragraf di dalam persegi panjang
 
 Gunakan contoh ini ketika blok teks yang lebih besar harus mengalir di dalam area yang dibatasi.
 
@@ -72,12 +72,12 @@ public static void addParagraph(Path outputFile) throws Exception {
 }
 ```
 
-## Tambahkan paragraf dengan pengaturan indentasi yang berbeda
+## Menambahkan paragraf dengan pengaturan indentasi yang berbeda
 
 Gunakan contoh ini ketika baris pertama dan baris-baris berikutnya harus menggunakan aturan indentasi yang berbeda.
 
 1. Buat dokumen PDF baru dan tambahkan halaman.
-1. Siapkan fragmen teks bersama dan buat beberapa `TextParagraph` objek.
+1. Siapkan fragmen teks bersama dan buat beberapa objek `TextParagraph`.
 1. Konfigurasikan indentasi untuk setiap paragraf, tambahkan mereka, dan simpan dokumen.
 
 ```java
@@ -113,7 +113,7 @@ public static void addParagraphsIndents(Path outputFile) throws Exception {
 }
 ```
 
-## Masukkan teks dengan pemutusan baris manual
+## Memasukkan teks dengan pemutusan baris manual
 
 Gunakan contoh ini ketika satu fragmen teks harus berisi baris baru yang eksplisit.
 
@@ -144,7 +144,7 @@ public static void addNewLine(Path outputFile) {
 }
 ```
 
-## Periksa jeda baris yang terdeteksi
+## Memeriksa jeda baris yang terdeteksi
 
 Gunakan contoh ini ketika Anda perlu meninjau output notifikasi yang terkait dengan tata letak teks dan pembungkus baris.
 
@@ -177,7 +177,7 @@ public static void determineLineBreak(Path outputFile) {
 }
 ```
 
-## Ukur lebar teks secara dinamis
+## Mengukur lebar teks secara dinamis
 
 Gunakan contoh ini ketika lebar karakter dan string harus diukur sebelum keputusan tata letak dibuat.
 
@@ -210,12 +210,12 @@ public static void getTextWidthDynamically(Path outputFile) {
 }
 ```
 
-## Tambahkan teks dengan segmen hyperlink
+## Menambahkan teks dengan segmen hyperlink
 
 Gunakan contoh ini ketika satu bagian dari fragmen teks harus berperilaku sebagai tautan web.
 
 1. Buat dokumen PDF baru dan tambahkan halaman.
-1. Bangun sebuah `TextFragment` dengan beberapa `TextSegment` objek.
+1. Bangun sebuah `TextFragment` dengan beberapa objek `TextSegment`.
 1. Tetapkan hyperlink dan gaya pada segmen target, lalu simpan dokumen.
 
 ```java
@@ -240,7 +240,7 @@ public static void addTextWithHyperlink(Path outputFile) {
 }
 ```
 
-## Tambahkan teks kanan-ke-kiri
+## Menambahkan teks kanan-ke-kiri
 
 Gunakan contoh ini ketika dokumen harus menampilkan konten skrip dari kanan ke kiri dengan perataan yang tepat.
 
@@ -266,7 +266,7 @@ public static void addTextWithRtlText(Path outputFile) {
 }
 ```
 
-## Tambahkan teks bergaya dan segmen mirip formula
+## Menambahkan teks bergaya dan segmen mirip formula
 
 Gunakan contoh ini ketika teks biasa dan segmen seperti subskrip harus menggunakan keadaan teks yang berbeda dalam satu output.
 
@@ -324,7 +324,7 @@ private static void addSegment(TextFragment formula, String text, TextState stat
 }
 ```
 
-## Tambahkan teks bergaris bawah
+## Menambahkan teks bergaris bawah
 
 Gunakan contoh ini ketika fragmen teks harus secara terlihat menggunakan gaya garis bawah.
 
@@ -350,7 +350,7 @@ public static void addUnderlineText(Path outputFile) {
 }
 ```
 
-## Tambahkan teks transparan di atas bentuk berwarna
+## Menambahkan teks transparan di atas bentuk berwarna
 
 Gunakan contoh ini ketika teks harus muncul dengan transparansi di atas grafik latar belakang.
 
@@ -380,7 +380,7 @@ public static void addTextTransparent(Path outputFile) {
 }
 ```
 
-## Tambahkan teks tak terlihat
+## Menambahkan teks tak terlihat
 
 Gunakan contoh ini ketika teks yang dapat dicari atau tersembunyi harus ada tanpa rendering yang terlihat.
 
@@ -407,7 +407,7 @@ public static void addTextInvisible(Path outputFile) {
 }
 ```
 
-## Tambahkan teks dengan batas persegi panjang
+## Menambahkan teks dengan batas persegi panjang
 
 Gunakan contoh ini ketika teks harus digambar bersama dengan persegi panjang pembatasnya.
 
@@ -437,7 +437,7 @@ public static void addTextBorder(Path outputFile) {
 }
 ```
 
-## Tambahkan teks coret
+## Menambahkan teks coret
 
 Gunakan contoh ini ketika teks harus menggunakan format coret.
 
@@ -467,7 +467,7 @@ public static void addStrikeoutText(Path outputFile) {
 }
 ```
 
-## Terapkan bayangan gradien aksial pada teks
+## Menerapkan bayangan gradien aksial pada teks
 
 Gunakan contoh ini ketika teks harus menggunakan isian gradien linear alih-alih warna padat.
 
@@ -495,7 +495,7 @@ public static void applyGradientAxialShadingToText(Path outputFile) {
 }
 ```
 
-## Terapkan gradasi radial pada teks
+## Menerapkan gradasi radial pada teks
 
 Gunakan contoh ini ketika teks harus menggunakan isian gradien radial.
 
@@ -523,7 +523,7 @@ public static void applyGradientRadialShadingToText(Path outputFile) {
 }
 ```
 
-## Tambahkan teks berformat gaya HTML secara inline
+## Menambahkan teks berformat gaya HTML secara inline
 
 Gunakan contoh ini ketika format superskrip dan subskrip harus dimasukkan melalui markup HTML.
 
@@ -543,7 +543,7 @@ public static void addTextHtmlFragment(Path outputFile) {
 }
 ```
 
-## Tambahkan fragmen teks LaTeX
+## Menambahkan fragmen teks LaTeX
 
 Gunakan contoh ini ketika konten matematika atau yang diformat dengan TeX harus ditampilkan di dalam PDF.
 
@@ -564,7 +564,7 @@ public static void addTextLatexFragment(Path outputFile) {
 }
 ```
 
-## Tambahkan fragmen HTML kaya
+## Menambahkan fragmen HTML kaya
 
 Gunakan contoh ini ketika halaman harus merender konten HTML terstruktur seperti judul, paragraf, dan tautan.
 
@@ -589,7 +589,7 @@ public static void addHtmlFragment(Path outputFile) {
 }
 ```
 
-## Tambahkan fragmen HTML dengan status teks yang di-override
+## Menambahkan fragmen HTML dengan status teks yang di-override
 
 Gunakan contoh ini ketika konten HTML yang diimpor harus mewarisi pengaturan font dan warna yang dikontrol.
 
@@ -620,7 +620,7 @@ public static void addHtmlFragmentOverrideTextState(Path outputFile) {
 }
 ```
 
-## Gunakan font khusus yang dimuat dari file
+## Menggunakan font khusus yang dimuat dari file
 
 Gunakan contoh ini ketika teks harus menggunakan font yang dimuat langsung dari jalur file font.
 
@@ -647,7 +647,7 @@ public static void useCustomFontFromFile(Path outputFile) {
 }
 ```
 
-## Gunakan font khusus yang dimuat dari aliran
+## Menggunakan font khusus yang dimuat dari aliran
 
 Gunakan contoh ini ketika font khusus harus dibuka dari aliran dan disisipkan ke dalam PDF.
 

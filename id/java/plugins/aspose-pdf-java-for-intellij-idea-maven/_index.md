@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /id/java/aspose-pdf-java-for-intellij-idea-maven/
 description: Integrasikan Aspose.PDF for Java di IntelliJ IDEA dengan Maven. Permudah proses pengembangan Anda untuk solusi PDF tingkat lanjut.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 ## Pendahuluan
 
@@ -21,7 +21,7 @@ Aspose.PDF for Java adalah komponen pembuatan dokumen PDF yang memungkinkan apli
 
 ### Aspose.PDF Java untuk IntelliJ IDEA - Maven
 
-- Aspose.PDF Java untuk IntelliJ IDEA (Maven) adalah Plugin IntelliJ IDEA yang memungkinkan Anda membuat proyek Maven (misalnya proyek yang dibuat berisi dependensi Maven API Aspose.PDF for Java) dan mengunduh contoh kode sumber APIВ  untuk menggunakan API Aspose.PDF for Java.
+- Aspose.PDF Java untuk IntelliJ IDEA (Maven) adalah Plugin IntelliJ IDEA yang memungkinkan Anda membuat proyek Maven (misalnya proyek yang dibuat berisi dependensi Maven API Aspose.PDF for Java) dan mengunduh contoh kode sumber API  untuk menggunakan API Aspose.PDF for Java.
 - Plugin ini membantu Anda bekerja dengan API Aspose.PDF for Java di dalam IntelliJ IDEA favorit Anda.
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -34,30 +34,30 @@ Wizard 1: Aspose.PDF Maven Project
 - Wizard Proyek Aspose Maven pada Plugin memungkinkan pengembang membuat proyek Maven API Aspose.PDF for Java.
 - Referensi dependensi Maven API Aspose.PDF for Java secara otomatis diambil dari [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) dan ditambahkan ke pom.xml.
 - Proyek yang dibuat akan selalu berisi versi Maven Dependency terbaru yang tersedia untuk API Aspose.PDF for Java.
-- Langkah-langkah wizard juga menampilkan\u0412\u00A0dengan opsi untuk mengunduh [Contoh Kode Sumber untuk menggunakan API Aspose.PDF for Java](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- Langkah-langkah wizard juga menampilkan dengan opsi untuk mengunduh [Contoh Kode Sumber untuk menggunakan API Aspose.PDF for Java](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 
 Wizard 2: Contoh Aspose.PDF
 
-- Aspose.PDF Examples Wizard memungkinkan Anda membuat/menyalin Contoh Kode Sumber yang diunduh\u0412\u00A0dari Aspose.PDF for Java API ke dalam proyek Anda. Semua contoh untuk kategori yang dipilih akan disalin ke folder paket proyek\u0027s\u0412\u00A0 \u0022com.aspose.pdf.examples\u0022 bersama dengan sumber daya yang diperlukan dalam folder \u0022src/main/resources\u0022 yang dibutuhkan untuk menjalankan contoh.
+- Aspose.PDF Examples Wizard memungkinkan Anda membuat/menyalin Contoh Kode Sumber yang diunduh dari Aspose.PDF for Java API ke dalam proyek Anda. Semua contoh untuk kategori yang dipilih akan disalin ke folder paket proyek\u0027s  \u0022com.aspose.pdf.examples\u0022 bersama dengan sumber daya yang diperlukan dalam folder \u0022src/main/resources\u0022 yang dibutuhkan untuk menjalankan contoh.
 - Contoh Kode Sumber Aspose.PDF for Java API dimaksudkan untuk mendemonstrasikan berbagai penggunaan API tersebut.
 
-## Persyaratan Sistem dan Platform yang Didukung
+## Persyaratan sistem dan platform yang didukung
 
-### Persyaratan Sistem
+### Persyaratan sistem
 
-- Microsoft Windows 8/7/Vista/2003/XP (termasuk 64-bit)В  / Linux GNOME atau KDE desktop / Mac OS X 10.5 atau lebih tinggi
+- Microsoft Windows 8/7/Vista/2003/XP (termasuk 64-bit)  / Linux GNOME atau KDE desktop / Mac OS X 10.5 atau lebih tinggi
 - RAM minimal 1 GB, RAM yang direkomendasikan 2 GB
 - Ruang hard disk 300 MB + setidaknya 1 G untuk cache
 - Resolusi layar minimum 1024x768
 - JDK 1.8 atau lebih tinggi disarankan
 - Koneksi Internet (2 MB atau lebih cepat disarankan)
 
-### Platform yang Didukung
+### Platform yang didukung
 
 Plugin mendukung Versi IntelliJ IDEA berikut:
 
 - 13.0.1 (Community / Ultimate Edition)
-- 13.1.2В  (CE / UE)
+- 13.1.2  (CE / UE)
 - 14.0.2 (CE/ UE)
 - 14.1.5 (CE/ UE)
 
@@ -69,8 +69,8 @@ Anda perlu terlebih dahulu menginstal IntelliJ IDEA CE / UE sebelum mengunduh pl
 
 Untuk mengunduh IntellliJ IDEA
 
-1. Buka <https://www.jetbrains.com/idea/download/>
-1. Pilih OS yang sedang Anda gunakan
+1. Buka <https://www.jetbrains.com/idea/download/>.
+1. Pilih OS yang sedang Anda gunakan.
 1. Klik pada unduhan UE atau CE.
 
 ### Mengunduh plugin Aspose.PDF Java untuk IntelliJ IDEA (Maven)
@@ -93,11 +93,11 @@ Menginstal Aspose.PDF untuk IntelliJ IDEA - Maven
 
 Menggunakan Aspose.PDF untuk IntelliJ IDEA - Maven
 
-## Demo Video
+## Demo video
 
 Silakan periksa [video](https://www.youtube.com/watch?v=KoGdZhoWzcI&feature=youtu.be) di bawah untuk melihat Aspose.PDF Maven Project Wizard dan Aspose.PDF Example Wizard dalam aksi.
 
-## Dukungan, Perluas, dan Kontribusi
+## Dukungan, pengembangan, dan kontribusi
 
 ### Dukungan
 
@@ -109,11 +109,11 @@ Silakan gunakan salah satu pelacak masalah proyek berikut:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### Perluas dan Berkontribusi
+### Memperluas dan berkontribusi
 
 Plugin Aspose.PDF Java untuk IntelliJ IDEA (Maven) bersifat open source dan kode sumbernya tersedia di situs-situs coding sosial utama yang tercantum di bawah ini. Pengembang dianjurkan untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang sudah ada sehingga orang lain juga dapat memanfaatkannya.
 
-### Kode Sumber
+### Kode sumber
 
 Anda dapat memperoleh kode sumber terbaru dari salah satu lokasi berikut.
 

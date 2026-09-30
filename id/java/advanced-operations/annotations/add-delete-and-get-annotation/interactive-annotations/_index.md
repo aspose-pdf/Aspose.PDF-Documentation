@@ -1,27 +1,27 @@
 ---
-title: Anotasi Interaktif menggunakan Java
-linktitle: Anotasi Interaktif
+title: "Anotasi interaktif menggunakan Java"
+linktitle: "Anotasi interaktif"
 type: docs
 weight: 60
 url: /id/java/interactive-annotations/
 description: Pelajari cara menambahkan, memeriksa, dan menghapus anotasi tautan dalam dokumen PDF menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Bekerja dengan anotasi PDF interaktif di Java.
+AlternativeHeadline: "Bekerja dengan anotasi PDF interaktif di Java"
 Abstract: Artikel ini menjelaskan cara bekerja dengan anotasi tautan interaktif dalam file PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup penemuan teks, pembuatan anotasi tautan di atas area teks yang cocok, membaca anotasi tautan yang ada, dan menghapusnya.
 ---
 Anotasi interaktif dalam bagian ini berfokus pada alur kerja berbasis tautan dan tombol yang merespons tindakan pengguna di dalam penampil PDF.
 
-## Tambahkan anotasi tautan
+## Menambahkan anotasi tautan
 
 Gunakan contoh ini ketika Anda perlu menempatkan tautan yang dapat diklik di atas teks yang ditemukan di halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Temukan fragmen teks target dan buat satu [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) di atas persegi panjangnya.
-1. Tetapkan sebuah [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) dan simpan dokumen yang diperbarui.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Temukan fragmen teks target dan buat satu [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) di atas persegi panjangnya.
+1. Tetapkan sebuah [`GoToURIAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) dan simpan dokumen yang diperbarui.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -41,13 +41,13 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Dapatkan anotasi tautan
+## Mendapatkan anotasi tautan
 
 Contoh ini memindai koleksi anotasi halaman dan melaporkan lokasi setiap anotasi tautan.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterasi melalui anotasi pada halaman target.
-1. Filter anotasi berdasarkan [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` dan cetak persegi panjang mereka.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui anotasi pada halaman target.
+1. Filter anotasi berdasarkan [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` dan cetak persegi panjang mereka.
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -61,12 +61,12 @@ public static void linkGet(Path inputFile) {
 }
 ```
 
-## Hapus anotasi tautan
+## Menghapus anotasi tautan
 
 Gunakan pendekatan ini ketika anotasi tautan yang ada harus dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Kumpulkan anotasi yang tipenya adalah [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kumpulkan anotasi yang tipenya adalah [`AnnotationType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. Hapus anotasi yang dikumpulkan dan simpan file output.
 
 ```java
@@ -86,12 +86,12 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan anotasi garis
+## Menambahkan anotasi garis
 
 Contoh ini membuat anotasi garis interaktif dengan gaya panah, pengaturan batas, dan catatan popup.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) dengan titik awal dan akhir.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`LineAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) dengan titik awal dan akhir.
 1. Konfigurasikan tampilannya dan anotasi popup, kemudian simpan dokumen.
 
 ```java
@@ -123,12 +123,12 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan tombol navigasi
+## Menambahkan tombol navigasi
 
 Gunakan contoh ini ketika PDF harus menyertakan tombol halaman sebelumnya dan halaman berikutnya untuk navigasi interaktif.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pastikan dokumen memiliki halaman yang diperlukan.
-1. Buat [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) kontrol dengan tindakan navigasi yang telah ditentukan sebelumnya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pastikan dokumen memiliki halaman yang diperlukan.
+1. Buat [`ButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) kontrol dengan tindakan navigasi yang telah ditentukan sebelumnya.
 1. Tambahkan tombol ke koleksi formulir dan simpan dokumen yang diperbarui.
 
 ```java
@@ -158,12 +158,12 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan tombol cetak
+## Menambahkan tombol cetak
 
 Contoh ini membuat sebuah tombol yang memicu perintah cetak saat pengguna mengkliknya.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) dan tetapkan tindakan cetak yang telah ditentukan sebelumnya.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat [`ButtonField`](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) dan tetapkan tindakan cetak yang telah ditentukan sebelumnya.
 1. Konfigurasikan batas dan latar belakang tombol, tambahkan ke formulir, dan simpan dokumen.
 
 ```java

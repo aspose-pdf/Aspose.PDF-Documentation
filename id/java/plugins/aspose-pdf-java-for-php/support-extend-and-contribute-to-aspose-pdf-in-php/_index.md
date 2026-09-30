@@ -1,11 +1,11 @@
 ---
-title: Dukungan, Perluas, dan Berkontribusi pada Aspose.Pdf di PHP
-linktitle: Dukungan, Perluas, dan Berkontribusi pada Aspose.Pdf di PHP
+title: "Dukungan, perluas, dan berkontribusi pada Aspose.PDF di PHP"
+linktitle: "Dukungan, perluas, dan berkontribusi pada Aspose.PDF di PHP"
 type: docs
 weight: 30
 url: /id/java/support-extend-and-contribute-to-aspose-pdf-in-php/
 description: Temukan cara mendukung dan memperluas Aspose.PDF di PHP, serta berkontribusi untuk meningkatkan kemampuan pemrosesan PDF dalam aplikasi PHP Anda.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 ## Dukungan
 
@@ -13,15 +13,15 @@ Sejak hari-hari pertama Aspose, kami tahu bahwa hanya memberikan produk yang bai
 
 Itulah mengapa kami menawarkan dukungan gratis. Siapa pun yang menggunakan produk kami, baik mereka telah membelinya atau sedang menggunakan versi evaluasi, berhak mendapatkan perhatian dan rasa hormat penuh dari kami.
 
-Anda dapat melaporkan masalah atau saran apa pun yang terkait denganВ Aspose.Cells Java untuk PHP menggunakan salah satu platform berikut:
+Anda dapat melaporkan masalah atau saran apa pun yang terkait dengan Aspose.Cells Java untuk PHP menggunakan salah satu platform berikut:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-## Perluas dan Berkontribusi
+## Memperluas dan berkontribusi
 
 Aspose.PDF Java for PHP bersifat open source dan kode sumbernya tersedia di situs web coding sosial utama yang tercantum di bawah ini. Pengembang diundang untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang sudah ada, sehingga orang lain juga dapat mendapat manfaat darinya.
 
-## Kode Sumber
+## Kode sumber
 
 Anda dapat memperoleh kode sumber terbaru dari salah satu lokasi berikut
 

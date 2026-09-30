@@ -1,18 +1,18 @@
 ---
-title: Hapus Item Daftar
-linktitle: Hapus Item Daftar
+title: "Menghapus item daftar"
+linktitle: "Menghapus item daftar"
 type: docs
 weight: 20
 url: /id/java/del-list-item/
-description: Pelajari cara menghapus item dari bidang list dalam dokumen PDF di Java menggunakan facade FormEditor di Aspose.PDF.
-lastmod: "2026-09-29"
+description: "Pelajari cara menghapus item dari bidang list dalam dokumen PDF di Java menggunakan fasad FormEditor di Aspose.PDF."
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Hapus item list dari bidang formulir PDF di Java.
-Abstract: Artikel ini menunjukkan cara mengikat PDF yang ada, menghapus item tertentu dari bidang list, dan menyimpan dokumen yang diperbarui menggunakan facade FormEditor di Aspose.PDF for Java.
+AlternativeHeadline: "Menghapus item list dari bidang formulir PDF di Java"
+Abstract: "Artikel ini menunjukkan cara mengikat PDF yang ada, menghapus item tertentu dari bidang list, dan menyimpan dokumen yang diperbarui menggunakan fasad FormEditor di Aspose.PDF for Java."
 ---
-## Hapus item dari bidang list.
+## Menghapus item dari bidang list
 
-1. Ikat PDF sumber ke `FormEditor` fasad.
+1. Ikat PDF sumber ke fasad `FormEditor`.
 2. Panggil `delListItem(...)` untuk bidang target dan item yang akan dihapus.
 3. Simpan dokumen yang diperbarui.
 

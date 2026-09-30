@@ -1,23 +1,23 @@
 ---
-title: Ekstrak Konten yang Ditandai dari PDF dalam Java
-linktitle: Ekstrak Konten yang Ditandai
+title: "Mengekstrak konten yang ditandai dari PDF dalam Java"
+linktitle: "Mengekstrak konten yang ditandai"
 type: docs
 weight: 20
 url: /id/java/extract-tagged-content-from-tagged-pdfs/
 description: Pelajari cara memeriksa konten PDF yang ditandai dalam Java dengan Aspose.PDF, termasuk akses konten yang ditandai, akses struktur akar, dan elemen struktur anak.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 Gunakan API ini ketika Anda perlu memeriksa pohon struktur logis dari PDF yang ditandai dan memeriksa atau memperbarui metadata elemen struktur.
 
-## Dapatkan metadata konten yang ditandai
+## Mendapatkan metadata konten yang ditandai
 
 Gunakan contoh ini ketika Anda membutuhkan akses ke wadah konten yang ditandai dan ingin mendefinisikan metadata dokumen dasar seperti judul dan bahasa.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Dapatkan [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) objek dari dokumen.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Dapatkan objek [`ITaggedContent`](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) dari dokumen.
 1. Setel metadata konten bertag dan simpan file output.
 
 ```java
@@ -31,11 +31,11 @@ public static void getTaggedContent(Path outputFile) {
 }
 ```
 
-## Dapatkan struktur akar dari PDF bertanda
+## Mendapatkan struktur akar dari PDF bertanda
 
 Contoh ini menunjukkan cara memeriksa objek akar yang mewakili pohon struktur dari PDF yang ditandai.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan mendapatkan konten yang ditandai.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan dapatkan konten yang ditandai.
 1. Atur metadata dokumen yang diperlukan.
 1. Baca dan cetak akar pohon struktur serta elemen akar logis, kemudian simpan file.
 
@@ -54,11 +54,11 @@ public static void getRootStructure(Path outputFile) {
 }
 ```
 
-## Akses dan perbarui elemen struktur anak
+## Mengakses dan memperbarui elemen struktur anak
 
 Gunakan contoh ini ketika Anda perlu mengiterasi elemen anak dalam pohon struktur, memeriksa properti mereka, dan memperbarui metadata yang dipilih.
 
-1. Buka PDF bertanda sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF bertanda sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Baca elemen anak dari akar pohon struktur dan cetak properti yang tersedia.
 1. Akses elemen anak dari anak akar pertama, perbarui metadata mereka, dan simpan dokumen.
 

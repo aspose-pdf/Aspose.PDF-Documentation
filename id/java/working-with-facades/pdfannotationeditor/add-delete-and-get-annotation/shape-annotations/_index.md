@@ -1,16 +1,16 @@
 ---
-title: Anotasi Bentuk via Java
-linktitle: Anotasi Bentuk
+title: "Anotasi bentuk via Java"
+linktitle: "Anotasi bentuk"
 type: docs
 weight: 40
 url: /id/java/pdfannotationeditor-class/shape-annotations/
 description: Pelajari cara menambah, memeriksa, dan menghapus anotasi persegi, lingkaran, poligon, dan polyline dalam dokumen PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
 AlternativeHeadline: Bekerja dengan anotasi PDF geometris di Java
 Abstract: Artikel ini menjelaskan cara membuat, memeriksa, dan menghapus anotasi geometris dalam dokumen PDF menggunakan Java. Artikel ini mencakup anotasi persegi, lingkaran, poligon, dan polyline dengan warna, opacity, popup, dan konfigurasi titik.
 ---
-## Tambahkan anotasi bentuk
+## Menambahkan anotasi bentuk
 
 1. Buka PDF input dan pilih halaman serta persegi panjang yang akan berisi anotasi bentuk.
 2. Buat anotasi bentuk yang diperlukan, kemudian atur judul, warna, opasitas, dan titik-titiknya bila diperlukan.

@@ -1,11 +1,11 @@
 ---
-title: Dukung, Perluas, dan Berkontribusi pada Aspose.PDF di Ruby
-linktitle: Dukung, Perluas, dan Berkontribusi pada Aspose.PDF di Ruby
+title: "Dukung, perluas, dan berkontribusi pada Aspose.PDF di Ruby"
+linktitle: "Dukung, perluas, dan berkontribusi pada Aspose.PDF di Ruby"
 type: docs
 weight: 30
 url: /id/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 description: Pelajari cara mendukung, memperluas, dan berkontribusi pada Aspose.PDF untuk Ruby guna meningkatkan fiturnya dan memperbaiki solusi PDF Anda.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
 ## Dukungan
 
@@ -17,11 +17,11 @@ Anda dapat mencatat masalah atau saran apa pun yang terkait dengan Aspose.PDF Ja
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-## Perluas dan Berkontribusi
+## Memperluas dan berkontribusi
 
 Aspose.PDF Java for Ruby bersifat open source dan kode sumbernya tersedia di situs web pengkodean sosial utama yang tercantum di bawah ini. Pengembang dianjurkan untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang ada, sehingga orang lain juga dapat memanfaatkannya.
 
-## Kode Sumber
+## Kode sumber
 
 Anda dapat mendapatkan kode sumber terbaru dari salah satu lokasi berikut:
 

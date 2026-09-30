@@ -1,13 +1,13 @@
 ---
-title: Hapus Metadata dari PDF di PHP
-linktitle: Hapus Metadata dari PDF di PHP
+title: "Menghapus metadata dari PDF di PHP"
+linktitle: "Menghapus metadata dari PDF di PHP"
 type: docs
 weight: 70
 url: /id/java/remove-metadata-from-pdf-in-php/
 description: Jelajahi cara menghapus metadata dari dokumen PDF di PHP menggunakan Aspose.PDF untuk meningkatkan privasi dan keamanan dokumen.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Hapus Metadata
+## Aspose.PDF - hapus metadata
 
 Untuk menghapus Metadata dari dokumen PDF menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **RemoveMetadata**.
 
@@ -35,8 +35,8 @@ print "Removed metadata successfully, please check output file." . PHP_EOL;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Remove Metadata (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Remove Metadata (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)

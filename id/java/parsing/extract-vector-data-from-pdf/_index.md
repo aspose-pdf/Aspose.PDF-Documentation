@@ -1,22 +1,22 @@
 ---
-title: Ekstrak Data Vektor dari file PDF menggunakan Java
-linktitle: Ekstrak Data Vektor dari PDF
+title: "Mengekstrak data vektor dari file PDF menggunakan Java"
+linktitle: "Mengekstrak data vektor dari PDF"
 type: docs
 weight: 80
 url: /id/java/extract-vector-data-from-pdf/
 description: Aspose.PDF memudahkan ekstraksi data vektor dari file PDF. Anda dapat memperoleh data vektor, seperti posisi, batas persegi panjang, dan output SVG.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-## Akses data vektor dari dokumen PDF
+## Mengakses data vektor dari dokumen PDF
 
 Gunakan `GraphicsAbsorber` untuk memeriksa elemen grafik vektor pada sebuah halaman dan menulis geometri dasar mereka ke file teks.
 
-1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
-1. Buat sebuah [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) untuk mengumpulkan operasi grafik vektor.
-1. Iterasi melalui yang diekstrak [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) objek dan membaca koleksi persegi panjang, posisi, dan operator mereka.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target untuk mengumpulkan operasi grafik vektor.
+1. Iterasikan melalui objek [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) yang diekstrak dan membaca koleksi persegi panjang, posisi, dan operator mereka.
 1. Bangun teks keluaran dengan detail geometri dan hitungan operator untuk setiap elemen.
 1. Tuliskan data vektor yang diekstrak ke file keluaran.
 
@@ -41,10 +41,10 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 }
 ```
 
-## Simpan grafik vektor halaman ke SVG
+## Menyimpan grafik vektor halaman ke SVG
 
-1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
-1. Dapatkan target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) dari dokumen.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Dapatkan [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target dari dokumen.
 1. Panggil `page.trySaveVectorGraphics(outputFile.toString())` untuk mengekspor konten grafik vektor dari halaman itu langsung ke SVG.
 
 ```java
@@ -56,13 +56,13 @@ public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
 }
 ```
 
-## Simpan setiap elemen yang diekstrak ke file SVG terpisah
+## Menyimpan setiap elemen yang diekstrak ke file SVG terpisah
 
-1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
-1. Buat sebuah [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target.
 1. Buat direktori output untuk subpath yang diekstrak sebelum menulis file apa pun.
-1. Iterasi melalui yang diekstrak [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) objek dan panggilan `saveToSvg(...)` untuk setiap elemen.
-1. Simpan setiap elemen yang diekstrak ke file SVG terpisah
+1. Iterasikan melalui objek [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) yang diekstrak dan panggilan `saveToSvg(...)` untuk setiap elemen.
+1. Simpan setiap elemen yang diekstrak ke file SVG terpisah.
 
 ```java
 public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws Exception {
@@ -81,12 +81,12 @@ public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws 
 }
 ```
 
-## Gabungkan elemen yang diekstrak menjadi satu SVG
+## Menggabungkan elemen yang diekstrak menjadi satu SVG
 
-1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
-1. Buat sebuah [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target.
 1. Buat markup pembungkus SVG yang akan berisi fragmen vektor yang digabungkan.
-1. Iterasi melalui yang diekstrak [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) objek dan tambahkan setiap fragmen SVG yang dihasilkan.
+1. Iterasikan melalui objek [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) yang diekstrak dan tambahkan setiap fragmen SVG yang dihasilkan.
 1. Tuliskan output SVG yang digabungkan ke file target.
 
 ```java
@@ -106,12 +106,12 @@ public static void extractListOfElementsToSingleImage(Path inputFile, Path outpu
 }
 ```
 
-## Ekstrak satu elemen vektor
+## Mengekstrak satu elemen vektor
 
-1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instance.
-1. Buat sebuah [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Dapatkan yang diperlukan [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) dari koleksi elemen yang diekstrak.
-1. Periksa apakah elemen yang dipilih adalah [XFormPlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) dan turun ke elemen bersarangnya bila diperlukan.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) dan kunjungi [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target.
+1. Dapatkan yang diperlukan [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) dari koleksi elemen yang diekstrak.
+1. Periksa apakah elemen yang dipilih adalah [`XFormPlacement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) dan turun ke elemen bersarangnya bila diperlukan.
 1. Simpan elemen vektor yang dipilih ke file SVG output.
 
 ```java

@@ -1,13 +1,13 @@
 ---
-title: Dapatkan Halaman Tertentu dalam File PDF di PHP
-linktitle: Dapatkan Halaman Tertentu dalam File PDF di PHP
+title: "Mendapatkan halaman tertentu dalam file PDF di PHP"
+linktitle: "Mendapatkan halaman tertentu dalam file PDF di PHP"
 type: docs
 weight: 30
 url: /id/java/get-a-particular-page-in-a-pdf-file-in-php/
 description: Pelajari cara mengambil halaman tertentu dari file PDF di PHP menggunakan Aspose.PDF untuk pemrosesan halaman yang ditargetkan.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Dapatkan Halaman
+## Aspose.PDF - dapatkan halaman
 
 Untuk mendapatkan Halaman Tertentu dalam dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil kelas **GetPage**.
 
@@ -34,8 +34,8 @@ print "Process completed successfully!";
 
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh **Get Page (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah:
+Unduh **Get Page (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPage.php)

@@ -1,22 +1,22 @@
 ---
-title: Menambahkan Gambar ke PDF menggunakan Java
-linktitle: Menambahkan Gambar
+title: "Menambahkan gambar ke PDF menggunakan Java"
+linktitle: "Menambahkan gambar"
 type: docs
 weight: 10
 url: /id/java/add-image-to-existing-pdf-file/
 description: Pelajari cara menambahkan gambar ke file PDF yang ada dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
 AlternativeHeadline: Menambahkan gambar ke file PDF yang ada dengan Java
 Abstract: Artikel ini menunjukkan cara menambahkan gambar ke dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup penempatan gambar pada koordinat tetap, menambahkan gambar melalui operator halaman tingkat rendah, menetapkan teks alternatif untuk aksesibilitas, dan menyematkan data gambar dengan kompresi Flate compression.
 ---
 Aspose.PDF for Java mendukung baik penempatan gambar tingkat tinggi maupun gambar berbasis operator tingkat rendah.
 
-## Tambahkan gambar dengan koordinat halaman
+## Menambahkan gambar dengan koordinat halaman
 
 Gunakan contoh ini ketika Anda perlu menempatkan gambar pada posisi tetap di halaman PDF.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
 1. Panggil `page.addImage()` dengan jalur gambar sumber dan persegi panjang target.
 1. Simpan file PDF yang dihasilkan.
 
@@ -30,11 +30,11 @@ public static void addImage(Path imageFile, Path outputFile) {
 }
 ```
 
-## Tambahkan gambar dengan operator halaman
+## Menambahkan gambar dengan operator halaman
 
 Gunakan contoh ini ketika Anda membutuhkan kontrol tingkat rendah atas penempatan dan skala gambar melalui operator halaman.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka aliran gambar sumber.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka aliran gambar sumber.
 1. Tambahkan gambar ke sumber daya halaman dan hitung persegi panjang target.
 1. Tuliskan operator grafis yang diperlukan dan simpan dokumen.
 
@@ -74,12 +74,12 @@ public static void addImageUsingOperators(Path imageFile, Path outputFile) throw
 }
 ```
 
-## Tambahkan gambar dan atur teks alternatif
+## Menambahkan gambar dan mengatur teks alternatif
 
 Gunakan contoh ini ketika gambar harus menyertakan metadata aksesibilitas untuk pembaca layar.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan gambar ke halaman.
-1. Ambil yang disisipkan [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) dari sumber halaman.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan gambar ke halaman.
+1. Ambil yang disisipkan [`XImage`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) dari sumber halaman.
 1. Atur teks alternatif dan simpan PDF.
 
 ```java
@@ -100,13 +100,13 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 }
 ```
 
-## Tambahkan gambar dengan kompresi Flate
+## Menambahkan gambar dengan kompresi Flate
 
 Gunakan contoh ini ketika Anda ingin menyematkan data gambar dengan menggunakan kompresi Flate.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka aliran gambar.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka aliran gambar.
 1. Tambahkan gambar ke sumber daya halaman dengan `ImageFilterType.Flate`.
-1. Menggambar gambar melalui operator halaman dan menyimpan hasilnya.
+1. Gambar gambar melalui operator halaman dan menyimpan hasilnya.
 
 ```java
 public static void addImageToPdfWithFlateCompression(Path imageFile, Path outputFile) throws Exception {

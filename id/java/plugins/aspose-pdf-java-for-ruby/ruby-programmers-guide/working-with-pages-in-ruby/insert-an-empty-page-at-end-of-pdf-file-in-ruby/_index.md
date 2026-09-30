@@ -1,13 +1,13 @@
 ---
-title: Sisipkan Halaman Kosong di Akhir File PDF dengan Ruby
-linktitle: Sisipkan Halaman Kosong di Akhir File PDF dengan Ruby
+title: "Menyisipkan halaman kosong di akhir file PDF dengan Ruby"
+linktitle: "Menyisipkan halaman kosong di akhir file PDF dengan Ruby"
 type: docs
 weight: 60
 url: /id/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
 description: Temukan cara menyisipkan halaman kosong di akhir dokumen PDF menggunakan Ruby dengan Aspose.PDF, menambahkan fleksibilitas pada tugas pemrosesan PDF Anda.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Sisipkan Halaman Kosong di Akhir File PDF
+## Aspose.PDF - sisipkan halaman kosong di akhir file PDF
 
 Untuk Menyisipkan Halaman Kosong di akhir dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **InsertEmptyPageAtEndOfFile**.
 
@@ -33,8 +33,8 @@ pdf.save(data_dir+ "output.pdf")
 puts "Empty page added successfully!"
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh **Insert an Empty Page at End of PDF File (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+Unduh **Insert an Empty Page at End of PDF File (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)

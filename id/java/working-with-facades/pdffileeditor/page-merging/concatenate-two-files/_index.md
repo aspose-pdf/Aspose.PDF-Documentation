@@ -1,25 +1,25 @@
 ---
-title: Menggabungkan Dua File PDF
-linktitle: Menggabungkan Dua File PDF
+title: "Menggabungkan dua file PDF"
+linktitle: "Menggabungkan dua file PDF"
 type: docs
 weight: 60
 url: /id/java/concatenate-two-files/
-description: Gabungkan dua file PDF menjadi satu dokumen di Java dengan facade PdfFileEditor.
-lastmod: "2026-09-29"
+description: "Gabungkan dua file PDF menjadi satu dokumen di Java dengan fasad PdfFileEditor."
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Gabungkan dua file PDF menjadi satu dokumen output dengan Java
+AlternativeHeadline: "Menggabungkan dua file PDF menjadi satu dokumen output dengan Java"
 Abstract: Pelajari cara menggabungkan dua file PDF dengan Aspose.PDF for Java. Contoh Java menggunakan PdfFileEditor dan overload `concatenate` berbasis array untuk menggabungkan dua dokumen sumber menjadi satu PDF output.
 ---
-## Gabungkan dua file PDF
+## Menggabungkan dua file PDF
 
 Artikel ini memetakan langsung ke `mergePdfDocuments` contoh dalam `PdfFileEditorExamples.java`.
 
 ### Langkah
 
-1. Buat `PdfFileEditor` instansi.
+1. Buat instans `PdfFileEditor`.
 2. Berikan dua jalur file input sebagai array string.
 3. Panggil `concatenate` dengan array dan jalur file output.
 4. Simpan PDF yang digabungkan.

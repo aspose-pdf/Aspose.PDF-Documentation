@@ -1,26 +1,26 @@
 ---
-title: Tambahkan Cap Halaman ke PDF dalam Java
-linktitle: Menambahkan Cap Halaman
+title: "Menambahkan cap halaman ke PDF dalam Java"
+linktitle: "Menambahkan cap halaman"
 type: docs
 weight: 30
 url: /id/java/page-stamps-in-the-pdf-file/
 description: Pelajari cara menambahkan cap halaman PDF sebagai lapisan atas atau latar belakang dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan cap berbasis halaman ke file PDF dengan Java
+AlternativeHeadline: "Menambahkan cap berbasis halaman ke file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menambahkan stempel halaman ke dokumen PDF menggunakan Aspose.PDF for Java. Contohnya memuat halaman PDF lain sebagai stempel, mengkonfigurasikannya sebagai latar belakang, dan menerapkannya ke halaman target.
 ---
 Aspose.PDF for Java dapat menerapkan halaman dari PDF lain sebagai stempel atau menambahkan lapisan penomoran halaman.
 
-## Tambahkan stempel halaman dari PDF lain
+## Menambahkan stempel halaman dari PDF lain
 
 Gunakan contoh ini ketika halaman dari PDF terpisah harus digunakan sebagai stempel latar belakang.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) dari halaman PDF eksternal.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`PdfPageStamp`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) dari halaman PDF eksternal.
 1. Konfigurasikan stamp dan tambahkan ke halaman target, kemudian simpan hasilnya.
 
 ```java
@@ -34,12 +34,12 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 }
 ```
 
-## Tambahkan cap nomor halaman standar
+## Menambahkan cap nomor halaman standar
 
 Gunakan contoh ini ketika halaman target harus menampilkan nomor saat ini dengan pemformatan teks khusus.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat dan konfigurasikan sebuah [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat dan konfigurasikan sebuah [`PageNumberStamp`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Tambahkan stempel ke halaman dan simpan dokumen.
 
 ```java
@@ -62,12 +62,12 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan stempel nomor halaman dengan angka Romawi
+## Menambahkan stempel nomor halaman dengan angka romawi
 
 Gunakan contoh ini ketika penomoran halaman harus dimulai dari nilai khusus dan menggunakan angka Romawi kapital.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) dan konfigurasikan penomoran angka Romawi.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`PageNumberStamp`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) dan konfigurasikan penomoran angka Romawi.
 1. Tambahkan stempel ke semua halaman dan simpan PDF.
 
 ```java

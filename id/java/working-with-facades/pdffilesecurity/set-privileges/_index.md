@@ -1,28 +1,28 @@
 ---
-title: Atur Hak Istimewa pada File PDF yang Ada
-linktitle: Atur Hak Istimewa pada File PDF yang Ada
+title: "Mengatur hak istimewa pada file PDF yang ada"
+linktitle: "Mengatur hak istimewa pada file PDF yang ada"
 type: docs
 weight: 40
 url: /id/java/set-privileges/
-description: Pelajari cara mengatur hak istimewa PDF di Java dengan facade PdfFileSecurity.
-lastmod: "2026-09-29"
+description: "Pelajari cara mengatur hak istimewa PDF di Java dengan fasad PdfFileSecurity."
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Kelola izin PDF dan kontrol akses di Java
+AlternativeHeadline: "Mengelola izin PDF dan kontrol akses di Java"
 Abstract: Pelajari cara mengontrol izin PDF dengan Aspose.PDF for Java. Set contoh Java mencakup penerapan hak istimewa tanpa kata sandi, penerapan hak istimewa dengan kata sandi pengguna dan pemilik, serta alur kerja pembaruan hak istimewa gaya try yang mengembalikan flag keberhasilan.
 ---
-## Atur hak istimewa pada file PDF yang ada
+## Mengatur hak istimewa pada file PDF yang ada
 
 Gunakan alur kerja ini ketika Anda perlu mengubah apa yang dapat dilakukan pengguna dengan PDF yang ada.
 
 ### Langkah
 
-1. Buat sebuah `PdfFileSecurity` instansi.
+1. Buat sebuah instans `PdfFileSecurity`.
 2. Gabungkan PDF sumber dengan `bindPdf`.
-3. Buat sebuah `DocumentPrivilege` objek dan mengkonfigurasi tindakan yang diizinkan.
+3. Buat sebuah objek `DocumentPrivilege` dan mengkonfigurasi tindakan yang diizinkan.
 4. Panggil yang sesuai `setPrivilege` atau `trySetPrivilege` kelebihan beban.
 5. Simpan hasilnya jika pembaruan berhasil, kemudian tutup objek.
 

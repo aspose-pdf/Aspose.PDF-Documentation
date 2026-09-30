@@ -1,11 +1,11 @@
 ---
-title: Memformat Teks PDF di Java
-linktitle: Pemformatan Teks di dalam PDF
+title: "Memformat teks PDF di Java"
+linktitle: "Pemformatan teks di dalam PDF"
 type: docs
 weight: 70
 url: /id/java/text-formatting-inside-pdf/
 description: Pelajari cara memformat teks dalam dokumen PDF di Java menggunakan spasi, catatan, daftar, tata letak multi‑kolom, dan opsi penataan.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,7 +15,7 @@ Abstract: Artikel ini menjelaskan cara memformat teks dalam dokumen PDF mengguna
 ---
 Aspose.PDF for Java menawarkan kontrol pemformatan teks untuk spasi, daftar, catatan, tata letak inline, dan komposisi multi-kolom.
 
-## Atur jarak baris sederhana
+## Mengatur jarak baris sederhana
 
 Gunakan contoh ini ketika teks paragraf harus menggunakan nilai spasi baris tetap.
 
@@ -41,7 +41,7 @@ public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exceptio
     }
 ```
 
-## Bandingkan mode spasi baris dengan font khusus
+## Membandingkan mode spasi baris dengan font khusus
 
 Gunakan contoh ini ketika jarak baris harus diuji dengan mode pemformatan yang berbeda untuk font yang sama.
 
@@ -79,7 +79,7 @@ public static void specifyLineSpacingSpecificCase(Path outputFile) throws Except
 }
 ```
 
-## Atur jarak karakter dengan fragmen teks
+## Mengatur jarak karakter dengan fragmen teks
 
 Gunakan contoh ini ketika teks yang sama harus ditampilkan dengan nilai spasi karakter yang berbeda.
 
@@ -109,7 +109,7 @@ private static TextFragment makeCharacterSpacingFragment(float spacing) {
 }
 ```
 
-## Atur jarak karakter di dalam paragraf teks
+## Mengatur jarak karakter di dalam paragraf teks
 
 Gunakan contoh ini ketika jarak karakter harus diterapkan di dalam paragraf teks yang terbatas.
 
@@ -139,7 +139,7 @@ public static void characterSpacingUsingTextParagraph(Path outputFile) {
 }
 ```
 
-## Buat daftar bullet dengan HTML
+## Membuat daftar bullet dengan HTML
 
 Gunakan contoh ini ketika pemformatan daftar tidak berurutan harus dihasilkan dari markup HTML.
 
@@ -160,7 +160,7 @@ public static void createBulletListHtmlVersion(Path outputFile) {
 }
 ```
 
-## Buat daftar bernomor dengan HTML
+## Membuat daftar bernomor dengan HTML
 
 Gunakan contoh ini ketika format daftar terurut harus diproduksi dari markup HTML.
 
@@ -181,7 +181,7 @@ public static void createNumberedListHtmlVersion(Path outputFile) {
 }
 ```
 
-## Buat daftar bullet dengan LaTeX
+## Membuat daftar bullet dengan LaTeX
 
 Gunakan contoh ini ketika format daftar tidak berurutan harus di-render dari markup TeX.
 
@@ -205,7 +205,7 @@ public static void createBulletListLatexVersion(Path outputFile) {
 }
 ```
 
-## Buat daftar bernomor dengan LaTeX
+## Membuat daftar bernomor dengan LaTeX
 
 Gunakan contoh ini ketika format daftar berurutan harus dihasilkan dari penanda TeX.
 
@@ -229,7 +229,7 @@ public static void createNumberedListLatexVersion(Path outputFile) {
 }
 ```
 
-## Buat daftar bullet dengan paragraf teks
+## Membuat daftar bullet dengan paragraf teks
 
 Gunakan contoh ini ketika daftar bullet manual harus dibangun dari fragmen teks biasa.
 
@@ -266,7 +266,7 @@ public static void createBulletList(Path outputFile) {
 }
 ```
 
-## Buat daftar bernomor dengan paragraf teks
+## Membuat daftar bernomor dengan paragraf teks
 
 Gunakan contoh ini ketika daftar bernomor manual harus dibangun dari fragmen teks biasa.
 
@@ -303,7 +303,7 @@ public static void createNumberedList(Path outputFile) {
 }
 ```
 
-## Tambahkan catatan kaki dasar
+## Menambahkan catatan kaki dasar
 
 Gunakan contoh ini ketika fragmen teks harus merujuk ke catatan kaki sederhana.
 
@@ -333,7 +333,7 @@ public static void addFootnote(Path outputFile) {
 }
 ```
 
-## Tambahkan catatan kaki dengan gaya teks khusus
+## Menambahkan catatan kaki dengan gaya teks khusus
 
 Gunakan contoh ini ketika konten catatan kaki harus menggunakan pengaturan font, ukuran, dan warna sendiri.
 
@@ -365,7 +365,7 @@ public static void addFootnoteCustomTextStyle(Path outputFile) {
 }
 ```
 
-## Tambahkan catatan kaki dengan teks penanda khusus
+## Menambahkan catatan kaki dengan teks penanda khusus
 
 Gunakan contoh ini ketika penanda catatan kaki yang terlihat harus diganti dengan teks khusus.
 
@@ -395,7 +395,7 @@ public static void addFootnoteCustomText(Path outputFile) {
 }
 ```
 
-## Sesuaikan garis pemisah catatan kaki
+## Menyesuaikan garis pemisah catatan kaki
 
 Gunakan contoh ini ketika garis yang memisahkan catatan kaki dari konten halaman harus diberi gaya secara eksplisit.
 
@@ -428,12 +428,12 @@ public static void addFootnoteWithCustomLineStyle(Path outputFile) {
 }
 ```
 
-## Tambahkan catatan kaki dengan gambar dan konten tabel
+## Menambahkan catatan kaki dengan gambar dan konten tabel
 
 Gunakan contoh ini ketika catatan kaki itu sendiri harus berisi konten kaya seperti gambar, teks, dan tabel.
 
 1. Buat dokumen PDF baru dan tambahkan halaman.
-1. Bangun sebuah `Note` objek dengan gambar, teks sebaris, dan tabel.
+1. Bangun sebuah objek `Note` dengan gambar, teks sebaris, dan tabel.
 1. Lampirkan ke fragmen teks utama dan simpan dokumen.
 
 ```java
@@ -468,7 +468,7 @@ public static void addFootnoteWithImageAndTable(Path outputFile) {
 }
 ```
 
-## Tambahkan catatan akhir
+## Menambahkan catatan akhir
 
 Gunakan contoh ini ketika fragmen teks harus merujuk ke konten catatan akhir alih-alih catatan kaki halaman.
 
@@ -505,7 +505,7 @@ private static String loremText() throws Exception {
 }
 ```
 
-## Tambahkan catatan akhir dengan teks penanda khusus
+## Menambahkan catatan akhir dengan teks penanda khusus
 
 Gunakan contoh ini ketika penanda catatan akhir harus menggunakan label tampilan khusus.
 
@@ -538,7 +538,7 @@ public static void addEndnoteCustomText(Path outputFile) throws Exception {
 }
 ```
 
-## Paksa konten tabel ke halaman baru
+## Memaksa konten tabel ke halaman baru
 
 Gunakan contoh ini ketika konten yang diformat harus secara eksplisit dimulai pada halaman baru.
 
@@ -569,7 +569,7 @@ public static void forceNewPage(Path outputFile) {
 }
 ```
 
-## Campur konten inline dalam satu alur paragraf
+## Mencampur konten inline dalam satu alur paragraf
 
 Gunakan contoh ini ketika teks dan gambar harus berlanjut dalam alur paragraf yang sama.
 
@@ -610,7 +610,7 @@ public static void usingInlineParagraphProperty(Path outputFile) {
 }
 ```
 
-## Buat tata letak teks multi-kolom
+## Membuat tata letak teks multi-kolom
 
 Gunakan contoh ini ketika teks bergaya artikel harus mengalir melalui beberapa kolom.
 
@@ -658,7 +658,7 @@ public static void createMultiColumnPdf(Path outputFile) throws Exception {
 }
 ```
 
-## Buat teks yang sejajar dengan penghentian tab khusus
+## Membuat teks yang sejajar dengan penghentian tab khusus
 
 Gunakan contoh ini ketika teks harus disejajarkan seperti tabel sederhana dengan menggunakan posisi henti tab.
 

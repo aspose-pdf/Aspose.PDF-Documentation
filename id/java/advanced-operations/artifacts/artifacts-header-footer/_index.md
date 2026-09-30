@@ -1,25 +1,25 @@
 ---
-title: Kelola Header dan Footer PDF menggunakan Java
-linktitle: Kelola Header dan Footer PDF
+title: "Mengelola header dan footer PDF menggunakan Java"
+linktitle: "Mengelola header dan footer PDF"
 type: docs
 weight: 70
 url: /id/java/artifacts-header-footer/
 description: Pelajari cara menambahkan dan menghapus artefak header dan footer dalam dokumen PDF menggunakan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Cara Menambahkan, Menyesuaikan, dan Menghapus Header serta Footer PDF Menggunakan Java
+AlternativeHeadline: "Menambahkan, menyesuaikan, dan menghapus header serta footer PDF menggunakan Java"
 Abstract: Artikel ini menjelaskan cara mengelola artefak header dan footer dalam dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup pembuatan objek `HeaderArtifact` dan `FooterArtifact` yang dapat digunakan kembali dengan keadaan teks khusus dan perataan, menambahkannya ke halaman, serta menghapus artefak header dan footer yang ada.
 ---
 Artefak header dan footer adalah elemen paginasi non-konten yang biasanya digunakan untuk label berulang, pengidentifikasi halaman, dan bingkai tata letak.
 
-## Buat artefak header
+## Membuat artefak header
 
 Gunakan pembantu ini ketika Anda membutuhkan artefak header yang dapat digunakan kembali dengan gaya teks dan perataan yang konsisten.
 
-1. Buat [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
+1. Buat [`HeaderArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
 1. Setel teksnya, pengaturan font, dan warna latar depan.
 1. Konfigurasikan perataan horizontal dan kembalikan artefak tersebut.
 
@@ -35,11 +35,11 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 }
 ```
 
-## Buat artefak footer
+## Membuat artefak footer
 
 Pembantu ini membuat artefak footer yang dapat digunakan kembali dengan pola styling yang sama seperti artefak header.
 
-1. Buat [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
+1. Buat [`FooterArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
 1. Atur teks, status teks, dan warna latar depan.
 1. Konfigurasikan perataan dan kembalikan artefak.
 
@@ -55,11 +55,11 @@ public static FooterArtifact createFooterArtifact(String text) {
 }
 ```
 
-## Tambahkan artefak header
+## Menambahkan artefak header
 
 Gunakan contoh ini ketika sebuah halaman harus menampilkan artefak header yang dapat digunakan kembali.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat artefak header melalui metode pembantu.
 1. Tambahkan artefak ke halaman dan simpan file keluaran.
 
@@ -73,11 +73,11 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan artefak footer
+## Menambahkan artefak footer
 
 Gunakan contoh ini ketika halaman harus menampilkan artefak footer dengan format yang dapat digunakan kembali.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Buat artefak footer melalui metode helper.
 1. Tambahkan artefak ke halaman dan simpan file keluaran.
 
@@ -91,11 +91,11 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Hapus artefak header dan footer
+## Menghapus artefak header dan footer
 
 Gunakan pendekatan ini ketika artefak header dan footer yang ada perlu dihapus dari halaman.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Iterasikan koleksi artefak halaman dalam urutan terbalik.
 1. Hapus artefak paginasi yang subtipe-nya adalah header atau footer, lalu simpan dokumen.
 

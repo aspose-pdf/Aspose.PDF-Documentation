@@ -1,13 +1,13 @@
 ---
-title: Ekstrak Teks Dari Semua Halaman Dokumen PDF di PHP
-linktitle: Ekstrak Teks Dari Semua Halaman Dokumen PDF di PHP
+title: "Mengekstrak teks dari semua halaman dokumen PDF di PHP"
+linktitle: "Mengekstrak teks dari semua halaman dokumen PDF di PHP"
 type: docs
 weight: 30
 url: /id/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 description: Temukan cara mengekstrak teks dari semua halaman dokumen PDF di PHP menggunakan Aspose.PDF untuk analisis teks.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Ekstrak Teks Dari Semua Halaman
+## Aspose.PDF - ekstrak teks dari semua halaman
 
 Untuk mengekstrak TextrFrom Semua Halaman dokumen PDF menggunakan **Aspose.PDF Java for PHP**, cukup panggil modul **ExtractTextFromAllPages**.
 Kode PHP
@@ -42,8 +42,8 @@ print "Text extracted successfully. Check output file." . PHP_EOL;
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-UnduhВ **Ekstrak Teks Dari Semua Halaman (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Ekstrak Teks Dari Semua Halaman (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)

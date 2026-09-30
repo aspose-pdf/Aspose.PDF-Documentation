@@ -1,13 +1,13 @@
 ---
-title: Bidang Tombol dan Gambar
-linktitle: Bidang Tombol dan Gambar
+title: "Bidang tombol dan gambar"
+linktitle: "Bidang tombol dan gambar"
 type: docs
 weight: 40
 url: /id/java/button-fields-and-images/
 description: Pelajari cara menambahkan penampilan gambar ke bidang tombol dalam formulir PDF menggunakan antarmuka Form di Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
-AlternativeHeadline: Tambahkan penampilan gambar ke bidang tombol PDF di Java
+AlternativeHeadline: "Menambahkan penampilan gambar ke bidang tombol PDF di Java"
 Abstract: Artikel ini menunjukkan cara menggunakan antarmuka Form di Aspose.PDF for Java untuk mengikat formulir PDF, memuat gambar sebagai aliran, mengisi bidang tombol gambar, dan menyimpan dokumen yang diperbarui.
 ---
 Contoh Java dalam `FormExamples.addImageAppearanceToButtonField(...)` menunjukkan cara memperbarui tampilan bidang tombol dengan aliran gambar.

@@ -1,30 +1,30 @@
 ---
-title: Dapatkan Metadata PDF
-linktitle: Dapatkan Metadata PDF
+title: "Mendapatkan metadata PDF"
+linktitle: "Mendapatkan metadata PDF"
 type: docs
 weight: 20
 url: /id/java/get-pdf-metadata/
 description: Pelajari cara membaca metadata PDF dalam Java dengan antarmuka PdfFileInfo.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Mengambil Metadata PDF Menggunakan Aspose.PDF for Java.
+AlternativeHeadline: "Mengambil metadata PDF menggunakan Aspose.PDF for Java"
 Abstract: Pelajari cara mengambil metadata PDF dengan Aspose.PDF for Java. Contoh Java ini membaca bidang standar seperti subjek, judul, kata kunci, pembuat, tanggal pembuatan, dan tanggal modifikasi, bersama dengan flag status file dan entri metadata khusus `Reviewer`.
 ---
-## Dapatkan metadata PDF
+## Mendapatkan metadata PDF
 
 Contoh ini membaca informasi dokumen standar, flag status file, dan kunci metadata khusus.
 
 ### Langkah
 
-1. Buat `PdfFileInfo` objek untuk PDF sumber.
+1. Buat objek `PdfFileInfo` untuk PDF sumber.
 2. Baca bidang metadata standar seperti subjek, judul, kata kunci, dan pembuat.
 3. Periksa flag status file seperti apakah file valid, terenkripsi, dilindungi kata sandi, atau portfolio.
 4. Baca nilai metadata khusus dengan `getMetaInfo`.
-5. Tutup `PdfFileInfo` instansi.
+5. Tutup instans `PdfFileInfo`.
 
 ### Contoh Java
 

@@ -5,27 +5,27 @@ type: docs
 weight: 150
 url: /id/java/stamp-class/
 description: Pelajari cara bekerja dengan kelas Stamp di Java untuk menambahkan stempel berbasis gambar, PDF, dan teks ke dokumen PDF.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan stempel gambar, PDF, dan teks ke dokumen PDF dalam Java.
+AlternativeHeadline: "Menambahkan stempel gambar, PDF, dan teks ke dokumen PDF dalam Java"
 Abstract: Bagian ini menjelaskan cara menggunakan kelas Stamp bersama dengan PdfFileStamp dalam Aspose.PDF for Java untuk menambahkan konten stempel yang dapat digunakan kembali ke dokumen PDF. Contoh Java saat ini mencakup stempel gambar, stempel halaman PDF, stempel teks dengan TextState khusus, stempel spesifik halaman, dan stempel gambar latar belakang dengan pengaturan opasitas, ukuran, dan rotasi.
 ---
-Java `StampExamples` kelas menunjukkan alur kerja utama pembuatan stempel yang tersedia melalui API Facades.
+Kelas `StampExamples` dalam Java menunjukkan alur kerja utama pembuatan stempel yang tersedia melalui API Facades.
 
-## Tambahkan stempel gambar
+## Menambahkan stempel gambar
 
 Gunakan alur kerja ini ketika file gambar harus ditempatkan pada PDF sebagai stempel.
 
 ### Langkah-langkah
 
-1. Buat sebuah `PdfFileStamp` instans dan mengikat PDF sumber.
-2. Buat sebuah `Stamp` objek dan mengikatnya ke file gambar.
+1. Buat sebuah instans `PdfFileStamp` dan mengikat PDF sumber.
+2. Buat sebuah objek `Stamp` dan mengikatnya ke file gambar.
 3. Setel pengenal stempel dan asal penempatan.
 4. Tambahkan stempel ke dokumen.
-5. Simpan hasilnya dan tutup objek facade.
+5. Simpan hasilnya dan tutup objek fasad.
 
 ### Contoh Java
 
@@ -46,17 +46,17 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 }
 ```
 
-## Tambahkan halaman PDF sebagai stempel
+## Menambahkan halaman PDF sebagai stempel
 
 Gunakan alur kerja ini ketika konten dari halaman PDF lain harus digunakan kembali sebagai konten stempel.
 
 ### Langkah-langkah
 
-1. Buat sebuah `PdfFileStamp` instance dan mengikat PDF target.
-2. Buat sebuah `Stamp` objek.
+1. Buat sebuah instans `PdfFileStamp` dan mengikat PDF target.
+2. Buat sebuah objek `Stamp`.
 3. Kaitkan stempel ke halaman tertentu dari file PDF lain.
 4. Atur nomor halaman target dan asal penempatan.
-5. Tambahkan stempel, simpan output, dan tutup objek facade.
+5. Tambahkan stempel, simpan output, dan tutup objek fasad.
 
 ### Contoh Java
 
@@ -77,17 +77,17 @@ public static void addPdfPageAsStamp(Path inputFile, Path stampPdf, Path outputF
 }
 ```
 
-## Tambahkan stempel teks dengan TextState
+## Menambahkan stempel teks dengan TextState
 
 Gunakan alur kerja ini ketika stempel harus berisi teks bergaya daripada gambar.
 
 ### Langkah-langkah
 
-1. Buat sebuah `PdfFileStamp` instans dan mengikat PDF sumber.
-2. Buat sebuah `Stamp` objek.
-3. Mengikat sebuah `FormattedText` logo dan kustom `TextState` ke stempel.
+1. Buat sebuah instans `PdfFileStamp` dan mengikat PDF sumber.
+2. Buat sebuah objek `Stamp`.
+3. Ikat sebuah `FormattedText` logo dan kustom `TextState` ke stempel.
 4. Atur asal stempel dan rotasi.
-5. Tambahkan stempel, simpan output, dan tutup objek facade.
+5. Tambahkan stempel, simpan output, dan tutup objek fasad.
 
 ### Contoh Java
 
@@ -109,17 +109,17 @@ public static void addTextStampWithTextState(Path inputFile, Path outputFile) {
 }
 ```
 
-## Tambahkan stempel ke halaman tertentu
+## Menambahkan stempel ke halaman tertentu
 
 Gunakan alur kerja ini ketika stempel harus muncul hanya pada halaman yang dipilih, bukan pada seluruh dokumen.
 
 ### Langkah-langkah
 
-1. Buat sebuah `PdfFileStamp` instans dan mengikat PDF sumber.
-2. Buat sebuah `Stamp` objek dan mengaitkannya ke file gambar.
+1. Buat sebuah instans `PdfFileStamp` dan mengikat PDF sumber.
+2. Buat sebuah objek `Stamp` dan mengaitkannya ke file gambar.
 3. Atur daftar halaman target, asal, dan ukuran gambar.
 4. Tambahkan stempel ke dokumen.
-5. Simpan hasilnya dan tutup objek facade.
+5. Simpan hasilnya dan tutup objek fasad.
 
 ### Contoh Java
 
@@ -141,17 +141,17 @@ public static void addStampToSpecificPages(Path inputFile, Path imageFile, Path 
 }
 ```
 
-## Tambahkan cap gambar latar belakang
+## Menambahkan cap gambar latar belakang
 
 Gunakan alur kerja ini ketika stempel harus muncul di belakang konten halaman dengan opasitas dan rotasi yang dikontrol.
 
 ### Langkah-langkah
 
-1. Buat sebuah `PdfFileStamp` instans dan mengikat PDF sumber.
-2. Buat sebuah `Stamp` objek dan mengikatnya ke file gambar.
+1. Buat sebuah instans `PdfFileStamp` dan mengikat PDF sumber.
+2. Buat sebuah objek `Stamp` dan mengikatnya ke file gambar.
 3. Tandai stempel sebagai konten latar belakang.
 4. Konfigurasikan opasitas, kualitas, rotasi, ukuran, dan asal.
-5. Tambahkan stempel, simpan output, dan tutup objek facade.
+5. Tambahkan stempel, simpan output, dan tutup objek fasad.
 
 ### Contoh Java
 

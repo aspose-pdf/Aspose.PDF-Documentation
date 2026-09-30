@@ -1,13 +1,13 @@
 ---
-title: Menggabungkan File PDF dalam Ruby
-linktitle: Menggabungkan File PDF dalam Ruby
+title: "Menggabungkan file PDF dalam Ruby"
+linktitle: "Menggabungkan file PDF dalam Ruby"
 type: docs
 weight: 10
 url: /id/java/concatenate-pdf-files-in-ruby/
 description: Gabungkan beberapa PDF menjadi satu dokumen menggunakan Ruby dan Aspose.PDF secara efisien.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Menggabungkan File PDF
+## Aspose.PDF - menggabungkan file PDF
 
 Untuk menggabungkan file PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **ConcatenatePdfFiles**.
 
@@ -37,8 +37,8 @@ pdf1.save(data_dir+ "Concatenate_output.pdf")
 puts "New document has been saved, please check the output file"
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-UnduhВ **Concatenate PDF Files (Aspose.PDF)**В dariВ salah satu situs coding sosial yang disebutkan di bawah:
+Unduh **Concatenate PDF Files (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

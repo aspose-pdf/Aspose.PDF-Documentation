@@ -1,13 +1,13 @@
 ---
-title: Memisahkan File PDF menjadi Halaman Individu di Ruby
-linktitle: Memisahkan File PDF menjadi Halaman Individu di Ruby
+title: "Memisahkan file PDF menjadi halaman individu di Ruby"
+linktitle: "Memisahkan file PDF menjadi halaman individu di Ruby"
 type: docs
 weight: 80
 url: /id/java/split-pdf-file-into-individual-pages-in-ruby/
 description: Pahami cara memisahkan file PDF menjadi halaman individu dengan Ruby dan Aspose.PDF, sehingga lebih mudah mengelola dan mengekstrak konten.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Memisahkan Halaman
+## Aspose.PDF - memisahkan halaman
 
 Untuk memisahkan dokumen PDF menjadi halaman individu menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **SplitAllPages**.
 
@@ -49,8 +49,8 @@ end
 puts "Split process completed successfully!"
 ```
 
-## Unduh Kode yang Sedang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh **Split Pages (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah:
+Unduh **Split Pages (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/splitallpages.rb)

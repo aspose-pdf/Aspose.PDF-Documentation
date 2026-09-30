@@ -4,25 +4,25 @@ linktitle: Kelas PdfViewer
 type: docs
 weight: 135
 url: /id/java/pdfviewer-class/
-description: Pelajari cara menggunakan facade PdfViewer dalam Java untuk mendekode halaman PDF dan memeriksa pengaturan yang terkait dengan viewer.
-lastmod: "2026-09-29"
+description: "Pelajari cara menggunakan fasad PdfViewer dalam Java untuk mendekode halaman PDF dan memeriksa pengaturan yang terkait dengan viewer."
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Dekode halaman PDF dan periksa data viewer dalam Java dengan PdfViewer
-Abstract: Bagian ini menjelaskan cara menggunakan facade PdfViewer dalam Aspose.PDF for Java untuk tugas dekode halaman dan inspeksi yang terkait dengan viewer. Contoh Java saat ini mencakup rendering semua halaman ke gambar, mendekode halaman tertentu, dan memeriksa jumlah halaman, tipe koordinat, resolusi, serta pengaturan viewer yang terikat.
+AlternativeHeadline: "Mendekode halaman PDF dan memeriksa data viewer dalam Java dengan PdfViewer"
+Abstract: "Bagian ini menjelaskan cara menggunakan fasad PdfViewer dalam Aspose.PDF for Java untuk tugas dekode halaman dan inspeksi yang terkait dengan viewer. Contoh Java saat ini mencakup rendering semua halaman ke gambar, mendekode halaman tertentu, dan memeriksa jumlah halaman, tipe koordinat, resolusi, serta pengaturan viewer yang terikat."
 ---
-Java `PdfViewerExamples` kelas menunjukkan alur kerja penampil utama yang tersedia melalui API Facades.
+Kelas `PdfViewerExamples` dalam Java menunjukkan alur kerja penampil utama yang tersedia melalui API Facades.
 
-## Dekode semua halaman PDF
+## Mendekode semua halaman PDF
 
 Gunakan alur kerja ini ketika setiap halaman PDF sumber harus dirender sebagai gambar.
 
 ### Langkah
 
-1. Buat dan konfigurasikan sebuah `PdfViewer` instansi.
-2. Mengikat PDF sumber dengan `bindPdf`.
+1. Buat dan konfigurasikan sebuah instans `PdfViewer`.
+2. Ikat PDF sumber dengan `bindPdf`.
 3. Panggil `decodeAllPages()` untuk merender dokumen menjadi `BufferedImage` larik.
 4. Simpan setiap halaman yang telah didekode ke file gambar output.
 5. Tutup file PDF yang terikat.
@@ -44,13 +44,13 @@ public static void decodeAllPages(Path inputFile, Path outputDir) throws Excepti
 }
 ```
 
-## Dekode halaman PDF tertentu
+## Mendekode halaman PDF tertentu
 
 Gunakan alur kerja ini ketika hanya satu halaman yang perlu dirender menjadi gambar.
 
 ### Langkah
 
-1. Buat dan konfigurasikan sebuah `PdfViewer` instansi.
+1. Buat dan konfigurasikan sebuah instans `PdfViewer`.
 2. Ikat PDF sumber.
 3. Panggil `decodePage()` untuk halaman yang ingin Anda render.
 4. Simpan halaman yang telah didekode ke file gambar output.
@@ -70,13 +70,13 @@ public static void decodeSpecificPage(Path inputFile, Path outputFile) throws Ex
 }
 ```
 
-## Periksa metadata PDF
+## Memeriksa metadata PDF
 
 Gunakan alur kerja ini ketika Anda memerlukan informasi dokumen terkait penampil sebelum merender atau mencetak.
 
 ### Langkah
 
-1. Buat dan konfigurasikan sebuah `PdfViewer` instansi.
+1. Buat dan konfigurasikan sebuah instans `PdfViewer`.
 2. Ikat PDF sumber.
 3. Baca jumlah halaman, tipe koordinat, dan resolusi rendering.
 4. Gunakan atau cetak nilai yang diambil.
@@ -98,13 +98,13 @@ public static void inspectPdfMetadata(Path inputFile) {
 }
 ```
 
-## Periksa pengaturan penampil yang terikat
+## Memeriksa pengaturan penampil yang terikat
 
 Gunakan alur kerja ini ketika Anda perlu mengonfirmasi atau menyesuaikan perilaku penampil setelah mengikat PDF.
 
 ### Langkah
 
-1. Buat dan konfigurasikan sebuah `PdfViewer` instansi.
+1. Buat dan konfigurasikan sebuah instans `PdfViewer`.
 2. Ikat PDF sumber.
 3. Atur opsi penampil seperti otomatis-ubah ukuran, otomatis-putar, dan visibilitas dialog cetak.
 4. Baca pengaturan penampil aktif dan jumlah halaman.

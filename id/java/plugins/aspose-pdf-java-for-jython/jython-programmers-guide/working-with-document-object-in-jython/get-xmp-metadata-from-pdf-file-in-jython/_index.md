@@ -1,19 +1,19 @@
 ---
-title: Dapatkan Metadata XMP dari File PDF di Jython
-linktitle: Dapatkan Metadata XMP dari File PDF di Jython
+title: "Mendapatkan metadata XMP dari file PDF di Jython"
+linktitle: "Mendapatkan metadata XMP dari file PDF di Jython"
 type: docs
 weight: 40
 url: /id/java/get-xmp-metadata-from-pdf-file-in-jython/
 description: Jelajahi cara mengekstrak metadata XMP dari dokumen PDF menggunakan Jython dengan Aspose.PDF untuk analisis konten yang mendetail.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 ---
-## Aspose.PDF - Dapatkan Metadata XMP
+## Aspose.PDF - dapatkan metadata XMP
 
 Untuk Memeriksa Format File menggunakan **Aspose.PDF Java for Jython**. Di sini Anda dapat melihat contoh kode.
 
 Kesalahan merender makro 'code' : Nilai tidak valid yang ditentukan untuk parameter lang
 
-## Unduh Kode yang Sedang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
 Unduh kode yang sedang berjalan dari salah satu situs coding sosial yang disebutkan di bawah ini:
 

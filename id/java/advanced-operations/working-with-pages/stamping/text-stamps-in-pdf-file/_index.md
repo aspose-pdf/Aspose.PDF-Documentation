@@ -1,26 +1,26 @@
 ---
-title: Tambahkan Cap Teks ke PDF dalam Java
-linktitle: Cap Teks dalam File PDF
+title: "Menambahkan cap teks ke PDF dalam Java"
+linktitle: "Cap teks dalam file PDF"
 type: docs
 weight: 20
 url: /id/java/text-stamps-in-the-pdf-file/
 description: Pelajari cara menambahkan cap teks ke dokumen PDF dalam Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan cap teks ke file PDF dengan Java
+AlternativeHeadline: "Menambahkan cap teks ke file PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menambahkan cap teks ke file PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup pembuatan cap teks latar belakang, penempatannya, rotasinya, serta penyesuaian font, ukuran, gaya, dan warna.
 ---
 Gunakan cap teks ketika Anda perlu menambahkan label atau tanda air yang terlihat pada halaman PDF.
 
-## Tambahkan cap teks
+## Menambahkan cap teks
 
 Gunakan contoh ini ketika sebuah halaman harus menampilkan cap teks yang diputar dengan gaya khusus.
 
-1. Buka PDF sumber [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Buat sebuah [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) dan konfigurasikan penempatan serta tampilan teksnya.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`TextStamp`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) dan konfigurasikan penempatan serta tampilan teksnya.
 1. Tambahkan stempel ke halaman target dan simpan dokumen.
 
 ```java

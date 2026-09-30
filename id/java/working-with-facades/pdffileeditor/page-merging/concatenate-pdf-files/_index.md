@@ -1,16 +1,16 @@
 ---
-title: Menggabungkan Beberapa File PDF
-linktitle: Menggabungkan Beberapa File PDF
+title: "Menggabungkan beberapa file PDF"
+linktitle: "Menggabungkan beberapa file PDF"
 type: docs
 weight: 20
 url: /id/java/concatenate-pdf-files/
 description: Gabungkan file PDF di Java dengan alur kerja concatenate berbasis array PdfFileEditor.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Gabungkan beberapa file PDF menjadi satu dokumen dengan Java
+AlternativeHeadline: "Menggabungkan beberapa file PDF menjadi satu dokumen dengan Java"
 Abstract: Pelajari cara menggabungkan file PDF dengan Aspose.PDF for Java. Contoh dalam repositori menggunakan overload `concatenate` berbasis array dengan dua masukan, dan alur kerja yang sama dapat diperluas ke daftar file yang lebih panjang karena metode tersebut menerima array string dari jalur sumber.
 ---
 ## Menggabungkan file PDF

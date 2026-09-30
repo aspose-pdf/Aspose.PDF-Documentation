@@ -1,16 +1,16 @@
 ---
-title: Anotasi Keamanan menggunakan Java
-linktitle: Anotasi Keamanan
+title: "Anotasi keamanan menggunakan Java"
+linktitle: "Anotasi keamanan"
 type: docs
 weight: 60
 url: /id/java/pdfannotationeditor-class/security-annotations/
 description: Pelajari cara menandai teks untuk redaksi, menerapkan anotasi redaksi, dan meredaksi area halaman yang dipilih dalam file PDF menggunakan Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 TechArticle: true
 AlternativeHeadline: Redaksi konten PDF sensitif di Java dengan anotasi keamanan
 Abstract: Artikel ini menjelaskan cara bekerja dengan anotasi redaksi dalam dokumen PDF menggunakan Java. Artikel ini mencakup penandaan teks yang cocok dengan anotasi redaksi, penerapan redaksi secara permanen, dan meredaksi area yang dipilih berdasarkan persegi panjang penempatan gambar yang terdeteksi.
 ---
-## Tandai teks untuk redaksi
+## Menandai teks untuk redaksi
 
 1. Muat PDF dan cari semua halaman untuk teks yang harus disamarkan.
 2. Buat sebuah `RedactionAnnotation` untuk setiap fragmen teks yang cocok dan mengonfigurasi penampilannya.

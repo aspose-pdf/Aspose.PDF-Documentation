@@ -1,26 +1,26 @@
 ---
-title: Menambahkan Tabel ke PDF dalam Java
-linktitle: Menambahkan Tabel
+title: "Menambahkan tabel ke PDF dalam Java"
+linktitle: "Menambahkan tabel"
 type: docs
 weight: 10
 url: /id/java/adding-tables/
 description: Pelajari cara menambahkan dan mengkonfigurasi tabel dalam dokumen PDF yang ada di Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Tambahkan dan format tabel dalam dokumen PDF dengan Java
+AlternativeHeadline: "Menambahkan dan format tabel dalam dokumen PDF dengan Java"
 Abstract: Artikel ini menjelaskan cara menambahkan dan mengkonfigurasi tabel dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup pembuatan tabel, batas, margin, padding, rentang baris dan kolom, perilaku AutoFit, penyisipan gambar dalam sel, baris dan kolom yang berulang, fragmen HTML dan LaTeX, serta kontrol rendering multi‑halaman.
 ---
 Aspose.PDF for Java menyediakan yang kaya `Table` API untuk membangun tabel dengan penyesuaian tata letak dan konten.
 
-## Buat tabel dasar
+## Membuat tabel dasar
 
 Gunakan contoh ini ketika Anda perlu menambahkan tabel sederhana dengan batas seragam dan sel teks.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan batasnya.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan batasnya.
 1. Tambahkan baris dan sel, lampirkan tabel ke halaman, dan simpan dokumen.
 
 ```java
@@ -42,12 +42,12 @@ public static void createTable(Path outputFile) {
 }
 ```
 
-## Tambahkan sel dengan rentang baris dan rentang kolom
+## Menambahkan sel dengan rentang baris dan rentang kolom
 
 Gunakan contoh ini ketika tabel memerlukan sel yang digabungkan di antara baris atau kolom.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan baris.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan baris.
 1. Konfigurasikan `ColSpan` dan `RowSpan` pada sel target, lalu simpan PDF.
 
 ```java
@@ -93,12 +93,12 @@ public static void addRowspanOrColspan(Path outputFile) {
 }
 ```
 
-## Tambahkan batas tabel dan padding sel
+## Menambahkan batas tabel dan padding sel
 
 Gunakan contoh ini ketika Anda perlu mengonfigurasi batas, padding, dan perilaku pembungkus sel.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan lebar, batas, dan padding.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan lebar, batas, dan padding.
 1. Tambahkan baris dan simpan dokumen yang dihasilkan.
 
 ```java
@@ -128,12 +128,12 @@ public static void addBorders(Path outputFile) {
 }
 ```
 
-## Aktifkan tata letak tabel auto-fit
+## Mengaktifkan tata letak tabel auto-fit
 
 Gunakan contoh ini ketika tabel harus secara otomatis menyesuaikan lebar halaman yang tersedia.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan setel `ColumnAdjustment.AutoFitToWindow`.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan setel `ColumnAdjustment.AutoFitToWindow`.
 1. Tambahkan baris contoh dan simpan PDF.
 
 ```java
@@ -161,13 +161,13 @@ public static void autoFit(Path outputFile) {
 }
 ```
 
-## Tambahkan gambar di dalam sel tabel
+## Menambahkan gambar di dalam sel tabel
 
 Gunakan contoh ini ketika tabel perlu menampilkan konten gambar raster di dalam salah satu selnya.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan baris dengan sel teks dan gambar.
-1. Konfigurasikan [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) ukuran dan simpan dokumen.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan baris dengan sel teks dan gambar.
+1. Konfigurasikan [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) ukuran dan simpan dokumen.
 
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
@@ -190,13 +190,13 @@ public static void addImage(Path imageFile, Path outputFile) {
 }
 ```
 
-## Tambahkan gambar SVG di dalam sel tabel
+## Menambahkan gambar SVG di dalam sel tabel
 
 Gunakan contoh ini ketika tabel harus merender file SVG baris per baris.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan iterasi melalui file SVG.
-1. Tambahkan satu baris per gambar, konfigurasikan SVG [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), dan simpan PDF.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan iterasi melalui file SVG.
+1. Tambahkan satu baris per gambar, konfigurasikan SVG [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), dan simpan PDF.
 
 ```java
 public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
@@ -220,13 +220,13 @@ public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
 }
 ```
 
-## Tambahkan fragmen HTML ke sel tabel
+## Menambahkan fragmen HTML ke sel tabel
 
 Gunakan contoh ini ketika konten tabel harus menyertakan pemformatan HTML inline.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengatur batas.
-1. Tambah [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) objek ke sel dan simpan dokumen.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengatur batas.
+1. Tambah objek [`HtmlFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) ke sel dan simpan dokumen.
 
 ```java
 public static void addHtmlFragments(Path outputFile) {
@@ -247,13 +247,13 @@ public static void addHtmlFragments(Path outputFile) {
 }
 ```
 
-## Tambahkan fragmen LaTeX ke sel tabel
+## Menambahkan fragmen LaTeX ke sel tabel
 
 Gunakan contoh ini ketika konten tabel harus menampilkan ekspresi TeX atau LaTeX.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dengan batas.
-1. Tambah [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) objek ke sel dan simpan file output.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dengan batas.
+1. Tambah objek [`TeXFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) ke sel dan simpan file output.
 
 ```java
 public static void addLatexFragments(Path outputFile) {
@@ -274,12 +274,12 @@ public static void addLatexFragments(Path outputFile) {
 }
 ```
 
-## Paksa tabel ke halaman baru
+## Memaksa tabel ke halaman baru
 
 Gunakan contoh ini ketika tabel kedua harus dimulai pada halaman terpisah setelah tabel besar.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan atur pengaturan halaman.
-1. Bangun yang pertama besar [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan itu ke halaman.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan atur pengaturan halaman.
+1. Bangun yang pertama besar [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan itu ke halaman.
 1. Buat tabel kedua, atur `InNewPage`, dan simpan dokumen.
 
 ```java
@@ -316,12 +316,12 @@ public static void addTableOnNewPage(Path outputFile) {
 }
 ```
 
-## Buat tabel terputus secara vertikal dengan kolom yang berulang
+## Membuat tabel terputus secara vertikal dengan kolom yang berulang
 
 Gunakan contoh ini ketika tabel lebar harus dilanjutkan secara vertikal dan mengulangi kolom kunci.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengonfigurasi pemutusan vertikal dengan kolom berulang.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengonfigurasi pemutusan vertikal dengan kolom berulang.
 1. Tambahkan header dan baris data, lalu simpan dokumen.
 
 ```java
@@ -364,7 +364,7 @@ public static void addTableHideBorders(Path outputFile) {
 }
 ```
 
-## Gunakan kembali contoh batas dan padding
+## Menggunakan kembali contoh batas dan padding
 
 Gunakan helper ini ketika skenario margin dan padding harus didelegasikan ke contoh border bersama.
 
@@ -377,12 +377,12 @@ public static void addMarginsOrPadding(Path outputFile) {
 }
 ```
 
-## Buat tabel dengan sudut melengkung
+## Membuat tabel dengan sudut melengkung
 
 Gunakan contoh ini ketika tabel harus menggunakan gaya sudut membulat alih-alih batas persegi panjang standar.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengonfigurasi pengaturan batas melengkung.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengonfigurasi pengaturan batas melengkung.
 1. Tambahkan baris ke tabel dan simpan PDF.
 
 ```java
@@ -406,12 +406,12 @@ public static void createTableWithRoundCorner(Path outputFile) {
 }
 ```
 
-## Tambahkan baris header berulang
+## Menambahkan baris header berulang
 
 Gunakan contoh ini ketika tabel multi‑halaman harus mengulangi baris header mereka pada setiap halaman lanjutan.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat terputus secara vertikal [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan jumlah baris berulang serta gaya.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat terputus secara vertikal [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan konfigurasikan jumlah baris berulang serta gaya.
 1. Tambahkan baris header dan baris data, lalu simpan dokumen.
 
 ```java
@@ -456,12 +456,12 @@ public static void addRepeatingRows(Path outputFile) {
 }
 ```
 
-## Tambahkan kolom berulang dalam tabel lebar
+## Menambahkan kolom berulang dalam tabel lebar
 
 Gunakan contoh ini ketika kolom pertama harus diulang sementara tabel terputus secara vertikal pada halaman yang sama.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan atur ukuran halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan atur kolom yang berulang serta perilaku auto-fit.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan atur ukuran halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan atur kolom yang berulang serta perilaku auto-fit.
 1. Tambahkan header dan baris data, lalu simpan PDF.
 
 ```java
@@ -502,12 +502,12 @@ public static void addRepeatingColumns(Path outputFile) {
 }
 ```
 
-## Sisipkan jeda halaman antara baris tabel
+## Menyisipkan jeda halaman antara baris tabel
 
 Gunakan contoh ini ketika baris tabel tertentu harus dimulai pada halaman baru.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengisi banyak baris.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan mengisi banyak baris.
 1. Tandai baris yang dipilih dengan `InNewPage` dan simpan dokumen.
 
 ```java
@@ -533,13 +533,13 @@ public static void insertPageBreak(Path outputFile) {
 }
 ```
 
-## Putar teks di dalam sel tabel
+## Memutar teks di dalam sel tabel
 
 Gunakan contoh ini ketika teks sel harus ditampilkan pada sudut rotasi yang berbeda.
 
-1. Buat PDF baru [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
-1. Buat sebuah [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan baris dengan beberapa sel.
-1. Buat diputar [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objek, tambahkan ke sel, dan simpan PDF.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Buat sebuah [`Table`](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) dan tambahkan baris dengan beberapa sel.
+1. Buat diputar objek [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), tambahkan ke sel, dan simpan PDF.
 
 ```java
 public static void rotatedTextTable(Path outputFile) {

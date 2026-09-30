@@ -1,23 +1,23 @@
 ---
-title: Ekstraksi Berbasis Wilayah menggunakan Java
-linktitle: Ekstraksi Berbasis Wilayah
+title: "Ekstraksi berbasis wilayah menggunakan Java"
+linktitle: "Ekstraksi berbasis wilayah"
 type: docs
 weight: 20
 url: /id/java/region-based-extraction/
 description: Pelajari cara mengekstrak teks dari wilayah halaman tertentu atau memeriksa geometri paragraf dalam dokumen PDF dengan Aspose.PDF for Java.
-lastmod: "2026-09-29"
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-## Ekstrak teks dari wilayah halaman persegi panjang
+## Mengekstrak teks dari wilayah halaman persegi panjang
 
 Gunakan `TextSearchOptions` dengan `Rectangle` untuk membatasi ekstraksi ke area yang ditentukan pada halaman.
 
-1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
-1. Buat sebuah [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) untuk mengumpulkan teks dari area halaman yang dipilih.
-1. Buat [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) untuk target [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) dan aktifkan `setLimitToPageBounds(true)` sehingga ekstraksi tetap berada di dalam kotak halaman yang terlihat.
-1. Terapkan opsi pencarian yang dikonfigurasi ke absorber dan kunjungi target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`TextAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) untuk mengumpulkan teks dari area halaman yang dipilih.
+1. Buat [`TextSearchOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) untuk [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) target dan aktifkan `setLimitToPageBounds(true)` sehingga ekstraksi tetap berada di dalam kotak halaman yang terlihat.
+1. Terapkan opsi pencarian yang dikonfigurasi ke absorber dan kunjungi [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target.
 1. Tulis buffer teks yang diekstrak ke file output.
 
 ```java
@@ -34,14 +34,14 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 }
 ```
 
-## Ekstrak paragraf dengan informasi geometris
+## Mengekstrak paragraf dengan informasi geometris
 
 Gunakan `ParagraphAbsorber` untuk memeriksa persegi panjang bagian dan poligon paragraf bersama dengan teks yang diekstrak.
 
-1. Buka PDF sumber dalam sebuah [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instansi.
-1. Buat sebuah [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) dan kunjungi target [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) untuk membangun informasi markup halaman.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`ParagraphAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) dan kunjungi [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target untuk membangun informasi markup halaman.
 1. Baca hasil markup halaman pertama dan iterasi melalui bagian serta paragrafnya.
-1. Kumpulkan setiap persegi panjang bagian, poligon paragraf, dan teks paragraf yang direkonstruksi darinya. [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) baris.
+1. Kumpulkan setiap persegi panjang bagian, poligon paragraf, dan teks paragraf yang direkonstruksi darinya. [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) baris.
 1. Bangun laporan keluaran dengan geometri dan detail teks yang diekstrak.
 1. Tuliskan detail yang diekstrak ke file keluaran.
 
