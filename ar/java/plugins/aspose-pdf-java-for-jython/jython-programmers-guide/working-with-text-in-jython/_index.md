@@ -1,12 +1,13 @@
 ---
 title: العمل مع النص في Jython
+linktitle: العمل مع النص في Jython
 type: docs
 weight: 40
 url: /ar/java/working-with-text-in-jython/
-lastmod: "2021-06-05"
+description: استكشف معالجة النص في ملفات PDF باستخدام Jython مع Aspose.PDF، مما يجعل العمل مع محتوى النص في المستندات أسهل.
+lastmod: "2026-10-01"
 ---
-
-تتضمن هذه القسم المواضيع التالية:
+يتضمن هذا القسم المواضيع التالية:
 
 - [إضافة سلسلة HTML باستخدام DOM في Jython](/pdf/ar/java/add-html-string-using-dom-in-jython/)
 - [إضافة نص إلى ملف PDF موجود في Jython](/pdf/ar/java/add-text-to-an-existing-pdf-file-in-jython/)

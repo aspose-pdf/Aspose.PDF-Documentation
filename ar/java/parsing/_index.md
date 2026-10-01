@@ -1,21 +1,25 @@
 ---
-title: معالجة مستندات PDF
-linktitle: معالجة مستندات PDF
+title: تحليل مستندات PDF
+linktitle: تحليل مستندات PDF
 type: docs
-weight: 60
+weight: 80
 url: /ar/java/parsing/
-description: هل تريد استخراج البيانات من مستندات PDF؟ اكتشف طرق استخراج بيانات PDF المختلفة باستخدام Aspose.PDF لـ Java.
-lastmod: "2021-06-05"
+description: اكتشف طرق تحليل PDF واستخراج البيانات في Java باستخدام Aspose.PDF، بما في ذلك النصوص، الصور، الخطوط، بيانات النموذج، الجداول، والرسومات المتجهية.
+lastmod: "2026-10-01"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: تحليل ملفات PDF باستخدام Aspose.PDF for Java
+Abstract: تقدم هذه المقالة ميزات تحليل PDF في Aspose.PDF for Java. تغطي استخراج النصوص، الصور، الخطوط، بيانات AcroForm، بيانات الجداول، والرسومات المتجهية من مستندات PDF، مع روابط إلى أدلة مركزة لكل مهمة.
 ---
+يعني تحليل مستندات PDF استخراج المحتوى المهيكل أو الخام من ملفات PDF الموجودة بحيث يمكن فحصه أو تصديره أو فهرسته أو إعادة استعماله في سير عمل آخر.
 
-معالجة مستندات PDF هو مصطلح يتعلق باستخراج أنواع مختلفة من المعلومات من ملف PDF. يغطي هذا القسم كيفية:
+يغطي هذا القسم كيفية:
 
-- [استخراج النص من PDF](/pdf/ar/java/extract-text-from-pdf/). استخراج أو معالجة النص هو العملية الأكثر شيوعًا مع ملفات PDF الجاهزة. ستتعلم عن معالجة النص من مستند كامل أو صفحة معينة أو منطقة معينة في صفحة.
-- [استخراج الصور من PDF](/pdf/ar/java/extract-images-from-the-pdf-file/). استخراج الصور يقوم بنفس العملية للصور كما في العملية المذكورة أعلاه للنص.
-- [استخراج الخطوط من PDF](/pdf/ar/java/extract-fonts-from-pdf/). استخراج الخطوط هو عملية محددة مع الخطوط في ملفات PDF.
-- [استخراج البيانات من جدول في PDF](/pdf/ar/java/extract-data-from-table-in-pdf/).
- تعلم كيفية استخراج الجداول من PDF باستخدام Aspose.PDF لـ Java.
-- [استخراج البيانات من النموذج](/pdf/ar/java/extract-data-from-acroform/). إذا كان لديك مجموعة من مستندات PDF تحتوي على نماذج، فمن المحتمل أنك تحتاج إلى الحصول على البيانات من تلك النماذج. ستساعدك هذه المقالة على فهم كيفية استخراج بيانات AcroForms باستخدام Aspose.PDF لـ Java.
+- [استخراج النص من PDF](/pdf/ar/java/extract-text-from-pdf/) باستخدام `TextAbsorber`, `ParagraphAbsorber`، والواجهات البرمجية ذات الصلة.
+- [استخراج الصور من PDF](/pdf/ar/java/extract-images-from-the-pdf-file/) من موارد الصفحة.
+- [استخراج الخطوط من PDF](/pdf/ar/java/extract-fonts-from-pdf/) لفحص الخطوط المستخدمة في المستند.
+- [استخراج البيانات من AcroForm](/pdf/ar/java/extract-data-from-acroform/) وتصدير قيم الحقول إلى JSON، XML، FDF أو XFDF.
+- [استخراج البيانات من الجدول](/pdf/ar/java/extract-data-from-table-in-pdf/) باستخدام `TableAbsorber` أو تصدير الجداول المكتشفة إلى Excel.
+- [استخراج البيانات المتجهة من PDF](/pdf/ar/java/extract-vector-data-from-pdf/) مع `GraphicsAbsorber` وطرق تصدير SVG.

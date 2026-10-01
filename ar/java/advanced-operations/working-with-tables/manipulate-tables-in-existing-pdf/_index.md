@@ -1,93 +1,82 @@
 ---
-title: Manipulate Tables in existing PDF
-linktitle: Manipulate Tables
+title: معالجة الجداول في مستندات PDF الحالية
+linktitle: معالجة الجداول
 type: docs
-weight: 30
-url: /ar/java/manipulate-tables-in-existing-pdf/
-description: التلاعب بالجداول في ملف PDF موجود واستبدال الجدول القديم بآخر جديد في مستند PDF باستخدام Aspose.PDF for Java.
-lastmod: "2021-06-05"
+weight: 40
+url: /ar/java/manipulating-tables/
+description: تعلم كيفية فحص وتعديل الجداول في مستندات PDF الحالية باستخدام Java.
+lastmod: "2026-10-01"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: فحص وتعديل الجداول الموجودة في PDF باستخدام Java
+Abstract: تشرح هذه المقالة كيفية معالجة الجداول الموجودة بالفعل في مستندات PDF باستخدام Aspose.PDF for Java. وتغطي تحديد الجداول باستخدام TableAbsorber، وتحديث النص داخل الخلية، واستبدال جدول مكتشف بكائن Table جديد.
 ---
+استخدام `TableAbsorber` عندما تحتاج إلى تحديد مواقع الجداول الموجودة وتحديث محتواها.
 
-## التلاعب بالجداول في ملف PDF موجود
+## استبدال النص داخل خلية جدول
 
-إحدى الميزات الأولى التي يدعمها Aspose.PDF for Java هي قدراته على العمل مع الجداول وتوفر دعمًا كبيرًا لإضافة الجداول في ملفات PDF التي يتم إنشاؤها من البداية أو أي ملفات PDF موجودة.
-   لديك أيضًا القدرة على دمج الجدول مع قاعدة البيانات (DOM) لإنشاء جداول ديناميكية بناءً على محتويات قاعدة البيانات. في هذا الإصدار الجديد، قمنا بتنفيذ ميزة جديدة للبحث وتحليل الجداول البسيطة التي توجد بالفعل على صفحة من مستند PDF. توفر فئة جديدة باسم **Aspose.PDF.Text.TableAbsorber** هذه القدرات. استخدام TableAbsorber مشابه جدًا لفئة TextFragmentAbsorber الموجودة.
+استخدم هذا المثال عندما يجب تحديث النص في خلية مكتشفة دون إعادة بناء الجدول بأكمله.
 
-يوضح مقتطف الكود التالي الخطوات اللازمة لتحديث المحتويات في خلية جدول معينة.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وزُر الصفحة التي تحتوي على [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. تحقق من أن جدول الهدف ومقاطع نص الخلية موجودة.
+1. استبدل نص الخلية واحفظ المستند المحدث.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleManipulate {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ManipulateTables() {
-
-        // تحميل ملف PDF الموجود
-        Document pdfDocument = new Document(_dataDir + "input.pdf");
-        // إنشاء كائن TableAbsorber للعثور على الجداول
+public static void replaceCells(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(document.getPages().get_Item(1));
 
-        // زيارة الصفحة الأولى مع الامتصاص
-        absorber.visit(pdfDocument.getPages().get_Item(1));
+        if (absorber.getTableList().isEmpty()) {
+            throw new IllegalStateException("No tables were found on page 1.");
+        }
+        if (absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0).getTextFragments().size() == 0) {
+            throw new IllegalStateException("The target cell has no text fragments.");
+        }
 
-        // الوصول إلى الجدول الأول في الصفحة، الخلية الأولى وشظايا النص فيها
-        TextFragment fragment = absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0)
-                .getTextFragments().get_Item(1);
-
-        // تغيير نص الشظية النصية الأولى في الخلية
-        fragment.setText("hi world");
-
-        pdfDocument.save(_dataDir + "ManipulateTable_out.pdf");
+        absorber.getTableList().get(0).getRowList().get(0).getCellList().get(0)
+                .getTextFragments().get_Item(1).setText("New Value");
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## استبدال الجدول القديم بآخر جديد في مستند PDF
+## استبدال جدول مكتشف بجدول جديد
 
-في حالة الحاجة إلى العثور على جدول معين واستبداله بالجدول المطلوب، يمكنك استخدام الطريقة Replace() من فئة [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) للقيام بذلك.
+استخدم هذا المثال عندما يجب استبدال الجدول الأصلي بالكامل بجدول تم إنشاؤه حديثًا.
 
-المثال التالي يوضح الوظيفة لاستبدال الجدول داخل مستند PDF:
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واكتشاف الجداول على الصفحة.
+1. إنشاء جديد [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) بالهيكل المطلوب.
+1. استبدل الجدول الممتص واحفظ ملف PDF الناتج.
 
 ```java
-public static void ReplaceOldTableWithNew() {
-
-        // تحميل مستند PDF الحالي
-        Document pdfDocument = new Document(_dataDir + "Table_input2.pdf");
-
-        // إنشاء كائن TableAbsorber للعثور على الجداول
+public static void replaceTable(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(document.getPages().get_Item(1));
 
-        Page page = pdfDocument.getPages().get_Item(1);
+        if (absorber.getTableList().isEmpty()) {
+            throw new IllegalStateException("No tables were found on page 1.");
+        }
 
-        // زيارة الصفحة الأولى باستخدام الماص
-        absorber.visit(page);
-
-        // الحصول على الجدول الأول في الصفحة
-        AbsorbedTable table = absorber.getTableList().get(0);
-
-        // إنشاء جدول جديد
+        AbsorbedTable oldTable = absorber.getTableList().get(0);
         Table newTable = new Table();
         newTable.setColumnWidths("100 100 100");
-        newTable.setDefaultCellBorder (new BorderInfo(BorderSide.All, 1F));
+        newTable.setDefaultCellBorder(new BorderInfo(BorderSide.All, 1.0f));
 
         Row row = newTable.getRows().add();
         row.getCells().add("Col 1");
         row.getCells().add("Col 2");
         row.getCells().add("Col 3");
+        row = newTable.getRows().add();
+        row.getCells().add("Col 12");
+        row.getCells().add("Col 22");
+        row.getCells().add("Col 32");
 
-        // استبدال الجدول بالجدول الجديد
-        absorber.replace(page, table, newTable);
-
-        // حفظ المستند
-        pdfDocument.save(_dataDir + "TableReplaced_out.pdf");
-        
+        absorber.replace(document.getPages().get_Item(1), oldTable, newTable);
+        document.save(outputFile.toString());
     }
-
 }
 ```

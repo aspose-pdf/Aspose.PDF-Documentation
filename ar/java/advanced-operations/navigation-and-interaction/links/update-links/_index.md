@@ -1,135 +1,96 @@
 ---
-title: تحديث الروابط في ملف PDF
+title: تحديث روابط PDF في Java
 linktitle: تحديث الروابط
 type: docs
 weight: 20
 url: /ar/java/update-links/
-description: تحديث الروابط في ملف PDF برمجياً. يتناول هذا الدليل كيفية تحديث الروابط في ملف PDF باستخدام لغة Java.
-lastmod: "2021-06-05"
+description: تعلم كيفية تحديث مظهر روابط PDF والوجهات في Java.
+lastmod: "2026-10-01"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: تحديث مظهر تعليقات الروابط والوجهات الويب في ملفات PDF باستخدام Java
+Abstract: توضح هذه المقالة كيفية تحديث تعليقات الارتباط الموجودة باستخدام Aspose.PDF for Java. توضح الأمثلة تغيير لون النص المغطى برابط، وتحديث لون تعليق الارتباط، واستبدال عنوان URI الهدف للروابط على الويب.
 ---
+يمكن تعديل الروابط الموجودة عن طريق العثور على تعليق الارتباط في الصفحة وتحديث إما مظهره أو إجراءه.
 
-## تحديث الروابط في ملف PDF
+## تحديث لون النص المرتبط
 
-كما نوقش في إضافة رابط تشعبي في ملف PDF، تجعل فئة [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) من الممكن إضافة روابط في ملف PDF. هناك أيضًا فئة مشابهة تُستخدم للحصول على الروابط الموجودة داخل ملفات PDF. استخدم هذا إذا كنت بحاجة إلى تحديث رابط موجود. لتحديث رابط موجود:
+استخدم هذا المثال عندما يجب إعادة تلوين منطقة النص التي يغطيها تعليق الارتباط.
 
-1. قم بتحميل ملف PDF.
-1. انتقل إلى صفحة محددة في ملف PDF.
-1. حدد وجهة الرابط باستخدام خاصية Destination لكائن [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction).
-
-1. يتم تحديد صفحة الوجهة باستخدام منشئ [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination).
-
-### تعيين هدف الرابط إلى صفحة في نفس المستند
-
-يظهر لك مقتطف الشفرة التالي كيفية تحديث رابط في ملف PDF وتعيين هدفه إلى الصفحة الثانية من المستند.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. ابحث عن تعليقات الروابط وأنشئ مستطيل بحث نصي من كل منطقة تعليقة.
+1. أعد تلوين مقاطع النص المتطابقة واحفظ المستند.
 
 ```java
-    public static void SetLinkTargetToAPageInTheSameDocument() {
-        
-        // تحميل ملف PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-        // الحصول على أول تعليق توضيحي للرابط من الصفحة الأولى للمستند
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        // تعديل الرابط: تغيير وجهة الرابط
-        GoToAction goToAction = (GoToAction)linkAnnot.getAction();
-        // تحديد الوجهة لكائن الرابط
-        // تمثل الوجهة الصريحة التي تعرض الصفحة بالإحداثيات (left, top) الموضوعة في الزاوية العلوية اليسرى من 
-        // النافذة ومحتويات الصفحة مكبرة بمعامل التكبير zoom.
-        // المعامل الأول هو رقم صفحة الوجهة. 
-        // المعامل الثاني هو الإحداثي الأيسر
-        // المعامل الثالث هو الإحداثي العلوي
-        // المعامل الرابع هو معامل التكبير عند عرض الصفحة المعنية. استخدام 2 يعني أن الصفحة سيتم عرضها بنسبة تكبير 200%
-        goToAction.setDestination(new XYZExplicitDestination(1, 1, 2, 2 ));
-        
-        // حفظ المستند مع الرابط المحدث
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-
-### تعيين وجهة الرابط إلى عنوان ويب
-
-لتحديث الارتباط التشعبي بحيث يشير إلى عنوان ويب، قم بإنشاء كائن [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction) ومرره إلى خاصية Action الخاصة بـ LinkAnnotation. يُظهر مقتطف الشيفرة التالي كيفية تحديث رابط في ملف PDF وتعيين هدفه إلى عنوان ويب.
-
-```java
-    public static void SetLinkDestinationToWebAddress() {        
-        // تحميل ملف PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-    
-        // الحصول على أول توضيح رابط من الصفحة الأولى للمستند
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        // تعديل الرابط: تغيير إجراء الرابط وتعيين الهدف كعنوان ويب
-        linkAnnot.setAction(new GoToURIAction("www.aspose.com"));
-        
-        // حفظ المستند بالرابط المحدث
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-
-### تعيين هدف الرابط إلى ملف PDF آخر
-
-يُظهر مقتطف الشفرة التالي كيفية تحديث رابط في ملف PDF وتعيين هدفه إلى ملف PDF آخر.
-
-```java
-    public static void SetLinkTargetToAnotherPDFFile() {        
-        // تحميل ملف PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-    
-        LinkAnnotation linkAnnot = (LinkAnnotation)page.getAnnotations().get_Item(1);
-
-        GoToRemoteAction goToR = (GoToRemoteAction)linkAnnot.getAction();
-        // السطر التالي يحدث الوجهة، لا يحدث الملف
-        goToR.setDestination(new XYZExplicitDestination(2, 0, 0, 1.5));
-        // السطر التالي يحدث الملف
-        goToR.setFile (new FileSpecification(_dataDir +  "input.pdf"));
-
-        // حفظ المستند بالرابط المحدث
-        document.save(_dataDir + "PDFLINK_Modified_UpdateLinks_out.pdf");        
-    }
-```
-
-### تحديث لون نص LinkAnnotation
-
-لا يحتوي التعليق التوضيحي للرابط على نص.
- بدلاً من ذلك، يتم وضع النص في محتويات الصفحة تحت التعليق التوضيحي. لذلك، لتغيير لون النص، قم بتغيير لون نص الصفحة بدلاً من محاولة تغيير لون التعليق التوضيحي. يوضح مقتطف الشيفرة التالي كيفية تحديث لون التعليق التوضيحي للرابط في ملف PDF.
-
-```java
-    public static void UpdateLinkAnnotationTextColor () {        
-        // تحميل ملف PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        for (Annotation annotation : page.getAnnotations())
-        {
-            if (annotation.getAnnotationType() == AnnotationType.Link)
-            {
-                // البحث عن النص تحت التعليق التوضيحي
-                TextFragmentAbsorber ta = new TextFragmentAbsorber();
+public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link) {
+                TextFragmentAbsorber absorber = new TextFragmentAbsorber();
                 Rectangle rect = annotation.getRect();
-                rect.setLLX(rect.getLLX()-10);
-                rect.setLLY(rect.getLLY()-10);
-                rect.setURX(rect.getURX()+ 10);
-                rect.setURY(rect.getURY()+ 10);
-
-                ta.setTextSearchOptions(new TextSearchOptions(rect));
-                ta.visit(page);
-                // تغيير لون النص.
-                for (TextFragment tf : ta.getTextFragments())
-                {
-                    tf.getTextState().setForegroundColor(Color.getRed());
+                rect.setLLX(rect.getLLX() - 2);
+                rect.setLLY(rect.getLLY() - 2);
+                rect.setURX(rect.getURX() + 2);
+                rect.setURY(rect.getURY() + 2);
+                absorber.setTextSearchOptions(new TextSearchOptions(rect));
+                absorber.visit(document.getPages().get_Item(1));
+                for (TextFragment textFragment : absorber.getTextFragments()) {
+                    textFragment.getTextState().setForegroundColor(Color.getRed());
                 }
             }
-        
-        }                       
-        // حفظ المستند مع الرابط المحدث
-        document.save(_dataDir + "UpdateLinkTextColor_out.pdf");        
+        }
+
+        document.save(outputFile.toString());
     }
+}
+```
+
+## تحديث لون حدود الرابط
+
+استخدم هذا المثال عندما يجب تغيير اللون المرئي لتعليقات الروابط الموجودة.
+
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. التنقل عبر تعليقات الصفحة وتصفية لـ [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) الكائنات.
+1. قم بتحديث لون التعليق التوضيحي للارتباط واحفظ المستند.
+
+```java
+public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                linkAnnotation.setColor(Color.getRed());
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## تحديث وجهة رابط الويب
+
+استخدم هذا المثال عندما ينبغي لرابط ويب موجود أن يشير إلى URI جديد.
+
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. ابحث عن تعليقات الارتباط التي يكون الإجراء الخاص بها [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. استبدل عنوان URI واحفظ المستند المحدث.
+
+```java
+public static void linkAnnotationUpdateWebDestination(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    action.setURI("https://www.aspose.com");
+                }
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
 ```

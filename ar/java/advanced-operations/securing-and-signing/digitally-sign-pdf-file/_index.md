@@ -1,64 +1,84 @@
 ---
-title: كيفية التوقيع الإلكتروني على PDF
-linktitle: التوقيع الإلكتروني على PDF
+title: إضافة توقيع رقمي أو توقيع PDF رقمياً في Java
+linktitle: توقيع PDF رقمياً
 type: docs
 weight: 10
 url: /ar/java/digitally-sign-pdf-file/
-description: التوقيع الإلكتروني على مستندات PDF باستخدام Java. التحقق من صحة التوقيعات الإلكترونية على ملفات PDF باستخدام تطبيق Java مع مكتبة PDF. يمكنك توثيق ملف PDF بشهادة PKCS1.
-lastmod: "2021-06-05"
+description: تعرف على كيفية توقيع وثائق PDF رقمياً وتصديقها في Java باستخدام Aspose.PDF.
+lastmod: "2026-10-01"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: توقيع ملفات PDF رقمياً باستخدام Java
+Abstract: يوضح هذا الدليل كيفية توقيع مستندات PDF رقمياً باستخدام Aspose.PDF for Java. يغطي التوقيع باستخدام كائن شهادة، والتوقيع باستخدام معلمات الشهادة الأساسية، وتوثيق المستند بتوقيع DocMDP للتحكم في التغييرات المسموح بها بعد التوقيع.
 ---
+يدعم Aspose.PDF for Java تدفقات توقيع متعددة عبر `PdfFileSignature`.
 
-عند توقيع مستند PDF باستخدام توقيع، فإنك تؤكد في الأساس أن محتوياته يجب أن تبقى "كما هي". وبالتالي، فإن أي تغييرات تُجرى بعد ذلك تُبطل التوقيع، وبذلك تعرف ما إذا تم تعديل المستند. يتيح لك توثيق المستند أولاً تحديد التغييرات التي يمكن للمستخدم إجراؤها على المستند دون إبطال التوثيق.
+## توقيع PDF باستخدام كائن شهادة
 
-بمعنى آخر، سيظل المستند يُعتبر محافظًا على سلامته ويمكن للمستلم أن يثق في المستند. لمزيد من التفاصيل، يرجى زيارة توثيق وتوقيع PDF.
-
-لتنفيذ المتطلبات المذكورة أعلاه، تم إجراء التغييرات التالية على واجهة برمجة التطبيقات العامة.
-
-تمت إضافة طريقة isCertified(…) إلى فئة PdfFileSignature.
-
-## توقيع PDF بالتوقيعات الرقمية
+1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
+1. إنشاء [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) كائن التوقيع وتكوين خيارات التوقيع.
+1. تطبيق التوقيع على مستند PDF من خلال [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. احفظ مستند PDF المحدث.
 
 ```java
-public class ExampleDigitallySign {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Secure-Sign/";
-
-    public static void SignDocument() {
-        String inFile = _dataDir + "DigitallySign.pdf";
-        String outFile = _dataDir + "DigitallySign_out.pdf";
-        Document document = new Document(inFile);
-
-        PdfFileSignature signature = new PdfFileSignature(document);
-
-        PKCS7 pkcs = new PKCS7("/home/aspose/pdf-examples/Samples/test.pfx", "Pa$$w0rd2020"); // استخدام كائنات PKCS7/PKCS7Detached
-                                                                                             
-        signature.sign(1, true, new java.awt.Rectangle(300, 100, 400, 200), pkcs);
-        // حفظ ملف PDF الناتج
-        signature.save(outFile);
+public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.sign(1, false, signatureRectangle(), createPkcs7(certificateFile, "Document approval"));
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
     }
+}
 ```
 
-## إضافة طابع زمني إلى التوقيع الرقمي
+هذا النهج يبني `PKCS7` كائن التوقيع أولاً ثم يطبقه على الصفحة 1.
 
-يدعم Aspose.PDF for Java توقيع ملفات PDF رقميًا باستخدام خادم طوابع زمنية أو خدمة ويب.
+## توقيع ملف PDF باستخدام معلمات الشهادة الأساسية
 
-من أجل تحقيق هذا المتطلب، تم إضافة فئة [TimestampSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf/TimestampSettings) إلى مساحة الأسماء Aspose.PDF. يرجى إلقاء نظرة على المقتطف البرمجي التالي الذي يحصل على الطابع الزمني ويضيفه إلى مستند PDF:
+1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
+1. تهيئة معلمات الشهادة المطلوبة بواسطة مثال التوقيع.
+1. تطبيق التوقيع على مستند PDF من خلال [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. احفظ مستند PDF المحدث.
 
 ```java
-    public static void SignWithTimeStampServer() {
-        Document document = new Document(_dataDir + "SimpleResume.pdf");
-        PdfFileSignature signature = new PdfFileSignature(document);
-
-        PKCS7 pkcs = new PKCS7("/home/aspose/pdf-examples/Samples/test.pfx", "Start2020");
-        TimestampSettings timestampSettings = new TimestampSettings("https://freetsa.org/tsr", ""); // يمكن تجاهل اسم المستخدم/كلمة المرور
-        pkcs.setTimestampSettings(timestampSettings);
-        java.awt.Rectangle rect = new java.awt.Rectangle(100, 100, 200, 100);
-        // إنشاء أي نوع من أنواع التوقيعات الثلاثة
-        signature.sign(1, "سبب التوقيع", "الاتصال", "الموقع", true, rect, pkcs);
-        // حفظ ملف PDF الناتج
-        signature.save(_dataDir + "DigitallySignWithTimeStamp_out.pdf");
+public static void signPdfWithBasicParameters(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.setCertificate(certificateFile.toString(), CERTIFICATE_PASSWORD);
+        pdfSignature.sign(1, "Document approval", "qa@example.com", "New York, USA", false, signatureRectangle());
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
     }
+}
+```
+
+## تصديق ملف PDF باستخدام DocMDP
+
+استخدم توقيع اكتشاف وتمنع تعديل المستند عندما تحتاج إلى قيود على مستوى الشهادة:
+
+1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
+1. إنشاء [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) الكائن وتكوين [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/) خيارات التوقيع.
+1. تطبيق توقيع الشهادة وحفظ مستند PDF المحدث.
+
+```java
+public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        DocMDPSignature signature = new DocMDPSignature(
+                createPkcs7(certificateFile, "Certified for form filling and signing"),
+                DocMDPAccessPermissions.FillingInForms);
+        pdfSignature.certify(1, "Certified for form filling and signing", "security@example.com",
+                "New York, USA", true, signatureRectangle(), signature);
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
 ```

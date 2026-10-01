@@ -1,34 +1,35 @@
 ---
 title: حذف صفحة معينة من ملف PDF في PHP
+linktitle: حذف صفحة معينة من ملف PDF في PHP
 type: docs
 weight: 20
 url: /ar/java/delete-a-particular-page-from-the-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: استكشف كيفية حذف صفحة محددة من مستند PDF في PHP باستخدام Aspose.PDF، مما يبسط تحرير المستندات.
+lastmod: "2026-10-01"
 ---
+## Aspose.PDF - حذف صفحة
 
-## Aspose.PDF - حذف الصفحة
-
-لحذف صفحة معينة من مستند PDF باستخدام **Aspose.PDF Java for PHP**، قم ببساطة باستدعاء فئة **DeletePage**.
+لحذف صفحة معينة من مستند PDF باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء فئة **DeletePage**.
 
 كود PHP
 
 ```php
 
-# افتح المستند المستهدف
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# احذف صفحة معينة
+# delete a particular page
 $pdf->getPages()->delete(2);
 
-# احفظ ملف PDF الذي تم إنشاؤه حديثًا
+# save the newly generated PDF file
 $pdf->save($dataDir . "output.pdf");
 
-print "تم حذف الصفحة بنجاح!";
+print "Page deleted successfully!";
 
 ```
 
-**تنزيل التشغيل**
+**جارٍ التنزيل**
 
-قم بتنزيل **حذف الصفحة (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تنزيل **حذف الصفحة (Aspose.PDF)** من أيٍّ من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/DeletePage.php)

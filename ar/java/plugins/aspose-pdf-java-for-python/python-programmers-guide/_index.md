@@ -1,12 +1,13 @@
 ---
 title: دليل مبرمجي بايثون
+linktitle: دليل مبرمجي بايثون
 type: docs
 weight: 20
 url: /ar/java/python-programmers-guide/
-lastmod: "2021-06-05"
+description: استكشف دليل مبرمجي بايثون لـ Aspose.PDF، الذي يغطي الميزات الأساسية والنصائح للعمل مع مستندات PDF في بايثون.
+lastmod: "2026-10-01"
 ---
-
-تتضمن هذه القسم الموضوعات التالية:
+يتضمن هذا القسم المواضيع التالية:
 
 - [العمل مع تحويل المستندات في بايثون](/pdf/ar/java/working-with-document-conversion-in-python/)
 - [العمل مع كائن المستند في بايثون](/pdf/ar/java/working-with-document-object-in-python/)

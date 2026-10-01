@@ -1,35 +1,36 @@
 ---
 title: إضافة سلسلة HTML باستخدام DOM في Ruby
+linktitle: إضافة سلسلة HTML باستخدام DOM في Ruby
 type: docs
 weight: 10
 url: /ar/java/add-html-string-using-dom-in-ruby/
-lastmod: "2021-06-05"
+description: اكتشف كيفية إضافة سلسلة HTML إلى مستند PDF باستخدام واجهة برمجة تطبيقات DOM في Ruby مع Aspose.PDF لتوليد المحتوى الديناميكي.
+lastmod: "2026-10-01"
 ---
-
 ## Aspose.PDF - إضافة HTML
 
-لإضافة سلسلة HTML في وثيقة Pdf باستخدام **Aspose.PDF Java for Ruby**، يمكنك ببساطة استدعاء وحدة **AddHtml**.
+لإضافة سلسلة HTML في مستند PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **AddHtml**.
 
 كود Ruby
 
 ```java
-# المسار إلى دليل الوثائق.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# إنشاء كائن Document
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new
 
-# إضافة صفحة إلى مجموعة الصفحات في ملف PDF
+# Add a page to pages collection of PDF file
 
 page = doc.getPages().add()
 
-# إنشاء HtmlFragment مع محتويات HTML
+# Instantiate HtmlFragment with HTML contents
 
 title = Rjb::import('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Table</i></b></fontsize>")
 
-# تعيين MarginInfo لتفاصيل الهوامش
+# set MarginInfo for margin details
 
 margin = Rjb::import('com.aspose.pdf.MarginInfo').new
 
@@ -37,24 +38,23 @@ margin.setBottom(10)
 
 margin.setTop(200)
 
-# تعيين معلومات الهوامش
+# Set margin information
 
 title.setMargin(margin)
 
-# إضافة جزء HTML إلى مجموعة الفقرات في الصفحة
+# Add HTML Fragment to paragraphs collection of page
 
 page.getParagraphs().add(title)
 
-# حفظ ملف PDF
+# Save PDF file
 
 doc.save(data_dir + "html.output.pdf")
 
-puts "تمت إضافة HTML بنجاح"
+puts "HTML added successfully"
 ```
 
+## تنزيل الكود الجاري
 
-## تحميل الكود الجاري
-
-قم بتنزيل **إضافة HTML (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تنزيل **إضافة HTML (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)

@@ -1,113 +1,126 @@
 ---
-title: استخراج بيانات الجدول من PDF
-linktitle: استخراج بيانات الجدول
+title: استخراج البيانات من جدول في PDF باستخدام Java
+linktitle: استخراج البيانات من جدول
 type: docs
 weight: 40
 url: /ar/java/extract-data-from-table-in-pdf/
-description: تعلم كيفية استخراج البيانات الجدولية من PDF باستخدام Aspose.PDF for Java
-lastmod: "2021-06-05"
+description: تعلم كيفية استخراج بيانات الجداول من ملفات PDF باستخدام Aspose.PDF for Java وتصدير الجداول المكتشفة للمعالجة الإضافية.
+lastmod: "2026-10-01"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية استخراج البيانات من جدول في PDF عبر Java
+Abstract: تشرح هذه المقالة كيفية استخراج ومعالجة بيانات الجداول من مستندات PDF باستخدام Aspose.PDF for Java. تُظهر كيفية فحص الصفحات باستخدام `TableAbsorber`، وقراءة الصفوف والخلايا من الجداول المكتشفة، وتقييد الاستخراج إلى منطقة مشروحة محددة، وتصدير النتيجة إلى Excel.
 ---
+## استخراج الجداول من PDF
 
-## استخراج الجداول من PDF برمجياً
+استخدام `TableAbsorber` للعثور على الجداول في كل صفحة والتكرار عبر الصفوف والخلايا وقطاعات النص وقطعات النص.
 
-استخراج الجداول من ملفات PDF ليس مهمة سهلة لأن الجدول يمكن أن يُنشأ بطرق مختلفة.
-
-Aspose.PDF for Java لديه أداة لتسهيل استرجاع الجداول. لاستخراج بيانات الجدول، يجب عليك تنفيذ الخطوات التالية:
-
-1. افتح المستند - أنشئ كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document);
-1. أنشئ كائن [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber).
-
-1. قرر أي الصفحات التي سيتم تحليلها وطبق [visit](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-) على الصفحات المطلوبة. سيتم فحص البيانات الجدولية، وسيتم حفظ النتيجة في قائمة من [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable). يمكننا الحصول على هذه القائمة من خلال طريقة [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--).
-
-2. للحصول على البيانات قم بالتكرار عبر `TableList` وتعامل مع قائمة [absorbed rows](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow) وقائمة الخلايا المدمجة. يمكننا الوصول إلى القائمة الأولى عن طريق استدعاء طريقة [getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--) وإلى القائمة الثانية عن طريق استدعاء طريقة [getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--).
-
-1. يحتوي كل [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell) على [TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection). يمكنك معالجته لأغراضك الخاصة.
-
-يظهر المثال التالي استخراج جدول من جميع الصفحات:
+1. افتح ملف PDF المصدر في a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. التكرار عبر المستند [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الكائنات لأن الجداول تُكتشف صفحة بصفحة.
+1. إنشاء [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) لكل صفحة واستدع `visit(page)` لتعبئة قائمة الجداول المكتشفة.
+1. التنقل عبر المكتشف [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), و `TextSegment` الكائنات.
+1. أنشئ نص الصف المستخرج من محتوى الجزء واطبع بيانات الجدول.
 
 ```java
-public static void Extract_Table() {
-    // تحميل مستند PDF المصدر
-    String filePath = "/home/aspose/pdf-examples/Samples/sample_table.pdf";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
+public static void extractTablesFromPdf(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
+            TableAbsorber absorber = new TableAbsorber();
+            absorber.visit(page);
 
-    // فحص الصفحات
-    for (com.aspose.pdf.Page page : pdfDocument.getPages()) {
-        absorber.visit(page);
-        for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-            System.out.println("جدول");
-            // التكرار على قائمة الصفوف
-            for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                // التكرار على قائمة الخلايا
-                for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                    for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                        StringBuilder sb = new StringBuilder();
-                        for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                            sb.append(seg.getText());
-                        System.out.print(sb.toString() + "|");
+            for (AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table");
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
+                        }
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
-                System.out.println();
             }
         }
     }
 }
 ```
 
+## استخراج جدول من منطقة محددة
 
-## استخراج الجدول في منطقة محددة من صفحة PDF
+هذا المثال يجد تعليقًا مربعًا، يقارن مستطيله بكل جدول مُكتشف، ويُخرج فقط الجداول داخل المنطقة المحددة.
 
-كل جدول مستوعب يحتوي على خاصية [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable#getRectangle--) التي تصف موقع الجدول على الصفحة.
-
-لذلك، إذا كنت بحاجة إلى استخراج الجداول الموجودة في منطقة معينة، يجب أن تعمل مع إحداثيات محددة.
-
-المثال التالي يوضح كيفية استخراج جدول محدد بتعليق مربع:
+1. افتح ملف PDF المصدر في a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وحدد المربع [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) الذي يحدد منطقة الاستخراج.
+1. إنشاء [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) و استدع `visit(page)` لاكتشاف الجداول في تلك الصفحة.
+1. قارن كل ما تم اكتشافه [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) مع حدود مستطيل التعليق التوضيحي.
+1. التكرار عبر المطابقة [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) و [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) الكائنات وإعادة بناء نص الصف.
+1. اطبع بيانات الجدول للمنطقة المحددة فقط.
 
 ```java
-public static void Extract_Marked_Table() {
-    // تحميل مستند PDF المصدر
-    String filePath = "<... أدخل مسار ملف pdf هنا ...>";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
+public static void extractTableFromSpecificArea(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
 
-    com.aspose.pdf.AnnotationSelector annotationSelector = new com.aspose.pdf.AnnotationSelector(
-            new com.aspose.pdf.SquareAnnotation(page, com.aspose.pdf.Rectangle.getTrivial()));
+        Annotation squareAnnotation = null;
+        for (Annotation annotation : page.getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Square) {
+                squareAnnotation = annotation;
+                break;
+            }
+        }
 
-    java.util.List<com.aspose.pdf.Annotation> list = annotationSelector.getSelected();
-    if (list.size() == 0) {
-        System.out.println("الجداول المحددة غير موجودة..");
-        return;
-    }
+        if (squareAnnotation == null) {
+            System.out.println("No square annotation found.");
+            return;
+        }
 
-    com.aspose.pdf.SquareAnnotation squareAnnotation = (com.aspose.pdf.SquareAnnotation) list.get(0);
+        TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(page);
 
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
-    absorber.visit(page);
+        for (AbsorbedTable table : absorber.getTableList()) {
+            Rectangle tableRect = table.getRectangle();
+            Rectangle annotationRect = squareAnnotation.getRect();
 
-    for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-        {
-            boolean isInRegion = (squareAnnotation.getRect().getLLX() < table.getRectangle().getLLX())
-                    && (squareAnnotation.getRect().getLLY() < table.getRectangle().getLLY())
-                    && (squareAnnotation.getRect().getURX() > table.getRectangle().getURX())
-                    && (squareAnnotation.getRect().getURY() > table.getRectangle().getURY());
+            boolean isInRegion = annotationRect.getLLX() < tableRect.getLLX()
+                    && annotationRect.getLLY() < tableRect.getLLY()
+                    && annotationRect.getURX() > tableRect.getURX()
+                    && annotationRect.getURY() > tableRect.getURY();
 
             if (isInRegion) {
-                for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                    {
-                        for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                            for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                                StringBuilder sb = new StringBuilder();
-                                for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                                    sb.append(seg.getText());
-                                System.out.print(sb.toString() + "|");
-                            }
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
                         }
-                        System.out.println();
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
             }
         }
@@ -115,24 +128,19 @@ public static void Extract_Marked_Table() {
 }
 ```
 
+## تصدير الجداول إلى Excel
 
-## استخراج بيانات الجدول من PDF وتخزينها في ملف CSV
-
-يوضح المثال التالي كيفية استخراج الجدول وتخزينه كملف CSV.
-لرؤية كيفية تحويل PDF إلى جدول بيانات Excel، يرجى الرجوع إلى مقال [تحويل PDF إلى Excel](/pdf/ar/java/convert-pdf-to-excel/).
+1. افتح ملف PDF المصدر في a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. إنشاء [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) للتصدير.
+1. ضبط تنسيق مخرجات Excel إلى `XLSX` لذا يتم كتابة تخطيط الجدول المكتشف كدفتر عمل Excel.
+1. اتصال `document.save(outputFile.toString(), excelSave)` لتصدير المستند بصيغة Excel.
 
 ```java
-public static void Extract_Table_Save_CSV()
-{
-    String filePath = "/home/admin1/pdf-examples/Samples/sample_table.pdf";
-    // تحميل مستند PDF
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-    // إنشاء كائن خيار حفظ Excel
-    com.aspose.pdf.ExcelSaveOptions excelSave = new com.aspose.pdf.ExcelSaveOptions();
-    excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
-
-    // حفظ الخرج بتنسيق XLS
-    pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
+public static void exportTablesToExcel(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions excelSave = new ExcelSaveOptions();
+        excelSave.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+        document.save(outputFile.toString(), excelSave);
+    }
 }
 ```

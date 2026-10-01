@@ -1,39 +1,39 @@
 ---
-title: إنشاء مستند PDF
-linktitle: إنشاء
+title: إنشاء مستند PDF برمجيًا
+linktitle: إنشاء PDF
 type: docs
 weight: 10
 url: /ar/java/create-document/
-description: تعلم كيفية إنشاء ملف PDF في Aspose.PDF لـ Java.
-lastmod: "2021-06-05"
+description: تعلم كيفية إنشاء مستند PDF من الصفر في Java باستخدام Aspose.PDF.
+lastmod: "2026-10-01"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إنشاء ملفات PDF باستخدام Aspose.PDF for Java
+Abstract: توضح هذه المقالة كيفية إنشاء ملف PDF في Java باستخدام Aspose.PDF. يقوم المثال بإنشاء كائن Document جديد، يضيف صفحة، يدرج TextFragment بنص تجريبي، ويحفظ النتيجة كملف PDF.
 ---
+إنشاء ملفات PDF في الكود هو مطلب شائع للتقارير والفواتير والوثائق التجارية المولدة. يوفر Aspose.PDF for Java طريقة مباشرة لبناء مستند من الصفر.
 
-**Aspose.PDF for Java** API يسمح لمطوري تطبيقات جافا بدمج وظيفة معالجة مستندات PDF في تطبيقاتهم. يمكن استخدامه لإنشاء وقراءة ملفات PDF دون الحاجة إلى تثبيت أي برامج أخرى على الآلة الأساسية. يمكن استخدام Aspose.PDF لـ Java في أنواع مختلفة من تطبيقات Java مثل تطبيقات سطح المكتب، JSP، وJSF.
+## كيفية إنشاء ملف PDF في Java
 
-## كيفية إنشاء ملف PDF باستخدام Java
+لإنشاء مستند PDF برمجيًا:
 
-لإنشاء ملف PDF باستخدام Java، يمكن اتباع الخطوات التالية.
+1. إنشاء [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائن.
+1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. إضافة [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) إلى فقرات الصفحة.
+1. احفظ الـ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) إلى ملف إخراج.
 
-1. إنشاء كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) إلى كائن المستند
-1. إنشاء كائن [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment)
+## إنشاء مستند PDF بسيط
 
-1. أضف [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) إلى مجموعة [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) في الصفحة
-1. احفظ مستند PDF الناتج
+المثال التالي بلغة Java يعتمد على `CreatePdfDocumentExamples.java`.
 
 ```java
-// تهيئة كائن المستند
-Document document = new Document();
-
-//إضافة صفحة
-Page page = document.getPages().add();
-
-// إضافة نص إلى الصفحة الجديدة
-page.getParagraphs().add(new TextFragment("Hello World!"));
-
-// حفظ ملف PDF المحدث
-document.save("HelloWorld_out.pdf");
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment("Hello World!"));
+        document.save(outputFile.toString());
+    }
+}
 ```

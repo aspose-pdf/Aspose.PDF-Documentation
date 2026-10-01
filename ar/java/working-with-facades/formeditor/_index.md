@@ -1,19 +1,20 @@
 ---
-title: FormEditor Class
+title: فئة FormEditor
+linktitle: فئة FormEditor
 type: docs
-weight: 105
+weight: 150
 url: /ar/java/formeditor-class/
-description: يشرح هذا القسم كيفية العمل مع com.aspose.pdf.facades باستخدام فئة FormEditor.
-lastmod: "2021-06-05"
-draft: false
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: تعرف على كيفية استخدام واجهة FormEditor في Java لإنشاء حقول النماذج، وتعديل الحقول الموجودة، وتخصيص مظهر الحقل، وإضافة النصوص البرمجية أو إجراءات الإرسال في نماذج PDF.
+lastmod: "2026-10-01"
+TechArticle: true
+AlternativeHeadline: بناء وتحرير نماذج PDF التفاعلية في Java باستخدام الفئة FormEditor
+Abstract: يوضح هذا القسم كيفية استخدام واجهة FormEditor في Aspose.PDF for Java لإنشاء وتحديث نماذج PDF التفاعلية. تغطي أمثلة Java إنشاء أنواع الحقول الشائعة، وتعديل بنية الحقل، وتخصيص المظهر، وإرفاق النصوص البرمجية أو إجراءات الإرسال.
 ---
+جافا `FormEditorExamples` الفئة توضح سير عمل تحرير الحقول الرئيسي المتاح عبر واجهة برمجة تطبيقات Facades.
 
-- [إضافة حقول نموذج PDF](/pdf/ar/java/add-form-fields/)
-- [تزيين حقل النموذج في PDF](/pdf/ar/java/decorate-form-field/)
-- [العمل مع عنصر القائمة](/pdf/ar/java/working-with-list-item/)
-- [نسخ الحقل الداخلي والخارجي](/pdf/ar/java/copy-inner-and-outer-field/)
-- [نقل وإزالة حقل النموذج](/pdf/ar/java/move-remove-form-field/)
-- [استيراد وتصدير حقل النموذج](/pdf/ar/java/import-export-form-field/)
+استخدم هذا القسم لتتعلم كيفية:
+
+- إنشاء حقول نص، مربع اختيار، مربع منسق، مربع قائمة، زر راديو، وزر إرسال
+- إضافة، حذف، نقل، إعادة تسمية، نسخ، أو تحويل الحقول الموجودة
+- تخصيص المحاذاة، المظهر، الحدود، وأرقام comb
+- إرفاق النصوص البرمجية، عناوين URL للإرسال، وإزالة إجراءات الحقل

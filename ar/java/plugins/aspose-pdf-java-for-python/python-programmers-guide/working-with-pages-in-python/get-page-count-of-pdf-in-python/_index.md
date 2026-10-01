@@ -1,24 +1,25 @@
 ---
-title: الحصول على عدد صفحات PDF في بايثون
+title: احصل على عدد صفحات PDF في بايثون
+linktitle: احصل على عدد صفحات PDF في بايثون
 type: docs
 weight: 40
 url: /ar/java/get-page-count-of-pdf-in-python/
-lastmod: "2021-06-05"
+description: افهم كيفية استرداد العدد الإجمالي لصفحات مستند PDF في بايثون باستخدام Aspose.PDF لتحليل المستند بدقة.
+lastmod: "2026-10-01"
 ---
-
-للحصول على عدد صفحات مستند Pdf باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء فئة **GetNumberOfPages**.
+للحصول على عدد صفحات مستند Pdf باستخدام **Aspose.PDF Java for Python**، فقط استدعِ الفئة **GetNumberOfPages**.
 
 ```Python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 page_count = pdf.getPages().size()
-print "عدد الصفحات:" . page_count
+print "Page Count:" . page_count
 
 ```
 
-**تحميل الكود قيد التشغيل**
+**تحميل الكود الجاري**
 
-قم بتحميل **احصل على عدد الصفحات (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل\u0412\u00A0**احصل على عدد الصفحات (Aspose.PDF)**\u0412\u00A0من\u0412\u00A0أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetNumberOfPages/GetNumberOfPages.py)

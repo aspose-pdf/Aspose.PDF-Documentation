@@ -1,34 +1,35 @@
 ---
 title: إدراج صفحة فارغة في ملف PDF باستخدام PHP
+linktitle: إدراج صفحة فارغة في ملف PDF باستخدام PHP
 type: docs
 weight: 70
 url: /ar/java/insert-an-empty-page-into-a-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: تعلم كيفية إدراج صفحة فارغة في أي موضع داخل ملف PDF باستخدام PHP مع Aspose.PDF لتكوين مرن للوثائق.
+lastmod: "2026-10-01"
 ---
-
 ## Aspose.PDF - إدراج صفحة فارغة
 
-لإدراج صفحة فارغة في مستند PDF باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء فئة **InsertEmptyPage**.
+لإدراج صفحة فارغة في مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء الفئة **InsertEmptyPage**.
 
 كود PHP
 
 ```php
 
-# افتح المستند الهدف
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# إدراج صفحة فارغة في ملف PDF
+# insert a empty page in a PDF
 $pdf->getPages()->insert(1);
 
-# احفظ ملف الخرج المدمج (المستند الهدف)
+# Save the concatenated output file (the target document)
 $pdf->save($dataDir . "output.pdf");
 
-print "تمت إضافة الصفحة الفارغة بنجاح!";
+print "Empty page added successfully!";
 
 ```
 
-**تنزيل الكود التشغيلي**
+**تحميل الكود الجاري**
 
-قم بتنزيل **إدراج صفحة فارغة (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تحميلВ **إدراج صفحة فارغة (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPage.php)

@@ -1,80 +1,57 @@
 ---
-title: إزالة الجداول من ملف PDF موجود
+title: إزالة الجداول من مستندات PDF الحالية
 linktitle: إزالة الجداول
+description: تعلم كيفية إزالة جدول واحد أو أكثر من مستندات PDF الحالية باستخدام Java.
+lastmod: "2026-10-01"
 type: docs
-weight: 40
-url: /ar/java/remove-tables-from-existing-pdf/
-description: تتيح Aspose.PDF for Java لك إزالة الجدول والعديد من الجداول من مستند PDF الخاص بك.
-lastmod: "2021-06-05"
+weight: 50
+url: /ar/java/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: حذف جدول واحد أو عدة جداول من ملفات PDF باستخدام Java
+Abstract: توضح هذه المقالة كيفية إزالة الجداول من مستندات PDF الحالية باستخدام Aspose.PDF for Java. تُعرّف بـ TableAbsorber لتحديد مواقع الجداول وتُظهر كيفية حذف جدول واحد أو إزالة جميع الجداول المكتشفة من صفحة.
 ---
+استخدم `TableAbsorber` عندما تحتاج إلى حذف جدول واحد أو أكثر تم اكتشافه من ملف PDF موجود.
 
-{{% alert color="primary" %}}
+## إزالة جدول مكتشف واحد
 
-تقدم Aspose.PDF for Java إمكانيات لإدراج/إنشاء جدول داخل مستند PDF أثناء إنشائه من البداية أو يمكنك أيضًا إضافة كائن الجدول في أي مستند PDF موجود. ومع ذلك، قد يكون لديك متطلب [التعامل مع الجداول في PDF موجود](https://docs.aspose.com/pdf/java/manipulate-tables-in-existing-pdf/) حيث يمكنك تحديث المحتويات في خلايا الجدول الموجودة. ومع ذلك، قد تواجه متطلبًا لإزالة كائنات الجداول من مستند PDF موجود.
+استخدم هذا المثال عندما يجب حذف الجدول المتطابق الأول فقط في الصفحة.
 
-{{% /alert %}}
-
-لإزالة الجداول، نحتاج إلى استخدام فئة [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) للتمكن من الوصول إلى الجداول في PDF الموجود ثم استدعاء طريقة [Remove](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#remove-com.aspose.pdf.AbsorbedTable-) لإزالتها.
-
-## إزالة الجدول من مستند PDF
-
-لقد أضفنا وظيفة جديدة وهي Remove() إلى الفئة الحالية [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber) من أجل إزالة الجدول من مستند PDF. بمجرد أن يجد المنصة الجداول على الصفحة بنجاح، يصبح قادراً على إزالتها. يرجى التحقق من المقتطف البرمجي التالي الذي يوضح كيفية إزالة جدول من مستند PDF:
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بزيارة الصفحة الهدف باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. إزالة الجدول الأول المكتشف وحفظ المستند.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRemoveTable {
-    
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RemoveTable() {
-        // تحميل مستند PDF الموجود
-        Document pdfDocument = new Document(_dataDir + "Table_input.pdf");
-
-        // إنشاء كائن TableAbsorber للعثور على الجداول
+public static void removeOneTable(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
-
-        // زيارة الصفحة الأولى باستخدام المنصة
-        absorber.visit(pdfDocument.getPages().get_Item(1));
-
-        // الحصول على الجدول الأول في الصفحة
-        AbsorbedTable table = absorber.getTableList().get(0);
-
-        // إزالة الجدول
-        absorber.remove(table);
-
-        // حفظ PDF
-        pdfDocument.save(_dataDir + "Table_out.pdf");
-    }  
+        absorber.visit(document.getPages().get_Item(1));
+        absorber.remove(absorber.getTableList().get(0));
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## إزالة جميع الجداول المكتشفة من صفحة
 
-## إزالة جداول متعددة من ملف PDF
+استخدم هذا المثال عندما يجب إزالة كل جدول متطابق على الصفحة.
 
-أحيانًا قد يحتوي ملف PDF على أكثر من جدول وقد تحتاج إلى إزالة جداول متعددة منه. لإزالة جداول متعددة من ملف PDF، يُرجى استخدام جزء الشيفرة التالي:
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. قم بزيارة الصفحة الهدف باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) ونسخ الجداول المكتشفة إلى قائمة.
+1. إزالة كل جدول مكتشف وحفظ ملف PDF المحدث.
 
 ```java
-    public static void RemoveMultipleTable() {
-        // تحميل مستند PDF موجود
-        Document pdfDocument = new Document(_dataDir + "Table_input2.pdf");
-
-        // إنشاء كائن TableAbsorber للعثور على الجداول
+public static void removeAllTables(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
-
-        // زيارة الصفحة الثانية مع الماص
-        absorber.visit(pdfDocument.getPages().get_Item(2));
-
-        // تكرار عبر نسخة من المجموعة وإزالة الجداول
-        for (AbsorbedTable table : absorber.getTableList())
+        absorber.visit(document.getPages().get_Item(1));
+        List<AbsorbedTable> tables = new ArrayList<>(absorber.getTableList());
+        for (AbsorbedTable table : tables) {
             absorber.remove(table);
-
-        // حفظ المستند
-        pdfDocument.save(_dataDir + "Table2_out.pdf");
+        }
+        document.save(outputFile.toString());
     }
 }
 ```
