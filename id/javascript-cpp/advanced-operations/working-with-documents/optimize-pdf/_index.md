@@ -1,5 +1,5 @@
 ---
-title: Optimalkan PDF menggunakan Aspose.PDF untuk JavaScript via C++
+title: Optimalkan PDF menggunakan Aspose.PDF for JavaScript via C++
 linktitle: Optimalkan File PDF
 type: docs
 weight: 10
@@ -13,7 +13,7 @@ sitemap:
 
 ## Optimalkan Dokumen PDF
 
-Toolkit oleh Aspose.PDF untuk JavaScript via C++ memungkinkan Anda untuk mengoptimalkan konten PDF untuk Web.
+Toolkit oleh Aspose.PDF for JavaScript via C++ memungkinkan Anda untuk mengoptimalkan konten PDF untuk Web.
 
 Optimalisasi, atau linearisasi untuk Web, mengacu pada proses membuat file PDF cocok untuk penjelajahan online menggunakan browser web. Untuk mengoptimalkan file untuk tampilan web:
 

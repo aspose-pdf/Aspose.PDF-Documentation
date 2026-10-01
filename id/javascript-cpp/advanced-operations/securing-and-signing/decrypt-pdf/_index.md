@@ -4,7 +4,7 @@ linktitle: Dekripsi File PDF
 type: docs
 weight: 40
 url: /id/javascript-cpp/decrypt-pdf/
-description: Dekripsi File PDF dengan Aspose.PDF untuk JavaScript melalui C++.
+description: Dekripsi File PDF dengan Aspose.PDF for JavaScript melalui C++.
 lastmod: "2022-12-15"
 sitemap:
     changefreq: "monthly"
@@ -15,7 +15,7 @@ sitemap:
 
 Baru-baru ini, semakin banyak pengguna bertukar dokumen terenkripsi agar tidak menjadi korban penipuan Internet dan melindungi dokumen mereka. Dalam hal ini, menjadi perlu untuk mengakses file PDF terenkripsi, karena akses semacam itu hanya dapat diperoleh oleh pengguna yang berwenang. Juga, orang mencari berbagai solusi untuk mendekripsi file PDF.
 
-Lebih baik menyelesaikan masalah ini sekali dengan menggunakan Aspose.PDF untuk JavaScript melalui C++ langsung di browser web Anda. Cuplikan kode berikut menunjukkan cara mendekripsi file PDF.
+Lebih baik menyelesaikan masalah ini sekali dengan menggunakan Aspose.PDF for JavaScript melalui C++ langsung di browser web Anda. Cuplikan kode berikut menunjukkan cara mendekripsi file PDF.
 
 1. Pilih file PDF untuk didekripsi.
 1. Buat 'FileReader'.

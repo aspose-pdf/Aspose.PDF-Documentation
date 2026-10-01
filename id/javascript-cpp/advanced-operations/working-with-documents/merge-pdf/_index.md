@@ -4,7 +4,7 @@ linktitle: Menggabungkan file PDF
 type: docs
 weight: 20
 url: /id/javascript-cpp/merge-pdf/
-description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF dengan Aspose.PDF untuk JavaScript melalui C++
+description: Halaman ini menjelaskan cara menggabungkan dokumen PDF menjadi satu file PDF dengan Aspose.PDF for JavaScript melalui C++
 lastmod: "2022-12-15"
 sitemap:
     changefreq: "monthly"
@@ -13,9 +13,9 @@ sitemap:
 
 ## Menggabungkan atau mengkombinasikan dua PDF menjadi satu PDF dalam JavaScript
 
-Menggabungkan dan mengkombinasikan file adalah tugas yang sangat populer saat bekerja dengan sejumlah besar dokumen. Terkadang, saat bekerja dengan dokumen dan gambar, ketika mereka dipindai, diproses, dan diatur, beberapa file dibuat. Tetapi bagaimana jika Anda perlu menyimpan semuanya dalam satu file? Atau apakah Anda tidak ingin mencetak beberapa dokumen? Gabungkan dua file PDF dengan Aspose.PDF untuk JavaScript melalui C++.
+Menggabungkan dan mengkombinasikan file adalah tugas yang sangat populer saat bekerja dengan sejumlah besar dokumen. Terkadang, saat bekerja dengan dokumen dan gambar, ketika mereka dipindai, diproses, dan diatur, beberapa file dibuat. Tetapi bagaimana jika Anda perlu menyimpan semuanya dalam satu file? Atau apakah Anda tidak ingin mencetak beberapa dokumen? Gabungkan dua file PDF dengan Aspose.PDF for JavaScript melalui C++.
 
-Alat JavaScript ini memungkinkan untuk menggabungkan dua file PDF menjadi satu dokumen PDF menggunakan Aspose.PDF untuk JavaScript melalui C++. Contoh ini ditulis dalam JavaScript.
+Alat JavaScript ini memungkinkan untuk menggabungkan dua file PDF menjadi satu dokumen PDF menggunakan Aspose.PDF for JavaScript melalui C++. Contoh ini ditulis dalam JavaScript.
 
 1. Pilih file PDF untuk digabungkan.
 1. Buat sebuah 'FileReader'.

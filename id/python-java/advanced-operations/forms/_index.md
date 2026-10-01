@@ -15,7 +15,7 @@ Formulir adalah file dengan area untuk pengguna memilih atau mengisi informasi d
 
 AcroForms adalah file PDF yang berisi bidang formulir. Data dapat dimasukkan ke dalam bidang-bidang ini (secara manual atau melalui proses otomatis) oleh pengguna akhir atau penulis formulir. Secara internal, AcroForms adalah anotasi atau bidang yang diterapkan pada dokumen PDF.
 
-Bagian ini menjelaskan pendekatan cepat dan sederhana untuk menyelesaikan dokumen PDF secara programatis melalui penggunaan Aspose.PDF. Bagian ini juga membahas bagaimana seseorang dapat menggunakan Aspose.PDF untuk Java untuk menemukan dan memetakan bidang yang tersedia dalam PDF yang sudah ada dengan AcroForms.
+Bagian ini menjelaskan pendekatan cepat dan sederhana untuk menyelesaikan dokumen PDF secara programatis melalui penggunaan Aspose.PDF. Bagian ini juga membahas bagaimana seseorang dapat menggunakan Aspose.PDF for Java untuk menemukan dan memetakan bidang yang tersedia dalam PDF yang sudah ada dengan AcroForms.
 
 **Aspose.PDF for Python via Java** kami memungkinkan Anda untuk berhasil, cepat, dan mudah bekerja dengan formulir dalam dokumen PDF.
 

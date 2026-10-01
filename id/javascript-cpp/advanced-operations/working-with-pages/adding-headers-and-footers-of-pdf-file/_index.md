@@ -4,14 +4,14 @@ linktitle: Tambahkan Header dan Footer ke PDF
 type: docs
 weight: 70
 url: /id/javascript-cpp/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF untuk JavaScript via C++ memungkinkan Anda menambahkan header dan footer ke file PDF Anda menggunakan AsposePdfAddTextHeaderFooter.
+description: Aspose.PDF for JavaScript via C++ memungkinkan Anda menambahkan header dan footer ke file PDF Anda menggunakan AsposePdfAddTextHeaderFooter.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-**Aspose.PDF untuk JavaScript via C++** memungkinkan Anda menambahkan header dan footer dalam file PDF yang sudah ada.
+**Aspose.PDF for JavaScript via C++** memungkinkan Anda menambahkan header dan footer dalam file PDF yang sudah ada.
 
 1. Buat 'FileReader'.
 1. Fungsi [AsposePdfAddTextHeaderFooter](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddtextheaderfooter/) dieksekusi.
@@ -56,7 +56,7 @@ Potongan kode berikut menunjukkan kepada Anda bagaimana menambahkan teks di head
     const ffileAddTextHeaderFooter = e => {
       const file_reader = new FileReader();
       file_reader.onload = event => {
-        const header = 'Aspose.PDF untuk JavaScript via C++';
+        const header = 'Aspose.PDF for JavaScript via C++';
         const footer = 'ASPOSE';
         /*Tambahkan teks di Header/Footer dari file PDF dan simpan sebagai "ResultAddHeaderFooter.pdf" - Minta Web Worker*/
         AsposePDFWebWorker.postMessage(

@@ -4,7 +4,7 @@ linktitle: Mengenkripsi Berkas PDF
 type: docs
 weight: 50
 url: /id/javascript-cpp/encrypt-pdf/
-description: Mengenkripsi Berkas PDF dengan Aspose.PDF untuk JavaScript via C++.
+description: Mengenkripsi Berkas PDF dengan Aspose.PDF for JavaScript via C++.
 lastmod: "2022-12-15"
 sitemap:
     changefreq: "monthly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Mengenkripsi Berkas PDF menggunakan Kata Sandi Pengguna atau Pemilik
 
-Jika Anda mengirim email kepada seseorang dengan lampiran PDF yang berisi informasi rahasia, Anda mungkin ingin menambahkan beberapa keamanan terlebih dahulu untuk menghindari jatuh ke tangan yang salah. Cara terbaik untuk membatasi akses tidak sah ke dokumen PDF adalah dengan melindunginya dengan kata sandi. Untuk mengenkripsi dokumen dengan mudah dan aman, Anda dapat menggunakan Aspose.PDF untuk JavaScript via C++.
+Jika Anda mengirim email kepada seseorang dengan lampiran PDF yang berisi informasi rahasia, Anda mungkin ingin menambahkan beberapa keamanan terlebih dahulu untuk menghindari jatuh ke tangan yang salah. Cara terbaik untuk membatasi akses tidak sah ke dokumen PDF adalah dengan melindunginya dengan kata sandi. Untuk mengenkripsi dokumen dengan mudah dan aman, Anda dapat menggunakan Aspose.PDF for JavaScript via C++.
 
 >Harap tentukan kata sandi pengguna dan pemilik yang berbeda saat mengenkripsi berkas PDF.
 

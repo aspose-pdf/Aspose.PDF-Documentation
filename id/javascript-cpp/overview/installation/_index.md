@@ -1,10 +1,10 @@
 ---
-title: Install Aspose.PDF untuk JavaScript via C++
+title: Install Aspose.PDF for JavaScript via C++
 linktitle: Instalasi
 type: docs
 weight: 40
 url: /id/javascript-cpp/installation/
-description: Bagian ini menunjukkan deskripsi produk dan petunjuk untuk menginstal Aspose.PDF untuk JavaScript via C++.
+description: Bagian ini menunjukkan deskripsi produk dan petunjuk untuk menginstal Aspose.PDF for JavaScript via C++.
 lastmod: "2022-12-13"
 sitemap:
     changefreq: "weekly"
@@ -13,9 +13,9 @@ sitemap:
 
 # Instalasi
 
-**Aspose.PDF untuk JavaScript via C++** adalah toolkit yang mudah dan aman digunakan untuk bekerja dengan PDF langsung di browser web.
+**Aspose.PDF for JavaScript via C++** adalah toolkit yang mudah dan aman digunakan untuk bekerja dengan PDF langsung di browser web.
 
-Untuk menginstal dan menggunakan Aspose.PDF untuk JavaScript via C++ dari arsip -*ZIP, ikuti petunjuk berikut:
+Untuk menginstal dan menggunakan Aspose.PDF for JavaScript via C++ dari arsip -*ZIP, ikuti petunjuk berikut:
 
 - ekstrak file dari arsip ZIP
 - enkripsi file *.lic Anda menggunakan 'encrypt_lic.html'
@@ -23,11 +23,11 @@ Untuk menginstal dan menggunakan Aspose.PDF untuk JavaScript via C++ dari arsip 
 
 Ikuti tautan untuk [Unduh Langsung](https://releases.aspose.com/pdf/javascriptcpp/)
 
-Untuk menginstal dan menggunakan Aspose.PDF untuk JavaScript via C++ dari NPMJS, ikuti petunjuk berikut:
+Untuk menginstal dan menggunakan Aspose.PDF for JavaScript via C++ dari NPMJS, ikuti petunjuk berikut:
 
 - `npm i aspose-pdf-js`
 
-Untuk menginstal dan menggunakan Aspose.PDF untuk JavaScript via C++ dari GITHUB, ikuti petunjuk berikut:
+Untuk menginstal dan menggunakan Aspose.PDF for JavaScript via C++ dari GITHUB, ikuti petunjuk berikut:
 
 - `npm install git+https://github.com/aspose-pdf/Aspose.PDF-for-JavaScript-via-CPP`
 

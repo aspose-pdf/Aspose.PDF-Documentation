@@ -13,7 +13,7 @@ sitemap:
 
 ## Menghapus Penanda Buku Tertentu dari Dokumen PDF
 
-Anda dapat menghapus penanda buku dari file PDF menggunakan Aspose.PDF untuk JavaScript melalui C++. Anda bisa mendapatkan hasilnya langsung di browser Anda.
+Anda dapat menghapus penanda buku dari file PDF menggunakan Aspose.PDF for JavaScript melalui C++. Anda bisa mendapatkan hasilnya langsung di browser Anda.
 
 1. Buat 'FileReader'.
 1. Fungsi [AsposePdfDeleteBookmarks](https://reference.aspose.com/pdf/javascript-cpp/organize/asposepdfdeletebookmarks/) dieksekusi.

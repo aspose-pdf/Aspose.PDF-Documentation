@@ -11,7 +11,7 @@ sitemap:
     priority: 0.8
 ---
 
-**Aspose.PDF untuk JavaScript** memungkinkan Anda untuk mengonversi file PDF ke file PDF yang sesuai dengan <abbr title="Portable Document Format / A">PDF/A</abbr>.
+**Aspose.PDF for JavaScript** memungkinkan Anda untuk mengonversi file PDF ke file PDF yang sesuai dengan <abbr title="Portable Document Format / A">PDF/A</abbr>.
 
 Operasi konversi bergantung pada jumlah halaman dalam dokumen dan bisa sangat memakan waktu. Oleh karena itu, kami sangat menyarankan menggunakan Web Workers.
 
@@ -20,7 +20,7 @@ Kode ini menunjukkan cara untuk memindahkan tugas konversi file PDF yang membutu
 {{% alert color="success" %}}
 **Coba konversi PDF ke PDF/A online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi gratis online ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for JavaScript menghadirkan aplikasi gratis online ["PDF to PDF/A-1A"](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
 [![Aspose.PDF Konversi PDF ke PDF/A dengan Aplikasi Gratis](pdf_to_pdfa.png)](https://products.aspose.app/pdf/conversion/pdf-to-pdfa1a)
 {{% /alert %}}

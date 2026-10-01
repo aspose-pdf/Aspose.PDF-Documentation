@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /id/javascript-cpp/convert-pdf-to-xlsx/
 lastmod: "2023-11-01"
-description: Aspose.PDF untuk JavaScript memungkinkan Anda mengonversi PDF ke XLSX, dan format CSV.
+description: Aspose.PDF for JavaScript memungkinkan Anda mengonversi PDF ke XLSX, dan format CSV.
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,12 +13,12 @@ sitemap:
 
 ## Membuat spreadsheet dari PDF menggunakan JavaScript
 
-**Aspose.PDF untuk JavaScript** mendukung fitur konversi file PDF ke format Excel, dan CSV.
+**Aspose.PDF for JavaScript** mendukung fitur konversi file PDF ke format Excel, dan CSV.
 
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke Excel secara online**
 
-Aspose.PDF untuk JavaScript menyajikan aplikasi gratis online ["PDF ke XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for JavaScript menyajikan aplikasi gratis online ["PDF ke XLSX"](https://products.aspose.app/pdf/conversion/pdf-to-xlsx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke Excel dengan Aplikasi Gratis](pdf_to_xlsx.png)](https://products.aspose.app/pdf/conversion/pdf-to-xlsx)
 {{% /alert %}}

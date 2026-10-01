@@ -143,7 +143,7 @@ Dalam hal Anda ingin mendapatkan semua font dari dokumen PDF, Anda dapat menggun
 ```
 ## Mengatur Informasi File PDF
 
-Aspose.PDF untuk JavaScript melalui C++ memungkinkan Anda mengatur informasi khusus file untuk PDF, informasi seperti penulis, tanggal pembuatan, subjek, dan judul.
+Aspose.PDF for JavaScript melalui C++ memungkinkan Anda mengatur informasi khusus file untuk PDF, informasi seperti penulis, tanggal pembuatan, subjek, dan judul.
  Untuk mengatur informasi ini:
 
 1. Buat 'FileReader'.
@@ -222,7 +222,7 @@ Aspose.PDF untuk JavaScript melalui C++ memungkinkan Anda mengatur informasi khu
 
 ## Hapus Informasi File PDF
 
-Aspose.PDF untuk JavaScript melalui C++ memungkinkan Anda untuk menghapus Metadata file PDF:
+Aspose.PDF for JavaScript melalui C++ memungkinkan Anda untuk menghapus Metadata file PDF:
 
 1. Buat 'FileReader'.
 1. Fungsi [AsposePdfRemoveMetadata](https://reference.aspose.com/pdf/javascript-cpp/metadata/asposepdfremovemetadata/) dijalankan.
