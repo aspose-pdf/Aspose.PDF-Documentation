@@ -1,16 +1,20 @@
 ---
-title: Navigasi dan Interaksi
+title: "Navigasi dan interaksi PDF dalam Java"
 linktitle: Navigasi dan interaksi
 type: docs
 weight: 90
 url: /id/java/navigation-and-interaction/
-description: Bagian ini menjelaskan fitur bekerja dengan tautan, tindakan, dan penanda buku.
-lastmod: "2021-06-05"
+description: Pelajari cara bekerja dengan tautan PDF, aksi, dan bookmark dalam Java untuk navigasi dan perilaku dokumen interaktif.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Bekerja dengan tautan, aksi, dan bookmark dalam file PDF menggunakan Java
+Abstract: Bagian ini menjelaskan cara mengelola fitur navigasi dan interaksi dalam dokumen PDF dengan Aspose.PDF for Java. Pelajari cara membuat dan memperbarui tautan, menambahkan aksi interaktif, dan bekerja dengan bookmark untuk meningkatkan navigasi PDF dan alur kerja dokumen.
 ---
+Aspose.PDF for Java mencakup API untuk bookmark, tautan, dan aksi interaktif. Anda dapat menggunakan fitur-fitur ini untuk meningkatkan navigasi di dalam dokumen, terhubung ke sumber eksternal, dan memicu perilaku dari interaksi pengguna.
 
-- [Tautan](/pdf/id/java/links/) - Anda dapat dengan mudah membuat, memperbarui, dan mengekstrak tautan dengan Java.
-- [Tindakan](/pdf/id/java/actions/) - dimungkinkan untuk menambah dan mendapatkan, membuat hyperlink ke file PDF. Juga, dalam artikel ini, Anda akan belajar cara menghapus Tindakan Buka Dokumen dari File PDF dan cara Menentukan Halaman PDF saat Melihat Dokumen.
-- [Penanda Buku](/pdf/id/java/bookmarks/) - publikasi besar biasanya mencakup kerangka penanda buku yang dapat dengan mudah dilihat dan dipilih di Panel Penanda Buku, memungkinkan Anda untuk mengklik penanda buku untuk melompat ke halaman atau bab yang diwakilinya. Panel Penanda Buku adalah elemen yang peka terhadap konten, dan terlihat di bilah sisi hanya jika dokumen PDF yang terbuka mengandung struktur penanda buku.
+- [Bekerja dengan tautan PDF](/pdf/id/java/links/)
+- [Bekerja dengan tindakan PDF](/pdf/id/java/actions/)
+- [Bekerja dengan penanda PDF](/pdf/id/java/bookmarks/)

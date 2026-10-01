@@ -76,7 +76,7 @@ url: /id/net/choose-the-platform-and-interoperability-technology/
 
 **Ada tiga versi dari perpustakaan kelas Aspose.PDF:**
 
-[Aspose.PDF](/pdf/) adalah keluarga produk yang menyediakan fungsionalitas untuk menghasilkan dokumen PDF dari awal, serta kemampuan untuk mengedit/memanipulasi yang sudah ada. Aspose.PDF tersedia dalam tiga produk yang berbeda: [Aspose.PDF for .NET](/pdf/id/net/), [Aspose.PDF untuk Java](/pdf/java/), dan [Aspose.PDF untuk C++](/pdf/cpp/). Kita dapat mengatakan bahwa Aspose.PDF “secara native” mendukung:
+[Aspose.PDF](/pdf/) adalah keluarga produk yang menyediakan fungsionalitas untuk menghasilkan dokumen PDF dari awal, serta kemampuan untuk mengedit/memanipulasi yang sudah ada. Aspose.PDF tersedia dalam tiga produk yang berbeda: [Aspose.PDF for .NET](/pdf/id/net/), [Aspose.PDF for Java](/pdf/java/), dan [Aspose.PDF untuk C++](/pdf/cpp/). Kita dapat mengatakan bahwa Aspose.PDF “secara native” mendukung:
 
 - .NET Framework dan semua bahasa pemrograman yang menargetkan platform .NET, seperti C# atau VB.NET.
 - Platform Java dan bahasa pemrograman Java.
@@ -107,7 +107,7 @@ Selain tiga produk yang disebutkan di atas, Aspose mengusulkan serangkaian solus
 - [Aspose.PDF untuk Layanan Pelaporan](/pdf/reportingservices/) memungkinkan menghasilkan laporan PDF di Microsoft SQL Server Reporting Services dan Power BI Report Server.
 - [Aspose.PDF untuk SharePoint](/pdf/sharepoint/) memungkinkan mengekspor daftar, item daftar, dan halaman Wiki SharePoint ke format file PDF.
 
-Daftar lengkap produk Aspose.PDF dapat ditemukan di [Page](/pdf/). Ini termasuk produk berbasis [Aspose.PDF untuk Java](/pdf/java/) dan PDF [Aspose.PDF untuk C++](/pdf/cpp/).
+Daftar lengkap produk Aspose.PDF dapat ditemukan di [Page](/pdf/). Ini termasuk produk berbasis [Aspose.PDF for Java](/pdf/java/) dan PDF [Aspose.PDF untuk C++](/pdf/cpp/).
 
 **Mengakses objek Aspose.PDF dari bahasa lain**
 
@@ -120,7 +120,7 @@ Menggunakan Aspose.PDF dari bahasa pemrograman lain memerlukan *teknologi intero
 - VBScript.
 - Visual Basic.
 
-Informasi tentang teknologi interoperabilitas yang disarankan untuk digunakan dengan [Aspose.PDF untuk Java](/pdf/java/) dan PDF [Aspose.PDF untuk C++](/pdf/cpp/) seperti `Inline::Java` dan `JPype` dapat ditemukan di [Page](/pdf/java/plugins/) produk yang bersangkutan.
+Informasi tentang teknologi interoperabilitas yang disarankan untuk digunakan dengan [Aspose.PDF for Java](/pdf/java/) dan PDF [Aspose.PDF untuk C++](/pdf/cpp/) seperti `Inline::Java` dan `JPype` dapat ditemukan di [Page](/pdf/java/plugins/) produk yang bersangkutan.
 
 ## Kesimpulan
 

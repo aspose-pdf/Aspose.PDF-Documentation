@@ -1,13 +1,14 @@
 ---
-title: Bekerja dengan Teks dalam Ruby
+title: "Bekerja dengan teks di Ruby"
+linktitle: "Bekerja dengan teks di Ruby"
 type: docs
 weight: 30
 url: /id/java/working-with-text-in-ruby/
-lastmod: "2021-06-05"
+description: Pelajari cara bekerja dengan elemen teks dalam dokumen PDF menggunakan Ruby, termasuk ekstraksi teks dan manipulasi dengan Aspose.PDF.
+lastmod: "2026-09-30"
 ---
+Bagian ini mencakup topik berikut:
 
-Bagian ini mencakup topik-topik berikut:
-
-- [Tambahkan String HTML menggunakan DOM dalam Ruby](/pdf/id/java/add-html-string-using-dom-in-ruby/)
-- [Tambahkan Teks ke file PDF yang sudah ada dalam Ruby](/pdf/id/java/add-text-to-an-existing-pdf-file-in-ruby/)
-- [Ekstrak Teks Dari Semua Halaman Dokumen PDF dalam Ruby](/pdf/id/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/)
+- [Menambahkan string HTML menggunakan DOM di Ruby](/pdf/id/java/add-html-string-using-dom-in-ruby/)
+- [Menambahkan teks ke file PDF yang ada di Ruby](/pdf/id/java/add-text-to-an-existing-pdf-file-in-ruby/)
+- [Mengekstrak teks dari semua halaman dokumen PDF di Ruby](/pdf/id/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/)

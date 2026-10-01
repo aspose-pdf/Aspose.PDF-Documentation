@@ -4,7 +4,7 @@ linktitle: Ekstrak Gambar dari PDF
 type: docs
 weight: 20
 url: /id/javascript-cpp/extract-images-from-the-pdf-file/
-description: Cara mengekstrak bagian dari gambar dari PDF menggunakan toolkit Aspose.PDF untuk JavaScript.
+description: Cara mengekstrak bagian dari gambar dari PDF menggunakan toolkit Aspose.PDF for JavaScript.
 lastmod: "2023-09-05"
 sitemap:
     changefreq: "weekly"

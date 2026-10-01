@@ -20,7 +20,7 @@ Untuk mengedit konten file PDF di Microsoft Word atau pengolah kata lainnya yang
 {{% alert color="success" %}}
 **Cobalah mengonversi PDF ke DOC secara online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi gratis online ["PDF ke DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for JavaScript menghadirkan aplikasi gratis online ["PDF ke DOC"](https://products.aspose.app/pdf/conversion/pdf-to-doc), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
 [![Konversi PDF ke DOC](/pdf/id/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
 {{% /alert %}}
@@ -89,7 +89,7 @@ Berikut adalah cuplikan kode JavaScript yang menunjukkan contoh sederhana mengub
 {{% alert color="warning" %}}
 **Coba ubah PDF ke DOCX secara online**
 
-Aspose.PDF untuk JavaScript menyajikan aplikasi online gratis ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
+Aspose.PDF for JavaScript menyajikan aplikasi online gratis ["PDF ke Word"](https://products.aspose.app/pdf/conversion/pdf-to-docx), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
 
 [![Aplikasi Gratis Aspose.PDF Konversi PDF ke Word](/pdf/id/javascript-cpp/images/pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
 
@@ -97,7 +97,7 @@ Aspose.PDF untuk JavaScript menyajikan aplikasi online gratis ["PDF ke Word"](ht
 
 ## Ubah PDF ke DOCX
 
-Aspose.PDF untuk JavaScript API memungkinkan Anda membaca dan mengkonversi dokumen PDF ke DOCX. DOCX adalah format terkenal untuk dokumen Microsoft Word yang strukturnya diubah dari biner biasa menjadi kombinasi file XML dan biner. File Docx dapat dibuka dengan Word 2007 dan versi lateral tetapi tidak dengan versi MS Word sebelumnya yang mendukung ekstensi file DOC.
+Aspose.PDF for JavaScript API memungkinkan Anda membaca dan mengkonversi dokumen PDF ke DOCX. DOCX adalah format terkenal untuk dokumen Microsoft Word yang strukturnya diubah dari biner biasa menjadi kombinasi file XML dan biner. File Docx dapat dibuka dengan Word 2007 dan versi lateral tetapi tidak dengan versi MS Word sebelumnya yang mendukung ekstensi file DOC.
 
 ```js
 

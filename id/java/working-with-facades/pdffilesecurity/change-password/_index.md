@@ -1,29 +1,59 @@
 ---
-title: Ubah Kata Sandi File PDF
+title: "Mengubah kata sandi file PDF"
+linktitle: "Mengubah kata sandi file PDF"
 type: docs
-weight: 40
+weight: 10
 url: /id/java/change-password/
-description: Topik ini menjelaskan cara mengubah kata sandi pada File PDF menggunakan Kelas PdfFileSecurity.
-lastmod: "2021-06-05"
+description: Pelajari cara mengubah kata sandi PDF dalam Java dengan fasad PdfFileSecurity.
+lastmod: "2026-09-30"
 draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Memperbarui kata sandi pengguna dan pemilik PDF dalam Java"
+Abstract: Pelajari cara mengubah kata sandi PDF dengan Aspose.PDF for Java. Set contoh Java mencakup mengubah kata sandi pengguna dan pemilik secara langsung, mengubah kata sandi sambil mereset pengaturan keamanan, dan alur kerja perubahan kata sandi gaya try yang mengembalikan flag keberhasilan.
 ---
+## Mengubah kata sandi file PDF
 
-## Ubah Kata Sandi File PDF
+Gunakan `PdfFileSecurity` ketika Anda perlu memutar kredensial pada PDF yang sudah diamankan.
 
-Untuk mengubah kata sandi file PDF, Anda perlu membuat objek [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity) dan kemudian memanggil metode [ChangePassword](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#changePassword-java.lang.String-java.lang.String-java.lang.String-). Anda perlu memasukkan kata sandi pemilik yang ada dan kata sandi pengguna serta pemilik baru ke metode [ChangePassword](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#changePassword-java.lang.String-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-).
+### Langkah
 
-Cuplikan kode berikut menunjukkan cara mengubah kata sandi file PDF.
+1. Buat sebuah instans `PdfFileSecurity`.
+2. Ikat PDF yang diamankan dengan `bindPdf`.
+3. Panggil yang sesuai `changePassword` overload, tergantung pada apakah Anda juga ingin mengatur ulang hak istimewa dan ukuran kunci.
+4. Simpan file yang telah diperbarui dan tutup objek keamanan.
+
+### Contoh Java
 
 ```java
-    public static void ChangePassword() {
-        PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
-        // Buat objek PdfFileSecurity
-        if (pdfFileInfo.isEncrypted()) {
-            PdfFileSecurity fileSecurity = new PdfFileSecurity();
-            fileSecurity.bindPdf(_dataDir + "sample_encrypted.pdf");
-            fileSecurity.changePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", DocumentPrivilege.getPrint(),
-                    KeySize.x256);
-            fileSecurity.save(_dataDir + "sample_encrtypted1.pdf");
-        }
+public static void changeUserAndOwnerPassword(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    fileSecurity.changePassword("owner_password", "new_user_password", "new_owner_password");
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void changePasswordAndResetSecurity(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    fileSecurity.changePassword("owner_password", "new_user_password", "new_owner_password", privilege, KeySize.x128);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void tryChangePasswordWithoutException(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    if (fileSecurity.tryChangePassword("owner_password", "new_user_password", "new_owner_password")) {
+        fileSecurity.save(outputFile.toString());
+    } else {
+        System.out.println("Password change failed. Check owner password or document security.");
     }
+    fileSecurity.close();
+}
 ```

@@ -4,7 +4,7 @@ linktitle: Bekerja dengan Halaman
 type: docs
 weight: 20
 url: /id/javascript-cpp/working-with-pages/
-description: Bagaimana menambahkan halaman, menambahkan header dan footer, memutar halaman yang dapat Anda ketahui di bagian ini. Aspose.PDF untuk JavaScript melalui C++ menjelaskan kepada Anda semua detail tentang topik ini.
+description: Bagaimana menambahkan halaman, menambahkan header dan footer, memutar halaman yang dapat Anda ketahui di bagian ini. Aspose.PDF for JavaScript melalui C++ menjelaskan kepada Anda semua detail tentang topik ini.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

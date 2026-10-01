@@ -4,17 +4,17 @@ linktitle: Konversi Dokumen PDF
 type: docs
 weight: 50
 url: /id/javascript-cpp/conversion/
-description: Bagian ini berisi artikel yang berkaitan dengan konversi dokumen PDF ke format lain oleh Aspose.PDF untuk JavaScript via C++.
+description: Bagian ini berisi artikel yang berkaitan dengan konversi dokumen PDF ke format lain oleh Aspose.PDF for JavaScript via C++.
 lastmod: "2022-12-14"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-PDF dikembangkan untuk menyediakan standar dalam menyajikan dokumen dan bahan referensi lainnya dalam format yang independen dari perangkat lunak aplikasi, perangkat keras, dan sistem operasi. Konten file PDF tidak terbatas pada teks, bisa berupa hyperlink, gambar, tombol dan formulir yang dapat diklik, tanda tangan elektronik, watermark, dan lainnya. Oleh karena itu, sering kali diperlukan untuk mengonversi file PDF ke format lain untuk mengedit atau mengubah kontennya. **Aspose.PDF untuk JavaScript via C++** kami memungkinkan Anda untuk berhasil, cepat, dan mudah mengonversi dokumen PDF Anda ke format yang paling populer.
+PDF dikembangkan untuk menyediakan standar dalam menyajikan dokumen dan bahan referensi lainnya dalam format yang independen dari perangkat lunak aplikasi, perangkat keras, dan sistem operasi. Konten file PDF tidak terbatas pada teks, bisa berupa hyperlink, gambar, tombol dan formulir yang dapat diklik, tanda tangan elektronik, watermark, dan lainnya. Oleh karena itu, sering kali diperlukan untuk mengonversi file PDF ke format lain untuk mengedit atau mengubah kontennya. **Aspose.PDF for JavaScript via C++** kami memungkinkan Anda untuk berhasil, cepat, dan mudah mengonversi dokumen PDF Anda ke format yang paling populer.
  Untuk daftar lengkap format yang didukung, lihat bagian [Format File yang Didukung Aspose.PDF](https://docs.aspose.com/pdf/javascript-cpp/supported-file-formats/).
 
-Aspose.PDF untuk JavaScript melalui C++* memungkinkan konversi dokumen PDF ke berbagai format. Selain itu, Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online dengan aplikasi konverter Aspose.PDF. Pelajari bagian-bagian tentang konversi dokumen dengan potongan kode.
+Aspose.PDF for JavaScript melalui C++* memungkinkan konversi dokumen PDF ke berbagai format. Selain itu, Anda dapat memeriksa kualitas konversi Aspose.PDF dan melihat hasilnya secara online dengan aplikasi konverter Aspose.PDF. Pelajari bagian-bagian tentang konversi dokumen dengan potongan kode.
 
 ## Cara menggunakan JavaScript melalui C++ untuk konversi
 
@@ -22,7 +22,7 @@ Dokumen Word adalah yang paling serbaguna dan dapat diedit. Mengonversi PDF ke D
 
 - [Mengonversi PDF ke DOC](/pdf/id/javascript-cpp/convert-pdf-to-doc/) - Anda dapat mengonversi dokumen PDF Anda ke format Word dengan Javascript.
 
-Format angka diperlukan tidak hanya untuk membuat data dalam tabel lebih mudah dibaca, tetapi juga untuk membuat tabel lebih mudah digunakan. Tentu saja, jika Anda perlu mengonversi data semacam itu dari dokumen PDF ke format Excel gunakan Aspose.PDF untuk Javascript kami.
+Format angka diperlukan tidak hanya untuk membuat data dalam tabel lebih mudah dibaca, tetapi juga untuk membuat tabel lebih mudah digunakan. Tentu saja, jika Anda perlu mengonversi data semacam itu dari dokumen PDF ke format Excel gunakan Aspose.PDF for Javascript kami.
 
 - [Konversi PDF ke Microsoft XLSX](/pdf/id/javascript-cpp/convert-pdf-to-xlsx/) - bagian ini menjelaskan cara mengonversi dokumen PDF ke XLSX, dan CSV.
 
@@ -30,9 +30,9 @@ Format PowerPoint digunakan untuk membuat berbagai presentasi. File PPT berisi s
 
 - [Konversi PDF ke Microsoft PowerPoint](/pdf/id/javascript-cpp/convert-pdf-to-powerpoint/) - di sini kita membahas tentang mengonversi PDF ke PowerPoint dengan melacak proses konversi.
 
-HyperText Markup Language adalah bahasa deskripsi dokumen hypertext, bahasa standar untuk membuat halaman web. Dengan Aspose.PDF untuk Javascript Anda dapat dengan mudah mengonversi dokumen HTML dan sebaliknya.
+HyperText Markup Language adalah bahasa deskripsi dokumen hypertext, bahasa standar untuk membuat halaman web. Dengan Aspose.PDF for Javascript Anda dapat dengan mudah mengonversi dokumen HTML dan sebaliknya.
 
-Ada banyak format gambar yang perlu dikonversi ke PDF untuk berbagai tujuan. Aspose.PDF untuk JavaScript memungkinkan format gambar yang paling populer.
+Ada banyak format gambar yang perlu dikonversi ke PDF untuk berbagai tujuan. Aspose.PDF for JavaScript memungkinkan format gambar yang paling populer.
 
 - [Konversi PDF ke berbagai format Gambar](/pdf/id/javascript-cpp/convert-pdf-to-images-format/) - konversi halaman PDF sebagai gambar dalam format JPEG, PNG, SVG, dan format lainnya.
 Bagian ini mencakup format seperti: EPUB, XPS, TeX, Teks, dan PDF Skala Abu-abu.

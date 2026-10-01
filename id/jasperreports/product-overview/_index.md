@@ -20,6 +20,6 @@ Aspose.PDF for JasperReports adalah komponen fleksibel yang dirancang untuk meng
 
 ### Deskripsi Produk
 
-Untuk membuat dokumen PDF, Aspose.PDF for JasperReports mengandalkan versi bawaan [Aspose.PDF untuk Java](https://products.aspose.com/pdf/java/), perpustakaan terkemuka di pasar dari Aspose. Adobe Acrobat Professional tidak harus diinstal pada sistem untuk menghasilkan dokumen PDF dengan Aspose.PDF for JasperReports.
+Untuk membuat dokumen PDF, Aspose.PDF for JasperReports mengandalkan versi bawaan [Aspose.PDF for Java](https://products.aspose.com/pdf/java/), perpustakaan terkemuka di pasar dari Aspose. Adobe Acrobat Professional tidak harus diinstal pada sistem untuk menghasilkan dokumen PDF dengan Aspose.PDF for JasperReports.
 
 

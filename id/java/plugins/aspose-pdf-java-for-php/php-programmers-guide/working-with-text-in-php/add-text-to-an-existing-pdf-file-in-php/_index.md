@@ -1,52 +1,52 @@
 ---
-title: Tambahkan Teks ke file PDF yang ada di PHP
+title: "Menambahkan teks ke file PDF yang ada di PHP"
+linktitle: "Menambahkan teks ke file PDF yang ada di PHP"
 type: docs
 weight: 20
 url: /id/java/add-text-to-an-existing-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan teks baru ke dokumen PDF yang ada di PHP menggunakan Aspose.PDF untuk peningkatan konten.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - tambah teks
 
-## Aspose.PDF - Tambahkan Teks
-
-Untuk menambahkan string Teks dalam dokumen Pdf menggunakan **Aspose.PDF Java untuk PHP**, cukup panggil modul **AddText**.
+Untuk menambahkan string Teks dalam dokumen Pdf menggunakan **Aspose.PDF Java for PHP**, cukup panggil modul **AddText**.
 
 Kode PHP
 
 ```php
 
-# Membuat objek Dokumen
+# Instantiate Document object
 $doc = new Document($dataDir . 'input1.pdf');
 
-# mengambil halaman tertentu
+# get particular page
 $pdf_page = $doc->getPages()->get_Item(1);
 
-# membuat fragmen teks
-$text_fragment = new TextFragment("teks utama");
+# create text fragment
+$text_fragment = new TextFragment("main text");
 $text_fragment->setPosition(new Position(100, 600));
 
 $font_repository = new FontRepository();
 $color = new Color();
 
-# mengatur properti teks
+# set text properties
 $text_fragment->getTextState()->setFont($font_repository->findFont("Verdana"));
 $text_fragment->getTextState()->setFontSize(14);
 
-# membuat objek TextBuilder
+# create TextBuilder object
 $text_builder = new TextBuilder($pdf_page);
 
-# menambahkan fragmen teks ke halaman PDF
+# append the text fragment to the PDF page
 $text_builder->appendText($text_fragment);
 
-# Simpan file PDF
+# Save PDF file
 $doc->save($dataDir . "Text_Added.pdf");
 
-print "Teks berhasil ditambahkan" . PHP_EOL;
+print "Text added successfully" . PHP_EOL;
 
 ```
 
+**Mengunduh kode yang dapat dijalankan**
 
-**Unduh Kode Berjalan**
-
-Unduh **Tambahkan Teks (Aspose.PDF)** dari salah satu situs pemrograman sosial yang disebutkan di bawah ini:
+Unduh **Tambahkan Teks (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddText.php)

@@ -1,19 +1,20 @@
 ---
-title: Tambahkan String HTML menggunakan DOM di Jython
+title: "Menambahkan string HTML menggunakan DOM di Jython"
+linktitle: "Menambahkan string HTML menggunakan DOM di Jython"
 type: docs
 weight: 10
 url: /id/java/add-html-string-using-dom-in-jython/
-lastmod: "2021-06-05"
+description: Jelajahi cara menambahkan konten HTML ke dokumen PDF menggunakan DOM di Jython dengan Aspose.PDF untuk pembuatan dokumen yang kaya.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - tambah HTML
 
-## Aspose.PDF - Tambahkan Html
+Untuk Memeriksa Format File menggunakan **Aspose.PDF Java for Jython**. Di sini Anda dapat melihat contoh kode.
 
-Untuk Memeriksa Format File menggunakan **Aspose.PDF Java untuk Jython**. Di sini Anda dapat melihat contoh kode.
+Kesalahan dalam merender makro 'code' : Nilai tidak valid yang ditentukan untuk parameter lang
 
-Error rendering macro 'code' : Nilai tidak valid ditentukan untuk parameter lang
+## Mengunduh kode yang dapat dijalankan
 
-## Unduh Kode Berjalan
-
-Unduh kode berjalan dari salah satu situs coding sosial yang disebutkan di bawah ini:
+Unduh kode yang sedang berjalan dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

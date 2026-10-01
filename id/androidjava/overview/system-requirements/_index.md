@@ -13,7 +13,7 @@ sitemap:
 
 ## Ikhtisar
 
-Untuk menghasilkan dokumen PDF, mesin yang menjalankan [Aspose.PDF for Android via Java](https://products.aspose.com/pdf/android-java/) tidak perlu memiliki [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) diinstal sebagai Aspose.PDF untuk Java sendiri adalah mesin pembuatan dokumen PDF. Namun untuk menampilkan dokumen PDF yang dihasilkan oleh Aspose.PDF untuk Android melalui Java, mesin tersebut setidaknya membutuhkan sebuah [Adobe Acrobat Reader](http://www.adobe.com/products/acrobat/readermain.html). Itu dapat [diunduh](https://www.adobe.com/acrobat/pdf-reader.html) secara gratis.
+Untuk menghasilkan dokumen PDF, mesin yang menjalankan [Aspose.PDF for Android via Java](https://products.aspose.com/pdf/android-java/) tidak perlu memiliki [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) diinstal sebagai Aspose.PDF for Java sendiri adalah mesin pembuatan dokumen PDF. Namun untuk menampilkan dokumen PDF yang dihasilkan oleh Aspose.PDF untuk Android melalui Java, mesin tersebut setidaknya membutuhkan sebuah [Adobe Acrobat Reader](http://www.adobe.com/products/acrobat/readermain.html). Itu dapat [diunduh](https://www.adobe.com/acrobat/pdf-reader.html) secara gratis.
 
 ## Sistem Operasi yang Didukung
 

@@ -4,7 +4,7 @@ linktitle: Get Started
 type: docs  
 weight: 30  
 url: /id/javascript-cpp/get-started/  
-description: Bagian ini menjelaskan prinsip dasar kerja Aspose.PDF untuk JavaScript melalui C++. Aspose.PDF untuk JavaScript melalui C++ mendukung berbagai macam fungsi.  
+description: Bagian ini menjelaskan prinsip dasar kerja Aspose.PDF for JavaScript melalui C++. Aspose.PDF for JavaScript melalui C++ mendukung berbagai macam fungsi.  
 lastmod: "2022-12-14"  
 sitemap:  
     changefreq: "weekly"  
@@ -17,9 +17,9 @@ PDF dibuat oleh Adobe pada tahun 1990-an untuk mencapai dua hal. Yang pertama ad
 
 Namun, tidak cukup hanya membuka dokumen Anda. Dalam bekerja dengan PDF, Anda akan menghadapi kebutuhan untuk membuat dokumen semacam itu baru, mengeditnya, atau mengkonversinya ke format yang Anda butuhkan.
 
-## Mengapa menggunakan Aspose.PDF untuk JavaScript melalui C++?
+## Mengapa menggunakan Aspose.PDF for JavaScript melalui C++?
 
-Menggunakan Aspose.PDF untuk JavaScript dalam proyek Anda memberikan keuntungan berikut:
+Menggunakan Aspose.PDF for JavaScript dalam proyek Anda memberikan keuntungan berikut:
 
 - berbagai macam fungsi
 - toolkit digunakan untuk bekerja dengan PDF langsung di browser web

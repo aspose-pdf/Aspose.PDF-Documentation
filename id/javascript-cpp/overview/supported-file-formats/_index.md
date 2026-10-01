@@ -4,14 +4,14 @@ linktitle: Format File yang Didukung
 type: docs
 weight: 10
 url: /id/javascript-cpp/supported-file-formats/
-description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk JavaScript.
+description: Halaman ini menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF for JavaScript.
 lastmod: "2021-06-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
 
-Tabel berikut menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF untuk JavaScript melalui C++.
+Tabel berikut menunjukkan format file yang dapat dimuat dan disimpan oleh Aspose.PDF for JavaScript melalui C++.
 
 |**Format**|**Deskripsi**|**Muat**|**Simpan**|**Catatan**|
 | :- | :- | :- | :- | :- |

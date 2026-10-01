@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose.PDF untuk PHP melalui Java terdiri dari dua komponen terpisah: pembungkus skrip (aspose.pdf.php) dan Aspose.PDF untuk Java. Komponen-komponen ini berinteraksi melalui PHP/Java Bridge, dengan masing-masing memerlukan lingkungan dan proses eksekusi sendiri.
+Aspose.PDF untuk PHP melalui Java terdiri dari dua komponen terpisah: pembungkus skrip (aspose.pdf.php) dan Aspose.PDF for Java. Komponen-komponen ini berinteraksi melalui PHP/Java Bridge, dengan masing-masing memerlukan lingkungan dan proses eksekusi sendiri.
 
 ## Instalasi
 

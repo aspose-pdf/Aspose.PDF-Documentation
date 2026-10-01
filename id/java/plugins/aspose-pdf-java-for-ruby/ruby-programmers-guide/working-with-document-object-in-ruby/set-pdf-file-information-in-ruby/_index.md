@@ -1,32 +1,32 @@
 ---
-title: Mengatur Informasi File PDF di Ruby
+title: "Mengatur informasi file PDF di Ruby"
+linktitle: "Mengatur informasi file PDF di Ruby"
 type: docs
 weight: 120
 url: /id/java/set-pdf-file-information-in-ruby/
-lastmod: "2021-06-05"
+description: Secara terprogram mendefinisikan dan memperbarui metadata PDF seperti judul, penulis, dan kata kunci menggunakan Ruby.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - atur informasi file PDF
 
-## Aspose.PDF - Mengatur Informasi File PDF
-
-Untuk memperbarui informasi dokumen Pdf menggunakan **Aspose.PDF Java untuk Ruby**, cukup panggil modul **SetPdfFileInfo**.
+Untuk memperbarui informasi dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **SetPdfFileInfo**.
 
 Kode Ruby
 
 ```java
-
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Dapatkan informasi dokumen
+# Get document information
 
 doc_info = doc.getInfo()
 
-doc_info.setAuthor("Aspose.PDF untuk java")
+doc_info.setAuthor("Aspose.PDF for java")
 
 doc_info.setCreationDate(Rjb::import('java.util.Date').new)
 
@@ -34,20 +34,19 @@ doc_info.setKeywords("Aspose.PDF, DOM, API")
 
 doc_info.setModDate(Rjb::import('java.util.Date').new)
 
-doc_info.setSubject("Informasi PDF")
+doc_info.setSubject("PDF Information")
 
-doc_info.setTitle("Mengatur Informasi Dokumen PDF")
+doc_info.setTitle("Setting PDF Document Information")
 
-# simpan dokumen yang diperbarui dengan informasi baru
+# save update document with new information
 
 doc.save(data_dir + "Updated_Information.pdf")
 
-puts "Perbarui informasi dokumen, silakan periksa file keluaran."
+puts "Update document information, please check output file."
 ```
 
+## Mengunduh kode yang dapat dijalankan
 
-## Download Running Code
-
-Unduh **Set PDF File Information (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+Download **Set PDF File Information (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

@@ -1,10 +1,10 @@
 ---
-title: Fitur Utama Aspose.PDF untuk JavaScript
+title: Fitur Utama Aspose.PDF for JavaScript
 linktitle: Fitur Utama
 type: docs
 weight: 20
 url: /id/javascript-cpp/key-features/
-description: Aspose.PDF untuk JavaScript melalui C++ menunjukkan fitur umumnya. Halaman ini menjelaskan versi PDF yang didukung, dan semua manipulasi yang dapat kita lakukan dengan teks, gambar, halaman, dll.
+description: Aspose.PDF for JavaScript melalui C++ menunjukkan fitur umumnya. Halaman ini menjelaskan versi PDF yang didukung, dan semua manipulasi yang dapat kita lakukan dengan teks, gambar, halaman, dll.
 lastmod: "2022-12-13"
 sitemap:
     changefreq: "weekly"
@@ -13,7 +13,7 @@ sitemap:
 
 ## Fitur Umum
 
-- **Aspose.PDF untuk JavaScript melalui C++** dibangun menggunakan teknologi WebAssembly dan berdasarkan Aspose.PDF untuk .NET
+- **Aspose.PDF for JavaScript melalui C++** dibangun menggunakan teknologi WebAssembly dan berdasarkan Aspose.PDF untuk .NET
 - Menetapkan, Mendapatkan, dan Menghapus Informasi File PDF
 - Menghapus Penanda Buku
 - Menghapus Anotasi
@@ -27,7 +27,7 @@ sitemap:
 
 ## Versi PDF yang Didukung
 
-Aspose.PDF untuk JavaScript mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, dan 1.7.
+Aspose.PDF for JavaScript mendukung versi PDF 1.2, 1.3, 1.4, 1.5, 1.6, dan 1.7.
 
 ## Font
 

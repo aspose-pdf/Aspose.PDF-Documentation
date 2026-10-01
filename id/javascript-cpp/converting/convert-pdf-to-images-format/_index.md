@@ -18,7 +18,7 @@ Dalam artikel ini, kami akan menunjukkan pilihan untuk mengonversi PDF ke format
 Dokumen yang dipindai sebelumnya sering disimpan dalam format file PDF. Namun, apakah Anda perlu mengeditnya di editor grafis atau mengirimkannya lebih lanjut dalam format gambar? Kami memiliki alat universal untuk Anda untuk mengonversi PDF ke gambar menggunakan
 Tugas yang paling umum adalah ketika Anda perlu menyimpan seluruh dokumen PDF atau beberapa halaman tertentu dari dokumen sebagai satu set gambar. **Aspose untuk JavaScript melalui C++** memungkinkan Anda mengonversi PDF ke format JPG dan PNG untuk menyederhanakan langkah-langkah yang diperlukan untuk mendapatkan gambar Anda dari file PDF tertentu.
 
-**Aspose.PDF untuk JavaScript melalui C++** mendukung berbagai konversi format PDF ke gambar.
+**Aspose.PDF for JavaScript melalui C++** mendukung berbagai konversi format PDF ke gambar.
  Silakan periksa bagian [Format File yang Didukung Aspose.PDF](https://docs.aspose.com/pdf/javascript-cpp/supported-file-formats/).
 
 Operasi konversi tergantung pada jumlah halaman dalam dokumen dan dapat memakan waktu yang sangat lama. Oleh karena itu, kami sangat merekomendasikan menggunakan Web Workers.
@@ -28,7 +28,7 @@ Kode ini menunjukkan cara untuk memindahkan tugas konversi file PDF yang membutu
 {{% alert color="success" %}}
 **Coba konversi PDF ke JPEG online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi gratis online ["PDF ke JPEG"](https://products.aspose.app/pdf/conversion/pdf-to-jpg), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for JavaScript menghadirkan aplikasi gratis online ["PDF ke JPEG"](https://products.aspose.app/pdf/conversion/pdf-to-jpg), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF conversion PDF to JPEG with Free App](pdf_to_jpg.png)](https://products.aspose.app/pdf/conversion/pdf-to-jpg)
 {{% /alert %}}
@@ -104,7 +104,7 @@ Berikut adalah potongan kode JavaScript yang menunjukkan contoh sederhana mengub
 {{% alert color="success" %}}
 **Coba konversi PDF ke TIFF online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi online gratis ["PDF ke TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
+Aspose.PDF for JavaScript menghadirkan aplikasi online gratis ["PDF ke TIFF"](https://products.aspose.app/pdf/conversion/pdf-to-tiff), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya bekerja.
 
 [![Aspose.PDF konversi PDF ke TIFF dengan Aplikasi Gratis](pdf_to_tiff.png)](https://products.aspose.app/pdf/conversion/pdf-to-tiff)
 {{% /alert %}}
@@ -180,7 +180,7 @@ The following JavaScript code snippet shows simple example of coverting PDF page
 
 Sebagai contoh bagaimana aplikasi gratis kami bekerja, silakan periksa fitur berikut.
 
-Aspose.PDF untuk JavaScript menyajikan aplikasi gratis online ["PDF ke PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for JavaScript menyajikan aplikasi gratis online ["PDF ke PNG"](https://products.aspose.app/pdf/conversion/pdf-to-png), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
 [![Cara mengonversi PDF ke PNG menggunakan Aplikasi Gratis](pdf_to_png.png)](https://products.aspose.app/pdf/conversion/pdf-to-png)
 {{% /alert %}}
@@ -257,7 +257,7 @@ Berikut adalah potongan kode JavaScript yang menunjukkan contoh sederhana untuk 
 {{% alert color="success" %}}
 **Coba konversi PDF ke SVG secara online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi gratis online ["PDF ke SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for JavaScript menghadirkan aplikasi gratis online ["PDF ke SVG"](https://products.aspose.app/pdf/conversion/pdf-to-svg), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
 [![Aspose.PDF Konversi PDF ke SVG dengan Aplikasi Gratis](pdf_to_svg.png)](https://products.aspose.app/pdf/conversion/pdf-to-svg)
 {{% /alert %}}

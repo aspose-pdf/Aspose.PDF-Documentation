@@ -4,7 +4,7 @@ linktitle: Parse Dokumen PDF
 type: docs
 weight: 65
 url: /id/javascript-cpp/parsing/
-description: Apakah Anda ingin memparse dokumen PDF? Temukan berbagai metode ekstraksi data PDF dengan Aspose.PDF untuk JavaScript melalui C++.
+description: Apakah Anda ingin memparse dokumen PDF? Temukan berbagai metode ekstraksi data PDF dengan Aspose.PDF for JavaScript melalui C++.
 lastmod: "2023-09-05"
 sitemap:
     changefreq: "monthly"

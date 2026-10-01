@@ -1,160 +1,101 @@
 ---
-title: Tambah dan Hapus Penanda Buku
-linktitle: Tambah dan Hapus Penanda Buku
+title: "Menambahkan dan menghapus penanda PDF di Java"
+linktitle: "Menambahkan dan menghapus penanda"
 type: docs
 weight: 10
 url: /id/java/add-and-delete-bookmark/
-description: Anda dapat menambahkan penanda buku ke dokumen PDF dengan Java. Dimungkinkan untuk menghapus semua atau penanda buku tertentu dari dokumen PDF.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan dan menghapus penanda dalam dokumen PDF menggunakan Java.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menambahkan atau menghapus penanda dalam dokumen PDF dengan Java"
+Abstract: Artikel ini menunjukkan cara membuat dan menghapus bookmark menggunakan Aspose.PDF for Java. Contoh-contohnya memperlihatkan penambahan bookmark tingkat atas, pembuatan hierarki bookmark anak, menghapus semua bookmark, dan menghapus bookmark tertentu berdasarkan judul.
 ---
+Gunakan koleksi outline dokumen untuk mengelola bookmark secara programatis.
 
-## Tambah Penanda Buku ke Dokumen PDF
+## Menambahkan bookmark tingkat atas
 
-Penanda buku disimpan dalam koleksi objek Dokumen [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection), yang ada dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
+Gunakan contoh ini ketika dokumen harus mencakup satu entri outline tingkat atas.
 
-Untuk menambahkan penanda buku ke PDF:
-
-1. Buka dokumen PDF menggunakan objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Buat penanda buku dan definisikan propertinya.
-1. Tambahkan koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) ke koleksi Outlines.
-
-Cuplikan kode berikut menunjukkan cara menambahkan penanda buku dalam dokumen PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`OutlineItemCollection`](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) dan konfigurasikan judulnya, gaya, dan aksi.
+1. Tambahkan penanda buku ke outline dokumen dan simpan file.
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.IOException;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.facades.Bookmark;
-import com.aspose.pdf.facades.Bookmarks;
-import com.aspose.pdf.facades.PdfBookmarkEditor;
-
-public class ExampleBookmarks {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Bookmarks/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Bookmarks\\";
-        return _dataDir;
-    }
-
-    public static void AddBookmarks() throws IOException {
-
-        Document pdfDocument = new Document(GetDataDir() + "AddBookmark.pdf");
-
-        // Buat objek bookmark
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+public static void addBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
         pdfOutline.setTitle("Test Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
+        pdfOutline.setAction(new GoToAction(document.getPages().get_Item(1)));
 
-        // Atur nomor halaman tujuan
-        pdfOutline.setAction(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // Tambahkan bookmark dalam koleksi outline dokumen.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // Simpan dokumen yang diperbarui
-        pdfDocument.save(_dataDir + "AddBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Menambahkan bookmark anak
 
-## Tambahkan Penanda Anak ke Dokumen PDF
+Contoh ini membuat bookmark induk dan menempatkan bookmark anak di bawahnya.
 
-Penanda dapat dinestifikasi, menunjukkan hubungan hierarki dengan penanda induk dan anak. Artikel ini menjelaskan cara menambahkan penanda anak, yaitu penanda tingkat kedua, ke PDF.
-
-Untuk menambahkan penanda anak ke file PDF, pertama tambahkan penanda induk:
-
-1. Buka dokumen.
-1. Tambahkan penanda ke [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection), mendefinisikan properti-propertinya.
-1. Tambahkan OutlineItemCollection ke koleksi objek Dokumen [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-
-Penanda anak dibuat sama seperti penanda induk, dijelaskan di atas, tetapi ditambahkan ke koleksi Outlines penanda induk.
-
-Cuplikan kode berikut menunjukkan cara menambahkan penanda anak ke dokumen PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat induk dan anak objek [`OutlineItemCollection`](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/).
+1. Tambahkan anak ke induk, tambahkan induk ke koleksi outline, dan simpan dokumen.
 
 ```java
-    public static void AddChildBookmark() {
-        // Buka dokumen
-        Document pdfDocument = new Document(GetDataDir() + "AddChildBookmark.pdf");
-
-        // Buat objek penanda induk
-        OutlineItemCollection pdfOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+public static void addChildBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection pdfOutline = new OutlineItemCollection(document.getOutlines());
         pdfOutline.setTitle("Parent Outline");
         pdfOutline.setItalic(true);
         pdfOutline.setBold(true);
 
-        // Buat objek penanda anak
-        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(pdfDocument.getOutlines());
+        OutlineItemCollection pdfChildOutline = new OutlineItemCollection(document.getOutlines());
         pdfChildOutline.setTitle("Child Outline");
         pdfChildOutline.setItalic(true);
         pdfChildOutline.setBold(true);
 
-        // Tambahkan penanda anak ke koleksi penanda induk
         pdfOutline.add(pdfChildOutline);
-        // Tambahkan penanda induk ke koleksi outline dokumen.
-        pdfDocument.getOutlines().add(pdfOutline);
-
-        // Simpan output
-        pdfDocument.save(_dataDir + "AddChildBookmark_out.pdf");
+        document.getOutlines().add(pdfOutline);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Menghapus semua penanda buku
 
-## Hapus Semua Penanda dari Dokumen PDF
+Gunakan pendekatan ini ketika seluruh koleksi outline harus dihapus dari dokumen.
 
-Semua penanda dalam PDF disimpan dalam koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). Artikel ini menjelaskan cara menghapus semua penanda dari file PDF.
-
-Untuk menghapus semua penanda dari file PDF:
-
-1. Panggil metode Delete dari koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-1. Simpan file yang telah dimodifikasi menggunakan metode Save dari objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-Cuplikan kode berikut menunjukkan cara menghapus semua penanda dari dokumen PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Hapus seluruh koleksi outline.
+1. Simpan file output yang telah dibersihkan.
 
 ```java
-    public static void DeleteAllBookmarksFromPDFDocument() {
-        // Buka dokumen
-        Document pdfDocument = new Document(GetDataDir() + "DeleteAllBookmarks.pdf");
-
-        // Hapus semua penanda
-        pdfDocument.getOutlines().delete();
-
-        // Simpan file yang telah diperbarui
-        pdfDocument.save(_dataDir + "DeleteAllBookmarks_out.pdf");
+public static void deleteBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete();
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Menghapus bookmark tertentu
 
-## Hapus Penanda Tertentu dari Dokumen PDF
+Gunakan contoh ini ketika satu bookmark bernama harus dihapus tanpa mengosongkan seluruh pohon garis besar.
 
-[Delete All Attachments from PDF document](https://docs.aspose.com/pdf/java/working-with-attachments/) menunjukkan cara menghapus semua lampiran dari file PDF. Juga dimungkinkan untuk hanya menghapus lampiran tertentu.
-
-Untuk menghapus penanda buku tertentu dari file PDF:
-
-1. Masukkan judul penanda buku sebagai parameter ke metode [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection).
-2. Kemudian simpan file yang diperbarui dengan metode Save dari objek Document.
-
-Kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) menyediakan koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). Metode [Delete](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection#delete--) menghapus penanda buku apa pun dengan judul yang diteruskan ke metode tersebut.
-
-Cuplikan kode berikut menunjukkan cara menghapus penanda buku tertentu dari dokumen PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Hapus bookmark berdasarkan judul dari koleksi outline.
+1. Simpan dokumen yang diperbarui.
 
 ```java
-    public static void DeleteParticularBookmarkPDFDocument() {
-        // Buka dokumen
-        Document pdfDocument = new Document(GetDataDir() + "DeleteParticularBookmark.pdf");
-
-        // Hapus outline tertentu berdasarkan Judul
-        pdfDocument.getOutlines().delete("Child Outline");
-
-        // Simpan file yang diperbarui
-        pdfDocument.save(_dataDir + "DeleteParticularBookmark_out.pdf");
+public static void deleteBookmark(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getOutlines().delete("Child Outline");
+        document.save(outputFile.toString());
     }
+}
 ```

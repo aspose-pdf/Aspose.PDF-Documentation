@@ -1,44 +1,55 @@
 ---
-title: Mengganti Gambar dalam File PDF yang Ada
-linktitle: Ganti Gambar
+title: "Mengganti gambar dalam file PDF yang ada menggunakan Java"
+linktitle: "Mengganti gambar"
 type: docs
 weight: 70
 url: /id/java/replace-image-in-existing-pdf-file/
-description: Bagian ini menjelaskan tentang mengganti gambar dalam file PDF yang ada menggunakan pustaka Java.
-lastmod: "2021-06-05"
+description: Pelajari cara mengganti gambar yang disematkan dalam file PDF yang ada menggunakan Java.
+lastmod: "2026-09-30"
+TechArticle: true
+AlternativeHeadline: "Mengganti gambar dalam file PDF yang ada dengan Java"
+Abstract: Artikel ini menunjukkan cara mengganti gambar dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup mengganti gambar berdasarkan indeks sumber daya dan mengganti penempatan gambar pertama yang cocok yang ditemukan dengan ImagePlacementAbsorber.
 ---
+Gunakan koleksi gambar halaman atau pencarian berbasis penempatan tergantung pada seberapa tepat Anda perlu menargetkan gambar.
 
-Metode [Replace](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection#replace-int-java.io.InputStream-) dari koleksi [XImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) memungkinkan Anda untuk mengganti gambar dalam file PDF yang ada.
+## Mengganti gambar berdasarkan indeks sumber daya
 
-Koleksi Gambar dapat ditemukan dalam koleksi Sumber Daya halaman. Untuk mengganti gambar:
-
-1. Buka file PDF menggunakan objek Document.
-2. Ganti gambar tertentu, simpan file PDF yang diperbarui menggunakan metode Save dari objek Document.
-
-Cuplikan kode berikut menunjukkan cara mengganti gambar dalam file PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Akses sumber daya gambar pada [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target.
+1. Ganti sumber daya gambar target dengan file gambar baru.
+1. Simpan PDF yang diperbarui [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
+public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        document.getPages().get_Item(1).getResources().getImages().replace(1, imageStream);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+## Mengganti gambar menggunakan `ImagePlacementAbsorber`
 
-import com.aspose.pdf.Document;
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`ImagePlacementAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) dan kunjungi [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) target.
+1. Dapatkan [`ImagePlacement`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) target dan ganti dengan aliran gambar baru.
+1. Simpan PDF yang diperbarui [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-public class ExampleReplaceImage {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    public static void Replace() {
-        // Buka dokumen
-        Document pdfDocument = new Document("input.pdf");
-        // Ganti gambar tertentu
-        try {
-            pdfDocument.getPages().get_Item(1).getResources().getImages().replace(1, new FileInputStream("lovely.jpg"));
-        } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+```java
+public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+
+        if (absorber.getImagePlacements().size() > 0) {
+            ImagePlacement imagePlacement = absorber.getImagePlacements().get_Item(1);
+            try (InputStream imageStream = Files.newInputStream(imageFile)) {
+                imagePlacement.replace(imageStream);
+            }
         }
-        // Simpan file PDF yang diperbarui
-        pdfDocument.save(_dataDir + "output.pdf");
+
+        document.save(outputFile.toString());
     }
 }
 ```

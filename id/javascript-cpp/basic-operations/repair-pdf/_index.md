@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose.PDF untuk JavaScript memungkinkan perbaikan PDF berkualitas tinggi. File PDF mungkin tidak terbuka karena alasan apa pun, terlepas dari program atau browsernya. Dalam beberapa kasus, dokumen dapat dipulihkan, coba kode berikut dan lihat sendiri.
+Aspose.PDF for JavaScript memungkinkan perbaikan PDF berkualitas tinggi. File PDF mungkin tidak terbuka karena alasan apa pun, terlepas dari program atau browsernya. Dalam beberapa kasus, dokumen dapat dipulihkan, coba kode berikut dan lihat sendiri.
 
 1. Buat 'FileReader'.
 1. Fungsi [AsposePdfRepair](https://reference.aspose.com/pdf/javascript-cpp/organize/asposepdfrepair/) dijalankan.

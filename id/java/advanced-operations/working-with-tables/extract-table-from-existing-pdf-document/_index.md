@@ -1,56 +1,52 @@
 ---
-title: Ekstrak Tabel dari Dokumen PDF yang Ada
-linktitle: Ekstrak Tabel
+title: "Mengekstrak tabel dari PDF dengan Java"
+linktitle: "Mengekstrak tabel"
 type: docs
-weight: 25
-url: /id/java/extract-table-from-existing-pdf-document/
-description: Aspose.PDF untuk Java memungkinkan untuk melakukan berbagai manipulasi dengan tabel yang terdapat dalam dokumen pdf Anda. Anda dapat menambahkan dan mengekstrak tabel dalam dokumen PDF yang ada, merender tabel pada halaman baru, dan lain-lain.
-lastmod: "2021-06-05"
+weight: 20
+url: /id/java/extracting-table/
+description: Pelajari cara mengekstrak data tabel dari dokumen PDF yang ada dengan Java.
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Mengekstrak data tabel dari file PDF dengan Java"
+Abstract: Artikel ini menjelaskan cara mengekstrak tabel dari dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini menunjukkan cara menggunakan TableAbsorber untuk mendeteksi tabel per halaman, mengiterasi baris dan sel, serta mengumpulkan teks sel untuk pemrosesan selanjutnya.
 ---
+Gunakan `TableAbsorber` ketika Anda perlu mendeteksi struktur tabel dalam PDF yang ada dan membaca isinya.
 
-## Ekstrak Tabel dari PDF
+## Mengekstrak teks dari tabel yang terdeteksi
+
+Gunakan contoh ini ketika Anda perlu menemukan tabel pada setiap halaman dan mengumpulkan teks selnya.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Kunjungi setiap halaman dengan [`TableAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Iterasikan melalui tabel yang diserap, baris, dan sel, kemudian output teks yang diekstrak.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-import jdk.jshell.spi.ExecutionControl.NotImplementedException;
-
-import java.io.*;
-import java.util.*;
-
-public class ExampleExtractTable {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void Extract_Table()
-    {
-        // Muat dokumen PDF sumber
-        Document pdfDocument = new Document(_dataDir + "the_worlds_cities_in_2018_data_booklet 7.pdf");
-        for(Page page : pdfDocument.getPages())
-        {
+public static void extract(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             TableAbsorber absorber = new TableAbsorber();
             absorber.visit(page);
-            for (AbsorbedTable table : absorber.getTableList())
-            {
-                for (AbsorbedRow row : table.getRowList())
-                {
-                    for (AbsorbedCell cell : row.getCellList())
-                    {
-                        TextFragmentCollection textFragmentCollection = cell.getTextFragments();
-                        for (TextFragment fragment : textFragmentCollection)
-                        {
-                            String txt = "";
-                            for (TextSegment seg : fragment.getSegments())
-                                txt += seg.getText();
-                            System.out.println(txt);
+            for (AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table ----");
+                for (AbsorbedRow row : table.getRowList()) {
+                    System.out.println("Row:");
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            for (TextSegment segment : fragment.getSegments()) {
+                                cellText.append(segment.getText());
+                            }
                         }
+                        rowText.append(" | ").append(cellText);
                     }
+                    System.out.println(rowText);
                 }
             }
         }
     }
+}
 ```

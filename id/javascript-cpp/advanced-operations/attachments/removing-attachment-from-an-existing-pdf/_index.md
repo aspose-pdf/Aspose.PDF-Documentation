@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Anda dapat menghapus lampiran dari file PDF menggunakan Aspose.PDF untuk JavaScript melalui C++. Anda dapat memperoleh hasilnya langsung di browser Anda.
+Anda dapat menghapus lampiran dari file PDF menggunakan Aspose.PDF for JavaScript melalui C++. Anda dapat memperoleh hasilnya langsung di browser Anda.
 
 1. Buat 'FileReader'.
 1. Fungsi [AsposePdfDeleteAttachments](https://reference.aspose.com/pdf/javascript-cpp/organize/asposepdfdeleteattachments/) dijalankan.

@@ -1,216 +1,218 @@
 ---
-title: Tambahkan Header dan Footer PDF
-linktitle: Tambahkan Header dan Footer
+title: "Menambahkan header dan footer PDF di Java"
+linktitle: "Menambahkan header dan footer ke PDF"
 type: docs
-weight: 70
+weight: 50
 url: /id/java/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF untuk Java memungkinkan Anda menambahkan header dan footer ke file PDF Anda menggunakan kelas TextStamp.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan header dan footer ke file PDF dalam Java menggunakan teks, gambar, dan konten terstruktur.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menambahkan header dan footer ke file PDF dengan Java"
+Abstract: Artikel ini menunjukkan cara menambahkan header dan footer ke dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup teks, penomoran halaman, HTML, gambar, tabel, dan konten header dan footer berbasis LaTeX.
 ---
+Aspose.PDF for Java memungkinkan Anda menetapkan objek `HeaderFooter` ke setiap halaman dan mengisinya dengan berbagai jenis konten.
 
-Stempel PDF sering digunakan dalam kontrak, laporan, dan materi terbatas, untuk membuktikan bahwa dokumen telah ditinjau dan ditandai sebagai "dibaca", "berkualifikasi", atau "rahasia", dll. Artikel ini akan menunjukkan kepada Anda bagaimana kita dapat menambahkan stempel gambar dan stempel teks ke dokumen PDF dengan menggunakan **Aspose.PDF untuk Java**.
+## Menambahkan teks header dan footer
 
-Jika Anda membaca potongan kode di atas baris demi baris, Anda harus menemukan bahwa sintaks dan logika kode cukup mudah dipahami.
+Gunakan contoh ini ketika Anda membutuhkan konten teks sederhana di bagian atas dan bawah setiap halaman.
 
-## Menambahkan Teks di Header File PDF
-
-Anda dapat menggunakan kelas [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) untuk menambahkan teks di header file PDF.
- TextStamp class menyediakan properti yang diperlukan untuk membuat stempel berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan teks di header, Anda perlu membuat objek Document dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Page untuk menambahkan teks di header PDF.
-
-Anda perlu mengatur properti TopMargin sedemikian rupa sehingga menyesuaikan teks di area header PDF Anda. Anda juga perlu mengatur HorizontalAlignment ke Center dan VerticalAlignment ke Top.
-
-Cuplikan kode berikut menunjukkan cara menambahkan teks di header file PDF dengan Java.
+1. Buat objek [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) dan menambahkan fragmen teks.
+1. Konfigurasikan margin untuk header dan footer.
+1. Terapkan mereka ke setiap halaman PDF sumber dan simpan hasilnya.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // Jalur ke direktori dokumen.
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // Buka dokumen
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // Buat header
-        TextStamp textStamp = new TextStamp("Header Text");
-
-        // Atur properti dari stempel
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // Tambahkan header di semua halaman
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // Simpan dokumen yang diperbarui
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## Menambahkan Teks di Footer File PDF
-
-Anda dapat menggunakan kelas TextStamp untuk menambahkan teks di footer file PDF. Kelas TextStamp menyediakan properti yang diperlukan untuk membuat stempel berbasis teks seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan teks di footer, Anda perlu membuat objek Document dan objek TextStamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Page untuk menambahkan teks di footer PDF.
-
-Cuplikan kode berikut menunjukkan cara menambahkan teks di footer file PDF dengan Java.
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // Buka dokumen
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // Buat footer
-        TextStamp textStamp = new TextStamp("Footer Text");
-        // Atur properti dari stempel
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Tambahkan footer pada semua halaman
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // Simpan file PDF yang diperbarui
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## Menambahkan Gambar di Header File PDF
-
-Anda dapat menggunakan kelas [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) untuk menambahkan gambar di header file PDF. Kelas Image Stamp menyediakan properti yang diperlukan untuk membuat cap berbasis gambar seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan gambar di header, Anda perlu membuat objek Document dan objek Image Stamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) dari Page untuk menambahkan gambar di header PDF.
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// Buka dokumen
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// Buat header
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// Setel properti dari cap
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// Tambahkan header di semua halaman
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// Simpan file PDF yang diperbarui
-pdfDocument.save(_dataDir);
 }
 ```
 
+## Menambahkan header dan footer dengan penomoran halaman
 
-Kode cuplikan berikut menunjukkan cara menambahkan gambar di header file PDF dengan Java.
+Gunakan contoh ini ketika header atau footer harus menampilkan nomor halaman saat ini dan total jumlah halaman.
 
-## Menambahkan Gambar di Footer File PDF
-
-Anda dapat menggunakan kelas Image Stamp untuk menambahkan gambar di footer file PDF. Kelas Image Stamp menyediakan properti yang diperlukan untuk membuat stempel berbasis gambar seperti ukuran font, gaya font, dan warna font, dll. Untuk menambahkan gambar di footer, Anda perlu membuat objek Document dan objek Image Stamp menggunakan properti yang diperlukan. Setelah itu, Anda dapat memanggil metode AddStamp dari Halaman untuk menambahkan gambar di footer PDF.
-
-{{% alert color="primary" %}}
-
-Anda perlu mengatur properti BottomMargin sedemikian rupa sehingga menyesuaikan gambar di area footer PDF Anda. Anda juga perlu mengatur [HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment) ke `Center` dan [VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment) ke `Bottom`.
-
-{{% /alert %}}
-
-Kode cuplikan berikut menunjukkan cara menambahkan gambar di footer file PDF dengan Java.
+1. Buat objek [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) dengan placeholder penomoran halaman.
+1. Konfigurasikan margin untuk kedua objek.
+1. Terapkan mereka ke setiap halaman dan simpan PDF yang diperbarui.
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // Buka dokumen
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // Buat footer
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Atur properti dari cap
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // Tambahkan footer pada semua halaman
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // Simpan file PDF yang diperbarui
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## Menambahkan Header yang berbeda dalam satu File PDF
+## Menambahkan header dan footer HTML
 
-Kita tahu bahwa kita dapat menambahkan TextStamp di bagian Header/Footer dokumen dengan menggunakan properti TopMargin atau Bottom Margin, tetapi terkadang kita mungkin memiliki kebutuhan untuk menambahkan beberapa header/footer dalam satu dokumen PDF.
- **Aspose.PDF untuk Java** menjelaskan cara melakukan ini.
+Gunakan contoh ini ketika konten header dan footer harus menyertakan pemformatan HTML inline.
 
-Untuk memenuhi persyaratan ini, kita akan membuat objek [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) individual (jumlah objek tergantung pada jumlah Header/Footer yang diperlukan) dan akan menambahkannya ke dokumen PDF. Kita juga dapat menentukan informasi pemformatan yang berbeda untuk setiap objek cap. Dalam contoh berikut, kami telah membuat objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dan tiga objek [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp) dan kemudian kami menggunakan metode [AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) dari Page untuk menambahkan teks di bagian header PDF. Cuplikan kode berikut menunjukkan kepada Anda cara menambahkan gambar di footer file PDF dengan Aspose.PDF untuk Java.
+1. Buat objek [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) dan tambahkan [`HtmlFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) konten.
+1. Konfigurasikan margin untuk penempatan.
+1. Tugaskan header dan footer ke setiap halaman dan simpan dokumen.
 
 ```java
-public static void AddingDifferentHeadersInOnePDFFile() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // Buka dokumen sumber
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // Buat tiga cap
-        TextStamp stamp1 = new TextStamp("Header 1");
-        TextStamp stamp2 = new TextStamp("Header 2");
-        TextStamp stamp3 = new TextStamp("Header 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // Atur penyelarasan cap (tempatkan cap di bagian atas halaman, dipusatkan secara horizontal)
-        stamp1.setVerticalAlignment (VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Tentukan gaya font sebagai Bold
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // Atur informasi warna latar depan teks sebagai merah
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // Tentukan ukuran font sebagai 14
-        stamp1.getTextState().setFontSize(14);
-
-        // Sekarang kita perlu mengatur penyelarasan vertikal objek cap ke-2 sebagai Top
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // Atur informasi penyelarasan Horizontal untuk cap sebagai Center aligned
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Atur faktor zoom untuk objek cap
-        stamp2.setZoom (10);
-
-        // Atur pemformatan objek cap ke-3
-        // Tentukan informasi penyelarasan Vertikal untuk objek cap sebagai TOP
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // Atur informasi penyelarasan Horizontal untuk objek cap sebagai Center aligned
-        stamp3.setHorizontalAlignment (HorizontalAlignment.Center);
-        // Atur sudut rotasi untuk objek cap
-        stamp3.setRotateAngle(35);
-        // Atur warna latar belakang cap sebagai merah muda
-        stamp3.getTextState().setBackgroundColor (Color.getPink());
-        
-        // Ubah informasi jenis huruf untuk cap ke Verdana
-        stamp3.getTextState().setFont (FontRepository.findFont("Verdana"));
-        // Cap pertama ditambahkan pada halaman pertama;
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // Cap kedua ditambahkan pada halaman kedua;
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // Cap ketiga ditambahkan pada halaman ketiga.
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // Simpan file PDF yang diperbarui
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## Menambahkan header dan footer gambar
+
+Gunakan contoh ini ketika header dan footer harus menampilkan gambar pada setiap halaman.
+
+1. Buat objek [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) dan tambahkan mereka ke dalam kontainer header dan footer.
+1. Konfigurasikan margin dan tetapkan kontainer ke setiap halaman.
+1. Simpan PDF yang diperbarui.
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Menambahkan header dan footer berbasis tabel
+
+Gunakan contoh ini ketika konten header dan footer harus menggunakan tata letak tabel dan gaya teks.
+
+1. Buat gaya teks yang diperlukan dan objek tabel.
+1. Tambahkan tabel ke [`HeaderFooter`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) kontainer.
+1. Terapkan header dan footer ke setiap halaman dan simpan dokumen.
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Menambahkan header dan footer LaTeX
+
+Gunakan contoh ini ketika header dan footer harus menampilkan konten TeX atau LaTeX.
+
+1. Buka PDF sumber dan tentukan total jumlah halaman.
+1. Buat [`TeXFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) konten untuk header dan footer setiap halaman.
+1. Tetapkan konten dan simpan dokumen.
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```

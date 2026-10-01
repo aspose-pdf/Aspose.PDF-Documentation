@@ -154,7 +154,7 @@ private static void MergeImages03()
 }
 ```
 
-Selain itu, Aspose.PDF untuk Java memberikan Anda kesempatan untuk menggabungkan gambar dan menyimpannya dalam format Tiff, menggunakan [Metode MergeImagesAsTiff](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#saveAsTIFF-java.io.OutputStream-).
+Selain itu, Aspose.PDF for Java memberikan Anda kesempatan untuk menggabungkan gambar dan menyimpannya dalam format Tiff, menggunakan [Metode MergeImagesAsTiff](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfConverter#saveAsTIFF-java.io.OutputStream-).
 
 ```csharp
 // For complete examples and data files, visit https://github.com/aspose-pdf/Aspose.PDF-for-.NET

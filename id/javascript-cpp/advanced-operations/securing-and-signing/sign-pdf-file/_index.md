@@ -13,7 +13,7 @@ sitemap:
 
 Tanda tangan digital dalam dokumen PDF adalah cara untuk memverifikasi keaslian dan integritas dokumen. Ini adalah proses tanda tangan elektronik dari dokumen PDF menggunakan kunci pribadi dan sertifikat digital. Tanda tangan ini menjamin pemegang bahwa dokumen tidak diubah atau dimodifikasi sejak penandatanganan dan bahwa penanda tangan adalah pihak yang menyetujuinya. Untuk menandatangani PDF dengan JavaScript, gunakan alat Aspose.PDF.
 
-Aspose.PDF untuk JavaScript melalui C++ mendukung fitur untuk menandatangani file PDF secara digital menggunakan [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfsignpkcs7/).
+Aspose.PDF for JavaScript melalui C++ mendukung fitur untuk menandatangani file PDF secara digital menggunakan [AsposePdfSignPKCS7](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfsignpkcs7/).
 
 ## Tandatangani PDF dengan tanda tangan digital
 

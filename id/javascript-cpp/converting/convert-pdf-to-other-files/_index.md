@@ -19,7 +19,7 @@ Kode ini menunjukkan cara untuk memindahkan tugas konversi file PDF yang membutu
 **Cobalah mengonversi PDF ke EPUB secara online**
 
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi online gratis ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for JavaScript menghadirkan aplikasi online gratis ["PDF to EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke EPUB dengan Aplikasi Gratis](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
 {{% /alert %}}
@@ -90,14 +90,14 @@ The following JavaScript code snippet shows simple example of coverting PDF page
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke LaTeX/TeX secara online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi online gratis ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for JavaScript menghadirkan aplikasi online gratis ["PDF to LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
 [![Aspose.PDF Konversi PDF ke LaTeX/TeX dengan Aplikasi Gratis](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
 {{% /alert %}}
 
 ## Konversi PDF ke TeX
 
-**Aspose.PDF untuk JavaScript** mendukung mengonversi PDF ke TeX.
+**Aspose.PDF for JavaScript** mendukung mengonversi PDF ke TeX.
 Format file LaTeX adalah format file teks dengan markup khusus dan digunakan dalam sistem persiapan dokumen berbasis TeX untuk penataan huruf berkualitas tinggi.
 
 ```js
@@ -162,7 +162,7 @@ Berikut adalah cuplikan kode JavaScript yang menunjukkan contoh sederhana mengub
 {{% alert color="success" %}}
 **Cobalah untuk mengonversi PDF ke Teks secara online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi gratis online ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
+Aspose.PDF for JavaScript menghadirkan aplikasi gratis online ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
 
 [![Aspose.PDF Konversi PDF ke Teks dengan Aplikasi Gratis](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
 {{% /alert %}}
@@ -231,7 +231,7 @@ Berikut adalah potongan kode JavaScript yang menunjukkan contoh sederhana mengub
 {{% alert color="success" %}}
 **Cobalah mengonversi PDF ke XPS secara online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi online gratis ["PDF ke XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
+Aspose.PDF for JavaScript menghadirkan aplikasi online gratis ["PDF ke XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
 
 [![Aspose.PDF Konversi PDF ke XPS dengan Aplikasi Gratis](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
 {{% /alert %}}
@@ -240,7 +240,7 @@ Aspose.PDF untuk JavaScript menghadirkan aplikasi online gratis ["PDF ke XPS"](h
 
 Jenis file XPS terutama terkait dengan Spesifikasi Kertas XML oleh Microsoft Corporation. Spesifikasi Kertas XML (XPS), sebelumnya diberi nama kode Metro dan mencakup konsep pemasaran Jalur Cetak Generasi Berikutnya (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan penayangan dokumen ke dalam sistem operasi Windows.
 
-**Aspose.PDF untuk JavaScript** memberikan kemungkinan untuk mengonversi file PDF ke format <abbr title="Spesifikasi Kertas XML">XPS</abbr>. Mari coba gunakan potongan kode yang disajikan untuk mengonversi file PDF ke format XPS dengan JavaScript.
+**Aspose.PDF for JavaScript** memberikan kemungkinan untuk mengonversi file PDF ke format <abbr title="Spesifikasi Kertas XML">XPS</abbr>. Mari coba gunakan potongan kode yang disajikan untuk mengonversi file PDF ke format XPS dengan JavaScript.
 
 ```js
 
@@ -303,7 +303,7 @@ Berikut adalah cuplikan kode JavaScript yang menunjukkan contoh sederhana mengub
 
 ## Konversi PDF ke PDF Grayscale
 
-Konversi PDF ke hitam putih dengan Aspose.PDF untuk JavaScript melalui toolkit Web C++. Mengapa saya harus mengonversi PDF ke Grayscale? Jika file PDF berisi banyak gambar berwarna dan ukuran file lebih penting daripada warna, konversi ini menghemat ruang. Jika Anda mencetak file PDF dalam hitam putih, mengonversinya akan memungkinkan Anda memeriksa secara visual seperti apa hasil akhirnya.
+Konversi PDF ke hitam putih dengan Aspose.PDF for JavaScript melalui toolkit Web C++. Mengapa saya harus mengonversi PDF ke Grayscale? Jika file PDF berisi banyak gambar berwarna dan ukuran file lebih penting daripada warna, konversi ini menghemat ruang. Jika Anda mencetak file PDF dalam hitam putih, mengonversinya akan memungkinkan Anda memeriksa secara visual seperti apa hasil akhirnya.
 
 ```js
 

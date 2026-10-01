@@ -4,7 +4,7 @@ linktitle: Tambahkan Gambar
 type: docs
 weight: 10
 url: /id/javascript-cpp/add-image-to-pdf/
-description: Bagian ini menjelaskan cara menambahkan gambar ke file PDF yang ada menggunakan Aspose.PDF untuk JavaScript via C++.
+description: Bagian ini menjelaskan cara menambahkan gambar ke file PDF yang ada menggunakan Aspose.PDF for JavaScript via C++.
 lastmod: "2023-12-15"
 ---
 
@@ -12,7 +12,7 @@ lastmod: "2023-12-15"
 
 Apakah Anda perlu melampirkan gambar ke PDF? Ingin meningkatkan keterbacaan PDF Anda? Tambahkan gambar ke PDF Anda dan presentasi atau resume Anda akan terlihat lebih menarik.
 
-Umumnya diyakini bahwa menambahkan gambar ke file PDF memerlukan alat khusus yang kompleks. Namun, dengan Aspose.PDF untuk JavaScript Anda dapat dengan cepat dan mudah menambahkan gambar yang Anda butuhkan ke PDF menggunakan JavaScript langsung di browser Anda.
+Umumnya diyakini bahwa menambahkan gambar ke file PDF memerlukan alat khusus yang kompleks. Namun, dengan Aspose.PDF for JavaScript Anda dapat dengan cepat dan mudah menambahkan gambar yang Anda butuhkan ke PDF menggunakan JavaScript langsung di browser Anda.
 
 Untuk menambahkan gambar ke file PDF yang ada:
 

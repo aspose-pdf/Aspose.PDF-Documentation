@@ -4,7 +4,7 @@ linktitle: Tambahkan Nomor Halaman
 type: docs
 weight: 100
 url: /id/javascript-cpp/add-page-number/
-description: Aspose.PDF untuk JavaScript melalui C++ memungkinkan Anda menambahkan Stempel Nomor Halaman ke file PDF Anda menggunakan AsposePdfAddPageNum.
+description: Aspose.PDF for JavaScript melalui C++ memungkinkan Anda menambahkan Stempel Nomor Halaman ke file PDF Anda menggunakan AsposePdfAddPageNum.
 lastmod: "2023-04-17"
 sitemap:
     changefreq: "weekly"
@@ -13,7 +13,7 @@ sitemap:
 
 Semua dokumen harus memiliki nomor halaman di dalamnya. Nomor halaman memudahkan pembaca untuk menemukan bagian-bagian berbeda dari dokumen.
 
-**Aspose.PDF untuk JavaScript melalui C++** memungkinkan Anda menambahkan nomor halaman dengan [AsposePdfAddPageNum](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddpagenum/).
+**Aspose.PDF for JavaScript melalui C++** memungkinkan Anda menambahkan nomor halaman dengan [AsposePdfAddPageNum](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddpagenum/).
 
 1. Buat 'FileReader'.
 1. Fungsi [AsposePdfAddPageNum](https://reference.aspose.com/pdf/javascript-cpp/core/asposepdfaddpagenum/) dijalankan.

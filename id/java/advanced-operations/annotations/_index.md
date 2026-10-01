@@ -1,27 +1,21 @@
 ---
-title: PDF Annotations
-linktitle: PDF Annotations
+title: Anotasi PDF dalam Java
+linktitle: Anotasi PDF
 type: docs
 weight: 100
 url: /id/java/annotations/
-description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi pada file PDF Anda dengan pustaka Aspose.PDF. Pelajari cara menggambar, membuka, atau menambahkan anotasi dengan Java.
-lastmod: "2021-11-26"
+description: Pelajari cara menambahkan, memeriksa, menghapus, mentransfer, dan mengelola anotasi PDF dalam Java dengan Aspose.PDF, termasuk teks, penandaan, tautan, bentuk, watermark, redaksi, dan panduan anotasi terkait media.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menambahkan anotasi ke PDF menggunakan Java"
+Abstract: Artikel ini memperkenalkan alur kerja anotasi PDF dalam Aspose.PDF for Java. Artikel ini mencakup penambahan, pengambilan, penghapusan, dan transfer anotasi, dengan topik yang dikelompokkan untuk teks, penandaan, interaktif, bentuk, watermark, keamanan, dan skenario anotasi terkait media.
 ---
+Anotasi adalah elemen PDF interaktif yang memungkinkan Anda menambahkan catatan, menyorot teks, menggambar bentuk, membuat tautan, menerapkan redaksi, dan memperkaya alur kerja peninjauan dokumen dalam file PDF yang ada.
 
-Jika Anda bertanya-tanya bagaimana cara memberi anotasi pada PDF, Anda berada di tempat yang tepat.
+Gunakan bagian ini untuk:
 
-Objek-objek ini disebut anotasi, dan tujuan mereka berkisar dari menandai konten halaman hingga menerapkan fitur interaktif seperti formulir.
-
-Penampil PDF biasanya memungkinkan pembuatan dan pengeditan berbagai jenis anotasi, misalnya sorotan teks, catatan, garis, atau bentuk. Terlepas dari jenis anotasi yang dapat dibuat, penampil PDF yang sesuai dengan spesifikasi PDF juga harus mendukung perenderan untuk semua jenis anotasi.
-
-Anotasi adalah bagian penting dari file PDF.
- Menggunakan Aspose.PDF, Anda dapat menambahkan anotasi baru, mengedit anotasi yang ada, dan menghapus anotasi, dan sebagainya. Bagian ini mencakup topik berikut:
-
-Anda dapat melakukan hal berikut:
-
-- [Ikhtisar Anotasi](/pdf/id/java/overview-of-annotations/) - pelajari jenis-jenis anotasi yang didefinisikan oleh spesifikasi PDF, dan apa yang didukung oleh Aspose.PDF.
-- [Menambahkan, Menghapus, dan Mendapatkan Anotasi](/pdf/id/java/add-delete-and-get-annotation/) - bagian ini menjelaskan cara bekerja dengan semua jenis anotasi yang diizinkan.
-- [Impor dan ekspor anotasi dengan format XFDF](/pdf/id/java/import-export-xfdf/) - pustaka Aspose.PDF menyediakan metode untuk mengimpor dan mengekspor data anotasi ke file XFDF.
+- [Tambahkan, Hapus, dan Dapatkan Anotasi](/pdf/id/java/add-delete-and-get-annotation/) untuk keluarga anotasi yang dikelompokkan.
+- [Impor dan Ekspor Anotasi](/pdf/id/java/import-export-annotations/) untuk menyalin anotasi antara file PDF.

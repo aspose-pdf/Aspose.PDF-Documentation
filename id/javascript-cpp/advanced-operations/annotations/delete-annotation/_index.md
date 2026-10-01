@@ -4,14 +4,14 @@ linktitle: Hapus Anotasi
 type: docs
 weight: 10
 url: /id/javascript-cpp/delete-annotation/
-description: Dengan Aspose.PDF untuk JavaScript Anda dapat menghapus anotasi dari file PDF Anda.
+description: Dengan Aspose.PDF for JavaScript Anda dapat menghapus anotasi dari file PDF Anda.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 
-Anda dapat menghapus anotasi dari file PDF menggunakan Aspose.PDF untuk JavaScript melalui C++. Anda dapat mendapatkan hasilnya langsung di browser Anda.
+Anda dapat menghapus anotasi dari file PDF menggunakan Aspose.PDF for JavaScript melalui C++. Anda dapat mendapatkan hasilnya langsung di browser Anda.
 
 1. Buat 'FileReader'.
 1. Fungsi [AsposePdfDeleteAnnotations](https://reference.aspose.com/pdf/javascript-cpp/organize/asposepdfdeleteannotations/) dijalankan.

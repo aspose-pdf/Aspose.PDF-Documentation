@@ -4,25 +4,25 @@ linktitle: Apa yang baru
 type: docs
 weight: 10
 url: /id/javascript-cpp/whatsnew/
-description: Halaman ini memperkenalkan fitur baru paling populer di Aspose.PDF untuk JavaScript yang telah diperkenalkan dalam rilis terbaru.
+description: Halaman ini memperkenalkan fitur baru paling populer di Aspose.PDF for JavaScript yang telah diperkenalkan dalam rilis terbaru.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
 lastmod: "2023-04-14"
 ---
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.10
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.10
 
 1. **AsposePdfAbout** - [Dapatkan info tentang Produk](/pdf/id/javascript-cpp/get-info-about-product/)
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.9
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.9
 
 1. **AsposePdfToDoc** - [Konversi file PDF ke Doc](/pdf/id/javascript-cpp/conversion/)
 1. **AsposePdfToPptX** - [Konversi file PDF ke PptX](/pdf/id/javascript-cpp/conversion/)
 1. **AsposePdfToEPUB** - [Konversi file PDF ke EPUB](/pdf/id/javascript-cpp/conversion/)
 1. **AsposePdfPagesToDICOM** - [Konversi file PDF ke DICOM](/pdf/id/javascript-cpp/conversion/)
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.8
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.8
 
 1. **AsposePdfExtractImage** - [Ekstrak Gambar dari PDF](/pdf/id/javascript-cpp/extract-images-from-the-pdf-file/)
 1. **AsposePdfRemoveMetadata** - [Hapus Informasi File PDF](/pdf/id/javascript-cpp/pdf-file-metadata/)
@@ -37,7 +37,7 @@ lastmod: "2023-04-14"
 
 1. **AsposePdfDeleteJavaScripts** - [Hapus JavaScripts](/pdf/id/javascript-cpp/delete-javascripts/)
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.7
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.7
 
 1. Peningkatan 'example.html' dan 'example_worker.html'.
 1. **AsposePdfPagesToTiff** - [Konversi file PDF ke Tiff](/pdf/id/javascript-cpp/conversion/)
@@ -50,7 +50,7 @@ lastmod: "2023-04-14"
 1. **AsposePdfToTxt** - [Konversi file PDF ke TXT](/pdf/id/javascript-cpp/conversion/)
 
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.6
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.6
 
 1. Ditambahkan kemampuan untuk menggunakan Web Workers.
 
@@ -62,17 +62,17 @@ _Menggunakan Web Worker:_
 const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
 ```
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.5
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.5
 
 1. **AsposePdfToDocX** - [Mengonversi file PDF ke DocX](/pdf/id/javascript-cpp/conversion/)
 1. **AsposePdfToXlsX** - [Mengonversi file PDF ke XlsX](/pdf/id/javascript-cpp/conversion/)
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.4
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.4
 
 1. **AsposePdfConvertToPDFA** - [Mengonversi file PDF ke PDF/A](/pdf/id/javascript-cpp/conversion/)
 1. **AsposePdfAConvertToPDF** - [Mengonversi file PDF/A ke PDF](/pdf/id/javascript-cpp/conversion/)
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.3
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.3
 
 1. **AsposePdfPrepare** - [Menandatangani PDF](/pdf/id/javascript-cpp/sign-pdf/)
 1. **AsposePdfPrepareBase64**
@@ -83,7 +83,7 @@ const AsposePDFWebWorker = new Worker("AsposePDFforJS.js");
 1. **AsposePdfConvertToGrayscale** - [Ubah PDF ke Skala Abu-abu](/pdf/id/javascript-cpp/conversion/)
 1. **AsposePdfSignPKCS7** - [Tandatangani PDF](/pdf/id/javascript-cpp/sign-pdf/)
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.2
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.2
 
 Dalam fungsi **AsposePdfPagesToJpg** dan **AsposePdfPagesToPng** ditambahkan parameter *resolution* (DPI, titik per inci).
 
@@ -93,14 +93,14 @@ Dalam fungsi **AsposePdfPagesToJpg** dan **AsposePdfPagesToPng** ditambahkan par
 1. **AsposePdfGetInfo** - [Dapatkan metadata file PDF](/pdf/id/javascript-cpp/pdf-file-metadata/).
 1. **AsposePdfSetInfo** - [Tetapkan metadata file PDF](/pdf/id/javascript-cpp/pdf-file-metadata/).
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 23.1
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 23.1
 
 1. Ukuran modul biner (wasm) berkurang secara signifikan.
 1. Peningkatan kinerja.
 
-## Apa yang baru di Aspose.PDF untuk JavaScript melalui C++ 22.12
+## Apa yang baru di Aspose.PDF for JavaScript melalui C++ 22.12
 
-Rilis publik pertama dari Aspose.PDF untuk JavaScript melalui C++ adalah 22.12. Fitur pertama adalah:
+Rilis publik pertama dari Aspose.PDF for JavaScript melalui C++ adalah 22.12. Fitur pertama adalah:
 
 1. [Ekstrak teks dari PDF](/pdf/id/javascript-cpp/extract-text/)
 1. [Optimalkan PDF](/pdf/id/javascript-cpp/optimize-pdf/)

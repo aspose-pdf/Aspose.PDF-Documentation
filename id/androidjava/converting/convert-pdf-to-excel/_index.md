@@ -23,7 +23,7 @@ Coba secara daring. Anda dapat memeriksa kualitas konversi Aspose.PDF dan meliha
 
 Untuk mengonversi file PDF ke format XLS, Aspose.PDF memiliki kelas yang disebut [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions). Sebuah objek dari [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) kelas dilewatkan sebagai argumen kedua ke konstruktor Document.Save(..) . 
 
-Mengonversi file PDF ke format XLSX merupakan bagian dari pustaka Aspose.PDF untuk Java versi 18.6. Untuk mengonversi file PDF ke format XLSX, Anda harus mengatur format menjadi XLSX menggunakan metode setFormat() dari [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) Kelas.
+Mengonversi file PDF ke format XLSX merupakan bagian dari pustaka Aspose.PDF for Java versi 18.6. Untuk mengonversi file PDF ke format XLSX, Anda harus mengatur format menjadi XLSX menggunakan metode setFormat() dari [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/ExcelSaveOptions) Kelas.
 
 Potongan kode berikut menunjukkan cara mengonversi file PDF menjadi format xls dan .xlsx:
 

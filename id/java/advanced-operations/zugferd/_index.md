@@ -4,32 +4,15 @@ linktitle: Bekerja dengan ZUGFeRD
 type: docs
 weight: 90
 url: /id/java/working-with-zugferd/
-description: Pelajari cara membuat Faktur PDF yang sesuai dengan ZUGFeRD menggunakan Aspose.PDF untuk Java
-lastmod: "2024-01-17"
+description: Pelajari cara membuat faktur PDF/A-3A dengan data XML ZUGFeRD yang disematkan dalam Java menggunakan Aspose.PDF.
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Membuat faktur PDF yang mematuhi ZUGFeRD dengan Java"
+Abstract: Bagian ini menjelaskan cara bekerja dengan lampiran faktur ZUGFeRD menggunakan Aspose.PDF for Java. Pelajari cara menyematkan XML faktur sebagai file terkait, menandai hubungan lampiran dengan benar, dan mengonversi dokumen ke PDF/A-3A untuk alur kerja faktur elektronik yang mematuhi standar.
 ---
+ZUGFeRD menggabungkan faktur PDF yang dapat dibaca manusia dengan data XML terstruktur yang disematkan di dalam dokumen. Pada set contoh Java saat ini, alur kerja yang dibahas adalah melampirkan XML faktur ke PDF dan mengonversi hasilnya menjadi `PDF_A_3A`.
 
-## Apa itu ZUGFeRD
-
-Penagihan elektronik, atau e-invoicing, adalah cara digital untuk membuat, mengirim, menerima, dan memproses dokumen faktur. Ini menghilangkan kertas dan meningkatkan efisiensi serta penghematan bagi bisnis dalam konteks B2B. E-invoicing menguntungkan baik pembeli maupun penjual.
-
-Seiring semakin banyak perusahaan mengadopsi e-invoicing untuk mendapatkan keuntungan, mereka memerlukan standar untuk memastikan bahwa e-invoice dapat dengan mudah dipahami oleh perangkat lunak apa pun, tidak peduli bagaimana mereka dibuat.
-
-Di antara berbagai format data untuk e-invoice, standar ZUGFeRD semakin populer di negara-negara berbahasa Jerman dan Uni Eropa.
-
-ZUGFeRD adalah standar Jerman untuk penagihan elektronik. Ini adalah "Panduan Pengguna Pusat dari Forum untuk Penagihan Elektronik Jerman".
-
-Format ini adalah hibrida yang menggabungkan dokumen PDF yang dapat dibaca oleh manusia dan file data XML yang dapat dibaca oleh mesin.
- Itu memungkinkan pertukaran informasi faktur antara bisnis dan otoritas publik dengan cara yang konsisten dan kompatibel.
-
-Ini juga memenuhi persyaratan hukum untuk pengarsipan jangka panjang dan kepatuhan pajak. ZUGFeRD memiliki berbagai versi dan profil yang sesuai dengan kebutuhan dan skenario yang berbeda. Versi terbaru adalah ZUGFeRD 2.0, yang sejalan dengan standar Eropa EN 16931 untuk faktur elektronik. ZUGFeRD memberikan pengguna banyak manfaat dan penghematan biaya, seperti pemrosesan yang lebih cepat, lebih sedikit kesalahan, arus kas yang lebih baik, dan dampak lingkungan yang lebih sedikit.
-
-
-* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di Java](/pdf/id/java/attach-zugferd/)
-
-Lihat juga:
-
-* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di .NET](/pdf/id/net/attach-zugferd/)
-* [Membuat PDF yang sesuai dengan PDF/3-A dan melampirkan faktur ZUGFeRD di Python](/pdf/id/python-net/attach-zugferd/)
+- [Melampirkan data faktur ZUGFeRD ke PDF](/pdf/id/java/attach-zugferd/)

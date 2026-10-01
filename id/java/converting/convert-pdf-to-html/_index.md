@@ -1,207 +1,200 @@
 ---
-title: Mengonversi File PDF ke Format HTML
-linktitle: Mengonversi File PDF ke Format HTML
+title: "Mengonversi PDF ke HTML dalam Java"
+linktitle: "Mengonversi PDF ke format HTML"
 type: docs
 weight: 50
 url: /id/java/convert-pdf-to-html/
-lastmod: "2021-11-19"
-description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF ke format HTML dengan pustaka Java.
+lastmod: "2026-09-30"
+description: Pelajari cara mengonversi PDF ke HTML dalam Java dengan Aspose.PDF, termasuk keluaran multi‑halaman, folder gambar eksternal, penanganan SVG, dan perenderan HTML berlapis.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: "Mengonversi PDF ke HTML dalam Java"
+Abstract: Artikel ini menjelaskan cara mengonversi file PDF ke HTML menggunakan Aspose.PDF for Java. Artikel ini mencakup ekspor HTML dasar bersama dengan opsi untuk folder gambar, pemisahan halaman, output SVG, grafik SVG terkompresi, latar belakang halaman PNG, markup hanya badan, rendering teks transparan, dan konversi lapisan dokumen.
 ---
+Aspose.PDF for Java mendukung ekspor HTML dengan opsi untuk gambar, SVG, pemisahan halaman, transparansi, dan rendering lapisan. Gunakan [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) untuk mengontrol bagaimana halaman PDF, sumber daya, dan markup ditulis ke output HTML.
 
-Aspose.PDF untuk Java menyediakan banyak fitur untuk mengonversi berbagai format file ke dokumen PDF dan mengonversi file PDF ke berbagai format keluaran. Artikel ini membahas cara mengonversi file PDF ke format HTML dan menyimpan gambar dari file PDF ke dalam folder tertentu.
+## Mengonversi PDF ke HTML
 
-{{% alert color="success" %}}
-**Cobalah mengonversi PDF ke HTML secara online**
+Gunakan contoh ini ketika PDF harus diekspor ke dokumen HTML standar.
 
-Aspose.PDF untuk Java menghadirkan aplikasi online gratis ["PDF ke HTML"](https://products.aspose.app/pdf/conversion/pdf-to-html), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
-
-[![Aspose.PDF Konversi PDF ke HTML dengan Aplikasi Gratis](pdf_to_html.png)](https://products.aspose.app/pdf/conversion/pdf-to-html)
-
-{{% /alert %}}
-
-Ketika mengonversi file PDF besar dengan beberapa halaman ke format HTML, output muncul sebagai satu halaman HTML. Ini bisa menjadi sangat panjang. Untuk mengontrol ukuran halaman, dimungkinkan untuk membagi output menjadi beberapa halaman selama konversi PDF ke HTML.
-
-## Mengonversi Halaman PDF ke HTML
-
-Aspose.PDF untuk Java menyediakan banyak fitur untuk mengonversi berbagai format file ke dokumen PDF dan mengonversi file PDF ke berbagai format output. Artikel ini membahas cara mengonversi file PDF ke format HTML dan menyimpan gambar dari file PDF ke dalam folder tertentu.
-
-Cuplikan kode berikut menunjukkan semua opsi yang mungkin dapat digunakan saat mengonversi PDF ke HTML.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat default [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) untuk serialisasi HTML standar.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga konten halaman PDF diekspor sebagai markup HTML.
+1. Simpan output HTML yang dihasilkan.
 
 ```java
-// Buka dokumen PDF sumber
-Document pdfDocument = new Document(_dataDir + "PDFToHTML.pdf");
-
-// Simpan file ke dalam format dokumen MS
-pdfDocument.save(_dataDir + "output_out.html", SaveFormat.Html);
+public static void convertPdfToHtml(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Mengonversi PDF ke HTML - Memisahkan Output ke HTML Multi-halaman
+## Mengonversi PDF ke HTML dan menyimpan gambar secara terpisah
 
-Aspose.PDF untuk Java mendukung fitur untuk mengonversi dokumen PDF ke berbagai format output termasuk HTML.
- Namun ketika mengonversi file PDF besar (terdiri dari beberapa halaman), Anda mungkin memiliki kebutuhan untuk menyimpan setiap halaman PDF ke file HTML terpisah.
+Gunakan contoh ini ketika gambar yang diekstrak harus ditulis sebagai file terpisah selama ekspor HTML.
 
-Saat mengonversi file PDF besar dengan beberapa halaman ke format HTML, outputnya muncul sebagai satu halaman HTML. Ini bisa menjadi sangat panjang. Untuk mengontrol ukuran halaman, dimungkinkan untuk membagi output menjadi beberapa halaman selama konversi PDF ke HTML. Silakan coba gunakan potongan kode berikut.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan atur `setSpecialFolderForAllImages(...)` ke direktori output gambar khusus.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga gambar raster dikeluarkan sebagai file sumber terpisah, bukan sebagai output hanya inline.
+1. Simpan output HTML bersama dengan aset gambar yang dihasilkan.
 
 ```java
-// Buka dokumen PDF sumber
-Document document = new Document(_dataDir + "PDFToHTML.pdf");
-
-// Memulai objek HtmlSaveOptions
-HtmlSaveOptions htmlOptions = new HtmlSaveOptions();
-
-// Tentukan untuk membagi output menjadi beberapa halaman
-htmlOptions.setSplitIntoPages(true);
-
-// Simpan dokumen
-document.save(_dataDir + "MultiPageHTML_out.html", htmlOptions);    
+public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSpecialFolderForAllImages(inputFile.getParent().resolve("images").toString());
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Konversi PDF ke HTML - Hindari Menyimpan Gambar dalam Format SVG
+## Mengubah PDF menjadi HTML multi-halaman
 
-Format output default untuk menyimpan gambar saat mengonversi dari PDF ke HTML adalah SVG. Selama konversi, beberapa gambar dari PDF diubah menjadi gambar vektor SVG. Ini bisa lambat. Sebagai gantinya, gambar dapat diubah menjadi PNG. Untuk memungkinkan hal ini, Aspose.PDF memiliki opsi untuk menggunakan SVG untuk vektor atau membuat PNG.
+Gunakan contoh ini ketika setiap halaman PDF harus ditampilkan secara terpisah dalam output HTML.
 
-Untuk sepenuhnya menghapus rendering gambar sebagai format SVG saat mengonversi file PDF ke format HTML, silakan coba menggunakan potongan kode berikut.
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan aktifkan `setSplitIntoPages(true)`.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga setiap halaman PDF ditulis sebagai output HTML terpisah.
+1. Simpan file HTML yang dihasilkan.
 
 ```java
- // Memuat file PDF
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
-
-// Membuat objek opsi penyimpanan HTML
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-// Tentukan folder tempat gambar SVG disimpan selama konversi PDF ke HTML
-saveOptions.setSpecialFolderForSvgImages(DATA_DIR.toString());
-
-// Simpan file output
-document.save(DATA_DIR + "SaveSVGFiles_out.html", saveOptions);
+public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSplitIntoPages(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Mengompresi Gambar SVG Selama Konversi
+## Mengonversi PDF ke HTML dan menyimpan SVG secara terpisah
 
-Untuk mengompresi gambar SVG selama konversi PDF ke HTML, silakan coba menggunakan kode berikut:
+Gunakan contoh ini ketika konten vektor harus dikeluarkan sebagai sumber daya SVG terpisah.
+
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan atur `setSpecialFolderForSvgImages(...)` ke direktori sumber daya SVG eksternal.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga grafik vektor disimpan di luar file HTML utama.
+1. Simpan output HTML dan aset SVG.
 
 ```java
-// Memuat file PDF
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-
-// Membuat HtmlSaveOption dengan fitur yang diuji
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-// Kompres gambar SVG jika ada
-saveOptions.setCompressSvgGraphicsIfAny(true);
-document.save(DATA_DIR + "SaveSVGFiles_out.html", saveOptions);
-document.close();
+public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Konversi PDF ke HTML - Tentukan Folder Gambar
+## Mengubah PDF menjadi HTML dengan SVG terkompresi
 
-Secara default, ketika mengonversi file PDF ke HTML, gambar dalam PDF disimpan dalam folder terpisah yang dibuat di direktori yang sama dengan output HTML. Namun terkadang, perlu untuk menentukan folder yang berbeda untuk menyimpan gambar saat menghasilkan file HTML. Untuk mencapai ini, kami memperkenalkan [SaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/SaveOptions). Metode [SpecialFolderForAllImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/#setSpecialFolderForAllImages-java.lang.String-) digunakan untuk menentukan folder target untuk menyimpan gambar.
+Gunakan contoh ini ketika output SVG harus dioptimalkan selama ekspor HTML.
+
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan konfigurasikan folder khusus untuk sumber daya SVG.
+1. Aktifkan `setCompressSvgGraphicsIfAny(true)` jadi aset SVG dikompresi selama ekspor.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` dan simpan file HTML yang telah dikonversi.
 
 ```java
-// Muat file PDF
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-// Tentukan folder terpisah untuk menyimpan gambar
-saveOptions.setSpecialFolderForAllImages(DATA_DIR.toString());
-document.save(DATA_DIR + "SaveSVGFiles_out.html", saveOptions);
-document.close();
+public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSpecialFolderForSvgImages(inputFile.getParent().resolve("svg_images").toString());
+        saveOptions.setCompressSvgGraphicsIfAny(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Buat File Berikutnya dengan Isi Badan Saja
+## Mengonversi PDF ke HTML dengan latar belakang halaman PNG
 
-Dengan potongan kode sederhana berikut, Anda dapat membagi output HTML menjadi halaman. Dalam halaman output, semua objek HTML harus ditempatkan persis di tempatnya sekarang (pemrosesan dan output font, pembuatan dan output CSS, pembuatan dan output gambar), kecuali bahwa output HTML akan berisi konten yang saat ini ditempatkan di dalam tag (sekarang tag "body" akan dihilangkan).
+Gunakan contoh ini ketika latar belakang halaman harus dirender sebagai gambar PNG dalam output HTML.
+
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan atur mode penyimpanan gambar raster ke latar belakang halaman PNG.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga konten latar belakang halaman dihasilkan sebagai lapisan HTML berbasis PNG.
+1. Simpan output HTML yang telah dikonversi.
 
 ```java
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-
-HtmlSaveOptions saveOptions = new HtmlSaveOptions();
-
-saveOptions.setHtmlMarkupGenerationMode(HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent);
-saveOptions.setSplitIntoPages(true);
-
-document.save(DATA_DIR + "CreateSubsequentFiles_out.html", saveOptions);
-document.close();
+public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setRasterImagesSavingMode(
+                HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## Perenderan Teks Transparan
+## Mengonversi PDF menjadi konten tubuh HTML saja
 
-Jika file PDF sumber/input berisi teks transparan yang dibayangi oleh gambar latar depan, maka mungkin ada masalah perenderan teks. Jadi untuk mengatasi skenario seperti itu, metode `setSaveShadowedTextsAsTransparentTexts` dan `setSaveTransparentTexts` dapat digunakan.
+Gunakan contoh ini ketika hanya markup body yang dibutuhkan, alih-alih keseluruhan kerangka dokumen HTML.
+
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan atur mode pembuatan markup ke `WriteOnlyBodyContent`.
+1. Simpan `setSplitIntoPages(true)` diaktifkan ketika output hanya badan masih harus dipisahkan per halaman.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` dan simpan output HTML.
 
 ```java
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-
-// Memulai objek HTML SaveOptions
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-htmlsaveOptions.setSaveShadowedTextsAsTransparentTexts(true);
-htmlsaveOptions.setSaveTransparentTexts(true);
-
-// Simpan dokumen
-document.save(DATA_DIR + "TransparentTextRendering_out.html", htmlsaveOptions);
-document.close();
+public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setHtmlMarkupGenerationMode(
+                HtmlSaveOptions.HtmlMarkupGenerationModes.WriteOnlyBodyContent);
+        saveOptions.setSplitIntoPages(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
+## Mengonversi PDF ke HTML dengan rendering teks transparan
 
-## Rendering lapisan dokumen PDF
+Gunakan contoh ini ketika teks transparan harus dipertahankan dalam ekspor HTML.
 
-Kita dapat merender lapisan dokumen PDF dalam elemen tipe lapisan terpisah selama konversi PDF ke HTML:
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan aktifkan pelestarian teks transparan dan berbayang.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga tampilan teks terkait transparansi dipertahankan dalam hasil HTML.
+1. Simpan output HTML yang telah dikonversi.
 
 ```java
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf");
-// Memperkenalkan objek HTML SaveOptions
-
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-
-// Menentukan untuk merender lapisan dokumen PDF secara terpisah dalam output HTML
-htmlsaveOptions.setConvertMarkedContentToLayers(true);
-
-// Simpan dokumen
-document.save(DATA_DIR + "LayersRendering_out.html", htmlsaveOptions);
-document.close();
+public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setSaveTransparentTexts(true);
+        saveOptions.setSaveShadowedTextsAsTransparentTexts(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-Konversi PDF ke HTML adalah salah satu fitur Aspose.PDF yang paling populer karena memungkinkan untuk melihat konten file PDF di berbagai platform tanpa menggunakan penampil dokumen PDF. HTML output sesuai dengan standar WWW dan dapat dengan mudah ditampilkan di semua browser web. Dengan menggunakan fitur ini, file PDF dapat dilihat di perangkat genggam karena Anda tidak perlu menginstal aplikasi penampil PDF, tetapi dapat menggunakan browser web sederhana.
+## Mengonversi PDF ke HTML dengan rendering lapisan dokumen
 
-## PDF ke HTML - Kecualikan Sumber Daya Font
+Gunakan contoh ini ketika visibilitas lapisan PDF harus tercermin dalam hasil HTML.
 
-Jika Anda berniat untuk mengecualikan semua atau beberapa sumber daya font selama konversi PDF ke HTML, Aspose.PDF untuk Java API memungkinkan Anda mencapai ini dengan bantuan kelas HtmlSaveOptions. API menawarkan dua opsi untuk tujuan ini.
-
-- `htmlOptions.FontSavingMode = HTmlSaveOptions.FontSavingModes.DontSave` - untuk mencegah ekspor semua font
-- `htmlOptions.ExcludeFontNameList = (new String[] { "ArialMT", "SymbolMT" });` - adalah untuk mencegah ekspor font tertentu (nama font harus disebutkan tanpa hash)
-
-Untuk mengonversi PDF ke HTML dengan mengecualikan sumber daya font, gunakan langkah-langkah berikut:
-
-1. Definisikan objek baru dari kelas HtmlSaveOptions
-1. Definisikan dan atur nama font yang akan dicegah dari ekspor di HtmlSaveOptions.ExcludeFontNameList
-1. Konversikan PDF ke HTML menggunakan metode save
+1. Buka PDF sumber dalam sebuah instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) dan aktifkan `setConvertMarkedContentToLayers(true)`.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga konten PDF yang ditandai dipetakan ke dalam lapisan HTML.
+1. Simpan file HTML yang diekspor.
 
 ```java
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-htmlsaveOptions.setExplicitListOfSavedPages(
-        new int[]{
-                1
-        }
-);
-htmlsaveOptions.setFixedLayout(true);
-htmlsaveOptions.setCompressSvgGraphicsIfAny(false);
-htmlsaveOptions.setSaveTransparentTexts(true);
-htmlsaveOptions.setSaveShadowedTextsAsTransparentTexts(true);
-htmlsaveOptions.setExcludeFontNameList(new String[]{"ArialMT", "SymbolMT"});
-htmlsaveOptions.setFontSavingMode(HtmlSaveOptions.FontSavingModes.DontSave);
-htmlsaveOptions.setDefaultFontName("Comic Sans MS");
-htmlsaveOptions.setUseZOrder(true);
-htmlsaveOptions
-        .setLettersPositioningMethod(LettersPositioningMethods.UseEmUnitsAndCompensationOfRoundingErrorsInCss);
-htmlsaveOptions
-        .setPartsEmbeddingMode(HtmlSaveOptions.PartsEmbeddingModes.NoEmbedding);
-htmlsaveOptions
-        .setRasterImagesSavingMode(HtmlSaveOptions.RasterImagesSavingModes.AsEmbeddedPartsOfPngPageBackground);
-htmlsaveOptions.setSplitIntoPages(false);
-
-Document document = new Document(DATA_DIR + "sample.pdf");
-document.save(DATA_DIR + "output_out.html", htmlsaveOptions);
-document.close();
+public static void convertPdfToHtmlDocumentLayersRendering(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        HtmlSaveOptions saveOptions = new HtmlSaveOptions();
+        saveOptions.setConvertMarkedContentToLayers(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

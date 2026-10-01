@@ -18,7 +18,7 @@ Kode ini menunjukkan cara untuk memindahkan tugas konversi file PDF yang membutu
 {{% alert color="success" %}}
 **Coba mengubah PDF ke PowerPoint secara online**
 
-Aspose.PDF untuk JavaScript menghadirkan aplikasi online gratis ["PDF ke PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas cara kerjanya.
+Aspose.PDF for JavaScript menghadirkan aplikasi online gratis ["PDF ke PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx), di mana Anda dapat mencoba untuk menyelidiki fungsionalitas dan kualitas cara kerjanya.
 
 
 [![Aspose.PDF Konversi PDF ke PPTX dengan Aplikasi Gratis](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)

@@ -4,7 +4,7 @@ linktitle: Anotasi PDF
 type: docs
 weight: 90
 url: /id/javascript-cpp/annotations/
-description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi ke file PDF Anda dengan Aspose.PDF untuk JavaScript via C++.
+description: Bagian ini menunjukkan cara menggunakan semua jenis anotasi ke file PDF Anda dengan Aspose.PDF for JavaScript via C++.
 lastmod: "2023-09-17"
 sitemap:
     changefreq: "weekly"

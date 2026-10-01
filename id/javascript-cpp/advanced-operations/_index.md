@@ -4,7 +4,7 @@ linktitle: Advanced operations
 type: docs
 weight: 60
 url: /id/javascript-cpp/advanced-operations/
-description: Aspose.PDF untuk JavaScript via C++ dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga mengatasi tujuan yang lebih kompleks. Periksa bagian berikutnya untuk pengguna dan pengembang lanjutan.
+description: Aspose.PDF for JavaScript via C++ dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga mengatasi tujuan yang lebih kompleks. Periksa bagian berikutnya untuk pengguna dan pengembang lanjutan.
 lastmod: "2023-02-17"
 sitemap:
     changefreq: "weekly"

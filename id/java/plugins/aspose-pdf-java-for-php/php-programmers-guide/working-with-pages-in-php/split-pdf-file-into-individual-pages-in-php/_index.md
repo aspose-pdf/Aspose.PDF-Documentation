@@ -1,23 +1,24 @@
 ---
-title: Membagi File PDF menjadi Halaman Individu dalam PHP
+title: "Memisahkan file PDF menjadi halaman individual dalam PHP"
+linktitle: "Memisahkan file PDF menjadi halaman individual dalam PHP"
 type: docs
 weight: 80
 url: /id/java/split-pdf-file-into-individual-pages-in-php/
-lastmod: "2021-06-05"
+description: Temukan cara memisahkan dokumen PDF menjadi halaman individual menggunakan PHP dan Aspose.PDF untuk ekstraksi halaman yang efisien.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - Pisah halaman
 
-## Aspose.PDF - Membagi Halaman
-
-Untuk membagi dokumen PDF menjadi halaman individu menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **SplitAllPages**.
+Untuk memisahkan dokumen PDF menjadi halaman individual menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **SplitAllPages**.
 
 Kode PHP
 
 ```php
 
-# Buka dokumen target
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# loop melalui semua halaman
+# loop through all the pages
 $pdf_page = 1;
 $total_size = $pdf->getPages()->size();
 #for (int pdfPage = 1; pdfPage<= pdfDocument1.getPages().size(); pdfPage++)
@@ -25,25 +26,25 @@ while ($pdf_page <= $total_size)
 
 {
 
-    # buat objek Dokumen baru
+    # create a new Document object
     $new_document = new Document();
 
-    # dapatkan halaman pada indeks tertentu dari Koleksi Halaman
+    # get the page at particular index of Page Collection
     $new_document->getPages()->add($pdf->getPages()->get_Item($pdf_page));
 
-    # simpan file PDF yang baru dihasilkan
+    # save the newly generated PDF file
     $new_document->save($dataDir . "page_#{$pdf_page}.pdf");
 
     $pdf_page++;
 
 }
 
-print "Proses pemisahan selesai dengan sukses!";
+print "Split process completed successfully!";
 
 ```
 
-**Unduh Kode Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-Unduh **Membagi Halaman (Aspose.PDF)** dari salah satu situs sosial coding yang disebutkan di bawah ini:
+Unduh **Split Pages (Aspose.PDF)**В dariВ salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/SplitAllPages.php)

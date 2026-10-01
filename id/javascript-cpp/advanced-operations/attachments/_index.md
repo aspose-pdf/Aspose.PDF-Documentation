@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Di bagian ini, kami akan menjelaskan cara bekerja dengan lampiran dalam PDF menggunakan Aspose.PDF untuk JavaScript melalui C++.
+Di bagian ini, kami akan menjelaskan cara bekerja dengan lampiran dalam PDF menggunakan Aspose.PDF for JavaScript melalui C++.
 
 Lampiran adalah file tambahan yang dilampirkan ke dokumen induk, dapat berupa berbagai jenis file, seperti pdf, word, gambar, atau file lainnya.
 
