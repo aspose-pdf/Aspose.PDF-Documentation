@@ -35,7 +35,7 @@ Os seguintes tipos de formas são suportados pelo [Graph](https://reference.aspo
 
 Você também pode validar a colocação das formas com verificação de limites:
 
-- [Verifique os limites das formas em gráficos PDF com Python](/pdf/pt/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Verifique os limites das formas em gráficos PDF com Python](/pdf/pt/python-net/checking-shape-bounds/)
 
 Os exemplos nesta seção são ilustrados na figura abaixo:
 

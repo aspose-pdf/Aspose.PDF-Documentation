@@ -35,7 +35,7 @@ Abstract: يقدم هذا القسم فئة الرسم البياني في Aspos
 
 يمكنك أيضًا التحقق من موضع الشكل من خلال التحقق من الحدود:
 
-- [تحقق من حدود الشكل في رسوم PDF باستخدام Python](/pdf/ar/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [تحقق من حدود الشكل في رسوم PDF باستخدام Python](/pdf/ar/python-net/checking-shape-bounds/)
 
 الأمثلة في هذا القسم موضحة في الشكل أدناه:
 

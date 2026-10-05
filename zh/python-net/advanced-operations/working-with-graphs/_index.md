@@ -35,7 +35,7 @@ Abstract: 本节介绍 Aspose.PDF for Python via .NET 中的 Graph 类，并解�
 
 您还可以通过边界检查来验证形状放置：
 
-- [使用 Python 检查 PDF 图形中的形状边界](/pdf/zh/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [使用 Python 检查 PDF 图形中的形状边界](/pdf/zh/python-net/checking-shape-bounds/)
 
 本节的示例在下图中说明：
 

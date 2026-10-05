@@ -106,4 +106,4 @@ def draw_line_across_page(outfile: str):
 - [العمل مع الرسوم البيانية PDF في بايثون](/pdf/ar/python-net/working-with-graphs/)
 - [أضف أشكال المنحنيات إلى PDF في Python](/pdf/ar/python-net/add-curve/)
 - [إضافة أشكال مستطيلة إلى PDF في Python](/pdf/ar/python-net/add-rectangle/)
-- [تحقق من حدود الشكل في رسوم PDF باستخدام Python](/pdf/ar/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [تحقق من حدود الشكل في رسوم PDF باستخدام Python](/pdf/ar/python-net/checking-shape-bounds/)

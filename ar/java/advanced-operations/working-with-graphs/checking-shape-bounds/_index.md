@@ -3,7 +3,7 @@ title: تحقق من حدود الشكل في الرسوم البيانية PDF 
 linktitle: تحقق من حدود الشكل
 type: docs
 weight: 70
-url: /ar/java/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /ar/java/checking-shape-bounds/
 description: تعلم كيفية التحقق من صحة حدود الشكل في مجموعات الرسوم البيانية PDF باستخدام Java.
 lastmod: "2026-10-05"
 sitemap:

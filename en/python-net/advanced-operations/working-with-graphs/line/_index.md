@@ -106,4 +106,4 @@ def draw_line_across_page(outfile: str):
 - [Work with PDF graphs in Python](/pdf/python-net/working-with-graphs/)
 - [Add curve shapes to PDF in Python](/pdf/python-net/add-curve/)
 - [Add rectangle shapes to PDF in Python](/pdf/python-net/add-rectangle/)
-- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Check shape bounds in PDF graphs with Python](/pdf/python-net/checking-shape-bounds/)

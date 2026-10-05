@@ -3,7 +3,7 @@ title: Java를 사용하여 PDF 그래프의 모양 경계 확인
 linktitle: 모양 경계 확인
 type: docs
 weight: 70
-url: /ko/java/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /ko/java/checking-shape-bounds/
 description: Java의 PDF 그래프 컬렉션에서 모양 경계의 유효성을 검사하는 방법을 알아보세요.
 lastmod: "2026-09-24"
 sitemap:

@@ -190,6 +190,6 @@ def control_z_order_of_rectangle(outfile: str):
 ## 相关图形主题
 
 - [在 Python 中使用 PDF 图形](/pdf/zh/python-net/working-with-graphs/)
-- [使用 Python 检查 PDF 图形中的形状边界](/pdf/zh/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [使用 Python 检查 PDF 图形中的形状边界](/pdf/zh/python-net/checking-shape-bounds/)
 - [在 Python 中向 PDF 添加直线形状](/pdf/zh/python-net/add-line/)
 - [在 Python 中向 PDF 添加椭圆形状](/pdf/zh/python-net/add-ellipse/)

@@ -3,7 +3,7 @@ title: Python을 사용하여 PDF 그래프의 모양 경계 확인하기
 linktitle: 쉐이프 바운드 확인
 type: docs
 weight: 70
-url: /ko/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /ko/python-net/checking-shape-bounds/
 description: Python에서 PDF 그래프 컬렉션의 형상 경계를 검증하는 방법을 알아봅니다.
 lastmod: "2026-06-10"
 sitemap:

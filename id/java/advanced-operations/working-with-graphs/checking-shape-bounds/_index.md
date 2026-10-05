@@ -3,7 +3,7 @@ title: "Memeriksa batas bentuk dalam grafik PDF dengan Java"
 linktitle: "Memeriksa batas bentuk"
 type: docs
 weight: 70
-url: /id/java/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /id/java/checking-shape-bounds/
 description: Pelajari cara memvalidasi batas bentuk dalam koleksi grafik PDF di Java.
 lastmod: "2026-09-30"
 sitemap:

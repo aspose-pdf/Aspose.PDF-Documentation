@@ -190,6 +190,6 @@ def control_z_order_of_rectangle(outfile: str):
 ## Topik Grafik Terkait
 
 - [Bekerja dengan grafik PDF di Python](/pdf/id/python-net/working-with-graphs/)
-- [Periksa batas bentuk dalam grafik PDF dengan Python](/pdf/id/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Periksa batas bentuk dalam grafik PDF dengan Python](/pdf/id/python-net/checking-shape-bounds/)
 - [Tambahkan bentuk garis ke PDF di Python](/pdf/id/python-net/add-line/)
 - [Tambahkan bentuk elips ke PDF di Python](/pdf/id/python-net/add-ellipse/)

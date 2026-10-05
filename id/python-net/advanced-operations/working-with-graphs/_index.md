@@ -35,7 +35,7 @@ Jenis bentuk berikut didukung oleh [Graph](https://reference.aspose.com/pdf/pyth
 
 Anda juga dapat memvalidasi penempatan bentuk dengan pemeriksaan batas:
 
-- [Periksa batas bentuk dalam grafik PDF dengan Python](/pdf/id/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Periksa batas bentuk dalam grafik PDF dengan Python](/pdf/id/python-net/checking-shape-bounds/)
 
 Contoh-contoh dalam bagian ini diilustrasikan pada gambar di bawah ini:
 

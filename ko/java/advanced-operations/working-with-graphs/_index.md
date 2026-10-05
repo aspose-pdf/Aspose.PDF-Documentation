@@ -21,4 +21,4 @@ Aspose.PDF for Java는 PDF 페이지 내에 직접 벡터 모양을 그릴 수 �
 - [줄 추가](/pdf/ko/java/add-line/)
 - [직사각형 추가](/pdf/ko/java/add-rectangle/)
 - [줄임표 추가](/pdf/ko/java/add-ellipse/)
-- [도형 경계 확인](/java/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [도형 경계 확인](/java/checking-shape-bounds/)

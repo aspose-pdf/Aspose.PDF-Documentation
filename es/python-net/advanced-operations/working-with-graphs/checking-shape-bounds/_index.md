@@ -3,7 +3,7 @@ title: Comprobar límites de forma en gráficos PDF con Python
 linktitle: Comprobar límites de forma
 type: docs
 weight: 70
-url: /es/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /es/python-net/checking-shape-bounds/
 description: Aprenda cómo validar los límites de forma en colecciones de gráficos PDF con Python.
 lastmod: "2026-04-16"
 sitemap:

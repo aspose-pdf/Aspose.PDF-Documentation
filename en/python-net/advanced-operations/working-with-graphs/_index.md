@@ -35,7 +35,7 @@ The following types of shapes are supported by the [Graph](https://reference.asp
 
 You can also validate shape placement with bounds checking:
 
-- [Check shape bounds in PDF graphs with Python](/pdf/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Check shape bounds in PDF graphs with Python](/pdf/python-net/checking-shape-bounds/)
 
 The examples in this section are illustrated in the figure below:
 

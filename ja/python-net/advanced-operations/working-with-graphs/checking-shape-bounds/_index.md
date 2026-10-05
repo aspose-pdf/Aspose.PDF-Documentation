@@ -3,7 +3,7 @@ title: Python を使用して PDF グラフの形状範囲をチェックする
 linktitle: シェイプの境界をチェック
 type: docs
 weight: 70
-url: /ja/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /ja/python-net/checking-shape-bounds/
 description: Python で PDF グラフコレクションの形状境界を検証する方法を学びましょう。
 lastmod: "2026-06-09"
 sitemap:

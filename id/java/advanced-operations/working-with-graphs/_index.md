@@ -21,4 +21,4 @@ Aspose.PDF for Java menyediakan sebuah `Graph` wadah untuk menggambar bentuk vek
 - [Menambahkan garis](/pdf/id/java/add-line/)
 - [Menambahkan persegi panjang](/pdf/id/java/add-rectangle/)
 - [Menambahkan elips](/pdf/id/java/add-ellipse/)
-- [Periksa batas bentuk](/java/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Periksa batas bentuk](/java/checking-shape-bounds/)

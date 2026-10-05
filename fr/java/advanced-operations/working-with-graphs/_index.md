@@ -21,4 +21,4 @@ Aspose.PDF for Java fournit un conteneur `Graph` pour dessiner des formes vector
 - [Ajouter des lignes](/pdf/fr/java/add-line/)
 - [Ajouter des rectangles](/pdf/fr/java/add-rectangle/)
 - [Ajouter des points de suspension](/pdf/fr/java/add-ellipse/)
-- [Vérifier les limites de la forme](/java/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Vérifier les limites de la forme](/java/checking-shape-bounds/)

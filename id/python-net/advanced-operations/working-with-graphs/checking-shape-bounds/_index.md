@@ -3,7 +3,7 @@ title: Periksa Batas Bentuk dalam Grafik PDF dengan Python
 linktitle: Periksa Batas Bentuk
 type: docs
 weight: 70
-url: /id/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /id/python-net/checking-shape-bounds/
 description: Pelajari cara memvalidasi batas bentuk dalam kumpulan grafik PDF menggunakan Python.
 lastmod: "2026-06-12"
 sitemap:

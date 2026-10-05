@@ -3,7 +3,7 @@ title: تحقق من حدود الشكل في رسوم PDF باستخدام Pyth
 linktitle: تحقق من حدود الشكل
 type: docs
 weight: 70
-url: /ar/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /ar/python-net/checking-shape-bounds/
 description: تعرف على كيفية التحقق من حدود الشكل في مجموعات رسومات PDF في Python.
 lastmod: "2026-06-11"
 sitemap:

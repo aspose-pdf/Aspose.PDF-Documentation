@@ -21,4 +21,4 @@ Aspose.PDF for Java يوفر `Graph` حاوية لرسم الأشكال المت
 - [إضافة خطوط](/pdf/ar/java/add-line/)
 - [إضافة مستطيلات](/pdf/ar/java/add-rectangle/)
 - [إضافة إهليلجات](/pdf/ar/java/add-ellipse/)
-- [تحقق من حدود الشكل](/java/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [تحقق من حدود الشكل](/java/checking-shape-bounds/)

@@ -106,4 +106,4 @@ def draw_line_across_page(outfile: str):
 - [Python で PDF グラフを操作する](/pdf/ja/python-net/working-with-graphs/)
 - [Python で PDF にカーブシェイプを追加する方法](/pdf/ja/python-net/add-curve/)
 - [Python で四角形のシェイプを PDF に追加する方法](/pdf/ja/python-net/add-rectangle/)
-- [Python を使用して PDF グラフの形状の境界をチェックする](/pdf/ja/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Python を使用して PDF グラフの形状の境界をチェックする](/pdf/ja/python-net/checking-shape-bounds/)

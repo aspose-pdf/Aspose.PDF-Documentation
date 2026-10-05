@@ -106,4 +106,4 @@ def draw_line_across_page(outfile: str):
 - [파이썬에서 PDF 그래프로 작업하기](/pdf/ko/python-net/working-with-graphs/)
 - [Python에서 PDF에 곡선 모양 추가](/pdf/ko/python-net/add-curve/)
 - [Python에서 PDF에 사각형 모양 추가](/pdf/ko/python-net/add-rectangle/)
-- [Python을 사용하여 PDF 그래프의 모양 경계 확인하기](/pdf/ko/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Python을 사용하여 PDF 그래프의 모양 경계 확인하기](/pdf/ko/python-net/checking-shape-bounds/)

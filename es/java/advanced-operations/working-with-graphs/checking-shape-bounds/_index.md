@@ -3,7 +3,7 @@ title: Comprobar los límites de forma en gráficos PDF con Java
 linktitle: Comprobar los límites de forma
 type: docs
 weight: 70
-url: /es/java/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /es/java/checking-shape-bounds/
 description: Aprenda cómo validar los límites de forma en colecciones de gráficos PDF en Java.
 lastmod: "2026-09-29"
 sitemap:
