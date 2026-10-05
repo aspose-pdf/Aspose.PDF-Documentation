@@ -1,141 +1,143 @@
 ---
-title: Get, Update and Expand a Bookmark
-linktitle: Get, Update and Expand a Bookmark
+title: "Mendapatkan, memperbarui, dan memperluas penanda buku PDF di Java"
+linktitle: "Mendapatkan, memperbarui, dan memperluas bookmark"
 type: docs
 weight: 20
 url: /id/java/get-update-and-expand-bookmark/
-description: Artikel ini menjelaskan cara menggunakan bookmark dalam file PDF. Dengan pustaka Java kami, Anda dapat mengambil bookmark dari file PDF, mendapatkan nomor halaman bookmark, memperbarui bookmark dalam Dokumen PDF, dan memperluas bookmark saat melihat dokumen.
-lastmod: "2021-06-05"
+description: Pelajari cara mengambil, memperbarui, dan memperluas bookmark dalam dokumen PDF menggunakan Java.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Memeriksa properti bookmark dan memperluas outline dalam file PDF dengan Java"
+Abstract: Artikel ini menjelaskan cara membaca, memperbarui, dan memperluas bookmark menggunakan Aspose.PDF for Java. Artikel ini mencakup iterasi melalui item outline, mengekstrak nomor halaman bookmark dengan PdfBookmarkEditor, membaca bookmark anak, memperbarui judul dan gaya bookmark, serta memaksa outline terbuka saat dokumen ditampilkan.
 ---
+Aspose.PDF for Java mengekspose bookmark melalui model outline dokumen dan fasad `PdfBookmarkEditor`.
 
-## Dapatkan Bookmark
+## Mendapatkan properti bookmark
 
-Koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) dari objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) berisi semua bookmark dari file PDF. Artikel ini menjelaskan cara mendapatkan bookmark dari file PDF, dan cara mendapatkan halaman mana yang ditandai oleh bookmark tertentu.
+Gunakan contoh ini ketika Anda perlu memeriksa entri bookmark tingkat atas dalam outline dokumen.
 
-Untuk mendapatkan bookmark, lakukan iterasi melalui koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) dan dapatkan setiap bookmark dalam OutlineItemCollection.
- The OutlineItemCollection menyediakan akses ke semua atribut penanda buku. Cuplikan kode berikut menunjukkan cara mendapatkan penanda buku dari file PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui koleksi outline.
+1. Baca dan cetak nilai judul bookmark, gaya, dan warna.
 
 ```java
-    public static void GettingBookmarks() {
-        // Buka dokumen
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Loop melalui semua penanda buku
-        for (OutlineItemCollection outlineItem : (Iterable<OutlineItemCollection>) pdfDocument.getOutlines()) {
-            System.out.println("Judul :- " + outlineItem.getTitle());
-            System.out.println("Miring :- " + outlineItem.getItalic());
-            System.out.println("Tebal :- " + outlineItem.getBold());
-            System.out.println("Warna :- " + outlineItem.getColor());
+public static void getBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
         }
     }
+}
 ```
 
-## Mendapatkan Nomor Halaman Penanda Buku
+## Mendapatkan nomor halaman bookmark
 
-Setelah Anda menambahkan penanda buku, Anda dapat mengetahui halaman mana yang terdapat penanda buku tersebut dengan mendapatkan PageNumber tujuan yang terkait dengan objek Penanda Buku.
+Contoh ini menggunakan `PdfBookmarkEditor` untuk mengekstrak judul bookmark, level, nomor halaman, dan aksi.
+
+1. Ikat PDF sumber ke [`PdfBookmarkEditor`](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. Ekstrak koleksi bookmark dan iterasi melaluinya.
+1. Cetak tingkat, judul, nomor halaman, dan informasi aksi untuk setiap bookmark.
 
 ```java
-    public static void GettingBookmarksPageNumber() {
-        // Buat PdfBookmarkEditor
-        PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-        // Buka file PDF
-        bookmarkEditor.bindPdf(GetDataDir() + "UpdateBookmarks.pdf");
-        // Ekstrak penanda buku
-        Bookmarks bookmarks = bookmarkEditor.extractBookmarks();
-        for (Bookmark bookmark : (Iterable<Bookmark>) bookmarks) {
-            String strLevelSeprator = "";
-            for (int i = 1; i < bookmark.getLevel(); i++) {
-                strLevelSeprator += "---- ";
+public static void getBookmarkPageNumber(Path inputFile) {
+    PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
+    try {
+        bookmarkEditor.bindPdf(inputFile.toString());
+        for (Bookmark bookmark : bookmarkEditor.extractBookmarks()) {
+            String levelSeparator = "";
+            for (int i = 0; i < bookmark.getLevel(); i++) {
+                levelSeparator += "----";
             }
-            System.out.println("Judul :- " + strLevelSeprator + bookmark.getTitle());
-            System.out.println("Nomor Halaman :- " + strLevelSeprator + bookmark.getPageNumber());
-            System.out.println("Aksi Halaman :- " + strLevelSeprator + bookmark.getAction());
+
+            System.out.println(levelSeparator + " Title: " + bookmark.getTitle());
+            System.out.println(levelSeparator + " Page Number: " + bookmark.getPageNumber());
+            System.out.println(levelSeparator + " Page Action: " + bookmark.getAction());
+        }
+    } finally {
+        bookmarkEditor.close();
+    }
+}
+```
+
+## Mendapatkan bookmark anak
+
+Gunakan contoh ini ketika Anda perlu memeriksa item outline tingkat atas dan yang bersarang.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui outline tingkat atas dan cetak propertinya.
+1. Deteksi bookmark anak, lalu iterasi melalui mereka dan cetak propertinya.
+
+```java
+public static void getChildBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
+            int count = outlineItem.size();
+            if (count > 0) {
+                System.out.println("Child Bookmarks");
+                for (int j = 1; j <= outlineItem.size(); j++) {
+                    OutlineItemCollection childOutlineItem = outlineItem.get_Item(j);
+                    System.out.println(childOutlineItem.getTitle());
+                    System.out.println(childOutlineItem.getItalic());
+                    System.out.println(childOutlineItem.getBold());
+                    System.out.println(childOutlineItem.getColor());
+                }
+            }
         }
     }
+}
 ```
 
-## Memperbarui Penanda Buku dalam Dokumen PDF
+## Memperbarui bookmark
 
-Untuk memperbarui penanda buku dalam file PDF, pertama, dapatkan penanda buku tertentu dari koleksi OutlineCollection objek Dokumen dengan menentukan indeks penanda buku. Setelah Anda mendapatkan penanda buku ke dalam objek [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection), Anda dapat memperbarui propertinya dan kemudian menyimpan file PDF yang telah diperbarui menggunakan metode Save. Potongan kode berikut menunjukkan bagaimana memperbarui penanda buku dalam dokumen PDF.
+Gunakan contoh ini ketika judul dan gaya bookmark yang ada harus dimodifikasi.
 
-```java
-    public static void UpdateBookmarksInPDFDocument() {
-        // Buka dokumen
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Dapatkan objek penanda buku
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-
-        // Perbarui objek penanda buku
-        pdfOutline.setTitle("Updated Outline");
-        pdfOutline.setItalic(true);
-        pdfOutline.setBold(true);
-        // Tetapkan halaman tujuan sebagai 2
-        pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // Simpan output
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
-    }
-```
-
-
-## Memperbarui Bookmark Anak dalam Dokumen PDF
-
-Untuk memperbarui bookmark anak:
-
-1. Ambil bookmark anak yang ingin Anda perbarui dari file PDF dengan terlebih dahulu mendapatkan bookmark induk dan kemudian bookmark anak menggunakan nilai indeks yang sesuai.
-1. Simpan file PDF yang telah diperbarui menggunakan metode Save.
-
-{{% alert color="primary" %}}
-
-Dapatkan bookmark dari koleksi OutlineCollection objek Document dengan menentukan indeks bookmark, dan kemudian dapatkan bookmark anak dengan menentukan indeks dari bookmark induk ini.
-
-{{% /alert %}}
-
-Cuplikan kode berikut menunjukkan cara memperbarui bookmark anak dalam dokumen PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Akses item outline target dan bookmark anaknya.
+1. Perbarui properti bookmark dan simpan dokumen.
 
 ```java
-    public static void UpdateChildBookmarksInPDFDocument() {
-        // Buka dokumen
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // Dapatkan objek bookmark
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-        // Dapatkan objek bookmark anak
-        OutlineItemCollection childOutline = pdfOutline.get_Item(1);
-
-        // Perbarui objek bookmark
+public static void updateBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection outline = document.getOutlines().get_Item(1);
+        OutlineItemCollection childOutline = outline.get_Item(1);
         childOutline.setTitle("Updated Outline");
         childOutline.setItalic(true);
         childOutline.setBold(true);
-        // Tetapkan halaman target sebagai 2
-        childOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
 
-        // Simpan output
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Memperluas bookmark secara default
 
-## Bookmark Diperluas saat melihat dokumen
+Gunakan contoh ini ketika panel bookmark harus terbuka dan menampilkan item outline yang diperluas saat dokumen ditampilkan.
 
-Bookmark disimpan dalam koleksi [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) dari objek Dokumen, yang merupakan bagian dari koleksi [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). Namun, kita mungkin memiliki persyaratan untuk memperluas semua bookmark saat melihat file PDF.
-
-Untuk memenuhi persyaratan ini, kita dapat mengatur status terbuka untuk setiap item outline/bookmark sebagai Terbuka. Cuplikan kode berikut menunjukkan cara mengatur status terbuka untuk setiap bookmark sebagai diperluas dalam dokumen PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Atur mode halaman untuk menggunakan outline dan tandai setiap item outline sebagai terbuka.
+1. Simpan dokumen yang diperbarui.
 
 ```java
-    public static void ExpandedBookmarks() {    
-        Document doc = new Document(GetDataDir()+"UpdateBookmarks.pdf");
-        // atur mode tampilan halaman yaitu tampilkan thumbnail, layar penuh, tampilkan panel lampiran
-        doc.setPageMode(PageMode.UseOutlines);
-        // cetak jumlah total Bookmark dalam file PDF
-        System.out.println(doc.getOutlines().size());
-        // menelusuri setiap item Outline dalam koleksi outline file PDF
-        for (int counter = 1; counter <= doc.getOutlines().size(); counter++) {
-            // atur status terbuka untuk item outline
-            doc.getOutlines().get_Item(counter).setOpen(true);
+public static void expandedBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setPageMode(PageMode.UseOutlines);
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection item = document.getOutlines().get_Item(i);
+            item.setOpen(true);
         }
-        // simpan file PDF
-        doc.save(_dataDir+"Bookmarks_Expanded.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```

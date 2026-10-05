@@ -1,115 +1,61 @@
 ---
-title: Simpan Dokumen PDF
-linktitle: Simpan
+title: "Menyimpan dokumen PDF secara programatik"
+linktitle: "Menyimpan PDF"
 type: docs
 weight: 30
 url: /id/java/save-pdf-document/
-description: Pelajari cara menyimpan file PDF dengan pustaka Aspose.PDF untuk Java.
-lastmod: "2021-06-05"
+description: Pelajari cara menyimpan dokumen PDF dalam Java ke file, ke stream, atau sebagai standar PDF menggunakan Aspose.PDF.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menyimpan dokumen PDF menggunakan pustaka Aspose.PDF dalam Java"
+Abstract: Artikel ini menjelaskan cara menyimpan dokumen PDF di Java menggunakan Aspose.PDF. Artikel ini mencakup penyimpanan ke jalur file, penyimpanan ke OutputStream, dan mengonversi dokumen sebelum menyimpannya sebagai file standar PDF/X.
 ---
+Aspose.PDF for Java menyediakan beberapa cara untuk menyimpan dokumen tergantung pada tujuan target dan persyaratan output.
 
-## Simpan dokumen PDF ke sistem file
+## Menyimpan dokumen PDF di Java
 
-Anda dapat menyimpan dokumen PDF yang dibuat atau dimanipulasi ke sistem file menggunakan metode Save dari kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-Ketika Anda tidak memberikan jenis format (opsi), maka dokumen disimpan dalam format Aspose.PDF v.1.7 (*.pdf).
+Anda dapat menyimpan dokumen:
+
+1. Simpan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) langsung ke file di disk.
+1. Simpan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ke sebuah `OutputStream`.
+1. Konversi [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dengan [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) dan simpan dalam format standar seperti [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
+
+## Menyimpan dokumen ke file
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.io.FileOutputStream;
-
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import com.aspose.pdf.*;
-
-public final class BasicOperationsSave {
-
-    private BasicOperationsSave() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/Samples");
-
-    public static void main(String[] args) {
-        SaveDocument();
-        SaveDocumentStream();
-        SaveDocumentAsPDFx();
-    }
-
-    public static void SaveDocument() {
-        String originalFileName = _dataDir + "/SimpleResume.pdf";
-        String modifiedFileName = _dataDir + "/SimpleResumeModified.pdf";
-
-        Document pdfDocument = new Document(originalFileName);
-        // lakukan beberapa manipulasi, misalnya tambahkan halaman kosong baru
-        pdfDocument.getPages().add();
-        pdfDocument.save(modifiedFileName);
-    }
+public static void saveDocumentToFile(Path inputFile, Path outputFile) {
+    Document document = new Document(inputFile.toString());
+    document.getPages().add();
+    document.save(outputFile.toString());
+    document.close();
+}
 ```
 
-
-## Simpan dokumen PDF ke stream
-
-Anda juga dapat menyimpan dokumen PDF yang dibuat atau dimanipulasi ke stream dengan menggunakan overload dari metode Save.
+## Menyimpan dokumen ke aliran
 
 ```java
-public static void SaveDocumentStream() {
-        String originalFileName = _dataDir + "/SimpleResume.pdf";
-        String modifiedFileName = _dataDir + "/SimpleResumeModified.pdf";
-
-        Document pdfDocument = new Document(originalFileName);
-        // lakukan beberapa manipulasi, misalnya tambahkan halaman kosong baru
-        pdfDocument.getPages().add();
-        try {
-            pdfDocument.save(new FileOutputStream(modifiedFileName));
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-
+public static void saveDocumentToStream(Path inputFile, Path outputFile) throws Exception {
+    Document document = new Document(inputFile.toString());
+    document.getPages().add();
+    try (OutputStream stream = Files.newOutputStream(outputFile)) {
+        document.save(stream);
+    } finally {
+        document.close();
     }
-
+}
 ```
 
-## Simpan dokumen PDF dalam aplikasi Web
-
-Untuk menyimpan dokumen dalam aplikasi Web, Anda dapat menggunakan cara yang diusulkan di atas. Selain itu, kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) memiliki metode Save yang overload.
-```java
-    // @RequestMapping(value = "/files/{file_name}", method = RequestMethod.GET)
-    // public void getFile(@PathVariable("file_name") String fileName, HttpServletResponse response) {
-    //     try {
-    //         response.setContentType("application/pdf");
-    //         // dapatkan file Anda sebagai InputStream
-    //         InputStream is = new FileInputStream(_dataDir + fileName);
-    //         // salin ke OutputStream respons
-    //         org.apache.commons.io.IOUtils.copy(is, response.getOutputStream());
-    //         response.flushBuffer();
-    //     } catch (IOException ex) {
-    //         log.info("Error writing file to output stream. Filename was '{}'", fileName, ex);
-    //         throw new RuntimeException("IOError writing file to output stream");
-    //     }
-    // }
-```
-
-
-Untuk penjelasan lebih rinci, silakan ikuti ke bagian [Showcase]().
-
-## Simpan format PDF/A atau PDF/X
-
-PDF/A adalah versi ISO-standar dari Portable Document Format (PDF) untuk digunakan dalam pengarsipan dan pelestarian jangka panjang dokumen elektronik. PDF/A berbeda dari PDF karena melarang fitur yang tidak cocok untuk pengarsipan jangka panjang, seperti penghubungan font (sebagai lawan dari penyematan font) dan enkripsi. Persyaratan ISO untuk penampil PDF/A mencakup pedoman manajemen warna, dukungan font yang disematkan, dan antarmuka pengguna untuk membaca anotasi yang disematkan.
-
-PDF/X adalah subset dari standar ISO PDF. Tujuan dari PDF/X adalah untuk memfasilitasi pertukaran grafik, dan oleh karena itu memiliki serangkaian persyaratan terkait pencetakan yang tidak berlaku untuk file PDF standar.
-
-Dalam kedua kasus, metode Save digunakan untuk menyimpan dokumen, sementara dokumen harus dipersiapkan menggunakan metode Convert.
+## Menyimpan dokumen sebagai PDF/X
 
 ```java
-public static void SaveDocumentAsPDFx() {
-        Document pdfDocument = new Document("../../../Samples/SimpleResume.pdf");
-        pdfDocument.getPages().add();
-        pdfDocument.convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
-        pdfDocument.save("../../../Samples/SimpleResume_X3.pdf");
-    }
-
+public static void saveDocumentAsStandard(Path inputFile, Path outputFile) {
+    Document document = new Document(inputFile.toString());
+    document.getPages().add();
+    document.convert(new PdfFormatConversionOptions(PdfFormat.PDF_X_3));
+    document.save(outputFile.toString());
+    document.close();
 }
 ```

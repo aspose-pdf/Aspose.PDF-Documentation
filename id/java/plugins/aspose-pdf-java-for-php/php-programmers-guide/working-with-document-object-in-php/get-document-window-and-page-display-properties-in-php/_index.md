@@ -1,61 +1,61 @@
 ---
-title: Dapatkan Properti Jendela Dokumen dan Tampilan Halaman di PHP
+title: "Mendapatkan properti jendela dokumen dan tampilan halaman di PHP"
+linktitle: "Mendapatkan properti jendela dokumen dan tampilan halaman di PHP"
 type: docs
 weight: 30
 url: /id/java/get-document-window-and-page-display-properties-in-php/
-lastmod: "2021-06-05"
+description: Pelajari cara mengakses properti jendela dokumen dan tampilan halaman dari file PDF di PHP menggunakan Aspose.PDF.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - dapatkan properti jendela dokumen dan tampilan halaman
 
-## Aspose.PDF - Dapatkan Properti Jendela Dokumen dan Tampilan Halaman
-
-Untuk Mendapatkan Properti Jendela Dokumen dan Tampilan Halaman dari dokumen Pdf menggunakan **Aspose.PDF Java untuk PHP**, cukup panggil kelas **GetDocumentWindow**.
+Untuk mendapatkan Properti Jendela Dokumen dan Tampilan Halaman dari dokumen Pdf menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **GetDocumentWindow**.
 
 Kode PHP
 
 ```php
 
-# Buka dokumen pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# Dapatkan berbagai properti dokumen
-# Posisi jendela dokumen - Default: false
+# Get different document properties
+# Position of document's window - Default: false
 print "CenterWindow :- " . $doc->getCenterWindow() . PHP_EOL;
 
-# Urutan membaca utama; tentukan posisi halaman
-# saat ditampilkan berdampingan - Default: L2R
+# Predominant reading order; determine the position of page
+# when displayed side by side - Default: L2R
 print "Direction :- " . $doc->getDirection() . PHP_EOL;
 
-# Apakah bilah judul jendela harus menampilkan judul dokumen.
-# Jika salah, bilah judul menampilkan nama file PDF - Default: false
+# Whether window's title bar should display document title.
+# If false, title bar displays PDF file name - Default: false
 print "DisplayDocTitle :- " . $doc->getDisplayDocTitle() . PHP_EOL;
 
-#Apakah akan mengubah ukuran jendela dokumen agar sesuai dengan ukuran
-#halaman yang pertama ditampilkan - Default: false
+#Whether to resize the document's window to fit the size of
+#first displayed page - Default: false
 print "FitWindow :- " . $doc->getFitWindow() . PHP_EOL;
 
-# Apakah akan menyembunyikan bilah menu aplikasi penampil - Default: false
+# Whether to hide menu bar of the viewer application - Default: false
 print "HideMenuBar :-" . $doc->getHideMenubar() . PHP_EOL;
 
-# Apakah akan menyembunyikan bilah alat aplikasi penampil - Default: false
+# Whether to hide tool bar of the viewer application - Default: false
 print "HideToolBar :-" . $doc->getHideToolBar() . PHP_EOL;
 
-# Apakah akan menyembunyikan elemen UI seperti bilah gulir
-# dan hanya menampilkan konten halaman - Default: false
+# Whether to hide UI elements like scroll bars
+# and leaving only the page contents displayed - Default: false
 print "HideWindowUI :-" . $doc->getHideWindowUI() . PHP_EOL;
 
-# Mode halaman dokumen. Bagaimana menampilkan dokumen saat keluar dari mode layar penuh.
+# The document's page mode. How to display document on exiting full-screen mode.
 print "NonFullScreenPageMode :-" . $doc->getNonFullScreenPageMode() . PHP_EOL;
 
-# Tata letak halaman yaitu halaman tunggal, satu kolom
+# The page layout i.e. single page, one column
 print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 
-#Bagaimana dokumen harus ditampilkan saat dibuka.
+#How the document should display when opened.
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
+**Mengunduh kode yang dapat dijalankan**
 
-**Unduh Kode yang Berjalan**
-
-Unduh **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)** dari salah satu situs sosial coding yang disebutkan di bawah ini:
+Unduh **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

@@ -1,33 +1,34 @@
 ---
-title: Mengonversi PDF ke Buku Kerja Excel di PHP
+title: "Mengonversi PDF ke workbook Excel dalam PHP"
+linktitle: "Mengonversi PDF ke workbook Excel dalam PHP"
 type: docs
 weight: 20
 url: /id/java/convert-pdf-to-excel-workbook-in-php/
-lastmod: "2021-06-05"
+description: Pelajari cara mengonversi file PDF ke workbook Excel dalam PHP menggunakan Aspose.PDF, memungkinkan ekstraksi dan manipulasi data yang mulus.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - konversi PDF ke workbook Excel
 
-## Aspose.PDF - Mengonversi PDF ke Buku Kerja Excel
-
-Untuk mengonversi dokumen PDF ke Buku Kerja Excel menggunakan **Aspose.PDF Java untuk PHP**, cukup panggil modul **PdfToExcel**.
+Untuk mengonversi dokumen PDF ke Workbook Excel menggunakan **Aspose.PDF Java for PHP**, cukup panggil modul **PdfToExcel**.
 
 Kode PHP
 
 ```php
-# Buka dokumen target
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# Instansiasi objek ExcelSave Option
+# Instantiate ExcelSave Option object
 $excelsave = new ExcelSaveOptions();
 
-# Simpan output ke format XLS
+# Save the output to XLS format
 $pdf->save($dataDir . "Converted_Excel.xls", $excelsave);
 
-print "Dokumen telah berhasil dikonversi" . PHP_EOL;
+print "Document has been converted successfully" . PHP_EOL;
 
 ```
 
-**Unduh Kode Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-Unduh **Mengonversi PDF ke Buku Kerja Excel (Aspose.PDF)** dari situs pemrograman sosial yang disebutkan di bawah ini:
+Unduh **Konversi PDF ke Buku Kerja Excel (Aspose.PDF)** dari salah satu situs kode sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentConversion/PdfToExcel.php)

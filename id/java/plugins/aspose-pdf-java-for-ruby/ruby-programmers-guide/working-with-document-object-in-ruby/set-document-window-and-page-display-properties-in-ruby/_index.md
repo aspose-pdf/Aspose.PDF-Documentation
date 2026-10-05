@@ -1,84 +1,84 @@
 ---
-title: Setel Properti Jendela Dokumen dan Tampilan Halaman di Ruby
+title: "Mengatur properti jendela dokumen dan tampilan halaman di Ruby"
+linktitle: "Mengatur properti jendela dokumen dan tampilan halaman di Ruby"
 type: docs
 weight: 100
 url: /id/java/set-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+description: Sesuaikan pengaturan tampilan dokumen dan halaman dalam PDF menggunakan Ruby dan Aspose.PDF.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - atur properti jendela dokumen dan tampilan halaman
 
-## Aspose.PDF - Setel Properti Jendela Dokumen dan Tampilan Halaman
-
-Untuk Menyetel Properti Jendela Dokumen dan Tampilan Halaman dari dokumen Pdf menggunakan **Aspose.PDF Java untuk Ruby**, cukup panggil modul **SetDocumentWindow**.
+Untuk mengatur Properti Jendela Dokumen dan Tampilan Halaman dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup invoke **SetDocumentWindow** modul.
 
 Kode Ruby
 
 ```java
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Menyetel properti dokumen yang berbeda
+# Set different document properties
 
-# Posisi jendela dokumen - Default: false
+# Position of document's window - Default: false
 
 doc.setCenterWindow(true)
 
-# Urutan membaca yang dominan; menentukan posisi halaman
+# Predominant reading order; determine the position of page
 
-# ketika ditampilkan berdampingan - Default: L2R
+# when displayed side by side - Default: L2R
 
 #doc.setDirection(Rjb::import('com.aspose.pdf.Direction.L2R'))
 
-# Apakah bilah judul jendela harus menampilkan judul dokumen.
+# Whether window's title bar should display document title.
 
-# Jika false, bilah judul menampilkan nama file PDF - Default: false
+# If false, title bar displays PDF file name - Default: false
 
 doc.setDisplayDocTitle(true)
 
-# Apakah mengubah ukuran jendela dokumen agar sesuai dengan ukuran
+# Whether to resize the document's window to fit the size of
 
-# halaman yang pertama ditampilkan - Default: false
+# first displayed page - Default: false
 
 doc.setFitWindow(true)
 
-# Apakah menyembunyikan bilah menu dari aplikasi penampil - Default: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 doc.setHideMenubar(true)
 
-# Apakah menyembunyikan bilah alat dari aplikasi penampil - Default: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 doc.setHideToolBar(true)
 
-# Apakah menyembunyikan elemen UI seperti bilah gulir
+# Whether to hide UI elements like scroll bars
 
-# dan hanya menampilkan konten halaman - Default: false
+# and leaving only the page contents displayed - Default: false
 
 doc.setHideWindowUI(true)
 
-# Mode halaman dokumen. Cara menampilkan dokumen saat keluar dari mode layar penuh.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 doc.setNonFullScreenPageMode(Rjb::import('com.aspose.pdf.PageMode.UseOC'))
 
-# Tata letak halaman yaitu satu halaman, satu kolom
+# The page layout i.e. single page, one column
 
 doc.setPageLayout(Rjb::import('com.aspose.pdf.PageLayout.TwoColumnLeft'))
 
-# Bagaimana dokumen harus ditampilkan saat dibuka.
+# How the document should display when opened.
 
 doc.setPageMode()
 
-# Simpan file PDF yang telah diperbarui
+# Save updated PDF file
 
 doc.save(data_dir + "Set Document Window.pdf")
 ```
 
+## Mengunduh kode yang dapat dijalankan
 
-## Download Running Code
-
-Unduh **Set Document Window and Page Display Properties (Aspose.PDF)** dari salah satu situs sosial coding yang disebutkan di bawah ini:
+Download **Set Document Window and Page Display Properties (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setdocumentwindow.rb)

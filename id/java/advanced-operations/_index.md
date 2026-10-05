@@ -1,36 +1,35 @@
 ---
-title: Operasi Lanjutan
-linktitle: Operasi Lanjutan
+title: Operasi lanjutan
+linktitle: Operasi lanjutan
 type: docs
-weight: 70
+weight: 90
 url: /id/java/advanced-operations/
-description: Anda dapat melakukan tidak hanya tugas sederhana dan mudah tetapi juga mengatasi tujuan yang lebih kompleks dengan Aspose. PDF untuk Java.
-lastmod: "2021-06-05"
+description: Pelajari cara bekerja dengan fitur PDF lanjutan di Java, termasuk anotasi, formulir, halaman, tabel, teks, gambar, lapisan, grafik vektor, tanda tangan, dan metadata.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Fitur pemrosesan PDF lanjutan di Aspose.PDF for Java
+Abstract: Bagian ini mencakup alur kerja pemrosesan PDF lanjutan menggunakan Aspose.PDF for Java. Ini meliputi pekerjaan dengan anotasi, formulir, halaman, tabel, teks, gambar, lapisan, grafik vektor, aksesibilitas, keamanan, metadata, lampiran ZUGFeRD, dan fitur tingkat dokumen lainnya untuk skenario otomatisasi PDF yang kompleks.
 ---
+Bagian operasi lanjutan mengelompokkan alur kerja Java yang digunakan untuk mengedit, memeriksa, mengamankan, dan memperkaya dokumen PDF yang ada di luar operasi dasar membuat, membuka, menyimpan, menggabungkan, dan memisahkan.
 
-**Operasi Lanjutan** adalah bagian tentang bagaimana menangani file PDF yang ada secara programatis, baik dokumen yang dibuat dengan Aspose.PDF seperti yang dibahas dalam [Operasi Dasar](/pdf/id/java/basic-operations), atau PDF yang dibuat dengan Adobe Acrobat, Google Docs, Microsoft Office, Open Office atau pembuat PDF lainnya.
-
-Anda akan belajar berbagai cara untuk:
-
-- [Bekerja dengan Dokumen](/pdf/id/java/working-with-documents/) - kompres, pisahkan, dan gabungkan dokumen serta lakukan operasi lain pada seluruh dokumen.
-- [Bekerja dengan Halaman](/pdf/id/java/working-with-pages/) - tambahkan, pindahkan atau hapus, pangkas halaman, tambahkan watermark, stempel.
-
-- [Bekerja dengan Teks](/pdf/id/java/working-with-text/) - tambahkan, format, cari dan ganti teks dalam PDF.
-- [Bekerja dengan Gambar](/pdf/id/java/working-with-images/) - sisipkan, hapus, ekstrak gambar dalam dokumen.
-- [Bekerja dengan Tabel](/pdf/id/java/working-with-tables/) - sisipkan, dekorasi tabel dalam PDF, ekstrak data tabel.
-- [Bekerja dengan Formulir](/pdf/id/java/working-with-forms/) - berurusan dengan dokumen PDF interaktif, tambahkan bidang formulir, ekstrak data.
-- [Bekerja dengan Grafik](/pdf/id/java/graphs/) - manipulasi bentuk pada halaman.
-- [Bekerja dengan XML](/pdf/id/java/working-with-xml) - bangun dokumen PDF berdasarkan struktur XML.
-- [Navigasi dan Interaksi](/pdf/id/java/navigation-and-interaction/) - berurusan dengan tindakan, penanda, navigasi halaman.
-- [Anotasi](/pdf/id/java/annotations/) - anotasi memungkinkan pengguna menambahkan konten khusus pada halaman PDF. Anda dapat menambahkan, menghapus, dan memodifikasi anotasi dari dokumen PDF.
-- [Artefak](/pdf/id/java/artifacts/) - berurusan dengan watermark dan objek khusus lainnya dalam PDF.
-- [Aksesibilitas.
- - [Tagged PDF](/pdf/id/java/accessibility-tagged-pdf/) - Penandaan sangat penting untuk aksesibilitas PDF. Aspose.PDF memungkinkan untuk menambahkan tag ke PDF dan menetapkan urutan pembacaan logis serta menyediakan cara untuk menunjukkan struktur dan jenis.
-- [Lampiran](/pdf/id/java/attachments/) - Dokumen PDF dapat berisi lampiran file. Lampiran ini bisa berupa dokumen PDF lainnya, atau jenis file apa pun, seperti file audio, dokumen Microsoft Office, dll. Anda akan belajar cara menambahkan lampiran ke pdf, mendapatkan informasi tentang lampiran, dan menyimpannya ke file, menghapus lampiran dari PDF secara programatis dengan Java.
-- [Metadata dalam PDF](/pdf/id/java/pdf-file-metadata/) - mendapatkan atau menetapkan metadata dalam dokumen, menangani data XMP.
-- [Mengamankan dan Menandatangani](/pdf/id/java/securing-and-signing/) - melindungi dan menandatangani dokumen PDF Anda secara programatis.
-- [Mencetak Dokumen](/pdf/id/java/print-pdf-file/) - mencetak PDF dalam berbagai jenis aplikasi (WinForms, WPF, dll.)
-- [Operator](/pdf/id/java/operators/) - melakukan operasi tingkat rendah dalam PDF.
+- [Bekerja dengan Dokumen](/pdf/id/java/working-with-documents/) - kompres, bagi, dan gabungkan dokumen serta lakukan operasi lainnya pada seluruh dokumen.
+- [Bekerja dengan Halaman](/pdf/id/java/working-with-pages/) - tambahkan, pindahkan atau hapus, potong halaman, tambahkan watermark, stempel, dll.
+- [Bekerja dengan Gambar](/pdf/id/java/working-with-images/) - tambahkan, ekstrak atau hapus gambar dari dokumen PDF.
+- [Lampiran](/pdf/id/java/attachments/) - Anda akan belajar cara menambahkan dan menghapus lampiran dari PDF secara programatis dengan Python.
+- [Navigasi dan Interaksi](/pdf/id/java/navigation-and-interaction/) - menangani aksi, bookmark, menavigasi halaman.
+- [Anotasi](/pdf/id/java/annotations/) - anotasi memungkinkan pengguna menambahkan konten khusus pada halaman PDF. Anda dapat menambah, menghapus, dan memodifikasi anotasi dari dokumen PDF.
+- [Bekerja dengan Tabel](/pdf/id/java/working-with-tables/) - sisipkan, hias tabel di PDF, ekstrak data tabel.
+- [Bekerja dengan Formulir](/pdf/id/java/working-with-forms/) - urus dokumen PDF interaktif, tambahkan bidang formulir, ekstrak data.
+- [Bekerja dengan Teks](/pdf/id/java/working-with-text/) - tambahkan, format, cari dan ganti teks di PDF.
+- [Bandingkan dokumen PDF](/pdf/id/java/compare-pdf-documents/) - memungkinkan untuk membandingkan konten dokumen PDF.
+- [Metadata dalam PDF](/pdf/id/java/pdf-file-metadata/) - mendapatkan atau mengatur metadata dalam dokumen, menangani data XMP.
+- [Bekerja dengan Grafik](/pdf/id/java/working-with-graphs/) - memanipulasi bentuk pada halaman.
+- [Artefak](/pdf/id/java/artifacts/) - menangani watermark dan objek khusus lainnya dalam PDF.
+- [Bekerja dengan lapisan PDF](/pdf/id/working-with-pdf-layers/) - mengunci lapisan, mengekstrak elemen, meratakan, dan menggabungkan lapisan PDF.
+- [Mengamankan dan Menandatangani](/pdf/id/java/securing-and-signing/) - melindungi dan menandatangani dokumen PDF Anda secara programatik
+- [Bekerja dengan Grafik Vektor](/pdf/id/java/working-with-vector-graphics/) - memanipulasi grafik vektor dalam dokumen PDF.
+- [Bekerja dengan ZUGFeRD](/pdf/id/java/working-with-zugferd/) - bekerja dengan dokumen PDF yang mematuhi ZUGFeRD.
+- [Bekerja dengan Operator PDF](/pdf/id/java/working-with-operators/) - bekerja dengan operator PDF untuk manipulasi PDF tingkat lanjut.

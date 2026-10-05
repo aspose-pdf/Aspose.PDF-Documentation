@@ -1,80 +1,80 @@
 ---
-title: Dapatkan Jendela Dokumen dan Properti Tampilan Halaman di Ruby
+title: "Mendapatkan properti jendela dokumen dan tampilan halaman dalam Ruby"
+linktitle: "Mendapatkan properti jendela dokumen dan tampilan halaman dalam Ruby"
 type: docs
 weight: 40
 url: /id/java/get-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+description: Ambil dan sesuaikan properti jendela dokumen serta tampilan halaman dalam file PDF menggunakan Ruby dan Aspose.PDF.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - dapatkan properti jendela dokumen dan tampilan halaman
 
-## Aspose.PDF - Dapatkan Jendela Dokumen dan Properti Tampilan Halaman
-
-Untuk Mendapatkan Jendela Dokumen dan Properti Tampilan Halaman dari dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **GetDocumentWindow**.
+Untuk mendapatkan Properti Jendela Dokumen dan Tampilan Halaman dari dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **GetDocumentWindow**.
 
 Kode Ruby
 
 ```java
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Dapatkan berbagai properti dokumen
+# Get different document properties
 
-# Posisi jendela dokumen - Default: false
+# Position of document's window - Default: false
 
 puts "CenterWindow :- " + doc.getCenterWindow().to_s
 
-# Urutan pembacaan yang dominan; tentukan posisi halaman
+# Predominant reading order; determine the position of page
 
-# ketika ditampilkan berdampingan - Default: L2R
+# when displayed side by side - Default: L2R
 
 puts "Direction :- " + doc.getDirection().to_s
 
-# Apakah bilah judul jendela harus menampilkan judul dokumen.
+# Whether window's title bar should display document title.
 
-# Jika false, bilah judul menampilkan nama file PDF - Default: false
+# If false, title bar displays PDF file name - Default: false
 
 puts "DisplayDocTitle :- " + doc.getDisplayDocTitle().to_s
 
-# Apakah untuk mengubah ukuran jendela dokumen agar sesuai dengan ukuran
+# Whether to resize the document's window to fit the size of
 
-# halaman pertama yang ditampilkan - Default: false
+# first displayed page - Default: false
 
 puts "FitWindow :- " + doc.getFitWindow().to_s
 
-# Apakah untuk menyembunyikan bilah menu dari aplikasi penampil - Default: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 puts "HideMenuBar :-" + doc.getHideMenubar().to_s
 
-# Apakah untuk menyembunyikan bilah alat dari aplikasi penampil - Default: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 puts "HideToolBar :-" + doc.getHideToolBar().to_s
 
-# Apakah untuk menyembunyikan elemen UI seperti bilah gulir
+# Whether to hide UI elements like scroll bars
 
-# dan hanya menampilkan konten halaman - Default: false
+# and leaving only the page contents displayed - Default: false
 
 puts "HideWindowUI :-" + doc.getHideWindowUI().to_s
 
-# Mode halaman dokumen. Bagaimana menampilkan dokumen saat keluar dari mode layar penuh.
+# The document's page mode. How to display document on exiting full-screen mode.
 
 puts "NonFullScreenPageMode :-" + doc.getNonFullScreenPageMode().to_s
 
-# Tata letak halaman yaitu satu halaman, satu kolom
+# The page layout i.e. single page, one column
 
 puts "PageLayout :-" + doc.getPageLayout().to_s
 
-# Bagaimana dokumen harus ditampilkan saat dibuka.
+# How the document should display when opened.
 
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
+## Mengunduh kode yang dapat dijalankan
 
-## Download Running Code
-
-Unduh **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+Download **Dapatkan Properti Jendela Dokumen dan Tampilan Halaman (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

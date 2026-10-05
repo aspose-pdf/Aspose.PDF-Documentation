@@ -1,15 +1,16 @@
 ---
 title: Plugin dari Java
+linktitle: Plugin dari Java
 type: docs
 weight: 100
 url: /id/java/plugins/
-lastmod: "2021-06-05"
+description: Tingkatkan Aspose.PDF for Java dengan plugin. Temukan cara memperluas kemampuan pemrosesan PDF menggunakan alat tambahan dan integrasi.
+lastmod: "2026-09-29"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
-## Artikel dalam bagian ini
+## Artikel di bagian ini
 
 - [Aspose.PDF Java untuk Struts 1.3](/pdf/id/java/aspose-pdf-java-for-struts-1-3/)
 - [Aspose.PDF Java untuk Ruby](/pdf/id/java/aspose-pdf-java-for-ruby/)

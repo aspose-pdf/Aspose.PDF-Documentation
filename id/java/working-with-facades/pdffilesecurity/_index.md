@@ -1,17 +1,24 @@
 ---
 title: Kelas PdfFileSecurity
+linktitle: Kelas PdfFileSecurity
 type: docs
-weight: 110
+weight: 125
 url: /id/java/pdffilesecurity-class/
-description: Bagian ini menjelaskan cara bekerja dengan Aspose.PDF Facades menggunakan Kelas PdfFileSecurity.
-lastmod: "2021-06-05"
+description: "Pelajari cara menggunakan fasad PdfFileSecurity di Java untuk mengenkripsi dan mendekripsi PDF, mengubah kata sandi, dan mengontrol hak istimewa dokumen."
+lastmod: "2026-09-30"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Mengenkripsi, mendekripsi, dan kontrol izin PDF di Java dengan PdfFileSecurity"
+Abstract: "Bagian ini menjelaskan cara menggunakan fasad PdfFileSecurity dalam Aspose.PDF for Java untuk mengamankan dokumen PDF secara programatik. Contoh Java saat ini mencakup enkripsi berbasis kata sandi, enkripsi AES, dekripsi, perubahan kata sandi, dan konfigurasi hak istimewa dengan alur kerja langsung maupun gaya try."
 ---
+Kelas `PdfFileSecurityExamples` dalam Java mendemonstrasikan alur kerja keamanan utama yang tersedia melalui API Facades.
 
-- [Enkripsi Berkas PDF](/pdf/id/java/encrypt-pdf-file/)
-- [Dekripsi Berkas PDF](/pdf/id/java/decrypt-pdf-file/)
-- [Kontrol Pengecualian Berkas PDF](/pdf/id/java/control-exception/)
-- [Ubah Kata Sandi Berkas PDF](/pdf/id/java/change-password/)
-- [Tetapkan Hak Istimewa pada Berkas PDF yang Ada](/pdf/id/java/set-privileges/)
+Gunakan bagian ini untuk mempelajari cara:
+
+- enkripsi PDF dengan kata sandi pengguna dan pemilik
+- terapkan atau perbarui hak istimewa dokumen
+- dekripsi PDF dengan kata sandi pemilik
+- ubah kata sandi dan secara opsional reset pengaturan keamanan

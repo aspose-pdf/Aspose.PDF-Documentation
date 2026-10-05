@@ -1,47 +1,48 @@
 ---
-title: Dapatkan Halaman Tertentu dalam File PDF di Ruby
+title: "Mendapatkan halaman tertentu dalam file PDF di Ruby"
+linktitle: "Mendapatkan halaman tertentu dalam file PDF di Ruby"
 type: docs
 weight: 30
 url: /id/java/get-a-particular-page-in-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Akses dan manipulasi halaman individual dalam dokumen PDF menggunakan Ruby dan Aspose.PDF.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - dapatkan halaman
 
-## Aspose.PDF - Dapatkan Halaman
-
-Untuk mendapatkan Halaman Tertentu dalam dokumen PDF menggunakan **Aspose.PDF Java untuk Ruby**, cukup panggil modul **GetPage**.
+Untuk mendapatkan Halaman Tertentu dalam dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **GetPage**.
 
 Kode Ruby
 
 ```java
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen target
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# dapatkan halaman di indeks tertentu dari Koleksi Halaman
+# get the page at particular index of Page Collection
 
 pdf_page = pdf.getPages().get_Item(1)
 
-# buat objek Dokumen baru
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# tambahkan halaman ke koleksi halaman dari objek dokumen baru
+# add page to pages collection of new document object
 
 new_document.getPages().add(pdf_page)
 
-# simpan file PDF yang baru dihasilkan
+# save the newly generated PDF file
 
 new_document.save(data_dir + "output.pdf")
 
-puts "Proses selesai dengan sukses!"
+puts "Process completed successfully!"
 ```
 
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh **Dapatkan Halaman (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
+Unduh **Get Page (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)

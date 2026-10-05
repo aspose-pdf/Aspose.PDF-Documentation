@@ -1,14 +1,23 @@
 ---
 title: Kelas PdfFileInfo
+linktitle: Kelas PdfFileInfo
 type: docs
-weight: 90
+weight: 110
 url: /id/java/pdffileinfo-class/
-description: Bagian ini menjelaskan cara bekerja dengan Aspose.PDF Facades menggunakan Kelas PdfFileInfo.
-lastmod: "2021-06-05"
+description: Pelajari cara menggunakan façade PdfFileInfo dalam Java untuk memeriksa metadata PDF, properti dokumen, hak akses, detail versi, dan informasi halaman.
+lastmod: "2026-09-30"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Memeriksa metadata PDF, properti, dan informasi halaman dalam Java dengan PdfFileInfo"
+Abstract: Bagian ini menjelaskan cara menggunakan façade PdfFileInfo dalam Aspose.PDF for Java untuk memeriksa detail file PDF secara programatis. Contoh Java saat ini mencakup pencarian versi PDF, hak akses dokumen, dimensi dan offset halaman, serta membaca atau memperbarui metadata dokumen.
 ---
+Kelas `PdfFileInfoExamples` dalam Java menunjukkan alur kerja inspeksi dan metadata utama yang tersedia melalui API Facades.
 
-- [Dapatkan informasi file PDF - facades](/pdf/id/java/get-pdf-information/)
-- [Atur informasi file PDF - facades](/pdf/id/java/set-pdf-information/)
+Gunakan bagian ini untuk mempelajari cara:
+
+- baca versi PDF dan hak istimewa dokumen
+- periksa lebar, tinggi, rotasi, dan offset halaman
+- dapatkan, atur, hapus, dan simpan metadata dokumen dengan XMP
