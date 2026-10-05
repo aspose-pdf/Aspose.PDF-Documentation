@@ -246,3 +246,4 @@ reports/
 .doctranslate/
 node_modules/
 .codex-temp.json
+.harper-dictionary.txt
