@@ -1,116 +1,96 @@
 ---
-title: PDFからタグ付きコンテンツを抽出する
-linktitle: タグ付きコンテンツを抽出
+title: "Java での PDFからタグ付きコンテンツの抽出"
+linktitle: "タグ付きコンテンツの抽出"
 type: docs
 weight: 20
 url: /ja/java/extract-tagged-content-from-tagged-pdfs/
-description: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントからタグ付きコンテンツを抽出する方法について説明します
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して Java でタグ付き PDF コンテンツを検査する方法を学びます。これにはタグ付きコンテンツへのアクセス、ルート構造へのアクセス、子構造要素が含まれます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+タグ付き PDF の論理構造ツリーを検査し、構造要素のメタデータを確認または更新する必要がある場合に、これらの APIs を使用してください。
 
-## タグ付きPDFコンテンツの取得
+## タグ付けされたコンテンツのメタデータの取得
 
-タグ付きテキストを含むPDFドキュメントのコンテンツを取得するために、Aspose.PDFは[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスの[getTaggedContent()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getTaggedContent--)メソッドを提供します。以下のコードスニペットは、タグ付きテキストを含むPDFドキュメントのコンテンツを取得する方法を示しています。
+タイトルや言語などの基本的なドキュメントメタデータを定義し、タグ付けされたコンテンツコンテナにアクセスする必要がある場合にこの例を使用します。
 
-```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java を参照してください
-// ドキュメントディレクトリへのパス。
-String path = "pathTodir";
-
-// PDFドキュメントを作成
-Document document = new Document();
-
-// タグ付きPDFで作業するためのコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
-
-//
-// タグ付きPDFコンテンツの操作
-//
-
-// ドキュメントのタイトルと言語を設定
-taggedContent.setTitle("Simple Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
-
-// タグ付きPDFドキュメントを保存
-document.save(path + "TaggedPDFContent.pdf");
-```
-
-
-## ルート構造の取得
-
-Tagged PDF ドキュメントのルート構造を取得するために、Aspose.PDF は [getStructTreeRootElement]()(https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#getStructTreeRootElement--) および [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) インターフェイスの **getStructureElement()** メソッドを提供しています。以下のコードスニペットは、Tagged PDF ドキュメントのルート構造を取得する方法を示しています。
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. 取得する [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) オブジェクトをドキュメントから取得してください。
+1. タグ付けされたコンテンツのメタデータを設定し、出力ファイルを保存してください。
 
 ```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java を参照してください。
-// ドキュメントディレクトリへのパス。
-String path = "pathTodir";
-// PDF ドキュメントを作成
-Document document = new Document();
-
-// TaggedPdf で作業するためのコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
-
-// ドキュメントのタイトルと言語を設定
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
-
-// プロパティ StructTreeRootElement と RootElement は、PDF ドキュメントの StructTreeRoot オブジェクトおよび
-// ルート構造要素（ドキュメント構造要素）へのアクセスに使用されます。
-StructTreeRootElement structTreeRootElement = taggedContent.getStructTreeRootElement();
-StructureElement rootElement = taggedContent.getRootElement();
-```
-
-
-## 子要素へのアクセス
-
-タグ付きPDFドキュメントの子要素にアクセスするために、Aspose.PDFは**ElementList**クラスを提供します。以下のコードスニペットは、タグ付きPDFドキュメントの子要素にアクセスする方法を示しています。
-
-```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java をご覧ください。
-String path = "pathTodir";
-// PDFドキュメントを開く
-Document document = new Document( path +"StructureElements.pdf");
-
-// タグ付きPDFを操作するためのコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
-
-// ルート要素にアクセス
-ElementList elementList = taggedContent.getStructTreeRootElement().getChildElements();
-for (Element element : elementList)
-{
-    if (element instanceof StructureElement)
-    {
-        StructureElement structureElement =  (StructureElement)element;
-
-        // プロパティを取得
-        String title = structureElement.getTitle();
-        String language = structureElement.getLanguage();
-        String actualText = structureElement.getActualText();
-        String expansionText = structureElement.getExpansionText();
-        String alternativeText = structureElement.getAlternativeText();
+public static void getTaggedContent(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Simple Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
+        document.save(outputFile.toString());
     }
 }
+```
 
-// ルート要素の最初の要素の子要素にアクセス
-elementList = taggedContent.getRootElement().getChildElements().get_Item(1).getChildElements();
-for (Element element : elementList)
-{
-    if (element instanceof StructureElement)
-    {
-        StructureElement structureElement = (StructureElement)element;
+## タグ付けされた PDF のルート構造の取得
 
-        // プロパティを設定
-        structureElement.setTitle("title");
-        structureElement.setLanguage("fr-FR");
-        structureElement.setActualText("actual text");
-        structureElement.setExpansionText("exp");
-        structureElement.setAlternativeText("alt");
+この例は、タグ付けされた PDF の構造ツリーを表すルートオブジェクトを検査する方法を示しています。
+
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、そのタグ付けされたコンテンツを取得してください。
+1. 必要なドキュメント メタデータを設定してください。
+1. 構造ツリーのルートと論理ルート要素を読み取り、出力し、ファイルを保存してください。
+
+```java
+public static void getRootStructure(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
+
+        System.out.println("StructTreeRootElement: " + taggedContent.getStructTreeRootElement());
+        System.out.println("RootElement: " + taggedContent.getRootElement());
+
+        document.save(outputFile.toString());
     }
 }
+```
 
-// タグ付きPDFドキュメントを保存
-document.save( path +"AccessChildrenElements.pdf");
+## 子構造要素にアクセスして更新する
+
+構造ツリーの子要素を反復処理し、プロパティを検査し、選択されたメタデータを更新する必要がある場合にこの例を使用してください。
+
+1. ソース のタグ付けされた PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 構造ツリーのルートから子要素を読み取り、利用可能なプロパティを出力してください。
+1. 最初のルート子の子要素にアクセスし、メタデータを更新して、文書を保存します。
+
+```java
+public static void accessChildElements(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+
+        ElementList elementList = taggedContent.getStructTreeRootElement().getChildElements();
+        for (Object element : elementList) {
+            if (element instanceof StructureElement structureElement) {
+                System.out.println("StructureElement properties - "
+                        + "title: " + structureElement.getTitle()
+                        + ", language: " + structureElement.getLanguage()
+                        + ", actual_text: " + structureElement.getActualText()
+                        + ", expansion_text: " + structureElement.getExpansionText()
+                        + ", alternative_text: " + structureElement.getAlternativeText());
+            }
+        }
+
+        Element firstChild = taggedContent.getRootElement().getChildElements().get_Item(1);
+        for (Object element : firstChild.getChildElements()) {
+            if (element instanceof StructureElement structureElement) {
+                structureElement.setTitle("title");
+                structureElement.setLanguage("fr-FR");
+                structureElement.setActualText("actual text");
+                structureElement.setExpansionText("exp");
+                structureElement.setAlternativeText("alt");
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
 ```

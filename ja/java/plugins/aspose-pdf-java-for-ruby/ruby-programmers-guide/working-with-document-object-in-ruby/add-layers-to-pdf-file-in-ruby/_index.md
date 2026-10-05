@@ -1,19 +1,20 @@
 ---
-title: RubyでPDFファイルにレイヤーを追加する
+title: "Ruby での PDFファイルへのレイヤーの追加"
+linktitle: "Ruby での PDFファイルへのレイヤーの追加"
 type: docs
 weight: 20
 url: /ja/java/add-layers-to-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して、RubyでPDFファイルにレイヤーを追加する方法を学び、文書構造と表示制御を向上させましょう。
+lastmod: "2026-10-05"
 ---
-
 ## Aspose.PDF - レイヤーの追加
 
-<ins> **Aspose.PDF Java for Ruby**を使用してPDFドキュメントにレイヤーを追加するには、単に**AddLayers**モジュールを呼び出します。
+<ins> Pdfドキュメントにレイヤーを追加するには、**Aspose.PDF Java for Ruby** を使用して、単に **AddLayers** モジュールを呼び出します。
 
-Ruby コード
+Rubyコード
 
 ```java
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
@@ -61,16 +62,15 @@ layer.getContents().add(operator.Stroke())
 
 page.getLayers().add(layer)
 
-# PDFドキュメントを保存
+# Save PDF Document
 
 doc.save(data_dir + "Layers-Added.pdf")
 
-puts "レイヤーが正常に追加されました。出力ファイルを確認してください。"
+puts "Added Layers Successfully, please check the output file."
 ```
 
+## 実行中のコードをダウンロード
 
-## ダウンロード実行コード
-
-**Add Layers (Aspose.PDF)** を以下のいずれかのソーシャルコーディングサイトからダウンロードしてください：
+ダウンロードВ **Add Layers (Aspose.PDF)**В 以下からВ 以下に記載されたソーシャルコーディングサイトのいずれかから：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

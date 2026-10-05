@@ -1,17 +1,24 @@
 ---
 title: PdfFileSecurity クラス
+linktitle: PdfFileSecurity クラス
 type: docs
-weight: 110
+weight: 125
 url: /ja/java/pdffilesecurity-class/
-description: このセクションでは、PdfFileSecurity クラスを使用して Aspose.PDF ファサードを操作する方法について説明します。
-lastmod: "2021-06-05"
+description: Java で PdfFileSecurity ファサードを使用して PDF を暗号化および復号化し、パスワードを変更し、ドキュメントの権限を制御する方法を学びます。
+lastmod: "2026-10-05"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java で PdfFileSecurity を使用して PDF の暗号化、復号化、権限制御を行う
+Abstract: このセクションでは、Aspose.PDF for Java の PdfFileSecurity ファサードを使用して PDF ドキュメントをプログラムで保護する方法を説明します。現在の Java のサンプルは、パスワードベースの暗号化、AES 暗号化、復号化、パスワード変更、および直接式と try 式の両方のワークフローによる権限構成をカバーしています。
 ---
+そのJava `PdfFileSecurityExamples` クラスは、Facades API を通じて利用可能な主要なセキュリティワークフローを示します。
 
-- [PDFファイルを暗号化する](/pdf/ja/java/encrypt-pdf-file/)
-- [PDFファイルの暗号を解除する](/pdf/ja/java/decrypt-pdf-file/)
-- [例外PDFファイルを制御する](/pdf/ja/java/control-exception/)
-- [PDFファイルのパスワードを変更する](/pdf/ja/java/change-password/)
-- [既存のPDFファイルに特権を設定する](/pdf/ja/java/set-privileges/)
+このセクションを使用して、次の方法を学びます：
+
+- ユーザーとオーナーパスワードで PDF を暗号化する
+- 文書権限を適用または更新する
+- オーナーパスワードで PDF の暗号化を解除する
+- パスワードを変更し、必要に応じてセキュリティ設定をリセットする

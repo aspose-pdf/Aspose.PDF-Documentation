@@ -1,109 +1,77 @@
 ---
-title: PDFページの移動
-linktitle: ページの移動
+title: "Java での PDFページの移動"
+linktitle: PDFページの移動
 type: docs
-weight: 20
+weight: 100
 url: /ja/java/move-pages/
-description: Aspose.PDF for Javaを使用して、PDFファイルの希望する位置または末尾にページを移動してみてください。
-lastmod: "2021-06-05"
+description: Javaでドキュメント内またはドキュメント間でPDFページを移動する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Javaでドキュメント間のPDFページを移動する
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF のページを移動する方法を説明します。単一ページまたは複数ページを別のドキュメントに移動すること、および同じ PDF 内でページの位置を変更することについて取り上げます。
 ---
+Aspose.PDF for Java を使用すると、ドキュメント間でページを移動したり、同じ PDF 内でページの位置を変更したりできます。
 
-## 一つのPDFドキュメントから別のドキュメントへのページの移動
+## ページを別のドキュメントに移動する
 
-このトピックでは、Javaを使用して一つのPDFドキュメントから別のドキュメントの末尾にページを移動する方法を説明します。
-ページを移動するには、以下を行う必要があります：
+単一ページを元の PDF から削除し、別のドキュメントに保存する場合にこの例を使用します。
 
-1. ソースPDFファイルで[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスのオブジェクトを作成します。
-1. 目的のPDFファイルで[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスのオブジェクトを作成します。
-1. [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection)コレクションからページを取得します。
-1. ページを目的のドキュメントに追加します。
-1. Saveメソッドを使用して出力PDFを保存します。
-1. ソースドキュメントでページを削除します。
-1. Saveメソッドを使用してソースPDFを保存します。
-
-次のコードスニペットは、1ページを移動する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、宛先ドキュメントを作成してください。
+1. 対象ページを宛先に追加し、ソースから削除してください。
+1. 両方のドキュメントを保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleMovePDFPages {
-
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-  public static void MovePage() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document();
-    Document dstDocument = new Document();
-    Page page = srcDocument.getPages().get_Item(2);
-    dstDocument.getPages().add(page);
-    // 出力ファイルを保存
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(2);
-    srcDocument.save(dstFileName);
-  }
-```
-
-## 複数のページを1つのPDFドキュメントから別のPDFドキュメントに移動
-
-1. ソースPDFファイルで[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスのオブジェクトを作成します。
-1. 目的のPDFファイルで[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスのオブジェクトを作成します。
-1. 移動するページ番号を含む配列を定義します。
-
-1. 配列をループで実行します:
-    1. [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection) コレクションからページを取得します。
-    1. ページを宛先ドキュメントに追加します。
-1. Save メソッドを使用して出力 PDF を保存します。
-1. 配列を使用してソースドキュメント内のページを削除します。
-1. Save メソッドを使用してソース PDF を保存します。
-
-以下のコードスニペットは、PDF ファイルの最後に空のページを挿入する方法を示しています。
-
-```java
-  public static void MoveBunchPages() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document(srcFileName);
-    Document dstDocument = new Document();
-
-    Integer[] pages = { 1, 3 };
-    for (int pageIndex : pages) {
-      Page page = srcDocument.getPages().get_Item(pageIndex);
-      dstDocument.getPages().add(page);
+public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString());
+         Document anotherDocument = new Document()) {
+        anotherDocument.getPages().add(document.getPages().get_Item(2));
+        document.getPages().delete(2);
+        document.save(sourceOutputFile.toString());
+        anotherDocument.save(outputFile.toString());
     }
-    // 出力ファイルを保存
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(pages);
-
-    srcDocument.save(dstFileName);
-  }
+}
 ```
 
-## 現在の PDF ドキュメント内の新しい場所にページを移動する
+## 複数のページを別のドキュメントに移動する
 
-1. ソースPDFファイルで[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスオブジェクトを作成します。
-1. [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection)コレクションからページを取得します。
-1. 新しい場所（例えば末尾）にページを追加します。
-1. 前の場所のページを削除します。
-1. Saveメソッドを使用して出力PDFを保存します。
+ソース PDF から新しいドキュメントに複数のページを転送する必要がある場合は、この例を使用します。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、宛先ドキュメントを作成してください。
+1. 選択したページを宛先ドキュメントにコピーしてください。
+1. ソースから移動したページを削除し、両方のファイルを保存してください。
 
 ```java
-  public static void MovePagesInOnePDF() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
+public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString());
+         Document dstDocument = new Document()) {
+        Integer[] pages = {1, 2};
+        for (Integer pageIndex : pages) {
+            dstDocument.getPages().add(srcDocument.getPages().get_Item(pageIndex));
+        }
+        dstDocument.save(outputFile.toString());
+        srcDocument.getPages().delete(pages);
+        srcDocument.save(sourceOutputFile.toString());
+    }
+}
+```
 
-    Document srcDocument = new Document(srcFileName);
-    Page page = srcDocument.getPages().get_Item(2);
-    srcDocument.getPages().add(page);
-    srcDocument.getPages().delete(2);
+## 同じドキュメント内でページの移動
 
-    // 出力ファイルを保存
-    srcDocument.save(dstFileName);
-  }
+同じ PDF 内でページを新しい位置に再配置する必要がある場合は、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 対象ページを新しい位置に複製し、元のページエントリを削除します。
+1. 再配置されたドキュメントを保存してください。
+
+```java
+public static void movePageInNewLocationInSameDocument(Path inputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString())) {
+        srcDocument.getPages().add(srcDocument.getPages().get_Item(2));
+        srcDocument.getPages().delete(2);
+        srcDocument.save(outputFile.toString());
+    }
 }
 ```

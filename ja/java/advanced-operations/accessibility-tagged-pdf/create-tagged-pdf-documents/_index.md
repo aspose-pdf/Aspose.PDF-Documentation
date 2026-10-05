@@ -1,266 +1,381 @@
 ---
-title: Tagged PDFを作成する
-linktitle: Tagged PDFを作成する
+title: "Java での Tagged PDFの作成"
+linktitle: "Tagged PDFの作成"
 type: docs
 weight: 10
-lastmod: "2021-06-05"
-url: /ja/java/create-tagged-pdf-documents/
-description: この記事では、Aspose.PDF for Javaを使用してプログラムでTagged PDFドキュメントの構造要素を作成する方法を説明します。
+url: /ja/java/create-tagged-pdf/
+description: Java と Aspose.PDF を使用して、PDF/UA の構造要素、アクセシブルなフォームフィールド、TOC ページ、そして自動タグ付けを含む、タグ付けされた PDF ドキュメントの作成方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
 ---
+タグ付きPDFを作成することは、文書をPDF/UAのアクセシビリティ要件に対して検証しやすくし、支援技術が解釈しやすくなる構造要素を追加することを意味します。
 
-## 構造要素の作成
+## シンプルなタグ付けされた PDF ドキュメントの作成
 
-Tagged PDFドキュメントに構造要素を作成するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent)インターフェースを使用して構造要素を作成するためのメソッドを提供します。以下のコードスニペットは、Tagged PDFの構造要素を作成する方法を示しています。
+論理構造ツリーに見出しと段落を持つ最小限のタグ付き PDF が必要な場合は、この例を使用してください。
+
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、その [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) を取得してください。
+1. ドキュメントのタイトルと言語を設定し、必要なヘッダーと段落要素を作成してください。
+1. 構造要素をルート要素に追加し、ドキュメントを保存してください。
 
 ```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java をご覧ください。
-// ドキュメントディレクトリへのパス。
-String path = "pathTodir";
+public static void createTaggedPdfDocumentSimple(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// PDFドキュメントを作成
-Document document = new Document();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// TaggedPdfと作業するためのコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
+        HeaderElement mainHeader = taggedContent.createHeaderElement();
+        mainHeader.setText("Main Header");
 
-// ドキュメントのタイトルと言語を設定
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        paragraphElement.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. "
+                + "Cras pellentesque libero semper, gravida magna sed, luctus leo.");
 
-// グループ要素を作成
-PartElement partElement = taggedContent.createPartElement();
-ArtElement artElement = taggedContent.createArtElement();
-SectElement sectElement = taggedContent.createSectElement();
-DivElement divElement = taggedContent.createDivElement();
-BlockQuoteElement blockQuoteElement = taggedContent.createBlockQuoteElement();
-CaptionElement captionElement = taggedContent.createCaptionElement();
-TOCElement tocElement = taggedContent.createTOCElement();
-TOCIElement tociElement = taggedContent.createTOCIElement();
-IndexElement indexElement = taggedContent.createIndexElement();
-NonStructElement nonStructElement = taggedContent.createNonStructElement();
-PrivateElement privateElement = taggedContent.createPrivateElement();
-
-// テキストブロックレベルの構造要素を作成
-ParagraphElement paragraphElement = taggedContent.createParagraphElement();
-HeaderElement headerElement = taggedContent.createHeaderElement();
-HeaderElement h1Element = taggedContent.createHeaderElement(1);
-
-// テキストインラインレベルの構造要素を作成
-SpanElement spanElement = taggedContent.createSpanElement();
-QuoteElement quoteElement = taggedContent.createQuoteElement();
-NoteElement noteElement = taggedContent.createNoteElement();
-
-// イラストレーション構造要素を作成
-FigureElement figureElement = taggedContent.createFigureElement();
-FormulaElement formulaElement = taggedContent.createFormulaElement();
-
-// メソッドは開発中です
-ListElement listElement = taggedContent.createListElement();
-TableElement tableElement = taggedContent.createTableElement();
-ReferenceElement referenceElement = taggedContent.createReferenceElement();
-BibEntryElement bibEntryElement = taggedContent.createBibEntryElement();
-CodeElement codeElement = taggedContent.createCodeElement();
-LinkElement linkElement = taggedContent.createLinkElement();
-AnnotElement annotElement = taggedContent.createAnnotElement();
-RubyElement rubyElement = taggedContent.createRubyElement();
-WarichuElement warichuElement = taggedContent.createWarichuElement();
-FormElement formElement = taggedContent.createFormElement();
-
-// Tagged Pdfドキュメントを保存
-document.save(path + "StructureElements.pdf");
+        rootElement.appendChild(mainHeader, true);
+        rootElement.appendChild(paragraphElement, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## 高度なタグ付けPDFドキュメントの作成
 
-## 構造要素ツリーの作成
+この例では、見出し、段落、スパン、引用、および明示的なレイアウト設定を組み合わせることで、よりリッチな構造を構築しています。
 
-Tagged PDFドキュメントで構造要素ツリーを作成するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent)インターフェースを使用して構造要素ツリーを作成する方法を提供しています。以下のコードスニペットは、Tagged PDFドキュメントの構造要素ツリーを作成する方法を示しています:
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、タグ付けされたコンテンツのメタデータを初期化してください。
+1. 見出しと段落の構造を作成し、次に段落内にスパンと引用要素を追加してください。
+1. 段落の位置を調整し、要素をルート構造に追加して、ドキュメントを保存してください。
 
 ```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java を参照してください。
-// ドキュメントディレクトリへのパス。
-String path = "pathTodir";
-// PDFドキュメントを作成
-Document document = new Document();
+public static void createTaggedPdfDocumentAdv(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
 
-// TaggedPdfで作業するためのコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// ドキュメントのタイトルと言語を設定
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        HeaderElement header1 = taggedContent.createHeaderElement(1);
+        header1.setText("Header Level 1");
 
-// ルート構造要素（ドキュメント）を取得
-StructureElement rootElement = taggedContent.getRootElement();
+        ParagraphElement paragraphWithQuotes = taggedContent.createParagraphElement();
+        paragraphWithQuotes.getStructureTextState().setFont(FontRepository.findFont("Arial"));
 
-// 論理構造を作成
-SectElement sect1 = taggedContent.createSectElement();
-rootElement.appendChild(sect1);
+        PositionSettings positionSettings = new PositionSettings();
+        positionSettings.setMargin(new MarginInfo(10, 5, 10, 5));
+        paragraphWithQuotes.adjustPosition(positionSettings);
 
-SectElement sect2 = taggedContent.createSectElement();
-rootElement.appendChild(sect2);
+        SpanElement spanElement1 = taggedContent.createSpanElement();
+        spanElement1.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                + "Aenean nec lectus ac sem faucibus imperdiet. Sed ut erat ac magna ullamcorper hendrerit. ");
 
-DivElement div11 = taggedContent.createDivElement();
-sect1.appendChild(div11);
+        QuoteElement quoteElement = taggedContent.createQuoteElement();
+        quoteElement.setText("Sed vulputate, quam sed lacinia luctus, ipsum nibh fringilla purus.");
+        quoteElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Bold | FontStyles.Italic));
 
-DivElement div12 = taggedContent.createDivElement();
-sect1.appendChild(div12);
+        SpanElement spanElement2 = taggedContent.createSpanElement();
+        spanElement2.setText(" Sed non consectetur elit.");
 
-ArtElement art21 = taggedContent.createArtElement();
-sect2.appendChild(art21);
+        paragraphWithQuotes.appendChild(spanElement1, true);
+        paragraphWithQuotes.appendChild(quoteElement, true);
+        paragraphWithQuotes.appendChild(spanElement2, true);
 
-ArtElement art22 = taggedContent.createArtElement();
-sect2.appendChild(art22);
-
-DivElement div211 = taggedContent.createDivElement();
-art21.appendChild(div211);
-
-DivElement div212 = taggedContent.createDivElement();
-art21.appendChild(div212);
-
-DivElement div221 = taggedContent.createDivElement();
-art22.appendChild(div221);
-
-DivElement div222 = taggedContent.createDivElement();
-art22.appendChild(div222);
-
-SectElement sect3 = taggedContent.createSectElement();
-rootElement.appendChild(sect3);
-
-DivElement div31 = taggedContent.createDivElement();
-sect3.appendChild(div31);
-
-// Tagged Pdf Documentを保存
-document.save(path + "StructureElementsTree.pdf");
+        rootElement.appendChild(header1, true);
+        rootElement.appendChild(paragraphWithQuotes, true);
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## タグ付けされたコンテンツへのテキストスタイルの追加
 
-## テキスト構造のスタイリング
+タグ付けされた段落の内容に明示的なフォント、色、スタイル情報を持たせる必要がある場合は、この例を使用してください。
 
-Tagged PDF ドキュメント内でテキスト構造をスタイリングするために、Aspose.PDF は [StructureTextState](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/StructureTextState) クラスの **setFont()**、**setFontSize()**、**setFontStyle()**、**setForegroundColor()** プロパティを提供します。次のコードスニペットは、Tagged PDF ドキュメント内でテキスト構造をスタイリングする方法を示しています。
+1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. 段落要素を作成し、その構造テキスト状態を設定してください。
+1. 段落テキストを設定し、ドキュメントを保存してください。
 
 ```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java をご覧ください。
-// ドキュメントディレクトリへのパス。
-String path = "pathTodir";
-// PDF ドキュメントを作成
-Document document = new Document();
+public static void addStyle(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// TaggedPdf を操作するためにコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// ドキュメントのタイトルと言語を設定
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraphElement = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraphElement, true);
 
-ParagraphElement p = taggedContent.createParagraphElement();
-taggedContent.getRootElement().appendChild(p);
+        paragraphElement.getStructureTextState().setFontSize(Nullable.of(18.0f));
+        paragraphElement.getStructureTextState().setForegroundColor(Color.getRed());
+        paragraphElement.getStructureTextState().setFontStyle(Nullable.of(FontStyles.Italic));
+        paragraphElement.setText("Red italic text.");
 
-// 開発中
-p.getStructureTextState().setFontSize(18F);
-p.getStructureTextState().setForegroundColor(Color.getRed());
-p.getStructureTextState().setFontStyle(FontStyles.Italic);
-
-p.setText("赤い斜体のテキスト。");
-
-// Tagged Pdf ドキュメントを保存
-document.save(path + "StyleTextStructure.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## 図の構造要素の追加
 
-## 構造要素の説明
+この例では、代替テキスト、タイトル、カスタムタグ、画像コンテンツ、配置を使用してタグ付けされた図を作成する方法を示します。
 
-Tagged PDF ドキュメントで構造要素を説明するために、Aspose.PDF は [IllustrationElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure.elements.class-use/IllustrationElement) クラスを提供します。次のコードスニペットは、Tagged PDF ドキュメントで構造要素を説明する方法を示しています:
+1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. 作成 [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), そのアクセシブルメタデータを設定し、画像を割り当てます。
+1. 図の位置を調整して、ドキュメントを保存してください。
 
 ```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java を参照してください
-// ドキュメントディレクトリへのパス
-String path = "pathTodir";
-// Pdf ドキュメントの作成
-Document document = new Document();
+public static void illustrateStructureElements(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// TaggedPdf を扱うためのコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// ドキュメントのタイトルと言語を設定
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        FigureElement figure1 = taggedContent.createFigureElement();
+        taggedContent.getRootElement().appendChild(figure1, true);
+        figure1.setAlternativeText("Figure One");
+        figure1.setTitle("Image 1");
+        figure1.setTag("Fig1");
+        figure1.setImage(imageFile.toString(), 300);
 
-// 開発中
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setActualText("図1");
-figure1.setTitle("画像 1");
-figure1.setTag("Fig1");
-figure1.setImage("image.png");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(50);
+        marginInfo.setTop(20);
+        positionSettings.setMargin(marginInfo);
+        figure1.adjustPosition(positionSettings);
 
-// Tagged Pdf ドキュメントを保存
-document.save(path + "IllustrationStructureElements.pdf");
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## PDF/UA 用にタグ付けされた PDF の検証
 
-## **タグ付き画像でPDFを作成**
+タグ付けされた PDF が PDF/UA の検証規則を満たしているかを確認する必要がある場合は、この例を使用してください。
 
-タグ付き画像でPDFを作成するには、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent) インターフェイスの[createFigureElement()](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent#createFigureElement--) メソッドを提供します。以下のコードスニペットはその機能を示しています。
+1. 元の PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 検証を実行 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`。
+1. 検証ログを書き込み、検証結果を表示してください。
 
 ```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java をご覧ください
-Document document = new Document();
-ITaggedContent taggedContent = document.getTaggedContent();
-
-taggedContent.setTitle("CreatePDFwithTaggedImage");
-taggedContent.setLanguage("en-US");
-
-IllustrationElement figure1 = taggedContent.createFigureElement();
-taggedContent.getRootElement().appendChild(figure1);
-figure1.setAlternativeText("Aspose ロゴ");
-figure1.setTitle("画像 1");
-figure1.setTag("Fig");
-// 解像度300 DPIで画像を追加（デフォルト）
-figure1.setImage("aspose-logo.jpg");
-// PDFドキュメントを保存
-document.save("PDFwithTaggedImage.pdf");
+public static void validateTaggedPdf(Path inputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        boolean isValid = document.validate(logFile.toString(), PdfFormat.PDF_UA_1);
+        System.out.println("Is Valid: " + isValid);
+    }
+}
 ```
 
+## 構造要素の位置を調整する
 
-## タグ付きテキストでPDFを作成
+この例では、タグ付けされた段落に対して、明示的な余白と配置設定を適用します。
 
-タグ付きテキストでPDFを作成するために、Aspose.PDFは[ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged/ITaggedContent)インターフェースを提供します。以下のコードスニペットは、その機能を示しています。
+1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. 段落構造要素を追加し、準備する [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/)。
+1. 段落に位置設定を適用し、文書を保存してください。
 
 ```java
-// 完全な例とデータファイルについては、https://github.com/aspose-pdf/Aspose.PDF-for-Java を参照してください。
-// ドキュメントディレクトリへのパス。
-String dataDir = Utils.getDataDir() + "TaggedPDFs\\";
-// Pdf ドキュメントを作成
-Document document = new Document();
+public static void adjustPosition(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent taggedContent = document.getTaggedContent();
 
-// タグ付きPDFを操作するためのコンテンツを取得
-ITaggedContent taggedContent = document.getTaggedContent();
+        taggedContent.setTitle("Tagged Pdf Document");
+        taggedContent.setLanguage("en-US");
 
-// ドキュメントのタイトルと言語を設定
-taggedContent.setTitle("Tagged Pdf Document");
-taggedContent.setLanguage("en-US");
+        ParagraphElement paragraph = taggedContent.createParagraphElement();
+        taggedContent.getRootElement().appendChild(paragraph, true);
+        paragraph.setText("Text.");
 
-// テキストブロックレベルの構造要素を作成
-HeaderElement headerElement = taggedContent.createHeaderElement();
-headerElement.setActualText("Heading 1");
-ParagraphElement paragraphElement1 = taggedContent.createParagraphElement();
-paragraphElement1.setActualText("test1");
-ParagraphElement paragraphElement2 = taggedContent.createParagraphElement();
-paragraphElement2.setActualText("test 2");
-ParagraphElement paragraphElement3 = taggedContent.createParagraphElement();
-paragraphElement3.setActualText("test 3");
-ParagraphElement paragraphElement4 = taggedContent.createParagraphElement();
-paragraphElement4.setActualText("test 4");
-ParagraphElement paragraphElement5 = taggedContent.createParagraphElement();
-paragraphElement5.setActualText("test 5");
-ParagraphElement paragraphElement6 = taggedContent.createParagraphElement();
-paragraphElement6.setActualText("test 6");
-ParagraphElement paragraphElement7 = taggedContent.createParagraphElement();
-paragraphElement7.setActualText("test 7");
+        PositionSettings positionSettings = new PositionSettings();
+        MarginInfo marginInfo = new MarginInfo();
+        marginInfo.setLeft(300);
+        marginInfo.setTop(20);
+        marginInfo.setRight(0);
+        marginInfo.setBottom(0);
+        positionSettings.setMargin(marginInfo);
+        positionSettings.setHorizontalAlignment(HorizontalAlignment.None);
+        positionSettings.setVerticalAlignment(VerticalAlignment.None);
+        positionSettings.setFirstParagraphInColumn(false);
+        positionSettings.setKeptWithNext(false);
+        positionSettings.setInNewPage(false);
+        positionSettings.setInLineParagraph(false);
+        paragraph.adjustPosition(positionSettings);
 
-// PDFドキュメントを保存
-document.save( dataDir + "PDFwithTaggedText.pdf");
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 既存の PDF を自動タグ付けで PDF/UA に変換する
+
+既存の PDF を PDF/UA に変換し、変換中に自動的にタグ付けする必要がある場合にこのアプローチを使用します。
+
+1. 元の PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 作成 [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) 自動タグ付けを有効にしてください。
+1. 変換を実行し、出力ドキュメントを保存してください。
+
+```java
+public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outputFile, Path logFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfFormatConversionOptions options = new PdfFormatConversionOptions(
+                logFile.toString(), PdfFormat.PDF_UA_1, ConvertErrorAction.Delete);
+
+        AutoTaggingSettings autoTaggingSettings = new AutoTaggingSettings();
+        autoTaggingSettings.setEnableAutoTagging(true);
+        autoTaggingSettings.setHeadingRecognitionStrategy(HeadingRecognitionStrategy.Auto);
+        options.setAutoTaggingSettings(autoTaggingSettings);
+
+        document.convert(options);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## アクセシブルなフォームフィールドを含むタグ付きPDFの作成
+
+この例では、署名フォームフィールドにタグを付けて、論理構造ツリーの一部になるようにします。
+
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、フォームフィールドを含むページを追加してください。
+1. ドキュメントのフォーム コレクションにフォーム フィールドを追加してください。
+1. タグ付けされたフォーム構造要素を作成し、フィールドに関連付けて、ドキュメントを保存してください。
+
+```java
+public static void createPdfWithTaggedFormField(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        ITaggedContent taggedContent = document.getTaggedContent();
+        StructureElement rootElement = taggedContent.getRootElement();
+
+        SignatureField signatureField = new SignatureField(page, new Rectangle(50, 50, 100, 100, true));
+        signatureField.setPartialName("Signature1");
+        signatureField.setAlternateName("signature 1");
+
+        Form formFields = document.getForm();
+        formFields.add(signatureField);
+
+        FormElement form = taggedContent.createFormElement();
+        form.setAlternativeText("form 1");
+        form.tag(signatureField);
+        rootElement.appendChild(form, true);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## タグ付けされた PDF を TOC ページ付きで作成する
+
+タグ付きPDFに基本的な目次ページを文書の見出しにリンクさせる必要がある場合は、この例を使用してください。
+
+1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、TOC ページを追加してください。
+1. 作成 [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) そして、目次に表示されるべきヘッダーです。
+1. 目次エントリを見出しにリンクし、ドキュメントを保存します。
+
+```java
+public static void createPdfWithTocPage(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+
+        TOCElement tocElement = content.createTOCElement();
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 高度なタグ付きPDFを作成し、TOCページの追加
+
+この例は、リンクされたページタイトル、入れ子になったリスト項目、および複数の見出しレベルを持つ、より複雑なタグ付けされた TOC を構築します。
+
+1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、可視的なタイトルを持つTOCページを作成してください。
+1. TOC構造を作成し、TOCのタイトルとエントリを見出しやリスト項目にリンクし、関連するコンテンツ要素を追加してください。
+1. 高度な目次構造を使用して最終文書を保存してください。
+
+```java
+public static void createPdfWithTocPageAdvanced(Path outputFile) {
+    try (Document document = new Document()) {
+        ITaggedContent content = document.getTaggedContent();
+        StructureElement rootElement = content.getRootElement();
+        content.setLanguage("en-US");
+
+        Page tocPage = document.getPages().add();
+        tocPage.setTocInfo(new TocInfo());
+        tocPage.getTocInfo().setTitle(new TextFragment("Table of Contents"));
+
+        TOCElement tocElement = content.createTOCElement();
+        HeaderElement headerForTocPageTitle = content.createHeaderElement(1);
+        tocElement.linkTocPageTitleToHeaderElement(tocPage, headerForTocPageTitle);
+
+        rootElement.appendChild(headerForTocPageTitle, true);
+        rootElement.appendChild(tocElement, true);
+
+        document.getPages().add();
+
+        HeaderElement header = content.createHeaderElement(1);
+        header.setText("1. Header");
+        rootElement.appendChild(header, true);
+
+        TOCIElement toci = content.createTOCIElement();
+        tocElement.appendChild(toci, true);
+        header.addEntryToTocPage(tocPage, toci);
+        toci.addRef(header);
+
+        ListElement listElement = content.createListElement();
+        for (int i = 1; i < 4; i++) {
+            ListLIElement li = content.createListLIElement();
+            listElement.appendChild(li, true);
+
+            HeaderElement subHeader = content.createHeaderElement(2);
+            subHeader.getStructureTextState().setFontSize(Nullable.of(14.0f));
+            subHeader.setLanguage("en-US");
+            subHeader.setText("1." + i + " subheader ");
+            subHeader.addEntryToTocPage(tocPage, li);
+            li.addRef(subHeader);
+
+            ParagraphElement p = content.createParagraphElement();
+            p.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+            p.setLanguage("en-US");
+
+            rootElement.appendChild(subHeader, true);
+            rootElement.appendChild(p, true);
+        }
+        toci.appendChild(listElement, true);
+
+        HeaderElement header2 = content.createHeaderElement(1);
+        header2.setText("2. Header");
+        rootElement.appendChild(header2, true);
+
+        TOCIElement toci2 = content.createTOCIElement();
+        tocElement.appendChild(toci2, true);
+        header2.addEntryToTocPage(tocPage, toci2);
+        toci2.addRef(header2);
+
+        document.save(outputFile.toString());
+    }
+}
 ```

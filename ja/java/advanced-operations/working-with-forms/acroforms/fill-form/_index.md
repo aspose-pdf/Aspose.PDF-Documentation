@@ -1,52 +1,44 @@
 ---
-title: AcroFormsを埋める
-linktitle: AcroFormsを埋める
+title: AcroForm に入力 - Java で PDF フォームに入力
+linktitle: AcroForm に入力
 type: docs
 weight: 20
 url: /ja/java/fill-form/
-description: このセクションでは、Aspose.PDF for Javaを使用してPDFドキュメントのフォームフィールドを埋める方法を説明します。
-lastmod: "2021-06-05"
+description: AcroForm フィールドを PDF ドキュメントに入力する（Aspose.PDF for Java を使用）
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java で PDF ファイルの AcroForm フィールドに入力
+Abstract: この記事では、Aspose.PDF for Java を使用して AcroForm フィールドに入力する方法を説明します。サンプルでは、Form ファサードを介して PDF をロードし、フィールド名を値マップと照合し、一致するフィールドを更新し、完成したドキュメントを保存します。
 ---
+その `Form` facadeは、既存のAcroFormのフィールド入力を自動化するために使用できます。
 
-PDFドキュメントは素晴らしく、フォームを作成するための好ましいファイルタイプです。
+## AcroForm フィールドに新しい値を入力する
 
-Aspose.PDF for Javaを使用すると、フォームフィールドを埋めることができ、DocumentオブジェクトのFormコレクションからフィールドを取得できます。
-
-次の例を見て、このタスクを解決する方法を見てみましょう：
+1. PDF フォームドキュメントを開く [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade。
+1. Form フィールドを反復処理し、提供された値で一致するエントリを更新してください。
+1. 更新された PDF ドキュメントを保存してください。
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // ドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // フィールドを作成する
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Text Box");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // フィールドをドキュメントに追加する
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // 変更されたPDFを保存する
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```

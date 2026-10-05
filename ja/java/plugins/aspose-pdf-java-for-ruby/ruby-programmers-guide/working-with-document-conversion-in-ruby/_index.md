@@ -1,12 +1,13 @@
 ---
-title: Rubyでのドキュメント変換の作業
+title: Rubyでのドキュメント変換作業
+linktitle: Rubyでのドキュメント変換作業
 type: docs
 weight: 40
 url: /ja/java/working-with-document-conversion-in-ruby/
-lastmod: "2021-06-05"
+description: Ruby と Aspose.PDF を使用して PDF ドキュメントを他の形式に変換する方法を探求し、シームレスなファイル変換を実現します。
+lastmod: "2026-10-05"
 ---
-
-このセクションには次のトピックが含まれています：
+このセクションには以下のトピックが含まれます：
 
 - [RubyでHTMLをPDF形式に変換する](/pdf/ja/java/convert-html-to-pdf-format-in-ruby/)
 - [RubyでPDFページを画像に変換する](/pdf/ja/java/convert-pdf-pages-to-images-in-ruby/)

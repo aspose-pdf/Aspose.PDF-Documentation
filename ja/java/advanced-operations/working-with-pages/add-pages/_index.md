@@ -1,104 +1,69 @@
 ---
-title: PDFにページを追加
-linktitle: ページを追加
+title: "Java での PDFページの追加"
+linktitle: ページの追加
 type: docs
 weight: 10
 url: /ja/java/add-pages/
-description: この記事では、PDFファイルの希望する場所にページを挿入（追加）する方法を教えます。Javaライブラリを使用して、PDFファイルからページを移動、削除（削除）する方法を学びます。
-lastmod: "2021-06-05"
+description: JavaでPDFドキュメントにページを追加または挿入する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: JavaでPDFページを追加または挿入する
+Abstract: このドキュメントでは、Aspose.PDF for Java を使用して PDF ファイルにページを追加する方法を説明します。特定の位置に空白ページを挿入すること、ドキュメントの末尾にページを追加すること、別の PDF からページをインポートすることについて解説します。
 ---
+Aspose.PDF for Java を使用すると、空白ページを挿入したり、別のドキュメントからページをインポートしたりできます。
 
-## PDFファイルにページを追加または挿入
+## 特定の位置に空白ページの挿入
 
-Aspose.PDF for Javaを使用すると、ファイル内の任意の場所にPDFドキュメントにページを挿入したり、PDFファイルの末尾にページを追加したりできます。空白ページを挿入したい場所をinsertメソッドに渡す必要があります。このセクションでは、Aspose.PDF for Javaを使用してPDFにページを追加する方法を示します。
+既存の PDF の途中に空白ページを追加する必要がある場合は、このサンプルをご利用ください。
 
-### 希望の場所にPDFファイルに空白ページを挿入
-
-次のコードスニペットは、PDFファイルに空白ページを挿入する方法を示しています。
-
-1. 入力PDFファイルを指定して[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスオブジェクトを作成します。
-
-1. 指定されたインデックスで[PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection)コレクションのInsertメソッドを呼び出します。
-1. Saveメソッドを使用して出力PDFを保存します。
-
-次のコードスニペットは、PDFファイルにページを挿入する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ページコレクション内の対象位置に新しいページを挿入してください。
+1. 更新されたドキュメントを保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleAddPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation() {
-        Document document = new Document();
-
-        // ページを追加
-        document.getPages().add();
-
-        // PDFに空のページを挿入
+public static void insertEmptyPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         document.getPages().insert(2);
-
-        // 更新されたPDFを保存
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
-上記の例では、デフォルトのパラメータで空のページを追加しました。ドキュメント内の他のページと同じサイズにする必要がある場合は、数行のコードを追加する必要があります。
+## 末尾に空白ページの追加
+
+ドキュメントを新しい空白の最終ページで拡張する必要がある場合は、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ページコレクションの末尾に新しいページを追加してください。
+1. 変更された PDF を保存してください。
 
 ```java
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation01() {
-        Document document = new Document();
-
-        // ページを追加
-        Page page1 = document.getPages().add();
-
-        // PDFに空のページを挿入
-        Page page2 = document.getPages().insert(2);
-
-        // ページ1からページパラメータをコピー
-        page2.setArtBox(page1.getArtBox());
-        page2.setBleedBox(page1.getBleedBox());
-        page2.setCropBox(page1.getCropBox());
-        page2.setMediaBox(page1.getMediaBox());
-        page2.setTrimBox(page1.getTrimBox());
-
-        // 更新されたPDFを保存
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().add();
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 別のドキュメントからページの追加
 
-### PDFファイルの最後に空白ページを追加する
+PDF を 1 つから別の PDF にページをインポートしたいときは、この例を使用してください。
 
-時々、ドキュメントが空白ページで終わることを確認したい場合があります。このトピックでは、PDFドキュメントの最後に空白ページを挿入する方法を説明します。
-
-PDFファイルの最後に空白ページを挿入するには：
-
-1. 入力PDFファイルで[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスオブジェクトを作成します。
-1. パラメータなしで[PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection)コレクションのAddメソッドを呼び出します。
-1. Saveメソッドを使用して出力PDFを保存します。
-
-次のコードスニペットは、PDFファイルの最後に空白ページを挿入する方法を示しています。
+1. 宛先を作成します [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) そして、ソースドキュメントを開いてください。
+1. 必要な宛先コンテンツを追加し、ソース PDF から対象ページをインポートしてください。
+1. 結果のドキュメントを保存してください。
 
 ```java
-public static void AddAnEmptyPageAtTheEndOfAPDFFile() {
-
-        Document document = new Document();
-        // ページを追加
-        document.getPages().add();
-
-        // PDFファイルの最後に空白ページを挿入
-        document.getPages().add();
-
-        // 更新されたPDFを保存
-        document.save(_dataDir + "InsertEmptyPageAtEnd_out.pdf");
+public static void addPageFromAnotherDocument(Path inputFile, Path outputFile) {
+    try (Document document = new Document();
+         Document anotherDocument = new Document(inputFile.toString())) {
+        document.getPages().add().getParagraphs().add(new TextFragment("This is first page!"));
+        document.getPages().add(anotherDocument.getPages().get_Item(1));
+        document.save(outputFile.toString());
     }
-
 }
 ```

@@ -1,141 +1,143 @@
 ---
-title: ブックマークの取得、更新、および展開
-linktitle: ブックマークの取得、更新、および展開
+title: JavaでPDFブックマークを取得、更新、展開する
+linktitle: ブックマークを取得、更新、展開する
 type: docs
 weight: 20
 url: /ja/java/get-update-and-expand-bookmark/
-description: この記事では、PDFファイルでブックマークを使用する方法について説明します。Javaライブラリを使用して、PDFファイルからブックマークを取得し、ブックマークのページ番号を取得し、PDFドキュメント内のブックマークを更新し、ドキュメントを表示するときにブックマークを展開することができます。
-lastmod: "2021-06-05"
+description: Javaを使用してPDFドキュメント内のブックマークを取得、更新、展開する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: JavaでPDFファイルのブックマークプロパティを検査し、アウトラインを展開する
+Abstract: この記事では、Aspose.PDF for Java を使用してブックマークを読み取り、更新し、展開する方法を説明します。アウトライン項目を反復処理し、PdfBookmarkEditor でブックマークのページ番号を抽出し、子ブックマークを読み取り、ブックマークのタイトルとスタイルを更新し、文書が表示されるときにアウトラインが開くように強制する方法をカバーしています。
 ---
+Aspose.PDF for Java は、ブックマークをドキュメントアウトラインモデルと `PdfBookmarkEditor` ファサード。
 
-## ブックマークを取得する
+## ブックマークのプロパティの取得
 
-[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) オブジェクトの [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) コレクションには、PDFファイルのすべてのブックマークが含まれています。この記事では、PDFファイルからブックマークを取得する方法と、特定のブックマークがどのページにあるかを取得する方法について説明します。
+ドキュメントのアウトラインでトップレベルのブックマークリストを調査する必要がある場合にこの例を使用してください。
 
-ブックマークを取得するには、[OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) コレクションをループして、OutlineItemCollection内の各ブックマークを取得します。
- The OutlineItemCollectionは、すべてのブックマークの属性へのアクセスを提供します。次のコードスニペットは、PDFファイルからブックマークを取得する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. アウトライン コレクションを反復処理してください。
+1. ブックマークのタイトル、スタイル、色の値を読み取り、出力してください。
 
 ```java
-    public static void GettingBookmarks() {
-        // ドキュメントを開く
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // すべてのブックマークをループする
-        for (OutlineItemCollection outlineItem : (Iterable<OutlineItemCollection>) pdfDocument.getOutlines()) {
-            System.out.println("タイトル :- " + outlineItem.getTitle());
-            System.out.println("イタリックか :- " + outlineItem.getItalic());
-            System.out.println("ボールドか :- " + outlineItem.getBold());
-            System.out.println("色 :- " + outlineItem.getColor());
+public static void getBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
         }
     }
+}
 ```
 
-## ブックマークのページ番号を取得する
+## ブックマークのページ番号の取得
 
-ブックマークを追加した後に、Bookmarkオブジェクトに関連付けられた目的地のPageNumberを取得することで、それがどのページにあるかを知ることができます。
+この例では使用します `PdfBookmarkEditor` ブックマークのタイトル、レベル、ページ番号、アクションを抽出するために。
+
+1. ソース PDF をバインドする [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/)。
+1. ブックマークコレクションを抽出し、それをイテレートしてください。
+1. 各ブックマークのレベル、タイトル、ページ番号、およびアクション情報を出力してください。
 
 ```java
-    public static void GettingBookmarksPageNumber() {
-        // PdfBookmarkEditorを作成
-        PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-        // PDFファイルを開く
-        bookmarkEditor.bindPdf(GetDataDir() + "UpdateBookmarks.pdf");
-        // ブックマークを抽出
-        Bookmarks bookmarks = bookmarkEditor.extractBookmarks();
-        for (Bookmark bookmark : (Iterable<Bookmark>) bookmarks) {
-            String strLevelSeprator = "";
-            for (int i = 1; i < bookmark.getLevel(); i++) {
-                strLevelSeprator += "---- ";
+public static void getBookmarkPageNumber(Path inputFile) {
+    PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
+    try {
+        bookmarkEditor.bindPdf(inputFile.toString());
+        for (Bookmark bookmark : bookmarkEditor.extractBookmarks()) {
+            String levelSeparator = "";
+            for (int i = 0; i < bookmark.getLevel(); i++) {
+                levelSeparator += "----";
             }
-            System.out.println("タイトル :- " + strLevelSeprator + bookmark.getTitle());
-            System.out.println("ページ番号 :- " + strLevelSeprator + bookmark.getPageNumber());
-            System.out.println("ページアクション :- " + strLevelSeprator + bookmark.getAction());
+
+            System.out.println(levelSeparator + " Title: " + bookmark.getTitle());
+            System.out.println(levelSeparator + " Page Number: " + bookmark.getPageNumber());
+            System.out.println(levelSeparator + " Page Action: " + bookmark.getAction());
+        }
+    } finally {
+        bookmarkEditor.close();
+    }
+}
+```
+
+## 子ブックマークの取得
+
+トップレベルとネストされたアウトライン項目の両方を検査する必要がある場合は、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. トップレベルのアウトラインを反復処理し、そのプロパティを出力してください。
+1. 子ブックマークを検出し、次にそれらを反復処理してプロパティを出力します。
+
+```java
+public static void getChildBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
+            int count = outlineItem.size();
+            if (count > 0) {
+                System.out.println("Child Bookmarks");
+                for (int j = 1; j <= outlineItem.size(); j++) {
+                    OutlineItemCollection childOutlineItem = outlineItem.get_Item(j);
+                    System.out.println(childOutlineItem.getTitle());
+                    System.out.println(childOutlineItem.getItalic());
+                    System.out.println(childOutlineItem.getBold());
+                    System.out.println(childOutlineItem.getColor());
+                }
+            }
         }
     }
+}
 ```
 
-## PDFドキュメントのブックマークを更新する
+## ブックマークの更新
 
-PDFファイルのブックマークを更新するには、まずDocumentオブジェクトのOutlineColletionコレクションからブックマークのインデックスを指定して特定のブックマークを取得します。一度ブックマークを[OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection)オブジェクトに取得したら、そのプロパティを更新し、Saveメソッドを使用して更新されたPDFファイルを保存できます。以下のコードスニペットは、PDFドキュメントのブックマークを更新する方法を示しています。
+既存のブックマークタイトルとスタイルを変更する必要がある場合は、この例を使用します。
 
-```java
-    public static void UpdateBookmarksInPDFDocument() {
-        // ドキュメントを開く
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // ブックマークオブジェクトを取得する
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-
-        // ブックマークオブジェクトを更新する
-        pdfOutline.setTitle("Updated Outline");
-        pdfOutline.setItalic(true);
-        pdfOutline.setBold(true);
-        // ターゲットページを2に設定
-        pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // 出力を保存
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
-    }
-```
-
-
-## PDFドキュメント内の子ブックマークを更新する
-
-子ブックマークを更新するには：
-
-1. 最初に親ブックマークを取得し、適切なインデックス値を使用して子ブックマークを取得することにより、更新したい子ブックマークをPDFファイルから取得します。
-1. Saveメソッドを使用して更新されたPDFファイルを保存します。
-
-{{% alert color="primary" %}}
-
-ブックマークのインデックスを指定してDocumentオブジェクトのOutlineCollectionコレクションからブックマークを取得し、この親ブックマークのインデックスを指定して子ブックマークを取得します。
-
-{{% /alert %}}
-
-以下のコードスニペットは、PDFドキュメント内の子ブックマークを更新する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ターゲットのアウトライン項目とその子ブックマークにアクセスします。
+1. ブックマークのプロパティを更新し、ドキュメントを保存してください。
 
 ```java
-    public static void UpdateChildBookmarksInPDFDocument() {
-        // ドキュメントを開く
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // ブックマークオブジェクトを取得
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-        // 子ブックマークオブジェクトを取得
-        OutlineItemCollection childOutline = pdfOutline.get_Item(1);
-
-        // ブックマークオブジェクトを更新
+public static void updateBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection outline = document.getOutlines().get_Item(1);
+        OutlineItemCollection childOutline = outline.get_Item(1);
         childOutline.setTitle("Updated Outline");
         childOutline.setItalic(true);
         childOutline.setBold(true);
-        // ターゲットページを2に設定
-        childOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
 
-        // 出力を保存
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## ブックマークをデフォルトで展開する
 
-## ドキュメントを表示する際のブックマークの展開
+ドキュメントが表示されたときにブックマークパネルが開き、アウトライン項目が展開された状態で表示されるべき場合に、この例を使用します。
 
-ブックマークは、ドキュメントオブジェクトの [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) コレクションに保持されており、これは [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) コレクション内にあります。しかし、PDFファイルを表示する際にすべてのブックマークを展開した状態にする必要があるかもしれません。
-
-この要件を達成するために、各アウトライン/ブックマーク項目のオープンステータスをオープンとして設定することができます。以下のコードスニペットは、PDFドキュメント内の各ブックマークのオープンステータスを展開として設定する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ページモードをアウトライン使用に設定し、各アウトライン項目を開いた状態にマークしてください。
+1. 更新されたドキュメントを保存してください。
 
 ```java
-    public static void ExpandedBookmarks() {    
-        Document doc = new Document(GetDataDir()+"UpdateBookmarks.pdf");
-        // ページ表示モードを設定、例えばサムネイルの表示、全画面表示、添付ファイルパネルの表示
-        doc.setPageMode(PageMode.UseOutlines);
-        // PDFファイル内のブックマークの総数を出力
-        System.out.println(doc.getOutlines().size());
-        // PDFファイルのアウトラインコレクション内の各アウトライン項目を通過
-        for (int counter = 1; counter <= doc.getOutlines().size(); counter++) {
-            // アウトライン項目のオープンステータスを設定
-            doc.getOutlines().get_Item(counter).setOpen(true);
+public static void expandedBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setPageMode(PageMode.UseOutlines);
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection item = document.getOutlines().get_Item(i);
+            item.setOpen(true);
         }
-        // PDFファイルを保存
-        doc.save(_dataDir+"Bookmarks_Expanded.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```

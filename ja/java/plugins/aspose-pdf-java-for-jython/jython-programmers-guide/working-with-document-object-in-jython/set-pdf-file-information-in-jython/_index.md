@@ -1,19 +1,20 @@
 ---
-title: JythonでPDFファイル情報を設定する
+title: "Jython での PDF ファイル情報の設定"
+linktitle: "Jython での PDF ファイル情報の設定"
 type: docs
 weight: 70
 url: /ja/java/set-pdf-file-information-in-jython/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して Jython で PDF ドキュメントのメタデータやその他のファイル プロパティを設定する方法を学びます。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - PDF ファイル情報の設定
 
-## Aspose.PDF - PDFファイル情報の設定
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。こちらにサンプルコードがあります。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認するには、以下のサンプルコードを参照してください。
-
-コードスニペットの言語パラメータが無効です。
+マクロ 'code' のレンダリングエラー: パラメーター lang に無効な値が指定されました
 
 ## 実行中のコードをダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから実行中のコードをダウンロードできます：
+以下に記載されたソーシャルコーディングサイトから実行コードをダウンロードしてください：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

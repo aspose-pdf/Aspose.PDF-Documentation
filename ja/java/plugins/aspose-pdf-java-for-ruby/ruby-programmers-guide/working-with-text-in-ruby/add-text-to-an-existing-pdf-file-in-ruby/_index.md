@@ -1,32 +1,32 @@
 ---
-title: 既存のPDFファイルにテキストを追加する (Ruby)
+title: "Ruby での 既存のPDFファイルへのテキストの追加"
+linktitle: "Ruby での 既存のPDFファイルへのテキストの追加"
 type: docs
 weight: 20
 url: /ja/java/add-text-to-an-existing-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して Ruby で既存の PDF ドキュメントにテキストを追加し、PDF コンテンツを強化または更新する方法を学びます。
+lastmod: "2026-10-05"
 ---
-
 ## Aspose.PDF - テキストの追加
 
-**Aspose.PDF Java for Ruby**を使用してPdfドキュメントにテキスト文字列を追加するには、単に**AddText**モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントにテキスト文字列を追加するには、単に **AddText** モジュールを呼び出します。
 
-Rubyコード
+Ruby コード
 
 ```java
-
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Documentオブジェクトをインスタンス化
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# 特定のページを取得
+# get particular page
 
 pdf_page = doc.getPages().get_Item(1)
 
-# テキストフラグメントを作成
+# create text fragment
 
 text_fragment = Rjb::import('com.aspose.pdf.TextFragment').new("main text")
 
@@ -36,7 +36,7 @@ font_repository = Rjb::import('com.aspose.pdf.FontRepository')
 
 color = Rjb::import('com.aspose.pdf.Color')
 
-# テキストプロパティを設定
+# set text properties
 
 text_fragment.getTextState().setFont(font_repository.findFont("Verdana"))
 
@@ -46,24 +46,23 @@ text_fragment.getTextState().setFontSize(14)
 
 #text_fragment.getTextState().setBackgroundColor(color.GRAY)
 
-# TextBuilderオブジェクトを作成
+# create TextBuilder object
 
 text_builder = Rjb::import('com.aspose.pdf.TextBuilder').new(pdf_page)
 
-# PDFページにテキストフラグメントを追加
+# append the text fragment to the PDF page
 
 text_builder.appendText(text_fragment)
 
-# PDFファイルを保存
+# Save PDF file
 
 doc.save(data_dir + "Text_Added.pdf")
 
-puts "テキストが正常に追加されました"
+puts "Text added successfully"
 ```
 
+## 実行コードをダウンロード
 
-## Download Running Code
-
-以下のいずれかのソーシャルコーディングサイトから **Add Text (Aspose.PDF)** をダウンロードしてください:
+DownloadВ **Add Text (Aspose.PDF)**В から、以下に記載されたソーシャルコーディングサイトのいずれかへ:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addtext.rb)

@@ -1,19 +1,20 @@
 ---
-title: Jythonでページ数を取得
+title: "Jython での ページ数の取得"
+linktitle: "Jython での ページ数の取得"
 type: docs
 weight: 30
 url: /ja/java/get-number-of-pages-in-jython/
-lastmod: "2021-06-05"
+description: Jython と Aspose.PDF を使用したドキュメント管理において、PDF ドキュメントのページ数を取得する方法を学びます。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - ページ数の取得
 
-## Aspose.PDF - ページ数を取得
+**Aspose.PDF Java for Jython** を使用してファイル形式を確認します。サンプルコードをご覧ください。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認します。ここでサンプルコードを見ることができます。
+マクロ 'code' のレンダリングエラー : パラメーター lang に対して無効な値が指定されました
 
-マクロ 'code' のレンダリングエラー: パラメータ lang に指定された値が無効です
+## 実行コードをダウンロード
 
-## 実行コードのダウンロード
-
-以下のソーシャルコーディングサイトから実行コードをダウンロードできます：
+以下に記載されたソーシャルコーディングサイトのいずれかから実行中のコードをダウンロードしてください：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

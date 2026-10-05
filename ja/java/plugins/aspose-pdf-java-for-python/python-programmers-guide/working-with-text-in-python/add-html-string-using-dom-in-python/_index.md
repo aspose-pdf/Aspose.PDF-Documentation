@@ -1,18 +1,19 @@
 ---
-title: PythonでDOMを使用してHTML文字列を追加
+title: "Python での DOMを使用したHTML文字列の追加"
+linktitle: "Python での DOMを使用したHTML文字列の追加"
 type: docs
 weight: 10
 url: /ja/java/add-html-string-using-dom-in-python/
-lastmod: "2021-06-05"
-description: PythonでDOMを使用してHTML文字列を追加する方法をPDFファイル形式ライブラリで説明します
+lastmod: "2026-10-05"
+description: PythonとPDFファイル形式ライブラリを使用して、DOMにHTML文字列を追加する方法を説明します
 ---
+## Pythonを使用したPDF DOMにHTML文字列の追加
 
-## PythonでPDF DOMにHTML文字列を追加
-**Aspose.PDF Java for Python**を使用してPdf文書にHTML文字列を追加するには、**AddHtml**モジュールを呼び出します。
+**Aspose.PDF Java for Python** を使用してPDFドキュメントにHTML文字列を追加するには、単に **AddHtml** モジュールを呼び出します。
 
 ```python
 
-# Documentオブジェクトをインスタンス化
+# Instantiate Document object
 doc=self.Document()
 page=doc.getPages().add()
 
@@ -22,21 +23,20 @@ margin=self.MarginInfo()
 #margin.setBottom(10)
 #margin.setTop(200)
 
-# マージン情報を設定
+# Set margin information
 title.setMargin(margin)
 
-# ページの段落コレクションにHTMLフラグメントを追加
+# Add HTML Fragment to paragraphs collection of page
 page.getParagraphs().add(title)
 
-# PDFファイルを保存
+# Save PDF file
 doc.save(self.dataDir + 'html.output.pdf')
 
-print "HTMLが正常に追加されました"
+print "HTML added successfully"
 ```
 
 **実行コードをダウンロード**
 
-以下のいずれかのソーシャルコーディングサイトから**Add HTML (Aspose.PDF)**をダウンロードしてください:
-
+ダウンロードВ **HTML を追加 (Aspose.PDF)**В からV 以下に記載されたソーシャルコーディングサイトのいずれかから:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddHtml/AddHtml.py)

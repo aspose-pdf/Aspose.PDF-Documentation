@@ -1,47 +1,48 @@
 ---
-title: PHPでDOMを使用してHTML文字列を追加する
+title: "PHP での DOMを使用したHTML文字列の追加"
+linktitle: "PHP での DOMを使用したHTML文字列の追加"
 type: docs
 weight: 10
 url: /ja/java/add-html-string-using-dom-in-php/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用したリッチな文書作成において、PHPの DOM を使って PDF ドキュメントに HTML コンテンツを追加する方法を探ります。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - HTML の追加
 
-## Aspose.PDF - HTMLを追加
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントに HTML 文字列を追加するには、単に **AddHtml** モジュールを呼び出すだけです。
 
-**Aspose.PDF Java for PHP**を使用してPDFドキュメントにHTML文字列を追加するには、単に**AddHtml**モジュールを呼び出します。
-
-PHPコード
+PHP コード
 
 ```php
-# Documentオブジェクトをインスタンス化
+# Instantiate Document object
 $doc = new Document();
 
-# PDFファイルのページコレクションにページを追加
+# Add a page to pages collection of PDF file
 $page = $doc->getPages()->add();
 
-# HTML内容でHtmlFragmentをインスタンス化
+# Instantiate HtmlFragment with HTML contents
 $title = new HtmlFragment("<fontsize=10><b><i>Table</i></b></fontsize>");
 
-# marginの詳細のためにMarginInfoを設定
+# set MarginInfo for margin details
 $margin = new MarginInfo();
 $margin->setBottom(10);
 $margin->setTop(200);
 
-# margin情報を設定
+# Set margin information
 $title->setMargin($margin);
 
-# ページの段落コレクションにHTMLフラグメントを追加
+# Add HTML Fragment to paragraphs collection of page
 $page->getParagraphs()->add($title);
 
-# PDFファイルを保存
+# Save PDF file
 $doc->save($dataDir . "html.output.pdf");
 
-print "HTMLが正常に追加されました" . PHP_EOL;
+print "HTML added successfully" . PHP_EOL;
 
 ```
 
-**実行コードのダウンロード**
+**実行中のコードをダウンロード**
 
-以下のいずれかのソーシャルコーディングサイトから**Add HTML (Aspose.PDF)**をダウンロードします：
+ダウンロードВ **Add HTML (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれか:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddHtml.php)

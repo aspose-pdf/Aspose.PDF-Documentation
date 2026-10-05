@@ -1,269 +1,241 @@
 ---
-title: Actionsを使用する
-linktitle: Actions
+title: "Java での PDFアクションの操作"
+linktitle: アクション
 type: docs
 weight: 20
 url: /ja/java/actions/
-description: このセクションでは、Javaを使用してドキュメントやフォームフィールドにアクションをプログラムで追加する方法を説明します。PDFファイルにハイパーリンクを追加、作成、取得する方法を学びます。
-lastmod: "2021-06-05"
+description: Java を使用して PDF ファイルのドキュメント、ページ、フォーム アクションを追加、更新、削除する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: Java で PDF ファイルにドキュメント、ページ、フォーム アクションを追加します。
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF 文書のアクションを操作する方法を説明します。印刷やページ ナビゲーション用の名前付きアクション、フォームフィールドの非表示、フォームの送信、JavaScript 起動アクションの割り当て、ページのオープンおよびクローズアクションの追加または削除についてカバーしています。
 ---
+Aspose.PDF for Java は、ボタン、ドキュメント、ページにアクションを割り当てて、PDF ファイルをインタラクティブにします。
 
-PDFファイルには埋め込みのファイル添付が含まれることがあり、これらのドキュメントへのハイパーリンクが必要になることがあります。親ドキュメントに添付ファイルを指すリンクを作成することで、メインのPDFドキュメントからPDF添付ファイルに読者を誘導できます。
+## 名前付き印刷アクションの追加
 
-## PDFファイルにハイパーリンクを追加する
+ページ上のボタンが印刷コマンドをトリガーする場合は、この例を使用してください。
 
-PDFファイルにハイパーリンクを追加することができます。これにより、読者がPDFの別の部分や外部コンテンツに移動できるようになります。
-
-PDFドキュメントにウェブハイパーリンクを追加するには：
-
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) クラスオブジェクトを作成します。
-
-1. リンクを追加したい[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)クラスを取得します。
-1. [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)オブジェクトをPageオブジェクトと[Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle)オブジェクトを使用して作成します。Rectangleオブジェクトは、リンクを追加するページ上の位置を指定するために使用されます。
-1. getActionメソッドを[GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToURIAction)オブジェクトに設定し、リモートURIの位置を指定します。
-1. ハイパーリンクテキストを表示するには、[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)オブジェクトが配置されているのと同様の位置にテキスト文字列を追加します。
-1. フリーテキストを追加するには：
-
-- [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation)オブジェクトをインスタンス化します。
- それはまた、PageとRectangleオブジェクトを引数として受け入れるので、LinkAnnotationコンストラクタに対して指定されたのと同じ値を提供することが可能です。
-- [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation)オブジェクトのContentsプロパティを使用して、出力PDFに表示される文字列を指定します。
-- 必要に応じて、[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)とFreeTextAnnotationオブジェクトの両方の枠線の幅を0に設定し、PDFドキュメントに表示されないようにします。
-- 一旦、[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)と[FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/FreeTextAnnotation)オブジェクトが定義されたら、これらのリンクを[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)オブジェクトのAnnotationsコレクションに追加します。
-
-- 最後に、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトのSaveメソッドを使用して更新されたPDFを保存します。
-以下のコードスニペットは、PDFファイルにハイパーリンクを追加する方法を示しています。
+1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 対象ページを選択してください。
+1. 作成 [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) そして割り当てる [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) 印刷用。
+1. ボタンをフォームに追加して、ドキュメントを保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import java.util.List;
-
-import com.aspose.pdf.*;
-
-public class ExampleActions {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Actions/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Actions";
-        return _dataDir;
-    }
-
-    public static void AddHyperlinkInPDFFile() {
-        // ドキュメントを開く
-        Document document = new Document(GetDataDir() + "AddHyperlink.pdf");
-        // リンクを作成
-        Page page = document.getPages().get_Item(1);
-        // リンク注釈オブジェクトを作成
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 100, 300, 300));
-        // LinkAnnotationの境界オブジェクトを作成
-        Border border = new Border(link);
-        // 境界の幅を0に設定
-        border.setWidth(0);
-        // LinkAnnotationの境界を設定
-        link.setBorder(border);
-        // リンクタイプをリモートURIとして指定
-        link.setAction(new GoToURIAction("www.aspose.com"));
-        // PDFファイルの最初のページの注釈コレクションにリンク注釈を追加
-        page.getAnnotations().add(link);
-
-        // フリーテキスト注釈を作成
-        FreeTextAnnotation textAnnotation = new FreeTextAnnotation(page, new Rectangle(100, 100, 300, 300),
-                new DefaultAppearance(FontRepository.findFont("TimesNewRoman"), 10, java.awt.Color.BLUE));
-
-        // フリーテキストとして追加する文字列
-        textAnnotation.setContents("Asposeウェブサイトへのリンク");
-        // フリーテキスト注釈の境界を設定
-        textAnnotation.setBorder(border);
-        // ドキュメントの最初のページの注釈コレクションにフリーテキスト注釈を追加
-        page.getAnnotations().add(textAnnotation);
-
-        // 更新されたドキュメントを保存
-        document.save(_dataDir + "AddHyperlink_out.pdf");
-
-    }
-```
-
-
-## 同じPDF内のページにハイパーリンクを作成する
-
-Aspose.PDF for Javaは、PDFの作成とその操作に優れた機能を提供します。また、PDFページへのリンクを追加する機能もあり、リンクは別のPDFファイル内のページ、ウェブURL、アプリケーションの起動リンク、さらには同じPDFファイル内のページへのリンクにすることができます。
-
-ローカルハイパーリンクを追加するには、TextFragmentを作成してリンクをTextFragmentに関連付ける必要があります。[TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment)クラスには、LocalHyperlinkインスタンスを関連付けるための[getHyperlink](https://reference.aspose.com/pdf/java/com.aspose.pdf/BaseParagraph#getHyperlink--)というメソッドがあります。以下のコードスニペットは、この要件を達成する手順を示しています。
-
-```java
-public static void CreateHyperlinkToPagesInSamePDF() {
-        // Documentインスタンスを作成
-        Document document = new Document();
-
-        // PDFファイルのページコレクションにページを追加
-        Page page = document.getPages().add();
-
-        // Text Fragmentインスタンスを作成
-        TextFragment text = new TextFragment("link page number test to page 2");
-
-        // ローカルハイパーリンクインスタンスを作成
-        LocalHyperlink link = new LocalHyperlink();
-
-        // リンクインスタンスのターゲットページを設定
-        link.setTargetPageNumber(2);
-
-        // TextFragmentにハイパーリンクを設定
-        text.setHyperlink(link);
-
-        // テキストをPageの段落コレクションに追加
-        page.getParagraphs().add(text);
-
-        // 新しいTextFragmentインスタンスを作成
-        text = new TextFragment("link page number test to page 1");
-
-        // TextFragmentは新しいページに追加する必要があります
-        text.setInNewPage(true);
-
-        // 別のローカルハイパーリンクインスタンスを作成
-        link = new LocalHyperlink();
-
-        // 2番目のハイパーリンクのターゲットページを設定
-        link.setTargetPageNumber(1);
-
-        // 2番目のTextFragmentにリンクを設定
-        text.setHyperlink(link);
-
-        // テキストをpageオブジェクトの段落コレクションに追加
-        page.getParagraphs().add(text);
-
-        // 更新されたドキュメントを保存
-        document.save(GetDataDir() + "CreateLocalHyperlink_out.pdf");
-    }
-```
-
-
-## PDFハイパーリンクの宛先（URL）の取得
-
-リンクはPDFファイル内で注釈として表され、追加、更新、削除が可能です。Aspose.PDF for Javaは、PDFファイル内のハイパーリンクの宛先（URL）を取得することもサポートしています。
-
-リンクのURLを取得するには：
-
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) オブジェクトを作成します。
-1. リンクを抽出したい [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) を取得します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) クラスを使用して、指定されたページからすべての [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) オブジェクトを抽出します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) オブジェクトを [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) オブジェクトのAcceptメソッドに渡します。
-
-1. [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector) オブジェクトの Selected プロパティを使用して、選択されたリンク注釈をすべて IList オブジェクトに取得します。
-1. 最後に、LinkAnnotation アクションを GoToURIAction として抽出します。
-
-次のコードスニペットは、PDF ファイルからハイパーリンクの宛先 (URL) を取得する方法を示しています。
-
-```java
-    public static void GetPDFHyperlinkDestination() {
-        Document document = new Document(GetDataDir() + "Aspose-app-list.pdf");
-        // アクションを抽出
-        Page page = document.getPages().get_Item(1);
-        AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-        page.accept(selector);
-        List<Annotation> list = selector.getSelected();
-        // リスト内の個々のアイテムを反復処理
-        if (list.size() == 0)
-            System.out.println("ハイパーリンクが見つかりません..");
-        else {
-            // すべてのブックマークをループ処理
-            for (Annotation annot : list) {
-                LinkAnnotation la = (annot instanceof LinkAnnotation ? (LinkAnnotation) annot : null);
-                if (la != null) {
-                    // 宛先 URL を出力
-                    System.out.println("宛先: " + ((GoToURIAction) la.getAction()).getURI());
-                }
-            }
-        } // end else
-    }
-```
-
-
-## ハイパーリンクテキストを取得する
-
-ハイパーリンクには2つの部分があります。文書に表示されるテキストと、目的地のURLです。場合によっては、必要なのはURLではなくテキストです。
-
-PDFファイル内のテキストと注釈/アクションは、異なるエンティティによって表されます。ページ上のテキストは単なる単語と文字のセットですが、注釈はハイパーリンクに内在するような対話性をもたらします。
-
-URLコンテンツを見つけるには、注釈とテキストの両方を操作する必要があります。[Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/Annotation) オブジェクト自体にはテキストはありませんが、ページ上のテキストの下に位置しています。したがって、テキストを取得するには、AnnotationがURLの境界を提供し、TextオブジェクトがURLの内容を提供します。以下のコードスニペットをご覧ください。
-
-```java
-    public static void GetHyperlinkText() {
-        Document document = new Document(GetDataDir() + "Aspose-app-list.pdf");
-        // アクションを抽出
+public static void addNamedActionPrint(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
 
-        for (Annotation annot : page.getAnnotations()) {
-            LinkAnnotation la = (annot instanceof LinkAnnotation ? (LinkAnnotation) annot : null);
-            if (la != null) {
-                // 各リンク注釈のURLを出力
-                System.out.println("URI: " + ((GoToURIAction) la.getAction()).getURI());
-                TextAbsorber absorber = new TextAbsorber();
-                absorber.getTextSearchOptions().setLimitToPageBounds(true);
-                absorber.getTextSearchOptions().setRectangle(annot.getRect());
-                page.accept(absorber);
-                String extractedText = absorber.getText();
-                // ハイパーリンクに関連付けられたテキストを出力
-                System.out.println(extractedText);
+        Rectangle rect = new Rectangle(10, 10, 100, 40, true);
+        ButtonField printButton = new ButtonField(page, rect);
+        printButton.setPartialName("printButton");
+        printButton.setValue("Print");
+        printButton.getAnnotationActions().setOnReleaseMouseBtn(
+                new NamedAction(PredefinedAction.File_Print));
+
+        Border border = new Border(printButton);
+        border.setWidth(1);
+        printButton.setBorder(border);
+
+        document.getForm().add(printButton, 1);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 隠しアクションの追加
+
+ボタンがチェックボックスなどのフォーム フィールドのセットを表示または非表示にする必要がある場合は、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、対象フォームウィジェットを収集してください。
+1. ボタンを作成し、割り当てる [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) それへ。
+1. ボタンをフォームに追加し、更新されたドキュメントを保存してください。
+
+```java
+public static void addNamedActionHide(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        List<WidgetAnnotation> checkboxes = new ArrayList<>();
+        for (WidgetAnnotation field : document.getForm()) {
+            if (field instanceof CheckboxField) {
+                checkboxes.add(field);
             }
         }
+
+        Rectangle rect = new Rectangle(10, 410, 140, 440, true);
+        ButtonField hideButton = new ButtonField(document.getPages().get_Item(1), rect);
+        hideButton.setPartialName("HideButton");
+        hideButton.setValue("Hide Checkboxes");
+        hideButton.getAnnotationActions().setOnReleaseMouseBtn(
+                new HideAction(checkboxes.toArray(new WidgetAnnotation[0]), true));
+
+        document.getForm().add(hideButton, 1);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## ページナビゲーションボタンの追加
 
-## PDFファイルからドキュメントオープンアクションを削除する
+この例では、ドキュメント全体に最初、前へ、次へ、最後のページボタンを作成します。
 
-[ドキュメントを表示する際にPDFページを指定する方法](#how-to-specify-pdf-page-when-viewing-document)では、ドキュメントを最初のページ以外で開くように指示する方法について説明しました。複数のドキュメントを結合する際に、1つ以上にGoToアクションが設定されている場合、それらを削除することをお勧めします。例えば、2つのドキュメントを結合し、2つ目に2ページ目に移動するGoToアクションがあると、出力されたドキュメントは結合されたドキュメントの最初のページではなく、2つ目のドキュメントの2ページ目で開きます。この動作を避けるために、オープンアクションコマンドを削除します。
-
-オープンアクションを削除するには:
-
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) オブジェクトの [getOpenAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getOpenAction--) メソッドをnullに設定します。
-1. DocumentオブジェクトのSaveメソッドを使用して更新されたPDFを保存します。
-
-以下のコードスニペットは、PDFファイルからドキュメントオープンアクションを削除する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 各ページにナビゲーションボタンを作成し、対応する事前定義アクションを割り当てます。
+1. ボタンをフォームに追加し、文書を保存してください。
 
 ```java
-    public static void RemoveDocumentOpenActionFromPDFFile()
-    {
-        // ドキュメントを開く
-        Document document = new Document(_dataDir + "RemoveOpenAction.pdf");
-        // ドキュメントオープンアクションを削除
-        document.setOpenAction(null);
-        
-        // 更新されたドキュメントを保存
-        document.save(GetDataDir()+"RemoveOpenAction_out.pdf");
+public static void addNavigationButtons(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int totalPages = document.getPages().size();
+
+        for (Page page : document.getPages()) {
+            ButtonField firstPageButton = new ButtonField(page, new Rectangle(10, 10, 110, 40, true));
+            firstPageButton.setPartialName("First Page");
+            firstPageButton.setValue("First Page");
+            firstPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            firstPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            firstPageButton.setReadOnly(document.getPages().indexOf(page) == 1);
+            firstPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.FirstPage));
+            document.getForm().add(firstPageButton);
+
+            ButtonField previousPageButton = new ButtonField(page, new Rectangle(120, 10, 220, 40, true));
+            previousPageButton.setPartialName("Previous Page");
+            previousPageButton.setValue("Previous Page");
+            previousPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            previousPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            previousPageButton.setReadOnly(document.getPages().indexOf(page) == 1);
+            previousPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.PrevPage));
+            document.getForm().add(previousPageButton);
+
+            ButtonField nextPageButton = new ButtonField(page, new Rectangle(230, 10, 330, 40, true));
+            nextPageButton.setPartialName("Next Page");
+            nextPageButton.setValue("Next Page");
+            nextPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            nextPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            nextPageButton.setReadOnly(document.getPages().indexOf(page) == totalPages);
+            nextPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.NextPage));
+            document.getForm().add(nextPageButton);
+
+            ButtonField lastPageButton = new ButtonField(page, new Rectangle(340, 10, 440, 40, true));
+            lastPageButton.setPartialName("Last Page");
+            lastPageButton.setValue("Last Page");
+            lastPageButton.getCharacteristics().setBorder(com.aspose.pdf.Color.getRed());
+            lastPageButton.getCharacteristics().setBackground(com.aspose.pdf.Color.getOrange().toRgb());
+            lastPageButton.setReadOnly(document.getPages().indexOf(page) == totalPages);
+            lastPageButton.getAnnotationActions().setOnReleaseMouseBtn(
+                    new NamedAction(PredefinedAction.LastPage));
+            document.getForm().add(lastPageButton);
+        }
+
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## 送信アクションの追加
 
-## ドキュメントを表示する際のPDFページを指定する方法 {#how-to-specify-pdf-page-when-viewing-document}
+ボタンがフォームデータをURLに送信すべき場合は、この例を使用してください。
 
-Adobe ReaderなどのPDFビューアでPDFファイルを表示する際、通常は最初のページが開かれます。しかし、異なるページを開くように設定することも可能です。
-
-[XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/XYZExplicitDestination)クラスを使用すると、開きたいPDFファイル内のページを指定することができます。[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスのgetOpenActionメソッドにGoToActionオブジェクトの値を渡すと、ドキュメントはXYZExplicitDestinationオブジェクトに対して指定されたページで開きます。以下のコードスニペットは、ドキュメントのオープンアクションとしてページを指定する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 作成 [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) 対象URLとフラグとともに。
+1. アクションをボタン フィールドに割り当て、ドキュメントを保存してください。
 
 ```java
-    public static void HowToSpecifyPDFPageWhenViewingDocument()
-    {
-        // PDFファイルを読み込む
-        Document document = new Document(GetDataDir()+ "SpecifyPageWhenViewing.pdf");
-        // ドキュメントの2ページ目のインスタンスを取得
-        Page page2 = document.getPages().get_Item(2);
-        // ターゲットページのズームファクターを設定する変数を作成
-        double zoom = 1;
-        // GoToActionインスタンスを作成
-        GoToAction action = new GoToAction(page2);
-        // 2ページ目に移動
-        action.setDestination (new XYZExplicitDestination(page2, 0, page2.getRect().getHeight(), zoom));
-        // ドキュメントのオープンアクションを設定
-        document.setOpenAction (action);
-        // 更新されたドキュメントを保存
-        document.save(_dataDir + "goto2page_out.pdf");
+public static void addSubmitAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        SubmitFormAction submitAction = new SubmitFormAction();
+        FileSpecification submitUrl = new FileSpecification();
+        submitUrl.setFileSystem("URL");
+        submitUrl.setName("http://localhost:3000/submit");
+        submitAction.setUrl(submitUrl);
+        submitAction.setFlags(SubmitFormAction.EXPORT_FORMAT | SubmitFormAction.SUBMIT_COORDINATES);
+
+        Rectangle rect = new Rectangle(10, 10, 100, 40, true);
+        ButtonField submitButton = new ButtonField(document.getPages().get_Item(1), rect);
+        submitButton.setPartialName("SubmitButton");
+        submitButton.setValue("Submit");
+        submitButton.getAnnotationActions().setOnReleaseMouseBtn(submitAction);
+
+        document.getForm().add(submitButton, 1);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## ドキュメントレベルの起動アクションの追加
+
+この例では、ドキュメントが開かれたとき、保存されたとき、または印刷されたときに実行されるJavaScriptアクションを割り当てます。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 必要なものを作成する [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) ドキュメントイベント用のオブジェクト。
+1. アクションを割り当てて、ドキュメントを保存してください。
+
+```java
+public static void addLaunchActions(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setOpenAction(new JavascriptAction("app.launchURL('http://localhost:3000/open');"));
+        document.getActions().setBeforeSaving(
+                new JavascriptAction("app.launchURL('http://localhost:3000/save');"));
+        document.getActions().setBeforePrinting(
+                new JavascriptAction("app.launchURL('http://localhost:3000/print');"));
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## ページの開閉アクションの追加
+
+特定のページが開くときと閉じるときにアクションをトリガーする必要がある場合は、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、対象ページが存在することを確認してください。
+1. ページナビゲーションとJavaScriptアクションを作成してください。
+1. ページアクションを割り当て、ドキュメントを保存してください。
+
+```java
+public static void addPageActions(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getPages().size() < 3) {
+            System.out.println("Error: The document does not have at least 3 pages.");
+            return;
+        }
+
+        Page page = document.getPages().get_Item(3);
+        GoToAction action = new GoToAction(page);
+        action.setDestination(new XYZExplicitDestination(page, 0, page.getPageInfo().getHeight(), 1));
+        page.getActions().setOnOpen(action);
+        page.getActions().setOnClose(
+                new JavascriptAction("app.launchURL('http://localhost:3000/page/3');"));
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## ページアクションの削除
+
+以前に割り当てられたオープンおよびクローズアクションをページからクリアする必要がある場合に、このアプローチを使用します。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、対象ページが存在することを確認してください。
+1. そのページからすべてのアクションを削除してください。
+1. 更新されたドキュメントを保存してください。
+
+```java
+public static void removePageActions(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getPages().size() < 3) {
+            System.out.println("Error: The document does not have at least 3 pages.");
+            return;
+        }
+
+        Page page = document.getPages().get_Item(3);
+        page.getActions().removeActions();
+
+        document.save(outputFile.toString());
     }
 }
 ```

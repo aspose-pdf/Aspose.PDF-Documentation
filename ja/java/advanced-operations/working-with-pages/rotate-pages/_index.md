@@ -1,58 +1,35 @@
 ---
-title: プログラムでPDFページを回転
-linktitle: PDFページを回転
+title: JavaでPDFページを回転させる
+linktitle: PDFページの回転
 type: docs
-weight: 60
+weight: 110
 url: /ja/java/rotate-pages/
-description: Javaを使用してページの向きを変更し、新しいページの向きにページ内容を合わせる。
-lastmod: "2021-06-05"
+description: JavaでPDFページを回転させ、ページの向きを変更する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: JavaでPDFページを回転させる
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ページを回転させる方法を説明します。サンプルでは、ドキュメント内のすべてのページを反復処理し、90 度の回転を適用して、更新された PDF を保存します。
 ---
+1 ページまたは複数ページの向きを変更する必要がある場合は、ページ回転 API を使用してください。
 
-## ページの向きを変更
+## すべてのページを90度回転させる
 
-この記事では、既存のPDFファイルのページの向きを更新または変更する方法について説明します。
+文書内のすべてのページを時計回りに回転させる必要がある場合は、この例を使用してください。
 
-Aspose.PDF for Javaは、ページの向きを横から縦に、またはその逆に変更する機能を持っています。ページの向きを変更するには、次のコードスニペットを使用してページの[MediaBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#setMediaBox-com.aspose.pdf.Rectangle-)を設定します。
-
-Rotate()メソッドを使用して回転角度を設定することで、ページの向きを変更することもできます。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. すべてを反復処理する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) オブジェクトを取得し、回転値を設定してください。
+1. 更新された PDF を保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRotatePDFPages  {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RotatePages() {
-        // ドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "sample2.pdf");
-
-        for (Page page : pdfDocument.getPages())
-        {            
-            // Rectangle r = page.getMediaBox();
-            // double newHeight = r.getWidth();
-            // double newWidth = r.getHeight();
-            // double newLLX = r.getLLX();
-            // // ページサイズの変更を補うためにページを上に移動する必要があります
-            // // （ページの下部は0,0であり、情報は通常ページの上部から配置されます。
-            // //  そのため、古い高さと新しい高さの差で下の縁を上に移動します）
-            // double newLLY = r.getLLY() + (r.getHeight() - newHeight);
-            // page.setMediaBox (new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-            // // 元のファイルで設定されていれば、CropBoxも設定する必要があります
-            // page.setCropBox(new Rectangle(newLLX, newLLY, newLLX + newWidth, newLLY + newHeight));
-
-            // ページの回転角度を設定
+public static void rotatePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
             page.setRotate(Rotation.on90);
         }
-
-        _dataDir = _dataDir + "ChangeOrientation_out.pdf";
-        // 出力ファイルを保存
-        pdfDocument.save(_dataDir);
-    }    
+        document.save(outputFile.toString());
+    }
 }
 ```

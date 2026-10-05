@@ -1,64 +1,84 @@
 ---
-title: PDFにデジタル署名する方法
-linktitle: PDFにデジタル署名
+title: Javaでデジタル署名を追加するか、PDFにデジタル署名を行う
+linktitle: PDFにデジタル署名する
 type: docs
 weight: 10
 url: /ja/java/digitally-sign-pdf-file/
-description: Javaを使用してPDF文書にデジタル署名を行います。JavaベースのアプリケーションでPDFライブラリを使用して、デジタル署名されたPDFを検証または確認します。PKCS1証明書を使用してPDFファイルを認証できます。
-lastmod: "2021-06-05"
+description: Aspose.PDFを使用して、JavaでPDF文書にデジタル署名と認証を行う方法を学ぶ。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: JavaでPDFファイルにデジタル署名する
+Abstract: このガイドでは、Aspose.PDF for Java を使用して PDF ドキュメントにデジタル署名を行う方法を説明します。証明書オブジェクトによる署名、基本的な証明書パラメーターによる署名、そして DocMDP 署名で文書を認証し、署名後に許可される変更を制御する方法をカバーしています。
 ---
+Aspose.PDF for Java は、複数の署名フローをサポートしています。 `PdfFileSignature`.
 
-署名を使用してPDF文書に署名する際、基本的にその内容が「そのまま」であるべきことを確認します。したがって、その後に加えられた変更は署名を無効にし、文書が変更されたかどうかがわかります。文書を最初に認証することで、ユーザーが認証を無効にすることなく文書に対して行える変更を指定することができます。
+## 証明書オブジェクトを使用して PDF に署名する
 
-言い換えれば、文書はその整合性を保持していると見なされ、受取人は文書を信頼することができます。詳細については、PDFの認証と署名をご覧ください。
-
-上記の要件を達成するために、次のパブリックAPIの変更が行われました。
-
-isCertified(…) メソッドが PdfFileSignature クラスに追加されました。
-
-## デジタル署名でPDFに署名する
+1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを使用してソースPDFドキュメントをバインドしてください。
+1. 作成する [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) 署名オブジェクトを作成し、署名オプションを構成してください。
+1. PDFドキュメントに署名を適用するには [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/)。
+1. 更新されたPDFドキュメントを保存してください。
 
 ```java
-public class ExampleDigitallySign {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Secure-Sign/";
-
-    public static void SignDocument() {
-        String inFile = _dataDir + "DigitallySign.pdf";
-        String outFile = _dataDir + "DigitallySign_out.pdf";
-        Document document = new Document(inFile);
-
-        PdfFileSignature signature = new PdfFileSignature(document);
-
-        PKCS7 pkcs = new PKCS7("/home/aspose/pdf-examples/Samples/test.pfx", "Pa$$w0rd2020"); // PKCS7/PKCS7Detached
-                                                                                              // オブジェクトを使用
-        signature.sign(1, true, new java.awt.Rectangle(300, 100, 400, 200), pkcs);
-        // 出力PDFファイルを保存
-        signature.save(outFile);
+public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.sign(1, false, signatureRectangle(), createPkcs7(certificateFile, "Document approval"));
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
     }
+}
 ```
 
-## デジタル署名にタイムスタンプを追加する
+このアプローチは構築します `PKCS7` 署名オブジェクトを最初に作成し、次にページ 1 に適用します。
 
-Aspose.PDF for Java は、タイムスタンプサーバーまたはWebサービスでPDFにデジタル署名することをサポートしています。
+## 基本的な証明書パラメータで PDF に署名する
 
-この要件を達成するために、[TimestampSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf/TimestampSettings) クラスが Aspose.PDF 名前空間に追加されました。以下のコードスニペットを見て、タイムスタンプを取得し、それをPDFドキュメントに追加してください。
+1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを使用してソースPDFドキュメントをバインドしてください。
+1. 署名サンプルで必要とされる証明書パラメータを構成してください。
+1. PDFドキュメントに署名を適用するには [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/)。
+1. 更新されたPDFドキュメントを保存してください。
 
 ```java
-    public static void SignWithTimeStampServer() {
-        Document document = new Document(_dataDir + "SimpleResume.pdf");
-        PdfFileSignature signature = new PdfFileSignature(document);
-
-        PKCS7 pkcs = new PKCS7("/home/aspose/pdf-examples/Samples/test.pfx", "Start2020");
-        TimestampSettings timestampSettings = new TimestampSettings("https://freetsa.org/tsr", ""); // ユーザー/パスワードは省略可能
-        pkcs.setTimestampSettings(timestampSettings);
-        java.awt.Rectangle rect = new java.awt.Rectangle(100, 100, 200, 100);
-        // 3つの署名タイプのいずれかを作成
-        signature.sign(1, "署名の理由", "連絡先", "場所", true, rect, pkcs);
-        // 出力PDFファイルを保存
-        signature.save(_dataDir + "DigitallySignWithTimeStamp_out.pdf");
+public static void signPdfWithBasicParameters(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        pdfSignature.setCertificate(certificateFile.toString(), CERTIFICATE_PASSWORD);
+        pdfSignature.sign(1, "Document approval", "qa@example.com", "New York, USA", false, signatureRectangle());
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
     }
+}
+```
+
+## DocMDPでPDFを認証する
+
+認証レベルの制限が必要な場合は、文書の変更検出および防止署名を使用してください：
+
+1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを使用してソースPDFドキュメントをバインドしてください。
+1. 作成する [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) オブジェクトと構成する [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/) 署名オプション。
+1. 認証署名を適用し、更新された PDF ドキュメントを保存してください。
+
+```java
+public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {
+    PdfFileSignature pdfSignature = new PdfFileSignature();
+    try {
+        pdfSignature.bindPdf(inputFile.toString());
+        DocMDPSignature signature = new DocMDPSignature(
+                createPkcs7(certificateFile, "Certified for form filling and signing"),
+                DocMDPAccessPermissions.FillingInForms);
+        pdfSignature.certify(1, "Certified for form filling and signing", "security@example.com",
+                "New York, USA", true, signatureRectangle(), signature);
+        pdfSignature.save(outputFile.toString());
+    } finally {
+        pdfSignature.close();
+    }
+}
 ```

@@ -1,15 +1,24 @@
 ---
 title: PdfFileStamp クラス
+linktitle: PdfFileStamp クラス
 type: docs
-weight: 120
+weight: 155
 url: /ja/java/pdffilestamp-class/
-description: このセクションでは、PDF に関する一般的な操作のためのツールセットである Aspose.PDF Facades の使い方を説明します。
-lastmod: "2021-06-05"
+description: Java で PdfFileStamp ファサードを使用して、PDF ドキュメントにヘッダー、フッター、ページ番号、スタンプを追加する方法を学びます。
+lastmod: "2026-10-05"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: PdfFileStamp を使用して Java で PDF にヘッダー、フッター、ページ番号、スタンプを追加する
+Abstract: このセクションでは、Aspose.PDF for Java の PdfFileStamp ファサードを使用して PDF ドキュメントに繰り返しコンテンツを追加する方法を説明します。現在の Java のサンプルでは、画像スタンプ、テキストと画像のヘッダー、テキストと画像のフッター、および複数のページ番号配置オプションが取り上げられています。
 ---
+そのJava `PdfFileStampExamples` クラスは、Facades API で利用できる主要なスタンピング ワークフローを示しています。
 
-- [PDF ページスタンプを追加](/pdf/ja/java/add-pdf-page-stamp/)
-- [テキストと画像スタンプを追加](/pdf/ja/java/add-text-and-image-stamp/)
-- [ヘッダーとフッターを管理](/pdf/ja/java/manage-header-and-footer/)
+このセクションを使用して次のことを学びます：
+
+- PDFに画像スタンプを追加する
+- テキストと画像のヘッダーまたはフッターを配置する
+- ヘッダーとフッターの余白を制御する
+- デフォルト、座標ベース、揃え、またはローマ数字のレイアウトでページ番号を追加する

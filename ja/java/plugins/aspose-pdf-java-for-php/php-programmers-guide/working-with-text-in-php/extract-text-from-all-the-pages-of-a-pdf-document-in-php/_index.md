@@ -1,49 +1,49 @@
 ---
-title: PHPでPDFドキュメントのすべてのページからテキストを抽出する
+title: "PHP での PDFドキュメントのすべてのページからテキストの抽出"
+linktitle: "PHP での PDFドキュメントのすべてのページからテキストの抽出"
 type: docs
 weight: 30
 url: /ja/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して、PHPでPDFドキュメントのすべてのページからテキストを抽出する方法をご紹介します。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - すべてのページからテキストの抽出
 
-## Aspose.PDF - すべてのページからテキストを抽出
-
-**Aspose.PDF Java for PHP**を使用してPDFドキュメントのすべてのページからテキストを抽出するには、単に**ExtractTextFromAllPages**モジュールを呼び出します。
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのすべてのページからテキストを抽出するには、**ExtractTextFromAllPages** モジュールを呼び出すだけです。
 PHPコード
 
 ```php
 
-# ターゲットドキュメントを開く
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# テキストを抽出するためのTextAbsorberオブジェクトを作成する
+# create TextAbsorber object to extract text
 $text_absorber = new TextAbsorber();
 
-# 全ページに対してアブソーバーを受け入れる
+# accept the absorber for all the pages
 $pdf->getPages()->accept($text_absorber);
 
-# ドキュメントの特定のページからテキストを抽出するためには、accept(..)メソッドに対してそのインデックスを使用して特定のページを指定する必要があります。
-# 特定のPDFページに対してアブソーバーを受け入れる
+# In order to extract text from specific page of document, we need to specify the particular page using its index against accept(..) method.
+# accept the absorber for particular PDF page
 # pdfDocument.getPages().get_Item(1).accept(textAbsorber);
 
-# 抽出されたテキストを取得
+#get the extracted text
 $extracted_text = $text_absorber->getText();
 
-# ライターを作成し、ファイルを開く
+# create a writer and open the file
 $writer = new FileWriter(new File($dataDir . "extracted_text.out.txt"));
 $writer->write($extracted_text);
-# ファイルにテキストの行を書き込む
+# write a line of text to the file
 # tw.WriteLine(extractedText);
-# ストリームを閉じる
+# close the stream
 $writer->close();
 
-print "テキストが正常に抽出されました。出力ファイルを確認してください。" . PHP_EOL;
+print "Text extracted successfully. Check output file." . PHP_EOL;
 
 ```
 
+**実行コードのダウンロード**
 
-**コードのダウンロード**
-
-任意の以下のソーシャルコーディングサイトから**すべてのページからテキストを抽出する (Aspose.PDF)** をダウンロードしてください：
+ダウンロードВ **すべてのページからテキストを抽出 (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれか:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)

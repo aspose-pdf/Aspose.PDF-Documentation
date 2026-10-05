@@ -1,31 +1,32 @@
 ---
-title: RubyでPDFファイル情報を取得
+title: "Ruby での PDF ファイル情報の取得"
+linktitle: "Ruby での PDF ファイル情報の取得"
 type: docs
 weight: 50
 url: /ja/java/get-pdf-file-information-in-ruby/
-lastmod: "2021-06-05"
+description: Ruby で Aspose.PDF を使用して、PDF ファイルからメタデータと詳細情報をプログラムで抽出します。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - PDF ファイル情報の取得
 
-## Aspose.PDF - PDFファイル情報を取得
+Ruby 用 **Aspose.PDF Java for Ruby** を使用して PDF 文書のファイル情報を取得するには、単に **GetPdfFileInfo** モジュールを呼び出します。
 
-**Aspose.PDF Java for Ruby**を使用してPDFドキュメントのファイル情報を取得するには、単に**GetPdfFileInfo**モジュールを呼び出します。
-
-Rubyコード
+Ruby コード
 
 ```java
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# PDFドキュメントを開く。
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# ドキュメント情報を取得
+# Get document information
 
 doc_info = doc.getInfo()
 
-# ドキュメント情報を表示
+# Show document information
 
 puts "Author:-" + doc_info.getAuthor().to_s
 
@@ -40,35 +41,8 @@ puts "Subject:-" + doc_info.getSubject().to_s
 puts "Title:-" + doc_info.getTitle().to_s
 ```
 
-## 実行コードのダウンロード
+## 実行コードをダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから**Get PDF File Information (Aspose.PDF)**をダウンロードしてください。
+ダウンロードВ **Get PDF File Information (Aspose.PDF)**В からВ 以下に示すソーシャルコーディングサイトのいずれかから:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getpdffileinfo.rb)
-
-```ruby
-# PDFファイルの情報を取得する
-def get_pdf_file_info()
-    # PDFファイルを読み込む
-    pdf_document = Asposepdfjava::Document.new("example.pdf")
-    
-    # ページ数を取得する
-    number_of_pages = pdf_document.getPages().size()
-    puts "ページ数: #{number_of_pages}"
-    
-    # タイトルを取得する
-    title = pdf_document.getInfo().getTitle().to_s
-    puts "タイトル: #{title}"
-    
-    # 作者を取得する
-    author = pdf_document.getInfo().getAuthor().to_s
-    puts "作者: #{author}"
-    
-    # 作成日を取得する
-    creation_date = pdf_document.getInfo().getCreationDate().to_s
-    puts "作成日: #{creation_date}"
-end
-```
-
-changefreq: "monthly"  
-type: docs

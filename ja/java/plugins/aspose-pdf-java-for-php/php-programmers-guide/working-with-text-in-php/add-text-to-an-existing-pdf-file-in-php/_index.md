@@ -1,52 +1,52 @@
 ---
-title: 既存のPDFファイルにテキストを追加する方法 (PHP)
+title: "PHP での 既存のPDFファイルへのテキストの追加"
+linktitle: "PHP での 既存のPDFファイルへのテキストの追加"
 type: docs
 weight: 20
 url: /ja/java/add-text-to-an-existing-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して、PHPで既存のPDFドキュメントに新しいテキストを追加する方法を学びます。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - テキストの追加
 
-## Aspose.PDF - テキストを追加
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントにテキスト文字列を追加するには、単に **AddText** モジュールを呼び出します。
 
-**Aspose.PDF Java for PHP** を使用してPDFドキュメントにテキスト文字列を追加するには、単に **AddText** モジュールを呼び出します。
-
-PHPコード
+PHP コード
 
 ```php
 
-# Documentオブジェクトをインスタンス化
+# Instantiate Document object
 $doc = new Document($dataDir . 'input1.pdf');
 
-# 特定のページを取得
+# get particular page
 $pdf_page = $doc->getPages()->get_Item(1);
 
-# テキストフラグメントを作成
-$text_fragment = new TextFragment("メインテキスト");
+# create text fragment
+$text_fragment = new TextFragment("main text");
 $text_fragment->setPosition(new Position(100, 600));
 
 $font_repository = new FontRepository();
 $color = new Color();
 
-# テキストのプロパティを設定
+# set text properties
 $text_fragment->getTextState()->setFont($font_repository->findFont("Verdana"));
 $text_fragment->getTextState()->setFontSize(14);
 
-# TextBuilderオブジェクトを作成
+# create TextBuilder object
 $text_builder = new TextBuilder($pdf_page);
 
-# テキストフラグメントをPDFページに追加
+# append the text fragment to the PDF page
 $text_builder->appendText($text_fragment);
 
-# PDFファイルを保存
+# Save PDF file
 $doc->save($dataDir . "Text_Added.pdf");
 
-print "テキストが正常に追加されました" . PHP_EOL;
+print "Text added successfully" . PHP_EOL;
 
 ```
 
+**実行コードをダウンロード**
 
-**コードを実行してダウンロード**
-
-以下のいずれかのソーシャルコーディングサイトから**テキストを追加 (Aspose.PDF)**をダウンロードしてください：
+ダウンロードВ **Add Text (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれか：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddText.php)

@@ -1,44 +1,50 @@
 ---
-title: プログラムでPDFページを削除する
-linktitle: PDFページを削除する
+title: "Java での PDFページの削除"
+linktitle: PDFページの削除
 type: docs
-weight: 40
+weight: 80
 url: /ja/java/delete-pages/
-description: Javaライブラリを使用してPDFファイルからページを削除できます。
-lastmod: "2021-06-05"
+description: JavaでPDFファイルからページを削除する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Javaで1つまたは複数のPDFページを削除する
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ファイルからページを削除する方法を説明します。単一ページの削除と、ページコレクション API を使った複数ページの一括削除について取り上げます。
 ---
+PDFから1つまたは複数のページを削除する必要がある場合は、ドキュメントのページコレクションを使用してください。
 
-Aspose.PDF for Javaを使用してPDFファイルからページを削除できます。[PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection)から特定のページを削除するには、単にdelete()メソッドを呼び出し、削除したい特定のページのインデックスを指定します。その後、saveメソッドを呼び出して更新されたPDFファイルを保存します。
+## 単一ページの削除
 
-## PDFファイルからページを削除する
+インデックスで1ページを削除する必要がある場合は、この例を使用してください。
 
-1. Deleteメソッドを呼び出し、ページのインデックスを指定します
-1. Saveメソッドを呼び出して更新されたPDFファイルを保存します
-以下のコードスニペットは、Javaを使用してPDFファイルから特定のページを削除する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ページコレクションから対象ページを削除してください。
+1. 更新されたドキュメントを保存してください。
 
 ```java
-package com.aspose.pdf.examples;
+public static void deletePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(2);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import com.aspose.pdf.*;
+## 複数ページの削除
 
-public class ExampleDeletePage {
+この例は、複数のページを一度の操作で削除する必要がある場合に使用します。
 
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ページコレクションから削除するページインデックスを渡してください。
+1. 変更された PDF を保存してください。
 
-  public static void DeletePageFromPDFFile() {
-
-    // ドキュメントを開く
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    // 特定のページを削除する
-    pdfDocument.getPages().delete(2);
-
-    _dataDir = _dataDir + "DeleteParticularPage_out.pdf";
-    // 更新されたPDFを保存する
-    pdfDocument.save(_dataDir);    
-
-  }
+```java
+public static void deleteBunchPages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(new Integer[]{2, 3, 4});
+        document.save(outputFile.toString());
+    }
+}
 ```

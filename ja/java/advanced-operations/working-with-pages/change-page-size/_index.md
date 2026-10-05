@@ -1,95 +1,74 @@
 ---
-title: PDFページサイズをプログラムで変更する
-linktitle: ページサイズを変更
+title: "Java での PDFページサイズの変更"
+linktitle: ページサイズの変更
 type: docs
-weight: 50
+weight: 40
 url: /ja/java/change-page-size/
-description: Javaライブラリを使用してPDFファイルのページサイズを変更します。
-lastmod: "2021-06-05"
+description: JavaでPDFページ寸法を読み取り、変更する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Javaを使用してページ寸法とボックスを読み取り、更新します
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ページの寸法を読み取り、変更する方法を示します。ページサイズの取得、回転を考慮したページサイズの測定、そして変更前後のボックス寸法を出力しながら、最初のページを新しいサイズに更新することをカバーしています。
 ---
+Aspose.PDF for Java はページ寸法を報告できるだけでなく、更新することもできます。
 
-## PDFページサイズを変更する
+## ページサイズの変更
 
-Aspose.PDF for Javaを使用すると、Javaアプリケーションで簡単なコード行でPDFページサイズを変更できます。このトピックでは、既存のPDFファイルのページの寸法（サイズ）を更新/変更する方法を説明します。
+既存のページのサイズを変更し、変更前後のページボックスを検査する必要がある場合にこの例を使用してください。
 
-[Page](https://reference.aspose.com/pdf//java/com.aspose.pdf/page) クラスには、ページサイズを設定できるSetPageSize(...)メソッドがあります。以下のコードスニペットは、簡単なステップでページの寸法を更新します：
-
-1. ソースPDFファイルをロードします。
-1. ページを[PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection)オブジェクトに取得します。
-1. 指定されたページを取得します。
-1. SetPageSize(..)メソッドを呼び出して、寸法を更新します。
-
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) クラスの Save(..) メソッドを呼び出して、ページ寸法が更新されたPDFファイルを生成します。
-
-{{% alert color="primary" %}}
-
-高さと幅のプロパティは基本単位としてポイントを使用します。1インチ = 72ポイント、1cm = 1/2.54インチ = 0.3937インチ = 28.3ポイントです。
-
-{{% /alert %}}
-
-次のコードスニペットは、PDFページの寸法をA4サイズに変更する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ターゲットを取得 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) そして、現在のボックス値を出力してください。
+1. 新しいページサイズを設定し、ドキュメントを保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleChangePDFPageSize {
-    // ドキュメントディレクトリへのパス
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ChangePDFPageSize() {
-        
-        // 最初のドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // ページコレクションを取得
-        PageCollection pageCollection = pdfDocument.getPages();
-
-        // 特定のページを取得
-        Page pdfPage = pageCollection.get_Item(1);
-
-        // ページサイズをA4（11.7 x 8.3インチ）に設定し、Aspose.Pdfでは1インチ = 72ポイント
-        // したがって、ポイントでのA4の寸法は (842.4, 597.6) になります
-        pdfPage.setPageSize(597.6, 842.4);
-
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        
-        // 更新されたドキュメントを保存
-        pdfDocument.save(_dataDir);
+public static void setPageSize(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        printBoxes("Before set", page);
+        page.setPageSize(597.6, 842.4);
+        printBoxes("After set", page);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## ページサイズの取得
 
-## PDFページサイズを取得する
+ページの見える寸法を読み取る必要がある場合は、この例を使用してください。
 
-Aspose.PDF for Javaを使用して、既存のPDFファイルのページサイズを読み取ることができます。以下のコードサンプルは、Javaを使用してPDFページの寸法を読み取る方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 回転処理が有効な状態でページの矩形を取得してください。
+1. ページの幅と高さを出力します。
 
 ```java
-    public static void GetPDFPageSize() {
-        
-        // 最初のドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-                
-        // PDFドキュメントに空白ページを追加する
-        Page page = pdfDocument.getPages().size() > 0 ? pdfDocument.getPages().get_Item(1) : pdfDocument.getPages().add();
-        
-        // ページの高さと幅の情報を取得する
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // ページを90度回転する
-        page.setRotate (Rotation.on90);
-
-        // ページの高さと幅の情報を取得する
-        System.out.println(page.getPageRect(true).getWidth() + ":" + page.getPageRect(true).getHeight());
-        
-        // 更新されたドキュメントを保存する
-        _dataDir = _dataDir + "UpdateDimensions_out.pdf";
-        pdfDocument.save(_dataDir);
+public static void getPageSize(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle rectangle = document.getPages().get_Item(1).getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
     }
+}
+```
 
+## 回転を適用したページサイズの取得
+
+回転を考慮する前後のページ寸法を比較する必要がある場合は、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 対象を回転する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. ページの矩形を回転処理あり・なしで読み取り、両方の値を出力してください。
+
+```java
+public static void getPageSizeRotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        page.setRotate(Rotation.on90);
+        Rectangle rectangle = page.getPageRect(false);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+        rectangle = page.getPageRect(true);
+        System.out.println(rectangle.getWidth() + " : " + rectangle.getHeight());
+    }
 }
 ```

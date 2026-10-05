@@ -1,14 +1,15 @@
 ---
-title: Web用にPDFドキュメントを最適化する方法（Ruby）
+title: "Ruby での Web用にPDFドキュメントの最適化"
+linktitle: "Ruby での Web用にPDFドキュメントの最適化"
 type: docs
 weight: 70
 url: /ja/java/optimize-pdf-document-for-the-web-in-ruby/
-lastmod: "2021-06-05"
+description: RubyでAspose.PDFを使用して、PDFの配信速度を向上させ、ファイルサイズを削減します。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - Web用にPDFの最適化
 
-## Aspose.PDF - PDFをWeb用に最適化
-
-**Aspose.PDF Java for Ruby**を使用してPDFドキュメントをWeb用に最適化するには、**Optimize**モジュールの**optimize_web**メソッドを呼び出します。
+Ruby用 **Aspose.PDF Java for Ruby** を使用してPDFドキュメントをWeb向けに最適化するには、**Optimize**モジュールの **optimize_web** メソッドを呼び出すだけです。
 
 Rubyコード
 
@@ -16,29 +17,29 @@ Rubyコード
 
  def optimize_web()
 
-    # ドキュメントディレクトリへのパス。
+В В В  # The path to the documents directory.
 
-    data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
+В В В  data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-    # PDFドキュメントを開く。
+В В В  # Open a pdf document.
 
-    doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+В В В  doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-    # Web用に最適化
+В В В  # Optimize for web
 
-    doc.optimize()
+В В В  doc.optimize()
 
-    # 出力ドキュメントを保存
+В В В  #Save output document
 
-    doc.save(data_dir + "Optimized_Web.pdf")
+В В В  doc.save(data_dir + "Optimized_Web.pdf")
 
-    puts "Web用にPDFを最適化しました。出力ファイルを確認してください。"
+В В В  puts "Optimized PDF for the Web, please check output file."
 
 end
-``` 
+```
 
-## 実行コードのダウンロード
+## 実行コードをダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから**Optimize PDF for Web (Aspose.PDF)**をダウンロードしてください：
+ダウンロードВ **PDF を Web 用に最適化 (Aspose.PDF)**В からV 以下に記載されたソーシャルコーディングサイトのいずれか：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)

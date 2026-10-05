@@ -1,23 +1,24 @@
 ---
-title: PHPでPDFファイルを個々のページに分割する
+title: PHPでPDFファイルを個別ページに分割する
+linktitle: PHPでPDFファイルを個別ページに分割する
 type: docs
 weight: 80
 url: /ja/java/split-pdf-file-into-individual-pages-in-php/
-lastmod: "2021-06-05"
+description: PHPとAspose.PDFを使用してPDFドキュメントを個別ページに分割する方法を学び、効率的なページ抽出を実現します。
+lastmod: "2026-10-05"
 ---
+## Aspose.PDF - ページ分割
 
-## Aspose.PDF - ページの分割
-
-**Aspose.PDF Java for PHP**を使用してPDFドキュメントを個々のページに分割するには、**SplitAllPages**クラスを呼び出します。
+**Aspose.PDF Java for PHP** を使用してPDFドキュメントを個別ページに分割するには、シンプルに **SplitAllPages** クラスを呼び出すだけです。
 
 PHPコード
 
 ```php
 
-# 対象のドキュメントを開く
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# すべてのページをループする
+# loop through all the pages
 $pdf_page = 1;
 $total_size = $pdf->getPages()->size();
 #for (int pdfPage = 1; pdfPage<= pdfDocument1.getPages().size(); pdfPage++)
@@ -25,29 +26,25 @@ while ($pdf_page <= $total_size)
 
 {
 
-    # 新しいDocumentオブジェクトを作成する
+    # create a new Document object
     $new_document = new Document();
 
-    # 特定のインデックスのページコレクションからページを取得する
+    # get the page at particular index of Page Collection
     $new_document->getPages()->add($pdf->getPages()->get_Item($pdf_page));
 
-    # 新しく生成されたPDFファイルを保存する
+    # save the newly generated PDF file
     $new_document->save($dataDir . "page_#{$pdf_page}.pdf");
 
     $pdf_page++;
 
 }
 
-print "分割プロセスが正常に完了しました！";
+print "Split process completed successfully!";
 
 ```
 
-**実行コードをダウンロードする**
+**実行コードをダウンロード**
 
-
-以下のいずれかのソーシャルコーディングサイトから**Split Pages (Aspose.PDF)**をダウンロードしてください。
+以下に記載されたソーシャルコーディングサイトから **Split Pages (Aspose.PDF)** をダウンロード:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/SplitAllPages.php)
-
-```php
-// すべてのページを個別のPDFファイルに分割する

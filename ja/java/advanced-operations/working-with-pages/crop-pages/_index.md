@@ -1,72 +1,60 @@
 ---
-title: PDFページをプログラムでトリミング
-linktitle: ページをトリミング
+title: JavaでPDFページをトリミング
+linktitle: PDFページのトリミング
 type: docs
-weight: 80
+weight: 70
 url: /ja/java/crop-pages/
-description: Aspose.PDF for Javaを使用して、幅、高さ、断裁、トリムボックスなどのページプロパティを取得できます。
-lastmod: "2021-06-05"
+description: JavaでPDFページをトリミングし、crop、trim、bleed、mediaボックスを調整する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Javaを使用してPDFファイルのページをトリミングし、ページボックスを調整する
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ページをトリミングする方法を説明します。crop、trim、art、bleed ボックスに新しいトリム矩形を割り当てること、および検出された画像コンテンツに基づいてページを自動的にトリミングすることについて説明します。
 ---
+Aspose.PDF for Java は、明示的なボックス座標または検出されたコンテンツに基づいてページをトリミングできます。
 
-## ページプロパティを取得する
+## ページボックスを設定してページをトリミングする
 
-PDFファイル内の各ページには、幅、高さ、断裁、トリムボックスなどのプロパティがあります。Aspose.PDF for Javaを使用すると、これらのプロパティにアクセスできます。
+メインページボックスに同じトリミング領域を適用する必要がある場合は、この例を使用してください。
 
-- **メディアボックス**: メディアボックスは最も大きなページボックスです。これは、PostScriptまたはPDFに印刷されたときに選択されたページサイズ（例えばA4、A5、USレターなど）に対応します。言い換えれば、メディアボックスはPDFドキュメントが表示または印刷されるメディアの物理的なサイズを決定します。
-- **ブリードボックス**: ドキュメントにブリードがある場合、PDFにもブリードボックスがあります。
- Bleedは、ページの端を超えて広がる色（またはアートワーク）の量です。これは、ドキュメントが印刷されてサイズにカットされたとき（「トリミング」）、インクがページの端まで届くようにするために使用されます。ページが誤ってトリミングされた場合でも（トリムマークからわずかにずれてカットされた場合）、ページに白い端が表示されることはありません。
-
-- **Trim box**: トリムボックスは、印刷およびトリミング後のドキュメントの最終サイズを示します。
-- **Art box**: アートボックスは、ドキュメント内のページの実際の内容の周りに描かれたボックスです。このページボックスは、他のアプリケーションでPDFドキュメントをインポートするときに使用されます。
-- **Crop box**: クロップボックスは、Adobe Acrobatで表示されるPDFドキュメントの「ページ」サイズです。通常のビューでは、Adobe Acrobatでクロップボックスの内容のみが表示されます。これらのプロパティの詳細な説明については、Adobe.Pdf仕様、特に10.10.1ページ境界を参照してください。
-- **Page.Rect**: MediaBoxとDropBoxの交差点（一般的に見える矩形）。 以下の図はこれらのプロパティを示しています。
-詳細については、[このページ](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html)をご覧ください。
-
-以下のスニペットはページをクロップする方法を示しています：
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 新しい トリミング の [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) を作成してください。
+1. 矩形をクロップ関連のページボックスに適用し、ドキュメントを保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleCropPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    // ドキュメントを開く
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    public static void CropPagesPDF() {
-        Document pdfDocument = new Document("crop_page.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-
-        System.out.println(page.getCropBox());
-        System.out.println(page.getTrimBox());
-        System.out.println(page.getArtBox());
-        System.out.println(page.getBleedBox());
-        System.out.println(page.getMediaBox());
-
-        // 新しいボックス矩形を作成
-        Rectangle newBox = new Rectangle(200, 220, 2170, 1520);
-
-        page.setCropBox(newBox);
-        page.setTrimBox(newBox);
-        page.setArtBox(newBox);
-        page.setBleedBox(newBox);
-
-        // 出力ドキュメントを保存
-        pdfDocument.save(_dataDir + "crop_page_modified.pdf");
+public static void cropPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Rectangle newBox = new Rectangle(200, 220, 2170, 1520, true);
+        document.getPages().get_Item(1).setCropBox(newBox);
+        document.getPages().get_Item(1).setTrimBox(newBox);
+        document.getPages().get_Item(1).setArtBox(newBox);
+        document.getPages().get_Item(1).setBleedBox(newBox);
+        document.save(outputFile.toString());
     }
 }
 ```
 
-In this example we used a sample file [here](crop_page.pdf). Initially our page looks like shown on the Figure 1.  
-この例では、サンプルファイルを[ここ](crop_page.pdf)で使用しました。最初に、私たちのページは図1に示すように見えます。  
-![Figure 1. Cropped Page](crop_page.png)
+## 検出されたコンテンツでページをトリミングする
 
-After the change, the page will look like Figure 2.  
-変更後、ページは図2のように見えます。  
-![Figure 2. Cropped Page](crop_page2.png)
+ページ上で最初に検出された画像からトリミング領域を取得する場合に、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 画像配置を検出するために。
+1. 画像の矩形が見つかった場合、クロップボックスをその矩形に設定し、ドキュメントを保存してください。
+
+```java
+public static void cropPageByContent(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        if (absorber.getImagePlacements().size() > 0) {
+            document.getPages().get_Item(1).setCropBox(absorber.getImagePlacements().get_Item(1).getRectangle());
+        } else {
+            System.out.println("No images found on the first page");
+        }
+        document.save(outputFile.toString());
+    }
+}
+```

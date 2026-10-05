@@ -1,20 +1,25 @@
 ---
 title: PdfContentEditor クラス
+linktitle: PdfContentEditor クラス
 type: docs
 weight: 30
 url: /ja/java/pdfcontenteditor-class/
-description: このセクションでは、PdfContentEditor クラスを使用して Aspose.PDF Facades を操作する方法を説明します。
-lastmod: "2021-06-05"
+description: Java で PdfContentEditor クラスを使用して PDF コンテンツを編集し、注釈や添付ファイルを管理し、ドキュメント アクション、画像、テキスト、マルチメディア、スタンプ、ビューア設定を操作する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: PdfContentEditor を使用して Java で PDF コンテンツとインタラクティブ要素を編集する
+Abstract: このセクションでは、Aspose.PDF for Java の PdfContentEditor クラスを使用したコンテンツレベルの PDF ワークフローについて説明します。現在の Java サンプルセットには、注釈、添付ファイル、ドキュメント アクション、描画マークアップ、画像置換、マルチメディア、スタンプ、テキスト置換、ビューア設定が含まれます。
 ---
+Java `PdfContentEditorExamples` class は Facades API が提供する主要なコンテンツ編集ワークフローを示します。
 
-- [既存のPDFファイルにJavascriptアクションを追加する](/pdf/ja/java/adding-javascript-actions/)
-- [既存のPDFファイルにブックマークアクションを追加する](/pdf/ja/java/adding-bookmark-actions/)
-- [画像を操作する (ファサード)](/pdf/ja/java/working-with-image/)
-- [テキストを置換する (ファサード)](/pdf/ja/java/replace-text/)
-- [添付ファイルを操作する](/pdf/ja/java/working-with-attachments/)
-- [既存のPDFファイルのビューア設定を設定する](/pdf/ja/java/set-viewer-preference-of-an-existing-pdf-file/)
-- [既存のPDFファイルのビューア設定を取得する](/pdf/ja/java/get-viewer-preference-of-an-existing-pdf-file/)
-- [既存のPDFファイルに注釈を追加する](/pdf/ja/java/adding-annotations-to-existing-pdf-file/)
+このセクションを使用して、以下を学びます：
+
+- テキスト、ライン、ポリゴン、ムービー、そしてゴムスタンプの注釈を追加
+- ドキュメントの添付ファイルを追加または削除する
+- ストリームから PDF をバインドし、結果を保存する
+- ドキュメントのオープンアクションを追加または削除する
+- テキストと画像を置換する
+- ビューア設定を取得して変更する

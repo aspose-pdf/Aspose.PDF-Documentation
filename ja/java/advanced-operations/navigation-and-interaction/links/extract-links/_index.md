@@ -1,44 +1,62 @@
 ---
-title: PDFファイルからリンクを抽出する
-linktitle: リンクの抽出
+title: "Java での PDFリンクの抽出"
+linktitle: "リンクの抽出"
 type: docs
 weight: 30
 url: /ja/java/extract-links/
-description: JavaでPDFからリンクを抽出します。このトピックでは、AnnotationSelectorクラスを使用してリンクを抽出する方法を説明します。
-lastmod: "2021-06-05"
+description: JavaでPDF文書からリンクアノテーションとハイパーリンクを抽出する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: JavaでPDFファイルからリンクアノテーションとURIターゲットを抽出する
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF 文書からリンクアノテーションを抽出する方法を説明します。ページ上のリンクアノテーションを列挙し、そのページインデックスと矩形を読み取り、GoToURIAction インスタンスから URI ターゲットを抽出する方法を示します。
 ---
+ページ注釈を反復処理し、フィルタリングすることで PDF リンクを検査できます `AnnotationType.Link`.
 
-## PDFファイルからリンクを抽出する
+## リンク注釈の抽出
 
-リンクはPDFファイル内で注釈として表現されるため、リンクを抽出するには、すべての[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation)オブジェクトを抽出します。
+ページ上のリンク注釈の位置とページ情報が必要な場合は、この例を使用してください。
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトを作成します。
-1. リンクを抽出したい[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)を取得します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector)クラスを使用して、指定されたページからすべての[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation)オブジェクトを抽出します。
-
-1. [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) オブジェクトを Page オブジェクトの Accept メソッドに渡します。
-1. [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) オブジェクトの [getSelected](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector#getSelected--) メソッドを使用して、選択されたすべてのリンク注釈を IList オブジェクトに取得します。
-
-次のコードスニペットは、PDF ファイルからリンクを抽出する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ページ注釈を反復処理し、リンク注釈をフィルタリングしてください。
+1. 一致する各リンクのページインデックスと矩形を読み取ります。
 
 ```java
-    public static void ExtractLinksFromThePDFFile() {        
-        // PDFファイルを読み込む
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-        page.accept(selector);
-        java.util.List<Annotation> list = selector.getSelected();
-        for(Annotation annot : list)
-        {
-            System.out.println("注釈の位置: " + annot.getRect());
+public static void extractLinkAnnotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                System.out.println("Page: " + linkAnnotation.getPageIndex()
+                        + ", location: " + linkAnnotation.getRect());
+            }
         }
-                
-        // 更新されたリンクを持つ文書を保存する
-        //document.save(_dataDir + "ExtractLinks_out.pdf");
     }
+}
+```
+
+## ハイパーリンクの宛先の抽出
+
+Web リンク注釈から対象の URI を読み取る必要がある場合は、この例を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 検索 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) アクションが a のオブジェクト [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. 各ハイパーリンクについて、ページインデックスと URI ターゲットを出力してください。
+
+```java
+public static void extractHyperlinks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    System.out.println("Page " + linkAnnotation.getPageIndex() + ", URI:" + action.getURI());
+                }
+            }
+        }
+    }
+}
 ```

@@ -1,216 +1,218 @@
 ---
-title: PDFヘッダーとフッターを追加する
-linktitle: ヘッダーとフッターを追加
+title: "Java での PDFヘッダーとフッターの追加"
+linktitle: "PDFにヘッダーとフッターの追加"
 type: docs
-weight: 70
+weight: 50
 url: /ja/java/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for Javaを使用して、PDFファイルにヘッダーとフッターを追加できます。
-lastmod: "2021-06-05"
+description: Java を使用してテキスト、画像、構造化コンテンツで PDF ファイルにヘッダーとフッターを追加する方法を学びます。
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java を使用して PDF ファイルにヘッダーとフッターを追加する
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントにヘッダーとフッターを追加する方法を示します。テキスト、ページ番号、HTML、画像、テーブル、そして LaTeX ベースのヘッダーおよびフッターコンテンツについて説明します。
 ---
+Aspose.PDF for Java は割り当てることができます `HeaderFooter` 各ページにオブジェクトを配置し、異なるコンテンツタイプでそれらを埋め込みます。
 
-PDFスタンプは、契約書、レポート、制限された資料などでよく使用され、ドキュメントが「読んだ」「合格」「機密」などとしてレビューおよびマークされたことを証明するために使用されます。この記事では、**Aspose.PDF for Java**を使用してPDFドキュメントに画像スタンプとテキストスタンプを追加する方法を紹介します。
+## テキストヘッダーとフッターの追加
 
-上記のコードスニペットを行ごとに読むと、構文とコードロジックが非常に理解しやすいことがわかります。
+各ページの上部と下部にシンプルなテキストコンテンツが必要な場合は、この例を使用してください。
 
-## PDFファイルのヘッダーにテキストを追加する
-
-[TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp)クラスを使用して、PDFファイルのヘッダーにテキストを追加できます。
- TextStampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、テキストベースのスタンプを作成するために必要なプロパティを提供します。ヘッダーにテキストを追加するには、Documentオブジェクトと必要なプロパティを使用してTextStampオブジェクトを作成する必要があります。その後、PageのAddStampメソッドを呼び出して、PDFのヘッダーにテキストを追加できます。
-
-PDFのヘッダーエリアにテキストが調整されるように、TopMarginプロパティを設定する必要があります。また、HorizontalAlignmentをCenterに、VerticalAlignmentをTopに設定する必要があります。
-
-次のコードスニペットは、JavaでPDFファイルのヘッダーにテキストを追加する方法を示しています。
+1. 作成 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) オブジェクトにテキストフラグメントを追加してください。
+1. ヘッダーとフッターの余白を設定してください。
+1. それらをソースPDFの各ページに適用し、結果を保存してください。
 
 ```java
-package com.aspose.pdf.examples;
+public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Demo header"));
 
-import com.aspose.pdf.*;
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Demo footer"));
 
-public class ExampleAddPDFHeaderandFooter {
-    // ドキュメントディレクトリへのパス。
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-    public static void AddingTextInHeaderOfPDFFile() {
-
-        // ドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "TextinHeader.pdf");
-
-        // ヘッダーを作成
-        TextStamp textStamp = new TextStamp("Header Text");
-
-        // スタンプのプロパティを設定
-        textStamp.setTopMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Top);
-
-        // すべてのページにヘッダーを追加
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        // 更新されたドキュメントを保存
-        pdfDocument.save(_dataDir + "TextinHeader_out.pdf");
+        document.save(outputFile.toString());
     }
-```
-
-## PDFファイルのフッターにテキストを追加する
-
-TextStampクラスを使用して、PDFファイルのフッターにテキストを追加できます。TextStampクラスは、フォントサイズ、フォントスタイル、フォントカラーなどのテキストベースのスタンプを作成するために必要なプロパティを提供します。フッターにテキストを追加するには、必要なプロパティを使用してDocumentオブジェクトとTextStampオブジェクトを作成する必要があります。その後、ページのAddStampメソッドを呼び出して、PDFのフッターにテキストを追加できます。
-
-以下のコードスニペットは、JavaでPDFファイルのフッターにテキストを追加する方法を示しています。
-
-```java
-    public static void AddingTextInFooterOfPDFFile() {
-        // ドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "TextinFooter.pdf");
-        // フッターを作成
-        TextStamp textStamp = new TextStamp("Footer Text");
-        // スタンプのプロパティを設定
-        textStamp.setBottomMargin(10);
-        textStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        textStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // すべてのページにフッターを追加
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(textStamp);
-        }
-        _dataDir = _dataDir + "TextinFooter_out.pdf";
-        // 更新されたPDFファイルを保存
-        pdfDocument.save(_dataDir);
-    }
-```
-
-
-## PDFファイルのヘッダーに画像を追加する
-
-[ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp) クラスを使用して、PDFファイルのヘッダーに画像を追加できます。Image Stampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、画像ベースのスタンプを作成するために必要なプロパティを提供します。ヘッダーに画像を追加するには、必要なプロパティを使用してDocumentオブジェクトとImage Stampオブジェクトを作成する必要があります。その後、ページの[AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp) メソッドを呼び出して、PDFのヘッダーに画像を追加できます。
-
-```java
-public static void AddingImageInHeaderOfPDFFile() {
-
-// ドキュメントを開く
-Document pdfDocument = new Document(_dataDir + "ImageInHeader.pdf");
-
-// ヘッダーを作成
-ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
-
-// スタンプのプロパティを設定
-imageStamp.setTopMargin(10);
-imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-imageStamp.setVerticalAlignment(VerticalAlignment.Top);
-// すべてのページにヘッダーを追加
-for (Page page : pdfDocument.getPages()) {
-page.addStamp(imageStamp);
-}
-
-_dataDir = _dataDir + "ImageInHeader_out.pdf";
-
-// 更新されたPDFファイルを保存
-pdfDocument.save(_dataDir);
 }
 ```
 
+## ヘッダーとフッターにページ番号の追加
 
-以下のコードスニペットは、Javaを使用してPDFファイルのヘッダーに画像を追加する方法を示しています。
+ヘッダーまたはフッターに現在のページ番号と総ページ数を表示する必要がある場合は、この例を使用してください。
 
-## PDFファイルのフッターに画像を追加する
-
-Image Stampクラスを使用して、PDFファイルのフッターに画像を追加できます。Image Stampクラスは、フォントサイズ、フォントスタイル、フォントカラーなど、画像ベースのスタンプの作成に必要なプロパティを提供します。フッターに画像を追加するためには、必要なプロパティを使用してDocumentオブジェクトとImage Stampオブジェクトを作成する必要があります。その後、PageのAddStampメソッドを呼び出して、PDFのフッターに画像を追加できます。
-
-{{% alert color="primary" %}}
-
-PDFのフッターエリアに画像が調整されるように、BottomMarginプロパティを設定する必要があります。また、[HorizontalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/HorizontalAlignment)を`Center`に、[VerticalAlignment](https://reference.aspose.com/pdf/java/com.aspose.pdf/VerticalAlignment)を`Bottom`に設定する必要があります。
-
-{{% /alert %}}
-
-以下のコードスニペットは、Javaを使用してPDFファイルのフッターに画像を追加する方法を示しています。
+1. 作成 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) ページ番号プレースホルダーを持つオブジェクト。
+1. 両方のオブジェクトの余白を設定してください。
+1. それらを各ページに適用し、更新されたPDFを保存してください。
 
 ```java
-    public static void AddingImageInFooterOfPDFFile() {
+public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new TextFragment("Page $p from $P"));
 
-        // ドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "ImageInFooter.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new TextFragment("Page $p / $P"));
 
-        // フッターを作成
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.jpg");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // スタンプのプロパティを設定
-        imageStamp.setBottomMargin(10);
-        imageStamp.setHorizontalAlignment(HorizontalAlignment.Center);
-        imageStamp.setVerticalAlignment(VerticalAlignment.Bottom);
-        // すべてのページにフッターを追加
-        for (Page page : pdfDocument.getPages()) {
-            page.addStamp(imageStamp);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
         }
-
-        _dataDir = _dataDir + "ImageInFooter_out.pdf";
-
-        // 更新されたPDFファイルを保存
-        pdfDocument.save(_dataDir);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-## 1つのPDFファイルに異なるヘッダーを追加
+## HTMLヘッダーとフッターの追加
 
-TopMarginまたはBottom Marginプロパティを使用して、ドキュメントのヘッダー/フッターセクションにTextStampを追加できることはわかっていますが、場合によっては単一のPDFドキュメントに複数のヘッダー/フッターを追加する必要があるかもしれません。
- **Aspose.PDF for Java**はこれを行う方法を説明します。
+ヘッダーとフッターの内容にインラインHTMLフォーマットを含める必要がある場合は、この例を使用してください。
 
-この要件を達成するために、個々の[TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp)オブジェクトを作成し（必要なヘッダー/フッターの数に応じてオブジェクトの数が決まります）、それらをPDFドキュメントに追加します。また、個別のスタンプオブジェクトに対して異なるフォーマット情報を指定することもできます。次の例では、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトと3つの[TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextStamp)オブジェクトを作成し、その後、ページの[AddStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/class-use/Stamp)メソッドを使用して、PDFのヘッダーセクションにテキストを追加しました。次のコードスニペットは、Aspose.PDF for Javaを使用してPDFファイルのフッターに画像を追加する方法を示しています。
+1. 作成 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) オブジェクトと追加 [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) コンテンツ。
+1. 配置のために余白を設定してください。
+1. ヘッダーとフッターを各ページに割り当て、ドキュメントを保存してください。
 
 ```java
-public static void AddingDifferentHeadersInOnePDFFile() {
+public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(new HtmlFragment("This is an HTML <strong>Header</strong>"));
 
-        // ソースドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "AddingDifferentHeaders.pdf");
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(new HtmlFragment("Powered by <i>Aspose.PDF</i>"));
 
-        // 3つのスタンプを作成
-        TextStamp stamp1 = new TextStamp("Header 1");
-        TextStamp stamp2 = new TextStamp("Header 2");
-        TextStamp stamp3 = new TextStamp("Header 3");
+    MarginInfo margin = new MarginInfo();
+    margin.setLeft(50);
+    margin.setTop(20);
+    header.setMargin(margin);
+    footer.setMargin(margin);
 
-        // スタンプの配置を設定（ページの上部にスタンプを配置し、水平に中央寄せ）
-        stamp1.setVerticalAlignment (VerticalAlignment.Top);
-        stamp1.setHorizontalAlignment(HorizontalAlignment.Center);
-        // フォントスタイルをボールドに指定
-        stamp1.getTextState().setFontStyle(FontStyles.Bold);
-        // テキストの前景色を赤に設定
-        stamp1.getTextState().setForegroundColor(Color.getRed());
-        // フォントサイズを14に指定
-        stamp1.getTextState().setFontSize(14);
-
-        // 2番目のスタンプオブジェクトの垂直配置を上部に設定する必要があります
-        stamp2.setVerticalAlignment(VerticalAlignment.Top);
-        // スタンプの水平配置情報を中央揃えに設定
-        stamp2.setHorizontalAlignment(HorizontalAlignment.Center);
-        // スタンプオブジェクトのズーム係数を設定
-        stamp2.setZoom (10);
-
-        // 3番目のスタンプオブジェクトのフォーマットを設定
-        // スタンプオブジェクトの垂直配置情報を上部に指定
-        stamp3.setVerticalAlignment(VerticalAlignment.Top);
-        // スタンプオブジェクトの水平配置情報を中央揃えに設定
-        stamp3.setHorizontalAlignment (HorizontalAlignment.Center);
-        // スタンプオブジェクトの回転角度を設定
-        stamp3.setRotateAngle(35);
-        // スタンプの背景色をピンクに設定
-        stamp3.getTextState().setBackgroundColor (Color.getPink());
-        
-        // スタンプのフォント情報をVerdanaに変更
-        stamp3.getTextState().setFont (FontRepository.findFont("Verdana"));
-        // 最初のスタンプは最初のページに追加されます
-        pdfDocument.getPages().get_Item(1).addStamp(stamp1);
-        // 2番目のスタンプは2番目のページに追加されます
-        pdfDocument.getPages().get_Item(2).addStamp(stamp2);
-        // 3番目のスタンプは3番目のページに追加されます
-        pdfDocument.getPages().get_Item(3).addStamp(stamp3);
-
-        _dataDir = _dataDir + "multiheader_out.pdf";
-
-        // 更新されたPDFファイルを保存
-        pdfDocument.save(_dataDir);
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
     }
+}
+```
 
+## 画像ヘッダーとフッターの追加
+
+ヘッダーとフッターに毎ページ画像を表示する必要がある場合は、この例を使用してください。
+
+1. 作成 [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) オブジェクトをヘッダーとフッターのコンテナに追加してください。
+1. 余白を設定し、各ページにコンテナを割り当てます。
+1. 更新された PDF を保存してください。
+
+```java
+public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Path outputFile) {
+    Image headerImage = new Image();
+    headerImage.setFile(imageFile.toString());
+    HeaderFooter header = new HeaderFooter();
+    header.getParagraphs().add(headerImage);
+
+    Image footerImage = new Image();
+    footerImage.setFile(imageFile.toString());
+    HeaderFooter footer = new HeaderFooter();
+    footer.getParagraphs().add(footerImage);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            MarginInfo margin = new MarginInfo();
+            margin.setLeft(50);
+            header.setMargin(margin);
+            footer.setMargin(margin);
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## テーブルベースのヘッダーとフッターの追加
+
+ヘッダーとフッターのコンテンツがテーブルレイアウトとテキストスタイリングを使用すべき場合は、この例を使用してください。
+
+1. 必要なテキストスタイルとテーブルオブジェクトを作成してください。
+1. テーブルを追加 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) コンテナ。
+1. ヘッダーとフッターを各ページに適用し、ドキュメントを保存してください。
+
+```java
+public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
+    TextState textStateHeader = new TextState();
+    textStateHeader.setFont(FontRepository.findFont("Arial"));
+    textStateHeader.setFontSize(12);
+    textStateHeader.setHorizontalAlignment(HorizontalAlignment.Center);
+
+    TextState textStateFooter = new TextState();
+    textStateFooter.setFont(FontRepository.findFont("Arial"));
+    textStateFooter.setFontSize(12);
+    textStateFooter.setHorizontalAlignment(HorizontalAlignment.Left);
+
+    HeaderFooter header = new HeaderFooter();
+    HeaderFooter footer = new HeaderFooter();
+
+    Table tableHeader = new Table();
+    tableHeader.setColumnWidths(String.valueOf(594 - header.getMargin().getLeft() - header.getMargin().getRight()));
+    tableHeader.getRows().add().getCells().add("This is a Table Header", textStateHeader);
+
+    Table table = new Table();
+    table.setColumnWidths(String.valueOf(594 - footer.getMargin().getLeft() - footer.getMargin().getRight()));
+    table.getRows().add().getCells().add("Powered by Aspose.PDF", textStateFooter);
+
+    header.getParagraphs().add(tableHeader);
+    footer.getParagraphs().add(table);
+    footer.getMargin().setLeft(150);
+
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getPages().size(); i++) {
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## LaTeXのヘッダーとフッターの追加
+
+ヘッダーとフッターが TeX または LaTeX コンテンツをレンダリングする必要がある場合は、この例を使用してください。
+
+1. ソースPDFを開き、総ページ数を確認してください。
+1. 作成 [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 各ページのヘッダーとフッターの内容。
+1. コンテンツを割り当て、ドキュメントを保存してください。
+
+```java
+public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        int pageCount = document.getPages().size();
+        for (int i = 1; i <= pageCount; i++) {
+            HeaderFooter header = new HeaderFooter();
+            header.getParagraphs().add(new TeXFragment("This is a LaTeX Header. \\today\\", true));
+
+            HeaderFooter footer = new HeaderFooter();
+            footer.getParagraphs().add(new TeXFragment("\\copyright\\ 2025 My Company -- Page \\thepage\\ is " + pageCount, true));
+
+            document.getPages().get_Item(i).setHeader(header);
+            document.getPages().get_Item(i).setFooter(footer);
+        }
+        document.save(outputFile.toString());
+    }
 }
 ```
