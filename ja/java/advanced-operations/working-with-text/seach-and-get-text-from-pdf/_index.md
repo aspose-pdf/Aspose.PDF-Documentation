@@ -1,27 +1,27 @@
 ---
-title: JavaでPDFテキストを検索および抽出
+title: "Java で PDF テキストを検索および抽出"
 linktitle: テキストを検索して取得
 type: docs
 weight: 60
 url: /ja/java/search-and-get-text-from-pdf/
-description: JavaでPDFドキュメントからテキストを検索、検査、抽出する方法を学びましょう。
-lastmod: "2026-10-05"
+description: "Java で PDF ドキュメントからテキストを検索・検査・抽出する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFテキストを検索し、抽出されたフラグメントを検査します。
-Abstract: このコラムでは、Aspose.PDF for Java を使用して PDF ドキュメントからテキストを検索および抽出する方法を説明します。TextAbsorber と TextFragmentAbsorber を取り上げ、領域ベースの抽出、ページ単位の検索、正規表現およびフレーズマッチ、ハイパーリンクの挿入、スタイル化テキストの検査、フラグメントのハイライトを含みます。
+AlternativeHeadline: "Java での PDF テキストを検索し、抽出されたフラグメントの検査"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメントからテキストを検索および抽出する方法を説明します。TextAbsorber および TextFragmentAbsorber を取り上げ、領域ベースの抽出、ページ単位の検索、正規表現およびフレーズマッチ、ハイパーリンクの挿入、スタイル化テキストの検査、フラグメントのハイライトを含みます。"
 ---
-Aspose.PDF for Java は、座標、スタイル、および正規表現マッチングを使用した生テキスト抽出とフラグメントレベルの検索をサポートしています。
+Aspose.PDF for Java は、座標、スタイル、および正規表現マッチングを使用した生テキスト抽出およびフラグメントレベルの検索をサポートしています。
 
 ## TextAbsorber を使用したすべてのページからテキストの抽出
 
 すべてのページで選択した文書領域からプレーンな抽出テキストが必要な場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 作成 `TextExtractionOptions` および地域ベースの `TextSearchOptions`。
-1. 実行 `TextAbsorber` すべてのページで抽出されたテキストを出力してください。
+1. ソース PDF ドキュメントを開いてください。
+1. `TextExtractionOptions` および地域ベースの `TextSearchOptions` を作成してください。
+1. `TextAbsorber` をすべてのページで実行し、抽出されたテキストを出力してください。
 
 ```java
 public static void textAbsorberSearch(Path inputFile) {
@@ -36,13 +36,13 @@ public static void textAbsorberSearch(Path inputFile) {
     }
 ```
 
-## TextAbsorber を使用した 1 ページからテキストの抽出
+## TextAbsorber を使用した 1 ページからのテキスト抽出
 
-プレーンテキスト抽出を1ページに制限すべき場合は、この例を使用してください。
+プレーンテキスト抽出を 1 ページに制限すべき場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 対象領域でテキスト抽出と検索オプションを構成してください。
-1. 実行 `TextAbsorber` 選択したページで結果を出力してください。
+1. ソース PDF ドキュメントを開いてください。
+1. 対象領域でテキスト抽出および検索オプションを構成してください。
+1. `TextAbsorber` を選択したページで実行し、結果を出力してください。
 
 ```java
 public static void textAbsorberSearchPage(Path inputFile) {
@@ -61,8 +61,8 @@ public static void textAbsorberSearchPage(Path inputFile) {
 
 フォント、位置、カラーのメタデータとともにテキストコンテンツが必要な場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 実行 `TextFragmentAbsorber` 全ページにわたって。
+1. ソース PDF ドキュメントを開いてください。
+1. `TextFragmentAbsorber` を全ページにわたって実行してください。
 1. フラグメントを反復処理し、それらのメタデータを出力してください。
 
 ```java
@@ -87,13 +87,13 @@ public static void textFragmentAbsorberSearch(Path inputFile) {
 }
 ```
 
-## 特定のページでフレーズを検索する
+## 特定のページでフレーズの検索
 
 対象の単語が選択したページのみで見つかる必要がある場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 作成 `TextFragmentAbsorber` 対象のフレーズとともに。
-1. 選択したページを訪問し、一致するフラグメントの位置を出力します。
+1. ソース PDF ドキュメントを開いてください。
+1. 対象のフレーズを指定して `TextFragmentAbsorber` を作成してください。
+1. 選択したページを検索し、一致するフラグメントの位置を出力してください。
 
 ```java
 public static void textFragmentAbsorberSearchPage(Path inputFile) {
@@ -109,13 +109,13 @@ public static void textFragmentAbsorberSearchPage(Path inputFile) {
 }
 ```
 
-## ページをまたいでシーケンシャル検索を続行する
+## ページをまたぐシーケンシャル検索の継続
 
 この例は、ページ検索を次へ移動しながら 1 つの absorber を再利用したい場合に使用してください。
 
-1. ソース PDF ドキュメントを開き、再利用可能なアブサーバーを作成してください。
-1. 最初のページを検索し、結果を検査する。
-1. 追加ページの検索を続行し、更新された一致を確認してください。
+1. ソース PDF ドキュメントを開き、再利用可能な absorber を作成してください。
+1. 最初のページを検索し、結果を検査してください。
+1. 追加ページの検索を続行し、更新された一致結果を確認してください。
 
 ```java
 public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
@@ -147,9 +147,9 @@ public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
 
 フレーズマッチングを1ページの領域に限定すべき場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 作成 `TextFragmentAbsorber` 対象フレーズと矩形ベースの `TextSearchOptions`。
-1. ページを訪れて、一致したフラグメントの位置を出力します。
+1. ソース PDF ドキュメントを開いてください。
+1. `TextFragmentAbsorber` を、対象フレーズと矩形ベースの `TextSearchOptions` を指定して作成してください。
+1. ページを訪問し、一致したフラグメントの位置を出力してください。
 
 ```java
 public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
@@ -171,8 +171,8 @@ public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
 
 正規表現パターンで一致を検索すべき場合、固定フレーズではなくこの例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 正規表現対応の作成 `TextFragmentAbsorber`。
+1. ソース PDF ドキュメントを開いてください。
+1. 正規表現対応の `TextFragmentAbsorber` を作成してください。
 1. 対象ページを訪問し、一致するフラグメントを出力してください。
 
 ```java
@@ -191,13 +191,13 @@ public static void textFragmentAbsorberSearchRegex(Path inputFile) {
 }
 ```
 
-## 正規表現パターンでフレーズのリストを検索する
+## 正規表現パターンでフレーズのリストの検索
 
-複数の対象フレーズを一度に見つける必要がある場合は、この例を使用してください。
+複数の対象フレーズを一度に検索する必要がある場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 正規表現パターンの配列を作成し、それを渡す `TextFragmentAbsorber`。
-1. ドキュメントを開いて、グループ化された正規表現の結果を確認してください。
+1. ソース PDF ドキュメントを開いてください。
+1. 正規表現パターンの配列を作成し、それを `TextFragmentAbsorber` に渡してください。
+1. ドキュメントを開き、グループ化された正規表現の結果を確認してください。
 
 ```java
 public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
@@ -219,13 +219,13 @@ public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
 }
 ```
 
-## テキストを検索してハイパーリンクに変換する
+## テキストを検索してハイパーリンクに変換
 
-一致した単語がハイライトされ、クリック可能なリンクに変換される場合は、この例を使用してください。
+一致した単語をハイライトし、クリック可能なリンクに変換する場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 正規表現検索が有効な状態で対象語を検索します。
-1. テキストのスタイルを更新し、ハイパーリンクを添付し、変更されたPDFを保存してください。
+1. ソース PDF ドキュメントを開いてください。
+1. 正規表現検索を有効にして対象語を検索してください。
+1. テキストのスタイルを更新し、ハイパーリンクを添付して、変更された PDF を保存してください。
 
 ```java
 public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
@@ -249,8 +249,8 @@ public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
 
 太字や不可視テキストなどの書式に基づいてフラグメントを検査する必要がある場合は、この例を使用してください。
 
-1. ソースPDFドキュメントを開いてください。
-1. 実行 `TextFragmentAbsorber` 対象ページ上で。
+1. ソース PDF ドキュメントを開いてください。
+1. 対象ページ上で `TextFragmentAbsorber` を実行してください。
 1. 各フラグメントスタイルをチェックし、一致するエントリを出力してください。
 
 ```java
@@ -272,12 +272,12 @@ public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
 }
 ```
 
-## レンダリングされたページプレビューで検索結果をハイライトする
+## レンダリングされたページプレビューでの検索結果のハイライト
 
 テキストの一致をレンダリングされたページ画像と関連付けて視覚的に検査する必要がある場合は、この例をご使用ください。
 
 1. 必要な解像度で PNG デバイスを作成してください。
-1. 各ページを検索 `TextFragmentAbsorber` そしてページを画像ストリームにレンダリングします。
+1. 各ページを `TextFragmentAbsorber` で検索し、ページを画像ストリームにレンダリングしてください。
 1. ページプレビュー画像を書き出し、検査のためにフラグメント座標を出力してください。
 
 ```java

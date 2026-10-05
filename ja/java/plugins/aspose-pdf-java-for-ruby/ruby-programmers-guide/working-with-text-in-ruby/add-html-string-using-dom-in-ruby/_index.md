@@ -5,13 +5,13 @@ type: docs
 weight: 10
 url: /ja/java/add-html-string-using-dom-in-ruby/
 description: RubyでDOM APIを使用し、Aspose.PDFで動的コンテンツを生成する際に、HTML文字列をPDFドキュメントに追加する方法を発見してください。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - HTMLの追加
+## Aspose.PDF - HTML の追加
 
 PDFドキュメントにHTML文字列を追加するには、**Aspose.PDF Java for Ruby** を使用し、単に **AddHtml** モジュールを呼び出すだけです。
 
-Rubyコード
+Ruby コード
 
 ```java
 # The path to the documents directory.
@@ -53,8 +53,8 @@ doc.save(data_dir + "html.output.pdf")
 puts "HTML added successfully"
 ```
 
-## 実行中のコードをダウンロード
+## 実行中のコードのダウンロード
 
-以下に記載されたソーシャルコーディングサイトから **Add HTML (Aspose.PDF)** をダウンロード:
+以下に記載されたソーシャルコーディングサイトから **Add HTML (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)

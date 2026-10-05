@@ -1,26 +1,26 @@
 ---
-title: Java を使用して PDF ヘッダーとフッターを管理する
-linktitle: PDF のヘッダーとフッターを管理する
+title: "Java を使用した PDF ヘッダーとフッターの管理"
+linktitle: "PDF のヘッダーとフッターの管理"
 type: docs
 weight: 70
 url: /ja/java/artifacts-header-footer/
-description: Aspose.PDF for Java を使用して PDF ドキュメントにヘッダーおよびフッターのアーティファクトを追加および削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用して、PDF ドキュメントにヘッダーおよびフッターのアーティファクトを追加・削除する方法を学習します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF ヘッダーとフッターを追加、カスタマイズ、削除する方法
+AlternativeHeadline: "Java を使用した PDF ヘッダーとフッターの追加・カスタマイズ・削除"
 Abstract: このガイドでは、Aspose.PDF for Java を使用して PDF ドキュメント内のヘッダーおよびフッターアーティファクトを管理する方法を説明します。再利用可能な `HeaderArtifact` および `FooterArtifact` オブジェクトをカスタムテキストステートと配置で作成し、ページに追加し、既存のヘッダーおよびフッターアーティファクトを削除する方法を取り上げます。
 ---
-ヘッダーとフッターのアーティファクトは、繰り返しラベルやページ識別子、レイアウトフレーミングなどに一般的に使用される、コンテンツではないページネーション要素です。
+ヘッダーとフッターのアーティファクトは、繰り返しラベル、ページ識別子、レイアウトフレーミングなどに一般的に使用される、コンテンツではないページネーション要素です。
 
 ## ヘッダーアーティファクトの作成
 
 一貫したテキストスタイリングと配置を持つ再利用可能なヘッダーアーティファクトが必要な場合に、このヘルパーを使用してください。
 
-1. [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/)を作成してください。
-1. テキスト、フォント設定、前景色を設定してください。
+1. [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/) を作成してください。
+1. テキスト、フォント設定、および前景色を設定してください。
 1. 水平揃えを設定し、アーティファクトを返してください。
 
 ```java
@@ -39,7 +39,7 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 
 このヘルパーは、ヘッダーアーティファクトと同じスタイリングパターンを持つ再利用可能なフッターアーティファクトを作成します。
 
-1. [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/)を作成してください。
+1. [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/) を作成してください。
 1. テキスト、テキスト状態、および前景色を設定してください。
 1. 配置を設定し、アーティファクトを返してください。
 
@@ -73,7 +73,7 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## フッター アーティファクトの追加
+## フッターアーティファクトの追加
 
 ページが再利用可能なフォーマットでフッターアーティファクトを表示する場合は、この例を使用してください。
 

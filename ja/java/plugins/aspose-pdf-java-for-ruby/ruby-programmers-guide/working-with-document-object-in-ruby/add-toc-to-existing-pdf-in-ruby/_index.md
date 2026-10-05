@@ -1,13 +1,13 @@
 ---
-title: "Ruby での 既存のPDFに目次の追加"
-linktitle: "Ruby での 既存のPDFに目次の追加"
+title: "既存の PDF に目次を追加（Ruby）"
+linktitle: "既存の PDF に目次を追加（Ruby）"
 type: docs
 weight: 30
 url: /ja/java/add-toc-to-existing-pdf-in-ruby/
-description: Aspose.PDF を使用して、Rubyで既存のPDFに目次を追加し、文書のナビゲーションを向上させる方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、Ruby で既存の PDF に目次を追加し、文書のナビゲーションを向上させる方法を学びます。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - 目次の追加
+## Aspose.PDF での目次の追加
 
 <ins>PDF ドキュメントに TOC を追加するには、**Aspose.PDF Java for Ruby** を使用し、単に **AddToc** モジュールを呼び出します。
 
@@ -89,6 +89,6 @@ puts "Added TOC Successfully, please check the output file."
 
 ## <ins> **実行コードのダウンロード**
 
-ダウンロードВ **TOC を追加 (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれかから：
+ダウンロード **TOC を追加 (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれかから：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

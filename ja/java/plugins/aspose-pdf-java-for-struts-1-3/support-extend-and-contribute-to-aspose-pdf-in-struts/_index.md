@@ -1,21 +1,21 @@
 ---
-title: StrutsでAspose.Pdfをサポート、拡張、および貢献する
-linktitle: StrutsでAspose.Pdfをサポート、拡張、および貢献する
+title: "Struts での Aspose.Pdf のサポート、拡張、および貢献"
+linktitle: "Struts での Aspose.Pdf のサポート、拡張、および貢献"
 type: docs
 weight: 20
 url: /ja/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
-description: Strutsベースのプロジェクトで Aspose.PDF for Java をサポート、拡張、貢献する方法を見つけましょう。
-lastmod: "2026-10-05"
+description: "Struts ベースのプロジェクトで Aspose.PDF for Java をサポート、拡張、貢献する方法を確認してください。"
+lastmod: "2026-10-06"
 ---
 ## サポート
 
 {{% alert color="primary" %}}
 
-- アプリケーションでユーザーや QA チームが報告した既知/報告された問題を確認したい場合。
-- または、アプリケーションで見つけた問題を報告したい場合。
-- 改善提案や機能リクエストがありますか
+- アプリケーションでユーザーまたは QA チームが報告した既知の問題や報告された問題を確認したい場合。
+- または、アプリケーションで発見した問題を報告したい場合。
+- 改善の提案や機能リクエストがありますか。
 
-以下のいずれかのプロジェクトの課題トラッカーをご利用ください：
+以下のいずれかのプロジェクトの課題トラッカーをご利用ください。
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
@@ -27,7 +27,7 @@ Aspose.PDF Java for Struts 1.3 はオープンソースであり、そのソー�
 
 ## ソースコード
 
-最新のソースコードは、以下のいずれかの場所から取得できます
+最新のソースコードは、以下のいずれかの場所から取得してください。
 
 - [CodePlex](https://asposepdfforstruts.codeplex.com)
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)

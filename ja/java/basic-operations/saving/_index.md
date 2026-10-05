@@ -1,16 +1,16 @@
 ---
-title: PDF ドキュメントをプログラムで保存する
+title: "PDF ドキュメントをプログラムで保存"
 linktitle: "PDF の保存"
 type: docs
 weight: 30
 url: /ja/java/save-pdf-document/
 description: Aspose.PDF を使用して、Java で PDF ドキュメントをファイルに保存する方法、ストリームに保存する方法、または PDF 標準として保存する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で Aspose.PDF ライブラリを使用して PDF ドキュメントを保存する
+AlternativeHeadline: "Java での Aspose.PDF ライブラリを使用して PDF ドキュメントの保存"
 Abstract: この記事では、Aspose.PDF を使用して Java で PDF ドキュメントを保存する方法について説明します。ファイル パスへの保存、OutputStream への保存、PDF/X 標準ファイルとして保存する前のドキュメント変換についてカバーしています。
 ---
 Aspose.PDF for Java は、ターゲットの宛先や出力要件に応じて、ドキュメントを保存するさまざまな方法を提供します。
@@ -19,9 +19,9 @@ Aspose.PDF for Java は、ターゲットの宛先や出力要件に応じて、
 
 ドキュメントを保存できます：
 
-1. 保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ディスク上のファイルに直接。
-1. 保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) へ `OutputStream`。
-1. 変換する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) で [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) そして、標準形式（例：）で保存する [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/)。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) をディスク上のファイルに直接保存してください。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を `OutputStream` に保存してください。
+1. [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) を使用して [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を変換し、[PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) などの標準形式で保存してください。
 
 ## ドキュメントをファイルに保存
 
@@ -34,7 +34,7 @@ public static void saveDocumentToFile(Path inputFile, Path outputFile) {
 }
 ```
 
-## ストリームにドキュメントの保存
+## ストリームにドキュメントを保存
 
 ```java
 public static void saveDocumentToStream(Path inputFile, Path outputFile) throws Exception {
@@ -48,7 +48,7 @@ public static void saveDocumentToStream(Path inputFile, Path outputFile) throws 
 }
 ```
 
-## PDF/X として文書の保存
+## PDF/X として文書を保存
 
 ```java
 public static void saveDocumentAsStandard(Path inputFile, Path outputFile) {

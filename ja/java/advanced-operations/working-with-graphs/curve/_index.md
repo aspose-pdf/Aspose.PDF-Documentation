@@ -1,29 +1,29 @@
 ---
-title: "Java での PDFに曲線シェイプの追加"
+title: "Java での PDF への曲線シェイプの追加"
 linktitle: "曲線の追加"
 type: docs
 weight: 30
 url: /ja/java/add-curve/
-description: JavaでPDFファイルに曲線シェイプを描画および塗りつぶす方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ファイルに曲線シェイプを描画および塗りつぶす方法を学習します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してPDFファイルに曲線シェイプを描画する
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントに曲線シェイプを追加する方法を示します。座標配列から曲線を作成し、Graph コンテナ内でストロークカラーまたは塗りつぶしカラーを適用する方法をカバーしています。
+AlternativeHeadline: "Java を使用した PDF ファイルへの曲線シェイプの描画"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメントに曲線シェイプを追加する方法を説明します。座標配列から曲線を作成し、Graph コンテナ内でストロークカラーまたは塗りつぶしカラーを適用する方法をカバーしています。"
 ---
-Aspose.PDF for Java の曲線は、float 座標配列を渡すことで定義されます `Curve`.
+Aspose.PDF for Java の曲線は、float 型の座標配列を `Curve` コンストラクタに渡すことで定義されます。
 
 ## 曲線のアウトラインの追加
 
-1. 新しいPDFを作成 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
-1. 追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 文書に。
-1. 作成する [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
-1. 作成する [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) シェイプとその制御ポイントを設定してください。
-1. 追加する [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) へ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナ。
-1. 例で必要とされるシェイプ プロパティを設定し、次を含めます [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/)。
-1. 出力 PDF を保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 新しい PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) として作成してください。
+1. ドキュメントに [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加してください。
+1. [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
+1. [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) シェイプを作成し、その制御ポイントを設定してください。
+1. [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) を [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナに追加してください。
+1. 例で必要とされるシェイプ プロパティを設定し、[Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) を含めてください。
+1. 出力 PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) に保存してください。
 
 ```java
 public static void addCurve(Path outputFile) {

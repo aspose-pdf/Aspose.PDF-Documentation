@@ -1,13 +1,13 @@
 ---
-title: "Python での ドキュメントウィンドウとページ表示プロパティの取得"
-linktitle: "Python での ドキュメントウィンドウとページ表示プロパティの取得"
+title: "Python でのドキュメントウィンドウとページ表示プロパティの取得"
+linktitle: "Python でのドキュメントウィンドウとページ表示プロパティの取得"
 type: docs
 weight: 30
 url: /ja/java/get-document-window-and-page-display-properties-in-python/
 description: Aspose.PDF を使用して Python で PDF からドキュメントウィンドウとページ表示プロパティを取得する方法を理解し、正確な表示を実現します。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
-**Aspose.PDF Java for Python** を使用して PDF ドキュメントのドキュメントウィンドウとページ表示プロパティを取得するには、単に **GetDocumentWindow** クラスを呼び出します。
+**Aspose.PDF Java for Python** を使用して PDF ドキュメントのドキュメントウィンドウとページ表示プロパティを取得するには、単に **GetDocumentWindow** クラスを呼び出してください。
 
 ```python
 
@@ -53,6 +53,6 @@ print "pageMode :-" + str(doc.getPageMode())
 
 **実行コードをダウンロード**
 
-ダウンロードВ **ドキュメントウィンドウとページ表示プロパティ (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトから:
+以下に記載されたソーシャルコーディングサイトのいずれかから **ドキュメントウィンドウとページ表示プロパティ (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)

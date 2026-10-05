@@ -1,17 +1,17 @@
 ---
-title: JavaでPDFページプロパティを取得および設定する
+title: "Java での PDF ページプロパティの取得および設定"
 linktitle: ページプロパティの取得と設定
 type: docs
 weight: 90
 url: /ja/java/get-and-set-page-properties/
-description: Javaでページ数、ボックス、回転、色情報などのPDFページプロパティを検査する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で、ページ数、ボックス、回転、色情報などの PDF ページプロパティを検査する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してPDFファイルのページ数、ボックス、色タイプを検査する
-Abstract: この記事では、Aspose.PDF for Java を使用してページプロパティを検査する方法を説明します。ページ数の取得、段落の生成と保存前の結果カウントの確認、主要なページボックス値をすべて出力、各ページのカラータイプの識別を取り上げています。
+AlternativeHeadline: "Java を使用して PDF ファイルのページ数、ボックス、色タイプの検査"
+Abstract: "この記事では、Aspose.PDF for Java を使用してページプロパティを検査する方法を説明します。ページ数の取得、段落の生成と保存前の結果カウントの確認、主要なページボックス値のすべての出力、各ページのカラータイプの識別を取り上げています。"
 ---
 Aspose.PDF for Java は、ページ数、ページボックス、回転、およびページのカラータイプを検査できます。
 
@@ -20,8 +20,8 @@ Aspose.PDF for Java は、ページ数、ページボックス、回転、およ
 PDF の総ページ数を読み取る必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ページコレクションのサイズを読み取ります。
-1. 合計ページ数を出力します。
+1. ページ コレクションのサイズを読み取ってください。
+1. 合計ページ数を出力してください。
 
 ```java
 public static void getPageCount(Path inputFile) {
@@ -31,12 +31,12 @@ public static void getPageCount(Path inputFile) {
 }
 ```
 
-## 保存する前にページ数の取得
+## 保存する前のページ数の取得
 
-ファイルを書き込む前に、生成されたコンテンツが何ページになるかを知りたいときはこの例を使用してください。
+ファイルを書き込む前に、生成されたコンテンツが何ページになるかを知りたい場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページにコンテンツを追加してください。
-1. 段落を処理して、レイアウト計算を強制します。
+1. 段落を処理して、レイアウト計算を強制してください。
 1. 結果として得られたページ数を読み取り、出力してください。
 
 ```java
@@ -56,9 +56,9 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 
 主要なボックス寸法およびページ回転値をすべて検査する必要がある場合は、この例を使用してください。
 
-1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、対象ページにアクセスしてください。
-1. ページボックスの値をマップに収集します。
-1. サイズとページ回転情報を出力します。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いて、対象ページにアクセスしてください。
+1. ページボックスの値をマップに収集してください。
+1. サイズとページ回転情報を出力してください。
 
 ```java
 public static void getPageProperties(Path inputFile) {
@@ -90,11 +90,11 @@ public static void getPageProperties(Path inputFile) {
 
 ## 各ページの色タイプの取得
 
-ページが白黒、グレースケール、またはRGBかを判別する必要がある場合は、この例を使用してください。
+ページが白黒、グレースケール、または RGB かを判別する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. すべてのページを反復処理して各ページを読み取ります [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/)。
-1. 列挙型の値を読みやすいテキストに変換し、結果を出力してください。
+1. すべてのページを反復処理して、各ページの [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) を読み取ってください。
+1. 列挙型の値を読みやすいテキストに変換して、結果を出力してください。
 
 ```java
 public static void getPageColorType(Path inputFile) {

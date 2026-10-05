@@ -1,20 +1,20 @@
 ---
-title: フィールドを装飾
-linktitle: フィールドを装飾
+title: "フィールドの装飾"
+linktitle: "フィールドの装飾"
 type: docs
 weight: 10
 url: /ja/java/decorate-field/
-description: JavaでAspose.PDFのFormEditorファサードを使用して、色と配置でPDFフォームフィールドを装飾する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で Aspose.PDF の FormEditor ファサードを使用して、色と配置で PDF フォームフィールドを装飾する方法を学びます。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: JavaでPDFフォームフィールドを装飾する
-Abstract: この記事では、既存のPDFをバインドし、色と配置でFormFieldFacadeを設定し、フィールドを装飾し、Aspose.PDF for JavaのFormEditorファサードを使用して更新されたドキュメントを保存する方法を示します。
+AlternativeHeadline: "Java での PDF フォームフィールドの装飾"
+Abstract: "この記事では、既存の PDF をバインドし、色と配置で FormFieldFacade を設定してフィールドを装飾し、Aspose.PDF for Java の FormEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。"
 ---
-## フィールドを装飾する
+## フィールドの装飾
 
-1. ソースPDFをバインドする `FormEditor` ファサード。
-2. 設定 `FormFieldFacade` 必要な色と配置で。
-3. ファサードをエディタに渡し、呼び出す `decorateField(...)`。
+1. ソース PDF を `FormEditor` ファサードにバインドしてください。
+2. `FormFieldFacade` を必要な色と配置で設定してください。
+3. ファサードをエディタに渡し、`decorateField(...)` を呼び出してください。
 4. 更新されたドキュメントを保存してください。
 
 ```java

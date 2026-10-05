@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /ja/java/add-rubber-stamp/
 description: Aspose.PDF の PdfContentEditor ファサードを使用して、Java で PDF ドキュメントにラバースタンプ アノテーションを追加する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF にラバースタンプを追加
+AlternativeHeadline: "Java での PDF へのラバースタンプ追加"
 Abstract: この記事では、PDF をバインドし、ラベル テキストとカラーを指定したラバースタンプ アノテーションを作成し、Aspose.PDF for Java の PdfContentEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
 ## ラバースタンプの追加
 
-1. ソース PDF をバインドする `PdfContentEditor` ファサード。
-2. 呼び出す `createRubberStamp(...)` ページ番号、矩形、タイトル、内容、そして色を使用して。
+1. ソース PDF を `PdfContentEditor` ファサードにバインドしてください。
+2. `createRubberStamp(...)` を、ページ番号、矩形、タイトル、内容、および色を引数として呼び出してください。
 3. 更新された PDF ドキュメントを保存してください。
 
 ```java

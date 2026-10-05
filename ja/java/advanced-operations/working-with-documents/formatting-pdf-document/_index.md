@@ -1,27 +1,27 @@
 ---
-title: JavaでPDFドキュメントをフォーマットする
-linktitle: PDFドキュメントのフォーマット
+title: "Java での PDF ドキュメントのフォーマット"
+linktitle: "PDF ドキュメントのフォーマット"
 type: docs
 weight: 11
 url: /ja/java/formatting-pdf-document/
-description: JavaでPDF文書の書式設定、フォントの埋め込み、ビューア設定の制御、表示オプションの調整方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF 文書の書式設定、フォントの埋め込み、ビューア設定の制御、表示オプションの調整方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFファイルのドキュメントウィンドウ、フォント、ズーム動作を設定します。
+AlternativeHeadline: "Java での PDF ドキュメントのウィンドウ、フォント、ズーム動作の設定"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントをフォーマットする方法を説明します。ドキュメントウィンドウ設定の読み取りと更新、フォントの埋め込み、デフォルトフォントの設定、フォントの一覧表示、埋め込みフォントのサブセット化、初期ズームファクターの制御について扱います。
 ---
 Aspose.PDF for Java のフォーマットには、ビューアの動作、フォントの埋め込み、および表示設定が含まれます。
 
 ## ドキュメントウィンドウ設定の取得
 
-この例を使用して、既存の PDF ドキュメントに保存されている現在のビューア設定を検査します。
+この例を使用して、既存の PDF ドキュメントに保存されている現在のビューア設定を検査してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 文書から必要なウィンドウおよび表示プロパティを読み取ります。
-1. 現在の設定を検査またはデバッグのために出力します。
+1. ドキュメントから必要なウィンドウおよび表示プロパティを読み取ってください。
+1. 現在の設定を検査またはデバッグのために出力してください。
 
 ```java
 public static void getDocumentWindow(Path inputFile) {
@@ -45,8 +45,8 @@ public static void getDocumentWindow(Path inputFile) {
 この例では、互換性のあるビューアで開かれたときに PDF の表示方法を更新します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 必要なウィンドウ、レイアウト、ページモードの設定を行います。
-1. 更新された PDF を保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 必要なウィンドウ、レイアウト、ページモードの設定を行ってください。
+1. 更新した PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
 ```java
 public static void setDocumentWindow(Path inputFile, Path outputFile) {
@@ -66,13 +66,13 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 }
 ```
 
-## 既存のPDFにフォントを埋め込む
+## 既存の PDF にフォントを埋め込む
 
-文書が必要なフォントを含んでいるべき場合、他のシステムでの表示をより確実にするためにこのアプローチを使用してください。
+ドキュメントに必要なフォントを含める必要がある場合は、他のシステムでの表示をより確実にするためにこの方法を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 標準フォントの埋め込みを有効にし、各フォントの使用状況を反復処理します [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
-1. 非埋め込みのものをマークする [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) 埋め込み用オブジェクト。
+1. 標準フォントの埋め込みを有効にして、各 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) で使用されているフォントを順に処理してください。
+1. 埋め込み対象として、非埋め込みの [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) オブジェクトをマークしてください。
 1. 更新されたドキュメントを保存してください。
 
 ```java
@@ -91,14 +91,14 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## 新しいPDFを作成する際にフォントを埋め込む
+## 新しい PDF を作成する際にフォントを埋め込む
 
-この例は新しい PDF を作成し、最初からテキストコンテンツに埋め込みフォントを割り当てます。
+この例では、新しい PDF を作成し、テキスト コンテンツに対して最初から埋め込みフォントを割り当てます。
 
-1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
-1. 必要なものを作成する [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/)、そして [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/)。
-1. ターゲットを解決する [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) リポジトリから取得し、埋め込みとしてマークします。
-1. テキストコンテンツをページに追加し、出力ドキュメントを保存してください。
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加してください。
+1. 必要な [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)、[TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/)、および [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) を作成してください。
+1. ターゲットの [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) をリポジトリから解決し、埋め込みとしてマークしてください。
+1. テキスト コンテンツをページに追加し、出力ドキュメントを保存してください。
 
 ```java
 public static void embeddedFontsInNewDocument(Path outputFile) {
@@ -119,12 +119,12 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 }
 ```
 
-## PDF出力のデフォルトフォントの設定
+## PDF 出力のデフォルトフォントの設定
 
-出力生成時に、保存されたドキュメントが特定のフォントにフォールバックする必要がある場合は、このパターンを使用します。
+出力生成時に、保存されたドキュメントが特定のフォントにフォールバックする必要がある場合は、この方法を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成 [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) そして、デフォルトのフォント名を設定してください。
+1. [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) を作成し、デフォルトのフォント名を設定してください。
 1. 設定された保存オプションでドキュメントを保存してください。
 
 ```java
@@ -137,13 +137,13 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 }
 ```
 
-## PDFで使用されているすべてのフォントの取得
+## PDF で使用されているすべてのフォントの取得
 
-この例は、ドキュメントで検出されたすべてのフォントを一覧表示し、エクスポートまたはファイルの更新を行う前にフォント使用状況を監査できるようにします。
+この例では、ドキュメントで検出されたすべてのフォントを一覧表示し、エクスポートまたはファイルの更新を行う前にフォントの使用状況を監査できるようにします。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ドキュメントフォントユーティリティで返されるフォントを列挙します。
-1. 検出された各項目の名前を出力します [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. ドキュメントフォントユーティリティで返されるフォントを列挙してください。
+1. 検出された各 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) の名前を出力してください。
 
 ```java
 public static void getAllFonts(Path inputFile) {
@@ -155,13 +155,13 @@ public static void getAllFonts(Path inputFile) {
 }
 ```
 
-## フォントをサブセット化して埋め込みを改善する
+## フォントをサブセット化して埋め込みの改善
 
 ドキュメントの使用に合わせて埋め込みフォントデータを調整しながら、フォントのペイロードを削減したい場合にこのアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 必要なものとともに、ドキュメント フォント ユーティリティでフォントサブセットを実行する [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) 値。
-1. 最適化された文書を保存してください。
+1. 必要な [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) 値とともに、ドキュメントフォントユーティリティでフォントサブセットを実行してください。
+1. 最適化されたドキュメントを保存してください。
 
 ```java
 public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
@@ -175,11 +175,11 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 
 ## ドキュメントを開くときのズーム倍率の設定
 
-この例では、PDFを開くときに適用されるべき初期ズームレベルを設定します。
+この例では、PDF を開くときに適用される初期ズームレベルを設定します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成 [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) と [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/)。
-1. アクションを文書のオープン アクションとして割り当て、結果を保存してください。
+1. [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) と [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/) を作成してください。
+1. アクションをドキュメントのオープン時アクションとして割り当てて、結果を保存してください。
 
 ```java
 public static void setZoomFactor(Path inputFile, Path outputFile) {
@@ -193,11 +193,11 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 
 ## ドキュメントのオープン時ズーム率の取得
 
-この例を使用して、PDF がすでにオープンアクションのために明示的なズームレベルを定義しているかどうかを確認してください。
+この例を使用して、PDF がすでにオープン時アクションに対して明示的なズーム率を定義しているかどうかを確認してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. open actionがaかどうか確認してください [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) と [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/)。
-1. 設定されたズーム値を出力するか、ズームが設定されていないことを報告します。
+1. オープン時アクションが [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) かつ [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/) を持っているかどうかを確認してください。
+1. 設定されたズーム値を出力するか、ズームが設定されていないことを報告してください。
 
 ```java
 public static void getZoomFactor(Path inputFile) {

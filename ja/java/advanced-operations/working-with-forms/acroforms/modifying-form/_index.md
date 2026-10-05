@@ -4,24 +4,24 @@ linktitle: AcroForm の変更
 type: docs
 weight: 45
 url: /ja/java/modifying-form/
-description: Aspose.PDF for Java を使用して PDF ドキュメント内の AcroForm フィールドを変更し、テキストのクリア、制限の設定、フィールドのスタイリング、フィールドの削除を行います。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用して、PDF ドキュメント内の AcroForm フィールドを変更できます。変更内容には、テキストのクリア、制限の設定、フィールドのスタイリング、フィールドの削除が含まれます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で PDF フォームフィールドを変更およびカスタマイズする
+AlternativeHeadline: "Java での PDF フォームフィールドの変更およびカスタマイズ"
 Abstract: この記事では、Aspose.PDF for Java を使用して AcroForm コンテンツを変更する方法を説明します。タイプライターフォームリソースからテキストをクリアすること、テキストフィールドの長さ制限を設定および読み取ること、フォームフィールドの Font 外観を変更すること、名前で特定のフィールドを削除することについて解説しています。
 ---
 フォームの保守は、フィールドレベルの編集とフォーム関連ページリソースのクリーンアップの両方を含むことがよくあります。
 
-## 埋め込みフォームリソースのテキストをクリアする
+## 埋め込みフォームリソースのテキストのクリア
 
 フォームオブジェクト自体を削除せずに、タイプライターフォームの内容を空にする必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. ページのフォームリソースを反復処理し、タイプライターフォームを検索してください。
-1. 吸収されたテキストフラグメントをクリアし、ドキュメントを保存します。
+1. 吸収されたテキストフラグメントをクリアし、ドキュメントを保存してください。
 
 ```java
 public static void clearTextInForm(Path inputFile, Path outputFile) {
@@ -43,10 +43,10 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 ## テキスト フィールドの長さ制限の設定
 
-テキスト フィールドが限定された文字数のみ受け付ける場合は、この例を使用してください。
+テキスト フィールドが限定された文字数のみを受け付ける場合は、この例を使用してください。
 
-1. 作成 [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) facade と source PDF をバインドしてください。
-1. target フィールドの最大長さを設定してください。
+1. [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) オブジェクトを作成し、ソース PDF にバインドしてください。
+1. 対象フィールドの最大長さを設定してください。
 1. 更新されたドキュメントを保存してください。
 
 ```java
@@ -67,8 +67,8 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 テキストフィールドの現在の最大長さを確認する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. フォームコレクションから対象フィールドにアクセスします。
-1. 制限を以下から読み取ります [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) そして出力してください。
+1. フォームコレクションから対象フィールドにアクセスしてください。
+1. [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) から制限値を読み取り、出力してください。
 
 ```java
 public static void getFieldLimit(Path inputFile) {
@@ -83,10 +83,10 @@ public static void getFieldLimit(Path inputFile) {
 
 ## Form フィールドのフォントの変更
 
-既存のテキストフィールドに別のフォントまたは外観を使用する必要がある場合に、この例を使用します。
+既存のテキストフィールドに別のフォントまたは外観を使用する必要がある場合に、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ターゲットにアクセス [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) そして新しいデフォルトの外観を設定します。
+1. ターゲットの [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) にアクセスし、新しいデフォルトの外観を設定してください。
 1. 更新された PDF を保存してください。
 
 ```java

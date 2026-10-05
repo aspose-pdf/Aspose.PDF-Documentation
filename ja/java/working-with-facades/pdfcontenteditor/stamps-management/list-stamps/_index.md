@@ -1,20 +1,20 @@
 ---
-title: スタンプの一覧
-linktitle: スタンプの一覧
+title: "スタンプの一覧表示"
+linktitle: "スタンプの一覧表示"
 type: docs
 weight: 20
 url: /ja/java/list-stamps/
 description: Aspose.PDF の PdfContentEditor ファサードを使用して、Java でページ上のゴムスタンプを一覧表示する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF のゴムスタンプを一覧表示
+AlternativeHeadline: "Java での PDF のゴムスタンプ一覧表示"
 Abstract: この記事では、PDF をバインドし、ページ上のスタンプを取得し、Aspose.PDF for Java の PdfContentEditor ファサードを使用して結果のコレクションを検査する方法を示します。
 ---
-## ページ上のスタンプを一覧表示
+## ページ上のスタンプの一覧表示
 
-1. ソース PDF をバインドする `PdfContentEditor` ファサード。
-2. 呼び出し `getStamps(pageNumber)` 対象ページのスタンプを取得してください。
-3. 結果を検査する `StampInfo[]` コレクション。
+1. ソース PDF を `PdfContentEditor` ファサードにバインドしてください。
+2. `getStamps(pageNumber)` を呼び出して、対象ページのスタンプを取得してください。
+3. 結果の `StampInfo[]` コレクションを検柼してください。
 
 ```java
 public static void listStamps(Path inputFile) {

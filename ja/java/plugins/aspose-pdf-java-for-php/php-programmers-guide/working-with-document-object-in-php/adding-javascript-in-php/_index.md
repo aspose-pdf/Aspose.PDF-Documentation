@@ -5,11 +5,11 @@ type: docs
 weight: 10
 url: /ja/java/adding-javascript-in-php/
 description: PHP と Aspose.PDF を使用して PDF ファイルに JavaScript を追加し、ドキュメントのインタラクティビティを向上させる方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - JavaScript の追加
+## Aspose.PDF での JavaScript の追加
 
-**Aspose.PDF Java for PHP** を使用して PDF ドキュメントに JavaScript を追加するには、単に **AddJavaScript** クラスを呼び出します。
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントに JavaScript を追加するには、単に **AddJavaScript** クラスを呼び出してください。
 
 PHP コード
 
@@ -36,6 +36,6 @@ print "Added JavaScript Successfully, please check the output file.";
 
 **実行コードをダウンロード**
 
-ダウンロードВ **JavaScript の追加 (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれかから:
+「**JavaScript の追加 (Aspose.PDF)**」をダウンロードするには、以下のいずれかのソーシャルコーディングサイトから行なってください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddJavascript.php)

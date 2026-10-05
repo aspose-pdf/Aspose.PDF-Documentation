@@ -1,24 +1,24 @@
 ---
-title: PDF の画像を取得および検索する
-linktitle: 画像を取得および検索する
+title: "PDF の画像の取得および検索"
+linktitle: "画像の取得および検索"
 type: docs
 weight: 40
 url: /ja/java/search-and-get-images-from-pdf-document/
-description: Java で PDF ドキュメント内の画像を検索および検査する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ドキュメント内の画像を検索および検査する方法を学習します。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF ファイル内の画像を検索および検査する
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメント内の画像を検索および検査する方法を示します。画像配置のジオメトリを読み取ること、カラータイプの検出、代替テキストの抽出、およびページオペレーターから実効画像解像度を計算することをカバーします。
+AlternativeHeadline: "Java での PDF ファイル内の画像の検索および検査"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメント内の画像を検索および検査する方法を示します。画像の配置ジオメトリの読み取り、カラータイプの検出、代替テキストの抽出、およびページオペレーターからの実効画像解像度の計算について説明します。"
 ---
 Aspose.PDF for Java は、画像配置情報だけでなく、より低レベルの描画データも検査できます。
 
 ## 画像配置パラメータの取得
 
-ページ上で画像ジオメトリと実効解像度を検査する必要がある場合に、この例を使用してください。
+ページ上の画像ジオメトリおよび実効解像度を検査する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 画像配置を収集してください。
-1. 配置された各画像のサイズ、座標、解像度を出力します。
+1. [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) を使用して画像配置を収集してください。
+1. 配置された各画像のサイズ、座標、解像度を出力してください。
 
 ```java
 public static void extractImageParams(Path inputFile) {
@@ -38,12 +38,12 @@ public static void extractImageParams(Path inputFile) {
 }
 ```
 
-## 画像の色タイプを検出
+## 画像の色タイプの検出
 
-PDFページでグレースケール画像とRGB画像の数をカウントする必要がある場合にこの例を使用してください。
+PDF ページ内のグレースケール画像と RGB 画像の数をカウントする必要がある場合、この例をご使用ください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) ページ画像を反復処理してください。
+1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) でページの画像を反復処理してください。
 1. 読み取る [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) 各画像のColorTypeを読み取り、合計を出力してください。
 
 ```java
@@ -83,7 +83,7 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 ページ画像に関連付けられたアクセシビリティテキストを検査する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 画像配置を収集してください。
+1. [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) を使用して画像配置を収集してください。
 1. 各画像の代替テキストを読み取り、結果を出力してください。
 
 ```java
@@ -105,13 +105,13 @@ public static void extractImageAltText(Path inputFile) {
 }
 ```
 
-## ページ演算子から画像情報を計算する
+## ページオペレーターによる画像情報の算出
 
 低レベルのページコンテンツ演算子から有効な画像サイズと解像度を導き出す必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、画像リソース名を収集してください。
-1. ページ演算子を反復処理する間、グラフィックス状態を追跡します。
-1. 各画像描画操作を解決し、その実効寸法と解像度を計算します。
+1. ページ演算子を反復処理する間、グラフィックス状態を追跡してください。
+1. 各画像描画操作を解決し、その実効寸法と解像度を計算してください。
 
 ```java
 public static void extractImageInformationFromPdf(Path inputFile) {

@@ -1,16 +1,16 @@
 ---
-title: "Java での PDFに画像スタンプの追加"
-linktitle: PDFファイルの画像スタンプ
+title: "Java での PDF への画像スタンプの追加"
+linktitle: "PDF ファイルの画像スタンプ"
 type: docs
 weight: 10
 url: /ja/java/image-stamps-in-pdf-page/
-description: JavaでPDFページに画像スタンプを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ページに画像スタンプを追加する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してPDFページに画像スタンプと画像背景を追加する
+AlternativeHeadline: "Java を使用した PDF ページへの画像スタンプと画像背景の追加"
 Abstract: このドキュメントでは、Aspose.PDF for Java を使用して PDF ファイルに画像スタンプを追加する方法を解説します。位置指定、回転、透明度、品質管理を伴う画像スタンプと、画像を浮動ボックスの背景として使用する方法について説明します。
 ---
 Aspose.PDF for Java は、オーバーレイとしての画像スタンプおよび画像を背景としたレイアウト要素をサポートしています。
@@ -46,7 +46,7 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 ImageStamp のレンダリング品質を調整する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成する [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) 品質値を設定してください。
+1. [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) を作成し、品質値を設定してください。
 1. ページにスタンプを追加し、結果を保存してください。
 
 ```java
@@ -60,12 +60,12 @@ public static void addImageStampWithQualityControl(Path inputFile, Path imageFil
 }
 ```
 
-## 画像をフローティングボックスの背景として使用する
+## 画像をフローティングボックスの背景として使用
 
 画像をスタイル付きレイアウトコンテナの背景として使用する場合は、この例を使用してください。
 
-1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、対象ページにアクセスしてください。
-1. 作成する [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) テキストと枠設定で。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いて、対象ページにアクセスしてください。
+1. [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) オブジェクトを、テキストと枠の設定で作成してください。
 1. 背景画像を設定し、ボックスをページに追加し、ドキュメントを保存してください。
 
 ```java

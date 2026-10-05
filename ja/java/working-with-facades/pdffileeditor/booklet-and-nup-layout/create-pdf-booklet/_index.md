@@ -1,28 +1,28 @@
 ---
-title: "PDFブックレットの作成"
-linktitle: "PDFブックレットの作成"
+title: "PDF ブックレットの作成"
+linktitle: "PDF ブックレットの作成"
 type: docs
 weight: 20
 url: /ja/java/create-pdf-booklet/
-description: Javaで既存のドキュメントから、PdfFileEditorファサードを使用してブックレット用のPDFを作成します。
-lastmod: "2026-10-05"
+description: "Java で既存のドキュメントから、PdfFileEditor ファサードを使用してブックレット用の PDF を作成します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFドキュメントからブックレット出力を生成する
-Abstract: Aspose.PDF for Javaを使用してPDFブックレットを作成する方法を学びます。このJava例ではPdfFileEditorを使用してページをブックレット印刷用に並び替え、さらに単純な成功確認のためのブール値を返すバリアントも含まれています。
+AlternativeHeadline: "Java での PDF ドキュメントからブックレット出力の生成"
+Abstract: "Aspose.PDF for Java を使用して PDF ブックレットを作成する方法を学びます。この Java の例では、PdfFileEditor を使用してページをブックレット印刷用に並び替え、さらに単純な成功確認のためのブール値を返すバリアントも含まれています。"
 ---
-## PDFブックレットの作成
+## PDF ブックレットの作成
 
-使用 `PdfFileEditor.makeBooklet` 既存のPDFのページをブックレット順に再配置する。
+`PdfFileEditor.makeBooklet` を使用して、既存の PDF のページをブックレット順に再配置します。
 
 ### 手順
 
-1. 作成 `PdfFileEditor` インスタンス。
-2. 呼び出し `makeBooklet` ソースPDFおよび出力ファイルとともに。
+1. `PdfFileEditor` インスタンスを作成してください。
+2. `makeBooklet` をソース PDF および出力ファイルとともに呼び出してください。
 3. ブックレット文書を保存してください。
-4. 戻りステータスを確認したい場合は、ブール値を返すバリアントを使用し、失敗した結果を処理します。
+4. 戻りステータスを確認したい場合は、ブール値を返すバリアントを使用し、失敗した結果を処理してください。
 
 ### Java の例
 

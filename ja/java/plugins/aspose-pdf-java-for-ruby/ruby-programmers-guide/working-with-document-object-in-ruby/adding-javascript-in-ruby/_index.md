@@ -1,17 +1,17 @@
 ---
-title: "Ruby での JavaScriptの追加"
-linktitle: "Ruby での JavaScriptの追加"
+title: "Ruby での JavaScript の追加"
+linktitle: "Ruby での JavaScript の追加"
 type: docs
 weight: 10
 url: /ja/java/adding-javascript-in-ruby/
-description: インタラクティブ性と自動化のために、RubyでAspose.PDFを使用してPDFのJavaScript機能を有効にします。
-lastmod: "2026-10-05"
+description: "インタラクティブ性と自動化のために、Ruby で Aspose.PDF を使用して PDF の JavaScript 機能を有効にします。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - JavaScriptの追加
+## Aspose.PDF での JavaScript の追加
 
-**Aspose.PDF Java for Ruby** を使用してPDFドキュメントにJavaScriptを追加するには、単に **AddJavaScript** モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントに JavaScript を追加するには、単に **AddJavaScript** モジュールを呼び出してください。
 
-Rubyコード
+Ruby コード
 
 ```java
 # The path to the documents directory.
@@ -45,8 +45,8 @@ doc.save(data_dir + "JavaScript-Added.pdf")
 puts "Added JavaScript Successfully, please check the output file."
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-ダウンロード\u0412\u00A0**JavaScript の追加 (Aspose.PDF)**\u0412\u00A0以下に記載されたソーシャルコーディングサイトのいずれかから:
+ダウンロード **JavaScript の追加 (Aspose.PDF)** 以下に記載されたソーシャルコーディングサイトのいずれかから:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)

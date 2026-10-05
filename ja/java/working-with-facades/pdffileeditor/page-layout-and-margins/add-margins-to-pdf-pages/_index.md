@@ -1,27 +1,27 @@
 ---
-title: "PDFページへの余白の追加"
-linktitle: "PDFページへの余白の追加"
+title: "PDF ページへの余白の追加"
+linktitle: "PDF ページへの余白の追加"
 type: docs
 weight: 10
 url: /ja/java/add-margins-to-pdf-pages/
-description: PdfFileEditorファサードを使用して、Javaで選択したPDFページに余白を追加します。
-lastmod: "2026-10-05"
+description: "PdfFileEditor ファサードを使用して、Java で選択した PDF ページに余白を追加します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFドキュメントの特定のページに余白を追加する
-Abstract: Aspose.PDF for Javaを使用して選択ページに余白を追加する方法を学びます。JavaのサンプルはPdfFileEditorを使用して個々のページ番号を指定し、上下左右の余白を同等に適用します。
+AlternativeHeadline: "Java での PDF ドキュメントの特定のページに余白の追加"
+Abstract: "Aspose.PDF for Java を使用して選択したページに余白を追加する方法を学習してください。Java のサンプルでは、PdfFileEditor を使用して個々のページ番号を指定し、上下左右の余白を等しく適用します。"
 ---
-## PDFページへの余白の追加
+## PDF ページへの余白の追加
 
-このJavaサンプルは、ソース文書の1ページ目と3ページ目に36ポイントの余白を追加します。
+この Java サンプルは、ソース文書の 1 ページ目と 3 ページ目に 36 ポイントの余白を追加します。
 
 ### 手順
 
-1. 作成する `PdfFileEditor` インスタンス。
+1. `PdfFileEditor` インスタンスを作成してください。
 2. 新しい余白を設定するページ番号を選択してください。
-3. 呼び出す `addMargins` 入力ファイル、出力ファイル、ページリスト、および余白の値を使用して。
+3. 入力ファイル、出力ファイル、ページリスト、および余白の値を指定して `addMargins` を呼び出してください。
 4. 更新された PDF を保存してください。
 
 ### Java の例

@@ -1,24 +1,24 @@
 ---
-title: "AcroForm を抽出 - Java で PDF からフォームデータの抽出"
+title: "AcroForm の抽出 - Java で PDF からフォームデータの抽出"
 linktitle: "AcroForm の抽出"
 type: docs
 weight: 30
 url: /ja/java/extract-form/
 description: Aspose.PDF for Java を使用して PDF ドキュメントの AcroForm フィールドから値を抽出します。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Java で PDF ファイルからフォームフィールドの値を抽出
-Abstract: この記事では、Aspose.PDF for Java を使用して AcroForm フィールドからデータを抽出する方法を示します。サンプルでは Form ファサードを使ってフィールド名を反復処理し、各現在値を読み取り、その結果をマップに保存して下流の処理に利用します。
+Abstract: "この記事では、Aspose.PDF for Java を使用して AcroForm フィールドからデータを抽出する方法を示します。サンプルでは、Form ファサードを使用してフィールド名を反復処理し、各フィールドの現在値を読み取ってマップに保存し、後続の処理に利用します。"
 ---
-使用する `Form` シンプルなフィールド名からフィールド値への抽出フローが必要なときのファサード。
+使用する `Form` は、単純なフィールド名からフィールド値への抽出フローが必要な場合のファサードです。
 
-## すべての AcroForm フィールドから値の抽出
+## すべての AcroForm フィールドからの値の抽出
 
-1. PDF Form ドキュメントを使用して開く [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade。
-1. フィールド名を取得元から反復処理する [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade から各現在のフィールド値を取得し、マップに格納してください。
+1. [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) ファサードを使用して PDF フォームドキュメントを開いてください。
+1. フィールド名を取得元から反復処理し、各現在のフィールド値を [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) ファサードからマップに格納してください。
 
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {

@@ -5,15 +5,15 @@ type: docs
 weight: 135
 url: /ja/java/pdfviewer-class/
 description: Java で PdfViewer ファサードを使用して PDF ページをデコードし、ビューア関連の設定を検査する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: PdfViewer を使用して Java で PDF ページをデコードし、ビューア データを検査します。
-Abstract: このセクションでは、Aspose.PDF for Java の PdfViewer ファサードを使用してページのデコードおよびビューア関連の検査タスクを実行する方法を説明します。現在の Java のサンプルでは、すべてのページを画像にレンダリングすること、特定のページをデコードすること、ページ数、座標タイプ、解像度、バウンドビューア設定を検査することがカバーされています。
+AlternativeHeadline: "Java での PdfViewer を使用した PDF ページのデコードとビューア データの検査"
+Abstract: "このセクションでは、Aspose.PDF for Java の PdfViewer ファサードを使用してページのデコードおよびビューア関連の検査タスクを実行する方法を説明します。現在の Java のサンプルでは、すべてのページを画像にレンダリングすること、特定のページをデコードすること、ページ数、座標タイプ、解像度、バウンド ビューア設定を検査することがカバーされています。"
 ---
-Java `PdfViewerExamples` クラスは Facades API を通じて利用可能な主要なビューア ワークフローを示します。
+Java の `PdfViewerExamples` クラスは、Facades API を通じて利用可能な主要なビューア ワークフローを示します。
 
 ## すべての PDF ページをデコード
 
@@ -21,11 +21,11 @@ Java `PdfViewerExamples` クラスは Facades API を通じて利用可能な主
 
 ### 手順
 
-1. 作成して構成する `PdfViewer` インスタンス。
-2. ソース PDF をバインドする `bindPdf`。
-3. 呼び出す `decodeAllPages()` ドキュメントを...にレンダリングする `BufferedImage` 配列。
+1. `PdfViewer` インスタンスを作成して構成してください。
+2. `bindPdf` を使用してソース PDF をバインドしてください。
+3. `decodeAllPages()` を呼び出して、ドキュメントを `BufferedImage` 配列にレンダリングしてください。
 4. デコードされた各ページを出力画像ファイルに保存してください。
-5. バインドされた PDF ファイルを閉じます。
+5. バインドされた PDF ファイルを閉じてください。
 
 ### Java の例
 
@@ -44,17 +44,17 @@ public static void decodeAllPages(Path inputFile, Path outputDir) throws Excepti
 }
 ```
 
-## 特定の PDF ページをデコードする
+## 特定の PDF ページのデコード
 
 ページが1つだけ画像にレンダリングする必要がある場合は、このワークフローを使用してください。
 
 ### 手順
 
-1. 作成して構成する `PdfViewer` インスタンス。
+1. `PdfViewer` インスタンスを作成して構成してください。
 2. ソース PDF をバインドしてください。
-3. 呼び出す `decodePage()` レンダリングしたいページ用に。
+3. レンダリングしたいページに対して `decodePage()` を呼び出してください。
 4. デコードされたページを出力画像ファイルに保存してください。
-5. ビューアを閉じます。
+5. ビューアを閉じてください。
 
 ### Java の例
 
@@ -76,11 +76,11 @@ public static void decodeSpecificPage(Path inputFile, Path outputFile) throws Ex
 
 ### 手順
 
-1. 作成して構成する `PdfViewer` インスタンス。
+1. `PdfViewer` インスタンスを作成して構成してください。
 2. ソース PDF をバインドしてください。
-3. ページ数、座標タイプ、レンダリング解像度を読み取ります。
+3. ページ数、座標タイプ、レンダリング解像度を読み取ってください。
 4. 取得した値を使用するか、印刷してください。
-5. バインドされた PDF ファイルを閉じます。
+5. バインドされた PDF ファイルを閉じてください。
 
 ### Java の例
 
@@ -98,17 +98,17 @@ public static void inspectPdfMetadata(Path inputFile) {
 }
 ```
 
-## バインドされたビューア設定を確認する
+## バインドされたビューア設定の確認
 
-PDF をバインドした後にビューアの動作を確認または調整する必要がある場合にこのワークフローを使用します。
+PDF をバインドした後に、ビューアの動作を確認または調整する必要がある場合に、このワークフローを使用してください。
 
 ### 手順
 
-1. 作成して構成する `PdfViewer` インスタンス。
+1. `PdfViewer` インスタンスを作成して構成してください。
 2. ソース PDF をバインドしてください。
 3. 自動リサイズ、自動回転、印刷ダイアログの表示などのビューアオプションを設定してください。
-4. アクティブなビューア設定とページ数を読み取ります。
-5. ビューアを閉じます。
+4. アクティブなビューア設定とページ数を読み取ってください。
+5. ビューアを閉じてください。
 
 ### Java の例
 

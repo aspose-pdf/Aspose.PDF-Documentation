@@ -1,26 +1,26 @@
 ---
-title: "Java での PDFにラインシェイプの追加"
+title: "Java での PDF へのラインシェイプの追加"
 linktitle: "ラインの追加"
 type: docs
 weight: 40
 url: /ja/java/add-line/
-description: JavaでPDFファイルにラインシェイプやスタイル付きラインを描画する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ファイルにラインシェイプやスタイル付きラインを描画する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してPDFファイルにラインシェイプを描画する
+AlternativeHeadline: "Java を使用した PDF ファイルへのラインシェイプの描画"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF 文書にラインシェイプを追加する方法を示します。座標配列からラインを作成し、破線のスタイルと色を適用し、ページ全体にわたってラインを描画する方法をカバーしています。
 ---
 ## 破線の追加
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ドキュメントへ。
-1. 作成する [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
-1. 作成 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) シェイプを作成し、座標を設定してください。
-1. 追加 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) へ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナ。
-1. 出力 PDF を保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) をドキュメントに追加してください。
+1. [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
+1. [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) シェイプを作成し、座標を設定してください。
+1. [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) を [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナに追加してください。
+1. 出力 PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) に保存してください。
 
 ```java
 public static void addLine(Path outputFile) {
@@ -41,16 +41,16 @@ public static void addLine(Path outputFile) {
 
 ## 色付きの点線または破線の追加
 
-`addDottedDashedLine` 同じ座標とダッシュ設定を使用しますが、さらに適用します `Color.getRed()`.
+`addDottedDashedLine` は同じ座標とダッシュ設定を使用しますが、さらに `Color.getRed()` を適用します。
 
 ## ページ全体に線を描く
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ドキュメントへ。
-1. 作成する [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
-1. 作成 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) シェイプを作成し、座標を設定してください。
-1. 追加 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) へ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナ。
-1. 出力 PDF を保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) をドキュメントに追加してください。
+1. [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
+1. [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) シェイプを作成し、座標を設定してください。
+1. [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) を [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナに追加してください。
+1. 出力 PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) に保存してください。
 
 ```java
 public static void drawLineAcrossPage(Path outputFile) {

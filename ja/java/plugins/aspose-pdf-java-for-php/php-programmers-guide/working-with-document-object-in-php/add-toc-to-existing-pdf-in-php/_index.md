@@ -1,13 +1,13 @@
 ---
-title: "PHP での 既存のPDFにTOCの追加"
-linktitle: "PHP での 既存のPDFにTOCの追加"
+title: "PHP での既存の PDF への TOC の追加"
+linktitle: "PHP での既存の PDF への TOC の追加"
 type: docs
 weight: 20
 url: /ja/java/add-toc-to-existing-pdf-in-php/
-description: Aspose.PDF を使用して、PHPで既存のPDFドキュメントに目次（TOC）を追加し、ナビゲーションを向上させる方法を探ります。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、PHP で既存の PDF ドキュメントに目次（TOC）を追加し、ナビゲーションを向上させる方法について説明します。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - TOCの追加
+## Aspose.PDF での目次（TOC）の追加
 
 PdfドキュメントにTOCを追加するには、**Aspose.PDF Java for PHP** を使用し、単に **AddToc** クラスを呼び出すだけです。
 
@@ -69,6 +69,6 @@ print "Added TOC Successfully, please check the output file.";
 
 **実行コードをダウンロード**
 
-ダウンロードВ **Add TOC (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれか:
+ダウンロード **Add TOC (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれか:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

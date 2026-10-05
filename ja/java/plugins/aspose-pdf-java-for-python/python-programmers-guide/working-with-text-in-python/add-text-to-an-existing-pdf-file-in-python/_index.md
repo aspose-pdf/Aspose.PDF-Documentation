@@ -1,15 +1,15 @@
 ---
-title: "Python を使用した既存の PDF にテキストの追加"
-linktitle: "Python を使用した既存の PDF にテキストの追加"
+title: "Python を使用した既存の PDF へのテキストの追加"
+linktitle: "Python を使用した既存の PDF へのテキストの追加"
 type: docs
 weight: 20
 url: /ja/java/add-text-to-an-existing-pdf-file-in-python/
-lastmod: "2026-10-05"
-description: Python と PDF ライブラリを使用して PDF 文書にテキストを追加または書き込むコード例。
+lastmod: "2026-10-06"
+description: "Python と PDF ライブラリを使用して、PDF 文書にテキストを追加または書き込むコード例を示します。"
 ---
-## Python を使用して PDF にテキストを書き込むまたは追加する
+## Python を使用した PDF へのテキストの書き込みおよび追加
 
-**Aspose.PDF Java for Python** を使用して PDF 文書にテキスト文字列を追加するには、単に **AddText** モジュールを呼び出します。
+**Aspose.PDF Java for Python** を使用して PDF ドキュメントにテキスト文字列を追加するには、**AddText** モジュールを呼び出してください。
 
 ```python
 doc=self.Document()
@@ -38,6 +38,6 @@ print "Text added successfully"
 
 **実行コードをダウンロード**
 
-以下に記載されたソーシャルコーディングサイトから **Add Text (Aspose.PDF)** をダウンロードしてください:
+以下のいずれかのソーシャルコーディングサイトから **Add Text (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/AddText/AddText.py)

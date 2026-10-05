@@ -4,27 +4,27 @@ linktitle: "PDF ファイルの復号化"
 type: docs
 weight: 20
 url: /ja/java/decrypt-pdf-file/
-description: PdfFileSecurity ファサードを使用して Java で PDF を復号化する方法を学びます。
-lastmod: "2026-10-05"
+description: "PdfFileSecurity ファサードを使用して、Java で PDF を復号化する方法を学習します。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF のセキュリティ制限を解除する
-Abstract: Aspose.PDF for Java を使用して PDF を復号化する方法を学びます。Java のサンプルセットには、直接所有者パスワードの復号化と、例外をスローせずに失敗を処理できる try スタイルの復号化ワークフローが含まれています。
+AlternativeHeadline: "Java を使用して PDF のセキュリティ制限の解除"
+Abstract: "Aspose.PDF for Java を使用して PDF を復号化する方法を学習します。Java のサンプルセットには、所有者パスワードによる直接的な復号化と、例外をスローせずに失敗を処理できる try スタイルの復号化ワークフローが含まれています。"
 ---
 ## PDF ファイルの復号化
 
-所有者パスワードを持ち、PDF のセキュリティを削除する必要がある場合に、このワークフローを使用します。
+所有者パスワードを所持しており、PDF のセキュリティを解除する必要がある場合に、このワークフローを使用してください。
 
 ### 手順
 
-1. 作成する `PdfFileSecurity` インスタンス。
-2. 暗号化されたPDFをバインドする `bindPdf`。
-3. 呼び出し `decryptFile` または `tryDecryptFile` 所有者パスワードで。
-4. 復号に成功した場合、出力を保存してください。
-5. セキュリティオブジェクトを閉じます。
+1. `PdfFileSecurity` インスタンスを作成してください。
+2. 暗号化された PDF を `bindPdf` でバインドしてください。
+3. 所有者パスワードを指定して `decryptFile` または `tryDecryptFile` を呼び出してください。
+4. 復号に成功した場合は、出力を保存してください。
+5. セキュリティオブジェクトを閉じてください。
 
 ### Java の例
 

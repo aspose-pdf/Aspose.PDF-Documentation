@@ -1,27 +1,27 @@
 ---
-title: Java を使用したセキュリティ アノテーション
-linktitle: セキュリティ アノテーション
+title: "Java を使用したセキュリティ注釈"
+linktitle: "セキュリティ注釈"
 type: docs
 weight: 75
 url: /ja/java/security-annotations/
-description: Aspose.PDF for Java を使用して、PDF ファイル内のテキストを編集対象としてマークし、編集アノテーションを適用し、選択したページ領域を編集する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用して、PDF 内のテキストを墨消し対象としてマークし、墨消し注釈を適用し、選択したページ領域の墨消しを行う方法を説明します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java でセキュリティ アノテーションを使用して、機密 PDF コンテンツを編集します。
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントで赤塗り注釈を操作する方法を説明します。マッチしたテキストを赤塗り注釈でマークする方法、赤塗りを永続的に適用する方法、検出された画像配置矩形に基づいて選択領域を赤塗りする方法について概説しています。
+AlternativeHeadline: "Java でのセキュリティ注釈による機密 PDF コンテンツの墨消し"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメントの墨消し注釈を操作する方法を説明します。一致するテキストを墨消し注釈でマークする方法、墨消しを恒久的に適用する方法、および検出した画像配置の矩形に基づいて選択領域の墨消しを行う方法を示します。"
 ---
-このセクションのセキュリティ注釈ワークフローは、機密性の高い PDF コンテンツに対して赤塗りを準備し、適用することに重点を置いています。
+このセクションでは、セキュリティ注釈を使用して機密性の高い PDF コンテンツの墨消しを準備し、適用するワークフローを説明します。
 
-## テキストを赤塗り注釈でマークする
+## 墨消し注釈によるテキストのマーク
 
-赤塗りが永続的に適用される前に、マッチするテキストを赤塗り注釈で覆う必要がある場合にこの例を使用してください。
+墨消しを恒久的に適用する前に、一致するテキストを墨消し注釈で覆う必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 対象テキストを検索して作成する [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) 各マッチについて。
-1. レダクションの外観を設定し、ドキュメントを保存してください。
+1. 対象テキストを検索し、一致箇所ごとに [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) を作成してください。
+1. 墨消し注釈の外観を設定し、ドキュメントを保存してください。
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
@@ -47,13 +47,13 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 }
 ```
 
-## 既存のリダクションを適用する
+## 既存の墨消し注釈の適用
 
-この例では、ページに既に存在するリダクション注釈を永続的に適用します。
+この例では、ページに既に存在する墨消し注釈を恒久的に適用します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. タイプの注釈を収集する [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
-1. 呼び出し `redact()` 各収集された注釈に対して、更新されたファイルを保存してください。
+1. 型が [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction` の注釈を収集してください。
+1. 収集した各注釈で `redact()` を呼び出し、更新したファイルを保存してください。
 
 ```java
 public static void applyRedaction(Path inputFile, Path outputFile) {
@@ -72,13 +72,13 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 }
 ```
 
-## 選択したページ領域を赤塗りする
+## 選択したページ領域の墨消し
 
 対象コンテンツがテキストの一致ではなく位置で特定される場合に、このアプローチを使用します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ページ上の対象矩形を検出します。たとえば、画像の配置から取得します。
-1. 作成 [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) その領域のために文書を保存してください。
+1. ページ上の対象矩形を検出してください。たとえば、画像の配置から取得してください。
+1. 対象領域に [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) を作成し、ドキュメントを保存してください。
 
 ```java
 public static void redactArea(Path inputFile, Path outputFile) {

@@ -4,16 +4,16 @@ linktitle: フィールド アクションの削除
 type: docs
 weight: 50
 url: /ja/java/remove-field-action/
-description: Java で Aspose.PDF の FormEditor ファサードを使用して PDF フィールドからフィールド アクションを削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で Aspose.PDF の FormEditor ファサードを使用して、PDF フォームフィールドからフィールド アクションを削除する方法を学習します。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF フィールド アクションを削除
-Abstract: この記事では、既存の PDF をバインドし、特定のフィールドに関連付けられたアクションを削除し、Aspose.PDF for Java の FormEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。
+AlternativeHeadline: "Java での PDF フィールド アクションの削除"
+Abstract: "この記事では、既存の PDF をバインドし、特定のフィールドに関連付けられたアクションを削除して、Aspose.PDF for Java の FormEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。"
 ---
 ## フィールド アクションの削除
 
-1. ソースPDFをバインドする `FormEditor` ファサード。
-2. 呼び出し `removeFieldAction(...)` 対象フィールド用に。
+1. ソース PDF を `FormEditor` ファサードにバインドしてください。
+2. 対象フィールドに対して `removeFieldAction(...)` を呼び出してください。
 3. 更新されたドキュメントを保存してください。
 
 ```java

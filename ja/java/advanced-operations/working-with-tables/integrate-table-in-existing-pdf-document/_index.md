@@ -1,26 +1,26 @@
 ---
-title: JavaでPDFテーブルをデータソースと統合する
-linktitle: テーブルを統合する
+title: "Java での PDF テーブルとデータソースの統合"
+linktitle: "テーブルの統合"
 type: docs
 weight: 30
 url: /ja/java/integrate-table/
-description: JavaでCSVファイルなどの構造化データソースとPDFテーブルを統合する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で、CSV ファイルなどの構造化データソースと PDF テーブルを統合する方法を学習します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで構造化データからPDFテーブルを構築する
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF テーブルを外部データと統合する方法を説明します。CSV データの読み取り、特定の列の選択、解析された行からスタイル付き Table オブジェクトの構築、そして結果を PDF ドキュメントにレンダリングすることをカバーしています。
+AlternativeHeadline: "Java での構造化データを使用した PDF テーブルの構築"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF テーブルを外部データと統合する方法を説明します。CSV データの読み取り、特定の列の選択、解析された行からスタイル付き Table オブジェクトの構築、および結果を PDF ドキュメントにレンダリングする手順をカバーしています。"
 ---
-この Java の例は、外部のデータフレームライブラリに依存せずに CSV データから PDF テーブルを構築します。
+この Java の例では、外部のデータフレームライブラリに依存せずに CSV データから PDF テーブルを構築します。
 
-## CSV 行からテーブルを構築する
+## CSV 行を使用したテーブルの構築
 
-選択した CSV 列をスタイル付き PDF テーブルに変換する必要がある場合にこの例を使用してください。
+選択した CSV 列をスタイル付き PDF テーブルに変換する必要がある場合は、この例を使用してください。
 
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 境界線を設定してください。
-1. CSV ヘッダー行から必要な列インデックスを検出します。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) オブジェクトを作成し、その境界線を設定してください。
+1. CSV のヘッダー行から必要な列インデックスを検出してください。
 1. ヘッダー行と要求されたデータ行数を追加して、テーブルを返してください。
 
 ```java
@@ -54,11 +54,11 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 
 ## CSV データから PDF の作成
 
-CSV入力をPDFテーブル文書としてレンダリングする必要がある場合は、この例を使用してください。
+CSV 入力を PDF テーブル文書としてレンダリングする必要がある場合は、この例を使用してください。
 
-1. 入力ファイルからCSV行を読み取ります。
-1. コンソールで解析された行のサブセットをプレビューします。
-1. PDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), 生成されたテーブルを追加し、出力ファイルを保存してください。
+1. 入力ファイルから CSV 行を読み取ってください。
+1. コンソールで解析された行のサブセットをプレビューしてください。
+1. PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、生成されたテーブルを追加して、出力ファイルを保存してください。
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {
@@ -75,12 +75,12 @@ public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows
 }
 ```
 
-## 名前でCSV列インデックスを見つける
+## 名前で CSV 列インデックスを見つける
 
-特定の名前付き列を CSV ヘッダー行で見つける必要がある場合に、このヘルパーを使用してください。
+特定の名前付き列を CSV ヘッダー行で見つける必要がある場合は、このヘルパーを使用してください。
 
 1. 要求された列名を反復処理してください。
-1. ヘッダー行で一致するインデックスを検索します。
+1. ヘッダー行で一致するインデックスを検索してください。
 1. 収集された列位置を返してください。
 
 ```java
@@ -99,11 +99,11 @@ private static int[] findColumns(String[] header, String... names) {
 }
 ```
 
-## ファイルからCSV行を読み取ります
+## ファイルから CSV 行を読み取る
 
-テーブル生成前にCSVソースをメモリにロードする必要がある場合は、このヘルパーを使用してください。
+テーブル生成前に CSV ソースをメモリにロードする必要がある場合は、このヘルパーを使用してください。
 
-1. 入力ファイルからすべての行を読み取ります。
+1. 入力ファイルからすべての行を読み取ってください。
 1. CSV パーサーヘルパーで各行を分割してください。
 1. 収集した行の値を返してください。
 
@@ -117,12 +117,12 @@ private static List<String[]> readCsv(Path inputFile) throws Exception {
 }
 ```
 
-## CSV の 1 行を値に分割する
+## CSV の 1 行の値への分割
 
-CSV 行に引用符で囲まれた値やエスケープされた引用符文字が含まれる可能性がある場合に、このヘルパーを使用してください。
+CSV 行に引用符で囲まれた値やエスケープされた引用符文字が含まれる可能性がある場合は、このヘルパーを使用してください。
 
 1. 行の文字を順に走査してください。
-1. パーサーが現在引用テキスト内にいるかどうかを追跡します。
+1. パーサーが現在引用テキスト内にいるかどうかを追跡してください。
 1. 最終的な値リストを構築し、配列として返してください。
 
 ```java

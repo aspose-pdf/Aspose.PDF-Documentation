@@ -4,20 +4,20 @@ linktitle: "PDF からベクトル データの抽出"
 type: docs
 weight: 80
 url: /ja/java/extract-vector-data-from-pdf/
-description: Aspose.PDF は、PDF ファイルからベクトル データを簡単に抽出できるようにします。位置や矩形の境界、SVG 出力などのベクトル データを取得できます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用すると、PDF ファイルからベクトル データを簡単に抽出できます。位置や矩形の境界、SVG 出力などのベクトル データを取得できます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-## PDF ドキュメントからベクトル データにアクセスする
+## PDF ドキュメントからベクトル データにアクセス
 
-使用 `GraphicsAbsorber` ページ上のベクタ画像要素を検査し、その基本的な形状情報をテキストファイルに書き出す。
+`GraphicsAbsorber` を使用して、ページ上のベクトル グラフィック要素を検査し、その基本的な形状情報をテキスト ファイルに書き出します。
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象に訪問する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ベクトルグラフィック操作を収集するために。
-1. 抽出されたものを反復処理する [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) オブジェクトを取得し、矩形、位置、および演算子コレクションを読み取ります。
-1. 各要素について、ジオメトリとオペレーター カウントの詳細を含む出力テキストを作成してください。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を訪問してベクトル グラフィック操作を収集してください。
+1. 抽出された [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) オブジェクトを反復処理し、各オブジェクトの矩形、位置、およびオペレーター コレクションを読み取ってください。
+1. 各要素について、ジオメトリとオペレーター数の詳細を含む出力テキストを作成してください。
 1. 抽出されたベクトル データを出力ファイルに書き込んでください。
 
 ```java
@@ -43,9 +43,9 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 
 ## ページのベクターグラフィックを SVG に保存
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. ターゲットを取得 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ドキュメントから。
-1. 呼び出し `page.trySaveVectorGraphics(outputFile.toString())` そのページのベクトルグラフィックコンテンツを直接 SVG にエクスポートしてください。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. ドキュメントからターゲットの [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を取得してください。
+1. `page.trySaveVectorGraphics(outputFile.toString())` を呼び出して、そのページのベクトル グラフィック コンテンツを直接 SVG にエクスポートしてください。
 
 ```java
 public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
@@ -56,12 +56,12 @@ public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
 }
 ```
 
-## 抽出された各要素を個別の SVG に保存する
+## 抽出された各要素の個別の SVG への保存
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象に訪問する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を訪問してください。
 1. ファイルを書き込む前に、抽出されたサブパス用の出力ディレクトリを作成してください。
-1. 抽出されたものを反復処理する [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) オブジェクトと呼び出し `saveToSvg(...)` 各要素について。
+1. 抽出された [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) オブジェクトを反復処理し、各要素に対して `saveToSvg(...)` を呼び出してください。
 1. 抽出されたすべての要素を個別の SVG ファイルに保存してください。
 
 ```java
@@ -81,13 +81,13 @@ public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws 
 }
 ```
 
-## 抽出した要素を1つのSVGに結合する
+## 抽出した要素の1つのSVGへの結合
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象に訪問する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
-1. 結合されたベクトルフラグメントを含むSVGラッパーのマークアップを作成してください。
-1. 抽出されたものを反復処理する [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) オブジェクトを取得し、生成された各SVGフラグメントを追加してください。
-1. 結合されたSVG出力をターゲットファイルに書き込む。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を訪問してください。
+1. 結合されたベクトルフラグメントを含む SVG ラッパーのマークアップを作成してください。
+1. 抽出された [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) オブジェクトを反復処理し、生成された各 SVG フラグメントを追加してください。
+1. 結合された SVG 出力をターゲットファイルに書き込んでください。
 
 ```java
 public static void extractListOfElementsToSingleImage(Path inputFile, Path outputFile) throws Exception {
@@ -108,11 +108,11 @@ public static void extractListOfElementsToSingleImage(Path inputFile, Path outpu
 
 ## 単一のベクトル要素の抽出
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象に訪問する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
-1. 必要なものを取得する [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) 抽出された要素コレクションから。
-1. 選択された要素が...かどうか確認します。 [XFormPlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) 必要に応じてその入れ子要素に降りていきます。
-1. 選択したベクトル要素を出力SVGファイルに保存してください。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) を作成し、対象の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を訪問してください。
+1. 必要な [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) を抽出された要素コレクションから取得してください。
+1. 選択された要素が [XFormPlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) であるかどうかを確認し、必要に応じてその入れ子要素に降りてください。
+1. 選択したベクトル要素を出力 SVG ファイルに保存してください。
 
 ```java
 public static void extractSingleVectorElement(Path inputFile, Path outputFile) {

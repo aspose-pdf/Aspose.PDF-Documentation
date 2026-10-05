@@ -4,13 +4,13 @@ linktitle: すべてのフィールドをフラット化
 type: docs
 weight: 10
 url: /ja/java/flatten-all-fields/
-description: Aspose.PDF の Form facade を使用して、Java で PDF フォームフィールドをすべてフラット化する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF の Form ファサードを使用して、Java で PDF フォームフィールドをすべてフラット化する方法を学習してください。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java でインタラクティブなフォームフィールドをすべて静的コンテンツに変換します。
-Abstract: この記事では、PDF フォームをバインドし、すべてのフォームフィールドをフラット化し、Aspose.PDF for Java の Form facade を使用して更新されたドキュメントを保存する方法を示します。
+AlternativeHeadline: "Java での インタラクティブなフォームフィールドのすべて静的コンテンツへの変換"
+Abstract: "この記事では、PDF フォームをバインドし、すべてのフォームフィールドをフラット化し、Aspose.PDF for Java の Form ファサードを使用して更新されたドキュメントを保存する方法を示します。"
 ---
-使用 `FormExamples.flattenAllFields(...)` インタラクティブなフィールドをすべて静的なページコンテンツに変換する必要があるとき。
+インタラクティブなフィールドをすべて静的なページコンテンツに変換する必要がある場合は、`FormExamples.flattenAllFields(...)` を使用してください。
 
 ```java
 public static void flattenAllFields(Path inputFile, Path outputFile) {

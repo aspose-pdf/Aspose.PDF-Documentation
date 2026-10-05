@@ -4,29 +4,29 @@ linktitle: "PDF メタデータの取得"
 type: docs
 weight: 20
 url: /ja/java/get-pdf-metadata/
-description: PdfFileInfo ファサードを使用して Java で PDF メタデータを読み取る方法を学びます。
-lastmod: "2026-10-05"
+description: "PdfFileInfo ファサードを使用して、Java で PDF メタデータを読み取る方法を学習します。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Aspose.PDF for Java を使用した PDF メタデータの取得。
-Abstract: Aspose.PDF for Java を使用して PDF メタデータを取得する方法を学びます。Java のサンプルでは、件名、タイトル、キーワード、作成者、作成日、変更日などの標準フィールドに加えて、ファイルステータスフラグやカスタムメタデータエントリ `Reviewer` を読み取ります。
+AlternativeHeadline: "Aspose.PDF for Java を使用した PDF メタデータの取得"
+Abstract: "Aspose.PDF for Java を使用して PDF メタデータを取得する方法を学習します。この Java サンプルでは、件名、タイトル、キーワード、作成者、作成日、変更日などの標準フィールドに加え、ファイルステータスフラグやカスタムメタデータエントリ `Reviewer` を読み取ります。"
 ---
 ## PDF メタデータの取得
 
-このサンプルは、標準的な文書情報、ファイルステータスフラグ、およびカスタムメタデータキーを読み取ります。
+このサンプルでは、標準的な文書情報、ファイルステータスフラグ、およびカスタムメタデータキーを読み取ります。
 
 ### 手順
 
-1. 作成 `PdfFileInfo` ソース PDF 用のオブジェクト。
-2. subject、title、keywords、creator などの標準メタデータフィールドを読み取ります。
-3. ファイルが有効か、暗号化されているか、パスワードで保護されているか、ポートフォリオかなどのファイル状態フラグを確認します。
-4. カスタムメタデータの値を読み取る `getMetaInfo`。
-5. 閉じる `PdfFileInfo` インスタンス。
+1. ソース PDF 用の `PdfFileInfo` オブジェクトを作成してください。
+2. subject、title、keywords、creator などの標準メタデータフィールドを取得してください。
+3. ファイルが有効かどうか、暗号化されているかどうか、パスワードで保護されているかどうか、ポートフォリオかどうかなどのファイル状態フラグを確認してください。
+4. カスタムメタデータの値を取得するには `getMetaInfo` を使用してください。
+5. `PdfFileInfo` インスタンスを閉じてください。
 
-### Javaの例
+### Java の例
 
 ```java
 public static void getPdfMetadata(Path inputFile) {

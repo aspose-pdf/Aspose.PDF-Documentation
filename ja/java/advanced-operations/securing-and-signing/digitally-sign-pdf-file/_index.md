@@ -1,26 +1,26 @@
 ---
-title: Javaでデジタル署名を追加するか、PDFにデジタル署名を行う
-linktitle: PDFにデジタル署名する
+title: "Java でのデジタル署名の追加または PDF へのデジタル署名"
+linktitle: "PDF へのデジタル署名"
 type: docs
 weight: 10
 url: /ja/java/digitally-sign-pdf-file/
-description: Aspose.PDFを使用して、JavaでPDF文書にデジタル署名と認証を行う方法を学ぶ。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、Java で PDF 文書にデジタル署名および認証を行う方法を学習してください。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFファイルにデジタル署名する
-Abstract: このガイドでは、Aspose.PDF for Java を使用して PDF ドキュメントにデジタル署名を行う方法を説明します。証明書オブジェクトによる署名、基本的な証明書パラメーターによる署名、そして DocMDP 署名で文書を認証し、署名後に許可される変更を制御する方法をカバーしています。
+AlternativeHeadline: "Java での PDF ファイルへのデジタル署名"
+Abstract: "このガイドでは、Aspose.PDF for Java を使用して PDF ドキュメントにデジタル署名を行う方法を説明します。証明書オブジェクトによる署名、基本的な証明書パラメーターによる署名、および DocMDP 署名による文書認証と、署名後の変更を制御する方法をカバーしています。"
 ---
-Aspose.PDF for Java は、複数の署名フローをサポートしています。 `PdfFileSignature`.
+Aspose.PDF for Java は、`PdfFileSignature` を通じて複数の署名フローをサポートしています。
 
-## 証明書オブジェクトを使用して PDF に署名する
+## 証明書オブジェクトの使用して PDF への署名
 
-1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを使用してソースPDFドキュメントをバインドしてください。
-1. 作成する [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) 署名オブジェクトを作成し、署名オプションを構成してください。
-1. PDFドキュメントに署名を適用するには [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/)。
-1. 更新されたPDFドキュメントを保存してください。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを作成し、ソース PDF ドキュメントをバインドしてください。
+1. [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) 署名オブジェクトを作成し、署名オプションを構成してください。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) を使用して PDF ドキュメントに署名を適用してください。
+1. 更新された PDF ドキュメントを保存してください。
 
 ```java
 public static void signPdfWithCertificateObject(Path inputFile, Path certificateFile, Path outputFile) {
@@ -35,14 +35,14 @@ public static void signPdfWithCertificateObject(Path inputFile, Path certificate
 }
 ```
 
-このアプローチは構築します `PKCS7` 署名オブジェクトを最初に作成し、次にページ 1 に適用します。
+このアプローチでは、まず `PKCS7` 署名オブジェクトを構築し、次にページ 1 に適用します。
 
-## 基本的な証明書パラメータで PDF に署名する
+## 基本的な証明書パラメータで PDF に署名
 
-1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを使用してソースPDFドキュメントをバインドしてください。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを作成し、ソース PDF ドキュメントをバインドしてください。
 1. 署名サンプルで必要とされる証明書パラメータを構成してください。
-1. PDFドキュメントに署名を適用するには [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/)。
-1. 更新されたPDFドキュメントを保存してください。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) を使用して PDF ドキュメントに署名を適用してください。
+1. 更新された PDF ドキュメントを保存してください。
 
 ```java
 public static void signPdfWithBasicParameters(Path inputFile, Path certificateFile, Path outputFile) {
@@ -58,12 +58,12 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 }
 ```
 
-## DocMDPでPDFを認証する
+## DocMDP で PDF の認証
 
-認証レベルの制限が必要な場合は、文書の変更検出および防止署名を使用してください：
+認証レベルの制限が必要な場合は、文書の変更検出および防止署名を使用してください。
 
-1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを使用してソースPDFドキュメントをバインドしてください。
-1. 作成する [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) オブジェクトと構成する [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/) 署名オプション。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを作成し、ソース PDF ドキュメントをバインドしてください。
+1. [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) オブジェクトを作成し、[DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/) 署名オプションを構成してください。
 1. 認証署名を適用し、更新された PDF ドキュメントを保存してください。
 
 ```java

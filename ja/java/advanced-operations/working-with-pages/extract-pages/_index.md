@@ -4,20 +4,20 @@ linktitle: PDF ページの抽出
 type: docs
 weight: 80
 url: /ja/java/extract-pages/
-description: Java で単一または複数の PDF ページを新しいファイルに抽出する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して、単一または複数の PDF ページを新しいファイルに抽出する方法を学習します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF ページを新しいドキュメントに抽出
-Abstract: このドキュメントでは、Aspose.PDF for Java を使用して PDF ファイルからページを抽出する方法を説明します。単一ページのコピーと、1-based page indexing を使用して複数ページを別の宛先ドキュメントに抽出する方法を取り上げます。
+AlternativeHeadline: "Java を使用した PDF ページの新しいドキュメントへの抽出"
+Abstract: "このドキュメントでは、Aspose.PDF for Java を使用して PDF ファイルからページを抽出する方法を説明します。単一ページのコピーと、1-based page indexing を使用した複数ページの別ドキュメントへの抽出方法を扱います。"
 ---
 Aspose.PDF for Java を使用すると、選択したページを新しい宛先ドキュメントにコピーできます。
 
 ## 単一ページの抽出
 
-ソースPDFから1ページを別のドキュメントに保存する必要がある場合は、この例を使用します。
+ソース PDF から 1 ページを別のドキュメントに保存する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、宛先ドキュメントを作成してください。
 1. 対象ページを宛先ページコレクションにコピーしてください。

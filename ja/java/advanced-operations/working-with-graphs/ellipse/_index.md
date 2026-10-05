@@ -1,27 +1,27 @@
 ---
-title: "Java での PDFに楕円形の追加"
+title: "Java での PDF への楕円形の追加"
 linktitle: "楕円形の追加"
 type: docs
 weight: 60
 url: /ja/java/add-ellipse/
-description: JavaでPDFファイルに楕円形を描画、塗りつぶし、ラベル付けする方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ファイルに楕円形を描画、塗りつぶし、ラベル付けする方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してPDFファイルに楕円形を描画する
+AlternativeHeadline: "Java を使用して PDF ファイルに楕円形の描画"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントに楕円形を追加する方法を示します。輪郭付き楕円、塗りつぶし楕円、および楕円形の内部にテキストフラグメントを配置する方法をカバーしています。
 ---
 ## 楕円形の輪郭の追加
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ドキュメントへ。
-1. 作成する [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
-1. 作成 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 形状を作成し、そのジオメトリを構成してください。
-1. 追加 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) へ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナ。
-1. 例で必要なシェイプ プロパティを設定し、以下を含みます [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) と [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)。
-1. 出力 PDF を保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) をドキュメントに追加してください。
+1. [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
+1. [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) オブジェクトを作成し、そのジオメトリを構成してください。
+1. [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) を [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナに追加してください。
+1. [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) や [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) など、この例で必要な図形のプロパティを設定してください。
+1. 出力 PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) に保存してください。
 
 ```java
 public static void addEllipse(Path outputFile) {
@@ -45,17 +45,17 @@ public static void addEllipse(Path outputFile) {
 
 ## 塗りつぶし楕円の追加
 
-`createEllipseFilled` 二つの省略記号を埋める `Color.getGreenYellow()` と `Color.getDarkRed()`.
+`createEllipseFilled` は、`Color.getGreenYellow()` と `Color.getDarkRed()` を使用して二つの楕円を塗りつぶします。
 
-## 楕円の内部にテキストの追加
+## 楕円の内部へのテキストの追加
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ドキュメントへ。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) をドキュメントに追加してください。
 1. [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) を作成し、必要なテキスト書式設定オプションを設定してください。
-1. 作成する [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
-1. 作成 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 形状を作成し、そのジオメトリを構成してください。
-1. 追加 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) へ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナ。
-1. 出力 PDF を保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
+1. [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) オブジェクトを作成し、そのジオメトリを構成してください。
+1. [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) を [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナに追加してください。
+1. 出力 PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) に保存してください。
 
 ```java
 public static void addTextInsideEllipse(Path outputFile) {

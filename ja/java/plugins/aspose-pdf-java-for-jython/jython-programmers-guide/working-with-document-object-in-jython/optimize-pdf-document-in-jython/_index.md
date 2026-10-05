@@ -4,17 +4,17 @@ linktitle: "Jython での PDF ドキュメントの最適化"
 type: docs
 weight: 50
 url: /ja/java/optimize-pdf-document-in-jython/
-description: Jython を使用して PDF ドキュメントを最適化し、ファイルサイズを削減し、Web パフォーマンスを向上させる方法を Aspose.PDF で学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、Jython で PDF ドキュメントを最適化し、ファイルサイズを削減し、Web パフォーマンスを向上させる方法を学習してください。"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - 最適化
 
-**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。ここにサンプルコードがあります。
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。ここにサンプルコードを示します。
 
-マクロ 'code' のレンダリングエラー: パラメータ lang に無効な値が指定されました
+マクロ 'code' のレンダリングエラー: パラメータ lang に無効な値が指定されました。
 
-## 実行中のコードをダウンロード
+## 実行中のコードのダウンロード
 
-以下に記載されたソーシャルコーディングサイトのいずれかから実行中のコードをダウンロードします:
+以下に記載されたソーシャルコーディングサイトのいずれかから実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

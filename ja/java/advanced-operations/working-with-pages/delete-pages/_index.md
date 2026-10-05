@@ -1,23 +1,23 @@
 ---
-title: "Java での PDFページの削除"
-linktitle: PDFページの削除
+title: "Java での PDF ページの削除"
+linktitle: "PDF ページの削除"
 type: docs
 weight: 80
 url: /ja/java/delete-pages/
-description: JavaでPDFファイルからページを削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ファイルからページを削除する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで1つまたは複数のPDFページを削除する
+AlternativeHeadline: "Java での 1 つまたは複数の PDF ページの削除"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ファイルからページを削除する方法を説明します。単一ページの削除と、ページコレクション API を使った複数ページの一括削除について取り上げます。
 ---
-PDFから1つまたは複数のページを削除する必要がある場合は、ドキュメントのページコレクションを使用してください。
+PDF から 1 つまたは複数のページを削除する必要がある場合は、ドキュメントのページコレクションを使用してください。
 
 ## 単一ページの削除
 
-インデックスで1ページを削除する必要がある場合は、この例を使用してください。
+インデックスで 1 ページを削除する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. ページコレクションから対象ページを削除してください。

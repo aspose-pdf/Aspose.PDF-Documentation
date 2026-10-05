@@ -4,24 +4,24 @@ linktitle: 透かし注釈
 type: docs
 weight: 70
 url: /ja/java/watermark-annotations/
-description: Aspose.PDF for Java を使用して、PDF ドキュメント内の透かし注釈を追加、確認、削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用して、PDF ドキュメント内の透かし注釈の追加、確認、削除を行う方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF ファイル内の透かし注釈を操作します。
-Abstract: このドキュメントでは、Aspose.PDF for Java を使用して PDF 文書内のウォーターマークアノテーションを作成、検査、削除する方法を説明します。カスタムテキストステートと不透明度を持つテキストウォーターマークアノテーションの追加、既存のウォーターマークアノテーション領域の読み取り、ウォーターマークアノテーションの削除について取り上げています。
+AlternativeHeadline: "Java を使用した PDF ファイル内の透かし注釈の操作"
+Abstract: "このドキュメントでは、Aspose.PDF for Java を使用して PDF 文書内の透かし注釈の作成、確認、削除を行う方法を説明します。カスタムテキストステートと不透明度を持つテキスト透かし注釈の追加、既存の透かし注釈領域の読み取り、透かし注釈の削除について取り上げています。"
 ---
-ウォーターマークアノテーションを使用すると、ページ上に再利用可能なオーバーレイコンテンツを配置しながら、アノテーションコレクションを通じて管理できます。
+透かし注釈を使用すると、ページ上に再利用可能なオーバーレイコンテンツを配置しながら、アノテーションコレクションを通じて管理できます。
 
-## ウォーターマークアノテーションの追加
+## 透かし注釈の追加
 
-カスタムフォント設定と不透明度を持つテキストウォーターマークアノテーションが必要な場合にこの例をご使用ください。
+カスタムフォント設定と不透明度を持つテキスト透かし注釈が必要な場合に、この例をご使用ください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成 [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) そしてページに追加してください。
-1. 設定する [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), ウォーターマークテキストと不透明度、次にドキュメントを保存してください。
+1. [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) を作成し、ページに追加してください。
+1. [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/)、透かしテキスト、不透明度を設定し、ドキュメントを保存してください。
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {
@@ -49,11 +49,11 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 
 ## 透かしアノテーションの取得
 
-この例はアノテーションコレクションをスキャンし、各ウォーターマークアノテーションの矩形を出力します。
+この例では、アノテーションコレクションをスキャンし、各透かしアノテーションの矩形を出力します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. 対象ページのアノテーションを反復処理してください。
-1. アノテーションをフィルタリング [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` そしてそれらの矩形を出力します。
+1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` でアノテーションをフィルタリングし、それらの矩形を出力してください。
 
 ```java
 public static void watermarkGet(Path inputFile) {
@@ -67,12 +67,12 @@ public static void watermarkGet(Path inputFile) {
 }
 ```
 
-## ウォーターマークアノテーションの削除
+## 透かしアノテーションの削除
 
-既存のウォーターマークアノテーションを文書から削除する必要がある場合に、このアプローチを使用します。
+既存の透かしアノテーションをドキュメントから削除する必要がある場合に、このアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. タイプのアノテーションを収集する [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
+1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` のアノテーションを収集してください。
 1. 収集したアノテーションを削除し、出力ファイルを保存してください。
 
 ```java
@@ -94,9 +94,9 @@ public static void watermarkDelete(Path inputFile, Path outputFile) {
 
 ## 関連する注釈トピック
 
-- [インタラクティブ アノテーション](/pdf/ja/java/interactive-annotations/)
-- [マークアップ アノテーション](/pdf/ja/java/markup-annotations/)
-- [セキュリティ アノテーション](/pdf/ja/java/security-annotations/)
-- [シェイプ アノテーション](/pdf/ja/java/shape-annotations/)
+- [インタラクティブアノテーション](/pdf/ja/java/interactive-annotations/)
+- [マークアップアノテーション](/pdf/ja/java/markup-annotations/)
+- [セキュリティアノテーション](/pdf/ja/java/security-annotations/)
+- [シェイプアノテーション](/pdf/ja/java/shape-annotations/)
 - [テキスト注釈](/pdf/ja/java/text-based-annotations/)
 - [注釈のインポートとエクスポート](/pdf/ja/java/import-export-annotations/)

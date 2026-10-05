@@ -4,27 +4,27 @@ linktitle: 署名抽出
 type: docs
 weight: 50
 url: /ja/java/signature-extraction/
-description: Java と PdfFileSignature を使用して、署名済み PDF から署名証明書を抽出する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java と PdfFileSignature を使用して、署名済み PDF から署名証明書を抽出する方法について説明します。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で PDF から署名証明書を抽出する
-Abstract: Aspose.PDF for Java を使用して PDF 署名に関連付けられた証明書を抽出する方法を学びます。現在の Java のサンプルセットには、証明書を出力ストリームに抽出する例が含まれていますが、署名画像を個別に抽出するサンプルは含まれていません。
+AlternativeHeadline: "Java での PDF から署名証明書の抽出"
+Abstract: "Aspose.PDF for Java を使用して PDF 署名に関連付けられた証明書を抽出する方法について説明します。現在の Java サンプルセットには、証明書を出力ストリームに抽出する例が含まれていますが、署名画像を個別に抽出するサンプルは含まれていません。"
 ---
 ## 署名証明書の抽出
 
-既存の署名に関連付けられた証明書を保存する必要がある場合に、このワークフローを使用します。
+既存の署名に関連付けられた証明書を保存する必要がある場合に、このワークフローを使用してください。
 
 ### 手順
 
-1. 作成 `PdfFileSignature` インスタンスを作成し、署名されたPDFをバインドしてください。
+1. `PdfFileSignature` インスタンスを作成し、署名された PDF をバインドしてください。
 2. 検査する署名名を選択してください。
-3. 呼び出す `extractCertificate` 証明書ストリームを開くために。
+3. `extractCertificate` を呼び出して証明書ストリームを開いてください。
 4. 証明書バイトを出力ファイルにコピーしてください。
-5. ストリームリソースとファサードオブジェクトを閉じます。
+5. ストリームリソースとファサードオブジェクトを閉じてください。
 
 ### Java の例
 

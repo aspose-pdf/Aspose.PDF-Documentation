@@ -1,17 +1,17 @@
 ---
-title: "Ruby での PDFの有効期限の設定"
-linktitle: "Ruby での PDFの有効期限の設定"
+title: "Ruby での PDF の有効期限の設定"
+linktitle: "Ruby での PDF の有効期限の設定"
 type: docs
 weight: 110
 url: /ja/java/set-pdf-expiration-in-ruby/
-description: 時間に敏感な文書のために、Aspose.PDF for Ruby を使用してPDFに有効期限を実装します。
-lastmod: "2026-10-05"
+description: "時間に敏感な文書のために、Aspose.PDF for Ruby を使用して PDF に有効期限を実装します。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - PDFの有効期限の設定
+## Aspose.PDF - PDF の有効期限の設定
 
-**Aspose.PDF Java for Ruby** を使用して В  PDF ドキュメントの有効期限を設定するには、単に **SetExpiration** モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントの有効期限を設定するには、単に **SetExpiration** モジュールを呼び出してください。
 
-Rubyコード
+Ruby コード
 
 ```java
 # The path to the documents directory.
@@ -47,8 +47,8 @@ doc.save(data_dir + "set_expiration.pdf")
 puts "Update document information, please check output file."
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-ダウンロードВ **Set PDF Expiration (Aspose.PDF)**В 以下に示すいずれかのソーシャルコーディングサイトから:
+以下のいずれかのソーシャルコーディングサイトから、**Set PDF Expiration (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)

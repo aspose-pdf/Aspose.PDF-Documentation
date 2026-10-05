@@ -1,17 +1,17 @@
 ---
-title: "Ruby での ドキュメントウィンドウとページ表示プロパティの取得"
-linktitle: "Ruby での ドキュメントウィンドウとページ表示プロパティの取得"
+title: "Ruby でのドキュメントウィンドウとページ表示プロパティの取得"
+linktitle: "Ruby でのドキュメントウィンドウとページ表示プロパティの取得"
 type: docs
 weight: 40
 url: /ja/java/get-document-window-and-page-display-properties-in-ruby/
 description: Ruby と Aspose.PDF を使用して PDF ファイルのドキュメントウィンドウおよびページ表示プロパティを取得し、カスタマイズします。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - ドキュメントウィンドウとページ表示プロパティの取得
 
-**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントのドキュメントウィンドウとページ表示プロパティを取得するには、単に **GetDocumentWindow** モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントのドキュメントウィンドウとページ表示プロパティを取得するには、単に **GetDocumentWindow** モジュールを呼び出してください。
 
-Rubyコード
+Ruby コード
 
 ```java
 # The path to the documents directory.
@@ -73,8 +73,8 @@ puts "PageLayout :-" + doc.getPageLayout().to_s
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-ダウンロードВ **Get Document Window and Page Display Properties (Aspose.PDF)**В 以下に記載されたソーシャルコーディングサイトのいずれかから取得してください:
+ダウンロード **Get Document Window and Page Display Properties (Aspose.PDF)** 以下に記載されたソーシャルコーディングサイトのいずれかから取得してください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

@@ -4,8 +4,8 @@ linktitle: 使用権管理
 type: docs
 weight: 100
 url: /ja/java/usage-rights-management/
-description: PdfFileSignature を使用した PDF の使用権管理に関する現在の Java カバレッジを確認してください。
-lastmod: "2026-10-05"
+description: "PdfFileSignature を使用した PDF の使用権管理に関する、現在の Java カバレッジを確認してください。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -16,11 +16,11 @@ Abstract: このリポジトリの現在の `PdfFileSignatureExamples` クラス
 ---
 ## カバレッジノート
 
-現在の Java の例クラス `PdfFileSignature` 専用の使用権検査または削除サンプルは提供されていません。
+現在、Java の例クラス `PdfFileSignature` には、使用権の検査または削除のための専用サンプルは提供されていません。
 
-このセクションで利用可能なソースバックされたワークフローは次のとおりです:
+このセクションで利用可能なソースバックされたワークフローは次のとおりです：
 
-- [PDF ドキュメントに署名](/pdf/ja/java/pdf-signing/)
+- [PDF ドキュメントへの署名](/pdf/ja/java/pdf-signing/)
 - [PDF 認証](/pdf/ja/java/pdf-certification/)
 - [署名の検証](/pdf/ja/java/signature-verification/)
 - [署名管理](/pdf/ja/java/signature-management/)

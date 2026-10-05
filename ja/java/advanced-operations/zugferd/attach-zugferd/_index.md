@@ -1,28 +1,28 @@
 ---
-title: JavaでPDF/3-A準拠のPDFを作成し、ZUGFeRD請求書を添付する
-linktitle: PDFにZUGFeRDを添付する
+title: "Java での PDF/A-3A 準拠の PDF を作成し、ZUGFeRD 請求書の添付"
+linktitle: "PDF に ZUGFeRD の添付"
 type: docs
 weight: 10
 url: /ja/java/attach-zugferd/
-description: JavaでZUGFeRD請求書XMLをPDFに添付し、PDF/A-3Aに変換する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で ZUGFeRD 請求書 XML を PDF に添付し、PDF/A-3A に変換する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDF文書にZUGFeRD請求書XMLを添付する
+AlternativeHeadline: "Java での PDF 文書に ZUGFeRD 請求書 XML の添付"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF/A-3A 準拠の請求書ドキュメントを作成する方法を説明します。請求書 XML を埋め込みファイルとして添付し、MIME タイプと associated-file 関係を設定し、PDF を PDF/A-3A に変換し、最終的な ZUGFeRD 対応ドキュメントを保存する手順を網羅しています。
 ---
-使用する `Document` そして `FileSpecification` ZUGFeRDスタイルのワークフローで、請求書XMLをPDF内にパッケージする必要がある場合のAPI。
+ZUGFeRD スタイルのワークフローで請求書 XML を PDF 内にパッケージングする必要がある場合、`Document` および `FileSpecification` API を使用します。
 
-## PDFにZUGFeRD請求書XMLを添付する
+## PDF に ZUGFeRD 請求書 XML の添付
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成する [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) XML請求書ファイル用。
-1. 埋め込みファイルのメタデータを設定します（MIME タイプと） [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/)。
-1. 追加する [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) ドキュメントの埋め込みファイルコレクションへ。
-1. ドキュメントを変換します [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`。
-1. 更新された PDF を保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. XML 請求書ファイル用に [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) を作成してください。
+1. 埋め込みファイルのメタデータ（MIME タイプおよび [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/)）を設定してください。
+1. 作成した [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) をドキュメントの埋め込みファイル コレクションへ追加してください。
+1. ドキュメントを [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A` に変換してください。
+1. 更新した PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {

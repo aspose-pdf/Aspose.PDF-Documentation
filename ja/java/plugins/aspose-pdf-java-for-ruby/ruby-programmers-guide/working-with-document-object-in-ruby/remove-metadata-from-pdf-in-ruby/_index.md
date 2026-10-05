@@ -5,11 +5,11 @@ type: docs
 weight: 90
 url: /ja/java/remove-metadata-from-pdf-in-ruby/
 description: Aspose.PDF for Ruby を使用して、PDF ファイルの機密または不要なメタデータをプログラムで削除します。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - メタデータの削除
 
-**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントのメタデータを削除するには、単に **RemoveMetadata** モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントのメタデータを削除するには、**RemoveMetadata** モジュールを呼び出してください。
 
 Ruby コード
 
@@ -41,8 +41,8 @@ doc.save(data_dir + "Remove_Metadata.pdf")
 puts "Removed metadata successfully, please check output file."
 ```
 
-## 実行中のコードをダウンロード
+## 実行中のコードのダウンロード
 
-ダウンロードВ **メタデータの削除 (Aspose.PDF)**В 以下に記載されたソーシャルコーディングサイトのいずれかから：
+ダウンロード **メタデータの削除 (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれか：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/removemetadata.rb)

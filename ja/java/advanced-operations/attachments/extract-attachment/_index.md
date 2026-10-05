@@ -5,12 +5,12 @@ type: docs
 weight: 50
 url: /ja/java/extract-attachment/
 description: Java と Aspose.PDF を使用して、PDF ドキュメントから埋め込みファイルおよびファイル添付注釈を抽出する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF から単一またはすべての埋め込みファイルを抽出する
+AlternativeHeadline: "Java を使用して PDF から単一またはすべての埋め込みファイルの抽出"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントから添付ファイルを抽出する方法を説明します。単一の名前付き添付ファイルの抽出、すべての埋め込みファイルを出力フォルダーに保存、ファイルメタデータの読み取り、およびページ上の FileAttachment アノテーションからコンテンツをエクスポートする方法をカバーしています。
 ---
 Aspose.PDF for Java は、添付ファイルがドキュメント内でどのように保存されているかに応じて、いくつかの抽出フローをサポートしています。
@@ -53,7 +53,7 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 このヘルパーメソッドは、格納されたメタデータを出力します [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/) オブジェクト。
 
 1. ファイルパラメータオブジェクトが存在するかどうかを確認してください。
-1. 利用可能なチェックサム、作成日、変更日、およびサイズの値を読み取ります。
+1. 利用可能なチェックサム、作成日、変更日、およびサイズの値を読み取ってください。
 1. コンソールに値を出力してください。
 
 ```java
@@ -71,13 +71,13 @@ public static void printFileParams(FileParams params) {
 }
 ```
 
-## 埋め込み添付ファイルをすべて抽出
+## 埋め込み添付ファイルのすべてを抽出
 
-この例は、PDF のすべての埋め込みファイルを出力ディレクトリに書き込む必要がある場合に使用します。
+この例は、PDF 内のすべての埋め込みファイルを出力ディレクトリに書き出す必要がある場合に使用します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. 埋め込みファイルコレクションを反復処理し、各アイテムに対して安全な出力ファイル名を決定してください。
-1. メタデータを出力し、各添付ストリームを保存し、すべてのファイルがエクスポートされるまで続行してください。
+1. メタデータを出力し、各添付ストリームを保存し、すべてのファイルがエクスポートされるまで処理を続行してください。
 
 ```java
 public static void extractAttachments(Path inputFile, Path outputDir) throws Exception {
@@ -115,7 +115,7 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 埋め込みファイルコレクションだけでなく、ページ注釈を介してファイルが添付されている場合にこの例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 最初のものを見つける [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) ページ上に。
+1. ページ上に最初の [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) を検索してください。
 1. そのファイル仕様を読み取り、内容をエクスポートし、宛先パスを出力してください。
 
 ```java

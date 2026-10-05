@@ -4,16 +4,16 @@ linktitle: "フィールドのコンブ番号の設定"
 type: docs
 weight: 60
 url: /ja/java/set-field-comb-number/
-description: JavaでAspose.PDFのFormEditorファサードを使用して、PDFフォームフィールドのコンブ番号を設定する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で Aspose.PDF の FormEditor ファサードを使用して、PDF フォームフィールドのコンブ番号を設定する方法を学びます。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: JavaでPDFフォームフィールドのコンブ番号を設定する
-Abstract: この記事では、既存のPDFをバインドし、フィールドのコンブ番号を設定し、Aspose.PDF for JavaのFormEditorファサードを使用して更新されたドキュメントを保存する方法を示します。
+AlternativeHeadline: "Java での PDF フォームフィールドのコンブ番号の設定"
+Abstract: "この記事では、既存の PDF をバインドし、フィールドのコンブ番号を設定し、Aspose.PDF for Java の FormEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。"
 ---
 ## フィールドのコンブ番号の設定
 
-1. ソースPDFをバインドする `FormEditor` ファサード。
-2. 呼び出す `setFieldCombNumber(...)` 対象フィールドとコンブ値のために。
+1. ソース PDF を `FormEditor` ファサードにバインドしてください。
+2. `setFieldCombNumber(...)` を呼び出して、対象フィールドとコンブ値を設定してください。
 3. 更新されたドキュメントを保存してください。
 
 ```java

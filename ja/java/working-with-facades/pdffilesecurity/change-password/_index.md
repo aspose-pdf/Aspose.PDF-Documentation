@@ -4,26 +4,26 @@ linktitle: PDF ファイルのパスワード変更
 type: docs
 weight: 10
 url: /ja/java/change-password/
-description: PdfFileSecurity ファサードを使用して、Java で PDF のパスワードを変更する方法を学びます。
-lastmod: "2026-10-05"
+description: "PdfFileSecurity ファサードを使用して、Java で PDF のパスワードを変更する方法を学習します。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で PDF のユーザーおよび所有者パスワードを更新する
-Abstract: Aspose.PDF for Java を使用して PDF パスワードを変更する方法を学びます。Java のサンプルセットでは、ユーザーおよび所有者パスワードを直接変更する方法、セキュリティ設定をリセットしながらパスワードを変更する方法、成功フラグを返すトライスタイルのパスワード変更ワークフローがカバーされています。
+AlternativeHeadline: "Java での PDF ユーザーおよび所有者パスワードの更新"
+Abstract: "Aspose.PDF for Java を使用して PDF のパスワードを変更する方法を学習します。Java のサンプルセットでは、ユーザーおよび所有者パスワードの直接的な変更、セキュリティ設定のリセットを伴うパスワード変更、および成功フラグを返すトライスタイルのパスワード変更ワークフローがカバーされています。"
 ---
 ## PDF ファイルのパスワードの変更
 
-使用 `PdfFileSecurity` 既に保護されたPDFで資格情報をローテーションする必要があるとき。
+`PdfFileSecurity` を使用して、既に保護されている PDF の資格情報をローテーションする場合に利用します。
 
 ### 手順
 
-1. 作成する `PdfFileSecurity` インスタンス。
-2. 保護されたPDFにバインドする `bindPdf`。
-3. 適切なものを呼び出す `changePassword` オーバーロード、特権とキーサイズもリセットしたいかどうかに応じて。
-4. 更新されたファイルを保存し、セキュリティオブジェクトを閉じます。
+1. `PdfFileSecurity` インスタンスを作成してください。
+2. `bindPdf` を使用して保護された PDF にバインドしてください。
+3. 特権およびキーサイズもリセットするかどうかに応じて、適切な `changePassword` のオーバーロードを呼び出してください。
+4. 更新されたファイルを保存し、セキュリティオブジェクトを閉じてください。
 
 ### Java の例
 

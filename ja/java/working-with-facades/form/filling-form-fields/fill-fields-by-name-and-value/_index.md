@@ -4,13 +4,13 @@ linktitle: 名前と値でフィールドを埋める
 type: docs
 weight: 60
 url: /ja/java/fill-fields-by-name-and-value/
-description: Javaで動的な名前‑値フォームの更新のために、Formファサードのフィールド入力APIの適用方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で動的な名前‑値フォームを更新する場合、Form ファサードのフィールド入力 API の適用方法を学びます。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Javaで名前と値のペアから複数のPDFフォームフィールドを埋める
-Abstract: 現在のJavaサンプルセットは、繰り返し `fillField(...)` 呼び出しで個々のフィールドを埋めます。この記事では、リポジトリの例に存在しない別個のファサード機能を作り出すことなく、同じAPIパターンを自分の名前‑値コレクションに適用する方法を示します。
+AlternativeHeadline: "Java で名前と値のペアから複数の PDF フォームフィールドを埋める"
+Abstract: "現在の Java サンプルセットでは、繰り返し `fillField(...)` を呼び出すことで個々のフィールドを埋めています。本記事では、リポジトリの例に存在しない別個のファサード機能を作成することなく、同じ API パターンを独自の名前‑値コレクションに適用する方法を示します。"
 ---
-そのJava `FormExamples` クラスは個々のフィールドを直接埋めます:
+Java の `FormExamples` クラスは、個々のフィールドを直接埋めます。
 
 ```java
 form.fillField("name", "John Doe");
@@ -18,7 +18,7 @@ form.fillField("address", "123 Main St, Anytown, USA");
 form.fillField("email", "john.doe@example.com");
 ```
 
-アプリケーションですでに動的なフィールド名と値のセットがある場合、同じものを適用してください。 `fillField(...)` 自分のループ内で呼び出す:
+アプリケーションですでに動的なフィールド名と値のセットを持っている場合は、同じ `fillField(...)` を独自のループ内で呼び出してください。
 
 ```java
 for (Map.Entry<String, String> entry : values.entrySet()) {
@@ -26,4 +26,4 @@ for (Map.Entry<String, String> entry : values.entrySet()) {
 }
 ```
 
-これは、同じ Java API を使用して導出されたアプリケーションレベルのパターンです。 `FormExamples.fillTextFields(...)`; 現在のリポジトリには、マップベースの入力用の別個の専用ヘルパーメソッドが含まれていません。
+これは、`FormExamples.fillTextFields(...)` で使用されている同じ Java API から導出されたアプリケーションレベルのパターンです。現在のリポジトリには、マップベースの入力用の別個の専用ヘルパーメソッドは含まれていません。

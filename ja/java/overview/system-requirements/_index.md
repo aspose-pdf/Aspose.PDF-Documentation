@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ja/java/system-requirements/
 description: このセクションでは、開発者が Aspose.PDF for Python を正常に使用するために必要なサポート対象のオペレーティングシステムを一覧表示します。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,11 +15,11 @@ Abstract: Aspose.PDF for Python via .NET は、Microsoft Office や Adobe Acroba
 ---
 ## 概要
 
-PDF ドキュメントを生成するには、実行するマシン [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) 持つ必要はありません [Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) インストールは不要です。Aspose.PDF for Java 自体は PDF 文書作成エンジンです。しかし、Aspose.PDF for Java が生成した PDF 文書を表示するには、マシンに少なくとも [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html). 無料でダウンロードできます。
+PDF ドキュメントを生成するには、実行するマシンに [Aspose.PDF for Java](https://products.aspose.com/pdf/java/) をインストールする必要がありますが、[Adobe Acrobat](https://www.adobe.com/acrobat/acrobat-pro.html) のインストールは不要です。Aspose.PDF for Java 自体は PDF 文書作成エンジンです。しかし、Aspose.PDF for Java が生成した PDF 文書を表示するには、マシンに少なくとも [Adobe Acrobat Reader](https://www.adobe.com/acrobat/pdf-reader.html) が必要です。Adobe Acrobat Reader は無料でダウンロードできます。
 
 ## サポートされているオペレーティングシステム
 
-Aspose.PDF for Java は、Java ランタイムで実行される任意の 32 ビットまたは 64 ビット オペレーティングシステムВ をサポートします（ただし、以下に限定されません）:
+Aspose.PDF for Java は、Java ランタイムで実行される任意の 32 ビットまたは 64 ビットのオペレーティングシステムをサポートします（ただし、以下に限定されません）。
 
 ### Windows
 
@@ -40,7 +40,7 @@ Aspose.PDF for Java は、Java ランタイムで実行される任意の 32 ビ
 
 ### Linux
 
-- Linux（Ubuntu、CentOS、その他）
+- Linux（Ubuntu、CentOS など）
 
 ### Mac
 
@@ -48,14 +48,14 @@ Aspose.PDF for Java は、Java ランタイムで実行される任意の 32 ビ
 
 ## サポートされている Java バージョン
 
-Aspose.PDF for Java は以下の Java バージョンをサポートします:
+Aspose.PDF for Java は、以下の Java バージョンをサポートします。
 
-- J2SE 8.0 (1.8) 以上（*例: Java 10*）В
-- IBM i (Iseries または As/400) 上の Aspose.Pdf for Java のサポート
+- J2SE 8.0 (1.8) 以上（*例: Java 10*）
+- IBM i（iSeries または AS/400）での Aspose.Pdf for Java のサポート
 
 ## 開発環境
 
-Aspose.PDF for Java を使用して、Java プラットフォームを対象とする任意の開発環境でアプリケーションを開発できますが、次の環境は明示的にサポートされています：
+Aspose.PDF for Java を使用すると、Java プラットフォームを対象とする任意の開発環境でアプリケーションを開発できますが、以下の環境が明示的にサポートされています。
 
 - Microsoft Visual Studio 2003
 - Microsoft Visual Studio 2005

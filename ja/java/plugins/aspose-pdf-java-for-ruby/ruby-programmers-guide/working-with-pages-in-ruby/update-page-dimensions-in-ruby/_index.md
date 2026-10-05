@@ -1,11 +1,11 @@
 ---
-title: "Ruby での ページサイズの更新"
-linktitle: "Ruby での ページサイズの更新"
+title: "Ruby でのページサイズの更新"
+linktitle: "Ruby でのページサイズの更新"
 type: docs
 weight: 90
 url: /ja/java/update-page-dimensions-in-ruby/
 description: Aspose.PDF を使用した Ruby で PDF ドキュメントのページサイズを正確に設定する方法をご覧ください。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - ページサイズの更新
 
@@ -43,8 +43,8 @@ pdf.save(data_dir + "output.pdf")
 puts "Dimensions updated successfully!"
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-以下に記載されたソーシャルコーディングサイトのいずれかから **Update Page Dimensions (Aspose.PDF)** をダウンロードしてください:
+以下に記載されたソーシャルコーディングサイトのいずれかから **Update Page Dimensions (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/updatepagedimensions.rb)

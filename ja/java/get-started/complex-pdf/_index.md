@@ -1,32 +1,33 @@
 ---
-title: 複雑なPDFの作成
-linktitle: 複雑なPDFの作成
+title: "複雑な PDF の作成"
+linktitle: "複雑な PDF の作成"
 type: docs
 weight: 30
 url: /ja/java/complex-pdf-example/
-description: Aspose.PDF for Java を使用すると、画像、テキストフラグメント、テーブルを1つのファイルに含む、より複雑な PDF ドキュメントを作成できます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用すると、画像、テキストフラグメント、テーブルを 1 つのファイルに含む、より複雑な PDF ドキュメントを作成できます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して複雑な PDF を作成する
+AlternativeHeadline: "Java を使用した複雑な PDF の作成"
 Abstract: この記事では、Aspose.PDF を使用して Java でより複雑な PDF を作成する方法を示します。例では、画像、書式設定された見出し、説明テキストブロック、およびスタイルが適用されたヘッダーセルと生成されたスケジュール行を持つテーブルを追加し、結果を PDF ドキュメントとして保存します。
 ---
-その [こんにちは世界](/pdf/ja/java/hello-world-example/) この例は最もシンプルな PDF 作成パスをカバーしています。この例はそのワークフローを基に、グラフィック、テキスト、表形式のコンテンツを組み合わせた、よりリッチなドキュメントを作成します。
+[Hello World の例](/pdf/ja/java/hello-world-example/) では、最もシンプルな PDF 作成手順を説明しています。この例では、そのワークフローを基に、グラフィックス、テキスト、表形式のコンテンツを組み合わせた、より複雑なドキュメントを作成します。
 
 Java で、より複雑な PDF ドキュメントを作成するには：
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
-1. 画像を追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) と `page.addImage(...)` およびターゲット [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)。
-1. ヘッダーを作成する [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) フォント、サイズ、配置、そして [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/)。
-1. 2番目を作成 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 説明段落用に。
-1. 構築する [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 枠線、パディング、ヘッダーのスタイリング付き。
-1. 生成されたスケジュール行を追加する [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)。
-1. 追加する [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) に [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 段落。
-1. 出力PDFを保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加してください。
+1. `page.addImage(...)` と対象領域を定義する [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) を使用して、[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) に画像を追加してください。
+1. 見出し用の [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) を作成し、フォント、サイズ、配置、および [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/) を設定してください。
+1. 説明段落用に 2 つ目の [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) を作成してください。
+1. 枠線、パディング、およびヘッダーのスタイルを設定した [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成してください。
+1. 生成したスケジュール行を [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) に追加してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) の段落コレクションに追加してください。
+1. 出力 PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
-以下の Java コードは次のものに基づいています `GetStartedExamples.java`.
+次の Java コードは `GetStartedExamples.java` に基づいています。
 
 ```java
 public static void complexExample(Path imageFile, Path outputFile) {

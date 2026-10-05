@@ -1,15 +1,15 @@
 ---
-title: "PHP での PDFドキュメントのすべてのページからテキストの抽出"
-linktitle: "PHP での PDFドキュメントのすべてのページからテキストの抽出"
+title: "PHP での PDF ドキュメントのすべてのページからテキストの抽出"
+linktitle: "PHP での PDF ドキュメントのすべてのページからテキストの抽出"
 type: docs
 weight: 30
 url: /ja/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
-description: Aspose.PDF を使用して、PHPでPDFドキュメントのすべてのページからテキストを抽出する方法をご紹介します。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、PHP で PDF ドキュメントのすべてのページからテキストを抽出する方法をご紹介します。"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - すべてのページからテキストの抽出
 
-**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのすべてのページからテキストを抽出するには、**ExtractTextFromAllPages** モジュールを呼び出すだけです。
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのすべてのページからテキストを抽出するには、**ExtractTextFromAllPages** モジュールを呼び出してください。
 PHPコード
 
 ```php
@@ -44,6 +44,6 @@ print "Text extracted successfully. Check output file." . PHP_EOL;
 
 **実行コードのダウンロード**
 
-ダウンロードВ **すべてのページからテキストを抽出 (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれか:
+**すべてのページからテキストを抽出 (Aspose.PDF)** を以下のいずれかのソーシャルコーディングサイトからダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)

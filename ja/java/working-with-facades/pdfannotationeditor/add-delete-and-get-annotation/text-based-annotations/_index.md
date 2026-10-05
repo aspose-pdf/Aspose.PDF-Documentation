@@ -4,16 +4,16 @@ linktitle: テキスト注釈
 type: docs
 weight: 10
 url: /ja/java/pdfannotationeditor-class/text-based-annotations/
-description: Java を使用して PDF ドキュメント内のテキスト、自由テキスト、取り消し線注釈を追加、検査、削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して PDF ドキュメント内のテキスト注釈、自由テキスト注釈、取り消し線注釈を追加・検査・削除する方法を学びます。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java でテキスト PDF 注釈を操作する
-Abstract: この記事では、Java を使用して PDF ドキュメント内のテキストベースの注釈を作成、読み取り、削除する方法を説明します。テキスト注釈、自由テキスト注釈、取り消し線注釈を、Java のサンプル実装に基づいてカバーしています。
+AlternativeHeadline: "Java でのテキスト PDF 注釈の操作"
+Abstract: "この記事では、Java を使用して PDF ドキュメント内のテキストベースの注釈を作成・読み取り・削除する方法を説明します。テキスト注釈、自由テキスト注釈、取り消し線注釈について、Java のサンプル実装に基づいて解説します。"
 ---
 ## テキスト注釈の追加
 
-1. 入力 PDF を開き、テキスト注釈を配置すべきページを対象にしてください。
-2. 作成する `TextAnnotation`, その矩形を定義し、タイトル、サブジェクト、フラグ、カラーを設定してください。
+1. 入力 PDF を開き、テキスト注釈を配置する対象ページを選択してください。
+2. `TextAnnotation` を作成し、その矩形を定義して、タイトル・サブジェクト・フラグ・カラーを設定してください。
 3. 注釈をページに追加し、更新されたドキュメントを保存してください。
 
 ```java
@@ -34,8 +34,8 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## フリーテキスト注釈の追加
 
-1. ソースPDFを読み込み、対象ページとフリーテキストノートの矩形を選択してください。
-2. 作成する `FreeTextAnnotation`, デフォルトの外観を初期化し、タイトルと色を設定してください。
+1. ソース PDF を読み込み、対象ページとフリーテキスト注釈の矩形を選択してください。
+2. `FreeTextAnnotation` を作成し、デフォルトの外観を初期化して、タイトルと色を設定してください。
 3. ページに注釈を追加し、結果を保存してください。
 
 ```java

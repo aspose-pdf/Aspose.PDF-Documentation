@@ -1,27 +1,27 @@
 ---
-title: JavaでPDFブックマークを取得、更新、展開する
-linktitle: ブックマークを取得、更新、展開する
+title: "Java での PDF ブックマークの取得、更新、展開"
+linktitle: "ブックマークの取得、更新、展開"
 type: docs
 weight: 20
 url: /ja/java/get-update-and-expand-bookmark/
-description: Javaを使用してPDFドキュメント内のブックマークを取得、更新、展開する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して PDF ドキュメント内のブックマークを取得、更新、展開する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFファイルのブックマークプロパティを検査し、アウトラインを展開する
-Abstract: この記事では、Aspose.PDF for Java を使用してブックマークを読み取り、更新し、展開する方法を説明します。アウトライン項目を反復処理し、PdfBookmarkEditor でブックマークのページ番号を抽出し、子ブックマークを読み取り、ブックマークのタイトルとスタイルを更新し、文書が表示されるときにアウトラインが開くように強制する方法をカバーしています。
+AlternativeHeadline: "Java での PDF ファイルのブックマークプロパティを検査し、アウトラインの展開"
+Abstract: "この記事では、Aspose.PDF for Java を使用してブックマークの読み取り、更新、展開を行う方法を説明します。アウトライン項目の反復処理、PdfBookmarkEditor を使ったブックマークのページ番号の抽出、子ブックマークの読み取り、ブックマークのタイトルとスタイルの更新、およびドキュメント表示時にアウトラインが開くように強制する方法をカバーしています。"
 ---
-Aspose.PDF for Java は、ブックマークをドキュメントアウトラインモデルと `PdfBookmarkEditor` ファサード。
+Aspose.PDF for Java は、ドキュメントのアウトラインモデルおよび `PdfBookmarkEditor` ファサードを通じてブックマークを提供します。
 
 ## ブックマークのプロパティの取得
 
-ドキュメントのアウトラインでトップレベルのブックマークリストを調査する必要がある場合にこの例を使用してください。
+ドキュメントのアウトラインでトップレベルのブックマークリストを調査する必要がある場合に、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. アウトライン コレクションを反復処理してください。
-1. ブックマークのタイトル、スタイル、色の値を読み取り、出力してください。
+1. ブックマークのタイトル、スタイル、色の値を読み取って出力してください。
 
 ```java
 public static void getBookmarks(Path inputFile) {
@@ -39,9 +39,9 @@ public static void getBookmarks(Path inputFile) {
 
 ## ブックマークのページ番号の取得
 
-この例では使用します `PdfBookmarkEditor` ブックマークのタイトル、レベル、ページ番号、アクションを抽出するために。
+この例では、`PdfBookmarkEditor` を使用してブックマークのタイトル、レベル、ページ番号、およびアクションを抽出します。
 
-1. ソース PDF をバインドする [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/)。
+1. ソース PDF を [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/) にバインドしてください。
 1. ブックマークコレクションを抽出し、それをイテレートしてください。
 1. 各ブックマークのレベル、タイトル、ページ番号、およびアクション情報を出力してください。
 
@@ -68,11 +68,11 @@ public static void getBookmarkPageNumber(Path inputFile) {
 
 ## 子ブックマークの取得
 
-トップレベルとネストされたアウトライン項目の両方を検査する必要がある場合は、この例を使用してください。
+トップレベルおよびネストされたアウトライン項目の両方を検査する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. トップレベルのアウトラインを反復処理し、そのプロパティを出力してください。
-1. 子ブックマークを検出し、次にそれらを反復処理してプロパティを出力します。
+1. 子ブックマークを検出し、次にそれらを反復処理してプロパティを出力してください。
 
 ```java
 public static void getChildBookmarks(Path inputFile) {
@@ -101,10 +101,10 @@ public static void getChildBookmarks(Path inputFile) {
 
 ## ブックマークの更新
 
-既存のブックマークタイトルとスタイルを変更する必要がある場合は、この例を使用します。
+既存のブックマークのタイトルおよびスタイルを変更する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ターゲットのアウトライン項目とその子ブックマークにアクセスします。
+1. ターゲットのアウトライン項目とその子ブックマークにアクセスしてください。
 1. ブックマークのプロパティを更新し、ドキュメントを保存してください。
 
 ```java
@@ -121,7 +121,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 }
 ```
 
-## ブックマークをデフォルトで展開する
+## ブックマークをデフォルトで展開
 
 ドキュメントが表示されたときにブックマークパネルが開き、アウトライン項目が展開された状態で表示されるべき場合に、この例を使用します。
 

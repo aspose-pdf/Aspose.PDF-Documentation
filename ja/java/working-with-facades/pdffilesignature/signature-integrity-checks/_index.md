@@ -4,27 +4,27 @@ linktitle: 署名の完全性チェック
 type: docs
 weight: 70
 url: /ja/java/signature-integrity-checks/
-description: JavaでPdfFileSignatureファサードを使用して、署名のカバレッジと完全性を検証する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PdfFileSignature ファサードを使用して、署名のカバレッジと完全性を検証する方法を学びます。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDF署名のカバレッジと完全性を検証する
-Abstract: Aspose.PDF for Javaを使用して署名の完全性を検査する方法を学びます。現在のJavaサンプルセットでは、`verifySignature`を使用して選択した署名を検証し、`coversWholeDocument`を使用して署名がPDF全体を保護しているかどうかを判断します。
+AlternativeHeadline: "Java での PDF 署名のカバレッジと完全性の検証"
+Abstract: "Aspose.PDF for Java を使用して署名の完全性を検査する方法を学びます。現在の Java サンプルセットでは、`verifySignature` を使用して選択した署名を検証し、`coversWholeDocument` を使用して署名が PDF 全体を保護しているかどうかを判断します。"
 ---
-## 署名の完全性をチェックする
+## 署名の完全性のチェック
 
-この記事は、同じ検証ワークフローにマッピングされます `PdfFileSignatureExamples.java`.
+この記事は、`PdfFileSignatureExamples.java` で公開されているのと同じ検証ワークフローに対応しています。
 
 ### 手順
 
-1. 署名済みPDFを結合する `PdfFileSignature`。
+1. 署名済み PDF を `PdfFileSignature` にバインドしてください。
 2. ドキュメントから署名名を選択してください。
-3. 呼び出し `verifySignature` 署名内容を検証するために。
-4. 呼び出し `coversWholeDocument` 文書全体のカバレッジを確認するために
-5. ファサードオブジェクトを閉じます。
+3. 署名内容を検証するために `verifySignature` を呼び出してください。
+4. 文書全体のカバレッジを確認するために `coversWholeDocument` を呼び出してください。
+5. ファサードオブジェクトを閉じてください。
 
 ### Java の例
 

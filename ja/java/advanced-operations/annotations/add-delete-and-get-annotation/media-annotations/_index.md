@@ -1,26 +1,26 @@
 ---
-title: PDFのメディア注釈
+title: "PDF のメディア注釈"
 linktitle: メディア注釈
 type: docs
 weight: 40
 url: /ja/java/media-annotations/
-description: Javaでサウンド、スクリーン、リッチメディア、3D PDF注釈APIの操作方法を学び、一般的なマルチメディアワークフローのためのステップバイステップのガイダンスをご提供します。
-lastmod: "2026-10-05"
+description: "Java でサウンド、スクリーン、リッチメディア、3D PDF 注釈 API の操作方法を学び、一般的なマルチメディアワークフローのためのステップバイステップのガイダンスをご提供します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Javaにおけるメディア関連のPDF注釈ワークフロー。
+AlternativeHeadline: "Java におけるメディア関連の PDF 注釈ワークフロー"
 Abstract: このページでは、Aspose.PDF for Java における一般的なメディア注釈ワークフロー（サウンド、スクリーン、リッチメディア、3D、削除、検査シナリオ）について説明します。現在のリポジトリには、専用の `workingwithannotations` メディアサンプルクラスが含まれていないため、本稿では Java API パターンを直接、ステップバイステップのガイダンスとして文書化しています。
 ---
 PDF のメディア注釈は、通常、サウンドクリップ、スクリーン再生領域、リッチメディアコンテナ、3D モデルなどの埋め込みまたはリンクされたマルチメディアコンテンツを含みます。
 
 ## リッチメディア注釈の追加
 
-PDFページがカスタムプレーヤー、ポスター画像、スキンを備えた埋め込み動画コンテンツをホストすべき場合に、この例を使用してください。
+PDF ページがカスタムプレーヤー、ポスター画像、スキンを備えた埋め込み動画コンテンツをホストすべき場合に、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), プレーヤー資産、ポスター、およびコンテンツ ストリームを構成してください。
+1. [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/) を作成し、プレーヤー資産、ポスター、およびコンテンツストリームを構成してください。
 1. ページに注釈を追加し、出力ドキュメントを保存してください。
 
 ```java
@@ -63,12 +63,12 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 }
 ```
 
-## リッチメディア アノテーションの削除
+## リッチメディア注釈の削除
 
 この例では、ページから既存のリッチメディア注釈を削除します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. タイプの注釈を収集 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. 型が [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia` の注釈を収集してください。
 1. 収集された注釈を削除し、更新されたドキュメントを保存してください。
 
 ```java
@@ -120,8 +120,8 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 この例では、事前定義された視点とレンダリングオプションを備えたインタラクティブな3Dモデルビューを追加します。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. モデルをロードする [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) そして a を構成する [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/)。
-1. 作成する [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), ページに追加し、ドキュメントを保存してください。
+1. モデルを [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) にロードし、[PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/) を構成してください。
+1. [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/) を作成し、ページに追加してドキュメントを保存してください。
 
 ```java
 public static void annotation3dAdd(Path modelFile, Path outputFile) {
@@ -169,7 +169,7 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 ページがスクリーン再生領域を介してメディアファイルを参照する場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) メディアファイルと対象矩形のために。
+1. [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) オブジェクトを、メディアファイルおよび対象矩形用に作成してください。
 1. ページに注釈を追加し、ドキュメントを保存してください。
 
 ```java
@@ -190,10 +190,10 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 
 ## サウンド注釈の追加
 
-この例では、ページにサウンドアノテーションを配置し、WAV ファイルに関連付けます。
+この例では、ページにサウンド注釈を配置し、WAV ファイルに関連付けます。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成 [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) 対象のオーディオファイル用にメタデータを設定してください。
+1. [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) オブジェクトを、対象のオーディオファイル用に作成し、そのメタデータを設定してください。
 1. ページに注釈を追加し、出力ドキュメントを保存してください。
 
 ```java

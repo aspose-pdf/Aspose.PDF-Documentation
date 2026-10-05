@@ -5,12 +5,12 @@ type: docs
 weight: 30
 url: /ja/java/fill-radio-button-fields/
 description: Aspose.PDF の Form ファサードを使用して、Java で PDF フォームのラジオボタンの値を選択する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: Java でラジオボタン フィールドのオプションを選択
 Abstract: この記事では、PDF フォームをバインドし、インデックスでラジオボタンのオプションを選択し、Aspose.PDF for Java の Form ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
-使用 `FormExamples.fillRadioButtonFields(...)` ラジオボタンのオプションを選択する。
+`FormExamples.fillRadioButtonFields(...)` を使用してラジオボタンのオプションを選択してください。
 
 ```java
 public static void fillRadioButtonFields(Path inputFile, Path outputFile) {

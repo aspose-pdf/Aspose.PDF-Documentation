@@ -5,18 +5,18 @@ type: docs
 weight: 40
 url: /ja/java/annotation-and-special-text/
 description: Aspose.PDF for Java を使用して、PDF ドキュメント内のスタンプ注釈、ハイライトテキスト、上付きまたは下付きコンテンツからテキストを抽出する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 ## ハイライトテキストの抽出
 
-ページの注釈を反復し、マークされたテキストを読み取る `HighlightAnnotation`.
+ページの注釈を反復し、マークされたテキストを読み取る `HighlightAnnotation`。
 
-1. ソース PDF を a で開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. イテレートする [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) ターゲット上のオブジェクト [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
-1. 各アノテーションが対象かどうかを確認します。 [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) 型付けされたアノテーションクラスにキャストする前に。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. ターゲットの [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 上の [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) オブジェクトを反復処理してください。
+1. 各アノテーションが [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) 型であるかを確認してください。
 1. 各ハイライトアノテーションからマーキングされたテキストを読み取り、コンソールに出力してください。
 
 ```java
@@ -34,13 +34,13 @@ public static void extractHighlightedText(Path inputFile) {
 
 ## スタンプ注釈からテキストの抽出
 
-スタンプ注釈から標準外観ストリームを読み取り、それをそのまま渡す `TextAbsorber`.
+スタンプ注釈から標準外観ストリームを読み取り、それをそのまま `TextAbsorber` に渡します。
 
-1. ソース PDF を a で開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. イテレートする [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) ターゲット上のオブジェクト [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
-1. タイプが ... のアノテーションにフィルタリングする `Stamp`.
-1. 作成 [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) そして、スタンプアノテーションの外観辞書から通常の外観エントリを要求してください。
-1. 外観を訪問してください。 [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) そして、抽出したテキストを印刷します。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. ターゲットの [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 上の [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) オブジェクトを反復処理してください。
+1. 注釈をタイプが `Stamp` のものにフィルタリングしてください。
+1. [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) を作成し、スタンプ注釈の外観辞書から通常の外観エントリを要求してください。
+1. 外観の [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) を訪問し、抽出したテキストを印刷してください。
 
 ```java
 public static void extractStampText(Path inputFile) {
@@ -61,12 +61,12 @@ public static void extractStampText(Path inputFile) {
 
 ## 上付き文字と下付き文字のテキストの詳細の抽出
 
-使用 `TextFragmentAbsorber` 各フラグメントで抽出したテキストと、上付きまたは下付きフラグの両方が必要な場合。
+各フラグメントについて、抽出したテキストと上付きまたは下付きフラグの両方を必要とする場合は、`TextFragmentAbsorber` を使用してください。
 
-1. ソース PDF を a で開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. 作成 [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) フラグメントレベルのテキスト分析用。
-1. ターゲットを訪問する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) そしてそれを収集する [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) オブジェクト。
-1. それらのフラグメントを反復処理し、上付きおよび下付きのフラグと共にテキストを読み取ります。 `fragment.getTextState()`。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. フラグメントレベルのテキスト分析用に [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) を作成してください。
+1. 対象の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を訪問し、その [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) オブジェクトを収集してください。
+1. それらのフラグメントを反復処理し、`fragment.getTextState()` から上付きおよび下付きのフラグ付きでテキストを読み取ってください。
 1. 抽出した詳細を出力ファイルに書き込んでください。
 
 ```java

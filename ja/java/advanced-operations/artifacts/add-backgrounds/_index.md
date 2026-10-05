@@ -1,26 +1,26 @@
 ---
-title: "Java での PDFの背景の追加"
+title: "Java での PDF の背景の追加"
 linktitle: 背景の追加
 type: docs
 weight: 20
 url: /ja/java/add-backgrounds/
 description: Aspose.PDF と `BackgroundArtifact` を使用して、JavaでPDFページに背景画像または背景色を追加する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFに背景を追加する方法
-Abstract: このページでは、Javaで Aspose.PDF を使用して PDF ページの背景を追加または削除する方法を説明します。背景画像の追加、画像不透明度の調整、背景色の適用、ページから背景アーティファクトを削除する方法をカバーしています。
+AlternativeHeadline: "Java で PDF に背景を追加する方法"
+Abstract: "このページでは、Java で Aspose.PDF を使用して PDF ページの背景を追加または削除する方法を説明します。背景画像の追加、画像の不透明度の調整、背景色の適用、およびページから背景アーティファクトを削除する方法をカバーしています。"
 ---
-背景アーティファクトを使用すると、論理的な文書テキストを変更せずに、メインページコンテンツの背後にコンテンツではない視覚要素を配置できます。
+背景アーティファクトを使用すると、論理的なドキュメントテキストを変更せずに、メインページコンテンツの背後に視覚的な要素を配置できます。
 
-## PDF に背景画像の追加
+## PDF への背景画像の追加
 
 ページに画像を背景アーティファクトとして表示する必要がある場合は、この例を使用してください。
 
-1. ソースPDFを開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) および画像入力ストリーム。
-1. 作成 [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) そして画像ストリームを割り当てます。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) および画像入力ストリームで開いてください。
+1. [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) を作成し、画像ストリームを割り当ててください。
 1. アーティファクトを対象ページに追加し、出力 PDF を保存してください。
 
 ```java
@@ -39,8 +39,8 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 
 この例では、ページのコンテンツの背後に半透明の背景画像を配置します。
 
-1. ソースPDFを開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) および画像ストリーム。
-1. 作成 [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/)、画像を割り当て、透明度を設定してください。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) および画像ストリームで開いてください。
+1. [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) を作成し、画像を割り当て、不透明度を設定してください。
 1. アーティファクトをページに追加し、ドキュメントを保存してください。
 
 ```java
@@ -57,12 +57,12 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 }
 ```
 
-## PDFに背景色の追加
+## PDF への背景色の追加
 
-ページが画像ではなく単色の背景色を使用すべき場合は、この例を使用してください。
+ページが画像ではなく単色の背景色を使用する場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成 [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) そして背景色を割り当てます。
+1. [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) を作成し、背景色を割り当ててください。
 1. アーティファクトをページに追加し、出力ファイルを保存してください。
 
 ```java

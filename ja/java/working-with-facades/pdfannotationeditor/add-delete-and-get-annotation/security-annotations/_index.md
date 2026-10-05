@@ -5,15 +5,15 @@ type: docs
 weight: 60
 url: /ja/java/pdfannotationeditor-class/security-annotations/
 description: Java を使用して PDF ファイル内のテキストを削除対象としてマークし、削除アノテーションを適用し、検出された画像配置矩形に基づいて選択した領域を削除する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java でセキュリティアノテーションを使用して機密 PDF コンテンツを削除する
+AlternativeHeadline: "Java での セキュリティアノテーションを使用して機密 PDF コンテンツの削除"
 Abstract: この記事では、Java を使用して PDF 文書で削除アノテーションを操作する方法を説明します。マッチしたテキストを削除アノテーションでマークし、削除を永続的に適用し、検出された画像配置矩形に基づいて選択した領域を削除する方法を取り上げています。
 ---
-## 削除対象としてテキストをマークする
+## 削除対象としてテキストのマーク
 
 1. PDF をロードし、すべてのページで削除すべきテキストを検索してください。
-2. 作成 `RedactionAnnotation` 一致したテキストフラグメントごとに外観を設定してください。
+2. 一致したテキストフラグメントごとに `RedactionAnnotation` を作成し、その外観を設定してください。
 3. 削除アノテーションを各ページに追加し、ドキュメントを保存してください。
 
 ```java

@@ -4,24 +4,24 @@ linktitle: 透かしの追加
 type: docs
 weight: 30
 url: /ja/java/add-watermarks/
-description: Aspose.PDF for Java を使用して、PDF ファイル内の透かしアーティファクトを追加、抽出、削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用して、PDF ファイル内の透かしアーティファクトの追加、抽出、および削除を行う方法を学習します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF に透かしを追加する方法
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントにウォーターマーク アーティファクトを追加、検査、削除する方法について説明します。テキストウォーターマークの配置、回転、不透明度、背景設定の作成、ページ上のウォーターマーク アーティファクトの検査、および削除についてカバーしています。
+AlternativeHeadline: "Java を使用した PDF への透かし追加"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメントに透かしアーティファクトを追加・検査・削除する方法を説明します。テキスト透かしの配置、回転、不透明度、背景設定の作成、ページ上の透かしアーティファクトの検査、および削除について取り上げます。"
 ---
-ウォーターマーク アーティファクトを使用すると、ページ上に永続的な視覚的マーキングを配置できますが、これらはメインドキュメントのコンテンツに混ざりません。
+透かしアーティファクトを使用すると、ページ上に永続的な視覚的マーキングを配置できますが、これらはドキュメントの主要なコンテンツには混在しません。
 
-## PDF からウォーターマーク アーティファクトの抽出
+## PDF からの透かしアーティファクトの抽出
 
-既存のウォーターマーク アーティファクトを検査し、そのテキストまたは位置を読み取る必要がある場合は、この例を使用してください。
+既存の透かしアーティファクトを検査し、そのテキストや位置を読み取る必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 対象ページのアーティファクトコレクションを反復処理してください。
-1. 透かしページネーションアーティファクトをフィルタリングし、テキストと矩形を印刷する。
+1. 対象ページのアーティファクト コレクションを反復処理してください。
+1. 透かしページネーション アーティファクトをフィルタリングし、そのテキストと矩形を出力してください。
 
 ```java
 public static void extractWatermarkFromPdf(Path inputFile) {
@@ -36,12 +36,12 @@ public static void extractWatermarkFromPdf(Path inputFile) {
 }
 ```
 
-## ウォーターマーク アーティファクトの追加
+## 透かしアーティファクトの追加
 
-ページにカスタム回転、透過性、背景配置で中央揃えのテキスト透かしを表示する必要がある場合は、この例を使用してください。
+ページにカスタムの回転・不透明度・背景配置を持つ中央揃えのテキスト透かしを表示する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) を作成し、そのテキスト状態と配置設定を構成してください。
+1. [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) を作成し、そのテキスト状態および配置設定を構成してください。
 1. ページに透かしを追加し、出力ファイルを保存してください。
 
 ```java

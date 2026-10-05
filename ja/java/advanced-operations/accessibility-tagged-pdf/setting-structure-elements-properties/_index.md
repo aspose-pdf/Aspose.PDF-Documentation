@@ -1,22 +1,22 @@
 ---
-title: "Java での Tagged PDF構造要素のプロパティの設定"
+title: "Java での Tagged PDF 構造要素のプロパティの設定"
 linktitle: "構造要素のプロパティの設定"
 type: docs
 weight: 30
 url: /ja/java/setting-structure-elements-properties/
-description: Java と Aspose.PDF を使用して Tagged PDF の Structure Elements のプロパティを設定する方法を学びます。タイトル、言語、実際のテキスト、代替テキスト、拡張テキスト、リンク、ノート、タグ名が含まれます。
-lastmod: "2026-10-05"
+description: "Java と Aspose.PDF を使用して、Tagged PDF の Structure Elements のプロパティ（タイトル、言語、実際のテキスト、代替テキスト、拡張テキスト、リンク、ノート、タグ名）を設定する方法について学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-このページでは、Java におけるタグ付けされた PDF の構造要素の一般的なプロパティ設定パターンについて説明します。
+このページでは、Java におけるタグ付けされた PDF の構造要素の共通プロパティ設定パターンについて説明します。
 
 ## 共通の構造要素プロパティの設定
 
-タグ付けされた構造要素がタイトル、言語、実際のテキスト、代替テキストなどのアクセシビリティメタデータを公開すべき場合に、この例を使用してください。
+タグ付けされた構造要素が、タイトル、言語、実際のテキスト、代替テキストなどのアクセシビリティメタデータを公開する必要がある場合、この例を使用してください。
 
-1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、タグ付きコンテンツのメタデータを初期化してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、タグ付きコンテンツのメタデータを初期化してください。
 1. 構造ツリーにセクションとヘッダー要素を作成してください。
 1. ヘッダーのプロパティを設定し、ドキュメントを保存してください。
 
@@ -50,8 +50,8 @@ public static void setProperties(Path outputFile) {
 
 シンプルな段落要素をタグ付き構造ツリーに追加する必要があるときは、この例を使用してください。
 
-1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 作成 [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) そしてそれのテキストを設定してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) を作成し、そのテキストを設定してください。
 1. 段落をルート要素に追加し、ドキュメントを保存してください。
 
 ```java
@@ -74,7 +74,7 @@ public static void setTextElements(Path outputFile) {
 
 この例では、複数のブロックレベルの構造要素を作成します。そこには、複数レベルの見出しと段落が含まれます。
 
-1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
 1. 必要なレベルのヘッダー要素を追加し、その後段落要素を作成してください。
 1. ブロック要素をルート構造に追加し、ドキュメントを保存してください。
 
@@ -105,7 +105,7 @@ public static void setTextBlockElements(Path outputFile) {
 
 ブロック構造要素がネストされたインラインスパンを含む必要がある場合は、この例を使用してください。
 
-1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
 1. ヘッダー要素を作成し、そこに span の子要素を追加してください。
 1. 複数のスパンを持つ段落を作成し、文書を保存してください。
 
@@ -148,7 +148,7 @@ public static void setInlineElements(Path outputFile) {
 
 この例では、タグ付けされた構造内の paragraph 要素と span 要素にカスタムタグ名を割り当てます。
 
-1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、section要素を追加してください。
+1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、section 要素を追加してください。
 1. 段落とスパンを作成し、各要素にカスタムタグ名を設定してください。
 1. 要素をセクションに追加し、ドキュメントを保存してください。
 
@@ -187,7 +187,7 @@ public static void setTagName(Path outputFile) {
 
 タグ付けされたリンク要素に代替説明、ハイパーリンク、およびレイアウト属性を持つ図コンテンツを含める必要がある場合は、この例を使用してください。
 
-1. 新しいタグ付き PDF を作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 段落内にリンク要素を追加してください。
+1. 新しいタグ付き PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトの段落内にリンク要素を追加してください。
 1. ハイパーリンクのターゲット、代替説明、およびリンクされた図要素を設定してください。
 1. 必要なレイアウト属性を設定し、ドキュメントを保存してください。
 
@@ -237,7 +237,7 @@ public static void setElements(Path imageFile, Path outputFile) {
 
 この例は、プレーンテキストと入れ子になった span 要素を組み合わせた段落要素を作成します。
 
-1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
 1. 段落要素を作成し、カスタムテキストを含む span 子要素を追加してください。
 1. 段落をルート要素に追加し、ドキュメントを保存してください。
 
@@ -269,9 +269,9 @@ public static void addLinkElement(Path outputFile) {
 
 ## ノート要素の設定
 
-自動または明示的な ID でノート構造要素を作成すべき場合は、この例を使用してください。
+自動または明示的な ID でノート構造要素を作成する必要がある場合は、この例を使用してください。
 
-1. 新しいタグ付き PDF を作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 段落要素を追加してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、段落要素を追加してください。
 1. 必要に応じてノート要素を作成し、そのテキストと ID を設定してください。
 1. ノートを段落に追加し、ドキュメントを保存してください。
 
@@ -306,9 +306,9 @@ public static void setNoteElement(Path outputFile) {
 
 ## 多言語コンテンツの言語とタイトルの設定
 
-この例では、ドキュメントレベルのメタデータを割り当て、その後、異なる言語値を持つ段落を作成します。
+この例では、ドキュメントレベルのメタデータを設定した後、異なる言語値を持つ段落を作成します。
 
-1. 新しい タグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、文書のタイトルと言語を設定してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、文書のタイトルと言語を設定してください。
 1. ヘッダー要素を追加し、各ローカライズされたフレーズに対して段落を作成してください。
 1. 多言語タグ付き文書を保存してください。
 
@@ -337,7 +337,7 @@ public static void setLanguageAndTitle(Path outputFile) {
 
 このヘルパーメソッドは段落を作成し、その言語を割り当て、ルート構造に追加します。
 
-1. 作成 [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/)。
+1. [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) を作成してください。
 1. 要素のテキストと言語を設定してください。
 1. 段落をタグ付けされたコンテンツのルート要素に追加してください。
 

@@ -1,15 +1,15 @@
 ---
-title: "PHP での ドキュメントウィンドウとページ表示プロパティの取得"
-linktitle: "PHP での ドキュメントウィンドウとページ表示プロパティの取得"
+title: "PHP でのドキュメントウィンドウとページ表示プロパティの取得"
+linktitle: "PHP でのドキュメントウィンドウとページ表示プロパティの取得"
 type: docs
 weight: 30
 url: /ja/java/get-document-window-and-page-display-properties-in-php/
-description: Aspose.PDF を使用して PHP で PDF ファイルのドキュメントウィンドウとページ表示プロパティにアクセスする方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、PHP で PDF ファイルのドキュメントウィンドウおよびページ表示プロパティにアクセスする方法を学びます。"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - ドキュメントウィンドウとページ表示プロパティの取得
 
-**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのドキュメントウィンドウとページ表示プロパティを取得するには、単に **GetDocumentWindow** クラスを呼び出します。
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのドキュメントウィンドウおよびページ表示プロパティを取得するには、単に **GetDocumentWindow** クラスを呼び出してください。
 
 PHP コード
 
@@ -56,6 +56,6 @@ print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 
 **実行コードをダウンロード**
 
-DownloadВ **ドキュメントウィンドウとページ表示プロパティ (Aspose.PDF)**В から以下に記載されたソーシャルコーディングサイトのいずれかで取得:
+**ドキュメントウィンドウとページ表示プロパティ (Aspose.PDF)** を、以下に記載されたソーシャルコーディングサイトのいずれかからダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

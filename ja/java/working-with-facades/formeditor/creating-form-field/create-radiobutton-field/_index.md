@@ -4,17 +4,17 @@ linktitle: "RadioButton フィールドの作成"
 type: docs
 weight: 50
 url: /ja/java/create-radiobutton-field/
-description: Aspose.PDF の FormEditor ファサードを使用して、Java で PDF ドキュメントにラジオボタン フィールドを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF の FormEditor ファサードを使用して、Java で PDF ドキュメントにラジオボタンフィールドを追加する方法を学びます。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF に radio button フィールドを作成する
-Abstract: この記事では、既存の PDF をバインドし、ラジオボタンのレイアウト設定を構成し、ラジオボタン フィールドを作成し、Aspose.PDF for Java の FormEditor ファサードを使用して変更されたドキュメントを保存する方法を示します。
+AlternativeHeadline: "Java での PDF にラジオボタンフィールドの作成"
+Abstract: "この記事では、既存の PDF をバインドし、ラジオボタンのレイアウト設定を構成し、ラジオボタンフィールドを作成し、Aspose.PDF for Java の FormEditor ファサードを使用して変更されたドキュメントを保存する方法を示します。"
 ---
-使用 `FormEditorExamples.createRadioButtonField(...)` 事前に定義されたオプションを持つラジオボタンフィールドを作成する
+`FormEditorExamples.createRadioButtonField(...)` を使用して、事前に定義されたオプションを持つラジオボタンフィールドを作成してください。
 
-## ラジオボタン フィールドの作成
+## ラジオボタンフィールドの作成
 
-1. ソースPDFをバインドする `FormEditor` ファサード。
+1. ソース PDF を `FormEditor` ファサードにバインドしてください。
 2. ラジオボタンの間隔、向き、および項目サイズを設定してください。
 3. ラジオボタン項目を定義してください。
 4. デフォルト選択と矩形を持つラジオボタンフィールドを追加してください。

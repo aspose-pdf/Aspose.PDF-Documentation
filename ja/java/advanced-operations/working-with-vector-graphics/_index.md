@@ -1,27 +1,27 @@
 ---
-title: "Java での ベクター グラフィックスの操作"
+title: "Java でのベクター グラフィックスの操作"
 linktitle: ベクター グラフィックスの操作
 type: docs
 weight: 100
 url: /ja/java/working-with-vector-graphics/
 description: Java を使用して PDF ドキュメント内のベクターグラフィックスを抽出、移動、削除、コピー、エクスポートする方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で PDF のベクターグラフィックスを検査および操作するために GraphicsAbsorber を使用します。
+AlternativeHeadline: "Java での PDF のベクターグラフィックスを検査および操作するために GraphicsAbsorber の使用"
 Abstract: 本稿では、GraphicsAbsorber クラスを使用して Aspose.PDF for Java でベクターグラフィックスを操作する方法を説明します。ページ上のベクター要素を検査し、移動または削除し、ページ間でグラフィックスをコピーし、ベクターコンテンツを SVG にエクスポートする方法を学びます。
 ---
-Aspose.PDF for Java はベクトル コンテンツを通じて公開します `GraphicsAbsorber` そして `GraphicElement` objects. これにより、ページ上の低レベルのベクトル要素を検査し、更新、削除、コピー、またはエクスポートすることができます。
+Aspose.PDF for Java はベクトル コンテンツを通じて `GraphicsAbsorber` および `GraphicElement` オブジェクトを公開します。これにより、ページ上の低レベルのベクトル要素を検査し、更新、削除、コピー、またはエクスポートすることができます。
 
 ## ページ上のベクターグラフィックスの検査
 
 ベクトル要素を列挙し、ページ、位置、および演算子数を確認する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) を作成し、対象ページへアクセスしてください。
-1. 吸収されたものを反復処理する [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) オブジェクトとそのプロパティを出力してください。
+1. [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) を作成し、対象ページにアクセスしてください。
+1. 吸収された [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) オブジェクトを反復処理し、そのプロパティを出力してください。
 
 ```java
 public static void usingGraphicsAbsorber(Path inputFile) {
@@ -48,8 +48,8 @@ public static void usingGraphicsAbsorber(Path inputFile) {
 検出されたすべてのベクトル要素を新しい位置にシフトする必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 対象ページを訪問してください [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) そして一時的に更新を抑制します。
-1. 吸収された各要素の位置を変更し、更新を再開して、ドキュメントを保存します。
+1. 対象ページに [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) を使用してアクセスし、一時的に更新を抑制してください。
+1. 吸収された各要素の位置を変更し、更新を再開してドキュメントを保存してください。
 
 ```java
 public static void moveGraphics(Path inputFile, Path outputFile) {
@@ -73,13 +73,13 @@ public static void moveGraphics(Path inputFile, Path outputFile) {
 }
 ```
 
-## 要素削除によって位置指定でベクトルグラフィックの削除
+## 要素削除による位置指定でのベクトルグラフィックの削除
 
 特定の矩形内のベクトル要素を1つずつ削除する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ページにアクセスしてください [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) そしてターゲットを定義する [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-1. 一致する要素を削除し、更新を再開し、ドキュメントを保存してください。
+1. ページに [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) を使用してアクセスし、対象となる [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) を定義してください。
+1. 一致する要素を削除し、更新を再開して、ドキュメントを保存してください。
 
 ```java
 public static void removeGraphicsMethod1(Path inputFile, Path outputFile) {
@@ -105,13 +105,13 @@ public static void removeGraphicsMethod1(Path inputFile, Path outputFile) {
 }
 ```
 
-## コレクションを削除してベクターグラフィックの削除
+## コレクションを削除してベクターグラフィックを削除
 
 ベクトル要素のマッチングを最初に収集し、1ページの操作で削除する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ページにアクセスしてください [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) そして、一致する要素を収集します。
-1. ページ内容から収集されたグラフィックを削除し、更新されたドキュメントを保存してください。
+1. ページに [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) を適用し、一致する要素を収集してください。
+1. ページの内容から収集されたグラフィックを削除し、更新されたドキュメントを保存してください。
 
 ```java
 public static void removeGraphicsMethod2(Path inputFile, Path outputFile) {
@@ -139,13 +139,13 @@ public static void removeGraphicsMethod2(Path inputFile, Path outputFile) {
 }
 ```
 
-## ベクトルグラフィックスを別ページの要素へ要素ごとにコピーする
+## ベクトルグラフィックを別ページへ要素ごとにコピー
 
 各吸収されたベクトル要素を新しいページに個別に追加する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、宛先ページを追加してください。
-1. ソースページへアクセスしてください [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
-1. それぞれ追加 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) 宛先ページに移動し、ドキュメントを保存してください。
+1. ソースページに [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) を適用してください。
+1. それぞれの [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicelement/) を宛先ページに追加し、ドキュメントを保存してください。
 
 ```java
 public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
@@ -171,11 +171,11 @@ public static void addToAnotherPageMethod1(Path inputFile, Path outputFile) {
 
 ## ベクタ画像を別のページにコレクションとしてコピー
 
-吸収されたベクトルグラフィックのコレクション全体を一度の呼び出しで新しいページにコピーする必要がある場合は、この例を使用してください。
+吸収されたベクタ画像のコレクション全体を一度の呼び出しで別のページにコピーする必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、宛先ページを追加してください。
-1. ソースページへアクセスしてください [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/).
-1. 吸収されたグラフィックス コレクションを宛先ページに追加し、ドキュメントを保存してください。
+1. ソースページに [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/vector/graphicsabsorber/) を適用してください。
+1. 吸収されたグラフィック コレクションを宛先ページに追加し、ドキュメントを保存してください。
 
 ```java
 public static void addToAnotherPageMethod2(Path inputFile, Path outputFile) {

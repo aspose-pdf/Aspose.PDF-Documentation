@@ -1,14 +1,14 @@
 ---
-title: Jythonでテキストを扱う
-linktitle: Jythonでテキストを扱う
+title: "Jython でのテキストの取り扱い"
+linktitle: "Jython でのテキストの取り扱い"
 type: docs
 weight: 40
 url: /ja/java/working-with-text-in-jython/
-description: Aspose.PDF を使用した Jython による PDF のテキスト操作を探求し、文書内のテキストコンテンツの取り扱いを容易にします。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用した Jython による PDF のテキスト操作を紹介し、ドキュメント内のテキストコンテンツの取り扱いを容易にします。"
+lastmod: "2026-10-06"
 ---
-このセクションには次のトピックが含まれます:
+このセクションには、次のトピックが含まれます。
 
-- [JythonでDOMを使用してHTML文字列を追加する](/pdf/ja/java/add-html-string-using-dom-in-jython/)
-- [Jythonで既存のPDFファイルにテキストを追加する](/pdf/ja/java/add-text-to-an-existing-pdf-file-in-jython/)
-- [JythonでPDF文書のすべてのページからテキストを抽出する](/pdf/ja/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/)
+- [Jython による DOM を用いた HTML 文字列追加](/pdf/ja/java/add-html-string-using-dom-in-jython/)
+- [Jython による既存 PDF ファイルへのテキスト追加](/pdf/ja/java/add-text-to-an-existing-pdf-file-in-jython/)
+- [Jython による PDF 文書全ページからのテキスト抽出](/pdf/ja/java/extract-text-from-all-the-pages-of-a-pdf-document-in-jython/)

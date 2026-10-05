@@ -1,27 +1,27 @@
 ---
-title: "Java での PDFヘッダーとフッターの追加"
-linktitle: "PDFにヘッダーとフッターの追加"
+title: "Java での PDF ヘッダーとフッターの追加"
+linktitle: "PDF にヘッダーとフッターの追加"
 type: docs
 weight: 50
 url: /ja/java/add-headers-and-footers-of-pdf-file/
-description: Java を使用してテキスト、画像、構造化コンテンツで PDF ファイルにヘッダーとフッターを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して、テキスト、画像、構造化コンテンツで PDF ファイルにヘッダーとフッターを追加する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF ファイルにヘッダーとフッターを追加する
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントにヘッダーとフッターを追加する方法を示します。テキスト、ページ番号、HTML、画像、テーブル、そして LaTeX ベースのヘッダーおよびフッターコンテンツについて説明します。
+AlternativeHeadline: "Java を使用して PDF ファイルにヘッダーとフッターの追加"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメントにヘッダーとフッターを追加する方法を示します。テキスト、ページ番号、HTML、画像、テーブル、および LaTeX ベースのヘッダーおよびフッターコンテンツについて説明します。"
 ---
-Aspose.PDF for Java は割り当てることができます `HeaderFooter` 各ページにオブジェクトを配置し、異なるコンテンツタイプでそれらを埋め込みます。
+Aspose.PDF for Java では、各ページに `HeaderFooter` オブジェクトを割り当て、さまざまなコンテンツタイプでそれらを埋め込むことができます。
 
 ## テキストヘッダーとフッターの追加
 
 各ページの上部と下部にシンプルなテキストコンテンツが必要な場合は、この例を使用してください。
 
-1. 作成 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) オブジェクトにテキストフラグメントを追加してください。
+1. [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) オブジェクトを作成し、テキストフラグメントを追加してください。
 1. ヘッダーとフッターの余白を設定してください。
-1. それらをソースPDFの各ページに適用し、結果を保存してください。
+1. それらをソース PDF の各ページに適用し、結果を保存してください。
 
 ```java
 public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
@@ -51,9 +51,9 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 
 ヘッダーまたはフッターに現在のページ番号と総ページ数を表示する必要がある場合は、この例を使用してください。
 
-1. 作成 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) ページ番号プレースホルダーを持つオブジェクト。
+1. ページ番号プレースホルダーを持つ [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) オブジェクトを作成してください。
 1. 両方のオブジェクトの余白を設定してください。
-1. それらを各ページに適用し、更新されたPDFを保存してください。
+1. それらを各ページに適用し、更新された PDF を保存してください。
 
 ```java
 public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path outputFile) {
@@ -79,12 +79,12 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 }
 ```
 
-## HTMLヘッダーとフッターの追加
+## HTML ヘッダーとフッターの追加
 
-ヘッダーとフッターの内容にインラインHTMLフォーマットを含める必要がある場合は、この例を使用してください。
+ヘッダーとフッターの内容にインライン HTML フォーマットを含める必要がある場合は、この例を使用してください。
 
-1. 作成 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) オブジェクトと追加 [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) コンテンツ。
-1. 配置のために余白を設定してください。
+1. [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) オブジェクトを作成し、[HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) コンテンツを追加してください。
+1. 配置用に余白を設定してください。
 1. ヘッダーとフッターを各ページに割り当て、ドキュメントを保存してください。
 
 ```java
@@ -115,8 +115,8 @@ public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
 
 ヘッダーとフッターに毎ページ画像を表示する必要がある場合は、この例を使用してください。
 
-1. 作成 [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) オブジェクトをヘッダーとフッターのコンテナに追加してください。
-1. 余白を設定し、各ページにコンテナを割り当てます。
+1. [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) オブジェクトを作成し、ヘッダーおよびフッターのコンテナに追加してください。
+1. 余白を設定し、各ページにコンテナを割り当ててください。
 1. 更新された PDF を保存してください。
 
 ```java
@@ -147,10 +147,10 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 
 ## テーブルベースのヘッダーとフッターの追加
 
-ヘッダーとフッターのコンテンツがテーブルレイアウトとテキストスタイリングを使用すべき場合は、この例を使用してください。
+ヘッダーとフッターのコンテンツにテーブルレイアウトとテキストスタイリングを使用する必要がある場合は、この例を使用してください。
 
 1. 必要なテキストスタイルとテーブルオブジェクトを作成してください。
-1. テーブルを追加 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) コンテナ。
+1. テーブルを [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) コンテナに追加してください。
 1. ヘッダーとフッターを各ページに適用し、ドキュメントを保存してください。
 
 ```java
@@ -190,12 +190,12 @@ public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
 }
 ```
 
-## LaTeXのヘッダーとフッターの追加
+## LaTeX のヘッダーとフッターの追加
 
-ヘッダーとフッターが TeX または LaTeX コンテンツをレンダリングする必要がある場合は、この例を使用してください。
+ヘッダーとフッターで TeX または LaTeX コンテンツをレンダリングする必要がある場合は、この例を使用してください。
 
-1. ソースPDFを開き、総ページ数を確認してください。
-1. 作成 [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 各ページのヘッダーとフッターの内容。
+1. ソース PDF を開き、総ページ数を確認してください。
+1. [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) オブジェクトを作成し、各ページのヘッダーとフッターの内容として設定してください。
 1. コンテンツを割り当て、ドキュメントを保存してください。
 
 ```java

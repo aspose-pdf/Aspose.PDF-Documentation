@@ -1,17 +1,17 @@
 ---
-title: "Ruby での Web用にPDFドキュメントの最適化"
-linktitle: "Ruby での Web用にPDFドキュメントの最適化"
+title: "Ruby での Web 用に PDF ドキュメントの最適化"
+linktitle: "Ruby での Web 用に PDF ドキュメントの最適化"
 type: docs
 weight: 70
 url: /ja/java/optimize-pdf-document-for-the-web-in-ruby/
-description: RubyでAspose.PDFを使用して、PDFの配信速度を向上させ、ファイルサイズを削減します。
-lastmod: "2026-10-05"
+description: "Ruby で Aspose.PDF を使用して、PDF の配信速度を向上させ、ファイルサイズを削減します。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Web用にPDFの最適化
+## Aspose.PDF - Web 用に PDF の最適化
 
-Ruby用 **Aspose.PDF Java for Ruby** を使用してPDFドキュメントをWeb向けに最適化するには、**Optimize**モジュールの **optimize_web** メソッドを呼び出すだけです。
+Ruby 用 **Aspose.PDF Java for Ruby** を使用して PDF ドキュメントを Web 向けに最適化するには、**Optimize** モジュールの **optimize_web** メソッドを呼び出してください。
 
-Rubyコード
+Ruby コード
 
 ```java
 
@@ -38,8 +38,8 @@ Rubyコード
 end
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-ダウンロードВ **PDF を Web 用に最適化 (Aspose.PDF)**В からV 以下に記載されたソーシャルコーディングサイトのいずれか：
+ダウンロード **PDF を Web 用に最適化 (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれか：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)

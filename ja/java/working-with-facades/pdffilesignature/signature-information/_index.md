@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ja/java/signature-information/
 description: Java の PdfFileSignature を使用して、署名付き PDF から署名名と署名者の詳細を読み取る方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ PDF に誰が署名したか、どのような署名メタデータが保存さ�
 
 ### 手順
 
-1. 作成する `PdfFileSignature` インスタンスを作成し、署名されたPDFをバインドしてください。
+1. `PdfFileSignature` インスタンスを作成し、署名された PDF をバインドしてください。
 2. 署名コレクションを読み取り、署名名を選択してください。
 3. 署名者名、日付、理由、および場所の署名情報アクセサを呼び出してください。
-4. 完了したら、ファサードオブジェクトを閉じます。
+4. 完了したら、ファサードオブジェクトを閉じてください。
 
 ### Java の例
 

@@ -1,16 +1,16 @@
 ---
-title: バーコード フィールドを入力する
-linktitle: バーコード フィールドを入力する
+title: "バーコード フィールドの入力"
+linktitle: "バーコード フィールドの入力"
 type: docs
 weight: 50
 url: /ja/java/fill-barcode-fields/
-description: Aspose.PDF の Form ファサードを使用して、Java でバーコード フォーム フィールドを入力する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF の Form ファサードを使用して、Java でバーコード フォーム フィールドを入力する方法を学習します。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF フォームのバーコード フィールドに値を設定する
+AlternativeHeadline: "Java を使用した PDF フォームのバーコード フィールドへの値の設定"
 Abstract: この記事では、PDF フォームをバインドし、バーコード フィールドの値を設定し、Aspose.PDF for Java の Form ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
-使用する `FormExamples.fillBarcodeFields(...)` PDF フォームのバーコード フィールドに入力するために
+PDF フォームのバーコード フィールドに入力するには、`FormExamples.fillBarcodeFields(...)` を使用してください。
 
 ```java
 public static void fillBarcodeFields(Path inputFile, Path outputFile) {

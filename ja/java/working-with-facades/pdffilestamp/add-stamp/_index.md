@@ -1,30 +1,30 @@
 ---
-title: "PDFにスタンプの追加"
-linktitle: "PDFにスタンプの追加"
+title: "PDF にスタンプの追加"
+linktitle: "PDF にスタンプの追加"
 type: docs
 weight: 40
 url: /ja/java/add-stamp/
 description: PdfFileStamp ファサードを使用して、Java で PDF ページに画像スタンプを追加する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Java で PDF に画像スタンプを追加
-Abstract: PdfFileStamp ファサードを使用して Aspose.PDF for Java で PDF 文書にスタンプ コンテンツを追加する方法を学びます。現在の Java のサンプルセットでは、`Stamp` を作成し、画像ファイルにバインドし、文書に追加して、スタンプされた PDF を保存する方法が示されています。
+Abstract: "PdfFileStamp ファサードを使用して Aspose.PDF for Java で PDF 文書にスタンプ コンテンツを追加する方法を学びます。現在の Java のサンプルセットでは、`Stamp` オブジェクトを作成し、画像ファイルにバインドし、文書に追加して、スタンプされた PDF を保存する方法が示されています。"
 ---
-## PDFにスタンプの追加
+## PDF にスタンプの追加
 
 画像ベースのスタンプを PDF に適用する必要がある場合は、このワークフローを使用してください。
 
 ### 手順
 
-1. `PdfFileStamp` のインスタンスを作成してソースPDFにバインドしてください。
+1. `PdfFileStamp` のインスタンスを作成して、ソース PDF にバインドしてください。
 2. `Stamp` オブジェクトを作成してください。
-3. スタンプを画像ファイルにバインドする `bindImage`。
-4. スタンプを文書に追加します `addStamp`。
-5. 出力を保存し、ファサードオブジェクトを閉じます。
+3. `bindImage` を使用して、スタンプを画像ファイルにバインドしてください。
+4. `addStamp` を使用して、スタンプを文書に追加してください。
+5. 出力を保存し、ファサードオブジェクトを閉じてください。
 
 ### Java の例
 

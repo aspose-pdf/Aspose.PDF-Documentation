@@ -1,21 +1,21 @@
 ---
-title: "テキストボックス フィールドの作成"
-linktitle: "テキストボックス フィールドの作成"
+title: "テキストボックスフィールドの作成"
+linktitle: "テキストボックスフィールドの作成"
 type: docs
 weight: 10
 url: /ja/java/create-textbox-field/
-description: Aspose.PDF の FormEditor ファサードを使用して、Java で PDF ドキュメントにテキストボックス フィールドを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF の FormEditor ファサードを使用して、Java で PDF ドキュメントにテキスト ボックス フィールドを追加する方法を学習します。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF にテキスト フォーム フィールドを作成
+AlternativeHeadline: "Java を使用した PDF へのテキスト フォーム フィールドの作成"
 Abstract: この記事では、既存の PDF をバインドし、デフォルト値付きのテキスト フィールドを追加し、Aspose.PDF for Java の FormEditor ファサードを使用して変更されたドキュメントを保存する方法を示します。
 ---
-使用 `FormEditorExamples.createTextBoxField(...)` PDF フォームにテキスト フィールドを追加する。
+PDF フォームにテキスト フィールドを追加するには、`FormEditorExamples.createTextBoxField(...)` を使用してください。
 
-## テキストボックス フィールドの作成
+## テキストボックスフィールドの作成
 
-1. ソースPDFをバインドする `FormEditor` ファサード。
-2. 各テキストフィールドを追加 `FieldType.Text`, フィールド名、デフォルト値、ページ番号、そして矩形。
+1. ソース PDF を `FormEditor` ファサードにバインドしてください。
+2. 各テキスト フィールドを追加する際は、`FieldType.Text`、フィールド名、デフォルト値、ページ番号、および矩形を指定してください。
 3. 更新されたドキュメントを保存してください。
 
 ```java

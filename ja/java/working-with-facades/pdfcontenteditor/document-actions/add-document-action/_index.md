@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /ja/java/add-document-action/
 description: Aspose.PDF の PdfContentEditor ファサードを使用して、Java で PDF に document-open アクションを追加する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF に document-open アクションを追加する
+AlternativeHeadline: "Java での PDF に document-open アクションの追加"
 Abstract: この記事では、PDF をバインドし、document-open イベントに JavaScript アクションを添付し、Aspose.PDF for Java の PdfContentEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
 ## document-open アクションの追加
 
-1. ソース PDF をバインドする `PdfContentEditor` ファサード。
-2. 呼び出す `addDocumentAdditionalAction(...)` と `DOCUMENT_OPEN` イベントとJavaScriptアクションテキスト。
+1. ソース PDF を `PdfContentEditor` ファサードにバインドしてください。
+2. `addDocumentAdditionalAction(...)` を `DOCUMENT_OPEN` イベントと JavaScript アクションのテキストを引数として呼び出してください。
 3. 更新された PDF ドキュメントを保存してください。
 
 ```java

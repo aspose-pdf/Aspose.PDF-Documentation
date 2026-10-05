@@ -5,11 +5,11 @@ type: docs
 weight: 10
 url: /ja/java/creating-form-field/
 description: Aspose.PDF の FormEditor ファサードを使用して、Java でインタラクティブな PDF フォームフィールドの作成方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: FormEditor ファサードを使用して Java で PDF フォームフィールドを作成する
-Abstract: このセクションでは、PDF ドキュメントに新しいインタラクティブ フィールドを追加するために使用される Java FormEditor ワークフローについて説明します。現在のサンプルセットには、テキスト ボックス、チェック ボックス、コンボ ボックス、リスト ボックス、ラジオ ボタン、および送信ボタンの作成例が含まれています。
+AlternativeHeadline: "FormEditor ファサードを使用した Java での PDF フォームフィールド作成"
+Abstract: "このセクションでは、PDF ドキュメントに新しいインタラクティブフィールドを追加するために使用する Java FormEditor のワークフローについて説明します。現在のサンプルセットには、テキストボックス、チェックボックス、コンボボックス、リストボックス、ラジオボタン、および送信ボタンの作成例が含まれています。"
 ---
-Java `FormEditorExamples` クラスは入力ドキュメントをバインドし、呼び出すことで、既存のPDFページ上にいくつかの一般的なフィールドタイプを作成します。 `addField(...)` または `addSubmitBtn(...)`, そして結果を保存する。
+Java の `FormEditorExamples` クラスは、入力ドキュメントをバインドし、`addField(...)` または `addSubmitBtn(...)` を呼び出すことで、既存の PDF ページ上に一般的なフィールドタイプをいくつか作成し、結果を保存します。
 
-このセクションの子ページを使用して、具体的なフィールド作成例をご覧ください。
+このセクションの子ページで、具体的なフィールド作成例をご覧ください。

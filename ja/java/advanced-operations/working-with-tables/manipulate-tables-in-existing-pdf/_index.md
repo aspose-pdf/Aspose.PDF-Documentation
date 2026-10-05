@@ -1,26 +1,26 @@
 ---
-title: "既存のPDFドキュメント内のテーブルの操作"
+title: "既存の PDF ドキュメント内のテーブルの操作"
 linktitle: "テーブルの操作"
 type: docs
 weight: 40
 url: /ja/java/manipulating-tables/
-description: Javaを使用して既存のPDFドキュメント内のテーブルを検査および変更する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して既存の PDF ドキュメント内のテーブルを検査および変更する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで既存のPDFテーブルを検査および変更する
+AlternativeHeadline: "Java での 既存の PDF テーブルの検査および変更"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントに既に存在するテーブルを操作する方法を説明します。TableAbsorber を使用したテーブルの検索、セル内テキストの更新、検出されたテーブルを新しい Table オブジェクトに置き換える方法を取り上げます。
 ---
-使用 `TableAbsorber` 既存のテーブルを検索し、その内容を更新する必要がある場合。
+既存のテーブルを検索し、その内容を更新する必要がある場合は、`TableAbsorber` を使用してください。
 
 ## テーブルセル内のテキストの置換
 
 検出されたセル内のテキストを、テーブル全体を再構築せずに更新する必要がある場合は、この例を使用してください。
 
-1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、次のページにアクセスします [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/)。
-1. 対象のテーブルとセルのテキストフラグメントが存在することを検証してください。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、[TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) を使用して対象のページにアクセスしてください。
+1. 対象のテーブルおよびセルのテキストフラグメントが存在することを検証してください。
 1. セルのテキストを置換し、更新されたドキュメントを保存してください。
 
 ```java
@@ -45,11 +45,11 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 
 ## 検出されたテーブルを新しいテーブルに置き換える
 
-元のテーブルを新しく作成したテーブルで完全に置き換える必要がある場合は、この例を使用します。
+元のテーブルを新しく作成したテーブルで完全に置き換える必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、ページ上のテーブルを検出してください。
-1. 新しいものを作成する [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 望ましい構造で。
-1. 吸収されたテーブルを置き換えて、出力 PDF を保存してください。
+1. 望ましい構造を持つ新しい [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成してください。
+1. 吸収されたテーブルを新しいテーブルで置き換え、出力 PDF を保存してください。
 
 ```java
 public static void replaceTable(Path inputFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ja/java/set-pdf-metadata/
 description: PdfFileInfo ファサードを使用して、Java で PDF メタデータを更新する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,11 +20,11 @@ PDF を保存する前に、ドキュメント情報を正規化または強化�
 
 ### 手順
 
-1. 作成する `PdfFileInfo` ソースPDF用のオブジェクト。
+1. ソース PDF 用の `PdfFileInfo` オブジェクトを作成してください。
 2. 更新したい標準メタデータフィールドを設定してください。
-3. 任意のカスタムメタデータを追加 `setMetaInfo`。
-4. 更新されたドキュメントを保存 `save()`。
-5. 閉じる `PdfFileInfo` インスタンス。
+3. `setMetaInfo` を使用して任意のカスタムメタデータを追加してください。
+4. `save()` を使用して更新されたドキュメントを保存してください。
+5. `PdfFileInfo` インスタンスを閉じてください。
 
 ### Java の例
 

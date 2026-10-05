@@ -1,16 +1,16 @@
 ---
-title: "Java での PDFテキストにツールチップの追加"
-linktitle: PDFツールチップ
+title: "Java での PDF テキストにツールチップの追加"
+linktitle: "PDF ツールチップ"
 type: docs
 weight: 20
 url: /ja/java/pdf-tooltip/
-description: JavaでPDFドキュメントのテキストフラグメントにツールチップを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ドキュメントのテキストフラグメントにツールチップを追加する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してPDFテキストフラグメントにインタラクティブなツールチップを追加
+AlternativeHeadline: "Java を使用して PDF テキストフラグメントにインタラクティブなツールチップを追加"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF テキストにインタラクティブなヘルプを追加する方法を示します。対象となるテキストフラグメント上に配置された見えないボタンフィールドにツールチップテキストを添付し、ポインタがトリガー領域に入ったときに表示される非表示テキストフィールドを作成することについて説明しています。
 ---
 Aspose.PDF for Java を使用すると、テキストフラグメント上にフォームフィールドを配置してインタラクティブなヘルプを追加できます。
@@ -20,8 +20,8 @@ Aspose.PDF for Java を使用すると、テキストフラグメント上にフ
 PDF の既存テキストにカーソルを合わせたときにツールチップを表示させたい場合は、この例を使用してください。
 
 1. サンプル PDF を作成し、編集のために再度開いてください。
-1. 対象テキストフラグメントを検索 `TextFragmentAbsorber`.
-1. 場所 `ButtonField` 一致したテキストにオーバーレイを適用し、ツールチップテキストを割り当てます。
+1. 対象テキストフラグメントを `TextFragmentAbsorber` で検索してください。
+1. 一致したテキスト上に `ButtonField` をオーバーレイとして配置し、ツールチップテキストを割り当ててください。
 1. 更新されたドキュメントを保存してください。
 
 ```java
@@ -66,13 +66,13 @@ public static void addToolTipToSearchedText(Path outputFile) {
     }
 ```
 
-## ホバー時に浮動テキストブロックを表示する
+## ホバー時の浮動テキストブロックの表示
 
 テキスト領域にカーソルを合わせたときに隠れたテキストフィールドが表示されるように、この例を使用してください。
 
 1. サンプル PDF を作成し、編集のために再度開いてください。
-1. トリガーテキストフラグメントを検索する `TextFragmentAbsorber`.
-1. 非表示を作成 `TextBoxField` そして a `ButtonField` エントリとエグジットのアクションを伴う。
+1. トリガーテキストフラグメントを `TextFragmentAbsorber` で検索してください。
+1. 非表示の `TextBoxField` と、エントリおよびエグジットのアクションを持つ `ButtonField` を作成してください。
 1. 最終的な PDF を保存してください。
 
 ```java

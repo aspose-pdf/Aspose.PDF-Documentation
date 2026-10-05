@@ -1,29 +1,29 @@
 ---
-title: "PDFにフッターの追加"
-linktitle: "PDFにフッターの追加"
+title: "PDF へのフッターの追加"
+linktitle: "PDF へのフッターの追加"
 type: docs
 weight: 10
 url: /ja/java/add-footer/
-description: PdfFileStamp ファサードを使用して、Javaで PDF ページにテキストと画像のフッターを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "PdfFileStamp ファサードを使用して、Java で PDF ページにテキストと画像のフッターを追加する方法を学びます。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで PDF にテキストと画像のフッターを追加
-Abstract: Aspose.PDF for Java と PdfFileStamp ファサードを使用して PDF ドキュメントにフッター コンテンツを追加する方法を学びます。Java のサンプルでは、プレーンテキストのフッター、ストリームから読み込む画像フッター、左・右・下の余白を明示したテキストフッターがカバーされています。
+AlternativeHeadline: "Java での PDF へのテキストと画像のフッターの追加"
+Abstract: "Aspose.PDF for Java と PdfFileStamp ファサードを使用して、PDF ドキュメントにフッター コンテンツを追加する方法を学びます。Java のサンプルでは、プレーンテキストのフッター、ストリームから読み込む画像フッター、左・右・下の余白を明示したテキストフッターがカバーされています。"
 ---
-## PDFにフッターの追加
+## PDF へのフッターの追加
 
-使用 `PdfFileStamp` 文書の各ページに繰り返しフッター内容が必要な場合。
+`PdfFileStamp` を使用すると、ドキュメントの各ページに繰り返しフッター コンテンツを追加できます。
 
 ### 手順
 
-1. 作成 `PdfFileStamp` インスタンス化してソースPDFにバインドしてください。
-2. フッターコンテンツを次のいずれかとして構築する `FormattedText` または画像ストリーム。
-3. 適切なものを呼び出す `addFooter` オーバーロード。
-4. 更新されたファイルを保存し、ファサードオブジェクトを閉じます。
+1. `PdfFileStamp` インスタンスを作成し、ソース PDF にバインドしてください。
+2. フッターコンテンツを `FormattedText` または画像ストリームとして構築してください。
+3. 適切な `addFooter` オーバーロードを呼び出してください。
+4. 更新されたファイルを保存し、ファサードオブジェクトを閉じてください。
 
 ### Java の例
 

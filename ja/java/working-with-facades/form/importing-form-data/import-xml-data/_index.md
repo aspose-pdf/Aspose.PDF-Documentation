@@ -5,12 +5,12 @@ type: docs
 weight: 40
 url: /ja/java/import-xml-data/
 description: Java で Form ファサードを使用して、Aspose.PDF の PDF フォームに XML フォーム データをインポートする方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: Java で XML から AcroForm データをインポート
 Abstract: この記事では、PDF フォームをバインドし、XML ストリームからフィールド値をインポートし、Aspose.PDF for Java の Form ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
-使用する `FormExamples.importXml(...)` XML データからフォームを入力する。
+`FormExamples.importXml(...)` を使用して、XML データからフォームに入力してください。
 
 ```java
 public static void importXml(Path inputFile, Path dataFile, Path outputFile) throws Exception {

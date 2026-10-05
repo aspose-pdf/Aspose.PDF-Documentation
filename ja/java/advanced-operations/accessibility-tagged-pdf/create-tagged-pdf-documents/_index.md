@@ -1,16 +1,16 @@
 ---
-title: "Java での Tagged PDFの作成"
-linktitle: "Tagged PDFの作成"
+title: "Java での Tagged PDF の作成"
+linktitle: "Tagged PDF の作成"
 type: docs
 weight: 10
 url: /ja/java/create-tagged-pdf/
-description: Java と Aspose.PDF を使用して、PDF/UA の構造要素、アクセシブルなフォームフィールド、TOC ページ、そして自動タグ付けを含む、タグ付けされた PDF ドキュメントの作成方法を学びます。
-lastmod: "2026-10-05"
+description: "Java と Aspose.PDF を使用して、PDF/UA の構造要素、アクセシブルなフォームフィールド、TOC ページ、および自動タグ付けを含む、タグ付けされた PDF ドキュメントの作成方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-タグ付きPDFを作成することは、文書をPDF/UAのアクセシビリティ要件に対して検証しやすくし、支援技術が解釈しやすくなる構造要素を追加することを意味します。
+タグ付き PDF を作成することは、文書を PDF/UA のアクセシビリティ要件に対して検証しやすくし、支援技術が解釈しやすくなる構造要素を追加することを意味します。
 
 ## シンプルなタグ付けされた PDF ドキュメントの作成
 
@@ -44,7 +44,7 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 }
 ```
 
-## 高度なタグ付けPDFドキュメントの作成
+## 高度なタグ付け PDF ドキュメントの作成
 
 この例では、見出し、段落、スパン、引用、および明示的なレイアウト設定を組み合わせることで、よりリッチな構造を構築しています。
 
@@ -127,7 +127,7 @@ public static void addStyle(Path outputFile) {
 この例では、代替テキスト、タイトル、カスタムタグ、画像コンテンツ、配置を使用してタグ付けされた図を作成する方法を示します。
 
 1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 作成 [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), そのアクセシブルメタデータを設定し、画像を割り当てます。
+1. [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/) を作成し、そのアクセシブルメタデータを設定して画像を割り当ててください。
 1. 図の位置を調整して、ドキュメントを保存してください。
 
 ```java
@@ -161,8 +161,8 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 
 タグ付けされた PDF が PDF/UA の検証規則を満たしているかを確認する必要がある場合は、この例を使用してください。
 
-1. 元の PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
-1. 検証を実行 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`。
+1. 元の PDF を開いて [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を取得してください。
+1. [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1` を対象に検証を実行してください。
 1. 検証ログを書き込み、検証結果を表示してください。
 
 ```java
@@ -174,13 +174,13 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 }
 ```
 
-## 構造要素の位置を調整する
+## 構造要素の位置の調整
 
 この例では、タグ付けされた段落に対して、明示的な余白と配置設定を適用します。
 
 1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 段落構造要素を追加し、準備する [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/)。
-1. 段落に位置設定を適用し、文書を保存してください。
+1. 段落構造要素を追加し、[PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) を準備してください。
+1. 段落に位置設定を適用し、ドキュメントを保存してください。
 
 ```java
 public static void adjustPosition(Path outputFile) {
@@ -214,12 +214,12 @@ public static void adjustPosition(Path outputFile) {
 }
 ```
 
-## 既存の PDF を自動タグ付けで PDF/UA に変換する
+## 既存の PDF の自動タグ付けで PDF/UA への変換
 
 既存の PDF を PDF/UA に変換し、変換中に自動的にタグ付けする必要がある場合にこのアプローチを使用します。
 
-1. 元の PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
-1. 作成 [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) 自動タグ付けを有効にしてください。
+1. 元の PDF を開いて [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を取得してください。
+1. [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) を作成し、自動タグ付けを有効にしてください。
 1. 変換を実行し、出力ドキュメントを保存してください。
 
 ```java
@@ -241,7 +241,7 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 
 ## アクセシブルなフォームフィールドを含むタグ付きPDFの作成
 
-この例では、署名フォームフィールドにタグを付けて、論理構造ツリーの一部になるようにします。
+この例では、署名フォームフィールドにタグを付けて、論理構造ツリーの一部にします。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、フォームフィールドを含むページを追加してください。
 1. ドキュメントのフォーム コレクションにフォーム フィールドを追加してください。
@@ -271,13 +271,13 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 }
 ```
 
-## タグ付けされた PDF を TOC ページ付きで作成する
+## タグ付けされた PDF を TOC ページ付きで作成
 
-タグ付きPDFに基本的な目次ページを文書の見出しにリンクさせる必要がある場合は、この例を使用してください。
+タグ付き PDF に基本的な目次ページを文書の見出しにリンクさせる必要がある場合は、この例を使用してください。
 
 1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、TOC ページを追加してください。
-1. 作成 [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) そして、目次に表示されるべきヘッダーです。
-1. 目次エントリを見出しにリンクし、ドキュメントを保存します。
+1. [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) を作成し、目次に表示されるべきヘッダーを指定してください。
+1. 目次エントリを見出しにリンクし、ドキュメントを保存してください。
 
 ```java
 public static void createPdfWithTocPage(Path outputFile) {
@@ -308,12 +308,12 @@ public static void createPdfWithTocPage(Path outputFile) {
 }
 ```
 
-## 高度なタグ付きPDFを作成し、TOCページの追加
+## 高度なタグ付き PDF の作成と TOC ページの追加
 
-この例は、リンクされたページタイトル、入れ子になったリスト項目、および複数の見出しレベルを持つ、より複雑なタグ付けされた TOC を構築します。
+この例では、リンクされたページタイトル、入れ子になったリスト項目、および複数の見出しレベルを持つ、より複雑なタグ付き TOC を構築します。
 
-1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、可視的なタイトルを持つTOCページを作成してください。
-1. TOC構造を作成し、TOCのタイトルとエントリを見出しやリスト項目にリンクし、関連するコンテンツ要素を追加してください。
+1. 新しい Tagged PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、可視的なタイトルを持つ TOC ページを用意してください。
+1. TOC 構造を作成し、TOC のタイトルとエントリを見出しやリスト項目にリンクし、関連するコンテンツ要素を追加してください。
 1. 高度な目次構造を使用して最終文書を保存してください。
 
 ```java

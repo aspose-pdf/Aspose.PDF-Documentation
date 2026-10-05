@@ -1,14 +1,14 @@
 ---
-title: Javaによるシェイプ注釈
+title: "Java によるシェイプ注釈"
 linktitle: シェイプ注釈
 type: docs
 weight: 40
 url: /ja/java/pdfannotationeditor-class/shape-annotations/
-description: Javaを使用してPDFドキュメントに四角形、円、多角形、折れ線の注釈を追加、検査、削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して PDF ドキュメントに四角形、円、多角形、折れ線の注釈を追加、検査、削除する方法を学びます。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Javaで幾何学的PDF注釈を扱う
-Abstract: この記事では、Javaを使用してPDFドキュメント内の幾何学的注釈を作成、検査、削除する方法を説明します。四角形、円、多角形、折れ線の注釈に加えて、色、透明度、ポップアップ、ポイント設定についても取り上げています。
+AlternativeHeadline: "Java で幾何学的 PDF 注釈を扱う"
+Abstract: "この記事では、Java を使用して PDF ドキュメント内の幾何学的注釈を作成、検査、削除する方法を説明します。四角形、円、多角形、折れ線の注釈に加えて、色、透明度、ポップアップ、ポイント設定についても取り上げています。"
 ---
 ## シェイプ注釈の追加
 

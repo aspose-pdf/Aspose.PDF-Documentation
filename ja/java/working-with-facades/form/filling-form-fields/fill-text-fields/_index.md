@@ -4,13 +4,13 @@ linktitle: テキストフィールドを埋める
 type: docs
 weight: 10
 url: /ja/java/fill-text-fields/
-description: Aspose.PDF の Form facade を使用して、Java で PDF フォームのテキストフィールドを埋める方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF の Form ファサードを使用して、Java で PDF フォームのテキストフィールドを埋める方法を学びます。"
+lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: Java で PDF のテキスト Form フィールドを埋める
-Abstract: この記事では、PDF フォームをバインドし、名前でテキストフィールドの値を設定し、Aspose.PDF for Java の Form facade を使用して更新されたドキュメントを保存する方法を示します。
+Abstract: "この記事では、PDF フォームをバインドし、名前でテキストフィールドの値を設定し、Aspose.PDF for Java の Form ファサードを使用して更新されたドキュメントを保存する方法を示します。"
 ---
-使用する `FormExamples.fillTextFields(...)` テキストベースのフォームフィールドに入力するために。
+テキストベースのフォームフィールドに入力するには、`FormExamples.fillTextFields(...)` を使用してください。
 
 ```java
 public static void fillTextFields(Path inputFile, Path outputFile) {

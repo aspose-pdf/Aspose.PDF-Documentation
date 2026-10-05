@@ -1,23 +1,23 @@
 ---
-title: JavaでPDFブックマークを追加および削除する
-linktitle: ブックマークを追加および削除する
+title: "Java での PDF ブックマークの追加および削除"
+linktitle: "ブックマークの追加と削除"
 type: docs
 weight: 10
 url: /ja/java/add-and-delete-bookmark/
-description: Javaを使用してPDFドキュメントでブックマークを追加および削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して PDF ドキュメントでブックマークを追加および削除する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFドキュメントのブックマークを追加または削除する
-Abstract: この記事では、Aspose.PDF for Java を使用してブックマークの作成と削除を行う方法を示します。例では、トップレベルのブックマークを追加し、子ブックマークの階層を作成し、すべてのブックマークを削除し、タイトルで特定のブックマークを削除する方法をデモしています。
+AlternativeHeadline: "Java での PDF ドキュメントのブックマークを追加または削除"
+Abstract: "この記事では、Aspose.PDF for Java を使用してブックマークの作成と削除を行う方法を示します。例では、トップレベルのブックマークの追加、子ブックマークの階層の作成、すべてのブックマークの削除、およびタイトルで特定のブックマークを削除する方法をデモしています。"
 ---
-ドキュメントアウトラインコレクションを使用して、ブックマークをプログラムで管理します。
+ドキュメントのアウトライン コレクションを使用して、ブックマークをプログラムで管理します。
 
 ## トップレベルのブックマークの追加
 
-ドキュメントに単一のトップレベルアウトラインエントリを含める必要がある場合は、この例を使用します。
+ドキュメントに単一のトップレベルアウトライン エントリを含める必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) を作成し、そのタイトル、スタイル、およびアクションを設定してください。
@@ -43,8 +43,8 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 この例では、親ブックマークを作成し、その下に子ブックマークをネストします。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 親と子を作成 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) オブジェクト。
-1. 子を親に追加し、親をアウトラインコレクションに追加して、ドキュメントを保存してください。
+1. 親と子の [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) オブジェクトを作成してください。
+1. 子を親に追加し、親をアウトライン コレクションに追加して、ドキュメントを保存してください。
 
 ```java
 public static void addChildBookmark(Path inputFile, Path outputFile) {
@@ -68,10 +68,10 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 
 ## すべてのブックマークの削除
 
-ドキュメントからアウトラインコレクション全体を削除する必要がある場合にこの方法を使用します。
+ドキュメントからアウトライン コレクション全体を削除する必要がある場合にこの方法を使用します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 完全なアウトラインコレクションを削除してください。
+1. 完全なアウトライン コレクションを削除してください。
 1. クリーンアップされた出力ファイルを保存してください。
 
 ```java
@@ -85,7 +85,7 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 
 ## 特定のブックマークの削除
 
-名前付きブックマークが1つだけ削除したいが、アウトラインツリー全体をクリアしない場合にこの例を使用します。
+名前付きブックマークを1つだけ削除し、アウトライン ツリー全体をクリアしない場合にこの例を使用します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. アウトライン コレクションからタイトルでブックマークを削除してください。

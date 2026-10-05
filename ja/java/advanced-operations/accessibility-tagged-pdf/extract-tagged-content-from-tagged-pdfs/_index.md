@@ -1,23 +1,23 @@
 ---
-title: "Java での PDFからタグ付きコンテンツの抽出"
+title: "Java での PDF からタグ付きコンテンツの抽出"
 linktitle: "タグ付きコンテンツの抽出"
 type: docs
 weight: 20
 url: /ja/java/extract-tagged-content-from-tagged-pdfs/
-description: Aspose.PDF を使用して Java でタグ付き PDF コンテンツを検査する方法を学びます。これにはタグ付きコンテンツへのアクセス、ルート構造へのアクセス、子構造要素が含まれます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して Java でタグ付き PDF コンテンツを検査する方法を学びます。これには、タグ付きコンテンツへのアクセス、ルート構造へのアクセス、および子構造要素の操作が含まれます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-タグ付き PDF の論理構造ツリーを検査し、構造要素のメタデータを確認または更新する必要がある場合に、これらの APIs を使用してください。
+タグ付き PDF の論理構造ツリーを検査し、構造要素のメタデータを確認または更新する必要がある場合は、これらの API を使用してください。
 
 ## タグ付けされたコンテンツのメタデータの取得
 
-タイトルや言語などの基本的なドキュメントメタデータを定義し、タグ付けされたコンテンツコンテナにアクセスする必要がある場合にこの例を使用します。
+タイトルや言語などの基本的なドキュメントメタデータを定義し、タグ付けされたコンテンツコンテナにアクセスする必要がある場合に、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 取得する [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) オブジェクトをドキュメントから取得してください。
+1. ドキュメントから [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) オブジェクトを取得してください。
 1. タグ付けされたコンテンツのメタデータを設定し、出力ファイルを保存してください。
 
 ```java
@@ -33,7 +33,7 @@ public static void getTaggedContent(Path outputFile) {
 
 ## タグ付けされた PDF のルート構造の取得
 
-この例は、タグ付けされた PDF の構造ツリーを表すルートオブジェクトを検査する方法を示しています。
+この例では、タグ付けされた PDF の構造ツリーを表すルートオブジェクトを検査する方法を示しています。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、そのタグ付けされたコンテンツを取得してください。
 1. 必要なドキュメント メタデータを設定してください。
@@ -54,13 +54,13 @@ public static void getRootStructure(Path outputFile) {
 }
 ```
 
-## 子構造要素にアクセスして更新する
+## 子構造要素にアクセスして更新
 
-構造ツリーの子要素を反復処理し、プロパティを検査し、選択されたメタデータを更新する必要がある場合にこの例を使用してください。
+構造ツリーの子要素を反復処理し、プロパティを検査し、選択されたメタデータを更新する必要がある場合に、この例を使用してください。
 
-1. ソース のタグ付けされた PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ソースのタグ付けされた PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. 構造ツリーのルートから子要素を読み取り、利用可能なプロパティを出力してください。
-1. 最初のルート子の子要素にアクセスし、メタデータを更新して、文書を保存します。
+1. 最初のルート子の子要素にアクセスし、メタデータを更新して、文書を保存してください。
 
 ```java
 public static void accessChildElements(Path inputFile, Path outputFile) {

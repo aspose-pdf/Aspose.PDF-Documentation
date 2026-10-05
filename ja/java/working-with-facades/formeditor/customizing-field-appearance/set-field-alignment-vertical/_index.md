@@ -5,15 +5,15 @@ type: docs
 weight: 30
 url: /ja/java/set-field-alignment-vertical/
 description: Aspose.PDF の FormEditor ファサードを使用して、Java で PDF フォームフィールドの垂直配置を設定する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF フォームフィールドの垂直配置を設定する
+AlternativeHeadline: "Java での PDF フォームフィールドの垂直配置の設定"
 Abstract: この記事では、既存の PDF をバインドし、垂直フィールド配置を設定し、Aspose.PDF for Java の FormEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
 ## 垂直フィールド配置の設定
 
-1. ソースPDFをにバインドする `FormEditor` ファサード。
-2. 呼び出し `setFieldAlignmentV(...)` 対象フィールドと希望する垂直配置定数用に。
+1. ソース PDF を `FormEditor` ファサードにバインドしてください。
+2. 対象フィールドと希望する垂直配置定数に対して `setFieldAlignmentV(...)` を呼び出してください。
 3. 更新されたドキュメントを保存してください。
 
 ```java

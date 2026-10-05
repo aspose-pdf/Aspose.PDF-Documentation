@@ -1,17 +1,17 @@
 ---
-title: "Ruby での PDFファイルから特定のページの削除"
-linktitle: "Ruby での PDFファイルから特定のページの削除"
+title: "Ruby での PDF ファイルから特定のページの削除"
+linktitle: "Ruby での PDF ファイルから特定のページの削除"
 type: docs
 weight: 20
 url: /ja/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
-description: Aspose.PDF for Rubyを使用して、プログラムでPDFファイルから特定のページを削除します。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Ruby を使用して、プログラムで PDF ファイルから特定のページを削除します。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - ページ削除
+## Aspose.PDF - ページの削除
 
-**Aspose.PDF Java for Ruby** を使用してPDFドキュメントから特定のページを削除するには、単に **DeletePage** モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントから特定のページを削除するには、単に **DeletePage** モジュールを呼び出してください。
 
-Rubyコード
+Ruby コード
 
 ```java
 # The path to the documents directory.
@@ -33,8 +33,8 @@ pdf.save(data_dir + "output.pdf")
 puts "Page deleted successfully!"
 ```
 
-## 実行中のコードをダウンロード
+## 実行中のコードのダウンロード
 
-ダウンロード **Delete Page (Aspose.PDF)**В fromВ 以下に記載されたソーシャルコーディングサイトのいずれかから:
+以下に記載されたソーシャルコーディングサイトのいずれかから **Delete Page (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/deletepage.rb)

@@ -4,24 +4,24 @@ linktitle: インタラクティブ注釈
 type: docs
 weight: 60
 url: /ja/java/interactive-annotations/
-description: Aspose.PDF for Java を使用して、PDF ドキュメントにリンク注釈を追加、検査、削除する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用して、PDF ドキュメントにリンク注釈を追加、検査、削除する方法を学んでください。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java でインタラクティブな PDF 注釈を操作します。
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ファイル内のインタラクティブなリンク注釈を操作する方法を説明します。テキストの検索、マッチしたテキスト領域上にリンク注釈を作成すること、既存のリンク注釈を読み取ること、そしてそれらを削除することについてカバーしています。
+AlternativeHeadline: "Java での インタラクティブな PDF 注釈の操作"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ファイル内のインタラクティブなリンク注釈を操作する方法を説明します。テキストの検索、マッチしたテキスト領域上にリンク注釈を作成すること、既存のリンク注釈を読み取ること、およびそれらを削除することについて解説します。"
 ---
-このセクションのインタラクティブ注釈は、PDFビューア内でユーザーの操作に応答するリンクおよびボタンベースのワークフローに焦点を当てています。
+このセクションのインタラクティブ注釈は、PDF ビューア内でユーザーの操作に応答するリンクおよびボタンベースのワークフローに焦点を当てています。
 
 ## リンクアノテーションの追加
 
 ページ上のテキストにクリック可能なリンクを配置する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 対象テキストフラグメントを特定し、作成します [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) その長方形の上に。
-1. 割り当てる [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) そして、更新されたドキュメントを保存してください。
+1. 対象テキストフラグメントを特定し、その長方形の上に [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) を作成してください。
+1. [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) を割り当て、更新されたドキュメントを保存してください。
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -43,11 +43,11 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 
 ## リンク注釈の取得
 
-この例では、ページのアノテーションコレクションをスキャンし、各リンクアノテーションの位置を報告します。
+この例では、ページのアノテーション コレクションをスキャンし、各リンク注釈の位置を報告します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. 対象ページのアノテーションを反復処理してください。
-1. 注釈でフィルタ [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` そしてそれらの矩形を印刷します。
+1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` で注釈をフィルタリングし、それらの矩形を出力してください。
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -66,7 +66,7 @@ public static void linkGet(Path inputFile) {
 既存のリンク注釈をページから削除する必要がある場合は、このアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. タイプが ___ の注釈を収集する [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
+1. タイプが [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` の注釈を収集してください。
 1. 収集された注釈を削除し、出力ファイルを保存してください。
 
 ```java
@@ -91,7 +91,7 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 この例では、矢印スタイル、枠線設定、ポップアップノートを備えたインタラクティブな線アノテーションを作成します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成する [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) 開始点と終了点がある。
+1. 開始点と終了点を指定して [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) を作成してください。
 1. 外観とポップアップ注釈を設定し、ドキュメントを保存してください。
 
 ```java
@@ -125,11 +125,11 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## ナビゲーションボタンの追加
 
-PDFに前ページと次ページのボタンをインタラクティブなナビゲーション用に含める必要がある場合は、この例を使用してください。
+PDF に前ページと次ページのボタンをインタラクティブなナビゲーション用に含める必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開き、ドキュメントに必要なページがあることを確認してください。
-1. 作成 [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) 事前定義されたナビゲーションアクションを持つコントロール。
-1. ボタンをフォームコレクションに追加し、更新されたドキュメントを保存してください。
+1. 事前定義されたナビゲーションアクションを持つ [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) コントロールを作成してください。
+1. ボタンをフォーム コレクションに追加し、更新されたドキュメントを保存してください。
 
 ```java
 public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
@@ -162,8 +162,8 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 
 この例では、ユーザーがクリックしたときに印刷コマンドをトリガーするボタンを作成します。
 
-1. 新しい PDF を作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
-1. [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) を作成し、印刷の事前定義アクションを割り当てます。
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
+1. [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) を作成し、印刷の事前定義アクションを割り当ててください。
 1. ボタンの枠線と背景を設定し、フォームに追加して、ドキュメントを保存してください。
 
 ```java

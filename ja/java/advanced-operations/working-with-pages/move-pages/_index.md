@@ -1,21 +1,21 @@
 ---
-title: "Java での PDFページの移動"
-linktitle: PDFページの移動
+title: "Java での PDF ページの移動"
+linktitle: "PDF ページの移動"
 type: docs
 weight: 100
 url: /ja/java/move-pages/
-description: Javaでドキュメント内またはドキュメント間でPDFページを移動する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java でドキュメント内またはドキュメント間で PDF ページを移動する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaでドキュメント間のPDFページを移動する
+AlternativeHeadline: "Java での ドキュメント間の PDF ページの移動"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF のページを移動する方法を説明します。単一ページまたは複数ページを別のドキュメントに移動すること、および同じ PDF 内でページの位置を変更することについて取り上げます。
 ---
 Aspose.PDF for Java を使用すると、ドキュメント間でページを移動したり、同じ PDF 内でページの位置を変更したりできます。
 
-## ページを別のドキュメントに移動する
+## ページの別のドキュメントへの移動
 
 単一ページを元の PDF から削除し、別のドキュメントに保存する場合にこの例を使用します。
 
@@ -35,7 +35,7 @@ public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceO
 }
 ```
 
-## 複数のページを別のドキュメントに移動する
+## 複数のページの別のドキュメントへの移動
 
 ソース PDF から新しいドキュメントに複数のページを転送する必要がある場合は、この例を使用します。
 
@@ -58,12 +58,12 @@ public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path s
 }
 ```
 
-## 同じドキュメント内でページの移動
+## 同じドキュメント内でのページの移動
 
 同じ PDF 内でページを新しい位置に再配置する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 対象ページを新しい位置に複製し、元のページエントリを削除します。
+1. 対象ページを新しい位置に複製し、元のページエントリを削除してください。
 1. 再配置されたドキュメントを保存してください。
 
 ```java

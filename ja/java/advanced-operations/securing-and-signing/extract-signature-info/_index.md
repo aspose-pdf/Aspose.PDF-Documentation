@@ -5,21 +5,21 @@ type: docs
 weight: 20
 url: /ja/java/extract-image-and-signature-information/
 description: Java で PDF ファイルから証明書とデジタル署名の詳細を抽出する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で署名された PDF から署名の詳細と証明書データを抽出する
+AlternativeHeadline: "Java での 署名された PDF から署名の詳細と証明書データの抽出"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントのデジタル署名を検査する方法を説明します。署名者の詳細を読み取る方法、署名を検証する方法、署名が文書全体をカバーしているか確認する方法、埋め込まれた署名証明書を抽出する方法、既存の署名を削除する方法を学びます。
 ---
-使用 `PdfFileSignature` PDF ドキュメントに既に存在する署名を検査し、管理する
+使用 `PdfFileSignature` で、PDF ドキュメントに既に存在する署名を検査し、管理します。
 
 ## 署名情報を読み取る
 
-1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade と ソース PDF ドキュメントをバインドしてください。
-1. ドキュメント署名名にアクセスし、サンプルで必要とされる署名検査フローを構成します。
-1. からの署名情報を読み取り、検証します。 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサード。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを作成し、ソース PDF ドキュメントをバインドしてください。
+1. ドキュメント署名名にアクセスし、サンプルで必要とされる署名検査フローを構成してください。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードから署名情報を読み取り、検証してください。
 1. 返された値を読み取るか、次の処理ステップに進んでください。
 
 ```java
@@ -41,9 +41,9 @@ public static void getSignatureInformation(Path inputFile) {
 
 ## 署名の検証
 
-1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade と ソース PDF ドキュメントをバインドしてください。
-1. ドキュメントの署名名にアクセスし、例で要求される検証フローを構成します。
-1. からの署名情報を読み取り、検証します。 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサード。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを作成し、ソース PDF ドキュメントをバインドしてください。
+1. ドキュメント署名名にアクセスし、例で要求される検証フローを構成してください。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードから署名情報を読み取り、検証してください。
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {
@@ -63,9 +63,9 @@ public static void verifyPdfSignature(Path inputFile) {
 
 ## 署名証明書の抽出
 
-1. 作成する [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) facade と ソース PDF ドキュメントをバインドしてください。
-1. 証明書抽出に必要なドキュメントの署名名にアクセスします。
-1. 抽出された出力を書き込むか、返された値を検査します [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサード。
+1. [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードを作成し、ソース PDF ドキュメントをバインドしてください。
+1. 証明書抽出に必要なドキュメント署名名にアクセスしてください。
+1. 抽出された出力を書き込むか、[PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) ファサードから返された値を検査してください。
 
 ```java
 public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {

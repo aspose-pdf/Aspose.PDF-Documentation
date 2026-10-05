@@ -4,14 +4,14 @@ linktitle: "リンクの更新"
 type: docs
 weight: 20
 url: /ja/java/update-links/
-description: Java で PDF リンクの外観と宛先を更新する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF リンクの外観と宛先を更新する方法を学習してください。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF ファイルのリンク注釈の外観とウェブ宛先を更新する
-Abstract: この記事では、Aspose.PDF for Java を使用して既存のリンク注釈を更新する方法を示します。例では、リンクでカバーされたテキストの色を変更すること、リンク注釈の色を更新すること、そしてウェブリンクの対象 URI を置き換えることをデモンストレーションしています。
+AlternativeHeadline: "Java を使用した PDF ファイルのリンク注釈の外観とウェブ宛先の更新"
+Abstract: "この記事では、Aspose.PDF for Java を使用して既存のリンク注釈を更新する方法を示します。例では、リンクでカバーされたテキストの色を変更すること、リンク注釈の色を更新すること、およびウェブリンクの対象 URI を置き換えることをデモンストレーションしています。"
 ---
 既存のリンクは、ページ上でリンク注釈を見つけ、その外観またはアクションのいずれかを更新することで編集できます。
 
@@ -20,8 +20,8 @@ Abstract: この記事では、Aspose.PDF for Java を使用して既存のリ�
 リンク注釈でカバーされたテキスト領域の色を変更する必要がある場合にこの例を使用します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. リンク注釈を検索し、各注釈領域からテキスト検索矩形を作成します。
-1. 一致したテキストフラグメントの色を変更し、文書を保存します。
+1. リンク注釈を検索し、各注釈領域からテキスト検索矩形を作成してください。
+1. 一致したテキストフラグメントの色を変更し、文書を保存してください。
 
 ```java
 public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile) {
@@ -52,8 +52,8 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 既存のリンク注釈の表示色を変更する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ページ注釈を反復処理し、フィルタリングします [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) オブジェクト。
-1. リンク注釈の色を更新し、文書を保存してください。
+1. ページ注釈を反復処理し、[LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) オブジェクトをフィルタリングしてください。
+1. リンク注釈の色を更新し、ドキュメントを保存してください。
 
 ```java
 public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
@@ -70,13 +70,13 @@ public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
 }
 ```
 
-## Webリンクの宛先の更新
+## Web リンクの宛先の更新
 
-既存の Web リンクを新しい URI にポイントさせたい場合は、この例を使用してください。
+既存の Web リンクを新しい URI に変更する場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. アクションが a のリンクアノテーションを見つけます [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
-1. URI を置き換えて、更新されたドキュメントを保存してください。
+1. アクションが [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) であるリンク注釈を検索してください。
+1. URI を新しいものに置き換え、更新されたドキュメントを保存してください。
 
 ```java
 public static void linkAnnotationUpdateWebDestination(Path inputFile, Path outputFile) {

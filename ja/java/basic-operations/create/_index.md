@@ -1,11 +1,11 @@
 ---
-title: "プログラムで PDF ドキュメントの作成"
+title: "プログラムによる PDF ドキュメントの作成"
 linktitle: "PDF の作成"
 type: docs
 weight: 10
 url: /ja/java/create-document/
 description: Aspose.PDF を使用して Java で最初から PDF ドキュメントを作成する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,18 +15,18 @@ Abstract: この記事では、Aspose.PDF を使用して Java で PDF ファイ
 ---
 コードで PDF ファイルを作成することは、レポート、請求書、生成されたビジネス文書に対する一般的な要件です。Aspose.PDF for Java は、最初からドキュメントを構築する直接的な方法を提供します。
 
-## JavaでPDFファイルを作成する方法
+## Java で PDF ファイルを作成する方法
 
-PDFドキュメントをプログラムで作成するには:
+PDF ドキュメントをプログラムで作成するには、次の手順を実行してください。
 
 1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトを作成してください。
-1. 追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ドキュメントへ。
-1. 追加する [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) ページの段落へ。
-1. 保存する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 出力ファイルへ。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) をドキュメントに追加してください。
+1. ページの段落コレクションに [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) を追加してください。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を出力ファイルに保存してください。
 
 ## シンプルな PDF ドキュメントの作成
 
-以下のJava例は基づいています `CreatePdfDocumentExamples.java`.
+以下の Java の例は `CreatePdfDocumentExamples.java` を基にしています。
 
 ```java
 public static void createNewDocument(Path outputFile) {

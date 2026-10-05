@@ -5,23 +5,23 @@ type: docs
 weight: 30
 url: /ja/java/text-extraction-from-multi-column-pdf/
 description: Aspose.PDF for Java を使用して、マルチカラムPDFレイアウトからのテキスト抽出を改善するテクニックを学びましょう。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
 マルチカラムレイアウトは、読み順と抽出品質を向上させるために、追加の処理が必要になることがよくあります。
 
-## フォントサイズを縮小した後にテキストの抽出
+## フォントサイズを縮小した後のテキストの抽出
 
-この手法はテキストフラグメントのフォントサイズを更新し、調整されたドキュメントをメモリに保存し、そして変換された結果からテキストを抽出します。
+この手法は、テキストフラグメントのフォントサイズを更新し、調整されたドキュメントをメモリに保存した後、変換された結果からテキストを抽出します。
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. 作成 [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) すべてのドキュメントページを訪問して収集する [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) オブジェクト。
-1. フラグメントを反復処理し、要求された比率でそれぞれのフォントサイズを縮小し、抽出前に密な列レイアウトを正規化できるようにしてください。
-1. 調整されたものを保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) メモリ内バイトストリームに。
-1. 2番目を再度開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) そのメモリ バッファから。
-1. 作成 [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/)、変換されたドキュメントのすべてのページを訪問し、抽出されたテキストを出力ファイルに書き込んでください。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) を作成し、すべてのドキュメントページを訪問して [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) オブジェクトを収集してください。
+1. フラグメントを反復処理し、要求された比率で各フォントサイズを縮小してください。これにより、抽出前に密な列レイアウトを正規化できます。
+1. 調整された [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) をメモリ内バイトストリームに保存してください。
+1. そのメモリバッファから、2番目の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を再度開いてください。
+1. [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) を作成し、変換されたドキュメントのすべてのページを訪問して、抽出されたテキストを出力ファイルに書き込んでください。
 
 ```java
 public static void extractTextReduceFont(Path inputFile, Path outputFile, double reduceRatio) throws Exception {
@@ -45,13 +45,13 @@ public static void extractTextReduceFont(Path inputFile, Path outputFile, double
 
 ## スケールファクターでテキストの抽出
 
-使用 `TextExtractionOptions` 純粋なフォーマットモードで、列が多いレイアウトのスケール係数を調整します。
+`TextExtractionOptions` を純粋なフォーマットモードで使用し、列が多いレイアウトのスケール係数を調整してください。
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンス。
-1. 作成 [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) フルドキュメント抽出のために。
-1. 作成 [TextExtractionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) 純粋なフォーマットモードで、レイアウトに敏感な抽出動作が使用されます。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) を全ドキュメント抽出用に作成してください。
+1. [TextExtractionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textextractionoptions/) を純粋なフォーマットモードで作成し、レイアウトに敏感な抽出動作が使用されるようにしてください。
 1. ページを訪問する前に、スケールファクターを設定し、抽出オプションをアブソーバーに適用してください。
-1. すべてのドキュメントページを訪問し、抽出されたテキストを出力ファイルに書き込みます。
+1. すべてのドキュメントページを訪問し、抽出されたテキストを出力ファイルに書き込んでください。
 
 ```java
 public static void extractTextScaleFactor(Path inputFile, Path outputFile, double scaleFactor) throws Exception {

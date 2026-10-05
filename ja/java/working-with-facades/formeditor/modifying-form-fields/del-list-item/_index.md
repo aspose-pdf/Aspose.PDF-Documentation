@@ -5,15 +5,15 @@ type: docs
 weight: 20
 url: /ja/java/del-list-item/
 description: Aspose.PDF の FormEditor ファサードを使用して、Java で PDF ドキュメントのリストフィールドから項目を削除する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で PDF フォームフィールドのリスト項目を削除する
+AlternativeHeadline: "Java での PDF フォームフィールドのリスト項目の削除"
 Abstract: この記事では、既存の PDF をバインドし、リストフィールドから特定の項目を削除し、Aspose.PDF for Java の FormEditor ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
 ## リストフィールドから項目の削除
 
-1. ソース PDF をバインドする `FormEditor` ファサード。
-2. 呼び出す `delListItem(...)` 対象フィールドと削除する項目のために。
+1. ソース PDF を `FormEditor` ファサードにバインドしてください。
+2. 対象フィールドと削除する項目に対して `delListItem(...)` を呼び出してください。
 3. 更新されたドキュメントを保存してください。
 
 ```java

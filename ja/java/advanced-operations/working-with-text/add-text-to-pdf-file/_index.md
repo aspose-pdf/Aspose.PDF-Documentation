@@ -1,16 +1,16 @@
 ---
-title: "Java での PDFにテキストの追加"
-linktitle: "PDFにテキストの追加"
+title: "Java での PDF へのテキストの追加"
+linktitle: "PDF へのテキストの追加"
 type: docs
 weight: 10
 url: /ja/java/add-text-to-pdf-file/
-description: JavaでPDFドキュメントにテキスト、HTMLフラグメント、リスト、リンク、カスタムフォントを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ドキュメントにテキスト、HTML フラグメント、リスト、リンク、カスタムフォントを追加する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使ってPDFファイルにテキスト、リンク、HTML、フォントを追加する
+AlternativeHeadline: "Java を使った PDF ファイルへのテキスト、リンク、HTML、フォントの追加"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントにテキストを追加し、スタイル設定する方法を説明します。シンプルなテキスト挿入、段落レイアウト、ハイパーリンク、右から左へのテキスト、フォントスタイル設定、透明度、ボーダー、HTML および LaTeX フラグメント、グラデーションテキスト、そしてファイルまたはストリームからロードするカスタムフォントについてカバーしています。
 ---
 Aspose.PDF for Java はプレーンテキストの挿入、**高度なレイアウト**、スタイリング、グラデーション、HTML、LaTeX、カスタムフォントをサポートしています。
@@ -42,8 +42,8 @@ public static void addTextSimpleCase(Path outputFile) {
 大きなテキストブロックを限定された領域内に流し込む必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. ソーステキストを読み込み、構成します `TextParagraph` 長方形と折り返しモード。
-1. フラグメントを通じて追加する `TextBuilder` そしてPDFを保存してください。
+1. ソーステキストを読み込み、`TextParagraph` オブジェクトを長方形と折り返しモードで設定してください。
+1. フラグメントを `TextBuilder` を通じて追加し、PDF を保存してください。
 
 ```java
 public static void addParagraph(Path outputFile) throws Exception {
@@ -77,8 +77,8 @@ public static void addParagraph(Path outputFile) throws Exception {
 最初の行とそれ以降の行で異なるインデントルールを使用する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. 共有テキストフラグメントを準備し、複数作成します `TextParagraph` オブジェクト。
-1. 各段落のインデントを設定し、それらを追加して、文書を保存してください。
+1. 共有テキストフラグメントを準備し、複数の `TextParagraph` オブジェクトを作成してください。
+1. 各段落のインデントを設定し、それらを追加して、ドキュメントを保存してください。
 
 ```java
 public static void addParagraphsIndents(Path outputFile) throws Exception {
@@ -115,11 +115,11 @@ public static void addParagraphsIndents(Path outputFile) throws Exception {
 
 ## 手動改行でテキストの挿入
 
-この例は、テキスト フラグメントが明示的な改行を含む必要がある場合に使用してください。
+この例は、テキストフラグメントに明示的な改行を含める必要がある場合に使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. 作成する `TextFragment` 改行を含み、そのスタイルを設定してください。
-1. それを...で追加する `TextParagraph` そしてPDFを保存してください。
+1. 改行を含む `TextFragment` を作成し、そのスタイルを設定してください。
+1. それを `TextParagraph` を介して追加し、PDF を保存してください。
 
 ```java
 public static void addNewLine(Path outputFile) {
@@ -146,7 +146,7 @@ public static void addNewLine(Path outputFile) {
 
 ## 検出された改行の検査
 
-テキストレイアウトと行折り返しに関する通知出力を確認する必要がある場合は、この例を使用してください。
+テキストレイアウトおよび行折り返しに関する通知出力を確認する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、通知ログを有効にしてください。
 1. ページにいくつかの長いテキストフラグメントを追加してください。
@@ -177,12 +177,12 @@ public static void determineLineBreak(Path outputFile) {
 }
 ```
 
-## テキストの幅を動的に測定する
+## テキスト幅の動的な測定
 
 レイアウトの決定を行う前に文字や文字列の幅を測定すべき場合は、この例を使用してください。
 
-1. 対象フォントを解決し、作成します `TextState`.
-1. 文字を測定し、フォントおよびテキストステート API の結果を比較します。
+1. 対象フォントを解決し、`TextState` を作成してください。
+1. 文字を測定し、フォントおよびテキストステート API の結果を比較してください。
 1. 検証のために不一致を出力してください。
 
 ```java
@@ -215,7 +215,7 @@ public static void getTextWidthDynamically(Path outputFile) {
 テキストフラグメントの一部がウェブリンクとして機能する場合に、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. ビルド `TextFragment` いくつかの `TextSegment` オブジェクト。
+1. `TextFragment` を複数の `TextSegment` オブジェクトで構築してください。
 1. 対象セグメントにハイパーリンクとスタイルを割り当て、ドキュメントを保存してください。
 
 ```java
@@ -245,8 +245,8 @@ public static void addTextWithHyperlink(Path outputFile) {
 この例は、ドキュメントが右から左へのスクリプトコンテンツを適切に配置して表示する必要がある場合に使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. 作成する `TextFragment` ターゲットのRTLテキストとともに、フォントと配置を設定してください。
-1. ページに追加してPDFを保存してください。
+1. `TextFragment` を右から左のテキストとともに作成し、フォントと配置を設定してください。
+1. ページに追加して PDF を保存してください。
 
 ```java
 public static void addTextWithRtlText(Path outputFile) {
@@ -268,10 +268,10 @@ public static void addTextWithRtlText(Path outputFile) {
 
 ## スタイル付きテキストと数式のようなセグメントの追加
 
-通常のテキストと下付き文字のようなセグメントが、1つの出力で異なるテキスト状態を使用すべき場合に、この例を使用してください。
+通常のテキストと下付き文字のようなセグメントが、1つの出力で異なるテキスト状態を使用する必要がある場合、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. メインのスタイル付きフラグメントを作成し、ヘルパーセグメントで式を組み立てます。
+1. メインのスタイル付きフラグメントを作成し、ヘルパーセグメントで式を組み立ててください。
 1. 両方のフラグメントをページに追加し、ドキュメントを保存してください。
 
 ```java
@@ -326,11 +326,11 @@ private static void addSegment(TextFragment formula, String text, TextState stat
 
 ## 下線付きのテキストの追加
 
-テキストフラグメントに下線スタイルを明示的に適用したい場合は、この例を使用してください。
+テキストフラグメントに下線スタイルを明示的に適用したい場合、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
 1. テキストフラグメントを作成し、フォントと下線の状態を設定し、位置を指定してください。
-1. それに付け加えて `TextBuilder` そして結果を保存してください。
+1. さらに、`TextBuilder` を使用して追加し、結果を保存してください。
 
 ```java
 public static void addUnderlineText(Path outputFile) {
@@ -352,7 +352,7 @@ public static void addUnderlineText(Path outputFile) {
 
 ## 色付きのシェイプの上に透明なテキストの追加
 
-テキストを背景グラフィックの上に透明で表示させる必要がある場合は、この例を使用してください。
+テキストを背景グラフィックの上に透明で表示させる必要がある場合、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
 1. 背景の形状を描画し、半透明のテキストフラグメントを作成してください。
@@ -412,8 +412,8 @@ public static void addTextInvisible(Path outputFile) {
 テキストを境界矩形と一緒に描画する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. スタイル付きの作成 `TextFragment` テキスト矩形の枠線の描画を有効にしてください。
-1. それに付け加えて `TextBuilder` そしてPDFを保存してください。
+1. スタイル付きの `TextFragment` を作成し、テキスト矩形の枠線の描画を有効にしてください。
+1. それに加えて `TextBuilder` を使用し、PDF を保存してください。
 
 ```java
 public static void addTextBorder(Path outputFile) {
@@ -439,7 +439,7 @@ public static void addTextBorder(Path outputFile) {
 
 ## 取り消し線テキストの追加
 
-テキストが取り消し線の書式を使用すべき場合は、この例を使用してください。
+テキストに取り消し線の書式を適用する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
 1. ストライクアウトが有効なスタイル付きテキストフラグメントを作成してください。
@@ -467,13 +467,13 @@ public static void addStrikeoutText(Path outputFile) {
 }
 ```
 
-## テキストに軸方向のグラデーションシェーディングを適用する
+## テキストに軸方向のグラデーションシェーディングの適用
 
-テキストが単色ではなく線形グラデーション塗りつぶしを使用すべき場合は、この例を使用してください。
+テキストに単色ではなく線形グラデーションの塗りつぶしを使用する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. テキストフラグメントを作成し、その前景色に軸方向グラデーションを割り当てます。
-1. ページに追加してPDFを保存してください。
+1. テキストフラグメントを作成し、その前景色に軸方向グラデーションを割り当ててください。
+1. ページに追加して PDF を保存してください。
 
 ```java
 public static void applyGradientAxialShadingToText(Path outputFile) {
@@ -495,12 +495,12 @@ public static void applyGradientAxialShadingToText(Path outputFile) {
 }
 ```
 
-## テキストに放射状グラデーションのシェーディングを適用する
+## テキストに放射状グラデーションのシェーディングの適用
 
-テキストに放射状グラデーション塗りを使用する場合は、この例を使用してください。
+テキストに放射状グラデーションの塗りつぶしを使用する場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. テキストフラグメントを作成し、その前景色に放射型グラデーションを割り当てます。
+1. テキストフラグメントを作成し、その前景色に放射状グラデーションを割り当ててください。
 1. それをページに追加して、ドキュメントを保存してください。
 
 ```java
@@ -523,13 +523,13 @@ public static void applyGradientRadialShadingToText(Path outputFile) {
 }
 ```
 
-## インラインHTMLスタイルの書式付きテキストの追加
+## インライン HTML スタイルの書式付きテキストの追加
 
-上付き文字および下付き文字の書式をHTMLマークアップで挿入する必要がある場合は、この例を使用してください。
+上付き文字および下付き文字の書式を HTML マークアップで挿入する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. 作成する `HtmlFragment` 必要なインラインマークアップを使用して。
-1. ページに追加してPDFを保存してください。
+1. `HtmlFragment` を、必要なインラインマークアップを使用して作成してください。
+1. ページに追加して PDF を保存してください。
 
 ```java
 public static void addTextHtmlFragment(Path outputFile) {
@@ -548,7 +548,7 @@ public static void addTextHtmlFragment(Path outputFile) {
 数式や TeX 形式のコンテンツを PDF 内にレンダリングする必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. 作成する `TeXFragment` 必要な式を使用して。
+1. `TeXFragment` を、必要な式を使用して作成してください。
 1. それをページに追加して、ドキュメントを保存してください。
 
 ```java
@@ -564,13 +564,13 @@ public static void addTextLatexFragment(Path outputFile) {
 }
 ```
 
-## リッチHTMLフラグメントの追加
+## リッチ HTML フラグメントの追加
 
-ページが見出し、段落、リンクなどの構造化されたHTMLコンテンツをレンダリングする必要がある場合は、この例を使用してください。
+ページが見出し、段落、リンクなどの構造化された HTML コンテンツをレンダリングする必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. HTMLコンテンツ文字列を準備し、作成 `HtmlFragment`.
-1. ページに追加してPDFを保存してください。
+1. HTML コンテンツ文字列を準備し、`HtmlFragment` を作成してください。
+1. ページに追加して PDF を保存してください。
 
 ```java
 public static void addHtmlFragment(Path outputFile) {
@@ -589,13 +589,13 @@ public static void addHtmlFragment(Path outputFile) {
 }
 ```
 
-## 上書きされたテキスト状態を持つHTMLフラグメントの追加
+## 上書きされたテキスト状態を持つ HTML フラグメントの追加
 
-インポートされたHTMLコンテンツが制御されたフォントとカラー設定を継承すべき場合は、この例を使用してください。
+インポートされた HTML コンテンツが、制御されたフォントおよびカラー設定を継承する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF ドキュメントを作成し、ページを追加してください。
-1. HTML コンテンツを準備し、作成する `HtmlFragment`.
-1. カスタムを割り当てる `TextState`、フラグメントを追加し、ドキュメントを保存してください。
+1. HTML コンテンツを準備し、`HtmlFragment` を作成してください。
+1. カスタムの `TextState` を割り当て、フラグメントを追加し、ドキュメントを保存してください。
 
 ```java
 public static void addHtmlFragmentOverrideTextState(Path outputFile) {
@@ -622,10 +622,10 @@ public static void addHtmlFragmentOverrideTextState(Path outputFile) {
 
 ## ファイルから読み込んだカスタムフォントの使用
 
-テキストがフォントファイルのパスから直接ロードされたフォントを使用すべき場合は、この例を使用してください。
+テキストがフォントファイルのパスから直接ロードされたフォントを使用する必要がある場合は、この例を使用してください。
 
-1. カスタムフォントファイルのパスを解決する。
-1. テキストフラグメントを作成し、フォントを通じてロードします `FontRepository.openFont`。
+1. カスタムフォントファイルのパスを解決してください。
+1. テキストフラグメントを作成し、`FontRepository.openFont` を通じてフォントをロードしてください。
 1. フォント設定を適用し、ドキュメントを保存してください。
 
 ```java
@@ -651,8 +651,8 @@ public static void useCustomFontFromFile(Path outputFile) {
 
 カスタムフォントをストリームから開き、PDF に埋め込む必要がある場合は、この例を使用してください。
 
-1. フォントファイルをストリームとして開き、ロードします `FontRepository`。
-1. テキストフラグメントを作成し、埋め込みフォントを割り当てます。
+1. フォントファイルをストリームとして開き、`FontRepository` にロードしてください。
+1. テキストフラグメントを作成し、埋め込みフォントを割り当ててください。
 1. フラグメントをページに追加し、ドキュメントを保存してください。
 
 ```java

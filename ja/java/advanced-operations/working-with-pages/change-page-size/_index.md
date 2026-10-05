@@ -1,26 +1,26 @@
 ---
-title: "Java での PDFページサイズの変更"
+title: "Java での PDF ページサイズの変更"
 linktitle: ページサイズの変更
 type: docs
 weight: 40
 url: /ja/java/change-page-size/
-description: JavaでPDFページ寸法を読み取り、変更する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF ページの寸法を読み取り、変更する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してページ寸法とボックスを読み取り、更新します
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ページの寸法を読み取り、変更する方法を示します。ページサイズの取得、回転を考慮したページサイズの測定、そして変更前後のボックス寸法を出力しながら、最初のページを新しいサイズに更新することをカバーしています。
+AlternativeHeadline: "Java を使用してページ寸法とボックスを読み取り、更新"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ページの寸法を読み取り、変更する方法を示します。ページサイズの取得、回転を考慮したページサイズの測定、および変更前後のボックス寸法を出力しながら最初のページを新しいサイズに更新する方法をカバーしています。"
 ---
-Aspose.PDF for Java はページ寸法を報告できるだけでなく、更新することもできます。
+Aspose.PDF for Java は、ページ寸法の取得だけでなく、更新も可能です。
 
 ## ページサイズの変更
 
-既存のページのサイズを変更し、変更前後のページボックスを検査する必要がある場合にこの例を使用してください。
+既存のページのサイズを変更し、変更前後のページボックスを検査する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ターゲットを取得 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) そして、現在のボックス値を出力してください。
+1. 対象の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) オブジェクトを取得し、現在のボックス値を出力してください。
 1. 新しいページサイズを設定し、ドキュメントを保存してください。
 
 ```java
@@ -37,11 +37,11 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 
 ## ページサイズの取得
 
-ページの見える寸法を読み取る必要がある場合は、この例を使用してください。
+ページの表示寸法を読み取る必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 回転処理が有効な状態でページの矩形を取得してください。
-1. ページの幅と高さを出力します。
+1. 回転処理を有効にしてページの矩形を取得してください。
+1. ページの幅と高さを出力してください。
 
 ```java
 public static void getPageSize(Path inputFile) {
@@ -57,8 +57,8 @@ public static void getPageSize(Path inputFile) {
 回転を考慮する前後のページ寸法を比較する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 対象を回転する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. ページの矩形を回転処理あり・なしで読み取り、両方の値を出力してください。
+1. 対象の[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)を回転してください。
+1. ページの矩形を回転あり・なしで読み取り、両方の値を出力してください。
 
 ```java
 public static void getPageSizeRotation(Path inputFile) {

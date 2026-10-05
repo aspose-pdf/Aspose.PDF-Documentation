@@ -1,29 +1,29 @@
 ---
-title: Java で PDF グラフのシェイプ バウンダリをチェックする
-linktitle: シェイプ バウンダリをチェックする
+title: "Java での PDF グラフのシェイプ バウンダリのチェック"
+linktitle: "シェイプ バウンダリのチェック"
 type: docs
 weight: 70
 url: /ja/java/aspose-pdf-drawing-graph-shapes-bounds-check/
 description: Java で PDF グラフ コレクションのシェイプ バウンダリを検証する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して PDF ファイル内のグラフ シェイプ バウンダリを検証する
-Abstract: この記事では、Aspose.PDF for Java を使用してグラフ コレクションのシェイプ バウンダリを検証する方法を示します。厳格なバウンダリチェックの有効化、範囲外シェイプの追加の試行、そして例外が発生した場合でもドキュメントを保存し続ける方法について説明します。
+AlternativeHeadline: "Java を使用して PDF ファイル内のグラフ シェイプ バウンダリの検証"
+Abstract: "この記事では、Aspose.PDF for Java を使用してグラフ コレクション内のシェイプの境界を検証する方法を示します。厳格な境界チェックの有効化、範囲外のシェイプを追加しようとする試み、および例外が発生してもドキュメントの保存を継続する方法について説明します。"
 ---
-使用 `BoundsCheckMode` シェイプがグラフコンテナ内に収まることを保証する必要があるとき。
+`BoundsCheckMode` を使用すると、シェイプがグラフ コンテナ内に収まることを保証できます。
 
 ## グラフ形状の境界の検証
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. 追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ドキュメントに。
-1. 作成 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
-1. 作成する [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) シェイプを作成し、ジオメトリを設定してください。
-1. 厳密な境界チェックを有効にし、シェイプをグラフコレクションに追加しようとします `BoundsCheckMode`。
-1. シェイプが収まらない場合の例外を処理します。
-1. 出力 PDF を保存します [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. ドキュメントに [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加してください。
+1. [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) コンテナを作成し、ページに追加してください。
+1. [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) シェイプを作成し、ジオメトリを設定してください。
+1. 厳密な境界チェックを有効にし、`BoundsCheckMode` を使用してシェイプをグラフ コレクションに追加しようとしてください。
+1. シェイプが収まらない場合の例外を処理してください。
+1. 出力 PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) として保存してください。
 
 ```java
 public static void checkShapeBounds(Path outputFile) {

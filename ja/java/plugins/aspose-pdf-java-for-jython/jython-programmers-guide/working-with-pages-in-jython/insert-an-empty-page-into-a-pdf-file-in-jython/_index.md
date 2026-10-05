@@ -1,11 +1,11 @@
 ---
-title: "Jython での PDFファイルへの空白ページの挿入"
-linktitle: "Jython での PDFファイルへの空白ページの挿入"
+title: "Jython での PDF ファイルへの空白ページの挿入"
+linktitle: "Jython での PDF ファイルへの空白ページの挿入"
 type: docs
 weight: 70
 url: /ja/java/insert-an-empty-page-into-a-pdf-file-in-jython/
-description: Aspose.PDF を使用して Jython で PDF ドキュメントの任意の位置に空白ページを挿入する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、Jython で PDF ドキュメントの任意の位置に空白ページを挿入する方法を学習してください。"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - 空白ページの挿入
 
@@ -13,8 +13,8 @@ lastmod: "2026-10-05"
 
 マクロ 'code' のレンダリングエラー：パラメータ lang に無効な値が指定されました
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-以下に記載されたソーシャルコーディングサイトのいずれかから、実行中のコードをダウンロードしてください：
+以下に記載されたソーシャルコーディングサイトのいずれかから、実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

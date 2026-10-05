@@ -1,26 +1,26 @@
 ---
-title: "AcroForm を作成 - Java で記入可能な PDF の作成"
+title: "AcroForm の作成 - Java で記入可能な PDF の作成"
 linktitle: "AcroForm の作成"
 type: docs
 weight: 10
 url: /ja/java/create-form/
-description: Aspose.PDF for Java を使用して、PDF ドキュメントでゼロから AcroForm フィールドを作成します。
-lastmod: "2026-10-05"
+description: "Aspose.PDF for Java を使用して、PDF ドキュメントにゼロから AcroForm フィールドを作成します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して、PDF ファイルにインタラクティブな AcroForm フィールドを作成します。
-Abstract: この記事では、Aspose.PDF for Java を使用して AcroForm フィールドを作成する方法について説明します。テキストボックス、マルチウィジェットテキストフィールド、ラジオボタン、コンボボックス、チェックボックス、リストボックス、署名フィールド、バーコードフィールドのインタラクティブな PDF フォームをカバーしています。
+AlternativeHeadline: "Java を使用して PDF ファイルにインタラクティブな AcroForm フィールドの作成"
+Abstract: "この記事では、Aspose.PDF for Java を使用して AcroForm フィールドを作成する方法について説明します。テキストボックス、マルチウィジェットテキストフィールド、ラジオボタン、コンボボックス、チェックボックス、リストボックス、署名フィールド、バーコードフィールドなどのインタラクティブな PDF フォームをカバーしています。"
 ---
-Aspose.PDF for Java は、最初から幅広い種類の AcroForm フィールドタイプを作成できるようにします。
+Aspose.PDF for Java では、最初から幅広い種類の AcroForm フィールドタイプを作成できます。
 
 ## テキストボックスフィールドの作成
 
-新しいPDFフォームに単一行のテキスト入力フィールドを追加する必要があるときは、この例を使用してください。
+新しい PDF フォームに単一行のテキスト入力フィールドを追加する必要がある場合は、この例を使用してください。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
-1. 作成する [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) ターゲット矩形を使用し、外観を設定してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
+1. 対象の矩形を指定して [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) を作成し、外観を設定してください。
 1. フィールドをフォームに追加して、ドキュメントを保存してください。
 
 ```java
@@ -53,9 +53,9 @@ public static void addTextBoxField(Path outputFile) {
 
 同じテキストフィールドの値がページ上の複数の位置に表示される場合は、この例を使用してください。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
 1. フィールドウィジェットのために複数の矩形と外観を定義してください。
-1. 作成する [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)、各ウィジェットを構成し、ドキュメントを保存してください。
+1. [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) を作成し、各ウィジェットを構成して、ドキュメントを保存してください。
 
 ```java
 public static void addTextBoxFieldNt(Path outputFile) {
@@ -99,13 +99,13 @@ public static void addTextBoxFieldNt(Path outputFile) {
 }
 ```
 
-## ラジオボタン フィールドの作成
+## ラジオボタンフィールドの作成
 
 この例は、フォームがユーザーに事前定義されたセットから1つのオプションを選択させる場合に使用してください。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
-1. 作成する [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) 必要なオプションを追加してください。
-1. フィールドをフォームに追加し、PDFを保存してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
+1. [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) を作成し、必要なオプションを追加してください。
+1. フィールドをフォームに追加し、PDF を保存してください。
 
 ```java
 public static void addRadioButton(Path outputFile) {
@@ -122,11 +122,11 @@ public static void addRadioButton(Path outputFile) {
 }
 ```
 
-## コンボボックス フィールドの作成
+## コンボボックスフィールドの作成
 
 ユーザーがドロップダウンリストから1つの値を選択すべき場合に、この例を使用します。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
 1. [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) を作成し、その選択可能なオプションを追加してください。
 1. デフォルトの選択を設定し、ドキュメントを保存してください。
 
@@ -152,7 +152,7 @@ public static void addComboBox(Path outputFile) {
 
 フォームが同意や機能選択などの真偽オプションを必要とする場合は、この例を使用してください。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
 1. [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) を作成し、その外観を設定してください。
 1. チェックボックスをフォームに追加し、出力ファイルを保存してください。
 
@@ -175,8 +175,8 @@ public static void addCheckboxFieldToPdf(Path outputFile) {
 
 フォームに複数の利用可能な選択肢を可視リストで表示する必要がある場合は、この例を使用してください。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
-1. 作成する [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) 利用可能なオプションを追加してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
+1. [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) を作成し、利用可能なオプションを追加してください。
 1. フィールドをフォームに追加して、ドキュメントを保存してください。
 
 ```java
@@ -200,9 +200,9 @@ public static void addListBoxFieldToPdf(Path outputFile) {
 
 ドキュメントがデジタル署名用に可視領域を確保する必要がある場合は、この例を使用してください。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
-1. 作成する [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) 必要な矩形内で。
-1. フィールドをフォームに追加して、出力PDFを保存してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
+1. [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) を必要な矩形内で作成してください。
+1. フィールドをフォームに追加して、出力 PDF を保存してください。
 
 ```java
 public static void addSignatureField(Path outputFile) {
@@ -221,7 +221,7 @@ public static void addSignatureField(Path outputFile) {
 
 フォームがバーコードフィールド内に機械可読データを表示すべき場合は、この例を使用してください。
 
-1. 新しいPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
+1. 新しい PDF を作成し、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にページを追加してください。
 1. [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) を作成し、バーコードの値を追加してください。
 1. フィールドをフォームに追加して、ドキュメントを保存してください。
 

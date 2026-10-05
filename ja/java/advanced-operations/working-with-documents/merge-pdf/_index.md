@@ -1,27 +1,27 @@
 ---
-title: JavaでPDFファイルをマージする
-linktitle: PDFファイルをマージする
+title: "Java での PDF ファイルの結合"
+linktitle: "PDF ファイルの結合"
 type: docs
 weight: 50
 url: /ja/java/merge-pdf-documents/
 description: Javaで複数のPDFファイルを単一のドキュメントに結合する方法を学びましょう。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで全体の文書、選択した範囲、および交互のページを結合します。
+AlternativeHeadline: "Java でのドキュメント全体、選択した範囲、および交互のページの結合"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントを結合する方法を説明します。2 つのファイルの結合、複数ドキュメントのマージ、ページ範囲の選択、特定の位置に別のドキュメントを挿入、ページを交互に配置、セクションブックマーク付きの結合出力の作成についてカバーしています。
 ---
-Aspose.PDF for Javaは、出力の組み立て方法に応じて、いくつかのマージ戦略をサポートしています。
+Aspose.PDF for Java は、出力の組み立て方法に応じて、複数のマージ戦略をサポートしています。
 
-## 2つの PDF ドキュメントの結合
+## 2 つの PDF ドキュメントの結合
 
-最もシンプルなマージフローが必要で、1つの完全なドキュメントを別のドキュメントに追加したい場合にこのアプローチを使用します。
+最もシンプルなマージフローが必要で、1つの完全なドキュメントを別のドキュメントに追加したい場合に、このアプローチを使用してください。
 
-1. 両方のソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクト。
-1. 追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 2番目の文書から1番目の文書へのコレクション。
-1. 更新された PDF を保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 両方のソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開いてください。
+1. 2 番目のドキュメントの [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) コレクションを 1 番目のドキュメントに追加してください。
+1. 更新した PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -35,10 +35,10 @@ public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outp
 
 ## 文書間で選択したページ範囲のコピー
 
-このヘルパーメソッドはページ範囲のマージロジックを一箇所にまとめ、他のサンプルが同じ検証済みコピー手順を再利用できるようにします。
+このヘルパーメソッドは、ページ範囲のマージロジックを一か所にまとめ、他のサンプルが同じ検証済みのコピー手順を再利用できるようにします。
 
-1. ソースと宛先の PDF を開くまたは受け取る [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクト。
-1. 要求されたページ範囲を正規化し、利用可能な範囲内に収めます。 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) コレクション。
+1. ソースと宛先の PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトを開くか、既存のオブジェクトを受け取ってください。
+1. 要求されたページ範囲を正規化し、[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) コレクションの有効な範囲内に収めてください。
 1. 検証済みの範囲から各ページを宛先ドキュメントに追加してください。
 
 ```java
@@ -60,13 +60,13 @@ private static void appendPageRange(Document sourceDocument, Document destinatio
 }
 ```
 
-## 複数のPDFドキュメントを1つのファイルに結合する
+## 複数の PDF ドキュメントの 1 つのファイルへの結合
 
 入力ファイルのリストを順番に単一の出力ドキュメントに結合する必要がある場合は、このパターンを使用してください。
 
-1. 空の出力 PDF を作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
-1. 各入力ファイルを1つずつ開き、その全体をコピーしてください [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 範囲を出力ドキュメントに入れる。
-1. すべてのソースファイルが処理された後、マージされた結果を保存してください。
+1. 出力用の空の PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトを作成してください。
+1. 各入力ファイルを 1 つずつ開き、その全 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 範囲を出力ドキュメントにコピーしてください。
+1. すべてのソースファイルの処理が完了した後、マージされた結果を保存してください。
 
 ```java
 public static void mergeMultipleDocuments(List<Path> inputFiles, Path outputFile) {
@@ -81,12 +81,12 @@ public static void mergeMultipleDocuments(List<Path> inputFiles, Path outputFile
 }
 ```
 
-## 2つのドキュメントから選択したページ範囲をマージする
+## 2 つのドキュメントから選択したページ範囲の結合
 
 この例では、各ソースドキュメントから特定のページ範囲のみを取得して、カスタム出力ファイルを作成します。
 
-1. 両方のソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトと新しい出力ドキュメントを作成してください。
-1. 必要なものだけ追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 各ソースドキュメントからの範囲です。
+1. 両方のソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開き、新しい出力ドキュメントを作成してください。
+1. 各ソースドキュメントから必要な [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 範囲のみを追加してください。
 1. 組み立てられた出力ドキュメントを保存してください。
 
 ```java
@@ -101,12 +101,12 @@ public static void mergeSelectedPageRanges(Path inputFile1, Path inputFile2, Pat
 }
 ```
 
-## あるPDF文書を別のPDFの特定の位置に挿入する
+## 別の PDF の指定位置への PDF ドキュメントの挿入
 
-ある文書が別の文書の前後だけでなく、その中に表示されるべき場合にこのアプローチを使用します。
+ある文書が別の文書の前後だけでなく、その中に挿入される必要がある場合に、このアプローチを使用してください。
 
-1. ベースと挿入された PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトと新しい出力ドキュメントを作成してください。
-1. ベース文書の最初の部分をコピーし、次に挿入された文書全体を追加し、最後に残りのベース文書を追加します。 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 範囲。
+1. 挿入先と挿入する PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開き、新しい出力ドキュメントを作成してください。
+1. ベース文書の最初の部分をコピーし、次に挿入された文書全体を追加し、最後に残りのベース文書の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 範囲を追加してください。
 1. 再配置された結果を新しいファイルに保存してください。
 
 ```java
@@ -126,12 +126,12 @@ public static void mergeInsertDocumentAtPosition(Path inputFile1, Path inputFile
 }
 ```
 
-## ページを交互にして2つのPDF文書の結合
+## ページを交互に配置した 2 つの PDF ドキュメントの結合
 
-この例は2つのドキュメントからページを交互に差し込むもので、両方の入力がページ単位で最終出力に貢献すべき場合に便利です。
+この例では、2つのドキュメントからページを交互に差し込みます。両方の入力がページ単位で最終出力に貢献すべき場合に便利です。
 
-1. 両方のソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトと新しい出力ドキュメントを作成してください。
-1. 利用可能な最大ページ数までループし、各利用可能ページを追加する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 最初と2番目の文書を順に。
+1. 両方のソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開き、新しい出力ドキュメントを作成してください。
+1. 利用可能な最大ページ数までループし、各利用可能ページを [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) オブジェクトとして、最初の文書と2番目の文書から交互に追加してください。
 1. インタリーブされた出力ドキュメントを保存してください。
 
 ```java
@@ -157,13 +157,13 @@ public static void mergeAlternatingPages(Path inputFile1, Path inputFile2, Path 
 }
 ```
 
-## 区切りページとブックマークでドキュメントの結合
+## 区切りページとブックマークを使用したドキュメントの結合
 
 結合されたファイルがナビゲートしやすく、各ソースドキュメントの開始位置が明確に示されている必要がある場合に、このパターンを使用してください。
 
-1. 空の出力 PDF を作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) そして各ソースファイルを順に開いてください。
-1. 区切り線を追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 見出しを付けてから、作成します [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) そのセクションのブックマーク。
-1. ソースページを追加し、オプションで最初のコンテンツページを指すブックマークを追加し、最終的に結合されたドキュメントを保存してください。
+1. 出力用の空の PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトを作成し、各ソースファイルを順に開いてください。
+1. 見出し付きの区切り用 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加し、そのセクションの [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) ブックマークを作成してください。
+1. ソースページを追加し、オプションで最初のコンテンツページを指すブックマークを追加した後、結合されたドキュメントを保存してください。
 
 ```java
 public static void mergeWithSectionSeparatorsAndBookmarks(List<Path> inputFiles, Path outputFile) {

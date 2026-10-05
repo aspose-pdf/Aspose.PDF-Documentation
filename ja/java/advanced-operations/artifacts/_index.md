@@ -5,20 +5,20 @@ type: docs
 weight: 170
 url: /ja/java/artifacts/
 description: Aspose.PDF を使用して、背景、透かし、ヘッダー、フッター、Bates番号付けを追加し、ページ番号のアーティファクトタイプをカウントするために、Javaで PDF アーティファクトを操作する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで背景、透かし、ヘッダー、フッター、およびBates番号付けアーティファクトを追加する
-Abstract: この記事では、Aspose.PDF for Java における PDF アーティファクトの操作方法を説明します。背景アーティファクト、透かしアーティファクト、ヘッダーおよびフッターアーティファクト、Bates番号付け、そして背景、透かし、ヘッダー、フッターといったアーティファクトのサブタイプのカウントについて取り上げています。
+AlternativeHeadline: "Java での背景、透かし、ヘッダー、フッター、および Bates 番号付けアーティファクトの追加"
+Abstract: "この記事では、Aspose.PDF for Java を使用した PDF アーティファクトの操作方法について説明します。背景アーティファクト、透かしアーティファクト、ヘッダーおよびフッターアーティファクト、Bates 番号付け、および背景・透かし・ヘッダー・フッターといったアーティファクトのサブタイプのカウント方法を扱います。"
 ---
-PDF 文書のアーティファクトは、ヘッダー、フッター、透かし、背景、ページ番号マーカーなど、コンテンツではないページ要素です。これらはブランド化、レイアウト、識別、文書管理ワークフローで一般的に使用されます。
+PDF 文書のアーティファクトとは、ヘッダー、フッター、透かし、背景、ページ番号マーカーなど、本文コンテンツ以外のページ要素を指します。これらはブランド化、レイアウト調整、識別、および文書管理ワークフローにおいて一般的に使用されます。
 
-このセクションを使用して：
+このセクションでは、以下の作業を行います。
 
-- [背景を追加](/pdf/ja/java/add-backgrounds/)
-- [ベーツ番号を追加](/pdf/ja/java/add-bates-numbering/)
-- [透かしを追加](/pdf/ja/java/add-watermarks/)
-- [PDF ヘッダーとフッターを管理](/pdf/ja/java/artifacts-header-footer/)
-- [アーティファクトをカウント](/pdf/ja/java/counting-artifacts/)
+- [背景の追加](/pdf/ja/java/add-backgrounds/)
+- [ベーツ番号の追加](/pdf/ja/java/add-bates-numbering/)
+- [透かしの追加](/pdf/ja/java/add-watermarks/)
+- [PDF のヘッダーとフッターの管理](/pdf/ja/java/artifacts-header-footer/)
+- [アーティファクトのカウント](/pdf/ja/java/counting-artifacts/)

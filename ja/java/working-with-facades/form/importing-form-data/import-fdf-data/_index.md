@@ -5,12 +5,12 @@ type: docs
 weight: 10
 url: /ja/java/import-fdf-data/
 description: Aspose.PDF の Form ファサードを使用して、Java で PDF フォームに FDF フォームデータをインポートする方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Java で FDF から AcroForm データをインポートする
+AlternativeHeadline: "Java での FDF から AcroForm データのインポート"
 Abstract: この記事では、PDF フォームをバインドし、FDF ストリームからフィールド値をインポートし、Aspose.PDF for Java の Form ファサードを使用して更新されたドキュメントを保存する方法を示します。
 ---
-使用 `FormExamples.importFdf(...)` FDF ファイルからフィールド値を適用するために。
+FDF ファイルからフィールド値を適用するには、`FormExamples.importFdf(...)` を使用してください。
 
 ```java
 public static void importFdf(Path inputFile, Path dataFile, Path outputFile) throws Exception {

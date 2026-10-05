@@ -5,22 +5,22 @@ type: docs
 weight: 30
 url: /ja/java/markup-annotations/
 description: Aspose.PDF for Java を使用して、PDF ドキュメントにハイライト、下線、波線、取り消し線アノテーションを追加、検査、削除する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java を使用して、PDF ファイルのマークアップ アノテーションを操作します。
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメント内のテキストマークアップ注釈を作成、検査、削除する方法を説明します。リポジトリの Java サンプルに基づき、ハイライト、アンダーライン、スクイッグリー、ストライクアウトの注釈についてカバーしています。
+AlternativeHeadline: "Java を使用して、PDF ファイルのマークアップ アノテーションの操作"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメント内のテキストマークアップ注釈を作成、検査、および削除する方法を説明します。ハイライト、アンダーライン、スクイッグリー、ストライクアウトの各注釈について、リポジトリの Java サンプルに基づいて解説しています。"
 ---
-このセクションのマークアップ注釈ワークフローは、ノートスタイルのコメント、キャレットマーカー、そしてグループ化された置換・レビューシナリオに焦点を当てています。
+このセクションのマークアップ注釈のワークフローは、ノートスタイルのコメント、キャレットマーカー、およびグループ化された置換・レビューシナリオに焦点を当てています。
 
 ## テキスト注釈の追加
 
 ページにポップアップメタデータ付きの付箋スタイルのテキスト注釈を配置する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) を作成し、そのタイトル、内容、アイコン、ポップアップを構成してください。
+1. [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) オブジェクトを作成し、そのタイトル、内容、アイコン、ポップアップを構成してください。
 1. ページに注釈を追加し、ドキュメントを保存してください。
 
 ```java
@@ -50,11 +50,11 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## テキスト注釈の取得
 
-この例はページをスキャンし、各テキスト注釈の矩形を出力します。
+この例では、ページをスキャンして各テキスト注釈の矩形を出力します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. ページ上の注釈を反復処理してください。
-1. 注釈をフィルタリング [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` そしてそれらの矩形を出力します。
+1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` で注釈をフィルタリングし、それらの矩形を出力してください。
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -70,10 +70,10 @@ public static void textAnnotationGet(Path inputFile) {
 
 ## テキスト注釈の削除
 
-既存のテキスト注釈を文書から削除する必要がある場合は、このアプローチを使用してください。
+既存のテキスト注釈をドキュメントから削除する必要がある場合は、このアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. タイプの注釈を収集 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. 型が [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` の注釈を収集してください。
 1. 収集された注釈を削除し、出力ファイルを保存してください。
 
 ```java
@@ -129,7 +129,7 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. ページの注釈を反復処理してください。
-1. 注釈をフィルタリング [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` そしてそれらの矩形を出力します。
+1. 注釈をフィルタリングし、[AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` に一致するものについて、それらの矩形を出力してください。
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -149,7 +149,7 @@ public static void caretAnnotationsGet(Path inputFile) {
 ページからキャレット注釈を削除する必要がある場合は、このアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. タイプが～である注釈を収集する [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` である注釈を収集してください。
 1. 収集した注釈を削除し、出力ドキュメントを保存してください。
 
 ```java
@@ -173,11 +173,11 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## グループ化された置換注釈の追加
 
-この例は、置換スタイルのレビューコメントを表すために、キャレット注釈と打ち消し線注釈を組み合わせています。
+この例は、置換スタイルのレビューコメントを表すために、キャレット注釈と取り消し線注釈を組み合わせています。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. キャレット注釈と関連するものを作成 [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/)。
-1. 注釈をリンクさせる `setInReplyTo` そして `setReplyType`, 次にドキュメントを保存します。
+1. キャレット注釈と関連する [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) を作成してください。
+1. 注釈を `setInReplyTo` および `setReplyType` でリンクし、ドキュメントを保存してください。
 
 ```java
 public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
@@ -219,7 +219,7 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 
 ## グループ化された置換注釈の取得
 
-この例は、グループ化された置換ワークフローに参加する取り消し線アノテーションを検出します。
+この例は、グループ化された置換ワークフローに参加する取り消し線注釈を検出します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. ページの注釈を繰り返し処理し、取り消し線注釈を選択してください。
@@ -246,7 +246,7 @@ public static void replaceAnnotationsGet(Path inputFile) {
 ページから置換レビューの取り消し線アノテーションを削除する必要がある場合は、このアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 置換マークアップを表す取り消し線アノテーションを収集する。
+1. 置換マークアップを表す取り消し線アノテーションを収集してください。
 1. 収集された注釈を削除し、更新された文書を保存してください。
 
 ```java

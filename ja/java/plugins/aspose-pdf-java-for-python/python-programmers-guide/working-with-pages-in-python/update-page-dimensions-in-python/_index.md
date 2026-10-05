@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ja/java/update-page-dimensions-in-python/
 description: Aspose.PDF を使用して Python で PDF ドキュメント内のページ寸法を更新する方法を理解し、文書レイアウトの制御を向上させます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
 **Aspose.PDF Java for Python** を使用してページ寸法を更新するには、単に **UpdatePageDimensions** クラスを呼び出します。
 
@@ -32,6 +32,6 @@ print "Dimensions updated successfully!"
 
 **ランニングコードをダウンロード**
 
-ダウンロードВ **ページ寸法の更新 (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれかから:
+ダウンロード **ページ寸法の更新 (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれかから:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/UpdatePageDimensions/UpdatePageDimensions.py)

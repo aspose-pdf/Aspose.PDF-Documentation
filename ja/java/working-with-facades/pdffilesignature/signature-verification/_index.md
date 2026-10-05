@@ -4,15 +4,15 @@ linktitle: 署名検証
 type: docs
 weight: 90
 url: /ja/java/signature-verification/
-description: PdfFileSignature ファサードを使用して、Java で PDF 署名を検証する方法を学びます。
-lastmod: "2026-10-05"
+description: "PdfFileSignature ファサードを使用して、Java で PDF 署名を検証する方法を学習します。"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で PDF 署名を検証する
-Abstract: Aspose.PDF for Java を使用して PDF 署名を検証する方法を学びます。Java のサンプルは、利用可能な最初の署名を選択し、署名を検証し、文書全体をカバーしているかどうかをチェックします。
+AlternativeHeadline: "Java での PDF 署名の検証"
+Abstract: "Aspose.PDF for Java を使用して PDF 署名を検証する方法を学びます。Java のサンプルでは、利用可能な最初の署名を選択し、署名を検証したうえで、文書全体をカバーしているかどうかを確認します。"
 ---
 ## PDF 署名の検証
 
@@ -20,13 +20,13 @@ Abstract: Aspose.PDF for Java を使用して PDF 署名を検証する方法を
 
 ### 手順
 
-1. 作成 `PdfFileSignature` インスタンスを作成し、署名されたPDFをバインドしてください。
+1. `PdfFileSignature` インスタンスを作成し、署名された PDF をバインドしてください。
 2. 検査したい署名名を選択してください。
-3. 呼び出し `verifySignature` 署名を検証するために。
-4. 呼び出し `coversWholeDocument` カバレッジを確認するために。
-5. ファサードオブジェクトを閉じます。
+3. `verifySignature` を呼び出して署名を検証してください。
+4. `coversWholeDocument` を呼び出してカバレッジを確認してください。
+5. ファサードオブジェクトを閉じてください。
 
-### Javaの例
+### Java の例
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {

@@ -1,23 +1,23 @@
 ---
-title: Javaによるシェイプ注釈
+title: "Java によるシェイプ注釈"
 linktitle: シェイプ注釈
 type: docs
 weight: 20
 url: /ja/java/shape-annotations/
 description: Aspose.PDF for Java を使用して、PDF ドキュメントにおける四角形、円、ポリゴン、ポリライン アノテーションの追加、検査、削除方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Java で幾何学的な PDF アノテーションを操作します。
+AlternativeHeadline: "Java での 幾何学的な PDF アノテーションの操作"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメント内の幾何学的注釈を作成、検査、削除する方法を説明します。四角形、円、ポリゴン、ポリライン注釈に加えて、色、透過性、ポップアップ、ポイント設定についても取り上げています。
 ---
 このセクションのシェイプ注釈は、正方形、円、ポリゴン、ポリライン、線などの幾何学的注釈タイプをカバーしています。
 
 ## 四角形、円形、多角形、ポリラインの注釈の追加
 
-カスタムカラー、透明度、ポップアップデータ、またはポイント配列を使用して幾何学的注釈を配置する必要があるときは、これらの例を使用してください。
+カスタムカラー、透明度、ポップアップデータ、またはポイント配列を使用して幾何学的注釈を配置する必要がある場合は、これらの例をご利用ください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. 必要なシェイプ注釈を作成し、その矩形、ポイント、および視覚的プロパティを設定してください。
@@ -111,11 +111,11 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 
 ## 四角形、円形、多角形、ポリラインのアノテーションの取得
 
-これらの例はページ注釈コレクションを検査し、タイプ別に幾何学的注釈の矩形を出力します。
+これらの例では、ページ注釈コレクションを検査し、タイプ別に幾何学的注釈の矩形を出力します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. ページの注釈を反復処理してください。
-1. 必要な条件でフィルタリング [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) 値と長方形を印刷します。
+1. 必要な [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) 値でフィルタリングし、矩形を印刷してください。
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -167,10 +167,10 @@ public static void polylineAnnotationGet(Path inputFile) {
 
 ## 正方形、円、多角形、およびポリラインの注釈の削除
 
-特定の種類のシェイプ注釈をページから削除する必要がある場合は、これらの例を使用してください。
+特定の種類のシェイプ注釈をページから削除する必要がある場合は、これらの例をご利用ください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 必要なジオメトリタイプのアノテーションを収集します。
+1. 必要なジオメトリタイプのアノテーションを収集してください。
 1. 収集されたアノテーションを削除し、出力ファイルを保存してください。
 
 ```java
@@ -243,11 +243,11 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 
 ## 線注釈の追加
 
-この例では、矢印の端点、枠線の書式設定、およびポップアップノートを備えたライン注釈を作成します。
+この例では、矢印の端点、枠線の書式設定、およびポップアップノートを備えた線注釈を作成します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) 開始点と終了点がある。
-1. 外観を設定し、ポップアップを追加し、ドキュメントを保存してください。
+1. [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) を開始点と終了点を指定して作成してください。
+1. 外観を設定し、ポップアップを追加して、ドキュメントを保存してください。
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -277,13 +277,13 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## ライン注釈の取得
+## 線注釈の取得
 
-この例では、ラインアノテーションを読み取り、開始座標と終了座標を出力します。
+この例では、線注釈を読み取り、その開始座標と終了座標を出力します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ページの注釈を順に処理して選択する [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`。
-1. 各マッチをキャストする [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) そして、その座標を出力します。
+1. ページの注釈を順に処理し、[AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line` を選択してください。
+1. 各マッチを [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) にキャストし、その座標を出力してください。
 
 ```java
 public static void lineAnnotationsGet(Path inputFile) {
@@ -300,13 +300,13 @@ public static void lineAnnotationsGet(Path inputFile) {
 }
 ```
 
-## ライン注釈の削除
+## 線注釈の削除
 
-ページからライン注釈を削除する必要がある場合に、このアプローチを使用してください。
+ページからライン注釈を削除する必要がある場合は、このアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. タイプの注釈を収集 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
-1. 収集された注釈を削除し、ドキュメントを保存してください。
+1. タイプ [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line` の注釈を収集してください。
+1. 収集した注釈を削除し、ドキュメントを保存してください。
 
 ```java
 public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
@@ -328,7 +328,7 @@ public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## 関連する注釈トピック
 
-- [インタラクティブ アノテーション](/pdf/ja/java/interactive-annotations/)
+- [インタラクティブアノテーション](/pdf/ja/java/interactive-annotations/)
 - [マークアップ注釈](/pdf/ja/java/markup-annotations/)
 - [セキュリティ注釈](/pdf/ja/java/security-annotations/)
 - [テキスト注釈](/pdf/ja/java/text-based-annotations/)

@@ -4,8 +4,8 @@ linktitle: NetBeans 用 Maven プラグイン
 type: docs
 weight: 70
 url: /ja/java/aspose-pdf-java-for-netbeans-maven/
-description: Aspose.PDF Java for NetBeans Maven プラグインを使用してプロジェクトを作成し、NetBeans IDE 内で PDF 機能を利用する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF Java for NetBeans Maven プラグインを使用してプロジェクトを作成し、NetBeans IDE 内で PDF 機能を利用する方法を学んでください。"
+lastmod: "2026-10-06"
 ---
 ## 概要
 
@@ -34,16 +34,16 @@ Aspose.PDF for Java は、PDF の圧縮オプション、テーブルの作成�
 
 プラグインには、2 つのウィザードが含まれています。
 
-### Aspose.PDF Maven Project ウィザード
+### Aspose.PDF Maven プロジェクト ウィザード
 
-- この新規プロジェクトウィザードでは、**New Project -> Maven -> Aspose.PDF Maven Project** から、Aspose.PDF for Java を使用する **Maven** プロジェクトを作成できます。
-- Aspose.PDF for Java API の Maven 依存関係への参照は、[Aspose Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) から自動的に取得され、pom.xml に追加されます。
-- 作成したプロジェクトには、利用可能な最新バージョンの Aspose.PDF for Java API の **Maven** 依存関係が常に含まれます。
+- この新規プロジェクトウィザードでは、**New Project -> Maven -> Aspose.PDF Maven Project** の順に選択して、Aspose.PDF for Java を使用する **Maven** プロジェクトを作成できます。
+- Aspose.PDF for Java API の Maven 依存関係は、[Aspose Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) から自動的に取得され、`pom.xml` に追加されます。
+- 作成したプロジェクトには、常に Aspose.PDF for Java API の最新バージョンの **Maven** 依存関係が含まれます。
 - ウィザードの手順には、Aspose.PDF for Java API を使用するコード例をダウンロードするオプションもあります。
 
-### Aspose.PDF Code Example ウィザード
+### Aspose.PDF コード例 ウィザード
 
-- この新規ファイルウィザードでは、**New File -> Java -> Aspose.PDF Code Example** から、ダウンロードした[コード例](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)をプロジェクトにコピーし、Aspose.PDF for Java を使用できます。
+- この新規ファイル ウィザードでは、**New File -> Java -> Aspose.PDF Code Example** から、ダウンロードした[コード例](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)をプロジェクトにコピーし、Aspose.PDF for Java を使用できます。
 - 利用可能なサンプルはツリー形式で表示され、カテゴリ別に選択できます。
 - 選択したカテゴリのすべての例は、プロジェクトの **com.aspose.pdf.examples** パッケージフォルダーにコピーされます。例の実行に必要なリソースも **src/main/resources** フォルダーにコピーされます。
 - Aspose.PDF for Java API のコード例は、API のさまざまな機能を示すために用意されています。
@@ -79,7 +79,7 @@ NetBeans IDE をダウンロードするには、次の手順に従ってくだ�
 
 ### Aspose.PDF Java for NetBeans (Maven) のダウンロード
 
-- プラグインは、NetBeans のプラグインホスティング URL <http://plugins.netbeans.org/plugin/63218> から直接ダウンロードし、その後、次の IDE オプションを使用してインストールできます。
+- プラグインは、NetBeans のプラグインホスティング URL <http://plugins.netbeans.org/plugin/63218> から直接ダウンロードし、その後、次の IDE オプションを使用してインストールしてください。
   - **Tools** > **Plugins** > **Downloaded** を開いてください。
   - **Add Plugins...** をクリックし、ダウンロードした **Aspose.PDF Java for NetBeans (Maven)** の .nbm 拡張子のプラグインファイルを選択してください。
   - **Install** をクリックしてプラグインをインストールしてください。
@@ -103,7 +103,7 @@ Aspose.PDF for NetBeans - Maven の使用
 評価メッセージと機能の制限を解除するには、製品ライセンスを適用する必要があります。製品を購入すると、ライセンスファイルが提供されます。ライセンスを適用するには、次の手順に従ってください。
 
 - ライセンスファイルの名前が **Aspose.PDF.Java.lic** であることを確認してください。
-- **Aspose.PDF.Java.lic** ファイルを、Aspose.PDF.jar が含まれるフォルダーに配置してください。
+- **Aspose.PDF.Java.lic** ファイルを、`Aspose.PDF.jar` が含まれるフォルダーに配置してください。
 - 次のコードを使用してライセンスを有効にしてください。
 
 ```java

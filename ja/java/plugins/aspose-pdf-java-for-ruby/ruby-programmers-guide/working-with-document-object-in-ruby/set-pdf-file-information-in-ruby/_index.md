@@ -1,17 +1,17 @@
 ---
-title: "Ruby での PDFファイル情報の設定"
-linktitle: "Ruby での PDFファイル情報の設定"
+title: "Ruby での PDF ファイル情報の設定"
+linktitle: "Ruby での PDF ファイル情報の設定"
 type: docs
 weight: 120
 url: /ja/java/set-pdf-file-information-in-ruby/
-description: Rubyを使用して、タイトル、作者、キーワードなどのPDFメタデータをプログラムで定義および更新します。
-lastmod: "2026-10-05"
+description: "Ruby を使用して、タイトル、作者、キーワードなどの PDF メタデータをプログラムで定義および更新してください。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - PDFファイル情報の設定
+## Aspose.PDF - PDF ファイル情報の設定
 
-**Aspose.PDF Java for Ruby** を使用して PDF ドキュメント情報を更新するには、単に **SetPdfFileInfo** モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメント情報を更新するには、**SetPdfFileInfo** モジュールを呼び出してください。
 
-Rubyコード
+Ruby コード
 
 ```java
 # The path to the documents directory.
@@ -45,8 +45,8 @@ doc.save(data_dir + "Updated_Information.pdf")
 puts "Update document information, please check output file."
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-ダウンロードВ **PDF ファイル情報の設定 (Aspose.PDF)**В からВ 以下に記載されたソーシャルコーディングサイトのいずれかへ:
+**PDF ファイル情報の設定 (Aspose.PDF)** をダウンロードするには、以下のいずれかのソーシャルコーディングサイトから取得してください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

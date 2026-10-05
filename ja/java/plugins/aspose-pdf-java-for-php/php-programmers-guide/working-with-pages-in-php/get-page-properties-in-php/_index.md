@@ -1,15 +1,15 @@
 ---
-title: "PHP での ページ プロパティの取得"
-linktitle: "PHP での ページ プロパティの取得"
+title: "PHP でのページ プロパティの取得"
+linktitle: "PHP でのページ プロパティの取得"
 type: docs
 weight: 50
 url: /ja/java/get-page-properties-in-php/
 description: Aspose.PDF を使用して、PHP で PDF ドキュメント内の特定ページのプロパティを取得する方法を詳しく解説します。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
 ## Aspose.PDF - ページ プロパティの取得
 
-**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのページ プロパティを取得するには、シンプルに **GetPageProperties** クラスを呼び出してください。
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのページ プロパティを取得するには、**GetPageProperties** クラスを呼び出してください。
 
 PHP コード
 
@@ -43,6 +43,6 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 **実行コードをダウンロード**
 
-ダウンロードВ **ページ プロパティの取得 (Aspose.PDF)**В 以下に記載されたソーシャル コーディング サイトのいずれかから:
+以下のいずれかのソーシャル コーディング サイトから **ページ プロパティの取得 (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

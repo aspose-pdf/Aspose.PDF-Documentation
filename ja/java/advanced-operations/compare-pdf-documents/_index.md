@@ -1,16 +1,16 @@
 ---
-title: JavaでPDFドキュメントを比較
-linktitle: PDFを比較
+title: "Java で PDF ドキュメントを比較"
+linktitle: "PDF を比較"
 type: docs
 weight: 130
 url: /ja/java/compare-pdf-documents/
-description: Aspose.PDF を使用して、サイドバイサイドおよびグラフィカルな差分出力で、Java で PDF ドキュメントを比較する方法を学びます。
-lastmod: "2026-10-05"
+description: "Aspose.PDF を使用して、Java で PDF ドキュメントを比較する方法を学びます。比較結果はサイドバイサイド表示およびグラフィカルな差分出力で確認できます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで視覚的な差分出力を使用してPDFページおよび全文書を比較
+AlternativeHeadline: "Java で視覚的な差分出力を使用して PDF ページおよび全文書を比較"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントを比較する方法を説明します。特定のページまたは PDF 全体を並べて表示する出力で比較する方法、グラフィカルな PDF 差分レポートの生成、およびページ単位の画像差分のエクスポート方法を学びます。
 ---
 Aspose.PDF for Java は、PDF ファイル間の差分を検出するための並べて表示する比較とグラフィカルな比較の両方の API を提供します。
@@ -19,9 +19,9 @@ Aspose.PDF for Java は、PDF ファイル間の差分を検出するための�
 
 特定の PDF ページのペアに対して画像ベースの差分出力が必要な場合は、このサンプルを使用してください。
 
-1. 両方のソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクト。
-1. 使用する [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) ページレベルを取得する [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/)。
-1. 'GraphicalPdfComparer' を使用してページレベルの 'ImagesDifference' を取得してください。
+1. 両方のソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開いてください。
+1. 使用する [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) でページレベルの [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/) を取得してください。
+1. GraphicalPdfComparer を使用してページレベルの ImagesDifference を取得してください。
 1. 生成された差分画像をエクスポートし、比較結果を破棄してください。
 
 ```java
@@ -42,13 +42,13 @@ public static void comparePdfWithGetDifferenceMethod(
 }
 ```
 
-## 特定のページを並べて比較する
+## 特定のページを並べて比較
 
 選択したページだけを比較し、横並びの PDF 結果として保存する場合は、この例を使用してください。
 
-1. 両方のソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクト。
-1. 構成 [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) 必要な比較モード用に。
-1. 選択したページを比較し、出力PDFを保存します。
+1. 両方のソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開いてください。
+1. 必要な比較モード用に [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) を構成してください。
+1. 選択したページを比較し、出力 PDF を保存してください。
 
 ```java
 public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -65,13 +65,13 @@ public static void comparingSpecificPages(Path inputFile1, Path inputFile2, Path
 }
 ```
 
-## PDF文書全体をグラフィカルに比較する
+## PDF 文書全体のグラフィカルへの比較
 
-この例は、文書全体の視覚的な違いを強調するグラフィカルなPDFレポートを生成します。
+この例は、文書全体の視覚的な違いを強調するグラフィカルな PDF レポートを生成します。
 
-1. 両方のソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクト。
-1. 設定 [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) しきい値、色、解像度。
-1. 全文書を比較し、グラフィカルな出力PDFを保存します。
+1. 両方のソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開いてください。
+1. [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) のしきい値、色、解像度を設定してください。
+1. 全文書を比較し、グラフィカルな出力 PDF を保存してください。
 
 ```java
 public static void comparePdfWithCompareDocumentsToPdfMethod(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -87,13 +87,13 @@ public static void comparePdfWithCompareDocumentsToPdfMethod(Path inputFile1, Pa
 }
 ```
 
-## 文書全体を横に並べて比較する
+## 文書全体を横に並べて比較
 
-文書全体をページごとに並べて比較し、サイドバイサイドのPDF出力にしたい場合はこの例を使用してください。
+文書全体をページごとに並べて比較し、サイドバイサイドの PDF 出力にしたい場合はこの例を使用してください。
 
-1. 両方のソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクト。
-1. 構成 [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) 目的の比較動作のために。
-1. 全文書を比較し、結果をPDFとして保存します。
+1. 両方のソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトとして開いてください。
+1. 目的の比較動作用に [SideBySideComparisonOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/sidebysidecomparisonoptions/) を構成してください。
+1. 全文書を比較し、結果を PDF として保存してください。
 
 ```java
 public static void comparingEntireDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

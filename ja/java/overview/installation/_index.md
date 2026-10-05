@@ -4,14 +4,14 @@ linktitle: インストール
 type: docs
 weight: 40
 url: /ja/java/installation/
-description: PDF ドキュメントの操作を開始するための、Aspose.PDF for Python および .NET のインストール手順を段階的に見つけましょう。
-lastmod: "2026-10-05"
+description: "PDF ドキュメントの操作を開始するには、Aspose.PDF for Python および .NET のインストール手順を段階的に確認してください。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Aspose.PDF for Java のインストール
-Abstract: Aspose.PDF for Python via .NET は、Python アプリケーション内で PDF 処理機能を統合するように設計された包括的なライブラリで、32 ビットおよび 64 ビットシステムの両方に対応しています。 このライブラリは、テキストやページの操作、フォーム処理、メタデータの取り扱い、アノテーション、ブックマーク、ウォーターマーク、カスタムフォントの管理など、幅広い文書処理タスクをサポートします。 Python 3.5 以降がインストールされているさまざまなオペレーティングシステムでの使用に適しています。 ライブラリはトライアル版をダウンロードして評価することができ、適切なコードを追加することでライセンス版へ移行します。 トライアル版はフル機能を保持していますが、評価用ウォーターマークが付加され、コレクション要素の操作が4つに制限されます。 ユーザーはこれらの制限を回避するために、30 日間の一時ライセンスをリクエストできます。 Aspose.PDF for Python via .NET は pip を介してインストールでき、最新バージョンへの簡単なアクセスが保証されます。
+Abstract: "Aspose.PDF for Python via .NET は、Python アプリケーション内に PDF 処理機能を統合することを目的とした包括的なライブラリであり、32 ビットおよび 64 ビットシステムの両方に対応しています。このライブラリは、テキストやページの操作、フォーム処理、メタデータの取り扱い、アノテーション、ブックマーク、ウォーターマーク、カスタムフォントの管理など、幅広い文書処理タスクをサポートします。Python 3.5 以降がインストールされたさまざまなオペレーティングシステムで使用できます。トライアル版をダウンロードして評価でき、適切なコードを追加することでライセンス版へ移行します。トライアル版はフル機能を備えていますが、評価用ウォーターマークが付加され、コレクション要素の操作が 4 つに制限されます。これらの制限を回避するには、30 日間の一時ライセンスをリクエストできます。Aspose.PDF for Python via .NET は pip を介してインストールでき、最新バージョンへの簡単なアクセスが保証されます。"
 ---
 ## Aspose.PDF for Java コンポーネント
 
@@ -23,40 +23,40 @@ Abstract: Aspose.PDF for Python via .NET は、Python アプリケーション�
 
 ## 製品説明
 
-**Aspose.PDF for Java** は Java で実装されており、JDK 1.8 以降で動作します。Aspose.PDF for Java は任意のアプリケーションに統合可能で、例えば JSP/JSF の Web アプリケーションや Windows アプリケーションなどがあります。
+**Aspose.PDF for Java** は Java で実装されており、JDK 1.8 以降で動作します。Aspose.PDF for Java は、JSP/JSF の Web アプリケーションや Windows アプリケーションなど、任意のアプリケーションに統合可能です。
 
-**Aspose.PDF for Java** は高速で軽量です。PDF ドキュメントを効率的に作成し、アプリケーションのパフォーマンス向上に貢献します。Aspose.PDF for Java は価格、卓越したパフォーマンス、優れたサポートにより、PDF ドキュメント作成時にお客様のвЂ™ 第一選択となります。
+**Aspose.PDF for Java** は高速かつ軽量であり、PDF ドキュメントを効率的に作成し、アプリケーションのパフォーマンス向上に貢献します。価格、卓越したパフォーマンス、優れたサポートにより、Aspose.PDF for Java は PDF ドキュメント作成時の第一選択肢です。
 このライブラリを使用すると、PDF ファイルをゼロから作成する豊富な機能を実装したり、Adobe Acrobat をインストールせずに既存の PDF ドキュメントを完全に処理したりできます。
 
 ## インストール
 
-## Aspose.PDF for Java を評価する
+## Aspose.PDF for Java の評価
 
 {{% alert color="primary" %}}
 
-ダウンロードできます [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) 評価用です。評価用のダウンロードは購入版のダウンロードと同じです。評価版は、数行のコードを追加するだけでライセンスが付与されます。 [ライセンスを適用する](/pdf/ja/java/licensing/).
+評価用に [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) をダウンロードできます。評価版のダウンロードは、購入版と同じものです。評価版は、[ライセンスの適用](/pdf/ja/java/licensing/) ため数行のコードを追加するだけでライセンスが付与されます。
 
 {{% /alert %}}
 
-Aspose.PDF の評価版は製品の機能をすべて提供しますが、2 つの制限があります：
+Aspose.PDF の評価版は製品の機能をすべて提供しますが、以下の2つの制限があります。
 
 - 評価用の透かしが挿入されます。
-- 任意のコレクションの要素は最大で4つまで表示/編集できます。
+- 任意のコレクションの要素は最大で4つまで表示・編集できます。
 - **評価用ウォーターマークを示すドキュメント**
 
 {{% alert color="primary" %}}
 
-評価版の制限なしで Aspose.PDF for Java をテストしたい場合は、30 日間の Temporary License をリクエストすることもできます。ご参照ください。 [Temporary License の取得方法は？](https://purchase.aspose.com/temporary-license)
+評価版の制限なしで Aspose.PDF for Java をテストしたい場合は、30日間の Temporary License をリクエストすることもできます。詳しくは [Temporary License の取得方法は？](https://purchase.aspose.com/temporary-license) をご参照ください。
 
 {{% /alert %}}
 
-## Aspose Repository から Aspose.PDF for Java のインストール
+## Aspose Repository からの Aspose.PDF for Java のインストール
 
-Aspose はすべての Java API をВ にホストしています [Aspose リポジトリ](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). あなたはВ 簡単に Aspose.PDF for Java API を Maven プロジェクトで直接使用できます。シンプルな構成で。
+Aspose はすべての Java API を [Aspose リポジトリ](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) にホストしています。シンプルな構成で、Aspose.PDF for Java API を Maven プロジェクトで直接使用できます。
 
-### Aspose リポジトリ構成を指定する
+### Aspose リポジトリ構成の指定
 
-まず、Maven の pom.xml に Aspose リポジトリの構成/場所を次のように指定する必要があります：
+まず、Maven の `pom.xml` に Aspose リポジトリの構成および場所を次のように指定してください。
 
 ```xml
  <repositories>
@@ -68,9 +68,9 @@ Aspose はすべての Java API をВ にホストしています [Aspose リ�
 </repositories>
 ```
 
-### Aspose.PDF for Java API の依存関係を定義する
+### Aspose.PDF for Java API の依存関係の定義
 
-次に、pom.xml に Aspose.PDF for Java API の依存関係V を以下のように定義します:
+次に、`pom.xml` に Aspose.PDF for Java API の依存関係を以下のように定義してください。
 
 ```xml
  <dependencies>
@@ -82,13 +82,13 @@ Aspose はすべての Java API をВ にホストしています [Aspose リ�
 </dependencies>
 ```
 
-上記の手順を実行した後、Aspose.PDF for Java の依存関係が最終的に Maven プロジェクトに定義されます。
+上記の手順を実行した後、Aspose.PDF for Java の依存関係が Maven プロジェクトに最終的に定義されます。
 
 ### JDK 11 互換性と使用ガイドライン
 
-この API は Java 11 環境向けに最適化されており、すべてのテストと機能は正常に動作します。ただし、一部のクラスについては、JRE から削除されたクラス javax.xml.bind.annotation.adapters.HexBinaryAdapter のクラスパスを追加するために外部依存関係を追加する必要があります。
+この API は Java 11 環境向けに最適化されており、すべてのテストおよび機能が正常に動作します。ただし、一部のクラスについては、JRE から削除されたクラス `javax.xml`.bind.annotation.adapters.HexBinaryAdapter のクラスパスを追加するために、外部依存関係を追加する必要があります。
 
-例えば:
+例：
 
 ```xml
  <dependency>

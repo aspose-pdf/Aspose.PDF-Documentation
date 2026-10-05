@@ -1,23 +1,23 @@
 ---
-title: "Javaを使用したPDFに画像の追加"
+title: "Java を使用した PDF への画像の追加"
 linktitle: "画像の追加"
 type: docs
 weight: 10
 url: /ja/java/add-image-to-existing-pdf-file/
-description: Javaで既存のPDFファイルに画像を追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java を使用して既存の PDF ファイルに画像を追加する方法を学習してください。"
+lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Javaで既存のPDFファイルに画像を追加する
-Abstract: このガイドでは、Aspose.PDF for Java を使用して PDF ドキュメントに画像を追加する方法を示します。画像を固定座標に配置する方法、低レベルのページ演算子を使用して画像を追加する方法、アクセシビリティのために代替テキストを設定する方法、そして Flate 圧縮で画像データを埋め込む方法について説明します。
+AlternativeHeadline: "Java での 既存の PDF ファイルへの画像の追加"
+Abstract: "このガイドでは、Aspose.PDF for Java を使用して PDF ドキュメントに画像を追加する方法を示します。画像を固定座標に配置する方法、低レベルのページ演算子を使用して画像を追加する方法、アクセシビリティのために代替テキストを設定する方法、および Flate 圧縮で画像データを埋め込む方法について説明します。"
 ---
 Aspose.PDF for Java は、高レベルの画像配置と低レベルの演算子ベースの描画の両方をサポートしています。
 
-## ページ座標で画像の追加
+## ページ座標による画像の追加
 
 PDF ページ上の固定位置に画像を配置する必要がある場合は、このサンプルを使用してください。
 
-1. 新しい PDF を作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ページを追加してください。
-1. 呼び出し `page.addImage()` ソース画像パスとターゲット矩形を使用して
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
+1. `page.addImage()` を呼び出して、ソース画像のパスとターゲット矩形を指定してください。
 1. 生成された PDF ファイルを保存してください。
 
 ```java
@@ -74,13 +74,13 @@ public static void addImageUsingOperators(Path imageFile, Path outputFile) throw
 }
 ```
 
-## 画像を追加し、代替テキストの設定
+## 画像の追加と代替テキストの設定
 
 画像にスクリーンリーダー用のアクセシビリティメタデータを含める必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、画像をページに追加してください。
-1. 挿入されたものを取得する [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) ページリソースから。
-1. 代替テキストを設定し、PDFを保存してください。
+1. 挿入された [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) をページリソースから取得してください。
+1. 代替テキストを設定し、PDF を保存してください。
 
 ```java
 public static void addImageSetAlternativeTextForImage(Path imageFile, Path outputFile) {
@@ -105,7 +105,7 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 Flate 圧縮を使用して画像データを埋め込みたい場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、画像ストリームを開いてください。
-1. 画像をページリソースに追加する `ImageFilterType.Flate`。
+1. 画像をページリソースに `ImageFilterType.Flate` で追加してください。
 1. ページ演算子を使用して画像を描画し、結果を保存してください。
 
 ```java

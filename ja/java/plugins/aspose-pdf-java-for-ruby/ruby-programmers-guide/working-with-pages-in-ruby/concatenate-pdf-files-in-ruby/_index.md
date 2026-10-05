@@ -1,17 +1,17 @@
 ---
-title: RubyでPDFファイルを連結する
-linktitle: RubyでPDFファイルを連結する
+title: "Ruby での PDF ファイルの連結"
+linktitle: "Ruby での PDF ファイルの連結"
 type: docs
 weight: 10
 url: /ja/java/concatenate-pdf-files-in-ruby/
-description: RubyとAspose.PDFを使用して、複数のPDFを効率的に単一のドキュメントに結合します。
-lastmod: "2026-10-05"
+description: "Ruby と Aspose.PDF を使用して、複数の PDF を効率的に単一のドキュメントに結合できます。"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - PDFファイルの連結
+## Aspose.PDF - PDF ファイルの連結
 
-**Aspose.PDF Java for Ruby** を使用してPDFファイルを連結するには、単に **ConcatenatePdfFiles** モジュールを呼び出すだけです。
+**Aspose.PDF Java for Ruby** を使用して PDF ファイルを連結するには、**ConcatenatePdfFiles** モジュールを呼び出してください。
 
-Rubyコード
+Ruby コード
 
 ```java
 # The path to the documents directory.
@@ -37,8 +37,8 @@ pdf1.save(data_dir+ "Concatenate_output.pdf")
 puts "New document has been saved, please check the output file"
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-ダウンロード **Concatenate PDF Files (Aspose.PDF)** 以下に記載されたソーシャルコーディングサイトのいずれかから:
+ダウンロード **Concatenate PDF Files (Aspose.PDF)** 以下に記載されたソーシャルコーディングサイトのいずれかから:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

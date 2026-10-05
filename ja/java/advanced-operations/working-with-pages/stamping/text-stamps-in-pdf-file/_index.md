@@ -1,16 +1,16 @@
 ---
-title: "Java での PDFにテキストスタンプの追加"
-linktitle: PDFファイルのテキストスタンプ
+title: "Java での PDF へのテキストスタンプの追加"
+linktitle: "PDF ファイルのテキストスタンプ"
 type: docs
 weight: 20
 url: /ja/java/text-stamps-in-the-pdf-file/
-description: JavaでPDF文書にテキストスタンプを追加する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で PDF 文書にテキストスタンプを追加する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaを使用してPDFファイルにテキストスタンプを追加する
+AlternativeHeadline: "Java を使用した PDF ファイルへのテキストスタンプの追加"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ファイルにテキストスタンプを追加する方法を説明します。背景テキストスタンプの作成、位置指定、回転、そして Font、サイズ、スタイル、色のカスタマイズについてカバーしています。
 ---
 PDF ページに目に見えるラベルやウォーターマークを追加する必要がある場合は、テキストスタンプを使用してください。
@@ -20,7 +20,7 @@ PDF ページに目に見えるラベルやウォーターマークを追加す�
 ページに回転したテキストスタンプをカスタムスタイルで表示する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 作成する [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) 配置とテキストの外観を設定してください。
+1. [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) オブジェクトを作成し、配置とテキストの外観を設定してください。
 1. スタンプを対象ページに追加し、ドキュメントを保存してください。
 
 ```java

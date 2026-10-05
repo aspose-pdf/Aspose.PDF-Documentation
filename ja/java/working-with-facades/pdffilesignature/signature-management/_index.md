@@ -5,14 +5,14 @@ type: docs
 weight: 80
 url: /ja/java/signature-management/
 description: PdfFileSignature ファサードを使用して、Java で既存の PDF 署名を削除する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 draft: false
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java で PDF 署名を削除する
-Abstract: Aspose.PDF for Java を使用して、署名済み PDF から署名を削除する方法を学びます。現在の Java のサンプルセットでは、名前で既存の署名を削除し、更新されたドキュメントを保存する方法をカバーしています。関連する署名フィールドをクリーンアップする別のサンプルは含まれていません。
+AlternativeHeadline: "Java での PDF 署名の削除"
+Abstract: "Aspose.PDF for Java を使用して、署名済み PDF から署名を削除する方法を学習します。現在の Java サンプルセットでは、名前で既存の署名を削除し、更新されたドキュメントを保存する方法をカバーしています。関連する署名フィールドをクリーンアップする別のサンプルは含まれていません。"
 ---
 ## 署名の削除
 
@@ -20,10 +20,10 @@ Abstract: Aspose.PDF for Java を使用して、署名済み PDF から署名を
 
 ### 手順
 
-1. 作成 `PdfFileSignature` インスタンス化し、署名済みPDFをバインドしてください。
+1. `PdfFileSignature` インスタンスを作成し、署名済み PDF をバインドしてください。
 2. 署名コレクションを読み取り、署名名を選択してください。
-3. 呼び出す `removeSignature` その名前で。
-4. 更新されたファイルを保存し、ファサードオブジェクトを閉じます。
+3. その名前で `removeSignature` を呼び出してください。
+4. 更新されたファイルを保存し、ファサードオブジェクトを閉じてください。
 
 ### Java の例
 

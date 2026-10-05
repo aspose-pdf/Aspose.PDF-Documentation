@@ -1,13 +1,13 @@
 ---
-title: "Python での 既存の PDF に TOC の追加"
-linktitle: "Python での 既存の PDF に TOC の追加"
+title: "Python での既存の PDF への TOC の追加"
+linktitle: "Python での既存の PDF への TOC の追加"
 type: docs
 weight: 20
 url: /ja/java/add-toc-to-existing-pdf-in-python/
-description: Python と Aspose.PDF を使用して、既存の PDF ドキュメントに目次（TOC）を追加し、簡単にナビゲートできる方法を学びます。
-lastmod: "2026-10-05"
+description: "Python と Aspose.PDF を使用して、既存の PDF ドキュメントに目次（TOC）を追加し、簡単にナビゲートできるようになります。"
+lastmod: "2026-10-06"
 ---
-**Aspose.PDF Java for Python** を使用して PDF ドキュメントに TOC を追加するには、単に **AddToc** クラスを呼び出します。
+**Aspose.PDF Java for Python** を使用して PDF ドキュメントに TOC を追加するには、単に **AddToc** クラスを呼び出してください。
 
 ```python
 
@@ -63,6 +63,6 @@ print "Added TOC Successfully, please check the output file."
 
 **実行コードをダウンロード**
 
-ダウンロード **Add TOC (Aspose.PDF)** から 以下に記載されたソーシャルコーディングサイトから:
+ダウンロード **Add TOC (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトから：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddToc/AddToc.py)

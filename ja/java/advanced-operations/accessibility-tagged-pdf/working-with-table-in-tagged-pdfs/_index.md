@@ -1,11 +1,11 @@
 ---
-title: "Java での タグ付けされたPDFのテーブルの操作"
-linktitle: "タグ付けされたPDFのテーブルの操作"
+title: "Java でのタグ付けされた PDF のテーブルの操作"
+linktitle: "タグ付けされた PDF のテーブルの操作"
 type: docs
 weight: 40
 url: /ja/java/working-with-table-in-tagged-pdfs/
-description: Java と Aspose.PDF を使用して、タグ付けされた PDF のアクセシブルなテーブルの操作方法を学びます。テーブル構造、セルのスパン、スタイリング、行設定、配置についてです。
-lastmod: "2026-10-05"
+description: "Java と Aspose.PDF を使用して、タグ付けされた PDF のアクセシブルなテーブルの操作方法を学びます。テーブル構造、セルのスパン、スタイリング、行設定、配置について説明します。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Tagged table APIs を使用すると、明示的なヘッダー、ボディ行�
 
 ヘッダー、本文、フッター、テーブル要約メタデータを含む基本的なアクセシブルテーブルが必要な場合は、この例を使用してください。
 
-1. 新しい タグ付きPDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、追加する [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/)。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、[TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/) を追加してください。
 1. テーブルの境界線を設定し、共有ヘルパーメソッドでコンテンツを入力してください。
 1. テーブルの summary 属性を設定し、ドキュメントを保存してください。
 
@@ -47,9 +47,9 @@ public static void createTable(Path outputFile) {
 
 この例では、色、罫線、列のサイズ設定、行の繰り返し、配置などのテーブルレベルの書式設定を適用します。
 
-1. 新しいタグ付きPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) テーブル要素を追加してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、テーブル要素を追加してください。
 1. テーブルレベルのビジュアルとレイアウト設定を構成してください。
-1. テーブルを入力し、文書を保存してください。
+1. テーブルを入力し、ドキュメントを保存してください。
 
 ```java
 public static void styleTable(Path outputFile) {
@@ -92,7 +92,7 @@ public static void styleTable(Path outputFile) {
 
 各行がそれぞれ独自のメタデータ、境界線、高さ設定、セルのデフォルトを持つべき場合は、この例を使用してください。
 
-1. 新しいタグ付きPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) ヘッド、ボディ、フット用のテーブルセクションを追加してください。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ヘッド、ボディ、フット用のテーブルセクションを追加してください。
 1. 行を作成し、境界線、余白、高さ、ページの動作などの行レベル設定を構成してください。
 1. 行にセルを配置し、ドキュメントを保存してください。
 
@@ -152,8 +152,8 @@ public static void styleTableRow(Path outputFile) {
 
 この例では、共有ヘルパーメソッドを使用して、セルレベルの書式設定と結合セルを持つテーブルを作成します。
 
-1. 新しい タグ付きPDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
-1. テーブル要素を追加し、セルのスタイリングを有効にした状態でヘルパーメソッドを使用してそれを埋め込みます。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. テーブル要素を追加し、セルのスタイリングを有効にした状態でヘルパーメソッドを使用してそれを埋め込んでください。
 1. ドキュメントを保存してください。
 
 ```java
@@ -172,12 +172,12 @@ public static void styleTableCell(Path outputFile) {
 }
 ```
 
-## タグ付けされたテーブルの位置を調整する
+## タグ付けされたテーブルの位置の調整
 
 タグ付きテーブルをページ上の明示的な位置に配置する必要がある場合は、この例を使用してください。
 
-1. 新しいタグ付きPDFを作成する [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) テーブル要素を追加してください。
-1. 構成 [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) テーブル用に。
+1. 新しいタグ付き PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、テーブル要素を追加してください。
+1. 構成 [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) をテーブル用に設定してください。
 1. 位置設定を適用し、テーブルにデータを入力し、ドキュメントを保存してください。
 
 ```java
@@ -212,7 +212,7 @@ public static void adjustTablePosition(Path outputFile) {
 
 1. テーブルのヘッダー、ボディ、フッターセクションを作成してください。
 1. ヘッダー、本文、フッターの行にアクセシブルなセル要素を配置してください。
-1. オプションで、スタイルが適用されたセル、結合されたセル、テキストの状態値を構成します。
+1. オプションで、スタイルが適用されたセル、結合されたセル、テキストの状態値を構成してください。
 
 ```java
 private static void fillTable(TableElement tableElement, int rowCount, int colCount, boolean styleCells) {

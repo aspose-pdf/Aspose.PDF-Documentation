@@ -1,15 +1,15 @@
 ---
-title: "PHP での PDFファイル情報の設定"
-linktitle: "PHP での PDFファイル情報の設定"
+title: "PHP での PDF ファイル情報の設定"
+linktitle: "PHP での PDF ファイル情報の設定"
 type: docs
 weight: 90
 url: /ja/java/set-pdf-file-information-in-php/
 description: Aspose.PDF を使用して PHP で PDF ドキュメントのメタデータなど、さまざまなファイルプロパティを設定する方法を学びます。
-lastmod: "2026-10-05"
+lastmod: "2026-10-06"
 ---
-## Aspose.PDF - PDFファイル情報の設定
+## Aspose.PDF - PDF ファイル情報の設定
 
-**Aspose.PDF Java for PHP** を使用して PDF ドキュメント情報を更新するには、単に **SetPdfFileInfo** クラスを呼び出すだけです。
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメント情報を更新するには、**SetPdfFileInfo** クラスを呼び出すだけで済みます。
 
 PHPコード
 
@@ -37,6 +37,6 @@ print "Update document information, please check output file.";
 
 **コードのダウンロード**
 
-Download\u0412\u00A0**PDF ファイル情報の設定 (Aspose.PDF)**\u0412\u00A0以下に示すソーシャルコーディングサイトのいずれかから:
+**PDF ファイル情報の設定 (Aspose.PDF)** を、以下のいずれかのソーシャルコーディングサイトからダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)

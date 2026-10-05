@@ -1,26 +1,26 @@
 ---
-title: "Java での PDFドキュメントの操作"
-linktitle: "PDFドキュメントの操作"
+title: "Java での PDF ドキュメントの操作"
+linktitle: "PDF ドキュメントの操作"
 type: docs
 weight: 20
 url: /ja/java/manipulate-pdf-document/
-description: JavaでPDFドキュメントを検証、構造化、変更する方法を学びます。TOCの管理やPDF/Aのチェックを含みます。
-lastmod: "2026-10-05"
+description: "Java で PDF ドキュメントを検証、構造化、変更する方法を学習します。TOC の管理や PDF/A 検証を含みます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: JavaでPDFドキュメントを検証、再構築、フラット化します。
-Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントを操作する方法を説明します。PDF/A 準拠の検証、目次の追加とカスタマイズ、TOC ページ番号の非表示またはカスタマイズ、期限スクリプトの割り当て、インタラクティブ フォーム フィールドのフラッティングについて取り上げています。
+AlternativeHeadline: "Java での PDF ドキュメントの検証、再構築、およびフラット化"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメントを操作する方法を説明します。PDF/A 準拠の検証、目次の追加とカスタマイズ、TOC ページ番号の非表示またはカスタマイズ、有効期限スクリプトの割り当て、インタラクティブフォームフィールドのフラット化について取り上げています。"
 ---
-Aspose.PDF for Java は単純なページ編集を超える文書構造操作を含みます。
+Aspose.PDF for Java は、単純なページ編集を超えたドキュメント構造操作をサポートしています。
 
 ## PDF/A-1a 準拠性の検証
 
-ドキュメントが PDF/A-1a アーカイブ標準に適合しているか確認する必要がある場合は、この例を使用してください。
+ドキュメントが PDF/A-1a アーカイブ標準に適合しているかを確認する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 必要な項目に対して検証を実行する [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) ターゲット。
+1. 必要な [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) を対象に検証を実行してください。
 1. 検証レポートを指定された出力パスに保存してください。
 
 ```java
@@ -36,8 +36,8 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 このバリエーションは、同じソースドキュメントを PDF/A-1b 準拠レベルに対して検証します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 検証メソッドを呼び出す際に [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) PDF/A-1b の値。
-1. 検証結果を出力レポートファイルに書き込む。
+1. 検証メソッドを呼び出す際に [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) の PDF/A-1b の値を指定してください。
+1. 検証結果を出力レポートファイルに書き込んでください。
 
 ```java
 public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
@@ -52,8 +52,8 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 ドキュメントに生成された目次ページを含め、コンテンツページへのリンクを設定したい場合は、このアプローチを使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 新しい目次を挿入する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) そしてそれを構成する [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)。
-1. 作成 [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 目的ページを指すエントリ。
+1. 新しい目次を挿入する [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を作成し、その [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) を設定してください。
+1. 目的のページを指す [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) エントリを作成してください。
 1. 更新されたドキュメントを保存してください。
 
 ```java
@@ -84,13 +84,13 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 }
 ```
 
-## TOCのレベルと書式設定をカスタマイズ
+## TOC のレベルと書式設定のカスタマイズ
 
 この例では、複数の目次レベルに異なるビジュアル設定を割り当てる方法を示しています。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 目次を追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) そして設定する [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) 配列をフォーマットしてください。
-1. サンプルを作成 [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 異なるレベルのエントリ。
+1. 目次用の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加し、[TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) の書式設定配列を設定してください。
+1. 異なるレベルの [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) エントリのサンプルを作成してください。
 1. フォーマット済みの目次を含むドキュメントを保存してください。
 
 ```java
@@ -138,13 +138,13 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 }
 ```
 
-## 目次のページ番号を非表示にする
+## 目次のページ番号の非表示
 
 目次にページ番号なしでエントリのタイトルを表示する必要がある場合は、この例を使用してください。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. 目次を追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ページ番号を無効にする [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)。
-1. 必要なものを作成する [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) エントリを作成し、コンテンツページに追加してください。
+1. 目次用の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加し、[TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) でページ番号を無効にしてください。
+1. 必要な [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) エントリを作成し、コンテンツページに追加してください。
 1. 更新されたドキュメントを保存してください。
 
 ```java
@@ -184,13 +184,13 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 }
 ```
 
-## TOCページ番号のプレフィックスをカスタマイズする
+## TOC ページ番号のプレフィックスのカスタマイズ
 
 この例では、生成された目次に表示されるページ番号にカスタムプレフィックスを追加します。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. TOC を挿入 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) そして、目的のページ番号プレフィックスを設定します [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)。
-1. 作成 [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 各ページを指すエントリ。
+1. TOC を [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) に挿入し、目的のページ番号プレフィックスを [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) に設定してください。
+1. 各ページを指す [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) エントリを作成してください。
 1. 更新されたドキュメントを保存してください。
 
 ```java
@@ -224,8 +224,8 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 
 ドキュメントを開いたときに JavaScript を実行し、特定の日付以降に有効期限の警告を表示する必要がある場合は、このアプローチを使用してください。
 
-1. ソース PDF を開く [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 必要なコンテンツをすべて追加してください。
-1. 作成する [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) 有効期限ロジックと共に。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) で開き、必要なコンテンツをすべて追加してください。
+1. 有効期限ロジックを含む [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) を作成してください。
 1. スクリプトを文書のオープン アクションに割り当て、出力ファイルを保存してください。
 
 ```java
@@ -247,13 +247,13 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 }
 ```
 
-## 入力可能な PDF フォームをフラット化する
+## 入力可能な PDF フォームのフラット化
 
-この例は、インタラクティブなフォームフィールドを静的なページコンテンツに変換するため、結果として得られるドキュメントはもうフォームとして編集できなくなります。
+この例では、インタラクティブなフォームフィールドを静的なページ コンテンツに変換します。そのため、変換後のドキュメントはフォームとして編集できなくなります。
 
 1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
 1. ドキュメントにフォームウィジェットが含まれているか確認してください。
-1. 各項目をフラット化 [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) aによって表される [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. 各 [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) を、[WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/) で表されるものとしてフラット化してください。
 1. フラット化されたドキュメントを保存してください。
 
 ```java

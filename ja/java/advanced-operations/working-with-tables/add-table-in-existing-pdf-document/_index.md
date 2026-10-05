@@ -1,26 +1,26 @@
 ---
-title: "Java での PDFにテーブルの追加"
+title: "Java での PDF へのテーブルの追加"
 linktitle: テーブルの追加
 type: docs
 weight: 10
 url: /ja/java/adding-tables/
-description: Javaで既存の PDF 文書にテーブルを追加し、構成する方法を学びます。
-lastmod: "2026-10-05"
+description: "Java で既存の PDF ドキュメントにテーブルを追加し、構成する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Javaで PDF 文書にテーブルを追加し、書式設定します。
+AlternativeHeadline: "Java での PDF ドキュメントへのテーブルの追加と書式設定"
 Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントにテーブルを追加および構成する方法を説明します。テーブルの作成、罫線、余白、パディング、行および列の結合、AutoFit の動作、セルへの画像挿入、行と列の繰り返し、HTML および LaTeX フラグメント、そして複数ページのレンダリング制御について解説します。
 ---
-Aspose.PDF for Java は豊富な `Table` レイアウトとコンテンツのカスタマイズが可能なテーブル作成用 API。
+Aspose.PDF for Java は、レイアウトおよびコンテンツのカスタマイズが可能な豊富な `Table` API を提供します。
 
 ## 基本的なテーブルの作成
 
 シンプルなテーブルで均一な罫線とテキストセルを追加する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、境界線を設定してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、境界線を設定してください。
 1. 行とセルを追加し、テーブルをページに添付して、ドキュメントを保存してください。
 
 ```java
@@ -47,8 +47,8 @@ public static void createTable(Path outputFile) {
 テーブルに行や列をまたがる結合セルが必要な場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして行を追加してください。
-1. 設定 `ColSpan` と `RowSpan` 対象セル上で、PDFを保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、行を追加してください。
+1. `ColSpan` と `RowSpan` を対象セルに設定し、PDF を保存してください。
 
 ```java
 public static void addRowspanOrColspan(Path outputFile) {
@@ -98,7 +98,7 @@ public static void addRowspanOrColspan(Path outputFile) {
 ボーダー、パディング、およびセルの折り返し動作を設定する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして幅、境界線、パディングを設定してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、幅、境界線、パディングを設定してください。
 1. 行を追加し、結果の文書を保存してください。
 
 ```java
@@ -128,13 +128,13 @@ public static void addBorders(Path outputFile) {
 }
 ```
 
-## 自動フィットテーブルレイアウトを有効にする
+## 自動フィットテーブルレイアウトの有効化
 
-テーブルが利用可能なページ幅に自動的に合わせて調整されるべき場合は、この例を使用してください。
+テーブルをページの利用可能な幅に自動的に合わせて調整する場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして設定 `ColumnAdjustment.AutoFitToWindow`。
-1. サンプル行を追加してPDFを保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) オブジェクトを作成し、`ColumnAdjustment.AutoFitToWindow` を設定してください。
+1. サンプル行を追加して PDF を保存してください。
 
 ```java
 public static void autoFit(Path outputFile) {
@@ -161,13 +161,13 @@ public static void autoFit(Path outputFile) {
 }
 ```
 
-## テーブルセルに画像の追加
+## テーブルセルへの画像の追加
 
 テーブルがセルの1つにラスター画像コンテンツを表示する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) テキストと画像セルを含む行を追加してください。
-1. 構成する [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) サイズを設定し、ドキュメントを保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) オブジェクトを作成し、テキストと画像のセルを含む行を追加してください。
+1. [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) のサイズを設定し、ドキュメントを保存してください。
 
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
@@ -190,13 +190,13 @@ public static void addImage(Path imageFile, Path outputFile) {
 }
 ```
 
-## テーブルセル内にSVG画像の追加
+## テーブルセル内に SVG 画像の追加
 
 テーブルが SVG ファイルを行ごとにレンダリングする必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして SVG ファイルを反復処理してください。
-1. 画像ごとに1行追加し、SVGを設定します [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/)、PDFを保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、SVG ファイルを反復処理してください。
+1. 画像ごとに 1 行を追加し、SVG を [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) に設定して、PDF を保存してください。
 
 ```java
 public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
@@ -222,11 +222,11 @@ public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
 
 ## HTML フラグメントをテーブルセルに追加
 
-テーブルの内容にインラインHTMLフォーマットを含める必要がある場合は、この例を使用してください。
+テーブルの内容にインライン HTML 書式を含める必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、境界線を設定してください。
-1. 追加 [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) オブジェクトをセルに追加し、ドキュメントを保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、境界線を設定してください。
+1. [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) オブジェクトをセルに追加し、ドキュメントを保存してください。
 
 ```java
 public static void addHtmlFragments(Path outputFile) {
@@ -249,11 +249,11 @@ public static void addHtmlFragments(Path outputFile) {
 
 ## テーブルセルに LaTeX フラグメントの追加
 
-テーブルの内容が TeX または LaTeX 式をレンダリングすべき場合は、この例を使用してください。
+テーブルの内容に TeX または LaTeX 式をレンダリングする必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) ボーダー付き。
-1. 追加 [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) オブジェクトをセルに配置し、出力ファイルを保存してください。
+1. ボーダー付きの [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成してください。
+1. [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) オブジェクトをセルに配置し、出力ファイルを保存してください。
 
 ```java
 public static void addLatexFragments(Path outputFile) {
@@ -274,13 +274,13 @@ public static void addLatexFragments(Path outputFile) {
 }
 ```
 
-## テーブルを新しいページに強制的に配置する
+## テーブルの新しいページに強制的への配置
 
 大きなテーブルの後、2番目のテーブルを別のページで開始する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページ設定を構成してください。
-1. 最初の大きなものを構築する [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そしてそれをページに追加してください。
-1. 2番目のテーブルを作成し、設定 `InNewPage`、そして文書を保存してください。
+1. 最初の大きな [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を構築し、それをページに追加してください。
+1. 2番目のテーブルを作成し、`InNewPage` を設定して、ドキュメントを保存してください。
 
 ```java
 public static void addTableOnNewPage(Path outputFile) {
@@ -318,10 +318,10 @@ public static void addTableOnNewPage(Path outputFile) {
 
 ## 繰り返し列を含む縦方向に分割されたテーブルの作成
 
-幅広のテーブルを縦方向に続け、キー列を繰り返す場合はこの例を使用してください。
+幅広いテーブルを縦方向に続け、キー列を繰り返す場合はこの例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、繰り返し列で垂直ブレークを設定してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、繰り返し列で垂直ブレークを設定してください。
 1. ヘッダーとデータ行を追加し、ドキュメントを保存してください。
 
 ```java
@@ -364,12 +364,12 @@ public static void addTableHideBorders(Path outputFile) {
 }
 ```
 
-## ボーダーとパディングの例を再利用する
+## 枠線とパディングの例の再利用
 
 マージンとパディングのシナリオで共有ボーダーの例に委任すべき場合は、このヘルパーを使用してください。
 
 1. 既存のテーブルのボーダーとパディングのメソッドを呼び出してください。
-1. コードを重複させずに同じテーブルレイアウトロジックを再利用する。
+1. コードを重複させずに、同じテーブルレイアウトロジックを再利用してください。
 
 ```java
 public static void addMarginsOrPadding(Path outputFile) {
@@ -382,8 +382,8 @@ public static void addMarginsOrPadding(Path outputFile) {
 テーブルが標準の長方形の枠ではなく、角が丸いスタイルを使用すべき場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、丸みを帯びた枠線設定を構成してください。
-1. テーブルに行を追加して PDF を保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) オブジェクトを作成し、丸みを帯びた枠線設定を構成してください。
+1. テーブルに行を追加し、PDF を保存してください。
 
 ```java
 public static void createTableWithRoundCorner(Path outputFile) {
@@ -411,7 +411,7 @@ public static void createTableWithRoundCorner(Path outputFile) {
 マルチページテーブルでヘッダー行を各続きページに繰り返す必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 垂直方向に壊れたものを作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、繰り返し行数とスタイルを設定してください。
+1. 垂直方向に分割される [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) オブジェクトを作成し、繰り返し行数とスタイルを設定してください。
 1. ヘッダー行とデータ行を追加し、ドキュメントを保存してください。
 
 ```java
@@ -458,11 +458,11 @@ public static void addRepeatingRows(Path outputFile) {
 
 ## 幅の広いテーブルに繰り返し列の追加
 
-テーブルが同じページで垂直に分割され、最初の列が繰り返されるべき場合に、この例を使用してください。
+テーブルが同じページ内で垂直に分割され、最初の列が繰り返される必要がある場合に、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページサイズを設定してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、繰り返し列と自動調整動作を設定してください。
-1. ヘッダーとデータ行を追加し、PDFを保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、繰り返し列と自動調整動作を設定してください。
+1. ヘッダーとデータ行を追加し、PDF を保存してください。
 
 ```java
 public static void addRepeatingColumns(Path outputFile) {
@@ -504,11 +504,11 @@ public static void addRepeatingColumns(Path outputFile) {
 
 ## テーブルの行の間に改ページの挿入
 
-特定のテーブル行が新しいページで開始されるべき場合は、この例を使用してください。
+特定のテーブル行が新しいページで開始される必要がある場合に、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、多くの行を埋めます。
-1. 選択した行にマークを付ける `InNewPage` そしてドキュメントを保存します。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) を作成し、多くの行を追加してください。
+1. 選択した行に `InNewPage` を設定し、ドキュメントを保存してください。
 
 ```java
 public static void insertPageBreak(Path outputFile) {
@@ -538,8 +538,8 @@ public static void insertPageBreak(Path outputFile) {
 セルのテキストを異なる回転角度で表示する必要がある場合は、この例を使用してください。
 
 1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、ページを追加してください。
-1. 作成 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) そして、複数のセルを含む行を追加してください。
-1. 回転を作成 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) オブジェクトをセルに追加し、PDFを保存してください。
+1. [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) オブジェクトを作成し、複数のセルを含む行を追加してください。
+1. 回転させた [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) オブジェクトを作成し、セルに追加して PDF を保存してください。
 
 ```java
 public static void rotatedTextTable(Path outputFile) {
