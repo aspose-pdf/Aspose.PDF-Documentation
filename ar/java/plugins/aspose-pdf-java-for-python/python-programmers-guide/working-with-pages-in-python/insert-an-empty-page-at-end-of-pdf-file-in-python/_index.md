@@ -1,11 +1,11 @@
 ---
-title: إدراج صفحة فارغة في نهاية ملف PDF في بايثون
-linktitle: إدراج صفحة فارغة في نهاية ملف PDF في بايثون
+title: إدراج صفحة فارغة في نهاية ملف PDF في Python
+linktitle: إدراج صفحة فارغة في نهاية ملف PDF في Python
 type: docs
 weight: 60
 url: /ar/java/insert-an-empty-page-at-end-of-pdf-file-in-python/
-description: اكتشف كيف يمكنك إدراج صفحة فارغة في نهاية مستند PDF باستخدام بايثون مع Aspose.PDF لتوسيع المستند بسهولة.
-lastmod: "2026-10-01"
+description: اكتشف كيف يمكنك إدراج صفحة فارغة في نهاية مستند PDF باستخدام Python مع Aspose.PDF لتوسيع المستند بسهولة.
+lastmod: "2026-10-05"
 ---
 لإدراج صفحة فارغة في نهاية مستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة استدعِ الفئة **InsertEmptyPageAtEndOfFile**.
 
@@ -24,8 +24,8 @@ print "Empty page added successfully!"
 
 ```
 
-**تحميل الكود التشغيلي**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تحميل **Insert an Empty Page at End of PDF File (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **Insert an Empty Page at End of PDF File (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/InsertEmptyPageAtEndOfFile/InsertEmptyPageAtEndOfFile.py)

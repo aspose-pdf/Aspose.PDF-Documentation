@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/add-layers-to-pdf-file-in-ruby/
 description: تعلم كيفية إضافة طبقات إلى ملف PDF في Ruby باستخدام Aspose.PDF لتحسين بنية المستند والتحكم في الرؤية.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - إضافة طبقات
 
@@ -71,6 +71,6 @@ puts "Added Layers Successfully, please check the output file."
 
 ## تنزيل الكود القائم
 
-تحميلВ **Add Layers (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **Add Layers (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

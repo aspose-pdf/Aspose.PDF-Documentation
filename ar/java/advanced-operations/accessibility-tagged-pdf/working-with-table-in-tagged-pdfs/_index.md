@@ -1,11 +1,11 @@
 ---
-title: العمل مع الجداول في ملفات PDF الموسومة في جافا
+title: العمل مع الجداول في ملفات PDF الموسومة في Java
 linktitle: العمل مع الجدول في ملفات PDF الموسومة
 type: docs
 weight: 40
 url: /ar/java/working-with-table-in-tagged-pdfs/
 description: تعلم كيفية العمل مع الجداول القابلة للوصول في ملفات PDF ذات العلامات بلغة Java باستخدام Aspose.PDF، بما في ذلك هيكل الجدول، امتدادات الخلايا، التنسيق، إعدادات الصفوف، وتحديد المواقع.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,9 +16,9 @@ sitemap:
 
 استخدم هذا المثال عندما تحتاج إلى جدول أساسي يمكن الوصول إليه يتضمن رأسًا، وجسمًا، وتذييلًا، وبيانات ملخص الجدول الوصفية.
 
-1. إنشاء ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف a [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
-1. قم بتكوين حد الجدول وملء المحتوى باستخدام طريقة المساعد المشتركة.
-1. قم بتعيين خاصية ملخص الجدول واحفظ المستند.
+1. أنشئ ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف a [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. اضبط حد الجدول وملء المحتوى باستخدام طريقة المساعد المشتركة.
+1. عيّن خاصية ملخص الجدول واحفظ المستند.
 
 ```java
 public static void createTable(Path outputFile) {
@@ -47,8 +47,8 @@ public static void createTable(Path outputFile) {
 
 يطبق هذا المثال تنسيقًا على مستوى الجدول مثل الألوان والحدود وتحديد حجم الأعمدة والصفوف المتكررة والمحاذاة.
 
-1. إنشاء ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر جدول.
-1. قم بتكوين إعدادات العرض وتخطيط مستوى الجدول.
+1. أنشئ ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر جدول.
+1. اضبط إعدادات العرض وتخطيط مستوى الجدول.
 1. املأ الجدول واحفظ المستند.
 
 ```java
@@ -92,8 +92,8 @@ public static void styleTable(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يحتوي كل صف على بياناته الوصفية الخاصة، والحدود، وإعدادات الارتفاع، والقيم الافتراضية للخلية.
 
-1. إنشاء ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف أقسام الجدول للرأس والجسم والتذييل.
-1. إنشاء صفوف وتكوين إعدادات مستوى الصف مثل الحد، والهوامش، والارتفاع، وسلوك الصفحة.
+1. أنشئ ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف أقسام الجدول للرأس والجسم والتذييل.
+1. أنشئ صفوف واضبط إعدادات مستوى الصف مثل الحد، والهوامش، والارتفاع، وسلوك الصفحة.
 1. املأ الصفوف بالخلايا واحفظ المستند.
 
 ```java
@@ -152,7 +152,7 @@ public static void styleTableRow(Path outputFile) {
 
 يستخدم هذا المثال الطريقة المساعدة المشتركة لإنشاء جدول بتنسيق على مستوى الخلية وخلايا مدمجة.
 
-1. إنشاء ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أضف عنصر جدول واملأه من خلال طريقة المساعدة مع تمكين تنسيق الخلايا.
 1. احفظ المستند.
 
@@ -176,9 +176,9 @@ public static void styleTableCell(Path outputFile) {
 
 استخدم هذا المثال عندما يجب وضع جدول معلم صراحةً على الصفحة.
 
-1. إنشاء ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر جدول.
-1. تكوين [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) للجدول.
-1. قم بتطبيق إعدادات الموقع، واملأ الجدول، واحفظ المستند.
+1. أنشئ ملف PDF معلم جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر جدول.
+1. اضبط [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) للجدول.
+1. طبّق إعدادات الموقع، واملأ الجدول، واحفظ المستند.
 
 ```java
 public static void adjustTablePosition(Path outputFile) {
@@ -210,7 +210,7 @@ public static void adjustTablePosition(Path outputFile) {
 
 تنشئ هذه الدالة المساعدة صفوف العنوان والجسم والتذييل للجدول، وتطبق اختياريًا تنسيق الخلايا والامتدادات.
 
-1. إنشاء أقسام رأس الجدول، والجسم، والقدم.
+1. أنشئ أقسام رأس الجدول، والجسم، والقدم.
 1. املأ صفوف الرأس، والجزء الرئيسي، وتذييل الصفوف بعناصر خلايا قابلة للوصول.
 1. اختياريًا، قم بتكوين الخلايا ذات الأنماط، الخلايا المدمجة، وقيم حالة النص.
 

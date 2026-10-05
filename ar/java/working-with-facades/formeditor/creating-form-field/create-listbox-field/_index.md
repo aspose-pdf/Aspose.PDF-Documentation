@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/create-listbox-field/
 description: تعرّف على كيفية إضافة حقل ListBox إلى مستند PDF باستخدام Java وواجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إنشاء حقل ListBox في ملف PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط PDF موجود، تعريف عناصر القائمة، إضافة حقل ListBox، وحفظ المستند المعدل باستخدام واجهة FormEditor في Aspose.PDF for Java.
@@ -14,10 +14,10 @@ Abstract: توضح هذه المقالة كيفية ربط PDF موجود، تع
 
 ## إنشاء حقل ListBox
 
-1. ربط ملف PDF المصدر بال `FormEditor` واجهة.
-2. حدد عناصر القائمة المتاحة باستخدام `setItems(...)`.
-3. إضافة حقل صندوق القائمة مع قيمته الافتراضية والمستطيل.
-4. حفظ المستند المحدث.
+1. اربط ملف PDF المصدر بال واجهة `FormEditor`.
+2. حدّد عناصر القائمة المتاحة باستخدام `setItems(...)`.
+3. أضف حقل صندوق القائمة مع قيمته الافتراضية والمستطيل.
+4. احفظ المستند المحدث.
 
 ```java
 public static void createListBoxField(Path inputFile, Path outputFile) {

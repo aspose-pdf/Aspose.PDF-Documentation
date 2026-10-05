@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/add-line/
 description: تعلم كيفية رسم أشكال الخط والخطوط المصممة في ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,10 +15,10 @@ Abstract: توضح هذه المقالة كيفية إضافة أشكال الخ
 ---
 ## إضافة خط متقطع
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
-1. إنشاء [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) شكل وقم بتكوين إحداثياته.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
+1. أنشئ شكل [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) واضبط إحداثياته.
 1. أضف [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
@@ -39,16 +39,16 @@ public static void addLine(Path outputFile) {
 }
 ```
 
-## أضف خطًا منقطًا أو متقطعًا ملونًا
+## إضافة خط منقطًا أو متقطعًا ملونًا
 
 `addDottedDashedLine` يستخدم نفس الإحداثيات وإعدادات الشرط، لكنه يطبق أيضًا `Color.getRed()`.
 
 ## ارسم خطوطًا عبر الصفحة
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
-1. إنشاء [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) شكل وقم بتكوين إحداثياته.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
+1. أنشئ شكل [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) واضبط إحداثياته.
 1. أضف [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/create-textbox-field/
 description: تعرف على كيفية إضافة حقول TextBox إلى مستند PDF باستخدام Java من خلال واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إنشاء حقول نموذج نصية في PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وإضافة حقول نصية بقيم افتراضية، وحفظ المستند المعدل باستخدام واجهة FormEditor في Aspose.PDF for Java.
@@ -14,8 +14,8 @@ Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود
 
 ## إنشاء حقول TextBox
 
-1. ربط ملف PDF المصدر إلى `FormEditor` واجهة.
-2. أضف كل حقل نص مع `FieldType.Text`, اسم الحقل، القيمة الافتراضية، رقم الصفحة، والمستطيل.
+1. اربط ملف PDF المصدر إلى واجهة `FormEditor`.
+2. أضف كل حقل نص مع `FieldType.Text`، اسم الحقل، القيمة الافتراضية، رقم الصفحة، والمستطيل.
 3. احفظ المستند المحدث.
 
 ```java

@@ -4,7 +4,7 @@ linktitle: تحويل PDF إلى صور
 type: docs
 weight: 70
 url: /ar/java/convert-pdf-to-images-format/
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 description: تعلم كيفية تحويل صفحات PDF إلى ملفات TIFF و BMP و EMF و JPEG و PNG و GIF و SVG في Java باستخدام Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -20,8 +20,8 @@ Abstract: تشرح هذه المقالة كيفية تحويل ملفات PDF إ
 استخدم هذا المثال عندما يجب عرض صفحات PDF كصور BMP.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI.
-1. التكرار عبر `document.getPages()` و استدع `device.process(...)` لكل صفحة.
+1. أنشئ كائنًا من الفئة [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI..
+1. مرّ على `document.getPages()` واستدعِ `device.process(...)` لكل صفحة.
 1. احفظ صور BMP التي تم إنشاؤها إلى مسارات إخراج مرقمة.
 
 ```java
@@ -41,8 +41,8 @@ public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
 استخدم هذا المثال عندما يجب تصدير صفحات PDF كصور متجهة بصيغة EMF.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI.
-1. التكرار عبر الصفحات واستدعاء `device.process(...)` لكل صفحة.
+1. أنشئ كائنًا من الفئة [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI..
+1. مرّ على الصفحات واستدعِ `device.process(...)` لكل صفحة.
 1. احفظ مخرجات EMF إلى مسارات ملفات مرقمة.
 
 ```java
@@ -62,8 +62,8 @@ public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
 استخدم هذا المثال عندما يجب تحويل صفحات PDF إلى صور GIF.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI.
-1. التكرار عبر الصفحات واستدعاء `device.process(...)` لعرض كل صفحة.
+1. أنشئ كائنًا من الفئة [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI..
+1. مرّ على الصفحات واستدعِ `device.process(...)` لعرض كل صفحة.
 1. احفظ ملفات GIF إلى مسارات إخراج مرقمة.
 
 ```java
@@ -83,8 +83,8 @@ public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
 استخدم هذا المثال عندما يجب تصدير صفحات PDF كصور JPEG.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI.
-1. التكرار عبر الصفحات واستدعاء `device.process(...)` لتحويل كل صفحة إلى JPEG.
+1. أنشئ كائنًا من الفئة [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI..
+1. مرّ على الصفحات واستدعِ `device.process(...)` لتحويل كل صفحة إلى JPEG..
 1. احفظ ملفات JPEG الناتجة إلى مسارات مرقمة.
 
 ```java
@@ -104,8 +104,8 @@ public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
 استخدم هذا المثال عندما يجب تحويل صفحات PDF إلى صور PNG.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI.
-1. التكرار عبر الصفحات واستدعاء `device.process(...)` لكل صفحة PDF.
+1. أنشئ كائنًا من الفئة [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI..
+1. مرّ على الصفحات واستدعِ `device.process(...)` لكل صفحة PDF..
 1. احفظ مخرجات PNG إلى مسارات ملفات مرقمة.
 
 ```java
@@ -125,9 +125,9 @@ public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
 استخدم هذا المثال عندما يجب أن يستخدم العرض خطًا احتياطيًا للرموز المفقودة.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI.
-1. تمكين `document.setAbsentFontTryToSubstitute(true)` حتى يتمكن الحروف المفقودة من الرجوع إلى خطوط بديلة أثناء العرض.
-1. قم بتصوير الصفحات وحفظ ملفات PNG.
+1. أنشئ كائنًا من الفئة [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 DPI..
+1. فعّل `document.setAbsentFontTryToSubstitute(true)` حتى يتمكن الحروف المفقودة من الرجوع إلى خطوط بديلة أثناء العرض.
+1. صيّر الصفحات واحفظ ملفات PNG..
 
 ```java
 public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPrefix) {
@@ -147,9 +147,9 @@ public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPre
 استخدم هذا المثال عندما يجب تصدير صفحات PDF كرسومات SVG.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) وإيقاف ضغط ZIP عند RAW `.svg` مطلوب الإخراج.
-1. تمكين `setTreatTargetFileNameAsDirectory(true)` لذلك يمكن تنظيم مخرجات SVG لكل صفحة تحت مسار الهدف.
-1. احفظ مخرجات SVG.
+1. أنشئ كائنًا من الفئة [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) وإيقاف ضغط ZIP عند RAW `.svg` مطلوب الإخراج.
+1. فعّل `setTreatTargetFileNameAsDirectory(true)` لذلك يمكن تنظيم مخرجات SVG لكل صفحة تحت مسار الهدف.
+1. احفظ مخرجات SVG..
 
 ```java
 public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
@@ -168,9 +168,9 @@ public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
 استخدم هذا المثال عندما يجب تصدير صفحة أو أكثر من صفحات PDF إلى TIFF.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) وتكوين الضغط، عمق اللون، وسلوك الصفحات الفارغة.
-1. إنشاء [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة وإعدادات TIFF المُحضرة.
-1. قم بتصيير الصفحات واحفظ إخراج TIFF.
+1. أنشئ كائنًا من الفئة [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) واضبط الضغط، عمق اللون، وسلوك الصفحات الفارغة.
+1. أنشئ كائنًا من الفئة [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) مع [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) بدقة 300 نقطة في البوصة وإعدادات TIFF المُحضرة.
+1. صيّر الصفحات واحفظ إخراج TIFF..
 
 ```java
 public static void convertPdfToTiff(Path inputFile, Path outputPrefix) {

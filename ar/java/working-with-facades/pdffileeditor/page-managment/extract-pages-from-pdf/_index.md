@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/extract-pages-from-pdf/
 description: استخراج الصفحات المحددة من ملف PDF في Java باستخدام واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,9 +19,9 @@ Abstract: تعلم كيفية استخراج الصفحات من ملف PDF با
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثيل.
-2. تحديد أرقام الصفحات المراد استخراجها.
-3. اتصال `extract` مع ملف المصدر، ومصفوفة الصفحات، وملف الإخراج.
+1. أنشئ مثيلًا `PdfFileEditor`.
+2. حدّد أرقام الصفحات المراد استخراجها.
+3. استدعِ `extract` مع ملف المصدر، ومصفوفة الصفحات، وملف الإخراج.
 4. احفظ الصفحات المستخرجة كملف PDF جديد.
 
 ### مثال Java

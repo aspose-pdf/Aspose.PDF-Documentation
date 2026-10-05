@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/adding-javascript-in-python/
 description: اكتشف كيفية دمج شفرة JavaScript داخل مستند PDF باستخدام Python و Aspose.PDF لتعزيز التفاعلية.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 لإضافة JavaScript باستخدام Aspose.PDF Java في Python، ما عليك سوى استدعاء طريقة AddJavascript() من فئة Document.
 
@@ -32,7 +32,7 @@ print "Added JavaScript Successfully, please check the output file."
 
 ```
 
-**تنزيل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
 قم بتنزيل **Add Javascript (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 

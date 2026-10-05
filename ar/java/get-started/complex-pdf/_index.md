@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/complex-pdf-example/
 description: يتيح Aspose.PDF for Java إنشاء مستندات PDF أكثر تعقيدًا تحتوي على صور، قطع نصية، وجداول في ملف واحد.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,17 +13,17 @@ TechArticle: true
 AlternativeHeadline: إنشاء ملف PDF معقد باستخدام Java
 Abstract: توضح هذه المقالة كيفية إنشاء ملف PDF أكثر تعقيدًا في Java باستخدام Aspose.PDF. يضيف المثال صورة، عنوانًا منسقًا، كتلة نصية وصفية، وجدولًا بخلايا رأسية منسقة وصفوف جدولية مُولدة، ثم يحفظ النتيجة كملف PDF.
 ---
-الـ [مرحبًا بالعالم](/pdf/ar/java/hello-world-example/) يوضح المثال أبسط مسار لإنشاء PDF. يبني هذا المثال على سير العمل هذا وينشئ مستندًا أغنى يجمع بين الرسومات والنصوص والمحتوى الجدولي.
+[مرحبًا بالعالم](/pdf/ar/java/hello-world-example/) يوضح المثال أبسط مسار لإنشاء PDF. يبني هذا المثال على سير العمل هذا وينشئ مستندًا أغنى يجمع بين الرسومات والنصوص والمحتوى الجدولي.
 
 لإنشاء مستند PDF أكثر تعقيدًا في Java:
 
-1. إنشاء [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ كائنًا من الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. أضف صورة إلى [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) مع `page.addImage(...)` وهدف [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-1. إنشاء رأس [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وقم بتعيين الخط والحجم والمحاذاة و [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
-1. إنشاء ثانٍ [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) للفقرة الوصفية.
-1. بناء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) مع حدود، حشو، وتنسيق الرأس.
-1. إضافة صفوف الجدول الزمني المُولَّدة إلى [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
-1. إلحاق الـ [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) إلى الـ [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الفقرات.
+1. أنشئ رأس [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وعيّن الخط والحجم والمحاذاة و [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. أنشئ كائنًا ثانيًا من الفئة [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) للفقرة الوصفية.
+1. ابنِ [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) مع حدود، حشو، وتنسيق الرأس.
+1. أضف صفوف الجدول الزمني المُولَّدة إلى [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
+1. ألحق [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) إلى الـ الفقرات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 الكود Java التالي مبني على `GetStartedExamples.java`.

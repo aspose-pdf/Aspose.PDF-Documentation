@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/xfa-forms/
 description: تعلم كيفية تحويل نماذج XFA إلى AcroForms قياسية في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -17,8 +17,8 @@ Abstract: تشرح هذه المقالة كيفية العمل مع النماذ
 
 ## تحويل نموذج XFA الديناميكي إلى AcroForm
 
-1. فتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى Document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) و تعيين المطلوب [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) الخصائص.
+1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى Document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) وعيّن المطلوب [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) الخصائص.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -32,8 +32,8 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 ## تحويل نموذج XFA باستخدام `ignoreNeedsRendering`
 
-1. فتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى Document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) و تعيين المطلوب `ignoreNeedsRendering` و [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) الخصائص.
+1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى Document [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) وعيّن المطلوب `ignoreNeedsRendering` و [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) الخصائص.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

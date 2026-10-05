@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/remove-metadata-from-pdf-in-php/
 description: استكشف كيفية إزالة البيانات الوصفية من مستند PDF في PHP باستخدام Aspose.PDF لتحسين الخصوصية وأمان المستند.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - إزالة البيانات الوصفية
 
@@ -35,7 +35,7 @@ print "Removed metadata successfully, please check output file." . PHP_EOL;
 
 ```
 
-**تحميل الكود التشغيلي**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تحميل **Remove Metadata (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/pdfcontenteditor-class/
 description: تعرف على كيفية استخدام فئة PdfContentEditor في Java لتعديل محتوى PDF، وإدارة التعليقات التوضيحية والمرفقات، والعمل مع إجراءات المستند، والصور، والنص، والوسائط المتعددة، والطوابع، وتفضيلات عارض المستند.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: تحرير محتوى PDF والعناصر التفاعلية في Java باستخدام PdfContentEditor
 Abstract: يوضح هذا القسم كيفية استخدام فئة PdfContentEditor في Aspose.PDF for Java لعمليات سير العمل على مستوى المحتوى في PDF. تغطي مجموعة أمثلة Java الحالية التعليقات التوضيحية، والمرفقات، وإجراءات المستند، ورسم العلامات، واستبدال الصور، والوسائط المتعددة، والطوابع، واستبدال النص، وتفضيلات عارض المستند.
 ---
-الجافا `PdfContentEditorExamples` الفئة توضح تدفقات تحرير المحتوى الرئيسية التي تُعرضها واجهة برمجة تطبيقات Facades.
+الجافا الفئة `PdfContentEditorExamples` توضح تدفقات تحرير المحتوى الرئيسية التي تُعرضها واجهة برمجة تطبيقات Facades.
 
 استخدم هذا القسم لتعلم كيفية:
 

@@ -5,20 +5,20 @@ type: docs
 weight: 10
 url: /ar/java/installing-and-using-aspose-pdf-for-intellij-idea-maven/
 description: اكتشف الخطوات لتثبيت وتكوين Aspose.PDF لـ IntelliJ IDEA باستخدام Maven لمعالجة مستندات PDF بكفاءة في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## تثبيت
 
-### كيفية تثبيت Aspose.PDF Java لـ IntelliJ IDEA (Maven)
+### تثبيت Aspose.PDF Java لـ IntelliJ IDEA (Maven)
 
 الخطوات أدناه توضح كيفية تثبيت المكوّن الإضافي **Aspose.PDF Java for IntelliJ IDEA (Maven)**.
 
-ال\u0412\u00A0 المكوّن الإضافي مدرج على IntelliJ IDEA\u0027s CE [الموقع الرسمي للإضافة](https://plugins.jetbrains.com/plugin/7974-aspose-pdf-java-for-intellij-idea-maven/) - مستودع الإضافة كـ **Aspose.PDF Java for IntelliJ IDEA Maven**، لذا لا تحتاج إلى تنزيله يدوياً وتثبيته من القرص، لكن هذا الخيار الإضافي لا يزال موجوداً في IntelliJ IDEA.
+المكوّن الإضافي مدرج على IntelliJ IDEA CE [الموقع الرسمي للإضافة](https://plugins.jetbrains.com/plugin/7974-aspose-pdf-java-for-intellij-idea-maven/) - مستودع الإضافة كـ **Aspose.PDF Java for IntelliJ IDEA Maven**، لذا لا تحتاج إلى تنزيله يدوياً وتثبيته من القرص، لكن هذا الخيار الإضافي لا يزال موجوداً في IntelliJ IDEA.
 
 **Aspose.PDF Java for IntelliJ IDEA (Maven)** يمكن تثبيت الإضافة بسهولة (دون تنزيل يدوي) من داخل IntelliJ IDEA. للقيام بذلك:
 
 1. اختر **Settings** من **File** القائمة.
-2. انقر **Plugins**، ثم تصفح المستودعات في IntelliJ IDEA.
+2. انقر **Plugins**، ثم تصفح المستودعات في IntelliJ IDEA..
 
 ![todo:image_alt_text](https://i.imgur.com/NDZtoKw.jpg)
 
@@ -44,20 +44,20 @@ lastmod: "2026-10-01"
 
 ثم اتبع الخطوات أدناه:
 
-1. حدد **New Project**.
-2. حدد **Aspose.PDF Maven Project**.
+1. حدّد **New Project**.
+2. حدّد **Aspose.PDF Maven Project**.
 3. انقر **Next**.
 
 ![todo:image_alt_text](https://i.imgur.com/hd2mYnW.jpg)
 
-4. قدم **GroupId, ArtifactId** وВ Version
+4. قدّم **GroupId, ArtifactId** و Version.
 لمشروع maven الخاص بك وانقر Next.
 
 ![todo:image_alt_text](https://i.imgur.com/aNlx0Qe.jpg)
 
 5. يمكنك تحديد خانة "Also Download Examples Source Code" لتنزيل أمثلة الاستخدام النموذجية لواجهة برمجة التطبيقات (كما هو موضح في اللقطة أعلاه)
 
-6. قدم **Project Name** و **Location** كما هو الحال عند إنشاء أي تطبيق Java
+6. قدّم **Project Name** و **Location** كما هو الحال عند إنشاء أي تطبيق Java.
 
 ![todo:image_alt_text](https://i.imgur.com/8VEeFun.jpg)
 
@@ -88,7 +88,7 @@ lastmod: "2026-10-01"
 
 ![todo:image_alt_text](https://i.imgur.com/N8tT9Q0.jpg)
 
--OR- **Right Click** (on project window) => **New**В  - كما هو موضح أدناه:
+-OR- **Right Click** (on project window) => **New**  - كما هو موضح أدناه:
 
 ![todo:image_alt_text](https://i.imgur.com/aUBWkhp.jpg)
 
@@ -100,7 +100,7 @@ lastmod: "2026-10-01"
 
 ![todo:image_alt_text](https://i.imgur.com/5PZwsuq.jpg)
 
-3. ستظهر نافذة **معالج أمثلة Aspose.PDF**، حيث يمكنك اختيار أي فئة من الأمثلة لإنشاء / نسخ الأمثلة إلى مشروعك
+3. ستظهر نافذة **Aspose.PDF Examples wizard**، حيث يمكنك اختيار أي فئة من الأمثلة لإنشاء / نسخ الأمثلة إلى مشروعك
 اختر أي فئة من الأمثلة وانقر **Create**:
 
 ![todo:image_alt_text](https://i.imgur.com/l2oGUBW.jpg)
@@ -112,7 +112,7 @@ lastmod: "2026-10-01"
 
 تهانينا\u0412\u00A0! لقد أكملت بنجاح ما يلي:
 
-1. قمت\u0027 بإنشاء مشروع Aspose.PDF Maven باستخدام Aspose.PDF Maven Project Wizard،
+1. لقد أنشأت مشروع Aspose.PDF Maven باستخدام Aspose.PDF Maven Project Wizard،
 
 2. لقد قمت بتحميل [Aspose.PDF for Java API - أكواد المصدر المثال](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 3. لقد قمت بإنشاء / نسخ أكواد المصدر للأمثلة إلى مشروعك باستخدام Aspose.PDF Example Wizard.

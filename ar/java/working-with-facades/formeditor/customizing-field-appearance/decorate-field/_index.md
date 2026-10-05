@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /ar/java/decorate-field/
 description: تعلم كيفية تزيين حقل نموذج PDF بالألوان والمحاذاة في Java باستخدام واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: تزيين حقل نموذج PDF في Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، تكوين FormFieldFacade بألوان ومحاذاة، تزيين حقل، وحفظ المستند المحدّث باستخدام واجهة FormEditor في Aspose.PDF for Java.
 ---
 ## تزيين حقل
 
-1. ربط ملف PDF المصدر بـ `FormEditor` واجهة.
-2. تكوين `FormFieldFacade` مع الألوان المطلوبة والمحاذاة.
+1. اربط ملف PDF المصدر بـ واجهة `FormEditor`.
+2. اضبط `FormFieldFacade` مع الألوان المطلوبة والمحاذاة.
 3. مرّر الواجهة إلى المحرر واستدعِ `decorateField(...)`.
 4. احفظ المستند المحدث.
 

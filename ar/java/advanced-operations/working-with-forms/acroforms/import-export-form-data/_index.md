@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ar/java/import-export-form-data/
 description: استيراد وتصدير بيانات حقول AcroForm بصيغة XML و FDF و XFDF و JSON باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: استيراد وتصدير بيانات نموذج PDF باستخدام Java
 Abstract: تشرح هذه المقالة كيفية تبادل بيانات AcroForm مع الصيغ الخارجية باستخدام Aspose.PDF for Java. تغطي استيراد وتصدير بيانات XML و FDF و XFDF من خلال واجهة Form واستخراج قيم حقول النموذج إلى JSON.
@@ -16,7 +16,7 @@ Abstract: تشرح هذه المقالة كيفية تبادل بيانات Acro
 
 استخدم هذا المثال عندما يتم تخزين قيم النموذج في ملف XML ويجب تطبيقها على نموذج PDF.
 
-1. إنشاء [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
+1. أنشئ كائنًا من الفئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
 1. افتح تدفق الإدخال XML واستورد البيانات إلى النموذج.
 1. احفظ مستند PDF المحدث.
 
@@ -37,9 +37,9 @@ public static void importDataFromXml(Path inputFile, Path dataFile, Path outputF
 
 استخدم هذا المثال عندما تحتاج إلى تخزين قيم AcroForm الحالية بتنسيق XML.
 
-1. إنشاء [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
-1. افتح تدفق الإخراج لملف XML.
-1. تصدير بيانات النموذج إلى XML.
+1. أنشئ كائنًا من الفئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
+1. افتح تدفق الإخراج لملف XML..
+1. صدّر بيانات النموذج إلى XML..
 
 ```java
 public static void exportDataToXml(Path inputFile, Path outputFile) throws Exception {
@@ -57,7 +57,7 @@ public static void exportDataToXml(Path inputFile, Path outputFile) throws Excep
 
 استخدم هذا المثال عندما تصل قيم النموذج بتنسيق التبادل FDF.
 
-1. إنشاء [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
+1. أنشئ كائنًا من الفئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
 1. افتح تدفق الإدخال FDF واستورد البيانات.
 1. احفظ مستند PDF المملأ.
 
@@ -78,9 +78,9 @@ public static void importDataFromFdf(Path inputFile, Path dataFile, Path outputF
 
 استخدم هذا المثال عندما يجب مشاركة قيم نموذج PDF كملف FDF.
 
-1. إنشاء [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
-1. افتح تدفق الإخراج لملف FDF.
-1. تصدير بيانات النموذج بتنسيق FDF.
+1. أنشئ كائنًا من الفئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
+1. افتح تدفق الإخراج لملف FDF..
+1. صدّر بيانات النموذج بتنسيق FDF..
 
 ```java
 public static void exportDataToFdf(Path inputFile, Path outputFile) throws Exception {
@@ -98,7 +98,7 @@ public static void exportDataToFdf(Path inputFile, Path outputFile) throws Excep
 
 استخدم هذا المثال عندما يتم توفير بيانات النموذج بتنسيق XFDF ويجب دمجها في ملف PDF.
 
-1. إنشاء [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
+1. أنشئ كائنًا من الفئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
 1. افتح تدفق الإدخال XFDF واستورد القيم.
 1. احفظ مستند PDF المحدث.
 
@@ -119,9 +119,9 @@ public static void importDataFromXfdf(Path inputFile, Path dataFile, Path output
 
 استخدم هذا المثال عندما تحتاج إلى ملف تبادل مبني على XML لقيم AcroForm.
 
-1. إنشاء [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
-1. افتح تدفق الإخراج لملف XFDF.
-1. تصدير قيم النموذج الحالية إلى XFDF.
+1. أنشئ كائنًا من الفئة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) الواجهة وربط ملف PDF المصدر.
+1. افتح تدفق الإخراج لملف XFDF..
+1. صدّر قيم النموذج الحالية إلى XFDF..
 
 ```java
 public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exception {
@@ -139,8 +139,8 @@ public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exce
 
 استخدم هذا المثال عندما يجب تصدير قيم النموذج إلى تمثيل JSON خفيف الوزن.
 
-1. افتح ملف PDF باستخدام [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) واجهة.
-1. التكرار عبر أسماء الحقول وتسلسل قيمها إلى نص JSON.
+1. افتح ملف PDF باستخدام واجهة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. مرّ على أسماء الحقول وتسلسل قيمها إلى نص JSON..
 1. اكتب محتوى JSON إلى الملف الهدف.
 
 ```java

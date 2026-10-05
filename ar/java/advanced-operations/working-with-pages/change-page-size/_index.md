@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/change-page-size/
 description: تعرّف على كيفية قراءة وتغيير أبعاد صفحات PDF في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: توضح هذه المقالة كيفية قراءة وتعديل أب
 استخدم هذا المثال عندما تحتاج إلى تغيير حجم صفحة موجودة وفحص صناديق الصفحة قبل وبعد التغيير.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وطباعة قيم الصندوق الحالية.
-1. حدد حجم الصفحة الجديد واحفظ المستند.
+1. احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) واطبع قيم الصندوق الحالية.
+1. حدّد حجم الصفحة الجديد واحفظ المستند.
 
 ```java
 public static void setPageSize(Path inputFile, Path outputFile) {
@@ -58,7 +58,7 @@ public static void getPageSize(Path inputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. دوِّر الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. قراءة مستطيل الصفحة مع معالجة الدوران وبدونها وإخراج القيمتين.
+1. اقرأ مستطيل الصفحة مع معالجة الدوران وبدونها وإخراج القيمتين.
 
 ```java
 public static void getPageSizeRotation(Path inputFile) {

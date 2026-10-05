@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/shape-annotations/
 description: تعلم كيفية إضافة وفحص وحذف التعليقات التوضيحية للمربعة، الدائرة، المضلع، وخط متعدد النقاط في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -15,12 +15,12 @@ Abstract: توضح هذه المقالة كيفية إنشاء وفحص وإزا
 ---
 تشمل تعليقات الشكل في هذا القسم أنواع التعليقات الهندسية مثل المربعات والدوائر والمتعددات والخطوط المتعددة والخطوط.
 
-## أضف تعليقات توضيحية للمربع والدائرة والمضلع والخط المتعدد النقاط
+## إضافة تعليقات توضيحية للمربع والدائرة والمضلع والخط المتعدد النقاط
 
 استخدم هذه الأمثلة عندما تحتاج إلى وضع تعليقات توضيحية هندسية بألوان مخصصة أو شفافية أو بيانات منبثقة أو مصفوفات نقاط.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء التعليق التوضيحي للشكل المطلوب وتكوين مستطيله والنقاط والخصائص البصرية.
+1. أنشئ التعليق التوضيحي للشكل المطلوب واضبط مستطيله والنقاط والخصائص البصرية.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند المحدث.
 
 ```java
@@ -114,8 +114,8 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 تقوم هذه الأمثلة بفحص مجموعة تعليقات الصفحة وتطبع مستطيلات التعليقات الهندسية حسب النوع.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التنقل عبر التعليقات التوضيحية للصفحة.
-1. تصفية حسب المطلوب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) القيمة واطبع المستطيل.
+1. مرّ على التعليقات التوضيحية للصفحة.
+1. صفِّ حسب المطلوب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) القيمة واطبع المستطيل.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -246,8 +246,8 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 هذا المثال يُنشئ تعليقا بخط يحتوي على نهايات سهم، وتنسيق حدود، وملاحظة منبثقة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) مع نقاط البدء والنهاية.
-1. قم بتكوين المظهر، أضف النافذة المنبثقة، واحفظ المستند.
+1. أنشئ كائنًا من الفئة [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) مع نقاط البدء والنهاية.
+1. اضبط المظهر، أضف النافذة المنبثقة، واحفظ المستند.
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -282,7 +282,7 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 يقوم هذا المثال بقراءة تعليقات الخطوط وطباعة إحداثيات البداية والنهاية لها.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التنقل عبر تعليقات الصفحة واختيارها [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. مرّ على تعليقات الصفحة واختيارها [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. حوّل كل تطابق إلى [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) وطبع إحداثياته.
 
 ```java
@@ -305,7 +305,7 @@ public static void lineAnnotationsGet(Path inputFile) {
 استخدم هذا النهج عندما يجب إزالة تعليقات الخط من الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات التوضيحية من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. اجمع التعليقات التوضيحية من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. احذف التعليقات المجمعة واحفظ المستند.
 
 ```java

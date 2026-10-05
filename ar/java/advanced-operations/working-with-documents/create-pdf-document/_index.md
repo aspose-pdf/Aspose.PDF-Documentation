@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/create-pdf-document/
 description: تعلم كيفية إنشاء ملفات PDF وبناء ملفات PDF قابلة للبحث في Java باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,9 @@ Aspose.PDF for Java يدعم كل من إنشاء المستندات البسي�
 
 استخدم هذا النهج عندما تحتاج إلى إنشاء ملف PDF بسيط من الصفر.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وإضافة ذلك إلى الصفحة.
+1. أنشئ كائنًا من الفئة [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وأضف ذلك إلى الصفحة.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -39,7 +39,7 @@ public static void createNewDocument(Path outputFile) {
 ال `createSearchablePdf` أمثلة الاستخدام `Document.convert(...)` مع `CallBackGetHocr` التنفيذ. تقوم الدالة الراجعة بكتابة صورة المصدر إلى ملف مؤقت، وتستدعي Tesseract مع `hocr` الخيار، يقرأ ترميز HOCR الذي تم إنشاؤه، ويعيده إلى Aspose.PDF.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء `CallBackGetHocr` استدعاء وتحويل المستند المصدر إلى محتوى PDF قابل للبحث.
+1. أنشئ `CallBackGetHocr` استدعاء وتحويل المستند المصدر إلى محتوى PDF قابل للبحث.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -64,8 +64,8 @@ public static void createSearchablePdf(Path inputFile, Path outputFile) {
 استخدم هذا المثال لتفقد تفضيلات المشاهد الحالية المخزنة في مستند PDF موجود.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قراءة خصائص النافذة والعرض المطلوبة من المستند.
-1. قم بإخراج الإعدادات الحالية للفحص أو التصحيح.
+1. اقرأ خصائص النافذة والعرض المطلوبة من المستند.
+1. اعرض الإعدادات الحالية للفحص أو التصحيح.
 
 ```java
 public static void getDocumentWindow(Path inputFile) {
@@ -89,7 +89,7 @@ public static void getDocumentWindow(Path inputFile) {
 يحدّث هذا المثال كيفية عرض ملف PDF عندما يتم فتحه في عارض متوافق.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بتعيين تفضيلات النافذة والتخطيط ووضع الصفحة المطلوبة.
+1. عيّن تفضيلات النافذة والتخطيط ووضع الصفحة المطلوبة.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -115,8 +115,8 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 استخدم هذا الأسلوب عندما يجب أن يحتوي المستند على الخطوط المطلوبة لضمان عرض أكثر موثوقية على الأنظمة الأخرى.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بتمكين تضمين الخطوط القياسية وتكرار الخطوط المستخدمة في كل منها [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. علّم أي غير مضمّن [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) كائنات للتضمين.
+1. فعّل تضمين الخطوط القياسية وتكرار الخطوط المستخدمة في كل منها [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. علّم أي غير مضمّن كائنات [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) للتضمين.
 1. احفظ المستند المحدث.
 
 ```java
@@ -139,9 +139,9 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 
 هذا المثال ينشئ ملف PDF جديد ويُعيّن خطًا مضمّنًا إلى محتوى النص منذ البداية.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. إنشاء المطلوب [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), و [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. حل الهدف [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) من المستودع وعلمها بأنها مدمجة.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ المطلوب [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/)، و [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. استرجع الخط المستهدف [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) من المستودع وضع علامة عليه لتضمينه.
 1. أضف محتوى النص إلى الصفحة واحفظ مستند الإخراج.
 
 ```java
@@ -168,7 +168,7 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 استخدم هذا النمط عندما يجب أن يعود المستند المحفوظ إلى خط محدد أثناء توليد الإخراج.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) وحدد اسم الخط الافتراضي.
+1. أنشئ كائنًا من الفئة [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) وحدد اسم الخط الافتراضي.
 1. احفظ المستند باستخدام خيارات الحفظ المُكوَّنة.
 
 ```java
@@ -186,8 +186,8 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 يسرد هذا المثال كل الخطوط المكتشفة في المستند حتى تتمكن من تدقيق استخدام الخطوط قبل التصدير أو تحديث الملف.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. عد الـ Fonts التي تُرجعها أدوات Font للمستند.
-1. إخراج اسم كل ما تم اكتشافه [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. عد Fonts التي تُرجعها أدوات Font للمستند.
+1. اعرض اسم كل ما تم اكتشافه [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
 ```java
 public static void getAllFonts(Path inputFile) {
@@ -222,7 +222,7 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 يقوم هذا المثال بتكوين مستوى التكبير الأولي الذي يجب تطبيقه عند فتح ملف PDF.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. أنشئ كائنًا من الفئة [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. عيّن الإجراء كإجراء فتح المستند واحفظ النتيجة.
 
 ```java
@@ -240,7 +240,7 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 استخدم هذا المثال لفحص ما إذا كان ملف PDF يحدد مسبقًا مستوى تقريب صريح لإجراء الفتح.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تحقق مما إذا كان إجراء الفتح هو [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. تحقّق مما إذا كان إجراء الفتح هو [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. أخرج قيمة التكبير المُكوَّنة أو أبلغ بأنه لا يوجد تكبير مُحدد.
 
 ```java

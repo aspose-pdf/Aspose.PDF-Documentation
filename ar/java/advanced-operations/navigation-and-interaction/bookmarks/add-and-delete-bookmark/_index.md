@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/add-and-delete-bookmark/
 description: تعلم كيفية إضافة وحذف الإشارات المرجعية في مستندات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,7 @@ Abstract: توضح هذه المقالة كيفية إنشاء وحذف العل
 استخدم هذا المثال عندما يجب أن يحتوي المستند على إدخال مخطط واحد على المستوى الأعلى.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) وَقُم بتكوين عنوانه، نمطه، وإجراءه.
+1. أنشئ كائنًا من الفئة [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) وَاضبط عنوانه، نمطه، وإجراءه.
 1. أضف العلامة المرجعية إلى مخططات المستند واحفظ الملف.
 
 ```java
@@ -43,7 +43,7 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 هذا المثال ينشئ علامة مرجعية أصلية ويضع علامة مرجعية فرعية تحتها.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء أصل وفرعي [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) كائنات.
+1. أنشئ أصل وفرعي كائنات [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/).
 1. أضف العنصر الفرعي إلى العنصر الأب، أضف العنصر الأب إلى مجموعة المخطط، واحفظ المستند.
 
 ```java
@@ -71,7 +71,7 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 استخدم هذا النهج عندما ينبغي إزالة مجموعة المخطط بالكامل من المستند.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. حذف مجموعة المخططات الكاملة.
+1. احذف مجموعة المخططات الكاملة.
 1. احفظ ملف الإخراج المنقّح.
 
 ```java

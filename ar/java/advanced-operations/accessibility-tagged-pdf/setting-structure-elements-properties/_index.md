@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/setting-structure-elements-properties/
 description: تعلم كيفية تعيين خصائص عنصر بنية PDF الموسوم في Java مع Aspose.PDF، بما في ذلك العنوان، اللغة، النص الفعلي، النص البديل، نص التوسيع، الروابط، الملاحظات، وأسماء العلامات.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,9 +16,9 @@ sitemap:
 
 استخدم هذا المثال عندما يجب أن يُظهر عنصر بنية مُوسَّم بيانات الوصوفية لإمكانية الوصول مثل العنوان، اللغة، النص الفعلي، والنص البديل.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتهيئة بيانات التعريف للمحتوى الموسوم.
-1. إنشاء قسم وعنصر رأس في شجرة الهيكل.
-1. قم بتعيين خصائص الرأس واحفظ المستند.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتهيئة بيانات التعريف للمحتوى الموسوم.
+1. أنشئ قسم وعنصر رأس في شجرة الهيكل.
+1. عيّن خصائص الرأس واحفظ المستند.
 
 ```java
 public static void setProperties(Path outputFile) {
@@ -50,8 +50,8 @@ public static void setProperties(Path outputFile) {
 
 استخدم هذا المثال عندما تحتاج إلى إضافة عنصر فقرة بسيط إلى شجرة البنية الموسومة.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) واضع نصه.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) واضع نصه.
 1. أضف الفقرة إلى العنصر الجذري واحفظ المستند.
 
 ```java
@@ -74,7 +74,7 @@ public static void setTextElements(Path outputFile) {
 
 هذا المثال ينشئ عناصر هيكلية متعددة على مستوى الكتلة، بما في ذلك عناوين من عدة مستويات وفقرة.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أضف عناصر العناوين للمستويات المطلوبة ثم أنشئ عنصر فقرة.
 1. أضف عناصر الكتلة إلى بنية الجذر واحفظ المستند.
 
@@ -105,9 +105,9 @@ public static void setTextBlockElements(Path outputFile) {
 
 استخدم هذا المثال عندما ينبغي لعناصر بنية الكتلة أن تحتوي على نطاقات مضمنة داخلية.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بإنشاء عناصر العنوان وأرفق عناصر span الفرعية بها.
-1. إنشاء فقرة تحتوي على عدة عناصر span وحفظ المستند.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ عناصر العنوان وأرفق عناصر span الفرعية بها.
+1. أنشئ فقرة تحتوي على عدة عناصر span واحفظ المستند.
 
 ```java
 public static void setInlineElements(Path outputFile) {
@@ -146,10 +146,10 @@ public static void setInlineElements(Path outputFile) {
 
 ## تعيين أسماء وسوم مخصصة
 
-يقوم هذا المثال بتعيين أسماء علامات مخصصة لعناصر الفقرة وعناصر الـ span في الهيكل الموسوم.
+يقوم هذا المثال بتعيين أسماء علامات مخصصة لعناصر الفقرة وعناصر span في الهيكل الموسوم.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر قسم.
-1. إنشاء فقرات وعناصر span، ثم تعيين أسماء علامات مخصصة لكل عنصر.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر قسم.
+1. أنشئ فقرات وعناصر span، ثم تعيين أسماء علامات مخصصة لكل عنصر.
 1. أضف العناصر إلى القسم واحفظ المستند.
 
 ```java
@@ -187,9 +187,9 @@ public static void setTagName(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن تتضمن عناصر الروابط الموسومة أوصافًا بديلة وروابطًا تشعبية ومحتوى الشكل مع سمات التخطيط.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عناصر الروابط داخل الفقرات.
-1. قم بتكوين أهداف الروابط التشعبية، والوصف البديل، وعنصر الشكل المرتبط.
-1. قم بتعيين سمة التخطيط المطلوبة وحفظ المستند.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عناصر الروابط داخل الفقرات.
+1. اضبط أهداف الروابط التشعبية، والوصف البديل، وعنصر الشكل المرتبط.
+1. عيّن سمة التخطيط المطلوبة واحفظ المستند.
 
 ```java
 public static void setElements(Path imageFile, Path outputFile) {
@@ -233,12 +233,12 @@ public static void setElements(Path imageFile, Path outputFile) {
 }
 ```
 
-## أضف فقرات تحتوي على محتوى روابط مدمج
+## إضافة فقرات تحتوي على محتوى روابط مدمج
 
 هذا المثال ينشئ عناصر فقرة تجمع بين النص العادي وعناصر span المتداخلة.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء عناصر الفقرة وإضافة عناصر span كأطفال بنص مخصص.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ عناصر الفقرة وأضف عناصر span كأطفال بنص مخصص.
 1. أضف الفقرات إلى العنصر الجذري واحفظ المستند.
 
 ```java
@@ -271,8 +271,8 @@ public static void addLinkElement(Path outputFile) {
 
 استخدم هذا المثال عندما يجب إنشاء عناصر بنية الملاحظة بمعرفات تلقائية أو صريحة.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر فقرة.
-1. إنشاء عناصر الملاحظة وتعيين النص والمعرفات الخاصة بها حسب الحاجة.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف عنصر فقرة.
+1. أنشئ عناصر الملاحظة وعيّن النص والمعرفات الخاصة بها حسب الحاجة.
 1. أرفق الملاحظات إلى الفقرة واحفظ المستند.
 
 ```java
@@ -308,7 +308,7 @@ public static void setNoteElement(Path outputFile) {
 
 هذا المثال يعيّن بيانات تعريف على مستوى المستند ثم ينشئ فقرات ذات قيم لغوية مختلفة.
 
-1. إنشاء ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وضع عنوان المستند واللغة.
+1. أنشئ ملف PDF معلم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وضع عنوان المستند واللغة.
 1. أضف عنصر رأس وأنشئ فقرات لكل عبارة مُحلية.
 1. احفظ المستند الموسوم متعدد اللغات.
 
@@ -333,12 +333,12 @@ public static void setLanguageAndTitle(Path outputFile) {
 }
 ```
 
-## أضف مساعد فقرة للمحتوى الموسوم
+## إضافة مساعد فقرة للمحتوى الموسوم
 
 تنشئ طريقة المساعد هذه فقرة، وتعيّن لغتها، وتضيفها إلى الهيكل الجذري.
 
-1. إنشاء [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
-1. قم بتعيين النص واللغة للعنصر.
+1. أنشئ كائنًا من الفئة [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
+1. عيّن النص واللغة للعنصر.
 1. أضف الفقرة إلى عنصر الجذر للمحتوى الموسوم.
 
 ```java

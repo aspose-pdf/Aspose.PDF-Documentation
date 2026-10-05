@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/remove-form/
 description: إزالة كائنات النموذج من صفحات PDF باستخدام Aspose.PDF for Java، بما في ذلك التنظيف الكامل والحذف المستهدف.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -20,7 +20,7 @@ Abstract: تشرح هذه المقالة كيفية إزالة موارد الن
 استخدم هذا المثال عندما يجب إزالة كل موارد Form على صفحة مختارة في عملية واحدة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) لصفحة الهدف.
+1. انتقل إلى [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) لصفحة الهدف.
 1. امسح المجموعة واحفظ المستند المحدث.
 
 ```java
@@ -38,8 +38,8 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 استخدم هذا المثال عندما يجب حذف موارد النموذج المحددة فقط، مثل نماذج الكاتب الآلي.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) لصفحة الهدف.
-1. تصفية [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) الموارد التي تريد إزالتها وحذفها من المجموعة.
+1. انتقل إلى [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) لصفحة الهدف.
+1. صفِّ [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) الموارد التي تريد إزالتها وحذفها من المجموعة.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

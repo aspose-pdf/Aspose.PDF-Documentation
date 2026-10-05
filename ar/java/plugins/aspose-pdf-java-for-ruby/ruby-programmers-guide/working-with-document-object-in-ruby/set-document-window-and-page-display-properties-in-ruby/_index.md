@@ -5,11 +5,11 @@ type: docs
 weight: 100
 url: /ar/java/set-document-window-and-page-display-properties-in-ruby/
 description: تخصيص إعدادات عرض المستند والصفحة في ملفات PDF باستخدام Ruby وAspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تعيين خصائص نافذة المستند وعرض الصفحة
 
-لتعيين خصائص نافذة المستند وعرض الصفحة لمستند PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاءВ **SetDocumentWindow** الوحدة.
+لتعيين خصائص نافذة المستند وعرض الصفحة لمستند PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء **SetDocumentWindow** الوحدة.
 
 كود Ruby
 

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/create-form/
 description: إنشاء حقول AcroForm من الصفر في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: توضح هذه المقالة كيفية إنشاء حقول AcroForm
 
 استخدم هذا المثال عندما تحتاج إلى إضافة حقل إدخال نص أحادي السطر إلى نموذج PDF جديد.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) مع مستطيل هدف وتكوين مظهره.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) مع مستطيل هدف واضبط مظهره.
 1. أضف الحقل إلى النموذج واحفظ المستند.
 
 ```java
@@ -53,9 +53,9 @@ public static void addTextBoxField(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يظهر نفس قيمة حقل النص في عدة مواضع على الصفحة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. حدد العديد من المستطيلات والمظاهر لعناصر واجهة الحقل.
-1. إنشاء [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/), قم بتكوين كل أداة، واحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. حدّد العديد من المستطيلات والمظاهر لعناصر واجهة الحقل.
+1. أنشئ كائنًا من الفئة [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)، اضبط كل أداة، واحفظ المستند.
 
 ```java
 public static void addTextBoxFieldNt(Path outputFile) {
@@ -103,9 +103,9 @@ public static void addTextBoxFieldNt(Path outputFile) {
 
 استخدم هذا المثال عندما ينبغي للنموذج أن يتيح للمستخدم اختيار خيار واحد من مجموعة محددة مسبقًا.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) وأضف الخيارات المطلوبة.
-1. أضف الحقل إلى النموذج واحفظ ملف PDF.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [RadioButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/radiobuttonfield/) وأضف الخيارات المطلوبة.
+1. أضف الحقل إلى النموذج واحفظ ملف PDF..
 
 ```java
 public static void addRadioButton(Path outputFile) {
@@ -126,9 +126,9 @@ public static void addRadioButton(Path outputFile) {
 
 استخدم هذا المثال عندما يجب على المستخدم اختيار قيمة واحدة من قائمة منسدلة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) وأضف خياراته القابلة للتحديد.
-1. حدد الاختيار الافتراضي واحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [ComboBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/comboboxfield/) وأضف خياراته القابلة للتحديد.
+1. حدّد الاختيار الافتراضي واحفظ المستند.
 
 ```java
 public static void addComboBox(Path outputFile) {
@@ -152,8 +152,8 @@ public static void addComboBox(Path outputFile) {
 
 استخدم هذا المثال عندما يحتاج النموذج إلى خيار صحيح أو خطأ مثل الموافقة أو اختيار الميزة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) وتهيئة مظهره.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [CheckboxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/checkboxfield/) وتهيئة مظهره.
 1. أضف مربع الاختيار إلى Form واحفظ ملف الإخراج.
 
 ```java
@@ -175,8 +175,8 @@ public static void addCheckboxFieldToPdf(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يعرض النموذج اختيارات متعددة متاحة في قائمة مرئية.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) وأضف الخيارات المتاحة.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [ListBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/listboxfield/) وأضف الخيارات المتاحة.
 1. أضف الحقل إلى النموذج واحفظ المستند.
 
 ```java
@@ -200,8 +200,8 @@ public static void addListBoxFieldToPdf(Path outputFile) {
 
 استخدم هذا المثال عندما يجب على المستند حجز مساحة مرئية للتوقيع الرقمي.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) في المستطيل المطلوب.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [SignatureField](https://reference.aspose.com/pdf/java/com.aspose.pdf/signaturefield/) في المستطيل المطلوب.
 1. أضف الحقل إلى Form واحفظ PDF الناتج.
 
 ```java
@@ -221,8 +221,8 @@ public static void addSignatureField(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يعرض النموذج بيانات قابلة للقراءة آليًا داخل حقل الباركود.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) وأضف قيمة الباركود.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [BarcodeField](https://reference.aspose.com/pdf/java/com.aspose.pdf/barcodefield/) وأضف قيمة الباركود.
 1. أضف الحقل إلى النموذج واحفظ المستند.
 
 ```java

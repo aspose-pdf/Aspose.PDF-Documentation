@@ -1,11 +1,11 @@
 ---
-title: الحصول على خصائص نافذة المستند وعرض الصفحة في بايثون
-linktitle: الحصول على خصائص نافذة المستند وعرض الصفحة في بايثون
+title: الحصول على خصائص نافذة المستند وعرض الصفحة في Python
+linktitle: الحصول على خصائص نافذة المستند وعرض الصفحة في Python
 type: docs
 weight: 30
 url: /ar/java/get-document-window-and-page-display-properties-in-python/
-description: فهم كيفية استرداد خصائص نافذة المستند وعرض الصفحة من ملف PDF في بايثون باستخدام Aspose.PDF لتقديم دقيق.
-lastmod: "2026-10-01"
+description: فهم كيفية استرداد خصائص نافذة المستند وعرض الصفحة من ملف PDF في Python باستخدام Aspose.PDF لتقديم دقيق.
+lastmod: "2026-10-05"
 ---
 للحصول على خصائص نافذة المستند وعرض الصفحة لوثيقة PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء الفئة **GetDocumentWindow**.
 
@@ -51,8 +51,8 @@ print "PageLayout :-" + str(doc.getPageLayout())
 print "pageMode :-" + str(doc.getPageMode())
 ```
 
-**تنزيل التعليمات البرمجية الجارية**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تنزيلВ **الحصول على خصائص نافذة المستند وعرض الصفحات (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيل **الحصول على خصائص نافذة المستند وعرض الصفحات (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)

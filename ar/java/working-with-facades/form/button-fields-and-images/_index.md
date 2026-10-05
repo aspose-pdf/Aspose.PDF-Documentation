@@ -5,12 +5,12 @@ type: docs
 weight: 40
 url: /ar/java/button-fields-and-images/
 description: تعلم كيفية إضافة مظهر صورة إلى حقل زر في نموذج PDF باستخدام واجهة Form في Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إضافة مظهر صورة إلى حقل زر PDF في Java
 Abstract: توضح هذه المقالة كيفية استخدام واجهة Form في Aspose.PDF for Java لربط نموذج PDF، تحميل صورة كتيار، تعبئة حقل زر صورة، وحفظ المستند المحدث.
 ---
-مثال جافا في `FormExamples.addImageAppearanceToButtonField(...)` يُظهر كيفية تحديث مظهر حقل الزر باستخدام تدفق صورة.
+مثال Java في `FormExamples.addImageAppearanceToButtonField(...)` يُظهر كيفية تحديث مظهر حقل الزر باستخدام تدفق صورة.
 
 سير العمل بسيط:
 

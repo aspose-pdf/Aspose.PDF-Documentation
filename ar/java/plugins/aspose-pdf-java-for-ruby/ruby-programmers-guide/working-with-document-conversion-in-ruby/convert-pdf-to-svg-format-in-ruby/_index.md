@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/convert-pdf-to-svg-format-in-ruby/
 description: اكتشف كيفية تحويل ملفات PDF إلى تنسيق SVG باستخدام Ruby و Aspose.PDF، مما يتيح رسومات متجهة قابلة للتوسع والتحرير.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تحويل PDF إلى SVG
 
@@ -39,6 +39,6 @@ puts "Document has been converted successfully"
 
 ## تنزيل الكود قيد التشغيل
 
-تحميلВ **تحويل PDF إلى تنسيق SVG (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+تحميل **تحويل PDF إلى تنسيق SVG (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftosvg.rb)

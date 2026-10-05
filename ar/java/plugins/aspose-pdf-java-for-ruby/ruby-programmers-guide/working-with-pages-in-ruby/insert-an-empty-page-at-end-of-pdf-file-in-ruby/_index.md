@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
 description: اكتشف كيفية إدراج صفحة فارغة في نهاية مستند PDF باستخدام Ruby و Aspose.PDF، مما يضيف مرونة إلى مهام معالجة ملفات PDF الخاصة بك.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - إدراج صفحة فارغة في نهاية ملف PDF
 
@@ -35,6 +35,6 @@ puts "Empty page added successfully!"
 
 ## تحميل الكود المشغَّل
 
-تحميل **إدراج صفحة فارغة في نهاية ملف PDF (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **إدراج صفحة فارغة في نهاية ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)

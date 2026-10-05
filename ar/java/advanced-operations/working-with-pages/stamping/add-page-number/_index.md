@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/add-page-number/
 description: تعرف على كيفية إضافة طوابع رقم الصفحة إلى مستندات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,9 +16,9 @@ Abstract: تشرح هذه المقالة كيفية إضافة طوابع رقم
 ## إضافة طابع رقم الصفحة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) كائن.
-1. قم بتكوين خيارات وضع الختم المطلوبة وخيارات الترقيم.
-1. قم بتعيين خيارات تنسيق النص المطلوبة، بما في ذلك [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) و [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. أنشئ كائنًا من الفئة [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
+1. اضبط خيارات وضع الختم المطلوبة وخيارات الترقيم.
+1. عيّن خيارات تنسيق النص المطلوبة، بما في ذلك [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) و [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. أضف المُكوَّن المُعد [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) إلى الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

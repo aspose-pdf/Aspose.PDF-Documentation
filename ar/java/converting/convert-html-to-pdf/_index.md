@@ -4,7 +4,7 @@ linktitle: تحويل HTML إلى ملف PDF
 type: docs
 weight: 40
 url: /ar/java/convert-html-to-pdf/
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 description: تعرّف على كيفية تحويل HTML و MHTML وصفحات الويب إلى PDF في Java باستخدام Aspose.PDF، بما في ذلك إعدادات الوسائط، قواعد صفحات CSS، تضمين الخط، محتوى SVG، والإخراج بصفحة واحدة.
 sitemap:
     changefreq: "monthly"
@@ -19,9 +19,9 @@ Abstract: تشرح هذه المقالة كيفية تحويل ملفات HTML �
 
 استخدم هذا المثال عندما يجب تحويل ملف HTML محلي مباشرةً إلى مستند PDF.
 
-1. إنشاء [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) كائن لتكوين كيفية تفسير مصدر HTML أثناء الاستيراد.
-1. تعيين [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) إلى `ScaleToPageWidth` لذلك يتم تعديل محتوى HTML الواسع ليتناسب مع عرض صفحة PDF المستهدفة بدلاً من قطعه.
-1. قم بفتح ملف HTML المصدر عن طريق تمرير مساره وخيارات التحميل المُكوَّنة إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
+1. أنشئ كائنًا من الفئة [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) لتكوين كيفية تفسير مصدر HTML أثناء الاستيراد.
+1. عيّن [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) إلى `ScaleToPageWidth` لذلك يتم تعديل محتوى HTML الواسع ليتناسب مع عرض صفحة PDF المستهدفة بدلاً من قطعه.
+1. افتح ملف HTML المصدر عن طريق تمرير مساره وخيارات التحميل المُكوَّنة إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
 1. احفظ ما تم إنشاؤه [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كملف PDF في مسار الإخراج المستهدف.
 
 ```java
@@ -39,10 +39,10 @@ public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب التحكم في معالجة نوع وسائط CSS أثناء تحويل HTML.
 
-1. إنشاء [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) مثيل لإعدادات التحويل.
-1. تعيين [`HtmlMediaType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlmediatype/) إلى `Screen` عند الحاجة إلى عرض HTML باستخدام قواعد CSS المخصصة للعرض على الشاشة بدلاً من وسائط الطباعة.
+1. أنشئ مثيلًا [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) لإعدادات التحويل.
+1. عيّن [`HtmlMediaType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlmediatype/) إلى `Screen` عند الحاجة إلى عرض HTML باستخدام قواعد CSS المخصصة للعرض على الشاشة بدلاً من وسائط الطباعة.
 1. افتح ملف HTML باستخدام خيارات التحميل المكوَّنة بحيث يتم تطبيق الأنماط المعتمدة على استعلامات الوسائط أثناء التحويل.
-1. احفظ الناتج [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كملف PDF.
+1. احفظ الناتج [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كملف PDF..
 
 ```java
 public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
@@ -59,9 +59,9 @@ public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عند CSS `@page` يجب أن تؤثر القواعد على تخطيط صفحة PDF النهائي.
 
-1. إنشاء [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) المثيل قبل فتح ملف HTML.
-1. تكوين `setPriorityCssPageRule(false)` عندما يجب أن تتجاوز إعدادات التخطيط الأخرى الـ CSS `@page` الإعلانات في ترميز المصدر.
-1. قم بتحميل محتوى HTML إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مع الخيارات المُكوَّنة بحيث يتم حل تخطيط الصفحة أثناء الاستيراد.
+1. أنشئ المثيل [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) قبل فتح ملف HTML..
+1. اضبط `setPriorityCssPageRule(false)` عندما يجب أن تتجاوز إعدادات التخطيط الأخرى CSS `@page` الإعلانات في ترميز المصدر.
+1. حمّل محتوى HTML إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مع الخيارات المُكوَّنة بحيث يتم حل تخطيط الصفحة أثناء الاستيراد.
 1. احفظ ملف PDF المُنتج.
 
 ```java
@@ -79,8 +79,8 @@ public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outp
 
 استخدم هذا المثال عندما يجب على ملف PDF الناتج الحفاظ على خطوط HTML عن طريق تضمينها.
 
-1. إنشاء [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) مثيل لتكوين استيراد HTML.
-1. تمكين `setEmbedFonts(true)` لذا يتم تخزين الخطوط التي تم حلّها أثناء عرض HTML في ملف PDF الناتج.
+1. أنشئ مثيلًا [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) لتكوين استيراد HTML..
+1. فعّل `setEmbedFonts(true)` لذا يتم تخزين الخطوط التي تم حلّها أثناء عرض HTML في ملف PDF الناتج.
 1. افتح مصدر HTML باستخدام خيارات التحميل هذه للحفاظ على الطباعة الأصلية المتاحة في المستند النهائي.
 1. احفظ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كملف PDF مع تضمين موارد الخط المدمجة.
 
@@ -99,8 +99,8 @@ public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب الاحتفاظ بمحتوى HTML الطويل على صفحة PDF واحدة بدلاً من التدفق عبر صفحات متعددة.
 
-1. إنشاء [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) مثيل لإعدادات التحويل.
-1. تمكين `setRenderToSinglePage(true)` لذا فإن HTML المستورد يُعرض على صفحة PDF واحدة بدلاً من أن يتم تقسيمه على عدة صفحات.
+1. أنشئ مثيلًا [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) لإعدادات التحويل.
+1. فعّل `setRenderToSinglePage(true)` لذا فإن HTML المستورد يُعرض على صفحة PDF واحدة بدلاً من أن يتم تقسيمه على عدة صفحات.
 1. افتح ملف HTML المصدر باستخدام خيارات التحميل المكوَّنة ودع Aspose.PDF يبني تخطيط الصفحة في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. احفظ ملف PDF الناتج.
 
@@ -119,9 +119,9 @@ public static void convertHtmlToPdfRenderContentToSamePage(Path inputFile, Path 
 
 استخدم هذا المثال عندما يتضمن مصدر HTML بيانات SVG مدمجة يجب عرضها في ملف PDF.
 
-1. إنشاء [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) مثال يضع الدليل الأب لملف HTML كمسار أساسي بحيث يمكن حل الموارد ذات الصلة بشكل ثابت أثناء التحويل.
+1. أنشئ كائنًا من الفئة [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) مثال يضع الدليل الأب لملف HTML كمسار أساسي بحيث يمكن حل الموارد ذات الصلة بشكل ثابت أثناء التحويل.
 1. افتح ملف HTML الذي يحتوي على ترميز SVG مضمن بتمرير مسار المصدر وخيارات التحميل إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
-1. دع Aspose.PDF يعيد رسم DOM HTML مع العناصر المدمجة SVG إلى محتوى صفحة PDF.
+1. دع Aspose.PDF يعيد رسم DOM HTML مع العناصر المدمجة SVG إلى محتوى صفحة PDF..
 1. احفظ مستند PDF المُولَّد.
 
 ```java
@@ -138,10 +138,10 @@ public static void convertHtmlToPdfWithSvgData(Path inputFile, Path outputFile) 
 
 استخدم هذا المثال عندما يجب عرض عنوان URL ويب مباشر وحفظه كمستند PDF.
 
-1. إنشاء [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) مثال مع عنوان URL الهدف بحيث يمكن حل الموارد النسبية مثل أوراق الأنماط والصور بالنسبة لهذا العنوان.
-1. تحويل سلسلة URL إلى `URL` الكائن وفتح تدفق الإدخال الخاص به لجلب محتوى HTML الحي.
-1. إنشاء [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) من تدفق الاستجابة وخيارات التحميل المكوَّنة بحيث تتم معالجة الصفحة التي تم تنزيلها باستخدام عنوان URL الأساسي الصحيح.
-1. احفظ صفحة الويب المعروضة كملف PDF وأغلق موارد التدفق تلقائيًا باستخدام try-with-resources.
+1. أنشئ كائنًا من الفئة [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) مثال مع عنوان URL الهدف بحيث يمكن حل الموارد النسبية مثل أوراق الأنماط والصور بالنسبة لهذا العنوان.
+1. حوّل سلسلة URL إلى الكائن `URL` وفتح تدفق الإدخال الخاص به لجلب محتوى HTML الحي.
+1. أنشئ كائنًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) من تدفق الاستجابة وخيارات التحميل المكوَّنة بحيث تتم معالجة الصفحة التي تم تنزيلها باستخدام عنوان URL الأساسي الصحيح.
+1. احفظ صفحة الويب المعروضة كملف PDF وأغلق موارد التدفق تلقائيًا باستخدام try-with-resources..
 
 ```java
 public static void convertWebPageToPdf(String urlString, Path outputFile) {
@@ -165,9 +165,9 @@ public static void convertWebPageToPdf(String urlString, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل ملف MHTML مؤرشف إلى مستند PDF.
 
-1. إنشاء [`MhtLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mhtloadoptions/) المثيل لإخبار Aspose.PDF بتحميل المصدر كـ MIME HTML content.
+1. أنشئ المثيل [`MhtLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mhtloadoptions/) لإخبار Aspose.PDF بتحميل المصدر كـ MIME HTML content..
 1. افتح `.mht` أو `.mhtml` ملف عن طريق تمرير مساره وخيارات تحميل MHTML إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
-1. دع Aspose.PDF يقوم بتحليل محتوى HTML المؤرشف والموارد المدمجة فيه إلى نموذج مستند PDF.
+1. دع Aspose.PDF يقوم بتحليل محتوى HTML المؤرشف والموارد المدمجة فيه إلى نموذج مستند PDF..
 1. احفظ ملف PDF المُنتج.
 
 ```java

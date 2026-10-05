@@ -1,11 +1,11 @@
 ---
-title: افتح مستند PDF برمجيًا
-linktitle: افتح PDF
+title: فتح مستند PDF برمجيًا
+linktitle: فتح PDF
 type: docs
 weight: 20
 url: /ar/java/open-pdf-document/
 description: تعلم كيفية فتح ملف PDF في Java باستخدام Aspose.PDF من مسار ملف أو تدفق أو باستخدام كلمة مرور.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -23,7 +23,7 @@ Abstract: توضح هذه المقالة كيفية فتح مستندات PDF م
 1. افتح [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) من `InputStream`.
 1. افتح مشفرًا [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) عن طريق توفير كلمة المرور.
 
-## افتح المستند من الملف
+## فتح المستند من الملف
 
 ```java
 public static void openDocumentFromFile(Path inputFile) {
@@ -45,7 +45,7 @@ public static void openDocumentFromStream(Path inputFile) throws Exception {
 }
 ```
 
-## افتح مستندًا مشفرًا
+## فتح مستند مشفرًا
 
 ```java
 public static void openDocumentEncrypted(Path inputFile) {

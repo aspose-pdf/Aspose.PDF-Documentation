@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/add-watermarks/
 description: تعلم كيفية إضافة واستخراج وحذف عناصر العلامة المائية في ملفات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: تشرح هذه المقالة كيفية إضافة وفحص وإزا
 استخدم هذا المثال عندما تحتاج إلى فحص عناصر العلامة المائية الموجودة وقراءة نصها أو موقعها.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار عبر مجموعة القطع الأثرية للصفحة المستهدفة.
-1. تصفية قطع الأثر المتعلقة بالعلامة المائية للترقيم وطباعة نصها ومستطيلاتها.
+1. مرّ على مجموعة القطع الأثرية للصفحة المستهدفة.
+1. صفِّ قطع الأثر المتعلقة بالعلامة المائية للترقيم واطبع نصها ومستطيلاتها.
 
 ```java
 public static void extractWatermarkFromPdf(Path inputFile) {
@@ -41,7 +41,7 @@ public static void extractWatermarkFromPdf(Path inputFile) {
 استخدم هذا المثال عندما يجب أن تعرض الصفحة علامة مائية نصية متمركزة مع دوران مخصص، وتعتيم، وتحديد موضع الخلفية.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) وقم بتكوين حالة النص وإعدادات الموضع الخاصة به.
+1. أنشئ كائنًا من الفئة [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) واضبط حالة النص وإعدادات الموضع الخاصة به.
 1. أضف العلامة المائية إلى الصفحة واحفظ ملف الإخراج.
 
 ```java
@@ -72,7 +72,7 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 استخدم هذا النهج عندما يجب إزالة عناصر العلامة المائية الموجودة من الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار مجموعة عناصر الصفحة بترتيب عكسي.
+1. مرّ على مجموعة عناصر الصفحة بترتيب عكسي.
 1. احذف عناصر ترقيم الصفحات التي يكون النوع الفرعي لها هو العلامة المائية، ثم احفظ المستند.
 
 ```java

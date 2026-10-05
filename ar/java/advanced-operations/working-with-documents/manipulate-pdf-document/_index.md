@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/manipulate-pdf-document/
 description: تعرّف على كيفية التحقق من صحة وثائق PDF وتنسيقها وتعديلها في Java، بما في ذلك إدارة TOC وفحوصات PDF/A.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,7 @@ Abstract: تشرح هذه المقالة كيفية معالجة مستندات 
 استخدم هذا المثال عندما تحتاج إلى التحقق مما إذا كان المستند يلتزم بمعيار الأرشفة PDF/A-1a.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تشغيل التحقق من الصحة مقابل المطلوب [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) الهدف.
+1. شغّل التحقق من الصحة مقابل المطلوب [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) الهدف.
 1. احفظ تقرير التحقق إلى مسار الإخراج المحدد.
 
 ```java
@@ -36,7 +36,7 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 يقوم هذا الاختلاف بالتحقق من صحة نفس مستند المصدر مقابل مستوى التوافق PDF/A-1b.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. استدع طريقة التحقق مع [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) قيمة لـ PDF/A-1b.
+1. استدعِ طريقة التحقق مع [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) قيمة لـ PDF/A-1b.
 1. اكتب نتيجة التحقق إلى ملف تقرير الإخراج.
 
 ```java
@@ -52,8 +52,8 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 استخدم هذا النهج عندما يجب أن يتضمن المستند صفحة TOC مُولَّدة مع روابط إلى صفحات المحتوى.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إدراج TOC جديد [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وتهيئتها [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. إنشاء [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) الإدخالات التي تشير إلى صفحات الوجهة.
+1. أدرج صفحة TOC جديدة باستخدام [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وتهيئتها [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. أنشئ كائنًا من الفئة [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) الإدخالات التي تشير إلى صفحات الوجهة.
 1. احفظ المستند المحدث.
 
 ```java
@@ -89,8 +89,8 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 يوضح هذا المثال كيفية تعيين إعدادات بصرية مختلفة لمستويات جدول المحتويات المتعددة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. أضف TOC إلى [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) و تكوين [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) تنسيق المصفوفة.
-1. إنشاء نموذج [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) إدخالات بمستويات مختلفة.
+1. أضف TOC إلى [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) واضبط [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) تنسيق المصفوفة.
+1. أنشئ نموذج [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) إدخالات بمستويات مختلفة.
 1. احفظ المستند مع TOC المنسق.
 
 ```java
@@ -190,7 +190,7 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أدرج TOC في [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وحدد بادئة رقم الصفحة المطلوبة في [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
-1. إنشاء [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) مدخلات تشير إلى كل صفحة.
+1. أنشئ كائنًا من الفئة [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) مدخلات تشير إلى كل صفحة.
 1. احفظ المستند المحدث.
 
 ```java
@@ -222,10 +222,10 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 
 ## إضافة سكريبت انتهاء صلاحية PDF
 
-استخدم هذا النهج عندما يجب على المستند تشغيل جافا سكريبت عند الفتح وإظهار تحذير انتهاء الصلاحية بعد تاريخ محدد.
+استخدم هذا النهج عندما يجب على المستند تشغيل Java سكريبت عند الفتح وإظهار تحذير انتهاء الصلاحية بعد تاريخ محدد.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف أي محتوى مطلوب.
-1. إنشاء [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) مع منطق انتهاء الصلاحية.
+1. أنشئ كائنًا من الفئة [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) مع منطق انتهاء الصلاحية.
 1. عيّن البرنامج النصي كإجراء فتح المستند واحفظ ملف الإخراج.
 
 ```java
@@ -252,8 +252,8 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 يقوم هذا المثال بتحويل حقول النموذج التفاعلية إلى محتوى صفحة ثابت بحيث يصبح المستند الناتج غير قابل للتعديل كنموذج.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تحقق مما إذا كان المستند يحتوي على عناصر النموذج.
-1. تسوية كل [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) ممثلة بـ [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. تحقّق مما إذا كان المستند يحتوي على عناصر النموذج.
+1. سطّح كل [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) ممثلة بـ [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
 1. احفظ المستند المسطح.
 
 ```java

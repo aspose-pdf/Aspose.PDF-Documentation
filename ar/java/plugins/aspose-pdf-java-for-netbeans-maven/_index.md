@@ -5,15 +5,15 @@ type: docs
 weight: 70
 url: /ar/java/aspose-pdf-java-for-netbeans-maven/
 description: "تعرّف على كيفية استخدام ملحق Aspose.PDF Java لـ NetBeans Maven لإنشاء المشاريع والعمل مع ميزات PDF داخل بيئة التطوير NetBeans IDE."
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## المقدمة
 
 ### بيئة تطوير NetBeans IDE
 
-NetBeans هي بيئة تطوير جافا متكاملة بالكامل مكتوبة بالكامل بلغة جافا. تُستخدم أساسًا لتطوير جافا ولكنها تدعم أيضًا لغات أخرى، وعلى وجه الخصوص PHP و C/C++ و HTML5.
+NetBeans هي بيئة تطوير Java متكاملة بالكامل مكتوبة بالكامل بلغة Java. تُستخدم أساسًا لتطوير Java ولكنها تدعم أيضًا لغات أخرى، وعلى وجه الخصوص PHP و C/C++ و HTML5.
 
-تتيح لك بيئة تطوير NetBeans IDE تطوير تطبيقات جافا لسطح المكتب، والهواتف المحمولة، والويب بسرعة وسهولة، بالإضافة إلى تطبيقات HTML5 باستخدام HTML و JavaScript و CSS. إنها مجانية ومفتوحة المصدر وتتمتع بمجتمع كبير من المستخدمين والمطورين حول العالم.
+تتيح لك بيئة تطوير NetBeans IDE تطوير تطبيقات Java لسطح المكتب، والهواتف المحمولة، والويب بسرعة وسهولة، بالإضافة إلى تطبيقات HTML5 باستخدام HTML و JavaScript و CSS. إنها مجانية ومفتوحة المصدر وتتمتع بمجتمع كبير من المستخدمين والمطورين حول العالم.
 
 فريق NetBeans يدعم المنتج بنشاط ويسعى للحصول على اقتراحات الميزات من المجتمع الأوسع. يسبق كل إصدار وقت لاختبار المجتمع وتقديم الملاحظات.
 
@@ -64,7 +64,7 @@ NetBeans هي بيئة تطوير جافا متكاملة بالكامل مكت�
 
 ## التنزيل
 
-### نزّل NetBeans
+### تنزيل NetBeans
 
 يجب تثبيت NetBeans IDE قبل تنزيل الإضافة **Aspose.PDF Java for NetBeans (Maven)**.
 
@@ -73,11 +73,11 @@ NetBeans هي بيئة تطوير جافا متكاملة بالكامل مكت�
 لتنزيل NetBeans IDE،
 
 1. انتقل إلى:<https://netbeans.apache.org/download/index.html>
-1. انقر على تنزيل لتحميل الحزمة المناسبة لـ NetBeans IDE.
+1. انقر على تنزيل لتحميل الحزمة المناسبة لـ NetBeans IDE..
 
 حمّل فقط حزمة تنزيل NetBeans المدعومة من Java EE / SE للإصدار الأحدث الحالي، أي **NetBeans IDE 8.1**.
 
-### حمّل Aspose.PDF Java for NetBeans (Maven)
+### تنزيل Aspose.PDF Java for NetBeans (Maven)
 
 - يمكن تنزيل الإضافة مباشرةً من عنوان URL لاستضافة الإضافة NetBeans:<http://plugins.netbeans.org/plugin/63218>
   ويمكن لاحقًا تثبيتها باستخدام خيار IDE:
@@ -98,7 +98,7 @@ NetBeans هي بيئة تطوير جافا متكاملة بالكامل مكت�
 
 استخدام Aspose.PDF لـ NetBeans - Maven
 
-### كيفية تطبيق ترخيص Aspose؟
+### تطبيق ترخيص Aspose
 
 تستخدم هذه الإضافة نسخة تجريبية من Aspose.PDF. بمجرد أن تكون راضيًا عن التجربة، يمكنك شراء ترخيص من [موقع Aspose](https://purchase.aspose.com/buy).
 لإزالة رسالة التقييم وقيود الميزات، يجب تطبيق ترخيص المنتج. ستحصل على ملف الترخيص بعد شراء المنتج. يرجى اتباع الخطوات أدناه لتطبيق الترخيص.
@@ -128,11 +128,11 @@ Aspose.PDF Java for NetBeans (Maven) مفتوح المصدر وتتوفر شيف
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_NetBeans\(Maven\))
 
-### كيفية تكوين الشيفرة المصدرية لـ Aspose.PDF Java for NetBeans (Maven)
+### تكوين الشيفرة المصدرية لـ Aspose.PDF Java for NetBeans (Maven)
 
 الخطوات البسيطة التالية ستقود بسلاسة إلى تكوين ناجح لشفرة مصدر المكوّن الإضافي **"Aspose.PDF Java for NetBeans (Maven)"** في بيئة التطوير NetBeans IDE
 
-1. قم بتنزيل / استنساخ شفرة المصدر.
-1. اختر **File** > **Open Project**
+1. نزّل / استنساخ شفرة المصدر.
+1. اختر **File** > **Open Project**.
 1. تصفح إلى أحدث مصدر للمشروع الذي قمت بتنزيله وافتح المشروع.
 1. شفرة المكوّن الإضافي Aspose.PDF Java for NetBeans (Maven) جاهزة الآن للتعزيز.

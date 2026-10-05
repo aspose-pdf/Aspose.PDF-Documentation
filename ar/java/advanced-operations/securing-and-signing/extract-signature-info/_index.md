@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/extract-image-and-signature-information/
 description: تعلم كيفية استخراج تفاصيل الشهادة والتوقيع الرقمي من ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Abstract: تشرح هذه المقالة كيفية فحص التواقيع ال
 
 ## قراءة معلومات التوقيع
 
-1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) واجهة وربط مستند PDF المصدر.
-1. الوصول إلى اسم توقيع المستند وتكوين تدفق فحص التوقيع المطلوب وفقًا للمثال.
-1. قراءة والتحقق من معلومات التوقيع من [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) واجهة.
+1. أنشئ واجهة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) وربط مستند PDF المصدر.
+1. انتقل إلى اسم توقيع المستند واضبط تدفق فحص التوقيع المطلوب وفقًا للمثال.
+1. اقرأ والتحقق من معلومات التوقيع من واجهة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. اقرأ القيم المرجعة أو واصل إلى خطوة المعالجة التالية.
 
 ```java
@@ -41,9 +41,9 @@ public static void getSignatureInformation(Path inputFile) {
 
 ## تحقق من التوقيع
 
-1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) واجهة وربط مستند PDF المصدر.
-1. الوصول إلى اسم توقيع المستند وتكوين تدفق التحقق المطلوب من قبل المثال.
-1. قراءة والتحقق من معلومات التوقيع من [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) واجهة.
+1. أنشئ واجهة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) وربط مستند PDF المصدر.
+1. انتقل إلى اسم توقيع المستند واضبط تدفق التحقق المطلوب من قبل المثال.
+1. اقرأ والتحقق من معلومات التوقيع من واجهة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {
@@ -63,9 +63,9 @@ public static void verifyPdfSignature(Path inputFile) {
 
 ## استخراج شهادة التوقيع
 
-1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) واجهة وربط مستند PDF المصدر.
-1. الوصول إلى اسم توقيع المستند المطلوب لاستخراج الشهادة.
-1. اكتب المخرجات المستخرجة أو افحص القيم المرجعة من [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) واجهة.
+1. أنشئ واجهة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) وربط مستند PDF المصدر.
+1. انتقل إلى اسم توقيع المستند المطلوب لاستخراج الشهادة.
+1. اكتب المخرجات المستخرجة أو افحص القيم المرجعة من واجهة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
 public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {

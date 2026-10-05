@@ -1,16 +1,16 @@
 ---
-title: إضافة صفحات PDF في جافا
+title: إضافة صفحات PDF في Java
 linktitle: إضافة صفحات
 type: docs
 weight: 10
 url: /ar/java/add-pages/
-description: تعلم كيفية إضافة أو إدراج صفحات في مستندات PDF باستخدام جافا.
-lastmod: "2026-10-01"
+description: تعلم كيفية إضافة أو إدراج صفحات في مستندات PDF باستخدام Java.
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: إضافة أو إدراج صفحات PDF باستخدام جافا
+AlternativeHeadline: إضافة أو إدراج صفحات PDF باستخدام Java
 Abstract: تشرح هذه المقالة كيفية إضافة صفحات إلى ملفات PDF باستخدام Aspose.PDF for Java. تغطي إدراج صفحة فارغة في موضع محدد، وإضافة صفحة في نهاية المستند، واستيراد صفحة من ملف PDF آخر.
 ---
 يتيح لك Aspose.PDF for Java إدراج صفحات فارغة أو استيراد صفحات من مستند آخر.
@@ -37,7 +37,7 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما تحتاج إلى توسيع المستند بصفحة فارغة جديدة في النهاية.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة صفحة جديدة إلى نهاية مجموعة الصفحات.
+1. أضف صفحة جديدة إلى نهاية مجموعة الصفحات.
 1. احفظ ملف PDF المعدل.
 
 ```java
@@ -49,11 +49,11 @@ public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
 }
 ```
 
-## أضف صفحة من مستند آخر
+## إضافة صفحة من مستند آخر
 
 استخدم هذا المثال عندما تريد استيراد صفحة من ملف PDF إلى ملف PDF آخر.
 
-1. إنشاء الوجهة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح المستند المصدر.
+1. أنشئ الوجهة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح المستند المصدر.
 1. أضف أي محتوى مطلوب للوجهة واستورد الصفحة المستهدفة من ملف PDF المصدر.
 1. احفظ المستند الناتج.
 

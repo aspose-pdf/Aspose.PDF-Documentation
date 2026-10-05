@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/get-document-window-and-page-display-properties-in-php/
 description: تعلم كيفية الوصول إلى خصائص نافذة المستند وعرض الصفحة لملف PDF في PHP باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - الحصول على خصائص نافذة المستند وعرض الصفحة
 
@@ -54,8 +54,8 @@ print "PageLayout :-" . $doc->getPageLayout() . PHP_EOL;
 print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 ```
 
-**تنزيل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-DownloadВ **الحصول على خصائص نافذة المستند وعرض الصفحة (Aspose.PDF)**В من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+Download **الحصول على خصائص نافذة المستند وعرض الصفحة (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

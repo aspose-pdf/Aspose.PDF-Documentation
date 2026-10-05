@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/manipulating-tables/
 description: تعلم كيفية فحص وتعديل الجداول في مستندات PDF الحالية باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -48,7 +48,7 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب استبدال الجدول الأصلي بالكامل بجدول تم إنشاؤه حديثًا.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واكتشاف الجداول على الصفحة.
-1. إنشاء جديد [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) بالهيكل المطلوب.
+1. أنشئ جديد [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) بالهيكل المطلوب.
 1. استبدل الجدول الممتص واحفظ ملف PDF الناتج.
 
 ```java

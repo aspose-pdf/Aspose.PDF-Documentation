@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/split-pdf-into-single-pages/
 description: قسّم ملف PDF إلى ملفات إخراج من صفحة واحدة في Java باستخدام واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,10 +19,10 @@ Abstract: تعرّف على كيفية تقسيم PDF إلى ملفات صفحة
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثيل.
-2. قم بإعداد نمط ملف الإخراج الذي يتضمن عنصر نائب للصفحة مثل `%NUM%`.
-3. اتصال `splitToPages` مع ملف المصدر ونمط الإخراج.
-4. حفظ ملفات الصفحات المفردة المُنشأة.
+1. أنشئ مثيلًا `PdfFileEditor`.
+2. اضبط نمط ملف الإخراج الذي يتضمن عنصر نائب للصفحة مثل `%NUM%`.
+3. استدعِ `splitToPages` مع ملف المصدر ونمط الإخراج.
+4. احفظ ملفات الصفحات المفردة المُنشأة.
 
 ```java
 public static void splitPdfIntoSinglePages(Path inputFile, Path outputFilePattern) {

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/aspose-pdf-java-for-ruby/
 description: استكشف كيفية استخدام Aspose.PDF for Java في Ruby. اجمع بين قوة سكريبتات Ruby مع ميزات متقدمة لمعالجة PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## مقدمة
 
@@ -50,7 +50,7 @@ Aspose.PDF for Java يتيح لك إنشاء ملفات PDF مباشرةً عب�
 
 - [مكوّن Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
 
-### قم بتحميل الأمثلة من مواقع الترميز الاجتماعي
+### تنزيل الأمثلة من مواقع الترميز الاجتماعي
 
 الإصدارات التالية من الأمثلة القابلة للتشغيل متاحة للتحميل على المواقع المذكورة أدناه للترميز الاجتماعي:
 
@@ -72,7 +72,7 @@ GitHub
 
 {{< /highlight >}}
 
-1. قم بتنزيل مكوّن Aspose.PDF for Java المطلوب من الرابط التالي.
+1. نزّل مكوّن Aspose.PDF for Java المطلوب من الرابط التالي.
    <https://downloads.aspose.com/pdf/java>
 1. أنشئ المجلد "jars" في جذر جيم Aspose.PDF Java for Ruby وانسخ المكوّن الذي تم تنزيله فيه.
 
@@ -95,8 +95,8 @@ initialize_aspose_pdf
 لنفهم الشيفرة أعلاه.
 
 1. السطر الأول يتأكد من أن aspose pdf تم تحميله ومتوفر.
-1. قم بتضمين الملفات المطلوبة للوصول إلى aspose pdf.
-1. ابدأ تهيئة المكتبات. يتم تحميل فئات aspose JAVA من المسار المذكور في ملف aspose.yml/
+1. ضمّن الملفات المطلوبة للوصول إلى aspose pdf..
+1. ابدأ تهيئة المكتبات. يتم تحميل فئات aspose JAVA من المسار المذكور في ملف aspose.yml/.
 
 ## الدعم، التوسيع والمساهمة
 
@@ -125,10 +125,10 @@ Aspose.PDF Java for Ruby هو مشروع مفتوح المصدر ويتوفر ش
 يتضمن هذا القسم المواضيع التالية:
 
 - [تنزيل وتكوين Aspose.Pdf في Ruby](/pdf/ar/java/download-and-configure-aspose-pdf-in-ruby/)
-- [دليل مبرمجي روبي](/pdf/ar/java/ruby-programmers-guide/)
-  - [العمل مع كائن المستند في روبي](/pdf/ar/java/working-with-document-object-in-ruby/)
-    - [إضافة JavaScript في روبي](/pdf/ar/java/adding-javascript-in-ruby/)
-    - [إضافة طبقات إلى ملف PDF في روبي](/pdf/ar/java/add-layers-to-pdf-file-in-ruby/)
+- [دليل مبرمجي Ruby](/pdf/ar/java/ruby-programmers-guide/)
+  - [العمل مع كائن المستند في Ruby](/pdf/ar/java/working-with-document-object-in-ruby/)
+    - [إضافة JavaScript في Ruby](/pdf/ar/java/adding-javascript-in-ruby/)
+    - [إضافة طبقات إلى ملف PDF في Ruby](/pdf/ar/java/add-layers-to-pdf-file-in-ruby/)
     - [إضافة TOC إلى PDF موجود في Ruby](/pdf/ar/java/add-toc-to-existing-pdf-in-ruby/)
     - [الحصول على خصائص نافذة المستند وعرض الصفحة في Ruby](/pdf/ar/java/get-document-window-and-page-display-properties-in-ruby/)
     - [الحصول على معلومات ملف PDF في Ruby](/pdf/ar/java/get-pdf-file-information-in-ruby/)
@@ -148,12 +148,12 @@ Aspose.PDF Java for Ruby هو مشروع مفتوح المصدر ويتوفر ش
     - [إدراج صفحة فارغة في نهاية ملف PDF في Ruby](/pdf/ar/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/)
     - [إدراج صفحة فارغة في ملف PDF في Ruby](/pdf/ar/java/insert-an-empty-page-into-a-pdf-file-in-ruby/)
     - [تقسيم ملف PDF إلى صفحات فردية في Ruby](/pdf/ar/java/split-pdf-file-into-individual-pages-in-ruby/)
-    - [تحديث أبعاد الصفحة في روبي](/pdf/ar/java/update-page-dimensions-in-ruby/)
+    - [تحديث أبعاد الصفحة في Ruby](/pdf/ar/java/update-page-dimensions-in-ruby/)
   - [العمل مع النص في Ruby](/pdf/ar/java/working-with-text-in-ruby/)
     - [إضافة سلسلة HTML باستخدام DOM في Ruby](/pdf/ar/java/add-html-string-using-dom-in-ruby/)
     - [إضافة نص إلى ملف PDF موجود في Ruby](/pdf/ar/java/add-text-to-an-existing-pdf-file-in-ruby/)
     - [استخراج النص من جميع صفحات مستند PDF في Ruby](/pdf/ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/)
-  - [العمل مع تحويل المستندات في روبي](/pdf/ar/java/working-with-document-conversion-in-ruby/)
+  - [العمل مع تحويل المستندات في Ruby](/pdf/ar/java/working-with-document-conversion-in-ruby/)
     - [تحويل HTML إلى صيغة PDF في Ruby](/pdf/ar/java/convert-html-to-pdf-format-in-ruby/)
     - [تحويل صفحات PDF إلى صور في Ruby](/pdf/ar/java/convert-pdf-pages-to-images-in-ruby/)
     - [تحويل PDF إلى تنسيق DOC أو DOCX في Ruby](/pdf/ar/java/convert-pdf-to-doc-or-docx-format-in-ruby/)

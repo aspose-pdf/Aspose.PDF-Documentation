@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/integrate-table/
 description: تعلم كيفية دمج جداول PDF مع مصادر البيانات المنظمة مثل ملفات CSV في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: تشرح هذه المقالة كيفية دمج جداول PDF مع �
 
 استخدم هذا المثال عندما يجب تحويل أعمدة CSV المختارة إلى جدول PDF منسق.
 
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتكوين حدوده.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) واضبط حدوده.
 1. اكتشف فهارس الأعمدة المطلوبة من صف رأس ملف CSV.
 1. أضف صف الرأس وعدد الصفوف المطلوبة من البيانات، ثم أرجع الجدول.
 
@@ -56,9 +56,9 @@ public static Table createTableFromCsv(List<String[]> rows, int maxRows) {
 
 استخدم هذا المثال عندما يجب عرض مدخلات CSV كوثيقة جدول PDF.
 
-1. قراءة صفوف CSV من ملف الإدخال.
+1. اقرأ صفوف CSV من ملف الإدخال.
 1. معاينة مجموعة فرعية من الصفوف التي تم تحليلها في وحدة التحكم.
-1. إنشاء ملف PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), أضف الجدول المُنشأ، واحفظ ملف الإخراج.
+1. أنشئ ملف PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)، أضف الجدول المُنشأ، واحفظ ملف الإخراج.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {
@@ -79,7 +79,7 @@ public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows
 
 استخدم هذا المساعد عندما يجب العثور على أعمدة مسماة محددة في صف رأس CSV.
 
-1. قم بالتكرار عبر أسماء الأعمدة المطلوبة.
+1. مرّ على أسماء الأعمدة المطلوبة.
 1. ابحث في صف الرأس عن الفهارس المطابقة.
 1. أرجع مواضع الأعمدة المجموعة.
 
@@ -103,8 +103,8 @@ private static int[] findColumns(String[] header, String... names) {
 
 استخدم هذا المُساعد عندما يجب تحميل مصدر CSV في الذاكرة قبل إنشاء الجدول.
 
-1. قراءة جميع السطور من ملف الإدخال.
-1. قسّم كل سطر باستخدام أداة مساعد محلل CSV.
+1. اقرأ جميع السطور من ملف الإدخال.
+1. قسّم كل سطر باستخدام أداة مساعد محلل CSV..
 1. أرجع القيم المجمعة للصفوف.
 
 ```java
@@ -122,7 +122,7 @@ private static List<String[]> readCsv(Path inputFile) throws Exception {
 استخدم هذه الدالة المساعدة عندما قد يحتوي صف CSV على قيم محاطة بعلامات اقتباس وحروف اقتباس مهربة.
 
 1. تكرّر عبر الأحرف في السطر.
-1. تتبع ما إذا كان المُحلِّل حالياً داخل نص محاط بعلامات اقتباس.
+1. تتبّع ما إذا كان المُحلِّل حالياً داخل نص محاط بعلامات اقتباس.
 1. أنشئ قائمة القيم النهائية وأعدها كمصفوفة.
 
 ```java

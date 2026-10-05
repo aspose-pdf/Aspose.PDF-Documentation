@@ -4,16 +4,16 @@ linktitle: تعيين حد الحقل
 type: docs
 weight: 50
 url: /ar/java/set-field-limit/
-description: تعرف على كيفية تعيين حد أقصى لعدد الأحرف لحقل نموذج PDF في جافا باستخدام واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+description: تعرف على كيفية تعيين حد أقصى لعدد الأحرف لحقل نموذج PDF في Java باستخدام واجهة FormEditor في Aspose.PDF.
+lastmod: "2026-10-05"
 TechArticle: true
-AlternativeHeadline: تعيين حد عدد الأحرف لحقل نموذج PDF في جافا
+AlternativeHeadline: تعيين حد عدد الأحرف لحقل نموذج PDF في Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وتعيين الحد الأقصى لعدد الأحرف لحقل، وحفظ المستند المحدث باستخدام واجهة FormEditor في Aspose.PDF for Java.
 ---
 ## تعيين حد عدد الأحرف للحقل
 
-1. اربط ملف PDF المصدر إلى `FormEditor` واجهة.
-2. اتصال `setFieldLimit(...)` للحقول المستهدفة والحد الأقصى لعدد الأحرف.
+1. اربط ملف PDF المصدر إلى واجهة `FormEditor`.
+2. استدعِ `setFieldLimit(...)` للحقول المستهدفة والحد الأقصى لعدد الأحرف.
 3. احفظ المستند المحدث.
 
 ```java

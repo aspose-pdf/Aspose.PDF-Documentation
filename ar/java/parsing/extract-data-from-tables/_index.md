@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/extract-data-from-table-in-pdf/
 description: تعلم كيفية استخراج بيانات الجداول من ملفات PDF باستخدام Aspose.PDF for Java وتصدير الجداول المكتشفة للمعالجة الإضافية.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,9 +18,9 @@ Abstract: تشرح هذه المقالة كيفية استخراج ومعالج�
 استخدام `TableAbsorber` للعثور على الجداول في كل صفحة والتكرار عبر الصفوف والخلايا وقطاعات النص وقطعات النص.
 
 1. افتح ملف PDF المصدر في a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. التكرار عبر المستند [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الكائنات لأن الجداول تُكتشف صفحة بصفحة.
-1. إنشاء [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) لكل صفحة واستدع `visit(page)` لتعبئة قائمة الجداول المكتشفة.
-1. التنقل عبر المكتشف [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), و `TextSegment` الكائنات.
+1. مرّ على المستند الكائنات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) لأن الجداول تُكتشف صفحة بصفحة.
+1. أنشئ كائنًا من الفئة [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) لكل صفحة واستدعِ `visit(page)` لتعبئة قائمة الجداول المكتشفة.
+1. مرّ على المكتشف [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)، و الكائنات `TextSegment`.
 1. أنشئ نص الصف المستخرج من محتوى الجزء واطبع بيانات الجدول.
 
 ```java
@@ -65,9 +65,9 @@ public static void extractTablesFromPdf(Path inputFile) {
 
 1. افتح ملف PDF المصدر في a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
 1. احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وحدد المربع [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) الذي يحدد منطقة الاستخراج.
-1. إنشاء [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) و استدع `visit(page)` لاكتشاف الجداول في تلك الصفحة.
+1. أنشئ كائنًا من الفئة [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) واستدعِ `visit(page)` لاكتشاف الجداول في تلك الصفحة.
 1. قارن كل ما تم اكتشافه [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) مع حدود مستطيل التعليق التوضيحي.
-1. التكرار عبر المطابقة [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) و [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) الكائنات وإعادة بناء نص الصف.
+1. مرّ على المطابقة [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) و الكائنات [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) وإعادة بناء نص الصف.
 1. اطبع بيانات الجدول للمنطقة المحددة فقط.
 
 ```java
@@ -131,9 +131,9 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 ## تصدير الجداول إلى Excel
 
 1. افتح ملف PDF المصدر في a [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) للتصدير.
-1. ضبط تنسيق مخرجات Excel إلى `XLSX` لذا يتم كتابة تخطيط الجدول المكتشف كدفتر عمل Excel.
-1. اتصال `document.save(outputFile.toString(), excelSave)` لتصدير المستند بصيغة Excel.
+1. أنشئ كائنًا من الفئة [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) للتصدير.
+1. ضبط تنسيق مخرجات Excel إلى `XLSX` لذا يتم كتابة تخطيط الجدول المكتشف كدفتر عمل Excel..
+1. استدعِ `document.save(outputFile.toString(), excelSave)` لتصدير المستند بصيغة Excel..
 
 ```java
 public static void exportTablesToExcel(Path inputFile, Path outputFile) {

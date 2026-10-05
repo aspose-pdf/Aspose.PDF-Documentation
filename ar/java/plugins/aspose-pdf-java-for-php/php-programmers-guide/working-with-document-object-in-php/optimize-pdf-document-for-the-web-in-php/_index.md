@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/optimize-pdf-document-for-the-web-in-php/
 description: تعرف على كيفية تحسين مستند PDF للحصول على أداء ويب أسرع وتقليل حجم الملف باستخدام PHP وAspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تحسين PDF للويب
 
@@ -36,8 +36,8 @@ lastmod: "2026-10-01"
 }В В В
 ```
 
-**تنزيل الشيفرة الجارية**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تنزيلВ **تحسين PDF للويب (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيل **تحسين PDF للويب (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/Optimize.php)

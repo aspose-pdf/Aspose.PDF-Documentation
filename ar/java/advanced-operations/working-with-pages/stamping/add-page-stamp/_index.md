@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/page-stamps-in-the-pdf-file/
 description: تعلم كيفية إضافة طوابع صفحات PDF كطبقات فوقية أو خلفيات في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: تشرح هذه المقالة كيفية إضافة ختم صفحة �
 استخدم هذا المثال عندما يجب استخدام صفحة من PDF منفصل كختم خلفية.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) من صفحة PDF الخارجية.
-1. قم بتكوين الطابع وأضفه إلى الصفحة المستهدفة، ثم احفظ النتيجة.
+1. أنشئ كائنًا من الفئة [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) من صفحة PDF الخارجية.
+1. اضبط الطابع وأضفه إلى الصفحة المستهدفة، ثم احفظ النتيجة.
 
 ```java
 public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputFile) {
@@ -39,7 +39,7 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 استخدم هذا المثال عندما يجب أن تُظهر الصفحة المستهدفة الرقم الحالي مع تنسيق نص مخصص.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء وتكوين a [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
+1. أنشئ واضبط a [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. أضف الطابع إلى الصفحة واحفظ المستند.
 
 ```java
@@ -67,8 +67,8 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب أن يبدأ ترقيم الصفحات من قيمة مخصصة ويستخدم الأرقام الرومانية الكبيرة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) وتهيئ ترقيم الأرقام الرومانية.
-1. أضف العلامة إلى جميع الصفحات واحفظ ملف PDF.
+1. أنشئ كائنًا من الفئة [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) وتهيئ ترقيم الأرقام الرومانية.
+1. أضف العلامة إلى جميع الصفحات واحفظ ملف PDF..
 
 ```java
 public static void addPageNumStampRoman(Path inputFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/get-document-privileges/
 description: تعرف على كيفية فحص امتيازات مستند PDF في Java باستخدام واجهة PdfFileInfo.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعرف على كيفية استرجاع امتيازات المست�
 
 ### خطوات
 
-1. إنشاء `PdfFileInfo` كائن لملف PDF الإدخال.
-2. اتصال `getDocumentPrivilege()` لاسترجاع مجموعة الامتيازات.
-3. اقرأ العلامات البوليانية ذات الصلة من القيم المسترجعة `DocumentPrivilege` كائن.
-4. إغلاق الـ `PdfFileInfo` مثال عند الانتهاء.
+1. أنشئ كائن `PdfFileInfo` لملف PDF الإدخال.
+2. استدعِ `getDocumentPrivilege()` لاسترجاع مجموعة الامتيازات.
+3. اقرأ العلامات البوليانية ذات الصلة من القيم المسترجعة كائن `DocumentPrivilege`.
+4. أغلق `PdfFileInfo` مثال عند الانتهاء.
 
 ### مثال Java
 

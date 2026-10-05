@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/add-arc/
 description: تعلم كيفية رسم وتعبئة أشكال القوس في ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Aspose.PDF for Java يستخدم `Graph` مع كائنات الشكل مثل `Ar
 
 ## إضافة مخططات القوس
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفه إلى الصفحة.
-1. إنشاء [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) شكل وتكوين هندسته.
-1. أضف الـ [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) إلى الـ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفه إلى الصفحة.
+1. أنشئ شكل [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) واضبط هندسته.
+1. أضف [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
 1. عيّن خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
@@ -44,14 +44,14 @@ public static void addArc(Path outputFile) {
 
 المثال الكامل يضيف ثلاثة أقواس ذات أقطار وزوايا وألوان مختلفة إلى نفس الرسم البياني.
 
-## أضف قطعة قوس مملوءة
+## إضافة قطعة قوس مملوءة
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفه إلى الصفحة.
-1. إنشاء [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) شكل وتكوين إحداثياته.
-1. إنشاء [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) شكل وتكوين هندسته.
-1. أضف الـ [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) و [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) إلى الـ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفه إلى الصفحة.
+1. أنشئ شكل [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) واضبط إحداثياته.
+1. أنشئ شكل [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) واضبط هندسته.
+1. أضف [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) و [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

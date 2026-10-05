@@ -4,18 +4,18 @@ linktitle: عمليات الصور
 type: docs
 weight: 50
 url: /ar/java/pdfcontenteditor-image-operations/
-description: تعرف على تغطية عمليات الصور الحالية في جافا المتوفرة عبر واجهة PdfContentEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+description: تعرف على تغطية عمليات الصور الحالية في Java المتوفرة عبر واجهة PdfContentEditor في Aspose.PDF.
+lastmod: "2026-10-05"
 TechArticle: true
-AlternativeHeadline: سير عمل تحرير الصور في جافا باستخدام PdfContentEditor
+AlternativeHeadline: سير عمل تحرير الصور في Java باستخدام PdfContentEditor
 Abstract: يغطي هذا القسم سير العمل المتعلق بالصور الذي يدعمه حاليًا مجموعة أمثلة PdfContentEditor لجافا. يحتوي المستودع على مثال مباشر لاستبدال صورة، بينما يتم الاحتفاظ بمواضيع حذف الصور غير المدعومة كملاحظات نطاق صريحة.
 ---
-Java الحالية `PdfContentEditorExamples` الفئة تدعم مباشرة `replaceImage(...)`.
+Java الحالية الفئة `PdfContentEditorExamples` تدعم مباشرة `replaceImage(...)`.
 
 ## استبدال صورة
 
-1. ربط ملف PDF المصدر بـ `PdfContentEditor` واجهة.
-2. اتصال `replaceImage(...)` مع رقم الصفحة، فهرس الصورة، ومسار صورة الاستبدال.
+1. اربط ملف PDF المصدر بـ واجهة `PdfContentEditor`.
+2. استدعِ `replaceImage(...)` مع رقم الصفحة، فهرس الصورة، ومسار صورة الاستبدال.
 3. احفظ مستند PDF المحدث.
 
 ```java

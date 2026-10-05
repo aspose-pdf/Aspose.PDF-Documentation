@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/split-pdf-to-end/
 description: قسّم PDF من صفحة مختارة إلى النهاية في Java باستخدام واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: تعلم كيفية تقسيم PDF إلى النهاية باستخد�
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثيل.
-2. اتصال `splitToEnd` مع ملف المصدر، رقم الصفحة الابتدائي، وملف الإخراج.
+1. أنشئ مثيلًا `PdfFileEditor`.
+2. استدعِ `splitToEnd` مع ملف المصدر، رقم الصفحة الابتدائي، وملف الإخراج.
 3. احفظ مستند PDF الناتج.
 
 ```java

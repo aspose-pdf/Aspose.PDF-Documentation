@@ -5,15 +5,15 @@ type: docs
 weight: 60
 url: /ar/java/set-field-comb-number/
 description: تعرّف على كيفية تعيين رقم الكمب لحقل نموذج PDF في Java باستخدام الواجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: تعيين رقم الكمب لحقل نموذج PDF في Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وتعيين رقم الكمب لحقل، وحفظ المستند المحدث باستخدام الواجهة FormEditor في Aspose.PDF for Java.
 ---
 ## تعيين رقم الكمب لحقل
 
-1. ربط ملف PDF المصدر بـ `FormEditor` الواجهة.
-2. اتصال `setFieldCombNumber(...)` للحقل المستهدف وقيمة comb.
+1. اربط ملف PDF المصدر بـ `FormEditor` الواجهة.
+2. استدعِ `setFieldCombNumber(...)` للحقل المستهدف وقيمة comb..
 3. احفظ المستند المحدث.
 
 ```java

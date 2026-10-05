@@ -1,17 +1,17 @@
 ---
-title: الحصول على بيانات XMP الوصفية من ملف PDF في روبي
-linktitle: الحصول على بيانات XMP الوصفية من ملف PDF في روبي
+title: الحصول على بيانات XMP الوصفية من ملف PDF في Ruby
+linktitle: الحصول على بيانات XMP الوصفية من ملف PDF في Ruby
 type: docs
 weight: 60
 url: /ar/java/get-xmp-metadata-from-pdf-file-in-ruby/
-description: الوصول إلى بيانات XMP الوصفية ومعالجتها في مستندات PDF باستخدام روبي مع Aspose.PDF.
-lastmod: "2026-10-01"
+description: الوصول إلى بيانات XMP الوصفية ومعالجتها في مستندات PDF باستخدام Ruby مع Aspose.PDF.
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - الحصول على بيانات XMP الوصفية
 
 للحصول على بيانات XMP الوصفية من مستند PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **GetXMPMetadata**.
 
-كود روبي
+كود Ruby
 
 ```java
 # The path to the documents directory.

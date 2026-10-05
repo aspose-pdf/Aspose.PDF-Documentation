@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/add-stamp/
 description: تعلم كيفية إضافة ختم صورة إلى صفحات PDF في Java باستخدام واجهة PdfFileStamp.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,9 +20,9 @@ Abstract: تعلم كيفية إضافة محتوى الختم إلى مستند
 
 ### خطوات
 
-1. إنشاء `PdfFileStamp` إنشاء كائن وربط ملف PDF المصدر.
-2. إنشاء `Stamp` كائن.
-3. ربط الطابع بملف صورة باستخدام `bindImage`.
+1. أنشئ `PdfFileStamp` إنشاء كائن وربط ملف PDF المصدر.
+2. أنشئ كائن `Stamp`.
+3. اربط الطابع بملف صورة باستخدام `bindImage`.
 4. أضف الطابع إلى المستند باستخدام `addStamp`.
 5. احفظ الناتج وأغلق كائن الواجهة.
 
@@ -43,4 +43,4 @@ public static void addStampToPdf(Path inputFile, Path imageFile, Path outputFile
 }
 ```
 
-الحالي `PdfFileStampExamples.java` الفئة لا تتضمن عينة Java منفصلة لطوابع النص فقط أو التدوير أو تكوين الشفافية.
+الحالي الفئة `PdfFileStampExamples.java` لا تتضمن عينة Java منفصلة لطوابع النص فقط أو التدوير أو تكوين الشفافية.

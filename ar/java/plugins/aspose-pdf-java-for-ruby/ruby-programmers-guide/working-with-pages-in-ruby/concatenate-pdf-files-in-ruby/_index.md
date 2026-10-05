@@ -1,17 +1,17 @@
 ---
-title: دمج ملفات PDF في روبي
-linktitle: دمج ملفات PDF في روبي
+title: دمج ملفات PDF في Ruby
+linktitle: دمج ملفات PDF في Ruby
 type: docs
 weight: 10
 url: /ar/java/concatenate-pdf-files-in-ruby/
-description: الجمع بين ملفات PDF متعددة في مستند واحد باستخدام روبي و Aspose.PDF بكفاءة.
-lastmod: "2026-10-01"
+description: الجمع بين ملفات PDF متعددة في مستند واحد باستخدام Ruby و Aspose.PDF بكفاءة.
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - دمج ملفات PDF
 
 لتجميع ملفات PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **ConcatenatePdfFiles**.
 
-كود روبي
+كود Ruby
 
 ```java
 # The path to the documents directory.
@@ -39,6 +39,6 @@ puts "New document has been saved, please check the output file"
 
 ## تنزيل الكود الجاري
 
-تحميلВ **Concatenate PDF Files (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **Concatenate PDF Files (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

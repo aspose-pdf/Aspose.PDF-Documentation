@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/concatenate-pdf-files-in-php/
 description: تعلم كيفية دمج ملفات PDF متعددة في مستند واحد باستخدام PHP و Aspose.PDF لتسهيل إدارة المستندات.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - دمج ملفات PDF
 
@@ -31,8 +31,8 @@ print "New document has been saved, please check the output file" . PHP_EOL;
 
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تحميلВ **Concatenate PDF Files (Aspose.PDF)**В منВ أي من المواقع الاجتماعية للبرمجة المذكورة أدناه:
+تحميل **Concatenate PDF Files (Aspose.PDF)** من أي من المواقع الاجتماعية للبرمجة المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/ConcatenatePdfFiles.php)

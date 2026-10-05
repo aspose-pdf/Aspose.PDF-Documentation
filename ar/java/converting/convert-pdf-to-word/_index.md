@@ -4,7 +4,7 @@ linktitle: تحويل PDF إلى Word
 type: docs
 weight: 10
 url: /ar/java/convert-pdf-to-word/
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 description: تعلم كيفية تحويل ملفات PDF إلى DOC و DOCX في Java باستخدام Aspose.PDF لتسهيل تحرير المستندات وإعادة استخدامها.
 sitemap:
     changefreq: "monthly"
@@ -17,11 +17,11 @@ Aspose.PDF for Java يمكنه تصدير مستندات PDF إلى صيغ Micro
 
 ## تحويل PDF إلى DOC
 
-استخدم هذا المثال عندما يجب تصدير مستند PDF إلى تنسيق DOC القديم. يقوم الكود بإنشاء `DocSaveOptions`، يضبط الصيغة إلى `Doc`, ويمرّر الخيارات إلى طريقة حفظ مشتركة.
+استخدم هذا المثال عندما يجب تصدير مستند PDF إلى تنسيق DOC القديم. يقوم الكود بإنشاء `DocSaveOptions`، يضبط الصيغة إلى `Doc`، ويمرّر الخيارات إلى طريقة حفظ مشتركة.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) وقم بتعيين التنسيق إلى `Doc`.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` لذلك يتم تصدير ملف PDF إلى تنسيق مستند مايكروسوفت وورد الثنائي.
+1. أنشئ كائنًا من الفئة [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) وعيّن التنسيق إلى `Doc`.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذلك يتم تصدير ملف PDF إلى تنسيق مستند مايكروسوفت وورد الثنائي.
 1. احفظ ملف DOC المحول.
 
 ```java
@@ -40,8 +40,8 @@ public static void convertPdfToDoc(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب تصدير مستند PDF كملف DOCX. DOCX هو التنسيق المفضل لمعظم سير عمل معالجة النصوص الحديثة لأنه مدعوم على نطاق واسع وأسهل في التحرير.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) وقم بتعيين التنسيق إلى `DocX`.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` لذلك يتم تصدير محتوى PDF كوثيقة Word بصيغة Office Open XML.
+1. أنشئ كائنًا من الفئة [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) وعيّن التنسيق إلى `DocX`.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذلك يتم تصدير محتوى PDF كوثيقة Word بصيغة Office Open XML..
 1. احفظ ملف DOCX الناتج.
 
 ```java
@@ -60,9 +60,9 @@ public static void convertPdfToDocx(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب أن يفضّل تصدير Word المحتوى القابل للتحرير المتدفّق بدلاً من التخطيط البصري الثابت.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` الإخراج.
-1. تفعيل `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` لذلك يستخدم المحول التعرف المحسن على التدفق أثناء إنشاء DOCX.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` واحفظ ناتج DOCX المحول.
+1. أنشئ كائنًا من الفئة [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` الإخراج.
+1. فعّل `setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` لذلك يستخدم المحول التعرف المحسن على التدفق أثناء إنشاء DOCX..
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` واحفظ ناتج DOCX المحول.
 
 ```java
 public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
@@ -81,9 +81,9 @@ public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب الاحتفاظ بنهايات الأسطر من ملف PDF الأصلي في مخرجات Word.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` تصدير.
-1. تفعيل `setAddReturnToLineEnd(true)` لذا يتم الحفاظ على فواصل الأسطر الصريحة أثناء التحويل.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` وحفظ ملف DOCX.
+1. أنشئ كائنًا من الفئة [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` تصدير.
+1. فعّل `setAddReturnToLineEnd(true)` لذا يتم الحفاظ على فواصل الأسطر الصريحة أثناء التحويل.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` واحفظ ملف DOCX..
 
 ```java
 public static void convertPdfToDocxWithLineBreaks(Path inputFile, Path outputFile) {
@@ -102,9 +102,9 @@ public static void convertPdfToDocxWithLineBreaks(Path inputFile, Path outputFil
 استخدم هذا المثال عندما يجب التعرف على نقط القوائم من ملف PDF المصدر والحفاظ عليها كهيكليات قوائم في Word.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` تصدير.
-1. تفعيل `setRecognizeBullets(true)` لذلك يتم التعرف على محتوى PDF الشبيه بالقوائم كقوائم نقطية أثناء التحويل.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` وحفظ ملف DOCX.
+1. أنشئ كائنًا من الفئة [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` تصدير.
+1. فعّل `setRecognizeBullets(true)` لذلك يتم التعرف على محتوى PDF الشبيه بالقوائم كقوائم نقطية أثناء التحويل.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` واحفظ ملف DOCX..
 
 ```java
 public static void convertPdfToDocxWithBulletRecognition(Path inputFile, Path outputFile) {
@@ -123,9 +123,9 @@ public static void convertPdfToDocxWithBulletRecognition(Path inputFile, Path ou
 استخدم هذا المثال عندما يجب التحكم في جودة الصورة داخل ملف DOCX الذي تم إنشاؤه أثناء التحويل.
 
 1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` تصدير.
-1. مجموعة `setImageResolutionX(300)` و `setImageResolutionY(300)` لذلك يتم إنشاء محتوى النقطية بالدقة المطلوبة.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` وحفظ مخرجات DOCX.
+1. أنشئ كائنًا من الفئة [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) لـ `DocX` تصدير.
+1. استدعِ `setImageResolutionX(300)` و `setImageResolutionY(300)` لإنشاء المحتوى النقطي بالدقة المطلوبة.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` واحفظ مخرجات DOCX..
 
 ```java
 public static void convertPdfToDocxWithImageResolution(Path inputFile, Path outputFile) {

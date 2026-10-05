@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/create-radiobutton-field/
 description: تعلم كيفية إضافة حقل radio button إلى مستند PDF بلغة Java باستخدام واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إنشاء حقل radio button في PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وتكوين إعدادات تخطيط زر الراديو، وإنشاء حقل radio button، وحفظ المستند المعدل باستخدام واجهة FormEditor في Aspose.PDF for Java.
@@ -14,8 +14,8 @@ Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود
 
 ## إنشاء حقل radio button
 
-1. ربط ملف PDF المصدر بـ `FormEditor` واجهة.
-2. قم بتكوين الفجوة بين أزرار الراديو، الاتجاه، وحجم العنصر.
+1. اربط ملف PDF المصدر بـ واجهة `FormEditor`.
+2. اضبط الفجوة بين أزرار الراديو، الاتجاه، وحجم العنصر.
 3. عرّف عناصر زر الراديو.
 4. أضف حقل زر الراديو مع الاختيار الافتراضي والمستطيل.
 5. احفظ المستند المحدث.

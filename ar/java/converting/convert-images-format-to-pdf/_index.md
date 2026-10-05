@@ -4,7 +4,7 @@ linktitle: تحويل الصور إلى PDF
 type: docs
 weight: 60
 url: /ar/java/convert-images-format-to-pdf/
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 description: تعلم كيفية تحويل صيغ BMP و CGM و DICOM و PNG و TIFF و EMF و SVG و CDR وغيرها من صيغ الصور إلى PDF في Java باستخدام Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -19,9 +19,9 @@ Abstract: تشرح هذه المقالة كيفية تحويل صيغ صور م�
 
 استخدم هذا المثال عندما يجب وضع صورة BMP في مستند PDF.
 
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) للاحتفاظ بملف PDF الناتج.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) للاحتفاظ بملف PDF الناتج.
 1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وضع BMP مع `page.addImage(...)`.
-1. حدد مستطيل الصورة الهدف بـ [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لذا يملأ محتوى الراستر منطقة صفحة PDF.
+1. حدّد مستطيل الصورة الهدف بـ [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لذا يملأ محتوى الراستر منطقة صفحة PDF..
 1. احفظ ملف PDF الناتج.
 
 ```java
@@ -57,10 +57,10 @@ public static void convertCgmToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تغليف صورة DICOM الطبية في مستند PDF.
 
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج PDF.
-1. إنشاء [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) كائن، اضبطه [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) إلى `Dicom`, وتعيين مسار ملف المصدر.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج PDF..
+1. أنشئ كائنًا من الفئة [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/)، اضبطه [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) إلى `Dicom`، وعيّن مسار ملف المصدر.
 1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وإلحاق صورة DICOM إلى مجموعة فقرات الصفحة.
-1. احفظ النتيجة بصيغة PDF.
+1. احفظ النتيجة بصيغة PDF..
 
 ```java
 public static void convertDicomToPdf(Path inputFile, Path outputFile) {
@@ -83,9 +83,9 @@ public static void convertDicomToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل ملف EMF إلى PDF عبر مسار التحميل الأساسي لـ EMF.
 
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وفتح مصدر EMF كسلسلة ثنائية.
-1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وإزالة هوامشها بحيث يمكن لعمل فن EMF أن يملأ مساحة الصفحة بالكامل.
-1. إنشاء [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), اربط تدفق EMF به، وأضفه إلى مجموعة فقرات الصفحة.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وفتح مصدر EMF كسلسلة ثنائية.
+1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وأزل هوامشها بحيث يمكن لعمل فن EMF أن يملأ مساحة الصفحة بالكامل.
+1. أنشئ كائنًا من الفئة [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/)، اربط تدفق EMF به، وأضفه إلى مجموعة فقرات الصفحة.
 1. احفظ ملف PDF الناتج.
 
 ```java
@@ -113,9 +113,9 @@ public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOE
 
 استخدم هذا المثال عندما يجب تحويل محتوى EMF باستخدام إعداد بديل أو تدفق تكوين الصفحة.
 
-1. حمّل مصدر EMF باستخدام Aspose.Imaging وقم بتحويله إلى تدفق PNG في الذاكرة قبل وضعه في PDF.
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) و أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. إنشاء [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) من تدفق البايت الوسيط وأضفه إلى الصفحة.
+1. حمّل مصدر EMF باستخدام Aspose.Imaging وقم بتحويله إلى تدفق PNG في الذاكرة قبل وضعه في PDF..
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ كائنًا من الفئة [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) من تدفق البايت الوسيط وأضفه إلى الصفحة.
 1. احفظ ملف PDF المحوَّل.
 
 ```java
@@ -141,9 +141,9 @@ public static void convertEmfToPdf02(Path inputFile, Path outputFile) throws IOE
 
 استخدم هذا المثال عندما يجب إضافة صورة GIF إلى صفحة PDF.
 
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج PDF.
-1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وضع الـ GIF مع `page.addImage(...)`.
-1. حدد حدود الموضع باستخدام [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لذلك الصورة تملأ مساحة الصفحة.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج PDF..
+1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وضع GIF مع `page.addImage(...)`.
+1. حدّد حدود الموضع باستخدام [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لذلك الصورة تملأ مساحة الصفحة.
 1. احفظ ملف PDF الناتج.
 
 ```java
@@ -162,9 +162,9 @@ public static void convertGifToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل صورة JPEG إلى ملف PDF من صفحة واحدة.
 
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) للـ PDF الناتج.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) للـ PDF الناتج.
 1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وأدرج صورة JPEG مع `page.addImage(...)`.
-1. استخدام [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) للتحكم في كيفية تعيين صورة الرستر إلى إحداثيات الصفحة.
+1. استخدم [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) للتحكم في كيفية تعيين صورة الرستر إلى إحداثيات الصفحة.
 1. احفظ ملف PDF المُولد.
 
 ```java
@@ -183,9 +183,9 @@ public static void convertJpegToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تضمين صورة PNG في مستند PDF.
 
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج التحويل.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج التحويل.
 1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وضع صورة PNG عليها باستخدام `page.addImage(...)`.
-1. استخدام [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لتحجيم الصورة بالنسبة إلى لوحة الصفحة.
+1. استخدم [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لتحجيم الصورة بالنسبة إلى لوحة الصفحة.
 1. احفظ ملف الإخراج.
 
 ```java
@@ -221,10 +221,10 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل صورة TIFF إلى PDF.
 
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج PDF.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لإخراج PDF..
 1. أضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وضع صورة TIFF مع `page.addImage(...)`.
-1. حدد منطقة التحديد باستخدام [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لذا يتم تعيين محتوى TIFF إلى إحداثيات الصفحة.
-1. احفظ النتيجة بصيغة PDF.
+1. حدّد منطقة التحديد باستخدام [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) لذا يتم تعيين محتوى TIFF إلى إحداثيات الصفحة.
+1. احفظ النتيجة بصيغة PDF..
 
 ```java
 public static void convertTiffToPdf(Path inputFile, Path outputFile) {
@@ -243,7 +243,7 @@ public static void convertTiffToPdf(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب تحويل ملف CorelDRAW CDR إلى PDF.
 
 1. افتح مصدر CDR بتمرير مسار الملف و [`CdrLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/cdrloadoptions/) إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) المُنشئ.
-1. دع Aspose.PDF يحمل محتوى CorelDRAW إلى نموذج مستند PDF.
+1. دع Aspose.PDF يحمل محتوى CorelDRAW إلى نموذج مستند PDF..
 1. احفظ ملف PDF المحول إلى مسار الإخراج المطلوب.
 
 ```java

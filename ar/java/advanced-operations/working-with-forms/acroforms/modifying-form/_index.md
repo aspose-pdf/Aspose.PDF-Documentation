@@ -5,7 +5,7 @@ type: docs
 weight: 45
 url: /ar/java/modifying-form/
 description: قم بتعديل حقول AcroForm في مستندات PDF باستخدام Aspose.PDF for Java، بما في ذلك مسح النص، وتحديد الحدود، وتنسيق الحقول، وإزالة الحقول.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: توضح هذه المقالة كيفية تعديل محتوى AcroFo
 
 استخدم هذا المثال عندما يجب إفراغ محتوى نموذج آلة الكتابة دون إزالة كائنات النموذج نفسها.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار عبر موارد نموذج الصفحة وتحديد نماذج الآلة الكاتبة.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. مرّ على موارد نموذج الصفحة وحدّد نماذج الآلة الكاتبة.
 1. امسح مقاطع النص المستخرجة واحفظ المستند.
 
 ```java
@@ -45,9 +45,9 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يقبل حقل النص عددًا محدودًا فقط من الأحرف.
 
-1. إنشاء [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) واجهة وربط ملف PDF المصدر.
-1. تعيين الحد الأقصى للطول لحقل الهدف.
-1. حفظ المستند المحدث.
+1. أنشئ واجهة [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) وربط ملف PDF المصدر.
+1. عيّن الحد الأقصى للطول لحقل الهدف.
+1. احفظ المستند المحدث.
 
 ```java
 public static void setFieldLimit(Path inputFile, Path outputFile) {
@@ -66,9 +66,9 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما تحتاج إلى فحص الحد الأقصى الحالي لطول حقل النص.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى الحقل المستهدف من مجموعة النماذج.
-1. قراءة الحد من [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) وإخراجها.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى الحقل المستهدف من مجموعة النماذج.
+1. اقرأ الحد من [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) وإخراجها.
 
 ```java
 public static void getFieldLimit(Path inputFile) {
@@ -85,9 +85,9 @@ public static void getFieldLimit(Path inputFile) {
 
 استخدام هذا المثال عندما يجب على حقل نص موجود أن يستخدم خطًا أو مظهرًا مختلفًا.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى الهدف [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) وتعيين مظهر افتراضي جديد.
-1. حفظ ملف PDF المحدث.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى الهدف [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) وعيّن مظهر افتراضي جديد.
+1. احفظ ملف PDF المحدث.
 
 ```java
 public static void setFormFieldFont(Path inputFile, Path outputFile) {
@@ -103,13 +103,13 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 }
 ```
 
-## احذف حقل النموذج حسب الاسم
+## حذف حقل النموذج حسب الاسم
 
 استخدم هذا المثال عندما يجب إزالة حقل محدد من AcroForm.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. احذف الحقل المستهدف من النموذج باستخدام اسمه.
-1. حفظ المستند المحدث.
+1. احفظ المستند المحدث.
 
 ```java
 public static void deleteFormField(Path inputFile, Path outputFile) {

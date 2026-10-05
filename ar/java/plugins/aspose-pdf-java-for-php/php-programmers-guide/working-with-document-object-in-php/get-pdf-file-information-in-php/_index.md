@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/get-pdf-file-information-in-php/
 description: اكتشف كيف يمكن استخراج معلومات مفصلة عن ملف PDF، بما في ذلك البيانات الوصفية والخصائص، في PHP باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - الحصول على معلومات ملف PDF
 
@@ -31,8 +31,8 @@ print "Title:-" . $doc_info->getTitle();
 
 ```
 
-**تحميل الشيفرة الجارية**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تنزيلВ **احصل على معلومات ملف PDF (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+تنزيل **احصل على معلومات ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetPdfFileInfo.php)

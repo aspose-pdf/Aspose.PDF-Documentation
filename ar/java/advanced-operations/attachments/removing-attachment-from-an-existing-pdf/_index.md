@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/removing-attachment-from-an-existing-pdf/
 description: تعلم كيفية إزالة مرفق واحد أو جميع المرفقات المدمجة من مستندات PDF في Java باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: حذف مرفقات PDF برمجياً باستخدام Java
 Abstract: توضح هذه المقالة كيفية إزالة المرفقات من ملفات PDF باستخدام Aspose.PDF for Java. تُظهر الأمثلة حذف ملف مدمج واحد بواسطة المفتاح ومسح مجموعة `EmbeddedFiles` بالكامل قبل حفظ المستند المحدث.
 ---
-يمكن إزالة المرفقات المخزنة في مستند PDF إما بشكل فردي أو جميعها مرة واحدة من خلال `EmbeddedFiles` مجموعة.
+يمكن إزالة المرفقات المخزنة في مستند PDF إما بشكل فردي أو جميعها مرة واحدة من خلال مجموعة `EmbeddedFiles`.
 
 ## إزالة مرفق واحد
 
 استخدم هذا المثال عندما يجب حذف ملف مدمج مسمى واحد من ملف PDF.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. احذف المرفق بواسطة مفتاحه من مجموعة الملفات المدمجة.
 1. احفظ المستند الناتج المحدث.
 
@@ -36,7 +36,7 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 استخدم هذا الأسلوب عندما يجب مسح مجموعة الملفات المضمنة بالكامل.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. احذف جميع العناصر من مجموعة الملفات المضمنة.
 1. احفظ مستند الإخراج المنقى.
 

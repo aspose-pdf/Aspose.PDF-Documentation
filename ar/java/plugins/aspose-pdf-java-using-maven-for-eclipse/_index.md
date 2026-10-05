@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ar/java/aspose-pdf-java-using-maven-for-eclipse/
 description: قم بإعداد Aspose.PDF for Java في Eclipse باستخدام Maven. بسط إدارة الاعتمادات لتطوير PDF فعال.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## مقدمة
 
@@ -50,7 +50,7 @@ Eclipse IDE هو بيئة تطوير متكاملة (IDE) شهيرة للغة Ja
 ### متطلبات النظام
 
 - **ذاكرة النظام:** 2 GB أو أكثر (موصى به)
-- **نظام التشغيل:** أي نظام تشغيل يدعم الـ Java VM (Virtual Machine).
+- **نظام التشغيل:** أي نظام تشغيل يدعم Java VM (Virtual Machine).
 - **الاتصال بالإنترنت:** 2 ميغابايت أو أسرع (موصى به)
 
 ### المنصات المدعومة
@@ -58,7 +58,7 @@ Eclipse IDE هو بيئة تطوير متكاملة (IDE) شهيرة للغة Ja
 - Eclipse Mars.1 (4.5.1) - موصى به
 - Eclipse Juno أو أحدث.
 
-## جاري التحميل
+## تنزيل
 
 ### تحميل Eclipse IDE
 
@@ -67,7 +67,7 @@ Eclipse IDE هو بيئة تطوير متكاملة (IDE) شهيرة للغة Ja
 لتنزيل Eclipse IDE
 
 1. اذهب إلى [https://eclipse.org](https://eclipse.org/).
-1. قم بتنزيل وتثبيت Eclipse IDE الموصى به لمطوري Java SE / EE.
+1. نزّل وتثبيت Eclipse IDE الموصى به لمطوري Java SE / EE..
 
 ### تنزيل Aspose.PDF Java (Maven) لـ Eclipse
 
@@ -85,7 +85,7 @@ Eclipse IDE هو بيئة تطوير متكاملة (IDE) شهيرة للغة Ja
 
 استخدام Aspose.PDF Java (Maven) لـ Eclipse
 
-### كيف يتم تطبيق ترخيص Aspose؟
+### كيف يتم تطبيق ترخيص Aspose
 
 تستخدم هذه الإضافة نسخة تجريبية من Aspose.PDF. بمجرد رضاك عن التجربة، يمكنك شراء ترخيص على [موقع Aspose](https://purchase.aspose.com/buy).
 لإزالة رسالة التقييم وقيود الميزات، يجب تطبيق ترخيص المنتج. ستتلقى ملف ترخيص بعد شراء المنتج. الرجاء اتباع الخطوات أدناه لتطبيق الترخيص.
@@ -118,13 +118,13 @@ Aspose.PDF Java (Maven) for Eclipse هو مصدر مفتوح ورمز المصد
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_Maven_for_Eclipse)
 
-### كيفية تكوين رمز المصدر لـ Aspose.PDF Java (Maven) for Eclipse
+### تكوين رمز المصدر لـ Aspose.PDF Java (Maven) for Eclipse
 
 ستؤدي الخطوات البسيطة التالية بسلاسة إلى تكوين ناجح لرمز مصدر إضافة **"Aspose.PDF Java (Maven) for Eclipse"** في بيئة Eclipse IDE.
 
-1. تنزيل / استنساخ رمز المصدر.
-1. اختر **File** \u003E Import \u003E General \u003E Existing Projects into Workspace
+1. نزّل / استنساخ رمز المصدر.
+1. اختر **File** \u003E Import \u003E General \u003E Existing Projects into Workspace.
 1. تصفح إلى أحدث مصدر للمشروع الذي قمت بتنزيله
-1. حدد مشروع Eclipse الذي تريد استيراده
-1. انقر على إنهاء
+1. حدّد مشروع Eclipse الذي تريد استيراده.
+1. انقر على إنهاء.
 1. رمز ملحق Aspose.PDF Java for Eclipse جاهز الآن للتعزيز.

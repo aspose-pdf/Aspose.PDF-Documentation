@@ -5,15 +5,15 @@ type: docs
 weight: 20
 url: /ar/java/remove-open-action/
 description: تعرّف على كيفية إزالة إجراء فتح المستند من ملف PDF في Java باستخدام واجهة PdfContentEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إزالة إجراء فتح المستند في PDF باستخدام Java
 Abstract: يوضح هذا المقال كيفية ربط ملف PDF، وإزالة إجراء فتح المستند، وحفظ المستند المحدث باستخدام واجهة PdfContentEditor في Aspose.PDF for Java.
 ---
 ## إزالة إجراء فتح المستند
 
-1. قم بربط ملف PDF المصدر بـ `PdfContentEditor` واجهة.
-2. اتصال `removeDocumentOpenAction()`.
+1. اربط ملف PDF المصدر بـ واجهة `PdfContentEditor`.
+2. استدعِ `removeDocumentOpenAction()`.
 3. احفظ مستند PDF المحدث.
 
 ```java

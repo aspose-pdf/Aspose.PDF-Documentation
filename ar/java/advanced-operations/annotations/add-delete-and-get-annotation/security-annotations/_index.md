@@ -5,7 +5,7 @@ type: docs
 weight: 75
 url: /ar/java/security-annotations/
 description: تعلم كيفية وضع علامة على النص للحجب، وتطبيق تعليقات الحجب، وحجب المناطق المختارة من الصفحات في ملفات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: تشرح هذه المقالة كيفية العمل مع تعليقا
 استخدم هذا المثال عندما يجب تغطية النص المطابق بتعليقات الحذف قبل تطبيق الحذف بشكل دائم.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. ابحث عن النص المستهدف وأنشئ [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) لكل تطابق.
-1. قم بتكوين مظهر الحجب واحفظ المستند.
+1. ابحث عن النص المستهدف وأنشئ كائنًا من الفئة [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) لكل تطابق.
+1. اضبط مظهر الحجب واحفظ المستند.
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {
@@ -52,8 +52,8 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 هذا المثال يطبق بشكل دائم تعليقات الحجب التي موجودة بالفعل على الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
-1. اتصال `redact()` على كل ملاحظة تم جمعها واحفظ الملف المحدث.
+1. اجمع التعليقات من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
+1. استدعِ `redact()` على كل ملاحظة تم جمعها واحفظ الملف المحدث.
 
 ```java
 public static void applyRedaction(Path inputFile, Path outputFile) {
@@ -78,7 +78,7 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. اكتشف المستطيل المستهدف على الصفحة، على سبيل المثال من موضع صورة.
-1. إنشاء [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) لتلك المنطقة واحفظ المستند.
+1. أنشئ كائنًا من الفئة [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) لتلك المنطقة واحفظ المستند.
 
 ```java
 public static void redactArea(Path inputFile, Path outputFile) {

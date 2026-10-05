@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/create-n-up-pdf-document/
 description: إنشاء تخطيط PDF بنمط N-Up 2x2 في Java باستخدام واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: تعرف على كيفية إنشاء مستند PDF بنمط N-Up ب�
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثال.
-2. اتصال `makeNUp` مع ملف الإدخال، ملف الإخراج، وعدد الأعمدة والصفوف.
+1. أنشئ مثيلًا من `PdfFileEditor`.
+2. استدعِ `makeNUp` مع ملف الإدخال، ملف الإخراج، وعدد الأعمدة والصفوف.
 3. احفظ المستند المُولَّد.
 4. إذا كنت تريد التحقق الصريح من النجاح، استدع النسخة التي تُعيد قيمة منطقية وتتعامل مع `false` نتيجة.
 

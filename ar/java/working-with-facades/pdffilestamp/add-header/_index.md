@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/add-header/
 description: تعرف على كيفية إضافة رؤوس نصية ورؤوس صورة إلى صفحات PDF في Java باستخدام واجهة PdfFileStamp.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعرف على كيفية إضافة محتوى رأس إلى مست�
 
 ### خطوات
 
-1. إنشاء `PdfFileStamp` مثيل وربط ملف PDF المصدر.
-2. بناء محتوى الرأس كـ `FormattedText` أو تحميله من تدفق صورة.
-3. اتصل بالملائم `addHeader` تحميل زائد.
-4. حفظ الناتج وإغلاق كائن الواجهة.
+1. أنشئ مثيلًا `PdfFileStamp` وربط ملف PDF المصدر.
+2. ابنِ محتوى الرأس كـ `FormattedText` أو تحميله من تدفق صورة.
+3. استدعِ بالملائم `addHeader` تحميل زائد.
+4. احفظ الناتج وأغلق كائن الواجهة.
 
 ### أمثلة Java
 

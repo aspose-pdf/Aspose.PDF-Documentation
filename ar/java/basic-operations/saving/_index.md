@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/save-pdf-document/
 description: تعلم كيفية حفظ مستندات PDF في Java إلى ملف، إلى تدفق، أو كمعيار PDF باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,9 @@ Abstract: تصف هذه المقالة كيفية حفظ مستندات PDF في
 
 يمكنك حفظ مستند:
 
-1. احفظ الـ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مباشرةً إلى ملف على القرص.
-1. احفظ الـ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) إلى `OutputStream`.
-1. تحويل الـ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مع [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) و احفظه بتنسيق قياسي مثل [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
+1. احفظ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مباشرةً إلى ملف على القرص.
+1. احفظ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) إلى `OutputStream`.
+1. حوّل [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مع [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) واحفظه بتنسيق قياسي مثل [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
 
 ## حفظ المستند إلى ملف
 

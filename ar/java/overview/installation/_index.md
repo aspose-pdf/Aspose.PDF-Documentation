@@ -1,11 +1,11 @@
 ---
-title: كيفية تثبيت Aspose.PDF for Java
+title: تثبيت Aspose.PDF for Java
 linktitle: التثبيت
 type: docs
 weight: 40
 url: /ar/java/installation/
 description: اعثر على إرشادات خطوة بخطوة لتثبيت Aspose.PDF for Python و .NET لبدء العمل مع مستندات PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -25,7 +25,7 @@ Abstract: Aspose.PDF for Python via .NET هو مكتبة شاملة مصممة �
 
 **Aspose.PDF for Java** يتم تنفيذه باستخدام Java ويعمل مع JDK 1.8 وما فوق. يمكن دمج Aspose.PDF for Java مع أي تطبيق، على سبيل المثال تطبيق ويب JSP/JSF أو تطبيق Windows.
 
-**Aspose.PDF for Java** سريع وخفيف الوزن. يقوم بإنشاء مستندات PDF بكفاءة ويساعد تطبيقك على الأداء بشكل أفضل. Aspose.PDF for Java هو الخيار الأول لعملائناвЂ™ عند إنشاء مستندات PDF بسبب سعره، أدائه الممتاز والدعم الرائع.
+**Aspose.PDF for Java** سريع وخفيف الوزن. يقوم بإنشاء مستندات PDF بكفاءة ويساعد تطبيقك على الأداء بشكل أفضل. Aspose.PDF for Java هو الخيار الأول لعملائنا’ عند إنشاء مستندات PDF بسبب سعره، أدائه الممتاز والدعم الرائع.
 باستخدام هذه المكتبة، يمكنك تنفيذ قدرات غنية لإنشاء ملفات PDF من الصفر، أو معالجة مستندات PDF الموجودة بالكامل دون تثبيت Adobe Acrobat.
 
 ## التثبيت
@@ -70,7 +70,7 @@ Abstract: Aspose.PDF for Python via .NET هو مكتبة شاملة مصممة �
 
 ### تعريف اعتماد Aspose.PDF for Java API
 
-ثم قم بتعريف اعتماد Aspose.PDF for Java APIВ في pom.xml الخاص بك كما يلي:
+ثم قم بتعريف اعتماد Aspose.PDF for Java API في pom.xml الخاص بك كما يلي:
 
 ```xml
  <dependencies>
@@ -86,7 +86,7 @@ Abstract: Aspose.PDF for Python via .NET هو مكتبة شاملة مصممة �
 
 ### دليل التوافق والاستخدام لـ JDK 11
 
-تم تحسين واجهة برمجة التطبيقات لبيئة جافا 11 وجميع الاختبارات والوظائف تعمل بشكل جيد. ومع ذلك، بالنسبة لبعض الفئات يجب إضافة الاعتماد الخارجي لإضافة مسار الفئة: javax.xml.bind.annotation.adapters.HexBinaryAdapter، والتي تم حذفها من JRE.
+تم تحسين واجهة برمجة التطبيقات لبيئة Java 11 وجميع الاختبارات والوظائف تعمل بشكل جيد. ومع ذلك، بالنسبة لبعض الفئات يجب إضافة الاعتماد الخارجي لإضافة مسار الفئة: javax.xml.bind.annotation.adapters.HexBinaryAdapter، والتي تم حذفها من JRE.
 
 على سبيل المثال:
 

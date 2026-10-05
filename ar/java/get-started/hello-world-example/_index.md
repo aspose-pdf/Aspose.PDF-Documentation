@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/hello-world-example/
 description: هذا المثال يوضح كيفية إنشاء مستند PDF بسيط بنص Hello World مُنسق باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,12 +17,12 @@ Abstract: هذه المقالة توفر مثال Hello World لبرنامج Asp
 
 مثال Java يتبع الخطوات التالية:
 
-1. إنشاء [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائن.
+1. أنشئ كائنًا من الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) مع النص `Hello, world!`.
-1. تعيين [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), الخط، حجم الخط، لون الخلفية، ولون المقدمة عبر القطعة [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. إنشاء [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) للصفحة.
-1. إلحاق الـ [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) إلى الـ [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ كائنًا من الفئة [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) مع النص `Hello, world!`.
+1. عيّن [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/)، الخط، حجم الخط، لون الخلفية، ولون المقدمة عبر القطعة [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. أنشئ كائنًا من الفئة [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) للصفحة.
+1. ألحق [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) إلى [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. احفظ ملف PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 الكود الجافا التالي مبني على `GetStartedExamples.java`.

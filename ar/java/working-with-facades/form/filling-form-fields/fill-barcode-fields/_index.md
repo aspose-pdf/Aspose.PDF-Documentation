@@ -4,10 +4,10 @@ linktitle: ملء حقول الباركود
 type: docs
 weight: 50
 url: /ar/java/fill-barcode-fields/
-description: تعلم كيفية ملء حقل نموذج الباركود في جافا باستخدام الواجهة Form في Aspose.PDF.
-lastmod: "2026-10-01"
+description: تعلم كيفية ملء حقل نموذج الباركود في Java باستخدام الواجهة Form في Aspose.PDF.
+lastmod: "2026-10-05"
 TechArticle: true
-AlternativeHeadline: ملء حقل الباركود في نموذج PDF باستخدام جافا
+AlternativeHeadline: ملء حقل الباركود في نموذج PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط نموذج PDF، وتعيين قيمة حقل الباركود، وحفظ المستند المحدث باستخدام الواجهة Form في Aspose.PDF for Java.
 ---
 استخدم `FormExamples.fillBarcodeFields(...)` لملء حقل الباركود في نموذج PDF.

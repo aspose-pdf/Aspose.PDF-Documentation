@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/pdf-signing/
 description: تعرف على كيفية توقيع مستندات PDF في Java باستخدام واجهة PdfFileSignature.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعرف على كيفية توقيع مستندات PDF باستخد�
 
 ### خطوات
 
-1. إنشاء `PdfFileSignature` مثيل وربط ملف PDF المصدر.
-2. تحميل الشهادة إما عبر `setCertificate` أو عن طريق إنشاء `PKCS7` كائن.
-3. اتصال `sign` مع صفحة الهدف، وإعدادات الرؤية، ومستطيل التوقيع، وبيانات التوقيع.
-4. حفظ ملف PDF الموقع وإغلاق كائن الواجهة.
+1. أنشئ مثيلًا `PdfFileSignature` وربط ملف PDF المصدر.
+2. حمّل الشهادة إما عبر `setCertificate` أو عن طريق إنشاء كائن `PKCS7`.
+3. استدعِ `sign` مع صفحة الهدف، وإعدادات الرؤية، ومستطيل التوقيع، وبيانات التوقيع.
+4. احفظ ملف PDF الموقع وأغلق كائن الواجهة.
 
 ### أمثلة Java
 

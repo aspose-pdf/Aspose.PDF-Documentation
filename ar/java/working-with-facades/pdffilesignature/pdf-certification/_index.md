@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/pdf-certification/
 description: تعرف على كيفية تصديق مستندات PDF في Java باستخدام PdfFileSignature و DocMDPSignature.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,11 +20,11 @@ Abstract: تعرف على كيفية تصديق مستندات PDF باستخد�
 
 ### خطوات
 
-1. إنشاء `PdfFileSignature` إنشاء نسخة وربط ملف PDF المصدر.
-2. إنشاء `PKCS7` كائن التوقيع مع الشهادة وكلمة مرور الشهادة.
+1. أنشئ `PdfFileSignature` إنشاء نسخة وربط ملف PDF المصدر.
+2. أنشئ كائن `PKCS7` التوقيع مع الشهادة وكلمة مرور الشهادة.
 3. غلف تلك التوقيع بـ `DocMDPSignature` مع المطلوب `DocMDPAccessPermissions` القيمة.
-4. اتصال `certify` مع صفحة الهدف، بيانات تعريف التوقيع، المستطيل الظاهر، وتوقيع MDP.
-5. حفظ ملف PDF المصدق وإغلاق كائن الواجهة.
+4. استدعِ `certify` مع صفحة الهدف، بيانات تعريف التوقيع، المستطيل الظاهر، وتوقيع MDP..
+5. احفظ ملف PDF المصدق وأغلق كائن الواجهة.
 
 ### مثال Java
 

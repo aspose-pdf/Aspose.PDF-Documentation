@@ -1,11 +1,11 @@
 ---
-title: التعليقات التوضيحية القائمة على النص باستخدام جافا
+title: التعليقات التوضيحية القائمة على النص باستخدام Java
 linktitle: التعليقات النصية
 type: docs
 weight: 10
 url: /ar/java/text-based-annotations/
 description: تعلم كيفية إنشاء وفحص وحذف التعليقات التوضيحية القائمة على النص في PDF باستخدام Aspose.PDF for Java، بما في ذلك النص الحر، والتمييز، والخط عبر، والخط المتموج، وتحت الخط.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -32,7 +32,7 @@ Abstract: توضح هذه المقالة كيفية التعامل مع خمسة
 ### إضافة تعليقات نصية حرة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) مع مستطيل وإعدادات المظهر.
+1. أنشئ كائنًا من الفئة [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) مع مستطيل وإعدادات المظهر.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند.
 
 ```java
@@ -54,7 +54,7 @@ public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {
 ### احصل على تعليقات نصية مجانية
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التمرير عبر التعليقات التوضيحية في الصفحة وتصفية حسب [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. مرّ على التعليقات التوضيحية في الصفحة وتصفية حسب [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
 1. استرجاع خصائص التعليقات أو الحدود.
 
 ```java
@@ -69,7 +69,7 @@ public static void freeTextAnnotationGet(Path inputFile) {
 }
 ```
 
-### احذف تعليقات النص الحر
+### حذف تعليقات النص الحر
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. اعثر على ملاحظات النص الحر عن طريق التنقل عبر ملاحظات الصفحة وتصفية حسب النوع.
@@ -100,7 +100,7 @@ public static void freeTextAnnotationDelete(Path inputFile, Path outputFile) {
 ### إضافة تعليقات توضيحية متميزة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) مع مستطيل يحدد منطقة التمييز.
+1. أنشئ كائنًا من الفئة [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) مع مستطيل يحدد منطقة التمييز.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند.
 
 ```java
@@ -119,7 +119,7 @@ public static void textHighlightAnnotationAdd(Path inputFile, Path outputFile) {
 ### احصل على تعليقات التمييز
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر التعليقات التوضيحية وتصفية حسب [نوع التعليق التوضيحي.تمييز](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. مرّ على التعليقات التوضيحية وتصفية حسب [نوع التعليق التوضيحي.تمييز](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
 1. اقرأ خصائص التعليقات التوضيحية مثل الحدود أو اللون.
 
 ```java
@@ -138,7 +138,7 @@ public static void textHighlightAnnotationGet(Path inputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. اجمع تعليقات التمييز عن طريق تصفية التعليقات حسب النوع.
-1. إزالة كل تعليقات توضيحية من الصفحة.
+1. أزل كل تعليقات توضيحية من الصفحة.
 1. احفظ المستند المحدث.
 
 ```java
@@ -165,7 +165,7 @@ public static void textHighlightAnnotationDelete(Path inputFile, Path outputFile
 ### إضافة تعليقات شطب
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) مع مستطيل، عنوان، ولون.
+1. أنشئ كائنًا من الفئة [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) مع مستطيل، عنوان، ولون.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند.
 
 ```java
@@ -188,8 +188,8 @@ public static void textStrikeoutAnnotationAdd(Path inputFile, Path outputFile) {
 ### احصل على تعليقات الخط المشطوب
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر التعليقات التوضيحية وتصفية حسب [AnnotationType.StrikeOut](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. قراءة بيانات تعريف التعليق أو الحدود.
+1. مرّ على التعليقات التوضيحية وتصفية حسب [AnnotationType.StrikeOut](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. اقرأ بيانات تعريف التعليق أو الحدود.
 
 ```java
 public static void textStrikeoutAnnotationGet(Path inputFile) {
@@ -206,8 +206,8 @@ public static void textStrikeoutAnnotationGet(Path inputFile) {
 ### حذف التعليقات المشطوبة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات المشطوبة عن طريق التصفية حسب النوع.
-1. إزالة كل تعليقات توضيحية من الصفحة.
+1. اجمع التعليقات المشطوبة عن طريق التصفية حسب النوع.
+1. أزل كل تعليقات توضيحية من الصفحة.
 1. احفظ المستند المحدث.
 
 ```java
@@ -234,7 +234,7 @@ public static void textStrikeoutAnnotationDelete(Path inputFile, Path outputFile
 ### إضافة تعليقات توضيحية متموجة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) مع مستطيل وعنوان.
+1. أنشئ كائنًا من الفئة [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) مع مستطيل وعنوان.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند.
 
 ```java
@@ -256,8 +256,8 @@ public static void textSquigglyAnnotationAdd(Path inputFile, Path outputFile) {
 ### احصل على التعليقات التوضيحية المتعرجة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر التعليقات التوضيحية وتصفية حسب [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. قراءة حدود التعليق أو البيانات الوصفية.
+1. مرّ على التعليقات التوضيحية وتصفية حسب [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. اقرأ حدود التعليق أو البيانات الوصفية.
 
 ```java
 public static void textSquigglyAnnotationGet(Path inputFile) {
@@ -271,11 +271,11 @@ public static void textSquigglyAnnotationGet(Path inputFile) {
 }
 ```
 
-### احذف التعليقات المتعرجة
+### حذف التعليقات المتعرجة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات التوضيحية المتعرجة عن طريق التصفية حسب النوع.
-1. إزالة كل تعليقات توضيحية من الصفحة.
+1. اجمع التعليقات التوضيحية المتعرجة عن طريق التصفية حسب النوع.
+1. أزل كل تعليقات توضيحية من الصفحة.
 1. احفظ المستند المحدث.
 
 ```java
@@ -302,7 +302,7 @@ public static void textSquigglyAnnotationDelete(Path inputFile, Path outputFile)
 ### إضافة تعليقات تحتية
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) مع مستطيل ولون.
+1. أنشئ كائنًا من الفئة [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) مع مستطيل ولون.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند.
 
 ```java
@@ -325,8 +325,8 @@ public static void textUnderlineAnnotationAdd(Path inputFile, Path outputFile) {
 ### احصل على تعليقات التسطير
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر التعليقات التوضيحية وتصفية حسب [AnnotationType.Underline](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. قراءة خصائص التعليق أو الحدود.
+1. مرّ على التعليقات التوضيحية وتصفية حسب [AnnotationType.Underline](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. اقرأ خصائص التعليق أو الحدود.
 
 ```java
 public static void textUnderlineAnnotationGet(Path inputFile) {
@@ -343,8 +343,8 @@ public static void textUnderlineAnnotationGet(Path inputFile) {
 ### حذف تعليقات التسطير
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع تعليقات الخط السفلي عن طريق التصفية حسب النوع.
-1. إزالة كل تعليقات توضيحية من الصفحة.
+1. اجمع تعليقات الخط السفلي عن طريق التصفية حسب النوع.
+1. أزل كل تعليقات توضيحية من الصفحة.
 1. احفظ المستند المحدث.
 
 ```java
@@ -369,7 +369,7 @@ public static void textUnderlineAnnotationDelete(Path inputFile, Path outputFile
 يحدد هذا المثال مساحة التَسْطير صراحةً من خلال نقاط الرباعية المستمدة من مستطيل.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) و احسب نقاط الرباعية الخاصة به.
+1. أنشئ كائنًا من الفئة [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) واحسب نقاط الرباعية الخاصة به.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند.
 
 ```java
@@ -400,7 +400,7 @@ public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFil
 استرجع النص الفعلي المغطى بتعليقات التسطير. تظهر هذه الأمثلة نهجين: قراءة النص المعلَّم بالكامل كسلسلة واحدة، أو معالجة أجزاء النص بشكل فردي لتحليل تفصيلي.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر تعليقات التسطير في الصفحة.
+1. مرّ على تعليقات التسطير في الصفحة.
 1. اقرأ أيًا منهما `getMarkedText()` أو `getMarkedTextFragments()` وطبع النتائج.
 
 ```java
@@ -436,7 +436,7 @@ public static void textUnderlineMarkedFragmentsGet(Path inputFile) {
 قم بإزالة التعليقات التوضيحية انتقائيًا عن طريق التصفية بناءً على خصائص البيانات الوصفية مثل العنوان. يتيح هذا النهج تنظيفًا مستهدفًا للتعليقات التوضيحية وفقًا للمؤلف أو الغرض.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تصفية التعليقات التوضيحية المسطّرة حسب العنوان.
+1. صفِّ التعليقات التوضيحية المسطّرة حسب العنوان.
 1. احذف التعليقات التوضيحية المطابقة واحفظ المستند المُحدَّث.
 
 ```java
@@ -465,7 +465,7 @@ public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أضف [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) إلى الصفحة.
-1. اتصال `flatten()` على التعليق واحفظ ملف الإخراج.
+1. استدعِ `flatten()` على التعليق واحفظ ملف الإخراج.
 
 ```java
 public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {

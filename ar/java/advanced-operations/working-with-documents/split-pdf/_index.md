@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/split-pdf-document/
 description: تعلم كيفية تقسيم صفحات PDF إلى ملفات PDF منفصلة باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: تشرح هذه المقالة كيفية تقسيم مستندات PD
 استخدم هذا الأسلوب عندما يجب أن يصبح كل صفحة مصدر مستندًا ناتجًا منفصلًا.
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لكل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) أنت تريد التصدير.
-1. إضافة المحدد [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند الجديد.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لكل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) أنت تريد التصدير.
+1. أضف المحدد [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند الجديد.
 1. احفظ كل PDF ناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -42,7 +42,7 @@ public static void splitDocuments(Path inputFile, Path outputDir) {
 يقوم هذا المثال بتقسيم المستند الأصلي إلى ملفي إخراج متتاليين بناءً على نقطة المنتصف.
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. احسب نقطة المنتصف المتاحة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) مجموعة.
+1. احسب نقطة المنتصف المتاحة مجموعة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. انسخ النصف الأول من الصفحات إلى مستند إخراج واحد والبقية إلى مستند آخر.
 1. احفظ كلا المستندين الناتجين.
 
@@ -74,8 +74,8 @@ public static void splitDocumentsIntoTwoParts(Path inputFile, Path outputDir) {
 استخدم هذا النمط عندما يجب أن يحتوي كل ملف ناتج على نفس عدد الصفحات، باستثناء الجزء الأخير إذا لزم الأمر.
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) تجميع في مجموعات من `pagesPerPart`.
-1. إنشاء مستند إخراج جديد لكل مجموعة ونسخ نطاق الصفحات المحسوب إليه.
+1. مرّ على [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) تجميع في مجموعات من `pagesPerPart`.
+1. أنشئ مستند إخراج جديد لكل مجموعة ونسخ نطاق الصفحات المحسوب إليه.
 1. احفظ كل جزء باسم ملف تم إنشاؤه.
 
 ```java
@@ -142,8 +142,8 @@ public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
 استخدم هذا النهج عندما يجب تصدير صفحة الغلاف بصورة منفصلة عن باقي المستند.
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتأكد من أنه يحتوي على صفحات.
-1. إنشاء مستند إخراج واحد للأول [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. إنشاء مستند آخر لنطاق الصفحات المتبقية عندما تكون هناك أكثر من صفحة واحدة متاحة.
+1. أنشئ مستند إخراج واحد للأول [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ مستند آخر لنطاق الصفحات المتبقية عندما تكون هناك أكثر من صفحة واحدة متاحة.
 1. احفظ كلا النتيجتين.
 
 ```java
@@ -179,7 +179,7 @@ public static void splitDocumentsFirstPageAndRest(Path inputFile, Path outputDir
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتأكد من أنه غير فارغ.
 1. انسخ الأخير [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى مستند إخراج جديد.
-1. قم بإزالة تلك الصفحة من المستند الأصلي عندما لا تزال الصفحات السابقة موجودة.
+1. أزل تلك الصفحة من المستند الأصلي عندما لا تزال الصفحات السابقة موجودة.
 1. احفظ الصفحة الأخيرة والصفحات المتبقية كملفات منفصلة.
 
 ```java
@@ -211,7 +211,7 @@ public static void splitDocumentsLastPageAndRest(Path inputFile, Path outputDir)
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وحدد إجمالي عدد الصفحات.
 1. احسب الحجم التقريبي لكل جزء من الإخراج.
-1. إنشاء ما يصل إلى ثلاثة مستندات ونسخ المطابقة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) نطاقات.
+1. أنشئ ما يصل إلى ثلاثة مستندات ونسخ المطابقة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) نطاقات.
 1. احفظ كل جزء تم إنشاؤه.
 
 ```java
@@ -246,7 +246,7 @@ public static void splitDocumentsIntoThreeParts(Path inputFile, Path outputDir) 
 يوضح هذا المثال كيفية إنشاء ملفات الإخراج من مجموعات صفحات غير متسلسلة بدلاً من النطاقات المتصلة.
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تعريف مجموعات مخصصة من [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الأرقام.
+1. عرّف مجموعات مخصصة من [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الأرقام.
 1. أنشئ مستند إخراج جديد لكل مجموعة وأضف فقط الصفحات الصالحة من تلك المجموعة.
 1. احفظ كل مستند مجموعة غير فارغ.
 
@@ -281,7 +281,7 @@ public static void splitDocumentsCustomPageGroups(Path inputFile, Path outputDir
 استخدم هذا الإصدار عندما يجب أن تظل أسماء المخرجات قابلة للترتيب الحرفي، على سبيل المثال في خطوط الأنابيب الآلية.
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء مستند إخراج واحد لكل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ مستند إخراج واحد لكل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. احفظ كل ملف برقم صفحة مملوء بالأصفار.
 
 ```java
@@ -302,8 +302,8 @@ public static void splitDocumentsWithStableFilenames(Path inputFile, Path output
 ينشئ هذا المثال مخرجين عن طريق فصل الصفحات وفقاً لزوجية أو فردية رقم الصفحة.
 
 1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء مستند إخراج واحد للعدد الفردي [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الأرقام وآخر لأرقام الصفحات الزوجية.
-1. قم بالتكرار عبر الصفحات المصدرية بالزيادة المطلوبة لكل مستند إخراج.
+1. أنشئ مستند إخراج واحد للعدد الفردي [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الأرقام وآخر لأرقام الصفحات الزوجية.
+1. مرّ على الصفحات المصدرية بالزيادة المطلوبة لكل مستند إخراج.
 1. احفظ نتائج الصفحات الفردية والصفحات الزوجية بشكل منفصل.
 
 ```java

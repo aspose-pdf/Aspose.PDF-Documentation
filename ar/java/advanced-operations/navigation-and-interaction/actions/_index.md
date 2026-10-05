@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/actions/
 description: تعرف على كيفية إضافة وتحديث وإزالة إجراءات المستند والصفحة والنموذج في ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -20,7 +20,7 @@ Abstract: تشرح هذه المقالة كيفية العمل مع الإجرا
 استخدم هذا المثال عندما يجب على زر في الصفحة تشغيل أمر الطباعة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وحدد الصفحة المستهدفة.
-1. إنشاء [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) و اسند [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) للطباعة.
+1. أنشئ كائنًا من الفئة [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) واسند [NamedAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/namedaction/) للطباعة.
 1. أضف الزر إلى النموذج واحفظ المستند.
 
 ```java
@@ -50,7 +50,7 @@ public static void addNamedActionPrint(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب على زر إظهار أو إخفاء مجموعة من حقول النموذج، مثل مربعات الاختيار.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وجمع أدوات النموذج المستهدفة.
-1. إنشاء زر وتعيين [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) إلى ذلك.
+1. أنشئ زر وعيّن [HideAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/hideaction/) إلى ذلك.
 1. أضف الزر إلى النموذج واحفظ الوثيقة المحدثة.
 
 ```java
@@ -81,7 +81,7 @@ public static void addNamedActionHide(Path inputFile, Path outputFile) {
 هذا المثال ينشئ أزرار الصفحة الأولى، السابقة، التالية، والأخيرة عبر المستند.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء أزرار تنقل لكل صفحة وتعيين الإجراء المعرّف مسبقًا المطابق.
+1. أنشئ أزرار تنقل لكل صفحة وعيّن الإجراء المعرّف مسبقًا المطابق.
 1. أضف الأزرار إلى النموذج واحفظ المستند.
 
 ```java
@@ -141,8 +141,8 @@ public static void addNavigationButtons(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب أن يرسل الزر بيانات النموذج إلى عنوان URL.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) مع عنوان URL الهدف والعلامات.
-1. قم بتعيين الإجراء إلى حقل زر واحفظ المستند.
+1. أنشئ كائنًا من الفئة [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) مع عنوان URL الهدف والعلامات.
+1. عيّن الإجراء إلى حقل زر واحفظ المستند.
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {
@@ -171,7 +171,7 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 يُعيّن هذا المثال إجراءات JavaScript التي تُنفّذ عند فتح المستند أو حفظه أو طباعته.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء المطلوب [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) الكائنات لفعاليات المستند.
+1. أنشئ المطلوب الكائنات [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) لفعاليات المستند.
 1. عيّن الإجراءات واحفظ المستند.
 
 ```java
@@ -193,8 +193,8 @@ public static void addLaunchActions(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما ينبغي لصفحة معينة أن تُطلق إجراءات عند الفتح والإغلاق.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتأكد من وجود الصفحة الهدف.
-1. إنشاء تنقل الصفحات وإجراءات JavaScript.
-1. عين إجراءات الصفحة واحفظ المستند.
+1. أنشئ تنقل الصفحات وإجراءات JavaScript..
+1. عيّن إجراءات الصفحة واحفظ المستند.
 
 ```java
 public static void addPageActions(Path inputFile, Path outputFile) {

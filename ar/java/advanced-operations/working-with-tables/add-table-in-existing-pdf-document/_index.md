@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/adding-tables/
 description: تعلّم كيف تضيف وتضبط الجداول في مستندات PDF الحالية باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Aspose.PDF for Java توفر مجموعة غنية `Table` API لإنشاء ال
 
 استخدم هذا المثال عندما تحتاج إلى إضافة جدول بسيط بحدود موحدة وخلايا نصية.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وقم بتهيئة حدوده.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وهيّئ حدوده.
 1. أضف صفوفًا وخلايا، وأرفق الجدول بالصفحة، ثم احفظ المستند.
 
 ```java
@@ -46,9 +46,9 @@ public static void createTable(Path outputFile) {
 
 استخدم هذا المثال عندما تحتاج الجدول إلى خلايا مدمجة عبر الصفوف أو الأعمدة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضف الصفوف.
-1. تكوين `ColSpan` و `RowSpan` على الخلايا المستهدفة، ثم احفظ ملف PDF.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضف الصفوف.
+1. اضبط `ColSpan` و `RowSpan` على الخلايا المستهدفة، ثم احفظ ملف PDF..
 
 ```java
 public static void addRowspanOrColspan(Path outputFile) {
@@ -97,8 +97,8 @@ public static void addRowspanOrColspan(Path outputFile) {
 
 استخدم هذا المثال عندما تحتاج إلى تكوين الحدود والحشوة وسلوك تغليف الخلايا.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) و ضبط العرض والحدود والهوامش الداخلية.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وضبط العرض والحدود والهوامش الداخلية.
 1. أضف صفوفًا واحفظ المستند الناتج.
 
 ```java
@@ -132,9 +132,9 @@ public static void addBorders(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يتم تعديل الجدول تلقائيًا لعرض الصفحة المتاح.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) و تعيين `ColumnAdjustment.AutoFitToWindow`.
-1. أضف صفوفًا عينةً واحفظ ملف PDF.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وعيّن `ColumnAdjustment.AutoFitToWindow`.
+1. أضف صفوفًا عينةً واحفظ ملف PDF..
 
 ```java
 public static void autoFit(Path outputFile) {
@@ -161,13 +161,13 @@ public static void autoFit(Path outputFile) {
 }
 ```
 
-## أضف صورة داخل خلية جدول
+## إضافة صورة داخل خلية جدول
 
 استخدم هذا المثال عندما يحتاج الجدول إلى عرض محتوى صورة نقطية داخل أحد خلاياه.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضف صفًا يحتوي على خلايا نصية وصورية.
-1. قم بتكوين [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) حدد الحجم واحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضف صفًا يحتوي على خلايا نصية وصورية.
+1. اضبط [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) حدد الحجم واحفظ المستند.
 
 ```java
 public static void addImage(Path imageFile, Path outputFile) {
@@ -194,9 +194,9 @@ public static void addImage(Path imageFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب على الجدول عرض ملفات SVG صفًا بصف.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتكرار عبر ملفات SVG.
-1. أضف صفًا واحدًا لكل صورة، قم بتكوين SVG [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), واحفظ ملف PDF.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتكرار عبر ملفات SVG..
+1. أضف صفًا واحدًا لكل صورة، اضبط SVG [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/)، واحفظ ملف PDF..
 
 ```java
 public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
@@ -224,9 +224,9 @@ public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
 
 استخدم هذا المثال عندما ينبغي أن يتضمن محتوى الجدول تنسيق HTML مضمّن.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتهيئة الحدود.
-1. إضافة [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) الكائنات إلى الخلايا وحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتهيئة الحدود.
+1. أضف الكائنات [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) إلى الخلايا واحفظ المستند.
 
 ```java
 public static void addHtmlFragments(Path outputFile) {
@@ -251,9 +251,9 @@ public static void addHtmlFragments(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يعرض محتوى الجدول تعابير TeX أو LaTeX.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) مع الحدود.
-1. إضافة [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) الكائنات إلى الخلايا وحفظ ملف الإخراج.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) مع الحدود.
+1. أضف الكائنات [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) إلى الخلايا واحفظ ملف الإخراج.
 
 ```java
 public static void addLatexFragments(Path outputFile) {
@@ -278,9 +278,9 @@ public static void addLatexFragments(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يبدأ جدول ثانٍ في صفحة منفصلة بعد جدول كبير.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتكوين إعدادات الصفحة.
-1. بناء الأول كبير [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضفه إلى الصفحة.
-1. إنشاء جدول ثانٍ، تعيين `InNewPage`، وحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واضبط إعدادات الصفحة.
+1. ابنِ الأول كبير [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضفه إلى الصفحة.
+1. أنشئ جدول ثانٍ، تعيين `InNewPage`، واحفظ المستند.
 
 ```java
 public static void addTableOnNewPage(Path outputFile) {
@@ -320,8 +320,8 @@ public static void addTableOnNewPage(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يستمر جدول عريض عموديًا ويكرر الأعمدة الرئيسية.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتكوين الانقطاع العمودي مع الأعمدة المتكررة.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) واضبط الانقطاع العمودي مع الأعمدة المتكررة.
 1. أضف رأس الجدول وصفوف البيانات، ثم احفظ المستند.
 
 ```java
@@ -381,9 +381,9 @@ public static void addMarginsOrPadding(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يستخدم الجدول تنسيق الزوايا المستديرة بدلاً من الحدود المستطيلة القياسية.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتهيئة إعدادات الحدود المستديرة.
-1. أضف صفوفًا إلى الجدول واحفظ ملف PDF.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتهيئة إعدادات الحدود المستديرة.
+1. أضف صفوفًا إلى الجدول واحفظ ملف PDF..
 
 ```java
 public static void createTableWithRoundCorner(Path outputFile) {
@@ -410,8 +410,8 @@ public static void createTableWithRoundCorner(Path outputFile) {
 
 استخدم هذا المثال عندما يجب على الجداول متعددة الصفحات تكرار صفوف الرأس في كل صفحة متابعة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء مكسور عموديًا [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وتكوين عدد الصفوف المتكررة والنمط.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ مكسور عموديًا [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) واضبط عدد الصفوف المتكررة والنمط.
 1. أضف صفوف العنوان وصفوف البيانات، ثم احفظ المستند.
 
 ```java
@@ -460,9 +460,9 @@ public static void addRepeatingRows(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن تتكرر الأعمدة الأولى بينما ينكسر الجدول عموديًا على نفس الصفحة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإعداد حجم الصفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضبط الأعمدة المتكررة بالإضافة إلى سلوك الملاءمة التلقائية.
-1. أضف رأس وصفوف البيانات، ثم احفظ ملف PDF.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإعداد حجم الصفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضبط الأعمدة المتكررة بالإضافة إلى سلوك الملاءمة التلقائية.
+1. أضف رأس وصفوف البيانات، ثم احفظ ملف PDF..
 
 ```java
 public static void addRepeatingColumns(Path outputFile) {
@@ -506,9 +506,9 @@ public static void addRepeatingColumns(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن تبدأ صفوف الجدول المحددة في صفحة جديدة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) واملأ العديد من الصفوف.
-1. وضع علامة على الصفوف المحددة بـ `InNewPage` واحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) واملأ العديد من الصفوف.
+1. ضع علامة على الصفوف المحددة بـ `InNewPage` واحفظ المستند.
 
 ```java
 public static void insertPageBreak(Path outputFile) {
@@ -537,9 +537,9 @@ public static void insertPageBreak(Path outputFile) {
 
 استخدم هذا المثال عندما يجب عرض نص الخلية بزاويات دوران مختلفة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضف صفًا يحتوي على عدة خلايا.
-1. إنشاء مائل [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) الكائنات، أضفها إلى الخلايا، واحفظ ملف PDF.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) وأضف صفًا يحتوي على عدة خلايا.
+1. أنشئ مائل الكائنات [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)، أضفها إلى الخلايا، واحفظ ملف PDF..
 
 ```java
 public static void rotatedTextTable(Path outputFile) {

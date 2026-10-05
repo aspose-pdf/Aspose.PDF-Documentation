@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/create-combobox-field/
 description: تعلم كيفية إضافة حقل صندوق اختيار إلى مستند PDF بلغة Java باستخدام واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إنشاء حقل صندوق اختيار في ملف PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وإضافة حقل صندوق اختيار، وتعبئته بالعناصر، وحفظ المستند المعدل باستخدام واجهة FormEditor في Aspose.PDF for Java.
@@ -14,10 +14,10 @@ Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود
 
 ## إنشاء حقل صندوق اختيار
 
-1. ربط ملف PDF المصدر إلى `FormEditor` واجهة.
-2. إضافة حقل مربع السرد مع القيمة الافتراضية والمستطيل الهدف.
-3. إضافة العناصر القابلة للتحديد لمربع السرد.
-4. حفظ المستند المحدث.
+1. اربط ملف PDF المصدر إلى واجهة `FormEditor`.
+2. أضف حقل مربع السرد مع القيمة الافتراضية والمستطيل الهدف.
+3. أضف العناصر القابلة للتحديد لمربع السرد.
+4. احفظ المستند المحدث.
 
 ```java
 public static void createComboBoxField(Path inputFile, Path outputFile) {

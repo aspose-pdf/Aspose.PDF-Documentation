@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/add-bates-numbering/
 description: تعلم كيفية إضافة وإزالة Bates Numbering في مستندات PDF باستخدام Java مع Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: تشرح هذه المقالة كيفية إنشاء وإزالة مل
 استخدم هذا المثال عندما تريد تطبيق ترقيم Bates عبر المساعد المخصص لتجميع الصفحات.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف أي صفحات إضافية مطلوبة في العينة.
-1. إنشاء [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) التكوين.
-1. قم بتطبيق ترقيم Bates على مجموعة الصفحات واحفظ ملف الإخراج.
+1. أنشئ كائنًا من الفئة [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) التكوين.
+1. طبّق ترقيم Bates على مجموعة الصفحات واحفظ ملف الإخراج.
 
 ```java
 public static void addBatesNArtifact(Path inputFile, Path outputFile) {
@@ -41,9 +41,9 @@ public static void addBatesNArtifact(Path inputFile, Path outputFile) {
 
 يطبق هذا المثال ترقيم باتس بتمرير قطعة باتس عبر واجهة برمجة تطبيقات الترقيم العامة.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإضافة الصفحات المطلوبة.
-1. إنشاء [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) وإضافتها إلى قائمة قطع الترقيم.
-1. تطبيق قطع الترقيم على مجموعة الصفحات وحفظ المستند.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف الصفحات المطلوبة.
+1. أنشئ كائنًا من الفئة [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) وإضافتها إلى قائمة قطع الترقيم.
+1. طبّق قطع الترقيم على مجموعة الصفحات واحفظ المستند.
 
 ```java
 public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) {
@@ -66,7 +66,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 استخدم هذا النهج عندما يجب إزالة عناصر ترقيم Bates الموجودة من المستند.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. استدعِ أداة مساعدة تجميع الصفحات التي تحذف ترقيم Bates.
+1. استدعِ أداة مساعدة تجميع الصفحات التي تحذف ترقيم Bates..
 1. احفظ ملف الإخراج المنقّح.
 
 ```java

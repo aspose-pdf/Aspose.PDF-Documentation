@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/working-with-pdf-layers/
 description: تعلم كيفية إضافة، وقفل، واستخراج، وتسطيح، ودمج طبقات PDF في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,14 +13,14 @@ TechArticle: true
 AlternativeHeadline: إدارة طبقات PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية العمل مع طبقات PDF، المعروفة أيضًا بمجموعات المحتوى الاختياري، باستخدام Aspose.PDF for Java. تعلم كيفية إضافة طبقات إلى صفحة، قفل طبقة موجودة، استخراج محتوى الطبقة إلى ملفات أو تدفقات، تسطيح المحتوى المتعدد الطبقات، ودمج الطبقات في واحدة.
 ---
-Aspose.PDF for Java تعرض طبقات PDF من خلال الـ `Layer` API على كل صفحة. يمكنك إنشاء مجموعات محتوى اختيارية، تعديل سلوكها، وتصدير محتواها أو تسطيحه عند الحاجة.
+Aspose.PDF for Java تعرض طبقات PDF من خلال `Layer` API على كل صفحة. يمكنك إنشاء مجموعات محتوى اختيارية، تعديل سلوكها، وتصدير محتواها أو تسطيحه عند الحاجة.
 
 ## إضافة طبقات إلى صفحة PDF
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء وتكوين المطلوب [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) الكائنات على الصفحة.
-1. حفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ واضبط المطلوب الكائنات [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) على الصفحة.
+1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addLayers(Path outputFile) {
@@ -43,8 +43,8 @@ public static void addLayers(Path outputFile) {
 
 ## قفل طبقة
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) واحصل على [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) مجموعة.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) واحصل على مجموعة [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. قفل الهدف [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

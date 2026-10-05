@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/change-password/
 description: تعرف على كيفية تغيير كلمات مرور PDF في Java باستخدام واجهة PdfFileSecurity.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,8 +20,8 @@ Abstract: تعرف على كيفية تغيير كلمات مرور PDF باست
 
 ### خطوات
 
-1. إنشاء `PdfFileSecurity` مثيل.
-2. ربط ملف PDF المحمي بـ `bindPdf`.
+1. أنشئ مثيلًا `PdfFileSecurity`.
+2. اربط ملف PDF المحمي بـ `bindPdf`.
 3. استدعِ المناسب `changePassword` تحميل زائد، اعتمادًا على ما إذا كنت تريد أيضًا إعادة تعيين الامتيازات وحجم المفتاح.
 4. احفظ الملف المحدث وأغلق كائن الأمان.
 

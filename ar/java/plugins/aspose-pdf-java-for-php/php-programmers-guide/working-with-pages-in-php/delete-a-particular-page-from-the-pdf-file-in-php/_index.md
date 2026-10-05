@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/delete-a-particular-page-from-the-pdf-file-in-php/
 description: استكشف كيفية حذف صفحة محددة من مستند PDF في PHP باستخدام Aspose.PDF، مما يبسط تحرير المستندات.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - حذف صفحة
 
@@ -28,7 +28,7 @@ print "Page deleted successfully!";
 
 ```
 
-**جارٍ التنزيل**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تنزيل **حذف الصفحة (Aspose.PDF)** من أيٍّ من مواقع الترميز الاجتماعية المذكورة أدناه:
 

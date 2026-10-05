@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/create-links/
 description: تعرف على كيفية إنشاء روابط PDF داخلية وخارجية وعن بُعد في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Aspose.PDF for Java يستخدم `LinkAnnotation` مع كائن إجراء لت�
 استخدم هذا المثال عندما يجب على تعليق ارتباط إطلاق ملف خارجي أو هدف.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وحدد الصفحة المستهدفة.
-1. إنشاء [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) وتهيئة حدوده ولونه.
-1. تعيين [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) واحفظ المستند.
+1. أنشئ كائنًا من الفئة [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) وتهيئة حدوده ولونه.
+1. عيّن [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) واحفظ المستند.
 
 ```java
 public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
@@ -46,8 +46,8 @@ public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputF
 استخدم هذا المثال عندما يجب أن يفتح الارتباط صفحةً في مستند PDF آخر.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) على الصفحة الهدف.
-1. تعيين [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) واحفظ ملف الإخراج.
+1. أنشئ كائنًا من الفئة [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) على الصفحة الهدف.
+1. عيّن [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) واحفظ ملف الإخراج.
 
 ```java
 public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
@@ -68,8 +68,8 @@ public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path out
 استخدم هذا المثال عندما يجب أن ينتقل الارتباط إلى صفحة أخرى داخل نفس مستند PDF.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) وقم بتكوين مظهره.
-1. تعيين [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) إلى صفحة الوجهة واحفظ المستند.
+1. أنشئ كائنًا من الفئة [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) واضبط مظهره.
+1. عيّن [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) إلى صفحة الوجهة واحفظ المستند.
 
 ```java
 public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
@@ -98,8 +98,8 @@ public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFil
 استخدم هذا المثال عندما يجب أن يفتح الرابط مورد ويب من خلال إجراء URI.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) في الصفحة.
-1. تعيين [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) واحفظ ملف الإخراج.
+1. أنشئ كائنًا من الفئة [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) في الصفحة.
+1. عيّن [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) واحفظ ملف الإخراج.
 
 ```java
 public static void createLinkAnnotationGoToUriAction(Path inputFile, Path outputFile) {

@@ -5,12 +5,12 @@ type: docs
 weight: 50
 url: /ar/java/managing-form-fields/
 description: تعرف على كيفية إدارة حقول نموذج PDF في Java باستخدام واجهة Form في Aspose.PDF، بما في ذلك تسوية جميع الحقول وإعادة تسمية الحقول الموجودة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إدارة وتحديث حقول نموذج PDF في Java
 Abstract: يغطي هذا القسم سير عمل إدارة النماذج في Java الذي تم تنفيذه باستخدام واجهة Form في Aspose.PDF for Java. تشمل مجموعة الأمثلة الحالية تسوية جميع الحقول وإعادة تسمية الحقول، بينما يتم الحفاظ على صفحات المتغيّرات غير المدعومة كملاحظات نطاق صريحة.
 ---
-الجافا `FormExamples` الفئة تشمل أمثلة مباشرة لـ:
+الجافا الفئة `FormExamples` تشمل أمثلة مباشرة لـ:
 
 - `flattenAllFields(...)`
 - `renameFormFields(...)`

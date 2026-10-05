@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/decrypt-pdf-file/
 description: تعلم كيفية فك تشفير ملف PDF في Java باستخدام واجهة PdfFileSecurity.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,9 +20,9 @@ Abstract: تعلم كيفية فك تشفير ملف PDF باستخدام Aspose
 
 ### الخطوات
 
-1. إنشاء `PdfFileSecurity` مثال.
+1. أنشئ مثيلًا من `PdfFileSecurity`.
 2. اربط ملف PDF المشفر بـ `bindPdf`.
-3. اتصال `decryptFile` أو `tryDecryptFile` مع كلمة مرور المالك.
+3. استدعِ `decryptFile` أو `tryDecryptFile` مع كلمة مرور المالك.
 4. احفظ الناتج إذا نجحت عملية فك التشفير.
 5. أغلق كائن الأمان.
 

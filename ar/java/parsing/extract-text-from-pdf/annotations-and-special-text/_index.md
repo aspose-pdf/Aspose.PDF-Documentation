@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/annotation-and-special-text/
 description: تعرّف على كيفية استخراج النص من التعليقات التوضيحية للختم، والنص المظلل، والمحتوى ذو النص الفائق أو النص السفلي في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -14,9 +14,9 @@ sitemap:
 
 التكرار عبر ملاحظات الصفحة وقراءة النص المميز من `HighlightAnnotation`.
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثيل.
-1. التكرار عبر الـ [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) الكائنات على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. تحقق مما إذا كان كل توضيح هو [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) قبل تحويله إلى فئة التوضيح ذات النوع المحدد.
+1. افتح ملف PDF المصدر في مثيل [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. مرّ على الـ الكائنات [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. تحقّق مما إذا كان كل توضيح هو [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) قبل تحويله إلى فئة التوضيح ذات النوع المحدد.
 1. اقرأ النص المحدد من كل توضيح تظليل واطبعه على وحدة التحكم.
 
 ```java
@@ -36,11 +36,11 @@ public static void extractHighlightedText(Path inputFile) {
 
 قراءة تدفق المظهر العادي من توضيح الختم وتمريره `TextAbsorber`.
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثيل.
-1. التكرار عبر الـ [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) الكائنات على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. تصفية التعليقات التوضيحية إلى تلك التي يكون نوعها `Stamp`.
-1. إنشاء [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) وطلب إدخال المظهر العادي من قاموس مظهر التعليق التوضيحي للستامب.
-1. زيارة المظهر [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) وطباعة النص المستخرج.
+1. افتح ملف PDF المصدر في مثيل [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. مرّ على الـ الكائنات [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. صفِّ التعليقات التوضيحية إلى تلك التي يكون نوعها `Stamp`.
+1. أنشئ كائنًا من الفئة [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) وطلب إدخال المظهر العادي من قاموس مظهر التعليق التوضيحي للستامب.
+1. زُر المظهر [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) واطبع النص المستخرج.
 
 ```java
 public static void extractStampText(Path inputFile) {
@@ -63,10 +63,10 @@ public static void extractStampText(Path inputFile) {
 
 استخدام `TextFragmentAbsorber` عند الحاجة إلى كل من النص المستخرج وعلامات الفوقية أو السفلية لكل جزء.
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثيل.
-1. إنشاء [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) لتحليل النص على مستوى الجزء.
-1. قم بزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) واجمعها [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) الكائنات.
-1. تكرار عبر تلك الأجزاء وقراءة النص مع علامات العلوي والسفلي من `fragment.getTextState()`.
+1. افتح ملف PDF المصدر في مثيل [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) لتحليل النص على مستوى الجزء.
+1. زُر الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) واجمعها الكائنات [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. مرّ على تلك الأجزاء واقرأ النص مع علامات العلوي والسفلي من `fragment.getTextState()`.
 1. اكتب التفاصيل المستخرجة إلى ملف الإخراج.
 
 ```java

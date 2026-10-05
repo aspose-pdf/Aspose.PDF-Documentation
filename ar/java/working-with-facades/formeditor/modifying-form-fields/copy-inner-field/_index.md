@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/copy-inner-field/
 description: تعلم كيفية نسخ حقل نموذج إلى موقع جديد داخل نفس مستند PDF بلغة Java باستخدام الواجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: نسخ حقل نموذج PDF داخل نفس المستند بلغة Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وتكرار حقل إلى صفحة وموقع آخرين، وحفظ المستند المحدث باستخدام الواجهة FormEditor في Aspose.PDF for Java.
@@ -13,7 +13,7 @@ Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود
 ## نسخ حقل داخل نفس ملف PDF
 
 1. اربط PDF المصدر إلى `FormEditor` الواجهة.
-2. اتصال `copyInnerField(...)` مع اسم الحقل المصدر، اسم الحقل الجديد، الصفحة، والإحداثيات.
+2. استدعِ `copyInnerField(...)` مع اسم الحقل المصدر، اسم الحقل الجديد، الصفحة، والإحداثيات.
 3. احفظ المستند المحدث.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ar/java/signature-verification/
 description: تعرف على كيفية التحقق من توقيعات PDF في Java باستخدام واجهة PdfFileSignature.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,13 +20,13 @@ Abstract: تعرف على كيفية التحقق من توقيع PDF باستخ
 
 ### الخطوات
 
-1. إنشاء `PdfFileSignature` مثيل وربط ملف PDF الموقّع.
+1. أنشئ مثيلًا `PdfFileSignature` وربط ملف PDF الموقّع.
 2. اختر اسم التوقيع الذي تريد فحصه.
-3. اتصال `verifySignature` للتحقق من صحة التوقيع.
-4. اتصال `coversWholeDocument` للتحقق من التغطية.
-5. اغلق كائن الواجهة.
+3. استدعِ `verifySignature` للتحقق من صحة التوقيع.
+4. استدعِ `coversWholeDocument` للتحقق من التغطية.
+5. أغلق كائن الواجهة.
 
-### مثال جافا
+### مثال Java
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {

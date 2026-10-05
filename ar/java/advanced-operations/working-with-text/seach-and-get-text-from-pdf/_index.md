@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/search-and-get-text-from-pdf/
 description: تعلم كيفية البحث وتفحص واستخراج النص من مستندات PDF بلغة Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Aspose.PDF for Java يدعم استخراج النص الخام والبحث ع�
 استخدم هذا المثال عندما تحتاج إلى نص مستخرج بسيط من منطقة مختارة في المستند عبر جميع الصفحات.
 
 1. افتح مستند PDF المصدر.
-1. إنشاء `TextExtractionOptions` والمعتمد على المنطقة `TextSearchOptions`.
-1. تشغيل `TextAbsorber` على جميع الصفحات وإخراج النص المستخرج.
+1. أنشئ `TextExtractionOptions` والمعتمد على المنطقة `TextSearchOptions`.
+1. شغّل `TextAbsorber` على جميع الصفحات وإخراج النص المستخرج.
 
 ```java
 public static void textAbsorberSearch(Path inputFile) {
@@ -41,8 +41,8 @@ public static void textAbsorberSearch(Path inputFile) {
 استخدم هذا المثال عندما يجب أن يقتصر استخراج النص العادي على صفحة واحدة.
 
 1. افتح مستند PDF المصدر.
-1. قم بتكوين استخراج النص وخيارات البحث مع المنطقة المستهدفة.
-1. تشغيل `TextAbsorber` على الصفحة المحددة وإخراج النتيجة.
+1. اضبط استخراج النص وخيارات البحث مع المنطقة المستهدفة.
+1. شغّل `TextAbsorber` على الصفحة المحددة وإخراج النتيجة.
 
 ```java
 public static void textAbsorberSearchPage(Path inputFile) {
@@ -62,8 +62,8 @@ public static void textAbsorberSearchPage(Path inputFile) {
 استخدم هذا المثال عندما تحتاج إلى محتوى نصي مع بيانات الخط والموضع واللون.
 
 1. افتح مستند PDF المصدر.
-1. تشغيل `TextFragmentAbsorber` عبر جميع الصفحات.
-1. تكرار عبر القطع وإخراج البيانات الوصفية الخاصة بها.
+1. شغّل `TextFragmentAbsorber` عبر جميع الصفحات.
+1. مرّ على القطع وإخراج البيانات الوصفية الخاصة بها.
 
 ```java
 public static void textFragmentAbsorberSearch(Path inputFile) {
@@ -92,8 +92,8 @@ public static void textFragmentAbsorberSearch(Path inputFile) {
 استخدم هذا المثال عندما يجب العثور على كلمة الهدف في صفحة مختارة فقط.
 
 1. افتح مستند PDF المصدر.
-1. إنشاء `TextFragmentAbsorber` مع العبارة المستهدفة.
-1. قم بزيارة الصفحة المختارة وأخرج مواضع الأجزاء المتطابقة.
+1. أنشئ `TextFragmentAbsorber` مع العبارة المستهدفة.
+1. زُر الصفحة المختارة وأخرج مواضع الأجزاء المتطابقة.
 
 ```java
 public static void textFragmentAbsorberSearchPage(Path inputFile) {
@@ -148,8 +148,8 @@ public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
 استخدم هذا المثال عندما يجب أن يقتصر مطابقة العبارات على منطقة في صفحة واحدة.
 
 1. افتح مستند PDF المصدر.
-1. إنشاء `TextFragmentAbsorber` مع العبارة المستهدفة والمعتمد على المستطيل `TextSearchOptions`.
-1. قم بزيارة الصفحة وأخرج مواضع القطع المتطابقة.
+1. أنشئ `TextFragmentAbsorber` مع العبارة المستهدفة والمعتمد على المستطيل `TextSearchOptions`.
+1. زُر الصفحة وأخرج مواضع القطع المتطابقة.
 
 ```java
 public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
@@ -172,8 +172,8 @@ public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
 استخدم هذا المثال عندما يجب العثور على التطابقات بنمط regex بدلاً من العبارة الثابتة
 
 1. افتح مستند PDF المصدر.
-1. إنشاء regex-enabled `TextFragmentAbsorber`.
-1. قم بزيارة الصفحة المستهدفة وأخرج المقاطع المطابقة.
+1. أنشئ regex-enabled `TextFragmentAbsorber`.
+1. زُر الصفحة المستهدفة وأخرج المقاطع المطابقة.
 
 ```java
 public static void textFragmentAbsorberSearchRegex(Path inputFile) {
@@ -196,8 +196,8 @@ public static void textFragmentAbsorberSearchRegex(Path inputFile) {
 استخدم هذا المثال عندما يجب العثور على عدة عبارات مستهدفة في تمريرة واحدة.
 
 1. افتح مستند PDF المصدر.
-1. إنشاء مصفوفة من أنماط regex وتمريرها إلى `TextFragmentAbsorber`.
-1. قم بزيارة المستند وتفقد النتائج المجمعة للتعبير النمطي.
+1. أنشئ مصفوفة من أنماط regex وتمريرها إلى `TextFragmentAbsorber`.
+1. زُر المستند وتفقد النتائج المجمعة للتعبير النمطي.
 
 ```java
 public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
@@ -225,7 +225,7 @@ public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
 
 1. افتح مستند PDF المصدر.
 1. ابحث عن الكلمات المستهدفة مع تمكين البحث باستخدام regex.
-1. قم بتحديث نمط النص، أرفق الروابط التشعبية، واحفظ ملف PDF المعدل.
+1. حدّث نمط النص، أرفق الروابط التشعبية، واحفظ ملف PDF المعدل.
 
 ```java
 public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
@@ -250,8 +250,8 @@ public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
 استخدم هذا المثال عندما تحتاج إلى فحص المقاطع بناءً على التنسيق مثل النص الغامق أو النص غير المرئي.
 
 1. افتح مستند PDF المصدر.
-1. تشغيل `TextFragmentAbsorber` على الصفحة المستهدفة.
-1. تحقق من كل نمط للجزء وأخرج الإدخالات المطابقة.
+1. شغّل `TextFragmentAbsorber` على الصفحة المستهدفة.
+1. تحقّق من كل نمط للجزء وأخرج الإدخالات المطابقة.
 
 ```java
 public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
@@ -276,7 +276,7 @@ public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
 
 استخدم هذا المثال عندما يجب ربط تطابق النصوص مع صور الصفحات المعروضة للتفتيش البصري.
 
-1. إنشاء جهاز PNG بالدقة المطلوبة.
+1. أنشئ جهاز PNG بالدقة المطلوبة.
 1. ابحث في كل صفحة باستخدام `TextFragmentAbsorber` وعرض الصفحة إلى تدفق صورة.
 1. اكتب صور معاينة الصفحة وإحداثيات قطع الإخراج للفحص.
 

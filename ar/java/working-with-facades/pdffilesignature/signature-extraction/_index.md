@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/signature-extraction/
 description: تعرّف على كيفية استخراج شهادة التوقيع من ملف PDF موقع باستخدام Java و PdfFileSignature.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,9 +20,9 @@ Abstract: تعرّف على كيفية استخراج الشهادة المرت�
 
 ### الخطوات
 
-1. إنشاء `PdfFileSignature` إنشاء نسخة وربط ملف PDF الموقع.
-2. حدد اسم التوقيع للفحص.
-3. اتصال `extractCertificate` لفتح تدفق الشهادة.
+1. أنشئ `PdfFileSignature` إنشاء نسخة وربط ملف PDF الموقع.
+2. حدّد اسم التوقيع للفحص.
+3. استدعِ `extractCertificate` لفتح تدفق الشهادة.
 4. انسخ بايتات الشهادة إلى ملف إخراج.
 5. أغلق موارد التدفق وكائن الواجهة.
 
@@ -44,4 +44,4 @@ public static void extractSignatureCertificate(Path inputFile, Path outputFile) 
 }
 ```
 
-الحالي `PdfFileSignatureExamples.java` الفئة لا تتضمن عينة Java مخصصة لاستخراج صورة التوقيع المرسومة.
+الحالي الفئة `PdfFileSignatureExamples.java` لا تتضمن عينة Java مخصصة لاستخراج صورة التوقيع المرسومة.

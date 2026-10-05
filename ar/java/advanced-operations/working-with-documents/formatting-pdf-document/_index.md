@@ -5,7 +5,7 @@ type: docs
 weight: 11
 url: /ar/java/formatting-pdf-document/
 description: تعلم كيفية تنسيق مستندات PDF، تضمين Font، التحكم في إعدادات عارض PDF، وضبط خيارات العرض في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: توضح هذه المقالة كيفية تنسيق مستندات PD
 استخدم هذا المثال لتفحص تفضيلات المشاهد الحالية المخزنة في مستند PDF موجود.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قراءة خصائص النافذة والعرض المطلوبة من المستند.
-1. إخراج الإعدادات الحالية للفحص أو التصحيح.
+1. اقرأ خصائص النافذة والعرض المطلوبة من المستند.
+1. اعرض الإعدادات الحالية للفحص أو التصحيح.
 
 ```java
 public static void getDocumentWindow(Path inputFile) {
@@ -45,7 +45,7 @@ public static void getDocumentWindow(Path inputFile) {
 يقوم هذا المثال بتحديث طريقة عرض ملف PDF عندما يتم فتحه في عارض متوافق.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بتعيين التفضيلات المطلوبة للنافذة والتخطيط ووضع الصفحة.
+1. عيّن التفضيلات المطلوبة للنافذة والتخطيط ووضع الصفحة.
 1. احفظ ملف PDF المحدّث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -71,8 +71,8 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 استخدم هذا النهج عندما يجب أن يحمل المستند الخطوط المطلوبة لضمان عرض أكثر موثوقية على الأنظمة الأخرى.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تمكين تضمين الخطوط القياسية وتكرار عبر الخطوط المستخدمة في كلٍ [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. علِّم أي غير مضمّن [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) الكائنات للتضمين.
+1. فعّل تضمين الخطوط القياسية وتكرار عبر الخطوط المستخدمة في كلٍ [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. علِّم أي غير مضمّن الكائنات [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) للتضمين.
 1. احفظ المستند المحدث.
 
 ```java
@@ -95,9 +95,9 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 
 هذا المثال ينشئ ملف PDF جديد ويُعيّن خطًا مدمجًا لمحتوى النص من البداية.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. إنشاء المطلوب [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), و [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. حل الهدف [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) من المستودع وضع علامة عليه كمتضمن.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ المطلوب [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/)، و [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. استرجع الخط المستهدف [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) من المستودع وضع علامة عليه لتضمينه.
 1. أضف محتوى النص إلى الصفحة واحفظ مستند الإخراج.
 
 ```java
@@ -124,7 +124,7 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 استخدم هذا النمط عندما ينبغي أن يعود المستند المحفوظ إلى خطٍ محدد أثناء توليد الإخراج.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) وحدد اسم الخط الافتراضي.
+1. أنشئ كائنًا من الفئة [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) وحدد اسم الخط الافتراضي.
 1. احفظ المستند باستخدام خيارات الحفظ المُكوَّنة.
 
 ```java
@@ -143,7 +143,7 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. عدّ الخطوط التي تُرجعها أدوات خطوط المستند.
-1. إخراج اسم كل ما تم اكتشافه [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. اعرض اسم كل ما تم اكتشافه [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
 
 ```java
 public static void getAllFonts(Path inputFile) {
@@ -160,7 +160,7 @@ public static void getAllFonts(Path inputFile) {
 استخدم هذا النهج عندما تريد تقليل حجم الخط المضمن مع الحفاظ على توافق بيانات الخط المدمج مع استخدام المستند.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بتشغيل تقليل الخط من خلال أدوات خطوط المستند المطلوبة [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) القيم.
+1. شغّل تقليل الخط من خلال أدوات خطوط المستند المطلوبة [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) القيم.
 1. احفظ المستند المُحسّن.
 
 ```java
@@ -178,7 +178,7 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 هذا المثال يضبط مستوى التكبير الأولي الذي يجب تطبيقه عند فتح ملف PDF.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. أنشئ كائنًا من الفئة [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. عيّن الإجراء كإجراء فتح المستند واحفظ النتيجة.
 
 ```java
@@ -196,7 +196,7 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 استخدم هذا المثال للتحقق مما إذا كان ملف PDF يحدد بالفعل مستوى تكبير صريح لإجراء الفتح الخاص به.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تحقق مما إذا كان إجراء الفتح هو [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. تحقّق مما إذا كان إجراء الفتح هو [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) مع [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
 1. أخرج قيمة التكبير المُكوَّنة أو أبلغ بأنه لا يوجد تكبير محدد.
 
 ```java

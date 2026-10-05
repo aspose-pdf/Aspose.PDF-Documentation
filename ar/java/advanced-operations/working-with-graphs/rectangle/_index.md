@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/add-rectangle/
 description: تعرّف على كيفية رسم وتعبئة أشكال المستطيلات في ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,11 +15,11 @@ Abstract: توضح هذه المقالة كيفية إضافة أشكال الم
 ---
 ## إضافة حد مستطيل
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وإضافتها إلى الصفحة.
-1. إنشاء [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) الشكل وتكوين هندسته.
-1. إضافة [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وإضافتها إلى الصفحة.
+1. أنشئ كائنًا من الفئة [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) الشكل واضبط هندسته.
+1. أضف [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -45,16 +45,16 @@ public static void addRectangle(Path outputFile) {
 - `createRectangleFilled` لتعبئة صلبة مع `Color.getRed()`
 - `addDrawingWithGradientFill` لـ `GradientAxialShading` ملء
 
-## استخدم الشفافية ألفا
+## استخدام الشفافية ألفا
 
 `createRectangleWithAlphaColorChannel` يطبق ألوان شفافة مع `Color.fromArgb(...)` حتى تظل المستطيلات المتداخلة مرئية.
 
 ## التحكم بترتيب Z للمستطيلات
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. تعيين المطلوب [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الحجم.
-1. إضافة المُكوَّن [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) الأشكال إلى الصفحة المستهدفة مع ترتيب z-order المطلوب.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. عيّن المطلوب [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الحجم.
+1. أضف المُكوَّن [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) الأشكال إلى الصفحة المستهدفة مع ترتيب z-order المطلوب.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

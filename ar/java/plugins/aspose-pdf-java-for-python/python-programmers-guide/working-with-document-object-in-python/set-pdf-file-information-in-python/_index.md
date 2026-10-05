@@ -1,11 +1,11 @@
 ---
-title: تعيين معلومات ملف PDF في بايثون
-linktitle: تعيين معلومات ملف PDF في بايثون
+title: تعيين معلومات ملف PDF في Python
+linktitle: تعيين معلومات ملف PDF في Python
 type: docs
 weight: 90
 url: /ar/java/set-pdf-file-information-in-python/
-description: تعرّف على كيفية تعيين معلومات ملف PDF مثل المؤلف والعنوان والمزيد في بايثون باستخدام Aspose.PDF لتنظيم المستندات.
-lastmod: "2026-10-01"
+description: تعرّف على كيفية تعيين معلومات ملف PDF مثل المؤلف والعنوان والمزيد في Python باستخدام Aspose.PDF لتنظيم المستندات.
+lastmod: "2026-10-05"
 ---
 لتحديث معلومات مستند Pdf باستخدام **Aspose.PDF Java for Python**، قم ببساطة باستدعاء الفئة **SetPdfFileInfo**.
 
@@ -30,8 +30,8 @@ doc.save(self.dataDir + "Updated_Information.pdf")
 print "Update document information, please check output file."
 ```
 
-**تنزيل الكود التشغيلي**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تنزيلВ **تعيين معلومات ملف PDF (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+تنزيل **تعيين معلومات ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)

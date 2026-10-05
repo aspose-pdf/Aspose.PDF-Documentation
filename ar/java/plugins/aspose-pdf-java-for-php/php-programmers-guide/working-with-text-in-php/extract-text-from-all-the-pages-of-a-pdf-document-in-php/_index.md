@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 description: اكتشف كيف تُستخرج النص من جميع صفحات مستند PDF باستخدام PHP عبر Aspose.PDF لتحليل النص.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - استخراج النص من جميع الصفحات
 
@@ -42,8 +42,8 @@ print "Text extracted successfully. Check output file." . PHP_EOL;
 
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تحميلВ **استخراج النص من جميع الصفحات (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+تحميل **استخراج النص من جميع الصفحات (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/ExtractTextFromAllPages.php)

@@ -4,7 +4,7 @@ linktitle: استخراج النص من جميع صفحات مستند PDF با�
 type: docs
 weight: 30
 url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 description: يشرح كيفية استخراج النص من صفحات PDF في Python باستخدام واجهة برمجة تطبيقات تنسيق ملف PDF.
 ---
 ## استخراج النص من PDF باستخدام Python
@@ -31,7 +31,7 @@ print "Text extracted successfully. Check output file."
 
 ```
 
-**تحميل التعليمات البرمجية الجارية**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تحميل\u0412\u00A0**استخراج النص من جميع الصفحات (Aspose.PDF)**\u0412\u00A0من\u0412\u00A0أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 

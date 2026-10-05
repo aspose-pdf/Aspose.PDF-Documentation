@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /ar/java/move-pages/
 description: تعلم كيفية نقل صفحات PDF داخل مستند أو بين المستندات في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -39,7 +39,7 @@ public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceO
 
 استخدم هذا المثال عندما يجب نقل عدة صفحات من ملف PDF المصدر إلى مستند جديد.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإنشاء المستند الوجهة.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأنشئ المستند الوجهة.
 1. انسخ الصفحات المحددة إلى المستند الوجهة.
 1. احذف الصفحات المنقولة من المصدر واحفظ كلا الملفين.
 
@@ -63,7 +63,7 @@ public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path s
 استخدم هذا المثال عندما يجب إعادة تموضع صفحة إلى موقع جديد في نفس ملف PDF.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بنسخ الصفحة المستهدفة إلى الموضع الجديد وإزالة إدخال الصفحة الأصلي.
+1. انسخ الصفحة المستهدفة إلى الموضع الجديد وأزل إدخال الصفحة الأصلي.
 1. احفظ المستند المعاد ترتيبه.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/aspose-pdf-drawing-graph-shapes-bounds-check/
 description: تعلم كيفية التحقق من صحة حدود الشكل في مجموعات الرسوم البيانية PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,11 +17,11 @@ Abstract: توضح هذه المقالة كيفية التحقق من صحة ح�
 
 ## تحقق من حدود شكل الرسم البياني
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
-1. إنشاء [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) شكل وتكوين هندسته.
-1. تمكين التحقق الصارم من الحدود ومحاولة إضافة الشكل إلى مجموعة الرسوم البيانية باستخدام `BoundsCheckMode`.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
+1. أنشئ شكل [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) واضبط هندسته.
+1. فعّل التحقق الصارم من الحدود ومحاولة إضافة الشكل إلى مجموعة الرسوم البيانية باستخدام `BoundsCheckMode`.
 1. تعامل مع الاستثناء إذا لم يتناسب الشكل.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

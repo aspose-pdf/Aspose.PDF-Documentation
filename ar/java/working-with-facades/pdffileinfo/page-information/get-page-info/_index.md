@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/get-page-info/
 description: تعلم كيفية فحص عرض الصفحة وارتفاعها ودورها في Java باستخدام واجهة PdfFileInfo.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعلم كيفية استرجاع معلومات الصفحة باس�
 
 ### خطوات
 
-1. إنشاء `PdfFileInfo` كائن لملف PDF المصدر.
-2. مكالمة `getPageWidth`, `getPageHeight`، و `getPageRotation` للصفحة التي تريد فحصها.
+1. أنشئ كائن `PdfFileInfo` لملف PDF المصدر.
+2. استدعِ `getPageWidth`, `getPageHeight`، و `getPageRotation` للصفحة التي تريد فحصها.
 3. استخدم القيم المسترجعة أو اطبعها.
-4. أغلق الـ `PdfFileInfo` مثال.
+4. أغلق `PdfFileInfo` مثال.
 
 ### مثال Java
 

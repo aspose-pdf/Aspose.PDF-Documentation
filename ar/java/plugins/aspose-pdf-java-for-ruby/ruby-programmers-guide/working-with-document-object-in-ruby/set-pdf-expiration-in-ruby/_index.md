@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /ar/java/set-pdf-expiration-in-ruby/
 description: تنفيذ تواريخ انتهاء الصلاحية في ملفات PDF باستخدام Aspose.PDF for Ruby للوثائق الحساسة للوقت.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تعيين انتهاء PDF
 
@@ -49,6 +49,6 @@ puts "Update document information, please check output file."
 
 ## تنزيل الكود القائم
 
-تحميلВ **Set PDF Expiration (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **Set PDF Expiration (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setexpiration.rb)

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/convert-pdf-to-excel-workbook-in-ruby/
 description: فهم كيفية تحويل بيانات PDF إلى دفاتر عمل Excel باستخدام Ruby مع Aspose.PDF، وتبسيط استخراج البيانات والتحليل.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تحويل PDF إلى دفتر عمل Excel
 
@@ -35,6 +35,6 @@ puts "Document has been converted successfully"
 
 ## تحميل الكود الجاري
 
-DownloadВ **تحويل PDF إلى DOC أو DOCX (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+Download **تحويل PDF إلى DOC أو DOCX (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftoexcel.rb)

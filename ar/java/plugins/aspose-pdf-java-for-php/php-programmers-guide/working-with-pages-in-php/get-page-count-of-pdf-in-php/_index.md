@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/get-page-count-of-pdf-in-php/
 description: اكتشف كيفية استرداد العدد الكلي لصفحات مستند PDF في PHP باستخدام Aspose.PDF لتحليل المستندات.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - الحصول على عدد الصفحات
 
@@ -25,8 +25,8 @@ print "Page Count:" . $page_count . PHP_EOL;
 
 ```
 
-**تحميل الكود القائم**
+**تنزيل الشفرة القابلة للتشغيل**
 
-DownloadВ **احصل على عدد الصفحات (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+Download **احصل على عدد الصفحات (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetNumberOfPages.php)

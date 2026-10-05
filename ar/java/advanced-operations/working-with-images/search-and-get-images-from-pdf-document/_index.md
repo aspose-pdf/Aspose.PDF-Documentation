@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/search-and-get-images-from-pdf-document/
 description: تعلم كيفية البحث عن الصور وفحصها في مستندات PDF بلغة Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: ابحث وفحص الصور في ملفات PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية البحث عن الصور وفحصها في مستندات PDF باستخدام Aspose.PDF for Java. تغطي قراءة هندسة موضع الصورة، واكتشاف نوع اللون، واستخراج النص البديل، وحساب الدقة الفعلية للصورة من عوامل الصفحة.
@@ -18,7 +18,7 @@ Abstract: توضح هذه المقالة كيفية البحث عن الصور �
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. استخدم [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) لجمع مواضع الصور.
-1. إخراج الحجم والإحداثيات والدقة لكل صورة موضوعة.
+1. اعرض الحجم والإحداثيات والدقة لكل صورة موضوعة.
 
 ```java
 public static void extractImageParams(Path inputFile) {
@@ -44,7 +44,7 @@ public static void extractImageParams(Path inputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. استخدم [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) لتكرار صور الصفحات.
-1. اقرأ الـ [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) من كل صورة وإخراج الإجماليات.
+1. اقرأ [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) من كل صورة وإخراج الإجماليات.
 
 ```java
 public static void extractImageTypesFromPdf(Path inputFile) {
@@ -84,7 +84,7 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. استخدم [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) لجمع مواضع الصور.
-1. اقرأ النص البديل لكل صورة وقم بإخراج النتيجة.
+1. اقرأ النص البديل لكل صورة واعرض النتيجة.
 
 ```java
 public static void extractImageAltText(Path inputFile) {
@@ -109,9 +109,9 @@ public static void extractImageAltText(Path inputFile) {
 
 استخدم هذا المثال عندما تحتاج إلى استخراج حجم الصورة الفعلي ودقتها من عمليات محتوى الصفحة منخفضة المستوى.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) و اجمع أسماء موارد الصورة.
-1. تتبع حالة الرسومات أثناء التكرار عبر مشغلات الصفحة.
-1. حل كل عملية رسم صورة وحساب أبعادها الفعّالة ودقتها.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واجمع أسماء موارد الصورة.
+1. تتبّع حالة الرسومات أثناء التكرار عبر مشغلات الصفحة.
+1. حلّل كل عملية رسم صورة واحسب أبعادها الفعّالة ودقتها.
 
 ```java
 public static void extractImageInformationFromPdf(Path inputFile) {

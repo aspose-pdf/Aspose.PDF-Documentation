@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/create-pdf-booklet/
 description: إنشاء ملف PDF جاهز للكتيب من مستند موجود بلغة Java باستخدام واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: تعلم كيفية إنشاء كتيب PDF باستخدام Aspose.PD
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثيل.
-2. اتصال `makeBooklet` مع ملف PDF المصدر وملف الإخراج.
+1. أنشئ مثيلًا `PdfFileEditor`.
+2. استدعِ `makeBooklet` مع ملف PDF المصدر وملف الإخراج.
 3. احفظ مستند الكتيب.
 4. إذا كنت تريد التحقق من حالة الإرجاع، استخدم النسخة التي تُعيد قيمة منطقية وتعامل مع النتيجة الفاشلة.
 

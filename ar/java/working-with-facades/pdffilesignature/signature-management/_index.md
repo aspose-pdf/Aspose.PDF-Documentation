@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ar/java/signature-management/
 description: تعلم كيفية إزالة توقيع PDF موجود في Java باستخدام واجهة PdfFileSignature.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعلم كيفية إزالة توقيع من ملف PDF موقع ب�
 
 ### خطوات
 
-1. إنشاء `PdfFileSignature` إنشاء كائن وربط ملف PDF الموقع.
-2. قراءة مجموعة التوقيعات واختيار اسم توقيع.
-3. اتصال `removeSignature` بهذا الاسم.
-4. حفظ الملف المحدث وإغلاق كائن الواجهة.
+1. أنشئ `PdfFileSignature` إنشاء كائن وربط ملف PDF الموقع.
+2. اقرأ مجموعة التوقيعات واختيار اسم توقيع.
+3. استدعِ `removeSignature` بهذا الاسم.
+4. احفظ الملف المحدث وأغلق كائن الواجهة.
 
 ### مثال Java
 

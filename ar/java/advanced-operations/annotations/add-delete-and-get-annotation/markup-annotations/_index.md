@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/markup-annotations/
 description: تعرّف على كيفية إضافة وفحص وحذف تعليقات توضيحية للتمييز، التسطير، الخط المتعرج، والخط المشطوب في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,7 @@ Abstract: توضح هذه المقالة كيفية إنشاء وفحص وإزا
 استخدم هذا المثال عندما تحتاج إلى وضع تعليقة نصية بنمط الملاحظة اللاصقة مع بيانات تعريف منبثقة على صفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) وقم بتكوين عنوانه ومحتوياته وأيقونته والنافذة المنبثقة.
+1. أنشئ كائنًا من الفئة [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) واضبط عنوانه ومحتوياته وأيقونته والنافذة المنبثقة.
 1. أضف التعليق إلى الصفحة واحفظ المستند.
 
 ```java
@@ -53,8 +53,8 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 يقوم هذا المثال بفحص الصفحة ويطبع المستطيل الخاص بكل تعليق نصي.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر التعليقات التوضيحية في الصفحة.
-1. تصفية التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` وطباعة مستطيلاتهم.
+1. مرّ على التعليقات التوضيحية في الصفحة.
+1. صفِّ التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` واطبع مستطيلاتهم.
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -73,7 +73,7 @@ public static void textAnnotationGet(Path inputFile) {
 استخدم هذا النهج عندما يجب إزالة التعليقات النصية الموجودة من المستند.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. اجمع التعليقات من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
 1. احذف التعليقات التوضيحية المجمعة واحفظ ملف الإخراج.
 
 ```java
@@ -98,7 +98,7 @@ public static void textAnnotationDelete(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما تحتاج إلى وضع علامة على النص المُدرج باستخدام تعليق مراجعة على نمط ^.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) وإعداد النافذة المنبثقة ومظهرها.
+1. أنشئ كائنًا من الفئة [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) وإعداد النافذة المنبثقة ومظهرها.
 1. أضف التعليق إلى الصفحة واحفظ المستند.
 
 ```java
@@ -128,8 +128,8 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 هذا المثال يقرأ تعليقات caret التوضيحية الموجودة ويطبع مواقعها.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر تعليقات الصفحة.
-1. تصفية التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` وطباعة مستطيلاتهم.
+1. مرّ على تعليقات الصفحة.
+1. صفِّ التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` واطبع مستطيلاتهم.
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -176,8 +176,8 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 يجمع هذا المثال بين تعليقة caret وتعليقة strikeout لتمثيل تعليق مراجعة بنمط الاستبدال.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء التعليق caret والمرتبط [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
-1. ربط التعليقات التوضيحية عبر `setInReplyTo` و `setReplyType`, ثم احفظ المستند.
+1. أنشئ التعليق caret والمرتبط [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
+1. اربط التعليقات التوضيحية عبر `setInReplyTo` و `setReplyType`، ثم احفظ المستند.
 
 ```java
 public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
@@ -222,8 +222,8 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 هذا المثال يكتشف التعليقات التوضيحية المشطوبة التي تشارك في سير عمل الاستبدال المجمّع.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر تعليقات الصفحة واختيار تعليقات الشطب.
-1. تحقق من علاقة الرد واطبع مستطيل التعليقات المتطابقة.
+1. مرّ على تعليقات الصفحة واختيار تعليقات الشطب.
+1. تحقّق من علاقة الرد واطبع مستطيل التعليقات المتطابقة.
 
 ```java
 public static void replaceAnnotationsGet(Path inputFile) {

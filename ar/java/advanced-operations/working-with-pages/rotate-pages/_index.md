@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /ar/java/rotate-pages/
 description: تعرف على كيفية تدوير صفحات PDF وتغيير اتجاه الصفحات في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,12 +15,12 @@ Abstract: توضح هذه المقالة كيفية تدوير صفحات PDF ب
 ---
 استخدم واجهة برمجة تطبيقات تدوير الصفحات عندما تحتاج إلى تغيير الاتجاه عبر صفحة واحدة أو أكثر.
 
-## قم بتدوير جميع الصفحات بزاوية 90 درجة
+## تدوير جميع الصفحات بزاوية 90 درجة
 
 استخدم هذا المثال عندما يجب تدوير كل صفحة في المستند باتجاه عقارب الساعة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التكرار عبر جميع [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الكائنات وتعيين قيمة التدوير.
+1. مرّ على جميع الكائنات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) وعيّن قيمة التدوير.
 1. احفظ ملف PDF المحدث.
 
 ```java

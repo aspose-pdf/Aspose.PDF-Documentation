@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ar/java/set-pdf-file-information-in-php/
 description: تعلم كيفية تعيين خصائص ملف مختلفة، مثل البيانات الوصفية، لوثيقة PDF في PHP باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تعيين معلومات ملف PDF
 
@@ -35,8 +35,8 @@ print "Update document information, please check output file.";
 
 ```
 
-**تحميل الشيفرة الجارية**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تحميلВ **تحديد معلومات ملف PDF (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **تحديد معلومات ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)

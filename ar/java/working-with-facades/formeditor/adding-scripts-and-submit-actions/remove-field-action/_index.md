@@ -5,15 +5,15 @@ type: docs
 weight: 50
 url: /ar/java/remove-field-action/
 description: تعلم كيفية إزالة إجراء حقل من حقل نموذج PDF في Java باستخدام واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إزالة إجراء حقل نموذج PDF في Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وإزالة الإجراء المرتبط بحقل محدد، وحفظ المستند المحدث باستخدام واجهة FormEditor في Aspose.PDF for Java.
 ---
 ## إزالة إجراء حقل
 
-1. ربط ملف PDF المصدر بـ `FormEditor` واجهة.
-2. الاتصال `removeFieldAction(...)` للحقل المستهدف.
+1. اربط ملف PDF المصدر بـ واجهة `FormEditor`.
+2. استدعِ `removeFieldAction(...)` للحقل المستهدف.
 3. احفظ المستند المحدّث.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ar/java/get-and-set-page-properties/
 description: تعلم كيفية فحص خصائص صفحة PDF مثل العدد، الصناديق، الدوران، ومعلومات اللون في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -35,8 +35,8 @@ public static void getPageCount(Path inputFile) {
 
 استخدم هذا المثال عندما تحتاج إلى معرفة عدد الصفحات التي سيتولدها المحتوى قبل كتابة الملف.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإضافة محتوى إلى صفحة.
-1. قم بمعالجة الفقرات لإجبار حساب التخطيط.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف محتوى إلى صفحة.
+1. عالج الفقرات لإجبار حساب التخطيط.
 1. اقرأ عدد الصفحات الناتج واطبعه.
 
 ```java
@@ -93,7 +93,7 @@ public static void getPageProperties(Path inputFile) {
 استخدم هذا المثال عندما تحتاج إلى تحديد ما إذا كانت الصفحات بالأبيض والأسود أو بالتدرج الرمادي أو RGB.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار عبر جميع الصفحات وقراءة كل صفحة [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
+1. مرّ على جميع الصفحات واقرأ كل صفحة [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
 1. حوّل قيمة التعداد إلى نص قابل للقراءة واطبع النتيجة.
 
 ```java

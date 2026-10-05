@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/clear-pdf-metadata/
 description: تعلم كيفية مسح بيانات تعريف PDF في Java باستخدام واجهة PdfFileInfo.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعلم كيفية مسح بيانات تعريف PDF باستخدا�
 
 ### خطوات
 
-1. إنشاء `PdfFileInfo` كائن للملف PDF المدخل.
-2. اتصال `clearInfo()` لإزالة البيانات التعريفية للمستند.
+1. أنشئ كائن `PdfFileInfo` للملف PDF المدخل.
+2. استدعِ `clearInfo()` لإزالة البيانات التعريفية للمستند.
 3. احفظ النتيجة في ملف جديد مع `save()`.
-4. إغلاق `PdfFileInfo` مثال.
+4. أغلق `PdfFileInfo` مثال.
 
 ### مثال Java
 

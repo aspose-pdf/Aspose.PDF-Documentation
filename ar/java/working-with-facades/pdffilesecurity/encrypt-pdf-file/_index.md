@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/encrypt-pdf-file/
 description: تعلم كيفية تشفير ملف PDF وتكوين الأذونات في Java باستخدام واجهة PdfFileSecurity.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,9 +20,9 @@ Abstract: تعلم كيفية تشفير ملف PDF باستخدام Aspose.PDF 
 
 ### الخطوات
 
-1. إنشاء `PdfFileSecurity` مثال.
-2. ربط ملف PDF المصدر بـ `bindPdf`.
-3. بناء `DocumentPrivilege` كائن يطابق الإجراءات المسموح بها.
+1. أنشئ مثيلًا من `PdfFileSecurity`.
+2. اربط ملف PDF المصدر بـ `bindPdf`.
+3. ابنِ كائن `DocumentPrivilege` يطابق الإجراءات المسموح بها.
 4. استدعِ المناسب `encryptFile` تحميل زائد لحجم المفتاح والخوارزمية التي تحتاجها.
 5. احفظ الملف المؤمَّن وأغلق الكائن.
 

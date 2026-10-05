@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/get-a-particular-page-in-a-pdf-file-in-php/
 description: تعلم كيفية استرجاع صفحة معينة من ملف PDF في PHP باستخدام Aspose.PDF لمعالجة الصفحات المستهدفة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - الحصول على الصفحة
 
@@ -36,6 +36,6 @@ print "Process completed successfully!";
 
 ## تنزيل الكود الجاري
 
-تحميل **Get Page (Aspose.PDF)**В منВ أي من المواقع الاجتماعية المذكورة أدناه:
+تحميل **Get Page (Aspose.PDF)** من أي من المواقع الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPage.php)

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/add-curve/
 description: تعلم كيفية رسم وتعبئة أشكال المنحنيات في ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,12 +17,12 @@ Abstract: توضح هذه المقالة كيفية إضافة أشكال الم
 
 ## إضافة مخطط منحنى
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
-1. إنشاء [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) شكل وقم بتكوين نقاط التحكم الخاصة به.
-1. أضف الـ [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) إلى الـ [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
-1. قم بتعيين خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) حاوية وأضفها إلى الصفحة.
+1. أنشئ شكل [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) واضبط نقاط التحكم الخاصة به.
+1. أضف [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. عيّن خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

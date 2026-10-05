@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/add-circle/
 description: تعرّف على كيفية رسم وتعبئة أشكال الدائرة في ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,12 +15,12 @@ Abstract: توضح هذه المقالة كيفية إضافة أشكال دائ
 ---
 ## إضافة حدود دائرة
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى الوثيقة.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
-1. إنشاء [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) الشكل وتكوين هندسته.
-1. إضافة [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
-1. قم بتعيين خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى الوثيقة.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
+1. أنشئ كائنًا من الفئة [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) الشكل واضبط هندسته.
+1. أضف [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. عيّن خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -40,14 +40,14 @@ public static void addCircle(Path outputFile) {
 }
 ```
 
-## أضف دائرة مملوءة بالنص
+## إضافة دائرة مملوءة بالنص
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى الوثيقة.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
-1. إنشاء [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) الشكل وتكوين هندسته.
-1. إضافة [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
-1. قم بتعيين خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) و [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى الوثيقة.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
+1. أنشئ كائنًا من الفئة [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) الشكل واضبط هندسته.
+1. أضف [Circle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/circle/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. عيّن خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) و [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

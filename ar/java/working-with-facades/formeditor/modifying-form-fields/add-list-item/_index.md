@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /ar/java/add-list-item/
 description: تعرف على كيفية إضافة عناصر إلى حقل قائمة في مستند PDF باستخدام Java عبر واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إضافة عنصر إلى حقل نموذج PDF في Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وإضافة عنصر جديد إلى حقل قائمة، وحفظ المستند المحدث باستخدام واجهة FormEditor في Aspose.PDF for Java.
 ---
 ## إضافة عنصر إلى حقل القائمة
 
-1. اربط ملف PDF المصدر بـ `FormEditor` واجهة.
-2. اتصال `addListItem(...)` للحقل المستهدف وزوج العرض/القيمة الجديد.
+1. اربط ملف PDF المصدر بـ واجهة `FormEditor`.
+2. استدعِ `addListItem(...)` للحقل المستهدف وزوج العرض/القيمة الجديد.
 3. احفظ المستند المحدث.
 
 ```java

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/add-toc-to-existing-pdf-in-php/
 description: اكتشف كيفية إضافة جدول محتويات (TOC) إلى مستند PDF موجود في PHP باستخدام Aspose.PDF لتحسين التنقل.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - إضافة فهرس TOC
 
@@ -67,7 +67,7 @@ print "Added TOC Successfully, please check the output file.";
 
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تحميل **إضافة TOC (Aspose.PDF)** من أي من المواقع الاجتماعية للترميز المذكورة أدناه:
 

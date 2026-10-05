@@ -1,17 +1,17 @@
 ---
-title: تحويل ملف SVG إلى تنسيق PDF في بايثون
-linktitle: تحويل ملف SVG إلى تنسيق PDF في بايثون
+title: تحويل ملف SVG إلى تنسيق PDF في Python
+linktitle: تحويل ملف SVG إلى تنسيق PDF في Python
 type: docs
 weight: 40
 url: /ar/java/convert-svg-file-to-pdf-format-in-python/
-description: تعرّف على كيفية تحويل ملفات SVG إلى تنسيق PDF في بايثون باستخدام Aspose.PDF لإنشاء مستندات موثوقة.
-lastmod: "2026-10-01"
+description: تعرّف على كيفية تحويل ملفات SVG إلى تنسيق PDF في Python باستخدام Aspose.PDF لإنشاء مستندات موثوقة.
+lastmod: "2026-10-05"
 ---
-## كيفية تحويل ملف SVG إلى تنسيق PDF في بايثون
+## تحويل ملف SVG إلى تنسيق PDF في Python
 
 لتحويل ملف SVG إلى تنسيق PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء وحدة **SvgToPdf**.
 
-كود بايثون:
+كود Python:
 
 ```python
 options = self.SvgLoadOptions();

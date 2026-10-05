@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ar/java/extract-vector-data-from-pdf/
 description: Aspose.PDF يجعل من السهل استخراج بيانات المتجه من ملف PDF. يمكنك الحصول على بيانات المتجه، مثل الموضع، حدود المستطيل، وإنتاج SVG.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -14,10 +14,10 @@ sitemap:
 
 استخدام `GraphicsAbsorber` لفحص عناصر الرسومات المتجهية على صفحة وكتابة هندستها الأساسية إلى ملف نصي.
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائن.
-1. إنشاء [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) لجمع عمليات الرسومات المتجهية.
-1. تكرار عبر المستخرجة [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) الكائنات وقراءة مستطيلها، موضعها، ومجموعات المشغلين.
-1. بناء نص الإخراج مع تفاصيل الهندسة وعدد المشغلات لكل عنصر.
+1. افتح ملف PDF المصدر في كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) لجمع عمليات الرسومات المتجهية.
+1. مرّ على المستخرجة الكائنات [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) واقرأ مستطيلها، موضعها، ومجموعات المشغلين.
+1. ابنِ نص الإخراج مع تفاصيل الهندسة وعدد المشغلات لكل عنصر.
 1. اكتب بيانات المتجه المستخرجة إلى ملف الإخراج.
 
 ```java
@@ -41,11 +41,11 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 }
 ```
 
-## احفظ رسومات الصفحة المتجهة بصيغة SVG
+## حفظ رسومات الصفحة المتجهة بصيغة SVG
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائن.
+1. افتح ملف PDF المصدر في كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) من المستند.
-1. اتصال `page.trySaveVectorGraphics(outputFile.toString())` لتصدير محتوى الرسومات المتجهة لتلك الصفحة مباشرة إلى SVG.
+1. استدعِ `page.trySaveVectorGraphics(outputFile.toString())` لتصدير محتوى الرسومات المتجهة لتلك الصفحة مباشرة إلى SVG..
 
 ```java
 public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
@@ -56,12 +56,12 @@ public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
 }
 ```
 
-## احفظ كل عنصر مستخرج في ملف SVG منفصل
+## حفظ كل عنصر مستخرج في ملف SVG منفصل
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائن.
-1. إنشاء [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. افتح ملف PDF المصدر في كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. أنشئ دليل الإخراج للمسارات الفرعية المستخرجة قبل كتابة أي ملفات.
-1. تكرار عبر المستخرجة [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) الكائنات والاستدعاء `saveToSvg(...)` لكل عنصر.
+1. مرّ على المستخرجة الكائنات [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) والاستدعاء `saveToSvg(...)` لكل عنصر.
 1. احفظ كل عنصر مستخرج في ملف SVG منفصل.
 
 ```java
@@ -83,11 +83,11 @@ public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws 
 
 ## دمج العناصر المستخرجة في ملف SVG واحد
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائن.
-1. إنشاء [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. إنشاء وسوم تغليف SVG التي ستحتوي على أجزاء المتجه المدمجة.
-1. تكرار عبر المستخرجة [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) الكائنات وإضافة كل جزء SVG تم إنشاؤه.
-1. كتابة ناتج SVG المدمج إلى الملف الهدف.
+1. افتح ملف PDF المصدر في كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ وسوم تغليف SVG التي ستحتوي على أجزاء المتجه المدمجة.
+1. مرّ على المستخرجة الكائنات [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) وأضف كل جزء SVG تم إنشاؤه.
+1. اكتب ناتج SVG المدمج إلى الملف الهدف.
 
 ```java
 public static void extractListOfElementsToSingleImage(Path inputFile, Path outputFile) throws Exception {
@@ -108,10 +108,10 @@ public static void extractListOfElementsToSingleImage(Path inputFile, Path outpu
 
 ## استخراج عنصر متجه واحد
 
-1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائن.
-1. إنشاء [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. افتح ملف PDF المصدر في كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. احصل على المطلوب [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) من مجموعة العناصر المستخرجة.
-1. تحقق مما إذا كان العنصر المحدد هو [XFormPlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) وانزل إلى عناصره المتداخلة عند الحاجة.
+1. تحقّق مما إذا كان العنصر المحدد هو [XFormPlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) وانزل إلى عناصره المتداخلة عند الحاجة.
 1. احفظ العنصر المتجه المحدد إلى ملف SVG الناتج.
 
 ```java

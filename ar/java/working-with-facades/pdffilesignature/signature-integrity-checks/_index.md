@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/signature-integrity-checks/
 description: تعلم كيفية التحقق من تغطية التوقيع وسلامته في Java باستخدام واجهة PdfFileSignature.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -21,10 +21,10 @@ Abstract: تعلم كيفية فحص سلامة التوقيع باستخدام 
 ### خطوات
 
 1. اربط ملف PDF الموقع بـ `PdfFileSignature`.
-2. حدد اسم التوقيع من المستند.
-3. مكالمة `verifySignature` للتحقق من محتويات التوقيع.
-4. مكالمة `coversWholeDocument` لتأكيد التغطية على مستوى المستند.
-5. إغلاق كائن الواجهة.
+2. حدّد اسم التوقيع من المستند.
+3. استدعِ `verifySignature` للتحقق من محتويات التوقيع.
+4. استدعِ `coversWholeDocument` لتأكيد التغطية على مستوى المستند.
+5. أغلق كائن الواجهة.
 
 ### مثال Java
 

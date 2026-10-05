@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /ar/java/working-with-operators/
 description: تعرف على كيفية استخدام مشغلات PDF منخفضة المستوى في Java لتعديل تدفق المحتوى، وضع الصور، إعادة استخدام XForm، وتنظيف الرسومات.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,8 +27,8 @@ Abstract: تشرح هذه المقالة كيفية العمل مع عوامل P
 
 1. افتح ملف PDF المصدر باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واحصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. أضف تدفق الصورة الإدخالية إلى موارد الصفحة واحتفظ باسم المورد المعاد.
-1. إنشاء [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) الذي يحدد المنطقة المستهدفة ويُنشئ [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) من حدوده.
-1. استخدام [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) لحفظ حالة الرسومات الحالية، [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) لوضع الصورة، [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) لتلوينه، و [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) لإعادة الحالة السابقة.
+1. أنشئ كائنًا من الفئة [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) الذي يحدد المنطقة المستهدفة ويُنشئ [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) من حدوده.
+1. استخدم [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) لحفظ حالة الرسومات الحالية، [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) لوضع الصورة، [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) لتلوينه، و [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) لإعادة الحالة السابقة.
 1. احفظ مستند PDF المحدث.
 
 ```java
@@ -62,9 +62,9 @@ public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Pat
 
 استخدم هذا النهج عندما يجب عرض نفس الصورة أو الرسم البياني أكثر من مرة دون تكرار المورد في ملف PDF.
 
-1. افتح ملف PDF المصدر باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), والوصول إلى الخاص به [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
+1. افتح ملف PDF المصدر باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)، احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)، والوصول إلى الخاص به [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
 1. غلف محتويات الصفحة الحالية بـ [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) و [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) حتى لا تتسرب التحولات اللاحقة إلى تدفق المحتوى الأصلي.
-1. إنشاء [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) المورد، أضف الصورة إلى موارد النموذج، واستخدم [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) زائد [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) لرسم الصورة داخل النموذج.
+1. أنشئ كائنًا من الفئة [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) المورد، أضف الصورة إلى موارد النموذج، واستخدم [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) زائد [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) لرسم الصورة داخل النموذج.
 1. ضع النموذج نفسه عند إحداثيات صفحات متعددة عن طريق إضافة مصفوفة تحويل وتنفيذ اسم النموذج مع `Do` المشغل.
 1. استعد حالة الرسومات واحفظ ملف PDF الناتج.
 
@@ -110,7 +110,7 @@ private static void addFormAt(OperatorCollection pageContents, String formName, 
 استخدم هذا المثال عندما تحتوي الصفحة على عوامل رسم متجهية يجب إزالتها مباشرةً من تدفق المحتوى.
 
 1. افتح ملف PDF المصدر باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) واحصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. المرور عبر مشغّلات محتوى الصفحة وجمع نماذج من [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/)، و [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. مرّ على مشغّلات محتوى الصفحة وجمع نماذج من [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/)، و [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
 1. احذف المشغلين المجمّعين من محتويات الصفحة واحفظ ملف PDF المحدث.
 
 تزيل هذه التقنية تعليمات الرسم المستهدفة فقط. إذا كانت الصفحة تحتوي أيضًا على تسميات نصية ذات صلة أو عمليات تشغيل غير رسومية أخرى، فإن تلك العناصر تظل في تدفق المحتوى وقد تحتاج إلى إجراء تنظيف منفصل.
@@ -138,4 +138,4 @@ public static void removeGraphicsObjects(Path inputFile, Path outputFile) {
 - [عمليات PDF المتقدمة في Java](/pdf/ar/java/advanced-operations/)
 - [العمل مع الصور في PDF باستخدام Java](/pdf/ar/java/working-with-images/)
 - [العمل مع صفحات PDF في Java](/pdf/ar/java/working-with-pages/)
-- [العمل مع الرسومات المتجهة في جافا](/pdf/ar/java/working-with-vector-graphics/)
+- [العمل مع الرسومات المتجهة في Java](/pdf/ar/java/working-with-vector-graphics/)

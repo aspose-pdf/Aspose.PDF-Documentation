@@ -5,12 +5,12 @@ type: docs
 weight: 30
 url: /ar/java/filling-form-fields/
 description: تعلم كيفية ملء حقول نموذج PDF في Java باستخدام الواجهة Form في Aspose.PDF، بما في ذلك حقول النص، ومربّعات الاختيار، وأزرار الراديو، ومربعات القائمة، وحقول الباركود.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: ملء حقول AcroForm في Java باستخدام الواجهة Form
 Abstract: يغطي هذا القسم سير عمل ملء النماذج في Java المطبقة في أمثلة الواجهة Form ل Aspose.PDF for Java. تشمل مجموعة العينات ملء حقول النص، وحقل مربّع الاختيار، وحقل زر الراديو، وحقل مربع القائمة، وحقول الباركود، ونمط ملء قابل لإعادة الاستخدام من نوع اسم-قيمة مبني على نفس واجهة برمجة التطبيقات `fillField(...)`.
 ---
-جافا `FormExamples` الفئة توضح الرئيسية `Form.fillField(...)` و `Form.fillBarcodeField(...)` مسارات العمل المستخدمة لملء نماذج PDF التفاعلية.
+Java الفئة `FormExamples` توضح الرئيسية `Form.fillField(...)` و `Form.fillBarcodeField(...)` مسارات العمل المستخدمة لملء نماذج PDF التفاعلية.
 
 استخدم هذا القسم لمعرفة كيفية:
 

@@ -1,17 +1,17 @@
 ---
-title: تقسيم ملفات PDF في جافا
+title: تقسيم ملفات PDF في Java
 linktitle: تقسيم ملفات PDF
 type: docs
 weight: 60
 url: /ar/java/split-pdf/
-description: تعلم كيفية تقسيم ملف PDF إلى ملفات PDF بصفحة واحدة في جافا باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+description: تعلم كيفية تقسيم ملف PDF إلى ملفات PDF بصفحة واحدة في Java باستخدام Aspose.PDF.
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: تقسيم صفحات PDF باستخدام جافا
-Abstract: توضح هذه المقالة كيفية تقسيم مستند PDF إلى ملفات PDF منفصلة بصفحة واحدة في جافا باستخدام Aspose.PDF. يفتح المثال المستند المصدر، ويتنقل عبر صفحاته، وينشئ مستندًا جديدًا لكل صفحة، ويحفظ كل صفحة كملف PDF منفصل.
+AlternativeHeadline: تقسيم صفحات PDF باستخدام Java
+Abstract: توضح هذه المقالة كيفية تقسيم مستند PDF إلى ملفات PDF منفصلة بصفحة واحدة في Java باستخدام Aspose.PDF. يفتح المثال المستند المصدر، ويتنقل عبر صفحاته، وينشئ مستندًا جديدًا لكل صفحة، ويحفظ كل صفحة كملف PDF منفصل.
 ---
 يكون تقسيم ملف PDF إلى ملفات منفصلة مفيدًا عندما تحتاج إلى تصدير كل صفحة للمراجعة أو التخزين أو المعالجة اللاحقة.
 
@@ -21,16 +21,16 @@ Abstract: توضح هذه المقالة كيفية تقسيم مستند PDF إ
 
 [![Aspose تقسيم PDF](splitter.png)](https://products.aspose.app/pdf/splitter)
 
-هذا المثال يستخدم [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) فئة لفتح ملف PDF والتنقل عبر صفحاته. لكل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/), ينشئ مستندًا جديدًا، يضيف الصفحة إليه، ويحفظ النتيجة كملف PDF منفصل.
+هذا المثال يستخدم فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لفتح ملف PDF والتنقل عبر صفحاته. لكل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)، ينشئ مستندًا جديدًا، يضيف الصفحة إليه، ويحفظ النتيجة كملف PDF منفصل.
 
 لتقسيم ملف PDF إلى ملفات صفحات فردية في Java:
 
-1. افتح ملف PDF المصدر باستخدام الـ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) المُنشئ.
-1. تكرار عبر [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) الكائنات التي تم إرجاعها بواسطة `document.getPages()`.
-1. إنشاء جديد فارغ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لكل صفحة.
+1. افتح ملف PDF المصدر باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) المُنشئ.
+1. مرّ على الكائنات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) التي تم إرجاعها بواسطة `document.getPages()`.
+1. أنشئ جديد فارغ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لكل صفحة.
 1. أضف الحالي [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى الجديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. احفظ الجديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) باسم ملف فريد.
-1. أغلق كليهما [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) الكائنات عندما تكتمل المعالجة.
+1. أغلق كليهما الكائنات [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) عندما تكتمل المعالجة.
 
 ## قسّم PDF إلى ملفات صفحة واحدة
 

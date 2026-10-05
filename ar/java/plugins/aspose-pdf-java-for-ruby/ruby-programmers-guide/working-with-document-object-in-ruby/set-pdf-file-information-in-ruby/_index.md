@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /ar/java/set-pdf-file-information-in-ruby/
 description: تعريف وتحديث بيانات تعريف PDF برمجياً مثل العنوان، المؤلف، والكلمات المفتاحية باستخدام Ruby.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تعيين معلومات ملف PDF
 
@@ -47,6 +47,6 @@ puts "Update document information, please check output file."
 
 ## تنزيل الكود الجاري
 
-تحميلВ **تعيين معلومات ملف PDF (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **تعيين معلومات ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

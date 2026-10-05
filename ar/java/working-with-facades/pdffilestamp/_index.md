@@ -5,7 +5,7 @@ type: docs
 weight: 155
 url: /ar/java/pdffilestamp-class/
 description: تعرف على كيفية استخدام واجهة PdfFileStamp في Java لإضافة رؤوس، تذييلات، أرقام صفحات، وطوابع إلى مستندات PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -14,7 +14,7 @@ TechArticle: true
 AlternativeHeadline: إضافة رؤوس، تذييلات، أرقام صفحات، وطوابع إلى PDF في Java باستخدام PdfFileStamp
 Abstract: يشرح هذا القسم كيفية استخدام واجهة PdfFileStamp في Aspose.PDF for Java لإضافة محتوى متكرر إلى مستندات PDF. تغطي أمثلة Java الحالية طوابع الصور، رؤوس النص والصورة، تذييلات النص والصورة، والعديد من خيارات وضع أرقام الصفحات.
 ---
-الجافا `PdfFileStampExamples` الفئة توضح سير عمل الختم الرئيسي المتاح من خلال Facades API.
+الجافا الفئة `PdfFileStampExamples` توضح سير عمل الختم الرئيسي المتاح من خلال Facades API.
 
 استخدم هذا القسم لتعلم كيفية:
 

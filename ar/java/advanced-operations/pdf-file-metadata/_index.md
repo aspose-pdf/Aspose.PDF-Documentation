@@ -5,7 +5,7 @@ type: docs
 weight: 200
 url: /ar/java/pdf-file-metadata/
 description: تعلم كيفية استخراج وتحديث وإدارة بيانات تعريف ملفات PDF ومعلومات المستند وخصائص XMP في Java باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -23,7 +23,7 @@ Abstract: تشرح هذه المقالة كيفية العمل مع بيانات
 استخدم هذا المثال عندما تحتاج إلى قراءة حقول معلومات المستند القياسية مثل المؤلف، العنوان، الموضوع، أو الكلمات المفتاحية.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) كائن.
+1. انتقل إلى كائن [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/).
 1. اقرأ حقول البيانات الوصفية المطلوبة وأخرج قيمها.
 
 ```java
@@ -65,7 +65,7 @@ public static void setPrefixMetadata(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما تريد كتابة خصائص ملف PDF القياسية مثل المؤلف، العنوان، المنتج، أو تاريخ الإنشاء.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) وتعيين قيم بيانات تعريفية جديدة.
+1. انتقل إلى [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) وعيّن قيم بيانات تعريفية جديدة.
 1. احفظ المستند مع معلومات الملف المحدثة.
 
 ```java

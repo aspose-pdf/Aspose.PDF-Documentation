@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/add-headers-and-footers-of-pdf-file/
 description: تعرّف على كيفية إضافة رؤوس وتذييلات إلى ملفات PDF في Java باستخدام النصوص والصور والمحتوى المهيكل.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,14 +13,14 @@ TechArticle: true
 AlternativeHeadline: أضف رؤوس وتذييلات إلى ملفات PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية إضافة رؤوس وتذييلات إلى مستندات PDF باستخدام Aspose.PDF for Java. وتغطي النص، وترقيم الصفحات، وHTML، والصورة، والجدول، ومحتوى الرأس والتذييل المستند إلى LaTeX.
 ---
-Aspose.PDF for Java يتيح لك تعيين `HeaderFooter` الكائنات إلى كل صفحة وملئها بأنواع محتوى مختلفة.
+Aspose.PDF for Java يتيح لك تعيين الكائنات `HeaderFooter` إلى كل صفحة وملئها بأنواع محتوى مختلفة.
 
 ## إضافة رؤوس وتذييلات النص
 
 استخدم هذا المثال عندما تحتاج إلى محتوى نصي بسيط في أعلى وأسفل كل صفحة.
 
-1. إنشاء [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) الكائنات وإضافة مقاطع نصية.
-1. قم بتكوين الهوامش للرأس والتذييل.
+1. أنشئ الكائنات [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) وأضف مقاطع نصية.
+1. اضبط الهوامش للرأس والتذييل.
 1. طبقها على كل صفحة من ملف PDF المصدر واحفظ النتيجة.
 
 ```java
@@ -47,12 +47,12 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 }
 ```
 
-## أضف رؤوس وتذييلات مع ترقيم الصفحات
+## إضافة رؤوس وتذييلات مع ترقيم الصفحات
 
 استخدم هذا المثال عندما يجب أن يُظهر الرأس أو التذييل رقم الصفحة الحالية وإجمالي عدد الصفحات.
 
-1. إنشاء [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) الكائنات ذات عناصر نائبة لترقيم الصفحات.
-1. قم بتكوين الهوامش لكلا الكائنين.
+1. أنشئ الكائنات [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) ذات عناصر نائبة لترقيم الصفحات.
+1. اضبط الهوامش لكلا الكائنين.
 1. طبقها على كل صفحة واحفظ ملف PDF المحدث.
 
 ```java
@@ -83,8 +83,8 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 
 استخدم هذا المثال عندما ينبغي أن يتضمن محتوى الرأس والتذييل تنسيق HTML مضمن.
 
-1. إنشاء [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) الكائنات وإضافة [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) المحتوى.
-1. تكوين الهوامش للموضع.
+1. أنشئ الكائنات [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) وأضف [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) المحتوى.
+1. اضبط الهوامش للموضع.
 1. عيّن الرأس والتذييل لكل صفحة واحفظ المستند.
 
 ```java
@@ -115,8 +115,8 @@ public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يعرض الرأس والتذييل صورة في كل صفحة.
 
-1. إنشاء [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) الكائنات وإضافتها إلى حاويات الرأس والتذييل.
-1. قم بتكوين الهوامش وتعيين الحاويات لكل صفحة.
+1. أنشئ الكائنات [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) وإضافتها إلى حاويات الرأس والتذييل.
+1. اضبط الهوامش وعيّن الحاويات لكل صفحة.
 1. احفظ ملف PDF المحدث.
 
 ```java
@@ -149,9 +149,9 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 
 استخدم هذا المثال عندما يجب أن يستخدم محتوى الرأس والتذييل تخطيط الجدول وتنسيق النص.
 
-1. إنشاء أنماط النص المطلوبة وكائنات الجدول.
+1. أنشئ أنماط النص المطلوبة وكائنات الجدول.
 1. أضف الجداول إلى [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) حاويات.
-1. قم بتطبيق الترويسة والتذييل على كل صفحة واحفظ المستند.
+1. طبّق الترويسة والتذييل على كل صفحة واحفظ المستند.
 
 ```java
 public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
@@ -195,8 +195,8 @@ public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب على الرأس والتذييل أن يعرضا محتوى TeX أو LaTeX.
 
 1. افتح ملف PDF المصدر وحدد إجمالي عدد الصفحات.
-1. إنشاء [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) المحتوى لترويسة وتذييل كل صفحة.
-1. قم بتعيين المحتوى وحفظ المستند.
+1. أنشئ كائنًا من الفئة [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) المحتوى لترويسة وتذييل كل صفحة.
+1. عيّن المحتوى واحفظ المستند.
 
 ```java
 public static void addHeaderAndFooterAsLatex(Path inputFile, Path outputFile) {

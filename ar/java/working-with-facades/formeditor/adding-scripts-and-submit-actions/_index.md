@@ -5,12 +5,12 @@ type: docs
 weight: 40
 url: /ar/java/adding-scripts-and-submit-actions/
 description: تعلم كيفية إضافة البرامج النصية، تكوين عناوين URL للإرسال، وإزالة إجراءات الحقول في نماذج PDF باستخدام واجهة FormEditor في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إضافة برامج نصية للحقول وإجراءات الإرسال إلى نماذج PDF في Java
 Abstract: يغطي هذا القسم سير عمل FormEditor في Java لإرفاق JavaScript بحقول النموذج، وتكوين عناوين URL للإرسال والعلامات، وإزالة إجراءات الحقول في نماذج PDF التفاعلية.
 ---
-الجافا `FormEditorExamples` الفئة توضح كيفية العمل مع إجراءات الحقل بعد إنشاء بنية النموذج بالفعل.
+الجافا الفئة `FormEditorExamples` توضح كيفية العمل مع إجراءات الحقل بعد إنشاء بنية النموذج بالفعل.
 استخدام هذا القسم لـ:
 
 - إضافة إجراء JavaScript إلى حقل

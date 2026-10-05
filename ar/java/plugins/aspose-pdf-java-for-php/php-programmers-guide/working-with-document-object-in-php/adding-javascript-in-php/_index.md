@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/adding-javascript-in-php/
 description: تعلم كيفية إضافة JavaScript إلى ملفات PDF باستخدام PHP و Aspose.PDF لتعزيز تفاعلية المستند.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - إضافة JavaScript
 
@@ -34,7 +34,7 @@ $doc->save($dataDir . "JavaScript-Added.pdf");
 print "Added JavaScript Successfully, please check the output file.";
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
 DownloadВ **إضافة JavaScript (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 

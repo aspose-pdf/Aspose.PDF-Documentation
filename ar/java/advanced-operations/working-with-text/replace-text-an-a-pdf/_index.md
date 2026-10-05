@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/replace-text-in-pdf/
 description: تعلم كيفية استبدال وإعادة ترتيب وإزالة النص في مستندات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,7 +15,7 @@ TechArticle: true
 AlternativeHeadline: استبدل، وأزل، واضبط محتوى النص في PDF باستخدام Java
 Abstract: تشرح هذه المقالة سير عمل استبدال النص في مستندات PDF باستخدام Aspose.PDF for Java. وتغطي استبدال النص عبر جميع الصفحات، وتحديد الاستبدال إلى منطقة مختارة، وضبط تخطيط الاستبدال، واستخدام المطابقة القائمة على التعابير النمطية (regex)، واستبدال الخطوط، وإزالة جميع النصوص، وحذف النص المخفي.
 ---
-توفر Aspose.PDF for Java كلًا من ميزات الاستبدال البسيط والاستبدال المدرك للتخطيط من خلال `TextFragmentAbsorber` و استبدال الخيارات.
+توفر Aspose.PDF for Java كلًا من ميزات الاستبدال البسيط والاستبدال المدرك للتخطيط من خلال `TextFragmentAbsorber` واستبدال الخيارات.
 
 ## استبدال النص على جميع الصفحات
 
@@ -48,7 +48,7 @@ public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب أن يقتصر الاستبدال على مستطيل محدد في صفحة واحدة.
 
 1. افتح مستند PDF المصدر.
-1. تكوين `TextSearchOptions` مع حدود الصفحة ومستطيل الهدف.
+1. اضبط `TextSearchOptions` مع حدود الصفحة ومستطيل الهدف.
 1. استبدل النص المطابق داخل تلك المنطقة واحفظ المستند.
 
 ```java
@@ -77,7 +77,7 @@ public static void replaceTextInParticularPageRegion(Path inputFile, Path output
 
 1. افتح ملف PDF المصدر وجمع شظايا النص من الصفحة المستهدفة.
 1. عدل مستطيل الاستبدال واختر `AdjustSpaceWidth` السلوك.
-1. قم بتعيين النص الجديد واحفظ المستند.
+1. عيّن النص الجديد واحفظ المستند.
 
 ```java
 public static void replaceTextAndResizeAndShiftWithoutChangingFontSize(Path inputFile, Path outputFile) {
@@ -104,8 +104,8 @@ public static void replaceTextAndResizeAndShiftWithoutChangingFontSize(Path inpu
 استخدم هذا المثال عندما يجب أن يتوسع النص البديل إلى مساحة صفحة أكبر.
 
 1. افتح ملف PDF المصدر واحصل على أول مقطع نصي من الصفحة المستهدفة.
-1. إنشاء مستطيل استبدالي أكبر باستخدام صندوق وسائط الصفحة.
-1. طبق خيارات الاستبدال واحفظ ملف PDF.
+1. أنشئ مستطيل استبدالي أكبر باستخدام صندوق وسائط الصفحة.
+1. طبّق خيارات الاستبدال واحفظ ملف PDF..
 
 ```java
 public static void replaceTextAndResizeAndShiftParagraph(Path inputFile, Path outputFile) {
@@ -133,8 +133,8 @@ public static void replaceTextAndResizeAndShiftParagraph(Path inputFile, Path ou
 استخدم هذا المثال عندما يجب أن يتسع النص البديل لملء المنطقة المستهدفة.
 
 1. افتح ملف PDF المصدر وواصل إلى جزء النص الهدف.
-1. حدد مستطيل الاستبدال وقم بتمكينه `ScaleToFill` ضبط الخط.
-1. قم بتعيين النص الجديد واحفظ المستند المحدث.
+1. حدّد مستطيل الاستبدال وقم بتمكينه `ScaleToFill` ضبط الخط.
+1. عيّن النص الجديد واحفظ المستند المحدث.
 
 ```java
 public static void replaceTextAndResizeAndExpandFont(Path inputFile, Path outputFile) {
@@ -186,7 +186,7 @@ public static void replaceTextAndFitTextIntoRectangle(Path inputFile, Path outpu
 
 1. افتح مستند PDF المصدر.
 1. ابحث في الصفحة باستخدام regex-enabled `TextFragmentAbsorber`.
-1. استبدل كل تطابق، وقم بتحديث نمط النص الخاص به، واحفظ النتيجة.
+1. استبدل كل تطابق، وحدّث نمط النص الخاص به، واحفظ النتيجة.
 
 ```java
 public static void replaceTextBasedOnRegex(Path inputFile, Path outputFile) {
@@ -239,7 +239,7 @@ public static void automaticallyRearrangePageContents(Path inputFile, Path outpu
 استخدم هذا المثال عندما يجب استبدال النص الذي يستخدم خطًا مدمجًا محددًا بخط آخر.
 
 1. افتح ملف PDF المصدر وجمع جميع مقاطع النص.
-1. تحقق من اسم الخط في كل جزء واستبدل الخط المستهدف.
+1. تحقّق من اسم الخط في كل جزء واستبدل الخط المستهدف.
 1. احفظ ملف PDF المحدث.
 
 ```java
@@ -288,7 +288,7 @@ public static void removeUnusedFonts(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب حذف جميع محتويات النص من كل صفحة.
 
 1. افتح مستند PDF المصدر.
-1. إنشاء `TextFragmentAbsorber` و استدعاء `removeAllText(document)`.
+1. أنشئ `TextFragmentAbsorber` واستدعِ `removeAllText(document)`.
 1. احفظ ملف PDF المنظف.
 
 ```java
@@ -306,7 +306,7 @@ public static void removeAllTextUsingAbsorber1(Path inputFile, Path outputFile) 
 استخدم هذا المثال عندما يجب إزالة جميع النصوص فقط من صفحة معينة.
 
 1. افتح مستند PDF المصدر.
-1. إنشاء `TextFragmentAbsorber` وإزالة النص من الصفحة المستهدفة.
+1. أنشئ `TextFragmentAbsorber` وأزل النص من الصفحة المستهدفة.
 1. احفظ المستند المحدث.
 
 ```java
@@ -324,8 +324,8 @@ public static void removeAllTextUsingAbsorber2(Path inputFile, Path outputFile) 
 استخدم هذا المثال عندما يجب حذف النص فقط داخل منطقة صفحة مختارة.
 
 1. افتح مستند PDF المصدر.
-1. إنشاء `TextFragmentAbsorber` وحدد المستطيل للتنظيف.
-1. قم بإزالة النص من تلك المنطقة واحفظ المستند.
+1. أنشئ `TextFragmentAbsorber` وحدد المستطيل للتنظيف.
+1. أزل النص من تلك المنطقة واحفظ المستند.
 
 ```java
 public static void removeAllTextUsingAbsorber3(Path inputFile, Path outputFile) {
@@ -342,7 +342,7 @@ public static void removeAllTextUsingAbsorber3(Path inputFile, Path outputFile) 
 استخدم هذا المثال عندما يجب إزالة أجزاء النص غير المرئية من ملف PDF.
 
 1. افتح ملف PDF المصدر وامتص جميع مقاطع النص.
-1. تحقق من كل جزء لحالة النص غير المرئي.
+1. تحقّق من كل جزء لحالة النص غير المرئي.
 1. امسح النص المخفي واحفظ المستند.
 
 ```java

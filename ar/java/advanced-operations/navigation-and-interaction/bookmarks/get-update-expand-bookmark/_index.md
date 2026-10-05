@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/get-update-and-expand-bookmark/
 description: تعلم كيفية استرجاع وتحديث وتوسيع الإشارات في مستندات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,15 +13,15 @@ TechArticle: true
 AlternativeHeadline: افحص خصائص الإشارة وقم بتوسيع المخطط التفصيلي في ملفات PDF باستخدام Java
 Abstract: تشرح هذه المقالة كيفية قراءة وتحديث وتوسيع العلامات المرجعية باستخدام Aspose.PDF for Java. وتغطي التكرار عبر عناصر المخطط، استخراج أرقام صفحات العلامات المرجعية باستخدام PdfBookmarkEditor، قراءة العلامات المرجعية الفرعية، تحديث عناوين العلامات المرجعية وتنسيقها، وإجبار المخططات على الفتح عند عرض المستند.
 ---
-Aspose.PDF for Java يتيح الإشارات المرجعية من خلال كلٍ من نموذج مخطط المستند و `PdfBookmarkEditor` واجهة.
+Aspose.PDF for Java يتيح الإشارات المرجعية من خلال كلٍ من نموذج مخطط المستند و واجهة `PdfBookmarkEditor`.
 
 ## احصل على خصائص العلامة المرجعية
 
 استخدم هذا المثال عندما تحتاج إلى فحص إدخالات العلامات المرجعية المستوى العلوي في مخطط المستند.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التنقل عبر مجموعة المخططات.
-1. قراءة وطباعة عنوان الإشارة المرجعية، والنمط، وقيم اللون.
+1. مرّ على مجموعة المخططات.
+1. اقرأ واطبع عنوان الإشارة المرجعية، والنمط، وقيم اللون.
 
 ```java
 public static void getBookmarks(Path inputFile) {
@@ -41,7 +41,7 @@ public static void getBookmarks(Path inputFile) {
 
 هذا المثال يستخدم `PdfBookmarkEditor` لاستخراج عناوين الإشارات المرجعية، المستويات، أرقام الصفحات، والإجراءات.
 
-1. ربط ملف PDF المصدر بـ [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. اربط ملف PDF المصدر بـ [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
 1. استخرج مجموعة العلامات المرجعية وتكرّر عبرها.
 1. اطبع المستوى والعنوان ورقم الصفحة ومعلومات الإجراء لكل علامة مرجعية.
 
@@ -71,7 +71,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 استخدم هذا المثال عندما تحتاج إلى فحص كل من عناصر المخطط ذات المستوى الأعلى والعناصر المتداخلة
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار عبر المخططات ذات المستوى الأعلى وطباعة خصائصها
+1. مرّ على المخططات ذات المستوى الأعلى واطبع خصائصها.
 1. اكتشف العلامات المرجعية الفرعية، ثم تكرار عبرها وطباعة خصائصها
 
 ```java
@@ -104,8 +104,8 @@ public static void getChildBookmarks(Path inputFile) {
 استخدم هذا المثال عندما يجب تعديل عنوان الإشارة المرجعية الحالية والنمط.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى عنصر المخطط المستهدف وعلامة مرجعية فرعية.
-1. قم بتحديث خصائص العلامة المرجعية واحفظ المستند.
+1. انتقل إلى عنصر المخطط المستهدف وعلامة مرجعية فرعية.
+1. حدّث خصائص العلامة المرجعية واحفظ المستند.
 
 ```java
 public static void updateBookmarks(Path inputFile, Path outputFile) {

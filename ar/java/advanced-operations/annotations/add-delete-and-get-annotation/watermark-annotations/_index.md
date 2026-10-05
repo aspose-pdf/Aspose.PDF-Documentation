@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/watermark-annotations/
 description: تعلم كيفية إضافة وفحص وحذف تعليقات توضيحية للعلامة المائية في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: تشرح هذه المقالة كيفية إنشاء وفحص وإزا
 استخدم هذا المثال عندما تحتاج إلى تعليقة علامة مائية نصية مع إعدادات Font مخصصة وتعتيم.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) وأضفه إلى الصفحة.
-1. قم بتكوين [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/)، نص العلامة المائية، والعتامة، ثم احفظ المستند.
+1. أنشئ كائنًا من الفئة [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) وأضفه إلى الصفحة.
+1. اضبط [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/)، نص العلامة المائية، والعتامة، ثم احفظ المستند.
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {
@@ -52,8 +52,8 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 يمسح هذا المثال مجموعة التعليقات التوضيحية ويطبع المستطيل الخاص بكل تعليق توضيحي علامة مائية.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار عبر التعليقات التوضيحية في الصفحة المستهدفة.
-1. تصفية التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` وطباعة مستطيلاتها.
+1. مرّ على التعليقات التوضيحية في الصفحة المستهدفة.
+1. صفِّ التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` واطبع مستطيلاتها.
 
 ```java
 public static void watermarkGet(Path inputFile) {
@@ -72,7 +72,7 @@ public static void watermarkGet(Path inputFile) {
 استخدم هذا الأسلوب عندما يجب إزالة تعليقات العلامة المائية الموجودة من المستند.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات التوضيحية من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
+1. اجمع التعليقات التوضيحية من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. احذف التعليقات التوضيحية المجمعة واحفظ ملف الإخراج.
 
 ```java

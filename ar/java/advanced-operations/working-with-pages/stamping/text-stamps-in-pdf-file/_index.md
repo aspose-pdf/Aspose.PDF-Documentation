@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/text-stamps-in-the-pdf-file/
 description: تعلم كيفية إضافة طوابع نصية إلى مستندات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,7 @@ Abstract: يشرح هذا المقال كيفية إضافة طوابع نصية
 استخدم هذا المثال عندما يجب أن تُظهر صفحة ختم نصي مُدوَّر مع تنسيق مخصص.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) وتكوين موضعه ومظهر النص.
+1. أنشئ كائنًا من الفئة [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) واضبط موضعه ومظهر النص.
 1. أضف الختم إلى الصفحة المستهدفة واحفظ المستند.
 
 ```java

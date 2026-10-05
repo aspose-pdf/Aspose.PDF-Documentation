@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/create-tagged-pdf/
 description: تعلم كيفية إنشاء مستندات PDF موسومة في Java باستخدام Aspose.PDF، بما في ذلك عناصر Structure Elements الخاصة بـ PDF/UA، حقول FormField القابلة للوصول، صفحات TOC، والوسم التلقائي.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,8 +16,8 @@ sitemap:
 
 استخدم هذا المثال عندما تحتاج إلى ملف Tagged PDF بسيط يحتوي على عنوان وفقرة في شجرة البنية المنطقية.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وحصل على الخاص به [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
-1. حدد عنوان المستند واللغة، ثم أنشئ عناصر الرأس والفقرة المطلوبة.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وحصل على الخاص به [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. حدّد عنوان المستند واللغة، ثم أنشئ عناصر الرأس والفقرة المطلوبة.
 1. أضف عناصر الهيكل إلى العنصر الجذر واحفظ المستند.
 
 ```java
@@ -46,11 +46,11 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 
 ## إنشاء مستند PDF موسوم متقدم
 
-يبني هذا المثال هيكلًا أكثر ثراءً من خلال دمج العناوين والفقرات والـ spans والاقتباسات وإعدادات التخطيط الصريحة.
+يبني هذا المثال هيكلًا أكثر ثراءً من خلال دمج العناوين والفقرات وspans والاقتباسات وإعدادات التخطيط الصريحة.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتتهيئة بيانات تعريف المحتوى الموسوم.
-1. قم بإنشاء هيكل العنوان والفقرة، ثم أضف عناصر span وعنصر الاقتباس داخل الفقرة.
-1. ضبط موضع الفقرة، إلحاق العناصر بالهيكل الجذري، وحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتتهيئة بيانات تعريف المحتوى الموسوم.
+1. أنشئ هيكل العنوان والفقرة، ثم أضف عناصر span وعنصر الاقتباس داخل الفقرة.
+1. ضبط موضع الفقرة، إلحاق العناصر بالهيكل الجذري، واحفظ المستند.
 
 ```java
 public static void createTaggedPdfDocumentAdv(Path outputFile) {
@@ -97,9 +97,9 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يحمل محتوى الفقرة الموسوم معلومات صريحة عن الخط واللون والنمط.
 
-1. إنشاء Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. أنشئ عنصر فقرة وقم بتكوين حالة نص الهيكل الخاص به.
-1. قم بضبط نص الفقرة واحفظ المستند.
+1. أنشئ Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ عنصر فقرة واضبط حالة نص الهيكل الخاص به.
+1. اضبط نص الفقرة واحفظ المستند.
 
 ```java
 public static void addStyle(Path outputFile) {
@@ -126,9 +126,9 @@ public static void addStyle(Path outputFile) {
 
 يوضح هذا المثال كيفية إنشاء شكل مُوسَّم بنص بديل، عنوان، وسم مخصص، محتوى صورة، وتحديد الموقع.
 
-1. إنشاء Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), اضبط البيانات الوصفية القابلة للوصول لها، وقم بتعيين الصورة.
-1. قم بتعديل موضع الشكل واحفظ المستند.
+1. أنشئ Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/)، اضبط البيانات الوصفية القابلة للوصول لها، وعيّن الصورة.
+1. عدّل موضع الشكل واحفظ المستند.
 
 ```java
 public static void illustrateStructureElements(Path imageFile, Path outputFile) {
@@ -162,7 +162,7 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 استخدم هذا المثال عندما تحتاج إلى التحقق مما إذا كان ملف PDF الموسوم يفي بقواعد التحقق من صحة PDF/UA.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تشغيل التحقق من الصحة ضد [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. شغّل التحقق من الصحة ضد [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 1. اكتب سجل التحقق واطبع نتيجة التحقق.
 
 ```java
@@ -178,9 +178,9 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 
 هذا المثال يطبق إعدادات هوامش ومحاذاة صريحة على فقرة موسومة.
 
-1. إنشاء Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. أضف عنصر بنية الفقرة وقم بالتحضير [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
-1. طبق إعدادات الموضع على الفقرة واحفظ المستند.
+1. طبّق إعدادات الموضع على الفقرة واحفظ المستند.
 
 ```java
 public static void adjustPosition(Path outputFile) {
@@ -219,8 +219,8 @@ public static void adjustPosition(Path outputFile) {
 استخدم هذا النهج عندما يجب تحويل ملف PDF موجود إلى PDF/UA وتوسيمه تلقائيًا أثناء التحويل.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) وتمكين الوسم التلقائي.
-1. تشغيل التحويل وحفظ المستند الناتج.
+1. أنشئ كائنًا من الفئة [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) وفعّل الوسم التلقائي.
+1. شغّل التحويل واحفظ المستند الناتج.
 
 ```java
 public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outputFile, Path logFile) {
@@ -243,9 +243,9 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 
 يُعليم هذا المثال حقل توقيع النموذج بحيث يصبح جزءًا من شجرة الهيكل المنطقي.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وَأضف صفحةً تحتوي على حقل نموذج.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وَأضف صفحةً تحتوي على حقل نموذج.
 1. أضف حقل النموذج إلى مجموعة نماذج المستند.
-1. إنشاء عنصر بنية نموذج معلم، وربطه بالحقل، ثم حفظ المستند.
+1. أنشئ عنصر بنية نموذج معلم، وربطه بالحقل، ثم حفظ المستند.
 
 ```java
 public static void createPdfWithTaggedFormField(Path outputFile) {
@@ -275,8 +275,8 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يتضمن ملف PDF موسوم صفحة فهرس أساسية مرتبطة بعناوين المستند.
 
-1. إنشاء Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة TOC.
-1. إنشاء [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) و عنوان يجب أن يظهر في TOC.
+1. أنشئ Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة TOC..
+1. أنشئ كائنًا من الفئة [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) وعنوان يجب أن يظهر في TOC..
 1. اربط عنصر TOC بالعنوان واحفظ المستند.
 
 ```java
@@ -312,8 +312,8 @@ public static void createPdfWithTocPage(Path outputFile) {
 
 يبني هذا المثال جدول محتويات (TOC) موسومًا أكثر تعقيدًا مع عناوين صفحات مرتبطة، وعناصر قائمة متداخلة، ومستويات عناوين متعددة.
 
-1. إنشاء Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإعداد صفحة TOC بعنوان مرئي.
-1. إنشاء بنية TOC، وربط عنوان TOC والمدخلات بالعناوين وعناصر القائمة، وإضافة عناصر المحتوى ذات الصلة.
+1. أنشئ Tagged PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإعداد صفحة TOC بعنوان مرئي.
+1. أنشئ بنية TOC، وربط عنوان TOC والمدخلات بالعناوين وعناصر القائمة، وأضف عناصر المحتوى ذات الصلة.
 1. احفظ المستند النهائي مع بنية TOC المتقدمة.
 
 ```java

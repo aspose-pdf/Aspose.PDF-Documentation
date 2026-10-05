@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/convert-pdf-to-svg-format-in-python/
 description: تعلم كيفية تحويل مستندات PDF إلى تنسيق SVG في Python باستخدام Aspose.PDF للحصول على مخرجات متجهية قابلة للتكبير.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 لتحويل PDF إلى تنسيق SVG باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء وحدة **PdfToSvg**.
 
@@ -28,7 +28,7 @@ doc.save(self.dataDir + "Output1.svg", save_options)
 print "Document has been converted successfully"
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
 Download\u0412\u00A0**تحويل PDF إلى تنسيق SVG (Aspose.PDF)**\u0412\u00A0من\u0412\u00A0أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 

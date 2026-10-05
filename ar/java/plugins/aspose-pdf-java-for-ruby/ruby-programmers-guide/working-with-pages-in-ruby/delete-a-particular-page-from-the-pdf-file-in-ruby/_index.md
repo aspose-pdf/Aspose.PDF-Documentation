@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 description: إزالة صفحات محددة من ملفات PDF برمجيًا باستخدام Aspose.PDF for Ruby.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - حذف الصفحة
 
@@ -35,6 +35,6 @@ puts "Page deleted successfully!"
 
 ## تنزيل الكود القائم
 
-تنزيل **Delete Page (Aspose.PDF)**В fromВ any of the below mentioned social coding sites:
+تنزيل **Delete Page (Aspose.PDF)** from any of the below mentioned social coding sites:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/deletepage.rb)

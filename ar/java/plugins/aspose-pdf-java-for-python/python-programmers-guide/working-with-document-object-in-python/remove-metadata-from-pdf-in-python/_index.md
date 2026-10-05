@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/remove-metadata-from-pdf-in-python/
 description: اكتشف كيفية إزالة البيانات الوصفية من مستندات PDF في Python باستخدام Aspose.PDF، مع ضمان الخصوصية وأمان البيانات.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 لإزالة البيانات الوصفية من مستند PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء الفئة **RemoveMetadata**.
 
@@ -30,7 +30,7 @@ print "Removed metadata successfully, please check output file."
 
 ```
 
-**تحميل الشيفرة القابلة للتنفيذ**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تحميل **Remove Metadata (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/portfolio/
 description: تعلّم كيفية إنشاء وإدارة حافظات PDF في Java باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: تشرح هذه المقالة كيفية إنشاء وإدارة حا
 
 استخدم هذا المثال عندما تحتاج إلى تجميع عدة ملفات في مجموعة محفظة PDF.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتمكينها [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
-1. إنشاء [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) كائنات لكل ملف إدخال وتعيين أوصافها.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتمكينها [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
+1. أنشئ كائنات [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) لكل ملف إدخال وعيّن أوصافها.
 1. أضف الملفات إلى مجموعة الحافظة واحفظ مستند الإخراج.
 
 ```java

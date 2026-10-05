@@ -5,12 +5,12 @@ type: docs
 weight: 60
 url: /ar/java/fill-fields-by-name-and-value/
 description: تعلم كيفية تعديل واجهة برمجة تطبيقات ملء الحقول في واجهة Form في Java لتحديثات النماذج الديناميكية بالاسم والقيمة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: ملء حقول نموذج PDF متعددة من أزواج الاسم والقيمة في Java
 Abstract: مجموعة عينات Java الحالية تُملئ الحقول فراديًا باستخدام استدعاءات متكررة `fillField(...)`. توضح هذه المقالة كيفية تطبيق نمط API نفسه على مجموعة الاسم‑القيمة الخاصة بك دون اختراع ميزة واجهة منفصلة غير موجودة في أمثلة المستودع.
 ---
-الجافا `FormExamples` الفئة تملأ الحقول الفردية مباشرةً:
+الجافا الفئة `FormExamples` تملأ الحقول الفردية مباشرةً:
 
 ```java
 form.fillField("name", "John Doe");

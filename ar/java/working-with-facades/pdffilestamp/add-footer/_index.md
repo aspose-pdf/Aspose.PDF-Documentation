@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/add-footer/
 description: تعرف على كيفية إضافة تذييلات نصية وصور إلى صفحات PDF في Java باستخدام واجهة PdfFileStamp.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,9 +20,9 @@ Abstract: تعرف على كيفية إضافة محتوى التذييل إلى
 
 ### خطوات
 
-1. إنشاء `PdfFileStamp` إنشاء نسخة وربط ملف PDF المصدر.
-2. قم بإنشاء محتوى التذييل كإحدى `FormattedText` أو تدفق صورة.
-3. اتصل بالملائم `addFooter` تحميل زائد.
+1. أنشئ `PdfFileStamp` إنشاء نسخة وربط ملف PDF المصدر.
+2. أنشئ محتوى التذييل كإحدى `FormattedText` أو تدفق صورة.
+3. استدعِ بالملائم `addFooter` تحميل زائد.
 4. احفظ الملف المحدث وأغلق كائن الواجهة.
 
 ### أمثلة Java

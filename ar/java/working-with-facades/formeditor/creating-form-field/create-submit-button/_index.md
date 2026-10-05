@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/create-submit-button/
 description: تعرف على كيفية إضافة زر إرسال إلى مستند PDF في Java باستخدام الواجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إنشاء زر إرسال PDF في Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وإضافة حقل زر إرسال مع عنوان URL المستهدف، وحفظ المستند المعدل باستخدام الواجهة FormEditor في Aspose.PDF for Java.
@@ -14,8 +14,8 @@ Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود
 
 ## إنشاء زر إرسال
 
-1. ربط ملف PDF المصدر بـ `FormEditor` واجهة.
-2. اتصال `addSubmitBtn(...)` مع اسم الزر، الصفحة، التسمية، عنوان URL المستهدف، والمستطيل.
+1. اربط ملف PDF المصدر بـ واجهة `FormEditor`.
+2. استدعِ `addSubmitBtn(...)` مع اسم الزر، الصفحة، التسمية، عنوان URL المستهدف، والمستطيل.
 3. احفظ المستند المُحدّث.
 
 ```java

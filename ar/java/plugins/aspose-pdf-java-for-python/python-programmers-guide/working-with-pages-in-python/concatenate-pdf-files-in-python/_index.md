@@ -1,11 +1,11 @@
 ---
-title: دمج ملفات PDF في بايثون
-linktitle: دمج ملفات PDF في بايثون
+title: دمج ملفات PDF في Python
+linktitle: دمج ملفات PDF في Python
 type: docs
 weight: 10
 url: /ar/java/concatenate-pdf-files-in-python/
-description: تعلم كيفية دمج ملفات PDF متعددة في مستند PDF واحد باستخدام Aspose.PDF في بايثون، لتبسيط إدارة المستندات.
-lastmod: "2026-10-01"
+description: تعلم كيفية دمج ملفات PDF متعددة في مستند PDF واحد باستخدام Aspose.PDF في Python، لتبسيط إدارة المستندات.
+lastmod: "2026-10-05"
 ---
 لدمج ملفات PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء الفئة **ConcatenatePdfFiles**.
 
@@ -27,7 +27,7 @@ doc.save(self.dataDir + "Concatenate_output.pdf")
 print "New document has been saved, please check the output file"
 ```
 
-**تحميل الكود التشغيلي**
+**تنزيل الشفرة القابلة للتشغيل**
 
 DownloadВ **دمج ملفات PDF (Aspose.PDF)**В من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 

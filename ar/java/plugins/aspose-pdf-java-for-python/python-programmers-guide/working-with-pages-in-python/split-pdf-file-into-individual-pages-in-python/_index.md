@@ -1,11 +1,11 @@
 ---
-title: قسّم ملف PDF إلى صفحات فردية باستخدام بايثون
-linktitle: قسّم ملف PDF إلى صفحات فردية باستخدام بايثون
+title: قسّم ملف PDF إلى صفحات فردية باستخدام Python
+linktitle: قسّم ملف PDF إلى صفحات فردية باستخدام Python
 type: docs
 weight: 80
 url: /ar/java/split-pdf-file-into-individual-pages-in-python/
-description: استكشف كيفية تقسيم ملف PDF إلى صفحات فردية في بايثون باستخدام Aspose.PDF، مما يتيح استخراج وإدارة الصفحات بسهولة.
-lastmod: "2026-10-01"
+description: استكشف كيفية تقسيم ملف PDF إلى صفحات فردية في Python باستخدام Aspose.PDF، مما يتيح استخراج وإدارة الصفحات بسهولة.
+lastmod: "2026-10-05"
 ---
 لتقسيم مستند PDF إلى صفحات فردية باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء الفئة **SplitAllPages**.
 
@@ -33,8 +33,8 @@ pdf_page+=1
 print "Split process completed successfully!";
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تنزيل **Split Pages (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+تنزيل **Split Pages (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/SplitAllPages/SplitAllPages.py)

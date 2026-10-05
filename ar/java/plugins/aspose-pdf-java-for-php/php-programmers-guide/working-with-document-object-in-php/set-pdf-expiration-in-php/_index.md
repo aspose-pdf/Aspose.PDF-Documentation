@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ar/java/set-pdf-expiration-in-php/
 description: اكتشف كيفية تعيين تاريخ انتهاء صلاحية لملف PDF في PHP، مع التحكم في الوصول باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تعيين انتهاء صلاحية PDF
 
@@ -35,7 +35,7 @@ print "Update document information, please check output file." . PHP_EOL;
 
 ```
 
-**تحميل الشيفرة التشغيلية**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تحميل **Set PDF Expiration (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 

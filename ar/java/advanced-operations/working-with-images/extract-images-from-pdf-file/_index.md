@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/extract-images-from-pdf-file/
 description: تعرف على كيفية استخراج الصور المضمّنة من ملفات PDF في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: استخراج الصور من ملفات PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية استخراج الصور من مستندات PDF باستخدام Aspose.PDF for Java. وتغطي حفظ مورد صورة محدد من صفحة وتصدير الصور التي تقع داخل منطقة مستطيلة مختارة.
@@ -16,8 +16,8 @@ Abstract: توضح هذه المقالة كيفية استخراج الصور م
 
 استخدم هذا المثال عندما تحتاج إلى حفظ مورد صورة محدد من صفحة PDF.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى الهدف [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) من موارد الصفحة.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى الصورة المستهدفة [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) من موارد الصفحة.
 1. احفظ تدفق الصورة إلى ملف إخراج.
 
 ```java
@@ -34,7 +34,7 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 
 استخدم هذا المثال عندما يجب تصدير الصور الموجودة داخل مستطيل مختار فقط.
 
-1. حدد الهدف [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) وفتح ملف PDF المصدر.
+1. حدّد الهدف [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) وفتح ملف PDF المصدر.
 1. استخدم [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) لفحص مواضع الصور على الصفحة.
 1. احفظ فقط الصور التي تقع مواضعها داخل المنطقة المحددة.
 

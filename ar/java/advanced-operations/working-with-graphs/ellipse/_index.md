@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/add-ellipse/
 description: تعلم كيفية رسم وملء وتسمية أشكال الإهليلج في ملفات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,12 +15,12 @@ Abstract: توضح هذه المقالة كيفية إضافة أشكال إهل
 ---
 ## إضافة حدود إهليلجية
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
-1. إنشاء [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) الشكل وتكوين هندسته.
-1. إضافة [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
-1. قم بتعيين خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) و [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
+1. أنشئ كائنًا من الفئة [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) الشكل واضبط هندسته.
+1. أضف [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. عيّن خصائص الشكل المطلوبة في المثال، بما في ذلك [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) و [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -49,12 +49,12 @@ public static void addEllipse(Path outputFile) {
 
 ## إضافة نص داخل الإهليلجيات
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إضافة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
-1. إنشاء [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وتعيين خيارات تنسيق النص المطلوبة.
-1. إنشاء [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
-1. إنشاء [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) الشكل وتكوين هندسته.
-1. إضافة [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) إلى المستند.
+1. أنشئ كائنًا من الفئة [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وعيّن خيارات تنسيق النص المطلوبة.
+1. أنشئ كائنًا من الفئة [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية وإضافتها إلى الصفحة.
+1. أنشئ كائنًا من الفئة [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) الشكل واضبط هندسته.
+1. أضف [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) إلى [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) الحاوية.
 1. احفظ ملف PDF الناتج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java

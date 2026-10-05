@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/extract-links/
 description: تعرّف على كيفية استخراج تعليقات الروابط والروابط التشعبية من مستندات PDF باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -42,7 +42,7 @@ public static void extractLinkAnnotation(Path inputFile) {
 استخدم هذا المثال عندما تحتاج إلى قراءة عناوين URI الهدف من تعليقات الروابط التشعبية على الويب.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. بحث [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) الكائنات التي يكون إجراءها هو [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. ابحث الكائنات [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) التي يكون إجراءها هو [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. اطبع فهرس الصفحة والهدف URI لكل ارتباط تشعبي.
 
 ```java

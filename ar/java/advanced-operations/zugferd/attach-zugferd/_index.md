@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/attach-zugferd/
 description: تعلم كيفية إرفاق ملف XML لفاتورة ZUGFeRD إلى ملف PDF وتحويله إلى PDF/A-3A باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,7 +18,7 @@ Abstract: تشرح هذه المقالة كيفية إنشاء مستند فات
 ## إرفاق ملف XML الفاتورة ZUGFeRD إلى PDF
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) لملف الفاتورة XML.
+1. أنشئ كائنًا من الفئة [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) لملف الفاتورة XML..
 1. عيّن بيانات تعريف الملف المدمج، بما في ذلك نوع MIME و [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
 1. أضف [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) إلى مجموعة ملفات المستند المدمجة.
 1. حوّل المستند إلى [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.

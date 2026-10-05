@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/fill-form/
 description: ملء حقول AcroForm في مستند PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,8 +17,8 @@ Abstract: تشرح هذه المقالة كيفية ملء حقول AcroForm ب�
 
 ## املأ حقول AcroForm بقيم جديدة
 
-1. افتح مستند نموذج PDF باستخدام [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) واجهة.
-1. تكرّر عبر حقول Form وقم بتحديث الإدخالات المطابقة بالقيم المقدمة.
+1. افتح مستند نموذج PDF باستخدام واجهة [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
+1. تكرّر عبر حقول Form وحدّث الإدخالات المطابقة بالقيم المقدمة.
 1. احفظ مستند PDF المحدّث.
 
 ```java

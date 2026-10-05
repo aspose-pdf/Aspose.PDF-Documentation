@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/extracting-table/
 description: تعلم كيفية استخراج بيانات الجدول من مستندات PDF الموجودة باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,9 @@ Abstract: تشرح هذه المقالة كيفية استخراج الجداو�
 
 استخدم هذا المثال عندما تحتاج إلى تحديد مواقع الجداول في كل صفحة وجمع نص الخلايا الخاصة بها.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. زيارة كل صفحة باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
-1. تصفح الجداول والصفوف والخلايا التي تم امتصاصها، ثم قم بإخراج النص المستخرج.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. زُر كل صفحة باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. تصفّح الجداول والصفوف والخلايا التي تم امتصاصها، ثم اعرض النص المستخرج.
 
 ```java
 public static void extract(Path inputFile) {

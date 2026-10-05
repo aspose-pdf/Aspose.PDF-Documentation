@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/convert-pdf-to-excel-workbook-in-php/
 description: تعلم كيفية تحويل ملفات PDF إلى دفاتر عمل Excel في PHP باستخدام Aspose.PDF، مما يتيح استخراج البيانات ومعالجتها بسلاسة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تحويل PDF إلى دفتر عمل Excel
 
@@ -27,7 +27,7 @@ print "Document has been converted successfully" . PHP_EOL;
 
 ```
 
-**تحميل تشغيل الشيفرة**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تحميل **تحويل PDF إلى مصنف Excel (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 

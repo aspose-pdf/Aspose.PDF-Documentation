@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/save-metadata-with-xmp/
 description: تعرف على كيفية حفظ البيانات الوصفية لملف PDF باستخدام XMP في Java عبر واجهة PdfFileInfo.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعرف على كيفية حفظ البيانات الوصفية لم
 
 ### خطوات
 
-1. إنشاء `PdfFileInfo` كائن للملف PDF المصدر.
-2. حدد حقول البيانات التعريفية التي تريد تحديثها، مثل الموضوع والعنوان والكلمات المفتاحية والمنشئ.
-3. اتصال `saveNewInfoWithXmp()` مع مسار ملف الإخراج.
-4. إغلاق `PdfFileInfo` مثال.
+1. أنشئ كائن `PdfFileInfo` للملف PDF المصدر.
+2. حدّد حقول البيانات التعريفية التي تريد تحديثها، مثل الموضوع والعنوان والكلمات المفتاحية والمنشئ.
+3. استدعِ `saveNewInfoWithXmp()` مع مسار ملف الإخراج.
+4. أغلق `PdfFileInfo` مثال.
 
 ### مثال Java
 

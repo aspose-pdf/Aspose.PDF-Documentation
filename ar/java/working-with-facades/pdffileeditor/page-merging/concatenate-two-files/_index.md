@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/concatenate-two-files/
 description: دمج ملفين PDF في مستند واحد باستخدام Java مع واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,9 +19,9 @@ Abstract: تعلم كيفية دمج ملفين PDF باستخدام Aspose.PDF 
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثال.
-2. تمرير مسارات ملفي الإدخال كصفيف من السلاسل.
-3. اتصال `concatenate` مع المصفوفة ومسار ملف الإخراج.
+1. أنشئ مثيلًا من `PdfFileEditor`.
+2. مرّر مسارات ملفي الإدخال كصفيف من السلاسل.
+3. استدعِ `concatenate` مع المصفوفة ومسار ملف الإخراج.
 4. احفظ ملف PDF المدمج.
 
 ```java

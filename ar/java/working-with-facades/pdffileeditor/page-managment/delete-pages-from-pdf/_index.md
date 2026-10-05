@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/delete-pages-from-pdf/
 description: حذف الصفحات المحددة من PDF في Java باستخدام واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,10 +19,10 @@ Abstract: تعلم كيفية حذف الصفحات من PDF باستخدام As
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثال.
-2. بناء مصفوفة بأرقام الصفحات التي تريد إزالتها.
-3. اتصال `delete` مع ملف الإدخال ومصفوفة الصفحات وملف الإخراج.
-4. حفظ ملف PDF الناتج.
+1. أنشئ مثيلًا من `PdfFileEditor`.
+2. ابنِ مصفوفة بأرقام الصفحات التي تريد إزالتها.
+3. استدعِ `delete` مع ملف الإدخال ومصفوفة الصفحات وملف الإخراج.
+4. احفظ ملف PDF الناتج.
 
 ### مثال Java
 

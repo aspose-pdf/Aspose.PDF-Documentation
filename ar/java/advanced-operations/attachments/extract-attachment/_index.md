@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/extract-attachment/
 description: تعلم كيفية استخراج الملفات المضمّنة وتعليقات مرفقات الملفات من مستندات PDF باستخدام Java و Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,7 +20,7 @@ Abstract: تشرح هذه المقالة كيفية استخراج المرفق�
 استخدم هذا المثال عندما تحتاج إلى حفظ ملف مضمّن محدد واحد من ملف PDF.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار عبر مجموعة الملفات المضمّنة حتى يتم العثور على اسم المرفق المطلوب.
+1. مرّ على مجموعة الملفات المضمّنة حتى يتم العثور على اسم المرفق المطلوب.
 1. انسخ تدفق المرفق إلى ملف الإخراج وتوقف بعد الاستخراج.
 
 ```java
@@ -50,9 +50,9 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 
 ## طباعة معلمات الملف المضمن
 
-تقوم هذه الطريقة المساعدة بطباعة البيانات التعريفية المخزنة في [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/) كائن.
+تقوم هذه الطريقة المساعدة بطباعة البيانات التعريفية المخزنة في كائن [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/).
 
-1. تحقق مما إذا كان كائن معلمات الملف موجودًا.
+1. تحقّق مما إذا كان كائن معلمات الملف موجودًا.
 1. اقرأ قيمة مجموع التحقق المتاح، تاريخ الإنشاء، تاريخ التعديل، وقيم الحجم.
 1. اطبع القيم إلى وحدة التحكم.
 
@@ -76,7 +76,7 @@ public static void printFileParams(FileParams params) {
 استخدم هذا المثال عندما يجب كتابة كل ملف مضمّن في PDF إلى دليل إخراج.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بالتكرار عبر مجموعة الملفات المضمّنة وحدد اسم ملف إخراج آمن لكل عنصر.
+1. مرّ على مجموعة الملفات المضمّنة وحدد اسم ملف إخراج آمن لكل عنصر.
 1. اطبع البيانات الوصفية، احفظ كل تدفق مرفق، واستمر حتى يتم تصدير جميع الملفات.
 
 ```java
@@ -115,7 +115,7 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 استخدم هذا المثال عندما يتم إرفاق الملف عبر ملاحظة صفحة بدلاً من فقط عبر مجموعة الملفات المضمَّنة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. حدد الأول [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) على الصفحة.
+1. حدّد الأول [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) على الصفحة.
 1. اقرأ مواصفات الملف الخاصة به، صدّر المحتويات، واطبع مسار الوجهة.
 
 ```java

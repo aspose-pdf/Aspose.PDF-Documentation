@@ -5,11 +5,11 @@ type: docs
 weight: 60
 url: /ar/java/aspose-pdf-java-for-jython/
 description: اجمع بين قوة Aspose.PDF for Java و Jython. قم بالتعامل بسهولة مع ملفات PDF في بيئة Java مستندة إلى Python.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## مقدمة
 
-### ما هو Jython؟
+### ما هو Jython
 
 Jython هو تنفيذ Java للغة Python يجمع بين القوة التعبيرية والوضوح. Jython متاح مجانًا لكل من الاستخدام التجاري وغير التجاري ويُوزَّع مع شفرة المصدر. Jython يكمل Java ومناسب خصيصًا للمهام التالية:
 

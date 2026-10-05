@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/replace-image-in-existing-pdf-file/
 description: تعرّف على كيفية استبدال الصور المضمّنة في ملفات PDF الموجودة باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: استبدال الصور في ملفات PDF الموجودة باستخدام Java
 Abstract: توضح هذه المقالة كيفية استبدال الصور في مستندات PDF باستخدام Aspose.PDF for Java. وتتناول استبدال صورة بحسب فهرس المورد واستبدال أول موضع صورة مطابق يتم العثور عليه باستخدام ImagePlacementAbsorber.
@@ -15,7 +15,7 @@ Abstract: توضح هذه المقالة كيفية استبدال الصور ف
 ## استبدال صورة وفقًا لمؤشر المورد
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. الوصول إلى موارد الصورة على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. انتقل إلى موارد الصورة على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. استبدل مورد الصورة الهدف بملف الصورة الجديد.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
@@ -32,7 +32,7 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 ## استبدال صورة باستخدام `ImagePlacementAbsorber`
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) وزر الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ كائنًا من الفئة [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) وزر الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. احصل على الهدف [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) واستبدله بتدفق الصورة الجديد.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

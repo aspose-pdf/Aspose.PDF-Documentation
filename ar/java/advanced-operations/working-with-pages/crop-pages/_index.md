@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/crop-pages/
 description: تعلم كيفية قص صفحات PDF وضبط صناديق القص، والتقليم، والدم، والوسائط في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: توضح هذه المقالة كيفية قص صفحات PDF باست
 
 استخدم هذا المثال عندما تحتاج إلى تطبيق نفس منطقة القص على صناديق الصفحة الرئيسية.
 
-1. فتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء الاقتصاص الجديد [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ الاقتصاص الجديد [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. طبّق المستطيل على صناديق الصفحات المتعلقة بالاقتصاص واحفظ المستند.
 
 ```java
@@ -40,9 +40,9 @@ public static void cropPage(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن يُستمدّ منطقة القص من أول صورة مكتشفة في الصفحة.
 
-1. فتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. افتح PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. استخدم [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) لكشف مواضع الصور.
-1. حدد صندوق القص إلى مستطيل الصورة إذا تم العثور عليه، ثم احفظ المستند.
+1. حدّد صندوق القص إلى مستطيل الصورة إذا تم العثور عليه، ثم احفظ المستند.
 
 ```java
 public static void cropPageByContent(Path inputFile, Path outputFile) {

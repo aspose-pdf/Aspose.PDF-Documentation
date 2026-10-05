@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/get-page-properties-in-php/
 description: استكشف كيفية استرجاع خصائص صفحات محددة في مستند PDF باستخدام PHP و Aspose.PDF للتحكم التفصيلي.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - الحصول على خصائص الصفحة
 
@@ -41,8 +41,8 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
-**تنزيل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-DownloadВ **Get Page Properties (Aspose.PDF)**В منВ أي من المواقع الاجتماعية للبرمجة المذكورة أدناه:
+Download **Get Page Properties (Aspose.PDF)** من أي من المواقع الاجتماعية للبرمجة المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

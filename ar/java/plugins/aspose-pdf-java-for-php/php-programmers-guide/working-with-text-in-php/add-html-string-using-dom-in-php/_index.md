@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/add-html-string-using-dom-in-php/
 description: استكشف كيفية إضافة محتوى HTML إلى مستند PDF باستخدام DOM في PHP مع Aspose.PDF لإنشاء مستندات غنية.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - إضافة HTML
 
@@ -41,8 +41,8 @@ print "HTML added successfully" . PHP_EOL;
 
 ```
 
-**تنزيل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تنزيلВ **Add HTML (Aspose.PDF)**В منВ أي من المواقع الاجتماعية المذكورة أدناه:
+تنزيل **Add HTML (Aspose.PDF)** من أي من المواقع الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithText/AddHtml.php)

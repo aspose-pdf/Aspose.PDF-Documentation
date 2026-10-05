@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/add-toc-to-existing-pdf-in-python/
 description: تعرف على كيفية إضافة جدول محتويات (TOC) إلى مستند PDF موجود في Python باستخدام Aspose.PDF لتسهيل التنقل.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 لإضافة TOC في مستند Pdf باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء الفئة **AddToc**.
 
@@ -61,7 +61,7 @@ doc.save(self.dataDir + "TOC.pdf")
 print "Added TOC Successfully, please check the output file."
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تحميل **Add TOC (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 

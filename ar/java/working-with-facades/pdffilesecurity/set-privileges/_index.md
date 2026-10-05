@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/set-privileges/
 description: تعلم كيفية تعيين صلاحيات PDF في Java باستخدام واجهة PdfFileSecurity.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,10 +20,10 @@ Abstract: تعلم كيفية التحكم في أذونات PDF باستخدا�
 
 ### الخطوات
 
-1. إنشاء `PdfFileSecurity` مثال.
-2. ربط ملف PDF المصدر بـ `bindPdf`.
-3. إنشاء `DocumentPrivilege` الكائن وتكوين الإجراءات المسموح بها.
-4. اتصل بالملائم `setPrivilege` أو `trySetPrivilege` تحميل زائد.
+1. أنشئ مثيلًا من `PdfFileSecurity`.
+2. اربط ملف PDF المصدر بـ `bindPdf`.
+3. أنشئ الكائن `DocumentPrivilege` واضبط الإجراءات المسموح بها.
+4. استدعِ بالملائم `setPrivilege` أو `trySetPrivilege` تحميل زائد.
 5. احفظ النتيجة إذا نجح التحديث، ثم أغلق الكائن.
 
 ### أمثلة Java

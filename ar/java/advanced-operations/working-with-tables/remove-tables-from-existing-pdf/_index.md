@@ -2,7 +2,7 @@
 title: إزالة الجداول من مستندات PDF الحالية
 linktitle: إزالة الجداول
 description: تعلم كيفية إزالة جدول واحد أو أكثر من مستندات PDF الحالية باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 type: docs
 weight: 50
 url: /ar/java/removing-tables/
@@ -20,8 +20,8 @@ Abstract: توضح هذه المقالة كيفية إزالة الجداول م
 استخدم هذا المثال عندما يجب حذف الجدول المتطابق الأول فقط في الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بزيارة الصفحة الهدف باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
-1. إزالة الجدول الأول المكتشف وحفظ المستند.
+1. زُر الصفحة الهدف باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. أزل الجدول الأول المكتشف واحفظ المستند.
 
 ```java
 public static void removeOneTable(Path inputFile, Path outputFile) {
@@ -39,8 +39,8 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب إزالة كل جدول متطابق على الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. قم بزيارة الصفحة الهدف باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) ونسخ الجداول المكتشفة إلى قائمة.
-1. إزالة كل جدول مكتشف وحفظ ملف PDF المحدث.
+1. زُر الصفحة الهدف باستخدام [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) ونسخ الجداول المكتشفة إلى قائمة.
+1. أزل كل جدول مكتشف واحفظ ملف PDF المحدث.
 
 ```java
 public static void removeAllTables(Path inputFile, Path outputFile) {

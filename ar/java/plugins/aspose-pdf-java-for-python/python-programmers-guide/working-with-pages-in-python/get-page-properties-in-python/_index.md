@@ -1,11 +1,11 @@
 ---
-title: احصل على خصائص الصفحة في بايثون
-linktitle: احصل على خصائص الصفحة في بايثون
+title: احصل على خصائص الصفحة في Python
+linktitle: احصل على خصائص الصفحة في Python
 type: docs
 weight: 50
 url: /ar/java/get-page-properties-in-python/
-description: تعرف على كيفية الوصول إلى خصائص صفحات محددة داخل مستند PDF في بايثون باستخدام Aspose.PDF للتحكم التفصيلي.
-lastmod: "2026-10-01"
+description: تعرف على كيفية الوصول إلى خصائص صفحات محددة داخل مستند PDF في Python باستخدام Aspose.PDF للتحكم التفصيلي.
+lastmod: "2026-10-05"
 ---
 للحصول على خصائص صفحة مستند Pdf باستخدام **Aspose.PDF Java for Python**، ببساطة استدعِ فئة **GetPageProperties**.
 
@@ -32,8 +32,8 @@ print "Rotate :-" + pdf_page.getRotate()
 
 ```
 
-**تنزيل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-DownloadВ **الحصول على خصائص الصفحة (Aspose.PDF)**В من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+Download **الحصول على خصائص الصفحة (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)

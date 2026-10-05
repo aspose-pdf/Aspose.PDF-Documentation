@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/aspose-pdf-java-for-intellij-idea-maven/
 description: دمج Aspose.PDF for Java في IntelliJ IDEA باستخدام Maven. بسط عملية التطوير الخاصة بك لحلول PDF المتقدمة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## المقدمة
 
@@ -21,7 +21,7 @@ Aspose.PDF for Java هو مكوّن لإنشاء مستندات PDF يتيح ل�
 
 ### Aspose.PDF Java لـ IntelliJ IDEA - Maven
 
-- Aspose.PDF Java for IntelliJ IDEA (Maven) هو مكوّن إضافي لـ IntelliJ IDEA يتيح لك إنشاء مشاريع maven (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the APIВ  for using Aspose.PDF for Java API.
+- Aspose.PDF Java for IntelliJ IDEA (Maven) هو مكوّن إضافي لـ IntelliJ IDEA يتيح لك إنشاء مشاريع maven (i.e. created project contains Aspose.PDF for Java API maven dependency) and download source code examples of the API  for using Aspose.PDF for Java API.
 - يساعدك هذا المكوّن الإضافي على العمل مع Aspose.PDF for Java API داخل IntelliJ IDEA المفضل لديك.
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -45,7 +45,7 @@ Aspose.PDF for Java هو مكوّن لإنشاء مستندات PDF يتيح ل�
 
 ### متطلبات النظام
 
-- مايكروسوفت ويندوز 8/7/فيستا/2003/إكس بي (متضمنة 64-بت)В  / لينكس سطح مكتب جنوم أو كيدي / ماك أو إس إكس 10.5 أو أعلى
+- Microsoft Windows 8/7/Vista/2003/XP (incl.64-bit)В  / Linux GNOME or KDE desktop / Mac OS X 10.5 or higher
 - الذاكرة العشوائية 1 جيجابايت كحد أدنى، 2 جيجابايت موصى بها
 - 300 ميغابايت مساحة القرص الصلب + على الأقل 1 جيجابايت للتخزين المؤقت
 - دقة الشاشة الحد الأدنى 1024x768
@@ -57,23 +57,23 @@ Aspose.PDF for Java هو مكوّن لإنشاء مستندات PDF يتيح ل�
 الإضافة تدعم إصدارات IntelliJ IDEA التالية:
 
 - 13.0.1 (الإصدار المجتمعي / النهائي)
-- 13.1.2В  (CE / UE)
+- 13.1.2  (CE / UE)
 - 14.0.2 (CE/ UE)
 - 14.1.5 (CE/ UE)
 
-## جارٍ التحميل
+## تنزيل
 
-### جارٍ تنزيل IntelliJ IDEA
+### تنزيل IntelliJ IDEA
 
 ستحتاج أولاً إلى تثبيت IntelliJ IDEA CE / UE قبل تنزيل إضافة Aspose.PDF Java لـ IntelliJ IDEA (Maven).
 
 لتنزيل IntellliJ IDEA
 
 1. اذهب <https://www.jetbrains.com/idea/download/>
-1. حدد نظام التشغيل الذي تعمل عليه
-1. انقر على تحميل UE أو CE.
+1. حدّد نظام التشغيل الذي تعمل عليه.
+1. انقر على تحميل UE أو CE..
 
-### جارٍ تنزيل مكوّن Aspose.PDF Java لـ IntelliJ IDEA (Maven)
+### تنزيل مكوّن Aspose.PDF Java لـ IntelliJ IDEA (Maven)
 
 - يمكن تنزيل المكوّن مباشرةً من [عنوان URL لاستضافة مكوّن JetBrains](https://goo.gl/z06gC0) - على مستودع إضافات IntelliJ IDEA
   ويمكن تثبيتها لاحقًا باستخدام خيار IDE:
@@ -85,7 +85,7 @@ Aspose.PDF for Java هو مكوّن لإنشاء مستندات PDF يتيح ل�
   - في صندوق البحث اكتب: "Aspose"
   - اختر المكوّن الإضافي "Aspose.PDF Java for IntelliJ IDEA Maven" للتثبيت.
 
-## جاري التثبيت
+## تثبيت
 
 تثبيت Aspose.PDF لـ IntelliJ IDEA - Maven
 

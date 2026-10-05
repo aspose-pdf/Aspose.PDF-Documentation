@@ -5,16 +5,16 @@ type: docs
 weight: 10
 url: /ar/java/replace-text-simple/
 description: تعلّم كيفية استبدال النص في مستند PDF بالكامل باستخدام Java من خلال واجهة PdfContentEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: استبدال النص في ملف PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF، وتكوين نطاق استبدال النص، واستبدال جميع حالات النص المطابقة، وحفظ المستند المحدث باستخدام واجهة PdfContentEditor في Aspose.PDF for Java.
 ---
 ## استبدال النص في جميع أنحاء المستند
 
-1. ربط ملف PDF المصدر بـ `PdfContentEditor` واجهة.
-2. حدد نطاق استبدال النص إلى `ReplaceAll`.
-3. اتصال `replaceText(...)` مع نص البحث ونص الاستبدال.
+1. اربط ملف PDF المصدر بـ واجهة `PdfContentEditor`.
+2. حدّد نطاق استبدال النص إلى `ReplaceAll`.
+3. استدعِ `replaceText(...)` مع نص البحث ونص الاستبدال.
 4. احفظ مستند PDF المحدث.
 
 ```java

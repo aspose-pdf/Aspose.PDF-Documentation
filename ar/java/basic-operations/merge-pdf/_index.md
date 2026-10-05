@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/merge-pdf/
 description: تعرف على كيفية دمج ملفات PDF متعددة في مستند واحد في Java باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -22,8 +22,8 @@ Abstract: تشرح هذه المقالة كيفية دمج مستندين PDF ف
 يوضح هذا الموضوع كيفية دمج ملفات PDF متعددة في مستند واحد باستخدام Java:
 
 1. افتح كلا المستندين المصدرين باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) المنشئ.
-1. إلحاق الـ [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) المجموعة من الثانية [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) إلى الأول مع `document1.getPages().add(document2.getPages())`.
-1. حفظ المدمج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) إلى مسار الإخراج.
+1. ألحق الـ المجموعة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) من الثانية [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) إلى الأول مع `document1.getPages().add(document2.getPages())`.
+1. احفظ المدمج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) إلى مسار الإخراج.
 
 ## دمج مستندين PDF
 

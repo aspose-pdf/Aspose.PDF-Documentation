@@ -5,15 +5,15 @@ type: docs
 weight: 10
 url: /ar/java/add-rubber-stamp/
 description: تعرف على كيفية إضافة تعليق ختم مطاطي إلى مستند PDF بلغة Java باستخدام واجهة PdfContentEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إضافة ختم مطاطي إلى PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF، وإنشاء تعليق ختم مطاطي بنص التسمية واللون، وحفظ المستند المحدث باستخدام واجهة PdfContentEditor في Aspose.PDF for Java.
 ---
 ## إضافة ختم مطاطي
 
-1. ربط ملف PDF المصدر بـ `PdfContentEditor` واجهة.
-2. اتصال `createRubberStamp(...)` مع رقم الصفحة، المستطيل، العنوان، المحتويات، واللون.
+1. اربط ملف PDF المصدر بـ واجهة `PdfContentEditor`.
+2. استدعِ `createRubberStamp(...)` مع رقم الصفحة، المستطيل، العنوان، المحتويات، واللون.
 3. احفظ مستند PDF المحدث.
 
 ```java

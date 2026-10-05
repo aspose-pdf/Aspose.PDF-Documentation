@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/extract-tagged-content-from-tagged-pdfs/
 description: تعرّف على كيفية فحص محتوى PDF الموسوم في Java باستخدام Aspose.PDF، بما في ذلك الوصول إلى المحتوى الموسوم، الوصول إلى الجذر الهيكلي، وعناصر الهيكل الفرعية.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,9 +16,9 @@ sitemap:
 
 استخدم هذا المثال عندما تحتاج إلى الوصول إلى حاوية المحتوى الموسوم وتريد تعريف بيانات تعريف المستند الأساسية مثل العنوان واللغة.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. احصل على [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) الكائن من المستند.
-1. قم بتعيين بيانات تعريف المحتوى الموسوم وحفظ ملف الإخراج.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. احصل على الكائن [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) من المستند.
+1. عيّن بيانات تعريف المحتوى الموسوم واحفظ ملف الإخراج.
 
 ```java
 public static void getTaggedContent(Path outputFile) {
@@ -35,8 +35,8 @@ public static void getTaggedContent(Path outputFile) {
 
 يعرض هذا المثال كيفية فحص الكائنات الجذرية التي تمثل شجرة البنية لمستند PDF معلم.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) والحصول على محتواه المعلم.
-1. قم بتعيين البيانات الوصفية المطلوبة للمستند.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) والحصول على محتواه المعلم.
+1. عيّن البيانات الوصفية المطلوبة للمستند.
 1. اقرأ واطبع جذر شجرة البنية والعنصر الجذري المنطقي، ثم احفظ الملف.
 
 ```java
@@ -60,7 +60,7 @@ public static void getRootStructure(Path outputFile) {
 
 1. افتح ملف Tagged PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. اقرأ العناصر الفرعية من جذر شجرة البنية واطبع الخصائص المتاحة.
-1. الوصول إلى العناصر الفرعية للطف الأول للجذر، تحديث بيانات التعريف الخاصة بها، وحفظ المستند.
+1. انتقل إلى العناصر الفرعية للطف الأول للجذر، تحديث بيانات التعريف الخاصة بها، واحفظ المستند.
 
 ```java
 public static void accessChildElements(Path inputFile, Path outputFile) {

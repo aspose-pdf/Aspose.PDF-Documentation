@@ -4,7 +4,7 @@ linktitle: تحويل تنسيقات ملفات أخرى إلى PDF
 type: docs
 weight: 80
 url: /ar/java/convert-other-files-to-pdf/
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 description: تعرّف على كيفية تحويل ملفات EPUB و Markdown و PCL و XPS و PostScript و XML و XSL-FO و OFD و TeX إلى PDF في Java باستخدام Aspose.PDF.
 sitemap:
     changefreq: "monthly"
@@ -20,7 +20,7 @@ Abstract: تشرح هذه المقالة كيفية تحويل صيغ ملفات
 استخدم هذا المثال عندما يجب تحويل مستند OFD إلى PDF.
 
 1. افتح مصدر OFD بتمرير مسار الملف و [`OfdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ofdloadoptions/) إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
-1. دع Aspose.PDF يحلل حزمة OFD إلى نموذج مستند PDF.
+1. دع Aspose.PDF يحلل حزمة OFD إلى نموذج مستند PDF..
 1. احفظ ملف PDF الناتج إلى مسار الإخراج الهدف.
 
 ```java
@@ -53,8 +53,8 @@ public static void convertTexToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل ملف PostScript إلى مستند PDF.
 
-1. افتح مصدر PostScript باستخدام [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) في الـ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
-1. دع Aspose.PDF يترجم تدفق وصف الصفحة PostScript إلى نموذج مستند PDF.
+1. افتح مصدر PostScript باستخدام [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
+1. دع Aspose.PDF يترجم تدفق وصف الصفحة PostScript إلى نموذج مستند PDF..
 1. احفظ ملف PDF المحول.
 
 ```java
@@ -70,7 +70,7 @@ public static void convertPostScripToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل ملف Encapsulated PostScript إلى PDF.
 
-1. افتح مصدر EPS باستخدام [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) لأن EPS يتبع نفس مسار التحميل القائم على PostScript.
+1. افتح مصدر EPS باستخدام [`PsLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/psloadoptions/) لأن EPS يتبع نفس مسار التحميل القائم على PostScript..
 1. حمّل الملف إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) لذلك يتم تحويل محتوى وصف الصفحة أثناء الاستيراد.
 1. احفظ ملف PDF الناتج.
 
@@ -88,7 +88,7 @@ public static void convertEpsToPdf(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب تحويل كتاب إلكتروني EPUB إلى PDF.
 
 1. افتح مصدر EPUB بتمرير مسار الملف و [`EpubLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubloadoptions/) إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
-1. دع Aspose.PDF يحمل بنية الكتاب الإلكتروني ويحولها إلى صفحات PDF.
+1. دع Aspose.PDF يحمل بنية الكتاب الإلكتروني ويحولها إلى صفحات PDF..
 1. احفظ ملف PDF المحول.
 
 ```java
@@ -105,7 +105,7 @@ public static void convertEpubToPdf(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب عرض محتوى Markdown وحفظه كملف PDF.
 
 1. افتح مصدر Markdown بتمرير مسار الملف و [`MdLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mdloadoptions/) إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
-1. دع Aspose.PDF يفسّر محتوى Markdown ويحوّله إلى محتوى صفحة PDF.
+1. دع Aspose.PDF يفسّر محتوى Markdown ويحوّله إلى محتوى صفحة PDF..
 1. احفظ ملف PDF الناتج.
 
 ```java
@@ -121,8 +121,8 @@ public static void convertMdToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل ملف نصي عادي بسرعة إلى PDF.
 
-1. اقرأ مصدر النص العادي باستخدام فك ترميز UTF-8 بحيث يصبح محتوى النص متاحًا كسلسلة جافا.
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. اقرأ مصدر النص العادي باستخدام فك ترميز UTF-8 بحيث يصبح محتوى النص متاحًا كسلسلة Java.
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. غلف النص بـ [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) وأضفه إلى مجموعة فقرات الصفحة.
 1. احفظ ملف PDF المُولد.
 
@@ -144,8 +144,8 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
 استخدم هذا المثال عندما يجب تحويل النص العادي مع خيارات تخطيط أو ترميز إضافية.
 
 1. اقرأ جميع أسطر النص من ملف الإدخال بحيث يمكن فحص علامات فواصل الصفحات أثناء التحويل.
-1. إنشاء فارغ [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتهيئة كل [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) مع هوامش وحالة النص الافتراضية.
-1. حل الخط ثابت العرض من خلال [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) وأضف كل سطر كـ [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. أنشئ كائنًا فارغًا من الفئة [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتهيئة كل [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) مع هوامش وحالة النص الافتراضية.
+1. استرجع الخط ثابت العرض من خلال [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) وأضف كل سطر كـ [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. احفظ ملف الإخراج بعد إكمال حلقة بناء الصفحة.
 
 ```java
@@ -184,9 +184,9 @@ public static void convertTxtToPdf(Path inputFile, Path outputFile) throws Excep
 
 استخدم هذا المثال عندما يجب تحويل تدفق طباعة PCL إلى PDF.
 
-1. إنشاء [`PclLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pclloadoptions/) وتمكين الأخطاء المكبوتة في التحليل عندما يكون سلوك الاستيراد المتساهل مطلوبًا.
+1. أنشئ كائنًا من الفئة [`PclLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pclloadoptions/) وفعّل الأخطاء المكبوتة في التحليل عندما يكون سلوك الاستيراد المتساهل مطلوبًا.
 1. افتح مصدر PCL عن طريق تمرير مسار الملف وخيارات التحميل إلى [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) منشئ.
-1. احفظ النتيجة كملف PDF.
+1. احفظ النتيجة كملف PDF..
 
 ```java
 public static void convertPclToPdf(Path inputFile, Path outputFile) {
@@ -203,8 +203,8 @@ public static void convertPclToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل بيانات XML قبل إنشاء PDF النهائي.
 
-1. قم بتحويل مصدر XML باستخدام ملف XSLT إلى ملف HTML مؤقت عن طريق استدعاء طريقة التحويل المخصصة.
-1. مرّر ملف HTML الذي تم إنشاؤه إلى وظيفة تحويل HTML إلى PDF الموجودة بحيث يستخدم PDF النهائي المعيار [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) workflow.
+1. حوّل مصدر XML باستخدام ملف XSLT إلى ملف HTML مؤقت عن طريق استدعاء طريقة التحويل المخصصة.
+1. مرّر ملف HTML الذي تم إنشاؤه إلى وظيفة تحويل HTML إلى PDF الموجودة بحيث يستخدم PDF النهائي المعيار [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) workflow..
 1. احذف ملف HTML المؤقت في `finally` حظر بعد اكتمال التحويل.
 1. احفظ ملف PDF الذي تم إنشاؤه.
 
@@ -242,8 +242,8 @@ public static void convertXpsToPdf(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب تحويل محتوى XSL-FO إلى PDF.
 
-1. إنشاء [`XslFoLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions/) مع مسار XSLT بحيث يمكن تحويل مصدر XML أثناء التحميل.
-1. قم بتكوين وضع معالجة أخطاء التحليل بحيث يُطرح استثناءً على الفور عندما يتم اكتشاف XSL-FO غير صالح.
+1. أنشئ كائنًا من الفئة [`XslFoLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions/) مع مسار XSLT بحيث يمكن تحويل مصدر XML أثناء التحميل.
+1. اضبط وضع معالجة أخطاء التحليل بحيث يُطرح استثناءً على الفور عندما يتم اكتشاف XSL-FO غير صالح.
 1. افتح مصدر XML في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مع خيارات التحميل تلك.
 1. احفظ مستند PDF الناتج.
 
@@ -263,7 +263,7 @@ public static void convertXslFoToPdf(Path xsltFile, Path xmlFile, Path outputFil
 استخدم هذه الطريقة عندما يجب تحويل بيانات XML إلى HTML قبل خطوة تحويل PDF النهائية.
 
 1. افتح ملفات XML و XSLT الإدخال كمصادر تحويل.
-1. إنشاء `Transformer` من ورقة الأنماط XSLT وتشغيلها على مصدر XML.
+1. أنشئ `Transformer` من ورقة الأنماط XSLT وتشغيلها على مصدر XML..
 1. اكتب ملف HTML المُحوَّل إلى القرص حتى يتمكن دالة تحويل PDF اللاحقة من تحميله.
 
 ```java

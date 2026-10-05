@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/region-based-extraction/
 description: تعلم كيفية استخراج النص من منطقة صفحة محددة أو فحص هندسة الفقرات في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -15,9 +15,9 @@ sitemap:
 استخدام `TextSearchOptions` مع `Rectangle` لتقييد الاستخراج إلى مساحة محددة على الصفحة.
 
 1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) لجمع النص من منطقة الصفحة المحددة.
-1. إنشاء [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) للهدف [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) و تمكين `setLimitToPageBounds(true)` لذا يظل الاستخراج داخل صندوق الصفحة المرئي.
-1. طبق خيارات البحث المكوّنة على الـ absorber وزُر الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. أنشئ كائنًا من الفئة [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) لجمع النص من منطقة الصفحة المحددة.
+1. أنشئ كائنًا من الفئة [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) للهدف [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) وفعّل `setLimitToPageBounds(true)` لذا يظل الاستخراج داخل صندوق الصفحة المرئي.
+1. طبّق خيارات البحث المكوّنة على absorber وزُر الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. اكتب مخزن النص المستخرج إلى ملف الخرج.
 
 ```java
@@ -39,7 +39,7 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 استخدام `ParagraphAbsorber` لفحص مستطيلات الأقسام ومضلعات الفقرات مع النص المستخرج.
 
 1. افتح ملف PDF المصدر في [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
-1. إنشاء [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) لبناء معلومات ترميز الصفحة.
+1. أنشئ كائنًا من الفئة [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) وزيارة الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) لبناء معلومات ترميز الصفحة.
 1. اقرأ نتيجة ترميز الصفحة الأولى وتكرّر عبر أقسامها وفقراتها.
 1. اجمع كل مستطيل قسم، ومضلع الفقرة، ونص الفقرة المعاد بناؤه من [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) خطوط.
 1. أنشئ تقرير الإخراج مع تفاصيل الهندسة والنص المستخرج.

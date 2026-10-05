@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/set-pdf-metadata/
 description: تعلم كيفية تحديث بيانات تعريف PDF في Java باستخدام واجهة PdfFileInfo.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,11 +20,11 @@ Abstract: تعلم كيفية تحديث بيانات تعريف PDF باستخ�
 
 ### خطوات
 
-1. إنشاء `PdfFileInfo` كائن لملف PDF المصدر.
-2. تعيين حقول البيانات الوصفية القياسية التي تريد تحديثها.
+1. أنشئ كائن `PdfFileInfo` لملف PDF المصدر.
+2. عيّن حقول البيانات الوصفية القياسية التي تريد تحديثها.
 3. أضف أي بيانات تعريف مخصصة باستخدام `setMetaInfo`.
 4. احفظ المستند المحدث باستخدام `save()`.
-5. أغلق الـ `PdfFileInfo` مثيل.
+5. أغلق الـ مثيل `PdfFileInfo`.
 
 ### مثال Java
 

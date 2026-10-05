@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /ar/java/convert-svg-file-to-pdf-format-in-ruby/
 description: تعرف على كيفية تحويل ملفات SVG إلى تنسيق PDF في Ruby باستخدام Aspose.PDF للحصول على تحويل مستندات دقيق وقابل للتوسع.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - تحويل SVG إلى PDF
 
@@ -35,6 +35,6 @@ puts "Document has been converted successfully"
 
 ## تنزيل الكود الجاري
 
-تحميلВ **Convert SVG to PDF (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+تحميل **Convert SVG to PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/svgtopdf.rb)

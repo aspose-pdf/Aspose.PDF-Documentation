@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/concatenate-pdf-files/
 description: دمج ملفات PDF في Java باستخدام سير عمل دمج القائم على المصفوفة في PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,9 +19,9 @@ Abstract: تعرف على كيفية دمج ملفات PDF باستخدام Aspo
 
 ### الخطوات
 
-1. إنشاء `PdfFileEditor` مثال.
-2. بناء مصفوفة سلاسل نصية تحتوي على مسارات ملفات PDF المدخلات.
-3. اتصال `concatenate` مع مصفوفة الإدخال ومسار ملف الإخراج.
+1. أنشئ مثيلًا من `PdfFileEditor`.
+2. ابنِ مصفوفة سلاسل نصية تحتوي على مسارات ملفات PDF المدخلات.
+3. استدعِ `concatenate` مع مصفوفة الإدخال ومسار ملف الإخراج.
 4. احفظ المستند المدمج.
 
 ```java

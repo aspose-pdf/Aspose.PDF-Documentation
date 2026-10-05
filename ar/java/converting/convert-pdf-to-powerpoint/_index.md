@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/convert-pdf-to-powerpoint/
 description: تعرّف على كيفية تحويل ملفات PDF إلى PowerPoint في Java باستخدام Aspose.PDF، بما في ذلك الشرائح القابلة للتحرير بصيغة PPTX، والشرائح المعتمدة على الصور، ودقة الصورة المخصصة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,9 +19,9 @@ Abstract: تشرح هذه المقالة كيفية تحويل ملفات PDF إ
 
 استخدم هذا المثال عندما ينبغي تصدير مستند PDF كعرض PowerPoint قياسي.
 
-1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثيل.
-1. إنشاء الافتراضي [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) لتصدير PowerPoint قابل للتحرير.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` لذلك يتم تسلسل صفحات PDF كـ `.pptx` عرض.
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ الافتراضي [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) لتصدير PowerPoint قابل للتحرير.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذلك يتم تسلسل صفحات PDF كـ `.pptx` عرض.
 1. احفظ ملف PPTX المحول.
 
 ```java
@@ -38,9 +38,9 @@ public static void convertPdfToPptx(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب أن تتحول كل صفحة PDF إلى شريحة PowerPoint مستندة إلى صورة.
 
-1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثيل.
-1. إنشاء [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) و تمكين `setSlidesAsImages(true)`.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` لذا يتم عرض كل صفحة PDF كشريحة مدعومة بصورة في العرض التقديمي.
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) وفعّل `setSlidesAsImages(true)`.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذا يتم عرض كل صفحة PDF كشريحة مدعومة بصورة في العرض التقديمي.
 1. احفظ ملف PPTX الذي تم إنشاؤه.
 
 ```java
@@ -58,9 +58,9 @@ public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFil
 
 استخدم هذا المثال عندما يجب التحكم في جودة صورة الشريحة أثناء تصدير PDF إلى PPTX.
 
-1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثيل.
-1. إنشاء [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) و اضبط `setImageResolution(300)` لتحقيق دقة أعلى لصورة الشريحة.
-1. اتصال `document.save(outputFile.toString(), saveOptions)` لذلك يتم إنشاء محتوى الشريحة المتراكم بتقنية النقطية بالدقة المطلوبة.
+1. افتح ملف PDF المصدر في مثيل [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) واضبط `setImageResolution(300)` لتحقيق دقة أعلى لصورة الشريحة.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذلك يتم إنشاء محتوى الشريحة المتراكم بتقنية النقطية بالدقة المطلوبة.
 1. احفظ العرض التقديمي الناتج.
 
 ```java

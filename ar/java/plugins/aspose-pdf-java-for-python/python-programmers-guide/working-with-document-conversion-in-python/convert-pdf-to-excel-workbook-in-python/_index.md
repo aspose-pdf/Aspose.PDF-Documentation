@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/convert-pdf-to-excel-workbook-in-python/
 description: تعرف على كيفية تحويل مستندات PDF إلى مصنفات Excel في Python باستخدام Aspose.PDF لاستخراج البيانات المنظمة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 لتحويل مستند PDF إلى مصنف Excel باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء وحدة **PdfToExcel**.
 
@@ -23,8 +23,8 @@ doc.save(self.dataDir + "Converted_Excel.xls", excelsave);
 print "Document has been converted successfully"
 ```
 
-**تنزيل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-تنزيلВ **تحويل PDF إلى مصنف Excel (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+تنزيل **تحويل PDF إلى مصنف Excel (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)

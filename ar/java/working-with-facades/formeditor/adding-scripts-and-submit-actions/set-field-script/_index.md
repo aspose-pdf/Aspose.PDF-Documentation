@@ -5,14 +5,14 @@ type: docs
 weight: 20
 url: /ar/java/set-field-script/
 description: تعرف على كيفية تعيين أو تحديث إجراء JavaScript على حقل نموذج PDF في Java باستخدام واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: تعيين إجراء JavaScript على حقل نموذج PDF في Java
 Abstract: توضح هذه المقالة كيفية ربط PDF موجود، إضافة سكريبت أولي، استبداله بسكريبت محدث، وحفظ المستند المعدل باستخدام واجهة FormEditor في Aspose.PDF for Java.
 ---
 ## ضبط سكريبت حقل
 
-1. ربط ملف PDF المصدر إلى `FormEditor` واجهة.
+1. اربط ملف PDF المصدر إلى واجهة `FormEditor`.
 2. أضف إجراء JavaScript أولي إلى الحقل.
 3. استبدله بنص البرنامج النصي المحدث.
 4. احفظ المستند المحدث.

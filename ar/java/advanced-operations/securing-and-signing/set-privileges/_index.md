@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/set-privileges-encrypt-and-decrypt-pdf-file/
 description: تعلم كيفية ضبط امتيازات PDF، تشفير الملفات، فك تشفير ملفات PDF المحمية، وتغيير كلمات المرور في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -13,12 +13,12 @@ TechArticle: true
 AlternativeHeadline: ضبط أذونات PDF وإدارة التشفير في Java
 Abstract: تشرح هذه المقالة كيفية تأمين ملفات PDF باستخدام Aspose.PDF for Java. تغطي تشفير المستندات باستخدام كلمات مرور المستخدم والمالك، وتطبيق قيود الأذونات، وفك تشفير الملفات، وتغيير كلمات المرور، وتعيين الامتيازات مع أو بدون طرق آمنة من الاستثناءات.
 ---
-Aspose.PDF for Java يعرض عمليات أمان PDF من خلال `PdfFileSecurity` واجهة.
+Aspose.PDF for Java يعرض عمليات أمان PDF من خلال واجهة `PdfFileSecurity`.
 
 ## تشفير PDF باستخدام كلمات مرور المستخدم والمالك
 
-1. إنشاء وربط الـ [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) واجهة إلى مستند PDF المصدر.
-1. تكوين [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) و [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) الخصائص المطلوبة في المثال.
+1. أنشئ وربط الـ واجهة [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) إلى مستند PDF المصدر.
+1. اضبط [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) و [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) الخصائص المطلوبة في المثال.
 1. احفظ مستند PDF المحدث عبر [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java
@@ -39,7 +39,7 @@ public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFi
 
 ## فك تشفير PDF محمي
 
-1. إنشاء وربط الـ [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) واجهة إلى مستند PDF المصدر.
+1. أنشئ وربط الـ واجهة [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) إلى مستند PDF المصدر.
 1. فك تشفير المستند المحمي باستخدام كلمة مرور المالك.
 1. احفظ مستند PDF المحدث عبر [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
@@ -53,11 +53,11 @@ public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) 
 }
 ```
 
-تتضمن مجموعة الأمثلة أيضًا `tryDecryptPdfWithoutException`, الذي يُرجِع `false` بدلاً من إلقاء الاستثناء عندما يفشل فك التشفير.
+تتضمن مجموعة الأمثلة أيضًا `tryDecryptPdfWithoutException`، الذي يُرجِع `false` بدلاً من إلقاء الاستثناء عندما يفشل فك التشفير.
 
 ## تغيير كلمات المرور وإعادة تعيين الأمان
 
-ال `PdfFileSecurityExamples` الفئة توضح:
+ال الفئة `PdfFileSecurityExamples` توضح:
 
 - `changeUserAndOwnerPassword` لإستبدال كلتا كلمة المرور.
 - `changePasswordAndResetSecurity` لتغيير كلمات المرور وإعادة تطبيق الصلاحيات في خطوة واحدة.
@@ -67,9 +67,9 @@ public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) 
 
 لتقييد الإجراءات مثل الطباعة والنسخ:
 
-1. إنشاء وربط الـ [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) واجهة إلى مستند PDF المصدر.
-1. حدد المطلوب [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) أذونات أو خيارات التشفير.
-1. قم بتعيين الخصائص المطلوبة في المثال.
+1. أنشئ وربط الـ واجهة [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) إلى مستند PDF المصدر.
+1. حدّد المطلوب [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) أذونات أو خيارات التشفير.
+1. عيّن الخصائص المطلوبة في المثال.
 1. احفظ مستند PDF المحدث عبر [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
 
 ```java

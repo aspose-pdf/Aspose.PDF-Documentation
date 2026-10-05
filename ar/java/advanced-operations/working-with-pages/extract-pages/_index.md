@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /ar/java/extract-pages/
 description: تعلم كيفية استخراج صفحة PDF واحدة أو عدة صفحات إلى ملفات جديدة في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,7 +19,7 @@ Abstract: تشرح هذه المقالة كيفية استخراج الصفحا�
 
 استخدم هذا المثال عندما تحتاج إلى حفظ صفحة واحدة من ملف PDF المصدر في مستند منفصل.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإنشاء مستند وجهة.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأنشئ مستند وجهة.
 1. انسخ الصفحة المستهدفة إلى مجموعة صفحات الوجهة.
 1. احفظ ملف PDF الجديد.
 
@@ -37,8 +37,8 @@ public static void extractPage(Path inputFile, Path outputFile) {
 
 استخدم هذا المثال عندما تحتاج إلى نسخ عدة صفحات إلى ملف PDF منفصل.
 
-1. فتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وإنشاء مستند وجهة.
-1. قم بالتكرار عبر فهارس الصفحات المحددة وأضفها إلى الوجهة.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأنشئ مستند وجهة.
+1. مرّ على فهارس الصفحات المحددة وأضفها إلى الوجهة.
 1. احفظ مستند الصفحات المستخرجة.
 
 ```java

@@ -5,12 +5,12 @@ type: docs
 weight: 10
 url: /ar/java/exporting-form-data/
 description: تعرف على كيفية تصدير بيانات نموذج PDF في Java باستخدام واجهة Form في Aspose.PDF، بما في ذلك سير عمل الإخراج XML وFDF وXFDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: تصدير بيانات نموذج PDF إلى XML وFDF وXFDF في Java
 Abstract: تغطي هذه القسم أمثلة تصدير النماذج في Java المطبقة باستخدام واجهة Form في Aspose.PDF for Java. تتضمن مجموعة الأمثلة الحالية تصدير بيانات AcroForm إلى XML وFDF وXFDF، بينما تم الإشارة صراحةً إلى موضوعات JSON وXFA غير المدعومة لتجنب إنشاء مسارات شفرة غير موجودة في هذا المستودع.
 ---
-الجافا `FormExamples` الفئة تشمل تدفقات تصدير مباشرة لهذه الصيغ:
+الجافا الفئة `FormExamples` تشمل تدفقات تصدير مباشرة لهذه الصيغ:
 
 - XML مع `form.exportXml(...)`
 - FDF مع `form.exportFdf(...)`

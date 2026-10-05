@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/create-checkbox-field/
 description: تعرف على كيفية إضافة حقل نموذج مربع اختيار إلى مستند PDF باستخدام Java عبر واجهة FormEditor في Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إنشاء حقل مربع اختيار في ملف PDF باستخدام Java
 Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود، وإضافة حقل مربع اختيار في موضع محدد، وحفظ المستند المعدل باستخدام واجهة FormEditor في Aspose.PDF for Java.
@@ -14,8 +14,8 @@ Abstract: توضح هذه المقالة كيفية ربط ملف PDF موجود
 
 ## إنشاء حقل مربع اختيار
 
-1. ربط ملف PDF المصدر إلى `FormEditor` واجهة.
-2. أضف حقل مربع الاختيار مع `FieldType.CheckBox`, اسم الحقل، التسمية، الصفحة، والمستطيل.
+1. اربط ملف PDF المصدر إلى واجهة `FormEditor`.
+2. أضف حقل مربع الاختيار مع `FieldType.CheckBox`، اسم الحقل، التسمية، الصفحة، والمستطيل.
 3. احفظ المستند المُحدَّث.
 
 ```java

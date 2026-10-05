@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/protect-pdf-file/
 description: تعرّف على كيفية تشفير ملفات PDF، فك تشفير المستندات المحمية، تغيير كلمات المرور، وفحص حماية كلمة المرور في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,12 +19,12 @@ Abstract: تشرح هذه المقالة كيفية حماية ملفات PDF ف
 
 الأمثلة في `ProtectDocumentExamples.java` إظهار كيفية:
 
-1. تطبيق التشفير على [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مع كلمات مرور المستخدم والمالك.
-1. تقييد الأذونات باستخدام [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
+1. طبّق التشفير على [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مع كلمات مرور المستخدم والمالك.
+1. قيّد الأذونات باستخدام [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
 1. اختر [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) للمحمى [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. فك تشفير محمي [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. تغيير كلمات المرور الحالية على [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. اختبار كلمات المرور المرشحة باستخدام [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) و [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. اختبر كلمات المرور المرشحة باستخدام [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) و [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ## تشفير ملف PDF مع امتيازات مقيدة
 

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /ar/java/media-annotations/
 description: تعلم كيفية العمل مع واجهات برمجة تطبيقات التعليقات الصوتية، الشاشة، الوسائط المتعددة، وتعليقات PDF ثلاثية الأبعاد في Java، مع إرشادات خطوة بخطوة لتدفقات العمل الشائعة للوسائط المتعددة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.5
@@ -15,12 +15,12 @@ Abstract: توضح هذه الصفحة سير عمل تعليقات الوسائ
 ---
 عادةً ما تغطي التعليقات التوضيحية للوسائط في PDF المحتوى المتعدد الوسائط المدمج أو المرتبط مثل مقاطع الصوت، ومناطق تشغيل الشاشة، وحاويات الوسائط الغنية، والنماذج ثلاثية الأبعاد.
 
-## أضف تعليقا بوسائط غنية
+## إضافة تعليقا بوسائط غنية
 
 استخدم هذا المثال عندما يجب أن تستضيف صفحة PDF محتوى فيديو مدمج مع مشغل مخصص، صورة ملصق، ومظهر.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/), قم بتكوين أصول المشغل، الملصق، وتدفق المحتوى.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [RichMediaAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/richmediaannotation/)، اضبط أصول المشغل، الملصق، وتدفق المحتوى.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ مستند الإخراج.
 
 ```java
@@ -68,7 +68,7 @@ public static void richMediaAnnotationsAdd(Path mediaDir, Path outputFile) throw
 يقوم هذا المثال بإزالة التعليقات التوضيحية للوسائط المتعددة الغنية الموجودة من صفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات التوضيحية من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
+1. اجمع التعليقات التوضيحية من النوع [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`RichMedia`.
 1. احذف التعليقات التوضيحية المجمعة واحفظ المستند المحدَّث.
 
 ```java
@@ -95,8 +95,8 @@ public static void richMediaAnnotationsDelete(Path inputFile, Path outputFile) {
 استخدم هذا المثال لتفقد التعليقات التوضيحية للصور المتحركة والصوت والوسائط الغنية الموجودة بالفعل على الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. حدد مجموعة أنواع التعليقات التوضيحية المتعددة الوسائط التي تريد اكتشافها.
-1. التنقل عبر ملاحظات الصفحة وطباعة النوع والمستطيل لكل مطابقة.
+1. حدّد مجموعة أنواع التعليقات التوضيحية المتعددة الوسائط التي تريد اكتشافها.
+1. مرّ على ملاحظات الصفحة واطبع النوع والمستطيل لكل مطابقة.
 
 ```java
 public static void multimediaAnnotationsGet(Path inputFile) {
@@ -119,9 +119,9 @@ public static void multimediaAnnotationsGet(Path inputFile) {
 
 يضيف هذا المثال عرضًا تفاعليًا للنموذج ثلاثي الأبعاد مع وجهات نظر محددة مسبقًا وخيارات التصيير.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. حمّل النموذج إلى [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) وتكوين [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
-1. إنشاء [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/), أضفه إلى صفحة، واحفظ المستند.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. حمّل النموذج إلى [PDF3DContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dcontent/) واضبط [PDF3DArtwork](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dartwork/).
+1. أنشئ كائنًا من الفئة [PDF3DAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdf3dannotation/)، أضفه إلى صفحة، واحفظ المستند.
 
 ```java
 public static void annotation3dAdd(Path modelFile, Path outputFile) {
@@ -168,8 +168,8 @@ public static void annotation3dAdd(Path modelFile, Path outputFile) {
 
 استخدم هذا المثال عندما يجب على الصفحة الإشارة إلى ملف وسائط عبر منطقة تشغيل الشاشة.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. إنشاء [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) لملف الوسائط والمستطيل الهدف.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. أنشئ كائنًا من الفئة [ScreenAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/screenannotation/) لملف الوسائط والمستطيل الهدف.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ المستند.
 
 ```java
@@ -193,7 +193,7 @@ public static void screenAnnotationWithMediaAdd(Path mediaFile, Path outputFile)
 يوضح هذا المثال وضع ملاحظة صوتية على الصفحة وربطها بملف WAV.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) لملف الصوت الهدف وتكوين البيانات الوصفية الخاصة به.
+1. أنشئ كائنًا من الفئة [SoundAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/soundannotation/) لملف الصوت الهدف واضبط البيانات الوصفية الخاصة به.
 1. أضف التعليق التوضيحي إلى الصفحة واحفظ مستند الإخراج.
 
 ```java

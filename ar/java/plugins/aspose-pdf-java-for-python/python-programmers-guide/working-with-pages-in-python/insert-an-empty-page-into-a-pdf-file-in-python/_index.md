@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /ar/java/insert-an-empty-page-into-a-pdf-file-in-python/
 description: تعرّف على كيفية إدراج صفحة فارغة في أي موضع داخل ملف PDF باستخدام Python و Aspose.PDF لتكويد المستندات بمرونة.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 لإدراج صفحة فارغة في مستند Pdf باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء الفئة **InsertEmptyPage**.
 
@@ -25,8 +25,8 @@ print "Empty page added successfully!"
 
 ```
 
-**تنزيل الكود التشغيلي**
+**تنزيل الشفرة القابلة للتشغيل**
 
-DownloadВ **إدراج صفحة فارغة (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعية المذكورة أدناه:
+Download **إدراج صفحة فارغة (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/InsertEmptyPage/InsertEmptyPage.py)

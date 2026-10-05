@@ -1,13 +1,13 @@
 ---
-title: إضافة سلسلة HTML باستخدام DOM في بايثون
-linktitle: إضافة سلسلة HTML باستخدام DOM في بايثون
+title: إضافة سلسلة HTML باستخدام DOM في Python
+linktitle: إضافة سلسلة HTML باستخدام DOM في Python
 type: docs
 weight: 10
 url: /ar/java/add-html-string-using-dom-in-python/
-lastmod: "2026-10-01"
-description: يوضح كيفية إضافة سلسلة HTML في DOM باستخدام بايثون مع مكتبة تنسيق ملفات PDF
+lastmod: "2026-10-05"
+description: يوضح كيفية إضافة سلسلة HTML في DOM باستخدام Python مع مكتبة تنسيق ملفات PDF
 ---
-## إضافة سلسلة HTML في DOM لملف PDF باستخدام بايثون
+## إضافة سلسلة HTML في DOM لملف PDF باستخدام Python
 
 لإضافة سلسلة HTML في مستند Pdf باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء الوحدة **AddHtml**.
 
@@ -35,7 +35,7 @@ doc.save(self.dataDir + 'html.output.pdf')
 print "HTML added successfully"
 ```
 
-**تنزيل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
 تنزيلВ **إضافة HTML (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 

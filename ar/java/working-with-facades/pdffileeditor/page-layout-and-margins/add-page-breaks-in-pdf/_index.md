@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/add-page-breaks-in-pdf/
 description: إدراج فواصل صفحات في ملف PDF باستخدام Java مع واجهة PdfFileEditor.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -19,10 +19,10 @@ Abstract: تعلم كيفية إضافة فواصل صفحات باستخدام 
 
 ### خطوات
 
-1. إنشاء `PdfFileEditor` مثال.
-2. إنشاء واحد أو أكثر `PdfFileEditor.PageBreak` الإدخالات مع رقم الصفحة وموقع الفاصل.
+1. أنشئ مثيلًا من `PdfFileEditor`.
+2. أنشئ واحد أو أكثر `PdfFileEditor.PageBreak` الإدخالات مع رقم الصفحة وموقع الفاصل.
 3. مرّر مصفوفة فاصل الصفحات إلى `addPageBreak`.
-4. حفظ مستند PDF المحدث.
+4. احفظ مستند PDF المحدث.
 
 ### مثال Java
 

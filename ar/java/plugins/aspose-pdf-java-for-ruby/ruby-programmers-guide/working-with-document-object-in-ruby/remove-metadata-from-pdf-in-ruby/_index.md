@@ -1,17 +1,17 @@
 ---
-title: إزالة البيانات الوصفية من PDF في روبي
-linktitle: إزالة البيانات الوصفية من PDF في روبي
+title: إزالة البيانات الوصفية من PDF في Ruby
+linktitle: إزالة البيانات الوصفية من PDF في Ruby
 type: docs
 weight: 90
 url: /ar/java/remove-metadata-from-pdf-in-ruby/
 description: مسح البيانات الوصفية الحساسة أو غير المرغوب فيها من ملفات PDF برمجياً باستخدام Aspose.PDF للروبي.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 ---
 ## Aspose.PDF - إزالة البيانات الوصفية
 
 لإزالة البيانات الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **RemoveMetadata**.
 
-كود روبي
+كود Ruby
 
 ```java
 # The path to the documents directory.

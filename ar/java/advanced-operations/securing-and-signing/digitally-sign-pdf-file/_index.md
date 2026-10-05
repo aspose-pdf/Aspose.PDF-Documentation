@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/digitally-sign-pdf-file/
 description: تعرف على كيفية توقيع وثائق PDF رقمياً وتصديقها في Java باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -17,9 +17,9 @@ Abstract: يوضح هذا الدليل كيفية توقيع مستندات PDF 
 
 ## توقيع PDF باستخدام كائن شهادة
 
-1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
-1. إنشاء [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) كائن التوقيع وتكوين خيارات التوقيع.
-1. تطبيق التوقيع على مستند PDF من خلال [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. أنشئ كائنًا من الفئة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
+1. أنشئ كائنًا من الفئة [PKCS7](https://reference.aspose.com/pdf/java/com.aspose.pdf/pkcs7/) التوقيع واضبط خيارات التوقيع.
+1. طبّق التوقيع على مستند PDF من خلال [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. احفظ مستند PDF المحدث.
 
 ```java
@@ -35,13 +35,13 @@ public static void signPdfWithCertificateObject(Path inputFile, Path certificate
 }
 ```
 
-هذا النهج يبني `PKCS7` كائن التوقيع أولاً ثم يطبقه على الصفحة 1.
+هذا النهج يبني كائن `PKCS7` التوقيع أولاً ثم يطبقه على الصفحة 1.
 
 ## توقيع ملف PDF باستخدام معلمات الشهادة الأساسية
 
-1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
-1. تهيئة معلمات الشهادة المطلوبة بواسطة مثال التوقيع.
-1. تطبيق التوقيع على مستند PDF من خلال [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
+1. أنشئ كائنًا من الفئة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
+1. هيّئ معلمات الشهادة المطلوبة بواسطة مثال التوقيع.
+1. طبّق التوقيع على مستند PDF من خلال [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. احفظ مستند PDF المحدث.
 
 ```java
@@ -62,9 +62,9 @@ public static void signPdfWithBasicParameters(Path inputFile, Path certificateFi
 
 استخدم توقيع اكتشاف وتمنع تعديل المستند عندما تحتاج إلى قيود على مستوى الشهادة:
 
-1. إنشاء [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
-1. إنشاء [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) الكائن وتكوين [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/) خيارات التوقيع.
-1. تطبيق توقيع الشهادة وحفظ مستند PDF المحدث.
+1. أنشئ كائنًا من الفئة [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) الواجهة وربط مستند PDF المصدر.
+1. أنشئ الكائن [DocMDPSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpsignature/) واضبط [DocMDPAccessPermissions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docmdpaccesspermissions/) خيارات التوقيع.
+1. طبّق توقيع الشهادة واحفظ مستند PDF المحدث.
 
 ```java
 public static void certifyPdfWithMdpSignature(Path inputFile, Path certificateFile, Path outputFile) {

@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /ar/java/merge-pdf-documents/
 description: تعرّف على كيفية دمج ملفات PDF متعددة في مستند واحد باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,8 +19,8 @@ Abstract: تشرح هذه المقالة كيفية دمج مستندات PDF ب
 
 استخدم هذا الأسلوب عندما تحتاج إلى أبسط عملية دمج وتريد إلحاق مستند كامل بآخر.
 
-1. افتح كلا ملفي PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائنات.
-1. أضف الـ [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) تجميع من المستند الثاني إلى المستند الأول.
+1. افتح ملفي PDF المصدر باستخدام كائنات [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف مجموعة الصفحات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) من المستند الثاني إلى المستند الأول.
 1. احفظ ملف PDF المحدث [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
@@ -37,8 +37,8 @@ public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outp
 
 تحتفظ هذه الطريقة المساعدة بمنطق دمج نطاق الصفحات في مكان واحد حتى تتمكن الأمثلة الأخرى من إعادة استخدام روتين النسخ المُتحقق منه نفسه.
 
-1. افتح أو استلم ملف PDF المصدر والوجهة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) كائنات.
-1. قُم بتطبيع نطاق الصفحات المطلوب بحيث يبقى ضمن المتاح [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) مجموعة.
+1. افتح أو استقبل مستندي PDF المصدر والوجهة باستخدام كائنات [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. اضبط نطاق الصفحات المطلوب بحيث يبقى ضمن مجموعة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) المتاحة.
 1. أضف كل صفحة من النطاق المُتحقق إلى المستند الهدف.
 
 ```java
@@ -64,8 +64,8 @@ private static void appendPageRange(Document sourceDocument, Document destinatio
 
 استخدم هذا النمط عندما تحتاج إلى دمج قائمة من ملفات الإدخال في مستند إخراج واحد بشكل متتابع.
 
-1. إنشاء ملف PDF فارغ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. افتح كل ملف إدخال واحدًا في كل مرة وانسخ محتواه بالكامل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) نطاق إلى مستند الإخراج.
+1. أنشئ مستند PDF فارغًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. افتح كل ملف إدخال واحدًا في كل مرة وانسخ محتواه ضمن نطاق الصفحات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) بالكامل إلى مستند الإخراج.
 1. احفظ النتيجة المدمجة بعد معالجة جميع ملفات المصدر.
 
 ```java
@@ -85,8 +85,8 @@ public static void mergeMultipleDocuments(List<Path> inputFiles, Path outputFile
 
 هذا المثال ينشئ ملف إخراج مخصص بأخذ نطاقات صفحات محددة فقط من كل مستند مصدر.
 
-1. افتح كلا ملفي PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) الكائنات وإنشاء مستند إخراج جديد.
-1. أضف فقط المطلوب [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) نطاقات من كل مستند مصدر.
+1. افتح ملفي PDF المصدر باستخدام الكائنات [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأنشئ مستند إخراج جديد.
+1. أضف نطاقات الصفحات [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) المطلوبة فقط من كل مستند مصدر.
 1. احفظ المستند الناتج المجمع.
 
 ```java
@@ -105,8 +105,8 @@ public static void mergeSelectedPageRanges(Path inputFile1, Path inputFile2, Pat
 
 استخدم هذا النهج عندما يجب أن يظهر مستند داخل آخر بدلاً من أن يكون فقط قبله أو بعده.
 
-1. افتح ملف PDF الأساسي والملف المدرج [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) الكائنات وإنشاء مستند إخراج جديد.
-1. انسخ الجزء الأول من المستند الأساسي، ثم أضف المستند المدخل بالكامل، وأخيرًا أضف الجزء المتبقي من الأساسي [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) النطاق.
+1. افتح ملف PDF الأساسي والملف المدرج باستخدام الكائنات [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأنشئ مستند إخراج جديد.
+1. انسخ الجزء الأول من المستند الأساسي، ثم أضف المستند المدخل بالكامل، وأخيرًا أضف الجزء المتبقي من نطاق صفحات المستند الأساسي [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. احفظ النتيجة المعاد ترتيبها في ملف جديد.
 
 ```java
@@ -130,8 +130,8 @@ public static void mergeInsertDocumentAtPosition(Path inputFile1, Path inputFile
 
 هذا المثال يدمج الصفحات من مستندين بشكل متبادل، وهو مفيد عندما ينبغي لكلا المدخلين المساهمة صفحةً بصفحة في النتيجة النهائية.
 
-1. افتح كلا ملفي PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) الكائنات وإنشاء مستند إخراج جديد.
-1. قم بالتنقل عبر الحد الأقصى لعدد الصفحات المتاحة وأضف كل صفحة متاحة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) من المستندين الأول والثاني على التوالي.
+1. افتح ملفي PDF المصدر باستخدام الكائنات [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأنشئ مستند إخراج جديد.
+1. مرّ على الحد الأقصى لعدد الصفحات المتاحة وأضف كل صفحة متاحة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) من المستندين الأول والثاني على التوالي.
 1. احفظ مستند الإخراج المتداخل.
 
 ```java
@@ -161,8 +161,8 @@ public static void mergeAlternatingPages(Path inputFile1, Path inputFile2, Path 
 
 استخدم هذا النمط عندما يجب أن يظل الملف المدمج سهل التنقل ويظهر بوضوح مكان بدء كل مستند مصدر.
 
-1. إنشاء ملف PDF فارغ [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح كل ملف مصدر بالتتابع.
-1. إضافة فاصل [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) مع عنوان، ثم أنشئ [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) إشارة مرجعية لهذا القسم.
+1. أنشئ مستند PDF فارغًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح كل ملف مصدر بالتتابع.
+1. أضف صفحة فاصلة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) مع عنوان، ثم أنشئ كائنًا من الفئة [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) لإنشاء إشارة مرجعية لهذا القسم.
 1. أرفق الصفحات المصدر، وبشكل اختياري أضف إشارة مرجعية تشير إلى صفحة المحتوى الأولى، ثم احفظ المستند المدمج النهائي.
 
 ```java

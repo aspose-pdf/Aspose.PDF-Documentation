@@ -1,11 +1,11 @@
 ---
-title: التعليقات التفاعلية باستخدام جافا
+title: التعليقات التفاعلية باستخدام Java
 linktitle: التعليقات التفاعلية
 type: docs
 weight: 60
 url: /ar/java/interactive-annotations/
 description: تعرّف على كيفية إضافة وفحص وحذف تعليقات الروابط في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -20,8 +20,8 @@ Abstract: تُوضح هذه المقالة كيفية العمل مع تعليق
 استخدم هذا المثال عندما تحتاج إلى وضع رابط قابل للنقر فوق النص الموجود في الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. حدد مقطع النص المستهدف وأنشئ [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) فوق مستطيله.
-1. تعيين [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) وحفظ المستند المحدث.
+1. حدّد مقطع النص المستهدف وأنشئ كائنًا من الفئة [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) فوق مستطيله.
+1. عيّن [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) واحفظ المستند المحدث.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -46,8 +46,8 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 يتم في هذا المثال مسح مجموعة تعليقات الصفحة وإبلاغ موقع كل تعليق ارتباط.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. تكرار عبر التعليقات التوضيحية على الصفحة المستهدفة.
-1. تصفية التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` وطبع مستطيلاتهم.
+1. مرّ على التعليقات التوضيحية على الصفحة المستهدفة.
+1. صفِّ التعليقات التوضيحية حسب [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` وطبع مستطيلاتهم.
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -66,7 +66,7 @@ public static void linkGet(Path inputFile) {
 استخدم هذا النهج عندما يجب إزالة تعليقات الروابط الموجودة من الصفحة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. جمع التعليقات التوضيحية التي يكون نوعها [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
+1. اجمع التعليقات التوضيحية التي يكون نوعها [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. احذف التعليقات التوضيحية المجمعة واحفظ ملف الإخراج.
 
 ```java
@@ -91,8 +91,8 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 هذا المثال ينشئ تعليقا خطيًا تفاعليًا مع أنماط الأسهم وإعدادات الحدود وملاحظة منبثقة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. إنشاء [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) مع نقاط البدء والنهاية.
-1. قم بتكوين مظهره وتعليق النافذة المنبثقة، ثم احفظ المستند.
+1. أنشئ كائنًا من الفئة [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) مع نقاط البدء والنهاية.
+1. اضبط مظهره وتعليق النافذة المنبثقة، ثم احفظ المستند.
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -128,7 +128,7 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 استخدم هذا المثال عندما يجب أن يحتوي ملف PDF على أزرار الصفحة السابقة والصفحة التالية للتنقل التفاعلي.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتأكد من أن المستند يحتوي على الصفحات المطلوبة.
-1. إنشاء [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) عناصر التحكم مع إجراءات التنقل المعرفة مسبقًا.
+1. أنشئ كائنًا من الفئة [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) عناصر التحكم مع إجراءات التنقل المعرفة مسبقًا.
 1. أضف الأزرار إلى مجموعة Form واحفظ المستند المحدث.
 
 ```java
@@ -162,9 +162,9 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 
 هذا المثال ينشئ زرًا يفعِّل أمر الطباعة عندما ينقر المستخدم عليه.
 
-1. إنشاء PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
-1. إنشاء [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) وتعيين الإجراء المسبق للطباعة.
-1. قم بتكوين حدود الزر والخلفية، أضفه إلى النموذج، واحفظ المستند.
+1. أنشئ PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحةً.
+1. أنشئ كائنًا من الفئة [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) وعيّن الإجراء المسبق للطباعة.
+1. اضبط حدود الزر والخلفية، أضفه إلى النموذج، واحفظ المستند.
 
 ```java
 public static void printButtonAdd(Path outputFile) {

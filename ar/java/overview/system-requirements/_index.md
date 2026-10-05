@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /ar/java/system-requirements/
 description: تسرد هذه الفقرة أنظمة التشغيل المدعومة التي يحتاجها المطور للعمل بنجاح مع Aspose.PDF for Python.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,28 +19,28 @@ Abstract: Aspose.PDF for Python via .NET هو واجهة برمجة تطبيقا
 
 ## أنظمة التشغيل المدعومة
 
-يدعم Aspose.PDF for Java أي نظام تشغيل 32‑بت أو 64‑بتВ الذي يشغّل بيئة تشغيل Java بما في ذلك، ولكن ليس حصرًا:
+يدعم Aspose.PDF for Java أي نظام تشغيل 32‑بت أو 64‑بت الذي يشغّل بيئة تشغيل Java بما في ذلك، ولكن ليس حصرًا:
 
 ### ويندوز
 
-- مايكروسوفت ويندوز 2000 بروفيشنال ( x64, x86)
-- مايكروسوفت ويندوز 2000 سيرفر (x64, x86)
-- مايكروسوفت ويندوز 2003 سيرفر (x64, x86)
-- مايكروسوفت ويندوز 2008 سيرفر (x64, x86)
-- مايكروسوفت ويندوز 2012 سيرفر (x64, x86)
-- مايكروسوفت ويندوز 2012 R2 سيرفر (x64, x86)
-- مايكروسوفت ويندوز 2016 سيرفر (x64, x86)
-- مايكروسوفت ويندوز 2019 سيرفر (x64, x86)
-- مايكروسوفت ويندوز فيستا (x64, x86)
-- مايكروسوفت ويندوز XP (x64, x86)
-- مايكروسوفت ويندوز 7 (x64, x86)
-- مايكروسوفت ويندوز 8, 8.1 (x64, x86)
-- مايكروسوفت ويندوز 10 (x64, x86)
+- Microsoft Windows 2000 Professional ( x64, x86)
+- Microsoft Windows 2000 Server (x64, x86)
+- Microsoft Windows 2003 Server (x64, x86)
+- Microsoft Windows 2008 Server (x64, x86)
+- Microsoft Windows 2012 Server (x64, x86)
+- Microsoft Windows 2012 R2 Server (x64, x86)
+- Microsoft Windows 2016 Server (x64, x86)
+- Microsoft Windows 2019 Server (x64, x86)
+- Microsoft Windows Vista (x64, x86)
+- Microsoft Windows XP (x64, x86)
+- Microsoft Windows 7 (x64, x86)
+- Microsoft Windows 8, 8.1 (x64, x86)
+- Microsoft Windows 10 (x64, x86)
 - مايكروسوفت أزور
 
-### لينكس
+### Linux
 
-- لينكس (أوبونتو، سنتوس، وغيرها)
+- Linux (أوبونتو، سنتوس، وغيرها)
 
 ### ماك
 

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /ar/java/add-image-to-existing-pdf-file/
 description: تعلم كيفية إضافة صور إلى ملفات PDF الحالية باستخدام Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 TechArticle: true
 AlternativeHeadline: إضافة صور إلى ملفات PDF الحالية باستخدام Java
 Abstract: توضح هذه المقالة كيفية إضافة صور إلى مستندات PDF باستخدام Aspose.PDF for Java. وتتناول وضع صورة عند إحداثيات ثابتة، وإضافة صور عبر مشغلات الصفحة ذات المستوى المنخفض، وتعيين نص بديل لتحسين إمكانية الوصول، وتضمين بيانات الصورة باستخدام ضغط Flate.
@@ -16,8 +16,8 @@ Abstract: توضح هذه المقالة كيفية إضافة صور إلى م�
 
 استخدم هذا المثال عندما تحتاج إلى وضع صورة في موضع ثابت على صفحة PDF.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
-1. اتصال `page.addImage()` مع مسار الصورة المصدر والمستطيل الهدف.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف صفحة.
+1. استدعِ `page.addImage()` مع مسار الصورة المصدر والمستطيل الهدف.
 1. احفظ ملف PDF المُولَّد.
 
 ```java
@@ -30,11 +30,11 @@ public static void addImage(Path imageFile, Path outputFile) {
 }
 ```
 
-## أضف صورة باستخدام مشغلات الصفحة
+## إضافة صورة باستخدام مشغلات الصفحة
 
 استخدم هذا المثال عندما تحتاج إلى التحكم منخفض المستوى في موضع الصورة وتكبيرها/تصغيرها عبر عوامل تشغيل الصفحة.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح تدفق صورة المصدر.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح تدفق صورة المصدر.
 1. أضف الصورة إلى موارد الصفحة واحسب المستطيل الهدف.
 1. اكتب عوامل تشغيل الرسومات المطلوبة واحفظ المستند.
 
@@ -74,13 +74,13 @@ public static void addImageUsingOperators(Path imageFile, Path outputFile) throw
 }
 ```
 
-## أضف صورة وحدد نصًا بديلًا
+## إضافة صورة وتحديد نص بديلًا
 
 استخدم هذا المثال عندما ينبغي أن تتضمن الصورة بيانات ميتا للوصول لقراء الشاشة.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف الصورة إلى الصفحة.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وأضف الصورة إلى الصفحة.
 1. احصل على العنصر المُدرَج [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) من موارد الصفحة.
-1. قم بتعيين النص البديل واحفظ ملف PDF.
+1. عيّن النص البديل واحفظ ملف PDF..
 
 ```java
 public static void addImageSetAlternativeTextForImage(Path imageFile, Path outputFile) {
@@ -100,11 +100,11 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 }
 ```
 
-## أضف صورة باستخدام ضغط Flate
+## إضافة صورة باستخدام ضغط Flate
 
 استخدم هذا المثال عندما تريد تضمين بيانات الصورة باستخدام ضغط Flate.
 
-1. إنشاء ملف PDF جديد [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وفتح تدفق الصورة.
+1. أنشئ مستند PDF جديدًا باستخدام [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وفتح تدفق الصورة.
 1. أضف الصورة إلى موارد الصفحة باستخدام `ImageFilterType.Flate`.
 1. ارسم الصورة عبر عمليات الصفحة واحفظ النتيجة.
 

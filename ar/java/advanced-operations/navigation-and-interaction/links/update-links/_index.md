@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /ar/java/update-links/
 description: تعلم كيفية تحديث مظهر روابط PDF والوجهات في Java.
-lastmod: "2026-10-01"
+lastmod: "2026-10-05"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -52,8 +52,8 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 استخدم هذا المثال عندما يجب تغيير اللون المرئي لتعليقات الروابط الموجودة.
 
 1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. التنقل عبر تعليقات الصفحة وتصفية لـ [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) الكائنات.
-1. قم بتحديث لون التعليق التوضيحي للارتباط واحفظ المستند.
+1. مرّ على تعليقات الصفحة وتصفية لـ الكائنات [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
+1. حدّث لون التعليق التوضيحي للارتباط واحفظ المستند.
 
 ```java
 public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
