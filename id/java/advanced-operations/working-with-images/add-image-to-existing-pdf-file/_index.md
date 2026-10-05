@@ -1,222 +1,137 @@
 ---
-title: Menambahkan Gambar ke File PDF yang Ada
-linktitle: Menambahkan Gambar
+title: "Menambahkan gambar ke PDF menggunakan Java"
+linktitle: "Menambahkan gambar"
 type: docs
 weight: 10
-url: /id/java/menambahkan-gambar-ke-file-pdf-yang-ada/
-description: Bagian ini menjelaskan cara menambahkan gambar ke file PDF yang ada menggunakan pustaka Java.
-lastmod: "2021-06-05"
+url: /id/java/add-image-to-existing-pdf-file/
+description: Pelajari cara menambahkan gambar ke file PDF yang ada dalam Java.
+lastmod: "2026-09-30"
+TechArticle: true
+AlternativeHeadline: Menambahkan gambar ke file PDF yang ada dengan Java
+Abstract: Artikel ini menunjukkan cara menambahkan gambar ke dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup penempatan gambar pada koordinat tetap, menambahkan gambar melalui operator halaman tingkat rendah, menetapkan teks alternatif untuk aksesibilitas, dan menyematkan data gambar dengan kompresi Flate compression.
 ---
+Aspose.PDF for Java mendukung baik penempatan gambar tingkat tinggi maupun gambar berbasis operator tingkat rendah.
 
-Setiap halaman PDF memiliki properti Resources dan Contents. Resources dapat berupa gambar dan formulir misalnya, sedangkan konten diwakili oleh serangkaian operator PDF. Setiap operator memiliki nama dan argumen. Contoh ini menggunakan operator untuk menambahkan gambar ke file PDF.
+## Menambahkan gambar dengan koordinat halaman
 
-Untuk menambahkan gambar ke file PDF yang ada:
+Gunakan contoh ini ketika Anda perlu menempatkan gambar pada posisi tetap di halaman PDF.
 
-- Buat objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dan buka dokumen PDF input.
-- Dapatkan halaman yang ingin Anda tambahkan gambar.
-- Tambahkan gambar ke dalam koleksi [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) halaman.
-- Gunakan operator untuk menempatkan gambar pada halaman:
-- Gunakan operator GSave untuk menyimpan status grafis saat ini.
-
-- Gunakan operator [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/concatenatematrix) untuk menentukan di mana gambar akan ditempatkan.
-- Gunakan operator [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/class-use/Do) untuk menggambar gambar pada halaman.
-- Terakhir, gunakan operator [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators.class-use/grestore) untuk menyimpan keadaan grafis yang diperbarui.
-- Simpan file.
-
-Cuplikan kode berikut menunjukkan cara menambahkan gambar dalam dokumen PDF.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman.
+1. Panggil `page.addImage()` dengan jalur gambar sumber dan persegi panjang target.
+1. Simpan file PDF yang dihasilkan.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addImage(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.addImage(imageFile.toString(), new Rectangle(20, 730, 120, 830, true));
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+## Menambahkan gambar dengan operator halaman
 
-import javax.imageio.ImageIO;
+Gunakan contoh ini ketika Anda membutuhkan kontrol tingkat rendah atas penempatan dan skala gambar melalui operator halaman.
 
-import com.aspose.pdf.*;
-import com.aspose.pdf.facades.PdfFileMend;
-import com.aspose.pdf.operators.*;
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka aliran gambar sumber.
+1. Tambahkan gambar ke sumber daya halaman dan hitung persegi panjang target.
+1. Tuliskan operator grafis yang diperlukan dan simpan dokumen.
 
-public class ExampleAddImages {
+```java
+public static void addImageUsingOperators(Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document();
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().add();
+        page.setPageSize(842, 595);
 
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+        XImageCollection resourcesImages = page.getResources().getImages();
+        String imageId = resourcesImages.add(imageStream);
+        XImage xImage = resourcesImages.get_Item(resourcesImages.size());
 
-    public static void AddImageToExistingPDF() throws IOException {
-        // Buka dokumen
-        Document pdfDocument1 = new Document(_dataDir + "sample.pdf");
+        Rectangle rectangle = new Rectangle(
+                0,
+                0,
+                page.getMediaBox().getWidth(),
+                (page.getMediaBox().getWidth() * xImage.getHeight()) / xImage.getWidth(),
+                true);
 
-        // Atur koordinat
-        int lowerLeftX = 50;
-        int lowerLeftY = 750;
-        int upperRightX = 100;
-        int upperRightY = 800;
-
-        // Dapatkan halaman yang ingin Anda tambahkan gambar
-        Page page = pdfDocument1.getPages().get_Item(1);
-
-        // Muat gambar ke dalam stream
-        java.io.FileInputStream imageStream = new java.io.FileInputStream(new java.io.File(_dataDir + "logo.png"));
-
-        // Tambahkan gambar ke koleksi Images dari sumber daya halaman
-        page.getResources().getImages().add(imageStream);
-
-        // Menggunakan operator GSave: operator ini menyimpan keadaan grafis saat ini
         page.getContents().add(new GSave());
 
-        // Buat objek Rectangle dan Matrix
-        Rectangle rectangle = new Rectangle(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-        Matrix matrix = new Matrix(new double[] { rectangle.getURX() - rectangle.getLLX(), 0, 0,
-                rectangle.getURY() - rectangle.getLLY(), rectangle.getLLX(), rectangle.getLLY() });
-
-        // Menggunakan operator ConcatenateMatrix (menggabungkan matriks): mendefinisikan
-        // bagaimana gambar harus ditempatkan
+        Matrix matrix = new Matrix(
+                rectangle.getURX() - rectangle.getLLX(),
+                0,
+                0,
+                rectangle.getURY() - rectangle.getLLY(),
+                rectangle.getLLX(),
+                rectangle.getLLX() + (page.getMediaBox().getHeight() - rectangle.getHeight()) / 2);
         page.getContents().add(new ConcatenateMatrix(matrix));
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-
-        // Menggunakan operator Do: operator ini menggambar gambar
-        page.getContents().add(new Do(ximage.getName()));
-
-        // Menggunakan operator GRestore: operator ini mengembalikan keadaan grafis
+        page.getContents().add(new Do(imageId));
         page.getContents().add(new GRestore());
 
-        // Simpan PDF baru
-        pdfDocument1.save(_dataDir + "updated_document.pdf");
-
-        // Tutup stream gambar
-        imageStream.close();
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Menambahkan gambar dan mengatur teks alternatif
 
-## Menambahkan gambar dari BufferedImage ke dalam PDF
+Gunakan contoh ini ketika gambar harus menyertakan metadata aksesibilitas untuk pembaca layar.
 
-Mulai rilis Aspose.PDF untuk Java 9.5.0, kami telah memperkenalkan dukungan untuk menambahkan gambar dari instance BufferedImage ke dokumen PDF. Untuk mendukung kebutuhan ini, sebuah metode diimplementasikan: [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection).add(BufferedImage image);
-
-```java
-    public static void AddingImageFromBufferedImageIntoPDF() throws IOException {
-        BufferedImage originalImage = ImageIO.read(new File("anyImage.jpg"));
-        Document pdfDocument = new Document();
-        Page page = pdfDocument.getPages().add();
-        page.getResources().getImages().add(originalImage);
-    }
-```
-Anda dapat menggunakan InputStream apapun dan tidak hanya objek FileInputStream untuk menambahkan gambar. Jadi ketika menggunakan objek java.io.ByteArrayInputStream, Anda tidak perlu menyimpan file apapun ke dalam sistem:
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan gambar ke halaman.
+1. Ambil yang disisipkan [`XImage`](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) dari sumber halaman.
+1. Atur teks alternatif dan simpan PDF.
 
 ```java
-    public static void AddingImageFromBufferedImageIntoPDF2() throws IOException {
-        BufferedImage originalImage = ImageIO.read(new File("anyImage.jpg"));
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+public static void addImageSetAlternativeTextForImage(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.setPageSize(842, 595);
 
-        Document pdfDocument = new Document();
-        ImageIO.write(originalImage, "jpg", baos);
-        baos.flush();
-        Page page = pdfDocument.getPages().get_Item(1);
-        page.getResources().getImages().add(new ByteArrayInputStream(baos.toByteArray()));
-    }
-```
+        page.addImage(imageFile.toString(), new Rectangle(0, 0, 842, 595, true));
 
-
-## Menambahkan Gambar dalam File PDF yang Ada (Facades)
-
-Ada juga cara alternatif yang lebih mudah untuk menambahkan gambar ke file PDF. Anda dapat menggunakan metode AddImage dari kelas [PdfFileMend](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileMend). Metode AddImage memerlukan gambar yang akan ditambahkan, nomor halaman di mana gambar perlu ditambahkan dan informasi koordinat. Setelah itu, simpan file PDF yang telah diperbarui menggunakan metode Close.
-
-Cuplikan kode berikut menunjukkan kepada Anda cara menambahkan gambar dalam file PDF yang ada.
-
-```java
-    public static void AddImageInAnExistingPDFFile_Facades() {
-        // Membuka dokumen
-        PdfFileMend mender = new PdfFileMend();
-
-        // Membuat objek PdfFileMend untuk menambahkan teks
-        mender.bindPdf(_dataDir + "AddImage.pdf");
-
-        // Menambahkan gambar dalam file PDF
-        mender.addImage(_dataDir + "aspose-logo.jpg", 1, 100, 600, 200, 700);
-
-        // Menyimpan perubahan
-        mender.save(_dataDir + "AddImage_out.pdf");
-
-        // Menutup objek PdfFileMend
-        mender.close();
-    }
-```
-
-
-## Tambahkan Referensi dari satu Gambar beberapa kali dalam Dokumen PDF
-
-Terkadang kita memiliki kebutuhan untuk menggunakan gambar yang sama beberapa kali dalam dokumen PDF. Menambahkan instance baru meningkatkan ukuran dokumen PDF yang dihasilkan. Kami telah menambahkan metode baru XImageCollection.add(XImage) yang mendukung objek Ximage untuk ditambahkan ke dalam Koleksi Gambar. Metode ini memungkinkan untuk menambahkan referensi ke objek PDF yang sama seperti gambar asli yang mengoptimalkan ukuran Dokumen PDF.
-
-```java
-    public static void AddReferenceOfaSingleImageMultipleTimes() throws FileNotFoundException {
-        Rectangle imageRectangle = new Rectangle(0, 0, 30, 15);
-        Document document = new Document(_dataDir + "sample.pdf");
-        document.getPages().add();
-        document.getPages().add();
-        java.io.FileInputStream imageStream = new java.io.FileInputStream(
-                new java.io.File(_dataDir + "aspose-logo.png"));
-
-        XImage image = null;
-
-        for (Page page : document.getPages()) {
-            WatermarkAnnotation annotation = new WatermarkAnnotation(page, page.getRect());
-            XForm form = annotation.getAppearance().get_Item("N");
-            form.setBBox(page.getRect());
-            String name;
-            if (image == null) {
-                name = form.getResources().getImages().add(imageStream);
-                image = form.getResources().getImages().get_Item(name);
-            } else {
-                name = form.getResources().getImages().add(image);
-            }
-            form.getContents().add(new GSave());
-            form.getContents().add(new ConcatenateMatrix(
-                    new Matrix(imageRectangle.getWidth(), 0, 0, imageRectangle.getHeight(), 0, 0)));
-            form.getContents().add(new Do(name));
-            form.getContents().add(new GRestore());
-            page.getAnnotations().add(annotation, false);
-            imageRectangle = new Rectangle(0, 0, imageRectangle.getWidth() * 1.01, imageRectangle.getHeight() * 1.01);
+        XImage xImage = page.getResources().getImages().get_Item(1);
+        boolean result = xImage.trySetAlternativeText("Alternative text for image", page);
+        if (result) {
+            System.out.println("Text has been added successfuly");
         }
-        document.save(_dataDir + "output.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Menambahkan gambar dengan kompresi Flate
 
-## Mengidentifikasi apakah gambar di dalam PDF berwarna atau hitam putih
+Gunakan contoh ini ketika Anda ingin menyematkan data gambar dengan menggunakan kompresi Flate.
 
-Berbagai jenis kompresi dapat diterapkan pada gambar untuk mengurangi ukurannya. Jenis kompresi yang diterapkan pada gambar tergantung pada ColorSpace gambar sumber yaitu jika gambar berwarna (RGB), maka terapkan kompresi JPEG2000, dan jika hitam putih, maka kompresi JBIG2/JBIG2000 harus diterapkan. Oleh karena itu, mengidentifikasi setiap jenis gambar dan menggunakan jenis kompresi yang tepat akan menciptakan output yang terbaik/teroptimasi.
-
-Sebuah file PDF dapat berisi elemen-elemen seperti Teks, Gambar, Grafik, Lampiran, Anotasi, dll. dan jika file PDF sumber berisi gambar, kita dapat menentukan ruang warna gambar dan menerapkan kompresi yang tepat untuk gambar guna mengurangi ukuran file PDF. Cuplikan kode berikut menunjukkan langkah-langkah untuk mengidentifikasi apakah gambar di dalam PDF berwarna atau hitam putih.
+1. Buat PDF baru [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka aliran gambar.
+1. Tambahkan gambar ke sumber daya halaman dengan `ImageFilterType.Flate`.
+1. Gambar gambar melalui operator halaman dan menyimpan hasilnya.
 
 ```java
-    public static void CheckColors() {
+public static void addImageToPdfWithFlateCompression(Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document();
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        Page page = document.getPages().add();
+        XImageCollection resourcesImages = page.getResources().getImages();
+        String imageId = resourcesImages.add(imageStream, ImageFilterType.Flate);
 
-        Document document = new Document(_dataDir + "test4.pdf");
-        try {
-            // iterasi melalui semua halaman file PDF
-            for (Page page : (Iterable<Page>) document.getPages()) {
-                // buat instance Image Placement Absorber
-                ImagePlacementAbsorber abs = new ImagePlacementAbsorber();
-                page.accept(abs);
-                for (ImagePlacement ia : (Iterable<ImagePlacement>) abs.getImagePlacements()) {
-                    /* ColorType */
-                    int colorType = ia.getImage().getColorType();
-                    switch (colorType) {
-                    case ColorType.Grayscale:
-                        System.out.println("Gambar Grayscale");
-                        break;
-                    case ColorType.Rgb:
-                        System.out.println("Gambar Berwarna");
-                        break;
-                    }
-                }
-            }
-        } catch (Exception ex) {
-            System.out.println("Kesalahan membaca file = " + document.getFileName());
-        }
+        page.getContents().add(new GSave());
+
+        Rectangle rectangle = new Rectangle(0, 0, 600, 600, true);
+        Matrix matrix = new Matrix(
+                rectangle.getURX() - rectangle.getLLX(),
+                0,
+                0,
+                rectangle.getURY() - rectangle.getLLY(),
+                rectangle.getLLX(),
+                rectangle.getLLY());
+
+        page.getContents().add(new ConcatenateMatrix(matrix));
+        page.getContents().add(new Do(imageId));
+        page.getContents().add(new GRestore());
+
+        document.save(outputFile.toString());
     }
 }
 ```

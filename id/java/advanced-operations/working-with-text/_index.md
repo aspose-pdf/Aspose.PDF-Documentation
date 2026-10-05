@@ -1,24 +1,24 @@
 ---
-title: Bekerja dengan Teks di PDF
-linktitle: Bekerja dengan Teks
+title: "Bekerja dengan teks dalam PDF menggunakan Java"
+linktitle: "Bekerja dengan teks"
 type: docs
 weight: 30
 url: /id/java/working-with-text/
-description: Bagian ini menjelaskan berbagai teknik penanganan teks. Pelajari cara menambah, mengganti, memutar, mencari teks menggunakan Aspose.PDF dan Java.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan, mencari, memformat, mengganti, memutar, dan memeriksa teks dalam dokumen PDF menggunakan Java.
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menambahkan, memformat, mencari, mengganti, dan memutar teks PDF dalam Java"
+Abstract: Bagian ini menjelaskan cara bekerja dengan teks dalam dokumen PDF menggunakan Aspose.PDF for Java. Pelajari cara menambahkan dan memformat teks, membuat tooltip dan tata letak teks mengambang, mencari dan mengekstrak teks, mengganti teks yang ada, dan memutar elemen teks.
 ---
+Aspose.PDF for Java menyediakan API teks untuk pembuatan dokumen, pencarian dan ekstraksi, overlay teks interaktif, kontainer tata letak, penataan gaya, penggantian, dan rotasi.
 
-Kita semua terkadang perlu menambahkan teks ke file PDF. Misalnya, ketika Anda ingin menambahkan terjemahan di bawah teks utama, menempatkan keterangan di samping gambar, atau hanya mengisi formulir aplikasi. Ini juga berguna jika semua elemen teks dapat diformat dalam gaya yang Anda inginkan. Manipulasi teks yang paling populer dalam file PDF Anda adalah: menambahkan teks ke PDF, memformat teks di dalam file PDF, mengganti dan memutar teks dalam dokumen Anda. **Aspose.PDF for Java** adalah solusi terbaik yang memiliki semua yang Anda butuhkan untuk berinteraksi dengan konten PDF.
-
-Anda dapat melakukan hal-hal berikut:
-
-- [Menambah Teks ke file PDF](/pdf/id/java/add-text-to-pdf-file/) - tambahkan teks ke PDF Anda, gunakan font dari stream dan file, tambahkan string HTML, tambahkan hyperlink, dll.
-- [PDF Tooltip](/pdf/id/java/pdf-tooltip/) - Anda dapat menambahkan tooltip ke teks yang dicari dengan menambahkan tombol tak terlihat menggunakan Java.
-- [Text Formatting inside PDF](/pdf/id/java/text-formatting-inside-pdf/) - Banyak fitur yang dapat Anda tambahkan ke dokumen Anda saat memformat teks di dalamnya. Tambahkan indentasi baris, tambahkan batas teks, tambahkan garis bawah teks, tambahkan baris baru dengan pustaka Aspose.PDF.
-- [Replace Text in PDF](/pdf/id/java/replace-text-in-pdf/) - untuk mengganti teks di semua halaman dokumen PDF. Anda pertama-tama perlu menggunakan TextFragmentAbsorber.
-- [Rotate Text Inside PDF](/pdf/id/java/rotate-text-inside-pdf/) - rotasi teks di dalam PDF menggunakan Kelas TextFragment.
-- [Search and Get Text from Pages of PDF Document](/pdf/id/java/search-and-get-text-from-pdf/) - Anda dapat menggunakan kelas TextFragmentAbsorber untuk mencari dan mendapatkan teks dari halaman.
-- [Determine Line Break](/pdf/id/java/determine-line-break/) - topik ini menjelaskan cara melacak pemutusan garis dari fragmen teks multi-baris.
+- [Menambahkan teks ke file PDF](/pdf/id/java/add-text-to-pdf-file/)
+- [Menambahkan tooltip ke teks](/pdf/id/java/pdf-tooltip/)
+- [Menggunakan FloatingBox untuk tata letak](/pdf/id/java/floating-box/)
+- [Mengganti teks dalam PDF](/pdf/id/java/replace-text-in-pdf/)
+- [Memutar teks dalam PDF](/pdf/id/java/rotate-text-inside-pdf/)
+- [Mencari dan mengekstrak teks](/pdf/id/java/search-and-get-text-from-pdf/)
+- [Format teks di dalam PDF](/pdf/id/java/text-formatting-inside-pdf/)

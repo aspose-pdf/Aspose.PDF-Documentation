@@ -1,109 +1,77 @@
 ---
-title: Pindahkan Halaman PDF
-linktitle: Pindahkan Halaman
+title: "Memindahkan halaman PDF dalam Java"
+linktitle: "Memindahkan halaman PDF"
 type: docs
-weight: 20
+weight: 100
 url: /id/java/move-pages/
-description: Cobalah memindahkan halaman ke lokasi yang diinginkan atau ke akhir file PDF menggunakan Aspose.PDF untuk Java.
-lastmod: "2021-06-05"
+description: Pelajari cara memindahkan halaman PDF dalam sebuah dokumen atau antar dokumen dalam Java.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Memindahkan halaman PDF antar dokumen dalam Java
+Abstract: Artikel ini menjelaskan cara memindahkan halaman dalam PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup pemindahan satu halaman atau beberapa halaman ke dokumen lain, serta memposisikan ulang sebuah halaman di dalam PDF yang sama.
 ---
+Aspose.PDF for Java memungkinkan Anda memindahkan halaman antar dokumen atau memposisikan ulang halaman dalam PDF yang sama.
 
-## Memindahkan Halaman dari satu Dokumen PDF ke Dokumen Lain
+## Memindahkan satu halaman ke dokumen lain
 
-Topik ini menjelaskan cara memindahkan halaman dari satu dokumen PDF ke akhir dokumen lain menggunakan Java.
-Untuk memindahkan halaman kita harus:
+Gunakan contoh ini ketika satu halaman harus dihapus dari PDF sumber dan disimpan ke dalam dokumen terpisah.
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dengan file PDF sumber.
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dengan file PDF tujuan.
-1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection).
-1. Tambahkan halaman ke dokumen tujuan.
-1. Simpan PDF keluaran menggunakan metode Save.
-1. Hapus halaman di dokumen sumber.
-1. Simpan PDF sumber menggunakan metode Save.
-
-Cuplikan kode berikut menunjukkan kepada Anda cara memindahkan satu halaman.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buat dokumen tujuan.
+1. Tambahkan halaman target ke tujuan dan hapus dari sumber.
+1. Simpan kedua dokumen.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleMovePDFPages {
-
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-  public static void MovePage() {
-    String srcFileName = _dataDir + "<masukkan nama file>";
-    String dstFileName = _dataDir + "<masukkan nama file>";
-    Document srcDocument = new Document();
-    Document dstDocument = new Document();
-    Page page = srcDocument.getPages().get_Item(2);
-    dstDocument.getPages().add(page);
-    // Simpan file output
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(2);
-    srcDocument.save(dstFileName);
-  }
-```
-
-## Memindahkan beberapa Halaman dari satu Dokumen PDF ke Dokumen Lain
-
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dengan file PDF sumber.
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dengan file PDF tujuan.
-1. Definisikan array dengan nomor halaman yang akan dipindahkan.
-
-1. Jalankan loop melalui array:
-   1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection).
-   1. Tambahkan halaman ke dokumen tujuan.
-1. Simpan output PDF menggunakan metode Save.
-1. Hapus halaman dalam dokumen sumber menggunakan array.
-1. Simpan PDF sumber menggunakan metode Save.
-
-Cuplikan kode berikut menunjukkan cara menyisipkan halaman kosong di akhir file PDF.
-
-```java
-  public static void MoveBunchPages() {
-    String srcFileName = _dataDir + "<enter file name>";
-    String dstFileName = _dataDir + "<enter file name>";
-    Document srcDocument = new Document(srcFileName);
-    Document dstDocument = new Document();
-
-    Integer[] pages = { 1, 3 };
-    for (int pageIndex : pages) {
-      Page page = srcDocument.getPages().get_Item(pageIndex);
-      dstDocument.getPages().add(page);
+public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString());
+         Document anotherDocument = new Document()) {
+        anotherDocument.getPages().add(document.getPages().get_Item(2));
+        document.getPages().delete(2);
+        document.save(sourceOutputFile.toString());
+        anotherDocument.save(outputFile.toString());
     }
-    // Simpan file output
-    dstDocument.save(srcFileName);
-    srcDocument.getPages().delete(pages);
-
-    srcDocument.save(dstFileName);
-  }
+}
 ```
 
-## Memindahkan Halaman ke lokasi baru dalam Dokumen PDF saat ini
+## Memindahkan beberapa halaman ke dokumen lain
 
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dengan file PDF sumber.
-1. Dapatkan Halaman dari koleksi [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/PageCollection).
-1. Tambahkan halaman ke lokasi baru (misalnya ke akhir).
-1. Hapus halaman di lokasi sebelumnya.
-1. Simpan PDF keluaran menggunakan metode Save.
+Gunakan contoh ini ketika beberapa halaman harus dipindahkan dari PDF sumber ke dokumen baru.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buat dokumen tujuan.
+1. Salin halaman yang dipilih ke dokumen tujuan.
+1. Hapus halaman yang dipindahkan dari sumber dan simpan kedua file.
 
 ```java
-  public static void MovePagesInOnePDF() {
-    String srcFileName = _dataDir + "<masukkan nama file>";
-    String dstFileName = _dataDir + "<masukkan nama file>";
+public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path sourceOutputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString());
+         Document dstDocument = new Document()) {
+        Integer[] pages = {1, 2};
+        for (Integer pageIndex : pages) {
+            dstDocument.getPages().add(srcDocument.getPages().get_Item(pageIndex));
+        }
+        dstDocument.save(outputFile.toString());
+        srcDocument.getPages().delete(pages);
+        srcDocument.save(sourceOutputFile.toString());
+    }
+}
+```
 
-    Document srcDocument = new Document(srcFileName);
-    Page page = srcDocument.getPages().get_Item(2);
-    srcDocument.getPages().add(page);
-    srcDocument.getPages().delete(2);
+## Memindahkan halaman dalam dokumen yang sama
 
-    // Simpan file keluaran
-    srcDocument.save(dstFileName);
-  }
+Gunakan contoh ini ketika sebuah halaman harus dipindahkan ke lokasi baru dalam PDF yang sama.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Duplikat halaman target ke posisi baru dan hapus entri halaman asli.
+1. Simpan dokumen yang telah diurutkan ulang.
+
+```java
+public static void movePageInNewLocationInSameDocument(Path inputFile, Path outputFile) {
+    try (Document srcDocument = new Document(inputFile.toString())) {
+        srcDocument.getPages().add(srcDocument.getPages().get_Item(2));
+        srcDocument.getPages().delete(2);
+        srcDocument.save(outputFile.toString());
+    }
 }
 ```

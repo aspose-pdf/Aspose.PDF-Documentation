@@ -1,21 +1,25 @@
 ---
-title: Parsing PDF documents
-linktitle: Parsing PDF documents
+title: Menganalisis dokumen PDF
+linktitle: Menganalisis dokumen PDF
 type: docs
-weight: 60
+weight: 80
 url: /id/java/parsing/
-description: Apakah Anda ingin mengekstrak data dari dokumen PDF? Temukan berbagai metode ekstraksi data PDF dengan Aspose.PDF untuk Java.
-lastmod: "2021-06-05"
+description: Temukan metode parsing PDF dan ekstraksi data di Java dengan Aspose.PDF, termasuk teks, gambar, font, data form, tabel, dan grafis vektor.
+lastmod: "2026-09-29"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Parse file PDF dengan Aspose.PDF for Java
+Abstract: Artikel ini memperkenalkan fitur parsing PDF dalam Aspose.PDF for Java. Artikel ini mencakup ekstraksi teks, gambar, font, data AcroForm, data tabel, dan grafis vektor dari dokumen PDF, dengan tautan ke panduan khusus untuk setiap tugas.
 ---
+Parsing dokumen PDF berarti mengekstrak konten terstruktur atau mentah dari file PDF yang ada sehingga dapat diperiksa, diekspor, diindeks, atau digunakan kembali dalam alur kerja lain.
 
-Parsing dokumen PDF adalah istilah yang terkait dengan ekstraksi berbagai jenis informasi dari file PDF. Bagian ini mencakup cara:
+Bagian ini mencakup cara:
 
-- [Ekstrak Teks dari PDF](/pdf/id/java/extract-text-from-pdf/). Parsing atau Ekstraksi Teks adalah operasi paling populer dengan PDF siap pakai. Anda akan belajar tentang parsing teks dari seluruh dokumen, halaman tertentu, atau wilayah tertentu di halaman.
-- [Ekstrak Gambar dari PDF](/pdf/id/java/extract-images-from-the-pdf-file/). Ekstraksi Gambar melakukan hal yang sama untuk gambar seperti operasi di atas untuk teks.
-- [Ekstrak Font dari PDF](/pdf/id/java/extract-fonts-from-pdf/). Ekstraksi Font adalah operasi spesifik dengan font di PDF.
-- [Ekstrak Data dari Tabel di PDF](/pdf/id/java/extract-data-from-table-in-pdf/).
- Learn bagaimana mengekstrak tabel dari PDF menggunakan Aspose.PDF untuk Java.
-- [Ekstrak Data dari Formulir](/pdf/id/java/extract-data-from-acroform/). Jika Anda memiliki banyak dokumen PDF dengan Formulir, kemungkinan Anda perlu mendapatkan data dari formulir tersebut. Artikel ini akan membantu memahami bagaimana mengekstrak data AcroForms dengan Aspose.PDF untuk Java.
+- [Ekstrak Teks dari PDF](/pdf/id/java/extract-text-from-pdf/) menggunakan `TextAbsorber`, `ParagraphAbsorber`, dan API terkait.
+- [Ekstrak Gambar dari PDF](/pdf/id/java/extract-images-from-the-pdf-file/) dari sumber daya halaman.
+- [Ekstrak Font dari PDF](/pdf/id/java/extract-fonts-from-pdf/) untuk memeriksa font yang digunakan dalam dokumen.
+- [Ekstrak Data dari AcroForm](/pdf/id/java/extract-data-from-acroform/) dan ekspor nilai bidang ke JSON, XML, FDF, atau XFDF.
+- [Ekstrak Data dari Tabel](/pdf/id/java/extract-data-from-table-in-pdf/) menggunakan `TableAbsorber` atau ekspor tabel yang terdeteksi ke Excel.
+- [Ekstrak Data Vektor dari PDF](/pdf/id/java/extract-vector-data-from-pdf/) dengan `GraphicsAbsorber` dan metode ekspor SVG.

@@ -1,44 +1,62 @@
 ---
-title: Ekstrak Tautan dari File PDF
-linktitle: Ekstrak Tautan
+title: "Mengekstrak tautan PDF di Java"
+linktitle: "Mengekstrak tautan"
 type: docs
 weight: 30
 url: /id/java/extract-links/
-description: Ekstrak tautan dari PDF dengan Java. Topik ini menjelaskan cara mengekstrak tautan menggunakan kelas AnnotationSelector.
-lastmod: "2021-06-05"
+description: Pelajari cara mengekstrak anotasi tautan dan hyperlink dari dokumen PDF dalam Java.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Mengekstrak anotasi tautan dan target URI dari file PDF dengan Java"
+Abstract: "Artikel ini menjelaskan cara mengekstrak anotasi tautan dari dokumen PDF menggunakan Aspose.PDF for Java. Artikel ini menunjukkan cara menghitung anotasi tautan pada sebuah halaman, membaca indeks halaman dan persegiannya, serta mengekstrak target URI dari instans GoToURIAction."
 ---
+Anda dapat memeriksa tautan PDF dengan mengiterasi anotasi halaman dan memfilter untuk `AnnotationType.Link`.
 
-## Ekstrak Tautan dari File PDF
+## Mengekstrak anotasi tautan
 
-Tautan diwakili sebagai anotasi dalam file PDF, jadi untuk mengekstrak tautan, ekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
+Gunakan contoh ini ketika Anda memerlukan lokasi dan informasi halaman untuk anotasi tautan pada sebuah halaman.
 
-1. Buat objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Dapatkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) yang ingin Anda ekstrak tautannya.
-1. Gunakan kelas [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) untuk mengekstrak semua objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/LinkAnnotation) dari halaman yang ditentukan.
-
-1. Berikan objek [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector) ke metode Accept dari objek Page.
-1. Dapatkan semua anotasi tautan yang dipilih ke dalam objek IList menggunakan metode [getSelected](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationSelector#getSelected--) dari objek [AnnotationSelector](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationselector).
-
-Cuplikan kode berikut menunjukkan cara mengekstrak tautan dari file PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Iterasikan melalui anotasi halaman dan saring untuk anotasi tautan.
+1. Baca indeks halaman dan persegi panjang untuk setiap tautan yang cocok.
 
 ```java
-    public static void ExtractLinksFromThePDFFile() {        
-        // Memuat file PDF
-        Document document = new Document(_dataDir + "UpdateLinks.pdf");
-        Page page = document.getPages().get_Item(1);
-           
-        AnnotationSelector selector = new AnnotationSelector(new LinkAnnotation(page, Rectangle.getTrivial()));
-        page.accept(selector);
-        java.util.List<Annotation> list = selector.getSelected();
-        for(Annotation annot : list)
-        {
-            System.out.println("Anotasi terletak: " + annot.getRect());
+public static void extractLinkAnnotation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                System.out.println("Page: " + linkAnnotation.getPageIndex()
+                        + ", location: " + linkAnnotation.getRect());
+            }
         }
-                
-        // Simpan dokumen dengan tautan yang diperbarui
-        //document.save(_dataDir + "ExtractLinks_out.pdf");
     }
+}
+```
+
+## Mengekstrak tujuan hyperlink
+
+Gunakan contoh ini ketika Anda perlu membaca URI target dari anotasi tautan web.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cari objek [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) yang tindakannya adalah [`GoToURIAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Cetak indeks halaman dan target URI untuk setiap hyperlink.
+
+```java
+public static void extractHyperlinks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Link && annotation instanceof LinkAnnotation) {
+                LinkAnnotation linkAnnotation = (LinkAnnotation) annotation;
+                if (linkAnnotation.getAction() instanceof GoToURIAction) {
+                    GoToURIAction action = (GoToURIAction) linkAnnotation.getAction();
+                    System.out.println("Page " + linkAnnotation.getPageIndex() + ", URI:" + action.getURI());
+                }
+            }
+        }
+    }
+}
 ```

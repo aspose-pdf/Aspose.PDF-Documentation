@@ -1,166 +1,115 @@
 ---
-title: Menggunakan Tooltip
+title: "Menambahkan tooltip ke teks PDF di Java"
 linktitle: Tooltip PDF
 type: docs
 weight: 20
 url: /id/java/pdf-tooltip/
-description: Pelajari cara menambahkan tooltip ke fragmen teks dalam PDF menggunakan Java dan Aspose.PDF.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan tooltip ke fragmen teks dalam dokumen PDF menggunakan Java.
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menambahkan tooltip interaktif ke fragmen teks PDF menggunakan Java"
+Abstract: Artikel ini menunjukkan cara menambahkan bantuan interaktif ke teks PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup cara melampirkan teks tooltip ke button fields tak terlihat yang ditempatkan di atas fragmen teks yang cocok dan membuat bidang teks tersembunyi yang muncul ketika pointer masuk ke trigger area.
 ---
+Aspose.PDF for Java memungkinkan Anda menambahkan bantuan interaktif dengan menempatkan bidang Form di atas fragmen teks.
 
-## Tambahkan Tooltip ke Teks yang Dicari dengan Menambahkan Tombol Tak Terlihat
+## Menambahkan tooltip ke teks yang cocok
 
-Seringkali diperlukan untuk menambahkan beberapa detail untuk frasa atau kata tertentu sebagai tooltip dalam dokumen PDF sehingga dapat muncul ketika pengguna mengarahkan kursor mouse ke teks. Aspose.PDF for Java menyediakan fitur ini untuk membuat tooltips dengan menambahkan tombol tak terlihat di atas teks yang dicari. Cuplikan kode berikut akan menunjukkan cara mencapai fungsi ini:
+Gunakan contoh ini ketika teks yang ada dalam PDF harus menampilkan tooltip saat dihover.
+
+1. Buat PDF contoh dan buka kembali untuk penyuntingan.
+1. Cari fragmen teks target dengan `TextFragmentAbsorber`.
+1. Tempatkan `ButtonField` menambahkan overlay pada teks yang cocok dan menetapkan teks tooltip.
+1. Simpan dokumen yang diperbarui.
 
 ```java
-package com.aspose.pdf.examples;
+public static void addToolTipToSearchedText(Path outputFile) {
+        Document document = new Document();
+        document.getPages().add().getParagraphs()
+                .add(new TextFragment("Move the mouse cursor here to display a tooltip"));
+        document.getPages().get_Item(1).getParagraphs()
+                .add(new TextFragment("Move the mouse cursor here to display a very long tooltip"));
+        document.save(outputFile.toString());
+        document.close();
 
-import com.aspose.pdf.ButtonField;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.TextFragment;
-import com.aspose.pdf.TextFragmentAbsorber;
-import com.aspose.pdf.TextFragmentCollection;
-
-public class ExampleToolTip {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void AddToolTip() {
-        String outputFile = _dataDir + "Tooltip_out.pdf";
-
-        // Buat dokumen contoh dengan teks
-        Document doc = new Document();
-        doc.getPages().add().getParagraphs().add(new TextFragment("Arahkan kursor mouse di sini untuk menampilkan tooltip"));
-        doc.getPages().get_Item(1).getParagraphs().add(new TextFragment("Arahkan kursor mouse di sini untuk menampilkan tooltip yang sangat panjang"));
-        doc.save(outputFile);
-
-        // Buka dokumen dengan teks
-        Document document = new Document(outputFile);
-        // Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-        TextFragmentAbsorber absorber = new TextFragmentAbsorber("Arahkan kursor mouse di sini untuk menampilkan tooltip");
-        // Terima absorber untuk halaman dokumen
+        document = new Document(outputFile.toString());
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                "Move the mouse cursor here to display a tooltip");
         document.getPages().accept(absorber);
-        // Dapatkan fragmen teks yang diekstraksi
-        TextFragmentCollection textFragments = absorber.getTextFragments();
 
-        // Loop melalui fragmen
-        for(TextFragment fragment : textFragments)
-        {
-            // Buat tombol tak terlihat pada posisi fragmen teks
+        for (TextFragment fragment : absorber.getTextFragments()) {
             ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
-            // Nilai AlternateName akan ditampilkan sebagai tooltip oleh aplikasi viewer
-            field.setAlternateName ("Tooltip untuk teks.");
-            // Tambahkan field tombol ke dokumen
+            field.setAlternateName("Tooltip for text.");
             document.getForm().add(field);
         }
 
-        // Berikutnya akan menjadi contoh tooltip yang sangat panjang
-        absorber = new TextFragmentAbsorber("Arahkan kursor mouse di sini untuk menampilkan tooltip yang sangat panjang");
+        absorber = new TextFragmentAbsorber("Move the mouse cursor here to display a very long tooltip");
         document.getPages().accept(absorber);
-        textFragments = absorber.getTextFragments();
 
-        for(TextFragment fragment : textFragments)
-        {
+        for (TextFragment fragment : absorber.getTextFragments()) {
             ButtonField field = new ButtonField(fragment.getPage(), fragment.getRectangle());
-            // Setel teks yang sangat panjang
-            field.setAlternateName ("Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                                    " sed do eiusmod tempor incididunt ut labore et dolore magna" +
-                                    " aliqua. Ut enim ad minim veniam, quis nostrud exercitation" +
-                                    " ullamco laboris nisi ut aliquip ex ea commodo consequat." +
-                                    " Duis aute irure dolor in reprehenderit in voluptate velit" +
-                                    " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint" +
-                                    " occaecat cupidatat non proident, sunt in culpa qui officia" +
-                                    " deserunt mollit anim id est laborum.");
+            field.setAlternateName("Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
+                    + " sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    + " aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+                    + " ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                    + " Duis aute irure dolor in reprehenderit in voluptate velit"
+                    + " esse cillum dolore eu fugiat nulla pariatur. Excepteur sint"
+                    + " occaecat cupidatat non proident, sunt in culpa qui officia"
+                    + " deserunt mollit anim id est laborum.");
             document.getForm().add(field);
         }
 
-        // Simpan dokumen
-        document.save(outputFile);
+        document.save(outputFile.toString());
+        document.close();
     }
-}
 ```
 
+## Menampilkan blok teks mengambang saat mengarahkan kursor
 
-{{% alert color="primary" %}}
+Gunakan contoh ini ketika mengarahkan kursor ke area teks akan menampilkan bidang teks tersembunyi.
 
-Mengenai panjang tooltip, teks tooltip terkandung dalam dokumen PDF sebagai tipe string PDF, di luar aliran konten. Tidak ada batasan efektif pada string tersebut dalam file PDF (Lihat PDF Reference Appendix C.). Namun, pembaca yang sesuai (misalnya Adobe Acrobat) yang berjalan pada prosesor tertentu dan dalam lingkungan operasi tertentu memang memiliki batasan tersebut. Silakan merujuk ke dokumentasi aplikasi pembaca PDF Anda.
-
-{{% /alert %}}
-
-## Membuat Blok Teks Tersembunyi dan Menampilkannya saat Mouse Ditarik
-
-Dalam Aspose.PDF, fitur untuk menyembunyikan tindakan diimplementasikan di mana dimungkinkan untuk menampilkan/menyembunyikan bidang kotak teks (atau jenis anotasi lainnya) saat mouse memasuki/keluar dari beberapa tombol tak terlihat. Untuk tujuan ini, Aspose.Pdf.Annotations.HideAction Class digunakan untuk menetapkan tindakan sembunyi/tampilkan pada blok teks. Silakan gunakan potongan kode berikut untuk Menampilkan/Menyembunyikan Blok Teks saat Mouse Memasuki/Keluar.
-
-Harap juga diperhatikan bahwa tindakan PDF dalam dokumen bekerja dengan baik pada pembaca yang sesuai (misalnya.
- Adobe Reader) tetapi tidak ada jaminan untuk pembaca PDF lainnya (misalnya, plugin peramban web). Kami telah melakukan investigasi singkat dan menemukan:
-
-- Semua implementasi dari aksi sembunyi dalam dokumen PDF berfungsi dengan baik di Internet Explorer v.11.0.
-- Semua implementasi dari aksi sembunyi juga berfungsi di Opera v.12.14, tetapi kami melihat ada beberapa penundaan respons pada pembukaan pertama dokumen.
-- Hanya implementasi yang menggunakan konstruktor HideAction yang menerima nama bidang yang berfungsi jika Google Chrome v.61.0 membuka dokumen; Silakan gunakan konstruktor yang sesuai jika browsing di Google Chrome signifikan:
-
->buttonField.Actions.OnEnter = new HideAction(floatingField.FullName, false);
->buttonField.Actions.OnExit = new HideAction(floatingField.FullName);
+1. Buat PDF contoh dan buka kembali untuk penyuntingan.
+1. Temukan fragmen teks pemicu dengan `TextFragmentAbsorber`.
+1. Buat yang tersembunyi `TextBoxField` dan satu `ButtonField` dengan tindakan masuk dan keluar.
+1. Simpan PDF akhir.
 
 ```java
-    public static void name() {
-        String outputFile = _dataDir + "TextBlock_HideShow_MouseOverOut_out.pdf";
+public static void createHiddenTextBlock(Path outputFile) {
+    Document document = new Document();
+    document.getPages().add().getParagraphs()
+            .add(new TextFragment("Move the mouse cursor here to display floating text"));
+    document.save(outputFile.toString());
+    document.close();
 
-        // Buat dokumen contoh dengan teks
-        Document doc = new Document();
-        doc.getPages().add().getParagraphs().add(new TextFragment("Pindahkan kursor mouse di sini untuk menampilkan teks melayang"));
-        doc.save(outputFile);
+    document = new Document(outputFile.toString());
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+            "Move the mouse cursor here to display floating text");
+    document.getPages().accept(absorber);
+    TextFragment fragment = absorber.getTextFragments().get_Item(1);
 
-        // Buka dokumen dengan teks
-        Document document = new Document(outputFile);
-        // Buat objek TextAbsorber untuk menemukan semua frasa yang cocok dengan ekspresi reguler
-        TextFragmentAbsorber absorber = new TextFragmentAbsorber("Pindahkan kursor mouse di sini untuk menampilkan teks melayang");
-        // Terima absorber untuk halaman dokumen
-        document.getPages().accept(absorber);
-        // Dapatkan fragmen teks pertama yang diekstraksi
-        TextFragmentCollection textFragments = absorber.getTextFragments();
-        TextFragment fragment = textFragments.get_Item(1);
+    TextBoxField floatingField = new TextBoxField(
+            fragment.getPage(), new Rectangle(100.0, 700.0, 220.0, 740.0, false));
+    floatingField.setValue("This is the \"floating text field\".");
+    floatingField.setReadOnly(true);
+    floatingField.setFlags(floatingField.getFlags() | AnnotationFlags.Hidden);
+    floatingField.setPartialName("FloatingField_1");
+    floatingField.setDefaultAppearance(new DefaultAppearance("Helv", 10, java.awt.Color.BLUE));
+    floatingField.getCharacteristics().setBackground(java.awt.Color.CYAN);
+    floatingField.getCharacteristics().setBorder(java.awt.Color.BLUE);
+    floatingField.setBorder(new Border(floatingField));
+    floatingField.getBorder().setWidth(1);
+    floatingField.setMultiline(true);
 
-        // Buat bidang teks tersembunyi untuk teks melayang di persegi panjang yang ditentukan dari halaman
-        TextBoxField floatingField = new TextBoxField(fragment.getPage(), new Rectangle(100, 700, 220, 740));
-        // Tetapkan teks untuk ditampilkan sebagai nilai bidang
-        floatingField.setValue("Ini adalah \"bidang teks melayang\".");
-        // Kami merekomendasikan untuk membuat bidang 'readonly' untuk skenario ini
-        floatingField.setReadOnly(true);
+    document.getForm().add(floatingField);
 
-        // Tetapkan bendera 'hidden' untuk membuat bidang tidak terlihat saat dokumen dibuka
-        floatingField.setFlags(floatingField.getFlags() | AnnotationFlags.Hidden);
+    ButtonField buttonField = new ButtonField(fragment.getPage(), fragment.getRectangle());
+    buttonField.getAnnotationActions().setOnEnter(new HideAction(floatingField, false));
+    buttonField.getAnnotationActions().setOnExit(new HideAction(floatingField));
 
-        // Menetapkan nama bidang yang unik tidak perlu tetapi diperbolehkan
-        floatingField.setPartialName("FloatingField_1");
-
-        // Menetapkan karakteristik penampilan bidang tidak perlu tetapi membuatnya lebih baik
-        DefaultAppearance da = new DefaultAppearance("Helvetica", 16, java.awt.Color.RED);
-        floatingField.setDefaultAppearance(da);
-        //new DefaultAppearance("Helv", 10, Color.getBlue()
-        floatingField.getCharacteristics().setBackground(Color.getLightBlue());
-        floatingField.getCharacteristics().setBorder(Color.getDarkBlue());
-        floatingField.setBorder(new Border(floatingField));
-        floatingField.getBorder().setWidth(1);
-        floatingField.setMultiline(true);
-
-        // Tambahkan bidang teks ke dokumen
-        document.getForm().add(floatingField);
-
-        // Buat tombol tak terlihat di posisi fragmen teks
-        Field buttonField = new ButtonField(fragment.getPage(), fragment.getRectangle());
-        // Buat aksi sembunyi baru untuk bidang yang ditentukan (anotasi) dan bendera ketidaknampakan.
-        // (Anda juga dapat merujuk ke bidang melayang dengan nama jika Anda menentukannya di atas.)
-        // Tambahkan aksi saat mouse masuk/keluar di bidang tombol tak terlihat
-        buttonField.getActions().setOnEnter(new HideAction(floatingField, false));
-        buttonField.getActions().setOnExit(new HideAction(floatingField));
-
-        // Tambahkan bidang tombol ke dokumen
-        document.getForm().add(buttonField);
-
-        // Simpan dokumen
-        document.save(outputFile);
-    }
+    document.getForm().add(buttonField);
+    document.save(outputFile.toString());
+    document.close();
+}
 ```
