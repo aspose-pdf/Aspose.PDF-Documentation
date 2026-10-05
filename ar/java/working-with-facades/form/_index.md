@@ -1,15 +1,25 @@
 ---
-title: Form Class
+title: فئة Form
+linktitle: فئة Form
 type: docs
 weight: 140
 url: /ar/java/form-class/
-description: يشرح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام Form Class.
-lastmod: "2021-06-05"
+description: تعرّف على كيفية استخدام واجهة Form في Java لملء حقول PDF، وتصدير واستيراد بيانات النموذج، وتسطير الحقول، وفحص قيم الحقول، وإضافة مظهر الصورة إلى حقول الأزرار.
+lastmod: "2026-10-01"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: العمل مع بيانات نماذج PDF وحقول AcroForm في Java باستخدام فئة Form
+Abstract: توضح هذه الفقرة كيفية استخدام واجهة Form في Aspose.PDF for Java للتعامل مع نماذج PDF التفاعلية. تغطي أمثلة Java ملء الحقول النصية، وخانات الاختيار، وأزرار الراديو، وصناديق القوائم، وحقول الباركود؛ وتصدير واستيراد بيانات XML وFDF وXFDF؛ وتسطير الحقول؛ وإعادة تسمية الحقول؛ وفحص قيم الحقول؛ وإضافة مظهر الصورة إلى حقول الأزرار.
 ---
+الجافا `FormExamples` تُظهر الفئة سير عمل معالجة النماذج الرئيسية التي تعرضها Facades API.
 
-- [تسطيح جميع الحقول في ملف PDF موجود (واجهات)](/pdf/ar/java/flatten-all-fields/)
-- [تصدير البيانات إلى XML، إلى FDF من ملف PDF (واجهات)](/pdf/ar/java/export-data-into-a-pdf-file-facades/)
-- [استيراد البيانات إلى ملف PDF - واجهات](/pdf/ar/java/import-data-into-a-pdf-file-facades/)
+استخدم هذه الفقرة لتتعلم كيفية:
+
+- ملء حقول النص، ومربعات الاختيار، وأزرار الراديو، ومربعات القائمة، وحقول الباركود
+- تصدير بيانات النموذج إلى XML، FDF، و XFDF
+- استيراد بيانات النموذج من XML، FDF، و XFDF
+- تسوية جميع حقول النموذج وإعادة تسمية الحقول الحالية
+- فحص أسماء الحقول والقيم الحالية
+- ملء حقل زر الصورة من تدفق الإدخال

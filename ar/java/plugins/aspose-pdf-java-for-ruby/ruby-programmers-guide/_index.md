@@ -1,14 +1,15 @@
 ---
-title: دليل مبرمجي روبي
+title: دليل مبرمجي Ruby
+linktitle: دليل مبرمجي Ruby
 type: docs
 weight: 20
 url: /ar/java/ruby-programmers-guide/
-lastmod: "2021-06-05"
+description: دليل شامل لمطوري Ruby لاستخدام Aspose.PDF لإنشاء وتحرير وإدارة مستندات PDF.
+lastmod: "2026-10-05"
 ---
-
 يتضمن هذا القسم المواضيع التالية:
 
-- [العمل مع كائن الوثيقة في روبي](/pdf/ar/java/working-with-document-object-in-ruby/)
-- [العمل مع الصفحات في روبي](/pdf/ar/java/working-with-pages-in-ruby/)
-- [العمل مع النصوص في روبي](/pdf/ar/java/working-with-text-in-ruby/)
-- [العمل مع تحويل الوثائق في روبي](/pdf/ar/java/working-with-document-conversion-in-ruby/)
+- [التعامل مع كائن المستند في Ruby](/pdf/ar/java/working-with-document-object-in-ruby/)
+- [التعامل مع الصفحات في Ruby](/pdf/ar/java/working-with-pages-in-ruby/)
+- [التعامل مع النص في Ruby](/pdf/ar/java/working-with-text-in-ruby/)
+- [العمل مع تحويل المستندات في Ruby](/pdf/ar/java/working-with-document-conversion-in-ruby/)

@@ -1,12 +1,13 @@
 ---
-title: ضبط انتهاء صلاحية ملف PDF في بايثون
+title: تعيين انتهاء صلاحية PDF في Python
+linktitle: تعيين انتهاء صلاحية PDF في Python
 type: docs
 weight: 80
 url: /ar/java/set-pdf-expiration-in-python/
-lastmod: "2021-06-05"
+description: تعلم كيفية تعيين تاريخ انتهاء صلاحية لملف PDF في Python باستخدام Aspose.PDF للوصول إلى المستندات الحساسة للوقت.
+lastmod: "2026-10-05"
 ---
-
-لضبط انتهاء صلاحية مستند PDF باستخدام **Aspose.PDF Java for Python**، قم ببساطة باستدعاء فئة **SetExpiration**.
+لتعيين انتهاء صلاحية of  Pdf document باستخدام **Aspose.PDF Java for Python**، ببساطة استدعِ الفئة **SetExpiration**.
 
 ```python
 
@@ -20,14 +21,14 @@ javascript = self.JavascriptAction(
 
 doc.setOpenAction(javascript);
 
-# احفظ المستند المحدث بالمعلومات الجديدة
+# save update document with new information
 doc.save(self.dataDir + "set_expiration.pdf");
 
-print "تحديث معلومات المستند، يرجى التحقق من الملف الناتج."
+print "Update document information, please check output file."
 ```
 
-**تحميل الكود قيد التشغيل**
+**تنزيل الشفرة القابلة للتشغيل**
 
-قم بتحميل **تعيين انتهاء صلاحية PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تحميل **تعيين انتهاء صلاحية PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetExpiration/SetExpiration.py)

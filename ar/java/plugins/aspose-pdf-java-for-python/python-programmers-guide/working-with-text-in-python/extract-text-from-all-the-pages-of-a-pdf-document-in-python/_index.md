@@ -1,19 +1,19 @@
 ---
-title: استخراج النص من جميع صفحات مستند PDF في بايثون
+title: استخراج النص من جميع صفحات مستند PDF باستخدام Python
+linktitle: استخراج النص من جميع صفحات مستند PDF باستخدام Python
 type: docs
 weight: 30
 url: /ar/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
-lastmod: "2021-06-05"
-description: يشرح كيفية استخراج النص من صفحات PDF في بايثون باستخدام API تنسيق ملف PDF.
+lastmod: "2026-10-05"
+description: يشرح كيفية استخراج النص من صفحات PDF في Python باستخدام واجهة برمجة تطبيقات تنسيق ملف PDF.
 ---
+## استخراج النص من PDF باستخدام Python
 
-## استخراج النص من PDF باستخدام بايثون
-
-لاستخراج النص من جميع صفحات مستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة قم باستدعاء وحدة **ExtractTextFromAllPages**.
+لاستخراج TextrFrom جميع صفحات مستند Pdf باستخدام **Aspose.PDF Java for Python**، ببساطة استدعِ وحدة **ExtractTextFromAllPages**.
 
 ```python
 
-# فتح المستند الهدف
+# Open the target document
 pdf=self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
@@ -27,12 +27,12 @@ writer=self.FileWriter(self.File(self.dataDir + 'extracted_text.out.txt'))
 writer.write(extracted_text)
 writer.close()
 
-print "تم استخراج النص بنجاح. تحقق من ملف الإخراج."
+print "Text extracted successfully. Check output file."
 
 ```
 
-**تحميل الكود القابل للتنفيذ**
+**تنزيل الشفرة القابلة للتشغيل**
 
-قم بتحميل **استخراج النص من جميع الصفحات (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تحميل\u0412\u00A0**استخراج النص من جميع الصفحات (Aspose.PDF)**\u0412\u00A0من\u0412\u00A0أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/ExtractTextFromAllPages/ExtractTextFromAllPages.py)

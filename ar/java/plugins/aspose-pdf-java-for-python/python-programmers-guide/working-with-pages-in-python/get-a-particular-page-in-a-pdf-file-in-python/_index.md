@@ -1,36 +1,37 @@
 ---
-title: الحصول على صفحة معينة في ملف PDF باستخدام لغة بايثون
+title: احصل على صفحة معينة في ملف PDF في Python
+linktitle: احصل على صفحة معينة في ملف PDF في Python
 type: docs
 weight: 30
 url: /ar/java/get-a-particular-page-in-a-pdf-file-in-python/
-lastmod: "2021-06-05"
+description: استكشف كيفية استخراج صفحة معينة من ملف PDF في Python باستخدام Aspose.PDF لمعالجة المستندات التفصيلية.
+lastmod: "2026-10-05"
 ---
-
-للحصول على صفحة معينة في مستند PDF باستخدام **Aspose.PDF Java for Python**، ببساطة استدع **GetPage** class.
+للحصول على صفحة معينة في مستند PDF باستخدام **Aspose.PDF Java for Python**، ما عليك سوى استدعاء الفئة **GetPage**.
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# الحصول على الصفحة في فهرس معين من مجموعة الصفحات
+# get the page at particular index of Page Collection
 pdf_page = pdf.getPages().get_Item(1)
 
-# إنشاء كائن مستند جديد
+# create a new Document object
 new_document = self.Document()
 
-# إضافة الصفحة إلى مجموعة الصفحات في كائن المستند الجديد
+# add page to pages collection of new document object
 new_document.getPages().add(pdf_page)
 
-# حفظ ملف PDF الذي تم إنشاؤه حديثًا
+# save the newly generated PDF file
 new_document.save(self.dataDir + "output.pdf")
 
-print "تمت العملية بنجاح!
+print "Process completed successfully!
 
 ```
 
-**تنزيل الكود القابل للتشغيل**
+**تنزيل الشفرة القابلة للتشغيل**
 
-قم بتنزيل **Get Page (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تحميل **Get Page (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose.PDF-for-Java_for_Python/test/WorkingWithPages/GetPage/GetPage.py)

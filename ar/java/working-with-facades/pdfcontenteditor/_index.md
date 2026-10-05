@@ -1,20 +1,25 @@
 ---
 title: فئة PdfContentEditor
+linktitle: فئة PdfContentEditor
 type: docs
 weight: 30
 url: /ar/java/pdfcontenteditor-class/
-description: يشرح هذا القسم كيفية العمل مع Aspose.PDF Facades باستخدام فئة PdfContentEditor.
-lastmod: "2021-06-05"
+description: تعرف على كيفية استخدام فئة PdfContentEditor في Java لتعديل محتوى PDF، وإدارة التعليقات التوضيحية والمرفقات، والعمل مع إجراءات المستند، والصور، والنص، والوسائط المتعددة، والطوابع، وتفضيلات عارض المستند.
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: تحرير محتوى PDF والعناصر التفاعلية في Java باستخدام PdfContentEditor
+Abstract: يوضح هذا القسم كيفية استخدام فئة PdfContentEditor في Aspose.PDF for Java لعمليات سير العمل على مستوى المحتوى في PDF. تغطي مجموعة أمثلة Java الحالية التعليقات التوضيحية، والمرفقات، وإجراءات المستند، ورسم العلامات، واستبدال الصور، والوسائط المتعددة، والطوابع، واستبدال النص، وتفضيلات عارض المستند.
 ---
+الجافا الفئة `PdfContentEditorExamples` توضح تدفقات تحرير المحتوى الرئيسية التي تُعرضها واجهة برمجة تطبيقات Facades.
 
-- [إضافة إجراءات جافا سكريبت إلى ملف PDF موجود](/pdf/ar/java/adding-javascript-actions/)
-- [إضافة إجراءات الإشارات المرجعية إلى ملف PDF موجود](/pdf/ar/java/adding-bookmark-actions/)
-- [العمل مع الصور (واجهات)](/pdf/ar/java/working-with-image/)
-- [استبدال النص (واجهات)](/pdf/ar/java/replace-text/)
-- [العمل مع المرفقات](/pdf/ar/java/working-with-attachments/)
-- [تعيين تفضيل العارض لملف PDF موجود](/pdf/ar/java/set-viewer-preference-of-an-existing-pdf-file/)
-- [الحصول على تفضيل العارض لملف PDF موجود](/pdf/ar/java/get-viewer-preference-of-an-existing-pdf-file/)
-- [إضافة تعليقات توضيحية إلى ملف PDF موجود](/pdf/ar/java/adding-annotations-to-existing-pdf-file/)
+استخدم هذا القسم لتعلم كيفية:
+
+- إضافة تعليقات توضيحية للنص، الخط، المضلع، الفيديو، والختم المطاطي
+- إضافة أو إزالة مرفقات المستند
+- ربط ملف PDF من تدفق وحفظ النتيجة
+- إضافة أو إزالة إجراءات فتح المستند
+- استبدال النص والصور
+- الحصول على وتغيير تفضيلات المشاهد

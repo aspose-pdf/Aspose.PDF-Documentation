@@ -1,28 +1,28 @@
 ---
-title: تعيين معلومات ملف PDF في روبي
+title: تعيين معلومات ملف PDF في Ruby
+linktitle: تعيين معلومات ملف PDF في Ruby
 type: docs
 weight: 120
 url: /ar/java/set-pdf-file-information-in-ruby/
-lastmod: "2021-06-05"
+description: تعريف وتحديث بيانات تعريف PDF برمجياً مثل العنوان، المؤلف، والكلمات المفتاحية باستخدام Ruby.
+lastmod: "2026-10-05"
 ---
-
 ## Aspose.PDF - تعيين معلومات ملف PDF
 
-لتحديث معلومات مستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ببساطة استدعِ وحدة **SetPdfFileInfo**.
+لتحديث معلومات مستند Pdf باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء الوحدة **SetPdfFileInfo**.
 
-كود روبي
+كود Ruby
 
 ```java
-
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# فتح مستند pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# الحصول على معلومات المستند
+# Get document information
 
 doc_info = doc.getInfo()
 
@@ -38,16 +38,15 @@ doc_info.setSubject("PDF Information")
 
 doc_info.setTitle("Setting PDF Document Information")
 
-# حفظ المستند المحدث بالمعلومات الجديدة
+# save update document with new information
 
 doc.save(data_dir + "Updated_Information.pdf")
 
-puts "تم تحديث معلومات المستند، يرجى التحقق من ملف الإخراج."
+puts "Update document information, please check output file."
 ```
 
+## تنزيل الكود الجاري
 
-## تحميل الكود التشغيلي
-
-قم بتنزيل **تعيين معلومات ملف PDF (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تحميل **تعيين معلومات ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

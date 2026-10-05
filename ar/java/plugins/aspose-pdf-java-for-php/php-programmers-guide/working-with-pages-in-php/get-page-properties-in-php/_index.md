@@ -1,29 +1,30 @@
 ---
-title: Get Page Properties in PHP
+title: الحصول على خصائص الصفحة في PHP
+linktitle: الحصول على خصائص الصفحة في PHP
 type: docs
 weight: 50
 url: /ar/java/get-page-properties-in-php/
-lastmod: "2021-06-05"
+description: استكشف كيفية استرجاع خصائص صفحات محددة في مستند PDF باستخدام PHP و Aspose.PDF للتحكم التفصيلي.
+lastmod: "2026-10-05"
 ---
-
 ## Aspose.PDF - الحصول على خصائص الصفحة
 
-للحصول على خصائص الصفحة لوثيقة Pdf باستخدام **Aspose.PDF Java for PHP**، ببساطة قم باستدعاء فئة **GetPageProperties**.
+للحصول على خصائص مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء الفئة **GetPageProperties**.
 
 كود PHP
 
 ```php
 
-# إنشاء وثيقة PDF
+# Create PDF document
 $pdf_document = new Document($dataDir . 'input1.pdf');
 
-# الحصول على مجموعة الصفحات
+# get page collection
 $page_collection = $pdf_document->getPages();
 
-# الحصول على صفحة معينة
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# الحصول على خصائص الصفحة
+# get page properties
 print "ArtBox : Height = " . $pdf_page->getArtBox()->getHeight() . ", Width = " . $pdf_page->getArtBox()->getWidth() . ", LLX = " . $pdf_page->getArtBox()->getLLX() . ", LLY = " . $pdf_page->getArtBox()->getLLY() . ", URX = " . $pdf_page->getArtBox()->getURX() . ", URY = " . $pdf_page->getArtBox()->getURY() . PHP_EOL ;
 
 print "BleedBox : Height = " . $pdf_page->getBleedBox()->getHeight() . ", Width = " . $pdf_page->getBleedBox()->getWidth() . ", LLX = " . $pdf_page->getBleedBox()->getLLX() . ", LLY = " . $pdf_page->getBleedBox()->getLLY() . ", URX = " . $pdf_page->getBleedBox()->getURX() . ", URY = " . $pdf_page->getBleedBox()->getURY() . PHP_EOL ;
@@ -40,9 +41,8 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
+**تنزيل الشفرة القابلة للتشغيل**
 
-**تحميل الكود الجاري**
-
-قم بتنزيل **الحصول على خصائص الصفحة (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+Download **Get Page Properties (Aspose.PDF)** من أي من المواقع الاجتماعية للبرمجة المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

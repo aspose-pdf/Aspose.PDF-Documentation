@@ -1,67 +1,68 @@
 ---
-title: تثبيت واستخدام Aspose.Pdf Java Maven لـ Eclipse
+title: تثبيت واستخدام Aspose.PDF Java Maven لـ Eclipse
+linktitle: تثبيت واستخدام Aspose.PDF Java Maven لـ Eclipse
 type: docs
 weight: 10
 url: /ar/java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
-lastmod: "2021-06-05"
+description: تعرّف على كيفية تثبيت وتكوين Aspose.PDF for Java باستخدام Maven في Eclipse، مما يتيح معالجة PDF بسلاسة في مشاريع Java.
+lastmod: "2026-10-05"
 ---
+## تثبيت
 
-## التثبيت
-
-يمكن تثبيت مكون **Aspose.PDF Java (Maven) لـ Eclipse** بسهولة من علامة تبويب **Plugin** المتاحة في مربع حوار المكونات الإضافية.
+**Aspose.PDF Java (Maven) for Eclipse** يمكن تثبيت الملحق بسهولة من تبويب **Plugin** المتاح في مربع حوار الملحق.
 
 - لفتحه، اختر **Plugins** من قائمة **Tools** في Eclipse.
 
 ![todo:image_alt_text](https://i.imgur.com/PCMRMUT.png)
 
-- يضيف هذا **مشروع Aspose.PDF Maven** في معالج المشروع الجديد و**مثال كود Aspose.PDF** في معالج الملف الجديد في بيئة تطوير Eclipse.
+- يضيف هذا **Aspose.PDF Maven Project** في معالج New Project و**Aspose.PDF Code Example** في معالج New File لبيئة Eclipse IDE.
 
-## الاستخدام
+## استخدام
 
-### مشروع Aspose.PDF Maven (معالج)
+### Aspose.PDF Maven Project (معالج)
 
-لإنشاء **مشروع Maven** بواسطة المعالج لاستخدام [Aspose.PDF لـ Java API](http://www.aspose.com/java/pdf-component.aspx):
+لإنشاء **Maven Project** عبر المعالج لاستخدام [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx):
 
-1. اختر **مشروع جديد**.
-1. اختر **مشروع Aspose.PDF Maven** في فئة **Maven**.
-1. انقر على **التالي**.
+1. حدّد **New Project**.
+1. حدّد **Aspose.PDF Maven Project** في فئة **Maven**.
+1. انقر على **Next**.
 
 ![todo:image_alt_text](https://i.imgur.com/6iywqND.png)
 
-1. قدم **اسم المشروع، الموقع، GroupId، ArtifactId** و **الإصدار** لمشروع Maven الخاص بك وانقر على **إنهاء.**
+1. قدّم **Project Name, Location, GroupId, ArtifactId** و **Version** لمشروع Maven الخاص بك وانقر على **Finish**.
 
 ![todo:image_alt_text](https://i.imgur.com/zURjIn1.png)
 
-1. سيقوم هذا باسترجاع أحدث [اعتماد Maven](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/) لبرنامج [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) من [مستودع Aspose Cloud Maven](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) وتكوينه في **pom.xml**. إذا قمت باختيار **أيضاً تحميل أمثلة التعليمات البرمجية،** فسيبدأ تحميل **أمثلة التعليمات البرمجية** أيضاً من [مستودع أمثلة Aspose.PDF for Java API.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
-1. سيتم إنشاء مشروع **Maven** التالي على **Eclipse IDE** الخاص بك عند اكتمال المعالج:
+1. سيؤدي ذلك إلى استرجاع [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) الأحدث [اعتماد Maven](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/) المرجع من [مستودع Maven السحابي Aspose](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) وقم بتكوينها في **pom.xml**. إذا قمت باختيار **Also Download Code Examples,** سيبدأ تنزيل **Code Examples** أيضًا من [مستودع أمثلة API لـ Aspose.PDF for Java.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
+1. سيتم إنشاء مشروع **Maven** التالي على **Eclipse IDE** الخاص بك عند إكمال المعالج:
 
 ![todo:image_alt_text](https://i.imgur.com/xRfHrku.png)
 
-1. تم تكوين **مشروع Maven** الذي تم إنشاؤه لاستخدام **Aspose.PDF لـ Java API** وجاهز للتطوير وفقًا لمتطلبات مشروعك. إذا اخترت تنزيل [أمثلة التعليمات البرمجية](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)، يمكنك استخدام **مثال التعليمات البرمجية لـ Aspose.PDF (المعالج)** لاستيراد أمثلة التعليمات البرمجية الضرورية لـ [Aspose.PDF لـ Java](http://www.aspose.com/java/pdf-component.aspx) API إلى مشروعك.
+1. تم إنشاء **Maven Project** وتم تكوينه لاستخدام **Aspose.PDF for Java API** وهو جاهز للتعزيز حسب متطلبات مشروعك.
+   إذا اخترت التحميل [أمثلة التعليمات البرمجية](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)، يمكنك استخدام **Aspose.PDF Code Example (wizard)** لاستيراد **Code Examples** المطلوبة من [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API إلى مشروعك.
 
-### مثال التعليمات البرمجية لـ Aspose.PDF (المعالج)
+### Aspose.PDF Code Example (wizard)
 
-يسمح لك **معالج مثال التعليمات البرمجية لـ Aspose.PDF** بتجربة العديد من العينات المتوفرة لـ [Aspose.PDF لـ Java](http://www.aspose.com/java/pdf-component.aspx) API.
+**Aspose.PDF Code Example wizard** يسمح لك بتجربة العديد من العينات المقدمة لـ [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API.
 
 {{% alert color="primary" %}}
 
-حتى تتمكن من استخدام **معالج مثال التعليمات البرمجية لـ Aspose.PDF** براحة: يُوصى دائمًا باختيار **تنزيل أمثلة التعليمات البرمجية أيضًا** أثناء إنشاء **مشروع Maven** على **معالج مشروع Aspose.PDF Maven**،
+لكي تتمكن من استخدام **Aspose.PDF Code Example wizard** بسهولة: يُنصح دائمًا باختيار **Also Download Code Examples** أثناء إنشاء **Maven Project** على **Aspose.PDF Maven Project** **wizard**،
 
 {{% /alert %}}
 
 لاستخدام الأمثلة، فقط:
 
-1. انقر على **ملف جديد** في **Eclipse**.
-
-1. اختر مشروعك ثم حدد **مثال كود Aspose.PDF** في فئة **Java**.
-1. انقر على **التالي**.
+1. انقر على **New File** في **Eclipse**.
+1. اختر مشروعك ثم حدد **Aspose.PDF Code Example** في الفئة **Java**.
+1. انقر على **Next**.
 
 ![todo:image_alt_text](https://i.imgur.com/AuWybe8.png)
 
-قم بتوسيع الشجرة لتحديد فئة **مثال كود** وانقر على **إنهاء**.
+ قم بتوسيع الشجرة لتحديد فئة **Code Example** وانقر على **Finish**.
 
 ![todo:image_alt_text](https://i.imgur.com/PToFZjJ.png)
 
-1. سيقوم هذا بنسخ ملفات Java لفئة **أمثلة الكود** المحددة إلى المشروع تحت حزمة **com.aspose.pdf.examples**. كما سيتم نسخ أي موارد مطلوبة بواسطة أمثلة الكود إلى مجلد **src/main/resources**.
-1. راجع مثال الكود، ثم قم بتجميعه وتشغيله.
-1. يمكنك الآن اختبار أمثلة أخرى وبدء بناء تطبيقك الخاص باستخدام [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)
+1. سيؤدي ذلك إلى نسخ ملفات Java ضمن الفئة المحددة **Code Examples** إلى المشروع داخل الحزمة **com.aspose.pdf.examples**. كما سيتم نسخ أي موارد مطلوبة يحتاجها أمثلة التعليمات البرمجية إلى المجلد **src/main/resources**.
+1. راجع شفرة المثال، ثم قم بالترجمة والتنفيذ.
+1. يمكنك الآن اختبار أمثلة أخرى والبدء في بناء تطبيقك الخاص باستخدام [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)

@@ -1,172 +1,132 @@
 ---
-title: تحويل ملف PDF إلى صيغ أخرى
+title: تحويل PDF إلى EPUB، Text، XPS، وأكثر في Java
 linktitle: تحويل PDF إلى صيغ أخرى
 type: docs
 weight: 90
 url: /ar/java/convert-pdf-to-other-files/
-lastmod: "2021-11-19"
-description: يوضح هذا الموضوع كيفية استخدام Aspose.PDF لتحويل ملف PDF إلى صيغ ملفات أخرى.
+lastmod: "2026-10-05"
+description: تعلم كيفية تحويل ملفات PDF إلى EPUB و LaTeX و Markdown ونص و XPS و MobiXML باستخدام Java و Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: كيفية تحويل PDF إلى صيغ أخرى باستخدام Java
+Abstract: تشرح هذه المقالة كيفية تحويل ملفات PDF إلى صيغ EPUB و TeX و Markdown والنص و XPS و MobiXML باستخدام Aspose.PDF for Java، مع خيارات حفظ مخصصة لكل صيغة عند الحاجة.
 ---
+يمكن لـ Aspose.PDF for Java تصدير مستندات PDF إلى صيغ نصية، وصيغ كتب إلكترونية، وصيغ للطباعة، وصيغ مخرجات موجهة للترميز.
 
 ## تحويل PDF إلى EPUB
 
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى EPUB عبر الإنترنت**
+استخدم هذا المثال عندما يجب تصدير مستند PDF إلى تنسيق الكتاب الإلكتروني EPUB.
 
-تقدم لك Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![تحويل Aspose.PDF من PDF إلى EPUB باستخدام التطبيق المجاني](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
-{{% /alert %}}
-
-**<abbr title="النشر الإلكتروني">EPUB</abbr>** (اختصار للنشر الإلكتروني) هو معيار كتاب إلكتروني مجاني ومفتوح من المنتدى الدولي للنشر الرقمي (IDPF).
- ملفات لها الامتداد .epub. تم تصميم EPUB للمحتوى القابل لإعادة التدفق، مما يعني أن قارئ EPUB يمكنه تحسين النص لجهاز عرض معين. كما يدعم EPUB المحتوى ذو التخطيط الثابت. يُقصد من هذا التنسيق أن يكون صيغة واحدة يمكن للناشرين وبيوت التحويل استخدامها داخليًا، وكذلك للتوزيع والبيع. يحل محل معيار Open eBook.
-
-يدعم Aspose.PDF for Java ميزة تحويل مستندات PDF إلى تنسيق EPUB. يحتوي Aspose.PDF for Java على فئة تسمى [EpubSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/EpubSaveOptions) والتي يمكن استخدامها كحجة ثانية لطريقة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..)، لتوليد ملف EPUB. يرجى محاولة استخدام مقطع الشيفرة التالي لتحقيق هذا المطلب.
+1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. أنشئ كائنًا من الفئة [`EpubSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubsaveoptions/) واضبط وضع التعرف إلى `Flow`.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذا يتم تصدير محتوى PDF على هيئة ترميز EPUB قابل لإعادة التدفق.
+1. احفظ ملف EPUB المحوّل.
 
 ```java
-// تحميل مستند PDF
-Document document = new Document(DATA_DIR + "PDFToEPUB.pdf");
-// إنشاء خيارات حفظ Epub
-EpubSaveOptions options = new EpubSaveOptions();
-// تحديد التخطيط للمحتويات
-options.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
-// حفظ مستند ePUB
-document.save(DATA_DIR + "PDFToEPUB_out.epub", options);
-document.close();
+public static void convertPdfToEpub(Path inputFile, Path outputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            EpubSaveOptions saveOptions = new EpubSaveOptions();
+            saveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
+    }
 ```
 
-## تحويل PDF إلى LaTeX/TeX
+## تحويل PDF إلى TeX
 
-**Aspose.PDF for Java** تدعم تحويل PDF إلى LaTeX/TeX. 
-تنسيق ملف LaTeX هو تنسيق ملف نصي مع تعليمات تنسيق خاصة ويستخدم في نظام إعداد المستندات المستند على TeX للطباعة عالية الجودة.
+استخدم هذا المثال عندما يجب تصدير محتوى PDF إلى تنسيق TeX.
 
-لتحويل ملفات PDF إلى TeX، يحتوي Aspose.PDF على الفئة [TeXSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXSaveOptions) التي توفر الطريقة `setOutDirectoryPath` لحفظ الصور المؤقتة أثناء عملية التحويل.
-
-يُظهر المقتطف البرمجي التالي عملية تحويل ملفات PDF إلى تنسيق TEX باستخدام Java.
-
-```java
-String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX.pdf").toString();
-String texDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX_out.tex").toString();
-
-// إنشاء كائن Document
-Document document = new Document(documentFileName);
-
-// إنشاء خيار حفظ LaTex
-TeXSaveOptions saveOptions = new TeXSaveOptions();
-
-// تحديد دليل الإخراج
-String pathToOutputDirectory = DATA_DIR.toString();
-
-// تعيين مسار دليل الإخراج لكائن خيار الحفظ
-saveOptions.setOutDirectoryPath(pathToOutputDirectory);
-
-// حفظ ملف PDF بتنسيق LaTex
-document.save(texDocumentFileName, saveOptions);
-document.close();
-```
-
-
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى LaTeX/TeX عبر الإنترنت**
-
-يقدم لك Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex)، حيث يمكنك تجربة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![Aspose.PDF تحويل PDF إلى LaTeX/TeX مع تطبيق مجاني](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
-{{% /alert %}}
-
-## تحويل PDF إلى نص
-
-يدعم **Aspose.PDF for Java** تحويل مستند PDF بالكامل وصفحة واحدة إلى ملف نصي.
-
-### تحويل مستند PDF بالكامل إلى ملف نصي
-
-يمكنك تحويل مستند PDF إلى ملف TXT باستخدام طريقة Visit من فئة [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber).
-
-يوضح مقتطف الشيفرة التالي كيفية استخراج النصوص من جميع الصفحات.
+1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. أنشئ كائنًا من الفئة [`TeXSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texsaveoptions/) للتسلسل في TeX..
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذلك يتم إصدار محتوى PDF على شكل تنسيق TeX..
+1. احفظ ملف TeX الناتج.
 
 ```java
-// فتح المستند
-String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
-String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
-
-// تحميل مستند PDF
-Document document = new Document(pdfFileName);
-TextAbsorber ta = new TextAbsorber();
-ta.visit(document);
-// حفظ النص المستخرج في ملف نصي
-BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-writer.write(ta.getText());
-writer.close();
-```
-
-
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى نص عبر الإنترنت**
-
-تقدم Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["PDF إلى نص"](https://products.aspose.app/pdf/conversion/pdf-to-txt)، حيث يمكنك تجربة التحقيق في الوظائف والجودة التي يعمل بها.
-
-[![Aspose.PDF تحويل PDF إلى نص باستخدام تطبيق مجاني](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
-{{% /alert %}}
-
-### تحويل صفحة PDF إلى ملف نصي
-
-يمكنك تحويل مستند PDF إلى ملف TXT باستخدام Aspose.PDF for Java. يجب عليك استخدام طريقة Visit من فئة [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) لحل هذه المهمة.
-
-يشرح مقطع الشيفرة التالي كيفية استخراج النصوص من الصفحات المحددة.
-
-```java
-String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
-String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
-
-// تحميل مستند PDF
-Document document = new Document(pdfFileName);
-
-TextAbsorber ta = new TextAbsorber();
-int[] pages = new int[] { 1, 3, 4 };
-
-for (int page : pages) {
-    ta.visit(document.getPages().get_Item(page));
+public static void convertPdfToTex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), new TeXSaveOptions());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
-
-// احفظ النص المستخرج في ملف نصي
-BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-writer.write(ta.getText());
-writer.close();
-document.close();
 ```
 
+## تحويل PDF إلى نص عادي
+
+استخدم هذا المثال عندما يجب تصدير مستند PDF كملف نصي.
+
+1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. أنشئ كائنًا من الفئة [`TextDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/textdevice/) استخراج المحتوى النصي من صفحات PDF..
+1. استدعِ `device.process(document.getPages().get_Item(1), outputFile.toString())` لِكتابة الصفّحة الأولى كنص عادي.
+1. احفظ ملف النص الناتج.
+
+```java
+public static void convertPdfToTxt(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextDevice device = new TextDevice();
+        device.process(document.getPages().get_Item(1), outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
 ## تحويل PDF إلى XPS
 
-يعطي **Aspose.PDF for Java** إمكانية تحويل ملفات PDF إلى صيغة <abbr title="XML Paper Specification">XPS</abbr>. دعونا نحاول استخدام الشيفرة المقدمة لتحويل ملفات PDF إلى صيغة XPS باستخدام Java.
+استخدم هذا المثال عندما يجب تحويل مستند PDF إلى تنسيق XPS.
 
-{{% alert color="success" %}}
-**حاول تحويل PDF إلى XPS عبر الإنترنت**
-
-يقدم لك Aspose.PDF for Java تطبيقًا مجانيًا عبر الإنترنت ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps)، حيث يمكنك محاولة استكشاف الوظائف والجودة التي يعمل بها.
-
-[![Aspose.PDF تحويل PDF إلى XPS باستخدام التطبيق المجاني](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
-{{% /alert %}}
-
-نوع ملف XPS مرتبط بشكل رئيسي بمواصفات ورق XML من قبل شركة Microsoft Corporation. مواصفات ورق XML (XPS)، التي كانت تسمى سابقًا كودًا Metro وتحتوي على مفهوم التسويق Next Generation Print Path (NGPP)، هي مبادرة من Microsoft لدمج إنشاء المستندات وعرضها في نظام التشغيل Windows.
-
-لتحويل ملفات PDF إلى XPS، يحتوي Aspose.PDF على فئة [XpsSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XpsSaveOptions) التي تُستخدم كوسيطة ثانية لمنشئ Document.save(..) لتوليد ملف XPS.
- يُظهر مقطع الشيفرة التالي عملية تحويل ملفات PDF إلى تنسيق XPS.
+1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. أنشئ كائنًا من الفئة [`XpsSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpssaveoptions/) وفعّل الخطوط TrueType المدمجة.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذا يتم تسلسل PDF كـ XPS مع موارد الخط المدمجة.
+1. احفظ ملف XPS المحوَّل.
 
 ```java
-String documentFileName = Paths.get(DATA_DIR.toString(), "sample.pdf").toString();
-String xpsDocumentFileName = Paths.get(DATA_DIR.toString(), "sample-res-xps.xps").toString();
+public static void convertPdfToXps(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XpsSaveOptions saveOptions = new XpsSaveOptions();
+        saveOptions.setUseEmbeddedTrueTypeFonts(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-// إنشاء كائن المستند
-Document document = new Document(documentFileName);
+## تحويل PDF إلى Markdown
 
-// إنشاء خيارات الحفظ بصيغة XPS
-XpsSaveOptions saveOptions = new XpsSaveOptions();
+استخدم هذا المثال عندما يجب تصدير محتوى PDF كـ Markdown.
 
-// حفظ الناتج بتنسيق XML
-document.save(xpsDocumentFileName, saveOptions);
-document.close();
+1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. أنشئ كائنًا من الفئة [`MarkdownSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/markdownsaveoptions/) وتهيئة دليل موارد الصورة بالإضافة إلى مخرجات وسم صورة HTML.
+1. استدعِ `document.save(outputFile.toString(), saveOptions)` لذا يتم إصدار محتوى PDF كـ Markdown مع موارد صور خارجية.
+1. احفظ ملف Markdown المُولّد.
+
+```java
+public static void convertPdfToMd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+        saveOptions.setResourcesDirectoryName("images");
+        saveOptions.setUseImageHtmlTag(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## تحويل PDF إلى Mobi XML
+
+استخدم هذا المثال عندما يجب تصدير محتوى PDF إلى XML متوافق مع Mobi.
+
+1. افتح ملف PDF المصدر في [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) مثال.
+1. اختر [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml` كصيغة التسلسل المستهدفة.
+1. استدعِ `document.save(outputFile.toString(), SaveFormat.MobiXml)` لذا يتم تصدير ملف PDF كملف XML متوافق مع Mobi..
+1. احفظ الملف المحول.
+
+```java
+public static void convertPdfToMobiXml(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), SaveFormat.MobiXml);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

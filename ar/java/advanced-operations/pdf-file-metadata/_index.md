@@ -1,146 +1,110 @@
 ---
-title: العمل مع بيانات وصفية لملف PDF
-linktitle: بيانات وصفية لملف PDF
+title: العمل مع بيانات تعريف ملفات PDF في Java
+linktitle: بيانات تعريف ملف PDF
 type: docs
-weight: 140
+weight: 200
 url: /ar/java/pdf-file-metadata/
-description: تشرح هذه القسم كيفية الحصول على معلومات ملف PDF، وكيفية الحصول على بيانات XMP الوصفية من ملف PDF، وتعيين معلومات ملف PDF.
-lastmod: "2021-06-05"
+description: تعلم كيفية استخراج وتحديث وإدارة بيانات تعريف ملفات PDF ومعلومات المستند وخصائص XMP في Java باستخدام Aspose.PDF.
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: احصل على معلومات مستند PDF وقم بتعيين بيانات تعريف XMP في Java
+Abstract: تشرح هذه المقالة كيفية العمل مع بيانات تعريف PDF باستخدام Aspose.PDF for Java. تعرف على كيفية قراءة معلومات المستند مثل المؤلف والعنوان والكلمات المفتاحية، وتحديث خصائص الملف، وفحص نسخة PDF والامتيازات، وضبط حقول بيانات تعريف XMP، وحفظ بيانات التعريف عبر كل من واجهات DOM و facade.
 ---
+يقدم Aspose.PDF for Java طريقين رئيسيين للعمل مع بيانات التعريف:
 
-## الحصول على معلومات ملف PDF
+- واجهة برمجة تطبيقات DOM عبر `Document`, `DocumentInfo`، و `document.getMetadata()`.
+- واجهة API من خلال `PdfFileInfo`.
 
-للحصول على معلومات محددة عن ملف PDF، أولاً احصل على كائن [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo) باستخدام فئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) [getInfo()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getInfo--). بمجرد استرجاع كائن [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo)، يمكنك الحصول على قيم الخصائص الفردية.
+## احصل على معلومات ملف PDF
 
-يوضح لك مقتطف الشيفرة التالي كيفية تعيين معلومات ملف PDF.
+استخدم هذا المثال عندما تحتاج إلى قراءة حقول معلومات المستند القياسية مثل المؤلف، العنوان، الموضوع، أو الكلمات المفتاحية.
+
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى كائن [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/).
+1. اقرأ حقول البيانات الوصفية المطلوبة وأخرج قيمها.
 
 ```java
-public class ExampleMetadata {
+public static void getPdfFileInformation(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocumentInfo docInfo = document.getInfo();
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Metadata/";
-
-    public static void GetPDFFileInformation() {
-        // إنشاء مستند PDF جديد
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-        // الحصول على معلومات المستند
-        DocumentInfo docInfo = pdfDocument.getInfo();
-        // عرض معلومات المستند
-        System.out.println("المؤلف: " + docInfo.getAuthor());
-        System.out.println("تاريخ الإنشاء: " + docInfo.getCreationDate());
-        System.out.println("الكلمات المفتاحية: " + docInfo.getKeywords());
-        System.out.println("تاريخ التعديل: " + docInfo.getModDate());
-        System.out.println("الموضوع: " + docInfo.getSubject());
-        System.out.println("العنوان: " + docInfo.getTitle());
+        System.out.println("Author: " + docInfo.getAuthor());
+        System.out.println("Creation Date: " + docInfo.getCreationDate());
+        System.out.println("Keywords: " + docInfo.getKeywords());
+        System.out.println("Modify Date: " + docInfo.getModDate());
+        System.out.println("Subject: " + docInfo.getSubject());
+        System.out.println("Title: " + docInfo.getTitle());
     }
+}
 ```
 
+## تعيين البيانات الوصفية مع بادئة مساحة الاسم
 
-## إعداد معلومات ملف PDF
+استخدم هذا المثال عندما تحتاج إلى إضافة أو تحديث خاصية XMP باستخدام بادئة مساحة اسم مسجلة.
 
-تسمح Aspose.PDF لـ Java لك بإعداد معلومات خاصة بالملف لملف PDF، مثل المؤلف، وتاريخ الإنشاء، والموضوع، والعنوان.
-
-لإعداد هذه المعلومات:
-
-1. أنشئ كائن [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocumentInfo).
-2. قم بتعيين قيم الخصائص.
-3. احفظ المستند المحدث باستخدام طريقة [save()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) الخاصة بفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-{{% alert color="primary" %}}
-
-يرجى ملاحظة أنه لا يمكنك تعيين قيم مقابل الحقول **المنتج** و **المنشئ**، لأن Aspose.PDF لـ Java x.x.x سيتم عرضها مقابل هذه الحقول.
-
-{{% /alert %}}
-
-يوضح لك مقطع الشيفرة التالي كيفية إعداد معلومات ملف PDF.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. سجّل مساحة الاسم XMP المطلوبة وأضف عنصر البيانات الوصفية.
+1. احفظ المستند المحدث.
 
 ```java
- public static void SetPDFFileInformation() {
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
+public static void setPrefixMetadata(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getMetadata().registerNamespaceUri("xmp", "http://ns.adobe.com/xap/1.0/");
+        document.getMetadata().addItem("xmp:ModifyDate", OffsetDateTime.now().toString());
+        document.save(outputFile.toString());
+    }
+    System.out.println("Prefix metadata saved to " + outputFile);
+}
+```
 
-        // تحديد معلومات المستند
-        DocumentInfo docInfo = new DocumentInfo(pdfDocument);
+## تحديث حقول معلومات المستند
+
+استخدم هذا المثال عندما تريد كتابة خصائص ملف PDF القياسية مثل المؤلف، العنوان، المنتج، أو تاريخ الإنشاء.
+
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) وعيّن قيم بيانات تعريفية جديدة.
+1. احفظ المستند مع معلومات الملف المحدثة.
+
+```java
+public static void setFileInformation(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocumentInfo docInfo = document.getInfo();
+        Date now = new Date();
 
         docInfo.setAuthor("Aspose");
-        docInfo.setCreationDate(new java.util.Date());
+        docInfo.setCreationDate(now);
         docInfo.setKeywords("Aspose.Pdf, DOM, API");
-        docInfo.setModDate(new java.util.Date());
+        docInfo.setModDate(now);
         docInfo.setSubject("PDF Information");
         docInfo.setTitle("Setting PDF Document Information");
+        docInfo.setProducer("Custom producer");
+        docInfo.setCreator("Custom creator");
 
-        // حفظ المستند الناتج
-        pdfDocument.save(_dataDir + "SetFileInfo_out.pdf");
+        document.save(outputFile.toString());
     }
+    System.out.println("File information saved to " + outputFile);
+}
 ```
 
+## تعيين خصائص بيانات XMP الوصفية
 
-## الحصول على بيانات XMP الوصفية من ملف PDF
+استخدم هذا المثال عندما تحتاج إلى تخزين إدخالات XMP إضافية، بما في ذلك قيم البيانات التعريفية المخصصة.
 
-تتيح لك Aspose.PDF for Java الوصول إلى بيانات XMP الوصفية لملف PDF.
-
-للحصول على بيانات وصفية لملف PDF،
-
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) وافتح ملف PDF المدخل.
-1. استخدم خاصية [getMetadata()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--) للحصول على البيانات الوصفية.
-
-يوضح جزء الشيفرة التالي كيفية الحصول على البيانات الوصفية من ملف PDF.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أضف عناصر البيانات الوصفية XMP المطلوبة عبر `document.getMetadata()`.
+1. احفظ ملف الإخراج.
 
 ```java
-   public static void GetXMPMetadata() {
-
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "SetXMPMetadata.pdf");
-
-        System.out.println("xmp:CreateDate: " + pdfDocument.getMetadata().get_Item("xmp:CreateDate"));
-        System.out.println("xmp:Nickname: " + pdfDocument.getMetadata().get_Item("xmp:Nickname"));
-        System.out.println("xmp:CustomProperty: " + pdfDocument.getMetadata().get_Item("xmp:CustomProperty"));
-
+public static void setXmpMetadata(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getMetadata().addItem("xmp:CreateDate", OffsetDateTime.now().toString());
+        document.getMetadata().addItem("xmp:Nickname", "Nickname");
+        document.getMetadata().addItem("xmp:CustomProperty", "Custom Value");
+        document.save(outputFile.toString());
     }
-```
-
-## تعيين بيانات XMP الوصفية في ملف PDF
-
-تتيح لك Aspose.PDF for Java تعيين البيانات الوصفية في ملف PDF.
- لتعيين البيانات الوصفية:
-
-1. أنشئ كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. قم بتعيين قيم البيانات الوصفية باستخدام خاصية [getMetadata()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#getMetadata--).
-1. احفظ المستند المحدث باستخدام طريقة [save()](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#save-com.aspose.ms.System.IO.FileStream-) الخاصة بكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-يوضح لك مقتطف الشيفرة التالي كيفية تعيين البيانات الوصفية في ملف PDF.
-
-```java
-    public static void SetXMPMetadata() {
-
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-        // تعيين الخصائص
-        pdfDocument.getMetadata().set_Item("xmp:CreateDate", new XmpValue(new java.util.Date()));
-        pdfDocument.getMetadata().set_Item("xmp:Nickname", new XmpValue("Nickname"));
-        pdfDocument.getMetadata().set_Item("xmp:CustomProperty", new XmpValue("Custom Value"));
-
-        // حفظ المستند
-        pdfDocument.save(_dataDir + "SetXMPMetadata.pdf");
-    }
-```
-
-## إدراج البيانات الوصفية مع البادئة
-
-بعض المطورين يحتاجون إلى إنشاء مساحة أسماء جديدة للبيانات الوصفية مع بادئة. يوضح مقتطف الشيفرة التالي كيفية إدراج البيانات الوصفية مع البادئة.
-
-```java
-    public static void InsertMetadataWithPrefix() {
-        // فتح المستند
-        Document pdfDocument = new Document(_dataDir + "SetXMPMetadata.pdf");
-        pdfDocument.getMetadata().registerNamespaceUri("adc", "http://tempuri.org/adc/1.0");
-        pdfDocument.getMetadata().set_Item("adc:format", new XmpValue("application/pdf"));
-        pdfDocument.getMetadata().set_Item("adc:title", new XmpValue("alternative title"));        
-        // حفظ المستند
-        pdfDocument.save(_dataDir + "SetPrefixMetadata_out.pdf");
-    }
+    System.out.println("XMP metadata saved to " + outputFile);
 }
 ```
