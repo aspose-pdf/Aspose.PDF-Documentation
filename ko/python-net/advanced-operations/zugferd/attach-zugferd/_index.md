@@ -1,5 +1,5 @@
 ---
-title: PDF/3-A 호환 PDF 작성 및 파이썬으로 ZugFERD 인보이스 첨부
+title: PDF/3-A 호환 PDF 작성 및 파이썬으로 ZUGFeRD 인보이스 첨부
 linktitle: 주그퍼드를 PDF에 첨부하기
 type: docs
 weight: 10
@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 주그퍼드를 PDF 문서에 첨부하는 방법
-Abstract: 이 문서에서는 Aspose.PDF 라이브러리를 사용하여 ZugFERD (전자 인보이스 형식) 를 PDF 문서에 첨부하는 방법에 대한 단계별 가이드를 제공합니다.절차는 필요한 라이브러리를 가져오고 입력 및 출력 파일의 디렉토리 경로를 설정하는 것으로 시작됩니다.여기에는 대상 PDF 파일을 Document 객체에 로드하고 XML 인보이스 메타데이터 파일의 FileSpification 객체를 만드는 작업이 포함됩니다.메타데이터가 제대로 통합되도록 `mime_type` 및 `af_relaship`과 같은 주요 속성이 설정됩니다.그러면 XML 파일이 PDF의 임베디드 파일 컬렉션에 추가되어 효과적으로 메타데이터로 첨부됩니다.이후 PDF 문서는 전자 문서 보관에 적합한 PDF/A-3A 형식으로 변환된 후 ZugFerd가 포함된 최종 PDF를 저장합니다.이 기사는 이러한 단계의 구현을 보여주는 Python 코드 스니펫으로 끝을 맺으며, 문서 관리 개선을 위해 ZugFERD를 PDF와 통합하는 방법을 보여줍니다.
+Abstract: 이 문서에서는 Aspose.PDF 라이브러리를 사용하여 ZUGFeRD (전자 인보이스 형식) 를 PDF 문서에 첨부하는 방법에 대한 단계별 가이드를 제공합니다.절차는 필요한 라이브러리를 가져오고 입력 및 출력 파일의 디렉토리 경로를 설정하는 것으로 시작됩니다.여기에는 대상 PDF 파일을 Document 객체에 로드하고 XML 인보이스 메타데이터 파일의 FileSpification 객체를 만드는 작업이 포함됩니다.메타데이터가 제대로 통합되도록 `mime_type` 및 `af_relaship`과 같은 주요 속성이 설정됩니다.그러면 XML 파일이 PDF의 임베디드 파일 컬렉션에 추가되어 효과적으로 메타데이터로 첨부됩니다.이후 PDF 문서는 전자 문서 보관에 적합한 PDF/A-3A 형식으로 변환된 후 ZugFerd가 포함된 최종 PDF를 저장합니다.이 기사는 이러한 단계의 구현을 보여주는 Python 코드 스니펫으로 끝을 맺으며, 문서 관리 개선을 위해 ZugFERD를 PDF와 통합하는 방법을 보여줍니다.
 ---
 
 ## 주그퍼드를 PDF에 첨부하기

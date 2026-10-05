@@ -1,31 +1,32 @@
 ---
-title: الحصول على بيانات XMP الوصفية من ملف PDF في PHP
+title: احصل على بيانات XMP الوصفية من ملف PDF في PHP
+linktitle: احصل على بيانات XMP الوصفية من ملف PDF في PHP
 type: docs
 weight: 50
 url: /ar/java/get-xmp-metadata-from-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: تعلم كيفية استخراج بيانات XMP الوصفية من مستندات PDF في PHP باستخدام Aspose.PDF للتحليل المتقدم للمحتوى.
+lastmod: "2026-10-05"
 ---
-
 ## Aspose.PDF - الحصول على بيانات XMP الوصفية
 
-للحصول على بيانات XMP الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ببساطة قم باستدعاء فئة **GetXMPMetadata**.
+للحصول على بيانات XMP الوصفية من مستند Pdf باستخدام **Aspose.PDF Java for PHP**، ما عليك سوى استدعاء الفئة **GetXMPMetadata**.
 
 كود PHP
 
 ```php
 
-# فتح مستند pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# الحصول على الخصائص
+# Get properties
 print "xmp:CreateDate: " + $doc->getMetadata()->get_Item("xmp:CreateDate") . PHP_EOL;
 print "xmp:Nickname: " + $doc->getMetadata()->get_Item("xmp:Nickname") . PHP_EOL;
 print "xmp:CustomProperty: " + $doc->getMetadata()->get_Item("xmp:CustomProperty") . PHP_EOL;
 
 ```
 
-**تحميل الكود الجاري**
+**تنزيل الشفرة القابلة للتشغيل**
 
-قم بتحميل **الحصول على بيانات XMP الوصفية (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تحميل **احصل على بيانات تعريف XMP (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetXMPMetadata.php)

@@ -1,20 +1,21 @@
 ---
-title: Atur Kedaluwarsa PDF di PHP
+title: "Mengatur kedaluwarsa PDF di PHP"
+linktitle: "Mengatur kedaluwarsa PDF di PHP"
 type: docs
 weight: 80
 url: /id/java/set-pdf-expiration-in-php/
-lastmod: "2021-06-05"
+description: Temukan cara mengatur tanggal kedaluwarsa untuk file PDF di PHP, mengontrol akses dengan Aspose.PDF.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - atur kedaluwarsa PDF
 
-## Aspose.PDF - Atur Kedaluwarsa PDF
-
-Untuk mengatur kedaluwarsa dokumen Pdf menggunakan **Aspose.PDF Java untuk PHP**, cukup panggil kelas **SetExpiration**.
+Untuk mengatur kedaluwarsa dokumen PDF menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **SetExpiration**.
 
 Kode PHP
 
 ```php
 
-# Buka dokumen pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 $javascript = new JavascriptAction(
@@ -24,18 +25,18 @@ $javascript = new JavascriptAction(
     today = new Date(today.getFullYear(), today.getMonth());
     expiry = new Date(year, month);
     if (today.getTime() > expiry.getTime())
-    app.alert('Berkas ini telah kedaluwarsa. Anda memerlukan yang baru.');");
+    app.alert('The file is expired. You need a new one.');");
 $doc->setOpenAction($javascript);
 
-# simpan dokumen yang diperbarui dengan informasi baru
+# save update document with new information
 $doc->save($dataDir . "set_expiration.pdf");
 
-print "Perbarui informasi dokumen, silakan periksa berkas keluaran." . PHP_EOL;
+print "Update document information, please check output file." . PHP_EOL;
 
 ```
 
-**Unduh Kode Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-Unduh **Atur Kedaluwarsa PDF (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+Unduh **Set PDF Expiration (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)

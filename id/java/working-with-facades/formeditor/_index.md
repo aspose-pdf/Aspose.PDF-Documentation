@@ -1,19 +1,20 @@
 ---
 title: Kelas FormEditor
+linktitle: Kelas FormEditor
 type: docs
-weight: 105
+weight: 150
 url: /id/java/formeditor-class/
-description: Bagian ini menjelaskan cara bekerja dengan com.aspose.pdf.facades menggunakan Kelas FormEditor.
-lastmod: "2021-06-05"
-draft: false
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+description: "Pelajari cara menggunakan fasad FormEditor di Java untuk membuat bidang formulir, memodifikasi bidang yang ada, menyesuaikan tampilan bidang, dan menambahkan skrip atau aksi pengiriman dalam formulir PDF."
+lastmod: "2026-09-30"
+TechArticle: true
+AlternativeHeadline: "Membuat dan mengedit formulir PDF interaktif di Java dengan kelas FormEditor"
+Abstract: "Bagian ini menjelaskan cara menggunakan fasad FormEditor dalam Aspose.PDF for Java untuk membuat dan memperbarui formulir PDF interaktif. Contoh Java mencakup pembuatan tipe bidang umum, memodifikasi struktur bidang, menyesuaikan tampilan, dan melampirkan skrip atau aksi pengiriman."
 ---
+Kelas `FormEditorExamples` dalam Java mendemonstrasikan alur kerja utama penyuntingan bidang yang tersedia melalui API Facades.
 
-- [Tambah Bidang Formulir PDF](/pdf/id/java/add-form-fields/)
-- [Hias Bidang Formulir dalam PDF](/pdf/id/java/decorate-form-field/)
-- [Bekerja dengan Item Daftar](/pdf/id/java/working-with-list-item/)
-- [Salin Bidang Dalam dan Luar](/pdf/id/java/copy-inner-and-outer-field/)
-- [Pindahkan dan Hapus Bidang Formulir](/pdf/id/java/move-remove-form-field/)
-- [Impor dan Ekspor Bidang Formulir](/pdf/id/java/import-export-form-field/)
+Gunakan bagian ini untuk mempelajari cara:
+
+- Membuat bidang teks, kotak centang, kotak kombo, kotak daftar, tombol radio, dan bidang tombol submit
+- Menambahkan, menghapus, memindahkan, mengganti nama, menyalin, atau mengonversi bidang yang ada
+- Menyesuaikan perataan, tampilan, batas, dan angka comb
+- Melampirkan skrip dan URL submit, serta menghapus aksi bidang

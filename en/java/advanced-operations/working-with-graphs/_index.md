@@ -21,4 +21,4 @@ Aspose.PDF for Java provides a `Graph` container for drawing vector shapes direc
 - [Add lines](/pdf/java/add-line/)
 - [Add rectangles](/pdf/java/add-rectangle/)
 - [Add ellipses](/pdf/java/add-ellipse/)
-- [Check shape bounds](/java/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Check shape bounds](/java/checking-shape-bounds/)

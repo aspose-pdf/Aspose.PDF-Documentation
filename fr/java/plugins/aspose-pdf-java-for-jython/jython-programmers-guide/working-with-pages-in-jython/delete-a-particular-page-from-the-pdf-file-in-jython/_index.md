@@ -1,19 +1,20 @@
 ---
-title: Supprimer une Page Particulière du Fichier PDF en jython
+title: Supprimer une page particulière du fichier PDF en Jython
+linktitle: Supprimer une page particulière du fichier PDF en Jython
 type: docs
 weight: 20
-url: /fr/java/delete-a-particular-page-from-the-pdf-file-in-jython/
-lastmod: "2021-06-05"
+url: /java/delete-a-particular-page-from-the-pdf-file-in-jython/
+description: Découvrez comment supprimer une page spécifique d'un document PDF à l'aide de Jython et Aspose.PDF, permettant une édition efficace.
+lastmod: "2026-09-21"
 ---
+## Aspose.PDF - Supprimer la page
 
-## Aspose.PDF - Supprimer une Page
+L’exemple suivant montre cette opération avec **Aspose.PDF Java pour Jython**.
 
-Pour vérifier le format de fichier en utilisant **Aspose.PDF Java pour Jython**. Voici un exemple de code.
+Erreur de rendu de la macro 'code' : valeur non valide spécifiée pour le paramètre lang
 
-Erreur lors du rendu de la macro 'code' : Valeur invalide spécifiée pour le paramètre lang
+## Télécharger l’exemple de code
 
-## Télécharger le Code en Exécution
-
-Téléchargez le code en cours d'exécution à partir de l'un des sites de codage social mentionnés ci-dessous :
+Téléchargez l’exemple de code à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

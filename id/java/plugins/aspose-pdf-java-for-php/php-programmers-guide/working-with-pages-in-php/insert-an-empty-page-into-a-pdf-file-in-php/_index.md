@@ -1,34 +1,35 @@
 ---
-title: Menyisipkan Halaman Kosong ke dalam File PDF di PHP
+title: "Menyisipkan halaman kosong ke dalam file PDF dengan PHP"
+linktitle: "Menyisipkan halaman kosong ke dalam file PDF dengan PHP"
 type: docs
 weight: 70
 url: /id/java/insert-an-empty-page-into-a-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: Pelajari cara menyisipkan halaman kosong pada posisi mana pun dalam file PDF dengan PHP menggunakan Aspose.PDF untuk struktur dokumen yang fleksibel.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - sisipkan halaman kosong
 
-## Aspose.PDF - Menyisipkan Halaman Kosong
-
-Untuk Menyisipkan Halaman Kosong ke dalam dokumen PDF menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **InsertEmptyPage**.
+Untuk Menyisipkan Halaman Kosong ke dalam dokumen Pdf menggunakan **Aspose.PDF Java for PHP**, cukup panggil kelas **InsertEmptyPage**.
 
 Kode PHP
 
 ```php
 
-# Buka dokumen target
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# sisipkan halaman kosong dalam PDF
+# insert a empty page in a PDF
 $pdf->getPages()->insert(1);
 
-# Simpan file output yang telah digabungkan (dokumen target)
+# Save the concatenated output file (the target document)
 $pdf->save($dataDir . "output.pdf");
 
-print "Halaman kosong berhasil ditambahkan!";
+print "Empty page added successfully!";
 
 ```
 
-**Unduh Kode yang Berjalan**
+**Mengunduh kode yang dapat dijalankan**
 
-Unduh **Menyisipkan Halaman Kosong (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
+Unduh **Sisipkan Halaman Kosong (Aspose.PDF)** dari salah satu situs sosial coding yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPage.php)

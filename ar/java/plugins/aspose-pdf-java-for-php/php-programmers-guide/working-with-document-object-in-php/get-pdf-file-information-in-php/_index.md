@@ -1,37 +1,38 @@
 ---
 title: الحصول على معلومات ملف PDF في PHP
+linktitle: الحصول على معلومات ملف PDF في PHP
 type: docs
 weight: 40
 url: /ar/java/get-pdf-file-information-in-php/
-lastmod: "2021-06-05"
+description: اكتشف كيف يمكن استخراج معلومات مفصلة عن ملف PDF، بما في ذلك البيانات الوصفية والخصائص، في PHP باستخدام Aspose.PDF.
+lastmod: "2026-10-05"
 ---
-
 ## Aspose.PDF - الحصول على معلومات ملف PDF
 
-للحصول على معلومات ملف وثيقة Pdf باستخدام **Aspose.PDF Java for PHP**، قم ببساطة باستدعاء فئة **GetPdfFileInfo**.
+للحصول على معلومات ملف مستند PDF باستخدام **Aspose.PDF Java for PHP**، قم ببساطة باستدعاء الفئة **GetPdfFileInfo**.
 
 كود PHP
 
 ```php
 
-# فتح مستند pdf.
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# الحصول على معلومات المستند
+# Get document information
 $doc_info = $doc->getInfo();
 
-# عرض معلومات المستند
-print "المؤلف:-" . $doc_info->getAuthor();
-print "تاريخ الإنشاء:-" . $doc_info->getCreationDate();
-print "الكلمات المفتاحية:-" . $doc_info->getKeywords();
-print "تاريخ التعديل:-" . $doc_info->getModDate();
-print "الموضوع:-" . $doc_info->getSubject();
-print "العنوان:-" . $doc_info->getTitle();
+# Show document information
+print "Author:-" . $doc_info->getAuthor();
+print "Creation Date:-" . $doc_info->getCreationDate();
+print "Keywords:-" . $doc_info->getKeywords();
+print "Modify Date:-" . $doc_info->getModDate();
+print "Subject:-" . $doc_info->getSubject();
+print "Title:-" . $doc_info->getTitle();
 
 ```
 
-**تحميل الكود القابل للتشغيل**
+**تنزيل الشفرة القابلة للتشغيل**
 
-قم بتحميل **الحصول على معلومات ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+تنزيل **احصل على معلومات ملف PDF (Aspose.PDF)** من أي من مواقع الترميز الاجتماعية المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetPdfFileInfo.php)

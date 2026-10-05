@@ -1,14 +1,15 @@
 ---
-title: العمل مع تحويل المستندات في بايثون
+title: العمل مع تحويل المستندات في Python
+linktitle: العمل مع تحويل المستندات في Python
 type: docs
 weight: 10
 url: /ar/java/working-with-document-conversion-in-python/
-lastmod: "2021-06-05"
+description: تعلم كيفية تحويل مستندات PDF إلى صيغ مختلفة في Python باستخدام Aspose.PDF لمعالجة المستندات المرنة.
+lastmod: "2026-10-05"
 ---
-
 يتضمن هذا القسم الموضوعات التالية:
 
-- [تحويل PDF إلى تنسيق DOC أو DOCX في بايثون](/pdf/ar/java/convert-pdf-to-doc-or-docx-format-in-python/)
-- [تحويل PDF إلى مصنف Excel في بايثون](/pdf/ar/java/convert-pdf-to-excel-workbook-in-python/)
-- [تحويل PDF إلى تنسيق SVG في بايثون](/pdf/ar/java/convert-pdf-to-svg-format-in-python/)
-- [تحويل ملف SVG إلى تنسيق PDF في بايثون](/pdf/ar/java/convert-svg-file-to-pdf-format-in-python/)
+- [تحويل PDF إلى صيغة DOC أو DOCX في Python](/pdf/ar/java/convert-pdf-to-doc-or-docx-format-in-python/)
+- [تحويل PDF إلى مصنف Excel في Python](/pdf/ar/java/convert-pdf-to-excel-workbook-in-python/)
+- [تحويل PDF إلى صيغة SVG في Python](/pdf/ar/java/convert-pdf-to-svg-format-in-python/)
+- [تحويل ملف SVG إلى تنسيق PDF في Python](/pdf/ar/java/convert-svg-file-to-pdf-format-in-python/)

@@ -3,7 +3,7 @@ title: 使用 Python 检查 PDF 图形中的形状边界
 linktitle: 检查形状边界
 type: docs
 weight: 70
-url: /zh/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /zh/python-net/checking-shape-bounds/
 description: 了解如何在 Python 中验证 PDF 图形集合中的形状边界。
 lastmod: "2026-06-08"
 sitemap:

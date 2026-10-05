@@ -1,171 +1,132 @@
 ---
-title: Konversi File PDF ke Format Lain
-linktitle: Konversi PDF ke format lain
+title: "Mengonversi PDF ke EPUB, teks, XPS, dan lainnya dalam Java"
+linktitle: "Mengonversi PDF ke format lain"
 type: docs
 weight: 90
 url: /id/java/convert-pdf-to-other-files/
-lastmod: "2021-11-19"
-description: Topik ini menunjukkan bagaimana Aspose.PDF memungkinkan untuk mengonversi file PDF ke format file lain.
+lastmod: "2026-09-30"
+description: Pelajari cara mengonversi file PDF ke EPUB, LaTeX, Markdown, teks, XPS, dan MobiXML di Java dengan Aspose.PDF.
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: "Mengonversi PDF ke format lain di Java"
+Abstract: Artikel ini menjelaskan cara mengonversi file PDF menjadi format EPUB, TeX, Markdown, teks, XPS, dan MobiXML menggunakan Aspose.PDF for Java, dengan opsi penyimpanan khusus format bila diperlukan.
 ---
+Aspose.PDF for Java dapat mengekspor dokumen PDF ke dalam format output teks, ebook, cetak, dan berorientasi markup.
 
-## Konversi PDF ke EPUB
+## Mengubah PDF ke EPUB
 
-{{% alert color="success" %}}
-**Coba konversi PDF ke EPUB secara online**
+Gunakan contoh ini ketika dokumen PDF harus diekspor ke format ebook EPUB.
 
-Aspose.PDF untuk Java menyajikan aplikasi gratis online ["PDF ke EPUB"](https://products.aspose.app/pdf/conversion/pdf-to-epub), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
-
-[![Aspose.PDF Konversi PDF ke EPUB dengan Aplikasi Gratis](pdf_to_epub.png)](https://products.aspose.app/pdf/conversion/pdf-to-epub)
-{{% /alert %}}
-
-**<abbr title="Electronic Publication">EPUB</abbr>** (singkatan dari electronic publication) adalah standar buku elektronik gratis dan terbuka dari International Digital Publishing Forum (IDPF).
- Files have the extension .epub.EPUB dirancang untuk konten yang dapat diatur ulang, artinya pembaca EPUB dapat mengoptimalkan teks untuk perangkat tampilan tertentu. EPUB juga mendukung konten dengan tata letak tetap. Format ini dimaksudkan sebagai format tunggal yang dapat digunakan oleh penerbit dan rumah konversi secara internal, serta untuk distribusi dan penjualan. Ini menggantikan standar Open eBook.
-
-Aspose.PDF untuk Java mendukung fitur untuk mengonversi dokumen PDF ke format EPUB. Aspose.PDF untuk Java memiliki kelas bernama [EpubSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/EpubSaveOptions) yang dapat digunakan sebagai argumen kedua untuk metode [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..), untuk menghasilkan file EPUB. Silakan coba gunakan potongan kode berikut untuk memenuhi kebutuhan ini.
+1. Buka PDF sumber di instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`EpubSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/epubsaveoptions/) dan atur mode pengenalan menjadi `Flow`.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga konten PDF diekspor sebagai markup EPUB yang dapat di‑reflow.
+1. Simpan file EPUB yang telah dikonversi.
 
 ```java
-// Muat dokumen PDF
-Document document = new Document(DATA_DIR + "PDFToEPUB.pdf");
-// Instansiasi opsi simpan Epub
-EpubSaveOptions options = new EpubSaveOptions();
-// Tentukan tata letak untuk konten
-options.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
-// Simpan dokumen ePUB
-document.save(DATA_DIR + "PDFToEPUB_out.epub", options);
-document.close();
+public static void convertPdfToEpub(Path inputFile, Path outputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            EpubSaveOptions saveOptions = new EpubSaveOptions();
+            saveOptions.setContentRecognitionMode(EpubSaveOptions.RecognitionMode.Flow);
+            document.save(outputFile.toString(), saveOptions);
+        }
+        System.out.println(inputFile + " converted into " + outputFile);
+    }
 ```
 
-## Konversi PDF ke LaTeX/TeX
+## Mengonversi PDF ke TeX
 
-**Aspose.PDF untuk Java** mendukung konversi PDF ke LaTeX/TeX. Format file LaTeX adalah format file teks dengan penandaan khusus dan digunakan dalam sistem persiapan dokumen berbasis TeX untuk penyusunan berkualitas tinggi.
+Gunakan contoh ini ketika konten PDF harus diekspor ke markup TeX.
 
-Untuk mengonversi file PDF ke TeX, Aspose.PDF memiliki kelas [TeXSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/TeXSaveOptions) yang menyediakan metode `setOutDirectoryPath` untuk menyimpan gambar sementara selama proses konversi.
-
-Cuplikan kode berikut menunjukkan proses konversi file PDF ke format TEX dengan Java.
-
-```java
-String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX.pdf").toString();
-String texDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToTeX_out.tex").toString();
-
-// Buat objek Dokumen
-Document document = new Document(documentFileName);
-
-// Instansiasi opsi simpan LaTex
-TeXSaveOptions saveOptions = new TeXSaveOptions();
-
-// Tentukan direktori output
-String pathToOutputDirectory = DATA_DIR.toString();
-
-// Setel jalur direktori output untuk objek opsi simpan
-saveOptions.setOutDirectoryPath(pathToOutputDirectory);
-
-// Simpan file PDF ke dalam format LaTex
-document.save(texDocumentFileName, saveOptions);
-document.close();
-```
-
-
-{{% alert color="success" %}}
-**Coba konversi PDF ke LaTeX/TeX secara online**
-
-Aspose.PDF untuk Java menyajikan aplikasi online gratis ["PDF ke LaTeX"](https://products.aspose.app/pdf/conversion/pdf-to-tex), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitas kerjanya.
-
-[![Aspose.PDF Konversi PDF ke LaTeX/TeX dengan Aplikasi Gratis](pdf_to_latex.png)](https://products.aspose.app/pdf/conversion/pdf-to-tex)
-{{% /alert %}}
-
-## Konversi PDF ke Teks
-
-**Aspose.PDF untuk Java** mendukung konversi seluruh dokumen PDF dan halaman tunggal ke file Teks.
-
-### Konversi seluruh dokumen PDF ke file Teks
-
-Anda dapat mengonversi dokumen PDF ke file TXT menggunakan metode Visit dari kelas [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber).
-
-Cuplikan kode berikut menjelaskan cara mengekstrak teks dari semua halaman.
+1. Buka PDF sumber di instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`TeXSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/texsaveoptions/) untuk serialisasi TeX.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga konten PDF dikeluarkan sebagai markup TeX.
+1. Simpan file TeX yang dihasilkan.
 
 ```java
-// Buka dokumen
-String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
-String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
-
-// Muat dokumen PDF
-Document document = new Document(pdfFileName);
-TextAbsorber ta = new TextAbsorber();
-ta.visit(document);
-// Simpan teks yang diekstrak dalam file teks
-BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-writer.write(ta.getText());
-writer.close();
-```
-
-
-{{% alert color="success" %}}
-**Coba untuk mengonversi PDF ke Teks secara online**
-
-Aspose.PDF untuk Java menyajikan aplikasi gratis online ["PDF ke Teks"](https://products.aspose.app/pdf/conversion/pdf-to-txt), di mana Anda dapat mencoba untuk menyelidiki fungsi dan kualitas kerjanya.
-
-[![Aspose.PDF Konversi PDF ke Teks dengan Aplikasi Gratis](pdf_to_text.png)](https://products.aspose.app/pdf/conversion/pdf-to-txt)
-{{% /alert %}}
-
-### Mengonversi halaman PDF ke file teks
-
-Anda dapat mengonversi dokumen PDF ke file TXT dengan Aspose.PDF untuk Java. Anda harus menggunakan metode Visit dari kelas [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber) untuk menyelesaikan tugas ini.
-
-Cuplikan kode berikut menjelaskan cara mengekstrak teks dari halaman tertentu.
-
-```java
-String pdfFileName = Paths.get(DATA_DIR.toString(), "demo.pdf").toString();
-String txtFileName = Paths.get(DATA_DIR.toString(), "PDFToTXT_out.txt").toString();
-
-// Memuat dokumen PDF
-Document document = new Document(pdfFileName);
-
-TextAbsorber ta = new TextAbsorber();
-int[] pages = new int[] { 1, 3, 4 };
-
-for (int page : pages) {
-    ta.visit(document.getPages().get_Item(page));
+public static void convertPdfToTex(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), new TeXSaveOptions());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
-
-// Menyimpan teks yang diekstrak dalam file teks
-BufferedWriter writer = new BufferedWriter(new FileWriter(txtFileName));
-writer.write(ta.getText());
-writer.close();
-document.close();
 ```
 
+## Mengonversi PDF ke teks biasa
 
-## Mengonversi PDF ke XPS
+Gunakan contoh ini ketika dokumen PDF harus diekspor sebagai file teks.
 
-**Aspose.PDF untuk Java** memberikan kemungkinan untuk mengonversi file PDF ke format <abbr title="XML Paper Specification">XPS</abbr>. Mari coba gunakan cuplikan kode yang disajikan untuk mengonversi file PDF ke format XPS dengan Java.
-
-{{% alert color="success" %}}
-**Coba mengonversi PDF ke XPS secara online**
-
-Aspose.PDF untuk Java menyajikan aplikasi online gratis ["PDF to XPS"](https://products.aspose.app/pdf/conversion/pdf-to-xps), di mana Anda dapat mencoba menyelidiki fungsionalitas dan kualitasnya.
-
-[![Aspose.PDF Konversi PDF ke XPS dengan Aplikasi Gratis](pdf_to_xps.png)](https://products.aspose.app/pdf/conversion/pdf-to-xps)
-{{% /alert %}}
-
-Tipe file XPS terutama dikaitkan dengan Spesifikasi Kertas XML oleh Microsoft Corporation. Spesifikasi Kertas XML (XPS), sebelumnya diberi nama kode Metro dan mencakup konsep pemasaran Next Generation Print Path (NGPP), adalah inisiatif Microsoft untuk mengintegrasikan pembuatan dan tampilan dokumen ke dalam sistem operasi Windows.
-
-Untuk mengonversi file PDF ke XPS, Aspose.PDF memiliki kelas [XpsSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/XpsSaveOptions) yang digunakan sebagai argumen kedua untuk konstruktor Document.save(..) untuk menghasilkan file XPS.
- Cuplikan kode berikut menunjukkan proses konversi file PDF ke dalam format XPS.
+1. Buka PDF sumber di instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`TextDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/textdevice/) untuk mengekstrak konten teks dari halaman PDF.
+1. Panggil `device.process(document.getPages().get_Item(1), outputFile.toString())` menulis halaman pertama sebagai teks biasa.
+1. Simpan file output teks.
 
 ```java
-String documentFileName = Paths.get(DATA_DIR.toString(), "sample.pdf").toString();
-String xpsDocumentFileName = Paths.get(DATA_DIR.toString(), "sample-res-xps.xps").toString();
+public static void convertPdfToTxt(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextDevice device = new TextDevice();
+        device.process(document.getPages().get_Item(1), outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-// Buat objek Dokumen
-Document document = new Document(documentFileName);
+## Mengubah PDF ke XPS
 
-// Instansiasi opsi Simpan XPS
-XpsSaveOptions saveOptions = new XpsSaveOptions();
+Gunakan contoh ini ketika dokumen PDF harus dikonversi ke format XPS.
 
-// Simpan output dalam format XML
-document.save(xpsDocumentFileName, saveOptions);
-document.close();
+1. Buka PDF sumber di instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`XpsSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xpssaveoptions/) dan aktifkan font TrueType tersemat.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga PDF diserialkan sebagai XPS dengan sumber daya font yang disematkan.
+1. Simpan file XPS yang telah dikonversi.
+
+```java
+public static void convertPdfToXps(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        XpsSaveOptions saveOptions = new XpsSaveOptions();
+        saveOptions.setUseEmbeddedTrueTypeFonts(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## Mengonversi PDF ke Markdown
+
+Gunakan contoh ini ketika konten PDF harus diekspor sebagai Markdown.
+
+1. Buka PDF sumber di instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat [`MarkdownSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/markdownsaveoptions/) dan konfigurasikan direktori sumber daya gambar plus output tag gambar HTML.
+1. Panggil `document.save(outputFile.toString(), saveOptions)` sehingga konten PDF dihasilkan sebagai Markdown dengan sumber gambar eksternal.
+1. Simpan file Markdown yang dihasilkan.
+
+```java
+public static void convertPdfToMd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
+        saveOptions.setResourcesDirectoryName("images");
+        saveOptions.setUseImageHtmlTag(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## Mengonversi PDF ke Mobi XML
+
+Gunakan contoh ini ketika konten PDF harus diekspor ke XML yang kompatibel dengan Mobi.
+
+1. Buka PDF sumber di instans [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Pilih [`SaveFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/saveformat/) `MobiXml` sebagai format serialisasi target.
+1. Panggil `document.save(outputFile.toString(), SaveFormat.MobiXml)` sehingga PDF diekspor sebagai XML yang kompatibel dengan Mobi.
+1. Simpan file yang telah dikonversi.
+
+```java
+public static void convertPdfToMobiXml(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.save(outputFile.toString(), SaveFormat.MobiXml);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

@@ -190,6 +190,6 @@ def control_z_order_of_rectangle(outfile: str):
 ## موضوعات الرسم البياني ذات الصلة
 
 - [العمل مع الرسوم البيانية PDF في بايثون](/pdf/ar/python-net/working-with-graphs/)
-- [تحقق من حدود الشكل في رسوم PDF باستخدام Python](/pdf/ar/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [تحقق من حدود الشكل في رسوم PDF باستخدام Python](/pdf/ar/python-net/checking-shape-bounds/)
 - [أضف أشكال الخطوط إلى PDF في Python](/pdf/ar/python-net/add-line/)
 - [أضف الأشكال البيضاوية إلى PDF في Python](/pdf/ar/python-net/add-ellipse/)

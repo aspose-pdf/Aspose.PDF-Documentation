@@ -1,49 +1,31 @@
 ---
-title: استخراج الصور من ملف PDF
-linktitle: استخراج الصور
+title: استخراج الصور من PDF باستخدام Java
+linktitle: استخراج الصور من PDF
 type: docs
 weight: 20
 url: /ar/java/extract-images-from-the-pdf-file/
-description: كيفية استخراج جزء من الصورة من ملف PDF باستخدام Aspose.PDF for Java
-lastmod: "2021-06-05"
+description: تعرّف على كيفية استخراج الصور المدمجة من ملفات PDF باستخدام Aspose.PDF for Java.
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: كيفية استخراج الصور من PDF عبر Java
+Abstract: تشرح هذه المقالة كيفية استخراج الصور المدمجة من مستند PDF باستخدام Aspose.PDF for Java. توضح كيفية فتح ملف PDF المصدر، والوصول إلى صورة من مجموعة موارد الصفحة، وحفظ XImage المستخرج إلى ملف خارجي.
 ---
+استخراج الصور من صفحات PDF عندما تحتاج إلى إعادة استخدام الرسومات المدمجة، أو فحص أصول المستند، أو تصدير الصور للمعالجة اللاحقة.
 
-يحتوي كل صفحة في مستند PDF على موارد (صور، نماذج وخطوط). يمكننا الوصول إلى هذه الموارد عن طريق استدعاء طريقة [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--). تحتوي فئة [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) على [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) ويمكننا الحصول على قائمة بالصور عن طريق استدعاء طريقة [getImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--).
-
-لذلك، لاستخراج صورة من الصفحة، نحتاج إلى الحصول على مرجع إلى الصفحة، ثم إلى موارد الصفحة وأخيرًا إلى مجموعة الصور.
-يمكننا استخراج صورة معينة على سبيل المثال عن طريق الفهرس.
-
-يعيد فهرس الصورة كائن [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage).
-This object provides a [Save](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-) method which can be used to save the extracted image. The following code snippet shows how to extract images from a PDF file.
+1. افتح ملف PDF المصدر في كائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح تدفق إخراج لملف الصورة المستخرجة.
+1. احصل على الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) من المستند والوصول إلىه مجموعة `Resources.Images`.
+1. استرجع الكائن المطلوب [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) من مجموعة الصور تلك بواسطة الفهرس.
+1. استدعِ `image.save(outputImage)` لكتابة بايتات الصورة المستخرجة إلى التدفق الهدف.
 
 ```java
-public static void Extract_Images(){
-       // المسار إلى دليل المستندات.
-       String _dataDir = "/home/admin1/pdf-examples/Samples/";
-       String filePath = _dataDir + "ExtractImages.pdf";
-
-       // تحميل مستند PDF
-       com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-       com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
-       com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
-       // استخراج صورة معينة
-       com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
-
-       try {
-           java.io.FileOutputStream outputImage = new java.io.FileOutputStream(_dataDir + "output.jpg");
-           // حفظ الصورة المستخرجة
-           xImage.save(outputImage);
-           outputImage.close();
-       } catch (java.io.FileNotFoundException e) {
-           // TODO: التعامل مع الاستثناء
-           e.printStackTrace();
-       } catch (java.io.IOException e) {
-           // TODO: التعامل مع الاستثناء
-           e.printStackTrace();
-       }
-   }
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
 ```

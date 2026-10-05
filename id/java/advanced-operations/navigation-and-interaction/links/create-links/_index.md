@@ -1,96 +1,116 @@
 ---
-title: Buat Tautan di file PDF
-linktitle: Buat Tautan
+title: "Membuat tautan PDF di Java"
+linktitle: "Membuat tautan"
 type: docs
 weight: 10
 url: /id/java/create-links/
-description: Bagian ini menjelaskan cara membuat tautan dalam dokumen PDF Anda dengan Java.
-lastmod: "2021-06-05"
+description: Pelajari cara membuat tautan PDF internal, eksternal, dan remote di Java.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Membuat anotasi tautan di file PDF dengan Java"
+Abstract: Artikel ini menunjukkan cara membuat anotasi tautan menggunakan Aspose.PDF for Java. Ini mencakup tindakan peluncuran, navigasi dokumen jarak jauh, navigasi halaman dalam dokumen, dan tautan web berbasis URI dengan melampirkan tindakan ke objek LinkAnnotation.
 ---
+Aspose.PDF for Java menggunakan `LinkAnnotation` bersama dengan objek aksi untuk mendefinisikan perilaku tautan.
 
-## Buat Tautan
+## Membuat tautan aksi peluncuran
 
-Aspose.PDF untuk Java memungkinkan Anda menambahkan tautan ke file PDF eksternal sehingga Anda dapat menghubungkan beberapa dokumen bersama. Dengan menambahkan tautan ke aplikasi dalam dokumen, dimungkinkan untuk menautkan ke aplikasi dari dokumen. Ini berguna ketika Anda ingin pembaca melakukan tindakan tertentu pada titik tertentu dalam tutorial, misalnya, atau untuk membuat dokumen yang kaya fitur. Untuk membuat tautan aplikasi:
+Gunakan contoh ini ketika anotasi tautan harus meluncurkan file eksternal atau target.
 
-1. [Buat Objek Dokumen](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Dapatkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) yang ingin Anda tambahkan tautan.
-
-1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) menggunakan objek [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) dan [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
-1. Atur atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
-1. Juga, atur ke objek [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction) dan panggil metode setAction(..).
-1. Saat membuat objek [LaunchAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/LaunchAction), tentukan aplikasi yang ingin Anda luncurkan.
-1. Tambahkan tautan ke koleksi [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) objek Page.
-1. Terakhir, simpan PDF yang diperbarui menggunakan metode Save objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-Kode berikut menunjukkan cara membuat tautan ke aplikasi dalam file PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan pilih halaman target.
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dan mengonfigurasi batas serta warnanya.
+1. Tetapkan sebuah [`LaunchAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/launchaction/) dan simpan dokumen.
 
 ```java
-package com.aspose.pdf.contoh;
-
-import com.aspose.pdf.*;
-
-
-public class ContohTautan {
-
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/";
-
-    private static String GetDataDir() {
-        String os = System.getProperty("os.name");
-        if (os.startsWith("Windows"))
-            _dataDir = "C:\\Samples\\Links-Actions";
-        return _dataDir;
-    }
-
-    public static void CreateLink() {
-
-        // Buka dokumen
-        Document document = new Document(GetDataDir() + "CreateApplicationLink.pdf");
-
-        // Buat tautan
+public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
-        link.setColor(Color.getGreen());
-        link.setAction(new LaunchAction(document, _dataDir + "sample.pdf"));
-        page.getAnnotations().add(link);
 
-        // Simpan dokumen yang telah diperbarui
-        document.save(_dataDir + "CreateApplicationLink_out.pdf");
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        Border border = new Border(link);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        link.setBorder(border);
+        link.setColor(Color.getGreen());
+        link.setAction(new LaunchAction(document, inputFile.toString()));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
     }
+}
 ```
 
-### Membuat Tautan Dokumen PDF dalam File PDF
+## Membuat tautan go-to remote
 
-Aspose.PDF untuk Java memungkinkan Anda menambahkan tautan ke file PDF eksternal sehingga Anda dapat menghubungkan beberapa dokumen bersama.
- Untuk membuat tautan dokumen PDF:
+Gunakan contoh ini ketika tautan harus membuka halaman di dokumen PDF lain.
 
-1. Pertama, buat objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-1. Kemudian, dapatkan [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) tertentu yang ingin Anda tambahkan tautannya.
-1. Buat objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation) menggunakan objek [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) dan [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Rectangle).
-1. Atur atribut tautan menggunakan objek [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation).
-1. Panggil metode setAction(..) dan berikan objek [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction).
-1. Saat membuat objek [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToRemoteAction), tentukan file PDF yang harus diluncurkan, serta nomor halaman yang harus dibuka.
-1. Tambahkan tautan ke koleksi [Annotations](https://reference.aspose.com/pdf/java/com.aspose.pdf/AnnotationCollection) objek Page.
-1. Akhirnya, simpan PDF yang telah diperbarui menggunakan metode Save objek [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).
-
-Cuplikan kode berikut menunjukkan cara membuat tautan dokumen PDF dalam file PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) pada halaman target.
+1. Tetapkan sebuah [`GoToRemoteAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) dan simpan file output.
 
 ```java
-    public static void CreatePDFDocumentLink() {
-
-        // Buka dokumen
-        Document document = new Document(_dataDir + "CreateDocumentLink.pdf");
-
-        // Buat tautan
+public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         Page page = document.getPages().get_Item(1);
-        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(100, 200, 300, 300));
-        link.setColor(Color.getGreen());
-        link.setAction(new GoToRemoteAction(_dataDir + "sample.pdf", 1));
-        page.getAnnotations().add(link);
 
-        // Simpan dokumen yang telah diperbarui
-        document.save(_dataDir + "CreateDocumentLink_out.pdf");
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        link.setColor(Color.getGreen());
+        link.setAction(new GoToRemoteAction(inputFile.toString(), 1));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
     }
+}
+```
+
+## Membuat tautan go-to internal
+
+Gunakan contoh ini ketika tautan harus menavigasi ke halaman lain di dalam dokumen PDF yang sama.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) dan konfigurasikan tampilannya.
+1. Tetapkan sebuah [`GoToAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) ke halaman tujuan dan simpan dokumen.
+
+```java
+public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        Border border = new Border(link);
+        border.setWidth(5);
+        border.setDash(new Dash(1, 1));
+        link.setBorder(border);
+        link.setColor(Color.getGreen());
+        if (document.getPages().size() >= 4) {
+            link.setAction(new GoToAction(document.getPages().get_Item(4)));
+        } else {
+            link.setAction(new GoToAction(document.getPages().get_Item(document.getPages().size())));
+        }
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Membuat tautan URI
+
+Gunakan contoh ini ketika tautan harus membuka sumber daya web melalui aksi URI.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Buat sebuah [`LinkAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) pada halaman.
+1. Tetapkan sebuah [`GoToURIAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) dan simpan file output.
+
+```java
+public static void createLinkAnnotationGoToUriAction(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        LinkAnnotation link = new LinkAnnotation(page, new Rectangle(10, 580, 120, 600, true));
+        link.setColor(Color.getGreen());
+        link.setAction(new GoToURIAction("https://docs.aspose.com/pdf/python"));
+        page.getAnnotations().add(link);
+        document.save(outputFile.toString());
+    }
+}
 ```

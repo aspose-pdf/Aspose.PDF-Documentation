@@ -1,12 +1,14 @@
 ---
-title: Ajouter JavaScript dans Python
+title: Ajouter du JavaScript en Python
+linktitle: Ajouter du JavaScript en Python
 type: docs
 weight: 10
-url: /fr/java/adding-javascript-in-python/
-lastmod: "2021-06-05"
+url: /java/adding-javascript-in-python/
+description: Découvrez comment intégrer du code JavaScript dans un document PDF à l'aide de Python et Aspose.PDF pour améliorer l'interactivité.
+lastmod: "2026-09-21"
 ---
 
-Pour ajouter JavaScript en utilisant Aspose.PDF Java dans Python, invoquez simplement la méthode AddJavascript() de la classe Document.
+Pour ajouter du JavaScript à l'aide d'Aspose.PDF Java en Python, utilisez la méthode AddJavascript() de la classe Document.
 
 ```python
 
@@ -17,22 +19,22 @@ pdf=self.dataDir + 'Template.pdf'
 javaScript = self.JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
 doc.setOpenAction(javaScript)
-js=self.JavascriptAction("app.alert('la page 2 est ouverte')")
+js=self.JavascriptAction("app.alert('page 2 is opened')")
 
-# Ajout de JavaScript au niveau de la page
+# Adding JavaScript at Page Level
 doc.getPages.get_Item(2)
 doc.getActions().setOnOpen(js())
-doc.getPages().get_Item(2).getActions().setOnClose(self.JavascriptAction("app.alert('la page 2 est fermée')"))
+doc.getPages().get_Item(2).getActions().setOnClose(self.JavascriptAction("app.alert('page 2 is closed')"))
 
-# Enregistrer le document PDF
+# Save PDF Document
 doc.save(self.dataDir + "JavaScript-Added.pdf")
 
-print "JavaScript ajouté avec succès, veuillez vérifier le fichier de sortie."
+print "Added JavaScript Successfully, please check the output file."
 
 ```
 
-**Télécharger le code en cours d'exécution**
+**Télécharger l’exemple de code**
 
-Téléchargez **Ajouter JavaScript (Aspose.PDF)** à partir de l'un des sites de codage social mentionnés ci-dessous :
+Téléchargez **Ajouter du JavaScript (Aspose.PDF)** à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/AddJavascript/AddJavascript.py)

@@ -35,7 +35,7 @@ Abstract: このセクションでは、.NET 経由で Python 用 Aspose.PDF の
 
 境界チェックを使用してシェイプの配置を検証することもできます。
 
-- [Python を使用して PDF グラフの形状の境界をチェックする](/pdf/ja/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Python を使用して PDF グラフの形状の境界をチェックする](/pdf/ja/python-net/checking-shape-bounds/)
 
 このセクションの例を次の図に示します。
 

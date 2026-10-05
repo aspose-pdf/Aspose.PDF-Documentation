@@ -1,104 +1,69 @@
 ---
-title: Tambahkan Halaman dalam PDF
-linktitle: Tambahkan Halaman
+title: "Menambahkan halaman PDF dalam Java"
+linktitle: "Menambahkan halaman"
 type: docs
 weight: 10
 url: /id/java/add-pages/
-description: Artikel ini mengajarkan cara menyisipkan (menambahkan) halaman pada lokasi yang diinginkan dalam file PDF. Pelajari cara memindahkan, menghapus (menghapus) halaman dari file PDF menggunakan pustaka Java.
-lastmod: "2021-06-05"
+description: Pelajari cara menambahkan atau menyisipkan halaman ke dalam dokumen PDF menggunakan Java.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menambahkan atau menyisipkan halaman PDF dengan Java"
+Abstract: Artikel ini menjelaskan cara menambahkan halaman ke file PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup penyisipan halaman kosong pada posisi tertentu, menambahkan halaman di akhir dokumen, dan mengimpor halaman dari PDF lain.
 ---
+Aspose.PDF for Java memungkinkan Anda menyisipkan halaman kosong atau mengimpor halaman dari dokumen lain.
 
-## Tambahkan atau Sisipkan Halaman dalam File PDF
+## Menyisipkan halaman kosong pada posisi tertentu
 
-Aspose.PDF untuk Java memungkinkan Anda menyisipkan halaman ke dalam dokumen PDF di lokasi mana pun dalam file serta menambahkan halaman ke akhir file PDF. Anda perlu memberikan lokasi di mana Anda ingin menyisipkan halaman kosong ke metode insert. Bagian ini menunjukkan cara menambahkan halaman ke PDF dengan Aspose.PDF untuk Java.
+Gunakan contoh ini ketika Anda perlu menambahkan halaman kosong di tengah PDF yang sudah ada.
 
-### Sisipkan Halaman Kosong dalam File PDF di Lokasi yang Diinginkan
-
-Cuplikan kode berikut menunjukkan cara menyisipkan halaman kosong ke dalam file PDF:
-
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dengan file PDF input.
-
-1. Panggil metode Insert dari koleksi [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection) dengan indeks yang ditentukan.
-1. Simpan PDF keluaran menggunakan metode Save.
-
-Cuplikan kode berikut menunjukkan cara menyisipkan halaman dalam file PDF.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Masukkan halaman baru ke posisi target dalam koleksi halaman.
+1. Simpan dokumen yang diperbarui.
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleAddPages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation() {
-        Document document = new Document();
-
-        // Tambahkan halaman
-        document.getPages().add();
-
-        // Sisipkan halaman kosong ke dalam PDF
+public static void insertEmptyPage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         document.getPages().insert(2);
-
-        // Simpan PDF yang diperbarui
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
-Pada contoh di atas, kami menambahkan halaman kosong dengan parameter default. Jika Anda perlu membuat ukuran halaman sama dengan halaman lain dalam dokumen, Anda harus menambahkan beberapa baris kode:
+## Menambahkan halaman kosong di akhir
+
+Gunakan contoh ini ketika Anda perlu memperluas dokumen dengan halaman terakhir yang kosong baru.
+
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Tambahkan halaman baru ke akhir koleksi halaman.
+1. Simpan PDF yang dimodifikasi.
 
 ```java
-    public static void InsertEmptyPageInPDFFileAtDesiredLocation01() {
-        Document document = new Document();
-
-        // Tambahkan halaman
-        Page page1 = document.getPages().add();
-
-        // Sisipkan halaman kosong ke dalam PDF
-        Page page2 = document.getPages().insert(2);
-        ;
-        // salin parameter halaman dari halaman 1
-        page2.setArtBox(page1.getArtBox());
-        page2.setBleedBox(page1.getBleedBox());
-        page2.setCropBox(page1.getCropBox());
-        page2.setMediaBox(page1.getMediaBox());
-        page2.setTrimBox(page1.getTrimBox());
-
-        // Simpan PDF yang diperbarui
-        document.save(_dataDir + "InsertEmptyPage_out.pdf");
+public static void addEmptyPageToEnd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().add();
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Menambahkan halaman dari dokumen lain
 
-### Tambahkan Halaman Kosong di Akhir File PDF
+Gunakan contoh ini ketika Anda ingin mengimpor halaman dari satu PDF ke PDF lain.
 
-Terkadang, Anda ingin memastikan bahwa dokumen berakhir pada halaman kosong. Topik ini menjelaskan cara menyisipkan halaman kosong di akhir dokumen PDF.
-
-Untuk menyisipkan halaman kosong di akhir file PDF:
-
-1. Buat objek kelas [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) dengan file PDF input.
-1. Panggil metode Add koleksi [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/PageCollection), tanpa parameter apapun.
-1. Simpan PDF output menggunakan metode Save.
-
-Cuplikan kode berikut menunjukkan cara menyisipkan halaman kosong di akhir file PDF.
+1. Buat tujuan [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan buka dokumen sumber.
+1. Tambahkan konten tujuan yang diperlukan dan impor halaman target dari PDF sumber.
+1. Simpan dokumen yang dihasilkan.
 
 ```java
-public static void AddAnEmptyPageAtTheEndOfAPDFFile() {
-
-        Document document = new Document();
-        // Tambahkan halaman
-        document.getPages().add();
-
-        // Sisipkan halaman kosong di akhir file PDF
-        document.getPages().add();
-
-        // Simpan PDF yang diperbarui
-        document.save(_dataDir + "InsertEmptyPageAtEnd_out.pdf");
+public static void addPageFromAnotherDocument(Path inputFile, Path outputFile) {
+    try (Document document = new Document();
+         Document anotherDocument = new Document(inputFile.toString())) {
+        document.getPages().add().getParagraphs().add(new TextFragment("This is first page!"));
+        document.getPages().add(anotherDocument.getPages().get_Item(1));
+        document.save(outputFile.toString());
     }
-
 }
 ```

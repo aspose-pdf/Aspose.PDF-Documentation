@@ -1,47 +1,48 @@
 ---
-title: الحصول على صفحة معينة في ملف PDF باستخدام روبي
+title: الحصول على صفحة محددة في ملف PDF باستخدام Ruby
+linktitle: الحصول على صفحة محددة في ملف PDF باستخدام Ruby
 type: docs
 weight: 30
 url: /ar/java/get-a-particular-page-in-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: الوصول إلى الصفحات الفردية وتعديلها في مستندات PDF باستخدام Ruby و Aspose.PDF.
+lastmod: "2026-10-01"
 ---
-
 ## Aspose.PDF - الحصول على صفحة
 
-للحصول على صفحة معينة في مستند PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **GetPage**.
+للحصول على صفحة محددة في مستند PDF باستخدام **Aspose.PDF Java for Ruby**، ما عليك سوى استدعاء وحدة **GetPage**.
 
-كود روبي
+كود Ruby
 
 ```java
-# المسار إلى دليل المستندات.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# افتح المستند المستهدف
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# احصل على الصفحة عند فهرس معين من مجموعة الصفحات
+# get the page at particular index of Page Collection
 
 pdf_page = pdf.getPages().get_Item(1)
 
-# أنشئ كائن مستند جديد
+# create a new Document object
 
 new_document = Rjb::import('com.aspose.pdf.Document').new
 
-# إضافة الصفحة إلى مجموعة الصفحات في كائن المستند الجديد
+# add page to pages collection of new document object
 
 new_document.getPages().add(pdf_page)
 
-# احفظ ملف PDF الذي تم إنشاؤه حديثًا
+# save the newly generated PDF file
 
 new_document.save(data_dir + "output.pdf")
 
-puts "تمت العملية بنجاح!"
+puts "Process completed successfully!"
 ```
 
-## تنزيل الكود الجاري
+## تحميل الكود الجاري
 
-قم بتنزيل **Get Page (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+تحميل **Get Page (Aspose.PDF)**В منВ أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getpage.rb)

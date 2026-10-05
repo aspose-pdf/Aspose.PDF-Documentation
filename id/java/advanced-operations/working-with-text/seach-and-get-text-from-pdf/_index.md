@@ -1,185 +1,311 @@
 ---
-title: Mencari dan Mendapatkan Teks dari Halaman Dokumen PDF
-linktitle: Mencari dan Mendapatkan Teks
+title: "Mencari dan mengekstrak teks PDF dalam Java"
+linktitle: "Mencari dan mendapatkan teks"
 type: docs
 weight: 60
 url: /id/java/search-and-get-text-from-pdf/
-description: Artikel ini menjelaskan cara menggunakan berbagai alat untuk mencari dan mendapatkan teks dari dokumen PDF. Kita dapat mencari dengan ekspresi reguler dari halaman tertentu atau seluruh halaman.
-lastmod: "2021-06-05"
+description: Pelajari cara mencari, memeriksa, dan mengekstrak teks dari dokumen PDF di Java.
+lastmod: "2026-09-30"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Mencari teks PDF dan memeriksa fragmen yang diekstrak di Java"
+Abstract: Artikel ini menjelaskan cara mencari dan mengekstrak teks dari dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup TextAbsorber dan TextFragmentAbsorber, termasuk ekstraksi berbasis wilayah, pencarian spesifik halaman, pencocokan regex dan frasa, penyisipan hyperlink, inspeksi teks bergaya, dan penyorotan fragmen.
 ---
+Aspose.PDF for Java mendukung ekstraksi teks mentah dan pencarian tingkat fragmen dengan koordinat, gaya, dan pencocokan regex.
 
-## Mencari dan Mendapatkan Teks dari Semua Halaman Dokumen PDF
+## Mengekstrak teks dari semua halaman dengan TextAbsorber
 
-TextFragmentAbsorber memungkinkan Anda untuk menemukan teks, yang cocok dengan frasa tertentu, dari semua halaman dokumen PDF.
+Gunakan contoh ini ketika Anda memerlukan teks yang diekstrak secara polos dari wilayah dokumen yang dipilih di semua halaman.
 
-Untuk mencari teks di seluruh dokumen, panggil metode accept() koleksi [Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page).
- The [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) method takes a TextFragmentAbsorber object as a parameter, which returns a collection of TextFragment objects. Loop through all the fragments to get their properties, for example Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor etc.
-
-Metode [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) menerima objek TextFragmentAbsorber sebagai parameter, yang mengembalikan koleksi objek TextFragment. Loop melalui semua fragmen untuk mendapatkan propertinya, misalnya Text, Position, XIndent, YIndent, FontName, FontSize, IsAccessible, IsEmbedded, IsSubset, ForegroundColor dll.
-
-The following code snippet shows how to search an the entire document and display all matches in a console.
-
-Cuplikan kode berikut menunjukkan bagaimana mencari seluruh dokumen dan menampilkan semua kecocokan di konsol.
+1. Buka dokumen PDF sumber.
+1. Buat `TextExtractionOptions` dan berbasis wilayah `TextSearchOptions`.
+1. Jalankan `TextAbsorber` pada semua halaman dan keluarkan teks yang diekstrak.
 
 ```java
-// Open document
-// Buka dokumen
-Document pdfDocument = new Document("input.pdf");
+public static void textAbsorberSearch(Path inputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            TextExtractionOptions textExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+            TextSearchOptions textSearchOptions = new TextSearchOptions(new Rectangle(0, 0, 842, 250, true));
+            TextAbsorber absorber = new TextAbsorber(textExtractionOptions, textSearchOptions);
 
-// Create TextAbsorber object to find all instances of the input search phrase
-// Buat objek TextAbsorber untuk menemukan semua instansi dari frasa pencarian input
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("sample");
-
-// Accept the absorber for all the pages
-// Terima absorber untuk semua halaman
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// Get the extracted text fragments into collection
-// Dapatkan fragmen teks yang diekstraksi ke dalam koleksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// Loop through the fragments
-// Loop melalui fragmen
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    System.out.println("Text :- " + textFragment.getText());
-    System.out.println("Position :- " + textFragment.getPosition());
-    System.out.println("XIndent :- " + textFragment.getPosition().getXIndent());
-    System.out.println("YIndent :- " + textFragment.getPosition().getYIndent());
-    System.out.println("Font - Name :- " + textFragment.getTextState().getFont().getFontName());
-    System.out.println("Font - IsAccessible :- " + textFragment.getTextState().getFont().isAccessible());
-    System.out.println("Font - IsEmbedded - " + textFragment.getTextState().getFont().isEmbedded());
-    System.out.println("Font - IsSubset :- " + textFragment.getTextState().getFont().isSubset());
-    System.out.println("Font Size :- " + textFragment.getTextState().getFontSize());
-    System.out.println("Foreground Color :- " + textFragment.getTextState().getForegroundColor());
-}
+            document.getPages().accept(absorber);
+            System.out.println("Text fragments found: " + absorber.getText());
+        }
+    }
 ```
 
-Untuk mencari teks pada halaman tertentu dan mendapatkan properti yang terkait dengannya, sediakan indeks halaman:
+## Mengekstrak teks dari satu halaman dengan TextAbsorber
+
+Gunakan contoh ini ketika ekstraksi teks biasa harus dibatasi hanya satu halaman.
+
+1. Buka dokumen PDF sumber.
+1. Konfigurasikan ekstraksi teks dan opsi pencarian dengan wilayah target.
+1. Jalankan `TextAbsorber` pada halaman yang dipilih dan keluarkan hasilnya.
 
 ```java
-// Terima absorber untuk halaman pertama dokumen
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
-```
+public static void textAbsorberSearchPage(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextExtractionOptions textExtractionOptions = new TextExtractionOptions(TextExtractionOptions.TextFormattingMode.Pure);
+        TextSearchOptions textSearchOptions = new TextSearchOptions(new Rectangle(0, 0, 842, 250, true));
+        TextAbsorber absorber = new TextAbsorber(textExtractionOptions, textSearchOptions);
 
-## Mencari dan Mendapatkan Segmen Teks dari Halaman PDF
-
-Untuk mencari segmen teks di semua halaman dalam dokumen, dapatkan objek TextFragment dari dokumen tersebut.
-
-TextFragmentAbsorber memungkinkan Anda menemukan teks yang cocok dengan frasa tertentu dari semua halaman dalam dokumen PDF. Untuk mencari teks di seluruh dokumen, panggil metode [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) dari koleksi [Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection). Metode [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) menerima objek TextFragmentAbsorber sebagai parameter, yang mengembalikan koleksi objek TextFragment.
-
-{{% alert color="primary" %}}
-
-Ketika koleksi TextFragmentCollection telah diambil dari dokumen, lakukan perulangan melalui koleksi tersebut untuk mendapatkan koleksi TextSegmentCollection dari setiap objek TextFragment.
- Setelah itu, Anda dapat mendapatkan properti objek TextSegment individual.
-
-{{% /alert %}}
-
-Cuplikan kode berikut menunjukkan cara mencari segmen teks di semua halaman.
-
-```java
-// Buka dokumen
-Document pdfDocument = new Document("input.pdf");
-
-// Buat objek TextAbsorber untuk menemukan semua instance dari frasa pencarian input
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("sample");
-
-// Terima absorber untuk halaman pertama dokumen
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// Dapatkan fragmen teks yang diekstraksi ke dalam koleksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// Loop melalui fragmen teks
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    // Iterasi melalui segmen teks
-    for (TextSegment textSegment : (Iterable<TextSegment>) textFragment.getSegments()) {
-        System.out.println("Teks :- " + textSegment.getText());
-        System.out.println("Posisi :- " + textSegment.getPosition());
-        System.out.println("XIndent :- " + textSegment.getPosition().getXIndent());
-        System.out.println("YIndent :- " + textSegment.getPosition().getYIndent());
-        System.out.println("Font - Nama :- " + textSegment.getTextState().getFont().getFontName());
-        System.out.println("Font - IsAccessible :- " + textSegment.getTextState().getFont().isAccessible());
-        System.out.println("Font - IsEmbedded - " + textSegment.getTextState().getFont().isEmbedded());
-        System.out.println("Font - IsSubset :- " + textSegment.getTextState().getFont().isSubset());
-        System.out.println("Ukuran Font :- " + textSegment.getTextState().getFontSize());
-        System.out.println("Warna Depan :- " + textSegment.getTextState().getForegroundColor());
+        document.getPages().get_Item(2).accept(absorber);
+        System.out.println("Text fragments found: " + absorber.getText());
     }
 }
 ```
 
-Untuk mencari segmen teks tertentu dan mendapatkan properti terkait, tentukan indeks halaman untuk halaman yang ingin Anda cari:
+## Memeriksa semua fragmen teks dalam dokumen
+
+Gunakan contoh ini ketika Anda membutuhkan konten teks bersamaan dengan metadata font, posisi, dan warna.
+
+1. Buka dokumen PDF sumber.
+1. Jalankan `TextFragmentAbsorber` di semua halaman.
+1. Iterasikan melalui fragmen dan keluarkan metadata mereka.
 
 ```java
-// Terima absorber untuk halaman pertama dokumen.
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber);
-```
+public static void textFragmentAbsorberSearch(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+        document.getPages().accept(absorber);
 
-## Mencari dan Mendapatkan Teks dari halaman menggunakan Ekspresi Reguler
-
-TextFragmentAbsorber membantu Anda mencari dan mengambil teks dari semua halaman dalam dokumen, berdasarkan ekspresi reguler.
-
-Untuk mencari dan mendapatkan teks dari sebuah dokumen:
-
-1. Berikan istilah pencarian sebagai ekspresi reguler ke konstruktor TextFragmentAbsorber.
-2. Atur properti TextSearchOptions objek TextFragmentAbsorber.
-   Properti ini memerlukan objek TextSearchOptions: berikan nilai true ke konstruktornya saat membuat objek baru.
-3. Untuk mengambil teks yang cocok dari semua halaman, panggil metode [accept()](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentAbsorber) dari koleksi [Pages](https://reference.aspose.com/pdf//java/com.aspose.pdf/pagecollection).
-
-   TextFragmentAbsorber mengembalikan TextFragmentCollection yang berisi semua fragmen yang sesuai dengan kriteria yang ditentukan oleh ekspresi reguler.
-
-Cuplikan kode berikut menunjukkan cara mencari semua halaman dalam dokumen dan mendapatkan teks berdasarkan ekspresi reguler.
-
-```java
-// Buka dokumen
-Document pdfDocument = new Document("source.pdf");
-
-// Buat objek TextAbsorber untuk menemukan semua instance dari frasa pencarian yang dimasukkan
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("\\d{4}-\\d{4}"); // seperti 1999-2000
-
-// Setel opsi pencarian teks untuk menentukan penggunaan ekspresi reguler
-TextSearchOptions textSearchOptions = new TextSearchOptions(true);
-textFragmentAbsorber.setTextSearchOptions(textSearchOptions);
-
-// Terima penyerap untuk halaman pertama dokumen
-pdfDocument.getPages().accept(textFragmentAbsorber);
-
-// Dapatkan fragmen teks yang diekstrak ke dalam koleksi
-TextFragmentCollection textFragmentCollection = textFragmentAbsorber.getTextFragments();
-
-// Loop melalui fragmen
-for (TextFragment textFragment : (Iterable<TextFragment>) textFragmentCollection) {
-    System.out.println("Teks :- " + textFragment.getText());
-    System.out.println("Posisi :- " + textFragment.getPosition());
-    System.out.println("XIndentasi :- " + textFragment.getPosition().getXIndent());
-    System.out.println("YIndentasi :- " + textFragment.getPosition().getYIndent());
-    System.out.println("Font - Nama :- " + textFragment.getTextState().getFont().getFontName());
-    System.out.println("Font - Dapat Diakses :- " + textFragment.getTextState().getFont().isAccessible());
-    System.out.println("Font - Tertanam :- " + textFragment.getTextState().getFont().isEmbedded());
-    System.out.println("Font - Subset :- " + textFragment.getTextState().getFont().isSubset());
-    System.out.println("Ukuran Font :- " + textFragment.getTextState().getFontSize());
-    System.out.println("Warna Depan :- " + textFragment.getTextState().getForegroundColor());
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+            System.out.println("XIndent: " + fragment.getPosition().getXIndent());
+            System.out.println("YIndent: " + fragment.getPosition().getYIndent());
+            System.out.println("Font - Name: " + fragment.getTextState().getFont().getFontName());
+            System.out.println("Font - IsAccessible: " + fragment.getTextState().getFont().isAccessible());
+            System.out.println("Font - IsEmbedded: " + fragment.getTextState().getFont().isEmbedded());
+            System.out.println("Font - IsSubset: " + fragment.getTextState().getFont().isSubset());
+            System.out.println("Font Size: " + fragment.getTextState().getFontSize());
+            System.out.println("Foreground Color: " + fragment.getTextState().getForegroundColor());
+        }
+    }
 }
 ```
 
+## Mencari satu frasa pada halaman tertentu
 
-Untuk mencari teks pada halaman tertentu dan mendapatkan propertinya, tentukan indeks halaman:
+Gunakan contoh ini ketika kata target harus ditemukan hanya pada halaman yang dipilih.
+
+1. Buka dokumen PDF sumber.
+1. Buat `TextFragmentAbsorber` dengan frasa target.
+1. Kunjungi halaman yang dipilih dan keluarkan posisi fragmen yang cocok.
 
 ```java
-// Terima absorber untuk halaman pertama dokumen.
-pdfDocument.getPages().get_Item(1).accept(textFragmentAbsorber)
+public static void textFragmentAbsorberSearchPage(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber("whale");
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
 ```
 
-Untuk mencari string baik dalam huruf besar atau kecil, Anda dapat mempertimbangkan menggunakan ekspresi reguler.
+## Melanjutkan pencarian berurutan di seluruh halaman
+
+Gunakan contoh ini ketika Anda ingin menggunakan kembali satu absorber saat berpindah dari pencarian satu halaman ke halaman berikutnya.
+
+1. Buka dokumen PDF sumber dan buat absorber yang dapat digunakan kembali.
+1. Cari halaman pertama dan periksa hasilnya.
+1. Lanjutkan pencarian halaman tambahan dan tinjau kecocokan yang diperbarui.
 
 ```java
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("(?i)Line", new TextSearchOptions(true));
+public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
+    Document document = new Document(inputFile.toString());
+    TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+    absorber.setPhrase("whale");
+
+    document.getPages().get_Item(1).accept(absorber);
+    for (TextFragment fragment : absorber.getTextFragments()) {
+        System.out.println("Text: " + fragment.getText());
+        System.out.println("Page: " + fragment.getPage().getNumber());
+        System.out.println("Position: " + fragment.getPosition());
+    }
+
+    System.out.println("--");
+
+    document.getPages().get_Item(2).accept(absorber);
+    absorber.visit(document);
+
+    for (TextFragment fragment : absorber.getTextFragments()) {
+        System.out.println("Text: " + fragment.getText());
+        System.out.println("Page: " + fragment.getPage().getNumber());
+        System.out.println("Position: " + fragment.getPosition());
+    }
+}
 ```
 
-Contoh:
+## Mencari frasa di dalam persegi panjang terpilih
+
+Gunakan contoh ini ketika pencocokan frasa harus dibatasi pada suatu wilayah di satu halaman.
+
+1. Buka dokumen PDF sumber.
+1. Buat `TextFragmentAbsorber` dengan frasa target dan berbasis persegi panjang `TextSearchOptions`.
+1. Kunjungi halaman dan keluarkan posisi fragmen yang cocok.
 
 ```java
-TextFragmentAbsorber textFragmentAbsorber = new TextFragmentAbsorber("[\\S]+");
+public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                "elephant", new TextSearchOptions(new Rectangle(0, 0, 842, 250, true)));
+
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
+```
+
+## Mencari teks dengan ekspresi reguler
+
+Gunakan contoh ini ketika pencocokan harus ditemukan dengan pola regex, bukan frasa tetap.
+
+1. Buka dokumen PDF sumber.
+1. Buat yang mendukung regex `TextFragmentAbsorber`.
+1. Kunjungi halaman target dan keluarkan fragmen yang cocok.
+
+```java
+public static void textFragmentAbsorberSearchRegex(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(
+                Pattern.compile("\\d+\\.\\d+"), new TextSearchOptions(true));
+
+        document.getPages().get_Item(2).accept(absorber);
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            System.out.println("Text: " + fragment.getText());
+            System.out.println("Position: " + fragment.getPosition());
+        }
+    }
+}
+```
+
+## Mencari daftar frasa berdasarkan pola regex
+
+Gunakan contoh ini ketika beberapa frasa target harus ditemukan dalam satu kali proses.
+
+1. Buka dokumen PDF sumber.
+1. Buat sebuah array pola regex dan berikan ke `TextFragmentAbsorber`.
+1. Kunjungi dokumen dan periksa hasil regex yang dikelompokkan.
+
+```java
+public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Pattern[] patterns = new Pattern[] {
+                Pattern.compile("whale"),
+                Pattern.compile("elephant")
+        };
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(patterns, new TextSearchOptions(true));
+        document.getPages().accept(absorber);
+
+        for (TextFragmentCollection fragments : absorber.getRegexResults().values()) {
+            for (TextFragment fragment : fragments) {
+                System.out.println("Text: " + fragment.getText());
+                System.out.println("Position: " + fragment.getPosition());
+            }
+        }
+    }
+}
+```
+
+## Menemukan teks dan mengubah menjadi tautan
+
+Gunakan contoh ini ketika kata yang cocok harus disorot dan diubah menjadi tautan yang dapat diklik.
+
+1. Buka dokumen PDF sumber.
+1. Cari kata target dengan pencarian regex diaktifkan.
+1. Perbarui gaya teks, lampirkan tautan hiper, dan simpan PDF yang dimodifikasi.
+
+```java
+public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber("whale|elephant");
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+        absorber.visit(document.getPages().get_Item(1));
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            fragment.getTextState().setForegroundColor(Color.getBlue());
+            fragment.getTextState().setUnderline(true);
+            fragment.setHyperlink(new WebHyperlink("https://en.wikipedia.org/wiki/" + fragment.getText()));
+        }
+
+        document.save(inputFile.toString().replace("in.pdf", "out.pdf"));
+    }
+}
+```
+
+## Mencari teks berdasarkan karakteristik gaya
+
+Gunakan contoh ini ketika Anda perlu memeriksa fragmen berdasarkan pemformatan seperti tebal atau teks tak terlihat.
+
+1. Buka dokumen PDF sumber.
+1. Jalankan `TextFragmentAbsorber` pada halaman target.
+1. Periksa setiap gaya fragmen dan keluarkan entri yang cocok.
+
+```java
+public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber();
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+        absorber.visit(document.getPages().get_Item(1));
+
+        for (TextFragment fragment : absorber.getTextFragments()) {
+            if (fragment.getTextState().getFontStyle() == FontStyles.Bold) {
+                System.out.println("Bold: " + fragment.getText());
+            }
+            if (fragment.getTextState().isInvisible()) {
+                System.out.println("Invisible: " + fragment.getText());
+            }
+        }
+    }
+}
+```
+
+## Menyorot hasil pencarian di pratinjau halaman yang dirender
+
+Gunakan contoh ini ketika kecocokan teks harus dikorelasikan dengan gambar halaman yang dirender untuk pemeriksaan visual.
+
+1. Buat perangkat PNG dengan resolusi yang diperlukan.
+1. Cari setiap halaman dengan `TextFragmentAbsorber` dan render halaman ke aliran gambar.
+1. Tuliskan gambar pratinjau halaman dan keluarkan koordinat fragmen untuk inspeksi.
+
+```java
+public static void textFragmentAbsorberSearchAndHighlight(Path inputFile) throws Exception {
+    int resolution = 150;
+    PngDevice pngDevice = new PngDevice(new Resolution(resolution, resolution));
+
+    try (Document document = new Document(inputFile.toString())) {
+        TextFragmentAbsorber absorber = new TextFragmentAbsorber(Pattern.compile("[\\S]+"));
+        absorber.setTextSearchOptions(new TextSearchOptions(true));
+
+        for (int pageNumber = 1; pageNumber <= document.getPages().size(); pageNumber++) {
+            Page page = document.getPages().get_Item(pageNumber);
+            page.accept(absorber);
+
+            try (ByteArrayOutputStream stream = new ByteArrayOutputStream()) {
+                pngDevice.process(page, stream);
+                Path output = Path.of(inputFile.toString().replace("_in.pdf", page.getNumber() + "_out.png"));
+                Files.write(output, stream.toByteArray());
+            }
+
+            for (TextFragment textFragment : absorber.getTextFragments()) {
+                Rectangle pageRect = page.getPageRect(true);
+                System.out.println("TextFragment = " + textFragment.getText()
+                        + " Page URY = " + pageRect.getURY()
+                        + " TextFragment URY = " + textFragment.getRectangle().getURY());
+            }
+        }
+    }
+}
 ```

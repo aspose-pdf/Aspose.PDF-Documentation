@@ -1,141 +1,143 @@
 ---
-title: Get, Update and Expand a Bookmark
-linktitle: Get, Update and Expand a Bookmark
+title: الحصول على إشارات PDF وتحديثها وتوسيعها في Java
+linktitle: الحصول على إشارة وتحديثها وتوسيعها
 type: docs
 weight: 20
 url: /ar/java/get-update-and-expand-bookmark/
-description: يصف هذا المقال كيفية استخدام العلامات المرجعية في ملف PDF. باستخدام مكتبتنا لـ Java، يمكنك الحصول على العلامات المرجعية من ملف PDF، والحصول على رقم صفحة العلامات المرجعية، وتحديث العلامات المرجعية في مستند PDF، وتوسيع العلامات المرجعية عند عرض مستند.
-lastmod: "2021-06-05"
+description: تعلم كيفية استرجاع وتحديث وتوسيع الإشارات في مستندات PDF باستخدام Java.
+lastmod: "2026-10-05"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: افحص خصائص الإشارة وقم بتوسيع المخطط التفصيلي في ملفات PDF باستخدام Java
+Abstract: تشرح هذه المقالة كيفية قراءة وتحديث وتوسيع العلامات المرجعية باستخدام Aspose.PDF for Java. وتغطي التكرار عبر عناصر المخطط، استخراج أرقام صفحات العلامات المرجعية باستخدام PdfBookmarkEditor، قراءة العلامات المرجعية الفرعية، تحديث عناوين العلامات المرجعية وتنسيقها، وإجبار المخططات على الفتح عند عرض المستند.
 ---
+Aspose.PDF for Java يتيح الإشارات المرجعية من خلال كلٍ من نموذج مخطط المستند و واجهة `PdfBookmarkEditor`.
 
-## Get Bookmarks
+## احصل على خصائص العلامة المرجعية
 
-تحتوي مجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) الخاصة بكائن [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) على جميع العلامات المرجعية لملف PDF. يشرح هذا المقال كيفية الحصول على العلامات المرجعية من ملف PDF، وكيفية معرفة الصفحة التي توجد عليها علامة مرجعية معينة.
+استخدم هذا المثال عندما تحتاج إلى فحص إدخالات العلامات المرجعية المستوى العلوي في مخطط المستند.
 
-للحصول على العلامات المرجعية، قم بالتكرار عبر مجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection) واحصل على كل علامة مرجعية في OutlineItemCollection.
- The OutlineItemCollection provides access to all the bookmark's attributes. The following code snippet shows you how to get bookmarks from the PDF file.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. مرّ على مجموعة المخططات.
+1. اقرأ واطبع عنوان الإشارة المرجعية، والنمط، وقيم اللون.
 
 ```java
-    public static void GettingBookmarks() {
-        // افتح المستند
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // حلقة لجميع الإشارات المرجعية
-        for (OutlineItemCollection outlineItem : (Iterable<OutlineItemCollection>) pdfDocument.getOutlines()) {
-            System.out.println("العنوان :- " + outlineItem.getTitle());
-            System.out.println("مائل :- " + outlineItem.getItalic());
-            System.out.println("عريض :- " + outlineItem.getBold());
-            System.out.println("اللون :- " + outlineItem.getColor());
+public static void getBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
         }
     }
+}
 ```
 
-## Getting a Bookmark's Page Number
+## احصل على أرقام صفحات العلامات المرجعية
 
-Once you have added a bookmark you can find out what page it is on by getting the destination PageNumber associated with the Bookmark object.
+هذا المثال يستخدم `PdfBookmarkEditor` لاستخراج عناوين الإشارات المرجعية، المستويات، أرقام الصفحات، والإجراءات.
+
+1. اربط ملف PDF المصدر بـ [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. استخرج مجموعة العلامات المرجعية وتكرّر عبرها.
+1. اطبع المستوى والعنوان ورقم الصفحة ومعلومات الإجراء لكل علامة مرجعية.
 
 ```java
-    public static void GettingBookmarksPageNumber() {
-        // أنشئ PdfBookmarkEditor
-        PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
-        // افتح ملف PDF
-        bookmarkEditor.bindPdf(GetDataDir() + "UpdateBookmarks.pdf");
-        // استخراج الإشارات المرجعية
-        Bookmarks bookmarks = bookmarkEditor.extractBookmarks();
-        for (Bookmark bookmark : (Iterable<Bookmark>) bookmarks) {
-            String strLevelSeprator = "";
-            for (int i = 1; i < bookmark.getLevel(); i++) {
-                strLevelSeprator += "---- ";
+public static void getBookmarkPageNumber(Path inputFile) {
+    PdfBookmarkEditor bookmarkEditor = new PdfBookmarkEditor();
+    try {
+        bookmarkEditor.bindPdf(inputFile.toString());
+        for (Bookmark bookmark : bookmarkEditor.extractBookmarks()) {
+            String levelSeparator = "";
+            for (int i = 0; i < bookmark.getLevel(); i++) {
+                levelSeparator += "----";
             }
-            System.out.println("العنوان :- " + strLevelSeprator + bookmark.getTitle());
-            System.out.println("رقم الصفحة :- " + strLevelSeprator + bookmark.getPageNumber());
-            System.out.println("الإجراء على الصفحة :- " + strLevelSeprator + bookmark.getAction());
+
+            System.out.println(levelSeparator + " Title: " + bookmark.getTitle());
+            System.out.println(levelSeparator + " Page Number: " + bookmark.getPageNumber());
+            System.out.println(levelSeparator + " Page Action: " + bookmark.getAction());
+        }
+    } finally {
+        bookmarkEditor.close();
+    }
+}
+```
+
+## احصل على العلامات المرجعية الفرعية
+
+استخدم هذا المثال عندما تحتاج إلى فحص كل من عناصر المخطط ذات المستوى الأعلى والعناصر المتداخلة
+
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. مرّ على المخططات ذات المستوى الأعلى واطبع خصائصها.
+1. اكتشف العلامات المرجعية الفرعية، ثم تكرار عبرها وطباعة خصائصها
+
+```java
+public static void getChildBookmarks(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection outlineItem = document.getOutlines().get_Item(i);
+            System.out.println(outlineItem.getTitle());
+            System.out.println(outlineItem.getItalic());
+            System.out.println(outlineItem.getBold());
+            System.out.println(outlineItem.getColor());
+            int count = outlineItem.size();
+            if (count > 0) {
+                System.out.println("Child Bookmarks");
+                for (int j = 1; j <= outlineItem.size(); j++) {
+                    OutlineItemCollection childOutlineItem = outlineItem.get_Item(j);
+                    System.out.println(childOutlineItem.getTitle());
+                    System.out.println(childOutlineItem.getItalic());
+                    System.out.println(childOutlineItem.getBold());
+                    System.out.println(childOutlineItem.getColor());
+                }
+            }
         }
     }
+}
 ```
 
-## تحديث الإشارات المرجعية في مستند PDF
+## تحديث الإشارات المرجعية
 
-لتحديث إشارة مرجعية في ملف PDF، أولاً، قم بالحصول على الإشارة المرجعية المحددة من مجموعة OutlineColletion الخاصة بكائن المستند عن طريق تحديد فهرس الإشارة المرجعية. بمجرد استرجاع الإشارة المرجعية إلى كائن [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection)، يمكنك تحديث خصائصها ثم حفظ ملف PDF المحدث باستخدام طريقة Save. تعرض مقتطفات الشيفرة التالية كيفية تحديث الإشارات المرجعية في مستند PDF.
+استخدم هذا المثال عندما يجب تعديل عنوان الإشارة المرجعية الحالية والنمط.
 
-```java
-    public static void UpdateBookmarksInPDFDocument() {
-        // فتح المستند
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // الحصول على كائن الإشارة المرجعية
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-
-        // تحديث كائن الإشارة المرجعية
-        pdfOutline.setTitle("Updated Outline");
-        pdfOutline.setItalic(true);
-        pdfOutline.setBold(true);
-        // تعيين الصفحة المستهدفة كصفحة 2
-        pdfOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
-
-        // حفظ الناتج
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
-    }
-```
-
-
-## تحديث العلامات المرجعية الفرعية في مستند PDF
-
-لتحديث علامة مرجعية فرعية:
-
-1. استرجع العلامة المرجعية الفرعية التي تريد تحديثها من ملف PDF عن طريق الحصول أولاً على العلامة المرجعية الأصلية ثم العلامة المرجعية الفرعية باستخدام القيم المناسبة للفهرس.
-2. احفظ ملف PDF المحدث باستخدام طريقة الحفظ.
-
-{{% alert color="primary" %}}
-
-احصل على علامة مرجعية من مجموعة OutlineCollection لكائن Document عن طريق تحديد فهرس العلامة المرجعية، ثم احصل على العلامة المرجعية الفرعية بتحديد فهرس هذه العلامة المرجعية الأصلية.
-
-{{% /alert %}}
-
-يوضح لك مقطع الشيفرة التالي كيفية تحديث العلامات المرجعية الفرعية في مستند PDF.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. انتقل إلى عنصر المخطط المستهدف وعلامة مرجعية فرعية.
+1. حدّث خصائص العلامة المرجعية واحفظ المستند.
 
 ```java
-    public static void UpdateChildBookmarksInPDFDocument() {
-        // افتح المستند
-        Document pdfDocument = new Document(GetDataDir() + "UpdateBookmarks.pdf");
-        // احصل على كائن العلامة المرجعية
-        OutlineItemCollection pdfOutline = pdfDocument.getOutlines().get_Item(1);
-        // احصل على كائن العلامة المرجعية الفرعية
-        OutlineItemCollection childOutline = pdfOutline.get_Item(1);
-
-        // قم بتحديث كائن العلامة المرجعية
+public static void updateBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        OutlineItemCollection outline = document.getOutlines().get_Item(1);
+        OutlineItemCollection childOutline = outline.get_Item(1);
         childOutline.setTitle("Updated Outline");
         childOutline.setItalic(true);
         childOutline.setBold(true);
-        // قم بتعيين الصفحة المستهدفة كصفحة 2
-        childOutline.setDestination(new GoToAction(pdfDocument.getPages().get_Item(2)));
 
-        // احفظ المخرجات
-        pdfDocument.save(GetDataDir() + "Bookmarkupdated_output.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## توسيع الإشارات المرجعية افتراضيًا
 
-## العلامات المرجعية الموسعة عند عرض المستند
+استخدم هذا المثال عندما يجب أن تُفتح لوحة الإشارات المرجعية وتظهر عناصر المخطط الموسَّعة عند عرض المستند.
 
-تُحفظ العلامات المرجعية في مجموعة [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineItemCollection) الخاصة بكائن الوثيقة، والتي تكون بدورها في مجموعة [OutlineCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/OutlineCollection). ومع ذلك، قد يكون لدينا متطلب لعرض جميع العلامات المرجعية بشكل موسع عند عرض ملف PDF.
-
-لتحقيق هذا المتطلب، يمكننا تعيين حالة الفتح لكل عنصر/علامة مرجعية كـ Open. يوضح لك مقتطف الكود التالي كيفية تعيين حالة الفتح لكل علامة مرجعية كـ موسعة في مستند PDF.
+1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. اضبط وضع الصفحة لاستخدام المخططات وعَلِّم كل عنصر مخطط بأنه مفتوح.
+1. احفظ المستند المحدث.
 
 ```java
-    public static void ExpandedBookmarks() {    
-        Document doc = new Document(GetDataDir()+"UpdateBookmarks.pdf");
-        // تعيين وضع عرض الصفحة أي إظهار الصور المصغرة، ملء الشاشة، إظهار لوحة المرفقات
-        doc.setPageMode(PageMode.UseOutlines);
-        // طباعة العدد الإجمالي للعلامات المرجعية في ملف PDF
-        System.out.println(doc.getOutlines().size());
-        // التنقل عبر كل عنصر علامة مرجعية في مجموعة العلامات المرجعية لملف PDF
-        for (int counter = 1; counter <= doc.getOutlines().size(); counter++) {
-            // تعيين حالة الفتح لعنصر العلامة المرجعية
-            doc.getOutlines().get_Item(counter).setOpen(true);
+public static void expandedBookmarks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setPageMode(PageMode.UseOutlines);
+        for (int i = 1; i <= document.getOutlines().size(); i++) {
+            OutlineItemCollection item = document.getOutlines().get_Item(i);
+            item.setOpen(true);
         }
-        // حفظ ملف PDF
-        doc.save(_dataDir+"Bookmarks_Expanded.pdf");
+        document.save(outputFile.toString());
     }
+}
 ```

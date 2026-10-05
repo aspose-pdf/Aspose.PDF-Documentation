@@ -1,31 +1,34 @@
 ---
-title: Извлечение шрифтов из PDF
-linktitle: Извлечение шрифтов
+title: Извлечение шрифтов из PDF с помощью Java
+linktitle: Извлечение шрифтов из PDF
 type: docs
 weight: 30
 url: /ru/java/extract-fonts-from-pdf/
-description: Как извлечь шрифт из PDF с использованием Aspose.PDF для Java
-lastmod: "2021-06-05"
+description: Используйте Aspose.PDF for Java для проверки и извлечения шрифтов, используемых в документе PDF.
+lastmod: "2026-09-16"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Как извлечь шрифты из PDF с использованием Java
+Abstract: В этой статье объясняется, как проверять шрифты, используемые в документе PDF, с помощью Aspose.PDF for Java. Показано, как открыть PDF, вызвать `getFontUtilities().getAllFonts()` и пройтись по полученным объектам шрифтов, чтобы прочитать их названия.
 ---
+Используйте извлечение шрифтов, когда необходимо провести проверку типографики документа, проверить встроенные ресурсы или подтвердить использование шрифтов перед процессами конвертации или архивирования.
 
-Если вы хотите получить все шрифты из PDF-документа, вы можете использовать метод `Document.IDocumentFontUtilities.getAllFonts()`, предоставляемый в классе Document. Пожалуйста, ознакомьтесь с приведенным ниже фрагментом кода, чтобы получить все шрифты из существующего PDF-документа:
+1. Откройте исходный PDF в экземпляре [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Вызовите `document.getFontUtilities().getAllFonts()`, чтобы собрать все ресурсы [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/), на которые ссылается документ.
+1. Переберите извлечённые объекты [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) и прочитайте имя каждого шрифта из его метаданных.
+1. Выведите имена шрифтов, чтобы типографику документа можно было проверить или экспортировать.
 
 ```java
-public static void Extract_Fonts() throws FileNotFoundException
-{
-    // Путь к директории с документами.
-    String filePath = "<... введите имя файла ...>";
-    
-    // Загрузить PDF-документ
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Font[] fonts = pdfDocument.getFontUtilities().getAllFonts();
-
-    for (com.aspose.pdf.Font font : fonts)
-    {
-        font.save(new FileOutputStream(font.getFontName()));
+public static void extractFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Font[] fonts = document.getFontUtilities().getAllFonts();
+        for (Font font : fonts) {
+            System.out.println(font.getFontName());
+        }
     }
 }
 ```
+
+

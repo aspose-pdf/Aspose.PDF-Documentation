@@ -1,44 +1,50 @@
 ---
-title: Hapus Halaman PDF secara programatik
-linktitle: Hapus Halaman PDF
+title: "Menghapus halaman PDF di Java"
+linktitle: "Menghapus halaman PDF"
 type: docs
-weight: 40
+weight: 80
 url: /id/java/delete-pages/
-description: Anda dapat menghapus halaman dari file PDF Anda menggunakan perpustakaan Java.
-lastmod: "2021-06-05"
+description: Pelajari cara menghapus halaman dari file PDF di Java.
+lastmod: "2026-09-30"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menghapus satu atau lebih halaman PDF di Java"
+Abstract: Artikel ini menjelaskan cara menghapus halaman dari file PDF menggunakan Aspose.PDF for Java. Artikel ini mencakup penghapusan satu halaman dan penghapusan beberapa halaman sekaligus melalui API koleksi halaman.
 ---
+Gunakan koleksi halaman dokumen ketika Anda perlu menghapus satu atau lebih halaman dari PDF.
 
-Anda dapat menghapus halaman dari file PDF menggunakan Aspose.PDF untuk Java. Untuk menghapus halaman tertentu dari [PageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/pagecollection) cukup panggil metode delete() dan tentukan indeks halaman tertentu yang ingin Anda hapus. Kemudian panggil metode save untuk menyimpan file PDF yang diperbarui.
+## Menghapus satu halaman
 
-## Hapus Halaman dari File PDF
+Gunakan contoh ini ketika Anda perlu menghapus satu halaman berdasarkan indeksnya.
 
-1. Panggil metode Delete dan tentukan indeks halaman
-1. Panggil metode Save untuk menyimpan file PDF yang diperbarui
-Cuplikan kode berikut menunjukkan cara menghapus halaman tertentu dari file PDF menggunakan Java.
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Hapus halaman target dari koleksi halaman.
+1. Simpan dokumen yang diperbarui.
 
 ```java
-package com.aspose.pdf.examples;
+public static void deletePage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(2);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import com.aspose.pdf.*;
+## Menghapus beberapa halaman
 
-public class ExampleDeletePage {
+Gunakan contoh ini ketika beberapa halaman harus dihapus dalam satu operasi.
 
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Berikan indeks halaman yang akan dihapus dari koleksi halaman.
+1. Simpan PDF yang telah dimodifikasi.
 
-  public static void DeletePageFromPDFFile() {
-
-    // Buka dokumen
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    // Hapus halaman tertentu
-    pdfDocument.getPages().delete(2);
-
-    _dataDir = _dataDir + "DeleteParticularPage_out.pdf";
-    // Simpan PDF yang diperbarui
-    pdfDocument.save(_dataDir);    
-
-  }
+```java
+public static void deleteBunchPages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().delete(new Integer[]{2, 3, 4});
+        document.save(outputFile.toString());
+    }
+}
 ```

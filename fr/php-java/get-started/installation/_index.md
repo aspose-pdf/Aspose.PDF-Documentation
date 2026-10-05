@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 ---
 
-Aspose.PDF pour PHP via Java est composé de deux composants distincts : le wrapper de script (aspose.pdf.php) et Aspose.PDF pour Java. Ces composants interagissent à travers le pont PHP/Java, chacun nécessitant son propre environnement et processus d'exécution.
+Aspose.PDF pour PHP via Java est composé de deux composants distincts : le wrapper de script (aspose.pdf.php) et Aspose.PDF for Java. Ces composants interagissent à travers le pont PHP/Java, chacun nécessitant son propre environnement et processus d'exécution.
 
 ## Installation
 

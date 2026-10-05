@@ -23,7 +23,7 @@ Aspose.PDF is a Java component built to allow developers to create PDF documents
 
 Aspose.PDF for Java provides following key features:
 
-- Convert a document from HTML, Doc/Docx, Pptx, Markdown, Jpeg and others.
+- Convert a document from HTML, DOC/DOCX, PPTX, Markdown, JPEG and others.
 - Supports with various AI providers with the ability to load data from PDF documents.
 - Supports the creation of PDF documents through both an API and from XML files.
 - Excellent certificate-based security and password protection features to develop secure PDF documents.

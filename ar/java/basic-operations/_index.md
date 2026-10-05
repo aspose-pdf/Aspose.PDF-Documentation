@@ -2,17 +2,22 @@
 title: العمليات الأساسية مع مستندات PDF
 linktitle: العمليات الأساسية
 type: docs
-weight: 40
+weight: 60
 url: /ar/java/basic-operations/
-lastmod: "2021-06-05"
-description: يصف قسم العمليات الأساسية إمكانيات فتح وحفظ مستندات PDF باستخدام Aspose.PDF for Java.
+lastmod: "2026-10-01"
+description: قسم العمليات الأساسية يصف كيفية إنشاء وفتح وحفظ ودمج وتقسيم وحماية مستندات PDF باستخدام Aspose.PDF for Java.
 sitemap:
-    changefreq: "weekly"
-    priority: 0.7
+    changefreq: "monthly"
+    priority: 0.5
+TechArticle: true
+AlternativeHeadline: نظرة عامة على العمليات الأساسية مع PDF باستخدام Java
+Abstract: تقدم هذه المقالة نظرة عامة على العمليات الأساسية لملفات PDF في Java باستخدام Aspose.PDF. وتغطي إنشاء مستندات جديدة، فتح ملفات PDF من الملفات أو التدفقات، حفظ المستندات إلى الملفات والتدفقات، دمج وتقسيم ملفات PDF، وحماية المستندات باستخدام كلمات مرور وأذونات.
 ---
+**العمليات الأساسية** يصف القسم أول وأبسط مهام PDF التي يمكنك تنفيذها باستخدام Aspose.PDF for Java:
 
-يصف قسم **العمليات الأساسية** أول وأبسط عملية مع مستندات PDF في Aspose.PDF for Java:
-
-- [إنشاء مستند PDF](/pdf/ar/java/create-document/) - يصف هذا المقال كيفية إنشاء ملف PDF باستخدام Java.
-- [فتح مستند PDF](/pdf/ar/java/open-pdf-document/) - يصف هذا المقال طرقًا مختلفة لفتح مستند PDF في تطبيق Java.
-- [حفظ مستند PDF](/pdf/ar/java/save-pdf-document/) - يصف هذا المقال طرقًا مختلفة لحفظ مستند PDF إلى ملف، أو دفق، أو إرساله إلى الويب أو حفظه كمستند PDF/A (أو PDF/X).
+- [إنشاء مستند PDF](/pdf/ar/java/create-document/) - إنشاء مستند PDF جديد برمجيًا في Java.
+- [فتح مستند PDF](/pdf/ar/java/open-pdf-document/) - فتح ملفات PDF من مسار، من تدفق، أو باستخدام كلمة مرور.
+- [حفظ مستند PDF](/pdf/ar/java/save-pdf-document/) - حفظ المستند إلى ملف، إلى تدفق، أو كمعيار PDF.
+- [دمج PDF](/pdf/ar/java/merge-pdf/) - دمج ملفات PDF متعددة في مستند إخراج واحد.
+- [تقسيم PDF](/pdf/ar/java/split-pdf/) - تقسيم صفحات PDF إلى ملفات PDF منفردة بصفحة واحدة.
+- [تشفير وفك تشفير ملف PDF](/pdf/ar/java/protect-pdf-file/) - تطبيق كلمات مرور، أذونات، وفك تشفير على ملفات PDF.

@@ -4,7 +4,7 @@ linktitle: Notions de base de l'API DOM
 type: docs
 weight: 110
 url: /pt/python-java/basics-of-dom-api/
-description: Aspose.PDF pour Java utilise également l'idée de DOM pour représenter la structure d'un document PDF en termes d'objets. Ici, vous pouvez lire la description de cette structure.
+description: Aspose.PDF for Java utilise également l'idée de DOM pour représenter la structure d'un document PDF en termes d'objets. Ici, vous pouvez lire la description de cette structure.
 lastmod: "2024-06-05"
 sitemap:
     changefreq: "weekly"
@@ -16,7 +16,7 @@ sitemap:
 Le Document Object Model (DOM) est une forme de représentation de documents structurés en tant que modèle orienté objet. Le DOM est la norme officielle du World Wide Web Consortium (W3C) pour représenter les documents structurés de manière neutre en termes de plateforme et de langage.
 
 En termes simples, le DOM est un arbre d'objets qui représente la structure d'un document.
- Aspose.PDF pour Java utilise également l'idée de DOM pour représenter la structure d'un document PDF en termes d'objets. Cependant, les aspects du DOM (tels que ses Éléments) sont manipulés dans la syntaxe du langage de programmation utilisé. L'interface publique d'un DOM est spécifiée dans son interface de programmation d'application (API).
+ Aspose.PDF for Java utilise également l'idée de DOM pour représenter la structure d'un document PDF en termes d'objets. Cependant, les aspects du DOM (tels que ses Éléments) sont manipulés dans la syntaxe du langage de programmation utilisé. L'interface publique d'un DOM est spécifiée dans son interface de programmation d'application (API).
 
 ### Introduction au Document PDF
 
@@ -26,13 +26,13 @@ La structure logique d'un fichier PDF est hiérarchique et détermine la séquen
 
 ### Structure du Document PDF
 
-Comme la structure d'un fichier PDF est hiérarchique, Aspose.PDF pour Java accède également aux éléments de la même manière. La hiérarchie suivante vous montre comment le document PDF est structuré logiquement et comment Aspose.PDF pour l'API DOM Java le construit.
+Comme la structure d'un fichier PDF est hiérarchique, Aspose.PDF for Java accède également aux éléments de la même manière. La hiérarchie suivante vous montre comment le document PDF est structuré logiquement et comment Aspose.PDF pour l'API DOM Java le construit.
 
 ![Structure du Document PDF](../images/structure.png)
 
 ### Accéder aux Éléments du Document PDF
 
-L'objet Document est au niveau racine du modèle objet. L'API DOM Aspose.PDF pour Java vous permet de créer un objet Document puis d'accéder à tous les autres objets de la hiérarchie. Vous pouvez soit accéder à l'une des collections comme Pages ou à un élément individuel comme Page, etc. L'API DOM fournit des points d'entrée et de sortie uniques pour manipuler le document PDF comme indiqué ci-dessous :
+L'objet Document est au niveau racine du modèle objet. L'API DOM Aspose.PDF for Java vous permet de créer un objet Document puis d'accéder à tous les autres objets de la hiérarchie. Vous pouvez soit accéder à l'une des collections comme Pages ou à un élément individuel comme Page, etc. L'API DOM fournit des points d'entrée et de sortie uniques pour manipuler le document PDF comme indiqué ci-dessous :
 
 - Ouvrir le document PDF
 - Accéder à la structure du document PDF dans le style DOM
@@ -41,20 +41,20 @@ L'objet Document est au niveau racine du modèle objet. L'API DOM Aspose.PDF pou
 - Exporter le document PDF dans différents formats
 - Enfin, sauvegarder le document PDF mis à jour
 
-## Comment Utiliser la Nouvelle API Aspose.PDF pour Java
+## Comment Utiliser la Nouvelle API Aspose.PDF for Java
 
-Ce sujet expliquera la nouvelle API Aspose.PDF pour Java et vous guidera pour commencer rapidement et facilement. Veuillez noter que les détails concernant l'utilisation des fonctionnalités particulières ne font pas partie de cet article.
+Ce sujet expliquera la nouvelle API Aspose.PDF for Java et vous guidera pour commencer rapidement et facilement. Veuillez noter que les détails concernant l'utilisation des fonctionnalités particulières ne font pas partie de cet article.
 
-Aspose.PDF pour Java est composé de deux parties :
+Aspose.PDF for Java est composé de deux parties :
 
-- Aspose.PDF pour Java DOM API
+- Aspose.PDF for Java DOM API
 - Aspose.PDF.Facades
 
 Vous trouverez ci-dessous les détails de chacune de ces parties.
 
-### Aspose.PDF pour Java DOM API
+### Aspose.PDF for Java DOM API
 
-La nouvelle API DOM d'Aspose.PDF pour Java correspond à la structure du document PDF, ce qui vous aide à travailler avec les documents PDF non seulement au niveau du fichier et du document, mais aussi au niveau de l'objet. Nous avons offert plus de flexibilité aux développeurs pour accéder à tous les éléments et objets du document PDF. En utilisant les classes de l'API DOM d'Aspose.PDF, vous pouvez obtenir un accès programmatique aux éléments et au formatage du document. Cette nouvelle API DOM est composée de divers espaces de noms comme indiqué ci-dessous :
+La nouvelle API DOM d'Aspose.PDF for Java correspond à la structure du document PDF, ce qui vous aide à travailler avec les documents PDF non seulement au niveau du fichier et du document, mais aussi au niveau de l'objet. Nous avons offert plus de flexibilité aux développeurs pour accéder à tous les éléments et objets du document PDF. En utilisant les classes de l'API DOM d'Aspose.PDF, vous pouvez obtenir un accès programmatique aux éléments et au formatage du document. Cette nouvelle API DOM est composée de divers espaces de noms comme indiqué ci-dessous :
 
 ### com.aspose.pdf
 
@@ -86,4 +86,4 @@ Nous pouvons effectuer diverses opérations sur les documents PDF, telles que co
 
 ##### com.aspose.pdf.facades
 
-Avant Aspose.PDF pour Java, vous aviez besoin d'Aspose.PDF.Kit pour Java pour manipuler des fichiers PDF existants. Pour exécuter l'ancien code Aspose.PDF.Kit, vous pouvez utiliser l'espace de noms com.aspose.pdf.facades.
+Avant Aspose.PDF for Java, vous aviez besoin d'Aspose.PDF.Kit pour Java pour manipuler des fichiers PDF existants. Pour exécuter l'ancien code Aspose.PDF.Kit, vous pouvez utiliser l'espace de noms com.aspose.pdf.facades.

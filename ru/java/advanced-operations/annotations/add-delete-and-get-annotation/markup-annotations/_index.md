@@ -1,0 +1,278 @@
+---
+title: Аннотации разметки с помощью Java
+linktitle: Аннотации разметки
+type: docs
+weight: 30
+url: /ru/java/markup-annotations/
+description: Узнайте, как добавлять, просматривать и удалять аннотации выделения, подчеркивания, волнистой линии и зачеркивания в PDF‑документах с помощью Aspose.PDF for Java.
+lastmod: "2026-09-16"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Работайте с разметочными аннотациями в PDF‑файлах с использованием Java.
+Abstract: В этой статье объясняется, как создавать, просматривать и удалять аннотации разметки текста в PDF‑документах с использованием Aspose.PDF for Java. Рассматриваются аннотации выделения, подчеркивания, волнистой линии и зачеркивания на основе примеров Java из репозитория.
+---
+Рабочие процессы разметки аннотаций в этом разделе сосредоточены на комментариях в стиле заметок, маркерах вставки текста и группах аннотаций для замены текста при рецензировании.
+
+## Добавление текстовой аннотации
+
+Используйте этот пример, когда нужно разместить текстовую аннотацию в виде заметки с метаданными всплывающего окна на странице.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) и настройте её заголовок, содержимое, значок и всплывающее окно.
+1. Добавьте аннотацию на страницу и сохраните документ.
+
+```java
+public static void textAnnotationAdd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        TextAnnotation textAnnotation = new TextAnnotation(
+                document.getPages().get_Item(1),
+                new Rectangle(299.988, 613.664, 428.708, 680.769, true));
+        textAnnotation.setTitle("Aspose User");
+        textAnnotation.setSubject("Sticky Note");
+        textAnnotation.setContents("This is a text annotation added by Aspose.PDF for Java");
+        textAnnotation.setFlags(AnnotationFlags.Print);
+        textAnnotation.setColor(Color.getBlue());
+        textAnnotation.setIcon(TextIcon.Help);
+
+        PopupAnnotation popup = new PopupAnnotation(
+                document.getPages().get_Item(1),
+                new Rectangle(428.708, 613.664, 528.708, 713.664, true));
+        popup.setOpen(true);
+        textAnnotation.setPopup(popup);
+
+        document.getPages().get_Item(1).getAnnotations().add(textAnnotation, false);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Получение текстовых аннотаций
+
+Этот пример сканирует страницу и печатает прямоугольник каждой текстовой аннотации.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите аннотации на странице.
+1. Отфильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` и выведите их прямоугольники.
+
+```java
+public static void textAnnotationGet(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Text) {
+                System.out.println(annotation.getRect());
+            }
+        }
+    }
+}
+```
+
+## Удаление текстовых аннотаций
+
+Используйте этот подход, когда необходимо удалить существующие текстовые аннотации из документа.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Соберите аннотации типа [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. Удалите собранные аннотации и сохраните выходной файл.
+
+```java
+public static void textAnnotationDelete(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        List<Annotation> toDelete = new ArrayList<>();
+        for (Annotation annotation : document.getPages().get_Item(1).getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Text) {
+                toDelete.add(annotation);
+            }
+        }
+        for (Annotation annotation : toDelete) {
+            document.getPages().get_Item(1).getAnnotations().delete(annotation);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавление аннотации вставки текста
+
+Используйте этот пример, когда вам нужно пометить вставленный текст аннотацией вставки текста.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) и настройте её всплывающее окно и внешний вид.
+1. Добавьте аннотацию на страницу и сохраните документ.
+
+```java
+public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        CaretAnnotation caretAnnotation = new CaretAnnotation(
+                page,
+                new Rectangle(299.988, 713.664, 308.708, 720.769, true));
+        caretAnnotation.setTitle("Aspose User");
+        caretAnnotation.setSubject("Inserted text 1");
+        caretAnnotation.setFlags(AnnotationFlags.Print);
+        caretAnnotation.setColor(Color.getBlue());
+        caretAnnotation.setPopup(new PopupAnnotation(
+                page,
+                new Rectangle(310, 713, 410, 730, true)));
+        page.getAnnotations().add(caretAnnotation);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Получение аннотаций вставки текста
+
+Этот пример читает существующие аннотации вставки текста и выводит их расположения.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Переберите аннотации страницы.
+1. Отфильтруйте аннотации по [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` и выведите их прямоугольники.
+
+```java
+public static void caretAnnotationsGet(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        for (Annotation annot : page.getAnnotations()) {
+            if (annot.getAnnotationType() == AnnotationType.Caret) {
+                System.out.println(annot.getRect());
+            }
+        }
+    }
+}
+```
+
+## Удаление аннотаций вставки текста
+
+Используйте этот подход, когда необходимо удалить аннотации вставки текста со страницы.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Соберите аннотации, тип которых [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. Удалите собранные аннотации и сохраните выходной документ.
+
+```java
+public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        List<Annotation> caretAnnotations = new ArrayList<>();
+        for (Annotation annot : page.getAnnotations()) {
+            if (annot.getAnnotationType() == AnnotationType.Caret) {
+                caretAnnotations.add(annot);
+            }
+        }
+        for (Annotation annot : caretAnnotations) {
+            page.getAnnotations().delete(annot);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Добавление сгруппированных аннотаций замены
+
+В этом примере объединяется аннотация вставки текста с аннотацией зачёркивания, чтобы представить комментарий о замене текста при рецензировании.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Создайте аннотацию вставки текста и связанную [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
+1. Свяжите аннотации через `setInReplyTo` и `setReplyType`, затем сохраните документ.
+
+```java
+public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        CaretAnnotation caretAnnotation = new CaretAnnotation(
+                page,
+                new Rectangle(361.246, 727.908, 370.081, 735.107, true));
+        caretAnnotation.setFlags(AnnotationFlags.Print);
+        caretAnnotation.setSubject("Inserted text 2");
+        caretAnnotation.setTitle("Aspose User");
+        caretAnnotation.setColor(Color.getBlue());
+        caretAnnotation.setPopup(new PopupAnnotation(
+                page,
+                new Rectangle(310, 713, 410, 730, true)));
+
+        StrikeOutAnnotation strikeoutAnnotation = new StrikeOutAnnotation(
+                page,
+                new Rectangle(318.407, 727.826, 368.916, 740.098, true));
+        strikeoutAnnotation.setColor(Color.getBlue());
+        strikeoutAnnotation.setQuadPoints(new Point[]{
+                new Point(321.66, 739.416),
+                new Point(365.664, 739.416),
+                new Point(321.66, 728.508),
+                new Point(365.664, 728.508)
+        });
+        strikeoutAnnotation.setSubject("Cross-out");
+        strikeoutAnnotation.setInReplyTo(caretAnnotation);
+        strikeoutAnnotation.setReplyType(ReplyType.Group);
+
+        page.getAnnotations().add(caretAnnotation);
+        page.getAnnotations().add(strikeoutAnnotation);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Получение сгруппированных аннотаций замены
+
+Этот пример обнаруживает аннотации зачеркивания, которые участвуют в групповом рабочем процессе замены.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Пройдите по аннотациям страницы и выберите аннотации зачеркивания.
+1. Проверьте связь ответов и выведите прямоугольник соответствующих аннотаций.
+
+```java
+public static void replaceAnnotationsGet(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        for (Annotation annot : page.getAnnotations()) {
+            if (annot.getAnnotationType() == AnnotationType.StrikeOut) {
+                StrikeOutAnnotation sa = (StrikeOutAnnotation) annot;
+                if (sa.getInReplyTo() != null && sa.getReplyType() == ReplyType.Group) {
+                    System.out.println("Replace annotation rect: " + sa.getRect());
+                }
+            }
+        }
+    }
+}
+```
+
+## Удаление сгруппированных аннотаций замены
+
+Используйте этот подход, когда необходимо удалить со страницы аннотации зачёркивания, помечающие замену текста при рецензировании.
+
+1. Откройте исходный PDF-документ с помощью [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Соберите аннотации зачеркивания, которые представляют разметку замены.
+1. Удалите собранные аннотации и сохраните обновлённый документ.
+
+```java
+public static void replaceAnnotationsDelete(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+
+        List<StrikeOutAnnotation> replaceAnnotations = new ArrayList<>();
+        for (Annotation annot : page.getAnnotations()) {
+            if (annot.getAnnotationType() == AnnotationType.StrikeOut) {
+                replaceAnnotations.add((StrikeOutAnnotation) annot);
+            }
+        }
+        for (StrikeOutAnnotation annot : replaceAnnotations) {
+            page.getAnnotations().delete(annot);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Связанные темы об аннотациях
+
+- [Текстовые аннотации](/pdf/ru/java/text-based-annotations/)
+- [Интерактивные аннотации](/pdf/ru/java/interactive-annotations/)
+- [Аннотации фигур](/pdf/ru/java/shape-annotations/)
+- [Мультимедийные аннотации](/pdf/ru/java/media-annotations/)
+- [Аннотации безопасности](/pdf/ru/java/security-annotations/)
+- [Аннотации водяных знаков](/pdf/ru/java/watermark-annotations/)

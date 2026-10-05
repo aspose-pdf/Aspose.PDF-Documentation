@@ -35,7 +35,7 @@ Les types de formes suivants sont pris en charge par le [Graph](https://referenc
 
 Vous pouvez également valider le placement des formes avec une vérification des limites :
 
-- [Vérifier les limites de forme dans les graphiques PDF avec Python](/pdf/fr/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Vérifier les limites de forme dans les graphiques PDF avec Python](/pdf/fr/python-net/checking-shape-bounds/)
 
 Les exemples de cette section sont illustrés dans la figure ci‑dessous :
 

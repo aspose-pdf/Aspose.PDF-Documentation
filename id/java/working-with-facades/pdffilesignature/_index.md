@@ -1,16 +1,24 @@
 ---
 title: Kelas PdfFileSignature
+linktitle: Kelas PdfFileSignature
 type: docs
-weight: 70
+weight: 60
 url: /id/java/pdffilesignature-class/
-description: Bagian ini menjelaskan cara bekerja dengan Aspose.PDF Facades menggunakan kelas PdfFileSignature.
-lastmod: "2021-06-05"
+description: "Pelajari cara menggunakan fasad PdfFileSignature di Java untuk menandatangani, menyertifikasi, memeriksa, memverifikasi, mengekstrak, dan menghapus tanda tangan PDF."
+lastmod: "2026-09-30"
+draft: false
 sitemap:
-    changefreq: "monthly"
+    changefreq: "weekly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Menandatangani, menyertifikasi, dan memeriksa tanda tangan PDF di Java dengan PdfFileSignature"
+Abstract: "Bagian ini menjelaskan cara menggunakan fasad PdfFileSignature di Aspose.PDF for Java untuk alur kerja tanda tangan digital. Contoh Java saat ini mencakup penandatanganan dengan sertifikat atau objek PKCS7, menyertifikasi PDF dengan izin DocMDP, membaca detail tanda tangan, memverifikasi tanda tangan, mengekstrak sertifikat penanda tangan, dan menghapus tanda tangan."
 ---
+Kelas `PdfFileSignatureExamples` dalam Java menunjukkan alur kerja tanda tangan utama yang tersedia melalui API Facades.
 
-- [Tambahkan Tanda Tangan dalam File PDF](/pdf/id/java/add-signature-in-pdf/)
-- [Hapus Tanda Tangan dari File PDF](/pdf/id/java/remove-signature-from-pdf/)
-- [Verifikasi Tanda Tangan dalam File PDF](/pdf/id/java/verify-signature-in-pdf/)
-- [Bekerja dengan Tanda Tangan dalam File PDF](/pdf/id/java/add-signature-in-pdf/)
+Gunakan bagian ini untuk mempelajari cara:
+
+- menandatangani dan menyertifikasi dokumen PDF
+- memeriksa nama tanda tangan, detail penandatangan, dan stempel waktu
+- memverifikasi keabsahan tanda tangan dan cakupan seluruh dokumen
+- mengekstrak sertifikat penandatangan dan menghapus tanda tangan yang ada

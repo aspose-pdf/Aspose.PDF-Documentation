@@ -1,40 +1,40 @@
 ---
-title: Menyisipkan Halaman Kosong ke dalam File PDF di Ruby
+title: "Menyisipkan halaman kosong ke dalam file PDF di Ruby"
+linktitle: "Menyisipkan halaman kosong ke dalam file PDF di Ruby"
 type: docs
 weight: 70
 url: /id/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Pelajari cara menyisipkan halaman kosong ke lokasi tertentu dalam dokumen PDF menggunakan Ruby dan Aspose.PDF untuk manajemen dokumen yang presisi.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - sisipkan halaman kosong
 
-## Aspose.PDF - Menyisipkan Halaman Kosong
-
-Untuk Menyisipkan Halaman Kosong ke dalam dokumen Pdf menggunakan **Aspose.PDF Java untuk Ruby**, cukup panggil modul **InsertEmptyPage**.
+Untuk Menyisipkan Halaman Kosong ke dalam dokumen Pdf menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **InsertEmptyPage**.
 
 Kode Ruby
 
 ```java
-
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen target
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# sisipkan halaman kosong dalam PDF
+# insert a empty page in a PDF
 
 pdf.getPages().insert(1)
 
-# Simpan file keluaran yang telah digabungkan (dokumen target)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "Halaman kosong berhasil ditambahkan!"
+puts "Empty page added successfully!"
 ```
 
-## Unduh Kode Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh **Menyisipkan Halaman Kosong (Aspose.PDF)** dari salah satu situs pemrograman sosial yang disebutkan di bawah ini:
+Unduh **Insert an Empty Page (Aspose.PDF)** dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)

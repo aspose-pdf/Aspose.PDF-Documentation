@@ -3,7 +3,7 @@ title: Check Shape Bounds in PDF Graphs with Java
 linktitle: Check Shape Bounds
 type: docs
 weight: 70
-url: /java/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /java/checking-shape-bounds/
 description: Learn how to validate shape bounds in PDF graph collections in Java.
 lastmod: "2026-06-09"
 sitemap:

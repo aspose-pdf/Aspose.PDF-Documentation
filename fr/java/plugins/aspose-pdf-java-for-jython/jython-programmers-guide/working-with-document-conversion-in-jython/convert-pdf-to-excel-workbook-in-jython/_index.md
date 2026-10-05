@@ -1,18 +1,19 @@
 ---
-title: Convertir un PDF en Classeur Excel avec Jython
+title: Convertir un PDF en classeur Excel en Jython
+linktitle: Convertir un PDF en classeur Excel en Jython
 type: docs
 weight: 20
-url: /fr/java/convert-pdf-to-excel-workbook-in-jython/
-lastmod: "2021-06-05"
+url: /java/convert-pdf-to-excel-workbook-in-jython/
+description: Découvrez comment convertir des documents PDF en classeurs Excel en Jython à l'aide d'Aspose.PDF, permettant l'extraction de données à des fins d'analyse.
+lastmod: "2026-09-21"
 ---
+## Aspose.PDF - Convertir un PDF en Excel
 
-## Aspose.PDF - PDF en Excel
+L’exemple suivant montre cette opération avec **Aspose.PDF Java pour Jython**.
+Erreur de rendu de la macro 'code' : valeur non valide spécifiée pour le paramètre lang
 
-Pour vérifier le format de fichier en utilisant **Aspose.PDF Java pour Jython**. Voici un exemple de code.
-Erreur de rendu du macro 'code' : Valeur invalide spécifiée pour le paramètre lang
+**Télécharger l’exemple de code**
 
-**Télécharger le Code Exécuté**
-
-Téléchargez le code exécuté à partir de l'un des sites de codage social mentionnés ci-dessous :
+Téléchargez l’exemple de code à partir de l'un des plateformes d’hébergement de code mentionnées ci-dessous :
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

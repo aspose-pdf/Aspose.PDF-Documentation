@@ -3,7 +3,7 @@ title: Check Shape Bounds in PDF Graphs with Python
 linktitle: Check Shape Bounds
 type: docs
 weight: 70
-url: /python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /python-net/checking-shape-bounds/
 description: Learn how to validate shape bounds in PDF graph collections in Python.
 lastmod: "2026-04-16"
 sitemap:

@@ -35,7 +35,7 @@ Abstract: 이 단원에서는.NET을 통해 파이썬용 Aspose.PDF 의 Graph �
 
 경계 검사를 통해 형상 배치를 검증할 수도 있습니다.
 
-- [Python을 사용하여 PDF 그래프의 모양 경계 확인하기](/pdf/ko/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Python을 사용하여 PDF 그래프의 모양 경계 확인하기](/pdf/ko/python-net/checking-shape-bounds/)
 
 이 섹션의 예는 아래 그림에 나와 있습니다.
 

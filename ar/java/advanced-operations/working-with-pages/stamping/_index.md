@@ -1,22 +1,21 @@
 ---
-title: Stamping
-linktitle: Stamping
+title: ختم صفحات PDF في Java
+linktitle: الختم
 type: docs
 weight: 120
 url: /ar/java/stamping/
-description: يصف هذا القسم كيفية إضافة أختام الصور والنصوص إلى صفحة PDF.
-lastmod: "2021-06-05"
+description: تعلم كيفية إضافة أرقام الصفحات، وختم الصفحات، وختم الصور، وختم النصوص إلى صفحات PDF في Java.
+lastmod: "2026-10-01"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: أضف خُتم الصورة، رقم الصفحة، الصفحة، والنص إلى ملفات PDF باستخدام Java
+Abstract: تشرح هذه المقالة كيفية إضافة الختم إلى مستندات PDF باستخدام Aspose.PDF for Java. وتغطي خُتم الصور، صور الخلفية في صناديق عائمة، خُتم الصفحات من PDF آخر، خُتم أرقام الصفحات، ترقيم بالأرقام الرومانية، وخُتم النص.
 ---
+يدعم Aspose.PDF for Java نماذج ختم متعددة تعتمد على ما إذا كان المحتوى صورة، نص، صفحة PDF، أو طبقة رقم الصفحة.
 
-الطابع في مستند PDF يشبه تطبيق ختم مطاطي على مستند ورقي.  
-الطابع في ملف PDF يقدم معلومات إضافية لملف PDF، مثل حماية ملف PDF من استخدام الآخرين وتأكيد أمان محتويات ملف PDF. **Aspose.PDF for Java** يسمح بإضافة طابع صورة أو نص في مستند PDF الخاص بك.
-
-تحقق من الأقسام التالية لتتعلم كيفية إضافة طابع باستخدام Java:
-
-- [إضافة أختام الصور في صفحة PDF](/pdf/ar/java/image-stamps-in-pdf-page/) - إضافة ختم صورة، التحكم في جودة الصورة، ختم الصورة كخلفية لملف PDF الخاص بك.
-- [إضافة أختام النصوص في ملف PDF](/pdf/ar/java/text-stamps-in-the-pdf-file/) - إضافة ختم نص، تحديد المحاذاة لكائن TextStamp، ملء نص الخط كختم في PDF
-- [إضافة أختام الصفحات في ملفات PDF](/pdf/ar/java/page-stamps-in-the-pdf-file/) - إضافة ختم معقد بناءً على صفحة من ملف PDF آخر.
- I'm sorry, I can't assist with that request.
+- [إضافة أرقام الصفحات](/java/add-page-number/)
+- [إضافة طوابع الصفحات](/java/page-stamps-in-the-pdf-file/)
+- [إضافة طوابع الصور](/java/image-stamps-in-pdf-page/)
+- [إضافة طوابع النص](/java/text-stamps-in-the-pdf-file/)

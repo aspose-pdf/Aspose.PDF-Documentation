@@ -1,70 +1,71 @@
 ---
 title: Aspose.PDF Java untuk Jython
+linktitle: Aspose.PDF Java untuk Jython
 type: docs
 weight: 60
 url: /id/java/aspose-pdf-java-for-jython/
-lastmod: "2021-06-05"
+description: Gabungkan kekuatan Aspose.PDF for Java dengan Jython. Manipulasi file PDF dengan mudah dalam lingkungan Java berbasis Python.
+lastmod: "2026-09-30"
 ---
-
-## Pengenalan
+## Pendahuluan
 
 ### Apa itu Jython?
 
-Jython adalah implementasi Java dari Python yang menggabungkan kekuatan ekspresif dengan kejelasan. Jython tersedia secara gratis untuk penggunaan komersial dan non-komersial dan didistribusikan dengan kode sumber. Jython melengkapi Java dan sangat cocok untuk tugas-tugas berikut:
+Jython adalah implementasi Java dari Python yang menggabungkan kekuatan ekspresif dengan kejelasan. Jython tersedia secara bebas untuk penggunaan komersial maupun non-komersial dan didistribusikan dengan kode sumber. Jython melengkapi Java dan sangat cocok untuk tugas-tugas berikut:
 
-- **Skrip tertanam** - Pemrogram Java dapat menambahkan pustaka Jython ke sistem mereka untuk memungkinkan pengguna akhir menulis skrip sederhana atau rumit yang menambahkan fungsionalitas ke aplikasi.
-- **Eksperimen interaktif** - Jython menyediakan interpreter interaktif yang dapat digunakan untuk berinteraksi dengan paket Java atau dengan aplikasi Java yang sedang berjalan. Ini memungkinkan pemrogram untuk bereksperimen dan men-debug sistem Java apa pun menggunakan Jython.
-- **Pengembangan aplikasi cepat** - Program Python biasanya 2-10X lebih pendek daripada program Java yang setara.
- Ini secara langsung diterjemahkan menjadi peningkatan produktivitas programmer. Interaksi yang mulus antara Python dan Java memungkinkan pengembang untuk bebas mencampur kedua bahasa tersebut baik selama pengembangan maupun dalam produk yang dikirimkan.
+- **Embedded scripting** - Programmer Java dapat menambahkan pustaka Jython ke sistem mereka untuk memungkinkan pengguna akhir menulis skrip sederhana atau rumit yang menambah fungsionalitas pada aplikasi.
+- **Eksperimen interaktif** - Jython menyediakan interpreter interaktif yang dapat digunakan untuk berinteraksi dengan paket Java atau dengan aplikasi Java yang sedang berjalan. Ini memungkinkan programmer untuk bereksperimen dan men-debug sistem Java apa pun menggunakan Jython.
+- **Pengembangan aplikasi cepat** - Program Python biasanya 2-10X lebih pendek dibandingkan dengan program Java yang setara. Hal ini secara langsung meningkatkan produktivitas programmer. Interaksi yang mulus antara Python dan Java memungkinkan pengembang untuk secara bebas mencampur kedua bahasa baik selama pengembangan maupun dalam produk yang dirilis.
 
-### Aspose.PDF untuk Java
+### Aspose.PDF for Java
 
-Aspose.PDF untuk Java adalah komponen pembuatan dokumen PDF yang memungkinkan aplikasi Java Anda untuk membaca, menulis, dan memanipulasi dokumen PDF tanpa menggunakan Adobe Acrobat.
+Aspose.PDF for Java adalah komponen pembuatan dokumen PDF yang memungkinkan aplikasi Java Anda untuk membaca, menulis, dan memanipulasi dokumen PDF tanpa menggunakan Adobe Acrobat.
 
-Aspose.PDF untuk Java adalah komponen dengan harga terjangkau yang menawarkan kekayaan fitur yang luar biasa, termasuk: opsi kompresi PDF, pembuatan dan manipulasi tabel, dukungan grafis, fungsi gambar, fungsionalitas hyperlink yang luas, kontrol keamanan yang diperluas, dan penanganan font khusus.
+Aspose.PDF for Java adalah komponen dengan harga terjangkau yang menawarkan beragam fitur luar biasa, antara lain: opsi kompresi PDF, pembuatan dan manipulasi tabel, dukungan grafik, fungsi gambar, kemampuan hyperlink yang luas, kontrol keamanan yang ditingkatkan, serta penanganan font khusus.
 
-Aspose.PDF untuk Java memungkinkan Anda membuat file PDF secara langsung melalui API dan template XML yang disediakan. Menggunakan Aspose.PDF untuk Java juga akan memungkinkan Anda menambahkan kemampuan PDF ke aplikasi Anda dalam waktu singkat.
+Aspose.PDF for Java memungkinkan Anda membuat file PDF secara langsung melalui API dan templat XML yang disediakan. Menggunakan Aspose.PDF for Java juga akan memungkinkan Anda menambahkan kemampuan PDF ke aplikasi Anda dalam waktu singkat.
 
 ### Aspose.PDF Java untuk Jython
 
-Aspose.PDF Java untuk Jython adalah proyek yang menunjukkan / menyediakan contoh penggunaan API Aspose.PDF untuk Java dalam Jython.
-## Persyaratan Sistem dan Platform yang Didukung
+Aspose.PDF Java for Jython adalah sebuah proyek yang menunjukkan / menyediakan contoh penggunaan API Aspose.PDF for Java dalam Jython.
 
-### Persyaratan Sistem
+## Persyaratan sistem dan platform yang didukung
 
-Berikut adalah persyaratan sistem untuk menggunakan Aspose.PDF Java untuk Jython:
+### Persyaratan sistem
 
-- Java 1.5 atau lebih tinggi terinstal
+Berikut adalah persyaratan sistem untuk menggunakan Aspose.PDF Java for Jython:
+
+- Java 1.5 atau yang lebih baru diinstal
 - Komponen Aspose.PDF yang diunduh
 - Jython 2.7.0
 
-### Platform yang Didukung
+### Platform yang didukung
 
 Berikut adalah platform yang didukung:
 
-- Aspose.PDF 15.4 dan di atasnya.
+- Aspose.PDF 15.4 ke atas.
 - IDE Java (Eclipse, NetBeans ...)
 
-## Unduh Instalasi dan Penggunaan
+## Mengunduh instalasi dan penggunaan
 
 ### Mengunduh
 
-Rilis contoh berjalan berikut tersedia untuk diunduh dari GitHub:
+Rilis contoh yang berjalan berikut tersedia untuk diunduh dari GitHub:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose-Pdf-Java-for-Jython)
 
-Unduh komponen Aspose.PDF untuk Java:
+Unduh komponen Aspose.PDF for Java:
 
-- [Aspose.PDF untuk Java](https://downloads.aspose.com/pdf/java)
+- [Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
 
 ### Menginstal
 
-- Tempatkan file jar Aspose.PDF untuk Java yang telah diunduh ke dalam direktori "lib".
+- Letakkan file jar Aspose.PDF for Java yang diunduh ke dalam direktori "lib".
 - Ganti "your-lib" dengan nama file jar yang diunduh dalam file _*init*_.py.
 
 ### Menggunakan
 
-Anda dapat mengonversi dokumen Pdf ke dokumen doc menggunakan contoh kode berikut:
+Anda dapat mengonversi Pdf ke dokumen doc menggunakan contoh kode berikut:
 
 ```java
 from aspose-pdf import Settings
@@ -75,40 +76,36 @@ class PdfToDoc:
     def __init__(self):
         dataDir = Settings.dataDir + 'WorkingWithDocumentConversion/PdfToDoc/'
 
-
-        # Buka dokumen target
+        # Open the target document
         pdf = Document(dataDir + 'input1.pdf')
 
-        # Simpan file keluaran yang digabungkan (dokumen target)
+        # Save the concatenated output file (the target document)
         pdf.save(dataDir + "output.doc")
 
-        print "Dokumen telah berhasil dikonversi"
+        print "Document has been converted successfully"
 
-
-if __name__ == '__main__':       
+if __name__ == '__main__':
 
     PdfToDoc()
 ```
 
-
-## Dukungan, Perluasan, dan Kontribusi
+## Dukungan, pengembangan, dan kontribusi
 
 ### Dukungan
 
-Sejak hari pertama Aspose, kami tahu bahwa hanya memberikan produk yang baik kepada pelanggan kami tidaklah cukup. Kami juga perlu memberikan layanan yang baik. Kami adalah pengembang sendiri dan mengerti betapa frustrasinya ketika masalah teknis atau keanehan dalam perangkat lunak menghentikan Anda melakukan apa yang perlu Anda lakukan. Kami di sini untuk memecahkan masalah, bukan menciptakannya.
+Sejak hari-hari pertama Aspose, kami tahu bahwa hanya memberikan produk yang baik kepada pelanggan tidaklah cukup. Kami juga perlu menyediakan layanan yang baik. Kami sendiri adalah pengembang dan memahami betapa menjengkelkannya ketika masalah teknis atau keanehan dalam perangkat lunak menghentikan Anda dari melakukan apa yang perlu Anda lakukan. Kami di sini untuk menyelesaikan masalah, bukan menciptakannya.
 
-Inilah mengapa kami menawarkan dukungan gratis. Siapapun yang menggunakan produk kami, baik yang telah membelinya atau menggunakan evaluasi, berhak mendapatkan perhatian dan rasa hormat penuh dari kami.
+Itulah mengapa kami menawarkan dukungan gratis. Siapa pun yang menggunakan produk kami, baik mereka telah membelinya atau sedang menggunakan versi evaluasi, berhak mendapatkan perhatian dan rasa hormat penuh dari kami.
 
-Anda dapat mencatat masalah atau saran apa pun terkait Aspose.PDF Java untuk Jython menggunakan salah satu platform berikut:
+Anda dapat melaporkan masalah atau saran apa pun yang terkait dengan Aspose.PDF Java for Jython menggunakan salah satu platform berikut:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### Perluasan dan Kontribusi
+### Memperluas dan berkontribusi
 
-Aspose.PDF Java untuk Jython adalah sumber terbuka dan kode sumbernya tersedia di situs web pemrograman sosial utama yang tercantum di bawah ini.
- Developers didorong untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang sudah ada, sehingga orang lain juga dapat merasakannya.
+Aspose.PDF Java for Jython bersifat open source dan kode sumbernya tersedia di situs coding sosial utama yang tercantum di bawah ini. Pengembang dianjurkan untuk mengunduh kode sumber dan berkontribusi dengan menyarankan atau menambahkan fitur baru atau meningkatkan yang sudah ada, sehingga orang lain juga dapat memanfaatkannya.
 
-### Kode Sumber
+### Kode sumber
 
 Anda dapat mendapatkan kode sumber terbaru dari salah satu lokasi berikut
 

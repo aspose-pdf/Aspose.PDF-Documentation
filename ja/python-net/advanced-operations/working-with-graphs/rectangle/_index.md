@@ -190,6 +190,6 @@ def control_z_order_of_rectangle(outfile: str):
 ## 関連するグラフトピック
 
 - [Python で PDF グラフを操作する](/pdf/ja/python-net/working-with-graphs/)
-- [Python を使用して PDF グラフの形状の境界をチェックする](/pdf/ja/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Python を使用して PDF グラフの形状の境界をチェックする](/pdf/ja/python-net/checking-shape-bounds/)
 - [Python で PDF にラインシェイプを追加する方法](/pdf/ja/python-net/add-line/)
 - [Python で PDF に楕円シェイプを追加する方法](/pdf/ja/python-net/add-ellipse/)

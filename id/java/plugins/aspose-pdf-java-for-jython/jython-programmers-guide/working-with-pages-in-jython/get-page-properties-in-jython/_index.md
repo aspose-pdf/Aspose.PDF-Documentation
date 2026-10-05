@@ -1,19 +1,20 @@
 ---
-title: Dapatkan Properti Halaman di Jython
+title: "Mendapatkan properti halaman di Jython"
+linktitle: "Mendapatkan properti halaman di Jython"
 type: docs
 weight: 50
 url: /id/java/get-page-properties-in-jython/
-lastmod: "2021-06-05"
+description: Jelajahi cara mengambil properti halaman individual dalam dokumen PDF menggunakan Jython dengan Aspose.PDF.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - dapatkan properti halaman
 
-## Aspose.PDF - Dapatkan Properti Halaman
+Untuk Memeriksa Format File menggunakan **Aspose.PDF Java for Jython**. Di sini Anda dapat melihat contoh kode.
 
-Untuk Memeriksa Format File menggunakan **Aspose.PDF Java untuk Jython**. Di sini Anda dapat melihat contoh kode.
+Kesalahan saat merender macro 'code' : Nilai tidak valid yang ditentukan untuk parameter lang
 
-Error rendering macro 'code' : Nilai tidak valid ditentukan untuk parameter lang
+## Mengunduh kode yang dapat dijalankan
 
-## Unduh Kode Berjalan
-
-Unduh kode berjalan dari salah satu situs coding sosial yang disebutkan di bawah ini:
+Unduh kode yang sedang berjalan dari salah satu situs coding sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

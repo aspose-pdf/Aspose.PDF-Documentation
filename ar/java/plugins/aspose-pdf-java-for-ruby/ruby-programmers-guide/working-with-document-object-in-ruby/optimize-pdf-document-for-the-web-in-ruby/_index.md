@@ -1,44 +1,45 @@
 ---
-title: تحسين مستند PDF للويب باستخدام روبي
+title: تحسين مستند PDF للويب في Ruby
+linktitle: تحسين مستند PDF للويب في Ruby
 type: docs
 weight: 70
 url: /ar/java/optimize-pdf-document-for-the-web-in-ruby/
-lastmod: "2021-06-05"
+description: تبسيط ملفات PDF لتسليم أسرع على الويب وتقليل حجم الملف باستخدام Aspose.PDF في Ruby.
+lastmod: "2026-10-05"
 ---
-
 ## Aspose.PDF - تحسين PDF للويب
 
-لتحسين مستند PDF للويب باستخدام **Aspose.PDF Java for Ruby**، ببساطة قم باستدعاء طريقة **optimize_web** من وحدة **Optimize**.
+لتحسين مستند PDF للويب باستخدام **Aspose.PDF Java for Ruby**، ببساطة استدعِ طريقة **optimize_web** من  **Optimize** module.
 
-كود روبي
+كود Ruby
 
 ```java
 
-def optimize_web()
+ def optimize_web()
 
-    # المسار إلى دليل المستندات.
+В В В  # The path to the documents directory.
 
-    data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
+В В В  data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-    # افتح مستند pdf.
+В В В  # Open a pdf document.
 
-    doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+В В В  doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-    # تحسين للويب
+В В В  # Optimize for web
 
-    doc.optimize()
+В В В  doc.optimize()
 
-    # حفظ المستند الناتج
+В В В  #Save output document
 
-    doc.save(data_dir + "Optimized_Web.pdf")
+В В В  doc.save(data_dir + "Optimized_Web.pdf")
 
-    puts "تم تحسين PDF للويب، يرجى التحقق من ملف الإخراج."
+В В В  puts "Optimized PDF for the Web, please check output file."
 
 end
-``` 
+```В 
 
-## تنزيل الكود الجاهز
+## تنزيل الكود الجاري
 
-قم بتنزيل **تحسين PDF للويب (Aspose.PDF)** من أي من مواقع البرمجة الاجتماعية المذكورة أدناه:
+Download **Optimize PDF for Web (Aspose.PDF)** من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)

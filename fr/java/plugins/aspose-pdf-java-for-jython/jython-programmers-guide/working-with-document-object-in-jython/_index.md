@@ -1,17 +1,23 @@
 ---
-title: Travailler Avec l'Objet Document dans Jython
+title: Travailler avec un objet document en Jython
+linktitle: Travailler avec un objet document en Jython
 type: docs
 weight: 20
-url: /fr/java/working-with-document-object-in-jython/
-lastmod: "2021-06-05"
+url: /java/working-with-document-object-in-jython/
+description: Comprenez comment manipuler des objets de document PDF en Jython avec Aspose.PDF, permettant une gestion efficace des documents.
+lastmod: "2026-09-21"
 ---
 
-Cette section comprend les sujets suivants :
+Cette section comprend les sujets suivants :
 
-- [Ajouter JavaScript en utilisant DOM dans Jython](/pdf/fr/java/adding-javascript-using-dom-in-jython/)
-- [Obtenir les Propriétés de la Fenêtre du Document et de l'Affichage de la Page dans Jython](/pdf/fr/java/get-document-window-and-page-display-properties-in-jython/)
-- [Obtenir les Informations du Fichier PDF dans Jython](/pdf/fr/java/get-pdf-file-information-in-jython/)
-- [Obtenir les Métadonnées XMP à partir du Fichier PDF dans Jython](/pdf/fr/java/get-xmp-metadata-from-pdf-file-in-jython)
-- [Optimiser le Document PDF dans Jython](/pdf/fr/java/optimize-pdf-document-in-jython/)
-- [Définir l'Expiration du PDF dans Jython](/pdf/fr/java/set-pdf-expiration-in-jython/)
-- [Définir les Informations du Fichier PDF dans Jython](/pdf/fr/java/set-pdf-file-information-in-jython/)
+- [Ajouter du JavaScript à l'aide de DOM en Jython](/pdf/java/adding-javascript-using-dom-in-jython/)
+- [Obtenir les propriétés d'affichage de la fenêtre du document et de la page en Jython](/pdf/java/get-document-window-and-page-display-properties-in-jython/)
+
+- [Obtenir des informations sur le fichier PDF en Jython](/pdf/java/get-pdf-file-information-in-jython/)
+
+- [Obtenir les métadonnées XMP à partir d'un fichier PDF en Jython](/pdf/java/get-xmp-metadata-from-pdf-file-in-jython)
+
+- [Optimiser le document PDF en Jython](/pdf/java/optimize-pdf-document-in-jython/)
+
+- [Définir l'expiration du PDF en Jython](/pdf/java/set-pdf-expiration-in-jython/)
+- [Définir les informations du fichier PDF en Jython](/pdf/java/set-pdf-file-information-in-jython/)

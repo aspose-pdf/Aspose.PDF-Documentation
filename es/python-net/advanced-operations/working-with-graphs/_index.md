@@ -35,7 +35,7 @@ Los siguientes tipos de formas son compatibles con el [Graph](https://reference.
 
 También puedes validar la colocación de formas con comprobación de límites:
 
-- [Verifique los límites de la forma en gráficos PDF con Python](/pdf/es/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [Verifique los límites de la forma en gráficos PDF con Python](/pdf/es/python-net/checking-shape-bounds/)
 
 Los ejemplos en esta sección se ilustran en la figura a continuación:
 

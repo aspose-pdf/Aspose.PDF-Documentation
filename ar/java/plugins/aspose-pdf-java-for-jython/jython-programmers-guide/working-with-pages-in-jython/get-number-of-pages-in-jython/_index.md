@@ -1,19 +1,20 @@
 ---
-title: Get Number Of Pages in Jython
+title: الحصول على عدد الصفحات في Jython
+linktitle: الحصول على عدد الصفحات في Jython
 type: docs
 weight: 30
 url: /ar/java/get-number-of-pages-in-jython/
-lastmod: "2021-06-05"
+description: تعلم كيفية الحصول على عدد الصفحات في مستند PDF باستخدام Jython و Aspose.PDF لإدارة المستندات.
+lastmod: "2026-10-01"
 ---
-
 ## Aspose.PDF - الحصول على عدد الصفحات
 
-للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية نموذج الكود.
+للتحقق من تنسيق الملف باستخدام **Aspose.PDF Java for Jython**. هنا يمكنك رؤية عينة الشفرة.
 
-خطأ في عرض الماكرو 'code': قيمة غير صالحة محددة للمعلمة lang
+خطأ في عرض الماكرو 'code' : تم تحديد قيمة غير صالحة للمعلمة lang
 
-## تحميل الكود الجاري
+## تنزيل الكود قيد التشغيل
 
-قم بتحميل الكود الجاري من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
+حمّل الشيفرة الجارية من أي من مواقع الترميز الاجتماعي المذكورة أدناه:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

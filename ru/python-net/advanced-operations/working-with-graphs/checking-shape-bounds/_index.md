@@ -3,7 +3,7 @@ title: Проверка границ фигур в графах PDF с Python
 linktitle: Проверить границы фигур
 type: docs
 weight: 70
-url: /ru/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/
+url: /ru/python-net/checking-shape-bounds/
 description: Узнайте, как проверять границы фигур в коллекциях графов PDF с помощью Python.
 lastmod: "2026-04-16"
 sitemap:

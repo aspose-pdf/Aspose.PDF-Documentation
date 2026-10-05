@@ -106,4 +106,4 @@ def draw_line_across_page(outfile: str):
 - [在 Python 中使用 PDF 图形](/pdf/zh/python-net/working-with-graphs/)
 - [在 Python 中向 PDF 添加曲线形状](/pdf/zh/python-net/add-curve/)
 - [在 Python 中向 PDF 添加矩形形状](/pdf/zh/python-net/add-rectangle/)
-- [使用 Python 检查 PDF 图形中的形状边界](/pdf/zh/python-net/aspose-pdf-drawing-graph-shapes-bounds-check/)
+- [使用 Python 检查 PDF 图形中的形状边界](/pdf/zh/python-net/checking-shape-bounds/)

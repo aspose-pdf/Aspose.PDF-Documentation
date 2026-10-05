@@ -1,39 +1,40 @@
 ---
-title: Menyisipkan Halaman Kosong di Akhir File PDF di Ruby
+title: "Menyisipkan halaman kosong di akhir file PDF dengan Ruby"
+linktitle: "Menyisipkan halaman kosong di akhir file PDF dengan Ruby"
 type: docs
 weight: 60
 url: /id/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Temukan cara menyisipkan halaman kosong di akhir dokumen PDF menggunakan Ruby dengan Aspose.PDF, menambahkan fleksibilitas pada tugas pemrosesan PDF Anda.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - sisipkan halaman kosong di akhir file PDF
 
-## Aspose.PDF - Menyisipkan Halaman Kosong di Akhir File PDF
-
-Untuk menyisipkan halaman kosong di akhir dokumen PDF menggunakan **Aspose.PDF Java untuk Ruby**, cukup panggil modul **InsertEmptyPageAtEndOfFile**.
+Untuk Menyisipkan Halaman Kosong di akhir dokumen PDF menggunakan **Aspose.PDF Java for Ruby**, cukup panggil modul **InsertEmptyPageAtEndOfFile**.
 
 Kode Ruby
 
 ```java
-# Jalur ke direktori dokumen.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Buka dokumen target
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# sisipkan halaman kosong dalam PDF
+# insert a empty page in a PDF
 
 pdf.getPages().add()
 
-# Simpan file keluaran yang telah dikonkatenasi (dokumen target)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "Halaman kosong berhasil ditambahkan!"
+puts "Empty page added successfully!"
 ```
 
-## Unduh Kode Berjalan
+## Mengunduh kode yang dapat dijalankan
 
-Unduh **Menyisipkan Halaman Kosong di Akhir File PDF (Aspose.PDF)** dari salah satu situs pemrograman sosial yang disebutkan di bawah ini:
+Unduh **Insert an Empty Page at End of PDF File (Aspose.PDF)** dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)

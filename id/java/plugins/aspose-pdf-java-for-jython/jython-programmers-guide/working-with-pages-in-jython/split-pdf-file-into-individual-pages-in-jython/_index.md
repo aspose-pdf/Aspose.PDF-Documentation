@@ -1,18 +1,19 @@
 ---
-title: Memisahkan File PDF Menjadi Halaman Individual di Jython
+title: "Memisahkan file PDF menjadi halaman individual dalam Jython"
+linktitle: "Memisahkan file PDF menjadi halaman individual dalam Jython"
 type: docs
 weight: 80
 url: /id/java/split-pdf-file-into-individual-pages-in-jython/
-lastmod: "2021-06-05"
+description: Pelajari cara memisahkan dokumen PDF menjadi halaman individual menggunakan Jython dan Aspose.PDF untuk manajemen dokumen yang lebih baik.
+lastmod: "2026-09-30"
 ---
+## Aspose.PDF - pisahkan semua halaman
 
-## Aspose.PDF - Memisahkan Semua Halaman
+Untuk Memeriksa Format File menggunakan **Aspose.PDF Java for Jython**. Di sini Anda dapat melihat contoh kode.
 
-Untuk Memeriksa Format File menggunakan **Aspose.PDF Java untuk Jython**. Di sini Anda dapat melihat contoh kode.
+Kesalahan dalam merender makro 'code' : Nilai tidak valid yang ditentukan untuk parameter lang
 
-Error rendering macro 'code' : Nilai tidak valid ditentukan untuk parameter lang
-
-## Unduh Kode yang Berjalan
+## Mengunduh kode yang dapat dijalankan
 
 Unduh kode yang berjalan dari salah satu situs pengkodean sosial yang disebutkan di bawah ini:
 

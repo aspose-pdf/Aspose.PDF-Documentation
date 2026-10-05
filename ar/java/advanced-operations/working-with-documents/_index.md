@@ -1,30 +1,23 @@
 ---
-title: العمل مع مستندات PDF
+title: العمل مع مستندات PDF في Java
 linktitle: العمل مع المستندات
 type: docs
 weight: 10
 url: /ar/java/working-with-documents/
-lastmod: "2021-06-05"
-description: يصف لك هذا المقال ما يمكن فعله من تعديلات على المستند باستخدام Aspose.PDF for Java.
+description: تعرف على كيفية إنشاء وتنسيق ومعالجة وتحسين ودمج وتقسيم وإدارة مستندات PDF في Java.
+lastmod: "2026-10-01"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: إنشاء وتنسيق ودمج وتقسيم وتحسين مستندات PDF في Java
+Abstract: يوضح هذا القسم كيفية العمل مع مستندات PDF باستخدام Aspose.PDF for Java. تعرف على كيفية إنشاء ملفات PDF، تنسيق خصائص المستند، معالجة بنية المحتوى، تحسين حجم الملف، ودمج أو تقسيم مستندات PDF.
 ---
+يوفر Aspose.PDF for Java واجهات برمجة تطبيقات على مستوى المستند لإنشاء وتنسيق والتحقق وإعادة هيكلة ودمج وتقسيم وتحسين ملفات PDF.
 
-PDF هو التنسيق القياسي للمستندات الإلكترونية. الآن يتم استخدام ملفات PDF في إدارة الإنتاج، ومجال الخدمات المالية المختلفة، والمحامين، وفي النشر، والمؤسسات التعليمية.
-
-يحفظ ملف PDF جميع الخطوط والألوان وهيكل المستند الأصلي بغض النظر عن البرامج والأجهزة. لذلك، سيكون مستند PDF دائمًا مطابقًا للأصل - سيبدو ويُطبع مثل المستند الأصلي.
-
-الهدف الرئيسي لمستند PDF كان الحفاظ على المحتوى وتخطيط المستند وحمايتهما. لهذا السبب تكون مستندات PDF صعبة التحرير وأحيانًا يكون استخراج المعلومات منها مشكلة.
-
-لكن **Aspose.PDF for Java** يمكن أن يساعدك في التعامل مع معظم المهام التي تنشأ عند العمل مع مستند PDF.
-
-You are able to do the following:
-
-- [Create Document](/pdf/ar/java/create-pdf-document/) - إنشاء مستند PDF.
-- [Formatting PDF Document](/pdf/ar/java/formatting-pdf-document/) - الحصول على خصائص المستند وتعيينها، تضمين الخطوط، وعمليات أخرى باستخدام ملفات PDF.
-- [Manipulate PDF Document](/pdf/ar/java/manipulate-pdf-document/) - التحقق من صحة مستند PDF وفقًا لمعيار PDF A، العمل مع جدول المحتويات، تعيين تاريخ انتهاء صلاحية PDF، إلخ.
-- [Optimize PDF](/pdf/ar/java/optimize-pdf/) - تحسين محتوى الصفحة، تحسين حجم الملف، إزالة الكائنات غير المستخدمة، ضغط جميع الصور لتحقيق تحسين ناجح للمستند.
-- [Merge PDF](/pdf/ar/java/merge-pdf-documents/) - دمج ملفات PDF متعددة في مستند PDF واحد باستخدام Java.
-- [Split PDF](/pdf/ar/java/split-document/) - تقسيم صفحات PDF إلى ملفات PDF فردية في تطبيقات Java الخاصة بك.
-- [Working with Headings](/pdf/ar/java/working-with-headings/) - يمكنك إنشاء ترقيم في العنوان لمستند PDF الخاص بك باستخدام Java.
+- [إنشاء مستندات PDF](/pdf/ar/java/create-pdf-document/)
+- [تنسيق مستندات PDF](/pdf/ar/java/formatting-pdf-document/)
+- [معالجة مستندات PDF](/pdf/ar/java/manipulate-pdf-document/)
+- [دمج ملفات PDF](/pdf/ar/java/merge-pdf-documents/)
+- [تحسين ملفات PDF](/pdf/ar/java/optimize-pdf/)
+- [تقسيم ملفات PDF](/pdf/ar/java/split-pdf-document/)
