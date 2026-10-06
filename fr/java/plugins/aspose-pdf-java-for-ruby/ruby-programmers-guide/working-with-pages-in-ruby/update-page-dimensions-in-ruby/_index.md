@@ -3,7 +3,7 @@ title: Mettre à jour les dimensions de la page en Ruby
 linktitle: Mettre à jour les dimensions de la page en Ruby
 type: docs
 weight: 90
-url: /java/update-page-dimensions-in-ruby/
+url: /fr/java/update-page-dimensions-in-ruby/
 description: Découvrez comment mettre à jour les dimensions de la page d'un document PDF à l'aide de Ruby avec Aspose.PDF pour un formatage de page précis.
 lastmod: "2026-09-21"
 ---

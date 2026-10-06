@@ -3,7 +3,7 @@ title: Annotations de balisage utilisant Java
 linktitle: Annotations de balisage
 type: docs
 weight: 20
-url: /java/pdfannotationeditor-class/markup-annotations/
+url: /fr/java/pdfannotationeditor-class/markup-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations surlignées, soulignées, ondulées et barrées dans des documents PDF à l'aide de Java.
 lastmod: "2026-09-22"
 TechArticle: true

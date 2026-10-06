@@ -3,7 +3,7 @@ title: Ajouter du JavaScript en Ruby
 linktitle: Ajouter du JavaScript en Ruby
 type: docs
 weight: 10
-url: /java/adding-javascript-in-ruby/
+url: /fr/java/adding-javascript-in-ruby/
 description: Activez la fonctionnalité JavaScript dans les PDF à l'aide d'Aspose.PDF en Ruby pour l'interactivité et l'automatisation.
 lastmod: "2026-09-21"
 ---

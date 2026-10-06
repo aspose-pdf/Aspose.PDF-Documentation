@@ -3,7 +3,7 @@ title: Configuration système requise
 linktitle: Configuration système requise
 type: docs
 weight: 30
-url: /java/system-requirements/
+url: /fr/java/system-requirements/
 description: Consultez la configuration système, les versions Java et les environnements de développement indiqués pour Aspose.PDF for Java.
 lastmod: "2026-09-21"
 sitemap:

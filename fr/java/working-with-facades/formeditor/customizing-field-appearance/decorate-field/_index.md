@@ -3,7 +3,7 @@ title: Décorer le champ
 linktitle: Décorer le champ
 type: docs
 weight: 10
-url: /java/decorate-field/
+url: /fr/java/decorate-field/
 description: Apprenez à décorer un champ de formulaire PDF avec des couleurs et un alignement en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Supprimer une page particulière du fichier PDF en Jython
 linktitle: Supprimer une page particulière du fichier PDF en Jython
 type: docs
 weight: 20
-url: /java/delete-a-particular-page-from-the-pdf-file-in-jython/
+url: /fr/java/delete-a-particular-page-from-the-pdf-file-in-jython/
 description: Découvrez comment supprimer une page spécifique d'un document PDF à l'aide de Jython et Aspose.PDF, permettant une édition efficace.
 lastmod: "2026-09-21"
 ---

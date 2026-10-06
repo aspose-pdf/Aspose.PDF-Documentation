@@ -3,7 +3,7 @@ title: Remplir les champs par nom et valeur
 linktitle: Remplir les champs par nom et valeur
 type: docs
 weight: 60
-url: /java/fill-fields-by-name-and-value/
+url: /fr/java/fill-fields-by-name-and-value/
 description: Découvrez comment adapter l'API de remplissage de champs de la façade Form en Java pour les mises à jour dynamiques des formulaires nom-valeur.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Créer une zone de liste
 linktitle: Créer une zone de liste
 type: docs
 weight: 40
-url: /java/create-listbox-field/
+url: /fr/java/create-listbox-field/
 description: Découvrez comment ajouter un champ de zone de liste à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

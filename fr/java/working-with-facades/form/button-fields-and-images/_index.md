@@ -3,7 +3,7 @@ title: Champs de boutons et images
 linktitle: Champs de boutons et images
 type: docs
 weight: 40
-url: /java/button-fields-and-images/
+url: /fr/java/button-fields-and-images/
 description: Découvrez comment ajouter une apparence d'image à un champ de bouton dans un formulaire PDF à l'aide de la façade Form dans Aspose.PDF for Java.
 lastmod: "2026-09-22"
 TechArticle: true

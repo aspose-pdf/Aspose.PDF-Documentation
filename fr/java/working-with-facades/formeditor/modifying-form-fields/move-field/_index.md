@@ -3,7 +3,7 @@ title: Déplacer le champ
 linktitle: Déplacer le champ
 type: docs
 weight: 30
-url: /java/move-field/
+url: /fr/java/move-field/
 description: Découvrez comment déplacer un champ de formulaire existant dans un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

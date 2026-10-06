@@ -3,7 +3,7 @@ title: Obtenir les propriétés d'affichage de la fenêtre du document et de la 
 linktitle: Obtenir les propriétés d'affichage de la fenêtre du document et de la page en Python
 type: docs
 weight: 30
-url: /java/get-document-window-and-page-display-properties-in-python/
+url: /fr/java/get-document-window-and-page-display-properties-in-python/
 description: Comprenez comment récupérer les propriétés d'affichage de la fenêtre et de la page d'un document à partir d'un PDF en Python avec Aspose.PDF pour une présentation précise.
 lastmod: "2026-09-21"
 ---

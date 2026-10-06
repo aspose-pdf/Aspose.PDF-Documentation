@@ -3,7 +3,7 @@ title: Aperçu
 linktitle: Aperçu
 type: docs
 weight: 20
-url: /java/overview/
+url: /fr/java/overview/
 description: Présentation des principales fonctionnalités et des formats pris en charge d'Aspose.PDF for Java, manuel d'installation et de licence de la bibliothèque Java.
 lastmod: "2026-09-21"
 sitemap:

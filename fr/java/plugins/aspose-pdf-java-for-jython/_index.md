@@ -3,7 +3,7 @@ title: Aspose.PDF Java pour Jython
 linktitle: Aspose.PDF Java pour Jython
 type: docs
 weight: 60
-url: /java/aspose-pdf-java-for-jython/
+url: /fr/java/aspose-pdf-java-for-jython/
 description: Combinez la puissance d'Aspose.PDF for Java avec Jython. Manipulez sans effort les fichiers PDF dans un environnement Java basé sur Python.
 lastmod: "2026-09-21"
 ---

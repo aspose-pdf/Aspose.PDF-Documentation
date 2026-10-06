@@ -3,7 +3,7 @@ title: Fractionner un PDF depuis le début
 linktitle: Fractionner un PDF depuis le début
 type: docs
 weight: 10
-url: /java/split-pdf-from-beginning/
+url: /fr/java/split-pdf-from-beginning/
 description: Divisez un PDF depuis le début en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

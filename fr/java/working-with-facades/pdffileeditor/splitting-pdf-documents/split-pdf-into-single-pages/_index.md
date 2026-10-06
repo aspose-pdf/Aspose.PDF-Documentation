@@ -3,7 +3,7 @@ title: Diviser le PDF en fichiers d’une seule page
 linktitle: Diviser le PDF en fichiers d’une seule page
 type: docs
 weight: 30
-url: /java/split-pdf-into-single-pages/
+url: /fr/java/split-pdf-into-single-pages/
 description: Divisez un PDF en fichiers de sortie d'une seule page en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

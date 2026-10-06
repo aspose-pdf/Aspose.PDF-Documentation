@@ -3,7 +3,7 @@ title: Certification PDF
 linktitle: Certification PDF
 type: docs
 weight: 30
-url: /java/pdf-certification/
+url: /fr/java/pdf-certification/
 description: Découvrez comment certifier des documents PDF en Java avec PdfFileSignature et DocMDPSignature.
 lastmod: "2026-09-22"
 draft: false

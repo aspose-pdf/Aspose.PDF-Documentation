@@ -3,7 +3,7 @@ title: Classe PdfAnnotationEditor
 linktitle: Classe PdfAnnotationEditor
 type: docs
 weight: 40
-url: /java/pdfannotationeditor-class/
+url: /fr/java/pdfannotationeditor-class/
 description: Apprenez à utiliser les flux de travail d'annotation PDF en Java via la section PdfAnnotationEditor, y compris le texte, le balisage, les liens, les formes, les filigranes, le caviardage et les scénarios de transfert d'annotations.
 lastmod: "2026-09-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Remplacer le texte avec une mise en forme personnalisée
 linktitle: Remplacer le texte avec une mise en forme personnalisée
 type: docs
 weight: 20
-url: /java/replace-text-with-state/
+url: /fr/java/replace-text-with-state/
 description: Découvrez comment remplacer le texte par une mise en forme personnalisée en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

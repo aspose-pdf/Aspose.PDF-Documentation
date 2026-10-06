@@ -3,7 +3,7 @@ title: Définir les informations du fichier PDF en PHP
 linktitle: Définir les informations du fichier PDF en PHP
 type: docs
 weight: 90
-url: /java/set-pdf-file-information-in-php/
+url: /fr/java/set-pdf-file-information-in-php/
 description: Découvrez comment définir diverses propriétés de fichier, telles que les métadonnées, pour un document PDF en PHP à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 ---

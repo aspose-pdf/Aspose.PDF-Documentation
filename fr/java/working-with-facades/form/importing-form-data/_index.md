@@ -3,7 +3,7 @@ title: Importation de données de formulaire
 linktitle: Importation de données de formulaire
 type: docs
 weight: 20
-url: /java/importing-form-data/
+url: /fr/java/importing-form-data/
 description: Découvrez comment importer des données de formulaire PDF en Java avec la façade Form dans Aspose.PDF, y compris les flux de travail d'entrée XML, FDF et XFDF.
 lastmod: "2026-09-22"
 TechArticle: true

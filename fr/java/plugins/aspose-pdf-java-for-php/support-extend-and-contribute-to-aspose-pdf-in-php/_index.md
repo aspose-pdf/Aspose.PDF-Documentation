@@ -3,7 +3,7 @@ title: Assistance et contributions à Aspose.PDF en PHP
 linktitle: Assistance et contributions à Aspose.PDF en PHP
 type: docs
 weight: 30
-url: /java/support-extend-and-contribute-to-aspose-pdf-in-php/
+url: /fr/java/support-extend-and-contribute-to-aspose-pdf-in-php/
 description: Découvrez comment prendre en charge et étendre Aspose.PDF en PHP et contribuer à améliorer les capacités de traitement PDF dans vos applications PHP.
 lastmod: "2026-09-21"
 ---

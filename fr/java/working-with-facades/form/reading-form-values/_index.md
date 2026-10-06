@@ -3,7 +3,7 @@ title: Lecture des valeurs du formulaire
 linktitle: Lecture des valeurs du formulaire
 type: docs
 weight: 60
-url: /java/reading-form-values/
+url: /fr/java/reading-form-values/
 description: Découvrez comment inspecter les noms et les valeurs des champs de formulaire PDF en Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

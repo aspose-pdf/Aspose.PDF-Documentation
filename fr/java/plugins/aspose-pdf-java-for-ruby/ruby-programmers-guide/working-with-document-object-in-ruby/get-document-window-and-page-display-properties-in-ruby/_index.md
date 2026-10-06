@@ -3,7 +3,7 @@ title: Obtenir les propriétés d'affichage de la fenêtre du document et de la 
 linktitle: Obtenir les propriétés d'affichage de la fenêtre du document et de la page en Ruby
 type: docs
 weight: 40
-url: /java/get-document-window-and-page-display-properties-in-ruby/
+url: /fr/java/get-document-window-and-page-display-properties-in-ruby/
 description: Récupérez et personnalisez les propriétés d'affichage de la fenêtre du document et des pages dans les fichiers PDF à l'aide de Ruby et Aspose.PDF.
 lastmod: "2026-09-21"
 ---

@@ -3,7 +3,7 @@ title: Obtenir les propriétés d'affichage de la fenêtre du document et de la 
 linktitle: Obtenir les propriétés d'affichage de la fenêtre du document et de la page en Jython
 type: docs
 weight: 20
-url: /java/get-document-window-and-page-display-properties-in-jython/
+url: /fr/java/get-document-window-and-page-display-properties-in-jython/
 description: Découvrez comment accéder aux propriétés d'affichage de la fenêtre du document et de la page dans un fichier PDF à l'aide de Jython et Aspose.PDF.
 lastmod: "2026-09-21"
 ---

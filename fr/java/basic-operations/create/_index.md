@@ -3,7 +3,7 @@ title: Créer un document PDF par programmation
 linktitle: Créer un PDF
 type: docs
 weight: 10
-url: /java/create-document/
+url: /fr/java/create-document/
 description: Découvrez comment créer un document PDF à partir de zéro en Java à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 sitemap:

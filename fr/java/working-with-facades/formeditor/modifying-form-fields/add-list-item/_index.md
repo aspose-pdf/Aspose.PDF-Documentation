@@ -3,7 +3,7 @@ title: Ajouter un élément de liste
 linktitle: Ajouter un élément de liste
 type: docs
 weight: 10
-url: /java/add-list-item/
+url: /fr/java/add-list-item/
 description: Découvrez comment ajouter des éléments à un champ de liste dans un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

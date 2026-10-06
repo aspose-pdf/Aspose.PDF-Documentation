@@ -3,7 +3,7 @@ title: Annotations et textes spéciaux utilisant Java
 linktitle: Annotations et textes spéciaux
 type: docs
 weight: 40
-url: /java/annotation-and-special-text/
+url: /fr/java/annotation-and-special-text/
 description: Découvrez comment extraire le texte des annotations de tampon, du texte surligné et du contenu en exposant ou en indice dans des documents PDF à l'aide d'Aspose.PDF for Java.
 lastmod: "2026-09-22"
 sitemap:

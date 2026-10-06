@@ -3,7 +3,7 @@ title: Optimiser un document PDF en Jython
 linktitle: Optimiser un document PDF en Jython
 type: docs
 weight: 50
-url: /java/optimize-pdf-document-in-jython/
+url: /fr/java/optimize-pdf-document-in-jython/
 description: Découvrez comment optimiser un document PDF en Jython pour réduire la taille du fichier et améliorer les performances Web à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 ---

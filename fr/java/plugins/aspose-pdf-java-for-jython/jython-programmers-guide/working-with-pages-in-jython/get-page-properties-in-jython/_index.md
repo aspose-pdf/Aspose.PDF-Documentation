@@ -3,7 +3,7 @@ title: Obtenir les propriétés de la page en Jython
 linktitle: Obtenir les propriétés de la page en Jython
 type: docs
 weight: 50
-url: /java/get-page-properties-in-jython/
+url: /fr/java/get-page-properties-in-jython/
 description: Découvrez comment récupérer les propriétés de pages individuelles dans un document PDF à l'aide de Jython avec Aspose.PDF.
 lastmod: "2026-09-21"
 ---

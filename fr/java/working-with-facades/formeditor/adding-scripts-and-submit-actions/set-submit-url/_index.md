@@ -3,7 +3,7 @@ title: Définir l'URL de soumission
 linktitle: Définir l'URL de soumission
 type: docs
 weight: 30
-url: /java/set-submit-url/
+url: /fr/java/set-submit-url/
 description: Découvrez comment définir une URL de soumission pour un bouton de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

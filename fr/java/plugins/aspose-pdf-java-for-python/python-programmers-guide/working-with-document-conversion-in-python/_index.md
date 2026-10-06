@@ -3,7 +3,7 @@ title: Travailler avec la conversion de documents en Python
 linktitle: Travailler avec la conversion de documents en Python
 type: docs
 weight: 10
-url: /java/working-with-document-conversion-in-python/
+url: /fr/java/working-with-document-conversion-in-python/
 description: Learn how to convert PDF documents to different formats in Python using Aspose.PDF for flexible document processing.
 lastmod: "2026-09-21"
 ---

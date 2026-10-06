@@ -3,7 +3,7 @@ title: Gestion des champs de formulaire
 linktitle: Gestion des champs de formulaire
 type: docs
 weight: 50
-url: /java/managing-form-fields/
+url: /fr/java/managing-form-fields/
 description: Découvrez comment gérer les champs de formulaire PDF en Java à l'aide de la façade Form dans Aspose.PDF, notamment en aplatissant tous les champs et en renommant les champs existants.
 lastmod: "2026-09-22"
 TechArticle: true

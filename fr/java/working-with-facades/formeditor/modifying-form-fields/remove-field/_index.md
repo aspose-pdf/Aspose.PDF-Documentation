@@ -3,7 +3,7 @@ title: Supprimer le champ
 linktitle: Supprimer le champ
 type: docs
 weight: 40
-url: /java/remove-field/
+url: /fr/java/remove-field/
 description: Découvrez comment supprimer un champ de formulaire existant d'un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

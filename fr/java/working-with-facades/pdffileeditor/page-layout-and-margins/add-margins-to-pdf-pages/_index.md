@@ -3,7 +3,7 @@ title: Ajouter des marges aux pages PDF
 linktitle: Ajouter des marges aux pages PDF
 type: docs
 weight: 10
-url: /java/add-margins-to-pdf-pages/
+url: /fr/java/add-margins-to-pdf-pages/
 description: Ajoutez des marges aux pages PDF sélectionnées en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

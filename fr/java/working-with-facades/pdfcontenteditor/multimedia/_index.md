@@ -3,7 +3,7 @@ title: Multimédia
 linktitle: Multimédia
 type: docs
 weight: 70
-url: /java/pdfcontenteditor-multimedia/
+url: /fr/java/pdfcontenteditor-multimedia/
 description: Découvrez la couverture multimédia actuelle disponible dans la façade Java PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

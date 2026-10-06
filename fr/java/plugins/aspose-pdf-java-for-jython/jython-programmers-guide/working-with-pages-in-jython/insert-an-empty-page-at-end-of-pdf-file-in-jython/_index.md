@@ -3,7 +3,7 @@ title: Insérer une page vide à la fin du fichier PDF en Jython
 linktitle: Insérer une page vide à la fin du fichier PDF en Jython
 type: docs
 weight: 60
-url: /java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
+url: /fr/java/insert-an-empty-page-at-end-of-pdf-file-in-jython/
 description: Découvrez comment insérer une page vide à la fin d'un fichier PDF en utilisant Jython avec Aspose.PDF pour la personnalisation du document.
 lastmod: "2026-09-21"
 ---

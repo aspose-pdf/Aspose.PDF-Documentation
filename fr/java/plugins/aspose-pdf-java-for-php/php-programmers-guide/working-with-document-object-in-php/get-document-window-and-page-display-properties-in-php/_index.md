@@ -3,7 +3,7 @@ title: Obtenir les propriétés d'affichage de la fenêtre du document et de la 
 linktitle: Obtenir les propriétés d'affichage de la fenêtre du document et de la page en PHP
 type: docs
 weight: 30
-url: /java/get-document-window-and-page-display-properties-in-php/
+url: /fr/java/get-document-window-and-page-display-properties-in-php/
 description: Découvrez comment accéder aux propriétés d'affichage de la fenêtre du document et de la page d'un fichier PDF en PHP à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 ---

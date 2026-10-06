@@ -3,7 +3,7 @@ title: Opérations de base avec les documents PDF
 linktitle: Opérations de base
 type: docs
 weight: 60
-url: /java/basic-operations/
+url: /fr/java/basic-operations/
 lastmod: "2026-09-21"
 description: La section Opérations de base décrit comment créer, ouvrir, enregistrer, fusionner, diviser et protéger des documents PDF à l'aide d'Aspose.PDF pour Java.
 sitemap:

@@ -3,7 +3,7 @@ title: Ajouter un tampon au PDF
 linktitle: Ajouter un tampon au PDF
 type: docs
 weight: 40
-url: /java/add-stamp/
+url: /fr/java/add-stamp/
 description: Découvrez comment ajouter un tampon d'image aux pages PDF en Java avec la façade PdfFileStamp.
 lastmod: "2026-09-22"
 draft: false

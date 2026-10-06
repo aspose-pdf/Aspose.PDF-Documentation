@@ -3,7 +3,7 @@ title: Convertir un PDF au format DOC ou DOCX en Ruby
 linktitle: Convertir un PDF au format DOC ou DOCX en Ruby
 type: docs
 weight: 30
-url: /java/convert-pdf-to-doc-or-docx-format-in-ruby/
+url: /fr/java/convert-pdf-to-doc-or-docx-format-in-ruby/
 description: Apprenez à convertir des documents PDF aux formats DOC ou DOCX en Ruby avec Aspose.PDF, permettant une édition et un traitement plus faciles.
 lastmod: "2026-09-21"
 ---

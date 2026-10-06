@@ -3,7 +3,7 @@ title: Action Ajouter un document
 linktitle: Action Ajouter un document
 type: docs
 weight: 10
-url: /java/add-document-action/
+url: /fr/java/add-document-action/
 description: Découvrez comment ajouter une action d'ouverture de document à un PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

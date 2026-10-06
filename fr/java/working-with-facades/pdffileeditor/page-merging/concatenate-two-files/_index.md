@@ -3,7 +3,7 @@ title: Concaténer deux fichiers PDF
 linktitle: Concaténer deux fichiers PDF
 type: docs
 weight: 60
-url: /java/concatenate-two-files/
+url: /fr/java/concatenate-two-files/
 description: Fusionnez deux fichiers PDF en un seul document en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

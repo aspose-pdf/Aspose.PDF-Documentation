@@ -3,7 +3,7 @@ title: Extraire des pages d'un PDF
 linktitle: Extraire des pages d'un PDF
 type: docs
 weight: 30
-url: /java/extract-pages-from-pdf/
+url: /fr/java/extract-pages-from-pdf/
 description: Extrayez les pages sélectionnées d'un PDF en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Remplir la zone de liste
 linktitle: Remplir la zone de liste
 type: docs
 weight: 40
-url: /java/fill-list-box/
+url: /fr/java/fill-list-box/
 description: Découvrez comment remplir un champ de zone de liste dans un formulaire PDF avec Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

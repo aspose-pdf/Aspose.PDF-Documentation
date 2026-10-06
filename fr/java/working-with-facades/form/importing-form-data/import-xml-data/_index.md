@@ -3,7 +3,7 @@ title: Importer des données XML
 linktitle: Importer des données XML
 type: docs
 weight: 40
-url: /java/import-xml-data/
+url: /fr/java/import-xml-data/
 description: Découvrez comment importer des données de formulaire XML dans un formulaire PDF avec Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

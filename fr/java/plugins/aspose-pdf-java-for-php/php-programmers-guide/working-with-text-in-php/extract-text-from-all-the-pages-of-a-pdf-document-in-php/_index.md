@@ -3,7 +3,7 @@ title: Extraire le texte de toutes les pages d'un document PDF en PHP
 linktitle: Extraire le texte de toutes les pages d'un document PDF en PHP
 type: docs
 weight: 30
-url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
+url: /fr/java/extract-text-from-all-the-pages-of-a-pdf-document-in-php/
 description: Découvrez comment extraire le texte de toutes les pages d'un document PDF en PHP en utilisant Aspose.PDF pour l'analyse de texte.
 lastmod: "2026-09-21"
 ---

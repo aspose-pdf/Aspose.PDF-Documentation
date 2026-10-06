@@ -3,7 +3,7 @@ title: Exporter vers XML
 linktitle: Exporter vers XML
 type: docs
 weight: 40
-url: /java/export-to-xml/
+url: /fr/java/export-to-xml/
 description: Découvrez comment exporter des données de formulaire PDF vers XML en Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

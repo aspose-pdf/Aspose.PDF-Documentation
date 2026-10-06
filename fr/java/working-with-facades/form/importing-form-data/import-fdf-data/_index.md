@@ -3,7 +3,7 @@ title: Importer des données FDF
 linktitle: Importer des données FDF
 type: docs
 weight: 10
-url: /java/import-fdf-data/
+url: /fr/java/import-fdf-data/
 description: Découvrez comment importer des données de formulaire FDF dans un formulaire PDF avec Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

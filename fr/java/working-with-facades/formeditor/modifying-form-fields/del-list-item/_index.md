@@ -3,7 +3,7 @@ title: Supprimer un élément de liste
 linktitle: Supprimer un élément de liste
 type: docs
 weight: 20
-url: /java/del-list-item/
+url: /fr/java/del-list-item/
 description: Découvrez comment supprimer un élément d'un champ de liste dans un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

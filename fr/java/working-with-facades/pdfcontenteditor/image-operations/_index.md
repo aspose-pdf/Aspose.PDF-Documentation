@@ -3,7 +3,7 @@ title: Opérations sur les images
 linktitle: Opérations sur les images
 type: docs
 weight: 50
-url: /java/pdfcontenteditor-image-operations/
+url: /fr/java/pdfcontenteditor-image-operations/
 description: Découvrez la couverture actuelle des opérations d’image Java disponible dans la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

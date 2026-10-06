@@ -3,7 +3,7 @@ title: Créer un champ de bouton radio
 linktitle: Créer un champ de bouton radio
 type: docs
 weight: 50
-url: /java/create-radiobutton-field/
+url: /fr/java/create-radiobutton-field/
 description: Découvrez comment ajouter un champ de bouton radio à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Insérer des pages dans un PDF
 linktitle: Insérer des pages dans un PDF
 type: docs
 weight: 40
-url: /java/insert-pages-into-pdf/
+url: /fr/java/insert-pages-into-pdf/
 description: Insérez les pages sélectionnées d'un PDF dans un autre en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

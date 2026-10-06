@@ -3,7 +3,7 @@ title: Définir le script de champ
 linktitle: Définir le script de champ
 type: docs
 weight: 20
-url: /java/set-field-script/
+url: /fr/java/set-field-script/
 description: Découvrez comment attribuer ou mettre à jour une action JavaScript sur un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Convertir un PDF en classeur Excel en Jython
 linktitle: Convertir un PDF en classeur Excel en Jython
 type: docs
 weight: 20
-url: /java/convert-pdf-to-excel-workbook-in-jython/
+url: /fr/java/convert-pdf-to-excel-workbook-in-jython/
 description: Découvrez comment convertir des documents PDF en classeurs Excel en Jython à l'aide d'Aspose.PDF, permettant l'extraction de données à des fins d'analyse.
 lastmod: "2026-09-21"
 ---

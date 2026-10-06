@@ -3,7 +3,7 @@ title: Ouvrir un document PDF par programme
 linktitle: Ouvrir le PDF
 type: docs
 weight: 20
-url: /java/open-pdf-document/
+url: /fr/java/open-pdf-document/
 description: Découvrez comment ouvrir un fichier PDF en Java à l'aide d'Aspose.PDF à partir d'un chemin de fichier, d'un flux ou avec un mot de passe.
 lastmod: "2026-09-21"
 sitemap:

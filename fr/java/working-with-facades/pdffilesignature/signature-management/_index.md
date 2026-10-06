@@ -3,7 +3,7 @@ title: Gestion des signatures
 linktitle: Gestion des signatures
 type: docs
 weight: 80
-url: /java/signature-management/
+url: /fr/java/signature-management/
 description: Découvrez comment supprimer une signature PDF existante en Java avec la façade PdfFileSignature.
 lastmod: "2026-09-22"
 draft: false

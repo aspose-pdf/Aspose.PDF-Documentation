@@ -3,7 +3,7 @@ title: Actions sur les documents
 linktitle: Actions sur les documents
 type: docs
 weight: 30
-url: /java/pdfcontenteditor-document-actions/
+url: /fr/java/pdfcontenteditor-document-actions/
 description: Découvrez comment ajouter ou supprimer des actions au niveau du document en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

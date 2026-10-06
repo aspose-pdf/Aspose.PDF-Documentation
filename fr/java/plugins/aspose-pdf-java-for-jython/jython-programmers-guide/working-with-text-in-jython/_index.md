@@ -3,7 +3,7 @@ title: Travailler avec du texte en Jython
 linktitle: Travailler avec du texte en Jython
 type: docs
 weight: 40
-url: /java/working-with-text-in-jython/
+url: /fr/java/working-with-text-in-jython/
 description: Explorez la manipulation de texte dans les PDF à l'aide de Jython avec Aspose.PDF, ce qui facilite l'utilisation du contenu textuel des documents.
 lastmod: "2026-09-21"
 ---

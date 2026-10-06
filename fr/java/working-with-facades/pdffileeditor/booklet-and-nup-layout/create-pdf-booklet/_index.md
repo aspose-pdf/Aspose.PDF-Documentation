@@ -3,7 +3,7 @@ title: Créer un livret PDF
 linktitle: Créer un livret PDF
 type: docs
 weight: 20
-url: /java/create-pdf-booklet/
+url: /fr/java/create-pdf-booklet/
 description: Créez un PDF prêt pour un livret à partir d'un document existant en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

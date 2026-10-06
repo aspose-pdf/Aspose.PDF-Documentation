@@ -3,7 +3,7 @@ title: Télécharger et configurer Aspose.PDF en Ruby
 linktitle: Télécharger et configurer Aspose.PDF en Ruby
 type: docs
 weight: 10
-url: /java/download-and-configure-aspose-pdf-in-ruby/
+url: /fr/java/download-and-configure-aspose-pdf-in-ruby/
 description: Démarrez avec Aspose.PDF en Ruby en téléchargeant et en configurant la bibliothèque pour une gestion transparente des PDF.
 lastmod: "2026-09-21"
 ---

@@ -3,7 +3,7 @@ title: Vérification des signatures
 linktitle: Vérification des signatures
 type: docs
 weight: 90
-url: /java/signature-verification/
+url: /fr/java/signature-verification/
 description: Découvrez comment vérifier les signatures PDF en Java avec la façade PdfFileSignature.
 lastmod: "2026-09-22"
 draft: false

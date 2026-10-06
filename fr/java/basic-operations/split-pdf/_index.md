@@ -3,7 +3,7 @@ title: Diviser des fichiers PDF en Java
 linktitle: Diviser des fichiers PDF
 type: docs
 weight: 60
-url: /java/split-pdf/
+url: /fr/java/split-pdf/
 description: Découvrez comment diviser un PDF en fichiers PDF d'une seule page en Java à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 sitemap:

@@ -3,7 +3,7 @@ title: Insérer une page vide dans un fichier PDF en Jython
 linktitle: Insérer une page vide dans un fichier PDF en Jython
 type: docs
 weight: 70
-url: /java/insert-an-empty-page-into-a-pdf-file-in-jython/
+url: /fr/java/insert-an-empty-page-into-a-pdf-file-in-jython/
 description: Découvrez comment insérer une page vide dans n'importe quel emplacement d'un document PDF en Jython à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 ---

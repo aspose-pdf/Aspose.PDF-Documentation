@@ -3,7 +3,7 @@ title: Opérations de texte
 linktitle: Opérations de texte
 type: docs
 weight: 90
-url: /java/pdfcontenteditor-text-operations/
+url: /fr/java/pdfcontenteditor-text-operations/
 description: Découvrez la couverture actuelle du remplacement de texte Java disponible dans la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

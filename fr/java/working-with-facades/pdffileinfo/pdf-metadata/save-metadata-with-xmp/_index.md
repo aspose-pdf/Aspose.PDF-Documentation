@@ -3,7 +3,7 @@ title: Enregistrer les métadonnées avec XMP
 linktitle: Enregistrer les métadonnées avec XMP
 type: docs
 weight: 30
-url: /java/save-metadata-with-xmp/
+url: /fr/java/save-metadata-with-xmp/
 description: Découvrez comment enregistrer les métadonnées PDF avec XMP en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

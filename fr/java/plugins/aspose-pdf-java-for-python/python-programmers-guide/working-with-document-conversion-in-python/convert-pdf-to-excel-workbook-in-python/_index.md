@@ -3,7 +3,7 @@ title: Convertir un PDF en classeur Excel en Python
 linktitle: Convertir un PDF en classeur Excel en Python
 type: docs
 weight: 20
-url: /java/convert-pdf-to-excel-workbook-in-python/
+url: /fr/java/convert-pdf-to-excel-workbook-in-python/
 description: Découvrez comment convertir des documents PDF en classeurs Excel en Python à l'aide d'Aspose.PDF pour l'extraction de données structurées.
 lastmod: "2026-09-21"
 ---

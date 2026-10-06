@@ -3,7 +3,7 @@ title: Ajouter un pied de page au PDF
 linktitle: Ajouter un pied de page au PDF
 type: docs
 weight: 10
-url: /java/add-footer/
+url: /fr/java/add-footer/
 description: Découvrez comment ajouter des pieds de page de texte et d'image aux pages PDF en Java avec la façade PdfFileStamp.
 lastmod: "2026-09-22"
 draft: false

@@ -3,7 +3,7 @@ title: Classe PdfFileSecurity
 linktitle: Classe PdfFileSecurity
 type: docs
 weight: 125
-url: /java/pdffilesecurity-class/
+url: /fr/java/pdffilesecurity-class/
 description: Découvrez comment utiliser la façade PdfFileSecurity en Java pour chiffrer et déchiffrer des PDF, modifier les mots de passe et contrôler les privilèges des documents.
 lastmod: "2026-09-22"
 draft: false

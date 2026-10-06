@@ -3,7 +3,7 @@ title: Assistance technique
 linktitle: Assistance technique
 type: docs
 weight: 60
-url: /java/technical-support/
+url: /fr/java/technical-support/
 description: Découvrez comment demander de l’aide pour Aspose.PDF for Java et fournir les informations nécessaires à l’analyse d’un problème.
 lastmod: "2026-09-21"
 sitemap:

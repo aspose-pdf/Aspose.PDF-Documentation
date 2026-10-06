@@ -3,7 +3,7 @@ title: Classe PdfFileEditor
 linktitle: Classe PdfFileEditor
 type: docs
 weight: 10
-url: /java/pdffileeditor-class/
+url: /fr/java/pdffileeditor-class/
 description: Découvrez comment utiliser la façade PdfFileEditor en Java pour fusionner des documents, diviser des PDF, réorganiser les pages et ajuster la mise en page.
 lastmod: "2026-09-22"
 sitemap:

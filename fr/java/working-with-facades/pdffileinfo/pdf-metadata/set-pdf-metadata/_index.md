@@ -3,7 +3,7 @@ title: Définir les métadonnées PDF
 linktitle: Définir les métadonnées PDF
 type: docs
 weight: 50
-url: /java/set-pdf-metadata/
+url: /fr/java/set-pdf-metadata/
 description: Découvrez comment mettre à jour les métadonnées PDF en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

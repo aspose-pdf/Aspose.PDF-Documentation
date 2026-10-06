@@ -3,7 +3,7 @@ title: Ajouter une table des matières au PDF existant en Ruby
 linktitle: Ajouter une table des matières au PDF existant en Ruby
 type: docs
 weight: 30
-url: /java/add-toc-to-existing-pdf-in-ruby/
+url: /fr/java/add-toc-to-existing-pdf-in-ruby/
 description: Découvrez comment ajouter une table des matières à un PDF existant en Ruby à l'aide d'Aspose.PDF pour une navigation améliorée dans les documents.
 lastmod: "2026-09-21"
 ---

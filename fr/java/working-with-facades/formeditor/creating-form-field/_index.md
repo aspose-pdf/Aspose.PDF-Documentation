@@ -3,7 +3,7 @@ title: Création de champs de formulaire
 linktitle: Création de champs de formulaire
 type: docs
 weight: 10
-url: /java/creating-form-field/
+url: /fr/java/creating-form-field/
 description: Découvrez comment créer des champs de formulaire PDF interactifs en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

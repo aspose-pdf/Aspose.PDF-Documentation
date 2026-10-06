@@ -3,7 +3,7 @@ title: Obtenir des métadonnées PDF
 linktitle: Obtenir des métadonnées PDF
 type: docs
 weight: 20
-url: /java/get-pdf-metadata/
+url: /fr/java/get-pdf-metadata/
 description: Apprenez à lire les métadonnées PDF en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

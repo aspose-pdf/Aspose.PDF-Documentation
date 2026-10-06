@@ -3,7 +3,7 @@ title: Convertir un PDF en Excel en Java
 linktitle: Convertir un PDF en Excel
 type: docs
 weight: 20
-url: /java/convert-pdf-to-excel/
+url: /fr/java/convert-pdf-to-excel/
 lastmod: "2026-09-21"
 description: Découvrez comment convertir des fichiers PDF en Excel en Java avec Aspose.PDF, y compris la sortie XML Spreadsheet 2003, XLSX, XLSM, CSV et ODS.
 sitemap:

@@ -3,7 +3,7 @@ title: Extraire les données de tableaux PDF avec Java
 linktitle: Extraire les données des tableaux
 type: docs
 weight: 40
-url: /java/extract-data-from-table-in-pdf/
+url: /fr/java/extract-data-from-table-in-pdf/
 description: Découvrez comment extraire les données de tableaux de fichiers PDF avec Aspose.PDF for Java et exporter les tableaux détectés pour un traitement ultérieur.
 lastmod: "2026-09-22"
 sitemap:

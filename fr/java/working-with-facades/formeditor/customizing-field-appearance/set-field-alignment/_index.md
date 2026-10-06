@@ -3,7 +3,7 @@ title: Définir l'alignement des champs
 linktitle: Définir l'alignement des champs
 type: docs
 weight: 20
-url: /java/set-field-alignment/
+url: /fr/java/set-field-alignment/
 description: Découvrez comment définir l'alignement horizontal du texte pour un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

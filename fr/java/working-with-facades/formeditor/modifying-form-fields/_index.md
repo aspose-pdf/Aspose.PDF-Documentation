@@ -3,7 +3,7 @@ title: Modification des champs du formulaire
 linktitle: Modification des champs du formulaire
 type: docs
 weight: 20
-url: /java/modifying-form-fields/
+url: /fr/java/modifying-form-fields/
 description: Découvrez comment modifier les champs de formulaire PDF existants en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

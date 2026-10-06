@@ -3,7 +3,7 @@ title: Optimiser un document PDF pour le Web en Ruby
 linktitle: Optimiser un document PDF pour le Web en Ruby
 type: docs
 weight: 70
-url: /java/optimize-pdf-document-for-the-web-in-ruby/
+url: /fr/java/optimize-pdf-document-for-the-web-in-ruby/
 description: Rationalisez les PDF pour une livraison Web plus rapide et une taille de fichier réduite à l'aide d'Aspose.PDF en Ruby.
 lastmod: "2026-09-21"
 ---

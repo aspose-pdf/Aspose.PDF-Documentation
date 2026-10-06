@@ -3,7 +3,7 @@ title: Obtenir la version PDF
 linktitle: Obtenir la version PDF
 type: docs
 weight: 20
-url: /java/get-pdf-version/
+url: /fr/java/get-pdf-version/
 description: Découvrez comment récupérer la version d'un document PDF en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

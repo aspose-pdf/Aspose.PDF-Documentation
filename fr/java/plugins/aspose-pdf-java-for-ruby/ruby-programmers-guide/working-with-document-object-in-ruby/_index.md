@@ -3,7 +3,7 @@ title: Travailler avec un objet document en Ruby
 linktitle: Travailler avec un objet document en Ruby
 type: docs
 weight: 10
-url: /java/working-with-document-object-in-ruby/
+url: /fr/java/working-with-document-object-in-ruby/
 description: Apprenez à utiliser des objets de document PDF en Ruby à l'aide d'Aspose.PDF pour créer, mettre à jour et gérer les paramètres du document.
 lastmod: "2026-09-21"
 ---

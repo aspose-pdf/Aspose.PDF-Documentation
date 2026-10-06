@@ -3,7 +3,7 @@ title: Classe Form
 linktitle: Classe Form
 type: docs
 weight: 140
-url: /java/form-class/
+url: /fr/java/form-class/
 description: Découvrez comment utiliser la façade Form en Java pour remplir des champs PDF, exporter et importer des données de formulaire, aplatir les champs, inspecter les valeurs des champs et ajouter des apparences d'image aux champs de boutons.
 lastmod: "2026-09-22"
 sitemap:

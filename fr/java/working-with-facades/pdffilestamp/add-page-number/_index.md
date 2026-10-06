@@ -3,7 +3,7 @@ title: Ajouter un numéro de page au PDF
 linktitle: Ajouter un numéro de page au PDF
 type: docs
 weight: 30
-url: /java/page-number/
+url: /fr/java/page-number/
 description: Découvrez comment ajouter des numéros de page aux documents PDF en Java avec la façade PdfFileStamp.
 lastmod: "2026-09-22"
 draft: false

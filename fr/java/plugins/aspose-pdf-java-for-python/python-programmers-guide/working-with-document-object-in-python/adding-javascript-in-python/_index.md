@@ -3,7 +3,7 @@ title: Ajouter du JavaScript en Python
 linktitle: Ajouter du JavaScript en Python
 type: docs
 weight: 10
-url: /java/adding-javascript-in-python/
+url: /fr/java/adding-javascript-in-python/
 description: Découvrez comment intégrer du code JavaScript dans un document PDF à l'aide de Python et Aspose.PDF pour améliorer l'interactivité.
 lastmod: "2026-09-21"
 ---

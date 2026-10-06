@@ -3,7 +3,7 @@ title: Définir l'indicateur de soumission
 linktitle: Définir l'indicateur de soumission
 type: docs
 weight: 40
-url: /java/set-submit-flag/
+url: /fr/java/set-submit-flag/
 description: Passez en revue la couverture Java actuelle pour définir un indicateur de soumission sur un bouton de formulaire PDF avec la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

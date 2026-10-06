@@ -3,7 +3,7 @@ title: Mise en page et marges
 linktitle: Mise en page et marges
 type: docs
 weight: 20
-url: /java/page-layout-and-margins/
+url: /fr/java/page-layout-and-margins/
 description: Découvrez comment ajuster la mise en page d'un PDF en Java en ajoutant des marges, en redimensionnant le contenu de la page et en insérant des sauts de page.
 lastmod: "2026-09-22"
 sitemap:

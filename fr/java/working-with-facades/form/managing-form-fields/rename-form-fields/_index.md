@@ -3,7 +3,7 @@ title: Renommer les champs du formulaire
 linktitle: Renommer les champs du formulaire
 type: docs
 weight: 30
-url: /java/rename-form-fields/
+url: /fr/java/rename-form-fields/
 description: Découvrez comment renommer les champs d'un formulaire PDF en Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true
