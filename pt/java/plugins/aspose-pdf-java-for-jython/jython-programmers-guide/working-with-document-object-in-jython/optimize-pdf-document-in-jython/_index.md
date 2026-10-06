@@ -1,16 +1,17 @@
 ---
-title: Otimizar Documento PDF em Jython
+title: Otimize o Documento PDF em Jython
+linktitle: Otimize o Documento PDF em Jython
 type: docs
 weight: 50
 url: /pt/java/optimize-pdf-document-in-jython/
-lastmod: "2021-06-05"
+description: Aprenda como otimizar um documento PDF em Jython para reduzir o tamanho do arquivo e melhorar o desempenho da web usando Aspose.PDF.
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - Otimizar
 
-Para verificar o formato do arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver o código de exemplo.
+Para verificar o formato de arquivo usando **Aspose.PDF Java for Jython**. Aqui você pode ver o código de exemplo.
 
-Erro ao renderizar macro 'code': Valor inválido especificado para o parâmetro lang
+Erro ao renderizar a macro 'code' : Valor inválido especificado para o parâmetro lang
 
 ## Baixar Código em Execução
 

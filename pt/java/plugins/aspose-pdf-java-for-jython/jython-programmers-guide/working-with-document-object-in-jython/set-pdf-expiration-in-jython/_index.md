@@ -1,16 +1,17 @@
 ---
 title: Definir Expiração de PDF em Jython
+linktitle: Definir Expiração de PDF em Jython
 type: docs
 weight: 60
 url: /pt/java/set-pdf-expiration-in-jython/
-lastmod: "2021-06-05"
+description: Descubra como definir uma data de expiração para um documento PDF em Jython, controlando o acesso e a segurança do documento.
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - Definir Expiração
 
-Para verificar o formato de arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver um código de exemplo.
+Para Verificar o Formato do Arquivo usando **Aspose.PDF Java for Jython**. Aqui você pode ver o código de exemplo.
 
-Erro ao renderizar macro 'code': Valor inválido especificado para o parâmetro lang
+Erro ao renderizar macro 'code' : Valor inválido especificado para o parâmetro lang
 
 ## Baixar Código em Execução
 

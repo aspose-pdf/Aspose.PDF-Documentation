@@ -1,11 +1,12 @@
 ---
-title: Trabalhando com Texto em Ruby
+title: Trabalhar com Texto em Ruby
+linktitle: Trabalhar com Texto em Ruby
 type: docs
 weight: 30
 url: /pt/java/working-with-text-in-ruby/
-lastmod: "2021-06-05"
+description: Aprenda como trabalhar com elementos de texto em um documento PDF usando Ruby, incluindo extração e manipulação de texto com Aspose.PDF.
+lastmod: "2026-10-06"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
 - [Adicionar String HTML usando DOM em Ruby](/pdf/pt/java/add-html-string-using-dom-in-ruby/)

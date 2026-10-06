@@ -1,0 +1,30 @@
+---
+title: Mover Campo
+linktitle: Mover Campo
+type: docs
+weight: 30
+url: /pt/java/move-field/
+description: Saiba como mover um campo de formulário existente em um documento PDF em Java usando a fachada FormEditor no Aspose.PDF.
+lastmod: "2026-10-06"
+TechArticle: true
+AlternativeHeadline: Mover um campo de formulário PDF para uma nova posição em Java
+Abstract: Este artigo mostra como vincular um PDF existente, mover um campo para novas coordenadas e salvar o documento atualizado usando a fachada FormEditor no Aspose.PDF for Java.
+---
+## Mover um campo
+
+1. Vincular o PDF de origem ao `FormEditor` fachada.
+2. Chamar `moveField(...)` com o nome do campo de destino e as novas coordenadas do retângulo.
+3. Salve o documento atualizado.
+
+```java
+public static void moveField(Path inputFile, Path outputFile) {
+    FormEditor editor = new FormEditor();
+    try {
+        editor.bindPdf(inputFile.toString());
+        editor.moveField("Country", 200, 600, 280, 620);
+        editor.save(outputFile.toString());
+    } finally {
+        editor.close();
+    }
+}
+```

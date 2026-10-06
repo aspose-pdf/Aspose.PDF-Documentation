@@ -1,16 +1,17 @@
 ---
 title: Dividir Arquivo PDF em Páginas Individuais no Jython
+linktitle: Dividir Arquivo PDF em Páginas Individuais no Jython
 type: docs
 weight: 80
 url: /pt/java/split-pdf-file-into-individual-pages-in-jython/
-lastmod: "2021-06-05"
+description: Aprenda como dividir um documento PDF em páginas individuais usando Jython e Aspose.PDF para melhorar o gerenciamento de documentos.
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - Dividir Todas as Páginas
 
-Para verificar o formato do arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver um código de exemplo.
+Para Verificar o Formato do Arquivo usando **Aspose.PDF Java for Jython**. Aqui você pode ver o código de exemplo.
 
-Erro ao renderizar macro 'code' : Valor inválido especificado para o parâmetro lang
+Erro ao renderizar a macro 'code' : Valor inválido especificado para o parâmetro lang
 
 ## Baixar Código em Execução
 

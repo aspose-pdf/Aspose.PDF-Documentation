@@ -1,11 +1,12 @@
 ---
-title: Trabalhando com Texto em PHP
+title: Trabalhar com Texto em PHP
+linktitle: Trabalhar com Texto em PHP
 type: docs
 weight: 40
 url: /pt/java/working-with-text-in-php/
-lastmod: "2021-06-05"
+description: Aprenda como manipular e extrair texto de documentos PDF em PHP usando Aspose.PDF para um melhor manuseio de conteúdo.
+lastmod: "2026-10-06"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
 - [Adicionar String HTML usando DOM em PHP](/pdf/pt/java/add-html-string-using-dom-in-php/)

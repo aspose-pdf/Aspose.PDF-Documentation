@@ -1,27 +1,27 @@
 ---
 title: Suporte, Estenda e Contribua para Aspose.Pdf em PHP
+linktitle: Suporte, Estenda e Contribua para Aspose.Pdf em PHP
 type: docs
 weight: 30
 url: /pt/java/support-extend-and-contribute-to-aspose-pdf-in-php/
-lastmod: "2021-06-05"
+description: Descubra como suportar e estender Aspose.PDF em PHP, e contribua para melhorar as capacidades de processamento de PDF nas suas aplicações PHP.
+lastmod: "2026-10-06"
 ---
-
 ## Suporte
 
-Desde os primeiros dias da Aspose, sabíamos que apenas oferecer bons produtos aos nossos clientes não seria suficiente. Também precisávamos entregar um bom serviço. Nós somos desenvolvedores e entendemos o quão frustrante é quando um problema técnico ou uma peculiaridade no software impede você de fazer o que precisa. Estamos aqui para resolver problemas, não para criá-los.
+Desde os primeiros dias da Aspose, sabíamos que apenas oferecer bons produtos aos nossos clientes não seria suficiente. Também precisávamos oferecer um bom serviço. Nós mesmos somos desenvolvedores e entendemos o quão frustrante é quando um problema técnico ou uma peculiaridade no software impede que você faça o que precisa. Estamos aqui para resolver problemas, não para criá‑los.
 
-É por isso que oferecemos suporte gratuito. Qualquer pessoa que use nosso produto, seja comprando ou usando uma avaliação, merece nossa total atenção e respeito.
+É por isso que oferecemos suporte gratuito. Qualquer pessoa que usa nosso produto, seja ela compradora ou em avaliação, merece toda a nossa atenção e respeito.
 
-Você pode registrar quaisquer problemas ou sugestões relacionadas ao Aspose.Cells Java para PHP usando qualquer uma das seguintes plataformas:
+Você pode registrar quaisquer problemas ou sugestões relacionados aВ Aspose.Cells Java para PHP usando qualquer das plataformas a seguir:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-## Estenda e Contribua
+## Estender e Contribuir
 
-Aspose.PDF Java para PHP é de código aberto e seu código fonte está disponível nos principais sites de codificação social listados abaixo.
- Desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novas funcionalidades ou melhorando as existentes, para que outros também possam se beneficiar disso.
+Aspose.PDF Java for PHP é de código aberto e seu código-fonte está disponível nos principais sites de programação social listados abaixo. Recomenda-se que os desenvolvedores façam o download do código-fonte e contribuam sugerindo ou adicionando novos recursos ou aprimorando os existentes, para que outros também possam se beneficiar dele.
 
-## Código-Fonte
+## Código-fonte
 
 Você pode obter o código-fonte mais recente em um dos seguintes locais
 

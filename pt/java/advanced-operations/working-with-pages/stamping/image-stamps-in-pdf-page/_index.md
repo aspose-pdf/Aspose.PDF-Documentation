@@ -1,111 +1,91 @@
 ---
-title: Adicionar carimbos de imagem em PDF programaticamente
-linktitle: Carimbos de imagem em arquivo PDF
+title: Adicionar Selos de Imagem ao PDF em Java
+linktitle: Selos de imagem em Arquivo PDF
 type: docs
 weight: 10
 url: /pt/java/image-stamps-in-pdf-page/
-description: Adicione o carimbo de imagem em seu documento PDF usando a classe ImageStamp com a biblioteca Aspose.PDF para Java.
-lastmod: "2021-06-05"
+description: Aprenda como adicionar selos de imagem às páginas PDF em Java.
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Adicionar selos de imagem e fundos de imagem às páginas PDF com Java
+Abstract: Este artigo explica como adicionar carimbos de imagem a arquivos PDF usando Aspose.PDF for Java. Ele aborda carimbos de imagem com posicionamento, rotação, opacidade e controle de qualidade, e o uso de uma imagem como plano de fundo de uma caixa flutuante.
 ---
+Aspose.PDF for Java suporta carimbos de imagem como sobreposições e elementos de layout com fundo de imagem.
 
-## Adicionar Carimbo de Imagem em Arquivo PDF
+## Adicionar um carimbo de imagem
 
-Você pode usar a classe [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) para adicionar uma imagem como um carimbo em um documento PDF. A classe [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) fornece métodos para especificar altura, largura, opacidade etc.
+Use este exemplo quando uma página deve exibir um carimbo de imagem com posicionamento e opacidade personalizados.
 
-Para adicionar um carimbo de imagem:
-
-1. Crie um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) e um objeto ImageStamp usando as propriedades necessárias.
-
-1. Chame o método [addStamp(..)](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#addStamp-com.aspose.pdf.Stamp-) da classe [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page) para adicionar o carimbo ao PDF.
-
-O trecho de código a seguir mostra como adicionar um carimbo de imagem no arquivo PDF.
+1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Criar um [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) e configure sua aparência.
+1. Adicione o selo à página e salve o documento.
 
 ```java
-public static void AddImageStampInPDFFile() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Criar carimbo de imagem
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setBackground(true);
         imageStamp.setXIndent(100);
         imageStamp.setYIndent(100);
-        imageStamp.setHeight(48);
-        imageStamp.setWidth(225);
+        imageStamp.setHeight(300);
+        imageStamp.setWidth(300);
         imageStamp.setRotate(Rotation.on270);
         imageStamp.setOpacity(0.5);
 
-        // Adicionar carimbo a uma página específica
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        // Salvar documento de saída
-        pdfDocument.save(_dataDir + "AddImageStamp_out.pdf");
-
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Adicionar um carimbo de imagem com controle de qualidade
 
-## Controlar a Qualidade da Imagem ao Adicionar Carimbo
+Use este exemplo quando precisar ajustar a qualidade de renderização do carimbo de imagem.
 
-A classe [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp) permite adicionar uma imagem como carimbo em um documento PDF. Ela também permite controlar a qualidade da imagem ao adicionar uma imagem como marca d'água em um arquivo PDF. Para permitir isso, um método chamado setQuality(...) foi adicionado à classe [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/ImageStamp). Um método semelhante também pode ser encontrado na classe [Stamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/Stamp) do pacote com.aspose.pdf.facades.
-
-O trecho de código a seguir mostra como controlar a qualidade da imagem ao adicionar como carimbo no arquivo PDF.
+1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Criar um [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) e defina o valor da qualidade.
+1. Adicione o carimbo à página e salve o resultado.
 
 ```java
- public static void ControlImageQualityWhenAddingStamp() {
-        // Abrir documento
-        Document pdfDocument = new Document(_dataDir + "AddImageStamp.pdf");
-
-        // Criar carimbo de imagem
-        ImageStamp imageStamp = new ImageStamp(_dataDir + "aspose-logo.png");
+public static void addImageStampWithQualityControl(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ImageStamp imageStamp = new ImageStamp(imageFile.toString());
         imageStamp.setQuality(10);
-        pdfDocument.getPages().get_Item(1).addStamp(imageStamp);
-
-        pdfDocument.save(_dataDir + "ControlImageQuality_out.pdf");
+        document.getPages().get_Item(1).addStamp(imageStamp);
+        document.save(outputFile.toString());
     }
+}
 ```
 
+## Use uma imagem como fundo de uma caixa flutuante
 
-## Carimbo de Imagem como Fundo em Caixa Flutuante
+Use este exemplo quando uma imagem deve servir como plano de fundo de um contêiner de layout estilizado.
 
-A API Aspose.PDF permite adicionar um carimbo de imagem como fundo em uma caixa flutuante. A propriedade BackgroundImage da classe FloatingBox pode ser usada para definir o carimbo de imagem de fundo para uma caixa flutuante, como mostrado no exemplo de código a seguir.
+1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e acesse a página de destino.
+1. Criar um [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) com texto e configurações de borda.
+1. Defina a imagem de fundo, adicione a caixa à página e salve o documento.
 
 ```java
-public static void ImageStampAsBackgroundInFloatingBox() {
-        // Instanciar objeto Document
-        Document doc = new Document();
-        // Adicionar página ao documento PDF
-        Page page = doc.getPages().add();
+public static void addImageAsBackgroundInFloatingBox(Path inputFile, Path imageFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
+        FloatingBox box = new FloatingBox(200.0f, 100.0f);
+        box.setLeft(40);
+        box.setTop(80);
+        box.setHorizontalAlignment(HorizontalAlignment.Center);
+        box.getParagraphs().add(new TextFragment("Text in Floating Box"));
+        box.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
 
-        // Criar objeto FloatingBox
-        FloatingBox aBox = new FloatingBox(200, 100);
+        Image image = new Image();
+        image.setFile(imageFile.toString());
+        box.setBackgroundImage(image);
+        box.setBackgroundColor(Color.getYellow());
+        page.getParagraphs().add(box);
 
-        // Definir posição à esquerda para FloatingBox
-        aBox.setLeft(40);
-        // Definir posição superior para FloatingBox
-        aBox.setTop(80);
-        // Definir alinhamento horizontal para FloatingBox
-        aBox.setHorizontalAlignment(HorizontalAlignment.Center);
-        // Adicionar fragmento de texto à coleção de parágrafos de FloatingBox
-        aBox.getParagraphs().add(new TextFragment("texto principal"));
-        // Definir borda para FloatingBox
-        aBox.setBorder(new BorderInfo(BorderSide.All, Color.getRed()));
-
-        // Adicionar imagem de fundo
-        Image img = new Image();
-        img.setFile(_dataDir + "aspose-logo.png");
-        aBox.setBackgroundImage(img);
-
-        // Definir cor de fundo para FloatingBox
-        aBox.setBackgroundColor(Color.getYellow());
-
-        // Adicionar FloatingBox à coleção de parágrafos do objeto page
-        page.getParagraphs().add(aBox);
-        // Salvar o documento PDF
-        doc.save(_dataDir + "AddImageStampAsBackgroundInFloatingBox_out.pdf");
+        document.save(outputFile.toString());
     }
 }
 ```

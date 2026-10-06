@@ -1,21 +1,21 @@
 ---
-title: Stamping
-linktitle: Stamping
+title: Carimbar páginas PDF em Java
+linktitle: Carimbagem
 type: docs
 weight: 120
 url: /pt/java/stamping/
-description: Esta seção descreve como adicionar carimbos de imagem e carimbos de texto a uma página PDF.
-lastmod: "2021-06-05"
+description: Aprenda como adicionar números de página, carimbos de página, carimbos de imagem e carimbos de texto às páginas PDF em Java.
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Adicione carimbos de imagem, número de página, página e texto a arquivos PDF com Java
+Abstract: Este artigo explica como adicionar carimbos a documentos PDF usando Aspose.PDF for Java. Ele abrange carimbos de imagem, imagens de fundo em caixas flutuantes, carimbos de página de outro PDF, carimbos de número de página, numeração romana e carimbos de texto.
 ---
+Aspose.PDF for Java suporta vários modelos de carimbagem dependendo se o conteúdo é uma imagem, texto, uma página PDF ou uma sobreposição de número de página.
 
-Um carimbo em um documento PDF é análogo a aplicar um carimbo de borracha em um documento de papel. O Carimbo no arquivo PDF fornece informações adicionais para o arquivo PDF, como proteger o arquivo PDF de ser utilizado por outros e confirmar a segurança do conteúdo do arquivo PDF. **Aspose.PDF para Java** permite adicionar carimbo de imagem ou texto no seu documento PDF.
-
-Confira as seguintes seções para aprender como adicionar um carimbo com Java:
-
-- [Adicionar carimbos de imagem na página PDF](/pdf/pt/java/image-stamps-in-pdf-page/) - adicionar carimbo de imagem, controlar a qualidade da imagem, carimbo de imagem como fundo do seu arquivo PDF.
-- [Adicionar carimbos de texto no arquivo PDF](/pdf/pt/java/text-stamps-in-the-pdf-file/) - adicionar carimbo de texto, definir alinhamento para o objeto TextStamp, preencher texto de contorno como carimbo no PDF.
-- [Adicionar carimbos de página em PDFs](/pdf/pt/java/page-stamps-in-the-pdf-file/) - adicionar carimbo complexo baseado em página de outro PDF.
- file.
+- [Adicionar números de página](/java/add-page-number/)
+- [Adicionar carimbos de página](/java/page-stamps-in-the-pdf-file/)
+- [Adicionar carimbos de imagem](/java/image-stamps-in-pdf-page/)
+- [Adicionar carimbos de texto](/java/text-stamps-in-the-pdf-file/)

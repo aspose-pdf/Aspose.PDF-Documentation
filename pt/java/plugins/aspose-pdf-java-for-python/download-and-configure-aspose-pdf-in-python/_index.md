@@ -1,37 +1,38 @@
 ---
-title: Download e Configurar Aspose.Pdf em Python
+title: Baixar e Configurar Aspose.Pdf em Python
+linktitle: Baixar e Configurar Aspose.Pdf em Python
 type: docs
 weight: 10
 url: /pt/java/download-and-configure-aspose-pdf-in-python/
-lastmod: "2021-06-05"
+description: Aprenda como baixar e configurar o Aspose.PDF for Python para começar a processar e manipular arquivos PDF em seu ambiente Python.
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
-
 ### Baixar Bibliotecas Necessárias
 
-Baixe as bibliotecas necessárias mencionadas abaixo. Estas são necessárias para executar exemplos do Aspose.PDF Java para Python.
+Baixe as bibliotecas necessárias mencionadas abaixo. Estas são as necessárias para executar exemplos do Aspose.PDF Java for Python.
 
-- Aspose: [Componente Aspose.PDF para Java](https://downloads.aspose.com/pdf/java)
+- Aspose: [Componente Aspose.PDF for Java](https://downloads.aspose.com/pdf/java)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
-## Baixar Exemplos de Sites de Programação Social
+## Baixar Exemplos de Sites de Código Social
 
-As seguintes versões de exemplos em execução estão disponíveis para download nos sites de programação social mencionados abaixo:
+Os seguintes lançamentos de exemplos em execução estão disponíveis para download nos sites de código social mencionados abaixo:
 
 ### GitHub
 
-- Exemplos do Aspose.PDF Java para Python
-  - [Aspose.PDF Java para Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
+- Exemplos de Aspose.PDF Java for Python
+  - [Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
 
-## Como configurar o código fonte
+## Como configurar o código-fonte
 
-Por favor, siga estes passos simples para abrir e estender o código fonte enquanto usa:
+Por favor, siga estes passos simplesВ para abrir e estender o código-fonte ao usar:
 
 1. Instale apenas Python 2.7.x.x de: <https://www.python.org/downloads/>
 2. Instale JPype de: <http://sourceforge.net/projects/jpype/files/JPype/>
-3. Instale o Java JDK de: <http://www.oracle.com/technetwork/java/javase/downloads>
-4. Baixe Aspose.PDF para APIs Java que você deseja usar em seus projetos Python de: <http://www.aspose.com/community/files/72/java-components/default.aspx> e copie os .jars das APIs baixadas para a pasta %Python%/lib.
-5. Clone [Exemplos Aspose.PDF Java para Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) do GitHub.
-6. Clone [Exemplos Aspose.PDF Java para Python](http://asposepdfjavapython.codeplex.com/) do CodePlex.
+3. Instale Java JDK de: <http://www.oracle.com/technetwork/java/javase/downloads>
+4. Baixe as APIs Aspose.PDF for Java que você deseja usar em seus projetos python de: <http://www.aspose.com/community/files/72/java-components/default.aspx> e copie os .jars das APIs baixadas na pasta %Python%/lib.
+5. Clonar [Exemplos de Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) do github.
+6. Clonar [Exemplos de Aspose.PDF Java for Python](http://asposepdfjavapython.codeplex.com/) do CodePlex.

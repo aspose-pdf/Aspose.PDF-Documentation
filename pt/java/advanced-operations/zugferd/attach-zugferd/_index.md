@@ -1,46 +1,45 @@
 ---
-title: Criando PDF conforme PDF/3-A e anexando fatura ZUGFeRD em Java
+title: Criar PDF/3-A compatível e anexando fatura ZUGFeRD em Java
 linktitle: Anexar ZUGFeRD ao PDF
 type: docs
 weight: 10
 url: /pt/java/attach-zugferd/
-description: Aprenda a gerar um documento PDF com ZUGFeRD no Aspose.PDF para Java
-lastmod: "2024-01-18"
+description: Saiba como anexar o XML da fatura ZUGFeRD a um PDF e convertê-lo para PDF/A-3A em Java.
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Anexar o XML da fatura ZUGFeRD a um documento PDF com Java
+Abstract: Este artigo explica como criar um documento de fatura compatível com PDF/A-3A usando Aspose.PDF for Java. Ele aborda a anexação do XML da fatura como um arquivo incorporado, a definição do tipo MIME e da relação de arquivo associado, a conversão do PDF para PDF/A-3A e a gravação do documento final pronto para ZUGFeRD.
 ---
+Use o `Document` e `FileSpecification` APIs quando você precisa empacotar XML de fatura dentro de um PDF para fluxos de trabalho em estilo ZUGFeRD.
 
-## Anexar ZUGFeRD ao PDF
+## Anexar XML da fatura ZUGFeRD a um PDF
 
-Recomendamos as seguintes etapas para anexar ZUGFeRD ao PDF:
-
-* Defina uma variável de caminho que aponte para uma pasta onde os arquivos PDF de entrada e saída estão localizados.
-* Defina uma variável de string path que armazene o caminho para o arquivo PDF que será processado. Use o método `Paths.get` para combinar partes do caminho completo.
-* Crie uma declaração try-with-resources que garanta que o objeto Document criado a partir da variável de caminho seja fechado automaticamente após o término da declaração. O objeto Document representa o documento PDF que será modificado e salvo.
-
-* Crie um objeto [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) fornecendo o caminho e a descrição de outro arquivo, que contém metadados de fatura em conformidade com o padrão ZUGFeRD.
-* Adicione propriedades ao objeto de especificação do arquivo, como a descrição, tipo MIME e AFrelationship. O AFrelationship indica como o arquivo incorporado está relacionado ao documento PDF. Neste caso, está definido como "Alternative", significando que o arquivo incorporado é uma representação alternativa do conteúdo do PDF.
-* Adicione o objeto de especificação do arquivo à coleção de arquivos incorporados do documento. O nome do arquivo deve ser especificado de acordo com o padrão ZUGFeRD, por exemplo, "factor-x.xml".
-* Converta o documento para o formato PDF/A-3U, um subconjunto do PDF que garante a preservação a longo prazo de documentos eletrônicos. O PDF/A-3U permite a incorporação de arquivos de qualquer formato em documentos PDF.
-* Salve o documento convertido como um novo arquivo PDF (por exemplo, "ZUGFeRD-res.pdf").
-* Feche a instrução try-with-resources e libere o objeto Document.
+1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Criar o [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para o arquivo XML da fatura.
+1. Defina os metadados do arquivo incorporado, incluindo o tipo MIME e [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
+1. Adicione o [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) à coleção de arquivos incorporados do documento.
+1. Converta o documento para [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
+1. Salvar o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-String _dataDir = "/home/aspose/pdf-examples/Samples/";
-String path = Paths.get(_dataDir, "ZUGFeRD", "ZUGFeRD-test.pdf").toString();
-try (Document document = new Document(path)) {
-    String description = "Metadados de fatura conforme o padrão ZUGFeRD";
-    path = Paths.get(_dataDir, "ZUGFeRD", "factur-x.xml").toString();
-    FileSpecification fileSpecification = new FileSpecification(path.toString(), description);
-    fileSpecification.setMIMEType("text/xml");
-    fileSpecification.setAFRelationship(com.aspose.pdf.AFRelationship.Alternative);
+public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            String description = "Invoice metadata conforming to ZUGFeRD standard";
+            FileSpecification fileSpecification = new FileSpecification(invoiceFile.toString(), description);
 
-    // Adicionar anexo à coleção de anexos do documento
-    document.getEmbeddedFiles().add(fileSpecification);
-    path = Paths.get(_dataDir, "ZUGFeRD", "log.xml").toString();
-    document.convert(path, PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
-    path = Paths.get(_dataDir, "ZUGFeRD", "ZUGFeRD-res.pdf").toString();
-    document.save(path);
-}
+            fileSpecification.setMIMEType("text/xml");
+            fileSpecification.setAFRelationship(AFRelationship.Alternative);
+
+            document.getEmbeddedFiles().add("factur", fileSpecification);
+
+            String outputFileName = outputFile.toString();
+            String logPath = outputFileName.replace(".pdf", "_log.xml");
+            document.convert(logPath, PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+            document.save(outputFile.toString());
+        }
+        System.out.println("ZUGFeRD invoice attached to " + outputFile);
+    }
 ```
