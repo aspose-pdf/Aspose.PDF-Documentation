@@ -1,22 +1,22 @@
 ---
-title: 从 PDF 提取文本
-linktitle: 提取文本
+title: 使用 Java 提取 PDF 文本
+linktitle: 提取 PDF 文本
 type: docs
 weight: 10
 url: /zh/java/extract-text-from-pdf/
-description: Aspose.PDF 允许提取不同种类的信息。本节包含使用 Aspose.PDF for Java 从 PDF 文档中提取文本的文章。
-lastmod: "2021-06-05"
+description: 了解如何使用 Aspose.PDF 在 Java 中提取 PDF 文档的文本，包括全文档、页级、基于区域、标注和多列工作流。
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
+aliases:
+    - "/zh/java/extract-text-from-all-pdf/"
 ---
+Aspose.PDF for Java 提供多种文本提取工作流，取决于文档布局以及您对输出结构层次的需求。
 
-从 PDF 文件中提取文本是 Java 开发人员的一项常见任务。使用 Aspose.PDF for Java Pdf 库只需几行代码即可提取文本。大多数 PDF 文档是不可编辑的，因此将 PDF 转换为文本是一项繁琐甚至不可能的任务，特别是当解决方案涉及批量处理 PDF 文档时。
-Aspose.PDF for Java 库使用 TextAbsorber 类提取文本。
-谁需要文本提取？
+使用本节中的文章来：
 
-对于数据挖掘、内容管理和表单处理公司，文本提取将特别有用。
- 提取文本非常有用：归档：文本及其组件可以被检索，以便文档可以被索引和归档，具有完整的搜索功能；在表格中检索和处理数据；提取信息，如账户数据、邮政地址和电话号码，用于行政目的；提取照片和图像。
-
-- [从 PDF 中提取文本](/pdf/zh/java/extract-text-from-all-pdf/)
-- [从 PDF 中提取段落](/pdf/zh/java/extract-paragraph-from-pdf/)
+- [从所有页面或单个页面提取文本](/pdf/zh/java/basic-text-extraction/).
+- [将提取限制在特定页面区域或检查段落几何形状](/pdf/zh/java/region-based-extraction/).
+- [从高亮、印章批注以及上标或下标内容中提取文本](/pdf/zh/java/annotation-and-special-text/).
+- [改进对多列布局的提取](/pdf/zh/java/text-extraction-from-multi-column-pdf/).

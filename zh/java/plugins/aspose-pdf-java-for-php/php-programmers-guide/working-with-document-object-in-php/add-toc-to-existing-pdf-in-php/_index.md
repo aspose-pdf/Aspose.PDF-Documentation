@@ -1,74 +1,74 @@
 ---
-title: 向现有 PDF 添加目录在 PHP 中
+title: 在 PHP 中为现有 PDF 添加目录
+linktitle: 在 PHP 中为现有 PDF 添加目录
 type: docs
 weight: 20
 url: /zh/java/add-toc-to-existing-pdf-in-php/
-lastmod: "2021-06-05"
+description: 了解如何使用 Aspose.PDF 在 PHP 中为现有 PDF 文档添加目录 (TOC)，以提升导航体验。
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - 添加目录
 
-要在 Pdf 文档中使用 **Aspose.PDF Java for PHP** 添加目录，只需调用 **AddToc** 类。
+要在 PDF 文档中使用 **Aspose.PDF Java for PHP** 添加目录，只需调用 **AddToc** 类。
 
 PHP 代码
 
 ```php
 
-# 打开一个 pdf 文档。
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# 访问 PDF 文件的第一页
+# Get access to first page of PDF file
 $toc_page = $doc->getPages()->insert(1);
 
-# 创建对象以表示目录信息
+# Create object to represent TOC information
 $toc_info = new TocInfo();
-$title = new TextFragment("目录");
+$title = new TextFragment("Table Of Contents");
 $title->getTextState()->setFontSize(20);
 #title.getTextState().setFontStyle(Rjb::import('com.aspose.pdf.FontStyles.Bold'))
 
-# 设置目录的标题
+# Set the title for TOC
 $toc_info->setTitle($title);
 $toc_page->setTocInfo($toc_info);
 
-# 创建将用作目录元素的字符串对象
-$titles = array("首页", "第二页");
+# Create string objects which will be used as TOC elements
+$titles = array("First page", "Second page");
 
 $i = 0;
 while ($i < 2){
 
-    # 创建 Heading 对象
+    # Create Heading object
     $heading2 = new Heading(1);
 
     $segment2 = new TextSegment();
     $heading2->setTocPage($toc_page);
     $heading2->getSegments()->add($segment2);
 
-    # 为标题对象指定目标页面
+    # Specify the destination page for heading object
     $heading2->setDestinationPage($doc->getPages()->get_Item($i + 2));
 
-    # 目标页面
+    # Destination page
     $heading2->setTop($doc->getPages()->get_Item($i + 2)->getRect()->getHeight());
 
-    # 目标坐标
+    # Destination coordinate
     $segment2->setText($titles[$i]);
 
-    # 将标题添加到包含目录的页面
+    # Add heading to page containing TOC
     $toc_page->getParagraphs()->add($heading2);
 
     $i +=1;
 
 }
 
-# 保存 PDF 文档
+# Save PDF Document
 $doc->save($dataDir . "TOC.pdf");
 
-print "目录添加成功，请检查输出文件。";
+print "Added TOC Successfully, please check the output file.";
 
 ```
 
-
 **下载运行代码**
 
-从以下任一社交编码网站下载 **添加目录 (Aspose.PDF)**：
+下载В **添加目录 (Aspose.PDF)**В 来自В 以下提到的任何社交编码站点：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

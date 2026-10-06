@@ -1,19 +1,19 @@
 ---
-title: 从PDF文档的所有页面提取文本(Python)
+title: 在 Python 中提取 PDF 文档所有页面的文本
+linktitle: 在 Python 中提取 PDF 文档所有页面的文本
 type: docs
 weight: 30
 url: /zh/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
-lastmod: "2021-06-05"
-description: 解释如何使用PDF文件格式API在Python中从PDF页面提取文本。
+lastmod: "2026-10-06"
+description: 解释如何在 Python 中使用 PDF 文件格式 API 提取 PDF 页面中的文本。
 ---
+## 使用 Python 提取 PDF 文本
 
-## 使用Python从PDF中提取文本
-
-要使用 **Aspose.PDF Java for Python** 从PDF文档的所有页面提取文本，只需调用 **ExtractTextFromAllPages** 模块。
+要使用 **Aspose.PDF Java for Python** 提取 PDF 文档所有页面的文本，只需调用 **ExtractTextFromAllPages** 模块。
 
 ```python
 
-# 打开目标文档
+# Open the target document
 pdf=self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
@@ -27,13 +27,12 @@ writer=self.FileWriter(self.File(self.dataDir + 'extracted_text.out.txt'))
 writer.write(extracted_text)
 writer.close()
 
-print "文本提取成功。检查输出文件。"
+print "Text extracted successfully. Check output file."
 
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **从所有页面提取文本 (Aspose.PDF)**：
-
+下载\u0412\u00A0**提取所有页面的文本 (Aspose.PDF)**\u0412\u00A0 来自\u0412\u00A0 以下任意提到的社交编码站点：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/ExtractTextFromAllPages/ExtractTextFromAllPages.py)

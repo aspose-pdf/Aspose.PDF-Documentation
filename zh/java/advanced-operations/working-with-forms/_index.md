@@ -1,22 +1,19 @@
 ---
-title: 使用表单
-linktitle: 使用表单
+title: 使用 Java 处理表单
+linktitle: 处理表单
 type: docs
-weight: 50
+weight: 60
 url: /zh/java/working-with-forms/
-description: 本节解释如何在您的PDF文档中使用Aspose.PDF for Java处理AcroForms和XFA表单。
-lastmod: "2021-06-05"
+description: 了解如何在 Java 中使用 Aspose.PDF 创建、填写、提取、修改、提交、导入、导出和转换 PDF 表单。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 创建和管理 AcroForm 和 XFA 表单
+Abstract: 本节阐述了如何使用 Aspose.PDF for Java 处理 PDF 表单。内容包括创建 AcroForm 字段、填写和提取表单数据、导入和导出表单值、修改或删除字段、提交表单数据以及将 XFA 表单转换为标准 AcroForm。
 ---
+Aspose.PDF for Java 提供了 DOM 与 facade 两种 API，用于 PDF 表单工作流。您可以构建新的 AcroForm、更新现有字段、以常用格式交换表单数据，并将基于 XFA 的文档转换为标准表单。
 
-表单是包含用户选择或填写信息区域的文件，目的是收集和存储信息。
-
-AcroForms是包含表单字段的PDF文件。数据可以由最终用户或表单的作者手动或通过自动化过程输入到这些字段中。内部来说，AcroForms是应用于PDF文档的注释或字段。
-
-本节描述了一种通过使用Aspose.PDF以编程方式完成PDF文档的快速简单的方法。
- 该部分还讨论了如何使用 Aspose.PDF for Java 来发现和映射现有 PDF 中可用的 AcroForms 字段。此外，您将学习如何使用 XFA - 另一种基于 XML 的表单呈现技术。
-
-- [AcroForms](/pdf/zh/java/acroforms/) - 创建表单、填写表单字段、从表单中提取数据、使用 Java 库修改 PDF 中的字段。
-- [XFA Forms](/pdf/zh/java/xfa-forms/) - 填写 XFA 字段、转换 XFA、获取 XFA 字段属性。
+- [使用 AcroForms](/pdf/zh/java/acroforms/)
+- [使用 XFA 表单](/pdf/zh/java/xfa-forms/)

@@ -1,68 +1,68 @@
 ---
-title: 安装和使用 Aspose.Pdf Java Maven for Eclipse
+title: 在 Eclipse 中安装和使用 Aspose.Pdf Java Maven
+linktitle: 在 Eclipse 中安装和使用 Aspose.Pdf Java Maven
 type: docs
 weight: 10
 url: /zh/java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
-lastmod: "2021-06-05"
+description: 学习如何在 Eclipse 中使用 Maven 安装和配置 Aspose.PDF for Java，实现 Java 项目中无缝的 PDF 处理。
+lastmod: "2026-10-06"
 ---
-
 ## 安装
 
-**Aspose.PDF Java (Maven) for Eclipse** 插件可以很容易地从插件对话框中的可用**插件**标签中安装。
+**Aspose.PDF Java (Maven) for Eclipse** 插件可以轻松地从插件对话框中的可用 **Plugin** 选项卡进行安装。
 
-- 要打开它，请从 Eclipse 的**工具**菜单中选择**插件**。
+- 要打开它，请在 Eclipse 的 **Tools** 菜单中选择 **Plugins**。
 
 ![todo:image_alt_text](https://i.imgur.com/PCMRMUT.png)
 
-- 这将在新建项目向导中添加**Aspose.PDF Maven 项目**，并在 Eclipse IDE 的新建文件向导中添加**Aspose.PDF 代码示例**。
+- 这将在 Eclipse IDE 的新建项目向导中添加 **Aspose.PDF Maven Project**，并在新建文件向导中添加 **Aspose.PDF Code Example** 。
 
 ## 使用
 
 ### Aspose.PDF Maven 项目（向导）
 
-通过向导创建**Maven 项目**以使用 [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)：
+通过向导创建 **Maven 项目** 以供使用 [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx):
 
-1. 选择**新建项目**。
-1. 在**Maven**类别中选择**Aspose.PDF Maven 项目**。
-1. 点击**下一步**。
+1. 选择 **New Project**。
+1. 在 **Maven** 类别中选择 **Aspose.PDF Maven Project**。
+1. 点击 **Next**。
 
 ![todo:image_alt_text](https://i.imgur.com/6iywqND.png)
 
-1. 为您的 Maven 项目提供**项目名称、位置、GroupId、ArtifactId**和**版本**，然后点击**完成。**
+1. 为您的 Maven 项目提供 **Project Name, Location, GroupId, ArtifactId** 和 **Version**，然后点击 **Finish.**
 
 ![todo:image_alt_text](https://i.imgur.com/zURjIn1.png)
 
-1. 这将从 [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) 检索 [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) 最新的 [Maven 依赖项](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/) 引用，并将其配置在 **pom.xml** 中。如果您选择了**同时下载代码示例，**那么 [Aspose.PDF for Java API Examples Repository](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) 中的**代码示例**也将开始下载。
-1. 在完成向导后，以下**Maven**项目将被创建在您的**Eclipse IDE**中：
+1. 这将检索 [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) 最新 [Maven 依赖](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf/) 引用自 [Aspose Cloud Maven 仓库](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) 并在 **pom.xml** 中进行配置。如果您选择了 **Also Download Code Examples,**，则 **Code Examples** 的下载也将从这里开始。 [Aspose.PDF for Java API 示例仓库。](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
+1. 完成向导后，以下 **Maven** 项目将会在您的 **Eclipse IDE** 中创建：
 
 ![todo:image_alt_text](https://i.imgur.com/xRfHrku.png)
 
-1. 创建的**Maven 项目**已配置为使用 **Aspose.PDF for Java API**，并准备根据您的项目要求进行增强。
-   如果您选择下载 [代码示例](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)，您可以使用 **Aspose.PDF 代码示例（向导）** 将 [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API 所需的**代码示例**导入到您的项目中。
+1. 创建的 **Maven Project** 已配置为使用 **Aspose.PDF for Java API**，并已准备好根据您的项目需求进行增强。
+   如果您选择下载 [代码示例](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)，您可以使用 **Aspose.PDF Code Example (wizard)** 来导入所需的 **Code Examples** [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API 到您的项目中。
 
-### Aspose.PDF 代码示例（向导）
+### Aspose.PDF Code Example (wizard)
 
-**Aspose.PDF 代码示例向导**允许您尝试为 [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API 提供的许多示例。
+**Aspose.PDF Code Example wizard** 允许您尝试提供的许多示例 [Aspose.PDF for Java](http://www.aspose.com/java/pdf-component.aspx) API。
 
 {{% alert color="primary" %}}
 
-为了能够舒适地使用 **Aspose.PDF 代码示例向导**：建议在 **Aspose.PDF Maven 项目** **向导**中创建**Maven 项目**时，始终选择**同时下载代码示例**，
+为了能够舒适地使用 **Aspose.PDF Code Example wizard**：建议在创建 **Aspose.PDF Maven Project** **wizard** 上的 **Maven Project** 时始终选择 **Also Download Code Examples**，
 
 {{% /alert %}}
 
 要使用示例，只需：
 
 1. 在 **Eclipse** 中点击 **New File**。
-
-1. 选择您的项目，然后在**Java**类别中选择**Aspose.PDF代码示例**。
-1. 点击**下一步**。
+1. 选择你的项目，然后在 **Java** 类别中选择 **Aspose.PDF Code Example**。
+1. 点击 **Next**。
 
 ![todo:image_alt_text](https://i.imgur.com/AuWybe8.png)
 
-展开树形结构以选择**代码示例**类别，然后点击**完成**。
+ 展开树结构，选择 **Code Example** 类别并点击 **Finish**。
 
 ![todo:image_alt_text](https://i.imgur.com/PToFZjJ.png)
 
-1. 这将把所选类别**代码示例**的Java文件复制到项目中的**com.aspose.pdf.examples**包下。此外，代码示例所需的任何资源将被复制到**src/main/resources**文件夹中。
+1. 这将把选定的 **Code Examples** 类别的 Java 文件复制到项目的 **com.aspose.pdf.examples** 包下。同时，代码示例所需的任何资源也会复制到 **src/main/resources** 文件夹中。
 1. 查看示例代码，编译并运行。
-1. 现在，您可以测试其他示例并开始使用[Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)构建自己的应用程序。
+1. 您现在可以测试其他示例，并开始使用它们构建自己的应用程序。 [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)

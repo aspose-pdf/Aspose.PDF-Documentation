@@ -1,29 +1,59 @@
 ---
 title: 更改 PDF 文件的密码
+linktitle: 更改 PDF 文件的密码
 type: docs
-weight: 40
+weight: 10
 url: /zh/java/change-password/
-description: 本主题讲解如何使用 PdfFileSecurity 类更改 PDF 文件的密码。
-lastmod: "2021-06-05"
+description: 了解如何使用 PdfFileSecurity 类在 Java 中更改 PDF 密码。
+lastmod: "2026-10-06"
 draft: false
+sitemap:
+    changefreq: "weekly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Java 中更新 PDF 的用户密码和所有者密码
+Abstract: 了解如何使用 Aspose.PDF for Java 更改 PDF 密码。Java 示例集涵盖直接更改用户密码和所有者密码、在重置安全设置时更改密码，以及返回成功标志的 try 风格密码更改工作流。
 ---
-
 ## 更改 PDF 文件的密码
 
-为了更改 PDF 文件的密码，您需要创建 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity) 对象，然后调用 [ChangePassword](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#changePassword-java.lang.String-java.lang.String-java.lang.String-) 方法。您需要将现有的所有者密码和新的用户及所有者密码传递给 [ChangePassword](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/PdfFileSecurity#changePassword-java.lang.String-java.lang.String-java.lang.String-com.aspose.pdf.facades.DocumentPrivilege-int-) 方法。
+当需要在已加密的 PDF 上轮换凭据时，使用 `PdfFileSecurity`。
 
-以下代码片段演示了如何更改 PDF 文件的密码。
+### 步骤
+
+1. 创建一个 `PdfFileSecurity` 实例。
+2. 绑定受保护的 PDF 与 `bindPdf`。
+3. 调用适当的 `changePassword` 重载，具体取决于您是否还想重置权限和密钥大小。
+4. 保存更新后的文件并关闭安全对象。
+
+### Java 示例
 
 ```java
-    public static void ChangePassword() {
-        PdfFileInfo pdfFileInfo = new PdfFileInfo(_dataDir + "sample_encrypted.pdf");
-        // 创建 PdfFileSecurity 对象
-        if (pdfFileInfo.isEncrypted()) {
-            PdfFileSecurity fileSecurity = new PdfFileSecurity();
-            fileSecurity.bindPdf(_dataDir + "sample_encrypted.pdf");
-            fileSecurity.changePassword("OwnerP@ssw0rd", "Pa$$w0rd1", "Pa$$w0rd2", DocumentPrivilege.getPrint(),
-                    KeySize.x256);
-            fileSecurity.save(_dataDir + "sample_encrtypted1.pdf");
-        }
+public static void changeUserAndOwnerPassword(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    fileSecurity.changePassword("owner_password", "new_user_password", "new_owner_password");
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void changePasswordAndResetSecurity(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    DocumentPrivilege privilege = DocumentPrivilege.getForbidAll();
+    privilege.setAllowPrint(true);
+    fileSecurity.changePassword("owner_password", "new_user_password", "new_owner_password", privilege, KeySize.x128);
+    fileSecurity.save(outputFile.toString());
+    fileSecurity.close();
+}
+
+public static void tryChangePasswordWithoutException(Path inputFile, Path outputFile) {
+    PdfFileSecurity fileSecurity = new PdfFileSecurity();
+    fileSecurity.bindPdf(inputFile.toString());
+    if (fileSecurity.tryChangePassword("owner_password", "new_user_password", "new_owner_password")) {
+        fileSecurity.save(outputFile.toString());
+    } else {
+        System.out.println("Password change failed. Check owner password or document security.");
     }
+    fileSecurity.close();
+}
 ```

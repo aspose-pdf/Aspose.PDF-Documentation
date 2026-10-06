@@ -1,39 +1,39 @@
 ---
-title: 创建 PDF 文档
-linktitle: 创建
+title: 以编程方式创建 PDF 文档
+linktitle: 创建 PDF
 type: docs
 weight: 10
 url: /zh/java/create-document/
-description: 学习如何在 Aspose.PDF for Java 中创建 PDF 文件。
-lastmod: "2021-06-05"
+description: 了解如何使用 Aspose.PDF 在 Java 中从头创建 PDF 文档。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Aspose.PDF for Java 生成 PDF 文件
+Abstract: 本文展示了如何使用 Aspose.PDF 在 Java 中创建 PDF 文件。示例创建了一个新的 Document 对象，添加了一页，插入了带有示例文本的 TextFragment，并将结果保存为 PDF 文件。
 ---
+在代码中创建 PDF 文件是报告、发票和生成的业务文档的常见需求。Aspose.PDF for Java 提供了一种直接从头构建文档的方法。
 
-**Aspose.PDF for Java** API 允许 Java 应用程序开发人员在他们的应用程序中嵌入 PDF 文档处理功能。它可以用于创建和读取 PDF 文件，而不需要在底层机器上安装任何其他软件。Aspose.PDF for Java 可以用于多种 Java 应用程序类型，例如桌面应用程序、JSP 和 JSF 应用程序。
+## 在 Java 中创建 PDF 文件
 
-## 如何使用 Java 创建 PDF 文件
+以编程方式创建 PDF 文档：
 
-要使用 Java 创建 PDF 文件，可以使用以下步骤。
+1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对象。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
+1. 将一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 添加到页面段落。
+1. 保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到输出文件。
 
-1. 实例化一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) 对象
-2. 向文档对象添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)
-3. 创建一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) 对象
+## 创建一个简单的 PDF 文档
 
-1. 将 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment) 添加到页面的 [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) 集合中
-1. 保存生成的 PDF 文档
+以下 Java 示例基于 `CreatePdfDocumentExamples.java`。
 
 ```java
-// 初始化文档对象
-Document document = new Document();
- 
-// 添加页面
-Page page = document.getPages().add();
- 
-// 向新页面添加文本
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// 保存更新的 PDF
-document.save("HelloWorld_out.pdf");
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment("Hello World!"));
+        document.save(outputFile.toString());
+    }
+}
 ```

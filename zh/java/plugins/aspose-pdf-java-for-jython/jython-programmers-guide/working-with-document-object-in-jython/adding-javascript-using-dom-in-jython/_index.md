@@ -1,19 +1,20 @@
 ---
-title: 在Jython中使用DOM添加JavaScript
+title: 在 Jython 中使用 DOM 添加 JavaScript
+linktitle: 在 Jython 中使用 DOM 添加 JavaScript
 type: docs
 weight: 10
 url: /zh/java/adding-javascript-using-dom-in-jython/
-lastmod: "2021-06-05"
+description: 了解如何在 Jython 中使用 DOM 向 PDF 文档添加 JavaScript，以增强文档内的交互性。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - 添加 Javascript
 
-## Aspose.PDF - 添加Javascript
+使用 **Aspose.PDF Java for Jython** 检查文件格式。此处可查看示例代码。
 
-使用**Aspose.PDF Java for Jython**检查文件格式。在这里，您可以看到示例代码。
-
-Error rendering macro 'code' : 为参数lang指定的值无效
+渲染宏 ‘code’ 时出错：为参数 lang 指定了无效值
 
 ## 下载运行代码
 
-从以下提到的社交编码网站中下载运行代码：
+从下面提到的任何社交编码站点下载运行中的代码：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
