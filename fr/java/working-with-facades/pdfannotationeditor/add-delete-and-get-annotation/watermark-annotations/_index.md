@@ -13,10 +13,8 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 ## Ajouter une annotation en filigrane
 
 1. Ouvrez le PDF d'entrée et définissez le rectangle où l'annotation en filigrane sera placée.
-
-2. Créez l’objet `WatermarkAnnotation`, ajoutez-le à la page et configurez l'état et l'opacité du texte du filigrane.
-
-3. Appliquez les lignes de texte en filigrane et enregistrez le PDF modifié.
+1. Créez l’objet `WatermarkAnnotation`, ajoutez-le à la page et configurez l'état et l'opacité du texte du filigrane.
+1. Appliquez les lignes de texte en filigrane et enregistrez le PDF modifié.
 
 ```java
 public static void watermarkAdd(Path inputFile, Path outputFile) {

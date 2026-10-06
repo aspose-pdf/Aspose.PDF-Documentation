@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, convertir un champ su
 ## Convertir un champ monoligne en champ multiligne
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `single2Multiple(...)` pour le nom du champ cible.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `single2Multiple(...)` pour le nom du champ cible.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void singleToMultiple(Path inputFile, Path outputFile) {

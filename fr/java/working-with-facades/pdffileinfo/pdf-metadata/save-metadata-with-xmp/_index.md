@@ -21,11 +21,9 @@ Utilisez ce flux de travail lorsque vous avez besoin que les informations mises 
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
-2. Définissez les champs de métadonnées que vous souhaitez mettre à jour, tels que le sujet, le titre, les mots-clés et le créateur.
-3. Appelez `saveNewInfoWithXmp()` avec le chemin du fichier de sortie.
-
-4. Fermez l'instance `PdfFileInfo`.
+1. Définissez les champs de métadonnées que vous souhaitez mettre à jour, tels que le sujet, le titre, les mots-clés et le créateur.
+1. Appelez `saveNewInfoWithXmp()` avec le chemin du fichier de sortie.
+1. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java
 

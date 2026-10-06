@@ -20,5 +20,4 @@ Le référentiel actuel n'inclut pas de classe `PdfAnnotationEditorExamples.java
 Utilisez cette section pour :
 
 - [Ajouter, supprimer et obtenir une annotation](/pdf/java/pdfannotationeditor-class/add-delete-and-get-annotation/) pour les familles d'annotations groupées.
-
 - [Importer et exporter des annotations](/pdf/java/pdfannotationeditor-class/import-export-annotations/) pour copier des annotations entre des fichiers PDF.

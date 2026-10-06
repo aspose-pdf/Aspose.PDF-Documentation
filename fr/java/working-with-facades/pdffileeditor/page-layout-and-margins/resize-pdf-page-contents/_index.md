@@ -20,13 +20,10 @@ L'exemple Java redimensionne la zone de contenu des pages 1 et 3 et vérifie la 
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Choisissez les pages dont le contenu doit être redimensionné.
-3. Appelez `resizeContents` avec la largeur et la hauteur cibles.
-
-4. Vérifiez la valeur de retour et gérez les échecs avant de continuer.
-
-5. Enregistrez le document mis à jour.
+1. Choisissez les pages dont le contenu doit être redimensionné.
+1. Appelez `resizeContents` avec la largeur et la hauteur cibles.
+1. Vérifiez la valeur de retour et gérez les échecs avant de continuer.
+1. Enregistrez le document mis à jour.
 
 ### Exemple Java
 

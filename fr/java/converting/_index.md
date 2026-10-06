@@ -15,25 +15,15 @@ Abstract: Cet article présente les fonctionnalités de conversion de documents 
 ---
 Aspose.PDF for Java prend en charge les deux sens de conversion de documents : la conversion de fichiers PDF en formats modifiables ou d'échange et la conversion de formats sources tels que HTML, images, EPUB, XPS et texte en PDF.
 
-
-
 Utilisez cette section pour :
 
-
 - [Convertir un PDF en Word](/pdf/java/convert-pdf-to-word/),
-
 - [Convertir un PDF en Excel](/pdf/java/convert-pdf-to-excel/),
-
 - [Convertir un PDF en PowerPoint](/pdf/java/convert-pdf-to-powerpoint/),
 - [Convertir un PDF en HTML](/pdf/java/convert-pdf-to-html/),
-
 - [Convertir un PDF en images](/pdf/java/convert-pdf-to-images-format/),
-
 - [Convertir un PDF en EPUB, Markdown, texte, XPS et autres formats](/pdf/java/convert-pdf-to-other-files/),
-
 - [Convertir un PDF en PDF/A, PDF/E et PDF/X](/pdf/java/convert-pdf-to-pdf_x/),
-
 - [Convertir HTML en PDF](/pdf/java/convert-html-to-pdf/),
 - [Convertir des images en PDF](/pdf/java/convert-images-format-to-pdf/),
-
 - [Convertir d’autres formats de fichiers en PDF](/pdf/java/convert-other-files-to-pdf/).

@@ -15,11 +15,8 @@ sitemap:
 Parcourez les annotations de page et lisez le texte marqué à partir de `HighlightAnnotation`.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez les objets [`Annotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) sur la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
-
 1. Vérifiez si chaque annotation est une [`HighlightAnnotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) avant de la convertir vers ce type.
-
 1. Lisez le texte marqué de chaque annotation de surlignage et affichez-le dans la console.
 
 ```java
@@ -40,11 +37,8 @@ public static void extractHighlightedText(Path inputFile) {
 Lisez le flux d'apparence normale à partir d'une annotation de tampon et transmettez-le via `TextAbsorber`.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Parcourez les objets [`Annotation`](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) sur la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
-
 1. Conservez uniquement les annotations dont le type est `Stamp`.
-
 1. Créez un [`TextAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) et récupérez l’entrée d’apparence normale dans le dictionnaire d’apparence de l’annotation de tampon.
 1. Visitez l'apparence [`XForm`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) et affichez le texte extrait.
 
@@ -70,12 +64,9 @@ public static void extractStampText(Path inputFile) {
 Utilisez `TextFragmentAbsorber` lorsque vous avez besoin à la fois du texte extrait et des indicateurs en exposant ou en indice sur chaque fragment.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`TextFragmentAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) pour l'analyse de texte au niveau des fragments.
 1. Visitez la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible et récupérez ses objets [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-
 1. Parcourez ces fragments et lisez le texte avec les indicateurs de mise en exposant et en indice de `fragment.getTextState()`.
-
 1. Écrivez les détails extraits dans le fichier de sortie.
 
 ```java

@@ -7,7 +7,6 @@ url: /java/set-pdf-expiration-in-python/
 description: Découvrez comment définir une date d'expiration pour un fichier PDF en Python à l'aide d'Aspose.PDF pour un accès aux documents urgent.
 lastmod: "2026-09-21"
 ---
-
 Pour définir l'expiration d'un document PDF à l'aide de **Aspose.PDF Java pour Python**, utilisez la classe **SetExpiration**.
 
 ```python

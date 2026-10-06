@@ -19,8 +19,6 @@ La classe Java `PdfFileSignatureExamples` présente les principaux flux de trava
 Utilisez cette section pour apprendre à :
 
 - signer et certifier des documents PDF
-
 - inspecter les noms de signature, les détails du signataire et les horodatages
-
 - vérifier la validité de la signature et la couverture de l'ensemble du document
 - extraire un certificat de signature et supprimer une signature existante

@@ -18,8 +18,6 @@ Utilisez ces flux de travail lorsque vous devez reconstruire la structure d'un d
 Cette section explique comment :
 
 - ajouter des pages d'un autre PDF
-
 - supprimer des pages spécifiques
-
 - extraire les pages sélectionnées dans un nouveau fichier
 - insérer les pages choisies d'un PDF dans un autre

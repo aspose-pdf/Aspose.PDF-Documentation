@@ -21,11 +21,9 @@ Utilisez `PdfFileSecurity` lorsque vous devez modifier les mots de passe d’un 
 ### Étapes
 
 1. Créez une instance `PdfFileSecurity`.
-
-2. Liez le PDF sécurisé avec `bindPdf`.
-3. Appelez la surcharge `changePassword` appropriée, selon que vous souhaitez également réinitialiser les privilèges et la taille de la clé.
-
-4. Enregistrez le fichier mis à jour et fermez l'objet de sécurité.
+1. Liez le PDF sécurisé avec `bindPdf`.
+1. Appelez la surcharge `changePassword` appropriée, selon que vous souhaitez également réinitialiser les privilèges et la taille de la clé.
+1. Enregistrez le fichier mis à jour et fermez l'objet de sécurité.
 
 ### Exemples Java
 

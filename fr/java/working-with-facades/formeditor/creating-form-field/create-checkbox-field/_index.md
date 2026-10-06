@@ -15,10 +15,8 @@ Utilisez `FormEditorExamples.createCheckBoxField(...)` pour ajouter un champ de 
 ## Créer un champ de case à cocher
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Ajoutez le champ de case à cocher avec `FieldType.CheckBox`, le nom du champ, la légende, la page et le rectangle.
-
-3. Enregistrez le document mis à jour.
+1. Ajoutez le champ de case à cocher avec `FieldType.CheckBox`, le nom du champ, la légende, la page et le rectangle.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void createCheckBoxField(Path inputFile, Path outputFile) {

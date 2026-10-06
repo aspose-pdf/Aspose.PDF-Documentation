@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, supprimer l'action as
 ## Supprimer une action de champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `removeFieldAction(...)` pour le champ cible.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `removeFieldAction(...)` pour le champ cible.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void removeFieldAction(Path inputFile, Path outputFile) {

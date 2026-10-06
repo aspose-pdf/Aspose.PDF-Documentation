@@ -7,7 +7,6 @@ url: /java/get-page-count-of-pdf-in-python/
 description: Comprenez comment récupérer le nombre total de pages d'un document PDF en Python à l'aide d'Aspose.PDF pour une analyse précise du document.
 lastmod: "2026-09-21"
 ---
-
 Pour obtenir le nombre de pages d'un document PDF à l'aide de **Aspose.PDF Java pour Python**, utilisez la classe **GetNumberOfPages**.
 
 ```Python

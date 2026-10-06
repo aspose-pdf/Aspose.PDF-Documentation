@@ -15,11 +15,9 @@ La méthode Java `FormEditorExamples.setSubmitUrl(...)` comprend :
 ## Configurer un indicateur de soumission
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Définissez l'URL de soumission pour le champ du bouton.
-
-3. Définissez l'indicateur de soumission pour le format requis.
-4. Enregistrez le document mis à jour.
+1. Définissez l'URL de soumission pour le champ du bouton.
+1. Définissez l'indicateur de soumission pour le format requis.
+1. Enregistrez le document mis à jour.
 
 ```java
 editor.setSubmitUrl("Script_Demo_Button", "http://www.example.com/submit");

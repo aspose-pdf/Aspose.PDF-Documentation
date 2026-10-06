@@ -21,13 +21,10 @@ Utilisez ce flux de travail lorsque vous devez enregistrer le certificat associ�
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
-2. Sélectionnez le nom de la signature à inspecter.
-3. Appelez `extractCertificate` pour ouvrir le flux de certificat.
-
-4. Copiez les octets du certificat dans un fichier de sortie.
-
-5. Fermez les ressources de flux et l’objet de façade.
+1. Sélectionnez le nom de la signature à inspecter.
+1. Appelez `extractCertificate` pour ouvrir le flux de certificat.
+1. Copiez les octets du certificat dans un fichier de sortie.
+1. Fermez les ressources de flux et l’objet de façade.
 
 ### Exemple Java
 

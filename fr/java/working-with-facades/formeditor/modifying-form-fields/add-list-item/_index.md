@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, ajouter un nouvel él
 ## Ajouter un élément à un champ de liste
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `addListItem(...)` pour le champ cible et la nouvelle paire affichage/valeur.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `addListItem(...)` pour le champ cible et la nouvelle paire affichage/valeur.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void addListItem(Path inputFile, Path outputFile) {

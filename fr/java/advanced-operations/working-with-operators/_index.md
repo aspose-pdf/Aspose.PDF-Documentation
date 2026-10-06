@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Utiliser des opérateurs PDF de bas niveau pour le contrôle du flux de contenu en Java
 Abstract: Cet article explique comment utiliser les opérateurs PDF de bas niveau dans Aspose.PDF for Java. Apprenez à placer des images avec précision, à dessiner du contenu XForm réutilisable et à supprimer des opérateurs graphiques des pages PDF.
 ---
-
 ## Introduction aux opérateurs PDF et à leur utilisation
 
 Un opérateur est un mot-clé PDF spécifiant une action à effectuer, comme peindre une forme graphique sur la page. Un mot-clé opérateur se distingue d'un objet nommé par l'absence de caractère solidus initial (2Fh). Les opérateurs n'ont de sens qu'à l'intérieur du flux de contenu.

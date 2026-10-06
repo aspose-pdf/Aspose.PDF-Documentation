@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF et afficher la valeur de préf�
 ## Obtenir les préférences actuelles de la visionneuse
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Appelez `getViewerPreference()` pour lire la valeur actuelle.
-
-3. Inspectez ou affichez l’indicateur de préférence renvoyé.
+1. Appelez `getViewerPreference()` pour lire la valeur actuelle.
+1. Inspectez ou affichez l’indicateur de préférence renvoyé.
 
 ```java
 public static void getViewerPreferences(Path inputFile) {

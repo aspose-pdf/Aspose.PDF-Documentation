@@ -13,7 +13,6 @@ TechArticle: true
 AlternativeHeadline: Transférez des annotations PDF entre des documents en Java.
 Abstract: Cet article explique comment copier des annotations à partir d'un PDF source et les exporter dans un nouveau document PDF à l'aide d'Aspose.PDF for Java. Le flux de travail charge le fichier source, crée le document de destination, ajoute une page, copie les annotations de la première page source et enregistre le résultat.
 ---
-
 ## Copier des annotations d'un PDF à un autre
 
 1. Ouvrez le PDF source [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).

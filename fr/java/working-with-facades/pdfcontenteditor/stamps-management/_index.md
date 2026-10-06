@@ -13,5 +13,4 @@ Abstract: Cette section couvre les flux de travail liés aux tampons actuellemen
 La classe Java `PdfContentEditorExamples` actuelle prend directement en charge :
 
 - `addRubberStamp(...)`
-
 - `listStamps(...)`

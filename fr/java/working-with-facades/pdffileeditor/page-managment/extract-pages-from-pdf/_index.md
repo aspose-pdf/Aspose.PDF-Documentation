@@ -20,11 +20,9 @@ L'exemple Java extrait les pages 1, 4 et 3 dans un nouveau document PDF.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Définissez les numéros de page à extraire.
-3. Appelez `extract` avec le fichier source, le tableau de pages et le fichier de sortie.
-
-4. Enregistrez les pages extraites en tant que nouveau PDF.
+1. Définissez les numéros de page à extraire.
+1. Appelez `extract` avec le fichier source, le tableau de pages et le fichier de sortie.
+1. Enregistrez les pages extraites en tant que nouveau PDF.
 
 ### Exemple Java
 

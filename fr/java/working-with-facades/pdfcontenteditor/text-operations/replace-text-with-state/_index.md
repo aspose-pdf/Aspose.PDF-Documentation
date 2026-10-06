@@ -13,13 +13,10 @@ Abstract: Cet article montre comment lier un PDF, configurer un TextState person
 ## Remplacer le texte avec une mise en forme personnalisée
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Créez et configurez un `TextState` avec la couleur et la taille de police requises.
-
-3. Définissez la portée du remplacement de texte sur `ReplaceAll`.
-
-4. Appelez `replaceText(...)` avec le texte de recherche, le texte de remplacement et `TextState` configuré.
-5. Enregistrez le document PDF mis à jour.
+1. Créez et configurez un `TextState` avec la couleur et la taille de police requises.
+1. Définissez la portée du remplacement de texte sur `ReplaceAll`.
+1. Appelez `replaceText(...)` avec le texte de recherche, le texte de remplacement et `TextState` configuré.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void replaceTextWithState(Path inputFile, Path outputFile) {

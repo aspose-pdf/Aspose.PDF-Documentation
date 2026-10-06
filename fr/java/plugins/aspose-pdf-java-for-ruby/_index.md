@@ -32,7 +32,6 @@ Le projet Aspose.PDF Java pour Ruby montre comment différentes tâches peuvent 
 Voici la configuration système requise pour utiliser Aspose.PDF Java pour Ruby :
 
 - Rjb Gem est configuré
-
 - Composant Aspose.PDF téléchargé
 
 ### Plateformes prises en charge
@@ -68,7 +67,6 @@ Il est très simple et facile d'installer Aspose.PDF Java pour Ruby gem, veuille
 
 {{< highlight java >}}
 
- 
 $ gem installer aspose-pdfjava
 
 {{< /highlight >}}
@@ -87,27 +85,18 @@ Incluez les fichiers requis pour travailler avec l'exemple helloworld.
 
  require File.dirname(File.dirname(File.dirname(__FILE__))) + '/lib/aspose-pdfjava'
 
-
-
 inclure Asposepdfjava
-
-
 
 inclure Asposepdfjava :: HelloWorld
 
-
-
 initialize_aspose_pdf
-
 
 {{< /highlight >}}
 
 Comprenons le code ci-dessus.
 
 1. La première ligne garantit que le pdf aspose est chargé et disponible.
-
 1. Incluez les fichiers requis pour accéder au pdf aspose.
-
 1. Initialisez les bibliothèques. Les classes aspose JAVA sont chargées à partir du chemin fourni dans le fichier aspose.yml/
 
 ## Assistance et contributions
@@ -137,68 +126,39 @@ Vous pouvez obtenir le dernier code source à partir de l'un des emplacements su
 Cette section comprend les sujets suivants :
 
 - [Télécharger et configurer Aspose.Pdf en Ruby](/pdf/java/download-and-configure-aspose-pdf-in-ruby/)
-
 - [Guide des programmeurs Ruby](/pdf/java/ruby-programmers-guide/)
-
   - [Travailler avec un objet document en Ruby](/pdf/java/working-with-document-object-in-ruby/)
-
     - [Ajouter du JavaScript en Ruby](/pdf/java/adding-javascript-in-ruby/)
     - [Ajouter des calques au fichier PDF en Ruby](/pdf/java/add-layers-to-pdf-file-in-ruby/)
-
     - [Ajouter la table des matières au PDF existant en Ruby](/pdf/java/add-toc-to-existing-pdf-in-ruby/)
-
     - [Obtenir les propriétés d'affichage de la fenêtre du document et de la page en Ruby](/pdf/java/get-document-window-and-page-display-properties-in-ruby/)
-
     - [Obtenir des informations sur le fichier PDF en Ruby](/pdf/java/get-pdf-file-information-in-ruby/)
-
     - [Obtenir les métadonnées XMP à partir d'un fichier PDF en Ruby](/pdf/java/get-xmp-metadata-from-pdf-file-in-ruby/)
     - [Optimiser le document PDF pour le Web en Ruby](/pdf/java/optimize-pdf-document-for-the-web-in-ruby/)
-
     - [Optimiser la taille du fichier PDF en Ruby](/pdf/java/optimize-pdf-file-size-in-ruby/)
-
     - [Supprimer les métadonnées du PDF en Ruby](/pdf/java/remove-metadata-from-pdf-in-ruby/)
-
     - [Définir les propriétés d'affichage de la fenêtre du document et de la page en Ruby](/pdf/java/set-document-window-and-page-display-properties-in-ruby/)
-
     - [Définir l'expiration du PDF en Ruby](/pdf/java/set-pdf-expiration-in-ruby/)
     - [Définir les informations du fichier PDF en Ruby](/pdf/java/set-pdf-file-information-in-ruby/)
-
   - [Travailler avec des pages en Ruby](/pdf/java/working-with-pages-in-ruby/)
-
     - [Concaténer des fichiers PDF en Ruby](/pdf/java/concatenate-pdf-files-in-ruby/)
-
     - [Supprimer une page particulière du fichier PDF en Ruby](/pdf/java/delete-a-particular-page-from-the-pdf-file-in-ruby/)
-
     - [Obtenir une page particulière dans un fichier PDF en Ruby](/pdf/java/get-a-particular-page-in-a-pdf-file-in-ruby/)
     - [Obtenir le nombre de pages du PDF en Ruby](/pdf/java/get-page-count-of-pdf-in-ruby/)
-
     - [Obtenir les propriétés de la page en Ruby](/pdf/java/get-page-properties-in-ruby/)
-
     - [Insérer une page vide à la fin du fichier PDF en Ruby](/pdf/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/)
-
     - [Insérer une page vide dans un fichier PDF en Ruby](/pdf/java/insert-an-empty-page-into-a-pdf-file-in-ruby/)
-
     - [Diviser le fichier PDF en pages individuelles en Ruby](/pdf/java/split-pdf-file-into-individual-pages-in-ruby/)
     - [Mettre à jour les dimensions de la page en Ruby](/pdf/java/update-page-dimensions-in-ruby/)
-
   - [Travailler avec du texte en Ruby](/pdf/java/working-with-text-in-ruby/)
-
     - [Ajouter une chaîne HTML en utilisant DOM en Ruby](/pdf/java/add-html-string-using-dom-in-ruby/)
-
     - [Ajouter du texte à un fichier PDF existant en Ruby](/pdf/java/add-text-to-an-existing-pdf-file-in-ruby/)
-
     - [Extraire le texte de toutes les pages d'un document PDF en Ruby](/pdf/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/)
   - [Travailler avec la conversion de documents en Ruby](/pdf/java/working-with-document-conversion-in-ruby/)
-
     - [Convertir le format HTML au format PDF en Ruby](/pdf/java/convert-html-to-pdf-format-in-ruby/)
-
     - [Convertir les pages PDF en images en Ruby](/pdf/java/convert-pdf-pages-to-images-in-ruby/)
-
     - [Convertir un PDF au format DOC ou DOCX en Ruby](/pdf/java/convert-pdf-to-doc-or-docx-format-in-ruby/)
-
     - [Convertir un PDF en classeur Excel en Ruby](/pdf/java/convert-pdf-to-excel-workbook-in-ruby/)
     - [Convertir un PDF au format SVG en Ruby](/pdf/java/convert-pdf-to-svg-format-in-ruby/)
-
     - [Convertir le fichier SVG au format PDF en Ruby](/pdf/java/convert-svg-file-to-pdf-format-in-ruby/)
-
 - [Assistance et contributions à Aspose.Pdf en Ruby](/pdf/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/)

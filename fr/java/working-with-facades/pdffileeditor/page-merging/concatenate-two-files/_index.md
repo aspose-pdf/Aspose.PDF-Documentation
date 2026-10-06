@@ -20,11 +20,9 @@ Cet article correspond directement à l'exemple `mergePdfDocuments` dans `PdfFil
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Transmettez les deux chemins de fichiers d’entrée sous forme de tableau de chaînes.
-3. Appelez `concatenate` avec le tableau et le chemin du fichier de sortie.
-
-4. Enregistrez le PDF fusionné.
+1. Transmettez les deux chemins de fichiers d’entrée sous forme de tableau de chaînes.
+1. Appelez `concatenate` avec le tableau et le chemin du fichier de sortie.
+1. Enregistrez le PDF fusionné.
 
 ```java
 public static void mergePdfDocuments(Path firstInputFile, Path secondInputFile, Path outputFile) {

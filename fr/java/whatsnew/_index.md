@@ -718,9 +718,7 @@ document.save(outFile);
 Depuis la version 24.7, dans le cadre de l'édition du PDF balisé, des méthodes ont été ajoutées sur `com.aspose.pdf.tagged.logicalstructure.elements.Element` :
 
 - `tag` : associe des balises à des opérateurs représentant des images, du texte ou des liens.
-
 - `insertChild` : insère un élément enfant.
-
 - `removeChild` : supprime un élément enfant.
 - `clearChilds` : supprime tous les éléments enfants.
 
@@ -988,14 +986,10 @@ Depuis la version 24.5, les plugins Form Editor ont été implémentés.
 **Modifier des formulaires PDF avec l’éditeur de formulaires**
 
 - Définissez vos clés de licence.
-
 - Créez une instance de la classe `FormEditor`, qui fournit des méthodes pour manipuler les formulaires PDF.
 - Créez une instance de la classe `FormEditorAddOptions`, qui spécifie les options d'ajout de champs de formulaire à un document PDF.
-
 - Ajoutez une source de fichier d'entrée et une source de fichier de sortie à l’objet `FormEditorAddOptions`, en utilisant la classe `FileDataSource` qui représente un chemin de fichier ou un flux.
-
 - Appelez la méthode `process` de l’objet `FormEditor`, en passant l’objet `FormEditorAddOptions` en paramètre.
-
 - Accédez au résultat en utilisant `ResultContainer.resultCollection`.
 
 ```java
@@ -1068,11 +1062,8 @@ ResultContainer results = pdfFormPlugin.process(opt);
 Cette version permet de travailler avec les calques PDF :
 
 - verrouiller un calque PDF
-
 - extraire les éléments du calque PDF
-
 - aplatir les calques d’un PDF
-
 - fusionner tous les calques du PDF en un seul
 
 **Verrouiller un calque PDF**
@@ -2044,7 +2035,6 @@ pdfDocument.Save("output.ods"), options);
 ```
 
 - PDF vers XMLSpreadSheet2003 : Reconnaître le texte en indice et en exposant ;
-
 - PDF vers Excel : Reconnaître le texte en indice et en exposant ;
 
 ## Nouveautés dans Aspose.PDF 22.3

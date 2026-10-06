@@ -15,13 +15,10 @@ Utilisez `FormEditorExamples.createRadioButtonField(...)` pour créer un champ d
 ## Créer un champ de bouton radio
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Configurez l'espacement des boutons radio, l'orientation et la taille de l'élément.
-
-3. Définissez les éléments des boutons radio.
-4. Ajoutez le champ du bouton radio avec sa sélection et son rectangle par défaut.
-
-5. Enregistrez le document mis à jour.
+1. Configurez l'espacement des boutons radio, l'orientation et la taille de l'élément.
+1. Définissez les éléments des boutons radio.
+1. Ajoutez le champ du bouton radio avec sa sélection et son rectangle par défaut.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void createRadioButtonField(Path inputFile, Path outputFile) {

@@ -10,7 +10,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 Utilisez ces API lorsque vous devez inspecter l'arborescence de structure logique d'un PDF balisé et examiner ou mettre à jour les métadonnées des éléments de structure.
 
 ## Obtenir des métadonnées de contenu balisé

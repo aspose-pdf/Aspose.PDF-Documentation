@@ -13,7 +13,6 @@ lastmod: "2026-09-21"
 
 - Si vous souhaitez voir les problèmes connus/signalés (par les utilisateurs ou l'équipe Q.A) dans l'application.
 - Ou vous souhaitez signaler tout problème que vous avez trouvé dans l'application
-
 - Vous avez des suggestions d'amélioration ou souhaitez faire une demande de fonctionnalité
 
 Veuillez utiliser l'un des outils de suivi des problèmes du projet suivants :
@@ -31,5 +30,4 @@ Aspose.PDF Java pour Struts 1.3 est open source et son code source est disponibl
 Vous pouvez obtenir le dernier code source à partir de l'un des emplacements suivants
 
 - [CodePlex](https://asposepdfforstruts.codeplex.com)
-
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)

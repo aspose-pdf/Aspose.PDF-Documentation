@@ -15,9 +15,7 @@ L'exemple Java dans `FormExamples.addImageAppearanceToButtonField(...)` montre c
 Le flux de travail est simple :
 
 - Liez le PDF d'entrée avec `form.bindPdf(...)`.
-
 - Ouvrez le fichier image avec `Files.newInputStream(...)`.
-
 - Appelez `form.fillImageField(...)` pour le champ du bouton.
 - Enregistrez le PDF mis à jour.
 
