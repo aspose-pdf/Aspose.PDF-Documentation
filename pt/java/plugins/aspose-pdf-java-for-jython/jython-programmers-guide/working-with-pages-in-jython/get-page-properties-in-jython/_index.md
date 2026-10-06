@@ -1,18 +1,19 @@
 ---
-title: Obter Propriedades da Página em Jython
+title: Obter propriedades da página em Jython
+linktitle: Obter propriedades da página em Jython
 type: docs
 weight: 50
 url: /pt/java/get-page-properties-in-jython/
-lastmod: "2021-06-05"
+description: Explore como recuperar propriedades de páginas individuais em um documento PDF usando Jython com Aspose.PDF.
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - obter propriedades da página
 
-## Aspose.PDF - Obter Propriedades da Página
+Para verificar o formato do arquivo usando **Aspose.PDF Java for Jython**. Aqui você pode ver o código de exemplo.
 
-Para verificar o formato do arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver um código de exemplo.
+Erro ao renderizar a macro 'code' : Valor inválido especificado para o parâmetro lang
 
-Erro ao renderizar macro 'code' : Valor inválido especificado para o parâmetro lang
-
-## Baixar Código em Execução
+## Baixar o exemplo de código
 
 Baixe o código em execução de qualquer um dos sites de codificação social mencionados abaixo:
 

@@ -1,18 +1,19 @@
 ---
-title: Adding JavaScript using DOM in Jython
+title: Adicionar JavaScript usando DOM em Jython
+linktitle: Adicionar JavaScript usando DOM em Jython
 type: docs
 weight: 10
 url: /pt/java/adding-javascript-using-dom-in-jython/
-lastmod: "2021-06-05"
+description: Aprenda como adicionar JavaScript a um documento PDF usando o DOM em Jython, aprimorando a interatividade dentro do documento.
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - adicionar Javascript
 
-## Aspose.PDF - Adicionar Javascript
+Para verificar o formato de arquivo usando **Aspose.PDF Java for Jython**. Aqui você pode ver o código de exemplo.
 
-Para Verificar o Formato do Arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver um código de exemplo.
+Erro ao renderizar a macro 'code' : Valor inválido especificado para o parâmetro lang
 
-Erro ao renderizar macro 'code' : Valor inválido especificado para o parâmetro lang
-
-## Baixar Código em Execução
+## Baixar o exemplo de código
 
 Baixe o código em execução de qualquer um dos sites de codificação social mencionados abaixo:
 

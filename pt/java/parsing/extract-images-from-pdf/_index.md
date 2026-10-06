@@ -1,48 +1,31 @@
 ---
-title: Extrair Imagens do PDF
-linktitle: Extrair Imagens
+title: Extrair imagens de PDF usando Java
+linktitle: Extrair imagens de PDF
 type: docs
 weight: 20
 url: /pt/java/extract-images-from-the-pdf-file/
-description: Como extrair uma parte da imagem do PDF usando Aspose.PDF para Java
-lastmod: "2021-06-05"
+description: Aprenda como extrair imagens incorporadas de arquivos PDF com Aspose.PDF for Java.
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extrair imagens de PDF via Java
+Abstract: Este artigo explica como extrair imagens incorporadas de um documento PDF com Aspose.PDF for Java. Ele mostra como abrir o PDF de origem, acessar uma imagem da coleção de recursos da página e salvar o XImage extraído em um arquivo externo.
 ---
+Extrair imagens das páginas de PDF quando precisar reutilizar gráficos incorporados, inspecionar os recursos do documento ou exportar imagens para processamento subsequente.
 
-Cada página no documento PDF contém recursos (imagens, formulários e fontes). Podemos acessar esses recursos chamando o método [getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--). A classe [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) contém [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) e podemos obter a lista de imagens chamando o método [getImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--).
-
-Assim, para extrair a imagem de uma página, precisamos obter referência à página, em seguida aos recursos da página e por último à coleção de imagens. Podemos extrair uma imagem específica, por exemplo, pelo índice.
-
-O índice da imagem retorna um objeto [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage).
-Este objeto fornece um método [Save](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-) que pode ser usado para salvar a imagem extraída. O trecho de código a seguir mostra como extrair imagens de um arquivo PDF.
+1. Abra o PDF de origem em uma instância de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e abra um fluxo de saída para o arquivo de imagem extraído.
+1. Obtenha a página de destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) do documento e acesse-o `Resources.Images` coleção.
+1. Recupere o necessário objeto [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) dessa coleção de imagens por índice.
+1. Chame `image.save(outputImage)` para gravar os bytes da imagem extraídos no fluxo de destino.
 
 ```java
-public static void Extract_Images(){
-       // O caminho para o diretório de documentos.
-       String _dataDir = "/home/admin1/pdf-examples/Samples/";
-       String filePath = _dataDir + "ExtractImages.pdf";
-
-       // Carregar documento PDF
-       com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-       com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
-       com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
-       // Extrair uma imagem específica
-       com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
-
-       try {
-           java.io.FileOutputStream outputImage = new java.io.FileOutputStream(_dataDir + "output.jpg");
-           // Salvar imagem de saída
-           xImage.save(outputImage);
-           outputImage.close();
-       } catch (java.io.FileNotFoundException e) {
-           // TODO: tratar exceção
-           e.printStackTrace();
-       } catch (java.io.IOException e) {
-           // TODO: tratar exceção
-           e.printStackTrace();
-       }
-   }
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
 ```

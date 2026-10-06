@@ -1,15 +1,16 @@
 ---
-title: Converter PDF para formato DOC ou DOCX no Jython
+title: Converter PDF para formato DOC ou DOCX em Jython
+linktitle: Converter PDF para formato DOC ou DOCX em Jython
 type: docs
 weight: 10
 url: /pt/java/convert-pdf-to-doc-or-docx-format-in-jython/
-lastmod: "2021-06-05"
+description: Aprenda como converter documentos PDF para formato DOC ou DOCX em Jython usando Aspose.PDF para facilitar a edição e reutilização.
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - PDF para DOC
 
-## Aspose.PDF - PDF para Doc
-
-Para verificar o formato de arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver um código de exemplo.
-Erro ao renderizar macro 'code': Valor inválido especificado para o parâmetro lang
+Para verificar o formato do arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver o código de exemplo.
+Erro ao renderizar a macro 'code' : Valor inválido especificado para o parâmetro lang
 
 **Baixar Código em Execução**
 

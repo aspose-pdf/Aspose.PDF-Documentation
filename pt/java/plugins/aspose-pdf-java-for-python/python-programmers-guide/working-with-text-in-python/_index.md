@@ -1,11 +1,12 @@
 ---
-title: Trabalhando com Texto em Python
+title: Trabalhar com texto em Python
+linktitle: Trabalhar com texto em Python
 type: docs
 weight: 40
 url: /pt/java/working-with-text-in-python/
-lastmod: "2021-06-05"
+description: Explore como manipular texto dentro de um documento PDF usando Python e Aspose.PDF para melhorar o manuseio e a extração de texto.
+lastmod: "2026-10-06"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
 - [Adicionar String HTML usando DOM em Python](/pdf/pt/java/add-html-string-using-dom-in-python/)
