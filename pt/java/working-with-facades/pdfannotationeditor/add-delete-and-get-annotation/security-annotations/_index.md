@@ -13,7 +13,7 @@ Abstract: Este artigo explica como trabalhar com anotações de redação em doc
 ## Marcar texto para redação
 
 1. Carregue o PDF e procure em todas as páginas o texto que deve ser ocultado.
-2. Criar um `RedactionAnnotation` para cada fragmento de texto correspondido e configure sua aparência.
+2. Crie um `RedactionAnnotation` para cada fragmento de texto correspondido e configure sua aparência.
 3. Adicione as anotações de ocultação às suas páginas e salve o documento.
 
 ```java

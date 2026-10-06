@@ -1,13 +1,13 @@
 ---
-title: Converter PDF para Pasta de Trabalho Excel em Ruby
-linktitle: Converter PDF para Pasta de Trabalho Excel em Ruby
+title: Converter PDF para pasta de trabalho Excel em Ruby
+linktitle: Converter PDF para pasta de trabalho Excel em Ruby
 type: docs
 weight: 40
 url: /pt/java/convert-pdf-to-excel-workbook-in-ruby/
 description: Entenda como converter dados de PDF em pastas de trabalho Excel usando Ruby com Aspose.PDF, simplificando a extração e análise de dados.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Converter PDF para Pasta de Trabalho Excel
+## Aspose.PDF - converter PDF para pasta de trabalho Excel
 
 Para converter documento PDF para Pasta de Trabalho Excel usando **Aspose.PDF Java for Ruby**, basta invocar o módulo **PdfToExcel**.
 
@@ -33,8 +33,8 @@ pdf.save(data_dir + "Converted_Excel.xls", excelsave)
 puts "Document has been converted successfully"
 ```
 
-## Baixar Código em Execução
+## Baixar o exemplo de código
 
-BaixarВ **Converter PDF para DOC ou DOCX (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Converter PDF para DOC ou DOCX (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/pdftoexcel.rb)

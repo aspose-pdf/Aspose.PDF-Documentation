@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Combinar páginas PDF usando Java
 Abstract: Este artigo explica como mesclar dois documentos PDF em Java usando Aspose.PDF. O exemplo abre dois documentos de origem, adiciona as páginas do segundo documento ao primeiro e salva o resultado mesclado como um novo arquivo PDF.
 ---
-Mesclar arquivos PDF é útil quando você precisa combinar documentos relacionados em um único arquivo para distribuição, arquivamento ou processamento.
+Mesclar arquivos PDF é útil quando precisar combinar documentos relacionados em um único arquivo para distribuição, arquivamento ou processamento.
 
 ## Exemplo ao vivo
 
@@ -22,8 +22,8 @@ Mesclar arquivos PDF é útil quando você precisa combinar documentos relaciona
 Este tópico mostra como mesclar vários arquivos PDF em um único documento em Java:
 
 1. Abra ambos os documentos de origem com o [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) construtor.
-1. Anexar o [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) coleção da segunda [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para o primeiro com `document1.getPages().add(document2.getPages())`.
-1. Salvar o mesclado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para o caminho de saída.
+1. Anexe o [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) coleção da segunda [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para o primeiro com `document1.getPages().add(document2.getPages())`.
+1. Salve o mesclado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para o caminho de saída.
 
 ## Mesclar dois documentos PDF
 

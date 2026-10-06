@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações interativas de PDF em Java.
+AlternativeHeadline: Trabalhar com anotações interativas de PDF em Java
 Abstract: Este artigo explica como trabalhar com anotações de links interativas em arquivos PDF usando Aspose.PDF for Java. Ele cobre a localização de texto, a criação de uma anotação de link sobre a área de texto correspondida, a leitura de anotações de link existentes e a exclusão delas.
 ---
 As anotações interativas nesta seção concentram‑se em fluxos de trabalho baseados em links e botões que respondem às ações do usuário dentro de um visualizador de PDF.
@@ -19,9 +19,9 @@ As anotações interativas nesta seção concentram‑se em fluxos de trabalho b
 
 Use este exemplo quando precisar colocar um link clicável sobre o texto encontrado na página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Localize o fragmento de texto alvo e crie um [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) sobre o seu retângulo.
-1. Atribuir um [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) e salve o documento atualizado.
+1. Atribua um [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) e salve o documento atualizado.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {
@@ -45,9 +45,9 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 
 Este exemplo varre a coleção de anotações da página e relata a localização de cada anotação de link.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar sobre as anotações na página de destino.
-1. Filtrar anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` e imprimir seus retângulos.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere sobre as anotações na página de destino.
+1. Filtre anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` e imprima seus retângulos.
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -65,8 +65,8 @@ public static void linkGet(Path inputFile) {
 
 Use esta abordagem quando as anotações de link existentes devem ser removidas da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações cujo tipo é [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações cujo tipo é [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
 1. Exclua as anotações coletadas e salve o arquivo de saída.
 
 ```java
@@ -90,8 +90,8 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 
 Este exemplo cria uma anotação de linha interativa com estilos de seta, configurações de borda e uma nota pop-up.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) com pontos de início e fim.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) com pontos de início e fim.
 1. Configure sua aparência e a anotação popup, então salve o documento.
 
 ```java
@@ -127,8 +127,8 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 Use este exemplo quando o PDF deve incluir botões de página anterior e página seguinte para navegação interativa.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e certifique-se de que o documento tenha as páginas necessárias.
-1. Criar [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) controles com ações de navegação predefinidas.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e certifique-se de que o documento tenha as páginas necessárias.
+1. Crie [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) controles com ações de navegação predefinidas.
 1. Adicione os botões à coleção de formulários e salve o documento atualizado.
 
 ```java
@@ -162,8 +162,8 @@ public static void navigationButtonsAdd(Path inputFile, Path outputFile) {
 
 Este exemplo cria um botão que aciona o comando de impressão quando o usuário clica nele.
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione uma página.
-1. Criar um [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) e atribua a ação de impressão predefinida.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione uma página.
+1. Crie um [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) e atribua a ação de impressão predefinida.
 1. Configure a borda e o fundo do botão, adicione‑o ao formulário e salve o documento.
 
 ```java

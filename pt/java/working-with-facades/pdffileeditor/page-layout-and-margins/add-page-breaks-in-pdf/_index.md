@@ -1,6 +1,6 @@
 ---
-title: Adicionar Quebras de Página em PDF
-linktitle: Adicionar Quebras de Página em PDF
+title: Adicionar Quebras de página em PDF
+linktitle: Adicionar Quebras de página em PDF
 type: docs
 weight: 20
 url: /pt/java/add-page-breaks-in-pdf/
@@ -19,7 +19,7 @@ Use este fluxo de trabalho quando uma página precisar ser dividida em várias p
 
 ### Etapas
 
-1. Criar um `PdfFileEditor` instância.
+1. Crie uma instância de `PdfFileEditor`.
 2. Crie um ou mais `PdfFileEditor.PageBreak` entradas com o número da página e a posição de quebra.
 3. Passe o array de quebras de página para `addPageBreak`.
 4. Salve o documento PDF atualizado.

@@ -19,7 +19,7 @@ O Eclipse IDE pode ser estendido com componentes de software adicionais. O Eclip
 
 [Aspose.PDF for Java](https://products.aspose.com/pdf/java/)é uma API robusta de criação de documentos PDF que permite que suas aplicações Java leiam, escrevam e manipulem documentos PDF sem usar o Adobe Acrobat.
 
-Aspose.PDF for Java oferece uma incrível variedade de recursos, incluindo opções de compressão de PDF, criação e manipulação de tabelas, suporte a gráficos, funções de imagem, funcionalidade extensa de hyperlinks, controles de segurança avançados e manipulação de fontes personalizadas.
+Aspose.PDF for Java oferece uma incrível variedade de recursos, incluindo opções de compressão de PDF, criação e manipulação de tabelas, suporte a gráficos, funções de imagem, funcionalidade extensa de hiperlinks, controles de segurança avançados e manipulação de fontes personalizadas.
 
 ### Aspose.PDF Java (Maven) for Eclipse
 
@@ -45,15 +45,15 @@ Exemplo de Código Aspose.PDF (assistente)
 - Exemplos de Código da API Aspose.PDF for Java destinam‑se a demonstrar as várias funções da API.
 - O assistente também buscará e atualizará novos Exemplos de Código disponíveis) do repositório de exemplos Aspose.PDF for Java.
 
-## Requisitos de Sistema e Plataformas Suportadas
+## Requisitos de sistema e plataformas suportadas
 
-### Requisitos de Sistema
+### Requisitos de sistema
 
 - **Memória do Sistema:** 2 GB ou mais (Recomendado)
 - **SO:** Qualquer sistema operacional que suporte a JVM (Máquina Virtual)
 - **Conexão com a Internet:** 2 MB ou superior (Recomendado)
 
-### Plataformas Compatíveis
+### Plataformas compatíveis
 
 - Eclipse Mars.1 (4.5.1) - Recomendado
 - Eclipse Juno ou posterior.
@@ -62,14 +62,14 @@ Exemplo de Código Aspose.PDF (assistente)
 
 ### Baixar Eclipse IDE
 
-Você precisará primeiro instalar o Eclipse IDE antes de baixar o plugin Aspose.PDF Java (Maven) para Eclipse.
+Instale o Eclipse IDE antes de baixar o plug-in Aspose.PDF Java (Maven) para Eclipse.
 
 Para baixar o Eclipse IDE
 
-1. Ir para [https://eclipse.org](https://eclipse.org/).
+1. Acesse [https://eclipse.org](https://eclipse.org/).
 1. Baixe e instale o Eclipse IDE recomendado para desenvolvedores Java SE / EE.
 
-### Baixe o Aspose.PDF Java (Maven) para Eclipse
+### Baixar o Aspose.PDF Java (Maven) para Eclipse
 
 A seguir estão três métodos recomendados para o download e instalação bem-sucedidos do plugin Aspose.PDF Java (Maven) para Eclipse:
 
@@ -85,7 +85,7 @@ Instalando Aspose.PDF Java (Maven) para Eclipse
 
 Usando Aspose.PDF Java (Maven) para Eclipse
 
-### Como aplicar a Licença Aspose?
+### Aplicar a licença Aspose
 
 Este Plugin usa uma versão de avaliação do Aspose.PDF. Quando estiver satisfeito com sua avaliação, você pode comprar uma licença em [Site da Aspose](https://purchase.aspose.com/buy).
 Para remover a mensagem de avaliação e as limitações de recursos, deve ser aplicada uma licença do produto. Você receberá um arquivo de licença após comprar o produto. Por favor, siga os passos abaixo para aplicar a licença.
@@ -102,7 +102,7 @@ license.setLicense("Aspose.PDF.Java.lic");
 
 {{< /highlight >}}
 
-## Suporte, Estenda e Contribua
+## Suporte, extensão e contribuição
 
 ### Suporte
 
@@ -112,19 +112,19 @@ license.setLicense("Aspose.PDF.Java.lic");
 
 Por favor, siga [**Rastreador de Problemas do GitHub**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) para registrar quaisquer problemas encontrados no plugin.
 
-### Estenda e Contribua
+### Estender e contribuir
 
 Aspose.PDF Java (Maven) for Eclipse é de código aberto e seu código-fonte está disponível nos principais sites de codificação social listados abaixo. Os desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novos recursos ou melhorando os existentes, de modo que outros também possam se beneficiar dele. Os desenvolvedores também podem aprender com ele para criar seus próprios plugins.
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_Maven_for_Eclipse)
 
-### Como configurar o código-fonte do Aspose.PDF Java (Maven) for Eclipse
+### Configurar o código-fonte do Aspose.PDF Java (Maven) for Eclipse
 
 Abaixo, etapas simples levarão de forma tranquila à configuração bem-sucedida do código-fonte do plug-in **"Aspose.PDF Java (Maven) for Eclipse"** no Eclipse IDE
 
 1. Baixe / Clone o código-fonte.
 1. Escolha **File** > Import > General > Existing Projects into Workspace
 1. Navegue até o código-fonte do projeto mais recente que você baixou
-1. Selecione o Projeto Eclipse que você deseja importar
+1. Selecione o Projeto Eclipse que você deseja importar.
 1. Clique em Concluir
 1. O código do plug-in Aspose.PDF Java for Eclipse está agora pronto para ser aprimorado.

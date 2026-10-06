@@ -11,18 +11,18 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Assine documentos PDF com assinaturas digitais em Java
+AlternativeHeadline: Assinar documentos PDF com assinaturas digitais em Java
 Abstract: Saiba como assinar documentos PDF com Aspose.PDF for Java. O conjunto de exemplos Java cobre a assinatura com um caminho de certificado configurado e senha, e a assinatura com um objeto de assinatura PKCS7 explícito que inclui metadados da assinatura, como motivo, informações de contato, localização e autoridade.
 ---
 ## Assinar documentos PDF
 
-Usar `PdfFileSignature` quando você precisar aplicar uma assinatura digital visível a um PDF.
+Use `PdfFileSignature` quando precisar aplicar uma assinatura digital visível a um PDF.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileSignature` instância e vincule o PDF de origem.
-2. Carregue o certificado através de `setCertificate` ou ao criar um `PKCS7` objeto.
-3. Chamar `sign` com a página de destino, configurações de visibilidade, retângulo de assinatura e dados da assinatura.
+1. Crie uma instância de `PdfFileSignature` e vincule o PDF de origem.
+2. Carregue o certificado através de `setCertificate` ou ao criar um objeto `PKCS7`.
+3. Chame `sign` com a página de destino, configurações de visibilidade, retângulo de assinatura e dados da assinatura.
 4. Salve o PDF assinado e feche o objeto facade.
 
 ### Exemplos Java

@@ -1,13 +1,13 @@
 ---
-title: Definir Expiração de PDF em PHP
-linktitle: Definir Expiração de PDF em PHP
+title: Definir expiração de PDF em PHP
+linktitle: Definir expiração de PDF em PHP
 type: docs
 weight: 80
 url: /pt/java/set-pdf-expiration-in-php/
 description: Descubra como definir uma data de expiração para um arquivo PDF em PHP, controlando o acesso com Aspose.PDF.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Definir Expiração de PDF
+## Aspose.PDF - definir expiração de PDF
 
 Para definir a expiração de  documento PDF usando **Aspose.PDF Java for PHP**, basta chamar a classe **SetExpiration**.
 
@@ -37,6 +37,6 @@ print "Update document information, please check output file." . PHP_EOL;
 
 **Baixar Código em Execução**
 
-BaixarВ **Set PDF Expiration (Aspose.PDF)**В deВ qualquer um dos sites de codificação social abaixo mencionados:
+Baixar **Set PDF Expiration (Aspose.PDF)** de qualquer um dos sites de codificação social abaixo mencionados:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetExpiration.php)

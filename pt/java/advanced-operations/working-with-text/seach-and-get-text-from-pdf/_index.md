@@ -1,6 +1,6 @@
 ---
-title: Pesquisar e Extrair Texto PDF em Java
-linktitle: Pesquisar e Obter Texto
+title: Pesquisar e extrair texto PDF em Java
+linktitle: Pesquisar e obter texto
 type: docs
 weight: 60
 url: /pt/java/search-and-get-text-from-pdf/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Pesquise texto em PDF e inspecione fragmentos extraídos em Java
+AlternativeHeadline: Pesquisar texto em PDF e inspecionar fragmentos extraídos em Java
 Abstract: Este artigo explica como pesquisar e extrair texto de documentos PDF usando Aspose.PDF for Java. Ele abrange TextAbsorber e TextFragmentAbsorber, incluindo extração baseada em região, buscas específicas por página, correspondência por regex e frase, inserção de hyperlink, inspeção de texto formatado e realce de fragmentos.
 ---
 Aspose.PDF for Java suporta extração de texto bruto e pesquisa em nível de fragmento com coordenadas, estilos e correspondência por expressões regulares.
@@ -20,8 +20,8 @@ Aspose.PDF for Java suporta extração de texto bruto e pesquisa em nível de fr
 Use este exemplo quando precisar de texto extraído simples de uma região de documento selecionada em todas as páginas.
 
 1. Abra o documento PDF de origem.
-1. Criar `TextExtractionOptions` e baseado em região `TextSearchOptions`.
-1. Executar `TextAbsorber` em todas as páginas e exiba o texto extraído.
+1. Crie `TextExtractionOptions` e baseado em região `TextSearchOptions`.
+1. Execute `TextAbsorber` em todas as páginas e exiba o texto extraído.
 
 ```java
 public static void textAbsorberSearch(Path inputFile) {
@@ -42,7 +42,7 @@ Use este exemplo quando a extração de texto simples deve ser limitada a uma p�
 
 1. Abra o documento PDF de origem.
 1. Configure as opções de extração de texto e pesquisa com a região-alvo.
-1. Executar `TextAbsorber` na página selecionada e exiba o resultado.
+1. Execute `TextAbsorber` na página selecionada e exiba o resultado.
 
 ```java
 public static void textAbsorberSearchPage(Path inputFile) {
@@ -62,7 +62,7 @@ public static void textAbsorberSearchPage(Path inputFile) {
 Use este exemplo quando precisar de conteúdo de texto juntamente com metadados de fonte, posição e cor.
 
 1. Abra o documento PDF de origem.
-1. Executar `TextFragmentAbsorber` em todas as páginas.
+1. Execute `TextFragmentAbsorber` em todas as páginas.
 1. Itere pelos fragmentos e exiba seus metadados.
 
 ```java
@@ -92,7 +92,7 @@ public static void textFragmentAbsorberSearch(Path inputFile) {
 Use este exemplo quando uma palavra-alvo deve ser encontrada somente em uma página selecionada.
 
 1. Abra o documento PDF de origem.
-1. Criar `TextFragmentAbsorber` com a frase alvo.
+1. Crie `TextFragmentAbsorber` com a frase alvo.
 1. Visite a página escolhida e retorne as posições dos fragmentos correspondentes.
 
 ```java
@@ -148,7 +148,7 @@ public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
 Use este exemplo quando a correspondência de frases deve ser limitada a uma região em uma página.
 
 1. Abra o documento PDF de origem.
-1. Criar `TextFragmentAbsorber` com a frase de destino e baseado em retângulo `TextSearchOptions`.
+1. Crie `TextFragmentAbsorber` com a frase de destino e baseado em retângulo `TextSearchOptions`.
 1. Visite a página e exiba as posições dos fragmentos correspondentes.
 
 ```java
@@ -219,13 +219,13 @@ public static void textFragmentAbsorberSearchListOfPhrases(Path inputFile) {
 }
 ```
 
-## Localizar texto e transformá-lo em hyperlinks
+## Localizar texto e transformá-lo em hiperlinks
 
 Use este exemplo quando palavras correspondentes devem ser destacadas e convertidas em links clicáveis.
 
 1. Abra o documento PDF de origem.
 1. Pesquise as palavras-alvo com a pesquisa regex habilitada.
-1. Atualize o estilo do texto, anexe hyperlinks e salve o PDF modificado.
+1. Atualize o estilo do texto, anexe hiperlinks e salve o PDF modificado.
 
 ```java
 public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
@@ -250,7 +250,7 @@ public static void textFragmentAbsorberSearchAndAddHyperlink(Path inputFile) {
 Use este exemplo quando precisar inspecionar fragmentos com base na formatação, como negrito ou texto invisível.
 
 1. Abra o documento PDF de origem.
-1. Executar `TextFragmentAbsorber` na página de destino.
+1. Execute `TextFragmentAbsorber` na página de destino.
 1. Verifique cada estilo de fragmento e exiba as entradas correspondentes.
 
 ```java
@@ -277,7 +277,7 @@ public static void textFragmentAbsorberSearchStyledText(Path inputFile) {
 Use este exemplo quando as correspondências de texto devem ser correlacionadas com imagens de página renderizadas para inspeção visual.
 
 1. Crie um dispositivo PNG com a resolução necessária.
-1. Pesquisar cada página com `TextFragmentAbsorber` e renderize a página para um fluxo de imagem.
+1. Pesquise cada página com `TextFragmentAbsorber` e renderize a página para um fluxo de imagem.
 1. Escreva as imagens de pré-visualização da página e forneça as coordenadas dos fragmentos para inspeção.
 
 ```java

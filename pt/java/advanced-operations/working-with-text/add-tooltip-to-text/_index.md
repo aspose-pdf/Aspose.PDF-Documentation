@@ -20,7 +20,7 @@ Aspose.PDF for Java permite que você adicione ajuda interativa colocando campos
 Use este exemplo quando o texto existente no PDF deve mostrar uma dica de ferramenta ao passar o mouse.
 
 1. Crie o PDF de exemplo e reabra‑o para edição.
-1. Pesquisar os fragmentos de texto de destino com `TextFragmentAbsorber`.
+1. Pesquise os fragmentos de texto de destino com `TextFragmentAbsorber`.
 1. Local `ButtonField` sobreposições no texto correspondido e atribuir texto de dica.
 1. Salve o documento atualizado.
 
@@ -72,7 +72,7 @@ Use este exemplo quando, ao passar o mouse sobre uma área de texto, deve ser re
 
 1. Crie o PDF de exemplo e reabra‑o para edição.
 1. Encontre o fragmento de texto de gatilho com `TextFragmentAbsorber`.
-1. Criar um oculto `TextBoxField` e um `ButtonField` com ações de entrada e saída.
+1. Crie um oculto `TextBoxField` e um `ButtonField` com ações de entrada e saída.
 1. Salve o PDF final.
 
 ```java

@@ -32,6 +32,6 @@ print "Update document information, please check output file."
 
 **Baixar Código em Execução**
 
-Download\u0412\u00A0**Definir Informações do Arquivo PDF (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0qualquer dos sites de codificação social mencionados abaixo:
+Download **Definir Informações do Arquivo PDF (Aspose.PDF)** de qualquer dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/SetPdfFileInfo/SetPdfFileInfo.py)

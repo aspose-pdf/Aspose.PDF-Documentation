@@ -7,7 +7,7 @@ url: /pt/java/get-document-window-and-page-display-properties-in-ruby/
 description: Recuperar e personalizar propriedades da janela de documento e exibição de página em arquivos PDF usando Ruby e Aspose.PDF.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Obter propriedades da janela de documento e exibição de página
+## Aspose.PDF - obter propriedades da janela de documento e exibição de página
 
 Para obter propriedades da janela de documento e exibição de página de um documento Pdf usando **Aspose.PDF Java for Ruby**, basta invocar o módulo **GetDocumentWindow**.
 
@@ -73,8 +73,8 @@ puts "PageLayout :-" + doc.getPageLayout().to_s
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
-## Baixar Código em Execução
+## Baixar o exemplo de código
 
-DownloadВ **Obtenha Propriedades da Janela do Documento e da Exibição da Página (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Download **Obtenha Propriedades da Janela do Documento e da Exibição da Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

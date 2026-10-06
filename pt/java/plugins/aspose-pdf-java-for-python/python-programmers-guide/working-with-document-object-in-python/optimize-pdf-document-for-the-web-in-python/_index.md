@@ -1,6 +1,6 @@
 ---
-title: Otimizar documento PDF para a Web em Python
-linktitle: Otimizar documento PDF para a Web em Python
+title: Otimizar documento PDF para a web em Python
+linktitle: Otimizar documento PDF para a web em Python
 type: docs
 weight: 60
 url: /pt/java/optimize-pdf-document-for-the-web-in-python/
@@ -26,6 +26,6 @@ print "Optimized PDF for the Web, please check output file."
 
 **Baixar Código em Execução**
 
-DownloadВ **Optimize PDF for Web (Aspose.PDF)**В deВ qualquer um dos sites de codificação social abaixo mencionados:
+Download **Optimize PDF for Web (Aspose.PDF)** de qualquer um dos sites de codificação social abaixo mencionados:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/Optimize/Optimize.py)

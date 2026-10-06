@@ -1,6 +1,6 @@
 ---
-title: Adicionar Selos de Texto ao PDF em Java
-linktitle: Selos de texto em Arquivo PDF
+title: Adicionar selos de texto ao PDF em Java
+linktitle: Selos de texto em arquivo PDF
 type: docs
 weight: 20
 url: /pt/java/text-stamps-in-the-pdf-file/
@@ -19,8 +19,8 @@ Use selos de texto quando precisar adicionar rótulos visíveis ou marcas d'águ
 
 Use este exemplo quando uma página deve exibir um TextStamp girado com estilo personalizado.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) e configure sua posição e aparência do texto.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) e configure sua posição e aparência do texto.
 1. Adicione o carimbo à página de destino e salve o documento.
 
 ```java

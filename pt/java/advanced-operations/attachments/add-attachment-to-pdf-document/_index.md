@@ -19,9 +19,9 @@ Para anexar um arquivo a um PDF, carregue o documento de origem, crie um `FileSp
 
 Use este exemplo quando um arquivo externo deve ser incorporado a um PDF existente.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para o arquivo que você deseja incorporar.
-1. Adicione a especificação do arquivo ao `EmbeddedFiles` coletar e salvar o documento atualizado.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para o arquivo que você deseja incorporar.
+1. Adicione a especificação do arquivo ao `EmbeddedFiles` coletar e salve o documento atualizado.
 
 ```java
 public static void addAttachments(Path inputFile, Path attachmentPath, Path outputFile) {

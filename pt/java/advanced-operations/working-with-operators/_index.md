@@ -1,6 +1,6 @@
 ---
-title: Trabalhe com Operadores PDF em Java
-linktitle: Trabalhar com Operadores
+title: Trabalhar com operadores PDF em Java
+linktitle: Trabalhar com operadores
 type: docs
 weight: 90
 url: /pt/java/working-with-operators/
@@ -10,12 +10,12 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Use operadores PDF de baixo nível para controle de fluxos de conteúdo em Java
+AlternativeHeadline: Usar operadores PDF de baixo nível para controle de fluxos de conteúdo em Java
 Abstract: Este artigo explica como trabalhar com operadores PDF de baixo nível no Aspose.PDF for Java. Aprenda como posicionar imagens com precisão, desenhar conteúdo XForm reutilizável e remover operadores gráficos das páginas PDF.
 aliases:
     - /pt/java/operators/
 ---
-## Introdução aos Operadores PDF e seu Uso
+## Introdução aos operadores PDF e seu uso
 
 Um operador é uma palavra‑chave PDF que especifica alguma ação que deve ser executada, como pintar uma forma gráfica na página. Uma palavra‑chave de operador se distingue de um objeto nomeado pela ausência de um caractere de barra inicial (2Fh). Operadores só têm significado dentro do fluxo de conteúdo.
 
@@ -27,10 +27,10 @@ Use esta página quando precisar de controle direto sobre um fluxo de conteúdo 
 
 Use operadores de baixo nível quando o posicionamento da imagem precisar ser controlado com precisão no nível do fluxo de conteúdo, em vez de através de APIs de layout de nível superior.
 
-1. Abrir o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obter o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obtenha o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Adicione o fluxo da imagem de entrada aos recursos da página e mantenha o nome do recurso retornado.
 1. Crie um [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) que define a área alvo e construa um [Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/) dos seus limites.
-1. Usar [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) para preservar o estado gráfico atual, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) para posicionar a imagem, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para pintá-lo, e [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para restaurar o estado anterior.
+1. Use [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) para preservar o estado gráfico atual, [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) para posicionar a imagem, [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para pintá-lo, e [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para restaurar o estado anterior.
 1. Salve o documento PDF atualizado.
 
 ```java
@@ -60,11 +60,11 @@ public static void addImageUsingPdfOperators(Path inputFile, Path imageFile, Pat
 }
 ```
 
-## Desenhe conteúdo XForm reutilizável em uma página
+## Desenhar conteúdo XForm reutilizável em uma página
 
 Use esta abordagem quando a mesma imagem ou gráfico deve ser renderizado mais de uma vez sem duplicar o recurso no arquivo PDF.
 
-1. Abrir o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/). obtenha o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/). e acesse seu [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/). obtenha o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/). e acesse seu [OperatorCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/operatorcollection/).
 1. Envolva o conteúdo da página existente com [GSave](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/gsave/) e [GRestore](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/grestore/) para que transformações posteriores não vazem para o fluxo de conteúdo original.
 1. Crie um [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) recurso, adicione a imagem aos recursos do formulário e use [ConcatenateMatrix](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/concatenatematrix/) mais [Do](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/do/) para desenhar a imagem dentro do formulário.
 1. Coloque o mesmo formulário em várias coordenadas de página adicionando uma matriz de translação e executando o nome do formulário com o `Do` operador.
@@ -111,8 +111,8 @@ private static void addFormAt(OperatorCollection pageContents, String formName, 
 
 Use este exemplo quando uma página contém operadores de desenho vetorial que devem ser removidos diretamente do fluxo de conteúdo.
 
-1. Abrir o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obter o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Iterar pelos operadores de conteúdo da página e coletar instâncias de [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/), e [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obtenha o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Itere pelos operadores de conteúdo da página e colete instâncias de [Stroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/stroke/), [ClosePathStroke](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/closepathstroke/), e [Fill](https://reference.aspose.com/pdf/java/com.aspose.pdf.operators/fill/).
 1. Exclua os operadores coletados do conteúdo da página e salve o PDF atualizado.
 
 Esta técnica remove apenas as instruções de desenho direcionadas. Se a página também contiver rótulos de texto relacionados ou outros operadores não gráficos, esses itens permanecem no fluxo de conteúdo e podem precisar de uma passagem de limpeza separada.

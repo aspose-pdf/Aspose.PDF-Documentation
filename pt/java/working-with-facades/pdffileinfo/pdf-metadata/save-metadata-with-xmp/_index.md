@@ -1,6 +1,6 @@
 ---
-title: Salvar Metadados com XMP
-linktitle: Salvar Metadados com XMP
+title: Salvar metadados com XMP
+linktitle: Salvar metadados com XMP
 type: docs
 weight: 30
 url: /pt/java/save-metadata-with-xmp/
@@ -11,19 +11,19 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Salvando Metadados PDF com XMP Usando Aspose.PDF for Java
+AlternativeHeadline: Salvando metadados PDF com XMP usando Aspose.PDF for Java
 Abstract: Aprenda como salvar metadados PDF com XMP usando Aspose.PDF for Java. O exemplo em Java atualiza os campos de metadados principais com PdfFileInfo e os grava novamente usando `saveNewInfoWithXmp()` para que o documento de saída armazene as informações no formato XMP.
 ---
 ## Salvar metadados com XMP
 
 Use este fluxo de trabalho quando precisar que as informações atualizadas do documento sejam armazenadas no formato XMP.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileInfo` objeto para o PDF de origem.
+1. Crie um objeto `PdfFileInfo` para o PDF de origem.
 2. Defina os campos de metadados que deseja atualizar, como assunto, título, palavras‑chave e criador.
-3. Chamar `saveNewInfoWithXmp()` com o caminho do arquivo de saída.
-4. Fechar o `PdfFileInfo` instância.
+3. Chame `saveNewInfoWithXmp()` com o caminho do arquivo de saída.
+4. Feche o `PdfFileInfo` instância.
 
 ### Exemplo em Java
 

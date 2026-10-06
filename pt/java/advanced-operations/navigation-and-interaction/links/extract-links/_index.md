@@ -19,9 +19,9 @@ Você pode inspecionar links de PDF iterando sobre as anotações da página e f
 
 Use este exemplo quando precisar da localização e das informações de página para anotações de link em uma página.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar através das anotações da página e filtrar as anotações de link.
-1. Ler o índice da página e o retângulo para cada link correspondente.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere através das anotações da página e filtre as anotações de link.
+1. Leia o índice da página e o retângulo para cada link correspondente.
 
 ```java
 public static void extractLinkAnnotation(Path inputFile) {
@@ -41,8 +41,8 @@ public static void extractLinkAnnotation(Path inputFile) {
 
 Use este exemplo quando precisar ler os URIs de destino de anotações de link da web.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Encontrar [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) objetos cuja ação é um [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Encontrar objetos [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) cuja ação é um [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
 1. Imprima o índice da página e o destino URI para cada hyperlink.
 
 ```java

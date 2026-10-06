@@ -1,6 +1,6 @@
 ---
-title: Suporte, Amplie e Contribua para Aspose.PDF em Struts
-linktitle: Suporte, Amplie e Contribua para Aspose.PDF em Struts
+title: Suporte, extensão e contribuição para Aspose.PDF em Struts
+linktitle: Suporte, extensão e contribuição para Aspose.PDF em Struts
 type: docs
 weight: 20
 url: /pt/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
@@ -21,7 +21,7 @@ Por favor, use qualquer um dos rastreadores de problemas do projeto a seguir:
 
 {{% /alert %}}
 
-## Estenda e Contribua
+## Estender e contribuir
 
 Aspose.PDF Java for Struts 1.3 é open source e seu código-fonte está disponível nos principais sites de colaboração de código listados abaixo. Os desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novos recursos ou aprimorando os existentes, para que outros também possam se beneficiar dele.
 

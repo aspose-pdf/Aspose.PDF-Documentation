@@ -10,7 +10,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Divida documentos PDF em Java desde o início, até o fim, ou em páginas individuais
+AlternativeHeadline: Dividir documentos PDF em Java desde o início, até o fim, ou em páginas individuais
 Abstract: Esta seção explica como dividir documentos PDF com PdfFileEditor em Aspose.PDF for Java. O conjunto de exemplos Java cobre a divisão a partir das primeiras páginas, a divisão a partir de uma página escolhida até o fim e a exportação de cada página de origem em seu próprio arquivo de saída.
 ---
 Use esta seção quando um documento precisar ser dividido em saídas menores para reutilização, distribuição ou processamento subsequente.

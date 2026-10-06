@@ -1,6 +1,6 @@
 ---
-title: Trabalhe com Artefatos PDF em Java
-linktitle: Trabalhar com Artefatos
+title: Trabalhar com artefatos PDF em Java
+linktitle: Trabalhar com artefatos
 type: docs
 weight: 170
 url: /pt/java/artifacts/

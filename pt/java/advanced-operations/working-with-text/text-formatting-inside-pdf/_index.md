@@ -41,7 +41,7 @@ public static void specifyLineSpacingSimpleCase(Path outputFile) throws Exceptio
     }
 ```
 
-## Compare os modos de espaçamento de linha com uma fonte personalizada
+## Comparar os modos de espaçamento de linha com uma fonte personalizada
 
 Use este exemplo quando o espaçamento entre linhas deve ser testado com diferentes modos de formatação para a mesma fonte.
 
@@ -114,7 +114,7 @@ private static TextFragment makeCharacterSpacingFragment(float spacing) {
 Use este exemplo quando o espaçamento entre caracteres deve ser aplicado dentro de um parágrafo de texto delimitado.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `TextParagraph` com um retângulo de destino e opções de quebra.
+1. Crie um `TextParagraph` com um retângulo de destino e opções de quebra.
 1. Anexe o fragmento de texto estilizado e salve o PDF.
 
 ```java
@@ -139,7 +139,7 @@ public static void characterSpacingUsingTextParagraph(Path outputFile) {
 }
 ```
 
-## Crie uma lista de marcadores usando HTML
+## Criar uma lista de marcadores usando HTML
 
 Use este exemplo quando a formatação de lista não ordenada deve ser gerada a partir de marcação HTML.
 
@@ -160,7 +160,7 @@ public static void createBulletListHtmlVersion(Path outputFile) {
 }
 ```
 
-## Crie uma lista numerada com HTML
+## Criar uma lista numerada com HTML
 
 Use este exemplo quando a formatação de lista ordenada deve ser produzida a partir da marcação HTML.
 
@@ -181,7 +181,7 @@ public static void createNumberedListHtmlVersion(Path outputFile) {
 }
 ```
 
-## Crie uma lista de marcadores com LaTeX
+## Criar uma lista de marcadores com LaTeX
 
 Use este exemplo quando a formatação de lista não ordenada deve ser renderizada a partir da marcação TeX.
 
@@ -205,7 +205,7 @@ public static void createBulletListLatexVersion(Path outputFile) {
 }
 ```
 
-## Crie uma lista numerada com LaTeX
+## Criar uma lista numerada com LaTeX
 
 Use este exemplo quando a formatação de lista ordenada deve ser renderizada a partir de marcação TeX.
 
@@ -229,12 +229,12 @@ public static void createNumberedListLatexVersion(Path outputFile) {
 }
 ```
 
-## Crie uma lista de marcadores com parágrafos de texto
+## Criar uma lista de marcadores com parágrafos de texto
 
 Use este exemplo quando uma lista de marcadores manual deve ser construída a partir de fragmentos de texto simples.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Construir um `TextParagraph` e acrescentar fragmentos prefixados por marcadores.
+1. Construa um `TextParagraph` e acrescentar fragmentos prefixados por marcadores.
 1. Adicione o parágrafo à página e salve o documento.
 
 ```java
@@ -266,12 +266,12 @@ public static void createBulletList(Path outputFile) {
 }
 ```
 
-## Crie uma lista numerada com parágrafos de texto
+## Criar uma lista numerada com parágrafos de texto
 
 Use este exemplo quando uma lista numerada manual deve ser criada a partir de fragmentos de texto simples.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Construir um `TextParagraph` e anexar fragmentos numerados.
+1. Construa um `TextParagraph` e anexe fragmentos numerados.
 1. Adicione o parágrafo à página e salve o documento.
 
 ```java
@@ -433,7 +433,7 @@ public static void addFootnoteWithCustomLineStyle(Path outputFile) {
 Use este exemplo quando a própria nota de rodapé deve conter conteúdo rico, como imagens, texto e tabelas.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Construir um `Note` objeto com uma imagem, texto embutido e uma tabela.
+1. Construa um objeto `Note` com uma imagem, texto embutido e uma tabela.
 1. Anexe-o ao fragmento de texto principal e salve o documento.
 
 ```java

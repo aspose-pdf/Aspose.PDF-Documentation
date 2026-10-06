@@ -1,6 +1,6 @@
 ---
-title: Criar Campo ComboBox
-linktitle: Criar Campo ComboBox
+title: Criar campo ComboBox
+linktitle: Criar campo ComboBox
 type: docs
 weight: 30
 url: /pt/java/create-combobox-field/
@@ -10,11 +10,11 @@ TechArticle: true
 AlternativeHeadline: Criar um campo combo box em um PDF com Java
 Abstract: Este artigo mostra como vincular um PDF existente, adicionar um campo combo box, preenchê-lo com itens e salvar o documento modificado usando a fachada FormEditor no Aspose.PDF for Java.
 ---
-Usar `FormEditorExamples.createComboBoxField(...)` para criar uma caixa de combinação e adicionar itens selecionáveis.
+Use `FormEditorExamples.createComboBoxField(...)` para criar uma caixa de combinação e adicionar itens selecionáveis.
 
 ## Criar um campo combo box
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
+1. Vincule o PDF de origem à fachada `FormEditor`.
 2. Adicione o campo de caixa de combinação com seu valor padrão e retângulo de destino.
 3. Adicione os itens selecionáveis da caixa de combinação.
 4. Salve o documento atualizado.

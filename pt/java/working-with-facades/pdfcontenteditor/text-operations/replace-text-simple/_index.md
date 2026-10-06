@@ -1,6 +1,6 @@
 ---
-title: Substituir Texto Simples
-linktitle: Substituir Texto Simples
+title: Substituir texto simples
+linktitle: Substituir texto simples
 type: docs
 weight: 10
 url: /pt/java/replace-text-simple/
@@ -12,9 +12,9 @@ Abstract: Este artigo mostra como vincular um PDF, configurar o escopo de substi
 ---
 ## Substituir texto em todo o documento
 
-1. Vincule o PDF de origem ao `PdfContentEditor` fachada.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
 2. Defina o escopo de substituição de texto para `ReplaceAll`.
-3. Chamar `replaceText(...)` com o texto de pesquisa e o texto de substituição.
+3. Chame `replaceText(...)` com o texto de pesquisa e o texto de substituição.
 4. Salve o documento PDF atualizado.
 
 ```java

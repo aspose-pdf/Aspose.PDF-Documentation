@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com o Objeto Document em Python
-linktitle: Trabalhar com o Objeto Document em Python
+title: Trabalhar com o objeto Document em Python
+linktitle: Trabalhar com o objeto Document em Python
 type: docs
 weight: 20
 url: /pt/java/working-with-document-object-in-python/

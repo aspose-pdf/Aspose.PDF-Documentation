@@ -1,6 +1,6 @@
 ---
-title: Adicionar Selos de Imagem ao PDF em Java
-linktitle: Selos de imagem em Arquivo PDF
+title: Adicionar selos de imagem ao PDF em Java
+linktitle: Selos de imagem em arquivo PDF
 type: docs
 weight: 10
 url: /pt/java/image-stamps-in-pdf-page/
@@ -19,8 +19,8 @@ Aspose.PDF for Java suporta carimbos de imagem como sobreposições e elementos 
 
 Use este exemplo quando uma página deve exibir um carimbo de imagem com posicionamento e opacidade personalizados.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) e configure sua aparência.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) e configure sua aparência.
 1. Adicione o selo à página e salve o documento.
 
 ```java
@@ -45,8 +45,8 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 
 Use este exemplo quando precisar ajustar a qualidade de renderização do carimbo de imagem.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) e defina o valor da qualidade.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) e defina o valor da qualidade.
 1. Adicione o carimbo à página e salve o resultado.
 
 ```java
@@ -60,12 +60,12 @@ public static void addImageStampWithQualityControl(Path inputFile, Path imageFil
 }
 ```
 
-## Use uma imagem como fundo de uma caixa flutuante
+## Usar uma imagem como fundo de uma caixa flutuante
 
 Use este exemplo quando uma imagem deve servir como plano de fundo de um contêiner de layout estilizado.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e acesse a página de destino.
-1. Criar um [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) com texto e configurações de borda.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e acesse a página de destino.
+1. Crie um [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) com texto e configurações de borda.
 1. Defina a imagem de fundo, adicione a caixa à página e salve o documento.
 
 ```java

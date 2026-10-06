@@ -12,7 +12,7 @@ Abstract: Este artigo mostra como vincular um PDF existente, adicionar um script
 ---
 ## Definir um script de campo
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
+1. Vincule o PDF de origem à fachada `FormEditor`.
 2. Adicione uma ação JavaScript inicial ao campo.
 3. Substitua‑o pelo texto de script atualizado.
 4. Salve o documento atualizado.

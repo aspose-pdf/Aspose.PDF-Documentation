@@ -1,6 +1,6 @@
 ---
-title: Obter, Atualizar e Expandir Marcadores PDF em Java
-linktitle: Obter, Atualizar e Expandir um Marcador
+title: Obter, atualizar e expandir marcadores PDF em Java
+linktitle: Obter, atualizar e expandir um marcador
 type: docs
 weight: 20
 url: /pt/java/get-update-and-expand-bookmark/
@@ -19,7 +19,7 @@ Aspose.PDF for Java expõe marcadores tanto através do modelo de contorno do do
 
 Use este exemplo quando precisar inspecionar as entradas de marcadores de nível superior no contorno do documento.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere pela coleção de contornos.
 1. Leia e imprima os valores de título, estilo e cor do marcador.
 
@@ -41,9 +41,9 @@ public static void getBookmarks(Path inputFile) {
 
 Este exemplo usa `PdfBookmarkEditor` para extrair títulos de marcadores, níveis, números de página e ações.
 
-1. Vincular o PDF de origem a [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
-1. Extrair a coleção de marcadores e iterar sobre ela.
-1. Imprimir o nível, título, número da página e informações de ação para cada marcador.
+1. Vincule o PDF de origem a [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. Extraia a coleção de marcadores e itere sobre ela.
+1. Imprima o nível, título, número da página e informações de ação para cada marcador.
 
 ```java
 public static void getBookmarkPageNumber(Path inputFile) {
@@ -70,7 +70,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 
 Use este exemplo quando precisar inspecionar itens de contorno de nível superior e aninhados.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere pelos contornos de nível superior e imprima suas propriedades.
 1. Detecte marcadores filhos, depois itere por eles e imprima suas propriedades.
 
@@ -103,7 +103,7 @@ public static void getChildBookmarks(Path inputFile) {
 
 Use este exemplo quando o título e o estilo de um marcador existente devem ser modificados.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Acesse o item de contorno alvo e seu marcador filho.
 1. Atualize as propriedades do marcador e salve o documento.
 
@@ -125,7 +125,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 
 Use este exemplo quando o painel de marcadores deve abrir e mostrar itens de contorno expandido quando o documento for exibido.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Defina o modo de página para usar contornos e marque cada item de contorno como aberto.
 1. Salve o documento atualizado.
 

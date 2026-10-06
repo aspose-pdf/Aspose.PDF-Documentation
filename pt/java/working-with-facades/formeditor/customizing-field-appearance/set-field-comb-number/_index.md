@@ -1,6 +1,6 @@
 ---
-title: Definir Número de Comb de Campo
-linktitle: Definir Número de Comb de Campo
+title: Definir número de Comb de campo
+linktitle: Definir número de Comb de campo
 type: docs
 weight: 60
 url: /pt/java/set-field-comb-number/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, definir um número 
 ---
 ## Definir um número de comb de campo
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `setFieldCombNumber(...)` para o campo de destino e valor comb.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `setFieldCombNumber(...)` para o campo de destino e valor comb.
 3. Salve o documento atualizado.
 
 ```java

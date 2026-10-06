@@ -17,13 +17,13 @@ Um exemplo "Hello World" é o caminho mais curto para entender o fluxo de trabal
 
 O exemplo em Java segue estes passos:
 
-1. Criar um [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objeto.
-1. Adicionar um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) para o documento.
-1. Criar um [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) com o texto `Hello, world!`.
+1. Crie um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) para o documento.
+1. Crie um [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) com o texto `Hello, world!`.
 1. Defina o [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/), fonte, tamanho da fonte, cor de fundo e cor de primeiro plano através do fragmento [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Criar um [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) para a página.
-1. Anexar o [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) para o [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Salvar o PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) para a página.
+1. Anexe o [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) para o [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Salve o PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 O seguinte código Java é baseado em `GetStartedExamples.java`.
 

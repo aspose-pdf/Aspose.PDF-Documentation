@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Páginas em Ruby
-linktitle: Trabalhar com Páginas em Ruby
+title: Trabalhar com páginas em Ruby
+linktitle: Trabalhar com páginas em Ruby
 type: docs
 weight: 20
 url: /pt/java/working-with-pages-in-ruby/

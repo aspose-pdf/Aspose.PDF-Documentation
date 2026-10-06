@@ -1,6 +1,6 @@
 ---
-title: Verificar Limites de Formas em Gráficos PDF com Java
-linktitle: Verificar Limites de Formas
+title: Verificar limites de formas em gráficos PDF com Java
+linktitle: Verificar limites de formas
 type: docs
 weight: 70
 url: /pt/java/checking-shape-bounds/
@@ -13,14 +13,14 @@ TechArticle: true
 AlternativeHeadline: Validar limites de formas de gráfico em arquivos PDF usando Java
 Abstract: Este artigo mostra como validar limites de formas em coleções de Graph usando Aspose.PDF for Java. Ele aborda habilitar a verificação estrita de limites, tentar adicionar uma forma fora do intervalo e tratar a exceção resultante, mantendo a gravação do documento.
 ---
-Usar `BoundsCheckMode` quando você precisa garantir que as formas cabem dentro de um contêiner de gráfico.
+Use `BoundsCheckMode` quando precisar garantir que as formas cabem dentro de um contêiner de gráfico.
 
 ## Validar limites da forma do gráfico
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicionar um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
-1. Criar um [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner e adicioná-lo à página.
-1. Criar o [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) forma e configure sua geometria.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
+1. Crie um [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner e adicione-o à página.
+1. Crie o [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) forma e configure sua geometria.
 1. Habilite a verificação estrita de limites e tente adicionar a forma à coleção de gráficos com `BoundsCheckMode`.
 1. Trate a exceção se a forma não couber.
 1. Salve o PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).

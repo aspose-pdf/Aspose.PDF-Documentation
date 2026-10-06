@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Exportar dados do AcroForm para FDF em Java
 Abstract: Este artigo mostra como vincular um formulário PDF e exportar seus dados de campo para um fluxo FDF com a fachada Form na Aspose.PDF for Java.
 ---
-Usar `FormExamples.exportFdf(...)` quando precisar serializar os dados de campo AcroForm como FDF.
+Use `FormExamples.exportFdf(...)` quando precisar serializar os dados de campo AcroForm como FDF.
 
 ```java
 public static void exportFdf(Path inputFile, Path outputFile) throws Exception {

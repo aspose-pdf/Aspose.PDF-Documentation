@@ -11,10 +11,10 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicione cabeçalhos, rodapés, números de página e marcas a PDFs em Java com PdfFileStamp
+AlternativeHeadline: Adicionar cabeçalhos, rodapés, números de página e marcas a PDFs em Java com PdfFileStamp
 Abstract: Esta seção explica como usar a fachada PdfFileStamp no Aspose.PDF for Java para adicionar conteúdo repetido a documentos PDF. Os exemplos atuais em Java cobrem carimbos de imagem, cabeçalhos de texto e imagem, rodapés de texto e imagem e várias opções de posicionamento de números de página.
 ---
-O Java `PdfFileStampExamples` classe demonstra os principais fluxos de trabalho de carimbo disponíveis através da API Facades.
+A classe Java `PdfFileStampExamples` demonstra os principais fluxos de trabalho de carimbo disponíveis através da API Facades.
 
 Use esta seção para aprender como:
 

@@ -1,13 +1,13 @@
 ---
-title: Adicionar Camadas ao Arquivo PDF em Ruby
-linktitle: Adicionar Camadas ao Arquivo PDF em Ruby
+title: Adicionar camadas ao arquivo PDF em Ruby
+linktitle: Adicionar camadas ao arquivo PDF em Ruby
 type: docs
 weight: 20
 url: /pt/java/add-layers-to-pdf-file-in-ruby/
 description: Aprenda como adicionar camadas a um arquivo PDF em Ruby usando Aspose.PDF para melhorar a estrutura do documento e o controle de visibilidade.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Adicionar Camadas
+## Aspose.PDF - adicionar camadas
 
 <ins> Para adicionar Camadas em documento PDF usando **Aspose.PDF Java for Ruby**, basta invocar o módulo **AddLayers**.
 
@@ -69,8 +69,8 @@ doc.save(data_dir + "Layers-Added.pdf")
 puts "Added Layers Successfully, please check the output file."
 ```
 
-## Baixar código em execução
+## Baixar o exemplo de código
 
-DownloadВ **Add Layers (Aspose.PDF)**В de qualquer um dos sites de codificação social abaixo mencionados:
+Download **Add Layers (Aspose.PDF)** de qualquer um dos sites de codificação social abaixo mencionados:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

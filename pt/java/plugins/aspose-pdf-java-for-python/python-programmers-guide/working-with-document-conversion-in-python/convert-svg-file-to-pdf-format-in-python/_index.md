@@ -7,7 +7,7 @@ url: /pt/java/convert-svg-file-to-pdf-format-in-python/
 description: Aprenda como converter arquivos SVG para formato PDF em Python usando Aspose.PDF para geração de documentos confiável.
 lastmod: "2026-10-06"
 ---
-## Como converter arquivo SVG para formato PDF em Python
+## Converter arquivo SVG para formato PDF em Python
 
 Para converter arquivo SVG para formato PDF usando **Aspose.PDF Java for Python**, basta invocar o módulo **SvgToPdf**.
 
@@ -23,7 +23,7 @@ doc.save(self.dataDir + "SVG1.pdf");
 print "Document has been converted successfully"
 ```
 
-## Baixar Código em Execução
+## Baixar o exemplo de código
 
 Baixar **Convert SVG to PDF (Aspose.PDF)** de qualquer um dos sites de código social mencionados abaixo:
 

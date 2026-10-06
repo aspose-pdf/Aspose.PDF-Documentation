@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Texto em Python
-linktitle: Trabalhar com Texto em Python
+title: Trabalhar com texto em Python
+linktitle: Trabalhar com texto em Python
 type: docs
 weight: 40
 url: /pt/java/working-with-text-in-python/

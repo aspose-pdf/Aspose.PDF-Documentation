@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Objeto de Documento em PHP
-linktitle: Trabalhar com Objeto de Documento em PHP
+title: Trabalhar com objeto de documento em PHP
+linktitle: Trabalhar com objeto de documento em PHP
 type: docs
 weight: 20
 url: /pt/java/working-with-document-object-in-php/

@@ -11,18 +11,18 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Criptografe arquivos PDF e defina permissões de usuário em Java
+AlternativeHeadline: Criptografar arquivos PDF e definir permissões de usuário em Java
 Abstract: Aprenda como criptografar um PDF com Aspose.PDF for Java. O conjunto de exemplos em Java abrange criptografia baseada em senha com privilégios restritos, criptografia focada em permissões e criptografia baseada em AES com tamanho de chave de 256 bits.
 ---
 ## Criptografar arquivo PDF
 
-Usar `PdfFileSecurity` quando você precisar proteger um PDF com senhas e regras de privilégios.
+Use `PdfFileSecurity` quando precisar proteger um PDF com senhas e regras de privilégios.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileSecurity` instância.
+1. Crie uma instância de `PdfFileSecurity`.
 2. Vincule o PDF de origem com `bindPdf`.
-3. Construa um `DocumentPrivilege` objeto que corresponde às ações permitidas.
+3. Construa um objeto `DocumentPrivilege` que corresponde às ações permitidas.
 4. Chame o apropriado `encryptFile` sobrecarga para o tamanho da chave e algoritmo que você precisa.
 5. Salve o arquivo protegido e feche o objeto.
 

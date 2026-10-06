@@ -11,10 +11,10 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Criptografe, descriptografe e controle permissões de PDF em Java com PdfFileSecurity
+AlternativeHeadline: Criptografar, descriptografar e controle permissões de PDF em Java com PdfFileSecurity
 Abstract: Esta seção explica como usar a fachada PdfFileSecurity no Aspose.PDF for Java para proteger documentos PDF programaticamente. Os exemplos atuais em Java abrangem criptografia baseada em senha, criptografia AES, descriptografia, alterações de senha e configuração de privilégios, com fluxos de trabalho diretos e no estilo try.
 ---
-O Java `PdfFileSecurityExamples` classe demonstra os principais fluxos de trabalho de segurança disponíveis através da API Facades.
+A classe Java `PdfFileSecurityExamples` demonstra os principais fluxos de trabalho de segurança disponíveis através da API Facades.
 
 Use esta seção para aprender como:
 

@@ -1,6 +1,6 @@
 ---
-title: Decorar Campo
-linktitle: Decorar Campo
+title: Decorar campo
+linktitle: Decorar campo
 type: docs
 weight: 10
 url: /pt/java/decorate-field/
@@ -12,7 +12,7 @@ Abstract: Este artigo mostra como vincular um PDF existente, configurar um FormF
 ---
 ## Decorar um campo
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
+1. Vincule o PDF de origem à fachada `FormEditor`.
 2. Configure um `FormFieldFacade` com as cores e alinhamento necessários.
 3. Passe a fachada para o editor e chame `decorateField(...)`.
 4. Salve o documento atualizado.

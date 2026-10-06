@@ -19,7 +19,7 @@ Aspose.PDF for Java permite mover páginas entre documentos ou reposicionar pág
 
 Use este exemplo quando uma única página deve ser removida do PDF de origem e salva em um documento separado.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie um documento de destino.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie um documento de destino.
 1. Adicione a página alvo ao destino e exclua-a da origem.
 1. Salve ambos os documentos.
 
@@ -39,7 +39,7 @@ public static void movePageFromOneDocumentToAnother(Path inputFile, Path sourceO
 
 Use este exemplo quando várias páginas devem ser transferidas do PDF de origem para um novo documento.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie o documento de destino.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie o documento de destino.
 1. Copie as páginas selecionadas para o documento de destino.
 1. Exclua as páginas movidas da origem e salve ambos os arquivos.
 
@@ -62,7 +62,7 @@ public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path s
 
 Use este exemplo quando uma página precisar ser reposicionada para um novo local no mesmo PDF.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Duplique a página de destino para a nova posição e remova a entrada da página original.
 1. Salve o documento reordenado.
 

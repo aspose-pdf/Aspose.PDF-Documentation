@@ -1,5 +1,5 @@
 ---
-title: Trabalhar com Formulários XFA
+title: Trabalhar com formulários XFA
 linktitle: Formulários XFA
 type: docs
 weight: 20
@@ -17,9 +17,9 @@ Formulários XFA podem ser convertidos para AcroForms padrão para que possam se
 
 ## Converter um formulário XFA dinâmico para um AcroForm
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Acessar o documento [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) e definir o necessário [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) propriedades.
-1. Salvar o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acesse o documento [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) e defina o necessário [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) propriedades.
+1. Salve o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
@@ -32,9 +32,9 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 ## Converter um formulário XFA com `ignoreNeedsRendering`
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Acessar o documento [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) e definir o necessário `ignoreNeedsRendering` e [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) propriedades.
-1. Salvar o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acesse o documento [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) e defina o necessário `ignoreNeedsRendering` e [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) propriedades.
+1. Salve o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void convertXfaFormWithIgnoreNeedsRendering(Path inputFile, Path outputFile) {

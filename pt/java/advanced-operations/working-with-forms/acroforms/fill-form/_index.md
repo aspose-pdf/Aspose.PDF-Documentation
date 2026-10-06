@@ -1,5 +1,5 @@
 ---
-title: Preencher AcroForm - Preencher Formulário PDF usando Java
+title: Preencher AcroForm - preencher formulário PDF usando Java
 linktitle: Preencher AcroForm
 type: docs
 weight: 20
@@ -15,9 +15,9 @@ Abstract: Este artigo explica como preencher campos AcroForm usando Aspose.PDF f
 ---
 O `Form` facade pode ser usado para automatizar o preenchimento de campos em um AcroForm existente.
 
-## Preencha os campos AcroForm com novos valores
+## Preencher os campos AcroForm com novos valores
 
-1. Abra o documento de formulário PDF com o [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada.
+1. Abra o documento de formulário PDF com a fachada [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 1. Itere pelos campos do formulário e atualize as entradas correspondentes com os valores fornecidos.
 1. Salve o documento PDF atualizado.
 

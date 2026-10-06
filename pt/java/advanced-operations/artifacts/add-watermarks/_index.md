@@ -1,6 +1,6 @@
 ---
 title: Adicionar marcas d'água ao PDF em Java
-linktitle: Adicionar Marca d'água
+linktitle: Adicionar marca d'água
 type: docs
 weight: 30
 url: /pt/java/add-watermarks/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Como adicionar marca d'água ao PDF com Java
+AlternativeHeadline: Adicionar marca d'água ao PDF com Java
 Abstract: Este artigo explica como adicionar, inspecionar e remover artefatos de marca d'água em documentos PDF usando Aspose.PDF for Java. Ele aborda a criação de uma marca d'água de texto com alinhamento, rotação, opacidade e configurações de plano de fundo, a inspeção de artefatos de marca d'água em uma página e a sua exclusão.
 ---
 Os artefatos de marca d'água permitem que você coloque marcas visuais persistentes em uma página sem misturá-las ao conteúdo principal do documento.
@@ -19,7 +19,7 @@ Os artefatos de marca d'água permitem que você coloque marcas visuais persiste
 
 Use este exemplo quando precisar inspecionar artefatos de marca d'água existentes e ler seu texto ou posição.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere sobre a coleção de artefatos da página de destino.
 1. Filtre artefatos de paginação de marca d'água e imprima seu texto e retângulos.
 
@@ -40,7 +40,7 @@ public static void extractWatermarkFromPdf(Path inputFile) {
 
 Use este exemplo quando a página deve exibir uma marca d'água de texto centralizada com rotação personalizada, opacidade e posicionamento de fundo.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie um [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) e configure seu estado de texto e configurações de posicionamento.
 1. Adicione a marca d'água à página e salve o arquivo de saída.
 
@@ -71,7 +71,7 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 
 Use esta abordagem quando os artefatos de marca d'água existentes devem ser removidos da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere pela coleção de artefatos da página em ordem reversa.
 1. Exclua artefatos de paginação cujo subtipo é marca d'água, então salve o documento.
 

@@ -1,6 +1,6 @@
 ---
-title: Obter e Definir Propriedades de Página PDF em Java
-linktitle: Obter e definir Propriedades de Página
+title: Obter e definir propriedades de página PDF em Java
+linktitle: Obter e definir propriedades de página
 type: docs
 weight: 90
 url: /pt/java/get-and-set-page-properties/
@@ -15,11 +15,11 @@ Abstract: Este artigo explica como inspecionar as propriedades da página usando
 ---
 Aspose.PDF for Java pode inspecionar a contagem de páginas, caixas de página, rotação e tipo de cor da página.
 
-## Obtenha a contagem de páginas
+## Obter a contagem de páginas
 
 Use este exemplo quando precisar ler o número total de páginas em um PDF.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Leia o tamanho da coleção de páginas.
 1. Exiba a contagem total de páginas.
 
@@ -31,13 +31,13 @@ public static void getPageCount(Path inputFile) {
 }
 ```
 
-## Obtenha a contagem de páginas antes de salvar
+## Obter a contagem de páginas antes de salvar
 
 Use este exemplo quando precisar saber quantas páginas o conteúdo gerado produzirá antes de escrever o arquivo.
 
-1. Crie um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione conteúdo a uma página.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione conteúdo a uma página.
 1. Processar os parágrafos para forçar o cálculo de layout.
-1. Ler a contagem de páginas resultante e exibi‑la.
+1. Leia a contagem de páginas resultante e exibi‑la.
 
 ```java
 public static void getPageCountWithoutSaving(Path inputFile) {
@@ -56,7 +56,7 @@ public static void getPageCountWithoutSaving(Path inputFile) {
 
 Use este exemplo quando precisar inspecionar todas as principais dimensões da caixa e os valores de rotação da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e acessar a página de destino.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e acesse a página de destino.
 1. Colete os valores da caixa da página em um mapa.
 1. Exiba as dimensões e as informações de rotação da página.
 
@@ -88,11 +88,11 @@ public static void getPageProperties(Path inputFile) {
 }
 ```
 
-## Obtenha o tipo de cor de cada página
+## Obter o tipo de cor de cada página
 
 Use este exemplo quando precisar identificar se as páginas são preto e branco, escala de cinza ou RGB.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere por todas as páginas e leia cada página [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
 1. Converta o valor do enum em texto legível e exiba o resultado.
 

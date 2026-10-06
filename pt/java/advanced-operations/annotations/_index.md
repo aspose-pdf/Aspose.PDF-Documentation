@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Como adicionar Anotações a PDF usando Java
+AlternativeHeadline: Adicionar anotações a PDF usando Java
 Abstract: Este artigo apresenta fluxos de trabalho de anotação de PDF no Aspose.PDF para Java. Ele abrange a adição, obtenção, exclusão e transferência de anotações, com tópicos agrupados para texto, marcação, interativo, forma, marca d'água, segurança e cenários de anotação relacionados à mídia.
 ---
 Anotações são elementos PDF interativos que permitem adicionar notas, destacar texto, desenhar formas, criar links, aplicar redações e enriquecer fluxos de trabalho de revisão de documentos em arquivos PDF existentes.

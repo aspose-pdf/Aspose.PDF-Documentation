@@ -1,6 +1,6 @@
 ---
-title: Manipular Tabelas em Documentos PDF Existentes
-linktitle: Manipular Tabelas
+title: Manipular tabelas em documentos PDF existentes
+linktitle: Manipular tabelas
 type: docs
 weight: 40
 url: /pt/java/manipulating-tables/
@@ -15,13 +15,13 @@ Abstract: Este artigo explica como manipular tabelas já presentes em documentos
 aliases:
     - /pt/java/manipulate-tables-in-existing-pdf/
 ---
-Usar `TableAbsorber` quando você precisa localizar tabelas existentes e atualizar seu conteúdo.
+Use `TableAbsorber` quando precisar localizar tabelas existentes e atualizar seu conteúdo.
 
 ## Substituir texto dentro de uma célula de tabela
 
 Use este exemplo quando o texto em uma célula detectada precisar ser atualizado sem reconstruir toda a tabela.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e visite a página com [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e visite a página com [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Valide se a tabela alvo e os fragmentos de texto da célula existem.
 1. Substitua o texto da célula e salve o documento atualizado.
 
@@ -45,11 +45,11 @@ public static void replaceCells(Path inputFile, Path outputFile) {
 }
 ```
 
-## Substitua uma tabela detectada por uma nova tabela
+## Substituir uma tabela detectada por uma nova tabela
 
 Use este exemplo quando a tabela original deve ser totalmente substituída por uma recém‑construída.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e detecte tabelas na página.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e detecte tabelas na página.
 1. Crie um novo [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) com a estrutura desejada.
 1. Substitua a tabela absorvida e salve o PDF de saída.
 

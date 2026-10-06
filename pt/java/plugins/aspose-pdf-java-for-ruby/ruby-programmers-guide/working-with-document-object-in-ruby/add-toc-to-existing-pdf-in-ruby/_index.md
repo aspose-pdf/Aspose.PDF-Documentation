@@ -7,7 +7,7 @@ url: /pt/java/add-toc-to-existing-pdf-in-ruby/
 description: Aprenda como adicionar um índice a um PDF existente em Ruby usando Aspose.PDF para melhorar a navegação do documento.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Adicionar TOC
+## Aspose.PDF - adicionar TOC
 
 <ins>Para adicionar TOC em documento Pdf usando **Aspose.PDF Java for Ruby**, basta invocar o módulo **AddToc**.
 
@@ -89,6 +89,6 @@ puts "Added TOC Successfully, please check the output file."
 
 ## <ins> **Baixar Código em Execução**
 
-BaixarВ **Add TOC (Aspose.PDF)**В de qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Add TOC (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addtoc.rb)

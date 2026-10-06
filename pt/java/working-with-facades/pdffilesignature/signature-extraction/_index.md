@@ -1,6 +1,6 @@
 ---
-title: Extração de Assinatura
-linktitle: Extração de Assinatura
+title: Extração de assinatura
+linktitle: Extração de assinatura
 type: docs
 weight: 50
 url: /pt/java/signature-extraction/
@@ -20,9 +20,9 @@ Use este Workflow quando precisar salvar o certificado associado a uma assinatur
 
 ### Etapas
 
-1. Criar um `PdfFileSignature` instância e associar o PDF assinado.
+1. Crie uma instância de `PdfFileSignature` e associe o PDF assinado.
 2. Selecione o nome da assinatura para inspecionar.
-3. Chamar `extractCertificate` para abrir o fluxo do certificado.
+3. Chame `extractCertificate` para abrir o fluxo do certificado.
 4. Copie os bytes do certificado para um arquivo de saída.
 5. Feche os recursos do fluxo e o objeto fachada.
 

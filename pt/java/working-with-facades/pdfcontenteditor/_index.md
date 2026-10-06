@@ -10,10 +10,10 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Edite conteúdo PDF e elementos interativos em Java com PdfContentEditor
+AlternativeHeadline: Editar conteúdo PDF e elementos interativos em Java com PdfContentEditor
 Abstract: Esta seção explica como usar a classe PdfContentEditor no Aspose.PDF for Java para fluxos de trabalho de PDF em nível de conteúdo. O conjunto atual de exemplos em Java abrange anotações, anexos, ações de documento, marcas de desenho, substituição de imagens, multimídia, carimbos, substituição de texto e preferências de visualização.
 ---
-O Java `PdfContentEditorExamples` A classe demonstra os principais fluxos de trabalho de edição de conteúdo expostos pela API Facades.
+A classe Java `PdfContentEditorExamples` demonstra os principais fluxos de trabalho de edição de conteúdo expostos pela API Facades.
 
 Use esta seção para aprender como:
 

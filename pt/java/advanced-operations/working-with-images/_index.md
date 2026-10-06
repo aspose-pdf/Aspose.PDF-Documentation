@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Imagens em PDF usando Java
-linktitle: Trabalhar com Imagens
+title: Trabalhar com imagens em PDF usando Java
+linktitle: Trabalhar com imagens
 type: docs
 weight: 40
 url: /pt/java/working-with-images/

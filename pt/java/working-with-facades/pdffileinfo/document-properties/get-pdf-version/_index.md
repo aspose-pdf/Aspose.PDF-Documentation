@@ -18,12 +18,12 @@ Abstract: Saiba como recuperar a versão do PDF com Aspose.PDF for Java. O exemp
 
 Use este fluxo de trabalho quando precisar verificar a compatibilidade do arquivo ou encaminhar um documento por meio de lógica de processamento específica por versão.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileInfo` objeto para o arquivo PDF.
-2. Chamada `getPdfVersion()` para recuperar a versão relatada.
+1. Crie um objeto `PdfFileInfo` para o arquivo PDF.
+2. Chame `getPdfVersion()` para recuperar a versão relatada.
 3. Use ou imprima o valor da versão.
-4. Fechar o `PdfFileInfo` instância.
+4. Feche o `PdfFileInfo` instância.
 
 ### Exemplo em Java
 

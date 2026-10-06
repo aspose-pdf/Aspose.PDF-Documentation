@@ -1,6 +1,6 @@
 ---
-title: Definir Alinhamento de Campo
-linktitle: Definir Alinhamento de Campo
+title: Definir alinhamento de campo
+linktitle: Definir alinhamento de campo
 type: docs
 weight: 20
 url: /pt/java/set-field-alignment/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, definir o alinhamen
 ---
 ## Definir alinhamento horizontal do campo
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `setFieldAlignment(...)` para o campo de destino e a constante de alinhamento desejada.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `setFieldAlignment(...)` para o campo de destino e a constante de alinhamento desejada.
 3. Salve o documento atualizado.
 
 ```java

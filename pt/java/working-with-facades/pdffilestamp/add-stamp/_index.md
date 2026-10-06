@@ -20,10 +20,10 @@ Use este fluxo de trabalho quando um carimbo baseado em imagem deve ser aplicado
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instância e vincule o PDF de origem.
-2. Criar um `Stamp` objeto.
-3. Vincular o carimbo a um arquivo de imagem com `bindImage`.
-4. Adicionar o selo ao documento com `addStamp`.
+1. Crie uma instância de `PdfFileStamp` e vincule o PDF de origem.
+2. Crie um objeto `Stamp`.
+3. Vincule o carimbo a um arquivo de imagem com `bindImage`.
+4. Adicione o selo ao documento com `addStamp`.
 5. Salve o resultado e feche o objeto fachada.
 
 ### Exemplo Java

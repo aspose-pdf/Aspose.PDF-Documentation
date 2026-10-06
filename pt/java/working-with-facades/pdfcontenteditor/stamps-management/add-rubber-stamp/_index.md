@@ -1,6 +1,6 @@
 ---
-title: Adicionar Carimbo de Borracha
-linktitle: Adicionar Carimbo de Borracha
+title: Adicionar carimbo de Borracha
+linktitle: Adicionar carimbo de Borracha
 type: docs
 weight: 10
 url: /pt/java/add-rubber-stamp/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF, criar uma anotação de carim
 ---
 ## Adicionar um carimbo de borracha
 
-1. Vincular o PDF de origem ao `PdfContentEditor` fachada.
-2. Chamada `createRubberStamp(...)` com o número da página, retângulo, título, conteúdos e cor.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
+2. Chame `createRubberStamp(...)` com o número da página, retângulo, título, conteúdos e cor.
 3. Salve o documento PDF atualizado.
 
 ```java

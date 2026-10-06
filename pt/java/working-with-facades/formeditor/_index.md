@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Crie e edite formulários PDF interativos em Java com a classe FormEditor
 Abstract: Esta seção explica como usar a fachada FormEditor no Aspose.PDF for Java para criar e atualizar formulários PDF interativos. Os exemplos em Java cobrem a criação de tipos de campo comuns, a modificação da estrutura dos campos, a personalização da aparência e a anexação de scripts ou ações de envio.
 ---
-O Java `FormEditorExamples` A classe demonstra os principais fluxos de trabalho de edição de campos disponíveis através da API Facades.
+A classe Java `FormEditorExamples` demonstra os principais fluxos de trabalho de edição de campos disponíveis através da API Facades.
 
 Use esta seção para aprender como:
 

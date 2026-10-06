@@ -1,6 +1,6 @@
 ---
-title: Concatenar Arquivos PDF em Python
-linktitle: Concatenar Arquivos PDF em Python
+title: Concatenar arquivos PDF em Python
+linktitle: Concatenar arquivos PDF em Python
 type: docs
 weight: 10
 url: /pt/java/concatenate-pdf-files-in-python/
@@ -29,6 +29,6 @@ print "New document has been saved, please check the output file"
 
 **Baixar Código em Execução**
 
-DownloadВ **Concatenate PDF Files (Aspose.PDF)**В deВ qualquer dos sites de codificação social mencionados abaixo:
+Download **Concatenate PDF Files (Aspose.PDF)** de qualquer dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)

@@ -1,6 +1,6 @@
 ---
-title: Preenchendo Campos de Formulário
-linktitle: Preenchendo Campos de Formulário
+title: Preenchendo campos de formulário
+linktitle: Preenchendo campos de formulário
 type: docs
 weight: 30
 url: /pt/java/filling-form-fields/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Preencher campos AcroForm em Java com a fachada Form
 Abstract: Esta seção cobre os fluxos de trabalho de preenchimento de formulários em Java implementados nos exemplos da fachada Form para Aspose.PDF for Java. O conjunto de exemplos inclui preenchimento de campos de texto, campos de caixa de seleção, campos de botão de opção, campos de caixa de listagem, campos de código de barras e um padrão reutilizável de preenchimento nome-valor construído sobre a mesma API `fillField(...)`.
 ---
-O Java `FormExamples` classe demonstra o principal `Form.fillField(...)` e `Form.fillBarcodeField(...)` workflows usados para preencher formulários PDF interativos.
+A classe Java `FormExamples` demonstra o principal `Form.fillField(...)` e `Form.fillBarcodeField(...)` workflows usados para preencher formulários PDF interativos.
 
 Use esta seção para ver como:
 

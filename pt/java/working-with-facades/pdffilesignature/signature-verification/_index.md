@@ -1,6 +1,6 @@
 ---
-title: Verificação de Assinatura
-linktitle: Verificação de Assinatura
+title: Verificação de assinatura
+linktitle: Verificação de assinatura
 type: docs
 weight: 90
 url: /pt/java/signature-verification/
@@ -20,10 +20,10 @@ Use este fluxo de trabalho quando precisar de uma validação rápida em um PDF 
 
 ### Etapas
 
-1. Criar um `PdfFileSignature` instância e vincule o PDF assinado.
+1. Crie uma instância de `PdfFileSignature` e vincule o PDF assinado.
 2. Selecione o nome da assinatura que deseja inspecionar.
-3. Chamar `verifySignature` para validar a assinatura.
-4. Chamar `coversWholeDocument` para verificar a cobertura.
+3. Chame `verifySignature` para validar a assinatura.
+4. Chame `coversWholeDocument` para verificar a cobertura.
 5. Feche o objeto fachada.
 
 ### Exemplo Java

@@ -1,13 +1,13 @@
 ---
-title: Adicionar TOC a PDF Existente em PHP
-linktitle: Adicionar TOC a PDF Existente em PHP
+title: Adicionar TOC a PDF existente em PHP
+linktitle: Adicionar TOC a PDF existente em PHP
 type: docs
 weight: 20
 url: /pt/java/add-toc-to-existing-pdf-in-php/
 description: Explore como adicionar um índice (TOC) a um documento PDF existente em PHP com Aspose.PDF para melhorar a navegação.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Adicionar TOC
+## Aspose.PDF - adicionar TOC
 
 Para adicionar TOC em um documento PDF usando **Aspose.PDF Java for PHP**, basta invocar a classe **AddToc**.
 
@@ -69,6 +69,6 @@ print "Added TOC Successfully, please check the output file.";
 
 **Baixar código em execução**
 
-Download\u0412\u00A0**Add TOC (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0qualquer um dos sites de codificação social abaixo mencionados:
+Download **Add TOC (Aspose.PDF)** de qualquer um dos sites de codificação social abaixo mencionados:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddToc.php)

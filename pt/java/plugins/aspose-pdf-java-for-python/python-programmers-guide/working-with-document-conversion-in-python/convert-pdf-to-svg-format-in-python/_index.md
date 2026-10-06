@@ -30,6 +30,6 @@ print "Document has been converted successfully"
 
 **Baixar Código em Execução**
 
-DownloadВ **Converter PDF para Formato SVG (Aspose.PDF)**В deВ qualquer dos sites de codificação social mencionados abaixo:
+Download **Converter PDF para Formato SVG (Aspose.PDF)** de qualquer dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToSvg/PdfToSvg.py)

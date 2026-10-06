@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Como Converter Imagens para PDF em Java
+AlternativeHeadline: Converter imagens para PDF em Java
 Abstract: Este artigo explica como converter vários formatos de imagem para PDF usando Aspose.PDF for Java. Ele cobre a inserção direta de imagens em uma nova página PDF, bem como opções de carregamento específicas para cada tipo de arquivo para entradas CGM, SVG e CDR.
 ---
 Aspose.PDF for Java pode converter muitos formatos de imagem raster e vetoriais em documentos PDF.
@@ -19,9 +19,9 @@ Aspose.PDF for Java pode converter muitos formatos de imagem raster e vetoriais 
 
 Use este exemplo quando uma imagem BMP deve ser inserida em um documento PDF.
 
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para armazenar o PDF de saída.
-1. Adicionar um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque o BMP com `page.addImage(...)`.
-1. Defina o retângulo de imagem de destino com [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) então o conteúdo raster preenche a área da página PDF.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio para armazenar o PDF de saída.
+1. Adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque o BMP com `page.addImage(...)`.
+1. Defina o retângulo de imagem de destino com [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/); assim, o conteúdo raster preenche a área da página PDF.
 1. Salve o arquivo PDF de saída.
 
 ```java
@@ -57,9 +57,9 @@ public static void convertCgmToPdf(Path inputFile, Path outputFile) {
 
 Use este exemplo quando uma imagem DICOM médica deve ser incorporada em um documento PDF.
 
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para a saída PDF.
-1. Criar um [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) objeto, defina o seu [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) para `Dicom`, e atribua o caminho do arquivo de origem.
-1. Adicionar um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e anexe a imagem DICOM à coleção de parágrafos da página.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio para a saída PDF.
+1. Crie um objeto [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), defina o seu [`ImageFileType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagefiletype/) para `Dicom`, e atribua o caminho do arquivo de origem.
+1. Adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e anexe a imagem DICOM à coleção de parágrafos da página.
 1. Salve o resultado como PDF.
 
 ```java
@@ -83,9 +83,9 @@ public static void convertDicomToPdf(Path inputFile, Path outputFile) {
 
 Use este exemplo quando um arquivo EMF deve ser convertido em PDF através do caminho principal de carregamento de EMF.
 
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e abra a fonte EMF como um fluxo binário.
-1. Adicionar um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e limpe suas margens para que a arte EMF possa ocupar toda a área da página.
-1. Criar um [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), vincule o fluxo EMF a ele e adicione-o à coleção de parágrafos da página.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio e abra a fonte EMF como um fluxo binário.
+1. Adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e limpe suas margens para que a arte EMF possa ocupar toda a área da página.
+1. Crie um [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/), vincule o fluxo EMF a ele e adicione-o à coleção de parágrafos da página.
 1. Salve o arquivo PDF de saída.
 
 ```java
@@ -114,9 +114,9 @@ public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOE
 Use este exemplo quando o conteúdo EMF deve ser convertido usando uma configuração alternativa ou fluxo de composição de página.
 
 1. Carregue a fonte EMF com Aspose.Imaging e renderize-a em um fluxo PNG em memória antes da colocação no PDF.
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Criar um [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) do fluxo de bytes intermediário e adicioná-lo à página.
-1. Salvar o PDF convertido.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio e adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Crie um [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) do fluxo de bytes intermediário e adicione-o à página.
+1. Salve o PDF convertido.
 
 ```java
 public static void convertEmfToPdf02(Path inputFile, Path outputFile) throws IOException {
@@ -141,8 +141,8 @@ public static void convertEmfToPdf02(Path inputFile, Path outputFile) throws IOE
 
 Use este exemplo quando uma imagem GIF deve ser adicionada a uma página PDF.
 
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para a saída PDF.
-1. Adicionar um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque o GIF com `page.addImage(...)`.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio para a saída PDF.
+1. Adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque o GIF com `page.addImage(...)`.
 1. Defina os limites de posicionamento com [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) para que a imagem preencha a área da página.
 1. Salve o PDF de saída.
 
@@ -162,9 +162,9 @@ public static void convertGifToPdf(Path inputFile, Path outputFile) {
 
 Use este exemplo quando uma imagem JPEG deve ser convertida em um PDF de uma página.
 
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para o PDF de saída.
-1. Adicionar um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e insira a imagem JPEG com `page.addImage(...)`.
-1. Usar [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) para controlar como a imagem raster é mapeada para as coordenadas da página.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio para o PDF de saída.
+1. Adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e insira a imagem JPEG com `page.addImage(...)`.
+1. Use [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) para controlar como a imagem raster é mapeada para as coordenadas da página.
 1. Salve o arquivo PDF gerado.
 
 ```java
@@ -183,10 +183,10 @@ public static void convertJpegToPdf(Path inputFile, Path outputFile) {
 
 Use este exemplo quando uma imagem PNG deve ser envolvida em um documento PDF.
 
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para a saída da conversão.
-1. Adicionar um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque a imagem PNG nele com `page.addImage(...)`.
-1. Usar [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) dimensionar a imagem em relação à tela da página.
-1. Salvar o arquivo de saída.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio para a saída da conversão.
+1. Adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque a imagem PNG nele com `page.addImage(...)`.
+1. Use [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) dimensionar a imagem em relação à tela da página.
+1. Salve o arquivo de saída.
 
 ```java
 public static void convertPngToPdf(Path inputFile, Path outputFile) {
@@ -221,9 +221,9 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
 
 Use este exemplo quando uma imagem TIFF deve ser convertida em PDF.
 
-1. Criar um vazio [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) para a saída PDF.
-1. Adicionar um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque a imagem TIFF com `page.addImage(...)`.
-1. Defina a área de posicionamento com [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) então o conteúdo TIFF é mapeado para as coordenadas da página.
+1. Crie um objeto [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) vazio para a saída PDF.
+1. Adicione um [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coloque a imagem TIFF com `page.addImage(...)`.
+1. Defina a área de posicionamento com [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/); assim, o conteúdo TIFF é mapeado para as coordenadas da página.
 1. Salve o resultado como PDF.
 
 ```java

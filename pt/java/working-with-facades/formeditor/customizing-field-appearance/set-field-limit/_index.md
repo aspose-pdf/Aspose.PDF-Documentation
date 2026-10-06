@@ -1,6 +1,6 @@
 ---
-title: Definir Limite de Campo
-linktitle: Definir Limite de Campo
+title: Definir limite de campo
+linktitle: Definir limite de campo
 type: docs
 weight: 50
 url: /pt/java/set-field-limit/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, definir o limite m�
 ---
 ## Definir um limite de caracteres de campo
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
-2. Chamar `setFieldLimit(...)` para o campo de destino e contagem máxima de caracteres.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `setFieldLimit(...)` para o campo de destino e contagem máxima de caracteres.
 3. Salve o documento atualizado.
 
 ```java

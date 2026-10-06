@@ -1,6 +1,6 @@
 ---
-title: Adicionar Rodapé ao PDF
-linktitle: Adicionar Rodapé ao PDF
+title: Adicionar rodapé ao PDF
+linktitle: Adicionar rodapé ao PDF
 type: docs
 weight: 10
 url: /pt/java/add-footer/
@@ -16,11 +16,11 @@ Abstract: Saiba como adicionar conteúdo de rodapé a documentos PDF com Aspose.
 ---
 ## Adicionar rodapé ao PDF
 
-Usar `PdfFileStamp` quando você precisa de conteúdo de rodapé repetido em todas as páginas de um documento.
+Use `PdfFileStamp` quando precisar de conteúdo de rodapé repetido em todas as páginas de um documento.
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instância e vincular o PDF de origem.
+1. Crie uma instância de `PdfFileStamp` e vincule o PDF de origem.
 2. Construa o conteúdo do rodapé como `FormattedText` ou um fluxo de imagem.
 3. Chame o apropriado `addFooter` sobrecarga.
 4. Salve o arquivo atualizado e feche o objeto facade.

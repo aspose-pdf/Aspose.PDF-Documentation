@@ -10,16 +10,16 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicione cabeçalhos e rodapés a arquivos PDF com Java
+AlternativeHeadline: Adicionar cabeçalhos e rodapés a arquivos PDF com Java
 Abstract: Este artigo mostra como adicionar cabeçalhos e rodapés a documentos PDF usando Aspose.PDF for Java. Ele cobre texto, numeração de páginas, HTML, imagem, tabela e conteúdo de cabeçalho e rodapé baseado em LaTeX.
 ---
-Aspose.PDF for Java permite que você atribua `HeaderFooter` objetos em cada página e preenchê-los com diferentes tipos de conteúdo.
+Aspose.PDF for Java permite que você atribua objetos `HeaderFooter` em cada página e preenchê-los com diferentes tipos de conteúdo.
 
 ## Adicionar cabeçalhos e rodapés de texto
 
 Use este exemplo quando precisar de conteúdo de texto simples no topo e na parte inferior de cada página.
 
-1. Criar [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos e adicionar fragmentos de texto.
+1. Crie objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) e adicione fragmentos de texto.
 1. Configure as margens para o cabeçalho e rodapé.
 1. Aplique-os em cada página do PDF de origem e salve o resultado.
 
@@ -51,7 +51,7 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 
 Use este exemplo quando o cabeçalho ou rodapé deve exibir o número da página atual e o total de páginas.
 
-1. Criar [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos com marcadores de numeração de página.
+1. Crie objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) com marcadores de numeração de página.
 1. Configure as margens para ambos os objetos.
 1. Aplique-os a cada página e salve o PDF atualizado.
 
@@ -83,7 +83,7 @@ public static void usingHeaderAndFooterForPageNumbering(Path inputFile, Path out
 
 Use este exemplo quando o conteúdo do cabeçalho e do rodapé precisar incluir formatação HTML inline.
 
-1. Criar [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) objetos e adicionar [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) conteúdo.
+1. Crie objetos [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) e adicione [HtmlFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlfragment/) conteúdo.
 1. Configure as margens para posicionamento.
 1. Atribua o cabeçalho e o rodapé a cada página e salve o documento.
 
@@ -115,7 +115,7 @@ public static void addHeaderAndFooterAsHtml(Path inputFile, Path outputFile) {
 
 Use este exemplo quando o cabeçalho e o rodapé devem exibir uma imagem em cada página.
 
-1. Criar [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) objetos e adicioná-los aos contêineres de cabeçalho e rodapé.
+1. Crie objetos [Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) e adicione-os aos contêineres de cabeçalho e rodapé.
 1. Configure as margens e atribua os contêineres a cada página.
 1. Salve o PDF atualizado.
 
@@ -150,7 +150,7 @@ public static void addHeaderAndFooterAsImage(Path inputFile, Path imageFile, Pat
 Use este exemplo quando o conteúdo do cabeçalho e rodapé deve usar layout de tabela e estilo de texto.
 
 1. Crie os estilos de texto necessários e os objetos de tabela.
-1. Adicionar as tabelas a [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) contêineres.
+1. Adicione as tabelas a [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) contêineres.
 1. Aplique o cabeçalho e o rodapé em cada página e salve o documento.
 
 ```java
@@ -195,7 +195,7 @@ public static void addHeaderAndFooterAsTable(Path inputFile, Path outputFile) {
 Use este exemplo quando o cabeçalho e o rodapé devem renderizar conteúdo TeX ou LaTeX.
 
 1. Abra o PDF de origem e determine a contagem total de páginas.
-1. Criar [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) conteúdo para o cabeçalho e rodapé de cada página.
+1. Crie [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) conteúdo para o cabeçalho e rodapé de cada página.
 1. Atribua o conteúdo e salve o documento.
 
 ```java

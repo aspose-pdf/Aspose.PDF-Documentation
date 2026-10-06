@@ -19,7 +19,7 @@ O exemplo em Java cria tabelas PDF a partir de dados CSV sem depender de bibliot
 
 Use este exemplo quando colunas CSV selecionadas devem ser transformadas em uma tabela PDF estilizada.
 
-1. Criar um [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) e configure suas bordas.
+1. Crie um [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) e configure suas bordas.
 1. Detecte os índices de coluna necessários a partir da linha de cabeçalho CSV.
 1. Adicione a linha de cabeçalho e o número solicitado de linhas de dados, então retorne a tabela.
 
@@ -58,7 +58,7 @@ Use este exemplo quando a entrada CSV deve ser renderizada como um documento de 
 
 1. Leia as linhas CSV do arquivo de entrada.
 1. Visualize um subconjunto das linhas analisadas no console.
-1. Criar um PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), adicione a tabela gerada, e salve o arquivo de saída.
+1. Crie um PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/), adicione a tabela gerada, e salve o arquivo de saída.
 
 ```java
 public static void createPdfFromCsv(Path inputFile, Path outputFile, int maxRows) throws Exception {
@@ -103,7 +103,7 @@ private static int[] findColumns(String[] header, String... names) {
 
 Use este auxiliar quando a fonte CSV deve ser carregada na memória antes da geração da tabela.
 
-1. Ler todas as linhas do arquivo de entrada.
+1. Leia todas as linhas do arquivo de entrada.
 1. Divida cada linha com o auxiliar de analisador CSV.
 1. Retorne os valores de linha coletados.
 
@@ -117,7 +117,7 @@ private static List<String[]> readCsv(Path inputFile) throws Exception {
 }
 ```
 
-## Divida uma linha CSV em valores
+## Dividir uma linha CSV em valores
 
 Use este helper quando uma linha CSV pode conter valores entre aspas e caracteres de aspas escapados.
 

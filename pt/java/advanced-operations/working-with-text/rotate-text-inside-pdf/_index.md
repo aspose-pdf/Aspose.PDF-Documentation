@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Rotacione fragmentos de texto e parágrafos em documentos PDF com Java
+AlternativeHeadline: Rotacionar fragmentos de texto e parágrafos em documentos PDF com Java
 Abstract: Este artigo explica como girar texto em documentos PDF usando Aspose.PDF for Java. Ele mostra como girar fragmentos de texto individuais, criar parágrafos contendo linhas giradas e girar parágrafos de texto completos para diferentes cenários de layout.
 ---
 Aspose.PDF for Java permite girar fragmentos de texto individuais, bem como parágrafos de texto completos.
@@ -60,7 +60,7 @@ public static void rotateTextInsidePdf1(Path outputFile) {
 Use este exemplo quando um parágrafo deve conter linhas normais e giradas.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `TextParagraph` e anexar fragmentos de texto com diferentes configurações de rotação.
+1. Crie um `TextParagraph` e anexe fragmentos de texto com diferentes configurações de rotação.
 1. Adicione o parágrafo à página e salve o documento.
 
 ```java
@@ -137,7 +137,7 @@ public static void rotateTextInsidePdf3(Path outputFile) {
 Use este exemplo quando o bloco inteiro de parágrafos deve ser rotacionado enquanto cada linha mantém o estilo compartilhado.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Construir vários `TextParagraph` objetos com rotação ao nível do parágrafo.
+1. Construa vários objetos `TextParagraph` com rotação ao nível do parágrafo.
 1. Crie as linhas com um método auxiliar compartilhado, anexe-as e salve o documento.
 
 ```java

@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Texto em Jython
-linktitle: Trabalhar com Texto em Jython
+title: Trabalhar com texto em Jython
+linktitle: Trabalhar com texto em Jython
 type: docs
 weight: 40
 url: /pt/java/working-with-text-in-jython/

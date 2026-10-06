@@ -1,6 +1,6 @@
 ---
-title: Personalizando a Aparência do Campo
-linktitle: Personalizando a Aparência do Campo
+title: Personalizando a aparência do campo
+linktitle: Personalizando a aparência do campo
 type: docs
 weight: 30
 url: /pt/java/customizing-field-appearance/

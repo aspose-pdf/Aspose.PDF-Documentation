@@ -19,7 +19,7 @@ Use a coleção de páginas do documento quando precisar remover uma ou mais pá
 
 Use este exemplo quando precisar remover uma página pelo seu índice.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Exclua a página alvo da coleção de páginas.
 1. Salve o documento atualizado.
 
@@ -36,7 +36,7 @@ public static void deletePage(Path inputFile, Path outputFile) {
 
 Use este exemplo quando várias páginas precisam ser removidas em uma única operação.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Passe os índices de página a serem excluídos da coleção de páginas.
 1. Salve o PDF modificado.
 

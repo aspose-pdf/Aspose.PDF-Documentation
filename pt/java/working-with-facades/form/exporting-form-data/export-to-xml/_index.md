@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Exportar dados do AcroForm para XML em Java
 Abstract: Este artigo mostra como vincular um formulário PDF e exportar seus valores de campo para um fluxo XML com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.exportXml(...)` para salvar os dados do campo de formulário como XML.
+Use `FormExamples.exportXml(...)` para salvar os dados do campo de formulário como XML.
 
 ```java
 public static void exportXml(Path inputFile, Path outputFile) throws Exception {

@@ -1,6 +1,6 @@
 ---
-title: Extrair Tabelas de PDF em Java
-linktitle: Extrair Tabela
+title: Extrair tabelas de PDF em Java
+linktitle: Extrair tabela
 type: docs
 weight: 20
 url: /pt/java/extracting-table/
@@ -15,13 +15,13 @@ Abstract: Este artigo explica como extrair tabelas de documentos PDF usando Aspo
 aliases:
     - /pt/java/extract-table-from-existing-pdf-document/
 ---
-Use `TableAbsorber` quando você precisar detectar estruturas de tabela em um PDF existente e ler seu conteúdo.
+Use `TableAbsorber` quando precisar detectar estruturas de tabela em um PDF existente e ler seu conteúdo.
 
 ## Extrair texto de tabelas detectadas
 
 Use este exemplo quando precisar localizar tabelas em cada página e coletar o texto de suas células.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Visitar cada página com [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
 1. Itere através de tabelas absorvidas, linhas e células e, em seguida, gere o texto extraído.
 

@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Rotacione páginas PDF com Java
+AlternativeHeadline: Rotacionar páginas PDF com Java
 Abstract: Este artigo explica como rotacionar páginas PDF usando Aspose.PDF for Java. O exemplo percorre todas as páginas de um documento, aplica uma rotação de 90 graus e salva o PDF atualizado.
 ---
 Use a API de rotação de página quando precisar mudar a orientação em uma ou mais páginas.
@@ -19,9 +19,9 @@ Use a API de rotação de página quando precisar mudar a orientação em uma ou
 
 Use este exemplo quando todas as páginas do documento devem ser giradas no sentido horário.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar por todos [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) objetos e definir o valor de rotação.
-1. Salvar o PDF atualizado.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere por todos objetos [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e defina o valor de rotação.
+1. Salve o PDF atualizado.
 
 ```java
 public static void rotatePage(Path inputFile, Path outputFile) {

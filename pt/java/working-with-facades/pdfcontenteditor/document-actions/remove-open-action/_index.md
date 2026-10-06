@@ -1,6 +1,6 @@
 ---
-title: Remover Ação de Abertura
-linktitle: Remover Ação de Abertura
+title: Remover ação de abertura
+linktitle: Remover ação de abertura
 type: docs
 weight: 20
 url: /pt/java/remove-open-action/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF, remover a ação de abertura 
 ---
 ## Remover a ação de abertura de documento
 
-1. Vincule o PDF de origem ao `PdfContentEditor` fachada.
-2. Chamar `removeDocumentOpenAction()`.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
+2. Chame `removeDocumentOpenAction()`.
 3. Salve o documento PDF atualizado.
 
 ```java

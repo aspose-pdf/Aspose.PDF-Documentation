@@ -7,7 +7,7 @@ url: /pt/java/set-pdf-file-information-in-php/
 description: Aprenda como definir várias propriedades de arquivo, como metadados, para um documento PDF em PHP usando Aspose.PDF.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Definir informações de arquivo PDF
+## Aspose.PDF - definir informações de arquivo PDF
 
 Para atualizar as informações do documento Pdf usando **Aspose.PDF Java for PHP**, basta invocar a classe **SetPdfFileInfo**.
 
@@ -37,6 +37,6 @@ print "Update document information, please check output file.";
 
 **Baixar Código em Execução**
 
-DownloadВ **Definir Informações do Arquivo PDF (Aspose.PDF)**В de qualquer um dos sites de desenvolvimento social mencionados abaixo:
+Download **Definir Informações do Arquivo PDF (Aspose.PDF)** de qualquer um dos sites de desenvolvimento social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/SetPdfFileInfo.php)

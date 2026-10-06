@@ -1,6 +1,6 @@
 ---
-title: Guia para Programadores Ruby
-linktitle: Guia para Programadores Ruby
+title: Guia para programadores Ruby
+linktitle: Guia para programadores Ruby
 type: docs
 weight: 20
 url: /pt/java/ruby-programmers-guide/

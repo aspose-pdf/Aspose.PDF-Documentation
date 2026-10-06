@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Definir o valor de um campo de caixa de lista em um formulário PDF com Java
 Abstract: Este artigo mostra como vincular um formulário PDF, definir o valor de um campo de caixa de lista e salvar o documento atualizado com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.fillListBoxFields(...)` para preencher um campo de caixa de lista.
+Use `FormExamples.fillListBoxFields(...)` para preencher um campo de caixa de lista.
 
 ```java
 public static void fillListBoxFields(Path inputFile, Path outputFile) {

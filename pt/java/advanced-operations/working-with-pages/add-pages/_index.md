@@ -19,7 +19,7 @@ Aspose.PDF for Java permite inserir páginas em branco ou importar páginas de o
 
 Use este exemplo quando precisar adicionar uma página em branco no meio de um PDF existente.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Insira uma nova página na posição de destino na coleção de páginas.
 1. Salve o documento atualizado.
 
@@ -36,8 +36,8 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 
 Use este exemplo quando precisar estender o documento com uma nova página em branco ao final.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicionar uma nova página ao final da coleção de páginas.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione uma nova página ao final da coleção de páginas.
 1. Salve o PDF modificado.
 
 ```java

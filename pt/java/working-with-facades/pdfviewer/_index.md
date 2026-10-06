@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Decodifique páginas PDF e inspecione dados do visualizador em Java com PdfViewer
 Abstract: Esta seção explica como usar a fachada PdfViewer no Aspose.PDF for Java para tarefas de decodificação de páginas e inspeção relacionada ao visualizador. Os exemplos atuais em Java cobrem a renderização de todas as páginas em imagens, a decodificação de uma página específica e a inspeção da contagem de páginas, tipo de coordenada, resolução e configurações do visualizador vinculadas.
 ---
-O Java `PdfViewerExamples` A classe demonstra os principais fluxos de trabalho do visualizador disponíveis através da API Facades.
+A classe Java `PdfViewerExamples` demonstra os principais fluxos de trabalho do visualizador disponíveis através da API Facades.
 
 ## Decodificar todas as páginas do PDF
 
@@ -21,9 +21,9 @@ Use este fluxo de trabalho quando cada página do PDF de origem deve ser renderi
 
 ### Etapas
 
-1. Criar e configurar um `PdfViewer` instância.
-2. Vincular o PDF de origem com `bindPdf`.
-3. Chamar `decodeAllPages()` para renderizar o documento em um `BufferedImage` matriz.
+1. Crie e configure uma instância de `PdfViewer`.
+2. Vincule o PDF de origem com `bindPdf`.
+3. Chame `decodeAllPages()` para renderizar o documento em um `BufferedImage` matriz.
 4. Salve cada página decodificada em um arquivo de imagem de saída.
 5. Feche o arquivo PDF vinculado.
 
@@ -50,9 +50,9 @@ Use este fluxo de trabalho quando apenas uma página precisar ser renderizada pa
 
 ### Etapas
 
-1. Criar e configurar um `PdfViewer` instância.
+1. Crie e configure uma instância de `PdfViewer`.
 2. Vincule o PDF de origem.
-3. Chamar `decodePage()` para a página que você deseja renderizar.
+3. Chame `decodePage()` para a página que você deseja renderizar.
 4. Salve a página decodificada em um arquivo de imagem de saída.
 5. Feche o visualizador.
 
@@ -76,7 +76,7 @@ Use este fluxo de trabalho quando precisar de informações do documento relacio
 
 ### Etapas
 
-1. Criar e configurar um `PdfViewer` instância.
+1. Crie e configure uma instância de `PdfViewer`.
 2. Vincule o PDF de origem.
 3. Leia a contagem de páginas, o tipo de coordenada e a resolução de renderização.
 4. Use ou imprima os valores recuperados.
@@ -104,7 +104,7 @@ Use este fluxo de trabalho quando precisar confirmar ou ajustar o comportamento 
 
 ### Etapas
 
-1. Criar e configurar um `PdfViewer` instância.
+1. Crie e configure uma instância de `PdfViewer`.
 2. Vincule o PDF de origem.
 3. Defina opções do visualizador, como redimensionamento automático, rotação automática e visibilidade da caixa de diálogo de impressão.
 4. Leia as configurações do visualizador ativo e a contagem de páginas.

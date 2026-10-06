@@ -1,6 +1,6 @@
 ---
-title: Adicionar Números de Página ao PDF em Java
-linktitle: Adicionar Número de Página
+title: Adicionar Números de página ao PDF em Java
+linktitle: Adicionar número de página
 type: docs
 weight: 30
 url: /pt/java/add-page-number/
@@ -15,12 +15,12 @@ Abstract: Este artigo explica como adicionar carimbos de número de página usan
 ---
 ## Adicionar um carimbo de número de página
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crie o [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) objeto.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie o objeto [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Configure a colocação do selo necessária e as opções de numeração.
 1. Defina as opções de formatação de texto necessárias, incluindo [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) e [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. Adicione o configurado [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) para o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Salvar o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Salve o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addPageNumStamp(Path inputFile, Path outputFile) {

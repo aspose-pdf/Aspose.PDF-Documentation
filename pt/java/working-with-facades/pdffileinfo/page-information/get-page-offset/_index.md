@@ -20,11 +20,11 @@ Use este fluxo de trabalho quando precisar entender como o conteúdo da página 
 
 ### Etapas
 
-1. Criar um `PdfFileInfo` objeto para o PDF de entrada.
-2. Chamar `getPageXOffset` e `getPageYOffset` para a página de destino.
+1. Crie um objeto `PdfFileInfo` para o PDF de entrada.
+2. Chame `getPageXOffset` e `getPageYOffset` para a página de destino.
 3. Converta os valores em pontos para polegadas dividindo por `72.0`.
 4. Use ou imprima os valores convertidos.
-5. Fechar o `PdfFileInfo` instância.
+5. Feche o `PdfFileInfo` instância.
 
 ### Exemplo Java
 

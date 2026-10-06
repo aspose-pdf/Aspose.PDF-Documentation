@@ -1,6 +1,6 @@
 ---
-title: Renomear Campo
-linktitle: Renomear Campo
+title: Renomear campo
+linktitle: Renomear campo
 type: docs
 weight: 50
 url: /pt/java/rename-field/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, renomear um campo e
 ---
 ## Renomear um campo
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
-2. Chamar `renameField(...)` com o nome do campo atual e o novo nome do campo.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `renameField(...)` com o nome do campo atual e o novo nome do campo.
 3. Salve o documento atualizado.
 
 ```java

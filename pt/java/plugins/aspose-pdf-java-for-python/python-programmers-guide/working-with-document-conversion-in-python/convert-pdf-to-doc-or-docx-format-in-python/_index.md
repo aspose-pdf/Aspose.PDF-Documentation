@@ -19,6 +19,6 @@ print "Document has been converted successfully"
 
 **Baixar Código em Execução**
 
-Baixar\u0412\u00A0**Converter PDF para DOC ou DOCX (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Converter PDF para DOC ou DOCX (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToDoc/PdfToDoc.py)

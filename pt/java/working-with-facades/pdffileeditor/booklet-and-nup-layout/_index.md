@@ -10,7 +10,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Crie layouts de página de livreto e N-Up para arquivos PDF em Java
+AlternativeHeadline: Criar layouts de página de livreto e N-Up para arquivos PDF em Java
 Abstract: Esta seção aborda fluxos de trabalho de imposição de página disponíveis através do PdfFileEditor em Aspose.PDF for Java. Os exemplos em Java mostram como gerar saída de livreto e layouts 2x2 N-Up, incluindo variantes que retornam booleano que permitem verificar se a operação foi bem-sucedida.
 ---
 Use a fachada PdfFileEditor quando precisar reformatar um PDF existente para impressão ou revisão compacta.

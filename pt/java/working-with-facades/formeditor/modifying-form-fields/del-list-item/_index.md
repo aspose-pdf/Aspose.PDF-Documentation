@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, remover um item esp
 ---
 ## Excluir um item de um campo de lista
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `delListItem(...)` para o campo de destino e o item a remover.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `delListItem(...)` para o campo de destino e o item a remover.
 3. Salve o documento atualizado.
 
 ```java

@@ -1,6 +1,6 @@
 ---
-title: Importar e Exportar Dados de Form
-linktitle: Importar e Exportar Dados de Form
+title: Importar e exportar dados de Form
+linktitle: Importar e exportar dados de Form
 type: docs
 weight: 80
 url: /pt/java/import-export-form-data/
@@ -16,7 +16,7 @@ Aspose.PDF for Java suporta vários formatos comuns de troca de dados para formu
 
 Use este exemplo quando os valores do formulário são armazenados em um arquivo XML e devem ser aplicados a um formulário PDF.
 
-1. Criar um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincular o PDF de origem.
+1. Crie um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincule o PDF de origem.
 1. Abra o fluxo de entrada XML e importe os dados para o formulário.
 1. Salve o documento PDF atualizado.
 
@@ -37,9 +37,9 @@ public static void importDataFromXml(Path inputFile, Path dataFile, Path outputF
 
 Use este exemplo quando precisar armazenar os valores atuais do AcroForm em formato XML.
 
-1. Criar um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincular o PDF de origem.
+1. Crie um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincule o PDF de origem.
 1. Abra o fluxo de saída para o arquivo XML.
-1. Exportar os dados do formulário para XML.
+1. Exporte os dados do formulário para XML.
 
 ```java
 public static void exportDataToXml(Path inputFile, Path outputFile) throws Exception {
@@ -57,7 +57,7 @@ public static void exportDataToXml(Path inputFile, Path outputFile) throws Excep
 
 Use este exemplo quando os valores de formulário chegarem no formato de intercâmbio FDF.
 
-1. Criar um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincular o PDF de origem.
+1. Crie um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincule o PDF de origem.
 1. Abra o fluxo de entrada FDF e importe os dados.
 1. Salve o documento PDF preenchido.
 
@@ -78,9 +78,9 @@ public static void importDataFromFdf(Path inputFile, Path dataFile, Path outputF
 
 Use este exemplo quando os valores do formulário PDF devem ser compartilhados como um arquivo FDF.
 
-1. Criar um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincular o PDF de origem.
+1. Crie um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincule o PDF de origem.
 1. Abra o fluxo de saída para o arquivo FDF.
-1. Exportar os dados do formulário em formato FDF.
+1. Exporte os dados do formulário em formato FDF.
 
 ```java
 public static void exportDataToFdf(Path inputFile, Path outputFile) throws Exception {
@@ -98,7 +98,7 @@ public static void exportDataToFdf(Path inputFile, Path outputFile) throws Excep
 
 Use este exemplo quando os dados do formulário são fornecidos no formato XFDF e devem ser mesclados em um PDF.
 
-1. Criar um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincular o PDF de origem.
+1. Crie um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincule o PDF de origem.
 1. Abra o fluxo de entrada XFDF e importe os valores.
 1. Salve o documento PDF atualizado.
 
@@ -119,9 +119,9 @@ public static void importDataFromXfdf(Path inputFile, Path dataFile, Path output
 
 Use este exemplo quando precisar de um arquivo de intercâmbio baseado em XML para valores de AcroForm.
 
-1. Criar um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincular o PDF de origem.
+1. Crie um [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada e vincule o PDF de origem.
 1. Abra o fluxo de saída para o arquivo XFDF.
-1. Exportar os valores do formulário atual para XFDF.
+1. Exporte os valores do formulário atual para XFDF.
 
 ```java
 public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exception {
@@ -139,7 +139,7 @@ public static void exportDataToXfdf(Path inputFile, Path outputFile) throws Exce
 
 Use este exemplo quando os valores do formulário devem ser exportados para uma representação JSON leve.
 
-1. Abra o PDF com o [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) fachada.
+1. Abra o PDF com a fachada [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/).
 1. Itere pelos nomes dos campos e serialize seus valores em texto JSON.
 1. Escreva o conteúdo JSON no arquivo de destino.
 

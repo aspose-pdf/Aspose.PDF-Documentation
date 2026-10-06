@@ -1,6 +1,6 @@
 ---
-title: Suporte, Estenda e Contribua para Aspose.Pdf em PHP
-linktitle: Suporte, Estenda e Contribua para Aspose.Pdf em PHP
+title: Suporte, extensão e contribuição para Aspose.PDF em PHP
+linktitle: Suporte, extensão e contribuição para Aspose.PDF em PHP
 type: docs
 weight: 30
 url: /pt/java/support-extend-and-contribute-to-aspose-pdf-in-php/
@@ -13,11 +13,11 @@ Desde os primeiros dias da Aspose, sabíamos que apenas oferecer bons produtos a
 
 É por isso que oferecemos suporte gratuito. Qualquer pessoa que usa nosso produto, seja ela compradora ou em avaliação, merece toda a nossa atenção e respeito.
 
-Você pode registrar quaisquer problemas ou sugestões relacionados aВ Aspose.Cells Java para PHP usando qualquer das plataformas a seguir:
+Você pode registrar quaisquer problemas ou sugestões relacionados a Aspose.Cells Java para PHP usando qualquer das plataformas a seguir:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-## Estender e Contribuir
+## Estender e contribuir
 
 Aspose.PDF Java for PHP é de código aberto e seu código-fonte está disponível nos principais sites de programação social listados abaixo. Recomenda-se que os desenvolvedores façam o download do código-fonte e contribuam sugerindo ou adicionando novos recursos ou aprimorando os existentes, para que outros também possam se beneficiar dele.
 

@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Crie, formate, mescle, divida e otimize documentos PDF em Java
+AlternativeHeadline: Criar, formatar, mesclar, dividir e otimizar documentos PDF em Java
 Abstract: Esta seção explica como trabalhar com documentos PDF usando Aspose.PDF for Java. Aprenda como criar arquivos PDF, formatar propriedades do documento, manipular a estrutura do conteúdo, otimizar o tamanho do arquivo e mesclar ou dividir documentos PDF.
 ---
 Aspose.PDF for Java fornece APIs de nível de documento para criar, formatar, validar, reestruturar, mesclar, dividir e otimizar arquivos PDF.

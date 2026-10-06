@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Conversão de Documentos em PHP
-linktitle: Trabalhar com Conversão de Documentos em PHP
+title: Trabalhar com conversão de documentos em PHP
+linktitle: Trabalhar com conversão de documentos em PHP
 type: docs
 weight: 10
 url: /pt/java/working-with-document-conversion-in-php/

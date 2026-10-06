@@ -15,12 +15,12 @@ Abstract: Saiba como criar um livreto PDF com Aspose.PDF for Java. O exemplo Jav
 ---
 ## Criar um livreto PDF
 
-Usar `PdfFileEditor.makeBooklet` reorganizar as páginas de um PDF existente em ordem de livreto.
+Use `PdfFileEditor.makeBooklet` reorganizar as páginas de um PDF existente em ordem de livreto.
 
 ### Etapas
 
-1. Criar um `PdfFileEditor` instância.
-2. Chamada `makeBooklet` com o PDF de origem e o arquivo de saída.
+1. Crie uma instância de `PdfFileEditor`.
+2. Chame `makeBooklet` com o PDF de origem e o arquivo de saída.
 3. Salve o documento do livreto.
 4. Se quiser verificar o status de retorno, use a variante que devolve booleano e trate um resultado falho.
 

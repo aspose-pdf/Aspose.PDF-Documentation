@@ -12,7 +12,7 @@ sitemap:
 aliases:
     - /pt/java/replace-text-in-a-pdf-document/
 TechArticle: true
-AlternativeHeadline: Substitua, remova e ajuste o conteúdo de texto em PDF usando Java
+AlternativeHeadline: Substituir, remover e ajustar o conteúdo de texto em PDF usando Java
 Abstract: Este artigo explica fluxos de trabalho de substituição de texto em documentos PDF usando Aspose.PDF for Java. Ele cobre a substituição de texto em todas as páginas, a limitação da substituição a uma região selecionada, o ajuste do layout da substituição, o uso de correspondência baseada em regex, a substituição de fontes, a remoção de todo o texto e a exclusão de texto oculto.
 ---
 O Aspose.PDF for Java fornece recursos de substituição simples e substituição sensível ao layout através `TextFragmentAbsorber` e substituir opções.
@@ -22,7 +22,7 @@ O Aspose.PDF for Java fornece recursos de substituição simples e substituiçã
 Use este exemplo quando a mesma frase deve ser substituída em todo o documento.
 
 1. Abra o documento PDF de origem.
-1. Pesquisar todas as páginas pela frase alvo com `TextFragmentAbsorber`.
+1. Pesquise todas as páginas pela frase alvo com `TextFragmentAbsorber`.
 1. Substitua o texto correspondente e salve o PDF atualizado.
 
 ```java
@@ -48,7 +48,7 @@ public static void replaceTextOnAllPages(Path inputFile, Path outputFile) {
 Use este exemplo quando a substituição deve ser limitada a um retângulo selecionado em uma página.
 
 1. Abra o documento PDF de origem.
-1. Configurar `TextSearchOptions` com limites de página e um retângulo alvo.
+1. Configure `TextSearchOptions` com limites de página e um retângulo alvo.
 1. Substitua o texto correspondente dentro dessa região e salve o documento.
 
 ```java
@@ -99,7 +99,7 @@ public static void replaceTextAndResizeAndShiftWithoutChangingFontSize(Path inpu
 }
 ```
 
-## Substitua o texto dentro de um retângulo de parágrafo maior
+## Substituir o texto dentro de um retângulo de parágrafo maior
 
 Use este exemplo quando o texto de substituição deve expandir para uma área maior da página.
 
@@ -185,7 +185,7 @@ public static void replaceTextAndFitTextIntoRectangle(Path inputFile, Path outpu
 Use este exemplo quando o texto correspondido deve ser encontrado por um padrão regex e reestilizado durante a substituição.
 
 1. Abra o documento PDF de origem.
-1. Pesquisar a página com suporte a regex `TextFragmentAbsorber`.
+1. Pesquise a página com suporte a regex `TextFragmentAbsorber`.
 1. Substitua cada correspondência, atualize seu estilo de texto e salve o resultado.
 
 ```java
@@ -208,7 +208,7 @@ public static void replaceTextBasedOnRegex(Path inputFile, Path outputFile) {
 }
 ```
 
-## Substitua o texto de espaço reservado e deixe a página reorganizar
+## Substituir o texto de espaço reservado e deixe a página reorganizar
 
 Use este exemplo quando um placeholder precisar ser substituído por um valor real mais longo, preservando o layout da página.
 
@@ -234,7 +234,7 @@ public static void automaticallyRearrangePageContents(Path inputFile, Path outpu
 }
 ```
 
-## Substitua uma fonte por outra
+## Substituir uma fonte por outra
 
 Use este exemplo quando o texto que utiliza uma fonte incorporada específica deve ser trocado por outra fonte.
 
@@ -283,13 +283,13 @@ public static void removeUnusedFonts(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remova todo o texto do documento
+## Remover todo o texto do documento
 
 Use este exemplo quando todo o conteúdo de texto deve ser excluído de cada página.
 
 1. Abra o documento PDF de origem.
-1. Criar um `TextFragmentAbsorber` e chamar `removeAllText(document)`.
-1. Salvar o PDF limpo.
+1. Crie um `TextFragmentAbsorber` e chame `removeAllText(document)`.
+1. Salve o PDF limpo.
 
 ```java
 public static void removeAllTextUsingAbsorber1(Path inputFile, Path outputFile) {
@@ -301,12 +301,12 @@ public static void removeAllTextUsingAbsorber1(Path inputFile, Path outputFile) 
 }
 ```
 
-## Remova todo o texto de uma página
+## Remover todo o texto de uma página
 
 Use este exemplo quando todo o texto deve ser removido apenas de uma página específica.
 
 1. Abra o documento PDF de origem.
-1. Criar um `TextFragmentAbsorber` e remover texto da página de destino.
+1. Crie um `TextFragmentAbsorber` e remova texto da página de destino.
 1. Salve o documento atualizado.
 
 ```java
@@ -324,7 +324,7 @@ public static void removeAllTextUsingAbsorber2(Path inputFile, Path outputFile) 
 Use este exemplo quando o texto deve ser excluído somente dentro de uma área de página escolhida.
 
 1. Abra o documento PDF de origem.
-1. Criar um `TextFragmentAbsorber` e definir o retângulo a ser limpo.
+1. Crie um `TextFragmentAbsorber` e defina o retângulo a ser limpo.
 1. Remova o texto daquela região e salve o documento.
 
 ```java

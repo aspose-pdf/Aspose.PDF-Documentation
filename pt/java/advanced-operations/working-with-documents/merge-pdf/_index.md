@@ -19,9 +19,9 @@ Aspose.PDF for Java suporta várias estratégias de mesclagem dependendo de como
 
 Use esta abordagem quando precisar do fluxo de mesclagem mais simples e quiser anexar um documento completo a outro.
 
-1. Abra ambos os PDFs de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos.
-1. Adicionar o [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) coleção do segundo documento para o primeiro documento.
-1. Salvar o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra ambos os PDFs de origem como objetos [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione o [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) coleção do segundo documento para o primeiro documento.
+1. Salve o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -37,7 +37,7 @@ public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outp
 
 Este método auxiliar mantém a lógica de mesclagem de intervalo de páginas em um só lugar, para que outros exemplos possam reutilizar a mesma rotina de cópia validada.
 
-1. Abrir ou receber o PDF de origem e destino [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos.
+1. Abra ou receber o PDF de origem e destino objetos [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Normalize o intervalo de páginas solicitado para que permaneça dentro do disponível [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) coleção.
 1. Adicione cada página do intervalo validado ao documento de destino.
 
@@ -64,7 +64,7 @@ private static void appendPageRange(Document sourceDocument, Document destinatio
 
 Use este padrão quando precisar combinar uma lista de arquivos de entrada em um único documento de saída em sequência.
 
-1. Criar um PDF de saída vazio [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um PDF de saída vazio [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Abra cada arquivo de entrada um de cada vez e copie todo o seu conteúdo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) intervalo no documento de saída.
 1. Salve o resultado mesclado depois que todos os arquivos de origem forem processados.
 
@@ -85,7 +85,7 @@ public static void mergeMultipleDocuments(List<Path> inputFiles, Path outputFile
 
 Este exemplo cria um arquivo de saída personalizado ao selecionar apenas intervalos de páginas específicos de cada documento de origem.
 
-1. Abra ambos os PDFs de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos e criar um novo documento de saída.
+1. Abra ambos os PDFs de origem como objetos [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie um novo documento de saída.
 1. Adicione apenas o necessário [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) intervalos de cada documento de origem.
 1. Salve o documento de saída montado.
 
@@ -105,7 +105,7 @@ public static void mergeSelectedPageRanges(Path inputFile1, Path inputFile2, Pat
 
 Use esta abordagem quando um documento deve aparecer dentro de outro, em vez de apenas antes ou depois dele.
 
-1. Abra o PDF base e o PDF inserido [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos e criar um novo documento de saída.
+1. Abra o PDF base e o PDF inserido objetos [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie um novo documento de saída.
 1. Copie a primeira parte do documento base, depois adicione o documento inserido completo e, por fim, adicione o restante do documento base. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) intervalo.
 1. Salve o resultado reordenado em um novo arquivo.
 
@@ -130,9 +130,9 @@ public static void mergeInsertDocumentAtPosition(Path inputFile1, Path inputFile
 
 Este exemplo intercala páginas de dois documentos, o que é útil quando ambas as entradas devem contribuir página por página para a saída final.
 
-1. Abra ambos os PDFs de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) objetos e criar um novo documento de saída.
+1. Abra ambos os PDFs de origem como objetos [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie um novo documento de saída.
 1. Percorra a contagem máxima de páginas disponíveis e adicione cada uma disponível [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) do primeiro e do segundo documentos, respectivamente.
-1. Salvar o documento de saída intercalado.
+1. Salve o documento de saída intercalado.
 
 ```java
 public static void mergeAlternatingPages(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -161,8 +161,8 @@ public static void mergeAlternatingPages(Path inputFile1, Path inputFile2, Path 
 
 Use este padrão quando o arquivo mesclado precisar permanecer fácil de navegar e mostrar claramente onde cada documento de origem começa.
 
-1. Criar um PDF de saída vazio [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e abra cada arquivo fonte por sua vez.
-1. Adicionar um separador [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) com um título, então crie um [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) marcador para essa seção.
+1. Crie um PDF de saída vazio [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e abra cada arquivo fonte por sua vez.
+1. Adicione um separador [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) com um título, então crie um [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) marcador para essa seção.
 1. Anexe as páginas de origem, opcionalmente adicione um marcador que aponta para a primeira página de conteúdo e salve o documento final mesclado.
 
 ```java

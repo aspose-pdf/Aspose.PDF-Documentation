@@ -1,6 +1,6 @@
 ---
-title: Anotações de Forma via Java
-linktitle: Anotações de Forma
+title: Anotações de forma via Java
+linktitle: Anotações de forma
 type: docs
 weight: 20
 url: /pt/java/shape-annotations/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações geométricas de PDF em Java.
+AlternativeHeadline: Trabalhar com anotações geométricas de PDF em Java
 Abstract: Este artigo explica como criar, inspecionar e remover anotações geométricas em documentos PDF usando Aspose.PDF for Java. Ele cobre anotações de quadrado, círculo, polígono e polilinha com configuração de cor, opacidade, popup e ponto.
 ---
 As anotações de forma nesta seção abordam tipos de anotação geométrica, como quadrados, círculos, polígonos, polilinhas e linhas.
@@ -19,7 +19,7 @@ As anotações de forma nesta seção abordam tipos de anotação geométrica, c
 
 Use estes exemplos quando precisar inserir anotações geométricas com cores personalizadas, opacidade, dados de popup ou arrays de pontos.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie a anotação de forma necessária e configure seu retângulo, pontos e propriedades visuais.
 1. Adicione a anotação à página e salve o documento atualizado.
 
@@ -113,9 +113,9 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 
 Esses exemplos inspecionam a coleção de anotações da página e imprimem os retângulos das anotações geométricas por tipo.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar pelas anotações da página.
-1. Filtrar pelo necessário [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) valor e imprimir o retângulo.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere pelas anotações da página.
+1. Filtre pelo valor necessário de [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) e imprima o retângulo.
 
 ```java
 public static void squareAnnotationGet(Path inputFile) {
@@ -169,8 +169,8 @@ public static void polylineAnnotationGet(Path inputFile) {
 
 Use estes exemplos quando anotações de forma de um tipo específico devem ser removidas da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações do tipo geométrico necessário.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações do tipo geométrico necessário.
 1. Exclua as anotações coletadas e salve o arquivo de saída.
 
 ```java
@@ -245,8 +245,8 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 
 Este exemplo cria uma anotação de linha com pontas de seta, formatação de borda e uma nota pop-up.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) com pontos de início e fim.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) com pontos de início e fim.
 1. Configure a aparência, adicione o popup e salve o documento.
 
 ```java
@@ -281,9 +281,9 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 
 Este exemplo lê anotações de linha e imprime suas coordenadas de início e fim.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar pelas anotações da página e selecionar [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
-1. Converter cada correspondência para [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) e imprimir suas coordenadas.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere pelas anotações da página e selecione [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Converta cada correspondência para [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) e imprimir suas coordenadas.
 
 ```java
 public static void lineAnnotationsGet(Path inputFile) {
@@ -304,8 +304,8 @@ public static void lineAnnotationsGet(Path inputFile) {
 
 Use esta abordagem quando as anotações de linha devem ser removidas da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
 1. Exclua as anotações coletadas e salve o documento.
 
 ```java

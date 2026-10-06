@@ -15,12 +15,12 @@ Abstract: Este artigo mostra como adicionar formas de retângulo a documentos PD
 ---
 ## Adicionar um contorno de retângulo
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicionar um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
-1. Criar um [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner e adicioná-lo à página.
-1. Criar o [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) forma e configurar sua geometria.
-1. Adicionar o [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) para o [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner.
-1. Salvar o PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
+1. Crie um [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner e adicione-o à página.
+1. Crie o [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) forma e configure sua geometria.
+1. Adicione o [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) para o [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner.
+1. Salve o PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void addRectangle(Path outputFile) {
@@ -38,24 +38,24 @@ public static void addRectangle(Path outputFile) {
 }
 ```
 
-## Preencha um retângulo com cor sólida ou degradê
+## Preencher um retângulo com cor sólida ou degradê
 
 Os exemplos de retângulo incluem:
 
 - `createRectangleFilled` para um preenchimento sólido com `Color.getRed()`
 - `addDrawingWithGradientFill` para um `GradientAxialShading` preencher
 
-## Use transparência alfa
+## Usar transparência alfa
 
 `createRectangleWithAlphaColorChannel` aplica cores translúcidas com `Color.fromArgb(...)` para que os retângulos sobrepostos permaneçam visíveis.
 
 ## Controlar a ordem z dos retângulos
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicionar um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
 1. Defina o necessário [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) tamanho.
 1. Adicione o configurado [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) formas na página de destino com a ordem z necessária.
-1. Salvar o PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Salve o PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void controlZOrderOfRectangle(Path outputFile) {

@@ -1,6 +1,6 @@
 ---
-title: Guia do Programador Python
-linktitle: Guia do Programador Python
+title: Guia do programador Python
+linktitle: Guia do programador Python
 type: docs
 weight: 20
 url: /pt/java/python-programmers-guide/

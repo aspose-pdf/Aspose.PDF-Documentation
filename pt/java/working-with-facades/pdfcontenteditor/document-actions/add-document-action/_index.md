@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF, anexar uma ação JavaScript 
 ---
 ## Adicionar uma ação de abertura de documento
 
-1. Vincular o PDF de origem ao `PdfContentEditor` fachada.
-2. Chamar `addDocumentAdditionalAction(...)` com o `DOCUMENT_OPEN` evento e o texto da ação JavaScript.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
+2. Chame `addDocumentAdditionalAction(...)` com o `DOCUMENT_OPEN` evento e o texto da ação JavaScript.
 3. Salve o documento PDF atualizado.
 
 ```java

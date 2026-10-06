@@ -10,11 +10,11 @@ TechArticle: true
 AlternativeHeadline: Criar um campo RadioButton em um PDF com Java
 Abstract: Este artigo mostra como vincular um PDF existente, configurar as definições de layout do botão de opção, criar um campo RadioButton e salvar o documento modificado usando a fachada FormEditor no Aspose.PDF for Java.
 ---
-Usar `FormEditorExamples.createRadioButtonField(...)` para criar um campo de botão de opção com opções predefinidas.
+Use `FormEditorExamples.createRadioButtonField(...)` para criar um campo de botão de opção com opções predefinidas.
 
 ## Criar um campo RadioButton
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
+1. Vincule o PDF de origem à fachada `FormEditor`.
 2. Configure o espaçamento, a orientação e o tamanho dos itens do botão de opção.
 3. Defina os itens do botão de opção.
 4. Adicione o campo do botão de opção com sua seleção padrão e retângulo.

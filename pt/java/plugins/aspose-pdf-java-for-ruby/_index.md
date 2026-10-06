@@ -17,7 +17,7 @@ RJB é um programa ponte que conecta entre Ruby e Java usando Java Native Interf
 
 Aspose.PDF for Java é um componente de criação de documentos PDF que permite que suas aplicações Java leiam, escrevam e manipulem documentos PDF sem usar o Adobe Acrobat.
 
-Aspose.PDF for Java é um componente com preço acessível que oferece uma incrível variedade de recursos, incluindo: opções de compactação de PDF, criação e manipulação de tabelas, suporte a gráficos, funções de imagem, funcionalidade extensa de hyperlinks, controles de segurança avançados e manipulação de fontes personalizadas.
+Aspose.PDF for Java é um componente com preço acessível que oferece uma incrível variedade de recursos, incluindo: opções de compactação de PDF, criação e manipulação de tabelas, suporte a gráficos, funções de imagem, funcionalidade extensa de hiperlinks, controles de segurança avançados e manipulação de fontes personalizadas.
 
 Aspose.PDF for Java permite criar arquivos PDF diretamente através da API fornecida e de modelos XML. Usar Aspose.PDF for Java também possibilitará adicionar recursos de PDF às suas aplicações em pouco tempo.
 
@@ -25,16 +25,16 @@ Aspose.PDF for Java permite criar arquivos PDF diretamente através da API forne
 
 Projeto Aspose.PDF Java para Ruby demonstra como diferentes tarefas podem ser realizadas usando as APIs Aspose.PDF Java em Ruby. Este projeto tem como objetivo fornecer exemplos úteis para desenvolvedores Ruby que desejam utilizar Aspose.PDF for Java em seus projetos Ruby usando Rjb (Ruby Java Bridge).
 
-## Requisitos de Sistema e Plataformas Compatíveis
+## Requisitos de sistema e plataformas compatíveis
 
-### Requisitos de Sistema
+### Requisitos de sistema
 
 A seguir estão os requisitos de sistema para usar o Aspose.PDF Java para Ruby:
 
 - Rjb Gem está configurado
 - Componente Aspose.PDF baixado
 
-### Plataformas Suportadas
+### Plataformas suportadas
 
 A seguir estão as plataformas suportadas:
 
@@ -44,13 +44,13 @@ A seguir estão as plataformas suportadas:
 
 ## Downloads
 
-### Baixar Bibliotecas Necessárias
+### Baixar bibliotecas necessárias
 
 Baixe as bibliotecas necessárias mencionadas abaixo. Elas são necessárias para executar os exemplos do Aspose.PDF Java para Ruby.
 
 - [Componente Aspose.PDF for Java](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf)
 
-### Baixar Exemplos de Sites de Código Social
+### Baixar exemplos de sites de código social
 
 As versões seguintes de exemplos em execução estão disponíveis para download nos sites de código social mencionados abaixo:
 
@@ -58,7 +58,7 @@ GitHub
 
 - [Aspose.PDF Java para Ruby](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
 
-## Instalação e Uso
+## Instalação e uso
 
 ### Instalar
 
@@ -96,9 +96,9 @@ Vamos entender o código acima.
 
 1. A primeira linha garante que o aspose pdf esteja carregado e disponível.
 1. Inclua os arquivos necessários para acessar o aspose pdf.
-1. Inicialize as bibliotecas. As classes aspose JAVA são carregadas a partir do caminho fornecido no arquivo aspose.yml/
+1. Inicialize as bibliotecas. As classes aspose JAVA são carregadas a partir do caminho fornecido no arquivo aspose.yml/.
 
-## Suporte, Expanda e Contribua
+## Suporte, extensão e contribuição
 
 ### Suporte
 
@@ -110,7 +110,7 @@ Você pode registrar quaisquer problemas ou sugestões relacionados ao Aspose.PD
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### Estender e Contribuir
+### Estender e contribuir
 
 Aspose.PDF Java for Ruby é open source e seu código-fonte está disponível nos principais sites de codificação social listados abaixo. Os desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novos recursos ou aprimorando os existentes, para que outros também possam se beneficiar dele.
 
@@ -120,7 +120,7 @@ Você pode obter o código-fonte mais recente em um dos seguintes locais:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Ruby)
 
-## Exemplos de Código de Amostra
+## Exemplos de código de Amostra
 
 Esta seção inclui os seguintes tópicos:
 

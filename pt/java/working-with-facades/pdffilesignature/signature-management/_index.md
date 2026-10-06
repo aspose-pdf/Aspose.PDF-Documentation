@@ -1,6 +1,6 @@
 ---
-title: Gerenciamento de Assinaturas
-linktitle: Gerenciamento de Assinaturas
+title: Gerenciamento de assinaturas
+linktitle: Gerenciamento de assinaturas
 type: docs
 weight: 80
 url: /pt/java/signature-management/
@@ -20,9 +20,9 @@ Use este fluxo de trabalho quando uma assinatura digital existente precisar ser 
 
 ### Etapas
 
-1. Criar um `PdfFileSignature` instância e vincular o PDF assinado.
+1. Crie uma instância de `PdfFileSignature` e vincule o PDF assinado.
 2. Leia a coleção de assinaturas e selecione um nome de assinatura.
-3. Chamar `removeSignature` com esse nome.
+3. Chame `removeSignature` com esse nome.
 4. Salve o arquivo atualizado e feche o objeto fachada.
 
 ### Exemplo Java

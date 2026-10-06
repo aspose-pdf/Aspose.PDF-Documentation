@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Tabelas em PDF usando Java
-linktitle: Trabalhar com Tabelas
+title: Trabalhar com tabelas em PDF usando Java
+linktitle: Trabalhar com tabelas
 type: docs
 weight: 50
 url: /pt/java/working-with-tables/

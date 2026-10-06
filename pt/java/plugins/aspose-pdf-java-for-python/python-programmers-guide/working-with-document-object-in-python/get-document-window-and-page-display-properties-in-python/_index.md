@@ -53,6 +53,6 @@ print "pageMode :-" + str(doc.getPageMode())
 
 **Baixar Código em Execução**
 
-DownloadВ **Obter Propriedades de Janela de Documento e Exibição de Página (Aspose.PDF)**В deВ qualquer dos sites de codificação social abaixo mencionados:
+Download **Obter Propriedades de Janela de Documento e Exibição de Página (Aspose.PDF)** de qualquer dos sites de codificação social abaixo mencionados:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetDocumentWindow/GetDocumentWindow.py)

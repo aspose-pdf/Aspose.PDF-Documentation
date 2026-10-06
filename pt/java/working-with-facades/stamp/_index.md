@@ -10,10 +10,10 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicione carimbos de imagem, PDF e texto a documentos PDF em Java
+AlternativeHeadline: Adicionar carimbos de imagem, PDF e texto a documentos PDF em Java
 Abstract: Esta seção explica como usar a classe Stamp em conjunto com PdfFileStamp no Aspose.PDF for Java para adicionar conteúdo de carimbo reutilizável a documentos PDF. Os exemplos atuais em Java cobrem carimbos de imagem, carimbos de página PDF, carimbos de texto com um TextState personalizado, carimbos específicos de página e carimbos de imagem de fundo com configurações de opacidade, tamanho e rotação.
 ---
-O Java `StampExamples` classe demonstra os principais fluxos de trabalho de criação de carimbos disponíveis através da API Facades.
+A classe Java `StampExamples` demonstra os principais fluxos de trabalho de criação de carimbos disponíveis através da API Facades.
 
 ## Adicionar um carimbo de imagem
 
@@ -21,8 +21,8 @@ Use este fluxo de trabalho quando um arquivo de imagem deve ser colocado no PDF 
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instância e vincule o PDF de origem.
-2. Criar um `Stamp` objeto e vinculá-lo ao arquivo de imagem.
+1. Crie uma instância de `PdfFileStamp` e vincule o PDF de origem.
+2. Crie um objeto `Stamp` e vincule-o ao arquivo de imagem.
 3. Defina o identificador do selo e a origem da colocação.
 4. Adicione o selo ao documento.
 5. Salve o resultado e feche o objeto de fachada.
@@ -52,8 +52,8 @@ Use este fluxo de trabalho quando o conteúdo de outra página PDF deve ser reut
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instanciar e vincular o PDF de destino.
-2. Criar um `Stamp` objeto.
+1. Crie um `PdfFileStamp` instanciar e vincule o PDF de destino.
+2. Crie um objeto `Stamp`.
 3. Vincule o stamp a uma página específica de outro arquivo PDF.
 4. Defina o número da página de destino e a origem para a colocação.
 5. Adicione o selo, salve a saída e feche o objeto fachada.
@@ -83,9 +83,9 @@ Use este fluxo de trabalho quando o carimbo deve conter texto formatado em vez d
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instância e vincule o PDF de origem.
-2. Criar um `Stamp` objeto.
-3. Vincular um `FormattedText` logotipo e um personalizado `TextState` para o carimbo.
+1. Crie uma instância de `PdfFileStamp` e vincule o PDF de origem.
+2. Crie um objeto `Stamp`.
+3. Vincule um `FormattedText` logotipo e um personalizado `TextState` para o carimbo.
 4. Defina a origem e a rotação do carimbo.
 5. Adicione o selo, salve a saída e feche o objeto fachada.
 
@@ -115,8 +115,8 @@ Use este workflow quando o stamp deve aparecer apenas nas páginas selecionadas 
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instância e vincule o PDF de origem.
-2. Criar um `Stamp` objeto e vinculá-lo a um arquivo de imagem.
+1. Crie uma instância de `PdfFileStamp` e vincule o PDF de origem.
+2. Crie um objeto `Stamp` e vincule-o a um arquivo de imagem.
 3. Defina a lista de páginas alvo, a origem e o tamanho da imagem.
 4. Adicione o selo ao documento.
 5. Salve o resultado e feche o objeto de fachada.
@@ -147,8 +147,8 @@ Use este fluxo de trabalho quando o selo deve aparecer atrás do conteúdo da p�
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instância e vincule o PDF de origem.
-2. Criar um `Stamp` objeto e vinculá-lo ao arquivo de imagem.
+1. Crie uma instância de `PdfFileStamp` e vincule o PDF de origem.
+2. Crie um objeto `Stamp` e vincule-o ao arquivo de imagem.
 3. Marque o selo como conteúdo de plano de fundo.
 4. Configure opacidade, qualidade, rotação, tamanho e origem.
 5. Adicione o selo, salve a saída e feche o objeto fachada.

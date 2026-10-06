@@ -1,13 +1,13 @@
 ---
-title: Obter Propriedades da Janela de Documento e Exibição de Página em PHP
-linktitle: Obter Propriedades da Janela de Documento e Exibição de Página em PHP
+title: Obter propriedades da janela de documento e exibição de página em PHP
+linktitle: Obter propriedades da janela de documento e exibição de página em PHP
 type: docs
 weight: 30
 url: /pt/java/get-document-window-and-page-display-properties-in-php/
 description: Aprenda como acessar as propriedades da janela de documento e de exibição de página de um arquivo PDF em PHP usando Aspose.PDF.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Obter Propriedades da Janela de Documento e Exibição de Página
+## Aspose.PDF - obter propriedades da janela de documento e exibição de página
 
 Para obter as propriedades da janela de documento e de exibição de página de um documento Pdf usando **Aspose.PDF Java for PHP**, basta invocar a classe **GetDocumentWindow**.
 
@@ -56,6 +56,6 @@ print "pageMode :-" . $doc->getPageMode() . PHP_EOL;
 
 **Baixar Código em Execução**
 
-DownloadВ **Obter Propriedades da Janela do Documento e Exibição de Página (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Download **Obter Propriedades da Janela do Documento e Exibição de Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetDocumentWindow.php)

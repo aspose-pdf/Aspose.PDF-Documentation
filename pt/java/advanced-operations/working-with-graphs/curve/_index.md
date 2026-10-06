@@ -1,6 +1,6 @@
 ---
-title: Adicionar Formas de Curva ao PDF em Java
-linktitle: Adicionar Curva
+title: Adicionar formas de curva ao PDF em Java
+linktitle: Adicionar curva
 type: docs
 weight: 30
 url: /pt/java/add-curve/
@@ -17,11 +17,11 @@ Curvas em Aspose.PDF for Java são definidas por um array de coordenadas float p
 
 ## Adicionar um contorno de curva
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicionar um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
-1. Criar um [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container e adicioná-lo à página.
-1. Criar o [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) forma e configure seus pontos de controle.
-1. Adicionar o [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) para o [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
+1. Crie um [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) container e adicione-o à página.
+1. Crie o [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) forma e configure seus pontos de controle.
+1. Adicione o [Curve](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/curve/) para o [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) contêiner.
 1. Defina as propriedades de forma exigidas pelo exemplo, incluindo [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
 1. Salve o PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 

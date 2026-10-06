@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Renomear campos de formulário em um documento PDF com Java
 Abstract: Este artigo mostra como vincular um formulário PDF, renomear campos existentes e salvar o documento atualizado usando a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.renameFormFields(...)` para renomear campos em um formulário PDF interativo.
+Use `FormExamples.renameFormFields(...)` para renomear campos em um formulário PDF interativo.
 
 ```java
 public static void renameFormFields(Path inputFile, Path outputFile) {

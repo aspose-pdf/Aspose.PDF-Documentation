@@ -1,6 +1,6 @@
 ---
-title: Adicionar Item de Lista
-linktitle: Adicionar Item de Lista
+title: Adicionar item de lista
+linktitle: Adicionar item de lista
 type: docs
 weight: 10
 url: /pt/java/add-list-item/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, adicionar um novo i
 ---
 ## Adicionar um item a um campo de lista
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `addListItem(...)` para o campo de destino e novo par de exibição/valor.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `addListItem(...)` para o campo de destino e novo par de exibição/valor.
 3. Salve o documento atualizado.
 
 ```java

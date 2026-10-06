@@ -16,11 +16,11 @@ Abstract: Aprenda como adicionar conteúdo de cabeçalho a documentos PDF com As
 ---
 ## Adicionar cabeçalho ao PDF
 
-Usar `PdfFileStamp` quando você precisar de conteúdo de cabeçalho repetido em cada página.
+Use `PdfFileStamp` quando precisar de conteúdo de cabeçalho repetido em cada página.
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instância e vincular o PDF de origem.
+1. Crie uma instância de `PdfFileStamp` e vincule o PDF de origem.
 2. Construa o conteúdo do cabeçalho como `FormattedText` ou carregá-lo a partir de um fluxo de imagem.
 3. Chame o apropriado `addHeader` sobrecarga.
 4. Salve a saída e feche o objeto fachada.

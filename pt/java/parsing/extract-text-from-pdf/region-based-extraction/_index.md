@@ -12,11 +12,11 @@ sitemap:
 ---
 ## Extrair texto de uma região retangular da página
 
-Usar `TextSearchOptions` com um `Rectangle` para restringir a extração a uma área definida em uma página.
+Use `TextSearchOptions` com um `Rectangle` para restringir a extração a uma área definida em uma página.
 
-1. Abra o PDF de origem em um [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar um [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para coletar texto da área de página selecionada.
-1. Criar [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) para o alvo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) e habilitar `setLimitToPageBounds(true)` para que a extração permaneça dentro da caixa de página visível.
+1. Abra o PDF de origem em uma instância de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) para coletar texto da área de página selecionada.
+1. Crie [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) para o alvo [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) e habilitar `setLimitToPageBounds(true)` para que a extração permaneça dentro da caixa de página visível.
 1. Aplique as opções de pesquisa configuradas ao absorvedor e visite o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Escreva o buffer de texto extraído no arquivo de saída.
 
@@ -36,10 +36,10 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 
 ## Extrair parágrafos com informações de geometria
 
-Usar `ParagraphAbsorber` para inspecionar retângulos de seção e polígonos de parágrafo juntamente com o texto extraído.
+Use `ParagraphAbsorber` para inspecionar retângulos de seção e polígonos de parágrafo juntamente com o texto extraído.
 
-1. Abra o PDF de origem em um [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar um [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) e visite o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) para gerar informações de marcação de página.
+1. Abra o PDF de origem em uma instância de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) e visite o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) para gerar informações de marcação de página.
 1. Leia o primeiro resultado de marcação de página e itere através de suas seções e parágrafos.
 1. Colete cada retângulo de seção, polígono de parágrafo e o texto do parágrafo reconstruído a partir de seu [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) linhas.
 1. Crie o relatório de saída com geometria e detalhes de texto extraído.

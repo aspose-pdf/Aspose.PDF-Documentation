@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Visão geral dos recursos oferecidos pelo Aspose.PDF for Java
-Abstract: O artigo fornece uma visão detalhada dos recursos oferecidos pelo Aspose.PDF for Java, uma biblioteca Java abrangente para criar e manipular documentos PDF sem a necessidade do Adobe Acrobat. As principais funcionalidades incluem compactação de documentos, criação de tabelas, suporte a gráficos, integração de hyperlinks e controles de segurança extensos, como assinaturas digitais. A biblioteca também suporta a adição e o gerenciamento de marcadores, sumários, anexos, anotações e metadados. Os usuários podem editar texto e imagens, gerenciar páginas por meio de divisão ou concatenação, e transformar páginas PDF em vários formatos de imagem. Além disso, o Aspose.PDF for Java oferece recursos robustos de impressão em diferentes ambientes Java e facilita a conversão entre PDF e outros formatos de documento. O artigo conclui com links para recursos de preços, licenciamento, suporte técnico e aprendizado adicional sobre os recursos da biblioteca e requisitos de instalação.
+Abstract: O artigo fornece uma visão detalhada dos recursos oferecidos pelo Aspose.PDF for Java, uma biblioteca Java abrangente para criar e manipular documentos PDF sem a necessidade do Adobe Acrobat. As principais funcionalidades incluem compactação de documentos, criação de tabelas, suporte a gráficos, integração de hiperlinks e controles de segurança extensos, como assinaturas digitais. A biblioteca também suporta a adição e o gerenciamento de marcadores, sumários, anexos, anotações e metadados. Os usuários podem editar texto e imagens, gerenciar páginas por meio de divisão ou concatenação, e transformar páginas PDF em vários formatos de imagem. Além disso, o Aspose.PDF for Java oferece recursos robustos de impressão em diferentes ambientes Java e facilita a conversão entre PDF e outros formatos de documento. O artigo conclui com links para recursos de preços, licenciamento, suporte técnico e aprendizado adicional sobre os recursos da biblioteca e requisitos de instalação.
 SoftwareApplication: java
 ---
 _Esta página é uma visão geral dos  recursos do Aspose.PDF for Java._
@@ -55,13 +55,13 @@ Vamos conferir as páginas da Docs para mais detalhes: [Trabalhando com Gráfico
 
 ### Funcionalidade extensa de Hyperlink
 
-Hyperlinks permitem que os usuários naveguem rápida e eficientemente dentro de um documento PDF. Ao clicar nos hyperlinks, os leitores podem ir para diferentes seções, capítulos ou páginas sem precisar rolar manualmente o documento.
+Hiperlinks permitem que os usuários naveguem rápida e eficientemente dentro de um documento PDF. Ao clicar nos hiperlinks, os leitores podem ir para diferentes seções, capítulos ou páginas sem precisar rolar manualmente o documento.
 
 **Aspose.PDF for Java** fornece muitas vantagens, incluindo navegação aprimorada, referências cruzadas, acesso a recursos externos, interatividade e comunicação aprimorada. Elas contribuem para uma experiência de leitura mais envolvente, informativa e acessível para os usuários.
 
 Vamos verificar a próxima seção para mais detalhes: [Ações](/pdf/pt/java/actions/)
 
-### Controles de Segurança Estendidos
+### Controles de segurança estendidos
 
 Recursos de segurança, como assinaturas digitais, ajudam a garantir a integridade de documentos PDF. Ao assinar digitalmente um documento, o remetente pode verificar que o conteúdo não foi adulterado ou alterado desde que foi assinado, proporcionando confiança aos destinatários quanto à autenticidade do documento.
 
@@ -69,7 +69,7 @@ Com **Aspose.PDF for Java** é possível assinar PDFs a partir de Smart Card, cr
 
 Vamos conferir as páginas da Docs para mais detalhes: [Segurança e Assinatura](/pdf/pt/java/securing-and-signing/)
 
-### Adicionar ou remover Marcadores
+### Adicionar ou remover marcadores
 
 Os marcadores oferecem aos usuários uma maneira conveniente de navegar em documentos PDF grandes ou complexos. Ao criar marcadores para seções, capítulos ou títulos específicos, os usuários podem facilmente pular para o conteúdo relevante com apenas um clique, economizando tempo e esforço.
 
@@ -100,7 +100,7 @@ A biblioteca Aspose.PDF for Java tem diferentes manipulações com [Anotações]
 Além disso, nossa Biblioteca permite que você adicione, extraia e remova Anexos de PDF.
 Para mais detalhes, confira o próximo [Páginas de documentação](/pdf/pt/java/attachments/).
 
-###  Metadados de Arquivo PDF
+###  Metadados de arquivo PDF
 
 Os metadados fornecem informações essenciais sobre o documento PDF, como o título, autor, data de criação e assunto. Isso ajuda os usuários a identificar e categorizar documentos rapidamente, facilitando o gerenciamento e a organização de grandes coleções de arquivos PDF.
 
@@ -108,7 +108,7 @@ Os metadados de arquivo PDF atendem a múltiplos propósitos, incluindo identifi
 
 Gerencie de forma fácil e rápida [Metadados](/pdf/pt/java/pdf-file-metadata/) em um documento PDF com a biblioteca **Aspose.PDF for Java**.
 
-### Adicione, substitua ou remova texto e imagens
+### Adicionar, substituir ou remover texto e imagens
 
 Adicionar, substituir ou remover texto e imagens permite que os usuários editem o conteúdo de documentos PDF, fazendo atualizações, correções ou aprimoramentos conforme necessário. Essa flexibilidade permite que os usuários modifiquem o conteúdo do documento para refletir mudanças ou revisões com precisão.
 
@@ -156,7 +156,7 @@ Além disso, o Aspose.PDF for Java pode ser usado para converter facilmente text
 
 Por favor, visite o [Licenciamento](/pdf/pt/java/licensing/) página para informações sobre licenças e revisar o [Informações de Preços](https://purchase.aspose.com/pricing/pdf/family/) página para detalhes sobre preços.
 
-## Suporte Técnico
+## Suporte técnico
 
 Para mais informações sobre o suporte técnico do Aspose.PDF, dê uma olhada no [Página de suporte](/pdf/pt/java/technical-support/).
 

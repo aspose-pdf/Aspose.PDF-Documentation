@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicione carimbos de imagem, número de página, página e texto a arquivos PDF com Java
+AlternativeHeadline: Adicionar carimbos de imagem, número de página, página e texto a arquivos PDF com Java
 Abstract: Este artigo explica como adicionar carimbos a documentos PDF usando Aspose.PDF for Java. Ele abrange carimbos de imagem, imagens de fundo em caixas flutuantes, carimbos de página de outro PDF, carimbos de número de página, numeração romana e carimbos de texto.
 ---
 Aspose.PDF for Java suporta vários modelos de carimbagem dependendo se o conteúdo é uma imagem, texto, uma página PDF ou uma sobreposição de número de página.

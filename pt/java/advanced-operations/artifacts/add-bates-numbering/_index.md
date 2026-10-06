@@ -19,7 +19,7 @@ Os artefatos de numeração Bates são úteis em fluxos de trabalho jurídicos, 
 
 Use este exemplo quando quiser aplicar a numeração Bates através do auxiliar dedicado de coleção de páginas.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione quaisquer páginas extras exigidas pela amostra.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione quaisquer páginas extras exigidas pela amostra.
 1. Crie o [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) configuração.
 1. Aplique a numeração Bates à coleção de páginas e salve o arquivo de saída.
 
@@ -41,7 +41,7 @@ public static void addBatesNArtifact(Path inputFile, Path outputFile) {
 
 Este exemplo aplica numeração Bates passando o artefato Bates através da API genérica de paginação.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione as páginas necessárias.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione as páginas necessárias.
 1. Crie o [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) e adicione-o à lista de artefatos de paginação.
 1. Aplique os artefatos de paginação à coleção de páginas e salve o documento.
 
@@ -65,7 +65,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 
 Use esta abordagem quando artefatos existentes de numeração Bates devem ser removidos do documento.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Chame o helper de coleção de páginas que exclui a numeração Bates.
 1. Salve o arquivo de saída limpo.
 

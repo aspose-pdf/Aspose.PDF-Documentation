@@ -1,6 +1,6 @@
 ---
-title: Mover Campo
-linktitle: Mover Campo
+title: Mover campo
+linktitle: Mover campo
 type: docs
 weight: 30
 url: /pt/java/move-field/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, mover um campo para
 ---
 ## Mover um campo
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `moveField(...)` com o nome do campo de destino e as novas coordenadas do retângulo.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `moveField(...)` com o nome do campo de destino e as novas coordenadas do retângulo.
 3. Salve o documento atualizado.
 
 ```java

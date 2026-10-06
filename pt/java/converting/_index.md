@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true
-AlternativeHeadline: Como converter documentos PDF usando Java
+AlternativeHeadline: Converter documentos PDF usando Java
 Abstract: Este artigo apresenta os recursos de conversão de documentos no Aspose.PDF for Java. Ele cobre a conversão de documentos PDF para Word, Excel, PowerPoint, HTML, imagens, PDF/A, PDF/E, PDF/X e outros formatos de arquivo, bem como a conversão de HTML, imagens e outros arquivos de origem em PDF.
 ---
 Aspose.PDF for Java suporta ambas as direções de conversão de documentos: converter arquivos PDF em formatos editáveis ou de intercâmbio, e converter formatos de origem como HTML, imagens, EPUB, XPS e texto em PDF.

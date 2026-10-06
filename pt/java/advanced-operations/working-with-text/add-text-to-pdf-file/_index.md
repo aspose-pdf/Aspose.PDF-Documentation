@@ -10,8 +10,8 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicione texto, links, HTML e fontes a arquivos PDF com Java.
-Abstract: Este artigo explica como adicionar e formatar texto em documentos PDF usando Aspose.PDF for Java. Ele abrange inserção simples de texto, layout de parágrafos, hyperlinks, texto da direita para a esquerda, estilização de fontes, transparência, bordas, fragmentos HTML e LaTeX, texto em degradê e fontes personalizadas carregadas a partir de arquivos ou fluxos.
+AlternativeHeadline: Adicionar texto, links, HTML e fontes a arquivos PDF com Java
+Abstract: Este artigo explica como adicionar e formatar texto em documentos PDF usando Aspose.PDF for Java. Ele abrange inserção simples de texto, layout de parágrafos, hiperlinks, texto da direita para a esquerda, estilização de fontes, transparência, bordas, fragmentos HTML e LaTeX, texto em degradê e fontes personalizadas carregadas a partir de arquivos ou fluxos.
 ---
 Aspose.PDF for Java suporta inserção de texto simples, layout avançado, estilização, gradientes, HTML, LaTeX e fontes personalizadas.
 
@@ -20,7 +20,7 @@ Aspose.PDF for Java suporta inserção de texto simples, layout avançado, estil
 Use este exemplo quando uma string curta de texto deve ser posicionada em coordenadas fixas da página.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `TextFragment` e defina sua posição.
+1. Crie um `TextFragment` e defina sua posição.
 1. Adicione-o à página e salve o documento.
 
 ```java
@@ -77,7 +77,7 @@ public static void addParagraph(Path outputFile) throws Exception {
 Use este exemplo quando a primeira linha e as linhas subsequentes devem usar regras de recuo diferentes.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Prepare o fragmento de texto compartilhado e crie múltiplos `TextParagraph` objetos.
+1. Prepare o fragmento de texto compartilhado e crie múltiplos objetos `TextParagraph`.
 1. Configure a identação de cada parágrafo, anexe-os e salve o documento.
 
 ```java
@@ -118,7 +118,7 @@ public static void addParagraphsIndents(Path outputFile) throws Exception {
 Use este exemplo quando um fragmento de texto deve conter uma nova linha explícita.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `TextFragment` contendo uma quebra de linha e configure seu estilo.
+1. Crie um `TextFragment` contendo uma quebra de linha e configure seu estilo.
 1. Anexe-o através de um `TextParagraph` e salve o PDF.
 
 ```java
@@ -215,7 +215,7 @@ public static void getTextWidthDynamically(Path outputFile) {
 Use este exemplo quando uma parte de um fragmento de texto deve se comportar como um link da web.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Construir um `TextFragment` com vários `TextSegment` objetos.
+1. Construa um `TextFragment` com vários objetos `TextSegment`.
 1. Atribua um hiperlink e estilo ao segmento de destino, então salve o documento.
 
 ```java
@@ -245,7 +245,7 @@ public static void addTextWithHyperlink(Path outputFile) {
 Use este exemplo quando o documento precisar exibir conteúdo de script da direita para a esquerda com o alinhamento adequado.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `TextFragment` com o texto RTL de destino e configure sua fonte e alinhamento.
+1. Crie um `TextFragment` com o texto RTL de destino e configure sua fonte e alinhamento.
 1. Adicione-o à página e salve o PDF.
 
 ```java
@@ -330,7 +330,7 @@ Use este exemplo quando um fragmento de texto deve exibir estilização sublinha
 
 1. Crie um novo documento PDF e adicione uma página.
 1. Crie o TextFragment, configure sua Font e o estado de sublinhado, e defina sua posição.
-1. Anexar com `TextBuilder` e salvar o resultado.
+1. Anexe com `TextBuilder` e salve o resultado.
 
 ```java
 public static void addUnderlineText(Path outputFile) {
@@ -386,7 +386,7 @@ Use este exemplo quando texto pesquisável ou oculto deve estar presente sem ren
 
 1. Crie um novo documento PDF e adicione uma página.
 1. Adicione um fragmento de texto visível e um segundo fragmento com a flag invisível habilitada.
-1. Salvar o documento.
+1. Salve o documento.
 
 ```java
 public static void addTextInvisible(Path outputFile) {
@@ -412,8 +412,8 @@ public static void addTextInvisible(Path outputFile) {
 Use este exemplo quando o texto deve ser desenhado junto com seu retângulo delimitador.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um estilizado `TextFragment` e habilite o desenho da borda do retângulo de texto.
-1. Anexar com `TextBuilder` e salve o PDF.
+1. Crie um estilizado `TextFragment` e habilite o desenho da borda do retângulo de texto.
+1. Anexe com `TextBuilder` e salve o PDF.
 
 ```java
 public static void addTextBorder(Path outputFile) {
@@ -528,7 +528,7 @@ public static void applyGradientRadialShadingToText(Path outputFile) {
 Use este exemplo quando a formatação de sobrescrito e subscrito deve ser inserida por meio de marcação HTML.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `HtmlFragment` com a marcação inline necessária.
+1. Crie um `HtmlFragment` com a marcação inline necessária.
 1. Adicione-o à página e salve o PDF.
 
 ```java
@@ -548,7 +548,7 @@ public static void addTextHtmlFragment(Path outputFile) {
 Use este exemplo quando conteúdo matemático ou formatado em TeX precisar ser renderizado dentro do PDF.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `TeXFragment` com a expressão necessária.
+1. Crie um `TeXFragment` com a expressão necessária.
 1. Adicione-o à página e salve o documento.
 
 ```java
@@ -595,7 +595,7 @@ Use este exemplo quando o conteúdo HTML importado deve herdar uma configuraçã
 
 1. Crie um novo documento PDF e adicione uma página.
 1. Prepare o conteúdo HTML e crie o `HtmlFragment`.
-1. Atribuir um personalizado `TextState`, adicione o fragmento, e salve o documento.
+1. Atribua um personalizado `TextState`, adicione o fragmento, e salve o documento.
 
 ```java
 public static void addHtmlFragmentOverrideTextState(Path outputFile) {
@@ -620,7 +620,7 @@ public static void addHtmlFragmentOverrideTextState(Path outputFile) {
 }
 ```
 
-## Use uma fonte personalizada carregada de um arquivo
+## Usar uma fonte personalizada carregada de um arquivo
 
 Use este exemplo quando o texto deve usar uma fonte carregada diretamente de um caminho de arquivo de fonte.
 
@@ -647,7 +647,7 @@ public static void useCustomFontFromFile(Path outputFile) {
 }
 ```
 
-## Use uma fonte personalizada carregada de um fluxo
+## Usar uma fonte personalizada carregada de um fluxo
 
 Use este exemplo quando uma fonte personalizada deve ser aberta a partir de um stream e incorporada no PDF.
 

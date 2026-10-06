@@ -16,13 +16,13 @@ Abstract: Saiba como recuperar os privilégios de documento com Aspose.PDF for J
 ---
 ## Obter privilégios do documento
 
-Usar `PdfFileInfo.getDocumentPrivilege()` para inspecionar quais operações o PDF atual permite.
+Use `PdfFileInfo.getDocumentPrivilege()` para inspecionar quais operações o PDF atual permite.
 
 ### Etapas
 
-1. Criar um `PdfFileInfo` objeto para o PDF de entrada.
+1. Crie um objeto `PdfFileInfo` para o PDF de entrada.
 2. Ligar `getDocumentPrivilege()` para recuperar o conjunto de privilégios.
-3. Leia as flags booleanas relevantes do retornado `DocumentPrivilege` objeto.
+3. Leia as flags booleanas relevantes do retornado objeto `DocumentPrivilege`.
 4. Feche o `PdfFileInfo` instância quando concluído.
 
 ### Exemplo Java

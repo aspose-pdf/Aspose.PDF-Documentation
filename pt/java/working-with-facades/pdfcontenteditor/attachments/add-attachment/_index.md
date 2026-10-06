@@ -12,9 +12,9 @@ Abstract: Este artigo mostra como vincular um PDF, abrir um anexo como fluxo, ad
 ---
 ## Adicionar um anexo de documento
 
-1. Vincular o PDF de origem ao `PdfContentEditor` fachada.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
 2. Abra o arquivo de anexo como um fluxo de entrada.
-3. Chamar `addDocumentAttachment(...)` com o fluxo, nome do arquivo e descrição.
+3. Chame `addDocumentAttachment(...)` com o fluxo, nome do arquivo e descrição.
 4. Salve o documento PDF atualizado.
 
 ```java

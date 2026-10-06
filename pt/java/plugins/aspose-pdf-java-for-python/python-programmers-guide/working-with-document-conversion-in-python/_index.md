@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Conversão de Documentos em Python
-linktitle: Trabalhar com Conversão de Documentos em Python
+title: Trabalhar com conversão de documentos em Python
+linktitle: Trabalhar com conversão de documentos em Python
 type: docs
 weight: 10
 url: /pt/java/working-with-document-conversion-in-python/

@@ -1,6 +1,6 @@
 ---
-title: Anotações de Marca d'água usando Java
-linktitle: Anotações de Marca d'água
+title: Anotações de marca d'água usando Java
+linktitle: Anotações de marca d'água
 type: docs
 weight: 70
 url: /pt/java/watermark-annotations/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações de marca d'água em arquivos PDF usando Java.
+AlternativeHeadline: Trabalhar com anotações de marca d'água em arquivos PDF usando Java
 Abstract: Este artigo explica como criar, inspecionar e remover anotações de marca d'água em documentos PDF usando Aspose.PDF for Java. Ele cobre a adição de uma anotação de marca d'água de texto com estado de texto personalizado e opacidade, a leitura de áreas de anotações de marca d'água existentes e a exclusão de anotações de marca d'água.
 ---
 Anotações de marca d'água permitem que você coloque conteúdo sobreposto reutilizável em uma página, enquanto ainda o gerencia por meio da coleção de anotações.
@@ -19,8 +19,8 @@ Anotações de marca d'água permitem que você coloque conteúdo sobreposto reu
 
 Use este exemplo quando precisar de uma anotação de marca d'água de texto com configurações de Font personalizadas e opacidade.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) e adicione-o à página.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [WatermarkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkannotation/) e adicione-o à página.
 1. Configure o [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/), texto da marca d'água e opacidade, então salve o documento.
 
 ```java
@@ -51,9 +51,9 @@ public static void watermarkAdd(Path inputFile, Path outputFile) {
 
 Este exemplo analisa a coleção de anotações e imprime o retângulo de cada anotação de marca d'água.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere através das anotações na página de destino.
-1. Filtrar anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` e imprima seus retângulos.
+1. Filtre anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark` e imprima seus retângulos.
 
 ```java
 public static void watermarkGet(Path inputFile) {
@@ -71,8 +71,8 @@ public static void watermarkGet(Path inputFile) {
 
 Use esta abordagem quando as anotações de marca d'água existentes devem ser removidas do documento.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Watermark`.
 1. Exclua as anotações coletadas e salve o arquivo de saída.
 
 ```java

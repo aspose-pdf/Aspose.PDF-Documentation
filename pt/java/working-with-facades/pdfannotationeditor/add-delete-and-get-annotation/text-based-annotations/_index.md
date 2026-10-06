@@ -1,19 +1,19 @@
 ---
-title: Anotações Baseadas em Texto usando Java
-linktitle: Anotações de Texto
+title: Anotações baseadas em texto usando Java
+linktitle: Anotações de texto
 type: docs
 weight: 10
 url: /pt/java/pdfannotationeditor-class/text-based-annotations/
 description: Aprenda como adicionar, inspecionar e excluir anotações de texto, texto livre e tachado em documentos PDF usando Java.
 lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações de texto PDF em Java
+AlternativeHeadline: Trabalhar com anotações de texto PDF em Java
 Abstract: Este artigo explica como criar, ler e remover anotações baseadas em texto em documentos PDF usando Java. Ele cobre anotações de texto, anotações de texto livre e anotações de tachado com base nas implementações de exemplo em Java.
 ---
 ## Adicionar uma anotação de texto
 
 1. Abra o PDF de entrada e selecione a página onde a anotação de texto deve ser inserida.
-2. Criar o `TextAnnotation`, defina seu retângulo e defina seu título, assunto, flags e cor.
+2. Crie o `TextAnnotation`, defina seu retângulo e defina seu título, assunto, flags e cor.
 3. Adicione a anotação à página e salve o documento atualizado.
 
 ```java
@@ -35,7 +35,7 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 ## Adicionar uma anotação de texto livre
 
 1. Carregue o PDF de origem e selecione a página de destino e o retângulo para a anotação de texto livre.
-2. Criar o `FreeTextAnnotation`, inicialize sua aparência padrão e defina o título e a cor.
+2. Crie o `FreeTextAnnotation`, inicialize sua aparência padrão e defina o título e a cor.
 3. Adicione a anotação à página e salve o resultado.
 
 ```java

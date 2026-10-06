@@ -1,6 +1,6 @@
 ---
-title: Importar Dados FDF
-linktitle: Importar Dados FDF
+title: Importar dados FDF
+linktitle: Importar dados FDF
 type: docs
 weight: 10
 url: /pt/java/import-fdf-data/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Importar dados AcroForm de FDF em Java
 Abstract: Este artigo mostra como vincular um formulário PDF, importar valores de campo de um fluxo FDF e salvar o documento atualizado com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.importFdf(...)` para aplicar valores de campo de um arquivo FDF.
+Use `FormExamples.importFdf(...)` para aplicar valores de campo de um arquivo FDF.
 
 ```java
 public static void importFdf(Path inputFile, Path dataFile, Path outputFile) throws Exception {

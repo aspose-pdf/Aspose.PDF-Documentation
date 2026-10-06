@@ -7,13 +7,13 @@ url: /pt/java/pdfannotationeditor-class/watermark-annotations/
 description: Aprenda como adicionar, inspecionar e excluir anotações de marca d'água em documentos PDF usando Java.
 lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações de marca d'água em arquivos PDF usando Java
+AlternativeHeadline: Trabalhar com anotações de marca d'água em arquivos PDF usando Java
 Abstract: Este artigo explica como criar, inspecionar e remover anotações de marca d'água em documentos PDF usando Java. Ele aborda a adição de uma anotação de marca d'água de texto com estado de texto personalizado e opacidade, a leitura de áreas de anotações de marca d'água existentes e a exclusão de anotações de marca d'água.
 ---
 ## Adicionar uma anotação de marca d'água
 
 1. Abra o PDF de entrada e defina o retângulo onde a anotação de marca d'água será inserida.
-2. Criar o `WatermarkAnnotation`, adicione-o à página, e configure o estado do texto da marca d'água e a opacidade.
+2. Crie o `WatermarkAnnotation`, adicione-o à página, e configure o estado do texto da marca d'água e a opacidade.
 3. Aplique as linhas de texto da marca d'água e salve o PDF modificado.
 
 ```java

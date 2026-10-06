@@ -1,6 +1,6 @@
 ---
-title: Anotações de Segurança usando Java
-linktitle: Anotações de Segurança
+title: Anotações de segurança usando Java
+linktitle: Anotações de segurança
 type: docs
 weight: 75
 url: /pt/java/security-annotations/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Remova conteúdo sensível de PDF em Java com anotações de segurança.
+AlternativeHeadline: Remova conteúdo sensível de PDF em Java com anotações de segurança
 Abstract: Este artigo explica como trabalhar com anotações de redação em documentos PDF usando Aspose.PDF for Java. Ele aborda a marcação de texto correspondido com anotações de redação, a aplicação permanente de redações e a redação de áreas selecionadas com base em retângulos de posicionamento de imagens detectados.
 ---
 Os fluxos de trabalho de anotação de segurança nesta seção focam na preparação e aplicação de redações ao conteúdo PDF sensível.
@@ -19,7 +19,7 @@ Os fluxos de trabalho de anotação de segurança nesta seção focam na prepara
 
 Use este exemplo quando o texto correspondente deve ser coberto por anotações de redação antes que a redação seja aplicada permanentemente.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Pesquise o texto alvo e crie um [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para cada correspondência.
 1. Configure a aparência da redação e salve o documento.
 
@@ -51,9 +51,9 @@ public static void markTextRedaction(Path inputFile, Path outputFile, String sea
 
 Este exemplo aplica permanentemente anotações de redação que já existem na página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
-1. Chamar `redact()` em cada anotação coletada e salvar o arquivo atualizado.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Redaction`.
+1. Chame `redact()` em cada anotação coletada e salve o arquivo atualizado.
 
 ```java
 public static void applyRedaction(Path inputFile, Path outputFile) {
@@ -76,9 +76,9 @@ public static void applyRedaction(Path inputFile, Path outputFile) {
 
 Use esta abordagem quando o conteúdo alvo for identificado por posição em vez de por correspondência de texto.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Detecte o retângulo alvo na página, por exemplo a partir de uma colocação de imagem.
-1. Criar um [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para essa área e salvar o documento.
+1. Crie um [RedactionAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/redactionannotation/) para essa área e salvar o documento.
 
 ```java
 public static void redactArea(Path inputFile, Path outputFile) {

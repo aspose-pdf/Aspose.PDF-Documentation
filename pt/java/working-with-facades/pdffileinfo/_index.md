@@ -14,7 +14,7 @@ TechArticle: true
 AlternativeHeadline: Inspecione metadados de PDF, propriedades e informações de página em Java com PdfFileInfo
 Abstract: Esta seção explica como usar a fachada PdfFileInfo no Aspose.PDF for Java para inspecionar detalhes de arquivos PDF programaticamente. Os exemplos atuais em Java cobrem a pesquisa da versão do PDF, privilégios do documento, dimensões e deslocamentos de página, e a leitura ou atualização de metadados do documento.
 ---
-O Java `PdfFileInfoExamples` classe demonstra os principais fluxos de inspeção e metadados disponíveis através da API Facades.
+A classe Java `PdfFileInfoExamples` demonstra os principais fluxos de inspeção e metadados disponíveis através da API Facades.
 
 Use esta seção para aprender como:
 

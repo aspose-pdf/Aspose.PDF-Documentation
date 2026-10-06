@@ -11,7 +11,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Use PDF Facades em Java para formulários, assinaturas, segurança, carimbos e processamento de arquivos
+AlternativeHeadline: Usar PDF Facades em Java para formulários, assinaturas, segurança, carimbos e processamento de arquivos
 Abstract: Esta seção explica como usar Aspose.PDF Facades para Java para lidar com fluxos de trabalho comuns de PDF com APIs simplificadas. A cobertura atual do Java inclui formulários, edição de formulários, edição de anotações, edição de conteúdo, edição de arquivos, informações de arquivos, segurança, assinaturas, carimbo de arquivos, renderização de visualizador e fluxos de trabalho de construção de carimbos.
 ---
 A API Facades fornece auxiliares de alto nível para tarefas comuns de PDF sem trabalhar diretamente com o modelo de objeto de documento de nível inferior.

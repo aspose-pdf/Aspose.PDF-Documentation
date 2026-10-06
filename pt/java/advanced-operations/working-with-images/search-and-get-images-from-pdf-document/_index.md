@@ -1,13 +1,13 @@
 ---
-title: Obter e Pesquisar Imagens em PDF
-linktitle: Obter e Pesquisar Imagens
+title: Obter e pesquisar imagens em PDF
+linktitle: Obter e pesquisar imagens
 type: docs
 weight: 40
 url: /pt/java/search-and-get-images-from-pdf-document/
 description: Aprenda como pesquisar e inspecionar imagens em documentos PDF em Java.
 lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Pesquise e inspecione imagens em arquivos PDF com Java
+AlternativeHeadline: Pesquisar e inspecionar imagens em arquivos PDF com Java
 Abstract: Este artigo mostra como pesquisar e inspecionar imagens em documentos PDF usando Aspose.PDF for Java. Ele abrange a leitura da geometria de posicionamento da imagem, a detecção do tipo de cor, a extração de texto alternativo e o cálculo da resolução efetiva da imagem a partir dos operadores de página.
 ---
 Aspose.PDF for Java pode inspecionar informações de posicionamento de imagens, bem como dados de desenho em nível inferior.
@@ -16,8 +16,8 @@ Aspose.PDF for Java pode inspecionar informações de posicionamento de imagens,
 
 Use este exemplo quando precisar inspecionar a geometria da imagem e a resolução efetiva em uma página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para coletar posicionamentos de imagens.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para coletar posicionamentos de imagens.
 1. Exiba o tamanho, as coordenadas e a resolução de cada imagem posicionada.
 
 ```java
@@ -42,9 +42,9 @@ public static void extractImageParams(Path inputFile) {
 
 Use este exemplo quando precisar contar imagens em tons de cinza e RGB em uma página PDF.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para iterar sobre as imagens das páginas.
-1. Leia o [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) de cada imagem e exibir os totais.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para iterar sobre as imagens das páginas.
+1. Leia o [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) de cada imagem e exiba os totais.
 
 ```java
 public static void extractImageTypesFromPdf(Path inputFile) {
@@ -82,8 +82,8 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 
 Use este exemplo quando precisar inspecionar o texto de acessibilidade associado às imagens da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para coletar posicionamentos de imagens.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para coletar posicionamentos de imagens.
 1. Leia o texto alternativo de cada imagem e exiba o resultado.
 
 ```java
@@ -109,7 +109,7 @@ public static void extractImageAltText(Path inputFile) {
 
 Use este exemplo quando precisar derivar o tamanho efetivo da imagem e a resolução a partir dos operadores de conteúdo de página de baixo nível.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e coletar nomes de recursos de imagem.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e colete nomes de recursos de imagem.
 1. Acompanhe o estado gráfico enquanto itera pelos operadores de página.
 1. Resolva cada operação de desenho de imagem e calcule suas dimensões e resolução efetivas.
 

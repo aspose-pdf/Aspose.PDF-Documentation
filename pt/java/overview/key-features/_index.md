@@ -11,7 +11,7 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Recursos gerais do Aspose.PDF for Java
-Abstract: O Aspose.PDF for Python via .NET é uma biblioteca robusta que oferece recursos extensivos para gerenciar e manipular documentos PDF. Ela suporta padrões estabelecidos de PDF e facilita a leitura e exportação de PDFs para vários formatos de imagem, como BMP, GIF, JPEG e PNG. Os usuários podem configurar propriedades do documento, atributos de página e gerenciar texto, parágrafos, hyperlinks, gráficos e anexos. A biblioteca se destaca nas capacidades de conversão, permitindo a transformação perfeita de PDFs para formatos Word, Excel, PowerPoint e HTML, entre outros, além de converter vários formatos de volta para PDF.
+Abstract: O Aspose.PDF for Python via .NET é uma biblioteca robusta que oferece recursos extensivos para gerenciar e manipular documentos PDF. Ela suporta padrões estabelecidos de PDF e facilita a leitura e exportação de PDFs para vários formatos de imagem, como BMP, GIF, JPEG e PNG. Os usuários podem configurar propriedades do documento, atributos de página e gerenciar texto, parágrafos, hiperlinks, gráficos e anexos. A biblioteca se destaca nas capacidades de conversão, permitindo a transformação perfeita de PDFs para formatos Word, Excel, PowerPoint e HTML, entre outros, além de converter vários formatos de volta para PDF.
 ---
 ## Recursos gerais
 
@@ -129,7 +129,7 @@ Aspose.PDF for Java suporta as versões de PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
 - Adicionar campos.
 - Preencher campos.
 - Obter valores do botão de opção.
-- Obter Valor atual do botão de opção.
+- Obter o valor atual do botão de opção.
 - Obter fachada do campo de formulário (os atributos visuais do campo).
 - Excluir campo.
 - Mover campo para nova localização.
@@ -143,16 +143,16 @@ Aspose.PDF for Java suporta as versões de PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
 - Importar e exportar FDF.
 - Importar e exportar XFDF.
 
-## Carimbo e Marca d'água
+## Carimbo e marca d'água
 
 - Adicionar carimbo de texto (em todas as páginas, ou em páginas específicas).
-- Adicionar carimbo de imagem (em todas das páginas, ou em páginas específicas).
+- Adicionar carimbo de imagem (em todas as páginas, ou em páginas específicas).
 - Adicionar selo de página PDF (em todas as páginas ou em páginas específicas).
 - Adicionar número de página.
 - Adicionar texto ao cabeçalho e rodapé.
 - Adicionar imagem ao cabeçalho e rodapé.
 
-## Links e Ações
+## Links e ações
 
 - Criar link de aplicativo.
 - Criar link local.
@@ -161,7 +161,7 @@ Aspose.PDF for Java suporta as versões de PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
 - Remover ação de abertura do documento.
 - Criar link de documento PDF.
 
-## Segurança e Assinaturas
+## Segurança e assinaturas
 
 - Criptografar e descriptografar PDF.
 - Definir privilégios do documento.
@@ -183,4 +183,4 @@ Aspose.PDF for Java suporta as versões de PDF 1.2, 1.3, 1.4, 1.5, 1.6 e 1.7.
 
 - Obter informações da versão de compilação.
 - Alterando o espaço de cores do documento PDF
-- Adicionar desenho com cor transparente
+- Adicionar desenho com cor transparente.

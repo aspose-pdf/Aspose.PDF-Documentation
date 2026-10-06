@@ -1,13 +1,13 @@
 ---
-title: Anotações Interativas usando Java
-linktitle: Anotações Interativas
+title: Anotações interativas usando Java
+linktitle: Anotações interativas
 type: docs
 weight: 30
 url: /pt/java/pdfannotationeditor-class/interactive-annotations/
 description: Aprenda como adicionar, inspecionar e excluir anotações de link em documentos PDF usando Java.
 lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações PDF interativas em Java
+AlternativeHeadline: Trabalhar com anotações PDF interativas em Java
 Abstract: Este artigo explica como trabalhar com anotações de link interativas em arquivos PDF usando Java. Ele aborda localizar texto, criar uma anotação de link sobre a área de texto correspondida, ler anotações de link existentes e excluí-las.
 ---
 ## Adicionar uma anotação de link

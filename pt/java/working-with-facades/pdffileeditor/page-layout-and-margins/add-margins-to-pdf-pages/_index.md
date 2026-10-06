@@ -1,6 +1,6 @@
 ---
-title: Adicionar Margens às Páginas PDF
-linktitle: Adicionar Margens às Páginas PDF
+title: Adicionar margens às páginas PDF
+linktitle: Adicionar margens às páginas PDF
 type: docs
 weight: 10
 url: /pt/java/add-margins-to-pdf-pages/
@@ -19,9 +19,9 @@ O exemplo em Java adiciona margens de 36 pontos às páginas 1 e 3 do documento 
 
 ### Etapas
 
-1. Criar um `PdfFileEditor` instância.
+1. Crie uma instância de `PdfFileEditor`.
 2. Selecione os números de página que devem receber novas margens.
-3. Chamar `addMargins` com o arquivo de entrada, arquivo de saída, lista de páginas e valores de margem.
+3. Chame `addMargins` com o arquivo de entrada, arquivo de saída, lista de páginas e valores de margem.
 4. Salve o PDF atualizado.
 
 ### Exemplo Java

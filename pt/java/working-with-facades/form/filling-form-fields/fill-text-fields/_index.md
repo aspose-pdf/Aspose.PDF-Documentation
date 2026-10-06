@@ -1,6 +1,6 @@
 ---
-title: Preencher Campos de Texto
-linktitle: Preencher Campos de Texto
+title: Preencher campos de texto
+linktitle: Preencher campos de texto
 type: docs
 weight: 10
 url: /pt/java/fill-text-fields/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Preencha campos de formulário de texto em um PDF com Java
 Abstract: Este artigo mostra como vincular um formulário PDF, definir valores de campos de texto por nome e salvar o documento atualizado com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.fillTextFields(...)` para preencher campos de formulário baseados em texto.
+Use `FormExamples.fillTextFields(...)` para preencher campos de formulário baseados em texto.
 
 ```java
 public static void fillTextFields(Path inputFile, Path outputFile) {

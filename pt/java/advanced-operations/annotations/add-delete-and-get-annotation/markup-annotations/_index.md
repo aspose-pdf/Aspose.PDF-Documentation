@@ -1,6 +1,6 @@
 ---
-title: Anotações de Marcação usando Java
-linktitle: Anotações de Marcação
+title: Anotações de marcação usando Java
+linktitle: Anotações de marcação
 type: docs
 weight: 30
 url: /pt/java/markup-annotations/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações de marcação em arquivos PDF usando Java.
+AlternativeHeadline: Trabalhar com anotações de marcação em arquivos PDF usando Java
 Abstract: Este artigo explica como criar, inspecionar e remover anotações de marcação de texto em documentos PDF usando Aspose.PDF for Java. Ele abrange anotações de destaque, sublinhado, ondulado e tachado com base nos exemplos Java do repositório.
 ---
 Os fluxos de trabalho de anotações de marcação nesta seção enfocam comentários no estilo de nota, marcadores de cursor e cenários agrupados de substituição-revisão.
@@ -19,8 +19,8 @@ Os fluxos de trabalho de anotações de marcação nesta seção enfocam coment�
 
 Use este exemplo quando precisar colocar uma anotação de texto no estilo de nota adesiva com metadados de pop-up em uma página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) e configure seu título, conteúdos, ícone e popup.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) e configure seu título, conteúdos, ícone e popup.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -52,9 +52,9 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 
 Este exemplo varre a página e imprime o retângulo de cada anotação de texto.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere pelas anotações na página.
-1. Filtrar anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` e imprimir seus retângulos.
+1. Filtre anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` e imprima seus retângulos.
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -72,8 +72,8 @@ public static void textAnnotationGet(Path inputFile) {
 
 Use esta abordagem quando as anotações de texto existentes devem ser removidas do documento.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações do tipo [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
 1. Exclua as anotações coletadas e salve o arquivo de saída.
 
 ```java
@@ -97,8 +97,8 @@ public static void textAnnotationDelete(Path inputFile, Path outputFile) {
 
 Use este exemplo quando precisar marcar texto inserido com uma anotação de revisão no estilo caret.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) e configure seu pop-up e aparência.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) e configure seu pop-up e aparência.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -127,9 +127,9 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 
 Este exemplo lê anotações de cursor existentes e imprime suas localizações.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar pelas anotações da página.
-1. Filtrar anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` e imprimir seus retângulos.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere pelas anotações da página.
+1. Filtre anotações por [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` e imprima seus retângulos.
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -148,8 +148,8 @@ public static void caretAnnotationsGet(Path inputFile) {
 
 Use esta abordagem quando as anotações de caret devem ser removidas da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações cujo tipo é [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações cujo tipo é [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
 1. Exclua as anotações coletadas e salve o documento de saída.
 
 ```java
@@ -175,9 +175,9 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 
 Este exemplo combina uma anotação caret com uma anotação de tachado para representar um comentário de revisão no estilo substituir.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie a anotação de caret e o relacionado [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
-1. Vincular as anotações através `setInReplyTo` e `setReplyType`, então salve o documento.
+1. Vincule as anotações através `setInReplyTo` e `setReplyType`, então salve o documento.
 
 ```java
 public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
@@ -221,7 +221,7 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 
 Este exemplo detecta anotações de tachado que participam de um fluxo de trabalho de substituição agrupada.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere pelas anotações da página e selecione as anotações de tachado.
 1. Verifique a relação de resposta e imprima o retângulo das anotações correspondentes.
 
@@ -245,8 +245,8 @@ public static void replaceAnnotationsGet(Path inputFile) {
 
 Use esta abordagem quando as anotações de strikeout replace-review devem ser removidas da página.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações de tachado que representam a marcação de substituição.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações de tachado que representam a marcação de substituição.
 1. Exclua as anotações coletadas e salve o documento atualizado.
 
 ```java

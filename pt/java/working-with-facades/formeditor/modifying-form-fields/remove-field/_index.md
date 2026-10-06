@@ -1,6 +1,6 @@
 ---
-title: Remover Campo
-linktitle: Remover Campo
+title: Remover campo
+linktitle: Remover campo
 type: docs
 weight: 40
 url: /pt/java/remove-field/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, remover um campo es
 ---
 ## Remover um campo
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
-2. Chamar `removeField(...)` para o nome do campo de destino.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `removeField(...)` para o nome do campo de destino.
 3. Salve o documento atualizado.
 
 ```java

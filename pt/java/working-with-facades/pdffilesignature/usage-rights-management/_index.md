@@ -1,6 +1,6 @@
 ---
-title: Gerenciamento de Direitos de Uso
-linktitle: Gerenciamento de Direitos de Uso
+title: Gerenciamento de Direitos de uso
+linktitle: Gerenciamento de Direitos de uso
 type: docs
 weight: 100
 url: /pt/java/usage-rights-management/

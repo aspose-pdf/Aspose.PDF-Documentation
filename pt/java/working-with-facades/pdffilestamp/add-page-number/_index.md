@@ -16,14 +16,14 @@ Abstract: Saiba como adicionar números de página a documentos PDF com Aspose.P
 ---
 ## Adicionar número de página ao PDF
 
-Usar `PdfFileStamp` quando a numeração de páginas deve ser aplicada após o conteúdo do PDF já ter sido criado.
+Use `PdfFileStamp` quando a numeração de páginas deve ser aplicada após o conteúdo do PDF já ter sido criado.
 
 ### Etapas
 
-1. Criar um `PdfFileStamp` instancie e vincule o PDF de origem.
+1. Crie um `PdfFileStamp` instancie e vincule o PDF de origem.
 2. Escolha a estratégia de posicionamento de número de página que você precisar.
 3. Opcionalmente, defina o estilo de numeração e o número inicial antes de aplicar o carimbo.
-4. Chamar `addPageNumber` com a sobrecarga necessária.
+4. Chame `addPageNumber` com a sobrecarga necessária.
 5. Salve a saída e feche o objeto fachada.
 
 ### Exemplos Java

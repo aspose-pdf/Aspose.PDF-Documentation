@@ -1,6 +1,6 @@
 ---
 title: Extrair informações de assinatura de PDF em Java
-linktitle: Extrair detalhes da Assinatura
+linktitle: Extrair detalhes da assinatura
 type: docs
 weight: 20
 url: /pt/java/extract-image-and-signature-information/
@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: Extrair detalhes da assinatura e dados do certificado de PDFs assinados em Java
 Abstract: Este artigo explica como inspecionar assinaturas digitais em documentos PDF usando Aspose.PDF for Java. Aprenda como ler detalhes do assinante, verificar uma assinatura, verificar se uma assinatura cobre todo o documento, extrair o certificado de assinatura incorporado e remover uma assinatura existente.
 ---
-Usar `PdfFileSignature` para inspecionar e gerenciar assinaturas que já existem em um documento PDF.
+Use `PdfFileSignature` para inspecionar e gerenciar assinaturas que já existem em um documento PDF.
 
 ## Ler informações da assinatura
 
-1. Criar o [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) fachada e vincule o documento PDF de origem.
+1. Crie a fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) e vincule o documento PDF de origem.
 1. Acesse o nome da assinatura do documento e configure o fluxo de inspeção de assinatura exigido pelo exemplo.
-1. Leia e verifique as informações da assinatura a partir do [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) fachada.
+1. Leia e verifique as informações da assinatura a partir da fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 1. Leia os valores retornados ou continue com a próxima etapa de processamento.
 
 ```java
@@ -41,9 +41,9 @@ public static void getSignatureInformation(Path inputFile) {
 
 ## Verificar uma assinatura
 
-1. Criar o [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) fachada e vincule o documento PDF de origem.
+1. Crie a fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) e vincule o documento PDF de origem.
 1. Acesse o nome da assinatura do documento e configure o fluxo de verificação exigido pelo exemplo.
-1. Leia e verifique as informações da assinatura a partir do [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) fachada.
+1. Leia e verifique as informações da assinatura a partir da fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {
@@ -63,9 +63,9 @@ public static void verifyPdfSignature(Path inputFile) {
 
 ## "Extrair o certificado de assinatura"
 
-1. Criar o [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) fachada e vincule o documento PDF de origem.
+1. Crie a fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) e vincule o documento PDF de origem.
 1. "Acesse o nome da assinatura do documento necessário para a extração do certificado."
-1. Escreva a saída extraída ou inspecione os valores retornados do [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) fachada.
+1. Escreva a saída extraída ou inspecione os valores retornados da fachada [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/).
 
 ```java
 public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {

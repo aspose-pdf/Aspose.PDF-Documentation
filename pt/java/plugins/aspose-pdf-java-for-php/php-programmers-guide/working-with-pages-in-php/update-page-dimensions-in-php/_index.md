@@ -7,7 +7,7 @@ url: /pt/java/update-page-dimensions-in-php/
 description: Aprenda como modificar as dimensões da página em um documento PDF em PHP usando Aspose.PDF para melhor controle de layout.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Atualizar dimensões da página
+## Aspose.PDF - atualizar dimensões da página
 
 Para atualizar as dimensões da página usando **Aspose.PDF Java for PHP**, basta invocar a classe **UpdatePageDimensions**.
 
@@ -37,6 +37,6 @@ print "Dimensions updated successfully!" . PHP_EOL;
 
 **Baixar Código em Execução**
 
-Baixar\u0412\u00A0**Atualizar Dimensões da Página (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Atualizar Dimensões da Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/UpdatePageDimensions.php)

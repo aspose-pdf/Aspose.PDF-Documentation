@@ -19,8 +19,8 @@ Aspose.PDF for Java permite que você recorte páginas tanto por coordenadas de 
 
 Use este exemplo quando precisar aplicar a mesma área de corte às caixas de página principais.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar o novo corte [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie o novo corte [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
 1. Aplique o retângulo às caixas de página relacionadas ao corte e salve o documento.
 
 ```java
@@ -40,8 +40,8 @@ public static void cropPage(Path inputFile, Path outputFile) {
 
 Use este exemplo quando a área de recorte deve ser derivada da primeira imagem detectada na página.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para detectar posicionamentos de imagens.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para detectar posicionamentos de imagens.
 1. Defina a caixa de recorte para o retângulo da imagem se uma for encontrada, então salve o documento.
 
 ```java

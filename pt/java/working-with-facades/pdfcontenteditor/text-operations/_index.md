@@ -1,6 +1,6 @@
 ---
-title: Operações de Texto
-linktitle: Operações de Texto
+title: Operações de texto
+linktitle: Operações de texto
 type: docs
 weight: 90
 url: /pt/java/pdfcontenteditor-text-operations/

@@ -45,8 +45,8 @@ doc.save(data_dir + "JavaScript-Added.pdf")
 puts "Added JavaScript Successfully, please check the output file."
 ```
 
-## Baixar código em execução
+## Baixar o exemplo de código
 
-DownloadВ **Adicionando JavaScript (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Download **Adicionando JavaScript (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addjavascript.rb)

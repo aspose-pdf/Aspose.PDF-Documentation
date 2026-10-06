@@ -1,6 +1,6 @@
 ---
-title: Converter PDF para Pasta de Trabalho Excel em Python
-linktitle: Converter PDF para Pasta de Trabalho Excel em Python
+title: Converter PDF para pasta de trabalho Excel em Python
+linktitle: Converter PDF para pasta de trabalho Excel em Python
 type: docs
 weight: 20
 url: /pt/java/convert-pdf-to-excel-workbook-in-python/
@@ -25,6 +25,6 @@ print "Document has been converted successfully"
 
 **Download do Código em Execução**
 
-BaixarВ **Convert PDF to Excel Workbook (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Convert PDF to Excel Workbook (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/PdfToExcel/PdfToExcel.py)

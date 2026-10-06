@@ -19,8 +19,8 @@ O exemplo Java usa `PdfFileEditor.makeNUp` para construir um layout 2x2 a partir
 
 ### Etapas
 
-1. Criar um `PdfFileEditor` instância.
-2. Chamar `makeNUp` com o arquivo de entrada, arquivo de saída e o número de colunas e linhas.
+1. Crie uma instância de `PdfFileEditor`.
+2. Chame `makeNUp` com o arquivo de entrada, arquivo de saída e o número de colunas e linhas.
 3. Salve o documento gerado.
 4. Se você quiser verificação explícita de sucesso, chame a variante que retorna booleano e trate um `false` resultado.
 

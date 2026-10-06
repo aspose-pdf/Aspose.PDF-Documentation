@@ -29,9 +29,9 @@ Aspose.PDF for Java permite que você crie arquivos PDF diretamente através da 
 
 Aspose.PDF Java for Jython é um projeto que demonstra / fornece exemplos de uso da API Aspose.PDF for Java em Jython.
 
-## Requisitos do Sistema e Plataformas Suportadas
+## Requisitos do sistema e plataformas suportadas
 
-### Requisitos do Sistema
+### Requisitos do sistema
 
 A seguir estão os requisitos do sistema para usar Aspose.PDF Java for Jython:
 
@@ -46,7 +46,7 @@ A seguir estão as plataformas suportadas:
 - Aspose.PDF 15.4 e superior.
 - IDE Java (Eclipse, NetBeans ...)
 
-## Baixar Instalação e Uso
+## Baixar instalação e uso
 
 ### Baixar
 
@@ -89,7 +89,7 @@ if __name__ == '__main__':
     PdfToDoc()
 ```
 
-## Suporte, Expanda e Contribua
+## Suporte, extensão e contribuição
 
 ### Suporte
 
@@ -97,11 +97,11 @@ Desde os primeiros dias da Aspose, sabíamos que apenas oferecer bons produtos a
 
 É por isso que oferecemos suporte gratuito. Qualquer pessoa que usa nosso produto, seja comprando-o ou usando uma avaliação, merece nossa total atenção e respeito.
 
-Você pode registrar quaisquer problemas ou sugestões relacionados a\u0412\u00A0Aspose.PDF Java para Jython usando qualquer uma das plataformas a seguir:
+Você pode registrar quaisquer problemas ou sugestões relacionados a Aspose.PDF Java para Jython usando qualquer uma das plataformas a seguir:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-### Estenda e Contribua
+### Estender e contribuir
 
 Aspose.PDF Java para Jython é open source e seu código-fonte está disponível nos principais sites de codificação social listados abaixo. Os desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novos recursos ou aprimorando os existentes, para que outros também possam se beneficiar dele.
 

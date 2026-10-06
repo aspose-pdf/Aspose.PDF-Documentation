@@ -1,6 +1,6 @@
 ---
-title: Substituir Texto com Estado
-linktitle: Substituir Texto com Estado
+title: Substituir texto com Estado
+linktitle: Substituir texto com Estado
 type: docs
 weight: 20
 url: /pt/java/replace-text-with-state/
@@ -12,10 +12,10 @@ Abstract: Este artigo mostra como vincular um PDF, configurar um TextState perso
 ---
 ## Substituir texto com um estado de texto personalizado
 
-1. Vincular o PDF de origem ao `PdfContentEditor` fachada.
-2. Criar e configurar um `TextState` com a cor e o tamanho de fonte necessários.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
+2. Crie e configure um `TextState` com a cor e o tamanho de fonte necessários.
 3. Defina o escopo de substituição de texto para `ReplaceAll`.
-4. Chamar `replaceText(...)` com o texto de pesquisa, texto de substituição e configurado `TextState`.
+4. Chame `replaceText(...)` com o texto de pesquisa, texto de substituição e configurado `TextState`.
 5. Salve o documento PDF atualizado.
 
 ```java

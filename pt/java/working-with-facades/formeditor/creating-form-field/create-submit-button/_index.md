@@ -10,11 +10,11 @@ TechArticle: true
 AlternativeHeadline: Criar um botão de envio PDF em Java
 Abstract: Este artigo mostra como vincular um PDF existente, adicionar um campo de botão de envio com uma URL de destino e salvar o documento modificado usando a fachada FormEditor no Aspose.PDF for Java.
 ---
-Usar `FormEditorExamples.createSubmitButton(...)` criar um botão que envia dados do formulário.
+Use `FormEditorExamples.createSubmitButton(...)` criar um botão que envia dados do formulário.
 
 ## Criar um botão de envio
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
+1. Vincule o PDF de origem à fachada `FormEditor`.
 2. Ligar `addSubmitBtn(...)` com o nome do botão, página, rótulo, URL de destino e retângulo.
 3. Salve o documento atualizado.
 

@@ -1,6 +1,6 @@
 ---
-title: Guia do Programador PHP
-linktitle: Guia do Programador PHP
+title: Guia do programador PHP
+linktitle: Guia do programador PHP
 type: docs
 weight: 20
 url: /pt/java/php-programmers-guide/

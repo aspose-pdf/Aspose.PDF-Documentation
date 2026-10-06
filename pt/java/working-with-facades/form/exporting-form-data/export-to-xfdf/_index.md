@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Exportar dados AcroForm para XFDF em Java
 Abstract: Este artigo mostra como vincular um formulário PDF e exportar seus valores de campo para um fluxo XFDF com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.exportXfdf(...)` para escrever dados de campo de formulário como XFDF.
+Use `FormExamples.exportXfdf(...)` para escrever dados de campo de formulário como XFDF.
 
 ```java
 public static void exportXfdf(Path inputFile, Path outputFile) throws Exception {

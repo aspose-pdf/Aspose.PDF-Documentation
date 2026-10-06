@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Conversão de Documentos em Jython
-linktitle: Trabalhar com Conversão de Documentos em Jython
+title: Trabalhar com conversão de documentos em Jython
+linktitle: Trabalhar com conversão de documentos em Jython
 type: docs
 weight: 10
 url: /pt/java/working-with-document-conversion-in-jython/

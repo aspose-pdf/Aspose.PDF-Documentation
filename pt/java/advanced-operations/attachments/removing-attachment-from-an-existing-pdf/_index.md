@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: Excluir anexos de PDF programaticamente com Java
 Abstract: Este artigo mostra como remover anexos de arquivos PDF usando Aspose.PDF for Java. Os exemplos demonstram a exclusão de um arquivo incorporado por chave e a limpeza de toda a coleção EmbeddedFiles antes de salvar o documento atualizado.
 ---
-Os anexos armazenados em um documento PDF podem ser removidos individualmente ou todos de uma vez através do `EmbeddedFiles` coleção.
+Os anexos armazenados em um documento PDF podem ser removidos individualmente ou todos de uma vez através da coleção `EmbeddedFiles`.
 
 ## Remover um único anexo
 
 Use este exemplo quando um arquivo incorporado nomeado deve ser excluído do PDF.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Exclua o anexo pela sua chave da coleção de arquivos incorporados.
 1. Salve o documento de saída atualizado.
 
@@ -36,7 +36,7 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 Use esta abordagem quando a coleção inteira de arquivos incorporados precisar ser limpa.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Exclua todos os itens da coleção de arquivos incorporados.
 1. Salve o documento de saída limpo.
 

@@ -1,6 +1,6 @@
 ---
-title: Adicionar e Excluir Marcadores de PDF em Java
-linktitle: Adicionar e Excluir um Marcador
+title: Adicionar e excluir marcadores de PDF em Java
+linktitle: Adicionar e excluir um marcador
 type: docs
 weight: 10
 url: /pt/java/add-and-delete-bookmark/
@@ -19,7 +19,7 @@ Use a coleção de contorno de documento para gerenciar marcadores programaticam
 
 Use este exemplo quando o documento deve incluir uma única entrada de contorno de nível superior.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie um [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) e configure seu título, estilo e ação.
 1. Adicione o marcador aos contornos do documento e salve o arquivo.
 
@@ -42,8 +42,8 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 
 Este exemplo cria um marcador pai e aninha um marcador filho sob ele.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar pai e filho [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) objetos.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie pai e filho objetos [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/).
 1. Adicione o filho ao pai, adicione o pai à coleção de contornos e salve o documento.
 
 ```java
@@ -70,9 +70,9 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 
 Use esta abordagem quando toda a coleção de marcadores deve ser removida do documento.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Excluir a coleção completa de marcadores.
-1. Salvar o arquivo de saída limpo.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Exclua a coleção completa de marcadores.
+1. Salve o arquivo de saída limpo.
 
 ```java
 public static void deleteBookmarks(Path inputFile, Path outputFile) {
@@ -87,7 +87,7 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 
 Use este exemplo quando um marcador nomeado deve ser removido sem limpar toda a árvore de marcadores.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Exclua o marcador pelo título da coleção de outlines.
 1. Salve o documento atualizado.
 

@@ -1,6 +1,6 @@
 ---
-title: Operações de Imagem
-linktitle: Operações de Imagem
+title: Operações de imagem
+linktitle: Operações de imagem
 type: docs
 weight: 50
 url: /pt/java/pdfcontenteditor-image-operations/
@@ -14,8 +14,8 @@ O Java atual `PdfContentEditorExamples` classe suporta diretamente `replaceImage
 
 ## Substituir uma imagem
 
-1. Vincule o PDF de origem ao `PdfContentEditor` fachada.
-2. Chamar `replaceImage(...)` com o número da página, índice da imagem e caminho da imagem de substituição.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
+2. Chame `replaceImage(...)` com o número da página, índice da imagem e caminho da imagem de substituição.
 3. Salve o documento PDF atualizado.
 
 ```java

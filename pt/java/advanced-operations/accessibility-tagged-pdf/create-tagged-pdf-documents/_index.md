@@ -18,7 +18,7 @@ Criar um PDF marcado significa adicionar elementos de estrutura que tornam o doc
 
 Use este exemplo quando precisar de um PDF marcado mínimo com um título e um parágrafo na árvore de estrutura lógica.
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obter o seu [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obtenha o seu [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
 1. Defina o título e o idioma do documento, então crie os elementos de cabeçalho e parágrafo necessários.
 1. Anexe os elementos de estrutura ao elemento raiz e salve o documento.
 
@@ -50,7 +50,7 @@ public static void createTaggedPdfDocumentSimple(Path outputFile) {
 
 Este exemplo cria uma estrutura mais rica ao combinar cabeçalhos, parágrafos, spans, citações e configurações explícitas de layout.
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicializar metadados de conteúdo marcado.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicialize metadados de conteúdo marcado.
 1. Construa a estrutura de título e parágrafo, depois adicione spans e um elemento de citação dentro do parágrafo.
 1. Ajuste a posição do parágrafo, anexe os elementos à estrutura raiz e salve o documento.
 
@@ -99,7 +99,7 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 
 Use este exemplo quando o conteúdo de parágrafo marcado deve conter informações explícitas de fonte, cor e estilo.
 
-1. Criar um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie um elemento de parágrafo e configure seu estado de texto de estrutura.
 1. Defina o texto do parágrafo e salve o documento.
 
@@ -128,8 +128,8 @@ public static void addStyle(Path outputFile) {
 
 Este exemplo mostra como criar uma figura marcada com texto alternativo, título, tag personalizada, conteúdo de imagem e posicionamento.
 
-1. Criar um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), defina seus metadados acessíveis e atribua a imagem.
+1. Crie um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/), defina seus metadados acessíveis e atribua a imagem.
 1. Ajuste a posição da figura e salve o documento.
 
 ```java
@@ -163,8 +163,8 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 
 Use este exemplo quando precisar verificar se um PDF marcado satisfaz as regras de validação PDF/UA.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Executar validação contra [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Execute validação contra [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
 1. Escreva o registro de validação e imprima o resultado da validação.
 
 ```java
@@ -180,8 +180,8 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 
 Este exemplo aplica configurações explícitas de margem e alinhamento a um parágrafo marcado.
 
-1. Criar um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicionar um elemento de estrutura de parágrafo e preparar [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. Crie um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um elemento de estrutura de parágrafo e prepare [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
 1. Aplique as configurações de posição ao parágrafo e salve o documento.
 
 ```java
@@ -220,8 +220,8 @@ public static void adjustPosition(Path outputFile) {
 
 Use esta abordagem quando um PDF existente deve ser convertido para PDF/UA e marcado automaticamente durante a conversão.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) e habilite a marcação automática.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) e habilite a marcação automática.
 1. Execute a conversão e salve o documento de saída.
 
 ```java
@@ -241,13 +241,13 @@ public static void convertToPdfUaWithAutomaticTagging(Path inputFile, Path outpu
 }
 ```
 
-## Crie um PDF marcado com um campo de formulário acessível
+## Criar um PDF marcado com um campo de formulário acessível
 
 Este exemplo marca um campo de formulário de assinatura para que ele faça parte da árvore de estrutura lógica.
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione uma página com um campo de formulário.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione uma página com um campo de formulário.
 1. Adicione o FormField à coleção de formulários do documento.
-1. Criar um elemento de estrutura de formulário marcado, associá-lo ao campo e salvar o documento.
+1. Crie um elemento de estrutura de formulário marcado, associe-o ao campo e salve o documento.
 
 ```java
 public static void createPdfWithTaggedFormField(Path outputFile) {
@@ -277,8 +277,8 @@ public static void createPdfWithTaggedFormField(Path outputFile) {
 
 Use este exemplo quando um PDF marcado deve incluir uma página de índice básica vinculada aos títulos do documento.
 
-1. Criar um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione uma página de TOC.
-1. Criar o [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) e um cabeçalho que deve aparecer no TOC.
+1. Crie um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione uma página de TOC.
+1. Crie o [TOCElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tocelement/) e um cabeçalho que deve aparecer no TOC.
 1. Vincule a entrada do TOC ao título e salve o documento.
 
 ```java
@@ -314,7 +314,7 @@ public static void createPdfWithTocPage(Path outputFile) {
 
 Este exemplo constrói um TOC marcado mais complexo com títulos de página vinculados, itens de lista aninhados e múltiplos níveis de título.
 
-1. Criar um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e prepare uma página de TOC com um título visível.
+1. Crie um novo PDF marcado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e prepare uma página de TOC com um título visível.
 1. Crie a estrutura TOC, vincule o título e as entradas do TOC aos cabeçalhos e itens de lista e adicione os elementos de conteúdo relacionados.
 1. Salve o documento final com a estrutura avançada de TOC.
 

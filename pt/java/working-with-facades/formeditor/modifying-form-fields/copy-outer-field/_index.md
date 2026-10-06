@@ -1,6 +1,6 @@
 ---
-title: Copiar Campo Externo
-linktitle: Copiar Campo Externo
+title: Copiar campo externo
+linktitle: Copiar campo externo
 type: docs
 weight: 80
 url: /pt/java/copy-outer-field/
@@ -13,8 +13,8 @@ Abstract: Este artigo mostra como criar um PDF de destino, vinculá-lo à fachad
 ## Copiar um campo de outro PDF
 
 1. Crie um PDF de destino com pelo menos uma página.
-2. Vincule o PDF de destino ao `FormEditor` fachada.
-3. Chamar `copyOuterField(...)` com o caminho do documento de origem, nome do campo, página de destino e coordenadas.
+2. Vincule o PDF de destino à fachada `FormEditor`.
+3. Chame `copyOuterField(...)` com o caminho do documento de origem, nome do campo, página de destino e coordenadas.
 4. Salve o documento de destino atualizado.
 
 ```java

@@ -52,7 +52,7 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 Use este exemplo quando a cor visível das anotações de link existentes deve ser alterada.
 
 1. Abra o PDF fonte [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Itere pelas anotações da página e filtre por [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) objetos.
+1. Itere pelas anotações da página e filtre por objetos [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/).
 1. Atualize a cor da anotação de link e salve o documento.
 
 ```java

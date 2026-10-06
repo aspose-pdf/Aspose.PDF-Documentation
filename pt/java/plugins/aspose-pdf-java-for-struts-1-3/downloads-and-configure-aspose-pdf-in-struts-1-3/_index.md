@@ -1,6 +1,6 @@
 ---
-title: Downloads e Configuração do Aspose.Pdf no Struts 1.3
-linktitle: Downloads e Configuração do Aspose.Pdf no Struts 1.3
+title: Downloads e configuração do Aspose.PDF no Struts 1.3
+linktitle: Downloads e configuração do Aspose.PDF no Struts 1.3
 type: docs
 weight: 10
 url: /pt/java/downloads-and-configure-aspose-pdf-in-struts-1-3/
@@ -13,7 +13,7 @@ Você pode baixar / obter o código-fonte do projeto nos seguintes locais:
 
 - [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_for_Struts)
 
-## Compilando Aspose.PDF Java para Struts 1.3 a partir do código-fonte
+## Compilar Aspose.PDF Java para Struts 1.3 a partir do código-fonte
 
 Depois de fazer checkout dos códigos-fonte de qualquer um dos repositórios acima, aplique os seguintes comandos mvn:
 

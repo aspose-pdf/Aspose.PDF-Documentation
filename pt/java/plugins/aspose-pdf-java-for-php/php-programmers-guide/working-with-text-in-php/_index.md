@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Texto em PHP
-linktitle: Trabalhar com Texto em PHP
+title: Trabalhar com texto em PHP
+linktitle: Trabalhar com texto em PHP
 type: docs
 weight: 40
 url: /pt/java/working-with-text-in-php/

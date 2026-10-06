@@ -17,9 +17,9 @@ Abstract: Aprenda como anexar páginas a um PDF com Aspose.PDF for Java. O exemp
 
 O exemplo em Java anexa a página 1 de um segundo PDF ao final do primeiro documento.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileEditor` instância.
+1. Crie uma instância de `PdfFileEditor`.
 2. Vincule o PDF de entrada principal passando seu caminho para `append`.
 3. Forneça a lista de arquivos fonte secundários e o intervalo de páginas a anexar.
 4. Salve o resultado mesclado no arquivo de saída.

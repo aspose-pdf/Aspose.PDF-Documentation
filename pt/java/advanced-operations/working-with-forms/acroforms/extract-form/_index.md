@@ -1,5 +1,5 @@
 ---
-title: Extrair AcroForm - Extrair Dados de Formulário de PDF em Java
+title: Extrair AcroForm - extrair dados de formulário de PDF em Java
 linktitle: Extrair AcroForm
 type: docs
 weight: 30
@@ -13,12 +13,12 @@ TechArticle: true
 AlternativeHeadline: Extrair valores de campos de formulário de arquivos PDF com Java
 Abstract: Este artigo mostra como extrair dados dos campos AcroForm usando Aspose.PDF for Java. O exemplo percorre os nomes dos campos com a fachada Form, lê cada valor atual e armazena o resultado em um mapa para processamento subsequente.
 ---
-Use o `Form` fachada quando você precisa de um fluxo simples de extração de nome de campo para valor de campo.
+Use a fachada `Form` quando precisar de um fluxo simples de extração de nome de campo para valor de campo.
 
 ## Extrair valores de todos os campos AcroForm
 
-1. Abrir o documento de formulário PDF com o [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
-1. Iterar pelos nomes dos campos a partir do [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade e ler cada valor de campo atual em um mapa.
+1. Abra o documento de formulário PDF com o [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
+1. Itere pelos nomes dos campos a partir do [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade e leia cada valor de campo atual em um mapa.
 
 ```java
 public static Map<String, String> getValuesFromAllFields(Path inputFile) {

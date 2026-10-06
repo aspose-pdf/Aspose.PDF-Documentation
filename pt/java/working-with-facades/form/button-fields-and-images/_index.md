@@ -1,6 +1,6 @@
 ---
-title: Campos de Botão e Imagens
-linktitle: Campos de Botão e Imagens
+title: Campos de botão e imagens
+linktitle: Campos de botão e imagens
 type: docs
 weight: 40
 url: /pt/java/button-fields-and-images/

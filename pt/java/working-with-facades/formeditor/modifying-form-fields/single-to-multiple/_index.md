@@ -1,6 +1,6 @@
 ---
-title: Único para Múltiplo
-linktitle: Único para Múltiplo
+title: Único para múltiplo
+linktitle: Único para múltiplo
 type: docs
 weight: 60
 url: /pt/java/single-to-multiple/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, converter um campo 
 ---
 ## Converter um campo de linha única para múltiplas linhas
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `single2Multiple(...)` para o nome do campo de destino.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `single2Multiple(...)` para o nome do campo de destino.
 3. Salve o documento atualizado.
 
 ```java

@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Selecionar uma opção de campo de botão de rádio em Java
 Abstract: Este artigo mostra como vincular um formulário PDF, selecionar uma opção de botão de rádio por índice e salvar o documento atualizado com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.fillRadioButtonFields(...)` para selecionar uma opção de botão de rádio.
+Use `FormExamples.fillRadioButtonFields(...)` para selecionar uma opção de botão de rádio.
 
 ```java
 public static void fillRadioButtonFields(Path inputFile, Path outputFile) {

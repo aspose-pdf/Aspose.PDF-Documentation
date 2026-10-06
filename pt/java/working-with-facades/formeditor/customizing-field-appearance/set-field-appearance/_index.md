@@ -1,6 +1,6 @@
 ---
-title: Definir Aparência do Campo
-linktitle: Definir Aparência do Campo
+title: Definir aparência do campo
+linktitle: Definir aparência do campo
 type: docs
 weight: 40
 url: /pt/java/set-field-appearance/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, aplicar um indicado
 ---
 ## Definir indicadores de aparência do campo
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `setFieldAppearance(...)` para o campo de destino e a bandeira de anotação escolhida.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `setFieldAppearance(...)` para o campo de destino e a bandeira de anotação escolhida.
 3. Salve o documento atualizado.
 
 ```java

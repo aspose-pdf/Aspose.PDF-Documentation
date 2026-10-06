@@ -42,7 +42,7 @@ O plugin contém dois assistentes
 - O projeto criado sempre conterá a versão mais recente disponível da dependência **Maven** para a API Aspose.PDF for Java.
 - Os passos do assistente também apresentam a opção de baixar Exemplos de Código para usarAspose.PDF for Java API.
 
-### Exemplo de Código Aspose.PDF (assistente)
+### Exemplo de código Aspose.PDF (assistente)
 
 - Este assistente Novo Arquivo permite que você copie o baixado [Exemplos de Código](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)para o seu projeto para usar Aspose.PDF para Java a partir de **Novo Arquivo -> Java -> Exemplo de Código Aspose.PDF.**
 - Amostras disponíveis são exibidas em formato de árvore de onde o usuário pode selecioná-las categoricamente.
@@ -50,15 +50,15 @@ O plugin contém dois assistentes
 - Exemplos de Código da API Aspose.PDF for Java são destinados a demonstrar a variedade da API.
 - O assistente também procurará e atualizará para recém‑disponíveis a partir de [Repositório de exemplos Aspose.PDF for Java.](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)
 
-## Requisitos de Sistema e Plataformas Compatíveis
+## Requisitos de sistema e plataformas compatíveis
 
-### Requisitos do Sistema
+### Requisitos do sistema
 
 - **Memória do Sistema:** 2 GB ou mais (Recomendado)
 - **SO:** Qualquer sistema operacional que suporte a VM Java (Máquina Virtual)
 - **Conexão com a Internet:** 2 MB ou mais rápido (Recomendado)
 
-### Plataformas Suportadas
+### Plataformas suportadas
 
 - NetBeans 8.1 (Recomendado)
 - NetBeans 8.0
@@ -67,7 +67,7 @@ O plugin contém dois assistentes
 
 ### Baixar NetBeans
 
-Você deve ter o NetBeans IDE pré-instalado antes de baixar **Aspose.PDF Java for NetBeans (Maven)**plugin.
+Instale o NetBeans IDE antes de baixar o plug-in **Aspose.PDF Java for NetBeans (Maven)**.
 
 **Aspose.PDF Java for NetBeans (Maven)** plugin suporta **NetBeans IDE8.0 e 8.1**. Recomendamos usar apenas a versão mais recente do NetBeans IDE.
 
@@ -78,18 +78,18 @@ Para baixar o NetBeans IDE,
 
 Baixe apenas o pacote de download do NetBeans que suporta Java EE / SE da versão mais recente atual, ou seja, **NetBeans IDE 8.1**.
 
-### Baixe Aspose.PDF Java for NetBeans (Maven)
+### Baixar Aspose.PDF Java for NetBeans (Maven)
 
 - O plugin pode ser baixado diretamente da URL de hospedagem do plugin NetBeans:<http://plugins.netbeans.org/plugin/63218>
   e depois pode ser instalado usando a opção do IDE:
-  - Ir para**Tools**>**Plugins**>**Downloaded
-  - Clique **Add Plugins...**e navegue para o arquivo de extensão .nbm baixado para **Aspose.PDF Java for NetBeans (Maven)**.
-  - Clique**"Install"**para instalar o plugin
+  - Acesse **Tools** > **Plugins** > **Downloaded**.
+  - Clique em **Add Plugins...** e navegue para o arquivo de extensão .nbm baixado para **Aspose.PDF Java for NetBeans (Maven)**.
+  - Clique em **"Install"** para instalar o plug-in.
 - Ou pode ser instalado diretamente (sem download manual da URL de hospedagem de plugins do NetBeans) usando as opções da IDE:
-  - Vá para**Tools**>**Plugins**>**Available Plugins**
+  - Acesse **Tools** > **Plugins** > **Available Plugins**.
   - Na caixa de pesquisa digite: "Aspose"
   - Selecione o plugin **Aspose.PDF Java NetBeans (Maven)**
-  - Clique**"Install"**
+  - Clique em **"Install"**.
 
 ## Instalar
 
@@ -99,7 +99,7 @@ Instalando Aspose.PDF para NetBeans - Maven
 
 Usando Aspose.PDF para NetBeans - Maven
 
-### Como aplicar a licença Aspose?
+### Aplicar a licença Aspose
 
 Este plugin usa uma versão de avaliação do Aspose.PDF. Quando ficar satisfeito com sua avaliação, você pode comprar uma licença em [site da Aspose](https://purchase.aspose.com/buy).
 Para remover a mensagem de avaliação e as limitações de recursos, uma licença do produto deve ser aplicada. Você receberá um arquivo de licença após comprar o produto. Por favor, siga os passos abaixo para aplicar a licença.
@@ -113,7 +113,7 @@ License license = new License();
 license.setLicense("Aspose.PDF.Java.lic");
 ```
 
-## Suporte, Extensão e Contribuição
+## Suporte, extensão e contribuição
 
 ### Suporte
 
@@ -123,7 +123,7 @@ license.setLicense("Aspose.PDF.Java.lic");
 
 Por favor, siga[**GitHub Issues Tracker**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)para registrar quaisquer problemas encontrados no plugin.
 
-### Estenda e Contribua
+### Estender e contribuir
 
 Aspose.PDF Java para NetBeans (Maven) é de código aberto e seu código-fonte está disponível nos principais sites de desenvolvimento colaborativo listados abaixo. Os desenvolvedores são incentivados a baixar o código-fonte e contribuir sugerindo ou adicionando novos recursos ou melhorando os existentes, de modo que outros também possam se beneficiar dele. Os desenvolvedores também podem aprender com ele para criar seus próprios plugins.
 

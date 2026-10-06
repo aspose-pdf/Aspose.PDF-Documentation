@@ -1,6 +1,6 @@
 ---
-title: Modificando AcroForm
-linktitle: Modificando AcroForm
+title: Modificar AcroForm
+linktitle: Modificar AcroForm
 type: docs
 weight: 45
 url: /pt/java/modifying-form/
@@ -10,16 +10,16 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Modifique e personalize campos de formulário PDF com Java
+AlternativeHeadline: Modificar e personalize campos de formulário PDF com Java
 Abstract: Este artigo explica como modificar o conteúdo AcroForm usando Aspose.PDF for Java. Ele aborda limpar texto de recursos de formulário Typewriter, definir e ler limites de comprimento de campos de texto, alterar a aparência da Font dos campos de formulário e excluir campos específicos pelo nome.
 ---
 A manutenção de Form frequentemente envolve tanto edições de nível de campo quanto a limpeza de recursos de página relacionados ao Form.
 
-## Limpar texto em recursos de Form incorporados.
+## Limpar texto em recursos de Form incorporados
 
 Use este exemplo quando o conteúdo de Form Typewriter deve ser esvaziado sem remover os próprios objetos do Form.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere pelos recursos de formulário da página e localize formulários Typewriter.
 1. Limpe os fragmentos de texto absorvidos e salve o documento.
 
@@ -41,11 +41,11 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 }
 ```
 
-## Defina um limite de comprimento para o campo de texto
+## Definir um limite de comprimento para o campo de texto
 
 Use este exemplo quando um campo de texto deve aceitar apenas um número limitado de caracteres.
 
-1. Criar um [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) fachada e vincular o PDF de origem.
+1. Crie um [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) fachada e vincule o PDF de origem.
 1. Defina o comprimento máximo para o campo de destino.
 1. Salve o documento atualizado.
 
@@ -62,11 +62,11 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 }
 ```
 
-## Obtenha um limite de comprimento de campo de texto
+## Obter um limite de comprimento de campo de texto
 
 Use este exemplo quando precisar inspecionar o comprimento máximo atual de um campo de texto.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Acesse o campo alvo a partir da coleção de formulários.
 1. Leia o limite a partir do [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) e exiba-o.
 
@@ -85,7 +85,7 @@ public static void getFieldLimit(Path inputFile) {
 
 Use este exemplo quando um campo de texto existente deve usar uma fonte ou aparência diferente.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Acesse o alvo [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) e defina uma nova aparência padrão.
 1. Salve o PDF atualizado.
 
@@ -107,7 +107,7 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 
 Use este exemplo quando um campo específico deve ser removido do AcroForm.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Exclua o campo de destino do formulário pelo nome.
 1. Salve o documento atualizado.
 

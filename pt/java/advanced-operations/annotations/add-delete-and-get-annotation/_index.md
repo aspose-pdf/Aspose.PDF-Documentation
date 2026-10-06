@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Como manipular anotações em PDF com Java
+AlternativeHeadline: Manipular anotações em PDF com Java
 Abstract: Este artigo agrupa os principais fluxos de trabalho de anotações disponíveis nesta seção Java. Ele ajuda você a navegar pelos tópicos de anotações de texto, marcação, interativo, forma, mídia, segurança e marca d'água com base nos exemplos Java incluídos no repositório.
 ---
 Esta página agrupa as famílias de anotações cobertas pelos exemplos Java em `examples/workingwithannotations`.

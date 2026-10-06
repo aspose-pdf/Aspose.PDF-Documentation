@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Importar dados AcroForm de XML em Java
 Abstract: Este artigo mostra como vincular um formulário PDF, importar valores de campos de um fluxo XML e salvar o documento atualizado com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.importXml(...)` para preencher um formulário a partir de dados XML.
+Use `FormExamples.importXml(...)` para preencher um formulário a partir de dados XML.
 
 ```java
 public static void importXml(Path inputFile, Path dataFile, Path outputFile) throws Exception {

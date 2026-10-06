@@ -1,6 +1,6 @@
 ---
-title: Criar Campo CheckBox
-linktitle: Criar Campo CheckBox
+title: Criar campo CheckBox
+linktitle: Criar campo CheckBox
 type: docs
 weight: 20
 url: /pt/java/create-checkbox-field/
@@ -10,12 +10,12 @@ TechArticle: true
 AlternativeHeadline: Criar um campo de checkbox em um PDF com Java
 Abstract: Este artigo mostra como vincular um PDF existente, adicionar um campo de caixa de seleção em uma posição especificada e salvar o documento modificado usando a fachada FormEditor no Aspose.PDF for Java.
 ---
-Usar `FormEditorExamples.createCheckBoxField(...)` para adicionar um campo de caixa de seleção a um formulário PDF.
+Use `FormEditorExamples.createCheckBoxField(...)` para adicionar um campo de caixa de seleção a um formulário PDF.
 
 ## Criar um campo de caixa de seleção
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
-2. Adicionar o campo de caixa de seleção com `FieldType.CheckBox`, o nome do campo, legenda, página e retângulo.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Adicione o campo de caixa de seleção com `FieldType.CheckBox`, o nome do campo, legenda, página e retângulo.
 3. Salve o documento atualizado.
 
 ```java

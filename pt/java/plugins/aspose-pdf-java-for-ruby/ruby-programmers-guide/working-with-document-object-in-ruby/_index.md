@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com o Objeto de Documento em Ruby
-linktitle: Trabalhar com o Objeto de Documento em Ruby
+title: Trabalhar com o objeto de documento em Ruby
+linktitle: Trabalhar com o objeto de documento em Ruby
 type: docs
 weight: 10
 url: /pt/java/working-with-document-object-in-ruby/

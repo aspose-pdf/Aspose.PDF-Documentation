@@ -1,6 +1,6 @@
 ---
-title: Anotações Baseadas em Texto usando Java
-linktitle: Anotações de Texto
+title: Anotações baseadas em texto usando Java
+linktitle: Anotações de texto
 type: docs
 weight: 10
 url: /pt/java/text-based-annotations/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações de PDF de texto em Java.
+AlternativeHeadline: Trabalhar com anotações de PDF de texto em Java
 Abstract: Este artigo demonstra como trabalhar com cinco tipos de anotação baseados em texto no Aspose.PDF for Java, incluindo anotações de texto livre, realce, tachado, ondulado e sublinhado. Aprenda a adicionar, recuperar e excluir anotações, além de técnicas avançadas como marcar texto e achatar marcações interativas.
 ---
 Anotações baseadas em texto permitem que revisores e desenvolvedores adicionem notas interativas, realces e marcações a documentos PDF sem alterar o conteúdo principal. Esta seção aborda cinco tipos práticos de anotações usados em fluxos de trabalho de revisão de documentos, cenários de conformidade e ciclos de feedback colaborativo.
@@ -31,8 +31,8 @@ Anotações de texto livre funcionam como caixas de texto flutuantes que podem s
 
 ### Adicionar anotações de texto livre
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) com um retângulo e configurações de aparência.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) com um retângulo e configurações de aparência.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -51,10 +51,10 @@ public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### Obtenha anotações de texto livre
+### Obter anotações de texto livre
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar através das anotações na página e filtrar por [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere através das anotações na página e filtre por [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
 1. Recupere as propriedades ou limites da anotação.
 
 ```java
@@ -71,9 +71,9 @@ public static void freeTextAnnotationGet(Path inputFile) {
 
 ### Excluir anotações de texto livre
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Encontre anotações de texto livre iterando pelas anotações da página e filtrando por tipo.
-1. Adicionar anotações correspondentes a uma lista de exclusão e removê-las da página.
+1. Adicione anotações correspondentes a uma lista de exclusão e removê-las da página.
 1. Salve o documento atualizado.
 
 ```java
@@ -99,8 +99,8 @@ Anotações de destaque marcam trechos importantes com uma sobreposição semitr
 
 ### Adicionar anotações de destaque
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) com um retângulo definindo a área de destaque.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) com um retângulo definindo a área de destaque.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -118,8 +118,8 @@ public static void textHighlightAnnotationAdd(Path inputFile, Path outputFile) {
 
 ### Obter anotações de realce
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar pelas anotações e filtrar por [AnnotationType.Highlight](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere pelas anotações e filtre por [AnnotationType.Highlight](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
 1. Leia as propriedades da anotação, como limites ou cor.
 
 ```java
@@ -136,8 +136,8 @@ public static void textHighlightAnnotationGet(Path inputFile) {
 
 ### Excluir anotações de destaque
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações de destaque filtrando anotações por tipo.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações de destaque filtrando anotações por tipo.
 1. Remova cada anotação da página.
 1. Salve o documento atualizado.
 
@@ -164,8 +164,8 @@ Anotações de tachado riscam o texto para indicar exclusão, rejeição ou revi
 
 ### Adicionar anotações de tachado
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) com um retângulo, título e cor.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) com um retângulo, título e cor.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -187,9 +187,9 @@ public static void textStrikeoutAnnotationAdd(Path inputFile, Path outputFile) {
 
 ### Obter anotações de tachado
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar pelas anotações e filtrar por [AnnotationType.StrikeOut](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. Ler metadados da anotação ou limites.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere pelas anotações e filtre por [AnnotationType.StrikeOut](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. Leia metadados da anotação ou limites.
 
 ```java
 public static void textStrikeoutAnnotationGet(Path inputFile) {
@@ -205,8 +205,8 @@ public static void textStrikeoutAnnotationGet(Path inputFile) {
 
 ### Excluir anotações de tachado
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações de tachado filtrando por tipo.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações de tachado filtrando por tipo.
 1. Remova cada anotação da página.
 1. Salve o documento atualizado.
 
@@ -233,8 +233,8 @@ Anotações onduladas (sublinhados ondulados) destacam erros potenciais, preocup
 
 ### Adicionar anotações onduladas
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) com um retângulo e título.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) com um retângulo e título.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -255,9 +255,9 @@ public static void textSquigglyAnnotationAdd(Path inputFile, Path outputFile) {
 
 ### Obter anotações onduladas
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar pelas anotações e filtrar por [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. Ler limites da anotação ou metadados.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere pelas anotações e filtre por [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. Leia limites da anotação ou metadados.
 
 ```java
 public static void textSquigglyAnnotationGet(Path inputFile) {
@@ -273,8 +273,8 @@ public static void textSquigglyAnnotationGet(Path inputFile) {
 
 ### Excluir anotações onduladas
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações onduladas filtrando por tipo.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações onduladas filtrando por tipo.
 1. Remova cada anotação da página.
 1. Salve o documento atualizado.
 
@@ -301,8 +301,8 @@ Anotações de sublinhado enfatizam trechos importantes com um sublinhado tradic
 
 ### Adicionar anotações de sublinhado
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) com um retângulo e cor.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) com um retângulo e cor.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -324,9 +324,9 @@ public static void textUnderlineAnnotationAdd(Path inputFile, Path outputFile) {
 
 ### Obter anotações sublinhadas
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar pelas anotações e filtrar por [AnnotationType.Underline](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. Ler propriedades da anotação ou limites.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere pelas anotações e filtre por [AnnotationType.Underline](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
+1. Leia propriedades da anotação ou limites.
 
 ```java
 public static void textUnderlineAnnotationGet(Path inputFile) {
@@ -342,8 +342,8 @@ public static void textUnderlineAnnotationGet(Path inputFile) {
 
 ### Excluir anotações de sublinhado
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Coletar anotações de sublinhado filtrando por tipo.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Colete anotações de sublinhado filtrando por tipo.
 1. Remova cada anotação da página.
 1. Salve o documento atualizado.
 
@@ -368,8 +368,8 @@ public static void textUnderlineAnnotationDelete(Path inputFile, Path outputFile
 
 Este exemplo define a área de sublinhado explicitamente através de pontos quad derivados de um retângulo.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) e calcule seus quad points.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) e calcule seus quad points.
 1. Adicione a anotação à página e salve o documento.
 
 ```java
@@ -399,8 +399,8 @@ public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFil
 
 Recupere o conteúdo de texto real coberto por anotações de sublinhado. Estes exemplos mostram duas abordagens: ler o texto marcado completo como uma única cadeia de caracteres, ou processar fragmentos de texto individualmente para uma análise detalhada.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterar através das anotações de sublinhado na página.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere através das anotações de sublinhado na página.
 1. Leia qualquer `getMarkedText()` ou `getMarkedTextFragments()` e imprima os resultados.
 
 ```java
@@ -435,8 +435,8 @@ public static void textUnderlineMarkedFragmentsGet(Path inputFile) {
 
 Remova anotações seletivamente filtrando por propriedades de metadados como título. Essa abordagem permite a limpeza direcionada de anotações por autor ou finalidade.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Filtrar anotações sublinhadas por título.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Filtre anotações sublinhadas por título.
 1. Exclua as anotações correspondentes e salve o documento atualizado.
 
 ```java
@@ -463,9 +463,9 @@ public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
 
 Converta uma anotação interativa de sublinhado em conteúdo permanente da página, achatando-a. Isso impede edições posteriores enquanto preserva a aparência do sublinhado em qualquer visualizador de PDF.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicionar um [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) para a página.
-1. Chamada `flatten()` na anotação e salve o arquivo de saída.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Adicione um [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) para a página.
+1. Chame `flatten()` na anotação e salve o arquivo de saída.
 
 ```java
 public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {

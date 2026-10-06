@@ -1,6 +1,6 @@
 ---
-title: Atualizar Dimensões da Página no Python
-linktitle: Atualizar Dimensões da Página no Python
+title: Atualizar dimensões da página no Python
+linktitle: Atualizar dimensões da página no Python
 type: docs
 weight: 90
 url: /pt/java/update-page-dimensions-in-python/
@@ -32,6 +32,6 @@ print "Dimensions updated successfully!"
 
 **Baixar Código em Execução**
 
-DownloadВ **Atualizar Dimensões da Página (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Download **Atualizar Dimensões da Página (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/UpdatePageDimensions/UpdatePageDimensions.py)

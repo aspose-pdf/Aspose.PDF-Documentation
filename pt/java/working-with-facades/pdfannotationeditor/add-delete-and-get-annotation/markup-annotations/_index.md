@@ -7,7 +7,7 @@ url: /pt/java/pdfannotationeditor-class/markup-annotations/
 description: Aprenda como adicionar, inspecionar e excluir anotações de realce, sublinhado, ondulado e tachado em documentos PDF usando Java.
 lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações de marcação em arquivos PDF usando Java
+AlternativeHeadline: Trabalhar com anotações de marcação em arquivos PDF usando Java
 Abstract: Este artigo explica como criar, inspecionar e remover anotações de marcação de texto em documentos PDF usando Java. Ele abrange anotações de realce, sublinhado, ondulado e tachado com base nos exemplos Java do repositório.
 ---
 ## Adicionar anotações de realce, sublinhado, ondulado ou tachado

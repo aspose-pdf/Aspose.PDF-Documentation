@@ -1,6 +1,6 @@
 ---
-title: Adicionar Selos de Página ao PDF em Java
-linktitle: Adicionar Selos de Página
+title: Adicionar selos de página ao PDF em Java
+linktitle: Adicionar selos de página
 type: docs
 weight: 30
 url: /pt/java/page-stamps-in-the-pdf-file/
@@ -19,8 +19,8 @@ Aspose.PDF for Java pode aplicar uma página de outro PDF como um carimbo ou adi
 
 Use este exemplo quando uma página de um PDF separado deve ser usada como um carimbo de plano de fundo.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) da página PDF externa.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) da página PDF externa.
 1. Configure o selo e adicione‑o à página de destino, então salve o resultado.
 
 ```java
@@ -38,8 +38,8 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 
 Use este exemplo quando a página de destino deve mostrar o número atual com formatação de texto personalizada.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar e configurar um [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie e configure um [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
 1. Adicione o selo à página e salve o documento.
 
 ```java
@@ -66,8 +66,8 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 
 Use este exemplo quando a numeração de páginas deve começar a partir de um valor personalizado e usar numerais romanos maiúsculos.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) e configure a numeração em numerais romanos.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) e configure a numeração em numerais romanos.
 1. Adicione o selo a todas as páginas e salve o PDF.
 
 ```java

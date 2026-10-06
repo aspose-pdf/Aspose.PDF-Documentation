@@ -1,6 +1,6 @@
 ---
-title: Publicando Formulários em PDF via Java
-linktitle: Publicando Formulários
+title: Publicando formulários em PDF via Java
+linktitle: Publicando formulários
 type: docs
 weight: 75
 url: /pt/java/posting-form/
@@ -17,8 +17,8 @@ Aspose.PDF for Java suporta a criação de botões de envio baseados em facade e
 
 ## Adicionar um botão de envio com FormEditor
 
-1. Criar um [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) fachada para o documento PDF de origem.
-1. Adicionar o objeto do botão de envio configurado através da [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) fachada.
+1. Crie um [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) fachada para o documento PDF de origem.
+1. Adicione o objeto do botão de envio configurado através da [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) fachada.
 1. Salve o documento PDF atualizado.
 
 ```java
@@ -37,7 +37,7 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 
 ## Adicionar uma ação de envio manualmente
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie o [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) e URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
 1. Crie o [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) no alvo [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e atribua a ação de envio.
 1. Salve o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).

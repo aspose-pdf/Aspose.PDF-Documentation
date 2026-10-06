@@ -20,9 +20,9 @@ Use este fluxo de trabalho quando precisar alterar o que os usuários podem faze
 
 ### Etapas
 
-1. Criar um `PdfFileSecurity` instância.
-2. Vincular o PDF de origem com `bindPdf`.
-3. Criar um `DocumentPrivilege` objeto e configure as ações permitidas.
+1. Crie uma instância de `PdfFileSecurity`.
+2. Vincule o PDF de origem com `bindPdf`.
+3. Crie um objeto `DocumentPrivilege` e configure as ações permitidas.
 4. Chame o apropriado `setPrivilege` ou `trySetPrivilege` sobrecarga.
 5. Salve o resultado se a atualização for bem-sucedida, e então feche o objeto.
 

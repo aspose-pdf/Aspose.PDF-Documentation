@@ -1,6 +1,6 @@
 ---
-title: Copiar Campo Interno
-linktitle: Copiar Campo Interno
+title: Copiar campo interno
+linktitle: Copiar campo interno
 type: docs
 weight: 70
 url: /pt/java/copy-inner-field/
@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF existente, duplicar um campo p
 ---
 ## Copiar um campo dentro do mesmo PDF
 
-1. Vincular o PDF de origem ao `FormEditor` fachada.
-2. Chamar `copyInnerField(...)` com o nome do campo de origem, novo nome do campo, página e coordenadas.
+1. Vincule o PDF de origem à fachada `FormEditor`.
+2. Chame `copyInnerField(...)` com o nome do campo de origem, novo nome do campo, página e coordenadas.
 3. Salve o documento atualizado.
 
 ```java

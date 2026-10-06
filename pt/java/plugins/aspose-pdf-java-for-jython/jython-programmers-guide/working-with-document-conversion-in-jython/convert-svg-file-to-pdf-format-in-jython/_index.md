@@ -7,10 +7,10 @@ url: /pt/java/convert-svg-file-to-pdf-format-in-jython/
 description: Descubra como converter um arquivo SVG para formato PDF usando Jython e Aspose.PDF para conversão de gráficos vetoriais de alta qualidade.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Svg para Pdf
+## Aspose.PDF - Svg para PDF
 
 Para verificar o formato do arquivo usando **Aspose.PDF Java for Jython**. Aqui você pode ver o código de exemplo.
-Erro ao renderizar macro \u0027code\u0027 : Valor inválido especificado para o parâmetro lang
+Erro ao renderizar a macro 'code': valor inválido especificado para o parâmetro lang.
 
 **Baixar Código em Execução**
 

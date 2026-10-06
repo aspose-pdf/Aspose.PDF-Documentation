@@ -1,6 +1,6 @@
 ---
-title: Preencher Campos de Caixa de Seleção
-linktitle: Preencher Campos de Caixa de Seleção
+title: Preencher campos de caixa de seleção
+linktitle: Preencher campos de caixa de seleção
 type: docs
 weight: 20
 url: /pt/java/fill-check-box-fields/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Definir valores de campos de caixa de seleção em um formulário PDF com Java
 Abstract: Este artigo mostra como vincular um formulário PDF, definir campos de caixa de seleção por nome e salvar o documento atualizado com a fachada Form em Aspose.PDF for Java.
 ---
-Usar `FormExamples.fillCheckBoxFields(...)` definir valores das caixas de seleção em um formulário.
+Use `FormExamples.fillCheckBoxFields(...)` definir valores das caixas de seleção em um formulário.
 
 ```java
 public static void fillCheckBoxFields(Path inputFile, Path outputFile) {

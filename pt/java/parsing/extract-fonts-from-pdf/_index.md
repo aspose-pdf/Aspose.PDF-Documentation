@@ -10,15 +10,15 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Como extrair fontes de PDF usando Java
+AlternativeHeadline: Extrair fontes de PDF usando Java
 Abstract: Este artigo explica como inspecionar as fontes usadas em um documento PDF com Aspose.PDF for Java. Ele mostra como abrir um PDF, chamar `getFontUtilities().getAllFonts()`, e percorrer os objetos de fonte resultantes para ler seus nomes.
 ---
 Use a extração de fontes quando precisar auditar a tipografia do documento, inspecionar recursos incorporados ou verificar o uso de fontes antes de fluxos de trabalho de conversão ou arquivamento.
 
-1. Abra o PDF de origem em um [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Chamar `document.getFontUtilities().getAllFonts()` coletar cada [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) recurso referenciado pelo documento.
-1. Iterar pelos extraídos [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) objetos e ler cada nome de fonte dos metadados da fonte.
-1. Imprimir os nomes das fontes para que a tipografia do documento possa ser auditada ou exportada.
+1. Abra o PDF de origem em uma instância de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Chame `document.getFontUtilities().getAllFonts()` coletar cada [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) recurso referenciado pelo documento.
+1. Itere pelos extraídos objetos [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) e leia cada nome de fonte dos metadados da fonte.
+1. Imprima os nomes das fontes para que a tipografia do documento possa ser auditada ou exportada.
 
 ```java
 public static void extractFonts(Path inputFile) {

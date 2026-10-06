@@ -1,6 +1,6 @@
 ---
-title: Extrair Páginas de PDF
-linktitle: Extrair Páginas de PDF
+title: Extrair páginas de PDF
+linktitle: Extrair páginas de PDF
 type: docs
 weight: 30
 url: /pt/java/extract-pages-from-pdf/
@@ -19,7 +19,7 @@ O exemplo em Java extrai as páginas 1, 4 e 3 em um novo documento PDF.
 
 ### Etapas
 
-1. Criar um `PdfFileEditor` instância.
+1. Crie uma instância de `PdfFileEditor`.
 2. Defina os números das páginas a serem extraídas.
 3. Ligar `extract` com o arquivo de origem, o array de páginas e o arquivo de saída.
 4. Salve as páginas extraídas como um novo PDF.

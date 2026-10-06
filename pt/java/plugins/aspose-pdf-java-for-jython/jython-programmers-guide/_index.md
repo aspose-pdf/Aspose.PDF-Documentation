@@ -1,6 +1,6 @@
 ---
-title: Guia do Programador Jython
-linktitle: Guia do Programador Jython
+title: Guia do programador Jython
+linktitle: Guia do programador Jython
 type: docs
 weight: 10
 url: /pt/java/jython-programmers-guide/

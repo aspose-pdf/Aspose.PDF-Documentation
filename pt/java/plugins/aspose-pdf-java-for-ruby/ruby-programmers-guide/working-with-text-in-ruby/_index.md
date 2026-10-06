@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Texto em Ruby
-linktitle: Trabalhar com Texto em Ruby
+title: Trabalhar com texto em Ruby
+linktitle: Trabalhar com texto em Ruby
 type: docs
 weight: 30
 url: /pt/java/working-with-text-in-ruby/

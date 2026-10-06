@@ -1,6 +1,6 @@
 ---
-title: Importar e Exportar Anotações usando Java
-linktitle: Importar e Exportar Anotações
+title: Importar e exportar anotações usando Java
+linktitle: Importar e exportar anotações
 type: docs
 weight: 80
 url: /pt/java/pdfannotationeditor-class/import-export-annotations/

@@ -30,16 +30,16 @@ Leia mais em [aspose.com](https://products.aspose.com/words/java)
 
 O projeto Aspose.PDF for Python demonstra como diferentes tarefas podem ser realizadas usando as APIs do Aspose.PDF Java em Python. Este projeto tem como objetivo fornecer exemplos úteis para desenvolvedores Python que desejam utilizar o Aspose.PDF for Java em seus projetos Python usando [JPype](http://jpype.readthedocs.org/en/latest/userguide.html).
 
-## Requisitos de Sistema e Plataformas Suportadas
+## Requisitos de sistema e plataformas suportadas
 
-### Requisitos de Sistema
+### Requisitos de sistema
 
 A seguir estão os requisitos de sistema para usar o Aspose.PDF Java para Python:
 
 - JPype
 - Componente Aspose.PDF baixado.
 
-### Plataformas Suportadas
+### Plataformas suportadas
 
 A seguir estão as plataformas suportadas:
 

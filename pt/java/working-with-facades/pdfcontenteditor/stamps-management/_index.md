@@ -1,6 +1,6 @@
 ---
-title: Gerenciamento de Carimbos
-linktitle: Gerenciamento de Carimbos
+title: Gerenciamento de carimbos
+linktitle: Gerenciamento de carimbos
 type: docs
 weight: 80
 url: /pt/java/pdfcontenteditor-stamps-management/

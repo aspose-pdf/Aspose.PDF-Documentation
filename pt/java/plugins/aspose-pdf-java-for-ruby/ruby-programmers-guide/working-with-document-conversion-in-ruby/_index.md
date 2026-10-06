@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Conversão de Documentos em Ruby
-linktitle: Trabalhar com Conversão de Documentos em Ruby
+title: Trabalhar com conversão de documentos em Ruby
+linktitle: Trabalhar com conversão de documentos em Ruby
 type: docs
 weight: 40
 url: /pt/java/working-with-document-conversion-in-ruby/

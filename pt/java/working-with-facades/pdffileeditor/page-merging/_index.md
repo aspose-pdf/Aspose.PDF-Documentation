@@ -1,6 +1,6 @@
 ---
-title: Mesclar Arquivos PDF
-linktitle: Mesclar Arquivos PDF
+title: Mesclar arquivos PDF
+linktitle: Mesclar arquivos PDF
 type: docs
 weight: 40
 url: /pt/java/page-merging/
@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: Mesclar documentos PDF em Java com PdfFileEditor
 Abstract: Esta seção explica fluxos de trabalho de mesclagem relacionados ao PdfFileEditor no Aspose.PDF for Java. O conjunto atual de exemplos em Java inclui um exemplo direto de concatenação para combinar arquivos de entrada, enquanto várias páginas adicionais de mesclagem nesta seção são mantidas como notas de escopo porque nenhum método Java dedicado está presente na classe de exemplo do repositório.
 ---
-O Java `PdfFileEditorExamples` classe inclui um direto `concatenate` exemplo para mesclar arquivos PDF.
+A classe Java `PdfFileEditorExamples` inclui um direto `concatenate` exemplo para mesclar arquivos PDF.
 
 Nesta seção você pode encontrar:
 

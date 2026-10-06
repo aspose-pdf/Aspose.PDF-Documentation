@@ -1,6 +1,6 @@
 ---
-title: Informações de Assinatura
-linktitle: Informações de Assinatura
+title: Informações de assinatura
+linktitle: Informações de assinatura
 type: docs
 weight: 60
 url: /pt/java/signature-information/
@@ -20,7 +20,7 @@ Use este fluxo de trabalho quando precisar inspecionar quem assinou um PDF e qua
 
 ### Etapas
 
-1. Criar um `PdfFileSignature` instância e vincular o PDF assinado.
+1. Crie uma instância de `PdfFileSignature` e vincule o PDF assinado.
 2. Leia a coleção de assinaturas e selecione um nome de assinatura.
 3. Chame os acessadores de informações da assinatura para nome do assinante, data, motivo e local.
 4. Feche o objeto facade quando terminar.

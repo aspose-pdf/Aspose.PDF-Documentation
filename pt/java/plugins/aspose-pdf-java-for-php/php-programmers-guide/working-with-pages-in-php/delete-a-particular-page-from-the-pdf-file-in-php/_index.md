@@ -7,7 +7,7 @@ url: /pt/java/delete-a-particular-page-from-the-pdf-file-in-php/
 description: Explore como excluir uma página específica de um documento PDF em PHP com Aspose.PDF, simplificando a edição de documentos.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Excluir página
+## Aspose.PDF - excluir página
 
 Para excluir uma página específica do documento PDF usando **Aspose.PDF Java for PHP**, basta invocar a classe **DeletePage**.
 
@@ -30,6 +30,6 @@ print "Page deleted successfully!";
 
 **Download em execução**
 
-Baixar **Delete Page (Aspose.PDF)**В deВ qualquer dos sites de codificação social mencionados abaixo:
+Baixar **Delete Page (Aspose.PDF)** de qualquer dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/DeletePage.php)

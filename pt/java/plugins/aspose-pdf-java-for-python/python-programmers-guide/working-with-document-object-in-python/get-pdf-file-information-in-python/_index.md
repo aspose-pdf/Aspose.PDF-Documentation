@@ -29,6 +29,6 @@ print "Title:-" + str(doc_info.getTitle())
 
 **Download do Código em Execução**
 
-DownloadВ **Obter Informações do Arquivo PDF (Aspose.PDF)**В de В qualquer um dos sites de codificação social abaixo mencionados:
+Download **Obter Informações do Arquivo PDF (Aspose.PDF)** de  qualquer um dos sites de codificação social abaixo mencionados:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)

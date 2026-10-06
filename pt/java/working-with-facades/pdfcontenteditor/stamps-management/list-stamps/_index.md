@@ -12,9 +12,9 @@ Abstract: Este artigo mostra como vincular um PDF, recuperar os carimbos em uma 
 ---
 ## Listar carimbos em uma página
 
-1. Vincule o PDF de origem ao `PdfContentEditor` fachada.
-2. Chamar `getStamps(pageNumber)` para recuperar os carimbos na página de destino.
-3. Inspecione o resultado `StampInfo[]` coleção.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
+2. Chame `getStamps(pageNumber)` para recuperar os carimbos na página de destino.
+3. Inspecione a coleção de resultados `StampInfo[]`.
 
 ```java
 public static void listStamps(Path inputFile) {

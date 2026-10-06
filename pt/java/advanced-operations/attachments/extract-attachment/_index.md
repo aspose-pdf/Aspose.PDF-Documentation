@@ -19,7 +19,7 @@ Aspose.PDF for Java suporta vários fluxos de extração dependendo de como os a
 
 Use este exemplo quando precisar salvar um arquivo incorporado específico de um PDF.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Itere pela coleção de arquivos incorporados até que o nome do anexo necessário seja encontrado.
 1. Copie o fluxo do anexo para o arquivo de saída e pare após a extração.
 
@@ -50,7 +50,7 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 
 ## Imprimir parâmetros de arquivo incorporado
 
-Este método auxiliar imprime os metadados armazenados em um [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/) objeto.
+Este método auxiliar imprime os metadados armazenados em um objeto [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/).
 
 1. Verifique se o objeto de parâmetros de arquivo existe.
 1. Leia o checksum disponível, a data de criação, a data de modificação e os valores de tamanho.
@@ -75,7 +75,7 @@ public static void printFileParams(FileParams params) {
 
 Use este exemplo quando cada arquivo incorporado no PDF deve ser gravado em um diretório de saída.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Percorra a coleção de arquivos incorporados e determine um nome de arquivo de saída seguro para cada item.
 1. Imprima os metadados, salve cada fluxo de anexo e continue até que todos os arquivos sejam exportados.
 
@@ -114,7 +114,7 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 
 Use este exemplo quando o arquivo for anexado por meio de uma anotação de página em vez de apenas pela coleção de arquivos incorporados.
 
-1. Abra o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Localize o primeiro [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) na página.
 1. Leia sua especificação de arquivo, exporte o conteúdo e imprima o caminho de destino.
 

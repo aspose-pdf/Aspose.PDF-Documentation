@@ -17,11 +17,11 @@ Abstract: Saiba como excluir páginas de um PDF com Aspose.PDF for Java. O exemp
 
 O exemplo em Java remove as páginas 2 e 4 do documento original.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileEditor` instância.
+1. Crie uma instância de `PdfFileEditor`.
 2. Crie um array com os números das páginas a serem removidas.
-3. Chamar `delete` com o arquivo de entrada, o array de páginas e o arquivo de saída.
+3. Chame `delete` com o arquivo de entrada, o array de páginas e o arquivo de saída.
 4. Salve o PDF resultante.
 
 ### Exemplo Java

@@ -1,6 +1,6 @@
 ---
-title: Preencher Campos de Código de Barras
-linktitle: Preencher Campos de Código de Barras
+title: Preencher campos de código de barras
+linktitle: Preencher campos de código de barras
 type: docs
 weight: 50
 url: /pt/java/fill-barcode-fields/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Preencha um campo de código de barras em um formulário PDF com Java
 Abstract: Este artigo mostra como vincular um formulário PDF, definir o valor de um campo de código de barras e salvar o documento atualizado com a fachada Form no Aspose.PDF for Java.
 ---
-Usar `FormExamples.fillBarcodeFields(...)` para preencher um campo de código de barras em um formulário PDF.
+Use `FormExamples.fillBarcodeFields(...)` para preencher um campo de código de barras em um formulário PDF.
 
 ```java
 public static void fillBarcodeFields(Path inputFile, Path outputFile) {

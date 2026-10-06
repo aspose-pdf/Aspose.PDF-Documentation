@@ -16,12 +16,12 @@ Abstract: Saiba como alterar senhas de PDF com Aspose.PDF for Java. O conjunto d
 ---
 ## Alterar senha do arquivo PDF
 
-Usar `PdfFileSecurity` quando precisar rotacionar credenciais em um PDF já protegido.
+Use `PdfFileSecurity` quando precisar rotacionar credenciais em um PDF já protegido.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileSecurity` instância.
-2. Vincular o PDF protegido com `bindPdf`.
+1. Crie uma instância de `PdfFileSecurity`.
+2. Vincule o PDF protegido com `bindPdf`.
 3. Chame o apropriado `changePassword` sobrecarga, dependendo de se você também deseja redefinir privilégios e tamanho da chave.
 4. Salve o arquivo atualizado e feche o objeto de segurança.
 

@@ -7,7 +7,7 @@ url: /pt/java/get-pdf-file-information-in-php/
 description: Descubra como recuperar informações detalhadas sobre um arquivo PDF, incluindo metadados e propriedades, em PHP com Aspose.PDF.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Obter informações do PDF
+## Aspose.PDF - obter informações do PDF
 
 Para obter informações do arquivo de documento PDF usando **Aspose.PDF Java for PHP**, basta invocar a classe **GetPdfFileInfo**.
 
@@ -33,6 +33,6 @@ print "Title:-" . $doc_info->getTitle();
 
 **Baixar Código em Execução**
 
-DownloadВ **Obter informações do arquivo PDF (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Download **Obter informações do arquivo PDF (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/GetPdfFileInfo.php)

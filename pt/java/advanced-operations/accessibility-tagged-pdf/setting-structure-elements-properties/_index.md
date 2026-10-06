@@ -1,6 +1,6 @@
 ---
 title: Definir propriedades do elemento de estrutura Tagged PDF em Java
-linktitle: Definir propriedades dos Elementos de Estrutura
+linktitle: Definir propriedades dos Elementos de estrutura
 type: docs
 weight: 30
 url: /pt/java/setting-structure-elements-properties/
@@ -16,7 +16,7 @@ Esta página cobre padrões comuns de definição de propriedades para elementos
 
 Use este exemplo quando um elemento de estrutura marcado deve expor metadados de acessibilidade, como título, idioma, texto real e texto alternativo.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicializar os metadados de conteúdo marcado.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e inicialize os metadados de conteúdo marcado.
 1. Crie uma seção e um elemento de cabeçalho na árvore de estrutura.
 1. Defina as propriedades do cabeçalho e salve o documento.
 
@@ -50,8 +50,8 @@ public static void setProperties(Path outputFile) {
 
 Use este exemplo quando precisar adicionar um elemento de parágrafo simples à árvore de estrutura marcada.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar um [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) e definir seu texto.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) e defina seu texto.
 1. Anexe o parágrafo ao elemento raiz e salve o documento.
 
 ```java
@@ -74,7 +74,7 @@ public static void setTextElements(Path outputFile) {
 
 Este exemplo cria múltiplos elementos de estrutura de nível de bloco, incluindo cabeçalhos de vários níveis e um parágrafo.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Adicione elementos de cabeçalho para os níveis exigidos e, em seguida, crie um elemento de parágrafo.
 1. Anexe os elementos de bloco à estrutura raiz e salve o documento.
 
@@ -105,7 +105,7 @@ public static void setTextBlockElements(Path outputFile) {
 
 Use este exemplo quando os elementos de estrutura de bloco devem conter spans inline aninhados.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Construa elementos de cabeçalho e anexe filhos span a eles.
 1. Crie um parágrafo com múltiplas spans e salve o documento.
 
@@ -148,7 +148,7 @@ public static void setInlineElements(Path outputFile) {
 
 Este exemplo atribui nomes de tags personalizados aos elementos de parágrafo e span na estrutura tagueada.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de seção.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de seção.
 1. Crie parágrafos e spans, depois defina nomes de tags personalizados para cada elemento.
 1. Anexe os elementos à seção e salve o documento.
 
@@ -187,7 +187,7 @@ public static void setTagName(Path outputFile) {
 
 Use este exemplo quando os elementos de link marcados devem incluir descrições alternativas, hiperlinks e conteúdo de figura com atributos de layout.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione elementos de link dentro de parágrafos.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione elementos de link dentro de parágrafos.
 1. Configure destinos de hiperlink, descrições alternativas e o elemento de figura vinculado.
 1. Defina o atributo de layout necessário e salve o documento.
 
@@ -233,12 +233,12 @@ public static void setElements(Path imageFile, Path outputFile) {
 }
 ```
 
-## Adicione parágrafos com conteúdo de link embutido
+## Adicionar parágrafos com conteúdo de link embutido
 
 Este exemplo cria elementos de parágrafo que combinam texto simples e elementos span aninhados.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Criar elementos de parágrafo e adicionar filhos span com texto personalizado.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie elementos de parágrafo e adicione filhos span com texto personalizado.
 1. Anexe os parágrafos ao elemento raiz e salve o documento.
 
 ```java
@@ -271,7 +271,7 @@ public static void addLinkElement(Path outputFile) {
 
 Use este exemplo quando os elementos de estrutura de nota devem ser criados com IDs automáticos ou explícitos.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de parágrafo.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de parágrafo.
 1. Crie elementos de nota e defina seu texto e IDs conforme necessário.
 1. Anexe as notas ao parágrafo e salve o documento.
 
@@ -308,9 +308,9 @@ public static void setNoteElement(Path outputFile) {
 
 Este exemplo atribui metadados a nível de documento e, em seguida, cria parágrafos com diferentes valores de idioma.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e defina o título e o idioma do documento.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e defina o título e o idioma do documento.
 1. Adicione um elemento de cabeçalho e crie parágrafos para cada frase localizada.
-1. Salvar o documento marcado multilíngue.
+1. Salve o documento marcado multilíngue.
 
 ```java
 public static void setLanguageAndTitle(Path outputFile) {
@@ -337,7 +337,7 @@ public static void setLanguageAndTitle(Path outputFile) {
 
 Este método auxiliar cria um parágrafo, atribui seu idioma e o adiciona à estrutura raiz.
 
-1. Criar um [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
+1. Crie um [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
 1. Defina o texto e o idioma do elemento.
 1. Anexe o parágrafo ao elemento raiz do conteúdo marcado.
 

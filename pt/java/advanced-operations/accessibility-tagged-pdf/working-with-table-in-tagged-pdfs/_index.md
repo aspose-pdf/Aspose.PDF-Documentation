@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Tabelas em Tagged PDFs em Java
-linktitle: Trabalhar com Tabela em Tagged PDFs
+title: Trabalhar com tabelas em Tagged PDFs em Java
+linktitle: Trabalhar com tabela em Tagged PDFs
 type: docs
 weight: 40
 url: /pt/java/working-with-table-in-tagged-pdfs/
@@ -16,7 +16,7 @@ Tagged table APIs permitem criar estruturas de tabela acessíveis com cabeçalho
 
 Use este exemplo quando precisar de uma tabela acessível básica com cabeçalho, corpo, rodapé e metadados de resumo da tabela.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
 1. Configure a borda da tabela e preencha o conteúdo com o método auxiliar compartilhado.
 1. Defina o atributo de resumo da tabela e salve o documento.
 
@@ -47,7 +47,7 @@ public static void createTable(Path outputFile) {
 
 Este exemplo aplica formatação ao nível da tabela, como cores, bordas, dimensionamento de colunas, linhas repetidas e alinhamento.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de tabela.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de tabela.
 1. Configure as configurações visuais e de layout da tabela.
 1. Preencha a tabela e salve o documento.
 
@@ -92,7 +92,7 @@ public static void styleTable(Path outputFile) {
 
 Use este exemplo quando cada linha deve ter seus próprios metadados, bordas, configurações de altura e padrões de célula.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione seções de tabela para cabeçalho, corpo e rodapé.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione seções de tabela para cabeçalho, corpo e rodapé.
 1. Crie linhas e configure as configurações em nível de linha, como borda, preenchimento, altura e comportamento da página.
 1. Preencha as linhas com células e salve o documento.
 
@@ -152,9 +152,9 @@ public static void styleTableRow(Path outputFile) {
 
 Este exemplo usa o método auxiliar compartilhado para criar uma tabela com formatação a nível de célula e células mescladas.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Adicione um elemento de tabela e preencha‑o através do método auxiliar com a estilização de célula habilitada.
-1. Salvar o documento.
+1. Salve o documento.
 
 ```java
 public static void styleTableCell(Path outputFile) {
@@ -176,8 +176,8 @@ public static void styleTableCell(Path outputFile) {
 
 Use este exemplo quando uma tabela marcada deve ser posicionada explicitamente na página.
 
-1. Criar um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de tabela.
-1. Configurar [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) para a tabela.
+1. Crie um novo Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um elemento de tabela.
+1. Configure [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/) para a tabela.
 1. Aplique as configurações de posição, preencha a tabela e salve o documento.
 
 ```java

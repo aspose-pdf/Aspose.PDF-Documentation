@@ -1,6 +1,6 @@
 ---
-title: Extrair Imagens de Arquivo PDF usando Java
-linktitle: Extrair Imagens
+title: Extrair imagens de arquivo PDF usando Java
+linktitle: Extrair imagens
 type: docs
 weight: 30
 url: /pt/java/extract-images-from-pdf-file/
@@ -16,8 +16,8 @@ Aspose.PDF for Java suporta extração direta de recursos de imagem e filtragem 
 
 Use este exemplo quando precisar salvar um recurso de imagem específico de uma página PDF.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Acessar o destino [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) dos recursos da página.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Acesse o destino [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) dos recursos da página.
 1. Salve o fluxo de imagem em um arquivo de saída.
 
 ```java
@@ -35,7 +35,7 @@ public static void extractImage(Path inputFile, Path outputFile) throws Exceptio
 Use este exemplo quando somente as imagens posicionadas dentro de um retângulo selecionado devem ser exportadas.
 
 1. Defina o destino [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) e abra o PDF de origem.
-1. Usar [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para inspeccionar a colocação de imagens na página.
+1. Use [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) para inspeccionar a colocação de imagens na página.
 1. Salve apenas as imagens cuja colocação se encaixa dentro da região selecionada.
 
 ```java

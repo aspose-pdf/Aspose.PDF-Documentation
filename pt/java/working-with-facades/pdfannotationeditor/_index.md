@@ -15,9 +15,9 @@ Abstract: Esta seção organiza fluxos de trabalho em Java relacionados a anota�
 ---
 Esta seção agrupa os fluxos de trabalho de anotação em Java usados para criar, inspecionar, excluir e transferir anotações em arquivos PDF.
 
-O repositório atual não inclui um dedicado `PdfAnnotationEditorExamples.java` classe. Para esta seção, o conteúdo do artigo é obtido dos exemplos Java em `en/java/src/main/java/com/aspose/pdf/examples/workingwithannotations`.
+O repositório atual não inclui um arquivo de exemplos dedicado chamado `PdfAnnotationEditorExamples.java`. Para esta seção, o conteúdo do artigo é obtido dos exemplos Java em `en/java/src/main/java/com/aspose/pdf/examples/workingwithannotations`.
 
 Use esta seção para:
 
-- [Adicionar, Excluir e Obter Anotação](/pdf/pt/java/pdfannotationeditor-class/add-delete-and-get-annotation/) para famílias de anotações agrupadas.
-- [Importar e Exportar Anotações](/pdf/pt/java/pdfannotationeditor-class/import-export-annotations/) para copiar anotações entre arquivos PDF.
+- [Adicionar, excluir e obter anotações](/pdf/pt/java/pdfannotationeditor-class/add-delete-and-get-annotation/) para famílias de anotações agrupadas.
+- [Importar e exportar anotações](/pdf/pt/java/pdfannotationeditor-class/import-export-annotations/) para copiar anotações entre arquivos PDF.

@@ -1,5 +1,5 @@
 ---
-title: Use FloatingBox para Layout de PDF em Java
+title: Usar FloatingBox para Layout de PDF em Java
 linktitle: Usar FloatingBox
 type: docs
 weight: 30
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.5
 TechArticle: true
-AlternativeHeadline: Crie e posicione contêineres FloatingBox estilizados em PDF com Java
+AlternativeHeadline: Criar e posicione contêineres FloatingBox estilizados em PDF com Java
 Abstract: Este artigo explica como usar FloatingBox no Aspose.PDF for Java. Ele aborda a inserção de texto em contêineres flutuantes com borda, a criação de layouts de múltiplas colunas repetitivos, o uso de cores de fundo, deslocamentos absolutos e opções de alinhamento horizontal ou vertical.
 ---
 Aspose.PDF for Java usa `FloatingBox` para criar contêineres de texto reutilizáveis e layouts baseados em colunas.
@@ -20,7 +20,7 @@ Aspose.PDF for Java usa `FloatingBox` para criar contêineres de texto reutiliz�
 Use este exemplo quando o texto deve ser colocado dentro de um contêiner flutuante com borda.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `FloatingBox`, defina seu tamanho e borda, e adicione conteúdo de texto.
+1. Crie um `FloatingBox`, defina seu tamanho e borda, e adicione conteúdo de texto.
 1. Adicione a caixa à página e salve o documento.
 
 ```java
@@ -125,7 +125,7 @@ public static void multiColumnLayout2(Path outputFile) {
 Use este exemplo quando o contêiner flutuante deve ter um preenchimento de fundo visível.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar um `FloatingBox`, defina sua cor de fundo e adicione texto.
+1. Crie um `FloatingBox`, defina sua cor de fundo e adicione texto.
 1. Coloque a caixa na página e salve o documento.
 
 ```java
@@ -149,7 +149,7 @@ public static void backgroundSupport(Path outputFile) {
 Use este exemplo quando a caixa flutuante deve aparecer em um deslocamento exato na página.
 
 1. Crie uma página e prepare o conteúdo de texto ao redor.
-1. Criar um `FloatingBox`, defina posicionamento absoluto e atribua deslocamentos superior e esquerdo.
+1. Crie um `FloatingBox`, defina posicionamento absoluto e atribua deslocamentos superior e esquerdo.
 1. Adicione o conteúdo à página e salve o documento.
 
 ```java
@@ -178,7 +178,7 @@ public static void offsetSupport(Path outputFile) {
 Use este exemplo quando caixas flutuantes devem demonstrar diferentes alinhamentos verticais com o mesmo alinhamento horizontal.
 
 1. Crie um novo documento PDF e adicione uma página.
-1. Criar múltiplos `FloatingBox` objetos com diferentes configurações de alinhamento.
+1. Crie múltiplos objetos `FloatingBox` com diferentes configurações de alinhamento.
 1. Adicione-os à página e salve o resultado.
 
 ```java

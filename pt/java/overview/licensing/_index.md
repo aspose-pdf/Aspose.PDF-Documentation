@@ -24,7 +24,7 @@ Na versão de avaliação de qualquer coleção, você pode processar apenas qua
 
 Você pode baixar uma versão de avaliação do **Aspose.PDF** para Java a partir de [Repositório Aspose](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). A versão de avaliação fornece exatamente as mesmas capacidades da versão licenciada do produto. Além disso, a versão de avaliação simplesmente se torna licenciada quando você compra uma licença e adiciona algumas linhas de código para aplicar a licença.
 
-Quando você estiver satisfeito com sua avaliação do **Aspose.PDF**, você pode [adquirir uma licença](https://purchase.aspose.com/) no site da Aspose. Familiarize-se com os diferentes tipos de assinatura oferecidos. Se você tiver alguma dúvida, não hesite em contactar a equipe de vendas da Aspose.
+Quando você estiver satisfeito com sua avaliação do **Aspose.PDF**, você pode [adquirir uma licença](https://purchase.aspose.com/) no site da Aspose. Familiarize-se com os diferentes tipos de assinatura oferecidos. Se você tiver alguma dúvida, não hesite em entrar em contato com a equipe de vendas da Aspose.
 
 Cada licença da Aspose inclui uma assinatura de um ano para atualizações gratuitas para quaisquer novas versões ou correções lançadas durante esse período. O suporte técnico é gratuito e ilimitado e é fornecido tanto para usuários licenciados quanto para usuários em avaliação.
 
@@ -51,7 +51,7 @@ A partir do Aspose.PDF for Java 4.2.0, você precisa chamar as linhas de código
 
 {{% /alert %}}
 
-### Carregando uma licença a partir de um arquivo
+### Carregar uma licença a partir de um arquivo
 
 Neste exemplo **Aspose.PDF** tentará encontrar o arquivo de licença na pasta que contém os JARs da sua aplicação.
 
@@ -62,7 +62,7 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 license.setLicense("Aspose.Pdf.Java.lic");
 ```
 
-### Carregando a licença de um objeto de fluxo
+### Carregar uma licença a partir de um fluxo
 
 O exemplo a seguir mostra como carregar uma licença a partir de um stream.
 
@@ -73,7 +73,7 @@ com.aspose.pdf.License license = new com.aspose.pdf.License();
 license.setLicense(new java.io.FileInputStream("Aspose.Pdf.Java.lic"));
 ```
 
-### Validar a Licença
+### Validar a licença
 
 É possível validar se a licença foi configurada corretamente ou não. A classe Document tem o método isLicensed que retornará true se a licença foi configurada corretamente.
 
@@ -86,11 +86,11 @@ if (com.aspose.pdf.Document.isLicensed()) {
 }
 ```
 
-## Licença Medida
+## Licenciamento por medição
 
-Aspose.PDF permite que os desenvolvedores apliquem a chave de medição. É um novo mecanismo de licenciamento. O novo mecanismo de licenciamento será usado juntamente com o método de licenciamento existente. Os clientes que desejam ser cobrados com base no uso dos recursos da API podem usar o licenciamento por medição.В For more details, please refer toВ [FAQ de Licenciamento por Medição](https://purchase.aspose.com/faqs/licensing/metered)В seção.
+O licenciamento por medição permite a cobrança com base no uso dos recursos da API. Ele pode ser usado junto com o mecanismo de licenciamento existente. Para obter mais detalhes, consulte as [perguntas frequentes sobre licenciamento por medição](https://purchase.aspose.com/faqs/licensing/metered).
 
-Uma nova classeВ [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered)В foi introduzido para aplicar a chave medida. A seguir está o código de exemplo que demonstra como definir a chave pública e privada medida.
+A classe [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered) permite configurar as chaves de licenciamento por medição. O exemplo a seguir mostra como definir as chaves pública e privada.
 
 ```java
 String publicKey = "";
@@ -105,12 +105,12 @@ License lic = new License();
 System.out.println("License is set = " + lic.isLicensed());
 ```
 
-## Usar Vários Produtos da Aspose
+## Usar vários produtos da Aspose
 
 Se você usar vários produtos da Aspose em sua aplicação, por exemplo Aspose.PDF e Aspose.Words, aqui estão algumas dicas úteis.
 
-- **Defina a Licença para Cada Produto Aspose Separadamente.** Mesmo que você tenha um único arquivo de licença para todos os componentes, por exemplo 'Aspose.Total.lic', ainda é necessário chamar **License.SetLicense** separadamente para cada produto Aspose que você está usando em sua aplicação.
-- **Use o Nome de Classe de Licença Totalmente Qualificado.** Cada produto Aspose possui uma classe **License** em seu namespace. Por exemplo, Aspose.PDF tem a classe **com.aspose.pdf.License** e Aspose.Words tem a classe **com.aspose.words.License**. Usar o nome de classe totalmente qualificado permite evitar qualquer confusão sobre qual licença é aplicada a qual produto.
+- **Defina a licença de cada produto Aspose separadamente.** Mesmo que você tenha um único arquivo de licença para todos os componentes, por exemplo 'Aspose.Total.lic', ainda é necessário chamar **License.SetLicense** separadamente para cada produto Aspose que você está usando em sua aplicação.
+- **Use o nome de classe de licença totalmente qualificado.** Cada produto Aspose possui uma classe **License** em seu namespace. Por exemplo, Aspose.PDF tem a classe **com.aspose.pdf.License** e Aspose.Words tem a classe **com.aspose.words.License**. Usar o nome de classe totalmente qualificado permite evitar qualquer confusão sobre qual licença é aplicada a qual produto.
 
 ```java
 // Instantiate the License class of Aspose.Pdf

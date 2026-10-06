@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Páginas em PHP
-linktitle: Trabalhar com Páginas em PHP
+title: Trabalhar com páginas em PHP
+linktitle: Trabalhar com páginas em PHP
 type: docs
 weight: 30
 url: /pt/java/working-with-pages-in-php/

@@ -1,6 +1,6 @@
 ---
-title: Verificações de Integridade de Assinatura
-linktitle: Verificações de Integridade de Assinatura
+title: Verificações de Integridade de assinatura
+linktitle: Verificações de Integridade de assinatura
 type: docs
 weight: 70
 url: /pt/java/signature-integrity-checks/
@@ -20,10 +20,10 @@ Este artigo mapeia para o mesmo fluxo de verificação exposto por `PdfFileSigna
 
 ### Etapas
 
-1. Vincular o PDF assinado com `PdfFileSignature`.
+1. Vincule o PDF assinado com `PdfFileSignature`.
 2. Selecione um nome de assinatura do documento.
-3. Chamar `verifySignature` para validar o conteúdo da assinatura.
-4. Chamar `coversWholeDocument` para confirmar a cobertura em todo o documento.
+3. Chame `verifySignature` para validar o conteúdo da assinatura.
+4. Chame `coversWholeDocument` para confirmar a cobertura em todo o documento.
 5. Feche o objeto fachada.
 
 ### Exemplo Java

@@ -1,6 +1,6 @@
 ---
-title: Concatenar Dois Arquivos PDF
-linktitle: Concatenar Dois Arquivos PDF
+title: Concatenar Dois arquivos PDF
+linktitle: Concatenar Dois arquivos PDF
 type: docs
 weight: 60
 url: /pt/java/concatenate-two-files/
@@ -19,9 +19,9 @@ Este artigo corresponde diretamente ao `mergePdfDocuments` exemplo em `PdfFileEd
 
 ### Etapas
 
-1. Criar um `PdfFileEditor` instância.
+1. Crie uma instância de `PdfFileEditor`.
 2. Passe os dois caminhos de arquivo de entrada como um array de strings.
-3. Chamada `concatenate` com o array e o caminho do arquivo de saída.
+3. Chame `concatenate` com o array e o caminho do arquivo de saída.
 4. Salve o PDF mesclado.
 
 ```java

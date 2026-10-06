@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.8
 TechArticle: true
-AlternativeHeadline: Como converter PDF para HTML em Java
+AlternativeHeadline: Converter PDF para HTML em Java
 Abstract: Este artigo explica como converter arquivos PDF para HTML usando Aspose.PDF for Java. Ele cobre a exportação básica de HTML juntamente com opções para pastas de imagens, divisão de páginas, saída SVG, gráficos SVG compactados, fundos de página PNG, marcação apenas do corpo, renderização de texto transparente e conversão de camada de documento.
 ---
 O Aspose.PDF for Java oferece suporte à exportação HTML com opções para imagens, SVG, divisão de página, transparência e renderização de camadas. Use [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) para controlar como as páginas PDF, recursos e marcação são gravados na saída HTML.
@@ -19,9 +19,9 @@ O Aspose.PDF for Java oferece suporte à exportação HTML com opções para ima
 
 Use este exemplo quando um PDF deve ser exportado para um documento HTML padrão.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar padrão [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) para serialização HTML padrão.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` então o conteúdo da página PDF é exportado como marcação HTML.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie padrão [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) para serialização HTML padrão.
+1. Chame `document.save(outputFile.toString(), saveOptions)`; assim, o conteúdo da página PDF é exportado como marcação HTML.
 1. Salve a saída HTML gerada.
 
 ```java
@@ -38,9 +38,9 @@ public static void convertPdfToHtml(Path inputFile, Path outputFile) {
 
 Use este exemplo quando as imagens extraídas devem ser gravadas como arquivos separados durante a exportação HTML.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e definir `setSpecialFolderForAllImages(...)` para um diretório de saída de imagens dedicado.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` portanto, as imagens raster são emitidas como arquivos de recurso separados em vez de saída apenas em linha.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e defina `setSpecialFolderForAllImages(...)` para um diretório de saída de imagens dedicado.
+1. Chame `document.save(outputFile.toString(), saveOptions)`; assim, as imagens raster são emitidas como arquivos de recurso separados em vez de saída apenas em linha.
 1. Salve a saída HTML junto com os ativos de imagem gerados.
 
 ```java
@@ -58,9 +58,9 @@ public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile
 
 Use este exemplo quando cada página PDF deve ser representada separadamente na saída HTML.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e habilitar `setSplitIntoPages(true)`.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` assim, cada página PDF é gravada como saída HTML separada.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e habilite `setSplitIntoPages(true)`.
+1. Chame `document.save(outputFile.toString(), saveOptions)`; assim, cada página PDF é gravada como saída HTML separada.
 1. Salve os arquivos HTML gerados.
 
 ```java
@@ -78,9 +78,9 @@ public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
 
 Use este exemplo quando o conteúdo vetorial deve ser emitido como recursos SVG separados.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e definir `setSpecialFolderForSvgImages(...)` para um diretório externo de recursos SVG.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` portanto, gráficos vetoriais são armazenados fora do arquivo HTML principal.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e defina `setSpecialFolderForSvgImages(...)` para um diretório externo de recursos SVG.
+1. Chame `document.save(outputFile.toString(), saveOptions)`; assim, gráficos vetoriais são armazenados fora do arquivo HTML principal.
 1. Salve a saída HTML e os ativos SVG.
 
 ```java
@@ -98,10 +98,10 @@ public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
 
 Use este exemplo quando a saída SVG deve ser otimizada durante a exportação HTML.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e configure uma pasta dedicada para recursos SVG.
-1. Habilitar `setCompressSvgGraphicsIfAny(true)` Portanto, os ativos SVG são comprimidos durante a exportação.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` e salve os arquivos HTML convertidos.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e configure uma pasta dedicada para recursos SVG.
+1. Habilite `setCompressSvgGraphicsIfAny(true)`; assim, os ativos SVG são comprimidos durante a exportação.
+1. Chame `document.save(outputFile.toString(), saveOptions)` e salve os arquivos HTML convertidos.
 
 ```java
 public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) {
@@ -119,9 +119,9 @@ public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) 
 
 Use este exemplo quando os fundos de página devem ser renderizados como imagens PNG na saída HTML.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e definir o modo de salvamento da imagem raster para fundos de página PNG.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` Então o conteúdo de fundo da página é emitido como camadas HTML baseadas em PNG.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e defina o modo de salvamento da imagem raster para fundos de página PNG.
+1. Chame `document.save(outputFile.toString(), saveOptions)`; assim, o conteúdo de fundo da página é emitido como camadas HTML baseadas em PNG.
 1. Salve a saída HTML convertida.
 
 ```java
@@ -140,10 +140,10 @@ public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile
 
 Use este exemplo quando apenas a marcação do corpo for necessária em vez de um shell completo de documento HTML.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e definir o modo de geração de marcação para `WriteOnlyBodyContent`.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e defina o modo de geração de marcação para `WriteOnlyBodyContent`.
 1. Manter `setSplitIntoPages(true)` ativado quando a saída apenas do corpo ainda deve ser separada por páginas.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` e salvar a saída HTML.
+1. Chame `document.save(outputFile.toString(), saveOptions)` e salve a saída HTML.
 
 ```java
 public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
@@ -162,9 +162,9 @@ public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) 
 
 Use este exemplo quando o texto transparente deve ser preservado na exportação HTML.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e habilite a preservação de texto transparente e sombreado.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` assim, a aparência do texto relacionada à transparência é mantida no resultado HTML.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e habilite a preservação de texto transparente e sombreado.
+1. Chame `document.save(outputFile.toString(), saveOptions)`; assim, a aparência do texto relacionada à transparência é mantida no resultado HTML.
 1. Salve a saída HTML convertida.
 
 ```java
@@ -183,9 +183,9 @@ public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path
 
 Use este exemplo quando a visibilidade das camadas do PDF deve ser refletida no resultado HTML.
 
-1. Abra o PDF de origem em um [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e habilitar `setConvertMarkedContentToLayers(true)`.
-1. Chamada `document.save(outputFile.toString(), saveOptions)` Assim, o conteúdo de PDF marcado é mapeado em camadas HTML.
+1. Abra o PDF de origem em uma instância de [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) e habilite `setConvertMarkedContentToLayers(true)`.
+1. Chame `document.save(outputFile.toString(), saveOptions)`; assim, o conteúdo de PDF marcado é mapeado em camadas HTML.
 1. Salve os arquivos HTML exportados.
 
 ```java

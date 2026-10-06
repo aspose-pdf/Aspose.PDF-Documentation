@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Texto em PDF usando Java
-linktitle: Trabalhar com Texto
+title: Trabalhar com texto em PDF usando Java
+linktitle: Trabalhar com texto
 type: docs
 weight: 30
 url: /pt/java/working-with-text/

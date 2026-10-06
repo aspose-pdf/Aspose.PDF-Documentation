@@ -11,7 +11,7 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Gerenciar Metadados PDF em Java
+AlternativeHeadline: Gerenciar metadados PDF em Java
 Abstract: Esta seção explica como gerenciar metadados PDF com PdfFileInfo no Aspose.PDF for Java. Os exemplos em Java cobrem a leitura de metadados padrão e personalizados, a atualização de campos como assunto e título, a limpeza das informações do documento e a gravação dos metadados como XMP.
 ---
 Use estes exemplos quando precisar inspecionar ou normalizar as informações do documento antes do armazenamento, indexação ou distribuição.

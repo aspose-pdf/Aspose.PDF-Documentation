@@ -20,6 +20,6 @@ print "Page Count:" . page_count
 
 **Baixar Código em Execução**
 
-BaixarВ **Obter Contagem de Páginas (Aspose.PDF)**В deВ qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Obter Contagem de Páginas (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetNumberOfPages/GetNumberOfPages.py)

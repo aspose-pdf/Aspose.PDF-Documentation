@@ -10,10 +10,10 @@ sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Trabalhe com dados de formulário PDF e campos AcroForm em Java usando a classe Form
+AlternativeHeadline: Trabalhar com dados de formulário PDF e campos AcroForm em Java usando a classe Form
 Abstract: Esta seção explica como usar a fachada Form no Aspose.PDF for Java para manipular formulários PDF interativos. Os exemplos em Java cobrem o preenchimento de campos de texto, caixa de seleção, botão de opção, caixa de lista e código de barras; exportação e importação de dados XML, FDF e XFDF; achatamento de campos; renomeação de campos; inspeção de valores de campos; e adição de aparências de imagem aos campos de botão.
 ---
-O Java `FormExamples` A classe demonstra os principais fluxos de trabalho de processamento de formulários expostos pela API Facades.
+A classe Java `FormExamples` demonstra os principais fluxos de trabalho de processamento de formulários expostos pela API Facades.
 
 Use esta seção para aprender como:
 

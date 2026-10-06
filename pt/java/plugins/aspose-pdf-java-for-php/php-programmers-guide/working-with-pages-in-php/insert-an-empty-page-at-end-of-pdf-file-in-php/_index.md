@@ -1,13 +1,13 @@
 ---
-title: Inserir uma Página em Branco no Final do Arquivo PDF em PHP
-linktitle: Inserir uma Página em Branco no Final do Arquivo PDF em PHP
+title: Inserir uma página em branco no final do arquivo PDF em PHP
+linktitle: Inserir uma página em branco no final do arquivo PDF em PHP
 type: docs
 weight: 60
 url: /pt/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
 description: Aprenda como inserir uma página em branco no final de um documento PDF em PHP usando Aspose.PDF para expansão de documentos.
 lastmod: "2026-10-06"
 ---
-## Aspose.PDF - Inserir uma Página em Branco no Final do Arquivo PDF
+## Aspose.PDF - inserir uma página em branco no final do arquivo PDF
 
 Para Inserir uma Página em Branco no final do documento PDF usando **Aspose.PDF Java for PHP**, basta invocar a classe **InsertEmptyPageAtEndOfFile**.
 
@@ -28,8 +28,8 @@ print "Empty page added successfully!" . PHP_EOL;
 
 ```
 
-## Baixar Código em Execução
+## Baixar o exemplo de código
 
-Baixar **Inserir uma Página Vazia ao Final do Arquivo PDF (Aspose.PDF)**\u0412\u00A0de\u0412\u00A0qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Inserir uma Página Vazia ao Final do Arquivo PDF (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPageAtEndOfFile.php)

@@ -19,8 +19,8 @@ Um portfólio PDF pode agrupar vários arquivos dentro de um único contêiner P
 
 Use este exemplo quando precisar agrupar vários arquivos em uma coleção de portfólio PDF.
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e habilite o seu [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
-1. Criar [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) objetos para cada arquivo de entrada e defina suas descrições.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e habilite o seu [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
+1. Crie objetos [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) para cada arquivo de entrada e defina suas descrições.
 1. Adicione os arquivos à coleção de portfólio e salve o documento de saída.
 
 ```java
@@ -49,9 +49,9 @@ public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
 
 Use este exemplo quando uma coleção de portfólio PDF existente deve ser limpa.
 
-1. Abrir o PDF de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Excluir as entradas da coleção de documentos.
-1. Salvar o documento de saída limpo.
+1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Exclua as entradas da coleção de documentos.
+1. Salve o documento de saída limpo.
 
 ```java
 public static void removeFilesFromPdfPortfolio(Path inputFile, Path outputFile) {

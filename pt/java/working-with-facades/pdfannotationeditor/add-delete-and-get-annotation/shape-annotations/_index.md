@@ -1,13 +1,13 @@
 ---
-title: Anotações de Forma via Java
-linktitle: Anotações de Forma
+title: Anotações de forma via Java
+linktitle: Anotações de forma
 type: docs
 weight: 40
 url: /pt/java/pdfannotationeditor-class/shape-annotations/
 description: Aprenda como adicionar, inspecionar e excluir anotações de quadrado, círculo, polígono e polilinha em documentos PDF usando Java.
 lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: Trabalhe com anotações geométricas de PDF em Java
+AlternativeHeadline: Trabalhar com anotações geométricas de PDF em Java
 Abstract: Este artigo explica como criar, inspecionar e remover anotações geométricas em documentos PDF usando Java. Ele cobre anotações de quadrado, círculo, polígono e polilinha com configuração de cor, opacidade, pop‑up e ponto.
 ---
 ## Adicionar anotações de forma

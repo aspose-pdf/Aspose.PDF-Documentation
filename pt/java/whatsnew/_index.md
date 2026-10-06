@@ -17,7 +17,7 @@ SoftwareApplication: java
 
 ## Novidades no Aspose.PDF 25.12
 
-### Anotações de Texto Livre com Rotação Arbitrária em XFDF
+### Anotações de texto livre com rotação arbitrária em XFDF
 
 O suporte a ângulos de rotação arbitrários foi adicionado para anotações de Texto Livre em XFDF, tornando os layouts de anotações importados e exportados mais flexíveis.
 
@@ -31,7 +31,7 @@ editor.save(output);
 
 ## Novidades no Aspose.PDF 25.11
 
-### Melhorias na Sanitização de Dados Ocultos
+### Melhorias na sanitização de dados ocultos
 
 A sanitização aprimorada de PDF agora está disponível através do HiddenDataSanitizer para melhorar a remoção de conteúdo oculto dos documentos.
 
@@ -91,7 +91,7 @@ document.convert(conversionLog, PdfFormat.PDF_E_1, ConvertErrorAction.Delete);
 document.save(outputPdf);
 ```
 
-### Texto HTML em Anotações
+### Texto HTML em anotações
 
 Foi adicionada suporte para inserir texto HTML dentro de anotações.
 
@@ -150,7 +150,7 @@ Foi adicionado suporte à conformidade PDF 1.6 para cenários que exigem esta ve
 
 ## Novidades no Aspose.PDF 25.8
 
-### Suporte ao Estilo de Borda da Tabela
+### Suporte ao estilo de borda da tabela
 
 Foi adicionado suporte aos estilos de borda de tabela para fornecer mais controle sobre a aparência da tabela.
 
@@ -327,7 +327,7 @@ doc.save(dataDir + "SD_Aspose.docx", saveOption);
 
 ## Novidades no Aspose.PDF 25.5
 
-### Preservar Imagens na Conversão de PDF para ODS
+### Preservar imagens na conversão de PDF para ODS
 
 As imagens agora são preservadas ao converter documentos PDF para ODS.
 
@@ -338,7 +338,7 @@ options.setFormat(ExcelSaveOptions.ExcelFormat.ODS);
 doc.save("output.ods", options);
 ```
 
-### Criação Automática de Tags Durante a Conversão de PDF para PDF/A
+### Criação automática de tags durante a conversão de PDF para PDF/A
 
 A conversão de PDF para PDF/A agora suporta a criação automática de tags para melhorar os resultados de marcação no documento de saída.
 
@@ -356,7 +356,7 @@ document.close();
 
 ## Novidades no Aspose.PDF 25.4
 
-### Preservar Hiperlinks na Conversão de PDF para XLSX
+### Preservar hiperlinks na conversão de PDF para XLSX
 
 Os hiperlinks agora são preservados ao converter documentos PDF para XLSX, melhorando a navegação nas planilhas exportadas.
 
@@ -613,7 +613,7 @@ Document document = new Document(output);
         document.save(output);
 ```
 
-O `GraphicalPdfComparer` classe é adicionada para a comparação gráfica de documentos PDF e páginas. A comparação gráfica lida com imagens de páginas de documentos. Ela retorna o resultado como um `ImagesDifference` objeto ou como um documento PDF que contém imagens mescladas do original e das diferenças. A comparação gráfica é mais útil para documentos que têm pequenas diferenças no texto ou no conteúdo gráfico.
+A classe `GraphicalPdfComparer` é adicionada para a comparação gráfica de documentos PDF e páginas. A comparação gráfica lida com imagens de páginas de documentos. Ela retorna o resultado como um objeto `ImagesDifference` ou como um documento PDF que contém imagens mescladas do original e das diferenças. A comparação gráfica é mais útil para documentos que têm pequenas diferenças no texto ou no conteúdo gráfico.
 
 O trecho de código a seguir demonstra a comparação gráfica de dois documentos PDF e salva uma imagem com as diferenças no documento PDF resultante:
 
@@ -2053,7 +2053,7 @@ Aspose.PDF for Java permite carregar documentos no formato Portable Document For
 
 ## Novidades no Aspose.PDF 21.10
 
-### Como detectar texto oculto?
+### Detectar texto oculto
 
 Por favor, use o código a seguir:
 
@@ -2080,7 +2080,7 @@ Document pdf = new Document(inFile);
 
 ## Novidades no Aspose.PDF 21.8
 
-### Como alterar a cor do texto na assinatura digital?
+### Alterar a cor do texto na assinatura digital
 
 Na versão 21.8, setForegroundColor permite alterar a cor do texto na assinatura digital:
 
@@ -2105,7 +2105,7 @@ Please, use the following code:
 
 ## Novidades no Aspose.PDF 21.6
 
-### Ocultando imagem usando ImagePlacementAbsorber do documento
+### Ocultar uma imagem usando ImagePlacementAbsorber no documento
 
 Com Aspose.PDF for Java você pode ocultar imagens usando ImagePlacementAbsorber do documento:
 

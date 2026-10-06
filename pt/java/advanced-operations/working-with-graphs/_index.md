@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Gráficos PDF em Java
-linktitle: Trabalhar com Gráficos
+title: Trabalhar com gráficos PDF em Java
+linktitle: Trabalhar com gráficos
 type: docs
 weight: 70
 url: /pt/java/working-with-graphs/
@@ -10,7 +10,7 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Desenhe e personalize formas de gráficos vetoriais em arquivos PDF usando Java
+AlternativeHeadline: Desenhar e personalize formas de gráficos vetoriais em arquivos PDF usando Java
 Abstract: Esta seção apresenta a classe Graph em Aspose.PDF for Java e explica como criar formas vetoriais comuns em documentos PDF. Aprenda como adicionar e estilizar arcos, círculos, curvas, linhas, retângulos, elipses e validar os limites das formas.
 ---
 Aspose.PDF for Java fornece um `Graph` contêiner para desenhar formas vetoriais diretamente dentro das páginas PDF. Você pode adicionar geometria básica, aplicar preenchimentos e bordas, colocar texto dentro das formas e validar se as formas cabem dentro dos limites do gráfico.

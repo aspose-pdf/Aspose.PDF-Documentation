@@ -1,6 +1,6 @@
 ---
-title: Definir Bandeira de Envio
-linktitle: Definir Bandeira de Envio
+title: Definir bandeira de envio
+linktitle: Definir bandeira de envio
 type: docs
 weight: 40
 url: /pt/java/set-submit-flag/
@@ -14,7 +14,7 @@ O Java `FormEditorExamples.setSubmitUrl(...)` método inclui:
 
 ## Configurar uma bandeira de envio
 
-1. Vincule o PDF de origem ao `FormEditor` fachada.
+1. Vincule o PDF de origem à fachada `FormEditor`.
 2. Defina a URL de envio para o campo de botão.
 3. Defina a flag de envio para o formato necessário.
 4. Salve o documento atualizado.

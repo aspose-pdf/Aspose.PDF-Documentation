@@ -17,12 +17,12 @@ Abstract: Saiba como concatenar arquivos PDF com Aspose.PDF for Java. O exemplo 
 
 O exemplo Java mescla dois arquivos passando-os para o baseado em array `concatenate` sobrecarga.
 
-### Passos
+### Etapas
 
-1. Criar um `PdfFileEditor` instância.
-2. Construir um array de strings com os caminhos dos PDFs de entrada.
-3. Chamada `concatenate` com a matriz de entrada e o caminho do arquivo de saída.
-4. Salvar o documento mesclado.
+1. Crie uma instância de `PdfFileEditor`.
+2. Construa um array de strings com os caminhos dos PDFs de entrada.
+3. Chame `concatenate` com a matriz de entrada e o caminho do arquivo de saída.
+4. Salve o documento mesclado.
 
 ```java
 public static void mergePdfDocuments(Path firstInputFile, Path secondInputFile, Path outputFile) {

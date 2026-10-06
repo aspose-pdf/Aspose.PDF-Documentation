@@ -1,6 +1,6 @@
 ---
-title: Extrair Conteúdo Marcado de PDFs em Java
-linktitle: Extrair Conteúdo Marcado
+title: Extrair conteúdo marcado de PDFs em Java
+linktitle: Extrair conteúdo marcado
 type: docs
 weight: 20
 url: /pt/java/extract-tagged-content-from-tagged-pdfs/
@@ -16,8 +16,8 @@ Use estas APIs quando precisar inspecionar a árvore de estrutura lógica de um 
 
 Use este exemplo quando precisar acessar o contêiner de conteúdo marcado e desejar definir metadados básicos do documento, como título e idioma.
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Obter o [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) objeto do documento.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Obtenha o objeto [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) do documento.
 1. Defina os metadados de conteúdo marcado e salve o arquivo de saída.
 
 ```java
@@ -31,11 +31,11 @@ public static void getTaggedContent(Path outputFile) {
 }
 ```
 
-## Obtenha a estrutura raiz de um PDF marcado
+## Obter a estrutura raiz de um PDF marcado
 
 Este exemplo mostra como inspecionar os objetos raiz que representam a árvore de estrutura de um PDF marcado.
 
-1. Criar um novo PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obter seu conteúdo marcado.
+1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e obtenha seu conteúdo marcado.
 1. Defina os metadados do documento necessários.
 1. Leia e imprima a raiz da árvore de estrutura e o elemento raiz lógico, então salve o arquivo.
 

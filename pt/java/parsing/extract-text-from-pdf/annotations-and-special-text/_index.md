@@ -1,6 +1,6 @@
 ---
-title: Anotações e Texto Especial usando Java
-linktitle: Anotações e Texto Especial
+title: Anotações e texto especial usando Java
+linktitle: Anotações e texto especial
 type: docs
 weight: 40
 url: /pt/java/annotation-and-special-text/
@@ -14,8 +14,8 @@ sitemap:
 
 Iterar pelas anotações da página e ler o texto marcado de `HighlightAnnotation`.
 
-1. Abra o PDF de origem em um [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Iterar através do [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos no destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abra o PDF de origem em uma instância de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere através do objetos [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) no destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Verifique se cada anotação é um [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) antes de convertê-la para a classe de anotação tipada.
 1. Leia o texto marcado de cada anotação de destaque e imprima-o no console.
 
@@ -36,10 +36,10 @@ public static void extractHighlightedText(Path inputFile) {
 
 Leia o fluxo de aparência normal de uma anotação de carimbo e passe‑o adiante `TextAbsorber`.
 
-1. Abra o PDF de origem em um [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Iterar através do [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) objetos no destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Abra o PDF de origem em uma instância de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Itere através do objetos [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) no destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
 1. Filtre as anotações para aquelas cujo tipo é `Stamp`.
-1. Criar um [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) e solicite a entrada de aparência normal do dicionário de aparência da anotação de carimbo.
+1. Crie um [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) e solicite a entrada de aparência normal do dicionário de aparência da anotação de carimbo.
 1. Visite a aparência [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) e imprima o texto extraído.
 
 ```java
@@ -61,11 +61,11 @@ public static void extractStampText(Path inputFile) {
 
 ## Extrair detalhes de texto sobrescrito e subscrito
 
-Usar `TextFragmentAbsorber` quando você precisa tanto do texto extraído quanto das marcações de sobrescrito ou subscrito em cada fragmento.
+Use `TextFragmentAbsorber` quando precisar tanto do texto extraído quanto das marcações de sobrescrito ou subscrito em cada fragmento.
 
-1. Abra o PDF de origem em um [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) instância.
-1. Criar um [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) para análise de texto em nível de fragmento.
-1. Visite o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coletar o seu [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) objetos.
+1. Abra o PDF de origem em uma instância de [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) para análise de texto em nível de fragmento.
+1. Visite o destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) e coletar o seu objetos [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
 1. Itere pelos fragmentos e leia o texto junto com as bandeiras de sobrescrito e subscrito de `fragment.getTextState()`.
 1. Escreva os detalhes extraídos no arquivo de saída.
 

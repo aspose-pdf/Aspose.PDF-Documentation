@@ -1,6 +1,6 @@
 ---
-title: Alterar Preferências do Visualizador
-linktitle: Alterar Preferências do Visualizador
+title: Alterar preferências do visualizador
+linktitle: Alterar preferências do visualizador
 type: docs
 weight: 20
 url: /pt/java/change-viewer-preferences/
@@ -12,7 +12,7 @@ Abstract: Este artigo mostra como vincular um PDF, modificar o valor da preferê
 ---
 ## Alterar a preferência de exibição
 
-1. Vincule o PDF de origem ao `PdfContentEditor` fachada.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
 2. Leia o valor atual da preferência do visualizador.
 3. Combine-o com a flag adicional desejada e passe o resultado para `changeViewerPreference(...)`.
 4. Salve o documento PDF atualizado.

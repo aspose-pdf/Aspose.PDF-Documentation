@@ -12,8 +12,8 @@ Abstract: Este artigo mostra como vincular um PDF, excluir todos os anexos de do
 ---
 ## Remover todos os anexos
 
-1. Vincule o PDF de origem ao `PdfContentEditor` fachada.
-2. Chamada `deleteAttachments()` para remover todos os anexos incorporados.
+1. Vincule o PDF de origem à fachada `PdfContentEditor`.
+2. Chame `deleteAttachments()` para remover todos os anexos incorporados.
 3. Salve o documento PDF atualizado.
 
 ```java

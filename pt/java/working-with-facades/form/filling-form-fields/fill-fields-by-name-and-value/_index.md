@@ -1,6 +1,6 @@
 ---
-title: Preencher Campos por Nome e Valor
-linktitle: Preencher Campos por Nome e Valor
+title: Preencher campos por nome e valor
+linktitle: Preencher campos por nome e valor
 type: docs
 weight: 60
 url: /pt/java/fill-fields-by-name-and-value/
@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: Preencher vários campos de formulário PDF a partir de pares nome-valor em Java
 Abstract: O conjunto atual de exemplos em Java preenche campos individualmente com chamadas repetidas `fillField(...)`. Este artigo mostra como aplicar o mesmo padrão de API à sua própria coleção nome-valor sem inventar um recurso de fachada separado que não está presente nos exemplos do repositório.
 ---
-O Java `FormExamples` classe preenche campos individuais diretamente:
+A classe Java `FormExamples` preenche campos individuais diretamente:
 
 ```java
 form.fillField("name", "John Doe");

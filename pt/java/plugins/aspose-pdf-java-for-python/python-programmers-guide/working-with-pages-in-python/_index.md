@@ -1,6 +1,6 @@
 ---
-title: Trabalhar com Páginas em Python
-linktitle: Trabalhar com Páginas em Python
+title: Trabalhar com páginas em Python
+linktitle: Trabalhar com páginas em Python
 type: docs
 weight: 30
 url: /pt/java/working-with-pages-in-python/
