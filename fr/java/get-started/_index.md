@@ -3,7 +3,7 @@ title: Premiers pas
 linktitle: Premiers pas
 type: docs
 weight: 30
-url: /java/get-started/
+url: /fr/java/get-started/
 description: Découvrez comment démarrer avec Aspose.PDF for Java pour créer des documents PDF simples, puis des documents plus avancés avec du texte, des images et des tableaux.
 is_node: true
 lastmod: "2026-09-21"

@@ -1,39 +1,39 @@
 ---
-title: PDFドキュメントを作成する
-linktitle: 作成
+title: "プログラムによる PDF ドキュメントの作成"
+linktitle: "PDF の作成"
 type: docs
 weight: 10
 url: /ja/java/create-document/
-description: Aspose.PDF for JavaでPDFファイルを作成する方法を学びます。
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して Java で最初から PDF ドキュメントを作成する方法を学びます。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Aspose.PDF for Java を使用した PDF ファイルの生成
+Abstract: この記事では、Aspose.PDF を使用して Java で PDF ファイルを作成する方法を示します。サンプルでは新しい Document オブジェクトを作成し、ページを追加し、サンプルテキストを含む TextFragment を挿入し、結果を PDF ファイルとして保存します。
 ---
+コードで PDF ファイルを作成することは、レポート、請求書、生成されたビジネス文書に対する一般的な要件です。Aspose.PDF for Java は、最初からドキュメントを構築する直接的な方法を提供します。
 
-**Aspose.PDF for Java** APIは、Javaアプリケーション開発者がアプリケーションにPDFドキュメント処理機能を組み込むことを可能にします。他のソフトウェアを基盤となるマシンにインストールすることなく、PDFファイルの作成と読み取りを行うことができます。Aspose.PDF for Javaは、デスクトップ、JSP、JSFアプリケーションなど、さまざまなJavaアプリケーションタイプで使用できます。
+## Java で PDF ファイルを作成する方法
 
-## Javaを使用してPDFファイルを作成する方法
+PDF ドキュメントをプログラムで作成するには、次の手順を実行してください。
 
-Javaを使用してPDFファイルを作成するには、次の手順を使用します。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトを作成してください。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) をドキュメントに追加してください。
+1. ページの段落コレクションに [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) を追加してください。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を出力ファイルに保存してください。
 
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトをインスタンス化する
-1. ドキュメントオブジェクトに[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)を追加する
-1. [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment)オブジェクトを作成する
+## シンプルな PDF ドキュメントの作成
 
-1. ページの[Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs)コレクションに[TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/textfragment)を追加する
-1. 結果のPDFドキュメントを保存する
+以下の Java の例は `CreatePdfDocumentExamples.java` を基にしています。
 
 ```java
-// ドキュメントオブジェクトを初期化
-Document document = new Document();
- 
-// ページを追加
-Page page = document.getPages().add();
- 
-// 新しいページにテキストを追加
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// 更新されたPDFを保存
-document.save("HelloWorld_out.pdf");
+public static void createNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+        page.getParagraphs().add(new TextFragment("Hello World!"));
+        document.save(outputFile.toString());
+    }
+}
 ```

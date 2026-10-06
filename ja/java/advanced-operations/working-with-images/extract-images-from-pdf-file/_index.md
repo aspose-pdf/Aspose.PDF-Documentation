@@ -1,51 +1,62 @@
 ---
-title: PDFファイルから画像を抽出する
-linktitle: 画像を抽出する
+title: "Java を使用した PDF ファイルから画像の抽出"
+linktitle: "画像の抽出"
 type: docs
 weight: 30
 url: /ja/java/extract-images-from-pdf-file/
-description: このセクションでは、Javaライブラリを使用してPDFファイルから画像を抽出する方法を示します。
-lastmod: "2021-06-05"
+description: Java で PDF ファイルから埋め込み画像を抽出する方法を学びます。
+lastmod: "2026-10-06"
+TechArticle: true
+AlternativeHeadline: "Java での PDF ファイルから画像の抽出"
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントから画像を抽出する方法を示します。ページから特定の画像リソースを保存する方法と、選択した矩形領域内にある画像をエクスポートする方法について説明します。
 ---
+Aspose.PDF for Java は、直接的な画像リソース抽出および配置ベースのフィルタリングをサポートしています。
 
-各ページには[Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources)コレクションがあり、これにはページ内のすべての画像が保持されているImagesコレクションがあります。[XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage)オブジェクトは、Imagesコレクション内の特定の画像を取得します。
+## インデックスで埋め込まれた画像の抽出
 
-ページから画像を抽出するには:
+PDF ページから特定の画像リソースを保存する必要がある場合に、この例を使用してください。
 
-Imagesコレクションから画像インデックスを使用して画像を取得します。
-[XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage)オブジェクトのsave(..)メソッドを使用して抽出した画像を保存します。
-
-次のコードスニペットは、PDFファイルから画像を抽出する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ページリソースから対象の [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) にアクセスしてください。
+1. 画像ストリームを出力ファイルに保存してください。
 
 ```java
-package com.aspose.pdf.examples;
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
+    }
+}
+```
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+## 特定のページ領域から画像の抽出
 
-import com.aspose.pdf.*;
-import com.aspose.pdf.internal.html.rendering.image.ImageFormat;
+選択した矩形内に配置された画像のみをエクスポートする場合にこの例を使用してください。
 
-public class ExampleExtractImages {
+1. 対象領域を [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) で定義し、ソース PDF を開いてください。
+1. [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) を使用して、ページ上の画像配置を検査してください。
+1. 選択領域内に完全に収まる画像のみを保存してください。
 
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
+```java
+public static void extractImageFromSpecificRegion(Path inputFile, Path outputFile) throws Exception {
+    Rectangle rectangle = new Rectangle(0, 0, 590, 590, true);
 
-    public static void ExtractImages() throws IOException {
-
-        // ドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "ExtractImages.pdf");
-
-        // 特定の画像を抽出する
-        XImage xImage = pdfDocument.getPages().get_Item(1).getResources().getImages().get_Item(1);
-
-        FileOutputStream outputImage = new FileOutputStream(_dataDir + "output.jpg");
-
-        // 出力画像を保存する
-        xImage.save(outputImage, ImageFormat.Jpeg);
-        outputImage.close();
-
-        // 更新されたPDFファイルを保存する
-        pdfDocument.save(_dataDir + "ExtractImages_out.pdf");
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+        int index = 1;
+        for (ImagePlacement imagePlacement : absorber.getImagePlacements()) {
+            Point point1 = new Point(imagePlacement.getRectangle().getLLX(), imagePlacement.getRectangle().getLLY());
+            Point point2 = new Point(imagePlacement.getRectangle().getURX(), imagePlacement.getRectangle().getURX());
+            if (rectangle.contains(point1, true) && rectangle.contains(point2, true)) {
+                Path indexedOutputFile = Path.of(outputFile.toString().replace("index", String.valueOf(index)));
+                try (OutputStream outputImage = Files.newOutputStream(indexedOutputFile)) {
+                    imagePlacement.getImage().save(outputImage);
+                }
+                index++;
+            }
+        }
     }
 }
 ```

@@ -3,7 +3,7 @@ title: Définir l'expiration du PDF en Python
 linktitle: Définir l'expiration du PDF en Python
 type: docs
 weight: 80
-url: /java/set-pdf-expiration-in-python/
+url: /fr/java/set-pdf-expiration-in-python/
 description: Découvrez comment définir une date d'expiration pour un fichier PDF en Python à l'aide d'Aspose.PDF pour un accès aux documents urgent.
 lastmod: "2026-09-21"
 ---

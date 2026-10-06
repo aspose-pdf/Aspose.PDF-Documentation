@@ -3,7 +3,7 @@ title: Ajouter une chaîne HTML en utilisant DOM en PHP
 linktitle: Ajouter une chaîne HTML en utilisant DOM en PHP
 type: docs
 weight: 10
-url: /java/add-html-string-using-dom-in-php/
+url: /fr/java/add-html-string-using-dom-in-php/
 description: Découvrez comment ajouter du contenu HTML à un document PDF à l'aide du DOM en PHP avec Aspose.PDF pour la création de documents riches.
 lastmod: "2026-09-21"
 ---

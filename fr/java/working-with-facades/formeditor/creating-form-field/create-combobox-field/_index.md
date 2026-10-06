@@ -3,7 +3,7 @@ title: Créer une zone de liste déroulante
 linktitle: Créer une zone de liste déroulante
 type: docs
 weight: 30
-url: /java/create-combobox-field/
+url: /fr/java/create-combobox-field/
 description: Découvrez comment ajouter un champ de zone de liste déroulante à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

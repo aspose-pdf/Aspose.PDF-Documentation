@@ -3,7 +3,7 @@ title: Ajouter un en-tête au PDF
 linktitle: Ajouter un en-tête au PDF
 type: docs
 weight: 20
-url: /java/add-header/
+url: /fr/java/add-header/
 description: Découvrez comment ajouter des en-têtes de texte et d'image aux pages PDF en Java avec la façade PdfFileStamp.
 lastmod: "2026-09-22"
 draft: false

@@ -1,11 +1,12 @@
 ---
-title: Trabalhando Com Texto em Jython
+title: Trabalhar com texto em Jython
+linktitle: Trabalhar com texto em Jython
 type: docs
 weight: 40
 url: /pt/java/working-with-text-in-jython/
-lastmod: "2021-06-05"
+description: Explore a manipulação de texto em PDFs usando Jython com Aspose.PDF, facilitando o trabalho com conteúdo de texto em documentos.
+lastmod: "2026-10-06"
 ---
-
 Esta seção inclui os seguintes tópicos:
 
 - [Adicionar String HTML usando DOM em Jython](/pdf/pt/java/add-html-string-using-dom-in-jython/)

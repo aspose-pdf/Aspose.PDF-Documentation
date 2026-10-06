@@ -3,7 +3,7 @@ title: Copier un champ depuis un autre PDF
 linktitle: Copier un champ depuis un autre PDF
 type: docs
 weight: 80
-url: /java/copy-outer-field/
+url: /fr/java/copy-outer-field/
 description: Découvrez comment copier un champ de formulaire d'un document PDF vers un autre en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

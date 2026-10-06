@@ -3,7 +3,7 @@ title: Installation et utilisation d'Aspose.PDF Java Maven pour Eclipse
 linktitle: Installation et utilisation d'Aspose.PDF Java Maven pour Eclipse
 type: docs
 weight: 10
-url: /java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
+url: /fr/java/installing-and-using-aspose-pdf-java-maven-for-eclipse/
 description: Découvrez comment installer et configurer Aspose.PDF for Java à l'aide de Maven dans Eclipse, permettant une gestion transparente des PDF dans les projets Java.
 lastmod: "2026-09-21"
 ---

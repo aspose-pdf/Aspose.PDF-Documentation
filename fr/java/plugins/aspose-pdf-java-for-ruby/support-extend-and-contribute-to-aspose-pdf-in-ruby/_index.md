@@ -3,7 +3,7 @@ title: Assistance et contributions à Aspose.PDF en Ruby
 linktitle: Assistance et contributions à Aspose.PDF en Ruby
 type: docs
 weight: 30
-url: /java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
+url: /fr/java/support-extend-and-contribute-to-aspose-pdf-in-ruby/
 description: Découvrez comment prendre en charge, étendre et contribuer à Aspose.PDF pour Ruby pour améliorer ses fonctionnalités et améliorer vos solutions PDF.
 lastmod: "2026-09-21"
 ---

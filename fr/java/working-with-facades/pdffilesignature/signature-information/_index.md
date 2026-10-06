@@ -3,7 +3,7 @@ title: Informations sur la signature
 linktitle: Informations sur la signature
 type: docs
 weight: 60
-url: /java/signature-information/
+url: /fr/java/signature-information/
 description: Découvrez comment lire les noms de signature et les détails des signataires à partir de PDF signés en Java avec PdfFileSignature.
 lastmod: "2026-09-22"
 draft: false

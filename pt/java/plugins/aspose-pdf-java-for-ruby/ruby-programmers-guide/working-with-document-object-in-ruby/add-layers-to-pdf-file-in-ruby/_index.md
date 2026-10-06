@@ -1,19 +1,20 @@
 ---
-title: Adicionar Camadas ao Arquivo PDF em Ruby
+title: Adicionar camadas ao arquivo PDF em Ruby
+linktitle: Adicionar camadas ao arquivo PDF em Ruby
 type: docs
 weight: 20
 url: /pt/java/add-layers-to-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Aprenda como adicionar camadas a um arquivo PDF em Ruby usando Aspose.PDF para melhorar a estrutura do documento e o controle de visibilidade.
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - adicionar camadas
 
-## Aspose.PDF - Adicionar Camadas
-
-<ins> Para adicionar Camadas no documento Pdf usando **Aspose.PDF Java para Ruby**, basta invocar o módulo **AddLayers**.
+<ins> Para adicionar Camadas em documento PDF usando **Aspose.PDF Java for Ruby**, basta invocar o módulo **AddLayers**.
 
 Código Ruby
 
 ```java
-# O caminho para o diretório de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
@@ -23,7 +24,7 @@ page = doc.getPages().add()
 
 operator = Rjb::import('com.aspose.pdf.Operator')
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc1", "Linha Vermelha")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc1", "Red Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(1, 0, 0))
 
@@ -37,7 +38,7 @@ page.setLayers(Rjb::import('java.util.ArrayList').new)
 
 page.getLayers().add(layer)
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc2", "Linha Verde")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc2", "Green Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(0, 1, 0))
 
@@ -49,7 +50,7 @@ layer.getContents().add(operator.Stroke())
 
 page.getLayers().add(layer)
 
-layer = Rjb::import('com.aspose.pdf.Layer').new("oc3", "Linha Azul")
+layer = Rjb::import('com.aspose.pdf.Layer').new("oc3", "Blue Line")
 
 layer.getContents().add(operator.SetRGBColorStroke(0, 0, 1))
 
@@ -61,16 +62,15 @@ layer.getContents().add(operator.Stroke())
 
 page.getLayers().add(layer)
 
-# Salvar Documento PDF
+# Save PDF Document
 
 doc.save(data_dir + "Layers-Added.pdf")
 
-puts "Camadas adicionadas com sucesso, por favor verifique o arquivo de saída."
+puts "Added Layers Successfully, please check the output file."
 ```
 
+## Baixar o exemplo de código
 
-## Download Running Code
-
-Baixe **Adicionar Camadas (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Download **Add Layers (Aspose.PDF)** de qualquer um dos sites de codificação social abaixo mencionados:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/addlayers.rb)

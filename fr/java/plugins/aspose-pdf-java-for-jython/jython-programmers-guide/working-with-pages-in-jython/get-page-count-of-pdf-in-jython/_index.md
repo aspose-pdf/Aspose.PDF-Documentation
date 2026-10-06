@@ -3,7 +3,7 @@ title: Obtenir le nombre de pages d'un PDF en Jython
 linktitle: Obtenir le nombre de pages d'un PDF en Jython
 type: docs
 weight: 40
-url: /java/get-page-count-of-pdf-in-jython/
+url: /fr/java/get-page-count-of-pdf-in-jython/
 description: Comprenez comment récupérer le nombre de pages d'un document PDF en Jython à l'aide d'Aspose.PDF pour l'analyse de documents.
 lastmod: "2026-09-21"
 ---

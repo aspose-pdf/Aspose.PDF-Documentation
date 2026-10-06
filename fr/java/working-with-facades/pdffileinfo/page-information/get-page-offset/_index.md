@@ -3,7 +3,7 @@ title: Obtenir le décalage de page
 linktitle: Obtenir le décalage de page
 type: docs
 weight: 20
-url: /java/get-page-offset/
+url: /fr/java/get-page-offset/
 description: Découvrez comment inspecter les décalages des pages X et Y en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

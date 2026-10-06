@@ -1,31 +1,32 @@
 ---
-title: PDFからフォントを抽出する
-linktitle: フォントを抽出
+title: "Java 経由で PDF からフォントの抽出"
+linktitle: "PDF からフォントの抽出"
 type: docs
 weight: 30
 url: /ja/java/extract-fonts-from-pdf/
-description: Aspose.PDF for Javaを使用してPDFからフォントを抽出する方法
-lastmod: "2021-06-05"
+description: Aspose.PDF for Java を使用して、PDF ドキュメントで使用されているフォントを検査および抽出します。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java を使用した PDF からのフォント抽出"
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントで使用されているフォントを検査する方法を説明します。PDF を開き、`getFontUtilities().getAllFonts()` を呼び出し、得られたフォントオブジェクトを反復処理して名前を読み取る方法を示します。
 ---
+変換やアーカイブのワークフローの前に、文書のタイポグラフィを監査したり、埋め込みリソースを検査したり、フォント使用状況を検証したりする必要がある場合にフォント抽出を使用します。
 
-PDFドキュメントからすべてのフォントを取得したい場合は、Documentクラスで提供されている`Document.IDocumentFontUtilities.getAllFonts()`メソッドを使用できます。既存のPDFドキュメントからすべてのフォントを取得するために、以下のコードスニペットを確認してください:
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスに開いてください。
+1. `document.getFontUtilities().getAllFonts()` を呼び出して、ドキュメントが参照するすべての [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) リソースを収集してください。
+1. 抽出された [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) オブジェクトを反復処理し、各フォントのメタデータからフォント名を読み取ってください。
+1. フォント名を出力して、ドキュメントのタイポグラフィを監査またはエクスポートできるようにしてください。
 
 ```java
-public static void Extract_Fonts() throws FileNotFoundException
-{
-    // ドキュメントディレクトリへのパス
-    String filePath = "<... enter file name ...>";
-    
-    // PDFドキュメントをロード
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Font[] fonts = pdfDocument.getFontUtilities().getAllFonts();
-
-    for (com.aspose.pdf.Font font : fonts)
-    {
-        font.save(new FileOutputStream(font.getFontName()));
+public static void extractFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Font[] fonts = document.getFontUtilities().getAllFonts();
+        for (Font font : fonts) {
+            System.out.println(font.getFontName());
+        }
     }
 }
 ```

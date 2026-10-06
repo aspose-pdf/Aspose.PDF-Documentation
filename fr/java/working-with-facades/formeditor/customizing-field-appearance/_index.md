@@ -3,7 +3,7 @@ title: Personnalisation de l'apparence du champ
 linktitle: Personnalisation de l'apparence du champ
 type: docs
 weight: 30
-url: /java/customizing-field-appearance/
+url: /fr/java/customizing-field-appearance/
 description: Découvrez comment personnaliser l'apparence et le comportement des champs de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

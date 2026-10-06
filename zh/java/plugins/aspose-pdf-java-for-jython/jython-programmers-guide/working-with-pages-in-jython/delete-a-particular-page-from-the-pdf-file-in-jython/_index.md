@@ -1,19 +1,20 @@
 ---
-title: 从PDF文件中删除特定页面在jython中
+title: 在 jython 中删除 PDF 文件的特定页面
+linktitle: 在 jython 中删除 PDF 文件的特定页面
 type: docs
 weight: 20
 url: /zh/java/delete-a-particular-page-from-the-pdf-file-in-jython/
-lastmod: "2021-06-05"
+description: 了解如何使用 Jython 和 Aspose.PDF 删除 PDF 文档的特定页面，以实现高效编辑。
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - 删除页面
 
-使用 **Aspose.PDF Java for Jython** 检查文件格式。在这里你可以看到示例代码。
+使用 **Aspose.PDF Java for Jython** 检查文件格式。此处可查看示例代码。
 
-Error rendering macro 'code' : 参数 lang 指定的值无效
+渲染宏‘code’时出错：为参数 lang 指定的值无效
 
 ## 下载运行代码
 
-从以下提到的社交编码网站下载运行代码：
+从以下提及的社交编码站点下载运行代码：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

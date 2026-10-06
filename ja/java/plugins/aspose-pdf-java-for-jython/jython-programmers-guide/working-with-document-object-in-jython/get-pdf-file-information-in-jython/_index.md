@@ -1,19 +1,20 @@
 ---
-title: JythonでPDFファイル情報を取得する
+title: "Jython での PDF ファイル情報の取得"
+linktitle: "Jython での PDF ファイル情報の取得"
 type: docs
 weight: 30
 url: /ja/java/get-pdf-file-information-in-jython/
-lastmod: "2021-06-05"
+description: "Jython と Aspose.PDF を使用して、メタデータ、プロパティ、ファイルの詳細など、PDF ファイルに関する詳細情報を取得する方法を学んでください。"
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - PDF ファイル情報の取得
 
-## Aspose.PDF - PDFファイル情報を取得する
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。ここにサンプルコードを示します。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認する。ここにサンプルコードがあります。
+マクロ 'code' のレンダリングエラー: パラメーター lang に無効な値が指定されました。
 
-Error rendering macro 'code' : パラメータlangに指定された値が無効です
+## 実行中のコードのダウンロード
 
-## 実行コードのダウンロード
-
-以下のいずれかのソーシャルコーディングサイトから実行コードをダウンロードしてください:
+以下に記載されたソーシャルコーディングサイトから実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

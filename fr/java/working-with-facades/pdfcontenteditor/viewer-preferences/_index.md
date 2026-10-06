@@ -3,7 +3,7 @@ title: Préférences de la visionneuse
 linktitle: Préférences de la visionneuse
 type: docs
 weight: 100
-url: /java/pdfcontenteditor-viewer-preferences/
+url: /fr/java/pdfcontenteditor-viewer-preferences/
 description: Découvrez comment obtenir et modifier les préférences de la visionneuse en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

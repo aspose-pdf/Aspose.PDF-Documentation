@@ -3,7 +3,7 @@ title: Optimiser un document PDF pour le Web en PHP
 linktitle: Optimiser un document PDF pour le Web en PHP
 type: docs
 weight: 60
-url: /java/optimize-pdf-document-for-the-web-in-php/
+url: /fr/java/optimize-pdf-document-for-the-web-in-php/
 description: Apprenez à optimiser un document PDF pour des performances Web plus rapides et une taille de fichier réduite en PHP avec Aspose.PDF.
 lastmod: "2026-09-21"
 ---

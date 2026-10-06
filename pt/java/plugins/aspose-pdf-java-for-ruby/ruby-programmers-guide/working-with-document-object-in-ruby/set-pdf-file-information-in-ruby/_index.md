@@ -1,32 +1,32 @@
 ---
-title: Definir Informações do Arquivo PDF em Ruby
+title: Definir informações do arquivo PDF em Ruby
+linktitle: Definir informações do arquivo PDF em Ruby
 type: docs
 weight: 120
 url: /pt/java/set-pdf-file-information-in-ruby/
-lastmod: "2021-06-05"
+description: Defina e atualize programaticamente os metadados do PDF, como título, autor e palavras‑chave, usando Ruby.
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - definir informações do arquivo PDF
 
-## Aspose.PDF - Definir Informações do Arquivo PDF
-
-Para atualizar as informações do documento PDF usando **Aspose.PDF Java for Ruby**, simplesmente invoque o módulo **SetPdfFileInfo**.
+Para atualizar as informações do documento Pdf usando **Aspose.PDF Java for Ruby**, basta invocar o módulo **SetPdfFileInfo**.
 
 Código Ruby
 
 ```java
-
-# O caminho para o diretório de documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abrir um documento pdf.
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# Obter informações do documento
+# Get document information
 
 doc_info = doc.getInfo()
 
-doc_info.setAuthor("Aspose.PDF para java")
+doc_info.setAuthor("Aspose.PDF for java")
 
 doc_info.setCreationDate(Rjb::import('java.util.Date').new)
 
@@ -34,20 +34,19 @@ doc_info.setKeywords("Aspose.PDF, DOM, API")
 
 doc_info.setModDate(Rjb::import('java.util.Date').new)
 
-doc_info.setSubject("Informações do PDF")
+doc_info.setSubject("PDF Information")
 
-doc_info.setTitle("Definindo Informações do Documento PDF")
+doc_info.setTitle("Setting PDF Document Information")
 
-# salvar documento atualizado com novas informações
+# save update document with new information
 
 doc.save(data_dir + "Updated_Information.pdf")
 
-puts "Atualizar informações do documento, por favor verifique o arquivo de saída."
+puts "Update document information, please check output file."
 ```
 
+## Baixar o exemplo de código
 
-## Baixar Código em Execução
-
-Baixe **Definir Informações do Arquivo PDF (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Set PDF File Information (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/setpdffileinfo.rb)

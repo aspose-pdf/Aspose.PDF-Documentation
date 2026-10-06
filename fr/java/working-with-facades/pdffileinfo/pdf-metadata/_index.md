@@ -3,7 +3,7 @@ title: Métadonnées PDF
 linktitle: Métadonnées PDF
 type: docs
 weight: 30
-url: /java/pdf-metadata/
+url: /fr/java/pdf-metadata/
 description: Apprenez à lire, mettre à jour, effacer et enregistrer les métadonnées PDF en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

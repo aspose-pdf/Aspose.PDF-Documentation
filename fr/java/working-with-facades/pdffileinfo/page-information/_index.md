@@ -3,7 +3,7 @@ title: Informations sur les pages
 linktitle: Informations sur les pages
 type: docs
 weight: 20
-url: /java/page-information/
+url: /fr/java/page-information/
 description: Découvrez comment inspecter les dimensions, la rotation et les décalages d'une page PDF en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

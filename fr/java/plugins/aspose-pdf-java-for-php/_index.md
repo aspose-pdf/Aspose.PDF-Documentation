@@ -3,7 +3,7 @@ title: Aspose.PDF Java pour PHP
 linktitle: Aspose.PDF Java pour PHP
 type: docs
 weight: 50
-url: /java/aspose-pdf-java-for-php/
+url: /fr/java/aspose-pdf-java-for-php/
 description: Découvrez comment intégrer Aspose.PDF for Java dans des projets PHP. Débloquez la fonctionnalité PDF avancée pour vos applications Web.
 lastmod: "2026-09-21"
 ---

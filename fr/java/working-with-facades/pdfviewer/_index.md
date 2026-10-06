@@ -3,7 +3,7 @@ title: Classe PdfViewer
 linktitle: Classe PdfViewer
 type: docs
 weight: 135
-url: /java/pdfviewer-class/
+url: /fr/java/pdfviewer-class/
 description: Découvrez comment utiliser la façade PdfViewer en Java pour décoder les pages PDF et inspecter les paramètres liés à la visionneuse.
 lastmod: "2026-09-22"
 sitemap:

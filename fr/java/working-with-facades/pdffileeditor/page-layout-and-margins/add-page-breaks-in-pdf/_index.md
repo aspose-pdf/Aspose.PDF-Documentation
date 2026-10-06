@@ -3,7 +3,7 @@ title: Ajouter des sauts de page dans un PDF
 linktitle: Ajouter des sauts de page dans un PDF
 type: docs
 weight: 20
-url: /java/add-page-breaks-in-pdf/
+url: /fr/java/add-page-breaks-in-pdf/
 description: Insérez des sauts de page dans un PDF en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Obtenir des informations sur la page
 linktitle: Obtenir des informations sur la page
 type: docs
 weight: 10
-url: /java/get-page-info/
+url: /fr/java/get-page-info/
 description: Découvrez comment inspecter la largeur, la hauteur et la rotation d'une page en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

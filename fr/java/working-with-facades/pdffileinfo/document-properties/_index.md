@@ -3,7 +3,7 @@ title: Propriétés du document
 linktitle: Propriétés du document
 type: docs
 weight: 10
-url: /java/document-properties/
+url: /fr/java/document-properties/
 description: Découvrez comment inspecter les propriétés principales d'un document PDF en Java, y compris la version PDF et les privilèges du document.
 lastmod: "2026-09-22"
 draft: false

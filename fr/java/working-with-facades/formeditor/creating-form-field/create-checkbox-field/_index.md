@@ -3,7 +3,7 @@ title: Créer un champ de case à cocher
 linktitle: Créer un champ de case à cocher
 type: docs
 weight: 20
-url: /java/create-checkbox-field/
+url: /fr/java/create-checkbox-field/
 description: Découvrez comment ajouter un champ de formulaire de case à cocher à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

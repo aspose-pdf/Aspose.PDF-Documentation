@@ -1,171 +1,75 @@
 ---
-title: PDFをMicrosoft PowerPointに変換する
-linktitle: PDFをPowerPointに変換する
+title: "Java での PDF の PowerPoint への変換"
+linktitle: "PDF の PowerPoint への変換"
 type: docs
 weight: 30
 url: /ja/java/convert-pdf-to-powerpoint/
-lastmod: "2021-11-19"
-description: Aspose.PDFを使用すると、Javaを利用してPDFをPowerPoint形式に変換できます。PDFをPPTXにスライドを画像として変換することが可能です。
+description: "Aspose.PDF を使用して、Java で PDF ファイルを PowerPoint に変換する方法を学習します。編集可能な PPTX スライド、画像ベースのスライド、およびカスタム画像解像度が含まれます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java で PDF を PowerPoint に変換する方法"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ファイルを PowerPoint プレゼンテーションに変換する方法を説明します。標準の PPTX 変換、スライドを画像として出力する方法、および `PptxSaveOptions` を使用した画像解像度の制御について取り上げます。"
 ---
+Aspose.PDF for Java は、スライド描画オプションを使用して PDF ページを編集可能な PowerPoint プレゼンテーションにエクスポートすることをサポートしています。[`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) を使用して、PDF ページが PowerPoint スライドにマッピングされる方法を制御してください。
 
-**Aspose.PDF for Java**は、PDFからPPTXへの変換の進行状況を追跡できます。  
-Aspose.SlidesというAPIがあり、PPT/PPTXプレゼンテーションを作成および操作する機能を提供しています。このAPIは、PPT/PPTXファイルをPDF形式に変換する機能も提供しています。Aspose.PDF for Javaでは、PDFドキュメントをPPTX形式に変換する機能を導入しました。この変換中に、PDFファイルの個々のページがPPTXファイル内の別々のスライドに変換されます。
+## PDF から PPTX への変換
 
-PDFからPPTXへの変換中に、テキストは選択/更新可能なテキストとしてレンダリングされ、画像としてレンダリングされるのではありません。
- PDFファイルをPPTX形式に変換するために、Aspose.PDFはPptxSaveOptionsというクラスを提供します。 [PptxSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions) クラスのオブジェクトは、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document).save(..) メソッドの第二引数として渡されます。
+PDF ドキュメントを標準の PowerPoint プレゼンテーションとしてエクスポートする必要がある場合は、この例を使用してください。
 
-次のコードスニペットを確認して、PDFをPowerPoint形式に変換するタスクを解決してください:
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. 編集可能な PowerPoint エクスポート用に、デフォルトの [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) を作成してください。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出してください。PDF ページが `.pptx` プレゼンテーションとして保存されます。
+1. 変換された PPTX ファイルを保存してください。
 
 ```java
-public final class ConvertPDFtoPPTX {
-
-    private ConvertPDFtoPPTX() {
-
+public static void convertPdfToPptx(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PptxSaveOptions saveOptions = new PptxSaveOptions();
+        document.save(outputFile.toString(), saveOptions);
     }
-
-    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    public static void run() throws IOException {
-        convertPDFtoPPTX_Simple();
-        convertPDFtoPPTX_SlideAsImages();
-        convertPDFtoPPTX_ProgresDetails();
-    }
-
-    public static void convertPDFtoPPTX_Simple() {
-        String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX.pdf").toString();
-        String pptxDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX_out.pptx").toString();
-
-        // PDFドキュメントを読み込む
-        Document document = new Document(documentFileName);
-
-        // PptxSaveOptionsインスタンスを生成
-        PptxSaveOptions pptx_save = new PptxSaveOptions();
-
-        // 出力をPPTX形式で保存
-        document.save(pptxDocumentFileName, pptx_save);
-        document.close();
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-## PDFをスライドとして画像形式でPPTXに変換する
+## PDF から PPTX への変換（スライドを画像として）
 
-検索可能なPDFを選択可能なテキストとしてではなく、画像としてPPTXに変換する必要がある場合、Aspose.PDFは[Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions)クラスを通じてその機能を提供します。これを達成するには、以下のコードサンプルに示すように、[PptxSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions)クラスのプロパティSlidesAsImagesを'true'に設定します。
+各 PDF ページを画像ベースの PowerPoint スライドに変換する場合は、この例を使用してください。
 
-以下のコードスニペットは、PDFファイルをスライドとして画像形式のPPTXに変換するプロセスを示しています。
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) を作成し、`setSlidesAsImages(true)` を有効にしてください。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出してください。これにより、各 PDF ページはプレゼンテーション内で画像を背景にしたスライドとしてレンダリングされます。
+1. 生成された PPTX ファイルを保存してください。
 
 ```java
-public static void convertPDFtoPPTX_SlideAsImages() {
-    String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX.pdf").toString();
-    String pptxDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX_out.pptx").toString();
-
-    // PDFドキュメントをロード
-    Document document = new Document(documentFileName);
-    // PptxSaveOptionsインスタンスを初期化
-    PptxSaveOptions pptxSaveOptions = new PptxSaveOptions();
-    // 出力をPPTX形式で保存
-    pptxSaveOptions.setSlidesAsImages(true);
-
-    document.save(pptxDocumentFileName, pptxSaveOptions);
-    document.close();
+public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PptxSaveOptions saveOptions = new PptxSaveOptions();
+        saveOptions.setSlidesAsImages(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
+## カスタム画像解像度で PDF の PPTX への変換
 
-## コンソールで進捗を表示する Aspose.PDF for Java の例は次のようになります:
+PDF から PPTX へのエクスポート時にスライド画像の品質を制御したい場合は、この例を使用してください。
+
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) を作成し、より高いスライド画像の忠実度のために `setImageResolution(300)` を設定してください。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出してください。これにより、ラスタライズされたスライドコンテンツが指定された解像度で生成されます。
+1. 出力プレゼンテーションを保存してください。
 
 ```java
-package com.aspose.pdf.examples.conversion;
-
-import com.aspose.pdf.Document;
-import com.aspose.pdf.PptxSaveOptions;
-
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-/**
- * PDFをPPTXに変換します。
- */
-public final class ConvertPDFtoPPTX {
-
-    private ConvertPDFtoPPTX() {
-
+public static void convertPdfToPptxImageResolution(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PptxSaveOptions saveOptions = new PptxSaveOptions();
+        saveOptions.setImageResolution(300);
+        document.save(outputFile.toString(), saveOptions);
     }
-
-    private static final Path DATA_DIR = Paths.get("/home/aspose/pdf-examples/Samples");
-
-    public static void run() throws IOException {
-        convertPDFtoPPTX_ProgressDetails();
-    }
-
-    public static void convertPDFtoPPTX_ProgressDetails() {
-        String documentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX.pdf").toString();
-        String pptxDocumentFileName = Paths.get(DATA_DIR.toString(), "PDFToPPTX_out.pptx").toString();
-
-        // PDFドキュメントを読み込む
-        Document document = new Document(documentFileName);
-
-        // PptxSaveOptionsインスタンスを生成する
-        PptxSaveOptions pptx_save = new PptxSaveOptions();
-
-        // カスタム進捗ハンドラーを指定する
-        pptx_save.setCustomProgressHandler(new ShowProgressOnConsole());
-
-        // 出力をPPTX形式で保存する
-        document.save(pptxDocumentFileName, pptx_save);
-        document.close();
-    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
-
-
-## PPTX変換の進捗詳細
-
-Aspose.PDF for Javaを使用すると、PDFからPPTXへの変換の進捗を追跡できます。[Aspose.Pdf.PptxSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/PptxSaveOptions)クラスは、変換の進捗を追跡するためのカスタムメソッドを指定できる[CustomProgressHandler](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlSaveOptions)プロパティを提供します。以下のコードサンプルに示されています。
-
-```java
-package com.aspose.pdf.examples;
-
-import java.time.LocalDateTime;
-
-import com.aspose.pdf.ProgressEventType;
-import com.aspose.pdf.UnifiedSaveOptions.ConversionProgressEventHandler;
-import com.aspose.pdf.UnifiedSaveOptions.ProgressEventHandlerInfo;
-
-class ShowProgressOnConsole extends ConversionProgressEventHandler{
-
-    @Override
-    public void invoke(ProgressEventHandlerInfo eventInfo) {        
-        switch (eventInfo.EventType) {
-            case ProgressEventType.TotalProgress:
-                System.out.println(
-                        String.format("%s  - 変換の進捗 : %d %%.", LocalDateTime.now().toString(), eventInfo.Value));
-                break;
-            case ProgressEventType.ResultPageCreated:
-                System.out.println(String.format("%s  - 結果ページの%s/%dレイアウトが作成されました。", LocalDateTime.now().toString(),
-                        eventInfo.Value, eventInfo.MaxValue));
-                break;
-            case ProgressEventType.ResultPageSaved:
-                System.out.println(String.format("%s  - 結果ページ%d/%dがエクスポートされました。", LocalDateTime.now(), eventInfo.Value, eventInfo.MaxValue));
-                break;
-            case ProgressEventType.SourcePageAnalysed:
-                System.out.println(String.format("%s  - ソースページ%d/%dが分析されました。", LocalDateTime.now(),  eventInfo.Value, eventInfo.MaxValue));
-                break;
-            default:
-                break;
-        }
-    }
-```
-
-
-{{% alert color="success" %}}
-**PDFをPowerPointにオンラインで変換してみてください**
-
-Aspose.PDF for Javaは、オンラインで無料のアプリケーション["PDF to PPTX"](https://products.aspose.app/pdf/conversion/pdf-to-pptx)を提供しており、そこで機能や品質を試して調査することができます。
-
-[![Aspose.PDF Convertion PDF to PPTX with Free App](pdf_to_pptx.png)](https://products.aspose.app/pdf/conversion/pdf-to-pptx)
-{{% /alert %}}

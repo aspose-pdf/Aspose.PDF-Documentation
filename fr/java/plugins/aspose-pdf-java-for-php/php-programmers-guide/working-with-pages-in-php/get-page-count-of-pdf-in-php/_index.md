@@ -3,7 +3,7 @@ title: Obtenir le nombre de pages d'un PDF en PHP
 linktitle: Obtenir le nombre de pages d'un PDF en PHP
 type: docs
 weight: 40
-url: /java/get-page-count-of-pdf-in-php/
+url: /fr/java/get-page-count-of-pdf-in-php/
 description: Découvrez comment récupérer le nombre total de pages d'un document PDF en PHP en utilisant Aspose.PDF pour l'analyse de documents.
 lastmod: "2026-09-21"
 ---

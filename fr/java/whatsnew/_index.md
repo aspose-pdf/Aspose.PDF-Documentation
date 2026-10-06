@@ -3,7 +3,7 @@ title: Nouveautés
 linktitle: Nouveautés
 type: docs
 weight: 10
-url: /java/whatsnew/
+url: /fr/java/whatsnew/
 description: Découvrez les fonctionnalités et améliorations d’Aspose.PDF for Java présentées par version.
 sitemap:
     changefreq: "monthly"

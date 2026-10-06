@@ -3,7 +3,7 @@ title: Travailler avec la conversion de documents en Jython
 linktitle: Travailler avec la conversion de documents en Jython
 type: docs
 weight: 10
-url: /java/working-with-document-conversion-in-jython/
+url: /fr/java/working-with-document-conversion-in-jython/
 description: Apprenez à convertir des documents PDF en différents formats à l'aide de Jython avec Aspose.PDF, permettant un traitement flexible des documents.
 lastmod: "2026-09-21"
 ---

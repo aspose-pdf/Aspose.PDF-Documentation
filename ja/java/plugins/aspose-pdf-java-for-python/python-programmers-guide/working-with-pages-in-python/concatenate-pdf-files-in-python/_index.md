@@ -1,33 +1,34 @@
 ---
-title: PythonでPDFファイルを連結する
+title: "Python での PDF ファイルの結合"
+linktitle: "Python での PDF ファイルの結合"
 type: docs
 weight: 10
 url: /ja/java/concatenate-pdf-files-in-python/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して Python で複数の PDF ファイルを単一の PDF ドキュメントに結合し、ドキュメント管理を簡素化する方法を学びます。
+lastmod: "2026-10-06"
 ---
-
-**Aspose.PDF Java for Python** を使用してPDFファイルを連結するには、**ConcatenatePdfFiles** クラスを呼び出すだけです。
+**Aspose.PDF Java for Python** を使用して PDF ファイルを結合するには、単に **ConcatenatePdfFiles** クラスを呼び出すだけです。
 
 ```python
 doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# ソースドキュメントを開く
+# Open the source document
 pdf1 = self.Document()
 pdf1=self.dataDir + 'input2.pdf'
 
-# ソースドキュメントのページをターゲットドキュメントに追加する
+# Add the pages of the source document to the target document
 pdf1.getPages().add(pdf1.getPages())
 
-# 連結した出力ファイル（ターゲットドキュメント）を保存する
+# Save the concatenated output file (the target document)
 doc.save(self.dataDir + "Concatenate_output.pdf")
 
-print "新しいドキュメントが保存されました。出力ファイルを確認してください"
+print "New document has been saved, please check the output file"
 ```
 
-**コードのダウンロード**
+**実行コードをダウンロード**
 
-以下のいずれかのソーシャルコーディングサイトから **Concatenate PDF Files (Aspose.PDF)** をダウンロードしてください：
+**Concatenate PDF Files (Aspose.PDF)** を、以下に記載されたソーシャルコーディングサイトのいずれかからダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)

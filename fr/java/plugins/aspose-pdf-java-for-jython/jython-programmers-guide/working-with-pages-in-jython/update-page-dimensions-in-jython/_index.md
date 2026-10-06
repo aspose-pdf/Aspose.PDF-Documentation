@@ -3,7 +3,7 @@ title: Mettre à jour les dimensions de la page en Jython
 linktitle: Mettre à jour les dimensions de la page en Jython
 type: docs
 weight: 90
-url: /java/update-page-dimensions-in-jython/
+url: /fr/java/update-page-dimensions-in-jython/
 description: Comprenez comment modifier les dimensions des pages d'un document PDF en Jython à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 ---

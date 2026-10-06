@@ -1,20 +1,21 @@
 ---
-title: 从 PDF 中移除元数据在 PHP 中
+title: 在 PHP 中移除 PDF 元数据
+linktitle: 在 PHP 中移除 PDF 元数据
 type: docs
 weight: 70
 url: /zh/java/remove-metadata-from-pdf-in-php/
-lastmod: "2021-06-05"
+description: 了解如何在 PHP 中使用 Aspose.PDF 移除 PDF 文档的元数据，以提升隐私和文档安全性。
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - 移除元数据
 
-要使用 **Aspose.PDF Java for PHP** 从 PDF 文档中移除元数据，只需调用 **RemoveMetadata** 类。
+要在 PDF 文档中使用 **Aspose.PDF Java for PHP** 移除元数据，只需调用 **RemoveMetadata** 类。
 
 PHP 代码
 
 ```php
 
-# 打开一个 pdf 文档。
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
 if (preg_match('/pdfaid:part/',$doc->getMetadata())) {
@@ -27,16 +28,15 @@ if (preg_match('/dc:format/',$doc->getMetadata())) {
 
 }
 
-# 保存更新后的文档与新信息
+# save update document with new information
 $doc->save($dataDir . "Remove_Metadata.pdf");
 
-print "成功移除元数据，请检查输出文件。" . PHP_EOL;
+print "Removed metadata successfully, please check output file." . PHP_EOL;
 
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **Remove Metadata (Aspose.PDF)**：
-
+下载В **Remove Metadata (Aspose.PDF)**В fromВ 以下任意提到的社交编码站点：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/RemoveMetadata.php)

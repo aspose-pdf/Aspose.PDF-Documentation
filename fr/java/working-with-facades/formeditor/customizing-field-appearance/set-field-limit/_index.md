@@ -3,7 +3,7 @@ title: Définir la limite du champ
 linktitle: Définir la limite du champ
 type: docs
 weight: 50
-url: /java/set-field-limit/
+url: /fr/java/set-field-limit/
 description: Découvrez comment définir une limite maximale de caractères pour un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

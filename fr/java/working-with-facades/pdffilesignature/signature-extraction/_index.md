@@ -3,7 +3,7 @@ title: Extraction de signatures
 linktitle: Extraction de signatures
 type: docs
 weight: 50
-url: /java/signature-extraction/
+url: /fr/java/signature-extraction/
 description: Découvrez comment extraire le certificat de signature d'un PDF signé en Java avec PdfFileSignature.
 lastmod: "2026-09-22"
 draft: false

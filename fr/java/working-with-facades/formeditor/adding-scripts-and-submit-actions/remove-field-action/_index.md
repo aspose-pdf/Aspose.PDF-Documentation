@@ -3,7 +3,7 @@ title: Supprimer l’action du champ
 linktitle: Supprimer l’action du champ
 type: docs
 weight: 50
-url: /java/remove-field-action/
+url: /fr/java/remove-field-action/
 description: Découvrez comment supprimer une action de champ d'un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

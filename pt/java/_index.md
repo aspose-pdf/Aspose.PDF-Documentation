@@ -1,48 +1,61 @@
 ---
 title: Documentação
-linktitle: Aspose.PDF para Java
-second_title: Aspose.PDF para Java
+linktitle: Aspose.PDF for Java
+second_title: Aspose.PDF for Java
 type: docs
 weight: 20
 url: /pt/java/
+description: Conheça a biblioteca Aspose.PDF for Java e aprenda a criar, editar e converter arquivos PDF em aplicativos Java.
 is_root: true
-lastmod: "2021-06-05"
+lastmod: "2026-10-06"
+TechArticle: true
+AlternativeHeadline: Documentação do Aspose.PDF for Java
+Abstract: A documentação do Aspose.PDF for Java explica como criar, manipular, converter e extrair dados de documentos PDF com Java. Ela aborda a adição e a edição de texto, imagens, tabelas, anotações e campos de formulário, além de recursos como assinaturas digitais, criptografia e otimização. Os exemplos de código e as instruções passo a passo ajudam os desenvolvedores a integrar o processamento de PDF aos aplicativos Java e a automatizar tarefas com documentos.
+SoftwareApplication: java
 ---
-
 {{% alert color="primary" %}}
 
-![Aspose.PDF para Java](aspose_pdf-for-java.png)
+![Aspose.PDF for Java](aspose_pdf-for-java.png)
 
-<h2>Bem-vindo ao Aspose.PDF para Java</h2>
+## Bem-vindo ao Aspose.PDF for Java
 
-Aspose.PDF é um componente Java desenvolvido para permitir que desenvolvedores criem documentos PDF, sejam eles simples ou complexos, de forma programática e dinâmica. Aspose.PDF para Java permite que desenvolvedores insiram tabelas, gráficos, imagens, hiperlinks, fontes personalizadas - e mais - em documentos PDF. Além disso, também é possível comprimir documentos PDF. Aspose.PDF para Java oferece excelentes recursos de segurança para desenvolver documentos PDF seguros. E a característica mais distinta do Aspose.PDF para Java é que ele suporta a criação de documentos PDF tanto através de uma API quanto a partir de modelos XML
+Aspose.PDF for Java é uma biblioteca Java para criar documentos PDF simples ou complexos de forma programática. Ela permite adicionar tabelas, gráficos, imagens, hiperlinks e fontes personalizadas aos documentos. Também oferece compactação, recursos de segurança e criação de PDFs por meio da API ou de modelos XML.
+
+Aspose.PDF for Java oferece os seguintes recursos principais:
+
+- Conversão de HTML, DOC/DOCX, PPTX, Markdown e JPEG, entre outros formatos, para PDF.
+- Integração com vários provedores de IA para carregar dados de documentos PDF.
+- Criação de documentos PDF por meio da API ou de arquivos XML.
+- Segurança baseada em certificados e proteção por senha.
+- Suporte a assinaturas digitais.
+- Criação de formulários PDF interativos, incluindo AcroForms e formulários XFA dinâmicos.
 
 {{% /alert %}}
 
-<h2>Capítulos </h2>
+## Capítulos
 
-- [O que há de novo](/pdf/pt/java/whatsnew/)
+- [Novidades](/pdf/pt/java/whatsnew/)
 - [Visão geral](/pdf/pt/java/overview/)
-- [Começar](/pdf/pt/java/get-started/)
-
+- [Primeiros passos](/pdf/pt/java/get-started/)
 - [Operações básicas](/pdf/pt/java/basic-operations/)
-- [Convertendo documentos](/pdf/pt/java/converting/)
-- [Analisando documentos PDF](/pdf/pt/java/parsing/)
+- [Converter documentos](/pdf/pt/java/converting/)
+- [Analisar documentos PDF](/pdf/pt/java/parsing/)
 - [Operações avançadas](/pdf/pt/java/advanced-operations/)
-- [Notas de Lançamento](https://releases.aspose.com/pdf/java/release-notes/)
+- [Trabalhar com Facades](/pdf/pt/java/working-with-facades)
+- [Notas de versão](https://releases.aspose.com/pdf/java/release-notes/)
 
-<h2> Recursos do Aspose.PDF para Java</h2>
-A seguir estão os links para alguns recursos úteis que você pode precisar para realizar suas tarefas.
+## Recursos do Aspose.PDF for Java
 
-- [Documentação Online do Aspose.PDF para Java](/pdf/pt/java/)
-- [Recursos do Aspose.PDF para Java](/pdf/pt/java/key-features/)
-- [Notas de Lançamento do Aspose.PDF para Java](https://releases.aspose.com/pdf/java/release-notes/)
-- [Página do Produto Aspose.PDF para Java](https://products.aspose.com/pdf/java)
-- [Repositório Maven do Aspose.PDF para Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
-- [Baixar Aspose.PDF para Java](https://releases.aspose.com/pdf/java/)
-- [Instalar Aspose.PDF para Java do Repositório Aspose](/pdf/pt/java/installation/)
-- [Guia de Referência da API Aspose.PDF para Java](https://reference.aspose.com/java/pdf)
+Consulte os recursos a seguir para trabalhar com Aspose.PDF for Java:
 
-- [Baixar Exemplos no Repositório GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
-- [Fórum de Suporte Gratuito do Aspose.PDF para Java](https://forum.aspose.com/c/pdf)
-- [Helpdesk de Suporte Pago do Aspose.PDF para Java](https://helpdesk.aspose.com/)
+- [Documentação online do Aspose.PDF for Java](/pdf/pt/java/)
+- [Recursos do Aspose.PDF for Java](/pdf/pt/java/key-features/)
+- [Notas de versão do Aspose.PDF for Java](https://releases.aspose.com/pdf/java/release-notes/)
+- [Página do produto Aspose.PDF for Java](https://products.aspose.com/pdf/java)
+- [Repositório Maven do Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
+- [Baixar Aspose.PDF for Java](https://releases.aspose.com/pdf/java/)
+- [Instalar Aspose.PDF for Java a partir do repositório Aspose](/pdf/pt/java/installation/)
+- [Guia de referência da API do Aspose.PDF for Java](https://reference.aspose.com/java/pdf)
+- [Baixar exemplos do repositório GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
+- [Fórum de suporte gratuito do Aspose.PDF for Java](https://forum.aspose.com/c/pdf)
+- [Central de suporte pago do Aspose.PDF for Java](https://helpdesk.aspose.com/)

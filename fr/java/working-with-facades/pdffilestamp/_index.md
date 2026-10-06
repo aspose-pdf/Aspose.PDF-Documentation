@@ -3,7 +3,7 @@ title: Classe PdfFileStamp
 linktitle: Classe PdfFileStamp
 type: docs
 weight: 155
-url: /java/pdffilestamp-class/
+url: /fr/java/pdffilestamp-class/
 description: Découvrez comment utiliser la façade PdfFileStamp en Java pour ajouter des en-têtes, des pieds de page, des numéros de page et des tampons aux documents PDF.
 lastmod: "2026-09-22"
 draft: false

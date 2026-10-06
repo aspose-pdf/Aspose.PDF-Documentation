@@ -3,7 +3,7 @@ title: Obtenir le nombre de pages d'un PDF en Ruby
 linktitle: Obtenir le nombre de pages d'un PDF en Ruby
 type: docs
 weight: 40
-url: /java/get-page-count-of-pdf-in-ruby/
+url: /fr/java/get-page-count-of-pdf-in-ruby/
 description: Récupérez le nombre total de pages d'un document PDF par programme à l'aide de Ruby avec Aspose.PDF.
 lastmod: "2026-09-21"
 ---

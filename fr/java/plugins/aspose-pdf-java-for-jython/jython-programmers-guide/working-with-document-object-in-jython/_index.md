@@ -3,7 +3,7 @@ title: Travailler avec un objet document en Jython
 linktitle: Travailler avec un objet document en Jython
 type: docs
 weight: 20
-url: /java/working-with-document-object-in-jython/
+url: /fr/java/working-with-document-object-in-jython/
 description: Comprenez comment manipuler des objets de document PDF en Jython avec Aspose.PDF, permettant une gestion efficace des documents.
 lastmod: "2026-09-21"
 ---

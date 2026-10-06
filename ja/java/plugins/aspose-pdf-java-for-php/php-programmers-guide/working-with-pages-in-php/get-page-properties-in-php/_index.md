@@ -1,29 +1,30 @@
 ---
-title: PHPでページプロパティを取得する
+title: "PHP でのページ プロパティの取得"
+linktitle: "PHP でのページ プロパティの取得"
 type: docs
 weight: 50
 url: /ja/java/get-page-properties-in-php/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して、PHP で PDF ドキュメント内の特定ページのプロパティを取得する方法を詳しく解説します。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - ページ プロパティの取得
 
-## Aspose.PDF - ページプロパティを取得する
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントのページ プロパティを取得するには、**GetPageProperties** クラスを呼び出してください。
 
-**Aspose.PDF Java for PHP**を使用してPdfドキュメントのページプロパティを取得するには、**GetPageProperties**クラスを呼び出します。
-
-PHPコード
+PHP コード
 
 ```php
 
-# PDFドキュメントを作成
+# Create PDF document
 $pdf_document = new Document($dataDir . 'input1.pdf');
 
-# ページコレクションを取得
+# get page collection
 $page_collection = $pdf_document->getPages();
 
-# 特定のページを取得
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# ページプロパティを取得
+# get page properties
 print "ArtBox : Height = " . $pdf_page->getArtBox()->getHeight() . ", Width = " . $pdf_page->getArtBox()->getWidth() . ", LLX = " . $pdf_page->getArtBox()->getLLX() . ", LLY = " . $pdf_page->getArtBox()->getLLY() . ", URX = " . $pdf_page->getArtBox()->getURX() . ", URY = " . $pdf_page->getArtBox()->getURY() . PHP_EOL ;
 
 print "BleedBox : Height = " . $pdf_page->getBleedBox()->getHeight() . ", Width = " . $pdf_page->getBleedBox()->getWidth() . ", LLX = " . $pdf_page->getBleedBox()->getLLX() . ", LLY = " . $pdf_page->getBleedBox()->getLLY() . ", URX = " . $pdf_page->getBleedBox()->getURX() . ", URY = " . $pdf_page->getBleedBox()->getURY() . PHP_EOL ;
@@ -40,9 +41,8 @@ print "Rotate :-" . $pdf_page->getRotate() . PHP_EOL ;
 
 ```
 
+**実行コードをダウンロード**
 
-**コードのダウンロード**
-
-以下のいずれかのソーシャルコーディングサイトから、**ページプロパティを取得する (Aspose.PDF)** をダウンロードしてください。
+以下のいずれかのソーシャル コーディング サイトから **ページ プロパティの取得 (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/GetPageProperties.php)

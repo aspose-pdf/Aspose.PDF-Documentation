@@ -3,7 +3,7 @@ title: Convertir les formats d'image en PDF en Java
 linktitle: Convertir des images en PDF
 type: docs
 weight: 60
-url: /java/convert-images-format-to-pdf/
+url: /fr/java/convert-images-format-to-pdf/
 lastmod: "2026-09-21"
 description: Apprenez à convertir BMP, CGM, DICOM, PNG, TIFF, EMF, SVG, CDR et d'autres formats d'image en PDF en Java avec Aspose.PDF.
 sitemap:

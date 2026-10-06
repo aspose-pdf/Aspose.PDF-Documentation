@@ -3,7 +3,7 @@ title: Obtenir des informations sur un fichier PDF en Jython
 linktitle: Obtenir des informations sur un fichier PDF en Jython
 type: docs
 weight: 30
-url: /java/get-pdf-file-information-in-jython/
+url: /fr/java/get-pdf-file-information-in-jython/
 description: Découvrez comment récupérer des informations détaillées sur un fichier PDF telles que les métadonnées, les propriétés et les détails du fichier à l'aide de Jython et Aspose.PDF.
 lastmod: "2026-09-21"
 ---

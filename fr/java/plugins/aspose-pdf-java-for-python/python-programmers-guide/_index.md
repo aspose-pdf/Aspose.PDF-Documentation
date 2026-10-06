@@ -3,7 +3,7 @@ title: Guide des programmeurs Python
 linktitle: Guide des programmeurs Python
 type: docs
 weight: 20
-url: /java/python-programmers-guide/
+url: /fr/java/python-programmers-guide/
 description: Explorez le Guide du programmeur Python pour Aspose.PDF, qui couvre les fonctionnalités essentielles et des conseils pour travailler avec des documents PDF en Python.
 lastmod: "2026-09-21"
 ---

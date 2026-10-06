@@ -3,7 +3,7 @@ title: Importer des données XFDF
 linktitle: Importer des données XFDF
 type: docs
 weight: 20
-url: /java/import-xfdf-data/
+url: /fr/java/import-xfdf-data/
 description: Découvrez comment importer des données de formulaire XFDF dans un formulaire PDF avec Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Convertir des documents PDF en Java
 linktitle: Convertir un document PDF
 type: docs
 weight: 70
-url: /java/converting/
+url: /fr/java/converting/
 lastmod: "2026-09-21"
 description: Découvrez comment convertir des documents PDF en Word, Excel, PowerPoint, HTML, images, normes PDF et autres formats en Java avec Aspose.PDF.
 sitemap:

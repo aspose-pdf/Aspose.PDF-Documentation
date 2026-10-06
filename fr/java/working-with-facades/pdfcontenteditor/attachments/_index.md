@@ -3,7 +3,7 @@ title: Pièces jointes
 linktitle: Pièces jointes
 type: docs
 weight: 20
-url: /java/pdfcontenteditor-attachments/
+url: /fr/java/pdfcontenteditor-attachments/
 description: Découvrez comment ajouter et supprimer des pièces jointes PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

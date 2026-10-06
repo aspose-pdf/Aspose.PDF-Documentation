@@ -1,208 +1,178 @@
 ---
-title: PDF内のテキストを回転
-linktitle: PDF内のテキストを回転
+title: "Java での PDF テキストの回転"
+linktitle: "PDF 内のテキストの回転"
 type: docs
 weight: 50
 url: /ja/java/rotate-text-inside-pdf/
-description: PDFにテキストを回転させるさまざまな方法を学びます。Aspose.PDFを使用すると、テキストを任意の角度に回転させたり、テキストフラグメントや段落全体を回転させることができます。
-lastmod: "2021-06-05"
+description: "Java で PDF ドキュメント内のテキストフラグメントおよび段落を回転する方法を学習します。"
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java を使用した PDF ドキュメント内のテキストフラグメントおよび段落の回転"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメント内のテキストを回転させる方法を説明します。個々のテキストフラグメントの回転、回転した行を含む段落の作成、およびさまざまなレイアウトシナリオに対応した全文テキスト段落の回転方法を示します。"
 ---
+Aspose.PDF for Java を使用すると、個々のテキストフラグメントだけでなく、全文テキスト段落も回転させることができます。
 
-## 回転プロパティを使用してPDF内のテキストを回転
+## 個々のテキストフラグメントの回転
 
-[TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment)クラスの[setRotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentState#setRotation-double-)メソッドを使用することにより、テキストをさまざまな角度で回転させることができます。テキストの回転は、ドキュメント生成のさまざまなシナリオで使用できます。要件に応じてテキストを回転させるために、回転角度を度で指定できます。以下のさまざまなシナリオをご確認ください。これらでテキストの回転を実装できます。
+同じ行上の複数のテキストフラグメントに異なる回転角度を適用する必要がある場合に、この例を使用してください。
 
-## TextFragmentとTextBuilderを使用して回転を実装
-
-```java
-public class ExampleRotateText {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ImplementRotationUsingTextFragmentAndTextBuilder() {
-
-        // ドキュメントオブジェクトを初期化
-        Document pdfDocument = new Document();
-        // 特定のページを取得
-        Page pdfPage = pdfDocument.getPages().add();
-        // テキストフラグメントを作成
-        TextFragment textFragment1 = new TextFragment("main text");
-        textFragment1.setPosition(new Position(100, 600));
-
-        // テキストプロパティを設定
-        textFragment1.getTextState().setFontSize(12);
-        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-        // 回転したテキストフラグメントを作成
-        TextFragment textFragment2 = new TextFragment("rotated text");
-        textFragment2.setPosition(new Position(200, 600));
-        // テキストプロパティを設定
-        textFragment2.getTextState().setFontSize(12);
-        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setRotation(45);
-
-        // 回転したテキストフラグメントを作成
-        TextFragment textFragment3 = new TextFragment("rotated text");
-        textFragment3.setPosition(new Position(300, 600));
-
-        // テキストプロパティを設定
-        textFragment3.getTextState().setFontSize(12);
-        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setRotation(90);
-
-        // TextBuilderオブジェクトを作成
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // PDFページにテキストフラグメントを追加
-        textBuilder.appendText(textFragment1);
-        textBuilder.appendText(textFragment2);
-        textBuilder.appendText(textFragment3);
-
-        // ドキュメントを保存
-        pdfDocument.save(_dataDir + "TextFragmentTests_Rotated1_out.pdf");
-    }
-}
-```
-
-
-## TextParagraph と TextBuilder を使用した回転の実装 (回転されたフラグメント)
+1. 新しい PDF ドキュメントを作成し、ページを追加してください。
+1. 必要な回転値を持つテキストフラグメントを作成してください。
+1. `TextBuilder` でそれらに追加し、結果を保存してください。
 
 ```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder_RotatedFragments() {
+public static void rotateTextInsidePdf1(Path outputFile) {
+       try (Document document = new Document()) {
+           Page page = document.getPages().add();
 
-    // ドキュメントオブジェクトを初期化
-    Document pdfDocument = new Document();
-    // 特定のページを取得
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    TextParagraph paragraph = new TextParagraph();
-    paragraph.setPosition(new Position(200, 600));
-    // テキストフラグメントを作成
-    TextFragment textFragment1 = new TextFragment("rotated text");
-    // テキストプロパティを設定
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // 回転を設定
-    textFragment1.getTextState().setRotation(45);
+           TextFragment textFragment1 = new TextFragment("main text");
+           textFragment1.setPosition(new Position(100, 600));
+           textFragment1.getTextState().setFontSize(12);
+           textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
 
-    // テキストフラグメントを作成
-    TextFragment textFragment2 = new TextFragment("main text");
-    // テキストプロパティを設定
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           TextFragment textFragment2 = new TextFragment("rotated text");
+           textFragment2.setPosition(new Position(200, 600));
+           textFragment2.getTextState().setFontSize(12);
+           textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment2.getTextState().setRotation(45);
 
-    // テキストフラグメントを作成
-    TextFragment textFragment3 = new TextFragment("another rotated text");
-    // テキストプロパティを設定
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-    // 回転を設定
-    textFragment3.getTextState().setRotation(-45);
+           TextFragment textFragment3 = new TextFragment("rotated text");
+           textFragment3.setPosition(new Position(300, 600));
+           textFragment3.getTextState().setFontSize(12);
+           textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+           textFragment3.getTextState().setRotation(90);
 
-    // テキストフラグメントを段落に追加
-    paragraph.appendLine(textFragment1);
-    paragraph.appendLine(textFragment2);
-    paragraph.appendLine(textFragment3);
-    // TextBuilder オブジェクトを作成
-    TextBuilder textBuilder = new TextBuilder(pdfPage);
-    // PDF ページにテキスト段落を追加
-    textBuilder.appendParagraph(paragraph);
-    // ドキュメントを保存
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated2_out.pdf");
-}
+           TextBuilder builder = new TextBuilder(page);
+           builder.appendText(textFragment1);
+           builder.appendText(textFragment2);
+           builder.appendText(textFragment3);
+
+           document.save(outputFile.toString());
+       }
+   }
 ```
 
+## テキスト段落内の行の回転
 
-## TextFragmentとPage.Paragraphsを使用した回転の実装
+段落に通常の行と回転した行の両方を含める必要がある場合は、この例を使用してください。
 
-```csharp
-public static void ImplementRotationUsingTextFragmentAndPageParagraphs() {
-    // ドキュメントオブジェクトを初期化
-    Document pdfDocument = new Document();
-    // 特定のページを取得
-    Page pdfPage = (Page) pdfDocument.getPages().add();
-    // テキストフラグメントを作成
-    TextFragment textFragment1 = new TextFragment("main text");
-    // テキストプロパティを設定
-    textFragment1.getTextState().setFontSize(12);
-    textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // テキストフラグメントを作成
-    TextFragment textFragment2 = new TextFragment("rotated text");
-
-    // テキストプロパティを設定
-    textFragment2.getTextState().setFontSize(12);
-    textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // 回転を設定
-    textFragment2.getTextState().setRotation(315);
-
-    // テキストフラグメントを作成
-    TextFragment textFragment3 = new TextFragment("rotated text");
-    // テキストプロパティを設定
-    textFragment3.getTextState().setFontSize(12);
-    textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-
-    // 回転を設定
-    textFragment3.getTextState().setRotation(270);
-    pdfPage.getParagraphs().add(textFragment1);
-    pdfPage.getParagraphs().add(textFragment2);
-    pdfPage.getParagraphs().add(textFragment3);
-
-    // ドキュメントを保存
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated3_out.pdf");
-    }
-```
-
-
-## TextParagraphとTextBuilderを使用した回転の実装（段落全体の回転）
+1. 新しい PDF ドキュメントを作成し、ページを追加してください。
+1. `TextParagraph` を作成し、異なる回転設定を持つテキストフラグメントを追加してください。
+1. 段落をページに追加し、ドキュメントを保存してください。
 
 ```java
-public static void ImplementRotationUsingTextParagraphAndTextBuilder() {
-
-    // ドキュメントオブジェクトを初期化
-    Document pdfDocument = new Document();
-    // 特定のページを取得
-    Page pdfPage = pdfDocument.getPages().add();
-    for (int i = 0; i < 4; i++) {
+public static void rotateTextInsidePdf2(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
         TextParagraph paragraph = new TextParagraph();
         paragraph.setPosition(new Position(200, 600));
-        // 回転を指定
-        paragraph.setRotation(i * 90 + 45);
-        // テキストフラグメントを作成
-        TextFragment textFragment1 = new TextFragment("段落テキスト");
-        // テキストプロパティを設定
+
+        TextFragment textFragment1 = new TextFragment("rotated text");
         textFragment1.getTextState().setFontSize(12);
         textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment1.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment1.getTextState().setForegroundColor(Color.getBlue());
+        textFragment1.getTextState().setRotation(45);
 
-        // テキストフラグメントを作成
-        TextFragment textFragment2 = new TextFragment("テキストの2行目");
-        // テキストプロパティを設定
+        TextFragment textFragment2 = new TextFragment("main text");
         textFragment2.getTextState().setFontSize(12);
         textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment2.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment2.getTextState().setForegroundColor(Color.getBlue());
 
-        // テキストフラグメントを作成
-        TextFragment textFragment3 = new TextFragment("さらにいくつかのテキスト...");
-        // テキストプロパティを設定
+        TextFragment textFragment3 = new TextFragment("another rotated text");
         textFragment3.getTextState().setFontSize(12);
         textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
-        textFragment3.getTextState().setBackgroundColor(Color.getLightGray());
-        textFragment3.getTextState().setForegroundColor(Color.getBlue());
-        textFragment3.getTextState().setUnderline(true);
+        textFragment3.getTextState().setRotation(-45);
 
         paragraph.appendLine(textFragment1);
         paragraph.appendLine(textFragment2);
         paragraph.appendLine(textFragment3);
-        // TextBuilderオブジェクトを作成
-        TextBuilder textBuilder = new TextBuilder(pdfPage);
-        // テキストフラグメントをPDFページに追加
+
+        TextBuilder textBuilder = new TextBuilder(page);
         textBuilder.appendParagraph(paragraph);
+
+        document.save(outputFile.toString());
     }
-    // ドキュメントを保存
-    pdfDocument.save(_dataDir + "TextFragmentTests_Rotated4_out.pdf");
+}
+```
+
+## 明示的な位置が指定されていない段落フラグメントの回転
+
+通常のページ段落フローを通して回転テキストを追加する必要がある場合は、この例を使用してください。
+
+1. 新しい PDF ドキュメントを作成し、ページを追加してください。
+1. 異なる回転値を持つ複数のテキストフラグメントを作成してください。
+1. それらをページ段落コレクションに追加し、PDF を保存してください。
+
+```java
+public static void rotateTextInsidePdf3(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment1 = new TextFragment("main text");
+        textFragment1.getTextState().setFontSize(12);
+        textFragment1.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+
+        TextFragment textFragment2 = new TextFragment("rotated text");
+        textFragment2.getTextState().setFontSize(12);
+        textFragment2.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment2.getTextState().setRotation(315);
+
+        TextFragment textFragment3 = new TextFragment("rotated text");
+        textFragment3.getTextState().setFontSize(12);
+        textFragment3.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment3.getTextState().setRotation(270);
+
+        page.getParagraphs().add(textFragment1);
+        page.getParagraphs().add(textFragment2);
+        page.getParagraphs().add(textFragment3);
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## 段落全体の回転
+
+段落全体のブロックを回転させ、各行が共有スタイルを保持する場合にこの例を使用してください。
+
+1. 新しい PDF ドキュメントを作成し、ページを追加してください。
+1. いくつかの `TextParagraph` オブジェクトを、段落レベルの回転を設定して作成してください。
+1. 共有のヘルパーメソッドで行を作成し、追加して、ドキュメントを保存してください。
+
+```java
+public static void rotateTextInsidePdf4(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        for (int i = 0; i < 4; i++) {
+            TextParagraph paragraph = new TextParagraph();
+            paragraph.setPosition(new Position(200, 600));
+            paragraph.setRotation(i * 90 + 45);
+
+            TextFragment textFragment1 = rotatedLine("Paragraph Text", false);
+            TextFragment textFragment2 = rotatedLine("Second line of text", false);
+            TextFragment textFragment3 = rotatedLine("And some more text...", true);
+
+            paragraph.appendLine(textFragment1);
+            paragraph.appendLine(textFragment2);
+            paragraph.appendLine(textFragment3);
+
+            TextBuilder builder = new TextBuilder(page);
+            builder.appendParagraph(paragraph);
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+
+private static TextFragment rotatedLine(String text, boolean underline) {
+    TextFragment fragment = new TextFragment(text);
+    fragment.getTextState().setFontSize(12);
+    fragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+    fragment.getTextState().setBackgroundColor(Color.getLightGray());
+    fragment.getTextState().setForegroundColor(Color.getBlue());
+    fragment.getTextState().setUnderline(underline);
+    return fragment;
 }
 ```

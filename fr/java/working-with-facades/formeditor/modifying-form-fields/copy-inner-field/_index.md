@@ -3,7 +3,7 @@ title: Copier un champ dans le même PDF
 linktitle: Copier un champ dans le même PDF
 type: docs
 weight: 70
-url: /java/copy-inner-field/
+url: /fr/java/copy-inner-field/
 description: Découvrez comment copier un champ de formulaire vers un nouvel emplacement dans le même document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

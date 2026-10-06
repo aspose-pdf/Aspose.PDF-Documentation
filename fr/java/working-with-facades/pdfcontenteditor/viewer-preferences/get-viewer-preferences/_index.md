@@ -3,7 +3,7 @@ title: Obtenir les préférences de la visionneuse
 linktitle: Obtenir les préférences de la visionneuse
 type: docs
 weight: 10
-url: /java/get-viewer-preferences/
+url: /fr/java/get-viewer-preferences/
 description: Découvrez comment lire les préférences de visualisation d'un document PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

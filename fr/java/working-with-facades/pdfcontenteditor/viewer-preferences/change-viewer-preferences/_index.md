@@ -3,7 +3,7 @@ title: Modifier les préférences de la visionneuse
 linktitle: Modifier les préférences de la visionneuse
 type: docs
 weight: 20
-url: /java/change-viewer-preferences/
+url: /fr/java/change-viewer-preferences/
 description: Découvrez comment modifier les préférences de visualisation d'un document PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

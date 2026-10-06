@@ -1,11 +1,12 @@
 ---
-title: 将 PDF 页面转换为 Ruby 中的图像
+title: 在 Ruby 中将 PDF 页面转换为图像
+linktitle: 在 Ruby 中将 PDF 页面转换为图像
 type: docs
 weight: 20
 url: /zh/java/convert-pdf-pages-to-images-in-ruby/
-lastmod: "2021-06-05"
+description: 了解如何使用 Ruby 及 Aspose.PDF 将 PDF 页面转换为图像，从而轻松提取 PDF 中的视觉内容。
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - 将 PDF 页面转换为图像
 
 要使用 **Aspose.PDF Java for Ruby** 将 PDF 文档的所有页面转换为图像，只需调用 **ConvertPagesToImages** 模块。
@@ -13,8 +14,7 @@ lastmod: "2021-06-05"
 Ruby 代码
 
 ```java
-
-# 文档目录的路径。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
@@ -32,17 +32,17 @@ image_format_internal = Rjb::import('com.aspose.pdf.ImageFormatInternal')
 
 while converter.hasNextImage()
 
-    converter.getNextImage(data_dir + "image#{image_count}#{suffix}", image_format_internal.getJpeg())
+В В В  converter.getNextImage(data_dir + "image#{image_count}#{suffix}", image_format_internal.getJpeg())
 
-    image_count +=1
+В В В  image_count +=1
 
 end
 
-puts "PDF 页面已成功转换为单独的图像！"
+puts "PDF pages are converted to individual images successfully!"
 ```
 
 ## 下载运行代码
 
-从以下任一社交编码网站下载 **将 PDF 页面转换为图像 (Aspose.PDF)**：
+下载В **转换 PDF 页面为图像 (Aspose.PDF)**В 来自В 以下提到的任何社交编码站点：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/convertpagestoimages.rb)

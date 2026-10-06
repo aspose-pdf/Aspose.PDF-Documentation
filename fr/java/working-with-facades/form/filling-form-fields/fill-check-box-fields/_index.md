@@ -3,7 +3,7 @@ title: Remplir les champs des cases à cocher
 linktitle: Remplir les champs des cases à cocher
 type: docs
 weight: 20
-url: /java/fill-check-box-fields/
+url: /fr/java/fill-check-box-fields/
 description: Découvrez comment remplir les champs des cases à cocher dans un formulaire PDF avec Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Signer des documents PDF
 linktitle: Signer des documents PDF
 type: docs
 weight: 10
-url: /java/pdf-signing/
+url: /fr/java/pdf-signing/
 description: Apprenez à signer des documents PDF en Java avec la façade PdfFileSignature.
 lastmod: "2026-09-22"
 draft: false

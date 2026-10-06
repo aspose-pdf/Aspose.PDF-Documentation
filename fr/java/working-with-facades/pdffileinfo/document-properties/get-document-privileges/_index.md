@@ -3,7 +3,7 @@ title: Consulter les autorisations des documents
 linktitle: Consulter les autorisations des documents
 type: docs
 weight: 10
-url: /java/get-document-privileges/
+url: /fr/java/get-document-privileges/
 description: Découvrez comment inspecter les privilèges des documents PDF en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

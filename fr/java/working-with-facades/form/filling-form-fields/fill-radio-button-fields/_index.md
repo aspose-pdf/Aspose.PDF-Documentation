@@ -3,7 +3,7 @@ title: Remplir les champs des boutons radio
 linktitle: Remplir les champs des boutons radio
 type: docs
 weight: 30
-url: /java/fill-radio-button-fields/
+url: /fr/java/fill-radio-button-fields/
 description: Découvrez comment sélectionner une valeur de bouton radio dans un formulaire PDF avec Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

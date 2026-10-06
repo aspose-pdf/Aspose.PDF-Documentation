@@ -1,40 +1,40 @@
 ---
-title: Inserir uma Página Vazia em um Arquivo PDF em Ruby
+title: Inserir uma página em branco em um arquivo PDF em Ruby
+linktitle: Inserir uma página em branco em um arquivo PDF em Ruby
 type: docs
 weight: 70
 url: /pt/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: Aprenda como inserir uma página em branco em um local específico dentro de um documento PDF usando Ruby e Aspose.PDF para gerenciamento preciso de documentos.
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - inserir uma página em branco
 
-## Aspose.PDF - Inserir uma Página Vazia
-
-Para inserir uma página vazia em um documento Pdf usando **Aspose.PDF Java para Ruby**, simplesmente invoque o módulo **InsertEmptyPage**.
+Para Inserir uma Página em Branco em um documento Pdf usando **Aspose.PDF Java for Ruby**, basta invocar o módulo **InsertEmptyPage**.
 
 Código Ruby
 
 ```java
-
-# O caminho para o diretório dos documentos.
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Abra o documento alvo
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# insira uma página vazia em um PDF
+# insert a empty page in a PDF
 
 pdf.getPages().insert(1)
 
-# Salve o arquivo de saída concatenado (o documento alvo)
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "Página vazia adicionada com sucesso!"
+puts "Empty page added successfully!"
 ```
 
-## Baixar Código em Execução
+## Baixar o exemplo de código
 
-Baixe **Inserir uma Página Vazia (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
+Baixar **Insert an Empty Page (Aspose.PDF)** de qualquer um dos sites de codificação social mencionados abaixo:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)

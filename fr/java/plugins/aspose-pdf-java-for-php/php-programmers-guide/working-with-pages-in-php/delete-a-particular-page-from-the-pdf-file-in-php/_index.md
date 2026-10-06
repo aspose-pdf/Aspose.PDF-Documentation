@@ -3,7 +3,7 @@ title: Supprimer une page particulière du fichier PDF en PHP
 linktitle: Supprimer une page particulière du fichier PDF en PHP
 type: docs
 weight: 20
-url: /java/delete-a-particular-page-from-the-pdf-file-in-php/
+url: /fr/java/delete-a-particular-page-from-the-pdf-file-in-php/
 description: Découvrez comment supprimer une page spécifique d'un document PDF en PHP avec Aspose.PDF, simplifiant ainsi l'édition de documents.
 lastmod: "2026-09-21"
 ---

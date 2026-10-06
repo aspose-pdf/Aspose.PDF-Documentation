@@ -1,15 +1,16 @@
 ---
-title: Converter PDF para Planilha Excel em Jython
+title: Converter PDF para pasta de trabalho Excel em Jython
+linktitle: Converter PDF para pasta de trabalho Excel em Jython
 type: docs
 weight: 20
 url: /pt/java/convert-pdf-to-excel-workbook-in-jython/
-lastmod: "2021-06-05"
+description: Explore como converter documentos PDF para pastas de trabalho Excel em Jython usando Aspose.PDF, permitindo a extração de dados para análise.
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - PDF para Excel
 
-Para verificar o formato de arquivo usando **Aspose.PDF Java para Jython**. Aqui você pode ver um exemplo de código.
-Erro ao renderizar macro 'code': Valor inválido especificado para o parâmetro lang
+Para verificar o formato do arquivo usando **Aspose.PDF Java for Jython**. Aqui você pode ver o código de exemplo.
+Erro ao renderizar macro 'code' : Valor inválido especificado para o parâmetro lang
 
 **Baixar Código em Execução**
 

@@ -3,7 +3,7 @@ title: Diviser le PDF jusqu'à la fin
 linktitle: Diviser le PDF jusqu'à la fin
 type: docs
 weight: 40
-url: /java/split-pdf-to-end/
+url: /fr/java/split-pdf-to-end/
 description: Divisez un PDF d'une page choisie jusqu'à la fin en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

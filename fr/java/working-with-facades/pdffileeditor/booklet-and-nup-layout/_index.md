@@ -3,7 +3,7 @@ title: Livret et mise en page N-Up
 linktitle: Livret et mise en page N-Up
 type: docs
 weight: 10
-url: /java/booklet-and-nup-layout/
+url: /fr/java/booklet-and-nup-layout/
 description: Apprenez à réorganiser les pages PDF en mises en page de livret et N-Up avec la façade PdfFileEditor en Java.
 lastmod: "2026-09-22"
 sitemap:

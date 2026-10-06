@@ -1,80 +1,80 @@
 ---
-title: Rubyでのドキュメントウィンドウおよびページ表示プロパティの取得
+title: "Ruby でのドキュメントウィンドウとページ表示プロパティの取得"
+linktitle: "Ruby でのドキュメントウィンドウとページ表示プロパティの取得"
 type: docs
 weight: 40
 url: /ja/java/get-document-window-and-page-display-properties-in-ruby/
-lastmod: "2021-06-05"
+description: Ruby と Aspose.PDF を使用して PDF ファイルのドキュメントウィンドウおよびページ表示プロパティを取得し、カスタマイズします。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - ドキュメントウィンドウとページ表示プロパティの取得
 
-## Aspose.PDF - ドキュメントウィンドウおよびページ表示プロパティの取得
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントのドキュメントウィンドウとページ表示プロパティを取得するには、単に **GetDocumentWindow** モジュールを呼び出してください。
 
-**Aspose.PDF Java for Ruby**を使用してPDFドキュメントのウィンドウおよびページ表示プロパティを取得するには、単に**GetDocumentWindow**モジュールを呼び出します。
-
-Rubyコード
+Ruby コード
 
 ```java
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# PDFドキュメントを開く。
+# Open a pdf document.
 
 doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-# 異なるドキュメントプロパティを取得
+# Get different document properties
 
-# ドキュメントウィンドウの位置 - デフォルト: false
+# Position of document's window - Default: false
 
 puts "CenterWindow :- " + doc.getCenterWindow().to_s
 
-# 主な読み順; ページの位置を決定する
+# Predominant reading order; determine the position of page
 
-# 横に並べて表示されるとき - デフォルト: L2R
+# when displayed side by side - Default: L2R
 
 puts "Direction :- " + doc.getDirection().to_s
 
-# ウィンドウのタイトルバーがドキュメントタイトルを表示するかどうか。
+# Whether window's title bar should display document title.
 
-# falseの場合、タイトルバーにはPDFファイル名が表示される - デフォルト: false
+# If false, title bar displays PDF file name - Default: false
 
 puts "DisplayDocTitle :- " + doc.getDisplayDocTitle().to_s
 
-# ドキュメントのウィンドウをリサイズして
+# Whether to resize the document's window to fit the size of
 
-# 最初に表示されるページのサイズに合わせるかどうか - デフォルト: false
+# first displayed page - Default: false
 
 puts "FitWindow :- " + doc.getFitWindow().to_s
 
-# ビューアアプリケーションのメニューバーを非表示にするかどうか - デフォルト: false
+# Whether to hide menu bar of the viewer application - Default: false
 
 puts "HideMenuBar :-" + doc.getHideMenubar().to_s
 
-# ビューアアプリケーションのツールバーを非表示にするかどうか - デフォルト: false
+# Whether to hide tool bar of the viewer application - Default: false
 
 puts "HideToolBar :-" + doc.getHideToolBar().to_s
 
-# スクロールバーのようなUI要素を非表示にするかどうか
+# Whether to hide UI elements like scroll bars
 
-# ページの内容のみを表示 - デフォルト: false
+# and leaving only the page contents displayed - Default: false
 
 puts "HideWindowUI :-" + doc.getHideWindowUI().to_s
 
-# ドキュメントのページモード。フルスクリーンモードを終了したときの表示方法。
+# The document's page mode. How to display document on exiting full-screen mode.
 
 puts "NonFullScreenPageMode :-" + doc.getNonFullScreenPageMode().to_s
 
-# ページレイアウト、つまり単一ページ、1列
+# The page layout i.e. single page, one column
 
 puts "PageLayout :-" + doc.getPageLayout().to_s
 
-# ドキュメントを開いたときの表示方法。
+# How the document should display when opened.
 
 puts "pageMode :-" + doc.getPageMode().to_s
 ```
 
+## 実行コードのダウンロード
 
-## Download Running Code
-
-以下のいずれかのソーシャルコーディングサイトから **Get Document Window and Page Display Properties (Aspose.PDF)** をダウンロードしてください:
+ダウンロード **Get Document Window and Page Display Properties (Aspose.PDF)** 以下に記載されたソーシャルコーディングサイトのいずれかから取得してください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/getdocumentwindow.rb)

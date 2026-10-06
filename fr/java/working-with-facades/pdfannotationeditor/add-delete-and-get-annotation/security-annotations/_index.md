@@ -3,7 +3,7 @@ title: Annotations de sécurité utilisant Java
 linktitle: Annotations de sécurité
 type: docs
 weight: 60
-url: /java/pdfannotationeditor-class/security-annotations/
+url: /fr/java/pdfannotationeditor-class/security-annotations/
 description: Découvrez comment marquer du texte à caviarder, appliquer des annotations de caviardage et caviarder des zones de page sélectionnées dans des fichiers PDF à l'aide de Java.
 lastmod: "2026-09-22"
 TechArticle: true

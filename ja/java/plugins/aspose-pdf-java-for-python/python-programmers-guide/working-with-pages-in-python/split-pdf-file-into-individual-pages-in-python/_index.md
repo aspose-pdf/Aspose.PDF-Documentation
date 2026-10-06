@@ -1,39 +1,40 @@
 ---
-title: PythonでPDFファイルを個々のページに分割する
+title: "Python での PDFファイルの個別ページへの分割"
+linktitle: "Python での PDFファイルの個別ページへの分割"
 type: docs
 weight: 80
 url: /ja/java/split-pdf-file-into-individual-pages-in-python/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して Python で PDF を個別ページに分割する方法を調査し、ページ抽出と管理を容易にします。
+lastmod: "2026-10-06"
 ---
-
-**Aspose.PDF Java for PHP**を使用してPDFドキュメントを個々のページに分割するには、**SplitAllPages**クラスを呼び出すだけです。
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントを個別ページに分割するには、単に **SplitAllPages** クラスを呼び出すだけです。
 
 ```python
 
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# すべてのページをループする
+# loop through all the pages
 pdf_page = 1
 total_size = pdf.getPages().size()
 while (pdf_page <= total_size):
 
-# 新しいDocumentオブジェクトを作成する
+# create a new Document object
 new_document = self.Document();
 
-# ページコレクションの特定のインデックスにあるページを取得する
+# get the page at particular index of Page Collection
 new_document.getPages().add(pdf.getPages().get_Item(pdf_page))
 
-# 新しく生成されたPDFファイルを保存する
+# save the newly generated PDF file
 new_document.save(self.dataDir + "page_#{$pdf_page}.pdf")
 
 pdf_page+=1
 
-print "分割プロセスが正常に完了しました!";
+print "Split process completed successfully!";
 ```
 
-**実行コードをダウンロード**
+**コードの実行をダウンロード**
 
-以下のいずれかのソーシャルコーディングサイトから**Split Pages (Aspose.PDF)**をダウンロードしてください:
+Download **Split Pages (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれかからダウンロード:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/SplitAllPages/SplitAllPages.py)

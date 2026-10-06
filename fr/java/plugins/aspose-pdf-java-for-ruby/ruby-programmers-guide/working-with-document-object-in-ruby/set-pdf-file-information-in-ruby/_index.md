@@ -3,7 +3,7 @@ title: Définir les informations du fichier PDF en Ruby
 linktitle: Définir les informations du fichier PDF en Ruby
 type: docs
 weight: 120
-url: /java/set-pdf-file-information-in-ruby/
+url: /fr/java/set-pdf-file-information-in-ruby/
 description: Définissez et mettez à jour par programmation les métadonnées PDF telles que le titre, l'auteur et les mots-clés à l'aide de Ruby.
 lastmod: "2026-09-21"
 ---

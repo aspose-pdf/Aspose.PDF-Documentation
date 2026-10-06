@@ -3,7 +3,7 @@ title: Convertir un PDF au format SVG en PHP
 linktitle: Convertir un PDF au format SVG en PHP
 type: docs
 weight: 30
-url: /java/convert-pdf-to-svg-format-in-php/
+url: /fr/java/convert-pdf-to-svg-format-in-php/
 description: Découvrez comment convertir des documents PDF au format SVG en PHP avec Aspose.PDF pour une transformation de graphiques vectoriels de haute qualité.
 lastmod: "2026-09-21"
 ---

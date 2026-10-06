@@ -1,35 +1,36 @@
 ---
-title: RubyでDOMを使用してHTML文字列を追加
+title: "Ruby での DOMを使用したHTML文字列の追加"
+linktitle: "Ruby での DOMを使用したHTML文字列の追加"
 type: docs
 weight: 10
 url: /ja/java/add-html-string-using-dom-in-ruby/
-lastmod: "2021-06-05"
+description: RubyでDOM APIを使用し、Aspose.PDFで動的コンテンツを生成する際に、HTML文字列をPDFドキュメントに追加する方法を発見してください。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - HTML の追加
 
-## Aspose.PDF - HTMLを追加
+PDFドキュメントにHTML文字列を追加するには、**Aspose.PDF Java for Ruby** を使用し、単に **AddHtml** モジュールを呼び出すだけです。
 
-**Aspose.PDF Java for Ruby**を使用してPdfドキュメントにHTML文字列を追加するには、単に**AddHtml**モジュールを呼び出します。
-
-Rubyコード
+Ruby コード
 
 ```java
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# Documentオブジェクトをインスタンス化
+# Instantiate Document object
 
 doc = Rjb::import('com.aspose.pdf.Document').new
 
-# PDFファイルのページコレクションにページを追加
+# Add a page to pages collection of PDF file
 
 page = doc.getPages().add()
 
-# HTML内容を持つHtmlFragmentをインスタンス化
+# Instantiate HtmlFragment with HTML contents
 
 title = Rjb::import('com.aspose.pdf.HtmlFragment').new("<fontsize=10><b><i>Table</i></b></fontsize>")
 
-# マージンの詳細のためにMarginInfoを設定
+# set MarginInfo for margin details
 
 margin = Rjb::import('com.aspose.pdf.MarginInfo').new
 
@@ -37,24 +38,23 @@ margin.setBottom(10)
 
 margin.setTop(200)
 
-# マージン情報を設定
+# Set margin information
 
 title.setMargin(margin)
 
-# ページの段落コレクションにHTMLフラグメントを追加
+# Add HTML Fragment to paragraphs collection of page
 
 page.getParagraphs().add(title)
 
-# PDFファイルを保存
+# Save PDF file
 
 doc.save(data_dir + "html.output.pdf")
 
-puts "HTMLが正常に追加されました"
+puts "HTML added successfully"
 ```
 
+## 実行中のコードのダウンロード
 
-## ダウンロード実行コード
-
-以下のいずれかのソーシャルコーディングサイトから**Add HTML (Aspose.PDF)**をダウンロードしてください：
+以下に記載されたソーシャルコーディングサイトから **Add HTML (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/addhtml.rb)

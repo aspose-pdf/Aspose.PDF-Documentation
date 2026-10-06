@@ -1,19 +1,21 @@
 ---
-title: Securing and signing PDF documents
-linktitle: Securing and signing in PDF
+title: 在 Java 中保护和签署 PDF 文件
+linktitle: 在 PDF 中进行保护和签名
 type: docs
-weight: 150
+weight: 210
 url: /zh/java/securing-and-signing/
-description: 本节描述了使用Java对PDF文档进行签名和保护的功能。
-lastmod: "2021-06-05"
+description: 了解如何在 Java 中对 PDF 文件进行签名、认证、加密、解密和保护，包括数字签名、签名验证和文档权限。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Java 中对 PDF 文档进行签名、认证、加密、解密和保护
+Abstract: 本节介绍如何使用 Aspose.PDF for Java 来保护和签署 PDF 文档。学习如何应用数字签名、认证文档，提取并验证签名信息，以及管理 PDF 加密、密码和访问权限。
 ---
+Aspose.PDF for Java 包含用于数字签名和文档安全的 Facades API。您可以对 PDF 文件进行签名或认证，检查现有签名，对文档进行加密和解密，并使用用户密码和所有者密码应用权限限制。
 
-本文描述了如何使用Aspose.PDF for Java在PDF文档中表示数字签名。数字签名可以用于许多类型的文档，以前使用传统的笔和墨水签名。然而，仅仅存在数字签名并不足以保证文档如表面所示。此外，政府和企业环境通常需要对其签名工作流程施加额外的限制，例如在签名期间和之后限制用户选择和文档行为。
-
-- [数字签署PDF文件](/pdf/zh/java/digitally-sign-pdf-file/)
-
-- [设置权限，加密和解密PDF文件](/pdf/zh/java/set-privileges-encrypt-and-decrypt-pdf-file/)
-- [提取图像和签名信息](/pdf/zh/java/extract-image-and-signature-information/)
+- [对 PDF 文件进行数字签名](/pdf/zh/java/digitally-sign-pdf-file/)
+- [提取签名信息](/pdf/zh/java/extract-image-and-signature-information/)
+- [设置权限，加密并解密 PDF 文件](/pdf/zh/java/set-privileges-encrypt-and-decrypt-pdf-file/)
+- [智能卡签名备注](/pdf/zh/java/sign-pdf-document-from-smart-card/)

@@ -3,7 +3,7 @@ title: Supprimer des pages d'un PDF
 linktitle: Supprimer des pages d'un PDF
 type: docs
 weight: 20
-url: /java/delete-pages-from-pdf/
+url: /fr/java/delete-pages-from-pdf/
 description: Supprimez les pages sélectionnées d'un PDF en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

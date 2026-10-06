@@ -3,7 +3,7 @@ title: Convertir un PDF en EPUB, texte, XPS et plus en Java
 linktitle: Convertir un PDF vers d'autres formats
 type: docs
 weight: 90
-url: /java/convert-pdf-to-other-files/
+url: /fr/java/convert-pdf-to-other-files/
 lastmod: "2026-09-21"
 description: Apprenez à convertir des fichiers PDF en EPUB, LaTeX, Markdown, texte, XPS et MobiXML en Java avec Aspose.PDF.
 sitemap:

@@ -3,7 +3,7 @@ title: Extraire le texte d'un PDF à l'aide de Java
 linktitle: Extraire le texte d'un PDF
 type: docs
 weight: 10
-url: /java/extract-text-from-pdf/
+url: /fr/java/extract-text-from-pdf/
 description: Découvrez comment extraire du texte à partir de documents PDF en Java avec Aspose.PDF, y compris les méthodes d’extraction pour un document entier, une page, une zone, des annotations ou une mise en page multicolonne.
 lastmod: "2026-09-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Redimensionner le contenu de la page PDF
 linktitle: Redimensionner le contenu de la page PDF
 type: docs
 weight: 30
-url: /java/resize-pdf-page-contents/
+url: /fr/java/resize-pdf-page-contents/
 description: Redimensionnez le contenu des pages PDF sélectionnées en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

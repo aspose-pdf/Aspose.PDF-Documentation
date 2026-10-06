@@ -3,7 +3,7 @@ title: Effacer les métadonnées PDF
 linktitle: Effacer les métadonnées PDF
 type: docs
 weight: 10
-url: /java/clear-pdf-metadata/
+url: /fr/java/clear-pdf-metadata/
 description: Découvrez comment effacer les métadonnées PDF en Java avec la façade PdfFileInfo.
 lastmod: "2026-09-22"
 draft: false

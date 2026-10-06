@@ -1,39 +1,40 @@
 ---
-title: PDFファイルの末尾に空のページを挿入する（Ruby）
+title: "Ruby での PDF ファイルの末尾に空白ページの挿入"
+linktitle: "Ruby での PDF ファイルの末尾に空白ページの挿入"
 type: docs
 weight: 60
 url: /ja/java/insert-an-empty-page-at-end-of-pdf-file-in-ruby/
-lastmod: "2021-06-05"
+description: "Ruby と Aspose.PDF を使用して PDF ドキュメントの末尾に空白ページを挿入する方法を確認し、PDF 処理タスクに柔軟性を加えてください。"
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - PDF ファイルの末尾に空白ページの挿入
 
-## Aspose.PDF - PDFファイルの末尾に空のページを挿入する
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントの末尾に空白ページを挿入するには、単に **InsertEmptyPageAtEndOfFile** モジュールを呼び出してください。
 
-**Aspose.PDF Java for Ruby**を使用してPDFドキュメントの末尾に空のページを挿入するには、単に**InsertEmptyPageAtEndOfFile**モジュールを呼び出します。
-
-Rubyコード
+Ruby コード
 
 ```java
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# 対象ドキュメントを開く
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# PDFに空のページを挿入する
+# insert a empty page in a PDF
 
 pdf.getPages().add()
 
-# 結合された出力ファイル（対象ドキュメント）を保存する
+# Save the concatenated output file (the target document)
 
 pdf.save(data_dir+ "output.pdf")
 
-puts "空のページが正常に追加されました！"
+puts "Empty page added successfully!"
 ```
 
 ## 実行コードのダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから**PDFファイルの末尾に空のページを挿入する（Aspose.PDF）**をダウンロードできます：
+以下に記載されたソーシャルコーディングサイトのいずれかから、**PDF ファイルの末尾に空のページを挿入 (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypageatendoffile.rb)

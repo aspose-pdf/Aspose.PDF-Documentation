@@ -1,43 +1,44 @@
 ---
-title: RubyでPDFファイルを連結する
+title: "Ruby での PDF ファイルの連結"
+linktitle: "Ruby での PDF ファイルの連結"
 type: docs
 weight: 10
 url: /ja/java/concatenate-pdf-files-in-ruby/
-lastmod: "2021-06-05"
+description: "Ruby と Aspose.PDF を使用して、複数の PDF を効率的に単一のドキュメントに結合できます。"
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - PDF ファイルの連結
 
-## Aspose.PDF - PDFファイルの連結
-
-**Aspose.PDF Java for Ruby**を使用してPDFファイルを連結するには、**ConcatenatePdfFiles**モジュールを呼び出します。
+**Aspose.PDF Java for Ruby** を使用して PDF ファイルを連結するには、**ConcatenatePdfFiles** モジュールを呼び出してください。
 
 Ruby コード
 
 ```java
-# ドキュメントディレクトリへのパス
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# ターゲットドキュメントを開く
+# Open the target document
 
 pdf1 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# ソースドキュメントを開く
+# Open the source document
 
 pdf2 = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input2.pdf')
 
-# ソースドキュメントのページをターゲットドキュメントに追加
+# Add the pages of the source document to the target document
 
 pdf1.getPages().add(pdf2.getPages())
 
-# 連結された出力ファイル（ターゲットドキュメント）を保存
+# Save the concatenated output file (the target document)
 
 pdf1.save(data_dir+ "Concatenate_output.pdf")
 
-puts "新しいドキュメントが保存されました。出力ファイルを確認してください"
+puts "New document has been saved, please check the output file"
 ```
 
 ## 実行コードのダウンロード
 
-以下に記載されたソーシャルコーディングサイトから**Concatenate PDF Files (Aspose.PDF)**をダウンロードしてください。
+ダウンロード **Concatenate PDF Files (Aspose.PDF)** 以下に記載されたソーシャルコーディングサイトのいずれかから:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/concatenatepdffiles.rb)

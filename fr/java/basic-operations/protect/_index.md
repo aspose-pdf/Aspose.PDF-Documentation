@@ -3,7 +3,7 @@ title: Protéger les fichiers PDF en Java
 linktitle: Crypter et décrypter un fichier PDF
 type: docs
 weight: 70
-url: /java/protect-pdf-file/
+url: /fr/java/protect-pdf-file/
 description: Découvrez comment crypter des fichiers PDF, déchiffrer des documents protégés, modifier les mots de passe et inspecter la protection par mot de passe en Java.
 lastmod: "2026-09-21"
 sitemap:

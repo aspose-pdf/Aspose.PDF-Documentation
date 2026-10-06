@@ -1,19 +1,20 @@
 ---
-title: JythonでPDFの有効期限を設定
+title: "Jython での PDF の有効期限の設定"
+linktitle: "Jython での PDF の有効期限の設定"
 type: docs
 weight: 60
 url: /ja/java/set-pdf-expiration-in-jython/
-lastmod: "2021-06-05"
+description: Jython で PDF ドキュメントの有効期限を設定し、ドキュメントへのアクセスとセキュリティを管理する方法をご紹介します。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - 有効期限の設定
 
-## Aspose.PDF - 有効期限を設定
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。サンプルコードは以下をご覧ください。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認します。ここでサンプルコードを見ることができます。
-
-エラー: 'code' マクロのレンダリング中にエラーが発生しました: パラメータ lang に指定された値が無効です
+マクロ 'code' のレンダリングエラー: パラメータ lang に無効な値が指定されました。
 
 ## 実行コードのダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから実行コードをダウンロードできます:
+以下に記載されたソーシャルコーディングサイトのいずれかから実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

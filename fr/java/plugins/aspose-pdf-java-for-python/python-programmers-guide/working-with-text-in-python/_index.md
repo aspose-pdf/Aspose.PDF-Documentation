@@ -3,7 +3,7 @@ title: Travailler avec du texte en Python
 linktitle: Travailler avec du texte en Python
 type: docs
 weight: 40
-url: /java/working-with-text-in-python/
+url: /fr/java/working-with-text-in-python/
 description: Découvrez comment manipuler du texte dans un document PDF à l'aide de Python et Aspose.PDF pour une meilleure gestion et extraction du texte.
 lastmod: "2026-09-21"
 ---

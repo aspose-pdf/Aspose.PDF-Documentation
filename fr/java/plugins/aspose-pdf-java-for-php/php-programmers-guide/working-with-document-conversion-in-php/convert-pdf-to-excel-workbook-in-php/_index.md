@@ -3,7 +3,7 @@ title: Convertir un PDF en classeur Excel en PHP
 linktitle: Convertir un PDF en classeur Excel en PHP
 type: docs
 weight: 20
-url: /java/convert-pdf-to-excel-workbook-in-php/
+url: /fr/java/convert-pdf-to-excel-workbook-in-php/
 description: Apprenez à convertir des fichiers PDF en classeurs Excel en PHP à l'aide d'Aspose.PDF, permettant une extraction et une manipulation transparentes des données.
 lastmod: "2026-09-21"
 ---

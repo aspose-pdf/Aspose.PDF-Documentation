@@ -3,7 +3,7 @@ title: Classe FormEditor
 linktitle: Classe FormEditor
 type: docs
 weight: 150
-url: /java/formeditor-class/
+url: /fr/java/formeditor-class/
 description: Découvrez comment utiliser la façade FormEditor en Java pour créer des champs de formulaire, modifier des champs existants, personnaliser l'apparence des champs et ajouter des scripts ou soumettre des actions dans des formulaires PDF.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Obtenir des métadonnées XMP à partir d'un fichier PDF en Python
 linktitle: Obtenir des métadonnées XMP à partir d'un fichier PDF en Python
 type: docs
 weight: 50
-url: /java/get-xmp-metadata-from-pdf-file-in-python/
+url: /fr/java/get-xmp-metadata-from-pdf-file-in-python/
 description: Découvrez comment récupérer les métadonnées XMP d'un fichier PDF en Python à l'aide d'Aspose.PDF, permettant une analyse détaillée du contenu.
 lastmod: "2026-09-21"
 ---

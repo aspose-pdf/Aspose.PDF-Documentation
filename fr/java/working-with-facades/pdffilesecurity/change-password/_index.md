@@ -3,7 +3,7 @@ title: Changer le mot de passe du fichier PDF
 linktitle: Changer le mot de passe du fichier PDF
 type: docs
 weight: 10
-url: /java/change-password/
+url: /fr/java/change-password/
 description: Découvrez comment modifier les mots de passe PDF en Java avec la façade PdfFileSecurity.
 lastmod: "2026-09-22"
 draft: false

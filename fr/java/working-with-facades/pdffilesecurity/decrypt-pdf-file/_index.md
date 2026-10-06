@@ -3,7 +3,7 @@ title: Déchiffrer le fichier PDF
 linktitle: Déchiffrer le fichier PDF
 type: docs
 weight: 20
-url: /java/decrypt-pdf-file/
+url: /fr/java/decrypt-pdf-file/
 description: Apprenez à déchiffrer un PDF en Java avec la façade PdfFileSecurity.
 lastmod: "2026-09-22"
 draft: false

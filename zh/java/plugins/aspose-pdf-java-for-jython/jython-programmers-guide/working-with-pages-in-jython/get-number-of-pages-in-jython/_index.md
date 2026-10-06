@@ -1,19 +1,20 @@
 ---
-title: 获取Jython中的页面数量
+title: 在 Jython 中获取页数
+linktitle: 在 Jython 中获取页数
 type: docs
 weight: 30
 url: /zh/java/get-number-of-pages-in-jython/
-lastmod: "2021-06-05"
+description: 了解如何使用 Jython 和 Aspose.PDF 进行文档管理，以获取 PDF 文档的页数。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - 获取页数
 
-## Aspose.PDF - 获取页面数量
+使用 **Aspose.PDF Java for Jython** 检查文件格式。此处可查看示例代码。
 
-使用**Aspose.PDF Java for Jython**检查文件格式。您可以在这里查看示例代码。
-
-错误呈现宏 'code'：为参数 lang 指定的值无效
+渲染宏 ‘code’ 时出错：为参数 lang 指定了无效的值
 
 ## 下载运行代码
 
-从以下任何一个社交编码网站下载运行代码：
+从以下列出的社交代码站点下载运行的代码：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

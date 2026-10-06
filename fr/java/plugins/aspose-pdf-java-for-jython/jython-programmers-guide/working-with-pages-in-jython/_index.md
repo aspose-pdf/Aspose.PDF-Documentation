@@ -3,7 +3,7 @@ title: Travailler avec des pages en Jython
 linktitle: Travailler avec des pages en Jython
 type: docs
 weight: 30
-url: /java/working-with-pages-in-jython/
+url: /fr/java/working-with-pages-in-jython/
 description: Découvrez comment accéder, gérer et manipuler des pages PDF en Jython à l'aide d'Aspose.PDF pour un traitement flexible des documents.
 lastmod: "2026-09-21"
 ---

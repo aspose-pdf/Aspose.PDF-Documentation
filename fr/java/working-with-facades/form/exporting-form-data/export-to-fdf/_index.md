@@ -3,7 +3,7 @@ title: Exporter vers FDF
 linktitle: Exporter vers FDF
 type: docs
 weight: 10
-url: /java/export-to-fdf/
+url: /fr/java/export-to-fdf/
 description: Découvrez comment exporter les valeurs des champs de formulaire PDF vers FDF en Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

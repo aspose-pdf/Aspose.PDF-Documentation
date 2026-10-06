@@ -3,7 +3,7 @@ title: Supprimer les métadonnées du PDF en PHP
 linktitle: Supprimer les métadonnées du PDF en PHP
 type: docs
 weight: 70
-url: /java/remove-metadata-from-pdf-in-php/
+url: /fr/java/remove-metadata-from-pdf-in-php/
 description: Découvrez comment supprimer les métadonnées d'un document PDF en PHP à l'aide d'Aspose.PDF pour améliorer la confidentialité et la sécurité des documents.
 lastmod: "2026-09-21"
 ---

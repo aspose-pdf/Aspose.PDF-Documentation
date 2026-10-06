@@ -3,7 +3,7 @@ title: Travailler avec la conversion de documents en PHP
 linktitle: Travailler avec la conversion de documents en PHP
 type: docs
 weight: 10
-url: /java/working-with-document-conversion-in-php/
+url: /fr/java/working-with-document-conversion-in-php/
 description: Apprenez à convertir des documents PDF en différents formats à l'aide de PHP et Aspose.PDF pour un traitement de documents polyvalent.
 lastmod: "2026-09-21"
 ---

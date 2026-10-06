@@ -3,7 +3,7 @@ title: Annotations de forme via Java
 linktitle: Annotations de forme
 type: docs
 weight: 40
-url: /java/pdfannotationeditor-class/shape-annotations/
+url: /fr/java/pdfannotationeditor-class/shape-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations de carrés, de cercles, de polygones et de polylignes dans des documents PDF à l'aide de Java.
 lastmod: "2026-09-22"
 TechArticle: true

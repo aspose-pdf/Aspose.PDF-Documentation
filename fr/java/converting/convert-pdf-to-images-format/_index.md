@@ -3,7 +3,7 @@ title: Convertir un PDF en formats d'image en Java
 linktitle: Convertir un PDF en images
 type: docs
 weight: 70
-url: /java/convert-pdf-to-images-format/
+url: /fr/java/convert-pdf-to-images-format/
 lastmod: "2026-09-21"
 description: Apprenez à restituer des pages PDF sous forme de fichiers TIFF, BMP, EMF, JPEG, PNG, GIF et SVG en Java avec Aspose.PDF.
 sitemap:

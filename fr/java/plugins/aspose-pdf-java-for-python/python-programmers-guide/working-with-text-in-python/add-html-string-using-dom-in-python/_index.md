@@ -3,7 +3,7 @@ title: Ajouter une chaîne HTML à l'aide de DOM en Python
 linktitle: Ajouter une chaîne HTML à l'aide de DOM en Python
 type: docs
 weight: 10
-url: /java/add-html-string-using-dom-in-python/
+url: /fr/java/add-html-string-using-dom-in-python/
 lastmod: "2026-09-21"
 description: Explique comment ajouter une chaîne HTML dans DOM à l'aide de Python avec la bibliothèque de formats de fichier PDF
 ---

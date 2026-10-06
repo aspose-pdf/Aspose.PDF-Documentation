@@ -3,7 +3,7 @@ title: Diviser des documents PDF
 linktitle: Diviser des documents PDF
 type: docs
 weight: 50
-url: /java/splitting-pdf-documents/
+url: /fr/java/splitting-pdf-documents/
 description: Apprenez à diviser des documents PDF en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

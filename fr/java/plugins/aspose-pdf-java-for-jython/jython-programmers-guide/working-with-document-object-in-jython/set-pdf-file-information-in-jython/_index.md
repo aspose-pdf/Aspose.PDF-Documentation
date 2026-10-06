@@ -3,7 +3,7 @@ title: Définir les informations du fichier PDF en Jython
 linktitle: Définir les informations du fichier PDF en Jython
 type: docs
 weight: 70
-url: /java/set-pdf-file-information-in-jython/
+url: /fr/java/set-pdf-file-information-in-jython/
 description: Découvrez comment définir les métadonnées et autres propriétés de fichier d'un document PDF en Jython avec Aspose.PDF.
 lastmod: "2026-09-21"
 ---

@@ -3,7 +3,7 @@ title: Travailler avec des pages en PHP
 linktitle: Travailler avec des pages en PHP
 type: docs
 weight: 30
-url: /java/working-with-pages-in-php/
+url: /fr/java/working-with-pages-in-php/
 description: Découvrez comment ajouter, récupérer, mettre à jour et gérer des pages PDF en PHP à l'aide d'Aspose.PDF pour un contrôle efficace des documents.
 lastmod: "2026-09-21"
 ---

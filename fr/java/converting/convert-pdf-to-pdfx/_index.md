@@ -3,7 +3,7 @@ title: Convertir un PDF en PDF/A, PDF/E et PDF/X en Java
 linktitle: Convertir un PDF en PDF/A, PDF/E et PDF/X
 type: docs
 weight: 120
-url: /java/convert-pdf-to-pdf_x/
+url: /fr/java/convert-pdf-to-pdf_x/
 lastmod: "2026-09-21"
 description: Découvrez comment convertir des fichiers PDF en PDF/A, PDF/E et PDF/X en Java avec Aspose.PDF pour les flux de travail d'archivage, d'ingénierie, d'accessibilité et d'impression.
 sitemap:

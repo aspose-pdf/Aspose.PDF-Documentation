@@ -1,11 +1,12 @@
 ---
-title: 在 Ruby 中进行文档转换
+title: 在 Ruby 中使用文档转换
+linktitle: 在 Ruby 中使用文档转换
 type: docs
 weight: 40
 url: /zh/java/working-with-document-conversion-in-ruby/
-lastmod: "2021-06-05"
+description: 了解如何使用 Ruby 和 Aspose.PDF 将 PDF 文档转换为其他格式，确保文件转换无缝进行。
+lastmod: "2026-10-06"
 ---
-
 本节包括以下主题：
 
 - [在 Ruby 中将 HTML 转换为 PDF 格式](/pdf/zh/java/convert-html-to-pdf-format-in-ruby/)

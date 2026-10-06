@@ -1,18 +1,19 @@
 ---
-title: JythonでSVGファイルをPDF形式に変換する
+title: "Jython での SVG ファイルの PDF への変換"
+linktitle: "Jython での SVG ファイルの PDF への変換"
 type: docs
 weight: 40
 url: /ja/java/convert-svg-file-to-pdf-format-in-jython/
-lastmod: "2021-06-05"
+description: "Jython と Aspose.PDF を使用して、SVG ファイルを高品質なベクター グラフィックとして PDF 形式に変換する方法をご紹介します。"
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - Svg から Pdf
 
-## Aspose.PDF - SvgからPdfへ
+**Aspose.PDF Java for Jython** を使用してファイル形式を確認します。サンプルコードは以下をご覧ください。
+マクロ 'code' のレンダリングエラー: パラメータ lang に無効な値が指定されました。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認します。ここでサンプルコードを見ることができます。
-マクロ 'code' のレンダリングエラー: パラメータlangに指定された値が無効です
+**コードをダウンロード**
 
-**実行中のコードをダウンロード**
-
-以下のいずれかのソーシャルコーディングサイトから実行中のコードをダウンロードしてください:
+以下に記載されたソーシャルコーディングサイトのいずれかから実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

@@ -3,7 +3,7 @@ title: Convertir HTML en PDF en Java
 linktitle: Convertir HTML en fichier PDF
 type: docs
 weight: 40
-url: /java/convert-html-to-pdf/
+url: /fr/java/convert-html-to-pdf/
 lastmod: "2026-09-21"
 description: Découvrez comment convertir des pages HTML, MHTML et Web en PDF en Java avec Aspose.PDF, y compris les types de média CSS, les règles de page CSS, l'intégration de polices, le contenu SVG et la sortie sur une seule page.
 sitemap:

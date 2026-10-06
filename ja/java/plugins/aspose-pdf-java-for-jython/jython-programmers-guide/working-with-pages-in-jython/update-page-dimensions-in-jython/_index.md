@@ -1,19 +1,20 @@
 ---
-title: Jythonでページ寸法を更新する
+title: "Jython での ページサイズの更新"
+linktitle: "Jython での ページサイズの更新"
 type: docs
 weight: 90
 url: /ja/java/update-page-dimensions-in-jython/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して Jython で PDF ドキュメント内のページのサイズを変更する方法を理解する。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - ページサイズの更新
 
-## Aspose.PDF - ページ寸法を更新する
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。サンプルコードは以下をご覧ください。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認するには、ここにサンプルコードがあります。
+マクロ 'code' のレンダリング エラー: パラメータ lang に無効な値が指定されました
 
-エラー: マクロ 'code' のレンダリング中に無効な値がパラメータ lang に指定されました
+## 実行中のコードのダウンロード
 
-## 実行コードのダウンロード
-
-以下のいずれかのソーシャルコーディングサイトから実行コードをダウンロードしてください：
+以下に記載されたソーシャルコーディングサイトのいずれかから実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

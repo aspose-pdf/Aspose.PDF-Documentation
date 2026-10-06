@@ -3,7 +3,7 @@ title: Diviser un fichier PDF en pages individuelles en Jython
 linktitle: Diviser un fichier PDF en pages individuelles en Jython
 type: docs
 weight: 80
-url: /java/split-pdf-file-into-individual-pages-in-jython/
+url: /fr/java/split-pdf-file-into-individual-pages-in-jython/
 description: Découvrez comment diviser un document PDF en pages individuelles à l'aide de Jython et Aspose.PDF pour une meilleure gestion des documents.
 lastmod: "2026-09-21"
 ---

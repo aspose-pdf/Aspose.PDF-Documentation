@@ -3,7 +3,7 @@ title: Ajouter du texte à un fichier PDF existant en PHP
 linktitle: Ajouter du texte à un fichier PDF existant en PHP
 type: docs
 weight: 20
-url: /java/add-text-to-an-existing-pdf-file-in-php/
+url: /fr/java/add-text-to-an-existing-pdf-file-in-php/
 description: Découvrez comment ajouter un nouveau texte à un document PDF existant en PHP en utilisant Aspose.PDF pour améliorer le contenu.
 lastmod: "2026-09-21"
 ---

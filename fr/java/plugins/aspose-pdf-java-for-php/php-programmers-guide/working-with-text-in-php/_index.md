@@ -3,7 +3,7 @@ title: Travailler avec du texte en PHP
 linktitle: Travailler avec du texte en PHP
 type: docs
 weight: 40
-url: /java/working-with-text-in-php/
+url: /fr/java/working-with-text-in-php/
 description: Apprenez à manipuler et extraire du texte à partir de documents PDF en PHP à l'aide d'Aspose.PDF pour une meilleure gestion du contenu.
 lastmod: "2026-09-21"
 ---

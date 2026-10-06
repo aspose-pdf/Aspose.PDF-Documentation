@@ -3,7 +3,7 @@ title: Ajouter des pages au PDF
 linktitle: Ajouter des pages au PDF
 type: docs
 weight: 10
-url: /java/append-pages-to-pdf/
+url: /fr/java/append-pages-to-pdf/
 description: Ajoutez des pages d'un PDF à un autre en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

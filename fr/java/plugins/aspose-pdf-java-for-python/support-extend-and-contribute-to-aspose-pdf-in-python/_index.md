@@ -3,7 +3,7 @@ title: Assistance et contributions à Aspose.PDF en Python
 linktitle: Assistance et contributions à Aspose.PDF en Python
 type: docs
 weight: 30
-url: /java/support-extend-and-contribute-to-aspose-pdf-in-python/
+url: /fr/java/support-extend-and-contribute-to-aspose-pdf-in-python/
 description: Comprendre comment prendre en charge et étendre Aspose.PDF en Python et contribuer à l'amélioration de ses fonctionnalités pour de meilleures solutions PDF.
 lastmod: "2026-09-21"
 ---

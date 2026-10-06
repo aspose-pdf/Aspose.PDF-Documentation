@@ -1,171 +1,170 @@
 ---
-title: 概述
-linktitle: 概述
+title: 概览
+linktitle: 概览
 type: docs
 weight: 20
 url: /zh/java/overview/
-description: Aspose.PDF for Java 的关键功能和支持格式概述，Java 库的安装和许可手册。
-lastmod: "2021-06-05"
+description: Aspose.PDF for Java 的关键功能和支持格式概览，Java 库的安装和授权手册。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Aspose.PDF for Java 提供的功能概览
+Abstract: 本文详细概述了 Aspose.PDF for Java 提供的功能，这是一款全面的 Java 库，可在无需 Adobe Acrobat 的情况下创建和操作 PDF 文档。主要功能包括文档压缩、表格创建、图形支持、超链接集成以及诸如数字签名等广泛的安全控制。该库还支持添加和管理书签、目录、附件、注释和元数据。用户可以编辑文本和图像，通过拆分或合并管理页面，并将 PDF 页面转换为多种图像格式。此外，Aspose.PDF for Java 在不同 Java 环境下提供强大的打印功能，并促进 PDF 与其他文档格式之间的转换。文章最后提供了定价、授权、技术支持以及进一步学习该库功能和安装要求的资源链接。
+SoftwareApplication: java
 ---
+_此页面概述了 Aspose.PDF for Java 功能。_
 
-_此页面是 Aspose.PDF for Java 功能的概述。_
+**Aspose for Java** 是一个强大的 Java 组件，允许开发者在不使用 Adobe Acrobat 的情况下从零创建 PDF 文档。Aspose.PDF for Java 为开发者提供了一个非常简单的应用程序编程接口 (API)，易于学习和使用。
 
-**Aspose for Java** 是一个强大的 Java 组件，可让开发人员在不使用 Adobe Acrobat 的情况下从头创建 PDF 文档。Aspose.PDF for Java 为开发人员提供了一个非常简单的应用程序编程接口 (API)，易于学习和使用。
-
-使用此库，您可以实现丰富的功能，从头创建 PDF 文件，或在不安装 Adobe Acrobat 的情况下完全处理现有 PDF 文档。Aspose.PDF for Java 支持**多种功能**。
+使用此库，您可以实现丰富的能力，从零创建 PDF 文件，或在不安装 Adobe Acrobat 的情况下完全处理现有的 PDF 文档。Aspose.PDF for Java 支持 **广泛的功能**。
 
 ### 文档压缩
 
-压缩 PDF 文档有助于减少它们的文件大小，使其更易于存储、共享和通过网络传输。
- 处理包含高分辨率图像或图形的大型PDF文件时，这一点尤其重要。较小的文件大小可以更快地加载，特别是在在线访问PDF文档或通过电子邮件附件时。压缩后的PDF加载更快，提高了用户体验和生产力。
-**Aspose.PDF for Java Library** 提供了多种减少PDF大小的方法，例如：
+压缩 PDF 文档有助于减小文件大小，使其更容易存储、共享并在网络上传输。这在处理包含高分辨率图像或图形的大型 PDF 文件时尤为重要。较小的文件大小可带来更快的加载时间，尤其是在在线访问 PDF 文档或通过电子邮件附件时。压缩后的 PDF 加载更快，提升用户体验和工作效率。
+**Aspose.PDF for Java Library** 提供了多种缩小 PDF 大小的方法，例如：
 
 - 缩小或压缩所有图像
-- 移除未使用的PDF对象
-- 移除未使用的PDF流
-- 链接重复的PDF流
+- 移除未使用的 PDF 对象
+- 删除未使用的 PDF 流
+- 链接重复的 PDF 流
 - 取消嵌入字体
-- 移除或扁平化注释
-- 移除AcroForm字段
-- 使用flateDecode压缩
-- 将图像存储在XImageCollection中（可重用图像）
-- 将PDF从RGB颜色空间转换为灰度
+- 删除或扁平化注释
+- 删除 AcroForm 字段
+- 使用 flateDecode 压缩
+- 将图像存储在 XImageCollection 中（可重复使用的图像）
+- 将 PDF 从 RGB 颜色空间转换为灰度
 
-让我们查看文档页面以获取更多详细信息：[优化PDF](/pdf/zh/java/optimize-pdf/)
+让我们查看文档页面以获取更多细节： [优化 PDF](/pdf/zh/java/optimize-pdf/)
 
 ### 表格创建和操作
 
-表格为在PDF文档中呈现信息提供了一种结构化和组织化的格式。 他们允许用户将数据分类并排列成行和列，从而更容易理解复杂的数据集。
+表格为在 PDF 文档中呈现信息提供了结构化且有序的格式。它们使用户能够将数据按行列进行分类和排列，从而更容易理解复杂的数据集。
 
-使用 **Aspose.PDF for Java** 在 PDF 文档中创建和操作表格提供了许多优势，包括改进的数据组织、增强的可读性、更好的分析能力以及在有效展示信息方面的灵活性。
+使用 **Aspose.PDF for Java** 创建和操作 PDF 文档中的表格提供了诸多优势，包括改进的数据组织、提升的可读性、更好的分析能力，以及在有效呈现信息方面的更高灵活性。
 
-让我们查看下一节以获取更多详细信息：[与表格一起工作](/pdf/zh/java/working-with-tables/)
+让我们查看下一节以获取更多细节： [处理表格](/pdf/zh/java/working-with-tables/)
 
-### 对图形对象的支持
+### 对 Graph 对象的支持
 
-**Aspose.PDF for Java** 支持将图形添加到 PDF 文档中。提供了 Graph 类来完成此任务。  
-将图形添加到 PDF 文档中可以改善数据可视化、增强清晰度和理解力、提供更好的决策支持，并增加读者的参与度。
+**Aspose.PDF for Java** 支持向 PDF 文档中添加图形。为此任务提供了 Graph 类。
+在 PDF 文档中添加图形  可改进数据可视化，提升清晰度和理解度，提供更好的决策支持，并增加读者的参与度。
 
-让我们查看文档页面以获取更多详细信息：[与图形一起工作](/pdf/zh/java/graphs/)
+让我们查看文档页面以获取更多细节： [使用图形](/pdf/zh/java/working-with-graphs/)
 
-### 丰富的超链接功能
+### 广泛的超链接功能
 
-超链接允许用户在 PDF 文档中快速高效地导航。 通过点击超链接，读者可以跳转到不同的部分、章节或页面，而无需手动滚动文档。
+超链接允许用户在 PDF 文档中快速且高效地导航。通过点击超链接，读者可以跳转到不同的部分、章节或页面，而无需手动滚动文档。
 
-**Aspose.PDF for Java** 提供了许多优点，包括改进的导航、交叉引用、访问外部资源、交互性和增强的沟通。它们为用户提供了更具吸引力、信息丰富且易于访问的阅读体验。
+**Aspose.PDF for Java** 提供了许多优势，包括改进的导航、交叉引用、访问外部资源、交互性以及增强的沟通。这些优势有助于为用户创造更具吸引力、信息丰富且易于访问的阅读体验。
 
-让我们查看下一节以获取更多详细信息：[动作](/pdf/zh/java/actions/)
+让我们查看下一节以获取更多细节： [操作](/pdf/zh/java/actions/)
 
 ### 扩展安全控制
 
-诸如数字签名之类的安全功能有助于确保 PDF 文档的完整性。通过对文档进行数字签名，发送方可以验证内容自签名后未被篡改或更改，从而向接收方保证文档的真实性。
+安全特性（例如数字签名）有助于确保 PDF 文档的完整性。通过对文档进行数字签名，发送者可以验证自签名以来内容未被篡改或修改，从而向收件人提供有关文档真实性的保证。
 
-使用 **Aspose.PDF for Java** 可以从智能卡签署 PDF、加密和解密文件、提取图像和签名信息等。
+使用 **Aspose.PDF for Java** 可以实现通过智能卡对 PDF 进行签名、加密和解密文件、提取图像以及获取签名信息等。
 
-让我们查看文档页面以获取更多详细信息：[安全和签名](/pdf/zh/java/securing-and-signing/)
+让我们查看文档页面以获取更多细节： [安全与签名](/pdf/zh/java/securing-and-signing/)
+
 ### 添加或删除书签
 
-书签为用户提供了一种便捷的方式来浏览大型或复杂的 PDF 文档。通过为特定部分、章节或标题创建书签，用户只需点击一下即可轻松跳转到相关内容，节省时间和精力。
+书签为用户提供了一种方便的方式来浏览大型或复杂的 PDF 文档。通过为特定章节、章节或标题创建书签，用户可以只需点击即可轻松跳转到相关内容，从而节省时间和精力。
 
-使用 **Aspose.PDF for Java** 库，您可以向 PDF 文件添加书签，添加子书签，或从文档中删除所有或特定的书签。
+使用 **Aspose.PDF for Java** 库，您可以向 PDF 文件添加书签，添加子书签，或删除文档中全部或特定的书签。
 
-让我们查看下一节以获取更多详细信息：[书签](/pdf/zh/java/add-and-delete-bookmark/)
+让我们查看下一节以获取更多细节： [书签](/pdf/zh/java/add-and-delete-bookmark/)
 
 ### 创建目录
 
-目录为用户提供了一种快速有效的方式来浏览 PDF 文档的内容。通过列出主要部分、章节或主题及其对应的页码，用户可以轻松定位和访问文档中的特定信息。
+TOC 为用户提供了一种快速高效的方式来浏览 PDF 文档的内容。通过列出主要章节、章节或主题及其对应的页码，用户可以轻松定位并访问文档中的特定信息。
+**Aspose.PDF for Java** 库说明了如何向现有 PDF 文件添加 TOC，并在 Aspose.Pdf 命名空间中使用 Heading 类。
 
-**Aspose.PDF for Java** 库解释了如何向现有 PDF 文件添加目录，以及如何在 Aspose.Pdf 命名空间中使用 Heading 类。
+让我们查看文档页面以获取更多细节： [使用 TOC](/pdf/zh/java/manipulate-pdf-document/)
 
-让我们查看文档页面以获取更多详细信息：[使用目录](/pdf/zh/java/manipulate-pdf-document/)
+###  添加、更新、删除附件和注释
 
-### 添加、更新、删除附件和注释
+添加附件和批注使 PDF 文档对读者更具互动性和吸引力。用户可以与文档中嵌入的附加内容（如多媒体文件、链接或评论）进行交互，提升阅读体验。
 
-添加附件和注释使PDF文档对读者更具互动性和吸引力。用户可以与文档中嵌入的附加内容（如多媒体文件、链接或评论）进行互动，从而增强他们的阅读体验。
+Aspose.PDF for Java 库具有不同的操作方式 [批注](/pdf/zh/java/annotations/). 您可以添加以下类型：
 
-Aspose.PDF for Java库提供了不同的[注释](/pdf/zh/java/annotations/)操作。您可以添加以下类型的注释：
+- 文本批注
+- 高亮批注
+- 图形批注
+- 多媒体批注
+- 粘性批注
+- 额外批注
 
-- 文本注释
-- 高亮注释
-- 图形注释
-- 多媒体注释
-- 便签注释
-- 额外注释
+此外，我们的 Library 允许您在 PDF 中添加、提取和删除附件。
+欲了解更多详情，请查看下文。 [文档页面](/pdf/zh/java/attachments/)。
 
-此外，我们的库还允许您添加、提取和删除PDF中的附件。有关更多详细信息，请查看以下[文档页面](/pdf/zh/java/attachments/)。
+###  PDF 文件元数据
 
-### PDF 文件元数据
+元数据提供有关 PDF 文档的基本信息，例如标题、作者、创建日期和主题。这帮助用户快速识别和分类文档，使得管理和组织大量 PDF 文件更加容易。
 
-元数据提供了关于PDF文档的重要信息，例如标题、作者、创建日期和主题。这有助于用户快速识别和分类文档，使管理和组织大量PDF文件变得更加容易。
+PDF 文件元数据具有多种用途，包括文档识别、归属、版本跟踪、描述、可搜索性、可访问性、安全性、互操作性、保存和合规性。
 
-PDF文件元数据具有多种用途，包括文档识别、归属、版本跟踪、描述、可搜索性、可访问性、安全性、互操作性、保存和合规性。
-
-轻松快速管理 PDF 文档中的[元数据](/pdf/zh/java/pdf-file-metadata/)，使用 **Aspose.PDF for Java** 库。
+使用 **Aspose.PDF for Java** 库，轻松快速地管理 PDF 文档中的 [元数据](/pdf/zh/java/pdf-file-metadata/)。
 
 ### 添加、替换或删除文本和图像
 
-添加、替换或删除文本和图像允许用户编辑 PDF 文档的内容，根据需要进行更新、修正或增强。这种灵活性使用户能够准确地修改文档内容以反映更改或修订。
+添加、替换或删除文本和图像使用户能够编辑 PDF 文档的内容，按需进行更新、校正或增强。这种灵活性让用户能够准确地修改文档内容，以反映更改或修订。
 
-使用 Aspose.PDF，您可以编辑 PDF 中的文本，替换或旋转它，搜索或获取 PDF 中的文本。
+使用 Aspose.PDF，您可以编辑 PDF 内的文本，替换或旋转文本，搜索或获取 PDF 中的文本。
 
-您还可以添加、更改位置、删除图像，并在 PDF 中进行更多[复杂的操作](/pdf/zh/java/working-with-images/)。
+还可以在 PDF 中添加、移动和删除图像，以及执行更多 [复杂操作](/pdf/zh/java/working-with-images/)。
 
 ### 拆分、连接、提取或插入页面
 
-Docs 中的[处理 PDF 页面](/pdf/zh/java/working-with-pages/)部分解释了如何在 PDF 中添加、移动、删除、旋转或拆分页。
+该 [使用 PDF 页面](/pdf/zh/java/working-with-pages/) Docs 中的章节解释了如何在 PDF 中添加、移动、删除、旋转或拆分页面。
 
-拆分、连接、提取或插入页面帮助用户更有效地管理 PDF 文档。
- 用户可以组织、重新排列或组合页面以创建新文档，从而改善文档的组织和可访问性。
+拆分、拼接、提取或插入页面有助于用户更有效地管理 PDF 文档。用户可以组织、重新排列或合并页面以创建新文档，从而提升文档的组织性和可访问性。
 
 ### 将页面转换为图像
 
-将PDF页面转换为图像使内容对可能难以直接查看或交互PDF文档的用户更加可访问。图像可以在各种设备上轻松查看，包括智能手机、平板电脑和计算机，而无需专用软件。
+将 PDF 页面转换为图像，使内容对可能难以直接查看或交互 PDF 文档的用户更易访问。图像可以在包括智能手机、平板电脑和电脑在内的各种设备上轻松查看，无需专门的软件。
 
-Aspose.PDF允许使用Java将PDF转换为不同的图像格式。有以下几种格式：
+Aspose.PDF 允许使用 Java 将 PDF 转换为不同的图像格式。以下是：
 
 - TIFF
-- BMP
+- 位图
 - EMF
 - JPG
 - PNG
 - GIF
 - SVG
 
-Aspose.PDF库使用DocumentDevice或ImageDevice类进行PDF到图像的转换。[将PDF转换为不同的图像格式](/pdf/zh/java/convert-pdf-to-images-format/).
+Aspose.PDF Library 使用 DocumentDevice 或 ImageDevice 类进行 PDF 到图像的转换。[将 PDF 转换为不同的图像格式](/pdf/zh/java/convert-pdf-to-images-format/)。
 
-### 打印PDF文档
+### 打印 PDF 文档
 
-打印PDF文档允许用户创建可以轻松传输和访问的物理副本，而无需电子设备。
+打印 PDF 文档允许用户创建可以轻松携带和访问的实体副本，无需电子设备。
 
-Aspose.PDF for Java提供了打印PDF文件的不同方法：
+Aspose.PDF for Java 提供了不同的方式来打印 PDF 文件：
 
-- 使用Java Framework 4.x打印PDF
+- 使用 Java Framework 4.x 打印 PDF
+- 在 Java Core / Java 中打印 PDF
+- 使用 Facades 将 PDF 打印到 XPS 打印机（控制台应用）
+- 在 WPF 应用程序中打印 PDF
+- 各种额外的操作，例如 PDF 转 PostScript 转换、检查打印作业状态等。
 
-- 在Java Core / Java中打印PDF- 使用 Facades 打印 PDF 到 XPS 打印机（控制台应用程序）  
-- 在 WPF 应用程序中打印 PDF  
-- 各种附加操作，如 PDF 到 PostScript 转换、检查打印作业状态等。  
+此外，Aspose.PDF for Java 可用于轻松将文本、图像、SVG、HTML 转换为 PDF，并将 PDF 转换为各种文档格式，具有出色的性能和良好的质量。
 
-让我们查看下一节以获取更多详细信息：[打印 PDF 文档](/pdf/zh/java/printing-document/)。  
+## 定价与政策
 
-此外，Aspose.PDF for Java 可以轻松地将文本、图像、SVG、HTML 转换为 PDF，并以出色的性能和良好的质量将 PDF 转换为各种文档格式。  
+请访问 [许可](/pdf/zh/java/licensing/) 有关许可证信息的页面并审阅 [定价信息](https://purchase.aspose.com/pricing/pdf/family/) 有关定价详情的页面。
 
-## 价格和政策  
+## 技术支持
 
-请访问 [许可](/pdf/zh/java/licensing/) 页面获取许可证信息，并查看 [价格信息](https://purchase.aspose.com/pricing/pdf/family/) 页面以获取定价详情。  
+有关 Aspose.PDF 技术支持的更多信息，请查看 [支持页面](/pdf/zh/java/technical-support/)。
 
-## 技术支持  
+了解更多：
 
-有关 Aspose.PDF 技术支持的更多信息，请查看 [支持页面](/pdf/zh/java/technical-support/)。  
-
-了解更多信息：  
-
-- [支持的文件格式](/pdf/zh/java/supported-file-formats/)  
-- [Aspose.PDF 的主要功能](/pdf/zh/java/key-features/)  
-
-- [系统要求](/pdf/zh/java/system-requirements/)  
+- [支持的文件格式](/pdf/zh/java/supported-file-formats/)
+- [Aspose.PDF 的关键特性](/pdf/zh/java/key-features/)
+- [系统需求](/pdf/zh/java/system-requirements/)
 - [安装](/pdf/zh/java/installation/)
 - [许可](/pdf/zh/java/licensing/)
 - [技术支持](/pdf/zh/java/technical-support/)

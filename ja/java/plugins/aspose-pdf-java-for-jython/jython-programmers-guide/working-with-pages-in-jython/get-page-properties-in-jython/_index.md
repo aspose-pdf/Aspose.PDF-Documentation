@@ -1,19 +1,20 @@
 ---
-title: Jythonでページプロパティを取得する
+title: "Jython でのページプロパティの取得"
+linktitle: "Jython でのページプロパティの取得"
 type: docs
 weight: 50
 url: /ja/java/get-page-properties-in-jython/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用した Jython で、PDF ドキュメント内の個々のページのプロパティを取得する方法を探ります。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - ページプロパティの取得
 
-## Aspose.PDF - ページプロパティを取得する
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。サンプルコードは以下の通りです。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認します。ここにサンプルコードがあります。
+マクロ 'code' のレンダリングエラー: パラメータ lang に無効な値が指定されました。
 
-スクリプトやコードスニペットのコメントを翻訳します。
+## 実行コードのダウンロード
 
-## 実行コードをダウンロード
-
-以下のいずれかのソーシャルコーディングサイトから実行コードをダウンロードできます：
+以下に記載されたソーシャルコーディングサイトのいずれかから実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)
