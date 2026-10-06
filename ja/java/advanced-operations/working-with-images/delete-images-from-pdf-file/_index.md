@@ -1,64 +1,29 @@
 ---
-title: PDFファイルから画像を削除
-linktitle: 画像を削除
+title: "Java を使用した PDF ファイルから画像の削除"
+linktitle: "画像の削除"
 type: docs
 weight: 20
 url: /ja/java/delete-images-from-pdf-file/
-description: このセクションでは、Aspose.PDF for Javaを使用してPDFファイルから画像を削除する方法を説明します。
-lastmod: "2021-06-05"
+description: Java で PDF ファイルから埋め込み画像を削除する方法を学びます。
+lastmod: "2026-10-06"
+TechArticle: true
+AlternativeHeadline: "Java での PDF ファイルから埋め込み画像の削除"
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントから画像を削除する方法を示します。この例では、ページ画像コレクション内のインデックスに基づいて最初のページから画像リソースを削除し、変更されたドキュメントを保存します。
 ---
+PDF ページから埋め込み画像を削除する必要がある場合は、ページ画像リソースコレクションを使用してください。
 
-PDFファイルから画像を削除するには、Imagesコレクションのdelete(..)メソッドを使用します。
+## インデックスで埋め込み画像の削除
 
-1. Documentオブジェクトを作成し、入力PDFファイルを開きます。
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトの[Pages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page)コレクションから画像を保持しているページを取得します。
-1. 画像は、ページの[Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources)コレクションにあるImagesコレクションに保持されています。
-1. ImagesコレクションのDeleteメソッドを使用して画像を削除します。
-1. DocumentオブジェクトのSaveメソッドを使用して出力を保存します。
-
-以下のコードスニペットは、PDFファイルから画像を削除する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ターゲットの画像リソースに [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) からアクセスしてください。
+1. インデックスを使用して、ページ画像リソースコレクションから対象の画像を削除してください。
+1. 更新した PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.Color;
-import com.aspose.pdf.Document;
-import com.aspose.pdf.FontRepository;
-import com.aspose.pdf.FontStyles;
-import com.aspose.pdf.HorizontalAlignment;
-import com.aspose.pdf.PageNumberStamp;
-
-public class ExampleDeleteImages {
-
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void ExampleAddPageNumber() {
-
-        // ドキュメントを開く
-        Document pdfDocument = new Document(_dataDir + "PageNumberStamp.pdf");
-
-        // ページ番号スタンプを作成
-        PageNumberStamp pageNumberStamp = new PageNumberStamp();
-
-        // スタンプが背景かどうか
-        pageNumberStamp.setBackground(false);
-        pageNumberStamp.setFormat("Page # of " + pdfDocument.getPages().size());
-        pageNumberStamp.setBottomMargin (10);
-        pageNumberStamp.setHorizontalAlignment ( HorizontalAlignment.Center);
-        pageNumberStamp.setStartingNumber(1);
-        // テキストプロパティを設定
-        pageNumberStamp.getTextState().setFont (FontRepository.findFont("Arial"));
-        pageNumberStamp.getTextState().setFontSize (14.0F);
-        pageNumberStamp.getTextState().setFontStyle (FontStyles.Bold);        
-        pageNumberStamp.getTextState().setForegroundColor (Color.getAqua());
-
-        // 特定のページにスタンプを追加
-        pdfDocument.getPages().get_Item(1).addStamp(pageNumberStamp);
-
-        _dataDir = _dataDir + "PageNumberStamp_out.pdf";
-        // 出力ドキュメントを保存
-        pdfDocument.save(_dataDir);
-
+public static void deleteImage(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getPages().get_Item(1).getResources().getImages().delete(1);
+        document.save(outputFile.toString());
     }
 }
 ```

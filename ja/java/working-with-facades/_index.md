@@ -1,32 +1,40 @@
 ---
-title: com.aspose.pdf.facadesを使用する
-linktitle: Facadesの使用
+title: PDF Facades の操作
+linktitle: PDF Facades の操作
 type: docs
-weight: 80
+weight: 100
 url: /ja/java/working-with-facades/
-description: このセクションでは、PDFに関する一般的な操作を行うためのツールセットであるcom.aspose.pdf.facadesの使い方を説明します。
-lastmod: "2021-06-05"
+description: Java で Aspose.PDF Facades を使用して PDF コンテンツを編集し、フォームやアノテーションを管理し、セキュリティを適用し、ファイルに署名し、ページにスタンプを付け、ページをレンダリングし、PDF メタデータを検査する方法を学びます。
+is_node: true
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java で PDF Facades を使用してフォーム、署名、セキュリティ、スタンプ、ファイル処理を行います"
+Abstract: このセクションでは、簡素化された API を使用して、Java 用 Aspose.PDF Facades の利用方法と一般的な PDF ワークフローの処理方法を説明します。現在の Java 対応範囲には、フォーム、フォーム編集、アノテーション編集、コンテンツ編集、ファイル編集、ファイル情報、セキュリティ、署名、ファイルスタンプ、ビューアのレンダリング、スタンプ構築ワークフローが含まれます。
 ---
+Facades API は、下位レベルのドキュメントオブジェクトモデルを直接操作せずに、一般的な PDF タスクのための上位レベルヘルパーを提供します。
 
-Aspose.PDF Facadesは、PDFドキュメントの構造に深く入り込むことなく、さまざまな操作を実行できるクラスのセットです。
+このセクションを使用して、以下を学びます：
 
-このセクションでは、以下のことを学びます:
+- PDF フォームに記入し、編集する
+- アノテーションとコンテンツを操作する
+- PDF ファイルを結合、分割、再構築する
+- メタデータとページ情報を検査する
+- セキュリティ、署名、スタンプ、ページ番号を適用する
+- viewer facade を使用して PDF ページを画像にレンダリングする
 
-- [PdfFileEditorの使用](/pdf/ja/java/pdffileeditor-class/) - PDFファイルに対して操作を行うためのツール（分割、結合など）
-- [PdfFileMendの使用](/pdf/ja/java/pdffilemend-class/) - 既存のPDFドキュメントのページにテキストや画像を追加するためのツール
-- [PdfContentEditorの使用](/pdf/ja/java/pdfcontenteditor-class/) - PDFファイルの内容を編集するためのツール
-- [PdfAnnotationEditorの使用](/pdf/ja/java/pdfannotationeditor-class/) - PDFドキュメントの注釈（コメント）を扱うためのツール
+## Facade のセクション
 
-- [PdfBookmarEditorの使用](/pdf/ja/java/working-with-bookmarks-facades/) - ブックマークの作成、インポート、エクスポート、削除のためのツール
-- [Using PdfExtractor](/pdf/ja/java/pdfextractor-class/) - PDFドキュメントから画像とテキストを抽出するためのツール
-- [Using PdfFileSignature](/pdf/ja/java/pdffilesignature-class/) - 証明書でPDFファイルに署名するためのツール
-- [Using PdfConverter](/pdf/ja/java/pdfconverter-class/) - PDFファイルを画像（BMP、JPEG、PNG、TIFF）に変換するためのツール、およびその逆
-- [Using PdfFileInfo](/pdf/ja/java/pdffileinfo-class/) - PDFドキュメントのメタ情報にアクセスするためのツール
-- [Using PdfXmpMetadata](/pdf/ja/java/pdfxmpmetadata-class/) - XMPメタデータを操作するためのツール
-- [Using PdfFileSecurity](/pdf/ja/java/pdffilesecurity-class/) - PDFファイルの暗号化、復号化、および特権設定を操作するためのツール
-- [Using PdfFileStamp](/pdf/ja/java/pdffilestamp-class/) - ページや画像スタンプを操作するためのツール
-- [Using PdfViewer](/pdf/ja/java/pdfviewer-class/) - PDFの印刷を操作するためのツール
-- [Using Form](/pdf/ja/java/form-class/) - Acro Formsを操作するためのツール
+- [Form](/pdf/ja/java/form-class/)
+- [FormEditor](/pdf/ja/java/formeditor-class/)
+- [PdfAnnotationEditor](/pdf/ja/java/pdfannotationeditor-class/)
+- [PdfContentEditor](/pdf/ja/java/pdfcontenteditor-class/)
+- [PdfFileEditor](/pdf/ja/java/pdffileeditor-class/)
+- [PdfFileInfo](/pdf/ja/java/pdffileinfo-class/)
+- [PdfFileSecurity](/pdf/ja/java/pdffilesecurity-class/)
+- [PdfFileSignature](/pdf/ja/java/pdffilesignature-class/)
+- [PdfFileStamp](/pdf/ja/java/pdffilestamp-class/)
+- [PdfViewer](/pdf/ja/java/pdfviewer-class/)
+- [スタンプ](/pdf/ja/java/stamp-class/)

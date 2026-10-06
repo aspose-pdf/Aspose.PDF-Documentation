@@ -1,20 +1,20 @@
 ---
-title: PDFページを画像に変換する方法（Ruby）
+title: "Ruby での PDF ページの画像への変換"
+linktitle: "Ruby での PDF ページの画像への変換"
 type: docs
 weight: 20
 url: /ja/java/convert-pdf-pages-to-images-in-ruby/
-lastmod: "2021-06-05"
+description: "Aspose.PDF を使用した Ruby で PDF ページを画像に変換する方法を確認し、PDF から視覚コンテンツを簡単に抽出できるようになります。"
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - PDF ページを画像に変換
 
-## Aspose.PDF - PDFページを画像に変換
+PDF ドキュメントのすべてのページを画像に変換するには、**Aspose.PDF Java for Ruby** を使用して、単に **ConvertPagesToImages** モジュールを呼び出すだけです。
 
-**Aspose.PDF Java for Ruby**を使用してPDFドキュメントのすべてのページを画像に変換するには、単に**ConvertPagesToImages**モジュールを呼び出します。
-
-Rubyコード
+Ruby コード
 
 ```java
-
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
@@ -32,17 +32,17 @@ image_format_internal = Rjb::import('com.aspose.pdf.ImageFormatInternal')
 
 while converter.hasNextImage()
 
-    converter.getNextImage(data_dir + "image#{image_count}#{suffix}", image_format_internal.getJpeg())
+В В В  converter.getNextImage(data_dir + "image#{image_count}#{suffix}", image_format_internal.getJpeg())
 
-    image_count +=1
+В В В  image_count +=1
 
 end
 
-puts "PDFページが個別の画像に正常に変換されました！"
+puts "PDF pages are converted to individual images successfully!"
 ```
 
-## 実行可能コードのダウンロード
+## 実行中のコードのダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから**Convert PDF pages to Images (Aspose.PDF)**をダウンロードしてください。
+以下から **Convert PDF pages to Images (Aspose.PDF)** をダウンロードしてください：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Converter/convertpagestoimages.rb)

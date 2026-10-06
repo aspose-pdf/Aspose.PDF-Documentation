@@ -1,41 +1,41 @@
 ---
-title: PHPにJavaScriptを追加
+title: "PHP での JavaScript の追加"
+linktitle: "PHP での JavaScript の追加"
 type: docs
 weight: 10
 url: /ja/java/adding-javascript-in-php/
-lastmod: "2021-06-05"
+description: PHP と Aspose.PDF を使用して PDF ファイルに JavaScript を追加し、ドキュメントのインタラクティビティを向上させる方法を学びます。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF での JavaScript の追加
 
-## Aspose.PDF - JavaScriptの追加
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントに JavaScript を追加するには、単に **AddJavaScript** クラスを呼び出してください。
 
-**Aspose.PDF Java for PHP**を使用してPdfドキュメントにJavaScriptを追加するには、単に**AddJavaScript**クラスを呼び出します。
-
-PHPコード
+PHP コード
 
 ```php
-# PDFドキュメントを開く。
+# Open a pdf document.
 $doc = new Document($dataDir . "input1.pdf");
 
-# ドキュメントレベルでJavaScriptを追加
-# 望むJavaScript文でJavascriptActionをインスタンス化
+# Adding JavaScript at Document Level
+# Instantiate JavascriptAction with desried JavaScript statement
 $javaScript = new JavascriptAction("this.print({bUI:true,bSilent:false,bShrinkToFit:true});");
 
-# Documentの望むアクションにJavascriptActionオブジェクトを割り当てる
+# Assign JavascriptAction object to desired action of Document
 $doc->setOpenAction($javaScript);
 
-# ページレベルでJavaScriptを追加
+# Adding JavaScript at Page Level
 $doc->getPages()->get_Item(2)->getActions()->setOnOpen(new JavascriptAction("app.alert('page 2 is opened')"));
 $doc->getPages()->get_Item(2)->getActions()->setOnClose(new JavascriptAction("app.alert('page 2 is closed')"));
 
-# PDFドキュメントを保存
+# Save PDF Document
 $doc->save($dataDir . "JavaScript-Added.pdf");
 
-print "JavaScriptが正常に追加されました。出力ファイルを確認してください。";
+print "Added JavaScript Successfully, please check the output file.";
 ```
 
+**実行コードをダウンロード**
 
-**コードの実行をダウンロード**
-
-以下のいずれかのソーシャルコーディングサイトから**JavaScriptの追加 (Aspose.PDF)**をダウンロードしてください：
+「**JavaScript の追加 (Aspose.PDF)**」をダウンロードするには、以下のいずれかのソーシャルコーディングサイトから行なってください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithDocumentObject/AddJavascript.php)

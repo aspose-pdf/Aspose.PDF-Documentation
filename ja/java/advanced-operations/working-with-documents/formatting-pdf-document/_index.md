@@ -1,325 +1,213 @@
 ---
-
-title: PDFドキュメントのフォーマット
-linktitle: PDFドキュメントのフォーマット
+title: "Java での PDF ドキュメントのフォーマット"
+linktitle: "PDF ドキュメントのフォーマット"
 type: docs
-weight: 20
+weight: 11
 url: /ja/java/formatting-pdf-document/
-description: Aspose.PDF for JavaでPDFドキュメントをフォーマットします。次のコードスニペットを使用してタスクを解決してください。
-lastmod: "2021-06-05"
+description: "Java で PDF 文書の書式設定、フォントの埋め込み、ビューア設定の制御、表示オプションの調整方法を学びます。"
+lastmod: "2026-10-06"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java での PDF ドキュメントのウィンドウ、フォント、ズーム動作の設定"
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントをフォーマットする方法を説明します。ドキュメントウィンドウ設定の読み取りと更新、フォントの埋め込み、デフォルトフォントの設定、フォントの一覧表示、埋め込みフォントのサブセット化、初期ズームファクターの制御について扱います。
 ---
-## ドキュメントウィンドウとページ表示プロパティを取得する
+Aspose.PDF for Java のフォーマットには、ビューアの動作、フォントの埋め込み、および表示設定が含まれます。
 
-このトピックでは、ドキュメントウィンドウ、ビューアアプリケーションのプロパティ、およびページがどのように表示されるかを理解するのに役立ちます。
+## ドキュメントウィンドウ設定の取得
 
-これらの異なるプロパティを設定するには、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスを使用してPDFファイルを開きます。これで、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)オブジェクトのメソッドを取得できます。例えば、
+この例を使用して、既存の PDF ドキュメントに保存されている現在のビューア設定を検査してください。
 
-- [IsCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isCenterWindow--) – ドキュメントウィンドウを画面の中央に配置します。デフォルト: false。
-- [SetDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-) – 読み順。
- この機能は、ページが並べて表示されるときのレイアウト方法を決定します。デフォルト: 左から右。
-
-- [isDisplayDocTitle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#isDisplayDocTitle--) – ドキュメントのタイトルをドキュメントウィンドウのタイトルバーに表示します。デフォルト: false (タイトルが表示されます)。
-- [setHideMenuBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-) – ドキュメントウィンドウのメニューバーを非表示または表示します。デフォルト: false (メニューバーが表示されます)。
-- [setHideToolBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-) – ドキュメントウィンドウのツールバーを非表示または表示します。デフォルト: false (ツールバーが表示されます)。
-- [setHideWindowUI](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideWindowUI-boolean-) – スクロールバーなどのドキュメントウィンドウの要素を非表示または表示します。デフォルト: false (UI要素が表示されます)。
-
-- [setNonFullScreenPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setNonFullScreenPageMode-int-) – ドキュメントが全ページモードで表示されないときにどのように表示されるかを決定します。- [setPageLayout](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageLayout-int-) – ページレイアウト。
-- [setPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageMode-int-) – ドキュメントが最初に開かれたときの表示方法。オプションはサムネイルを表示、全画面、添付ファイルパネルを表示。
-
-次のコードスニペットは、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) クラスを使用してプロパティを取得する方法を示しています。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ドキュメントから必要なウィンドウおよび表示プロパティを読み取ってください。
+1. 現在の設定を検査またはデバッグのために出力してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleFormatting {
-
-  private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-  public static void GetDocumentWindowAndPageDisplayProperties() {
-
-    // ドキュメントを開く
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-
-    // 異なるドキュメントプロパティを取得する
-    // ドキュメントウィンドウの位置 - デフォルト: false
-    System.out.printf("CenterWindow : " + pdfDocument.isCenterWindow());
-
-    // 主な読み取り順序; ページの位置を決定する
-    // 並べて表示したとき - デフォルト: L2R
-    System.out.printf("Direction :- " + pdfDocument.getDirection());
-
-    // ウィンドウのタイトルバーにドキュメントタイトルを表示するかどうか。
-    // falseの場合、タイトルバーはPDFファイル名を表示する - デフォルト: false
-    System.out.printf("DisplayDocTitle :- " + pdfDocument.isDisplayDocTitle());
-
-    // ドキュメントウィンドウのサイズを
-    // 最初に表示されたページのサイズに合わせてリサイズするかどうか - デフォルト: false
-    System.out.printf("FitWindow :- " + pdfDocument.isFitWindow());
-
-    // ビューアアプリケーションのメニューバーを非表示にするかどうか - デフォルト: false
-    System.out.printf("HideMenuBar :-" + pdfDocument.isHideMenubar());
-
-    // ビューアアプリケーションのツールバーを非表示にするかどうか - デフォルト: false
-    System.out.printf("HideToolBar :-" + pdfDocument.isHideToolBar());
-
-    // スクロールバーのようなUI要素を非表示にして
-    // ページの内容のみを表示するかどうか - デフォルト: false
-    System.out.printf("HideWindowUI :-" + pdfDocument.isHideWindowUI());
-
-    // ドキュメントのページモード。全画面モードを終了するときの表示方法。
-    System.out.printf("NonFullScreenPageMode :-" + pdfDocument.getNonFullScreenPageMode());
-
-    // ページレイアウト、つまりシングルページ、1列
-    System.out.printf("PageLayout :-" + pdfDocument.getPageLayout());
-
-    // ドキュメントを開いたときの表示方法。
-    System.out.printf("pageMode :-" + pdfDocument.getPageMode());
-
-  }
-
-```
-
-## ドキュメントウィンドウとページ表示プロパティを設定する
-
-このトピックでは、ドキュメントウィンドウ、ビューアアプリケーション、およびページ表示のプロパティを設定する方法を説明します。
-
-これらの異なるプロパティを設定するには:
-
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) クラスを使用してPDFファイルを開きます。
-1. Documentオブジェクトのプロパティを設定します。
-1. Saveメソッドを使用して更新されたPDFファイルを保存します。
-
-利用可能なプロパティは次のとおりです:
-
-- [setCenterWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setCenterWindow-boolean-)
-- [setDirection](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDirection-int-)
-- [setDisplayDocTitle](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setDisplayDocTitle-boolean-)
-- [setFitWindow](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setFitWindow-boolean-)
-- [setHideMenuBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideMenubar-boolean-)
-
-- [setHideToolBar](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideToolBar-boolean-)
-- [setHideWindowUI](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setHideWindowUI-boolean-)
-- [setNonFullScreenPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setNonFullScreenPageMode-int-)
-- [setPageLayout](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageLayout-int-)
-- [setPageMode](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document#setPageMode-int-)
-
-次のコードスニペットは、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) クラスを使用してプロパティを設定する方法を示しています。
-
-```java
-  public static void SetDocumentWindowAndPageDisplayProperties() {
-
-    // ドキュメントを開く
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    
-    // 異なるドキュメントプロパティを設定する
-    // ドキュメントウィンドウの位置を指定する - デフォルト: false
-    pdfDocument.setCenterWindow(true);
-    
-    // 主な読み取り順序を指定する; ページの位置を決定する
-    // 並べて表示する場合 - デフォルト: L2R
-    pdfDocument.setDirection(com.aspose.pdf.Direction.R2L);
-    
-    // ウィンドウのタイトルバーにドキュメントタイトルを表示するかどうかを指定する
-    // falseの場合、タイトルバーにはPDFファイル名が表示される - デフォルト: false
-    pdfDocument.setDisplayDocTitle(true);
-    
-    // ドキュメントウィンドウのサイズを最初に表示されたページのサイズに合わせて
-    // リサイズするかどうかを指定する - デフォルト: false
-    pdfDocument.setFitWindow(true);
-    
-    // ビューアアプリケーションのメニューバーを非表示にするかどうかを指定する - デフォルト:
-    // false
-    pdfDocument.setHideMenubar(true);
-    
-    // ビューアアプリケーションのツールバーを非表示にするかどうかを指定する - デフォルト:
-    // false
-    pdfDocument.setHideToolBar(true);
-    
-    // UI要素（スクロールバーなど）を非表示にして
-    // ページの内容だけを表示するかどうかを指定する - デフォルト: false
-    pdfDocument.setHideWindowUI(true);
-    
-    // ドキュメントのページモード。全画面モードを終了したときに
-    // ドキュメントをどのように表示するかを指定する
-    pdfDocument.setNonFullScreenPageMode(com.aspose.pdf.PageMode.UseOC);
-    
-    // ページレイアウトを指定する 例: シングルページ、1カラム
-    pdfDocument.setPageLayout(com.aspose.pdf.PageLayout.TwoColumnLeft);
-    
-    // ドキュメントを開くときにどのように表示するかを指定する
-    // 例: サムネイルを表示、全画面表示、添付ファイルパネルを表示
-    pdfDocument.setPageMode(com.aspose.pdf.PageMode.UseThumbs);
-    
-    // 更新されたPDFファイルを保存する
-    pdfDocument.save(_dataDir + "UpdatedFile_output.pdf");
-
-  }
-```
-
-## 既存のPDFファイルへのフォントの埋め込み
-
-PDFリーダーは、ドキュメントが表示されるプラットフォームに関わらず同じ方法で表示できるように、[14のコアフォント](http://en.wikipedia.org/wiki/Portable_Document_Format#Fonts)をサポートしています。PDFにコアフォント以外のフォントが含まれている場合、フォントの置換を避けるためにフォントを埋め込む必要があります。
-
-Aspose.PDF for Javaは、既存のPDFドキュメントへのフォントの埋め込みをサポートしています。完全なフォントまたはサブセットを埋め込むことができます。フォントを埋め込むには：
-
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) クラスを使用して、既存のPDFファイルを開きます。
-1. [com.aspose.pdf.Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font) クラスを使用してフォントを埋め込みます。
-   1. setEmbedded(true) メソッドは完全なフォントを埋め込みます。
-   1. pageFont.isSubset(true) メソッドはフォントのサブセットを埋め込みます。
-
-フォントのサブセットは、使用される文字のみを埋め込み、短い文やスローガンでフォントが使用される場合に便利です。例えば、企業のフォントがロゴに使用されるが、本文には使用されない場合などです。
- ファイルサイズを削減するために、サブセットを使用します。
-
-しかし、本文にカスタムフォントを使用する場合、フォント全体を埋め込んでください。
-
-以下のコードスニペットは、PDFファイルにフォントを埋め込む方法を示しています。
-```java
-public static void EmbeddingFontsInAnExistingPDFFile() {
-    // ドキュメントを開く
-    Document pdfDocument = new Document(_dataDir + "sample.pdf");
-    // すべてのページを反復処理
-    for (com.aspose.pdf.Page page : (Iterable<com.aspose.pdf.Page>) pdfDocument.getPages()) {
-      if (page.getResources().getFonts() != null) {
-        for (com.aspose.pdf.Font pageFont : (Iterable<com.aspose.pdf.Font>) page.getResources().getFonts()) {
-          // フォントが既に埋め込まれているか確認
-          if (!pageFont.isEmbedded())
-            pageFont.setEmbedded(true);
-        }
-      }
-
-      // フォームオブジェクトを確認
-      for (com.aspose.pdf.XForm form : (Iterable<com.aspose.pdf.XForm>) page.getResources().getForms()) {
-        if (form.getResources().getFonts() != null) {
-          for (com.aspose.pdf.Font formFont : (Iterable<com.aspose.pdf.Font>) form.getResources().getFonts()) {
-            // フォントが埋め込まれているか確認
-            if (!formFont.isEmbedded())
-              formFont.setEmbedded(true);
-          }
-        }
-      }
+public static void getDocumentWindow(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        System.out.println("CenterWindow: " + document.isCenterWindow());
+        System.out.println("Direction: " + document.getDirection());
+        System.out.println("DisplayDocTitle: " + document.isDisplayDocTitle());
+        System.out.println("FitWindow: " + document.isFitWindow());
+        System.out.println("HideMenuBar: " + document.isHideMenubar());
+        System.out.println("HideToolBar: " + document.isHideToolBar());
+        System.out.println("HideWindowUI: " + document.isHideWindowUI());
+        System.out.println("NonFullScreenPageMode: " + document.getNonFullScreenPageMode());
+        System.out.println("PageLayout: " + document.getPageLayout());
+        System.out.println("PageMode: " + document.getPageMode());
     }
-    // 更新されたPDFファイルを保存
-    pdfDocument.save(_dataDir + "UpdatedFile_output.pdf");
-  }
+}
 ```
 
-## PDF作成時のフォントの埋め込み
+## ドキュメントウィンドウの設定
 
-Adobe Readerがサポートする14のコアフォント以外のフォントを使用する必要がある場合、PDFファイルを生成する際にフォントの説明を埋め込む必要があります。フォント情報が埋め込まれていない場合、Adobe Readerはオペレーティングシステムからそれを取得します（システムにインストールされている場合）、またはPDFのフォント記述子に従って代用フォントを構成します。埋め込まれたフォントはホストマシンにインストールされている必要があることに注意してください。以下のコードの場合、「Univers Condensed」フォントがシステムにインストールされています。
+この例では、互換性のあるビューアで開かれたときに PDF の表示方法を更新します。
 
-フォント情報をPDFファイルに埋め込むために、[Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/Font)クラスのsetEmbeddedプロパティを使用します。このプロパティの値を‘true’に設定すると、PDFに完全なフォントファイルが埋め込まれ、PDFファイルのサイズが増加することがわかっています。以下はフォント情報をPDFに埋め込むために使用できるコードスニペットです。
-
-```java
-public static void EmbeddingFontsWhileCreatingPDF() {
-
-    // 空のコンストラクタを呼び出してPDFオブジェクトをインスタンス化
-    com.aspose.pdf.Document document = new com.aspose.pdf.Document();
-
-    // Pdfオブジェクトにセクションを作成
-    com.aspose.pdf.Page page = document.getPages().add();
-
-    com.aspose.pdf.TextFragment fragment = new com.aspose.pdf.TextFragment("");
-
-    com.aspose.pdf.TextSegment segment = new com.aspose.pdf.TextSegment(" This is a sample text using Custom font.");
-    com.aspose.pdf.TextState ts = new com.aspose.pdf.TextState();
-    ts.setFont(FontRepository.findFont("Univers Condensed"));
-    ts.getFont().setEmbedded(true);
-    segment.setTextState(ts);
-    fragment.getSegments().add(segment);
-    page.getParagraphs().add(fragment);
-
-    // 更新されたPDFファイルを保存
-    document.save(_dataDir + "UpdatedFile_output.pdf");
-  }
-```
-
-## PDFを保存するときのデフォルトフォント名を設定する
-
-PDFドキュメントにフォントが含まれており、そのフォントがドキュメント自体やデバイスに存在しない場合、APIはこれらのフォントをデフォルトフォントに置き換えます。フォントが利用可能な場合（デバイスにインストールされているか、ドキュメントに埋め込まれている場合）、出力PDFは同じフォントを持つべきです（デフォルトフォントに置き換えられるべきではありません）。デフォルトフォントの値にはフォントの名前が含まれている必要があります（フォントファイルへのパスではありません）。PDFとしてドキュメントを保存する際にデフォルトフォント名を設定する機能を実装しました。以下のコードスニペットは、デフォルトフォントを設定するために使用できます。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 必要なウィンドウ、レイアウト、ページモードの設定を行ってください。
+1. 更新した PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
 ```java
-public static void SetDefaultFontNameWhileSavingPDF() {
-
-    // 既存のPDFドキュメントをロードする
-    Document document = new Document("input.pdf");
-
-    String newName = "Arial";
-
-    // PDF形式の保存オプションを初期化する
-    PdfSaveOptions ops = new PdfSaveOptions();
-
-    // デフォルトフォント名を設定する
-    ops.setDefaultFontName(newName);
-
-    // PDFファイルを保存する
-    document.save(_dataDir + "output_out.pdf", ops);
-  }
-```
-
-
-## PDFドキュメントからすべてのフォントを取得する
-
-PDFドキュメントからすべてのフォントを取得したい場合、[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document)クラスで提供されている**Document.getFontUtilities().getAllFonts()**メソッドを使用することができます。既存のPDFドキュメントからすべてのフォントを取得するための次のコードスニペットを確認してください:
-
-```java
-public static void GetAllFontsFromPDFDocument() {
-
-    // 既存のPDFドキュメントをロードする
-    Document document = new Document(_dataDir + "sample.pdf");
-
-    // ドキュメントからすべてのフォントを取得する
-    com.aspose.pdf.Font[] fonts = document.getFontUtilities().getAllFonts();
-    for (com.aspose.pdf.Font f : fonts) {
-      System.out.println(f.getFontName());
+public static void setDocumentWindow(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setCenterWindow(true);
+        document.setDirection(Direction.R2L);
+        document.setDisplayDocTitle(true);
+        document.setFitWindow(true);
+        document.setHideMenubar(true);
+        document.setHideToolBar(true);
+        document.setHideWindowUI(true);
+        document.setNonFullScreenPageMode(PageMode.UseOC);
+        document.setPageLayout(PageLayout.TwoColumnLeft);
+        document.setPageMode(PageMode.UseThumbs);
+        document.save(outputFile.toString());
     }
-  }
+}
 ```
 
-## PDFファイルのズーム倍率を取得・設定する
+## 既存の PDF にフォントを埋め込む
 
-場合によっては、PDFドキュメントのズーム倍率を設定または取得したいことがあります。Aspose.PDFを使用すると、この要件を簡単に達成できます。
+ドキュメントに必要なフォントを含める必要がある場合は、他のシステムでの表示をより確実にするためにこの方法を使用してください。
 
-[GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/GoToAction)オブジェクトを使用すると、PDFファイルに関連付けられたズーム値を取得することができます。
- Similarly, it can be used to set a file's Zoom factor.  
-同様に、ファイルのズーム係数を設定するために使用できます。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 標準フォントの埋め込みを有効にして、各 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) で使用されているフォントを順に処理してください。
+1. 埋め込み対象として、非埋め込みの [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) オブジェクトをマークしてください。
+1. 更新されたドキュメントを保存してください。
 
 ```java
-  public static void GetSetZoomFactorOfPDFFile() {
-    // 既存のPDFドキュメントをロードする
-    Document document = new Document(_dataDir + "sample.pdf");
-    double zoom = .5;
-    // ドキュメントのズーム係数を設定する
-    GoToAction actionzoom = new GoToAction(new XYZExplicitDestination(document.getPages().get_Item(1),
-        document.getPages().get_Item(1).getMediaBox().getWidth(),
-        document.getPages().get_Item(1).getMediaBox().getHeight(), zoom));
-
-    // ページ幅に合わせてズームするアクションを設定する
-    GoToAction actionFittoWidth = new GoToAction(new FitHExplicitDestination(document.getPages().get_Item(1),
-        document.getPages().get_Item(1).getMediaBox().getWidth()));
-
-    // ページの高さに合わせてズームするアクションを設定する
-    GoToAction actionFittoHeight = new GoToAction(new FitVExplicitDestination(document.getPages().get_Item(1),
-        document.getPages().get_Item(1).getMediaBox().getHeight()));
-
-    document.setOpenAction(actionzoom);
-    document.setOpenAction(actionFittoWidth);
-    document.setOpenAction(actionFittoHeight);
+public static void embeddedFonts(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.setEmbedStandardFonts(true);
+        for (Page page : document.getPages()) {
+            for (Font pageFont : page.getResources().getFonts()) {
+                if (!pageFont.isEmbedded()) {
+                    pageFont.setEmbedded(true);
+                }
+            }
+        }
+        document.save(outputFile.toString());
+    }
+}
 ```
 
-以下のコードスニペットは、PDFファイルのズーム係数を取得する方法を示しています。
+## 新しい PDF を作成する際にフォントを埋め込む
+
+この例では、新しい PDF を作成し、テキスト コンテンツに対して最初から埋め込みフォントを割り当てます。
+
+1. 新しい PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成し、[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加してください。
+1. 必要な [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)、[TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/)、および [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) を作成してください。
+1. ターゲットの [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) をリポジトリから解決し、埋め込みとしてマークしてください。
+1. テキスト コンテンツをページに追加し、出力ドキュメントを保存してください。
 
 ```java
-    // 新しいDocumentオブジェクトをインスタンス化
-    Document doc1 = new Document(_dataDir + "Zoomed_actionzoom.pdf");
-    // GoToActionオブジェクトを作成
-    GoToAction action = (GoToAction) doc1.getOpenAction();
-    // PDFファイルのズーム係数を取得
-    System.out.println(((XYZExplicitDestination) action.getDestination()).getZoom());
+public static void embeddedFontsInNewDocument(Path outputFile) {
+    try (Document document = new Document()) {
+        try (Page page = document.getPages().add()) {
+            TextFragment fragment = new TextFragment("");
+            TextSegment segment = new TextSegment(" This is a sample text using Custom font.");
+            TextState textState = new TextState();
+            Font font = FontRepository.findFont("Arial");
+            font.setEmbedded(true);
+            textState.setFont(font);
+            segment.setTextState(textState);
+            fragment.getSegments().add(segment);
+            page.getParagraphs().add(fragment);
+        }
+        document.save(outputFile.toString());
+    }
+}
+```
 
-    // 更新されたPDFファイルを保存
-    document.save(_dataDir + "UpdatedFile_output.pdf");
-  }
+## PDF 出力のデフォルトフォントの設定
+
+出力生成時に、保存されたドキュメントが特定のフォントにフォールバックする必要がある場合は、この方法を使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) を作成し、デフォルトのフォント名を設定してください。
+1. 設定された保存オプションでドキュメントを保存してください。
+
+```java
+public static void setDefaultFont(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        PdfSaveOptions saveOptions = new PdfSaveOptions();
+        saveOptions.setDefaultFontName("Arial");
+        document.save(outputFile.toString(), saveOptions);
+    }
+}
+```
+
+## PDF で使用されているすべてのフォントの取得
+
+この例では、ドキュメントで検出されたすべてのフォントを一覧表示し、エクスポートまたはファイルの更新を行う前にフォントの使用状況を監査できるようにします。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. ドキュメントフォントユーティリティで返されるフォントを列挙してください。
+1. 検出された各 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) の名前を出力してください。
+
+```java
+public static void getAllFonts(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Font font : document.getFontUtilities().getAllFonts()) {
+            System.out.println(font.getFontName());
+        }
+    }
+}
+```
+
+## フォントをサブセット化して埋め込みの改善
+
+ドキュメントの使用に合わせて埋め込みフォントデータを調整しながら、フォントのペイロードを削減したい場合にこのアプローチを使用してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 必要な [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) 値とともに、ドキュメントフォントユーティリティでフォントサブセットを実行してください。
+1. 最適化されたドキュメントを保存してください。
+
+```java
+public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
+        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## ドキュメントを開くときのズーム倍率の設定
+
+この例では、PDF を開くときに適用される初期ズームレベルを設定します。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) と [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/) を作成してください。
+1. アクションをドキュメントのオープン時アクションとして割り当てて、結果を保存してください。
+
+```java
+public static void setZoomFactor(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0.0, 0.0, 0.5));
+        document.setOpenAction(action);
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## ドキュメントのオープン時ズーム率の取得
+
+この例を使用して、PDF がすでにオープン時アクションに対して明示的なズーム率を定義しているかどうかを確認してください。
+
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. オープン時アクションが [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) かつ [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/) を持っているかどうかを確認してください。
+1. 設定されたズーム値を出力するか、ズームが設定されていないことを報告してください。
+
+```java
+public static void getZoomFactor(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        if (document.getOpenAction() instanceof GoToAction action
+                && action.getDestination() instanceof XYZExplicitDestination destination) {
+            System.out.println("Zoom: " + destination.getZoom());
+        } else {
+            System.out.println("Zoom: not set");
+        }
+    }
 }
 ```

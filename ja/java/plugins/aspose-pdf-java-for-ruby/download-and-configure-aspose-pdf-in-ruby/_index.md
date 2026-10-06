@@ -1,20 +1,21 @@
 ---
-title: Aspose.PdfをRubyでダウンロードして設定
+title: "Ruby での Aspose.Pdf をダウンロードし、構成"
+linktitle: "Ruby での Aspose.Pdf をダウンロードし、構成"
 type: docs
 weight: 10
 url: /ja/java/download-and-configure-aspose-pdf-in-ruby/
-lastmod: "2021-06-05"
+description: シームレスな PDF 管理のためにライブラリをダウンロードし構成することで、Ruby で Aspose.PDF を開始できます。
+lastmod: "2026-10-06"
 ---
-
 ## 必要なライブラリのダウンロード
 
-以下に記載されている必要なライブラリをダウンロードします。これらはRuby用Aspose.PDF Javaの例を実行するために必要です。
+以下に示す必要なライブラリをダウンロードしてください。これらは Ruby 用 Aspose.PDF Java のサンプルを実行するために必要です。
 
 - [Aspose.PDF for Java コンポーネント](https://downloads.aspose.com/pdf/java)
 
-## ソーシャルコーディングサイトからの例のダウンロード
+## ソーシャルコーディングサイトからサンプルのダウンロード
 
-以下に記載されたソーシャルコーディングサイトで、実行可能な例のリリースをダウンロードできます。
+以下に示すソーシャルコーディングサイトから、実行例の次のリリースをダウンロードできます：
 
 GitHub
 

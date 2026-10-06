@@ -1,145 +1,141 @@
 ---
-title: JavaでPDFをMicrosoft Wordドキュメントに変換
-linktitle: PDFをWordに変換
+title: "Java で PDF を Word に変換"
+linktitle: "PDF を Word に変換"
 type: docs
 weight: 10
 url: /ja/java/convert-pdf-to-word/
-lastmod: "2021-11-19"
-description: Aspose.PDF for Javaを使用して、PDFファイルをDOCおよびDOCX形式に簡単かつ完全に制御して変換します。Microsoft WordドキュメントへのPDF変換を調整する方法を学びましょう。
+lastmod: "2026-10-06"
+description: Aspose.PDF を使用して、Java で PDF ファイルを DOC および DOCX に変換する方法を学び、文書の編集と再利用を容易にします。
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java での PDF から Word への変換"
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ファイルを Microsoft Word 形式に変換する方法を説明します。DOC 出力、DOCX 出力、拡張フロー DOCX 変換、改行の保持、箇条書きの認識、および `DocSaveOptions` による画像解像度の制御について解説します。
 ---
+Aspose.PDF for Java では、さまざまな認識およびレイアウトオプションを使用して、PDF ドキュメントを Microsoft Word 形式にエクスポートできます。[`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) を使用して、PDF のテキスト、リスト、画像が Word 出力にどのようにマッピングされるかを制御してください。
 
-## 概要
+## PDF から DOC への変換
 
-この記事では、Javaを使用してPDFをWordに変換する方法を説明します。コードは非常に簡単で、PDFをDocumentクラスにロードし、それをMicrosoft Word DOCまたはDOCX形式として出力するだけです。以下のトピックをカバーしています
+PDF ドキュメントをレガシー DOC 形式にエクスポートする必要がある場合は、この例を使用してください。コードでは、`DocSaveOptions` を作成し、形式を `Doc` に設定したうえで、オプションを共有の保存メソッドに渡します。
 
-- [Java PDFをWordに変換](#convert-pdf-to-doc)
-- [Java PDFをDOCに変換](#convert-pdf-to-doc)
-- [Java PDFをDOCXに変換](#convert-pdf-to-docx)
-- [Java PDFをWordに変換](#convert-pdf-to-docx)
-- [Java PDFをDOCに変換](#convert-pdf-to-doc)
-- [Java PDFをDOCXに変換](#convert-pdf-to-docx)
-- [Java PDFファイルをWord DOCまたはWord DOCXに変換する方法](#convert-pdf-to-doc) または [Word DOCX](#convert-pdf-to-docx)
-
-- [Java PDFをWordライブラリ、APIまたはコードを使用して、PDFからプログラムでWordドキュメントを保存、生成または作成](#convert-pdf-to-docx)
-
-## PDFをDOCに変換
-
-最も人気のある機能の1つは、PDFをMicrosoft Word DOCに変換することです。これにより、内容を簡単に操作できます。Aspose.PDF for Javaを使用すると、PDFファイルをDOCに変換できます。
-
-**Aspose.PDF for Java**は、PDFドキュメントをゼロから作成することができ、既存のPDFドキュメントを更新、編集、操作するための優れたツールキットです。重要な機能の1つは、ページやPDFドキュメント全体を画像に変換する能力です。もう一つの人気のある機能は、PDFをMicrosoft Word DOCに変換することで、内容を簡単に操作できるようになります。（ほとんどのユーザーはPDFドキュメントを編集できませんが、Microsoft Wordではテーブル、テキスト、画像を簡単に操作できます。）
-
-物事を簡単で理解しやすくするために、Aspose.PDF for Javaは、ソースPDFファイルをDOCファイルに変換するための2行のコードを提供しています。
-
-以下のJavaコードスニペットは、PDFファイルをDOC形式に変換するプロセスを示しています。
-
-1. ソースPDFドキュメントを使用して[Document](https://reference.aspose.com/page/java/com.aspose.page/document)オブジェクトのインスタンスを作成します。
-2. **Document.save()**メソッドを呼び出して**SaveFormat.Doc**形式で保存します。
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) を作成し、出力形式を `Doc` に設定してください。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出してください。その結果、PDF は Microsoft Word のバイナリ ドキュメント形式にエクスポートされます。
+1. 変換された DOC ファイルを保存してください。
 
 ```java
-public static void convertPDFtoWord() {
-    // ソースPDFドキュメントを開く
-    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
-    // ファイルをMSドキュメント形式で保存する
-    document.save(DATA_DIR + "PDFToDOC_out.doc", SaveFormat.Doc);
-    document.close();
+public static void convertPdfToDoc(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocSaveOptions saveOptions = new DocSaveOptions();
+        saveOptions.setFormat(DocSaveOptions.DocFormat.Doc);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-## DocSaveOptionsクラスを使用する
+## PDF から DOCX への変換
 
-[DocSaveOptionsクラス](https://reference.aspose.com/pdf/java/com.aspose.pdf/DocSaveOptions)は、PDFファイルをDOC形式に変換するプロセスを改善する多くのプロパティを提供します。これらのプロパティの中で、ModeはPDFコンテンツの認識モードを指定することができます。このプロパティには、RecognitionMode列挙から任意の値を指定できます。これらの値のそれぞれには特定の利点と制限があります。
+PDF ドキュメントを DOCX ファイルとしてエクスポートする必要がある場合は、この例を使用してください。DOCX は広くサポートされており、編集が容易であるため、ほとんどの新しいワードプロセッシングワークフローで推奨される形式です。
 
-- [Textbox](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextBoxField)モードは高速で、PDFファイルの元の外観を保持するのに適していますが、結果のドキュメントの編集可能性は制限される可能性があります。
- 元のPDFで視覚的にグループ化されたテキストのブロックは、出力ドキュメントではテキストボックスに変換されます。これにより、出力ドキュメントが元のものと非常によく似たものになり、見た目は良くなりますが、テキストボックスのみで構成されているため、Microsoft Wordでの編集が難しくなる可能性があります。
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) を作成し、出力形式を `DocX` に設定してください。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出してください。これにより、PDF コンテンツが Office Open XML Word ドキュメントとしてエクスポートされます。
+1. 結果の DOCX ファイルを保存してください。
 
-- Flowは完全認識モードであり、エンジンはグループ化と多層分析を行い、著者の意図に応じて元のドキュメントを復元し、簡単に編集可能なドキュメントを生成します。制限として、出力ドキュメントは元のものとは異なる見た目になる可能性があります。
-
-- RelativeHorizontalProximityプロパティは、テキスト要素間の相対的な近接性を制御するために使用され、距離がフォントサイズによって規格化されることを意味します。大きなフォントは、音節間の距離が大きくても単一の全体とみなされることがあります。これはフォントサイズのパーセンテージとして指定され、例えば、1 = 100%ということです。つまり、12ptの2つの文字が12pt離れて配置されている場合、それらは近接しているとみなされます。
-
-- RecognitionBulletsは、変換中に箇条書きの認識をオンにするために使用されます。
 ```java
-public static void convertPDFtoWordDocAdvanced() {
-    Path pdfFile = Paths.get(DATA_DIR.toString(), "PDF-to-DOC.pdf");
-    Path docFile = Paths.get(DATA_DIR.toString(), "PDF-to-DOC.doc");
-    Document document = new Document(pdfFile.toString());
-    DocSaveOptions saveOptions = new DocSaveOptions();
-
-    // 出力形式をDOCとして指定
-    saveOptions.setFormat(DocSaveOptions.DocFormat.Doc);
-    // 認識モードをFlowとして設定
-    saveOptions.setMode(DocSaveOptions.RecognitionMode.Flow);
-
-    // 水平方向の近接度を2.5に設定
-    saveOptions.setRelativeHorizontalProximity(2.5f);
-
-    // 変換プロセス中に箇条書きを認識するように値を有効にする
-    saveOptions.setRecognizeBullets(true);
-
-    document.save(docFile.toString(), saveOptions);
-    document.close();
+public static void convertPdfToDocx(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocSaveOptions saveOptions = new DocSaveOptions();
+        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-{{% alert color="success" %}}
-**PDFをDOCにオンラインで変換してみてください**
+## 拡張フロー認識による PDF から DOCX への変換
 
-Aspose.PDF for Javaは、オンラインで無料のアプリケーション["PDF to Word"](https://products.aspose.app/pdf/conversion/pdf-to-doc)を提供しています。ここでは、その機能と品質を調査することができます。
+Word のエクスポートで、固定された視覚レイアウトではなく、流れるような編集可能なコンテンツを優先すべき場合は、この例を使用してください。
 
-[![Convert PDF to DOC](pdf_to_word.png)](https://products.aspose.app/pdf/conversion/pdf-to-doc)
-{{% /alert %}}
-
-## PDFをDOCXに変換
-
-DocFormat列挙型は、Wordドキュメントの出力形式としてDOCXを選択するオプションも提供します。ソースPDFファイルをDOCX形式にレンダリングするには、以下のコードスニペットを使用します。
-
-## PDFをDOCXに変換する方法
-
-以下のJavaコードスニペットは、PDFファイルをDOCX形式に変換するプロセスを示しています。
-
-1. ソースPDFドキュメントで[Document](https://reference.aspose.com/page/java/com.aspose.page/document)オブジェクトのインスタンスを作成します。
-2. **Document.save()**メソッドを呼び出して**SaveFormat.DocX**形式で保存します。
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. `DocX` 出力用に [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) を作成してください。
+1. コンバータが DOCX 生成中に高度なフロー認識を使用するように、`setMode(DocSaveOptions.RecognitionMode.EnhancedFlow)` を有効にしてください。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出して、変換された DOCX 出力を保存してください。
 
 ```java
-public static void convertPDFtoWord_DOCX_Format() {
-    // ソースPDFドキュメントを開く
-    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
-    // 結果のDOCファイルを保存する
-    document.save(DATA_DIR + "saveOptionsOutput_out.doc", SaveFormat.DocX);
-    document.close();
+public static void convertPdfToDocxAdvanced(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocSaveOptions saveOptions = new DocSaveOptions();
+        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
+        saveOptions.setMode(DocSaveOptions.RecognitionMode.EnhancedFlow);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-[DocSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions)クラスには、結果のドキュメントの形式を指定する機能を提供するFormatというプロパティがあります。すなわち、DOCまたはDOCXです。
- PDFファイルをDOCX形式に変換するには、DocSaveOptions.DocFormat列挙からDocx値を渡してください。
+## 改行を保持した PDF から DOCX への変換
 
-以下のコードスニペットをご覧ください。これはPDFファイルをJavaでDOCX形式に変換する機能を提供します。
+ソース PDF の改行を Word 出力で保持する必要がある場合は、この例を使用してください。
+
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. `DocX` エクスポート用に [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) を作成してください。
+1. 変換時に明示的な改行が保持されるように、`setAddReturnToLineEnd(true)` を有効にしてください。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出して、DOCX ファイルを保存してください。
 
 ```java
-public static void convertPDFtoWord_Advanced_DOCX_Format() {
-    // ソースPDFドキュメントを開く
-    Document document = new Document(DATA_DIR + "PDFToDOC.pdf");
-
-    // DocSaveOptionsオブジェクトをインスタンス化
-    DocSaveOptions saveOptions = new DocSaveOptions();
-    // 出力形式をDOCXとして指定
-    saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
-    // 他のDocSaveOptionsパラメータを設定
-    // ....
-
-    // ドキュメントをdocx形式で保存
-    document.save("ConvertToDOCX_out.docx", saveOptions);
-    document.close();
+public static void convertPdfToDocxWithLineBreaks(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocSaveOptions saveOptions = new DocSaveOptions();
+        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
+        saveOptions.setAddReturnToLineEnd(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
 }
 ```
 
-{{% alert color="warning" %}}
-**PDFをDOCXにオンラインで変換する**
+## PDF から DOCX への変換と箇条書きの認識
 
+ソース PDF のリスト箇条書きを認識し、Word でリスト構造として保持する必要がある場合に、この例を使用してください。
 
-Aspose.PDF for Javaは、オンライン無料アプリケーション["PDF to DOCX"](https://products.aspose.app/pdf/conversion/pdf-to-docx)を提供しており、そこで機能性と品質を調査することができます。
-[![Aspose.PDF 変換 PDF から DOCX 無料アプリ](pdf_to_docx.png)](https://products.aspose.app/pdf/conversion/pdf-to-docx)
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. `DocX` エクスポート用に [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) を作成してください。
+1. `setRecognizeBullets(true)` を有効にしてください。これにより、リストのような PDF コンテンツが変換時に箇条書きリストとして認識されます。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出して、DOCX ファイルを保存してください。
 
-{{% /alert %}}
+```java
+public static void convertPdfToDocxWithBulletRecognition(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocSaveOptions saveOptions = new DocSaveOptions();
+        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
+        saveOptions.setRecognizeBullets(true);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## カスタム画像解像度で PDF の DOCX への変換
+
+生成された DOCX 内の画像の忠実度を変換中に制御したい場合は、この例を使用してください。
+
+1. ソース PDF を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. `DocX` エクスポート用に [`DocSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/docsaveoptions/) を作成してください。
+1. `setImageResolutionX(300)` および `setImageResolutionY(300)` を設定してください。これにより、ラスタ コンテンツが指定された解像度で生成されます。
+1. `document.save(outputFile.toString(), saveOptions)` を呼び出して、DOCX 出力を保存してください。
+
+```java
+public static void convertPdfToDocxWithImageResolution(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        DocSaveOptions saveOptions = new DocSaveOptions();
+        saveOptions.setFormat(DocSaveOptions.DocFormat.DocX);
+        saveOptions.setImageResolutionX(300);
+        saveOptions.setImageResolutionY(300);
+        document.save(outputFile.toString(), saveOptions);
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```

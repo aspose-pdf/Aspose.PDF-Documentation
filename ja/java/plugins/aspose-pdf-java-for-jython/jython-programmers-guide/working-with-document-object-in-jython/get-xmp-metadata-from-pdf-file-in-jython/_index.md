@@ -1,19 +1,20 @@
 ---
-title: JythonでPDFファイルからXMPメタデータを取得する
+title: "Jython での PDF ファイルから XMP メタデータの取得"
+linktitle: "Jython での PDF ファイルから XMP メタデータの取得"
 type: docs
 weight: 40
 url: /ja/java/get-xmp-metadata-from-pdf-file-in-jython/
-lastmod: "2021-06-05"
+description: "Aspose.PDF を使用して Jython で PDF ドキュメントから XMP メタデータを抽出し、詳細なコンテンツ分析を行う方法について説明します。"
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - XMPメタデータの取得
 
-## Aspose.PDF - XMPメタデータを取得する
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。ここにサンプルコードを示します。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式をチェックします。ここでサンプルコードを見ることができます。
+マクロ 'code' のレンダリングエラー：パラメータ lang に無効な値が指定されました
 
-コードのレンダリングエラー 'code' : パラメータlangの指定値が無効です
+## 実行中のコードのダウンロード
 
-## 実行コードのダウンロード
-
-以下のいずれかのソーシャルコーディングサイトから実行コードをダウンロードできます：
+以下に記載されたソーシャルコーディングサイトのいずれかから、実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

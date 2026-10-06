@@ -1,12 +1,13 @@
 ---
-title: PythonでPDFファイル情報を取得する
+title: "Python での PDF ファイル情報の取得"
+linktitle: "Python での PDF ファイル情報の取得"
 type: docs
 weight: 40
 url: /ja/java/get-pdf-file-information-in-python/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用したドキュメント管理において、メタデータやプロパティなどの詳細な PDF ファイル情報を Python で取得する方法を探ります。
+lastmod: "2026-10-06"
 ---
-
-**Aspose.PDF Java for Python**を使用してPdfドキュメントのファイル情報を取得するには、**GetPdfFileInfo**クラスを呼び出すだけです。
+**Aspose.PDF Java for Python** を使用して PDF ドキュメントのファイル情報を取得するには、単に **GetPdfFileInfo** クラスを呼び出してください。
 
 ```python
 
@@ -14,20 +15,20 @@ doc= self.Document()
 pdf = self.Document()
 pdf=self.dataDir + 'input1.pdf'
 
-# ドキュメント情報を取得
+# Get document information
 doc_info = doc.getInfo();
 
-# ドキュメント情報を表示
-print "著者:-" + str(doc_info.getAuthor())
-print "作成日:-" + str(doc_info.getCreationDate())
-print "キーワード:-" + str(doc_info.getKeywords())
-print "変更日:-" + str(doc_info.getModDate())
-print "件名:-" + str(doc_info.getSubject())
-print "タイトル:-" + str(doc_info.getTitle())
+# Show document information
+print "Author:-" + str(doc_info.getAuthor())
+print "Creation Date:-" + str(doc_info.getCreationDate())
+print "Keywords:-" + str(doc_info.getKeywords())
+print "Modify Date:-" + str(doc_info.getModDate())
+print "Subject:-" + str(doc_info.getSubject())
+print "Title:-" + str(doc_info.getTitle())
 ```
 
 **実行コードのダウンロード**
 
-以下のいずれかのソーシャルコーディングサイトから**Get PDF File Information (Aspose.PDF)**をダウンロードしてください:
+以下に記載されたソーシャルコーディングサイトのいずれかから **PDF ファイル情報の取得 (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentObject/GetPdfFileInfo/GetPdfFileInfo.py)

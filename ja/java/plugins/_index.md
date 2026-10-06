@@ -1,21 +1,22 @@
 ---
-title: Javaからのプラグイン
+title: Java のプラグイン
+linktitle: Java のプラグイン
 type: docs
 weight: 100
 url: /ja/java/plugins/
-lastmod: "2021-06-05"
+description: プラグインで Aspose.PDF for Java を強化します。追加ツールや統合を使用して PDF 処理機能を拡張する方法をご覧ください。
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 ## このセクションの記事
 
-- [Struts 1.3用Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-struts-1-3/)
-- [Ruby用Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-ruby/)
-- [IntelliJ IDEA - Maven用Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-intellij-idea-maven/)
-- [Python用Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-python/)
-- [PHP用Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-php/)
-- [Jython用Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-jython/)
-- [NetBeans - Maven用Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-netbeans-maven/)
-- [Eclipse用Mavenを使用したAspose.PDF Java](/pdf/ja/java/aspose-pdf-java-using-maven-for-eclipse/)
+- [Struts 1.3 用 Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-struts-1-3/)
+- [Ruby 用 Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-ruby/)
+- [IntelliJ IDEA - Maven 用 Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-intellij-idea-maven/)
+- [Python 用 Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-python/)
+- [PHP 用 Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-php/)
+- [Jython 用 Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-for-jython/)
+- [NetBeans 用 Aspose.PDF Java - Maven](/pdf/ja/java/aspose-pdf-java-for-netbeans-maven/)
+- [Eclipse 用 Maven 使用 Aspose.PDF Java](/pdf/ja/java/aspose-pdf-java-using-maven-for-eclipse/)

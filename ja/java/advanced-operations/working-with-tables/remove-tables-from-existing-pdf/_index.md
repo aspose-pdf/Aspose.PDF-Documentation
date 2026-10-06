@@ -1,80 +1,57 @@
 ---
-title: 既存のPDFからテーブルを削除
-linktitle: テーブルを削除
+title: "既存の PDF ドキュメントからテーブルの削除"
+linktitle: "テーブルの削除"
+description: "Java を使用して、既存の PDF ドキュメントから 1 つまたは複数のテーブルを削除する方法を学習します。"
+lastmod: "2026-10-06"
 type: docs
-weight: 40
-url: /ja/java/remove-tables-from-existing-pdf/
-description: Aspose.PDF for Javaを使用すると、PDFドキュメントからテーブルおよび複数のテーブルを削除できます。
-lastmod: "2021-06-05"
+weight: 50
+url: /ja/java/removing-tables/
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java を使用した PDF ファイルからの 1 つまたは複数のテーブルの削除"
+Abstract: この記事では、Aspose.PDF for Java を使用して既存の PDF ドキュメントからテーブルを削除する方法を説明します。テーブルの位置を特定するための TableAbsorber を紹介し、単一のテーブルを削除する方法と、ページ上で検出されたすべてのテーブルを削除する方法を示します。
 ---
+既存の PDF から検出されたテーブルを 1 つまたは複数削除する必要がある場合は、`TableAbsorber` を使用してください。
 
-{{% alert color="primary" %}}
+## 検出されたテーブルを 1 つ削除
 
-Aspose.PDF for Javaは、PDFドキュメントを最初から生成する際に、PDFドキュメント内にテーブルを挿入/作成する機能を提供します。また、任意の既存のPDFドキュメントにテーブルオブジェクトを追加することもできます。しかし、既存のPDFに含まれるテーブルセルの内容を更新できる[既存PDFのテーブルを操作する](https://docs.aspose.com/pdf/java/manipulate-tables-in-existing-pdf/)必要があるかもしれません。しかし、既存のPDFドキュメントからテーブルオブジェクトを削除する必要が生じることがあります。
+ページ上で一致した最初のテーブルのみを削除する場合は、この例を使用してください。
 
-{{% /alert %}}
-
-テーブルを削除するには、既存のPDFのテーブルを取得するために[TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber)クラスを使用し、次に[Remove](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#remove-com.aspose.pdf.AbsorbedTable-)メソッドを呼び出す必要があります。
-
-## PDFドキュメントからテーブルを削除する
-
-既存の[TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber)クラスに新しい関数、すなわちRemove()を追加して、PDFドキュメントからテーブルを削除できるようにしました。アブソーバーがページ上のテーブルを正常に見つけると、それを削除することが可能になります。以下のコードスニペットを確認して、PDFドキュメントからテーブルを削除する方法を示します:
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) を使用して対象ページにアクセスしてください。
+1. 検出された最初のテーブルを削除し、ドキュメントを保存してください。
 
 ```java
-package com.aspose.pdf.examples;
-
-import com.aspose.pdf.*;
-
-public class ExampleRemoveTable {
-    
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-
-    public static void RemoveTable() {
-        // 既存のPDFドキュメントを読み込む
-        Document pdfDocument = new Document(_dataDir + "Table_input.pdf");
-
-        // テーブルを見つけるためにTableAbsorberオブジェクトを作成する
+public static void removeOneTable(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
-
-        // アブソーバーで最初のページを訪問する
-        absorber.visit(pdfDocument.getPages().get_Item(1));
-
-        // ページ上の最初のテーブルを取得する
-        AbsorbedTable table = absorber.getTableList().get(0);
-
-        // テーブルを削除する
-        absorber.remove(table);
-
-        // PDFを保存する
-        pdfDocument.save(_dataDir + "Table_out.pdf");
-    }  
+        absorber.visit(document.getPages().get_Item(1));
+        absorber.remove(absorber.getTableList().get(0));
+        document.save(outputFile.toString());
+    }
+}
 ```
 
+## ページから検出されたすべてのテーブルの削除
 
-## PDFドキュメントから複数のテーブルを削除する
+ページ上のすべての一致するテーブルを削除する必要がある場合に、この例を使用してください。
 
-PDFドキュメントには複数のテーブルが含まれる場合があり、それらを削除する必要が生じることがあります。PDFドキュメントから複数のテーブルを削除するには、次のコードスニペットを使用してください。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. 対象ページに [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) を適用し、検出されたテーブルをリストにコピーしてください。
+1. 検出された各テーブルを削除し、更新された PDF を保存してください。
 
 ```java
-    public static void RemoveMultipleTable() {
-        // 既存のPDFドキュメントをロード
-        Document pdfDocument = new Document(_dataDir + "Table_input2.pdf");
-
-        // テーブルを見つけるためのTableAbsorberオブジェクトを作成
+public static void removeAllTables(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
         TableAbsorber absorber = new TableAbsorber();
-
-        // 2ページ目をアブソーバーで訪問
-        absorber.visit(pdfDocument.getPages().get_Item(2));
-
-        // コレクションのコピーをループしてテーブルを削除
-        for (AbsorbedTable table : absorber.getTableList())
+        absorber.visit(document.getPages().get_Item(1));
+        List<AbsorbedTable> tables = new ArrayList<>(absorber.getTableList());
+        for (AbsorbedTable table : tables) {
             absorber.remove(table);
-
-        // ドキュメントを保存
-        pdfDocument.save(_dataDir + "Table2_out.pdf");
+        }
+        document.save(outputFile.toString());
     }
 }
 ```

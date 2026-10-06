@@ -1,113 +1,126 @@
 ---
-title: PDFからテーブルデータを抽出
-linktitle: テーブルデータの抽出
+title: "Java での PDF のテーブルからデータの抽出"
+linktitle: "テーブルからデータの抽出"
 type: docs
 weight: 40
 url: /ja/java/extract-data-from-table-in-pdf/
-description: Aspose.PDF for Javaを使用してPDFから表形式データを抽出する方法を学ぶ
-lastmod: "2021-06-05"
+description: Aspose.PDF for Java を使用して PDF ファイルからテーブルデータを抽出し、検出されたテーブルをさらに処理できるようにエクスポートする方法を学びます。
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java を使用した PDF のテーブルからデータの抽出方法"
+Abstract: "この記事では、Aspose.PDF for Java を使用して PDF ドキュメントからテーブルデータを抽出および処理する方法を説明します。`TableAbsorber` を使用してページをスキャンし、検出されたテーブルから行とセルを読み取り、特定の注釈領域に抽出を限定し、結果を Excel にエクスポートする方法を示します。"
 ---
+## PDF からテーブルの抽出
 
-## プログラムでPDFからテーブルを抽出
+`TableAbsorber` を使用して、各ページのテーブルを検出し、行、セル、テキストフラグメント、テキストセグメントを反復処理します。
 
-PDFからテーブルを抽出することは簡単な作業ではありません。なぜなら、テーブルはさまざまな方法で作成できるからです。
-
-Aspose.PDF for Javaには、テーブルを簡単に取得するためのツールがあります。テーブルデータを抽出するには、次の手順を実行する必要があります。
-
-1. ドキュメントを開く - [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/Document) オブジェクトをインスタンス化する;
-1. [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber) オブジェクトを作成する。
-
-1. 分析するページを決定し、目的のページに[visit](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#visit-com.aspose.pdf.Page-)を適用します。表形式のデータがスキャンされ、その結果が[AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable)のリストに保存されます。このリストは[getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--)メソッドを通じて取得できます。
-
-1. データを取得するには、`TableList`を反復処理し、[absorbed rows](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow)のリストと吸収されたセルのリストを扱います。最初のリストには[getTableList](https://reference.aspose.com/pdf/java/com.aspose.pdf/TableAbsorber#getTableList--)メソッドを呼び出すことでアクセスでき、2番目のリストには[getCellList](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedRow#getCellList--)メソッドを呼び出すことでアクセスできます。
-
-1. 各[AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedCell)には[TextFragmentCollections](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragmentCollection)が含まれています。これを自分の目的で処理することができます。
-
-次の例は、すべてのページからテーブルを抽出する方法を示しています:
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. ドキュメントの [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) オブジェクトを反復処理してください。テーブルはページ単位で検出されるためです。
+1. 各ページごとに [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) を作成し、`visit(page)` を呼び出して検出されたテーブルリストを埋めてください。
+1. 検出された [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/)、[AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/)、[AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/)、[TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)、および `TextSegment` オブジェクトを反復処理してください。
+1. フラグメントの内容から抽出した行テキストを構築し、テーブルデータを出力してください。
 
 ```java
-public static void Extract_Table() {
-    // ソースPDFドキュメントをロード
-    String filePath = "/home/aspose/pdf-examples/Samples/sample_table.pdf";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
+public static void extractTablesFromPdf(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (Page page : document.getPages()) {
+            TableAbsorber absorber = new TableAbsorber();
+            absorber.visit(page);
 
-    // ページをスキャン
-    for (com.aspose.pdf.Page page : pdfDocument.getPages()) {
-        absorber.visit(page);
-        for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-            System.out.println("Table");
-            // 行のリストを繰り返す
-            for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                // セルのリストを繰り返す
-                for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                    for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                        StringBuilder sb = new StringBuilder();
-                        for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                            sb.append(seg.getText());
-                        System.out.print(sb.toString() + "|");
+            for (AbsorbedTable table : absorber.getTableList()) {
+                System.out.println("Table");
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
+                        }
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
-                System.out.println();
             }
         }
     }
 }
 ```
 
+## 特定のマークされた領域からの表の抽出
 
-## PDFページの特定エリアからテーブルを抽出する
+この例では、四角形の注釈を見つけ、その矩形を検出された各表と比較し、マークされた領域内の表のみを出力します。
 
-各吸収されたテーブルは、ページ上のテーブルの位置を示す[Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/AbsorbedTable#getRectangle--)プロパティを持っています。
-
-したがって、特定の領域にあるテーブルを抽出する必要がある場合は、特定の座標で作業する必要があります。
-
-次の例は、四角形の注釈でマークされたテーブルを抽出する方法を示しています：
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. ターゲットの [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を取得し、抽出領域を示す四角形の [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) を見つけてください。
+1. [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) を作成し、そのページ上のテーブルを検出するために `visit(page)` を呼び出してください。
+1. 検出された各 [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) の [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) を、注釈の矩形境界と比較してください。
+1. 一致する [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/) および [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/) オブジェクトを反復処理し、行テキストを再構築してください。
+1. マークされた領域のテーブル データのみを印刷してください。
 
 ```java
-public static void Extract_Marked_Table() {
-    // ソースPDFドキュメントを読み込む
-    String filePath = "<... enter path to pdf file here ...>";
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-    com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
+public static void extractTableFromSpecificArea(Path inputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        Page page = document.getPages().get_Item(1);
 
-    com.aspose.pdf.AnnotationSelector annotationSelector = new com.aspose.pdf.AnnotationSelector(
-            new com.aspose.pdf.SquareAnnotation(page, com.aspose.pdf.Rectangle.getTrivial()));
+        Annotation squareAnnotation = null;
+        for (Annotation annotation : page.getAnnotations()) {
+            if (annotation.getAnnotationType() == AnnotationType.Square) {
+                squareAnnotation = annotation;
+                break;
+            }
+        }
 
-    java.util.List<com.aspose.pdf.Annotation> list = annotationSelector.getSelected();
-    if (list.size() == 0) {
-        System.out.println("マークされたテーブルが見つかりません。");
-        return;
-    }
+        if (squareAnnotation == null) {
+            System.out.println("No square annotation found.");
+            return;
+        }
 
-    com.aspose.pdf.SquareAnnotation squareAnnotation = (com.aspose.pdf.SquareAnnotation) list.get(0);
+        TableAbsorber absorber = new TableAbsorber();
+        absorber.visit(page);
 
-    com.aspose.pdf.TableAbsorber absorber = new com.aspose.pdf.TableAbsorber();
-    absorber.visit(page);
+        for (AbsorbedTable table : absorber.getTableList()) {
+            Rectangle tableRect = table.getRectangle();
+            Rectangle annotationRect = squareAnnotation.getRect();
 
-    for (com.aspose.pdf.AbsorbedTable table : absorber.getTableList()) {
-        {
-            boolean isInRegion = (squareAnnotation.getRect().getLLX() < table.getRectangle().getLLX())
-                    && (squareAnnotation.getRect().getLLY() < table.getRectangle().getLLY())
-                    && (squareAnnotation.getRect().getURX() > table.getRectangle().getURX())
-                    && (squareAnnotation.getRect().getURY() > table.getRectangle().getURY());
+            boolean isInRegion = annotationRect.getLLX() < tableRect.getLLX()
+                    && annotationRect.getLLY() < tableRect.getLLY()
+                    && annotationRect.getURX() > tableRect.getURX()
+                    && annotationRect.getURY() > tableRect.getURY();
 
             if (isInRegion) {
-                for (com.aspose.pdf.AbsorbedRow row : table.getRowList()) {
-                    {
-                        for (com.aspose.pdf.AbsorbedCell cell : row.getCellList()) {
-                            for (com.aspose.pdf.TextFragment fragment : cell.getTextFragments()) {
-                                StringBuilder sb = new StringBuilder();
-                                for (com.aspose.pdf.TextSegment seg : fragment.getSegments())
-                                    sb.append(seg.getText());
-                                System.out.print(sb.toString() + "|");
-                            }
+                for (AbsorbedRow row : table.getRowList()) {
+                    StringBuilder rowText = new StringBuilder();
+                    for (AbsorbedCell cell : row.getCellList()) {
+                        if (rowText.length() > 0) {
+                            rowText.append("|");
                         }
-                        System.out.println();
+                        StringBuilder cellText = new StringBuilder();
+                        for (TextFragment fragment : cell.getTextFragments()) {
+                            StringBuilder fragmentText = new StringBuilder();
+                            for (TextSegment segment : fragment.getSegments()) {
+                                fragmentText.append(segment.getText());
+                            }
+                            if (cellText.length() > 0) {
+                                cellText.append("|");
+                            }
+                            cellText.append(fragmentText);
+                        }
+                        rowText.append(cellText);
                     }
+                    System.out.println(rowText);
                 }
             }
         }
@@ -115,24 +128,19 @@ public static void Extract_Marked_Table() {
 }
 ```
 
+## テーブルを Excel にエクスポート
 
-## PDFからテーブルデータを抽出しCSVファイルに保存
-
-次の例は、テーブルを抽出してCSVファイルとして保存する方法を示しています。
-PDFをExcelスプレッドシートに変換する方法については、[PDFをExcelに変換する](/pdf/ja/java/convert-pdf-to-excel/)記事を参照してください。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開いてください。
+1. エクスポート用に [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) を作成してください。
+1. Excel の出力形式を `XLSX` に設定してください。これにより、検出されたテーブルレイアウトが Excel ブックとして書き込まれます。
+1. `document.save(outputFile.toString(), excelSave)` を呼び出して、ドキュメントを Excel 形式でエクスポートしてください。
 
 ```java
-public static void Extract_Table_Save_CSV()
-{
-    String filePath = "/home/admin1/pdf-examples/Samples/sample_table.pdf";
-    // PDFドキュメントをロード
-    com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-    // ExcelSaveオプションオブジェクトをインスタンス化
-    com.aspose.pdf.ExcelSaveOptions excelSave = new com.aspose.pdf.ExcelSaveOptions();
-    excelSave.setFormat(com.aspose.pdf.ExcelSaveOptions.ExcelFormat.CSV);
-
-    // 出力をXLS形式で保存
-    pdfDocument.save("PDFToXLS_out.xlsx", excelSave);
+public static void exportTablesToExcel(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        ExcelSaveOptions excelSave = new ExcelSaveOptions();
+        excelSave.setFormat(ExcelSaveOptions.ExcelFormat.XLSX);
+        document.save(outputFile.toString(), excelSave);
+    }
 }
 ```

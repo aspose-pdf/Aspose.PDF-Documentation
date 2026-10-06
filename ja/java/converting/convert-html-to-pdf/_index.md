@@ -1,166 +1,181 @@
 ---
-title: HTMLをPDFファイルに変換するJava
-linktitle: HTMLをPDFファイルに変換
+title: "Java での HTML から PDF への変換"
+linktitle: "HTML から PDF ファイルへの変換"
 type: docs
 weight: 40
 url: /ja/java/convert-html-to-pdf/
-lastmod: "2021-11-19"
-description: このトピックでは、Aspose.PDFがHTMLおよびMHTML形式をPDFファイルに変換する方法を示します。
+lastmod: "2026-10-06"
+description: Java と Aspose.PDF を使用して HTML、MHTML、Web ページを PDF に変換する方法を学びます。メディア設定、CSS ページルール、フォント埋め込み、SVG コンテンツ、単一ページ出力を含みます。
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: "Java と Aspose.PDF を使用した HTML から PDF への変換方法"
+Abstract: この記事では、Aspose.PDF for Java を使用して HTML および MHTML ファイルを PDF に変換する方法について説明します。基本的な HTML から PDF へのワークフローをカバーし、メディアタイプ、CSS ページルールの優先順位、埋め込みフォント、SVG コンテンツ、単一ページ出力、ライブウェブページからの直接変換によってレンダリングを制御する方法を示します。
 ---
+Aspose.PDF for Java は、ローカルの HTML ファイル、アーカイブされた MHTML コンテンツ、ライブ Web ページを PDF ドキュメントに変換できます。変換パイプラインは、`HtmlLoadOptions` および `MhtLoadOptions` を使用して制御でき、レイアウトのスケーリング、CSS メディアの処理、ページルールの優先度、フォントの埋め込み、リソースの解決、単一ページのレンダリング動作に影響を与えます。
 
-## 概要
+## HTML から PDF への変換
 
-この記事では、Javaを使用してHTMLをPDFに変換する方法を説明します。コードは非常にシンプルで、HTMLをDocumentクラスにロードし、出力PDFとして保存するだけです。JavaでMHTMLをPDFに変換するのも同様です。以下のトピックをカバーしています。
+ローカルの HTML ファイルを直接 PDF 文書に変換する必要がある場合は、この例を使用してください。
 
-- [Java HTMLからPDFへ](#convert-html-to-pdf)
-- [Java MHTMLからPDFへ](#convert-mhtml-to-pdf)
-- [Java HTMLをPDFに変換](#convert-html-to-pdf)
-- [Java MHTMLをPDFに変換](#convert-mhtml-to-pdf)
-- [Java HTMLからPDFを作成](#convert-html-to-pdf)
-- [Java MHTMLからPDFを作成](#convert-mhtml-to-pdf)
-- [Java HTMLからPDFコンバーター - WebページをPDFに変換する方法](#convert-html-to-pdf)
-
-- [Java HTMLからPDFライブラリ、APIまたはコードを使用してプログラムでHTMLからPDFをレンダリング、保存、生成または作成](#convert-html-to-pdf)
-
-## Java HTML to PDF コンバーターライブラリ
-
-**Aspose.PDF for Java** は、既存のHTMLドキュメントをPDFにシームレスに変換できるPDF操作APIです。HTMLをPDFに変換するプロセスは柔軟にカスタマイズできます。
-
-## HTMLをPDFに変換
-
-以下のJavaコードサンプルは、HTMLドキュメントをPDFに変換する方法を示しています。
-
-1. [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) クラスのインスタンスを作成します。
-1. [Document](https://reference.aspose.com/page/java/com.aspose.page/document) オブジェクトを初期化します。
-1. **Document.save(String)** メソッドを呼び出して出力PDFドキュメントを保存します。
+1. [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) インスタンスを作成し、インポート中に HTML ソースがどのように解釈されるかを構成してください。
+1. [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) を `ScaleToPageWidth` に設定し、幅の広い HTML コンテンツが切り取られるのではなく、対象の PDF ページ幅に合わせてスケーリングされるようにしてください。
+1. 構成したロードオプションとパスを [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) のコンストラクタに渡して、ソース HTML ファイルを開いてください。
+1. 生成された [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を、対象の出力パスに PDF ファイルとして保存してください。
 
 ```java
-// ソースPDFドキュメントを開く
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
-
-// HTML SaveOptionsオブジェクトをインスタンス化
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-
-// ドキュメントを保存
-document.save(DATA_DIR + "MultiPageHTML_out.html", htmlsaveOptions);
+public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPageLayoutOption(HtmlPageLayoutOption.ScaleToPageWidth);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-{{% alert color="success" %}}
-**HTMLをPDFにオンラインで変換してみてください**
+## メディアタイプオプションを使用した HTML から PDF への変換
 
-Asposeは、オンラインで無料のアプリケーション["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf)を提供しており、機能と品質を調査することができます。
+HTML 変換中に CSS メディアタイプの処理を制御する必要がある場合は、この例を使用してください。
 
-[![Aspose.PDF Convertion HTML to PDF using Free App](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf) {{% /alert %}}
-
-## HTMLからPDFへの高度な変換
-
-HTML変換エンジンには、変換プロセスを制御するためのいくつかのオプションがあります。
-
-### メディアクエリのサポート
-
-1. HTML [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) を作成します。
-1. プリントまたはスクリーンモードを設定します。
-1. [Document オブジェクト](<https://reference.aspose.com/page/java/com.aspose.page/document>) を初期化します。
-1. 出力PDFドキュメントを保存します。
-
-メディアクエリは、異なるデバイスに合わせたスタイルシートを配信するための一般的な技術です。[HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) プロパティを使用してデバイスタイプを設定できます。
+1. [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) インスタンスを作成し、変換設定を行ってください。
+1. [`HtmlMediaType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlmediatype/) を `Screen` に設定し、HTML を画面表示用の CSS ルールでレンダリングするようにしてください。
+1. 変換中にメディアクエリ依存のスタイルが適用されるよう、設定されたロードオプションで HTML ファイルを開いてください。
+1. 結果を [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) として PDF ファイルに保存してください。
 
 ```java
-// HTML LoadOptionsを作成
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-// プリントまたはスクリーンモードを設定
-options.setHtmlMediaType(HtmlMediaType.Print);
-
-// ドキュメントオブジェクトを初期化
-String htmlFileName = Paths.get(DATA_DIR.toString(), "test.html").toString();
-Document document = new Document(htmlFileName, options);
-
-// 出力PDFドキュメントを保存
-document.save(Paths.get(DATA_DIR.toString(), "HTMLtoPDF.pdf").toString());
-document.close();
+public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setHtmlMediaType(HtmlMediaType.Screen);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
+## CSS ページルールの優先順位を考慮して HTML の PDF への変換
 
-### フォント埋め込みの有効化（無効化）
+CSS の `@page` ルールが最終的な PDF ページレイアウトに影響を与える必要がある場合は、この例をご利用ください。
 
-1. 新しいHtml [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) を追加します。
-1. フォント埋め込みを有効/無効にします。
-1. 新しいドキュメントを保存します。
-
-HTMLページはしばしばフォントを使用します（例：ローカルフォルダのフォント、Google Fontsなど）。ドキュメント内のフォント埋め込みを制御することも、[IsEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--) プロパティを使用して可能です。
+1. HTML ファイルを開く前に、[`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) インスタンスを作成してください。
+1. その他のレイアウト設定を CSS の `@page` 宣言より優先させる場合は、`setPriorityCssPageRule(false)` を設定してください。
+1. 構成されたオプションを使用して、HTML コンテンツを [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) にロードし、インポート中にページレイアウトが解決されるようにしてください。
+1. 生成された PDF ファイルを保存してください。
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-// フォント埋め込みを有効/無効にします
-options.setEmbedFonts(true);
-
-Document document = new Document(DATA_DIR + "test_fonts.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();
+public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPriorityCssPageRule(false);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-### 外部リソースの読み込みを管理する
+## HTML の埋め込みフォントで PDF への変換
 
-変換エンジンは、HTMLドキュメントに関連付けられた特定のリソースの読み込みを制御するメカニズムを提供します。
+出力 PDF に HTML フォントを埋め込んで保持する必要がある場合は、この例を使用してください。
 
-[HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) クラスには [CustomLoaderOfExternalResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-) プロパティがあり、これを使用してリソースローダーの動作を定義できます。
+1. HTML インポート構成用に [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) インスタンスを作成してください。
+1. `setEmbedFonts(true)` を有効にしてください。これにより、HTML のレンダリング中に解決されたフォントが、出力 PDF に保存されます。
+1. これらの読み込みオプションを使用して HTML ソースを開いてください。これにより、最終文書で元のタイポグラフィを利用可能に保つことができます。
+1. [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を、埋め込まれたフォントリソースを含む PDF として保存してください。
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-options.setCustomLoaderOfExternalResources(
-        new LoadOptions.ResourceLoadingStrategy() {
-            public LoadOptions.ResourceLoadingResult invoke(String resourceURI) {
-                // 置換のためのクリアテンプレートリソースを作成:
-                LoadOptions.ResourceLoadingResult res = new LoadOptions.ResourceLoadingResult(new byte[] {});
-                // i.imgur.comサーバーの場合は空のバイト配列を返す
-                if (resourceURI.contains("i.imgur.com")) {
-                    return res;
-                } else {
-                    // デフォルトのリソースローダーでリソースを処理
-                    res.setLoadingCancelled(true);
-                    return res;
-                }
-            }   
-});
-
-Document document = new Document(DATA_DIR + "test.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();    
+public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setEmbedFonts(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-## MHTMLをPDFに変換
+## 単一の PDF ページへの HTML コンテンツのレンダリング
 
-{{% alert color="success" %}}
-**オンラインでMHTMLをPDFに変換してみてください**
+長い HTML コンテンツを複数ページにまたがらず、1 ページの PDF に収める必要がある場合は、この例を使用してください。
 
-
-Aspose.PDF for Javaは、オンラインの無料アプリケーション["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)を提供しており、その機能と品質を調査することができます。
-
-[![Aspose.PDF Convertion MHTML to PDF using Free App](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
-{{% /alert %}}
-
-<abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>、MIME HTMLの略であり、通常は外部リンクによって表されるリソース（例えば画像、Flashアニメーション、Javaアプレット、オーディオファイル）をHTMLコードと共に1つのファイルに統合するために使用されるウェブページアーカイブ形式です。MHTMLファイルの内容は、MIMEタイプmultipart/relatedを使用してHTMLメールメッセージとしてエンコードされます。
-
-次のコードスニペットは、MHTMLファイルをJavaでPDF形式に変換する方法を示しています。
+1. [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) インスタンスを作成し、変換設定を行ってください。
+1. `setRenderToSinglePage(true)` を有効にしてください。これにより、インポートされた HTML が複数のページに分割されるのではなく、1 つの PDF ページにレイアウトされます。
+1. 構成された読み込みオプションでソース HTML を開き、Aspose.PDF に [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 内でページレイアウトを構築させてください。
+1. 出力 PDF ファイルを保存してください。
 
 ```java
-// MHTMLファイルの読み込みオプションを指定するためのMhtLoadOptionsのインスタンスを作成します。
-MhtLoadOptions options = new MhtLoadOptions();
+public static void convertHtmlToPdfRenderContentToSamePage(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setRenderToSinglePage(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-// MHTMLファイルのパスを設定します。
-String mhtmlFileName = Paths.get(DATA_DIR.toString(), "samplefile.mhtml").toString();
+## インライン SVG を含む HTML の変換
 
-// MHTMLファイルをDocumentオブジェクトに読み込みます。
-Document document = new Document(mhtmlFileName, options);
+HTML ソースにインライン SVG データが含まれ、PDF にレンダリングする必要がある場合は、この例を使用してください。
 
-// ドキュメントをPDFファイルとして保存します。
-document.save(Paths.get(DATA_DIR.toString(), "MarkdowntoPDF.pdf").toString());
+1. 変換時に関連リソースを一貫して解決できるように、HTML ファイルの親ディレクトリをベースパスとして指定した [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) インスタンスを作成してください。
+1. インライン SVG マークアップを含む HTML ファイルを、ソースパスとロードオプションを [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) コンストラクタに渡して開いてください。
+1. Aspose.PDF が HTML DOM と埋め込まれた SVG 要素を PDF ページのコンテンツにレンダリングできるようにしてください。
+1. 生成された PDF ドキュメントを保存してください。
 
-// ドキュメントを閉じます。
-document.close();
+```java
+public static void convertHtmlToPdfWithSvgData(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(inputFile.getParent().toString());
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## ウェブページの PDF への変換
+
+ライブのウェブ URL を PDF ドキュメントとしてレンダリングし、保存する場合はこの例を使用してください。
+
+1. スタイルシートや画像などの相対リソースを対象 URL に対して解決できるように、その URL を指定した [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) インスタンスを作成してください。
+1. URL 文字列を `URL` オブジェクトに変換し、その入力ストリームを開いてライブ HTML コンテンツを取得してください。
+1. ダウンロードしたページを正しいベース URL で処理できるように、レスポンスストリームと設定済みの読み込みオプションから [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を作成してください。
+1. レンダリングされたウェブページを PDF ファイルとして保存し、try-with-resources を使用してストリームリソースを自動的に閉じてください。
+
+```java
+public static void convertWebPageToPdf(String urlString, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(urlString);
+    try {
+        URL url = URI.create(urlString).toURL();
+
+        try (InputStream inputStream = url.openStream()) {
+            try (Document document = new Document(inputStream, loadOptions)) {
+                document.save(outputFile.toString());
+            }
+        }
+        System.out.println(url + " converted into " + outputFile);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
+
+## MHTML を PDF に変換
+
+アーカイブされた MHTML ファイルを PDF ドキュメントに変換する必要がある場合は、この例を使用してください。
+
+1. [`MhtLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mhtloadoptions/) のインスタンスを作成し、Aspose.PDF にソースを MIME HTML コンテンツとしてロードさせるように指定してください。
+1. `.mht` または `.mhtml` ファイルのパスと MHTML のロードオプションを [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) のコンストラクタに渡して、ファイルを開いてください。
+1. Aspose.PDF にアーカイブされた HTML コンテンツとその埋め込まれたリソースを PDF ドキュメントモデルに解析させてください。
+1. 生成された PDF ファイルを保存してください。
+
+```java
+public static void convertMhtmlToPdf(Path inputFile, Path outputFile) {
+    MhtLoadOptions loadOptions = new MhtLoadOptions();
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
