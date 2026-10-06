@@ -24,7 +24,7 @@ Aspose.PDF for Java 提供了简单替换和布局感知替换功能，通过 `T
 当需要在整个文档中替换相同短语时使用此示例。
 
 1. 打开源 PDF 文档。
-1. 在所有页面中搜索目标短语 `TextFragmentAbsorber`.
+1. 在所有页面中搜索目标短语 `TextFragmentAbsorber`。
 1. 替换匹配的文本并保存更新后的 PDF。
 
 ```java
@@ -132,7 +132,7 @@ public static void replaceTextAndResizeAndShiftParagraph(Path inputFile, Path ou
 
 ## 替换文本并缩放字体以填满矩形
 
-使用此示例，当替换文本需要放大以填满目标区域时。
+当替换文本需要放大以填满目标区域时，使用此示例。
 
 1. 打开源 PDF 并访问目标文本片段。
 1. 定义一个替换矩形并启用 `ScaleToFill` 字体调整。
@@ -161,7 +161,7 @@ public static void replaceTextAndResizeAndExpandFont(Path inputFile, Path output
 当替换文本必须保持在原始文本矩形内部时，请使用此示例。
 
 1. 打开源 PDF 并选择目标片段。
-1. 重用当前片段矩形并启用 `ShrinkToFit`.
+1. 重用当前片段矩形并启用 `ShrinkToFit`。
 1. 替换文本并保存文档。
 
 ```java
@@ -187,7 +187,7 @@ public static void replaceTextAndFitTextIntoRectangle(Path inputFile, Path outpu
 当匹配的文本应通过正则表达式模式查找并在替换过程中重新设置样式时，请使用此示例。
 
 1. 打开源 PDF 文档。
-1. 使用正则表达式搜索页面 `TextFragmentAbsorber`.
+1. 使用正则表达式搜索页面 `TextFragmentAbsorber`。
 1. 替换每个匹配项，更新其文字样式，并保存结果。
 
 ```java
@@ -265,7 +265,7 @@ public static void replaceFonts(Path inputFile, Path outputFile) {
 
 当文档在替换字体后需要清理时，请使用此示例。
 
-1. 打开源PDF并进行配置 `TextEditOptions` 删除未使用的字体。
+1. 打开源 PDF 并进行配置 `TextEditOptions` 删除未使用的字体。
 1. 吸收文本片段并指定替换字体。
 1. 保存优化后的文档。
 
@@ -290,7 +290,7 @@ public static void removeUnusedFonts(Path inputFile, Path outputFile) {
 当必须从每页删除所有文本内容时，请使用此示例。
 
 1. 打开源 PDF 文档。
-1. 创建一个 `TextFragmentAbsorber` 并调用 `removeAllText(document)`.
+1. 创建一个 `TextFragmentAbsorber` 并调用 `removeAllText(document)`。
 1. 保存已清理的 PDF。
 
 ```java

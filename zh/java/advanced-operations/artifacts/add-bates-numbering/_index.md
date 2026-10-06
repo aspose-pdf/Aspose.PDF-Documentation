@@ -65,7 +65,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 
 当需要从文档中移除现有的 Bates 编号痕迹时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 调用删除 Bates 编号的页面集合助手。
 1. 保存已清理的输出文件。
 

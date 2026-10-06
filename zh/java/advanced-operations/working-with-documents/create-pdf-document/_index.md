@@ -19,10 +19,10 @@ Aspose.PDF for Java 支持简单文档创建以及 OCR 辅助的可搜索 PDF �
 
 当您需要从头创建一个简单的 PDF 文件时，请使用此方法。
 
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 并将其添加到页面。
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void createNewDocument(Path outputFile) {
@@ -38,9 +38,9 @@ public static void createNewDocument(Path outputFile) {
 
 这 `createSearchablePdf` 示例用法 `Document.convert(...)` 带有 a `CallBackGetHocr` 实现。回调将源图像写入临时文件，并使用 Tesseract `hocr` 选项，读取生成的 HOCR 标记，并将其返回给 Aspose.PDF。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 `CallBackGetHocr` 回调并将源文档转换为可搜索的 PDF 内容。
-1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void createSearchablePdf(Path inputFile, Path outputFile) {
@@ -63,7 +63,7 @@ public static void createSearchablePdf(Path inputFile, Path outputFile) {
 
 使用此示例检查已存在 PDF 文档中存储的当前查看器首选项。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 从文档中读取所需的窗口和显示属性。
 1. 输出当前设置以进行检查或调试。
 
@@ -88,9 +88,9 @@ public static void getDocumentWindow(Path inputFile) {
 
 此示例更新了在兼容的查看器中打开 PDF 时的显示方式。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 设置所需的窗口、布局和页面模式首选项。
-1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void setDocumentWindow(Path inputFile, Path outputFile) {
@@ -114,8 +114,8 @@ public static void setDocumentWindow(Path inputFile, Path outputFile) {
 
 当文档需要携带其必需的字体以在其他系统上实现更可靠的渲染时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 启用标准字体嵌入并遍历每个使用的字体 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 启用标准字体嵌入并遍历每个使用的字体 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 标记任何未嵌入的 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) 用于嵌入的对象。
 1. 保存更新后的文档。
 
@@ -139,8 +139,8 @@ public static void embeddedFonts(Path inputFile, Path outputFile) {
 
 此示例从一开始就创建一个新的 PDF，并将嵌入式字体分配给文本内容。
 
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. 创建所需的 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/)，和 [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
+1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
+1. 创建所需的 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/)，和 [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/)。
 1. 解析目标 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) 从存储库中获取并将其标记为嵌入。
 1. 将文本内容添加到页面并保存输出文档。
 
@@ -167,7 +167,7 @@ public static void embeddedFontsInNewDocument(Path outputFile) {
 
 在输出生成期间，如果已保存的文档需要回退到特定字体，请使用此模式。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) 并设置默认字体名称。
 1. 使用配置的保存选项保存文档。
 
@@ -185,9 +185,9 @@ public static void setDefaultFont(Path inputFile, Path outputFile) {
 
 此示例列出文档中检测到的每种字体，以便您在导出或更新文件之前审计字体使用情况。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 枚举文档字体实用程序返回的字体。
-1. 输出每个检测到的名称 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
+1. 输出每个检测到的名称 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/)。
 
 ```java
 public static void getAllFonts(Path inputFile) {
@@ -203,7 +203,7 @@ public static void getAllFonts(Path inputFile) {
 
 当您希望在降低字体负载的同时保持嵌入的字体数据与文档使用保持一致时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 使用文档字体实用工具运行字体子集化，并满足所需 [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) 值。
 1. 保存已优化的文档。
 
@@ -221,8 +221,8 @@ public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
 
 此示例配置在打开 PDF 时应应用的初始缩放级别。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) 带一个 [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个 [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) 带一个 [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/)。
 1. 将操作指定为文档打开操作并保存结果。
 
 ```java
@@ -239,8 +239,8 @@ public static void setZoomFactor(Path inputFile, Path outputFile) {
 
 使用此示例检查 PDF 是否已经为其打开操作定义了明确的缩放级别。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 检查打开操作是否为 a [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) 带一个 [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 检查打开操作是否为 a [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) 带一个 [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/)。
 1. 输出已配置的缩放值，或者报告未设置缩放。
 
 ```java

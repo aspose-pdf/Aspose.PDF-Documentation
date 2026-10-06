@@ -20,11 +20,11 @@ Aspose.PDF for Java 提供了多种 API，用于通过密码和权限保护 PDF 
 示例在 `ProtectDocumentExamples.java` 演示如何：
 
 1. 对...进行加密 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 使用用户密码和所有者密码。
-1. 使用...限制权限 [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/).
-1. 选择一个 [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) 用于受保护的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 解密受保护的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 更改现有密码 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 使用...测试候选密码 [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) 和 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 使用...限制权限 [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/)。
+1. 选择一个 [CryptoAlgorithm](https://reference.aspose.com/pdf/java/com.aspose.pdf/cryptoalgorithm/) 用于受保护的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 解密受保护的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 更改现有密码 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 使用...测试候选密码 [PdfFileInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffileinfo/) 和 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ## 使用受限权限加密 PDF
 

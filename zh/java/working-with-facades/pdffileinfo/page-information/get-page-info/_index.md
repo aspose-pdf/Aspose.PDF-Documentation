@@ -4,7 +4,7 @@ linktitle: 获取页面信息
 type: docs
 weight: 10
 url: /zh/java/get-page-info/
-description: 了解如何在 Java 中使用 PdfFileInfo 门面检查页面宽度、高度和旋转。
+description: 了解如何在 Java 中使用 PdfFileInfo 类检查页面宽度、高度和旋转。
 lastmod: "2026-10-06"
 draft: false
 sitemap:

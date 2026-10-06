@@ -14,10 +14,10 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 删除 PDF 文档中�
 
 ## 通过索引删除嵌入的图像
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 访问目标上的图像资源 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 访问目标上的图像资源 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 通过索引从页面资源集合中删除目标图像。
-1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void deleteImage(Path inputFile, Path outputFile) {

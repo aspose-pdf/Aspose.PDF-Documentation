@@ -1,25 +1,25 @@
 ---
-title: 基于文本的注释（使用 Java）
-linktitle: 文本注释
+title: 基于文本的批注（使用 Java）
+linktitle: 文本批注
 type: docs
 weight: 10
 url: /zh/java/text-based-annotations/
-description: 了解如何使用 Aspose.PDF for Java 创建、检查和删除基于文本的 PDF 注释，包括 free text、highlight、strikeout、squiggly 和 underline markup。
+description: 了解如何使用 Aspose.PDF for Java 创建、检查和删除基于文本的 PDF 批注，包括 free text、highlight、strikeout、squiggly 和 underline markup。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: 在 Java 中处理文本 PDF 注释。
+AlternativeHeadline: 在 Java 中处理文本 PDF 批注。
 Abstract: 本文演示了如何在 Aspose.PDF for Java 中使用五种基于文本的批注类型，包括自由文本、突出显示、删除线、波浪线和下划线批注。了解如何添加、检索和删除批注，以及标记文本和扁平化交互式标记等高级技术。
 ---
-基于文本的批注使审阅者和开发人员能够向 PDF 文档添加交互式注释、突出显示和标记，而不更改核心内容。本节介绍了在文档审阅工作流、合规情景和协作反馈周期中使用的五种实用批注类型。
+基于文本的批注使审阅者和开发人员能够向 PDF 文档添加交互式批注、突出显示和标记，而不更改核心内容。本节介绍了在文档审阅工作流、合规情景和协作反馈周期中使用的五种实用批注类型。
 
-## 快速参考：注释类型
+## 快速参考：批注类型
 
-本文涵盖以下基于文本的注释类型：
+本文涵盖以下基于文本的批注类型：
 
-- **Free Text**：可编辑的文本框，用于添加注释和评论
+- **Free Text**：可编辑的文本框，用于添加批注和评论
 - **高亮**: 对重要文本段落的视觉强调
 - **Strikeout**: 在审阅期间将文本标记为删除或修订
 - **Squiggly**：用于指示错误或关注的波浪下划线
@@ -27,13 +27,13 @@ Abstract: 本文演示了如何在 Aspose.PDF for Java 中使用五种基于文�
 
 ## 添加、获取和删除自由文本批注
 
-自由文本注释作为浮动文本框，可以在不影响文档结构的情况下进行编辑。使用这些示例可添加评论框、检查其属性或将其删除。
+自由文本批注作为浮动文本框，可以在不影响文档结构的情况下进行编辑。使用这些示例可添加评论框、检查其属性或将其删除。
 
-### 添加自由文本注释
+### 添加自由文本批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/) 带有矩形和外观设置。
-1. 将注释添加到页面并保存文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个带有矩形和外观设置的 [FreeTextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/freetextannotation/)。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {
@@ -51,11 +51,11 @@ public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### 获取自由文本注释
+### 获取自由文本批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历页面上的注释并进行筛选 [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. 检索注释属性或边界。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历页面上的批注并进行筛选 [AnnotationType.FreeText](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/)。
+1. 检索批注属性或边界。
 
 ```java
 public static void freeTextAnnotationGet(Path inputFile) {
@@ -71,9 +71,9 @@ public static void freeTextAnnotationGet(Path inputFile) {
 
 ### 删除自由文本批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 通过遍历页面注释并按类型过滤，查找自由文本注释。
-1. 将匹配的注释添加到删除列表并从页面中移除它们。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 通过遍历页面批注并按类型过滤，查找自由文本批注。
+1. 将匹配的批注添加到删除列表并从页面中移除它们。
 1. 保存已更新的文档。
 
 ```java
@@ -93,15 +93,15 @@ public static void freeTextAnnotationDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 添加、获取和删除高亮注释
+## 添加、获取和删除高亮批注
 
-突出显示注释使用半透明覆盖层标记重要段落。使用这些示例为文档审阅创建高亮，定位已有的高亮，并清理标记。
+突出显示批注使用半透明覆盖层标记重要段落。使用这些示例为文档审阅创建高亮，定位已有的高亮，并清理标记。
 
 ### 添加高亮批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [HighlightAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/highlightannotation/) 使用矩形定义突出显示区域。
-1. 将注释添加到页面并保存文档。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void textHighlightAnnotationAdd(Path inputFile, Path outputFile) {
@@ -116,11 +116,11 @@ public static void textHighlightAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-### 获取高亮注释
+### 获取高亮批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历注释并按 [AnnotationType.Highlight](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. 读取注释属性，如边界或颜色。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历批注并按 [AnnotationType.Highlight](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/)。
+1. 读取批注属性，如边界或颜色。
 
 ```java
 public static void textHighlightAnnotationGet(Path inputFile) {
@@ -136,9 +136,9 @@ public static void textHighlightAnnotationGet(Path inputFile) {
 
 ### 删除高亮批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 通过按类型过滤注释来收集高亮注释。
-1. 从页面中删除每个注释。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 通过按类型过滤批注来收集高亮批注。
+1. 从页面中删除每个批注。
 1. 保存已更新的文档。
 
 ```java
@@ -158,15 +158,15 @@ public static void textHighlightAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## 添加、获取和删除删除线注释
+## 添加、获取和删除删除线批注
 
-删除线注释用于在文本上划线，以指示删除、拒绝或修改。使用这些示例在文档审阅期间应用删除线标记、查找已标记的文本，并删除删除线注释。
+删除线批注用于在文本上划线，以指示删除、拒绝或修改。使用这些示例在文档审阅期间应用删除线标记、查找已标记的文本，并删除删除线批注。
 
-### 添加删除线注释
+### 添加删除线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/) 带有矩形、标题和颜色。
-1. 将注释添加到页面并保存文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个带有矩形、标题和颜色的 [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/)。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void textStrikeoutAnnotationAdd(Path inputFile, Path outputFile) {
@@ -187,9 +187,9 @@ public static void textStrikeoutAnnotationAdd(Path inputFile, Path outputFile) {
 
 ### 获取删除线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历注释并按 [AnnotationType.StrikeOut](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. 读取注释元数据或边界。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历批注并按 [AnnotationType.StrikeOut](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/)。
+1. 读取批注元数据或边界。
 
 ```java
 public static void textStrikeoutAnnotationGet(Path inputFile) {
@@ -203,11 +203,11 @@ public static void textStrikeoutAnnotationGet(Path inputFile) {
 }
 ```
 
-### 删除删除线注释
+### 删除删除线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 通过按类型过滤来收集删除线批注。
-1. 从页面中删除每个注释。
+1. 从页面中删除每个批注。
 1. 保存已更新的文档。
 
 ```java
@@ -229,13 +229,13 @@ public static void textStrikeoutAnnotationDelete(Path inputFile, Path outputFile
 
 ## 添加、获取和删除波浪线批注
 
-波浪线注释（波形下划线）用于突出显示潜在错误、关注点或需要注意的项目。使用这些示例来标记有问题的文本、检查波浪线注释，并从文档中移除它们。
+波浪线批注（波形下划线）用于突出显示潜在错误、关注点或需要注意的项目。使用这些示例来标记有问题的文本、检查波浪线批注，并从文档中移除它们。
 
 ### 添加波浪线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/) 带有矩形和标题。
-1. 将注释添加到页面并保存文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个带有矩形和标题的 [SquigglyAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/squigglyannotation/)。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void textSquigglyAnnotationAdd(Path inputFile, Path outputFile) {
@@ -255,9 +255,9 @@ public static void textSquigglyAnnotationAdd(Path inputFile, Path outputFile) {
 
 ### 获取波浪线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历注释并按 [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. 读取注释的边界或元数据。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历批注并按 [AnnotationType.Squiggly](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/)。
+1. 读取批注的边界或元数据。
 
 ```java
 public static void textSquigglyAnnotationGet(Path inputFile) {
@@ -273,9 +273,9 @@ public static void textSquigglyAnnotationGet(Path inputFile) {
 
 ### 删除波浪线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 通过按类型过滤来收集波浪线批注。
-1. 从页面中删除每个注释。
+1. 从页面中删除每个批注。
 1. 保存已更新的文档。
 
 ```java
@@ -301,9 +301,9 @@ public static void textSquigglyAnnotationDelete(Path inputFile, Path outputFile)
 
 ### 添加下划线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) 带有矩形和颜色。
-1. 将注释添加到页面并保存文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个带有矩形和颜色的 [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/)。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void textUnderlineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -324,9 +324,9 @@ public static void textUnderlineAnnotationAdd(Path inputFile, Path outputFile) {
 
 ### 获取下划线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历注释并按 [AnnotationType.Underline](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).
-1. 读取注释属性或边界。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历批注并按 [AnnotationType.Underline](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/)。
+1. 读取批注属性或边界。
 
 ```java
 public static void textUnderlineAnnotationGet(Path inputFile) {
@@ -342,9 +342,9 @@ public static void textUnderlineAnnotationGet(Path inputFile) {
 
 ### 删除下划线批注
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 通过按类型过滤收集下划线批注。
-1. 从页面中删除每个注释。
+1. 从页面中删除每个批注。
 1. 保存已更新的文档。
 
 ```java
@@ -364,13 +364,13 @@ public static void textUnderlineAnnotationDelete(Path inputFile, Path outputFile
 }
 ```
 
-## 添加带四点坐标的下划线注释
+## 添加带四点坐标的下划线批注
 
 此示例通过从矩形派生的四点显式定义下划线区域。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) 并计算其四点坐标。
-1. 将注释添加到页面并保存文档。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFile) {
@@ -399,8 +399,8 @@ public static void textUnderlineWithQuadPointsAdd(Path inputFile, Path outputFil
 
 检索下划线批注覆盖的实际文本内容。这些示例展示了两种方法：将完整的标记文本读取为单个字符串，或逐个处理文本片段进行详细分析。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历页面上的下划线注释。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历页面上的下划线批注。
 1. 读取任意一个 `getMarkedText()` 或 `getMarkedTextFragments()` 并打印结果。
 
 ```java
@@ -433,11 +433,11 @@ public static void textUnderlineMarkedFragmentsGet(Path inputFile) {
 
 ## 按标题删除下划线批注
 
-通过过滤元数据属性（如标题）有选择地删除注释。此方法可以按作者或用途有针对性地清理注释。
+通过过滤元数据属性（如标题）有选择地删除批注。此方法可以按作者或用途有针对性地清理批注。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 按标题过滤下划线注释。
-1. 删除匹配的注释并保存更新后的文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 按标题过滤下划线批注。
+1. 删除匹配的批注并保存更新后的文档。
 
 ```java
 public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
@@ -459,13 +459,13 @@ public static void textUnderlineByTitleDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 添加并展平下划线注释
+## 添加并展平下划线批注
 
-通过扁平化将交互式下划线注释转换为永久页面内容。这可防止进一步编辑，同时在任何 PDF 查看器中保留下划线的外观。
+通过扁平化将交互式下划线批注转换为永久页面内容。这可防止进一步编辑，同时在任何 PDF 查看器中保留下划线的外观。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) 到页面。
-1. 调用 `flatten()` 在注释上并保存输出文件。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [UnderlineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/underlineannotation/) 添加到页面。
+1. 调用 `flatten()` 在批注上并保存输出文件。
 
 ```java
 public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {
@@ -486,11 +486,11 @@ public static void textUnderlineFlattenAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 相关注释主题
+## 相关批注主题
 
-- [交互式注释](/pdf/zh/java/interactive-annotations/)
-- [标记注释](/pdf/zh/java/markup-annotations/)
+- [交互式批注](/pdf/zh/java/interactive-annotations/)
+- [标记批注](/pdf/zh/java/markup-annotations/)
 - [安全批注](/pdf/zh/java/security-annotations/)
-- [形状注释](/pdf/zh/java/shape-annotations/)
+- [形状批注](/pdf/zh/java/shape-annotations/)
 - [水印批注](/pdf/zh/java/watermark-annotations/)
 - [导入和导出批注](/pdf/zh/java/import-export-annotations/)

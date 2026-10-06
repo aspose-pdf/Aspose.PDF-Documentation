@@ -17,13 +17,13 @@ Eclipse IDE 可以通过额外的软件组件进行扩展。Eclipse 将这些软
 
 ### Aspose.PDF for Java
 
-[Aspose.PDF for Java](https://products.aspose.com/pdf/java/)是一款功能强大的 PDF 文档创建 API，使您的 Java 应用程序能够读取、写入和操作 PDF 文档，而无需使用 Adobe Acrobat。
+[Aspose.PDF for Java](https://products.aspose.com/pdf/java/) 是一款功能强大的 PDF 文档创建 API，使您的 Java 应用程序能够读取、写入和操作 PDF 文档，而无需使用 Adobe Acrobat。
 
 Aspose.PDF for Java 提供了极其丰富的功能，包括 PDF 压缩选项、表格创建与操作、图形支持、图像功能、广泛的超链接功能、扩展的安全控制以及自定义字体处理。
 
 ### Aspose.PDF Java (Maven) for Eclipse
 
-- Aspose.PDF Java (Maven) for Eclipse 是面向 **Eclipse IDE** 的插件，由 **Aspose.** 提供。此插件旨在为使用 Maven 平台进行 Java 开发并希望在项目中使用 Aspose.PDF for Java 的开发者提供帮助。该插件可以帮助您创建使用 Aspose.PDF for Java API 的 Maven 项目，并且还能下载 [代码示例](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) API 的.
+- Aspose.PDF Java (Maven) for Eclipse 是面向 **Eclipse IDE** 的插件，由 **Aspose.** 提供。此插件旨在为使用 Maven 平台进行 Java 开发并希望在项目中使用 Aspose.PDF for Java 的开发者提供帮助。该插件可以帮助您创建使用 Aspose.PDF for Java API 的 Maven 项目，并且还能下载 [代码示例](https://github.com/aspose-pdf/Aspose.Pdf-for-Java) API 的。
 - 该插件提供以下功能，以便在 **Eclipse IDE** 中舒适地使用 Aspose.PDF for Java API:
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -66,7 +66,7 @@ Aspose.PDF 代码示例（向导）
 
 下载 Eclipse IDE
 
-1. 转到 [https://eclipse.org](https://eclipse.org/).
+1. 转到 [https://eclipse.org](https://eclipse.org/)。
 1. 下载并安装面向 Java SE / EE 开发者的推荐 Eclipse IDE。
 
 ### 下载 Aspose.PDF Java (Maven) for Eclipse
@@ -85,9 +85,9 @@ Aspose.PDF 代码示例（向导）
 
 在 Eclipse 中使用 Aspose.PDF Java (Maven)
 
-### 如何应用 Aspose 许可证？
+### 应用 Aspose 许可证
 
-此插件使用 Aspose.PDF 的评估版。评估满意后，您可以在 the 购买许可证 [Aspose 网站](https://purchase.aspose.com/buy).
+此插件使用 Aspose.PDF 的评估版。评估满意后，您可以在 the 购买许可证 [Aspose 网站](https://purchase.aspose.com/buy)。
 要消除评估信息和功能限制，需要应用产品许可证。购买产品后，您将收到许可证文件。请按照以下步骤应用许可证。
 
 - 确保许可证文件命名为 Aspose.PDF.Java.lic
@@ -118,7 +118,7 @@ Aspose.PDF Java (Maven) for Eclipse 是开源的，其源代码可在下列主�
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_Maven_for_Eclipse)
 
-### 如何配置 Aspose.PDF Java (Maven) for Eclipse 的源代码
+### 配置 Aspose.PDF Java (Maven) for Eclipse 的源代码
 
 下面的简要步骤将顺利完成在 Eclipse IDE 中配置 **\"Aspose.PDF Java (Maven) for Eclipse\"** 插件源代码的过程。
 

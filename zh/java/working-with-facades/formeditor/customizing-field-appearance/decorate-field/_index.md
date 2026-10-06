@@ -12,9 +12,9 @@ Abstract: 本文展示了如何绑定现有 PDF，使用颜色和对齐方式配
 ---
 ## 装饰字段
 
-1. 将源 PDF 绑定到 `FormEditor` 外观。
+1. 将源 PDF 绑定到 `FormEditor` 对象。
 2. 配置一个 `FormFieldFacade` 带有所需的颜色和对齐方式。
-3. 将 facade 传递给编辑器并调用 `decorateField(...)`.
+3. 将 facade 传递给编辑器并调用 `decorateField(...)`。
 4. 保存更新后的文档。
 
 ```java

@@ -19,8 +19,8 @@ Aspose.PDF for Java 允许您通过显式的框坐标或基于检测到的内容
 
 当需要将相同的裁剪区域应用于主页面框时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建新的裁剪 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建新的裁剪 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/)。
 1. 将矩形应用于与裁剪相关的页面框，并保存文档。
 
 ```java
@@ -40,7 +40,7 @@ public static void cropPage(Path inputFile, Path outputFile) {
 
 当裁剪区域应从页面上检测到的第一张图像中获取时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 检测图像放置位置。
 1. 如果找到图像，则将裁剪框设置为图像矩形，然后保存文档。
 

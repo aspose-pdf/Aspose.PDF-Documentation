@@ -4,7 +4,7 @@ linktitle: PDF 元数据
 type: docs
 weight: 30
 url: /zh/java/pdf-metadata/
-description: 了解如何使用 PdfFileInfo 外观在 Java 中读取、更新、清除和保存 PDF 元数据。
+description: 了解如何使用 PdfFileInfo 类在 Java 中读取、更新、清除和保存 PDF 元数据。
 lastmod: "2026-10-06"
 draft: false
 sitemap:

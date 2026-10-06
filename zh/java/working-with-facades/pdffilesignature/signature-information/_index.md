@@ -23,7 +23,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 检查签名元数据。该 Jav
 1. 创建一个 `PdfFileSignature` 实例并绑定已签名的 PDF。
 2. 读取签名集合并选择签名名称。
 3. 调用签名信息访问器以获取签署人姓名、日期、原因和位置。
-4. 完成后关闭外观对象。
+4. 完成后关闭 Facades 对象。
 
 ### Java 示例
 

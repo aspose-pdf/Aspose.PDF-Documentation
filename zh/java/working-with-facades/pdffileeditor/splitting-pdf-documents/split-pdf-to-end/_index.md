@@ -4,7 +4,7 @@ linktitle: 将 PDF 拆分至末尾
 type: docs
 weight: 40
 url: /zh/java/split-pdf-to-end/
-description: 在 Java 中使用 PdfFileEditor 门面将 PDF 从选定页面拆分至结束。
+description: 在 Java 中使用 PdfFileEditor 类将 PDF 从选定页面拆分至结束。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

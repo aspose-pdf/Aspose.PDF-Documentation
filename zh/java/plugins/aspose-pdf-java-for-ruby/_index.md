@@ -39,7 +39,7 @@ Project Aspose.PDF Java for Ruby 展示了如何使用 Aspose.PDF Java APIs 在 
 以下是受支持的平台：
 
 - Ruby 2.2.x 或更高版本以及相应的 DevKit。
-- Java 1.5或更高
+- Java 1.5 或更高
 В
 
 ## 下载

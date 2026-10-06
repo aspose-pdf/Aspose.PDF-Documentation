@@ -1,6 +1,6 @@
 ---
-title: 使用 Java 的标记注释
-linktitle: 标记注释
+title: 使用 Java 的标记批注
+linktitle: 标记批注
 type: docs
 weight: 30
 url: /zh/java/markup-annotations/
@@ -11,17 +11,17 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 使用 Java 在 PDF 文件中处理标记批注。
-Abstract: 本文解释了如何使用 Aspose.PDF for Java 在 PDF 文档中创建、检查和删除文本标注注释。它基于仓库中的 Java 示例，涵盖了高亮、下划线、波浪线和删除线注释。
+Abstract: 本文解释了如何使用 Aspose.PDF for Java 在 PDF 文档中创建、检查和删除文本标注批注。它基于仓库中的 Java 示例，涵盖了高亮、下划线、波浪线和删除线批注。
 ---
-本节中的标记注释工作流侧重于便签式评论、插入符号标记以及分组的替换-审阅场景。
+本节中的标记批注工作流侧重于便签式评论、插入符号标记以及分组的替换-审阅场景。
 
-## 添加文本注释
+## 添加文本批注
 
-当您需要在页面上放置带有弹出元数据的便利贴样式文本注释时，请使用此示例。
+当您需要在页面上放置带有弹出元数据的便利贴样式文本批注时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [TextAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/textannotation/) 并配置它的标题、内容、图标和弹出窗口。
-1. 将注释添加到页面并保存文档。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void textAnnotationAdd(Path inputFile, Path outputFile) {
@@ -48,13 +48,13 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 获取文本注释
+## 获取文本批注
 
-此示例扫描页面并打印每个文本注释的矩形。
+此示例扫描页面并打印每个文本批注的矩形。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历页面上的注释。
-1. 按以下方式筛选注释 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` 并打印它们的矩形。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历页面上的批注。
+1. 按以下方式筛选批注 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text` 并打印它们的矩形。
 
 ```java
 public static void textAnnotationGet(Path inputFile) {
@@ -68,12 +68,12 @@ public static void textAnnotationGet(Path inputFile) {
 }
 ```
 
-## 删除文本注释
+## 删除文本批注
 
 当需要从文档中删除现有文本批注时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 收集指定类型的注释 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 收集指定类型的批注 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Text`。
 1. 删除收集的批注并保存输出文件。
 
 ```java
@@ -97,9 +97,9 @@ public static void textAnnotationDelete(Path inputFile, Path outputFile) {
 
 当您需要使用插入符号样式的审阅批注来标记插入的文本时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [CaretAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/caretannotation/) 并配置其弹出窗口和外观。
-1. 将注释添加到页面并保存文档。
+1. 将批注添加到页面并保存文档。
 
 ```java
 public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
@@ -123,13 +123,13 @@ public static void caretAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 获取插入符号注释
+## 获取插入符号批注
 
-此示例读取现有的插入符号注释并打印它们的位置。
+此示例读取现有的插入符号批注并打印它们的位置。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历页面注释。
-1. 按以下方式筛选注释 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` 并打印它们的矩形。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历页面批注。
+1. 按以下方式筛选批注 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret` 并打印它们的矩形。
 
 ```java
 public static void caretAnnotationsGet(Path inputFile) {
@@ -144,12 +144,12 @@ public static void caretAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 删除插入符号注释
+## 删除插入符号批注
 
-当应从页面中删除插入符号注释时，请使用此方法。
+当应从页面中删除插入符号批注时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 收集注释，其类型为 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 收集批注，其类型为 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Caret`。
 1. 删除已收集的批注并保存输出文档。
 
 ```java
@@ -173,11 +173,11 @@ public static void caretAnnotationsDelete(Path inputFile, Path outputFile) {
 
 ## 添加分组替换批注
 
-此示例将插入符号注释与删除线注释相结合，以表示替换式审阅评论。
+此示例将插入符号批注与删除线批注相结合，以表示替换式审阅评论。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建插入符号注释及相关 [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/).
-1. 通过链接注释 `setInReplyTo` 和 `setReplyType`，然后保存文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建插入符号批注及相关 [StrikeOutAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/strikeoutannotation/)。
+1. 通过链接批注 `setInReplyTo` 和 `setReplyType`，然后保存文档。
 
 ```java
 public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
@@ -217,13 +217,13 @@ public static void replaceAnnotationsAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 获取已分组的替换注释
+## 获取已分组的替换批注
 
 此示例检测参与分组替换工作流的删除线批注。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历页面批注并选择删除线批注。
-1. 检查回复关系并打印匹配注释的矩形。
+1. 检查回复关系并打印匹配批注的矩形。
 
 ```java
 public static void replaceAnnotationsGet(Path inputFile) {
@@ -241,11 +241,11 @@ public static void replaceAnnotationsGet(Path inputFile) {
 }
 ```
 
-## 删除分组的替换注释
+## 删除分组的替换批注
 
-当 replace-review 删除线注释应从页面中移除时，请使用此方法。
+当 replace-review 删除线批注应从页面中移除时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 收集表示替换标记的删除线批注。
 1. 删除已收集的批注并保存更新后的文档。
 
@@ -268,11 +268,11 @@ public static void replaceAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 相关注释主题
+## 相关批注主题
 
-- [文本注释](/pdf/zh/java/text-based-annotations/)
-- [交互式注释](/pdf/zh/java/interactive-annotations/)
-- [形状注释](/pdf/zh/java/shape-annotations/)
-- [媒体注释](/pdf/zh/java/media-annotations/)
-- [安全注释](/pdf/zh/java/security-annotations/)
+- [文本批注](/pdf/zh/java/text-based-annotations/)
+- [交互式批注](/pdf/zh/java/interactive-annotations/)
+- [形状批注](/pdf/zh/java/shape-annotations/)
+- [媒体批注](/pdf/zh/java/media-annotations/)
+- [安全批注](/pdf/zh/java/security-annotations/)
 - [水印批注](/pdf/zh/java/watermark-annotations/)

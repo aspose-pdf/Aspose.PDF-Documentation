@@ -20,7 +20,7 @@ Aspose.PDF for Java 允许您通过在文本片段上放置表单字段来添加
 当 PDF 中的现有文本在悬停时应显示工具提示时，请使用此示例。
 
 1. 创建示例 PDF 并重新打开以进行编辑。
-1. 使用以下方式搜索目标文本片段 `TextFragmentAbsorber`.
+1. 使用以下方式搜索目标文本片段 `TextFragmentAbsorber`。
 1. 放置 `ButtonField` 在匹配的文本上覆盖并分配工具提示文本。
 1. 保存更新后的文档。
 
@@ -71,7 +71,7 @@ public static void addToolTipToSearchedText(Path outputFile) {
 当将鼠标悬停在文本区域上时，应显示隐藏的文本字段，请使用此示例。
 
 1. 创建示例 PDF 并重新打开以进行编辑。
-1. 查找触发文本片段 `TextFragmentAbsorber`.
+1. 查找触发文本片段 `TextFragmentAbsorber`。
 1. 创建隐藏 `TextBoxField` 和一个 `ButtonField` 带有进入和退出操作。
 1. 保存最终的 PDF。
 

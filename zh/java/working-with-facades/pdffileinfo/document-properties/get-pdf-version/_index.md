@@ -4,7 +4,7 @@ linktitle: 获取 PDF 版本
 type: docs
 weight: 20
 url: /zh/java/get-pdf-version/
-description: 了解如何使用 PdfFileInfo 外观在 Java 中检索 PDF 文档的版本。
+description: 了解如何使用 PdfFileInfo 类在 Java 中检索 PDF 文档的版本。
 lastmod: "2026-10-06"
 draft: false
 sitemap:

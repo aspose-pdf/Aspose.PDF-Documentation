@@ -1,13 +1,13 @@
 ---
-title: 在Python中添加JavaScript
-linktitle: 在Python中添加JavaScript
+title: 在 Python 中添加 JavaScript
+linktitle: 在 Python 中添加 JavaScript
 type: docs
 weight: 10
 url: /zh/java/adding-javascript-in-python/
-description: 了解如何使用Python和Aspose.PDF在PDF文档中嵌入JavaScript代码，以增强交互性。
+description: 了解如何使用 Python 和 Aspose.PDF 在 PDF 文档中嵌入 JavaScript 代码，以增强交互性。
 lastmod: "2026-10-06"
 ---
-要在Python中使用Aspose.PDF Java添加JavaScript，只需调用Document类的AddJavascript()方法。
+要在 Python 中使用 Aspose.PDF Java 添加 JavaScript，只需调用 Document 类的 AddJavascript()方法。
 
 ```python
 

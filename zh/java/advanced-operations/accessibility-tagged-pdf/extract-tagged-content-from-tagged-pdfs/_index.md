@@ -16,8 +16,8 @@ sitemap:
 
 当您需要访问标记内容容器并希望定义基本文档元数据（例如标题和语言）时，请使用此示例。
 
-1. 创建新 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 获取 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) 对象来自文档。
+1. 创建新 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 从文档获取 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/) 对象。
 1. 设置已标记内容的元数据并保存输出文件。
 
 ```java
@@ -58,7 +58,7 @@ public static void getRootStructure(Path outputFile) {
 
 当您需要遍历结构树中的子元素、检查其属性并更新选定的元数据时，请使用此示例。
 
-1. 打开源 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 从结构树根读取子元素并打印可用的属性。
 1. 访问第一个根子节点的子元素，更新它们的元数据，并保存文档。
 

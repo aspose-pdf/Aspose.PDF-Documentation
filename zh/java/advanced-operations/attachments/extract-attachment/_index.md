@@ -19,7 +19,7 @@ Aspose.PDF for Java 支持多种提取流程，具体取决于附件在文档中
 
 当您需要从 PDF 中保存某个特定的嵌入文件时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历嵌入文件集合，直到找到所需的附件名称。
 1. 将附件流复制到输出文件，并在提取后停止。
 
@@ -50,7 +50,7 @@ public static void extractSingleAttachment(Path inputFile, String attachmentName
 
 ## 打印嵌入文件参数
 
-此辅助方法打印存储在 a 中的元数据 [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/) 对象。
+此辅助方法打印存储在 [FileParams](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileparams/) 对象中的元数据。
 
 1. 检查文件参数对象是否存在。
 1. 读取可用的校验和、创建日期、修改日期和大小值。
@@ -75,7 +75,7 @@ public static void printFileParams(FileParams params) {
 
 当需要将 PDF 中的每个嵌入文件写入输出目录时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历嵌入文件集合，为每个项目确定一个安全的输出文件名。
 1. 打印元数据，保存每个附件流，并持续进行，直至所有文件导出完毕。
 
@@ -114,8 +114,8 @@ public static void extractAttachments(Path inputFile, Path outputDir) throws Exc
 
 当文件通过页面注释而不是仅通过嵌入文件集合附加时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 定位第一个 [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/) 在页面上。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 在页面上定位第一个 [FileAttachmentAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/fileattachmentannotation/)。
 1. 读取其文件规范，导出内容，并打印目标路径。
 
 ```java

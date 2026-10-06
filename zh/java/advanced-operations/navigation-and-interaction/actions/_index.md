@@ -80,7 +80,7 @@ public static void addNamedActionHide(Path inputFile, Path outputFile) {
 
 此示例在文档中创建首页、上一页、下一页和末页按钮。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 为每个页面创建导航按钮并分配相匹配的预定义操作。
 1. 将按钮添加到表单并保存文档。
 
@@ -140,8 +140,8 @@ public static void addNavigationButtons(Path inputFile, Path outputFile) {
 
 当按钮应将表单数据提交到 URL 时使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) 带有目标 URL 和标志。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个带有目标 URL 和标志的 [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/)。
 1. 将操作分配给按钮字段并保存文档。
 
 ```java
@@ -170,7 +170,7 @@ public static void addSubmitAction(Path inputFile, Path outputFile) {
 
 此示例分配在文档打开、保存或打印时运行的 JavaScript 操作。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建所需的 [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) 文档事件的对象。
 1. 分配操作并保存文档。
 

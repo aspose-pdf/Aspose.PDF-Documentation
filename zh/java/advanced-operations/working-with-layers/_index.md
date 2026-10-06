@@ -17,10 +17,10 @@ Aspose.PDF for Java 通过以下方式公开 PDF 图层 `Layer` 每页的 API。
 
 ## 向 PDF 页面添加图层
 
-1. 创建新 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建新 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 添加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
 1. 创建并配置所需的 [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) 页面上的对象。
-1. 保存输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addLayers(Path outputFile) {
@@ -43,10 +43,10 @@ public static void addLayers(Path outputFile) {
 
 ## 锁定图层
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并获取其 [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/) 集合。
-1. 锁定目标 [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/).
-1. 保存更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 锁定目标 [Layer](https://reference.aspose.com/pdf/java/com.aspose.pdf/layer/)。
+1. 保存更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void lockLayer(Path inputFile, Path outputFile) {

@@ -29,6 +29,6 @@ print "New document has been saved, please check the output file"
 
 **下载运行代码**
 
-下载\u0412\u00A0**Concatenate PDF Files (Aspose.PDF)**\u0412\u00A0来自\u0412\u00A0以下提到的任何社交代码站点：
+下载\u0412\u00A0**Concatenate PDF Files (Aspose.PDF)**\u0412\u00A0 来自\u0412\u00A0 以下提到的任何社交代码站点：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/ConcatenatePdfFiles/ConcatenatePdfFiles.py)

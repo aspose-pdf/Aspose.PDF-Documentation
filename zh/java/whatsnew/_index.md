@@ -2053,7 +2053,7 @@ Aspose.PDF for Java 允许加载 Portable Document Format (PDF) 2.0 版本的文
 
 ## Aspose.PDF 21.10 的新功能
 
-### 如何检测隐藏文本？
+### 检测隐藏文本
 
 请使用以下代码：
 
@@ -2080,7 +2080,7 @@ Document pdf = new Document(inFile);
 
 ## Aspose.PDF 21.8 的新功能
 
-### 如何更改数字签名中的文字颜色？
+### 更改数字签名中的文字颜色
 
 在 21.8 版本中，setForegroundColor 允许更改数字签名中的文字颜色：
 

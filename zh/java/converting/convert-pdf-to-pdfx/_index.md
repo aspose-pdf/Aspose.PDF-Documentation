@@ -19,8 +19,8 @@ Aspose.PDF for Java 可以验证并将标准 PDF 文件转换为归档和交换�
 
 当需要将标准 PDF 转换为符合 PDF/A 标准的归档文档时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 调用 `document.convert(...)` 与 [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` 和 [`ConvertErrorAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction/) `Delete`.
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 调用 `document.convert(...)` 与 [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_1B` 和 [`ConvertErrorAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/converterroraction/) `Delete`。
 1. 将验证日志写入侧边 XML 文件，以便在转换期间记录合规性问题。
 1. 保存已验证的 PDF/A 输出。
 
@@ -38,7 +38,7 @@ public static void convertPdfToPdfA(Path inputFile, Path outputFile) {
 当需要将 PDF 转换为面向工程的 PDF/E 标准时，请使用此示例。
 
 1. 创建 [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) 用于 [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_E_1` 以及所需的日志文件路径。
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 调用 `document.convert(options)` 因此，使用准备好的选项对象执行合规性转换。
 1. 保存生成的合规 PDF 文件。
 
@@ -60,7 +60,7 @@ public static void convertPdfToPdfE(Path inputFile, Path outputFile) {
 
 1. 创建 [`PdfFormatConversionOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) 用于 [`PdfFormat`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_X_4` 以及所需的日志文件路径。
 1. 配置一个 [`OutputIntent`](https://reference.aspose.com/pdf/java/com.aspose.pdf/outputintent/) 比如 `FOGRA39` 因此，打印目标颜色配置文件已嵌入到转换设置中。
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例化并调用 `document.convert(options)`.
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF，并调用 `document.convert(options)`。
 1. 保存转换后的 PDF/X 输出。
 
 ```java

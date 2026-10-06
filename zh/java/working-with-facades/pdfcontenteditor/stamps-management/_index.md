@@ -4,7 +4,7 @@ linktitle: 印章管理
 type: docs
 weight: 80
 url: /zh/java/pdfcontenteditor-stamps-management/
-description: 了解在 Aspose.PDF 中 Java PdfContentEditor 外观提供的当前橡胶印章覆盖范围。
+description: 了解在 Aspose.PDF 中 Java PdfContentEditor 类提供的当前橡胶印章覆盖范围。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: Java 中使用 PdfContentEditor 的橡胶印章工作流

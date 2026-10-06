@@ -14,7 +14,7 @@ Abstract: 本文说明了如何使用 Java 在 PDF 文件中处理交互式链�
 
 1. 加载源 PDF 文档并在第一页搜索目标文本。
 2. 使用匹配的文本矩形来创建 `LinkAnnotation` 并分配目标 URI。
-3. 将注释添加到页面并保存更新后的 PDF。
+3. 将批注添加到页面并保存更新后的 PDF。
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {

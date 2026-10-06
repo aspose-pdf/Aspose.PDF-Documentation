@@ -4,11 +4,11 @@ linktitle: 创建 TextBox 字段
 type: docs
 weight: 10
 url: /zh/java/create-textbox-field/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 门面向 PDF 文档添加文本框字段。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 类向 PDF 文档添加文本框字段。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 使用 Java 在 PDF 中创建文本表单字段
-Abstract: 本文展示了如何绑定已有的 PDF，使用 Aspose.PDF for Java 中的 FormEditor 门面添加带默认值的文本字段，并保存修改后的文档。
+Abstract: 本文展示了如何绑定已有的 PDF，使用 Aspose.PDF for Java 中的 FormEditor 类添加带默认值的文本字段，并保存修改后的文档。
 ---
 使用 `FormEditorExamples.createTextBoxField(...)` 向 PDF 表单添加文本字段。
 

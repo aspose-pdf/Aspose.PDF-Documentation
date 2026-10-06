@@ -16,7 +16,7 @@ Abstract: 本节介绍使用 Aspose.PDF for Java 的高级 PDF 处理工作流�
 高级操作部分将用于编辑、检查、保护和增强现有 PDF 文档的 Java 工作流进行归类，这些工作流超出了基本的创建、打开、保存、合并和拆分操作。
 
 - [文档操作](/pdf/zh/java/working-with-documents/) - 压缩、拆分和合并文档，并对整个文档进行其他操作。
-- [处理页面](/pdf/zh/java/working-with-pages/) - 添加、移动或删除，裁剪页面，添加水印、印章等。
+- [处理页面](/pdf/zh/java/working-with-pages/) - 添加、移动、删除或裁剪页面，添加水印、印章等。
 - [处理图像](/pdf/zh/java/working-with-images/) - 添加、提取或删除 PDF 文档中的图像。
 - [附件](/pdf/zh/java/attachments/) - 你将学习如何使用 Python 程序化地添加和删除 PDF 附件。
 - [导航和交互](/pdf/zh/java/navigation-and-interaction/) - 处理操作、书签、页面导航。

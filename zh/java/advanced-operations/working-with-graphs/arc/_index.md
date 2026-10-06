@@ -17,13 +17,13 @@ Aspose.PDF for Java 使用 `Graph` 以及形状对象，例如 `Arc` 和 `Line` 
 
 ## 添加弧线轮廓
 
-1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器并将其添加到页面。
 1. 创建 [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) 形状并配置其几何属性。
 1. 添加 [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) 到 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器。
-1. 设置示例所需的形状属性，包括 [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 设置示例所需的形状属性，包括 [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/)。
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addArc(Path outputFile) {
@@ -46,13 +46,13 @@ public static void addArc(Path outputFile) {
 
 ## 添加一个已填充的弧段
 
-1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器并将其添加到页面。
 1. 创建 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 形状并配置其坐标。
 1. 创建 [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) 形状并配置其几何属性。
 1. 添加 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 和 [Arc](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/arc/) 到 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器。
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addArcFilled(Path outputFile) {

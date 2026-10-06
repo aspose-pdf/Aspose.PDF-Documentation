@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: 在 Java 中对 PDF 文档进行签名、认证、加密、解密和保护
 Abstract: 本节介绍如何使用 Aspose.PDF for Java 来保护和签署 PDF 文档。学习如何应用数字签名、认证文档，提取并验证签名信息，以及管理 PDF 加密、密码和访问权限。
 ---
-Aspose.PDF for Java 包含用于数字签名和文档安全的外观 API。您可以对 PDF 文件进行签名或认证，检查现有签名，对文档进行加密和解密，并使用用户密码和所有者密码应用权限限制。
+Aspose.PDF for Java 包含用于数字签名和文档安全的 Facades API。您可以对 PDF 文件进行签名或认证，检查现有签名，对文档进行加密和解密，并使用用户密码和所有者密码应用权限限制。
 
 - [对 PDF 文件进行数字签名](/pdf/zh/java/digitally-sign-pdf-file/)
 - [提取签名信息](/pdf/zh/java/extract-image-and-signature-information/)

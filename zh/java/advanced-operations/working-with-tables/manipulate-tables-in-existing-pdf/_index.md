@@ -15,13 +15,13 @@ Abstract: 本文说明了如何使用 Aspose.PDF for Java 操作 PDF 文档中�
 aliases:
     - "/zh/java/manipulate-tables-in-existing-pdf/"
 ---
-使用 `TableAbsorber` 当您需要定位现有表并更新其内容时。
+当需要定位现有表并更新其内容时，使用 `TableAbsorber`。
 
 ## 替换表格单元格中的文本
 
 当需要在检测到的单元格中更新文本而无需重新构建整个表格时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并访问包含 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并访问包含 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/)。
 1. 验证目标表格和单元格文本片段是否存在。
 1. 替换单元格文本并保存更新后的文档。
 

@@ -15,11 +15,11 @@ Abstract: 本文解释了如何使用 Aspose.PDF for Java 旋转 PDF 页面。�
 ---
 当需要跨一个或多个页面更改方向时，请使用页面旋转 API。
 
-## 将所有页面旋转90度
+## 将所有页面旋转 90 度
 
 当文档中的每一页都应顺时针旋转时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历全部 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 对象并设置旋转值。
 1. 保存更新后的 PDF。
 

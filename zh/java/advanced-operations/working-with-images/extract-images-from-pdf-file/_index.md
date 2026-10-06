@@ -16,7 +16,7 @@ Aspose.PDF for Java 支持直接图像资源提取和基于位置的过滤。
 
 当您需要从 PDF 页面保存特定图像资源时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问目标 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) 来自页面资源。
 1. 将图像流保存到输出文件。
 

@@ -35,6 +35,6 @@ puts "Empty page added successfully!"
 
 ## 下载运行代码
 
-下载\u0412\u00A0**插入空页面 (Aspose.PDF)**\u0412\u00A0来自\u0412\u00A0以下提到的任何社交编码站点:
+下载\u0412\u00A0**插入空页面 (Aspose.PDF)**\u0412\u00A0 来自\u0412\u00A0 以下提到的任何社交编码站点:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/insertemptypage.rb)

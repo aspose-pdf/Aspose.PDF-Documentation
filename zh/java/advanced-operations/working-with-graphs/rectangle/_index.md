@@ -15,12 +15,12 @@ Abstract: 本文演示如何使用 Aspose.PDF for Java 向 PDF 文档添加矩�
 ---
 ## 添加矩形轮廓
 
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器并将其添加到页面。
 1. 创建 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) 形状并配置其几何。
 1. 添加 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) 到 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器。
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addRectangle(Path outputFile) {
@@ -51,11 +51,11 @@ public static void addRectangle(Path outputFile) {
 
 ## 控制矩形的 z-order
 
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 设置所需的 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 大小。
 1. 添加已配置的 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/rectangle/) 形状到目标页面，并使用所需的 z-order。
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void controlZOrderOfRectangle(Path outputFile) {

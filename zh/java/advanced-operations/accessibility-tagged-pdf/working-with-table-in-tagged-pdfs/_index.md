@@ -16,7 +16,7 @@ Tagged table APIs 让您能够创建具有显式标题、正文行、页脚以�
 
 当您需要一个带有标题、主体、页脚和表格摘要元数据的基本可访问表格时，请使用此示例。
 
-1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/).
+1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [TableElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/tableelement/)。
 1. 配置表格边框，并使用共享的帮助方法填充内容。
 1. 设置表格的 summary 属性并保存文档。
 
@@ -152,7 +152,7 @@ public static void styleTableRow(Path outputFile) {
 
 此示例使用共享的帮助方法创建一个具有单元格级别格式设置和合并单元格的表格。
 
-1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 添加一个表格元素，并通过辅助方法填充它，同时启用单元格样式。
 1. 保存文档。
 

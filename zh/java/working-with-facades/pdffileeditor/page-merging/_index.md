@@ -4,7 +4,7 @@ linktitle: 合并 PDF 文件
 type: docs
 weight: 40
 url: /zh/java/page-merging/
-description: 了解如何在 Java 中使用 PdfFileEditor 外观合并 PDF 文件。
+description: 了解如何在 Java 中使用 PdfFileEditor 类合并 PDF 文件。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

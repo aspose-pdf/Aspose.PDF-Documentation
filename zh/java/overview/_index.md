@@ -98,7 +98,7 @@ Aspose.PDF for Java 库具有不同的操作方式 [批注](/pdf/zh/java/annotat
 - 额外批注
 
 此外，我们的 Library 允许您在 PDF 中添加、提取和删除附件。
-欲了解更多详情，请查看下文。 [文档页面](/pdf/zh/java/attachments/).
+欲了解更多详情，请查看下文。 [文档页面](/pdf/zh/java/attachments/)。
 
 ###  PDF 文件元数据
 
@@ -106,7 +106,7 @@ Aspose.PDF for Java 库具有不同的操作方式 [批注](/pdf/zh/java/annotat
 
 PDF 文件元数据具有多种用途，包括文档识别、归属、版本跟踪、描述、可搜索性、可访问性、安全性、互操作性、保存和合规性。
 
-轻松快速地管理 [元数据](/pdf/zh/java/pdf-file-metadata/) 在 PDF 文档中使用 **Aspose.PDF for Java** 库。
+使用 **Aspose.PDF for Java** 库，轻松快速地管理 PDF 文档中的 [元数据](/pdf/zh/java/pdf-file-metadata/)。
 
 ### 添加、替换或删除文本和图像
 
@@ -114,7 +114,7 @@ PDF 文件元数据具有多种用途，包括文档识别、归属、版本跟�
 
 使用 Aspose.PDF，您可以编辑 PDF 内的文本，替换或旋转文本，搜索或获取 PDF 中的文本。
 
-您还可以添加、改变位置、删除图像，并进行更多操作 [复杂操作](/pdf/zh/java/working-with-images/) 在您的 PDF 中包含图像。
+还可以在 PDF 中添加、移动和删除图像，以及执行更多 [复杂操作](/pdf/zh/java/working-with-images/)。
 
 ### 拆分、连接、提取或插入页面
 
@@ -136,7 +136,7 @@ Aspose.PDF 允许使用 Java 将 PDF 转换为不同的图像格式。以下是�
 - GIF
 - SVG
 
-Aspose.PDF Library 使用 DocumentDevice 或 ImageDevice 类进行 PDF 到图像的转换。[将 PDF 转换为不同的图像格式](/pdf/zh/java/convert-pdf-to-images-format/).
+Aspose.PDF Library 使用 DocumentDevice 或 ImageDevice 类进行 PDF 到图像的转换。[将 PDF 转换为不同的图像格式](/pdf/zh/java/convert-pdf-to-images-format/)。
 
 ### 打印 PDF 文档
 
@@ -158,7 +158,7 @@ Aspose.PDF for Java 提供了不同的方式来打印 PDF 文件：
 
 ## 技术支持
 
-有关 Aspose.PDF 技术支持的更多信息，请查看 [支持页面](/pdf/zh/java/technical-support/).
+有关 Aspose.PDF 技术支持的更多信息，请查看 [支持页面](/pdf/zh/java/technical-support/)。
 
 了解更多：
 

@@ -56,4 +56,4 @@ lastmod: "2026-10-06"
  这将把所选类别 **Code Examples** 的 Java 文件复制到项目的 **com.aspose.pdf.examples** 包下。此外，代码示例所需的任何资源也会复制到 **src/main/resources** 文件夹，如下所示：
 
  查看示例代码，编译并运行。
- 您现在可以测试其他示例并开始使用。 [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx).
+ 您现在可以测试其他示例并开始使用。 [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)。

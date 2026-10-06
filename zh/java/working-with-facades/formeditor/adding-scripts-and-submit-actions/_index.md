@@ -4,7 +4,7 @@ linktitle: 添加脚本和提交操作
 type: docs
 weight: 40
 url: /zh/java/adding-scripts-and-submit-actions/
-description: 了解如何在 Java 中使用 FormEditor 外观向 PDF 表单添加脚本、配置提交 URL 并删除字段操作。
+description: 了解如何在 Java 中使用 FormEditor 类向 PDF 表单添加脚本、配置提交 URL 并删除字段操作。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 在 Java 中向 PDF 表单添加字段脚本和提交操作

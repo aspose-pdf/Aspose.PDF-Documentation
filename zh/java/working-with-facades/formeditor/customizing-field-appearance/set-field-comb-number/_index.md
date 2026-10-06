@@ -12,7 +12,7 @@ Abstract: 本文演示了如何绑定现有 PDF，为字段设置组合编号，
 ---
 ## 设置字段组合编号
 
-1. 将源 PDF 绑定到 `FormEditor` 外观。
+1. 将源 PDF 绑定到 `FormEditor` 对象。
 2. 调用 `setFieldCombNumber(...)` 针对目标字段和组合值。
 3. 保存更新后的文档。
 

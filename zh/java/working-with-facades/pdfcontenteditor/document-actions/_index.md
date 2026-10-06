@@ -4,7 +4,7 @@ linktitle: 文档操作
 type: docs
 weight: 30
 url: /zh/java/pdfcontenteditor-document-actions/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 外观添加或删除文档级操作。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 类添加或删除文档级操作。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 在 Java 中使用 PdfContentEditor 处理文档操作

@@ -19,7 +19,7 @@ Abstract: 本文介绍了如何使用 Aspose.PDF for Java 从 PDF 文档中删�
 
 当要在一次操作中移除选定页面上的所有表单资源时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问 [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) 针对目标页面。
 1. 清空集合并保存更新后的文档。
 
@@ -37,10 +37,10 @@ public static void removeAllForms(Path inputFile, int pageNum, Path outputFile) 
 
 当仅需删除选定的表单资源（例如打字机表单）时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问 [XFormCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/xformcollection/) 针对目标页面。
 1. 过滤 [XForm](https://reference.aspose.com/pdf/java/com.aspose.pdf/xform/) 您想要移除的资源并将其从集合中删除。
-1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void removeSpecifiedForm(Path inputFile, int pageNum, Path outputFile) {

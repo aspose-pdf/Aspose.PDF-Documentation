@@ -15,7 +15,7 @@ Abstract: 本文说明了如何使用 Aspose.PDF for Java 检查 PDF 文档中�
 ---
 当您需要审计文档排版、检查嵌入资源或在转换或归档工作流之前验证字体使用情况时，请使用字体提取。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 调用 `document.getFontUtilities().getAllFonts()` 收集每个 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) 由文档引用的资源。
 1. 遍历已提取的 [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) 对象，并从字体元数据中读取每个字体名称。
 1. 打印字体名称，以便对文档排版进行审计或导出。

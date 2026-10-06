@@ -20,7 +20,7 @@ Aspose.PDF for Java 提供文本格式控制功能，包括间距、列表、注
 当段落文本应使用固定的行间距值时，请使用此示例。
 
 1. 创建一个新的 PDF 文档并添加一个页面。
-1. 加载或准备源文本并创建一个 `TextFragment`.
+1. 加载或准备源文本并创建一个 `TextFragment`。
 1. 设置行间距，向页面添加片段，并保存文档。
 
 ```java
@@ -165,7 +165,7 @@ public static void createBulletListHtmlVersion(Path outputFile) {
 当需要从 HTML 标记生成有序列表格式时，请使用此示例。
 
 1. 创建一个新的 PDF 文档并添加一个页面。
-1. 构建有序HTML列表字符串。
+1. 构建有序 HTML 列表字符串。
 1. 将其添加为一个 `HtmlFragment` 并保存文档。
 
 ```java
@@ -400,7 +400,7 @@ public static void addFootnoteCustomText(Path outputFile) {
 当需要对分隔脚注与页面内容的线条进行显式样式设置时，请使用此示例。
 
 1. 创建一个新的 PDF 文档并添加一个页面。
-1. 通过配置页面注释线样式 `GraphInfo`.
+1. 通过配置页面注释线样式 `GraphInfo`。
 1. 添加带脚注的文本片段并保存文档。
 
 ```java
@@ -615,7 +615,7 @@ public static void usingInlineParagraphProperty(Path outputFile) {
 在文章式文本需要跨多列流动时使用此示例。
 
 1. 创建一个新的 PDF 文档并配置页面边距。
-1. 添加标题内容并创建多列 `FloatingBox`.
+1. 添加标题内容并创建多列 `FloatingBox`。
 1. 在其中填入文字并保存最终的 PDF。
 
 ```java

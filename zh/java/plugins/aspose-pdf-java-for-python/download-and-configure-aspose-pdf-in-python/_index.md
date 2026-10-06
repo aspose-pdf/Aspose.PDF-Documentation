@@ -26,7 +26,7 @@ sitemap:
 - Aspose.PDF Java for Python 示例
   - [Aspose.PDF Java for Python](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)
 
-## 如何配置源代码
+## 配置源代码
 
 请遵循以下简单步骤В 以打开并扩展源代码，同时使用：
 

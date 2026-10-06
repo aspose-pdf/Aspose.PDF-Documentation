@@ -19,7 +19,7 @@ Aspose.PDF for Java 支持 HTML 导出，具有图像、SVG、页面拆分、透
 
 当需要将 PDF 导出为标准 HTML 文档时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建默认 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 用于标准 HTML 序列化。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，PDF 页面内容被导出为 HTML 标记。
 1. 保存生成的 HTML 输出。
@@ -38,7 +38,7 @@ public static void convertPdfToHtml(Path inputFile, Path outputFile) {
 
 在 HTML 导出期间，如果提取的图像应写入为单独的文件，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并设置 `setSpecialFolderForAllImages(...)` 到专用的图像输出目录。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，栅格图像会作为单独的资源文件输出，而不是仅内联输出。
 1. 将 HTML 输出连同生成的图像资源一起保存。
@@ -58,8 +58,8 @@ public static void convertPdfToHtmlStoringImages(Path inputFile, Path outputFile
 
 当每个 PDF 页面应在 HTML 输出中单独呈现时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并启用 `setSplitIntoPages(true)`.
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并启用 `setSplitIntoPages(true)`。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 所以每个 PDF 页面都会被写成单独的 HTML 输出。
 1. 保存生成的 HTML 文件。
 
@@ -78,7 +78,7 @@ public static void convertPdfToHtmlMultiPage(Path inputFile, Path outputFile) {
 
 当向量内容应作为单独的 SVG 资源输出时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并设置 `setSpecialFolderForSvgImages(...)` 到外部 SVG 资源目录。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，矢量图形存储在主 HTML 文件之外。
 1. 保存 HTML 输出和 SVG 资源。
@@ -98,7 +98,7 @@ public static void convertPdfToHtmlStoringSvg(Path inputFile, Path outputFile) {
 
 在 HTML 导出时应优化 SVG 输出，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并为 SVG 资源配置专用文件夹。
 1. 启用 `setCompressSvgGraphicsIfAny(true)` 因此，在导出过程中 SVG 资产会被压缩。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 并保存转换后的 HTML 文件。
@@ -119,7 +119,7 @@ public static void convertPdfToHtmlCompressSvg(Path inputFile, Path outputFile) 
 
 当页面背景应在 HTML 输出中渲染为 PNG 图像时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并将光栅图像保存模式设置为 PNG 页面背景。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，页面背景内容会以 PNG 支持的 HTML 层形式输出。
 1. 保存转换后的 HTML 输出。
@@ -140,10 +140,10 @@ public static void convertPdfToHtmlPngBackground(Path inputFile, Path outputFile
 
 当只需要正文标记而不是完整的 HTML 文档外壳时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并将标记生成模式设置为 `WriteOnlyBodyContent`.
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并将标记生成模式设置为 `WriteOnlyBodyContent`。
 1. 保持 `setSplitIntoPages(true)` 启用时，即使仅输出正文也应保持分页。
-1. 调用 `document.save(outputFile.toString(), saveOptions)` 并保存HTML输出。
+1. 调用 `document.save(outputFile.toString(), saveOptions)` 并保存 HTML 输出。
 
 ```java
 public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) {
@@ -162,9 +162,9 @@ public static void convertPdfToHtmlBodyContent(Path inputFile, Path outputFile) 
 
 在需要在 HTML 导出中保留透明文本时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并启用透明和带阴影文本的保留。
-1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，透明度相关的文本外观在HTML结果中得以保留。
+1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，透明度相关的文本外观在 HTML 结果中得以保留。
 1. 保存转换后的 HTML 输出。
 
 ```java
@@ -183,8 +183,8 @@ public static void convertPdfToHtmlTransparentTextRendering(Path inputFile, Path
 
 当 PDF 图层可见性应在 HTML 结果中反映时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并启用 `setConvertMarkedContentToLayers(true)`.
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建 [`HtmlSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlsaveoptions/) 并启用 `setConvertMarkedContentToLayers(true)`。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此标记的 PDF 内容被映射到 HTML 层。
 1. 保存导出的 HTML 文件。
 

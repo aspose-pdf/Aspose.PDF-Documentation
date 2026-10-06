@@ -19,7 +19,7 @@ Aspose.PDF for Java 通过文档大纲模型以及 `PdfBookmarkEditor` 立面。
 
 当您需要检查文档大纲中的顶级书签条目时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历大纲集合。
 1. 读取并打印书签的标题、样式和颜色值。
 
@@ -41,7 +41,7 @@ public static void getBookmarks(Path inputFile) {
 
 此示例使用 `PdfBookmarkEditor` 提取书签标题、层级、页码和动作。
 
-1. 将源 PDF 绑定到 [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/).
+1. 将源 PDF 绑定到 [PdfBookmarkEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdfbookmarkeditor/)。
 1. 提取书签集合并遍历它。
 1. 打印每个书签的级别、标题、页码和操作信息。
 
@@ -70,7 +70,7 @@ public static void getBookmarkPageNumber(Path inputFile) {
 
 当您需要检查顶层和嵌套的大纲项时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历顶层大纲并打印其属性。
 1. 检测子书签，然后遍历它们并打印其属性。
 
@@ -103,7 +103,7 @@ public static void getChildBookmarks(Path inputFile) {
 
 当需要修改现有书签标题和样式时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问目标大纲项及其子书签。
 1. 更新书签属性并保存文档。
 
@@ -125,7 +125,7 @@ public static void updateBookmarks(Path inputFile, Path outputFile) {
 
 当文档显示时，书签面板应打开并显示展开的目录项时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 将页面模式设置为使用大纲，并将每个大纲项标记为打开状态。
 1. 保存已更新的文档。
 

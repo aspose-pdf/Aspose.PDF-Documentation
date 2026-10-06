@@ -4,7 +4,7 @@ linktitle: 创建 N-Up PDF 文档
 type: docs
 weight: 10
 url: /zh/java/create-n-up-pdf-document/
-description: 在 Java 中使用 PdfFileEditor 门面创建 2x2 N-Up PDF 布局。
+description: 在 Java 中使用 PdfFileEditor 类创建 2x2 N-Up PDF 布局。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

@@ -15,18 +15,18 @@ Abstract: 本文展示了如何使用 Aspose.PDF 在 Java 中创建 PDF 文件�
 ---
 在代码中创建 PDF 文件是报告、发票和生成的业务文档的常见需求。Aspose.PDF for Java 提供了一种直接从头构建文档的方法。
 
-## 如何在 Java 中创建 PDF 文件
+## 在 Java 中创建 PDF 文件
 
 以编程方式创建 PDF 文档：
 
 1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对象。
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
-1. 添加一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 到页面段落。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
+1. 将一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 添加到页面段落。
 1. 保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到输出文件。
 
 ## 创建一个简单的 PDF 文档
 
-以下 Java 示例基于 `CreatePdfDocumentExamples.java`.
+以下 Java 示例基于 `CreatePdfDocumentExamples.java`。
 
 ```java
 public static void createNewDocument(Path outputFile) {

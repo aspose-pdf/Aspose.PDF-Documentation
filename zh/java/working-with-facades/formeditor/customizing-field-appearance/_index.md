@@ -4,7 +4,7 @@ linktitle: 自定义字段外观
 type: docs
 weight: 30
 url: /zh/java/customizing-field-appearance/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 外观来自定义 PDF 表单字段的外观和行为。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 类来自定义 PDF 表单字段的外观和行为。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 在 Java 中自定义表单字段的外观和行为

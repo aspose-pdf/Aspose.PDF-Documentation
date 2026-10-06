@@ -4,7 +4,7 @@ linktitle: 解密 PDF 文件
 type: docs
 weight: 20
 url: /zh/java/decrypt-pdf-file/
-description: 了解如何在 Java 中使用 PdfFileSecurity 外观解密 PDF。
+description: 了解如何在 Java 中使用 PdfFileSecurity 类解密 PDF。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -21,7 +21,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 解密 PDF。Java 示例集包�
 ### 步骤
 
 1. 创建一个 `PdfFileSecurity` 实例。
-2. 将加密的 PDF 绑定到 `bindPdf`.
+2. 将加密的 PDF 绑定到 `bindPdf`。
 3. 调用 `decryptFile` 或 `tryDecryptFile` 使用所有者密码。
 4. 如果解密成功，保存输出。
 5. 关闭安全对象。

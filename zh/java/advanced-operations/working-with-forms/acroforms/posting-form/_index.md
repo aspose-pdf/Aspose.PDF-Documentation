@@ -17,8 +17,8 @@ Aspose.PDF for Java 支持 facade-based 和 DOM-based 提交按钮创建。
 
 ## 使用 FormEditor 添加提交按钮
 
-1. 创建一个 [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) 源 PDF 文档的外观。
-1. 通过该添加已配置的提交按钮对象 [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) 外观。
+1. 为源 PDF 文档创建一个 [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) 对象。
+1. 通过 [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) 对象添加已配置的提交按钮。
 1. 保存更新后的 PDF 文档。
 
 ```java
@@ -37,10 +37,10 @@ public static void addSubmitButton(Path inputFile, Path outputFile) {
 
 ## 手动添加提交操作
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建 [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) 和 URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建 [SubmitFormAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/submitformaction/) 和 URL [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/)。
 1. 创建 [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) 在目标上 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并分配提交操作。
-1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addSubmitAction(Path inputFile, Path outputFile) {

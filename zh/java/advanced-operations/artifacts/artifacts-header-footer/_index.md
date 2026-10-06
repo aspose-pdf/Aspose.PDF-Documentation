@@ -19,7 +19,7 @@ Abstract: 这篇文章解释了如何使用 Aspose.PDF for Java 在 PDF 文档�
 
 当您需要具有一致文本样式和对齐方式的可复用页眉伪元素时，请使用此助手。
 
-1. 创建一个 [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
+1. 创建一个 [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/)。
 1. 设置其文本、字体设置和前景颜色。
 1. 配置水平对齐并返回该工件。
 
@@ -39,7 +39,7 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 
 此助手创建一个可重复使用的页脚工件，其样式模式与页眉工件相同。
 
-1. 创建一个 [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
+1. 创建一个 [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/)。
 1. 设置其文本、文本状态和前景色。
 1. 配置对齐方式并返回制品。
 
@@ -59,7 +59,7 @@ public static FooterArtifact createFooterArtifact(String text) {
 
 当页面应显示可重复使用的页眉工件时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 通过辅助方法创建页眉工件。
 1. 将工件添加到页面并保存输出文件。
 
@@ -77,7 +77,7 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 
 当页面需要显示具有可重用格式的页脚工件时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 通过帮助方法创建页脚工件。
 1. 将工件添加到页面并保存输出文件。
 
@@ -95,7 +95,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 
 当需要从页面删除现有的页眉和页脚工件时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 逆序遍历页面工件集合。
 1. 删除子类型为 header 或 footer 的分页伪影，然后保存文档。
 

@@ -15,4 +15,4 @@ Java `FormExamples` 类包含直接示例：
 - `flattenAllFields(...)`
 - `renameFormFields(...)`
 
-该存储库目前不包含单独的 Java `Form` 外观示例仅针对选定子集字段进行展平，使子页面记录为范围说明而非伪造的示例代码。
+此仓库目前不包含使用 Java `Form` 类仅展平选定字段子集的专用示例，因此相应子页面保留为范围说明。

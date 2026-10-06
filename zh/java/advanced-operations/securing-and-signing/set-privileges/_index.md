@@ -17,9 +17,9 @@ Aspose.PDF for Java 通过以下方式公开 PDF 安全操作 `PdfFileSecurity` 
 
 ## 使用用户密码和所有者密码加密 PDF
 
-1. 创建并绑定该 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) 源 PDF 文档的外观层。
+1. 创建 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) 对象并绑定源 PDF 文档。
 1. 配置 [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) 和 [KeySize](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/keysize/) 示例所需的属性。
-1. 通过保存更新的 PDF 文档 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. 通过保存更新的 PDF 文档 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/)。
 
 ```java
 public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFile) {
@@ -39,9 +39,9 @@ public static void encryptPdfWithUserOwnerPassword(Path inputFile, Path outputFi
 
 ## 解密受保护的 PDF
 
-1. 创建并绑定该 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) 源 PDF 文档的外观层。
+1. 创建 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) 对象并绑定源 PDF 文档。
 1. 使用所有者密码解密受保护的文档。
-1. 通过保存更新的 PDF 文档 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. 通过保存更新的 PDF 文档 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/)。
 
 ```java
 public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) {
@@ -67,10 +67,10 @@ public static void decryptPdfWithOwnerPassword(Path inputFile, Path outputFile) 
 
 以限制打印和复制等操作：
 
-1. 创建并绑定该 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) 源 PDF 文档的外观层。
+1. 创建 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/) 对象并绑定源 PDF 文档。
 1. 设置所需的 [DocumentPrivilege](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/documentprivilege/) 权限或加密选项。
 1. 设置示例所需的属性。
-1. 通过保存更新的 PDF 文档 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/).
+1. 通过保存更新的 PDF 文档 [PdfFileSecurity](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesecurity/)。
 
 ```java
 public static void setPdfPrivilegesWithPasswords(Path inputFile, Path outputFile) {

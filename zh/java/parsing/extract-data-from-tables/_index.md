@@ -17,7 +17,7 @@ Abstract: 本文介绍了如何使用 Aspose.PDF for Java 从 PDF 文档中提�
 
 使用 `TableAbsorber` 在每页上查找表格并遍历行、单元格、文本片段和文本段。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 遍历文档 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 对象，因为表格是逐页检测的。
 1. 创建一个 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) 对每页进行调用 `visit(page)` 填充检测到的表格列表。
 1. 遍历检测到的 [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/), [AbsorbedRow](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedrow/), [AbsorbedCell](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedcell/), [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)，以及 `TextSegment` 对象。
@@ -63,7 +63,7 @@ public static void extractTablesFromPdf(Path inputFile) {
 
 此示例查找方形注释，将其矩形与每个检测到的表格进行比较，并仅输出位于标记区域内的表格。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 获取目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并定位方框 [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) 标记提取区域的。
 1. 创建一个 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) 并调用 `visit(page)` 检测该页上的表格。
 1. 比较每个检测到的 [AbsorbedTable](https://reference.aspose.com/pdf/java/com.aspose.pdf/absorbedtable/) [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 与注释矩形的边界。
@@ -130,7 +130,7 @@ public static void extractTableFromSpecificArea(Path inputFile) {
 
 ## 将表导出到 Excel
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [ExcelSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/excelsaveoptions/) 用于导出。
 1. 将 Excel 输出格式设置为 `XLSX` 因此检测到的表布局被写入为 Excel 工作簿。
 1. 呼叫 `document.save(outputFile.toString(), excelSave)` 将文档导出为 Excel 格式。

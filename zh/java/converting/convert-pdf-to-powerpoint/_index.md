@@ -19,7 +19,7 @@ Aspose.PDF for Java 支持将 PDF 页面导出为可编辑的 PowerPoint 演示�
 
 当 PDF 文档应导出为标准 PowerPoint 演示文稿时使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建默认 [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) 用于可编辑的 PowerPoint 导出。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此 PDF 页面被序列化为 a `.pptx` 演示。
 1. 保存已转换的 PPTX 文件。
@@ -38,8 +38,8 @@ public static void convertPdfToPptx(Path inputFile, Path outputFile) {
 
 当每个 PDF 页面应转换为基于图像的 PowerPoint 幻灯片时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建 [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) 并启用 `setSlidesAsImages(true)`.
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建 [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) 并启用 `setSlidesAsImages(true)`。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，每个 PDF 页面在演示文稿中被渲染为基于图像的幻灯片。
 1. 保存生成的 PPTX 文件。
 
@@ -58,7 +58,7 @@ public static void convertPdfToPptxSlidesAsImages(Path inputFile, Path outputFil
 
 当在 PDF 转 PPTX 导出过程中需要控制幻灯片图像质量时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`PptxSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pptxsaveoptions/) 并设置 `setImageResolution(300)` 以获得更高的幻灯片图像保真度。
 1. 调用 `document.save(outputFile.toString(), saveOptions)` 因此，光栅化的幻灯片内容会以请求的分辨率生成。
 1. 保存输出的演示文稿。

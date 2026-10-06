@@ -51,7 +51,7 @@ public static void addHeaderAndFooterAsText(Path inputFile, Path outputFile) {
 
 在标题或页脚应显示当前页码和总页数时使用此示例。
 
-1. 创建 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 带有页码占位符的对象。
+1. 创建带有页码占位符的 [HeaderFooter](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerfooter/) 对象。
 1. 为两个对象配置边距。
 1. 将它们应用于每一页并保存更新后的 PDF。
 

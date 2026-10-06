@@ -20,7 +20,7 @@ Aspose.PDF for Java 可以将本地 HTML 文件、归档的 MHTML 内容以及�
 当需要将本地 HTML 文件直接转换为 PDF 文档时，请使用此示例。
 
 1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 用于配置在导入期间如何解释 HTML 源的实例。
-1. 设置 [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) 到 `ScaleToPageWidth` 如此宽的HTML内容会被缩放至目标PDF页面宽度，而不是被裁剪。
+1. 设置 [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) 到 `ScaleToPageWidth` 如此宽的 HTML 内容会被缩放至目标 PDF 页面宽度，而不是被裁剪。
 1. 通过将其路径和配置的加载选项传入，打开源 HTML 文件 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 构造函数。
 1. 保存生成的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 作为目标输出路径中的 PDF 文件。
 
@@ -41,7 +41,7 @@ public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
 
 1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 转换设置的实例。
 1. 设置 [`HtmlMediaType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlmediatype/) 到 `Screen` 当 HTML 应该使用针对屏幕显示而非打印媒体的 CSS 规则进行渲染时。
-1. 打开带有配置加载选项的HTML文件，以便在转换期间应用基于媒体查询的样式。
+1. 打开带有配置加载选项的 HTML 文件，以便在转换期间应用基于媒体查询的样式。
 1. 保存结果 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 作为 PDF 文件。
 
 ```java
@@ -75,12 +75,12 @@ public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outp
 }
 ```
 
-## 将HTML转换为带嵌入字体的PDF
+## 将 HTML 转换为带嵌入字体的 PDF
 
 当输出 PDF 应通过嵌入来保留 HTML 字体时，请使用此示例。
 
 1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) HTML 导入配置的实例。
-1. 启用 `setEmbedFonts(true)` 因此，在HTML渲染期间解析的字体会存储在输出PDF中。
+1. 启用 `setEmbedFonts(true)` 因此，在 HTML 渲染期间解析的字体会存储在输出 PDF 中。
 1. 使用这些加载选项打开 HTML 源，以在最终文档中保留原始排版。
 1. 保存 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 作为包含嵌入字体资源的 PDF。
 
@@ -101,7 +101,7 @@ public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
 
 1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 转换设置的实例。
 1. 启用 `setRenderToSinglePage(true)` 因此，导入的 HTML 被布局在单个 PDF 页面上，而不是分布在多个页面上。
-1. 打开带有配置加载选项的源 HTML，并让 Aspose.PDF 在 a 中构建页面布局 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 使用已配置的加载选项打开源 HTML，并让 Aspose.PDF 在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 中构建页面布局。
 1. 保存输出 PDF 文件。
 
 ```java
@@ -134,12 +134,12 @@ public static void convertHtmlToPdfWithSvgData(Path inputFile, Path outputFile) 
 }
 ```
 
-## 将网页转换为PDF
+## 将网页转换为 PDF
 
 当需要将实时网页 URL 渲染并保存为 PDF 文档时，请使用此示例。
 
 1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 实例使用目标 URL，这样相对资源（例如样式表和图像）就可以相对于该地址进行解析。
-1. 将 URL 字符串转换为 `URL` 对象并打开其输入流以获取实时HTML内容。
+1. 将 URL 字符串转换为 `URL` 对象并打开其输入流以获取实时 HTML 内容。
 1. 创建一个 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 从响应流和配置的加载选项中，以便下载的页面使用正确的基本 URL 进行处理。
 1. 使用 try-with-resources 将渲染的网页保存为 PDF 文件并自动关闭流资源。
 

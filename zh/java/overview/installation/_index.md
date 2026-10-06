@@ -34,7 +34,7 @@ Abstract: Aspose.PDF for Python via .NET 是一个全面的库，旨在将 PDF �
 
 {{% alert color="primary" %}}
 
-您可以下载 [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) 用于评估。评估下载与购买下载相同。当您添加几行代码时，评估版本会自动获得许可证 to [应用许可证](/pdf/zh/java/licensing/).
+您可以下载 [Aspose.PDF for Java](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/) 用于评估。评估下载与购买下载相同。当您添加几行代码时，评估版本会自动获得许可证 to [应用许可证](/pdf/zh/java/licensing/)。
 
 {{% /alert %}}
 
@@ -52,7 +52,7 @@ Aspose.PDF 的评估版提供完整的产品功能，但它有两个限制：
 
 ## 从 Aspose 仓库安装 Aspose.PDF for Java
 
-Aspose 在\u0412 上托管所有 Java API [Aspose 存储库](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). 您可以\u0412\u00A0轻松地在 Maven 项目中直接使用 Aspose.PDF for Java API，只需简单的配置。
+Aspose 在\u0412 上托管所有 Java API [Aspose 存储库](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/). 您可以\u0412\u00A0 轻松地在 Maven 项目中直接使用 Aspose.PDF for Java API，只需简单的配置。
 
 ### 指定 Aspose 存储库配置
 

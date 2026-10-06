@@ -4,7 +4,7 @@ linktitle: 签名验证
 type: docs
 weight: 90
 url: /zh/java/signature-verification/
-description: 了解如何使用 PdfFileSignature 门面在 Java 中验证 PDF 签名。
+description: 了解如何使用 PdfFileSignature 类在 Java 中验证 PDF 签名。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -24,7 +24,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 验证 PDF 签名。此 Java �
 2. 选择您想要检查的签名名称。
 3. 调用 `verifySignature` 验证签名。
 4. 调用 `coversWholeDocument` 检查覆盖范围。
-5. 关闭外观对象。
+5. 关闭 Facades 对象。
 
 ### Java 示例
 

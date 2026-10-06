@@ -10,14 +10,14 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: 使用 Java 在 PDF 文件中创建链接注释
-Abstract: 本文展示了如何使用 Aspose.PDF for Java 创建链接注释。它涵盖了启动操作、远程文档导航、文档内页面导航，以及通过将操作附加到 LinkAnnotation 对象来实现基于 URI 的网页链接。
+AlternativeHeadline: 使用 Java 在 PDF 文件中创建链接批注
+Abstract: 本文展示了如何使用 Aspose.PDF for Java 创建链接批注。它涵盖了启动操作、远程文档导航、文档内页面导航，以及通过将操作附加到 LinkAnnotation 对象来实现基于 URI 的网页链接。
 ---
 Aspose.PDF for Java 使用 `LinkAnnotation` 以及一个操作对象来定义链接行为。
 
 ## 创建启动操作链接
 
-当链接注释应启动外部文件或目标时请使用此示例。
+当链接批注应启动外部文件或目标时请使用此示例。
 
 1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并选择目标页面。
 1. 创建 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 并配置其边框和颜色。
@@ -45,8 +45,8 @@ public static void createLinkAnnotationLaunchAction(Path inputFile, Path outputF
 
 当链接应在另一个 PDF 文档中打开页面时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 在目标页面上。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 在目标页面上创建 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)。
 1. 分配 a [GoToRemoteAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoremoteaction/) 并保存输出文件。
 
 ```java
@@ -67,7 +67,7 @@ public static void createLinkAnnotationGoToRemoteAction(Path inputFile, Path out
 
 在链接应在同一 PDF 文档的另一页之间导航时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 并配置其外观。
 1. 分配 a [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) 转到目标页面并保存文档。
 
@@ -97,8 +97,8 @@ public static void createLinkAnnotationGoToAction(Path inputFile, Path outputFil
 
 当链接应通过 URI 操作打开 Web 资源时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 在页面上。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 在页面上创建 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)。
 1. 分配 a [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) 并保存输出文件。
 
 ```java

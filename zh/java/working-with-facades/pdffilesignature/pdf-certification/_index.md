@@ -24,7 +24,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 对 PDF 文档进行认证。�
 2. 构建一个 `PKCS7` 带有证书和证书密码的签名对象。
 3. 将该签名包装在一个 `DocMDPSignature` 带有必需的 `DocMDPAccessPermissions` 值。
 4. 呼叫 `certify` 包含目标页面、签名元数据、可见矩形和 MDP 签名。
-5. 保存已签署的 PDF 并关闭外观对象。
+5. 保存已签署的 PDF 并关闭 Facades 对象。
 
 ### Java 示例
 

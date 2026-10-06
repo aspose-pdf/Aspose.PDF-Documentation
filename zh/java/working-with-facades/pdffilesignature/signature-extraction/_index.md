@@ -24,7 +24,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 提取与 PDF 签名关联的�
 2. 选择要检查的签名名称。
 3. 调用 `extractCertificate` 打开证书流。
 4. 将证书字节复制到输出文件。
-5. 关闭流资源和外观对象。
+5. 关闭流资源和 Facades 对象。
 
 ### Java 示例
 

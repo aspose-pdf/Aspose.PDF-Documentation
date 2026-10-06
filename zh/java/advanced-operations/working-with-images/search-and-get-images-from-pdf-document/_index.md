@@ -16,7 +16,7 @@ Aspose.PDF for Java 可以检查图像放置信息以及更底层的绘图数据
 
 当您需要检查页面上的图像几何形状和有效分辨率时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 收集图像放置位置。
 1. 输出每个放置图像的大小、坐标和分辨率。
 
@@ -42,7 +42,7 @@ public static void extractImageParams(Path inputFile) {
 
 当您需要统计 PDF 页面中的灰度图像和 RGB 图像时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 遍历页面图像。
 1. 读取 [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/) 每个图像的，并输出总计。
 
@@ -82,7 +82,7 @@ public static void extractImageTypesFromPdf(Path inputFile) {
 
 当您需要检查页面图像关联的可访问性文本时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 使用 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 收集图像放置位置。
 1. 读取每个图像的替代文本并输出结果。
 

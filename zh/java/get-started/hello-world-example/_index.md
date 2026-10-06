@@ -18,14 +18,14 @@ Abstract: 本文提供了 Aspose.PDF for Java 的 Hello World 示例。该示例
 Java 示例遵循以下步骤：
 
 1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对象。
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
-1. 创建一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 带有文本 `Hello, world!`.
-1. 设置 [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/)，字体、字号、背景色以及前景色通过片段 [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. 创建一个 [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) 用于页面。
-1. 追加 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 到 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. 保存 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
+1. 创建一个带有文本 `Hello, world!` 的 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)。
+1. 设置 [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/)，并通过片段的 [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) 设置字体、字号、背景色和前景色。
+1. 为页面创建一个 [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/)。
+1. 将 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 追加到 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
+1. 保存 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
-以下 Java 代码基于 `GetStartedExamples.java`.
+以下 Java 代码基于 `GetStartedExamples.java`。
 
 ```java
 public static void simpleExample(Path outputFile) {

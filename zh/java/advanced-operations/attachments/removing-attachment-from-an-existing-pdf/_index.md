@@ -19,7 +19,7 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 从 PDF 文件中移�
 
 当需要从 PDF 中删除一个已命名的嵌入文件时使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 根据其键从嵌入文件集合中删除附件。
 1. 保存更新后的输出文档。
 
@@ -36,7 +36,7 @@ public static void removeAttachment(Path inputFile, String attachmentName, Path 
 
 当需要清除整个嵌入文件集合时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 删除嵌入文件集合中的所有项目。
 1. 保存已清理的输出文档。
 

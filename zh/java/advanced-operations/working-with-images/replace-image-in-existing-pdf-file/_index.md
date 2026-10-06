@@ -14,10 +14,10 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 替换 PDF 文档中�
 
 ## 通过资源索引替换图像
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 访问目标上的图像资源 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 访问目标上的图像资源 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 使用新图像文件替换目标图像资源。
-1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -31,10 +31,10 @@ public static void replaceImage(Path inputFile, Path imageFile, Path outputFile)
 
 ## 使用 替换图像 `ImagePlacementAbsorber`
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 获取目标 [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) 并使用新的图像流替换它。
-1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {

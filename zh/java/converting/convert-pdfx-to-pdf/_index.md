@@ -19,7 +19,7 @@ Aspose.PDF for Java 可以将符合标准的 PDF 变体转换回普通 PDF 文�
 
 当需要将归档的 PDF/A 文档降级为标准 PDF 时，请使用此示例。
 
-1. 在 a 中打开源 PDF/A 文件 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF/A 文件。
 1. 调用 `removePdfaCompliance()` 从已加载的文档中分离归档合规配置文件。
 1. 保存生成的标准 PDF 文件，不设置 PDF/A 限制。
 
@@ -36,7 +36,7 @@ public static void convertPdfAToPdf(Path inputFile, Path outputFile) {
 
 当需要将可访问的 PDF/UA 文档转换回标准 PDF 时，请使用此示例。
 
-1. 在 a 中打开源 PDF/UA 文件 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF/UA 文件。
 1. 调用 `removePdfUaCompliance()` 从文档元数据和结构要求中移除可访问性合规配置文件。
 1. 将生成的 PDF 文档保存为常规 PDF 文件。
 

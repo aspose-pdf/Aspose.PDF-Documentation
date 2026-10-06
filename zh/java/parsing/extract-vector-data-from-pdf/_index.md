@@ -14,7 +14,7 @@ sitemap:
 
 使用 `GraphicsAbsorber` 检查页面上的矢量图形元素并将其基本几何信息写入文本文件。
 
-1. 在 a 中打开源 PDF。 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建一个 [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 收集矢量图形操作。
 1. 遍历提取的 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) 对象并读取它们的矩形、位置和操作符集合。
 1. 为每个元素构建包含几何形状和运算符计数细节的输出文本。
@@ -43,8 +43,8 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 
 ## 将页面矢量图形保存为 SVG
 
-1. 在 a 中打开源 PDF。 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 获取目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 从文档中。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 从文档中获取目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 调用 `page.trySaveVectorGraphics(outputFile.toString())` 将该页面的矢量图形内容直接导出为 SVG。
 
 ```java
@@ -58,10 +58,10 @@ public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
 
 ## 将每个提取的元素保存为单独的 SVG
 
-1. 在 a 中打开源 PDF。 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 在写入任何文件之前，为提取的子路径创建输出目录。
-1. 遍历提取的 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) 对象和调用 `saveToSvg(...)` 对于每个元素。
+1. 遍历提取的 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) 对象，并对每个元素调用 `saveToSvg(...)`。
 1. 将每个提取的元素保存为单独的 SVG 文件。
 
 ```java
@@ -81,12 +81,12 @@ public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws 
 }
 ```
 
-## 合并提取的元素为单个 SVG
+## 将提取的元素合并为单个 SVG
 
-1. 在 a 中打开源 PDF。 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 创建将容纳合并矢量片段的 SVG 包装标记。
-1. 遍历提取的 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) objects 并追加每个生成的 SVG 片段。
+1. 遍历提取的 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) 对象 并追加每个生成的 SVG 片段。
 1. 将合并后的 SVG 输出写入目标文件。
 
 ```java
@@ -108,9 +108,9 @@ public static void extractListOfElementsToSingleImage(Path inputFile, Path outpu
 
 ## 提取单个矢量元素
 
-1. 在 a 中打开源 PDF。 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. 获取所需的 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) 从提取的元素集合中。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [GraphicsAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
+1. 从提取的元素集合中获取所需的 [GraphicElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/)。
 1. 检查所选元素是否为一个 [XFormPlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) 并在需要时深入其嵌套元素。
 1. 将选定的矢量元素保存到输出 SVG 文件。
 

@@ -4,11 +4,11 @@ linktitle: 创建复选框字段
 type: docs
 weight: 20
 url: /zh/java/create-checkbox-field/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 外观向 PDF 文档添加复选框表单字段。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 类向 PDF 文档添加复选框表单字段。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 使用 Java 在 PDF 中创建复选框字段
-Abstract: 本文展示了如何绑定现有 PDF，在指定位置添加复选框字段，并使用 Aspose.PDF for Java 中的 FormEditor 外观保存修改后的文档。
+Abstract: 本文展示了如何绑定现有 PDF，在指定位置添加复选框字段，并使用 Aspose.PDF for Java 中的 FormEditor 类保存修改后的文档。
 ---
 使用 `FormEditorExamples.createCheckBoxField(...)` 向 PDF 表单添加复选框字段。
 

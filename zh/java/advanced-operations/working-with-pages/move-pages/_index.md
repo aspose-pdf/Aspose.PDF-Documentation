@@ -62,7 +62,7 @@ public static void moveBunchPagesFromOneDocumentToAnother(Path inputFile, Path s
 
 当需要将页面重新定位到同一 PDF 中的新位置时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 将目标页面复制到新位置并删除原始页面条目。
 1. 保存重新排序的文档。
 

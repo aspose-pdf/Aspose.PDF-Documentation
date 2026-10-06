@@ -17,9 +17,9 @@ XFA forms 可转换为标准 AcroForms，以便使用常规 PDF form API 进行�
 
 ## 将动态 XFA 表单转换为 AcroForm
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问文档 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) 并设置所需的 [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) 属性。
-1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) {
@@ -32,9 +32,9 @@ public static void convertDynamicXfaToAcroform(Path inputFile, Path outputFile) 
 
 ## 将 XFA 表单转换为 `ignoreNeedsRendering`
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问文档 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf/form/) 并设置所需的 `ignoreNeedsRendering` 和 [FormType](https://reference.aspose.com/pdf/java/com.aspose.pdf/formtype/) 属性。
-1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void convertXfaFormWithIgnoreNeedsRendering(Path inputFile, Path outputFile) {

@@ -4,7 +4,7 @@ linktitle: 按名称和值填充字段
 type: docs
 weight: 60
 url: /zh/java/fill-fields-by-name-and-value/
-description: 了解如何在 Java 中使用 Form 外观的字段填充 API，以实现动态的名称-值表单更新。
+description: 了解如何在 Java 中使用 Form 类的字段填充 API，以实现动态的名称-值表单更新。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 从名称-值对在 Java 中填充多个 PDF 表单字段

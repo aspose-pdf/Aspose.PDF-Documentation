@@ -20,8 +20,8 @@ Aspose.PDF for Java 提供了多种保存文档的方式，取决于目标位置
 您可以保存文档：
 
 1. 保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 直接保存到磁盘上的文件。
-1. 保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到一个 `OutputStream`.
-1. 转换 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 使用 [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) 并将其保存为标准格式，例如 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
+1. 保存 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到一个 `OutputStream`。
+1. 转换 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 使用 [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) 并将其保存为标准格式，例如 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/)。
 
 ## 将文档保存到文件
 

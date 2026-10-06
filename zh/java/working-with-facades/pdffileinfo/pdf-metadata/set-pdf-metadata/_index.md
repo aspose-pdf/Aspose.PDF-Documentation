@@ -4,7 +4,7 @@ linktitle: 设置 PDF 元数据
 type: docs
 weight: 50
 url: /zh/java/set-pdf-metadata/
-description: 了解如何使用 PdfFileInfo 外观在 Java 中更新 PDF 元数据。
+description: 了解如何使用 PdfFileInfo 类在 Java 中更新 PDF 元数据。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -22,8 +22,8 @@ Abstract: 了解如何使用 Aspose.PDF for Java 更新 PDF 元数据。Java 示
 
 1. 创建一个 `PdfFileInfo` 源 PDF 的对象。
 2. 设置您想要更新的标准元数据字段。
-3. 使用以下方式添加任何自定义元数据 `setMetaInfo`.
-4. 使用以下方式保存已更新的文档 `save()`.
+3. 使用以下方式添加任何自定义元数据 `setMetaInfo`。
+4. 使用以下方式保存已更新的文档 `save()`。
 5. 关闭 `PdfFileInfo` 实例。
 
 ### Java 示例

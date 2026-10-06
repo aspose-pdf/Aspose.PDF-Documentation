@@ -19,7 +19,7 @@ Abstract: 本文解释了如何使用 Aspose.PDF for Java 从 PDF 文件中删�
 
 当需要通过索引删除单页时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 从页面集合中删除目标页面。
 1. 保存更新后的文档。
 
@@ -36,7 +36,7 @@ public static void deletePage(Path inputFile, Path outputFile) {
 
 当需要一次性删除多个页面时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 将要删除的页面索引传递给页面集合。
 1. 保存已修改的 PDF。
 

@@ -21,7 +21,7 @@ Aspose.PDF for Java 支持多种合并策略，具体取决于应如何组装输
 
 1. 打开两个源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对象。
 1. 添加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 从第二个文档收集到第一个文档。
-1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {
@@ -64,7 +64,7 @@ private static void appendPageRange(Document sourceDocument, Document destinatio
 
 当您需要按顺序将一系列输入文件合并为单个输出文档时，请使用此模式。
 
-1. 创建一个空的输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个空的输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 一次打开一个输入文件并复制其完整内容 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 将范围写入输出文档。
 1. 在处理完所有源文件后，保存合并结果。
 
@@ -162,7 +162,7 @@ public static void mergeAlternatingPages(Path inputFile1, Path inputFile2, Path 
 当合并文件需要保持易于导航，并清晰显示每个源文档的起始位置时，请使用此模式。
 
 1. 创建一个空的输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并依次打开每个源文件。
-1. 添加分隔符 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 带有标题，然后创建一个 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) 该部分的书签。
+1. 添加带有标题的分隔页 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)，然后创建一个 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) 作为该部分的书签。
 1. 追加源页面，可选地添加指向第一个内容页面的书签，并保存最终合并的文档。
 
 ```java

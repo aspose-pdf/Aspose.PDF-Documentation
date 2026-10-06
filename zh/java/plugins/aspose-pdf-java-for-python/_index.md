@@ -28,7 +28,7 @@ Aspose.PDF for Java 支持处理 Word（DOC、DOCX、OOXML、RTF）、HTML、Ope
 
 ## Aspose.PDF Java for Python
 
-Project Aspose.PDF for Python 展示了如何在 Python 中使用 Aspose.PDF Java API 执行各种任务。该项目旨在为希望在 Python 项目中使用 Aspose.PDF for Java 的 Python 开发者提供有用的示例。 [JPype](http://jpype.readthedocs.org/en/latest/userguide.html).
+Project Aspose.PDF for Python 展示了如何在 Python 中使用 Aspose.PDF Java API 执行各种任务。该项目旨在为希望在 Python 项目中使用 Aspose.PDF for Java 的 Python 开发者提供有用的示例。 [JPype](http://jpype.readthedocs.org/en/latest/userguide.html)。
 
 ## 系统需求和受支持平台
 

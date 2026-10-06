@@ -4,14 +4,14 @@ linktitle: PdfViewer 类
 type: docs
 weight: 135
 url: /zh/java/pdfviewer-class/
-description: 了解如何在 Java 中使用 PdfViewer 外观来解码 PDF 页面并检查与查看器相关的设置。
+description: 了解如何在 Java 中使用 PdfViewer 类来解码 PDF 页面并检查与查看器相关的设置。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 使用 PdfViewer 在 Java 中解码 PDF 页面并检查查看器数据
-Abstract: 本节阐述了如何在 Aspose.PDF for Java 中使用 PdfViewer 外观进行页面解码和查看器相关的检查任务。当前的 Java 示例包括将所有页面渲染为图像、解码特定页面，以及检查页面计数、坐标类型、分辨率和绑定的查看器设置。
+Abstract: 本节阐述了如何在 Aspose.PDF for Java 中使用 PdfViewer 类进行页面解码和查看器相关的检查任务。当前的 Java 示例包括将所有页面渲染为图像、解码特定页面，以及检查页面计数、坐标类型、分辨率和绑定的查看器设置。
 ---
 Java `PdfViewerExamples` 类演示了通过 Facades API 可用的主要查看器工作流。
 
@@ -22,7 +22,7 @@ Java `PdfViewerExamples` 类演示了通过 Facades API 可用的主要查看器
 ### 步骤
 
 1. 创建并配置一个 `PdfViewer` 实例。
-2. 将源 PDF 与 `bindPdf`.
+2. 将源 PDF 与 `bindPdf`。
 3. 调用 `decodeAllPages()` 将文档渲染为 `BufferedImage` 数组。
 4. 将每个解码后的页面保存为输出图像文件。
 5. 关闭已绑定的 PDF 文件。

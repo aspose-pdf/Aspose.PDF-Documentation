@@ -4,7 +4,7 @@ linktitle: 为 PDF 页面添加边距
 type: docs
 weight: 10
 url: /zh/java/add-margins-to-pdf-pages/
-description: 使用 PdfFileEditor 门面在 Java 中为选定的 PDF 页面添加边距。
+description: 使用 PdfFileEditor 类在 Java 中为选定的 PDF 页面添加边距。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
@@ -19,7 +19,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 为选定页面添加边距。�
 
 ### 步骤
 
-1. 创建一个 `PdfFileEditor` 实例.
+1. 创建一个 `PdfFileEditor` 实例。
 2. 选择应添加新页边距的页码。
 3. 调用 `addMargins` 使用输入文件、输出文件、页列表和边距值。
 4. 保存已更新的 PDF。

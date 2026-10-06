@@ -13,13 +13,13 @@ TechArticle: true
 AlternativeHeadline: 使用 Java 压缩 PDF 资源并减小文件大小。
 Abstract: 本文解释了如何使用 Aspose.PDF for Java 对 PDF 文件进行优化。它涵盖了全文档优化、资源压缩、图像质量降低、移除未使用的对象和流、链接重复流、取消嵌入字体、扁平化注释和表单、灰度转换以及 Flate 图像压缩。
 ---
-Aspose.PDF for Java 通过 `Document.optimize`, `optimizeResources`，和 `OptimizationOptions`.
+Aspose.PDF for Java 通过 `Document.optimize`, `optimizeResources`，和 `OptimizationOptions`。
 
 ## 使用通用文档优化来优化 PDF
 
 当您希望 Aspose.PDF 应用内置的整个文档优化例程时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 调用 `optimize()` 在文档上。
 1. 保存优化后的文件，并比较原始文件和输出文件的大小。
 
@@ -37,7 +37,7 @@ public static void optimizePdf(Path inputFile, Path outputFile) throws Exception
 
 此示例专注于资源级优化，而无需手动配置各个选项。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 运行 `optimizeResources()` 优化内部资源。
 1. 保存结果并打印输入文件和输出文件的大小。
 
@@ -55,7 +55,7 @@ public static void reduceSizePdf(Path inputFile, Path outputFile) throws Excepti
 
 当文档中图片较多且需要更小的文件尺寸且可以接受一定的图像质量降低时，使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) 并启用具有所需质量级别的图像压缩。
 1. 使用这些设置优化文档资源。
 1. 保存优化后的文件并比较文件大小。
@@ -77,7 +77,7 @@ public static void shrinkingOrCompressingAllImages(Path inputFile, Path outputFi
 
 此示例会删除在编辑或合并后可能仍保留在文档结构中的未使用对象。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) 并启用删除未使用的对象。
 1. 优化资源并保存更新后的文件。
 1. 打印原始和压缩后的文件大小。
@@ -98,7 +98,7 @@ public static void removingUnusedObjects(Path inputFile, Path outputFile) throws
 
 当您想要丢弃文档中不再被引用的流数据时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 配置 [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) 删除未使用的流。
 1. 优化资源，保存输出文档，并比较文件大小。
 
@@ -118,7 +118,7 @@ public static void removingUnusedStreams(Path inputFile, Path outputFile) throws
 
 此示例对重复的流进行去重，以便相同的内容只存储一次。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) 并启用重复流链接。
 1. 优化资源，保存输出文档，并打印文件大小。
 
@@ -138,7 +138,7 @@ public static void linkingDuplicateStreams(Path inputFile, Path outputFile) thro
 
 当减小文件大小比在输出中保留嵌入的字体数据更重要时，请使用此选项。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 配置 [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) 取消嵌入字体。
 1. 优化资源，保存文档，并比较文件大小。
 
@@ -158,7 +158,7 @@ public static void unembedFonts(Path inputFile, Path outputFile) throws Exceptio
 
 此示例将注释转换为静态页面内容，使它们不再保持交互式对象。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历每个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 和它的 [Annotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotation/) 集合。
 1. 将所有注释扁平化并保存更新后的文档。
 
@@ -179,9 +179,9 @@ public static void flattenAnnotations(Path inputFile, Path outputFile) {
 
 在可填写的表单字段在分发或存档之前应转换为固定内容时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 检查文档是否包含表单小部件。
-1. 扁平化每个 [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) 由 a 表示 [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. 扁平化每个 [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) 由 a 表示 [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/)。
 1. 保存输出文件并打印文件大小。
 
 ```java
@@ -204,8 +204,8 @@ public static void flattenForms(Path inputFile, Path outputFile) throws Exceptio
 
 此示例将每页转换为灰度，这有助于降低颜色复杂度，并为归档或打印工作流标准化输出。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历每个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 在文档中。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历文档中的每个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 调用 `makeGrayscale()` 在每页上并保存输出文件。
 
 ```java
@@ -223,8 +223,8 @@ public static void convertPdfFromRgbColorspaceToGrayscale(Path inputFile, Path o
 
 当您想在 PDF 资源优化期间对图像使用基于 Flate 的压缩时，请使用此模式。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建 [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) 并将图像编码设置为 [ImageEncoding](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageencoding/).`Flate`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建 [OptimizationOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/optimizationoptions/) 并将图像编码设置为 [ImageEncoding](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageencoding/).`Flate`。
 1. 优化文档资源并保存输出文件。
 
 ```java

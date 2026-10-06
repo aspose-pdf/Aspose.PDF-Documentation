@@ -19,7 +19,7 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 将外部文件附加�
 
 当需要将外部文件嵌入到现有 PDF 时使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) 对于您想要嵌入的文件。
 1. 将文件规范添加到 `EmbeddedFiles` 收集并保存更新后的文档。
 

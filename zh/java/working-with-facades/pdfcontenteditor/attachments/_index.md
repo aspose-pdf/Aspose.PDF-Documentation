@@ -4,7 +4,7 @@ linktitle: 附件
 type: docs
 weight: 20
 url: /zh/java/pdfcontenteditor-attachments/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 外观来添加和删除 PDF 附件。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 类来添加和删除 PDF 附件。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 使用 PdfContentEditor 在 Java 中管理 PDF 附件

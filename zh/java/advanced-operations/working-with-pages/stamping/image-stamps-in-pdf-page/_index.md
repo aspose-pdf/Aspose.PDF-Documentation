@@ -19,7 +19,7 @@ Aspose.PDF for Java 支持将图像印章用作覆盖层和基于图像的布局
 
 当页面应显示具有自定义位置和不透明度的图像印章时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) 并配置其外观。
 1. 将印章添加到页面并保存文档。
 
@@ -45,7 +45,7 @@ public static void addImageStamp(Path inputFile, Path imageFile, Path outputFile
 
 当您需要调整图像印章的渲染质量时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [ImageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/imagestamp/) 并设置质量值。
 1. 将印章添加到页面并保存结果。
 
@@ -65,7 +65,7 @@ public static void addImageStampWithQualityControl(Path inputFile, Path imageFil
 当图像应作为样式化布局容器的背景时，请使用此示例。
 
 1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并访问目标页面。
-1. 创建一个 [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/) 带有文本和边框设置。
+1. 创建一个带有文本和边框设置的 [FloatingBox](https://reference.aspose.com/pdf/java/com.aspose.pdf/floatingbox/)。
 1. 设置背景图像，将盒子添加到页面，并保存文档。
 
 ```java

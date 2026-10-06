@@ -4,7 +4,7 @@ linktitle: 更改 PDF 文件的密码
 type: docs
 weight: 10
 url: /zh/java/change-password/
-description: 了解如何使用 PdfFileSecurity 外观在 Java 中更改 PDF 密码。
+description: 了解如何使用 PdfFileSecurity 类在 Java 中更改 PDF 密码。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -16,12 +16,12 @@ Abstract: 了解如何使用 Aspose.PDF for Java 更改 PDF 密码。Java 示例
 ---
 ## 更改 PDF 文件的密码
 
-使用 `PdfFileSecurity` 当您需要在已加密的 PDF 上轮换凭据时。
+当需要在已加密的 PDF 上轮换凭据时，使用 `PdfFileSecurity`。
 
 ### 步骤
 
 1. 创建一个 `PdfFileSecurity` 实例。
-2. 绑定受保护的 PDF 与 `bindPdf`.
+2. 绑定受保护的 PDF 与 `bindPdf`。
 3. 调用适当的 `changePassword` 重载，具体取决于您是否还想重置权限和密钥大小。
 4. 保存更新后的文件并关闭安全对象。
 

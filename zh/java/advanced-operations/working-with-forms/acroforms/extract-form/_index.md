@@ -13,7 +13,7 @@ TechArticle: true
 AlternativeHeadline: 使用 Java 从 PDF 文件中提取表单字段值
 Abstract: 本文展示了如何使用 Aspose.PDF for Java 从 AcroForm 字段中提取数据。示例使用 Form facade 遍历字段名称，读取每个当前值，并将结果存储在映射中以供后续处理。
 ---
-使用 `Form` 当需要进行简单的字段名到字段值提取流程时的外观层。
+需要根据字段名提取字段值时，使用 `Form` 类。
 
 ## 从所有 AcroForm 字段中提取值
 

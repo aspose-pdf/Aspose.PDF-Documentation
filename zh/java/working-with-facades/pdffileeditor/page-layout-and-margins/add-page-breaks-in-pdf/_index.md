@@ -4,7 +4,7 @@ linktitle: 在 PDF 中添加分页符
 type: docs
 weight: 20
 url: /zh/java/add-page-breaks-in-pdf/
-description: 使用 PdfFileEditor 外观在 Java 中向 PDF 插入分页符。
+description: 使用 PdfFileEditor 类在 Java 中向 PDF 插入分页符。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
@@ -21,7 +21,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 添加分页符。Java 示例�
 
 1. 创建一个 `PdfFileEditor` 实例。
 2. 构建一个或多个 `PdfFileEditor.PageBreak` 带有页码和断点位置的条目。
-3. 将分页符数组传递给 `addPageBreak`.
+3. 将分页符数组传递给 `addPageBreak`。
 4. 保存已更新的 PDF 文档。
 
 ### Java 示例

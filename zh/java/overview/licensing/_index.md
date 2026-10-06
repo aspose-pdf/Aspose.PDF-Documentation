@@ -4,7 +4,7 @@ linktitle: 授权和限制
 type: docs
 weight: 50
 url: /zh/java/licensing/
-description: Aspose.PDF for Python邀请其客户获取经典许可证。同时使用受限许可证以更好地探索产品。
+description: Aspose.PDF for Python 邀请其客户获取经典许可证。同时使用受限许可证以更好地探索产品。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
@@ -24,7 +24,7 @@ Abstract: 本文讨论了 Aspose.PDF for Python 的限制和许可选项。它�
 
 您可以从以下位置下载 **Aspose.PDF** for Java 的评估版 [Aspose 仓库](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf). 评估版提供与产品授权版完全相同的功能。更进一步，当您购买授权并添加几行代码应用授权时，评估版会直接转为授权版。
 
-一旦您对 **Aspose.PDF** 的评估满意，您即可 [购买许可证](https://purchase.aspose.com/) 在 Aspose 网站上。熟悉所提供的不同订阅类型。如果您有任何疑问，请随时联系 Aspose 销售团队。
+一旦您对 **Aspose.PDF** 的评估满意，即可在 Aspose 网站上 [购买许可证](https://purchase.aspose.com/)。熟悉所提供的不同订阅类型。如果您有任何疑问，请随时联系 Aspose 销售团队。
 
 每个 Aspose 许可证都包含为期一年且免费升级到此期间发布的所有新版本或修复的订阅。技术支持免费且无限制，且对许可证用户和试用用户均提供。
 
@@ -88,7 +88,7 @@ if (com.aspose.pdf.Document.isLicensed()) {
 
 ## 计量许可
 
-Aspose.PDF 允许开发人员使用计量密钥。这是一种新的授权机制。新的授权机制将与现有的授权方法一起使用。希望根据 API 功能使用情况计费的客户可以使用计量授权。\u0412\u00A0有关更多详情，请参阅\u0412 [计量授权 FAQ](https://purchase.aspose.com/faqs/licensing/metered)В 章节。
+Aspose.PDF 允许开发人员使用计量密钥。这是一种新的授权机制。新的授权机制将与现有的授权方法一起使用。希望根据 API 功能使用情况计费的客户可以使用计量授权。\u0412\u00A0 有关更多详情，请参阅\u0412 [计量授权 FAQ](https://purchase.aspose.com/faqs/licensing/metered)В 章节。
 
 一个新类В [Metered](https://reference.aspose.com/pdf/java/com.aspose.pdf/Metered)В 已被引入以应用计量密钥。以下是示例代码，演示如何设置计量公钥和私钥。
 

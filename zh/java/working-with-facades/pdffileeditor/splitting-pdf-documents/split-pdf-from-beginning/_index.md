@@ -4,7 +4,7 @@ linktitle: 从开头拆分 PDF
 type: docs
 weight: 10
 url: /zh/java/split-pdf-from-beginning/
-description: 使用 PdfFileEditor 外观在 Java 中从开头拆分 PDF。
+description: 使用 PdfFileEditor 类在 Java 中从开头拆分 PDF。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

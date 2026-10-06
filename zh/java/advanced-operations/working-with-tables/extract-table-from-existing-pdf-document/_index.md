@@ -15,14 +15,14 @@ Abstract: 本文介绍了如何使用 Aspose.PDF for Java 从 PDF 文档中提�
 aliases:
     - "/zh/java/extract-table-from-existing-pdf-document/"
 ---
-使用 `TableAbsorber` 当您需要检测现有 PDF 中的表格结构并读取其内容时。
+当需要检测现有 PDF 中的表格结构并读取其内容时，使用 `TableAbsorber`。
 
 ## 提取检测到的表格文本
 
 当您需要在每页定位表格并收集其单元格文本时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 使用...访问每页 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 使用...访问每页 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/)。
 1. 遍历已吸收的表格、行和单元格，然后输出提取的文本。
 
 ```java

@@ -10,7 +10,7 @@ TechArticle: true
 AlternativeHeadline: 在 Java 中导出 AcroForm 数据为 FDF
 Abstract: 本文展示了如何使用 Aspose.PDF for Java 的 Form Facade 绑定 PDF 表单并将其字段数据导出为 FDF 流。
 ---
-使用 `FormExamples.exportFdf(...)` 当您需要将 AcroForm 字段数据序列化为 FDF 时。
+当需要将 AcroForm 字段数据序列化为 FDF 时，使用 `FormExamples.exportFdf(...)`。
 
 ```java
 public static void exportFdf(Path inputFile, Path outputFile) throws Exception {

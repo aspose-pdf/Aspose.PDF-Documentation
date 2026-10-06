@@ -25,7 +25,7 @@ Aspose.PDF for Java 允许您直接通过提供的 API 和 XML 模板创建 PDF 
 
 ### Aspose.PDF Java for PHP
 
-项目 Aspose.PDF for PHP 展示了如何在 PHP 中使用 Aspose.PDF Java API 执行不同的任务。该项目旨在为希望在 PHP 项目中使用 Aspose.PDF for Java 的 PHP 开发者提供有用的示例。 [PHP/Java Bridge](http://php-java-bridge.sourceforge.net/pjb/).
+项目 Aspose.PDF for PHP 展示了如何在 PHP 中使用 Aspose.PDF Java API 执行不同的任务。该项目旨在为希望在 PHP 项目中使用 Aspose.PDF for Java 的 PHP 开发者提供有用的示例。 [PHP/Java Bridge](http://php-java-bridge.sourceforge.net/pjb/)。
 
 ## 系统需求和受支持的平台
 
@@ -63,7 +63,7 @@ Aspose.PDF for Java 允许您直接通过提供的 API 和 XML 模板创建 PDF 
 - Aspose.PDF Java for PHP 示例
   - [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
 
-### 如何在 Linux 平台上配置源代码
+### 在 Linux 平台上配置源代码
 
 请遵循以下简单步骤В 以打开并扩展使用时的源代码:
 
@@ -127,7 +127,7 @@ $ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugi
 
 {{< /highlight >}}
 
-### 如何在 Windows 平台上配置源代码
+### 在 Windows 平台上配置源代码
 
 请按照以下简单步骤在 Windows 平台上配置 PHP/Java Bridge
 

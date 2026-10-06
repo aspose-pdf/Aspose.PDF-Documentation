@@ -17,8 +17,8 @@ Abstract: 本文解释了如何使用 Aspose.PDF for Java 检查并统计 PDF �
 
 当您需要快速统计页面上主要分页工件子类型时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 读取 [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) 从目标的集合 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 读取 [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) 从目标的集合 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 遍历页面 [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) 收集并统计您需要报告的每种分页子类型。
 
 ```java

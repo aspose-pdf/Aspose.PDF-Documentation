@@ -20,7 +20,7 @@ Aspose.PDF for Java 支持多种加载现有 PDF 文档的方式，具体取决�
 您可以打开 PDF 文档：
 
 1. 打开一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 直接从文件路径。
-1. 打开一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 来自一个 `InputStream`.
+1. 打开一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 来自一个 `InputStream`。
 1. 打开已加密的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 通过提供密码。
 
 ## 从文件打开文档

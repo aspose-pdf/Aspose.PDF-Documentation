@@ -17,9 +17,9 @@ Abstract: 本文介绍了如何使用 Aspose.PDF for Java 检查 PDF 文档中�
 
 ## 读取签名信息
 
-1. 创建 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 外观并绑定源 PDF 文档。
+1. 创建 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 对象并绑定源 PDF 文档。
 1. 访问文档签名名称并配置示例所需的签名检查流程。
-1. 读取并验证签名信息来自 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 外观。
+1. 从 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 对象读取并验证签名信息。
 1. 读取返回的值，或继续进行下一步处理。
 
 ```java
@@ -41,9 +41,9 @@ public static void getSignatureInformation(Path inputFile) {
 
 ## 验证签名
 
-1. 创建 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 外观并绑定源 PDF 文档。
+1. 创建 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 对象并绑定源 PDF 文档。
 1. 访问文档签名名称并配置示例所需的验证流程。
-1. 读取并验证签名信息来自 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 外观。
+1. 从 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 对象读取并验证签名信息。
 
 ```java
 public static void verifyPdfSignature(Path inputFile) {
@@ -63,9 +63,9 @@ public static void verifyPdfSignature(Path inputFile) {
 
 ## 提取签名证书
 
-1. 创建 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 外观并绑定源 PDF 文档。
+1. 创建 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 对象并绑定源 PDF 文档。
 1. 获取证书提取所需的文档签名名称。
-1. 写入提取的输出或检查返回的值 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 外观。
+1. 写入提取的输出或检查返回的值 [PdfFileSignature](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/pdffilesignature/) 对象。
 
 ```java
 public static void extractSignatureCertificate(Path inputFile, Path outputFile) throws Exception {

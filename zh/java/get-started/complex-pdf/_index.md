@@ -17,16 +17,16 @@ Abstract: 本文展示了如何使用 Aspose.PDF 在 Java 中创建更复杂的 
 
 在 Java 中创建更复杂的 PDF 文档：
 
-1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. 向其添加图像 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 与 `page.addImage(...)` 以及目标 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
-1. 创建标题 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 并设置其字体、大小、对齐方式等 [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
+1. 调用 `page.addImage(...)`，将图像添加到 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 中的目标 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 区域。
+1. 创建标题 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)，并设置其字体、大小、对齐方式和 [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/)。
 1. 创建第二个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 用于描述段落。
-1. 构建一个 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 带有边框、内边距和标题样式。
-1. 将生成的计划行添加到 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
-1. 追加 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 到 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 段落。
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 构建一个带有边框、内边距和标题样式的 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)。
+1. 将生成的计划行添加到 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)。
+1. 将 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 追加到 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 段落。
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
-以下 Java 代码基于 `GetStartedExamples.java`.
+以下 Java 代码基于 `GetStartedExamples.java`。
 
 ```java
 public static void complexExample(Path imageFile, Path outputFile) {

@@ -4,7 +4,7 @@ linktitle: 拆分 PDF 文档
 type: docs
 weight: 50
 url: /zh/java/splitting-pdf-documents/
-description: 了解如何在 Java 中使用 PdfFileEditor 门面拆分 PDF 文档。
+description: 了解如何在 Java 中使用 PdfFileEditor 类拆分 PDF 文档。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

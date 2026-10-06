@@ -20,7 +20,7 @@ Aspose.PDF for Java 提供了并排和图形化比较 API，用于检测 PDF 文
 当您需要针对特定 PDF 页面对生成基于图像的差异输出时，请使用此示例。
 
 1. 打开两个源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对象。
-1. 使用 [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) 获取页面级别的 [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/).
+1. 使用 [GraphicalPdfComparer](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/graphicalpdfcomparer/) 获取页面级别的 [ImagesDifference](https://reference.aspose.com/pdf/java/com.aspose.pdf/comparison/imagesdifference/)。
 1. 使用 'GraphicalPdfComparer' 来获取页面级别的 'ImagesDifference'。
 1. 导出生成的差异图像并释放比较结果。
 

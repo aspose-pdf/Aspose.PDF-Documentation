@@ -12,9 +12,9 @@ Abstract: 本文解释了如何使用 Java 在 PDF 文档中创建、读取和�
 ---
 ## 添加文本批注
 
-1. 打开输入 PDF 并定位要放置文本注释的页面。
+1. 打开输入 PDF 并定位要放置文本批注的页面。
 2. 创建 `TextAnnotation`，定义其矩形，并设置其标题、主题、标志和颜色。
-3. 将注释添加到页面并保存更新后的文档。
+3. 将批注添加到页面并保存更新后的文档。
 
 ```java
 public static void textAnnotationAdd(Path inputFile, Path outputFile) {
@@ -32,11 +32,11 @@ public static void textAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 添加自由文本注释
+## 添加自由文本批注
 
-1. 加载源 PDF 并选择自由文本注释的目标页和矩形区域。
+1. 加载源 PDF 并选择自由文本批注的目标页和矩形区域。
 2. 创建 `FreeTextAnnotation`，初始化其默认外观，并设置标题和颜色。
-3. 将注释添加到页面并保存结果。
+3. 将批注添加到页面并保存结果。
 
 ```java
 public static void freeTextAnnotationAdd(Path inputFile, Path outputFile) {

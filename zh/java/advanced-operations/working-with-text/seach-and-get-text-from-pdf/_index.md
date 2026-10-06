@@ -20,7 +20,7 @@ Aspose.PDF for Java 支持原始文本提取和片段级搜索，涉及坐标、
 当您需要从选定文档区域跨所有页面提取纯文本时，请使用此示例。
 
 1. 打开源 PDF 文档。
-1. 创建 `TextExtractionOptions` 以及基于区域的 `TextSearchOptions`.
+1. 创建 `TextExtractionOptions` 以及基于区域的 `TextSearchOptions`。
 1. 运行 `TextAbsorber` 在所有页面上提取文本并输出。
 
 ```java
@@ -148,7 +148,7 @@ public static void textFragmentAbsorberSequentialSearch(Path inputFile) {
 在短语匹配应仅限于单页的某个区域时，使用此示例。
 
 1. 打开源 PDF 文档。
-1. 创建 `TextFragmentAbsorber` 使用目标短语和基于矩形的 `TextSearchOptions`.
+1. 创建 `TextFragmentAbsorber` 使用目标短语和基于矩形的 `TextSearchOptions`。
 1. 访问页面并输出匹配的片段位置。
 
 ```java
@@ -172,7 +172,7 @@ public static void textFragmentAbsorberSearchPhrase(Path inputFile) {
 当匹配应该通过正则表达式模式而不是固定短语来查找时，请使用此示例。
 
 1. 打开源 PDF 文档。
-1. 创建一个支持正则表达式的 `TextFragmentAbsorber`.
+1. 创建一个支持正则表达式的 `TextFragmentAbsorber`。
 1. 访问目标页面并输出匹配的片段。
 
 ```java
@@ -196,7 +196,7 @@ public static void textFragmentAbsorberSearchRegex(Path inputFile) {
 当需要在一次运行中找到多个目标短语时，请使用此示例。
 
 1. 打开源 PDF 文档。
-1. 创建一个正则表达式模式数组并将其传递给 `TextFragmentAbsorber`.
+1. 创建一个正则表达式模式数组并将其传递给 `TextFragmentAbsorber`。
 1. 访问文档并检查分组的正则表达式结果。
 
 ```java

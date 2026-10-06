@@ -41,7 +41,7 @@ Aspose.PDF for Java 提供以下关键特性：
 - [文档转换](/pdf/zh/java/converting/)
 - [解析 PDF 文档](/pdf/zh/java/parsing/)
 - [高级操作](/pdf/zh/java/advanced-operations/)
-- [使用外观](/pdf/zh/java/working-with-facades)
+- [使用 PDF Facades](/pdf/zh/java/working-with-facades)
 - [发行说明](https://releases.aspose.com/pdf/java/release-notes/)
 
 ## Aspose.PDF for Java 资源
@@ -50,7 +50,7 @@ Aspose.PDF for Java 提供以下关键特性：
 
 - [Aspose.PDF for Java 在线文档](/pdf/zh/java/)
 - [Aspose.PDF for Java 功能](/pdf/zh/java/key-features/)
-- [Aspose.PDF for JavaВ 发行说明](https://releases.aspose.com/pdf/java/release-notes/)
+- [Aspose.PDF for Java 发行说明](https://releases.aspose.com/pdf/java/release-notes/)
 - [Aspose.PDF for Java 产品页面](https://products.aspose.com/pdf/java)
 - [Aspose.PDF for Java Maven 仓库](https://releases.aspose.com/java/repo/com/aspose/aspose-pdf/)
 - [下载 Aspose.PDF for Java](https://releases.aspose.com/pdf/java/)

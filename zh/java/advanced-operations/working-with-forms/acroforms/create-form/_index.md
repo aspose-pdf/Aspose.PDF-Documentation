@@ -22,7 +22,7 @@ Aspose.PDF for Java 让您能够从头创建各种 AcroForm 字段类型。
 在需要向新 PDF 表单添加单行文本输入字段时使用此示例。
 
 1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一页。
-1. 创建一个 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) 带有目标矩形并配置其外观。
+1. 创建一个带有目标矩形的 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/)，并配置其外观。
 1. 将字段添加到表单并保存文档。
 
 ```java

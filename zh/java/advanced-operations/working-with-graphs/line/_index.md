@@ -15,12 +15,12 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 向 PDF 文档添加�
 ---
 ## 添加虚线
 
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器并将其添加到页面。
 1. 创建 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 形状并配置其坐标。
 1. 添加 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 到 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器。
-1. 保存输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addLine(Path outputFile) {
@@ -41,16 +41,16 @@ public static void addLine(Path outputFile) {
 
 ## 添加彩色点线或虚线
 
-`addDottedDashedLine` 使用相同的坐标和虚线设置，但也应用 `Color.getRed()`.
+`addDottedDashedLine` 使用相同的坐标和虚线设置，但也应用 `Color.getRed()`。
 
 ## 在页面上绘制线条
 
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器并将其添加到页面。
 1. 创建 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 形状并配置其坐标。
 1. 添加 [Line](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/line/) 到 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器。
-1. 保存输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void drawLineAcrossPage(Path outputFile) {

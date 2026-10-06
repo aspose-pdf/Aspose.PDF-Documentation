@@ -22,12 +22,12 @@ Abstract: 本文说明了如何在 Java 中使用 Aspose.PDF 合并两个 PDF �
 本主题展示了如何在 Java 中将多个 PDF 文件合并为一个文档：
 
 1. 使用以下方式打开两个源文档 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 构造函数。
-1. 追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 来自第二个的集合 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到第一个具有 `document1.getPages().add(document2.getPages())`.
+1. 追加 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 来自第二个的集合 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到第一个具有 `document1.getPages().add(document2.getPages())`。
 1. 保存合并的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到输出路径。
 
 ## 合并两个 PDF 文档
 
-以下 Java 示例基于 `MergeDocumentExamples.java`.
+以下 Java 示例基于 `MergeDocumentExamples.java`。
 
 ```java
 public static void mergeTwoDocuments(Path inputFile1, Path inputFile2, Path outputFile) {

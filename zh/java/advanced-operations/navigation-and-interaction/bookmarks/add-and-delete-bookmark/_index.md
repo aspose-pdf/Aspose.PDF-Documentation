@@ -19,7 +19,7 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 创建和删除书签�
 
 当文档应仅包含一个顶级大纲条目时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) 并配置其标题、样式和操作。
 1. 将书签添加到文档大纲并保存文件。
 
@@ -42,7 +42,7 @@ public static void addBookmark(Path inputFile, Path outputFile) {
 
 此示例创建一个父书签并在其下嵌套一个子书签。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建父书签和子书签 [OutlineItemCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/outlineitemcollection/) 对象。
 1. 将子项添加到父项，将父项添加到大纲集合中，并保存文档。
 
@@ -70,7 +70,7 @@ public static void addChildBookmark(Path inputFile, Path outputFile) {
 
 当需要从文档中删除整个大纲集合时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 删除完整的大纲集合。
 1. 保存已清理的输出文件。
 
@@ -87,7 +87,7 @@ public static void deleteBookmarks(Path inputFile, Path outputFile) {
 
 当需要删除某个已命名的书签而不清除整个大纲树时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 从大纲集合中按标题删除书签。
 1. 保存更新后的文档。
 

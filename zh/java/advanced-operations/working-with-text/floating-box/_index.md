@@ -83,8 +83,8 @@ public static void multiColumnLayout(Path outputFile) {
 
 在每个插入的片段应开始新列流段时使用此示例。
 
-1. 创建页面并配置多列 `FloatingBox`.
-1. 创建文本片段并对其进行标记 `setFirstParagraphInColumn(true)`.
+1. 创建页面并配置多列 `FloatingBox`。
+1. 创建文本片段并对其进行标记 `setFirstParagraphInColumn(true)`。
 1. 将框添加到页面并保存 PDF。
 
 ```java

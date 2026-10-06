@@ -4,11 +4,11 @@ linktitle: 设置提交 URL
 type: docs
 weight: 30
 url: /zh/java/set-submit-url/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 外观为 PDF 表单按钮设置提交 URL。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 类为 PDF 表单按钮设置提交 URL。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 在 Java 中配置 PDF 表单提交 URL
-Abstract: 本文展示了如何绑定现有 PDF，为按钮字段设置提交 URL 和提交标志，并使用 Aspose.PDF for Java 中的 FormEditor 外观保存更新后的文档。
+Abstract: 本文展示了如何绑定现有 PDF，为按钮字段设置提交 URL 和提交标志，并使用 Aspose.PDF for Java 中的 FormEditor 类保存更新后的文档。
 ---
 ## 设置提交 URL
 

@@ -122,7 +122,7 @@ public static void convertMdToPdf(Path inputFile, Path outputFile) {
 在需要快速将纯文本文件转换为 PDF 时，请使用此示例。
 
 1. 使用 UTF-8 解码读取纯文本源，以便文本内容可作为 Java 字符串使用。
-1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 将文本包装在一个 [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 并将其添加到页面段落集合中。
 1. 保存生成的 PDF。
 
@@ -144,8 +144,8 @@ public static void convertTxtToPdfSimple(Path inputFile, Path outputFile) throws
 当需要将纯文本转换为带有额外布局或编码选项的内容时，请使用此示例。
 
 1. 读取输入文件的所有文本行，以便在转换过程中检查分页标记。
-1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并配置每个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 带有边距和默认文本状态。
-1. 通过解析等宽字体 [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) 并将每行添加为 [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
+1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)，并为每个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 配置边距和默认文本状态。
+1. 通过解析等宽字体 [`FontRepository`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) 并将每行添加为 [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)。
 1. 在页面构建循环完成后保存输出文件。
 
 ```java
@@ -244,7 +244,7 @@ public static void convertXpsToPdf(Path inputFile, Path outputFile) {
 
 1. 创建 [`XslFoLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xslfoloadoptions/) 使用 XSLT 路径，以便在加载期间可以转换 XML 源。
 1. 配置解析错误处理模式，使在遇到无效 XSL-FO 时立即抛出异常。
-1. 在 a 中打开 XML 源 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 使用那些加载选项。
+1. 使用这些加载选项，在 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 中打开 XML 源文件。
 1. 保存生成的 PDF 文档。
 
 ```java
@@ -260,7 +260,7 @@ public static void convertXslFoToPdf(Path xsltFile, Path xmlFile, Path outputFil
 
 ## 将 XML 转换为中间 HTML
 
-当XML数据必须在最终PDF转换步骤之前转换为HTML时，请使用此方法。
+当 XML 数据必须在最终 PDF 转换步骤之前转换为 HTML 时，请使用此方法。
 
 1. 打开 XML 和 XSLT 输入文件作为转换源。
 1. 创建一个 `Transformer` 从 XSLT 样式表获取并在 XML 源上运行它。

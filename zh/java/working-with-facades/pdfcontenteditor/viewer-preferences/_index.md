@@ -4,7 +4,7 @@ linktitle: 查看器首选项
 type: docs
 weight: 100
 url: /zh/java/pdfcontenteditor-viewer-preferences/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 外观获取和更改查看器首选项。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 类获取和更改查看器首选项。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 使用 PdfContentEditor 在 Java 中管理 PDF 查看器首选项

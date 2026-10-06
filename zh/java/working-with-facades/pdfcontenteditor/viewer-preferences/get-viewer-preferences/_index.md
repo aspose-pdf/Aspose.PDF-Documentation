@@ -4,11 +4,11 @@ linktitle: 获取查看器首选项
 type: docs
 weight: 10
 url: /zh/java/get-viewer-preferences/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 外观读取 PDF 文档的查看器首选项。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 PdfContentEditor 类读取 PDF 文档的查看器首选项。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 在 Java 中读取 PDF 查看器首选项
-Abstract: 本文展示了如何绑定 PDF 并使用 Aspose.PDF for Java 的 PdfContentEditor 外观打印当前的查看器首选项值。
+Abstract: 本文展示了如何绑定 PDF 并使用 Aspose.PDF for Java 的 PdfContentEditor 类打印当前的查看器首选项值。
 ---
 ## 获取当前查看器首选项
 

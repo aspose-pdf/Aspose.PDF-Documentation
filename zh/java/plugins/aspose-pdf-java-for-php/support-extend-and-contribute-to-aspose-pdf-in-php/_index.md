@@ -1,10 +1,10 @@
 ---
-title: 在PHP中支持、扩展并贡献于 Aspose.Pdf
-linktitle: 在PHP中支持、扩展并贡献于 Aspose.Pdf
+title: 在 PHP 中支持、扩展并贡献于 Aspose.Pdf
+linktitle: 在 PHP 中支持、扩展并贡献于 Aspose.Pdf
 type: docs
 weight: 30
 url: /zh/java/support-extend-and-contribute-to-aspose-pdf-in-php/
-description: 了解如何在PHP中支持和扩展 Aspose.PDF，并为提升您PHP应用中的PDF处理能力作出贡献。
+description: 了解如何在 PHP 中支持和扩展 Aspose.PDF，并为提升您 PHP 应用中的 PDF 处理能力作出贡献。
 lastmod: "2026-10-06"
 ---
 ## 支持

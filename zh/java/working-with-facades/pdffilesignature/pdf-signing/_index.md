@@ -4,7 +4,7 @@ linktitle: 签署 PDF 文档
 type: docs
 weight: 10
 url: /zh/java/pdf-signing/
-description: 了解如何在 Java 中使用 PdfFileSignature 外观签署 PDF 文档。
+description: 了解如何在 Java 中使用 PdfFileSignature 类签署 PDF 文档。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -16,14 +16,14 @@ Abstract: 了解如何使用 Aspose.PDF for Java 签署 PDF 文档。Java 示例
 ---
 ## 签署 PDF 文档
 
-使用 `PdfFileSignature` 当您需要在 PDF 上应用可见的数字签名时。
+当需要在 PDF 上应用可见的数字签名时，使用 `PdfFileSignature`。
 
 ### 步骤
 
 1. 创建一个 `PdfFileSignature` 实例并绑定源 PDF。
 2. 通过以下方式加载证书 `setCertificate` 或通过创建一个 `PKCS7` 对象。
 3. 调用 `sign` 带有目标页面、可见性设置、签名矩形和签名数据。
-4. 保存已签名的 PDF 并关闭外观对象。
+4. 保存已签名的 PDF 并关闭 Facades 对象。
 
 ### Java 示例
 

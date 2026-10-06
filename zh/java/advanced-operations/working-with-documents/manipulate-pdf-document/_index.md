@@ -19,7 +19,7 @@ Aspose.PDF for Java 包含超出简单页面编辑的文档结构操作。
 
 在需要检查文档是否符合 PDF/A-1a 存档标准时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 对必需项运行验证 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) 目标。
 1. 将验证报告保存到指定的输出路径。
 
@@ -35,7 +35,7 @@ public static void validatePdfaStandardA1a(Path inputFile, Path outputFile) {
 
 此变体将相同的源文档针对 PDF/A-1b 合规级别进行验证。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 使用验证方法 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) PDF/A-1b 的值。
 1. 将验证结果写入输出报告文件。
 
@@ -51,8 +51,8 @@ public static void validatePdfaStandardA1b(Path inputFile, Path outputFile) {
 
 当文档应包含生成的 TOC 页面并带有指向内容页面的链接时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 插入一个新的 TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并配置它的 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 插入一个新的 TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并配置它的 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)。
 1. 创建 [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 指向目标页面的条目。
 1. 保存更新后的文档。
 
@@ -88,7 +88,7 @@ public static void addTableOfContents(Path inputFile, Path outputFile) {
 
 此示例展示了如何为多个目录层级分配不同的视觉设置。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 添加 TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并配置 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/) 格式化数组。
 1. 创建示例 [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 不同级别的条目。
 1. 保存带有格式化 TOC 的文档。
@@ -142,8 +142,8 @@ public static void setTocLevels(Path inputFile, Path outputFile) {
 
 当目录应仅显示条目标题而不显示页码时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加 TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并在...中禁用页码 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 添加 TOC [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并在...中禁用页码 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)。
 1. 创建所需的 [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 条目并将其添加到内容页。
 1. 保存更新后的文档。
 
@@ -188,8 +188,8 @@ public static void hidePageNumbersInToc(Path inputFile, Path outputFile) {
 
 此示例向生成的目录中显示的页码添加自定义前缀。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 插入目录 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并在其中设置所需的页码前缀 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 插入目录 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并在其中设置所需的页码前缀 [TocInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/tocinfo/)。
 1. 创建 [Heading](https://reference.aspose.com/pdf/java/com.aspose.pdf/heading/) 指向每页的条目。
 1. 保存更新后的文档。
 
@@ -225,7 +225,7 @@ public static void customizePageNumbersInToc(Path inputFile, Path outputFile) {
 当文档应在打开时运行 JavaScript，并在特定日期后显示到期警告时，请使用此方法。
 
 1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加任何必需的内容。
-1. 创建一个 [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/) 带有过期逻辑。
+1. 创建一个带有过期逻辑的 [JavascriptAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/javascriptaction/)。
 1. 将脚本分配为文档打开操作并保存输出文件。
 
 ```java
@@ -251,9 +251,9 @@ public static void setPdfExpiryDate(Path inputFile, Path outputFile) {
 
 此示例将交互式表单字段转换为静态页面内容，从而生成的文档不再可作为表单进行编辑。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 检查文档是否包含表单小部件。
-1. 扁平化每个 [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) 由 a 表示 [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/).
+1. 扁平化每个 [Field](https://reference.aspose.com/pdf/java/com.aspose.pdf/field/) 由 a 表示 [WidgetAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/widgetannotation/)。
 1. 保存已展平的文档。
 
 ```java

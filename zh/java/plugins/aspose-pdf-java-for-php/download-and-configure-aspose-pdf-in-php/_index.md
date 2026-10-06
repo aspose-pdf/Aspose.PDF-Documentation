@@ -23,7 +23,7 @@ lastmod: "2026-10-06"
 - **Aspose.PDF Java for PHP 示例**
   - [Aspose.PDF Java for PHP](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
 
-## 如何在 Linux 平台上配置源代码
+## 在 Linux 平台上配置源代码
 
 请按照以下简单步骤В 以打开并扩展源代码。
 
@@ -75,7 +75,7 @@ lastmod: "2026-10-06"
 
 安装 php5.5 CGI 后，重启 tomcat8 服务器并检查\u0412  http://localhost:8080/JavaBridge В 再次在浏览器中。
 
-如果出现\u0412\u00A0**JAVA_HOME**\u0412\u00A0错误，则打开 /etc/default/tomcat8 文件并取消注释设置 JAVA_HOME 的行。检查\u0412 http://localhost:8080/JavaBridge В 在浏览器中再次打开，它应该带有 PHP/JavaBridge 示例页面。
+如果出现\u0412\u00A0**JAVA_HOME**\u0412\u00A0 错误，则打开 /etc/default/tomcat8 文件并取消注释设置 JAVA_HOME 的行。检查\u0412 http://localhost:8080/JavaBridge В 在浏览器中再次打开，它应该带有 PHP/JavaBridge 示例页面。
 
 ## 3. 配置 Aspose.PDF Java for PHP 示例
 
@@ -89,7 +89,7 @@ $ git clone [https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugi
 
 {{< /highlight >}}
 
-## 如何在 Windows 上配置源代码
+## 在 Windows 上配置源代码
 
 请遵循以下简易步骤，在 Windows 平台上配置 PHP/Java Bridge
 

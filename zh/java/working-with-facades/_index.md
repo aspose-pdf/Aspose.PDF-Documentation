@@ -23,9 +23,9 @@ Facades API 为常见 PDF 任务提供更高级的帮助程序，而无需直接
 - 合并、拆分和重构 PDF 文件
 - 检查元数据和页面信息
 - 应用安全性、签名、印章和页码
-- 使用查看器外观将 PDF 页面渲染为图像
+- 使用查看器类将 PDF 页面渲染为图像
 
-## 外观部分
+## Facades 类
 
 - [Form](/pdf/zh/java/form-class/)
 - [FormEditor](/pdf/zh/java/formeditor-class/)

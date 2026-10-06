@@ -4,7 +4,7 @@ linktitle: 在现有 PDF 文件上设置权限
 type: docs
 weight: 40
 url: /zh/java/set-privileges/
-description: 了解如何在 Java 中使用 PdfFileSecurity 门面设置 PDF 权限。
+description: 了解如何在 Java 中使用 PdfFileSecurity 类设置 PDF 权限。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -21,7 +21,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 控制 PDF 权限。Java 示例
 ### 步骤
 
 1. 创建一个 `PdfFileSecurity` 实例。
-2. 将源 PDF 与 `bindPdf`.
+2. 将源 PDF 与 `bindPdf`。
 3. 创建一个 `DocumentPrivilege` 对象并配置允许的操作。
 4. 调用适当的 `setPrivilege` 或 `trySetPrivilege` 超载。
 5. 如果更新成功，则保存结果，然后关闭对象。

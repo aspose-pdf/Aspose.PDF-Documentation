@@ -22,7 +22,7 @@ Abstract: 本文介绍了如何使用 Aspose.PDF for Java 从 PDF 文件中提�
 1. 呼叫 `getFieldNames()` 收集表单中所有存在的字段标识符。
 1. 遍历这些字段名并调用 `getField(fieldName)` 读取每个字段的值。
 1. 从提取的键值对构建输出字符串，并打印聚合的表单数据。
-1. 关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 外观在 `finally` 块。
+1. 在 `finally` 块中关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象。
 
 ```java
 public static void extractFormFields(Path inputFile) {
@@ -49,10 +49,10 @@ public static void extractFormFields(Path inputFile) {
 当您知道 PDF 表单中定义的确切字段名称时，您可以直接使用 `getField(fieldName)`
 无需遍历整个字段集合。
 
-1. 使用此方式打开源 PDF 表单 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 外观。
+1. 使用 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象打开源 PDF 表单。
 1. 呼叫 `getField(fieldName)` 使用所请求的字段名称从 AcroForm 数据中读取其当前值。
 1. 打印提取的字段值。
-1. 关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 外观在 `finally` 块。
+1. 在 `finally` 块中关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象。
 
 ```java
 public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
@@ -71,11 +71,11 @@ public static void extractFormFieldByTitle(Path inputFile, String fieldName) {
 表单字段值也可以提取并存储为 JSON。这在需要消费 PDF 表单数据时很有用。
 Web 应用程序、API 或其他与 JSON 交互的系统。
 
-1. 使用此方式打开源 PDF 表单 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 外观。
+1. 使用 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象打开源 PDF 表单。
 1. 呼叫 `getFieldNames()` 从 AcroForm 中收集所有可用的字段标识符。
 1. 遍历这些字段，转义名称和值，并构建 JSON 对象字符串。
 1. 将 JSON 结果写入输出文件。
-1. 关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 外观在 `finally` 块。
+1. 在 `finally` 块中关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象。
 
 ```java
 public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws Exception {
@@ -105,8 +105,8 @@ public static void extractFormFieldsJson(Path inputFile, Path outputFile) throws
 
 当需要将 PDF 表单数据提供给使用结构化 XML 数据的系统时，XML 导出非常有用。
 
-1. 创建 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 尚未绑定文档的外观。
-1. 为 XML 文件打开输出流，并使用 facade 将源 PDF 绑定 `bindPdf(...)`.
+1. 创建尚未绑定文档的 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象。
+1. 为 XML 文件打开输出流，并使用 facade 将源 PDF 绑定 `bindPdf(...)`。
 1. 呼叫 `exportXml(stream)` 因此，当前的表单字段数据被序列化为 XML。
 1. 关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 导出完成后，facade。
 
@@ -126,8 +126,8 @@ public static void extractDataToXml(Path inputFile, Path outputFile) throws Exce
 
 FDF（Forms Data Format）通常用于在不依赖 PDF 文档的情况下交换 AcroForm 字段数据。
 
-1. 创建 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 尚未绑定文档的外观。
-1. 为 FDF 文件打开输出流，并使用 facade 将源 PDF 绑定 `bindPdf(...)`.
+1. 创建尚未绑定文档的 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象。
+1. 为 FDF 文件打开输出流，并使用 facade 将源 PDF 绑定 `bindPdf(...)`。
 1. 呼叫 `exportFdf(stream)` 因此，FormField 数据以 FDF 格式进行序列化。
 1. 关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 导出完成后，facade。
 
@@ -147,8 +147,8 @@ public static void extractDataToFdf(Path inputFile, Path outputFile) throws Exce
 
 XFDF 是基于 XML 的 Forms Data Format 表示，并且便于与使用 XML 的系统交换表单数据。
 
-1. 创建 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 尚未绑定文档的外观。
-1. 为 XFDF 文件打开输出流，并使用 将源 PDF 绑定到外观层 `bindPdf(...)`.
+1. 创建尚未绑定文档的 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 对象。
+1. 为 XFDF 文件打开输出流，并使用 `bindPdf(...)` 将源 PDF 绑定到 Facades 对象。
 1. 呼叫 `exportXfdf(stream)` 所以表单字段数据以 XFDF 格式序列化。
 1. 关闭 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) 导出完成后，facade。
 

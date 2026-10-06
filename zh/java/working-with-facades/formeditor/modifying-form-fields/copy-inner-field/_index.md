@@ -4,11 +4,11 @@ linktitle: 复制内部字段
 type: docs
 weight: 70
 url: /zh/java/copy-inner-field/
-description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 外观将表单字段复制到同一 PDF 文档中的新位置。
+description: 了解如何在 Java 中使用 Aspose.PDF 的 FormEditor 类将表单字段复制到同一 PDF 文档中的新位置。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 在 Java 中复制同一文档内的 PDF 表单字段
-Abstract: 本文展示了如何绑定现有 PDF，将字段复制到另一页及位置，并使用 Aspose.PDF for Java 的 FormEditor 外观保存更新后的文档。
+Abstract: 本文展示了如何绑定现有 PDF，将字段复制到另一页及位置，并使用 Aspose.PDF for Java 的 FormEditor 类保存更新后的文档。
 ---
 ## 复制同一 PDF 中的字段
 

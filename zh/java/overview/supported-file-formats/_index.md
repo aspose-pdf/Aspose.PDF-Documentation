@@ -17,8 +17,8 @@ Abstract: 本文提供了一张详尽的表格，列出 Aspose.PDF for Python �
 
 |**格式**|**描述**|**加载**|**保存**|**备注**|
 | :- | :- | :- | :- | :- |
-|[PDF](https://docs.fileformat.com/pdf/)|可移植\u0412\u00A0文档格式|{{< emoticons/tick >}}|{{< emoticons/tick >}}В |В |
-|[CGM](https://docs.fileformat.com/page-description-language/cgm/)|用于2D矢量图形的计算机图形元文件|{{< emoticons/tick >}}|В |В |
+|[PDF](https://docs.fileformat.com/pdf/)|可移植\u0412\u00A0 文档格式|{{< emoticons/tick >}}|{{< emoticons/tick >}}В |В |
+|[CGM](https://docs.fileformat.com/page-description-language/cgm/)|用于 2D 矢量图形的计算机图形元文件|{{< emoticons/tick >}}|В |В |
 |[EPUB](https://docs.fileformat.com/ebook/epub/)|电子书文件格式|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
 |[HTML](https://docs.fileformat.com/web/html/)|HTML 格式|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |
 |[TeX](https://docs.fileformat.com/page-description-language/tex/)|LaTex 排版文件В 格式|{{< emoticons/tick >}}|{{< emoticons/tick >}}|В |

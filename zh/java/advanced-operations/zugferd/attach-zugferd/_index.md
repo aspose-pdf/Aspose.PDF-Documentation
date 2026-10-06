@@ -17,12 +17,12 @@ Abstract: 本文说明了如何使用 Aspose.PDF for Java 创建符合 PDF/A-3A 
 
 ## 将 ZUGFeRD 发票 XML 附加到 PDF
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) 用于 XML 发票文件。
-1. 设置嵌入文件的元数据，包括 MIME 类型和 [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/).
+1. 设置嵌入文件的元数据，包括 MIME 类型和 [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/)。
 1. 添加 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) 到文档嵌入文件集合。
-1. 将文档转换为 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`.
-1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 将文档转换为 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A`。
+1. 保存已更新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {

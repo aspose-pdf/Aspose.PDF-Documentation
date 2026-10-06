@@ -13,8 +13,8 @@ Abstract: 本文解释了如何使用 Java 将批注从源 PDF 复制并导出�
 ## 将批注从一个 PDF 复制到另一个 PDF
 
 1. 打开源 PDF 并创建一个带有目标页的新目标文档。
-2. 枚举第一页上的注释，并将每个注释添加到目标页。
-3. 保存目标文档以保留已复制的注释。
+2. 枚举第一页上的批注，并将每个批注添加到目标页。
+3. 保存目标文档以保留已复制的批注。
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

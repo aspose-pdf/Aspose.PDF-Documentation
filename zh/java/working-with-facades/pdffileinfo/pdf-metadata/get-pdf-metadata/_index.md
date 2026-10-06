@@ -4,7 +4,7 @@ linktitle: 获取 PDF 元数据
 type: docs
 weight: 20
 url: /zh/java/get-pdf-metadata/
-description: 了解如何使用 PdfFileInfo 外观在 Java 中读取 PDF 元数据。
+description: 了解如何使用 PdfFileInfo 类在 Java 中读取 PDF 元数据。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -23,7 +23,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 检索 PDF 元数据。该 Java
 1. 创建一个 `PdfFileInfo` 源 PDF 的对象。
 2. 读取标准元数据字段，例如主题、标题、关键字和创建者。
 3. 检查文件状态标志，例如文件是否有效、已加密、受密码保护或为组合文档。
-4. 使用读取自定义元数据值 `getMetaInfo`.
+4. 使用读取自定义元数据值 `getMetaInfo`。
 5. 关闭 `PdfFileInfo` 实例。
 
 ### Java 示例

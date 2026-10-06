@@ -25,7 +25,7 @@ Java `StampExamples` 类演示了通过 Facades API 可用的主要印章构建�
 2. 创建一个 `Stamp` 对象并将其绑定到图像文件。
 3. 设置印章标识符和放置原点。
 4. 将印章添加到文档中。
-5. 保存结果并关闭外观对象。
+5. 保存结果并关闭 Facades 对象。
 
 ### Java 示例
 
@@ -85,7 +85,7 @@ public static void addPdfPageAsStamp(Path inputFile, Path stampPdf, Path outputF
 
 1. 创建一个 `PdfFileStamp` 实例并绑定源 PDF。
 2. 创建一个 `Stamp` 对象。
-3. 绑定一个 `FormattedText` 徽标和自定义 `TextState` 到印章。
+3. 将一个 `FormattedText` 对象和自定义 `TextState` 绑定到印章。
 4. 设置印章的原点和旋转角度。
 5. 添加标签，保存输出，并关闭 facade 对象。
 
@@ -119,7 +119,7 @@ public static void addTextStampWithTextState(Path inputFile, Path outputFile) {
 2. 创建一个 `Stamp` 对象并将其绑定到图像文件。
 3. 设置目标页面列表、原点和图像大小。
 4. 将印章添加到文档中。
-5. 保存结果并关闭外观对象。
+5. 保存结果并关闭 Facades 对象。
 
 ### Java 示例
 

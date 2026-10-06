@@ -4,7 +4,7 @@ linktitle: 清除 PDF 元数据
 type: docs
 weight: 10
 url: /zh/java/clear-pdf-metadata/
-description: 了解如何使用 PdfFileInfo 外观在 Java 中清除 PDF 元数据。
+description: 了解如何使用 PdfFileInfo 类在 Java 中清除 PDF 元数据。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -22,7 +22,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 清除 PDF 元数据。该 Java
 
 1. 创建一个 `PdfFileInfo` 用于输入 PDF 的对象。
 2. 调用 `clearInfo()` 删除文档元数据。
-3. 将结果保存到一个新文件中，使用 `save()`.
+3. 将结果保存到一个新文件中，使用 `save()`。
 4. 关闭 `PdfFileInfo` 实例。
 
 ### Java 示例

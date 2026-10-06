@@ -19,7 +19,7 @@ PDF 作品集可以在单个 PDF 容器中捆绑多个文件，同时保持每�
 
 当需要将多个文件打包成 PDF 作品集集合时，请使用此示例。
 
-1. 创建新 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并启用其 [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/).
+1. 创建新 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并启用其 [Collection](https://reference.aspose.com/pdf/java/com.aspose.pdf/collection/)。
 1. 创建 [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) 为每个输入文件创建对象并设置它们的描述。
 1. 将文件添加到组合集合中并保存输出文档。
 
@@ -49,7 +49,7 @@ public static void createPdfPortfolio(Path[] inputFiles, Path outputFile) {
 
 当需要清空现有的 PDF 组合文档集合时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 删除文档集合条目。
 1. 保存清理后的输出文档。
 

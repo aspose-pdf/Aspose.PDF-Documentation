@@ -14,10 +14,10 @@ sitemap:
 
 使用 `TextSearchOptions` 带有一个 `Rectangle` 将提取限制在页面的指定区域。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建一个 [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) 用于从选定的页面区域收集文本。
 1. 创建 [TextSearchOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) 针对目标 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 并启用 `setLimitToPageBounds(true)` 因此，提取保持在可见页面框内。
-1. 将配置好的搜索选项应用于吸收器并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 将配置好的搜索选项应用于吸收器并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 将提取的文本缓冲区写入输出文件。
 
 ```java
@@ -38,7 +38,7 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 
 使用 `ParagraphAbsorber` 检查节矩形和段落多边形以及提取的文本。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建一个 [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 以构建页面标记信息。
 1. 读取第一个页面标记结果并遍历其章节和段落。
 1. 收集每个章节矩形、段落多边形，以及从中重建的段落文本。 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 行。

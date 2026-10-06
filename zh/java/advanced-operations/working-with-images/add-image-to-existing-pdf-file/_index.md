@@ -105,7 +105,7 @@ public static void addImageSetAlternativeTextForImage(Path imageFile, Path outpu
 当您想使用 Flate 压缩嵌入图像数据时，请使用此示例。
 
 1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并打开图像流。
-1. 将图像添加到页面资源中，使用 `ImageFilterType.Flate`.
+1. 将图像添加到页面资源中，使用 `ImageFilterType.Flate`。
 1. 通过页面操作绘制图像并保存结果。
 
 ```java

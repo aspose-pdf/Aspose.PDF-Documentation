@@ -4,7 +4,7 @@ linktitle: 从 PDF 中提取页面
 type: docs
 weight: 30
 url: /zh/java/extract-pages-from-pdf/
-description: 在 Java 中使用 PdfFileEditor 门面从 PDF 中提取所选页面。
+description: 在 Java 中使用 PdfFileEditor 类从 PDF 中提取所选页面。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

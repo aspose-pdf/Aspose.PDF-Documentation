@@ -15,14 +15,14 @@ Abstract: 本文解释了如何使用 Aspose.PDF for Java 处理 PDF 元数据�
 ---
 Aspose.PDF for Java 提供了两种主要的元数据处理方式：
 
-- 通过 DOM API `Document`, `DocumentInfo`，以及 `document.getMetadata()`.
-- 通过外观 API `PdfFileInfo`.
+- 通过 DOM API `Document`, `DocumentInfo`，以及 `document.getMetadata()`。
+- 通过 Facades API `PdfFileInfo`。
 
 ## 获取 PDF 文件信息
 
 当您需要读取作者、标题、主题或关键字等标准文档信息字段时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问 [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) 对象。
 1. 读取所需的元数据字段并输出它们的值。
 
@@ -45,7 +45,7 @@ public static void getPdfFileInformation(Path inputFile) {
 
 当需要通过使用已注册的命名空间前缀来添加或更新 XMP 属性时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 注册所需的 XMP 命名空间并添加元数据项。
 1. 保存已更新的文档。
 
@@ -64,7 +64,7 @@ public static void setPrefixMetadata(Path inputFile, Path outputFile) {
 
 当您想要写入标准 PDF 文件属性（如作者、标题、生成者或创建日期）时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问 [DocumentInfo](https://reference.aspose.com/pdf/java/com.aspose.pdf/documentinfo/) 并分配新的元数据值。
 1. 保存文档以更新的文件信息。
 
@@ -93,8 +93,8 @@ public static void setFileInformation(Path inputFile, Path outputFile) {
 
 当您需要存储额外的 XMP 条目（包括自定义元数据值）时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 通过添加所需的 XMP 元数据项 `document.getMetadata()`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 通过添加所需的 XMP 元数据项 `document.getMetadata()`。
 1. 保存输出文件。
 
 ```java

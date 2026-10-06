@@ -34,6 +34,6 @@ print "Rotate :-" + pdf_page.getRotate()
 
 **下载运行代码**
 
-Download\u0412\u00A0**获取页面属性 (Aspose.PDF)**\u0412\u00A0来自\u0412\u00A0以下提到的社交代码站点:
+Download\u0412\u00A0**获取页面属性 (Aspose.PDF)**\u0412\u00A0 来自\u0412\u00A0 以下提到的社交代码站点:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithPages/GetPageProperties/GetPageProperties.py)

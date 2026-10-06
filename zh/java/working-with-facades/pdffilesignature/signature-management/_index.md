@@ -4,7 +4,7 @@ linktitle: 签名管理
 type: docs
 weight: 80
 url: /zh/java/signature-management/
-description: 了解如何在 Java 中使用 PdfFileSignature 门面删除现有的 PDF 签名。
+description: 了解如何在 Java 中使用 PdfFileSignature 类删除现有的 PDF 签名。
 lastmod: "2026-10-06"
 draft: false
 sitemap:

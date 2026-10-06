@@ -19,7 +19,7 @@ Abstract: 本文说明了如何使用 Aspose.PDF for Java 修改 AcroForm 内容
 
 当需要清空打字机表单内容而不删除表单对象本身时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历页面表单资源并定位 Typewriter 表单。
 1. 清除已吸收的文本片段并保存文档。
 
@@ -45,7 +45,7 @@ public static void clearTextInForm(Path inputFile, Path outputFile) {
 
 当文本字段只应接受有限数量的字符时，请使用此示例。
 
-1. 创建一个 [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) 外观并绑定源 PDF。
+1. 创建一个 [FormEditor](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/formeditor/) 对象并绑定源 PDF。
 1. 设置目标字段的最大长度。
 1. 保存更新后的文档。
 
@@ -66,7 +66,7 @@ public static void setFieldLimit(Path inputFile, Path outputFile) {
 
 当您需要检查文本字段的当前最大长度时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 从表单集合中访问目标字段。
 1. 从中读取限制 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) 并输出它。
 
@@ -85,7 +85,7 @@ public static void getFieldLimit(Path inputFile) {
 
 当现有文本字段需要使用不同的字体或外观时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 访问目标 [TextBoxField](https://reference.aspose.com/pdf/java/com.aspose.pdf/textboxfield/) 并设置新的默认外观。
 1. 保存已更新的 PDF。
 
@@ -107,7 +107,7 @@ public static void setFormFieldFont(Path inputFile, Path outputFile) {
 
 当需要从 AcroForm 中删除特定字段时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 按名称从表单中删除目标字段。
 1. 保存更新后的文档。
 

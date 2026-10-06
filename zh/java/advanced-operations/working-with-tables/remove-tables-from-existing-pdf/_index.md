@@ -15,14 +15,14 @@ Abstract: 本文解释了如何使用 Aspose.PDF for Java 从现有 PDF 文档�
 aliases:
     - "/zh/java/remove-tables-from-existing-pdf/"
 ---
-使用 `TableAbsorber` 当您需要从现有 PDF 中删除一个或多个检测到的表格时。
+当需要从现有 PDF 中删除一个或多个检测到的表格时，使用 `TableAbsorber`。
 
 ## 删除一个检测到的表格
 
 仅在页面上应删除第一个匹配的表格时使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 使用以下方式访问目标页面 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 使用以下方式访问目标页面 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/)。
 1. 删除检测到的第一个表格并保存文档。
 
 ```java
@@ -40,7 +40,7 @@ public static void removeOneTable(Path inputFile, Path outputFile) {
 
 当页面上的每个匹配的表格都应被删除时使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 使用以下方式访问目标页面 [TableAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/tableabsorber/) 并将检测到的表格复制到列表中。
 1. 删除每个检测到的表格并保存更新后的 PDF。
 

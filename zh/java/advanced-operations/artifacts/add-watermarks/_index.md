@@ -19,7 +19,7 @@ Abstract: 本文解释了如何使用 Aspose.PDF for Java 在 PDF 文档中添�
 
 当您需要检查现有水印工件并读取其文本或位置时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历目标页面的伪影集合。
 1. 过滤水印分页伪影并打印它们的文本和矩形。
 
@@ -40,7 +40,7 @@ public static void extractWatermarkFromPdf(Path inputFile) {
 
 当页面需要显示居中文本水印，并具有自定义旋转、透明度和背景放置时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) 并配置其文本状态和放置设置。
 1. 将水印添加到页面并保存输出文件。
 
@@ -71,7 +71,7 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 
 当需要从页面中移除现有的水印伪影时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 反向遍历页面伪影集合。
 1. 删除子类型为水印的分页伪影，然后保存文档。
 

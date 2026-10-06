@@ -9,7 +9,7 @@ lastmod: "2026-10-06"
 ---
 ## 安装
 
-### 如何在 IntelliJ IDEA (Maven) 中安装 Aspose.PDF Java
+### 在 IntelliJ IDEA (Maven) 中安装 Aspose.PDF Java
 
 以下步骤演示如何安装 **Aspose.PDF Java for IntelliJ IDEA (Maven)** 插件。
 
@@ -24,7 +24,7 @@ TheВ 插件列在 IntelliJ IDEA 的 CE 中 [官方插件网站](https://plugin
 
 ### Aspose.PDF Maven 项目向导
 
-**Aspose.PDF Maven Project** \u0432\u0402\u201C 导入 IntelliJ IDEA，这将使您能够创建基于 Aspose.PDF Maven 的项目以使用 [Aspose.PDF for Java API。](https://products.aspose.com/pdf/java/).
+**Aspose.PDF Maven Project** \u0432\u0402\u201C 导入 IntelliJ IDEA，这将使您能够创建基于 Aspose.PDF Maven 的项目以使用 [Aspose.PDF for Java API。](https://products.aspose.com/pdf/java/)。
 
 ![todo:image_alt_text](https://i.imgur.com/hd2mYnW.jpg)
 
@@ -70,17 +70,17 @@ Aspose.PDF 示例
 
 ![todo:image_alt_text](https://i.imgur.com/aNYhLl5.jpg)
 
-恭喜！  您已成功创建 Aspose.PDF Maven 项目用于使用 [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/).
+恭喜！  您已成功创建 Aspose.PDF Maven 项目用于使用 [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/)。
 
 ![todo:image_alt_text](https://i.imgur.com/UJlSbuM.jpg)
 
 已创建的 Aspose.PDF for Java API Maven 项目已准备好根据您的项目需求进行修改。
 
-如果您选择下载 [示例源代码](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples).
+如果您选择下载 [示例源代码](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)。
 
 ### Aspose.PDF 示例向导
 
-导入/复制 [示例源代码](https://goo.gl/cPAbJM)使用 **Aspose.PDF Examples Wizard** 将其导入/复制到项目中，您需要先在 Aspose.PDF Maven Project Wizard 上通过选择\u0412\u00A0 \u0022Also Download Examples Source Code\u0022 来下载示例。
+导入/复制 [示例源代码](https://goo.gl/cPAbJM) 使用 **Aspose.PDF Examples Wizard** 将其导入/复制到项目中，您需要先在 Aspose.PDF Maven Project Wizard 上通过选择\u0412\u00A0 \u0022Also Download Examples Source Code\u0022 来下载示例。
 
 然后在 IntelliJ IDEA 中遵循以下步骤：
 

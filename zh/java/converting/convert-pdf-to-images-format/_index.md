@@ -19,9 +19,9 @@ Aspose.PDF for Java 可以将 PDF 页面渲染为栅格和矢量图像格式，�
 
 当需要将 PDF 页面渲染为 BMP 图像时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/) 带有一个 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 300 DPI 的。
-1. 遍历 `document.getPages()` 并调用 `device.process(...)` 对于每页。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [`BmpDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/bmpdevice/)，并将 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 设置为 300 DPI。
+1. 遍历 `document.getPages()`，并对每页调用 `device.process(...)`。
 1. 将生成的 BMP 图像保存到编号的输出路径。
 
 ```java
@@ -40,9 +40,9 @@ public static void convertPdfToBmp(Path inputFile, Path outputPrefix) {
 
 当需要将 PDF 页面导出为 EMF 矢量图像时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/) 带有一个 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 300 DPI 的。
-1. 遍历页面并调用 `device.process(...)` 对于每页。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [`EmfDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/emfdevice/)，并将 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 设置为 300 DPI。
+1. 遍历页面，并对每页调用 `device.process(...)`。
 1. 将 EMF 输出保存到编号的文件路径。
 
 ```java
@@ -61,8 +61,8 @@ public static void convertPdfToEmf(Path inputFile, Path outputPrefix) {
 
 当需要将 PDF 页面转换为 GIF 图像时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/) 带有一个 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 300 DPI 的。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [`GifDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/gifdevice/)，并将 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 设置为 300 DPI。
 1. 遍历页面并调用 `device.process(...)` 渲染每页。
 1. 将 GIF 文件保存到编号的输出路径。
 
@@ -82,8 +82,8 @@ public static void convertPdfToGif(Path inputFile, Path outputPrefix) {
 
 当需要将 PDF 页面导出为 JPEG 图像时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/) 带有一个 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 300 DPI 的。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [`JpegDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/jpegdevice/)，并将 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 设置为 300 DPI。
 1. 遍历页面并调用 `device.process(...)` 将每页栅格化为 JPEG。
 1. 将 JPEG 输出文件保存到编号路径。
 
@@ -103,9 +103,9 @@ public static void convertPdfToJpeg(Path inputFile, Path outputPrefix) {
 
 当需要将 PDF 页面转换为 PNG 图像时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) 带有一个 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 300 DPI 的。
-1. 遍历页面并调用 `device.process(...)` 对于每个 PDF 页面。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/)，并将 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 设置为 300 DPI。
+1. 遍历页面，并对每页调用 `device.process(...)`。
 1. 将 PNG 输出保存到编号的文件路径。
 
 ```java
@@ -124,8 +124,8 @@ public static void convertPdfToPng(Path inputFile, Path outputPrefix) {
 
 在渲染时，如果缺少字形需要使用回退字体，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) 带有一个 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 300 DPI 的。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
+1. 创建一个 [`PngDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/)，并将 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 设置为 300 DPI。
 1. 启用 `document.setAbsentFontTryToSubstitute(true)` 因此，在渲染时缺失的字形可以回退到替代字体。
 1. 渲染页面并保存 PNG 文件。
 
@@ -146,7 +146,7 @@ public static void convertPdfToPngWithDefaultFont(Path inputFile, Path outputPre
 
 当需要将 PDF 页面导出为 SVG 图形时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`SvgSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/svgsaveoptions/) 并在 raw 时禁用 ZIP 压缩 `.svg` 需要输出。
 1. 启用 `setTreatTargetFileNameAsDirectory(true)` 所以，每页的 SVG 输出可以组织在目标路径下。
 1. 保存 SVG 输出。
@@ -167,9 +167,9 @@ public static void convertPdfToSvg(Path inputFile, Path outputPrefix) {
 
 当需要将一个或多个 PDF 页面导出为 TIFF 时，请使用此示例。
 
-1. 在 a 中打开源 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建 [`TiffSettings`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffsettings/) 并配置压缩、颜色深度和空白页行为。
-1. 创建一个 [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/) 带有一个 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 分辨率为 300 DPI，且已准备好的 TIFF 设置。
+1. 创建一个 [`TiffDevice`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/tiffdevice/)，使用分辨率为 300 DPI 的 [`Resolution`](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) 和已准备好的 TIFF 设置。
 1. 渲染页面并保存 TIFF 输出。
 
 ```java

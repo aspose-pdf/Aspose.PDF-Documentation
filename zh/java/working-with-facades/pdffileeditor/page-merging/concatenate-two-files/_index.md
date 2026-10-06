@@ -4,7 +4,7 @@ linktitle: 合并两个 PDF 文件
 type: docs
 weight: 60
 url: /zh/java/concatenate-two-files/
-description: 在 Java 中使用 PdfFileEditor 外观将两个 PDF 文件合并为一个文档。
+description: 在 Java 中使用 PdfFileEditor 类将两个 PDF 文件合并为一个文档。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
@@ -15,7 +15,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 合并两个 PDF 文件。Java 
 ---
 ## 合并两个 PDF 文件
 
-本文直接映射到 `mergePdfDocuments` 示例在 `PdfFileEditorExamples.java`.
+本文直接映射到 `mergePdfDocuments` 示例在 `PdfFileEditorExamples.java`。
 
 ### 步骤
 

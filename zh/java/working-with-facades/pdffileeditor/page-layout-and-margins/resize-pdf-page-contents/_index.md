@@ -4,7 +4,7 @@ linktitle: 调整 PDF 页面内容
 type: docs
 weight: 30
 url: /zh/java/resize-pdf-page-contents/
-description: 使用 PdfFileEditor 门面在 Java 中调整所选 PDF 页面上的内容大小。
+description: 使用 PdfFileEditor 类在 Java 中调整所选 PDF 页面上的内容大小。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

@@ -17,7 +17,7 @@ sitemap:
 此技术会更新文本片段的字体大小，将调整后的文档保存到内存中，然后从转换后的结果中提取文本。
 
 1. 打开源 PDF 于 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
-1. 创建一个 [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) 并访问所有文档页面以收集 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 对象.
+1. 创建一个 [TextFragmentAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragmentabsorber/) 并访问所有文档页面以收集 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 对象。
 1. 遍历片段并按请求的比例缩小每个字体大小，以便在提取前可以对密集的列布局进行标准化。
 1. 保存已调整的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 到内存字节流中。
 1. 重新打开第二个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 来自该内存缓冲区。

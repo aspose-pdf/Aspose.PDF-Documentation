@@ -19,7 +19,7 @@ Abstract: 本文说明了如何使用 Aspose.PDF for Java 向 PDF 文件添加�
 
 当页面需要显示带有自定义样式的旋转文本印章时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [TextStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstamp/) 并配置其放置位置和文本外观。
 1. 将印章添加到目标页面并保存文档。
 

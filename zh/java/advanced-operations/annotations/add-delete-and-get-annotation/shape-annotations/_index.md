@@ -1,6 +1,6 @@
 ---
-title: 通过 Java 的形状注释
-linktitle: 形状注释
+title: 通过 Java 的形状批注
+linktitle: 形状批注
 type: docs
 weight: 20
 url: /zh/java/shape-annotations/
@@ -11,17 +11,17 @@ sitemap:
     priority: 0.5
 TechArticle: true
 AlternativeHeadline: 在 Java 中处理几何 PDF 批注。
-Abstract: 本文说明了如何使用 Aspose.PDF for Java 在 PDF 文档中创建、检查和删除几何注释。它涵盖了带有颜色、不透明度、弹出窗口和点配置的方形、圆形、多边形和折线注释。
+Abstract: 本文说明了如何使用 Aspose.PDF for Java 在 PDF 文档中创建、检查和删除几何批注。它涵盖了带有颜色、不透明度、弹出窗口和点配置的方形、圆形、多边形和折线批注。
 ---
-本节中的形状注释涵盖几何注释类型，例如方形、圆形、多边形、折线和直线。
+本节中的形状批注涵盖几何批注类型，例如方形、圆形、多边形、折线和直线。
 
-## 添加方形、圆形、多边形和折线注释
+## 添加方形、圆形、多边形和折线批注
 
-在需要使用自定义颜色、不透明度、弹出数据或点数组放置几何注释时，请使用这些示例。
+在需要使用自定义颜色、不透明度、弹出数据或点数组放置几何批注时，请使用这些示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建所需的形状注释并配置其矩形、点和视觉属性。
-1. 将注释添加到页面并保存更新后的文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建所需的形状批注并配置其矩形、点和视觉属性。
+1. 将批注添加到页面并保存更新后的文档。
 
 ```java
 public static void squareAnnotationAdd(Path inputFile, Path outputFile) {
@@ -109,11 +109,11 @@ public static void polylineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 获取方形、圆形、多边形和折线注释
+## 获取方形、圆形、多边形和折线批注
 
-这些示例检查页面注释集合，并按类型打印几何注释的矩形。
+这些示例检查页面批注集合，并按类型打印几何批注的矩形。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历页面批注。
 1. 按必需项筛选 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/) 获取值并打印矩形。
 
@@ -167,11 +167,11 @@ public static void polylineAnnotationGet(Path inputFile) {
 
 ## 删除方形、圆形、多边形和折线批注
 
-当需要从页面中删除特定类型的形状注释时，请使用这些示例。
+当需要从页面中删除特定类型的形状批注时，请使用这些示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 收集所需几何类型的注释。
-1. 删除收集的注释并保存输出文件。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 收集所需几何类型的批注。
+1. 删除收集的批注并保存输出文件。
 
 ```java
 public static void squareAnnotationDelete(Path inputFile, Path outputFile) {
@@ -243,10 +243,10 @@ public static void polylineAnnotationDelete(Path inputFile, Path outputFile) {
 
 ## 添加直线批注
 
-此示例创建了一个带有箭头结束、边框格式和弹出注释的线注释。
+此示例创建了一个带有箭头结束、边框格式和弹出批注的线批注。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) 具有起点和终点。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个带有起点和终点的 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)。
 1. 配置外观，添加弹出窗口，并保存文档。
 
 ```java
@@ -277,12 +277,12 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 }
 ```
 
-## 获取线注释
+## 获取线批注
 
-此示例读取线注释并打印其起始和结束坐标。
+此示例读取线批注并打印其起始和结束坐标。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历页面注释并选择 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历页面批注并选择 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`。
 1. 将每个匹配转换为 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) 并打印其坐标。
 
 ```java
@@ -302,10 +302,10 @@ public static void lineAnnotationsGet(Path inputFile) {
 
 ## 删除线批注
 
-当需要从页面中移除线注释时，请使用此方法。
+当需要从页面中移除线批注时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 收集特定类型的注释 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 收集特定类型的批注 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Line`。
 1. 删除已收集的批注并保存文档。
 
 ```java
@@ -326,11 +326,11 @@ public static void lineAnnotationsDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 相关注释主题
+## 相关批注主题
 
-- [交互式注释](/pdf/zh/java/interactive-annotations/)
-- [标记注释](/pdf/zh/java/markup-annotations/)
-- [安全注释](/pdf/zh/java/security-annotations/)
-- [文本注释](/pdf/zh/java/text-based-annotations/)
+- [交互式批注](/pdf/zh/java/interactive-annotations/)
+- [标记批注](/pdf/zh/java/markup-annotations/)
+- [安全批注](/pdf/zh/java/security-annotations/)
+- [文本批注](/pdf/zh/java/text-based-annotations/)
 - [水印批注](/pdf/zh/java/watermark-annotations/)
-- [导入和导出注释](/pdf/zh/java/import-export-annotations/)
+- [导入和导出批注](/pdf/zh/java/import-export-annotations/)

@@ -15,12 +15,12 @@ Abstract: 本文说明了如何使用 Aspose.PDF for Java 添加页码印章。�
 ---
 ## 添加页码印章
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) 对象。
 1. 配置所需的印章放置和编号选项。
-1. 设置所需的文本格式选项，包括 [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) 和 [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/).
-1. 添加已配置的 [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) 到目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 设置所需的文本格式选项，包括 [FontRepository](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontrepository/) 和 [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/)。
+1. 将已配置的 [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) 添加到目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addPageNumStamp(Path inputFile, Path outputFile) {

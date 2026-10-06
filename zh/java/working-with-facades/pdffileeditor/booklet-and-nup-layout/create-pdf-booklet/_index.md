@@ -4,7 +4,7 @@ linktitle: 创建 PDF 小册子
 type: docs
 weight: 20
 url: /zh/java/create-pdf-booklet/
-description: 使用 PdfFileEditor 门面在 Java 中从现有文档创建适用于小册子的 PDF。
+description: 使用 PdfFileEditor 类在 Java 中从现有文档创建适用于小册子的 PDF。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

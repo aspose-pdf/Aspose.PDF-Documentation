@@ -4,7 +4,7 @@ linktitle: 文本操作
 type: docs
 weight: 90
 url: /zh/java/pdfcontenteditor-text-operations/
-description: 了解在 Aspose.PDF 中的 PdfContentEditor 外观下可用的当前 Java 文本替换覆盖情况。
+description: 了解在 Aspose.PDF 中的 PdfContentEditor 类下可用的当前 Java 文本替换覆盖情况。
 lastmod: "2026-10-06"
 TechArticle: true
 AlternativeHeadline: 使用 PdfContentEditor 的 Java 文本替换工作流

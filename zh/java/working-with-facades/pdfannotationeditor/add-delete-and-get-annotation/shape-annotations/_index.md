@@ -1,20 +1,20 @@
 ---
-title: 通过 Java 的形状注释
-linktitle: 形状注释
+title: 通过 Java 的形状批注
+linktitle: 形状批注
 type: docs
 weight: 40
 url: /zh/java/pdfannotationeditor-class/shape-annotations/
-description: 了解如何使用 Java 在 PDF 文档中添加、检查和删除方形、圆形、多边形和折线注释。
+description: 了解如何使用 Java 在 PDF 文档中添加、检查和删除方形、圆形、多边形和折线批注。
 lastmod: "2026-10-06"
 TechArticle: true
-AlternativeHeadline: 在 Java 中使用几何 PDF 注释
-Abstract: 本文解释了如何使用 Java 在 PDF 文档中创建、检查和删除几何注释。它涵盖了带有颜色、不透明度、弹出窗口和点配置的方形、圆形、多边形和折线注释。
+AlternativeHeadline: 在 Java 中使用几何 PDF 批注
+Abstract: 本文解释了如何使用 Java 在 PDF 文档中创建、检查和删除几何批注。它涵盖了带有颜色、不透明度、弹出窗口和点配置的方形、圆形、多边形和折线批注。
 ---
-## 添加形状注释
+## 添加形状批注
 
-1. 打开输入 PDF 并选择将包含形状注释的页面和矩形。
-2. 创建所需的形状注释，然后在需要时设置其标题、颜色、不透明度和点。
-3. 将注释添加到页面并保存修改后的 PDF。
+1. 打开输入 PDF 并选择将包含形状批注的页面和矩形。
+2. 创建所需的形状批注，然后在需要时设置其标题、颜色、不透明度和点。
+3. 将批注添加到页面并保存修改后的 PDF。
 
 ```java
 public static void squareAnnotationAdd(Path inputFile, Path outputFile) {

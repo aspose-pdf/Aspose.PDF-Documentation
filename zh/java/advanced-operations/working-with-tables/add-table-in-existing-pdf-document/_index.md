@@ -135,7 +135,7 @@ public static void addBorders(Path outputFile) {
 当表格应自动调整以适应可用页面宽度时，请使用此示例。
 
 1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个页面。
-1. 创建一个 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 并设置 `ColumnAdjustment.AutoFitToWindow`.
+1. 创建一个 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 并设置 `ColumnAdjustment.AutoFitToWindow`。
 1. 添加示例行并保存 PDF。
 
 ```java
@@ -224,7 +224,7 @@ public static void addSvgImage(List<Path> imageFiles, Path outputFile) {
 
 ## 向表格单元格添加 HTML 片段
 
-当表格内容应包含内联HTML格式时，请使用此示例。
+当表格内容应包含内联 HTML 格式时，请使用此示例。
 
 1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个页面。
 1. 创建一个 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 并配置边框。
@@ -254,7 +254,7 @@ public static void addHtmlFragments(Path outputFile) {
 当表格内容需要渲染 TeX 或 LaTeX 表达式时，请使用此示例。
 
 1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个页面。
-1. 创建一个 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 带有边框。
+1. 创建一个带有边框的 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/)。
 1. 添加 [TeXFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/texfragment/) 将对象放入单元格并保存输出文件。
 
 ```java

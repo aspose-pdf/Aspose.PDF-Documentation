@@ -19,7 +19,7 @@ Aspose.PDF for Java 让您可以插入空白页或从其他文档导入页面。
 
 当您需要在现有 PDF 的中间添加空白页时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 在页面集合中将新页面插入目标位置。
 1. 保存更新后的文档。
 
@@ -36,7 +36,7 @@ public static void insertEmptyPage(Path inputFile, Path outputFile) {
 
 当您需要在文档末尾添加一个新的空白页时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 向页面集合的末尾添加一个新页面。
 1. 保存修改后的 PDF。
 

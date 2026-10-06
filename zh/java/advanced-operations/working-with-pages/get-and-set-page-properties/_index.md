@@ -19,7 +19,7 @@ Aspose.PDF for Java 可以检查页面计数、页面框、旋转以及页面颜
 
 当您需要读取 PDF 的总页数时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 读取页面集合的大小。
 1. 输出总页数。
 
@@ -92,8 +92,8 @@ public static void getPageProperties(Path inputFile) {
 
 当需要识别页面是黑白、灰度还是 RGB 时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历所有页面并读取每页 [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历所有页面并读取每页 [ColorType](https://reference.aspose.com/pdf/java/com.aspose.pdf/colortype/)。
 1. 将枚举值转换为可读文本并输出结果。
 
 ```java

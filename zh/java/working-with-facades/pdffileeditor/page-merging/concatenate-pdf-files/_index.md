@@ -31,4 +31,4 @@ public static void mergePdfDocuments(Path firstInputFile, Path secondInputFile, 
 }
 ```
 
-要合并超过两个文件，请扩展传递给的字符串数组 `concatenate`.
+要合并超过两个文件，请扩展传递给的字符串数组 `concatenate`。

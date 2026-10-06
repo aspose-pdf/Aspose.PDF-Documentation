@@ -4,7 +4,7 @@ linktitle: 在 PDF 中添加页脚
 type: docs
 weight: 10
 url: /zh/java/add-footer/
-description: 了解如何在 Java 中使用 PdfFileStamp 门面向 PDF 页面添加文本和图像页脚。
+description: 了解如何在 Java 中使用 PdfFileStamp 类向 PDF 页面添加文本和图像页脚。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -12,11 +12,11 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 在 Java 中向 PDF 添加文本和图像页脚
-Abstract: 了解如何使用 Aspose.PDF for Java 通过 PdfFileStamp 门面向 PDF 文档添加页脚内容。Java 示例涵盖纯文本页脚、从流加载的图像页脚，以及具有明确左、右、底部边距的文本页脚。
+Abstract: 了解如何使用 Aspose.PDF for Java 通过 PdfFileStamp 类向 PDF 文档添加页脚内容。Java 示例涵盖纯文本页脚、从流加载的图像页脚，以及具有明确左、右、底部边距的文本页脚。
 ---
 ## 向 PDF 添加页脚
 
-使用 `PdfFileStamp` 当您需要在文档的每一页上重复页脚内容时。
+当需要在文档的每一页上重复页脚内容时，使用 `PdfFileStamp`。
 
 ### 步骤
 

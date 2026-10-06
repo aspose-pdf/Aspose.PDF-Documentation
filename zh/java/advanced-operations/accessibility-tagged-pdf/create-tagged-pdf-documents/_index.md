@@ -18,7 +18,7 @@ aliases:
 
 当您需要在逻辑结构树中包含标题和段落的最小标记 PDF 时，请使用此示例。
 
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并获取它的 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/).
+1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并获取它的 [ITaggedContent](https://reference.aspose.com/pdf/java/com.aspose.pdf/itaggedcontent/)。
 1. 设置文档标题和语言，然后创建所需的标题和段落元素。
 1. 将结构元素追加到根元素并保存文档。
 
@@ -99,7 +99,7 @@ public static void createTaggedPdfDocumentAdv(Path outputFile) {
 
 当标记的段落内容应携带明确的字体、颜色和样式信息时，请使用此示例。
 
-1. 创建一个新的带标签的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个新的带标签的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个段落元素并配置其结构文本状态。
 1. 设置段落文本并保存文档。
 
@@ -128,7 +128,7 @@ public static void addStyle(Path outputFile) {
 
 此示例展示了如何创建一个带有替代文本、标题、自定义标签、图像内容和定位的标记图形。
 
-1. 创建一个新的带标签的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个新的带标签的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [FigureElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/figureelement/)，设置其可访问元数据，并分配图像。
 1. 调整图形位置并保存文档。
 
@@ -161,10 +161,10 @@ public static void illustrateStructureElements(Path imageFile, Path outputFile) 
 
 ## 验证标记 PDF 是否符合 PDF/UA
 
-使用此示例，当您需要检查标记的 PDF 是否符合 PDF/UA 验证规则时。
+当需要检查标记的 PDF 是否符合 PDF/UA 验证规则时，使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 针对...运行验证 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 针对 [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).`PDF_UA_1` 运行验证。
 1. 写入验证日志并打印验证结果。
 
 ```java
@@ -180,8 +180,8 @@ public static void validateTaggedPdf(Path inputFile, Path logFile) {
 
 此示例对标记的段落应用明确的边距和对齐设置。
 
-1. 创建一个新的带标签的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加段落结构元素并准备 [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/).
+1. 创建一个新的带标签的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 添加段落结构元素并准备 [PositionSettings](https://reference.aspose.com/pdf/java/com.aspose.pdf.tagged.logicalstructure/positionsettings/)。
 1. 将位置设置应用于段落并保存文档。
 
 ```java
@@ -220,7 +220,7 @@ public static void adjustPosition(Path outputFile) {
 
 当需要在转换过程中将现有 PDF 自动转换为 PDF/UA 并进行标记时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建 [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) 并启用自动标记。
 1. 运行转换并保存输出文档。
 

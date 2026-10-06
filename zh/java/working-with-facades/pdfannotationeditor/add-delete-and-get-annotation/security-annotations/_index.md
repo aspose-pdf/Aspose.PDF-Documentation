@@ -14,7 +14,7 @@ Abstract: 本文解释了如何在 PDF 文档中使用 Java 处理遮蔽批注�
 
 1. 加载 PDF 并搜索所有页面中应被编辑的文本。
 2. 创建一个 `RedactionAnnotation` 针对每个匹配的文本片段并配置其外观。
-3. 将编辑注释添加到相应页面并保存文档。
+3. 将编辑批注添加到相应页面并保存文档。
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {

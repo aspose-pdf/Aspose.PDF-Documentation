@@ -20,7 +20,7 @@ Aspose.PDF for Java 可以将多种光栅和矢量图像格式转换为 PDF 文�
 当需要将 BMP 图像放入 PDF 文档时，请使用此示例。
 
 1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 用于保存输出 PDF。
-1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 BMP 放置在 `page.addImage(...)`.
+1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 BMP 放置在 `page.addImage(...)`。
 1. 使用以下方式定义目标图像矩形 [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 因此光栅内容填满 PDF 页面区域。
 1. 保存输出 PDF 文件。
 
@@ -114,7 +114,7 @@ public static void convertEmfToPdf01(Path inputFile, Path outputFile) throws IOE
 当需要使用替代设置或页面组合流程转换 EMF 内容时，请使用此示例。
 
 1. 使用 Aspose.Imaging 加载 EMF 源文件，并在 PDF 放置之前将其渲染为内存中的 PNG 流。
-1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 创建一个 [`Image`](https://reference.aspose.com/pdf/java/com.aspose.pdf/image/) 从中间字节流中提取并将其添加到页面。
 1. 保存已转换的 PDF。
 
@@ -142,7 +142,7 @@ public static void convertEmfToPdf02(Path inputFile, Path outputFile) throws IOE
 在需要将 GIF 图像添加到 PDF 页面时使用此示例。
 
 1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 用于 PDF 输出。
-1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 GIF 放置在 `page.addImage(...)`.
+1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 GIF 放置在 `page.addImage(...)`。
 1. 使用以下方式定义放置边界 [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 所以图像填满页面区域。
 1. 保存输出的 PDF。
 
@@ -163,7 +163,7 @@ public static void convertGifToPdf(Path inputFile, Path outputFile) {
 当需要将 JPEG 图像转换为单页 PDF 时，请使用此示例。
 
 1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 用于输出 PDF。
-1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并插入 JPEG 图像 `page.addImage(...)`.
+1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并插入 JPEG 图像 `page.addImage(...)`。
 1. 使用 [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 控制光栅图像如何映射到页面坐标。
 1. 保存生成的 PDF 文件。
 
@@ -184,7 +184,7 @@ public static void convertJpegToPdf(Path inputFile, Path outputFile) {
 使用此示例将 PNG 图像包装成 PDF 文档。
 
 1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 用于转换输出。
-1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 PNG 图像放置在其上 `page.addImage(...)`.
+1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 PNG 图像放置在其上 `page.addImage(...)`。
 1. 使用 [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 根据页面画布对图像进行尺寸调整。
 1. 保存输出文件。
 
@@ -222,7 +222,7 @@ public static void convertSvgToPdf(Path inputFile, Path outputFile) {
 当需要将 TIFF 图像转换为 PDF 时，请使用此示例。
 
 1. 创建一个空的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 用于 PDF 输出。
-1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 TIFF 图像放置在 `page.addImage(...)`.
+1. 添加一个 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并将 TIFF 图像放置在 `page.addImage(...)`。
 1. 定义放置区域的方式 [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) 因此，TIFF 内容映射到页面坐标。
 1. 将结果保存为 PDF。
 

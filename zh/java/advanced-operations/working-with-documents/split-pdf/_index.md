@@ -19,10 +19,10 @@ Aspose.PDF for Java 支持多种拆分模式，除了每页生成单个文件的
 
 当每个源页面应生成单独的输出文档时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对于每个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 您想要导出。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 为每个要导出的 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 创建一个新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 添加所选 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到新的文档。
-1. 保存每个输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存每个输出的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void splitDocuments(Path inputFile, Path outputDir) {
@@ -41,7 +41,7 @@ public static void splitDocuments(Path inputFile, Path outputDir) {
 
 此示例根据中点将源文档分成两个顺序输出文件。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 计算可用的中点 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 集合。
 1. 将前半部分页面复制到一个输出文档中，其余页面复制到另一个文档中。
 1. 保存两个结果文档。
@@ -73,8 +73,8 @@ public static void splitDocumentsIntoTwoParts(Path inputFile, Path outputDir) {
 
 当每个输出文件应包含相同页数，最后一部分除外时，请使用此模式。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 按...分组的集合 `pagesPerPart`.
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 按...分组的集合 `pagesPerPart`。
 1. 为每个组创建一个新的输出文档，并将计算得到的页面范围复制到其中。
 1. 使用生成的文件名保存每个部分。
 
@@ -102,7 +102,7 @@ public static void splitDocumentsEveryNPages(Path inputFile, Path outputDir, int
 
 此示例允许您为每个输出文档定义明确的起始页和结束页。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 定义所需的 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 数组或其他集合中的范围。
 1. 验证每个范围相对于源页面计数，并将匹配的页面复制到新文档中。
 1. 保存每个基于范围的输出文件。
@@ -142,7 +142,7 @@ public static void splitDocumentsByPageRanges(Path inputFile, Path outputDir) {
 当封面页应从文档其余部分单独导出时，请使用此方法。
 
 1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并确认它包含页面。
-1. 为第一个创建一个输出文档 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 为第一个创建一个输出文档 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 当有多个页面可用时，为剩余页范围创建另一个文档。
 1. 保存两个结果。
 
@@ -245,7 +245,7 @@ public static void splitDocumentsIntoThreeParts(Path inputFile, Path outputDir) 
 
 此示例展示了如何从非连续的页面集合而非连续范围构建输出文件。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 定义自定义分组 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 数字。
 1. 为每个组创建一个新的输出文档，并仅从该组中添加有效页。
 1. 保存每个非空的组文档。
@@ -280,8 +280,8 @@ public static void splitDocumentsCustomPageGroups(Path inputFile, Path outputDir
 
 当输出名称需要保持词法可排序时，请使用此版本，例如在自动化流水线中。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 为每个创建一个输出文档 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 为每个创建一个输出文档 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 使用零填充的页码保存每个文件。
 
 ```java
@@ -301,7 +301,7 @@ public static void splitDocumentsWithStableFilenames(Path inputFile, Path output
 
 此示例通过根据页码奇偶性分离页面来创建两个输出。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 为奇数创建一个输出文档 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 数字以及另一个用于偶数页页码。
 1. 对源页面进行迭代，并为每个输出文档使用所需的增量。
 1. 将奇数页和偶数页的结果分别保存。

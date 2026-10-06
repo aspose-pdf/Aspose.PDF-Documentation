@@ -1,6 +1,6 @@
 ---
-title: 使用 Java 的交互式注释
-linktitle: 交互式注释
+title: 使用 Java 的交互式批注
+linktitle: 交互式批注
 type: docs
 weight: 60
 url: /zh/java/interactive-annotations/
@@ -11,16 +11,16 @@ sitemap:
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: 在 Java 中处理交互式 PDF 批注。
-Abstract: 本文解释了如何使用 Aspose.PDF for Java 在 PDF 文件中处理交互式链接注释。它涵盖了定位文本、在匹配的文本区域上创建链接注释、读取现有的链接注释以及删除它们。
+Abstract: 本文解释了如何使用 Aspose.PDF for Java 在 PDF 文件中处理交互式链接批注。它涵盖了定位文本、在匹配的文本区域上创建链接批注、读取现有的链接批注以及删除它们。
 ---
-本节中的交互式注释侧重于基于链接和按钮的工作流，这些工作流会响应 PDF 查看器中的用户操作。
+本节中的交互式批注侧重于基于链接和按钮的工作流，这些工作流会响应 PDF 查看器中的用户操作。
 
-## 添加链接注释
+## 添加链接批注
 
 当需要在页面上的文字上放置可点击链接时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 定位目标文本片段并创建一个 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 在其矩形上。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 定位目标文本片段，并在其矩形区域中创建一个 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/)。
 1. 分配一个 [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) 并保存更新后的文档。
 
 ```java
@@ -43,11 +43,11 @@ public static void linkAdd(Path inputFile, Path outputFile) {
 
 ## 获取链接批注
 
-此示例扫描页面注释集合并报告每个链接注释的位置。
+此示例扫描页面批注集合并报告每个链接批注的位置。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 遍历目标页面上的批注。
-1. 按条件筛选注释 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` 并打印它们的矩形。
+1. 按条件筛选批注 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` 并打印它们的矩形。
 
 ```java
 public static void linkGet(Path inputFile) {
@@ -61,13 +61,13 @@ public static void linkGet(Path inputFile) {
 }
 ```
 
-## 删除链接注释
+## 删除链接批注
 
-当需要从页面中移除现有链接注释时，请使用此方法。
+当需要从页面中移除现有链接批注时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 收集类型为的注释 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link`.
-1. 删除收集的注释并保存输出文件。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 收集类型为 [AnnotationType](https://reference.aspose.com/pdf/java/com.aspose.pdf/annotationtype/).`Link` 的批注。
+1. 删除收集的批注并保存输出文件。
 
 ```java
 public static void linkDelete(Path inputFile, Path outputFile) {
@@ -86,13 +86,13 @@ public static void linkDelete(Path inputFile, Path outputFile) {
 }
 ```
 
-## 添加线注释
+## 添加线批注
 
-此示例创建了一个带有箭头样式、边框设置和弹出注释的交互式线注释。
+此示例创建了一个带有箭头样式、边框设置和弹出批注的交互式线批注。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建一个 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/) 带有起点和终点。
-1. 配置其外观和弹出注释，然后保存文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建一个带有起点和终点的 [LineAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/lineannotation/)。
+1. 配置其外观和弹出批注，然后保存文档。
 
 ```java
 public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
@@ -128,7 +128,7 @@ public static void lineAnnotationAdd(Path inputFile, Path outputFile) {
 当 PDF 应包含上一页和下一页按钮用于交互式导航时，请使用此示例。
 
 1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并确保文档包含所需的页面。
-1. 创建 [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) 具有预定义导航操作的控件。
+1. 创建带有预定义导航操作的 [ButtonField](https://reference.aspose.com/pdf/java/com.aspose.pdf/buttonfield/) 控件。
 1. 将按钮添加到表单集合中并保存更新后的文档。
 
 ```java

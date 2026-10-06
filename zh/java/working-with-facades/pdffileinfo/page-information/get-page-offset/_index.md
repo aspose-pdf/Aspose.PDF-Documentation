@@ -4,7 +4,7 @@ linktitle: 获取页面偏移
 type: docs
 weight: 20
 url: /zh/java/get-page-offset/
-description: 了解如何使用 PdfFileInfo 门面在 Java 中检查页面的 X 和 Y 偏移。
+description: 了解如何使用 PdfFileInfo 类在 Java 中检查页面的 X 和 Y 偏移。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
@@ -22,7 +22,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 检索页面偏移。Java 示�
 
 1. 创建一个 `PdfFileInfo` 输入 PDF 的对象。
 2. 呼叫 `getPageXOffset` 和 `getPageYOffset` 对于目标页面。
-3. 通过除以将点值转换为英寸 `72.0`.
+3. 通过除以将点值转换为英寸 `72.0`。
 4. 使用或打印转换后的值。
 5. 关闭 `PdfFileInfo` 实例。
 

@@ -19,8 +19,8 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 更新现有的链接�
 
 当链接批注覆盖的文本区域需要重新着色时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 查找链接注释，并从每个注释区域构建文本搜索矩形。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 查找链接批注，并从每个批注区域构建文本搜索矩形。
 1. 重新着色匹配的文本片段并保存文档。
 
 ```java
@@ -49,11 +49,11 @@ public static void linkAnnotationUpdateTextColor(Path inputFile, Path outputFile
 
 ## 更新链接边框颜色
 
-当需要更改现有链接注释的可见颜色时，请使用此示例。
+当需要更改现有链接批注的可见颜色时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 遍历页面注释并进行过滤以获取 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 对象。
-1. 更新链接注释颜色并保存文档。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 遍历页面批注并进行过滤以获取 [LinkAnnotation](https://reference.aspose.com/pdf/java/com.aspose.pdf/linkannotation/) 对象。
+1. 更新链接批注颜色并保存文档。
 
 ```java
 public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
@@ -74,8 +74,8 @@ public static void linkAnnotationUpdateBorder(Path inputFile, Path outputFile) {
 
 当现有网页链接应指向新的 URI 时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 查找其操作为 a 的链接注释 [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 查找操作类型为 [GoToURIAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotouriaction/) 的链接批注。
 1. 替换 URI 并保存更新后的文档。
 
 ```java

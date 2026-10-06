@@ -26,9 +26,9 @@ Abstract: 本文展示了如何使用 Aspose.PDF 在 Java 中将 PDF 文档拆�
 在 Java 中将 PDF 拆分为单独页面文件：
 
 1. 使用以下方式打开源 PDF： [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 构造函数。
-1. 遍历 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 返回的对象 `document.getPages()`.
+1. 遍历 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 返回的对象 `document.getPages()`。
 1. 创建一个新的空 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对每个页面。
-1. 添加当前的 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到新的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 添加当前的 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到新的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 保存新的 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 使用唯一的文件名。
 1. 关闭两个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 对象处理完成后。
 

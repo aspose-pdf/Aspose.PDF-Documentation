@@ -19,7 +19,7 @@ NetBeans 团队积极支持该产品，并征求更广泛社区的功能建议�
 
 ### Aspose.PDF for Java
 
-[Aspose.PDF for Java](https://products.aspose.com/pdf/java/)是一套强大的 PDF 文档创建 API，使您的 Java 应用程序能够在不使用 Adobe Acrobat 的情况下读取、写入和操作 PDF 文档。
+[Aspose.PDF for Java](https://products.aspose.com/pdf/java/) 是一套强大的 PDF 文档创建 API，使您的 Java 应用程序能够在不使用 Adobe Acrobat 的情况下读取、写入和操作 PDF 文档。
 
 Aspose.PDF for Java 提供了极其丰富的功能，包括 PDF 压缩选项、表格创建和操作、图形支持、图像功能、广泛的超链接功能、扩展的安全控制以及自定义字体处理。
 
@@ -39,11 +39,11 @@ Aspose.PDF for Java 提供了极其丰富的功能，包括 PDF 压缩选项、�
 - 此新建项目向导允许开发者从 New Project -> Maven -> Aspose.PDF Maven Project 创建用于使用 Aspose.PDF for Java 的 **Maven** 项目。
 - Aspose.PDF for Java API 的 Maven 依赖引用会自动从 [Aspose Maven 仓库](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-pdf) 并添加到 pom.xml 中。
 - 创建的项目将始终包含最新可用版本的 **Maven** 依赖，用于 Aspose.PDF for Java API。
-- 向导步骤还提供了下载使用Aspose.PDF for Java API的代码示例的选项。
+- 向导步骤还提供了下载使用 Aspose.PDF for Java API 的代码示例的选项。
 
 ### Aspose.PDF 代码示例（向导）
 
-- 此 New File 向导允许您复制已下载的 [代码示例](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)到您的项目中，以使用 Aspose.PDF for Java，路径为 **New File -> Java -> Aspose.PDF Code Example.**
+- 此 New File 向导允许您复制已下载的 [代码示例](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) 到您的项目中，以使用 Aspose.PDF for Java，路径为 **New File -> Java -> Aspose.PDF Code Example.**
 - 可用的示例以树形结构显示，用户可以从中按类别选择它们。
 - 选定类别中的所有示例将被复制到项目的 **com.aspose.pdf.examples** 包文件夹中，同时复制运行示例所需的位于 **src/main/resources** 文件夹中的必需资源。
 - Aspose.PDF for Java API 的代码示例旨在演示该 API 的多样性。
@@ -98,9 +98,9 @@ Aspose.PDF for Java 提供了极其丰富的功能，包括 PDF 压缩选项、�
 
 使用 Aspose.PDF for NetBeans - Maven
 
-### 如何应用 Aspose 许可证？
+### 应用 Aspose 许可证
 
-此插件使用 Aspose.PDF 的评估版。如果您对评估满意，您可以在此购买许可证： [Aspose 网站](https://purchase.aspose.com/buy).
+此插件使用 Aspose.PDF 的评估版。如果您对评估满意，您可以在此购买许可证： [Aspose 网站](https://purchase.aspose.com/buy)。
 要删除评估信息和功能限制，应使用产品许可证。购买产品后，您将收到许可证文件。请按照以下步骤应用许可证。
 
 - 确保许可证文件命名为 **Aspose.PDF.Java.lic**
@@ -120,7 +120,7 @@ license.setLicense("Aspose.PDF.Java.lic");
 - 或者您想报告在插件中发现的任何问题
 - 有没有改进建议或想提出功能请求
 
-请遵循[**GitHub 问题跟踪器**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)用于记录插件中发现的任何问题。
+请遵循 [**GitHub 问题跟踪器**](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues) 用于记录插件中发现的任何问题。
 
 ### 扩展与贡献
 
@@ -128,7 +128,7 @@ Aspose.PDF Java for NetBeans（Maven）是开源的，其源代码可在以下�
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_NetBeans%28Maven%29)
 
-### #如何在 NetBeans (Maven) 中配置 Aspose.PDF Java 的源代码
+### 在 NetBeans (Maven) 中配置 Aspose.PDF Java 的源代码
 
 下面的简单步骤将顺利帮助您在 NetBeans IDE 中成功配置 **\"Aspose.PDF Java for NetBeans (Maven)\"** 插件源代码。
 

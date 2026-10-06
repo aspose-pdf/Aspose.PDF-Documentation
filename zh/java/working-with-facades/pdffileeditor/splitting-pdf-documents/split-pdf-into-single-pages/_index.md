@@ -4,7 +4,7 @@ linktitle: 将 PDF 拆分为单页
 type: docs
 weight: 30
 url: /zh/java/split-pdf-into-single-pages/
-description: 使用 PdfFileEditor 门面在 Java 中将 PDF 拆分为单页输出文件。
+description: 使用 PdfFileEditor 类在 Java 中将 PDF 拆分为单页输出文件。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
@@ -20,7 +20,7 @@ Abstract: 了解如何使用 Aspose.PDF for Java 将 PDF 拆分为单页文件�
 ### 步骤
 
 1. 创建一个 `PdfFileEditor` 实例。
-2. 准备一个包含页面占位符的输出文件模式，例如 `%NUM%`.
+2. 准备一个包含页面占位符的输出文件模式，例如 `%NUM%`。
 3. 调用 `splitToPages` 使用源文件和输出模式。
 4. 保存生成的单页文件。
 

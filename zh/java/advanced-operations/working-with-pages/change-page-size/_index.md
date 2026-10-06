@@ -19,7 +19,7 @@ Aspose.PDF for Java 既可以报告页面尺寸，也可以更新它们。
 
 当您需要调整现有页面大小并在更改前后检查页面框时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 获取目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 并打印其当前的框值。
 1. 设置新的页面大小并保存文档。
 
@@ -39,7 +39,7 @@ public static void setPageSize(Path inputFile, Path outputFile) {
 
 当您需要读取页面的可见尺寸时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 获取页面矩形，并启用旋转处理。
 1. 输出页面宽度和高度。
 
@@ -56,8 +56,8 @@ public static void getPageSize(Path inputFile) {
 
 当您需要比较在考虑旋转前后的页面尺寸时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 旋转目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 旋转目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)。
 1. 读取页面矩形（包含旋转处理和不包含旋转处理），并输出两个值。
 
 ```java

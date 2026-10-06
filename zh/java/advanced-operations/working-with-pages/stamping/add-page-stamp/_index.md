@@ -19,7 +19,7 @@ Aspose.PDF for Java 可以将另一个 PDF 的页面用作水印，或添加页�
 
 当需要将来自其他 PDF 的页面用作背景水印时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [PdfPageStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfpagestamp/) 从外部 PDF 页面。
 1. 配置印章并将其添加到目标页面，然后保存结果。
 
@@ -38,8 +38,8 @@ public static void addPageStamp(Path inputFile, Path pageStampFile, Path outputF
 
 当目标页需要显示当前页码并使用自定义文本格式时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 创建并配置一个 [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 创建并配置一个 [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/)。
 1. 将印章添加到页面并保存文档。
 
 ```java
@@ -66,7 +66,7 @@ public static void addPageNumStamp(Path inputFile, Path outputFile) {
 
 当页码应从自定义值开始，并使用大写罗马数字时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [PageNumberStamp](https://reference.aspose.com/pdf/java/com.aspose.pdf/pagenumberstamp/) 并配置罗马数字编号。
 1. 将印章添加到所有页面并保存 PDF。
 

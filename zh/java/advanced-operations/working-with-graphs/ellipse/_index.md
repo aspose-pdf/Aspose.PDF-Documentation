@@ -15,13 +15,13 @@ Abstract: 本文展示了如何使用 Aspose.PDF for Java 向 PDF 文档添加�
 ---
 ## 添加椭圆轮廓
 
-1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器并将其添加到页面。
 1. 创建 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 形状并配置其几何。
 1. 添加 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 到 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器。
-1. 设置示例所需的形状属性，包括 [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) 和 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 设置示例所需的形状属性，包括 [Color](https://reference.aspose.com/pdf/java/com.aspose.pdf/color/) 和 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)。
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addEllipse(Path outputFile) {
@@ -45,17 +45,17 @@ public static void addEllipse(Path outputFile) {
 
 ## 添加填充椭圆
 
-`createEllipseFilled` 用...填充两个省略号 `Color.getGreenYellow()` 和 `Color.getDarkRed()`.
+`createEllipseFilled` 用...填充两个省略号 `Color.getGreenYellow()` 和 `Color.getDarkRed()`。
 
 ## 在椭圆内部添加文本
 
-1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. 添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 到文档。
+1. 创建新的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
+1. 将一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 添加到文档。
 1. 创建一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 并设置所需的文本格式选项。
 1. 创建一个 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器并将其添加到页面。
 1. 创建 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 形状并配置其几何。
 1. 添加 [Ellipse](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/ellipse/) 到 [Graph](https://reference.aspose.com/pdf/java/com.aspose.pdf.drawing/graph/) 容器。
-1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 
 ```java
 public static void addTextInsideEllipse(Path outputFile) {

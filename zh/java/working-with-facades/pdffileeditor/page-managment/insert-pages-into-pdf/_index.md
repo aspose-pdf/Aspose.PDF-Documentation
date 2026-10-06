@@ -4,7 +4,7 @@ linktitle: 向 PDF 插入页面
 type: docs
 weight: 40
 url: /zh/java/insert-pages-into-pdf/
-description: 使用 PdfFileEditor 门面在 Java 中将一个 PDF 中选定的页面插入到另一个 PDF 中。
+description: 使用 PdfFileEditor 类在 Java 中将一个 PDF 中选定的页面插入到另一个 PDF 中。
 lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"

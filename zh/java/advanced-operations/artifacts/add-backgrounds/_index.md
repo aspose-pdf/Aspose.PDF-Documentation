@@ -61,7 +61,7 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 
 在页面应使用纯色背景而不是图像时，请使用此示例。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) 并分配背景颜色。
 1. 将该工件添加到页面并保存输出文件。
 
@@ -80,7 +80,7 @@ public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
 
 当需要从页面中删除现有的背景伪影时，请使用此方法。
 
-1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 以相反顺序遍历页面工件集合。
 1. 删除类型为 pagination 且子类型为 background 的工件，然后保存文档。
 

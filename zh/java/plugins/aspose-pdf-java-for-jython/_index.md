@@ -9,7 +9,7 @@ lastmod: "2026-10-06"
 ---
 ## 介绍
 
-### 什么是 Jython？
+### 什么是 Jython
 
 Jython 是 Python 的 Java 实现，兼具表现力和清晰度。Jython 可免费用于商业和非商业用途，并提供源代码。Jython 与 Java 互补，尤其适用于以下任务：
 

@@ -12,8 +12,8 @@ sitemap:
 ---
 基本文本提取是 Java 中读取 PDF 内容的起点。Aspose.PDF 提供了两种常见方法：
 
-- 使用 `TextAbsorber` 当您需要从文档或页面获取纯文本结果时。
-- 使用 `ParagraphAbsorber` 当您需要保留页面、章节、段落、行以及片段的分组时。
+- 当需要从文档或页面获取纯文本结果时，使用 `TextAbsorber`。
+- 当需要保留页面、章节、段落、行以及片段的分组时，使用 `ParagraphAbsorber`。
 
 PDF 页面不像文字处理文档那样存储文本，因此提取的顺序取决于页面内容流和布局。若需进行区域特定的提取、几何细节、多列布局、注释、高亮文本或上标和下标检测，请使用本节中的相关提取文章。
 
@@ -21,7 +21,7 @@ PDF 页面不像文字处理文档那样存储文本，因此提取的顺序取�
 
 使用 `TextAbsorber` 从整个文档收集平面文本流并将其写入文件。当您只需要可读的文本内容且不需要段落边界或坐标时，这是最简单的选项。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建一个 [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) 以在整个文档中累积文本。
 1. 调用 `document.getPages().accept(textAbsorber)` 所以每个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 被吸收器访问。
 1. 将提取的文本缓冲区写入输出文件。
@@ -40,7 +40,7 @@ public static void extractTextFromAllPages(Path inputFile, Path outputFile) thro
 
 仅将吸收器应用于您需要的页面。页面编号在 `Document` 页面集合是从 1 开始计数的，所以 `get_Item(1)` 读取第一页。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建一个 [TextAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) 用于单页提取。
 1. 调用 `accept(textAbsorber)` 在目标上 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 按页码选择。
 1. 将提取的文本缓冲区写入输出文件。
@@ -57,9 +57,9 @@ public static void extractTextFromPage(Path inputFile, Path outputFile, int page
 
 ## 按段落结构提取文本
 
-使用 `ParagraphAbsorber` 当您需要结构分组而不是单个纯文本流时。它返回带有章节、段落、行和的页面标记。 `TextFragment` 对象，这在输出必须保留逻辑文本块时很有用。
+当需要结构分组而不是单个纯文本流时，使用 `ParagraphAbsorber`。它返回包含章节、段落、行和 `TextFragment` 对象的页面标记，这在输出必须保留逻辑文本块时很有用。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF。
 1. 创建一个 [ParagraphAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) 并访问整个文档以构建页面标记结果。
 1. 遍历页面标记、章节、段落、行和 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 吸收器公开的对象。
 1. 构建输出文本时使用明确的页面、章节和段落编号，以保留结构分组。

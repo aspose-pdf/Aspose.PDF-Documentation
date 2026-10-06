@@ -50,7 +50,7 @@ public static void setProperties(Path outputFile) {
 
 当您需要向标记结构树添加一个简单的段落元素时，请使用此示例。
 
-1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建一个 [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/) 并设置其文本。
 1. 将段落追加到根元素并保存文档。
 
@@ -74,7 +74,7 @@ public static void setTextElements(Path outputFile) {
 
 此示例创建了多个块级结构元素，包括多个级别的标题和一个段落。
 
-1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 为所需的级别添加标题元素，然后创建段落元素。
 1. 将块元素附加到根结构并保存文档。
 
@@ -105,7 +105,7 @@ public static void setTextBlockElements(Path outputFile) {
 
 当块结构元素应包含嵌套的内联跨度时，请使用此示例。
 
-1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 构建标题元素并将 span 子元素追加到它们。
 1. 创建一个包含多个 span 的段落并保存文档。
 
@@ -237,7 +237,7 @@ public static void setElements(Path imageFile, Path outputFile) {
 
 此示例创建结合普通文本和嵌套 span 元素的段落元素。
 
-1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个新的 Tagged PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)。
 1. 创建段落元素，并添加带有自定义文本的 span 子元素。
 1. 将段落追加到根元素并保存文档。
 
@@ -337,7 +337,7 @@ public static void setLanguageAndTitle(Path outputFile) {
 
 此辅助方法创建一个段落，分配其语言，并将其附加到根结构。
 
-1. 创建一个 [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/).
+1. 创建一个 [ParagraphElement](https://reference.aspose.com/pdf/java/com.aspose.pdf.logicalstructure/paragraphelement/)。
 1. 设置元素的文本和语言。
 1. 将段落追加到标记内容根元素。
 

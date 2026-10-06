@@ -33,6 +33,6 @@ print "Text extracted successfully. Check output file."
 
 **下载运行代码**
 
-下载\u0412\u00A0**提取所有页面的文本 (Aspose.PDF)**\u0412\u00A0来自\u0412\u00A0以下任意提到的社交编码站点：
+下载\u0412\u00A0**提取所有页面的文本 (Aspose.PDF)**\u0412\u00A0 来自\u0412\u00A0 以下任意提到的社交编码站点：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithText/ExtractTextFromAllPages/ExtractTextFromAllPages.py)

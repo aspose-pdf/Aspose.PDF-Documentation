@@ -181,7 +181,7 @@ public static void determineLineBreak(Path outputFile) {
 
 在做布局决策之前应测量字符和字符串宽度时，请使用此示例。
 
-1. 解析目标字体并创建一个 `TextState`.
+1. 解析目标字体并创建一个 `TextState`。
 1. 测量字符并比较来自字体和文本状态 API 的结果。
 1. 输出用于验证的任何不匹配项。
 
@@ -564,12 +564,12 @@ public static void addTextLatexFragment(Path outputFile) {
 }
 ```
 
-## 添加富HTML片段
+## 添加富 HTML 片段
 
 当页面应呈现结构化 HTML 内容（例如标题、段落和链接）时，请使用此示例。
 
 1. 创建一个新的 PDF 文档并添加一个页面。
-1. 准备 HTML 内容字符串并创建一个 `HtmlFragment`.
+1. 准备 HTML 内容字符串并创建一个 `HtmlFragment`。
 1. 将其添加到页面并保存 PDF。
 
 ```java
@@ -594,7 +594,7 @@ public static void addHtmlFragment(Path outputFile) {
 当导入的 HTML 内容应继承受控的字体和颜色设置时，请使用此示例。
 
 1. 创建一个新的 PDF 文档并添加一个页面。
-1. 准备 HTML 内容并创建 `HtmlFragment`.
+1. 准备 HTML 内容并创建 `HtmlFragment`。
 1. 分配自定义 `TextState`, 添加片段并保存文档。
 
 ```java
@@ -625,7 +625,7 @@ public static void addHtmlFragmentOverrideTextState(Path outputFile) {
 在文本应使用直接从字体文件路径加载的字体时，请使用此示例。
 
 1. 解析自定义字体文件路径。
-1. 创建一个文本片段并通过加载字体 `FontRepository.openFont`.
+1. 创建一个文本片段并通过加载字体 `FontRepository.openFont`。
 1. 应用字体设置并保存文档。
 
 ```java
@@ -651,7 +651,7 @@ public static void useCustomFontFromFile(Path outputFile) {
 
 当需要从流中打开自定义字体并将其嵌入 PDF 时，请使用此示例。
 
-1. 使用流打开字体文件并加载它 `FontRepository`.
+1. 使用流打开字体文件并加载它 `FontRepository`。
 1. 创建文本片段并分配嵌入的字体。
 1. 将片段添加到页面并保存文档。
 

@@ -15,7 +15,7 @@ Abstract: 本文解释了如何使用 Aspose.PDF for Java 从 PDF 文档中提�
 ---
 当您需要重新使用嵌入的图形、检查文档资产或将图像导出用于后续处理时，可从 PDF 页面中提取图像。
 
-1. 在 a 中打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例并为提取的图像文件打开输出流。
+1. 使用 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 实例打开源 PDF，并为提取的图像文件打开输出流。
 1. 获取目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 从文档中获取并访问它 `Resources.Images` 集合。
 1. 检索所需的 [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) 对象从该图像集合中按索引获取。
 1. 调用 `image.save(outputImage)` 将提取的图像字节写入目标流。

@@ -4,7 +4,7 @@ linktitle: 页面信息
 type: docs
 weight: 20
 url: /zh/java/page-information/
-description: 学习如何使用 PdfFileInfo 外观在 Java 中检查 PDF 页面尺寸、旋转和偏移量。
+description: 学习如何使用 PdfFileInfo 类在 Java 中检查 PDF 页面尺寸、旋转和偏移量。
 lastmod: "2026-10-06"
 draft: false
 sitemap:
