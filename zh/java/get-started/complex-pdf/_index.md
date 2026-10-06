@@ -1,148 +1,90 @@
----  
-title: 创建复杂的PDF  
-linktitle: 创建复杂的PDF  
-type: docs  
-weight: 60  
-url: /zh/java/complex-pdf-example/  
-description: Aspose.PDF for Java 允许您创建包含图像、文本片段和表格的更复杂的文档。  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
----  
+---
+title: 创建复杂的 PDF
+linktitle: 创建复杂的 PDF
+type: docs
+weight: 30
+url: /zh/java/complex-pdf-example/
+description: Aspose.PDF for Java 允许您创建包含图像、文本片段和表格的更复杂的 PDF 文档，所有内容位于同一个文件中。
+lastmod: "2026-10-06"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 创建复杂的 PDF
+Abstract: 本文展示了如何使用 Aspose.PDF 在 Java 中创建更复杂的 PDF。示例添加了一张图像、一个格式化的标题、一个描述性文本块，以及一个具有样式化表头单元格和生成的计划行的表格，然后将结果保存为 PDF 文档。
+---
+该 [你好，世界](/pdf/zh/java/hello-world-example/) 示例概述了最简的 PDF 创建路径。此示例基于该工作流，创建一个更丰富的文档，结合了图形、文本和表格内容。
 
-[Hello, World](/pdf/zh/java/hello-world-example/) 示例展示了使用 Java 和 Aspose.PDF 创建 PDF 文档的简单步骤。在本文中，我们将了解如何使用 Java 和 Aspose.PDF for Java 创建更复杂的文档。作为示例，我们将采用一家虚构的运营客运渡轮服务的公司的文档。  
-我们的文档将包含一个图像、两个文本片段（标题和段落）以及一个表格。为了构建这样的文档，我们将使用基于DOM的方法。您可以在[DOM API 基础](/pdf/zh/java/basics-of-dom-api/)部分阅读更多信息。  
+在 Java 中创建更复杂的 PDF 文档：
 
-如果我们从头创建一个文档，我们需要遵循某些步骤：
+1. 创建一个 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 并添加一个 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 向其添加图像 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 与 `page.addImage(...)` 以及目标 [Rectangle](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/).
+1. 创建标题 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 并设置其字体、大小、对齐方式等 [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/).
+1. 创建第二个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) 用于描述段落。
+1. 构建一个 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 带有边框、内边距和标题样式。
+1. 将生成的计划行添加到 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/).
+1. 追加 [Table](https://reference.aspose.com/pdf/java/com.aspose.pdf/table/) 到 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 段落。
+1. 保存输出 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-1. 实例化一个[Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document)对象。在这一步中，我们将创建一个带有一些元数据但没有页面的空PDF文档。
-1. 向文档对象添加一个[Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page)。现在，我们的文档将有一页。
-1. 添加一个[Image](https://reference.aspose.com/pdf/java/com.aspose.pdf/image)。这是一项基于PDF操作符的低级操作的复杂操作。
-    - 从流中加载图像
-    - 将图像添加到页面资源的Images集合中
-    - 使用GSave操作符：此操作符保存当前图形状态。
-    - 创建一个[Matrix](https://reference.aspose.com/pdf/java/com.aspose.pdf/matrix/)对象。
-    - 使用ConcatenateMatrix操作符：定义图像的放置方式。
-    - 使用Do操作符：此操作符绘制图像。
-    - 使用GRestore操作符：此操作符恢复图形状态。
-
-1. 为标题创建一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment)。对于标题，我们将使用 Arial 字体，字体大小为 24pt，居中对齐。
-1. 将标题添加到页面的[段落](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--)中。
-1. 为描述创建一个 [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/TextFragment)。对于描述，我们将使用 Arial 字体，字体大小为 24pt，居中对齐。
-1. 将（描述）添加到页面的段落中。
-1. 创建一个表格，添加表格属性。
-1. 将（表格）添加到页面的[段落](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getParagraphs--)中。
-1. 保存文档 "Complex.pdf"。
+以下 Java 代码基于 `GetStartedExamples.java`.
 
 ```java
-package com.aspose.pdf.examples;
-
-/**
- * 复杂示例
- */
-
-import java.io.FileNotFoundException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.time.Duration;
-import java.time.LocalTime;
-
-import com.aspose.pdf.*;
-import com.aspose.pdf.operators.ConcatenateMatrix;
-import com.aspose.pdf.operators.Do;
-import com.aspose.pdf.operators.GRestore;
-import com.aspose.pdf.operators.GSave;
-
-public final class ComplexExample {
-
-    private ComplexExample() {
-    }
-
-    private static Path _dataDir = Paths.get("/home/admin1/pdf-examples/");
-
-    public static void main(String[] args) throws FileNotFoundException {
-        // 初始化文档对象
-        Document document = new Document();
-        // 添加页面
+public static void complexExample(Path imageFile, Path outputFile) {
+    try (Document document = new Document()) {
         Page page = document.getPages().add();
 
-        // -------------------------------------------------------------
-        // 添加图片
-        Path imageFileName = Paths.get(_dataDir.toString(),"logo.png");
-        java.io.FileInputStream imageStream = new java.io.FileInputStream(new java.io.File(imageFileName.toString()));
-        // 将图像添加到页面资源的图像集合中
-        page.getResources().getImages().add(imageStream);
+        page.addImage(imageFile.toString(), new Rectangle(20, 730, 120, 830, true));
 
-        // 使用 GSave 操作符：该操作符保存当前图形状态
-        page.getContents().add(new GSave());
-        Rectangle _logoPlaceHolder = new Rectangle(20, 730, 120, 830);
-
-        // 创建矩阵对象
-        Matrix matrix = new Matrix(new double[] {
-            _logoPlaceHolder.getURX() - _logoPlaceHolder.getLLX(), 0, 0,
-            _logoPlaceHolder.getURY() - _logoPlaceHolder.getLLY(),
-            _logoPlaceHolder.getLLX(), _logoPlaceHolder.getLLY() });
-
-        // 使用 ConcatenateMatrix（连接矩阵）操作符：定义图像的放置方式
-        page.getContents().add(new ConcatenateMatrix(matrix));
-        XImage ximage = page.getResources().getImages().get_Item(page.getResources().getImages().size());
-        // 使用 Do 操作符：该操作符绘制图像
-        page.getContents().add(new Do(ximage.getName()));
-        // 使用 GRestore 操作符：该操作符恢复图形状态
-        page.getContents().add(new GRestore());
-
-        // -------------------------------------------------------------
-        // 添加标题
-        TextFragment header = new TextFragment("2020年秋季新渡轮航线");
+        TextFragment header = new TextFragment("New ferry routes in Fall 2029");
         header.getTextState().setFont(FontRepository.findFont("Arial"));
         header.getTextState().setFontSize(24);
         header.setHorizontalAlignment(HorizontalAlignment.Center);
         header.setPosition(new Position(130, 720));
         page.getParagraphs().add(header);
 
-        // 添加描述
-        String descriptionText = "游客必须在线购票，每天的票数限制为5000张。渡轮服务以半容量和缩减时间表运营。预计会有排队。";
+        String descriptionText = "Visitors must buy tickets online and tickets are limited to 5,000 per day. "
+                + "Ferry service is operating at half capacity and on a reduced schedule. "
+                + "Expect lineups.";
         TextFragment description = new TextFragment(descriptionText);
         description.getTextState().setFont(FontRepository.findFont("Times New Roman"));
         description.getTextState().setFontSize(14);
         description.setHorizontalAlignment(HorizontalAlignment.Left);
         page.getParagraphs().add(description);
 
+        page.getParagraphs().add(createScheduleTable());
 
-        // 添加表格
-        Table table = new Table();
-        table.setColumnWidths("200");
-        table.setBorder(new BorderInfo(BorderSide.Box, 1f, Color.getDarkSlateGray()));
-        table.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.5f, Color.getBlack()));
-        table.getMargin().setBottom(10);
-        table.getDefaultCellTextState().setFont(FontRepository.findFont("Helvetica"));
+        document.save(outputFile.toString());
+    }
+}
+```
 
-        Row headerRow = table.getRows().add();
-        headerRow.getCells().add("离开城市");
-        headerRow.getCells().add("离开岛屿");
+相同的示例使用一个辅助方法来准备包含标题格式和生成的出发时间的时间表：
 
-        for (Cell headerRowCell : headerRow.getCells())
-        {
-            headerRowCell.setBackgroundColor(Color.getGray());
-            headerRowCell.getDefaultCellTextState().setForegroundColor(Color.getWhiteSmoke());
-        }
+```java
+private static Table createScheduleTable() {
+    Table table = new Table();
+    table.setColumnWidths("200 200");
+    table.setBorder(new BorderInfo(BorderSide.Box, 1.0f, Color.getDarkSlateGray()));
+    table.setDefaultCellBorder(new BorderInfo(BorderSide.Box, 0.5f, Color.getBlack()));
+    table.setDefaultCellPadding(new MarginInfo(4.5, 4.5, 4.5, 4.5));
+    table.getMargin().setBottom(10);
+    table.getDefaultCellTextState().setFont(FontRepository.findFont("Helvetica"));
 
-        LocalTime time = LocalTime.of(6,0);
-        Duration incTime = Duration.ofMinutes(30);
+    Row headerRow = table.getRows().add();
+    Cell departsCityCell = headerRow.getCells().add("Departs City");
+    Cell departsIslandCell = headerRow.getCells().add("Departs Island");
+    styleHeaderCell(departsCityCell);
+    styleHeaderCell(departsIslandCell);
 
-        for (int i = 0; i < 10; i++)
-        {
-            Row dataRow = table.getRows().add();
-            dataRow.getCells().add(time.toString());
-            time=time.plus(incTime);
-            dataRow.getCells().add(time.toString());
-        }
-
-        page.getParagraphs().add(table);
-
-        document.save(Paths.get(_dataDir.toString(), "Complex.pdf").toString());
+    Duration time = Duration.ofHours(6);
+    Duration increment = Duration.ofMinutes(30);
+    for (int index = 0; index < 10; index++) {
+        Row dataRow = table.getRows().add();
+        dataRow.getCells().add(formatTime(time));
+        time = time.plus(increment);
+        dataRow.getCells().add(formatTime(time));
     }
 
+    return table;
 }
 ```

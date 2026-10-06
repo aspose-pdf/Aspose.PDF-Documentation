@@ -1,18 +1,20 @@
 ---
-title: 使用编程方式处理PDF中的链接
+title: 在 Java 中使用 PDF 链接
 linktitle: 链接
 type: docs
 weight: 10
 url: /zh/java/links/
-description: 本指南介绍如何在Java语言中向PDF添加内部页面链接或插入外部网站超链接。
-lastmod: "2021-06-05"
+description: 了解如何使用 Java 在 PDF 文档中创建、提取和更新内部和外部链接。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 在 Java 中创建、提取和更新 PDF 链接
+Abstract: 这篇文章解释了如何使用 Aspose.PDF for Java 管理 PDF 文档中的链接注释。了解如何创建内部、远程、启动和 URI 链接，提取链接注释和超链接，并更新链接外观或网页目标。
 ---
+链接注释可以将用户连接到同一文档中的页面、外部文件、网络资源或应用程序启动目标。
 
-链接可以让您跳转到同一文档中的其他位置、包括附件在内的其他电子文档，或者网站。您可以使用链接来启动操作或确保读者可以立即访问相关信息。
-
-- [创建链接](/pdf/zh/java/create-links/) - 学习一种简单的方式，使用Java在您的PDF文件中创建链接。
-- [更新链接](/pdf/zh/java/update-links) - 尝试设置PDF的目标，尝试将链接目标设置为网页地址，尝试将链接目标设置为另一个PDF文件，更新链接文本颜色。
-- [提取链接](/pdf/zh/java/extract-links) - 使用AnnotationSelector类从PDF文件中提取链接。
+- [创建 PDF 链接](/pdf/zh/java/create-links/)
+- [提取 PDF 链接](/pdf/zh/java/extract-links/)
+- [更新 PDF 链接](/pdf/zh/java/update-links/)

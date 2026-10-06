@@ -1,167 +1,181 @@
 ---
-title: 将HTML转换为PDF文件在Java中
-linktitle: 将HTML转换为PDF文件
+title: 在 Java 中将 HTML 转换为 PDF
+linktitle: 将 HTML 转换为 PDF 文件
 type: docs
 weight: 40
 url: /zh/java/convert-html-to-pdf/
-lastmod: "2021-11-19"
-description: 本主题向您展示如何使用Aspose.PDF将HTML和MHTML格式转换为PDF文件。
+lastmod: "2026-10-06"
+description: 了解如何在 Java 中使用 Aspose.PDF 将 HTML、MHTML 和网页转换为 PDF，包括媒体设置、CSS 页面规则、字体嵌入、SVG 内容以及单页输出。
 sitemap:
     changefreq: "monthly"
     priority: 0.8
+TechArticle: true
+AlternativeHeadline: 如何在 Java 中使用 Aspose.PDF 将 HTML 转换为 PDF
+Abstract: 本文介绍了如何使用 Aspose.PDF for Java 将 HTML 和 MHTML 文件转换为 PDF。它涵盖了基本的 HTML 转 PDF 工作流，并展示了如何通过媒体类型、CSS 页面规则优先级、嵌入字体、SVG 内容、单页输出以及直接从实时网页转换来控制渲染。
 ---
+Aspose.PDF for Java 可以将本地 HTML 文件、归档的 MHTML 内容以及实时网页转换为 PDF 文档。您可以使用以下方式控制转换管道 `HtmlLoadOptions` 和 `MhtLoadOptions` 影响布局缩放、CSS 媒体处理、页面规则优先级、字体嵌入、资源解析以及单页渲染行为。
 
-## 概述
+## 将 HTML 转换为 PDF
 
-本文解释了如何使用Java将HTML转换为PDF。代码非常简单，只需将HTML加载到Document类并保存为输出PDF。在Java中将MHTML转换为PDF也类似。它涵盖以下主题
+当需要将本地 HTML 文件直接转换为 PDF 文档时，请使用此示例。
 
-- [Java HTML到PDF](#convert-html-to-pdf)
-- [Java MHTML到PDF](#convert-mhtml-to-pdf)
-- [Java 转换HTML到PDF](#convert-html-to-pdf)
-- [Java 转换MHTML到PDF](#convert-mhtml-to-pdf)
-- [Java 从HTML到PDF](#convert-html-to-pdf)
-- [Java 从MHTML到PDF](#convert-mhtml-to-pdf)
-- [Java HTML到PDF转换器 - 如何将网页转换为PDF](#convert-html-to-pdf)
-
-- [Java HTML到PDF库、API或代码以编程方式从HTML渲染、保存、生成或创建PDF](#convert-html-to-pdf)
-
-## Java HTML to PDF Converter Library
-
-**Aspose.PDF for Java** 是一个PDF操作API，可以让您将任何现有的HTML文档无缝转换为PDF。HTML到PDF的转换过程可以灵活定制。
-
-## Convert HTML to PDF
-
-以下Java代码示例展示了如何将HTML文档转换为PDF。
-
-1. 创建一个 [HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) 类的实例。
-1. 初始化 [Document](https://reference.aspose.com/page/java/com.aspose.page/document) 对象。
-1. 通过调用 **Document.save(String)** 方法保存输出PDF文档。
+1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 用于配置在导入期间如何解释 HTML 源的实例。
+1. 设置 [`HtmlPageLayoutOption`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlpagelayoutoption/) 到 `ScaleToPageWidth` 如此宽的HTML内容会被缩放至目标PDF页面宽度，而不是被裁剪。
+1. 通过将其路径和配置的加载选项传入，打开源 HTML 文件 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 构造函数。
+1. 保存生成的 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 作为目标输出路径中的 PDF 文件。
 
 ```java
-// 打开源PDF文档
-Document document = new Document(DATA_DIR + "PDFToHTML.pdf")
-
-// 实例化HTML SaveOptions对象
-HtmlSaveOptions htmlsaveOptions = new HtmlSaveOptions();
-
-// 保存文档
-document.save(DATA_DIR + "MultiPageHTML_out.html", htmlsaveOptions);
+public static void convertHtmlToPdf(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPageLayoutOption(HtmlPageLayoutOption.ScaleToPageWidth);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-{{% alert color="success" %}}
-**尝试在线将HTML转换为PDF**
+## 将 HTML 转换为 PDF 并使用媒体类型选项
 
-Aspose为您提供在线免费应用程序 ["HTML to PDF"](https://products.aspose.app/html/en/conversion/html-to-pdf)，您可以尝试调查其功能和工作质量。
+在 HTML 转换期间应控制 CSS 媒体类型处理时，请使用此示例。
 
-[![Aspose.PDF 转换 HTML 到 PDF 使用免费应用程序](html.png)](https://products.aspose.app/html/en/conversion/html-to-pdf)
-{{% /alert %}}
-
-## 从 HTML 到 PDF 的高级转换
-
-HTML 转换引擎具有多个选项，允许我们控制转换过程。
-
-### 媒体查询支持
-
-1. 创建一个 HTML [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions)。
-1. 设置打印或屏幕模式。
-1. 初始化 [Document 对象](<https://reference.aspose.com/page/java/com.aspose.page/document>)。
-1. 保存输出 PDF 文档。
-
-媒体查询是一种流行的技术，用于为不同设备提供定制的样式表。我们可以使用 [HtmlMediaType](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlMediaType) 属性设置设备类型。
+1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 转换设置的实例。
+1. 设置 [`HtmlMediaType`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlmediatype/) 到 `Screen` 当 HTML 应该使用针对屏幕显示而非打印媒体的 CSS 规则进行渲染时。
+1. 打开带有配置加载选项的HTML文件，以便在转换期间应用基于媒体查询的样式。
+1. 保存结果 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 作为 PDF 文件。
 
 ```java
-// 创建一个 HTML LoadOptions
-HtmlLoadOptions options = new HtmlLoadOptions();
-
-// 设置打印或屏幕模式
-options.setHtmlMediaType(HtmlMediaType.Print);
-
-// 初始化文档对象
-String htmlFileName = Paths.get(DATA_DIR.toString(), "test.html").toString();
-Document document = new Document(htmlFileName, options);
-
-// 保存输出 PDF 文档
-document.save(Paths.get(DATA_DIR.toString(), "HTMLtoPDF.pdf").toString());
-document.close();
+public static void convertHtmlToPdfMediaType(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setHtmlMediaType(HtmlMediaType.Screen);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
+## 使用 CSS 页面规则优先级将 HTML 转换为 PDF
 
-### 启用（禁用）字体嵌入
+在使用 CSS 时使用此示例 `@page` 规则应影响最终的 PDF 页面布局。
 
-1. 添加新的 Html [LoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions)。
-1. 启用/禁用字体嵌入。
-1. 保存新的文档。
-
-HTML 页面通常使用字体（例如，从本地文件夹、Google Fonts 等获取的字体）。我们还可以使用 [IsEmbedFonts](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#isEmbedFonts--) 属性来控制文档中字体的嵌入。
+1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 在打开 HTML 文件之前的实例。
+1. 配置 `setPriorityCssPageRule(false)` 当其他布局设置应优先于 CSS 时 `@page` 源标记中的声明。
+1. 将 HTML 内容加载到一个 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 使用已配置的选项，以便在导入期间解析页面布局。
+1. 保存生成的 PDF 文件。
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
-// 启用/禁用字体嵌入
-options.setEmbedFonts(true);
-
-Document document = new Document(DATA_DIR + "test_fonts.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();
+public static void convertHtmlToPdfPriorityCssPageRule(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setPriorityCssPageRule(false);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```
 
-### 管理外部资源加载
+## 将HTML转换为带嵌入字体的PDF
 
-转换引擎提供了一种机制，允许您控制与 HTML 文档相关联的某些资源的加载。
+当输出 PDF 应通过嵌入来保留 HTML 字体时，请使用此示例。
 
-[HtmlLoadOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions) 类具有属性 [CustomLoaderOfExternalResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/HtmlLoadOptions#setCustomLoaderOfExternalResources-com.aspose.pdf.LoadOptions.ResourceLoadingStrategy-)，我们可以用它来定义资源加载器的行为。
+1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) HTML 导入配置的实例。
+1. 启用 `setEmbedFonts(true)` 因此，在HTML渲染期间解析的字体会存储在输出PDF中。
+1. 使用这些加载选项打开 HTML 源，以在最终文档中保留原始排版。
+1. 保存 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 作为包含嵌入字体资源的 PDF。
 
 ```java
-HtmlLoadOptions options = new HtmlLoadOptions();
+public static void convertHtmlToPdfEmbedFonts(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setEmbedFonts(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
 
-options.setCustomLoaderOfExternalResources(
-        new LoadOptions.ResourceLoadingStrategy() {
-            public LoadOptions.ResourceLoadingResult invoke(String resourceURI) {
-                // 创建明确的模板资源以替换：
-                LoadOptions.ResourceLoadingResult res = new LoadOptions.ResourceLoadingResult(new byte[] {});
-                // 如果 i.imgur.com 服务器返回空字节数组
-                if (resourceURI.contains("i.imgur.com")) {
-                    return res;
-                } else {
-                    // 使用默认资源加载器处理资源
-                    res.setLoadingCancelled(true);
-                    return res;
-                }
-            }   
-});
+## 在单个 PDF 页面上渲染 HTML 内容
 
-Document document = new Document(DATA_DIR + "test.html", options);
-document.save(DATA_DIR + "html_test.PDF");
-document.close();    
+当需要将长 HTML 内容保留在一页 PDF 上，而不是跨越多页时，请使用此示例。
+
+1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 转换设置的实例。
+1. 启用 `setRenderToSinglePage(true)` 因此，导入的 HTML 被布局在单个 PDF 页面上，而不是分布在多个页面上。
+1. 打开带有配置加载选项的源 HTML，并让 Aspose.PDF 在 a 中构建页面布局 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 保存输出 PDF 文件。
+
+```java
+public static void convertHtmlToPdfRenderContentToSamePage(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions();
+    loadOptions.setRenderToSinglePage(true);
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 转换包含内联 SVG 的 HTML
+
+当 HTML 源包含必须在 PDF 中渲染的内联 SVG 数据时，请使用此示例。
+
+1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 实例使用 HTML 文件的父目录作为基路径，以便在转换期间能够一致地解析相关资源。
+1. 通过将源路径和加载选项传递给，打开包含内联 SVG 标记的 HTML 文件 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 构造函数。
+1. 让 Aspose.PDF 将 HTML DOM 与嵌入的 SVG 元素一起渲染到 PDF 页面内容中。
+1. 保存生成的 PDF 文档。
+
+```java
+public static void convertHtmlToPdfWithSvgData(Path inputFile, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(inputFile.getParent().toString());
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
+```
+
+## 将网页转换为PDF
+
+当需要将实时网页 URL 渲染并保存为 PDF 文档时，请使用此示例。
+
+1. 创建一个 [`HtmlLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/htmlloadoptions/) 实例使用目标 URL，这样相对资源（例如样式表和图像）就可以相对于该地址进行解析。
+1. 将 URL 字符串转换为 `URL` 对象并打开其输入流以获取实时HTML内容。
+1. 创建一个 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 从响应流和配置的加载选项中，以便下载的页面使用正确的基本 URL 进行处理。
+1. 使用 try-with-resources 将渲染的网页保存为 PDF 文件并自动关闭流资源。
+
+```java
+public static void convertWebPageToPdf(String urlString, Path outputFile) {
+    HtmlLoadOptions loadOptions = new HtmlLoadOptions(urlString);
+    try {
+        URL url = URI.create(urlString).toURL();
+
+        try (InputStream inputStream = url.openStream()) {
+            try (Document document = new Document(inputStream, loadOptions)) {
+                document.save(outputFile.toString());
+            }
+        }
+        System.out.println(url + " converted into " + outputFile);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 ```
 
 ## 将 MHTML 转换为 PDF
 
-{{% alert color="success" %}}
-**尝试在线将 MHTML 转换为 PDF**
+当需要将归档的 MHTML 文件转换为 PDF 文档时，请使用此示例。
 
-
-Aspose.PDF for Java 提供了一个在线免费应用程序 ["MHTML to PDF"](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)，您可以在此尝试调查其功能和工作质量。
-
-[![Aspose.PDF Convertion MHTML to PDF using Free App](mhtml.png)](https://products.aspose.app/pdf/conversion/mhtml-to-pdf)
-{{% /alert %}}
-
-<abbr title="MIME encapsulation of aggregate HTML documents">MHTML</abbr>，即 MIME HTML，是一种网页存档格式，用于将通常由外部链接（如图像、Flash 动画、Java 小程序和音频文件）表示的资源与 HTML 代码合并为单个文件。MHTML 文件的内容编码方式如同是一个 HTML 电子邮件消息，使用 MIME 类型 multipart/related。
-
-下一个代码片段展示了如何使用 Java 将 MHTML 文件转换为 PDF 格式：
+1. 创建一个 [`MhtLoadOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/mhtloadoptions/) 用于让 Aspose.PDF 将源加载为 MIME HTML 内容的实例。
+1. 打开 `.mht` 或 `.mhtml` 通过传递文件路径和 MHTML 加载选项来 [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) 构造函数。
+1. 让 Aspose.PDF 将归档的 HTML 内容及其嵌入的资源解析为 PDF 文档模型。
+1. 保存生成的 PDF 文件。
 
 ```java
-// 创建一个 MhtLoadOptions 实例以指定 MHTML 文件的加载选项。
-MhtLoadOptions options = new MhtLoadOptions();
-
-// 设置 MHTML 文件的路径。
-String mhtmlFileName = Paths.get(DATA_DIR.toString(), "samplefile.mhtml").toString();
-
-// 将 MHTML 文件加载到 Document 对象中。
-Document document = new Document(mhtmlFileName, options);
-
-// 将文档保存为 PDF 文件。
-document.save(Paths.get(DATA_DIR.toString(), "MarkdowntoPDF.pdf").toString());
-
-// 关闭文档。
-document.close();
+public static void convertMhtmlToPdf(Path inputFile, Path outputFile) {
+    MhtLoadOptions loadOptions = new MhtLoadOptions();
+    try (Document document = new Document(inputFile.toString(), loadOptions)) {
+        document.save(outputFile.toString());
+    }
+    System.out.println(inputFile + " converted into " + outputFile);
+}
 ```

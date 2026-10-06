@@ -1,11 +1,12 @@
 ---
 title: 在 PHP 中处理文本
+linktitle: 在 PHP 中处理文本
 type: docs
 weight: 40
 url: /zh/java/working-with-text-in-php/
-lastmod: "2021-06-05"
+description: 了解如何在 PHP 中使用 Aspose.PDF 操作和提取 PDF 文档中的文本，以实现更好的内容处理。
+lastmod: "2026-10-06"
 ---
-
 本节包括以下主题：
 
 - [在 PHP 中使用 DOM 添加 HTML 字符串](/pdf/zh/java/add-html-string-using-dom-in-php/)

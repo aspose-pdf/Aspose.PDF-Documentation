@@ -1,24 +1,25 @@
 ---
-title: 下载和配置 Aspose.Pdf 在 Python 中
+title: 在 Python 中下载并配置 Aspose.Pdf
+linktitle: 在 Python 中下载并配置 Aspose.Pdf
 type: docs
 weight: 10
 url: /zh/java/download-and-configure-aspose-pdf-in-python/
-lastmod: "2021-06-05"
+description: 了解如何下载并设置 Aspose.PDF for Python，以便在您的 Python 环境中开始处理和操作 PDF 文件。
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
 ---
+### 下载必需的库
 
-### 下载所需的库
+下载下面提到的必需库。这些是运行 Aspose.PDF Java for Python 示例所需的库。
 
-下载下面提到的所需库。这些是执行 Aspose.PDF Java for Python 示例所需的。
-
-- Aspose: [Aspose.PDF for Java 组件](https://downloads.aspose.com/pdf/java)
+- Aspose： [Aspose.PDF for Java 组件](https://downloads.aspose.com/pdf/java)
 - [JPype](https://pypi.python.org/pypi/JPype1)
 
-## 从社交编码网站下载示例
+## 从社交编码站点下载示例
 
-以下发布的运行示例可以在下面提到的社交编码网站上下载：
+以下发布的可运行示例可在下面提到的社交编码站点下载：
 
 ### GitHub
 
@@ -27,11 +28,11 @@ sitemap:
 
 ## 如何配置源代码
 
-请按照以下简单步骤打开并扩展源代码：
+请遵循以下简单步骤В 以打开并扩展源代码，同时使用：
 
-1. 仅安装Python 2.7.x.x: <https://www.python.org/downloads/>
-2. 从以下网址安装JPype: <http://sourceforge.net/projects/jpype/files/JPype/>
-3. 从以下网址安装Java JDK: <http://www.oracle.com/technetwork/java/javase/downloads>
-4. 从以下网址下载您想在Python项目中使用的Aspose.PDF for Java APIs: <http://www.aspose.com/community/files/72/java-components/default.aspx> 并将下载的API的.jars复制到%Python%/lib文件夹中。
-5. 从GitHub克隆[Aspose.PDF Java for Python Examples](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python)。
-6. 从CodePlex克隆[Aspose.PDF Java for Python Examples](http://asposepdfjavapython.codeplex.com/)。
+1. 仅从以下位置安装 Python 2.7.x.x： <https://www.python.org/downloads/>
+2. 从以下位置安装 JPype： <http://sourceforge.net/projects/jpype/files/JPype/>
+3. 从以下位置安装 Java JDK： <http://www.oracle.com/technetwork/java/javase/downloads>
+4. 从以下位置下载您想在 python 项目中使用的 Aspose.PDF for Java API： <http://www.aspose.com/community/files/72/java-components/default.aspx> 并将下载的 APIs 的 .jars 复制到 %Python%/lib 文件夹。
+5. 克隆 [Aspose.PDF Java for Python 示例](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_Python) 来自 github。
+6. 克隆 [Aspose.PDF Java for Python 示例](http://asposepdfjavapython.codeplex.com/) 来自 CodePlex。

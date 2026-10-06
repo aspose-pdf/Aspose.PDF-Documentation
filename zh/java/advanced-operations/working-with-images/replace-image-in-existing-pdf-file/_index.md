@@ -1,44 +1,55 @@
 ---
-title: 替换现有PDF文件中的图像
+title: 使用 Java 替换现有 PDF 文件中的图像
 linktitle: 替换图像
 type: docs
 weight: 70
 url: /zh/java/replace-image-in-existing-pdf-file/
-description: 本节介绍如何使用Java库替换现有PDF文件中的图像。
-lastmod: "2021-06-05"
+description: 了解如何在 Java 中替换现有 PDF 文件中的嵌入图像。
+lastmod: "2026-10-06"
+TechArticle: true
+AlternativeHeadline: 使用 Java 替换现有 PDF 文件中的图像
+Abstract: 本文展示了如何使用 Aspose.PDF for Java 替换 PDF 文档中的图像。它包括按资源索引替换图像以及使用 ImagePlacementAbsorber 替换找到的第一个匹配图像位置。
 ---
+根据您需要定位图像的精确程度，可使用页面图像集合或基于位置的搜索。
 
-[XImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) 集合的 [Replace](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection#replace-int-java.io.InputStream-) 方法允许您替换现有PDF文件中的图像。
+## 通过资源索引替换图像
 
-图像集合可以在页面的资源集合中找到。要替换图像：
-
-1. 使用 Document 对象打开PDF文件。
-2. 替换特定图像，使用 Document 对象的 Save 方法保存更新后的PDF文件。
-
-以下代码片段展示了如何在PDF文件中替换图像。
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 访问目标上的图像资源 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 使用新图像文件替换目标图像资源。
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
-package com.aspose.pdf.examples;
+public static void replaceImage(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         InputStream imageStream = Files.newInputStream(imageFile)) {
+        document.getPages().get_Item(1).getResources().getImages().replace(1, imageStream);
+        document.save(outputFile.toString());
+    }
+}
+```
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+## 使用 替换图像 `ImagePlacementAbsorber`
 
-import com.aspose.pdf.Document;
+1. 打开源 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. 创建一个 [ImagePlacementAbsorber](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacementabsorber/) 并访问目标 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. 获取目标 [ImagePlacement](https://reference.aspose.com/pdf/java/com.aspose.pdf/imageplacement/) 并使用新的图像流替换它。
+1. 保存更新后的 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
-public class ExampleReplaceImage {
-    private static String _dataDir = "/home/admin1/pdf-examples/Samples/";
-    public static void Replace() {
-        // 打开文档
-        Document pdfDocument = new Document("input.pdf");
-        // 替换特定图像
-        try {
-            pdfDocument.getPages().get_Item(1).getResources().getImages().replace(1, new FileInputStream("lovely.jpg"));
-        } catch (FileNotFoundException e) {
-            // TODO 自动生成的 catch 块
-            e.printStackTrace();
+```java
+public static void replaceImageWithAbsorber(Path inputFile, Path imageFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString())) {
+        ImagePlacementAbsorber absorber = new ImagePlacementAbsorber();
+        document.getPages().get_Item(1).accept(absorber);
+
+        if (absorber.getImagePlacements().size() > 0) {
+            ImagePlacement imagePlacement = absorber.getImagePlacements().get_Item(1);
+            try (InputStream imageStream = Files.newInputStream(imageFile)) {
+                imagePlacement.replace(imageStream);
+            }
         }
-        // 保存更新后的PDF文件
-        pdfDocument.save(_dataDir + "output.pdf");
+
+        document.save(outputFile.toString());
     }
 }
 ```

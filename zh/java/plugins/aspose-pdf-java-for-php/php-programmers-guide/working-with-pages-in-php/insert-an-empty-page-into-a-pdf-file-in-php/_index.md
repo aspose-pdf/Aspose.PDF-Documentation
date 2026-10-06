@@ -1,34 +1,35 @@
 ---
-title: 向 PDF 文件中插入空白页在 PHP 中
+title: 在 PHP 中向 PDF 文件插入空页
+linktitle: 在 PHP 中向 PDF 文件插入空页
 type: docs
 weight: 70
 url: /zh/java/insert-an-empty-page-into-a-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: 了解如何使用 Aspose.PDF 在 PHP 中在 PDF 文件的任意位置插入空页，以实现灵活的文档结构。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - 插入空页
 
-## Aspose.PDF - 插入空白页
-
-要在 PDF 文档中插入空白页，使用 **Aspose.PDF Java for PHP**，只需调用 **InsertEmptyPage** 类。
+要在 PDF 文档中插入空页，可使用 **Aspose.PDF Java for PHP**，只需调用 **InsertEmptyPage** 类。
 
 PHP 代码
 
 ```php
 
-# 打开目标文档
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# 在 PDF 中插入一个空白页
+# insert a empty page in a PDF
 $pdf->getPages()->insert(1);
 
-# 保存合并后的输出文件（目标文档）
+# Save the concatenated output file (the target document)
 $pdf->save($dataDir . "output.pdf");
 
-print "空白页添加成功！";
+print "Empty page added successfully!";
 
 ```
 
 **下载运行代码**
 
-从以下任一社交编码网站下载 **插入空白页 (Aspose.PDF)**：
+下载\u0412\u00A0**插入空页面 (Aspose.PDF)**\u0412\u00A0来自\u0412\u00A0以下列出的任何社交编码站点:
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPage.php)

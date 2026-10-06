@@ -1,29 +1,30 @@
 ---
-title: 将SVG文件转换为Python中的PDF格式
+title: 在 Python 中将 SVG 文件转换为 PDF 格式
+linktitle: 在 Python 中将 SVG 文件转换为 PDF 格式
 type: docs
 weight: 40
 url: /zh/java/convert-svg-file-to-pdf-format-in-python/
-lastmod: "2021-06-05"
+description: 了解如何在 Python 中使用 Aspose.PDF 将 SVG 文件转换为 PDF 格式，以实现可靠的文档生成。
+lastmod: "2026-10-06"
 ---
+## 如何在 Python 中将 SVG 文件转换为 PDF 格式
 
-## 如何在Python中将SVG文件转换为PDF格式
+要使用 **Aspose.PDF Java for Python** 将 SVG 文件转换为 PDF 格式，只需调用 **SvgToPdf** 模块。
 
-要使用**Aspose.PDF Java for Python**将SVG文件转换为PDF格式，只需调用**SvgToPdf**模块。
-
-Python代码：
+Python 代码：
 
 ```python
 options = self.SvgLoadOptions();
 doc=self.Document()
 pdf = self.Document()
 pdf=self.dataDir +'input1.pdf'
-将输出保存为XLS格式
+Save the output to XLS format
 doc.save(self.dataDir + "SVG1.pdf");
-print "文档已成功转换"
+print "Document has been converted successfully"
 ```
 
 ## 下载运行代码
 
-从以下任一社交编码网站下载**Convert SVG to PDF (Aspose.PDF)**：
+下载В **Convert SVG to PDF (Aspose.PDF)**В 来自В 以下任意提到的社交编码站点：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Python/test/WorkingWithDocumentConversion/SvgToPdf/SvgToPdf.py)

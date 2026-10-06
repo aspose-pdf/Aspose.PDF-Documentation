@@ -1,52 +1,44 @@
 ---
-title: 填写 AcroForms
-linktitle: 填写 AcroForms
+title: 填写 AcroForm - 使用 Java 填写 PDF 表单
+linktitle: 填写 AcroForm
 type: docs
 weight: 20
 url: /zh/java/fill-form/
-description: 本节说明如何使用 Aspose.PDF for Java 在 PDF 文档中填写表单字段。
-lastmod: "2021-06-05"
+description: 使用 Aspose.PDF for Java 在 PDF 文档中填写 AcroForm 字段。
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: 使用 Java 在 PDF 文件中填写 AcroForm 字段。
+Abstract: 本文解释了如何使用 Aspose.PDF for Java 填写 AcroForm 字段。示例通过 `Form` facade 加载 PDF，将字段名称与值映射进行匹配，更新匹配的字段，并保存完成的文档。
 ---
+该 `Form` facade 可用于自动填充现有 AcroForm 中的字段。
 
-PDF 文档非常出色，并且确实是创建表单的首选文件类型。
+## 用新值填充 AcroForm 字段
 
-Aspose.PDF for Java 允许您填写表单字段，从 Document 对象的 Form 集合中获取字段。
-
-让我们看看下面的例子如何解决这个任务：
+1. 使用该打开 PDF 表单文档 [Form](https://reference.aspose.com/pdf/java/com.aspose.pdf.facades/form/) facade.
+1. 遍历表单字段，并使用提供的值更新匹配的条目。
+1. 保存已更新的 PDF 文档。
 
 ```java
-public class ExamplesFillForm {
+public static void fillForm(Path inputFile, Path outputFile) {
+    Map<String, String> newFieldValues = Map.of(
+            "First Name", "Alexander_New",
+            "Last Name", "Greenfield_New",
+            "City", "Yellowtown_New",
+            "Country", "Redland_New");
 
-    private static String _dataDir = "/home/aspose/pdf-examples/Samples/Forms/";
-
-    public static void FillFormFieldPDFDocument() {
-        // 打开文档
-        Document pdfDocument = new Document(_dataDir + "TextField.pdf");
-        Page page = pdfDocument.getPages().get_Item(1);
-        // 创建一个字段
-        TextBoxField textBoxField = new TextBoxField(page, new Rectangle(100, 200, 300, 300));
-        textBoxField.setPartialName("textbox1");
-        textBoxField.setValue("Text Box");
-
-        // TextBoxField.Border = new Border(
-        Border border = new Border(textBoxField);
-        border.setWidth(5);
-        border.setDash(new Dash(1, 1));
-        textBoxField.setBorder(border);
-
-        textBoxField.setColor(Color.getGreen());
-
-        // 将字段添加到文档中
-        pdfDocument.getForm().add(textBoxField, 1);
-
-        // 保存修改后的 PDF
-        pdfDocument.save(_dataDir + "TextBox_out.pdf");
-
+    Form form = new Form(inputFile.toString());
+    try {
+        for (String fieldName : form.getFieldNames()) {
+            if (newFieldValues.containsKey(fieldName)) {
+                form.fillField(fieldName, newFieldValues.get(fieldName));
+            }
+        }
+        form.save(outputFile.toString());
+    } finally {
+        form.close();
     }
-
-    
 }
 ```
