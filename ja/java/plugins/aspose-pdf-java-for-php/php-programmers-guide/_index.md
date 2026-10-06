@@ -1,14 +1,15 @@
 ---
-title: PHPプログラマーガイド
+title: PHP プログラマー ガイド
+linktitle: PHP プログラマー ガイド
 type: docs
 weight: 20
 url: /ja/java/php-programmers-guide/
-lastmod: "2021-06-05"
+description: Aspose.PDF 用の PHP プログラマー向けガイドを発見し、PHP で PDF ドキュメントを管理するためのステップバイステップのアプローチを提供します。
+lastmod: "2026-10-06"
 ---
+このセクションには以下のトピックが含まれます。
 
-このセクションには以下のトピックが含まれています:
-
-- [PHPでのドキュメント変換の作業](/pdf/ja/java/working-with-document-conversion-in-php/)
-- [PHPでのドキュメントオブジェクトの作業](/pdf/ja/java/working-with-document-object-in-php/)
-- [PHPでのページ操作](/pdf/ja/java/working-with-pages-in-php/)
-- [PHPでのテキスト操作](/pdf/ja/java/working-with-text-in-php/)
+- [PHP によるドキュメント変換操作](/pdf/ja/java/working-with-document-conversion-in-php/)
+- [PHP における Document Object の操作](/pdf/ja/java/working-with-document-object-in-php/)
+- [PHP におけるページ操作](/pdf/ja/java/working-with-pages-in-php/)
+- [PHP におけるテキストの操作](/pdf/ja/java/working-with-text-in-php/)

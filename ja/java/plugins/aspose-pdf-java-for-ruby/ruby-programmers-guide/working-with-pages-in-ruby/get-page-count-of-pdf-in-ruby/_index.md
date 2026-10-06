@@ -1,31 +1,32 @@
 ---
-title: RubyでPDFのページ数を取得
+title: "Ruby での PDF のページ数の取得"
+linktitle: "Ruby での PDF のページ数の取得"
 type: docs
 weight: 40
 url: /ja/java/get-page-count-of-pdf-in-ruby/
-lastmod: "2021-06-05"
+description: "Aspose.PDF を使用した Ruby で、プログラム的に PDF ドキュメントの総ページ数を取得します。"
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - ページ数の取得
 
-## Aspose.PDF - ページ数を取得
+Pdf ドキュメントのページ数を取得するには、**Aspose.PDF Java for Ruby** を使用して、単に **GetNumberOfPages** モジュールを呼び出すだけです。
 
-**Aspose.PDF Java for Ruby**を使用してPdfドキュメントのページ数を取得するには、**GetNumberOfPages**モジュールを呼び出すだけです。
-
-Rubyコード
+Ruby コード
 
 ```java
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# PDFドキュメントを作成
+# Create PDF document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
 page_count = pdf.getPages().size()
 
-puts "ページ数:" + page_count.to_s
+puts "Page Count:" + page_count.to_s
 ```
 
-## 実行コードをダウンロード
+## 実行コードのダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから**Get Page Count (Aspose.PDF)**をダウンロードしてください:
+**Get Page Count (Aspose.PDF)** を、以下に記載されたいずれかのソーシャルコーディングサイトからダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Pages/getnumberofpages.rb)

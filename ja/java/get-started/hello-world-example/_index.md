@@ -1,42 +1,48 @@
-title: Hello World Java Example
-linktitle: Hello World Example
-type: docs
-weight: 40
-url: /ja/java/hello-world-example/
-description: このページでは、Aspose.PDF for Java を使用してテキスト - Hello World を含む PDF ドキュメントを作成するためのシンプルなプログラミングの使用方法を示します。
-lastmod: "2021-06-05"
-sitemap:
-    changefreq: "weekly"
-    priority: 0.7
 ---
+title: Java を使用した Hello World の例
+linktitle: Hello World の例
+type: docs
+weight: 20
+url: /ja/java/hello-world-example/
+description: このサンプルは、Aspose.PDF for Java を使用してスタイル付き Hello World テキストでシンプルな PDF ドキュメントを作成する方法を示しています。
+lastmod: "2026-10-05"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Java 経由の Hello World の例
+Abstract: この記事では、Aspose.PDF for Java の Hello World の例を提供します。この例では新しい PDF ドキュメントを作成し、ページを追加し、カスタム位置・フォント・カラーを持つ TextFragment を作成し、TextBuilder を使用してテキストをページに追加し、結果を PDF ファイルとして保存します。
+---
+「Hello World」例は、基本的な PDF 作成ワークフローを理解する最短の方法です。本記事では、例として新しい PDF を作成し、ページにスタイル付きテキストフラグメントを配置し、出力ファイルを保存します。
 
-## Hello World Example
+Java の例では、次の手順で PDF ドキュメントを作成します。
 
-「Hello World」例は、プログラミング言語やソフトウェアの機能をシンプルなユースケースで紹介するために伝統的に使用されます。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) オブジェクトを作成してください。
+1. ドキュメントに [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) を追加してください。
+1. テキスト `Hello, world!` を含む [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) を作成してください。
+1. [Position](https://reference.aspose.com/pdf/java/com.aspose.pdf/position/) を設定し、フラグメントの [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/) を使用してフォント、フォントサイズ、背景色、前景色を設定してください。
+1. ページの [TextBuilder](https://reference.aspose.com/pdf/java/com.aspose.pdf/textbuilder/) を作成してください。
+1. [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) に [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) を追加してください。
+1. PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
-Aspose.PDF for Java API は、Java アプリケーション開発者がアプリケーション内で PDF ファイルを作成、読み取り、編集、操作することを可能にします。さまざまなファイル形式を PDF ファイル形式に変換したり、その逆を行ったりすることができます。この Hello World 記事では、Aspose.PDF for Java API を使用して Java で PDF ファイルを作成する方法を示します。環境に [Aspose.PDF for Java をインストール](/pdf/ja/java/installation/) した後、以下のコードサンプルを実行して、Aspose.PDF API の動作を確認できます。
-
-以下のコードスニペットはこれらのステップに従います:
-`
-
-1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/class-use/Document) オブジェクトをインスタンス化する
-1. ドキュメントオブジェクトに [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/page) を追加する
-1. [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf.class-use/TextFragment) オブジェクトを作成する
-1. ページの [Paragraph](https://reference.aspose.com/pdf/java/com.aspose.pdf/Paragraphs) コレクションに TextFragment を追加する
-1. 結果の PDF ドキュメントを保存する
-
-以下のコードスニペットは、Aspose.PDF for Java API の動作を示すための Hello World プログラムです。
+次の Java コードは `GetStartedExamples.java` に基づいています。
 
 ```java
-// ドキュメントオブジェクトを初期化する
-Document document = new Document();
- 
-// ページを追加する
-Page page = document.getPages().add();
- 
-// 新しいページにテキストを追加する
-page.getParagraphs().add(new TextFragment("Hello World!"));
- 
-// 更新された PDF を保存する
-document.save("HelloWorld_out.pdf");
+public static void simpleExample(Path outputFile) {
+    try (Document document = new Document()) {
+        Page page = document.getPages().add();
+
+        TextFragment textFragment = new TextFragment("Hello, world!");
+        textFragment.setPosition(new Position(100, 600));
+        textFragment.getTextState().setFontSize(12);
+        textFragment.getTextState().setFont(FontRepository.findFont("TimesNewRoman"));
+        textFragment.getTextState().setBackgroundColor(Color.getBlue());
+        textFragment.getTextState().setForegroundColor(Color.getYellow());
+
+        TextBuilder textBuilder = new TextBuilder(page);
+        textBuilder.appendText(textFragment);
+
+        document.save(outputFile.toString());
+    }
+}
 ```

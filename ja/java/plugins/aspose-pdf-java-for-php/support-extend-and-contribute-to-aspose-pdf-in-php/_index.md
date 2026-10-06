@@ -1,28 +1,28 @@
 ---
-title: Aspose.PdfをPHPでサポート、拡張、および貢献する
+title: "PHP での Aspose.Pdf のサポート、拡張、貢献"
+linktitle: "PHP での Aspose.Pdf のサポート、拡張、貢献"
 type: docs
 weight: 30
 url: /ja/java/support-extend-and-contribute-to-aspose-pdf-in-php/
-lastmod: "2021-06-05"
+description: "PHP での Aspose.PDF のサポートおよび拡張方法を確認し、PHP アプリケーションにおける PDF 処理機能の向上に貢献してください。"
+lastmod: "2026-10-06"
 ---
-
 ## サポート
 
-Asposeの最初の頃から、単にお客様に良い製品を提供するだけでは十分ではないと考えていました。良いサービスを提供する必要もありました。私たち自身も開発者であり、技術的な問題やソフトウェアの癖で必要な作業ができなくなることがどれほど苛立たしいか理解しています。私たちは問題を解決するためにここにいるのであり、問題を作成するためではありません。
+Aspose は創業当初から、優れた製品を提供することだけでなく、優れたサービスの提供も重要であると認識しています。私たち自身も開発者であり、技術的な問題やソフトウェアの不具合によって目的の作業が妨げられる苛立ちを理解しています。私たちは問題を解決するために存在し、問題を生み出すために存在するわけではありません。
 
-これが理由で、無料のサポートを提供しています。私たちの製品を使用するすべての人は、購入したか評価版を使用しているかに関わらず、私たちの全面的な注意と尊重に値します。
+このため、無料サポートを提供しています。製品を購入された方、評価版をご利用の方、すべてのユーザーに当社は同等の注意と敬意を払います。
 
-Aspose.Cells Java for PHPに関連する問題や提案を以下のプラットフォームのいずれかを使用して記録することができます：
+以下のいずれかのプラットフォームを使用して、Aspose.Cells Java for PHP に関する問題やご提案を報告してください。
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/issues)
 
-## 拡張と貢献
+## 拡張および貢献
 
-Aspose.PDF Java for PHPはオープンソースであり、そのソースコードは以下に示す主要なソーシャルコーディングウェブサイトで入手可能です。
- Developers は、ソースコードをダウンロードして、新機能を提案または追加したり、既存の機能を改善したりすることで貢献することが奨励されています。これにより、他の人々もそれを利用できるようになります。
+Aspose.PDF Java for PHP はオープンソースであり、そのソースコードは以下の主要なソーシャルコーディング Web サイトで公開されています。開発者はソースコードをダウンロードし、新機能の提案や追加、既存機能の改善を通じて貢献でき、その結果として他のユーザーも恩恵を受けられるようになっています。
 
 ## ソースコード
 
-以下のいずれかの場所から最新のソースコードを入手できます
+以下の場所のいずれかから最新のソースコードを取得できます。
 
-- [Github](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)
+- [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Plugins/Aspose_Pdf_Java_for_PHP)

@@ -1,19 +1,20 @@
 ---
-title: JythonでPDFファイルを個々のページに分割する
+title: "Jython での PDFファイルの個々のページへの分割"
+linktitle: "Jython での PDFファイルの個々のページへの分割"
 type: docs
 weight: 80
 url: /ja/java/split-pdf-file-into-individual-pages-in-jython/
-lastmod: "2021-06-05"
+description: Jython と Aspose.PDF を使用して PDF ドキュメントを個々のページに分割する方法を学び、文書管理を改善します。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - すべてのページの分割
 
-## Aspose.PDF - すべてのページを分割
+**Aspose.PDF Java for Jython** を使用してファイル形式をチェックします。サンプルコードをご覧ください。
 
-**Aspose.PDF Java for Jython**を使用してファイル形式を確認します。ここでサンプルコードを見ることができます。
+マクロ 'code' のレンダリングエラー：パラメータ lang に無効な値が指定されました
 
-コードのレンダリングエラー 'code' : パラメータlangに指定された値が無効です
+## 実行中のコードのダウンロード
 
-## 実行コードのダウンロード
-
-以下に記載されたソーシャルコーディングサイトから実行コードをダウンロードしてください：
+以下に記載されたソーシャルコーディングサイトから実行中のコードをダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/releases)

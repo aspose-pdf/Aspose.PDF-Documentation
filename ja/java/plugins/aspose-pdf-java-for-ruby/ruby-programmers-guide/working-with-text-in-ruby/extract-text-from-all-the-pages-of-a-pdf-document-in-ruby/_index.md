@@ -1,64 +1,64 @@
 ---
-title: RubyでPDFドキュメントのすべてのページからテキストを抽出する
+title: "Ruby での PDF ドキュメントのすべてのページからテキストの抽出"
+linktitle: "Ruby での PDF ドキュメントのすべてのページからテキストの抽出"
 type: docs
 weight: 30
 url: /ja/java/extract-text-from-all-the-pages-of-a-pdf-document-in-ruby/
-lastmod: "2021-06-05"
+description: Ruby と Aspose.PDF を使用して PDF ドキュメントのすべてのページからテキストを抽出する方法を理解し、コンテンツ分析に最適です。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - すべてのページからテキストの抽出
 
-## Aspose.PDF - すべてのページからテキストを抽出する
+Ruby 用 **Aspose.PDF Java for Ruby** を使用して PDF ドキュメントのすべてのページからテキストを抽出するには、**ExtractTextFromAllPages** モジュールを呼び出してください。
 
-**Aspose.PDF Java for Ruby**を使用してPDFドキュメントのすべてのページからテキストを抽出するには、単に**ExtractTextFromAllPages**モジュールを呼び出します。
-
-Rubyコード
+Ruby コード
 
 ```java
-# ドキュメントディレクトリへのパス。
+# The path to the documents directory.
 
 data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-# ターゲットドキュメントを開く
+# Open the target document
 
 pdf = Rjb::import('com.aspose.pdf.Document').new(data_dir + 'input1.pdf')
 
-# テキストを抽出するためのTextAbsorberオブジェクトを作成
+# create TextAbsorber object to extract text
 
 text_absorber = Rjb::import('com.aspose.pdf.TextAbsorber').new
 
-# すべてのページに対してアブソーバを適用
+# accept the absorber for all the pages
 
 pdf.getPages().accept(text_absorber)
 
-# ドキュメントの特定のページからテキストを抽出するには、accept(..)メソッドに対して特定のページをそのインデックスを使用して指定する必要があります。
+# In order to extract text from specific page of document, we need to specify the particular page using its index against accept(..) method.
 
-# 特定のPDFページに対してアブソーバを適用
+# accept the absorber for particular PDF page
 
 # pdfDocument.getPages().get_Item(1).accept(textAbsorber);
 
-# 抽出されたテキストを取得
+#get the extracted text
 
 extracted_text = text_absorber.getText()
 
-# ライターを作成しファイルを開く
+# create a writer and open the file
 
 writer = Rjb::import('java.io.FileWriter').new(Rjb::import('java.io.File').new(data_dir + "extracted_text.out.txt"))
 
 writer.write(extracted_text)
 
-# ファイルにテキストの行を書き込む
+# write a line of text to the file
 
 # tw.WriteLine(extractedText);
 
-# ストリームを閉じる
+# close the stream
 
 writer.close()
 
-puts "テキストが正常に抽出されました。出力ファイルを確認してください。"
+puts "Text extracted successfully. Check output file."
 ```
 
+## 実行コードのダウンロード
 
-## コードのダウンロード
-
-**すべてのページからテキストを抽出 (Aspose.PDF)** を以下のいずれかのソーシャルコーディングサイトからダウンロードしてください：
+**すべてのページからテキストを抽出 (Aspose.PDF)** を、以下に記載されたソーシャルコーディングサイトからダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Text/extracttextfromallpages.rb)

@@ -2,35 +2,34 @@
 title: 高度な操作
 linktitle: 高度な操作
 type: docs
-weight: 70
+weight: 90
 url: /ja/java/advanced-operations/
-description: Aspose.PDF for Javaを使用すると、簡単なタスクだけでなく、より複雑な目標にも対応できます。
-lastmod: "2021-06-05"
+description: "Java で高度な PDF 機能（注釈、フォーム、ページ、テーブル、テキスト、画像、レイヤー、ベクターグラフィックス、署名、メタデータ）を操作する方法を学んでください。"
+lastmod: "2026-10-06"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Aspose.PDF for Java の高度な PDF 処理機能"
+Abstract: "このセクションでは、Aspose.PDF for Java を使用した高度な PDF 処理ワークフローについて説明します。注釈、フォーム、ページ、テーブル、テキスト、画像、レイヤー、ベクターグラフィックス、アクセシビリティ、セキュリティ、メタデータ、ZUGFeRD 添付ファイル、その他の文書レベル機能を利用した複雑な PDF 自動化シナリオを対象としています。"
 ---
+高度な操作セクションでは、基本的な作成、開く、保存、結合、分割操作に加えて、既存の PDF ドキュメントの編集、検査、セキュリティ強化、機能拡張に使用される Java ワークフローをまとめています。
 
-**高度な操作**は、既存のPDFファイルをプログラムで操作する方法についてのセクションです。これは、[基本操作](/pdf/ja/java/basic-operations)で説明したAspose.PDFで作成された文書や、Adobe Acrobat、Google Docs、Microsoft Office、Open Office、その他のPDFプロデューサーで作成されたPDFに当てはまります。
-
-以下の異なる方法を学びます:
-
-- [文書の操作](/pdf/ja/java/working-with-documents/) - 文書を圧縮、分割、結合し、文書全体に対して他の操作を行います。
-- [ページの操作](/pdf/ja/java/working-with-pages/) - ページを追加、移動、削除、トリミングし、透かしやスタンプを追加します。
-
-- [テキストの操作](/pdf/ja/java/working-with-text/) - PDF内のテキストを追加、フォーマット、検索、置換します。
-- [画像の操作](/pdf/ja/java/working-with-images/) - ドキュメントに画像を挿入、削除、抽出します。
-- [表の操作](/pdf/ja/java/working-with-tables/) - PDFに表を挿入、装飾し、表形式のデータを抽出します。
-- [フォームの操作](/pdf/ja/java/working-with-forms/) - インタラクティブなPDFドキュメントを扱い、フォームフィールドを追加し、データを抽出します。
-- [グラフの操作](/pdf/ja/java/graphs/) - ページ上の図形を操作します。
-- [XMLの操作](/pdf/ja/java/working-with-xml) - XML構造に基づいてPDFドキュメントを構築します。
-- [ナビゲーションとインタラクション](/pdf/ja/java/navigation-and-interaction/) - アクション、ブックマークを扱い、ページをナビゲートします。
-- [注釈](/pdf/ja/java/annotations/) - 注釈を使用してPDFページにカスタムコンテンツを追加できます。PDFドキュメントから注釈を追加、削除、修正することができます。
-- [アーティファクト](/pdf/ja/java/artifacts/) - PDF内の透かしやその他の特別なオブジェクトを扱います。
-- [アクセシビリティ。
- - [アクセシビリティタグ付きPDF](/pdf/ja/java/accessibility-tagged-pdf/) - タグ付けはPDFのアクセシビリティに不可欠です。Aspose.PDFはPDFにタグを追加し、論理的な読み順を確立し、構造とタイプを示す手段を提供します。
-- [添付ファイル](/pdf/ja/java/attachments/) - PDF文書にはファイルの添付が含まれる場合があります。これらの添付ファイルは他のPDF文書や、音声ファイル、Microsoft Office文書などのあらゆる種類のファイルである可能性があります。PDFに添付ファイルを追加する方法、添付ファイルの情報を取得してファイルに保存する方法、Javaを使用してプログラム的にPDFから添付ファイルを削除する方法を学びます。
-- [PDFのメタデータ](/pdf/ja/java/pdf-file-metadata/) - 文書内のメタデータを取得または設定し、XMPデータを処理します。
-- [セキュリティと署名](/pdf/ja/java/securing-and-signing/) - PDF文書をプログラム的に保護および署名します。
-- [文書の印刷](/pdf/ja/java/print-pdf-file/) - さまざまなタイプのアプリケーション（WinForms、WPFなど）でPDFを印刷します。
-- [オペレータ](/pdf/ja/java/operators/) - PDFで低レベルの操作を行います。
+- [ドキュメントの操作](/pdf/ja/java/working-with-documents/) - 文書の圧縮、分割、結合、およびその他の全体文書に対する操作を行います。
+- [ページの操作](/pdf/ja/java/working-with-pages/) - ページの追加、移動、削除、トリミング、および透かしやスタンプなどの追加を行います。
+- [画像の操作](/pdf/ja/java/working-with-images/) - PDF 文書から画像を追加、抽出、または削除します。
+- [添付ファイル](/pdf/ja/java/attachments/) - Python を使用して PDF に添付ファイルをプログラムで追加および削除する方法を学んでください。
+- [ナビゲーションとインタラクション](/pdf/ja/java/navigation-and-interaction/) - アクション、ブックマークの処理、ページのナビゲーションを行います。
+- [注釈](/pdf/ja/java/annotations/) - 注釈により、ユーザーは PDF ページにカスタムコンテンツを追加できます。PDF ドキュメントから注釈を追加、削除、変更できます。
+- [テーブルの操作](/pdf/ja/java/working-with-tables/) - PDF に表を挿入・装飾し、表形式データを抽出します。
+- [Form の操作](/pdf/ja/java/working-with-forms/) - インタラクティブな PDF ドキュメントを扱い、FormField を追加し、データを抽出します。
+- [Text の操作](/pdf/ja/java/working-with-text/) - PDF 内のテキストを追加・書式設定し、検索・置換します。
+- [PDF ドキュメントの比較](/pdf/ja/java/compare-pdf-documents/) - PDFドキュメントの内容を比較できます。
+- [PDF のメタデータ](/pdf/ja/java/pdf-file-metadata/) - ドキュメントのメタデータの取得・設定およびXMPデータの取り扱いが可能です。
+- [グラフの操作](/pdf/ja/java/working-with-graphs/) - ページ上のシェイプを操作できます。
+- [アーティファクト](/pdf/ja/java/artifacts/) - PDFのウォーターマークやその他の特殊オブジェクトを扱えます。
+- [PDF レイヤーの操作](/pdf/ja/java/working-with-pdf-layers/) - レイヤーのロック、要素の抽出、フラット化、およびPDFレイヤーのマージが可能です。
+- [保護と署名](/pdf/ja/java/securing-and-signing/) - プログラムでPDFドキュメントを保護・署名できます。
+- [ベクトルグラフィックスの操作](/pdf/ja/java/working-with-vector-graphics/) - PDF文書内のベクターグラフィックスを操作できます。
+- [ZUGFeRD の使用](/pdf/ja/java/working-with-zugferd/) - ZUGFeRD準拠のPDF文書を扱えます。
+- [PDFオペレーターの使用](/pdf/ja/java/working-with-operators/) - 高度なPDF操作のためにPDFオペレーターを使用できます。

@@ -1,48 +1,31 @@
----  
-title: PDFから画像を抽出する  
-linktitle: 画像を抽出  
-type: docs  
-weight: 20  
-url: /ja/java/extract-images-from-the-pdf-file/  
-description: Aspose.PDF for Javaを使用してPDFから画像の一部を抽出する方法  
-lastmod: "2021-06-05"  
-sitemap:  
-    changefreq: "weekly"  
-    priority: 0.7  
 ---
+title: "Java を使用した PDF からの画像抽出"
+linktitle: "PDF からの画像抽出"
+type: docs
+weight: 20
+url: /ja/java/extract-images-from-the-pdf-file/
+description: Aspose.PDF for Java を使用して PDF ファイルから埋め込み画像を抽出する方法を学びます。
+lastmod: "2026-10-06"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java を介した PDF からの画像抽出"
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF ドキュメントから埋め込み画像を抽出する方法を解説します。ソース PDF を開き、ページリソースコレクションから画像にアクセスし、抽出した XImage を外部ファイルに保存する手順を示します。
+---
+埋め込みグラフィックを再利用したり、ドキュメント資産を検査したり、下流処理のために画像をエクスポートしたりする必要がある場合に、PDF ページから画像を抽出します。
 
-PDFドキュメントの各ページには、リソース（画像、フォーム、フォント）が含まれています。これらのリソースには、[getResources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Page#getResources--) メソッドを呼び出すことでアクセスできます。クラス [Resources](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources) には [XImageCollection](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImageCollection) が含まれており、[getImages](https://reference.aspose.com/pdf/java/com.aspose.pdf/Resources#getImages--) メソッドを呼び出すことで画像のリストを取得できます。
-
-したがって、ページから画像を抽出するには、まずページの参照を取得し、次にページのリソース、最後に画像コレクションへの参照を取得する必要があります。特定の画像は、例えばインデックスで抽出できます。
-
-画像のインデックスは、[XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage) オブジェクトを返します。
-このオブジェクトは、抽出された画像を保存するために使用できる[Save](https://reference.aspose.com/pdf/java/com.aspose.pdf/XImage#save-java.io.OutputStream-)メソッドを提供します。次のコードスニペットは、PDFファイルから画像を抽出する方法を示しています。
+1. ソース PDF を [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) インスタンスで開き、抽出された画像ファイル用の出力ストリームを開いてください。
+1. 対象の [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) をドキュメントから取得し、その `Resources.Images` コレクションにアクセスしてください。
+1. 必要な [XImage](https://reference.aspose.com/pdf/java/com.aspose.pdf/ximage/) オブジェクトを、その画像コレクションからインデックスで取得してください。
+1. `image.save(outputImage)` を呼び出して、抽出された画像バイトをターゲットストリームに書き込んでください。
 
 ```java
-public static void Extract_Images(){
-        // ドキュメントディレクトリへのパス
-        String _dataDir = "/home/admin1/pdf-examples/Samples/";
-        String filePath = _dataDir + "ExtractImages.pdf";
-
-        // PDFドキュメントをロード
-        com.aspose.pdf.Document pdfDocument = new com.aspose.pdf.Document(filePath);
-
-        com.aspose.pdf.Page page = pdfDocument.getPages().get_Item(1);
-        com.aspose.pdf.XImageCollection xImageCollection = page.getResources().getImages();
-        // 特定の画像を抽出
-        com.aspose.pdf.XImage xImage = xImageCollection.get_Item(1);
-
-        try {
-            java.io.FileOutputStream outputImage = new java.io.FileOutputStream(_dataDir + "output.jpg");
-            // 出力画像を保存
-            xImage.save(outputImage);
-            outputImage.close();
-        } catch (java.io.FileNotFoundException e) {
-            // TODO: 例外を処理
-            e.printStackTrace();
-        } catch (java.io.IOException e) {
-            // TODO: 例外を処理
-            e.printStackTrace();
-        }
+public static void extractImage(Path inputFile, Path outputFile) throws Exception {
+    try (Document document = new Document(inputFile.toString());
+         OutputStream outputImage = Files.newOutputStream(outputFile)) {
+        XImage image = document.getPages().get_Item(1).getResources().getImages().get_Item(1);
+        image.save(outputImage);
     }
+}
 ```

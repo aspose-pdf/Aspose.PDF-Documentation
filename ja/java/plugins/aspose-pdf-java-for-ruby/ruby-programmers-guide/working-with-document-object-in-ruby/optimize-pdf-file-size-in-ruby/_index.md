@@ -1,53 +1,52 @@
 ---
-title: RubyでPDFファイルサイズを最適化
+title: "Ruby での PDF ファイルサイズの最適化"
+linktitle: "Ruby での PDF ファイルサイズの最適化"
 type: docs
 weight: 80
 url: /ja/java/optimize-pdf-file-size-in-ruby/
-lastmod: "2021-06-05"
+description: Aspose.PDF for Ruby を使用して、品質を損なうことなく PDF のファイルサイズを削減する方法を学びます。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - PDF ファイルサイズの最適化
 
-## Aspose.PDF - PDFファイルサイズの最適化
+**Aspose.PDF Java for Ruby** を使用して PDF ドキュメントのファイルサイズを最適化するには、**Optimize** モジュールの **optimize_filesize** メソッドを呼び出してください。
 
-**Aspose.PDF Java for Ruby**を使用してPDFドキュメントのファイルサイズを最適化するには、**Optimize**モジュールの**optimize_filesize**メソッドを呼び出します。
-
-Rubyコード
+Ruby コード
 
 ```java
-
  def optimize_filesize()
 
-    # ドキュメントディレクトリへのパス。
+В В В  # The path to the documents directory.
 
-    data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
+В В В  data_dir = File.dirname(File.dirname(File.dirname(File.dirname(__FILE__)))) + '/data/'
 
-    # PDFドキュメントを開く。
+В В В  # Open a pdf document.
 
-    doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
+В В В  doc = Rjb::import('com.aspose.pdf.Document').new(data_dir + "input1.pdf")
 
-    # 未使用オブジェクトを削除してファイルサイズを最適化
+В В В  # Optimize the file size by removing unused objects
 
-    opt = Rjb::import('aspose.document.OptimizationOptions').new
+В В В  opt = Rjb::import('aspose.document.OptimizationOptions').new
 
-    opt.setRemoveUnusedObjects(true)
+В В В  opt.setRemoveUnusedObjects(true)
 
-    opt.setRemoveUnusedStreams(true)
+В В В  opt.setRemoveUnusedStreams(true)
 
-    opt.setLinkDuplcateStreams(true)
+В В В  opt.setLinkDuplcateStreams(true)
 
-    doc.optimizeResources(opt)
+В В В  doc.optimizeResources(opt)
 
-    # 出力ドキュメントを保存
+В В В  # Save output document
 
-    doc.save(data_dir + "Optimized_Filesize.pdf")
+В В В  doc.save(data_dir + "Optimized_Filesize.pdf")
 
-    puts "最適化されたPDFファイルサイズ、出力ファイルを確認してください。"
+В В В  puts "Optimized PDF Filesize, please check output file."
 
-end 
+endВ
 ```
-
 
 ## 実行コードのダウンロード
 
-Download **PDFファイルサイズの最適化 (Aspose.PDF)** は、以下のいずれかのソーシャルコーディングサイトからダウンロードできます:
+ダウンロード **PDF ファイルサイズの最適化 (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれか：
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_Ruby/lib/asposepdfjava/Document/optimize.rb)

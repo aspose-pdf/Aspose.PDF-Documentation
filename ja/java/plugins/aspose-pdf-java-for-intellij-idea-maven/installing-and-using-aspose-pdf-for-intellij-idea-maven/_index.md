@@ -1,117 +1,119 @@
 ---
-title: Aspose.Pdf for IntelliJ IDEA - Maven のインストールと使用
+title: IntelliJ IDEA 用 Aspose.Pdf のインストールと使用 - Maven
+linktitle: IntelliJ IDEA 用 Aspose.Pdf のインストールと使用 - Maven
 type: docs
 weight: 10
 url: /ja/java/installing-and-using-aspose-pdf-for-intellij-idea-maven/
-lastmod: "2021-06-05"
+description: Java での効率的な PDF ドキュメント処理のために、Maven を使用して IntelliJ IDEA 用 Aspose.PDF をインストールおよび構成する手順をご紹介します。
+lastmod: "2026-10-06"
 ---
-
 ## インストール
 
-### IntelliJ IDEA (Maven) 用 Aspose.PDF Java のインストール方法
+### IntelliJ IDEA 用 Aspose.PDF Java のインストール方法 (Maven)
 
-以下の手順は、**IntelliJ IDEA (Maven) 用 Aspose.PDF Java** プラグインのインストール方法を説明しています。
+以下の手順では、**Aspose.PDF Java for IntelliJ IDEA (Maven)** プラグインのインストール方法を示します。
 
-このプラグインは IntelliJ IDEA の CE [公式プラグインウェブサイト](https://plugins.jetbrains.com/plugin/7974-aspose-pdf-java-for-intellij-idea-maven/) に **Aspose.PDF Java for IntelliJ IDEA Maven** としてリストされているため、手動でダウンロードしてディスクからインストールする必要はありませんが、IntelliJ IDEA にはこの追加オプションが存在します。
+このプラグインは IntelliJ IDEA の Community Edition に一覧表示されています。[公式プラグインウェブサイト](https://plugins.jetbrains.com/plugin/7974-aspose-pdf-java-for-intellij-idea-maven/)のプラグインリポジトリでは、**Aspose.PDF Java for IntelliJ IDEA Maven** として提供されているため、手動でダウンロードしてディスクからインストールする必要はありませんが、この追加オプションは IntelliJ IDEA でもまだ利用可能です。
 
-**IntelliJ IDEA (Maven) 用 Aspose.PDF Java** プラグインは、IntelliJ IDEA から簡単にインストールできます（手動ダウンロード不要）。インストールするには、以下の手順に従います。
+**Aspose.PDF Java for IntelliJ IDEA (Maven)** プラグインは **IntelliJ IDEA** 内から簡単にインストールできます（手動でダウンロードする必要はありません）。手順は次のとおりです。
 
-1. **File** メニューから **Settings** を選択します。
-2. **Plugins** をクリックし、IntelliJ IDEA のリポジトリを参照します。
+1. **File** メニューから **Settings** を選択してください。
+2. **Plugins** をクリックし、IntelliJ IDEA でリポジトリを参照してください。
 
 ![todo:image_alt_text](https://i.imgur.com/NDZtoKw.jpg)
 
-### Aspose.PDF Maven プロジェクトウィザード
+### Aspose.PDF Maven プロジェクト ウィザード
 
-**Aspose.PDF Maven Project** – IntelliJ IDEA において、[Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) を使用するための Aspose.PDF Maven ベースのプロジェクトを作成できるようにします。
+**Aspose.PDF Maven Project** вЂ“ IntelliJ IDEA にインポートすると、Aspose.PDF Maven ベースのプロジェクトを使用できるようになります [Aspose.PDF for Java API。](https://products.aspose.com/pdf/java/).
 
 ![todo:image_alt_text](https://i.imgur.com/hd2mYnW.jpg)
 
-### Aspose.PDF Example Wizard
+### Aspose.PDF サンプル ウィザード
 
-プロジェクト内で [Aspose.PDF for Java API を使用するためのサンプルソースコード](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) を作成するオプションは、インストール後に「新規」メニューに表示されます (右クリック -> 新規 **または** ファイル メニュー -> 新規)。
+インストール後は、プロジェクト内に [Aspose.PDF for Java API を使用するサンプル ソースコード](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) を作成するオプションが New メニューにも表示されます（プロジェクトウィンドウで右クリック > New、**または** File >
+New）
 
-Aspose.PDF Example
+Aspose.PDF 例
 
 ![todo:image_alt_text](https://i.imgur.com/l2oGUBW.jpg)
 
-## 使用方法
+## 使用
 
-### Aspose.PDF Maven Project Wizard
+### Aspose.PDF Maven プロジェクト ウィザード
 
-IntelliJ IDEA 内で [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) を使用するための Aspose.PDF Maven プロジェクトを作成するには、インターネット接続が必要です。
+Aspose.PDF を使用するための Maven プロジェクトを作成するには、[Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) を使用します。IntelliJ IDEA では、インターネット接続が必要です。
 
-次の手順に従ってください:
+次に、以下の手順に従ってください。
 
-1. **New Project** を選択します。
-2. **Aspose.PDF Maven Project** を選択します。
-3. **Next** をクリックします。
+1. **新しいプロジェクト** を選択してください。
+2. **Aspose.PDF Maven プロジェクト** を選択してください。
+3. **次へ** をクリックしてください。
 
 ![todo:image_alt_text](https://i.imgur.com/hd2mYnW.jpg)
 
-
-4. Mavenプロジェクトの**GroupId、ArtifactId**、バージョンを指定し、次へをクリックします。
+4. **GroupId, ArtifactId** と Version を指定してください
+Maven プロジェクト用に、次へをクリックしてください。
 
 ![todo:image_alt_text](https://i.imgur.com/aNlx0Qe.jpg)
 
-5. 「サンプル使用例のソースコードもダウンロードする」チェックボックスを選択すると、APIのサンプル使用例をダウンロードすることができます（上記のスナップショットに示されているように）。
+5. 「Also Download Examples Source Code」チェックボックスを選択すると、API のサンプル使用例をダウンロードできます（上記のスナップショットに示す通りです）。
 
-6. いつものJavaアプリケーションを作成するように、**プロジェクト名**と**場所**を指定します。
+6. **Project Name** と **Location** を、任意の Java アプリケーションを作成する場合と同様に入力してください。
 
 ![todo:image_alt_text](https://i.imgur.com/8VEeFun.jpg)
 
-7. **完了**をクリックします。
+7. **Finish** をクリックしてください。
 
-これにより、Aspose Cloud Maven Repositoryから[Aspose.PDF for Java API](https://products.aspose.com/pdf/java/)の最新のmaven依存関係リファレンスが取得され、pom.xmlに設定されます。「サンプル使用例のソースコードもダウンロードする」チェックボックスを選択している場合は、[Aspose.PDF for Java API GitHub Repository](https://goo.gl/cPAbJM)からサンプルのダウンロードも開始されます。
+これにより、Aspose Cloud Maven Repository から [Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) の最新の Maven 依存関係情報を取得し、`pom.xml` に設定します。
+「Also Download Examples Source Code」チェックボックスを選択している場合は、[Aspose.PDF for Java API GitHub リポジトリ](https://goo.gl/cPAbJM) のサンプルコードもダウンロードされます。
 
 ![todo:image_alt_text](https://i.imgur.com/bG2mdam.jpg)
 
 ![todo:image_alt_text](https://i.imgur.com/aNYhLl5.jpg)
 
-おめでとうございます！
- Aspose.PDF Mavenプロジェクトを作成して、[Aspose.PDF for Java API](https://products.aspose.com/pdf/java/)を使用しました。
+おめでとうございます！ Aspose.PDF Maven プロジェクトを正常に作成できました。[Aspose.PDF for Java API](https://products.aspose.com/pdf/java/) を使用する準備が整いました。
 
 ![todo:image_alt_text](https://i.imgur.com/UJlSbuM.jpg)
 
-作成されたAspose.PDF for Java API Mavenプロジェクトは、プロジェクトの要件に応じて変更する準備ができています。
+作成された Aspose.PDF for Java API Maven プロジェクトは、プロジェクトの要件に合わせて変更できる状態です。
 
-[Example Source Codes](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples)をダウンロードすることを選択した場合。
+ダウンロードを選択した場合、[サンプル ソースコード](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) を取得してください。
 
-### Aspose.PDF Examples Wizard
+### Aspose.PDF サンプルウィザード
 
-[Aspose.PDF Examples Wizard](https://goo.gl/cPAbJM)を使用してプロジェクトに[Example Source Codes](https://goo.gl/cPAbJM)をインポート/コピーするには、最初にAspose.PDF Maven Project Wizardで「Also Download Examples Source Code」を選択して、例をダウンロードする必要があります。
+**Aspose.PDF Examples Wizard** を使用して [サンプル ソースコード](https://goo.gl/cPAbJM) をプロジェクトにインポートまたはコピーするには、まず Aspose.PDF Maven Project Wizard で「Also Download Examples Source Code」を選択し、サンプルをダウンロードしてください。
 
-次に、IntelliJ IDEAで以下の手順に従ってください：
+次に、IntelliJ IDEA で以下の手順に従ってください。
 
-1. **File** > **New -** を選択します。以下に示します：
+1. 以下のように **File** > **New -** を選択してください。
 
 ![todo:image_alt_text](https://i.imgur.com/N8tT9Q0.jpg)
 
--または- プロジェクトウィンドウで**右クリック** => **New** - 以下に示します：
+または、プロジェクトウィンドウで **Right Click** => **New** を選択してください。
 
 ![todo:image_alt_text](https://i.imgur.com/aUBWkhp.jpg)
-2. メニューから **Aspose.PDF Example** オプションを選択します - 以下のように表示されます:
+
+2. メニューから **Aspose.PDF Example** オプションを選択してください。
 
 ![todo:image_alt_text](https://i.imgur.com/hvH2V0m.jpg)
 
-ウィザードは最新の [Aspose.PDF for Java API Examples](https://goo.gl/cPAbJM) を更新/チェックします
+ウィザードは最新の利用可能な [Aspose.PDF for Java APIのサンプル](https://goo.gl/cPAbJM) を更新/チェックします。
 
 ![todo:image_alt_text](https://i.imgur.com/5PZwsuq.jpg)
 
-3. **Aspose.PDF Examples wizard** ダイアログが表示され、プロジェクトに例を作成/コピーするための任意の例カテゴリを選択できます
-任意の例カテゴリを選択し、**Create** をクリックします:
+3. **Aspose.PDF Examples wizard** ダイアログが表示され、任意のサンプルカテゴリを選択して、サンプルをプロジェクトに作成またはコピーできます。
+任意のサンプルカテゴリを選択し、**Create** をクリックしてください。
 
 ![todo:image_alt_text](https://i.imgur.com/l2oGUBW.jpg)
 
-これにより、選択したカテゴリの例が **com.aspose.pdf.examples** パッケージの下にプロジェクトに作成/コピーされます。
-また、例の実行に必要なリソースは **src/main/resources** フォルダにコピーされます - 以下のように表示されます:
+これにより、選択したカテゴリのサンプルがプロジェクトの **com.aspose.pdf.examples** パッケージ配下に作成／コピーされます。
+また、例の実行に必要なリソースはすべて **src/main/resources** フォルダーにコピーされます。以下のように示されます。
 
 ![todo:image_alt_text](https://i.imgur.com/8GQL3Yb.jpg)
 
-おめでとうございます！以下を正常に実行しました:
+次の操作が正常に完了しました。
 
-1. Aspose.PDF Maven Project Wizard を使用して Aspose.PDF Maven プロジェクトを作成しました。
+1. Aspose.PDF Maven Project Wizard を使用して Aspose.PDF Maven Project を作成しました。
 
-2. あなたは [Aspose.PDF for Java API - 例のソースコード](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) をダウンロードしました。
-
-3. あなたは Aspose.PDF 例ウィザードを使用して、プロジェクトに例のソースコードを作成/コピーしました。
+2. [Aspose.PDF for Java API - サンプル ソースコード](https://github.com/aspose-pdf/Aspose.PDF-for-Java/tree/master/Examples) をダウンロードしました。
+3. Aspose.PDF Example Wizard を使用して、サンプルソースコードをプロジェクトに作成またはコピーしました。

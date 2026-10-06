@@ -1,34 +1,35 @@
 ---
-title: PDFファイルの末尾に空白ページを挿入する方法（PHP）
+title: "PHP での PDF ファイルの末尾に空白ページの挿入"
+linktitle: "PHP での PDF ファイルの末尾に空白ページの挿入"
 type: docs
 weight: 60
 url: /ja/java/insert-an-empty-page-at-end-of-pdf-file-in-php/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用してドキュメントを拡張する方法として、PHP で PDF ドキュメントの末尾に空白ページを挿入する方法を学びます。
+lastmod: "2026-10-06"
 ---
+## Aspose.PDF - PDF ファイルの末尾に空白ページの挿入
 
-## Aspose.PDF - PDFファイルの末尾に空白ページを挿入
+**Aspose.PDF Java for PHP** を使用して PDF ドキュメントの末尾に空白ページを挿入するには、**InsertEmptyPageAtEndOfFile** クラスを呼び出してください。
 
-**Aspose.PDF Java for PHP**を使用してPDFドキュメントの末尾に空白ページを挿入するには、**InsertEmptyPageAtEndOfFile**クラスを呼び出すだけです。
-
-PHPコード
+PHP コード
 
 ```php
 
-# 対象のドキュメントを開く
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# PDFに空白ページを挿入する
+# insert a empty page in a PDF
 $pdf->getPages()->add();
 
-# 結合された出力ファイル（対象のドキュメント）を保存
+# Save the concatenated output file (the target document)
 $pdf->save($dataDir . "output.pdf");
 
-print "空白ページが正常に追加されました！" . PHP_EOL;
+print "Empty page added successfully!" . PHP_EOL;
 
 ```
 
 ## 実行コードのダウンロード
 
-以下のいずれかのソーシャルコーディングサイトから、**PDFファイルの末尾に空白ページを挿入する (Aspose.PDF)** をダウンロードしてください：
+以下のいずれかのソーシャル コーディング サイトから **PDF ファイルの末尾に空のページを挿入 (Aspose.PDF)** をダウンロードしてください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/InsertEmptyPageAtEndOfFile.php)

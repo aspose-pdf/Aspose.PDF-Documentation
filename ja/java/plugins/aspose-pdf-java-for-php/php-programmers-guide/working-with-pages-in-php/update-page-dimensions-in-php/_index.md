@@ -1,41 +1,42 @@
 ---
-title: PHPでページ寸法を更新
+title: "PHP での ページ寸法の更新"
+linktitle: "PHP での ページ寸法の更新"
 type: docs
 weight: 90
 url: /ja/java/update-page-dimensions-in-php/
-lastmod: "2021-06-05"
+description: Aspose.PDF を使用して、PHP で PDF ドキュメント内のページ寸法を変更する方法を学び、レイアウト制御を向上させましょう。
+lastmod: "2026-10-06"
 ---
-
 ## Aspose.PDF - ページ寸法の更新
 
-**Aspose.PDF Java for PHP**を使用してページ寸法を更新するには、単に**UpdatePageDimensions**クラスを呼び出します。
+**Aspose.PDF Java for PHP** を使用してページ寸法を更新するには、単に **UpdatePageDimensions** クラスを呼び出してください。
 
-PHPコード
+PHP コード
 
 ```php
 
-# 対象のドキュメントを開く
+# Open the target document
 $pdf = new Document($dataDir . 'input1.pdf');
 
-# ページコレクションを取得
+# get page collection
 $page_collection = $pdf->getPages();
 
-# 特定のページを取得
+# get particular page
 $pdf_page = $page_collection->get_Item(1);
 
-# ページサイズをA4（11.7 x 8.3インチ）に設定し、Aspose.PDFでは1インチ=72ポイントなので
-# A4寸法はポイントで(842.4, 597.6)になります
+# set the page size as A4 (11.7 x 8.3 in) and in Aspose.PDF, 1 inch = 72 points
+# so A4 dimensions in points will be (842.4, 597.6)
 $pdf_page->setPageSize(597.6,842.4);
 
-# 新しく生成されたPDFファイルを保存
+# save the newly generated PDF file
 $pdf->save($dataDir . "output.pdf");
 
-print "寸法が正常に更新されました！" . PHP_EOL;
+print "Dimensions updated successfully!" . PHP_EOL;
 
 ```
 
-**コードの実行をダウンロード**
+**実行コードをダウンロード**
 
-以下のいずれかのソーシャルコーディングサイトから**Update Page Dimensions (Aspose.PDF)**をダウンロードしてください：
+ダウンロード **Update Page Dimensions (Aspose.PDF)** から、以下に記載されたソーシャルコーディングサイトのいずれかから取得してください。
 
 - [GitHub](https://github.com/aspose-pdf/Aspose.PDF-for-Java/blob/master/Plugins/Aspose_Pdf_Java_for_PHP/src/Aspose/Pdf/WorkingWithPages/UpdatePageDimensions.php)

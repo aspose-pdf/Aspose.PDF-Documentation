@@ -1,46 +1,45 @@
 ---
-title: PDF/3-A準拠のPDFを作成し、ZUGFeRD請求書をJavaで添付する
-linktitle: PDFにZUGFeRDを添付
+title: "Java での PDF/A-3A 準拠の PDF を作成し、ZUGFeRD 請求書の添付"
+linktitle: "PDF に ZUGFeRD の添付"
 type: docs
 weight: 10
 url: /ja/java/attach-zugferd/
-description: Aspose.PDF for JavaでZUGFeRDを使用してPDFドキュメントを生成する方法を学ぶ
-lastmod: "2024-01-18"
+description: "Java で ZUGFeRD 請求書 XML を PDF に添付し、PDF/A-3A に変換する方法を学びます。"
+lastmod: "2026-10-06"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: "Java での PDF 文書に ZUGFeRD 請求書 XML の添付"
+Abstract: この記事では、Aspose.PDF for Java を使用して PDF/A-3A 準拠の請求書ドキュメントを作成する方法を説明します。請求書 XML を埋め込みファイルとして添付し、MIME タイプと associated-file 関係を設定し、PDF を PDF/A-3A に変換し、最終的な ZUGFeRD 対応ドキュメントを保存する手順を網羅しています。
 ---
+ZUGFeRD スタイルのワークフローで請求書 XML を PDF 内にパッケージングする必要がある場合、`Document` および `FileSpecification` API を使用します。
 
-## PDFにZUGFeRDを添付
+## PDF に ZUGFeRD 請求書 XML の添付
 
-PDFにZUGFeRDを添付するために、次の手順をお勧めします：
-
-* 入力および出力PDFファイルがあるフォルダを指すパス変数を定義します。
-* 処理されるPDFファイルのパスを格納する文字列変数pathを定義します。`Paths.get`メソッドを使用してフルパスの部分を結合します。
-* try-with-resourcesステートメントを作成し、パス変数から作成されたDocumentオブジェクトがステートメントの終了後に自動的に閉じられることを保証します。Documentオブジェクトは、変更および保存されるPDFドキュメントを表します。
-
-* ZUGFeRD標準に準拠した請求書メタデータを含む別のファイルのパスと説明を提供して[FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/)オブジェクトを作成します。
-* ファイル仕様オブジェクトにプロパティを追加します。例えば、説明、MIMEタイプ、AFrelationshipなどです。AFrelationshipは、埋め込みファイルがPDFドキュメントとどのように関連しているかを示します。この場合、「Alternative」に設定されており、埋め込みファイルがPDFコンテンツの代替表現であることを意味します。
-* ファイル仕様オブジェクトをドキュメントの埋め込みファイルコレクションに追加します。ファイル名はZUGFeRD標準に従って指定する必要があります。例: "factor-x.xml"。
-* ドキュメントをPDF/A-3Uフォーマットに変換します。これは、電子ドキュメントの長期保存を保証するPDFのサブセットです。PDF/A-3Uは、PDFドキュメントに任意のフォーマットのファイルを埋め込むことを許可します。
-* 変換されたドキュメントを新しいPDFファイルとして保存します（例: "ZUGFeRD-res.pdf"）。
-* try-with-resourcesステートメントを閉じて、Documentオブジェクトを解放します。
+1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
+1. XML 請求書ファイル用に [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) を作成してください。
+1. 埋め込みファイルのメタデータ（MIME タイプおよび [AFRelationship](https://reference.aspose.com/pdf/java/com.aspose.pdf/afrelationship/)）を設定してください。
+1. 作成した [FileSpecification](https://reference.aspose.com/pdf/java/com.aspose.pdf/filespecification/) をドキュメントの埋め込みファイル コレクションへ追加してください。
+1. ドキュメントを [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/) `PDF_A_3A` に変換してください。
+1. 更新した PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を保存してください。
 
 ```java
-String _dataDir = "/home/aspose/pdf-examples/Samples/";
-String path = Paths.get(_dataDir, "ZUGFeRD", "ZUGFeRD-test.pdf").toString();
-try (Document document = new Document(path)) {
-    String description = "ZUGFeRD標準に準拠した請求書のメタデータ";
-    path = Paths.get(_dataDir, "ZUGFeRD", "factur-x.xml").toString();
-    FileSpecification fileSpecification = new FileSpecification(path.toString(), description);
-    fileSpecification.setMIMEType("text/xml");
-    fileSpecification.setAFRelationship(com.aspose.pdf.AFRelationship.Alternative);
+public static void attachInvoiceZugferdFormat(Path inputFile, Path invoiceFile, Path outputFile) {
+        try (Document document = new Document(inputFile.toString())) {
+            String description = "Invoice metadata conforming to ZUGFeRD standard";
+            FileSpecification fileSpecification = new FileSpecification(invoiceFile.toString(), description);
 
-    // ドキュメントの添付ファイルコレクションに添付ファイルを追加
-    document.getEmbeddedFiles().add(fileSpecification);
-    path = Paths.get(_dataDir, "ZUGFeRD", "log.xml").toString();
-    document.convert(path, PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
-    path = Paths.get(_dataDir, "ZUGFeRD", "ZUGFeRD-res.pdf").toString();
-    document.save(path);
-}
+            fileSpecification.setMIMEType("text/xml");
+            fileSpecification.setAFRelationship(AFRelationship.Alternative);
+
+            document.getEmbeddedFiles().add("factur", fileSpecification);
+
+            String outputFileName = outputFile.toString();
+            String logPath = outputFileName.replace(".pdf", "_log.xml");
+            document.convert(logPath, PdfFormat.PDF_A_3A, ConvertErrorAction.Delete);
+            document.save(outputFile.toString());
+        }
+        System.out.println("ZUGFeRD invoice attached to " + outputFile);
+    }
 ```
