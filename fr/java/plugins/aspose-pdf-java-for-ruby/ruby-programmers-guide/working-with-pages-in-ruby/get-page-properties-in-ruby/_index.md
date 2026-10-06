@@ -3,7 +3,7 @@ title: Obtenir les propriétés de la page en Ruby
 linktitle: Obtenir les propriétés de la page en Ruby
 type: docs
 weight: 50
-url: /java/get-page-properties-in-ruby/
+url: /fr/java/get-page-properties-in-ruby/
 description: Découvrez comment récupérer les propriétés d'une page dans un fichier PDF à l'aide de Ruby avec Aspose.PDF pour gérer et manipuler efficacement vos documents.
 lastmod: "2026-09-21"
 ---

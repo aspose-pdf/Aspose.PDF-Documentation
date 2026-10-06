@@ -3,7 +3,7 @@ title: Ajouter une table des matières au PDF existant en PHP
 linktitle: Ajouter une table des matières au PDF existant en PHP
 type: docs
 weight: 20
-url: /java/add-toc-to-existing-pdf-in-php/
+url: /fr/java/add-toc-to-existing-pdf-in-php/
 description: Découvrez comment ajouter une table des matières (TOC) à un document PDF existant en PHP avec Aspose.PDF pour une navigation améliorée.
 lastmod: "2026-09-21"
 ---

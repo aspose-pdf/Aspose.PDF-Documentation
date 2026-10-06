@@ -3,7 +3,7 @@ title: Extraire des données vectorielles à partir d'un fichier PDF à l'aide d
 linktitle: Extraire les données vectorielles d'un PDF
 type: docs
 weight: 80
-url: /java/extract-vector-data-from-pdf/
+url: /fr/java/extract-vector-data-from-pdf/
 description: Aspose.PDF facilite l'extraction de données vectorielles à partir d'un fichier PDF. Vous pouvez obtenir les données vectorielles, telles que la position, les limites du rectangle et la sortie SVG.
 lastmod: "2026-09-22"
 sitemap:

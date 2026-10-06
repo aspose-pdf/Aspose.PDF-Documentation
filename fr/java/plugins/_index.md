@@ -3,7 +3,7 @@ title: Plugins Java
 linktitle: Plugins Java
 type: docs
 weight: 100
-url: /java/plugins/
+url: /fr/java/plugins/
 description: Améliorez Aspose.PDF for Java avec des plugins. Découvrez comment étendre les capacités de traitement des PDF à l'aide d'outils et d'intégrations supplémentaires.
 lastmod: "2026-09-21"
 sitemap:

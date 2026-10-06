@@ -3,7 +3,7 @@ title: Diviser un fichier PDF en pages individuelles en Ruby
 linktitle: Diviser un fichier PDF en pages individuelles en Ruby
 type: docs
 weight: 80
-url: /java/split-pdf-file-into-individual-pages-in-ruby/
+url: /fr/java/split-pdf-file-into-individual-pages-in-ruby/
 description: Comprenez comment diviser un fichier PDF en pages individuelles avec Ruby et Aspose.PDF, facilitant ainsi la gestion et l'extraction du contenu.
 lastmod: "2026-09-21"
 ---

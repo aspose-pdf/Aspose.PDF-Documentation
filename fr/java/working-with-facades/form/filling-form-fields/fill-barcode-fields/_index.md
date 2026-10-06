@@ -3,7 +3,7 @@ title: Remplir les champs du code-barres
 linktitle: Remplir les champs du code-barres
 type: docs
 weight: 50
-url: /java/fill-barcode-fields/
+url: /fr/java/fill-barcode-fields/
 description: Découvrez comment remplir un champ de formulaire de code-barres en Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

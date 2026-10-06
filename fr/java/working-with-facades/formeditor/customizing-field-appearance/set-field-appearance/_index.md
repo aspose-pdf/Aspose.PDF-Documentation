@@ -3,7 +3,7 @@ title: Définir l'apparence du champ
 linktitle: Définir l'apparence du champ
 type: docs
 weight: 40
-url: /java/set-field-appearance/
+url: /fr/java/set-field-appearance/
 description: Découvrez comment modifier les indicateurs d'apparence visuelle d'un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

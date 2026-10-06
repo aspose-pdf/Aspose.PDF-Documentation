@@ -3,7 +3,7 @@ title: Concaténer plusieurs fichiers PDF
 linktitle: Concaténer plusieurs fichiers PDF
 type: docs
 weight: 20
-url: /java/concatenate-pdf-files/
+url: /fr/java/concatenate-pdf-files/
 description: Fusionnez des fichiers PDF en Java avec le flux de travail de concaténation PdfFileEditor basé sur un tableau.
 lastmod: "2026-09-22"
 sitemap:

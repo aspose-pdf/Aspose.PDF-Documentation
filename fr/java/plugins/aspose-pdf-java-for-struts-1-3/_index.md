@@ -3,7 +3,7 @@ title: Aspose.PDF Java pour Struts 1.3
 linktitle: Aspose.PDF Java pour Struts 1.3
 type: docs
 weight: 10
-url: /java/aspose-pdf-java-for-struts-1-3/
+url: /fr/java/aspose-pdf-java-for-struts-1-3/
 description: Intégrez Aspose.PDF for Java avec Struts 1.3. Simplifiez la création et la gestion de PDF au sein de vos applications Struts.
 lastmod: "2026-09-21"
 ---

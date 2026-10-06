@@ -3,7 +3,7 @@ title: Créer un document PDF N-Up
 linktitle: Créer un document PDF N-Up
 type: docs
 weight: 10
-url: /java/create-n-up-pdf-document/
+url: /fr/java/create-n-up-pdf-document/
 description: Créez une mise en page PDF 2x2 N-Up en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

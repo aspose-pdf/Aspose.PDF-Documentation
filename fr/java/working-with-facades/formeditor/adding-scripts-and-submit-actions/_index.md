@@ -3,7 +3,7 @@ title: Ajout de scripts et d'actions de soumission
 linktitle: Ajout de scripts et d'actions de soumission
 type: docs
 weight: 40
-url: /java/adding-scripts-and-submit-actions/
+url: /fr/java/adding-scripts-and-submit-actions/
 description: Découvrez comment ajouter des scripts, configurer des URL de soumission et supprimer des actions de champ dans les formulaires PDF à l'aide de la façade FormEditor en Java.
 lastmod: "2026-09-22"
 TechArticle: true

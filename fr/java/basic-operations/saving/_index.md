@@ -3,7 +3,7 @@ title: Enregistrer le document PDF par programme
 linktitle: Enregistrer le PDF
 type: docs
 weight: 30
-url: /java/save-pdf-document/
+url: /fr/java/save-pdf-document/
 description: Découvrez comment enregistrer des documents PDF en Java dans un fichier, dans un flux ou en tant que standard PDF à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 sitemap:

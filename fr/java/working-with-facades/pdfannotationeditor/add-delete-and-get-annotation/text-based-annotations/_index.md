@@ -3,7 +3,7 @@ title: Annotations basées sur du texte utilisant Java
 linktitle: Annotations de texte
 type: docs
 weight: 10
-url: /java/pdfannotationeditor-class/text-based-annotations/
+url: /fr/java/pdfannotationeditor-class/text-based-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer du texte, du texte libre et des annotations barrées dans des documents PDF à l'aide de Java.
 lastmod: "2026-09-22"
 TechArticle: true

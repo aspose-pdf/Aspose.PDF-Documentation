@@ -3,7 +3,7 @@ title: Installer la bibliothèque
 linktitle: Installation
 type: docs
 weight: 40
-url: /java/installation/
+url: /fr/java/installation/
 description: Découvrez comment installer Aspose.PDF for Java dans un projet Maven et configurer ses dépendances.
 lastmod: "2026-09-21"
 sitemap:

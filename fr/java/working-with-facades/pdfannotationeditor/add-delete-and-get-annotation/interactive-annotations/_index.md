@@ -3,7 +3,7 @@ title: Annotations interactives utilisant Java
 linktitle: Annotations interactives
 type: docs
 weight: 30
-url: /java/pdfannotationeditor-class/interactive-annotations/
+url: /fr/java/pdfannotationeditor-class/interactive-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations de lien dans des documents PDF à l'aide de Java.
 lastmod: "2026-09-22"
 TechArticle: true

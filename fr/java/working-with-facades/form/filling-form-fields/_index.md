@@ -3,7 +3,7 @@ title: Remplissage des champs du formulaire
 linktitle: Remplissage des champs du formulaire
 type: docs
 weight: 30
-url: /java/filling-form-fields/
+url: /fr/java/filling-form-fields/
 description: Découvrez comment remplir les champs d'un formulaire PDF en Java à l'aide de la façade Form dans Aspose.PDF, y compris les champs de texte, de case à cocher, de bouton radio, de zone de liste et de code-barres.
 lastmod: "2026-09-22"
 TechArticle: true

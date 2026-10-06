@@ -3,7 +3,7 @@ title: Guide des programmeurs Jython
 linktitle: Guide des programmeurs Jython
 type: docs
 weight: 10
-url: /java/jython-programmers-guide/
+url: /fr/java/jython-programmers-guide/
 description: Démarrez avec la programmation Jython pour Aspose.PDF en apprenant les principales fonctionnalités et méthodes de gestion des fichiers PDF en Jython.
 lastmod: "2026-09-21"
 ---

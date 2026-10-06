@@ -3,7 +3,7 @@ title: Supprimer les pièces jointes
 linktitle: Supprimer les pièces jointes
 type: docs
 weight: 50
-url: /java/remove-attachments/
+url: /fr/java/remove-attachments/
 description: Découvrez comment supprimer toutes les pièces jointes d'un document PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

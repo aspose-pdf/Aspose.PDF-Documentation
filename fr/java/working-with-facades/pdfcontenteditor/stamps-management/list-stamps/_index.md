@@ -3,7 +3,7 @@ title: Répertorier les tampons
 linktitle: Répertorier les tampons
 type: docs
 weight: 20
-url: /java/list-stamps/
+url: /fr/java/list-stamps/
 description: Découvrez comment répertorier les annotations de tampon sur une page en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

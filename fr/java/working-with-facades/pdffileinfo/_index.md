@@ -3,7 +3,7 @@ title: Classe PdfFileInfo
 linktitle: Classe PdfFileInfo
 type: docs
 weight: 110
-url: /java/pdffileinfo-class/
+url: /fr/java/pdffileinfo-class/
 description: Découvrez comment utiliser la façade PdfFileInfo en Java pour inspecter les métadonnées PDF, les propriétés du document, les privilèges, les détails de la version et les informations sur la page.
 lastmod: "2026-09-22"
 draft: false

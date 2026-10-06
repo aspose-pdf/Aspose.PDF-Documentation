@@ -3,7 +3,7 @@ title: Ajouter des calques au fichier PDF en Ruby
 linktitle: Ajouter des calques au fichier PDF en Ruby
 type: docs
 weight: 20
-url: /java/add-layers-to-pdf-file-in-ruby/
+url: /fr/java/add-layers-to-pdf-file-in-ruby/
 description: Découvrez comment ajouter des calques à un fichier PDF en Ruby à l'aide d'Aspose.PDF pour une meilleure structure du document et un meilleur contrôle de la visibilité.
 lastmod: "2026-09-21"
 ---

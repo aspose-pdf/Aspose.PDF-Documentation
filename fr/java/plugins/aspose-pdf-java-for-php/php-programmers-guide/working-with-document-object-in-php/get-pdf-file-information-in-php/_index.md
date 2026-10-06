@@ -3,7 +3,7 @@ title: Obtenir des informations sur un fichier PDF en PHP
 linktitle: Obtenir des informations sur un fichier PDF en PHP
 type: docs
 weight: 40
-url: /java/get-pdf-file-information-in-php/
+url: /fr/java/get-pdf-file-information-in-php/
 description: Découvrez comment récupérer des informations détaillées sur un fichier PDF, y compris les métadonnées et les propriétés, en PHP avec Aspose.PDF.
 lastmod: "2026-09-21"
 ---

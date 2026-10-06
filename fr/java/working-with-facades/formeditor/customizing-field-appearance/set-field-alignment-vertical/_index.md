@@ -3,7 +3,7 @@ title: Définir l’alignement vertical du champ
 linktitle: Définir l’alignement vertical du champ
 type: docs
 weight: 30
-url: /java/set-field-alignment-vertical/
+url: /fr/java/set-field-alignment-vertical/
 description: Découvrez comment définir l'alignement vertical d'un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

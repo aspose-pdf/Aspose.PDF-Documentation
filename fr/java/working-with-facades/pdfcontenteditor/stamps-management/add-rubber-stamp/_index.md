@@ -3,7 +3,7 @@ title: Ajouter une annotation de tampon
 linktitle: Ajouter une annotation de tampon
 type: docs
 weight: 10
-url: /java/add-rubber-stamp/
+url: /fr/java/add-rubber-stamp/
 description: Découvrez comment ajouter une annotation de tampon à un document PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

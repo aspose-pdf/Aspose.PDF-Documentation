@@ -3,7 +3,7 @@ title: Gestion des droits d'utilisation
 linktitle: Gestion des droits d'utilisation
 type: docs
 weight: 100
-url: /java/usage-rights-management/
+url: /fr/java/usage-rights-management/
 description: Passez en revue la couverture Java actuelle pour la gestion des droits d'utilisation des PDF avec PdfFileSignature.
 lastmod: "2026-09-22"
 draft: false

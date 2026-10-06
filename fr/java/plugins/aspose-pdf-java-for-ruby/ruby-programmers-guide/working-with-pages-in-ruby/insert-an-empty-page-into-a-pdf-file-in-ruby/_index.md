@@ -3,7 +3,7 @@ title: Insérer une page vide dans un fichier PDF en Ruby
 linktitle: Insérer une page vide dans un fichier PDF en Ruby
 type: docs
 weight: 70
-url: /java/insert-an-empty-page-into-a-pdf-file-in-ruby/
+url: /fr/java/insert-an-empty-page-into-a-pdf-file-in-ruby/
 description: Découvrez comment insérer une page vide dans un emplacement spécifique d'un document PDF à l'aide de Ruby et Aspose.PDF pour une gestion précise des documents.
 lastmod: "2026-09-21"
 ---

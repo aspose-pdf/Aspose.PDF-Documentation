@@ -3,7 +3,7 @@ title: Convertir un champ monoligne en champ multiligne
 linktitle: Convertir un champ monoligne en champ multiligne
 type: docs
 weight: 60
-url: /java/single-to-multiple/
+url: /fr/java/single-to-multiple/
 description: Découvrez comment convertir un champ de texte sur une seule ligne en un champ multiligne dans un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

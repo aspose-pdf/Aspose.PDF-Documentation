@@ -3,7 +3,7 @@ title: Travailler avec un objet document en Python
 linktitle: Travailler avec un objet document en Python
 type: docs
 weight: 20
-url: /java/working-with-document-object-in-python/
+url: /fr/java/working-with-document-object-in-python/
 description: Apprenez à travailler avec des objets de document PDF en Python à l'aide d'Aspose.PDF, vous permettant de manipuler et de traiter efficacement des fichiers PDF.
 lastmod: "2026-09-21"
 ---

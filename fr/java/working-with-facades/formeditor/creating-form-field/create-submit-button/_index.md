@@ -3,7 +3,7 @@ title: Créer un bouton de soumission
 linktitle: Créer un bouton de soumission
 type: docs
 weight: 60
-url: /java/create-submit-button/
+url: /fr/java/create-submit-button/
 description: Découvrez comment ajouter un bouton de soumission à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

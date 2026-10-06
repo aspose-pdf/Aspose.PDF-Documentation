@@ -3,7 +3,7 @@ title: Ajouter une chaîne HTML en utilisant DOM en Ruby
 linktitle: Ajouter une chaîne HTML en utilisant DOM en Ruby
 type: docs
 weight: 10
-url: /java/add-html-string-using-dom-in-ruby/
+url: /fr/java/add-html-string-using-dom-in-ruby/
 description: Découvrez comment ajouter une chaîne HTML à un document PDF à l'aide de l'API DOM en Ruby avec Aspose.PDF pour la génération de contenu dynamique.
 lastmod: "2026-09-21"
 ---

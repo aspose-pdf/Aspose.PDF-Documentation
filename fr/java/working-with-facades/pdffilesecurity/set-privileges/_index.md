@@ -3,7 +3,7 @@ title: Définir des privilèges sur un fichier PDF existant
 linktitle: Définir des privilèges sur un fichier PDF existant
 type: docs
 weight: 40
-url: /java/set-privileges/
+url: /fr/java/set-privileges/
 description: Découvrez comment définir les privilèges PDF en Java avec la façade PdfFileSecurity.
 lastmod: "2026-09-22"
 draft: false

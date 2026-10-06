@@ -3,7 +3,7 @@ title: Améliorer l’extraction de texte à partir de PDF multicolonnes
 linktitle: Extraction de texte à partir de PDF multicolonnes
 type: docs
 weight: 30
-url: /java/text-extraction-from-multi-column-pdf/
+url: /fr/java/text-extraction-from-multi-column-pdf/
 description: Apprenez des techniques pour améliorer l'extraction de texte à partir de mises en page PDF multicolonnes avec Aspose.PDF for Java.
 lastmod: "2026-09-22"
 sitemap:

@@ -3,7 +3,7 @@ title: Téléchargements et configuration d'Aspose.PDF dans Struts 1.3
 linktitle: Téléchargements et configuration d'Aspose.PDF dans Struts 1.3
 type: docs
 weight: 10
-url: /java/downloads-and-configure-aspose-pdf-in-struts-1-3/
+url: /fr/java/downloads-and-configure-aspose-pdf-in-struts-1-3/
 description: Configurez Aspose.PDF for Java dans les projets Struts 1.3. Améliorez les capacités PDF de votre application.
 lastmod: "2026-09-21"
 ---

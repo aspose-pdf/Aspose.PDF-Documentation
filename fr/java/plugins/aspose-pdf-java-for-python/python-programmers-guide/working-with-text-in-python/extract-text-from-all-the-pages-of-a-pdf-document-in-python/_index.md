@@ -3,7 +3,7 @@ title: Extraire le texte de toutes les pages d'un document PDF en Python
 linktitle: Extraire le texte de toutes les pages d'un document PDF en Python
 type: docs
 weight: 30
-url: /java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
+url: /fr/java/extract-text-from-all-the-pages-of-a-pdf-document-in-python/
 lastmod: "2026-09-21"
 description: Explique comment extraire le texte des pages PDF en Python à l'aide de l'API du format de fichier PDF.
 ---

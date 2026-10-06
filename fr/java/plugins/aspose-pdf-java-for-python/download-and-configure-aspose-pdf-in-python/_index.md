@@ -3,7 +3,7 @@ title: Télécharger et configurer Aspose.PDF en Python
 linktitle: Télécharger et configurer Aspose.PDF en Python
 type: docs
 weight: 10
-url: /java/download-and-configure-aspose-pdf-in-python/
+url: /fr/java/download-and-configure-aspose-pdf-in-python/
 description: Découvrez comment télécharger et configurer Aspose.PDF pour Python pour commencer à traiter et manipuler des fichiers PDF dans votre environnement Python.
 lastmod: "2026-09-21"
 sitemap:

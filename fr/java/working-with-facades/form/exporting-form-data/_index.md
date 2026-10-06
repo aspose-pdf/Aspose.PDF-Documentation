@@ -3,7 +3,7 @@ title: Exportation des données du formulaire
 linktitle: Exportation des données du formulaire
 type: docs
 weight: 10
-url: /java/exporting-form-data/
+url: /fr/java/exporting-form-data/
 description: Découvrez comment exporter des données de formulaire PDF en Java avec la façade Form dans Aspose.PDF, y compris les flux de travail de sortie XML, FDF et XFDF.
 lastmod: "2026-09-22"
 TechArticle: true

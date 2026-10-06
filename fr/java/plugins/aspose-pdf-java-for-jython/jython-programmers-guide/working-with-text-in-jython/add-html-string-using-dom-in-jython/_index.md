@@ -3,7 +3,7 @@ title: Ajouter une chaîne HTML en utilisant DOM en Jython
 linktitle: Ajouter une chaîne HTML en utilisant DOM en Jython
 type: docs
 weight: 10
-url: /java/add-html-string-using-dom-in-jython/
+url: /fr/java/add-html-string-using-dom-in-jython/
 description: Découvrez comment ajouter du contenu HTML à un document PDF à l'aide du DOM en Jython avec Aspose.PDF pour la création de documents riches.
 lastmod: "2026-09-21"
 ---

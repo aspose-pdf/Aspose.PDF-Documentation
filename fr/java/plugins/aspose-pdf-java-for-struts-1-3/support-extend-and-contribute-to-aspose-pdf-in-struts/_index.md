@@ -3,7 +3,7 @@ title: Assistance et contributions à Aspose.PDF dans Struts
 linktitle: Assistance et contributions à Aspose.PDF dans Struts
 type: docs
 weight: 20
-url: /java/support-extend-and-contribute-to-aspose-pdf-in-struts/
+url: /fr/java/support-extend-and-contribute-to-aspose-pdf-in-struts/
 description: Découvrez comment prendre en charge, étendre et contribuer à Aspose.PDF for Java dans des projets basés sur Struts.
 lastmod: "2026-09-21"
 ---

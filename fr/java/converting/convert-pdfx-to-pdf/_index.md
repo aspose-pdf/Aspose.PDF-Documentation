@@ -3,7 +3,7 @@ title: Convertir PDF/A et PDF/UA en PDF en Java
 linktitle: Convertir PDF/A et PDF/UA en PDF
 type: docs
 weight: 120
-url: /java/convert-pdf_x-to-pdf/
+url: /fr/java/convert-pdf_x-to-pdf/
 lastmod: "2026-09-21"
 description: Découvrez comment supprimer la conformité PDF/A et PDF/UA des fichiers PDF basés sur des normes en Java et les enregistrer en tant que documents PDF standard.
 sitemap:

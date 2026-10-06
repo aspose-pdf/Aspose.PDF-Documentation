@@ -3,7 +3,7 @@ title: Fusionner des fichiers PDF en Java
 linktitle: Fusionner des fichiers PDF
 type: docs
 weight: 50
-url: /java/merge-pdf/
+url: /fr/java/merge-pdf/
 description: Découvrez comment fusionner plusieurs fichiers PDF en un seul document en Java à l'aide d'Aspose.PDF.
 lastmod: "2026-09-21"
 sitemap:

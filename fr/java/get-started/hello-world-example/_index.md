@@ -3,7 +3,7 @@ title: Exemple Hello World en Java
 linktitle: Exemple Hello World
 type: docs
 weight: 20
-url: /java/hello-world-example/
+url: /fr/java/hello-world-example/
 description: Cet exemple montre comment créer un document PDF simple avec le texte Hello World mis en forme à l'aide d'Aspose.PDF for Java.
 lastmod: "2026-09-21"
 sitemap:

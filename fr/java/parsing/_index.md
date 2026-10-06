@@ -3,7 +3,7 @@ title: Analyser des documents PDF
 linktitle: Analyser des documents PDF
 type: docs
 weight: 80
-url: /java/parsing/
+url: /fr/java/parsing/
 description: Découvrez les méthodes d'analyse PDF et d'extraction de données en Java avec Aspose.PDF, y compris le texte, les images, les polices, les données de formulaire, les tableaux et les graphiques vectoriels.
 lastmod: "2026-09-22"
 sitemap:

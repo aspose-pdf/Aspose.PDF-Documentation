@@ -3,7 +3,7 @@ title: Obtenir une page particulière dans un fichier PDF en PHP
 linktitle: Obtenir une page particulière dans un fichier PDF en PHP
 type: docs
 weight: 30
-url: /java/get-a-particular-page-in-a-pdf-file-in-php/
+url: /fr/java/get-a-particular-page-in-a-pdf-file-in-php/
 description: Découvrez comment récupérer une page particulière d'un fichier PDF en PHP en utilisant Aspose.PDF pour un traitement de page ciblé.
 lastmod: "2026-09-21"
 ---

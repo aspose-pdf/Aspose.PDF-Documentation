@@ -3,7 +3,7 @@ title: Définir l'expiration du PDF en Jython
 linktitle: Définir l'expiration du PDF en Jython
 type: docs
 weight: 60
-url: /java/set-pdf-expiration-in-jython/
+url: /fr/java/set-pdf-expiration-in-jython/
 description: Découvrez comment définir une date d'expiration pour un document PDF en Jython, en contrôlant l'accès et la sécurité des documents.
 lastmod: "2026-09-21"
 ---

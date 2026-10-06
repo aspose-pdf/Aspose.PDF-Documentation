@@ -3,7 +3,7 @@ title: Ajouter du JavaScript à l'aide de DOM en Jython
 linktitle: Ajouter du JavaScript à l'aide de DOM en Jython
 type: docs
 weight: 10
-url: /java/adding-javascript-using-dom-in-jython/
+url: /fr/java/adding-javascript-using-dom-in-jython/
 description: Découvrez comment ajouter du JavaScript à un document PDF à l'aide du DOM en Jython, améliorant ainsi l'interactivité au sein du document.
 lastmod: "2026-09-21"
 ---

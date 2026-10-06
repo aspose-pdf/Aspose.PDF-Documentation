@@ -3,7 +3,7 @@ title: Ajouter du texte à un fichier PDF existant en Jython
 linktitle: Ajouter du texte à un fichier PDF existant en Jython
 type: docs
 weight: 20
-url: /java/add-text-to-an-existing-pdf-file-in-jython/
+url: /fr/java/add-text-to-an-existing-pdf-file-in-jython/
 description: Découvrez comment ajouter un nouveau texte à un document PDF existant à l'aide de Jython et Aspose.PDF pour améliorer le contenu.
 lastmod: "2026-09-21"
 ---

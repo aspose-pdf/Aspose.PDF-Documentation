@@ -3,7 +3,7 @@ title: Définir le nombre de cases du champ
 linktitle: Définir le nombre de cases du champ
 type: docs
 weight: 60
-url: /java/set-field-comb-number/
+url: /fr/java/set-field-comb-number/
 description: Découvrez comment définir le nombre de cases pour un champ de formulaire PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

@@ -3,7 +3,7 @@ title: Travailler avec des pages en Ruby
 linktitle: Travailler avec des pages en Ruby
 type: docs
 weight: 20
-url: /java/working-with-pages-in-ruby/
+url: /fr/java/working-with-pages-in-ruby/
 description: Ajoutez, supprimez ou manipulez des pages dans des PDF par programmation avec Aspose.PDF pour Ruby.
 lastmod: "2026-09-21"
 ---

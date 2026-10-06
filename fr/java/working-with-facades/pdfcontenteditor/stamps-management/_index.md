@@ -3,7 +3,7 @@ title: Gestion des tampons
 linktitle: Gestion des tampons
 type: docs
 weight: 80
-url: /java/pdfcontenteditor-stamps-management/
+url: /fr/java/pdfcontenteditor-stamps-management/
 description: Découvrez la couverture actuelle des tampons disponibles dans la façade Java PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

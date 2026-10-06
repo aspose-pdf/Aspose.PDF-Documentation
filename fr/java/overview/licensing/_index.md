@@ -3,7 +3,7 @@ title: Licences et limitations
 linktitle: Licences et limites
 type: docs
 weight: 50
-url: /java/licensing/
+url: /fr/java/licensing/
 description: Découvrez les limites de la version d’évaluation et comment appliquer une licence classique ou à la consommation dans Aspose.PDF for Java.
 lastmod: "2026-09-21"
 sitemap:

@@ -3,7 +3,7 @@ title: Annotations en filigrane utilisant Java
 linktitle: Annotations en filigrane
 type: docs
 weight: 70
-url: /java/pdfannotationeditor-class/watermark-annotations/
+url: /fr/java/pdfannotationeditor-class/watermark-annotations/
 description: Découvrez comment ajouter, inspecter et supprimer des annotations en filigrane dans des documents PDF à l'aide de Java.
 lastmod: "2026-09-22"
 TechArticle: true

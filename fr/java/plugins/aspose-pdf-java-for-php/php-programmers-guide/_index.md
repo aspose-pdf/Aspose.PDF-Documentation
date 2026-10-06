@@ -3,7 +3,7 @@ title: Guide des programmeurs PHP
 linktitle: Guide des programmeurs PHP
 type: docs
 weight: 20
-url: /java/php-programmers-guide/
+url: /fr/java/php-programmers-guide/
 description: Découvrez le Guide du programmeur PHP pour Aspose.PDF, proposant une approche étape par étape de la gestion des documents PDF en PHP.
 lastmod: "2026-09-21"
 ---

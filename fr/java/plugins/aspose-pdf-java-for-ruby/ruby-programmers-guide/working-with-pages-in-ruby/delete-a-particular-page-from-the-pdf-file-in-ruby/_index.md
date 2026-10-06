@@ -3,7 +3,7 @@ title: Supprimer une page particulière du fichier PDF en Ruby
 linktitle: Supprimer une page particulière du fichier PDF en Ruby
 type: docs
 weight: 20
-url: /java/delete-a-particular-page-from-the-pdf-file-in-ruby/
+url: /fr/java/delete-a-particular-page-from-the-pdf-file-in-ruby/
 description: Supprimez des pages spécifiques des fichiers PDF par programme à l'aide d'Aspose.PDF pour Ruby.
 lastmod: "2026-09-21"
 ---

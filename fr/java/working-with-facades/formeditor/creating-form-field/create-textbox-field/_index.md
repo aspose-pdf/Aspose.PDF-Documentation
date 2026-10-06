@@ -3,7 +3,7 @@ title: Créer un champ de texte
 linktitle: Créer un champ de texte
 type: docs
 weight: 10
-url: /java/create-textbox-field/
+url: /fr/java/create-textbox-field/
 description: Découvrez comment ajouter des champs de zone de texte à un document PDF en Java à l'aide de la façade FormEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

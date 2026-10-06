@@ -3,7 +3,7 @@ title: Ajouter du JavaScript en PHP
 linktitle: Ajouter du JavaScript en PHP
 type: docs
 weight: 10
-url: /java/adding-javascript-in-php/
+url: /fr/java/adding-javascript-in-php/
 description: Découvrez comment ajouter du JavaScript aux fichiers PDF à l'aide de PHP et Aspose.PDF pour améliorer l'interactivité des documents.
 lastmod: "2026-09-21"
 ---

@@ -3,7 +3,7 @@ title: Remplacer du texte
 linktitle: Remplacer du texte
 type: docs
 weight: 10
-url: /java/replace-text-simple/
+url: /fr/java/replace-text-simple/
 description: Découvrez comment remplacer du texte dans un document PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

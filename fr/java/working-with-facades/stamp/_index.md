@@ -3,7 +3,7 @@ title: Classe Stamp
 linktitle: Classe Stamp
 type: docs
 weight: 150
-url: /java/stamp-class/
+url: /fr/java/stamp-class/
 description: Découvrez comment utiliser la classe Stamp en Java pour ajouter des tampons d'image, de PDF et de texte aux documents PDF.
 lastmod: "2026-09-22"
 sitemap:

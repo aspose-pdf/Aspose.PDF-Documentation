@@ -3,7 +3,7 @@ title: Convertir un PDF en classeur Excel en Ruby
 linktitle: Convertir un PDF en classeur Excel en Ruby
 type: docs
 weight: 40
-url: /java/convert-pdf-to-excel-workbook-in-ruby/
+url: /fr/java/convert-pdf-to-excel-workbook-in-ruby/
 description: Comprenez comment convertir des données PDF en classeurs Excel à l'aide de Ruby avec Aspose.PDF, simplifiant ainsi l'extraction et l'analyse des données.
 lastmod: "2026-09-21"
 ---

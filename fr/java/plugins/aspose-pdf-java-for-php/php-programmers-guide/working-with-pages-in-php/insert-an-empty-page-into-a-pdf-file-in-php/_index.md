@@ -3,7 +3,7 @@ title: Insérer une page vide dans un fichier PDF en PHP
 linktitle: Insérer une page vide dans un fichier PDF en PHP
 type: docs
 weight: 70
-url: /java/insert-an-empty-page-into-a-pdf-file-in-php/
+url: /fr/java/insert-an-empty-page-into-a-pdf-file-in-php/
 description: Apprenez à insérer une page vide à n'importe quel endroit dans un fichier PDF en PHP en utilisant Aspose.PDF pour une structuration flexible des documents.
 lastmod: "2026-09-21"
 ---

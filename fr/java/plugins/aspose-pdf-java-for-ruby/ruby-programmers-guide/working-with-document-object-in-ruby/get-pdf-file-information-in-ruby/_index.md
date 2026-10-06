@@ -3,7 +3,7 @@ title: Obtenir des informations sur un fichier PDF en Ruby
 linktitle: Obtenir des informations sur un fichier PDF en Ruby
 type: docs
 weight: 50
-url: /java/get-pdf-file-information-in-ruby/
+url: /fr/java/get-pdf-file-information-in-ruby/
 description: Extrayez les métadonnées et les détails des fichiers PDF par programme à l'aide d'Aspose.PDF en Ruby.
 lastmod: "2026-09-21"
 ---

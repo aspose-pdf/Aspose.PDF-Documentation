@@ -3,7 +3,7 @@ title: Travailler avec du texte en Ruby
 linktitle: Travailler avec du texte en Ruby
 type: docs
 weight: 30
-url: /java/working-with-text-in-ruby/
+url: /fr/java/working-with-text-in-ruby/
 description: Apprenez à travailler avec des éléments de texte dans un document PDF à l'aide de Ruby, y compris l'extraction et la manipulation de texte avec Aspose.PDF.
 lastmod: "2026-09-21"
 ---

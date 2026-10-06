@@ -3,7 +3,7 @@ title: Aplatir tous les champs
 linktitle: Aplatir tous les champs
 type: docs
 weight: 10
-url: /java/flatten-all-fields/
+url: /fr/java/flatten-all-fields/
 description: Découvrez comment aplatir tous les champs de formulaire PDF en Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

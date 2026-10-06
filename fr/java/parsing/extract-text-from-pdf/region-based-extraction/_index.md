@@ -3,7 +3,7 @@ title: Extraction de texte par zone à l'aide de Java
 linktitle: Extraction de texte par zone
 type: docs
 weight: 20
-url: /java/region-based-extraction/
+url: /fr/java/region-based-extraction/
 description: Découvrez comment extraire du texte d'une zone de page spécifique ou inspecter la géométrie des paragraphes dans des documents PDF avec Aspose.PDF for Java.
 lastmod: "2026-09-22"
 sitemap:

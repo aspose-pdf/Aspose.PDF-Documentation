@@ -3,7 +3,7 @@ title: Travailler avec des pages en Python
 linktitle: Travailler avec des pages en Python
 type: docs
 weight: 30
-url: /java/working-with-pages-in-python/
+url: /fr/java/working-with-pages-in-python/
 description: Apprenez à travailler avec des pages PDF en Python à l'aide d'Aspose.PDF, y compris l'accès aux pages, les mises à jour et l'organisation des documents.
 lastmod: "2026-09-21"
 ---

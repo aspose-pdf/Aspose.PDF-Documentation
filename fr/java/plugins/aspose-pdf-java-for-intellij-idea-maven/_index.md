@@ -3,7 +3,7 @@ title: Aspose.PDF Java pour IntelliJ IDEA - Maven
 linktitle: Aspose.PDF Java pour IntelliJ IDEA - Maven
 type: docs
 weight: 30
-url: /java/aspose-pdf-java-for-intellij-idea-maven/
+url: /fr/java/aspose-pdf-java-for-intellij-idea-maven/
 description: Intégrez Aspose.PDF for Java dans IntelliJ IDEA avec Maven. Rationalisez votre processus de développement pour des solutions PDF avancées.
 lastmod: "2026-09-21"
 ---

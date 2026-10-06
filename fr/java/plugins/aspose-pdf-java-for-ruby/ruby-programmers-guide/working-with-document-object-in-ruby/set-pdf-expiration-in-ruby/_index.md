@@ -3,7 +3,7 @@ title: Définir l'expiration du PDF en Ruby
 linktitle: Définir l'expiration du PDF en Ruby
 type: docs
 weight: 110
-url: /java/set-pdf-expiration-in-ruby/
+url: /fr/java/set-pdf-expiration-in-ruby/
 description: Implémentez les dates d'expiration dans les PDF à l'aide d'Aspose.PDF for Ruby pour les documents urgents.
 lastmod: "2026-09-21"
 ---

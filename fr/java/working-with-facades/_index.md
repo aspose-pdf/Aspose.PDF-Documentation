@@ -3,7 +3,7 @@ title: Travailler avec des façades PDF
 linktitle: Travailler avec des façades PDF
 type: docs
 weight: 100
-url: /java/working-with-facades/
+url: /fr/java/working-with-facades/
 description: Découvrez comment utiliser Aspose.PDF Facades en Java pour modifier du contenu PDF, gérer des formulaires et des annotations, appliquer la sécurité, signer des fichiers, tamponner des pages, rendre des pages et inspecter les métadonnées PDF.
 is_node: true
 lastmod: "2026-09-22"

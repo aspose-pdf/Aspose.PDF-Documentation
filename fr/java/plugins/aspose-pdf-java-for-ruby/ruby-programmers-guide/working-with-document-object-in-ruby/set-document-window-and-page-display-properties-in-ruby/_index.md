@@ -3,7 +3,7 @@ title: Définir les propriétés d'affichage de la fenêtre du document et de la
 linktitle: Définir les propriétés d'affichage de la fenêtre du document et de la page en Ruby
 type: docs
 weight: 100
-url: /java/set-document-window-and-page-display-properties-in-ruby/
+url: /fr/java/set-document-window-and-page-display-properties-in-ruby/
 description: Personnalisez les paramètres d'affichage des documents et des pages dans les PDF à l'aide de Ruby et Aspose.PDF.
 lastmod: "2026-09-21"
 ---

@@ -3,7 +3,7 @@ title: Gestion des pages
 linktitle: Gestion des pages
 type: docs
 weight: 30
-url: /java/page-management/
+url: /fr/java/page-management/
 description: Apprenez à gérer les pages PDF en Java en extrayant, supprimant, insérant et ajoutant des pages avec PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

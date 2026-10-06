@@ -3,7 +3,7 @@ title: Extraction de texte de base à l'aide de Java
 linktitle: Extraction de texte de base
 type: docs
 weight: 10
-url: /java/basic-text-extraction/
+url: /fr/java/basic-text-extraction/
 description: Apprenez à extraire du texte de documents PDF en Java avec Aspose.PDF à partir de toutes les pages, d'une page spécifique ou par structure de paragraphe.
 lastmod: "2026-09-22"
 sitemap:

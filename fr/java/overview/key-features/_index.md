@@ -3,7 +3,7 @@ title: Principales fonctionnalités
 linktitle: Principales fonctionnalités
 type: docs
 weight: 20
-url: /java/key-features/
+url: /fr/java/key-features/
 description: Découvrez les principales fonctionnalités d’Aspose.PDF for Java pour créer, modifier, convertir et imprimer des documents PDF.
 lastmod: "2026-09-21"
 sitemap:

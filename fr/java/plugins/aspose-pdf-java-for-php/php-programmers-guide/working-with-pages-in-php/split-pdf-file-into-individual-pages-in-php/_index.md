@@ -3,7 +3,7 @@ title: Diviser un fichier PDF en pages individuelles en PHP
 linktitle: Diviser un fichier PDF en pages individuelles en PHP
 type: docs
 weight: 80
-url: /java/split-pdf-file-into-individual-pages-in-php/
+url: /fr/java/split-pdf-file-into-individual-pages-in-php/
 description: Découvrez comment diviser un document PDF en pages individuelles à l'aide de PHP et Aspose.PDF pour une extraction de page efficace.
 lastmod: "2026-09-21"
 ---

@@ -3,7 +3,7 @@ title: Importer et exporter des annotations à l'aide de Java
 linktitle: Annotations d'importation et d'exportation
 type: docs
 weight: 80
-url: /java/pdfannotationeditor-class/import-export-annotations/
+url: /fr/java/pdfannotationeditor-class/import-export-annotations/
 description: Découvrez comment copier des annotations d'un document PDF vers un autre document PDF à l'aide de Java.
 lastmod: "2026-09-22"
 TechArticle: true

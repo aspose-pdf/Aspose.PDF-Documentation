@@ -3,7 +3,7 @@ title: Ajouter, supprimer et obtenir des annotations PDF en Java
 linktitle: Ajouter, supprimer et obtenir une annotation
 type: docs
 weight: 10
-url: /java/pdfannotationeditor-class/add-delete-and-get-annotation/
+url: /fr/java/pdfannotationeditor-class/add-delete-and-get-annotation/
 description: Utilisez la section PdfAnnotationEditor de Java pour ajouter, inspecter et supprimer des annotations PDF dans les flux de travail de texte, de balisage, interactifs, de forme, de filigrane, de sécurité et liés aux médias.
 lastmod: "2026-09-22"
 TechArticle: true

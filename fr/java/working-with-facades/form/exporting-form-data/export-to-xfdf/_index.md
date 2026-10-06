@@ -3,7 +3,7 @@ title: Exporter vers XFDF
 linktitle: Exporter vers XFDF
 type: docs
 weight: 20
-url: /java/export-to-xfdf/
+url: /fr/java/export-to-xfdf/
 description: Découvrez comment exporter les données des champs d'un formulaire PDF vers XFDF en Java à l'aide de la façade Form dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true

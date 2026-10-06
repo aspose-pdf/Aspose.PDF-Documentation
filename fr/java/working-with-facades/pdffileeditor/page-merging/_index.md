@@ -3,7 +3,7 @@ title: Fusionner des fichiers PDF
 linktitle: Fusionner des fichiers PDF
 type: docs
 weight: 40
-url: /java/page-merging/
+url: /fr/java/page-merging/
 description: Découvrez comment fusionner des fichiers PDF en Java avec la façade PdfFileEditor.
 lastmod: "2026-09-22"
 sitemap:

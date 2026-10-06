@@ -3,7 +3,7 @@ title: Chiffrer le fichier PDF
 linktitle: Chiffrer le fichier PDF
 type: docs
 weight: 30
-url: /java/encrypt-pdf-file/
+url: /fr/java/encrypt-pdf-file/
 description: Découvrez comment chiffrer un PDF et configurer les autorisations en Java avec la façade PdfFileSecurity.
 lastmod: "2026-09-22"
 draft: false

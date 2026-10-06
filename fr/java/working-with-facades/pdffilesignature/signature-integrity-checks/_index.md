@@ -3,7 +3,7 @@ title: Vérifications de l'intégrité des signatures
 linktitle: Vérifications de l'intégrité des signatures
 type: docs
 weight: 70
-url: /java/signature-integrity-checks/
+url: /fr/java/signature-integrity-checks/
 description: Découvrez comment valider la couverture et l'intégrité des signatures en Java avec la façade PdfFileSignature.
 lastmod: "2026-09-22"
 draft: false

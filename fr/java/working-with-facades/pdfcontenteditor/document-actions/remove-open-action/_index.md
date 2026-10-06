@@ -3,7 +3,7 @@ title: Supprimer l'action d'ouverture
 linktitle: Supprimer l'action d'ouverture
 type: docs
 weight: 20
-url: /java/remove-open-action/
+url: /fr/java/remove-open-action/
 description: Découvrez comment supprimer l'action d'ouverture de document d'un PDF en Java à l'aide de la façade PdfContentEditor dans Aspose.PDF.
 lastmod: "2026-09-22"
 TechArticle: true
