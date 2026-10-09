@@ -20,11 +20,9 @@ L'exemple Java supprime les pages 2 et 4 du document source.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Construisez un tableau avec les numéros de page à supprimer.
-3. Appelez `delete` avec le fichier d'entrée, le tableau de pages et le fichier de sortie.
-
-4. Enregistrez le PDF résultant.
+1. Construisez un tableau avec les numéros de page à supprimer.
+1. Appelez `delete` avec le fichier d'entrée, le tableau de pages et le fichier de sortie.
+1. Enregistrez le PDF résultant.
 
 ### Exemple Java
 

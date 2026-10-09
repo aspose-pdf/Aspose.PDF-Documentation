@@ -21,11 +21,9 @@ Cet exemple lit les principales propriétés géométriques de la page 1.
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
-2. Appelez `getPageWidth`, `getPageHeight` et `getPageRotation` pour la page que vous souhaitez inspecter.
-3. Utilisez ou affichez les valeurs renvoyées.
-
-4. Fermez l'instance `PdfFileInfo`.
+1. Appelez `getPageWidth`, `getPageHeight` et `getPageRotation` pour la page que vous souhaitez inspecter.
+1. Utilisez ou affichez les valeurs renvoyées.
+1. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java
 

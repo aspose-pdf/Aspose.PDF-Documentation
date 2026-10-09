@@ -13,10 +13,8 @@ Abstract: Cet article explique comment utiliser des annotations de liens interac
 ## Ajouter une annotation de lien
 
 1. Chargez le document PDF source et recherchez le texte cible dans la première page.
-
-2. Utilisez le rectangle de texte correspondant pour créer un objet `LinkAnnotation` et attribuer l'URI de destination.
-
-3. Ajoutez l'annotation à la page et enregistrez le PDF mis à jour.
+1. Utilisez le rectangle de texte correspondant pour créer un objet `LinkAnnotation` et attribuer l'URI de destination.
+1. Ajoutez l'annotation à la page et enregistrez le PDF mis à jour.
 
 ```java
 public static void linkAdd(Path inputFile, Path outputFile) {

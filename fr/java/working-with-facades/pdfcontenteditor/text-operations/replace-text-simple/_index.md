@@ -13,12 +13,9 @@ Abstract: Cet article montre comment lier un PDF, configurer la portée du rempl
 ## Remplacer le texte dans tout le document
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Définissez la portée du remplacement de texte sur `ReplaceAll`.
-
-3. Appelez `replaceText(...)` avec le texte de recherche et le texte de remplacement.
-
-4. Enregistrez le document PDF mis à jour.
+1. Définissez la portée du remplacement de texte sur `ReplaceAll`.
+1. Appelez `replaceText(...)` avec le texte de recherche et le texte de remplacement.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void replaceTextSimple(Path inputFile, Path outputFile) {

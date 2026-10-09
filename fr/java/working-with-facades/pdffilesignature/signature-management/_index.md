@@ -21,11 +21,9 @@ Utilisez ce flux de travail lorsqu'une signature numérique existante doit être
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
-2. Lisez la collection de signatures et sélectionnez un nom de signature.
-3. Appelez `removeSignature` avec ce nom.
-
-4. Enregistrez le fichier mis à jour et fermez l’objet de façade.
+1. Lisez la collection de signatures et sélectionnez un nom de signature.
+1. Appelez `removeSignature` avec ce nom.
+1. Enregistrez le fichier mis à jour et fermez l’objet de façade.
 
 ### Exemple Java
 

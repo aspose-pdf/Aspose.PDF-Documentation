@@ -19,7 +19,5 @@ La classe Java `PdfFileInfoExamples` présente les principaux flux de travail d'
 Utilisez cette section pour apprendre à :
 
 - lire la version PDF et les autorisations des documents
-
 - inspecter la largeur, la hauteur, la rotation et les décalages de la page
-
 - obtenir, définir, effacer et enregistrer les métadonnées du document avec XMP

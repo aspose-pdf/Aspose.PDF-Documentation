@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, supprimer un élémen
 ## Supprimer un élément d'un champ de liste
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `delListItem(...)` pour le champ cible et l'élément à supprimer.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `delListItem(...)` pour le champ cible et l'élément à supprimer.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void deleteListItem(Path inputFile, Path outputFile) {

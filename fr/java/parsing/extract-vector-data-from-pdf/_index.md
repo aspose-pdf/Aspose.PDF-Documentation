@@ -15,13 +15,9 @@ sitemap:
 Utilisez `GraphicsAbsorber` pour inspecter les éléments graphiques vectoriels sur une page et écrire leur géométrie de base dans un fichier texte.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) et visitez la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible pour collecter les opérations graphiques vectorielles.
-
 1. Parcourez les objets [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) extraits et lisez leurs collections de rectangles, de positions et d'opérateurs.
-
 1. Créez le texte de sortie avec les détails de la géométrie et du nombre d'opérateurs pour chaque élément.
-
 1. Écrivez les données vectorielles extraites dans le fichier de sortie.
 
 ```java
@@ -48,9 +44,7 @@ public static void extractGraphicsElements(Path inputFile, Path outputFile) thro
 ## Enregistrer les graphiques vectoriels de la page au format SVG
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Obtenez la page cible [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) du document.
-
 1. Appelez `page.trySaveVectorGraphics(outputFile.toString())` pour exporter le contenu graphique vectoriel de cette page directement vers SVG.
 
 ```java
@@ -65,13 +59,9 @@ public static void saveVectorGraphicsToSvg(Path inputFile, Path outputFile) {
 ## Enregistrer chaque élément extrait dans un SVG distinct
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) et visitez la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
-
 1. Créez le répertoire de sortie pour les sous-chemins extraits avant d'écrire des fichiers.
-
 1. Parcourez les objets [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) extraits et appelez `saveToSvg(...)` pour chaque élément.
-
 1. Enregistrez chaque élément extrait dans un fichier SVG distinct.
 
 ```java
@@ -94,11 +84,8 @@ public static void extractSubpathsToSvgs(Path inputFile, Path outputDir) throws 
 ## Combiner les éléments extraits en un seul SVG
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) et visitez la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
-
 1. Créez la structure du document SVG qui contiendra les fragments vectoriels combinés.
-
 1. Parcourez les objets [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) extraits et ajoutez chaque fragment SVG généré.
 1. Écrivez la sortie SVG combinée dans le fichier cible.
 
@@ -122,12 +109,9 @@ public static void extractListOfElementsToSingleImage(Path inputFile, Path outpu
 ## Extraire un seul élément vectoriel
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`GraphicsAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicsabsorber/) et visitez la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
-
 1. Obtenez le [`GraphicElement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/graphicelement/) requis à partir de la collection d'éléments extraits.
 1. Vérifiez si l'élément sélectionné est un [`XFormPlacement`](https://reference.aspose.com/pdf/java/com.aspose.pdf.vector/xformplacement/) et parcourez ses éléments imbriqués si nécessaire.
-
 1. Enregistrez l'élément vectoriel sélectionné dans le fichier SVG de sortie.
 
 ```java

@@ -20,9 +20,8 @@ L'exemple Java extrait les trois premières pages du document source.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Appelez `splitFromFirst` avec le fichier source, le nombre de pages à conserver et le fichier de sortie.
-3. Enregistrez le nouveau document PDF.
+1. Appelez `splitFromFirst` avec le fichier source, le nombre de pages à conserver et le fichier de sortie.
+1. Enregistrez le nouveau document PDF.
 
 ```java
 public static void splitPdfFromBeginning(Path inputFile, Path outputFile) {

@@ -15,22 +15,15 @@ Abstract: Cet article décrit comment enregistrer des documents PDF en Java à l
 ---
 Aspose.PDF for Java propose plusieurs façons d'enregistrer un document en fonction de la destination cible et des exigences de sortie.
 
-
 ## Enregistrer un document PDF en Java
-
-
 
 Vous pouvez enregistrer un document :
 
-
 1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) directement dans un fichier sur le disque.
-
 1. Enregistrez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dans un `OutputStream`.
 1. Convertissez le [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) avec [PdfFormatConversionOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformatconversionoptions/) et enregistrez-le dans le format spécifié par [PdfFormat](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfformat/).
 
-
 ## Enregistrer le document dans un fichier
-
 
 ```java
 public static void saveDocumentToFile(Path inputFile, Path outputFile) {
@@ -42,7 +35,6 @@ public static void saveDocumentToFile(Path inputFile, Path outputFile) {
 ```
 
 ## Enregistrer le document dans un flux
-
 
 ```java
 public static void saveDocumentToStream(Path inputFile, Path outputFile) throws Exception {

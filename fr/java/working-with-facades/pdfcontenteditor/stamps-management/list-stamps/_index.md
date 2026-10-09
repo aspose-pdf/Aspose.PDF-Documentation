@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF, récupérer les tampons sur un
 ## Répertorier les tampons sur une page
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Appelez `getStamps(pageNumber)` pour récupérer les tampons sur la page cible.
-
-3. Inspectez la collection `StampInfo[]` résultante.
+1. Appelez `getStamps(pageNumber)` pour récupérer les tampons sur la page cible.
+1. Inspectez la collection `StampInfo[]` résultante.
 
 ```java
 public static void listStamps(Path inputFile) {

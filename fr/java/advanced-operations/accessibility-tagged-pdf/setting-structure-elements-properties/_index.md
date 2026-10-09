@@ -10,7 +10,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 Cette page couvre les modèles courants de définition de propriétés pour les éléments de structure PDF balisés en Java.
 
 ## Définir les propriétés communes des éléments de structure

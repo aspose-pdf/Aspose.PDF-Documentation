@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF, attacher une action JavaScript
 ## Ajouter une action d'ouverture de document
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Appelez `addDocumentAdditionalAction(...)` avec l'événement `DOCUMENT_OPEN` et le texte de l'action JavaScript.
-
-3. Enregistrez le document PDF mis à jour.
+1. Appelez `addDocumentAdditionalAction(...)` avec l'événement `DOCUMENT_OPEN` et le texte de l'action JavaScript.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void addDocumentAction(Path inputFile, Path outputFile) {

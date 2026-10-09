@@ -21,13 +21,10 @@ Utilisez ce flux de travail lorsque vous avez besoin d’une validation rapide s
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
-2. Sélectionnez le nom de la signature que vous souhaitez inspecter.
-3. Appelez `verifySignature` pour valider la signature.
-
-4. Appelez `coversWholeDocument` pour vérifier que la signature couvre tout le document.
-
-5. Fermez l’objet de façade.
+1. Sélectionnez le nom de la signature que vous souhaitez inspecter.
+1. Appelez `verifySignature` pour valider la signature.
+1. Appelez `coversWholeDocument` pour vérifier que la signature couvre tout le document.
+1. Fermez l’objet de façade.
 
 ### Exemple Java
 

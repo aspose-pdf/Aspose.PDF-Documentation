@@ -13,12 +13,9 @@ Abstract: Cet article montre comment lier un PDF, modifier la valeur de préfér
 ## Modifier les préférences de la visionneuse
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Lisez la valeur actuelle des préférences de la visionneuse.
-
-3. Combinez-la avec l’indicateur supplémentaire souhaité et transmettez le résultat à `changeViewerPreference(...)`.
-
-4. Enregistrez le document PDF mis à jour.
+1. Lisez la valeur actuelle des préférences de la visionneuse.
+1. Combinez-la avec l’indicateur supplémentaire souhaité et transmettez le résultat à `changeViewerPreference(...)`.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void changeViewerPreferences(Path inputFile, Path outputFile) {

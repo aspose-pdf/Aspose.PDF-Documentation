@@ -10,7 +10,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 Les API de tableaux balisés vous permettent de créer des structures de tableaux accessibles avec des en-têtes, des lignes de corps, des pieds de page et une sémantique par cellule explicites.
 
 ## Créer un tableau balisé
