@@ -13,5 +13,4 @@ Abstract: Cette section couvre les flux de travail liés aux pièces jointes act
 La classe Java `PdfContentEditorExamples` actuelle inclut les flux de travail de pièces jointes suivants :
 
 - `addAttachment(...)`
-
 - `removeAttachments(...)`

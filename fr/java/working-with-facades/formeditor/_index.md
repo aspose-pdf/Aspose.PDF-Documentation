@@ -15,8 +15,6 @@ La classe Java `FormEditorExamples` présente les principaux flux de travail d'�
 Utilisez cette section pour apprendre à :
 
 - créer des champs de texte, de case à cocher, de zone de liste déroulante, de zone de liste, de bouton radio et de bouton d'envoi
-
 - ajouter, supprimer, déplacer, renommer, copier ou convertir des champs existants
-
 - personnaliser l'alignement, l'apparence, les limites et le nombre de cases des champs à cases séparées
 - associer des scripts, configurer des URL de soumission et supprimer des actions de champ

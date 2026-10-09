@@ -13,10 +13,8 @@ Abstract: Cet article explique comment copier des annotations à partir d'un PDF
 ## Copier des annotations d'un PDF à un autre
 
 1. Ouvrez le PDF source et créez un nouveau document de destination avec une page cible.
-
-2. Énumérez les annotations sur la première page source et ajoutez chacune à la page de destination.
-
-3. Enregistrez le document de destination pour conserver les annotations copiées.
+1. Énumérez les annotations sur la première page source et ajoutez chacune à la page de destination.
+1. Enregistrez le document de destination pour conserver les annotations copiées.
 
 ```java
 public static void importExport(Path inputFile, Path outputFile) {

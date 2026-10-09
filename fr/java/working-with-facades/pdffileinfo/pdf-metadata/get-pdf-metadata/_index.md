@@ -21,13 +21,10 @@ Cet exemple lit les informations de document standard, les indicateurs d'état d
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
-2. Lisez les champs de métadonnées standard tels que le sujet, le titre, les mots-clés et le créateur.
-3. Inspectez les indicateurs d’état du fichier, par exemple si le fichier est valide, chiffré, protégé par mot de passe ou s’il s’agit d’un portefeuille.
-
-4. Lisez une valeur de métadonnées personnalisée avec `getMetaInfo`.
-
-5. Fermez l'instance `PdfFileInfo`.
+1. Lisez les champs de métadonnées standard tels que le sujet, le titre, les mots-clés et le créateur.
+1. Inspectez les indicateurs d’état du fichier, par exemple si le fichier est valide, chiffré, protégé par mot de passe ou s’il s’agit d’un portefeuille.
+1. Lisez une valeur de métadonnées personnalisée avec `getMetaInfo`.
+1. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java
 

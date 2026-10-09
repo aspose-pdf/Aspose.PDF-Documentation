@@ -20,9 +20,8 @@ L'exemple Java extrait toutes les pages à partir de la page 2.
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Appelez `splitToEnd` avec le fichier source, le numéro de la page de départ et le fichier de sortie.
-3. Enregistrez le document PDF résultant.
+1. Appelez `splitToEnd` avec le fichier source, le numéro de la page de départ et le fichier de sortie.
+1. Enregistrez le document PDF résultant.
 
 ```java
 public static void splitPdfToEnd(Path inputFile, Path outputFile) {

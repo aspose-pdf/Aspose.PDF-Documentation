@@ -20,11 +20,9 @@ L'exemple Java ajoute des marges de 36 points aux pages 1 et 3 du document sourc
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Sélectionnez les numéros de page qui doivent recevoir de nouvelles marges.
-3. Appelez `addMargins` avec le fichier d'entrée, le fichier de sortie, la liste de pages et les valeurs de marge.
-
-4. Enregistrez le PDF mis à jour.
+1. Sélectionnez les numéros de page qui doivent recevoir de nouvelles marges.
+1. Appelez `addMargins` avec le fichier d'entrée, le fichier de sortie, la liste de pages et les valeurs de marge.
+1. Enregistrez le PDF mis à jour.
 
 ### Exemple Java
 

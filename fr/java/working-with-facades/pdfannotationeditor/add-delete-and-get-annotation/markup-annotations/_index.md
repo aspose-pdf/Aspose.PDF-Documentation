@@ -13,10 +13,8 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 ## Ajouter des annotations surlignées, soulignées, ondulées ou barrées
 
 1. Ouvrez le PDF d'entrée et sélectionnez la zone de page où l'annotation de balisage doit apparaître.
-
-2. Créez le type d'annotation requis et configurez ses métadonnées ou ses propriétés visuelles.
-
-3. Ajoutez l’annotation à la collection d’annotations de la page et enregistrez le document.
+1. Créez le type d'annotation requis et configurez ses métadonnées ou ses propriétés visuelles.
+1. Ajoutez l’annotation à la collection d’annotations de la page et enregistrez le document.
 
 ```java
 public static void addTextHighlightAnnotation(Path inputFile, Path outputFile) {

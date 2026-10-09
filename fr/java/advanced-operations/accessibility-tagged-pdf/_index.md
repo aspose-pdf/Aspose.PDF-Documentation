@@ -10,7 +10,6 @@ sitemap:
     changefreq: "monthly"
     priority: 0.7
 ---
-
 Les documents PDF balisés fournissent une structure sémantique qui aide les lecteurs d'écran et autres technologies d'assistance à interpréter correctement les titres, paragraphes, liens, figures, formulaires, tableaux et ordre de lecture.
 
 Utilisez cette section lorsque vous devez créer ou inspecter des documents PDF accessibles en Java :

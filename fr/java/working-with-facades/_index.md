@@ -19,34 +19,22 @@ L'API Facades fournit des assistants de niveau supérieur pour les tâches PDF c
 Utilisez cette section pour apprendre à :
 
 - remplir et modifier des formulaires PDF
-
 - travailler avec des annotations et du contenu
-
 - fusionner, diviser et restructurer des fichiers PDF
 - inspecter les métadonnées et les informations sur la page
-
 - appliquer la sécurité, les signatures, les cachets et la numérotation des pages
-
 - rendre les pages PDF en images avec la façade de la visionneuse
 
 ## Classes de l’API Facades
 
 - [Formulaire](/pdf/java/form-class/)
 - [Éditeur de formulaires](/pdf/java/formeditor-class/)
-
 - [Éditeur d'annotations PDF](/pdf/java/pdfannotationeditor-class/)
-
 - [Éditeur de contenu PDF](/pdf/java/pdfcontenteditor-class/)
-
 - [Éditeur de fichiers PDF](/pdf/java/pdffileeditor-class/)
-
 - [PdfFileInfo](/pdf/java/pdffileinfo-class/)
 - [PdfFileSecurity](/pdf/java/pdffilesecurity-class/)
-
 - [Signature du fichier PDF](/pdf/java/pdffilesignature-class/)
-
 - [PdfFileStamp](/pdf/java/pdffilestamp-class/)
-
 - [PdfViewer](/pdf/java/pdfviewer-class/)
-
 - [Tampon](/pdf/java/stamp-class/)

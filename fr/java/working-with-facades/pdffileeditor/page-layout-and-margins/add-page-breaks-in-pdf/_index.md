@@ -20,11 +20,9 @@ Utilisez ce flux de travail lorsqu'une page doit être divisée en plusieurs pag
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Créez une ou plusieurs entrées `PdfFileEditor.PageBreak` avec le numéro de page et la position du saut de page.
-3. Transmettez le tableau de sauts de page à `addPageBreak`.
-
-4. Enregistrez le document PDF mis à jour.
+1. Créez une ou plusieurs entrées `PdfFileEditor.PageBreak` avec le numéro de page et la position du saut de page.
+1. Transmettez le tableau de sauts de page à `addPageBreak`.
+1. Enregistrez le document PDF mis à jour.
 
 ### Exemple Java
 

@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF, supprimer l'action d'ouverture
 ## Supprimer l'action d'ouverture du document
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Appelez `removeDocumentOpenAction()`.
-
-3. Enregistrez le document PDF mis à jour.
+1. Appelez `removeDocumentOpenAction()`.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void removeOpenAction(Path inputFile, Path outputFile) {

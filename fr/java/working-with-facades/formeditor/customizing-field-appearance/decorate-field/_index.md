@@ -13,12 +13,9 @@ Abstract: Cet article montre comment lier un PDF existant, configurer un FormFie
 ## Décorer un champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Configurez un `FormFieldFacade` avec les couleurs et l'alignement requis.
-
-3. Passez la façade à l'éditeur et appelez `decorateField(...)`.
-
-4. Enregistrez le document mis à jour.
+1. Configurez un `FormFieldFacade` avec les couleurs et l'alignement requis.
+1. Passez la façade à l'éditeur et appelez `decorateField(...)`.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void decorateField(Path inputFile, Path outputFile) {

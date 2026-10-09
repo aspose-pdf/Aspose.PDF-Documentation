@@ -18,7 +18,5 @@ La classe Java `PdfFileEditorExamples` inclut un exemple direct `concatenate` po
 Cette section présente :
 
 - un exemple de fusion avec `concatenate` utilisant un tableau de fichiers
-
 - des conseils sur l'article équivalent à deux fichiers qui utilise le même exemple Java
-
 - notes explicites sur les limites des exemples pour les variantes de fusion par lots volumineux, optimisées, spécifiques au formulaire et `try` qui ne sont pas implémentées en tant que méthodes dédiées dans l'ensemble d'exemples de référentiel actuel

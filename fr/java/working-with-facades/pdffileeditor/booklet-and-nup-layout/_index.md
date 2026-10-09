@@ -18,7 +18,5 @@ Utilisez la façade PdfFileEditor lorsque vous devez redistribuer un PDF existan
 Cette section explique comment :
 
 - créer un PDF prêt pour un livret à partir d'un document existant
-
 - placer plusieurs pages sources sur chaque feuille de sortie avec une mise en page N-Up
-
 - gérer la valeur de retour booléenne utilisée par les exemples de style `try` dans l'ensemble d'exemples Java
