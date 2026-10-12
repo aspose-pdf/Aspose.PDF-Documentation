@@ -11,8 +11,6 @@ sitemap:
     priority: 0.7
 ---
 
-Explore font-size reduction and extraction scale settings for text in multi-column PDF layouts with Aspose.PDF for C++.
-
 ## Extract text after reducing font sizes
 
 Adjust in-memory text fragment sizes before extracting text from a reloaded document.
@@ -33,6 +31,7 @@ Source example: `multi-column-01.cpp`.
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Text/TextAbsorber.h>
 #include <Aspose.PDF.Cpp/Text/TextFragmentAbsorber.h>
 #include <Aspose.PDF.Cpp/Text/TextFragment.h>
 #include <Aspose.PDF.Cpp/Text/TextFragmentCollection.h>
