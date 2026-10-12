@@ -65,6 +65,7 @@ Only layers on the first page are exported. When no extension is supplied, the e
 
 ```cpp
 
+#include <system/console.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
