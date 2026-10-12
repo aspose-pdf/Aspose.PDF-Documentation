@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Generate PDFs from Text, LaTeX, Markdown, and XPS in C++
+Abstract: Learn how to create PDFs from plain or preformatted text, LaTeX, Markdown, PostScript, XPS, and XML with Aspose.PDF for C++. The examples cover page breaks, custom PostScript font folders, and XML conversion with an XSL-FO stylesheet.
 ---
 
 Create PDF documents from text, markup, and page-description formats with Aspose.PDF for C++. Use format-specific load options for LaTeX, Markdown, PostScript, XPS, and XML with an XSL-FO stylesheet, or build PDF paragraphs from text files.

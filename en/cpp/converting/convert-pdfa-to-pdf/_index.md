@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Remove PDF/A Compliance Information and Save Regular PDFs in C++
+Abstract: Learn how to open an existing PDF/A document and remove its compliance information with Aspose.PDF for C++. The example uses the Document API to save the result as a regular PDF.
 ---
 
 Use Aspose.PDF for C++ to remove PDF/A compliance information from an existing PDF/A document and save the result as a regular PDF. The following example uses the Document API rather than a format-specific load option.

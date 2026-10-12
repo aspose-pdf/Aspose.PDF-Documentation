@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create PDFs from Raster and Vector Images in C++
+Abstract: Learn how to convert BMP, JPEG, PNG, EMF, DICOM, TIFF, CGM, and SVG images to PDF with Aspose.PDF for C++. The examples use image placement or format-specific load options and demonstrate page sizing from a JPEG and SVG page size adjustment.
 ---
 
 Convert image files into PDF documents with Aspose.PDF for C++. These examples place images on PDF pages or load vector formats with dedicated options. They also cover SVG page size adjustment and page dimensions derived from a JPEG bitmap.

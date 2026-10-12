@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Generate PDFs from Images, Text, and Markup in C++
+Abstract: Explore PDF conversion workflows with Aspose.PDF for C++, including image, text, markup, and page-description formats. This section also shows how to remove PDF/A compliance information from an existing document.
 ---
 
 Use Aspose.PDF for C++ to create PDF documents from image, text, markup, and page-description files. This section covers the conversions demonstrated by the supplied C++ examples and the removal of PDF/A compliance information from existing documents.
