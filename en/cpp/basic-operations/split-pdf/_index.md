@@ -5,10 +5,13 @@ type: docs
 weight: 60
 url: /cpp/split-pdf/
 description: Split a PDF into separate single-page files in C++ using Aspose.PDF.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Export Each PDF Page to a Separate File in C++
+Abstract: Learn how to split a PDF into individual single-page documents with Aspose.PDF for C++. Copy each source page into a new document and save it with a unique file name, reporting page errors while continuing processing.
 ---
 
 Export each page of a PDF to its own file for review or further processing.

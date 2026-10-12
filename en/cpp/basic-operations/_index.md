@@ -5,10 +5,13 @@ type: docs
 weight: 60
 url: /cpp/basic-operations/
 description: Learn how to create, open, save, merge, split, and protect PDF documents using Aspose.PDF for C++.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create, Open, Save, and Protect PDF Documents in C++
+Abstract: Explore basic PDF workflows with Aspose.PDF for C++, from creating documents to opening and saving existing files. The guides also demonstrate merging, splitting, encryption, and password management.
 ---
 Aspose.PDF for C++ provides the basic operations needed to create PDF files and process existing documents.
 

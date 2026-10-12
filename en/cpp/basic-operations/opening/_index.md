@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /cpp/open-pdf-document/
 description: Open PDF files in C++ from a path, stream, or memory and load password-protected documents.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Load PDF Files from Paths, Streams, and Memory in C++
+Abstract: Learn how to open PDF documents from a file path, file stream, or memory with Aspose.PDF for C++. The examples also load password-protected files and read document page counts.
 ---
 
 ## Open a PDF from a file

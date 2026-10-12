@@ -5,10 +5,13 @@ type: docs
 weight: 50
 url: /cpp/merge-pdf/
 description: Combine two PDF files into one document in C++ by appending pages with Aspose.PDF.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Combine Two PDF Documents by Appending Pages in C++
+Abstract: Learn how to merge two PDF files with Aspose.PDF for C++. Open both documents, append the second document's pages to the first, and save the combined PDF.
 ---
 
 Combine related PDF files into one document by appending their page collections.

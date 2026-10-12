@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /cpp/create-document/
 description: Create a PDF document in C++, add a page and text, and save it using Aspose.PDF.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Generate a PDF Page with Text in C++
+Abstract: Learn how to create a PDF document, add a page, and insert a TextFragment with Aspose.PDF for C++. The example saves a single-page document containing Hello World! text.
 ---
 
 Create PDF files programmatically for reports, invoices, and other generated documents.

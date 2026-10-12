@@ -5,10 +5,13 @@ type: docs
 weight: 70
 url: /cpp/protect-pdf-file/
 description: Encrypt and decrypt PDFs in C++, set permissions, change passwords, and check password protection.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Manage PDF Encryption, Permissions, and Passwords in C++
+Abstract: Learn how to encrypt and decrypt PDF files with Aspose.PDF for C++ and configure document permissions. The examples also change user and owner passwords, inspect encryption, and test candidate passwords.
 ---
 
 Manage PDF encryption and passwords through the [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) API.

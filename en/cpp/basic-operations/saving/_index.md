@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /cpp/save-pdf-document/
 description: Save PDF documents in C++ to files or streams and convert documents to PDF/A-3u using Aspose.PDF.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Save PDFs to Files or Streams and Convert to PDF/A in C++
+Abstract: Learn how to save PDF document changes to a file or stream with Aspose.PDF for C++. A separate example converts and saves a document as PDF/A-3u.
 ---
 
 Use [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) to persist changes to a PDF.
