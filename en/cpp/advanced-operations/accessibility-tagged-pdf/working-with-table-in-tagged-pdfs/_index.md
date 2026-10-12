@@ -96,7 +96,7 @@ void CreateTable(System::String outputFile)
 
     for (int rowIndex = 0; rowIndex < 50; rowIndex++) {
         auto trElement = tableTBodyElement->CreateTR();
-        trElement->set_AlternativeText(u"Row " + rowIndex);
+        trElement->set_AlternativeText(String::Format(u"Row {0}", rowIndex));
 
         for (int columnIndex = 0; columnIndex < 4; columnIndex++) {
             int colSpan = 1;
