@@ -1,129 +1,190 @@
 ---
-title:  Extract data from AcroForm
-linktitle:  Extract data from AcroForm
+title: Extract AcroForm data in C++
+linktitle: Extract Data from AcroForm
 type: docs
 weight: 50
 url: /cpp/extract-data-from-acroform/
-description: Aspose.PDF makes it easy to extract form field data from PDF files. Learn how to extract data from AcroForms and save it into XML, or FDF format.
-lastmod: "2021-12-13"
+description: Read PDF form fields and export values to XML, FDF, XFDF, or a JSON-style file using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read and Export PDF Form Field Values in C++
+Abstract: Learn how to read AcroForm field names and values with Aspose.PDF for C++. The examples export form data to XML, FDF, and XFDF, and write field values to a JSON-style file.
 ---
 
-## Extract form fields from PDF document
+Read PDF form fields and export values to XML, FDF, XFDF, or a JSON-style file using Aspose.PDF for C++.
 
-Aspose.PDF for C++ allows you to not only create form fields and fill in form fields but also makes it easy to extract form field data or form field information from PDF files.
+## Read field names and values
 
-In the code example below, we demonstrate how to iterate over each page in PDF to extract information about all AcroForms in PDF as well as form field values. This code example assumes that you do not know the names of the form fields in advance.
+Print the partial name and value of each form field.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Get the document form fields.
+1. Iterate through the fields and read PartialName and Value.
+1. Print each name and value.
+
+Source example: `acroforms-01.cpp`.
 
 ```cpp
-void ExtractFormFields() {
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
 
-    // String for file name
-    String infilename("StudentInfoFormElectronic.pdf");
+#include <Aspose.PDF.Cpp/Document.h>
 
+using namespace System;
+using namespace Aspose::Pdf;
+
+void ExtractFormFields(System::String inputFile)
+{
     // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
+    auto document = MakeObject<Document>(inputFile);
 
     // Get values from all fields
-    for (auto formField : document->get_Form()->get_Fields()) {
-        std::cout << "Field Name :" << formField->get_PartialName() << std::endl;
-        std::cout << "Value : " << formField->get_Value() << std::endl;
+    for (auto& formField : document->get_Form()->get_Fields()) {
+        System::Console::WriteLine(u"Field Name : {0}", formField->get_PartialName());
+        System::Console::WriteLine(u"Value : {0}", formField->get_Value());
     }
-    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
-## Extract Data to XML from a PDF File
+## Export form data to XML
 
-[Form](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.form) class allows you to export data to an XML file from the PDF file using ExportXml method. In order to export data to XML, you need to create an object of Form class and then call the ExportXml method using the FileStream object. Next you should close FileStream object and dispose Form object.
+Write the form data to an XML output stream.
 
-The following code snippet shows you how to export data to XML file.
+1. Create a [Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) facade from the input file.
+1. Open a writable output stream.
+1. Call [ExportXml()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) with the stream.
+1. Close the output stream.
+
+Source example: `acroforms-02.cpp`.
 
 ```cpp
-void ExtractFormFieldsToXML() {
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
 
-    // String for file name
-    String infilename(_dataDir + u"StudentInfoFormElectronic.pdf");
-    String xmlFileName(_dataDir + u"StudentInfoFormElectronic.xml");
+#include <Aspose.PDF.Cpp/Facades/Form.h>
 
-    auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
-    auto fdfOutputStream = System::IO::File::OpenWrite(xmlFileName);
+void ExtractFormFieldsToXML(System::String inputFile, System::String outputFile)
+{
+
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
+    auto fdfOutputStream = System::IO::File::OpenWrite(outputFile);
 
     // Export data
     form->ExportXml(fdfOutputStream);
 
     // Close file stream
     fdfOutputStream->Close();
-    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
-## Export Data to FDF from a PDF File
+## Export form data to FDF
 
-[Form](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.form) class allows you to export data to an FDF file from the PDF file using ExportFdf method. In order to export data to FDF, you need to create an object of Form class and then call the ExportFdf method using the FileStream object. After you may save the PDF file using Save method of the Form class.
+Write the form data to a FDF output stream.
 
-The following code snippet shows you how to export data to FDF file.
+1. Create a [Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) facade from the input file.
+1. Open a writable output stream.
+1. Call [ExportFdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) with the stream.
+1. Close the output stream.
+
+Source example: `acroforms-03.cpp`.
 
 ```cpp
-void ExtractFormExportFDF() {
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
 
-    // String for file name
-    String infilename(_dataDir + u"StudentInfoFormElectronic.pdf");
-    String fdfFileName(_dataDir+ u"StudentInfoFormElectronic.fdf");
+#include <Aspose.PDF.Cpp/Facades/Form.h>
 
-    //String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-    auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
+void ExtractFormExportFDF(System::String inputFile, System::String outputFile)
+{
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
 
-    auto fdfOutputStream = System::IO::File::OpenWrite(fdfFileName);
+    auto fdfOutputStream = System::IO::File::OpenWrite(outputFile);
 
     // Export data
     form->ExportFdf(fdfOutputStream);
 
     // Close file stream
     fdfOutputStream->Close();
-    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
-## Export Data to XFDF from a PDF File
+## Export form data to XFDF
 
-Aspose PDF for C++ with [Form](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.form) class allows you to export data to an XFDF file from the PDF file using ExportXfdf method. In order to export data to XFDF, you need to create an object of Form class and then call the ExportXfdf method using the FileStream object.
+Write the form data to an XFDF output stream.
 
-In the end, you may save the PDF file using the Save method of the Form class.
+1. Create a [Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) facade from the input file.
+1. Open a writable output stream.
+1. Call [ExportXfdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) with the stream.
+1. Close the output stream.
 
-The following code snippet shows you how to export data to XFDF file.
+Source example: `acroforms-04.cpp`.
 
 ```cpp
-void ExtractFormExportXFDF() {
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
 
-    // String for file name
-    String infilename("StudentInfoFormElectronic.pdf");
-    String fdfFileName("StudentInfoFormElectronic.xfdf");
+#include <Aspose.PDF.Cpp/Facades/Form.h>
 
-    //String fdfFileName = Paths.get(_dataDir, "student.xfdf").toString();
-    auto form = MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + infilename);
+void ExtractFormExportXFDF(System::String inputFile, System::String outputFile)
+{
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
 
-    auto fdfOutputStream = System::IO::File::OpenWrite(fdfFileName);
+    auto fdfOutputStream = System::IO::File::OpenWrite(outputFile);
 
     // Export data
     form->ExportXfdf(fdfOutputStream);
 
     // Close file stream
     fdfOutputStream->Close();
-    std::clog << __func__ << ": Finish" << std::endl;
+}
+```
+
+## Export field values to a JSON-style file
+
+Build an object mapping field names to values and write it next to the input PDF.
+
+The helper only escapes backslashes and quotation marks. Values containing control characters such as newlines need additional JSON escaping. The example overwrites the derived JSON output path.
+
+1. Create a [Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) facade from the input file.
+1. Read FieldNames and retrieve each value with [GetField()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/).
+1. Escape backslashes and quotation marks using the supplied helper.
+1. Build the object text with StringBuilder.
+1. Save the text to inputFile + .json.
+
+Source example: `acroforms-05.cpp`.
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Facades/Form.h>
+
+using namespace System;
+using namespace Aspose::Pdf::Facades;
+
+static String escapeJson(String value) {
+    if (value == nullptr) {
+        return String::Empty;
+    }
+    return value
+        .Replace(u"\\", u"\\\\")
+        .Replace(u"\"", u"\\\"");
+}
+
+void ExtractFormFieldsToJSON(System::String inputFile)
+{
+    auto form = MakeObject<Form>(inputFile);
+
+    auto json = MakeObject<System::Text::StringBuilder>();
+    json->Append(u"{\n");
+    auto fieldNames = form->get_FieldNames();
+    for (int i = 0; i < fieldNames->get_Length(); i++) {
+        String fieldName = fieldNames[i];
+        json->Append(u"    \"")
+            ->Append(escapeJson(fieldName))
+            ->Append(u"\": \"")
+            ->Append(escapeJson(form->GetField(fieldName)))
+            ->Append(u"\"");
+        if (i < fieldNames->get_Length() - 1) {
+            json->Append(u",");
+        }
+        json->Append(u"\n");
+    }
+    json->Append(u"}\n");
+    System::IO::File::WriteAllText(inputFile + u".json", json->ToString());
 }
 ```

@@ -1,151 +1,203 @@
 ---
-title: Extract Data from Table in PDF
+title: Extract table data from PDF in C++
 linktitle: Extract Data from Table
 type: docs
 weight: 40
 url: /cpp/extract-data-from-table-in-pdf/
-description: Learn how to extract tabular from PDF using Aspose.PDF for C++.
-lastmod: "2021-06-05"
+description: Read detected PDF tables, filter them by a marked region, or convert the document to Excel with Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read PDF Tables and Export to Excel in C++
+Abstract: Learn how to traverse tables, rows, and cells detected by TableAbsorber in Aspose.PDF for C++. The examples also filter tables by a square annotation region and export a PDF document to Excel.
 ---
 
-## Extract Tables from PDF programmatically
+Read detected PDF tables, filter them by a marked region, or convert the document to Excel with Aspose.PDF for C++.
 
-Since PDF is the most common format for exchanging documents, let's consider a document with several datasets that need analysis. In this article, we will describe the extraction of tables from PDF.
+## Read detected tables
 
-**Aspose.PDF for C++** provides developers with the tools they need to extract data from tables in PDF documents.
+Print text from tables detected on every page.
 
-This example demonstrates the use of the [TableAbsorber](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.table_absorber) Class to retrieve tabular data from tables in a PDF file.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Iterate through the pages.
+1. Create a [TableAbsorber](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/) and visit each page.
+1. Traverse detected tables, rows, cells, fragments, and segments.
+1. Join cell and fragment text using separators and print each row.
 
-The following example shows table extraction from the all pages:
+Source example: `table-01.cpp`.
 
 ```cpp
-void ExtractTable() {
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
 
-    // String for file name
-    String infilename("sample-table.pdf");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/Resources.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextFragmentCollection.h>
+#include <Aspose.PDF.Cpp/Text/TextSegment.h>
+#include <Aspose.PDF.Cpp/Text/TextSegmentCollection.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/TableAbsorber.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/AbsorbedTable.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/AbsorbedRow.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/AbsorbedCell.h>
 
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-    auto document = MakeObject<Document>(_dataDir + infilename);
-    auto absorber = MakeObject<TableAbsorber>();
-
-    // Scan pages
-    for (auto page : document->get_Pages()) {
+void ExtractTablesFromPdf(System::String inputFile) {
+    auto document = MakeObject<Document>(inputFile);
+    for (auto& page : document->get_Pages()) {
+        auto absorber = MakeObject<TableAbsorber>();
         absorber->Visit(page);
-        for (auto table : absorber->get_TableList()) {
-        std::cout << "Table" << std::endl;
-        // Iterate throught list of rows
-        for (auto row : table->get_RowList()) {
-            // Iterate throught list of cell
-            for (auto cell : row->get_CellList()) {
-                String sb;
-                for (auto fragment : cell->get_TextFragments()) {
-                sb += fragment->get_Text();
+
+        for (auto& table : absorber->get_TableList()) {
+            System::Console::WriteLine(u"Table");
+            for (auto& row : table->get_RowList()) {
+                auto rowText = MakeObject<System::Text::StringBuilder>();
+                for (auto& cell : row->get_CellList()) {
+                    if (rowText->get_Length() > 0) {
+                        rowText->Append(u"|");
+                    }
+                    auto cellText = MakeObject<System::Text::StringBuilder>();
+                    for (auto& fragment : cell->get_TextFragments()) {
+                        auto fragmentText = MakeObject<System::Text::StringBuilder>();
+                        for (auto& segment : fragment->get_Segments()) {
+                            fragmentText->Append(segment->get_Text());
+                        }
+                        if (cellText->get_Length() > 0) {
+                            cellText->Append(u"|");
+                        }
+                        cellText->Append(fragmentText);
+                    }
+                    rowText->Append(cellText);
                 }
-                std::cout << sb << "|";
+                System::Console::WriteLine(rowText);
             }
-            std::cout << std::endl;
-        }
         }
     }
-    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
-## Extract table in specific area of PDF page
+## Read tables inside a square annotation
 
-Each abosorbed table has [Rectangle](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.rectangle/) property that describes position of the table on page.
+Use the first square annotation on page 1 as a region filter.
 
-So, if you need to extract tables located in a specific region, you have to work with specific coordinates.
+The boundary checks use strict inequalities; tables touching the annotation boundary are excluded.
 
-The following example show how to extract table marked with Square Annotation:
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Find the first Square annotation on page 1.
+1. Return if no square annotation is found.
+1. Visit the page with [TableAbsorber](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/).
+1. Compare each detected table rectangle with the annotation rectangle.
+1. Print rows only for tables strictly contained inside the annotation.
+
+Source example: `table-02.cpp`.
 
 ```cpp
-void ExtractMarkedTable()
-{
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
 
-    // String for file name
-    String infilename("sample-table.pdf");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/AnnotationCollection.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/AnnotationType.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Annotation.h>
 
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextFragmentCollection.h>
+#include <Aspose.PDF.Cpp/Text/TextSegment.h>
+#include <Aspose.PDF.Cpp/Text/TextSegmentCollection.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/TableAbsorber.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/AbsorbedTable.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/AbsorbedRow.h>
+#include <Aspose.PDF.Cpp/Text/TableAbsorber/AbsorbedCell.h>
 
-    auto document = MakeObject<Document>(_dataDir + infilename);
-    auto absorber = MakeObject<TableAbsorber>();
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+using namespace Aspose::Pdf::Annotations;
 
+void ExtractTableFromSpecificArea(System::String inputFile) {
+    auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->idx_get(1);
-    auto sqa = MakeObject<Aspose::Pdf::Annotations::SquareAnnotation>(page, Rectangle::get_Trivial());
-    auto annotationSelector = MakeObject<Aspose::Pdf::Annotations::AnnotationSelector>(sqa);
 
+    SharedPtr<Annotation> squareAnnotation = nullptr;
+    for (auto& annotation : page->get_Annotations()) {
+        if (annotation->get_AnnotationType() == AnnotationType::Square) {
+            squareAnnotation = annotation;
+            break;
+        }
+    }
 
-    auto list = annotationSelector->get_Selected();
-    if (list->get_Count() == 0) {
-        std::cerr << "Marked tables not found.." << std::endl;
+    if (squareAnnotation == nullptr) {
+        System::Console::WriteLine(u"No square annotation found.");
         return;
     }
 
-    auto squareAnnotation = System::DynamicCast<Aspose::Pdf::Annotations::SquareAnnotation>(list->idx_get(1));
-
+    auto absorber = MakeObject<TableAbsorber>();
     absorber->Visit(page);
 
-    for (auto table : absorber->get_TableList())
-    {
-        auto isInRegion =
-        (squareAnnotation->get_Rect()->get_LLX() < table->get_Rectangle()->get_LLX()) &&
-        (squareAnnotation->get_Rect()->get_LLY() < table->get_Rectangle()->get_LLY()) &&
-        (squareAnnotation->get_Rect()->get_URX() > table->get_Rectangle()->get_URX()) &&
-        (squareAnnotation->get_Rect()->get_URY() > table->get_Rectangle()->get_URY());
+    for (auto& table : absorber->get_TableList()) {
+        auto tableRect = table->get_Rectangle();
+        auto annotationRect = squareAnnotation->get_Rect();
 
-        if (isInRegion)
-        {
-        for (auto row : table->get_RowList()) {
-            // Iterate throught list of cell
-            for (auto cell : row->get_CellList()) {
-                String sb;
-                for (auto fragment : cell->get_TextFragments()) {
-                sb += fragment->get_Text();
+        bool isInRegion = annotationRect->get_LLX() < tableRect->get_LLX()
+            && annotationRect->get_LLY() < tableRect->get_LLY()
+            && annotationRect->get_URX() > tableRect->get_URX()
+            && annotationRect->get_URY() > tableRect->get_URY();
+
+        if (isInRegion) {
+            for (auto& row : table->get_RowList()) {
+                auto rowText = MakeObject<System::Text::StringBuilder>();
+                for (auto& cell : row->get_CellList()) {
+                    if (rowText->get_Length() > 0) {
+                        rowText->Append(u"|");
+                    }
+                    auto cellText = MakeObject<System::Text::StringBuilder>();
+                    for (auto& fragment : cell->get_TextFragments()) {
+                        auto fragmentText = MakeObject<System::Text::StringBuilder>();
+                        for (auto& segment : fragment->get_Segments()) {
+                            fragmentText->Append(segment->get_Text());
+                        }
+                        if (cellText->get_Length() > 0) {
+                            cellText->Append(u"|");
+                        }
+                        cellText->Append(fragmentText);
+                    }
+                    rowText->Append(cellText);
                 }
-                std::cout << sb << "|";
+                System::Console::WriteLine(rowText);
             }
-            std::cout << std::endl;
-        }
         }
     }
-    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
 
-## Extract Table Data from PDF and store it in CSV file
+## Export a PDF to Excel
 
-The following example shows how to extract table and store it as CSV file.
-To see how to convert PDF to Excel Spreadsheet please refer to [Convert PDF to Excel](/pdf/cpp/convert-pdf-to-excel/) article.
+Save document content as XLSX using Excel conversion options.
+
+This converts the document to Excel; it does not export a selected TableAbsorber result.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create [ExcelSaveOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/excelsaveoptions/) and set Format to XLSX.
+1. Pass the output path and save options to [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+Source example: `table-03.cpp`.
 
 ```cpp
-void ExtractTableSaveCSV()
-{
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
 
-    // String for file name
-    String infilename("sample-table.pdf");
-    String outfilename("PDFToXLS_out.csv");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/ExcelSaveOptions.h>
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
+using namespace Aspose::Pdf;
 
-    // Instantiate ExcelSave Option object
+void ExportTablesToExcel(System::String inputFile, System::String outputFile) {
+    auto document = MakeObject<Document>(inputFile);
     auto excelSave = MakeObject<ExcelSaveOptions>();
-    excelSave->set_Format(ExcelSaveOptions::ExcelFormat::CSV);
-
-    // Save the output in XLS format
-    document->Save(_dataDir + outfilename, excelSave);
-    std::clog << __func__ << ": Finish" << std::endl;
+    excelSave->set_Format(ExcelSaveOptions::ExcelFormat::XLSX);
+    document->Save(outputFile, excelSave);
 }
 ```

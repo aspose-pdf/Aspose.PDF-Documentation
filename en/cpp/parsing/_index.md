@@ -1,28 +1,26 @@
 ---
-title: Parse PDF documents C/C++
+title: Parse PDF documents
 linktitle: Parse PDF documents
 type: docs
-weight: 50
+weight: 80
 url: /cpp/parsing/
-description: Do you want to extract data from PDF documents? Discover various PDF data extraction methods with Aspose.PDF for C++.
-lastmod: "2021-12-13"
+description: Extract text, images, font information, tables, AcroForm values, and vector graphics from PDF documents in C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extract and Inspect PDF Content in C++
+Abstract: Explore PDF parsing examples with Aspose.PDF for C++ to extract text, image resources, table data, and AcroForm values. This section also covers inspecting document fonts and exporting vector graphics to SVG.
 ---
 
-## Is there a C++ library to extract text from a PDF file?
+Parse PDF documents with Aspose.PDF for C++ to read text, image resources, font information, table data, form values, and vector graphics. The examples in this section demonstrate extraction and inspection tasks for these types of content.
 
-Quite a common question among C ++ users, and developers.
+- [Extract Text from PDF](/pdf/cpp/extract-text-from-pdf/) — Extract text from documents, pages, regions, and annotations.
+- [Extract Images from PDF](/pdf/cpp/extract-images-from-the-pdf-file/) — Save an embedded image resource from a PDF page as JPEG using Aspose.PDF for C++.
+- [Extract Fonts from PDF](/pdf/cpp/extract-fonts-from-pdf/) — List the names of fonts used in a PDF document with Aspose.PDF for C++.
+- [Extract Data from Table](/pdf/cpp/extract-data-from-table-in-pdf/) — Read detected PDF tables, filter them by a marked region, or convert the document to Excel with Aspose.PDF for C++.
+- [Extract Data from AcroForm](/pdf/cpp/extract-data-from-acroform/) — Read PDF form fields and export values to XML, FDF, XFDF, or a JSON-style file using Aspose.PDF for C++.
+- [Extract Vector Data from PDF](/pdf/cpp/extract-vector-data-from-pdf/) — Inspect vector graphics properties and export page or element graphics to SVG with Aspose.PDF for C++.
 
-**Aspose.PDF for C++ library** - parse and extract content, resources and data in C++.
-Parse PDF documents with C++ by Aspose is a highly efficient and versatile PDF content and metadata parser and extractor. According to your needs, you can get the possibility to extract data from the form, to extract images, to extract text from PDF and stamps using C++.
-
-Parsing PDF documents is a term releated to extraction variuous kind of information from PDF file. This section covers how to:
-
-- [Extract Text from PDF](/pdf/cpp/extract-text-from-pdf/). Text Parsing or Extraction is the most popular operation with ready-made PDFs. You will learn about text parsing from a whole document, a particular page, or a particular region in a page.
-- [Extract Images from PDF](/pdf/cpp/extract-images-from-the-pdf-file/). Image Extraction does the same for images as the operation above for text.
-- [Extract Data from the Form](/pdf/cpp/extract-data-from-acroform/). If you have a bunch of PDF documents with Forms, probably you need to get the data from those forms. This article will help to understand how to extract AcroForms data with Aspose.PDF for C++.
-- [Extract Data from Table](/pdf/cpp/extract-data-from-table-in-pdf/). Extract Tables from PDF programmatically.
-- [Extract Text From Stamps using C++](/pdf/cpp/extract-text-from-stamps/). If you have text in a stamp, inside your pdf, you can easily extract it from there.
 

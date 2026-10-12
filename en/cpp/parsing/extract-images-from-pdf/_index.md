@@ -1,43 +1,56 @@
 ---
-title: Extract Images from PDF
+title: Extract images from PDF in C++
 linktitle: Extract Images from PDF
 type: docs
 weight: 20
 url: /cpp/extract-images-from-the-pdf-file/
-description: How to extract a part of the image from PDF using Aspose.PDF for C++.
-lastmod: "2021-06-05"
+description: Save an embedded image resource from a PDF page as JPEG using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Save an Embedded PDF Image as JPEG in C++
+Abstract: Learn how to access the first image resource on the first PDF page with Aspose.PDF for C++. The example saves that XImage to an output stream using JPEG encoding.
 ---
 
-Also, a demanded task when working with PDF documents is to extract images from a PDF file. For example, you received a PDF email with a lot of great images that you would like to extract as separate files.
+Save an embedded image resource from a PDF page as JPEG using Aspose.PDF for C++.
 
-Aspose.PDF library allows you to extract images from PDF with еру  next code snippet:
+## Extract the first image from page 1
+
+Export one image from the first page resource collection.
+
+The input must have page 1 and at least one image resource on it. The example does not iterate over all images.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Select page 1 and retrieve its first [XImage](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximage/) resource.
+1. Open a writable output stream.
+1. Save the image using JPEG encoding.
+1. Close the stream.
+
+Source example: `images.cpp`.
 
 ```cpp
-void ExtractImage()
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/Resources.h>
+#include <Aspose.PDF.Cpp/XImage.h>
+#include <Aspose.PDF.Cpp/XImageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+void ExtractImage(System::String inputFile, System::String outputFile)
 {
-    std::clog << __func__ << ": Start" << std::endl;
-    // String for path name
-    String _dataDir("C:\\Samples\\Parsing\\");
-
-    // String for file name
-    String infilename("sample-image.pdf");
-    String outfilename("extracted_image.jpeg");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Extract a particular image
+    auto document = MakeObject<Document>(inputFile);
     auto xImage = document->get_Pages()->idx_get(1)->get_Resources()->get_Images()->idx_get(1);
 
-    auto outputImage = System::IO::File::OpenWrite(_dataDir + outfilename);
+    auto outputImage = System::IO::File::OpenWrite(outputFile);
 
-    // Save output image
     xImage->Save(outputImage, System::Drawing::Imaging::ImageFormat::get_Jpeg());
     outputImage->Close();
-
-    std::clog << __func__ << ": Finish" << std::endl;
 }
 ```
