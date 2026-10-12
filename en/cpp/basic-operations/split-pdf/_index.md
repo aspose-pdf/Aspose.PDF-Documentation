@@ -42,12 +42,12 @@ void SplitDocument(String inputFile, String outputDir) {
     auto document = MakeObject<Document>(inputFile);
     try {
         
-        for (int pageCount = 1; pageCount <= document->get_Pages()->get_Count(); pageCount++) {
+        for (int pageNumber = 1; pageNumber <= document->get_Pages()->get_Count(); pageNumber++) {
             auto newDocument = MakeObject<Document>();
             try {
-                auto page = document->get_Pages()->idx_get(pageCount);
+                auto page = document->get_Pages()->idx_get(pageNumber);
                 newDocument->get_Pages()->CopyPage(page);
-                auto outputFile = System::IO::Path::Combine(outputDir, System::String::Format(u"page_{0}.pdf", pageCount));
+                auto outputFile = System::IO::Path::Combine(outputDir, System::String::Format(u"page_{0}.pdf", pageNumber));
                 newDocument->Save(outputFile);
             }
             catch (std::exception& e) {
