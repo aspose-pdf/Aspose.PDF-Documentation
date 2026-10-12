@@ -11,8 +11,6 @@ sitemap:
     priority: 0.7
 ---
 
-Extract text from a page rectangle and inspect the supplied paragraph geometry example using Aspose.PDF for C++.
-
 ## Extract text from a rectangle
 
 Limit extraction to a supplied region on a selected page.
