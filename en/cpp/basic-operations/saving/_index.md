@@ -80,7 +80,7 @@ void SaveDocumentStream(String path_infile, String path_outfile)
 using namespace System;
 using namespace Aspose::Pdf;
 
-void SaveDocumentAsPDFx(String path_infile, String path_outfile)
+void SaveDocumentAsPdfA(String path_infile, String path_outfile)
 {
     auto document = MakeObject<Document>(path_infile);
     auto options = MakeObject<PdfFormatConversionOptions>(Aspose::Pdf::PdfFormat::PDF_A_3U);
