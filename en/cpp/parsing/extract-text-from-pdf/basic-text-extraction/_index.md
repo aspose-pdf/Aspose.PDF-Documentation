@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extract PDF Document, Page, and Paragraph Text in C++
+Abstract: Learn how to extract text from all PDF pages or a selected page using TextAbsorber in Aspose.PDF for C++. Use ParagraphAbsorber to inspect detected paragraphs and collect their text.
 ---
 
 Extract text from all pages, the first page, or detected paragraphs using Aspose.PDF for C++.

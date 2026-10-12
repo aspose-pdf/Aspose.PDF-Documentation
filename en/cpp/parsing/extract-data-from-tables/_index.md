@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read PDF Tables and Export to Excel in C++
+Abstract: Learn how to traverse tables, rows, and cells detected by TableAbsorber in Aspose.PDF for C++. The examples also filter tables by a square annotation region and export a PDF document to Excel.
 ---
 
 Read detected PDF tables, filter them by a marked region, or convert the document to Excel with Aspose.PDF for C++.

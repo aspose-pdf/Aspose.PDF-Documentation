@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Adjust Text Extraction for Multi-Column PDF Layouts in C++
+Abstract: Explore font-size reduction and Pure formatting with a scale factor for PDF text extraction in Aspose.PDF for C++. The examples show both approaches, but extraction order must be reviewed for each input document.
 ---
 
 ## Extract text after reducing font sizes

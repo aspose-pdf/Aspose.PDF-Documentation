@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: List Font Names Used in PDF Documents in C++
+Abstract: Learn how to retrieve a PDF document's font collection with Aspose.PDF for C++. Use GetAllFonts() and FontName to list font names without exporting embedded font files.
 ---
 
 List the names of fonts used in a PDF document with Aspose.PDF for C++.

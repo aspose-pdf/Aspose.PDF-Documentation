@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Inspect PDF Vector Elements and Export SVG in C++
+Abstract: Learn how to inspect graphics element bounds, positions, and operator counts using GraphicsAbsorber in Aspose.PDF for C++. The examples export page graphics or selected elements to SVG and demonstrate combining serialized element content.
 ---
 
 Inspect vector graphics properties and export page or element graphics to SVG with Aspose.PDF for C++.

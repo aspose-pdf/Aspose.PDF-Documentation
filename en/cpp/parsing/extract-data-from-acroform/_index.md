@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read and Export PDF Form Field Values in C++
+Abstract: Learn how to read AcroForm field names and values with Aspose.PDF for C++. The examples export form data to XML, FDF, and XFDF, and write field values to a JSON-style file.
 ---
 
 Read PDF form fields and export values to XML, FDF, XFDF, or a JSON-style file using Aspose.PDF for C++.

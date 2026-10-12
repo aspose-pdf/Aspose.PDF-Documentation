@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Save an Embedded PDF Image as JPEG in C++
+Abstract: Learn how to access the first image resource on the first PDF page with Aspose.PDF for C++. The example saves that XImage to an output stream using JPEG encoding.
 ---
 
 Save an embedded image resource from a PDF page as JPEG using Aspose.PDF for C++.

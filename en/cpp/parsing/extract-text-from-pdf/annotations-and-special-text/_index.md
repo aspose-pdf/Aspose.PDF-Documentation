@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read PDF Highlights, Stamp Text, and Text Flags in C++
+Abstract: Learn how to read highlighted text and stamp appearance text with Aspose.PDF for C++. Additional examples extract page text and inspect text fragments for superscript and subscript flags.
 ---
 
 Read highlighted text, stamp appearance text, and superscript or subscript flags from PDFs with Aspose.PDF for C++.

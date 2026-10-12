@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read PDF Text from Pages, Regions, and Annotations in C++
+Abstract: Explore text extraction examples for PDF documents with Aspose.PDF for C++. Choose workflows for whole documents, individual pages, paragraphs, rectangular regions, multi-column layouts, and annotation text.
 ---
 
 Extract text from PDF documents with Aspose.PDF for C++. Choose whole-document extraction, page regions, multi-column layouts, or annotation and special-text inspection.

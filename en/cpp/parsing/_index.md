@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extract and Inspect PDF Content in C++
+Abstract: Explore PDF parsing examples with Aspose.PDF for C++ to extract text, image resources, table data, and AcroForm values. This section also covers inspecting document fonts and exporting vector graphics to SVG.
 ---
 
 Parse PDF documents with Aspose.PDF for C++ to read text, image resources, font information, table data, form values, and vector graphics. The examples in this section demonstrate extraction and inspection tasks for these types of content.

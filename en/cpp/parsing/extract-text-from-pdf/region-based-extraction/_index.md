@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Extract PDF Text Within a Page Rectangle in C++
+Abstract: Learn how to restrict PDF text extraction to a rectangle on a selected page with Aspose.PDF for C++. Configure TextSearchOptions and LimitToPageBounds, then use TextAbsorber to write the region's text to a file.
 ---
 
 ## Extract text from a rectangle
