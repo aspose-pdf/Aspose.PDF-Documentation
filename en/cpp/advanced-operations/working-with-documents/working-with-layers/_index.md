@@ -78,7 +78,7 @@ void ExtractLayers(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     if (document->get_Pages()->get_Count() == 0) {
-        Console::WriteLine(u"No layers found in the document.");
+        Console::WriteLine(u"No pages found in the document.");
         return;
     }
     auto page = document->get_Pages()->idx_get(1);
