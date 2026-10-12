@@ -29,8 +29,6 @@ This technique changes the intermediate document. Review extraction order for yo
 Source example: `multi-column-01.cpp`.
 
 ```cpp
-#include <system/io/file.h>
-#include <system/io/memory_stream.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -77,8 +75,6 @@ Configure Pure text formatting and a scale factor without explicitly editing tex
 Source example: `multi-column-02.cpp`.
 
 ```cpp
-#include <system/io/file.h>
-#include <system/io/memory_stream.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -88,7 +84,6 @@ Source example: `multi-column-02.cpp`.
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
-
 
 void ExtractTextScaleFactor(String inputFile, String outputFile, float reduceRatio)
 {

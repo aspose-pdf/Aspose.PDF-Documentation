@@ -26,9 +26,6 @@ Write bounds, positions, and operator counts for graphics detected on page 1.
 Source example: `vector-01.cpp`.
 
 ```cpp
-#include <system/io/file.h>
-#include <system/io/memory_stream.h>
-#include <system/text/string_builder.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -105,8 +102,6 @@ Export each absorbed graphics element to a file in a subpaths directory.
 Source example: `vector-03.cpp`.
 
 ```cpp
-#include <system/io/directory.h>
-#include <system/io/path.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -150,8 +145,6 @@ The helper checks for missing SVG tags but is a string-based extraction helper. 
 Source example: `vector-04.cpp`.
 
 ```cpp
-#include <system/io/file.h>
-#include <system/text/string_builder.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -226,6 +219,7 @@ The function may produce no output when the requested elements are absent. These
 Source example: `vector-05.cpp`.
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>

@@ -23,9 +23,8 @@ Both PDFs must contain at least one page. This overlays page content rather than
 1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) on target page 1.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-page-stamp.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>

@@ -24,9 +24,8 @@ Only the first page is stamped. The total page count is inserted into the format
 1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) on page 1.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-page-num-stamp.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Text/TextState.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Color.h>
@@ -72,9 +71,8 @@ void AddPageNumStamp(System::String inputFile, System::String outputFile)
 1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) for every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-page-num-stamp-roman.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Text/TextState.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Color.h>

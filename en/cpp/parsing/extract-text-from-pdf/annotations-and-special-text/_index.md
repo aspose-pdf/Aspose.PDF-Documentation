@@ -25,7 +25,6 @@ Read text marked by highlight annotations on page 1.
 Source example: `annotation.cpp`.
 
 ```cpp
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -64,7 +63,6 @@ This requires a suitable normal appearance containing extractable text; it does 
 Source example: `annotation-02.cpp`.
 
 ```cpp
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -108,8 +106,6 @@ Despite the function name ExtractSuperSubText, this example extracts all page te
 Source example: `annotation-03.cpp`.
 
 ```cpp
-#include <system/console.h>
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -143,10 +139,6 @@ Report text and formatting flags for every fragment on a selected page.
 Source example: `annotation-04.cpp`.
 
 ```cpp
-#include <system/console.h>
-#include <system/io/file.h>
-#include <system/text/string_builder.h>
-#include <system/environment.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

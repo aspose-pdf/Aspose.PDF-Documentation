@@ -19,8 +19,6 @@ Combine PDF files in sequence, merge selected ranges, insert or alternate pages,
 1. Append the second document pages to the first with [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `merge-documents-01.cpp`.
-
 ```cpp
 #include <system/string.h>
 #include <system/console.h>
@@ -49,14 +47,7 @@ The helper clamps page ranges to the available pages. Include the standard vecto
 1. Copy all pages using appendPageRange() and [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `merge-documents-02.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/exceptions.h>
-#include <system/math.h>
-#include <system/console.h>
-#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -107,13 +98,7 @@ The helper clips each range to the source page count and skips empty ranges.
 1. Copy pages 2–3 from the second input.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `merge-documents-03.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/math.h>
-#include <system/console.h>
-#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -159,13 +144,7 @@ Zero inserts at the beginning; the base page count inserts at the end.
 1. Copy all pages from the inserted PDF, then the remaining base pages.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `merge-documents-04.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/math.h>
-#include <system/console.h>
-#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -213,13 +192,7 @@ void MergeInsertDocumentAtPosition(String inputFile1, String inputFile2, int ins
 1. Copy an available page from the first input, then the corresponding page from the second with [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `merge-documents-05.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/math.h>
-#include <system/console.h>
-#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -260,15 +233,7 @@ This example creates new section bookmarks; it does not explicitly copy the sour
 1. Add a child bookmark pointing to the first content page when the source has pages.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `merge-documents-06.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/exceptions.h>
-#include <system/math.h>
-#include <system/console.h>
-#include <system/collections/list.h>
-#include <system/io/path.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

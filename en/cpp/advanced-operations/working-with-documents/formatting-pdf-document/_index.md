@@ -19,11 +19,7 @@ Inspect and configure PDF viewer preferences, font embedding, font subsets, and 
 1. Read the window, direction, page layout, and page mode properties from [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
 1. Print the property values.
 
-Source example: `format-document-01.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/DOM/PageMode.h>
@@ -58,11 +54,7 @@ PDF viewers decide how to apply these display preferences.
 1. Select right-to-left direction, TwoColumnLeft layout, and UseThumbs page mode.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `format-document-02.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/DOM/PageMode.h>
@@ -99,11 +91,7 @@ Make the necessary fonts available in the execution environment.
 1. Iterate through page font resources and set IsEmbedded on each unembedded [Font](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/font/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `format-document-03.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -139,11 +127,7 @@ void EmbeddedFonts(String inputFile, String outputFile) {
 1. Add the segment to a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) and add the fragment to the page.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `format-document-04.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -183,11 +167,7 @@ void EmbeddedFontsInNewDocument(String outputFile) {
 1. Create [PdfSaveOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/pdfsaveoptions/) and set DefaultFontName to Arial.
 1. Call [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) with the output path and the save options.
 
-Source example: `format-document-05.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PdfSaveOptions.h>
@@ -211,11 +191,7 @@ void SetDefaultFont(String inputFile, String outputFile) {
 1. Retrieve all fonts through the document font utilities.
 1. Read FontName from each [Font](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/font/) and print it.
 
-Source example: `format-document-06.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
@@ -240,11 +216,7 @@ The alternative SubsetAllFonts call remains commented out in the source.
 1. Call SubsetFonts() through the document font utilities with SubsetEmbeddedFontsOnly.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `format-document-07.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -278,12 +250,7 @@ The example sets a 50% opening zoom and replaces the existing open action.
 1. Wrap the destination in a [GoToAction](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/gotoaction/) and assign it as the document OpenAction.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `format-document-08.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/exceptions.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -318,11 +285,7 @@ void SetZoomFactor(String inputFile, String outputFile) {
 1. Cast its destination to [XYZExplicitDestination](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/xyzexplicitdestination/).
 1. Print Zoom when available, or print that zoom is not set.
 
-Source example: `format-document-09.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

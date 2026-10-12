@@ -20,10 +20,4 @@ Parse PDF documents with Aspose.PDF for C++ to read text, image resources, font 
 - [Extract Data from AcroForm](/pdf/cpp/extract-data-from-acroform/) — Read PDF form fields and export values to XML, FDF, XFDF, or a JSON-style file using Aspose.PDF for C++.
 - [Extract Vector Data from PDF](/pdf/cpp/extract-vector-data-from-pdf/) — Inspect vector graphics properties and export page or element graphics to SVG with Aspose.PDF for C++.
 
-## Use the parsing examples
 
-Configure your project to include and link Aspose.PDF for C++ before calling the helper functions. Supply existing input PDFs, valid page and resource indices, and writable output paths. Some examples inspect only the first page or one selected resource; their accompanying steps describe that scope.
-
-The snippets retain the supplied example implementations and omit the project-specific parsing.h include. Add the required SDK headers and namespace declarations to your project. The paragraph geometry example remains commented out as in the supplied source.
-
-Most examples open a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and use an absorber or a resource collection to inspect its content. Follow the API links in each procedure for class and method details.

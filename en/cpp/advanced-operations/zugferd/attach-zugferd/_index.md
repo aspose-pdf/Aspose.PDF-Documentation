@@ -26,8 +26,9 @@ Supply an existing PDF invoice and its XML data. Configure your project to inclu
 1. Call [Document::Convert()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/convert/) with [PdfFormat](https://reference.aspose.com/pdf/cpp/aspose.pdf/pdfformat/) set to PDF_A_3A and [ConvertErrorAction](https://reference.aspose.com/pdf/cpp/aspose.pdf/converterroraction/) set to Delete.
 1. Save the output PDF with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-The following example is based on attach-invoice-zugferd-format.cpp.
+
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/AFRelationship.h>
 #include <Aspose.PDF.Cpp/Document.h>

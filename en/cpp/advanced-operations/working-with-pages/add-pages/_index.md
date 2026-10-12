@@ -19,9 +19,9 @@ Add blank pages, insert a page at a specific position, or copy a page from anoth
 1. Call [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/) on the document [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-empty-page-to-end.cpp`.
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -47,9 +47,8 @@ Use an input PDF with at least one page.
 1. Call [Insert()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/insert/) on [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) at position 2.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `insert-empty-page.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -75,8 +74,6 @@ The output contains a new text page followed by the copied page.
 1. Add a first page with a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/).
 1. Call [CopyPage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) to append page 1 from the input PDF.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
-
-Source example: `add-page-from-another-document.cpp`.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>

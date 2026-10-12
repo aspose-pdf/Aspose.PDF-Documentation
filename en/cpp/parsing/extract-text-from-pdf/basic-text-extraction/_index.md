@@ -26,7 +26,6 @@ Collect document text into one output file.
 Source example: `basic-text-01.cpp`.
 
 ```cpp
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

@@ -22,9 +22,8 @@ The example sets an absolute rotation value of 90 degrees rather than adding 90 
 1. Set Rotate to on90 from [Rotation](https://reference.aspose.com/pdf/cpp/aspose.pdf/rotation/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `rotate-page.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>

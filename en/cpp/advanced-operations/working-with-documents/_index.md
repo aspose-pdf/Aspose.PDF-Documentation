@@ -21,11 +21,5 @@ Use Aspose.PDF for C++ to create, format, validate, merge, optimize, and split P
 - [Split PDF documents](/pdf/cpp/split-pdf-document/) — Split PDF documents into individual pages, balanced parts, page ranges, custom groups, or odd and even pages with Aspose.PDF for C++.
 - [Work with PDF layers](/pdf/cpp/working-with-layers/) — Inspect the supplied layer-creation example and lock, export, flatten, or merge layers on the first PDF page with Aspose.PDF for C++.
 
-## Use the document examples
 
-Configure your project to include and link Aspose.PDF for C++. Supply input PDFs and writable output paths, and make any required fonts or external OCR resources available. The snippets omit the project-specific working-with-documents.h include; add the required SDK and standard C++ headers in your project. Treat each snippet as a separate example, since several files define the same helper function name.
-
-Most operations start with a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/). Page copying uses one-based page numbers. The layer collection examples use index 0 for the first layer.
-
-For simpler introductory workflows, see [Basic operations](/pdf/cpp/basic-operations/). For content extraction, see [Parsing PDF documents](/pdf/cpp/parsing/).
 

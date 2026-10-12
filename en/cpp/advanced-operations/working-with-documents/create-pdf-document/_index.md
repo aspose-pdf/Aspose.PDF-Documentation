@@ -20,10 +20,7 @@ Create a PDF from text or add searchable text to a scanned PDF through an extern
 1. Add a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) containing Hello World! to the page paragraphs.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `create-document-01.cpp`.
-
 ```cpp
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -55,9 +52,8 @@ Install Tesseract and the required language data separately. The callback invoke
 1. Call [Convert()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/convert/) with the callback and check the returned result.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `create-document-02.cpp`.
-
 ```cpp
+
 #include <filesystem>
 #include <functional>
 #include <system/diagnostics/process.h>

@@ -19,8 +19,6 @@ Read PDF page dimensions, compare rectangles with and without rotation, and set 
 1. Select page 1 and call [GetPageRect()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/getpagerect/) with true.
 1. Print the [Rectangle](https://reference.aspose.com/pdf/cpp/aspose.pdf/rectangle/) width and height.
 
-Source example: `get-page-size.cpp`.
-
 ```cpp
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -50,9 +48,8 @@ The rotation change is made in memory only; this function does not save a PDF.
 1. Call [GetPageRect()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/getpagerect/) with false and print the dimensions.
 1. Call [GetPageRect()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/getpagerect/) with true and print the dimensions.
 
-Source example: `get-page-size-rotation.cpp`.
-
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Rectangle.h>
@@ -87,9 +84,8 @@ The dimensions are in PDF points. This changes the page geometry; it does not ex
 1. Print the resulting page-box dimensions.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `set-page-size.cpp`.
-
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Rectangle.h>

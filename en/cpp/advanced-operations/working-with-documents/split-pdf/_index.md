@@ -21,11 +21,7 @@ Split PDF documents into individual pages, balanced parts, page ranges, custom g
 1. Create an output [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) for each page and copy it with [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save each part with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) as Page_N.pdf.
 
-Source example: `split-document-01.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -55,11 +51,7 @@ void SplitDocuments(String inputFile, String outputDir)
 1. Copy each nonempty range into a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save each part with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `split-document-02.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -97,13 +89,7 @@ void SplitDocumentsIntoTwoParts(String inputFile, String outputDir)
 1. Copy each range into a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save each part with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `split-document-03.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
-#include <system/math.h>
-#include <system/exceptions.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -146,14 +132,7 @@ void SplitDocumentsEveryNPages(String inputFile, String outputDir, int pagesPerP
 1. Clip range ends to the page count and skip empty ranges.
 1. Copy each range using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save it with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `split-document-04.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
-#include <system/math.h>
-#include <array>
-#include <utility>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -192,11 +171,7 @@ void SplitDocumentsByPageRanges(String inputFile, String outputDir)
 1. Copy page 1 into a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and save it with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Copy pages 2 through the end using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save them when present.
 
-Source example: `split-document-05.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -235,11 +210,7 @@ void SplitDocumentsFirstPageAndRest(String inputFile, String outputDir)
 1. Copy the last page into a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and save it with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Delete the last page from the original [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save the preceding pages when present.
 
-Source example: `split-document-06.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -275,12 +246,7 @@ void SplitDocumentsLastPageAndRest(String inputFile, String outputDir)
 1. Distribute remainder pages among the first parts.
 1. Copy each consecutive range using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save it with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `split-document-07.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
-#include <system/math.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -327,12 +293,7 @@ Pages outside these groups are omitted. Adjust the groups for your input.
 1. Copy only valid page numbers using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save each nonempty group with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `split-document-08.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
-#include <vector>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -371,11 +332,7 @@ void SplitDocumentsCustomPageGroups(String inputFile, String outputDir)
 1. Copy each page into a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save each page with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) using a three-digit minimum width, such as Page_001.pdf.
 
-Source example: `split-document-09.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -405,11 +362,7 @@ void SplitDocumentsWithStableFilenames(String inputFile, String outputDir)
 1. Copy even-numbered pages into another document.
 1. Save each nonempty result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `split-document-10.cpp`.
-
 ```cpp
-#include <system/io/path.h>
-#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

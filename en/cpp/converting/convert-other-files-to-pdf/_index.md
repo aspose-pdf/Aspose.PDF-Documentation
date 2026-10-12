@@ -17,8 +17,6 @@ Create PDF documents from text, markup, and page-description formats with Aspose
 
 Read an entire text file and place its contents in a PDF text fragment.
 
-The following example is based on `text-to-pdf.cpp`.
-
 1. Read the input file with System::IO::File::ReadAllText().
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) containing the text.
@@ -26,7 +24,6 @@ The following example is based on `text-to-pdf.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -60,8 +57,6 @@ Process a text file line by line using a monospaced font and explicit form-feed 
 
 Ensure Courier New is available. A line starting with a form feed is treated as a page-break marker; any other text on that line is not added. At such a marker, processing stops if the page count is already greater than 3.
 
-The following example is based on `text-to-pdf-02.cpp`.
-
 1. Read the input file with System::IO::File::ReadAllLines().
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Set left and right margins and configure a 12-point Courier New font through [PageInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/pageinfo/).
@@ -71,7 +66,6 @@ The following example is based on `text-to-pdf-02.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -140,8 +134,6 @@ void ConvertTextPreformattedToPdf(String path_infile, String path_outfile)
 
 Load the LaTeX source with format-specific options and save it as PDF.
 
-The following example is based on `latex-to-pdf.cpp`.
-
 1. Create [TeXLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/texloadoptions/).
 1. Construct a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) with the input file path and the load options.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
@@ -165,8 +157,6 @@ void ConvertLaTeXtoPDF(String path_infile, String path_outfile)
 ## Convert Markdown to PDF
 
 Load the Markdown source with format-specific options and save it as PDF.
-
-The following example is based on `md-to-pdf.cpp`.
 
 1. Create [MdLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/mdloadoptions/).
 1. Construct a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) with the input file path and the load options.
@@ -192,13 +182,12 @@ void ConvertMarkdownToPDF(String path_infile, String path_outfile)
 
 Load the PostScript source with format-specific options and save it as PDF.
 
-The following example is based on `ps-to-pdf.cpp`.
-
 1. Create [PsLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/psloadoptions/).
 1. Construct a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) with the input file path and the load options.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PsLoadOptions.h>
 
@@ -220,8 +209,6 @@ Provide font search folders when loading a PostScript file.
 
 Replace the sample Windows folder paths with directories available on your system. The source file name and function retain the spelling avdanced from the supplied example.
 
-The following example is based on `ps-to-pdf-avdanced.cpp`.
-
 1. Create [PsLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/psloadoptions/).
 1. Create an array containing the font folder paths.
 1. Assign the array to FontsFolders.
@@ -229,6 +216,7 @@ The following example is based on `ps-to-pdf-avdanced.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PsLoadOptions.h>
 
@@ -251,8 +239,6 @@ void ConvertPostscriptToPDFAvdanced(String path_infile, String path_outfile)
 ## Convert XPS to PDF
 
 Load the XPS source with format-specific options and save it as PDF.
-
-The following example is based on `xps-to-pdf.cpp`.
 
 1. Create [XpsLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/xpsloadoptions/).
 1. Construct a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) with the input file path and the load options.
@@ -280,8 +266,6 @@ Load XML with a companion XSLT stylesheet through XslFoLoadOptions.
 
 Supply both the XML and its corresponding XSLT file. The path substitution expects lowercase .xml; parsing errors are configured to raise an exception immediately.
 
-The following example is based on `xsl_fo-to-pdf.cpp`.
-
 1. Derive the stylesheet path by replacing .xml in the input path with .xslt.
 1. Create [XslFoLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/xslfoloadoptions/) with the stylesheet path.
 1. Set ParsingErrorsHandlingType to ThrowExceptionImmediately.
@@ -289,6 +273,7 @@ The following example is based on `xsl_fo-to-pdf.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/XslFoLoadOptions.h>
 

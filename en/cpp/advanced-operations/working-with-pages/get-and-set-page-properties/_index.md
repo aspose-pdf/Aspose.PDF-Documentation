@@ -23,9 +23,8 @@ The example uses C++17 structured bindings. For changes to page properties, see 
 1. Print each [Rectangle](https://reference.aspose.com/pdf/cpp/aspose.pdf/rectangle/) size and coordinates.
 1. Print the page number and rotation.
 
-Source example: `get-page-properties.cpp`.
-
 ```cpp
+
 #include <iostream>
 #include <utility>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -66,9 +65,8 @@ void GetPageProperties(System::String inputFile)
 1. Read Count from [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Print the page count.
 
-Source example: `get-page-count.cpp`.
-
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -95,9 +93,8 @@ This creates a document in memory and does not require an input PDF or save an o
 1. Call [ProcessParagraphs()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/processparagraphs/) to lay out the generated content.
 1. Read and print the [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) count.
 
-Source example: `get-page-count-without-saving.cpp`.
-
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
@@ -132,9 +129,8 @@ void GetPageCountWithoutSaving()
 1. Read ColorType and compare it with the [ColorType](https://reference.aspose.com/pdf/cpp/aspose.pdf/colortype/) enumeration.
 1. Print the classification for each page.
 
-Source example: `get-page-color-type.cpp`.
-
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/ColorType.h>
 #include <Aspose.PDF.Cpp/Document.h>

@@ -24,6 +24,7 @@ Build a document with a heading and paragraph in the logical structure tree.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
@@ -69,6 +70,7 @@ Combine spans and an emphasized quotation inside a paragraph.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
@@ -138,6 +140,7 @@ Define document metadata and identify the language of each multilingual paragrap
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
@@ -200,6 +203,7 @@ Apply font size, color, and font style to a tagged paragraph.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
@@ -246,6 +250,7 @@ Adjust paragraph margins and layout flags through PositionSettings.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
 #include <Aspose.PDF.Cpp/HorizontalAlignment.h>
@@ -306,6 +311,7 @@ Supply an existing image file. The sample descriptions are placeholders; replace
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Image.h>
 #include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
@@ -360,6 +366,7 @@ This example creates a signature field; it does not sign the document.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Facades/Form.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/SignatureField.h>
@@ -412,6 +419,7 @@ Connect a table-of-contents entry to a heading in the document structure.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/TOCInfo.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -468,6 +476,7 @@ Link a TOC title to a heading and include subheadings as nested list entries.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/TOCInfo.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -562,6 +571,7 @@ The example uses ConvertErrorAction::Delete, which can remove objects that canno
 1. Call [Convert()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/convert/) and save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/AutoTaggingSettings.h>
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/ConvertErrorAction.h>
@@ -604,6 +614,7 @@ A false result indicates that the document did not pass validation. Writing a re
 1. Review the validation report for any reported failures.
 
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>

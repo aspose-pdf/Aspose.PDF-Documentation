@@ -27,7 +27,6 @@ The example lists font names; it does not save embedded font files.
 Source example: `fonts.cpp`.
 
 ```cpp
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>

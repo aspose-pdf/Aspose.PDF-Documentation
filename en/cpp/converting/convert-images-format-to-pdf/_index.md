@@ -17,8 +17,6 @@ Convert image files into PDF documents with Aspose.PDF for C++. These examples p
 
 Place a BMP image on a page in a new PDF document.
 
-The following example is based on `bmp-to-pdf.cpp`.
-
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and set its File property to the input image path.
 1. Add the image to the page's [Paragraphs](https://reference.aspose.com/pdf/cpp/aspose.pdf/paragraphs/) collection.
@@ -56,8 +54,6 @@ void ConvertBMPtoPDF(String path_infile, String path_outfile) {
 ## Convert JPEG to PDF
 
 Place a JPEG image on a page in a new PDF document.
-
-The following example is based on `jpeg-to-pdf.cpp`.
 
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and set its File property to the input image path.
@@ -99,8 +95,6 @@ Use a bitmap to obtain the JPEG dimensions and configure the PDF page size and m
 
 The source adds the same image object twice; it is retained below rather than silently corrected. Review the output if you need a single image placement. Bitmap pixel dimensions are assigned directly to PDF page dimensions; the example does not calculate the page size from image DPI.
 
-The following example is based on `jpeg-to-pdf-fitsize.cpp`.
-
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Open the image file and create a System::Drawing::Bitmap.
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and add it to the page's [Paragraphs](https://reference.aspose.com/pdf/cpp/aspose.pdf/paragraphs/) collection.
@@ -110,8 +104,6 @@ The following example is based on `jpeg-to-pdf-fitsize.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/io/file.h>
-#include <drawing/bitmap.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -159,14 +151,13 @@ void ConvertJPGtoPDF_fitsize(String path_infile, String path_outfile)
 
 Place a PNG image on a page in a new PDF document.
 
-The following example is based on `png-to-pdf.cpp`.
-
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and set its File property to the input image path.
 1. Add the image to the page's [Paragraphs](https://reference.aspose.com/pdf/cpp/aspose.pdf/paragraphs/) collection.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -192,14 +183,13 @@ void ConvertPNGtoPDF(String path_infile, String path_outfile)
 
 Place a EMF image on a page in a new PDF document.
 
-The following example is based on `emf-to-pdf.cpp`.
-
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and set its File property to the input image path.
 1. Add the image to the page's [Paragraphs](https://reference.aspose.com/pdf/cpp/aspose.pdf/paragraphs/) collection.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -234,8 +224,6 @@ void ConvertEMFtoPDF(String path_infile, String path_outfile)
 
 Place a DICOM image on a page in a new PDF document.
 
-The following example is based on `dicom-to-pdf.cpp`.
-
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and set its File property to the DICOM path.
 1. Set FileType to ImageFileType::Dicom.
@@ -243,6 +231,7 @@ The following example is based on `dicom-to-pdf.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -278,8 +267,6 @@ Load a TIFF bitmap and pass its image data to a PDF image through a memory strea
 
 This example creates one PDF page and does not iterate over TIFF frames. It is not an example of exporting every frame of a multipage TIFF.
 
-The following example is based on `tiff-to-pdf.cpp`.
-
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Open the input TIFF as a readable stream and construct a System::Drawing::Bitmap.
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and a System::IO::MemoryStream.
@@ -288,10 +275,6 @@ The following example is based on `tiff-to-pdf.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/io/file.h>
-#include <system/io/memory_stream.h>
-#include <drawing/bitmap.h>
-#include <drawing/imaging/image_format.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -326,15 +309,11 @@ void ConvertTIFFtoPDF(String path_infile, String path_outfile)
 
 Load the CGM source with format-specific options and save it as PDF.
 
-The following example is based on `cgm-to-pdf.cpp`.
-
 1. Create [CgmLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/cgmloadoptions/).
 1. Construct a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) with the input file path and the load options.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/console.h>
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -358,14 +337,11 @@ void ConvertCGMtoPDF(String path_infile, String path_outfile)
 
 Load the SVG source with format-specific options and save it as PDF.
 
-The following example is based on `svg-to-pdf.cpp`.
-
 1. Create [SvgLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/svgloadoptions/).
 1. Construct a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) with the input file path and the load options.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <Aspose.PDF.Cpp/Document.h>
 
 #include <Aspose.PDF.Cpp/SvgLoadOptions.h>
 
@@ -385,8 +361,6 @@ void ConvertSVGtoPDF(String path_infile, String path_outfile)
 
 Enable automatic page size adjustment and select the SVG conversion engine used by the supplied example.
 
-The following example is based on `svg-to-pdf-advanced.cpp`.
-
 1. Create [SvgLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/svgloadoptions/).
 1. Set AdjustPageSize to true.
 1. Set ConversionEngine to SvgLoadOptions::ConversionEngines::NewEngine.
@@ -394,6 +368,7 @@ The following example is based on `svg-to-pdf-advanced.cpp`.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/SvgLoadOptions.h>
 

@@ -28,8 +28,6 @@ The input must have page 1 and at least one image resource on it. The example do
 Source example: `images.cpp`.
 
 ```cpp
-#include <system/io/file.h>
-#include <drawing/imaging/image_format.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>

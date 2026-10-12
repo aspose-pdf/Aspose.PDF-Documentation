@@ -22,9 +22,8 @@ Add a text stamp to a PDF page and configure its font, color, position, and rota
 1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) on page 1.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-text-stamp.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Text/TextState.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Color.h>

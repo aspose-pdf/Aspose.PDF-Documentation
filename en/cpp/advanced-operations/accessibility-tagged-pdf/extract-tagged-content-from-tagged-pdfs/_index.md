@@ -24,6 +24,7 @@ This example creates a new document; it does not extract text from an existing P
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/StructureElement.h>
@@ -55,6 +56,7 @@ Retrieve the structure-tree root and the document root element.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
@@ -96,6 +98,7 @@ The sample assumes that the root contains a child at index 1. Inspect the input 
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>

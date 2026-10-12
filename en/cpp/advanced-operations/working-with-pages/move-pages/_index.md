@@ -22,9 +22,8 @@ Supply distinct sourceOutputFile and outputFile paths. The input must contain pa
 1. Call [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) to remove page 2 from the source.
 1. Save the modified source and destination to separate paths with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `move-page-from-one-document-to-another.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -55,9 +54,8 @@ Use a PDF with at least two pages and distinct output paths.
 1. Pass the selected page array to [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) on the source.
 1. Save the modified source to sourceOutputFile with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `move-bunch-pages-from-one-document-to-another.cpp`.
-
 ```cpp
+
 #include <system/array.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -91,9 +89,8 @@ This example moves page 2 to the end; it does not accept an arbitrary destinatio
 1. Remove the original page 2 with [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `move-page-in-new-location-in-same-document.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>

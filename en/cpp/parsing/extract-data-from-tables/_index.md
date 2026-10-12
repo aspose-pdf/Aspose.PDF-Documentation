@@ -26,7 +26,6 @@ Print text from tables detected on every page.
 Source example: `table-01.cpp`.
 
 ```cpp
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -95,8 +94,6 @@ The boundary checks use strict inequalities; tables touching the annotation boun
 Source example: `table-02.cpp`.
 
 ```cpp
-#include <system/console.h>
-#include <system/text/string_builder.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -188,7 +185,6 @@ This converts the document to Excel; it does not export a selected TableAbsorber
 Source example: `table-03.cpp`.
 
 ```cpp
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ExcelSaveOptions.h>

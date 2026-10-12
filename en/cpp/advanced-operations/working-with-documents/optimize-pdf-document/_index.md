@@ -22,7 +22,6 @@ Several examples use the following helper to compare file sizes. Save it as `opt
 1. Print both sizes for comparison.
 
 ```cpp
-#pragma once
 
 #include <cstdint>
 #include <system/console.h>
@@ -74,8 +73,6 @@ void OptimizePdf(String inputFile, String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Print the input and output sizes.
 
-Source example: `optimize-document-02.cpp`.
-
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include "optimize-file-sizes.h"
@@ -103,8 +100,6 @@ Image compression can reduce visual quality. Review the output before choosing a
 1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Print the input and output sizes.
-
-Source example: `optimize-document-03.cpp`.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
@@ -136,8 +131,6 @@ void ShrinkingOrCompressingAllImages(String inputFile, String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Print the input and output sizes.
 
-Source example: `optimize-document-04.cpp`.
-
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
@@ -166,8 +159,6 @@ void RemovingUnusedObjects(String inputFile, String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Print the input and output sizes.
 
-Source example: `optimize-document-05.cpp`.
-
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
@@ -195,8 +186,6 @@ void RemovingUnusedStreams(String inputFile, String outputFile)
 1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Print the input and output sizes.
-
-Source example: `optimize-document-06.cpp`.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
@@ -228,8 +217,6 @@ Removing embedded fonts makes rendering dependent on fonts available to the view
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Print the input and output sizes.
 
-Source example: `optimize-document-07.cpp`.
-
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
@@ -258,8 +245,6 @@ Reverse iteration accounts for annotations being removed during flattening.
 1. Iterate through every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Traverse the annotations in reverse order and call [Flatten()](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/annotation/) on each one.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
-
-Source example: `optimize-document-08.cpp`.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
@@ -294,8 +279,6 @@ Flattened fields no longer provide interactive form entry.
 1. Call [Flatten()](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/field/) on each field in the snapshot.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 1. Print the input and output sizes.
-
-Source example: `optimize-document-09.cpp`.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
@@ -332,8 +315,6 @@ Grayscale conversion changes page colors; file-size reduction depends on the inp
 1. Iterate through each [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) and call [MakeGrayscale()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `optimize-document-10.cpp`.
-
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -358,9 +339,7 @@ void ConvertPdfFromRgbColorspaceToGrayscale(String inputFile, String outputFile)
 1. Create [OptimizationOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/optimizationoptions/).
 1. Set the [ImageCompressionOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/imagecompressionoptions/) Encoding property to ImageEncoding::Flate.
 1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
-1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
-
-Source example: `optimize-document-11.cpp`.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/)
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>

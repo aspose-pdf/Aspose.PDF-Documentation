@@ -31,6 +31,7 @@ The example creates 50 body rows and uses Arial for cell text. Make sure the fon
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
@@ -167,6 +168,7 @@ The merged-cell branch is disabled in this example. For active row and column sp
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Table/VerticalBroken.h>
@@ -312,6 +314,7 @@ Apply row height, pagination, borders, padding, and default cell text settings.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
@@ -398,6 +401,7 @@ Set cell appearance and merge a cell across two rows and two columns.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
@@ -519,6 +523,7 @@ Apply PositionSettings to a tagged table before adding its rows and cells.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>

@@ -22,9 +22,8 @@ Add text, images, HTML, LaTeX, tables, and page-number placeholders to PDF heade
 1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-header-and-footer-as-text.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
@@ -72,9 +71,8 @@ void AddHeaderAndFooterAsText(System::String inputFile, System::String outputFil
 1. Set the margins and assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-header-and-footer-as-image.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
 #include <Aspose.PDF.Cpp/Generator/Image.h>
@@ -123,9 +121,8 @@ The supplied README reports that this example compiled but threw from HtmlFragme
 1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-header-and-footer-as-html.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
 #include <Aspose.PDF.Cpp/Generator/HtmlFragment.h>
@@ -173,9 +170,8 @@ The footer includes the supplied literal year 2025 and interpolates the total pa
 1. Assign the header and footer to the [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-header-and-footer-as-latex.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
 #include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
@@ -218,9 +214,8 @@ Column widths use the sample's fixed value 594 and the header or footer margins.
 1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-header-and-footer-as-table.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Table/Cell.h>
 #include <Aspose.PDF.Cpp/Table/Cells.h>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -288,9 +283,8 @@ void AddHeaderAndFooterAsTable(System::String inputFile, System::String outputFi
 1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `using-header-and-footer-for-page-numbering.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>

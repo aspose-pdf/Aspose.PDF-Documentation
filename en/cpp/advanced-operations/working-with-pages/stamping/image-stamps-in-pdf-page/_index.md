@@ -21,9 +21,8 @@ Add image stamps with position, size, rotation, opacity, or quality settings and
 1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) on page 1.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-image-stamp.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ImageStamp.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -62,9 +61,8 @@ The low quality setting can affect image appearance. Review the saved output.
 1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) on page 1.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-image-stamp-with-quality-control.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ImageStamp.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -96,9 +94,8 @@ This adds a paragraph-based floating box rather than calling AddStamp().
 1. Set the background color and add the box to the page paragraphs.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `add-image-as-background-in-floating-box.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
 #include <Aspose.PDF.Cpp/Generator/BorderSide.h>
 #include <Aspose.PDF.Cpp/Color.h>

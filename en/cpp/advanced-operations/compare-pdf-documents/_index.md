@@ -28,6 +28,7 @@ Export the graphical differences between the first page of each input PDF as a P
 1. Release the comparison result with Dispose().
 
 ```cpp
+
 #include <iostream>
 #include <drawing/bitmap.h>
 #include <drawing/imaging/image_format.h>
@@ -74,6 +75,7 @@ Page collection indices start at 1. Change the selected indices to compare anoth
 1. Pass the selected pages, output path, and options to [SideBySidePdfComparer::Compare()](https://reference.aspose.com/pdf/cpp/aspose.pdf.comparison/sidebysidepdfcomparer/compare/).
 
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -111,6 +113,7 @@ Generate a PDF report that highlights graphical differences between two document
 1. Call [CompareDocumentsToPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.comparison/graphicalpdfcomparer/) with both documents and the output file path.
 
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -147,6 +150,7 @@ Compare two PDF files page by page and save the marked results in a single PDF. 
 1. Open the resulting PDF in two-page view to review corresponding pages side by side.
 
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySideComparisonOptions.h>

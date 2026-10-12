@@ -28,8 +28,6 @@ Supply a valid page number and rectangle in the page coordinate system.
 Source example: `region-based.cpp`.
 
 ```cpp
-#include <system/io/file.h>
-#include <system/io/memory_stream.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Rectangle.h>

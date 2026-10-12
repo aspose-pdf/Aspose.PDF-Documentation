@@ -22,9 +22,8 @@ The example leaves MediaBox unchanged. Page-box changes affect the visible or pr
 1. Set CropBox, TrimBox, ArtBox, and BleedBox on the first [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `crop-page.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -57,9 +56,8 @@ This crops to the first image placement only; it does not calculate a bounding b
 1. Otherwise, print that no images were found.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `crop-page-by-content.cpp`.
-
 ```cpp
+
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ImagePlacement.h>

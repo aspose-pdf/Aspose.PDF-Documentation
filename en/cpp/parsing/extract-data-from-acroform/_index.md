@@ -25,7 +25,6 @@ Print the partial name and value of each form field.
 Source example: `acroforms-01.cpp`.
 
 ```cpp
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 
@@ -57,7 +56,6 @@ Write the form data to an XML output stream.
 Source example: `acroforms-02.cpp`.
 
 ```cpp
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
 
@@ -87,7 +85,6 @@ Write the form data to a FDF output stream.
 Source example: `acroforms-03.cpp`.
 
 ```cpp
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
 
@@ -117,7 +114,6 @@ Write the form data to an XFDF output stream.
 Source example: `acroforms-04.cpp`.
 
 ```cpp
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
 
@@ -150,7 +146,6 @@ The helper only escapes backslashes and quotation marks. Values containing contr
 Source example: `acroforms-05.cpp`.
 
 ```cpp
-#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Facades/Form.h>

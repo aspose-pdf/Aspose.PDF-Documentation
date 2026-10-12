@@ -26,6 +26,7 @@ Add accessibility metadata to a heading nested inside a section.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
@@ -73,6 +74,7 @@ Add a tagged paragraph with text to the document root.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
@@ -110,6 +112,7 @@ Build headings at levels one through six followed by a paragraph.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
@@ -154,6 +157,7 @@ Compose headings and paragraphs from inline span elements.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
@@ -216,6 +220,7 @@ Supply an existing image file. The example includes a multiline text link.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/WebHyperlink.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
@@ -289,6 +294,7 @@ Despite its function name AddLinkElement, this example creates spans. It does no
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
@@ -338,6 +344,7 @@ Create note elements with automatically generated and explicit IDs.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Note.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
@@ -391,6 +398,7 @@ Assign custom tags to paragraphs and spans within a section.
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>

@@ -21,9 +21,8 @@ The input PDF must contain page 2. The source document is not modified.
 1. Call [CopyPage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) to copy page 2 into the output document.
 1. Save the output with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `extract-page.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -51,9 +50,8 @@ The input PDF must contain at least three pages.
 1. Call [CopyPage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) for each selected page in the supplied order.
 1. Save the output with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `extract-bunch-pages.cpp`.
-
 ```cpp
+
 #include <system/array.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

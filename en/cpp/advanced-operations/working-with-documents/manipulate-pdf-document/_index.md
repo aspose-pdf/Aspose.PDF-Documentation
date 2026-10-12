@@ -21,11 +21,7 @@ The output path is a validation report, not a converted PDF. Validation does not
 1. Call [Validate()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/validate/) with the report output path and PdfFormat::PDF_A_1A.
 1. Use the Boolean result to print the validation status.
 
-Source example: `manipulate-document-01.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>
@@ -50,11 +46,7 @@ void ValidatePdfaStandardA1a(String inputFile, String outputFile) {
 1. Call [Validate()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/validate/) with the report output path and PdfFormat::PDF_A_1B.
 1. Use the Boolean result to print the validation status.
 
-Source example: `manipulate-document-02.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>
@@ -84,11 +76,7 @@ The example uses two supplied titles rather than detecting headings from the inp
 1. Set each destination page and top coordinate, and add each entry to the TOC page.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `manipulate-document-03.cpp`.
-
 ```cpp
-#include <system/string.h>
-#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -143,11 +131,7 @@ void AddTableOfContents(String inputFile, String outputFile) {
 1. Enable automatic sequence and inclusion in the TOC.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `manipulate-document-04.cpp`.
-
 ```cpp
-#include <system/console.h>
-#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Heading.h>
@@ -221,11 +205,7 @@ void SetTocLevels(String inputFile, String outputFile)
 1. Configure the level formats and add a sample [Heading](https://reference.aspose.com/pdf/cpp/aspose.pdf/heading/) to a new content page.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `manipulate-document-05.cpp`.
-
 ```cpp
-#include <system/console.h>
-#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Heading.h>
@@ -288,11 +268,7 @@ void HidePageNumbersInToc(String inputFile, String outputFile)
 1. Create [Heading](https://reference.aspose.com/pdf/cpp/aspose.pdf/heading/) entries for all remaining pages and assign their destinations.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `manipulate-document-06.cpp`.
-
 ```cpp
-#include <system/console.h>
-#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Heading.h>
@@ -348,8 +324,6 @@ This displays an alert in viewers that support and enable PDF JavaScript. It doe
 1. Assign a [JavascriptAction](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/javascriptaction/) to OpenAction.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `manipulate-document-07.cpp`.
-
 ```cpp
 #include <system/date_time.h>
 #include <system/string.h>
@@ -383,11 +357,7 @@ Flattening turns interactive content into page content. Keep the original PDF if
 1. Call [Flatten()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/flatten/) on the document.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `manipulate-document-08.cpp`.
-
 ```cpp
-#include <system/console.h>
-#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 

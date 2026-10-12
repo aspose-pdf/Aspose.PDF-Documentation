@@ -21,9 +21,8 @@ The input PDF must contain page 2.
 1. Call [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) on [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) for page 2.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `delete-page.cpp`.
-
 ```cpp
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -50,9 +49,8 @@ The input PDF must contain at least four pages.
 1. Pass the array to [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) on [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-Source example: `delete-bunch-pages.cpp`.
-
 ```cpp
+
 #include <system/array.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
