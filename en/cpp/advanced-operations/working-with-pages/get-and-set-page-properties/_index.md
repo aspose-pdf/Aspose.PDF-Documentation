@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read PDF Page Boxes, Rotation, Counts, and Colors in C++
+Abstract: Learn how to inspect page boxes, rotation, page counts, and color types with Aspose.PDF for C++. The examples also calculate the page count of a generated document before saving.
 ---
 
 Inspect page counts, page boxes, rotation, and color types, and calculate a generated document's page count before saving with Aspose.PDF for C++.

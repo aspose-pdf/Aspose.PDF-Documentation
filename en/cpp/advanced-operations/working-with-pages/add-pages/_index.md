@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Append, Insert, and Copy Pages into PDFs in C++
+Abstract: Learn how to append a blank PDF page or insert one at a specified position with Aspose.PDF for C++. A separate example copies a page from another PDF document.
 ---
 
 Add blank pages, insert a page at a specific position, or copy a page from another PDF using Aspose.PDF for C++.

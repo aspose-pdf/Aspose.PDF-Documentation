@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Manage PDF Documents, Pages, Accessibility, and Invoices in C++
+Abstract: Explore advanced PDF processing with Aspose.PDF for C++, including document and page management, comparison, and tagged content. The guides also cover accessibility validation and embedding invoice XML.
 ---
 
 This section covers PDF processing features beyond basic document creation, opening, and saving. Use the following guides to manage documents, compare PDF files, work with accessibility and logical structure, and attach invoice XML in C++.

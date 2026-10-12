@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Validate PDF/A, Build Contents, and Flatten PDFs in C++
+Abstract: Learn how to validate PDF/A documents and create or format a table of contents with Aspose.PDF for C++. Additional examples add an expiry-date alert and flatten PDF content.
 ---
 
 Validate PDF/A documents, create and format a table of contents, add an expiry alert, and flatten a PDF with Aspose.PDF for C++.

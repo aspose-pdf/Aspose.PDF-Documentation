@@ -5,10 +5,13 @@ type: docs
 weight: 40
 url: /cpp/working-with-table-in-tagged-pdfs/
 description: Create and style tagged PDF tables in C++, including headers, body rows, footers, merged cells, summaries, and positioning.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create and Style Accessible PDF Table Structures in C++
+Abstract: Learn how to build tagged PDF tables with header, body, and footer elements using Aspose.PDF for C++. Configure summaries, merged cells, table and cell styles, and positioning.
 ---
 
 Create tagged tables with explicit header, body, and footer elements using Aspose.PDF for C++. The examples show how to describe a table, merge cells, style tables and rows, and adjust their position.

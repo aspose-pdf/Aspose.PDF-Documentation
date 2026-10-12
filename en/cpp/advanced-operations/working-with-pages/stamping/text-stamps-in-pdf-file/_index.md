@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Position, Rotate, and Style PDF Text Stamps in C++
+Abstract: Learn how to add a TextStamp to a PDF page with Aspose.PDF for C++. Configure the stamp's font, color, position, background mode, and rotation before saving.
 ---
 
 Add a text stamp to a PDF page and configure its font, color, position, and rotation using Aspose.PDF for C++.

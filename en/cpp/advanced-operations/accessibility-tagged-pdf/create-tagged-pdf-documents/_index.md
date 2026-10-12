@@ -5,10 +5,13 @@ type: docs
 weight: 10
 url: /cpp/create-tagged-pdf/
 description: Create tagged PDFs in C++ with headings, figures, forms, tables of contents, automatic tagging, and PDF/UA validation.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Build Tagged PDF Structure and Validate PDF/UA in C++
+Abstract: Learn how to create tagged PDF content with Aspose.PDF for C++, including headings, paragraphs, figures, form fields, and tables of contents. The examples also demonstrate automatic tagging and PDF/UA-1 validation.
 ---
 
 Use Aspose.PDF for C++ to build a logical structure tree for PDF content, set language and title metadata, and associate visible content with structure elements. This page covers tagged document creation, text styling, images, form fields, tables of contents, automatic tagging, and validation.

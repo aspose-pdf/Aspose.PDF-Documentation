@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Remove Single or Multiple Pages from PDFs in C++
+Abstract: Learn how to delete one PDF page or a selected set of pages with Aspose.PDF for C++. Save the modified document after removing the specified pages.
 ---
 
 Remove one page or a selected set of pages from a PDF document using Aspose.PDF for C++.

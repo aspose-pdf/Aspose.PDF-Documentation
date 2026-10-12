@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Inspect PDF Dimensions and Set Page Size in C++
+Abstract: Learn how to read PDF page dimensions and compare page rectangles with and without rotation using Aspose.PDF for C++. The resizing example sets the dimensions of the first page.
 ---
 
 Read PDF page dimensions, compare rectangles with and without rotation, and set a page size using Aspose.PDF for C++.

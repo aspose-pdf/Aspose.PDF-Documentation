@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Apply PDF Image, Text, Page, and Number Stamps in C++
+Abstract: Explore PDF stamping workflows with Aspose.PDF for C++. The guides cover image and text stamps, page numbering, and using content from another PDF page as a stamp.
 ---
 
 Add image, text, page-number, and PDF-page stamps to PDF pages using Aspose.PDF for C++.

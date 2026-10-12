@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Overlay a Source PDF Page as a Background in C++
+Abstract: Learn how to use PdfPageStamp to overlay the first page of another PDF on a target document's first page with Aspose.PDF for C++. The stamp uses background mode and adds page content without inserting a new page.
 ---
 
 Use the first page of another PDF as a background stamp on the first page of a target PDF with Aspose.PDF for C++.

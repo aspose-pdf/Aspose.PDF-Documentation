@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Transfer PDF Pages and Reorder a Document in C++
+Abstract: Learn how to move one or several pages into a new PDF with Aspose.PDF for C++. Another example moves the second page to the end of its original document.
 ---
 
 Move pages to a new PDF or move a page to the end of its original document using Aspose.PDF for C++.

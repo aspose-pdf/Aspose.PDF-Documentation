@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create PDF Headers and Footers with Mixed Content in C++
+Abstract: Learn how to add text, image, HTML, LaTeX, and table content to PDF headers and footers with Aspose.PDF for C++. The examples also demonstrate page-number placeholders.
 ---
 
 Add text, images, HTML, LaTeX, tables, and page-number placeholders to PDF headers and footers using Aspose.PDF for C++.

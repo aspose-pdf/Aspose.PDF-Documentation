@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Number PDF Pages with Decimal or Roman Stamps in C++
+Abstract: Learn how to add a page-number stamp to the first PDF page with Aspose.PDF for C++. A second example applies Roman-number stamps across all pages.
 ---
 
 Add a page-number stamp to the first PDF page or use Roman-number stamps on all pages with Aspose.PDF for C++.

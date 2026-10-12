@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Lock, Export, Flatten, and Merge PDF Layers in C++
+Abstract: Learn how to inspect and manage layers on the first PDF page with Aspose.PDF for C++. The examples demonstrate locking, exporting, flattening, and merging layers, along with a layer-creation example.
 ---
 
 Inspect the supplied layer-creation example and lock, export, flatten, or merge layers on the first PDF page with Aspose.PDF for C++.

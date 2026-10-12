@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Copy Selected PDF Pages to Separate Documents in C++
+Abstract: Learn how to extract one or several PDF pages into a new document with Aspose.PDF for C++. The examples copy the selected pages while retaining the input file.
 ---
 
 Copy selected PDF pages into a new document while retaining the input file using Aspose.PDF for C++.

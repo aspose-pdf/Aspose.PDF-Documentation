@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Combine PDF Files, Page Ranges, and Bookmarked Sections in C++
+Abstract: Learn how to combine PDF documents and selected page ranges with Aspose.PDF for C++. The examples insert documents, alternate pages, and add section separators and bookmarks.
 ---
 
 Combine PDF files in sequence, merge selected ranges, insert or alternate pages, and add section separators and bookmarks with Aspose.PDF for C++.

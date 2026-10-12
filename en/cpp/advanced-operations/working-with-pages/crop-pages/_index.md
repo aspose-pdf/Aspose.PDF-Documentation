@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Set PDF Page Boxes and Crop to Image Bounds in C++
+Abstract: Learn how to change PDF page boxes to a supplied rectangle with Aspose.PDF for C++. Another example crops the first page to the bounds of its first detected image placement.
 ---
 
 Change PDF page boxes or crop the first page to its first detected image placement using Aspose.PDF for C++.

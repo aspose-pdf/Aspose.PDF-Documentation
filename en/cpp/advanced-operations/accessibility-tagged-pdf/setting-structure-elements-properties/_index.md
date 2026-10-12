@@ -5,10 +5,13 @@ type: docs
 weight: 30
 url: /cpp/setting-structure-elements-properties/
 description: Set tagged PDF structure properties in C++, including text, language, alternative descriptions, links, notes, and custom tag names.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Configure Tagged PDF Text, Links, and Accessibility Properties in C++
+Abstract: Learn how to set text, language, and alternative descriptions on tagged PDF structure elements with Aspose.PDF for C++. The examples also cover spans, links, notes, and custom tag names.
 ---
 
 Configure the content and accessibility metadata of tagged PDF structure elements with Aspose.PDF for C++. This page covers headings, paragraphs, inline spans, links, notes, and custom tags.

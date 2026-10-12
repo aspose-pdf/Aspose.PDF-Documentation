@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Attach Invoice XML with Associated-File Metadata in C++
+Abstract: Learn how to embed an existing invoice XML file in a PDF with Aspose.PDF for C++. Configure the attachment MIME type and associated-file relationship, then convert the document to PDF/A-3A.
 ---
 
 Embed an existing XML invoice in a PDF using Aspose.PDF for C++. The example sets the attachment MIME type and associated-file relationship, adds the XML to the document, and converts the result to PDF/A-3A.

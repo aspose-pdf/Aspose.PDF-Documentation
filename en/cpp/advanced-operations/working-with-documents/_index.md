@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create, Combine, Optimize, and Organize PDF Documents in C++
+Abstract: Explore document-level PDF workflows with Aspose.PDF for C++. The guides cover creation, viewer preferences, validation, merging, optimization, splitting, and layer management.
 ---
 
 Use Aspose.PDF for C++ to create, format, validate, merge, optimize, and split PDF documents and manage page layers. The guides below cover document-level operations using the supplied C++ examples.

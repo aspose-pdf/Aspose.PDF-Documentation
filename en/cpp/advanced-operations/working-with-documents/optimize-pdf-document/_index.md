@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Compress PDF Images and Remove Unused Resources in C++
+Abstract: Learn how to optimize PDF resources, compress images, and remove unused or duplicate data with Aspose.PDF for C++. Additional examples flatten interactive content and convert pages to grayscale; file-size results depend on the input PDF.
 ---
 
 Optimize PDF resources, compress images, remove unused data, flatten interactive content, and convert pages to grayscale with Aspose.PDF for C++.

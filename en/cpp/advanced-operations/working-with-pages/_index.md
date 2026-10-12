@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Organize, Resize, Rotate, and Stamp PDF Pages in C++
+Abstract: Explore page-level PDF operations with Aspose.PDF for C++, including adding, deleting, extracting, and moving pages. The guides also cover page properties, size, cropping, rotation, stamps, headers, and footers.
 ---
 
 Add, delete, extract, move, resize, crop, rotate, and stamp PDF pages and configure headers and footers using Aspose.PDF for C++.

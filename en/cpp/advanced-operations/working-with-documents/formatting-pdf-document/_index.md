@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Configure PDF Viewer Preferences, Fonts, and Opening Zoom in C++
+Abstract: Learn how to read and configure PDF viewer preferences with Aspose.PDF for C++. The examples also cover font embedding, font subsets, default fonts, and document opening zoom.
 ---
 
 Inspect and configure PDF viewer preferences, font embedding, font subsets, and opening zoom with Aspose.PDF for C++.

@@ -5,10 +5,13 @@ type: docs
 weight: 20
 url: /cpp/extract-tagged-content-from-tagged-pdfs/
 description: Access tagged PDF content in C++, inspect structure roots and child elements, and update accessibility metadata.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Inspect PDF Structure Roots and Update Tagged Content in C++
+Abstract: Learn how to access the tagged content container and logical structure roots with Aspose.PDF for C++. Inspect child elements and update their content and accessibility metadata.
 ---
 
 Access the tagged content container and inspect the logical structure of PDF documents with Aspose.PDF for C++. The examples show metadata initialization, structure root access, and inspection and modification of child elements.

@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Separate PDF Pages into Ranges and Custom Groups in C++
+Abstract: Learn how to split PDF documents into individual pages, balanced parts, or selected ranges with Aspose.PDF for C++. The examples also create custom page groups and separate odd and even pages.
 ---
 
 Split PDF documents into individual pages, balanced parts, page ranges, custom groups, or odd and even pages with Aspose.PDF for C++.

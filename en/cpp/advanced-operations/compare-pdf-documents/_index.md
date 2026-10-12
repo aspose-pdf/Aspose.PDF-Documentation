@@ -5,10 +5,13 @@ type: docs
 weight: 130
 url: /cpp/compare-pdf-documents/
 description: Compare PDF pages and entire documents in C++ with side-by-side PDF output, graphical reports, and PNG difference images.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Find PDF Page and Document Differences in C++
+Abstract: Learn how to compare selected pages or entire PDF documents with Aspose.PDF for C++. Use side-by-side comparisons, graphical PDF reports, and PNG images to review differences.
 ---
 
 Aspose.PDF for C++ provides APIs to compare selected PDF pages or entire documents. Use [SideBySidePdfComparer](https://reference.aspose.com/pdf/cpp/aspose.pdf.comparison/sidebysidepdfcomparer/) for marked page pairs and [GraphicalPdfComparer](https://reference.aspose.com/pdf/cpp/aspose.pdf.comparison/graphicalpdfcomparer/) for image-based differences and graphical PDF reports.

@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Position and Style PDF Image Stamps in C++
+Abstract: Learn how to configure image stamp position, dimensions, rotation, opacity, and quality with Aspose.PDF for C++. The examples also add a background image through a floating box.
 ---
 
 Add image stamps with position, size, rotation, opacity, or quality settings and add a floating-box background image using Aspose.PDF for C++.

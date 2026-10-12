@@ -5,10 +5,13 @@ type: docs
 weight: 180
 url: /cpp/accessibility-tagged-pdf/
 description: Create and inspect tagged PDF documents in C++, configure structure properties and tables, and validate PDF/UA with Aspose.PDF.
-lastmod: "2026-10-11"
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Build and Inspect Tagged PDFs for Accessibility in C++
+Abstract: Explore logical structure and accessibility workflows with Aspose.PDF for C++. The guides cover tagged document creation, structure properties, tables, content inspection, and PDF/UA-1 validation.
 ---
 
 Tagged PDF documents describe content through a logical structure tree. Headings, paragraphs, figures, form fields, and tables give assistive technologies information about the content and its organization. Aspose.PDF for C++ provides APIs to create and inspect this structure and validate a document against PDF/UA-1.

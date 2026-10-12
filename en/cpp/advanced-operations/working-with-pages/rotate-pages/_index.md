@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Set Every PDF Page to 90-Degree Rotation in C++
+Abstract: Learn how to iterate through a PDF document and set each page's rotation with Aspose.PDF for C++. The example assigns 90-degree rotation to every page and saves the result.
 ---
 
 Set the rotation of every PDF page to 90 degrees using Aspose.PDF for C++.

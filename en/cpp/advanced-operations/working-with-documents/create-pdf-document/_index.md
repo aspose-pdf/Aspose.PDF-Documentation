@@ -9,6 +9,9 @@ lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Generate Text PDFs and Add Searchable OCR Text in C++
+Abstract: Learn how to create a PDF page containing text with Aspose.PDF for C++. A separate example uses an external Tesseract OCR callback to add searchable text to a scanned PDF.
 ---
 
 Create a PDF from text or add searchable text to a scanned PDF through an external OCR callback with Aspose.PDF for C++.
