@@ -184,7 +184,7 @@ void ConvertPNGtoPDF(String path_infile, String path_outfile)
 
 ## Convert EMF to PDF
 
-Place a EMF image on a page in a new PDF document.
+Place an EMF image on a page in a new PDF document.
 
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page with [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and set its File property to the input image path.
