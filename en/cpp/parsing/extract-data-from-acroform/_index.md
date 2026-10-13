@@ -25,8 +25,6 @@ Print the partial name and value of each form field.
 1. Iterate through the fields and read PartialName and Value.
 1. Print each name and value.
 
-Source example: `acroforms-01.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>
@@ -56,8 +54,6 @@ Write the form data to an XML output stream.
 1. Call [ExportXml()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) with the stream.
 1. Close the output stream.
 
-Source example: `acroforms-02.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
@@ -85,8 +81,6 @@ Write the form data to a FDF output stream.
 1. Call [ExportFdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) with the stream.
 1. Close the output stream.
 
-Source example: `acroforms-03.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
@@ -113,8 +107,6 @@ Write the form data to an XFDF output stream.
 1. Open a writable output stream.
 1. Call [ExportXfdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) with the stream.
 1. Close the output stream.
-
-Source example: `acroforms-04.cpp`.
 
 ```cpp
 
@@ -145,8 +137,6 @@ The helper only escapes backslashes and quotation marks. Values containing contr
 1. Escape backslashes and quotation marks using the supplied helper.
 1. Build the object text with StringBuilder.
 1. Save the text to inputFile + .json.
-
-Source example: `acroforms-05.cpp`.
 
 ```cpp
 
