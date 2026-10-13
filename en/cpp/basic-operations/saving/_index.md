@@ -18,8 +18,6 @@ Use [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) to per
 
 ## Save a PDF to a file
 
-The example from `save-document-01.cpp` adds an empty page and saves the modified document to the output path.
-
 1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
 1. Add an empty page with [PageCollection::Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Save the modified document to the output path with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).

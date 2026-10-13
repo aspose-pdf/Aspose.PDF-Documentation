@@ -18,8 +18,6 @@ Create PDF files programmatically for reports, invoices, and other generated doc
 
 ## Create a PDF with text
 
-The example from `create-pdf.cpp` creates a single-page PDF containing “Hello World!”.
-
 1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
 1. Add a page to the document with [PageCollection::Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
 1. Create a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) containing Hello World!.
