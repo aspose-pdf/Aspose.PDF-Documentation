@@ -26,8 +26,6 @@ Write bounds, positions, and operator counts for graphics detected on page 1.
 1. Read Rectangle, Position, and the operator count.
 1. Write the report to the output file.
 
-Source example: `vector-01.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>
@@ -74,8 +72,6 @@ The example does not inspect the method return value. Check whether export succe
 1. Select the first [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
 1. Call [TrySaveVectorGraphics()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) with the output path.
 
-Source example: `vector-02.cpp`.
-
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -101,8 +97,6 @@ Export each absorbed graphics element to a file in a subpaths directory.
 1. Create the subpaths output directory.
 1. Iterate through the [GraphicElement](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/) collection.
 1. Call [SaveToSvg()](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/) with a unique subpath_N.svg file name.
-
-Source example: `vector-03.cpp`.
 
 ```cpp
 
@@ -144,8 +138,6 @@ The helper checks for missing SVG tags but is a string-based extraction helper. 
 1. Serialize each [GraphicElement](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/) with [SaveToSvg()](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/).
 1. Use extractSvgContent() to strip its outer SVG wrapper.
 1. Append the inner content, close the SVG root, and write the output file.
-
-Source example: `vector-04.cpp`.
 
 ```cpp
 
@@ -218,8 +210,6 @@ The function may produce no output when the requested elements are absent. These
 1. Select the element at index 1.
 1. If it is an [XFormPlacement](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/xformplacement/), export its nested element at index 2 when present.
 1. Otherwise, export the selected [GraphicElement](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/) with [SaveToSvg()](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/).
-
-Source example: `vector-05.cpp`.
 
 ```cpp
 

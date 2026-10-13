@@ -26,8 +26,6 @@ Supply a valid page number and rectangle in the page coordinate system.
 1. Select pageNumber and call Accept() with the absorber.
 1. Write the extracted text to the output file.
 
-Source example: `region-based.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>

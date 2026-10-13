@@ -25,8 +25,6 @@ Read text marked by highlight annotations on page 1.
 1. Select Highlight annotations and cast them to [HighlightAnnotation](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/highlightannotation/).
 1. Call [GetMarkedText()](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/highlightannotation/) and print the result.
 
-Source example: `annotation.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>
@@ -62,8 +60,6 @@ This requires a suitable normal appearance containing extractable text; it does 
 1. Create a [TextAbsorber](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textabsorber/).
 1. Get the normal appearance entry N and cast it to an XForm.
 1. Visit the appearance with the absorber and print its text.
-
-Source example: `annotation-02.cpp`.
 
 ```cpp
 
@@ -106,8 +102,6 @@ Despite the function name ExtractSuperSubText, this example extracts all page te
 1. Select pageNumber and call Accept() with the absorber.
 1. Write the extracted text to the output file.
 
-Source example: `annotation-03.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>
@@ -138,8 +132,6 @@ Report text and formatting flags for every fragment on a selected page.
 1. Iterate through the extracted fragments.
 1. Read each fragment text and the Superscript and Subscript flags from its text state.
 1. Write the details to the output file.
-
-Source example: `annotation-04.cpp`.
 
 ```cpp
 
