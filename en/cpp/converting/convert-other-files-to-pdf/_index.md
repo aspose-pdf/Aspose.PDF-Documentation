@@ -210,7 +210,7 @@ void ConvertPostscriptToPDF(String path_infile, String path_outfile)
 
 Provide font search folders when loading a PostScript file.
 
-Replace the sample Windows folder paths with directories available on your system. The source file name and function retain the spelling avdanced from the supplied example.
+Replace the sample Windows folder paths with directories available on your system. The source file name and function retain the misspelling "avdanced" from the supplied example.
 
 1. Create [PsLoadOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/psloadoptions/).
 1. Create an array containing the font folder paths.
