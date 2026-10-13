@@ -27,8 +27,6 @@ The example lists font names; it does not save embedded font files.
 1. Iterate through the [Font](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/font/) objects and read FontName.
 1. Print each font name.
 
-Source example: `fonts.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>

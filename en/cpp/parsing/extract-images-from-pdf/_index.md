@@ -28,8 +28,6 @@ The input must have page 1 and at least one image resource on it. The example do
 1. Save the image using JPEG encoding.
 1. Close the stream.
 
-Source example: `images.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>

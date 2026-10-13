@@ -26,8 +26,6 @@ Print text from tables detected on every page.
 1. Traverse detected tables, rows, cells, fragments, and segments.
 1. Join cell and fragment text using separators and print each row.
 
-Source example: `table-01.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>
@@ -93,8 +91,6 @@ The boundary checks use strict inequalities; tables touching the annotation boun
 1. Visit the page with [TableAbsorber](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/).
 1. Compare each detected table rectangle with the annotation rectangle.
 1. Print rows only for tables strictly contained inside the annotation.
-
-Source example: `table-02.cpp`.
 
 ```cpp
 
@@ -184,8 +180,6 @@ This converts the document to Excel; it does not export a selected TableAbsorber
 1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
 1. Create [ExcelSaveOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf/excelsaveoptions/) and set Format to XLSX.
 1. Pass the output path and save options to [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
-
-Source example: `table-03.cpp`.
 
 ```cpp
 

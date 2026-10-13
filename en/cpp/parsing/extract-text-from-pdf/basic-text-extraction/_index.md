@@ -26,8 +26,6 @@ Collect document text into one output file.
 1. Read the absorber's Text property.
 1. Write the extracted text to the output file.
 
-Source example: `basic-text-01.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>

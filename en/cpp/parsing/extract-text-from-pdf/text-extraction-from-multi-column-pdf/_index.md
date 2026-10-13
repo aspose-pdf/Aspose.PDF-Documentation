@@ -27,8 +27,6 @@ This technique changes the intermediate document. Review extraction order for yo
 1. Reload the document from the stream and process it with [TextAbsorber](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textabsorber/).
 1. Write the extracted text to the output file.
 
-Source example: `multi-column-01.cpp`.
-
 ```cpp
 
 #include <Aspose.PDF.Cpp/Document.h>
@@ -73,8 +71,6 @@ Configure Pure text formatting and a scale factor without explicitly editing tex
 1. Set ScaleFactor to reduceRatio and assign the extraction options.
 1. Process all pages.
 1. Write the extracted text to the output file.
-
-Source example: `multi-column-02.cpp`.
 
 ```cpp
 
