@@ -18,7 +18,7 @@ This section covers PDF processing features beyond basic document creation, open
 
 - [Working with Documents](/pdf/cpp/working-with-documents/) — create, format, validate, merge, optimize, and split documents and manage PDF layers.
 - [Working with Pages](/pdf/cpp/working-with-pages/) — add, delete, extract, move, resize, crop, rotate, and stamp pages and add headers and footers.
-- [PDF File Metadata](/pdf/cpp/pdf-file-metadata/) — read and update document information and XMP properties.
+- [Working with Images](/pdf/cpp/working-with-images/) — add, delete, extract, replace, and inspect images, placements, and alternative text.
 - [Accessibility and tagged PDF](/pdf/cpp/accessibility-tagged-pdf/) — create and inspect structure elements, configure tagged tables, and validate PDF/UA-1 documents.
 - [Compare PDF documents](/pdf/cpp/compare-pdf-documents/) — compare pages or entire files and export marked PDF reports or PNG difference images.
 - [Working with ZUGFeRD](/pdf/cpp/working-with-zugferd/) — embed invoice XML in a PDF and convert the document to PDF/A-3A.
