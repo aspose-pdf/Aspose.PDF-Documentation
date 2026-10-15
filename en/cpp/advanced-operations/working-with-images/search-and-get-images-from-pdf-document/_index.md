@@ -27,6 +27,7 @@ Placement dimensions and coordinates are in PDF points rather than source-image 
 1. Read horizontal and vertical resolution and print the results.
 
 ```cpp
+#include <iostream>
 #include <Aspose.PDF.Cpp/Devices/Resolution.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/DOM/Matrix.h>

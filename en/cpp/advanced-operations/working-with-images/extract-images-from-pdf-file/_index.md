@@ -65,6 +65,7 @@ For example, image_index.jpg becomes image_1.jpg, image_2.jpg, and so on. The fu
 1. Close each output stream.
 
 ```cpp
+#include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
