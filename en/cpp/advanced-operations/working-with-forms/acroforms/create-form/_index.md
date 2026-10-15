@@ -327,15 +327,15 @@ using namespace Aspose::Pdf::Forms;
 
 void FormExamples::AddBarcodeField(String inputFile, String outputFile)
 {
-        auto document = MakeObject<Document>();
-        auto page = document->get_Pages()->Add();
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
 
-        auto barcode =
-            MakeObject<BarcodeField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 700, 200, 740, true));
-        barcode->set_PartialName(String(u"Barcode1"));
-        barcode->AddBarcode(String(u"1234567890"));
-        document->get_Form()->Add(barcode, 1);
-        document->Save(outputFile);
+    auto barcode =
+        MakeObject<BarcodeField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 700, 200, 740, true));
+    barcode->set_PartialName(String(u"Barcode1"));
+    barcode->AddBarcode(String(u"1234567890"));
+    document->get_Form()->Add(barcode, 1);
+    document->Save(outputFile);
 }
 ```
 
