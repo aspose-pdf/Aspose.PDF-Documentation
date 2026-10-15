@@ -14,7 +14,7 @@ AlternativeHeadline: Get and Set PDF Document Properties and XMP Metadata in C++
 Abstract: Learn how to read and update author, title, keywords, dates, and other PDF information fields with Aspose.PDF for C++. The examples also register an XMP namespace prefix and add timestamp and string values through XmpValue.
 ---
 
-This page covers the four supplied examples for reading file information, updating standard properties, registering an XMP namespace prefix, and adding XMP values.
+This page covers the four supplied examples for reading file information, registering an XMP namespace prefix, updating standard properties, and adding XMP values.
 
 Use [DocumentInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/documentinfo/) for fields such as author, title, subject, keywords, and dates. Use [Metadata](https://reference.aspose.com/pdf/cpp/aspose.pdf/metadata/) for XMP properties and wrap C++ values in [XmpValue](https://reference.aspose.com/pdf/cpp/aspose.pdf/xmpvalue/).
 
