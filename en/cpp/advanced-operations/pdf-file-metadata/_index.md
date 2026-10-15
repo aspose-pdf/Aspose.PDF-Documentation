@@ -37,7 +37,6 @@ Read standard document information and print the values without modifying the PD
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of PdfFileMetadataExamples.getPdfFileInformation.
 void GetPdfFileInformation(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -72,7 +71,6 @@ Register the xmp prefix for the Adobe XMP namespace and add a modification times
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of PdfFileMetadataExamples.setPrefixMetadata.
 void SetPrefixMetadata(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -105,7 +103,6 @@ The example assigns the current time to both CreationDate and ModDate, replacing
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of PdfFileMetadataExamples.setFileInformation.
 void SetFileInformation(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -148,7 +145,6 @@ The example retains the supplied xmp:CustomProperty name. Treat it as sample app
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of PdfFileMetadataExamples.setXmpMetadata.
 void SetXmpMetadata(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
