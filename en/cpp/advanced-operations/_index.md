@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /cpp/advanced-operations/
 description: Explore document management, PDF comparison, accessibility, tagged PDFs, and invoice XML attachments in C++.
-lastmod: "2026-10-12"
+lastmod: "2026-10-15"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,6 +18,7 @@ This section covers PDF processing features beyond basic document creation, open
 
 - [Working with Documents](/pdf/cpp/working-with-documents/) — create, format, validate, merge, optimize, and split documents and manage PDF layers.
 - [Working with Pages](/pdf/cpp/working-with-pages/) — add, delete, extract, move, resize, crop, rotate, and stamp pages and add headers and footers.
+- [Working with Graphs](/pdf/cpp/working-with-graphs/) — draw shapes and configure stroke patterns, fills, transparency, gradients, and stacking.
 - [Accessibility and tagged PDF](/pdf/cpp/accessibility-tagged-pdf/) — create and inspect structure elements, configure tagged tables, and validate PDF/UA-1 documents.
 - [Compare PDF documents](/pdf/cpp/compare-pdf-documents/) — compare pages or entire files and export marked PDF reports or PNG difference images.
 - [Working with ZUGFeRD](/pdf/cpp/working-with-zugferd/) — embed invoice XML in a PDF and convert the document to PDF/A-3A.
