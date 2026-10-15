@@ -249,7 +249,7 @@ using namespace Aspose::Pdf::Forms;
 
 void FormExamples::AddListBoxFieldToPdf(String inputFile, String outputFile)
 {
-    {
+
         auto document = MakeObject<Document>();
         auto page = document->get_Pages()->Add();
 
