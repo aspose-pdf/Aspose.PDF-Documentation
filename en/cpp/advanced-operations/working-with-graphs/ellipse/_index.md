@@ -4,7 +4,7 @@ linktitle: Add Ellipse
 type: docs
 weight: 60
 url: /cpp/add-ellipse/
-description: Create outlined and filled ellipses and inspect a disabled text-styling example using Aspose.PDF for C++.
+description: Create outlined and filled ellipses with a text label using Aspose.PDF for C++.
 lastmod: "2026-10-15"
 sitemap:
     changefreq: "monthly"
