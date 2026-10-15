@@ -262,7 +262,7 @@ void FormExamples::AddListBoxFieldToPdf(String inputFile, String outputFile)
 
         document->get_Form()->Add(listBox, 1);
         document->Save(outputFile);
-    }
+
 }
 ```
 
