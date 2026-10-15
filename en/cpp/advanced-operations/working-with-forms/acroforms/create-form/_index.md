@@ -104,7 +104,7 @@ using namespace Aspose::Pdf::Text;
 
 void FormExamples::AddTextBoxFieldNt(String inputFile, String outputFile)
 {
-    {
+
         auto document = MakeObject<Document>();
         auto page = document->get_Pages()->Add();
 
