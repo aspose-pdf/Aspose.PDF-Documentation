@@ -1,5 +1,5 @@
 ---
-title: Review local-certificate PDF signing in C++
+title: Sign PDFs with local certificates and smart cards in C++
 linktitle: Local Certificates and Smart Cards
 type: docs
 weight: 50

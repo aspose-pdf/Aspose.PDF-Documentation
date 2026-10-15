@@ -114,7 +114,7 @@ This sample receives a certificate stream but does not write it to a file.
 1. Open the [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) with the sample owner password.
 1. Create a [PdfFileSignature](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesignature/) facade for the document.
 1. Enumerate the signature names.
-1. Call Try[ExtractCertificate()](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/signaturefield/) for each name.
+1. Call [TryExtractCertificate()](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/signaturefield/) for each name.
 1. Print a message when extraction succeeds.
 
 ```cpp

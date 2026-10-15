@@ -129,7 +129,7 @@ namespace SecuringAndSigning
 
             if (!signature->ContainsSignature())
             {
-                throw std::runtime_error("Not contains signature");
+                throw std::runtime_error("Document does not contain a signature");
             }
 
             for (const auto &signatureName : signature->GetSignatureNames(true))
@@ -255,7 +255,7 @@ The extracted certificate stream is not passed to VerifySignature(). This sample
 1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
 1. Create a [PdfFileSignature](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesignature/) facade for the document.
 1. Select signature-name index 0.
-1. Call Try[ExtractCertificate()](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/signaturefield/) and print its success message when extraction succeeds.
+1. Call [TryExtractCertificate()](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/signaturefield/) and print its success message when extraction succeeds.
 1. Call [VerifySignature()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesignature/verifysignature/) for the selected name, or print false when extraction fails.
 
 ```cpp
