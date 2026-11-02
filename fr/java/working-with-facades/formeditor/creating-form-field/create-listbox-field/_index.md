@@ -15,11 +15,9 @@ Utilisez `FormEditorExamples.createListBoxField(...)` pour créer une zone de li
 ## Créer un champ de zone de liste
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Définissez les éléments de liste disponibles avec `setItems(...)`.
-
-3. Ajoutez le champ de la zone de liste avec sa valeur par défaut et son rectangle.
-4. Enregistrez le document mis à jour.
+1. Définissez les éléments de liste disponibles avec `setItems(...)`.
+1. Ajoutez le champ de la zone de liste avec sa valeur par défaut et son rectangle.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void createListBoxField(Path inputFile, Path outputFile) {

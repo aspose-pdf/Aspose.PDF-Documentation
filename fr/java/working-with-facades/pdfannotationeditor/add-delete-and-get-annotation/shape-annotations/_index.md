@@ -13,10 +13,8 @@ Abstract: Cet article explique comment créer, inspecter et supprimer des annota
 ## Ajouter des annotations de forme
 
 1. Ouvrez le PDF d'entrée et choisissez la page et le rectangle qui contiendront l'annotation de forme.
-
-2. Créez l'annotation de forme requise, puis définissez son titre, ses couleurs, son opacité et ses points si nécessaire.
-
-3. Ajoutez l'annotation à la page et enregistrez le PDF modifié.
+1. Créez l'annotation de forme requise, puis définissez son titre, ses couleurs, son opacité et ses points si nécessaire.
+1. Ajoutez l'annotation à la page et enregistrez le PDF modifié.
 
 ```java
 public static void squareAnnotationAdd(Path inputFile, Path outputFile) {

@@ -21,13 +21,10 @@ Utilisez ce flux de travail lorsque vous avez besoin de comprendre comment le co
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF d'entrée.
-
-2. Appelez `getPageXOffset` et `getPageYOffset` pour la page cible.
-3. Convertissez les valeurs de points en pouces en divisant par `72.0`.
-
-4. Utilisez ou affichez les valeurs converties.
-
-5. Fermez l'instance `PdfFileInfo`.
+1. Appelez `getPageXOffset` et `getPageYOffset` pour la page cible.
+1. Convertissez les valeurs de points en pouces en divisant par `72.0`.
+1. Utilisez ou affichez les valeurs converties.
+1. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java
 

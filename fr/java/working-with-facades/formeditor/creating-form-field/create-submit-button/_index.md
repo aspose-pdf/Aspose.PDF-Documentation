@@ -15,10 +15,8 @@ Utilisez `FormEditorExamples.createSubmitButton(...)` pour créer un bouton qui 
 ## Créer un bouton de soumission
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `addSubmitBtn(...)` avec le nom du bouton, la page, l'étiquette, l'URL cible et le rectangle.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `addSubmitBtn(...)` avec le nom du bouton, la page, l'étiquette, l'URL cible et le rectangle.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void createSubmitButton(Path inputFile, Path outputFile) {

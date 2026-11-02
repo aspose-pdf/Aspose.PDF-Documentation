@@ -1,115 +1,117 @@
 ---
-title: Create PDF Document
-linktitle: Create PDF
+title: Create PDF documents in C++
+linktitle: Create PDF documents
 type: docs
 weight: 10
 url: /cpp/create-pdf-document/
-description: This article describes how to Create and format the PDF Document with Aspose.PDF for C++.
-lastmod: "2021-11-11"
+description: Create a PDF from text or add searchable text to a scanned PDF through an external OCR callback with Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
-    priority: 0.5
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Generate Text PDFs and Add Searchable OCR Text in C++
+Abstract: Learn how to create a PDF page containing text with Aspose.PDF for C++. A separate example uses an external Tesseract OCR callback to add searchable text to a scanned PDF.
 ---
 
-We are always looking for a way to generate PDF documents and work with them in C++ projects more exactly, accurately, and effectively. Having easy-to-use functions from a library allows us to track more of the work, and less on the time-heavy details of trying to generate PDFs, whether in C++.
+Create a PDF from text or add searchable text to a scanned PDF through an external OCR callback with Aspose.PDF for C++.
 
-## Generate PDF using C++
+## Create a PDF with text
 
-Aspose.PDF for C++ API lets you create and read PDF files using C++. The API can be used in a variety of C++ applications including WinForms, and several others. In this article, we are going to show how to use Aspose.PDF for C++ API to easily generate and read PDF files in C++ applications.
-
-### How to Create Simple PDF File
-
-To create a PDF file using C++, the following steps can be used.
-
-1. Create an object of [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class
-1. Add a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) object to the 'Pages' collection of the Document object
-1. Add [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text.text_fragment/) to [Paragraphs](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs) collection of the page
-1. Save the resultant PDF document
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Add a page through [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
+1. Add a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) containing Hello World! to the page paragraphs.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void CreateDocument() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
-
-    // String for file name.
-    String outputFileName("HelloWorld_out.pdf");
-
+void CreateNewDocument(String outputFile) {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
-
-    // Add text to new page
-    auto text = MakeObject<TextFragment>(u"Hello world!");
-
-    auto paragraphs = page->get_Paragraphs();
-    paragraphs->Add(text);
-
-    // Save updated PDF
-    document->Save(_dataDir + outputFileName);
+    page->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Hello World!"));
+    document->Save(outputFile);
 }
 ```
 
-## Create a Searchable PDF document
+## Create a searchable PDF with Tesseract
 
-Aspose.PDF for C ++ allows you to create PDFs from scratch and manipulate existing ones.
-When you add text elements to a PDF, the resulting PDF is searchable. However, if we convert an image containing text to a PDF file, the content inside the PDF is not searchable. However, as a workaround, we can use OCR on the resulting file to make it searchable. Therefore first you need to install Tesseract-OCR on your system, and you will have a tesseract console application.
+Install Tesseract and the required language data separately. The callback invokes an external OCR executable; Aspose.PDF consumes its hOCR output.
 
-Following is complete code to accomplish this requirement:
+1. Supply the Tesseract executable path and an installed OCR language code.
+1. Create a Document::CallBackGetHocr callback that saves each image as a temporary bitmap.
+1. Run Tesseract to generate hOCR and check its exit code.
+1. Read the hOCR output and clean up the temporary files.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [Convert()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/convert/) with the callback and check the returned result.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void CreateSearchableDocument() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
-    // String for file name.
-    String inputFileName("sample.pdf");
 
-    auto document = MakeObject<Document>(inputFileName);
-    bool convertResult = false;
-    try
-    {
-        convertResult = document->Convert(CallBackGetHocr);
-    }
-    catch (Exception ex)
-    {
-        std::cerr << ex->get_Message() << std::endl;
-    }
-    document->Dispose();
-}
+#include <filesystem>
+#include <functional>
+#include <system/diagnostics/process.h>
+#include <system/diagnostics/process_start_info.h>
+#include <system/diagnostics/process_window_style.h>
+#include <system/exceptions.h>
+#include <system/io/file.h>
+#include <system/io/path.h>
+#include <drawing/bitmap.h>
+#include <drawing/imaging/image_format.h>
+#include <Aspose.PDF.Cpp/Document.h>
 
-static String CallBackGetHocr(System::SharedPtr<System::Drawing::Image> img)
+using namespace System;
+using namespace Aspose::Pdf;
+
+void CreateSearchablePdf(String inputFile, String outputFile,
+                         String tesseractExecutable, String language)
 {
-    String tmpFile = System::IO::Path::GetTempFileNameSafe();
-
-    auto bmp = MakeObject<System::Drawing::Bitmap>(img);
-
-    bmp->Save(tmpFile, System::Drawing::Imaging::ImageFormat::get_Bmp());
-    String inputFile = String::Format(u"\"{0}\"", tmpFile);
-    String outputFile = String::Format(u"\"{0}\"", tmpFile);
-    String arguments = inputFile + u" " + outputFile + u" -l eng hocr";
-    String tesseractProcessName = u"C:\\Program Files\\Tesseract-OCR\\Tesseract.exe";
-
-    auto psi = MakeObject<System::Diagnostics::ProcessStartInfo>(tesseractProcessName, arguments);
-    psi->set_UseShellExecute(true);
-    psi->set_CreateNoWindow(true);
-    psi->set_WindowStyle(System::Diagnostics::ProcessWindowStyle::Hidden);
-    psi->set_WorkingDirectory(System::IO::Path::GetDirectoryName(tesseractProcessName));
-
-    auto p = MakeObject<System::Diagnostics::Process>(psi);
-    p->Start();
-    p->WaitForExit();
-
-    auto streamReader = MakeObject<System::IO::StreamReader>(tmpFile + u".hocr");
-    String text = streamReader->ReadToEnd();
-    streamReader->Close();
-
-    if (System::IO::File::Exists(tmpFile))
-        System::IO::File::Delete(tmpFile);
-    if (System::IO::File::Exists(tmpFile + u".hocr"))
-        System::IO::File::Delete(tmpFile + u".hocr");
-
-    return text;
+    if (tesseractExecutable.IsEmpty() || language.IsEmpty() ||
+        language.Contains(u"\"") || language.Contains(u" ") || language.Contains(u"\n")) {
+        throw ArgumentException(u"Specify an OCR executable and a valid language code.");
+    }
+    Document::CallBackGetHocr callback(
+        std::function<String(const SharedPtr<System::Drawing::Image>&)>(
+        [tesseractExecutable, language](const SharedPtr<System::Drawing::Image>& image) {
+            const auto tempFile = System::IO::Path::GetTempFileNameSafe();
+            struct TemporaryFiles {
+                String path;
+                ~TemporaryFiles() {
+                    std::error_code error;
+                    std::filesystem::remove(std::filesystem::path(path.ToWCS()), error);
+                    std::filesystem::remove(std::filesystem::path((path + u".hocr").ToWCS()), error);
+                }
+            } cleanup{tempFile};
+            auto bitmap = MakeObject<System::Drawing::Bitmap>(image);
+            bitmap->Save(tempFile, System::Drawing::Imaging::ImageFormat::get_Bmp());
+            const auto arguments = String::Format(u"\"{0}\" \"{0}\" -l \"{1}\" hocr", tempFile, language);
+            auto info = MakeObject<Diagnostics::ProcessStartInfo>(tesseractExecutable, arguments);
+            info->set_UseShellExecute(false);
+            info->set_CreateNoWindow(true);
+            info->set_WindowStyle(Diagnostics::ProcessWindowStyle::Hidden);
+            auto process = Diagnostics::Process::Start(info);
+            if (process == nullptr) {
+                throw InvalidOperationException(u"Could not start Tesseract.");
+            }
+            process->WaitForExit();
+            if (process->get_ExitCode() != 0) {
+                throw InvalidOperationException(u"Tesseract failed to generate hOCR.");
+            }
+            return System::IO::File::ReadAllText(tempFile + u".hocr");
+        }));
+    auto document = MakeObject<Document>(inputFile);
+    if (!document->Convert(callback)) {
+        throw InvalidOperationException(u"Searchable PDF conversion failed.");
+    }
+    document->Save(outputFile);
 }
 ```

@@ -7,7 +7,6 @@ url: /fr/java/update-page-dimensions-in-python/
 description: Comprenez comment mettre à jour les dimensions d'une page dans un document PDF en Python à l'aide d'Aspose.PDF pour un meilleur contrôle de la mise en page du document.
 lastmod: "2026-09-21"
 ---
-
 Pour mettre à jour les dimensions de la page à l'aide de **Aspose.PDF Java pour Python**, utilisez la classe **UpdatePageDimensions**.
 
 ```python

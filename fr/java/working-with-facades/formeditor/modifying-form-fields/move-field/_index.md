@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, déplacer un champ ve
 ## Déplacer un champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `moveField(...)` avec le nom du champ cible et les nouvelles coordonnées du rectangle.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `moveField(...)` avec le nom du champ cible et les nouvelles coordonnées du rectangle.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void moveField(Path inputFile, Path outputFile) {

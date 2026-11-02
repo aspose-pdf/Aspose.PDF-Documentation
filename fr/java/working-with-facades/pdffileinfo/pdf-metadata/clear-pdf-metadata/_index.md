@@ -21,11 +21,9 @@ Utilisez ce flux de travail lorsque vous devez supprimer les informations stock�
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF d'entrée.
-
-2. Appelez `clearInfo()` pour supprimer les métadonnées du document.
-3. Enregistrez le résultat dans un nouveau fichier avec `save()`.
-
-4. Fermez l'instance `PdfFileInfo`.
+1. Appelez `clearInfo()` pour supprimer les métadonnées du document.
+1. Enregistrez le résultat dans un nouveau fichier avec `save()`.
+1. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java
 

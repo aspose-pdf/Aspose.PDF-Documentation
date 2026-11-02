@@ -19,8 +19,6 @@ Utilisez ces exemples lorsque vous devez inspecter ou normaliser les information
 Cette section explique comment :
 
 - lire les champs de métadonnées standard et personnalisés
-
 - mettre à jour les valeurs des métadonnées et enregistrer le résultat
-
 - effacer les informations du document existant
 - réécrire les informations mises à jour avec XMP

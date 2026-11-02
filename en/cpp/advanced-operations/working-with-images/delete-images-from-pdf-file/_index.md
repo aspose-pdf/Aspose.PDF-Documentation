@@ -1,35 +1,51 @@
 ---
-title: Delete Images from PDF File using C++
+title: Delete images from PDF in C++
 linktitle: Delete Images
 type: docs
 weight: 20
 url: /cpp/delete-images-from-pdf-file/
-description: This section explain how to delete Images from PDF File using Aspose.PDF for C++.
-lastmod: "2021-12-18"
+description: Delete the first image resource from the first PDF page using Aspose.PDF for C++.
+lastmod: "2026-10-15"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Remove an Embedded Image Resource from a PDF in C++
+Abstract: Learn how to delete an image resource from a PDF page with Aspose.PDF for C++. The example removes the first image from the first page and saves the modified document.
 ---
 
-To delete an image from a PDF file:
+Delete the first image resource from the first PDF page using Aspose.PDF for C++.
 
-1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and open the input PDF file.
-1. Get the Page that holds the image from the Document object's [Pages collection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection).
-1. Images are held in the Images collection, found in the page's Resources collection.
-1. Delete an image with the Images collection's Delete method.
-1. Saved the output like using the Document object's Save method.
+## Delete the first image resource
 
-The following code snippet shows how to delete an image from a PDF file.
+The PDF must contain page 1 and at least one image resource on that page. This example does not iterate through every page or image.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Select page 1 and retrieve its [XImageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximagecollection/).
+1. Call [Delete(1)](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximagecollection/) on the image collection.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void WorkingWithImages::DeleteImagesFromPDFFile()
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Operator.h>
+#include <Aspose.PDF.Cpp/OperatorCollection.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Resources.h>
+#include <Aspose.PDF.Cpp/XImage.h>
+#include <Aspose.PDF.Cpp/XImageCollection.h>
+
+#include <system/io/file.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Operators;
+
+void ImageExamples::DeleteImage(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + u"DeleteImages.pdf");
-
-    // Delete a particular image
+    auto document = MakeObject<Document>(inputFile);
     document->get_Pages()->idx_get(1)->get_Resources()->get_Images()->Delete(1);
-
-    // Save updated PDF file
-    document->Save(_dataDir + u"DeleteImages_out.pdf");
+    document->Save(outputFile);
 }
 ```

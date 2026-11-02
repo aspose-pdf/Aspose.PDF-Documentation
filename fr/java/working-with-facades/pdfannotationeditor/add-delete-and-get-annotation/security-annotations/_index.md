@@ -13,10 +13,8 @@ Abstract: Cet article explique comment utiliser les annotations de caviardage da
 ## Marquer le texte pour caviardage
 
 1. Chargez le PDF et recherchez dans toutes les pages le texte qui doit être caviardé.
-
-2. Créez un objet `RedactionAnnotation` pour chaque fragment de texte correspondant et configurez son apparence.
-
-3. Ajoutez les annotations de caviardage à leurs pages et enregistrez le document.
+1. Créez un objet `RedactionAnnotation` pour chaque fragment de texte correspondant et configurez son apparence.
+1. Ajoutez les annotations de caviardage à leurs pages et enregistrez le document.
 
 ```java
 public static void markTextRedaction(Path inputFile, Path outputFile, String searchTerm) {

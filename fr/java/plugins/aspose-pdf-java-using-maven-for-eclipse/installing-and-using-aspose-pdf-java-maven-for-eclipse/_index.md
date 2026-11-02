@@ -24,9 +24,7 @@ Le plug-in **Aspose.PDF Java (Maven) pour Eclipse** peut être facilement instal
 Pour créer un **Projet Maven** à l'aide d'un assistant pour utiliser [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx) :
 
 1. Sélectionnez **Nouveau projet**.
-
 1. Sélectionnez **Projet Aspose.PDF Maven** dans la catégorie **Maven**.
-
 1. Cliquez sur **Suivant**.
 
 ![todo:image_alt_text](https://i.imgur.com/6iywqND.png)
@@ -57,9 +55,7 @@ Pour pouvoir utiliser confortablement l'**Assistant d'exemple de code Aspose.PDF
 Pour utiliser des exemples, il suffit de :
 
 1. Cliquez sur **Nouveau fichier** dans **Eclipse**.
-
 1. Choisissez votre projet, puis sélectionnez **Aspose.PDF Code Sample** dans la catégorie **Java**.
-
 1. Cliquez sur **Suivant**.
 
 ![todo:image_alt_text](https://i.imgur.com/AuWybe8.png)
@@ -69,7 +65,5 @@ Pour utiliser des exemples, il suffit de :
 ![todo:image_alt_text](https://i.imgur.com/PToFZjJ.png)
 
 1. Cela copiera les fichiers Java de la catégorie **Exemples de code** sélectionnée dans le projet sous le package **com.aspose.pdf.examples**. De plus, toutes les ressources requises par les exemples de code seront copiées dans le dossier **src/main/resources**.
-
 1. Passez en revue l’exemple de code, compilez et exécutez.
-
 1. Vous pouvez maintenant tester d'autres exemples et commencer à créer votre propre application à l'aide de [Aspose.PDF for Java API](http://www.aspose.com/java/pdf-component.aspx)

@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, dupliquer un champ su
 ## Copier un champ dans le même PDF
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `copyInnerField(...)` avec le nom du champ source, le nouveau nom du champ, la page et les coordonnées.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `copyInnerField(...)` avec le nom du champ source, le nouveau nom du champ, la page et les coordonnées.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void copyInnerField(Path inputFile, Path outputFile) {

@@ -21,13 +21,10 @@ Cet article correspond au même flux de travail de vérification exposé par `Pd
 ### Étapes
 
 1. Liez le PDF signé avec `PdfFileSignature`.
-
-2. Sélectionnez un nom de signature dans le document.
-3. Appelez `verifySignature` pour valider le contenu de la signature.
-
-4. Appelez `coversWholeDocument` pour confirmer que la signature couvre l’ensemble du document.
-
-5. Fermez l’objet de façade.
+1. Sélectionnez un nom de signature dans le document.
+1. Appelez `verifySignature` pour valider le contenu de la signature.
+1. Appelez `coversWholeDocument` pour confirmer que la signature couvre l’ensemble du document.
+1. Fermez l’objet de façade.
 
 ### Exemple Java
 

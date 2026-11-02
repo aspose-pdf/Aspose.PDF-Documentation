@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, définir le nombre de
 ## Définir le nombre de cases d’un champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `setFieldCombNumber(...)` pour le champ cible et le nombre de cases.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `setFieldCombNumber(...)` pour le champ cible et le nombre de cases.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void setFieldCombNumber(Path inputFile, Path outputFile) {

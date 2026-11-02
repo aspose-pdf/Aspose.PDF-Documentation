@@ -1,133 +1,141 @@
 ---
-title: Add Image stamps in PDF programmatically
-linktitle: Image stamps in PDF File
+title: Add image stamps to PDF in C++
+linktitle: Image Stamps
 type: docs
-weight: 10
+weight: 100
 url: /cpp/image-stamps-in-pdf-page/
-description: Add the Image Stamp in your PDF document using ImageStamp class with the Aspose.PDF for C++ library.
-lastmod: "2021-12-08"
+description: Add image stamps with position, size, rotation, opacity, or quality settings and add a floating-box background image using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Position and Style PDF Image Stamps in C++
+Abstract: Learn how to configure image stamp position, dimensions, rotation, opacity, and quality with Aspose.PDF for C++. The examples also add a background image through a floating box.
 ---
 
-## Add Image Stamp in PDF File
+Add image stamps with position, size, rotation, opacity, or quality settings and add a floating-box background image using Aspose.PDF for C++.
 
-You can use the ImageStamp class to add an image stamp to a PDF file. The ImageStamp class provides the properties necessary for creating an image-based stamp, such as height, width, opacity and so on.
+## Add a positioned image stamp
 
-To add an image stamp:
-
-1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object and an ImageStamp object using required properties.
-1. Call the [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) class [AddStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method to add the stamp to the PDF.
-
-The following code snippet shows how to add image stamp in the PDF file.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create an [ImageStamp](https://reference.aspose.com/pdf/cpp/aspose.pdf/imagestamp/) from imageFile.
+1. Set background mode, position, dimensions, rotation, and opacity.
+1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) on page 1.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/ImageStamp.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rotation.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of StampingExamples.addImageStamp.
+void AddImageStamp(System::String inputFile, System::String imageFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
+    auto imageStamp = MakeObject<ImageStamp>(imageFile);
+    imageStamp->set_Background(true);
+    imageStamp->set_XIndent(100);
+    imageStamp->set_YIndent(100);
+    imageStamp->set_Height(300);
+    imageStamp->set_Width(300);
+    imageStamp->set_Rotate(Rotation::on270);
+    imageStamp->set_Opacity(0.5);
+
+    document->get_Pages()->idx_get(1)->AddStamp(imageStamp);
+    document->Save(outputFile);
+}
+```
+
+## Set image stamp quality
+
+The low quality setting can affect image appearance. Review the saved output.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create an [ImageStamp](https://reference.aspose.com/pdf/cpp/aspose.pdf/imagestamp/) from imageFile.
+1. Set Quality to 10.
+1. Call [AddStamp()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/addstamp/) on page 1.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/ImageStamp.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of StampingExamples.addImageStampWithQualityControl.
+void AddImageStampWithQualityControl(System::String inputFile, System::String imageFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
+    auto imageStamp = MakeObject<ImageStamp>(imageFile);
+    imageStamp->set_Quality(10);
+    document->get_Pages()->idx_get(1)->AddStamp(imageStamp);
+    document->Save(outputFile);
+}
+```
+
+## Add a floating-box background image
+
+This adds a paragraph-based floating box rather than calling AddStamp().
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Select page 1 and create a [FloatingBox](https://reference.aspose.com/pdf/cpp/aspose.pdf/floatingbox/) sized 200 by 100.
+1. Configure position, alignment, text, and border.
+1. Create an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) and assign it as BackgroundImage.
+1. Set the background color and add the box to the page paragraphs.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
+#include <Aspose.PDF.Cpp/Generator/BorderSide.h>
+#include <Aspose.PDF.Cpp/Color.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Generator/FloatingBox.h>
+#include <Aspose.PDF.Cpp/Text/Font.h>
+#include <Aspose.PDF.Cpp/HorizontalAlignment.h>
+#include <Aspose.PDF.Cpp/Generator/Image.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextState.h>
+
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void AddImageStampToPDFFile()
-{    
-    String _dataDir("C:\\Samples\\");
+// Port of StampingExamples.addImageAsBackgroundInFloatingBox.
+void AddImageAsBackgroundInFloatingBox(System::String inputFile, System::String imageFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
 
-    // String for input file name
-    String inputFileName("AddImageStamp.pdf");
+    auto page = document->get_Pages()->idx_get(1);
+    auto box = MakeObject<FloatingBox>(200.0f, 100.0f);
+    box->set_Left(40);
+    box->set_Top(80);
+    box->set_HorizontalAlignment(HorizontalAlignment::Center);
+    box->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Text in Floating Box"));
+    box->set_Border(MakeObject<BorderInfo>(BorderSide::All, Color::get_Red()));
 
-    String outputFileName("AddImageStamp_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-
-    // Create image stamp
-    auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
-    imageStamp->set_Background(true);
-    imageStamp->set_XIndent(100);
-    imageStamp->set_YIndent(100);
-    imageStamp->set_Height(48);
-    imageStamp->set_Width(225);
-    imageStamp->set_Rotate(Rotation::on270);
-    imageStamp->set_Opacity(0.5);
-   
-    // Add stamp to particular page    
-    document->get_Pages()->idx_get(1)->AddStamp(imageStamp);
-
-    // Save output document
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-## Control Image Quality when Adding Stamp
-
-When adding an image as a stamp object, you can control the quality of the image. The Quality property of the [ImageStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_stamp) class is used for this purpose. It indicates the quality of image in percents (valid values are 0..100).
-
-```cpp
-void ControlImageQualityWhenAddingStamp() {
-    
-    String _dataDir("C:\\Samples\\");
-
-    // String for input file name
-    String inputFileName("AddImageStamp.pdf");
-    String outputFileName("ControlImageQuality_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-
-    // Create image stamp
-    auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
-
-    imageStamp->set_Quality(10);
-    document->get_Pages()->idx_get(1)->AddStamp(imageStamp);    
-    document->Save(_dataDir + u"ControlImageQuality_out.pdf");
-}
-```
-
-## Image Stamp as Background in Floating Box
-
-Aspose.PDF API lets you add image stamp as background in a floating box. The BackgroundImage property of FloatingBox class can be used to set the background image stamp for a floating box as shown in following code sample.
-
-```cpp
-void ImageStampAsBackgroundInFloatingBox() {
-    
-    String _dataDir("C:\\Samples\\");
-
-    // String for input file name
-    String inputFileName("AddImageStamp.pdf");
-    String outputFileName("AddImageStampAsBackgroundInFloatingBox_out.pdf");
-
-    // Instantiate Document object
-    auto document = MakeObject<Document>();
-
-    // Add page to PDF document
-    auto page = document->get_Pages()->Add();
-
-    // Create FloatingBox object
-    auto aBox = MakeObject<FloatingBox>(200, 100);
-
-    // Set left position for FloatingBox
-    aBox->set_Left(40);
-    // Set Top position for FloatingBox
-    aBox->set_Top(80);
-    // Set the Horizontal alignment for FloatingBox
-    aBox->set_HorizontalAlignment(HorizontalAlignment::Center);
-    
-    // Add text fragment to paragraphs collection of FloatingBox    
-    aBox->get_Paragraphs()->Add(MakeObject<TextFragment>(u"main text"));
-
-    // Set border for FloatingBox
-    aBox->set_Border(MakeObject<BorderInfo>(BorderSide::All, Color::get_Red()));
-
-    // Add background image
     auto image = MakeObject<Image>();
-    image->set_File(_dataDir + u"aspose-logo.png");
-    aBox->set_BackgroundImage(image);
+    image->set_File(imageFile);
+    box->set_BackgroundImage(image);
+    box->set_BackgroundColor(Color::get_Yellow());
+    page->get_Paragraphs()->Add(box);
 
-    // Set background color for FloatingBox
-    aBox->set_BackgroundColor(Color::get_Yellow());
-
-    // Add FloatingBox to paragraphs collection of page object
-    page->get_Paragraphs()->Add(aBox);
-    // Save the PDF document
-    document->Save(_dataDir + outputFileName);
+    document->Save(outputFile);
 }
 ```

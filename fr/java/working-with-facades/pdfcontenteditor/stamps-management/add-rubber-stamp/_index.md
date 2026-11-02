@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF, créer une annotation de tampo
 ## Ajouter une annotation de tampon
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Appelez `createRubberStamp(...)` avec le numéro de page, le rectangle, le titre, le contenu et la couleur.
-
-3. Enregistrez le document PDF mis à jour.
+1. Appelez `createRubberStamp(...)` avec le numéro de page, le rectangle, le titre, le contenu et la couleur.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void addRubberStamp(Path inputFile, Path outputFile) {

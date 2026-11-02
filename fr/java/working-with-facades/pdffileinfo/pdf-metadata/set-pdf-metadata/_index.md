@@ -21,13 +21,10 @@ Utilisez ce flux de travail lorsque vous devez normaliser ou enrichir les inform
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF source.
-
-2. Définissez les champs de métadonnées standard que vous souhaitez mettre à jour.
-3. Ajoutez des métadonnées personnalisées avec `setMetaInfo`.
-
-4. Enregistrez le document mis à jour avec `save()`.
-
-5. Fermez l'instance `PdfFileInfo`.
+1. Définissez les champs de métadonnées standard que vous souhaitez mettre à jour.
+1. Ajoutez des métadonnées personnalisées avec `setMetaInfo`.
+1. Enregistrez le document mis à jour avec `save()`.
+1. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java
 

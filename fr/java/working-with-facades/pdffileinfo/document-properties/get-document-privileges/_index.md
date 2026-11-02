@@ -21,11 +21,9 @@ Utilisez `PdfFileInfo.getDocumentPrivilege()` pour inspecter les opérations aut
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le PDF d'entrée.
-
-2. Appelez `getDocumentPrivilege()` pour récupérer l'ensemble de privilèges.
-3. Lisez les indicateurs booléens pertinents de l'objet `DocumentPrivilege` renvoyé.
-
-4. Fermez l'instance `PdfFileInfo` lorsque vous avez terminé.
+1. Appelez `getDocumentPrivilege()` pour récupérer l'ensemble de privilèges.
+1. Lisez les indicateurs booléens pertinents de l'objet `DocumentPrivilege` renvoyé.
+1. Fermez l'instance `PdfFileInfo` lorsque vous avez terminé.
 
 ### Exemple Java
 

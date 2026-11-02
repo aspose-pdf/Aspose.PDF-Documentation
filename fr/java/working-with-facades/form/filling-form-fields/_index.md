@@ -15,10 +15,7 @@ La classe Java `FormExamples` présente les principaux flux de travail `Form.fil
 Utilisez cette section pour voir comment :
 
 - remplir les champs de texte par nom de champ
-
 - sélectionner les valeurs des cases à cocher et des boutons radio
-
 - définir les valeurs de la zone de liste
 - remplir un champ de code-barres
-
 - appliquer la même API de remplissage de champ dans votre propre boucle pour les paires nom-valeur dynamiques

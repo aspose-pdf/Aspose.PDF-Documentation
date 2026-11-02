@@ -21,11 +21,9 @@ Utilisez ce flux de travail lorsque vous devez vérifier la compatibilité des f
 ### Étapes
 
 1. Créez un objet `PdfFileInfo` pour le fichier PDF.
-
-2. Appelez `getPdfVersion()` pour récupérer la version signalée.
-3. Utilisez ou affichez la valeur de la version.
-
-4. Fermez l'instance `PdfFileInfo`.
+1. Appelez `getPdfVersion()` pour récupérer la version signalée.
+1. Utilisez ou affichez la valeur de la version.
+1. Fermez l'instance `PdfFileInfo`.
 
 ### Exemple Java
 

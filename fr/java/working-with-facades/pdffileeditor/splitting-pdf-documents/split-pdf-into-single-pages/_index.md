@@ -20,11 +20,9 @@ Utilisez ce flux de travail lorsque chaque page source doit devenir son propre f
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Préparez un modèle de fichier de sortie qui inclut un espace réservé de page tel que `%NUM%`.
-3. Appelez `splitToPages` avec le fichier source et le modèle de sortie.
-
-4. Enregistrez les fichiers d'une seule page générés.
+1. Préparez un modèle de fichier de sortie qui inclut un espace réservé de page tel que `%NUM%`.
+1. Appelez `splitToPages` avec le fichier source et le modèle de sortie.
+1. Enregistrez les fichiers d'une seule page générés.
 
 ```java
 public static void splitPdfIntoSinglePages(Path inputFile, Path outputFilePattern) {

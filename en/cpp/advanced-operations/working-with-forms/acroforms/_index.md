@@ -1,30 +1,26 @@
 ---
-title: Working with AcroForms in PDF using Aspose.PDF for C++
+title: Work with PDF AcroForms in C++
 linktitle: AcroForms
 type: docs
 weight: 10
 url: /cpp/acroforms/
-description: With Aspose.PDF for C++ you may create a form from scratch, fill the form field in a PDF document, extract data from the form, add or remove fields in the existing form.
-lastmod: "2021-12-01"
+description: Create, fill, read, modify, and exchange AcroForm field data using Aspose.PDF for C++.
+lastmod: "2026-10-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create and Manage Interactive PDF Fields with C++
+Abstract: Learn how to build and populate AcroForms with Aspose.PDF for C++. The guides also cover extracting values, changing field settings, importing and exporting data, and adding submission controls.
 ---
 
-**AcroForms** are the original PDF-A fillable forms based on the PDF architecture. XFA forms are XML-based forms enclosed in a PDF file. AcroForms is an older form dating back to 1998 and is still referred to as the classic PDF form today. Besides reflowing content, AcroForms can do everything that XFA forms can do, and other things that XFA cannot do. AcroForms have capabilities not found in XFA and conversely, XFA has some capabilities not found in AcroForms.  For example:
+- [Create AcroForm](/pdf/cpp/create-form/) — Create text, checkbox, choice, barcode, and unsigned signature fields in PDF documents using Aspose.PDF for C++.
+- [Fill AcroForm](/pdf/cpp/fill-form/) — Fill selected named fields in an existing PDF form using Aspose.PDF for C++.
+- [Extract AcroForm](/pdf/cpp/extract-form/) — Read PDF form field values and export a name-to-value JSON object using Aspose.PDF for C++.
+- [Import and Export Form Data](/pdf/cpp/import-export-form-data/) — Export and import PDF form data in FDF, XFDF, and XML formats using Aspose.PDF for C++.
+- [Modify AcroForm](/pdf/cpp/modifying-form/) — Read and set text-field limits, change field appearance, delete a named field, and clear text in selected Form XObjects using Aspose.PDF for C++.
+- [Posting Forms](/pdf/cpp/posting-form/) — Add a submit button or configure an explicit SubmitFormAction in a PDF using Aspose.PDF for C++.
+- [Remove Form XObjects](/pdf/cpp/remove-form/) — Remove all Form XObjects or selected Typewriter resources from the first PDF page using Aspose.PDF for C++.
 
-- AcroForms support the concept of “Templates”, allowing additional pages to be added to the PDF form document to support populating the form with multiple database records.
 
-- XFA supports the concept of document reflow allowing a field to resize if needed to accommodate data.
 
-For a more detailed study of the possibilities of working with forms, study the following articles in the section:
-
-- [Create AcroForm](/pdf/cpp/create-form/) - create form from scratch, adding RadioButtonField, TextBoxField, Caption Field using C++.
-
-- [Fill AcroForm](/pdf/cpp/fill-form/) - to fill a form field, get the field from the Document object's Form collection.
-
-- [Extract Data AcroForm](/pdf/cpp/extract-form/) - get values from all and individual the fields and etc.
-
-- [Modifing AcroForm](/pdf/cpp/modifing-form/) -  get/set FieldLimit, remove fields in existing form, set form field font other than the 14 Core PDF Fonts with C++.
-
-- [Posting AcroForm Data](/pdf/cpp/posting-acroform-data/) -  import and export form data to and XML file.

@@ -13,5 +13,4 @@ Abstract: Cette section couvre les flux de travail Java PdfContentEditor pour la
 La classe Java `PdfContentEditorExamples` actuelle prend directement en charge :
 
 - `getViewerPreferences(...)`
-
 - `changeViewerPreferences(...)`

@@ -1,22 +1,23 @@
 ---
-title: Stamping with Aspose.PDF using C++
+title: Stamp PDF pages in C++
 linktitle: Stamping
 type: docs
-weight: 120
+weight: 100
 url: /cpp/stamping/
-description: Learn how to stamp text or images onto PDF documents in C++ with Aspose.PDF to add watermarks or annotations.
-lastmod: "2021-06-05"
+description: Add image, text, page-number, and PDF-page stamps to PDF pages using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Apply PDF Image, Text, Page, and Number Stamps in C++
+Abstract: Explore PDF stamping workflows with Aspose.PDF for C++. The guides cover image and text stamps, page numbering, and using content from another PDF page as a stamp.
 ---
 
-A stamp in a PDF document is analogous to applying a rubber stamp on a paper document.
-The Stamp in the PDF file gives the additional information for the PDF file, such as to protect the PDF file to be used by others and to confirm the security of the contents of the PDF file. **Aspose.PDF for C++** allows adding image or text stamp in your PDF document.
+Add image, text, page-number, and PDF-page stamps to PDF pages using Aspose.PDF for C++.
 
-Check the following sections to learn how to add a stamp with C++:
-
-- [Add Image stamps in PDF page](/pdf/cpp/image-stamps-in-pdf-page/) - add image stamp, control image quality, image stamp as background your PDF file.
-- [Add Text stamps in the PDF File](/pdf/cpp/text-stamps-in-the-pdf-file/) - add text stamp, define alignment for TextStamp object, fill stroke text as stamp in PDF file.
-
+- [Image Stamps](/pdf/cpp/image-stamps-in-pdf-page/) — Add image stamps with position, size, rotation, opacity, or quality settings and add a floating-box background image using Aspose.PDF for C++.
+- [Text Stamps](/pdf/cpp/text-stamps-in-the-pdf-file/) — Add a text stamp to a PDF page and configure its font, color, position, and rotation using Aspose.PDF for C++.
+- [Page Number Stamps](/pdf/cpp/add-page-number/) — Add a page-number stamp to the first PDF page or use Roman-number stamps on all pages with Aspose.PDF for C++.
+- [Page Stamps](/pdf/cpp/page-stamps-in-the-pdf-file/) — Use the first page of another PDF as a background stamp on the first page of a target PDF with Aspose.PDF for C++.
 

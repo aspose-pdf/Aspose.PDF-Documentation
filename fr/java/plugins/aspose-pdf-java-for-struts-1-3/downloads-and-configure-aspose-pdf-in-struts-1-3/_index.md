@@ -19,9 +19,7 @@ Après avoir extrait le code source de l'un des référentiels ci-dessus, appliq
 
 {{< highlight java >}}
 
- 
 $ mvn -U paquet propre
-
 
 {{< /highlight >}}
 

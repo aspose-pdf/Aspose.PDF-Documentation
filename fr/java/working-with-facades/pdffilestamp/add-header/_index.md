@@ -21,11 +21,9 @@ Utilisez `PdfFileStamp` lorsque vous avez besoin d'un contenu d'en-tête répét
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
-2. Créez le contenu de l'en-tête sous la forme `FormattedText` ou chargez-le à partir d'un flux d’image.
-3. Appelez la surcharge `addHeader` appropriée.
-
-4. Enregistrez la sortie et fermez l’objet de façade.
+1. Créez le contenu de l'en-tête sous la forme `FormattedText` ou chargez-le à partir d'un flux d’image.
+1. Appelez la surcharge `addHeader` appropriée.
+1. Enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemples Java
 

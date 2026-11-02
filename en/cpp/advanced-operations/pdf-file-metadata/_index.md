@@ -1,106 +1,158 @@
 ---
-title: PDF File Metadata
+title: Work with PDF file metadata in C++
 linktitle: PDF File Metadata
 type: docs
-weight: 20
+weight: 200
 url: /cpp/pdf-file-metadata/
-description: Discover how to read and modify PDF metadata using Aspose.PDF for C++. Enhance PDF document properties with easy-to-follow instructions.
+description: Read and update PDF document information, register XMP namespace prefixes, and set XMP values using Aspose.PDF for C++.
+lastmod: "2026-10-15"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Get and Set PDF Document Properties and XMP Metadata in C++
+Abstract: Learn how to read and update author, title, keywords, dates, and other PDF information fields with Aspose.PDF for C++. The examples also register an XMP namespace prefix and add timestamp and string values through XmpValue.
 ---
 
-## Get/Set PDF File Information
+This page covers the four supplied examples for reading file information, registering an XMP namespace prefix, updating standard properties, and adding XMP values.
 
-In order to get file specific information of a PDF file, you first need to call the **get_Info()** of Document class. Once the DocumentInfo object is retrieved, you can get the values of the individual properties. Furthermore, you can also set the properties by using respective methods of DocumentInfo class. Following code snippet demonstrate, how to get/set PDF File information using Aspose.PDF for C++:
+Use [DocumentInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/documentinfo/) for fields such as author, title, subject, keywords, and dates. Use [Metadata](https://reference.aspose.com/pdf/cpp/aspose.pdf/metadata/) for XMP properties and wrap C++ values in [XmpValue](https://reference.aspose.com/pdf/cpp/aspose.pdf/xmpvalue/).
 
-{{% alert color="primary" %}}
+Configure your project to include and link Aspose.PDF for C++, supply an input PDF, and create output directories before calling the examples. The snippets omit the project-specific pdf-file-metadata.h include. The reading function prints information without saving a file; each writing function accepts its own output path.
 
-Please note that you cannot set values against the **Application** and **Producer** fields, because Aspose Ltd. and Aspose.PDF for C++ x.x.x will be displayed against these fields.
+## Get PDF file information
 
-{{% /alert %}}
+Read standard document information and print the values without modifying the PDF.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Access its [DocumentInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/documentinfo/) through get_Info().
+1. Read Author, CreationDate, Keywords, ModDate, Subject, and Title.
+1. Print the values to the console.
 
 ```cpp
-void WorkingWithPDFMetadata::GetPDFFileInformation()
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/DocumentInfo.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void GetPdfFileInformation(System::String inputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto pdfDocument = MakeObject<Document>(_dataDir + u"GetFileInfo.pdf");
-    // Get document information
-    auto docInfo = pdfDocument->get_Info();
-    // Show document information
-    Console::WriteLine(u"Author: {0}", docInfo->get_Author());
-    Console::WriteLine(u"Creation Date: {0}", docInfo->get_CreationDate());
-    Console::WriteLine(u"Keywords: {0}", docInfo->get_Keywords());
-    Console::WriteLine(u"Modify Date: {0}", docInfo->get_ModDate());
-    Console::WriteLine(u"Subject: {0}", docInfo->get_Subject());
-    Console::WriteLine(u"Title: {0}", docInfo->get_Title());
-}
+    auto document = MakeObject<Document>(inputFile);
+    auto docInfo = document->get_Info();
 
-void WorkingWithPDFMetadata::SetPDFFileInformation()
-{
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto pdfDocument = MakeObject<Document>(_dataDir + u"SetFileInfo.pdf");
-
-    // Specify document information
-    auto docInfo = MakeObject<DocumentInfo>(pdfDocument);
-
-    docInfo->set_Author(u"Aspose");
-    docInfo->set_CreationDate(DateTime::get_Now());
-    docInfo->set_Keywords (u"Aspose.Pdf, DOM, API");
-    docInfo->set_ModDate (DateTime::get_Now());
-    docInfo->set_Subject (u"PDF Information");
-    docInfo->set_Title (u"Setting PDF Document Information");
-
-    // Save output document
-    pdfDocument->Save(_dataDir + u"SetFileInfo_out.pdf");
+    std::cout << "Author: " << docInfo->get_Author() << std::endl;
+    std::cout << "Creation Date: " << docInfo->get_CreationDate().ToString() << std::endl;
+    std::cout << "Keywords: " << docInfo->get_Keywords() << std::endl;
+    std::cout << "Modify Date: " << docInfo->get_ModDate().ToString() << std::endl;
+    std::cout << "Subject: " << docInfo->get_Subject() << std::endl;
+    std::cout << "Title: " << docInfo->get_Title() << std::endl;
 }
 ```
 
-## Get/Set XMP Metadata from PDF File
+## Set XMP metadata with a namespace prefix
 
-Aspose.PDF for C++ allows you to access a PDF file's XMP metadata as well as set it. To get/set a PDF file's metadata:
+Register the xmp prefix for the Adobe XMP namespace and add a modification timestamp.
 
-1. Create a Document object and open the input PDF file.
-1. Get/Set the file's metadata using respective methods.
-
-The following code snippet shows you how to get/set metadata from the PDF file.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Access [Metadata](https://reference.aspose.com/pdf/cpp/aspose.pdf/metadata/) and call [RegisterNamespaceUri()](https://reference.aspose.com/pdf/cpp/aspose.pdf/metadata/) with the xmp prefix and namespace URI.
+1. Get the current [DateTimeOffset](https://reference.aspose.com/pdf/cpp/system/datetimeoffset/) and format it with the round-trip o format.
+1. Wrap the formatted timestamp in [XmpValue](https://reference.aspose.com/pdf/cpp/aspose.pdf/xmpvalue/) and call [Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/metadata/) for xmp:ModifyDate.
+1. Save the updated PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void WorkingWithPDFMetadata::GetXMPMetadata()
-{
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto pdfDocument = MakeObject<Document>(_dataDir + u"GetXMPMetadata.pdf");
+#include <iostream>
+#include <system/date_time_offset.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Metadata.h>
+#include <Aspose.PDF.Cpp/Data/XMP/XmpValue.h>
 
-    // Get properties
-    Console::WriteLine(pdfDocument->get_Metadata()->idx_get(u"xmp:CreateDate"));
-    Console::WriteLine(pdfDocument->get_Metadata()->idx_get(u"xmp:Nickname"));
-    Console::WriteLine(pdfDocument->get_Metadata()->idx_get(u"xmp:CustomProperty"));
+using namespace System;
+using namespace Aspose::Pdf;
+
+void SetPrefixMetadata(System::String inputFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    document->get_Metadata()->RegisterNamespaceUri(u"xmp", u"http://ns.adobe.com/xap/1.0/");
+    document->get_Metadata()->Add(u"xmp:ModifyDate", MakeObject<XmpValue>(DateTimeOffset::get_Now().ToString(u"o")));
+    document->Save(outputFile);
+
+    std::cout << "Prefix metadata saved to " << outputFile << std::endl;
 }
+```
 
-void WorkingWithPDFMetadata::SetXMPMetadata()
+## Set PDF file information
+
+Update the document information fields and save a separate output PDF.
+
+The example assigns the current time to both CreationDate and ModDate, replacing any existing creation date. Adapt those assignments if you need to retain the original date.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and access its [DocumentInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/documentinfo/).
+1. Get the current time with [DateTime::get_Now()](https://reference.aspose.com/pdf/cpp/system/datetime/).
+1. Set Author, CreationDate, Keywords, ModDate, Subject, and Title.
+1. Set Producer and Creator.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) and print the output path.
+
+```cpp
+#include <iostream>
+#include <system/date_time.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/DocumentInfo.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void SetFileInformation(System::String inputFile, System::String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto pdfDocument = MakeObject<Document>(_dataDir + u"SetXMPMetadata.pdf");
+    auto document = MakeObject<Document>(inputFile);
+    auto docInfo = document->get_Info();
+    auto now = DateTime::get_Now();
 
-    // Set properties
-    pdfDocument->get_Metadata()->idx_set(u"xmp:CreateDate", MakeObject<XmpValue>(DateTime::get_Now()));
-    pdfDocument->get_Metadata()->idx_set(u"xmp:Nickname", MakeObject<XmpValue>(u"Nickname"));
-    pdfDocument->get_Metadata()->idx_set(u"xmp:CustomProperty", MakeObject<XmpValue>(u"Custom Value"));
+    docInfo->set_Author(u"Aspose");
+    docInfo->set_CreationDate(now);
+    docInfo->set_Keywords(u"Aspose.Pdf, DOM, API");
+    docInfo->set_ModDate(now);
+    docInfo->set_Subject(u"PDF Information");
+    docInfo->set_Title(u"Setting PDF Document Information");
+    docInfo->set_Producer(u"Custom producer");
+    docInfo->set_Creator(u"Custom creator");
+    document->Save(outputFile);
 
-    // Save document
-    pdfDocument->Save(_dataDir + u"SetXMPMetadata_out.pdf");
+    std::cout << "File information saved to " << outputFile << std::endl;
 }
+```
 
-void WorkingWithPDFMetadata::InsertMetadataWithPrefix()
+## Set XMP property values
+
+Add the sample creation date, nickname, and custom property to the PDF metadata.
+
+The example retains the supplied xmp:CustomProperty name. Treat it as sample application data rather than a standard XMP property.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Access [Metadata](https://reference.aspose.com/pdf/cpp/aspose.pdf/metadata/) through get_Metadata().
+1. Wrap the current [DateTimeOffset](https://reference.aspose.com/pdf/cpp/system/datetimeoffset/) round-trip string in [XmpValue](https://reference.aspose.com/pdf/cpp/aspose.pdf/xmpvalue/) and add xmp:CreateDate.
+1. Add xmp:Nickname and xmp:CustomProperty using [XmpValue](https://reference.aspose.com/pdf/cpp/aspose.pdf/xmpvalue/) strings.
+1. Save the updated PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) and print the output path.
+
+```cpp
+#include <iostream>
+#include <system/date_time_offset.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Metadata.h>
+#include <Aspose.PDF.Cpp/Data/XMP/XmpValue.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void SetXmpMetadata(System::String inputFile, System::String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto pdfDocument = MakeObject<Document>(_dataDir + u"SetXMPMetadata.pdf");
-    pdfDocument->get_Metadata()->RegisterNamespaceUri(u"xmp", u"http:// Ns.adobe.com/xap/1.0/"); // xmlns prefix has been removed
-    pdfDocument->get_Metadata()->idx_set(u"xmp:ModifyDate", MakeObject<XmpValue>(DateTime::get_Now()));
+    auto document = MakeObject<Document>(inputFile);
+    document->get_Metadata()->Add(u"xmp:CreateDate", MakeObject<XmpValue>(DateTimeOffset::get_Now().ToString(u"o")));
+    document->get_Metadata()->Add(u"xmp:Nickname", MakeObject<XmpValue>(u"Nickname"));
+    document->get_Metadata()->Add(u"xmp:CustomProperty", MakeObject<XmpValue>(u"Custom Value"));
+    document->Save(outputFile);
 
-    // Save document
-    pdfDocument->Save(_dataDir + u"SetPrefixMetadata_out.pdf");
+    std::cout << "XMP metadata saved to " << outputFile << std::endl;
 }
 ```

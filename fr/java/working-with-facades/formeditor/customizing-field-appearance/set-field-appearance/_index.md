@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF existant, appliquer un indicate
 ## Définir des indicateurs d'apparence de champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Appelez `setFieldAppearance(...)` pour le champ cible et l'indicateur d'annotation choisi.
-
-3. Enregistrez le document mis à jour.
+1. Appelez `setFieldAppearance(...)` pour le champ cible et l'indicateur d'annotation choisi.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void setFieldAppearance(Path inputFile, Path outputFile) {

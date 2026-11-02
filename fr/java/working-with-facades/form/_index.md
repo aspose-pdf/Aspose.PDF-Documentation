@@ -18,12 +18,8 @@ La classe Java `FormExamples` illustre les principaux flux de travail de traitem
 Utilisez cette section pour apprendre à :
 
 - remplir les champs de texte, de case à cocher, de bouton radio, de zone de liste et de code-barres
-
 - Exporter les données du formulaire vers XML, FDF et XFDF
-
 - Importer des données de formulaire depuis XML, FDF et XFDF
 - aplatir tous les champs du formulaire et renommer les champs existants
-
 - Inspecter les noms de champs et les valeurs actuelles
-
 - Remplir un champ de bouton d'image à partir d'un flux d'entrée

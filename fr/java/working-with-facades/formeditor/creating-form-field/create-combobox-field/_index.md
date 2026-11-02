@@ -15,11 +15,9 @@ Utilisez `FormEditorExamples.createComboBoxField(...)` pour créer une zone de l
 ## Créer un champ de zone de liste déroulante
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Ajoutez le champ de la zone de liste déroulante avec sa valeur par défaut et son rectangle cible.
-
-3. Ajoutez les éléments de la zone de liste déroulante sélectionnables.
-4. Enregistrez le document mis à jour.
+1. Ajoutez le champ de la zone de liste déroulante avec sa valeur par défaut et son rectangle cible.
+1. Ajoutez les éléments de la zone de liste déroulante sélectionnables.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void createComboBoxField(Path inputFile, Path outputFile) {

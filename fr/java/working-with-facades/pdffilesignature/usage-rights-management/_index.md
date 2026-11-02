@@ -21,8 +21,6 @@ L'exemple de classe Java actuel pour `PdfFileSignature` ne fournit pas d'échant
 Les flux de travail basés sur la source disponibles dans cette section incluent :
 
 - [Signer des documents PDF](/java/pdf-signing/)
-
 - [Certification PDF](/java/pdf-certification/)
 - [Vérification de la signature](/java/signature-verification/)
-
 - [Gestion des signatures](/java/signature-management/)

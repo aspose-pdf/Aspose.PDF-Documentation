@@ -19,5 +19,4 @@ Utilisez ces exemples lorsque vous devez vérifier la compatibilité ou comprend
 Cette section explique comment :
 
 - lire la version de la spécification PDF indiquée dans le fichier
-
 - inspecter les indicateurs de privilèges de document exposés par `DocumentPrivilege`

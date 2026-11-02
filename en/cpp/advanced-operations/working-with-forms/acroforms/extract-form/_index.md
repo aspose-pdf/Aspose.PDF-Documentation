@@ -1,113 +1,122 @@
 ---
-title: Extract AcroForm Data using C++
-linktitle: Extract Data AcroForm
+title: Extract PDF form data in C++
+linktitle: Extract AcroForm
 type: docs
 weight: 30
 url: /cpp/extract-form/
-description: This section explains how to extract forms from your PDF document with Aspose.PDF for C++.
-lastmod: "2021-12-01"
+description: Read PDF form field values and export a name-to-value JSON object using Aspose.PDF for C++.
+lastmod: "2026-10-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read AcroForm Values and Export Field Data to JSON in C++
+Abstract: Learn how to enumerate field names and retrieve values through the Form facade in Aspose.PDF for C++. The JSON example escapes strings, while a second entry point delegates to that same implementation.
 ---
 
-## Get Values from all the Fields of PDF Document
+Read PDF form field values and export a name-to-value JSON object using Aspose.PDF for C++.
 
-To get values from all the fields in a PDF document, you need to navigate through all the form fields and then get the value using the Value property. Get each field from the Form collection, in the base field type called Field and access its Value property.
+## Print field names and values
 
-The following code snippets show how to get the values of all the fields from a PDF document.
+The outputFile parameter is unused; results are printed to the console.
+
+1. Create a [Aspose::Pdf::Facades::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) facade for the input PDF.
+1. Iterate through FieldNames.
+1. Call [GetField()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) on [Aspose::Pdf::Facades::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) for each name and print the value.
+1. Print the field count and close the facade.
 
 ```cpp
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Facades/Form.h>
+#include <system/io/file.h>
+#include <system/io/path.h>
+
 using namespace System;
 using namespace Aspose::Pdf;
-using namespace Aspose::Pdf::Forms;
 
-void ExtractDataFromForm()
+void FormExamples::GetValuesFromAllFields(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + u"GetValuesFromAllFields.pdf");
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
+    for (const auto &name : form->get_FieldNames())
+        std::cout << name << ": " << form->GetField(name) << std::endl;
 
-    // Get values from all fields
-    for(auto wa : document->get_Form())
+    std::cout << "Fields: " << form->get_FieldNames()->get_Length() << std::endl;
+    form->Close();
+}
+```
+
+## Export field values as JSON
+
+This exports names and values, not complete field definitions, widget geometry, or appearance settings.
+
+1. Create a [Aspose::Pdf::Facades::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) facade for the input PDF.
+1. Define the helper that escapes quotation marks, backslashes, and control characters.
+1. Iterate through FieldNames and retrieve each value with [GetField()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) on [Aspose::Pdf::Facades::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/).
+1. Build a JSON object whose properties map field names to string values.
+1. Write the JSON text to outputFile and close the facade.
+
+```cpp
+#include <Aspose.PDF.Cpp/Facades/Form.h>
+#include <system/io/file.h>
+#include <system/io/path.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void FormExamples::ExtractFormFieldsToJson(String inputFile, String outputFile)
+{
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
+    auto escape = [](const String &value) {
+        String result;
+        for (int i = 0; i < value.get_Length(); ++i)
+        {
+            char16_t c = value[i];
+            if (c == u'"' || c == u'\\')
+            {
+                result += u'\\';
+                result += c;
+            }
+            else if (c < 0x20)
+                result += String::Format(u"\\u{0:x4}", static_cast<int>(c));
+            else
+                result += c;
+        }
+        return result;
+    };
+    String json = u"{\n";
+    auto names = form->get_FieldNames();
+    for (int i = 0; i < names->get_Length(); ++i)
     {
-        auto formField = System::DynamicCast<Aspose::Pdf::Forms::Field>(wa);
-
-        Console::WriteLine(u"Field Name : {0} ", formField->get_PartialName());
-        Console::WriteLine(u"Value : {0} ", formField->get_Value());
+        auto name = names->idx_get(i);
+        json += u"    \"" + escape(name) + u"\": \"" + escape(form->GetField(name)) + u"\"";
+        if (i + 1 < names->get_Length())
+            json += u",";
+        json += u"\n";
     }
+    json += u"}\n";
+    System::IO::File::WriteAllText(outputFile, json);
+    form->Close();
 }
 ```
 
-## Get Value from an Individual Field of PDF Document
+## Use the delegating JSON entry point
 
-The form field's Value property allows you to get the value of a particular field. To get the value, get the form field from the Document object's Form collection. This example selects a [TextBoxField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field) and retrieves its value using the Value property.
+Despite the Doc suffix, this wrapper does not use a separate Document-based JSON serialization API.
 
-The following code snippet shows how to get the values of individual the fields in a PDF document.
-
-```cpp
-void GetValueFromIndividualField(){
-
-    String _dataDir("C:\\Samples\\");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + u"GetValueFromField.pdf");
-
-    // Get a field
-    auto textBoxField = System::DynamicCast<TextBoxField>(document->get_Form()->idx_get(u"textbox1"));
-
-    // Get field value
-    Console::WriteLine(u"PartialName : {0} ", textBoxField->get_PartialName());
-    Console::WriteLine(u"Value : {0} ", textBoxField->get_Value());
-}
-```
-
-To get the submit button's URL, use the following lines of code.
+1. Keep the declaration and implementation of ExtractFormFieldsToJson() available.
+1. Call ExtractFormFieldsToJsonDoc() with the input PDF and output JSON paths.
+1. Let it delegate to the preceding JSON exporter.
 
 ```cpp
-void GetSubmitButtonURL()
+#include <Aspose.PDF.Cpp/Facades/Form.h>
+#include <system/io/file.h>
+#include <system/io/path.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void FormExamples::ExtractFormFieldsToJsonDoc(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + u"GetValueFromField.pdf");
-    auto act = System::DynamicCast<Aspose::Pdf::Annotations::SubmitFormAction>(document->get_Form()->idx_get(1)->get_OnActivated());
-
-    if (act != nullptr)
-        Console::WriteLine(act->get_Url()->get_Name());
-}
-```
-
-## Get Form Fields from a Specific Region of PDF File
-
-Sometimes, you might know where in a document a form field is, but not have it's name. For example, if all you have to go from is a schematic of a printed form. With Aspose.PDF for C++, this is not a problem. You can find out which fields are in a given region of a PDF file. To get form fields from a specific region of a PDF file:
-
-1. Open the PDF file using the Document object.
-1. Create rectangle object to get fields in that area
-1. Get the form from the document's Forms collection.
-1. Display Field names and values
-
-The following code snippet shows how to get form fields in a specific rectangular region of a PDF file.
-
-```cpp
-void GetFormFieldsFromSpecificRegion()
-{
-    String _dataDir("C:\\Samples\\");
-
-    // Open pdf file
-    auto document = MakeObject<Aspose::Pdf::Document>(_dataDir + u"GetFieldsFromRegion.pdf");
-
-    // Create rectangle object to get fields in that area
-    auto rectangle = MakeObject<Aspose::Pdf::Rectangle>(35, 30, 500, 500);
-
-    // Get fields in the rectangular area
-    auto fields = document->get_Form()->GetFieldsInRect(rectangle);
-
-    // Display Field names and values
-    for(auto field : fields)
-    {
-        // Display image placement properties for all placements
-        Console::WriteLine(u"Field Name: {0} - Field Value: {1}", field->get_FullName(), field->get_Value());
-    }
+    ExtractFormFieldsToJson(inputFile, outputFile);
 }
 ```

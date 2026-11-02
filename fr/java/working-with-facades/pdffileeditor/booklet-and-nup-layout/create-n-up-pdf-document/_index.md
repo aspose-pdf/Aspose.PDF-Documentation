@@ -20,11 +20,9 @@ L'exemple Java utilise `PdfFileEditor.makeNUp` pour créer une mise en page 2x2 
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Appelez `makeNUp` avec le fichier d'entrée, le fichier de sortie et le nombre de colonnes et de lignes.
-3. Enregistrez le document généré.
-
-4. Si vous souhaitez une vérification explicite du succès, appelez la variante qui renvoie une valeur booléenne et gérez un résultat `false`.
+1. Appelez `makeNUp` avec le fichier d'entrée, le fichier de sortie et le nombre de colonnes et de lignes.
+1. Enregistrez le document généré.
+1. Si vous souhaitez une vérification explicite du succès, appelez la variante qui renvoie une valeur booléenne et gérez un résultat `false`.
 
 ### Exemple Java
 

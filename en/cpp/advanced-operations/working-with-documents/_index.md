@@ -1,30 +1,28 @@
 ---
-title: Working with PDF Documents
+title: Work with PDF documents in C++
 linktitle: Working with Documents
 type: docs
 weight: 10
 url: /cpp/working-with-documents/
-lastmod: "2021-06-05"
-description: This article describes to you what manipulations can be done with the document with Aspose.PDF for C++ library.
+description: Create, format, validate, merge, optimize, split, and manage layers in PDF documents using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create, Combine, Optimize, and Organize PDF Documents in C++
+Abstract: Explore document-level PDF workflows with Aspose.PDF for C++. The guides cover creation, viewer preferences, validation, merging, optimization, splitting, and layer management.
 ---
 
-PDF is a Portable Document Format developed by Adobe. A PDF file displays the same content and layout no matter what operating system, device, or software application it is viewed on. And this is its main feature.
+Use Aspose.PDF for C++ to create, format, validate, merge, optimize, and split PDF documents and manage page layers. The guides below cover document-level operations using the supplied C++ examples.
 
-PDF files can contain an unlimited amount of information, but they can be compressed to a file size that is easy to share, while maintaining complete control over the level of image quality.
+- [Create PDF documents](/pdf/cpp/create-pdf-document/) — Create a PDF from text or add searchable text to a scanned PDF through an external OCR callback with Aspose.PDF for C++.
+- [Format PDF documents](/pdf/cpp/formatting-pdf-document/) — Inspect and configure PDF viewer preferences, font embedding, font subsets, and opening zoom with Aspose.PDF for C++.
+- [Manipulate PDF documents](/pdf/cpp/manipulate-pdf-document/) — Validate PDF/A documents, create and format a table of contents, add an expiry alert, and flatten a PDF with Aspose.PDF for C++.
+- [Merge PDF documents](/pdf/cpp/merge-pdf-documents/) — Combine PDF files in sequence, merge selected ranges, insert or alternate pages, and add section separators and bookmarks with Aspose.PDF for C++.
+- [Optimize PDF documents](/pdf/cpp/optimize-pdf/) — Optimize PDF resources, compress images, remove unused data, flatten interactive content, and convert pages to grayscale with Aspose.PDF for C++.
+- [Split PDF documents](/pdf/cpp/split-pdf-document/) — Split PDF documents into individual pages, balanced parts, page ranges, custom groups, or odd and even pages with Aspose.PDF for C++.
+- [Work with PDF layers](/pdf/cpp/working-with-layers/) — Inspect the supplied layer-creation example and lock, export, flatten, or merge layers on the first PDF page with Aspose.PDF for C++.
 
-Today PDF format is very popular, it can contain images, graphs, annotations, media, tables, forms, etc. All the contents of such a PDF document must be able to edit, create, delete.
 
-But **Aspose.PDF for C++** can help you cope with most of the tasks that arise when working with a PDF document.
 
-You are able to do the following:
-
-- [Create PDF Document](/pdf/cpp/create-pdf-document/) - create PDF, create searchable PDF document.
-- [Formatting PDF Document](/pdf/cpp/formatting-pdf-document/) - get and set document properties, embedding fonts, and other operations with PDF files.
-- [Manipulate PDF Document](/pdf/cpp/manipulate-pdf-document/) - validate a PDF document for PDF A standard, working with TOC, setting PDF expiry date, and etc.
-- [Optimize PDF Documents](/pdf/cpp/optimize-pdf/) - optimize page content, optimize file size, remove unused objects, compress all images for successful document optimization.
-- [Merge PDF](/pdf/cpp/merge-pdf-documents/) - merge multiple PDF files into a single PDF document using C++.
-- [Split PDF](/pdf/cpp/split-pdf-document/) - split PDF pages into individual PDF files in your C++ applications.
-- [Working with Headings](/pdf/cpp/working-with-headings/) - you can create numbering in heading your PDF document with C++.

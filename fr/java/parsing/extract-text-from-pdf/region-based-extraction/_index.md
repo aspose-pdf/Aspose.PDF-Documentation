@@ -15,13 +15,9 @@ sitemap:
 Utilisez `TextSearchOptions` avec un `Rectangle` pour limiter l'extraction à une zone définie sur une page.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`TextAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textabsorber/) pour collecter le texte de la zone de page sélectionnée.
-
 1. Créez [`TextSearchOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsearchoptions/) pour le rectangle cible [`Rectangle`](https://reference.aspose.com/pdf/java/com.aspose.pdf/rectangle/) et activez `setLimitToPageBounds(true)` pour que l'extraction reste dans la zone de page visible.
-
 1. Appliquez les options de recherche configurées à l'absorbeur et visitez la [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) cible.
-
 1. Écrivez le texte extrait dans le fichier de sortie.
 
 ```java
@@ -43,14 +39,10 @@ public static void extractTextFromRegion(Path inputFile, Path outputFile, int pa
 Utilisez `ParagraphAbsorber` pour inspecter les rectangles de section et les polygones de paragraphe avec le texte extrait.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Créez un [`ParagraphAbsorber`](https://reference.aspose.com/pdf/java/com.aspose.pdf/paragraphabsorber/) et visitez la page cible [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) pour créer des informations de balisage de page.
-
 1. Lisez le premier résultat du balisage de page et parcourez ses sections et paragraphes.
 1. Collectez chaque rectangle de section, polygone de paragraphe et le texte de paragraphe reconstruit à partir de ses lignes [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/).
-
 1. Créez le rapport de sortie avec la géométrie et les détails du texte extraits.
-
 1. Écrivez les détails extraits dans le fichier de sortie.
 
 ```java

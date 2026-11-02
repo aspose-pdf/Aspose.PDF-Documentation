@@ -21,13 +21,10 @@ Utilisez ce flux de travail lorsqu'un tampon basé sur une image doit être appl
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
-2. Créez un objet `Stamp`.
-3. Liez le tampon à un fichier image avec `bindImage`.
-
-4. Ajoutez le tampon au document avec `addStamp`.
-
-5. Enregistrez la sortie et fermez l’objet de façade.
+1. Créez un objet `Stamp`.
+1. Liez le tampon à un fichier image avec `bindImage`.
+1. Ajoutez le tampon au document avec `addStamp`.
+1. Enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemple Java
 

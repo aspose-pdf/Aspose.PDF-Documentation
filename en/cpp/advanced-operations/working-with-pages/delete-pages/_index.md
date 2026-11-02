@@ -1,36 +1,73 @@
 ---
-title: Delete PDF Pages programmatically
-linktitle: Delete PDF Pages
+title: Delete PDF pages in C++
+linktitle: Delete Pages
 type: docs
-weight: 30
+weight: 50
 url: /cpp/delete-pages/
-description: You can delete pages from your PDF file using C++ library.
-lastmod: "2021-12-09"
+description: Remove one page or a selected set of pages from a PDF document using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Remove Single or Multiple Pages from PDFs in C++
+Abstract: Learn how to delete one PDF page or a selected set of pages with Aspose.PDF for C++. Save the modified document after removing the specified pages.
 ---
 
-You can delete pages from a PDF file using Aspose.PDF for C++. To delete a particular page from the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection.
+Remove one page or a selected set of pages from a PDF document using Aspose.PDF for C++.
 
-## Delete Page from PDF File
+## Delete a single page
 
-1. Call the [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#a02bb7a96e66ef6e10bcf4930b299b3b7) method and specify the page's index
-1. Call the Save method to save the updated PDF file
-The following code snippet shows how to delete a particular page from the PDF file using C++.
+The input PDF must contain page 2.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) on [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) for page 2.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void DeletePDFPages() {
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("DeleteParticularPage.pdf");
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
 
-    // Delete a particular page
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of DeletePagesExamples.deletePage.
+void DeletePage(System::String inputFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
     document->get_Pages()->Delete(2);
+    document->Save(outputFile);
+}
+```
 
-    // Save updated PDF
-    document->Save(_dataDir + inputFileName);
+## Delete multiple pages
+
+The input PDF must contain at least four pages.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create an array containing page numbers 2, 3, and 4.
+1. Pass the array to [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) on [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <system/array.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of DeletePagesExamples.deleteBunchPages.
+void DeleteBunchPages(System::String inputFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
+    document->get_Pages()->Delete(MakeArray<int32_t>({2, 3, 4}));
+    document->Save(outputFile);
 }
 ```

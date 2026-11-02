@@ -7,7 +7,6 @@ url: /fr/java/adding-javascript-in-python/
 description: Découvrez comment intégrer du code JavaScript dans un document PDF à l'aide de Python et Aspose.PDF pour améliorer l'interactivité.
 lastmod: "2026-09-21"
 ---
-
 Pour ajouter du JavaScript à l'aide d'Aspose.PDF Java en Python, utilisez la méthode AddJavascript() de la classe Document.
 
 ```python

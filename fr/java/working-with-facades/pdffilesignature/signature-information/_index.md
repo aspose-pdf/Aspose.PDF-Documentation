@@ -21,11 +21,9 @@ Utilisez ce flux de travail lorsque vous devez vérifier qui a signé un PDF et 
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF signé.
-
-2. Lisez la collection de signatures et sélectionnez un nom de signature.
-3. Appelez les accesseurs aux informations de signature pour connaître le nom du signataire, la date, la raison et le lieu.
-
-4. Fermez l'objet de façade lorsque vous avez terminé.
+1. Lisez la collection de signatures et sélectionnez un nom de signature.
+1. Appelez les accesseurs aux informations de signature pour connaître le nom du signataire, la date, la raison et le lieu.
+1. Fermez l'objet de façade lorsque vous avez terminé.
 
 ### Exemple Java
 

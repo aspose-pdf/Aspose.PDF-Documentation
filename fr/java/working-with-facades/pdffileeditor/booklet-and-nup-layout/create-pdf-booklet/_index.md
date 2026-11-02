@@ -20,11 +20,9 @@ Utilisez `PdfFileEditor.makeBooklet` pour réorganiser les pages d'un PDF exista
 ### Étapes
 
 1. Créez une instance `PdfFileEditor`.
-
-2. Appelez `makeBooklet` avec le PDF source et le fichier de sortie.
-3. Enregistrez le document livret.
-
-4. Si vous souhaitez vérifier la valeur de retour, utilisez la variante qui renvoie une valeur booléenne et gérez un éventuel échec.
+1. Appelez `makeBooklet` avec le PDF source et le fichier de sortie.
+1. Enregistrez le document livret.
+1. Si vous souhaitez vérifier la valeur de retour, utilisez la variante qui renvoie une valeur booléenne et gérez un éventuel échec.
 
 ### Exemple Java
 
