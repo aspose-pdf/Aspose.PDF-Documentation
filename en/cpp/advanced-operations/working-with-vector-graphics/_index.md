@@ -35,7 +35,6 @@ GraphicsAbsorber reads graphic elements from the selected page. This example pri
 #include <Aspose.PDF.Cpp/Vector/GraphicsAbsorber.h>
 #include <Aspose.PDF.Cpp/Vector/Model/GraphicElement.h>
 #include <Aspose.PDF.Cpp/Vector/Model/GraphicElementCollection.h>
-#include <system/collections/list.h>
 #include <iostream>
 
 using namespace System;
