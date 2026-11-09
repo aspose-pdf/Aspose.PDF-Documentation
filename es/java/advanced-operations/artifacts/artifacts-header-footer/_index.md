@@ -1,27 +1,27 @@
 ---
-title: Administrar encabezados y pies de página PDF usando Java
-linktitle: Administrar encabezados y pies de página PDF
+title: Agregar encabezados y pies de página PDF en Java
+linktitle: Agregar encabezados y pies de página
 type: docs
 weight: 70
 url: /es/java/artifacts-header-footer/
-description: Aprenda cómo agregar y eliminar artefactos de encabezado y pie de página en documentos PDF usando Aspose.PDF for Java.
-lastmod: "2026-09-29"
+description: Crear artefactos de encabezado y pie de página con estilo y agregarlos a las páginas PDF en Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Añadir, personalizar y eliminar encabezados y pies de página PDF usando Java
-Abstract: Este artículo explica cómo gestionar los artefactos de encabezado y pie de página en documentos PDF usando Aspose.PDF for Java. Cubre la creación de objetos reutilizables `HeaderArtifact` y `FooterArtifact` con estado de texto personalizado y alineación, su incorporación a una página y la eliminación de los artefactos de encabezado y pie de página existentes.
+AlternativeHeadline: Agregar encabezados y pies de página en Java
+Abstract: Crear artefactos de encabezado y pie de página con estilo y agregarlos a las páginas PDF en Java.
 ---
-Los artefactos de encabezado y pie de página son elementos de paginación sin contenido que se utilizan comúnmente para etiquetas repetidas, identificadores de página y enmarcado del diseño.
+Los artefactos de encabezado y pie de página son elementos de paginación no de contenido que se utilizan comúnmente para etiquetas repetidas, identificadores de página y encuadre de diseño.
 
 ## Crear un artefacto de encabezado
 
-Utilice este asistente cuando necesite un artefacto de encabezado reutilizable con estilo de texto y alineación coherentes.
+Utilice este asistente cuando necesite un artefacto de encabezado reutilizable con estilo de texto y alineación consistentes.
 
-1. Cree un [`HeaderArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
-1. Establezca su texto, la configuración de la Font y el color de primer plano.
-1. Configure la alineación horizontal y devuelva el artifact.
+1. Cree un [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
+1. Establezca su texto, la configuración de la fuente y el color de primer plano.
+1. Configure la alineación horizontal y devuelva el artefacto.
 
 ```java
 public static HeaderArtifact createHeaderArtifact(String text) {
@@ -39,7 +39,7 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 
 Este asistente crea un artefacto de pie de página reutilizable con el mismo patrón de estilo que el artefacto de encabezado.
 
-1. Cree un [`FooterArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
+1. Cree un [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
 1. Establezca su texto, estado del texto y color de primer plano.
 1. Configure la alineación y devuelva el artefacto.
 
@@ -57,9 +57,9 @@ public static FooterArtifact createFooterArtifact(String text) {
 
 ## Agregar un artefacto de encabezado
 
-Utilice este ejemplo cuando una página deba mostrar un artefacto de encabezado reutilizable.
+Utilice este ejemplo cuando una página debe mostrar un artefacto de encabezado reutilizable.
 
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen con [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree el artefacto de encabezado mediante el método auxiliar.
 1. Agregue el artefacto a la página y guarde el archivo de salida.
 
@@ -77,7 +77,7 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 
 Utilice este ejemplo cuando la página debe mostrar un artefacto de pie de página con formato reutilizable.
 
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra el PDF de origen con [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Cree el artefacto de pie de página mediante el método auxiliar.
 1. Agregue el artefacto a la página y guarde el archivo de salida.
 
@@ -91,27 +91,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Eliminar artefactos de encabezado y pie de página
+## Temas relacionados
 
-Utilice este enfoque cuando los artefactos existentes de encabezado y pie de página deban eliminarse de la página.
-
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Itere a través de la colección de artefactos de la página en orden inverso.
-1. Elimine los artefactos de paginación cuyo subtipo sea encabezado o pie de página, luego guarde el documento.
-
-```java
-public static void deleteHeaderFooterArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && (artifact.getSubtype() == Artifact.ArtifactSubtype.Header
-                    || artifact.getSubtype() == Artifact.ArtifactSubtype.Footer)) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Eliminar encabezados y pies de página](/pdf/es/java/remove-headers-footers/)
+- [Trabajar con artefactos PDF en Java](/pdf/es/java/artifacts/)

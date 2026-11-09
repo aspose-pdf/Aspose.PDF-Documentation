@@ -1,35 +1,27 @@
 ---
 title: Contar artefactos PDF en Python
-linktitle: Contando artefactos
+linktitle: Contar artefactos
 type: docs
 weight: 40
 url: /es/python-net/counting-artifacts/
-description: Aprenda cómo inspeccionar y contar artefactos de paginación en documentos PDF usando Python con Aspose.PDF for Python via .NET.
-lastmod: "2026-05-08"
+description: Contar marcas de agua, fondos, encabezados y pies de página por subtipo de artefacto de paginación en una página PDF en Python.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Contando artefactos en PDF usando Python
-Abstract: Los artefactos de paginación, como marcas de agua, fondos, encabezados y pies de página, se utilizan comúnmente en documentos PDF para proporcionar estructura, marca y identificación. Este ejemplo muestra cómo inspeccionar y contar estos artefactos de forma programática usando Aspose.PDF for Python via .NET. Al filtrar los artefactos en una página y agruparlos por subtipo, los desarrolladores pueden analizar rápidamente la composición del documento y verificar la presencia de elementos específicos. El código proporcionado ilustra cómo abrir un PDF, extraer los artefactos de paginación de la primera página, contar cada subtipo y mostrar los resultados, ofreciendo un enfoque práctico para la auditoría y validación de documentos.
+AlternativeHeadline: Contar artefactos en PDF usando Python
+Abstract: Contar artefactos de paginación en una página PDF para verificar marcas de agua, fondos, encabezados y pies de página.
 ---
 
-## Contar artefactos de un tipo concreto
+Contar artefactos de paginación en una página PDF para verificar marcas de agua, fondos, encabezados y pies de página.
 
-Este ejemplo muestra cómo inspeccionar y contar artefactos de paginación en un PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) usando Aspose.PDF for Python via .NET. Los artefactos de paginación incluyen elementos como marcas de agua, fondos, encabezados y pies de página que se aplican a las páginas con fines de diseño e identificación. Al filtrar objetos [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) en una [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) y agruparlos por subtipo (`Artifact.ArtifactSubtype`), los desarrolladores pueden analizar rápidamente la estructura del documento y verificar la presencia de elementos específicos.
+## Contar artefactos de un tipo particular
 
-Para calcular el recuento total de artefactos de un tipo concreto, por ejemplo el número total de marcas de agua, use el siguiente código. El ejemplo filtra la colección [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) de la página, que es una [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/), por [`Artifact.ArtifactType`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/#properties) y luego cuenta los subtipos (`Artifact.ArtifactSubtype`).
-
-1. Abra el documento PDF (ver [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
-1. Filtrar los artefactos de paginación usando la colección [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) de la página.
-1. Contar artefactos por subtipo (`Artifact.ArtifactSubtype`).
-1. Imprima los resultados.
+Filtre la colección `artifacts` de la primera página por el tipo `PAGINATION` y cuente los artefactos por subtipo. El ejemplo muestra cero si no encuentra un subtipo.
 
 ```python
-
-from os import path
 from collections import Counter
-import sys
 import aspose.pdf as ap
 
 def count_pdf_artifacts(infile):
@@ -50,9 +42,10 @@ def count_pdf_artifacts(infile):
         print(f"Footers: {counts.get(ap.Artifact.ArtifactSubtype.FOOTER, 0)}")
 ```
 
-## Temas relacionados con artefactos
+## Temas relacionados
 
 - [Trabajar con artefactos PDF en Python](/pdf/es/python-net/artifacts/)
-- [Agregar marcas de agua a PDF en Python](/pdf/es/python-net/add-watermarks/)
-- [Agregar fondos PDF en Python](/pdf/es/python-net/add-backgrounds/)
-- [Agregar numeración Bates a PDF en Python](/pdf/es/python-net/add-bates-numbering/)
+- [Extraer detalles de marcas de agua](/pdf/es/python-net/extract-watermarks/)
+- [Eliminar marcas de agua](/pdf/es/python-net/remove-watermarks/)
+- [Eliminar fondos](/pdf/es/python-net/remove-backgrounds/)
+- [Eliminar encabezados y pies de página](/pdf/es/python-net/remove-headers-footers/)

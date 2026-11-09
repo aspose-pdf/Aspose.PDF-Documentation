@@ -1,47 +1,26 @@
 ---
 title: Agregar marcas de agua a PDF en Java
-linktitle: Agregar marca de agua
+linktitle: Agregar marcas de agua
 type: docs
 weight: 30
 url: /es/java/add-watermarks/
-description: Aprenda cómo agregar, extraer y eliminar artefactos de marcas de agua en archivos PDF usando Aspose.PDF for Java.
-lastmod: "2026-09-29"
+description: Agregar artefactos de marcas de agua de texto con estilo a páginas PDF en Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Agregar marca de agua a PDF con Java
-Abstract: Este artículo explica cómo agregar, inspeccionar y eliminar artefactos de marca de agua en documentos PDF usando Aspose.PDF for Java. Cubre la creación de una marca de agua de texto con alineación, rotación, opacidad y configuraciones de fondo, la inspección de artefactos de marca de agua en una página y su eliminación.
+AlternativeHeadline: Agregar marcas de agua en Java
+Abstract: Agregar artefactos de marcas de agua de texto con estilo a páginas PDF en Java.
 ---
-Los artefactos de marca de agua le permiten colocar marcas visuales persistentes en una página sin mezclarlas con el contenido principal del documento.
-
-## Extraer artefactos de marca de agua de un PDF
-
-Utilice este ejemplo cuando necesite inspeccionar los artefactos de marca de agua existentes y leer su texto o posición.
-
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Itere a través de la colección de artefactos de la página objetivo.
-1. Filtre los artefactos de paginación de marca de agua y imprima su texto y rectángulos.
-
-```java
-public static void extractWatermarkFromPdf(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (Artifact artifact : document.getPages().get_Item(1).getArtifacts()) {
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Watermark) {
-                System.out.println(artifact.getText() + " " + artifact.getRectangle());
-            }
-        }
-    }
-}
-```
+Los artefactos de marcas de agua le permiten colocar marcas visuales persistentes en una página sin mezclararlas con el contenido principal del documento.
 
 ## Agregar un artefacto de marca de agua
 
-Utilice este ejemplo cuando la página debe mostrar una marca de agua de texto centrada con rotación personalizada, opacidad y colocación en el fondo.
+Utilice este ejemplo cuando la página debe mostrar una marca de agua de texto centrada con rotación personalizada, opacidad y ubicación de fondo.
 
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Cree un [`WatermarkArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) y configure su estado de texto y la configuración de colocación.
+1. Abra el PDF de origen con [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Cree un [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) y configure su estado de texto y la configuración de ubicación.
 1. Agregue la marca de agua a la página y guarde el archivo de salida.
 
 ```java
@@ -67,26 +46,8 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Eliminar artefactos de marca de agua
+## Temas relacionados
 
-Utilice este enfoque cuando se deban eliminar los artefactos de marca de agua existentes de la página.
-
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Itere a través de la colección de artefactos de página en orden inverso.
-1. Elimine los artefactos de paginación cuyo subtipo es marca de agua, luego guardar el documento.
-
-```java
-public static void deleteWatermarkArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Watermark) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Extraer detalles de marca de agua](/pdf/es/java/extract-watermarks/)
+- [Eliminar marcas de agua](/pdf/es/java/remove-watermarks/)
+- [Trabajar con artefactos PDF en Java](/pdf/es/java/artifacts/)
