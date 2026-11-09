@@ -91,7 +91,7 @@ void ComplexExample(String imageFile, String outputFile)
     for (int index = 0; index < 10; ++index) {
         row = table->get_Rows()->Add();
         for (int column = 0; column < 2; ++column, minutes += 30) {
-            row->get_Cells()->Add(String::Format(u"{0}:{1:D2}:00", minutes / 60, minutes % 60));
+            row->get_Cells()->Add(String::Format(u"{0:D2}:{1:D2}", minutes / 60, minutes % 60));
         }
     }
     page->get_Paragraphs()->Add(table);
