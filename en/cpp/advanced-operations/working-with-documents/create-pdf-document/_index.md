@@ -53,7 +53,7 @@ Install Tesseract and the required language data separately. The callback invoke
 
 Set `tesseractExecutable` to the installed executable and `language` to an installed language code, such as `eng`. The example uses the default Tesseract language-data location. If your installation stores language data elsewhere, configure `TESSDATA_PREFIX` for the process.
 
-The `CreateSearchablePdf` function opens the scanned PDF and passes a `Document::CallBackGetHocr` callback to `Convert()`. The callback writes each supplied image to a temporary bitmap and waits for Tesseract to finish. Its cleanup object removes the bitmap and hOCR file when the callback returns or an exception occurs.
+The `CreateSearchablePdf` function opens the scanned PDF and passes a `Document::CallBackGetHocr` callback to `Convert(callback, true)`. The callback writes each supplied image to a temporary bitmap and waits for Tesseract to finish. Its cleanup object removes the bitmap and hOCR file when the callback returns or an exception occurs.
 
 1. Supply the Tesseract executable path and an installed OCR language code.
 1. Create a `Document::CallBackGetHocr` callback that saves each image as a temporary bitmap.
@@ -170,7 +170,6 @@ void CreateSearchablePdf2(String inputFile, String outputFile)
     String tempImage = System::IO::Path::Combine(outputDirectory, u"page.png");
     String tempDoc = System::IO::Path::Combine(outputDirectory, u"page");
     String tempPdf = System::IO::Path::Combine(outputDirectory, u"page.pdf");
-    String tempLog = System::IO::Path::Combine(outputDirectory, u"page.log");
 
     auto resultDocument = MakeObject<Document>();
     const auto arguments = String::Format(
