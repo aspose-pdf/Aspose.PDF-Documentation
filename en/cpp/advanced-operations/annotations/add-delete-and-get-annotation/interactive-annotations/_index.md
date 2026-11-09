@@ -76,7 +76,7 @@ namespace WorkingWithAnnotationsExamples::Interactive {
         document->Save(outputFile);
     }
 
-} // namespace WorkingWithAnnotations::Interactive
+} // namespace WorkingWithAnnotationsExamples::Interactive
 ```
 
 ## Add a URI link

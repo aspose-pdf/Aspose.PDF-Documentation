@@ -367,7 +367,7 @@ void TextAnnotationAdd(System::String inputFile, System::String outputFile)
             MakeObject<Rectangle>(299.988, 613.664, 428.708, 680.769, true));
     textAnnotation->set_Title(u"Aspose User");
     textAnnotation->set_Subject(u"Sticky Note");
-    textAnnotation->set_Contents(u"This is a text annotation added by Aspose.PDF for Java");
+    textAnnotation->set_Contents(u"This is a text annotation added by Aspose.PDF for C++");
     textAnnotation->set_Flags(AnnotationFlags::Print);
     textAnnotation->set_Color(Color::get_Blue());
     textAnnotation->set_Icon(TextIcon::Help);

@@ -64,7 +64,7 @@ void ApplyRedaction(System::String inputFile, System::String outputFile)
     document->Save(outputFile);
 }
 
-} // namespace WorkingWithAnnotations::Security
+} // namespace WorkingWithAnnotationsExamples::Security
 ```
 
 ## Mark matching text for redaction

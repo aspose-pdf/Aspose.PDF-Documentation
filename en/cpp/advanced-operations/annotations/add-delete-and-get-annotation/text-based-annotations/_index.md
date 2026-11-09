@@ -61,7 +61,7 @@ namespace WorkingWithAnnotationsExamples::Text {
         document->Save(outputFile);
     }
 
-} // namespace WorkingWithAnnotations::Text
+} // namespace WorkingWithAnnotationsExamples::Text
 ```
 
 ## Get free text annotations

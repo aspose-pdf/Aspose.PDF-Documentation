@@ -97,7 +97,7 @@ namespace WorkingWithAnnotationsExamples::Media {
         document->Save(outputFile);
     }
 
-} // namespace WorkingWithAnnotations::Media
+} // namespace WorkingWithAnnotationsExamples::Media
 ```
 
 ## Get multimedia annotations

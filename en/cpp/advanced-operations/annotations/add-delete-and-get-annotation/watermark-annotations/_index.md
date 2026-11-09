@@ -72,7 +72,7 @@ void WatermarkAdd(System::String inputFile, System::String outputFile)
     document->Save(outputFile);
 }
 
-} // namespace WorkingWithAnnotations::Watermark
+} // namespace WorkingWithAnnotationsExamples::Watermark
 ```
 
 ## Get watermark annotations

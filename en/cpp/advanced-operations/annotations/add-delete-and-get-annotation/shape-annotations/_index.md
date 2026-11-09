@@ -65,7 +65,7 @@ void CircleAnnotationAdd(System::String inputFile, System::String outputFile)
     document->Save(outputFile);
 }
 
-} // namespace WorkingWithAnnotations::Shape
+} // namespace WorkingWithAnnotationsExamples::Shape
 ```
 
 ## Get circle annotations
