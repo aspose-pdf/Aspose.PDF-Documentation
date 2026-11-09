@@ -4,25 +4,25 @@ linktitle: Criar documento PDF
 type: docs
 weight: 10
 url: /pt/java/create-pdf-document/
-description: Aprenda a criar arquivos PDF e a gerar PDFs pesquisáveis em Java usando o Aspose.PDF.
-lastmod: "2026-10-06"
+description: Aprenda como criar arquivos PDF e gerar PDFs pesquisáveis em Java usando Aspose.PDF.
+lastmod: "2026-11-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Criar arquivos PDF e documentos PDF pesquisáveis com Java
-Abstract: Este artigo mostra como criar documentos PDF usando Aspose.PDF for Java. Ele cobre a criação de um novo PDF do zero e a conversão de um documento baseado em imagem em um PDF pesquisável, fornecendo a saída HOCR de um motor OCR externo.
+Abstract: Este artigo demonstra como criar documentos PDF usando Aspose.PDF for Java. Ele abrange a criação de um novo PDF do zero e a conversão de um documento baseado em imagem em um PDF pesquisável, fornecendo a saída HOCR de um mecanismo OCR externo.
 ---
-Aspose.PDF for Java oferece suporte tanto à criação simples de documentos quanto a fluxos de trabalho de PDF pesquisáveis assistidos por OCR.
+Aspose.PDF for Java suporta tanto a criação simples de documentos quanto fluxos de trabalho de PDF pesquisável assistidos por OCR.
 
 ## Criar um novo documento PDF
 
 Use esta abordagem quando precisar gerar um arquivo PDF simples do zero.
 
 1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Adicione um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) para o documento.
+1. Adicione uma página [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) ao documento.
 1. Crie um [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/) e adicione-o à página.
-1. Salve o PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Salve o documento PDF de saída [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 
 ```java
 public static void createNewDocument(Path outputFile) {
@@ -36,221 +36,208 @@ public static void createNewDocument(Path outputFile) {
 
 ## Criar um PDF pesquisável
 
-O `createSearchablePdf` exemplos de uso `Document.convert(...)` com um `CallBackGetHocr` implementação. O callback grava a imagem de origem em um arquivo temporário, invoca o Tesseract com o `hocr` opção, lê a marcação HOCR gerada e a retorna ao Aspose.PDF.
+Um PDF digitalizado contém imagens de texto. Use um mecanismo OCR externo para reconhecer o texto e torná‑lo pesquisável e selecionável. Os exemplos a seguir usam o Tesseract para retornar marcação HOCR ao Aspose.PDF ou para gerar páginas PDF pesquisáveis que são então mescladas.
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crie o `CallBackGetHocr` callback e converta o documento de origem em conteúdo PDF pesquisável.
-1. Salve o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+Instale o Tesseract 4 ou mais recente com os dados de idioma LSTM para inglês antes de executar estes exemplos. Defina `TESSERACT_PATH` no método auxiliar compartilhado abaixo com o caminho do seu executável, ou use `"tesseract"` se estiver disponível em `PATH`. Ambos os exemplos usam o mesmo método auxiliar e requerem Java 11 ou posterior. Coloque os métodos e constantes na mesma classe e inclua estas importações:
+
+### Criar um PDF pesquisável usando um callback HOCR
+
+Use [Document.CallBackGetHocr](https://reference.aspose.com/pdf/java/com.aspose.pdf/document.callbackgethocr/) para fornecer o texto reconhecido e suas coordenadas ao Aspose.PDF. O Tesseract gera a marcação HOCR, e o Aspose.PDF a utiliza para adicionar uma camada de texto pesquisável ao documento baseado em imagem.
+
+1. Prepare um diretório temporário para a imagem, saída HOCR e log de OCR.
+1. Implemente [Document.CallBackGetHocr](https://reference.aspose.com/pdf/java/com.aspose.pdf/document.callbackgethocr/) e salve cada imagem fornecida como um arquivo JPEG.
+1. Chame o método auxiliar compartilhado `runTesseract` com o formato de saída `hocr`.
+1. Leia o arquivo `.hocr` gerado, exclua os arquivos temporários e retorne a marcação do callback.
+1. Abra o documento de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e passe o callback para `convert`.
+1. Verifique o resultado da conversão e salve o PDF pesquisável usando `save`.
 
 ```java
-public static void createSearchablePdf(Path inputFile, Path outputFile) {
-    Path tempDir = outputFile.getParent().resolve("ocr-temp");
-    CallBackGetHocr cbgh = new CallBackGetHocr() {
+import com.aspose.pdf.Document;
+import com.aspose.pdf.Page;
+import com.aspose.pdf.devices.PngDevice;
+import com.aspose.pdf.devices.Resolution;
+
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+public static void createSearchablePdf_1(Path inputFile, Path outputFile) {
+    Path tempDir = outputFile.toAbsolutePath().getParent().resolve("ocr-temp");
+
+    // Create callBack - logic recognize text for PDF images. Use outer OCR supports
+    // HOCR standard(http://en.wikipedia.org/wiki/HOCR).
+    // We have used free google tesseract
+    // OCR(http://en.wikipedia.org/wiki/Tesseract_%28software%29)
+
+    Document.CallBackGetHocr callBackGetHocr = new Document.CallBackGetHocr() {
         @Override
         public String invoke(java.awt.image.BufferedImage img) {
-            // save the image, run Tesseract with "hocr", and return the HOCR text
+            File outputfile = tempDir.resolve("test.jpg").toFile();
+            try {
+                Files.createDirectories(tempDir);
+                ImageIO.write(img, "jpg", outputfile);
+            } catch (IOException e1) {
+                throw new java.io.UncheckedIOException("Failed to write OCR image.", e1);
+            }
+
+            try {
+                Path outputBase = tempDir.resolve("out");
+                runTesseract(outputfile.toPath(), outputBase, "hocr", tempDir.resolve("tesseract.log"));
+            } catch (IOException e) {
+                throw new java.io.UncheckedIOException("Tesseract OCR failed.", e);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new IllegalStateException("Tesseract OCR was interrupted.", e);
+            }
+
+            // Read the HOCR output as a string.
+            File file = tempDir.resolve("out.hocr").toFile();
+            StringBuilder fileContents = new StringBuilder((int) file.length());
+            Scanner scanner = null;
+            try {
+                scanner = new Scanner(file);
+                String lineSeparator = System.getProperty("line.separator");
+
+                while (scanner.hasNextLine()) {
+                    fileContents.append(scanner.nextLine() + lineSeparator);
+                }
+            } catch (FileNotFoundException e) {
+                throw new java.io.UncheckedIOException("Tesseract OCR failed.", e);
+            } finally {
+                if (scanner != null)
+                    scanner.close();
+            }
+
+            // deleting temp files
+            File fileOut = tempDir.resolve("out.hocr").toFile();
+            if (fileOut.exists()) {
+                fileOut.delete();
+            }
+            File fileLog = tempDir.resolve("tesseract.log").toFile();
+            if (fileLog.exists()) {
+                fileLog.delete();
+            }
+            File fileTest = tempDir.resolve("test.jpg").toFile();
+            if (fileTest.exists()) {
+                fileTest.delete();
+            }
+
             return fileContents.toString();
         }
     };
+    // End callBack
     try (Document document = new Document(inputFile.toString())) {
-        document.convert(cbgh);
+        if (!document.convert(callBackGetHocr))
+            throw new RuntimeException("Failed to convert document.");
         document.save(outputFile.toString());
     }
 }
 ```
 
-## Obter configurações da janela do documento
+Este exemplo usa nomes de arquivos fixos dentro de `ocr-temp`. Use um diretório temporário separado para cada conversão se você adaptá-lo para processamento concorrente.
 
-Use este exemplo para inspecionar as preferências de visualização atuais armazenadas em um documento PDF existente.
+### Criar um PDF pesquisável reconhecendo páginas renderizadas
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Leia as propriedades de janela e exibição necessárias do documento.
-1. Exiba as configurações atuais para inspeção ou depuração.
+Renderize cada página como uma imagem PNG, deixe o Tesseract gerar um PDF pesquisável para essa imagem e mescle os PDFs gerados em um único documento. A saída é baseada nas imagens de página renderizadas com texto reconhecido, portanto os elementos interativos existentes não são mantidos.
 
-```java
-public static void getDocumentWindow(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        System.out.println("CenterWindow: " + document.isCenterWindow());
-        System.out.println("Direction: " + document.getDirection());
-        System.out.println("DisplayDocTitle: " + document.isDisplayDocTitle());
-        System.out.println("FitWindow: " + document.isFitWindow());
-        System.out.println("HideMenuBar: " + document.isHideMenubar());
-        System.out.println("HideToolBar: " + document.isHideToolBar());
-        System.out.println("HideWindowUI: " + document.isHideWindowUI());
-        System.out.println("NonFullScreenPageMode: " + document.getNonFullScreenPageMode());
-        System.out.println("PageLayout: " + document.getPageLayout());
-        System.out.println("PageMode: " + document.getPageMode());
-    }
-}
-```
-
-## Definir preferências da janela do documento
-
-Este exemplo atualiza como o PDF deve ser exibido quando aberto em um visualizador compatível.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Defina as preferências de janela, layout e modo de página necessárias.
-1. Salve o PDF atualizado [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie um diretório temporário único para a imagem renderizada, o PDF gerado e o registro de OCR.
+1. Abra o documento de origem [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e crie um documento de saída vazio.
+1. Crie um [PngDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/) com uma [Resolution](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/) de 600 DPI.
+1. Percorra os objetos [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) do documento de origem e renderize cada página usando `process`.
+1. Chame o método auxiliar compartilhado `runTesseract` com o formato de saída `pdf` e anexe o PDF gerado usando [Document.merge](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Salve o PDF pesquisável combinado e exclua os arquivos temporários no bloco `finally`.
 
 ```java
-public static void setDocumentWindow(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        document.setCenterWindow(true);
-        document.setDirection(Direction.R2L);
-        document.setDisplayDocTitle(true);
-        document.setFitWindow(true);
-        document.setHideMenubar(true);
-        document.setHideToolBar(true);
-        document.setHideWindowUI(true);
-        document.setNonFullScreenPageMode(PageMode.UseOC);
-        document.setPageLayout(PageLayout.TwoColumnLeft);
-        document.setPageMode(PageMode.UseThumbs);
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## Incorporar fontes em um PDF existente
-
-Use esta abordagem quando um documento deve conter as fontes necessárias para uma renderização mais confiável em outros sistemas.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Habilite a incorporação padrão de font e itere pelas fonts usadas por cada [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Marque qualquer não incorporado objetos [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) para incorporação.
-1. Salve o documento atualizado.
-
-```java
-public static void embeddedFonts(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        document.setEmbedStandardFonts(true);
-        for (Page page : document.getPages()) {
-            for (Font pageFont : page.getResources().getFonts()) {
-                if (!pageFont.isEmbedded()) {
-                    pageFont.setEmbedded(true);
+public static void createSearchablePdf_2(Path inputFile, Path outputFile)
+        throws IOException, InterruptedException {
+    Path outputDirectory = outputFile.toAbsolutePath().getParent();
+    Files.createDirectories(outputDirectory);
+    Path tempDir = Files.createTempDirectory(outputDirectory, "ocr-");
+    Path tempImage = tempDir.resolve("page.png");
+    Path tempDoc = tempDir.resolve("page");
+    Path tempPdf = tempDir.resolve("page.pdf");
+    Path tempLog = tempDir.resolve("page.log");
+    Throwable failure = null;
+    try (Document inputDocument = new Document(inputFile.toString());
+         Document outputDocument = new Document()) {
+        PngDevice pngDevice = new PngDevice(new Resolution(600));
+        for (Page page : inputDocument.getPages()) {
+            pngDevice.process(page, tempImage.toString());
+            runTesseract(tempImage, tempDoc, "pdf", tempLog);
+            outputDocument.merge(tempPdf.toString());
+            Files.deleteIfExists(tempPdf);
+        }
+        outputDocument.save(outputFile.toString());
+    } catch (InterruptedException e) {
+        failure = e;
+        Thread.currentThread().interrupt();
+        throw e;
+    } catch (IOException | RuntimeException | Error e) {
+        failure = e;
+        throw e;
+    } finally {
+        IOException cleanupFailure = null;
+        for (Path path : new Path[]{tempImage, tempPdf, tempLog, tempDir}) {
+            try {
+                Files.deleteIfExists(path);
+            } catch (IOException e) {
+                if (cleanupFailure == null) {
+                    cleanupFailure = e;
+                } else {
+                    cleanupFailure.addSuppressed(e);
                 }
             }
         }
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## Incorporar fontes ao criar um novo PDF
-
-Este exemplo cria um novo PDF e atribui uma fonte incorporada ao conteúdo de texto desde o início.
-
-1. Crie um novo documento PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e adicione um [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Crie o necessário [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [TextSegment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/), e [TextState](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/).
-1. Resolva o alvo [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) do repositório e marcá-lo como incorporado.
-1. Adicione o conteúdo de texto à página e salve o documento de saída.
-
-```java
-public static void embeddedFontsInNewDocument(Path outputFile) {
-    try (Document document = new Document()) {
-        try (Page page = document.getPages().add()) {
-            TextFragment fragment = new TextFragment("");
-            TextSegment segment = new TextSegment(" This is a sample text using Custom font.");
-            TextState textState = new TextState();
-            Font font = FontRepository.findFont("Arial");
-            font.setEmbedded(true);
-            textState.setFont(font);
-            segment.setTextState(textState);
-            fragment.getSegments().add(segment);
-            page.getParagraphs().add(fragment);
-        }
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## Definir uma fonte padrão para saída PDF
-
-Use este padrão quando o documento salvo deve voltar a uma fonte específica durante a geração da saída.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crie [PdfSaveOptions](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/) e defina o nome da fonte padrão.
-1. Salve o documento com as opções de salvamento configuradas.
-
-```java
-public static void setDefaultFont(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        PdfSaveOptions saveOptions = new PdfSaveOptions();
-        saveOptions.setDefaultFontName("Arial");
-        document.save(outputFile.toString(), saveOptions);
-    }
-}
-```
-
-## Obter todas as fontes usadas em um PDF
-
-Este exemplo lista todas as fontes detectadas no documento para que você possa auditar o uso de fontes antes de exportar ou atualizar o arquivo.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Enumerar as fontes retornadas pelas utilidades de fontes do documento.
-1. Exiba o nome de cada detectado [Font](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/).
-
-```java
-public static void getAllFonts(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (Font font : document.getFontUtilities().getAllFonts()) {
-            System.out.println(font.getFontName());
+        if (cleanupFailure != null) {
+            if (failure != null) {
+                failure.addSuppressed(cleanupFailure);
+            } else {
+                throw cleanupFailure;
+            }
         }
     }
 }
 ```
 
-## Melhorar a incorporação de fontes por subdefinição de fontes
+### Executar o Tesseract a partir dos exemplos
 
-Use esta abordagem quando quiser reduzir a carga da fonte enquanto mantém os dados da fonte incorporada alinhados com o uso do documento.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Execute a subdefinição de fontes através dos utilitários de fontes do documento com o necessário [FontSubsetStrategy](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) valores.
-1. Salve o documento otimizado.
+Adicione essas constantes e o método auxiliar compartilhado à mesma classe dos exemplos. O método auxiliar usa inglês (`eng`), o motor LSTM (`--oem 1`), e a segmentação automática de página (`--psm 3`). Ele grava saída de diagnóstico em um log, aguarda até dois minutos e verifica se um arquivo de resultado não vazio foi criado. Ele termina o processo se ele ainda estiver em execução quando o método auxiliar terminar.
 
 ```java
-public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
-        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
-        document.save(outputFile.toString());
-    }
-}
-```
+// Change this to match your installation, or use "tesseract" for PATH lookup.
+private static final String TESSERACT_PATH = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe";
+private static final long TESSERACT_TIMEOUT_MINUTES = 2;
 
-## Definir o fator de zoom ao abrir o documento
-
-Este exemplo configura o nível de zoom inicial que deve ser aplicado quando o PDF for aberto.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crie um [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) com um [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
-1. Atribua a ação como a ação de abertura do documento e salve o resultado.
-
-```java
-public static void setZoomFactor(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0.0, 0.0, 0.5));
-        document.setOpenAction(action);
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## Obter o fator de zoom ao abrir o documento
-
-Use este exemplo para inspecionar se um PDF já define um nível de zoom explícito para sua ação de abertura.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Verifique se a ação de abertura é um [GoToAction](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/) com um [XYZExplicitDestination](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/).
-1. Exiba o valor de zoom configurado ou informe que nenhum zoom está definido.
-
-```java
-public static void getZoomFactor(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        if (document.getOpenAction() instanceof GoToAction action
-                && action.getDestination() instanceof XYZExplicitDestination destination) {
-            System.out.println("Zoom: " + destination.getZoom());
-        } else {
-            System.out.println("Zoom: not set");
+private static void runTesseract(Path image, Path outputBase, String format, Path log)
+        throws IOException, InterruptedException {
+    Path result = Path.of(outputBase + "." + format);
+    Files.deleteIfExists(result);
+    ProcessBuilder builder = new ProcessBuilder(
+            TESSERACT_PATH, image.toString(), outputBase.toString(),
+            "-l", "eng", "--oem", "1", "--psm", "3", format);
+    builder.redirectErrorStream(true);
+    builder.redirectOutput(log.toFile());
+    Process process = builder.start();
+    try {
+        process.getOutputStream().close();
+        if (!process.waitFor(TESSERACT_TIMEOUT_MINUTES, TimeUnit.MINUTES)) {
+            throw new IOException("Tesseract timed out after "
+                    + TESSERACT_TIMEOUT_MINUTES + " minutes while processing " + image);
+        }
+        if (process.exitValue() != 0 || !Files.isRegularFile(result)
+                || Files.size(result) == 0) {
+            throw new IOException("Tesseract failed (exit " + process.exitValue()
+                    + ") while processing " + image + ": " + Files.readString(log));
+        }
+    } finally {
+        if (process.isAlive()) {
+            process.destroyForcibly();
+            process.onExit().join();
         }
     }
 }

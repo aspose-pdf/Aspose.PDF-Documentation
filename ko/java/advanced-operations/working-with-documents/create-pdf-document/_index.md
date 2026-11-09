@@ -1,28 +1,28 @@
 ---
-title: Java로 PDF 파일 만들기
+title: Java에서 PDF 파일 만들기
 linktitle: PDF 문서 만들기
 type: docs
 weight: 10
 url: /ko/java/create-pdf-document/
-description: Aspose.PDF를 사용하여 Java에서 PDF 파일을 만들고 검색 가능한 PDF를 작성하는 방법을 알아보세요.
-lastmod: "2026-09-24"
+description: Aspose.PDF를 사용하여 Java에서 PDF 파일을 만들고 검색 가능한 PDF를 구축하는 방법을 배우세요.
+lastmod: "2026-11-04"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Java를 사용하여 PDF 파일 및 검색 가능한 PDF 문서 만들기
-Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서를 만드는 방법을 보여줍니다. 처음부터 새 PDF를 만들고 외부 OCR 엔진에서 HOCR 출력을 제공하여 이미지 기반 문서를 검색 가능한 PDF로 변환하는 방법을 다룹니다.
+Abstract: 이 문서는 Aspose.PDF for Java를 사용하여 PDF 문서를 만드는 방법을 보여줍니다. 여기서는 처음부터 새 PDF를 생성하고 외부 OCR 엔진의 HOCR 출력을 제공하여 이미지 기반 문서를 검색 가능한 PDF로 변환하는 과정을 다룹니다.
 ---
-Aspose.PDF for Java는 간단한 문서 생성과 OCR 지원 검색 가능한 PDF 워크플로를 모두 지원합니다.
+Aspose.PDF for Java는 간단한 문서 생성과 OCR 지원 검색 가능한 PDF 워크플로우를 모두 지원합니다.
 
 ## 새 PDF 문서 만들기
 
-처음부터 간단한 PDF 파일을 생성해야 하는 경우 이 접근 방식을 사용하세요.
+처음부터 간단한 PDF 파일을 생성해야 할 때 이 방법을 사용하십시오.
 
-1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
-1. 문서에 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-1. [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 생성하여 페이지에 추가하세요.
-1. 출력된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
+1. 새 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만드세요.
+1. 문서에 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
+1. [TextFragment](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/)를 생성하고 페이지에 추가하세요.
+1. 출력 PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
 
 ```java
 public static void createNewDocument(Path outputFile) {
@@ -36,221 +36,208 @@ public static void createNewDocument(Path outputFile) {
 
 ## 검색 가능한 PDF 만들기
 
-`createSearchablePdf` 예제에서는 `CallBackGetHocr` 구현과 함께 `Document.convert(...)`를 사용합니다. 콜백은 소스 이미지를 임시 파일에 쓰고, `hocr` 옵션으로 Tesseract를 호출하고, 생성된 HOCR 마크업을 읽고, Aspose.PDF로 반환합니다.
+스캔한 PDF에는 텍스트 이미지가 포함되어 있습니다. 외부 OCR 엔진을 사용하여 텍스트를 인식하고 검색 가능하고 선택 가능하도록 만드세요. 다음 예제에서는 Tesseract를 사용하여 HOCR 마크업을 Aspose.PDF에 반환하거나 검색 가능한 PDF 페이지를 생성한 다음 병합합니다.
 
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. `CallBackGetHocr` 콜백을 생성하고 소스 문서를 검색 가능한 PDF 콘텐츠로 변환하세요.
-1. 업데이트된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
+예제들을 실행하기 전에 영어 LSTM 언어 데이터가 포함된 Tesseract 4 이상을 설치하십시오. 아래 공유 도우미의 `TESSERACT_PATH`에 실행 파일 경로를 지정하거나, 실행 파일이 `PATH`에 있으면 `"tesseract"`를 사용하세요. 두 예제 모두 동일한 헬퍼를 사용하며 Java 11 이상이 필요합니다. 메서드와 상수를 동일한 클래스에 배치하고 다음 import를 포함하십시오:
+
+### HOCR 콜백을 사용하여 검색 가능한 PDF 만들기
+
+[Document.CallBackGetHocr](https://reference.aspose.com/pdf/java/com.aspose.pdf/document.callbackgethocr/)를 사용하여 인식된 텍스트와 좌표를 Aspose.PDF에 제공하세요. Tesseract는 HOCR 마크업을 생성하고, Aspose.PDF는 이를 사용하여 이미지 기반 문서에 검색 가능한 텍스트 레이어를 추가합니다.
+
+1. 이미지, HOCR 출력 및 OCR 로그용 임시 디렉터리를 준비하세요.
+1. [Document.CallBackGetHocr](https://reference.aspose.com/pdf/java/com.aspose.pdf/document.callbackgethocr/)를 구현하고 제공된 각 이미지를 JPEG 파일로 저장하세요.
+1. 출력 형식 `hocr`로 공유 도우미 `runTesseract`를 호출하세요.
+1. 생성된 `.hocr` 파일을 읽고 임시 파일을 삭제한 다음 콜백에서 마크업을 반환하세요.
+1. 원본 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 콜백을 `convert`에 전달하세요.
+1. 변환 결과를 확인하고 `save`를 사용하여 검색 가능한 PDF를 저장하세요.
 
 ```java
-public static void createSearchablePdf(Path inputFile, Path outputFile) {
-    Path tempDir = outputFile.getParent().resolve("ocr-temp");
-    CallBackGetHocr cbgh = new CallBackGetHocr() {
+import com.aspose.pdf.Document;
+import com.aspose.pdf.Page;
+import com.aspose.pdf.devices.PngDevice;
+import com.aspose.pdf.devices.Resolution;
+
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+public static void createSearchablePdf_1(Path inputFile, Path outputFile) {
+    Path tempDir = outputFile.toAbsolutePath().getParent().resolve("ocr-temp");
+
+    // Create callBack - logic recognize text for PDF images. Use outer OCR supports
+    // HOCR standard(http://en.wikipedia.org/wiki/HOCR).
+    // We have used free google tesseract
+    // OCR(http://en.wikipedia.org/wiki/Tesseract_%28software%29)
+
+    Document.CallBackGetHocr callBackGetHocr = new Document.CallBackGetHocr() {
         @Override
         public String invoke(java.awt.image.BufferedImage img) {
-            // save the image, run Tesseract with "hocr", and return the HOCR text
+            File outputfile = tempDir.resolve("test.jpg").toFile();
+            try {
+                Files.createDirectories(tempDir);
+                ImageIO.write(img, "jpg", outputfile);
+            } catch (IOException e1) {
+                throw new java.io.UncheckedIOException("Failed to write OCR image.", e1);
+            }
+
+            try {
+                Path outputBase = tempDir.resolve("out");
+                runTesseract(outputfile.toPath(), outputBase, "hocr", tempDir.resolve("tesseract.log"));
+            } catch (IOException e) {
+                throw new java.io.UncheckedIOException("Tesseract OCR failed.", e);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new IllegalStateException("Tesseract OCR was interrupted.", e);
+            }
+
+            // Read the HOCR output as a string.
+            File file = tempDir.resolve("out.hocr").toFile();
+            StringBuilder fileContents = new StringBuilder((int) file.length());
+            Scanner scanner = null;
+            try {
+                scanner = new Scanner(file);
+                String lineSeparator = System.getProperty("line.separator");
+
+                while (scanner.hasNextLine()) {
+                    fileContents.append(scanner.nextLine() + lineSeparator);
+                }
+            } catch (FileNotFoundException e) {
+                throw new java.io.UncheckedIOException("Tesseract OCR failed.", e);
+            } finally {
+                if (scanner != null)
+                    scanner.close();
+            }
+
+            // deleting temp files
+            File fileOut = tempDir.resolve("out.hocr").toFile();
+            if (fileOut.exists()) {
+                fileOut.delete();
+            }
+            File fileLog = tempDir.resolve("tesseract.log").toFile();
+            if (fileLog.exists()) {
+                fileLog.delete();
+            }
+            File fileTest = tempDir.resolve("test.jpg").toFile();
+            if (fileTest.exists()) {
+                fileTest.delete();
+            }
+
             return fileContents.toString();
         }
     };
+    // End callBack
     try (Document document = new Document(inputFile.toString())) {
-        document.convert(cbgh);
+        if (!document.convert(callBackGetHocr))
+            throw new RuntimeException("Failed to convert document.");
         document.save(outputFile.toString());
     }
 }
 ```
 
-## 문서 창 설정 가져오기
+이 예제에서는 `ocr-temp` 안에 고정된 파일 이름을 사용합니다. 동시 처리에 맞게 조정한다면 각 변환마다 별도의 임시 디렉터리를 사용하십시오.
 
-이 예를 사용하여 기존 PDF 문서에 저장된 현재 뷰어 기본 설정을 검사합니다.
+### 렌더링된 페이지를 인식하여 검색 가능한 PDF 만들기
 
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 문서에서 필요한 창과 표시 속성을 읽으세요.
-1. 검사 또는 디버깅을 위한 현재 설정을 출력하세요.
+각 페이지를 PNG 이미지로 렌더링하고, Tesseract가 해당 이미지에 대해 검색 가능한 PDF를 생성하도록 한 뒤, 생성된 PDF들을 하나의 문서로 병합합니다. 출력은 인식된 텍스트가 포함된 렌더링된 페이지 이미지 기반이므로 기존의 인터랙티브 요소는 포함되지 않습니다.
 
-```java
-public static void getDocumentWindow(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        System.out.println("CenterWindow: " + document.isCenterWindow());
-        System.out.println("Direction: " + document.getDirection());
-        System.out.println("DisplayDocTitle: " + document.isDisplayDocTitle());
-        System.out.println("FitWindow: " + document.isFitWindow());
-        System.out.println("HideMenuBar: " + document.isHideMenubar());
-        System.out.println("HideToolBar: " + document.isHideToolBar());
-        System.out.println("HideWindowUI: " + document.isHideWindowUI());
-        System.out.println("NonFullScreenPageMode: " + document.getNonFullScreenPageMode());
-        System.out.println("PageLayout: " + document.getPageLayout());
-        System.out.println("PageMode: " + document.getPageMode());
-    }
-}
-```
-
-## 문서 창 기본 설정 지정
-
-이 예에서는 호환되는 뷰어에서 PDF를 열 때 PDF가 표시되는 방법을 업데이트합니다.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 필요한 창, 레이아웃 및 페이지 모드 기본 설정을 지정하세요.
-1. 업데이트된 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 저장하세요.
+1. 렌더링된 이미지, 생성된 PDF 및 OCR 로그를 위한 고유한 임시 디렉터리를 생성하세요.
+1. 원본 [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 열고 빈 출력 문서를 생성하세요.
+1. [PngDevice](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/pngdevice/)를 600 DPI의 [Resolution](https://reference.aspose.com/pdf/java/com.aspose.pdf.devices/resolution/)으로 생성하세요.
+1. 원본 [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) 객체를 순회하고 `process`를 사용하여 각 페이지를 렌더링하세요.
+1. 출력 형식 `pdf`로 공유 도우미 `runTesseract`를 호출하고 [Document.merge](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 사용하여 생성된 PDF를 추가하세요.
+1. 병합된 검색 가능한 PDF를 저장하고 `finally` 블록에서 임시 파일을 삭제하세요.
 
 ```java
-public static void setDocumentWindow(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        document.setCenterWindow(true);
-        document.setDirection(Direction.R2L);
-        document.setDisplayDocTitle(true);
-        document.setFitWindow(true);
-        document.setHideMenubar(true);
-        document.setHideToolBar(true);
-        document.setHideWindowUI(true);
-        document.setNonFullScreenPageMode(PageMode.UseOC);
-        document.setPageLayout(PageLayout.TwoColumnLeft);
-        document.setPageMode(PageMode.UseThumbs);
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## 기존 PDF에 글꼴 포함
-
-다른 시스템에서 보다 안정적인 렌더링을 위해 문서에 필요한 글꼴을 포함해야 하는 경우 이 접근 방식을 사용하세요.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 표준 글꼴 포함을 활성화하고 각 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)에서 사용되는 글꼴을 반복하세요.
-1. 포함되지 않은 [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) 개체를 포함용으로 표시하세요.
-1. 업데이트된 문서를 저장하세요.
-
-```java
-public static void embeddedFonts(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        document.setEmbedStandardFonts(true);
-        for (Page page : document.getPages()) {
-            for (Font pageFont : page.getResources().getFonts()) {
-                if (!pageFont.isEmbedded()) {
-                    pageFont.setEmbedded(true);
+public static void createSearchablePdf_2(Path inputFile, Path outputFile)
+        throws IOException, InterruptedException {
+    Path outputDirectory = outputFile.toAbsolutePath().getParent();
+    Files.createDirectories(outputDirectory);
+    Path tempDir = Files.createTempDirectory(outputDirectory, "ocr-");
+    Path tempImage = tempDir.resolve("page.png");
+    Path tempDoc = tempDir.resolve("page");
+    Path tempPdf = tempDir.resolve("page.pdf");
+    Path tempLog = tempDir.resolve("page.log");
+    Throwable failure = null;
+    try (Document inputDocument = new Document(inputFile.toString());
+         Document outputDocument = new Document()) {
+        PngDevice pngDevice = new PngDevice(new Resolution(600));
+        for (Page page : inputDocument.getPages()) {
+            pngDevice.process(page, tempImage.toString());
+            runTesseract(tempImage, tempDoc, "pdf", tempLog);
+            outputDocument.merge(tempPdf.toString());
+            Files.deleteIfExists(tempPdf);
+        }
+        outputDocument.save(outputFile.toString());
+    } catch (InterruptedException e) {
+        failure = e;
+        Thread.currentThread().interrupt();
+        throw e;
+    } catch (IOException | RuntimeException | Error e) {
+        failure = e;
+        throw e;
+    } finally {
+        IOException cleanupFailure = null;
+        for (Path path : new Path[]{tempImage, tempPdf, tempLog, tempDir}) {
+            try {
+                Files.deleteIfExists(path);
+            } catch (IOException e) {
+                if (cleanupFailure == null) {
+                    cleanupFailure = e;
+                } else {
+                    cleanupFailure.addSuppressed(e);
                 }
             }
         }
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## 새 PDF를 만들 때 글꼴 포함
-
-이 예에서는 새 PDF를 만들고 처음부터 텍스트 내용에 포함된 글꼴을 할당합니다.
-
-1. 새 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 만들고 [`Page`](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/)를 추가하세요.
-1. 필요한 [`TextFragment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textfragment/), [`TextSegment`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textsegment/) 및 [`TextState`](https://reference.aspose.com/pdf/java/com.aspose.pdf/textstate/)를 만드세요.
-1. 저장소에서 대상 [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/)를 확인하고 포함된 것으로 표시하세요.
-1. 페이지에 텍스트 내용을 추가하고 출력 문서를 저장하세요.
-
-```java
-public static void embeddedFontsInNewDocument(Path outputFile) {
-    try (Document document = new Document()) {
-        try (Page page = document.getPages().add()) {
-            TextFragment fragment = new TextFragment("");
-            TextSegment segment = new TextSegment(" This is a sample text using Custom font.");
-            TextState textState = new TextState();
-            Font font = FontRepository.findFont("Arial");
-            font.setEmbedded(true);
-            textState.setFont(font);
-            segment.setTextState(textState);
-            fragment.getSegments().add(segment);
-            page.getParagraphs().add(fragment);
-        }
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## PDF 출력의 기본 글꼴 설정
-
-저장된 문서가 출력 생성 중에 특정 글꼴로 대체되어야 하는 경우 이 패턴을 사용합니다.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. [`PdfSaveOptions`](https://reference.aspose.com/pdf/java/com.aspose.pdf/pdfsaveoptions/)를 만들고 기본 글꼴 이름을 설정하세요.
-1. 구성된 저장 옵션으로 문서를 저장하세요.
-
-```java
-public static void setDefaultFont(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        PdfSaveOptions saveOptions = new PdfSaveOptions();
-        saveOptions.setDefaultFontName("Arial");
-        document.save(outputFile.toString(), saveOptions);
-    }
-}
-```
-
-## PDF에 사용된 모든 글꼴 가져오기
-
-이 예에서는 파일을 내보내거나 업데이트하기 전에 글꼴 사용을 감사할 수 있도록 문서에서 감지된 모든 글꼴을 나열합니다.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 문서 글꼴 유틸리티에서 반환된 글꼴을 열거하세요.
-1. 감지된 각 [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/)의 이름을 출력하세요.
-
-```java
-public static void getAllFonts(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (Font font : document.getFontUtilities().getAllFonts()) {
-            System.out.println(font.getFontName());
+        if (cleanupFailure != null) {
+            if (failure != null) {
+                failure.addSuppressed(cleanupFailure);
+            } else {
+                throw cleanupFailure;
+            }
         }
     }
 }
 ```
 
-## 글꼴 하위 설정을 통해 글꼴 포함 개선
+### 예제에서 Tesseract 실행
 
-문서 사용에 맞게 포함된 글꼴 데이터를 유지하면서 글꼴 페이로드를 줄이려는 경우 이 접근 방식을 사용하세요.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 필요한 [`FontSubsetStrategy`](https://reference.aspose.com/pdf/java/com.aspose.pdf/fontsubsetstrategy/) 값을 사용하여 문서 글꼴 유틸리티를 통해 글꼴 하위 설정을 실행하세요.
-1. 최적화된 문서를 저장하세요.
+이 상수와 공유 헬퍼를 예제와 같은 클래스에 추가하십시오. 헬퍼는 영어(`eng`), LSTM 엔진(`--oem 1`), 자동 페이지 분할(`--psm 3`)을 사용합니다. 진단 출력을 로그에 기록하고, 최대 2분까지 대기한 다음 비어 있지 않은 결과 파일이 생성되었는지 확인합니다. 헬퍼가 종료될 때 프로세스가 여전히 실행 중이면 이를 종료합니다.
 
 ```java
-public static void improveFontsEmbedding(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetAllFonts);
-        document.getFontUtilities().subsetFonts(FontSubsetStrategy.SubsetEmbeddedFontsOnly);
-        document.save(outputFile.toString());
-    }
-}
-```
+// Change this to match your installation, or use "tesseract" for PATH lookup.
+private static final String TESSERACT_PATH = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe";
+private static final long TESSERACT_TIMEOUT_MINUTES = 2;
 
-## 문서 열기 확대/축소 비율 설정
-
-이 예에서는 PDF를 열 때 적용해야 하는 초기 확대/축소 수준을 구성합니다.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. [`XYZExplicitDestination`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/)을 사용하여 [`GoToAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/)을 만드세요.
-1. 작업을 문서 열기 작업으로 지정하고 결과를 저장하세요.
-
-```java
-public static void setZoomFactor(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        GoToAction action = new GoToAction(new XYZExplicitDestination(1, 0.0, 0.0, 0.5));
-        document.setOpenAction(action);
-        document.save(outputFile.toString());
-    }
-}
-```
-
-## 문서 열기 확대/축소 비율 가져오기
-
-이 예를 사용하여 PDF가 열린 작업에 대해 명시적인 확대/축소 수준을 이미 정의했는지 여부를 검사합니다.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 열려 있는 작업이 [`XYZExplicitDestination`](https://reference.aspose.com/pdf/java/com.aspose.pdf/xyzexplicitdestination/)이 있는 [`GoToAction`](https://reference.aspose.com/pdf/java/com.aspose.pdf/gotoaction/)인지 확인하세요.
-1. 구성된 확대/축소 값을 출력하거나 확대/축소가 설정되지 않았음을 보고하세요.
-
-```java
-public static void getZoomFactor(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        if (document.getOpenAction() instanceof GoToAction action
-                && action.getDestination() instanceof XYZExplicitDestination destination) {
-            System.out.println("Zoom: " + destination.getZoom());
-        } else {
-            System.out.println("Zoom: not set");
+private static void runTesseract(Path image, Path outputBase, String format, Path log)
+        throws IOException, InterruptedException {
+    Path result = Path.of(outputBase + "." + format);
+    Files.deleteIfExists(result);
+    ProcessBuilder builder = new ProcessBuilder(
+            TESSERACT_PATH, image.toString(), outputBase.toString(),
+            "-l", "eng", "--oem", "1", "--psm", "3", format);
+    builder.redirectErrorStream(true);
+    builder.redirectOutput(log.toFile());
+    Process process = builder.start();
+    try {
+        process.getOutputStream().close();
+        if (!process.waitFor(TESSERACT_TIMEOUT_MINUTES, TimeUnit.MINUTES)) {
+            throw new IOException("Tesseract timed out after "
+                    + TESSERACT_TIMEOUT_MINUTES + " minutes while processing " + image);
+        }
+        if (process.exitValue() != 0 || !Files.isRegularFile(result)
+                || Files.size(result) == 0) {
+            throw new IOException("Tesseract failed (exit " + process.exitValue()
+                    + ") while processing " + image + ": " + Files.readString(log));
+        }
+    } finally {
+        if (process.isAlive()) {
+            process.destroyForcibly();
+            process.onExit().join();
         }
     }
 }
