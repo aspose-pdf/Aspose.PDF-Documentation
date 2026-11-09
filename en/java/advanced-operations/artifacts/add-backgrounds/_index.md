@@ -1,17 +1,17 @@
 ---
 title: Add PDF Backgrounds in Java
-linktitle: Adding backgrounds
+linktitle: Add Backgrounds
 type: docs
 weight: 20
 url: /java/add-backgrounds/
-description: Learn how to add a background image or background color to PDF pages in Java using `BackgroundArtifact` with Aspose.PDF.
-lastmod: "2026-06-09"
+description: Add image and solid-color backgrounds to PDF pages in Java and adjust image opacity.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to add background to PDF with Java
-Abstract: This article explains how to add or remove PDF page backgrounds in Java using Aspose.PDF. It covers adding a background image, adjusting image opacity, applying a background color, and removing background artifacts from a page.
+AlternativeHeadline: Add Backgrounds in Java
+Abstract: Add image and solid-color backgrounds to PDF pages in Java and adjust image opacity.
 ---
 Background artifacts let you place non-content visual elements behind the main page content without changing the logical document text.
 
@@ -76,26 +76,7 @@ public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remove background artifacts
+## Related artifact topics
 
-Use this approach when existing background artifacts should be deleted from the page.
-
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterate through the page artifact collection in reverse order.
-1. Delete artifacts whose type is pagination and subtype is background, then save the document.
-
-```java
-public static void removeBackground(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Background) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Remove Backgrounds](/pdf/java/remove-backgrounds/)
+- [Work with PDF Artifacts in Java](/pdf/java/artifacts/)
