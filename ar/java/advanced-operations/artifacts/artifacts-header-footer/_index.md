@@ -1,27 +1,28 @@
 ---
-title: إدارة رؤوس وتذييلات PDF باستخدام Java
-linktitle: إدارة رؤوس وتذييلات PDF
+title: إضافة رؤوس الصفحات وتذييلاتها إلى PDF باستخدام Java
+linktitle: إضافة الرؤوس والتذييلات
 type: docs
 weight: 70
 url: /ar/java/artifacts-header-footer/
-description: تعلم كيفية إضافة وإزالة عناصر الرؤوس والتذييلات في مستندات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-05"
+description: إنشاء عناصر رؤوس الصفحات وتذييلاتها وتنسيقها وإضافتها إلى صفحات PDF باستخدام Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: كيفية إضافة وتخصيص وإزالة رؤوس وتذييلات PDF باستخدام Java
-Abstract: تشرح هذه المقالة كيفية إدارة أثار الرأس والتذييل في مستندات PDF باستخدام Aspose.PDF for Java. تغطي إنشاء كائنات `HeaderArtifact` و `FooterArtifact` القابلة لإعادة الاستخدام مع حالة نص مخصصة ومحاذاة، وإضافتها إلى صفحة، وحذف الأثار الحالية للرأس والتذييل.
+AlternativeHeadline: إضافة رؤوس الصفحات وتذييلاتها إلى PDF في Java
+Abstract: إنشاء عناصر رؤوس الصفحات وتذييلاتها وتنسيقها وإضافتها إلى صفحات PDF.
 ---
-أثار الرأس والتذييل هي عناصر ترقيم الصفحات غير المحتوى تُستخدم عادةً للتسميات المتكررة، ومعرِّفات الصفحات، وإطار التخطيط.
 
-## إنشاء أثر رأس
+تُستخدم عناصر رؤوس الصفحات وتذييلاتها لعرض تسميات متكررة ومعرّفات الصفحات وتنظيم تخطيطها.
 
-استخدم هذا المساعد عندما تحتاج إلى أثر رأس قابل لإعادة الاستخدام مع تنسيق نص ثابت ومحاذاة.
+## إنشاء عنصر رأس الصفحة
+
+تنشئ الطريقة المساعدة عنصر رأس قابلًا لإعادة الاستخدام بتنسيق ومحاذاة موحّدين.
 
 1. أنشئ كائنًا من الفئة [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
-1. عيّن نصه وإعدادات الخط ولون المقدمة.
-1. اضبط المحاذاة الأفقية وإرجاع artifact..
+1. اضبط نص العنصر وإعدادات الخط ولون النص.
+1. اضبط المحاذاة الأفقية وأرجع العنصر.
 
 ```java
 public static HeaderArtifact createHeaderArtifact(String text) {
@@ -35,13 +36,13 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 }
 ```
 
-## إنشاء كائن تذييل
+## إنشاء عنصر تذييل الصفحة
 
-هذه الدالة المساعدة تُنشئ كائن تذييل قابل لإعادة الاستخدام بنمط تنسيق مماثل لكائن العنوان.
+تنشئ الطريقة المساعدة عنصر تذييل بتنسيق مماثل لتنسيق الرأس.
 
 1. أنشئ كائنًا من الفئة [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
-1. عيّن النص، حالة النص، ولون المقدمة.
-1. اضبط المحاذاة وإرجاع العنصر.
+1. اضبط نص العنصر وحالة النص ولونه.
+1. اضبط المحاذاة وأرجع العنصر.
 
 ```java
 public static FooterArtifact createFooterArtifact(String text) {
@@ -55,13 +56,13 @@ public static FooterArtifact createFooterArtifact(String text) {
 }
 ```
 
-## إضافة عنصر رأس
+## إضافة عنصر رأس الصفحة
 
-استخدم هذا المثال عندما يجب أن تعرض الصفحة عنصر رأس قابل لإعادة الاستخدام.
+يستخدم المثال الطريقة المساعدة لإضافة رأس منسّق إلى الصفحة الأولى.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. أنشئ عنصر الرأس عبر طريقة المساعد.
-1. أضف العنصر إلى الصفحة واحفظ ملف الإخراج.
+1. افتح ملف PDF المصدر باستخدام الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ عنصر الرأس باستخدام الطريقة المساعدة.
+1. أضف العنصر إلى الصفحة واحفظ ملف PDF الناتج.
 
 ```java
 public static void addHeaderArtifact(Path inputFile, Path outputFile) {
@@ -73,13 +74,13 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## إضافة عنصر تذييل
+## إضافة عنصر تذييل الصفحة
 
-استخدم هذا المثال عندما يجب أن تعرض الصفحة عنصر تذييل مع تنسيق قابل لإعادة الاستخدام.
+يستخدم المثال الطريقة المساعدة لإضافة تذييل منسّق إلى الصفحة الأولى.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. أنشئ عنصر التذييل عبر طريقة المساعد.
-1. أضف العنصر إلى الصفحة واحفظ ملف الإخراج.
+1. افتح ملف PDF المصدر باستخدام الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ عنصر التذييل باستخدام الطريقة المساعدة.
+1. أضف العنصر إلى الصفحة واحفظ ملف PDF الناتج.
 
 ```java
 public static void addFooterArtifact(Path inputFile, Path outputFile) {
@@ -91,27 +92,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## حذف عناصر الرأس والتذييل
+## مواضيع ذات صلة
 
-استخدم هذا النهج عندما يجب إزالة عناصر الرأس والتذييل الموجودة من الصفحة.
-
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. مرّ على مجموعة عناصر الصفحة بترتيب عكسي.
-1. احذف كائنات الترقيم التي نوعها الفرعي هو الرأس أو التذييل، ثم احفظ المستند.
-
-```java
-public static void deleteHeaderFooterArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && (artifact.getSubtype() == Artifact.ArtifactSubtype.Header
-                    || artifact.getSubtype() == Artifact.ArtifactSubtype.Footer)) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [إزالة الرؤوس والتذييلات](/pdf/ar/java/remove-headers-footers/)
+- [العمل مع عناصر PDF](/pdf/ar/java/artifacts/)

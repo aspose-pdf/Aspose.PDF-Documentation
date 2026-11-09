@@ -1,25 +1,25 @@
 ---
-title: عدد عناصر PDF في Java
-linktitle: عد العناصر
+title: عدّ عناصر الترقيم في PDF باستخدام Java
+linktitle: عدّ عناصر الترقيم
 type: docs
 weight: 40
 url: /ar/java/counting-artifacts/
-description: تعلم كيفية فحص وعدّ عناصر الترقيم في مستندات PDF باستخدام Java مع Aspose.PDF.
-lastmod: "2026-10-05"
+description: عدّ عناصر الترقيم في صفحة PDF بحسب النوع الفرعي للعلامة المائية أو الخلفية أو الرأس أو التذييل باستخدام Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: عد العناصر في PDF باستخدام Java
-Abstract: توضح هذه المقالة كيفية فحص وعدّ عناصر الترقيم في مستندات PDF باستخدام Aspose.PDF for Java. تُظهر كيفية التنقل عبر عناصر الصفحة وعدّ الأنواع الفرعية للعلامة المائية، الخلفية، الترويسة، وتذييل الصفحة.
+AlternativeHeadline: عدّ عناصر الترقيم في PDF في Java
+Abstract: عدّ عناصر الترقيم في صفحة PDF بحسب النوع الفرعي للعلامة المائية أو الخلفية أو الرأس أو التذييل. يوضّح المثال طريقة العدّ باستخدام Aspose.PDF for Java.
 ---
-## عد عناصر الترقيم على صفحة
+## عدّ عناصر الترقيم في الصفحة
 
-استخدم هذا المثال عندما تحتاج إلى حساب سريع لأنواع التجسيمات الفرعية الرئيسية للترقيم في صفحة.
+يحسب المثال عدد عناصر الترقيم في الصفحة الأولى بحسب النوع الفرعي.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. اقرأ الـ مجموعة [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) من الهدف [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. مرّ على الصفحة [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) جمع وعدّ كل نوع من أنواع الترقيم الفرعية التي تحتاج إلى الإبلاغ عنها.
+1. افتح ملف PDF المصدر باستخدام الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. اقرأ مجموعة عناصر [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) من الصفحة [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/) المستهدفة.
+1. مرّ على مجموعة عناصر [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) في الصفحة واحسب عدد العناصر من كل نوع فرعي مطلوب.
 
 ```java
 public static void countPdfArtifacts(Path inputFile) {
@@ -53,3 +53,12 @@ public static void countPdfArtifacts(Path inputFile) {
     }
 }
 ```
+
+## مواضيع ذات صلة
+
+- [العمل مع عناصر PDF](/pdf/ar/java/artifacts/)
+- [استخراج تفاصيل العلامات المائية](/pdf/ar/java/extract-watermarks/)
+- [إزالة الخلفيات](/pdf/ar/java/remove-backgrounds/)
+- [إزالة العلامات المائية](/pdf/ar/java/remove-watermarks/)
+- [إزالة ترقيم Bates](/pdf/ar/java/remove-bates-numbering/)
+- [إزالة الرؤوس والتذييلات](/pdf/ar/java/remove-headers-footers/)
