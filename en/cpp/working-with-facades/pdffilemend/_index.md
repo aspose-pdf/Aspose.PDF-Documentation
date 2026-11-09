@@ -2,7 +2,7 @@
 title: Add text and images to PDF pages in C++
 linktitle: PdfFileMend Class
 type: docs
-weight: 100
+weight: 90
 url: /cpp/pdffilemend-class/
 description: Place images and formatted text on PDF pages and configure compositing or word wrapping using Aspose.PDF for C++.
 lastmod: "2026-11-09"

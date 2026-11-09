@@ -2,7 +2,7 @@
 title: Edit PDF page properties in C++
 linktitle: PdfPageEditor Class
 type: docs
-weight: 140
+weight: 120
 url: /cpp/pdfpageeditor-class/
 description: Change page sizes, rotation, alignment, transitions, position, and zoom and inspect page boxes using Aspose.PDF for C++.
 lastmod: "2026-11-09"

@@ -2,7 +2,7 @@
 title: Extract PDF text, images, and attachments in C++
 linktitle: PdfExtractor Class
 type: docs
-weight: 70
+weight: 80
 url: /cpp/pdfextractor-class/
 description: Inspect content availability and extract page text, images, and file attachments using facade APIs using Aspose.PDF for C++.
 lastmod: "2026-11-09"

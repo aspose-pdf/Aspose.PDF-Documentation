@@ -2,7 +2,7 @@
 title: Render PDFs and merge images in C++
 linktitle: PdfConverter Class
 type: docs
-weight: 60
+weight: 70
 url: /cpp/pdfconverter-class/
 description: Render PDF pages as JPEG images and combine input images into JPEG, TIFF, or PDF output using Aspose.PDF for C++.
 lastmod: "2026-11-09"

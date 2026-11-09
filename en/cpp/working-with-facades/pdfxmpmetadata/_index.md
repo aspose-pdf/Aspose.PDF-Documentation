@@ -2,7 +2,7 @@
 title: Manage PDF XMP metadata in C++
 linktitle: PdfXmpMetadata Class
 type: docs
-weight: 150
+weight: 130
 url: /cpp/pdfxmpmetadata-class/
 description: Add, update, remove, and read XMP properties and register a custom metadata namespace using Aspose.PDF for C++.
 lastmod: "2026-11-09"

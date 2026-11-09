@@ -2,7 +2,7 @@
 title: Manage PDF annotations in C++
 linktitle: PdfAnnotationEditor Class
 type: docs
-weight: 30
+weight: 40
 url: /cpp/pdfannotationeditor-class/
 description: Delete, extract, flatten, modify, and transfer annotations and exchange annotation data through XFDF using Aspose.PDF for C++.
 lastmod: "2026-11-09"

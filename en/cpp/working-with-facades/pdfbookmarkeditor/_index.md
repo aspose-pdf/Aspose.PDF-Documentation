@@ -2,7 +2,7 @@
 title: Manage PDF bookmarks in C++
 linktitle: PdfBookmarkEditor Class
 type: docs
-weight: 40
+weight: 50
 url: /cpp/pdfbookmarkeditor-class/
 description: Create bookmark hierarchies and page bookmarks, inspect and update titles, delete bookmarks, and exchange bookmark XML using Aspose.PDF for C++.
 lastmod: "2026-11-09"

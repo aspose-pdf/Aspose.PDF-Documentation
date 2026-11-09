@@ -2,7 +2,7 @@
 title: Configure PDF image and text stamps in C++
 linktitle: Stamp Class
 type: docs
-weight: 160
+weight: 150
 url: /cpp/stamp-class/
 description: Create image, PDF-page, and text stamps with placement, rotation, transparency, and page selection using Aspose.PDF for C++.
 lastmod: "2026-11-09"
