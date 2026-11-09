@@ -4,32 +4,24 @@ linktitle: 统计工件
 type: docs
 weight: 40
 url: /zh/python-net/counting-artifacts/
-description: 了解如何使用 Python 通过 Aspose.PDF for Python via .NET 检查并统计 PDF 文档中的分页工件。
-lastmod: "2026-06-08"
+description: 在 Python 中按分页工件子类型统计 PDF 页面上的水印、背景、页眉和页脚。
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: 使用 Python 统计 PDF 工件
-Abstract: 分页工件（如水印、背景、页眉和页脚）通常用于 PDF 文档，以提供结构、品牌和识别。本示例演示如何使用 Aspose.PDF for Python via .NET 以编程方式检查并统计这些工件。通过对页面上的工件进行过滤并按子类型分组，开发人员可以快速分析文档组成并验证特定元素的存在。提供的代码展示了如何打开 PDF、从第一页提取分页工件、统计每个子类型的数量并输出结果，提供了一种实用的文档审计和验证方法。
+AlternativeHeadline: 使用 Python 在 PDF 中统计工件
+Abstract: 统计 PDF 页面上的分页工件，以检查水印、背景、页眉和页脚。
 ---
 
-## 统计特定类型的工件
+统计 PDF 页面上的分页工件，以检查水印、背景、页眉和页脚。
 
-检查并计数 PDF 中的分页工件 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 使用 Aspose.PDF for Python via .NET。分页工件包括水印、背景、页眉和页脚等元素，这些元素被应用于页面以进行布局和标识目的。通过过滤 [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) 对象在 a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) 并按子类型分组（`Artifact.ArtifactSubtype`），开发人员可以快速分析文档的结构并验证特定元素的存在。
+## 按子类型统计分页工件
 
-要计算特定类型工件的总数（例如，水印的总数），请使用以下代码。示例过滤页面的 [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) 集合 (一个 [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)) 通过 [`Artifact.ArtifactType`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/#properties) 然后计数子类型（`Artifact.ArtifactSubtype`).
-
-1. 打开 PDF 文档（参见 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
-1. 使用页面的过滤分页伪像 [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) 集合。
-1. 按子类型统计工件 (`Artifact.ArtifactSubtype`).
-1. 打印结果。
+按 `PAGINATION` 类型筛选第一页的 `artifacts` 集合，然后按子类型统计工件数量。没有相应子类型的工件时，示例输出 0。
 
 ```python
-
-from os import path
 from collections import Counter
-import sys
 import aspose.pdf as ap
 
 def count_pdf_artifacts(infile):
@@ -50,9 +42,10 @@ def count_pdf_artifacts(infile):
         print(f"Footers: {counts.get(ap.Artifact.ArtifactSubtype.FOOTER, 0)}")
 ```
 
-## 相关工件主题
+## 相关主题
 
-- [在 Python 中使用 PDF 工件](/pdf/zh/python-net/artifacts/)
-- [在 Python 中为 PDF 添加水印](/pdf/zh/python-net/add-watermarks/)
-- [在 Python 中添加 PDF 背景](/pdf/zh/python-net/add-backgrounds/)
-- [在 Python 中为 PDF 添加 Bates 编号](/pdf/zh/python-net/add-bates-numbering/)
+- [在 Python 中处理 PDF 工件](/pdf/zh/python-net/artifacts/)
+- [提取水印详细信息](/pdf/zh/python-net/extract-watermarks/)
+- [删除水印](/pdf/zh/python-net/remove-watermarks/)
+- [删除背景](/pdf/zh/python-net/remove-backgrounds/)
+- [删除页眉和页脚](/pdf/zh/python-net/remove-headers-footers/)
