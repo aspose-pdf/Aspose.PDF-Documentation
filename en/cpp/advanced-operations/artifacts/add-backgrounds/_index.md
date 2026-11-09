@@ -1,22 +1,22 @@
 ---
-title: Manage PDF backgrounds in C++
-linktitle: Adding Backgrounds
+title: Add PDF backgrounds in C++
+linktitle: Add Backgrounds
 type: docs
 weight: 20
 url: /cpp/add-backgrounds/
-description: Add image backgrounds, set background opacity or color, and remove background artifacts from PDF files using Aspose.PDF for C++.
+description: Add image or solid-color backgrounds to the first PDF page and configure image opacity using Aspose.PDF for C++.
 lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Create and Remove PDF Background Artifacts in C++
-Abstract: Use BackgroundArtifact to add an image or a solid color to a PDF page with Aspose.PDF for C++. The examples also set image opacity and remove background pagination artifacts from the first page.
+AlternativeHeadline: Create PDF Background Artifacts in C++
+Abstract: Add BackgroundArtifact objects to the first page of an existing PDF. The examples use an image stream, set image opacity to 0.5, or apply a DarkKhaki background color.
 ---
 
-Use BackgroundArtifact to add an image or a solid color to the first PDF page. Image examples accept an imageFile path and keep the image stream alive until the document is saved.
+Use `BackgroundArtifact` to add an image or solid color behind page content. All three examples modify page 1. Keep the image stream alive until the document is saved.
 
-The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK before using these functions.
+The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK and use a writable output path for examples that save a PDF.
 
 ## Add a background image
 
@@ -51,7 +51,6 @@ void AddBackgroundImageToPdf(System::String inputFile, System::String imageFile,
     artifact->set_BackgroundImage(imageStream);
     document->get_Pages()->idx_get(1)->get_Artifacts()->Add(artifact);
     document->Save(outputFile);
-    imageStream->Close();
 }
 ```
 
@@ -124,39 +123,13 @@ void AddBackgroundColorToPdf(System::String inputFile, System::String outputFile
 }
 ```
 
-## Remove background artifacts
+## Moved inspection and removal guides
 
-Remove first-page artifacts whose type is Pagination and subtype is Background. The reverse iteration avoids skipping items after deletion.
+<a id="remove-background-artifacts"></a>
 
-1. Open the input PDF with [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
-1. Get the first page [Artifacts](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/get_artifacts/) collection.
-1. Iterate backward from [ArtifactCollection::get_Count()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifactcollection/get_count/) to index 1.
-1. Check [Artifact::get_Type()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_type/) for Pagination and [get_Subtype()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_subtype/) for Background.
-1. Delete matches with [ArtifactCollection::Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifactcollection/delete/).
-1. Save the result with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+See [Remove Backgrounds](/pdf/cpp/remove-backgrounds/) for this operation.
 
-```cpp
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Page.h>
-#include <Aspose.PDF.Cpp/PageCollection.h>
-#include <Aspose.PDF.Cpp/Artifacts/Artifact.h>
-#include <Aspose.PDF.Cpp/Artifacts/ArtifactCollection.h>
+## Related artifact topics
 
-using namespace System;
-using namespace Aspose::Pdf;
-
-
-void RemoveBackground(System::String inputFile, System::String outputFile)
-{
-    auto document = MakeObject<Document>(inputFile);
-    auto artifacts = document->get_Pages()->idx_get(1)->get_Artifacts();
-    for (int i = artifacts->get_Count(); i >= 1; --i) {
-        auto artifact = artifacts->idx_get(i);
-        if (artifact->get_Type() == Artifact::ArtifactType::Pagination &&
-            artifact->get_Subtype() == Artifact::ArtifactSubtype::Background) {
-            artifacts->Delete(artifact);
-        }
-    }
-    document->Save(outputFile);
-}
-```
+- [Remove Backgrounds](/pdf/cpp/remove-backgrounds/)
+- [Work with PDF Artifacts](/pdf/cpp/artifacts/)

@@ -1,22 +1,22 @@
 ---
-title: Manage PDF header and footer artifacts in C++
-linktitle: Manage PDF Headers and Footers
+title: Add PDF header and footer artifacts in C++
+linktitle: Add Headers and Footers
 type: docs
 weight: 70
 url: /cpp/artifacts-header-footer/
-description: Add styled header and footer artifacts and delete matching pagination artifacts from a PDF page using Aspose.PDF for C++.
+description: Add styled header and footer artifacts to the first PDF page using Aspose.PDF for C++.
 lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Create and Remove PDF Header and Footer Artifacts in C++
-Abstract: Add centered header and footer text with Aspose.PDF for C++ using Arial, navy text, and a 14-point font. A separate example removes header and footer pagination artifacts from the first page.
+AlternativeHeadline: Add Centered PDF Header and Footer Text in C++
+Abstract: Use HeaderArtifact and FooterArtifact to add centered text to page 1. Both examples use 14-point Arial and navy text.
 ---
 
-HeaderArtifact and FooterArtifact provide artifact-based page headers and footers. The following examples use the first page and style the text with Arial at 14 points in navy.
+Use `HeaderArtifact` and `FooterArtifact` to add running text as page artifacts. Each example modifies only the first page and requires Arial to be available.
 
-The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK before using these functions; the text examples also require Arial to be available.
+The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK and use a writable output path for examples that save a PDF.
 
 ## Add a header artifact
 
@@ -100,40 +100,13 @@ void AddFooterArtifact(System::String inputFile, System::String outputFile)
 }
 ```
 
-## Delete header and footer artifacts
+## Moved inspection and removal guides
 
-Remove both header and footer pagination artifacts from the first page. Other artifact types and subtypes are left in the collection.
+<a id="delete-header-and-footer-artifacts"></a>
 
-1. Open the input PDF with [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
-1. Get the first page [Artifacts](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/get_artifacts/) collection.
-1. Iterate backward from [ArtifactCollection::get_Count()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifactcollection/get_count/) to index 1.
-1. Check [Artifact::get_Type()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_type/) for Pagination and [get_Subtype()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_subtype/) for Header or Footer.
-1. Delete matches with [ArtifactCollection::Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifactcollection/delete/).
-1. Save the result with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+See [Remove Headers and Footers](/pdf/cpp/remove-headers-footers/) for this operation.
 
-```cpp
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Page.h>
-#include <Aspose.PDF.Cpp/PageCollection.h>
-#include <Aspose.PDF.Cpp/Artifacts/Artifact.h>
-#include <Aspose.PDF.Cpp/Artifacts/ArtifactCollection.h>
+## Related artifact topics
 
-using namespace System;
-using namespace Aspose::Pdf;
-
-
-void DeleteHeaderFooterArtifact(System::String inputFile, System::String outputFile)
-{
-    auto document = MakeObject<Document>(inputFile);
-    auto artifacts = document->get_Pages()->idx_get(1)->get_Artifacts();
-    for (int i = artifacts->get_Count(); i >= 1; --i) {
-        auto artifact = artifacts->idx_get(i);
-        if (artifact->get_Type() == Artifact::ArtifactType::Pagination &&
-            (artifact->get_Subtype() == Artifact::ArtifactSubtype::Header
-                || artifact->get_Subtype() == Artifact::ArtifactSubtype::Footer)) {
-            artifacts->Delete(artifact);
-        }
-    }
-    document->Save(outputFile);
-}
-```
+- [Remove Headers and Footers](/pdf/cpp/remove-headers-footers/)
+- [Work with PDF Artifacts](/pdf/cpp/artifacts/)

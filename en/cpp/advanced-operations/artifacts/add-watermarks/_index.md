@@ -1,22 +1,22 @@
 ---
-title: Manage PDF watermark artifacts in C++
-linktitle: Adding Watermark
+title: Add PDF watermark artifacts in C++
+linktitle: Add Watermarks
 type: docs
 weight: 30
 url: /cpp/add-watermarks/
-description: Create a styled text watermark artifact, read watermark text and bounds, and delete watermark artifacts using Aspose.PDF for C++.
+description: Add a styled text watermark artifact to the first PDF page using Aspose.PDF for C++.
 lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add, Inspect, and Delete PDF Watermark Artifacts in C++
-Abstract: Create a centered text watermark with Aspose.PDF for C++ and configure its font, rotation, opacity, and background placement. Additional examples print watermark text and rectangles and remove watermark pagination artifacts from the first page.
+AlternativeHeadline: Place a Styled Text Watermark Artifact in C++
+Abstract: Create a centered WatermarkArtifact with bold Arial text, a 60-degree rotation, and 0.2 opacity. The C++ example places it behind the first page content.
 ---
 
-WatermarkArtifact adds a watermark as a page artifact. These examples use the first page and operate on artifact-based watermarks.
+Use `WatermarkArtifact` to add a text watermark to page 1. The example uses Arial, so make that font available to the application.
 
-The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK before using these functions; the text examples also require Arial to be available.
+The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK and use a writable output path for examples that save a PDF.
 
 ## Add a text watermark
 
@@ -68,73 +68,18 @@ void AddWatermarkArtifact(System::String inputFile, System::String outputFile)
 }
 ```
 
-## Read watermark text and bounds
+## Moved inspection and removal guides
 
-Print the text and rectangle of first-page artifacts with type Pagination and subtype Watermark. This function reads artifact properties; it does not export an image or create another PDF.
+<a id="read-watermark-text-and-bounds"></a>
 
-1. Open the input PDF with [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
-1. Iterate through [Page::get_Artifacts()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/get_artifacts/) on the first page.
-1. Filter using [Artifact::get_Type()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_type/) and [get_Subtype()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_subtype/).
-1. Print [Artifact::get_Text()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_text/) and [get_Rectangle()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_rectangle/).
+See [Extract Watermark Details](/pdf/cpp/extract-watermarks/) for this operation.
 
-```cpp
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Page.h>
-#include <Aspose.PDF.Cpp/PageCollection.h>
-#include <Aspose.PDF.Cpp/Artifacts/Artifact.h>
-#include <Aspose.PDF.Cpp/Artifacts/ArtifactCollection.h>
+<a id="delete-watermark-artifacts"></a>
 
-using namespace System;
-using namespace Aspose::Pdf;
+See [Remove Watermarks](/pdf/cpp/remove-watermarks/) for this operation.
 
-#include <iostream>
-#include <Aspose.PDF.Cpp/Rectangle.h>
+## Related artifact topics
 
-void ExtractWatermarkFromPdf(System::String inputFile)
-{
-    auto document = MakeObject<Document>(inputFile);
-    for (auto artifact : document->get_Pages()->idx_get(1)->get_Artifacts()) {
-        if (artifact->get_Type() == Artifact::ArtifactType::Pagination &&
-            artifact->get_Subtype() == Artifact::ArtifactSubtype::Watermark) {
-            std::cout << artifact->get_Text() << " " << artifact->get_Rectangle()->ToString() << std::endl;
-        }
-    }
-}
-```
-
-## Delete watermark artifacts
-
-Remove watermark pagination artifacts from the first page by iterating backward through the collection.
-
-1. Open the input PDF with [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
-1. Get the first page [Artifacts](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/get_artifacts/) collection.
-1. Iterate backward from [ArtifactCollection::get_Count()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifactcollection/get_count/) to index 1.
-1. Check [Artifact::get_Type()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_type/) for Pagination and [get_Subtype()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifact/get_subtype/) for Watermark.
-1. Delete matches with [ArtifactCollection::Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/artifactcollection/delete/).
-1. Save the result with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
-
-```cpp
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Page.h>
-#include <Aspose.PDF.Cpp/PageCollection.h>
-#include <Aspose.PDF.Cpp/Artifacts/Artifact.h>
-#include <Aspose.PDF.Cpp/Artifacts/ArtifactCollection.h>
-
-using namespace System;
-using namespace Aspose::Pdf;
-
-
-void DeleteWatermarkArtifact(System::String inputFile, System::String outputFile)
-{
-    auto document = MakeObject<Document>(inputFile);
-    auto artifacts = document->get_Pages()->idx_get(1)->get_Artifacts();
-    for (int i = artifacts->get_Count(); i >= 1; --i) {
-        auto artifact = artifacts->idx_get(i);
-        if (artifact->get_Type() == Artifact::ArtifactType::Pagination &&
-            artifact->get_Subtype() == Artifact::ArtifactSubtype::Watermark) {
-            artifacts->Delete(artifact);
-        }
-    }
-    document->Save(outputFile);
-}
-```
+- [Extract Watermark Details](/pdf/cpp/extract-watermarks/)
+- [Remove Watermarks](/pdf/cpp/remove-watermarks/)
+- [Work with PDF Artifacts](/pdf/cpp/artifacts/)

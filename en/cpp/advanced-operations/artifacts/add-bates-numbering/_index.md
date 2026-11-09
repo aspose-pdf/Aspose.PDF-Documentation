@@ -1,20 +1,22 @@
 ---
 title: Add Bates numbering to PDF in C++
-linktitle: Adding Bates Numbering
+linktitle: Add Bates Numbering
 type: docs
 weight: 10
 url: /cpp/add-bates-numbering/
-description: Configure six-digit Bates numbering, apply it with pagination APIs, and remove Bates numbers using Aspose.PDF for C++.
+description: Apply six-digit Bates numbering through direct or pagination APIs using Aspose.PDF for C++.
 lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Configure and Apply Sequential PDF Bates Numbers in C++
-Abstract: Create a reusable BatesNArtifact with numbering, alignment, and margins in Aspose.PDF for C++. The examples apply it with AddBatesNumbering or AddPagination and remove numbering with DeleteBatesNumbering.
+AlternativeHeadline: Apply Sequential Bates Identifiers to PDF Pages in C++
+Abstract: Configure a shared BatesNArtifact and apply it with AddBatesNumbering or AddPagination. Both supplied C++ examples append two blank pages before numbering all document pages.
 ---
 
-Bates numbering adds sequential identifiers to PDF pages. Both addition examples below append two blank pages before numbering the document. The deletion example processes the document page collection.
+Bates numbering assigns sequential identifiers to pages. Both C++ addition examples append two blank pages to the input document before numbering the entire page collection. This behavior differs from the Python examples, which number the existing pages.
+
+The shared helper sets six digits starting at `000001`, no prefix or suffix, and bottom-right placement. Save it as `bates-artifact.h` beside either addition example. Configure the SDK and choose a writable output path.
 
 ## Configure the shared Bates artifact
 
@@ -127,30 +129,13 @@ void AddBatesNArtifactPagination(System::String inputFile, System::String output
 }
 ```
 
-## Delete Bates numbering
+## Moved inspection and removal guides
 
-Remove Bates numbering through the page collection extension method.
+<a id="delete-bates-numbering"></a>
 
-1. Open the input PDF with [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
-1. Pass the document pages to [PageCollectionExtensions::DeleteBatesNumbering()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollectionextensions/deletebatesnumbering/).
-1. Save the result with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+See [Remove Bates Numbering](/pdf/cpp/remove-bates-numbering/) for this operation.
 
-```cpp
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Page.h>
-#include <Aspose.PDF.Cpp/PageCollection.h>
-#include <Aspose.PDF.Cpp/Artifacts/Artifact.h>
-#include <Aspose.PDF.Cpp/Artifacts/ArtifactCollection.h>
+## Related artifact topics
 
-using namespace System;
-using namespace Aspose::Pdf;
-
-#include <Aspose.PDF.Cpp/Artifacts/Pagination/PageCollectionExtensions.h>
-
-void DeleteBatesNumbering(System::String inputFile, System::String outputFile)
-{
-    auto document = MakeObject<Document>(inputFile);
-    PageCollectionExtensions::DeleteBatesNumbering(document->get_Pages());
-    document->Save(outputFile);
-}
-```
+- [Remove Bates Numbering](/pdf/cpp/remove-bates-numbering/)
+- [Work with PDF Artifacts](/pdf/cpp/artifacts/)

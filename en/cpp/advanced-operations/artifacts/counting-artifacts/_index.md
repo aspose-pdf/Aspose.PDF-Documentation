@@ -1,22 +1,22 @@
 ---
-title: Count PDF artifacts in C++
+title: Count PDF pagination artifacts in C++
 linktitle: Counting Artifacts
 type: docs
 weight: 40
 url: /cpp/counting-artifacts/
-description: Count watermark, background, header, and footer pagination artifacts on a PDF page using Aspose.PDF for C++.
+description: Count watermark, background, header, and footer pagination artifacts on the first PDF page using Aspose.PDF for C++.
 lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Inspect PDF Pagination Artifacts by Subtype in C++
-Abstract: Inspect the first page artifact collection with Aspose.PDF for C++ and count Pagination artifacts by subtype. The example reports watermarks, backgrounds, headers, and footers and skips other artifact types and subtypes.
+AlternativeHeadline: Count PDF Pagination Artifacts by Subtype in C++
+Abstract: Filter the first page artifact collection to Pagination entries and count four standard subtypes. The function prints zero for absent subtypes and does not modify or save the PDF.
 ---
 
-Use the artifact Type and Subtype properties to count selected pagination artifacts. This example reports counts for the first page only, rather than totals for the entire document.
+Inspect the first page artifact collection and count Watermark, Background, Header, and Footer subtypes. Other artifact types and subtypes are skipped.
 
-The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK before using these functions.
+The input PDF must contain at least one page. Configure the Aspose.PDF for C++ SDK and use a writable output path for examples that save a PDF.
 
 ## Count pagination artifacts by subtype
 
@@ -58,3 +58,11 @@ void CountPdfArtifacts(System::String inputFile)
               << "\nHeaders: " << headers << "\nFooters: " << footers << std::endl;
 }
 ```
+
+## Related artifact topics
+
+- [Extract Watermark Details](/pdf/cpp/extract-watermarks/)
+- [Remove Watermarks](/pdf/cpp/remove-watermarks/)
+- [Remove Backgrounds](/pdf/cpp/remove-backgrounds/)
+- [Remove Headers and Footers](/pdf/cpp/remove-headers-footers/)
+- [Work with PDF Artifacts](/pdf/cpp/artifacts/)
