@@ -1,23 +1,23 @@
 ---
-title: Gerenciar cabeçalhos e rodapés de PDF usando Java
-linktitle: Gerenciar cabeçalhos e rodapés de PDF
+title: Adicionar cabeçalhos e rodapés de PDF em Java
+linktitle: Adicionar cabeçalhos e rodapés
 type: docs
 weight: 70
 url: /pt/java/artifacts-header-footer/
-description: Aprenda como adicionar e remover artefatos de cabeçalho e rodapé em documentos PDF usando Aspose.PDF for Java.
-lastmod: "2026-10-06"
+description: Criar artefatos de cabeçalho e rodapé estilizados e adicioná-los às páginas de PDF em Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicionar, Personalizar e remover cabeçalhos e rodapés de PDF usando Java
-Abstract: Este artigo explica como gerenciar artefatos de cabeçalho e rodapé em documentos PDF usando Aspose.PDF for Java. Ele aborda a criação de objetos reutilizáveis `HeaderArtifact` e `FooterArtifact` com estado de texto personalizado e alinhamento, a adição deles a uma página e a exclusão de artefatos de cabeçalho e rodapé existentes.
+AlternativeHeadline: Adicionar cabeçalhos e rodapés em Java
+Abstract: Criar artefatos de cabeçalho e rodapé estilizados e adicioná-los às páginas de PDF em Java.
 ---
-Os artefatos de cabeçalho e rodapé são elementos de paginação não‑conteúdo normalmente usados para rótulos repetidos, identificadores de página e enquadramento de layout.
+Os artefatos de cabeçalho e rodapé são elementos de paginação não relacionados ao conteúdo, comumente usados para rótulos repetidos, identificadores de página e enquadramento de layout.
 
 ## Criar um artefato de cabeçalho
 
-Use este auxiliar quando precisar de um artefato de cabeçalho reutilizável com estilo de texto e alinhamento consistentes.
+Use este auxiliar quando precisar de um artefato de cabeçalho reutilizável com estilo de texto consistente e alinhamento.
 
 1. Crie um [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/).
 1. Defina seu texto, configurações de fonte e cor de primeiro plano.
@@ -37,7 +37,7 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 
 ## Criar um artefato de rodapé
 
-Este helper cria um artefato de rodapé reutilizável com o mesmo padrão de estilo do artefato de cabeçalho.
+Este auxiliar cria um artefato de rodapé reutilizável com o mesmo padrão de estilo do artefato de cabeçalho.
 
 1. Crie um [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/).
 1. Defina seu texto, estado do texto e cor de primeiro plano.
@@ -55,11 +55,11 @@ public static FooterArtifact createFooterArtifact(String text) {
 }
 ```
 
-## Adicionar um artefato de cabeçalho
+## Adicione um artefato de cabeçalho
 
 Use este exemplo quando uma página deve exibir um artefato de cabeçalho reutilizável.
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie o artefato de cabeçalho usando o método auxiliar.
 1. Adicione o artefato à página e salve o arquivo de saída.
 
@@ -75,10 +75,10 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 
 ## Adicionar um artefato de rodapé
 
-Use este exemplo quando a página precisar exibir um artefato de rodapé com formatação reutilizável.
+Use este exemplo quando a página deve exibir um artefato de rodapé com formatação reutilizável.
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Crie o artefato de rodapé através do método auxiliar.
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Crie o artefato de rodapé usando o método auxiliar.
 1. Adicione o artefato à página e salve o arquivo de saída.
 
 ```java
@@ -91,27 +91,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Excluir artefatos de cabeçalho e rodapé
+## Tópicos relacionados
 
-Use esta abordagem quando os artefatos de cabeçalho e rodapé existentes devem ser removidos da página.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Itere pela coleção de artefatos da página em ordem inversa.
-1. Exclua artefatos de paginação cujo subtipo é cabeçalho ou rodapé, então salve o documento.
-
-```java
-public static void deleteHeaderFooterArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && (artifact.getSubtype() == Artifact.ArtifactSubtype.Header
-                    || artifact.getSubtype() == Artifact.ArtifactSubtype.Footer)) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Remover cabeçalhos e rodapés](/pdf/pt/java/remove-headers-footers/)
+- [Trabalhar com artefatos PDF em Java](/pdf/pt/java/artifacts/)

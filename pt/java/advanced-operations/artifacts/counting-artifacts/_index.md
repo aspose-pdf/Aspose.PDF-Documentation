@@ -1,25 +1,25 @@
 ---
 title: Contar artefatos PDF em Java
-linktitle: Contando artefatos
+linktitle: Contando Artefatos
 type: docs
 weight: 40
 url: /pt/java/counting-artifacts/
-description: Aprenda como inspecionar e contar artefatos de paginação em documentos PDF usando Java com Aspose.PDF.
-lastmod: "2026-10-06"
+description: Saiba como inspecionar e contar artefatos de paginação em documentos PDF usando Java com Aspose.PDF.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Contando artefatos em PDF usando Java
-Abstract: Este artigo explica como inspecionar e contar artefatos de paginação em documentos PDF usando Aspose.PDF for Java. Ele mostra como iterar pelos artefatos de página e contar subtipos de marca d'água, plano de fundo, cabeçalho e rodapé.
+AlternativeHeadline: Contando Artefatos em PDF usando Java
+Abstract: Este artigo explica como inspecionar e contar artefatos de paginação em documentos PDF usando Aspose.PDF for Java. Ele mostra como iterar pelos artefatos de página e contar os subtipos de marca d'água, plano de fundo, cabeçalho e rodapé.
 ---
 ## Contar artefatos de paginação em uma página
 
 Use este exemplo quando precisar de uma contagem rápida dos principais subtipos de artefato de paginação em uma página.
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Leia o [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) coleção do destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Itere pela página [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) coleção e conte cada subtipo de paginação que você precisa relatar.
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Leia a coleção de artefatos [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) da página de destino [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Percorra a coleção de artefatos [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) da página e conte os artefatos de cada subtipo de paginação que precisa relatar.
 
 ```java
 public static void countPdfArtifacts(Path inputFile) {
@@ -53,3 +53,12 @@ public static void countPdfArtifacts(Path inputFile) {
     }
 }
 ```
+
+## Tópicos relacionados
+
+- [Trabalhar com artefatos PDF em Java](/pdf/pt/java/artifacts/)
+- [Extrair detalhes da marca d'água](/pdf/pt/java/extract-watermarks/)
+- [Remover fundos](/pdf/pt/java/remove-backgrounds/)
+- [Remover marcas d'água](/pdf/pt/java/remove-watermarks/)
+- [Remover numeração Bates](/pdf/pt/java/remove-bates-numbering/)
+- [Remover Cabeçalhos e Rodapés](/pdf/pt/java/remove-headers-footers/)
