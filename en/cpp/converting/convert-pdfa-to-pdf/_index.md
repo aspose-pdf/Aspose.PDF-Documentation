@@ -1,57 +1,45 @@
 ---
-title: Convert PDF/A to PDF format
-linktitle: Convert PDF/A to PDF format
+title: Convert PDF/A to standard PDF in C++
+linktitle: Convert PDF/A to PDF
 type: docs
-weight: 110
+weight: 120
 url: /cpp/convert-pdfa-to-pdf/
-lastmod: "2021-11-19"
-description: This topic show you how to Aspose.PDF allows to convert PDF/A file to PDF document with C++ library.
+description: Remove PDF/A compliance information and save a standard PDF document in C++ using Aspose.PDF.
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
-    priority: 0.8
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Remove PDF/A Compliance Information and Save Regular PDFs in C++
+Abstract: Learn how to open an existing PDF/A document and remove its compliance information with Aspose.PDF for C++. The example uses the Document API to save the result as a regular PDF.
 ---
 
-## Convert PDF/A document to PDF
+Use Aspose.PDF for C++ to remove PDF/A compliance information from an existing PDF/A document and save the result as a regular PDF. The following example uses the Document API rather than a format-specific load option.
 
-Convert PDF/A document to PDF means removing <abbr title="Portable Document Format Archive
-">PDF/A</abbr> restriction from the original document. Class [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) has method 'RemovePdfaCompliance' to remove the PDF compliance information from input/source file.
-After [Save](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#ac082fe8e67b25685fc51d33e804269fa) the input file.
+## Remove PDF/A compliance information
+
+Open a PDF/A document and remove its PDF/A compliance information before saving.
+
+This operation removes PDF/A compliance information. It does not convert the document to another archival PDF standard.
+
+1. Open the input PDF/A file as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [RemovePdfaCompliance()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/removepdfacompliance/).
+1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void ConvertPDFAtoPDF()
+
+#include <Aspose.PDF.Cpp/Document.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+void ConvertPDFAtoPDF(String path_infile, String path_outfile)
 {
-    std::clog << "PDF/A to PDF convert: Start" << std::endl;
-    String _dataDir("C:\\Samples\\Conversion\\");
-    String infilename("sample-pdfa.pdf");
-    String outfilename("PDFAToPDF_out.pdf");
-
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
+    auto document = MakeObject<Document>(path_infile);
     // Remove PDF/A compliance information
     document->RemovePdfaCompliance();
-
     // Save updated document
-    document->Save(_dataDir + outfilename);
-    std::clog << "PDF/A to PDF convert: End" << std::endl;
-}
-```
-
-This info also removes if you make any changes in the document (e.g. add pages). In the following example, the output document loses PDF/A compliance after the page adding.
-
-```cpp
-void ConvertPDFAtoPDFAdvanced()
-{
-    std::clog << "PDF/A to PDF convert: Start" << std::endl;
-    String _dataDir("C:\\Samples\\Conversion\\");
-    String infilename("sample-pdfa.pdf");
-    String outfilename("PDFAToPDF_out.pdf");
-
-    auto document = MakeObject<Document>(_dataDir + infilename);
-    // Adding a new (empty) page removes PDF/A compliance information.
-
-    document->get_Pages()->Add();
-    // Save updated document
-    document->Save(_dataDir + outfilename);
-    std::clog << "PDF/A to PDF convert: End" << std::endl;
+    document->Save(path_outfile);
 }
 ```

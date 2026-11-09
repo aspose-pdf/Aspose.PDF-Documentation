@@ -18,7 +18,5 @@ Utilisez cette section lorsqu'un document doit être divisé en sorties plus pet
 Cette section explique comment :
 
 - extraire les premières pages dans un nouveau PDF
-
 - extraire toutes les pages d'une page choisie jusqu'à la fin
-
 - exporter chaque page vers son propre fichier avec un modèle de dénomination de sortie

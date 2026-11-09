@@ -15,12 +15,8 @@ Cette page regroupe les familles d'annotations couvertes par les exemples Java d
 Utilisez les sujets suivants :
 
 - [Annotations de texte](/pdf/java/pdfannotationeditor-class/text-based-annotations/)
-
 - [Annotations de balisage](/pdf/java/pdfannotationeditor-class/markup-annotations/)
-
 - [Annotations interactives](/pdf/java/pdfannotationeditor-class/interactive-annotations/)
 - [Annotations de forme](/pdf/java/pdfannotationeditor-class/shape-annotations/)
-
 - [Annotations de sécurité](/pdf/java/pdfannotationeditor-class/security-annotations/)
-
 - [Annotations en filigrane](/pdf/java/pdfannotationeditor-class/watermark-annotations/)

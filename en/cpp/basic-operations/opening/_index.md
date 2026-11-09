@@ -1,88 +1,136 @@
 ---
-title: Open PDF Document using C++
-linktitle: Open
+title: Open PDF document programmatically
+linktitle: Open PDF
 type: docs
 weight: 20
 url: /cpp/open-pdf-document/
-description:  Use the C++ library for opening your PDF document with the next code snippet by Aspose.PDF.
-lastmod: "2021-06-05"
+description: Open PDF files in C++ from a path, stream, or memory and load password-protected documents.
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Load PDF Files from Paths, Streams, and Memory in C++
+Abstract: Learn how to open PDF documents from a file path, file stream, or memory with Aspose.PDF for C++. The examples also load password-protected files and read document page counts.
 ---
 
-## Open existing PDF document
+## Open a PDF from a file
 
-There are several ways to open a document. The easiest is to specify a file name.
+1. Pass the input file path to the [Document constructor](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/document/).
+1. Read the number of pages with [PageCollection::get_Count()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/get_count/).
+1. Print the page count.
 
 ```cpp
-void OpenDocument()
+#include <iostream>
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Exceptions/InvalidPasswordException.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void OpenDocument(String path_infile)
 {
-    String fileName("C:\\Samples\\sample.pdf");
-    auto document = MakeObject<Document>(fileName);
+    auto document = MakeObject<Document>(path_infile);
+    int countPages = document->get_Pages()->get_Count();
+    std::cout << "Number of Pages :" << countPages << std::endl;
+}
+```
+
+## Open a PDF from a file stream
+
+1. Open a readable stream with [System::IO::File::OpenRead()](https://reference.aspose.com/pdf/cpp/system.io/file/openread/).
+1. Pass the stream to the [Document constructor](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/document/).
+1. Read the number of pages with [PageCollection::get_Count()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/get_count/).
+1. Print the page count.
+
+```cpp
+#include <iostream>
+
+#include <system/io/file.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Exceptions/InvalidPasswordException.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+void OpenDocumentStream(String path_infile)
+{
+    auto document = MakeObject<Document>(System::IO::File::OpenRead(path_infile));
+    int countPages = document->get_Pages()->get_Count();
+    std::cout << "Number of Pages :" << countPages << std::endl;
+}
+```
+
+## Open a PDF from memory
+
+1. Read the input PDF into a byte array.
+1. Create a [System::IO::MemoryStream](https://reference.aspose.com/pdf/cpp/system.io/memorystream/) from the byte array.
+1. Pass the memory stream to the [Document constructor](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/document/).
+1. Read the number of pages with [PageCollection::get_Count()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/get_count/).
+1. Print the page count.
+
+```cpp
+#include <iostream>
+
+#include <system/io/file.h>
+#include <system/io/memory_stream.h>
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void OpenDocumentMemory(String path_infile)
+{
+    auto bytes = System::IO::File::ReadAllBytes(path_infile);
+    auto document = MakeObject<Document>(MakeObject<System::IO::MemoryStream>(bytes));
 
     int countPages = document->get_Pages()->get_Count();
-
     std::cout << "Pages " << countPages << std::endl;
 }
 ```
 
-## Open existing PDF document from stream
+## Open a password-protected PDF
+
+1. Pass the input file path and password to the [Document constructor](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/document/).
+1. Read the number of pages with [PageCollection::get_Count()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/get_count/).
+1. Print the page count.
+1. Catch [InvalidPasswordException](https://reference.aspose.com/pdf/cpp/aspose.pdf/) if the password is incorrect.
 
 ```cpp
-void OpenDocumentStream()
+#include <iostream>
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Exceptions/InvalidPasswordException.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+void OpenDocumentWithPassword(String path_infile, String password)
 {
-    String fileName("C:\\Samples\\sample.pdf");
-    System::SharedPtr<System::IO::MemoryStream> stream;
-    auto document = MakeObject<Document>(System::IO::File::OpenRead(fileName));
-
-    int countPages = document->get_Pages()->get_Count();
-
-    std::cout << "Pages " << countPages << std::endl;
-}
-```
-
-## Open encrypted PDF document
-
-```cpp
-void BasicOperations::OpenDocumentWithPassword()
-{
-    String fileName("C:\\Samples\\sample-pswd.pdf");
-    String password("Aspose2020");
     try
     {
-        auto document = MakeObject<Document>(fileName, password);
+        auto document = MakeObject<Document>(path_infile, password);
         int countPages = document->get_Pages()->get_Count();
 
         std::cout << "Pages " << countPages << std::endl;
     }
-    catch (InvalidPasswordException e)
+    catch (Aspose::Pdf::InvalidPasswordException& e)
     {
         std::cerr << e.what();
     }
-}
-```
-
-## Open PDF document from memory buffer
-
-```cpp
-#include <system/io/memory_stream.h>
-#include <system/buffer.h>
-
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Page.h>
-
-// ...
-
-void OpenDocumentMemory(const uint8_t *buffer, int size) {
-
-    auto arr = MakeArray<uint8_t>(size);
-    Buffer::BlockCopy(buffer, 0, arr->data_ptr(), 0, size);
-
-    auto document = MakeObject<Document>(MakeObject<System::IO::MemoryStream>(arr));
-
-    int countPages = document->get_Pages()->get_Count();
-
-    std::cout << "Pages " << countPages << std::endl;
 }
 ```

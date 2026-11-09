@@ -15,8 +15,6 @@ La classe Java `FormEditorExamples` montre comment utiliser les actions de champ
 Utilisez cette section pour :
 
 - ajouter une action JavaScript à un champ
-
 - remplacer un script de champ existant
-
 - configurer une URL de soumission et un indicateur de soumission
 - supprimer une action de champ

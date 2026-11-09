@@ -18,12 +18,8 @@ L’analyse de documents PDF consiste à extraire le contenu structuré ou brut 
 Cette section explique comment :
 
 - [Extraire le texte du PDF](/pdf/java/extract-text-from-pdf/) à l'aide de `TextAbsorber`, `ParagraphAbsorber` et des API associées.
-
 - [Extraire les images du PDF](/pdf/java/extract-images-from-the-pdf-file/) à partir des ressources de la page.
-
 - [Extraire les polices du PDF](/pdf/java/extract-fonts-from-pdf/) pour inspecter les polices utilisées dans un document.
 - [Extraire les données d'AcroForm](/pdf/java/extract-data-from-acroform/) et exporter les valeurs des champs au format JSON, XML, FDF ou XFDF.
-
 - [Extraire les données des tableaux](/pdf/java/extract-data-from-table-in-pdf/) à l'aide de `TableAbsorber` ou exporter les tableaux détectés vers Excel.
-
 - [Extraire les données vectorielles du PDF](/pdf/java/extract-vector-data-from-pdf/) avec `GraphicsAbsorber` et les méthodes d'exportation SVG.

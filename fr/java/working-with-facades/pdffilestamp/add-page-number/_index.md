@@ -21,13 +21,10 @@ Utilisez `PdfFileStamp` lorsque la numérotation des pages doit être appliquée
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
-2. Choisissez le positionnement des numéros de page dont vous avez besoin.
-3. Définissez éventuellement le style de numérotation et le numéro de départ avant l’ajout des numéros de page.
-
-4. Appelez `addPageNumber` avec la surcharge requise.
-
-5. Enregistrez la sortie et fermez l’objet de façade.
+1. Choisissez le positionnement des numéros de page dont vous avez besoin.
+1. Définissez éventuellement le style de numérotation et le numéro de départ avant l’ajout des numéros de page.
+1. Appelez `addPageNumber` avec la surcharge requise.
+1. Enregistrez la sortie et fermez l’objet de façade.
 
 ### Exemples Java
 

@@ -21,13 +21,10 @@ Utilisez `PdfFileSecurity` lorsque vous devez protéger un PDF avec des mots de 
 ### Étapes
 
 1. Créez une instance `PdfFileSecurity`.
-
-2. Liez le PDF source avec `bindPdf`.
-3. Créez un objet `DocumentPrivilege` qui correspond aux actions autorisées.
-
-4. Appelez la surcharge `encryptFile` appropriée pour la taille de clé et l'algorithme dont vous avez besoin.
-
-5. Enregistrez le fichier sécurisé et fermez l'objet.
+1. Liez le PDF source avec `bindPdf`.
+1. Créez un objet `DocumentPrivilege` qui correspond aux actions autorisées.
+1. Appelez la surcharge `encryptFile` appropriée pour la taille de clé et l'algorithme dont vous avez besoin.
+1. Enregistrez le fichier sécurisé et fermez l'objet.
 
 ### Exemples Java
 

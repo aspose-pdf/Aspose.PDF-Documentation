@@ -1,391 +1,376 @@
 ---
-title: Manipulate PDF Document
-linktitle: Manipulate PDF Document
+title: Manipulate PDF documents in C++
+linktitle: Manipulate PDF documents
 type: docs
 weight: 30
 url: /cpp/manipulate-pdf-document/
-lastmod: "2021-11-11"
-description: This section explains about validation PDF Document for PDF A Standard, how to work with TOC, how to set PDF expiry date, and how to determine the Progress of PDF file generation.
+description: Validate PDF/A documents, create and format a table of contents, add an expiry alert, and flatten a PDF with Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Validate PDF/A, Build Contents, and Flatten PDFs in C++
+Abstract: Learn how to validate PDF/A documents and create or format a table of contents with Aspose.PDF for C++. Additional examples add an expiry-date alert and flatten PDF content.
 ---
 
-## Validate PDF Document for PDF A Standard (A 1A and A 1B)
+Validate PDF/A documents, create and format a table of contents, add an expiry alert, and flatten a PDF with Aspose.PDF for C++.
 
-To validate a PDF document for PDF/A-1a or PDF/A-1b compatibility, use the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class [Validate](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#aa1ac4565b320807c718c44eeee7cda8c) method. This method allows you to specify the name of the file in which the result is to be saved and the required validation type [PdfFormat](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#ac83739fd7c818167c2fdc4dd554de763) enumeration : PDF_A_1A or PDF_A_1B.
+## Validate PDF/A-1a
 
-{{% alert color="primary" %}}
+The output path is a validation report, not a converted PDF. Validation does not convert the document.
 
-The output XML format is custom Aspose format. The XML contains a collection of tags with the name Problem; each tag contains the details of a particular problem. The Problem tag's ObjectID attribute represents the ID of the particular object this problem is related to. The Clause attribute represents a corresponding rule in the PDF specification.
-
-{{% /alert %}}
-
-The following code snippet shows you how to validate PDF document for PDF/A-1A.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [Validate()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/validate/) with the report output path and PdfFormat::PDF_A_1A.
+1. Use the Boolean result to print the validation status.
 
 ```cpp
-void ExampleValidate01() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
 
-    // String for file name.
-    String inputFileName("ValidatePDFAStandard.pdf");
-    String outputFileName("Validation-result-A1A.xml");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-    // Validate PDF for PDF/A-1a
-    document->Validate(_dataDir + outputFileName, PdfFormat::PDF_A_1A);
+using namespace System;
+using namespace Aspose::Pdf;
+
+void ValidatePdfaStandardA1a(String inputFile, String outputFile) {
+    auto document = System::MakeObject<Document>(inputFile);
+    if (document->Validate(outputFile, PdfFormat::PDF_A_1A)) {
+        Console::WriteLine(u"Document is valid according to PDF/A-1a standard.");
+    }
+    else {
+        Console::WriteLine(u"Document is not valid according to PDF/A-1a standard.");
+    }
 }
 ```
 
-The following code snippet shows you how to validate PDF document for PDF/A-1B.
+## Validate PDF/A-1b
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [Validate()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/validate/) with the report output path and PdfFormat::PDF_A_1B.
+1. Use the Boolean result to print the validation status.
 
 ```cpp
-void ExampleValidate02() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
 
-    // String for file name.
-    String inputFileName("ValidatePDFAStandard.pdf");
-    String outputFileName("Validation-result-A1B.xml");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-    // Validate PDF for PDF/A-1a
-    document->Validate(_dataDir + outputFileName, PdfFormat::PDF_A_1B);
+using namespace System;
+using namespace Aspose::Pdf;
+
+void ValidatePdfaStandardA1b(String inputFile, String outputFile) {
+    auto document = System::MakeObject<Document>(inputFile);
+    if (document->Validate(outputFile, PdfFormat::PDF_A_1B)) {
+        Console::WriteLine(u"Document is valid according to PDF/A-1b standard.");
+    }
+    else {
+        Console::WriteLine(u"Document is not valid according to PDF/A-1b standard.");
+    }
 }
 ```
 
-## Working with TOC
+## Add a table of contents
 
-### Add TOC to Existing PDF
+The example uses two supplied titles rather than detecting headings from the input PDF.
 
-Aspose.PDF API allows you to add a table of content either when creating a PDF, or to an existing file.
-
-To add a TOC to an existing PDF file, use the [Heading](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.heading) class in the Aspose.Pdf namespace. The Aspose.Pdf namespace allows you to create new and manipulates existing PDF files. To add a TOC to an existing PDF, use the Aspose.Pdf namespace.
-
-The following code snippet shows how to create a table of contents inside an existing PDF file.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Insert a new page at position 1.
+1. Create [TocInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/tocinfo/) and set its title using a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/).
+1. Create [Heading](https://reference.aspose.com/pdf/cpp/aspose.pdf/heading/) entries for up to two original pages.
+1. Set each destination page and top coordinate, and add each entry to the TOC page.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void ExampleToc01() {
-    // String for path names.
-    String _dataDir("C:\\Samples\\");
 
-    // String for file names
-    String inputFileName("AddTOC.pdf");
-    String outputFileName("TOC_out.pdf");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Generator/TocInfo.h>
+#include <Aspose.PDF.Cpp/Generator/Heading.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextFragmentState.h>
+#include <Aspose.PDF.Cpp/Text/TextSegment.h>
+#include <Aspose.PDF.Cpp/Text/FontStyles.h>
 
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-    // Get access to first page of PDF file
+
+void AddTableOfContents(String inputFile, String outputFile) {
+    auto document = MakeObject<Document>(inputFile);
     auto tocPage = document->get_Pages()->Insert(1);
-
-    // Create object to represent TOC information
     auto tocInfo = MakeObject<TocInfo>();
-    auto title = MakeObject<TextFragment>("Table Of Contents");
+    auto title = MakeObject<TextFragment>(u"Table Of Contents");
     title->get_TextState()->set_FontSize(20);
     title->get_TextState()->set_FontStyle(FontStyles::Bold);
-
-    // Set the title for TOC
     tocInfo->set_Title(title);
     tocPage->set_TocInfo(tocInfo);
 
-    // Create string objects which will be used as TOC elements
-    auto titles = MakeArray<String>(4);
-    titles->SetValue(u"First page", 0);
-    titles->SetValue(u"Second page", 1);
-    titles->SetValue(u"Third page", 2);
-    titles->SetValue(u"Fourth page", 3);
-
-    for (int i = 0; i < 2; i++)
+    const int length = 2;
+    String titles[length] = { u"First page", u"Second page" };
+    for (int index = 0; index < length && index + 2 <= document->get_Pages()->get_Count(); index++)
     {
-        // Create Heading object
-        auto heading2 = MakeObject<Heading>(1);
-        auto segment2 = MakeObject<TextSegment>();
-        heading2->set_TocPage(tocPage);
-        heading2->get_Segments()->Add(segment2);
-
-        // Specify the destination page for heading object
-
-        heading2->set_DestinationPage(document->get_Pages()->idx_get(i + 2));
-
-        // Destination page
-        heading2->set_Top(document->get_Pages()->idx_get(i + 2)->get_Rect()->get_Height());
-
-        // Destination coordinate
-        segment2->set_Text(titles[i]);
-
-        // Add heading to page containing TOC
-        tocPage->get_Paragraphs()->Add(heading2);
+        auto heading = MakeObject<Heading>(1);
+        auto segment = MakeObject<TextSegment>(titles[index]);
+        heading->set_TocPage(tocPage);
+        heading->get_Segments()->Add(segment);
+        auto destinationPage = document->get_Pages()->idx_get(index + 2);
+        heading->set_DestinationPage(destinationPage);
+        heading->set_Top(destinationPage->get_Rect()->get_Height());
+        tocPage->get_Paragraphs()->Add(heading);
     }
-
-    // Save the updated document
-    document->Save(_dataDir + outputFileName);
+    document->Save(outputFile);
 }
 ```
 
-### Set different TabLeaderType for different TOC Levels
+## Format table of contents levels
 
-Aspose.PDF for C++ also allows setting different TabLeaderType for different TOC levels. You need to set LineDash property of FormatArray with the appropriate value of TabLeaderType. Next, you may add the list section to the collection of the section of the Pdf document. After, create a section in the Pdf document and save the PDF file.
-
-```cpp
-void ExampleToc02() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
-
-    // String for file name.
-    String inputFileName("AddTOC.pdf");
-
-    String outputFileName("TOC_out.pdf");
-
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-
-    auto tocPage = document->get_Pages()->Add();
-    auto tocInfo = MakeObject<TocInfo>();
-
-    //set LeaderType
-    tocInfo->set_LineDash(TabLeaderType::Solid);
-
-    // Create object to represent TOC information
-    auto tocInfo = MakeObject<TocInfo>();
-    auto title = MakeObject<TextFragment>("Table Of Contents");
-    title->get_TextState()->set_FontSize(20);
-    title->get_TextState()->set_FontStyle(FontStyles::Bold);
-
-    // Set the title for TOC
-    tocInfo->set_Title(title);
-
-    //Add the list section to the sections collection of the Pdf document
-    tocPage->set_TocInfo(tocInfo);
-
-    //Define the format of the four levels list by setting the left margins
-    //and
-    //text format settings of each level
-
-    tocInfo->set_FormatArrayLength(4);
-    tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Left(0);
-    tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Right(30);
-    tocInfo->get_FormatArray()->idx_get(0)->set_LineDash(TabLeaderType::Dot);
-    tocInfo->get_FormatArray()->idx_get(0)->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
-    tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Left(10);
-    tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Right(30);
-    tocInfo->get_FormatArray()->idx_get(1)->set_LineDash(TabLeaderType::None);
-    tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_FontSize(10);
-    tocInfo->get_FormatArray()->idx_get(2)->get_Margin()->set_Left(20);
-    tocInfo->get_FormatArray()->idx_get(2)->get_Margin()->set_Right(30);
-    tocInfo->get_FormatArray()->idx_get(2)->get_TextState()->set_FontStyle(FontStyles::Bold);
-    tocInfo->get_FormatArray()->idx_get(3)->set_LineDash(TabLeaderType::Solid);
-    tocInfo->get_FormatArray()->idx_get(3)->get_Margin()->set_Left(30);
-    tocInfo->get_FormatArray()->idx_get(3)->get_Margin()->set_Right(30);
-    tocInfo->get_FormatArray()->idx_get(3)->get_TextState()->set_FontStyle(FontStyles::Bold);
-
-    //Create a section in the Pdf document
-    auto page = document->get_Pages()->Add();
-
-    //Add four headings in the section
-    for (int Level = 1; Level <= 4; Level++)
-    {
-    auto heading2 = MakeObject<Heading>(Level);
-    auto segment2 = MakeObject<TextSegment>();
-
-    heading2->get_Segments()->Add(segment2);
-    heading2->set_IsAutoSequence(true);
-    heading2->set_TocPage(tocPage);
-    segment2->set_Text(u"Sample Heading" + Level);
-    heading2->get_TextState()->set_Font(FontRepository::FindFont(u"Arial Unicode MS"));
-
-    //Add the heading into Table Of Contents.
-    heading2->set_IsInList(true);
-    page->get_Paragraphs()->Add(heading2);
-    }
-
-    // save the Pdf
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-### Hide Page Numbers in TOC
-
-If you want to hide page numbers along with titles in a table of contents, you can use the [IsShowPageNumbers](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.toc_info#ada10e841699bba062dcd0b440c26b832) property of [TOCInfo](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.toc_info) Class as false.
-
-Please check following code snippet to hide page numbers in the table of contents:
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Append a TOC page and assign [TocInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/tocinfo/).
+1. Configure four level formats with margins, leaders, and text styles.
+1. Append a content page with [Heading](https://reference.aspose.com/pdf/cpp/aspose.pdf/heading/) objects for levels 1 through 4.
+1. Enable automatic sequence and inclusion in the TOC.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void ExampleToc03() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
 
-    // String for file name.
-    String inputFileName("AddTOC.pdf");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Generator/Heading.h>
+#include <Aspose.PDF.Cpp/Generator/LevelFormat.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Generator/TocInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Text/FontStyles.h>
+#include <Aspose.PDF.Cpp/Text/TabStop.h>
+#include <Aspose.PDF.Cpp/Text/TabStops.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextFragmentState.h>
+#include <Aspose.PDF.Cpp/Text/TextSegment.h>
+#include <Aspose.PDF.Cpp/Text/FontRepository.h>
 
-    String outputFileName("TOC_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-    auto tocPage = document->get_Pages()->Add();
-
-    // Create object to represent TOC information
-    auto tocInfo = MakeObject<TocInfo>();
-    auto title = MakeObject<TextFragment>("Table Of Contents");
-    title->get_TextState()->set_FontSize(20);
-    title->get_TextState()->set_FontStyle(FontStyles::Bold);
-
-    // Set the title for TOC
-    tocInfo->set_Title(title);
-
-    //Add the list section to the sections collection of the Pdf document
-    tocPage->set_TocInfo(tocInfo);
-
-    tocInfo->set_IsShowPageNumbers(false);
-
-    //Define the format of the four levels list by setting the left margins and
-    //text format settings of each level
-
-    tocInfo->set_FormatArrayLength(4);
-    tocInfo->get_FormatArray()->idx_get(0)->get_Margin()->set_Right(0);
-    tocInfo->get_FormatArray()->idx_get(0)->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
-    tocInfo->get_FormatArray()->idx_get(1)->get_Margin()->set_Left(30);
-    tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_Underline(true);
-    tocInfo->get_FormatArray()->idx_get(1)->get_TextState()->set_FontSize(10);
-    tocInfo->get_FormatArray()->idx_get(2)->get_TextState()->set_FontStyle(FontStyles::Bold);
-    tocInfo->get_FormatArray()->idx_get(3)->get_TextState()->set_FontStyle(FontStyles::Bold);
-
-    auto page = document->get_Pages()->Add();
-    //Add four headings in the section
-    for (int Level = 1; Level != 5; Level++)
-    {
-        auto heading2 = MakeObject<Heading>(Level);
-        auto segment2 = MakeObject<TextSegment>();
-        heading2->set_TocPage(tocPage);
-        heading2->get_Segments()->Add(segment2);
-        heading2->set_IsAutoSequence(true);
-        segment2->set_Text(u"this is heading of level " + Level);
-        heading2->set_IsInList(true);
-        page->get_Paragraphs()->Add(heading2);
-    }
-    // save the Pdf
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-## How to set PDF expiry date
-
-We apply access privileges on PDF files so that a certain group of users can access particular features/objects of PDF documents. In order to restrict the PDF file access, we usually apply encryption and we may have a requirement to set PDF file expiration, so that the user accessing/viewing the document gets a valid prompt regarding PDF file expiry.
-
-In order to accomplish the above stated requirement, we can use [JavascriptAction](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.annotations.javascript_action/) object. Please check the following code snippet.
-
-```cpp
-void SetPDFexpiryDate() {
-
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
-
-    // String for file name.
-    String outputFileName("SetExpiryDate_out.pdf");
-
-    // Instantiate Document object
-    auto document = MakeObject<Document>();
-
-    // Add page to pages collection of PDF file
-    document->get_Pages()->Add();
-
-    // Add text fragment to paragraphs collection of page object
-    document->get_Pages()->idx_get(1)->get_Paragraphs()->Add(new TextFragment(u"Hello World..."));
-
-    String javascriptCode(u"var year=2017;");
-    javascriptCode += u"var month=5;";
-    javascriptCode += u"today = new Date(); today = new Date(today.getFullYear(), today.getMonth());";
-    javascriptCode += u"expiry = new Date(year, month);";
-    javascriptCode += u"if (today.getTime() > expiry.getTime())";
-    javascriptCode += u"app.alert('The file is expired. You need a new one.');";
-
-    // Create JavaScript object to set PDF expiry date
-    auto javaScript = MakeObject<Aspose::Pdf::Annotations::JavascriptAction>(javascriptCode);
-
-    // Set JavaScript as PDF open action
-    document->set_OpenAction(javaScript);
-
-    // Save PDF Document
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-## Determine Progress of PDF File Generation
-
-A customer asked us to add a feature that allows developers to determine the progress of PDF file generation. Here's the response to that request.
-
-The field [CustomerProgressHandler](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options#a712bcc865fa8f75bbdc2a3b55e4581fb) of [DocSaveOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options) class allows you to determine how PDF generation is going.
-
-The code snippets below shows how to use [CustomerProgressHandler](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.doc_save_options#a712bcc865fa8f75bbdc2a3b55e4581fb).
-
-```cpp
-using ProgressHandler = System::MulticastDelegate<void(SharedPtr<UnifiedSaveOptions::ProgressEventHandlerInfo>)>;
-void ConversionProgressCallback(SharedPtr<UnifiedSaveOptions::ProgressEventHandlerInfo> eventInfo)
+void SetTocLevels(String inputFile, String outputFile)
 {
-    String eventType;
-    switch (eventInfo->EventType)
-    {
-    case ProgressEventType::ResultPageCreated:
-        eventType = u"ResultPageCreated";
-        break;
-    case ProgressEventType::ResultPageSaved:
-        eventType = u"ResultPageSaved";
-        break;
-    case ProgressEventType::SourcePageAnalysed:
-        eventType = u"SourcePageAnalysed";
-        break;
-    case ProgressEventType::TotalProgress:
-        eventType = u"TotalProgress";
-        break;
+    auto document = MakeObject<Document>(inputFile);
+    auto tocPage = document->get_Pages()->Add();
+    auto tocInfo = MakeObject<TocInfo>();
+    tocInfo->set_LineDash(TabLeaderType::Solid);
+    auto title = MakeObject<TextFragment>(u"Table Of Contents");
+    title->get_TextState()->set_FontSize(30);
+    tocInfo->set_Title(title);
+    tocPage->set_TocInfo(tocInfo);
+
+    tocInfo->set_FormatArrayLength(4);
+    tocInfo->get_FormatArray()[0]->get_Margin()->set_Left(0);
+    tocInfo->get_FormatArray()[0]->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()[0]->set_LineDash(TabLeaderType::Dot);
+    tocInfo->get_FormatArray()[0]->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
+    tocInfo->get_FormatArray()[1]->get_Margin()->set_Left(10);
+    tocInfo->get_FormatArray()[1]->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()[1]->set_LineDash(TabLeaderType::None);
+    tocInfo->get_FormatArray()[1]->get_TextState()->set_FontSize(10);
+    tocInfo->get_FormatArray()[2]->get_Margin()->set_Left(20);
+    tocInfo->get_FormatArray()[2]->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()[2]->get_TextState()->set_FontStyle(FontStyles::Bold);
+    tocInfo->get_FormatArray()[3]->set_LineDash(TabLeaderType::Solid);
+    tocInfo->get_FormatArray()[3]->get_Margin()->set_Left(30);
+    tocInfo->get_FormatArray()[3]->get_Margin()->set_Right(30);
+    tocInfo->get_FormatArray()[3]->get_TextState()->set_FontStyle(FontStyles::Bold);
+
+    auto page = document->get_Pages()->Add();
+    for (int level = 1; level < 5; level++) {
+        auto heading = MakeObject<Heading>(level);
+        heading->set_IsAutoSequence(true);
+        heading->set_TocPage(tocPage);
+        heading->get_TextState()->set_Font(FontRepository::FindFont(u"Arial"));
+        heading->get_Segments()->Add(MakeObject<TextSegment>(String::Format(u"Sample Heading {0}", level)));
+        heading->set_IsInList(true);
+        page->get_Paragraphs()->Add(heading);
     }
-    Console::WriteLine(String::Format(u"Event type: {0}, Value: {1}, MaxValue: {2}",
-        eventType, eventInfo->Value, eventInfo->MaxValue));
+
+    document->Save(outputFile);
 }
 ```
 
+## Hide page numbers in the TOC
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Append a TOC page and configure [TocInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/tocinfo/).
+1. Set IsShowPageNumbers to false.
+1. Configure the level formats and add a sample [Heading](https://reference.aspose.com/pdf/cpp/aspose.pdf/heading/) to a new content page.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
 ```cpp
-void DetermineProgressOfPDFfileGeneration() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
 
-    // String for file name.
-    String inputFileName("AddTOC.pdf");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Generator/Heading.h>
+#include <Aspose.PDF.Cpp/Generator/LevelFormat.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Generator/TocInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Text/FontStyles.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextFragmentState.h>
+#include <Aspose.PDF.Cpp/Text/TextSegment.h>
+#include <Aspose.PDF.Cpp/Text/FontRepository.h>
 
-    String outputFileName("TOC_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-    // Open document
-    auto saveOptions = MakeObject<DocSaveOptions>();
+void HidePageNumbersInToc(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    auto tocPage = document->get_Pages()->Add();
+    auto tocInfo = MakeObject<TocInfo>();
+    auto title = MakeObject<TextFragment>(u"Table Of Contents");
+    title->get_TextState()->set_FontSize(20);
+    title->get_TextState()->set_FontStyle(FontStyles::Bold);
+    tocInfo->set_Title(title);
+    tocInfo->set_IsShowPageNumbers(false);
+    tocPage->set_TocInfo(tocInfo);
 
-    saveOptions->CustomProgressHandler = ProgressHandler(ConversionProgressCallback);
+    tocInfo->set_FormatArrayLength(4);
+    tocInfo->get_FormatArray()[0]->get_Margin()->set_Right(0);
+    tocInfo->get_FormatArray()[0]->get_TextState()->set_FontStyle(FontStyles::Bold | FontStyles::Italic);
+    tocInfo->get_FormatArray()[1]->get_Margin()->set_Left(30);
+    tocInfo->get_FormatArray()[1]->get_TextState()->set_Underline(true);
+    tocInfo->get_FormatArray()[1]->get_TextState()->set_FontSize(10);
+    tocInfo->get_FormatArray()[2]->get_TextState()->set_FontStyle(FontStyles::Bold);
+    tocInfo->get_FormatArray()[3]->get_TextState()->set_FontStyle(FontStyles::Bold);
 
-    document->Save(_dataDir + outputFileName, saveOptions);
+    auto page = document->get_Pages()->Add();
+    auto heading = MakeObject<Heading>(1);
+    heading->set_TocPage(tocPage);
+
+    heading->set_IsAutoSequence(true);
+    heading->set_IsInList(true);
+    heading->get_Segments()->Add(MakeObject<TextSegment>(u"this is heading of level 1"));
+    page->get_Paragraphs()->Add(heading);
+
+    document->Save(outputFile);
 }
 ```
 
-## Flatten Fillable PDF in C++
+## Add a prefix to TOC page numbers
 
-PDF documents often include forms with interactive fillable widgets such as radio buttons, checkboxes, text boxes, lists, etc. To make it uneditable for various application purposes, we need to flatten the PDF file.
-Aspose.PDF for C++ provides the function to flatten your PDF in C++ with just few line of code:
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Insert a TOC page at position 1 and assign [TocInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/tocinfo/).
+1. Set PageNumbersPrefix to P.
+1. Create [Heading](https://reference.aspose.com/pdf/cpp/aspose.pdf/heading/) entries for all remaining pages and assign their destinations.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void FlattenFillablePDF() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
-    // String for file name.
-    String inputFileName("sample-form.pdf");
-    String outputFileName("FlattenForms_out.pdf");
 
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Generator/Heading.h>
+#include <Aspose.PDF.Cpp/Generator/LevelFormat.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Generator/TocInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Text/FontStyles.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextFragmentState.h>
+#include <Aspose.PDF.Cpp/Text/TextSegment.h>
+#include <Aspose.PDF.Cpp/Text/FontRepository.h>
 
-    // Flatten Flatten Fillable PDF
-    if (document->get_Form()->get_Fields()->get_Count() > 0)
-    {
-        for (auto item : document->get_Form()->get_Fields())
-        item->Flatten();
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+void CustomizePageNumbersInToc(String inputFile, String outputFile) {
+    auto document = MakeObject<Document>(inputFile);
+    auto tocPage = document->get_Pages()->Insert(1);
+    auto tocInfo = MakeObject<TocInfo>();
+    auto title = MakeObject<TextFragment>(u"Table Of Contents");
+    title->get_TextState()->set_FontSize(20);
+    title->get_TextState()->set_FontStyle(FontStyles::Bold);
+    tocInfo->set_Title(title);
+    tocInfo->set_PageNumbersPrefix(u"P");
+    tocPage->set_TocInfo(tocInfo);
+
+    for (int index = 2; index <= document->get_Pages()->get_Count(); index++) {
+        auto page = document->get_Pages()->idx_get(index);
+        auto heading = MakeObject<Heading>(1);
+        heading->set_TocPage(tocPage);
+        heading->set_DestinationPage(page);
+        heading->set_Top(page->get_Rect()->get_Height());
+        heading->get_Segments()->Add(MakeObject<TextSegment>(String::Format(u"Page {0}", index - 1)));
+        tocPage->get_Paragraphs()->Add(heading);
     }
 
-    // Save the updated document
-    document->Save(_dataDir + outputFileName);
+    document->Save(outputFile);
+}
+```
+
+## Add an expiry-date alert
+
+This displays an alert in viewers that support and enable PDF JavaScript. It does not prevent access to the file and replaces any existing open action.
+
+1. Validate the supplied calendar date.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Build JavaScript using the expiry date with a zero-based month.
+1. Assign a [JavascriptAction](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/javascriptaction/) to OpenAction.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+#include <system/date_time.h>
+#include <system/string.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/JavascriptAction.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void SetPdfExpiryDate(String inputFile, String outputFile, int year, int month, int day)
+{
+    // DateTime validates the calendar date; JavaScript months are zero-based.
+    const DateTime expiry(year, month, day);
+    auto document = MakeObject<Document>(inputFile);
+    auto code = String::Format(
+        u"var expiry = new Date({0}, {1}, {2});\n"
+        u"if (new Date().getTime() >= expiry.getTime())\n"
+        u"    app.alert('The file is expired. You need a new one.');",
+        expiry.get_Year(), expiry.get_Month() - 1, expiry.get_Day());
+    // This is a viewer alert, not access control or encryption.
+    document->set_OpenAction(MakeObject<Annotations::JavascriptAction>(code));
+    document->Save(outputFile);
+}
+```
+
+## Flatten a PDF
+
+Flattening turns interactive content into page content. Keep the original PDF if you need to retain editable fields or annotations.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [Flatten()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/flatten/) on the document.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void FlattenFillablePdf(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    document->Flatten();
+    document->Save(outputFile);
 }
 ```

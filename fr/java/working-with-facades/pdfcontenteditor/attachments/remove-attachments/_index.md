@@ -13,10 +13,8 @@ Abstract: Cet article montre comment lier un PDF, supprimer toutes les pièces j
 ## Supprimer toutes les pièces jointes
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Appelez `deleteAttachments()` pour supprimer toutes les pièces jointes intégrées.
-
-3. Enregistrez le document PDF mis à jour.
+1. Appelez `deleteAttachments()` pour supprimer toutes les pièces jointes intégrées.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void removeAttachments(Path inputFile, Path outputFile) {

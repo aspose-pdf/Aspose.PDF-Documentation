@@ -1,525 +1,364 @@
 ---
-title: Optimize PDF using C++
-linktitle: Optimize PDF
+title: Optimize PDF documents in C++
+linktitle: Optimize PDF documents
 type: docs
-weight: 30
+weight: 50
 url: /cpp/optimize-pdf/
-description: Optimize PDF file, shrink all images, reduce size PDF, unembed fonts, enable reusing page content, remove or flatten annotations with C++.
-lastmod: "2021-11-11"
+description: Optimize PDF resources, compress images, remove unused data, flatten interactive content, and convert pages to grayscale with Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Compress PDF Images and Remove Unused Resources in C++
+Abstract: Learn how to optimize PDF resources, compress images, and remove unused or duplicate data with Aspose.PDF for C++. Additional examples flatten interactive content and convert pages to grayscale; file-size results depend on the input PDF.
 ---
 
-First of all, any PDF optimization you do is for the user. In PDFs, user optimization is largely about reducing the size of your PDFs in order to increase their loading speed. This is the most popular task.
-We can use several techniques to optimize PDF, but the most essential:
+Optimize PDF resources, compress images, remove unused data, flatten interactive content, and convert pages to grayscale with Aspose.PDF for C++.
 
-- Optimize page content for online browsing
-- Shrink or compress all images
-- Enable reusing page content
-- Merge duplicate streams
-- Unembed fonts
-- Remove unused objects
-- Remove flattening form fields
-- Remove or flatten annotations
+## Report input and output file sizes
 
-## Optimize PDF Document for the Web
+Several examples use the following helper to compare file sizes. Save it as `optimize-file-sizes.h` next to the source files that include it. Optimization results depend on the PDF; an output file can be the same size or larger.
 
-When you are faced with the task of optimizing the content of your PDF document for better ranking in search engines, Aspose.PDF for C++ has a solution.
-
-1. Open the input document in an [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object.
-1. Use the [Optimize](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a04d95824c334f5e543c13f69a19d9cda) method.
-1. Save the optimized document using the Save method.
-
-The following code snippet shows how to optimize a PDF document for the web.
+1. Read the input file size before modifying the PDF.
+1. Read the saved output file size.
+1. Print both sizes for comparison.
 
 ```cpp
+
+#include <cstdint>
+#include <system/console.h>
+#include <system/io/file_info.h>
+#include <system/string.h>
+
+inline void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
+```
+
+## Optimize for web viewing
+
+Web optimization is distinct from reducing resources and does not guarantee a smaller file.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [Optimize()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimize/) to organize the PDF for web access.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes using PrintOptimizationFileSizes().
+
+Source example: `optimize-document-01.cpp`.
+
+```cpp
+#include <Aspose.PDF.Cpp/Document.h>
+#include "optimize-file-sizes.h"
+
 using namespace System;
 using namespace Aspose::Pdf;
-using namespace Aspose::Pdf::Text;
-//Optimize PDF Document for the Web
-void OptimizeForWeb() {
-    // String for path name
-    String _dataDir("C:\\Samples\\");
 
-    // String for input file name
-    String outfilename("OptimizeDocument_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>();
-
-    // Make some operations (add pages, images, etc) 
-    // ...
-
-    // Optimize for web
+void OptimizePdf(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
     document->Optimize();
-
-    // Save output document
-    document->Save(_dataDir + outfilename);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-## Reduce Size PDF
+## Optimize resources with default settings
 
-The [OptimizeResources()](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#aea33aac69a42423efb82bcdb359f2ec6) method allows you to reduce the document size by weeding out the unnecessary information. By default, this method works as follows:
-
-- Resources that are not used on the document pages are removed
-- Equal resources are joined into one object
-- Unused objects are deleted
-
-The snippet below is an example. Note, though, that this method cannot guarantee document shrinking.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) using its default settings.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes.
 
 ```cpp
-void ReduceSizePDF() {
+#include <Aspose.PDF.Cpp/Document.h>
+#include "optimize-file-sizes.h"
 
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // String for input file name
-    String outfilename("ShrinkDocument_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>();
-    // Make some operations (add pages, images, etc) 
-    // ...
-
-    // Optimize PDF document. Note, though, that this method cannot guarantee document shrinking 
+void ReduceSizePdf(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
     document->OptimizeResources();
-
-    // Save output document
-    document->Save(_dataDir + outfilename);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-## Optimization Strategy Management
+## Compress images
 
-We can also customize the optimization strategy. Currently, the [OptimizeResources()](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#aea33aac69a42423efb82bcdb359f2ec6) method uses 5 techniques. These techniques can be applied using the OptimizeResources() method with the [OptimizationOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document.optimization_options/) parameter.
+Image compression can reduce visual quality. Review the output before choosing a quality setting.
 
-### Shrinking or Compressing All Images
-
-To optimize images in your PDF document, we will use [Aspose.Pdf.Optimization](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.optimization).
-To solve the problem with image optimization, we have the following options: reduce image quality and/or change their resolution. In any case, [ImageCompressionOptions](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options/) should be applied. In the following example, we shrink images by reducing [ImageQuality](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a92ee855b042a6b310984b4966ea7154e) to 50.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/optimizationoptions/).
+1. Enable CompressImages and set ImageQuality to 50 through [ImageCompressionOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/imagecompressionoptions/).
+1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes.
 
 ```cpp
-void CompressImage() {
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
+#include <Aspose.PDF.Cpp/Optimization/ImageCompressionOptions.h>
+#include "optimize-file-sizes.h"
 
-    // String for input file name
-    String infilename("ShrinkDocument.pdf");
-    String outfilename("ShrinkDocument_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set CompressImages option
-    optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
-    // Set ImageQuality option
-    optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(50);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions); 
-    // Save updated document
-    document->Save(_dataDir + outfilename);
+void ShrinkingOrCompressingAllImages(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
+    auto options = MakeObject<Optimization::OptimizationOptions>();
+    options->get_ImageCompressionOptions()->set_CompressImages(true);
+    options->get_ImageCompressionOptions()->set_ImageQuality(50);
+    document->OptimizeResources(options);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-To set the image at a lower resolution, set [ResizeImages](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a0e5aad7e140ee380c09ebbb8a5238ff6) to true and [MaxResolution](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#a05a4d1ace23ef074b3dc203cb213755e) to the corresponding value.
+## Remove unused objects
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/optimizationoptions/) and enable RemoveUnusedObjects.
+1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes.
 
 ```cpp
-void ResizeImagesWithLowerResolution() {
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
+#include "optimize-file-sizes.h"
 
-    // String for input file name
-    String infilename("ResizeImage.pdf");
-    String outfilename("ResizeImages_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set CompressImages option
-    optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
-    // Set ImageQuality option
-    optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(75);
-
-    // Set ResizeImage option
-    optimizationOptions->get_ImageCompressionOptions()->set_ResizeImages(true);
-    // Set MaxResolution option
-    optimizationOptions->get_ImageCompressionOptions()->set_MaxResolution(300);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions);
-    // Save updated document
-    document->Save(_dataDir + outfilename);
+void RemovingUnusedObjects(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
+    auto options = MakeObject<Optimization::OptimizationOptions>();
+    options->set_RemoveUnusedObjects(true);
+    document->OptimizeResources(options);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-Aspose.PDF for C++ also offers you control over the runtime setting. Today, we can use two algorithms - Standard and Fast. To control the execution time we should set a [Version](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.image_compression_options#aa2f1d93725ce56f8fabe692152bbf3a4) property.
+## Remove unused streams
 
-The following snippet demonstrates the Fast algorithm:
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/optimizationoptions/) and enable RemoveUnusedStreams.
+1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes.
 
 ```cpp
-void ResizeImagesWithLowerResolutionFast() {
-    auto time = System::DateTime::get_Now().get_Ticks();
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
+#include "optimize-file-sizes.h"
 
-    // String for input file name
-    String infilename("ResizeImage.pdf");
-    String outfilename("ResizeImages_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set CompressImages option
-    optimizationOptions->get_ImageCompressionOptions()->set_CompressImages(true);
-    // Set ImageQuality option
-    optimizationOptions->get_ImageCompressionOptions()->set_ImageQuality(75);
-
-    // Set ResizeImage option
-    optimizationOptions->get_ImageCompressionOptions()->set_ResizeImages(true);
-    // Set Imagae Compression Version to fast
-    optimizationOptions->get_ImageCompressionOptions()->set_Version (Aspose::Pdf::Optimization::ImageCompressionVersion::Fast);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions);
-    // Save updated document
-    document->Save(_dataDir + outfilename);
-    std::cout << "Ticks: " << System::DateTime::get_Now().get_Ticks() - time << std::endl;
+void RemovingUnusedStreams(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
+    auto options = MakeObject<Optimization::OptimizationOptions>();
+    options->set_RemoveUnusedStreams(true);
+    document->OptimizeResources(options);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-### Removing Unused Objects
+## Link duplicate streams
 
-Sometimes you may need to remove some unused objects from your PDF document that are not referenced on the pages.This may happen, for example, when a page is removed from the document page tree but the page object itself isn’t removed. Removing these objects doesn’t make the document invalid but rather shrinks it. Check next code snippet:
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/optimizationoptions/) and enable LinkDuplicateStreams.
+1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes.
 
 ```cpp
-void RemovingUnusedObject() { 
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
+#include "optimize-file-sizes.h"
 
-    // String for input file name
-    String infilename("ShrinkDocument.pdf");
-    String outfilename("ShrinkDocument_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set RemoveUsedObject option
-    optimizationOptions->set_RemoveUnusedObjects(true);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions);
-
-    // Save updated document
-    document->Save(_dataDir + outfilename); 
+void LinkingDuplicateStreams(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
+    auto options = MakeObject<Optimization::OptimizationOptions>();
+    options->set_LinkDuplicateStreams(true);
+    document->OptimizeResources(options);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-### Removing Unused Streams
+## Unembed fonts
 
-Sometimes the document contains the unused resource streams. These streams are not “unused objects” because they are referenced from a page resource dictionary. Thus, they are not removed with a “remove unused objects” method. But these streams are never used with the page contents. This may happen in cases when an image has been removed from the page but not from the page resources. Also, this situation often occurs when pages are extracted from the document and document pages have “common” resources, that is, the same Resources object. Page contents are analyzed in order to determine if a resource stream is used or not. Unused streams are removed. It sometimes decreases the document size. The use of this technique is similar to the previous step:
+Removing embedded fonts makes rendering dependent on fonts available to the viewer and can affect appearance.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/optimizationoptions/) and enable UnembedFonts.
+1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes.
 
 ```cpp
-void RemovingUnusedStreams() { 
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
+#include "optimize-file-sizes.h"
 
-    // String for input file name
-    String infilename("ShrinkDocument.pdf");
-    String outfilename("ShrinkDocument_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>();
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set RemoveUsedStreams option
-    optimizationOptions->set_RemoveUnusedStreams(true);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions);
-
-    // Save updated document
-    document->Save(_dataDir + outfilename); 
+void UnembedFonts(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
+    auto options = MakeObject<Optimization::OptimizationOptions>();
+    options->set_UnembedFonts(true);
+    document->OptimizeResources(options);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-### Linking Duplicate Streams
+## Flatten annotations
 
-Some documents can contain several duplicate resource streams (like images, for instance). This may happen, say when a document is concatenated with itself. The output document contains two independent copies of the same resource stream. We analyze all resource streams and compare them. If streams are duplicated, they are merged, that is, only one copy is left. The references are changed appropriately, and the copies of the object are removed. In some cases, it helps to decrease the document size.
+Reverse iteration accounts for annotations being removed during flattening.
 
-```cpp
-void LinkingDuplicateStreams() { 
-    // String for path name
-    String _dataDir("C:\\Samples\\");
-
-    // String for input file name
-    String infilename("ShrinkDocument.pdf");
-    String outfilename("ShrinkDocument_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set LinkDuplicateStreams option
-    optimizationOptions->set_LinkDuplcateStreams(true);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions);
-
-    // Save updated document
-    document->Save(_dataDir + outfilename); 
-}
-```
-
-Additionally, we can use [AllowReusePageContent](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.optimization.optimization_options#aedaab36eaf8ed5059a2b1e11275bf6d8) settings. If this property is set to true, the page content will be reused when optimizing the document for identical pages.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Iterate through every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Traverse the annotations in reverse order and call [Flatten()](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/annotation/) on each one.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void AllowReusePageContent() { 
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Annotation.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/AnnotationCollection.h>
 
-    // String for input file name
-    String infilename("ShrinkDocument.pdf");
-    String outfilename("ShrinkDocument_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set AllowReusePageContent option
-    optimizationOptions->set_AllowReusePageContent(true);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions);
-
-    // Save updated document
-    document->Save(_dataDir + outfilename); 
-}
-```
-
-### Unembedding Fonts
-
-When you create a PDF version of your personal design file, a copy of all necessary fonts is added to the PDF file itself. It is embedding. Regardless of where this PDF is opened, whether it is on your computer, a friend's computer, or your print provider's computer, all of the correct fonts will be there and will render properly.
-
-But, if the document uses embedded fonts, it means that all font data is stored in the document. The advantage is that the document is viewable regardless of whether the font is installed on the user's machine or not. But embedding fonts makes the document larger. The unembed fonts method removes all embedded fonts. Thus, the document size decreases but the document itself may become unreadable if the correct font is not installed.
-
-```cpp
-void UnembedFonts() {
-    // String for path name
-    String _dataDir("C:\\Samples\\");
-
-    // String for input file name
-    String infilename("ShrinkDocument.pdf");
-    String outfilename("ShrinkDocument_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir+infilename);
-
-    // Initialize OptimizationOptions
-    auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
-    // Set AllowReusePageContent option
-    optimizationOptions->set_UnembedFonts(true);
-
-    // Optimize PDF document using OptimizationOptions
-    document->OptimizeResources(optimizationOptions);
-
-    // Save updated document
-    document->Save(_dataDir + outfilename);
-}
-```
-
-The optimization resources apply these methods to the document. If any of these methods are applied, the document size will most probably decrease. If none of these methods is applied, the document size will not change which is obvious.
-
-## Additional Ways to Reduce the PDF Document Size
-
-### Removing or Flattening Annotations
-
-The presence of annotations in your PDF document increases its size naturally.
-Annotations can be deleted when they are unnecessary. When they are needed but do not require additional editing, they can be flattened. Both of these techniques will reduce the file size.
-
-```cpp
-void FlatteningAnnotation() {
-    // String for path name
-    String _dataDir("C:\\Samples\\");
-
-    // String for input file name
-    String infilename("OptimizeDocument.pdf");
-    // String for output file name
-    String outfilename("OptimizeDocument_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Flatten annotations
-    for(auto page : document->get_Pages())
-    {
-        for(auto annotation : page->get_Annotations())
-        {
-        annotation->Flatten();
+void FlattenAnnotations(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    for (auto page : document->get_Pages()) {
+        auto annotations = page->get_Annotations();
+        // Flatten removes annotations, so visit the collection in reverse.
+        for (int index = annotations->get_Count(); index >= 1; --index) {
+            annotations->idx_get(index)->Flatten();
         }
     }
-    // Save updated document
-    document->Save(_dataDir + outfilename);
+    document->Save(outputFile);
 }
 ```
 
-### Removing Form Fields
+## Flatten form fields
 
-Removing forms from your PDF will also optimize your document.
-If the PDF document contains AcroForms, we can try to reduce the file size by flattening form fields.
+Flattened fields no longer provide interactive form entry.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Get the document form and take a snapshot of its fields.
+1. Call [Flatten()](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/field/) on each field in the snapshot.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Print the input and output sizes.
 
 ```cpp
-void FlatteningFormFields() {
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Field.h>
+#include <system/array.h>
+#include "optimize-file-sizes.h"
 
-    // String for input file name
-    String infilename("OptimizeFormField.pdf");
-    // String for output file name
-    String outfilename("OptimizeFormField_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    // Flatten form fields
-    // Flatten Forms
-    if (document->get_Form()->get_Fields()->get_Count() > 0)
-    {
-        for(auto item : document->get_Form()->get_Fields())
-        {
-            item->Flatten();
+void FlattenForms(String inputFile, String outputFile)
+{
+    const auto originalSize = System::MakeObject<System::IO::FileInfo>(inputFile)->get_Length();
+    auto document = MakeObject<Document>(inputFile);
+    auto form = document->get_Form();
+    if (form != nullptr) {
+        // Snapshot the fields before Flatten changes the form collection.
+        auto fields = form->get_Fields();
+        for (auto& field : fields) {
+            field->Flatten();
         }
     }
-    // Save updated document
-    document->Save(_dataDir + outfilename);
+    document->Save(outputFile);
+    PrintOptimizationFileSizes(originalSize, outputFile);
 }
 ```
 
-### Convert a PDF from RGB colorspace to grayscale
+## Convert pages to grayscale
 
-A PDF file comprises Text, Image, Attachment, Annotations, Graphs, and other objects. You may come across a requirement to convert a PDF from RGB colorspace to grayscale so that it would be faster while printing those PDF files. Also, when the file is converted to grayscale, the document size is reduced too, but it can just as well cause a decrease in the document quality. This feature is currently supported by the Pre-Flight feature of Adobe Acrobat, but when talking about Office automation, Aspose.PDF is an ultimate solution to provide such leverages for document manipulations. In order to accomplish this requirement, the following code snippet can be used.
+Grayscale conversion changes page colors; file-size reduction depends on the input.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Iterate through each [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) and call [MakeGrayscale()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void ConvertPDFfromColorspaceToGrayscale() {
-    // String for path name
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
 
-    // String for input file name
-    String infilename("OptimizeDocument.pdf");
-    // String for output file name
-    String outfilename("Test-gray_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + infilename);
-
-    auto strategy = MakeObject<Aspose::Pdf::RgbToDeviceGrayConversionStrategy>();
-    for (int idxPage = 1; idxPage <= document->get_Pages()->get_Count(); idxPage++)
-    {
-        // Get instance of particular page inside PDF
-        auto page = document->get_Pages()->idx_get(idxPage);
-        // Convert the RGB colorspace image to GrayScale colorspace
-        strategy->Convert(page);
+void ConvertPdfFromRgbColorspaceToGrayscale(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    for (auto& page : document->get_Pages()) {
+        page->MakeGrayscale();
     }
-    // Save resultant file
-    document->Save(_dataDir + outfilename); 
+    document->Save(outputFile);
 }
 ```
 
-### FlateDecode Compression
+## Use Flate image encoding
 
-Aspose.PDF for C++ provides support of FlateDecode compression for PDF Optimisation functionality.
-To optimize image using FlateDecode Compression set optimization options to Flate.
-The following code snippet below shows how to use the option in Optimization to store images with **FlateDecode** compression:
-
-```cpp
-void FlatDecodeCompression() {
- // String for path name
- String _dataDir("C:\\Samples\\");
-
- // String for input file name
- String infilename("FlateDecodeCompression.pdf");
- // String for output file name
- String outfilename("FlateDecodeCompression_out.pdf");
-
- // Open document
- auto document = MakeObject<Document>(_dataDir + infilename);
-
- // Initialize OptimizationOptions
- auto optimizationOptions = MakeObject<Aspose::Pdf::Optimization::OptimizationOptions>();
-
- // To optimize image using FlateDecode Compression set optimization options to Flate
- optimizationOptions->get_ImageCompressionOptions()->set_Encoding(Aspose::Pdf::Optimization::ImageEncoding::Flate);
-
- // Optimize PDF document using OptimizationOptions
- document->OptimizeResources(optimizationOptions);
-
- // Save updated document
- document->Save(_dataDir + outfilename);
-}
-```
-
-### **Store Image in XImageCollection**
-
-Aspose.PDF for C++ provides the ability to store new images into [XImageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) with FlateDecode compression. To enable this option you can use **ImageFilterType.Flate** flag.
-The following code snippet shows how to use this functionality:
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create [OptimizationOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/optimizationoptions/).
+1. Set the [ImageCompressionOptions](https://reference.aspose.com/pdf/cpp/aspose.pdf.optimization/imagecompressionoptions/) Encoding property to ImageEncoding::Flate.
+1. Call [OptimizeResources()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/optimizeresources/) with the options.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/)
 
 ```cpp
-void StoreImageInXImageCollection() {
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
+#include <Aspose.PDF.Cpp/Optimization/ImageCompressionOptions.h>
+#include <Aspose.PDF.Cpp/Optimization/ImageEncoding.h>
 
- // String for path name
- String _dataDir("C:\\Samples\\");
+using namespace System;
+using namespace Aspose::Pdf;
 
- // String for output file name
- String outfilename("FlateDecodeCompression_out.pdf");
-
- // Open document
- auto document = MakeObject<Document>();
- 
- auto page = document->get_Pages()->Add();
- 
- auto imageStream = System::IO::File::OpenRead(_dataDir + u"aspose-logo.jpg");
- 
- page->get_Resources()->get_Images()->Add(imageStream, Aspose::Pdf::ImageFilterType::Flate);
- 
- auto ximage = page->get_Resources()->get_Images()->idx_get(page->get_Resources()->get_Images()->get_Count());
-
- page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
-
- // Set coordinates
- int lowerLeftX = 0;
- int lowerLeftY = 0;
- int upperRightX = 600;
- int upperRightY = 600;
- 
- auto rectangle = MakeObject<Rectangle>(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-
- auto matrix = MakeObject<Matrix>(new double[] {rectangle->get_URX() - rectangle->get_LLX(), 0, 0, rectangle->get_URY() - rectangle->get_LLY(), rectangle->get_LLX(), rectangle->get_LLY()});
- // Using ConcatenateMatrix (concatenate matrix) operator: defines how image must be placed
- page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(matrix));
- page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(ximage->get_Name()));
- page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
-
- document->Save(_dataDir + outfilename);
+void UsingFlatedecodeCompression(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    auto options = MakeObject<Optimization::OptimizationOptions>();
+    options->get_ImageCompressionOptions()->set_Encoding(Optimization::ImageEncoding::Flate);
+    document->OptimizeResources(options);
+    document->Save(outputFile);
 }
 ```

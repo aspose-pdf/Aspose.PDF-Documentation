@@ -1,114 +1,113 @@
 ---
-title: Move PDF Pages programmatically C++
-linktitle: Move PDF Pages
+title: Move PDF pages in C++
+linktitle: Move Pages
 type: docs
-weight: 20
+weight: 80
 url: /cpp/move-pages/
-description: Try to move pages at desired location or at the end of a PDF file using Aspose.PDF for C++.
-lastmod: "2021-12-09"
+description: Move pages to a new PDF or move a page to the end of its original document using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Transfer PDF Pages and Reorder a Document in C++
+Abstract: Learn how to move one or several pages into a new PDF with Aspose.PDF for C++. Another example moves the second page to the end of its original document.
 ---
 
-## Moving a Page from one PDF Document to Another
+Move pages to a new PDF or move a page to the end of its original document using Aspose.PDF for C++.
 
-Moving PDF pages in document is very interesting and popular task.
-This topic explains how to move page from one PDF document to the end of another document using C++.
-To move an page we should:
+## Move a page to a new document
 
-1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
-1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's.
-1. [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) page to the destination document.
-1. Save the output PDF using the Save method.
-1. [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15) page in source document.
-1. Save the source PDF using the Save method.
+Supply distinct sourceOutputFile and outputFile paths. The input must contain page 2.
 
-The following code snippet shows you how to move one page.
+1. Open the input PDF and create a destination [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Call [CopyPage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) to copy page 2 into the destination.
+1. Call [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) to remove page 2 from the source.
+1. Save the modified source and destination to separate paths with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void MovePage()
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of MovePagesExamples.movePageFromOneDocumentToAnother.
+void MovePageFromOneDocumentToAnother(System::String inputFile, System::String sourceOutputFile, System::String outputFile)
 {
-    // Open document
-    String _dataDir("C:\\Samples\\");
-    String srcFileName("<enter file name>");
-    String dstFileName("<enter file name>");
+    auto document = MakeObject<Document>(inputFile);
+    auto anotherDocument = MakeObject<Document>();
 
-    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
-    auto dstDocument = MakeObject<Document>();
-
-    auto page = srcDocument->get_Pages()->idx_get(2);
-    dstDocument->get_Pages()->Add(page);
-    // Save output file
-    dstDocument->Save(srcFileName);
-    srcDocument->get_Pages()->Delete(2);
-    srcDocument->Save(dstFileName);
+    anotherDocument->get_Pages()->CopyPage(document->get_Pages()->idx_get(2));
+    document->get_Pages()->Delete(2);
+    document->Save(sourceOutputFile);
+    anotherDocument->Save(outputFile);
 }
 ```
 
-## Moving bunch of Pages from one PDF Document to Another
+## Move multiple pages to a new document
 
-1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
-1. Define an array with page numbers to be moved.
-1. Run loop through array:
-1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's.
-1. [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1) page to the destination document.
-1. Save the output PDF using the Save method.
-1. [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15) page in source document.
-1. Save the source PDF using the Save method.
+Use a PDF with at least two pages and distinct output paths.
 
-The following code snippet shows you how to insert an empty page at the end of a PDF file.
+1. Open the input PDF and create a destination [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Copy pages 1 and 2 into the destination using [CopyPage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
+1. Save the destination with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+1. Pass the selected page array to [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/) on the source.
+1. Save the modified source to sourceOutputFile with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void MoveBunchPages()
-{
-    // Open document
-    String _dataDir("C:\\Samples\\");
-    String srcFileName("<enter file name>");
-    String dstFileName("<enter file name>");
 
-    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
+#include <system/array.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of MovePagesExamples.moveBunchPagesFromOneDocumentToAnother.
+void MoveBunchPagesFromOneDocumentToAnother(System::String inputFile, System::String sourceOutputFile, System::String outputFile)
+{
+    auto srcDocument = MakeObject<Document>(inputFile);
     auto dstDocument = MakeObject<Document>();
 
-
-    auto pages = MakeArray<int>({ 1,3 });
-
-    for (auto pageIndex : pages)
-    {
-        auto page = srcDocument->get_Pages()->idx_get(pageIndex);
-        dstDocument->get_Pages()->Add(page);
+    auto pages = MakeArray<int32_t>({1, 2});
+    for (int pageIndex : pages) {
+        dstDocument->get_Pages()->CopyPage(srcDocument->get_Pages()->idx_get(pageIndex));
     }
-    // Save output files
-    dstDocument->Save(srcFileName);
-    srcDocument->get_Pages()->Delete();
-    srcDocument->Save(dstFileName);
+    dstDocument->Save(outputFile);
+    srcDocument->get_Pages()->Delete(pages);
+    srcDocument->Save(sourceOutputFile);
 }
 ```
 
-## Moving a Page in new location in the current PDF Document
+## Move page 2 to the end
 
-1. Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class object with the source PDF file.
-1. Get Page from the the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's. collection's.
-1. [Add](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#abb0362ffa129a1e2e5650a2f2e7057c1)  page to the new location (for example to end).
-1. [Delete](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection#afaa57836d1b206e396f2cb7dd91b5d15)  page in previous location.
-1. Save the output PDF using the Save method.
+This example moves page 2 to the end; it does not accept an arbitrary destination position.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Append a copy of page 2 using [CopyPage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
+1. Remove the original page 2 with [Delete()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/delete/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void MovePagesInOnePDF()
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of MovePagesExamples.movePageInNewLocationInSameDocument.
+void MovePageInNewLocationInSameDocument(System::String inputFile, System::String outputFile)
 {
-    // Open document
-    String _dataDir("C:\\Samples\\");
-    String srcFileName("<enter file name>");
-    String dstFileName("<enter file name>");
+    auto srcDocument = MakeObject<Document>(inputFile);
 
-    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
-    auto dstDocument = MakeObject<Document>();
-
-    auto page = srcDocument->get_Pages()->idx_get(2);
-    srcDocument->get_Pages()->Add(page);
+    srcDocument->get_Pages()->CopyPage(srcDocument->get_Pages()->idx_get(2));
     srcDocument->get_Pages()->Delete(2);
-
-    // Save output file
-    srcDocument->Save(dstFileName);
+    srcDocument->Save(outputFile);
 }
 ```

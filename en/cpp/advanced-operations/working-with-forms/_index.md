@@ -1,25 +1,20 @@
 ---
-title: Working with Forms using C++
+title: Work with PDF forms in C++
 linktitle: Working with Forms
 type: docs
-weight: 50
+weight: 60
 url: /cpp/working-with-forms/
-description: This section explains how to work with AcroForms and XFA Forms in your PDF documents with Aspose.PDF for C++.
-lastmod: "2021-11-30"
+description: Create, fill, extract, modify, and exchange PDF form data, configure submission controls, and convert XFA forms using Aspose.PDF for C++.
+lastmod: "2026-10-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Build, Fill, and Exchange PDF Form Data in C++
+Abstract: Learn how to work with AcroForms and convert XFA forms using Aspose.PDF for C++. The examples cover field creation, values, appearance, data exchange, submission actions, and page Form XObject operations.
 ---
 
-AcroForms are PDF files that contain form fields. Data can be entered into these fields by end-users or the author of the form. Internally, AcroForms are annotations or fields applied to a PDF document.
+- [AcroForms](/pdf/cpp/acroforms/) — Create and manage interactive fields, exchange values, and configure submission controls.
+- [XFA Forms](/pdf/cpp/xfa-forms/) — Convert XFA forms to standard AcroForms, with an optional rendering-flag check.
 
-Aspose.PDF for C++ allows you to efficiently work with forms in PDF documents.
 
-**Can I create a fillable PDF form from scratch?**
-Yes, you can just create a blank PDF, add the labels and fields you want, and after save it.
-Can I create a fillable PDF form from an existing document? What are the form fields? How to extract form from PDF file?
-
-You will find answers to these questions and many others by learning the next section of the documentation.
-
-- [AcroForms](/pdf/cpp/acroforms/) - create form, fill form field, extract data from form, modifing fields in your PDF with C++ library.
-- [XFA Forms](/pdf/cpp/xfa-forms/) - fill XFA fields, convert XFA, get XFA  fields properties.

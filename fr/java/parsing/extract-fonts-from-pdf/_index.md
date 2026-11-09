@@ -16,11 +16,8 @@ Abstract: Cet article explique comment inspecter les polices utilisées dans un 
 Utilisez l'extraction de polices lorsque vous devez auditer la typographie d'un document, inspecter les ressources intégrées ou vérifier l'utilisation des polices avant les flux de conversion ou d'archivage.
 
 1. Ouvrez le PDF source dans une instance [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-
 1. Appelez `document.getFontUtilities().getAllFonts()` pour collecter chaque ressource [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) référencée par le document.
-
 1. Parcourez les objets [`Font`](https://reference.aspose.com/pdf/java/com.aspose.pdf/font/) extraits et lisez chaque nom de police à partir des métadonnées de police.
-
 1. Affichez les noms de police afin que la typographie du document puisse être auditée ou exportée.
 
 ```java

@@ -1,48 +1,45 @@
 ---
-title: Create PDF Document using C++
-linktitle: Create
+title: Create PDF document programmatically
+linktitle: Create PDF
 type: docs
 weight: 10
 url: /cpp/create-document/
-description: The most popular and basic task of working with a PDF file is creating a document from scratch. Use the Aspose.PDF for C++ library.
-lastmod: "2021-06-05"
+description: Create a PDF document in C++, add a page and text, and save it using Aspose.PDF.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Generate a PDF Page with Text in C++
+Abstract: Learn how to create a PDF document, add a page, and insert a TextFragment with Aspose.PDF for C++. The example saves a single-page document containing Hello World! text.
 ---
 
-**Aspose.PDF for C++** API lets C++ application developers to embed PDF documents processing functionality in their applications. It can be used to create and read PDF files without the need of any other software installed on the underlying machine. Aspose.PDF for C++ can be used in a variety of C++ application types such as QT, MFC and console apps.
+Create PDF files programmatically for reports, invoices, and other generated documents.
 
-## How to create PDF File using C++
+## Create a PDF with text
 
-To create a PDF file using C++, the following steps can be used.
-
-1. Instantiate a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object
-1. Add a [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page/) to document object
-1. Create a [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) object
-1. Add [TextFragment](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.te_x_fragment/) to [Paragraph](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.paragraphs/) collection of the page
-1. Save the resultant PDF document
+1. Create an empty [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Add a page to the document with [PageCollection::Add()](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/add/).
+1. Create a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) containing Hello World!.
+1. Add the text fragment to the page's [Paragraphs](https://reference.aspose.com/pdf/cpp/aspose.pdf/paragraphs/) collection.
+1. Save the result with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void CreatePDF() {
-    // String for path name.
-    String _dataDir("C:\\Samples\\");
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 
-    // String for file name.
-    String filename("sample-new.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-    // Initialize document object
+void CreatePDF(String path_outfile) {
     auto document = MakeObject<Document>();
-    // Add page
     auto page = document->get_Pages()->Add();
-
-    // Add text to new page
     auto textFragment = MakeObject<TextFragment>(u"Hello World!");
     page->get_Paragraphs()->Add(textFragment);
-
-    // Save updated PDF
-    String outputFileName = _dataDir + filename;
-
-    document->Save(outputFileName);
+    document->Save(path_outfile);
 }
 ```

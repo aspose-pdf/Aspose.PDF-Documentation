@@ -1,60 +1,89 @@
 ---
-title: Crop PDF Pages programmatically C++
+title: Crop PDF pages in C++
 linktitle: Crop Pages
 type: docs
-weight: 80
+weight: 40
 url: /cpp/crop-pages/
-description: You may get page properties, such as the width, height, bleed-, crop- and trimbox using Aspose.PDF for C++.
-lastmod: "2021-12-09"
+description: Change PDF page boxes or crop the first page to its first detected image placement using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Set PDF Page Boxes and Crop to Image Bounds in C++
+Abstract: Learn how to change PDF page boxes to a supplied rectangle with Aspose.PDF for C++. Another example crops the first page to the bounds of its first detected image placement.
 ---
 
-## Get Page Properties
+Change PDF page boxes or crop the first page to its first detected image placement using Aspose.PDF for C++.
 
-Each page in a PDF file has a number of properties, such as the width, height, bleed-, crop- and trimbox. Aspose.PDF allows you to access these properties.
+## Set page boxes to a rectangle
 
-- **Media box**: The media box is the largest page box. It corresponds to the page size (for example A4, A5, US Letter, etc.) selected when the document was printed to PostScript or PDF. In other words, the media box determines the physical size of the media on which the PDF document is displayed or printed.
-- **Bleed box**: If the document has bleed, the PDF will also have a bleed box. Bleed is the amount of color (or artwork) that extends beyond the edge of a page. It is used to make sure that when the document is printed and cut to size ("trimmed"), the ink will go all the way to the edge of the page. Even if the page is mistrimmed - cut slightly off the trim marks - no white edges will appear on the page.
-- **Trim box**: The trim box indicates the final size of a document after printing and trimming.
-- **Art box**: The art box is the box drawn around the actual contents of the pages in your documents. This page box is used when importing PDF documents in other applications.
-- **Crop box**: The crop box is the "page" size at which your PDF document is displayed in Adobe Acrobat. In normal view, only the contents of the crop box are displayed in Adobe Acrobat. For detailed descriptions of these properties, read the Adobe.Pdf specification, particularly 10.10.1 Page Boundaries.
-- **Page.Rect**: the intersection (commonly visible rectangle) of the MediaBox and DropBox. The picture below illustrates these properties.
-For further details, please visit [this page](http://www.enfocus.com/manuals/ReferenceGuide/PP/10/enUS/en-us/concept/c_aa1095731.html).
+The example leaves MediaBox unchanged. Page-box changes affect the visible or production regions and do not remove content outside the boxes.
 
-The snippet below show how to crop the page:
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create a [Rectangle](https://reference.aspose.com/pdf/cpp/aspose.pdf/rectangle/) using the supplied coordinates.
+1. Set CropBox, TrimBox, ArtBox, and BleedBox on the first [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void CropPagesPDF()
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of CropExamples.cropPage.
+void CropPage(System::String inputFile, System::String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("crop_page.pdf");
-    String outputFileName("crop_page_out.pdf");
+    auto document = MakeObject<Document>(inputFile);
 
-    // Open source document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-
-    Console::WriteLine(document->get_Pages()->idx_get(1)->get_CropBox());
-    Console::WriteLine(document->get_Pages()->idx_get(1)->get_TrimBox());
-    Console::WriteLine(document->get_Pages()->idx_get(1)->get_ArtBox());
-    Console::WriteLine(document->get_Pages()->idx_get(1)->get_BleedBox());
-    Console::WriteLine(document->get_Pages()->idx_get(1)->get_MediaBox());
-
-    // Create new Box Rectagle
-    auto newBox = MakeObject<Rectangle>(200, 220, 2170, 1520);
+    auto newBox = MakeObject<Rectangle>(200, 220, 2170, 1520, true);
     document->get_Pages()->idx_get(1)->set_CropBox(newBox);
     document->get_Pages()->idx_get(1)->set_TrimBox(newBox);
-    document->get_Pages()->idx_get(1)->set_ArtBox (newBox);
-    document->get_Pages()->idx_get(1)->set_BleedBox (newBox);
-
-    // Save updated document
-    document->Save(_dataDir + outputFileName);
+    document->get_Pages()->idx_get(1)->set_ArtBox(newBox);
+    document->get_Pages()->idx_get(1)->set_BleedBox(newBox);
+    document->Save(outputFile);
 }
 ```
 
-In this example we used a sample file [here](crop_page.pdf). Initially our page looks like shown on the Figure 1.
-![Figure 1. Cropped Page](crop_page.png)
+## Crop to the first image placement
 
-After the change, the page will look like Figure 2.
-![Figure 2. Cropped Page](crop_page2.png)
+This crops to the first image placement only; it does not calculate a bounding box for all text, images, or other content.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Create an [ImagePlacementAbsorber](https://reference.aspose.com/pdf/cpp/aspose.pdf/imageplacementabsorber/) and process page 1.
+1. If an image placement exists, assign its rectangle to the first [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) CropBox.
+1. Otherwise, print that no images were found.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/ImagePlacement.h>
+#include <Aspose.PDF.Cpp/ImagePlacementAbsorber.h>
+#include <Aspose.PDF.Cpp/ImagePlacementCollection.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of CropExamples.cropPageByContent.
+void CropPageByContent(System::String inputFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
+    auto absorber = MakeObject<ImagePlacementAbsorber>();
+    document->get_Pages()->idx_get(1)->Accept(absorber);
+    if (absorber->get_ImagePlacements()->get_Count() > 0) {
+        document->get_Pages()->idx_get(1)->set_CropBox(absorber->get_ImagePlacements()->idx_get(1)->get_Rectangle());
+    } else {
+        std::cout << "No images found on the first page" << std::endl;
+    }
+    document->Save(outputFile);
+}
+```

@@ -21,11 +21,9 @@ Utilisez `PdfFileStamp` lorsque vous avez besoin d'un contenu de pied de page r�
 ### Étapes
 
 1. Créez une instance `PdfFileStamp` et liez le PDF source.
-
-2. Créez le contenu du pied de page sous forme de `FormattedText` ou d'un flux d’image.
-3. Appelez la surcharge `addFooter` appropriée.
-
-4. Enregistrez le fichier mis à jour et fermez l’objet de façade.
+1. Créez le contenu du pied de page sous forme de `FormattedText` ou d'un flux d’image.
+1. Appelez la surcharge `addFooter` appropriée.
+1. Enregistrez le fichier mis à jour et fermez l’objet de façade.
 
 ### Exemples Java
 

@@ -18,12 +18,8 @@ La classe Java `PdfContentEditorExamples` illustre les principaux flux de travai
 Utilisez cette section pour apprendre à :
 
 - ajouter des annotations de texte, de ligne, de polygone, de film et d’annotation de tampon
-
 - ajouter ou supprimer des pièces jointes à un document
-
 - lier un PDF à partir d'un flux et enregistrer le résultat
 - ajouter ou supprimer des actions d'ouverture de document
-
 - remplacer le texte et les images
-
 - obtenir et modifier les préférences de la visionneuse

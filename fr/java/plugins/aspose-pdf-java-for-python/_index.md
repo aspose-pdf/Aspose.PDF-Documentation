@@ -37,7 +37,6 @@ Le projet Aspose.PDF pour Python montre comment différentes tâches peuvent êt
 Voici la configuration système requise pour utiliser Aspose.PDF Java pour Python :
 
 - JPype
-
 - Composant Aspose.PDF téléchargé.
 
 ### Plateformes prises en charge
@@ -45,5 +44,4 @@ Voici la configuration système requise pour utiliser Aspose.PDF Java pour Pytho
 Voici les plates-formes prises en charge :
 
 - Python 2.7.x.x
-
 - Python 3.x.x.x

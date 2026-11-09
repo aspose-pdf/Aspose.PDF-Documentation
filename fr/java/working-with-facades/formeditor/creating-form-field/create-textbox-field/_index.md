@@ -15,10 +15,8 @@ Utilisez `FormEditorExamples.createTextBoxField(...)` pour ajouter des champs de
 ## Créer des champs de zone de texte
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Ajoutez chaque champ de texte avec `FieldType.Text`, le nom du champ, la valeur par défaut, le numéro de page et le rectangle.
-
-3. Enregistrez le document mis à jour.
+1. Ajoutez chaque champ de texte avec `FieldType.Text`, le nom du champ, la valeur par défaut, le numéro de page et le rectangle.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void createTextBoxField(Path inputFile, Path outputFile) {

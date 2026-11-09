@@ -13,9 +13,7 @@ Abstract: Cette section couvre les exemples d'importation de formulaires Java im
 La classe Java `FormExamples` inclut des flux de travail d'importation directe pour ces formats :
 
 - XML avec `form.importXml(...)`
-
 - FDF avec `form.importFdf(...)`
-
 - XFDF avec `form.importXfdf(...)`
 
 Utilisez les sous-pages de cette section pour les exemples concrets. L'ensemble d'exemples Java actuel dans ce référentiel n'inclut pas d'exemple de façade `Form` dédié pour l'importation JSON ou le remplacement XFA, ces pages sont donc conservées en tant que notes sur les limites des exemples.

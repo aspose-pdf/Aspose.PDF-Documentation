@@ -13,12 +13,9 @@ Abstract: Cet article montre comment lier un PDF, ouvrir une pièce jointe sous 
 ## Ajouter une pièce jointe à un document
 
 1. Liez le PDF source à la façade `PdfContentEditor`.
-
-2. Ouvrez le fichier joint en tant que flux d'entrée.
-
-3. Appelez `addDocumentAttachment(...)` avec le flux, le nom du fichier et la description.
-
-4. Enregistrez le document PDF mis à jour.
+1. Ouvrez le fichier joint en tant que flux d'entrée.
+1. Appelez `addDocumentAttachment(...)` avec le flux, le nom du fichier et la description.
+1. Enregistrez le document PDF mis à jour.
 
 ```java
 public static void addAttachment(Path inputFile, Path attachmentFile, Path outputFile) throws Exception {

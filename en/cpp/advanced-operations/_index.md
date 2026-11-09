@@ -1,29 +1,24 @@
 ---
-title: Advanced operations for C++
+title: Advanced operations
 linktitle: Advanced operations
 type: docs
-weight: 70
+weight: 90
 url: /cpp/advanced-operations/
-description: Aspose.PDF for C++ can perform not only simple and easy tasks but also cope with more complex functions. For advanced users and developers, the Advanced section will detail these features for you.
-lastmod: "2022-01-25"
+description: Explore document management, PDF comparison, accessibility, tagged PDFs, and invoice XML attachments in C++.
+lastmod: "2026-10-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Manage PDF Documents, Pages, Accessibility, and Invoices in C++
+Abstract: Explore advanced PDF processing with Aspose.PDF for C++, including document and page management, comparison, and tagged content. The guides also cover accessibility validation and embedding invoice XML.
 ---
 
-**Advanced Operations** is a section about how to deals with existing PDF files programatically, be they documents created with Aspose.PDF as discussed in [Basic Operations](/pdf/cpp/basic-operations), or PDFs created with Adobe Acrobat, Google Docs, Microsoft Office, Open Office or any other PDF producer.
+This section covers PDF processing features beyond basic document creation, opening, and saving. Use the following guides to manage documents, compare PDF files, work with accessibility and logical structure, and attach invoice XML in C++.
 
-You'll learn different ways to:
-
-- [Working with Documents](/pdf/cpp/working-with-documents/) - compress, split, and merge documents and make other operations with the whole document
-- [Working with Pages](/pdf/cpp/working-with-pages/) - add, move or remove, crop pages, add watermarks, stamps
-- [Working with Text](/pdf/cpp/working-with-text/) - add, format, search and replace text in PDF
-- [Working with Images](/pdf/cpp/working-with-images/) - insert, remove, extract image in document
-- [Working with Tables](/pdf/cpp/working-with-tables/) - insert, decorate table in PDF, extract tabular data
-- [Working with Forms](/pdf/cpp/working-with-forms/) - deal with interact PDF documents, add formfields, extract data
-- [Working with Graphs](/pdf/cpp/graphs/) - manipulate with shapes on the page
-- [Annotations](/pdf/cpp/annotations/) - Annotations allow users to add custom content on PDF pages. You can add, delete and modify the annotation from the PDF documents.
-- [Artifacts](/pdf/cpp/artifacts/) - deal with watermarks and other special objects in PDF
-- [Metadata in PDFs](/pdf/cpp/pdf-file-metadata/) - get or set meta data in documents, dealing with XMP data.
-- [Securing and Signing](/pdf/cpp/securing-and-signing/) - protect and sign your PDF document programmatically
-- [Operators](/pdf/cpp/operators/) - make low-level operations in PDF
+- [Working with Documents](/pdf/cpp/working-with-documents/) — create, format, validate, merge, optimize, and split documents and manage PDF layers.
+- [Working with Pages](/pdf/cpp/working-with-pages/) — add, delete, extract, move, resize, crop, rotate, and stamp pages and add headers and footers.
+- [Working with Forms](/pdf/cpp/working-with-forms/) — create and fill fields, exchange form data, configure submission actions, and convert XFA forms.
+- [Accessibility and tagged PDF](/pdf/cpp/accessibility-tagged-pdf/) — create and inspect structure elements, configure tagged tables, and validate PDF/UA-1 documents.
+- [Compare PDF documents](/pdf/cpp/compare-pdf-documents/) — compare pages or entire files and export marked PDF reports or PNG difference images.
+- [Working with ZUGFeRD](/pdf/cpp/working-with-zugferd/) — embed invoice XML in a PDF and convert the document to PDF/A-3A.

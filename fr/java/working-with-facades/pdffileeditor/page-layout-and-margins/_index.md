@@ -18,7 +18,5 @@ Utilisez ces flux de travail PdfFileEditor lorsqu'un PDF nécessite un ajustemen
 Cette section explique comment :
 
 - ajouter des marges aux pages sélectionnées
-
 - redimensionner les zones de contenu sur des pages spécifiques
-
 - diviser une page à une position verticale définie avec un saut de page

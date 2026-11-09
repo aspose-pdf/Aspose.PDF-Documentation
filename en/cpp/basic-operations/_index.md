@@ -2,17 +2,24 @@
 title: Basic operations with PDF documents
 linktitle: Basic operations
 type: docs
-weight: 40
+weight: 60
 url: /cpp/basic-operations/
-lastmod: "2021-11-01"
-description: Basic operations section describes the possibilities of opening and saving PDF documents using the Aspose.PDF library for C++.
+description: Learn how to create, open, save, merge, split, and protect PDF documents using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create, Open, Save, and Protect PDF Documents in C++
+Abstract: Explore basic PDF workflows with Aspose.PDF for C++, from creating documents to opening and saving existing files. The guides also demonstrate merging, splitting, encryption, and password management.
 ---
+Aspose.PDF for C++ provides the basic operations needed to create PDF files and process existing documents.
 
-**Basic operations** section describes the first and simplest operation with PDF documents in Aspose.PDF for C++:
+- [Create PDF document](/pdf/cpp/create-document/) — create a document, add a page, and insert text.
+- [Open PDF document](/pdf/cpp/open-pdf-document/) — load PDFs from files, streams, memory, or with a password.
+- [Save PDF document](/pdf/cpp/save-pdf-document/) — save changes to a file or stream and convert to PDF/A.
+- [Merge PDF files](/pdf/cpp/merge-pdf/) — append the pages of one document to another.
+- [Split PDF files](/pdf/cpp/split-pdf/) — export each page to a separate PDF.
+- [Encrypt and decrypt PDF files](/pdf/cpp/protect-pdf-file/) — set permissions and manage passwords.
 
-* [Create PDF Document](/pdf/cpp/create-document/) - describes how to create PDF file using C++.
-* [Open PDF document](/pdf/cpp/open-pdf-document/) - describes various ways how to open a PDF document in C++ console application.
-* [Save PDF document](/pdf/cpp/save-pdf-document/) - describes various ways how to save a PDF document to file, stream or save as PDF/A (or PDF/X) document.
+

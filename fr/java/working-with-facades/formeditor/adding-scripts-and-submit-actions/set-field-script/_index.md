@@ -13,12 +13,9 @@ Abstract: Cet article montre comment lier un PDF existant, ajouter un script ini
 ## Définir un script de champ
 
 1. Liez le PDF source à la façade `FormEditor`.
-
-2. Ajoutez une action JavaScript initiale au champ.
-
-3. Remplacez-la par le texte du script mis à jour.
-
-4. Enregistrez le document mis à jour.
+1. Ajoutez une action JavaScript initiale au champ.
+1. Remplacez-la par le texte du script mis à jour.
+1. Enregistrez le document mis à jour.
 
 ```java
 public static void setFieldScript(Path inputFile, Path outputFile) {

@@ -14,9 +14,7 @@ lastmod: "2026-09-21"
 Jython est une implémentation Java de Python qui combine puissance expressive et clarté. Jython est disponible gratuitement pour une utilisation commerciale et non commerciale et est distribué avec le code source. Jython est complémentaire de Java et est particulièrement adapté aux tâches suivantes :
 
 - **Scripts intégrés** : les programmeurs Java peuvent ajouter les bibliothèques Jython à leur système pour permettre aux utilisateurs finaux d'écrire des scripts simples ou compliqués qui ajoutent des fonctionnalités à l'application.
-
 - **Expérimentation interactive** - Jython fournit un interpréteur interactif qui peut être utilisé pour interagir avec des packages Java ou avec des applications Java en cours d'exécution. Cela permet aux programmeurs d'expérimenter et de déboguer n'importe quel système Java utilisant Jython.
-
 - **Développement rapide d'applications** - Les programmes Python sont généralement 2 à 10 fois plus courts que le programme Java équivalent. Cela se traduit directement par une productivité accrue des programmeurs. L'interaction transparente entre Python et Java permet aux développeurs de mélanger librement les deux langages à la fois pendant le développement et lors de la livraison des produits.
 
 ### Aspose.PDF for Java
@@ -38,7 +36,6 @@ Aspose.PDF Java pour Jython est un projet qui démontre/fournit les exemples d'u
 Voici la configuration système requise pour utiliser Aspose.PDF Java pour Jython :
 
 - Java 1.5 ou supérieur installé
-
 - Composant Aspose.PDF téléchargé
 - Python 2.7.0
 
@@ -47,7 +44,6 @@ Voici la configuration système requise pour utiliser Aspose.PDF Java pour Jytho
 Voici les plates-formes prises en charge :
 
 - Aspose.PDF 15.4 et supérieur.
-
 - EDI Java (Eclipse, NetBeans...)
 
 ## Téléchargement, installation et utilisation
@@ -65,7 +61,6 @@ Téléchargez le composant Aspose.PDF for Java :
 ### Installation
 
 - Placez le fichier jar Aspose.PDF for Java téléchargé dans le répertoire "lib".
-
 - Remplacez "your-lib" par le nom du fichier jar téléchargé dans le fichier _*init*_.py.
 
 ### Utilisation

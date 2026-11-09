@@ -14,14 +14,9 @@ sitemap:
 
 - [Aspose.PDF Java pour Struts 1.3](/pdf/java/aspose-pdf-java-for-struts-1-3/)
 - [Aspose.PDF Java pour Ruby](/pdf/java/aspose-pdf-java-for-ruby/)
-
 - [Aspose.PDF Java pour IntelliJ IDEA - Maven](/pdf/java/aspose-pdf-java-for-intellij-idea-maven/)
-
 - [Aspose.PDF Java pour Python](/pdf/java/aspose-pdf-java-for-python/)
-
 - [Aspose.PDF Java pour PHP](/pdf/java/aspose-pdf-java-for-php/)
-
 - [Aspose.PDF Java pour Jython](/pdf/java/aspose-pdf-java-for-jython/)
 - [Aspose.PDF Java pour NetBeans - Maven](/pdf/java/aspose-pdf-java-for-netbeans-maven/)
-
 - [Aspose.PDF Java utilisant Maven pour Eclipse](/pdf/java/aspose-pdf-java-using-maven-for-eclipse/)

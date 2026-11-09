@@ -1,43 +1,47 @@
 ---
-title: Fill AcroForm
+title: Fill PDF form fields in C++
 linktitle: Fill AcroForm
 type: docs
 weight: 20
 url: /cpp/fill-form/
-description: This section explains how to fill form field in a PDF document with Aspose.PDF for C++.
-lastmod: "2021-12-01"
+description: Fill selected named fields in an existing PDF form using Aspose.PDF for C++.
+lastmod: "2026-10-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Populate Named AcroForm Fields with C++
+Abstract: Learn how to match existing field names and assign values with the Form facade in Aspose.PDF for C++. The example fills four selected fields and saves the updated PDF.
 ---
 
-PDF documents are the best, and really the preferred file type, for creating Forms.
+## Fill selected named fields
 
-This topic explains how to fill PDF forms using Aspose.PDF for C++.
+Only matching field names are filled. The sample does not inspect the Boolean result of FillField().
 
-Aspose.PDF for C++ allows you to fill a form field, get the field from the Document object's Form collection.
-
-Let's look at the following example how to resolve this task:
+1. Create a [Aspose::Pdf::Facades::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) facade for the input PDF.
+1. Prepare the supplied names and values for First Name, Last Name, City, and Country.
+1. Iterate through FieldNames and match the four target names.
+1. Call [FillField()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) on [Aspose::Pdf::Facades::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) for matching fields.
+1. Save the facade to outputFile and close it.
 
 ```cpp
+#include <Aspose.PDF.Cpp/Facades/Form.h>
+#include <system/io/file.h>
+#include <system/io/path.h>
+
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FillAcroform()
+void FormExamples::FillForm(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + u"FillFormField.pdf");
-
-    // Get a field
-    auto textBoxField = System::DynamicCast<Aspose::Pdf::Forms::TextBoxField>(document->get_Form()->idx_get(u"textbox1"));
-
-    // Modify field value
-    textBoxField->set_Value(u"Value to be filled in the field");
-
-    // Save updated document
-    document->Save(_dataDir + u"FillFormField_out.pdf");
-
+    auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
+    const String names[] = {u"First Name", u"Last Name", u"City", u"Country"};
+    const String values[] = {u"Alexander_New", u"Greenfield_New", u"Yellowtown_New", u"Redland_New"};
+    for (const auto &fieldName : form->get_FieldNames())
+        for (int i = 0; i < 4; ++i)
+            if (fieldName == names[i])
+                form->FillField(fieldName, values[i]);
+    form->Save(outputFile);
+    form->Close();
 }
 ```

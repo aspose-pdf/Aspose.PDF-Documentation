@@ -13,9 +13,7 @@ Abstract: Cette section couvre les exemples d'exportation de formulaires Java im
 La classe Java `FormExamples` inclut des flux de travail d'exportation directe pour ces formats :
 
 - XML avec `form.exportXml(...)`
-
 - FDF avec `form.exportFdf(...)`
-
 - XFDF avec `form.exportXfdf(...)`
 
 Utilisez les sous-pages de cette section pour les exemples concrets. L'ensemble d'exemples Java actuel dans ce référentiel n'inclut pas d'exemple de façade `Form` dédié pour l'exportation JSON ou l'extraction XFA, de sorte que ces pages sont conservées sous forme de notes sur les limites des exemples plutôt que d’exemples de code créés pour ces opérations.

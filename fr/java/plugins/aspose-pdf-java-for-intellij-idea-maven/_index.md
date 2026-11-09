@@ -22,7 +22,6 @@ Aspose.PDF for Java est un composant de création de documents PDF qui permet à
 ### Aspose.PDF Java pour IntelliJ IDEA - Maven
 
 - Aspose.PDF Java pour IntelliJ IDEA (Maven) est un plugin IntelliJ IDEA qui vous permet de créer des projets Maven (c'est-à-dire que le projet créé contient Aspose.PDF pour la dépendance Maven de l'API Java) et de télécharger des exemples de code source de l'API pour utiliser l’API Aspose.PDF for Java.
-
 - Ce plugin vous aide à travailler avec l'API Aspose.PDF for Java dans IntelliJ IDEA.
 
 ![todo:image_alt_text](https://i.imgur.com/KWKGljg.png)
@@ -34,17 +33,13 @@ Le plugin contient deux assistants :
 Assistant 1 : Projet Aspose.PDF Maven
 
 - L'assistant de projet Aspose Maven du plugin permet aux développeurs de créer un projet Maven utilisant l’API Aspose.PDF for Java.
-
 - La référence de la dépendance Maven de l'API Java Aspose.PDF est automatiquement extraite de [Aspose Cloud Maven Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo) et est ajoutée dans le pom.xml.
-
 - Le projet créé contiendra toujours la dernière version disponible de la dépendance Maven d’Aspose.PDF for Java.
-
 - Les étapes de l'assistant présentent également l'option de téléchargement [Exemples de code source pour l'utilisation de l’API Aspose.PDF for Java](https://github.com/aspose-pdf/Aspose.PDF-for-Java)
 
 Assistant 2 : Exemples Aspose.PDF
 
 - L'assistant d'exemples Aspose.PDF vous permet de créer/copier des exemples de code source téléchargés de l'API Aspose.PDF for Java dans votre projet. Tous les exemples de la catégorie sélectionnée seront copiés dans le dossier du package "com.aspose.pdf.examples" du projet avec les ressources nécessaires dans le dossier "src/main/resources" nécessaires pour exécuter les exemples.
-
 - Les exemples de code source de l'API Aspose.PDF for Java sont destinés à démontrer les différentes utilisations de l'API.
 
 ## Configuration système requise et plates-formes prises en charge
@@ -53,13 +48,9 @@ Assistant 2 : Exemples Aspose.PDF
 
 - Microsoft Windows 8/7/Vista/2003/XP (y compris 64 bits)  / Linux GNOME ou ordinateur de bureau KDE / Mac OS X 10.5 ou version ultérieure
 - 1 Go de RAM minimum, 2 Go de RAM recommandés
-
 - 300 Mo d'espace disque dur + au moins 1 Go pour les caches
-
 - Résolution d'écran minimale de 1024x768
-
 - JDK 1.8 ou supérieur recommandé
-
 - Connexion Internet (2 Mo ou plus recommandé)
 
 ### Plateformes prises en charge
@@ -67,9 +58,7 @@ Assistant 2 : Exemples Aspose.PDF
 Le plugin prend en charge les versions IntelliJ IDEA suivantes :
 
 - 13.0.1 (Communauté / Édition Ultime)
-
 - 13.1.2  (CE / UE)
-
 - 14.0.2 (CE/UE)
 - 14.1.5 (CE/UE)
 
@@ -82,9 +71,7 @@ Vous devrez d'abord installer IntelliJ IDEA CE/UE avant de télécharger le plug
 Pour télécharger IntelliJ IDEA
 
 1. Accédez à <https://www.jetbrains.com/idea/download/>
-
 1. Sélectionnez votre système d’exploitation.
-
 1. Cliquez sur téléchargement UE ou CE.
 
 ### Téléchargement du plugin Aspose.PDF Java pour IntelliJ IDEA (Maven)
@@ -93,16 +80,11 @@ Pour télécharger IntelliJ IDEA
   et versions ultérieures peuvent être installées à l'aide de l'option IDE :
 
   - Allez dans Fichier > Paramètres... > Plugins
-
   - Sélectionnez "Installer le plugin à partir du disque"
-
 - Ou il peut être installé directement (sans téléchargement manuel depuis l'URL d'hébergement du plugin JetBrains) à l'aide des options de l'IDE :
-
   - Allez dans Fichier > Paramètres... > Plugins
   - Sélectionnez "Parcourir les référentiels"
-
   - Dans le champ de recherche, tapez : "Aspose"
-
   - Sélectionnez le plugin « Aspose.PDF Java for IntelliJ IDEA Maven » à installer.
 
 ## Installation
@@ -122,9 +104,7 @@ Veuillez consulter [la vidéo](https://www.youtube.com/watch?v=KoGdZhoWzcI&featu
 ### Assistance
 
 - Si vous souhaitez voir les problèmes connus/signalés (par les utilisateurs ou l'équipe Q.A) dans le plugin.
-
 - Ou vous souhaitez signaler tout problème que vous avez trouvé dans le plugin
-
 - Vous avez des suggestions d'amélioration ou souhaitez faire une demande de fonctionnalité
 
 Veuillez utiliser l'un des outils de suivi des problèmes du projet suivants :

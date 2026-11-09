@@ -1,274 +1,375 @@
 ---
-title: Create AcroForms using using C++
-linktitle: Create AcroForms
+title: Create PDF form fields in C++
+linktitle: Create AcroForm
 type: docs
 weight: 10
 url: /cpp/create-form/
-description: This section explains how to create AcroForms from scratch in your PDF documents with Aspose.PDF for C++.
-lastmod: "2021-12-01"
+description: Create text, checkbox, choice, barcode, and unsigned signature fields in PDF documents using Aspose.PDF for C++.
+lastmod: "2026-10-15"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Build Fillable PDF Fields and Configure Their Appearance in C++
+Abstract: Learn how to construct AcroForm fields with Aspose.PDF for C++. The examples add text boxes, checkboxes, lists, radio buttons, a barcode, and an unsigned signature field.
 ---
 
-## Add Form Field in PDF Document
+## Add a text box
 
-The [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class provides a collection named Form which helps manage form fields in a PDF document.
+The source constructs the field using the appended page but calls Form::Add(field, 1). Review the intended page association when adapting this example.
 
-To add a form field:
-
-1. Create the form field which you want to add.
-2. Call the [Form](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf.forms) collection's add method.
-
-This example shows how to add a [TextBoxField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.text_box_field). You can add any form field using the same approach:
-
-1. First, create a field object and set its properties.
-2. Then, add the field to the Form collection.
-
-### Adding TextBoxField
-
-A text field is a form element which allows a recipient to enter text into your form. This would be used any time you want to allow the user the freedom to type what they want.
-
-The following code snippets shows how to add a TextBoxField to a PDF document.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Append a page and create a [TextBoxField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/textboxfield/) using a [Rectangle](https://reference.aspose.com/pdf/cpp/aspose.pdf/rectangle/).
+1. Set PartialName, Value, and [DefaultAppearance](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/defaultappearance/).
+1. Configure a dashed [Border](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/border/) and border and background colors.
+1. Add the field through [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) using page number 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/TextBoxField.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/DefaultAppearance.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Border.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/BorderStyle.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Dash.h>
+#include <Aspose.PDF.Cpp/Color.h>
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Characteristics.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Annotations;
+using namespace Aspose::Pdf::Forms;
+
+void FormExamples::AddTextBoxField(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    auto page = document->get_Pages()->Add();
+
+    auto rectangle = MakeObject<Aspose::Pdf::Rectangle>(10, 600, 110, 620, true);
+    auto textBoxField = MakeObject<TextBoxField>(page, rectangle);
+    textBoxField->set_PartialName(String(u"textbox1"));
+    textBoxField->set_Value(String(u"Text Box"));
+    textBoxField->set_DefaultAppearance(
+        MakeObject<DefaultAppearance>(String(u"Arial"), 10, Color::get_DarkBlue()->ToRgb()));
+
+    auto border = MakeObject<Border>(textBoxField);
+    border->set_Width(1);
+    border->set_Style(BorderStyle::Dashed);
+    border->set_Dash(MakeObject<Dash>(3, 3));
+    textBoxField->set_Border(border);
+
+    textBoxField->get_Characteristics()->set_Border(Color::get_Red()->ToRgb());
+    textBoxField->get_Characteristics()->set_Background(Color::get_Yellow()->ToRgb());
+
+    document->get_Form()->Add(textBoxField, 1);
+    document->Save(outputFile);
+}
+```
+
+## Add a text field with multiple widgets
+
+The inputFile parameter is unused. Make Arial, Helvetica, and Calibri available for the supplied appearance settings.
+
+1. Create a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Create three rectangles and three [DefaultAppearance](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/defaultappearance/) objects.
+1. Construct a [TextBoxField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/textboxfield/) from the rectangles and set its name and value.
+1. Assign a different default appearance to each widget.
+1. Set the shared border and colors, then add the field to [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) on page 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/TextBoxField.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/DefaultAppearance.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Border.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/BorderStyle.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Dash.h>
+#include <Aspose.PDF.Cpp/Color.h>
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Characteristics.h>
+#include <Aspose.PDF.Cpp/Text/FontRepository.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Annotations;
+using namespace Aspose::Pdf::Forms;
+using namespace Aspose::Pdf::Text;
+
+void FormExamples::AddTextBoxFieldNt(String inputFile, String outputFile)
+{
+
+        auto document = MakeObject<Document>();
+        auto page = document->get_Pages()->Add();
+
+        auto rects =
+            MakeArray<SharedPtr<Rectangle>>({MakeObject<Aspose::Pdf::Rectangle>(10, 600, 110, 620, true),
+                                             MakeObject<Aspose::Pdf::Rectangle>(10, 630, 110, 650, true),
+                                             MakeObject<Aspose::Pdf::Rectangle>(10, 660, 110, 680, true)});
+
+        auto defaultAppearances = MakeArray<SharedPtr<DefaultAppearance>>(
+            {MakeObject<DefaultAppearance>(String(u"Arial"), 10, Color::get_DarkBlue()->ToRgb()),
+             MakeObject<DefaultAppearance>(String(u"Helvetica"), 12, Color::get_DarkGreen()->ToRgb()),
+             MakeObject<DefaultAppearance>(FontRepository::FindFont(String(u"Calibri")), 14,
+                                           Color::get_DarkMagenta()->ToRgb())});
+
+        auto textBoxField = MakeObject<TextBoxField>(page, rects);
+        textBoxField->set_PartialName(String(u"textbox1"));
+        textBoxField->set_Value(String(u"Some text"));
+
+        int index = 0;
+        for (auto& widget : textBoxField)
+        {
+            widget->set_DefaultAppearance(defaultAppearances[index]);
+            index++;
+        }
+
+        auto border = MakeObject<Border>(textBoxField);
+        border->set_Width(1);
+        border->set_Style(BorderStyle::Dashed);
+        border->set_Dash(MakeObject<Dash>(3, 3));
+        textBoxField->set_Border(border);
+
+        textBoxField->get_Characteristics()->set_Border(Color::get_Red()->ToRgb());
+        textBoxField->get_Characteristics()->set_Background(Color::get_Yellow()->ToRgb());
+
+        document->get_Form()->Add(textBoxField, 1);
+        document->Save(outputFile);
+
+}
+```
+
+## Add a checkbox
+
+This creates a new PDF and does not use inputFile.
+
+1. Create a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Construct a [CheckboxField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/checkboxfield/) using the supplied rectangle.
+1. Set its background color and circular box style.
+1. Add the field to [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) on page 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+#include <Aspose.PDF.Cpp/Color.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Characteristics.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/BoxStyle.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/CheckboxField.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
-using namespace Aspose::Pdf::Annotations;
-void AddingTextBoxField()
+using namespace Aspose::Pdf::Text;
+
+void FormExamples::AddCheckboxFieldToPdf(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + u"TextField.pdf");
-
-    // Create a field
-    auto textBoxField = MakeObject<TextBoxField>(document->get_Pages()->idx_get(1), MakeObject<Aspose::Pdf::Rectangle>(100, 200, 300, 300));
-    textBoxField->set_PartialName (u"textbox1");
-    textBoxField->set_Value (u"Text Box");
-
-    // TextBoxField.Border = new Border(
-    auto border = MakeObject<Aspose::Pdf::Annotations::Border>(textBoxField);
-    border->set_Width(5);
-    border->set_Dash (MakeObject<Aspose::Pdf::Annotations::Dash>(1, 1));
-    textBoxField->set_Border(border);
-
-    textBoxField->set_Color(Aspose::Pdf::Color::get_Green());
-
-    // Add field to the document
-    document->get_Form()->Add(textBoxField, 1);
-
-    // Save modified PDF
-    document->Save(_dataDir + u"TextBox_out.pdf");
-}
-```
-
-## Adding RadioButtonField
-
-A RadioButton is most commonly used for multiple choice questions, in the scenario where only one answer can be selected.
-
-The following code snippets show how to add [RadioButtonField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field) in a PDF document.
-
-```cpp
-void AddingRadioButtonField()
-{
-    String _dataDir("C:\\Samples\\");
-    // Open document
-    auto document = MakeObject<Document>();
-
-    // Add a page to PDF file
-    document->get_Pages()->Add();
-
-    // Instatiate RadioButtonField object with page number as argument
-
-    auto radio = MakeObject<RadioButtonField>(document->get_Pages()->idx_get(1));
-
-    // Add first radio button option and also specify its origin using Rectangle object
-    radio->AddOption(u"Option 1", MakeObject<Rectangle>(0, 0, 20, 20));
-    // Add second radio button option
-    radio->AddOption(u"Option 2", MakeObject<Rectangle>(20, 20, 40, 40));
-    // Add radio button to form object of Document object
-    document->get_Form()->Add(radio,1);
-
-    // Save the PDF file
-    document->Save(_dataDir + u"RadioButton_out.pdf");
-}
-```
-
-The following code snippet shows the steps to add [RadioButtonField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field) with three options and place them inside Table cells.
-
-```cpp
-void AddRadioButtonFieldInsideTableCells()
-{
-    String _dataDir("C:\\Samples\\");
-
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
 
-    auto table = MakeObject<Aspose::Pdf::Table>();
+    auto checkbox =
+        MakeObject<CheckboxField>(page, MakeObject<Aspose::Pdf::Rectangle>(50, 620, 100, 650, true));
+    checkbox->get_Characteristics()->set_Background(Color::get_Aqua()->ToRgb());
+    checkbox->set_Style(BoxStyle::Circle);
 
-    table->set_ColumnWidths(u"120 120 120");
-
-    page->get_Paragraphs()->Add(table);
-
-    auto r1 = table->get_Rows()->Add();
-    auto c1 = r1->get_Cells()->Add();
-    auto c2 = r1->get_Cells()->Add();
-    auto c3 = r1->get_Cells()->Add();
-
-    auto rf = MakeObject<RadioButtonField>(page);
-    rf->set_PartialName(u"radio");
-    document->get_Form()->Add(rf, 1);
-
-    auto opt1 = MakeObject<RadioButtonOptionField>();
-    auto opt2 = MakeObject<RadioButtonOptionField>();
-    auto opt3 = MakeObject<RadioButtonOptionField>();
-
-    opt1->set_OptionName(u"Item1");
-    opt2->set_OptionName(u"Item2");
-    opt3->set_OptionName(u"Item3");
-
-    opt1->set_Width (15);
-    opt1->set_Height(15);
-    opt2->set_Width (15);
-    opt2->set_Height(15);
-    opt3->set_Width (15);
-    opt3->set_Height(15);
-
-    rf->Add(opt1);
-    rf->Add(opt2);
-    rf->Add(opt3);
-
-    opt1->set_Border(MakeObject<Border>(opt1));
-    opt1->get_Border()->set_Width(1);
-    opt1->get_Border()->set_Style(BorderStyle::Solid);
-    opt1->get_Characteristics()->set_Border(System::Drawing::Color::get_Black());
-    opt1->get_DefaultAppearance()->set_TextColor(System::Drawing::Color::get_Red());
-    opt1->set_Caption(MakeObject<Aspose::Pdf::Text::TextFragment>(u"Item1"));
-    opt2->set_Border(MakeObject<Border>(opt2));
-    opt2->get_Border()->set_Width(1);
-    opt2->get_Border()->set_Style(BorderStyle::Solid);
-    opt2->get_Characteristics()->set_Border(System::Drawing::Color::get_Black());
-    opt2->get_DefaultAppearance()->set_TextColor(System::Drawing::Color::get_Red());
-    opt2->set_Caption(MakeObject<Aspose::Pdf::Text::TextFragment>(u"Item2"));
-    opt3->set_Border(MakeObject<Border>(opt3));
-    opt3->get_Border()->set_Width(1);
-    opt3->get_Border()->set_Style(BorderStyle::Solid);
-    opt3->get_Characteristics()->set_Border(System::Drawing::Color::get_Black());
-    opt3->get_DefaultAppearance()->set_TextColor(System::Drawing::Color::get_Red());
-    opt3->set_Caption(MakeObject<Aspose::Pdf::Text::TextFragment>(u"Item3"));
-    c1->get_Paragraphs()->Add(opt1);
-    c2->get_Paragraphs()->Add(opt2);
-    c3->get_Paragraphs()->Add(opt3);
-
-    // Save the PDF file
-    document->Save(_dataDir + u"RadioButtonWithOptions_out.pdf");
+    document->get_Form()->Add(checkbox, 1);
+    document->Save(outputFile);
 }
 ```
 
-## Adding Caption to RadioButtonField
+## Add a combo box
 
-Following code snippet shows how to add caption which will be associated with [RadioButtonField](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.radio_button_field):
+The inputFile parameter is unused.
+
+1. Create a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Create a [ComboBoxField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/comboboxfield/) at the supplied rectangle.
+1. Add Red, Yellow, Green, and Blue options.
+1. Set Selected to 3 and add the field to [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) on page 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void AddingCaptionToRadioButtonField()
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/ComboBoxField.h>
+#include <Aspose.PDF.Cpp/Document.h>
+
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Forms;
+
+void FormExamples::AddComboBox(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
     auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
 
-    // Load source PDF form
-    auto form1 =
-        MakeObject<Aspose::Pdf::Facades::Form>(_dataDir + u"RadioButtonField.pdf");
+    auto combo =
+        MakeObject<ComboBoxField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 640, 150, 656, true));
+    combo->AddOption(String(u"Red"));
+    combo->AddOption(String(u"Yellow"));
+    combo->AddOption(String(u"Green"));
+    combo->AddOption(String(u"Blue"));
+    combo->set_Selected(3);
 
-    auto PDF_Template_PDF_HTML = MakeObject<Document>(_dataDir + u"RadioButtonField.pdf");
-
-    for(auto item : form1->get_FieldNames())
-    {
-        System::Console::WriteLine(item);
-        auto radioOptions = form1->GetButtonOptionValues(item);
-        if (item.Contains(u"radio1"))
-        {
-            auto field0 = System::DynamicCast<RadioButtonField>(PDF_Template_PDF_HTML->get_Form()->idx_get(item));
-            auto fieldoption = MakeObject<RadioButtonOptionField>();
-            fieldoption->set_OptionName (u"Yes");
-            fieldoption->set_PartialName (u"Yesname");
-
-            auto updatedFragment = MakeObject<Aspose::Pdf::Text::TextFragment>(u"test123");
-            updatedFragment->get_TextState()->set_Font (Aspose::Pdf::Text::FontRepository::FindFont(u"Arial"));
-            updatedFragment->get_TextState()->set_FontSize(10);
-            updatedFragment->get_TextState()->set_LineSpacing(6.32f);
-
-            // Create TextParagraph object
-            auto par = MakeObject<Aspose::Pdf::Text::TextParagraph>();
-
-            // Set paragraph position
-            par->set_Position(MakeObject<Aspose::Pdf::Text::Position>(field0->get_Rect()->get_LLX(), field0->get_Rect()->get_LLY() + updatedFragment->get_TextState()->get_FontSize()));
-            // Specify word wraping mode
-        par->get_FormattingOptions()->set_WrapMode(Aspose::Pdf::Text::TextFormattingOptions::WordWrapMode::ByWords);
-
-            // Add new TextFragment to paragraph
-            par->AppendLine(updatedFragment);
-
-            // Add the TextParagraph using TextBuilder
-            auto textBuilder = MakeObject<Aspose::Pdf::Text::TextBuilder>(PDF_Template_PDF_HTML->get_Pages()->idx_get(1));
-            textBuilder->AppendParagraph(par);
-
-            field0->DeleteOption(u"item1");
-        }
-    }
-    PDF_Template_PDF_HTML->Save(_dataDir + u"RadioButtonField_out.pdf");
+    document->get_Form()->Add(combo, 1);
+    document->Save(outputFile);
 }
 ```
 
-## Adding ComboBox field
+## Add a list box
 
-A Combo Box is a form field which will add a dropdown menu to your document.
+The inputFile parameter is unused.
 
-The following code snippets show how to add [ComboBox](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.forms.combo_box_field) field in a PDF document.
+1. Create a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Create a [ListBoxField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/listboxfield/) and name it list.
+1. Add Red, Green, and Blue options.
+1. Add the field to [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) on page 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void AddingComboBoxField()
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/ListBoxField.h>
+#include <Aspose.PDF.Cpp/Document.h>
+
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Forms;
+
+void FormExamples::AddListBoxFieldToPdf(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    // Create Document object
+
+        auto document = MakeObject<Document>();
+        auto page = document->get_Pages()->Add();
+
+        auto listBox =
+            MakeObject<ListBoxField>(page, MakeObject<Aspose::Pdf::Rectangle>(50, 650, 100, 700, true));
+        listBox->set_PartialName(String(u"list"));
+        listBox->AddOption(String(u"Red"));
+        listBox->AddOption(String(u"Green"));
+        listBox->AddOption(String(u"Blue"));
+
+        document->get_Form()->Add(listBox, 1);
+        document->Save(outputFile);
+
+}
+```
+
+## Add radio-button options
+
+The inputFile parameter is unused.
+
+1. Create a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Create a [RadioButtonField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/radiobuttonfield/) for the page.
+1. Add two options with separate rectangles.
+1. Add the field to [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) on page 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/RadioButtonField.h>
+#include <Aspose.PDF.Cpp/Document.h>
+
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Forms;
+
+
+void FormExamples::AddRadioButton(String inputFile, String outputFile)
+{
     auto document = MakeObject<Document>();
-    // Add page to document object
-    document->get_Pages()->Add();
-    // Instantiate ComboBox Field object
-    auto combo = MakeObject<ComboBoxField>(document->get_Pages()->idx_get(1),
-        MakeObject<Rectangle>(100, 600, 150, 616));
+    auto page = document->get_Pages()->Add();
 
-    // Add option to ComboBox
-    combo->AddOption(u"Red");
-    combo->AddOption(u"Yellow");
-    combo->AddOption(u"Green");
-    combo->AddOption(u"Blue");
+    auto radio = MakeObject<RadioButtonField>(page);
+    radio->AddOption(String(u"Option 1"), MakeObject<Aspose::Pdf::Rectangle>(100, 640, 120, 680, true));
+    radio->AddOption(String(u"Option 2"), MakeObject<Aspose::Pdf::Rectangle>(140, 640, 160, 680, true));
 
-    // Add combo box object to form fields collection of document object
-    document->get_Form()->Add(combo);
-
-    // Save the PDF document
-    document->Save(_dataDir + u"ComboBox_out.pdf");
+    document->get_Form()->Add(radio, 1);
+    document->Save(outputFile);
 }
 ```
 
-## Add Tooltip to Form
+## Add a barcode field
 
-The Document class provides a collection named Form which manages form fields in a PDF document. To add a tooltip to a form field, use the Field class AlternateName. Adobe Acrobat uses the ‘alternate name’ as a field tooltip.
+The inputFile parameter is unused.
 
-The code snippets that follow show how to add a tooltip to a form field with C++.
+1. Create a new [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Create a [BarcodeField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/barcodefield/) and name it Barcode1.
+1. Call [AddBarcode()](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/barcodefield/) with the sample value 1234567890.
+1. Add the field to [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) on page 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void AddTooltipToFormField()
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/BarcodeField.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Forms;
+
+void FormExamples::AddBarcodeField(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    // Load source PDF form
-    auto document = new Document(_dataDir + u"AddTooltipToField.pdf");
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
 
-    // Set the tooltip for textfield
-    //(doc.Form["textbox1"] as Field).AlternateName = "Text box tool tip";
+    auto barcode =
+        MakeObject<BarcodeField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 700, 200, 740, true));
+    barcode->set_PartialName(String(u"Barcode1"));
+    barcode->AddBarcode(String(u"1234567890"));
+    document->get_Form()->Add(barcode, 1);
+    document->Save(outputFile);
+}
+```
 
-    // Save the updated document
-    document->Save(_dataDir + u"AddTooltipToField_out.pdf");
+## Add an unsigned signature field
+
+This adds an unsigned field; it does not apply a cryptographic signature. As in the text-box example, the constructor uses the appended page while Form::Add specifies page 1.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Append a page and create a [SignatureField](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/signaturefield/) using its rectangle.
+1. Set PartialName to Signature1.
+1. Add the field through [Aspose::Pdf::Forms::Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/) using page number 1.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+#include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/SignatureField.h>
+#include <Aspose.PDF.Cpp/Document.h>
+
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Forms;
+
+void FormExamples::AddSignatureField(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    auto page = document->get_Pages()->Add();
+
+    auto signatureField =
+        MakeObject<SignatureField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 700, 200, 800, true));
+    signatureField->set_PartialName(String(u"Signature1"));
+    document->get_Form()->Add(signatureField, 1);
+    document->Save(outputFile);
 }
 ```

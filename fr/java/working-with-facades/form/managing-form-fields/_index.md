@@ -13,7 +13,6 @@ Abstract: Cette section couvre les flux de travail de gestion de formulaires Jav
 La classe Java `FormExamples` inclut des exemples directs pour :
 
 - `flattenAllFields(...)`
-
 - `renameFormFields(...)`
 
 Le référentiel ne contient actuellement pas d'exemple de façade Java `Form` distinct pour aplatir uniquement un sous-ensemble sélectionné de champs, la sous-page est donc documentée comme une note sur les limites des exemples au lieu d'un exemple de code fabriqué.

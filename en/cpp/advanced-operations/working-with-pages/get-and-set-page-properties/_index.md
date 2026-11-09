@@ -1,116 +1,162 @@
 ---
-title: Get and Set Page Properties
+title: Inspect PDF page properties in C++
 linktitle: Get and Set Page Properties
 type: docs
-weight: 20
+weight: 70
 url: /cpp/get-and-set-page-properties/
-description: You can get and set page properties from your PDF file using C++ library.
-lastmod: "2021-12-09"
+description: Inspect page counts, page boxes, rotation, and color types, and calculate a generated document's page count before saving with Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Read PDF Page Boxes, Rotation, Counts, and Colors in C++
+Abstract: Learn how to inspect page boxes, rotation, page counts, and color types with Aspose.PDF for C++. The examples also calculate the page count of a generated document before saving.
 ---
 
-**Aspose.PDF for C++** lets you read and set properties of pages in a PDF file in your C++ applications. This section shows how to get the number of pages in a PDF file, get information about PDF page properties such as color and set page properties, get a particular page of the PDF file and etc.
+Inspect page counts, page boxes, rotation, and color types, and calculate a generated document's page count before saving with Aspose.PDF for C++.
 
-## Get Number of Pages in a PDF File
+## Inspect page boxes and rotation
 
-When working with documents, you often want to know how many pages they contain. With Aspose.PDF this takes no more than two lines of code.
+The example uses C++17 structured bindings. For changes to page properties, see the page-size, cropping, and rotation guides in this section.
 
-To get the number of pages in a PDF file:
-
-1. Open the PDF file using the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class.
-1. Then use the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection's Count property (from the Document object) to get the total number of pages in the document.
-
-The following code snippet shows how to get the number of pages of a PDF file.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Select the first [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Read ArtBox, BleedBox, CropBox, MediaBox, TrimBox, and Rect.
+1. Print each [Rectangle](https://reference.aspose.com/pdf/cpp/aspose.pdf/rectangle/) size and coordinates.
+1. Print the page number and rotation.
 
 ```cpp
-void GetNumberOfPages() {
-    // Open document
-    String _dataDir("C:\\Samples\\");
-    String srcFileName("GetNumberofPages.pdf");
 
-    auto srcDocument = MakeObject<Document>(_dataDir + srcFileName);
+#include <iostream>
+#include <utility>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
 
-    // Get page count
-    std::cout << "Page Count : " << srcDocument->get_Pages()->get_Count() << std::endl;
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of GetAndSetPagePropertiesExamples.getPageProperties.
+void GetPageProperties(System::String inputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    auto page = document->get_Pages()->idx_get(1);
+    const std::pair<const char*, SharedPtr<Rectangle>> boxes[] = {
+        {"ArtBox", page->get_ArtBox()},
+        {"BleedBox", page->get_BleedBox()},
+        {"CropBox", page->get_CropBox()},
+        {"MediaBox", page->get_MediaBox()},
+        {"TrimBox", page->get_TrimBox()},
+        {"Rect", page->get_Rect()},
+    };
+    for (const auto& [name, box] : boxes) {
+        std::cout << name << " : Height=" << box->get_Height()
+        << ",Width=" << box->get_Width()
+        << ",LLX=" << box->get_LLX() << ",LLY=" << box->get_LLY()
+        << ",URX=" << box->get_URX() << ",URY=" << box->get_URY() << std::endl;
+    }
+    std::cout << "Page Number : " << page->get_Number() << std::endl;
+    std::cout << "Rotate : " << static_cast<int>(page->get_Rotate()) << std::endl;
 }
 ```
 
-### Get page count without saving the document
+## Read the page count
 
-Sometimes we generate the PDF files on the fly and during PDF file creation, we may come across the requirement (creating Table Of Contents etc.) to get page count of PDF file without saving the file over system or stream. So in order to cater to this requirement, a method [ProcessParagraphs](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document#a1773e7b6a887eaddd602073e29939a6f) has been introduced in Document class. Please take a look over the following code snippet which shows the steps to get page count without saving the document.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Read Count from [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/).
+1. Print the page count.
 
 ```cpp
-void GetPageCountWithoutSavingTheDocument() {
-    // Instantiate Document instance
+
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of GetAndSetPagePropertiesExamples.getPageCount.
+void GetPageCount(System::String inputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
+    std::cout << "Page Count: " << document->get_Pages()->get_Count() << std::endl;
+}
+```
+
+## Calculate page count before saving
+
+This creates a document in memory and does not require an input PDF or save an output file.
+
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Add 300 [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) paragraphs.
+1. Call [ProcessParagraphs()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/processparagraphs/) to lay out the generated content.
+1. Read and print the [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) count.
+
+```cpp
+
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Text/Font.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextState.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+// Port of GetAndSetPagePropertiesExamples.getPageCountWithoutSaving.
+void GetPageCountWithoutSaving()
+{
     auto document = MakeObject<Document>();
 
-    // Add page to pages collection of PDF file
     auto page = document->get_Pages()->Add();
-    // Create loop instance
-    for (int i = 0; i < 300; i++)
-        // Add TextFragment to paragraphs collection of page object
+    for (int i = 0; i < 300; i++) {
         page->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Pages count test"));
-    // Process the paragraphs in PDF file to get accurate page count
+    }
     document->ProcessParagraphs();
-    // Print number of pages in document
-    std::cout << "Number of pages in document = " << document->get_Pages()->get_Count();
+    std::cout << "Number of pages in document = " << document->get_Pages()->get_Count() << std::endl;
 }
 ```
 
-## Get Page Properties
+## Inspect page color types
 
-### Accessing Page Properties
-
-The [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) class provides all the properties related to a particular PDF page. All the pages of the PDF files are contained in the of the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) object's [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) collection.
-
-From there, it is possible to access either individual Page objects using their index, or loop through the collection, using a foreach loop, to get all pages. Once an individual page is accessed, we can get its properties. The following code snippet shows how to get page properties.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Iterate through every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Read ColorType and compare it with the [ColorType](https://reference.aspose.com/pdf/cpp/aspose.pdf/colortype/) enumeration.
+1. Print the classification for each page.
 
 ```cpp
-void AccessingPageProperties() {
 
-    String _dataDir("C:\\Samples\\");
-    String pdfDocument("GetProperties.pdf");
+#include <iostream>
+#include <Aspose.PDF.Cpp/ColorType.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + pdfDocument);
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Get particular page
-    auto pdfPage = document->get_Pages()->idx_get(1);
-    // Get page properties
-    Console::WriteLine(u"ArtBox : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-        pdfPage->get_ArtBox()->get_Height(), pdfPage->get_ArtBox()->get_Width(),
-        pdfPage->get_ArtBox()->get_LLX(), pdfPage->get_ArtBox()->get_LLY(),
-        pdfPage->get_ArtBox()->get_URX(), pdfPage->get_ArtBox()->get_URY());
-
-    Console::WriteLine(u"->get_BleedBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-        pdfPage->get_BleedBox()->get_Height(), pdfPage->get_BleedBox()->get_Width(),
-        pdfPage->get_BleedBox()->get_LLX(), pdfPage->get_BleedBox()->get_LLY(),
-        pdfPage->get_BleedBox()->get_URX(), pdfPage->get_BleedBox()->get_URY());
-
-    Console::WriteLine(u"get_CropBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-        pdfPage->get_CropBox()->get_Height(), pdfPage->get_CropBox()->get_Width(),
-        pdfPage->get_CropBox()->get_LLX(), pdfPage->get_CropBox()->get_LLY(),
-        pdfPage->get_CropBox()->get_URX(), pdfPage->get_CropBox()->get_URY());
-
-    Console::WriteLine(u"get_MediaBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-        pdfPage->get_MediaBox()->get_Height(), pdfPage->get_MediaBox()->get_Width(),
-        pdfPage->get_MediaBox()->get_LLX(), pdfPage->get_MediaBox()->get_LLY(),
-        pdfPage->get_MediaBox()->get_URX(), pdfPage->get_MediaBox()->get_URY());
-
-    Console::WriteLine(u"get_TrimBox() : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-        pdfPage->get_TrimBox()->get_Height(), pdfPage->get_TrimBox()->get_Width(),
-        pdfPage->get_TrimBox()->get_LLX(), pdfPage->get_TrimBox()->get_LLY(),
-        pdfPage->get_TrimBox()->get_URX(), pdfPage->get_TrimBox()->get_URY());
-
-    Console::WriteLine(u"Rect : Height={0},Width={1},LLX={2},LLY={3},URX={4},URY={5}",
-        pdfPage->get_Rect()->get_Height(), pdfPage->get_Rect()->get_Width(),
-        pdfPage->get_Rect()->get_LLX(), pdfPage->get_Rect()->get_LLY(),
-        pdfPage->get_Rect()->get_URX(), pdfPage->get_Rect()->get_URY());
-
-    Console::WriteLine(u"Page Number : {0}", pdfPage->get_Number());
-    Console::WriteLine(u"Rotate : {0}", pdfPage->get_Rotate());
+// Port of GetAndSetPagePropertiesExamples.getPageColorType.
+void GetPageColorType(System::String inputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+    for (int pageNumber = 1; pageNumber <= document->get_Pages()->get_Count(); ++pageNumber) {
+        auto colorType = document->get_Pages()->idx_get(pageNumber)->get_ColorType();
+        const char* description = "undefined";
+        switch (colorType) {
+            case ColorType::BlackAndWhite: description = "Black and white"; break;
+            case ColorType::Grayscale: description = "Gray Scale"; break;
+            case ColorType::Rgb: description = "RGB"; break;
+            case ColorType::Undefined: break;
+        }
+        std::cout << "Page # " << pageNumber << " is " << description << "." << std::endl;
+    }
 }
 ```
-

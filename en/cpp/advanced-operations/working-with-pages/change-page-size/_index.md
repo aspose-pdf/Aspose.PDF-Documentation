@@ -1,87 +1,122 @@
 ---
-title: Change PDF Page Size Programmatically
-linktitle: Change PDF Page Size
+title: Read and change PDF page size in C++
+linktitle: Change Page Size
 type: docs
-weight: 40
+weight: 30
 url: /cpp/change-page-size/
-description: Change Page Size from your PDF file using C++ library.
-lastmod: "2021-12-08"
+description: Read PDF page dimensions, compare rectangles with and without rotation, and set a page size using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Inspect PDF Dimensions and Set Page Size in C++
+Abstract: Learn how to read PDF page dimensions and compare page rectangles with and without rotation using Aspose.PDF for C++. The resizing example sets the dimensions of the first page.
 ---
 
-PDF is a static layout printable format, which is why it has become widespread in business life.
+Read PDF page dimensions, compare rectangles with and without rotation, and set a page size using Aspose.PDF for C++.
 
-However, you may have tasks when you need to resize your PDF document since the page size is larger than the paper size. But how?
+## Read the first page size
 
-Do not worry. On this page, you will find a way to solve your task.
-
-But first, let's remember that there is Page Size Series.
-
-There are two-page size series widely adopted in the world.
-Of course, there are many formats, but there are the most commonly used ones.
-The first one is ISO Paper Sizes. Series A4 is used for Standard Printing and Stationery. Letter size paper is used for Posters, Wall-Charts, etc. The United States, Canada, and in part Mexico adopted the second Page Size Series and they are today the only industrialized nations in which the ISO standard paper sizes are not yet widely used.
-
-Now let's see how Aspose.PDF prompts you to resize the page using the C++ library.
-
-## Change PDF Page Size
-
-Aspose.PDF for С++ lets you change PDF page size with simple lines of code in your С++  applications. This topic explains how to update/change the page dimensions (size) of an existing PDF file.
-
-The [Page](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page) class contains the SetPageSize(...) method which lets you set the page size. The code snippet below updates page dimensions in a few easy steps:
-
-1. Load the source PDF file.
-1. Get the pages into the [PageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page_collection) object.
-1. Get a given page.
-1. Call the SetPageSize(..) method to update its dimensions.
-1. Call the [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document) class' Save(..) method to generate the PDF file with updated page dimensions.
-
-The following code snippet shows how to change the PDF page dimensions to A4 size.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Select page 1 and call [GetPageRect()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/getpagerect/) with true.
+1. Print the [Rectangle](https://reference.aspose.com/pdf/cpp/aspose.pdf/rectangle/) width and height.
 
 ```cpp
-void ChangePageSize() {
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
 
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("UpdateDimensions.pdf");
-    String outputFileName("UpdateDimensions_out.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
+// Port of ChangeSizeExamples.getPageSize.
+void GetPageSize(System::String inputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
 
-    // Get particular page
-    auto pdfPage = document->get_Pages()->idx_get(1);
-
-    // Set the page size as A4 (11.7 x 8.3 in) and in Aspose.Pdf, 1 inch = 72 points
-    // So A4 dimensions in points will be (842.4, 597.6)
-    pdfPage->SetPageSize(597.6, 842.4);
-    // Save the updated document
-    document->Save(_dataDir + outputFileName);
+    auto rectangle = document->get_Pages()->idx_get(1)->GetPageRect(true);
+    std::cout << rectangle->get_Width() << " : " << rectangle->get_Height() << std::endl;
 }
 ```
 
-## Get PDF Page Size
+## Compare page size with rotation
 
-You can read PDF page size of an existing PDF file using Aspose.PDF for С++. The following code sample shows how to read PDF page dimensions using C++.
+The rotation change is made in memory only; this function does not save a PDF.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Set page 1 rotation to on90 using [Rotation](https://reference.aspose.com/pdf/cpp/aspose.pdf/rotation/).
+1. Call [GetPageRect()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/getpagerect/) with false and print the dimensions.
+1. Call [GetPageRect()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/getpagerect/) with true and print the dimensions.
 
 ```cpp
-void GetPDFPageSize() {
 
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("UpdateDimensions.pdf");
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rotation.h>
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
+using namespace System;
+using namespace Aspose::Pdf;
 
-    // Get particular page
+// Port of ChangeSizeExamples.getPageSizeRotation.
+void GetPageSizeRotation(System::String inputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
     auto page = document->get_Pages()->idx_get(1);
-
-    // Get page height and width information
-    Console::WriteLine(u"{0} {1}", page->GetPageRect(true)->get_Width(), page->GetPageRect(true)->get_Height());
-    // Rotate page at 90 degree angle
     page->set_Rotate(Rotation::on90);
-    // Get page height and width information
-    Console::WriteLine(u"{0} {1}", page->GetPageRect(true)->get_Width(), page->GetPageRect(true)->get_Height());
+    auto rectangle = page->GetPageRect(false);
+    std::cout << rectangle->get_Width() << " : " << rectangle->get_Height() << std::endl;
+    rectangle = page->GetPageRect(true);
+    std::cout << rectangle->get_Width() << " : " << rectangle->get_Height() << std::endl;
+}
+```
 
+## Set the first page size
+
+The dimensions are in PDF points. This changes the page geometry; it does not explicitly scale the existing page content.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Select the first [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) and print its page-box dimensions.
+1. Call [SetPageSize()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/setpagesize/) with width 597.6 and height 842.4.
+1. Print the resulting page-box dimensions.
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of ChangeSizeExamples.setPageSize.
+void SetPageSize(System::String inputFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
+    auto page = document->get_Pages()->idx_get(1);
+    std::cout << "Before set" << std::endl;
+    std::cout << "CropBox: " << page->get_CropBox()->get_Width() << " x " << page->get_CropBox()->get_Height() << std::endl;
+    std::cout << "TrimBox: " << page->get_TrimBox()->get_Width() << " x " << page->get_TrimBox()->get_Height() << std::endl;
+    std::cout << "ArtBox: " << page->get_ArtBox()->get_Width() << " x " << page->get_ArtBox()->get_Height() << std::endl;
+    std::cout << "BleedBox: " << page->get_BleedBox()->get_Width() << " x " << page->get_BleedBox()->get_Height() << std::endl;
+    std::cout << "MediaBox: " << page->get_MediaBox()->get_Width() << " x " << page->get_MediaBox()->get_Height() << std::endl;
+    page->SetPageSize(597.6, 842.4);
+    std::cout << "After set" << std::endl;
+    std::cout << "CropBox: " << page->get_CropBox()->get_Width() << " x " << page->get_CropBox()->get_Height() << std::endl;
+    std::cout << "TrimBox: " << page->get_TrimBox()->get_Width() << " x " << page->get_TrimBox()->get_Height() << std::endl;
+    std::cout << "ArtBox: " << page->get_ArtBox()->get_Width() << " x " << page->get_ArtBox()->get_Height() << std::endl;
+    std::cout << "BleedBox: " << page->get_BleedBox()->get_Width() << " x " << page->get_BleedBox()->get_Height() << std::endl;
+    std::cout << "MediaBox: " << page->get_MediaBox()->get_Width() << " x " << page->get_MediaBox()->get_Height() << std::endl;
+    document->Save(outputFile);
 }
 ```

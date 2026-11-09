@@ -1,224 +1,328 @@
 ---
-title: Add Header and Footer to PDF
-linktitle: Add Header and Footer to PDF
+title: Add PDF headers and footers in C++
+linktitle: Add Headers and Footers
 type: docs
-weight: 70
+weight: 20
 url: /cpp/add-headers-and-footers-of-pdf-file/
-description: Aspose.PDF for C++ allows you to add headers and footers to your PDF file using TextStamp class.
-lastmod: "2021-12-08"
+description: Add text, images, HTML, LaTeX, tables, and page-number placeholders to PDF headers and footers using Aspose.PDF for C++.
+lastmod: "2026-10-12"
 sitemap:
-    changefreq: "weekly"
+    changefreq: "monthly"
     priority: 0.7
+TechArticle: true
+AlternativeHeadline: Create PDF Headers and Footers with Mixed Content in C++
+Abstract: Learn how to add text, image, HTML, LaTeX, and table content to PDF headers and footers with Aspose.PDF for C++. The examples also demonstrate page-number placeholders.
 ---
 
-**Aspose.PDF for C++** allows you to add header and footer in your existing PDF file. You may add images or text to a PDF document. Also, try to add different headers in one PDF File with C++.
+Add text, images, HTML, LaTeX, tables, and page-number placeholders to PDF headers and footers using Aspose.PDF for C++.
 
-## Adding Text in Header of PDF File
+## Add text headers and footers
 
-You can use [TextStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.text_stamp) class to add text in the header of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the header, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the header of the PDF.
-
-You need to set the TopMargin property in such a way that it adjusts the text in the header area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Top.
-
-The following code snippet shows you how to add text in the header of a PDF file with C++.
-
-```cpp
-void AddingTextInHeaderOfPdfFile() {
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("TextinHeader.pdf");
-    String outputFileName("TextinHeader_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-
-    // Create header
-    auto textStamp = MakeObject<TextStamp>(u"Header Text");
-
-    // Set properties of the stamp
-    textStamp->set_TopMargin(10);
-    textStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-    textStamp->set_VerticalAlignment(VerticalAlignment::Top);
-
-    // Add header on all pages
-    for(auto page : document->get_Pages())
-    {
-        page->AddStamp(textStamp);
-    }
-
-    // Save updated document
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-## Adding Text in Footer of PDF File
-
-You can use TextStamp class to add text in the footer of a PDF file. TextStamp class provides properties necessary to create a text based stamp like font size, font style, and font color etc. In order to add text in the footer, you need to create a Document object and a TextStamp object using required properties. After that, you can call AddStamp method of the Page to add the text in the footer of the PDF.
-
-{{% alert color="primary" %}}
-
-You need to set the Bottom Margin property in such a way that it adjusts the text in the footer area of your PDF. You also need to set HorizontalAlignment to Center and VerticalAlignment to Bottom
-
-{{% /alert %}}
-
-The following code snippet shows you how to add text in the footer of a PDF file with C++.
+1. Create separate [HeaderFooter](https://reference.aspose.com/pdf/cpp/aspose.pdf/headerfooter/) objects for the header and footer.
+1. Add a [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) to each object.
+1. Set margins with [MarginInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf/margininfo/).
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void AddingTextInFooterOfPdfFile() {
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("TextinFooter.pdf");
-    String outputFileName("TextinFooter_out.pdf");
 
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Text/Font.h>
+#include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextState.h>
 
-    // Create footer
-    auto textStamp = MakeObject<TextStamp>(u"Footer Text");
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
-    // Set properties of the stamp
-    textStamp->set_BottomMargin(10);
-    textStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-    textStamp->set_VerticalAlignment(VerticalAlignment::Bottom);
-
-    // Add footer on all pages
-    for (auto page : document->get_Pages())
-    {
-        page->AddStamp(textStamp);
-    }
-
-    // Save updated document
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-## Adding Image in Header of PDF File
-
-You can use [ImageStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.image_stamp) class to add image in the header of a PDF file. Image Stamp class provides properties necessary to create image based stamp like font size, font style, and font color etc. In order to add image in the header, you need to create a Document object and a Image Stamp object using required properties. After that, you can call AddStamp method of the Page to add the image in the header of the PDF.
-
-The following code snippet shows you how to add image in the header of a PDF file with C++.
-
-```cpp
-void AddingImageInHeaderOfPdfFile() {
-
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("ImageinHeader.pdf");
-    String outputFileName("ImageinHeader_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-
-    // Create header
-    auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
-
-    // Set properties of the stamp
-    imageStamp->set_TopMargin(10);
-    imageStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-    imageStamp->set_VerticalAlignment (VerticalAlignment::Top);
-
-    // Add header on all pages
-    for(auto page : document->get_Pages())
-    {
-        page->AddStamp(imageStamp);
-    }
-
-    // Save updated document
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-## Adding Image in Footer of PDF File
-
-You can use Image Stamp class to add image in the footer of a PDF file. Image Stamp class provides properties necessary to create image based stamp like font size, font style, and font color etc. In order to add image in the footer, you need to create a Document object and an Image Stamp object using required properties. After that, you can call AddStamp method of the Page to add the image in the footer of the PDF.
-
-You need to set the [BottomMargin](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.stamp#aeab91949cf3eb473018b31a74fed7173) property in such a way that it adjusts the image in the footer area of your PDF. You also need to set [HorizontalAlignment](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#aefec9c0bf30ee5e6fb2640e69aed6cd9) to `Center` and [VerticalAlignment](https://reference.aspose.com/pdf/cpp/namespace/aspose.pdf#ad4956d03096fc515eaa34319a6bf636a) to `Bottom`.
-
-The following code snippet shows you how to add image in the footer of a PDF file with C++.
-
-```cpp
-void AddingImageInFooterOfPdfFile() {
-
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("ImageinFooter.pdf");
-    String outputFileName("ImageinFooter_out.pdf");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
-
-    // Create header
-    auto imageStamp = MakeObject<ImageStamp>(_dataDir + u"aspose-logo.jpg");
-
-    // Set properties of the stamp
-    imageStamp->set_TopMargin(10);
-    imageStamp->set_HorizontalAlignment(HorizontalAlignment::Center);
-    imageStamp->set_VerticalAlignment(VerticalAlignment::Top);
-
-    // Add header on all pages
-    for (auto page : document->get_Pages())
-    {
-        page->AddStamp(imageStamp);
-    }
-
-    // Save updated document
-    document->Save(_dataDir + outputFileName);
-}
-```
-
-## Adding different Headers in one PDF File
-
-We know that we can add TextStamp in Header/Footer section of the document by using TopMargin or Bottom Margin properties, but sometimes we may have the requirement to add multiple header/footers in a single PDF document. **Aspose.PDF for C++** explains how to do this.
-
-In order to accomplish this requirement, we will create individual TextStamp objects (number of objects depends upon the number of Header/Footers required)and will add them to PDF document. We may also specify different formatting information for individual stamp object. In following example, we have created Document object and three TextStamp objects and then we have used [AddStamp](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.page#a3b998038dedf5266b4d60586b1b53d02) method of the Page to add the text in the header section of the PDF. The following code snippet shows you how to add image in the footer of a PDF file with Aspose.PDF for C++.
-
-```cpp
-void AddingDifferentHeadersInOnePDFFile()
+// Port of AddHeaderFooterExamples.addHeaderAndFooterAsText.
+void AddHeaderAndFooterAsText(System::String inputFile, System::String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-    String inputFileName("multiheader.pdf");
-    String outputFileName("multiheader_out.pdf");
+    auto header = MakeObject<HeaderFooter>();
+    header->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Demo header"));
 
-    // Open source document
-    auto document = MakeObject<Document>(_dataDir + inputFileName);
+    auto footer = MakeObject<HeaderFooter>();
+    footer->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Demo footer"));
 
-    // Create three stamps
-    auto stamp1 = MakeObject<TextStamp>("Header 1");
-    auto stamp2 = MakeObject<TextStamp>("Header 2");
-    auto stamp3 = MakeObject<TextStamp>("Header 3");
+    auto margin = MakeObject<MarginInfo>();
+    margin->set_Left(50);
+    margin->set_Top(20);
+    header->set_Margin(margin);
+    footer->set_Margin(margin);
 
-    // Set stamp alignment (place stamp on page top, centered horiznotally)
-    stamp1->set_VerticalAlignment(VerticalAlignment::Top);
-    stamp1->set_HorizontalAlignment(HorizontalAlignment::Center);
-    // Specify the font style as Bold
-    stamp1->get_TextState()->set_FontStyle(FontStyles::Bold);
-    // Set the text fore ground color information as red
-    stamp1->get_TextState()->set_ForegroundColor(Color::get_Red());
-    // Specify the font size as 14
-    stamp1->get_TextState()->set_FontSize(14);
+    auto document = MakeObject<Document>(inputFile);
 
-    // Now we need to set the vertical alignment of 2nd stamp object as Top
-    stamp2->set_VerticalAlignment(VerticalAlignment::Top);
-    // Set Horizontal alignment information for stamp as Center aligned
-    stamp2->set_HorizontalAlignment (HorizontalAlignment::Center);
-    // Set the zooming factor for stamp object
-    stamp2->set_Zoom(10);
+    for (int i = 1; i <= document->get_Pages()->get_Count(); i++) {
+        document->get_Pages()->idx_get(i)->set_Header(header);
+        document->get_Pages()->idx_get(i)->set_Footer(footer);
+    }
+    document->Save(outputFile);
+}
+```
 
-    // Set the formatting of 3rd stamp object
-    // Specify the Vertical alignment information for stamp object as TOP
-    stamp3->set_VerticalAlignment(VerticalAlignment::Top);
-    // Set the Horizontal alignment inforamtion for stamp object as Center aligned
-    stamp3->set_HorizontalAlignment(HorizontalAlignment::Center);
-    // Set the rotation angle for stamp object
-    stamp3->set_RotateAngle(35);
-    // Set pink as background color for stamp
-    stamp3->get_TextState()->set_BackgroundColor(Color::get_Pink());
-    // Change the font face information for stamp to Verdana
-    stamp3->get_TextState()->set_Font(FontRepository::FindFont(u"Verdana"));
+## Add image headers and footers
 
-    // First stamp is added on first page;
-    document->get_Pages()->idx_get(1)->AddStamp(stamp1);
-    // Second stamp is added on second page;
-    document->get_Pages()->idx_get(2)->AddStamp(stamp2);
-    // Third stamp is added on third page.
-    document->get_Pages()->idx_get(3)->AddStamp(stamp3);
+1. Create separate [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/) objects using imageFile.
+1. Add each image to a [HeaderFooter](https://reference.aspose.com/pdf/cpp/aspose.pdf/headerfooter/).
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Set the margins and assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
-    // Save updated document
-    document->Save(_dataDir + outputFileName);
+```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
+#include <Aspose.PDF.Cpp/Generator/Image.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of AddHeaderFooterExamples.addHeaderAndFooterAsImage.
+void AddHeaderAndFooterAsImage(System::String inputFile, System::String imageFile, System::String outputFile)
+{
+    auto headerImage = MakeObject<Image>();
+    headerImage->set_File(imageFile);
+    auto header = MakeObject<HeaderFooter>();
+    header->get_Paragraphs()->Add(headerImage);
+
+    auto footerImage = MakeObject<Image>();
+    footerImage->set_File(imageFile);
+    auto footer = MakeObject<HeaderFooter>();
+    footer->get_Paragraphs()->Add(footerImage);
+
+    auto document = MakeObject<Document>(inputFile);
+
+    for (int i = 1; i <= document->get_Pages()->get_Count(); i++) {
+        auto margin = MakeObject<MarginInfo>();
+        margin->set_Left(50);
+        header->set_Margin(margin);
+        footer->set_Margin(margin);
+        document->get_Pages()->idx_get(i)->set_Header(header);
+        document->get_Pages()->idx_get(i)->set_Footer(footer);
+    }
+    document->Save(outputFile);
+}
+```
+
+## Add HTML headers and footers
+
+The supplied README reports that this example compiled but threw from HtmlFragment::ConvertToPages during saving with SDK 26.7.0. The API usage is preserved; verify it with the SDK version you use.
+
+1. Create two [HeaderFooter](https://reference.aspose.com/pdf/cpp/aspose.pdf/headerfooter/) objects.
+1. Add [HtmlFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf/htmlfragment/) content to each and set margins.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
+#include <Aspose.PDF.Cpp/Generator/HtmlFragment.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of AddHeaderFooterExamples.addHeaderAndFooterAsHtml.
+// SDK 26.7.0 throws from HtmlFragment::ConvertToPages when saving this example.
+void AddHeaderAndFooterAsHtml(System::String inputFile, System::String outputFile)
+{
+    auto header = MakeObject<HeaderFooter>();
+    header->get_Paragraphs()->Add(MakeObject<HtmlFragment>(u"This is an HTML <strong>Header</strong>"));
+
+    auto footer = MakeObject<HeaderFooter>();
+    footer->get_Paragraphs()->Add(MakeObject<HtmlFragment>(u"Powered by <i>Aspose.PDF</i>"));
+
+    auto margin = MakeObject<MarginInfo>();
+    margin->set_Left(50);
+    margin->set_Top(20);
+    header->set_Margin(margin);
+    footer->set_Margin(margin);
+
+    auto document = MakeObject<Document>(inputFile);
+
+    for (int i = 1; i <= document->get_Pages()->get_Count(); i++) {
+        document->get_Pages()->idx_get(i)->set_Header(header);
+        document->get_Pages()->idx_get(i)->set_Footer(footer);
+    }
+    document->Save(outputFile);
+}
+```
+
+## Add LaTeX headers and footers
+
+The footer includes the supplied literal year 2025 and interpolates the total page count. Preserve or adapt this sample content for your document.
+
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Read the page count.
+1. Create [HeaderFooter](https://reference.aspose.com/pdf/cpp/aspose.pdf/headerfooter/) objects containing [TeXFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf/texfragment/) content for each page.
+1. Assign the header and footer to the [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Generator/TeXFragment.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+// Port of AddHeaderFooterExamples.addHeaderAndFooterAsLatex.
+void AddHeaderAndFooterAsLatex(System::String inputFile, System::String outputFile)
+{
+    auto document = MakeObject<Document>(inputFile);
+
+    int pageCount = document->get_Pages()->get_Count();
+    for (int i = 1; i <= pageCount; i++) {
+        auto header = MakeObject<HeaderFooter>();
+        header->get_Paragraphs()->Add(MakeObject<TeXFragment>(u"This is a LaTeX Header. \\today\\", true));
+
+        auto footer = MakeObject<HeaderFooter>();
+        footer->get_Paragraphs()->Add(MakeObject<TeXFragment>(String::Format(u"\\copyright\\ 2025 My Company -- Page \\thepage\\ is {0}", pageCount), true));
+
+        document->get_Pages()->idx_get(i)->set_Header(header);
+        document->get_Pages()->idx_get(i)->set_Footer(footer);
+    }
+    document->Save(outputFile);
+}
+```
+
+## Add table headers and footers
+
+Column widths use the sample's fixed value 594 and the header or footer margins. Adjust them for different page sizes.
+
+1. Configure header and footer [TextState](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textstate/) objects using Arial from [FontRepository](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/fontrepository/).
+1. Create [HeaderFooter](https://reference.aspose.com/pdf/cpp/aspose.pdf/headerfooter/) objects and add a [Table](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) to each.
+1. Populate the tables with header and footer text and set margins.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Table/Cell.h>
+#include <Aspose.PDF.Cpp/Table/Cells.h>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Text/Font.h>
+#include <Aspose.PDF.Cpp/Text/FontRepository.h>
+#include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
+#include <Aspose.PDF.Cpp/HorizontalAlignment.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Table/Row.h>
+#include <Aspose.PDF.Cpp/Table/Rows.h>
+#include <Aspose.PDF.Cpp/Table/Table.h>
+#include <Aspose.PDF.Cpp/Text/TextState.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+// Port of AddHeaderFooterExamples.addHeaderAndFooterAsTable.
+void AddHeaderAndFooterAsTable(System::String inputFile, System::String outputFile)
+{
+    auto textStateHeader = MakeObject<TextState>();
+    textStateHeader->set_Font(FontRepository::FindFont(u"Arial"));
+    textStateHeader->set_FontSize(12);
+    textStateHeader->set_HorizontalAlignment(HorizontalAlignment::Center);
+
+    auto textStateFooter = MakeObject<TextState>();
+    textStateFooter->set_Font(FontRepository::FindFont(u"Arial"));
+    textStateFooter->set_FontSize(12);
+    textStateFooter->set_HorizontalAlignment(HorizontalAlignment::Left);
+
+    auto header = MakeObject<HeaderFooter>();
+    auto footer = MakeObject<HeaderFooter>();
+
+    auto tableHeader = MakeObject<Table>();
+    tableHeader->set_ColumnWidths(String::Format(u"{0}", 594 - header->get_Margin()->get_Left() - header->get_Margin()->get_Right()));
+    tableHeader->get_Rows()->Add()->get_Cells()->Add(u"This is a Table Header", textStateHeader);
+
+    auto table = MakeObject<Table>();
+    table->set_ColumnWidths(String::Format(u"{0}", 594 - footer->get_Margin()->get_Left() - footer->get_Margin()->get_Right()));
+    table->get_Rows()->Add()->get_Cells()->Add(u"Powered by Aspose.PDF", textStateFooter);
+
+    header->get_Paragraphs()->Add(tableHeader);
+    footer->get_Paragraphs()->Add(table);
+    footer->get_Margin()->set_Left(150);
+
+    auto document = MakeObject<Document>(inputFile);
+
+    for (int i = 1; i <= document->get_Pages()->get_Count(); i++) {
+        document->get_Pages()->idx_get(i)->set_Header(header);
+        document->get_Pages()->idx_get(i)->set_Footer(footer);
+    }
+    document->Save(outputFile);
+}
+```
+
+## Use page-number placeholders
+
+1. Create [HeaderFooter](https://reference.aspose.com/pdf/cpp/aspose.pdf/headerfooter/) objects.
+1. Add [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) content using $p for the page number and $P for the total page count.
+1. Set the margins.
+1. Open the input PDF as a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
+1. Assign the header and footer to every [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/).
+1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Text/Font.h>
+#include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
+#include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
+#include <Aspose.PDF.Cpp/Text/TextFragment.h>
+#include <Aspose.PDF.Cpp/Text/TextState.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+// Port of AddHeaderFooterExamples.usingHeaderAndFooterForPageNumbering.
+void UsingHeaderAndFooterForPageNumbering(System::String inputFile, System::String outputFile)
+{
+    auto header = MakeObject<HeaderFooter>();
+    header->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Page $p from $P"));
+
+    auto footer = MakeObject<HeaderFooter>();
+    footer->get_Paragraphs()->Add(MakeObject<TextFragment>(u"Page $p / $P"));
+
+    auto margin = MakeObject<MarginInfo>();
+    margin->set_Left(50);
+    margin->set_Top(20);
+    header->set_Margin(margin);
+    footer->set_Margin(margin);
+
+    auto document = MakeObject<Document>(inputFile);
+
+    for (int i = 1; i <= document->get_Pages()->get_Count(); i++) {
+        document->get_Pages()->idx_get(i)->set_Header(header);
+        document->get_Pages()->idx_get(i)->set_Footer(footer);
+    }
+    document->Save(outputFile);
 }
 ```

@@ -1,229 +1,174 @@
 ---
-title: Add Image to PDF using C++
-linktitle: Add Image
+title: Add images to PDF in C++
+linktitle: Add Images
 type: docs
 weight: 10
 url: /cpp/add-image-to-existing-pdf-file/
-description: This section describes how to add image to existing PDF file using C++ library.
-lastmod: "2021-12-18"
+description: Create PDFs containing images using a page rectangle, drawing operators, Flate compression, or alternative text with Aspose.PDF for C++.
+lastmod: "2026-10-15"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Insert Images into New PDF Pages with C++
+Abstract: Learn how to create PDF pages containing images with Aspose.PDF for C++. The examples use page rectangles, drawing operators, Flate compression, and an attempt to assign alternative text.
 ---
 
-## Add Image in an Existing PDF File
+Create PDFs containing images using a page rectangle, drawing operators, Flate compression, or alternative text with Aspose.PDF for C++.
 
-Every PDF page contains Resources and Contents properties. Resources can be images and forms for example, while content is represented by a set of PDF operators. Each operator has its name and argument. This example uses operators to add an image to a PDF file.
+## Add an image to a new page
 
-To add an image to an existing PDF file:
+In these four examples, inputFile is an image file and the output is a newly created PDF.
 
-- Create a [Document](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.document/) object and open the input PDF document.
-- Get the page you want to add an image to.
-- Add the image into the page's Resources collection.
-- Use operators to place the image on the page:
-- Use the [GSave operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_save/) to save the current graphical state.
-- Use [ConcatenateMatrix operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.concatenate_matrix#a40ca09b1fa45560d57a1fd042d3fbe96) to specify where the image is to be placed.
-- Use the [Do operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.do/) to draw the image on the page.
-- Finally, use [GRestore operator](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.operators.g_restore/) to save the updated graphical state.
-- Save the file.
-The following code snippet shows how to add the image in a PDF document.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
+1. Define a [Rectangle](https://reference.aspose.com/pdf/cpp/aspose.pdf/rectangle/) with coordinates (20, 730, 120, 830).
+1. Call [AddImage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) on the [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) with the input image path and rectangle.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+
 using namespace System;
 using namespace Aspose::Pdf;
-using namespace Aspose::Pdf::Text;
 
-void WorkingWithImages::AddImageToExistingPDF()
+void ImageExamples::AddImage(String inputFile, String outputFile)
 {
-    String _dataDir("C:\\Samples\\");
-
-    // Open document
-    auto document = MakeObject<Document>(_dataDir + u"AddImage.pdf");
-
-    // Set coordinates
-    int lowerLeftX = 50;
-    int lowerLeftY = 750;
-    int upperRightX = 100;
-    int upperRightY = 800;
-
-    // Get the page you want to add the image to
-    auto page = document->get_Pages()->idx_get(1);
-
-    // Load image into stream
-    auto imageStream = System::IO::File::OpenRead(_dataDir + u"logo.png");
-
-    // Add an image to the Images collection of the page resources
-    page->get_Resources()->get_Images()->Add(imageStream);
-
-    // Using the GSave operator: this operator saves current graphics state
-    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
-
-    // Create Rectangle and Matrix objects
-    auto rectangle = MakeObject<Rectangle>(lowerLeftX, lowerLeftY, upperRightX, upperRightY);
-
-    auto matrix = MakeObject<Matrix>(
-        MakeArray<double>({
-            rectangle->get_URX() - rectangle->get_LLX(),
-            0,                  0,
-            rectangle->get_URY() - rectangle->get_LLY(),
-            rectangle->get_LLX(), rectangle->get_LLY() }));
-
-    // Using ConcatenateMatrix (concatenate matrix) operator:
-    // defines how image must be placed
-    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(matrix));
-    auto ximage = page->get_Resources()->get_Images()->idx_get(page->get_Resources()->get_Images()->get_Count());
-
-    // Using Do operator: this operator draws image
-    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(ximage->get_Name()));
-
-    // Using GRestore operator: this operator restores graphics state
-    page->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
-
-    // Save the new PDF
-    document->Save(_dataDir + u"updated_document.pdf");
-
-    // Close image stream
-    imageStream->Close();
-}
-```
-
-## Add Reference of a single Image multiple times in a PDF Document
-
-Sometimes we have a requirement to use same image multiple times in a PDF document. Adding a new instance increases the resultant PDF document. [XImageCollection.Add(XImage)](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image/) method allows to add reference to the same PDF object as original image that optimize the PDF Document size.
-
-```cpp
-void WorkingWithImages::AddReferenceOfaSingleImageMultipleTimes() {
-
-    String _dataDir("C:\\Samples\\");
-    auto imageRectangle = MakeObject<Rectangle>(0, 0, 30, 15);
-
-    auto document = MakeObject<Document>(_dataDir + u"sample.pdf");
-
-    document->get_Pages()->Add();
-    document->get_Pages()->Add();
-
-    auto imageStream = System::IO::File::OpenRead(_dataDir + u"aspose-logo.png");
-
-    SharedPtr<Aspose::Pdf::XImage> image;
-
-    for (auto page : document->get_Pages()) {
-        auto annotation = MakeObject<Aspose::Pdf::Annotations::WatermarkAnnotation>(page, page->get_Rect());
-        auto form = annotation->get_Appearance()->idx_get(u"N");
-        form->set_BBox(page->get_Rect());
-        String name;
-        if (image != nullptr) {
-            name = form->get_Resources()->get_Images()->Add(imageStream);
-            image = form->get_Resources()->get_Images()->idx_get(name);
-        }
-        else {
-            form->get_Resources()->get_Images()->AddWithName(image);
-        }
-        form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GSave>());
-        form->get_Contents()->Add(
-            MakeObject<Aspose::Pdf::Operators::ConcatenateMatrix>(
-                MakeObject<Matrix>(imageRectangle->get_Width(), 0, 0, imageRectangle->get_Height(), 0, 0)));
-
-        form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::Do>(name));
-        form->get_Contents()->Add(MakeObject<Aspose::Pdf::Operators::GRestore>());
-        page->get_Annotations()->Add(annotation, false);
-        imageRectangle = MakeObject<Rectangle>(0, 0, imageRectangle->get_Width() * 1.01, imageRectangle->get_Height() * 1.01);
-    }
-    document->Save(_dataDir + u"AddReferenceOfaSingleImageMultipleTimes_out.pdf");
-}
-```
-
-## Place image on page and preserve (control) aspect ratio
-
-If we do not know the dimensions of the image there is every chance of getting a distorted image on the page. The following example shows one of the ways to avoid this.
-
-```cpp
-void WorkingWithImages::AddingImageAndPreserveAspectRatioIntoPDF() {
-
-    String _dataDir("C:\\Samples\\");
-
-    auto bitmap = System::Drawing::Image::FromFile(_dataDir + u"3410492.jpg");
-
-    int width;
-    int height;
-
-    width = bitmap->get_Width();
-    height = bitmap->get_Height();
-
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
-
-    int scaledWidth = 400;
-    int scaledHeight = scaledWidth * height / width;
-
-    page->AddImage(_dataDir + u"3410492.jpg", new Rectangle(10, 10, scaledWidth, scaledHeight));
-    document->Save(_dataDir + u"sample_image.pdf");
+    page->AddImage(inputFile, MakeObject<Rectangle>(20, 730, 120, 830));
+    document->Save(outputFile);
 }
 ```
 
-## Identify if image inside PDF is Colored or Black & White
+## Draw an image with PDF operators
 
-To reduce the size of the image, you need to compress it. Before you can determine the type of compression of an image, you need to know whether it is color or black and white.
+The matrix scales the image to the page width and centers it vertically. A tall image can extend beyond the page bounds.
 
-The type of compression applied to the image depends on the ColorSpace of the original image, i.e. if the image is in color (RGB) then use JPEG2000 compression, and if it is black and white then use JBIG2 / JBIG2000 compression.
-
-A PDF file may contain Text, Image, Graph, Attachment, Annotation etc elements and if the source PDF file contains images, we can determine image Color space and apply appropriate compression for image to reduce PDF file size.
-
-The following code snippet shows the steps to Identify if image inside PDF is Colored or Black & White.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and open the input image stream.
+1. Add a page and set its size to 842 by 595 points.
+1. Add the stream to [XImageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximagecollection/) and retain the returned resource name.
+1. Calculate a page-width image height from the [XImage](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximage/) pixel aspect ratio.
+1. Add [GSave](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/gsave/), [ConcatenateMatrix](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/concatenatematrix/), [Do](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/do/), and [GRestore](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/grestore/) operators to the page contents.
+1. Close the image stream.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void WorkingWithImages::CheckColors() {
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Operator.h>
+#include <Aspose.PDF.Cpp/OperatorCollection.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Resources.h>
+#include <Aspose.PDF.Cpp/XImage.h>
+#include <Aspose.PDF.Cpp/XImageCollection.h>
 
-    String _dataDir("C:\\Samples\\");
-    auto document = MakeObject<Document>(_dataDir + u"test4.pdf");
-    try {
-        // iterate through all pages of PDF file
-        for (auto page : document->get_Pages()) {
-            // create Image Placement Absorber instance
-            auto abs = MakeObject<ImagePlacementAbsorber>();
-            page->Accept(abs);
+#include <system/io/file.h>
 
-            for (auto ia : abs->get_ImagePlacements()) {
-                /* ColorType */
-                auto colorType = ia->get_Image()->GetColorType();
-                switch (colorType) {
-                case ColorType::Grayscale:
-                    Console::WriteLine(u"Grayscale Image");
-                    break;
-                case ColorType::Rgb:
-                    Console::WriteLine(u"Colored Image");
-                    break;
-                }
-            }
-        }
-    }
-    catch (Exception ex) {
-        Console::WriteLine(u"Error reading file = {0}", document->get_FileName());
-    }
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Operators;
+
+void ImageExamples::AddUsingOperators(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>();
+    auto stream = System::IO::File::OpenRead(inputFile);
+    auto page = document->get_Pages()->Add();
+    page->SetPageSize(842, 595);
+    auto images = page->get_Resources()->get_Images();
+    auto name = images->Add(stream);
+    auto image = images->idx_get(images->get_Count());
+    double width = page->get_MediaBox()->get_Width();
+    double height = width * image->get_Height() / image->get_Width();
+    page->get_Contents()->Add(MakeObject<GSave>());
+    page->get_Contents()->Add(MakeObject<ConcatenateMatrix>(
+        width, 0, 0, height, 0, (page->get_MediaBox()->get_Height() - height) / 2));
+    page->get_Contents()->Add(MakeObject<Do>(name));
+    page->get_Contents()->Add(MakeObject<GRestore>());
+    stream->Close();
+    document->Save(outputFile);
 }
 ```
 
-## Control Image Quality
+## Add an image with Flate compression
 
-It is possible to control the quality of an image that's being added to a PDF file. Use the overloaded [Replace](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection#a698b65051b073f0f4b84b1235889bd72) method in the [XImageCollection](https://reference.aspose.com/pdf/cpp/class/aspose.pdf.x_image_collection) class.
+The fixed square matrix can change the displayed aspect ratio of a nonsquare image.
 
-The following code snippet demonstrates how to convert all the document images into JPEGs that use 80% quality for compression.
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/), open the image stream, and add a page.
+1. Add the image to [XImageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximagecollection/) with [ImageFilterType](https://reference.aspose.com/pdf/cpp/aspose.pdf/imagefiltertype/) set to Flate.
+1. Add [GSave](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/gsave/) and a [ConcatenateMatrix](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/concatenatematrix/) scaling the image to 600 by 600 points.
+1. Draw the named resource with [Do](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/do/) and restore the graphics state with [GRestore](https://reference.aspose.com/pdf/cpp/aspose.pdf.operators/grestore/).
+1. Close the image stream.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-void WorkingWithImages::ControlImageQuality() {
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/ImageFilterType.h>
+#include <Aspose.PDF.Cpp/Operator.h>
+#include <Aspose.PDF.Cpp/OperatorCollection.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Resources.h>
+#include <Aspose.PDF.Cpp/XImage.h>
+#include <Aspose.PDF.Cpp/XImageCollection.h>
 
-    String _dataDir("C:\\Samples\\");
+#include <system/io/file.h>
 
-    auto document = MakeObject<Document>(_dataDir + u"sample_with_images.pdf");
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Operators;
 
-    for (auto page : document->get_Pages())
-    {
-        int idx = 1;
-        for (auto image : page->get_Resources()->get_Images())
-        {
-            auto imageStream = MakeObject<System::IO::MemoryStream>();
-            image->Save(imageStream, System::Drawing::Imaging::ImageFormat::get_Jpeg());
-            page->get_Resources()->get_Images()->Replace(idx, imageStream, 80);
-            idx = idx + 1;
-        }
-    }
+void ImageExamples::AddWithFlateCompression(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>();
+    auto stream = System::IO::File::OpenRead(inputFile);
+    auto page = document->get_Pages()->Add();
+    auto name = page->get_Resources()->get_Images()->Add(stream, ImageFilterType::Flate);
+    page->get_Contents()->Add(MakeObject<GSave>());
+    page->get_Contents()->Add(MakeObject<ConcatenateMatrix>(600, 0, 0, 600, 0, 0));
+    page->get_Contents()->Add(MakeObject<Do>(name));
+    page->get_Contents()->Add(MakeObject<GRestore>());
+    stream->Close();
+    document->Save(outputFile);
+}
+```
 
-    document->Save(_dataDir + u"sample_with_images_out.pdf");
+## Add alternative text to an image
+
+The example attempts to set alternative text and reports whether it succeeded. It does not validate PDF/UA compliance. Use an SDK version that exposes TrySetAlternativeText().
+
+1. Create a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page sized 842 by 595 points.
+1. Call [AddImage()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) on the [Page](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/) using a rectangle that covers the page.
+1. Select the first [XImage](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximage/) resource and call [TrySetAlternativeText()](https://reference.aspose.com/pdf/cpp/aspose.pdf/ximage/) with the description and page.
+1. Print the returned success flag.
+1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
+
+```cpp
+#include <iostream>
+#include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Rectangle.h>
+#include <Aspose.PDF.Cpp/Resources.h>
+#include <Aspose.PDF.Cpp/XImage.h>
+#include <Aspose.PDF.Cpp/XImageCollection.h>
+
+using namespace System;
+using namespace Aspose::Pdf;
+
+void ImageExamples::AddWithAltText(String inputFile, String outputFile)
+{
+    auto document = MakeObject<Document>();
+    auto page = document->get_Pages()->Add();
+    page->SetPageSize(842, 595);
+    page->AddImage(inputFile, MakeObject<Rectangle>(0, 0, 842, 595));
+    bool added = page->get_Resources()->get_Images()->idx_get(1)->TrySetAlternativeText(
+        u"Alternative text for image", page);
+    std::cout << "Alternative text added: " << added << std::endl;
+    document->Save(outputFile);
 }
 ```

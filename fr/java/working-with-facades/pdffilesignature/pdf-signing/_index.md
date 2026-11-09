@@ -21,11 +21,9 @@ Utilisez `PdfFileSignature` lorsque vous devez appliquer une signature numériqu
 ### Étapes
 
 1. Créez une instance `PdfFileSignature` et liez le PDF source.
-
-2. Chargez le certificat soit via `setCertificate`, soit en créant un objet `PKCS7`.
-3. Appelez `sign` avec la page cible, les paramètres de visibilité, le rectangle de signature et les données de signature.
-
-4. Enregistrez le PDF signé et fermez l’objet de façade.
+1. Chargez le certificat soit via `setCertificate`, soit en créant un objet `PKCS7`.
+1. Appelez `sign` avec la page cible, les paramètres de visibilité, le rectangle de signature et les données de signature.
+1. Enregistrez le PDF signé et fermez l’objet de façade.
 
 ### Exemples Java
 

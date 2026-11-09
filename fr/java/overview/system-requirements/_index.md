@@ -24,29 +24,18 @@ Aspose.PDF for Java prend en charge tout système d'exploitation 32 bits ou 64�
 ### Windows
 
 - Microsoft Windows 2000 Professionnel (x64, x86)
-
 - Serveur Microsoft Windows 2000 (x64, x86)
-
 - Serveur Microsoft Windows 2003 (x64, x86)
-
 - Serveur Microsoft Windows 2008 (x64, x86)
-
 - Serveur Microsoft Windows 2012 (x64, x86)
 - Serveur Microsoft Windows 2012 R2 (x64, x86)
-
 - Serveur Microsoft Windows 2016 (x64, x86)
-
 - Serveur Microsoft Windows 2019 (x64, x86)
-
 - Microsoft Windows Vista (x64, x86)
-
 - Microsoft Windows XP (x64, x86)
 - Microsoft Windows 7 (x64, x86)
-
 - Microsoft Windows 8, 8.1 (x64, x86)
-
 - Microsoft Windows 10 (x64, x86)
-
 - Microsoft Azure
 
 ### Linux
@@ -62,7 +51,6 @@ Aspose.PDF for Java prend en charge tout système d'exploitation 32 bits ou 64�
 Aspose.PDF for Java prend en charge les versions Java suivantes :
 
 - J2SE 8.0 (1.8) ou supérieur (*par exemple Java 10*)
-
 - Prise en charge d’Aspose.PDF for Java sur IBM i (Iseries ou As/400)
 
 ## Environnements de développement
@@ -71,18 +59,11 @@ Vous pouvez utiliser Aspose.PDF for Java pour développer des applications dans 
 
 - Microsoft Visual Studio 2003
 - Microsoft Visual Studio 2005
-
 - Microsoft Visual Studio 2008
-
 - Microsoft Visual Studio 2010
-
 - Microsoft Visual Studio 2011
-
 - Microsoft Visual Studio 2012
 - Microsoft Visual Studio 2013
-
 - Microsoft Visual Studio 2015
-
 - Microsoft Visual Studio 2017
-
 - Microsoft Visual Studio 2019

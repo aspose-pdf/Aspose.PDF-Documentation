@@ -39,9 +39,7 @@ Vous pouvez télécharger [Aspose.PDF for Java](https://releases.aspose.com/java
 La version d'évaluation d'Aspose.PDF fournit toutes les fonctionnalités du produit, mais présente deux limitations :
 
 - Elle insère un filigrane d’évaluation.
-
 - Seuls quatre éléments par collection peuvent être consultés ou modifiés.
-
 - **Un document montrant le filigrane d'évaluation**
 
 {{% alert color="primary" %}}
