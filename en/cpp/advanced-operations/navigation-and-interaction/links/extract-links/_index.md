@@ -16,7 +16,7 @@ Abstract: Inspect LinkAnnotation objects on the first page with Aspose.PDF for C
 
 These read-only examples inspect the first page and print results. They do not scan all pages or save a modified PDF.
 
-Configure the Aspose.PDF for C++ SDK and create the output directory before running examples that save a file. The snippets retain the source includes, function parameters, coordinates, and action settings, with the project runner header omitted.
+Configure the Aspose.PDF for C++ SDK before running these examples. The snippets retain the source includes, function parameters, coordinates, and action settings, with the project runner header omitted.
 
 ## Read link annotation locations
 

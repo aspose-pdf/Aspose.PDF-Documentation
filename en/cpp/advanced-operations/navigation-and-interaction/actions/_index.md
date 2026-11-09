@@ -304,10 +304,10 @@ using namespace Aspose::Pdf::Forms;
 void AddNamedActionHide(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
-    auto checkboxes = MakeObject<System::Collections::Generic::List<SharedPtr<Annotation>>>();
+    auto checkboxes = MakeObject<System::Collections::Generic::List<SharedPtr<WidgetAnnotation>>>();
     for (const auto& field : document->get_Form()) {
         if (System::DynamicCast_noexcept<CheckboxField>(field)) {
-            checkboxes->Add(field);
+            checkboxes->Add(System::DynamicCast<WidgetAnnotation>(field));
         }
     }
 

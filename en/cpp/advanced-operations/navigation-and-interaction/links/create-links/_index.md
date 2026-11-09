@@ -111,7 +111,7 @@ void CreateLinkAnnotationGoToRemoteAction(System::String inputFile, System::Stri
 
 ## Create a web link
 
-Add a green link on page 1 targeting https://docs.aspose.com/pdf/python. The source URL is preserved.
+Add a green link on page 1 targeting https://docs.aspose.com/pdf/cpp/. The source URL is preserved.
 
 1. Open the input PDF with [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/).
 1. Create a [LinkAnnotation](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/linkannotation/) with the sample rectangle.
