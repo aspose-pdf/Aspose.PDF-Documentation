@@ -1,67 +1,49 @@
 ---
-title: Trabalhar com Artefatos PDF em Python
+title: Trabalhe com artefatos PDF em Python
 linktitle: Trabalhando com Artefatos
 type: docs
 weight: 170
 url: /pt/python-net/artifacts/
-description: Aprenda como trabalhar com artefatos PDF em Python para adicionar fundos, marcas d'água e numeração Bates e contar tipos de artefatos com Aspose.PDF for Python via .NET.
-lastmod: "2026-05-18"
+description: Adicione, inspecione e remova artefatos PDF em Python, incluindo fundos, marcas d'água, cabeçalhos, rodapés e numeração Bates.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicionar artefatos de fundos, marcas d'água e numeração Bates em Python
-Abstract: Este artigo explica como trabalhar com artefatos PDF no Aspose.PDF for Python via .NET. Aprenda o que são os artefatos, por que são importantes para acessibilidade e layout de documentos, e como adicionar imagens de fundo, aplicar marcas d'água, adicionar numeração Bates e inspecionar tipos de artefatos em arquivos PDF com Python.
+AlternativeHeadline: Gerencie artefatos de página PDF em Python
+Abstract: Encontre guias para adicionar e remover artefatos PDF, inspecionar detalhes de marcas d'água e contar artefatos de paginação por subtipo com Aspose.PDF for Python via .NET.
 ---
 
-Os artefatos em PDF são objetos gráficos ou outros elementos que não fazem parte do conteúdo real do documento. Eles geralmente são usados para decoração, layout ou fins de fundo. Exemplos de artefatos incluem cabeçalhos de página, rodapés, separadores ou imagens que não transmitem nenhum significado.
+Artefatos PDF marcam elementos de página como fundos decorativos, cabeçalhos e rodapés correntes e marcas d'água. Em um Tagged PDF, tecnologias assistivas podem pular artefatos e focar no conteúdo significativo do documento.
 
-O objetivo dos artefatos em PDF é permitir a distinção entre elementos de conteúdo e não‑conteúdo. Isso é importante para acessibilidade, pois leitores de tela e outras tecnologias assistivas podem ignorar os artefatos e focar no conteúdo relevante. Os artefatos também podem melhorar o desempenho e a qualidade dos documentos PDF, pois podem ser omitidos da impressão, pesquisa ou cópia.
+## Escolher um guia
 
-Use esta seção quando precisar criar ou inspecionar elementos PDF não‑conteúdo em Python, como fundos de documento, marcas d'água de página e marcas de numeração Bates. Os guias a seguir mostram os principais fluxos de trabalho de artefatos suportados pelo Aspose.PDF for Python via .NET.
+### Adicionar artefatos
 
-Para criar um elemento como artefato em PDF, você precisa usar o [Artefato](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) classe.
-Ele contém as seguintes propriedades úteis:
+- [Adicionar fundos](/pdf/pt/python-net/add-backgrounds/)
+- [Adicionar marcas d'água](/pdf/pt/python-net/add-watermarks/)
+- [Adicionar numeração Bates](/pdf/pt/python-net/add-bates-numbering/)
+- [Adicionar cabeçalhos e rodapés](/pdf/pt/python-net/artifacts-header-footer/)
 
-- **custom_type** - Obtém o nome do tipo de artefato. Pode ser usado se o tipo de artefato for não padrão.
-- **custom_subtype** - Obtém o nome do subtipo do artefato. Pode ser usado se o subtipo do artefato não for um subtipo padrão.
-- **type** - Obtém o tipo do artefato.
-- **subtype** - Obtém o subtipo do artefato. Se o artefato tem um subtipo não padrão, o nome do subtipo pode ser lido via CustomSubtype.
-- **contents** - Obtém a coleção de operadores internos do artefato.
-- **form** - Obtém o XForm do artefato (se XForm for usado).
-- **rectangle** - Obtém o retângulo do artefato.
-- **position** - Obtém ou define a posição do artefato. Se esta propriedade for especificada, as margens e alinhamentos são ignorados.
-- **right_margin** - Margem direita do artefato.Se a posição for especificada explicitamente (na propriedade Position) este valor é ignorado.
-- **left_margin** - Margem esquerda do artefato.Se a posição for especificada explicitamente (na propriedade Position) este valor é ignorado.
-- **top_margin** - Margem superior do artefato. Se a posição for especificada explicitamente (na propriedade Position) este valor é ignorado.
-- **bottom_margin** - Margem inferior do artefato.Se a posição for especificada explicitamente (na propriedade Position) este valor é ignorado.
-- **artifact_horizontal_alignment** - Alinhamento horizontal do artefato. Se a posição for especificada explicitamente (na propriedade Position) este valor é ignorado.
-- **artifact_vertical_alignment** - Alinhamento vertical do artefato. Se a posição for especificada explicitamente (na propriedade Position) este valor será ignorado.
-- **rotation** - Obtém ou define o ângulo de rotação do artefato.
-- **text** - Obtém o texto do artefato.
-- **image** - Obtém a imagem do artefato (se presente).
-- **opacity** - Obtém ou define a opacidade do artefato. Valores possíveis estão no intervalo 0..1.
-- **lines** - Linhas do artefato de texto multilinha.
-- **text_state** - Estado de texto para texto de artefato.
-- **is_background** - Se verdadeiro, o Artefato é colocado atrás do conteúdo da página.
+### Inspecionar artefatos
 
-As seguintes classes também podem ser úteis para trabalhar com artefatos:
+- [Contar artefatos de paginação por subtipo](/pdf/pt/python-net/counting-artifacts/)
+- [Extrair detalhes da marca d'água](/pdf/pt/python-net/extract-watermarks/)
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/)
-- [BatesNArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/)
+### Remover artefatos
 
-## Fluxos de Trabalho de Artefato Cobertos Nesta Seção
+- [Remover fundos](/pdf/pt/python-net/remove-backgrounds/)
+- [Remover marcas d'água](/pdf/pt/python-net/remove-watermarks/)
+- [Remover numeração Bates](/pdf/pt/python-net/remove-bates-numbering/)
+- [Remover cabeçalhos e rodapés](/pdf/pt/python-net/remove-headers-footers/)
 
-Por favor, revise as seguintes seções do artigo:
+## API de artefatos
 
-- [Adicionando fundos](/pdf/pt/python-net/add-backgrounds/) - adicione uma imagem de fundo ao seu arquivo PDF com Python.
-- [Adicionando numeração Bates](/pdf/pt/python-net/add-bates-numbering/) - adicione numeração Bates ao PDF.
-- [Adicionando marca d'água](/pdf/pt/python-net/add-watermarks/) - como adicionar marca d'água a um PDF com Python.
-- [Contando Artefatos](/pdf/pt/python-net/counting-artifacts/) - contando Artefatos em PDF usando Python.
-- [Gerenciar cabeçalhos e rodapés de PDF](/pdf/pt/python-net/artifacts-header-footer/) - gerenciar cabeçalhos e rodapés em documentos PDF.
+A propriedade `artifacts` retorna a coleção [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/) da página. A classe [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) fornece as propriedades comuns às classes especializadas [`BackgroundArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/), [`WatermarkArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/), [`HeaderArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerartifact/), [`FooterArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/footerartifact/) e [`BatesNArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/).
 
-Esses tutoriais são úteis quando você precisa gerenciar elementos decorativos ou estruturais de PDF sem alterar o fluxo de conteúdo principal do documento.
+| Tarefa | Propriedades |
+| --- | --- |
+| Identificar o artefato | Usar `type` e `subtype` para classificações padrão e `custom_type` e `custom_subtype` para nomes personalizados. |
+| Inspecione seu conteúdo | Usar `text`, `image`, e `lines` para texto e imagens, ou `contents` e `form` para operadores PDF e o XForm associado. |
+| Posicione-o na página | Usar `rectangle` para inspecionar seus limites. Definir `position` para posicionamento explícito ou uso `left_margin`, `right_margin`, `top_margin`, `bottom_margin`, `artifact_horizontal_alignment`, e `artifact_vertical_alignment`. Uma posição explícita substitui margens e alinhamento. |
+| Controle sua aparência | Usar `rotation`, `opacity` (de 0 a 1), e `text_state`. Definir `is_background` para colocar o artefato atrás do conteúdo da página. |

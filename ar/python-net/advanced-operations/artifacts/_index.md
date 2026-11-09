@@ -1,67 +1,49 @@
 ---
-title: العمل مع مصنوعات PDF في بايثون
-linktitle: العمل مع القطع الأثرية
+title: عناصر PDF باستخدام Python
+linktitle: العمل مع عناصر PDF
 type: docs
 weight: 170
 url: /ar/python-net/artifacts/
-description: تعرف على كيفية التعامل مع عناصر PDF في Python لإضافة الخلفيات والعلامات المائية وترقيم بيتس وحساب أنواع القطع الأثرية باستخدام Aspose.PDF لـ Python عبر .NET.
-lastmod: "2026-06-11"
+description: إضافة عناصر PDF وفحصها وإزالتها، بما فيها الخلفيات والعلامات المائية ورؤوس الصفحات وتذييلاتها وترقيم Bates باستخدام Python.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: أضف الخلفيات والعلامات المائية والتحف الفنية لترقيم بيتس في Python
-Abstract: تشرح هذه المقالة كيفية العمل مع عناصر PDF في Aspose.PDF لـ Python عبر .NET. تعرف على القطع الأثرية، وسبب أهميتها لإمكانية الوصول وتخطيط المستندات، وكيفية إضافة صور الخلفية، وتطبيق العلامات المائية، وإضافة ترقيم Bates، وفحص أنواع القطع الأثرية في ملفات PDF باستخدام Python.
+AlternativeHeadline: عناصر PDF في Python
+Abstract: إضافة عناصر PDF وفحصها وإزالتها، بما فيها الخلفيات والعلامات المائية ورؤوس الصفحات وتذييلاتها وترقيم Bates. تتناول الأدلة أيضًا فحص تفاصيل العلامات المائية وعدّ عناصر الترقيم باستخدام Aspose.PDF for Python via .NET.
 ---
 
-القطع الأثرية في PDF هي كائنات رسومية أو عناصر أخرى ليست جزءًا من المحتوى الفعلي للمستند. يتم استخدامها عادةً لأغراض الديكور أو التخطيط أو الخلفية. تتضمن أمثلة القطع الأثرية رؤوس الصفحات أو التذييلات أو الفواصل أو الصور التي لا تنقل أي معنى.
+تميّز عناصر PDF أجزاء الصفحة مثل الخلفيات الزخرفية والرؤوس والتذييلات المتكررة والعلامات المائية. في ملفات PDF الموسومة، يمكن للتقنيات المساعدة تجاوز هذه العناصر والتركيز على محتوى المستند ذي المعنى.
 
-الغرض من القطع الأثرية في PDF هو السماح بالتمييز بين المحتوى والعناصر غير المحتوى. وهذا أمر مهم لإمكانية الوصول، حيث يمكن لقارئات الشاشة والتقنيات المساعدة الأخرى تجاهل القطع الأثرية والتركيز على المحتوى ذي الصلة. يمكن للقطع الأثرية أيضًا تحسين أداء وجودة مستندات PDF، حيث يمكن حذفها من الطباعة أو البحث أو النسخ.
+## اختيار الدليل
 
-استخدم هذا القسم عندما تحتاج إلى إنشاء أو فحص عناصر PDF غير المحتوى في Python، مثل خلفيات المستندات والعلامات المائية للصفحة وعلامات ترقيم Bates. تعرض الأدلة التالية عمليات سير عمل القطع الأثرية الرئيسية التي يدعمها Aspose.PDF لـ Python عبر .NET.
+### إضافة العناصر
 
-لإنشاء عنصر كقطعة أثرية في PDF، تحتاج إلى استخدام [قطعة أثرية](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) فئة.
-يحتوي على الخصائص المفيدة التالية:
+- [إضافة الخلفيات](/pdf/ar/python-net/add-backgrounds/)
+- [إضافة العلامات المائية](/pdf/ar/python-net/add-watermarks/)
+- [إضافة ترقيم Bates](/pdf/ar/python-net/add-bates-numbering/)
+- [إضافة الرؤوس والتذييلات](/pdf/ar/python-net/artifacts-header-footer/)
 
-- **custom_type** - يحصل على اسم نوع القطعة الأثرية. يمكن استخدامه إذا كان نوع الأداة غير قياسي.
-- **custom_subtype** - يحصل على اسم النوع الفرعي للقطع الأثرية. يمكن استخدامه إذا لم يكن النوع الفرعي للقطع الأثرية نوعًا فرعيًا قياسيًا.
-- **النوع** - يحصل على نوع القطعة الأثرية.
-- **النوع الفرعي** - يحصل على النوع الفرعي للقطع الأثرية. إذا كانت الأداة تحتوي على نوع فرعي غير قياسي، فيمكن قراءة اسم النوع الفرعي عبر CustomSubType.
-- **المحتويات** - تحصل على مجموعة من المشغلات الداخلية للقطع الأثرية.
-- **النموذج** - يحصل على XForm للقطعة الأثرية (إذا تم استخدام XForm).
-- **مستطيل** - يحصل على مستطيل من القطعة الأثرية.
-- **الموقع** - يحصل على موضع القطعة الأثرية أو يضبطها. إذا تم تحديد هذه الخاصية، فسيتم تجاهل الهوامش والمحاذاة.
-- **right_margin** - الهامش الأيمن للقطع الأثرية. إذا تم تحديد الموضع بشكل صريح (في خاصية الموضع) يتم تجاهل هذه القيمة.
-- **left_margin** - الهامش الأيسر للقطع الأثرية. إذا تم تحديد الموضع بشكل صريح (في خاصية الموضع) يتم تجاهل هذه القيمة.
-- **top_margin** - الهامش العلوي للقطعة الأثرية. إذا تم تحديد الموضع بشكل صريح (في خاصية الموضع) يتم تجاهل هذه القيمة.
-- **bottom_margin** - الهامش السفلي للقطع الأثرية. إذا تم تحديد الموضع بشكل صريح (في خاصية الموضع) يتم تجاهل هذه القيمة.
-- ** محاذاة القطع الأثرية الأفقية** - المحاذاة الأفقية للقطعة الأثرية. إذا تم تحديد الموضع بشكل صريح (في خاصية الموضع) يتم تجاهل هذه القيمة.
-- ** المحاذاة الرأسية** - المحاذاة الرأسية للقطع الأثرية. إذا تم تحديد الموضع بشكل صريح (في خاصية الموضع) يتم تجاهل هذه القيمة.
-- **الدوران** - يحصل على زاوية دوران القطع الأثرية أو يضبطها.
-- **نص** - يحصل على نص القطعة الأثرية.
-- **صورة** - تحصل على صورة القطعة الأثرية (إذا كانت موجودة).
-- **العتامة** - تحصل على عتامة القطعة الأثرية أو تضبطها. القيم المحتملة في النطاق 0.. 1.
-- **خطوط** - أسطر من قطعة أثرية نصية متعددة الأسطر.
-- **text_state** - حالة النص لنص الأداة.
-- **is_background** - إذا تم وضع قطعة أثرية حقيقية خلف محتويات الصفحة.
+### فحص العناصر
 
-قد تكون الفصول التالية مفيدة أيضًا للعمل مع القطع الأثرية:
+- [عدّ عناصر الترقيم](/pdf/ar/python-net/counting-artifacts/)
+- [استخراج تفاصيل العلامات المائية](/pdf/ar/python-net/extract-watermarks/)
 
-- [مجموعة القطع الأثرية](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)
-- [قطعة أثرية في الخلفية](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/)
-- [قطعة أثرية للرأس](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerartifact/)
-- [قطعة أثرية في التذييل](https://reference.aspose.com/pdf/python-net/aspose.pdf/footerartifact/)
-- [قطعة أثرية للعلامة المائية](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/)
-- [قطعة أثرية من باتسن](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/)
+### إزالة العناصر
 
-## عمليات سير عمل القطع الأثرية التي يغطيها هذا القسم
+- [إزالة الخلفيات](/pdf/ar/python-net/remove-backgrounds/)
+- [إزالة العلامات المائية](/pdf/ar/python-net/remove-watermarks/)
+- [إزالة ترقيم Bates](/pdf/ar/python-net/remove-bates-numbering/)
+- [إزالة الرؤوس والتذييلات](/pdf/ar/python-net/remove-headers-footers/)
 
-يرجى مراجعة الأقسام التالية من المقالة:
+## واجهة برمجة التطبيقات للعناصر
 
-- [إضافة خلفيات](/pdf/ar/python-net/add-backgrounds/) - إضافة صورة خلفية إلى ملف PDF الخاص بك باستخدام Python.
-- [إضافة ترقيم بيتس](/pdf/ar/python-net/add-bates-numbering/) - إضافة ترقيم بيتس إلى PDF.
-- [إضافة علامة مائية](/pdf/ar/python-net/add-watermarks/) - كيفية إضافة علامة مائية إلى PDF باستخدام Python.
-- [عد القطع الأثرية](/pdf/ar/python-net/counting-artifacts/) - عد القطع الأثرية في PDF باستخدام Python.
-- [إدارة رؤوس وتذييلات PDF](/pdf/ar/python-net/artifacts-header-footer/) - إدارة الرؤوس والتذييلات في مستندات PDF.
+تُعيد الخاصية `artifacts` مجموعة عناصر الصفحة [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/). وتوفّر الفئة [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) الخصائص المشتركة بين الفئات المتخصصة، مثل [`BackgroundArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/)، و[`WatermarkArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/)، و[`HeaderArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerartifact/)، و[`FooterArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/footerartifact/)، و[`BatesNArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/).
 
-هذه البرامج التعليمية مفيدة عندما تحتاج إلى إدارة عناصر PDF الزخرفية أو الهيكلية دون تغيير تدفق محتوى المستند الرئيسي.
+| المهمة | الخصائص |
+| --- | --- |
+| تحديد العنصر | استخدم `type` و`subtype` للتصنيفات القياسية، و`custom_type` و`custom_subtype` للأسماء المخصّصة. |
+| فحص المحتوى | استخدم `text` و`image` و`lines` للنصوص والصور، و`contents` و`form` لمعاملات PDF وكائن XForm المرتبط. |
+| تحديد الموضع | استخدم `rectangle` لفحص حدود العنصر. اضبط `position` لتحديد الموضع صراحةً، أو استخدم `left_margin` و`right_margin` و`top_margin` و`bottom_margin` و`artifact_horizontal_alignment` و`artifact_vertical_alignment`. يتجاوز الموضع الصريح إعدادات الهوامش والمحاذاة. |
+| ضبط المظهر | استخدم `rotation` و`opacity` (من 0 إلى 1) و`text_state`. اضبط `is_background` لوضع العنصر خلف محتوى الصفحة. |

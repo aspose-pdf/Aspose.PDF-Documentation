@@ -1,17 +1,17 @@
 ---
 title: Add Bates Numbering to PDF in Java
-linktitle: Adding Bates Numbering
+linktitle: Add Bates Numbering
 type: docs
 weight: 10
 url: /java/add-bates-numbering/
-description: Learn how to add and remove Bates numbering in PDF documents using Java with Aspose.PDF.
-lastmod: "2026-06-09"
+description: Add sequential Bates identifiers to PDF pages in Java with the dedicated Bates numbering helper or the generic pagination API.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Add Bates Numbering via Java
-Abstract: This article explains how to create and remove Bates numbering artifacts in PDF documents using Aspose.PDF for Java. It covers configuring a `BatesNArtifact`, applying it through Bates numbering helpers or generic pagination helpers, and removing Bates numbering from a document.
+AlternativeHeadline: Add Bates Numbering in Java
+Abstract: Add sequential Bates identifiers to PDF pages in Java with the dedicated Bates numbering helper or the generic pagination API.
 ---
 Bates numbering artifacts are useful in legal, archival, and document-control workflows where each page needs a persistent page-level identifier.
 
@@ -61,19 +61,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 }
 ```
 
-## Delete Bates numbering
+## Related artifact topics
 
-Use this approach when existing Bates numbering artifacts should be removed from the document.
-
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Call the page collection helper that deletes Bates numbering.
-1. Save the cleaned output file.
-
-```java
-public static void deleteBatesNumbering(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        PageCollectionExtensions.deleteBatesNumbering(document.getPages());
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Remove Bates Numbering](/pdf/java/remove-bates-numbering/)
+- [Work with PDF Artifacts in Java](/pdf/java/artifacts/)

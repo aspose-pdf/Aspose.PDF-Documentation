@@ -1,25 +1,26 @@
 ---
-title: Подсчет артефактов PDF в Java
-linktitle: Подсчет артефактов
+title: Подсчёт артефактов пагинации в PDF на Java
+linktitle: Подсчёт артефактов по подтипам
 type: docs
 weight: 40
 url: /ru/java/counting-artifacts/
-description: Узнайте, как просматривать и подсчитывать артефакты разметки страниц в PDF-документах с помощью Java и Aspose.PDF.
-lastmod: "2026-09-16"
+description: Узнайте, как проверять и подсчитывать артефакты разметки страниц в PDF‑документах с помощью Java и Aspose.PDF.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Подсчет артефактов в PDF с использованием Java
-Abstract: "В этой статье объясняется, как просматривать и подсчитывать артефакты разметки страниц в PDF-документах с помощью Aspose.PDF for Java. Показано, как перебрать артефакты страниц и подсчитать подтипы: водяной знак, фон, заголовок и нижний колонтитул."
+AlternativeHeadline: Подсчёт артефактов пагинации в PDF на Java
+Abstract: В этой статье объясняется, как проверять и подсчитывать артефакты разметки страниц в PDF‑документах с использованием Aspose.PDF for Java. Показано, как проходить по артефактам страниц и подсчитывать подтипы водяных знаков, фона, верхних и нижних колонтитулов.
 ---
-## Подсчёт артефактов разметки на странице
+## Подсчёт артефактов пагинации на странице
 
-Используйте этот пример, когда вам нужен быстрый подсчёт основных подтипов артефактов пагинации на странице.
+Используйте этот пример, когда вам нужно быстро подсчитать основные подтипы артефактов пагинации на странице.
 
 1. Откройте исходный PDF в объекте [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Получите коллекцию артефактов [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) нужной страницы [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
-1. Переберите коллекцию артефактов [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) страницы и подсчитайте артефакты каждого нужного подтипа нумерации.
+1. Получите коллекцию объектов [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) с нужной страницы [Page](https://reference.aspose.com/pdf/java/com.aspose.pdf/page/).
+1. Переберите коллекцию объектов [Artifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/artifact/) на странице.
+1. Подсчитайте артефакты каждого подтипа пагинации, который необходимо отразить в отчете.
 
 ```java
 public static void countPdfArtifacts(Path inputFile) {
@@ -54,4 +55,11 @@ public static void countPdfArtifacts(Path inputFile) {
 }
 ```
 
+## См. также
 
+- [Работа с PDF-артефактами](/pdf/ru/java/artifacts/)
+- [Извлечение текста и границ водяных знаков](/pdf/ru/java/extract-watermarks/)
+- [Удаление фона](/pdf/ru/java/remove-backgrounds/)
+- [Удаление водяных знаков](/pdf/ru/java/remove-watermarks/)
+- [Удаление нумерации Бейтса](/pdf/ru/java/remove-bates-numbering/)
+- [Удаление колонтитулов](/pdf/ru/java/remove-headers-footers/)

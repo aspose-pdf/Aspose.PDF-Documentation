@@ -1,24 +1,37 @@
 ---
-title: Trabalhar com artefatos PDF em Java
-linktitle: Trabalhar com artefatos
+title: Trabalhar com Artefatos PDF em Java
+linktitle: Trabalhando com Artefatos
 type: docs
 weight: 170
 url: /pt/java/artifacts/
-description: Aprenda como trabalhar com artefatos PDF em Java para adicionar fundos, marcas d'água, cabeçalhos, rodapés e numeração Bates, e para contar os tipos de artefatos de paginação com Aspose.PDF.
-lastmod: "2026-10-06"
+description: Adicionar, inspecionar e remover artefatos PDF em Java, incluindo fundos, marcas d'água, cabeçalhos, rodapés e numeração Bates.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicionar fundos, marcas d'água, cabeçalhos, rodapés e artefatos de numeração Bates em Java
-Abstract: Este artigo explica como trabalhar com artefatos PDF no Aspose.PDF for Java. Ele abrange artefatos de fundo, artefatos de marca d'água, artefatos de cabeçalho e rodapé, numeração Bates e contagem de subtipos de artefatos, como fundos, marcas d'água, cabeçalhos e rodapés.
+AlternativeHeadline: Adicionar, inspecionar e remover artefatos PDF em Java
+Abstract: Encontre guias Java para adicionar e remover artefatos PDF, inspecionar detalhes de marcas d'água e contar artefatos de paginação por subtipo.
 ---
-Os artefatos em documentos PDF são elementos de página não relacionados ao conteúdo, como cabeçalhos, rodapés, marcas d'água, fundos e marcadores de paginação. Eles são comumente usados para branding, layout, identificação e fluxos de trabalho de gerenciamento de documentos.
+Artefatos em documentos PDF são elementos de página que não são conteúdo, como cabeçalhos, rodapés, marcas d'água, fundos e marcadores de paginação. Eles são comumente usados para branding, layout, identificação e fluxos de trabalho de gerenciamento de documentos.
 
-Use esta seção para:
+## Escolher um guia
 
-- [Adicionar Fundos](/pdf/pt/java/add-backgrounds/)
-- [Adicionar numeração Bates](/pdf/pt/java/add-bates-numbering/)
+### Adicionar artefatos
+
+- [Adicionar fundos](/pdf/pt/java/add-backgrounds/)
 - [Adicionar marcas d'água](/pdf/pt/java/add-watermarks/)
-- [Gerenciar cabeçalhos e rodapés de PDF](/pdf/pt/java/artifacts-header-footer/)
-- [Contar artefatos](/pdf/pt/java/counting-artifacts/)
+- [Adicionar numeração Bates](/pdf/pt/java/add-bates-numbering/)
+- [Adicionar cabeçalhos e rodapés](/pdf/pt/java/artifacts-header-footer/)
+
+### Inspecionar artefatos
+
+- [Contar artefatos de paginação por subtipo](/pdf/pt/java/counting-artifacts/)
+- [Extrair detalhes da marca d'água](/pdf/pt/java/extract-watermarks/)
+
+### Remover artefatos
+
+- [Remover fundos](/pdf/pt/java/remove-backgrounds/)
+- [Remover marcas d'água](/pdf/pt/java/remove-watermarks/)
+- [Remover numeração de Bates](/pdf/pt/java/remove-bates-numbering/)
+- [Remover cabeçalhos e rodapés](/pdf/pt/java/remove-headers-footers/)

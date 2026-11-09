@@ -1,27 +1,28 @@
 ---
-title: إضافة خلفيات PDF في Java
+title: إضافة خلفيات إلى PDF باستخدام Java
 linktitle: إضافة الخلفيات
 type: docs
 weight: 20
 url: /ar/java/add-backgrounds/
-description: تعلم كيفية إضافة صورة خلفية أو لون خلفية إلى صفحات PDF في Java باستخدام `BackgroundArtifact` مع Aspose.PDF.
-lastmod: "2026-10-05"
+description: إضافة صورة أو لون موحّد إلى خلفية صفحة PDF وضبط عتامة صورة الخلفية باستخدام Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: كيفية إضافة خلفية إلى PDF باستخدام Java
-Abstract: تشرح هذه المقالة كيفية إضافة أو إزالة خلفيات صفحات PDF في Java باستخدام Aspose.PDF. وتغطي إضافة صورة خلفية، تعديل شفافية الصورة، تطبيق لون خلفية، وإزالة العناصر الخلفية من صفحة.
+AlternativeHeadline: إضافة خلفيات إلى PDF في Java
+Abstract: إضافة صورة أو لون موحّد إلى خلفية صفحة PDF وضبط عتامة صورة الخلفية.
 ---
-تسمح لك العناصر الخلفية بوضع عناصر بصرية ليست جزءًا من المحتوى خلف محتوى الصفحة الرئيسي دون تغيير نص الوثيقة المنطقي.
 
-## إضافة صورة خلفية إلى PDF
+تضع عناصر الخلفية صورة أو لونًا خلف محتوى الصفحة الرئيسي مع الحفاظ على النص المنطقي للمستند.
 
-استخدم هذا المثال عندما يجب أن تعرض الصفحة صورة كعنصر خلفية.
+## إضافة صورة خلفية إلى ملف PDF
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتيار إدخال الصورة.
-1. أنشئ كائنًا من الفئة [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) وأسند تدفق الصورة.
-1. أضف القطعة إلى الصفحة المستهدفة واحفظ ملف PDF الناتج.
+يضع المثال صورة خلف محتوى الصفحة الأولى.
+
+1. افتح ملف PDF المصدر باستخدام الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح دفق إدخال الصورة.
+1. أنشئ كائنًا من الفئة [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) وأسند إليه دفق الصورة.
+1. أضف العنصر إلى الصفحة واحفظ ملف PDF الناتج.
 
 ```java
 public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path outputFile) throws Exception {
@@ -35,13 +36,13 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 }
 ```
 
-## إضافة صورة خلفية مع الشفافية
+## إضافة صورة خلفية شبه شفافة
 
-هذا المثال يضع صورة خلفية شبه شفافة خلف محتوى الصفحة.
+يضبط المثال عتامة صورة الخلفية على 0.5.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وتدفق الصورة.
-1. أنشئ كائنًا من الفئة [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/)، عيّن الصورة، واضبط الشفافية.
-1. أضف العنصر إلى الصفحة واحفظ المستند.
+1. افتح ملف PDF المصدر باستخدام الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) وافتح دفق إدخال الصورة.
+1. أنشئ كائنًا من الفئة [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) واضبط صورته وعتامته.
+1. أضف العنصر إلى الصفحة واحفظ ملف PDF الناتج.
 
 ```java
 public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path imageFile, Path outputFile)
@@ -57,13 +58,13 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 }
 ```
 
-## إضافة لون خلفية إلى PDF
+## إضافة لون خلفية إلى ملف PDF
 
-استخدم هذا المثال عندما يجب أن تستخدم الصفحة لون خلفية صلب بدلاً من صورة.
+يستخدم المثال لونًا موحّدًا لخلفية الصفحة.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. أنشئ كائنًا من الفئة [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) وعيّن لون الخلفية.
-1. أضف العنصر إلى الصفحة واحفظ ملف الإخراج.
+1. افتح ملف PDF المصدر باستخدام الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) وحدّد لون الخلفية.
+1. أضف العنصر إلى الصفحة واحفظ ملف PDF الناتج.
 
 ```java
 public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
@@ -76,26 +77,7 @@ public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## إزالة العناصر الخلفية
+## مواضيع ذات صلة
 
-استخدم هذه الطريقة عندما يجب حذف العناصر الخلفية الموجودة من الصفحة.
-
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. مرّ على مجموعة عناصر الصفحة بترتيب عكسي.
-1. احذف العناصر التي نوعها pagination والفرعية هي background، ثم حفظ المستند.
-
-```java
-public static void removeBackground(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Background) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [إزالة الخلفيات](/pdf/ar/java/remove-backgrounds/)
+- [العمل مع عناصر PDF](/pdf/ar/java/artifacts/)

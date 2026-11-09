@@ -1,24 +1,38 @@
 ---
-title: العمل مع كائنات PDF في Java
-linktitle: العمل مع الكائنات
+title: عناصر PDF باستخدام Java
+linktitle: العمل مع عناصر PDF
 type: docs
 weight: 170
 url: /ar/java/artifacts/
-description: تعلم كيفية العمل مع كائنات PDF في Java لإضافة الخلفيات، العلامات المائية، رؤوس الصفحات، تذييلات الصفحات، وترقيم Bates، وكذلك لحساب أنواع كائنات الترقيم باستخدام Aspose.PDF.
-lastmod: "2026-10-01"
+description: إضافة عناصر PDF وفحصها وإزالتها، بما فيها الخلفيات والعلامات المائية ورؤوس الصفحات وتذييلاتها وترقيم Bates باستخدام Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: أضف الخلفيات والعلامات المائية والرؤوس والتذييلات وكائنات ترقيم Bates في Java
-Abstract: توضح هذه المقالة كيفية العمل مع كائنات PDF في Aspose.PDF for Java. تغطي كائنات الخلفية، كائنات العلامة المائية، كائنات الرأس والتذييل، ترقيم Bates، وحساب الأنواع الفرعية للكائنات مثل الخلفيات والعلامات المائية والرؤوس والتذييلات.
+AlternativeHeadline: عناصر PDF في Java
+Abstract: إضافة عناصر PDF وفحصها وإزالتها، بما فيها الخلفيات والعلامات المائية ورؤوس الصفحات وتذييلاتها وترقيم Bates.
 ---
-الكائنات في مستندات PDF هي عناصر غير محتوى في الصفحات مثل الرؤوس، التذييلات، العلامات المائية، الخلفيات، وعلامات الترقيم. تُستخدم عادةً للعلامة التجارية، وتنسيق الصفحات، والتعريف، وتدفقات عمل إدارة المستندات.
 
-استخدم هذا القسم لـ:
+عناصر PDF أجزاء من الصفحة تقع خارج المحتوى الرئيسي، مثل الخلفيات والعلامات المائية والرؤوس والتذييلات وعلامات الترقيم. تُستخدم لأغراض الهوية البصرية والتخطيط والتعريف وإدارة المستندات.
 
-- [إضافة خلفيات](/pdf/ar/java/add-backgrounds/)
-- [إضافة ترقيم بيتس](/pdf/ar/java/add-bates-numbering/)
-- [إضافة علامات مائية](/pdf/ar/java/add-watermarks/)
-- [إدارة رؤوس وتذييلات PDF](/pdf/ar/java/artifacts-header-footer/)
-- [احصاء القطع الأثرية](/pdf/ar/java/counting-artifacts/)
+## اختيار الدليل
+
+### إضافة العناصر
+
+- [إضافة الخلفيات](/pdf/ar/java/add-backgrounds/)
+- [إضافة العلامات المائية](/pdf/ar/java/add-watermarks/)
+- [إضافة ترقيم Bates](/pdf/ar/java/add-bates-numbering/)
+- [إضافة الرؤوس والتذييلات](/pdf/ar/java/artifacts-header-footer/)
+
+### فحص العناصر
+
+- [عدّ عناصر الترقيم](/pdf/ar/java/counting-artifacts/)
+- [استخراج تفاصيل العلامات المائية](/pdf/ar/java/extract-watermarks/)
+
+### إزالة العناصر
+
+- [إزالة الخلفيات](/pdf/ar/java/remove-backgrounds/)
+- [إزالة العلامات المائية](/pdf/ar/java/remove-watermarks/)
+- [إزالة ترقيم Bates](/pdf/ar/java/remove-bates-numbering/)
+- [إزالة الرؤوس والتذييلات](/pdf/ar/java/remove-headers-footers/)

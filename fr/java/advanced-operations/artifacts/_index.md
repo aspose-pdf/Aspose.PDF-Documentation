@@ -1,24 +1,37 @@
 ---
-title: Travailler avec des artefacts PDF en Java
-linktitle: Travailler avec des artefacts
+title: Travailler avec les artefacts PDF en Java
+linktitle: Travailler avec les artefacts
 type: docs
 weight: 170
 url: /fr/java/artifacts/
-description: Découvrez comment utiliser des artefacts PDF en Java pour ajouter des arrière-plans, des filigranes, des en-têtes, des pieds de page et une numérotation Bates, et compter les types d'artefacts de pagination avec Aspose.PDF.
-lastmod: "2026-09-22"
+description: Ajouter, inspecter et supprimer les artefacts PDF en Java, y compris les arrière-plans, les filigranes, les en-têtes, les pieds de page et la numérotation Bates.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Ajouter des arrière-plans, des filigranes, des en-têtes, des pieds de page et des artefacts de numérotation Bates en Java
-Abstract: Cet article explique comment utiliser les artefacts PDF dans Aspose.PDF for Java. Il couvre les artefacts d'arrière-plan, les artefacts de filigrane, les artefacts d'en-tête et de pied de page, la numérotation Bates et le comptage des sous-types d'artefacts tels que les arrière-plans, les filigranes, les en-têtes et les pieds de page.
+AlternativeHeadline: Ajouter, inspecter et supprimer les artefacts PDF en Java
+Abstract: Trouvez des guides Java pour ajouter et supprimer des artefacts PDF, inspecter les détails des filigranes et compter les artefacts de pagination par sous-type.
 ---
-Les artefacts dans les documents PDF sont des éléments de page ne contenant pas de contenu, tels que les en-têtes, les pieds de page, les filigranes, les arrière-plans et les marqueurs de pagination. Ils sont couramment utilisés pour les flux de travail de personnalisation, de mise en page, d'identification et de gestion de documents.
+Les artefacts dans les documents PDF sont des éléments de page non liés au contenu tels que les en-têtes, les pieds de page, les filigranes, les arrière-plans et les marqueurs de pagination. Ils sont couramment utilisés pour l'image de marque, la mise en page, l'identification et les flux de travail de gestion de documents.
 
-Utilisez cette section pour :
+## Choisir un guide
+
+### Ajouter des artefacts
 
 - [Ajouter des arrière-plans](/pdf/fr/java/add-backgrounds/)
-- [Ajouter une numérotation Bates](/pdf/fr/java/add-bates-numbering/)
 - [Ajouter des filigranes](/pdf/fr/java/add-watermarks/)
-- [Gérer les en-têtes et pieds de page PDF](/pdf/fr/java/artifacts-header-footer/)
-- [Compter les artefacts](/pdf/fr/java/counting-artifacts/)
+- [Ajouter une numérotation Bates](/pdf/fr/java/add-bates-numbering/)
+- [Ajouter des en-têtes et pieds de page](/pdf/fr/java/artifacts-header-footer/)
+
+### Inspecter les artefacts
+
+- [Compter les artefacts de pagination par sous-type](/pdf/fr/java/counting-artifacts/)
+- [Extraire les détails du filigrane](/pdf/fr/java/extract-watermarks/)
+
+### Supprimer des artefacts
+
+- [Supprimer les arrière-plans](/pdf/fr/java/remove-backgrounds/)
+- [Supprimer les filigranes](/pdf/fr/java/remove-watermarks/)
+- [Supprimer la numérotation Bates](/pdf/fr/java/remove-bates-numbering/)
+- [Supprimer les en-têtes et pieds de page](/pdf/fr/java/remove-headers-footers/)

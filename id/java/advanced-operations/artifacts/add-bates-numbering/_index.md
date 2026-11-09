@@ -1,27 +1,28 @@
 ---
-title: "Menambahkan Bates numbering ke PDF dalam Java"
-linktitle: "Menambahkan Bates numbering"
+title: Menambahkan penomoran Bates pada PDF dengan Java
+linktitle: Menambahkan penomoran Bates
 type: docs
 weight: 10
 url: /id/java/add-bates-numbering/
-description: Pelajari cara menambahkan dan menghapus Bates numbering pada dokumen PDF menggunakan Java dengan Aspose.PDF.
-lastmod: "2026-09-30"
+description: Tambahkan pengidentifikasi Bates berurutan ke halaman PDF dalam Java dengan bantuan penomoran Bates khusus atau API paginasi umum.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: "Menambahkan Bates numbering via Java"
-Abstract: Artikel ini menjelaskan cara membuat dan menghapus artefak penomoran Bates dalam dokumen PDF menggunakan Aspose.PDF for Java. Ini mencakup konfigurasi `BatesNArtifact`, menerapkannya melalui bantuan penomoran Bates atau bantuan paginasi umum, dan menghapus penomoran Bates dari sebuah dokumen.
+AlternativeHeadline: Menambahkan penomoran Bates pada PDF dengan Java
+Abstract: Tambahkan pengidentifikasi Bates berurutan ke halaman PDF dalam Java dengan bantuan penomoran Bates khusus atau API paginasi umum.
 ---
-Artefak penomoran Bates berguna dalam alur kerja hukum, arsip, dan kontrol dokumen di mana setiap halaman membutuhkan pengidentifikasi tingkat halaman yang persisten.
+Artefak penomoran Bates berguna dalam alur kerja hukum, arsip, dan kontrol dokumen di mana setiap halaman memerlukan pengidentifikasi tingkat halaman yang tetap.
 
-## Menambahkan penomoran Bates dengan bantuan khusus
+## Menambahkan penomoran Bates dengan metode khusus
 
-Gunakan contoh ini ketika Anda ingin menerapkan penomoran Bates melalui bantuan koleksi halaman khusus.
+Gunakan contoh ini ketika Anda ingin menerapkan penomoran Bates melalui pembantu koleksi halaman khusus.
 
-1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman tambahan yang diperlukan oleh contoh.
-1. Buat [`BatesNArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) konfigurasi.
-1. Terapkan penomoran Bates ke koleksi halaman dan simpan file output.
+1. Buka PDF sumber dengan [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman ekstra apa pun yang diperlukan oleh contoh.
+1. Konfigurasikan objek [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/).
+1. Terapkan penomoran Bates pada koleksi halaman.
+1. Simpan file keluaran.
 
 ```java
 public static void addBatesNArtifact(Path inputFile, Path outputFile) {
@@ -39,11 +40,12 @@ public static void addBatesNArtifact(Path inputFile, Path outputFile) {
 
 ## Menambahkan penomoran Bates melalui artefak paginasi
 
-Contoh ini menerapkan penomoran Bates dengan melewatkan artefak Bates melalui API pagination generik.
+Contoh ini menerapkan penomoran Bates dengan mengirimkan artefak Bates melalui API paginasi generik.
 
-1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman yang diperlukan.
-1. Buat [`BatesNArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) dan tambahkan ke dalam daftar artefak pagination.
-1. Terapkan artefak pagination ke koleksi halaman dan simpan dokumen.
+1. Buka PDF sumber dengan [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) dan tambahkan halaman yang diperlukan.
+1. Buat [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) dan tambahkan ke dalam daftar artefak paginasi.
+1. Terapkan artefak paginasi ke koleksi halaman.
+1. Simpan dokumen.
 
 ```java
 public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) {
@@ -61,19 +63,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 }
 ```
 
-## Menghapus penomoran Bates
+## Topik terkait
 
-Gunakan pendekatan ini ketika artefak penomoran Bates yang ada harus dihapus dari dokumen.
-
-1. Buka PDF sumber [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Panggil helper koleksi halaman yang menghapus penomoran Bates.
-1. Simpan file output yang sudah dibersihkan.
-
-```java
-public static void deleteBatesNumbering(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        PageCollectionExtensions.deleteBatesNumbering(document.getPages());
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Menghapus penomoran Bates](/pdf/id/java/remove-bates-numbering/)
+- [Artefak PDF](/pdf/id/java/artifacts/)
