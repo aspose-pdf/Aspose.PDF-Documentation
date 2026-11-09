@@ -24,6 +24,7 @@ The snippets are independent example functions with their SDK includes and examp
 
 Add formatted footer text using the overload with three margin values set to 20.
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
 1. Create [PdfFileStamp](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Add the footer with [PdfFileStamp::AddFooter()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/addfooter/).
@@ -55,6 +56,7 @@ namespace Facades::Examples::PDF_FileStamp
 
 Add a blue 12-point Helvetica header using margin values of 20.
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
 1. Create [PdfFileStamp](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Add the header with [PdfFileStamp::AddHeader()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/addheader/).
@@ -312,6 +314,7 @@ void AddStampToPdf(String inputFile, String imageFile, String outputFile)
 
 Add Sample Footer as formatted text with a margin value of 20.
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
 1. Create [PdfFileStamp](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Add the footer with [PdfFileStamp::AddFooter()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/addfooter/).
@@ -343,6 +346,7 @@ void AddTextFooter(String inputFile, String outputFile)
 
 Add Sample Header as formatted text with a margin value of 20.
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
 1. Create [PdfFileStamp](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Add the header with [PdfFileStamp::AddHeader()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/addheader/).

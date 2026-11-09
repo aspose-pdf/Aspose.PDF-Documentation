@@ -24,6 +24,7 @@ The snippets are independent example functions with their SDK includes and examp
 
 Change both passwords using the existing owner password and reset privileges to printing only with x128 key size.
 
+1. Configure the permission flags with [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/documentprivilege/).
 1. Create [PdfFileSecurity](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Change passwords and security settings with [PdfFileSecurity::ChangePassword()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/changepassword/).
@@ -122,6 +123,7 @@ void DecryptPdfWithOwnerPassword(String inputFile, String outputFile)
 
 Encrypt with AES, x256 key size, and printing allowed.
 
+1. Configure the permission flags with [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/documentprivilege/).
 1. Create [PdfFileSecurity](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Encrypt the bound PDF with [PdfFileSecurity::MfEncryptFile()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/mfencryptfile/).
@@ -158,6 +160,7 @@ void EncryptPdfWithEncryptionAlgorithm(String inputFile, String outputFile)
 
 Encrypt with x128 key size while disabling printing and copying from an initially AllowAll privilege set.
 
+1. Configure the permission flags with [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/documentprivilege/).
 1. Create [PdfFileSecurity](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Encrypt the bound PDF with [PdfFileSecurity::MfEncryptFile()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/mfencryptfile/).
@@ -194,6 +197,7 @@ void EncryptPdfWithPermissions(String inputFile, String outputFile)
 
 Encrypt with sample user and owner passwords, x128 key size, and printing allowed.
 
+1. Configure the permission flags with [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/documentprivilege/).
 1. Create [PdfFileSecurity](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Encrypt the bound PDF with [PdfFileSecurity::MfEncryptFile()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/mfencryptfile/).
@@ -229,6 +233,7 @@ void EncryptPdfWithUserOwnerPassword(String inputFile, String outputFile)
 
 Set printing allowed and copying disabled using the supplied sample passwords.
 
+1. Configure the permission flags with [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/documentprivilege/).
 1. Create [PdfFileSecurity](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Apply document privileges with [PdfFileSecurity::SetPrivilege()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/setprivilege/).
@@ -264,6 +269,7 @@ void SetPdfPrivilegesWithPasswords(String inputFile, String outputFile)
 
 Set a printing-only privilege set using the overload without password arguments.
 
+1. Configure the permission flags with [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/documentprivilege/).
 1. Create [PdfFileSecurity](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Apply document privileges with [PdfFileSecurity::SetPrivilege()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/setprivilege/).
@@ -376,6 +382,7 @@ void TryDecryptPdfWithoutException(String inputFile, String outputFile)
 
 Check TrySetPrivilege and save only when it returns true; otherwise print a diagnostic.
 
+1. Configure the permission flags with [DocumentPrivilege](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/documentprivilege/).
 1. Create [PdfFileSecurity](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Attempt the privilege update and check the result of [PdfFileSecurity::TrySetPrivilege()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesecurity/trysetprivilege/).

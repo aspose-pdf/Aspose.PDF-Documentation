@@ -63,6 +63,7 @@ void AddImage01(String inputFile, String outputFile)
 
 Place an image on a new page with Multiply compositing.
 
+1. Configure image blending and filtering with [CompositingParameters](https://reference.aspose.com/pdf/cpp/aspose.pdf/compositingparameters/).
 1. Create [PdfFileMend](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/).
 1. Create or open the [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and prepare its pages as shown.
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
@@ -112,6 +113,7 @@ void AddImage02(String inputFile, String outputFile)
 
 Place an image on a new page with Exclusion blending and Flate filtering.
 
+1. Configure image blending and filtering with [CompositingParameters](https://reference.aspose.com/pdf/cpp/aspose.pdf/compositingparameters/).
 1. Create [PdfFileMend](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/).
 1. Create or open the [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and prepare its pages as shown.
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
@@ -162,6 +164,7 @@ void AddImage03(String inputFile, String outputFile)
 
 Place an image with Multiply blending, Flate filtering, and the third compositing option set to false.
 
+1. Configure image blending and filtering with [CompositingParameters](https://reference.aspose.com/pdf/cpp/aspose.pdf/compositingparameters/).
 1. Create [PdfFileMend](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/).
 1. Create or open the [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and prepare its pages as shown.
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
@@ -212,6 +215,7 @@ void AddImage04(String inputFile, String outputFile)
 
 Add Welcome to Aspose! to page 1 at (10, 750).
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
 1. Create [PdfFileMend](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Place formatted text with [PdfFileMend::AddText()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/addtext/).
@@ -247,6 +251,7 @@ void AddText01(String inputFile, String outputFile)
 
 Add formatted text to page 1 and set WrapMode to ByWords before saving.
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
 1. Create [PdfFileMend](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Place formatted text with [PdfFileMend::AddText()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/addtext/).
@@ -285,6 +290,7 @@ void AddText02(String inputFile, String outputFile)
 
 Append three pages to the input PDF and add formatted text to pages 1 and 3 within the specified rectangle.
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
 1. Create [PdfFileMend](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilemend/).
 1. Create or open the [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and prepare its pages as shown.
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).

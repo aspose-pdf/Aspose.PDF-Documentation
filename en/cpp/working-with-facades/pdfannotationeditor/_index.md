@@ -156,6 +156,7 @@ void ExtractAnnotations(String inputFile, String outputFile)
 
 Flatten annotations with redaction application enabled, events disabled, buttons hidden, and appearances updated.
 
+1. Configure [Form::FlattenSettings](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/form/flattensettings/) for redaction, events, buttons, and appearance handling.
 1. Create [PdfAnnotationEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfannotationeditor/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Apply the flattening settings with [PdfAnnotationEditor::FlatteningAnnotations()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfannotationeditor/flatteningannotations/).

@@ -24,6 +24,8 @@ The snippets are independent example functions with their SDK includes and examp
 
 Create a PKCS7 signature and certify page 1 with FillingInForms modification permissions and a visible signature.
 
+1. Load the certificate and configure a [PKCS7](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/pkcs7/) signature object.
+1. Set the certification permissions with [DocMDPSignature](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/docmdpsignature/).
 1. Create [PdfFileSignature](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesignature/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Apply the certification signature with [PdfFileSignature::Certify()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesignature/certify/).
@@ -213,6 +215,7 @@ void SignPdfWithBasicParameters(String inputFile, String certificateFile, String
 
 Configure a PKCS7 certificate object and sign page 1 with the visible flag set to false.
 
+1. Load the certificate and configure a [PKCS7](https://reference.aspose.com/pdf/cpp/aspose.pdf.forms/pkcs7/) signature object.
 1. Create [PdfFileSignature](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesignature/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Apply the digital signature with [PdfFileSignature::Sign()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilesignature/sign/).

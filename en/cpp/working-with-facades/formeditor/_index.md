@@ -223,6 +223,7 @@ namespace Facades::Examples::PDF_FormEditor
 
 Apply a red background, blue text, green border, and centered alignment to First Name.
 
+1. Configure the field colors and alignment with [FormFieldFacade](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formfieldfacade/).
 1. Create [FormEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formeditor/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Set facade through [FormEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formeditor/) using the example values.

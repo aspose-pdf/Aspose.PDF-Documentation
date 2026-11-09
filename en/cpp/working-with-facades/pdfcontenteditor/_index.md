@@ -159,6 +159,7 @@ void AddMovieAnnotation(String inputFile, String movieFile, String outputFile)
 
 Create a page 1 polygon annotation using the LineInfo vertex array.
 
+1. Set the polygon vertices and border through [LineInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/lineinfo/).
 1. Create [PdfContentEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfcontenteditor/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Create the polygon annotation with [PdfContentEditor::CreatePolygon()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfcontenteditor/createpolygon/).
@@ -742,6 +743,7 @@ void ReplaceTextSimple(String inputFile, String outputFile)
 
 Replace software with SOFTWARE using blue, 14-point text and ReplaceAll scope.
 
+1. Configure text appearance through [TextState](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textstate/).
 1. Create [PdfContentEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfcontenteditor/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Replace matching text with [PdfContentEditor::ReplaceText()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfcontenteditor/replacetext/).

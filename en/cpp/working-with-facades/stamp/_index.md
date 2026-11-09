@@ -244,6 +244,8 @@ void AddStampToSpecificPages(String inputFile, String imageFile, String outputFi
 
 Bind formatted approval text and a TextState to a stamp and apply it at (36, 700) with 15-degree rotation.
 
+1. Create the text content and formatting with [FormattedText](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/formattedtext/).
+1. Configure text appearance through [TextState](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textstate/).
 1. Create [PdfFileStamp](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffilestamp/) and [Stamp](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/stamp/).
 1. Bind the PDF input with [Facade::BindPdf()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/facade/bindpdf/).
 1. Bind the formatted stamp text with [Stamp::BindLogo()](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/stamp/bindlogo/).
