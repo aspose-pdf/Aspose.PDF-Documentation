@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/extract-watermarks/
 description: Read the text and rectangle of watermark pagination artifacts on the first PDF page using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -43,7 +43,7 @@ using namespace Aspose::Pdf;
 void ExtractWatermarkFromPdf(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
-    for (auto artifact : document->get_Pages()->idx_get(1)->get_Artifacts()) {
+    for (auto& artifact : document->get_Pages()->idx_get(1)->get_Artifacts()) {
         if (artifact->get_Type() == Artifact::ArtifactType::Pagination &&
             artifact->get_Subtype() == Artifact::ArtifactSubtype::Watermark) {
             std::cout << artifact->get_Text() << " " << artifact->get_Rectangle()->ToString() << std::endl;

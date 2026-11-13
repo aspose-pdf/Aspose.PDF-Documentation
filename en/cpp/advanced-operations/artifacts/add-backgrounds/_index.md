@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/add-backgrounds/
 description: Add image or solid-color backgrounds to the first PDF page and configure image opacity using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -51,6 +51,7 @@ void AddBackgroundImageToPdf(System::String inputFile, System::String imageFile,
     artifact->set_BackgroundImage(imageStream);
     document->get_Pages()->idx_get(1)->get_Artifacts()->Add(artifact);
     document->Save(outputFile);
+    imageStream->Close();
 }
 ```
 
