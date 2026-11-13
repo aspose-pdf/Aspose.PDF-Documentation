@@ -5,7 +5,7 @@ type: docs
 weight: 135
 url: /java/pdfviewer-class/
 description: Learn how to use the PdfViewer facade in Java to decode PDF pages and inspect viewer-related settings.
-lastmod: "2026-06-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,14 @@ TechArticle: true
 AlternativeHeadline: Decode PDF pages and inspect viewer data in Java with PdfViewer
 Abstract: This section explains how to use the PdfViewer facade in Aspose.PDF for Java for page decoding and viewer-related inspection tasks. The current Java examples cover rendering all pages to images, decoding a specific page, and inspecting page count, coordinate type, resolution, and bound viewer settings.
 ---
-The Java `PdfViewerExamples` class demonstrates the main viewer workflows available through the Facades API.
+The `PdfViewer` facade renders PDF pages to images and provides access to viewer settings. Choose a workflow below to decode the whole document, render one page, or inspect the bound document.
+
+## PdfViewer workflows
+
+- [Render all PDF pages](#decode-all-pdf-pages)
+- [Render a specific page](#decode-a-specific-pdf-page)
+- [Inspect document information](#inspect-pdf-metadata)
+- [Inspect viewer settings](#inspect-bound-viewer-settings)
 
 ## Decode all PDF pages
 
