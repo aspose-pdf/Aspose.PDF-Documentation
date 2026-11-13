@@ -62,7 +62,7 @@ void GetPdfMetadata(String inputFile)
     std::cout << "Has Edit Password: " << pdfInfo->get_HasEditPassword() << std::endl;
     std::cout << "Is Portfolio: " << pdfInfo->get_HasCollection() << std::endl;
     auto reviewer = pdfInfo->GetMetaInfo(u"Reviewer");
-    std::cout << "Reviewer: " << (reviewer.IsNullOrEmpty() ? u"No Reviewer metadata found." : reviewer) << std::endl;
+    std::cout << "Reviewer: " << (reviewer.IsNullOrEmpty() ? String(u"No Reviewer metadata found.") : reviewer) << std::endl;
     pdfInfo->Close();
 }
 } // namespace  Facades::Examples::PDF_FileInfo
