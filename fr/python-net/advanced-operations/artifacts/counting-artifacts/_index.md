@@ -4,32 +4,24 @@ linktitle: Comptage des artefacts
 type: docs
 weight: 40
 url: /fr/python-net/counting-artifacts/
-description: Apprenez à inspecter et à compter les artefacts de pagination dans les documents PDF en utilisant Python avec Aspose.PDF for Python via .NET.
-lastmod: "2026-05-22"
+description: Compter les filigranes, arrière-plans, en-têtes et pieds de page par sous-type d'artefact de pagination sur une page PDF en Python.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Comptage des artefacts PDF en Python
-Abstract: Les artefacts de pagination tels que les filigranes, les arrière-plans, les en-têtes et les pieds de page sont couramment utilisés dans les documents PDF pour fournir structure, image de marque et identification. Cet exemple montre comment inspecter et compter ces artefacts de manière programmatique en utilisant Aspose.PDF for Python via .NET. En filtrant les artefacts sur une page et en les regroupant par sous‑type, les développeurs peuvent rapidement analyser la composition du document et vérifier la présence d'éléments spécifiques. Le code fourni illustre comment ouvrir un PDF, extraire les artefacts de pagination de la première page, compter chaque sous‑type et afficher les résultats, offrant une approche pratique de l'audit et de la validation de documents.
+AlternativeHeadline: Comptage des artefacts PDF avec Python
+Abstract: Compter les artefacts de pagination sur une page PDF pour vérifier les filigranes, les arrière-plans, les en-têtes et les pieds de page.
 ---
 
-## Comptage des artefacts d'un type particulier
+Compter les artefacts de pagination sur une page PDF pour vérifier les filigranes, les arrière-plans, les en-têtes et les pieds de page.
 
-Inspectez et comptez les artefacts de pagination dans un PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) en utilisant Aspose.PDF for Python via .NET. Les artefacts de pagination comprennent des éléments tels que les filigranes, les arrière-plans, les en-têtes et les pieds de page qui sont appliqués aux pages à des fins de mise en page et d’identification. En filtrant [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) objets sur un [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) et les regrouper par sous-type (`Artifact.ArtifactSubtype`), les développeurs peuvent rapidement analyser la structure du document et vérifier la présence d’éléments spécifiques.
+## Compter les artefacts par sous-type
 
-Pour calculer le nombre total d’artefacts d’un type particulier (par exemple, le nombre total de filigranes), utilisez le code suivant. L’exemple filtre les page’s [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection (un [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)) par [`Artifact.ArtifactType`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/#properties) et puis compte les sous-types (`Artifact.ArtifactSubtype`).
-
-1. Ouvrez le document PDF (voir [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
-1. Filtrer les artefacts de pagination en utilisant la page [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection.
-1. Compter les artefacts par sous-type (`Artifact.ArtifactSubtype`).
-1. Imprimer les résultats.
+Filtrez la collection `artifacts` de la première page par le type `PAGINATION`, puis comptez les artefacts par sous-type. L’exemple affiche zéro pour chaque sous-type absent.
 
 ```python
-
-from os import path
 from collections import Counter
-import sys
 import aspose.pdf as ap
 
 def count_pdf_artifacts(infile):
@@ -50,9 +42,10 @@ def count_pdf_artifacts(infile):
         print(f"Footers: {counts.get(ap.Artifact.ArtifactSubtype.FOOTER, 0)}")
 ```
 
-## Sujets d'artefacts associés
+## Rubriques connexes
 
 - [Travailler avec les artefacts PDF en Python](/pdf/fr/python-net/artifacts/)
-- [Ajouter des filigranes aux PDF en Python](/pdf/fr/python-net/add-watermarks/)
-- [Ajouter des arrière-plans PDF en Python](/pdf/fr/python-net/add-backgrounds/)
-- [Ajouter la numérotation Bates aux PDF en Python](/pdf/fr/python-net/add-bates-numbering/)
+- [Extraire les détails du filigrane](/pdf/fr/python-net/extract-watermarks/)
+- [Supprimer les filigranes](/pdf/fr/python-net/remove-watermarks/)
+- [Supprimer les arrière-plans](/pdf/fr/python-net/remove-backgrounds/)
+- [Supprimer les en-têtes et pieds de page](/pdf/fr/python-net/remove-headers-footers/)

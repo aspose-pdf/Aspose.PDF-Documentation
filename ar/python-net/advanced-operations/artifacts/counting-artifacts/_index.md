@@ -1,35 +1,27 @@
 ---
-title: عد مصنوعات PDF في بايثون
-linktitle: عد القطع الأثرية
+title: عدّ عناصر الترقيم في PDF باستخدام Python
+linktitle: عدّ عناصر الترقيم
 type: docs
 weight: 40
 url: /ar/python-net/counting-artifacts/
-description: تعرف على كيفية فحص عناصر ترقيم الصفحات وحسابها في مستندات PDF باستخدام Python مع Aspose.PDF لـ Python عبر .NET.
-lastmod: "2026-06-11"
+description: عدّ عناصر الترقيم في صفحة PDF بحسب النوع الفرعي للعلامة المائية أو الخلفية أو الرأس أو التذييل باستخدام Python.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: عد القطع الأثرية في PDF باستخدام Python
-Abstract: تُستخدم عناصر ترقيم الصفحات مثل العلامات المائية والخلفيات والرؤوس والتذييلات بشكل شائع في مستندات PDF لتوفير البنية والعلامة التجارية والتعريف. يوضح هذا المثال كيفية فحص هذه القطع الأثرية وحسابها برمجيًا باستخدام Aspose.PDF لـ Python عبر .NET. من خلال تصفية العناصر الموجودة على الصفحة وتجميعها حسب النوع الفرعي، يمكن للمطورين تحليل تكوين المستند بسرعة والتحقق من وجود عناصر محددة. توضح التعليمات البرمجية المتوفرة كيفية فتح ملف PDF، واستخراج عناصر ترقيم الصفحات من الصفحة الأولى، وحساب كل نوع فرعي، وإخراج النتائج، مما يوفر نهجًا عمليًا لتدقيق المستندات والتحقق من صحتها.
+AlternativeHeadline: عدّ عناصر الترقيم في PDF في Python
+Abstract: عدّ عناصر الترقيم في صفحة PDF بحسب النوع الفرعي للعلامة المائية أو الخلفية أو الرأس أو التذييل.
 ---
 
-## عد القطع الأثرية من نوع معين
+يكشف عدّ عناصر الترقيم في صفحة PDF عن العلامات المائية والخلفيات والرؤوس والتذييلات.
 
-فحص وإحصاء آثار ترقيم الصفحات في ملف PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) باستخدام Aspose.PDF لبيثون عبر.NET. تتضمن عناصر ترقيم الصفحات عناصر مثل العلامات المائية والخلفيات والرؤوس والتذييلات التي يتم تطبيقها على الصفحات لأغراض التخطيط والتعريف. عن طريق التصفية [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) الكائنات الموجودة على [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) وتجميعها حسب النوع الفرعي (`Artifact.ArtifactSubtype`)، يمكن للمطورين تحليل بنية المستند بسرعة والتحقق من وجود عناصر محددة.
+## عدّ عناصر الترقيم بحسب النوع الفرعي
 
-لحساب العدد الإجمالي للقطع الأثرية من نوع معين (على سبيل المثال، العدد الإجمالي للعلامات المائية)، استخدم التعليمة البرمجية التالية. يقوم المثال بتصفية الصفحات [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) مجموعة (و) [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)) بواسطة [`Artifact.ArtifactType`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/#properties) ثم يحسب الأنواع الفرعية (`Artifact.ArtifactSubtype`).
-
-1. افتح وثيقة PDF (انظر [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
-1. تصفية عناصر ترقيم الصفحات باستخدام الصفحة [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) مجموعة.
-1. عد القطع الأثرية حسب النوع الفرعي (`Artifact.ArtifactSubtype`).
-1. نتائج الطباعة.
+رشّح مجموعة `artifacts` في الصفحة الأولى بحسب النوع `PAGINATION`، ثم احسب عدد العناصر من كل نوع فرعي. يطبع المثال صفرًا عند غياب أحد الأنواع الفرعية.
 
 ```python
-
-from os import path
 from collections import Counter
-import sys
 import aspose.pdf as ap
 
 def count_pdf_artifacts(infile):
@@ -50,9 +42,10 @@ def count_pdf_artifacts(infile):
         print(f"Footers: {counts.get(ap.Artifact.ArtifactSubtype.FOOTER, 0)}")
 ```
 
-## موضوعات القطع الأثرية ذات الصلة
+## مواضيع ذات صلة
 
-- [العمل مع مصنوعات PDF في بايثون](/pdf/ar/python-net/artifacts/)
-- [أضف علامات مائية إلى PDF في Python](/pdf/ar/python-net/add-watermarks/)
-- [إضافة خلفيات PDF في بايثون](/pdf/ar/python-net/add-backgrounds/)
-- [إضافة ترقيم بيتس إلى PDF في بايثون](/pdf/ar/python-net/add-bates-numbering/)
+- [العمل مع عناصر PDF](/pdf/ar/python-net/artifacts/)
+- [استخراج تفاصيل العلامات المائية](/pdf/ar/python-net/extract-watermarks/)
+- [إزالة العلامات المائية](/pdf/ar/python-net/remove-watermarks/)
+- [إزالة الخلفيات](/pdf/ar/python-net/remove-backgrounds/)
+- [إزالة الرؤوس والتذييلات](/pdf/ar/python-net/remove-headers-footers/)

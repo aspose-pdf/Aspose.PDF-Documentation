@@ -4,22 +4,22 @@ linktitle: Adicionar fundos
 type: docs
 weight: 20
 url: /pt/java/add-backgrounds/
-description: Aprenda como adicionar uma imagem de fundo ou cor de fundo às páginas PDF em Java usando `BackgroundArtifact` com Aspose.PDF.
-lastmod: "2026-10-06"
+description: Adicionar imagens e fundos de cor sólida às páginas PDF em Java e ajustar a opacidade da imagem.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Adicionar fundo a PDF com Java
-Abstract: Este artigo explica como adicionar ou remover planos de fundo de páginas PDF em Java usando Aspose.PDF. Ele cobre a adição de uma imagem de fundo, o ajuste da opacidade da imagem, a aplicação de uma cor de fundo e a remoção de artefatos de fundo de uma página.
+AlternativeHeadline: Adicionar fundos em Java
+Abstract: Adicionar imagens e fundos de cor sólida às páginas PDF em Java e ajustar a opacidade da imagem.
 ---
-Artefatos de fundo permitem colocar elementos visuais não de conteúdo atrás do conteúdo principal da página sem alterar o texto lógico do documento.
+Os artefatos de fundo permitem que você coloque elementos visuais que não são conteúdo atrás do conteúdo principal da página sem alterar o texto lógico do documento.
 
 ## Adicionar uma imagem de fundo a um PDF
 
-Use este exemplo quando a página deve exibir uma imagem como um artefato de fundo.
+Use este exemplo quando a página deve exibir uma imagem como artefato de fundo.
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e o fluxo de entrada da imagem.
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e abra o fluxo de imagem.
 1. Crie um [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) e atribua o fluxo de imagem.
 1. Adicione o artefato à página de destino e salve o PDF de saída.
 
@@ -39,8 +39,8 @@ public static void addBackgroundImageToPdf(Path inputFile, Path imageFile, Path 
 
 Este exemplo coloca uma imagem de fundo semitransparente atrás do conteúdo da página.
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e fluxo de imagem.
-1. Crie um [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/), atribua a imagem e defina a opacidade.
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) e abra o fluxo de imagem.
+1. Crie um [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/), atribua a imagem, e defina a opacidade.
 1. Adicione o artefato à página e salve o documento.
 
 ```java
@@ -61,7 +61,7 @@ public static void addBackgroundImageWithOpacityToPdf(Path inputFile, Path image
 
 Use este exemplo quando a página deve usar uma cor de fundo sólida em vez de uma imagem.
 
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Abra o PDF de origem com [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
 1. Crie um [BackgroundArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/backgroundartifact/) e atribua a cor de fundo.
 1. Adicione o artefato à página e salve o arquivo de saída.
 
@@ -76,26 +76,7 @@ public static void addBackgroundColorToPdf(Path inputFile, Path outputFile) {
 }
 ```
 
-## Remover artefatos de fundo
+## Tópicos relacionados
 
-Use esta abordagem quando os artefatos de fundo existentes devem ser excluídos da página.
-
-1. Abra o PDF de origem em um objeto [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Itere pela coleção de artefatos da página em ordem inversa.
-1. Exclua artefatos cujo tipo é paginação e cujo subtipo é fundo, então salvar o documento.
-
-```java
-public static void removeBackground(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Background) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Remover fundos](/pdf/pt/java/remove-backgrounds/)
+- [Trabalhar com artefatos PDF em Java](/pdf/pt/java/artifacts/)

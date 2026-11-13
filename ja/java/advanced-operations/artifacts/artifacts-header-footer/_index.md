@@ -1,26 +1,26 @@
 ---
-title: "Java を使用した PDF ヘッダーとフッターの管理"
-linktitle: "PDF のヘッダーとフッターの管理"
+title: JavaでPDFヘッダーとフッターを追加する
+linktitle: ヘッダーとフッターを追加する
 type: docs
 weight: 70
 url: /ja/java/artifacts-header-footer/
-description: "Aspose.PDF for Java を使用して、PDF ドキュメントにヘッダーおよびフッターのアーティファクトを追加・削除する方法を学習します。"
-lastmod: "2026-10-06"
+description: スタイル付きのヘッダーとフッターのアーティファクトを作成し、JavaでPDFページに追加します。
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: "Java を使用した PDF ヘッダーとフッターの追加・カスタマイズ・削除"
-Abstract: このガイドでは、Aspose.PDF for Java を使用して PDF ドキュメント内のヘッダーおよびフッターアーティファクトを管理する方法を説明します。再利用可能な `HeaderArtifact` および `FooterArtifact` オブジェクトをカスタムテキストステートと配置で作成し、ページに追加し、既存のヘッダーおよびフッターアーティファクトを削除する方法を取り上げます。
+AlternativeHeadline: Javaでヘッダーとフッターを追加する
+Abstract: スタイル付きのヘッダーとフッターのアーティファクトを作成し、JavaでPDFページに追加します。
 ---
-ヘッダーとフッターのアーティファクトは、繰り返しラベル、ページ識別子、レイアウトフレーミングなどに一般的に使用される、コンテンツではないページネーション要素です。
+ヘッダーおよびフッターアーティファクトは、繰り返し使用されるラベル、ページ識別子、レイアウトのフレーミングに一般的に使用される、コンテンツではないページ付け要素です。
 
-## ヘッダーアーティファクトの作成
+## ヘッダーアーティファクトを作成する
 
-一貫したテキストスタイリングと配置を持つ再利用可能なヘッダーアーティファクトが必要な場合に、このヘルパーを使用してください。
+テキストのスタイリングと配置を一貫させた再利用可能なヘッダーアーティファクトが必要な場合に、このヘルパーを使用してください。
 
-1. [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/) を作成してください。
-1. テキスト、フォント設定、および前景色を設定してください。
+1. [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/) オブジェクトを作成してください。
+1. テキスト、フォント設定、前景色を設定してください。
 1. 水平揃えを設定し、アーティファクトを返してください。
 
 ```java
@@ -35,11 +35,11 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 }
 ```
 
-## フッターアーティファクトの作成
+## フッター アーティファクトを作成する
 
-このヘルパーは、ヘッダーアーティファクトと同じスタイリングパターンを持つ再利用可能なフッターアーティファクトを作成します。
+このヘルパーは、ヘッダー アーティファクトと同じスタイリング パターンを持つ再利用可能なフッター アーティファクトを作成します。
 
-1. [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/) を作成してください。
+1. [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/) オブジェクトを作成してください。
 1. テキスト、テキスト状態、および前景色を設定してください。
 1. 配置を設定し、アーティファクトを返してください。
 
@@ -55,12 +55,12 @@ public static FooterArtifact createFooterArtifact(String text) {
 }
 ```
 
-## ヘッダーアーティファクトの追加
+## ヘッダー artifact を追加します
 
 ページに再利用可能なヘッダーアーティファクトを表示する必要がある場合は、この例を使用してください。
 
-1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ヘルパーメソッドを通じてヘッダーアーティファクトを作成してください。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) で元の PDF を開いてください。
+1. ヘルパーメソッドを使用してヘッダーアーティファクトを作成してください。
 1. アーティファクトをページに追加し、出力ファイルを保存してください。
 
 ```java
@@ -73,12 +73,12 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## フッターアーティファクトの追加
+## フッターアーティファクトを追加
 
-ページが再利用可能なフォーマットでフッターアーティファクトを表示する場合は、この例を使用してください。
+ページに再利用可能な書式設定を持つフッターアーティファクトを表示する必要がある場合は、この例を使用してください。
 
-1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ヘルパーメソッドを使用してフッターアーティファクトを作成してください。
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) で元の PDF を開いてください。
+1. ヘルパーメソッドを介してフッターアーティファクトを作成してください。
 1. アーティファクトをページに追加し、出力ファイルを保存してください。
 
 ```java
@@ -91,27 +91,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## ヘッダーとフッターのアーティファクトの削除
+## 関連トピック
 
-既存のヘッダーおよびフッターのアーティファクトをページから削除する必要がある場合に、この方法を使用します。
-
-1. ソース PDF の [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) を開いてください。
-1. ページのアーティファクトコレクションを逆順に反復処理してください。
-1. サブタイプがヘッダーまたはフッターであるページネーションアーティファクトを削除し、ドキュメントを保存してください。
-
-```java
-public static void deleteHeaderFooterArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && (artifact.getSubtype() == Artifact.ArtifactSubtype.Header
-                    || artifact.getSubtype() == Artifact.ArtifactSubtype.Footer)) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [ヘッダーとフッターを削除](/pdf/ja/java/remove-headers-footers/)
+- [Java で PDF アーティファクトを操作](/pdf/ja/java/artifacts/)

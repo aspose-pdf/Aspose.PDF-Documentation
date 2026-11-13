@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /java/pdffileinfo-class/
 description: Learn how to use the PdfFileInfo facade in Java to inspect PDF metadata, document properties, privileges, version details, and page information.
-lastmod: "2026-06-09"
+lastmod: "2026-11-13"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -14,10 +14,10 @@ TechArticle: true
 AlternativeHeadline: Inspect PDF metadata, properties, and page information in Java with PdfFileInfo
 Abstract: This section explains how to use the PdfFileInfo facade in Aspose.PDF for Java to inspect PDF file details programmatically. The current Java examples cover PDF version lookup, document privileges, page dimensions and offsets, and reading or updating document metadata.
 ---
-The Java `PdfFileInfoExamples` class demonstrates the main inspection and metadata workflows available through the Facades API.
+The `PdfFileInfo` facade provides access to PDF metadata, document properties, and page geometry. Use these guides to inspect a file before processing it or to update its document information.
 
-Use this section to learn how to:
+## What you can do with PdfFileInfo
 
-- read PDF version and document privileges
-- inspect page width, height, rotation, and offsets
-- get, set, clear, and save document metadata with XMP
+- [Inspect PDF version and document privileges](/pdf/java/document-properties/)
+- [Retrieve page dimensions, rotation, and offsets](/pdf/java/page-information/)
+- [Read and update PDF metadata](/pdf/java/pdf-metadata/)

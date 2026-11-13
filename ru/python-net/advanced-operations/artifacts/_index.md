@@ -1,67 +1,49 @@
 ---
-title: Работа с артефактами PDF в Python
-linktitle: Работа с артефактами
+title: Работа с PDF-артефактами на Python
+linktitle: Работа с PDF-артефактами
 type: docs
 weight: 170
 url: /ru/python-net/artifacts/
-description: Узнайте, как работать с артефактами PDF в Python, чтобы добавлять фоны, водяные знаки и нумерацию Bates, а также подсчитывать типы артефактов с помощью Aspose.PDF for Python via .NET.
-lastmod: "2026-04-15"
+description: Добавляйте, проверяйте и удаляйте PDF-артефакты в Python, включая фоны, водяные знаки, колонтитулы и нумерацию Бейтса.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Добавление фоновых изображений, водяных знаков и артефактов нумерации Bates в Python
-Abstract: В этой статье объясняется, как работать с артефактами PDF в Aspose.PDF for Python via .NET. Узнайте, что такое артефакты, почему они важны для доступности и верстки документа, а также как добавлять фоновые изображения, применять водяные знаки, добавлять нумерацию Bates и проверять типы артефактов в PDF‑файлах с помощью Python.
+AlternativeHeadline: Работа с PDF-артефактами на Python
+Abstract: Найдите руководства по добавлению и удалению PDF-артефактов, проверке деталей водяных знаков и подсчету артефактов пагинации по подтипу с помощью Aspose.PDF for Python via .NET.
 ---
 
-Артефакты в PDF — это графические объекты или другие элементы, которые не являются частью фактического содержимого документа. Обычно они используются для украшения, верстки или в качестве фона. Примеры артефактов включают заголовки страниц, колонтитулы, разделительные линии или изображения, не несущие смысловой нагрузки.
+PDF-артефакты помечают элементы страниц, такие как декоративные фоны, текущие колонтитулы и водяные знаки. В помеченном PDF вспомогательные технологии могут пропускать артефакты и фокусироваться на значимом содержимом документа.
 
-Цель артефактов в PDF состоит в том, чтобы обеспечить различие между элементами контента и неконтентными элементами. Это важно для доступности, поскольку программы чтения с экрана и другие вспомогательные технологии могут игнорировать артефакты и сосредотачиваться на соответствующем контенте. Артефакты также могут улучшить производительность и качество PDF‑документов, так как их можно исключать из печати, поиска или копирования.
+## Выбор руководства
 
-Используйте этот раздел, когда нужно создавать или проверять неконтентные элементы PDF в Python, такие как фон документа, водяные знаки страниц и метки нумерации Бейтса. Ниже приведены руководства, показывающие основные рабочие процессы с артефактами, поддерживаемые Aspose.PDF for Python via .NET.
+### Добавление артефактов
 
-Чтобы создать элемент в качестве артефакта в PDF, вам нужно использовать the [Artifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) класс.
-Он содержит следующие полезные свойства:
+- [Добавление фона](/pdf/ru/python-net/add-backgrounds/)
+- [Добавление водяных знаков](/pdf/ru/python-net/add-watermarks/)
+- [Добавление нумерации Бейтса](/pdf/ru/python-net/add-bates-numbering/)
+- [Добавление колонтитулов](/pdf/ru/python-net/artifacts-header-footer/)
 
-- **custom_type** - Получает название типа артефакта. Может использоваться, если тип артефакта не является стандартным.
-- **custom_subtype** - Получает название подтипа артефакта. Может использоваться, если подтип артефакта не является стандартным.
-- **type** - Получает тип артефакта.
-- **subtype** - Получает подтип артефакта. Если у артефакта есть нестандартный подтип, название подтипа можно прочитать через CustomSubtype.
-- **contents** - Получает коллекцию внутренних операторов артефакта.
-- **form** - Получает XForm артефакта (если используется XForm).
-- **rectangle** — Получает прямоугольник артефакта.
-- **position** — Получает или задает позицию артефакта. Если это свойство указано, то отступы и выравнивания игнорируются.
-- **right_margin** — Правый отступ артефакта. Если позиция указана явно (в свойстве Position), это значение игнорируется.
-- **left_margin** — Левый отступ артефакта. Если позиция указана явно (в свойстве Position), это значение игнорируется.
-- **top_margin** — Верхний отступ артефакта. Если позиция указана явно (в свойстве Position), это значение игнорируется.
-- **bottom_margin** — Нижний отступ артефакта. Если позиция указана явно (в свойстве Position), это значение игнорируется.
-- **artifact_horizontal_alignment** - Горизонтальное выравнивание артефакта. Если позиция указана явно (в свойстве Position), это значение игнорируется.
-- **artifact_vertical_alignment** - Вертикальное выравнивание артефакта. Если позиция указана явно (в свойстве Position), это значение игнорируется.
-- **rotation** - Получает или задаёт угол поворота артефакта.
-- **text** - Получает текст артефакта.
-- **image** - Получает изображение артефакта (если присутствует).
-- **opacity** - Получает или задаёт непрозрачность артефакта. Возможные значения находятся в диапазоне 0..1.
-- **lines** - Строки многострочного текстового артефакта.
-- **text_state** - Состояние текста для текста артефакта.
-- **is_background** - Если true, артефакт размещается позади содержимого страницы.
+### Просмотр артефактов
 
-Следующие классы также могут быть полезны при работе с артефактами:
+- [Подсчёт артефактов по подтипам](/pdf/ru/python-net/counting-artifacts/)
+- [Извлечение текста и границ водяных знаков](/pdf/ru/python-net/extract-watermarks/)
 
-- [ArtifactCollection](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)
-- [BackgroundArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/)
-- [HeaderArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerartifact/)
-- [FooterArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/footerartifact/)
-- [WatermarkArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/)
-- [BatesNArtifact](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/)
+### Удаление артефактов
 
-## Рабочие процессы артефактов, охваченные в этом разделе
+- [Удаление фона](/pdf/ru/python-net/remove-backgrounds/)
+- [Удаление водяных знаков](/pdf/ru/python-net/remove-watermarks/)
+- [Удаление нумерации Бейтса](/pdf/ru/python-net/remove-bates-numbering/)
+- [Удаление колонтитулов](/pdf/ru/python-net/remove-headers-footers/)
 
-Пожалуйста, ознакомьтесь со следующими разделами статьи:
+## API артефактов
 
-- [Добавление фонов](/pdf/ru/python-net/add-backgrounds/) - добавьте фоновое изображение в ваш PDF‑файл с помощью Python.
-- [Добавление нумерации Бейтса](/pdf/ru/python-net/add-bates-numbering/) - добавить Bates Numbering в PDF.
-- [Добавление водяного знака](/pdf/ru/python-net/add-watermarks/) - как добавить watermark в PDF с помощью Python.
-- [Подсчёт артефактов](/pdf/ru/python-net/counting-artifacts/) - подсчет Artifacts в PDF с использованием Python.
-- [Управляйте заголовками и нижними колонтитулами PDF](/pdf/ru/python-net/artifacts-header-footer/) - управление headers и footers в PDF documents.
+Свойство `artifacts` возвращает коллекцию [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/) для страницы. Класс [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) предоставляет общие свойства для специализированных классов [`BackgroundArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/backgroundartifact/), [`WatermarkArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/watermarkartifact/), [`HeaderArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/headerartifact/), [`FooterArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/footerartifact/) и [`BatesNArtifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/batesnartifact/).
 
-Эти руководства полезны, когда вам нужно управлять декоративными или структурными элементами PDF без изменения основного потока содержимого документа.
+| Задача | Свойства |
+| --- | --- |
+| Определить артефакт | Использовать `type` и `subtype` для стандартных классификаций и `custom_type` и `custom_subtype` для пользовательских имён. |
+| Просмотрите его содержимое | Использовать `text`, `image`, и `lines` для текста и изображений, или `contents` и `form` для операторов PDF и связанной XForm. |
+| Разместите его на странице | Использовать `rectangle` для проверки его границ. Установить `position` для явного размещения или использования `left_margin`, `right_margin`, `top_margin`, `bottom_margin`, `artifact_horizontal_alignment`, и `artifact_vertical_alignment`. Явная позиция переопределяет отступы и выравнивание. |
+| Контролируйте его внешний вид | Использовать `rotation`, `opacity` (от 0 до 1), и `text_state`. Установить `is_background` разместить артефакт за содержимым страницы. |

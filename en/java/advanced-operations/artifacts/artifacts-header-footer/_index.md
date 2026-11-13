@@ -1,17 +1,17 @@
 ---
-title: Manage PDF Headers and Footers using Java
-linktitle: Manage PDF Headers and Footers
+title: Add PDF Headers and Footers in Java
+linktitle: Add Headers and Footers
 type: docs
 weight: 70
 url: /java/artifacts-header-footer/
-description: Learn how to add and remove header and footer artifacts in PDF documents using Aspose.PDF for Java.
-lastmod: "2026-06-09"
+description: Create styled header and footer artifacts and add them to PDF pages in Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: How to Add, Customize, and Remove PDF Headers and Footers Using Java
-Abstract: This article explains how to manage header and footer artifacts in PDF documents using Aspose.PDF for Java. It covers creating reusable `HeaderArtifact` and `FooterArtifact` objects with custom text state and alignment, adding them to a page, and deleting existing header and footer artifacts.
+AlternativeHeadline: Add Headers and Footers in Java
+Abstract: Create styled header and footer artifacts and add them to PDF pages in Java.
 ---
 Header and footer artifacts are non-content pagination elements commonly used for repeated labels, page identifiers, and layout framing.
 
@@ -91,27 +91,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## Delete header and footer artifacts
+## Related artifact topics
 
-Use this approach when existing header and footer artifacts should be removed from the page.
-
-1. Open the source PDF [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Iterate through the page artifact collection in reverse order.
-1. Delete pagination artifacts whose subtype is header or footer, then save the document.
-
-```java
-public static void deleteHeaderFooterArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && (artifact.getSubtype() == Artifact.ArtifactSubtype.Header
-                    || artifact.getSubtype() == Artifact.ArtifactSubtype.Footer)) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Remove Headers and Footers](/pdf/java/remove-headers-footers/)
+- [Work with PDF Artifacts in Java](/pdf/java/artifacts/)

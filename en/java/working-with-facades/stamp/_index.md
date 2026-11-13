@@ -5,7 +5,7 @@ type: docs
 weight: 150
 url: /java/stamp-class/
 description: Learn how to work with the Stamp class in Java to add image, PDF, and text-based stamps to PDF documents.
-lastmod: "2026-06-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "weekly"
     priority: 0.7
@@ -13,7 +13,15 @@ TechArticle: true
 AlternativeHeadline: Add image, PDF, and text stamps to PDF documents in Java
 Abstract: This section explains how to use the Stamp class together with PdfFileStamp in Aspose.PDF for Java to add reusable stamp content to PDF documents. The current Java examples cover image stamps, PDF-page stamps, text stamps with a custom TextState, page-specific stamps, and background image stamps with opacity, size, and rotation settings.
 ---
-The Java `StampExamples` class demonstrates the main stamp-building workflows available through the Facades API.
+Use `Stamp` with `PdfFileStamp` to place reusable image, PDF-page, or text content on a document. The examples below also configure selected target pages and background placement.
+
+## Stamp workflows
+
+- [Add an image stamp](#add-an-image-stamp)
+- [Reuse a PDF page as a stamp](#add-a-pdf-page-as-a-stamp)
+- [Add styled text](#add-a-text-stamp-with-textstate)
+- [Stamp selected pages](#add-a-stamp-to-specific-pages)
+- [Add a background image stamp](#add-a-background-image-stamp)
 
 ## Add an image stamp
 

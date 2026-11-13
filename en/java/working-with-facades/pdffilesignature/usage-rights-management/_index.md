@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /java/usage-rights-management/
 description: Review current Java coverage for PDF usage-rights management with PdfFileSignature.
-lastmod: "2026-06-09"
+lastmod: "2026-11-13"
 draft: false
 sitemap:
     changefreq: "weekly"
@@ -20,7 +20,7 @@ The current Java example class for `PdfFileSignature` does not provide dedicated
 
 Available source-backed workflows in this section include:
 
-- [Sign PDF Documents](/java/pdf-signing/)
-- [PDF Certification](/java/pdf-certification/)
-- [Signature Verification](/java/signature-verification/)
-- [Signature Management](/java/signature-management/)
+- [Sign PDF Documents](/pdf/java/pdf-signing/)
+- [PDF Certification](/pdf/java/pdf-certification/)
+- [Signature Verification](/pdf/java/signature-verification/)
+- [Signature Management](/pdf/java/signature-management/)
