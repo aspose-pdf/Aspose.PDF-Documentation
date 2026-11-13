@@ -18,7 +18,7 @@ Use Aspose.PDF for C++ to create PDF documents from image, text, markup, and pag
 
 The guides below also cover PDF export to editable documents, web content, and images, plus PDF standard conversion and validation.
 
-## Convert other formats to PDF 
+## Convert other formats to PDF
 
 - [Convert Images to PDF](/pdf/cpp/convert-images-format-to-pdf/) — Convert BMP, JPEG, PNG, EMF, DICOM, TIFF, CGM, and SVG images to PDF in C++ using Aspose.PDF.
 - [Convert other file formats to PDF](/pdf/cpp/convert-other-files-to-pdf/) — Convert text, LaTeX, Markdown, PostScript, XPS, and XML with XSL-FO stylesheets to PDF using Aspose.PDF for C++.
