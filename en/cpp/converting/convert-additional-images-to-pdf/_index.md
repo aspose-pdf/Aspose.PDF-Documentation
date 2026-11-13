@@ -79,9 +79,9 @@ namespace ConvertingExamples
 
 Render the EMF through the C++ drawing library, encode the bitmap as PNG in memory, and add that stream to a PDF image. This workflow rasterizes the source rather than retaining vector content.
 
-1. Load the EMF with System::Drawing::[Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/)::FromFile() and construct a bitmap.
+1. Load the EMF with System::Drawing::Image::FromFile() and construct a bitmap.
 1. Save the bitmap as PNG to a MemoryStream and reset its position to zero.
-1. Create a PDF [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/), assign the PNG stream with set_[Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/)Stream(), and add the image to a new page.
+1. Create a PDF [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and an [Image](https://reference.aspose.com/pdf/cpp/aspose.pdf/image/), assign the PNG stream with Image::set_ImageStream(), and add the image to a new page.
 1. Save the PDF while the image stream remains available.
 
 ```cpp
