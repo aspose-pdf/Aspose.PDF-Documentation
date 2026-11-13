@@ -47,7 +47,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/CreateExamples.createLinkAnnotationGoToAction.
 void CreateLinkAnnotationGoToAction(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -95,7 +94,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/CreateExamples.createLinkAnnotationGoToRemoteAction.
 void CreateLinkAnnotationGoToRemoteAction(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -135,7 +133,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/CreateExamples.createLinkAnnotationGoToUriAction.
 void CreateLinkAnnotationGoToUriAction(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -177,7 +174,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/CreateExamples.createLinkAnnotationLaunchAction.
 void CreateLinkAnnotationLaunchAction(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

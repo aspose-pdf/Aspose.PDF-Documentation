@@ -35,7 +35,6 @@ Print each top-level bookmark's title, italic flag, bold flag, and color.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of bookmarks/GetExamples.getBookmarks.
 void GetBookmarks(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -68,7 +67,6 @@ Print top-level bookmark properties and the same properties for their immediate 
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of bookmarks/GetExamples.getChildBookmarks.
 void GetChildBookmarks(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -114,7 +112,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
-// Port of bookmarks/GetExamples.getBookmarkPageNumber.
 void GetBookmarkPageNumber(System::String inputFile)
 {
     auto bookmarkEditor = MakeObject<PdfBookmarkEditor>();
@@ -153,7 +150,6 @@ Select the first child of the first top-level bookmark, rename it Updated Outlin
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of bookmarks/GetExamples.updateBookmarks.
 void UpdateBookmarks(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -186,7 +182,6 @@ Set the document page mode to UseOutlines and mark each top-level bookmark as op
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of bookmarks/GetExamples.expandedBookmarks.
 void ExpandedBookmarks(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

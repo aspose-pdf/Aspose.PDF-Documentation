@@ -41,7 +41,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of bookmarks/AddExamples.addBookmark.
 void AddBookmark(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -75,7 +74,6 @@ Create Parent Outline with a nested Child Outline, both bold and italic. This sa
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of bookmarks/AddExamples.addChildBookmark.
 void AddChildBookmark(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -112,7 +110,6 @@ Delete the outline entry named Child Outline using the title-based overload.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of bookmarks/AddExamples.deleteBookmark.
 void DeleteBookmark(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -137,7 +134,6 @@ Remove the document outline entries with the no-argument Delete() overload.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of bookmarks/AddExamples.deleteBookmarks.
 void DeleteBookmarks(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

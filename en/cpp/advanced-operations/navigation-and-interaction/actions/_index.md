@@ -38,7 +38,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of ActionsExamples.addLaunchActions.
 void AddLaunchActions(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -78,7 +77,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of ActionsExamples.addPageActions.
 void AddPageActions(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -119,7 +117,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of ActionsExamples.removePageActions.
 void RemovePageActions(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -167,7 +164,6 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Forms;
 
-// Port of ActionsExamples.addNavigationButtons.
 void AddNavigationButtons(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -248,7 +244,6 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Forms;
 
-// Port of ActionsExamples.addNamedActionPrint.
 void AddNamedActionPrint(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -300,7 +295,6 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Forms;
 
-// Port of ActionsExamples.addNamedActionHide.
 void AddNamedActionHide(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -352,7 +346,6 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Forms;
 
-// Port of ActionsExamples.addSubmitAction.
 void AddSubmitAction(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

@@ -42,7 +42,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/UpdateExamples.linkAnnotationUpdateBorder.
 void LinkAnnotationUpdateBorder(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -89,7 +88,6 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Text;
 
-// Port of links/UpdateExamples.linkAnnotationUpdateTextColor.
 void LinkAnnotationUpdateTextColor(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -137,7 +135,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/UpdateExamples.linkAnnotationUpdateWebDestination.
 void LinkAnnotationUpdateWebDestination(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

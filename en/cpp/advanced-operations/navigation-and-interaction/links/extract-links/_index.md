@@ -42,7 +42,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/ExtractExamples.extractLinkAnnotation.
 void ExtractLinkAnnotation(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -80,7 +79,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 
-// Port of links/ExtractExamples.extractHyperlinks.
 void ExtractHyperlinks(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
