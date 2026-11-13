@@ -4,32 +4,24 @@ linktitle: Counting Artifacts
 type: docs
 weight: 40
 url: /python-net/counting-artifacts/
-description: Learn how to inspect and count pagination artifacts in PDF documents using Python with Aspose.PDF for Python via .NET.
-lastmod: "2026-04-15"
+description: Count watermarks, backgrounds, headers, and footers by pagination artifact subtype on a PDF page in Python.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Counting Artifacts in PDF using Python
-Abstract: Pagination artifacts such as watermarks, backgrounds, headers, and footers are commonly used in PDF documents to provide structure, branding, and identification. This example demonstrates how to inspect and count these artifacts programmatically using Aspose.PDF for Python via .NET. By filtering artifacts on a page and grouping them by subtype, developers can quickly analyze document composition and verify the presence of specific elements. The provided code illustrates how to open a PDF, extract pagination artifacts from the first page, count each subtype, and output the results, offering a practical approach to document auditing and validation.
+Abstract: Count pagination artifacts on a PDF page to check for watermarks, backgrounds, headers, and footers.
 ---
+
+Count pagination artifacts on a PDF page to check for watermarks, backgrounds, headers, and footers.
 
 ## Counting Artifacts of a Particular Type
 
-Inspect and count pagination artifacts in a PDF [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) using Aspose.PDF for Python via .NET. Pagination artifacts include elements such as watermarks, backgrounds, headers, and footers that are applied to pages for layout and identification purposes. By filtering [`Artifact`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/) objects on a [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/) and grouping them by subtype (`Artifact.ArtifactSubtype`), developers can quickly analyze the document's structure and verify the presence of specific elements.
-
-To calculate the total count of artifacts of a particular type (for example, the total number of watermarks), use the following code. The example filters the page's [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection (an [`ArtifactCollection`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifactcollection/)) by [`Artifact.ArtifactType`](https://reference.aspose.com/pdf/python-net/aspose.pdf/artifact/#properties) and then counts subtypes (`Artifact.ArtifactSubtype`).
-
-1. Open the PDF document (see [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/)).
-1. Filter pagination artifacts using the page's [`Artifacts`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/#properties) collection.
-1. Count artifacts by subtype (`Artifact.ArtifactSubtype`).
-1. Print results.
+Filter the first page’s `artifacts` collection by the `PAGINATION` type, then tally the subtypes. The example prints zero when a subtype is absent.
 
 ```python
-
-from os import path
 from collections import Counter
-import sys
 import aspose.pdf as ap
 
 def count_pdf_artifacts(infile):
@@ -53,6 +45,7 @@ def count_pdf_artifacts(infile):
 ## Related Artifact Topics
 
 - [Work with PDF artifacts in Python](/pdf/python-net/artifacts/)
-- [Add watermarks to PDF in Python](/pdf/python-net/add-watermarks/)
-- [Add PDF backgrounds in Python](/pdf/python-net/add-backgrounds/)
-- [Add Bates numbering to PDF in Python](/pdf/python-net/add-bates-numbering/)
+- [Extract Watermark Details](/pdf/python-net/extract-watermarks/)
+- [Remove Watermarks](/pdf/python-net/remove-watermarks/)
+- [Remove Backgrounds](/pdf/python-net/remove-backgrounds/)
+- [Remove Headers and Footers](/pdf/python-net/remove-headers-footers/)

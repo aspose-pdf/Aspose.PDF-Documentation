@@ -1,64 +1,26 @@
 ---
-title: 在 Python 中为 PDF 添加水印
+title: 在 Python 中向 PDF 添加水印
 linktitle: 添加水印
 type: docs
 weight: 30
 url: /zh/python-net/add-watermarks/
-description: 了解如何使用 Aspose.PDF for Python via .NET 在 Python 中向 PDF 文件添加水印。
-lastmod: "2026-06-08"
+description: 在 Python 中向 PDF 页面添加样式化文本水印工件。
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: 如何使用 Python 向 PDF 添加水印
-Abstract: 本文讨论了使用 Aspose.PDF for Python via .NET 通过管理 artifacts 为 PDF 文档添加水印。它介绍了处理 artifacts 的关键类——`Artifact` 和 `ArtifactCollection`，并描述了如何通过 `Page` 类的 `Artifacts` 属性访问它们。本文详细说明了 `Artifact` 类的属性，包括 `contents`、`form`、`image`、`text`、`rectangle`、`rotation` 和 `opacity` 等属性，这些属性使得在 PDF 文件中对 artifacts 进行全面操作成为可能。此外，还提供了一个实用示例，演示如何使用 Python 编程方式向 PDF 的首页添加水印。代码片段展示了 `WatermarkArtifact` 的创建与配置，设置其文本、对齐方式、旋转角度和透明度，然后将其追加到 PDF 文档并保存更改。
+AlternativeHeadline: 使用 Python 在 PDF 中添加水印
+Abstract: 在 Python 中向 PDF 页面添加样式化文本水印工件。
 ---
 
-向 PDF 添加水印工件 [`Document`](https://reference.aspose.com/pdf/python-net/aspose.pdf/document/) 使用 Aspose.PDF for Python via .NET。水印是应用于页面的可视化覆盖层，用于品牌化、安全或信息目的。示例展示了如何配置 [`TextState`](https://reference.aspose.com/pdf/python-net/aspose.pdf/textstate/) 外观、定位与 [`HorizontalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/horizontalalignment/) 和 [`VerticalAlignment`](https://reference.aspose.com/pdf/python-net/aspose.pdf/verticalalignment/)，旋转和透明度在将水印应用于 [`Page`](https://reference.aspose.com/pdf/python-net/aspose.pdf/page/).
-
-## 从 PDF 中提取水印
-
-1. 加载 PDF 文档。
-1. 访问页面伪影。
-1. 过滤水印伪影。
-1. 收集水印元素。
-1. 提取水印属性。
-1. 输出水印信息。
-
-```python
-from os import path
-import sys
-import aspose.pdf as ap
-
-def extract_watermark_from_pdf(infile):
-    with ap.Document(infile) as document:
-        watermarks = [
-            artifact
-            for artifact in document.pages[1].artifacts
-            if artifact.type == ap.Artifact.ArtifactType.PAGINATION
-            and artifact.subtype == ap.Artifact.ArtifactSubtype.WATERMARK
-        ]
-
-        for watermark in watermarks:
-            print(f"{watermark.text} {watermark.rectangle}")
-```
+使用 `WatermarkArtifact` 在 PDF 的第一页添加文字水印。
 
 ## 向 PDF 添加水印
 
-使用 Aspose.PDF for Python 向 PDF 文档添加文本水印：
-
-1. 加载 PDF 文档。
-1. 创建文本状态。
-1. 创建水印工件。
-1. 设置水印文本和样式。
-1. 配置位置和旋转。
-1. 设置不透明度和背景行为。
-1. 将水印附加到页面。
-1. 保存更新后的文档。
+设置文本和样式，然后配置对齐、旋转和不透明度。设置 `is_background` 将水印放置在页面内容后面。
 
 ```python
-from os import path
-import sys
 import aspose.pdf as ap
 
 def add_watermark_artifact(infile, outfile):
@@ -79,42 +41,10 @@ def add_watermark_artifact(infile, outfile):
 
         document.pages[1].artifacts.append(watermark)
         document.save(outfile)
-
 ```
 
-## 删除 PDF 页面上的水印伪影 
+## 相关主题
 
-使用 Aspose.PDF for Python API 从 PDF 文档的特定页面中删除水印伪影。该方法针对存储为页面伪影的水印元素（特别是被归类为分页水印子类型的元素），遍历它们并在保存更新后的文档之前将其删除。
-
-1. 加载 PDF 文档。
-1. 访问页面伪影。
-1. 过滤水印伪影。
-1. 删除水印伪影。
-1. 保存更新后的文档。
-
-```python
-from os import path
-import sys
-import aspose.pdf as ap
-
-def delete_watermark_artifact(infile, outfile):
-    with ap.Document(infile) as document:
-        watermarks = [
-            artifact
-            for artifact in document.pages[1].artifacts
-            if artifact.type == ap.Artifact.ArtifactType.PAGINATION
-            and artifact.subtype == ap.Artifact.ArtifactSubtype.WATERMARK
-        ]
-
-        for watermark in watermarks:
-            document.pages[1].artifacts.delete(watermark)
-
-        document.save(outfile)
-```
-
-## 相关工件主题
-
-- [在 Python 中使用 PDF 工件](/pdf/zh/python-net/artifacts/)
-- [在 Python 中添加 PDF 背景](/pdf/zh/python-net/add-backgrounds/)
-- [在 Python 中为 PDF 添加 Bates 编号](/pdf/zh/python-net/add-bates-numbering/)
-- [统计 PDF 文件中的工件类型](/pdf/zh/python-net/counting-artifacts/)
+- [提取水印详细信息](/pdf/zh/python-net/extract-watermarks/)
+- [移除水印](/pdf/zh/python-net/remove-watermarks/)
+- [在 Python 中处理 PDF 工件](/pdf/zh/python-net/artifacts/)

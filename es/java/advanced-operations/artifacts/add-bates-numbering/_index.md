@@ -1,26 +1,26 @@
 ---
-title: Agregar numeración Bates al PDF en Java
+title: Agregar numeración Bates a PDF en Java
 linktitle: Agregar numeración Bates
 type: docs
 weight: 10
 url: /es/java/add-bates-numbering/
-description: Aprenda cómo agregar y eliminar la numeración Bates en documentos PDF usando Java con Aspose.PDF.
-lastmod: "2026-09-29"
+description: Agregar identificadores Bates secuenciales a las páginas PDF en Java con el asistente dedicado de numeración Bates o la API genérica de paginación.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Agregar numeración Bates vía Java
-Abstract: Este artículo explica cómo crear y eliminar artefactos de numeración Bates en documentos PDF usando Aspose.PDF for Java. Cubre la configuración de un `BatesNArtifact`, su aplicación a través de los asistentes de numeración Bates o asistentes genéricos de paginación, y la eliminación de la numeración Bates de un documento.
+AlternativeHeadline: Agregar numeración Bates en Java
+Abstract: Agregar identificadores Bates secuenciales a las páginas PDF en Java con el asistente dedicado de numeración Bates o la API genérica de paginación.
 ---
-Los artefactos de numeración Bates son útiles en flujos de trabajo legales, de archivado y de control de documentos donde cada página necesita un identificador permanente a nivel de página.
+Los artefactos de numeración Bates son útiles en flujos de trabajo legales, archivísticos y de control de documentos donde cada página necesita un identificador persistente a nivel de página.
 
 ## Agregar numeración Bates con el asistente dedicado
 
-Utilice este ejemplo cuando desee aplicar numeración Bates mediante el asistente dedicado de colección de páginas.
+Utilice este ejemplo cuando desee aplicar la numeración Bates mediante el asistente dedicado de colección de páginas.
 
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y añada cualquier página extra requerida por el ejemplo.
-1. Cree el [`BatesNArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) configuración.
+1. Abra el PDF de origen con [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue cualquier página adicional requerida por el ejemplo.
+1. Configure un objeto [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/).
 1. Aplique numeración Bates a la colección de páginas y guarde el archivo de salida.
 
 ```java
@@ -41,8 +41,8 @@ public static void addBatesNArtifact(Path inputFile, Path outputFile) {
 
 Este ejemplo aplica la numeración Bates pasando el artefacto Bates a través de la API genérica de paginación.
 
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agregue las páginas requeridas.
-1. Cree el [`BatesNArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) y añádalo a una lista de artefactos de paginación.
+1. Abra el PDF de origen con [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/) y agrega las páginas requeridas.
+1. Cree el [BatesNArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/batesnartifact/) y agréguelo a una lista de artefactos de paginación.
 1. Aplique los artefactos de paginación a la colección de páginas y guarde el documento.
 
 ```java
@@ -61,19 +61,7 @@ public static void addBatesNArtifactPagination(Path inputFile, Path outputFile) 
 }
 ```
 
-## Eliminar numeración Bates
+## Temas relacionados
 
-Utilice este enfoque cuando los artefactos de numeración Bates existentes deban eliminarse del documento.
-
-1. Abra el PDF de origen [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. Llame al asistente de colección de páginas que elimina la numeración Bates.
-1. Guarde el archivo de salida limpiado.
-
-```java
-public static void deleteBatesNumbering(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        PageCollectionExtensions.deleteBatesNumbering(document.getPages());
-        document.save(outputFile.toString());
-    }
-}
-```
+- [Eliminar numeración Bates](/pdf/es/java/remove-bates-numbering/)
+- [Trabajar con artefactos PDF en Java](/pdf/es/java/artifacts/)

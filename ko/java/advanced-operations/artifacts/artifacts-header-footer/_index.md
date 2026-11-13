@@ -1,26 +1,26 @@
 ---
-title: Java를 사용하여 PDF 머리글 및 바닥글 관리
-linktitle: PDF 머리글 및 바닥글 관리
+title: Java에서 PDF 머리글 및 바닥글 추가
+linktitle: 머리글 및 바닥글 추가
 type: docs
 weight: 70
 url: /ko/java/artifacts-header-footer/
-description: Aspose.PDF for Java를 사용하여 PDF 문서에서 머리글 및 바닥글 아티팩트를 추가하고 제거하는 방법을 알아보세요.
-lastmod: "2026-09-24"
+description: 스타일이 지정된 머리글 및 바닥글 아티팩트를 생성하고 Java에서 PDF 페이지에 추가합니다.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: Java를 사용하여 PDF 머리글 및 바닥글을 추가, 사용자 정의 및 제거하는 방법
-Abstract: 이 문서에서는 Aspose.PDF for Java를 사용하여 PDF 문서의 머리글 및 바닥글 아티팩트를 관리하는 방법을 설명합니다. 사용자 정의 텍스트 상태 및 정렬을 사용하여 재사용 가능한 `HeaderArtifact` 및 `FooterArtifact` 개체를 생성하고, 이를 페이지에 추가하고, 기존 머리글 및 바닥글 아티팩트를 삭제하는 방법을 다룹니다.
+AlternativeHeadline: Java에서 머리글 및 바닥글 추가
+Abstract: 스타일이 지정된 머리글 및 바닥글 아티팩트를 생성하고 Java에서 PDF 페이지에 추가합니다.
 ---
-머리글 및 바닥글 아티팩트는 반복되는 레이블, 페이지 식별자 및 레이아웃 프레임에 일반적으로 사용되는 비콘텐츠 페이지 매김 요소입니다.
+머리글 및 바닥글 아티팩트는 반복 레이블, 페이지 식별자 및 레이아웃 프레이밍에 일반적으로 사용되는 비콘텐츠 페이지 매김 요소입니다.
 
-## 헤더 아티팩트 생성
+## 헤더 아티팩트 만들기
 
-일관된 텍스트 스타일과 정렬을 갖춘 재사용 가능한 헤더 아티팩트가 필요할 때 이 도우미를 사용하세요.
+일관된 텍스트 스타일링과 정렬을 가진 재사용 가능한 헤더 아티팩트가 필요할 때 이 도우미를 사용하세요.
 
-1. [`HeaderArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/)를 생성하세요.
-1. 텍스트, 글꼴 설정 및 전경색을 설정하세요.
+1. [HeaderArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/headerartifact/) 개체를 만드세요.
+1. 텍스트, 글꼴 설정 및 전경 색을 설정하세요.
 1. 수평 정렬을 구성하고 아티팩트를 반환하세요.
 
 ```java
@@ -35,12 +35,12 @@ public static HeaderArtifact createHeaderArtifact(String text) {
 }
 ```
 
-## 바닥글 아티팩트 생성
+## 푸터 아티팩트 생성
 
-이 도우미는 헤더 아티팩트와 동일한 스타일 패턴을 사용하여 재사용 가능한 바닥글 아티팩트를 생성합니다.
+이 도우미는 헤더 아티팩트와 동일한 스타일 패턴을 가진 재사용 가능한 푸터 아티팩트를 생성합니다.
 
-1. [`FooterArtifact`](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/)를 만드세요.
-1. 텍스트, 텍스트 상태 및 전경색을 설정하세요.
+1. [FooterArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/footerartifact/) 개체를 만드세요.
+1. 텍스트, 텍스트 상태 및 전경 색상을 설정하세요.
 1. 정렬을 구성하고 아티팩트를 반환하세요.
 
 ```java
@@ -55,13 +55,13 @@ public static FooterArtifact createFooterArtifact(String text) {
 }
 ```
 
-## 헤더 아티팩트 추가
+## 헤더 아티팩트를 추가합니다.
 
-페이지에 재사용 가능한 헤더 아티팩트가 표시되어야 하는 경우 이 예를 사용하세요.
+페이지가 재사용 가능한 헤더 아티팩트를 표시해야 할 때 이 예제를 사용하십시오.
 
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 도우미 메서드를 통해 헤더 아티팩트를 만드세요.
-1. 페이지에 아티팩트를 추가하고 출력 파일을 저장하세요.
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 여세요.
+1. 도우미 메서드를 통해 머리글 아티팩트를 생성하세요.
+1. 아티팩트를 페이지에 추가하고 출력 파일을 저장하세요.
 
 ```java
 public static void addHeaderArtifact(Path inputFile, Path outputFile) {
@@ -73,13 +73,13 @@ public static void addHeaderArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## 바닥글 아티팩트 추가
+## 푸터 아티팩트 추가
 
-페이지에 재사용 가능한 형식의 바닥글 아티팩트를 표시해야 하는 경우 이 예를 사용하세요.
+페이지에 재사용 가능한 서식이 적용된 푸터 아티팩트를 표시해야 할 경우 이 예제를 사용하십시오.
 
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 도우미 메서드를 통해 바닥글 아티팩트를 만드세요.
-1. 페이지에 아티팩트를 추가하고 출력 파일을 저장하세요.
+1. [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)로 원본 PDF를 여세요.
+1. 도우미 메서드를 통해 바닥글 아티팩트를 생성하세요.
+1. 아티팩트를 페이지에 추가하고 출력 파일을 저장하세요.
 
 ```java
 public static void addFooterArtifact(Path inputFile, Path outputFile) {
@@ -91,27 +91,7 @@ public static void addFooterArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## 머리글 및 바닥글 아티팩트 삭제
+## 관련 항목
 
-기존 머리글 및 바닥글 아티팩트를 페이지에서 제거해야 하는 경우 이 접근 방식을 사용하세요.
-
-1. 원본 PDF [`Document`](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/)를 여세요.
-1. 페이지 아티팩트 컬렉션을 역순으로 반복하세요.
-1. 하위 유형이 머리글 또는 바닥글인 페이지 매김 아티팩트를 삭제한 다음 문서를 저장하세요.
-
-```java
-public static void deleteHeaderFooterArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && (artifact.getSubtype() == Artifact.ArtifactSubtype.Header
-                    || artifact.getSubtype() == Artifact.ArtifactSubtype.Footer)) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [머리글 및 바닥글 제거](/pdf/ko/java/remove-headers-footers/)
+- [Java에서 PDF 아티팩트 작업](/pdf/ko/java/artifacts/)

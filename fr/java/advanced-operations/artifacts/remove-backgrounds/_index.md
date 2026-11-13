@@ -1,0 +1,45 @@
+---
+title: Supprimer les arrière-plans PDF en Java
+linktitle: Supprimer les arrière-plans
+type: docs
+weight: 80
+url: /fr/java/remove-backgrounds/
+description: Supprimer les artefacts d'arrière-plan de la première page d'un PDF en Java.
+lastmod: "2026-11-09"
+sitemap:
+    changefreq: "monthly"
+    priority: 0.7
+TechArticle: true
+AlternativeHeadline: Supprimer les arrière-plans en Java
+Abstract: Supprimer les artefacts d'arrière-plan de la première page d'un PDF en Java.
+---
+Supprimer les artefacts d'arrière-plan de la première page d'un PDF en Java.
+
+## Supprimer les artefacts d'arrière-plan
+
+Utilisez cette approche lorsque les artefacts d'arrière-plan existants doivent être supprimés de la page.
+
+1. Ouvrez le PDF source avec [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. Parcourez la collection d'artefacts de page dans l'ordre inverse.
+1. Supprimez les artefacts dont le type est pagination et le sous‑type est arrière‑plan, puis enregistrez le document.
+
+```java
+public static void removeBackground(Path inputFile, Path outputFile) {
+    try (Document document = new Document(inputFile.toString())) {
+        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
+            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
+            if (artifact.getType() == Artifact.ArtifactType.Pagination
+                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Background) {
+                document.getPages().get_Item(1).getArtifacts().delete(artifact);
+            }
+        }
+
+        document.save(outputFile.toString());
+    }
+}
+```
+
+## Rubriques connexes
+
+- [Ajouter des arrière-plans](/pdf/fr/java/add-backgrounds/)
+- [Travailler avec les artefacts PDF en Java](/pdf/fr/java/artifacts/)

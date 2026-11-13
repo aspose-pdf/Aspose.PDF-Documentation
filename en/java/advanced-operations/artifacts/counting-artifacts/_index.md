@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /java/counting-artifacts/
 description: Learn how to inspect and count pagination artifacts in PDF documents using Java with Aspose.PDF.
-lastmod: "2026-06-09"
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -53,3 +53,12 @@ public static void countPdfArtifacts(Path inputFile) {
     }
 }
 ```
+
+## Related artifact topics
+
+- [Work with PDF Artifacts in Java](/pdf/java/artifacts/)
+- [Extract Watermark Details](/pdf/java/extract-watermarks/)
+- [Remove Backgrounds](/pdf/java/remove-backgrounds/)
+- [Remove Watermarks](/pdf/java/remove-watermarks/)
+- [Remove Bates Numbering](/pdf/java/remove-bates-numbering/)
+- [Remove Headers and Footers](/pdf/java/remove-headers-footers/)

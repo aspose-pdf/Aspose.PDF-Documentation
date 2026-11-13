@@ -1,48 +1,28 @@
 ---
-title: إضافة علامات مائية إلى PDF في Java
-linktitle: إضافة علامة مائية
+title: إضافة علامات مائية إلى PDF باستخدام Java
+linktitle: إضافة العلامات المائية
 type: docs
 weight: 30
 url: /ar/java/add-watermarks/
-description: تعلم كيفية إضافة واستخراج وحذف عناصر العلامة المائية في ملفات PDF باستخدام Aspose.PDF for Java.
-lastmod: "2026-10-05"
+description: إضافة علامات مائية نصية منسّقة إلى صفحات PDF باستخدام Java.
+lastmod: "2026-11-09"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
 TechArticle: true
-AlternativeHeadline: كيفية إضافة علامة مائية إلى PDF باستخدام Java
-Abstract: تشرح هذه المقالة كيفية إضافة وفحص وإزالة عناصر العلامة المائية في مستندات PDF باستخدام Aspose.PDF for Java. وتغطي إنشاء علامة مائية نصية مع إعدادات المحاذاة والدوران والشفافية والخلفية، وفحص عناصر العلامة المائية على صفحة، وحذفها.
+AlternativeHeadline: إضافة علامات مائية إلى PDF في Java
+Abstract: إضافة علامات مائية نصية منسّقة إلى صفحات PDF.
 ---
-تسمح لك عناصر العلامة المائية بوضع علامات بصرية دائمة على صفحة دون دمجها في محتوى المستند الرئيسي.
 
-## استخراج عناصر العلامة المائية من PDF
-
-استخدم هذا المثال عندما تحتاج إلى فحص عناصر العلامة المائية الموجودة وقراءة نصها أو موقعها.
-
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. مرّ على مجموعة القطع الأثرية للصفحة المستهدفة.
-1. صفِّ قطع الأثر المتعلقة بالعلامة المائية للترقيم واطبع نصها ومستطيلاتها.
-
-```java
-public static void extractWatermarkFromPdf(Path inputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (Artifact artifact : document.getPages().get_Item(1).getArtifacts()) {
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Watermark) {
-                System.out.println(artifact.getText() + " " + artifact.getRectangle());
-            }
-        }
-    }
-}
-```
+تضيف عناصر العلامات المائية علامات مرئية إلى الصفحة بمعزل عن المحتوى الرئيسي للمستند.
 
 ## إضافة عنصر علامة مائية
 
-استخدم هذا المثال عندما يجب أن تعرض الصفحة علامة مائية نصية متمركزة مع دوران مخصص، وتعتيم، وتحديد موضع الخلفية.
+يضع المثال علامة مائية نصية في وسط الصفحة مع ضبط زاوية الدوران والعتامة وموضعها في الخلفية.
 
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. أنشئ كائنًا من الفئة [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) واضبط حالة النص وإعدادات الموضع الخاصة به.
-1. أضف العلامة المائية إلى الصفحة واحفظ ملف الإخراج.
+1. افتح ملف PDF المصدر باستخدام الفئة [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
+1. أنشئ كائنًا من الفئة [WatermarkArtifact](https://reference.aspose.com/pdf/java/com.aspose.pdf/watermarkartifact/) واضبط حالة النص وموضع العلامة المائية.
+1. أضف العلامة المائية إلى الصفحة واحفظ ملف PDF الناتج.
 
 ```java
 public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
@@ -67,26 +47,8 @@ public static void addWatermarkArtifact(Path inputFile, Path outputFile) {
 }
 ```
 
-## حذف عناصر العلامة المائية
+## مواضيع ذات صلة
 
-استخدم هذا النهج عندما يجب إزالة عناصر العلامة المائية الموجودة من الصفحة.
-
-1. افتح ملف PDF المصدر [Document](https://reference.aspose.com/pdf/java/com.aspose.pdf/document/).
-1. مرّ على مجموعة عناصر الصفحة بترتيب عكسي.
-1. احذف عناصر ترقيم الصفحات التي يكون النوع الفرعي لها هو العلامة المائية، ثم احفظ المستند.
-
-```java
-public static void deleteWatermarkArtifact(Path inputFile, Path outputFile) {
-    try (Document document = new Document(inputFile.toString())) {
-        for (int i = document.getPages().get_Item(1).getArtifacts().size(); i >= 1; i--) {
-            Artifact artifact = document.getPages().get_Item(1).getArtifacts().get_Item(i);
-            if (artifact.getType() == Artifact.ArtifactType.Pagination
-                    && artifact.getSubtype() == Artifact.ArtifactSubtype.Watermark) {
-                document.getPages().get_Item(1).getArtifacts().delete(artifact);
-            }
-        }
-
-        document.save(outputFile.toString());
-    }
-}
-```
+- [استخراج تفاصيل العلامات المائية](/pdf/ar/java/extract-watermarks/)
+- [إزالة العلامات المائية](/pdf/ar/java/remove-watermarks/)
+- [العمل مع عناصر PDF](/pdf/ar/java/artifacts/)
