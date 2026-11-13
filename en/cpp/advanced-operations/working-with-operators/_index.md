@@ -41,8 +41,6 @@ GSave preserves the current graphics state, ConcatenateMatrix scales and positio
 #include <Aspose.PDF.Cpp/OperatorCollection.h>
 #include <Aspose.PDF.Cpp/Resources.h>
 #include <Aspose.PDF.Cpp/XImageCollection.h>
-#include <Aspose.PDF.Cpp/XForm.h>
-#include <Aspose.PDF.Cpp/XFormCollection.h>
 #include <system/io/file.h>
 #include <system/io/file_stream.h>
 #include <system/io/path.h>
