@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /cpp/pdfpageeditor-class/
 description: Change page sizes, rotation, alignment, transitions, position, and zoom and inspect page boxes using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,15 @@ Use [PdfPageEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfp
 ProcessPages limits selected edits to specific pages. The per-page rotation sample requires at least three pages. Presentation transitions depend on the viewer displaying the output.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## PdfPageEditor workflows
+
+- [Change PDF page size](#change-pdf-page-size)
+- [Edit PDF pages](#edit-pdf-pages)
+- [Get PDF page properties](#get-pdf-page-properties)
+- [Set individual page rotations](#set-individual-page-rotations)
+- [Rotate selected pages](#rotate-selected-pages)
+- [Set PDF page properties](#set-pdf-page-properties)
 
 ## Change PDF page size
 

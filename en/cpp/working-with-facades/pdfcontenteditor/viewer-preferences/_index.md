@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /cpp/viewer-preferences/
 description: Read and update PDF viewer-preference flags. Use PdfContentEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Read and update PDF viewer-preference flags. The guides use the PdfCon
 
 Read and update PDF viewer-preference flags.
 
-Use the following PdfContentEditor guides:
+## Viewer preference tutorials
 
 - [Change PDF Viewer Preferences](/pdf/cpp/change-viewer-preferences/) - Read the existing viewer-preference flags and set the additional bit represented by 1.
 - [Get PDF Viewer Preferences](/pdf/cpp/get-viewer-preferences/) - Print the current viewer-preference flags.

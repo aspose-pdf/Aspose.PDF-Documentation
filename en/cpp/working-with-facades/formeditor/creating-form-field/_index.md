@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/creating-form-field/
 description: Create checkbox, combo box, and text fields with initial values and page coordinates. Use FormEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Create checkbox, combo box, and text fields with initial values and pa
 
 Create checkbox, combo box, and text fields with initial values and page coordinates.
 
-Use the following FormEditor guides:
+## Form field creation tutorials
 
 - [Create CheckBox Field](/pdf/cpp/create-checkbox-field/) - Add checkbox1 to page 1 with its name, caption, and rectangle.
 - [Create ComboBox Field](/pdf/cpp/create-combobox-field/) - Create combobox1 on page 1 and add Australia and New Zealand choices.

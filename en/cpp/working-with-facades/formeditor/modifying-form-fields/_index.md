@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/modifying-form-fields/
 description: Copy, move, remove, and rename fields, manage choice items, and enable multiline input. Use FormEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Copy, move, remove, and rename fields, manage choice items, and enable
 
 Copy, move, remove, and rename fields, manage choice items, and enable multiline input.
 
-Use the following FormEditor guides:
+## Form field editing tutorials
 
 - [Add List Item](/pdf/cpp/add-list-item/) - Add New Zealand as a choice in the Country field.
 - [Copy Inner Field](/pdf/cpp/copy-inner-field/) - Copy First Name to First Name Copy on page 2 at the specified coordinates.

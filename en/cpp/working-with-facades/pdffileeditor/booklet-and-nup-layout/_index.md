@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/booklet-and-nup-layout/
 description: Create booklet or N-up layouts and check operation results. Use PdfFileEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Create booklet or N-up layouts and check operation results. The guides
 
 Create booklet or N-up layouts and check operation results.
 
-Use the following PdfFileEditor guides:
+## Layout transformation tutorials
 
 - [Create N-Up PDF Document](/pdf/cpp/create-n-up-pdf-document/) - Create N-up output using a 2 by 2 layout. Create a 2 by 2 N-up document and print a failure message if MakeNUp returns false.
 - [Create PDF Booklet](/pdf/cpp/create-pdf-booklet/) - Create booklet output with the default MakeBooklet overload. Create a booklet and print a failure message if MakeBooklet returns false.

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/pdfcontenteditor-class/
 description: Replace text and images, manage attachments and stamps, create annotations, and configure document actions and viewer preferences using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,17 +18,15 @@ Use [PdfContentEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/p
 
 Several examples require existing images or stamps on page 1. CreateStampSample produces a PDF with a stamp that can be used by the stamp inspection examples. Viewer action and media activation are separate from creating the PDF objects.
 
-Choose a topic below for task-specific instructions and C++ examples.
+## What you can do with PdfContentEditor
 
-## Topics
-
-- [Annotations](/pdf/cpp/annotations-facades/) - Create text annotations on an existing PDF page.
-- [Bind a PDF Stream and Save](/pdf/cpp/bind-from-stream-and-save/) - Bind the editor to a PDF input stream and save it to outputFile.
-- [Attachments](/pdf/cpp/attachments-facades/) - Add an embedded file attachment or remove document attachments.
-- [Document Actions](/pdf/cpp/document-actions/) - Set an additional document-open action or remove the existing open action.
-- [Drawing Annotations](/pdf/cpp/drawing-annotations/) - Create line and polygon annotations through the content editor facade.
-- [Image Operations](/pdf/cpp/image-operations/) - Delete images from a PDF or replace an existing image.
-- [Multimedia](/pdf/cpp/multimedia/) - Create a movie annotation with a media file path.
-- [Stamps Management](/pdf/cpp/stamps-management/) - Create and inspect stamps, read a stamp image, and move stamps by index or identifier.
-- [Text Operations](/pdf/cpp/text-operations/) - Replace matching text with optional text styling.
-- [Viewer Preferences](/pdf/cpp/viewer-preferences/) - Read and update PDF viewer-preference flags.
+- [Add text annotations](/pdf/cpp/annotations-facades/)
+- [Bind a PDF stream and save](/pdf/cpp/bind-from-stream-and-save/)
+- [Manage document attachments](/pdf/cpp/attachments-facades/)
+- [Configure document actions](/pdf/cpp/document-actions/)
+- [Add drawing annotations](/pdf/cpp/drawing-annotations/)
+- [Replace or delete PDF images](/pdf/cpp/image-operations/)
+- [Add movie annotations](/pdf/cpp/multimedia/)
+- [Create, inspect, and move stamps](/pdf/cpp/stamps-management/)
+- [Replace and format text](/pdf/cpp/text-operations/)
+- [Read and change viewer preferences](/pdf/cpp/viewer-preferences/)

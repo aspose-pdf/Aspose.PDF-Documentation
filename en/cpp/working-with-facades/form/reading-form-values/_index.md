@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/reading-form-values/
 description: Enumerate form field names and read their current values. Use Form in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,6 @@ Abstract: Enumerate form field names and read their current values. The guides u
 
 Enumerate form field names and read their current values.
 
-Use the following Form guides:
+## Form value inspection tutorials
 
 - [Get Field Values](/pdf/cpp/get-field-values/) - Enumerate field names and print each field's current value.

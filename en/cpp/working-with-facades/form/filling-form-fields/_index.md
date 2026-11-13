@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/filling-form-fields/
 description: Fill barcode, checkbox, list box, radio button, and text fields. Use Form in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Fill barcode, checkbox, list box, radio button, and text fields. The g
 
 Fill barcode, checkbox, list box, radio button, and text fields.
 
-Use the following Form guides:
+## Form filling tutorials
 
 - [Fill Text Fields](/pdf/cpp/fill-text-fields/) - Fill name, address, and email with the sample contact details.
 - [Fill Check Box Fields](/pdf/cpp/fill-check-box-fields/) - Set subscribe_newsletter and accept_terms to the export value Yes.

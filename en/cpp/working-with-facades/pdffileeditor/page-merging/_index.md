@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/page-merging/
 description: Concatenate two PDF input files into one output document. Use PdfFileEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,6 @@ Abstract: Concatenate two PDF input files into one output document. The guides u
 
 Concatenate two PDF input files into one output document.
 
-Use the following PdfFileEditor guides:
+## PDF merging tutorials
 
 - [Concatenate Two PDF Files](/pdf/cpp/concatenate-two-files/) - Concatenate firstInputFile and secondInputFile in that order.

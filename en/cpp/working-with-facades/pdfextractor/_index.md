@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /cpp/pdfextractor-class/
 description: Inspect content availability and extract page text, images, and file attachments using facade APIs using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,18 @@ Use [PdfExtractor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfex
 Create a writable outputDir before running examples that write into it. Page-specific samples require pages 2 or 2 through 3. Extraction retrieves existing content; text extraction does not perform OCR.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## PdfExtractor workflows
+
+- [Check if PDF contains text or images](#check-if-pdf-contains-text-or-images)
+- [Extract attachments](#extract-attachments)
+- [Extract images image extraction mode](#extract-images-image-extraction-mode)
+- [Extract images particular page](#extract-images-particular-page)
+- [Extract images range pages](#extract-images-range-pages)
+- [Extract images whole PDF streams](#extract-images-whole-pdf-streams)
+- [Extract images whole PDF](#extract-images-whole-pdf)
+- [Extract text extraction mode](#extract-text-extraction-mode)
+- [Extract text](#extract-text)
 
 ## Check if PDF contains text or images
 

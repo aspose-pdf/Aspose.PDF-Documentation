@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /cpp/pdffileinfo-class/
 description: Read and update metadata, inspect page dimensions, offsets, privileges, encryption flags, and PDF version using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,10 +18,8 @@ Use [PdfFileInfo](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffil
 
 PdfFileInfo opens the PDF through its constructor. Page information examples inspect page 1; offset examples convert points to inches by dividing by 72.
 
-Choose a topic below for task-specific instructions and C++ examples.
+## What you can do with PdfFileInfo
 
-## Topics
-
-- [Document Properties](/pdf/cpp/document-properties/) - Read document permissions and the PDF version.
-- [Page Information](/pdf/cpp/page-information/) - Read page dimensions, rotation, and offsets.
-- [PDF Metadata](/pdf/cpp/pdf-metadata/) - Read, update, and clear PDF document information and save information with XMP.
+- [Inspect PDF version and document privileges](/pdf/cpp/document-properties/)
+- [Retrieve page geometry and offsets](/pdf/cpp/page-information/)
+- [Read and update PDF metadata](/pdf/cpp/pdf-metadata/)

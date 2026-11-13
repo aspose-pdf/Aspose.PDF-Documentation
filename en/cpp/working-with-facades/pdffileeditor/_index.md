@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/pdffileeditor-class/
 description: Merge, append, insert, delete, extract, split, impose, and resize PDF pages and content using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,12 +18,10 @@ Use [PdfFileEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdff
 
 These functions pass file paths directly to PdfFileEditor rather than binding an input PDF. Supply the page counts referenced in each sample. Some examples inspect Boolean results and report failure or throw an exception.
 
-Choose a topic below for task-specific instructions and C++ examples.
+## PdfFileEditor tutorials
 
-## Topics
-
-- [Booklet and N-Up Layout](/pdf/cpp/booklet-and-nup-layout/) - Create booklet or N-up layouts and check operation results.
-- [Page Layout and Margins](/pdf/cpp/page-layout-and-margins/) - Add margins and page breaks or resize page contents.
-- [Page Management](/pdf/cpp/page-management/) - Append, insert, extract, and delete selected PDF pages.
-- [Merge PDF Files](/pdf/cpp/page-merging/) - Concatenate two PDF input files into one output document.
-- [Split PDF Documents](/pdf/cpp/splitting-pdf-documents/) - Split a PDF into individual pages or extract a beginning or ending range.
+- [Booklet and N-Up Layout](/pdf/cpp/booklet-and-nup-layout/)
+- [Page Layout and Margins](/pdf/cpp/page-layout-and-margins/)
+- [Page Management](/pdf/cpp/page-management/)
+- [Merge PDF Files](/pdf/cpp/page-merging/)
+- [Split PDF Documents](/pdf/cpp/splitting-pdf-documents/)

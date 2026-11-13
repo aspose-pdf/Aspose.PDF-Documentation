@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /cpp/pdfxmpmetadata-class/
 description: Add, update, remove, and read XMP properties and register a custom metadata namespace using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,11 @@ Use [PdfXmpMetadata](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdf
 The read example expects the standard and custom keys written by AddXmpMetadata. Its outputFile is a text report rather than a modified PDF.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## PdfXmpMetadata workflows
+
+- [Add XMP metadata](#add-xmp-metadata)
+- [Get XMP metadata](#get-xmp-metadata)
 
 ## Add XMP metadata
 

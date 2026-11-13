@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/pdfbookmarkeditor-class/
 description: Create bookmark hierarchies and page bookmarks, inspect and update titles, delete bookmarks, and exchange bookmark XML using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,21 @@ Use [PdfBookmarkEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/
 Use input PDFs with the page numbers and bookmark titles referenced by each example. The page-list example demonstrates a single title/page pair even though its function name refers to a range.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## PdfBookmarkEditor workflows
+
+- [Add bookmark in an existing PDF file](#add-bookmark-in-an-existing-pdf-file)
+- [Add child bookmark in an existing PDF file](#add-child-bookmark-in-an-existing-pdf-file)
+- [Create bookmark of a particular page](#create-bookmark-of-a-particular-page)
+- [Create bookmarks of a range of pages](#create-bookmarks-of-a-range-of-pages)
+- [Create bookmarks of all pages with properties](#create-bookmarks-of-all-pages-with-properties)
+- [Create bookmarks of all pages](#create-bookmarks-of-all-pages)
+- [Delete all bookmarks](#delete-all-bookmarks)
+- [Delete particular bookmark](#delete-particular-bookmark)
+- [Export bookmarks to XML](#export-bookmarks-to-xml)
+- [Get bookmarks from document](#get-bookmarks-from-document)
+- [Import bookmarks from XML](#import-bookmarks-from-xml)
+- [Update existing bookmark](#update-existing-bookmark)
 
 ## Add bookmark in an existing PDF file
 

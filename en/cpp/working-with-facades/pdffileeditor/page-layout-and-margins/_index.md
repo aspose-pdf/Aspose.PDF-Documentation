@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/page-layout-and-margins/
 description: Add margins and page breaks or resize page contents. Use PdfFileEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Add margins and page breaks or resize page contents. The guides use th
 
 Add margins and page breaks or resize page contents.
 
-Use the following PdfFileEditor guides:
+## Page layout tutorials
 
 - [Add Margins to PDF Pages](/pdf/cpp/add-margins-to-pdf-pages/) - Apply margins of 36 points on each side of pages 1 and 3.
 - [Add Page Breaks in PDF](/pdf/cpp/add-page-breaks-in-pdf/) - Insert a page break on page 1 at the position specified by 400.

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/annotations-facades/
 description: Create text annotations on an existing PDF page. Use PdfContentEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,6 +16,6 @@ Abstract: Create text annotations on an existing PDF page. The guides use the Pd
 
 Create text annotations on an existing PDF page.
 
-Use the following PdfContentEditor guides:
+## Annotation tutorials
 
 - [Add Text Annotations](/pdf/cpp/add-text-annotation/) - Create an open text annotation titled Text Annotation on page 1.

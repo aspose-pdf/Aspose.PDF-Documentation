@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/page-management/
 description: Append, insert, extract, and delete selected PDF pages. Use PdfFileEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Append, insert, extract, and delete selected PDF pages. The guides use
 
 Append, insert, extract, and delete selected PDF pages.
 
-Use the following PdfFileEditor guides:
+## Common page management operations
 
 - [Append Pages to PDF](/pdf/cpp/append-pages-to-pdf/) - Append page 1 from sampleFile to inputFile.
 - [Delete Pages from PDF](/pdf/cpp/delete-pages-from-pdf/) - Delete pages 2 and 4.

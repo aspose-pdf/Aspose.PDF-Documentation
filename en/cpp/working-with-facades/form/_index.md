@@ -5,7 +5,7 @@ type: docs
 weight: 140
 url: /cpp/form-class/
 description: Fill fields, exchange FDF, XFDF, and XML data, add button images, inspect values, rename fields, and flatten forms using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,13 +18,11 @@ Use [Form](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/form/) to fil
 
 The samples use named fields from the supplied form fixtures. Use a PDF with matching field names and appropriate field types; importing data also requires a compatible FDF, XFDF, or XML file.
 
-Choose a topic below for task-specific instructions and C++ examples.
+## Form tutorials
 
-## Topics
-
-- [Exporting Form Data](/pdf/cpp/exporting-form-data/) - Export existing PDF form values to FDF, XFDF, or XML data files.
-- [Importing Form Data](/pdf/cpp/importing-form-data/) - Import FDF, XFDF, or XML values into an existing PDF form.
-- [Filling Form Fields](/pdf/cpp/filling-form-fields/) - Fill barcode, checkbox, list box, radio button, and text fields.
-- [Button Fields and Images](/pdf/cpp/button-fields-and-images/) - Fill the Image1_af_image button image field from an image stream.
-- [Managing Form Fields](/pdf/cpp/managing-form-fields/) - Flatten form fields or rename existing fields.
-- [Reading Form Values](/pdf/cpp/reading-form-values/) - Enumerate form field names and read their current values.
+- [Exporting Form Data](/pdf/cpp/exporting-form-data/)
+- [Importing Form Data](/pdf/cpp/importing-form-data/)
+- [Filling Form Fields](/pdf/cpp/filling-form-fields/)
+- [Button Fields and Images](/pdf/cpp/button-fields-and-images/)
+- [Managing Form Fields](/pdf/cpp/managing-form-fields/)
+- [Reading Form Values](/pdf/cpp/reading-form-values/)

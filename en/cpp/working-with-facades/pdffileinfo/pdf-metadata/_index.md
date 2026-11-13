@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/pdf-metadata/
 description: Read, update, and clear PDF document information and save information with XMP. Use PdfFileInfo in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Read, update, and clear PDF document information and save information 
 
 Read, update, and clear PDF document information and save information with XMP.
 
-Use the following PdfFileInfo guides:
+## PDF metadata tutorials
 
 - [Clear PDF Metadata](/pdf/cpp/clear-pdf-metadata/) - Clear document information, save the output, and close PdfFileInfo.
 - [Get PDF Metadata](/pdf/cpp/get-pdf-metadata/) - Print document information, file-status flags, and the custom Reviewer metadata value when available.

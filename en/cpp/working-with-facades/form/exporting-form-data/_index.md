@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/exporting-form-data/
 description: Export existing PDF form values to FDF, XFDF, or XML data files. Use Form in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Export existing PDF form values to FDF, XFDF, or XML data files. The g
 
 Export existing PDF form values to FDF, XFDF, or XML data files.
 
-Use the following Form guides:
+## Form data export tutorials
 
 - [Export to FDF](/pdf/cpp/export-to-fdf/) - Export the bound form data to an FDF output stream.
 - [Export to XFDF](/pdf/cpp/export-to-xfdf/) - Export the bound form data to an XFDF output stream.

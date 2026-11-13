@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/splitting-pdf-documents/
 description: Split a PDF into individual pages or extract a beginning or ending range. Use PdfFileEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Split a PDF into individual pages or extract a beginning or ending ran
 
 Split a PDF into individual pages or extract a beginning or ending range.
 
-Use the following PdfFileEditor guides:
+## PDF splitting tutorials
 
 - [Split PDF from Beginning](/pdf/cpp/split-pdf-from-beginning/) - Write the first three pages to a new PDF.
 - [Split PDF into Single Pages](/pdf/cpp/split-pdf-into-single-pages/) - Split the PDF into individual pages using outputFilePattern.

@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/importing-form-data/
 description: Import FDF, XFDF, or XML values into an existing PDF form. Use Form in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Import FDF, XFDF, or XML values into an existing PDF form. The guides 
 
 Import FDF, XFDF, or XML values into an existing PDF form.
 
-Use the following Form guides:
+## Form data import tutorials
 
 - [Import FDF Data](/pdf/cpp/import-fdf-data/) - Read FDF data from dataFile and import it into the bound form.
 - [Import XFDF Data](/pdf/cpp/import-xfdf-data/) - Read XFDF data from dataFile and import it into the bound form.

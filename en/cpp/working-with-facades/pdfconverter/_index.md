@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/pdfconverter-class/
 description: Render PDF pages as JPEG images and combine input images into JPEG, TIFF, or PDF output using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,17 @@ Use [PdfConverter](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdfco
 Conversion functions write numbered JPEG files to outputFolder. Image-merging functions sort files matching MergeImages*.jpg in inputDirectory and fail if none exist. The TIFF variant uses Document and TiffDevice rather than MergeImagesAsTiff, matching the supplied compatibility workaround.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## PdfConverter workflows
+
+- [Render PDF pages as JPEG images](#render-pdf-pages-as-jpeg-images)
+- [Render pages with resolution and CropBox settings](#render-pages-with-resolution-and-cropbox-settings)
+- [Convert with font substitution](#convert-with-font-substitution)
+- [Merge images vertically](#merge-images-vertically)
+- [Merge images horizontally](#merge-images-horizontally)
+- [Merge images with Center mode](#merge-images-with-center-mode)
+- [Create a multipage TIFF from images](#create-a-multipage-tiff-from-images)
+- [Place merged images in a PDF](#place-merged-images-in-a-pdf)
 
 ## Render PDF pages as JPEG images
 

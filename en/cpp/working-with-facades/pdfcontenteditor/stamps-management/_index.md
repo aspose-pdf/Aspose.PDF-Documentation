@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /cpp/stamps-management/
 description: Create and inspect stamps, read a stamp image, and move stamps by index or identifier. Use PdfContentEditor in Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,7 +16,7 @@ Abstract: Create and inspect stamps, read a stamp image, and move stamps by inde
 
 Create and inspect stamps, read a stamp image, and move stamps by index or identifier.
 
-Use the following PdfContentEditor guides:
+## Stamp management tutorials
 
 - [Add Rubber Stamp](/pdf/cpp/add-rubber-stamp/) - Create a green Approved rubber-stamp annotation on page 1.
 - [Create a Sample Image Stamp](/pdf/cpp/create-stamp-sample/) - Write a sample PNG image, create a one-page PDF, and apply an image stamp with ID 1.

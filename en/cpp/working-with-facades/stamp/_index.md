@@ -5,7 +5,7 @@ type: docs
 weight: 150
 url: /cpp/stamp-class/
 description: Create image, PDF-page, and text stamps with placement, rotation, transparency, and page selection using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,15 @@ Use [Stamp](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/stamp/) to c
 These examples use Aspose::Pdf::Facades::Stamp. Supply the required image or stamp PDF file; the PDF-page sample uses page 1 of the stamp source.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## Stamp workflows
+
+- [Add background image stamp](#add-background-image-stamp)
+- [Add image stamp](#add-image-stamp)
+- [Add PDF page as stamp](#add-pdf-page-as-stamp)
+- [Add rotating stamp to PDF](#add-rotating-stamp-to-pdf)
+- [Add stamp to specific pages](#add-stamp-to-specific-pages)
+- [Add text stamp with text state](#add-text-stamp-with-text-state)
 
 ## Add background image stamp
 

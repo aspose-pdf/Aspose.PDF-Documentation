@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/pdfannotationeditor-class/
 description: Delete, extract, flatten, modify, and transfer annotations and exchange annotation data through XFDF using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,19 @@ Use [PdfAnnotationEditor](https://reference.aspose.com/pdf/cpp/aspose.pdf.facade
 Annotation import examples create blank target pages before importing annotations; they do not copy the original page content. The flattening example enables ApplyRedactions.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## PdfAnnotationEditor workflows
+
+- [Delete all annotations by type](#delete-all-annotations-by-type)
+- [Delete all annotations](#delete-all-annotations)
+- [Delete annotation by name](#delete-annotation-by-name)
+- [Extract annotations](#extract-annotations)
+- [Flatten annotations](#flatten-annotations)
+- [Import annotations](#import-annotations)
+- [Import export all annotations XFDF](#import-export-all-annotations-xfdf)
+- [Import export selected annotations XFDF](#import-export-selected-annotations-xfdf)
+- [Modify annotations author](#modify-annotations-author)
+- [Modify annotations](#modify-annotations)
 
 ## Delete all annotations by type
 

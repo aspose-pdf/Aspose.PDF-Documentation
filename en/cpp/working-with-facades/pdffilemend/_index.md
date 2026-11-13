@@ -5,7 +5,7 @@ type: docs
 weight: 90
 url: /cpp/pdffilemend-class/
 description: Place images and formatted text on PDF pages and configure compositing or word wrapping using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -19,6 +19,16 @@ Use [PdfFileMend](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/pdffil
 In AddImage01 through AddImage04, inputFile is an image path and the function creates a new PDF page. Text examples accept a PDF path. AddText03 appends three pages before adding text to pages 1 and 3.
 
 The snippets are independent example functions with their SDK includes and example namespaces. Configure the Aspose.PDF for C++ SDK, supply the input resources referenced by the sample, and choose writable output paths. The examples retain the source field names, page indexes, coordinates, and options.
+
+## PdfFileMend workflows
+
+- [Add an image to a new PDF](#add-an-image-to-a-new-pdf)
+- [Add an image with Multiply blending](#add-an-image-with-multiply-blending)
+- [Add an image with Exclusion blending and Flate filtering](#add-an-image-with-exclusion-blending-and-flate-filtering)
+- [Add an image with explicit compositing options](#add-an-image-with-explicit-compositing-options)
+- [Add formatted text to a page](#add-formatted-text-to-a-page)
+- [Set word wrapping for formatted text](#set-word-wrapping-for-formatted-text)
+- [Add text to multiple pages](#add-text-to-multiple-pages)
 
 ## Add an image to a new PDF
 

@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /cpp/working-with-facades/
 description: Use Aspose.PDF facade APIs in C++ to process files, manage forms and annotations, render and extract content, apply stamps, inspect metadata, configure security, and sign PDFs.
-lastmod: "2026-11-09"
+lastmod: "2026-11-13"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -16,23 +16,38 @@ Abstract: Explore the Aspose.PDF for C++ Facades classes through examples for fo
 
 Aspose.PDF for C++ provides facade classes for common PDF operations such as filling forms, merging files, replacing content, extracting resources, and applying stamps. These classes are in the [Aspose::Pdf::Facades](https://reference.aspose.com/pdf/cpp/aspose.pdf.facades/) namespace.
 
+Facades provide a simpler entry point for common workflows such as merging files, filling forms, applying security, and stamping pages. Choose the class that matches your task, then follow its tutorials and examples.
+
 Many facades use BindPdf() to open a file, stream, or Document and Save() to write a result. Others accept input and output paths directly. Follow the workflow shown by the example for the class you choose.
 
-## Facade guides
+## Facades sections
 
-- [PdfFileEditor](/pdf/cpp/pdffileeditor-class/) - merge, append, insert, delete, extract, split, impose, and resize PDF pages and content.
-- [PdfContentEditor](/pdf/cpp/pdfcontenteditor-class/) - replace text and images, manage attachments and stamps, create annotations, and configure document actions and viewer preferences.
-- [PdfAnnotationEditor](/pdf/cpp/pdfannotationeditor-class/) - delete, extract, flatten, modify, and transfer annotations and exchange annotation data through XFDF.
-- [PdfBookmarkEditor](/pdf/cpp/pdfbookmarkeditor-class/) - create bookmark hierarchies and page bookmarks, inspect and update titles, delete bookmarks, and exchange bookmark XML.
-- [PdfFileSignature](/pdf/cpp/pdffilesignature-class/) - sign or certify PDF documents, inspect and verify signatures, extract certificates, and remove a signature.
-- [PdfConverter](/pdf/cpp/pdfconverter-class/) - render PDF pages as JPEG images and combine input images into JPEG, TIFF, or PDF output.
-- [PdfExtractor](/pdf/cpp/pdfextractor-class/) - inspect content availability and extract page text, images, and file attachments using facade APIs.
-- [PdfFileMend](/pdf/cpp/pdffilemend-class/) - place images and formatted text on PDF pages and configure compositing or word wrapping.
-- [FormEditor](/pdf/cpp/formeditor-class/) - create, copy, move, decorate, rename, and remove form fields and configure lists, scripts, and submission actions.
-- [PdfFileInfo](/pdf/cpp/pdffileinfo-class/) - read and update metadata, inspect page dimensions, offsets, privileges, encryption flags, and PDF version.
-- [PdfPageEditor](/pdf/cpp/pdfpageeditor-class/) - change page sizes, rotation, alignment, transitions, position, and zoom and inspect page boxes.
-- [PdfFileSecurity](/pdf/cpp/pdffilesecurity-class/) - encrypt and decrypt PDF files, change passwords, and apply document privileges with direct or Try methods.
-- [PdfXmpMetadata](/pdf/cpp/pdfxmpmetadata-class/) - add, update, remove, and read XMP properties and register a custom metadata namespace.
-- [Form](/pdf/cpp/form-class/) - fill fields, exchange FDF, XFDF, and XML data, add button images, inspect values, rename fields, and flatten forms.
-- [Stamp](/pdf/cpp/stamp-class/) - create image, PDF-page, and text stamps with placement, rotation, transparency, and page selection.
-- [PdfFileStamp](/pdf/cpp/pdffilestamp-class/) - add text and image headers or footers, image stamps, and page numbers with configurable position and style.
+- [Split, merge, and rearrange PDF pages with **PdfFileEditor**](/pdf/cpp/pdffileeditor-class/).
+- [Edit PDF content and interactive elements with **PdfContentEditor**](/pdf/cpp/pdfcontenteditor-class/).
+- [Inspect, update, and transfer annotations with **PdfAnnotationEditor**](/pdf/cpp/pdfannotationeditor-class/).
+- [Create and manage PDF bookmarks with **PdfBookmarkEditor**](/pdf/cpp/pdfbookmarkeditor-class/).
+- [Sign, certify, and verify PDF documents with **PdfFileSignature**](/pdf/cpp/pdffilesignature-class/).
+- [Render PDF pages and combine images with **PdfConverter**](/pdf/cpp/pdfconverter-class/).
+- [Extract PDF text, images, and attachments with **PdfExtractor**](/pdf/cpp/pdfextractor-class/).
+- [Add images and formatted text to PDF pages with **PdfFileMend**](/pdf/cpp/pdffilemend-class/).
+- [Create and update form fields with **FormEditor**](/pdf/cpp/formeditor-class/).
+- [Inspect document information and metadata with **PdfFileInfo**](/pdf/cpp/pdffileinfo-class/).
+- [Change PDF page properties with **PdfPageEditor**](/pdf/cpp/pdfpageeditor-class/).
+- [Configure passwords and document privileges with **PdfFileSecurity**](/pdf/cpp/pdffilesecurity-class/).
+- [Read and update XMP properties with **PdfXmpMetadata**](/pdf/cpp/pdfxmpmetadata-class/).
+- [Fill forms and exchange field data with **Form**](/pdf/cpp/form-class/).
+- [Build reusable PDF stamps with **Stamp**](/pdf/cpp/stamp-class/).
+- [Add headers, footers, stamps, and page numbers with **PdfFileStamp**](/pdf/cpp/pdffilestamp-class/).
+
+## Popular PDF facade workflows
+
+- Merge, split, extract, and rearrange PDF pages.
+- Fill forms and exchange FDF, XFDF, or XML field data.
+- Edit annotations, bookmarks, attachments, and text.
+- Apply encryption and privileges, or sign and verify PDFs.
+- Add stamps, headers, footers, and page numbers.
+- Render pages, extract resources, and inspect document metadata.
+
+## Common PDF tasks covered in this section
+
+Start with the class links above to find the relevant guides. Each guide explains the task, input requirements, and C++ API calls used by its examples.
