@@ -18,6 +18,8 @@ Abstract: Build tables with formatted cells, images, and LaTeX fragments. Contro
 
 ### Create a table
 
+The generated PDF contains a three-column table with ten rows of sample text.
+
 1. Create a [`Document`](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/), add a page, and create a [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/).
 2. Use [`BorderInfo`](https://reference.aspose.com/pdf/cpp/aspose.pdf/borderinfo/) to set light gray borders for the table and its cells.
 3. Add 10 rows with three text cells each through [`Rows`](https://reference.aspose.com/pdf/cpp/aspose.pdf/rows/) and [`Cells`](https://reference.aspose.com/pdf/cpp/aspose.pdf/cells/).
@@ -60,6 +62,8 @@ void CreateTable(String inputFile, String outputFile)
 ```
 
 ### Add an image to a table cell
+
+A two-column table displays the source file path alongside a 50-by-50-point image preview.
 
 1. Create a two-column [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) and add a row.
 2. Put the input image path in the first cell as a [`TextFragment`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/).
@@ -106,6 +110,8 @@ void AddImage(String inputFile, String outputFile)
 ```
 
 ### Add SVG images to a table
+
+Build an SVG catalog in a PDF by giving each file its own row with a path and a preview.
 
 1. Pass the directory containing the three named SVG files as the input path.
 2. Create a two-column [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) and add a row for each file.
@@ -161,6 +167,8 @@ void AddSvgImage(String inputFile, String outputFile)
 ```
 
 ### Span rows and columns
+
+One cell spans two columns, and another spans two rows, demonstrating both ways to merge cells.
 
 1. Create a [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) with five rows and a four-column layout.
 2. Use [`Cell::set_ColSpan()`](https://reference.aspose.com/pdf/cpp/aspose.pdf/cell/set_colspan/) to span two columns in the second row.
@@ -229,6 +237,8 @@ void AddRowspanOrColspan(String inputFile, String outputFile)
 
 ### Apply borders to tables and cells
 
+A thicker outer border frames the cell grid, and one cell displays its text with wrapping disabled.
+
 1. Create a three-column [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) and add it to the page.
 2. Use [`BorderInfo`](https://reference.aspose.com/pdf/cpp/aspose.pdf/borderinfo/) to set a 1-point outer border and a 0.1-point default cell border.
 3. Set default cell padding with [`MarginInfo`](https://reference.aspose.com/pdf/cpp/aspose.pdf/margininfo/), populate two rows, and disable word wrapping in the first row's third [`Cell`](https://reference.aspose.com/pdf/cpp/aspose.pdf/cell/).
@@ -284,6 +294,8 @@ void AddBorders(String inputFile, String outputFile)
 
 ### Set table margins and cell padding
 
+Table margins control the space around the table, while cell padding sets the space between cell borders and their contents.
+
 1. Create a three-column [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) with outer and cell borders.
 2. Use [`MarginInfo`](https://reference.aspose.com/pdf/cpp/aspose.pdf/margininfo/) to set the outer table margin and the default cell padding independently.
 3. Populate two rows, disable wrapping in the first row's third cell, and save the PDF.
@@ -337,6 +349,8 @@ void AddMarginsOrPadding(String inputFile, String outputFile)
 
 ### Fit columns to the available width
 
+Automatic column sizing fits the three-column table to the available page width.
+
 1. Add a three-column [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) to a page and specify initial column widths.
 2. Set the [`ColumnAdjustment`](https://reference.aspose.com/pdf/cpp/aspose.pdf/columnadjustment/) mode to `AutoFitToWindow`.
 3. Set borders and padding, populate two rows, and save the PDF.
@@ -384,6 +398,8 @@ void AutoFit(String inputFile, String outputFile)
 ```
 
 ### Combine merged headers with repeating columns
+
+Colored header cells span multiple columns in a wide table whose first two columns repeat when it splits.
 
 1. Add a [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) to the page, configure vertical splitting, and set the first two columns to repeat.
 2. Set a default [`BorderInfo`](https://reference.aspose.com/pdf/cpp/aspose.pdf/borderinfo/) for the cells and build a header with colored cells spanning two or three columns.
@@ -452,6 +468,8 @@ void AddTableHideBorders(String inputFile, String outputFile)
 
 ### Round the corners of a table
 
+A 15-point radius rounds the outer corners of the PDF table.
+
 1. Create a [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) and configure a [`BorderInfo`](https://reference.aspose.com/pdf/cpp/aspose.pdf/borderinfo/) with a corner radius of 15 points.
 2. Set the table's corner style to `Round` and assign the border.
 3. Add 10 rows with three cells each, attach the table to the page, and save the PDF.
@@ -497,6 +515,8 @@ void CreateTableWithRoundCorner(String inputFile, String outputFile)
 ## Add formatted content to cells
 
 ### Add LaTeX fragments to cells
+
+LaTeX fragments render inside the cells of the generated PDF table.
 
 1. Create a [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) with light gray outer and cell borders.
 2. Add nine rows and insert a [`TeXFragment`](https://reference.aspose.com/pdf/cpp/aspose.pdf/texfragment/) in each of the three cells to render formatted text.
@@ -545,6 +565,8 @@ void AddLatexFragments(String inputFile, String outputFile)
 ## Control table pagination
 
 ### Start selected table rows on a new page
+
+Selected rows in the two-column table begin on a new page.
 
 1. Create a two-column [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) with red borders.
 2. Populate 201 rows and call [`Row::set_IsInNewPage()`](https://reference.aspose.com/pdf/cpp/aspose.pdf/row/set_isinnewpage/) at row indexes 10, 20, and so on through 200.
@@ -596,6 +618,8 @@ void InsertPageBreak(String inputFile, String outputFile)
 ```
 
 ### Start a second table on a new page
+
+In the landscape PDF, the second table begins on a new page.
 
 1. Set the [`Document`](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) page defaults to landscape with 37-point margins and add a page.
 2. Add a two-column [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) with 120 fixed-height rows, then create a second table with 10 rows.
@@ -655,6 +679,8 @@ void AddTableOnNewPage(String inputFile, String outputFile)
 ```
 
 ### Repeat header rows across pages
+
+The first two rows serve as headers and repeat on each continuation page.
 
 1. Set the [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) break mode to `Vertical` and configure its first two rows to repeat.
 2. Use [`TextState`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textstate/) to style the repeating rows with 12-point red Times New Roman. Make sure the font is available in the runtime environment.
@@ -728,6 +754,8 @@ void AddRepeatingRows(String inputFile, String outputFile)
 
 ### Repeat columns when a table splits horizontally
 
+When the wide table splits into sections on a landscape A5 page, the configured columns repeat.
+
 1. Add a landscape A5 page and create a [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) with the `VerticalInSamePage` break mode.
 2. Use `AutoFitToContent` and set the first five columns to repeat.
 3. Fill 17 columns across a header row and five data rows, shade the repeating columns, and save the PDF.
@@ -797,6 +825,8 @@ void AddRepeatingColumns(String inputFile, String outputFile)
 ```
 
 ### Rotate text inside table cells
+
+Four adjacent cells display centered text at 0, 90, 180, and 270 degrees.
 
 1. Create a bordered [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) and add one [`Row`](https://reference.aspose.com/pdf/cpp/aspose.pdf/row/) with a minimum height of 200 points.
 2. Add four cells and center a [`TextFragment`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/) in each one.

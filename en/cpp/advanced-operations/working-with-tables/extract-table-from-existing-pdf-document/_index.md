@@ -16,6 +16,8 @@ Abstract: Scan each PDF page for tables with TableAbsorber. Read each detected c
 
 ## Extract tables from every page
 
+Scanning every page of an existing PDF yields the text of detected tables, which the code prints to the console one row per line.
+
 1. Open the input PDF as a [`Document`](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and iterate over its pages.
 2. Create a fresh [`TableAbsorber`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/) for each page and call [`TableAbsorber::Visit()`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/visit/).
 3. Traverse the [`AbsorbedTable`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/absorbedtable/) rows and [`AbsorbedCell`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/absorbedcell/) objects. Print each cell's text segments and end each row with a newline.

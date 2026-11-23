@@ -16,6 +16,8 @@ Abstract: Find tables on a selected PDF page and remove one or all of the detect
 
 ## Remove the first table from a page
 
+After detecting tables on page 1, the code removes the first one and saves the modified PDF.
+
 1. Open the input PDF as a [`Document`](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and select page 1.
 2. Call [`TableAbsorber::Visit()`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/visit/) to find the tables on that page.
 3. Call [`TableAbsorber::Remove()`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/remove/) with the first detected table and save the PDF.
@@ -47,6 +49,8 @@ void RemoveOneTable(String inputFile, String outputFile)
 ```
 
 ## Remove all detected tables from a page
+
+To clear page 1 of detected tables, the code removes each one and saves the updated PDF.
 
 1. Open the input PDF as a [`Document`](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and select page 1.
 2. Call [`TableAbsorber::Visit()`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/visit/) to find the tables on that page.

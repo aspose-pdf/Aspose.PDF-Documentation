@@ -16,6 +16,8 @@ Abstract: Use TableAbsorber to identify tables on a PDF page. Update a cell frag
 
 ## Replace text in a table cell
 
+To update a single cell, the code changes the second text fragment in the upper-left cell of the first table detected on page 1 and saves the PDF.
+
 1. Open the input PDF as a [`Document`](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and select page 1.
 2. Call [`TableAbsorber::Visit()`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/visit/) to find the tables on that page.
 3. Select the first table, its first row, and its first [`AbsorbedCell`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/absorbedcell/).
@@ -62,6 +64,8 @@ void ReplaceCells(String inputFile, String outputFile)
 ```
 
 ## Replace an existing table
+
+A new two-row, three-column table takes the place of the first table detected on page 1.
 
 1. Open the input PDF as a [`Document`](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and select page 1.
 2. Call [`TableAbsorber::Visit()`](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/tableabsorber/visit/) to find the tables on that page.

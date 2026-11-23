@@ -16,6 +16,8 @@ Abstract: Read comma-separated records and map their headers to selected table c
 
 ## Create a PDF table from CSV data
 
+The CSV import maps four fields (city, country, population, and ISO3) to a PDF table with a shaded header and up to 20 data rows.
+
 1. Read the CSV lines into rows and locate the four required header names.
 2. Create a [`Table`](https://reference.aspose.com/pdf/cpp/aspose.pdf/table/) with an outer border and a bottom border for each cell.
 3. Copy the header and up to 20 data rows in the selected column order. Use empty strings for missing values and shade the header cells.
