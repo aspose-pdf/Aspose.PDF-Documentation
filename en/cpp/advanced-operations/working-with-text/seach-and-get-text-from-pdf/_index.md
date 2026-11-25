@@ -60,7 +60,7 @@ void TextAbsorberSearch(String inputFile, String outputFile)
     auto absorber = MakeObject<TextAbsorber>(textExtractionOptions, textSearchOptions);
 
     document->get_Pages()->Accept(absorber);
-    std::cout << (String(u"Text fragments found: ") + absorber->get_Text()) << std::endl;
+    std::cout << (String(u"Extracted text: ") + absorber->get_Text()) << std::endl;
 }
 ```
 
@@ -517,15 +517,13 @@ void TextFragmentAbsorberSearchAndHighlight(String inputFile, String outputFile)
 
     {
         auto document = MakeObject<Document>(inputFile);
-        auto absorber = MakeObject<TextFragmentAbsorber>(
-            MakeObject<System::Text::RegularExpressions::Regex>(String(u"[\\S]+")));
-        absorber->set_TextSearchOptions(MakeObject<TextSearchOptions>(true));
-
         for (int pageNumber = 1; pageNumber <= document->get_Pages()->get_Count(); pageNumber++)
         {
             auto page = document->get_Pages()->idx_get(pageNumber);
+            auto absorber = MakeObject<TextFragmentAbsorber>(
+                MakeObject<System::Text::RegularExpressions::Regex>(String(u"[\\S]+")));
+            absorber->set_TextSearchOptions(MakeObject<TextSearchOptions>(true));
             page->Accept(absorber);
-
             {
                 auto stream = MakeObject<System::IO::MemoryStream>();
                 pngDevice->Process(page, stream);

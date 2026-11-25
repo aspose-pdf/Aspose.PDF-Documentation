@@ -976,7 +976,7 @@ void CreateMultiColumnPdf(String inputFile, String outputFile)
     box->get_ColumnInfo()->set_ColumnCount(2);
     box->get_ColumnInfo()->set_ColumnSpacing(u"5");
     box->get_ColumnInfo()->set_ColumnWidths(u"230 230");
-    auto caption = MakeObject<TextFragment>(u"By A Googler (The Official Google Blog)");
+    auto caption = MakeObject<TextFragment>(u"By Example Author");
     caption->get_TextState()->set_FontSize(8);
     caption->get_TextState()->set_LineSpacing(2);
     box->get_Paragraphs()->Add(caption);

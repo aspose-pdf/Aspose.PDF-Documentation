@@ -110,11 +110,9 @@ void MultiColumnLayout(String inputFile, String outputFile)
 
     auto box = MakeObject<FloatingBox>();
     box->set_IsNeedRepeating(true);
-    box->get_ColumnInfo()->set_ColumnWidths(String::Format(u"{0}", columnWidth) + String(u" ") +
-                                            String::Format(u"{0}", columnWidth) + String(u" ") +
-                                            columnWidth);
+    box->get_ColumnInfo()->set_ColumnWidths(String::Format(u"{0} {0} {0}", columnWidth));
     box->get_ColumnInfo()->set_ColumnSpacing(String::Format(u"{0}", spacing));
-    box->get_ColumnInfo()->set_ColumnCount(3);
+    box->get_ColumnInfo()->set_ColumnCount(columnCount);
 
     String phrase = String(u"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, "
                            u"sollicitudin ac mauris vel, suscipit pellentesque nisi.");
