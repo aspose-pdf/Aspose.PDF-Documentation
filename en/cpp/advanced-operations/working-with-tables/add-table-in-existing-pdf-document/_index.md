@@ -867,7 +867,7 @@ void RotatedTextTable(String inputFile, String outputFile)
     {
         auto cell = row->get_Cells()->Add();
         auto textFragment =
-            MakeObject<TextFragment>(String(u"Cell 1 ") + String::Format(u"{0}", (cellCount - 1)));
+            MakeObject<TextFragment>(String(u"Cell ") + String::Format(u"{0}", (cellCount + 1)));
         textFragment->get_TextState()->set_Rotation(90 * cellCount);
         textFragment->set_HorizontalAlignment(HorizontalAlignment::Center);
         cell->get_Paragraphs()->Add(textFragment);

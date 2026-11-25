@@ -41,7 +41,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void ReplaceCells(String inputFile, String outputFile)
+void ReplaceCellText(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->idx_get(1);
