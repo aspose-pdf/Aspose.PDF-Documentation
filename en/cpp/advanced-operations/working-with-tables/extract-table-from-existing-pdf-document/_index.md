@@ -35,37 +35,41 @@ Scanning every page of an existing PDF yields the text of detected tables, which
 #include <Aspose.PDF.Cpp/Text/TextSegment.h>
 #include <Aspose.PDF.Cpp/Text/TextSegmentCollection.h>
 #include <system/collections/list.h>
-#include <iostream>
+#include <system/io/file.h>
+#include <system/text/string_builder.h>
+#include <system/console.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void Extract(String inputFile, String outputFile)
+void WorkingWithTablesExamples::Extract(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
-    for (auto page : document->get_Pages())
+	auto sb = MakeObject<System::Text::StringBuilder>();
+    for (auto& page : document->get_Pages())
     {
         auto absorber = MakeObject<TableAbsorber>();
         absorber->Visit(page);
-        for (auto table : absorber->get_TableList())
+        for (auto& table : absorber->get_TableList())
         {
-            std::cout << "Table ----" << std::endl;
-            for (auto row : table->get_RowList())
+            sb->AppendLine(String(u"Table ----"));
+            for (auto& row : table->get_RowList())
             {
-                for (auto cell : row->get_CellList())
+                for (auto& cell : row->get_CellList())
                 {
-                    std::cout << " | ";
-                    for (auto fragment : cell->get_TextFragments())
-                        for (auto segment : fragment->get_Segments())
-                            std::cout << segment->get_Text();
+                    sb->Append(String(u" | "));
+                    for (auto& fragment : cell->get_TextFragments())
+                        for (auto& segment : fragment->get_Segments())
+                            sb->Append(segment->get_Text());
                 }
-                std::cout << std::endl;
+                sb->AppendLine();
             }
         }
     }
-}
-```
+	System::Console::WriteLine(sb->ToString());
+	System::IO::File::WriteAllText(outputFile, sb->ToString());
+}```
 
 ## Related table topics
 
