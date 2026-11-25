@@ -4,14 +4,14 @@ linktitle: Add Text
 type: docs
 weight: 10
 url: /cpp/add-text-to-pdf-file/
-description: Add text, paragraphs, hyperlinks, HTML and LaTeX fragments to PDF documents, and load custom fonts using C++.
+description: Add text, paragraphs, hyperlinks, LaTeX fragments to PDF documents, and load custom fonts using C++.
 lastmod: "2026-11-23"
 sitemap:
     changefreq: monthly
     priority: 0.7
 TechArticle: true
 AlternativeHeadline: Insert and style PDF text with C++ examples
-Abstract: Create PDF text with TextFragment, TextParagraph, and TextBuilder. The examples cover font styling, transparency, gradients, HTML and LaTeX content, hyperlinks, and custom fonts.
+Abstract: Create PDF text with TextFragment, TextParagraph, and TextBuilder. The examples cover font styling, transparency, gradients, LaTeX content, hyperlinks, and custom fonts.
 ---
 
 Use Aspose.PDF for C++ to create text fragments and add them to page paragraphs or place them with TextBuilder. The examples on this page create new documents; they do not append text to input PDF files.
@@ -22,7 +22,7 @@ Configure a C++ project with Aspose.PDF for C++ and apply your license if availa
 
 Pass the destination PDF path as `outputFile`. Most functions create their own text and do not use `inputFile`; exceptions that read text, images, or fonts are described below. Ensure the fonts named by each example are available.
 
-The main APIs used here are [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/), [TextParagraph](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textparagraph/), [TextBuilder](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textbuilder/), [TextState](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textstate/), [FontRepository](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/fontrepository/), [HtmlFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf/htmlfragment/), [TeXFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf/texfragment/), [WebHyperlink](https://reference.aspose.com/pdf/cpp/aspose.pdf/webhyperlink/).
+The main APIs used here are [TextFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragment/), [TextParagraph](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textparagraph/), [TextBuilder](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textbuilder/), [TextState](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textstate/), [FontRepository](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/fontrepository/),  [TeXFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf/texfragment/), [WebHyperlink](https://reference.aspose.com/pdf/cpp/aspose.pdf/webhyperlink/).
 
 ## Basic text insertion
 
@@ -853,39 +853,7 @@ void ApplyGradientRadialShadingToText(String inputFile, String outputFile)
 }
 ```
 
-## HTML and LaTeX fragments
-
-### Add an HTML fragment
-
-Add an HtmlFragment containing subscript and superscript markup to page paragraphs. The markup is rendered as PDF content.
-
-1. Create a [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) and add a page.
-1. Create an [HtmlFragment](https://reference.aspose.com/pdf/cpp/aspose.pdf/htmlfragment/) with subscript and superscript markup and add it to the page paragraphs.
-1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
-
-```cpp
-#include <system/string.h>
-
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Generator/HtmlFragment.h>
-#include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
-#include <Aspose.PDF.Cpp/Page.h>
-#include <Aspose.PDF.Cpp/PageCollection.h>
-#include <Aspose.PDF.Cpp/Text/TextFragment.h>
-
-using namespace System;
-using namespace Aspose::Pdf;
-using namespace Aspose::Pdf::Text;
-void AddTextHtmlFragment(String inputFile, String outputFile)
-{
-    auto document = MakeObject<Document>();
-    auto page = document->get_Pages()->Add();
-
-    auto textFragment = MakeObject<HtmlFragment>(String(u"<pre>S=a<sub>2n</sub>+a<sup>2</sup><pre>"));
-    page->get_Paragraphs()->Add(textFragment);
-    document->Save(outputFile);
-}
-```
+## LaTeX fragments
 
 ### Add a LaTeX formula
 
