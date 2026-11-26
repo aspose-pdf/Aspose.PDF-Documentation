@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/working-with-layers/
 description: Inspect the supplied layer-creation example and lock, export, flatten, or merge layers on the first PDF page with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -64,8 +64,10 @@ Only layers on the first page are exported. When no extension is supplied, the e
 1. Call [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/layer/) on each [Layer](https://reference.aspose.com/pdf/cpp/aspose.pdf/layer/) using its output filename.
 
 ```cpp
-
 #include <system/console.h>
+
+#include <system/io/path.h>
+
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -78,7 +80,7 @@ void ExtractLayers(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     if (document->get_Pages()->get_Count() == 0) {
-        Console::WriteLine(u"No pages found in the document.");
+        Console::WriteLine(u"No layers found in the document.");
         return;
     }
     auto page = document->get_Pages()->idx_get(1);
@@ -113,6 +115,9 @@ void ExtractLayers(String inputFile, String outputFile)
 1. Close the stream.
 
 ```cpp
+#include <system/console.h>
+#include <system/collections/list.h>
+#include <system/io/file_stream.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -153,6 +158,9 @@ void ExtractLayersStream(String inputFile, String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
+#include <system/collections/list.h>
+#include <system/array.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -194,6 +202,8 @@ void FlattenLayers(String inputFile, String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
+#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

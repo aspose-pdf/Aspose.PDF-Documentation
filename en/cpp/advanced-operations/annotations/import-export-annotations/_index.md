@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /cpp/import-export-annotations/
 description: Copy annotations from the first page of a source PDF to a new PDF document using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -31,6 +31,7 @@ This example transfers annotations only. The source page text, images, and other
 1. Save the destination PDF with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/exceptions.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/AnnotationCollection.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -39,15 +40,20 @@ This example transfers annotations only. The source page text, images, and other
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
+using namespace Aspose::Pdf::Text;
 
-void ImportExport(System::String inputFile, System::String outputFile)
-{
-    auto sourceDocument = MakeObject<Document>(inputFile);
-    auto destinationDocument = MakeObject<Document>();
-    auto page = destinationDocument->get_Pages()->Add();
-    for (auto& annot : sourceDocument->get_Pages()->idx_get(1)->get_Annotations()) {
-        page->get_Annotations()->Add(annot, true);
+namespace WorkingWithAnnotationsExamples::ImportExport {
+
+    void ImportExport(System::String inputFile, System::String outputFile)
+    {
+        auto sourceDocument = MakeObject<Document>(inputFile);
+        auto destinationDocument = MakeObject<Document>();
+        auto page = destinationDocument->get_Pages()->Add();
+        for (auto& annot : sourceDocument->get_Pages()->idx_get(1)->get_Annotations()) {
+            page->get_Annotations()->Add(annot, true);
+        }
+        destinationDocument->Save(outputFile);
     }
-    destinationDocument->Save(outputFile);
-}
+
+} // namespace WorkingWithAnnotations::ImportExport
 ```

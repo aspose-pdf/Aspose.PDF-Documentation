@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /cpp/working-with-vector-graphics/
 description: Inspect, move, remove, and copy vector graphics between PDF pages using GraphicsAbsorber with Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -35,6 +35,7 @@ GraphicsAbsorber reads graphic elements from the selected page. This example pri
 #include <Aspose.PDF.Cpp/Vector/GraphicsAbsorber.h>
 #include <Aspose.PDF.Cpp/Vector/Model/GraphicElement.h>
 #include <Aspose.PDF.Cpp/Vector/Model/GraphicElementCollection.h>
+#include <system/collections/list.h>
 #include <iostream>
 
 using namespace System;

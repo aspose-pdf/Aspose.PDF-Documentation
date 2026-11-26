@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/extract-links/
 description: Read link annotation locations and extract web destination URIs from the first PDF page using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -46,8 +46,8 @@ void ExtractLinkAnnotation(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     for (const auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
-        if (annotation->get_AnnotationType() == AnnotationType::Link && System::DynamicCast_noexcept<LinkAnnotation>(annotation)) {
-            auto linkAnnotation = System::DynamicCast<LinkAnnotation>(annotation);
+        if (annotation->get_AnnotationType() == AnnotationType::Link && System::ExplicitCast<LinkAnnotation>(annotation)) {
+            auto linkAnnotation = System::ExplicitCast<LinkAnnotation>(annotation);
             std::cout << "Page: " << linkAnnotation->get_PageIndex()
             << ", location: " << linkAnnotation->get_Rect()->ToString() << std::endl;
         }
@@ -83,10 +83,10 @@ void ExtractHyperlinks(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     for (const auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
-        if (annotation->get_AnnotationType() == AnnotationType::Link && System::DynamicCast_noexcept<LinkAnnotation>(annotation)) {
-            auto linkAnnotation = System::DynamicCast<LinkAnnotation>(annotation);
-            if (System::DynamicCast_noexcept<GoToURIAction>(linkAnnotation->get_Action())) {
-                auto action = System::DynamicCast<GoToURIAction>(linkAnnotation->get_Action());
+        if (annotation->get_AnnotationType() == AnnotationType::Link && System::ExplicitCast<LinkAnnotation>(annotation)) {
+            auto linkAnnotation = System::ExplicitCast<LinkAnnotation>(annotation);
+            if (System::ExplicitCast<GoToURIAction>(linkAnnotation->get_Action())) {
+                auto action = System::ExplicitCast<GoToURIAction>(linkAnnotation->get_Action());
                 std::cout << "Page " << linkAnnotation->get_PageIndex() << ", URI:" << action->get_URI() << std::endl;
             }
         }

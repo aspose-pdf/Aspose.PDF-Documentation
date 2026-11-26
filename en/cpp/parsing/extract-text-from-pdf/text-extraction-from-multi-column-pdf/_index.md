@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/text-extraction-from-multi-column-pdf/
 description: Explore font-size reduction and extraction scale settings for text in multi-column PDF layouts with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -28,11 +28,12 @@ This technique changes the intermediate document. Review extraction order for yo
 1. Write the extracted text to the output file.
 
 ```cpp
+#include <system/io/file.h>
+#include <system/io/memory_stream.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
-#include <Aspose.PDF.Cpp/Text/TextAbsorber.h>
 #include <Aspose.PDF.Cpp/Text/TextFragmentAbsorber.h>
 #include <Aspose.PDF.Cpp/Text/TextFragment.h>
 #include <Aspose.PDF.Cpp/Text/TextFragmentCollection.h>
@@ -73,6 +74,8 @@ Configure Pure text formatting and a scale factor without explicitly editing tex
 1. Write the extracted text to the output file.
 
 ```cpp
+#include <system/io/file.h>
+#include <system/io/memory_stream.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -82,6 +85,7 @@ Configure Pure text formatting and a scale factor without explicitly editing tex
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
+
 
 void ExtractTextScaleFactor(String inputFile, String outputFile, float reduceRatio)
 {

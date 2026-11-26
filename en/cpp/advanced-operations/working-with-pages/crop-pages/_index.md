@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/crop-pages/
 description: Change PDF page boxes or crop the first page to its first detected image placement using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,7 +26,6 @@ The example leaves MediaBox unchanged. Page-box changes affect the visible or pr
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -35,7 +34,6 @@ The example leaves MediaBox unchanged. Page-box changes affect the visible or pr
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of CropExamples.cropPage.
 void CropPage(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -60,7 +58,6 @@ This crops to the first image placement only; it does not calculate a bounding b
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ImagePlacement.h>
@@ -72,7 +69,6 @@ This crops to the first image placement only; it does not calculate a bounding b
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of CropExamples.cropPageByContent.
 void CropPageByContent(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

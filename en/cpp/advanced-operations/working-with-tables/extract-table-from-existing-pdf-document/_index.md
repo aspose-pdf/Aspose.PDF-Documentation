@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/extracting-table/
 description: Read table rows, cells, and text segments from an existing PDF in C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -35,41 +35,37 @@ Scanning every page of an existing PDF yields the text of detected tables, which
 #include <Aspose.PDF.Cpp/Text/TextSegment.h>
 #include <Aspose.PDF.Cpp/Text/TextSegmentCollection.h>
 #include <system/collections/list.h>
-#include <system/io/file.h>
-#include <system/text/string_builder.h>
-#include <system/console.h>
+#include <iostream>
 
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void WorkingWithTablesExamples::Extract(String inputFile, String outputFile)
+void Extract(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
-	auto sb = MakeObject<System::Text::StringBuilder>();
-    for (auto& page : document->get_Pages())
+    for (auto page : document->get_Pages())
     {
         auto absorber = MakeObject<TableAbsorber>();
         absorber->Visit(page);
-        for (auto& table : absorber->get_TableList())
+        for (auto table : absorber->get_TableList())
         {
-            sb->AppendLine(String(u"Table ----"));
-            for (auto& row : table->get_RowList())
+            std::cout << "Table ----" << std::endl;
+            for (auto row : table->get_RowList())
             {
-                for (auto& cell : row->get_CellList())
+                for (auto cell : row->get_CellList())
                 {
-                    sb->Append(String(u" | "));
-                    for (auto& fragment : cell->get_TextFragments())
-                        for (auto& segment : fragment->get_Segments())
-                            sb->Append(segment->get_Text());
+                    std::cout << " | ";
+                    for (auto fragment : cell->get_TextFragments())
+                        for (auto segment : fragment->get_Segments())
+                            std::cout << segment->get_Text();
                 }
-                sb->AppendLine();
+                std::cout << std::endl;
             }
         }
     }
-	System::Console::WriteLine(sb->ToString());
-	System::IO::File::WriteAllText(outputFile, sb->ToString());
-}```
+}
+```
 
 ## Related table topics
 

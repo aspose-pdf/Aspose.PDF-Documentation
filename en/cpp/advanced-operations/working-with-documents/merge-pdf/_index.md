@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/merge-pdf-documents/
 description: Combine PDF files in sequence, merge selected ranges, insert or alternate pages, and add section separators and bookmarks with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -51,6 +51,11 @@ The helper clamps page ranges to the available pages. Include the standard vecto
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/exceptions.h>
+#include <system/math.h>
+#include <system/console.h>
+#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -102,6 +107,10 @@ The helper clips each range to the source page count and skips empty ranges.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/math.h>
+#include <system/console.h>
+#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -148,6 +157,10 @@ Zero inserts at the beginning; the base page count inserts at the end.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/math.h>
+#include <system/console.h>
+#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -196,6 +209,10 @@ void MergeInsertDocumentAtPosition(String inputFile1, String inputFile2, int ins
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/math.h>
+#include <system/console.h>
+#include <system/collections/list.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -237,6 +254,12 @@ This example creates new section bookmarks; it does not explicitly copy the sour
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/exceptions.h>
+#include <system/math.h>
+#include <system/console.h>
+#include <system/collections/list.h>
+#include <system/io/path.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

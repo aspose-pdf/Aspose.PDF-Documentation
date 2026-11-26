@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/extract-images-from-the-pdf-file/
 description: Save an embedded image resource from a PDF page as JPEG using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -29,6 +29,8 @@ The input must have page 1 and at least one image resource on it. The example do
 1. Close the stream.
 
 ```cpp
+#include <system/io/file.h>
+#include <drawing/imaging/image_format.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>

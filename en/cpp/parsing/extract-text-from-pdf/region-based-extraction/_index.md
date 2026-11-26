@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/region-based-extraction/
 description: Extract text from a page rectangle and inspect the supplied paragraph geometry example using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,6 +27,8 @@ Supply a valid page number and rectangle in the page coordinate system.
 1. Write the extracted text to the output file.
 
 ```cpp
+#include <system/io/file.h>
+#include <system/io/memory_stream.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Rectangle.h>

@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/annotation-and-special-text/
 description: Read highlighted text, stamp appearance text, and superscript or subscript flags from PDFs with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,6 +26,7 @@ Read text marked by highlight annotations on page 1.
 1. Call [GetMarkedText()](https://reference.aspose.com/pdf/cpp/aspose.pdf.annotations/highlightannotation/) and print the result.
 
 ```cpp
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -42,7 +43,7 @@ void ExtractHighlightedText(String inputFile) {
     auto document = MakeObject<Document>(inputFile);
     for (auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
         if (annotation->get_AnnotationType() == AnnotationType::Highlight) {
-            auto highlightAnnotation = System::DynamicCast<Aspose::Pdf::Annotations::HighlightAnnotation>(annotation);
+            auto highlightAnnotation = System::ExplicitCast<Aspose::Pdf::Annotations::HighlightAnnotation>(annotation);
             System::Console::WriteLine(highlightAnnotation->GetMarkedText());
         }
     }
@@ -62,6 +63,7 @@ This requires a suitable normal appearance containing extractable text; it does 
 1. Visit the appearance with the absorber and print its text.
 
 ```cpp
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -84,7 +86,7 @@ void ExtractStampText(String inputFile) {
         if (annotation->get_AnnotationType() == AnnotationType::Stamp) {
             auto textAbsorber = MakeObject<TextAbsorber>();
             auto ap = annotation->get_Appearance()->idx_get(u"N");
-            textAbsorber->Visit(System::DynamicCast<XForm>(ap));
+            textAbsorber->Visit(System::ExplicitCast<XForm>(ap));
             System::Console::WriteLine(textAbsorber->get_Text());
         }
     }
@@ -103,6 +105,8 @@ Despite the function name ExtractSuperSubText, this example extracts all page te
 1. Write the extracted text to the output file.
 
 ```cpp
+#include <system/console.h>
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -134,6 +138,10 @@ Report text and formatting flags for every fragment on a selected page.
 1. Write the details to the output file.
 
 ```cpp
+#include <system/console.h>
+#include <system/io/file.h>
+#include <system/text/string_builder.h>
+#include <system/environment.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

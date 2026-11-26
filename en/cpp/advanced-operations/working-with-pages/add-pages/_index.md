@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/add-pages/
 description: Add blank pages, insert a page at a specific position, or copy a page from another PDF using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -24,7 +24,6 @@ Add blank pages, insert a page at a specific position, or copy a page from anoth
 
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -32,7 +31,6 @@ Add blank pages, insert a page at a specific position, or copy a page from anoth
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of AddPagesExamples.addEmptyPageToEnd.
 void AddEmptyPageToEnd(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -51,7 +49,6 @@ Use an input PDF with at least one page.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -59,7 +56,6 @@ Use an input PDF with at least one page.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of AddPagesExamples.insertEmptyPage.
 void InsertEmptyPage(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -91,7 +87,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of AddPagesExamples.addPageFromAnotherDocument.
 void AddPageFromAnotherDocument(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>();

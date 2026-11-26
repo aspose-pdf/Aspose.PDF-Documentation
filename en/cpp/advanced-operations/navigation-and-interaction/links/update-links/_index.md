@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/update-links/
 description: Change PDF link colors, recolor text in link regions, and update web destination URIs using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -46,8 +46,8 @@ void LinkAnnotationUpdateBorder(System::String inputFile, System::String outputF
 {
     auto document = MakeObject<Document>(inputFile);
     for (const auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
-        if (annotation->get_AnnotationType() == AnnotationType::Link && System::DynamicCast_noexcept<LinkAnnotation>(annotation)) {
-            auto linkAnnotation = System::DynamicCast<LinkAnnotation>(annotation);
+        if (annotation->get_AnnotationType() == AnnotationType::Link && System::ExplicitCast<LinkAnnotation>(annotation)) {
+            auto linkAnnotation = System::ExplicitCast<LinkAnnotation>(annotation);
             linkAnnotation->set_Color(Color::get_Red());
         }
     }
@@ -139,10 +139,10 @@ void LinkAnnotationUpdateWebDestination(System::String inputFile, System::String
 {
     auto document = MakeObject<Document>(inputFile);
     for (const auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
-        if (annotation->get_AnnotationType() == AnnotationType::Link && System::DynamicCast_noexcept<LinkAnnotation>(annotation)) {
-            auto linkAnnotation = System::DynamicCast<LinkAnnotation>(annotation);
-            if (System::DynamicCast_noexcept<GoToURIAction>(linkAnnotation->get_Action())) {
-                auto action = System::DynamicCast<GoToURIAction>(linkAnnotation->get_Action());
+        if (annotation->get_AnnotationType() == AnnotationType::Link && System::ExplicitCast<LinkAnnotation>(annotation)) {
+            auto linkAnnotation = System::ExplicitCast<LinkAnnotation>(annotation);
+            if (System::ExplicitCast<GoToURIAction>(linkAnnotation->get_Action())) {
+                auto action = System::ExplicitCast<GoToURIAction>(linkAnnotation->get_Action());
                 action->set_URI(u"https://www.aspose.com");
             }
         }

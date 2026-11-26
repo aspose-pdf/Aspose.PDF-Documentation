@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/extract-form/
 description: Read PDF form field values and export a name-to-value JSON object using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -34,7 +34,7 @@ The outputFile parameter is unused; results are printed to the console.
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::GetValuesFromAllFields(String inputFile, String outputFile)
+void GetValuesFromAllFields(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     for (const auto &name : form->get_FieldNames())
@@ -63,7 +63,7 @@ This exports names and values, not complete field definitions, widget geometry, 
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::ExtractFormFieldsToJson(String inputFile, String outputFile)
+void ExtractFormFieldsToJson(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     auto escape = [](const String &value) {
@@ -115,7 +115,7 @@ Despite the Doc suffix, this wrapper does not use a separate Document-based JSON
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::ExtractFormFieldsToJsonDoc(String inputFile, String outputFile)
+void ExtractFormFieldsToJsonDoc(String inputFile, String outputFile)
 {
     ExtractFormFieldsToJson(inputFile, outputFile);
 }

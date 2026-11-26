@@ -5,7 +5,7 @@ type: docs
 weight: 130
 url: /cpp/page-stamps-in-the-pdf-file/
 description: Use the first page of another PDF as a background stamp on the first page of a target PDF with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,7 +27,6 @@ Both PDFs must contain at least one page. This overlays page content rather than
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -36,7 +35,6 @@ Both PDFs must contain at least one page. This overlays page content rather than
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of StampingExamples.addPageStamp.
 void AddPageStamp(System::String inputFile, System::String pageStampFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

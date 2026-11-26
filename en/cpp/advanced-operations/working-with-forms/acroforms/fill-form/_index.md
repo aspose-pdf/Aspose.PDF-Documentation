@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/fill-form/
 description: Fill selected named fields in an existing PDF form using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -32,7 +32,7 @@ Only matching field names are filled. The sample does not inspect the Boolean re
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::FillForm(String inputFile, String outputFile)
+void FillForm(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     const String names[] = {u"First Name", u"Last Name", u"City", u"Country"};

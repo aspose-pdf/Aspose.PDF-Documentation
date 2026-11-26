@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/manipulate-pdf-document/
 description: Validate PDF/A documents, create and format a table of contents, add an expiry alert, and flatten a PDF with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -25,6 +25,8 @@ The output path is a validation report, not a converted PDF. Validation does not
 1. Use the Boolean result to print the validation status.
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>
@@ -50,6 +52,8 @@ void ValidatePdfaStandardA1a(String inputFile, String outputFile) {
 1. Use the Boolean result to print the validation status.
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>
@@ -80,6 +84,8 @@ The example uses two supplied titles rather than detecting headings from the inp
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -135,6 +141,8 @@ void AddTableOfContents(String inputFile, String outputFile) {
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
+#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Heading.h>
@@ -209,6 +217,8 @@ void SetTocLevels(String inputFile, String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
+#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Heading.h>
@@ -272,6 +282,8 @@ void HidePageNumbersInToc(String inputFile, String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
+#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Heading.h>
@@ -361,6 +373,8 @@ Flattening turns interactive content into page content. Keep the original PDF if
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
+#include <system/string.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 

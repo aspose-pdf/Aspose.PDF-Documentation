@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/manipulating-tables/
 description: Change cell text or replace a detected table on the first page of a PDF in C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -41,7 +41,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void ReplaceCellText(String inputFile, String outputFile)
+void ReplaceCells(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->idx_get(1);
@@ -56,8 +56,8 @@ void ReplaceCellText(String inputFile, String outputFile)
     if (cells->get_Count() == 0)
         throw std::runtime_error("The target row has no cells");
     auto fragments = cells->idx_get(0)->get_TextFragments();
-    if (fragments->get_Count() < 2)
-        throw std::runtime_error("The target cell has fewer than two text fragments");
+    if (fragments->get_Count() == 0)
+        throw std::runtime_error("The target cell has no text fragments");
     fragments->idx_get(1)->set_Text(u"New Value");
     document->Save(outputFile);
 }

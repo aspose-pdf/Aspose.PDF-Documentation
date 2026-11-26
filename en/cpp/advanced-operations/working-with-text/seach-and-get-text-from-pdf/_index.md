@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/search-and-get-text-from-pdf/
 description: Search and extract PDF text, inspect fragment properties, use regular expressions, and add links to matches using C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -35,8 +35,6 @@ Use Pure text extraction and a search rectangle of (0, 0, 842, 250), then visit 
 1. Print the extracted text.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -60,7 +58,7 @@ void TextAbsorberSearch(String inputFile, String outputFile)
     auto absorber = MakeObject<TextAbsorber>(textExtractionOptions, textSearchOptions);
 
     document->get_Pages()->Accept(absorber);
-    std::cout << (String(u"Extracted text: ") + absorber->get_Text()) << std::endl;
+    std::cout << (String(u"Text fragments found: ") + absorber->get_Text()) << std::endl;
 }
 ```
 
@@ -73,8 +71,6 @@ Use the same extraction settings and rectangle, but visit only page 2. The input
 1. Print the extracted text.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -111,8 +107,6 @@ Visit all pages and print each fragment text, position, X and Y indents, font na
 1. Print the collected properties.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -167,8 +161,6 @@ Search page 2 for whale and print the text and position of each result.
 1. Visit page 2 and print the text and position of each match.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -206,8 +198,6 @@ Search page 1 for whale and print the accumulated results. Then visit page 2 and
 1. Print the accumulated matches, including any duplicates.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -259,8 +249,6 @@ Search for elephant within (0, 0, 842, 250) on page 2 and print each match and i
 1. Visit page 2 and print each match and its position.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -301,8 +289,6 @@ Search page 2 for decimal numbers using the pattern \d+\.\d+ with regular-expres
 1. Visit page 2 and print each match and its position.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -344,8 +330,6 @@ Search every page using separate whale and elephant regular expressions. Read ea
 1. Print the text and position of each match.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -395,8 +379,6 @@ On page 1, search for whale or elephant, style each match in blue with an underl
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/WebHyperlink.h>
@@ -440,8 +422,6 @@ Visit page 1 and print fragments whose FontStyle equals Bold, and fragments with
 1. Check the [Invisible](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/textfragmentstate/) flag independently and print the text of fragments marked invisible.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -488,8 +468,6 @@ Search non-whitespace runs on every page, render each page to PNG at 150 DPI, an
 1. Print each matched fragment’s upper Y coordinate alongside the page’s upper Y coordinate.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Devices/PngDevice.h>
 #include <Aspose.PDF.Cpp/Devices/Resolution.h>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -517,13 +495,15 @@ void TextFragmentAbsorberSearchAndHighlight(String inputFile, String outputFile)
 
     {
         auto document = MakeObject<Document>(inputFile);
+        auto absorber = MakeObject<TextFragmentAbsorber>(
+            MakeObject<System::Text::RegularExpressions::Regex>(String(u"[\\S]+")));
+        absorber->set_TextSearchOptions(MakeObject<TextSearchOptions>(true));
+
         for (int pageNumber = 1; pageNumber <= document->get_Pages()->get_Count(); pageNumber++)
         {
             auto page = document->get_Pages()->idx_get(pageNumber);
-            auto absorber = MakeObject<TextFragmentAbsorber>(
-                MakeObject<System::Text::RegularExpressions::Regex>(String(u"[\\S]+")));
-            absorber->set_TextSearchOptions(MakeObject<TextSearchOptions>(true));
             page->Accept(absorber);
+
             {
                 auto stream = MakeObject<System::IO::MemoryStream>();
                 pngDevice->Process(page, stream);

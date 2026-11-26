@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/add-curve/
 description: Draw stroked and filled curves from point arrays using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -41,8 +41,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-// Port of GraphsCurveExamples.addCurve.
-void GraphExamples::AddCurve(String outputFile)
+void AddCurve(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -85,8 +84,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-// Port of GraphsCurveExamples.addCurveFilled.
-void GraphExamples::AddCurveFilled(String outputFile)
+void AddCurveFilled(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();

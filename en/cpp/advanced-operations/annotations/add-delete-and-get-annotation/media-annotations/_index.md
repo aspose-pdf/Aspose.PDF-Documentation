@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/media-annotations/
 description: Create and inspect PDF sound, screen, rich media, and 3D annotations and delete rich media annotations using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -97,7 +97,7 @@ namespace WorkingWithAnnotationsExamples::Media {
         document->Save(outputFile);
     }
 
-} // namespace WorkingWithAnnotationsExamples::Media
+} // namespace WorkingWithAnnotations::Media
 ```
 
 ## Get multimedia annotations

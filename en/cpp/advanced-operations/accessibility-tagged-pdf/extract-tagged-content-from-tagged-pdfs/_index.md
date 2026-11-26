@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/extract-tagged-content-from-tagged-pdfs/
 description: Access tagged PDF content in C++, inspect structure roots and child elements, and update accessibility metadata.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -101,7 +101,6 @@ The sample assumes that the root contains a child at index 1. Inspect the input 
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
@@ -122,7 +121,7 @@ void AccessChildElements(System::String inputFile, System::String outputFile)
 
     auto elementList = taggedContent->get_StructTreeRootElement()->get_ChildElements();
     for (const auto& element : elementList) {
-        if (auto structureElement = System::DynamicCast_noexcept<StructureElement>(element)) {
+        if (auto structureElement = System::ExplicitCast<StructureElement>(element)) {
             std::cout << "StructureElement properties - "
             << "title: " << structureElement->get_Title()
             << ", language: " << structureElement->get_Language()
@@ -134,7 +133,7 @@ void AccessChildElements(System::String inputFile, System::String outputFile)
 
     auto firstChild = taggedContent->get_RootElement()->get_ChildElements()->idx_get(1);
     for (const auto& element : firstChild->get_ChildElements()) {
-        if (auto structureElement = System::DynamicCast_noexcept<StructureElement>(element)) {
+        if (auto structureElement = System::ExplicitCast<StructureElement>(element)) {
             structureElement->set_Title(u"title");
             structureElement->set_Language(u"fr-FR");
             structureElement->set_ActualText(u"actual text");

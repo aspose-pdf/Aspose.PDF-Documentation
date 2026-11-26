@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/formatting-pdf-document/
 description: Inspect and configure PDF viewer preferences, font embedding, font subsets, and opening zoom with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -23,6 +23,8 @@ Inspect and configure PDF viewer preferences, font embedding, font subsets, and 
 1. Print the property values.
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/DOM/PageMode.h>
@@ -58,6 +60,8 @@ PDF viewers decide how to apply these display preferences.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/DOM/PageMode.h>
@@ -95,6 +99,8 @@ Make the necessary fonts available in the execution environment.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -131,6 +137,8 @@ void EmbeddedFonts(String inputFile, String outputFile) {
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -171,6 +179,8 @@ void EmbeddedFontsInNewDocument(String outputFile) {
 1. Call [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) with the output path and the save options.
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PdfSaveOptions.h>
@@ -195,6 +205,8 @@ void SetDefaultFont(String inputFile, String outputFile) {
 1. Read FontName from each [Font](https://reference.aspose.com/pdf/cpp/aspose.pdf.text/font/) and print it.
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
@@ -220,6 +232,8 @@ The alternative SubsetAllFonts call remains commented out in the source.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -254,6 +268,9 @@ The example sets a 50% opening zoom and replaces the existing open action.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/string.h>
+#include <system/exceptions.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -289,6 +306,8 @@ void SetZoomFactor(String inputFile, String outputFile) {
 1. Print Zoom when available, or print that zoom is not set.
 
 ```cpp
+#include <system/string.h>
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -307,13 +326,13 @@ using namespace Aspose::Pdf::Annotations;
 
 void GetZoomFactor(String inputFile) {
     auto document = MakeObject<Document>(inputFile);
-    auto action = System::DynamicCast<GoToAction>(document->get_OpenAction());
+    auto action = System::ExplicitCast<GoToAction>(document->get_OpenAction());
     if (action == nullptr) {
         System::Console::WriteLine(u"Zoom: not set");
         return;
     }
     if (action != nullptr) {
-        auto destination = System::DynamicCast<XYZExplicitDestination>(action->get_Destination());
+        auto destination = System::ExplicitCast<XYZExplicitDestination>(action->get_Destination());
         if (destination != nullptr) {
             System::Console::WriteLine(u"Zoom: {0}", destination->get_Zoom());
         }

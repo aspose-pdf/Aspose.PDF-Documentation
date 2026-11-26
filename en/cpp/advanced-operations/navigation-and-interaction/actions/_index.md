@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/actions/
 description: Add document and page actions, navigation buttons, print and hide buttons, and form submission actions using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -298,10 +298,10 @@ using namespace Aspose::Pdf::Forms;
 void AddNamedActionHide(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
-    auto checkboxes = MakeObject<System::Collections::Generic::List<SharedPtr<WidgetAnnotation>>>();
+    auto checkboxes = MakeObject<System::Collections::Generic::List<SharedPtr<Annotation>>>();
     for (const auto& field : document->get_Form()) {
-        if (System::DynamicCast_noexcept<CheckboxField>(field)) {
-            checkboxes->Add(System::DynamicCast<WidgetAnnotation>(field));
+        if (System::ExplicitCast<CheckboxField>(field)) {
+            checkboxes->Add(System::ExplicitCast<WidgetAnnotation>(field));
         }
     }
 
@@ -309,8 +309,9 @@ void AddNamedActionHide(System::String inputFile, System::String outputFile)
     auto hideButton = MakeObject<ButtonField>(document->get_Pages()->idx_get(1), rect);
     hideButton->set_PartialName(u"HideButton");
     hideButton->set_Value(u"Hide Checkboxes");
-    hideButton->get_Actions()->set_OnReleaseMouseBtn(
-    MakeObject<HideAction>(checkboxes->ToArray(), true));
+	auto checkboxArray = checkboxes->ToArray();
+	auto hideAction = MakeObject<HideAction>(checkboxArray, true);
+    hideButton->get_Actions()->set_OnReleaseMouseBtn(hideAction);
 
     document->get_Form()->Add(hideButton, 1);
     document->Save(outputFile);
@@ -352,7 +353,7 @@ void AddSubmitAction(System::String inputFile, System::String outputFile)
     auto submitAction = MakeObject<SubmitFormAction>();
     auto submitUrl = MakeObject<FileSpecification>();
     submitUrl->set_FileSystem(u"URL");
-    submitUrl->set_Name(u"http://localhost:3000/submit");
+    submitUrl->set_Name(u"http://localhost:8080/submit");
     submitAction->set_Url(submitUrl);
     submitAction->set_Flags(SubmitFormAction::ExportFormat | SubmitFormAction::SubmitCoordinates);
 

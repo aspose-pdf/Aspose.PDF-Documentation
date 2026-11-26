@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/change-page-size/
 description: Read PDF page dimensions, compare rectangles with and without rotation, and set a page size using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -32,7 +32,6 @@ Read PDF page dimensions, compare rectangles with and without rotation, and set 
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of ChangeSizeExamples.getPageSize.
 void GetPageSize(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -52,7 +51,6 @@ The rotation change is made in memory only; this function does not save a PDF.
 1. Call [GetPageRect()](https://reference.aspose.com/pdf/cpp/aspose.pdf/page/getpagerect/) with true and print the dimensions.
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Rectangle.h>
@@ -63,7 +61,6 @@ The rotation change is made in memory only; this function does not save a PDF.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of ChangeSizeExamples.getPageSizeRotation.
 void GetPageSizeRotation(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -88,7 +85,6 @@ The dimensions are in PDF points. This changes the page geometry; it does not ex
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Rectangle.h>
@@ -98,7 +94,6 @@ The dimensions are in PDF points. This changes the page geometry; it does not ex
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of ChangeSizeExamples.setPageSize.
 void SetPageSize(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

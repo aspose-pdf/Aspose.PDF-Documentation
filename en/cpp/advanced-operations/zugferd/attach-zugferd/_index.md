@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/attach-zugferd/
 description: Attach invoice XML to a PDF in C++, configure associated-file metadata, and convert the document to PDF/A-3A.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -31,7 +31,6 @@ Supply an existing PDF invoice and its XML data. Configure your project to inclu
 
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/AFRelationship.h>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -43,21 +42,24 @@ Supply an existing PDF invoice and its XML data. Configure your project to inclu
 using namespace System;
 using namespace Aspose::Pdf;
 
-void AttachInvoiceZugferdFormat(System::String inputFile, System::String invoiceFile, System::String outputFile)
+namespace AttachZugferdExamples
 {
-    auto document = MakeObject<Document>(inputFile);
-    String description = u"Invoice metadata conforming to ZUGFeRD standard";
-    auto fileSpecification = MakeObject<FileSpecification>(invoiceFile, description);
+	void AttachInvoiceZugferdFormat(System::String inputFile, System::String invoiceFile, System::String outputFile)
+	{
+		auto document = MakeObject<Document>(inputFile);
+		String description = u"Invoice metadata conforming to ZUGFeRD standard";
+		auto fileSpecification = MakeObject<FileSpecification>(invoiceFile, description);
 
-    fileSpecification->set_MIMEType(u"text/xml");
-    fileSpecification->set_AFRelationship(AFRelationship::Alternative);
-    document->get_EmbeddedFiles()->Add(u"factur", fileSpecification);
+		fileSpecification->set_MIMEType(u"text/xml");
+		fileSpecification->set_AFRelationship(AFRelationship::Alternative);
+		document->get_EmbeddedFiles()->Add(u"factur", fileSpecification);
 
-    String logPath = outputFile.Replace(u".pdf", u"_log.xml");
-    document->Convert(logPath, PdfFormat::PDF_A_3A, ConvertErrorAction::Delete);
-    document->Save(outputFile);
+		String logPath = outputFile.Replace(u".pdf", u"_log.xml");
+		document->Convert(logPath, PdfFormat::PDF_A_3A, ConvertErrorAction::Delete);
+		document->Save(outputFile);
 
-    std::cout << "ZUGFeRD invoice attached to " << outputFile << std::endl;
+		std::cout << "ZUGFeRD invoice attached to " << outputFile << std::endl;
+	}
 }
 ```
 

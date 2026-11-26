@@ -5,7 +5,7 @@ type: docs
 weight: 200
 url: /cpp/pdf-file-metadata/
 description: Read and update PDF document information, register XMP namespace prefixes, and set XMP values using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -37,7 +37,7 @@ Read standard document information and print the values without modifying the PD
 using namespace System;
 using namespace Aspose::Pdf;
 
-void GetPdfFileInformation(System::String inputFile)
+void PdfFileMetadataExamples:: GetPdfFileInformation(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto docInfo = document->get_Info();
@@ -71,7 +71,7 @@ Register the xmp prefix for the Adobe XMP namespace and add a modification times
 using namespace System;
 using namespace Aspose::Pdf;
 
-void SetPrefixMetadata(System::String inputFile, System::String outputFile)
+void PdfFileMetadataExamples:: SetPrefixMetadata(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     document->get_Metadata()->RegisterNamespaceUri(u"xmp", u"http://ns.adobe.com/xap/1.0/");
@@ -103,7 +103,7 @@ The example assigns the current time to both CreationDate and ModDate, replacing
 using namespace System;
 using namespace Aspose::Pdf;
 
-void SetFileInformation(System::String inputFile, System::String outputFile)
+void PdfFileMetadataExamples:: SetFileInformation(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto docInfo = document->get_Info();
@@ -145,7 +145,7 @@ The example retains the supplied xmp:CustomProperty name. Treat it as sample app
 using namespace System;
 using namespace Aspose::Pdf;
 
-void SetXmpMetadata(System::String inputFile, System::String outputFile)
+void PdfFileMetadataExamples:: SetXmpMetadata(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     document->get_Metadata()->Add(u"xmp:CreateDate", MakeObject<XmpValue>(DateTimeOffset::get_Now().ToString(u"o")));

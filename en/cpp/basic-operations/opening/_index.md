@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/open-pdf-document/
 description: Open PDF files in C++ from a path, stream, or memory and load password-protected documents.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -21,8 +21,6 @@ Abstract: Learn how to open PDF documents from a file path, file stream, or memo
 1. Print the page count.
 
 ```cpp
-#include <iostream>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -31,7 +29,9 @@ Abstract: Learn how to open PDF documents from a file path, file stream, or memo
 #include <Aspose.PDF.Cpp/Exceptions/InvalidPasswordException.h>
 
 using namespace System;
+
 using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
 void OpenDocument(String path_infile)
 {
@@ -49,8 +49,6 @@ void OpenDocument(String path_infile)
 1. Print the page count.
 
 ```cpp
-#include <iostream>
-
 #include <system/io/file.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -61,6 +59,9 @@ void OpenDocument(String path_infile)
 
 using namespace System;
 using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+//Open existing PDF document from stream
 void OpenDocumentStream(String path_infile)
 {
     auto document = MakeObject<Document>(System::IO::File::OpenRead(path_infile));
@@ -78,8 +79,6 @@ void OpenDocumentStream(String path_infile)
 1. Print the page count.
 
 ```cpp
-#include <iostream>
-
 #include <system/io/file.h>
 #include <system/io/memory_stream.h>
 
@@ -90,6 +89,7 @@ void OpenDocumentStream(String path_infile)
 
 using namespace System;
 using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
 
 void OpenDocumentMemory(String path_infile)
 {
@@ -109,8 +109,6 @@ void OpenDocumentMemory(String path_infile)
 1. Catch [InvalidPasswordException](https://reference.aspose.com/pdf/cpp/aspose.pdf/) if the password is incorrect.
 
 ```cpp
-#include <iostream>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -118,19 +116,20 @@ void OpenDocumentMemory(String path_infile)
 #include <Aspose.PDF.Cpp/Exceptions/InvalidPasswordException.h>
 
 using namespace System;
-using namespace Aspose::Pdf;
-void OpenDocumentWithPassword(String path_infile, String password)
-{
-    try
-    {
-        auto document = MakeObject<Document>(path_infile, password);
-        int countPages = document->get_Pages()->get_Count();
 
-        std::cout << "Pages " << countPages << std::endl;
-    }
-    catch (Aspose::Pdf::InvalidPasswordException& e)
-    {
-        std::cerr << e.what();
-    }
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+// Open encrypted PDF document
+void OpenDocumentWithPassword(String path_infile)
+{
+	const String OWNER_PASSWORD (u"ownerpassword");
+
+    auto document = MakeObject<Document>(path_infile, OWNER_PASSWORD);
+    int countPages = document->get_Pages()->get_Count();
+
+    std::cout << "Pages " << countPages << std::endl;
+
 }
 ```
