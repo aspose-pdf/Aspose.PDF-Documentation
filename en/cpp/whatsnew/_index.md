@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/whatsnew/
 description: Review selected Aspose.PDF for C++ release highlights, including new conversion formats, image handling, forms, and runtime improvements.
-lastmod: "2026-11-19"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.8
@@ -245,9 +245,7 @@ Retrieve document and page comparison results from `SideBySidePdfComparer::Compa
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySideComparisonOptions.h>
 #include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySidePdfComparer.h>
-#include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySideDocsComparisonResult.h>
-#include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySidePagesComparisonResult.h>
-#include <Aspose.PDF.Cpp/Comparison/TextComparison/DiffOperation.h>
+#include <Aspose.PDF.Cpp/Comparison/Diff/DiffOperation.h>
 #include <system/collections/list.h>
 #include <system/console.h>
 
@@ -295,9 +293,7 @@ namespace SideBySideComparisonResultsExamples
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySideComparisonOptions.h>
 #include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySidePdfComparer.h>
-#include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySideDocsComparisonResult.h>
-#include <Aspose.PDF.Cpp/Comparison/SideBySideComparison/SideBySidePagesComparisonResult.h>
-#include <Aspose.PDF.Cpp/Comparison/TextComparison/DiffOperation.h>
+#include <Aspose.PDF.Cpp/Comparison/Diff/DiffOperation.h>
 #include <system/collections/list.h>
 #include <system/console.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -368,7 +364,8 @@ namespace PageCollectionUpdateMethodsExamples
         pages->BeginUpdate();
         try
         {
-            for (int i = 1; i <= 10; ++i)
+            // Four pages also keep this example within evaluation-mode limits.
+            for (int i = 1; i <= 4; ++i)
             {
                 auto page = pages->Add();
                 page->get_Paragraphs()->Add(MakeObject<TextFragment>(
@@ -439,9 +436,11 @@ RTF to PDF Conversion
 
 Convert RTF documents directly to PDF using `RtfLoadOptions`.
 
+The Aspose.PDF for C++ 26.10.0 NuGet package lacks a header required by these examples, so both are disabled in the sample project.
+
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/RtfLoadOptions.h>
+#include <Aspose.PDF.Cpp/RTF/RtfConverter.h>
 #include <system/string.h>
 
 namespace RtfToPdfConversionExamples
@@ -463,7 +462,7 @@ namespace RtfToPdfConversionExamples
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/RtfLoadOptions.h>
+#include <Aspose.PDF.Cpp/RTF/RtfConverter.h>
 #include <system/io/file.h>
 #include <system/io/file_stream.h>
 #include <system/string.h>
@@ -499,7 +498,7 @@ Complete Deletion of Invisible Text Objects
 
 Detect and remove invisible text with `TextFragmentAbsorber`, including text hidden by its invisibility flag, rendering mode, or fully transparent foreground color.
 
-The examples inspect every page. The shared helper detects invisible rendering, the invisibility flag, and fully transparent fill-only text; it preserves text with a visible stroked outline.
+Use `remove_hidden_text_in.pdf` from the sample repository to try both examples. The examples inspect every page. The shared helper detects invisible rendering, the invisibility flag, and fully transparent fill-only text; it preserves text with a visible stroked outline.
 
 Shared helper: `invisible-text-object-deletion/invisible-text-check.h`. Save this file beside the examples that include it.
 
@@ -629,45 +628,46 @@ RTF Loading and Conversion APIs
 
 The `RtfLoadOptions` and `RtfConverter` APIs were added ahead of the RTF conversion feature announcement in 26.2.
 
+In Aspose.PDF for C++ 26.10.0, `RtfConverter::ToPdf` is internal and unexported. The sample project also disables the `RtfLoadOptions` example because the NuGet package lacks a required header.
+
 ```cpp
-#include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/RtfConverter.h>
-#include <Aspose.PDF.Cpp/RtfLoadOptions.h>
-#include <system/io/file.h>
-#include <system/io/file_stream.h>
-#include <system/string.h>
-
-namespace RtfLoadingAndConversionExamples
-{
-    using namespace System;
-    using namespace Aspose::Pdf;
-
-    void ConvertRtfStreamToPdf(String inputFile, String outputFile)
-    {
-        auto input = System::IO::File::OpenRead(inputFile);
-        auto options = MakeObject<RtfLoadOptions>();
-        auto document = MakeObject<Document>();
-
-        try
-        {
-            // Populate the destination document from the RTF input stream.
-            RtfConverter::ToPdf(document, input, options);
-            document->Save(outputFile);
-        }
-        catch (...)
-        {
-            input->Close();
-            throw;
-        }
-
-        input->Close();
-    }
-}
+//#include <Aspose.PDF.Cpp/Document.h>
+//#include <Aspose.PDF.Cpp/RTF/RtfConverter.h>
+//#include <system/io/file.h>
+//#include <system/io/file_stream.h>
+//#include <system/string.h>
+//
+//namespace RtfLoadingAndConversionExamples
+//{
+//    using namespace System;
+//    using namespace Aspose::Pdf;
+//
+//    void ConvertRtfStreamToPdf(String inputFile, String outputFile)
+//    {
+//        auto input = System::IO::File::OpenRead(inputFile);
+//        auto options = MakeObject<RtfLoadOptions>();
+//        auto document = MakeObject<Document>();
+//
+//        try
+//        {
+//            // Populate the destination document from the RTF input stream.
+//            RtfConverter::ToPdf(document, input, options);
+//            document->Save(outputFile);
+//        }
+//        catch (...)
+//        {
+//            input->Close();
+//            throw;
+//        }
+//
+//        input->Close();
+//    }
+//}
 ```
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/RtfLoadOptions.h>
+#include <Aspose.PDF.Cpp/RTF/RtfConverter.h>
 #include <system/string.h>
 
 namespace RtfLoadingAndConversionExamples
@@ -1055,12 +1055,11 @@ The `Aspose::Pdf::LowCode` namespace provides APIs for conversion, extraction, f
 Configure the project with an SDK exposing the LowCode APIs and apply a license before processing. Use separate input and output paths and create output directories first. The signing example requires a PDF with at least one page and a PFX/P12 certificate containing its private key.
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/TableGenerator.h>
-#include <Aspose.PDF.Cpp/LowCode/TableOptions.h>
-#include <Aspose.PDF.Cpp/LowCode/TableBuilder.h>
-#include <Aspose.PDF.Cpp/LowCode/TableRowBuilder.h>
-#include <Aspose.PDF.Cpp/LowCode/TableCellBuilder.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/PdfGenerator/TableGenerator.h>
+#include <Aspose.PDF.Cpp/LowCode/PdfGenerator/TableOptions.h>
+#include <Aspose.PDF.Cpp/LowCode/PdfGenerator/Builder/TableRowBuilder.h>
+#include <Aspose.PDF.Cpp/LowCode/PdfGenerator/Builder/TableCellBuilder.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
 #include <system/string.h>
 #include <Aspose.PDF.Cpp/Generator/BaseParagraph.h>
 #include <Aspose.PDF.Cpp/Text/TextFragment.h>
@@ -1095,10 +1094,10 @@ namespace LowCodePdfProcessingExamples
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/DocConverter.h>
-#include <Aspose.PDF.Cpp/LowCode/PdfToDocOptions.h>
-#include <Aspose.PDF.Cpp/LowCode/SaveFormat.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/DocConverter/DocConverter.h>
+#include <Aspose.PDF.Cpp/LowCode/DocConverter/PdfToDocOptions.h>
+#include <Aspose.PDF.Cpp/SaveFormat.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
 #include <system/string.h>
 
 namespace LowCodePdfProcessingExamples
@@ -1119,12 +1118,17 @@ namespace LowCodePdfProcessingExamples
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/Security.h>
-#include <Aspose.PDF.Cpp/LowCode/EncryptionOptions.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/Security/Security.h>
+#include <Aspose.PDF.Cpp/LowCode/Security/EncryptionOptions.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/ResultContainer.h>
+#include <Aspose.PDF.Cpp/LowCode/IOperationResult.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileResult.h>
 #include <system/string.h>
+#include <system/console.h>
+#include <system/collections/list.h>
 #include <Aspose.PDF.Cpp/Facades/DocumentPrivilege.h>
-#include <Aspose.PDF.Cpp/Security/CryptoAlgorithm.h>
+
 namespace LowCodePdfProcessingExamples
 {
     using namespace System;
@@ -1132,23 +1136,24 @@ namespace LowCodePdfProcessingExamples
 
     void EncryptPdf(String inputFile, String outputFile, String ownerPassword, String userPassword)
     {
-        auto processor = MakeObject<Security>();
+        auto processor = MakeObject<Aspose::Pdf::LowCode::Security>();
         auto options = MakeObject<EncryptionOptions>(ownerPassword, userPassword,
             Aspose::Pdf::Facades::DocumentPrivilege::get_ForbidAll(),
             Aspose::Pdf::CryptoAlgorithm::AESx256);
         options->AddInput(MakeObject<FileDataSource>(inputFile));
         options->AddOutput(MakeObject<FileDataSource>(outputFile));
-        processor->Process(options);
+        auto result = processor->Process(options)->get_ResultCollection()->idx_get(0);
+        Console::WriteLine(u"Encrypted PDF saved to: " + result->ToFile());
     }
 }
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/TextExtractor.h>
-#include <Aspose.PDF.Cpp/LowCode/TextExtractorOptions.h>
+#include <Aspose.PDF.Cpp/LowCode/TextExtractor/TextExtractor.h>
+#include <Aspose.PDF.Cpp/LowCode/TextExtractor/TextExtractorOptions.h>
 #include <Aspose.PDF.Cpp/LowCode/ResultContainer.h>
 #include <Aspose.PDF.Cpp/LowCode/IOperationResult.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
 #include <system/string.h>
 #include <system/console.h>
 #include <system/collections/list.h>
@@ -1174,9 +1179,9 @@ namespace LowCodePdfProcessingExamples
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/FormFlattener.h>
-#include <Aspose.PDF.Cpp/LowCode/FormFlattenAllFieldsOptions.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/FormFlattener/FormFlattener.h>
+#include <Aspose.PDF.Cpp/LowCode/FormFlattener/FormFlattenAllFieldsOptions.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
 #include <system/string.h>
 
 namespace LowCodePdfProcessingExamples
@@ -1197,9 +1202,9 @@ namespace LowCodePdfProcessingExamples
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/Merger.h>
-#include <Aspose.PDF.Cpp/LowCode/MergeOptions.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/Merger/Merger.h>
+#include <Aspose.PDF.Cpp/LowCode/Merger/MergeOptions.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
 #include <system/string.h>
 
 namespace LowCodePdfProcessingExamples
@@ -1221,9 +1226,9 @@ namespace LowCodePdfProcessingExamples
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/Optimizer.h>
-#include <Aspose.PDF.Cpp/LowCode/OptimizeOptions.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/Optimizer/Optimizer.h>
+#include <Aspose.PDF.Cpp/LowCode/Optimizer/OptimizeOptions.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
 #include <system/string.h>
 
 namespace LowCodePdfProcessingExamples
@@ -1244,9 +1249,10 @@ namespace LowCodePdfProcessingExamples
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/LowCode/Signature.h>
-#include <Aspose.PDF.Cpp/LowCode/SignOptions.h>
-#include <Aspose.PDF.Cpp/LowCode/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/Implementations/FileDataSource.h>
+#include <Aspose.PDF.Cpp/LowCode/Signature/Signature.h>
+#include <Aspose.PDF.Cpp/LowCode/Signature/SignOptions.h>
+#include <Aspose.PDF.Cpp/LowCode/IDataSource.h>
 #include <system/string.h>
 #include <Aspose.PDF.Cpp/Rectangle.h>
 namespace LowCodePdfProcessingExamples
@@ -1707,7 +1713,7 @@ Apply font settings and bold, italic, or underline styles with `FreeTextAnnotati
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/FreeTextAnnotation.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/RichTextFontStyles.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/DefaultAppearance.h>
-#include <system/drawing/color.h>
+#include <drawing/color.h>
 
 namespace FreeTextAnnotationRichTextStylingExamples
 {
@@ -1744,7 +1750,7 @@ namespace FreeTextAnnotationRichTextStylingExamples
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/FreeTextAnnotation.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/RichTextFontStyles.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/DefaultAppearance.h>
-#include <system/drawing/color.h>
+#include <drawing/color.h>
 
 namespace FreeTextAnnotationRichTextStylingExamples
 {
@@ -1783,7 +1789,7 @@ Read License Information
 Access license details and expiry dates through `License::LicenseInfo`.
 
 ```cpp
-#include <Aspose.PDF.Cpp/License.h>
+#include <Aspose.PDF.Cpp/PdfLicense.h>
 #include <Aspose.PDF.Cpp/LicenseInfo.h>
 #include <system/collections/list.h>
 #include <system/console.h>
@@ -1823,7 +1829,7 @@ namespace ReadLicenseInformationExamples
 ```
 
 ```cpp
-#include <Aspose.PDF.Cpp/License.h>
+#include <Aspose.PDF.Cpp/PdfLicense.h>
 #include <Aspose.PDF.Cpp/LicenseInfo.h>
 #include <system/console.h>
 #include <system/date_time.h>
@@ -1869,7 +1875,7 @@ These repository examples use the `PdfFileSignature` facade to validate signatur
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Facades/PdfFileSignature.h>
 #include <Aspose.PDF.Cpp/Facades/SignatureName.h>
-#include <system/security/cryptography/x509_certificates/x509_certificate_2.h>
+#include <security/cryptography/x509_certificates/x509_certificate_2.h>
 #include <system/console.h>
 
 namespace SignatureVerificationAndCertificateExtractionExamples
@@ -2009,6 +2015,7 @@ Create list items, labels, and bodies through `ITaggedContent`.
 #include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/GroupingElement.h>
+#include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/ILSElement.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/StructureElement.h>
 #include <Aspose.PDF.Cpp/Tagged/PositionSettings.h>
@@ -2082,6 +2089,7 @@ namespace TaggedListElementsExamples
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Tagged/ITaggedContent.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/GroupingElement.h>
+#include <Aspose.PDF.Cpp/Tagged/LogicalStructure/BLSElement.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/ILSElement.h>
 #include <Aspose.PDF.Cpp/Tagged/LogicalStructure/StructureElement.h>
 #include <Aspose.PDF.Cpp/Tagged/PositionSettings.h>
@@ -2210,8 +2218,8 @@ Shared helper: `custom-security-handler/demo-security-handler.h`. Save this file
 ```cpp
 #pragma once
 
-#include <Aspose.PDF.Cpp/Security/ICustomSecurityHandler.h>
-#include <Aspose.PDF.Cpp/Security/EncryptionParameters.h>
+#include <Aspose.PDF.Cpp/Security/Impl/Handlers/ICustomSecurityHandler.h>
+#include <Aspose.PDF.Cpp/Security/Impl/Handlers/EncryptionParameters.h>
 #include <system/array.h>
 #include <system/exceptions.h>
 #include <system/text/encoding.h>
@@ -2378,6 +2386,7 @@ Markdown Heading Style Selection
 Choose exported heading style with `MarkdownSaveOptions::HeadingStyle`.
 
 ```cpp
+#include <Aspose.PDF.Cpp/PdfToMarkdown/MarkdownOptions/HeadingStyle.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PdfToMarkdown/MarkdownOptions/MarkdownSaveOptions.h>
 
@@ -2399,6 +2408,7 @@ namespace ConvertingExamples
 ```
 
 ```cpp
+#include <Aspose.PDF.Cpp/PdfToMarkdown/MarkdownOptions/HeadingStyle.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PdfToMarkdown/MarkdownOptions/MarkdownSaveOptions.h>
 
@@ -2422,6 +2432,8 @@ namespace ConvertingExamples
 Inspect Explicit Text State Settings
 
 Use the new `TextState::Is...Set` properties to inspect configured text attributes.
+
+The `TextState::Is...Set` accessors are protected in Aspose.PDF for C++ 26.10.0. The sample project excludes these snippets from its build.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Color.h>
@@ -2520,7 +2532,8 @@ Clear an Applied License
 Clear the current license with `License::ClearLicense()`.
 
 ```cpp
-#include <Aspose.PDF.Cpp/License.h>
+#include <system/string.h>
+#include <Aspose.PDF.Cpp/PdfLicense.h>
 
 namespace LicensingExamples
 {
