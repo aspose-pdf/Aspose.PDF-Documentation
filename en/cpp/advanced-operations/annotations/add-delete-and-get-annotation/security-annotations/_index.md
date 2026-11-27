@@ -5,7 +5,7 @@ type: docs
 weight: 75
 url: /cpp/security-annotations/
 description: Mark text and image areas for redaction and apply existing redaction annotations in PDF files using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -55,7 +55,7 @@ void ApplyRedaction(System::String inputFile, System::String outputFile)
     std::vector<SharedPtr<RedactionAnnotation>> redactionAnnotations;
     for (auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
         if (annotation->get_AnnotationType() == AnnotationType::Redaction) {
-            redactionAnnotations.push_back(DynamicCast<RedactionAnnotation>(annotation));
+            redactionAnnotations.push_back(ExplicitCast<RedactionAnnotation>(annotation));
         }
     }
     for (auto redactionAnnotation : redactionAnnotations) {
@@ -64,7 +64,7 @@ void ApplyRedaction(System::String inputFile, System::String outputFile)
     document->Save(outputFile);
 }
 
-} // namespace WorkingWithAnnotationsExamples::Security
+} // namespace WorkingWithAnnotations::Security
 ```
 
 ## Mark matching text for redaction

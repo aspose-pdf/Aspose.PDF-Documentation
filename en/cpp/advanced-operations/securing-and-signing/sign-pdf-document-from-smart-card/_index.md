@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/sign-pdf-document-from-smart-card/
 description: Review the supplied local-certificate helper and the unsigned fallback behavior of signature-field and smart-card examples in Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -23,15 +23,22 @@ This is a placeholder, not an implementation that reads a certificate store or c
 1. Provide an application-specific certificate-selection implementation before expecting the dependent examples to sign a PDF.
 
 ```cpp
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Placeholder retained from SecuringAndSigningExamples.getLocalCertificate.
-System::SharedPtr<System::Security::Cryptography::X509Certificates::X509Certificate2> GetLocalCertificate()
-{
-    return nullptr;
-}
+	// Placeholder retained from SecuringAndSigningExamples.getLocalCertificate.
+	System::SharedPtr<System::Security::Cryptography::X509Certificates::X509Certificate2> GetLocalCertificate()
+	{
+		//// Sign with certificate selection in the windows certificate store
+		//auto store = MakeObject<System::Security::Cryptography::X509Certificates::X509Store>(
+		//	StoreLocation::CurrentUser);
+		//store->Open(OpenFlags::ReadOnly);
+		//auto sel = System::Security::Cryptography::X509Certificates::X509Certificate2UI::SelectFromCollection(store->get_Certificates(),
+		//	nullptr, nullptr, X509SelectionFlag::SingleSelection);
+		//return sel;
+		throw System::NotImplementedException(u"GetLocalCertificate is not implemented. Please implement this function to retrieve a local certificate.");
+	}
 
-}
+} // namespace SecuringAndSigningExamples
 ```
 
 ## Create a signature field with a certificate fallback
@@ -63,37 +70,34 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.getSignatureInfoUsingSignatureField.
-void GetSignatureInfoUsingSignatureField(System::String inputFile, System::String outputFile)
-{
-    {
-        auto document = MakeObject<Document>(inputFile);
+	void GetSignatureInfoUsingSignatureField(System::String inputFile, System::String outputFile)
+	{
+		auto document = MakeObject<Document>(inputFile);
 
-        auto signatureField = MakeObject<SignatureField>(
-        document->get_Pages()->idx_get(1),
-        MakeObject<Rectangle>(100, 400, 110, 410, true));
-        auto selectedCertificate = GetLocalCertificate();
-        if (selectedCertificate == nullptr) {
-            std::cout << "Local certificate was not found." << std::endl;
-            document->get_Form()->Add(signatureField, 1);
-            document->Save(outputFile);
-            return;
-        }
+		auto signatureField = MakeObject<SignatureField>(
+			document->get_Pages()->idx_get(1),
+			MakeObject<Rectangle>(100, 400, 110, 410, true));
+		auto selectedCertificate = GetLocalCertificate();
+		if (selectedCertificate == nullptr) {
+			std::cout << "Local certificate was not found." << std::endl;
+			document->get_Form()->Add(signatureField, 1);
+			document->Save(outputFile);
+			return;
+		}
 
-        auto externalSignature = MakeObject<ExternalSignature>(selectedCertificate);
-        externalSignature->set_Authority(u"Me");
-        externalSignature->set_Reason(u"Reason");
-        externalSignature->set_ContactInfo(u"Contact");
-        signatureField->set_PartialName(u"sig1");
-        document->get_Form()->Add(signatureField, 1);
-        signatureField->Sign(externalSignature);
-        document->Save(outputFile);
-    }
-}
+		auto externalSignature = MakeObject<ExternalSignature>(selectedCertificate);
+		externalSignature->set_Authority(u"Me");
+		externalSignature->set_Reason(u"Reason");
+		externalSignature->set_ContactInfo(u"Contact");
+		signatureField->set_PartialName(u"sig1");
+		document->get_Form()->Add(signatureField, 1);
+		signatureField->Sign(externalSignature);
+		document->Save(outputFile);
+	}
 
-}
+} // namespace SecuringAndSigning
 ```
 
 ## Smart-card example with an unsigned fallback
@@ -121,9 +125,8 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.signWithSmartCard.
 void SignWithSmartCard(System::String inputFile, System::String outputFile, System::String pngFile)
 {
     {
@@ -145,5 +148,5 @@ void SignWithSmartCard(System::String inputFile, System::String outputFile, Syst
     }
 }
 
-}
+} // namespace SecuringAndSigning
 ```

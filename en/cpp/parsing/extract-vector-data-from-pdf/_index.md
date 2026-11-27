@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /cpp/extract-vector-data-from-pdf/
 description: Inspect vector graphics properties and export page or element graphics to SVG with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,6 +27,9 @@ Write bounds, positions, and operator counts for graphics detected on page 1.
 1. Write the report to the output file.
 
 ```cpp
+#include <system/io/file.h>
+#include <system/io/memory_stream.h>
+#include <system/text/string_builder.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -38,6 +41,7 @@ Write bounds, positions, and operator counts for graphics detected on page 1.
 
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Vector;
+using namespace System;
 
 void ExtractGraphicsElements(System::String inputFile, System::String outputFile)
 {
@@ -99,6 +103,8 @@ Export each absorbed graphics element to a file in a subpaths directory.
 1. Call [SaveToSvg()](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/) with a unique subpath_N.svg file name.
 
 ```cpp
+#include <system/io/directory.h>
+#include <system/io/path.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -109,6 +115,7 @@ Export each absorbed graphics element to a file in a subpaths directory.
 
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Vector;
+using namespace System;
 
 void ExtractSubpathsToSvgs(System::String inputFile, System::String outputDir)
 {
@@ -140,6 +147,8 @@ The helper checks for missing SVG tags but is a string-based extraction helper. 
 1. Append the inner content, close the SVG root, and write the output file.
 
 ```cpp
+#include <system/io/file.h>
+#include <system/text/string_builder.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -150,8 +159,10 @@ The helper checks for missing SVG tags but is a string-based extraction helper. 
 
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Vector;
+using namespace System;
 
 String extractSvgContent(String svgData);
+
 void ExtractListOfElementsToSingleImage(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -212,7 +223,6 @@ The function may produce no output when the requested elements are absent. These
 1. Otherwise, export the selected [GraphicElement](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/) with [SaveToSvg()](https://reference.aspose.com/pdf/cpp/aspose.pdf.vector/graphicelement/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -223,6 +233,7 @@ The function may produce no output when the requested elements are absent. These
 
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Vector;
+using namespace System;
 
 void ExtractSingleVectorElement(System::String inputFile, System::String outputFile) {
     auto document = MakeObject<Document>(inputFile);
@@ -233,7 +244,7 @@ void ExtractSingleVectorElement(System::String inputFile, System::String outputF
     if (graphicsAbsorber->get_Elements()->get_Count() > 1) {
         auto xformPlacement = graphicsAbsorber->get_Elements()->idx_get(1);
         if (xformPlacement->Is(XFormPlacement::Type())) {
-            auto placement = System::DynamicCast<XFormPlacement>(xformPlacement);
+            auto placement = System::ExplicitCast<XFormPlacement>(xformPlacement);
             if (placement->get_Elements()->get_Count() > 2) {
                 placement->get_Elements()->idx_get(2)->SaveToSvg(outputFile);
             }

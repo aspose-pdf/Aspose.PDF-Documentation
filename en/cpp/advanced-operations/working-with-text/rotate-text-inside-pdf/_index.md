@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/rotate-text-inside-pdf/
 description: Rotate individual PDF text fragments and entire paragraphs using TextBuilder and page paragraphs in C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -36,8 +36,6 @@ Create three fragments at different horizontal positions. Leave the first unrota
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -93,8 +91,6 @@ Append three fragments to a paragraph at (200, 600). Rotate the first fragment b
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -152,8 +148,6 @@ Add three fragments directly to page paragraphs. Leave the first unrotated and s
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -206,8 +200,6 @@ Use the included rotatedLine helper to create three styled lines per paragraph. 
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

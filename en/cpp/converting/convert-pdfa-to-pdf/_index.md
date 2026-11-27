@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /cpp/convert-pdfa-to-pdf/
 description: Remove PDF/A compliance information and save a standard PDF document in C++ using Aspose.PDF.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,19 +27,21 @@ This operation removes PDF/A compliance information. It does not convert the doc
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void ConvertPDFAtoPDF(String path_infile, String path_outfile)
+namespace ConvertingExamples
 {
-    auto document = MakeObject<Document>(path_infile);
-    // Remove PDF/A compliance information
-    document->RemovePdfaCompliance();
-    // Save updated document
-    document->Save(path_outfile);
+	void ConvertPDFAtoPDF(String path_infile, String path_outfile)
+	{
+		auto document = MakeObject<Document>(path_infile);
+		// Remove PDF/A compliance information
+		document->RemovePdfaCompliance();
+		// Save updated document
+		document->Save(path_outfile);
+	}
 }
 ```

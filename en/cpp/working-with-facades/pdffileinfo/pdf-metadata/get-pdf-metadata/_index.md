@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/get-pdf-metadata/
 description: Get PDF Metadata in C++ with the PdfFileInfo facade in Aspose.PDF.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -62,7 +62,7 @@ void GetPdfMetadata(String inputFile)
     std::cout << "Has Edit Password: " << pdfInfo->get_HasEditPassword() << std::endl;
     std::cout << "Is Portfolio: " << pdfInfo->get_HasCollection() << std::endl;
     auto reviewer = pdfInfo->GetMetaInfo(u"Reviewer");
-    std::cout << "Reviewer: " << (reviewer.IsNullOrEmpty() ? String(u"No Reviewer metadata found.") : reviewer) << std::endl;
+    std::cout << "Reviewer: " << (reviewer.IsNullOrEmpty() ? u"No Reviewer metadata found." : reviewer) << std::endl;
     pdfInfo->Close();
 }
 } // namespace  Facades::Examples::PDF_FileInfo

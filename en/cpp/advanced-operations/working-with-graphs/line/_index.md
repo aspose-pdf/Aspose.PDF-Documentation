@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/add-line/
 description: Draw a dashed line and page-spanning diagonals, and inspect a disabled line example using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -38,18 +38,17 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-// Port of GraphsLineExamples.addLine.
-void GraphExamples::AddLine(String outputFile)
+void AddLine(String outputFile)
 {
     auto document = MakeObject<Document>();
-    //auto page = document->get_Pages()->Add();
-    //auto graph = MakeObject<Graph>(400.0, 400.0);
-    //page->get_Paragraphs()->Add(graph);
+    auto page = document->get_Pages()->Add();
+    auto graph = MakeObject<Graph>(400.0, 400.0);
+    page->get_Paragraphs()->Add(graph);
 
-    //auto line = MakeObject<Line>(MakeArray<float>({100, 100, 200, 100}));
-    //line->get_GraphInfo()->set_DashArray(MakeArray<int>({0, 1, 0}));
-    //line->get_GraphInfo()->set_DashPhase(1);
-    //graph->get_Shapes()->Add(line);
+    auto line = MakeObject<Line>(MakeArray<float>({100, 100, 200, 100}));
+    line->get_GraphInfo()->set_DashArray(MakeArray<int>({0, 1, 0}));
+    line->get_GraphInfo()->set_DashPhase(1);
+    graph->get_Shapes()->Add(line);
 
     document->Save(outputFile);
 }
@@ -83,8 +82,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-// Port of GraphsLineExamples.addDottedDashedLine.
-void GraphExamples::AddDottedDashedLine(String outputFile)
+void AddDottedDashedLine(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -129,7 +127,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-void GraphExamples::DrawLineAcrossPage(String outputFile)
+void DrawLineAcrossPage(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();

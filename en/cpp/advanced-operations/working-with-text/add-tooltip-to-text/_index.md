@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/pdf-tooltip/
 description: Add tooltips to searched PDF text and show a hidden text field on hover using C++ form fields and actions.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -36,8 +36,6 @@ Search the generated text on all pages and create ButtonField objects over the m
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/ButtonField.h>
@@ -110,8 +108,6 @@ Search for the generated phrase and use its first match as the trigger rectangle
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <stdexcept>
 
 #include <Aspose.PDF.Cpp/Color.h>

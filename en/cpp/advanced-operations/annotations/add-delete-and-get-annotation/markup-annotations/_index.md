@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/markup-annotations/
 description: Add, inspect, and delete sticky notes, caret markers, and grouped replacement annotations in PDF files using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -268,7 +268,7 @@ void ReplaceAnnotationsGet(System::String inputFile)
     auto page = document->get_Pages()->idx_get(1);
     for (auto& annot : page->get_Annotations()) {
         if (annot->get_AnnotationType() == AnnotationType::StrikeOut) {
-            auto sa = DynamicCast<StrikeOutAnnotation>(annot);
+            auto sa = ExplicitCast<StrikeOutAnnotation>(annot);
             if (sa->get_InReplyTo() != nullptr && sa->get_ReplyType() == ReplyType::Group) {
                 std::cout << "Replace annotation rect: " << sa->get_Rect()->ToString() << std::endl;
             }
@@ -316,7 +316,7 @@ namespace WorkingWithAnnotationsExamples::Markup {
         std::vector<SharedPtr<StrikeOutAnnotation>> replaceAnnotations;
         for (auto& annot : page->get_Annotations()) {
             if (annot->get_AnnotationType() == AnnotationType::StrikeOut) {
-                replaceAnnotations.push_back(DynamicCast<StrikeOutAnnotation>(annot));
+                replaceAnnotations.push_back(ExplicitCast<StrikeOutAnnotation>(annot));
             }
         }
         for (auto& annot : replaceAnnotations) {
@@ -367,7 +367,7 @@ void TextAnnotationAdd(System::String inputFile, System::String outputFile)
             MakeObject<Rectangle>(299.988, 613.664, 428.708, 680.769, true));
     textAnnotation->set_Title(u"Aspose User");
     textAnnotation->set_Subject(u"Sticky Note");
-    textAnnotation->set_Contents(u"This is a text annotation added by Aspose.PDF for C++");
+    textAnnotation->set_Contents(u"This is a text annotation added by Aspose.PDF for Java");
     textAnnotation->set_Flags(AnnotationFlags::Print);
     textAnnotation->set_Color(Color::get_Blue());
     textAnnotation->set_Icon(TextIcon::Help);

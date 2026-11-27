@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/shape-annotations/
 description: Add, inspect, and delete square, circle, polygon, polyline, and line annotations in PDF documents using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -65,7 +65,7 @@ void CircleAnnotationAdd(System::String inputFile, System::String outputFile)
     document->Save(outputFile);
 }
 
-} // namespace WorkingWithAnnotationsExamples::Shape
+} // namespace WorkingWithAnnotations::Shape
 ```
 
 ## Get circle annotations
@@ -248,7 +248,7 @@ void LineAnnotationsGet(System::String inputFile)
     auto document = MakeObject<Document>(inputFile);
     for (auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
         if (annotation->get_AnnotationType() == AnnotationType::Line) {
-            auto la = DynamicCast<LineAnnotation>(annotation);
+            auto la = ExplicitCast<LineAnnotation>(annotation);
             std::cout << "[" << la->get_Starting()->get_X() << "," << la->get_Starting()->get_Y()
         << "]-[" << la->get_Ending()->get_X() << "," << la->get_Ending()->get_Y() << "]" << std::endl;
         }

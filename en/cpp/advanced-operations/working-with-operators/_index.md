@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /cpp/working-with-operators/
 description: Use PDF operators to add images, remove selected graphics instructions, and draw reusable XForms with Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -41,6 +41,8 @@ GSave preserves the current graphics state, ConcatenateMatrix scales and positio
 #include <Aspose.PDF.Cpp/OperatorCollection.h>
 #include <Aspose.PDF.Cpp/Resources.h>
 #include <Aspose.PDF.Cpp/XImageCollection.h>
+#include <Aspose.PDF.Cpp/XForm.h>
+#include <Aspose.PDF.Cpp/XFormCollection.h>
 #include <system/io/file.h>
 #include <system/io/file_stream.h>
 #include <system/io/path.h>
@@ -105,9 +107,9 @@ void RemoveGraphics(String inputFile, String outputFile)
     auto removed = MakeObject<System::Collections::Generic::List<SharedPtr<Operator>>>();
     for (auto& item : contents)
     {
-        if (item.dynamic_pointer_cast<Stroke>()
-            || item.dynamic_pointer_cast<ClosePathStroke>()
-            || item.dynamic_pointer_cast<Fill>())
+        if (System::ExplicitCast<Stroke>(item)
+            || System::ExplicitCast<ClosePathStroke>(item)
+            || System::ExplicitCast<Fill>(item))
             removed->Add(item);
     }
     contents->Delete(removed);

@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/verify-digital-signatures/
 description: Verify PDF signatures, check certificate validation results, and inspect known signature-compromise indicators using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -34,26 +34,23 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning
+namespace SecuringAndSigningExamples {
+
+void Verify(System::String inputFile)
 {
-
-    void Verify(System::String inputFile)
     {
-        {
-            auto document = MakeObject<Document>(inputFile);
-            auto signature = MakeObject<PdfFileSignature>(document);
+        auto document = MakeObject<Document>(inputFile);
+        auto signature = MakeObject<PdfFileSignature>(document);
 
-            for (const auto &signatureName : signature->GetSignatureNames(false))
-            {
-                if (!signature->VerifySignature(signatureName))
-                {
-                    throw std::runtime_error("Not verified");
-                }
+        for (const auto& signatureName : signature->GetSignatureNames(false)) {
+            if (!signature->VerifySignature(signatureName)) {
+                throw std::runtime_error("Not verified");
             }
         }
     }
-
 }
+
+} // namespace SecuringAndSigning
 ```
 
 ## Verify an externally signed PDF
@@ -76,26 +73,23 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning
+namespace SecuringAndSigningExamples {
+
+void VerifyExternalSignature(System::String inputFile)
 {
-
-    void VerifyExternalSignature(System::String inputFile)
     {
-        {
-            auto document = MakeObject<Document>(inputFile);
-            auto pdfSignature = MakeObject<PdfFileSignature>(document);
+        auto document = MakeObject<Document>(inputFile);
+        auto pdfSignature = MakeObject<PdfFileSignature>(document);
 
-            for (const auto &signatureName : pdfSignature->GetSignatureNames(true))
-            {
-                if (!pdfSignature->VerifySignature(signatureName))
-                {
-                    throw std::runtime_error("Not verified");
-                }
+        for (const auto& signatureName : pdfSignature->GetSignatureNames(true)) {
+            if (!pdfSignature->VerifySignature(signatureName)) {
+                throw std::runtime_error("Not verified");
             }
         }
     }
-
 }
+
+} // namespace SecuringAndSigning
 ```
 
 ## Verify an ECDSA signature
@@ -129,7 +123,7 @@ namespace SecuringAndSigning
 
             if (!signature->ContainsSignature())
             {
-                throw std::runtime_error("Document does not contain a signature");
+                throw std::runtime_error("Not contains signature");
             }
 
             for (const auto &signatureName : signature->GetSignatureNames(true))
@@ -142,7 +136,7 @@ namespace SecuringAndSigning
         }
     }
 
-}
+} // namespace SecuringAndSigning
 ```
 
 ## Verify with certificate checks
@@ -171,34 +165,31 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 using namespace Aspose::Pdf::Security;
 
-namespace SecuringAndSigning
+namespace SecuringAndSigningExamples {
+
+void VerifySignatureWithCertificateCheck(System::String inputFile)
 {
-
-    void VerifySignatureWithCertificateCheck(System::String inputFile)
     {
-        {
-            auto document = MakeObject<Document>(inputFile);
-            auto signature = MakeObject<PdfFileSignature>(document);
+        auto document = MakeObject<Document>(inputFile);
+        auto signature = MakeObject<PdfFileSignature>(document);
 
-            for (const auto &signatureName : signature->GetSignatureNames(true))
-            {
-                auto options = MakeObject<ValidationOptions>();
-                options->set_ValidationMode(ValidationMode::Strict);
-                options->set_ValidationMethod(ValidationMethod::Auto);
-                options->set_CheckCertificateChain(true);
-                options->set_RequestTimeout(20000);
-                SharedPtr<ValidationResult> validationResult;
-                bool verified = signature->VerifySignature(signatureName, options, validationResult);
-                if (validationResult != nullptr)
-                {
-                    std::cout << "Certificate validation result: " << static_cast<int>(validationResult->get_Status()) << std::endl;
-                }
-                std::cout << "Is verified: " << verified << std::endl;
+        for (const auto& signatureName : signature->GetSignatureNames(true)) {
+            auto options = MakeObject<ValidationOptions>();
+            options->set_ValidationMode(ValidationMode::Strict);
+            options->set_ValidationMethod(ValidationMethod::Auto);
+            options->set_CheckCertificateChain(true);
+            options->set_RequestTimeout(20000);
+            SharedPtr<ValidationResult> validationResult;
+            bool verified = signature->VerifySignature(signatureName, options, validationResult);
+            if (validationResult != nullptr) {
+                std::cout << "Certificate validation result: " << static_cast<int>(validationResult->get_Status()) << std::endl;
             }
+            std::cout << "Is verified: " << verified << std::endl;
         }
     }
-
 }
+
+} // namespace SecuringAndSigning
 ```
 
 ## Verify using a supplied public certificate
@@ -228,24 +219,23 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 using namespace System::Security::Cryptography::X509Certificates;
 
-namespace SecuringAndSigning
+namespace SecuringAndSigningExamples {
+
+void VerifyWithPublicKeyCertificate(System::String certificate, System::String inputFile)
 {
-
-    void VerifyWithPublicKeyCertificate(System::String certificate, System::String inputFile)
     {
-        {
-            auto document = MakeObject<Document>(inputFile);
-            auto fileSign = MakeObject<PdfFileSignature>(document);
+        auto document = MakeObject<Document>(inputFile);
+        auto fileSign = MakeObject<PdfFileSignature>(document);
 
-            auto signatureName = fileSign->GetSignatureNames(true)->idx_get(0);
-            auto certificate2 =
-                MakeObject<X509Certificate2>(
-                    System::IO::File::ReadAllBytes(certificate));
-            std::cout << fileSign->VerifySignature(signatureName, certificate2) << std::endl;
-        }
+        auto signatureName = fileSign->GetSignatureNames(true)->idx_get(0);
+        auto certificate2 =
+        MakeObject<X509Certificate2>(
+        System::IO::File::ReadAllBytes(certificate));
+        std::cout << fileSign->VerifySignature(signatureName, certificate2) << std::endl;
     }
-
 }
+
+} // namespace SecuringAndSigning
 ```
 
 ## Extract a certificate and then verify
@@ -273,30 +263,26 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning
+namespace SecuringAndSigningExamples {
+
+void VerifyWithPublicKeyCertificateFromSignature(System::String inputFile)
 {
-
-    void VerifyWithPublicKeyCertificateFromSignature(System::String inputFile)
     {
-        {
-            auto document = MakeObject<Document>(inputFile);
-            auto fileSign = MakeObject<PdfFileSignature>(document);
+        auto document = MakeObject<Document>(inputFile);
+        auto fileSign = MakeObject<PdfFileSignature>(document);
 
-            auto signatureName = fileSign->GetSignatureNames(true)->idx_get(0);
-            SharedPtr<System::IO::Stream> certificate;
-            if (fileSign->TryExtractCertificate(signatureName, certificate))
-            {
-                std::cout << "The certificate extraction succeeded" << std::endl;
-                std::cout << fileSign->VerifySignature(signatureName) << std::endl;
-            }
-            else
-            {
-                std::cout << false << std::endl;
-            }
+        auto signatureName = fileSign->GetSignatureNames(true)->idx_get(0);
+        SharedPtr<System::IO::Stream> certificate;
+        if (fileSign->TryExtractCertificate(signatureName, certificate)) {
+            std::cout << "The certificate extraction succeeded" << std::endl;
+            std::cout << fileSign->VerifySignature(signatureName) << std::endl;
+        } else {
+            std::cout << false << std::endl;
         }
     }
-
 }
+
+} // namespace SecuringAndSigning
 ```
 
 ## Check known signature-compromise indicators
@@ -324,8 +310,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Signatures;
 
-namespace SecuringAndSigning
-{
+namespace SecuringAndSigningExamples {
 
     void Check(System::String inputFile)
     {
@@ -334,40 +319,36 @@ namespace SecuringAndSigning
         auto detector = MakeObject<SignaturesCompromiseDetector>(document);
         SharedPtr<CompromiseCheckResult> result;
 
-        if (detector->Check(result))
-        {
+        if (detector->Check(result)) {
             std::cout << "No signature compromise detected" << std::endl;
             return;
         }
 
-        if (result->get_HasCompromisedSignatures())
-        {
+        if (result->get_HasCompromisedSignatures()) {
             std::cout << "Count of compromised signatures: " << result->CompromisedSignatures->get_Count() << std::endl;
-            for (const auto &signatureName : result->CompromisedSignatures)
-            {
+            for (const auto& signatureName : result->CompromisedSignatures) {
                 std::cout << "Signature name: " << signatureName->FullName << std::endl;
             }
         }
 
-        switch (result->get_SignaturesCoverage())
-        {
-        case SignaturesCoverage::EntirelySigned:
-            std::cout << "All signatures are covered" << std::endl;
-            break;
-        case SignaturesCoverage::PartiallySigned:
-            std::cout << "Some signatures are covered" << std::endl;
-            break;
-        case SignaturesCoverage::Undefined:
-        {
-            std::cout << "Unknown or undefined signatures coverage" << std::endl;
-            break;
-        }
-        default:
-        {
-            std::cout << "Unknown signatures coverage" << std::endl;
-            break;
-        }
+        switch (result->get_SignaturesCoverage()) {
+            case SignaturesCoverage::EntirelySigned:
+                std::cout << "All signatures are covered" << std::endl;
+                break;
+            case SignaturesCoverage::PartiallySigned:
+                std::cout << "Some signatures are covered" << std::endl;
+                break;
+            case SignaturesCoverage::Undefined:
+            {
+                std::cout << "Unknown or undefined signatures coverage" << std::endl;
+                break;
+            }
+            default:
+            {
+                std::cout << "Unknown signatures coverage" << std::endl;
+                break;
+            }
         }
     }
-}
+} // namespace SecuringAndSigning
 ```

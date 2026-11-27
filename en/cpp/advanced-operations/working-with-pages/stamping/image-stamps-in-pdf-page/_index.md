@@ -5,7 +5,7 @@ type: docs
 weight: 100
 url: /cpp/image-stamps-in-pdf-page/
 description: Add image stamps with position, size, rotation, opacity, or quality settings and add a floating-box background image using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -25,7 +25,6 @@ Add image stamps with position, size, rotation, opacity, or quality settings and
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ImageStamp.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -35,7 +34,6 @@ Add image stamps with position, size, rotation, opacity, or quality settings and
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of StampingExamples.addImageStamp.
 void AddImageStamp(System::String inputFile, System::String imageFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -65,7 +63,6 @@ The low quality setting can affect image appearance. Review the saved output.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ImageStamp.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -74,7 +71,6 @@ The low quality setting can affect image appearance. Review the saved output.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of StampingExamples.addImageStampWithQualityControl.
 void AddImageStampWithQualityControl(System::String inputFile, System::String imageFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -98,7 +94,6 @@ This adds a paragraph-based floating box rather than calling AddStamp().
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
 #include <Aspose.PDF.Cpp/Generator/BorderSide.h>
 #include <Aspose.PDF.Cpp/Color.h>
@@ -117,7 +112,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of StampingExamples.addImageAsBackgroundInFloatingBox.
 void AddImageAsBackgroundInFloatingBox(System::String inputFile, System::String imageFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

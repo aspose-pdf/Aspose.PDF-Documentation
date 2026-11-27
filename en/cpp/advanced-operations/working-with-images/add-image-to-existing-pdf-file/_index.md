@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/add-image-to-existing-pdf-file/
 description: Create PDFs containing images using a page rectangle, drawing operators, Flate compression, or alternative text with Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -34,7 +34,7 @@ In these four examples, inputFile is an image file and the output is a newly cre
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ImageExamples::AddImage(String inputFile, String outputFile)
+void AddImage(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -72,7 +72,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Operators;
 
-void ImageExamples::AddUsingOperators(String inputFile, String outputFile)
+void AddUsingOperators(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>();
     auto stream = System::IO::File::OpenRead(inputFile);
@@ -122,7 +122,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Operators;
 
-void ImageExamples::AddWithFlateCompression(String inputFile, String outputFile)
+void AddWithFlateCompression(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>();
     auto stream = System::IO::File::OpenRead(inputFile);
@@ -148,7 +148,6 @@ The example attempts to set alternative text and reports whether it succeeded. I
 1. Save the PDF with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -160,7 +159,7 @@ The example attempts to set alternative text and reports whether it succeeded. I
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ImageExamples::AddWithAltText(String inputFile, String outputFile)
+void AddWithAltText(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();

@@ -2619,7 +2619,7 @@ namespace TaggedContentSaveMethodsExamples
 
 ## What's new in Aspose.PDF 25.3
 
-The source's 25.3 section announces Markdown export, available since 25.2. Use [SaveFormat::Markdown](https://reference.aspose.com/pdf/cpp/aspose.pdf/saveformat/).
+The source's 25.3 section announces Markdown export, available since 25.2. The example uses `MarkdownSaveOptions` to write resources to the `images` directory and emit HTML image tags.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
@@ -2803,11 +2803,17 @@ CDR input became available through [CdrLoadOptions](https://reference.aspose.com
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/CdrLoadOptions.h>
 
-void ImportCdr(System::String input, System::String output)
+namespace ConvertingExamples
 {
-    auto settings = System::MakeObject<Aspose::Pdf::CdrLoadOptions>();
-    auto pdf = System::MakeObject<Aspose::Pdf::Document>(input, settings);
-    pdf->Save(output);
+	using namespace System;
+	using namespace Aspose::Pdf;
+
+	void ConvertCdrToPdf(String inputFile, String outputFile)
+	{
+		auto options = MakeObject<CdrLoadOptions>();
+		auto document = MakeObject<Document>(inputFile, options);
+		document->Save(outputFile);
+	}
 }
 ```
 
@@ -2836,26 +2842,36 @@ SVG loading was corrected. See [SVG conversion examples](/pdf/cpp/convert-images
 
 ## What's new in Aspose.PDF 24.3
 
-PDF-to-TIFF conversion was introduced. The source configures [TiffDevice](https://reference.aspose.com/pdf/cpp/aspose.pdf.devices/tiffdevice/) to skip blank pages and use 8-bit color.
+PDF-to-TIFF conversion was introduced. The example uses [TiffDevice](https://reference.aspose.com/pdf/cpp/aspose.pdf.devices/tiffdevice/) at 300 DPI with LZW compression and retains blank pages.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
 #include <Aspose.PDF.Cpp/Devices/TiffDevice.h>
 #include <Aspose.PDF.Cpp/Devices/TiffSettings.h>
+#include <Aspose.PDF.Cpp/Devices/CompressionType.h>
 #include <Aspose.PDF.Cpp/Devices/ColorDepth.h>
-#include <system/io/file.h>
+#include <Aspose.PDF.Cpp/Devices/Resolution.h>
 #include <system/io/file_stream.h>
 
-void ExportTiff(System::String input, System::String output)
+namespace ConvertingExamples
 {
-    auto pdf = System::MakeObject<Aspose::Pdf::Document>(input);
-    auto renderer = System::MakeObject<Aspose::Pdf::Devices::TiffDevice>();
-    renderer->get_Settings()->set_SkipBlankPages(true);
-    renderer->get_Settings()->set_Depth(Aspose::Pdf::Devices::ColorDepth::Format8bpp);
-    auto stream = System::IO::File::Create(output);
-    renderer->Process(pdf, 1, pdf->get_Pages()->get_Count(), stream);
-    stream->Close();
+using namespace System;
+using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Devices;
+
+void ConvertPdfToTiff(String inputFile, String outputFile)
+{
+	auto document = MakeObject<Document>(inputFile);
+	auto settings = MakeObject<TiffSettings>();
+	settings->set_Compression(CompressionType::LZW);
+	settings->set_Depth(ColorDepth::Default);
+	settings->set_SkipBlankPages(false);
+	auto device = MakeObject<TiffDevice>(MakeObject<Resolution>(300), settings);
+	auto output = MakeObject<System::IO::FileStream>(outputFile, System::IO::FileMode::Create);
+	device->Process(document, 1, document->get_Pages()->get_Count(), output);
+	output->Close();
+}
 }
 ```
 

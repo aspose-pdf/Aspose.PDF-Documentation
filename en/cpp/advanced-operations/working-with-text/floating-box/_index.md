@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/floating-box/
 description: Create FloatingBox containers with borders, columns, background colors, offsets, and alignment in PDF documents using C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -35,8 +35,6 @@ Create a 400 by 30 point FloatingBox with a dark green border, disable repetitio
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
@@ -80,8 +78,6 @@ Calculate column widths from the page width, margins, and 10-point gaps. Configu
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/ColumnInfo.h>
 #include <Aspose.PDF.Cpp/Generator/FloatingBox.h>
@@ -110,9 +106,11 @@ void MultiColumnLayout(String inputFile, String outputFile)
 
     auto box = MakeObject<FloatingBox>();
     box->set_IsNeedRepeating(true);
-    box->get_ColumnInfo()->set_ColumnWidths(String::Format(u"{0} {0} {0}", columnWidth));
+    box->get_ColumnInfo()->set_ColumnWidths(String::Format(u"{0}", columnWidth) + String(u" ") +
+                                            String::Format(u"{0}", columnWidth) + String(u" ") +
+                                            columnWidth);
     box->get_ColumnInfo()->set_ColumnSpacing(String::Format(u"{0}", spacing));
-    box->get_ColumnInfo()->set_ColumnCount(columnCount);
+    box->get_ColumnInfo()->set_ColumnCount(3);
 
     String phrase = String(u"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam odio, "
                            u"sollicitudin ac mauris vel, suscipit pellentesque nisi.");
@@ -136,8 +134,6 @@ Use the same three-column setup and set IsFirstParagraphInColumn on each added f
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/ColumnInfo.h>
 #include <Aspose.PDF.Cpp/Generator/FloatingBox.h>
@@ -197,8 +193,6 @@ Create a 400 by 30 point box with a light green background and repetition disabl
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/FloatingBox.h>
@@ -236,8 +230,6 @@ Set Top to 45 and Left to 15, choose Absolute positioning, and add the bordered 
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
@@ -283,8 +275,6 @@ Create three bordered 100 by 100 point boxes aligned to the right. Compare botto
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>

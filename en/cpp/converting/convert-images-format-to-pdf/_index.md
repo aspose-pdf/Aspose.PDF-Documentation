@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/convert-images-format-to-pdf/
 description: Convert BMP, JPEG, PNG, EMF, DICOM, TIFF, CGM, and SVG images to PDF in C++ using Aspose.PDF.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -36,21 +36,24 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 //Convert BMP to PDF
 void ConvertBMPtoPDF(String path_infile, String path_outfile) {
-    // Open document
-    auto document = MakeObject<Document>();
+	// Open document
+	auto document = MakeObject<Document>();
 
-    // Add empty page in empty document
-    auto page = document->get_Pages()->Add();
-    auto image = MakeObject<Aspose::Pdf::Image>();
-    image->set_File(path_infile);
+	// Add empty page in empty document
+	auto page = document->get_Pages()->Add();
+	auto image = MakeObject<Aspose::Pdf::Image>();
+	image->set_File(path_infile);
 
-    // Add image on a page
-    page->get_Paragraphs()->Add(image);
+	// Add image on a page
+	page->get_Paragraphs()->Add(image);
 
-    // Save output document
-    document->Save(path_outfile);
+	// Save output document
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -70,25 +73,28 @@ Place a JPEG image on a page in a new PDF document.
 #include <Aspose.PDF.Cpp/Generator/Image.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 
-using namespace System;
-using namespace Aspose::Pdf;
-using namespace Aspose::Pdf::Text;
-
-void ConvertJPEGtoPDF(String path_infile, String path_outfile)
+namespace ConvertingExamples
 {
-    // Open document
-    auto document = MakeObject<Document>();
+	using namespace System;
+	using namespace Aspose::Pdf;
+	using namespace Aspose::Pdf::Text;
 
-    // Add empty page in empty document
-    auto page = document->get_Pages()->Add();
-    auto image = MakeObject<Aspose::Pdf::Image>();
-    image->set_File(path_infile);
+	void ConvertJPEGtoPDF(String path_infile, String path_outfile)
+	{
+		// Open document
+		auto document = MakeObject<Document>();
 
-    // Add image on a page
-    page->get_Paragraphs()->Add(image);
+		// Add empty page in empty document
+		auto page = document->get_Pages()->Add();
+		auto image = MakeObject<Aspose::Pdf::Image>();
+		image->set_File(path_infile);
 
-    // Save output document
-    document->Save(path_outfile);
+		// Add image on a page
+		page->get_Paragraphs()->Add(image);
+
+		// Save output document
+		document->Save(path_outfile);
+	}
 }
 ```
 
@@ -107,6 +113,8 @@ The source adds the same image object twice; it is retained below rather than si
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/file.h>
+#include <drawing/bitmap.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -116,37 +124,41 @@ The source adds the same image object twice; it is retained below rather than si
 #include <Aspose.PDF.Cpp/Generator/Image.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 
-using namespace System;
-using namespace Aspose::Pdf;
-using namespace Aspose::Pdf::Text;
 
-void ConvertJPGtoPDF_fitsize(String path_infile, String path_outfile)
+namespace ConvertingExamples
 {
-    // Open document
-    auto document = MakeObject<Document>();
+	using namespace System;
+	using namespace Aspose::Pdf;
+	using namespace Aspose::Pdf::Text;
 
-    // Add empty page in empty document
-    auto page = document->get_Pages()->Add();
-    auto fileStream = System::IO::File::OpenRead(path_infile);
-    auto bitMap = MakeObject<System::Drawing::Bitmap>(fileStream);
+	void ConvertJPGtoPDF_fitsize(String path_infile, String path_outfile)
+	{
+		// Open document
+		auto document = MakeObject<Document>();
 
-    auto image = MakeObject<Aspose::Pdf::Image>();
-    image->set_File(path_infile);
+		// Add empty page in empty document
+		auto page = document->get_Pages()->Add();
+		auto fileStream = System::IO::File::OpenRead(path_infile);
+		auto bitMap = MakeObject<System::Drawing::Bitmap>(fileStream);
 
-    // Add image on a page
-    page->get_Paragraphs()->Add(image);
+		auto image = MakeObject<Aspose::Pdf::Image>();
+		image->set_File(path_infile);
 
-    // Set page dimensions and margins
-    page->get_PageInfo()->set_Height(bitMap->get_Height());
-    page->get_PageInfo()->set_Width(bitMap->get_Width());
-    page->get_PageInfo()->get_Margin()->set_Bottom(0);
-    page->get_PageInfo()->get_Margin()->set_Top(0);
-    page->get_PageInfo()->get_Margin()->set_Right(0);
-    page->get_PageInfo()->get_Margin()->set_Left(0);
-    page->get_Paragraphs()->Add(image);
+		// Add image on a page
+		page->get_Paragraphs()->Add(image);
 
-    // Save output document
-    document->Save(path_outfile);
+		// Set page dimensions and margins
+		page->get_PageInfo()->set_Height(bitMap->get_Height());
+		page->get_PageInfo()->set_Width(bitMap->get_Width());
+		page->get_PageInfo()->get_Margin()->set_Bottom(0);
+		page->get_PageInfo()->get_Margin()->set_Top(0);
+		page->get_PageInfo()->get_Margin()->set_Right(0);
+		page->get_PageInfo()->get_Margin()->set_Left(0);
+		page->get_Paragraphs()->Add(image);
+
+		// Save output document
+		document->Save(path_outfile);
+	}
 }
 ```
 
@@ -160,7 +172,6 @@ Place a PNG image on a page in a new PDF document.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -171,14 +182,17 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertPNGtoPDF(String path_infile, String path_outfile)
-{    
-    auto document = MakeObject<Document>();
-    auto page = document->get_Pages()->Add();
-    auto image = MakeObject<Aspose::Pdf::Image>();
-    image->set_File(path_infile);
-    page->get_Paragraphs()->Add(image);
-    document->Save(path_outfile);
+{
+	auto document = MakeObject<Document>();
+	auto page = document->get_Pages()->Add();
+	auto image = MakeObject<Aspose::Pdf::Image>();
+	image->set_File(path_infile);
+	page->get_Paragraphs()->Add(image);
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -192,7 +206,6 @@ Place an EMF image on a page in a new PDF document.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -205,21 +218,24 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertEMFtoPDF(String path_infile, String path_outfile)
 {
-    // Open document
-    auto document = MakeObject<Document>();
+	// Open document
+	auto document = MakeObject<Document>();
 
-    // Add empty page in empty document
-    auto page = document->get_Pages()->Add();
-    auto image = MakeObject<Aspose::Pdf::Image>();
-    image->set_File(path_infile);
+	// Add empty page in empty document
+	auto page = document->get_Pages()->Add();
+	auto image = MakeObject<Aspose::Pdf::Image>();
+	image->set_File(path_infile);
 
-    // Add image on a page
-    page->get_Paragraphs()->Add(image);
+	// Add image on a page
+	page->get_Paragraphs()->Add(image);
 
-    // Save output document
-    document->Save(path_outfile);
+	// Save output document
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -234,7 +250,6 @@ Place a DICOM image on a page in a new PDF document.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -245,22 +260,23 @@ Place a DICOM image on a page in a new PDF document.
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ConvertDICOMtoPDF(String path_infile, String path_outfile)
+namespace ConvertingExamples{void ConvertDICOMtoPDF(String path_infile, String path_outfile)
 {
-    // Instantiate Document Object
-    auto document = MakeObject<Document>();
+	// Instantiate Document Object
+	auto document = MakeObject<Document>();
 
-    // Add a page to pages collection of document
-    auto page = document->get_Pages()->Add();
+	// Add a page to pages collection of document
+	auto page = document->get_Pages()->Add();
 
-    auto image = MakeObject<Aspose::Pdf::Image>();
-    image->set_File(path_infile);
-    image->set_FileType(Aspose::Pdf::ImageFileType::Dicom);
+	auto image = MakeObject<Aspose::Pdf::Image>();
+	image->set_File(path_infile);
+	image->set_FileType(Aspose::Pdf::ImageFileType::Dicom);
 
-    page->get_Paragraphs()->Add(image);
+	page->get_Paragraphs()->Add(image);
 
-    // Save output as PDF format
-    document->Save(path_outfile);
+	// Save output as PDF format
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -278,6 +294,10 @@ This example creates one PDF page and does not iterate over TIFF frames. It is n
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/file.h>
+#include <system/io/memory_stream.h>
+#include <drawing/bitmap.h>
+#include <drawing/imaging/image_format.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -291,20 +311,23 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void ConvertTIFFtoPDF(String path_infile, String path_outfile)
+namespace ConvertingExamples
 {
-    auto document = MakeObject<Document>();
-    auto page = document->get_Pages()->Add();
+	void ConvertTIFFtoPDF(String path_infile, String path_outfile)
+	{
+		auto document = MakeObject<Document>();
+		auto page = document->get_Pages()->Add();
 
-    auto fileStream = System::IO::File::OpenRead(path_infile);
-    auto pdfImage = MakeObject<Aspose::Pdf::Image>();
-    auto bitmap = MakeObject<System::Drawing::Bitmap>(fileStream);
-    auto imgStream = MakeObject<System::IO::MemoryStream>();
-    auto imageStream = System::DynamicCast<System::IO::Stream>(imgStream);
-    bitmap->Save(imageStream, System::Drawing::Imaging::ImageFormat::get_Tiff());
-    pdfImage->set_ImageStream(imageStream);
-    page->get_Paragraphs()->Add(pdfImage);
-    document->Save(path_outfile);
+		auto fileStream = System::IO::File::OpenRead(path_infile);
+		auto pdfImage = MakeObject<Aspose::Pdf::Image>();
+		auto bitmap = MakeObject<System::Drawing::Bitmap>(fileStream);
+		auto imgStream = MakeObject<System::IO::MemoryStream>();
+		auto imageStream = System::ExplicitCast<System::IO::Stream>(imgStream);
+		bitmap->Save(imageStream, System::Drawing::Imaging::ImageFormat::get_Tiff());
+		pdfImage->set_ImageStream(imageStream);
+		page->get_Paragraphs()->Add(pdfImage);
+		document->Save(path_outfile);
+	}
 }
 ```
 
@@ -317,6 +340,8 @@ Load the CGM source with format-specific options and save it as PDF.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -328,11 +353,14 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertCGMtoPDF(String path_infile, String path_outfile)
 {
-    auto options = MakeObject<CgmLoadOptions>();
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);
+	auto options = MakeObject<CgmLoadOptions>();
+	auto document = MakeObject<Document>(path_infile, options);
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -345,6 +373,7 @@ Load the SVG source with format-specific options and save it as PDF.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <Aspose.PDF.Cpp/Document.h>
 
 #include <Aspose.PDF.Cpp/SvgLoadOptions.h>
 
@@ -352,11 +381,14 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertSVGtoPDF(String path_infile, String path_outfile)
 {
-    auto options = MakeObject<SvgLoadOptions>();
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);
+	auto options = MakeObject<SvgLoadOptions>();
+	auto document = MakeObject<Document>(path_infile, options);
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -371,19 +403,19 @@ Enable automatic page size adjustment and select the SVG conversion engine used 
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/SvgLoadOptions.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ConvertSVGtoPDF_Advanced(String path_infile, String path_outfile)
+namespace ConvertingExamples{void ConvertSVGtoPDF_Advanced(String path_infile, String path_outfile)
 {
-    auto options = MakeObject<SvgLoadOptions>();
-    options->set_AdjustPageSize(true);
-    options->ConversionEngine = SvgLoadOptions::ConversionEngines::NewEngine;
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);
+	auto options = MakeObject<SvgLoadOptions>();
+	options->set_AdjustPageSize(true);
+	options->ConversionEngine = SvgLoadOptions::ConversionEngines::NewEngine;
+	auto document = MakeObject<Document>(path_infile, options);
+	document->Save(path_outfile);
+}
 }
 ```

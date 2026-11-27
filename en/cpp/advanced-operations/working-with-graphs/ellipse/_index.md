@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/add-ellipse/
 description: Create outlined and filled ellipses with a text label using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -44,8 +44,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 using namespace Aspose::Pdf::Text;
 
-// Port of GraphsEllipseExamples.addEllipse.
-void GraphExamples::AddEllipse(String outputFile)
+void AddEllipse(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -93,7 +92,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-void GraphExamples::CreateEllipseFilled(String outputFile)
+void CreateEllipseFilled(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();

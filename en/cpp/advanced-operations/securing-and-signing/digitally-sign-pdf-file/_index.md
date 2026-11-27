@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/digitally-sign-pdf-file/
 description: Sign PDF files with PKCS#7 or detached signatures and configure a timestamp server using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -35,22 +35,19 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.signDocument.
-void SignDocument(System::String inputFile, System::String outputFile, System::String pfxFile)
-{
-    {
-        auto document = MakeObject<Document>(inputFile);
-        auto signature = MakeObject<PdfFileSignature>(document);
+	void SignDocument(System::String inputFile, System::String outputFile, System::String pfxFile)
+	{
+			auto document = MakeObject<Document>(inputFile);
+			auto signature = MakeObject<PdfFileSignature>(document);
 
-        auto pkcs = MakeObject<PKCS7>(pfxFile, u"12345");
-        signature->Sign(1, true, System::Drawing::Rectangle(300, 100, 400, 200), pkcs);
-        signature->Save(outputFile);
-    }
-}
+			auto pkcs = MakeObject<PKCS7>(pfxFile, u"12345");
+			signature->Sign(1, true, System::Drawing::Rectangle(300, 100, 400, 200), pkcs);
+			signature->Save(outputFile);
+	}
 
-}
+} // namespace SecuringAndSigningExamples
 ```
 
 ## Sign with a detached SHA-256 signature
@@ -75,9 +72,8 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.signDocumentPkcs7Detached.
 void SignDocumentPkcs7Detached(System::String inputFile, System::String outputFile, System::String pfxFile, System::String password)
 {
     {
@@ -90,7 +86,7 @@ void SignDocumentPkcs7Detached(System::String inputFile, System::String outputFi
     }
 }
 
-}
+} // namespace SecuringAndSigning
 ```
 
 ## ECDSA signing sample
@@ -132,7 +128,7 @@ void SignEcdsa(System::String inputFile, System::String outputFile, System::Stri
     }
 }
 
-}
+} // namespace SecuringAndSigning
 ```
 
 ## Sign using a timestamp server
@@ -162,22 +158,21 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning
+namespace SecuringAndSigningExamples {
+
+void SignWithTimeStampServer(System::String inputFile, System::String outputFile, System::String pfxFile, System::String password)
 {
-
-    void SignWithTimeStampServer(System::String inputFile, System::String outputFile, System::String pfxFile, System::String password)
     {
-        {
-            auto document = MakeObject<Document>(inputFile);
-            auto signature = MakeObject<PdfFileSignature>(document);
+        auto document = MakeObject<Document>(inputFile);
+        auto signature = MakeObject<PdfFileSignature>(document);
 
-            auto pkcs = MakeObject<PKCS7>(pfxFile, password);
-            pkcs->set_TimestampSettings(MakeObject<TimestampSettings>(u"https://freetsa.org/tsr", u"", DigestHashAlgorithm::Sha256));
-            signature->Sign(1, u"Signature Reason", u"Contact", u"Location", true,
-                            System::Drawing::Rectangle(100, 100, 200, 100), pkcs);
-            signature->Save(outputFile);
-        }
+        auto pkcs = MakeObject<PKCS7>(pfxFile, password);
+        pkcs->set_TimestampSettings(MakeObject<TimestampSettings>(u"https://freetsa.org/tsr", u"", DigestHashAlgorithm::Sha256));
+        signature->Sign(1, u"Signature Reason", u"Contact", u"Location", true,
+        System::Drawing::Rectangle(100, 100, 200, 100), pkcs);
+        signature->Save(outputFile);
     }
-
 }
+
+} // namespace SecuringAndSigning
 ```

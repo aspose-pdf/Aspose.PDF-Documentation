@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/extract-image-and-signature-information/
 description: Read signature algorithm details, extract a certificate or signature appearance image, and check certificate extraction using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -32,9 +32,8 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.getSignaturesInfo.
 void GetSignaturesInfo(System::String inputFile)
 {
     {
@@ -47,7 +46,7 @@ void GetSignaturesInfo(System::String inputFile)
     }
 }
 
-}
+} // namespace SecuringAndSigning
 ```
 
 ## Save a certificate from a signature field
@@ -75,36 +74,34 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.extractCertificate.
-void ExtractCertificate(System::String inputFile, System::String outputFile)
-{
-    {
-        auto document = MakeObject<Document>(inputFile, String(u"owner"));
+	void ExtractCertificate(System::String inputFile, System::String outputFile)
+	{
 
-        for (const auto& field : document->get_Form()) {
-            if (!System::DynamicCast_noexcept<SignatureField>(field)) {
-                continue;
-            }
+		auto document = MakeObject<Document>(inputFile, String(u"owner"));
 
-            auto signatureField = System::DynamicCast<SignatureField>(field);
-            {
-                auto certificateStream = signatureField->ExtractCertificate();
+		for (const auto& field : document->get_Form()) {
+			if (!System::ExplicitCast<SignatureField>(field)) {
+				continue;
+			}
 
-                if (certificateStream == nullptr) {
-                    continue;
-                }
-                auto output = System::IO::File::Create(outputFile);
-                certificateStream->CopyTo(output);
-                output->Close();
-                return;
-            }
-        }
-    }
-}
+			auto signatureField = System::ExplicitCast<SignatureField>(field);
+			{
+				auto certificateStream = signatureField->ExtractCertificate();
 
-}
+				if (certificateStream == nullptr) {
+					continue;
+				}
+				auto output = System::IO::File::Create(outputFile);
+				certificateStream->CopyTo(output);
+				output->Close();
+				return;
+			}
+		}
+	}
+
+} // namespace SecuringAndSigningExamples
 ```
 
 ## Check certificate extraction
@@ -131,25 +128,24 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.extractCertificateTryExtractCertificateMethod.
-void ExtractCertificateTryExtractCertificateMethod(System::String inputFile)
-{
-    {
-        auto document = MakeObject<Document>(inputFile, String(u"owner"));
-        auto signature = MakeObject<PdfFileSignature>(document);
+	void ExtractCertificateTryExtractCertificateMethod(System::String inputFile)
+	{
 
-        for (const auto& signatureName : signature->GetSignatureNames(true)) {
-            SharedPtr<System::IO::Stream> certificate;
-            if (signature->TryExtractCertificate(signatureName, certificate)) {
-                std::cout << "The certificate extraction succeeded" << std::endl;
-            }
-        }
-    }
-}
+		auto document = MakeObject<Document>(inputFile, String(u"owner"));
+		auto signature = MakeObject<PdfFileSignature>(document);
 
-}
+		for (const auto& signatureName : signature->GetSignatureNames(true)) {
+			SharedPtr<System::IO::Stream> certificate;
+			if (signature->TryExtractCertificate(signatureName, certificate)) {
+				std::cout << "The certificate extraction succeeded" << std::endl;
+			}
+		}
+
+	}
+
+} // namespace SecuringAndSigning
 ```
 
 ## Save a signature appearance image
@@ -179,34 +175,32 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-namespace SecuringAndSigning {
+namespace SecuringAndSigningExamples {
 
-// Port of SecuringAndSigningExamples.extractImagesFromSignatureField.
-void ExtractImagesFromSignatureField(System::String inputFile, System::String outputFile)
-{
-    {
-        auto document = MakeObject<Document>(inputFile);
+	void ExtractImagesFromSignatureField(System::String inputFile, System::String outputFile)
+	{
 
-        for (const auto& field : document->get_Form()) {
-            if (!System::DynamicCast_noexcept<SignatureField>(field)) {
-                continue;
-            }
+		auto document = MakeObject<Document>(inputFile);
 
-            auto signatureField = System::DynamicCast<SignatureField>(field);
-            {
-                auto imageStream = signatureField->ExtractImage(System::Drawing::Imaging::ImageFormat::get_Jpeg());
+		for (const auto& field : document->get_Form()) {
+			if (!System::ExplicitCast<SignatureField>(field)) {
+				continue;
+			}
 
-                if (imageStream == nullptr) {
-                    continue;
-                }
-                auto output = System::IO::File::Create(outputFile);
-                imageStream->CopyTo(output);
-                output->Close();
-                return;
-            }
-        }
-    }
-}
+			auto signatureField = System::ExplicitCast<SignatureField>(field);
+			{
+				auto imageStream = signatureField->ExtractImage(System::Drawing::Imaging::ImageFormat::get_Jpeg());
 
-}
+				if (imageStream == nullptr) {
+					continue;
+				}
+				auto output = System::IO::File::Create(outputFile);
+				imageStream->CopyTo(output);
+				output->Close();
+				return;
+			}
+		}
+	}
+
+} // namespace SecuringAndSigning
 ```

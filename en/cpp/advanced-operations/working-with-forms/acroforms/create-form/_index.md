@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/create-form/
 description: Create text, checkbox, choice, barcode, and unsigned signature fields in PDF documents using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -44,12 +44,12 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Forms;
 
-void FormExamples::AddTextBoxField(String inputFile, String outputFile)
+void AddTextBoxField(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->Add();
 
-    auto rectangle = MakeObject<Aspose::Pdf::Rectangle>(10, 600, 110, 620, true);
+    auto rectangle = MakeObject<Aspose::Pdf::Rectangle>(10, 200, 110, 220, true);
     auto textBoxField = MakeObject<TextBoxField>(page, rectangle);
     textBoxField->set_PartialName(String(u"textbox1"));
     textBoxField->set_Value(String(u"Text Box"));
@@ -102,45 +102,44 @@ using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Text;
 
-void FormExamples::AddTextBoxFieldNt(String inputFile, String outputFile)
+void AddTextBoxFieldNt(String inputFile, String outputFile)
 {
+    auto document = MakeObject<Document>(inputFile);
+    auto page = document->get_Pages()->Add();
 
-        auto document = MakeObject<Document>();
-        auto page = document->get_Pages()->Add();
+    auto rects =
+        MakeArray<SharedPtr<Rectangle>>({ MakeObject<Aspose::Pdf::Rectangle>(10, 200, 110, 220, true),
+                                         MakeObject<Aspose::Pdf::Rectangle>(10, 230, 110, 250, true),
+                                         MakeObject<Aspose::Pdf::Rectangle>(10, 260, 110, 280, true) });
 
-        auto rects =
-            MakeArray<SharedPtr<Rectangle>>({MakeObject<Aspose::Pdf::Rectangle>(10, 600, 110, 620, true),
-                                             MakeObject<Aspose::Pdf::Rectangle>(10, 630, 110, 650, true),
-                                             MakeObject<Aspose::Pdf::Rectangle>(10, 660, 110, 680, true)});
+    auto defaultAppearances = MakeArray<SharedPtr<DefaultAppearance>>(
+        { MakeObject<DefaultAppearance>(String(u"Arial"), 10, Color::get_DarkBlue()->ToRgb()),
+         MakeObject<DefaultAppearance>(String(u"Helvetica"), 12, Color::get_DarkGreen()->ToRgb()),
+         MakeObject<DefaultAppearance>(FontRepository::FindFont(String(u"Calibri")), 14,
+                                       Color::get_DarkMagenta()->ToRgb()) });
 
-        auto defaultAppearances = MakeArray<SharedPtr<DefaultAppearance>>(
-            {MakeObject<DefaultAppearance>(String(u"Arial"), 10, Color::get_DarkBlue()->ToRgb()),
-             MakeObject<DefaultAppearance>(String(u"Helvetica"), 12, Color::get_DarkGreen()->ToRgb()),
-             MakeObject<DefaultAppearance>(FontRepository::FindFont(String(u"Calibri")), 14,
-                                           Color::get_DarkMagenta()->ToRgb())});
+    auto textBoxField = MakeObject<TextBoxField>(page, rects);
+    textBoxField->set_PartialName(String(u"textbox1"));
+    textBoxField->set_Value(String(u"Some text"));
 
-        auto textBoxField = MakeObject<TextBoxField>(page, rects);
-        textBoxField->set_PartialName(String(u"textbox1"));
-        textBoxField->set_Value(String(u"Some text"));
+    int index = 0;
+    for (auto& widget : textBoxField)
+    {
+        widget->set_DefaultAppearance(defaultAppearances[index]);
+        index++;
+    }
 
-        int index = 0;
-        for (auto& widget : textBoxField)
-        {
-            widget->set_DefaultAppearance(defaultAppearances[index]);
-            index++;
-        }
+    auto border = MakeObject<Border>(textBoxField);
+    border->set_Width(1);
+    border->set_Style(BorderStyle::Dashed);
+    border->set_Dash(MakeObject<Dash>(3, 3));
+    textBoxField->set_Border(border);
 
-        auto border = MakeObject<Border>(textBoxField);
-        border->set_Width(1);
-        border->set_Style(BorderStyle::Dashed);
-        border->set_Dash(MakeObject<Dash>(3, 3));
-        textBoxField->set_Border(border);
+    textBoxField->get_Characteristics()->set_Border(Color::get_Red()->ToRgb());
+    textBoxField->get_Characteristics()->set_Background(Color::get_Yellow()->ToRgb());
 
-        textBoxField->get_Characteristics()->set_Border(Color::get_Red()->ToRgb());
-        textBoxField->get_Characteristics()->set_Background(Color::get_Yellow()->ToRgb());
-
-        document->get_Form()->Add(textBoxField, 1);
-        document->Save(outputFile);
+    document->get_Form()->Add(textBoxField, 1);
+    document->Save(outputFile);
 
 }
 ```
@@ -170,13 +169,13 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Text;
 
-void FormExamples::AddCheckboxFieldToPdf(String inputFile, String outputFile)
+void AddCheckboxFieldToPdf(String inputFile, String outputFile)
 {
-    auto document = MakeObject<Document>();
+    auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->Add();
 
     auto checkbox =
-        MakeObject<CheckboxField>(page, MakeObject<Aspose::Pdf::Rectangle>(50, 620, 100, 650, true));
+        MakeObject<CheckboxField>(page, MakeObject<Aspose::Pdf::Rectangle>(50, 420, 100, 456, true));
     checkbox->get_Characteristics()->set_Background(Color::get_Aqua()->ToRgb());
     checkbox->set_Style(BoxStyle::Circle);
 
@@ -207,13 +206,13 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-void FormExamples::AddComboBox(String inputFile, String outputFile)
+void AddComboBox(String inputFile, String outputFile)
 {
-    auto document = MakeObject<Document>();
+    auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->Add();
 
     auto combo =
-        MakeObject<ComboBoxField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 640, 150, 656, true));
+        MakeObject<ComboBoxField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 440, 150, 456, true));
     combo->AddOption(String(u"Red"));
     combo->AddOption(String(u"Yellow"));
     combo->AddOption(String(u"Green"));
@@ -247,10 +246,9 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-void FormExamples::AddListBoxFieldToPdf(String inputFile, String outputFile)
+void AddListBoxFieldToPdf(String inputFile, String outputFile)
 {
-
-        auto document = MakeObject<Document>();
+        auto document = MakeObject<Document>(inputFile);
         auto page = document->get_Pages()->Add();
 
         auto listBox =
@@ -262,7 +260,6 @@ void FormExamples::AddListBoxFieldToPdf(String inputFile, String outputFile)
 
         document->get_Form()->Add(listBox, 1);
         document->Save(outputFile);
-
 }
 ```
 
@@ -289,14 +286,14 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
 
-void FormExamples::AddRadioButton(String inputFile, String outputFile)
+void AddRadioButton(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
 
     auto radio = MakeObject<RadioButtonField>(page);
-    radio->AddOption(String(u"Option 1"), MakeObject<Aspose::Pdf::Rectangle>(100, 640, 120, 680, true));
-    radio->AddOption(String(u"Option 2"), MakeObject<Aspose::Pdf::Rectangle>(140, 640, 160, 680, true));
+    radio->AddOption(String(u"Option 1"), MakeObject<Aspose::Pdf::Rectangle>(100, 440, 120, 480, true));
+    radio->AddOption(String(u"Option 2"), MakeObject<Aspose::Pdf::Rectangle>(140, 440, 160, 480, true));
 
     document->get_Form()->Add(radio, 1);
     document->Save(outputFile);
@@ -325,17 +322,19 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-void FormExamples::AddBarcodeField(String inputFile, String outputFile)
+void AddBarcodeField(String inputFile, String outputFile)
 {
-    auto document = MakeObject<Document>();
-    auto page = document->get_Pages()->Add();
+    {
+        auto document = MakeObject<Document>(inputFile);
+        auto page = document->get_Pages()->Add();
 
-    auto barcode =
-        MakeObject<BarcodeField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 700, 200, 740, true));
-    barcode->set_PartialName(String(u"Barcode1"));
-    barcode->AddBarcode(String(u"1234567890"));
-    document->get_Form()->Add(barcode, 1);
-    document->Save(outputFile);
+        auto barcode =
+            MakeObject<BarcodeField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 400, 200, 440, true));
+        barcode->set_PartialName(String(u"Barcode1"));
+        barcode->AddBarcode(String(u"1234567890"));
+        document->get_Form()->Add(barcode, 1);
+        document->Save(outputFile);
+    }
 }
 ```
 
@@ -361,13 +360,13 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-void FormExamples::AddSignatureField(String inputFile, String outputFile)
+void AddSignatureField(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->Add();
 
     auto signatureField =
-        MakeObject<SignatureField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 700, 200, 800, true));
+        MakeObject<SignatureField>(page, MakeObject<Aspose::Pdf::Rectangle>(100, 200, 200, 250, true));
     signatureField->set_PartialName(String(u"Signature1"));
     document->get_Form()->Add(signatureField, 1);
     document->Save(outputFile);

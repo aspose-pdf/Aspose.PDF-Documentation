@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/watermark-annotations/
 description: Add a text watermark annotation, inspect its rectangle, and delete watermark annotations from a PDF page using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -72,7 +72,7 @@ void WatermarkAdd(System::String inputFile, System::String outputFile)
     document->Save(outputFile);
 }
 
-} // namespace WorkingWithAnnotationsExamples::Watermark
+} // namespace WorkingWithAnnotations::Watermark
 ```
 
 ## Get watermark annotations

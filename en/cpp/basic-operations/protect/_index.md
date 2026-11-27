@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/protect-pdf-file/
 description: Encrypt and decrypt PDFs in C++, set permissions, change passwords, and check password protection.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -35,7 +35,6 @@ A user password is used to open a protected document. An owner password controls
 constexpr auto USER_PASSWORD = u"userpassword";
 constexpr auto OWNER_PASSWORD = u"ownerpassword";
 
-using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
@@ -65,18 +64,20 @@ void EncryptPassword(System::String path_infile, System::String path_outfile)
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
 #include <Aspose.PDF.Cpp/Security/CryptoAlgorithm.h>
 #include <Aspose.PDF.Cpp/Facades/DocumentPrivilege.h>
 #include <Aspose.PDF.Cpp/Facades/PdfFileInfo.h>
-
-constexpr auto USER_PASSWORD = u"userpassword";
-constexpr auto OWNER_PASSWORD = u"ownerpassword";
+#include <Aspose.PDF.Cpp/Exceptions/InvalidPasswordException.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
 void EncryptPdfFile(String path_infile, String path_outfile) {
+	const String USER_PASSWORD(u"userpassword");
+	const String OWNER_PASSWORD(u"ownerpassword");
+
     const auto document = MakeObject<Document>(path_infile);
     document->Encrypt(
         USER_PASSWORD,
@@ -108,7 +109,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
 void DecryptPdfFile(String path_infile, String path_outfile) {
-    const auto document = MakeObject<Document>(path_infile, USER_PASSWORD);
+    const auto document = MakeObject<Document>(path_infile, String(OWNER_PASSWORD));
     document->Decrypt();
     document->Save(path_outfile);
 }
@@ -121,24 +122,22 @@ void DecryptPdfFile(String path_infile, String path_outfile) {
 1. Save the result with [Document::Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/exceptions.h>
 #include <Aspose.PDF.Cpp/Document.h>
-#include <Aspose.PDF.Cpp/Security/CryptoAlgorithm.h>
-#include <Aspose.PDF.Cpp/Facades/DocumentPrivilege.h>
-#include <Aspose.PDF.Cpp/Facades/PdfFileInfo.h>
-
-constexpr auto USER_PASSWORD = u"userpassword";
-constexpr auto OWNER_PASSWORD = u"ownerpassword";
 
 using namespace System;
 using namespace Aspose::Pdf;
-using namespace Aspose::Pdf::Facades;
 
-void ChangePassword(String path_infile, String path_outfile) {
-    const auto document = MakeObject<Document>(path_infile, OWNER_PASSWORD);
-    document->ChangePasswords(OWNER_PASSWORD, u"newuser", u"newowner");
-    document->Save(path_outfile);
+namespace SecuringAndSigningExamples {
 
-}
+    void ChangePassword(System::String inputFile, System::String outputFile)
+    {
+
+        auto document = MakeObject<Document>(inputFile, String(u"owner"));
+        document->ChangePasswords(u"owner", u"newuser", u"newowner");
+        document->Save(outputFile);
+    }
+} // namespace SecuringAndSigning
 ```
 
 ## Check encryption and test candidate passwords
@@ -151,8 +150,6 @@ void ChangePassword(String path_infile, String path_outfile) {
 1. Catch [InvalidPasswordException](https://reference.aspose.com/pdf/cpp/aspose.pdf/) and report an incorrect candidate.
 
 ```cpp
-#include <iostream>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
 #include <Aspose.PDF.Cpp/Security/CryptoAlgorithm.h>
@@ -168,24 +165,23 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Facades;
 
 void DetermineCorrectPasswordFromList(String path_infile) {
-    const auto info = MakeObject<PdfFileInfo>(path_infile);
+	const auto info = MakeObject<PdfFileInfo>(path_infile);
 
-    std::cout << "File is password protected: " << info->get_IsEncrypted() << std::endl;
+	std::cout << "File is password protected: " << info->get_IsEncrypted() << std::endl;
 
-    auto passwords = MakeArray<String>({ u"test", u"test1", u"test2", u"test3", USER_PASSWORD });
-    for (auto& password : passwords) {
+	auto passwords = MakeArray<String>({ u"test", u"test1", u"test2", USER_PASSWORD, OWNER_PASSWORD });
+	for (auto& password : passwords) {
+		try {
+			const auto document = MakeObject<Document>(path_infile, password);
 
-        try {
-            const auto document = MakeObject<Document>(path_infile, password);
-            int pageCount = document->get_Pages()->get_Count();
-            if (pageCount > 0) {
-                std::cout << "Password '" << password << "' is correct. Pages: " << pageCount << std::endl;
-            }
-        }
-
-        catch (InvalidPasswordException& ex) {
-            std::cout << "Wrong password: " << password << std::endl;
-        }
-    }
+			int pageCount = document->get_Pages()->get_Count();
+			if (pageCount > 0) {
+				std::cout << "Password '" << password << "' is correct. Pages: " << pageCount << std::endl;
+			}
+		}
+		catch (InvalidPasswordException ex) {
+			std::cout << "Wrong password: " << password << std::endl;
+		}
+	}
 }
 ```

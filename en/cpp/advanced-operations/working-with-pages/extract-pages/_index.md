@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/extract-pages/
 description: Copy selected PDF pages into a new document while retaining the input file using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -25,7 +25,6 @@ The input PDF must contain page 2. The source document is not modified.
 1. Save the output with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -33,7 +32,6 @@ The input PDF must contain page 2. The source document is not modified.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of ExtractPagesExamples.extractPage.
 void ExtractPage(System::String inputFile, System::String outputFile)
 {
     auto srcDocument = MakeObject<Document>(inputFile);
@@ -54,7 +52,6 @@ The input PDF must contain at least three pages.
 1. Save the output with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <system/array.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -63,7 +60,6 @@ The input PDF must contain at least three pages.
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of ExtractPagesExamples.extractBunchPages.
 void ExtractBunchPages(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

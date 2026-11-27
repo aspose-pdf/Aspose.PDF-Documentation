@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/text-based-annotations/
 description: Create, inspect, and delete free text, highlight, strikeout, squiggly, and underline annotations in PDF files using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -61,7 +61,7 @@ namespace WorkingWithAnnotationsExamples::Text {
         document->Save(outputFile);
     }
 
-} // namespace WorkingWithAnnotationsExamples::Text
+} // namespace WorkingWithAnnotations::Text
 ```
 
 ## Get free text annotations
@@ -714,7 +714,7 @@ void TextUnderlineByTitleDelete(System::String inputFile, System::String outputF
     std::vector<SharedPtr<UnderlineAnnotation>> toDelete;
     for (auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
         if (annotation->get_AnnotationType() == AnnotationType::Underline) {
-            auto ua = DynamicCast<UnderlineAnnotation>(annotation);
+            auto ua = ExplicitCast<UnderlineAnnotation>(annotation);
             if (ua->get_Title() == u"Aspose User") {
                 toDelete.push_back(ua);
             }
@@ -812,7 +812,7 @@ namespace WorkingWithAnnotationsExamples::Text {
         auto document = MakeObject<Document>(inputFile);
         for (auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
             if (annotation->get_AnnotationType() == AnnotationType::Underline) {
-                auto ua = DynamicCast<UnderlineAnnotation>(annotation);
+                auto ua = ExplicitCast<UnderlineAnnotation>(annotation);
                 for (auto fragment : ua->GetMarkedTextFragments()) {
                     std::cout << "Fragment text: " << fragment->get_Text() << std::endl;
                 }
@@ -855,7 +855,7 @@ void TextUnderlineMarkedTextGet(System::String inputFile)
     auto document = MakeObject<Document>(inputFile);
     for (auto& annotation : document->get_Pages()->idx_get(1)->get_Annotations()) {
         if (annotation->get_AnnotationType() == AnnotationType::Underline) {
-            auto ua = DynamicCast<UnderlineAnnotation>(annotation);
+            auto ua = ExplicitCast<UnderlineAnnotation>(annotation);
             std::cout << "Marked text: " << ua->GetMarkedText() << std::endl;
         }
     }

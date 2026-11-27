@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /cpp/convert-other-files-to-pdf/
 description: Convert text, LaTeX, Markdown, PostScript, XPS, and XML with XSL-FO stylesheets to PDF using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,6 +27,7 @@ Read an entire text file and place its contents in a PDF text fragment.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -42,15 +43,18 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertTextToPDF(String path_infile, String path_outfile)
 {
-    String content = System::IO::File::ReadAllText(path_infile);
-    auto document = MakeObject<Document>();
-    auto page = document->get_Pages()->Add();
-    auto text = MakeObject<TextFragment>(content);
-    auto paragraphs = page->get_Paragraphs();
-    paragraphs->Add(text);
-    document->Save(path_outfile);
+	String content = System::IO::File::ReadAllText(path_infile);
+	auto document = MakeObject<Document>();
+	auto page = document->get_Pages()->Add();
+	auto text = MakeObject<TextFragment>(content);
+	auto paragraphs = page->get_Paragraphs();
+	paragraphs->Add(text);
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -69,6 +73,7 @@ Ensure Courier New is available. A line starting with a form feed is treated as 
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -85,51 +90,54 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertTextPreformattedToPdf(String path_infile, String path_outfile)
 {
-    // Read the text file as array of string
-    auto lines = System::IO::File::ReadAllLines(path_infile);
+	// Read the text file as array of string
+	auto lines = System::IO::File::ReadAllLines(path_infile);
 
-    // Instantiate a Document object by calling its empty constructor
-    auto document = MakeObject<Document>();
+	// Instantiate a Document object by calling its empty constructor
+	auto document = MakeObject<Document>();
 
-    // Add a new page in Pages collection of Document
-    auto page = document->get_Pages()->Add();
+	// Add a new page in Pages collection of Document
+	auto page = document->get_Pages()->Add();
 
-    // Set left and right margins for better presentation
-    page->get_PageInfo()->get_Margin()->set_Left(20);
-    page->get_PageInfo()->get_Margin()->set_Right(10);
-    page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
-    page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
+	// Set left and right margins for better presentation
+	page->get_PageInfo()->get_Margin()->set_Left(20);
+	page->get_PageInfo()->get_Margin()->set_Right(10);
+	page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
+	page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
 
-    for (int index = 0; index < lines->get_Length(); index++)
-    {
-        // check if line contains "form feed" character
-        // see https://en.wikipedia.org/wiki/Page_break
-        auto line = lines->idx_get(index);
-        if (line.StartsWith(u"\x0c"))
-        {
-            if (document->get_Pages()->get_Count() > 3) break;
-            page = document->get_Pages()->Add();
-            // Set left and right margins for better presentation
-            page->get_PageInfo()->get_Margin()->set_Left(20);
-            page->get_PageInfo()->get_Margin()->set_Right(10);
-            page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
-            page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
-        }
-        else
-        {
-            // Create an instance of TextFragment and
-            // pass the line to its constructor as argument
-            auto text = MakeObject<TextFragment>(line);
+	for (int index = 0; index < lines->get_Length(); index++)
+	{
+		// check if line contains "form feed" character
+		// see https://en.wikipedia.org/wiki/Page_break
+		auto line = lines->idx_get(index);
+		if (line.StartsWith(u"\x0c"))
+		{
+			if (document->get_Pages()->get_Count() > 3) break;
+			page = document->get_Pages()->Add();
+			// Set left and right margins for better presentation
+			page->get_PageInfo()->get_Margin()->set_Left(20);
+			page->get_PageInfo()->get_Margin()->set_Right(10);
+			page->get_PageInfo()->get_DefaultTextState()->set_Font(FontRepository::FindFont(u"Courier New"));
+			page->get_PageInfo()->get_DefaultTextState()->set_FontSize(12);
+		}
+		else
+		{
+			// Create an instance of TextFragment and
+			// pass the line to its constructor as argument
+			auto text = MakeObject<TextFragment>(line);
 
-            // Add a new text paragraph in paragraphs collection and pass the TextFragment object
-            page->get_Paragraphs()->Add(text);
-        }
-    }
+			// Add a new text paragraph in paragraphs collection and pass the TextFragment object
+			page->get_Paragraphs()->Add(text);
+		}
+	}
 
-    // Save resultant PDF file
-    document->Save(path_outfile);
+	// Save resultant PDF file
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -149,11 +157,14 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void ConvertLaTeXtoPDF(String path_infile, String path_outfile)
+namespace ConvertingExamples
 {
-    auto options = MakeObject<TeXLoadOptions>();
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);
+	void ConvertLaTeXtoPDF(String path_infile, String path_outfile)
+	{
+		auto options = MakeObject<TeXLoadOptions>();
+		auto document = MakeObject<Document>(path_infile, options);
+		document->Save(path_outfile);
+	}
 }
 ```
 
@@ -190,7 +201,6 @@ Load the PostScript source with format-specific options and save it as PDF.
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PsLoadOptions.h>
 
@@ -198,11 +208,14 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertPostscriptToPDF(String path_infile, String path_outfile)
 {
-    auto options = MakeObject<PsLoadOptions>();
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);
+	auto options = MakeObject<PsLoadOptions>();
+	auto document = MakeObject<Document>(path_infile, options);
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -219,7 +232,6 @@ Replace the sample Windows folder paths with directories available on your syste
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PsLoadOptions.h>
 
@@ -227,15 +239,18 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
+namespace ConvertingExamples
+{
 void ConvertPostscriptToPDFAvdanced(String path_infile, String path_outfile)
 {
-    auto options = MakeObject<PsLoadOptions>();
-    auto folders = MakeArray<String>({ String(u"E:\\Samples\\Conversion\\Fonts"), String(u"C:\\tmp\\") });
+	auto options = MakeObject<PsLoadOptions>();
+	auto folders = MakeArray<String>({ String(u"E:\\Samples\\Conversion\\Fonts"), String(u"C:\\tmp\\") });
 
-    options->set_FontsFolders(folders);
+	options->set_FontsFolders(folders);
 
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);
+	auto document = MakeObject<Document>(path_infile, options);
+	document->Save(path_outfile);
+}
 }
 ```
 
@@ -255,11 +270,14 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void ConvertXPStoPDF(String path_infile, String path_outfile)
+namespace ConvertingExamples
 {
-    auto options = MakeObject<XpsLoadOptions>();    
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);        
+	void ConvertXPStoPDF(String path_infile, String path_outfile)
+	{
+		auto options = MakeObject<XpsLoadOptions>();
+		auto document = MakeObject<Document>(path_infile, options);
+		document->Save(path_outfile);
+	}
 }
 ```
 
@@ -276,7 +294,6 @@ Supply both the XML and its corresponding XSLT file. The path substitution expec
 1. Save the output file with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/XslFoLoadOptions.h>
 
@@ -284,16 +301,19 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-void ConvertXSLFO_to_PDF(String path_infile, String path_outfile)
+namespace ConvertingExamples
 {
-    String infilenameXSL = path_infile.Replace(u".xml", u".xslt");        
-    // Instantiate XslFoLoadOption object
-    auto options = MakeObject<XslFoLoadOptions>(infilenameXSL);
+	void ConvertXSLFO_to_PDF(String path_infile, String path_outfile)
+	{
+		String infilenameXSL = path_infile.Replace(u".xml", u".xslt");
+		// Instantiate XslFoLoadOption object
+		auto options = MakeObject<XslFoLoadOptions>(infilenameXSL);
 
-    // Set error handling strategy
-    options->ParsingErrorsHandlingType = XslFoLoadOptions::ParsingErrorsHandlingTypes::ThrowExceptionImmediately;
-    // Create Document object
-    auto document = MakeObject<Document>(path_infile, options);
-    document->Save(path_outfile);
+		// Set error handling strategy
+		options->ParsingErrorsHandlingType = XslFoLoadOptions::ParsingErrorsHandlingTypes::ThrowExceptionImmediately;
+		// Create Document object
+		auto document = MakeObject<Document>(path_infile, options);
+		document->Save(path_outfile);
+	}
 }
 ```

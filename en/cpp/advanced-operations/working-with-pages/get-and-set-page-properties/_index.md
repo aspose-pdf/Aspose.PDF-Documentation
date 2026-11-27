@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/get-and-set-page-properties/
 description: Inspect page counts, page boxes, rotation, and color types, and calculate a generated document's page count before saving with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,7 +27,6 @@ The example uses C++17 structured bindings. For changes to page properties, see 
 1. Print the page number and rotation.
 
 ```cpp
-
 #include <iostream>
 #include <utility>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -38,7 +37,6 @@ The example uses C++17 structured bindings. For changes to page properties, see 
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of GetAndSetPagePropertiesExamples.getPageProperties.
 void GetPageProperties(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -69,7 +67,6 @@ void GetPageProperties(System::String inputFile)
 1. Print the page count.
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -78,7 +75,6 @@ void GetPageProperties(System::String inputFile)
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of GetAndSetPagePropertiesExamples.getPageCount.
 void GetPageCount(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -97,7 +93,6 @@ This creates a document in memory and does not require an input PDF or save an o
 1. Read and print the [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) count.
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
@@ -111,7 +106,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of GetAndSetPagePropertiesExamples.getPageCountWithoutSaving.
 void GetPageCountWithoutSaving()
 {
     auto document = MakeObject<Document>();
@@ -133,7 +127,6 @@ void GetPageCountWithoutSaving()
 1. Print the classification for each page.
 
 ```cpp
-
 #include <iostream>
 #include <Aspose.PDF.Cpp/ColorType.h>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -143,7 +136,6 @@ void GetPageCountWithoutSaving()
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of GetAndSetPagePropertiesExamples.getPageColorType.
 void GetPageColorType(System::String inputFile)
 {
     auto document = MakeObject<Document>(inputFile);

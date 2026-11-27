@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/basic-text-extraction/
 description: Extract text from all pages, the first page, or detected paragraphs using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,6 +27,7 @@ Collect document text into one output file.
 1. Write the extracted text to the output file.
 
 ```cpp
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
