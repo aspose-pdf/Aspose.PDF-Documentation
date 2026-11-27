@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/extract-images-from-pdf-file/
 description: Save an embedded PDF image, extract images whose placements lie in a region, and read image alternative text using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -43,7 +43,7 @@ The input must contain at least one image resource on page 1. This exports an em
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ImageExamples::ExtractImage(String inputFile, String outputFile)
+void ExtractImage(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto output = System::IO::File::Create(outputFile);
@@ -65,7 +65,6 @@ For example, image_index.jpg becomes image_1.jpg, image_2.jpg, and so on. The fu
 1. Close each output stream.
 
 ```cpp
-#include <iostream>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -83,7 +82,7 @@ For example, image_index.jpg becomes image_1.jpg, image_2.jpg, and so on. The fu
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ImageExamples::ExtractFromRegion(String inputFile, String outputFile)
+void ExtractFromRegion(String inputFile, String outputFile)
 {
     if (outputFile.Contains(u"index") == false)
     {
@@ -138,7 +137,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 
 
-void ImageExamples::ExtractAltText(String inputFile, String outputFile)
+void ExtractAltText(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->idx_get(1);

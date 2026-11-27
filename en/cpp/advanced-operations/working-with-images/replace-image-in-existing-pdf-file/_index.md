@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/replace-image-in-existing-pdf-file/
 description: Replace an image resource or the first detected image placement on the first PDF page using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -41,7 +41,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Operators;
 
-void ImageExamples::ReplaceImage(String inputFile, String outputFile)
+void ReplaceImage(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto stream = System::IO::File::OpenRead(
@@ -83,7 +83,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 
 
-void ImageExamples::ReplaceWithAbsorber(String inputFile, String outputFile)
+void ReplaceWithAbsorber(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto stream = System::IO::File::OpenRead(

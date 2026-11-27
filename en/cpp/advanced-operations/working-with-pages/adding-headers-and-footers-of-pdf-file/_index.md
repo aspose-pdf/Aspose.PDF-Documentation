@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/add-headers-and-footers-of-pdf-file/
 description: Add text, images, HTML, LaTeX, tables, and page-number placeholders to PDF headers and footers using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,7 +26,6 @@ Add text, images, HTML, LaTeX, tables, and page-number placeholders to PDF heade
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
@@ -41,7 +40,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of AddHeaderFooterExamples.addHeaderAndFooterAsText.
 void AddHeaderAndFooterAsText(System::String inputFile, System::String outputFile)
 {
     auto header = MakeObject<HeaderFooter>();
@@ -75,7 +73,6 @@ void AddHeaderAndFooterAsText(System::String inputFile, System::String outputFil
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
 #include <Aspose.PDF.Cpp/Generator/Image.h>
@@ -87,7 +84,6 @@ void AddHeaderAndFooterAsText(System::String inputFile, System::String outputFil
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of AddHeaderFooterExamples.addHeaderAndFooterAsImage.
 void AddHeaderAndFooterAsImage(System::String inputFile, System::String imageFile, System::String outputFile)
 {
     auto headerImage = MakeObject<Image>();
@@ -174,7 +170,6 @@ The footer includes the supplied literal year 2025 and interpolates the total pa
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
 #include <Aspose.PDF.Cpp/Generator/MarginInfo.h>
@@ -186,7 +181,6 @@ The footer includes the supplied literal year 2025 and interpolates the total pa
 using namespace System;
 using namespace Aspose::Pdf;
 
-// Port of AddHeaderFooterExamples.addHeaderAndFooterAsLatex.
 void AddHeaderAndFooterAsLatex(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -218,7 +212,6 @@ Column widths use the sample's fixed value 594 and the header or footer margins.
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Table/Cell.h>
 #include <Aspose.PDF.Cpp/Table/Cells.h>
 #include <Aspose.PDF.Cpp/Document.h>
@@ -239,7 +232,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of AddHeaderFooterExamples.addHeaderAndFooterAsTable.
 void AddHeaderAndFooterAsTable(System::String inputFile, System::String outputFile)
 {
     auto textStateHeader = MakeObject<TextState>();
@@ -287,7 +279,6 @@ void AddHeaderAndFooterAsTable(System::String inputFile, System::String outputFi
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Generator/HeaderFooter.h>
@@ -302,7 +293,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of AddHeaderFooterExamples.usingHeaderAndFooterForPageNumbering.
 void UsingHeaderAndFooterForPageNumbering(System::String inputFile, System::String outputFile)
 {
     auto header = MakeObject<HeaderFooter>();

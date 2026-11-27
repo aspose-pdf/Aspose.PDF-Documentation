@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/delete-images-from-pdf-file/
 description: Delete the first image resource from the first PDF page using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -42,7 +42,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Operators;
 
-void ImageExamples::DeleteImage(String inputFile, String outputFile)
+void DeleteImage(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     document->get_Pages()->idx_get(1)->get_Resources()->get_Images()->Delete(1);

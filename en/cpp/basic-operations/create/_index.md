@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/create-document/
 description: Create a PDF document in C++, add a page and text, and save it using Aspose.PDF.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -32,14 +32,21 @@ Create PDF files programmatically for reports, invoices, and other generated doc
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 
 using namespace System;
+
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
 void CreatePDF(String path_outfile) {
+    // Initialize document object
     auto document = MakeObject<Document>();
+    // Add page
     auto page = document->get_Pages()->Add();
+
+    // Add text to new page
     auto textFragment = MakeObject<TextFragment>(u"Hello World!");
     page->get_Paragraphs()->Add(textFragment);
+
+    // Save updated PDF
     document->Save(path_outfile);
 }
 ```

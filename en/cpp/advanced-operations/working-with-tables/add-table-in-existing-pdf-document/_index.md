@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/adding-tables/
 description: Create PDF tables with cell spans, images, borders, padding, and repeating headers in C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -542,23 +542,23 @@ using namespace Aspose::Pdf;
 
 void AddLatexFragments(String inputFile, String outputFile)
 {
-    auto document = MakeObject<Document>();
-    auto page = document->get_Pages()->Add();
-    auto table = MakeObject<Table>();
-    table->set_Border(MakeObject<BorderInfo>(BorderSide::All, 0.5f, Color::get_LightGray()));
-    table->set_DefaultCellBorder(MakeObject<BorderInfo>(BorderSide::All, 0.5f, Color::get_LightGray()));
-    for (int rowCount = 1; rowCount < 10; rowCount++)
-    {
-        auto row = table->get_Rows()->Add();
-        row->get_Cells()->Add()->get_Paragraphs()->Add(MakeObject<TeXFragment>(
-            String(u"Column $\\mathbf{(") + String::Format(u"{0}", rowCount) + String(u", 1)}$")));
-        row->get_Cells()->Add()->get_Paragraphs()->Add(
-            MakeObject<TeXFragment>(String(u"Column $\\tiny{(") +String::Format(u"{0}", rowCount) + String(u", 2)}$")));
-        row->get_Cells()->Add()->get_Paragraphs()->Add(MakeObject<TeXFragment>(
-            String(u"Column $\\underline{(") + String::Format(u"{0}", rowCount) + String(u", 3)}$")));
-    }
-    page->get_Paragraphs()->Add(table);
-    document->Save(outputFile);
+	auto document = MakeObject<Document>();
+	auto page = document->get_Pages()->Add();
+	auto table = MakeObject<Table>();
+	table->set_Border(MakeObject<BorderInfo>(BorderSide::All, 0.5f, Color::get_LightGray()));
+	table->set_DefaultCellBorder(MakeObject<BorderInfo>(BorderSide::All, 0.5f, Color::get_LightGray()));
+	for (int rowCount = 1; rowCount < 10; rowCount++)
+	{
+		auto row = table->get_Rows()->Add();
+		row->get_Cells()->Add()->get_Paragraphs()->Add(MakeObject<TeXFragment>(
+			String(u"Column $\\mathbf{(") + String::Format(u"{0}", rowCount) + String(u", 1)}$")));
+		row->get_Cells()->Add()->get_Paragraphs()->Add(
+			MakeObject<TeXFragment>(String(u"Column \\tiny{(") +String::Format(u"{0}", rowCount) + String(u", 2)}$")));
+		row->get_Cells()->Add()->get_Paragraphs()->Add(MakeObject<TeXFragment>(
+			String(u"Column $\\underline{(") + String::Format(u"{0}", rowCount) + String(u", 3)}$")));
+	}
+	page->get_Paragraphs()->Add(table);
+	document->Save(outputFile);
 }
 ```
 
@@ -867,7 +867,7 @@ void RotatedTextTable(String inputFile, String outputFile)
     {
         auto cell = row->get_Cells()->Add();
         auto textFragment =
-            MakeObject<TextFragment>(String(u"Cell ") + String::Format(u"{0}", (cellCount + 1)));
+            MakeObject<TextFragment>(String(u"Cell 1 ") + String::Format(u"{0}", (cellCount - 1)));
         textFragment->get_TextState()->set_Rotation(90 * cellCount);
         textFragment->set_HorizontalAlignment(HorizontalAlignment::Center);
         cell->get_Paragraphs()->Add(textFragment);

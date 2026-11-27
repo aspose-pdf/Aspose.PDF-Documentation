@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/split-pdf-document/
 description: Split PDF documents into individual pages, balanced parts, page ranges, custom groups, or odd and even pages with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -25,6 +25,8 @@ Split PDF documents into individual pages, balanced parts, page ranges, custom g
 1. Save each part with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) as Page_N.pdf.
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -55,6 +57,8 @@ void SplitDocuments(String inputFile, String outputDir)
 1. Save each part with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -93,6 +97,10 @@ void SplitDocumentsIntoTwoParts(String inputFile, String outputDir)
 1. Save each part with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
+#include <system/math.h>
+#include <system/exceptions.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -136,6 +144,11 @@ void SplitDocumentsEveryNPages(String inputFile, String outputDir, int pagesPerP
 1. Copy each range using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save it with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
+#include <system/math.h>
+#include <array>
+#include <utility>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -175,6 +188,8 @@ void SplitDocumentsByPageRanges(String inputFile, String outputDir)
 1. Copy pages 2 through the end using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save them when present.
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -214,6 +229,8 @@ void SplitDocumentsFirstPageAndRest(String inputFile, String outputDir)
 1. Delete the last page from the original [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save the preceding pages when present.
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -250,6 +267,9 @@ void SplitDocumentsLastPageAndRest(String inputFile, String outputDir)
 1. Copy each consecutive range using [PageCollection](https://reference.aspose.com/pdf/cpp/aspose.pdf/pagecollection/) and save it with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
+#include <system/math.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -297,6 +317,9 @@ Pages outside these groups are omitted. Adjust the groups for your input.
 1. Save each nonempty group with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
+#include <vector>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -336,6 +359,8 @@ void SplitDocumentsCustomPageGroups(String inputFile, String outputDir)
 1. Save each page with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/) using a three-digit minimum width, such as Page_001.pdf.
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -366,6 +391,8 @@ void SplitDocumentsWithStableFilenames(String inputFile, String outputDir)
 1. Save each nonempty result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/io/path.h>
+#include <filesystem>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>

@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/posting-form/
 description: Add a submit button or configure an explicit SubmitFormAction in a PDF using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -30,7 +30,7 @@ The localhost URL is a sample submission target. Creating the PDF does not send 
 using namespace System;
 using namespace Aspose::Pdf;
 using Aspose::Pdf::Facades::FormEditor;
-void FormExamples::AddSubmitButton(String inputFile, String outputFile)
+void AddSubmitButton(String inputFile, String outputFile)
 {
     auto editor = MakeObject<FormEditor>(inputFile, outputFile);
     editor->AddSubmitBtn(String(u"submitbutton"), 1, String(u"Submit"),
@@ -67,7 +67,7 @@ using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Forms;
 
 
-void FormExamples::AddSubmitAction(String inputFile, String outputFile)
+void AddSubmitAction(String inputFile, String outputFile)
 {
 
     auto document = MakeObject<Document>(inputFile);
@@ -75,7 +75,8 @@ void FormExamples::AddSubmitAction(String inputFile, String outputFile)
     submitAction->set_Url(MakeObject<FileSpecification>(String(u"http://localhost:3000/submit")));
     submitAction->set_Flags(SubmitFormAction::ExportFormat | SubmitFormAction::SubmitCoordinates);
 
-    auto submitButton = MakeObject<ButtonField>(document->get_Pages()->idx_get(1),
+    auto submitButton = MakeObject<ButtonField>(
+        document->get_Pages()->idx_get(1),
         MakeObject<Aspose::Pdf::Rectangle>(10, 10, 100, 40));
     submitButton->set_PartialName(String(u"SubmitButton"));
     submitButton->set_Value(String(u"Submit"));

@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/add-text-to-pdf-file/
 description: Add text, paragraphs, hyperlinks, LaTeX fragments to PDF documents, and load custom fonts using C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -36,8 +36,6 @@ Create a page, position a TextFragment at (100, 600), add it to the page paragra
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -72,8 +70,6 @@ Read lorem.txt from the input directory, or use the fallback text if it is missi
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -133,8 +129,6 @@ Read the text file supplied as inputFile, with fallback text when it does not ex
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -195,8 +189,6 @@ Include a newline in a TextFragment, append it to a TextParagraph at (100, 600),
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -246,8 +238,6 @@ Enable notification logging, add four text fragments with explicit line breaks, 
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -294,8 +284,6 @@ Compare Font::MeasureString and TextState::MeasureString for characters from A t
 1. Compare the measurements with the example checks and print any discrepancies.
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Text/FontRepository.h>
 #include <Aspose.PDF.Cpp/Text/TextState.h>
@@ -345,8 +333,6 @@ Build a fragment from several TextSegment objects and assign a WebHyperlink only
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -394,8 +380,6 @@ Add the supplied Unicode Arabic string with Tahoma at 14 points and align the fr
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -452,8 +436,6 @@ Apply bold, italic, underline, size, and color settings to a greeting. Use the i
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -535,8 +517,6 @@ Set Underline on an Arial text fragment, position it at (10, 800), and append it
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -578,8 +558,6 @@ Draw a partially transparent filled rectangle and add green text with an alpha v
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BoundsCheckableList/BoundsCheckableList.h>
@@ -627,8 +605,6 @@ Add visible and invisible fragments to the same page. The second fragment has In
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -668,8 +644,6 @@ Set the fragment background, foreground, and stroking colors, then enable DrawTe
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -716,8 +690,6 @@ Enable StrikeOut on a bold text fragment with a light gray background and red fo
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -767,8 +739,6 @@ Assign a red-to-blue GradientAxialShading pattern to the foreground color of a 3
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Drawing/GradientAxialShading.h>
@@ -815,8 +785,6 @@ Assign a red-to-blue GradientRadialShading pattern to the foreground color of a 
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Drawing/GradientRadialShading.h>
@@ -864,8 +832,6 @@ Add a TeXFragment containing braces, annotations, and a formula to page paragrap
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Generator/TeXFragment.h>
@@ -901,8 +867,6 @@ Pass a font file path as inputFile. Open it with FontRepository::OpenFont and us
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -947,8 +911,6 @@ Pass an OpenType font path as inputFile. Open its stream with FontRepository::Op
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>

@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/add-rectangle/
 description: Create filled rectangles, alpha colors, gradient fills, and graph stacking examples using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -41,7 +41,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 using namespace Aspose::Pdf::Text;
 
-void GraphExamples::AddRectangle(String outputFile)
+void AddRectangle(String outputFile)
 {
     auto document = MakeObject<Document>();
     //auto page = document->get_Pages()->Add();
@@ -84,7 +84,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-void GraphExamples::CreateRectangleFilled(String outputFile)
+void CreateRectangleFilled(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -125,7 +125,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-void GraphExamples::CreateRectangleWithAlphaColorChannel(String outputFile)
+void CreateRectangleWithAlphaColorChannel(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -171,8 +171,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-// Port of GraphsRectangleExamples.addDrawingWithGradientFill.
-void GraphExamples::AddDrawingWithGradientFill(String outputFile)
+void AddDrawingWithGradientFill(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -236,7 +235,7 @@ static void addRectangleToPage(SharedPtr<Page> page, float x, float y, float wid
     page->get_Paragraphs()->Add(graph);
 }
 
-void GraphExamples::ControlZOrderOfRectangle(String outputFile)
+void ControlZOrderOfRectangle(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();

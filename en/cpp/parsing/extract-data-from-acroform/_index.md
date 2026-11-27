@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/extract-data-from-acroform/
 description: Read PDF form fields and export values to XML, FDF, XFDF, or a JSON-style file using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,6 +26,7 @@ Print the partial name and value of each form field.
 1. Print each name and value.
 
 ```cpp
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 
@@ -55,6 +56,7 @@ Write the form data to an XML output stream.
 1. Close the output stream.
 
 ```cpp
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
 
@@ -82,6 +84,7 @@ Write the form data to a FDF output stream.
 1. Close the output stream.
 
 ```cpp
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
 
@@ -109,6 +112,7 @@ Write the form data to an XFDF output stream.
 1. Close the output stream.
 
 ```cpp
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Facades/Form.h>
 
@@ -139,6 +143,7 @@ The helper only escapes backslashes and quotation marks. Values containing contr
 1. Save the text to inputFile + .json.
 
 ```cpp
+#include <system/io/file.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Facades/Form.h>

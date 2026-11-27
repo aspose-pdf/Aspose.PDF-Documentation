@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/remove-form/
 description: Remove all Form XObjects or selected Typewriter resources from the first PDF page using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -34,7 +34,7 @@ This removes all Form XObject resources on page 1, including any that do not rep
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::RemoveAllForms(String inputFile, String outputFile)
+void RemoveAllForms(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto forms = document->get_Pages()->idx_get(1)->get_Resources()->get_Forms();
@@ -64,7 +64,7 @@ Collecting names before deletion avoids changing the collection while it is bein
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::RemoveSpecifiedForm(String inputFile, String outputFile)
+void RemoveSpecifiedForm(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto forms = document->get_Pages()->idx_get(1)->get_Resources()->get_Forms();

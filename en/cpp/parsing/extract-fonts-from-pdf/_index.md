@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/extract-fonts-from-pdf/
 description: List the names of fonts used in a PDF document with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -28,6 +28,7 @@ The example lists font names; it does not save embedded font files.
 1. Print each font name.
 
 ```cpp
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>

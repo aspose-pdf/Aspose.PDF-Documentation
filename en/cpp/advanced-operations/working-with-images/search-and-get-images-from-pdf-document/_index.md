@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/search-and-get-images-from-pdf-document/
 description: Inspect image placement dimensions, coordinates, resolution, color types, and drawing transformations on the first PDF page with Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,7 +27,6 @@ Placement dimensions and coordinates are in PDF points rather than source-image 
 1. Read horizontal and vertical resolution and print the results.
 
 ```cpp
-#include <iostream>
 #include <Aspose.PDF.Cpp/Devices/Resolution.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/DOM/Matrix.h>
@@ -44,7 +43,7 @@ Placement dimensions and coordinates are in PDF points rather than source-image 
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ImageExamples::ExtractParams(String inputFile, String outputFile)
+void ExtractParams(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->idx_get(1);
@@ -89,7 +88,7 @@ This counts detected placements, so one image resource can be counted more than 
 using namespace System;
 using namespace Aspose::Pdf;
 
-void ImageExamples::ExtractTypes(String inputFile, String outputFile)
+void ExtractTypes(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->idx_get(1);
@@ -144,7 +143,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Operators;
 
-void ImageExamples::ExtractInformation(String inputFile, String outputFile)
+void ExtractInformation(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto page = document->get_Pages()->idx_get(1);
@@ -152,18 +151,18 @@ void ImageExamples::ExtractInformation(String inputFile, String outputFile)
     std::vector<SharedPtr<Matrix>> states{MakeObject<Matrix>(1, 0, 0, 1, 0, 0)};
     for (auto& op : page->get_Contents())
     {
-        if (op.dynamic_pointer_cast<GSave>())
+        if (System::ExplicitCast<GSave>(op))
             states.push_back(MakeObject<Matrix>(states.back()));
-        else if (op.dynamic_pointer_cast<GRestore>())
+        else if (System::ExplicitCast<GRestore>(op))
         {
             if (states.size() > 1)
                 states.pop_back();
         }
-        else if (auto concatenate = op.dynamic_pointer_cast<ConcatenateMatrix>())
+        else if (auto concatenate = System::ExplicitCast<ConcatenateMatrix>(op))
         {
             states.back() = states.back()->Multiply(concatenate->get_Matrix());
         }
-        else if (auto draw = op.dynamic_pointer_cast<Do>())
+        else if (auto draw = System::ExplicitCast<Do>(op))
         {
             const auto name = draw->get_Name();
             if (images->get_Names()->Contains(name))

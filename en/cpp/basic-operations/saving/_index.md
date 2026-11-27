@@ -5,7 +5,7 @@ type: docs
 weight: 30
 url: /cpp/save-pdf-document/
 description: Save PDF documents in C++ to files or streams and convert documents to PDF/A-3u using Aspose.PDF.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,10 +27,19 @@ Use [Document](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/) to per
 #include <Aspose.PDF.Cpp/PageCollection.h>
 
 using namespace System;
+
+using namespace System;
 using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+
+
+//Save PDF document
 void SaveDocument(String path_infile, String path_outfile)
 {
+    // String for path name
     auto document = MakeObject<Document>(path_infile);
+    // make some manipation, i.g add new empty page
     document->get_Pages()->Add();
     document->Save(path_outfile);
 }
@@ -50,11 +59,19 @@ void SaveDocument(String path_infile, String path_outfile)
 #include <Aspose.PDF.Cpp/PageCollection.h>
 
 using namespace System;
+
+using namespace System;
 using namespace Aspose::Pdf;
+using namespace Aspose::Pdf::Text;
+
+
+//Save PDF document to stream
 
 void SaveDocumentStream(String path_infile, String path_outfile)
 {
     auto document = MakeObject<Document>(path_infile);
+
+    // make some manipation, i.g add new empty page
     document->get_Pages()->Add();
 
     auto fileStream = System::IO::File::OpenWrite(path_outfile);
@@ -75,10 +92,16 @@ void SaveDocumentStream(String path_infile, String path_outfile)
 #include <Aspose.PDF.Cpp/IO/ConvertStrategies/PdfFormat.h>
 #include <Aspose.PDF.Cpp/PdfFormatConversionOptions.h>
 
+
+using namespace System;
+
 using namespace System;
 using namespace Aspose::Pdf;
 
-void SaveDocumentAsPdfA(String path_infile, String path_outfile)
+
+// Save PDF/A or PDF/X format
+
+void SaveDocumentAsPDFx(String path_infile, String path_outfile)
 {
     auto document = MakeObject<Document>(path_infile);
     auto options = MakeObject<PdfFormatConversionOptions>(Aspose::Pdf::PdfFormat::PDF_A_3U);

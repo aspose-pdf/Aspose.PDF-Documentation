@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/extract-data-from-table-in-pdf/
 description: Read detected PDF tables, filter them by a marked region, or convert the document to Excel with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,6 +27,7 @@ Print text from tables detected on every page.
 1. Join cell and fragment text using separators and print each row.
 
 ```cpp
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -93,6 +94,8 @@ The boundary checks use strict inequalities; tables touching the annotation boun
 1. Print rows only for tables strictly contained inside the annotation.
 
 ```cpp
+#include <system/console.h>
+#include <system/text/string_builder.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -182,11 +185,13 @@ This converts the document to Excel; it does not export a selected TableAbsorber
 1. Pass the output path and save options to [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/ExcelSaveOptions.h>
 
 using namespace Aspose::Pdf;
+using namespace System;
 
 void ExportTablesToExcel(System::String inputFile, System::String outputFile) {
     auto document = MakeObject<Document>(inputFile);

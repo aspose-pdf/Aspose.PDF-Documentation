@@ -5,7 +5,7 @@ type: docs
 weight: 80
 url: /cpp/xfa-forms/
 description: Convert an XFA form to a standard AcroForm and optionally ignore the NeedsRendering flag using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -29,7 +29,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-void FormExamples::ConvertDynamicXfaToAcroform(String inputFile, String outputFile)
+void ConvertDynamicXfaToAcroform(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     document->get_Form()->set_Type(FormType::Standard);
@@ -58,7 +58,7 @@ using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Text;
 
-void FormExamples::ConvertXfaFormWithIgnoreNeedsRendering(String inputFile, String outputFile)
+void ConvertXfaFormWithIgnoreNeedsRendering(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto form = document->get_Form();

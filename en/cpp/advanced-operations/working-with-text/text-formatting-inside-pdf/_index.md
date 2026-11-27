@@ -5,7 +5,7 @@ type: docs
 weight: 70
 url: /cpp/text-formatting-inside-pdf/
 description: Control PDF text spacing, create lists, add footnotes and endnotes, and configure page layout and tabs using C++.
-lastmod: "2026-11-23"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: monthly
     priority: 0.7
@@ -36,8 +36,6 @@ Read lorem.txt from the input directory, with fallback text when it is absent. S
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -79,8 +77,6 @@ Read HPSimplified.ttf and lorem.txt from inputDir. Use FontSize and FullSize lin
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
@@ -143,8 +139,6 @@ Use the included makeCharacterSpacingFragment helper to add three fragments with
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -190,8 +184,6 @@ Apply a 2-point character spacing value to a fragment, append it to a word-wrapp
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -242,8 +234,6 @@ Prefix four text items with their one-based numbers and append them as lines in 
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -300,8 +290,6 @@ Prefix four items with a hyphen and append them to a word-wrapped TextParagraph.
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -388,8 +376,6 @@ Render four items in a LaTeX itemize environment with TeXFragment.
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Generator/TeXFragment.h>
@@ -422,8 +408,6 @@ Render four items in a LaTeX enumerate environment with TeXFragment.
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Generator/TeXFragment.h>
@@ -458,8 +442,6 @@ Attach a Note to a TextFragment through FootNote, then add another fragment with
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Note.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -506,8 +488,6 @@ Give the Note its own TextState with Times New Roman, 10-point size, red foregro
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Note.h>
@@ -557,8 +537,6 @@ Create a footnote and set its Text marker to three asterisks.
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Note.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -604,8 +582,6 @@ Set the page NoteLineStyle with a red 2-point dashed GraphInfo, then add two fra
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/GraphInfo.h>
@@ -654,8 +630,6 @@ Read logo.jpg from the input directory. Build the note Paragraphs collection wit
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Image.h>
 #include <Aspose.PDF.Cpp/Generator/Note.h>
@@ -715,8 +689,6 @@ Attach a Note through EndNote and add five copies of lorem.txt from the input di
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Note.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -768,8 +740,6 @@ Attach an endnote, set its Text marker to three asterisks, and add five copies o
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Note.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -824,8 +794,6 @@ Create a five-row, three-column table and set IsInNewPage before adding it to pa
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
 #include <Aspose.PDF.Cpp/Generator/BorderSide.h>
@@ -875,8 +843,6 @@ Read logo.jpg from the input directory. Add an initial text fragment, an inline 
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Image.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
@@ -934,8 +900,6 @@ Add a horizontal rule and heading, then place a caption and five copies of lorem
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BoundsCheckableList/BoundsCheckableList.h>
 #include <Aspose.PDF.Cpp/Generator/ColumnInfo.h>
@@ -976,7 +940,7 @@ void CreateMultiColumnPdf(String inputFile, String outputFile)
     box->get_ColumnInfo()->set_ColumnCount(2);
     box->get_ColumnInfo()->set_ColumnSpacing(u"5");
     box->get_ColumnInfo()->set_ColumnWidths(u"230 230");
-    auto caption = MakeObject<TextFragment>(u"By Example Author");
+    auto caption = MakeObject<TextFragment>(u"By A Googler (The Official Google Blog)");
     caption->get_TextState()->set_FontSize(8);
     caption->get_TextState()->set_LineSpacing(2);
     box->get_Paragraphs()->Add(caption);
@@ -998,8 +962,6 @@ Define stops at 100, 200, and 300 points using right, center, and left alignment
 1. Save the PDF to `outputFile` with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-#include <system/string.h>
-
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/Paragraphs.h>
 #include <Aspose.PDF.Cpp/Page.h>

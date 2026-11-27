@@ -5,7 +5,7 @@ type: docs
 weight: 20
 url: /cpp/add-circle/
 description: Add an outlined circle or a filled circle with text to a PDF graph using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -40,7 +40,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 
-void GraphExamples::AddCircle(String outputFile)
+void AddCircle(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();
@@ -85,8 +85,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Drawing;
 using namespace Aspose::Pdf::Text;
 
-// Port of GraphsCircleExamples.addCircleFilled.
-void GraphExamples::AddCircleFilled(String outputFile)
+void AddCircleFilled(String outputFile)
 {
     auto document = MakeObject<Document>();
     auto page = document->get_Pages()->Add();

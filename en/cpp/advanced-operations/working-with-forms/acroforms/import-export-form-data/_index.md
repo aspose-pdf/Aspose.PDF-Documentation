@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/import-export-form-data/
 description: Export and import PDF form data in FDF, XFDF, and XML formats using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -27,7 +27,7 @@ Abstract: Learn how to move field data between PDFs and external data files with
 
 using namespace System;
 
-void FormExamples::ExportDataToFdf(String inputFile, String outputFile)
+void ExportDataToFdf(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     auto stream = System::IO::File::Create(outputFile);
@@ -52,7 +52,7 @@ void FormExamples::ExportDataToFdf(String inputFile, String outputFile)
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::ExportDataToXfdf(String inputFile, String outputFile)
+void ExportDataToXfdf(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     auto stream = System::IO::File::Create(outputFile);
@@ -77,7 +77,7 @@ void FormExamples::ExportDataToXfdf(String inputFile, String outputFile)
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::ExportDataToXml(String inputFile, String outputFile)
+void ExportDataToXml(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     auto stream = System::IO::File::Create(outputFile);
@@ -105,7 +105,7 @@ The data file is resolved relative to outputFile, not inputFile.
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::ImportDataFromFdf(String inputFile, String outputFile)
+void ImportDataFromFdf(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     auto stream = System::IO::File::OpenRead(System::IO::Path::Combine(
@@ -135,7 +135,7 @@ The data file is resolved relative to outputFile, not inputFile.
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::ImportDataFromXfdf(String inputFile, String outputFile)
+void ImportDataFromXfdf(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     auto stream = System::IO::File::OpenRead(System::IO::Path::Combine(
@@ -165,7 +165,7 @@ The XML example closes the stream and facade after success and when a System::Ex
 using namespace System;
 using namespace Aspose::Pdf;
 
-void FormExamples::ImportDataFromXml(String inputFile, String outputFile)
+void ImportDataFromXml(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::Form>(inputFile);
     auto stream = System::IO::File::OpenRead(System::IO::Path::Combine(

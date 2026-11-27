@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/split-pdf/
 description: Split a PDF into separate single-page files in C++ using Aspose.PDF.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,9 +26,6 @@ Export each page of a PDF to its own file for review or further processing.
 1. Report any page processing errors and continue with the remaining pages.
 
 ```cpp
-#include <exception>
-#include <iostream>
-
 #include <system/io/path.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
@@ -42,12 +39,12 @@ void SplitDocument(String inputFile, String outputDir) {
     auto document = MakeObject<Document>(inputFile);
     try {
         
-        for (int pageNumber = 1; pageNumber <= document->get_Pages()->get_Count(); pageNumber++) {
+        for (int pageCount = 1; pageCount <= document->get_Pages()->get_Count(); pageCount++) {
             auto newDocument = MakeObject<Document>();
             try {
-                auto page = document->get_Pages()->idx_get(pageNumber);
+                auto page = document->get_Pages()->idx_get(pageCount);
                 newDocument->get_Pages()->CopyPage(page);
-                auto outputFile = System::IO::Path::Combine(outputDir, System::String::Format(u"page_{0}.pdf", pageNumber));
+                auto outputFile = System::IO::Path::Combine(outputDir, System::String::Format(u"page_{0}.pdf", pageCount));
                 newDocument->Save(outputFile);
             }
             catch (std::exception& e) {

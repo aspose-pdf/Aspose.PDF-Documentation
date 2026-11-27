@@ -5,7 +5,7 @@ type: docs
 weight: 110
 url: /cpp/text-stamps-in-the-pdf-file/
 description: Add a text stamp to a PDF page and configure its font, color, position, and rotation using Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -26,7 +26,6 @@ Add a text stamp to a PDF page and configure its font, color, position, and rota
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Text/TextState.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Color.h>
@@ -43,7 +42,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of StampingExamples.addTextStamp.
 void AddTextStamp(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

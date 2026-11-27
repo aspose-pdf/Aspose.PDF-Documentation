@@ -5,7 +5,7 @@ type: docs
 weight: 60
 url: /cpp/interactive-annotations/
 description: Add, inspect, and delete PDF links and create line annotations, navigation buttons, and a print button using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -76,7 +76,7 @@ namespace WorkingWithAnnotationsExamples::Interactive {
         document->Save(outputFile);
     }
 
-} // namespace WorkingWithAnnotationsExamples::Interactive
+} // namespace WorkingWithAnnotations::Interactive
 ```
 
 ## Add a URI link

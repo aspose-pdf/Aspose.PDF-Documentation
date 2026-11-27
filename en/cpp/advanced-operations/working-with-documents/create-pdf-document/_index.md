@@ -5,7 +5,7 @@ type: docs
 weight: 10
 url: /cpp/create-pdf-document/
 description: Create PDF documents from text and make scanned PDFs searchable with Tesseract OCR using Aspose.PDF for C++.
-lastmod: "2026-11-09"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -28,6 +28,7 @@ The following example creates a single-page PDF containing **Hello World!**. The
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
+#include <system/console.h>
 
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
@@ -51,7 +52,7 @@ void CreateNewDocument(String outputFile) {
 
 Install Tesseract and the required language data separately. The callback invokes an external OCR executable; Aspose.PDF consumes its hOCR output to add searchable text to the scanned PDF. hOCR contains recognized text and its position within the image.
 
-Set `tesseractExecutable` to the installed executable and `language` to an installed language code, such as `eng`. The example uses the default Tesseract language-data location. If your installation stores language data elsewhere, configure `TESSDATA_PREFIX` for the process.
+Set `tesseractExecutable` to the installed executable and `language` to an installed language code, such as `eng`. Set `tessdata` to your language-data directory. The example passes this path to Tesseract through `TESSDATA_PREFIX`.
 
 The `CreateSearchablePdf` function opens the scanned PDF and passes a `Document::CallBackGetHocr` callback to `Convert(callback, true)`. The callback writes each supplied image to a temporary bitmap and waits for Tesseract to finish. Its cleanup object removes the bitmap and hOCR file when the callback returns or an exception occurs.
 
@@ -64,29 +65,31 @@ The `CreateSearchablePdf` function opens the scanned PDF and passes a `Document:
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <filesystem>
 #include <functional>
 #include <system/diagnostics/process.h>
 #include <system/diagnostics/process_start_info.h>
 #include <system/diagnostics/process_window_style.h>
+#include <system/console.h>
 #include <system/exceptions.h>
 #include <system/io/file.h>
 #include <system/io/path.h>
 #include <drawing/bitmap.h>
 #include <drawing/imaging/image_format.h>
 #include <Aspose.PDF.Cpp/Document.h>
+#include <Aspose.PDF.Cpp/Page.h>
+#include <Aspose.PDF.Cpp/PageCollection.h>
+#include <Aspose.PDF.Cpp/Devices/PngDevice.h>
+#include <Aspose.PDF.Cpp/Devices/Resolution.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
 
-void CreateSearchablePdf(String inputFile, String outputFile,
-                         String tesseractExecutable, String language)
+void CreateSearchablePdf(String inputFile, String outputFile)
 {
-    if (tesseractExecutable.IsEmpty() || language.IsEmpty() ||
-        language.Contains(u"\"") || language.Contains(u" ") || language.Contains(u"\n")) {
-        throw ArgumentException(u"Specify an OCR executable and a valid language code.");
-    }
+	String tesseractExecutable ( u"C:\\Program Files\\Tesseract-OCR\\tesseract.exe");
+	String language ( u"eng");
+
     Document::CallBackGetHocr callback(
         std::function<String(const SharedPtr<System::Drawing::Image>&)>(
         [tesseractExecutable, language](const SharedPtr<System::Drawing::Image>& image) {
@@ -103,9 +106,11 @@ void CreateSearchablePdf(String inputFile, String outputFile,
             bitmap->Save(tempFile, System::Drawing::Imaging::ImageFormat::get_Bmp());
             const auto arguments = String::Format(u"\"{0}\" \"{0}\" -l \"{1}\" hocr", tempFile, language);
             auto info = MakeObject<Diagnostics::ProcessStartInfo>(tesseractExecutable, arguments);
+			const String tessdata(u"C:\\Program Files\\Tesseract-OCR\\tessdata");
+			info->get_EnvironmentVariables()->Add(u"TESSDATA_PREFIX", tessdata);
             info->set_UseShellExecute(false);
-            info->set_CreateNoWindow(true);
-            info->set_WindowStyle(Diagnostics::ProcessWindowStyle::Hidden);
+            info->set_CreateNoWindow(false);
+            info->set_WindowStyle(Diagnostics::ProcessWindowStyle::Normal);
             auto process = Diagnostics::Process::Start(info);
             if (process == nullptr) {
                 throw InvalidOperationException(u"Could not start Tesseract.");
@@ -141,13 +146,17 @@ Install Tesseract and the required language data before running the example. Upd
 1. Save the combined searchable PDF to `outputFile`.
 
 ```cpp
-#include <system/console.h>
+#include <filesystem>
+#include <functional>
 #include <system/diagnostics/process.h>
 #include <system/diagnostics/process_start_info.h>
 #include <system/diagnostics/process_window_style.h>
+#include <system/console.h>
 #include <system/exceptions.h>
 #include <system/io/file.h>
 #include <system/io/path.h>
+#include <drawing/bitmap.h>
+#include <drawing/imaging/image_format.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Page.h>
 #include <Aspose.PDF.Cpp/PageCollection.h>
@@ -159,49 +168,46 @@ using namespace Aspose::Pdf;
 
 void CreateSearchablePdf2(String inputFile, String outputFile)
 {
-    String tesseractExecutable(u"C:\\Program Files\\Tesseract-OCR\\tesseract.exe");
-    String language(u"eng");
-    String tessdata(u"C:\\Program Files\\Tesseract-OCR\\tessdata");
+	String tesseractExecutable ( u"C:\\Program Files\\Tesseract-OCR\\tesseract.exe");
+	String language (u"eng");
+	String tessdata(u"C:\\Program Files\\Tesseract-OCR\\tessdata");
 
-    auto document = MakeObject<Document>(inputFile);
-    auto pngDevice = MakeObject<Aspose::Pdf::Devices::PngDevice>(
-        MakeObject<Aspose::Pdf::Devices::Resolution>(600));
-    String outputDirectory = System::IO::Path::GetDirectoryName(outputFile);
+	auto document = MakeObject<Document>(inputFile);
+	auto pngDevice = MakeObject<Aspose::Pdf::Devices::PngDevice>(MakeObject<Aspose::Pdf::Devices::Resolution>(600));
+	String outputDirectory = System::IO::Path::GetDirectoryName(outputFile);
     String tempImage = System::IO::Path::Combine(outputDirectory, u"page.png");
     String tempDoc = System::IO::Path::Combine(outputDirectory, u"page");
     String tempPdf = System::IO::Path::Combine(outputDirectory, u"page.pdf");
+    String tempLog = System::IO::Path::Combine(outputDirectory, u"page.log");
 
-    auto resultDocument = MakeObject<Document>();
-    const auto arguments = String::Format(
-        u"\"{0}\" \"{1}\" -l {2} --tessdata-dir \"{3}\" pdf",
-        tempImage, tempDoc, language, tessdata);
-    System::Console::WriteLine(u"Running Tesseract with arguments: " + arguments);
-    for (const auto& page : document->get_Pages())
-    {
-        auto stream = System::IO::File::OpenWrite(tempImage);
-        pngDevice->Process(page, stream);
-        stream->Close();
+	auto resultDocument = MakeObject<Document>();
+	const auto arguments = String::Format(u"\"{0}\" \"{1}\" -l {2} --tessdata-dir \"{3}\" pdf", tempImage, tempDoc, language, tessdata);
+	System::Console::WriteLine(u"Running Tesseract with arguments: " + arguments);
+	for (const auto& page : document->get_Pages())
+	{
+		auto stream = System::IO::File::OpenWrite(tempImage);
+		pngDevice->Process(page, stream);
+		stream->Close();
 
-        auto info = MakeObject<Diagnostics::ProcessStartInfo>(tesseractExecutable, arguments);
-        info->set_UseShellExecute(false);
-        info->set_CreateNoWindow(true);
-        info->set_WindowStyle(Diagnostics::ProcessWindowStyle::Normal);
+		auto info = MakeObject<Diagnostics::ProcessStartInfo>(tesseractExecutable, arguments);
+		info->set_UseShellExecute(false);
+		info->set_CreateNoWindow(true);
+		info->set_WindowStyle(Diagnostics::ProcessWindowStyle::Normal);
+		auto process = Diagnostics::Process::Start(info);
+		if (process == nullptr) {
+		    throw InvalidOperationException(u"Could not start Tesseract.");
+		}
+		process->WaitForExit();
+		if (process->get_ExitCode() != 0) {
+		    throw InvalidOperationException(u"Tesseract failed to generate hOCR.");
+		}
 
-        auto process = Diagnostics::Process::Start(info);
-        if (process == nullptr) {
-            throw InvalidOperationException(u"Could not start Tesseract.");
-        }
-        process->WaitForExit();
-        if (process->get_ExitCode() != 0) {
-            throw InvalidOperationException(u"Tesseract failed to generate hOCR.");
-        }
+		resultDocument->Merge(MakeArray<String>({ tempPdf }));
 
-        resultDocument->Merge(MakeArray<String>({tempPdf}));
+		System::IO::File::Delete(tempImage);
+		System::IO::File::Delete(tempPdf);
+	}
 
-        System::IO::File::Delete(tempImage);
-        System::IO::File::Delete(tempPdf);
-    }
-
-    resultDocument->Save(outputFile);
+	resultDocument->Save(outputFile);
 }
 ```

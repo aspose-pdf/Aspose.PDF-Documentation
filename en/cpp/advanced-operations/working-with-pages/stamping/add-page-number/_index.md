@@ -5,7 +5,7 @@ type: docs
 weight: 120
 url: /cpp/add-page-number/
 description: Add a page-number stamp to the first PDF page or use Roman-number stamps on all pages with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -28,7 +28,6 @@ Only the first page is stamped. The total page count is inserted into the format
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Text/TextState.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Color.h>
@@ -44,7 +43,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of StampingExamples.addPageNumStamp.
 void AddPageNumStamp(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
@@ -75,7 +73,6 @@ void AddPageNumStamp(System::String inputFile, System::String outputFile)
 1. Save the result with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Text/TextState.h>
 #include <Aspose.PDF.Cpp/Text/Font.h>
 #include <Aspose.PDF.Cpp/Color.h>
@@ -92,7 +89,6 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Text;
 
-// Port of StampingExamples.addPageNumStampRoman.
 void AddPageNumStampRoman(System::String inputFile, System::String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);

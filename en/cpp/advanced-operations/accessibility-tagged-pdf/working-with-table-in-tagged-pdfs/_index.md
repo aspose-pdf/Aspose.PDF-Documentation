@@ -5,7 +5,7 @@ type: docs
 weight: 40
 url: /cpp/working-with-table-in-tagged-pdfs/
 description: Create and style tagged PDF tables in C++, including headers, body rows, footers, merged cells, summaries, and positioning.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -34,7 +34,6 @@ The example creates 50 body rows and uses Arial for cell text. Make sure the fon
 1. Save the document with [Save()](https://reference.aspose.com/pdf/cpp/aspose.pdf/document/save/).
 
 ```cpp
-
 #include <Aspose.PDF.Cpp/Color.h>
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Generator/BorderInfo.h>
@@ -96,7 +95,7 @@ void CreateTable(System::String outputFile)
 
     for (int rowIndex = 0; rowIndex < 50; rowIndex++) {
         auto trElement = tableTBodyElement->CreateTR();
-        trElement->set_AlternativeText(String::Format(u"Row {0}", rowIndex));
+        trElement->set_AlternativeText(u"Row " + rowIndex);
 
         for (int columnIndex = 0; columnIndex < 4; columnIndex++) {
             int colSpan = 1;

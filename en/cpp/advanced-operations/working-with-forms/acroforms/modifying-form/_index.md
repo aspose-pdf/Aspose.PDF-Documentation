@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/modifying-form/
 description: Read and set text-field limits, change field appearance, delete a named field, and clear text in selected Form XObjects using Aspose.PDF for C++.
-lastmod: "2026-10-15"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -36,11 +36,11 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Text;
 
-void FormExamples::GetFieldLimit(String inputFile, String outputFile)
+void GetFieldLimit(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto field = document->get_Form()->get_Fields()->idx_get(0);
-    if (auto textBoxField = field.dynamic_pointer_cast<TextBoxField>())
+    if (auto textBoxField = System::ExplicitCast<TextBoxField>(field))
     {
         std::cout << (String::Format(u"Limit: {0}", textBoxField->get_MaxLen())) << std::endl;
     }
@@ -60,7 +60,7 @@ The input must contain the target field. This snippet retains the qualified base
 
 using namespace System;
 
-void FormExamples::SetFieldLimit(String inputFile, String outputFile)
+void SetFieldLimit(String inputFile, String outputFile)
 {
     auto form = MakeObject<Aspose::Pdf::Facades::FormEditor>();
     form->BindPdf(inputFile);
@@ -92,11 +92,11 @@ using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Annotations;
 using namespace Aspose::Pdf::Text;
 
-void FormExamples::SetFormFieldFont(String inputFile, String outputFile)
+void SetFormFieldFont(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     auto field = document->get_Form()->get_Fields()->idx_get(0);
-    if (auto textBoxField = field.dynamic_pointer_cast<TextBoxField>())
+    if (auto textBoxField = System::ExplicitCast<TextBoxField>(field))
     {
         textBoxField->set_DefaultAppearance(MakeObject<DefaultAppearance>(
             FontRepository::FindFont(String(u"Calibri")), 10, Color::get_Black()->ToRgb()));
@@ -120,7 +120,7 @@ using namespace System;
 using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 
-void FormExamples::DeleteFormField(String inputFile, String outputFile)
+void DeleteFormField(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     document->get_Form()->Delete(String(u"First Name"));
@@ -158,7 +158,7 @@ using namespace Aspose::Pdf;
 using namespace Aspose::Pdf::Forms;
 using namespace Aspose::Pdf::Text;
 
-void FormExamples::ClearTextInForm(String inputFile, String outputFile)
+void ClearTextInForm(String inputFile, String outputFile)
 {
     auto document = MakeObject<Document>(inputFile);
     for (auto& form : document->get_Pages()->idx_get(1)->get_Resources()->get_Forms())

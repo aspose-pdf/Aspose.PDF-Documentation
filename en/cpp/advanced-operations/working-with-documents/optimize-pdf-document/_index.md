@@ -5,7 +5,7 @@ type: docs
 weight: 50
 url: /cpp/optimize-pdf/
 description: Optimize PDF resources, compress images, remove unused data, flatten interactive content, and convert pages to grayscale with Aspose.PDF for C++.
-lastmod: "2026-10-12"
+lastmod: "2026-11-26"
 sitemap:
     changefreq: "monthly"
     priority: 0.7
@@ -18,13 +18,14 @@ Optimize PDF resources, compress images, remove unused data, flatten interactive
 
 ## Report input and output file sizes
 
-Several examples use the following helper to compare file sizes. Save it as `optimize-file-sizes.h` next to the source files that include it. Optimization results depend on the PDF; an output file can be the same size or larger.
+The examples that compare file sizes define `PrintOptimizationFileSizes` in their snippets. The sample repository also provides the following standalone helper. Optimization results depend on the PDF; an output file can be the same size or larger.
 
 1. Read the input file size before modifying the PDF.
 1. Read the saved output file size.
 1. Print both sizes for comparison.
 
 ```cpp
+#pragma once
 
 #include <cstdint>
 #include <system/console.h>
@@ -54,10 +55,22 @@ Source example: `optimize-document-01.cpp`.
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
-#include "optimize-file-sizes.h"
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+#include <system/io/file_info.h>
+#include <system/console.h>
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
+
 
 void OptimizePdf(String inputFile, String outputFile)
 {
@@ -78,10 +91,22 @@ void OptimizePdf(String inputFile, String outputFile)
 
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
-#include "optimize-file-sizes.h"
+
+#include <system/io/file_info.h>
+#include <system/console.h>
+
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+inline void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void ReduceSizePdf(String inputFile, String outputFile)
 {
@@ -108,10 +133,20 @@ Image compression can reduce visual quality. Review the output before choosing a
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
 #include <Aspose.PDF.Cpp/Optimization/ImageCompressionOptions.h>
-#include "optimize-file-sizes.h"
+#include <system/io/file_info.h>
+#include <system/console.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void ShrinkingOrCompressingAllImages(String inputFile, String outputFile)
 {
@@ -137,10 +172,20 @@ void ShrinkingOrCompressingAllImages(String inputFile, String outputFile)
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
-#include "optimize-file-sizes.h"
+#include <system/io/file_info.h>
+#include <system/console.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void RemovingUnusedObjects(String inputFile, String outputFile)
 {
@@ -165,10 +210,21 @@ void RemovingUnusedObjects(String inputFile, String outputFile)
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
-#include "optimize-file-sizes.h"
+
+#include <system/io/file_info.h>
+#include <system/console.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void RemovingUnusedStreams(String inputFile, String outputFile)
 {
@@ -193,10 +249,20 @@ void RemovingUnusedStreams(String inputFile, String outputFile)
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
-#include "optimize-file-sizes.h"
+#include <system/io/file_info.h>
+#include <system/console.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void LinkingDuplicateStreams(String inputFile, String outputFile)
 {
@@ -223,10 +289,21 @@ Removing embedded fonts makes rendering dependent on fonts available to the view
 ```cpp
 #include <Aspose.PDF.Cpp/Document.h>
 #include <Aspose.PDF.Cpp/Optimization/OptimizationOptions.h>
-#include "optimize-file-sizes.h"
+
+#include <system/io/file_info.h>
+#include <system/console.h>
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void UnembedFonts(String inputFile, String outputFile)
 {
@@ -256,8 +333,20 @@ Reverse iteration accounts for annotations being removed during flattening.
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/Annotation.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Annotations/AnnotationCollection.h>
 
+#include <system/io/file_info.h>
+#include <system/console.h>
+
 using namespace System;
 using namespace Aspose::Pdf;
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void FlattenAnnotations(String inputFile, String outputFile)
 {
@@ -288,10 +377,21 @@ Flattened fields no longer provide interactive form entry.
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Form.h>
 #include <Aspose.PDF.Cpp/InteractiveFeatures/Forms/Field.h>
 #include <system/array.h>
-#include "optimize-file-sizes.h"
 
 using namespace System;
 using namespace Aspose::Pdf;
+
+#include <system/io/file_info.h>
+#include <system/console.h>
+
+inline static void PrintOptimizationFileSizes(int64_t originalSize, System::String outputFile)
+{
+
+    auto output = System::MakeObject<System::IO::FileInfo>(outputFile);
+    System::Console::WriteLine(
+        u"Original file size: {0}. Reduced file size: {1}",
+        originalSize, output->get_Length());
+}
 
 void FlattenForms(String inputFile, String outputFile)
 {
